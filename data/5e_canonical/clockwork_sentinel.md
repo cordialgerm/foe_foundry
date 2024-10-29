@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Sentinel</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>4</CR>
+<AC/>18</AC>
+<HP/>60</HP>
 <summary>The Clockwork Sentinel is a Medium construct designed as a formidable guardian or combatant. With a robust armor class of 18 and a significant pool of hit points totaling 60, it stands as a resilient obstacle in battle, capable of enduring considerable damage. The Sentinel has strong physical attributes, particularly in Strength and Constitution, with a Strength score of 16 (+3) granting it a good modifier for melee attacks. However, its Intelligence, Wisdom, and Charisma are notably low, indicating a lack of mental abilities and emotional responses, which can hinder its effectiveness in social interactions or tasks requiring cleverness. One of its notable strengths is its immunity to a variety of conditions, including being blinded, frightened, or poisoned, making it a reliable front-line entity. Nonetheless, it does lack mobility, with a speed of 35 feet, and its primary attacks are melee-based.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a strategic option, the Clockwork Sentinel can utilize a bonus action called 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Sentinel
 
 *Medium* *Construct*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The sentinel adds 2 to its AC against one melee attack that would hit it.
 
 
+</statblock>
 
 

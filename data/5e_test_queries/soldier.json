@@ -1,0 +1,25 @@
+{
+    "name": "Soldier",
+    "queries": [
+        {
+            "query": "humanoid combatant with tactical movement and a spear attack",
+            "variant": "combatant humanoid with tactical movement and spear attack"
+        },
+        {
+            "query": "medium creature that deals piercing damage and has good durability",
+            "variant": "medium creature with piercing damage and good durability"
+        },
+        {
+            "query": "soldier-type monster that uses heavy crossbows and has average intelligence",
+            "variant": "monster type soldier that has heavy crossbows and average intelligence"
+        },
+        {
+            "query": "military-themed humanoid with solid armor class and strength",
+            "variant": "humanoid military-themed with solid strength and armor class"
+        },
+        {
+            "query": "monster that excels in melee combat and has a lower dexterity",
+            "variant": "monster that excels in melee and has lower dexterity"
+        }
+    ]
+}

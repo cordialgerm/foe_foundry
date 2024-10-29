@@ -1,0 +1,48 @@
+{
+    "name": "Goblin Skulker",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 10,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "sneaky",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Goblin Skulker is a small humanoid characterized by its agility and skill in stealth. It typically wields a shortsword and a shortbow, using its nimble maneuvering to strike from advantageous positions.",
+    "memorable": "Its ability to deal additional damage when attacking from stealth or in close proximity to allies makes it particularly dangerous in ambush scenarios.",
+    "goals": "To ambush unsuspecting foes and in group tactics when coordinated with allies.",
+    "relations": "Often encountered alongside other goblins or in small raiding parties.",
+    "environment": "Commonly found in forests or caves, often lurking in shadows.",
+    "strengths": "Proficient in stealth, able to remain unseen and attack with surprising damage boosts.",
+    "weaknesses": "Vulnerable when isolated, relying on group tactics for effectiveness.",
+    "attacks": "Attacks with a shortsword for melee encounters and a shortbow for ranged combat, dealing piercing damage.",
+    "most_powerful_ability": "Goblin Skulker ability allows it to deal extra damage when attacking from an advantageous position.",
+    "equipment": "Shortsword and shortbow",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Proficient in Stealth, adding a total bonus of +3 to its attempts to remain unseen.",
+    "additional_information": [
+        "Uses Nimble Escape to disengage or hide as a bonus action.",
+        "Relies on ambush tactics with other goblins.",
+        "Lightly armored but evasive in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy goblin ambush attacker",
+        "small agile goblin with shortbow",
+        "goblin that strikes from the shadows",
+        "sneaky goblin skilled in stealth",
+        "goblin that deals extra damage with advantage"
+    ]
+}

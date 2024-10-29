@@ -1,0 +1,52 @@
+{
+    "name": "Mountain Dryad",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft., burrow 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "dryad",
+        "fey",
+        "earth",
+        "charming"
+    ],
+    "adjectives": [
+        "formidable",
+        "earth-connected",
+        "versatile"
+    ],
+    "description": "The Mountain Dryad is a Huge fey creature with a strong connection to the earth, exhibiting exceptional strength and an intimidating presence with its robust physique. It can blend seamlessly into the terrain, making it both a cunning ambusher and manipulator of its environment.",
+    "memorable": "Its ability to charm creatures and manipulate the terrain creates unique and chaotic encounters, along with its exceptional combat prowess.",
+    "goals": "To protect its mountainous domain and charm intruders, drawing them into its territory for strategic advantages.",
+    "relations": "May have alliances with other fey beings and creatures of the mountains, providing them with a connection to the magical aspects of nature.",
+    "environment": "Typically found in mountainous regions and forests where it can blend in with the earth and stone.",
+    "strengths": "Possesses high durability, strong melee and ranged attacks, and the ability to charm foes while remaining difficult to pin down.",
+    "weaknesses": "Reliance on its environment limits mobility and it may be vulnerable to certain magical effects if not leveraging Magic Resistance.",
+    "attacks": "Can perform slam attacks with exceptional strength and throw rocks from a distance, dealing significant bludgeoning damage.",
+    "most_powerful_ability": "Mountain's Awe allows the dryad to charm multiple creatures at once, incapacitating them and leading to potentially devastating tactical advantages.",
+    "senses": "It has tremorsense up to 60 feet, allowing it to detect vibrations in the ground.",
+    "skills": "Excels at athletics and intimidation, making it a formidable opponent both in and out of combat.",
+    "additional_information": [
+        "Immune to various conditions like charm and paralysis.",
+        "Can burrow through earth and stone without disturbing it.",
+        "Deals double damage to objects and structures.",
+        "Can choose from three aspects daily, enhancing its survivability and utility."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge earth creature with charming abilities",
+        "mountain-dwelling creature that can burrow",
+        "dryad that manipulates terrain and charms foes",
+        "powerful fey with impressive strength and magic resistance",
+        "formidable creature that protects its mountainous domain"
+    ]
+}

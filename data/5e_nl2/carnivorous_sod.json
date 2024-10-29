@@ -1,0 +1,47 @@
+{
+    "name": "Carnivorous Sod",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walking and burrowing speed of 20 feet",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "predator"
+    ],
+    "adjectives": [
+        "carnivorous",
+        "stealthy",
+        "strategic"
+    ],
+    "description": "The Carnivorous Sod resembles a patch of grass, capable of remaining motionless to effectively ambush unsuspecting creatures.",
+    "memorable": "Its ability to absorb spells that enhance plants and gain temporary hit points makes it a unique threat in battles involving magic.",
+    "goals": "To ambush prey by blending into its environment and to survive battles with the help of its special abilities.",
+    "relations": "May be encountered in natural environments alongside other plant creatures or as part of a magical ecosystem.",
+    "environment": "Typically found in grasslands or areas with abundant vegetation.",
+    "strengths": "Immunity to poison and conditions such as blindness and deafness enhances its durability in combat.",
+    "weaknesses": "Limited mobility with a walking speed of only 20 feet restricts its tactical options.",
+    "attacks": "The Carnivorous Sod can bite for piercing damage and has a Grass Trip ability that can knock enemies prone.",
+    "most_powerful_ability": "Its Spell Eater ability allows it to absorb spells that enhance plants, gaining temporary hit points in the process.",
+    "senses": "Possesses blindsight to detect nearby creatures and tremorsense to sense movement in the ground.",
+    "skills": null,
+    "additional_information": [
+        "Uses False Appearance to blend in with grass.",
+        "Capable of dealing good piercing damage with its bite attack.",
+        "Ability to make a bonus attack if it didn\u2019t move on its previous turn."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy ambush plant creature",
+        "plant that can absorb magical spells",
+        "carnivorous grass that knocks enemies down",
+        "predatory plant hiding in grass",
+        "blindsight and tremorsense plant ambusher"
+    ]
+}

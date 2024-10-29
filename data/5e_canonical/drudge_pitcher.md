@@ -1,6 +1,8 @@
 <MonsterName/>Drudge Pitcher</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Drudge Pitcher is a formidable and unique creature in the realm of Dungeons & Dragons 5th Edition. This Huge Plant creature serves as both a powerful combatant and a manipulative force on the battlefield, using its ability to ensnare enemies and create undead minions from their remains. With an impressive pool of hit points, high armor class, and various combat abilities, the Drudge Pitcher is capable of absorbing a significant amount of damage while delivering strong attacks. However, its low Dexterity makes it less agile, leading to a vulnerability against ranged attacks and spells. Its key traits include the ability to regenerate by consuming foes and transforming them into zombies, which can create dangerous situations for unsuspecting adventurers.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Upon the Drudge Pitcher's death, any creature trapped within is no longer restra
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drudge Pitcher
 
 *Huge* *Plant* *unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Pitcher Swallow:** Melee Weapon Attack: +9 to hit, 15 ft., one target, 12 (2d6+5) bludgeoning damage + 7 (2d6) necrotic. If target is a Large or smaller creature scooped up into the pitcher (DC 16 Dex negates). A creature scooped up into a pitcher is blinded and restrained has total cover vs. attacks and other effects outside pitcher and takes 10 (3d6) necrotic at start of each of pitcher’s turns. Pitcher has 4 pitchers each of which can have only one creature at a time. If pitcher takes 30+ damage on a single turn from a creature inside one of its pitchers pitcher must make DC 14 Con save at end of that turn or spill that creature out of the pitcher. Creature falls prone in a space within 5 ft. of pitcher. If pitcher dies a creature in a pitcher is no longer restrained by it and can escape using 15 ft. of movement.
 
 
+</statblock>
 
 

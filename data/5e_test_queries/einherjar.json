@@ -1,0 +1,25 @@
+{
+    "name": "Einherjar",
+    "queries": [
+        {
+            "query": "medium humanoid with celestial powers that has high hit points",
+            "variant": "humanoid with celestial abilities and a lot of hitpoints"
+        },
+        {
+            "query": "creature that can intimidate effectively and has truesight",
+            "variant": "being that has truesight and can scare humanoids"
+        },
+        {
+            "query": "chaotic neutral warrior with magic weapons and radiant damage",
+            "variant": "chaotic neutral fighter that uses magical weapons dealing radiant damage"
+        },
+        {
+            "query": "strong melee attacker that uses battleaxe and has special abilities",
+            "variant": "powerful melee creature that attacks with a battleaxe and possesses unique abilities"
+        },
+        {
+            "query": "Einherjar tactics for engaging in ranged combat",
+            "variant": "tactics of the Einherjar for fighting from a distance"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Shadow Fey",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 31,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "fey",
+        "humanoid",
+        "shadow",
+        "stealth"
+    ],
+    "adjectives": [
+        "elusive",
+        "dark",
+        "mischievous",
+        "malicious"
+    ],
+    "description": "The Shadow Fey is a medium-sized humanoid with traits of mischief and malice endemic to fey. It is known for its ability to operate within darkness and shadows.",
+    "memorable": "Its distinct ability to vanish into shadows and reappear makes it a challenging foe to pin down.",
+    "goals": "The Shadow Fey often seeks to cause chaos and mischief, typically in dark environments.",
+    "relations": "Shadow Fey might be related to other fey creatures or serve darker entities residing in shadowy realms.",
+    "environment": "Typically found in darkened areas or shadowy locations, avoiding bright sunlight.",
+    "strengths": "Proficient in stealth and possesses the ability to traverse shadows effectively.",
+    "weaknesses": "Sensitive to sunlight, suffering disadvantages on attack rolls in bright conditions.",
+    "attacks": "Can attack using a Shortsword for melee and a Shortbow for ranged attacks, dealing piercing damage.",
+    "most_powerful_ability": "Shadow Traveler allows it to vanish into shadows and reappear within 30 feet, enhancing its elusiveness.",
+    "equipment": "Wields a shortsword and a shortbow.",
+    "senses": "Possesses darkvision for enhanced sight in dim light and darkness.",
+    "skills": "Proficient in Arcana and Perception, giving it a good understanding of magic and attentive awareness.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed.",
+        "Immune to magical sleep effects.",
+        "Dark and mischievous demeanor.",
+        "Can easily maneuver in the dark.",
+        "Uses inky tendrils to mark its movements."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "dark fey that traverses shadows",
+        "elusive creature vulnerable to sunlight",
+        "shadowy humanoid with mischievous traits",
+        "stealthy creature that vanishes in darkness",
+        "humanoid with fey ancestry and stealth abilities"
+    ]
+}

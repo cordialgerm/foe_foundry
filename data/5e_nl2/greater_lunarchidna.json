@@ -1,0 +1,53 @@
+{
+    "name": "Greater Lunarchidna",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "stealth",
+        "necrotic",
+        "spellcaster",
+        "climbing"
+    ],
+    "adjectives": [
+        "sneaky",
+        "devious",
+        "manipulative"
+    ],
+    "description": "A medium-sized aberration with ability to climb and stealth, utilizing webs and necrotic damage.",
+    "memorable": "Its ability to wrap up opponents, blinding and suffocating them while in combat makes it particularly fearsome.",
+    "goals": "To ambush and incapacitate its enemies using stealth and necrotic attacks.",
+    "relations": "Related to other aberrations and creatures lurking in dark environments or webs.",
+    "environment": "Typically found in dark, damp places away from sunlight.",
+    "strengths": "Resilient to poison and able to manipulate webs, making it an effective ambusher.",
+    "weaknesses": "Significantly hindered by sunlight, suffering disadvantages in bright areas.",
+    "attacks": "Utilizes claws and bites infused with necrotic energy to drain life from its prey.",
+    "most_powerful_ability": "The Wrap Up ability allows it to incapacitate enemies, causing continuous damage and hindrance.",
+    "equipment": null,
+    "senses": "Possesses blindsight for 10 feet, which aids its stealth in darkness.",
+    "skills": "Excels in stealth with a +7 modifier, making it very competent in ambush situations.",
+    "additional_information": [
+        "Immunity to poison damage and condition immunities to being poisoned and restrained.",
+        "Spider Climb allows for traversal on difficult surfaces.",
+        "Spellcaster with access to a variety of illusory and damaging spells.",
+        "Webbing can restrain opponents, complicating battles for unwary foes.",
+        "Can only wrap one creature at a time, making tactical choices crucial."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "4th-level spellcaster with access to spells like magic missile and suggestion.",
+    "test_queries": [
+        "sneaky creature that uses webs",
+        "necrotic damage monster that excels in stealth",
+        "ambushing monster vulnerable to sunlight",
+        "spellcaster that can wrap enemies",
+        "creature that drains hit points with bites"
+    ]
+}

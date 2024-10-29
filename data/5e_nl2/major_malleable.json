@@ -1,0 +1,54 @@
+{
+    "name": "Major Malleable",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 218,
+    "ac": 13,
+    "srd": false,
+    "cr": "10",
+    "movement": "40 ft. walk, 40 ft. climb",
+    "role": "null",
+    "tags": [
+        "malleable",
+        "chaotic",
+        "powerful",
+        "absorbing"
+    ],
+    "adjectives": [
+        "fluid",
+        "unpredictable",
+        "chaotic",
+        "absorbing"
+    ],
+    "description": "The Major Malleable is a sprawling, shapeless, fleshy creature that embodies chaos and fluidity, capable of altering its form while being largely amorphous.",
+    "memorable": "It can absorb the health of smaller malleables and can split into smaller creatures, creating tactical challenges in combat.",
+    "goals": "Typically seeks to overwhelm opponents in combat and absorb their life force.",
+    "relations": "Often encountered alongside other malleable creatures, enabling it to join forces or create more malleables.",
+    "environment": "Found in chaotic or twisted environments that resonate with its nature.",
+    "strengths": "Immunity to psychic damage, the ability to absorb health from others, and high mobility through climbing.",
+    "weaknesses": "Relatively poor Dexterity leading to a bad modifier and no particular strengths in social interactions.",
+    "attacks": "Uses powerful tendril attacks that can grapple opponents and drain psychic energy from those grappled.",
+    "most_powerful_ability": "Psychic Drain, which can significantly reduce opponents' health and potentially convert them into lesser malleables.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 90 feet, enabling it to detect nearby creatures without needing sight.",
+    "skills": null,
+    "additional_information": [
+        "Can absorb others to regenerate health.",
+        "Able to split into multiple smaller creatures when damaged.",
+        "Each attack can grapple foes, imposing a tough escape DC.",
+        "Can join with other Major Malleables to become more powerful.",
+        "Has the ability to change shape but cannot take on the stats of other creatures."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic amorphous creature with psychic abilities",
+        "huge shapeshifting monster that drains life",
+        "creature that absorbs health and splits",
+        "fluid entity that grapples and drains opponents",
+        "powerful malleable monster in chaotic environments"
+    ]
+}

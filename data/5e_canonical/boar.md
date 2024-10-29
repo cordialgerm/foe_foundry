@@ -1,6 +1,8 @@
 <MonsterName/>Boar</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>11</HP>
 <summary>The Boar is a large, muscular animal with sharp tusks and a thick hide. It is known for its aggressive temperament and will charge at anything it perceives as a threat. Wild Boars roam forests and grasslands, foraging for roots, fungi, and small animals. In combat, a Boar uses its tusks to gore opponents, often knocking them down with the force of its charge. Despite their bulk, Boars are surprisingly fast and can be difficult to stop once they build up momentum. They are highly territorial and will fiercely defend their home territory from intruders.</summary>
 
 <summary>The Boar is a Medium-sized beast that plays the role of a formidable melee combatant in encounters. With an Armor Class of 11 and a modest 11 hit points, it presents a decent challenge for low-level adventurers, represented by a Challenge Rating of 1/4, indicating it is a suitable opponent for groups seeking minor conflicts. The Boar's notable strength lies in its Relentless ability, which allows it to survive near-death experiences, giving it a chance to remain in combat even when it would normally be incapacitated. However, its low Intelligence and Charisma scores reveal significant weaknesses in social interactions and mental challenges. Overall, the Boar focuses primarily on physical damage output and can be quite effective if utilized strategically in combat scenarios.</summary>
@@ -27,6 +29,7 @@ In terms of actions, the Boar primarily utilizes its Tusk attack, which is a mel
 
 Source: 5e_srd
 
+<statblock>
 ### Boar
 
 *Medium beast, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Tusk***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) slashing damage.
+***Tusk***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (1d6+1) slashing damage.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boar
 
 *Medium* *Beast*
@@ -88,6 +93,7 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage. If the boar moves at least 20 feet straight towards the target before the attack  the attack deals an extra 3 (1d6) slashing damage and the target makes a DC 11 Strength saving throw  falling prone on a failure.
 
 
+</statblock>
 
 
 
@@ -96,6 +102,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boar
 
 *Medium beast*
@@ -124,5 +131,6 @@ Source: 5e_artisinal_monsters
 
 - **Tusk.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
 
+</statblock>
 
 

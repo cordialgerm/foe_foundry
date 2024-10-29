@@ -1,6 +1,8 @@
 <MonsterName/>Dust Mephit</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>A Dust Mephit is a small, impish elemental creature made of swirling dust and sand. Its body constantly shifts and crumbles, as if it might blow away at any moment, and its wings are like torn, fluttering rags. Dust Mephits are mischievous and cruel, delighting in causing confusion and blinding their foes with clouds of dust. They are often found in desolate areas such as deserts or ruins, where they can hide in the swirling sands. In battle, they can exhale a cone of choking dust that blinds and disorients their enemies, and they may summon small dust storms to cover their escape.</summary>
 
 <summary>The Dust Mephit is a small elemental creature that embodies the essence of dust and earth. It possesses a unique combination of mobility and deceptive abilities, allowing it to navigate combat situations with agility while remaining elusive. With a moderate challenge rating of 1/2, it is a suitable opponent for low-level adventurers. The Dust Mephit has a decent Armor Class of 12, making it moderately difficult to hit. Its hit points total 17, providing it with a little durability in battle. One notable strength of the Dust Mephit is its ability to create blindness or incapacitate opposing characters with its special abilities. However, its low strength and constitution mean it is physically weak and not particularly durable against strong physical attacks. </summary>
@@ -39,6 +41,7 @@ Overall, the Dust Mephit is a cunning and deceptive creature that utilizes its e
 
 Source: 5e_srd
 
+<statblock>
 ### Dust Mephit
 
 *Small elemental, neutral evil*
@@ -75,7 +78,8 @@ Source: 5e_srd
 
 ***Claws.*** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 4 (1d4+2) slashing damage.
 
-***Blinding Breath (Recharge 6)***. The mephit exhales a 15- foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Blinding Breath (Recharge 6)***. The mephit exhales a 15- foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -83,6 +87,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Mephit
 
 *Small* *Elemental*
@@ -117,6 +122,7 @@ Source: 5e_artisinal_monsters
 - **Sleep Sand (1/Day):** The closest creature within 60 feet with 20 hit points or fewer falls asleep for 1 minute. It awakens early if it takes damage or a creature uses an action to shake it awake. Constructs and undead are immune to this effect.
 
 
+</statblock>
 
 
 
@@ -125,6 +131,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dust Mephit
 
 *Small elemental*
@@ -159,5 +166,6 @@ Source: 5e_artisinal_monsters
 
 - **Sandman’s Call (1/Day).** The mephit casts the sleep spell (spell save DC 11), requiring no material components and using WIS as the spellcasting ability.
 
+</statblock>
 
 

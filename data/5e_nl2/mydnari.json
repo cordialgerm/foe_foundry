@@ -1,0 +1,53 @@
+{
+    "name": "Mydnari",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "acid",
+        "poison",
+        "deceptive"
+    ],
+    "adjectives": [
+        "unsettling",
+        "cunning",
+        "symbiotic"
+    ],
+    "description": "The Mydnari is a medium humanoid known for its unsettling nature and a symbiotic relationship with a jelly substance.",
+    "memorable": "Its unique jelly symbiosis greatly impacts its abilities and tactics in combat.",
+    "goals": "The Mydnari seeks to manipulate others and exploit its symbiotic relationship for advantage.",
+    "relations": "It can interact with ooze-type creatures through its Ooze Empathy ability.",
+    "environment": "Often found in dark, damp areas where it can hide and use its deceptive nature to its advantage.",
+    "strengths": "Immune to acid damage and cannot be paralyzed, enhancing its resilience in combat.",
+    "weaknesses": "Separation from its jelly significantly weakens it, losing blindsight and several key abilities.",
+    "attacks": "Attacks with a shortsword for piercing damage and uses Acid Glob for acid damage and potential poison.",
+    "most_powerful_ability": "Jelly Symbiosis inflicts acid damage on attackers and maintains a critical connection with its jelly.",
+    "equipment": "Shortsword",
+    "senses": "Possesses blindsight out to 60 feet, but is blind beyond this distance.",
+    "skills": "Highly proficient in deception and intimidation, making it effective in manipulating others.",
+    "additional_information": [
+        "Effective at misleading and frightening adversaries.",
+        "Engages in both melee and ranged combat.",
+        "Has a high active perception score.",
+        "Relies heavily on its jelly for combat effectiveness.",
+        "Can manage ooze-type creatures through its empathy ability."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "jelly symbiosis creature with acid damage",
+        "humanoid that manipulates and deceives",
+        "acid damage attacker that relies on jelly",
+        "creature that poisons its enemies with acid glob",
+        "unsettling humanoid with high perception skills"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Fell Nightmare",
+    "queries": [
+        {
+            "query": "large fiend with fiery trail and evil aura",
+            "variant": "large fiend that has an evil aura and leaves a fiery trail"
+        },
+        {
+            "query": "creature that combines darkness and flame and can fly",
+            "variant": "monster that has darkness and flames and is capable of flying"
+        },
+        {
+            "query": "dark horse-like creature that grants fire resistance",
+            "variant": "dark equine creature that provides fire immunity"
+        },
+        {
+            "query": "large creature with hooves and fiery attack methods",
+            "variant": "big creature that uses hooves and has fire attacks"
+        },
+        {
+            "query": "fiendish nightmare with telepathy and strong physical attacks",
+            "variant": "nightmare fiend that can telepathically communicate and has powerful melee strikes"
+        }
+    ]
+}

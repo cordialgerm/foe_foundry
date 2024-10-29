@@ -1,0 +1,48 @@
+{
+    "name": "Swarm of Compsognathus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "ambush"
+    ],
+    "adjectives": [
+        "stealthy",
+        "mobile",
+        "agile"
+    ],
+    "description": "A swarm of small, agile Compsognathus that can effectively camouflage in grass, moving quickly and quietly.",
+    "memorable": "The ability to ambush foes using its Grasslands Camouflage while remaining immune to several conditions makes it a persistent threat.",
+    "goals": "To ambush unsuspecting creatures and overpower them through sheer numbers.",
+    "relations": "Often found in packs, typically encountered in environments rich in vegetation.",
+    "environment": "Grasslands and other areas with tall grass or shrubbery.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, with immunity to many conditions, allowing for high mobility.",
+    "weaknesses": "Very low strength and intelligence, limiting effectiveness in direct confrontations.",
+    "attacks": "Can perform a Bite attack that deals significant piercing damage, especially if the swarm is at full hit points.",
+    "most_powerful_ability": "Grasslands Camouflage allows for effective hiding and ambushing.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 12, allowing it to notice its surroundings fairly well.",
+    "skills": "Has notable stealth proficiency with a +6 bonus, enabling effective hiding.",
+    "additional_information": [
+        "Can occupy another creature's space due to its swarm nature.",
+        "Damage reduced when hit points fall below half.",
+        "Cannot regain hit points or gain temporary hit points during combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy swarm that hides in grass",
+        "agile small dinosaur swarm",
+        "swarm of small lizards ambushing foes",
+        "mobile beast with strong stealth",
+        "compsognathus swarm attacking in tall grass"
+    ]
+}

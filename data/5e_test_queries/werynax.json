@@ -1,0 +1,25 @@
+{
+    "name": "Werynax",
+    "queries": [
+        {
+            "query": "large magical creature with powerful area damage and natural armor",
+            "variant": "big magic creature with strong area attack and natural armor"
+        },
+        {
+            "query": "fast flying monstrosity that uses pounce and arcane bombardment",
+            "variant": "quick flying beast that utilizes pounce and arcane bombardment"
+        },
+        {
+            "query": "monster with high hit points and good saving throws against spells",
+            "variant": "creature with large HP and strong saving throws against magic"
+        },
+        {
+            "query": "strong beast that can heal itself and control the battlefield",
+            "variant": "powerful creature that can recover health and manage the battlefield"
+        },
+        {
+            "query": "agile creature that deals force damage and has darkvision",
+            "variant": "nimble monster that inflicts force damage and possesses darkvision"
+        }
+    ]
+}

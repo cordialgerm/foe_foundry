@@ -1,0 +1,54 @@
+{
+    "name": "Young Boreal Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 142,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 80 ft., walk 40 ft., swim 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "boreal",
+        "breath weapon",
+        "chaotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful",
+        "agile"
+    ],
+    "description": "The Young Boreal Dragon is a large, formidable creature with scales that shimmer with icy hues. It possesses a strong physique and agile wings, allowing it to navigate aerial combat effectively.",
+    "memorable": "It can unleash a devastating Cinder Breath attack that affects multiple foes within a wide area.",
+    "goals": "To dominate the battlefield through power and control, leveraging its breath weapon to damage multiple enemies.",
+    "relations": "Might be encountered with other dragons or chaotic creatures inhabiting cold environments.",
+    "environment": "Typically found in frigid regions, including snowy mountains and icy landscapes.",
+    "strengths": "Immunity to fire damage and resistance to cold damage, making it resilient against elemental attacks.",
+    "weaknesses": "Weak against cold damage, limiting its effectiveness in icy environments.",
+    "attacks": "The dragon can attack with a powerful bite and sharp claws, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Cinder Breath, exhaling fire in a 30-foot cone, causing high damage to multiple enemies.",
+    "equipment": null,
+    "senses": "Blindsight up to 30 feet allows it to detect nearby foes without needing light.",
+    "skills": "Exceptional in athletics and perception, making it adept at physical challenges and noticing hidden threats.",
+    "additional_information": [
+        "High hit points at 142, providing resilience in combat.",
+        "Can execute a Multiattack with three attacks in one turn.",
+        "Dexterity score is average, affecting its agility.",
+        "Challenging opponent with a Challenge Rating of 8.",
+        "Natural armor provides solid defense."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "young dragon with icy breath",
+        "powerful dragon that can fly",
+        "formidable ice-scaled dragon",
+        "chaotic dragon with high hit points",
+        "dragon with a devastating fire breath attack"
+    ]
+}

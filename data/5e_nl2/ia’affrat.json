@@ -1,0 +1,55 @@
+{
+    "name": "Ia\u2019Affrat",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 170,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft., fly 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "fiend",
+        "swarm",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "intelligent",
+        "cunning",
+        "elusive",
+        "manipulative"
+    ],
+    "description": "Ia\u2019Affrat is a master manipulator with a powerful aura. His appearance evokes a sense of dread, marked by his ability to shift between humanoid and shapeless forms. His keen intellect and charisma make him a cunning combatant and strategist.",
+    "memorable": "Ia\u2019Affrat can inhabit and control humanoids, making them unwitting allies in battle while maintaining a powerful presence through his legendary actions.",
+    "goals": "To dominate his foes, manipulate others, and maintain control over his individual fiends through telepathic communication.",
+    "relations": "Might serve or lead other fiends, often interacting with other creatures in a tactical manner.",
+    "environment": "Typically found in dark, corrupted areas, or places of evil influence, where he can exert control over lesser creatures.",
+    "strengths": "High intelligence and charisma make him an effective spellcaster and manipulator. His numerous immunities and resistances enhance his survivability.",
+    "weaknesses": "Ia\u2019Affrat is vulnerable to cold damage, which can be exploited in combat.",
+    "attacks": "Can make three Bite or Burning Claw attacks, or four Flaming Insect Bolt attacks, inflicting significant damage.",
+    "most_powerful_ability": "Collective Mind allows telepathic communication with all individual fiends, enhancing tactical coordination in battle.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet and an impressive passive perception of 19.",
+    "skills": "Noteworthy skills include high proficiency in Deception and Arcana, showcasing his expertise in manipulation and magic.",
+    "additional_information": [
+        "Immune to bludgeoning, fire, piercing, poison, and slashing damage.",
+        "Can produce a smoke shroud that obscures vision for enemies.",
+        "Can control humanoid bodies, using them as allies.",
+        "Has advantage on saving throws against spells and magical effects.",
+        "Can transform into a shapeless form when severely injured."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Ia\u2019Affrat excels in spellcasting, utilizing a variety of spells enhanced by his high intelligence.",
+    "test_queries": [
+        "cunning manipulation fiend with telepathy",
+        "fiend able to control humanoids",
+        "powerful swarm fiend with smoke abilities",
+        "Large fiend with significant spellcasting skills",
+        "manipulative creature with shapeshifting capabilities"
+    ]
+}

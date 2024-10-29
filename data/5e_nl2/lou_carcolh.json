@@ -1,0 +1,49 @@
+{
+    "name": "Lou Carcolh",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "climb 10 ft., swim 20 ft., walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "monstrosity",
+        "sticky tongue",
+        "poison"
+    ],
+    "adjectives": [
+        "cunning",
+        "sticky",
+        "agile"
+    ],
+    "description": "The Lou Carcolh is a Medium monstrosity known for its sticky tongues and slime trail, allowing it to ensnare and control its opponents effectively.",
+    "memorable": "Its ability to extend sticky tongues for ensnaring attacks makes it a unique and dangerous opponent in combat.",
+    "goals": "To ambush prey and control the battlefield using its sticky tongues and slime trail.",
+    "relations": "Frequently encountered in wetlands or locations near water, could be found alongside other aquatic creatures.",
+    "environment": "Wetlands, swamps, or near bodies of water.",
+    "strengths": "Strong physical attacks and effective at ambush tactics due to high stealth and sticky tongues.",
+    "weaknesses": "Vulnerable if its sticky tongues are targeted, particularly when damaged.",
+    "attacks": "Can bite for piercing and poison damage, spit venom from a distance, and ensnare with its sticky tongues.",
+    "most_powerful_ability": "Sticky Tongues, allowing it to restrain creatures from a distance of 60 feet.",
+    "senses": "Possesses tremorsense within a 60-foot radius, allowing it to detect movement through vibrations.",
+    "skills": "Skilled in stealth, making it adept at hiding and ambushing.",
+    "additional_information": [
+        "Can create difficult terrain with its slime trail.",
+        "Restrains creatures with its sticky tongues, making them vulnerable to attacks.",
+        "Can reel in restrained creatures for close combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sticky tongue monster with slime trail",
+        "ambush creature that can restrain targets",
+        "swamp monster with venomous attacks",
+        "cunning aquatic monster in wetlands",
+        "monstrosity that leaves a slime trail"
+    ]
+}

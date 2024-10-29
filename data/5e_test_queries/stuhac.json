@@ -1,0 +1,25 @@
+{
+    "name": "Stuhac",
+    "queries": [
+        {
+            "query": "fiend with strong deception skills that can traverse rocky surfaces",
+            "variant": "fiend that is good at deception and can walk on rocky terrains"
+        },
+        {
+            "query": "medium-sized creature with high armor class and magical illusions",
+            "variant": "medium monster that has an armor class of 18 and uses magic to create illusions"
+        },
+        {
+            "query": "combat-capable creature immune to cold and poison attacks",
+            "variant": "creature strong in battles that is immune to both cold and poison damage"
+        },
+        {
+            "query": "powerful fiend with telekinetic abilities that reduces opponent's speed",
+            "variant": "strong fiend with telekinesis that can impair enemies by lowering their speed"
+        },
+        {
+            "query": "hunter with strong physical abilities and skills in deception",
+            "variant": "predator featuring high physical skills and good at trickery"
+        }
+    ]
+}

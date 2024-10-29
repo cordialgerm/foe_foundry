@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Leviathan Hunter",
+    "queries": [
+        {
+            "query": "medium humanoid that hunts in water and grapples large creatures",
+            "variant": "humanoid creature that is medium-sized, hunts in water, and can grapple large foes"
+        },
+        {
+            "query": "Kobold with high hit points and disadvantage in sunlight",
+            "variant": "Kobold that has a lot of hit points and suffers penalties in sunlight"
+        },
+        {
+            "query": "aquatic combatant with magical weapon attacks and high Constitution",
+            "variant": "warrior skilled in aquatic combat with magical attacks and exceptional Constitution"
+        },
+        {
+            "query": "creature that speaks Draconic and has cold damage resistance",
+            "variant": "a being fluent in Draconic with resistance to cold damage"
+        },
+        {
+            "query": "Kobold that excels at grappling and is a tactical fighter",
+            "variant": "Kobold skilled in grappling and known for its tactical combat abilities"
+        }
+    ]
+}

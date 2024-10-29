@@ -1,0 +1,54 @@
+{
+    "name": "Painted Phantasm",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "construct",
+        "magical",
+        "artistic",
+        "combat"
+    ],
+    "adjectives": [
+        "artistic",
+        "elusive",
+        "resilient",
+        "deceptive",
+        "colorful"
+    ],
+    "description": "The Painted Phantasm resembles an animated canvas, shifting in color and hue, often adorned with colorful patterns that seem to change as it moves. It typically features a flat surface or warp-like display where it captures its opponents.",
+    "memorable": "The ability to capture opponents as paintings on a chosen surface makes the Painted Phantasm a uniquely thematic and formidable opponent.",
+    "goals": "It aims to immobilize and control opponents through its Capture Image ability, while simultaneously dealing damage with Paint Slash attacks.",
+    "relations": "As a construct, it can be created by any powerful mage or artist with significant magical prowess and may be encountered alongside other magical constructs.",
+    "environment": "Often found in artistic or enchanted locales, such as galleries, magical workshops, or vibrant landscapes that inspire creativity.",
+    "strengths": "High Dexterity enhances agility, and exceptional Charisma boosts magical effectiveness. The creature is immune to a variety of harmful conditions.",
+    "weaknesses": "Low Intelligence limits its strategic capabilities in battle. Vulnerable to tactics exploiting its reliance on surrounding artwork.",
+    "attacks": "Utilizes Paint Slash for physical damage and Capture Image to immobilize opponents by trapping them in painted illusions.",
+    "most_powerful_ability": "Capture Image, allowing it to incapacitate and restrain opponents by making them part of a drawing on a surface of its choosing.",
+    "senses": "It has darkvision out to 60 feet and a passive Perception of 15, allowing it to detect threats in low light.",
+    "skills": "Possesses an average awareness level with a +2 modifier to Perception, enabling it to notice hidden details.",
+    "additional_information": [
+        "Immune to exhaustion, fear, and other debilitating conditions.",
+        "Can traverse through artworks with the Painting Portal ability.",
+        "Resists non-magical bludgeoning, piercing, and slashing damage.",
+        "Has an advantage on saving throws against spells due to Magic Resistance.",
+        "Cannot be physically altered by spells or effects due to Immutable Form."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "artistic construct that traps opponents",
+        "magical creature that captures images",
+        "colorful creature used for combat",
+        "medium construct with paint-based attacks",
+        "painted monster that restrains targets"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Sunflower Sprite",
+    "queries": [
+        {
+            "query": "small fey creature that thrives in sunlight and can communicate with plants",
+            "variant": "tiny fey critter that shines in daylight and talks to plants"
+        },
+        {
+            "query": "neutral good sprite with magic resistance and healing abilities",
+            "variant": "good aligned sprite that resists magic and has healing skills"
+        },
+        {
+            "query": "agile creature with radiant powers and low hit points that weakens at night",
+            "variant": "fast monster with shining abilities and few hit points that loses power at night"
+        },
+        {
+            "query": "nature-loving sprite with diurnal disadvantage and light-based attacks",
+            "variant": "nature-friendly sprite that has a penalty at night and uses light attacks"
+        },
+        {
+            "query": "fey creature with a radiant leaf attack and healing radiance ability",
+            "variant": "fey monster that attacks with radiant leaves and has a healing light ability"
+        }
+    ]
+}

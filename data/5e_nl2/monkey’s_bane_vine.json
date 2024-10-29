@@ -1,0 +1,49 @@
+{
+    "name": "Monkey's Bane Vine",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "slow, walking speed of 10 feet",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "grappler",
+        "ambush"
+    ],
+    "adjectives": [
+        "large",
+        "strong",
+        "camouflaged"
+    ],
+    "description": "The Monkey's Bane Vine is a large, robust plant creature that resembles an ordinary vine when motionless. Known for its strong grappling tendrils, this creature can control the battlefield.",
+    "memorable": "Its ability to blend into the environment as a vine makes it a surprising threat.",
+    "goals": "Ambush intruders and restrain them to deal damage over time.",
+    "relations": "Typically encountered in dense foliage or areas where it can disguise itself as a mundane vine.",
+    "environment": "Forests or jungles, often hidden among other vegetation.",
+    "strengths": "High hit points, ability to restrain and continuously damage opponents.",
+    "weaknesses": "Limited mobility with only 10 feet of movement.",
+    "attacks": "Can strike with two tendrils from 20 feet away, dealing bludgeoning damage and grappling foes.",
+    "most_powerful_ability": "False Appearance allows it to remain undetected until it attacks.",
+    "senses": "Blindsight up to 30 feet helps it detect threats without moving.",
+    "skills": "Possesses basic perception abilities, useful for detecting nearby targets.",
+    "additional_information": [
+        "Resilient to cold and fire damage.",
+        "Immune to being blinded, deafened, exhausted, or prone.",
+        "Can only grapple one creature per tendril.",
+        "Grappled creatures take ongoing damage.",
+        "Distracting for those who venture too close."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "ambushing plant that restrains foes",
+        "vine creature that resembles common vines",
+        "large attacker with grappling tendrils",
+        "plant with powerful bludgeoning attacks",
+        "creature that blends into forest foliage"
+    ]
+}

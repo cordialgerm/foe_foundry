@@ -1,0 +1,25 @@
+{
+    "name": "Giant Wasp",
+    "queries": [
+        {
+            "query": "aggressive flying insect with a poisonous sting",
+            "variant": "aggressive insect that flies and has venomous stinger"
+        },
+        {
+            "query": "medium-sized wasp found in jungles that attacks in swarms",
+            "variant": "wasp that is medium-sized and lives in jungles, attacking as a swarm"
+        },
+        {
+            "query": "insect that paralyzes prey with its stinger and lives in nests",
+            "variant": "creature that can paralyze its targets and resides in underground nests"
+        },
+        {
+            "query": "territorial flying beast with sharp stinger capable of injecting venom",
+            "variant": "territorial beast that flies and has a sharp stinger for venom injection"
+        },
+        {
+            "query": "fast insect known for its lethal attacks and low intelligence",
+            "variant": "quick insect recognized for deadly attacks and poor intelligence"
+        }
+    ]
+}

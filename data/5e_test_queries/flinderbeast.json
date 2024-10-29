@@ -1,0 +1,25 @@
+{
+    "name": "Flinderbeast",
+    "queries": [
+        {
+            "query": "small fey creature with high agility and stealth in forest",
+            "variant": "fey creature small with agility and stealth in the woods"
+        },
+        {
+            "query": "monster that can teleport and exhale splinters",
+            "variant": "creature that can teleport and breath splinters"
+        },
+        {
+            "query": "cunning fey that resists charm and has heightened senses",
+            "variant": "sly fey resistant to charm with enhanced senses"
+        },
+        {
+            "query": "monster with fey resilience and strong bite attack",
+            "variant": "creature with resilience fey and strong bite attack"
+        },
+        {
+            "query": "small agile creature known for acid attacks and dexterity",
+            "variant": "agile small creature famous for dexterity and acid attacks"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Servant of Yig",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "swim 30 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "poison",
+        "ambusher"
+    ],
+    "adjectives": [
+        "malevolent",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Servant of Yig is a twisted aberration that embodies the dark nature of Yig. It has a strong physique, agile presence, and features abilities to charm and instill fear in its foes.",
+    "memorable": "Its ability to grapple and poison targets makes it particularly deadly in close combat.",
+    "goals": "To serve Yig and sow chaos using its abilities to charm and confuse others.",
+    "relations": "Serving Yig, it may be encountered alongside other aberrations or creatures influenced by dark magic.",
+    "environment": "Typically found in dark, secluded areas or near bodies of water.",
+    "strengths": "Magic Resistance provides it with an advantage against spells, and proficiency in stealth makes it an effective ambusher.",
+    "weaknesses": "An Armor Class of 12 makes it relatively easy to hit in combat.",
+    "attacks": "Uses a multiattack to deliver both piercing and poison damage with its bite along with slashing damage from its glaive.",
+    "most_powerful_ability": "The ability to poison targets, incapacitating them while inflicting ongoing damage.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 10 feet, enabling it to perceive its surroundings even without light.",
+    "skills": "Highly proficient in stealth, perception, and persuasion, allowing it to infiltrate and manipulate.",
+    "additional_information": [
+        "Immune to poison damage and conditions related to poison.",
+        "Can charm humanoids and instill fear in creatures.",
+        "Has a powerful grappling ability with the Constrict action.",
+        "Decent physical and mental attributes, contributing to its versatility.",
+        "Uses spellcasting to influence battles and control opponents."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast charm person and fear three times per day each, and confusion once per day using Charisma as its spellcasting ability.",
+    "test_queries": [
+        "aberration that can grapple and poison",
+        "creature with charm and fear spells",
+        "small evil monster living in dark water",
+        "monster that ambushes with stealth and magic",
+        "Servant of Yig abilities and weaknesses"
+    ]
+}

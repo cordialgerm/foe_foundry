@@ -1,6 +1,8 @@
 <MonsterName/>Preta</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Preta is a Medium-sized undead creature characterized by its neutral evil alignment. It plays the role of a deceptive and stealthy attacker on the battlefield, employing its ability to manipulate blood and hide in the shadows to gain the upper hand in combat. Known for its - good attack potential and resilience, it can deal significant necrotic damage while sustaining itself through its unique Blood Siphon ability, giving it a sustainable foothold in prolonged encounters. Its weaknesses mainly stem from its moderate defenses and reliance on stealth tactics, making it less effective in direct confrontations against perceptive or high-damage foes.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ The Hidden Illusionist ability enables the Preta to become invisible until it ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Preta
 
 *Medium* *Undead* *neutral evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Hidden Illusionist:** The preta turns invisible until it attacks or uses Blood Siphon, or until its concentration ends (as if concentrating on a spell). While invisible, it leaves no physical evidence of its passage, leaving it traceable only by magic. Any equipment the preta wears or carriers is invisible with it. While invisible, the preta can create small illusory sounds and images like the minor illusion spell except it can create either two images, two sounds, or one sound and one image.
 
 
+</statblock>
 
 

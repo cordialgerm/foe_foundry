@@ -1,0 +1,25 @@
+{
+    "name": "Zmey Headling",
+    "queries": [
+        {
+            "query": "medium dragon that can breathe underwater and has regenerative abilities",
+            "variant": "dragon that is medium-sized, breathes in water and has regeneration"
+        },
+        {
+            "query": "chaotic evil dragon with cold and fire resistance living in water",
+            "variant": "evil chaotic dragon that has resistance to cold and fire and lives in water"
+        },
+        {
+            "query": "dragon with a powerful fire breath attack and multiattack features",
+            "variant": "dragon that can use multiattack and has a strong fire breath attack"
+        },
+        {
+            "query": "combat-focused dragon with high hit points and low intelligence",
+            "variant": "dragon that fights well, has many hit points, but is not very smart"
+        },
+        {
+            "query": "Zmey Headling abilities and tactics in battle",
+            "variant": "Zmey Headling combat strategies and abilities"
+        }
+    ]
+}

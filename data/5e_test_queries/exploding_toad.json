@@ -1,0 +1,25 @@
+{
+    "name": "Exploding Toad",
+    "queries": [
+        {
+            "query": "tiny explosive monster that can swim and breathes air",
+            "variant": "small explosive creature that swims and can breathe both water and air"
+        },
+        {
+            "query": "chaotic evil toad that explodes when killed",
+            "variant": "evil chaotic toad that goes boom upon death"
+        },
+        {
+            "query": "stealthy amphibious creature with fire immunity",
+            "variant": "sneaky water and land creature immune to fire damage"
+        },
+        {
+            "query": "monstrosity with low hit points and deadly explosion ability",
+            "variant": "creature with few hit points and a lethal explosion skill"
+        },
+        {
+            "query": "small toad that hops around and has a dangerous final croak",
+            "variant": "little toad that jumps and has a deadly final croak ability"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Bonepowder Ghoul",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 180,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "30 ft. walk",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghoul",
+        "magical"
+    ],
+    "adjectives": [
+        "menacing",
+        "evasive",
+        "resilient",
+        "tactical"
+    ],
+    "description": "The Bonepowder Ghoul is a small, menacing undead creature with impressive agility and magical capabilities. It can transform into an almost immaterial dusty form, allowing it to move through narrow spaces effortlessly, enhancing its evasive maneuvers in combat.",
+    "memorable": "Its ability to reduce a target's Strength and inflict darakhul fever makes the Bonepowder Ghoul particularly dangerous, alongside its capacity to create devastating whirlwinds of necrotic energy.",
+    "goals": "Typically seeks to incapacitate and destroy humanoid victims, leveraging its necrotic powers to infect and weaken targets.",
+    "relations": "May be encountered alongside other ghouls due to its Turning Defiance ability, making it a formidable foe in groups.",
+    "environment": "Likely found in graveyards, ruins, or areas steeped in dark magic.",
+    "strengths": "Immunities to necrotic and poison damage make it resilient, while its evasive movement and ability to inflict debilitating effects on victims enhance its tactical combat capabilities.",
+    "weaknesses": "Vulnerable to radiant damage; this weakness requires caution when facing divine or holy entities.",
+    "attacks": "Primarily uses its Bite action to deliver piercing and necrotic damage while reducing a target's Strength. The Gravedust ability allows it to unleash a cone of necrotic damage affecting multiple creatures.",
+    "most_powerful_ability": "The Whirlwind action creates a damaging area of slashing damage in a cubic area, threatening to instantly kill targets who have their Strength reduced to zero.",
+    "equipment": null,
+    "senses": "The creature possesses a passive perception of 16, making it adept at sensing its surroundings.",
+    "skills": "Excels in Stealth with a +9 modifier, allowing it to ambush targets effectively.",
+    "additional_information": [
+        "The Amorphous ability lets it move through spaces as narrow as 1 inch without squeezing.",
+        "No need for air or sleep enhances its endurance in lengthy encounters.",
+        "Advantage on saving throws against turning effects due to its Turning Defiance ability.",
+        "Can cast various spells like dispel magic and phantasmal killer depending on its form.",
+        "Infecting targets with darakhul fever adds an additional layer of threat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "Can cast several spells, including dispel magic and phantasmal killer, with spells impacting the battlefield significantly.",
+    "test_queries": [
+        "undead creature with necrotic powers",
+        "stealthy ghoul with strength reduction",
+        "Bonepowder Ghoul abilities",
+        "tactical undead with spellcasting",
+        "agile ghoul with darakhul fever risk"
+    ]
+}

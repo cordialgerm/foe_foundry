@@ -1,0 +1,25 @@
+{
+    "name": "Hoard Drake",
+    "queries": [
+        {
+            "query": "large evil dragon that loves treasure and can breathe molten gold",
+            "variant": "big evil dragon that loves treasure and can breath molten gold"
+        },
+        {
+            "query": "dragon immune to fire that detects precious metals within 60 feet",
+            "variant": "dragon that's immune to fire and can sense precious metals within sixty feet"
+        },
+        {
+            "query": "powerful dragon with high Constitution and low Dexterity hiding in treasure hoards",
+            "variant": "strong dragon with high Constitution and low Dexterity that hides in treasure hoards"
+        },
+        {
+            "query": "dragon that attacks with claws and has an advantage against treasure thieves",
+            "variant": "dragon that claws attacks and has a an advantage vs treasure thieves"
+        },
+        {
+            "query": "creature that deals fire damage and has the ability Miser\u2019s Fury",
+            "variant": "creature dealing fire damage and with the Miser's Fury ability"
+        }
+    ]
+}

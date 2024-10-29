@@ -1,6 +1,8 @@
 <MonsterName/>Vangsluagh</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>85</HP>
 <summary>The Vangsluagh is a chaotic evil aberration known for its unsettling ability to wreak havoc on spellcasters and disturb the battlefield with its incessant noise. With an Armor Class of 13 and 85 hit points derived from 10d8+40, it has a moderate level of durability for creatures of its challenge rating, which is 4, or 1,100 experience points. Its combination of high Constitution and decent Dexterity makes it resilient in combat. Notably, the Vangsluagh can disrupt enemy spellcasting, making it particularly dangerous when facing magic-adept foes. However, it suffers from disadvantages when it comes to stealth due to its Constant Racket ability, and its combat capabilities largely rely on its unique sonic-based attacks.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Through its cacophonous abilities and solid durability, the Vangsluagh poses a u
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vangsluagh
 
 *Medium* *Aberration* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Agonizing Trill (Recharge After a Short or Long Rest):** The vangsluagh increases the pitch of its cacophony to deadly levels. Each creature within 30 feet of the vangsluagh must make a DC 13 Constitution saving throw. On a failure, a creature takes 10 (3d6) thunder damage and is stunned for 1 minute. On a success, a creature takes half the damage and isn’t stunned. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

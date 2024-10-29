@@ -1,0 +1,50 @@
+{
+    "name": "Befouled Weird",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking, 60 ft. swimming",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "aquatic",
+        "disease",
+        "necrotic"
+    ],
+    "adjectives": [
+        "murky",
+        "debilitating",
+        "formidable"
+    ],
+    "description": "The Befouled Weird is a murky, water-dwelling elemental that embodies an unsettling presence, capable of squeezing through narrow passages with its Water Form. Its physical form is reinforced by natural armor, making it tough in combat.",
+    "memorable": "Its ability to inflict parasitic infections that can reduce enemies' intelligence to 0, leading to death, adds a chilling element to its encounters.",
+    "goals": "To debilitate enemies with disease and maintain control over its aquatic territory.",
+    "relations": "May be encountered alongside other water elementals or creatures of a similar aquatic nature.",
+    "environment": "Aquatic environments, especially murky or contaminated waters.",
+    "strengths": "High mobility in water with a strong offensive capability through its slam attacks and debilitating parasitic abilities.",
+    "weaknesses": "Very low Intelligence leads to poor strategic capabilities in combat.",
+    "attacks": "Can make two slam attacks that deal bludgeoning and necrotic damage, potentially infecting targets with parasitic amoebas.",
+    "most_powerful_ability": "The Parasitic Amoebas ability allows it to infect foes, making them vulnerable to further necrotic damage and progressively reducing their Intelligence.",
+    "senses": "Possesses passive Perception of 11.",
+    "skills": "None noted.",
+    "additional_information": [
+        "Infected creatures become weaker over time, creating urgency in battles against the Befouled Weird.",
+        "Can grapple and restrain foes, making it a formidable control creature.",
+        "Resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing water elemental",
+        "creature inflicting necrotic damage",
+        "aquatic monster with debilitating abilities",
+        "parasitic infection elemental",
+        "grappling underwater creature"
+    ]
+}

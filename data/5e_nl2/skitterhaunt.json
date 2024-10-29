@@ -1,0 +1,52 @@
+{
+    "name": "Skitterhaunt",
+    "creature_type": "Ooze",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "acid",
+        "infestation"
+    ],
+    "adjectives": [
+        "large",
+        "acidic",
+        "infesting"
+    ],
+    "description": "The Skitterhaunt is a Large ooze that can infest creatures, known for its acid attacks and unique ability to persist in a smaller form.",
+    "memorable": "Its ability to infest other creatures with acid damage makes it a dangerous threat, able to reduce targets to helplessness.",
+    "goals": "To infest and control hosts, often large or smaller beasts.",
+    "relations": "May be encountered alongside other oozes or vermin, as it utilizes the exoskeleton of host creatures.",
+    "environment": "Often found in areas dense with vermin or decaying organic matter.",
+    "strengths": "Resilient due to high hit points and can deal significant acid damage.",
+    "weaknesses": "Low Dexterity, Intelligence, Wisdom, and Charisma limits its effectiveness in interactions and evasions.",
+    "attacks": "Utilizes sharp Mandibles and a piercing Sting, both delivering considerable acid damage.",
+    "most_powerful_ability": "Infest Vermin allows it to invade and control the bodies of other creatures, causing continuous acid damage.",
+    "equipment": null,
+    "senses": "Blindsight extends to 60 feet, allowing it to detect nearby creatures despite being blind.",
+    "skills": null,
+    "additional_information": [
+        "Immune to acid damage",
+        "Does not require sleep, keeping it vigilantly active",
+        "Can transform to a Smaller ooze when reduced to 0 hit points",
+        "Deals damage to those who hit it in melee range",
+        "Capable of incapacitating larger prey through infestation"
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ooze that infests creatures",
+        "acid spitting monster found in vermin",
+        "cunning ooze that controls beasts",
+        "dangerous ooze with powerful acid attacks",
+        "creature that survives by infesting hosts"
+    ]
+}

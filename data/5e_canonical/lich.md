@@ -1,6 +1,8 @@
 <MonsterName/>Lich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>21</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>135</HP>
 <summary>A Lich is an undead spellcaster of immense power, having achieved immortality through dark and forbidden magic. Its skeletal form is wrapped in decayed robes, and its eyes glow with an unholy light. Liches are highly intelligent and possess vast magical knowledge, using necromancy and arcane spells to control legions of undead or destroy their enemies. They often reside in ancient towers or crypts, where they plot to increase their power or conquer the living. A Lich's phylactery, a magical object containing its soul, ensures that it can return even if its body is destroyed, making them nearly impossible to defeat permanently.</summary>
 
 <summary>A Lich is a powerful and cunning medium undead creature that serves as an exemplar of dark magic and eternal life. As an undead spellcaster, it boasts a fearsome combination of high Intelligence and a vast repertoire of spells, making it a formidable foe in combat. With an Armor Class of 18 and significant hit points totaling 170, the Lich is well-equipped to withstand damage but has specific vulnerabilities, such as damage from nonmagical weapons. It has exceptional magical capabilities, allowing it to manipulate the battlefield, hinder enemies, and resurrect fallen allies, making it a central figure in any encounter. The Lich's actions can freeze enemies, unleash devastating spells, and even protect itself with its auras. Although powerful, the Lich is reliant on maintaining its soul vessel for rejuvenation and must be approached with caution due to its various immunities and resistances.</summary>
@@ -43,6 +45,7 @@ Overall, the Lich stands as a powerful undead spellcaster with a variety of abil
 
 Source: 5e_srd
 
+<statblock>
 ## Lich
 
 *Medium undead, any evil alignment*
@@ -106,7 +109,8 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 
 **Frightening Gaze (Costs 2 Actions)**. The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.
 
-**Disrupt Life (Costs 3 Actions)**. Each non-undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.
+**Disrupt Life (Costs 3 Actions)**. Each non-undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -114,6 +118,7 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lich
 
 *Medium* *Undead*
@@ -201,6 +206,7 @@ Source: 5e_artisinal_monsters
 - **Cast Spell:** The lich casts cantrip or a 1st-level spell. The lich can use 2 legendary actions to cast a 2nd-level spell or 3 legendary actions to cast a 3rd-level spell.
 - **Paralyzing Touch (Costs 2 Actions):** The lich uses Paralyzing Touch.
 - **Arc Lightning (Costs 3 Actions):** The lich uses Arc Lightning.
+</statblock>
 
 
 
@@ -209,6 +215,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lich
 
 *Medium undead*
@@ -268,5 +275,6 @@ The lich can take 3 legendary actions, choosing from the options below. Only one
 ### Regional Effects
 
 - **1d10** If the lich dies, these effects fade in  days.
+</statblock>
 
 

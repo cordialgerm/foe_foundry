@@ -1,0 +1,52 @@
+{
+    "name": "Snake Lamia",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "charm",
+        "manipulation",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "malevolent",
+        "charming"
+    ],
+    "description": "The Snake Lamia features a blend of a humanoid upper body and a large serpent lower body, exuding an aura of malevolence with its striking appearance.",
+    "memorable": "Combines physical prowess with potent charm and illusion magic, making it a dangerous manipulator in combat.",
+    "goals": "To manipulate and deceive opponents, utilizing charm and spells to gain control.",
+    "relations": "Likely encountered with other chaotic evil creatures, and may serve dark powers or entities.",
+    "environment": "Typically found in dark, secluded areas where it can use its charm spells to lure victims.",
+    "strengths": "High Charisma enhances deception and spellcasting; proficient in charming and incapacitating foes.",
+    "weaknesses": "Reliant on magic; vulnerable if opponents resist charm spells or can disrupt its concentration.",
+    "attacks": "Utilizes a melee spell attack called 'Dizzying Touch' to charm opponents, and 'Constrict' to grapple foes with substantial damage.",
+    "most_powerful_ability": "Hypnotic Pattern causes widespread incapacitation of enemies, making them unable to act for a minute.",
+    "equipment": "Wields a dagger, which can deal piercing and poison damage.",
+    "senses": "Possesses a passive Perception of 15, indicating keen awareness.",
+    "skills": "Noteworthy skilled in Deception, able to manipulate others effectively.",
+    "additional_information": [
+        "Can use Misty Step to teleport, enhancing its mobility.",
+        "Innate spellcasting allows it to cast spells without material components.",
+        "Charmed targets suffer disadvantages on Wisdom saving throws.",
+        "Can shapeshift using disguise self, enhancing its deceptive nature.",
+        "Radiates a Chaotic Evil aura affecting creatures nearby."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innately casts charm person, disguise self, and potent spells like geas and hypnotic pattern once per day.",
+    "test_queries": [
+        "large snake creature with charm abilities",
+        "manipulative serpent monster with illusions",
+        "cunning creature that uses spells to deceive",
+        "dangerous manipulative monster hiding in shadows",
+        "chaotic evil creature with grappling attacks"
+    ]
+}

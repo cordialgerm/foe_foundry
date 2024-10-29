@@ -1,0 +1,25 @@
+{
+    "name": "Azza Gremlin",
+    "queries": [
+        {
+            "query": "small fey creature that manipulates lightning and is fragile in combat",
+            "variant": "small creature of fey type that is lightning manipulator and fragile in battle"
+        },
+        {
+            "query": "mischievous lightning-immune gremlin with high dexterity",
+            "variant": "mischievous gremlin immune to lightning with high agility"
+        },
+        {
+            "query": "creature with contagious lightning ability and low hit points",
+            "variant": "monster with ability to cause contagious lightning and few hit points"
+        },
+        {
+            "query": "Azza Gremlin combat tactics using lightning and teleportation",
+            "variant": "Azza Gremlin strategies in battle using lightning and teleporting"
+        },
+        {
+            "query": "fey creature with darkvision that speaks Common and Primordial",
+            "variant": "fey being with dark vision that can communicate in Common and Primordial"
+        }
+    ]
+}

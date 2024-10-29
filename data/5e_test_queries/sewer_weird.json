@@ -1,0 +1,25 @@
+{
+    "name": "Sewer Weird",
+    "queries": [
+        {
+            "query": "large elemental monster that thrives in stagnant waters",
+            "variant": "large monster that is an elemental and thrives in still waters"
+        },
+        {
+            "query": "toxic creature with multiple slam attacks and poison immunity",
+            "variant": "toxic monster with slamming attacks and immunity to poison"
+        },
+        {
+            "query": "neutral evil entity that can swim and manipulate filth",
+            "variant": "entity that is neutral evil, swims, and manipulates waste"
+        },
+        {
+            "query": "creature with high dexterity that lives in sewer-like environments",
+            "variant": "high dexterity monster that resides in sewers"
+        },
+        {
+            "query": "monster that deals thunder damage and emerges from dirty water",
+            "variant": "creature that inflicts thunder damage and rises from filthy water"
+        }
+    ]
+}

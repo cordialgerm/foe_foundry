@@ -1,0 +1,25 @@
+{
+    "name": "Lystrosaurus",
+    "queries": [
+        {
+            "query": "medium-sized beast with strong attacks and decent armor protection",
+            "variant": "medium beast that has strong attacks and good armor protection"
+        },
+        {
+            "query": "powerful physical attacker that can knock foes prone",
+            "variant": "strong attacker that can make foes prone"
+        },
+        {
+            "query": "creature with high strength score and low intelligence that lives underground",
+            "variant": "monster with high strength and low intelligence that dwells underground"
+        },
+        {
+            "query": "beast that excels in melee combat with a devastating bite attack",
+            "variant": "monster that is great in melee with a lethal bite attack"
+        },
+        {
+            "query": "beast characterized by its robust physique and good mobility in combat",
+            "variant": "strong beast known for its robust body and good mobility in fights"
+        }
+    ]
+}

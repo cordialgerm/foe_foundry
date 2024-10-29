@@ -1,0 +1,25 @@
+{
+    "name": "Ortifex",
+    "queries": [
+        {
+            "query": "flying undead creature that charms its foes",
+            "variant": "undead creature that can charm opponents and flies"
+        },
+        {
+            "query": "creature with blindsight that serves as a blood source",
+            "variant": "blood source creature with ability for blindsight"
+        },
+        {
+            "query": "medium undead that can't walk and has significant hit points",
+            "variant": "undead medium creature with high hit points and cannot walk"
+        },
+        {
+            "query": "necrotic damage dealing creature immune to poison",
+            "variant": "creature that deals necrotic damage and is poison immune"
+        },
+        {
+            "query": "neutral evil flying monster with a hypnotic heartbeat",
+            "variant": "hypnotic heartbeat monster that is neutral evil and flies"
+        }
+    ]
+}

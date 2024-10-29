@@ -1,0 +1,25 @@
+{
+    "name": "Lizardfolk Ruler",
+    "queries": [
+        {
+            "query": "medium humanoid with strong melee combat abilities in aquatic environments",
+            "variant": "humanoid medium creature that excels in melee and can adapt to water"
+        },
+        {
+            "query": "Lizardfolk creature that can hold breath underwater and has a commanding presence",
+            "variant": "creature with Lizardfolk traits that can breathe underwater and exudes authority"
+        },
+        {
+            "query": "aggressive lizard warrior with increased perception and damaging attacks",
+            "variant": "warrior lizard that attacks fiercely and has heightened senses for combat"
+        },
+        {
+            "query": "ruler of lizardfolk known for tactical advantages and ally support",
+            "variant": "lizardfolk leader recognized for helping allies and using tactics in battle"
+        },
+        {
+            "query": "amphibious combat humanoid with special abilities enhancing melee damage",
+            "variant": "combat humanoid that lives in water and has abilities that boost melee damage"
+        }
+    ]
+}

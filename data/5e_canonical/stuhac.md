@@ -1,6 +1,8 @@
 <MonsterName/>Stuhac</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>209</HP>
 <summary>The Stuhac is a medium-sized fiend known for its neutral evil alignment and formidable combat capabilities. With a challenge rating of 13, this creature presents a significant threat to adventurers, boasting a high armor class of 18 due to its natural armor, along with 209 hit points derived from 22d8 plus an additional 110. One of its notable strengths lies in its impressive attributes, particularly its strength and constitution, which are exceptional at +6 and +5 respectively, making it a formidable opponent in direct combat. The Stuhac is also versatile, with strong dexterity and wisdom scores, allowing for decent agility and perception. However, it is vulnerable to magical attacks that deal nonmagical bludgeoning or piercing damage, as it has resistances to various elemental damage types. Its intelligence and charisma are less noteworthy, suggesting it may not excel in magical abilities beyond its specific traits.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Stuhac's blend of physical prowess, tactical ability, and magical d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stuhac
 
 *Medium* *Fiend* *Neutral Evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 28 (5d8 + 6) slashing damage.
 - **Hobble:** The stuhac telekinetically tears the tendons and ligaments of one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or take 13 (3d8) force damage and its speed is reduced by 10 feet. The stuhac can’t reduce a creature’s speed below 0 feet with this action. This reduction lasts until the creature finishes a long rest or until removed by the greater restoration spell or similar magic.
 - **Illusory Appearance:** The stuhac covers itself and anything it is wearing or carrying with a magical illusion that makes it look like another creature of its general size and Humanoid shape. The illusion ends if the stuhac takes a bonus action to end it or if the stuhac dies.
+</statblock>
 
 

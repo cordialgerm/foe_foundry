@@ -1,0 +1,25 @@
+{
+    "name": "Giant Mole Lizard",
+    "queries": [
+        {
+            "query": "large burrowing lizard with claws and sunlight sensitivity",
+            "variant": "large lizard that burrows and has issues with sunlight"
+        },
+        {
+            "query": "strong creature immune to being knocked prone that uses constricting tail",
+            "variant": "powerful creature that can't be knocked down and uses a tail for constriction"
+        },
+        {
+            "query": "beast with perception score of -1 and resistance to acid",
+            "variant": "creature that has a -1 perception and is resistant to acid"
+        },
+        {
+            "query": "multiattack monster with a unique carrying capacity ability",
+            "variant": "monster that can make multiple attacks and has special carrying capacity"
+        },
+        {
+            "query": "slow-moving large beast that excels in combat when burrowing",
+            "variant": "large creature that moves slowly but is great in combat if it burrows"
+        }
+    ]
+}

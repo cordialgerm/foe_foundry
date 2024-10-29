@@ -1,0 +1,50 @@
+{
+    "name": "Harvest Horse",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 37,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "beast",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Harvest Horse is a robust construct, built to carry heavy loads and withstand damage on the battlefield. It features a sturdy natural armor with a strong emphasis on melee capabilities.",
+    "memorable": "Its ability to trample over enemies with its Harvester\u2019s Stampede while doubling damage to structures makes it a formidable presence in combat.",
+    "goals": "To serve as a frontline entity in battles and transport heavy items efficiently.",
+    "relations": "May be encountered with other constructs or as a companion to adventurers needing heavy lifting.",
+    "environment": "Often found in dungeons or places where heavy lifting is required.",
+    "strengths": "High carrying capacity due to Beast of Burden, immunity to poison and psychic damage, and conditions like being frightened or charmed.",
+    "weaknesses": "Poor Dexterity affects its ability to dodge attacks, and it has a slow traversal through difficult terrain.",
+    "attacks": "Primarily uses a Slam attack for bludgeoning damage and Harvester's Stampede to trample enemies.",
+    "most_powerful_ability": "Harvester's Stampede, allowing it to move through enemies, dealing slashing damage and potentially knocking them prone.",
+    "equipment": null,
+    "senses": "It possesses a passive Perception of 6, which is quite low.",
+    "skills": "Has proficiency in Perception, but its bonus is hampered by low Wisdom.",
+    "additional_information": [
+        "Immune to several conditions, including exhaustion and frightened.",
+        "Functions without air, food, or sleep.",
+        "Considered one size larger for carrying capacity.",
+        "Capability of doubling damage to objects as a Siege Monster.",
+        "Requires additional movement for difficult terrain."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large construct with high carrying capacity",
+        "powerful battle horse with a stampede attack",
+        "construct that does not need food or sleep",
+        "trample over enemies with a large construct",
+        "horse that can double damage to structures"
+    ]
+}

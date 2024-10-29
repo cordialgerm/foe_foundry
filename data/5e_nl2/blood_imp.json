@@ -1,0 +1,53 @@
+{
+    "name": "Blood Imp",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "imp",
+        "fiend",
+        "stealthy",
+        "deceptive"
+    ],
+    "adjectives": [
+        "cunning",
+        "malicious",
+        "nimble"
+    ],
+    "description": "The Blood Imp is a small, fiendish creature characterized by its malicious demeanor and quick, agile movements. It possesses a notable ability to fly, making it a challenging target.",
+    "memorable": "Its special ability 'Bleed the Dying' allows it to inflict extra poison damage on wounded foes, capitalizing on vulnerabilities.",
+    "goals": "Typically seeks to exploit weaknesses in others, creating chaos and manipulation within combat.",
+    "relations": "Often encountered alongside other fiends or in the service of more powerful devilish entities.",
+    "environment": "Commonly found in dark, shadowy places where it can use its abilities to evade detection.",
+    "strengths": "Resistance to cold damage and immunity to fire and poison, along with magic resistance, make it durable against spells.",
+    "weaknesses": "Low physical strength makes it vulnerable in direct melee combat.",
+    "attacks": "Utilizes a sting for melee attacks and 'Spew Blood' for ranged poison damage.",
+    "most_powerful_ability": "'Devil's Sight' grants it the ability to see through magical darkness.",
+    "equipment": null,
+    "senses": "Possesses darkvision that allows it to see in darkness as if it were dim light.",
+    "skills": "Excels in persuasion with a +4 modifier, making it competent in social encounters.",
+    "additional_information": [
+        "Can maneuver around the battlefield effortlessly due to flying speed.",
+        "Highly effective in ambush situations due to stealth.",
+        "Uses cunning tactics to inflict psychological fear and mistrust.",
+        "Exploits the vulnerabilities of enemies, especially those who are already injured.",
+        "Has a deceptive and malevolent appearance, often lurking in shadows."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning fiend",
+        "deceptive imp",
+        "poisonous creature",
+        "flying fiend",
+        "magical darkness manipulator"
+    ]
+}

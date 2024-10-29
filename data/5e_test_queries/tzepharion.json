@@ -1,0 +1,25 @@
+{
+    "name": "Tzepharion",
+    "queries": [
+        {
+            "query": "large fiend with soul manipulation powers and fire immunity",
+            "variant": "large fiend that can manipulate souls and is immune to fire"
+        },
+        {
+            "query": "lawful evil creature that causes rage in beasts and has darkvision",
+            "variant": "creature with lawful evil alignment that incites rage and has darkvision"
+        },
+        {
+            "query": "fiend that uses pack tactics and has significant hit points",
+            "variant": "fiend employing pack tactics with high hit points"
+        },
+        {
+            "query": "creature with a strong melee attack that can cause unconsciousness",
+            "variant": "monster with powerful melee attacks that makes targets unconscious"
+        },
+        {
+            "query": "Tzepharion's abilities and weaknesses in battle",
+            "variant": "abilities and weaknesses of Tzepharion when fighting"
+        }
+    ]
+}

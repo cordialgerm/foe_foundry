@@ -1,0 +1,25 @@
+{
+    "name": "One-Horned Ogre",
+    "queries": [
+        {
+            "query": "large giant with a magical horn that inflicts psychic damage",
+            "variant": "large giant with one horn that deals psychic damage"
+        },
+        {
+            "query": "physically strong ogre that casts spells and intimidates",
+            "variant": "strong ogre that intimidates and uses magic"
+        },
+        {
+            "query": "ogre with high strength known for manipulation and fear spells",
+            "variant": "one-horned ogre recognized for strength and spells of fear"
+        },
+        {
+            "query": "intimidating creature that uses spellcasting in combat",
+            "variant": "creature that intimidates and uses spells during fights"
+        },
+        {
+            "query": "One-Horned Ogre that thrives in battle with magical abilities",
+            "variant": "Ogre with one horn that excels in battle and has magic"
+        }
+    ]
+}

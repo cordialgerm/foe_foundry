@@ -1,0 +1,50 @@
+{
+    "name": "Giant Seahorse",
+    "creature_type": "Beast",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "swims at 40 feet, cannot walk",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "beast",
+        "transportation"
+    ],
+    "adjectives": [
+        "large",
+        "swift",
+        "agile"
+    ],
+    "description": "The Giant Seahorse is a large aquatic creature with strong swimming capabilities, notable for its distinctive seahorse appearance and vibrant coloration, capable of blending into underwater environments.",
+    "memorable": "Its ability to charge and knock foes prone allows for unique battlefield control in underwater encounters.",
+    "goals": "Typically used for transportation or in low-level aquatic encounters.",
+    "relations": "Might be found alongside other aquatic creatures or as mounts for certain underwater races.",
+    "environment": "Commonly found in oceans, seas, or large bodies of water.",
+    "strengths": "Excellent swimmer with a high stealth score underwater, and can deliver strong physical attacks with its Ram ability.",
+    "weaknesses": "Vulnerable on land; limited defense and low hit points make it fragile.",
+    "attacks": "Uses a Ram melee attack that can knock enemies prone, dealing increased damage if it charges.",
+    "most_powerful_ability": "Charge ability allows it to deal extra damage and control the battlefield by knocking foes prone.",
+    "equipment": null,
+    "senses": "Has a passive perception of 11, providing an average awareness of its surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Can only breathe underwater due to its Water Breathing trait",
+        "Effective stealth capabilities with a Stealth score of 19 while submerged",
+        "Strength and Dexterity make it capable of good physical attacks in water",
+        "Relatively low Intelligence limits its cognitive capabilities",
+        "Lacks mobility on land, with a speed of 0 feet"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic creature for low-level encounters",
+        "swift underwater beast that can charge",
+        "Giant Seahorse with stealth capabilities underwater",
+        "creature that knocks foes prone in water",
+        "transportation option in aquatic environments"
+    ]
+}

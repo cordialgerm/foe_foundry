@@ -1,0 +1,53 @@
+{
+    "name": "Dragon, Sand Ancient",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 507,
+    "ac": 21,
+    "srd": false,
+    "cr": "23",
+    "movement": "walking speed of 40 feet, burrowing speed of 40 feet, and flying speed of 80 feet",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "ancient",
+        "sand",
+        "legendary"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "formidable",
+        "elemental",
+        "strategic"
+    ],
+    "description": "A gargantuan dragon infused with elemental sand, embodying a formidable stature and a fearsome presence in battle.",
+    "memorable": "Incredibly resilient with a breathe weapon that can cause blindness or exhaustion, instilling fear with its presence.",
+    "goals": "To dominate its territory and instill fear in any intruders.",
+    "relations": "Could be served by lesser sand elementals or similar creatures, often found in arid regions.",
+    "environment": "Usually found in sandy or desert-like environments.",
+    "strengths": "Exceptional durability and access to debilitation effects through its abilities.",
+    "weaknesses": "Average dexterity and potential vulnerabilities to particular magical effects.",
+    "attacks": "Multiattack with a fear-inducing presence, biting and slashing with claws and tail.",
+    "most_powerful_ability": "Breath weapon that inflicts significant piercing damage and fire damage, with the potential to blind or exhaust enemies.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet and a remarkably high passive perception of 31.",
+    "skills": "Proficient in perception, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Uses legendary resistance to overcome failed saves.",
+        "Can camouflage itself in sandy environments for ambush tactics.",
+        "Requires only half the food and drink of a typical dragon of its size."
+    ],
+    "damage_types": [
+        "fire",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable sandy dragon with blindness breath weapon",
+        "gargantuan dragon in desert using frightful presence",
+        "sand ancient dragon with legendary resistance abilities",
+        "powerful dragon that blinds and exhausts enemies",
+        "dragon with unique elemental traits and camouflage"
+    ]
+}

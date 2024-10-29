@@ -1,0 +1,25 @@
+{
+    "name": "Slaad Tadpole",
+    "queries": [
+        {
+            "query": "tiny aberration that has a bite attack and resists magical effects",
+            "variant": "tiny abberation with a bite attack who resists magic"
+        },
+        {
+            "query": "small creature that uses stealth and has darkvision",
+            "variant": "little creature with darkvision that can stealth"
+        },
+        {
+            "query": "chaotic neutral tadpole that can resist fire and cold damage",
+            "variant": "tadpole of chaotic neutral nature that resists fire and cold"
+        },
+        {
+            "query": "slimy tiny creature that understands Slaad language",
+            "variant": "slimy small creature that understands the Slaad language"
+        },
+        {
+            "query": "squeaky small monster with low strength and high dexterity",
+            "variant": "squeaky tiny monster with low str and high dex"
+        }
+    ]
+}

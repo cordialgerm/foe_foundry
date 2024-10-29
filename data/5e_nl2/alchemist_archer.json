@@ -1,0 +1,55 @@
+{
+    "name": "Alchemist Archer",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 17,
+    "srd": false,
+    "ac_description": "studded leather",
+    "cr": "10",
+    "movement": "walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "humanoid",
+        "archer",
+        "alchemist",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "skilled",
+        "formidable",
+        "versatile",
+        "tactical"
+    ],
+    "description": "The Alchemist Archer is a formidable combatant, skilled in traditional archery and equipped with alchemical arrows that deliver devastating battlefield effects. It wields a longbow and has scimitars for close combat, emphasizing its tactical range capabilities.",
+    "memorable": "Known for blending archery with alchemy, delivering diverse effects like concussive, entangling, and explosive damage through its innovative arrows.",
+    "goals": "To engage enemies at range and control the battlefield using tactical alchemical effects.",
+    "relations": "Can be encountered with other humanoid creatures, particularly those skilled in archery or alchemical arts.",
+    "environment": "Typically found in settings where both ranged combat and alchemical expertise are valued, such as battlefields or alchemical workshops.",
+    "strengths": "Exceptional Dexterity, high damage output with ranged attacks, and tactical versatility through special ability use.",
+    "weaknesses": "Vulnerable in close-quarter combat due to lower Strength score and reliance on ranged attacks.",
+    "attacks": "Utilizes longbow for ranged attacks dealing piercing damage and scimitars for slashing damage in melee, along with its special alchemical arrow effects.",
+    "most_powerful_ability": "Hunter's Aim allows for an additional 28 damage when hitting a target with a ranged attack, significantly amplifying its damage potential.",
+    "equipment": "Wields a longbow and scimitars.",
+    "senses": "Possesses a passive Perception of 16, allowing it to notice threats effectively.",
+    "skills": "Proficient in Stealth and has high survival skills, enabling it to remain undetected and navigate challenging environments.",
+    "additional_information": [
+        "Can deliver various alchemical effects based on arrow type.",
+        "Resistant to charm effects and immune to magical sleep due to Fey Ancestry.",
+        "Can make multiple attacks in a single turn, either with its longbow or scimitars."
+    ],
+    "damage_types": [
+        "thunder",
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "alchemist with a bow",
+        "skilled archery humanoid",
+        "versatile archer with alchemical effects",
+        "artillery humanoid with unique arrows",
+        "tactical ranged combatant"
+    ]
+}

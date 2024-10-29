@@ -1,0 +1,53 @@
+{
+    "name": "Salamander",
+    "creature_type": "elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "elemental",
+        "serpentine"
+    ],
+    "adjectives": [
+        "fiery",
+        "serpentine",
+        "intelligent",
+        "cunning"
+    ],
+    "description": "Salamanders are serpentine creatures made of molten metal and flame, embodying the essence of fire and heat.",
+    "memorable": "They can generate intense heat and have a lethal touch that ignites foes.",
+    "goals": "Often serve powerful fire-wielding beings or rule fiery realms.",
+    "relations": "Related to other fire elementals and can be found alongside creatures like fire genasi.",
+    "environment": "Volcanic regions or areas with high heat sources.",
+    "strengths": "Immunities to fire damage and resistance to nonmagical weapon damage.",
+    "weaknesses": "Vulnerable to cold damage, which can compromise their heated attacks.",
+    "attacks": "Utilizes a long-reaching tail and a piercing pike with burning effects, maintaining pressure on grappled opponents.",
+    "most_powerful_ability": "Heated Body inflicts fire damage to foes that make physical contact or attack from close range.",
+    "equipment": "Pike or Trident used to attack enemies.",
+    "senses": "Its presence creates a dangerous environment for grappling or striking it due to its heated body.",
+    "skills": "Proficient in resisting physical and mental effects with Constitution and Wisdom saving throws.",
+    "additional_information": [
+        "Can inflict significant fire damage with melee attacks.",
+        "Has the ability to maintain grappled targets and restrict their movement.",
+        "Can cast ranged fire spells for additional damage.",
+        "Dual attack capability making it versatile in combat.",
+        "Loyal to powerful elemental beings."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can use Fire Bolt as a ranged attack.",
+    "test_queries": [
+        "serpentine fire elemental",
+        "creature that inflicts fire damage",
+        "elemental found in volcanic regions",
+        "monster with heated body attack",
+        "fire creature wielding pike"
+    ]
+}

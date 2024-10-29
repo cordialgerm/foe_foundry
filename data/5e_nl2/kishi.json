@@ -1,0 +1,53 @@
+{
+    "name": "Kishi",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "magical",
+        "manipulative"
+    ],
+    "adjectives": [
+        "chaotic",
+        "cunning",
+        "dual-headed",
+        "resilient"
+    ],
+    "description": "The Kishi is a medium-sized fiend with two heads, exceptional Dexterity and Charisma, and a chaotic evil nature. Its weapon attacks are magical and it deals additional cold damage.",
+    "memorable": "The Kishi's ability to summon allies and manipulate others with its spells makes it a cunning adversary in combat.",
+    "goals": "To spread chaos and dominate weaker beings, often through deceptive means.",
+    "relations": "Kishi often work alongside other fiends and can summon giant hyenas or even other Kishi.",
+    "environment": "Typically encountered in dark, chaotic realms or locations steeped in evil.",
+    "strengths": "Its dual-headed nature grants it advantages against charm and blindness effects, alongside high resistances to nonmagical damage.",
+    "weaknesses": "Relies heavily on its magical abilities, making it vulnerable to powerful spellcasters.",
+    "attacks": "Makes multiattack with one bite and two spear strikes, with additional cold damage on successful hits.",
+    "most_powerful_ability": "Can cast spells like dominate person, allowing it to control others in combat.",
+    "equipment": "Equipped with fiendish weapons that deal both piercing and cold damage.",
+    "senses": "Possesses darkvision up to 120 feet and advantage on Wisdom (Perception) checks.",
+    "skills": "Skilled in Deception and Performance, using its Charisma to manipulate and deceive.",
+    "additional_information": [
+        "Immune to poison and poisoned conditions.",
+        "Magic Resistance grants advantage on spell saving throws.",
+        "Can absorb essence from slain foes to enhance its defense.",
+        "Ability to summon allies that share its resistances.",
+        "Utilizes magical weapon attacks that increase damage output."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like detect evil and good, suggestion, and dominate person, using Charisma.",
+    "test_queries": [
+        "duel-headed chaotic evil fiend",
+        "fiend that deals cold damage",
+        "summoner of giant hyenas and demons",
+        "cunning monster with magical weapon attacks",
+        "manipulative fiend with high resistances"
+    ]
+}

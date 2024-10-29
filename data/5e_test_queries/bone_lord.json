@@ -1,0 +1,25 @@
+{
+    "name": "Bone Lord",
+    "queries": [
+        {
+            "query": "huge undead monster that commands lesser undead minions",
+            "variant": "monster that is a huge undead and commands undead minions"
+        },
+        {
+            "query": "undead creature with high hit points that attacks with necrotic damage",
+            "variant": "creature that is undead and has high hp while using necrotic damage"
+        },
+        {
+            "query": "tough undead being that uses necrotic energy and has a tail attack",
+            "variant": "undead creature that uses necrotic abilities and has a tail for attacks"
+        },
+        {
+            "query": "neutral evil undead with a tactical advantage in combat",
+            "variant": "undead creature that is neutral evil and has tactical advantages in battle"
+        },
+        {
+            "query": "bone lord that can call undead allies and heal them",
+            "variant": "undead bone lord that summons allies and heals them"
+        }
+    ]
+}

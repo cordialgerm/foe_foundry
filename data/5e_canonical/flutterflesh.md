@@ -1,6 +1,8 @@
 <MonsterName/>Flutterflesh</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>187</HP>
 <summary>The Flutterflesh is a formidable Large Undead creature that embodies the chaotic evil alignment. This monster is notable for its high mobility, being able to walk at a speed of 60 feet and fly at 10 feet, allowing it to maneuver around the battlefield effectively. With an impressive pool of 187 hit points generated from 22d10 plus 66, it is quite resilient. Although it has a good Armor Class of 16 due to its natural armor, it is vulnerable to radiant damage while immune to necrotic and poison damage. The Flutterflesh presents a significant challenge, rated at a Challenge Rating of 12, making it a dangerous encounter for parties of adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Flutterflesh can also unleash Creeping Death, a powerful area effect ability
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flutterflesh
 
 *Large* *Undead* *Chaotic Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Bone Spur:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) piercing damage plus 9 (2d8) necrotic damage, and the flutterflesh impales the target on one of its bone spurs, grappling the target (escape DC 16). The flutterflesh can have no more than two creatures impaled at a time.
 - **Tormenting Gaze:** Ranged Spell Attack: +7 to hit, range 120 ft., one creature. Hit: 21 (4d8 + 3) psychic damage.
 - **Creeping Death (Recharge 5–6):** The flutterflesh emits a wave of necromantic energy, hastening the journey toward death. Each creature within 20 feet of the flutterflesh must make a DC 16 Constitution saving throw, taking 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one. A creature below half its hp maximum has disadvantage on this saving throw.
+</statblock>
 
 

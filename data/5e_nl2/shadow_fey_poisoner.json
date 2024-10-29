@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Fey Poisoner",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "stealth",
+        "assassin",
+        "poison"
+    ],
+    "adjectives": [
+        "cunning",
+        "elusive",
+        "agile",
+        "deadly"
+    ],
+    "description": "The Shadow Fey Poisoner is a cunning, agile humanoid dressed in studded leather armor, skilled in stealth and deceit, capable of becoming invisible in dim light or darkness.",
+    "memorable": "Its deadly sneak attacks and powerful poison abilities make it a dangerous foe in combat, with strong evasion and teleportation tactics.",
+    "goals": "To ambush foes and eliminate targets through stealth and cunning.",
+    "relations": "Often operates alone or in small groups, may serve other fey or shadow creatures.",
+    "environment": "Prefers shadowy or dimly lit areas, using darkness to its advantage.",
+    "strengths": "Exceptional stealth and agility, deadly sneak attacks, immune to poison.",
+    "weaknesses": "Sunlight sensitivity reduces its effectiveness in bright light.",
+    "attacks": "Utilizes swift shortsword strikes and long-range bow attacks, dealing piercing and poison damage.",
+    "most_powerful_ability": "Assassinate ability enables critical hits against surprised targets.",
+    "equipment": "Studded leather armor, shortswords, and a longbow.",
+    "senses": "Has darkvision up to 120 feet, allowing it to see in complete darkness as if it were dim light.",
+    "skills": "Proficient in stealth and acrobatics, making it a master at sneaking and deception.",
+    "additional_information": [
+        "Can teleport between shadows as a bonus action.",
+        "Has advantage on saving throws against being charmed.",
+        "Deals additional sneak attack damage under specific conditions.",
+        "Immune to magical sleep.",
+        "Advantage on arcana checks related to shadow magic."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning fey humanoid that uses poison",
+        "stealthy creature with teleportation abilities",
+        "shadowy assassin that thrives in darkness",
+        "agile poison-inflicting fey creature",
+        "elusive humanoid skilled in deception and stealth"
+    ]
+}

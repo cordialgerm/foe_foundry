@@ -1,0 +1,25 @@
+{
+    "name": "Rakshasa, Pustakam",
+    "queries": [
+        {
+            "query": "small fiend with magical abilities that manipulates minds",
+            "variant": "small fiend that has magical powers and can manipulate minds"
+        },
+        {
+            "query": "lawful evil creature that uses charm spells and has psychic damage",
+            "variant": "lawful evil monster that has charm spells and causes psychic damage"
+        },
+        {
+            "query": "clever fiend that disguises itself as an object and attacks with claws",
+            "variant": "clever fiend that can hide as an object and uses claw attacks"
+        },
+        {
+            "query": "Pustakam's magical immunity and vulnerability to magical piercing attacks",
+            "variant": "magical immunity of Pustakam and its weakness to magic piercing"
+        },
+        {
+            "query": "tactics for dealing with a fiend that charms and deals psychic damage",
+            "variant": "strategies to face a fiend that charmed and inflicts psychic damage"
+        }
+    ]
+}

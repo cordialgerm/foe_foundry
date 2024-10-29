@@ -1,0 +1,25 @@
+{
+    "name": "Rafflesian",
+    "queries": [
+        {
+            "query": "small plant creature that bonds with humanoids",
+            "variant": "small plant monster that connects with humanoids"
+        },
+        {
+            "query": "creature with high Constitution that can revive its host",
+            "variant": "monster with high Con score that can bring back its host to life"
+        },
+        {
+            "query": "plant-based entity with telepathic abilities and life-draining attacks",
+            "variant": "plant creature with telepathy and abilities that drain life"
+        },
+        {
+            "query": "resilient symbiotic creature that shares damage with its host",
+            "variant": "durable symbiotic monster that mirrors damage with its host"
+        },
+        {
+            "query": "Rafflesian's special abilities and combat tactics",
+            "variant": "Rafflesian unique skills and fight strategy"
+        }
+    ]
+}

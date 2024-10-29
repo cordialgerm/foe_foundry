@@ -1,0 +1,53 @@
+{
+    "name": "Flame Eater Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "flies at 40 ft., cannot walk",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "fire",
+        "beast",
+        "underdark"
+    ],
+    "adjectives": [
+        "flame-consuming",
+        "tiny",
+        "nimble"
+    ],
+    "description": "The Flame Eater Swarm is a collective of tiny, flame-consuming creatures. It is notable for its ability to extinguish fires and is often seen in environments where fire magic is prevalent.",
+    "memorable": "It extinguishes fires, disrupting spellcasters' tactics and bolstering its own attacks afterward.",
+    "goals": "To consume flames and harass fire-wielding opponents.",
+    "relations": "Might be found alongside creatures that rely on fire magic or in locations affected by fire.",
+    "environment": "Commonly found in areas with a lot of fire sources, including battlefields involving fire spells.",
+    "strengths": "Immunities to fire damage and numerous condition immunities, making it challenging to control in combat.",
+    "weaknesses": "Low Strength and Constitution scores, making it vulnerable to physical attacks if not utilizing its abilities.",
+    "attacks": "Utilizes bite attacks for piercing damage and capitalizes on consumed flames to deal additional fire damage.",
+    "most_powerful_ability": "Consume Flame, which allows it to extinguish normal fires and bolster its bite attack's damage significantly.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet, allowing it to detect creatures without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can occupy the same space as other creatures.",
+        "Cannot regain hit points or accumulate temporary hit points.",
+        "Effective against fire-dependent spells and abilities.",
+        "Multiattack action creates consistent pressure on targets.",
+        "Does extra fire damage after consuming flames."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire-consuming swarm creature",
+        "tiny swarm that extinguishes flames",
+        "beast that attacks with fire damage",
+        "creature that disrupts fire magic",
+        "skirmisher swarm with bite attacks"
+    ]
+}

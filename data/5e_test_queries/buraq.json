@@ -1,0 +1,25 @@
+{
+    "name": "Buraq",
+    "queries": [
+        {
+            "query": "celestial creature with teleportation abilities",
+            "variant": "creature with teleportation abilities that is celestial"
+        },
+        {
+            "query": "graceful celestial mount that deals radiant damage",
+            "variant": "mount that is celestial and deals radiant damage gracefully"
+        },
+        {
+            "query": "protector celestial being with high Charisma",
+            "variant": "high Charisma celestial being that acts as a protector"
+        },
+        {
+            "query": "magical celestial with resistance to charm and fear",
+            "variant": "celestial with charm and fear resistance that is magical"
+        },
+        {
+            "query": "agile celestial creature that excels in combat and spellcasting",
+            "variant": "combat and spellcasting expert that is an agile celestial creature"
+        }
+    ]
+}

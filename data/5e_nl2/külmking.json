@@ -1,0 +1,53 @@
+{
+    "name": "K\u00fclmking",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "60 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "chaotic",
+        "large"
+    ],
+    "adjectives": [
+        "powerful",
+        "intimidating",
+        "mobile"
+    ],
+    "description": "The K\u00fclmking is a large undead creature with a menacing presence, showcasing its chaotic evil nature. It has strong physical attributes and notable offensive capabilities.",
+    "memorable": "Its ability to corrupt souls and turn living creatures into new K\u00fclmking, as well as its incorporeal movement, makes it a formidable foe.",
+    "goals": "To corrupt other creatures and dominate through fear and physical prowess.",
+    "relations": "Related to necromantic creatures and other undead beings.",
+    "environment": "Often found in dark, desolate areas or places of death and decay.",
+    "strengths": "Immunity to necrotic and poison damage, as well as having a very good passive perception.",
+    "weaknesses": "Vulnerable to radiant damage and spells that target undead.",
+    "attacks": "Capable of multiattack with claws, bite, and hooves; each attack carries additional effects like paralysis or healing through necrotic damage.",
+    "most_powerful_ability": "Corruption allows it to inflict chaotic evil on others, creating more K\u00fclmking from the fallen.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and a high passive perception of 18.",
+    "skills": "Possesses strong perception skills with a bonus of +8.",
+    "additional_information": [
+        "Resistant to cold and lightning damage.",
+        "Can move through creatures and objects.",
+        "Has a trampling charge that knocks targets prone.",
+        "Immune to conditions like being charmed or exhausted.",
+        "Regains hit points through its necrotic bite attack."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead creature with soul corruption ability",
+        "powerful monster that can turn others undead",
+        "menacing creature with incorporeal movement",
+        "tough undead with high mobility and strength",
+        "chaotic evil undead that paralyzes opponents"
+    ]
+}

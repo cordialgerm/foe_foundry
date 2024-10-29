@@ -1,0 +1,25 @@
+{
+    "name": "Kamaitachi",
+    "queries": [
+        {
+            "query": "small snow monster with deceptive abilities that thrives in snowy conditions",
+            "variant": "small ice creature that has sneaky powers and loves snowy environments"
+        },
+        {
+            "query": "monstrosity that can polymorph into a swirl of wintry weather and has darkvision",
+            "variant": "monster that can change forms into snow and has eye abilities in the dark"
+        },
+        {
+            "query": "agile creature with a high dexterity that utilizes hit-and-run tactics",
+            "variant": "quick beast with excellent agility that employs ambush strategies"
+        },
+        {
+            "query": "fast climbing creature that inflicts cold damage and can become invisible in snow",
+            "variant": "quick climbing monster that deals ice damage and can hide in snow"
+        },
+        {
+            "query": "elusive creature that has a multiattack with sickle paws and can blind opponents",
+            "variant": "sneaky creature that can strike twice with claws and dazzle foes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Berstuc",
+    "queries": [
+        {
+            "query": "Large fiend that uses forest camouflage and is highly deceptive",
+            "variant": "fiend that is large and capable of hiding in forests while being very deceptive"
+        },
+        {
+            "query": "powerful monster with stealth abilities and natural armor",
+            "variant": "strong creature possessing stealth and natural armor abilities"
+        },
+        {
+            "query": "stealthy fiend with abilities to manipulate terrain and conceal itself",
+            "variant": "sneaky fiend that can hide and control the terrain"
+        },
+        {
+            "query": "chaotic evil creature that can grapple and enclose opponents",
+            "variant": "evil chaotic creature capable of grappling and trapping foes"
+        },
+        {
+            "query": "forest-dwelling fiend that requires no food or sleep",
+            "variant": "fiend that lives in forests and doesn't need to eat or sleep"
+        }
+    ]
+}

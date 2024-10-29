@@ -1,0 +1,25 @@
+{
+    "name": "Plague Spirit",
+    "queries": [
+        {
+            "query": "fey creature that embodies decay and causes aging effects",
+            "variant": "fey being embodying decay and can cause aging effects"
+        },
+        {
+            "query": "medium-sized spirit with necrotic immunities and powerful touch attack",
+            "variant": "spirit of medium size immune to necrotic and has a powerful attack with touch"
+        },
+        {
+            "query": "creature with high Dexterity and Wisdom that creates hazardous mist",
+            "variant": "being with very high Dexterity and Wisdom that can create a hazardous mist"
+        },
+        {
+            "query": "monster that uses Dance of Death and has a significant presence in battle",
+            "variant": "being utilizing Dance of Death and having a great presence during combat"
+        },
+        {
+            "query": "undead-resistant creature that can sense living beings from miles away",
+            "variant": "creature that is resistant to undead effects and can sense living creatures from several miles"
+        }
+    ]
+}

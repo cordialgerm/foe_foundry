@@ -1,0 +1,25 @@
+{
+    "name": "Gremlin, Rum Story Keeper",
+    "queries": [
+        {
+            "query": "tiny fey that creates a drunken aura and tells stories",
+            "variant": "tiny fey that tells stories and creates a drunken aura"
+        },
+        {
+            "query": "chaotic evil fey creature with poison attacks and storytelling abilities",
+            "variant": "chaotic evil fey with storytelling abilities and poison attacks"
+        },
+        {
+            "query": "rum gremlin with magical resistance and poison damage attacks",
+            "variant": "gremlin that has magical resistance and attacks with poison damage"
+        },
+        {
+            "query": "creature that uses tales to empower allies and causes drunkenness",
+            "variant": "creature that causes drunkenness and empowers allies with tales"
+        },
+        {
+            "query": "small fey with low hit points that manipulates battle with stories",
+            "variant": "small fey that manipulates the battle with stories and has low hit points"
+        }
+    ]
+}

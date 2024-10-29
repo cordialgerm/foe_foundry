@@ -1,0 +1,25 @@
+{
+    "name": "Preta",
+    "queries": [
+        {
+            "query": "stealthy undead creature that draws blood",
+            "variant": "undead stealthy creature that siphons blood"
+        },
+        {
+            "query": "medium evil monster with necrotic attacks",
+            "variant": "medium monster with necrotic attack that is evil"
+        },
+        {
+            "query": "invisible undead that uses illusions and siphons blood",
+            "variant": "undead that turns invisible and uses blood siphon and illusions"
+        },
+        {
+            "query": "creature with Ethereal Sight that thrives on necrotic damage",
+            "variant": "creature that has Ethereal Sight and loves necrotic damage"
+        },
+        {
+            "query": "undead with blood manipulation and stealth abilities",
+            "variant": "undead that manipulates blood and has stealth skills"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Shiftshroom",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 18,
+    "ac": 5,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 10 ft.",
+    "role": null,
+    "tags": [
+        "plant",
+        "shapechanger",
+        "frightening"
+    ],
+    "adjectives": [
+        "frightening",
+        "versatile",
+        "vulnerable"
+    ],
+    "description": "The Shiftshroom is a medium-sized plant that can change its appearance to instill fear, resembling a poisonous deathcap mushroom when threatening.",
+    "memorable": "Its ability to frighten nearby creatures can disrupt powerful foes despite its fragility.",
+    "goals": "To weaken opponents through fear and maintain an element of surprise with its ability to change shape.",
+    "relations": "May be found in the company of other magical plants or forest creatures.",
+    "environment": "Typically found in forested or mushroom-rich areas.",
+    "strengths": "Immunity to being blinded, deafened, or frightened, and tactical versatility in shapechanging.",
+    "weaknesses": "Low Armor Class and poor Dexterity make it vulnerable in direct combat.",
+    "attacks": "Uses a Slam attack, dealing modest bludgeoning damage.",
+    "most_powerful_ability": "Its Shapechanger ability allows it to become a frightening version of itself, inducing fear in creatures nearby.",
+    "equipment": null,
+    "senses": "Possesses blindsight within a 30-foot radius but is completely blind beyond that distance.",
+    "skills": null,
+    "additional_information": [
+        "Low Dexterity leads to ineffective dodging.",
+        "Passive perception of 7 limits its awareness of threats.",
+        "Any creature starting its turn nearby risks becoming frightened.",
+        "Can only perform limited actions when in frightening form.",
+        "Reverts to true form upon taking damage or death."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature that frightens foes",
+        "shapechanging fungus that induces fear",
+        "slow-moving mushroom monster with dangerous form",
+        "fear-inducing plant with blindsight",
+        "deathcap mushroom form that frightens nearby creatures"
+    ]
+}

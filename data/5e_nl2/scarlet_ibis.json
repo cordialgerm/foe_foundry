@@ -1,0 +1,49 @@
+{
+    "name": "Scarlet Ibis",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 40 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "curse",
+        "flying",
+        "combat threat"
+    ],
+    "adjectives": [
+        "unique",
+        "potent",
+        "dangerous",
+        "formidable"
+    ],
+    "description": "The Scarlet Ibis is a medium-sized monstrosity adorned with sharp features and vibrant plumage. Its beak and talons are designed for both attack and inflicting debilitating curses.",
+    "memorable": "Its ability to inflict permanent curses upon death makes the Scarlet Ibis a uniquely dangerous foe.",
+    "goals": "To inflict curses on its enemies and maintain its own survival in combat.",
+    "relations": "May be found alongside other cursed or monstrous creatures and could serve as a guardian or a solo threat.",
+    "environment": "Typically encountered in areas rich in magic or mysticism where curses are common.",
+    "strengths": "Combines physical attacks with debilitating curse abilities, providing both offensive and defensive capabilities.",
+    "weaknesses": "Relying on curses makes it highly dependent on maintaining an effective combat strategy against enemies.",
+    "attacks": "Uses a multiattack feature with a beak strike that curses its target, and slashing attacks with its talons.",
+    "most_powerful_ability": "Death Curse, which makes all inflicted curses permanent upon its death, affecting even the creatures that deal its killing blow.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses a strong Insight skill, making it good at reading opponents and situations.",
+    "additional_information": [
+        "Has the ability to inflict disadvantage on cursed targets' rolls.",
+        "Cursing effects can also grant enemies advantage on attack rolls against cursed foes.",
+        "A solid flying speed allows for effective battlefield maneuvering."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cursed flying monster with talons",
+        "dangerous Ibis known for curses",
+        "medium beast that casts death curses",
+        "Scarlet Ibis with debilitating attacks",
+        "bird that curses enemies in battle"
+    ]
+}

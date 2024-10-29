@@ -1,0 +1,57 @@
+{
+    "name": "Automata Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 168,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "fear",
+        "magic resistance",
+        "grappling"
+    ],
+    "adjectives": [
+        "formidable",
+        "tank",
+        "menacing",
+        "mechanical"
+    ],
+    "description": "The Automata Devil is a Large Fiend, showcasing a mechanical appearance with gears and blades integrated into its design. It has a central maw filled with razor teeth, emphasizing its terrifying nature. It has an imposing presence, exhibiting a combination of technological and infernal attributes.",
+    "memorable": "The Automata Devil stands out due to its ability to instill fear through its aura while being extremely resilient to both physical and magical attacks, along with its capacity for rapid teleportation.",
+    "goals": "To instill fear and dominate its foes, utilizing its physical strength and manipulation of fear against adversaries.",
+    "relations": "It can be encountered alongside other devils or fiends and may serve greater infernal powers.",
+    "environment": "Typically found in infernal landscapes or locations steeped in dark magic and technological corruption.",
+    "strengths": "Immunity to fire and poison damage, resistance to various nonmagical attacks, and high saving throw bonuses.",
+    "weaknesses": "Relatively low intelligence may hinder strategic planning in certain scenarios.",
+    "attacks": "The Automata Devil employs a multiattack strategy using a Bite, Claw, and Whip, allowing it to grapple targets and deal significant slashing damage.",
+    "most_powerful_ability": "Fear Aura creates a threatening zone that can incapacitate opponents with fear, while Magic Resistance provides an advantage against magical effects.",
+    "equipment": null,
+    "senses": "Possesses Devil\u2019s Sight, allowing it to see through magical darkness.",
+    "skills": "Highly proficient in Athletics and Intimidation, making it formidable in physical encounters and social intimidation.",
+    "additional_information": [
+        "Can teleport up to 120 feet, enhancing its mobility on the battlefield.",
+        "Creates an area of fear that affects multiple opponents.",
+        "Utilizes grappling capabilities with its Whip attack.",
+        "Can shred grappled creatures with its Shredding Maw ability.",
+        "High physical capability with exceptional Strength and Constitution, enabling powerful melee attacks."
+    ],
+    "damage_types": [
+        "fire",
+        "poison",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical devil",
+        "fear-inducing fiend",
+        "combination of magic and machinery",
+        "fiend with teleportation abilities",
+        "various slashing attacks fiend"
+    ]
+}

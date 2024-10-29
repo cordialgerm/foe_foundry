@@ -1,0 +1,50 @@
+{
+    "name": "Hippopotamus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking speed of 40 feet and swimming speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "aquatic",
+        "tank"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "clumsy"
+    ],
+    "description": "A large beast with robust features, the hippopotamus has a bulky body and a wide mouth filled with sharp teeth.",
+    "memorable": "Its thunderous bray can incapacitate multiple enemies, changing the dynamics of battle.",
+    "goals": "To protect its territory and assert dominance in its environment.",
+    "relations": "Often found in proximity to water bodies, sharing its habitat with various aquatic creatures.",
+    "environment": "Typically inhabits rivers, lakes, and swamps.",
+    "strengths": "High strength allows for powerful melee attacks and significant hit points enable it to endure damage.",
+    "weaknesses": "Low Dexterity makes it less agile and vulnerable to precise attacks.",
+    "attacks": "Uses a powerful gore attack that deals piercing damage and an area effect thunderous bray.",
+    "most_powerful_ability": "Thunderous Bray, which can incapacitate multiple enemies in a wide cone.",
+    "equipment": null,
+    "senses": "Its passive perception is average, indicating it does not excel in awareness.",
+    "skills": "Has a perception score of +0, showing it is not particularly alert.",
+    "additional_information": [
+        "Can hold its breath for up to 10 minutes, allowing underwater engagement.",
+        "Rarely engages in territory disputes unless provoked.",
+        "Known for its territorial nature and protective behavior towards young.",
+        "Its size allows it to dominate encounters but limits its mobility.",
+        "Typically rests in water to keep cool and protect its skin."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large powerful water creature",
+        "hippopotamus with thunderous bray attack",
+        "beast that can hold breath for 10 minutes",
+        "tank-like creature with significant hit points",
+        "clumsy but strong animal in rivers"
+    ]
+}

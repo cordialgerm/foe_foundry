@@ -1,0 +1,50 @@
+{
+    "name": "Young Earth Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Large",
+    "hp": 161,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft., fly 40 ft., burrow 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "earth",
+        "guardian"
+    ],
+    "adjectives": [
+        "powerful",
+        "guardian",
+        "formidable"
+    ],
+    "description": "The Young Earth Dragon is a large and powerful creature with impressive scales that blend into rocky environments.",
+    "memorable": "It can camouflage itself as a natural rock formation and has the ability to effortlessly burrow through the earth.",
+    "goals": "Often acts as a guardian of natural landscapes, particularly earth and stone.",
+    "relations": "May interact or have a bond with other earth-related creatures, including elementals and other dragons.",
+    "environment": "Typically found in rocky terrains, caves, or mountainous areas.",
+    "strengths": "Resists damage from nonmagical weapons and has high Constitution.",
+    "weaknesses": "Average intelligence and charisma may limit its spellcasting and social skills.",
+    "attacks": "Uses a multiattack strategy including a powerful bite and a damaging slam.",
+    "most_powerful_ability": "Scouring Breath unleashes a cone of sand and stones, dealing substantial area damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and tremorsense up to 60 feet, with a keen passive perception of 20.",
+    "skills": "Excels in athletics, insight, and perception, providing it with strong awareness and physical capabilities.",
+    "additional_information": [
+        "Capable of camouflaging itself as a natural rock formation.",
+        "Spiritually linked to a specific area affecting its resting capability.",
+        "Can cast spells like Locate Animals or Plants and Spike Growth without components.",
+        "Can cause fatigue and strife to creatures entering its essence-linked area.",
+        "Burrows through earth without disturbing the ground, surprising enemies."
+    ],
+    "damage_types": null,
+    "spellcasting": "Innate spellcasting based on Charisma, allowing it to cast certain spells multiple times a day.",
+    "test_queries": [
+        "large dragon that camouflages into rocks",
+        "dragon with ability to burrow through earth",
+        "earth guardian that breathes scouring sand",
+        "powerful dragon with innate spellcasting abilities",
+        "dragon living in rocky mountainous areas"
+    ]
+}

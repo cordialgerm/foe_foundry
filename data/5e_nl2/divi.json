@@ -1,0 +1,55 @@
+{
+    "name": "Divi",
+    "creature_type": "Elemental",
+    "alignment": null,
+    "size": "Large",
+    "hp": 172,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., burrow 30 ft., fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "earth",
+        "stone",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "tactical",
+        "robust"
+    ],
+    "description": "The Divi is a large elemental creature with a solid physical presence, utilizing earth and stone manipulation powers in combat. It has exceptionally high Strength and Constitution scores, making it resilient and deadly.",
+    "memorable": "The ability to burrow silently through earth and its devastating Quake ability, which creates difficult terrain and inflicts thunder damage.",
+    "goals": "To dominate the battlefield using its formidable physical attacks and control combat with terrain manipulation.",
+    "relations": "Related to other elemental creatures and may serve alongside or control earth-based beings.",
+    "environment": "Typically found in rocky or earthy terrains, often in caves or mountainous areas.",
+    "strengths": "Noteworthy damage resistance to acid, immunity to petrification, and excellent physical combat abilities.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma, limiting its social interaction and magical prowess.",
+    "attacks": "Attacks with a Crushing Hand that grapples while dealing bludgeoning damage, and a Stone Club for longer reach and high damage output.",
+    "most_powerful_ability": "Quake ability creates difficult terrain and inflicts thunder damage in a wide area.",
+    "equipment": null,
+    "senses": "The Divi has tremorsense up to 30 feet and darkvision up to 120 feet, allowing it to navigate its environment effectively.",
+    "skills": "Possesses proficiency in athletics and a good passive perception score, enhancing its physical prowess and awareness.",
+    "additional_information": [
+        "Can use Earth Glide to burrow without disturbing the ground.",
+        "Innate spellcasting choices allow for terrain control and temporary creations.",
+        "Stone Wall ability provides strategic barriers on the battlefield.",
+        "Multiattack enables it to maximize its offensive capabilities in combat.",
+        "Communicates in Terran, the language of earth elementals."
+    ],
+    "damage_types": [
+        "thunder",
+        "bludgeoning"
+    ],
+    "spellcasting": "Innate spellcasting ability includes spells such as alter self, stone shape, and the ability to summon earth elementals.",
+    "test_queries": [
+        "earth elemental with powerful melee attacks",
+        "monster that can burrow and create walls",
+        "large creature with devastating quake ability",
+        "stone manipulator that grapples enemies",
+        "elemental known for physical endurance and strength"
+    ]
+}

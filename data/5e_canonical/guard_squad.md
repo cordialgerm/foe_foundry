@@ -1,6 +1,8 @@
 <MonsterName/>Guard Squad</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>55</HP>
 <summary>The Guard Squad is a large humanoid creature that functions primarily as a protective unit in combat. With a challenge rating of 3, it serves as a mid-level threat on the battlefield. Its strengths lie in its ability to absorb damage and transform when severely injured, allowing it to continue affecting the encounter even when faced with heavy attacks. However, the Guard Squad has notable vulnerabilities, particularly concerning area attacks, which can deal double damage. This combination of resilience and vulnerability makes it a unique and strategic opponent that requires careful handling by players.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Guard Squad presents a formidable challenge with its tactical abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Guard Squad
 
 *Large* *Humanoid*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spears:** Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 feet  one target. Hit: 17 (5d6) piercing damage  or half damage if the squad is bloodied.
 
 
+</statblock>
 
 

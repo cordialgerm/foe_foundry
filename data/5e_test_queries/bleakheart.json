@@ -1,0 +1,25 @@
+{
+    "name": "Bleakheart",
+    "queries": [
+        {
+            "query": "medium undead monster that thrives in shadows and has a fear-inducing touch",
+            "variant": "medium undead creature that lives in shadows and has a touch that inspires fear"
+        },
+        {
+            "query": "creepy monster with psychic abilities that is weaker in sunlight",
+            "variant": "creepy creature that uses psychic powers and is vulnerable to sunlight"
+        },
+        {
+            "query": "stealthy undead that can unlock doors silently and manipulate others",
+            "variant": "sneaky undead that can unlock doors quietly and control others"
+        },
+        {
+            "query": "dark vision bearing creature that causes despair and has strong charisma",
+            "variant": "creature with darkvision that instills despair and has high charisma"
+        },
+        {
+            "query": "undead monster with abilities to reduce charisma and create illusions",
+            "variant": "undead creature that can lower charisma and cast illusions"
+        }
+    ]
+}

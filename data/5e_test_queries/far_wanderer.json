@@ -1,0 +1,25 @@
+{
+    "name": "Far Wanderer",
+    "queries": [
+        {
+            "query": "mysterious creature with teleportation abilities and strong intelligence",
+            "variant": "creature with strong intelligence and teleport abilities that is mysterious"
+        },
+        {
+            "query": "aberration that manipulates thoughts and excels in dexterity",
+            "variant": "aberration that is dexterous and can manipulate thoughts"
+        },
+        {
+            "query": "medium creature with cold resistance and psionic abilities",
+            "variant": "psionic medium creature that resists cold damage"
+        },
+        {
+            "query": "manipulative monster in combat that uses starlight effects",
+            "variant": "combat monster that used starlight effects and is manipulative"
+        },
+        {
+            "query": "Far Wanderer traits in arcana and ability to read surface thoughts",
+            "variant": "traits of Far Wanderer in arcana and reading surface thoughts ability"
+        }
+    ]
+}

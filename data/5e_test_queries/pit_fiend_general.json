@@ -1,0 +1,25 @@
+{
+    "name": "Pit Fiend General",
+    "queries": [
+        {
+            "query": "huge fiend with devastating magic and fire resistance",
+            "variant": "huge fiend that has powerful magic abilities and resists fire"
+        },
+        {
+            "query": "fear-inducing fiend with high hit points and strong melee attacks",
+            "variant": "fiend that induces fear, has high HP and powerful melee attacks"
+        },
+        {
+            "query": "Pit Fiend General abilities and elemental resistances",
+            "variant": "abilities of the Pit Fiend General and its elemental resistances"
+        },
+        {
+            "query": "magically powerful creature that can paralyze foes and casts fireball",
+            "variant": "creature with strong magic that can paralyze enemies and casts fireball"
+        },
+        {
+            "query": "large fiend that uses a Circle of Fire and has truesight",
+            "variant": "big fiend employing Circle of Fire ability and possessing truesight"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Drider",
+    "queries": [
+        {
+            "query": "dark elf spider monster that lives underground",
+            "variant": "spider monster that is a dark elf and dwells underground"
+        },
+        {
+            "query": "large monstrosity with venomous fangs and eight legs",
+            "variant": "large creature with eight legs and fangs that are venomous"
+        },
+        {
+            "query": "creature with spider climb ability and weakness to sunlight",
+            "variant": "monster that can climb like a spider but is weak to sunlight"
+        },
+        {
+            "query": "humanoid spider hybrid known for its cruelty",
+            "variant": "cruel hybrid of humanoid and spider"
+        },
+        {
+            "query": "Dungeons & Dragons creature with web sense and ambush tactics",
+            "variant": "D&D monster that uses web sense and likes to ambush"
+        }
+    ]
+}

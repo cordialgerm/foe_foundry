@@ -1,0 +1,25 @@
+{
+    "name": "Herald of the Void",
+    "queries": [
+        {
+            "query": "large fiend with high mobility and cold damage",
+            "variant": "big fiend that can move fast and deals cold dmg"
+        },
+        {
+            "query": "chaotic evil creature immune to cold and radiant damage",
+            "variant": "evil chaotic monster that is immune to cold and radient dmg"
+        },
+        {
+            "query": "flying monster that attacks with psychic energy",
+            "variant": "hovering creature that uses psychic attacks"
+        },
+        {
+            "query": "fiend that vaporizes objects and has truesight",
+            "variant": "fiend that can make things vaporize and has true sight"
+        },
+        {
+            "query": "mobility-based fiend with high Dexterity and Constitution",
+            "variant": "fiend that relies on movement with high dex and con"
+        }
+    ]
+}

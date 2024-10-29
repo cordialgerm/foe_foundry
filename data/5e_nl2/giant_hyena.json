@@ -1,0 +1,50 @@
+{
+    "name": "Giant Hyena",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "predatory",
+        "pack hunter",
+        "savage"
+    ],
+    "adjectives": [
+        "ferocious",
+        "agile",
+        "muscular"
+    ],
+    "description": "A massive, predatory beast with a large, muscular body covered in coarse fur and powerful jaws capable of crushing bones.",
+    "memorable": "The Giant Hyena is noted for its relentless stamina and vicious hunting tactics, often attacking in packs to overwhelm their prey.",
+    "goals": "To hunt prey in savannahs and deserts, scavenging for food and attacking weakened creatures.",
+    "relations": "Often found in packs with other hyenas or serving alongside gnolls as allies.",
+    "environment": "Savannahs and deserts.",
+    "strengths": "High movement speed and powerful bite attacks; excels in melee combat and coordination with pack tactics.",
+    "weaknesses": "Low intelligence and charisma, limiting its strategic thinking and social interactions.",
+    "attacks": "Bite attack that deals significant piercing damage, with the ability to take down multiple enemies in a single turn.",
+    "most_powerful_ability": "Cackling Chorus, which creates a deafening sound that can deafen nearby creatures if multiple hyenas are present.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive perception of 13, allowing it to detect nearby threats.",
+    "skills": "Has proficiency in Perception, granting it good awareness of its surroundings.",
+    "additional_information": [
+        "Can perform a Warning Yip to aid allies.",
+        "Movement after reducing an enemy to 0 hit points with Rampage.",
+        "Notable high speed allows it to close distances quickly.",
+        "Opportunistic feeder, often scavenging from other predators.",
+        "Aggressive hunting creatures known for overwhelming targets with pack tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory beast from the savannah",
+        "agile hyena known for pack tactics",
+        "muscular hyena that hunts in groups",
+        "monster with powerful bite and heavy fur",
+        "opportunistic scavenger in desert environments"
+    ]
+}

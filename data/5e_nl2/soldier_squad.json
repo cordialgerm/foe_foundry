@@ -1,0 +1,52 @@
+{
+    "name": "Soldier Squad",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Large",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "soldier",
+        "tactical",
+        "durable"
+    ],
+    "adjectives": [
+        "cohesive",
+        "resilient",
+        "frontline"
+    ],
+    "description": "The Soldier Squad is a large humanoid creature functioning as a collective of soldiers, equipped with spears and clad in armor, designed for melee engagements.",
+    "memorable": "When defeated, it splits into additional soldiers, creating more targets for opponents.",
+    "goals": "To engage in combat as a frontline unit and defend against invaders.",
+    "relations": "Related to other soldier or military-themed creatures, often encountered in organized groups.",
+    "environment": "Typically found in battlegrounds or military encampments.",
+    "strengths": "High durability with a good capacity to withstand damage and a solid melee attack.",
+    "weaknesses": "Vulnerable to area effects which deal double damage.",
+    "attacks": "Melee or ranged attacks with spears, inflicting substantial piercing damage.",
+    "most_powerful_ability": "Squad Dispersal, which allows it to create two additional soldiers upon defeat.",
+    "equipment": "Spears for combat.",
+    "senses": "Passive perception of 13, allowing effective awareness of surroundings.",
+    "skills": "Proficient in perception and survival skills, providing a +3 bonus in both.",
+    "additional_information": [
+        "Operates effectively as a cohesive unit.",
+        "Above average Strength and Constitution enhance combat effectiveness.",
+        "Area Vulnerability characteristic doubles damage from area effects.",
+        "Tactical Movement provides safer repositioning options without provoking attacks.",
+        "Bloodied condition halves its damage output on attacks."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large tactical humanoid soldiers",
+        "squad that splits when defeated",
+        "soldiers with high durability and spears",
+        "area vulnerable creature with piercing attacks",
+        "military-themed creature in a battle"
+    ]
+}

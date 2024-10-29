@@ -1,0 +1,52 @@
+{
+    "name": "Roachling Scout",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 63,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "climb 15 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "scout",
+        "stealthy",
+        "poison"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "chaotic"
+    ],
+    "description": "The Roachling Scout is a small humanoid with exceptional agility and stealth capabilities, often employing hit-and-run tactics. It possesses keen smell for tracking and an unlovely appearance, hindering its charisma.",
+    "memorable": "Notable for its 'Keen Smell' ability that enhances its tracking prowess and stealthy movement characteristics.",
+    "goals": "Typically seeks to scout and gather information for its kin, using stealth and deception.",
+    "relations": "Often found among other roachlings, potentially in service to a larger roachling community.",
+    "environment": "Commonly inhabits urban areas, underground tunnels, or decaying ruins where it can blend in and navigate through obscured spaces.",
+    "strengths": "High Dexterity allows for impressive stealth, acrobatics, and perception skills, making it an adept scout.",
+    "weaknesses": "Low Charisma limits its effectiveness in social interactions, especially with non-roachlings.",
+    "attacks": "Can use a multiattack to strike with either a shortsword or darts that inflict both piercing and poison damage.",
+    "most_powerful_ability": "Keen Smell grants the scout advantage on perception checks reliant on smell, elevating its tracking capabilities.",
+    "equipment": "Begrimed shortsword and begrimed darts for melee and ranged attacks, respectively.",
+    "senses": "Possesses tremorsense up to 10 feet, enhancing its tracking abilities in environments where visibility is limited.",
+    "skills": "Proficient in stealth, perception, acrobatics, and survival, excelling in navigating and tracking in various terrains.",
+    "additional_information": [
+        "Exceptional at hit-and-run tactics due to high Dexterity.",
+        "Stealthy Traveler ability allows it to move quietly even while walking.",
+        "Can resist poison effects effectively due to its advantage on Constitution saving throws.",
+        "Adapts to both melee and ranged combat with its versatile attack options.",
+        "Often underestimated due to its small size but clever in its tactics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid scout with keen smell",
+        "agile roach-like creature that uses poison",
+        "chaotic scout living in urban areas",
+        "stealthy creature using hit-and-run tactics",
+        "monster with low charisma and high dexterity"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Diplodocus",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 139,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "gargantuan",
+        "tank",
+        "melee"
+    ],
+    "adjectives": [
+        "immense",
+        "strong",
+        "slow"
+    ],
+    "description": "The Diplodocus is a gargantuan beast known for its immense size and strength, characterized by its heavy build and imposing presence.",
+    "memorable": "Its powerful stomp and tail attacks can control the battlefield by knocking foes prone and pushing them away.",
+    "goals": "To dominate the battlefield through brute force and crowd control.",
+    "relations": "May be encountered in herds or alongside other prehistoric creatures.",
+    "environment": "Typically found in prehistoric or vast open environments.",
+    "strengths": "High Strength allows it to deal significant melee damage; very high hit points make it tough to defeat.",
+    "weaknesses": "Low Dexterity results in poor agility and movement, limiting its effectiveness in quick encounters.",
+    "attacks": "Can perform a Multiattack with a powerful stomp and a sweeping tail that can knock opponents prone.",
+    "most_powerful_ability": "The ability to take two actions in one turn with its Multiattack, dealing significant damage across multiple foes.",
+    "equipment": null,
+    "senses": "Possesses passive Perception of 11, allowing basic environmental awareness.",
+    "skills": null,
+    "additional_information": [
+        "Exceptional Strength of 24 increases physical prowess.",
+        "Can push targets away with its tail attack.",
+        "Low Intelligence indicates a lack of cognitive skills.",
+        "High Constitution contributes to its durability.",
+        "A formidable presence on the battlefield."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan beast with powerful stomp",
+        "large dinosaur that knocks foes prone",
+        "massive beast with crowd control abilities",
+        "strong creature with low agility",
+        "prehistoric creature dominating the battlefield"
+    ]
+}

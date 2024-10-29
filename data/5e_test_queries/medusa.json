@@ -1,0 +1,25 @@
+{
+    "name": "Medusa",
+    "queries": [
+        {
+            "query": "creature with snake hair that turns victims to stone",
+            "variant": "creature that has snakes for hair and petrifies foes"
+        },
+        {
+            "query": "humanoid with snakes for hair that lives in ancient ruins",
+            "variant": "humanoid that has a head full of snakes and dwells in ancient ruins"
+        },
+        {
+            "query": "monster that uses a petrifying gaze and deceptive tactics",
+            "variant": "creature employing a petrifying glare and cunning strategies"
+        },
+        {
+            "query": "venomous snake hair and petrification abilities",
+            "variant": "snake-like hair that is poisonous and has petrifying powers"
+        },
+        {
+            "query": "medium monstrosity that stealthily ambushes prey",
+            "variant": "medium-sized monster that hides and ambushes its targets"
+        }
+    ]
+}

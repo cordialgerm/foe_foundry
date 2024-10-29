@@ -1,0 +1,25 @@
+{
+    "name": "Korrigan",
+    "queries": [
+        {
+            "query": "small fey creature with chaotic nature and spellcasting abilities",
+            "variant": "fey creature that is small, chaotic and has magical powers"
+        },
+        {
+            "query": "charming creature that can mesmerize and teleport",
+            "variant": "mesmerizing creature that can teleport and charm others"
+        },
+        {
+            "query": "Korrigan abilities include deadly breath and enchanting revels",
+            "variant": "abilities of the Korrigan involve enchanting revels and deadly breath attack"
+        },
+        {
+            "query": "fey with darkvision who communicates in Common and Gnomish",
+            "variant": "fey that speaks Common and Gnomish and has darkvision"
+        },
+        {
+            "query": "creature immune to exhaustion with high dexterity and charisma",
+            "variant": "creature that has high dexterity and charisma and is immune to exhaustion"
+        }
+    ]
+}

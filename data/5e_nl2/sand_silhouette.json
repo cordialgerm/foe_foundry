@@ -1,0 +1,54 @@
+{
+    "name": "Sand Silhouette",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking and burrowing",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "ambusher",
+        "desert",
+        "creature"
+    ],
+    "adjectives": [
+        "eerie",
+        "menacing",
+        "cunning",
+        "dark"
+    ],
+    "description": "The Sand Silhouette embodies the dark, eerie aspects of the desert, utilizing its sand-based abilities to stealthily approach its prey. It is a physical powerhouse with an unnatural appearance that combines the features of sand and shadow.",
+    "memorable": "This creature can create sandstorms and engulf enemies, blinding and restraining them, while it capitalizes on its desert environment's advantages.",
+    "goals": "To ambush and ensnare prey, using stealth and cunning in sandy terrains.",
+    "relations": "It may be found alongside other desert-themed undead or entities, serving as a guardian to lost treasures.",
+    "environment": "Typically found in sandy desert areas where it can use its abilities effectively.",
+    "strengths": "High Strength allows for powerful physical attacks and grappling, while its special abilities provide effective ambush strategies.",
+    "weaknesses": "Vulnerable to water; exposure to water causes cold damage and limits its effectiveness.",
+    "attacks": "Utilizes two Slam attacks that deal bludgeoning and necrotic damage, with the potential to engulf foes.",
+    "most_powerful_ability": "Haunted Haboob creates a sandstorm that obscures vision and frightens enemies, dealing necrotic damage.",
+    "senses": "Possesses tremorsense which enables it to detect movement through the ground, enhancing its ambush potential.",
+    "skills": "Has advantage on Dexterity (Stealth) checks in desert terrain, making it difficult to detect.",
+    "additional_information": [
+        "Immune to necrotic and poison damage",
+        "Resistant to nonmagical physical attacks",
+        "Does not require air, food, drink, or sleep",
+        "Can move through narrow spaces effortlessly",
+        "Capable of quietly burrowing through loose sand"
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that creates sandstorms in the desert",
+        "undead monster that engulfs its enemies",
+        "menacing sand creature with ambush abilities",
+        "powerful undead that thrives in dry environments",
+        "stealthy monster with bludgeoning and necrotic attacks"
+    ]
+}

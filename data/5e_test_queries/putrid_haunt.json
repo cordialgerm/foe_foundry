@@ -1,0 +1,25 @@
+{
+    "name": "Putrid Haunt",
+    "queries": [
+        {
+            "query": "undead creature that inhabits swamps and is strong",
+            "variant": "strong undead monster that lives in swamp"
+        },
+        {
+            "query": "monster that can camouflage in mud and has a poison attack",
+            "variant": "creature that hides in muck and attacks with poison"
+        },
+        {
+            "query": "slow-moving undead with high strength and poison immunity",
+            "variant": "undead with high strength that moves slowly and is immune to poison"
+        },
+        {
+            "query": "creature that can expel swamp vermin and walks through difficult terrain easily",
+            "variant": "monster that ejects swamp creatures and moves easily in tough terrain"
+        },
+        {
+            "query": "medium-sized evil monster found in swampy areas that attacks physically",
+            "variant": "evil medium monster that lives in swamp and does physical attacks"
+        }
+    ]
+}

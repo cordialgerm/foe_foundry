@@ -1,0 +1,51 @@
+{
+    "name": "Bull",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 25,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "pastoral",
+        "melee"
+    ],
+    "adjectives": [
+        "large",
+        "strong",
+        "robust",
+        "brute"
+    ],
+    "description": "The bull is a large, robust creature with a strong physical presence, characterized by its strong attacks and considerable durability.",
+    "memorable": "A formidable physical threat in melee encounters despite its low intelligence and social capabilities.",
+    "goals": "To graze and defend itself in pastoral environments.",
+    "relations": "Often found in herds, potential prey for predators.",
+    "environment": "Typically found in pastoral and rural environments.",
+    "strengths": "High strength and resilience, capable of dealing significant damage with its attacks.",
+    "weaknesses": "Low intelligence and perception makes it vulnerable to hidden threats.",
+    "attacks": "Utilizes Hooves for 9 bludgeoning damage and Gore for 11 piercing damage.",
+    "most_powerful_ability": "Charge: Deal additional piercing damage when moving swiftly toward a target.",
+    "equipment": null,
+    "senses": "Has low passive perception of 9, making it less aware of hidden threats.",
+    "skills": null,
+    "additional_information": [
+        "High Strength of 18 boosts physical attacks.",
+        "Average Dexterity aids agility but is not impressive.",
+        "Very low intelligence at 2, reflecting brute nature.",
+        "Features two primary melee attacks: Hooves and Gore.",
+        "Durable with good Constitution score of 16."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong large rural animal with strong attacks",
+        "melee beast with high strength and low intelligence",
+        "bull that charges and causes extra piercing damage",
+        "large creature found in pastoral environments",
+        "robust animal known for its devastating hooves"
+    ]
+}

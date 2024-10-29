@@ -1,0 +1,48 @@
+{
+    "name": "Clockwork Leech",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., swim 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "mechanical",
+        "construct"
+    ],
+    "adjectives": [
+        "predatory",
+        "resilient",
+        "debilitating"
+    ],
+    "description": "The Clockwork Leech is a medium-sized construct with mechanical precision, featuring a solid armored frame and stealthy capabilities.",
+    "memorable": "Its ability to attach and drain hit points quietly makes it a unique threat in encounters.",
+    "goals": "Typically seeks to ambush creatures and drain their health.",
+    "relations": "May work alongside other constructs or mechanical creatures.",
+    "environment": "Often found in laboratories, factories, or other places where constructs are created.",
+    "strengths": "Immunity to poison and psychic damage, along with resistance to many status ailments.",
+    "weaknesses": "Poor intelligence and social skills, making it unable to strategize effectively.",
+    "attacks": "Bite attack that inflicts piercing damage and drains hit points, along with a tail attack for additional damage.",
+    "most_powerful_ability": "Anesthetizing Bite, which quietly attaches to a target and drains their health each turn.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Excels in stealth with a +3 modifier, and has a +2 modifier in perception.",
+    "additional_information": [
+        "Immunities to being charmed, exhausted, frightened, paralyzed, petrified, and poisoned.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can detach itself after draining a total of 10 hit points from its host."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical creature that drains health",
+        "stealthy leech attacking from the shadows",
+        "construct that can attach and suck blood",
+        "predatory machine that avoids spells",
+        "creature with debilitating bite attack"
+    ]
+}

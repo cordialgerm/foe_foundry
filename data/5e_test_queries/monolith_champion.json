@@ -1,0 +1,25 @@
+{
+    "name": "Monolith Champion",
+    "queries": [
+        {
+            "query": "large construct with blue fey fire attacks",
+            "variant": "large contruct with blue fey fire weapons"
+        },
+        {
+            "query": "strong melee attacker immune to poison and psychic",
+            "variant": "strong melee fighter with immunity to poison and psychic damage"
+        },
+        {
+            "query": "construct that can ignore food and sleep with high hit points",
+            "variant": "construct that doesnt need food or sleep and has high hit points"
+        },
+        {
+            "query": "monster with devastating slashing attacks and magical abilities",
+            "variant": "creature with devastating slash attacks and magical abilities"
+        },
+        {
+            "query": "neutral aligned construct with protection against paralysis and fear",
+            "variant": "neutral construct that is protected from fear and paralysis"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Thripper",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 25 ft., can fly 40 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "humanoid",
+        "magical"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "dangerous"
+    ],
+    "description": "The Thripper has an agile physique and is characterized by its chaotic nature. It is equipped with Feybane Weapons and possesses notable soft wings allowing it to fly.",
+    "memorable": "The Thripper is unique for its ability to dominate against fey creatures, using its Feybane Weapons and detecting them through its Frenzy Sense.",
+    "goals": "The Thripper typically seeks to hunt and overpower fey creatures using its unique abilities.",
+    "relations": "It may be encountered alongside other fey hunters or creatures that thrive in fey environments.",
+    "environment": "Typically found in fey-dominated areas or regions filled with magic.",
+    "strengths": "The Thripper excels in combat against fey, utilizing its truesight and ability to counter spells.",
+    "weaknesses": "Vulnerable to cold damage, which can exploit its defenses.",
+    "attacks": "Attacks with the Extractor Spear, dealing both piercing and necrotic damage, or uses Disorienting Chitter to inflict thunder damage and disorient foes.",
+    "most_powerful_ability": "Feybane Weapons allow all weapon damage against fey creatures to be treated as force damage.",
+    "equipment": null,
+    "senses": "The Thripper has truesight up to 60 feet, allowing it to see through illusions and the true forms of creatures.",
+    "skills": "Skilled in Perception with a +3 modifier, enabling it to notice hidden threats.",
+    "additional_information": [
+        "Can sense the location of fey by scent within 60 feet.",
+        "Multiattack option for enhanced offensiveness.",
+        "Soft Wings allow limited flight, requiring solid surfaces to take off and land.",
+        "Glamour Counter ability lets it disrupt enemy spellcasters effectively.",
+        "It can regain hit points by reducing the maximum hit points of its targets."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can employ Glamour Counter to disrupt enchantment and illusion spells.",
+    "test_queries": [
+        "humanoid with chaos that hunts fey",
+        "cunning agile creature with truesight",
+        "monster that senses fey and flies",
+        "magical humanoid that uses special weapons",
+        "creature capable of countering illusions"
+    ]
+}

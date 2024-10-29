@@ -1,0 +1,25 @@
+{
+    "name": "Golem, Origami",
+    "queries": [
+        {
+            "query": "constructed creature that can change shapes and is vulnerable to fire",
+            "variant": "constructed monster vulnerable to fire that can transform its shape"
+        },
+        {
+            "query": "magical resistance large golem that can fly and walk",
+            "variant": "large flying golem with magic resistance that can also walk"
+        },
+        {
+            "query": "origami golem made of paper that doesn't require food or sleep",
+            "variant": "paper golem known as origami that doesn't need food or sleep"
+        },
+        {
+            "query": "transforming golem with high hit points and slashing attacks",
+            "variant": "golem that transforms with high hit points and can inflict slashing damage"
+        },
+        {
+            "query": "large construct with particular attack forms and no verbal communication",
+            "variant": "large construct that cannot speak and has specific types of attacks"
+        }
+    ]
+}

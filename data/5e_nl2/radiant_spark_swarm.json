@@ -1,0 +1,52 @@
+{
+    "name": "Radiant Spark Swarm",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "hovers and flies at 60 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "swarm",
+        "magic"
+    ],
+    "adjectives": [
+        "radiant",
+        "magical",
+        "swift"
+    ],
+    "description": "The Radiant Spark Swarm is a glowing collection of magical sparks, known for its swift movements and affinity for magic. It hovers and flies effortlessly.",
+    "memorable": "Its ability to target and attack magical items makes the swarm a dangerous foe in magic-rich environments.",
+    "goals": "To seek out and disrupt creatures possessing magical items.",
+    "relations": "Often encountered alongside other elemental creatures.",
+    "environment": "Commonly found in areas with high concentrations of magic.",
+    "strengths": "Immunity to fire, poison, and radiant damage; resistant to common physical damage types.",
+    "weaknesses": "Low hit points and poor Strength score make it vulnerable to crowd control tactics.",
+    "attacks": "The swarm attacks with radiant sparks that deal significant radiant and fire damage in close-range combat.",
+    "most_powerful_ability": "Drawn to Magic allows it to detect and prioritize magical items within 60 feet.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "No notable skill proficiencies.",
+    "additional_information": [
+        "Emits bright light in a 10-foot radius and dim light for an additional 10 feet.",
+        "Can occupy the space of other creatures due to its swarm nature.",
+        "Cannot regain or gain temporary hit points.",
+        "Targets the most rare magical item if multiple are present.",
+        "Inflicts damage to those who come into contact with it."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "radiant elemental swarm with magic affinity",
+        "magical swarm seeking out enchanted items",
+        "swarm that attacks magical item users",
+        "glowing elemental that hovers and flies",
+        "dangerous radiant swarm in magic-rich areas"
+    ]
+}

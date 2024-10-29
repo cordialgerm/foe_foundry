@@ -1,0 +1,25 @@
+{
+    "name": "Hantu Penanggal",
+    "queries": [
+        {
+            "query": "creature that can detach its head and flies",
+            "variant": "monster that flies and can detach its head"
+        },
+        {
+            "query": "fear-inducing fiend with high Charisma and stealth abilities",
+            "variant": "fiend that induces fear and excels in charisma and stealth"
+        },
+        {
+            "query": "monster immune to fire and poison that fights with necrotic damage",
+            "variant": "creature that is immune to fire and poison and uses necrotic damage"
+        },
+        {
+            "query": "dark floating creature that grapples using its entrails",
+            "variant": "floating dark monster that uses entrails to grapple"
+        },
+        {
+            "query": "medium fiend with a detachable head and spellcasting",
+            "variant": "medium fiend that can detach head and uses spells"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Crocodile",
+    "queries": [
+        {
+            "query": "massive predatory reptile living in swamps and rivers",
+            "variant": "huge predatory reptile found in rivers and swamps"
+        },
+        {
+            "query": "aquatic predator that performs deadly death rolls",
+            "variant": "water-based predator known for its fierce death roll attack"
+        },
+        {
+            "query": "aggressive crocodile that can hold its breath for long periods",
+            "variant": "territorial crocodile capable of holding breath for 30 minutes"
+        },
+        {
+            "query": "dangerous creature with strong jaws and stealthy ambush tactics",
+            "variant": "fearsome creature featuring powerful jaws and stealthy ambush methods"
+        },
+        {
+            "query": "large beast with high strength and grappling abilities in combat",
+            "variant": "huge creature boasting great physical strength and grappling skills"
+        }
+    ]
+}

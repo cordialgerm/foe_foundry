@@ -1,0 +1,25 @@
+{
+    "name": "Pech Stonemaster",
+    "queries": [
+        {
+            "query": "small elemental creature that can control stone and fears bright light",
+            "variant": "small stone-controlling elemental that fears bright lights"
+        },
+        {
+            "query": "Pech Stonemaster with high Strength and innate spellcasting powers",
+            "variant": "Pech Stonemaster with strong Strength and natural magic ability"
+        },
+        {
+            "query": "combat-ready small creature that thrives in stone environments",
+            "variant": "small creature ready for battle that flourishes in stone areas"
+        },
+        {
+            "query": "tough elemental with stunning attacks and damage resistance",
+            "variant": "durable elemental capable of stunning foes and resistant to damage"
+        },
+        {
+            "query": "elemental with light sensitivity that uses thunderwave and shatter spells",
+            "variant": "elemental sensitive to light that casts thunderwave and shatter"
+        }
+    ]
+}

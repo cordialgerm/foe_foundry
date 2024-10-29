@@ -1,0 +1,50 @@
+{
+    "name": "Pteranodon",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "10 ft. walking, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "beast",
+        "predator"
+    ],
+    "adjectives": [
+        "nimble",
+        "agile",
+        "prehistoric"
+    ],
+    "description": "A large beast resembling a prehistoric flying reptile, the Pteranodon is an agile threat with wings spread wide.",
+    "memorable": "Utilizes its Flyby ability to swoop down on unsuspecting prey without incurring attacks.",
+    "goals": "Hunt and catch its prey with quick aerial maneuvers.",
+    "relations": "May be found in the company of other airborne or predatory creatures.",
+    "environment": "Typically found in open skies or coastal areas.",
+    "strengths": "Quick movement allows for strategic combat advantages and ability to avoid attacks.",
+    "weaknesses": "Low intelligence and charisma limits its interactions and strategic complexity.",
+    "attacks": "Utilizes a bite attack that deals piercing damage, striking from a reach of 5 feet.",
+    "most_powerful_ability": "Flyby ability allows it to escape without provoking opportunity attacks when flying.",
+    "skills": "Possesses a basic proficiency in Perception, indicating an average awareness.",
+    "additional_information": [
+        "Natural armor grants decent defense.",
+        "Poor cognitive and social skills.",
+        "Can evade melee engagement effectively.",
+        "Moderate challenge for low-level adventurers.",
+        "Easily recognizable due to its prehistoric appearance."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "prehistoric flying reptile",
+        "nimble aerial predator with a bite attack",
+        "agile creature that swoops to catch prey",
+        "large flying beast that avoids attacks",
+        "Pteranodon tactics in aerial combat"
+    ]
+}

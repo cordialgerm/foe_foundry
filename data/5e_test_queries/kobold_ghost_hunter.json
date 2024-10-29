@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Ghost Hunter",
+    "queries": [
+        {
+            "query": "small humanoid that hunts undead with radiant powers",
+            "variant": "humanoid creature that is small and hunts undead using radiant abilities"
+        },
+        {
+            "query": "stealthy monster with sunlight sensitivity and flame attacks",
+            "variant": "monster that is stealthy, has sunlight sensitivity, and uses flame attacks"
+        },
+        {
+            "query": "Kobold with high dexterity and ability to deal radiant damage",
+            "variant": "Kobold that has a high dexterity score and can inflict radiant damage"
+        },
+        {
+            "query": "creature that can become invisible to undead and uses traps",
+            "variant": "creature that can turn invisible to undead and set traps"
+        },
+        {
+            "query": "lawful neutral humanoid with combat skills against the undead",
+            "variant": "humanoid with lawful neutral alignment that has combat abilities against undead"
+        }
+    ]
+}

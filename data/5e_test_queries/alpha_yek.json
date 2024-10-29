@@ -1,0 +1,25 @@
+{
+    "name": "Alpha Yek",
+    "queries": [
+        {
+            "query": "medium fiend with bone shard attack and high mobility",
+            "variant": "medium fiend that has a bone shard ability and is very mobile"
+        },
+        {
+            "query": "chaotic evil fiend that climbs and uses pack tactics in battle",
+            "variant": "chaotic evil creature that can climb and employs pack tactics when fighting"
+        },
+        {
+            "query": "durable fiend with resistance to cold and magical attacks",
+            "variant": "sturdy fiend that is resistant to cold damage and spells"
+        },
+        {
+            "query": "Alpha Yek combat skills and physical attributes",
+            "variant": "combat abilities and physical traits of the Alpha Yek"
+        },
+        {
+            "query": "fiend with darkvision and stealth capabilities in low light",
+            "variant": "creature that has darkvision and is stealthy in dim conditions"
+        }
+    ]
+}

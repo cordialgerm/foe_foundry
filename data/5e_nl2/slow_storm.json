@@ -1,0 +1,57 @@
+{
+    "name": "Slow Storm",
+    "creature_type": "Elemental",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 220,
+    "ac": 19,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 60 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "storm",
+        "lightning",
+        "chaotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "durable",
+        "agile",
+        "tough"
+    ],
+    "description": "The Slow Storm is a chaotic elemental characterized by wind and lightning, with a formidable presence and a dynamic appearance that embodies a stormy essence.",
+    "memorable": "Its ability to unleash static shocks and control an area with wind storms makes it a unique and dangerous foe.",
+    "goals": "Usually serves as a chaotic force of nature in battle, imposing its will through storms and lightning.",
+    "relations": "May be found alongside other elemental creatures or as a manifestation of natural chaos.",
+    "environment": "Typically encountered in stormy or chaotic environments, possibly in open areas where it can unleash its powers.",
+    "strengths": "Immunity to lightning damage and multiple condition immunities make it difficult to control in combat.",
+    "weaknesses": "Vulnerable to magical attacks that bypass its resistance to nonmagical damage.",
+    "attacks": "Can deliver multiple Slam attacks or unleash powerful Lightning Bolts, accompanied by secondary effects like wracking pain.",
+    "most_powerful_ability": "Static Shock allows it to unleash a devastating area-effect electrical attack that can stun foes.",
+    "senses": "Blindsight up to 30 feet provides it with the ability to sense its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Elemental Nature means it doesn't require air, food, drink, or sleep.",
+        "Eye of the Storm creates a challenging wind storm area for opponents.",
+        "Its high Constitution score allows it to absorb damage effectively.",
+        "Strong Dexterity helps it dodge attacks and enhances its saving throws.",
+        "The creature is surrounded by a wind storm that extinguishes flames."
+    ],
+    "damage_types": [
+        "lightning",
+        "acid",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic elemental with lightning powers",
+        "storm creature that controls wind and lightning",
+        "medium elemental that is tough in battle",
+        "powerful wind storm that stuns enemies",
+        "lightning creature with area control abilities"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Malakbel",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "radiant damage",
+        "fire damage"
+    ],
+    "adjectives": [
+        "chaotic",
+        "malevolent",
+        "powerful"
+    ],
+    "description": "Malakbel is a Medium-sized Fiend known for its Chaotic Evil nature, characterized by a fiery presence and radiant light that inflicts damage to nearby foes.",
+    "memorable": "Notably, it can illuminate the battlefield with Blistering Radiance while inflicting both radiant and fire damage.",
+    "goals": "Malakbel seeks to dominate opponents and inflict pain through its devastating radiant powers.",
+    "relations": "It may serve other powerful fiends or be encountered with other chaotic evil creatures.",
+    "environment": "Typically found in dark, chaotic realms or locations infused with magic.",
+    "strengths": "Malakbel has high Dexterity and Charisma, giving it agility and spellcasting prowess. It is immune to fire and radiant damage.",
+    "weaknesses": "Susceptible to cold and lightning damage and can be harmed by nonmagical attacks.",
+    "attacks": "Malakbel can launch two Scorching Blast attacks each turn, dealing significant fire damage and has a deadly Searing Flare special attack.",
+    "most_powerful_ability": "Blistering Radiance lights up the battlefield and deals consistent radiant damage to nearby foes.",
+    "equipment": null,
+    "senses": "Malakbel has truesight up to 30 feet, allowing it to see through illusions and darkness.",
+    "skills": "It possesses keen perception abilities with a passive Perception score of 17.",
+    "additional_information": [
+        "Radiant damage can dispel lower-level darkness spells.",
+        "Ranged attacks against Malakbel are made at a disadvantage.",
+        "It has advantage on saving throws against spells and magical effects.",
+        "Malakbel teleports up to 100 feet, making it a difficult target.",
+        "Can inflict exhaustion on foes caught in its Searing Flare attack."
+    ],
+    "damage_types": [
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend with radiant abilities",
+        "powerful monster that deals fire damage",
+        "medium fiend that radiates bright light",
+        "monster with truesight and teleport ability",
+        "fiend known for scorching blast attacks"
+    ]
+}

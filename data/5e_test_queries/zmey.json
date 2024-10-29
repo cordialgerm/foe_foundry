@@ -1,0 +1,25 @@
+{
+    "name": "Zmey",
+    "queries": [
+        {
+            "query": "three-headed dragon that breathes fire and lives in chaotic environments",
+            "variant": "dragon with three heads that breathes fire and chaotic habitat"
+        },
+        {
+            "query": "huge dragon known for regeneration and powerful melee attacks",
+            "variant": "large dragon with regeneration ability and strong melee attacks"
+        },
+        {
+            "query": "chaotic evil dragon with high armor and multiple attacks",
+            "variant": "evil chaotic dragon that has numerous attacks and high AC"
+        },
+        {
+            "query": "Zmey abilities against acid and fire damage due to its regeneration traits",
+            "variant": "abilities of Zmey versus acid and fire damage because of its healing"
+        },
+        {
+            "query": "Zmey's tactics in combat and its advantages from having multiple heads",
+            "variant": "combat strategies of Zmey and benefits of its three-headed feature"
+        }
+    ]
+}

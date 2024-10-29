@@ -1,0 +1,25 @@
+{
+    "name": "Graknork",
+    "queries": [
+        {
+            "query": "gargantuan cold monster with a strong melee attack",
+            "variant": "gargantuan monster of cold that has strong melee attacks"
+        },
+        {
+            "query": "monster that swims and has a freezing eye attack",
+            "variant": "creature that has swimming abilities and can attack with freezing eye"
+        },
+        {
+            "query": "Graknork's attack strategies in combat",
+            "variant": "attack strategies of Graknork during a battle"
+        },
+        {
+            "query": "large resistant monster known for its perception and cold damage",
+            "variant": "big monster that's resistant and known for cold damage and perception"
+        },
+        {
+            "query": "monster with high strength and swimming speed",
+            "variant": "creature with great strength and ability to swim fast"
+        }
+    ]
+}

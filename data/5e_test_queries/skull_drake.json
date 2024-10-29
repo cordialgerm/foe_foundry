@@ -1,0 +1,25 @@
+{
+    "name": "Skull Drake",
+    "queries": [
+        {
+            "query": "medium dragon with necrotic breath and radiant vulnerability",
+            "variant": "medium drake with necrotic breath and vulnerable to radiant"
+        },
+        {
+            "query": "dragon that flies and has disadvantage in sunlight",
+            "variant": "flying dragon that has a disadvantage when in sunlight"
+        },
+        {
+            "query": "Skull Drake abilities that involve smell and its poison immunity",
+            "variant": "abilities of Skull Drake related to smell and its immunity to poison"
+        },
+        {
+            "query": "creature with 75 hit points that can burrow and fly",
+            "variant": "75 hit point creature that can burrow and fly"
+        },
+        {
+            "query": "Skull Drake tactics for using its bite attacks",
+            "variant": "tactics for Skull Drake when using its bites"
+        }
+    ]
+}

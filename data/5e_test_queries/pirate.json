@@ -1,0 +1,25 @@
+{
+    "name": "Pirate",
+    "queries": [
+        {
+            "query": "humanoid creature skilled in acrobatics and uses a scimitar",
+            "variant": "humanoid that is acrobatics-skilled and wields a scimitar"
+        },
+        {
+            "query": "medium sea rogue with low hit points and ranged attacks",
+            "variant": "medium pirate with few hit points and ability for ranged strikes"
+        },
+        {
+            "query": "nimble pirate who attacks with slashing damage and light crossbow",
+            "variant": "agile pirate dealing slashing damage and using a light crossbow"
+        },
+        {
+            "query": "adventurous humanoid with average armor class and passive perception",
+            "variant": "humanoid adventurer with standard AC and basic perception skills"
+        },
+        {
+            "query": "dangerous light crossbow user with below average durability",
+            "variant": "threatening crossbow wielder with low durability"
+        }
+    ]
+}

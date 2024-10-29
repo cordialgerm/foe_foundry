@@ -1,0 +1,25 @@
+{
+    "name": "Galidroo",
+    "queries": [
+        {
+            "query": "huge psychic monster with debilitating abilities",
+            "variant": "huge monstrosity with weakining powers"
+        },
+        {
+            "query": "creature that burrows and has a powerful multiattack",
+            "variant": "monster that can dig and has multiple attacks"
+        },
+        {
+            "query": "galidroo abilities that control the battlefield",
+            "variant": "abilities of galidroo that effects combat dynamics"
+        },
+        {
+            "query": "two-headed creature immune to psychic damage",
+            "variant": "monster with two heads that resists psychic attacks"
+        },
+        {
+            "query": "creature with aura that makes enemies lethargic",
+            "variant": "monster that can make opponents sluggish with aura"
+        }
+    ]
+}

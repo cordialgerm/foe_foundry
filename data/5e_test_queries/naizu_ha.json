@@ -1,0 +1,25 @@
+{
+    "name": "Naizu-Ha",
+    "queries": [
+        {
+            "query": "small fey creature with high armor class and stealth abilities",
+            "variant": "fey creature that is small and has stealth skills plus high AC"
+        },
+        {
+            "query": "cunning monster that can turn into a dagger and climb walls",
+            "variant": "clever creature that transforms into a dagger and can climb up walls"
+        },
+        {
+            "query": "neutral evil fey with impressive hit points and damage reducing abilities",
+            "variant": "fey with neutral evil alignment and high HP that reduces damage taken"
+        },
+        {
+            "query": "monster with scissor claws and a scythe tail in combat",
+            "variant": "creature fighting with scythe tail and scissor claws"
+        },
+        {
+            "query": "Naizu-Ha special abilities that hinder melee attacks",
+            "variant": "special skills of the Naizu-Ha that reduce damage from melee weapons"
+        }
+    ]
+}

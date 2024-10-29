@@ -1,0 +1,51 @@
+{
+    "name": "Mystic",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "arcane",
+        "spellcaster",
+        "sneaky"
+    ],
+    "adjectives": [
+        "cunning",
+        "dangerous",
+        "mysterious"
+    ],
+    "description": "The Mystic is a Medium humanoid creature wearing hide armor, with an exceptional knowledge of the arcane. It is not physically imposing but relies on cunning and magical abilities to manipulate combat.",
+    "memorable": "The Mystic can command nearby entities to attack and possesses powerful abilities to survive lethal damage, making it a formidable opponent.",
+    "goals": "To manipulate others and gain power through dark arcane knowledge.",
+    "relations": "Might ally with fiends, elementals, or angels as commanded.",
+    "environment": "Typically found in dark, arcane locales, often associated with planar travel.",
+    "strengths": "High Intelligence boosts its spellcasting and tactical options, along with robust resistance to necrotic damage.",
+    "weaknesses": "Relatively low physical strength and resilience against radiant damage.",
+    "attacks": "It delivers slashing and necrotic damage through its multiattack with Void Claw and ranged assaults with Void Bolt.",
+    "most_powerful_ability": "Unveil creates terror by revealing dark truths to multiple enemies at once.",
+    "senses": "Possesses darkvision up to 60 feet, enabling it to see in dim light.",
+    "skills": "Skilled in Arcana, Intimidation, and decent Perception, making it effective in knowledge-based and social encounters.",
+    "additional_information": [
+        "Resilient against many spells due to Void Fortitude.",
+        "Levitation ability allows for vertical mobility in combat.",
+        "Planar Commander can unleash additional attacks from allies.",
+        "Attacks deal extra necrotic damage.",
+        "Has a strategic edge in battlefield manipulation."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark humanoid with necrotic powers",
+        "manipulative enemy that uses illusion magic",
+        "mysterious spellcaster commanding fiends",
+        "fight against a cunning necrotic creature",
+        "humanoid that levitates and causes fear"
+    ]
+}

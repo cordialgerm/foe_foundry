@@ -1,0 +1,25 @@
+{
+    "name": "Green Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "poisonous dragon that thrives in forests",
+            "variant": "forest-loving poison dragon"
+        },
+        {
+            "query": "young dragon with stealth abilities and breath attacks",
+            "variant": "stealthy young dragon with poison breath"
+        },
+        {
+            "query": "medium dragon that can breathe air and water",
+            "variant": "dragon that breathes both air and water"
+        },
+        {
+            "query": "dragon with high intelligence and toxic breath weapon",
+            "variant": "intelligent dragon that uses poison breath"
+        },
+        {
+            "query": "creature that ambushes foes in wooded areas",
+            "variant": "woodland ambushing creature"
+        }
+    ]
+}

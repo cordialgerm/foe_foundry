@@ -1,0 +1,25 @@
+{
+    "name": "Flab Giant",
+    "queries": [
+        {
+            "query": "slow-moving giant with massive strength and grappling abilities",
+            "variant": "giant that moves slowly but has strong grappling power"
+        },
+        {
+            "query": "chaotic evil giant that uses slam attacks",
+            "variant": "giant of chaotic evil aligning that slams opponents"
+        },
+        {
+            "query": "large giant immune to poison that can restrain foes",
+            "variant": "big giant that cannot be poisoned and restrains enemies"
+        },
+        {
+            "query": "Flab Giant with natural armor in a melee combat",
+            "variant": "Flab Giant using its natural armor in close combat"
+        },
+        {
+            "query": "creature that grapples and deals bludgeoning damage",
+            "variant": "monster that grapples and inflicts bludgeoning harm"
+        }
+    ]
+}

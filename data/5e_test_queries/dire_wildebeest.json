@@ -1,0 +1,25 @@
+{
+    "name": "Dire Wildebeest",
+    "queries": [
+        {
+            "query": "large beast with powerful charge and poisonous breath",
+            "variant": "large beast having a strong charge and toxic breath"
+        },
+        {
+            "query": "independent animal that can knock enemies prone and instill fear",
+            "variant": "solitary creature able to make foes prone and cause fear"
+        },
+        {
+            "query": "Dire Wildebeest with high mobility and low mental abilities",
+            "variant": "Dire Wildebeest having great speed and poor intelligence"
+        },
+        {
+            "query": "creature that performs a stampede and has bludgeoning attacks",
+            "variant": "monster that executes a stampede and deals bludgeoning damage"
+        },
+        {
+            "query": "fast beast immune to poison with a terrifying glare",
+            "variant": "quick beast that is immune to poison and has an intimidating glare"
+        }
+    ]
+}

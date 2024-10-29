@@ -1,0 +1,49 @@
+{
+    "name": "Offal Walker",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 37,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "25 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "grappler",
+        "necromantic horror"
+    ],
+    "adjectives": [
+        "grotesque",
+        "sinister",
+        "relentless"
+    ],
+    "description": "The Offal Walker has a horror-inducing appearance, showcasing a grotesque form commonly associated with necromantic evils. It utilizes unique gut lassos as both grappling tools and obstacles, embodying a relentless and sinister style in combat.",
+    "memorable": "Its ability to maintain multiple gut lassos simultaneously makes it a unique grappler, while its undying nature poses a constant threat to foes.",
+    "goals": "To hinder and bind its enemies through relentless grappling and control tactics.",
+    "relations": "Often found in the service of necromancers or other dark entities, it may work alongside other undead creatures.",
+    "environment": "Typically found in dark, forsaken places, or places plagued by necromantic energies.",
+    "strengths": "Decent durability and the ability to grapple and restrain multiple foes.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma indicate poor mental capabilities; vulnerable to abilities targeting low saving throws.",
+    "attacks": "The Offal Walker uses gut lassos to grapple and restrain foes, dealing bludgeoning damage while pulling them closer to amplify its control.",
+    "most_powerful_ability": "Gut Lassos allow for maintaining multiple grappling tools at once, making it a uniquely dangerous foe.",
+    "senses": "Possesses blindsight out to 60 feet, allowing it to detect creatures even when blind.",
+    "skills": "Has a perception skill of +2, making it reasonably aware of hidden threats.",
+    "additional_information": [
+        "Immune to poison damage and not affected by the poisoned condition.",
+        "Can regenerate gut lassos on its turn, maintaining battlefield control.",
+        "Functions without air, food, drink, or sleep due to its undead nature."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister undead monster with grappling abilities",
+        "grotesque creature using gut lassos to attack",
+        "undead that controls foes with grappling tactics",
+        "relentless grappler that doesn't need food or sleep",
+        "necromantic horror with blindsight abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Roachling Lord",
+    "queries": [
+        {
+            "query": "small humanoid with a unpleasant scent that lives in stealth",
+            "variant": "small humanoid creature with an unpleasant smell that thrives in stealth"
+        },
+        {
+            "query": "chaotic neutral creature that can poison with attacks and is adept at stealth",
+            "variant": "chaotic neutral monster that can poison and excels in stealth"
+        },
+        {
+            "query": "roach-like humanoid able to navigate in low light with darkvision",
+            "variant": "humanoid resembling a roach that can see in darkness with darkvision"
+        },
+        {
+            "query": "poisoned attack using a shortsword that relies on stealth and cunning",
+            "variant": "stealthy monster with a shortsword attack that inflicts poison"
+        },
+        {
+            "query": "small creature immune to diseases with high dexterity skills",
+            "variant": "small monster that is disease-resistant and has strong dexterity abilities"
+        }
+    ]
+}

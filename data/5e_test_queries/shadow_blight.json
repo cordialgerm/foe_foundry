@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Blight",
+    "queries": [
+        {
+            "query": "plant creature that thrives in darkness and attacks with cold damage",
+            "variant": "creature that is a plant and loves darkness while dealing cold damage in attacks"
+        },
+        {
+            "query": "small evil plant that has a false appearance like a dead tree stump",
+            "variant": "evil small plant that can disguise itself as the stump of a dead tree"
+        },
+        {
+            "query": "shadow creature vulnerable to fire that can animate other plants",
+            "variant": "shadow monster weak to fire and able to bring other plants to life"
+        },
+        {
+            "query": "monster with blindsight that inflicts necrotic damage through attacks",
+            "variant": "creature possessing blindsight and dealing necrotic damage in its attacks"
+        },
+        {
+            "query": "ambush creature with high Dexterity and cold damage attacks",
+            "variant": "creature that excels at ambushing with a good Dexterity and uses cold damage in its strikes"
+        }
+    ]
+}

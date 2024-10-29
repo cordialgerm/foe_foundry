@@ -1,0 +1,52 @@
+{
+    "name": "Chuhaister",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 157,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 ft. walking speed",
+    "role": null,
+    "tags": [
+        "giant",
+        "melee",
+        "spellcaster hunter"
+    ],
+    "adjectives": [
+        "chaotic",
+        "strong",
+        "defensive"
+    ],
+    "description": "A large, chaotic evil giant with thick skin and a powerful presence on the battlefield, wielding a greatclub.",
+    "memorable": "Possesses unique Feybane ability against fey creatures and a reactive shield to absorb damage.",
+    "goals": "To dominate in battle and protect itself and allies.",
+    "relations": "May encounter fey creatures it opposes and other giants or brutish allies.",
+    "environment": "Typically found in areas resonant with chaotic energy or near fey territory.",
+    "strengths": "Exceptional physical strength and durability, along with immunity to poison and the poisoned condition.",
+    "weaknesses": "Sensitive to bright light, suffering disadvantage on attacks and perception.",
+    "attacks": "Uses multiattack with a greatclub for powerful melee strikes and can hurl rocks for ranged attacks.",
+    "most_powerful_ability": "Feybane, which prevents fey creatures from recovering spells nearby.",
+    "equipment": "Greatclub",
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Excels in Athletics with a +9 bonus, making it highly capable in physical tasks.",
+    "additional_information": [
+        "Regenerates and negates damage to itself and allies with Deadfall Shield.",
+        "Effective against spellcasters, particularly those of fey origin.",
+        "Very high Strength and Constitution scores enhance its combat performance.",
+        "Imposing physical presence enhancing intimidation and battlefield control.",
+        "Can strategically use ranged attacks in combat situations."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic evil giant with fey abilities",
+        "giant with powerful melee strikes and defense",
+        "giant that protects allies and counters fey",
+        "strong giant with a greatclub and darkvision",
+        "giant that suffers in bright light but strong"
+    ]
+}

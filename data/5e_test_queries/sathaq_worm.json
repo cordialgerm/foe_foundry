@@ -1,0 +1,25 @@
+{
+    "name": "Sathaq Worm",
+    "queries": [
+        {
+            "query": "massive worm elemental with high hit points that burrows through ground",
+            "variant": "huge elemental worm that has lots of hit points and burrows underground"
+        },
+        {
+            "query": "creature with disadvantage aura that can camouflage into the earth",
+            "variant": "being that disrupts foes with a pain aura and hides in the ground"
+        },
+        {
+            "query": "elemental monster immune to acid with strong melee attacks",
+            "variant": "elemental creature that has resistance to acid and powerful melee strikes"
+        },
+        {
+            "query": "dangerous worm with a torturous swallow ability and weak dexterity",
+            "variant": "threatening worm that can swallow foes and is not very agile"
+        },
+        {
+            "query": "elemental with high constitution and ability to create pain zones",
+            "variant": "strong elemental creature that makes areas of pain and has great constitution"
+        }
+    ]
+}

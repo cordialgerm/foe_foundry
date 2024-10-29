@@ -1,0 +1,25 @@
+{
+    "name": "Pteranodon",
+    "queries": [
+        {
+            "query": "large flying beast that can swoop down and retreat easily",
+            "variant": "large beast that flies and can swoop down then escape swiftly"
+        },
+        {
+            "query": "prehistoric monster with good flying speed and low intelligence",
+            "variant": "prehistoric flying creature with high speed and very low intelligence"
+        },
+        {
+            "query": "creature with a flyby ability that avoids opportunity attacks",
+            "variant": "monster with flyby skill that escapes opportunity strikes"
+        },
+        {
+            "query": "nimble reptilian creature that attacks with a bite",
+            "variant": "agile reptile-like monster that uses bite to attack"
+        },
+        {
+            "query": "beast that lives in the air and has average perception skills",
+            "variant": "flying beast with decent perception and lives in the sky"
+        }
+    ]
+}

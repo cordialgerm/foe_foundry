@@ -1,0 +1,25 @@
+{
+    "name": "Bilge Gremlin",
+    "queries": [
+        {
+            "query": "tiny fey creature with chaos abilities that disrupts technology",
+            "variant": "chaotic tiny fey that disturbs technology"
+        },
+        {
+            "query": "powerful agility but weak strength gremlin with mechanical disruption",
+            "variant": "gremlin that is agile but has poor strength and disrupts machinery"
+        },
+        {
+            "query": "creature immune to disease living in filthy environments and attacking with bites",
+            "variant": "disease-immune creature that thrives in filth and uses bites as attacks"
+        },
+        {
+            "query": "Bilge Gremlin abilities and its impact on mechanical objects",
+            "variant": "abilities of bilge gremlin and their effects on machinery"
+        },
+        {
+            "query": "small monster that can swim and climb with poisonous bite attack",
+            "variant": "small creature capable of swimming and climbing that has a venomous bite"
+        }
+    ]
+}

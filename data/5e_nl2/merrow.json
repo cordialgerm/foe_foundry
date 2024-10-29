@@ -1,0 +1,51 @@
+{
+    "name": "Merrow",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 60,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "10 ft. on land, 40 ft. swimming",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "predator",
+        "grappler"
+    ],
+    "adjectives": [
+        "twisted",
+        "savage",
+        "brutal"
+    ],
+    "description": "A large aquatic creature with a fish-like lower body, long claws, and jagged teeth, embodying a corrupted form of Merfolk.",
+    "memorable": "Known for dragging victims underwater to drown, embodying a fierce predator of the ocean depths.",
+    "goals": "Prey on ships, coastal villages, and Merfolk; hunt relentlessly in their aquatic domain.",
+    "relations": "Often found in the company of other aquatic terrors or as a servitor to malevolent sea deities.",
+    "environment": "Deep waters, near coastal areas, and shipwrecks.",
+    "strengths": "High strength allows for powerful melee attacks; amphibious nature enables versatility in combat.",
+    "weaknesses": "Low intelligence and charisma, making it ineffective for cunning or charm-based tactics.",
+    "attacks": "Uses claws for slashing damage with grappling mechanics; harpoons for both melee and ranged attacks that can pull enemies closer.",
+    "most_powerful_ability": "Grappling mechanics combined with harpoon usage to control and reposition enemies strategically.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in low-light conditions.",
+    "skills": "Average perception, enabling it to detect intruders in its environment.",
+    "additional_information": [
+        "Can breathe underwater and on land due to amphibious trait.",
+        "Resistant to exhaustion and frightened conditions, enhancing its durability in combat.",
+        "Multiattack capability allows for multiple assaults in a single turn."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "savage aquatic monster with claws",
+        "brutal predator that drags victims underwater",
+        "large creature dwelling in deep waters",
+        "monster that uses harpoons in combat",
+        "twisted version of Merfolk"
+    ]
+}

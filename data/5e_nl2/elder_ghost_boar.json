@@ -1,0 +1,50 @@
+{
+    "name": "Elder Ghost Boar",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "ghost",
+        "boar",
+        "undead"
+    ],
+    "adjectives": [
+        "spectral",
+        "powerful",
+        "formidable"
+    ],
+    "description": "The Elder Ghost Boar is a massive spectral creature with enhanced physical strength, characterized by its intimidating size and incorporeal nature.",
+    "memorable": "It phases through obstacles while being able to communicate with spirits, adding a haunting element to encounters.",
+    "goals": "To wreak havoc on intruders and possibly gather information from the spirits of slain creatures.",
+    "relations": "May be encountered alongside other undead or spectral entities.",
+    "environment": "Typically found in haunted or cursed locations.",
+    "strengths": "Exceptional Strength allows it to deliver devastating melee attacks; ability to phase through solid objects provides tactical advantages.",
+    "weaknesses": "Very low Dexterity makes it susceptible to ranged attacks.",
+    "attacks": "Performs two tusk attacks that deal substantial slashing damage with a potential knockdown effect.",
+    "most_powerful_ability": "The **Spirit Conduit** ability allows it to temporarily channel spirits for communication.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Incorporeal ability enhances maneuvering in combat.",
+        "Relentless trait can prolong battles by allowing survival at 1 hit point.",
+        "Charge ability adds significant damage on successful attacks after moving.",
+        "Ghostly Slip provides damage resistance and escape from grapples.",
+        "Can create unique roleplaying scenarios by communicating with the dead."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge spectral boar attacking adventurers",
+        "ghostly beast that phases through walls",
+        "powerful tusked creature with spirit communication",
+        "monstrous entity with devastating charge attack",
+        "undead boar that uses ghostly abilities in combat"
+    ]
+}

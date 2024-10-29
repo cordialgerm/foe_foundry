@@ -1,0 +1,25 @@
+{
+    "name": "Tribal Warrior",
+    "queries": [
+        {
+            "query": "skilled humanoid fighter from a close-knit tribe with agility",
+            "variant": "agile humanoid fighter skilled in tactics from a tight tribe"
+        },
+        {
+            "query": "warrior proficient with simple weapons like spears and clubs",
+            "variant": "warrior that is skilled with basic weapons such as clubs and spears"
+        },
+        {
+            "query": "tribal warrior that thrives in various environments like deserts and jungles",
+            "variant": "warrior from tribes that can live in jungles and deserts"
+        },
+        {
+            "query": "fierce fighter trained from a young age in ambush tactics",
+            "variant": "trained ambush fighter known for fierceness since youth"
+        },
+        {
+            "query": "humanoid warrior connected to their community and tradition",
+            "variant": "warrior of any race linked to their tribe and customs"
+        }
+    ]
+}

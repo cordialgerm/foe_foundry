@@ -1,6 +1,8 @@
 <MonsterName/>Vampiric Vanguard</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>7</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Vampiric Vanguard is a formidable Medium undead creature that embodies the essence of vampiric entities. Leaning toward a neutral evil alignment, this creature is designed to instill fear in its enemies while being notably resilient in combat. With a robust armor class of 14, high hit points totaling 127, and excellent physical attributes, the Vampiric Vanguard excels in melee engagements. Characterized by its ability to recover health through its attacks, it becomes a significant threat, especially when its health drops below half, granting it greater efficiency in striking against non-undead foes. Despite its strengths, the Vampiric Vanguard suffers from several vulnerabilities, particularly to sunlight and wooden weapons, which can leave it at a severe disadvantage if not careful in its environment.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, as a bonus action, the Vampiric Vanguard can perform the "Fleet of
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampiric Vanguard
 
 *Medium* *Undead* *neutral evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Fleet of Foot:** Takes the Dash action.
 
 
+</statblock>
 
 

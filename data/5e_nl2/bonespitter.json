@@ -1,0 +1,49 @@
+{
+    "name": "Bonespitter",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 217,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "burrow 30 ft., walk 50 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "brutal"
+    ],
+    "description": "The Bonespitter is a gargantuan monstrosity with a durable bony exterior and a frighteningly large maw, capable of delivering devastating bite and piercing attacks.",
+    "memorable": "Its ability to swallow opponents whole and restrain them with its bone spikes makes the Bonespitter a terrifying foe in combat.",
+    "goals": "The Bonespitter thrives on causing damage and restraining opponents to control the battlefield.",
+    "relations": "It may be encountered in areas with other brutal predators, or as a servant to more intelligent monstrosities that utilize its strength.",
+    "environment": "Typically found in rugged terrains, caves, or locales where it can ambush unsuspecting prey.",
+    "strengths": "Its high strength allows it to deal massive damage with both melee and ranged attacks, making it a significant threat.",
+    "weaknesses": "Slow movement due to low dexterity makes it easy to evade, and reliance on brute force rather than finesse.",
+    "attacks": "The Bonespitter uses a fearsome bite attack that can swallow opponents, and bone spikes to both injure and restrain its enemies.",
+    "most_powerful_ability": "Shard Spray, which allows it to exhale a cone of bone shards that can severely damage and restrain multiple targets.",
+    "equipment": null,
+    "senses": "It possesses blindsight up to 30 feet and tremorsense up to 60 feet, giving it the ability to perceive its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "High Constitution grants it effective saving throw bonuses against damaging effects.",
+        "Bony Body ability creates an area of danger, punishing those who get too close.",
+        "Can restrain large or smaller creatures it attacks, limiting their mobility.",
+        "The bone spikes it uses can also be removed or destroyed by contestants, adding a layer of tactical play.",
+        "A high challenge rating makes it a memorable encounter for adventurers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan bone monster",
+        "monstrous beast with spikes",
+        "creature that swallows foes whole",
+        "monstrosity with blindsight",
+        "fearsome melee attacker"
+    ]
+}

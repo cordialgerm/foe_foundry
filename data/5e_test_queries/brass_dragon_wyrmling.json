@@ -1,0 +1,25 @@
+{
+    "name": "Brass Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with fiery breath living in dry environments",
+            "variant": "medium-sized dragon that breathes fire and thrives in arid habitats"
+        },
+        {
+            "query": "playful young dragon that can breathe fire and put creatures to sleep",
+            "variant": "youthful dragon known for its fun-loving nature and abilities to exhale fire and induce sleep"
+        },
+        {
+            "query": "dragon with high armor class and immunity to fire attacks",
+            "variant": "fire-immune dragon featuring a robust armor class"
+        },
+        {
+            "query": "golden-scaled dragon capable of breathing fire and sleep gas",
+            "variant": "dragon with golden scales that can exhale both fire and sleeping gas"
+        },
+        {
+            "query": "clever dragon with good perception and stealth skills",
+            "variant": "intelligent dragon boasting excellent perception and stealth abilities"
+        }
+    ]
+}

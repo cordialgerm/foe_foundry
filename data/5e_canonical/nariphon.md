@@ -1,6 +1,8 @@
 <MonsterName/>Nariphon</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>13</CR>
+<AC/>10 (natural armor)</AC>
+<HP/>195</HP>
 <summary>The Nariphon is a huge neutral plant creature that plays the role of a formidable enemy in combat. With a high armor class of 10 and a substantial amount of hit points at 195, it is able to withstand considerable damage. Its challenge rating of 13 indicates that it poses a significant threat, worth 10,000 experience points to those who defeat it. Although the Nariphon has low Dexterity and Intelligence, giving it average mobility and poor cognitive ability, its strength and constitution are exceptional, allowing it to deal and withstand damage efficiently. Notably, it possesses various immunities to damage and conditions, making it a robust creature in battle. Additionally, its ability to create vegetative clones allows it to manipulate the battlefield effectively.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Nariphon is a dangerous opponent that uses its environment and clon
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nariphon
 
 *Huge* *Plant* *neutral*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Bury:** One creature grappled by nariphon is knocked prone dragged into ground and buried just below surface ending grapple. Victim is restrained unable to breathe or stand up. Creature including victim can use action to free buried creature via DC 18 Str.
 
 
+</statblock>
 
 

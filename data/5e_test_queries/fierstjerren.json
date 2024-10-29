@@ -1,0 +1,25 @@
+{
+    "name": "Fierstjerren",
+    "queries": [
+        {
+            "query": "undead creature that can charm humanoids and thrives in battle",
+            "variant": "undead monster that charms humanoids and is a battle threat"
+        },
+        {
+            "query": "medium undead with necrotic abilities and high durability",
+            "variant": "medium undead creature that has necrotic powers and strong durability"
+        },
+        {
+            "query": "creature with apotheosis ability and can enslave thralls",
+            "variant": "monster that has apotheosis powers and can control thralls"
+        },
+        {
+            "query": "Fierstjerren weaknesses in combat and its charm effect",
+            "variant": "weaknesses of Fierstjerren during battle and its charm ability"
+        },
+        {
+            "query": "creature with high hit points and resistance to necrotic damage",
+            "variant": "monster that has a lot of hit points and is resistant to necrotic damage"
+        }
+    ]
+}

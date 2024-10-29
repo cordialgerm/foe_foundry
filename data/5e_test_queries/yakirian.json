@@ -1,0 +1,25 @@
+{
+    "name": "Yakirian",
+    "queries": [
+        {
+            "query": "medium humanoid with lawful neutral alignment and cold resistance",
+            "variant": "humanoid creature that is medium sized, lawful neutral, and resistant to cold"
+        },
+        {
+            "query": "strong creature that can absorb knowledge from the dead and has a gore attack",
+            "variant": "powerful monster that learns from dead creatures and has a gore melee attack"
+        },
+        {
+            "query": "Yakirian abilities involving resilience against charm and fear in combat",
+            "variant": "abilities of Yakirian that help with resisting charm and fear during battles"
+        },
+        {
+            "query": "humanoid with decent melee attack and good hit points for challenge rating 2",
+            "variant": "medium humanoid that has average melee attacks and notable hit points for CR 2"
+        },
+        {
+            "query": "combat effective creature with high strength and resilience enhanced by Consume Heart",
+            "variant": "combat capable monster with strong physical power and enhanced resilience from its Consume Heart ability"
+        }
+    ]
+}

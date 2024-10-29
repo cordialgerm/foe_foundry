@@ -1,0 +1,52 @@
+{
+    "name": "Behtu",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "chaotic",
+        "fire breath"
+    ],
+    "adjectives": [
+        "small",
+        "chaotic",
+        "evil"
+    ],
+    "description": "The Behtu is a small humanoid creature with strong physical attributes showcased by its muscular build. It is characterized by a chaotic evil nature, making it a fierce opponent in combat. Its notable features include a menacing presence and the ability to use powerful fire breath.",
+    "memorable": "The Behtu\u2019s ability to exhale fire in a cone, combined with its physical prowess, makes it a formidable combatant capable of dealing significant damage to multiple enemies.",
+    "goals": "The Behtu seeks to dominate its foes through chaos and destruction, often relying on its quick attacks and powerful breath weapon to overwhelm opponents.",
+    "relations": "Often found amidst chaotic creatures or serving under powerful evil entities, the Behtu can be encountered alongside other malicious humanoids or monstrosities.",
+    "environment": "The Behtu is commonly found in dark, chaotic locales, such as abandoned ruins or desolate regions where it can thrive in chaos.",
+    "strengths": "Noteworthy for its resistance to cold, fire, and lightning damage, as well as strong physical attributes in strength and dexterity.",
+    "weaknesses": "Limited by its poor Charisma, which may affect its effectiveness in social interactions and influencing others.",
+    "attacks": "The Behtu can deliver a quick combination of a Bite attack and a Spear attack, each capable of inflicting significant piercing damage.",
+    "most_powerful_ability": "Fire Breath, which allows it to unleash a devastating cone of fire that can severely damage multiple foes at once.",
+    "equipment": null,
+    "senses": "The Behtu has darkvision up to 60 feet, allowing it to see effectively in low-light conditions.",
+    "skills": "The Behtu is proficient in Athletics and Stealth, enhancing its ability to perform physical tasks and move unnoticed.",
+    "additional_information": [
+        "Can ingest Ichorous Infusion for enhanced strength and speed.",
+        "Typically carries 1d4 + 1 infusions from Mechuiti\u2019s blood.",
+        "Imposes disadvantage on Intelligence and Wisdom saving throws when using its infusion.",
+        "Multiattack capability increases its offensive potential in combat.",
+        "Can deal up to 21 fire damage with its Fire Breath ability."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil humanoid",
+        "small fire-breathing monster",
+        "stealthy chaotic creature",
+        "powerful melee attacker",
+        "poison-infused humanoid"
+    ]
+}

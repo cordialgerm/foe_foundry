@@ -1,0 +1,25 @@
+{
+    "name": "Cavelight Moss",
+    "queries": [
+        {
+            "query": "large plant creature that illuminates dark areas and grapples foes",
+            "variant": "big plant monster that lights up dark places and can graple enemies"
+        },
+        {
+            "query": "slow-moving moss that causes exhaustion in grappled targets",
+            "variant": "moss that moves slowly and makes grappled creatures feel exhausted"
+        },
+        {
+            "query": "underground plant with damage resistances and unique illumination ability",
+            "variant": "subterranean plant that has resistances to damage and a special light feature"
+        },
+        {
+            "query": "Cavelight Moss characteristics including hit points and natural armor",
+            "variant": "Cavelight Moss stats such as health points and natural defense"
+        },
+        {
+            "query": "plant monster immune to conditions and capable of inflicting exhaustion",
+            "variant": "plant creature that can't be affected by conditions and can give exhaustion"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Vampire",
+    "creature_type": "Undead",
+    "creature_subtype": "shapechanger",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 144,
+    "ac": 16,
+    "srd": true,
+    "cr": "13",
+    "movement": "30 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "shapechanger",
+        "charm",
+        "blood-drain"
+    ],
+    "adjectives": [
+        "powerful",
+        "cunning",
+        "immortal",
+        "nightmarish"
+    ],
+    "description": "A Medium undead creature with malevolent intent, possessing superhuman strength, speed, and a terrifying thirst for blood. They can transform into mist or bats and possess a darkly charming personality.",
+    "memorable": "Known for their ability to charm victims and drain life force, they are formidable foes capable of returning from the brink of death as mist.",
+    "goals": "To feed on blood, charm and manipulate others, and dominate the night.",
+    "relations": "Often associated with swarms of bats, rats, or wolves which they can summon.",
+    "environment": "Typically found in dark, secluded places, such as old castles or crypts, away from sunlight.",
+    "strengths": "High Dexterity and Charisma, exceptional stealth abilities, and powerful regeneration.",
+    "weaknesses": "Vulnerable to sunlight and running water, which can deactivate its formidable abilities.",
+    "attacks": "Utilizes sharp fangs to deliver lethal bites and grapples to control victims, draining their life force.",
+    "most_powerful_ability": "Regeneration: Heals 20 hit points at the start of its turn, unless damaged by radiant sources.",
+    "equipment": null,
+    "senses": "Keen senses with darkvision up to 120 feet provide heightened awareness in darkness.",
+    "skills": "Skilled in Stealth and Persuasion, making it adept at evading detection and manipulating others.",
+    "additional_information": [
+        "Transforms into mist to escape damage or regain health.",
+        "Legendary Resistance allows it to negate failed saving throws.",
+        "Must consume a specific amount of blood daily to maintain power.",
+        "Can charm individuals, turning them into willing accomplices.",
+        "Requires a special resting place to regain full strength."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "blood-draining vampire that can charm",
+        "undead creature that transforms into mist and bats",
+        "tactical vampire with high stealth and regeneration",
+        "creature that thrives in the dark and manipulates others",
+        "powerful shapechanger that is weak to sunlight"
+    ]
+}

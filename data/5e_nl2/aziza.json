@@ -1,0 +1,51 @@
+{
+    "name": "Aziza",
+    "creature_type": "Fey",
+    "alignment": "chaotic good",
+    "size": "Tiny",
+    "hp": 21,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking, climbing, and flying",
+    "role": "Skirmisher",
+    "tags": [
+        "Fey",
+        "Chaos",
+        "Support",
+        "Agile"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Aziza is a small, agile fey creature with a vibrant appearance. It is often seen flitting about with a mischievous air, showcasing its playful nature. It has a slender, delicate frame and a whimsical quality reminiscent of woodland spirits, often adorned with nature-themed attire.",
+    "memorable": "The Aziza's unique ability to communicate with frogs and toads allows for creative interactions in forest settings, making it a fascinating companion or obstacle.",
+    "goals": "The Aziza seeks to playfully disrupt its enemies and assist its allies, acting as a trickster while promoting harmony in its environment.",
+    "relations": "Aziza might be encountered alongside other fey creatures, especially those that dwell in wetlands or wooded areas, such as sprites or dryads.",
+    "environment": "Typically found in forests, wetlands, or areas abundant with frogs and toads.",
+    "strengths": "Notably agile due to its high Dexterity, with potent magical abilities that allow it to confuse enemies and support allies.",
+    "weaknesses": "Very low physical strength makes it vulnerable in close combat, reliant on agility and cunning.",
+    "attacks": "Uses a Thorn Dagger for both melee and ranged attacks, delivering piercing damage, and also employs a Shortbow for ranged attacks with a poison effect.",
+    "most_powerful_ability": "The ability to magically confuse foes with the Befuddle action can significantly disrupt enemy actions during combat.",
+    "senses": "Possesses a passive Perception of 14, allowing it to notice hidden creatures effectively.",
+    "skills": "Skilled in Perception, making it adept at noticing details and spotting threats.",
+    "additional_information": [
+        "Aziza can cast spells using Wisdom, with various useful effects.",
+        "It has the Dazzling Glow reaction to avoid melee attacks.",
+        "Involvement with animals looms large in its characteristics.",
+        "Aziza's playful nature often leads to unexpected interactions.",
+        "It thrives in environments supportive of its fey legacy."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells like Druidcraft and Guidance at will, and Bless and Animal Messenger once per day.",
+    "test_queries": [
+        "playful forest spirit",
+        "unique fey creature",
+        "tiny trickster in the woods",
+        "confusing spellcaster fey",
+        "Agile creature with frog communication"
+    ]
+}

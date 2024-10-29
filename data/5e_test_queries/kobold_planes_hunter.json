@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Planes Hunter",
+    "queries": [
+        {
+            "query": "small humanoid that uses elemental damage in combat",
+            "variant": "small man-like creature that fights with elemental attacks"
+        },
+        {
+            "query": "Kobold with high Strength and teleportation abilities",
+            "variant": "Kobold that has powerful strength and can teleport"
+        },
+        {
+            "query": "agile creature that tracks Celestials and elemental beings",
+            "variant": "swift being that hunts Celestials and elemental creatures"
+        },
+        {
+            "query": "combatant with sunlight sensitivity and magical weapons",
+            "variant": "fighter that is sensitive to sunlight and wields magical arms"
+        },
+        {
+            "query": "Kobold that can deal significant damage and evade attacks",
+            "variant": "Kobold that inflicts heavy damage and avoids hits"
+        }
+    ]
+}

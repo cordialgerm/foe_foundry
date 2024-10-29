@@ -1,6 +1,8 @@
 <MonsterName/>Young Blue Dragon Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>10</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Young Blue Dragon Zombie is a large undead creature that embodies a neutral evil alignment, serving as a potent adversary in combat. This formidable opponent possesses a commendable Armor Class of 18, making it difficult to hit, and boasts a considerable pool of hit points totaling 152. Its challenge rating of 10 indicates that it presents a significant threat to adventurers, while its strengths lie in its high Strength and Constitution scores, allowing it to inflict substantial damage and endure attacks. However, its low Dexterity and Intelligence scores reveal weaknesses, making it susceptible to ranged attacks and limiting its strategic capabilities in battle. Notably, the creature's abilities allow it to rise again even after sustaining fatal damage, making it a challenging foe to dispatch.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ In addition to its melee attacks, the Young Blue Dragon Zombie can unleash a spe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Blue Dragon Zombie
 
 *Large* *Undead* *neutral evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 - **Rotting Breath (Recharge 5-6):** The dragon zombie exhales rotting breath in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hp by this damage dies, and it rises as a zombie and acts immediately after the dragon zombie in the initiative count. The new zombie is under the control of the creature controlling the dragon zombie.
 
 
+</statblock>
 
 

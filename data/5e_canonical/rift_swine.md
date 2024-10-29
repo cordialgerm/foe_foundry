@@ -1,6 +1,8 @@
 <MonsterName/>Rift Swine</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>127</HP>
 <summary>The Rift Swine is a large aberration that embodies chaos and unpredictability, making it a formidable and intriguing foe in any encounter. Its chaotic neutral alignment denotes a lack of concern for law or chaos, focusing solely on its own whims. With an armor class of 15 due to its natural armor and a substantial pool of hit points totaling 127, the Rift Swine can withstand considerable damage in battle. As a Challenge Rating 5 creature, it presents a moderate challenge for adventurers, providing 1,800 experience points upon defeat. While it shows strong physical capabilities with a Strength score of 18 (+4) and a Constitution score of 17 (+3), its Intelligence and Charisma are notably low, at 4 (-3) and 5 (-3), respectively. This leads to very bad performance in social interactions and intellectual challenges.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Rift Swine is a unique creature that combines physical menace and c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rift Swine
 
 *Large* *Aberration* *Chaotic Neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.
 - **Tentacle:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained. The rift swine has two tentacles, each of which can grapple only one target.
 - **Warping Bolt:** Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 11 (3d6 + 1) force damage, and the target must succeed on a DC 14 Constitution saving throw or have disadvantage on attack rolls as reality-warping energies temporarily distort its body.
+</statblock>
 
 

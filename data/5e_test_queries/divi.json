@@ -1,0 +1,25 @@
+{
+    "name": "Divi",
+    "queries": [
+        {
+            "query": "large earth elemental with stone manipulation abilities",
+            "variant": "big elemental made of earth that can manipulate stone"
+        },
+        {
+            "query": "creature that can burrow and has a lethal crushing hand attack",
+            "variant": "monster that can dig and has a deadly hand attack"
+        },
+        {
+            "query": "powerful melee combatant with immunity to petrification and earth glide",
+            "variant": "strong fighter immune to being turned to stone and can glide through earth"
+        },
+        {
+            "query": "elemental creature that creates stone walls and causes earthquakes",
+            "variant": "creature made of elemental force that makes stone barriers and shakes the ground"
+        },
+        {
+            "query": "Divi's innate spellcasting includes moving earth and altering form",
+            "variant": "the Divi can cast spells like moving earth and changing shape"
+        }
+    ]
+}

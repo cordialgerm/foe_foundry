@@ -1,0 +1,51 @@
+{
+    "name": "Boreas\u2019 Chosen",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "cold damage",
+        "combat"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "durable"
+    ],
+    "description": "Boreas\u2019 Chosen is characterized by its chaotic evil nature and exceptional physical abilities, marked by its strength and resilience. Clad in leather armor and using a shield, it stands ready for battle. It can inflict cold damage and is particularly challenging to defeat.",
+    "memorable": "Immunity to cold damage and the ability to petrify enemies with freezing breath make Boreas' Chosen a uniquely formidable opponent.",
+    "goals": "To dominate and defeat foes on icy terrains.",
+    "relations": "Might serve under powerful ice entities or allies in cold environments.",
+    "environment": "Icy terrains or cold regions.",
+    "strengths": "Immunity to cold damage, high Constitution, and powerful cold-infused attacks.",
+    "weaknesses": "Low intelligence may hinder strategic choices.",
+    "attacks": "Utilizes spear attacks for piercing and cold damage, and boasts a freezing breath attack that can incapacitate enemies.",
+    "most_powerful_ability": "Breath of the North Wind, capable of petrifying foes with ice.",
+    "equipment": null,
+    "senses": "Has a passive Perception score of 12.",
+    "skills": "Shows exceptional skill in Athletics, Survival, and moderate proficiency in Intimidation.",
+    "additional_information": [
+        "Can easily traverse icy surfaces ignoring difficult terrain.",
+        "Deals additional cold damage with weapon attacks due to Ice Runes.",
+        "Inflicts cold damage to melee attackers through Frozen Blood ability.",
+        "Highly durable with significant hit points and defenses.",
+        "Resistant to some physical damage types."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful cold damage humanoid",
+        "creature immune to cold and petrifying",
+        "humanoid with ice-based attacks",
+        "tough enemy found in icy terrains",
+        "chaotic evil creature with freezing breath"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Aalpamac",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walking speed of 15 feet and swimming speed of 50 feet",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "aquatic",
+        "challenge7"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "strategic"
+    ],
+    "description": "The aalpamac is a large creature with strong physical characteristics, particularly noted for its notable strength. It can breathe both air and water, allowing it to thrive in various environments. Its appearance is imposing, likely with aquatic features that reflect its amphibious nature.",
+    "memorable": "Its Distance Distortion Aura creates a significant tactical disadvantage for nearby opponents, making it a unique menace in combat encounters.",
+    "goals": "To assert dominance in its territory and challenge adventurers that intrude into its environment.",
+    "relations": "Could be encountered alongside other aquatic creatures or monstrous entities that share the same habitat.",
+    "environment": "Typically found in coastal or aquatic regions.",
+    "strengths": "High hit points and strong melee attacks, along with damage resistance to cold.",
+    "weaknesses": "Low Dexterity and Intelligence scores limit its mobility and cognitive interactions.",
+    "attacks": "Capable of delivering powerful melee damage with a bite and claw strikes, emphasizing its threat as a frontline predator.",
+    "most_powerful_ability": "Distance Distortion Aura significantly affects opponents' combat effectiveness, introducing disadvantages and restricting movement.",
+    "senses": "Has passive perception of 16, showing keen awareness of its surroundings.",
+    "skills": "Possesses a perception skill modifier of +6, effective for spotting hidden threats.",
+    "additional_information": [
+        "It has an amphibious trait allowing it to function effectively in both air and water.",
+        "Excellent resilience against health-targeting effects with a Constitution saving throw bonus of +7.",
+        "The aura's effect can last well beyond a single turn, severely penalizing opponents.",
+        "Creatures with specific sensory abilities are unaffected by its most powerful ability, introducing strategic planning.",
+        "Significant physical capabilities with a Strength score of 21, enhancing its melee attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "amphibious monster",
+        "creature with distance distortion aura",
+        "huge water beast",
+        "monstrosity with strong melee attacks",
+        "predatory aquatic creature"
+    ]
+}

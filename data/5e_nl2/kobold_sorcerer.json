@@ -1,0 +1,54 @@
+{
+    "name": "Kobold Sorcerer",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Small",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking speed",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "small",
+        "kobold",
+        "fire"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "spellcasting",
+        "intimidating"
+    ],
+    "description": "The Kobold Sorcerer is a small, agile humanoid with a knack for magic and a strong Charisma.",
+    "memorable": "This creature combines inherent magical abilities with ambush tactics, making it a clever adversary in low-level encounters.",
+    "goals": "The Kobold Sorcerer typically aims to outmaneuver foes and leverage its spells to control the battlefield.",
+    "relations": "Kobold Sorcerers are often found within tribes and might be accomplices to other kobolds or dragons.",
+    "environment": "Commonly found in caves, tunnels, or areas inhabited by kobolds.",
+    "strengths": "Innate spellcasting allows it to manipulate situations from afar and escape quickly.",
+    "weaknesses": "Low Strength makes it ineffective in melee combat, relying heavily on spells and agility.",
+    "attacks": "Ranged Flame Bolt attack and melee Shiv attack provide versatile combat options.",
+    "most_powerful_ability": "Innate spellcasting enables it to cast spells without material components, enhancing its tactical options.",
+    "equipment": "null",
+    "senses": "Possesses darkvision up to 60 feet, which aids in navigating dimly lit areas.",
+    "skills": "Proficient in arcana and intimidation, enhancing its use of magic and ability to threaten opponents.",
+    "additional_information": [
+        "Can cast spells at will such as Mage Hand and Mending.",
+        "Uses Expeditious Retreat for enhanced speed and mobility in combat.",
+        "Multiattack ability allows for multiple ranged attacks in a single turn.",
+        "Strong Charisma score supports its spellcasting and intimidation tactics.",
+        "Typically operates in groups for more substantial combat effectiveness."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma, allowing for spells like Charm Person and Mage Armor.",
+    "test_queries": [
+        "small spellcasting kobold",
+        "agile kobold with fire magic",
+        "kobold that uses charm spells",
+        "cunning sorcerer that casts spells",
+        "magic-using small humanoid creature"
+    ]
+}

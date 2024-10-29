@@ -1,0 +1,57 @@
+{
+    "name": "Camazotz",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 537,
+    "ac": 19,
+    "srd": false,
+    "cr": "22",
+    "movement": "walk 80 ft., fly 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "chaotic evil",
+        "large",
+        "powerful",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "evil",
+        "fiery",
+        "tactical"
+    ],
+    "description": "Large chaotic evil fiend with a menacing presence, characterized by its fiery attacks and ability to transform into a bat.",
+    "memorable": "Camazotz can summon swarms of bats and creates vampires from fallen foes.",
+    "goals": "To dominate opponents and spread chaos and fear.",
+    "relations": "May command giant bats or vrock allies in battle.",
+    "environment": "Often found in dark and sinister locations.",
+    "strengths": "Remarkably high hit points, strong saving throws, and multiple formidable attacks including fire damage.",
+    "weaknesses": "Vulnerable to cold damage, making it susceptible to specific tactics.",
+    "attacks": "Can perform multiple melee attacks including a devastating bite and claws, as well as unleash a powerful fire breath attack.",
+    "most_powerful_ability": "Fire Breath that deals substantial fire and necrotic damage in a wide area.",
+    "equipment": null,
+    "senses": "Blindsight up to 120 feet and truesight up to 30 feet provide unparalleled awareness.",
+    "skills": "Proficient in Acrobatics, Athletics, Deception, Insight, Intimidation, and has a high passive perception of 23.",
+    "additional_information": [
+        "Unique ability to create vampires from slain foes.",
+        "Can call bats to swarm and distract enemies.",
+        "Possesses strong magic resistance against spells.",
+        "Ability to change shape into a giant bat.",
+        "Can extinguish light sources and cause damage with fiery wing beat."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": "Can cast powerful spells without material components, including dominate person and incendiary cloud.",
+    "test_queries": [
+        "large chaotic evil fiend with fire attacks",
+        "fiend that summons bats and vampires",
+        "monster that transforms into a giant bat",
+        "Camazotz's powerful fire breath attack",
+        "creature with blindsight and strong magic resistance"
+    ]
+}

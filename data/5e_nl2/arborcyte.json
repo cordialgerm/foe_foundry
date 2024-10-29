@@ -1,0 +1,49 @@
+{
+    "name": "Arborcyte",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "plant",
+        "chaotic",
+        "creature"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "resilient"
+    ],
+    "description": "The Arborcyte is a large, plant creature known for its chaotic nature and robust physical presence, with strong thorn vines and animated tendrils.",
+    "memorable": "Its ability to create animated tendrils when damaged makes it a formidable opponent, allowing it to control the battlefield effectively.",
+    "goals": "To dominate the battlefield through physical attacks and control with its animated tendrils.",
+    "relations": "Related to other plant creatures and could be found in similar environments, often serving as guardians of forested areas.",
+    "environment": "Typically found in forested regions or areas abundant with plant life.",
+    "strengths": "Strong physical attacks with the ability to grapple and deal ongoing damage, plus the unique ability to create animated tendrils.",
+    "weaknesses": "Vulnerable to fire damage and lacks intelligence and charisma, which limits its mental capabilities.",
+    "attacks": "Makes multiple thorn vine attacks that grapple and deal piercing and acid damage, as well as animated tendril attacks.",
+    "most_powerful_ability": "Shearing, which allows it to create animated tendrils when it takes significant damage, enhancing its control over the battlefield.",
+    "senses": "Has darkvision up to 60 feet, enabling it to see in dim light.",
+    "skills": "Lacks notable skill proficiencies due to low intelligence and charisma.",
+    "additional_information": [
+        "Resistant to bludgeoning and piercing damage.",
+        "Can grapple up to two creatures simultaneously.",
+        "Animated tendrils serve as additional targets and distractions during combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature with tendrils",
+        "chaotic neutral plant monster",
+        "Arborcyte abilities",
+        "large plant creature",
+        "thorn vine attack monster"
+    ]
+}

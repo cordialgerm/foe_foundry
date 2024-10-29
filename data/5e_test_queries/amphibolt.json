@@ -1,0 +1,25 @@
+{
+    "name": "Amphibolt",
+    "queries": [
+        {
+            "query": "large monster that can breathe both air and water and disguises as a rock",
+            "variant": "big creature that breathes water and air and pretends to be a rock"
+        },
+        {
+            "query": "agile creature with lightning attacks that lives in aquatic environments",
+            "variant": "quick creature with electric powers that inhabits water areas"
+        },
+        {
+            "query": "monstrosity that can jump 30 feet and deals lightning damage",
+            "variant": "creature that jumps 30 feet and inflicts electric damage"
+        },
+        {
+            "query": "monster with high Dexterity and strong melee attacks that swallows opponents",
+            "variant": "creature with great agility and powerful bite that consumes enemies"
+        },
+        {
+            "query": "large amphibious creature that has camouflage and strong health",
+            "variant": "big water-dwelling monster that can hide and has robust health"
+        }
+    ]
+}

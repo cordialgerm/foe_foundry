@@ -1,6 +1,8 @@
 <MonsterName/>Young Red Dragon Zombie</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>11</CR>
+<AC/>16</AC>
+<HP/>178</HP>
 <summary>The Young Red Dragon Zombie is a formidable Large Undead creature, embodying the terrifying aspects of both dragons and the undead. It possesses a strong combination of durability and offensive capabilities, boasting an impressive 178 hit points and a high Armor Class of 16. While it lacks agility due to a low Dexterity score, its exceptional Strength and Constitution make it a powerhouse in combat, capable of delivering powerful attacks and taking substantial damage. However, its intelligence and charisma are markedly low, suggesting a creature driven by instinct rather than cunning. This makes the Young Red Dragon Zombie a dangerous but straightforward adversary, particularly in environments where its fire-based abilities can be fully utilized. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Notably, its Fire Breath ability is particularly devastating. When it uses this 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Red Dragon Zombie
 
 *Large* *Undead*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The dragon exhales a blast of fire that fills a 30-foot cone. Each creature in that area makes a DC 17 Dexterity saving throw  taking 52 (15d6) fire damage on a failed save or half damage on a success. A creature that fails the saving throw also suffers 5 (1d10) ongoing fire damage. While affected by this ongoing damage  it is frightened of the dragon. A creature can use an action to end the ongoing damage.
 
 
+</statblock>
 
 

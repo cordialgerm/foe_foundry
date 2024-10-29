@@ -1,6 +1,8 @@
 <MonsterName/>Rust Monster</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>27</HP>
 <summary>A Rust Monster is a strange, insect-like creature that feeds on metal. Its antennae can detect and rust metal objects, which it consumes as its primary food source. Rust Monsters are often found in caverns, ruins, or near forges, where they search for discarded weapons, armor, or other metal objects. Though not aggressive towards living creatures, they are highly dangerous to adventurers due to their ability to destroy metal equipment. Their appetite for metal makes them a bane to anyone carrying armor or weapons made of iron or steel.</summary>
 
 <summary>The Rust Monster is a medium-sized monstrosity known for its unique ability to corrode and destroy metal objects, making it a significant threat to adventurers who rely on metallic weapons and armor. With an armor class of 15 and 27 hit points, it can endure a fair amount of punishment, but its challenge rating of 1/2 indicates that it is best approached with caution rather than brute strength. It is particularly effective against characters who use nonmagical metal equipment, as its special abilities can severely weaken or destroy these items. However, its intelligence is notably low, and it relies more on instinct and sensory abilities than strategic thinking. </summary>
@@ -31,6 +33,7 @@ Additionally, the Rust Monster can use the Iron Dash bonus action to move up to 
 
 Source: 5e_srd
 
+<statblock>
 ## Rust Monster
 
 *Medium monstrosity, unaligned*
@@ -61,7 +64,8 @@ Source: 5e_srd
 
 ***Antennae***. The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.
 
-If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
+If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.</statblock>
+
 
 
 
@@ -69,6 +73,7 @@ If the object touched is either metal armor or a metal shield being worn or carr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Monster
 
 *Medium* *Monstrosity*
@@ -103,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Defensive Bite:** When the rust monster is hit by a melee attack made by a creature it can see within 5 feet, it bites the attacker.
 
 
+</statblock>
 
 
 
@@ -111,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rust Monster
 
 *Medium monstrosity*
@@ -147,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Iron Dash.** The rust monster moves up to half its speed toward a source of ferrous metal it can sense.
 
+</statblock>
 
 

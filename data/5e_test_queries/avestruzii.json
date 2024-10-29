@@ -1,0 +1,25 @@
+{
+    "name": "Avestruzii",
+    "queries": [
+        {
+            "query": "humanoid creature with a high constitution that uses a battleaxe and can communicate in Common",
+            "variant": "humanoid being with high constitution that wields a battleaxe and speaks Common"
+        },
+        {
+            "query": "medium-sized creature wearing scale mail known for its resilience and claw attacks",
+            "variant": "medium creature in scale mail recognized for its toughness and claw strikes"
+        },
+        {
+            "query": "Avestruzii abilities to react to attacks and moderate offensive skills in combat",
+            "variant": "Avestruzii skills to counter attacks and average offensive abilities during battles"
+        },
+        {
+            "query": "creature with a passive perception of 12 and average wisdom that fights up close",
+            "variant": "being with passive perception 12 and normal wisdom that engages in melee combat"
+        },
+        {
+            "query": "a creature with low intelligence and charm but strong physical strength and health",
+            "variant": "a being possessing low reasoning and charisma yet high physical power and vitality"
+        }
+    ]
+}

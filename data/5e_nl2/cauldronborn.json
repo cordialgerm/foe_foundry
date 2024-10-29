@@ -1,0 +1,50 @@
+{
+    "name": "Cauldronborn",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "potion consumer",
+        "magic detector"
+    ],
+    "adjectives": [
+        "small",
+        "magical",
+        "unique"
+    ],
+    "description": "The Cauldronborn is a small construct that can consume potions, enhancing its health while fighting.",
+    "memorable": "Its ability to consume potions for health and to draw in nearby potions offers a tactical advantage in combat.",
+    "goals": "To consume potions and pursue magical items.",
+    "relations": "It may be found in areas rich with potions or near spellcasters.",
+    "environment": "Often encountered in magical laboratories or potion shops.",
+    "strengths": "Can heal itself by consuming potions and has regenerative abilities.",
+    "weaknesses": "Low Dexterity and Charisma scores make it ineffective in social situations and agile attacks.",
+    "attacks": "Can make two slam attacks dealing bludgeoning damage, displaying physical strength in combat.",
+    "most_powerful_ability": "Call Potion allows it to magically draw potions towards itself, potentially overwhelming foes.",
+    "equipment": null,
+    "senses": "It has darkvision and a passive perception score of 8, allowing it to notice threats poorly.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and several conditions like charmed and frightened.",
+        "Resistant to piercing and slashing from nonmagical attacks.",
+        "Has low Intelligence, affecting its cognitive capabilities.",
+        "Gains hit points from consumed potions, enhancing its survival.",
+        "Can sense potions up to a mile away, giving it a strategic scouting ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small magical construct that consumes potions",
+        "creature that detects potions and heals",
+        "overwhelming potion-hungry monster",
+        "construct with regeneration and potion abilities",
+        "small creature immune to poison and frightened"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kobold Sorcerer",
+    "queries": [
+        {
+            "query": "small spellcasting humanoid that loves ranged attacks",
+            "variant": "tiny humanoid spellcaster that enjoys ranged attacks"
+        },
+        {
+            "query": "creature with low strength and powerful spells",
+            "variant": "being with weak strength but strong spellcasting abilities"
+        },
+        {
+            "query": "agile kobold that uses fire magic",
+            "variant": "quick kobold who casts fire spells"
+        },
+        {
+            "query": "spellcaster that can charm and enhance its speed",
+            "variant": "caster that has charm abilities and improves movement"
+        },
+        {
+            "query": "Kobold Sorcerer combat tactics and abilities",
+            "variant": "combat strategies and abilities of the Kobold Sorcerer"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Knight Ab-errant",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Large",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "combatant",
+        "humanoid",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "versatile"
+    ],
+    "description": "A large, humanoid creature dressed in armor scraps, showcasing a blend of strength and tactics in combat.",
+    "memorable": "Its ability to deal extra damage to smaller foes and resistance to magic makes it a formidable opponent.",
+    "goals": "To dominate opponents in melee combat and withstand magical attacks.",
+    "relations": "May be encountered alongside other combat-oriented humanoids or serve as a champion for a dark force.",
+    "environment": "Found in various combat scenarios or battlefields.",
+    "strengths": "Excels in melee combat with strong attacks and advantages against magic effects.",
+    "weaknesses": "Vulnerable to psychic damage, which can be particularly damaging to it.",
+    "attacks": "The Knight Ab-errant makes powerful melee attacks, including a sweeping maul that can knock opponents prone.",
+    "most_powerful_ability": "Bigger They Are allows it to deal additional damage to smaller creatures, enhancing its offensive capabilities.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in athletics and intimidation, allowing it to exert physical dominance and instill fear.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "The Reckless ability allows for aggressive attacks at the cost of increased danger from foes.",
+        "Possesses the Harder They Fall ability, introducing risk with critical hits.",
+        "Has decent Constitution, providing durable health in combat."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large humanoid with magic resistance",
+        "combat-focused creature that knocks foes prone",
+        "Knight Ab-errant abilities and attacks",
+        "formidable melee fighter in armor scraps",
+        "tactical humanoid that excels in close combat"
+    ]
+}

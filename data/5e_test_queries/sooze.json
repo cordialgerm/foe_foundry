@@ -1,0 +1,25 @@
+{
+    "name": "Sooze",
+    "queries": [
+        {
+            "query": "shape-shifting creature that can be a laborer or warrior",
+            "variant": "creature that shifts shapes and can act as a laborer or a warrior"
+        },
+        {
+            "query": "medium aberration with versatile abilities in combat",
+            "variant": "versatile combat abilities of a medium-sized aberration"
+        },
+        {
+            "query": "creature with natural armor and resistance to cold and fire",
+            "variant": "natural armor and resistant to cold or fire creature"
+        },
+        {
+            "query": "intelligent creature with telepathy and unique merging ability",
+            "variant": "creature that has telepathy and can merge with others"
+        },
+        {
+            "query": "mobile creature that can fit through narrow spaces with multiple roles",
+            "variant": "creature that fits in narrow spaces and has various roles"
+        }
+    ]
+}

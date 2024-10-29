@@ -1,0 +1,25 @@
+{
+    "name": "Servant of Yig",
+    "queries": [
+        {
+            "query": "malevolent aquatic aberration with poison attacks",
+            "variant": "malevolant water monster that uses poison attacks"
+        },
+        {
+            "query": "creature with high Constitution and magical abilities",
+            "variant": "monster that has strong Constitution and spellcasting powers"
+        },
+        {
+            "query": "creature that can charm and instill fear",
+            "variant": "monster that can use charm person and fear spells"
+        },
+        {
+            "query": "agile poison-resistant monster that grapples enemies",
+            "variant": "quick and poison-immune creature that can restrain foes"
+        },
+        {
+            "query": "darkvision monster that lives in various terrains",
+            "variant": "creature with darkvision that adapts to different environments"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Giant",
+    "queries": [
+        {
+            "query": "gigantic creature that can manipulate the terrain and has immense strength",
+            "variant": "huge creature that manipulates the environment and has great strength"
+        },
+        {
+            "query": "gargantuan giant with high hit points and area damage attacks",
+            "variant": "large giant with significant hit points and area effect attacks"
+        },
+        {
+            "query": "neutral evil mountain monster with thunder damage capability",
+            "variant": "mountain creature that is neutral evil and can deal thunder damage"
+        },
+        {
+            "query": "giant with fire immunity that unleashes boulders in combat",
+            "variant": "giant resistant to fire that hurls boulders during fights"
+        },
+        {
+            "query": "powerful giant that uses magic resistance and has legendary actions",
+            "variant": "strong giant using magical resistance with special legendary actions"
+        }
+    ]
+}

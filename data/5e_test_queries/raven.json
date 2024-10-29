@@ -1,0 +1,25 @@
+{
+    "name": "Raven",
+    "queries": [
+        {
+            "query": "tiny black bird that can mimic sounds and flies well",
+            "variant": "small black-feathered bird that flies effectively and imitates sounds"
+        },
+        {
+            "query": "bird associated with death that has low hit points and is agile",
+            "variant": "black bird linked to death, known for its agility and low health points"
+        },
+        {
+            "query": "versatile small creature that can serve as a scout and is very fragile",
+            "variant": "flexible tiny monster that is useful as a scout and quite vulnerable"
+        },
+        {
+            "query": "intelligent bird that can imitate voices and is not a threat in combat",
+            "variant": "clever bird able to mimic speech and poses little danger in battle"
+        },
+        {
+            "query": "mobility-focused raven with a knack for seeing hidden objects",
+            "variant": "agile raven skilled at spotting concealed things"
+        }
+    ]
+}

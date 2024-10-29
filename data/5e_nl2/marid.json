@@ -1,0 +1,56 @@
+{
+    "name": "Marid",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 172,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., fly 60 ft., swim 90 ft.",
+    "role": "Artillery",
+    "tags": [
+        "water",
+        "elemental",
+        "magic",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptable",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "The Marid is a large elemental creature resembling a powerful being of water, capable of both melee and magical combat. It has an impressive physique with muscular build, embodying the essence of water.",
+    "memorable": "It combines physical prowess with magical versatility, capable of manipulating water and summoning allies.",
+    "goals": "Typically aims to dominate aquatic environments and can act as both adversary and ally in conflicts.",
+    "relations": "Could be found alongside other water elemental creatures and may serve as a powerful ally or adversary to adventurers.",
+    "environment": "Usually found in aquatic locales or near bodies of water.",
+    "strengths": "Resistant to acid, cold, and lightning damage; can breathe both air and water.",
+    "weaknesses": "Mobile yet vulnerable to physical attacks if caught off guard outside water.",
+    "attacks": "Utilizes multiattack with trident strikes delivering piercing and lightning damage, can also use nets to restrain foes.",
+    "most_powerful_ability": "The ability to create a Water Jet that can push enemies away and knock them prone while causing significant bludgeoning damage.",
+    "equipment": "Trident, capable of returning when thrown.",
+    "senses": "Possesses blindsight up to 30 feet, allowing it to detect creatures without needing to see them.",
+    "skills": "Has proficiency in perception and persuasion, making it a formidable social combatant.",
+    "additional_information": [
+        "Can use Fog Cloud to obscure areas, allowing for tactical surprises.",
+        "Innate spellcasting enhances its versatility and battlefield control.",
+        "The Marid can alter its form using 'alter self' to adapt to combat needs.",
+        "Powerful enough to summon water elementals to aid in battle.",
+        "Strong saving throws in Constitution and Charisma."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting ability allowing for multiple spells related to water manipulation and control.",
+    "test_queries": [
+        "large water elemental with magical abilities",
+        "creature that can summon allies in water",
+        "marid with trident that returns when thrown",
+        "elemental that creates fog clouds in battle",
+        "aquatic monster with high physical strength and spells"
+    ]
+}

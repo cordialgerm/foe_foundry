@@ -1,0 +1,55 @@
+{
+    "name": "Mage",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 12,
+    "srd": true,
+    "cr": "6",
+    "movement": "30 ft. walking speed",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "intelligent",
+        "arcane"
+    ],
+    "adjectives": [
+        "powerful",
+        "strategic",
+        "magical",
+        "frail"
+    ],
+    "description": "A Mage wears robes adorned with mystical symbols and carries a staff, wand, or other arcane foci. They are highly intelligent beings dedicated to the study of arcane magic.",
+    "memorable": "The Mage excels in spellcasting, using devastating spells like fireball and cone of cold, and possesses the ability to teleport using dimension door and misty step.",
+    "goals": "To study and master arcane magic, often serving as advisors or delving into magical experiments.",
+    "relations": "Often found in magical academies or wizard towers, Mages may interact with other spellcasters or serve powerful rulers.",
+    "environment": "Typically found in magical academies, wizard towers, or secluded locations for study.",
+    "strengths": "High intelligence and access to powerful spells, including area of effect and control spells.",
+    "weaknesses": "Physically frail with low Strength and constituting, vulnerable to direct attacks.",
+    "attacks": "Can attack with spells like fire bolt for fire damage or use a dagger for piercing damage.",
+    "most_powerful_ability": "Can cast fireball for high area damage or use greater invisibility for evasion.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Arcana, History, Investigation, and Perception, making them effective in gathering information.",
+    "additional_information": [
+        "Arcane Weapons ability for extra force damage on weapon attacks.",
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Can perform Multiattack with dagger or Arcane Bolt attacks.",
+        "Strong strategic capabilities with teleportation spells.",
+        "Possesses significant area control with spells like cone of cold and fireball."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "9th-level spellcaster with a variety of spells including fireball, greater invisibility, and cone of cold.",
+    "test_queries": [
+        "powerful spellcaster in robes",
+        "mage that can teleport and cast fireball",
+        "humanoid magic user with area damage spells",
+        "arcane caster with strong intelligence and magic resistance",
+        "magic-focused enemy that hides from combat"
+    ]
+}

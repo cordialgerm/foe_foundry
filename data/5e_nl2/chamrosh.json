@@ -1,0 +1,52 @@
+{
+    "name": "Chamrosh",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 60 ft. and walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "celestial",
+        "support",
+        "scout"
+    ],
+    "adjectives": [
+        "agile",
+        "supportive",
+        "perceptive"
+    ],
+    "description": "The Chamrosh is a Medium celestial creature with keen senses and a vibrant, agile presence, embodying a neutral good alignment. It has light fur and looks graceful in flight.",
+    "memorable": "Known for its supportive abilities, the Chamrosh can heal allies and frighten evil creatures with its high-pitched bark.",
+    "goals": "To support allies in battle and gather information from both friends and foes.",
+    "relations": "Related to other celestial beings, it may collaborate with good-aligned creatures for divine purposes.",
+    "environment": "Typically found in celestial realms or places of goodness, such as sacred groves or blessed sites.",
+    "strengths": "Strong perceptive abilities and immunity to fear, allowing it to detect hidden foes and resist psychological effects.",
+    "weaknesses": "Low intelligence limits its strategic combat decisions.",
+    "attacks": "Can bite for piercing damage and unleash a psychic bark to frighten evil creatures.",
+    "most_powerful_ability": "Healing Lick enables it to heal allies and remove conditions, showcasing its supportive role.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and smell, granting it advantage on perception checks related to those senses.",
+    "skills": "Proficient in insight and perception, making it effective at detecting deception and hidden threats.",
+    "additional_information": [
+        "Advantage on insight checks related to lies and evil alignments.",
+        "Does not provoke opportunity attacks when flying.",
+        "Recharge ability for psychic bark can frighten evil beings.",
+        "Healing ability can be used multiple times per day.",
+        "Resistant to fire and radiant damage."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial creature with psychic abilities",
+        "agile healer that can frighten enemies",
+        "flying creature that heals allies",
+        "perceptive celestial scout",
+        "neutral good creature that detects lies"
+    ]
+}

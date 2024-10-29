@@ -1,0 +1,56 @@
+{
+    "name": "Fidele Angel",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Good",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 80 ft., fly 10 ft.",
+    "role": "Supporter",
+    "tags": [
+        "celestial",
+        "loyalty",
+        "protector"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "devoted"
+    ],
+    "description": "A winged celestial being with a strong presence, the Fidele Angel is characterized by its loyalty and protective nature.",
+    "memorable": "The ability to share damage with its mate highlights its deep bond and dedication.",
+    "goals": "To protect and serve beings of good, supporting and advising them when needed.",
+    "relations": "Often paired with another Fidele Angel, emphasizing themes of loyalty and devotion.",
+    "environment": "Typically found in celestial realms or places of goodness and order.",
+    "strengths": "Exceptional physical and magical capabilities, immune to certain damage types, and magic resistance.",
+    "weaknesses": "Relies on its mate and has limited mobility when grounded.",
+    "attacks": "Capable of dealing slashing damage with its Longsword and Talons, and radiant damage with its Radiant Bolt.",
+    "most_powerful_ability": "Ever Connected: shares damage taken with its paired angel, symbolizing their bond.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 16, indicating good awareness and detection skills.",
+    "skills": "Proficient in Insight and Perception, allowing it to understand motives and notice hidden details.",
+    "additional_information": [
+        "Immortal Nature: does not require food or sleep.",
+        "Can change shape to adapt to different situations.",
+        "Magic Weapons: can bypass many resistances with its attacks.",
+        "Can teleport to its mate regardless of distance.",
+        "Cast useful spells without needing material components."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": "Can cast spells like bless, cure wounds, and daylight, providing support to allies.",
+    "test_queries": [
+        "celestial protector with strong loyalty",
+        "winged angel that shares damage",
+        "powerful angel with healing spells",
+        "angel that can teleport to its mate",
+        "devoted celestial being immune to charm"
+    ]
+}

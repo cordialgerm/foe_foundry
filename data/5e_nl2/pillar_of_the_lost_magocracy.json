@@ -1,0 +1,55 @@
+{
+    "name": "Pillar of the Lost Magocracy",
+    "creature_type": "Construct",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 0 ft.",
+    "role": "Artillery",
+    "tags": [
+        "guardian",
+        "construct",
+        "magic",
+        "lightning"
+    ],
+    "adjectives": [
+        "huge",
+        "chaotic",
+        "magical",
+        "resilient"
+    ],
+    "description": "The Pillar of the Lost Magocracy is a massive construct with formidable magical powers, characterized by chaotic energies and a mystical appearance.",
+    "memorable": "It can unleash a variety of devastating magical effects, manipulating its environment in unpredictable ways.",
+    "goals": "To guard its domain and impede intruders using clever magical defenses.",
+    "relations": "It may be found in the company of other constructs or magical beings seeking to protect arcane secrets.",
+    "environment": "Typically inhabits ancient magical ruins or forgotten places steeped in arcane energy.",
+    "strengths": "High magical control over the battlefield and immunity to various conditions.",
+    "weaknesses": "Low Dexterity leading to limited physical movement and inability to dodge attacks.",
+    "attacks": "Uses its magical abilities to unleash area effects like grasping tendrils, acid rain, and obscuring clouds.",
+    "most_powerful_ability": "Anger of the Ancient Mage allows for a variety of significant magical attacks on targets within range.",
+    "senses": "Possesses darkvision out to 120 feet but has a low passive perception of 9.",
+    "skills": "Proficient in arcana and history, leveraging high Intelligence to gain advantage on these checks.",
+    "additional_information": [
+        "Immunities to poison and many debilitating conditions",
+        "Mental Agility allows it to influence initiative despite low Dexterity",
+        "Shocking Vengeance punishes melee attackers with lightning damage",
+        "Can restrain enemies with plant-based magic",
+        "Incapable of physical movement but excels in magical control"
+    ],
+    "damage_types": [
+        "lightning",
+        "acid",
+        "poison"
+    ],
+    "spellcasting": "Can unleash a variety of magical effects that control the battlefield.",
+    "test_queries": [
+        "huge construct with powerful magical attacks",
+        "magical guardian that punishes melee attackers",
+        "chaotic magical pillar with acid effects",
+        "pillar with grasping plants and obscuring mist",
+        "lightning dealing construct in ancient ruins"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Agnibarra",
+    "queries": [
+        {
+            "query": "small fiery monster with high hit points and cold vulnerability",
+            "variant": "small fire creature with cold weaknesses and lots of hit points"
+        },
+        {
+            "query": "creature that deals fire damage and ignites flammable objects",
+            "variant": "monster that can ignite flammable things and inflicts fire damage"
+        },
+        {
+            "query": "chaotic neutral monster that sheds light and has fire abilities",
+            "variant": "neutral chaos creature that gives off light and has fire powers"
+        },
+        {
+            "query": "monster immune to fire and able to torch its enemies",
+            "variant": "creature immune to fire that can set enemies ablaze"
+        },
+        {
+            "query": "small monstrosity that can spit fire and has a burning claw attack",
+            "variant": "tiny monstrosity that uses spit fire and has a burning claw ability"
+        }
+    ]
+}

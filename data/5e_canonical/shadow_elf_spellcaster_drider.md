@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Elf Spellcaster Drider</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>114</HP>
 <summary>The Shadow Elf Spellcaster Drider is a large monstrosity that blends the traits of a drider, typically a drow turned into a spider-like creature, with spellcasting abilities reminiscent of its shadow elf heritage. This creature has a robust defensive capability with an Armor Class of 17 and considerable hit points totaling 114, making it a durable opponent in combat. Its primary strengths include its agility, indicated by a Dexterity score of 16, and its potent Wisdom of 16, allowing it to effectively utilize spellcasting while maintaining significant physical damage output. Nevertheless, it is vulnerable to sunlight, suffering disadvantage on attack rolls and perception checks when exposed. With a Challenge Rating of 6, it poses a serious challenge but can be matched by diligent adventurers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ This combination of physical prowess, spellcasting abilities, and strategic move
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Elf Spellcaster Drider
 
 *Large* *Monstrosity*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Web (2nd-Level; V, S, Concentration):** Thick  sticky webs fill a 20-foot cube within 60 feet  lightly obscuring it and making it difficult terrain. The webs must either be anchored between two solid masses (such as walls) or layered 5 feet deep over a flat surface. Each creature that starts its turn in the webs or that enters them during its turn makes a DC 14 Dexterity saving throw. On a failure  it is restrained. A creature can escape by using an action to make a DC 14 Strength check. Any 5-foot cube of webs exposed to fire burns away in 1 round  dealing 5 (2d4) fire damage to any creature that starts its turn in the fire. The webs remain for 1 minute.
 
 
+</statblock>
 
 

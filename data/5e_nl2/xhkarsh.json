@@ -1,0 +1,51 @@
+{
+    "name": "Xhkarsh",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 171,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "telepathic",
+        "manipulative",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "insidious",
+        "formidable"
+    ],
+    "description": "A formidable Large Aberration with a keen intellect, sleek form, and natural armor providing a tough challenge.",
+    "memorable": "Its ability to manipulate the fates of its targets through magical corruption makes it a uniquely dangerous opponent.",
+    "goals": "To corrupt creatures and manipulate them for long-term schemes.",
+    "relations": "Related to other aberration creatures and might serve as a master to corrupted beings.",
+    "environment": "Can be found in diverse environments, as it does not require traditional sustenance.",
+    "strengths": "Exceptional Dexterity enhances its stealth and agility, enabling it to ambush effectively.",
+    "weaknesses": "Dependence on specific conditions for powering its abilities can be a tactical vulnerability.",
+    "attacks": "Multiattack includes two Claw attacks dealing slashing and poison damage and one Fate-Altering Stinger attack that corrupts the target's fate.",
+    "most_powerful_ability": "Corruption's Bond allows telepathic communication with corrupted creatures over any distance, even across planes.",
+    "equipment": null,
+    "senses": "Possesses tremorsense that allows it to track foes effectively in various conditions.",
+    "skills": "Highly skilled in Insight and Perception with proficiency in Stealth, enabling it to ambush effectively.",
+    "additional_information": [
+        "Can turn invisible until it attacks, offering a tactical advantage.",
+        "Can compel corrupted beings to perform tasks using the geas spell.",
+        "Does not require air, food, drink, sleep, or ambient pressure."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "manipulative creature that communicates telepathically",
+        "cunning large aberration that can turn invisible",
+        "creature that corrupts fates and inflicts poison damage",
+        "tactical monster with stealth and telepathy abilities",
+        "monster with special abilities for controlling others"
+    ]
+}

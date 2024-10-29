@@ -1,0 +1,50 @@
+{
+    "name": "Seahorse",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 11,
+    "srd": false,
+    "cr": "0",
+    "movement": "swim 20 ft., cannot move on land",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "tiny",
+        "beast"
+    ],
+    "adjectives": [
+        "fragile",
+        "stealthy",
+        "adapted to water"
+    ],
+    "description": "A tiny aquatic creature with unique adaptations for underwater living, capable of swimming but not moving on land.",
+    "memorable": "Exceptional at camouflage while submerged, making it difficult for predators to detect.",
+    "goals": "Survive in aquatic habitats and evade predation.",
+    "relations": "Often found in marine ecosystems, may reside among seaweed or coral.",
+    "environment": "Aquatic environments such as oceans, seas, or coral reefs.",
+    "strengths": "Camouflaged underwater, can breathe water.",
+    "weaknesses": "Very low hit points, weak physical attributes, cannot survive outside water.",
+    "attacks": "Melee attack called 'Ram' dealing minimal bludgeoning damage.",
+    "most_powerful_ability": "Water Breathing, allowing it to breathe only underwater.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Not a combatant, primarily serves as a whimsical representation of marine life.",
+        "Low strength and intelligence scores reflect lack of physical power and cognitive ability.",
+        "Stealth score of 17 while submerged enhances its survival tactics.",
+        "Natural armor provides minimal protection but is still quite fragile.",
+        "Plays a role in adding flavor to aquatic ecosystems in campaigns."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fragile aquatic creature",
+        "stealthy underwater creature with water breathing",
+        "camouflaged seahorse found in coral reefs",
+        "minuscule marine beast with ram attack",
+        "creature that can only breathe water"
+    ]
+}

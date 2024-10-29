@@ -1,0 +1,25 @@
+{
+    "name": "Iceworm",
+    "queries": [
+        {
+            "query": "small cold monster that can swim and burrow",
+            "variant": "small chilly monster that can swim and burrow"
+        },
+        {
+            "query": "creature that becomes exhausted in warm temperatures and has cold damage abilities",
+            "variant": "being that gets tired in hot temp and has cold attacks"
+        },
+        {
+            "query": "monster with icy attacks that thrives in icy terrains",
+            "variant": "creature with frost attacks that flourishes in cold environments"
+        },
+        {
+            "query": "ice monster that is vulnerable to fire and has a slippery nature",
+            "variant": "frosty creature that is weak against fire and has a slippery quality"
+        },
+        {
+            "query": "amphibious creature that can sense warm-blooded beings and has disadvantages near heat",
+            "variant": "water and air creature that can locate warm-blooded enemies and has weaknesses near heat"
+        }
+    ]
+}

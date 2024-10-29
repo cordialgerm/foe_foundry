@@ -1,0 +1,25 @@
+{
+    "name": "Asanbosam",
+    "queries": [
+        {
+            "query": "large creature that excels in ambush tactics and can climb walls",
+            "variant": "big monster that is great at ambushing and can climb surfaces"
+        },
+        {
+            "query": "sinister looking aberration known for its disease-spreading bite",
+            "variant": "evil looking aberration famous for spreading diseases with its bite"
+        },
+        {
+            "query": "ambush predator with a strong Grapple attack and poison ability",
+            "variant": "predator that ambushes and has a powerful grapple move plus poison"
+        },
+        {
+            "query": "creature that thrives in trees and has stealth capabilities",
+            "variant": "monster that lives in trees and is good at staying hidden"
+        },
+        {
+            "query": "Asanbosam's unique ability to climb and stealth attacks",
+            "variant": "Asanbosam's special skill of climbing and stealthy attacks"
+        }
+    ]
+}

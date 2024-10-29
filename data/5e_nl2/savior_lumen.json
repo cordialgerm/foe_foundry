@@ -1,0 +1,59 @@
+{
+    "name": "Savior Lumen",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 ft. walk, 20 ft. burrow, 50 ft. fly, 30 ft. swim",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "amphibious",
+        "magic resistant",
+        "support"
+    ],
+    "adjectives": [
+        "formidable",
+        "supportive",
+        "chaotic"
+    ],
+    "description": "A large celestial being that manipulates light, characterized by its ability to emit bright light and alter memories. It is amphibiotic, able to adapt to both air and water environments.",
+    "memorable": "Its ability to force enemies to perceive it as mere glowing lights can disorient foes and change the dynamics of combat.",
+    "goals": "To support allies and manipulate light and perception in battle.",
+    "relations": "Often found alongside other good-aligned creatures and allies of the celestial realm.",
+    "environment": "Can be found in divine realms, near bodies of water, or places of light and positivity.",
+    "strengths": "Immune to poison and several debilitating conditions; possesses magic resistance and strong mobility options.",
+    "weaknesses": "Vulnerable to certain magical effects despite its spells resistance.",
+    "attacks": "Can unleash a Flurry of Tools for multi-type melee damage and has a Dismantle action for utility outside combat.",
+    "most_powerful_ability": "Fleeting Memory, which can confuse and disorient targets by altering their perception of the Savior Lumen.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, making it relatively aware of its surroundings.",
+    "skills": "Proficient in perception, enhancing its awareness and ability to notice hidden threats.",
+    "additional_information": [
+        "Emits bright light in a 20-foot radius, providing illumination during combat.",
+        "Does not require food, drink, or sleep, allowing for continuous activity.",
+        "Can occupy another creature's space for versatile movement.",
+        "Can treat itself as a single large creature for carrying capabilities.",
+        "Can cast a variety of spells without requiring material components."
+    ],
+    "damage_types": [
+        "acid",
+        "bludgeoning",
+        "cold",
+        "fire",
+        "piercing",
+        "radiant",
+        "slashing"
+    ],
+    "spellcasting": "Can cast spells like Floating Disk, Mending, and Spare the Dying at will, along with Gentle Repose, Knock, and Sending three times per day.",
+    "test_queries": [
+        "powerful celestial with light manipulation",
+        "amphibious celestial that supports allies",
+        "creature that alters memories in combat",
+        "large light-emitting celestial in aquatic environments",
+        "magic-resistant celestial with unique abilities"
+    ]
+}

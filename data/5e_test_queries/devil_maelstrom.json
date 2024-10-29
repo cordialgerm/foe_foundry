@@ -1,0 +1,25 @@
+{
+    "name": "Devil, Maelstrom",
+    "queries": [
+        {
+            "query": "fiend that controls the weather and has high hit points",
+            "variant": "creature with high health that manipulates weather and is a fiend"
+        },
+        {
+            "query": "large lawful evil monster with cold and lightning immunity",
+            "variant": "big evil fiend immune to cold and lightning damage"
+        },
+        {
+            "query": "creature with darkvision and can alter precipitation",
+            "variant": "being with 120 ft darkvision that can change the rain"
+        },
+        {
+            "query": "monster with powerful claw attacks and magical resistance",
+            "variant": "creature with strong claw attacks and resistance to magic"
+        },
+        {
+            "query": "Maelstrom Devil abilities and combat tactics in stormy terrain",
+            "variant": "abilities of the Maelstrom Devil and its tactics when in a storm"
+        }
+    ]
+}

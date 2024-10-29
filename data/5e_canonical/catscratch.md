@@ -1,6 +1,8 @@
 <MonsterName/>Catscratch</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The Catscratch is a huge aberration embodying chaotic evil, serving as a formidable opponent in any Dungeons and Dragons campaign. With a Challenge Rating of 3, it presents a significant threat to low- to mid-level parties. The Catscratch relies on its physical prowess—recording a Strength score of 18, yielding a +4 modifier, which is considered very good. Its Dexterity of 14 provides a +2 modifier, resulting in a good level of agility, while its Constitution score of 17 grants it a +3 modifier, ensuring a solid amount of hit points with a total of 76, calculated as 8d12+24. While its mental attributes are notably weak, particularly with an Intelligence score of 3 (-4 modifier, which is very bad), the Catscratch compensates with its enhanced physical capabilities, speed, and special abilities that allow it to sustain itself in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Catscratch combines resilience, mobility, and a set of dangerous at
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Catscratch
 
 *Huge* *Aberration* *chaotic evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Vomit (Recharge 5-6):** The catscratch vomits poisonous bile in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 10 (3d6) poison damage on a failed save or half as much damage on a successful one. A felid or feline humanoid that fails this saving throw contracts catscratch fugue.
 
 
+</statblock>
 
 

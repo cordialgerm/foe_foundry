@@ -1,0 +1,50 @@
+{
+    "name": "Bone Colossus",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 181,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "Walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "gargantuan",
+        "swarm",
+        "siege"
+    ],
+    "adjectives": [
+        "massive",
+        "intimidating",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Bone Colossus is a gargantuan undead creature with an imposing presence, consisting of large bone fragments and animated with chaotic evil energy.",
+    "memorable": "Its ability to split into four smaller swarms and communicate telepathically via a hive mind creates a convoluted and dangerous battlefield.",
+    "goals": "To dominate the battlefield and create chaos through its swarm abilities and overwhelming force.",
+    "relations": "Can be encountered alongside other undead or creatures that serve chaotic forces.",
+    "environment": "Often found in areas of conflict or destruction, where it can serve as a siege engine.",
+    "strengths": "High hit points and damage resistance, including immunity to necrotic and poison damage, making it resilient.",
+    "weaknesses": "Average Dexterity results in a moderate ability to evade attacks, and its Intelligence can drop significantly when injured.",
+    "attacks": "Employs a devastating Thunderous Slam attack dealing bludgeoning and thunder damage, and its swarm form utilizes razor teeth.",
+    "most_powerful_ability": "Swarm Form allows it to split into four smaller swarms that can attack independently, significantly complicating combat for opponents.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 18, indicating keen awareness.",
+    "skills": "Has proficiency in intimidation and perception, allowing it to instill fear and detect threats effectively.",
+    "additional_information": [
+        "Immunities to several disabling effects including charmed and frightened.",
+        "Can deal double damage to objects and structures.",
+        "Gains advantage on saving throws against effects that turn undead."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive undead creature with swarm abilities",
+        "gargantuan bone monster in combat",
+        "chaotic evil undead giant",
+        "powerful siege undead",
+        "interactive swarm dynamics in battle"
+    ]
+}

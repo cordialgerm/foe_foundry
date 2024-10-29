@@ -1,0 +1,25 @@
+{
+    "name": "Yaga Goo",
+    "queries": [
+        {
+            "query": "small ooze that teleports and leaves puddles of necrotic damage",
+            "variant": "small goo that leaves necrotic puddles and can teleport"
+        },
+        {
+            "query": "ambush creature with high dexterity and necrotic attack",
+            "variant": "high dexterity ambush monster with necrotic damage"
+        },
+        {
+            "query": "elusive ooze that is deadly to fey creatures",
+            "variant": "tricky ooze that is dangerous for fey creatures"
+        },
+        {
+            "query": "agile ooze that uses stealth and has an amorphous form",
+            "variant": "stealthy goo that has an amorphous ability and is agile"
+        },
+        {
+            "query": "necrotic damage ooze that has blindsight and immunity to conditions",
+            "variant": "goo with immunity to conditions and necrotic attacks; also has blindsight"
+        }
+    ]
+}

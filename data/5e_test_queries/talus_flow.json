@@ -1,0 +1,25 @@
+{
+    "name": "Talus Flow",
+    "queries": [
+        {
+            "query": "elemental creature that can hide as a pile of rocks and knocks enemies prone",
+            "variant": "creature that is an elemental and hides as a rock pile, knocking foes down"
+        },
+        {
+            "query": "large neutral evil rock creature with thunder vulnerabilities",
+            "variant": "big evil elemental made of rocks that takes more damage from thunder"
+        },
+        {
+            "query": "monster with natural armor that can ambush from rocky terrain",
+            "variant": "creature with high natural armor that ambushes in rocky areas"
+        },
+        {
+            "query": "Talus Flow abilities for surprising opponents and controlling space",
+            "variant": "abilities of Talus Flow to surprise enemies and control battlefield"
+        },
+        {
+            "query": "battlefield controlling elemental with good slam attacks",
+            "variant": "elemental that controls the battlefield well and has strong slam attacks"
+        }
+    ]
+}

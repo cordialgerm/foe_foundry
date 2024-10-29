@@ -1,0 +1,50 @@
+{
+    "name": "Octopus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 3,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "swim 30 ft., walk 5 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "stealth",
+        "camouflage"
+    ],
+    "adjectives": [
+        "intelligent",
+        "crafty",
+        "curious"
+    ],
+    "description": "A small sea creature with eight tentacles lined with suction cups, known for its ability to camouflage itself in underwater environments.",
+    "memorable": "Its use of an ink cloud to obscure itself from predators and escape quickly makes it a unique survivor in the ocean.",
+    "goals": "Typically hunts small fish and crustaceans in shallow coastal waters.",
+    "relations": "May share habitats with other aquatic creatures and could be preyed upon by larger marine animals.",
+    "environment": "Found in shallow coastal waters, thriving in aquatic settings.",
+    "strengths": "Exceptional underwater camouflage and the ability to breathe only underwater, allowing it to evade predators effectively.",
+    "weaknesses": "Low hit points and weak physical strength make it vulnerable in combat situations.",
+    "attacks": "Uses tentacles to grasp and grapple targets, dealing minor bludgeoning damage.",
+    "most_powerful_ability": "The Ink Cloud ability allows it to obscure its surroundings for a minute, providing crucial cover to escape.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 30 feet, enabling it to see in dim light as if it were bright.",
+    "skills": "Has a good stealth skill score of +4, allowing it to avoid detection effectively while underwater.",
+    "additional_information": [
+        "Can hold its breath for 30 minutes while out of water.",
+        "Highly effective at escaping due to its water-based abilities.",
+        "Grapples medium-sized or smaller creatures to limit their movement.",
+        "Incredibly curious and crafty, often displaying problem-solving abilities when in captivity.",
+        "Utilizes its dexterity for stealth, making it a master of evasion in its natural environment."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small sea creature with tentacles",
+        "octopus that uses ink to escape",
+        "stealthy creature living in shallow water",
+        "intelligent beast that can camouflage",
+        "tiny aquatic creature with grappling ability"
+    ]
+}

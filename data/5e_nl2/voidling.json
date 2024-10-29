@@ -1,0 +1,55 @@
+{
+    "name": "Voidling",
+    "creature_type": "Aberration",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 180,
+    "ac": 15,
+    "srd": false,
+    "cr": "11",
+    "movement": "fast, with a movement speed of 50 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "necrotic",
+        "darkness",
+        "stealth",
+        "resilient"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "adaptable",
+        "formidable"
+    ],
+    "description": "The Voidling is a large aberration characterized by its ability to thrive in dim environments, showcasing features that emphasize its connection to darkness and shadow.",
+    "memorable": "It possesses Darkness Regeneration, regaining hit points in dim light, and truesight, allowing it to see through darkness.",
+    "goals": "It likely aims to instill fear and chaos in its surroundings while using necrotic abilities to subdue enemies.",
+    "relations": "May be encountered alongside other dark creatures or serve a greater evil force.",
+    "environment": "Prefers areas devoid of light where its abilities are enhanced.",
+    "strengths": "High mobility, good attack options, immunity to necrotic damage, and resistance against spells.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Uses Shadow Tendril for melee damage augmented by necrotic energy and Necrotic Bolt as a powerful ranged attack.",
+    "most_powerful_ability": "Shadow\u2019s Grasp allows it to restrain multiple enemies and deal significant necrotic damage.",
+    "equipment": null,
+    "senses": "It has truesight up to 60 feet, enabling it to see through normal and magical darkness.",
+    "skills": "It has a notable proficiency in Stealth, making it an elusive foe.",
+    "additional_information": [
+        "Immune to conditions like exhaustion and petrification.",
+        "Does not require air, food, drink, or sleep.",
+        "Regains hit points in dim light or darkness.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Possesses average Intelligence and Charisma, indicating potential for strategic thinking."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large shadow monster with necrotic powers",
+        "stealthy creature that regenerates in darkness",
+        "chaotic evil monster with truesight",
+        "necrotic damage dealing aberration",
+        "powerful creature that constrains enemies with shadows"
+    ]
+}

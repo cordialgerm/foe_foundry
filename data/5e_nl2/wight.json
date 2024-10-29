@@ -1,0 +1,53 @@
+{
+    "name": "Wight",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "necromancer servant",
+        "life-draining"
+    ],
+    "adjectives": [
+        "malevolent",
+        "intelligent",
+        "cold"
+    ],
+    "description": "A Wight is an undead creature driven by hatred and malice, often serving dark powers or necromancers. It retains the intelligence it had in life, twisted by death and dark magic. Wights are skilled combatants, often wielding weapons from their life.",
+    "memorable": "Wights can drain the life force from the living, raising them as zombies under their control.",
+    "goals": "To corrupt the living and serve dark masters.",
+    "relations": "Often found in the company of other undead, such as skeletons and zombies.",
+    "environment": "Dark and ominous locations.",
+    "strengths": "Resilient to cold and necrotic damage and has leadership capabilities over undead.",
+    "weaknesses": "Disadvantage on attacks and perception checks in sunlight.",
+    "attacks": "Uses a longsword or longbow to deal slashing or piercing damage, also capable of draining life with a necrotic touch.",
+    "most_powerful_ability": "Life Drain attack reduces the target's hit point maximum and can raise slain enemies as zombies under its control.",
+    "equipment": null,
+    "senses": "Has darkvision to see in dim light as if it were bright light.",
+    "skills": "Proficient in Stealth for ambushing and Perception to notice hidden threats.",
+    "additional_information": [
+        "Can create an army of undead from its victims.",
+        "Immune to poison and exhaustion.",
+        "Cold Aura inflicts damage to attackers in close range.",
+        "Martial Adept ability maximizes damage from weapon attacks.",
+        "Undead Nature removes the need for air, food, or sleep."
+    ],
+    "damage_types": [
+        "necrotic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that raises zombies",
+        "dark creature with life-draining touch",
+        "undead that is weaker in sunlight",
+        "intelligent undead monster commanding minions",
+        "cold damage dealing creature in dark places"
+    ]
+}

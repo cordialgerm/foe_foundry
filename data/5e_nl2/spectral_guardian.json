@@ -1,0 +1,55 @@
+{
+    "name": "Spectral Guardian",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spectral",
+        "guardian",
+        "haunting"
+    ],
+    "adjectives": [
+        "spectral",
+        "formidable",
+        "haunting",
+        "necrotic"
+    ],
+    "description": "The Spectral Guardian is a ghostly figure bound to locations of past disgrace, known for its eerie presence in tombs and ruins.",
+    "memorable": "It can instill fear in foes while tethered to a location, teleporting back if it strays too far.",
+    "goals": "To protect its bound location from intruders and avenge its past disgrace.",
+    "relations": "Often encountered with other undead or in locations tied to its past.",
+    "environment": "Tombs, ruins, and places associated with its disgrace.",
+    "strengths": "High Dexterity and Charisma enhance its evasiveness and fear-inducing capabilities.",
+    "weaknesses": "Very low Strength limits its effectiveness in physical confrontations.",
+    "attacks": "Utilizes a multiattack with spectral blades, dealing slashing and necrotic damage, and can instill fear.",
+    "most_powerful_ability": "The Disgrace Bound ability restricts movement, anchoring it to a specific location.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 ft. allows it to detect nearby creatures without sight.",
+    "skills": "High Dexterity saving throws provide effective evasion against physical attacks.",
+    "additional_information": [
+        "Immunities to cold, necrotic, and poison damage.",
+        "Resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+        "Can pass through solid objects with Incorporeal Movement.",
+        "Spellcasting abilities focus on fear and manipulation.",
+        "Can reduce targets' hit point maximum by inflicting necrotic damage."
+    ],
+    "damage_types": [
+        "necrotic",
+        "force"
+    ],
+    "spellcasting": "Can cast spells like Dancing Lights, Fog Cloud, and Minor Illusion at will; Fear and Slow three times a day; Arcane Hand once per day.",
+    "test_queries": [
+        "guardian of tombs and ruins",
+        "haunting spectral protector with fear abilities",
+        "undead creature that instills fear and hinders",
+        "spectral guardian with necrotic attacks",
+        "powerful undead that can teleport back home"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Flinderbeast",
+    "creature_type": "Fey",
+    "alignment": "null",
+    "size": "Small",
+    "hp": 38,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking, 20 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "agile",
+        "cunning"
+    ],
+    "adjectives": [
+        "small",
+        "quick",
+        "tricky"
+    ],
+    "description": "The Flinderbeast is a small, agile creature with a fey appearance, capable of quick movements and attacks. It possesses specialized abilities and heightened senses, making it a cunning predator in its environment.",
+    "memorable": "The Flinderbeast can catch ammunition and gain temporary hit points, showcasing its cleverness and adaptability in combat.",
+    "goals": "To outmaneuver opponents and serve as an adversary in its domain.",
+    "relations": "Related to other fey creatures and often encountered in woodland areas.",
+    "environment": "Typically found in forests or areas with natural cover.",
+    "strengths": "High Dexterity enhances attack rolls and evasiveness; resistant to charm and unconsciousness.",
+    "weaknesses": "Low Constitution makes it vulnerable to effects that target stamina.",
+    "attacks": "Utilizes a bite attack for piercing damage, acid spit for long-range acid damage, and a powerful cone attack of splinters.",
+    "most_powerful_ability": "Breath of Flinders, allowing it to exhale splinters in an area for significant damage.",
+    "equipment": null,
+    "senses": "Enhanced perception with hearing and smell, increasing effectiveness in stealth detection.",
+    "skills": "Stealth proficient, allowing it to remain hidden from potential threats.",
+    "additional_information": [
+        "Capable of teleporting short distances with Short Step.",
+        "Can consume ranged wooden projectiles for temporary hit points.",
+        "Strong against charm and unconsciousness effects.",
+        "Utilizes speed and agility to outmaneuver opponents.",
+        "Relies on its environment for cover and ambush tactics."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile fey monster with acid attacks",
+        "creature that teleports and resists charm",
+        "wooden projectile catching fey creature",
+        "splinter breathing forest ambusher",
+        "quick mountain-dwelling fey foe"
+    ]
+}

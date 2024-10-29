@@ -1,0 +1,25 @@
+{
+    "name": "Foxfire Ooze",
+    "queries": [
+        {
+            "query": "large ooze that has a deadly lightning attack and is vulnerable to cold",
+            "variant": "big ooze with a dangerous lightning ability that is weak against cold"
+        },
+        {
+            "query": "slow large creature that can climb walls and absorbs lightning damage",
+            "variant": "slow big monster able to scale walls and absorbs damage from lightning"
+        },
+        {
+            "query": "creature immune to fire and acidic attacks but vulnerable to cold damage",
+            "variant": "monster resistant to fire and acid but has a weakness to cold damage"
+        },
+        {
+            "query": "ambush predator that can squeeze through tight spaces and has high hit points",
+            "variant": "ambushing creature able to fit in small areas and has a lot of hit points"
+        },
+        {
+            "query": "blindsight ooze that surprises foes and deals bludgeoning damage",
+            "variant": "blind monster that catches enemies off guard and does bludgeoning damage"
+        }
+    ]
+}

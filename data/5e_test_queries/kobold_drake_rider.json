@@ -1,0 +1,25 @@
+{
+    "name": "Kobold, Drake Rider",
+    "queries": [
+        {
+            "query": "small humanoid creature with a drake mount that excels in tactical combat",
+            "variant": "humanoid creature riding a drake, skilled in tactics"
+        },
+        {
+            "query": "kobold drake rider abilities and sunlight sensitivity in combat",
+            "variant": "abilities of kobold ride drake and effects of sunlight on combat"
+        },
+        {
+            "query": "creature that uses a spear and has a mounted combat style",
+            "variant": "rider that fights with a spear and uses mounts in combat"
+        },
+        {
+            "query": "humanoid with darkvision that is affected by sunlight and has a drake",
+            "variant": "humanoid creature with darkvision and sunlight weakness riding a drake"
+        },
+        {
+            "query": "creature with a sure seat ability and trained tactics for mounted combat",
+            "variant": "rider who has sure seat skill and tactical maneuvers for a mount"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Emperor’s Hyena</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Emperor’s Hyena is a formidable medium-sized undead creature with a neutral evil alignment, renowned for its aggressive nature and ability to manipulate the battlefield. With an Armor Class of 14, it possesses a solid defense due to its natural armor, while boasting a substantial pool of hit points totaling 91, derived from 14d8+28, which indicates it can endure significant damage before being defeated. It has a brisk movement speed of 50 feet, allowing it to engage or disengage effectively in combat. With a Challenge Rating of 4, it presents a considerable threat, earning 1,100 XP for those who manage to overcome it. This creature thrives in packs, leveraging its special abilities to create a chaotic environment, making it a notable adversary in any encounter.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Emperor’s Hyena can perform a **Multiattack**, allowi
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Emperor’s Hyena
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Black Breath (Recharge 5-6):** The emperor’s hyena breathes a 15-foot cone of noxious black vapor. Each creature in the area that isn’t an undead or a construct must make a DC 12 Constitution saving throw, taking 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the creature gains one level of exhaustion. This exhaustion lasts until the creature finishes a short or long rest.
 
 
+</statblock>
 
 

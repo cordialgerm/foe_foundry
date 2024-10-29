@@ -1,0 +1,51 @@
+{
+    "name": "Bandit Lord",
+    "creature_type": "Humanoid",
+    "alignment": "Any Non-Lawful Alignment",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "bandit",
+        "leader",
+        "strategist"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "tactical"
+    ],
+    "description": "The Bandit Lord is a robust humanoid clad in a breastplate, wielding a longsword and dagger. Its notable physical presence is emphasized by strong muscles and a commanding stance.",
+    "memorable": "A skilled combatant and tactical leader, capable of coordinating bandit groups effectively in battle.",
+    "goals": "To lead bandit raids and control territory through strength and strategy.",
+    "relations": "Often leads other bandits into battle and may serve under more powerful criminals or warlords.",
+    "environment": "Commonly found in forests, mountains, and areas where banditry thrives.",
+    "strengths": "Possesses strong melee combat abilities enhanced by pack tactics and brute damage output.",
+    "weaknesses": "Moderate wisdom and charisma may hinder its ability to strategize against insightful opponents.",
+    "attacks": "Utilizes a multiattack strategy with a longsword and a dagger, dealing significant slashing and piercing damage.",
+    "most_powerful_ability": "Leadership ability enhances ally's attack rolls and saving throws, amplifying group effectiveness.",
+    "equipment": "Longsword and dagger.",
+    "senses": "Passive perception of 10 indicates average awareness.",
+    "skills": "Skilled in athletics, deception, and intimidation, reflecting its role as a combat leader.",
+    "additional_information": [
+        "Can give commands to allies through Leadership.",
+        "Gains advantage on attacks with Pack Tactics when allies are nearby.",
+        "Uses Parry to defend against melee attacks.",
+        "Shifts behind allies to divert attacks, showcasing tactical acumen.",
+        "Known for gathering groups of bandits for raids."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning bandit leader character",
+        "formidable humanoid with tactical abilities",
+        "bandit lord that boosts allies in combat",
+        "strong melee combatant with leadership skills",
+        "medium humanoid in breastplate armor"
+    ]
+}

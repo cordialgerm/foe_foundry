@@ -1,0 +1,51 @@
+{
+    "name": "Bearing Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 30 feet",
+    "role": "Ambusher",
+    "tags": [
+        "golem",
+        "construct",
+        "ambush",
+        "scatter"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "independent"
+    ],
+    "description": "The Bearing Golem resembles a collection of ball bearings that can scatter and reform, with a sleek, metallic appearance that belies its agility and stealth.",
+    "memorable": "Its ability to reform and scatter creates unique tactical opportunities in combat, allowing it to evade attacks and surprise opponents.",
+    "goals": "Typically acts as a sentinel or trap, making it useful in guarding locations or ambushing unsuspecting intruders.",
+    "relations": "It may be created and controlled by a skilled artisan or wizard familiar with construct crafting.",
+    "environment": "Commonly found in cleverly designed areas, such as workshops or places where traps are set.",
+    "strengths": "Immunity to many conditions and damage types, excellent stealth capabilities, and a unique ability to scatter and reform.",
+    "weaknesses": "Vulnerable to adamantine weapons for piercing, slashing, and bludgeoning damage.",
+    "attacks": "Can perform multiattacks with slam attacks or fire Steel Shot, delivering significant bludgeoning damage.",
+    "most_powerful_ability": "Scattershot ability detonation can wreak havoc on opponents near it, dealing massive damage and knocking them prone.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and tremorsense up to 30 feet, allowing it to detect movement and presence in its vicinity.",
+    "skills": "Skilled in Stealth and Perception, making it highly effective in ambush situations.",
+    "additional_information": [
+        "Can create an effective area control situation using its Scatter ability.",
+        "Has advantage on attack rolls against surprised creatures.",
+        "Its immutable form provides resilience in the face of magic.",
+        "It can hide in plain sight among ball bearings when it scatters.",
+        "Regenerates its cohesive form even after taking damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile construct that can scatter",
+        "ambush trap mechanism",
+        "metal ball bearing golem",
+        "construct with stealth abilities",
+        "golem with area control attacks"
+    ]
+}

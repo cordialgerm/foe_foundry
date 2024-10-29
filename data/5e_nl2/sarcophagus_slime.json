@@ -1,0 +1,52 @@
+{
+    "name": "Sarcophagus Slime",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 11,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 feet speed with ability to move through narrow spaces",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "slime",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "menacing",
+        "formidable",
+        "poison-immune"
+    ],
+    "description": "The Sarcophagus Slime is a menacing blob-like creature with a dark and slimy appearance, able to move effortlessly through narrow spaces. Its presence radiates a threat to those nearby.",
+    "memorable": "It can drain the life force of its victims and possibly resurrect them as a Sarcophagus Slime.",
+    "goals": "To instill fear and weaken its enemies' vitality.",
+    "relations": "Could be found with other undead creatures or in tombs and crypts.",
+    "environment": "Typically found in dark, necrotic environments like burial sites or ruins.",
+    "strengths": "High hit points and the ability to inflict fear and necrotic damage.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Utilizes a multiattack feature combining fear-inducing presence and damaging slam attacks.",
+    "most_powerful_ability": "Corrupting Gaze, which inflicts necrotic damage and reduces the target's hit point maximum.",
+    "senses": "Blindsight up to 60 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Proficient in Stealth, making it effective at ambush tactics.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep",
+        "Can frighten creatures to control the battlefield",
+        "Damage from Corrupting Gaze has lasting effects on victims",
+        "Resurrects slain humanoids as Sarcophagus Slimes after 24 hours",
+        "Possesses exceptional Constitution for resilience"
+    ],
+    "damage_types": [
+        "necrotic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead blob that drains vitality",
+        "creature that instills fear and reduces health",
+        "slime monster with necrotic powers",
+        "undead slime that can resurrect slain foes",
+        "creature that can move through narrow spaces easily"
+    ]
+}

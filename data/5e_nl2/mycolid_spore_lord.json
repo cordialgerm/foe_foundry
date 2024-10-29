@@ -1,0 +1,54 @@
+{
+    "name": "Mycolid Spore Lord",
+    "creature_type": "Plant",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "slow movement speed of 15 feet",
+    "role": "Controller",
+    "tags": [
+        "spore",
+        "toxic",
+        "telepathy",
+        "area control"
+    ],
+    "adjectives": [
+        "strategic",
+        "poisonous",
+        "supportive",
+        "slow"
+    ],
+    "description": "The Mycolid Spore Lord is a Medium plant creature surrounded by dense mushrooms and rot, utilizing a ranged attack and toxic spores to control the battlefield.",
+    "memorable": "Notable for its ability to inflict poison damage and create hazardous areas with its spore attacks, while also supporting allied mycolids through telepathy.",
+    "goals": "To control areas and incapacitate enemies using poison, while supporting other mycolids in combat.",
+    "relations": "Often found in the company of other mycolids, it can establish a telepathic connection with them.",
+    "environment": "Typically manifests in environments rich in fungi and decay, like swamps or dense forests.",
+    "strengths": "Capable of area control through toxic effects and can provide healing to itself from carrion.",
+    "weaknesses": "Slow movement speed limits its mobility in combat, and it cannot communicate verbally.",
+    "attacks": "Utilizes its Fungal Staff for melee attacks and Hurl Sap as a ranged tactic, alongside dangerous area abilities like Mushroom Ring and Slumber Spores.",
+    "most_powerful_ability": "The Mushroom Ring ability creates a hazardous area, inflicting significant poison damage while granting temporary hit points to mycolids.",
+    "equipment": null,
+    "senses": "Possesses a keen sense within a radius of 120 feet for detecting creatures or items.",
+    "skills": "Has a good Perception skill for noticing hidden entities.",
+    "additional_information": [
+        "Inflicts poison damage with its Fungal Toxicity ability upon melee attackers.",
+        "Can gain temporary hit points for allies within its Mushroom Ring.",
+        "Regains health by consuming carrion with Fetid Feast.",
+        "Capable of inducing unconsciousness with its Slumber Spores ability.",
+        "Communicates through telepathy, enhancing coordination with other mycolids."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic plant creature with telepathy",
+        "area control with poison ring ability",
+        "slow-moving creature that supports mycolids",
+        "fungal monster that creates hazardous areas",
+        "plant monster that inflicts poisoning effects"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Xanka",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 15 feet",
+    "role": null,
+    "tags": [
+        "construct",
+        "destructor",
+        "psychic immunity"
+    ],
+    "adjectives": [
+        "small",
+        "unstoppable",
+        "destructive"
+    ],
+    "description": "Xanka is a small, unaligned construct, notable for its central globe that absorbs and degrades nonmagical objects. With average physical attributes but good Dexterity, it looms as a potential threat due to its unique abilities to devastate structures.",
+    "memorable": "Noteworthy for its ability to absorb and dismantle nonmagical weapons and objects, making it a unique opponent in combat.",
+    "goals": "To destroy nonmagical objects and defenses, engaging in relentless activity as it doesn\u2019t require sustenance.",
+    "relations": "Typically encountered alone but may be created by powerful construct designers.",
+    "environment": "Commonly found in areas where nonmagical constructs or objects exist.",
+    "strengths": "Immunity to poison and psychic damage, as well as various conditions.",
+    "weaknesses": "Limited mobility and combat versatility due to low Strength and Intelligence scores.",
+    "attacks": "Utilizes its Dismantling Leg to strike, capable of dealing bludgeoning damage while also absorbing objects.",
+    "most_powerful_ability": "The Absorb ability allows it to deteriorate nonmagical items, granting it a significant tactical advantage.",
+    "equipment": null,
+    "senses": "Xanka has blindsight up to 120 feet, enabling it to perceive its surroundings without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its Construct Nature.",
+        "Resistant to force damage.",
+        "Can produce an area-of-effect attack with Release Energy.",
+        "Can destroy a 1-foot cube of materials with its Absorb ability.",
+        "Only functions as a combatant against nonmagical threats."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that degrades nonmagical items",
+        "small monster with destructive abilities",
+        "creature immune to psychic damage",
+        "Xanka the destructor of nonmagical objects",
+        "unstoppable creature with blindsight"
+    ]
+}

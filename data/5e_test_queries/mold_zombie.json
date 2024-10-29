@@ -1,0 +1,25 @@
+{
+    "name": "Mold Zombie",
+    "queries": [
+        {
+            "query": "undead creature that spreads disease and lives in grim environments",
+            "variant": "creature that is undead and spreads disease in grim places"
+        },
+        {
+            "query": "zombie with necrotic damage abilities and low Dexterity",
+            "variant": "zombie that has poor Dexterity and can deal necrotic damage"
+        },
+        {
+            "query": "medium-sized undead with high hit points and special abilities like Spore Death",
+            "variant": "medium undead that has high HP and abilities such as Spore Death"
+        },
+        {
+            "query": "mold zombie characterized by bludgeoning and necrotic damage",
+            "variant": "mold zombie known for its bludgeoning and necrotic attack damage"
+        },
+        {
+            "query": "creature that has darkvision and immune to poison damage",
+            "variant": "monster with darkvision and immunity against poison damage"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Ancient Wind Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Gargantuan",
+    "hp": 351,
+    "ac": 20,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 120 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "storm",
+        "wind",
+        "mythical"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "chaotic",
+        "powerful",
+        "destructive"
+    ],
+    "description": "The Ancient Wind Dragon embodies the destructive force of storms, with formidable nature, exceptional strength, and a chaotic presence. It features gale force winds surrounding its body, making it difficult to hit.",
+    "memorable": "Its ability to deflect ordinary projectiles, high damage output, and the ability to create fear make it a terrifying adversary.",
+    "goals": "To wreak havoc, control the battlefield, and maintain its dominance over storms and winds.",
+    "relations": "It could ally with other dragons or storm-related creatures, serving as a master of storms or as a fearsome foe against intruders.",
+    "environment": "Typically found in stormy regions or high mountains, where thunderstorms are frequent.",
+    "strengths": "Immunity to lightning damage, high damage output, and significant control over the battlefield.",
+    "weaknesses": "May struggle against coordinated efforts from multiple foes.",
+    "attacks": "Multiattack with Frightful Presence, Bite, Claw, and Tail attacks, unleashing devastating storm-based attacks.",
+    "most_powerful_ability": "Tempest Breath, a powerful cone attack that damages and knocks enemies back.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and an exceptional passive perception score of 27.",
+    "skills": "Excels in Acrobatics and Perception, showcasing its agile and aware nature.",
+    "additional_information": [
+        "Freedom of Movement allows the dragon to ignore difficult terrain.",
+        "Legendary Resistance lets it succeed on saving throws three times a day.",
+        "Storm Sight enables it to see through fog and mist.",
+        "Whirling Winds grant a strong defensive advantage against ranged attackers.",
+        "Can take legendary actions to enhance its combat capabilities."
+    ],
+    "damage_types": [
+        "lightning",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan storm dragon",
+        "powerful wind-based creature",
+        "mythical lightning dragon",
+        "ancient dragon of storms",
+        "fearsome chaotic dragon"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Deva",
+    "queries": [
+        {
+            "query": "radiant angelic being that heals and guides",
+            "variant": "radiant angel being that heals and guides"
+        },
+        {
+            "query": "powerful celestial with healing abilities and a lawful good alignment",
+            "variant": "powerful celestial with healing powers and lawful good alignment"
+        },
+        {
+            "query": "angelic creature with radiant damage attacks and magic resistance",
+            "variant": "angelic being with radiant damage strikes and magic resistance"
+        },
+        {
+            "query": "humanoid figure with luminous wings that can change shape",
+            "variant": "humanoid with glowing wings that can change forms"
+        },
+        {
+            "query": "divine warrior from the heavens that can summon radiant energy",
+            "variant": "divine warrior from heavens that can summon radiant powers"
+        }
+    ]
+}

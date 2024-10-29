@@ -1,0 +1,25 @@
+{
+    "name": "Centaur",
+    "queries": [
+        {
+            "query": "large fey creature with a human torso and horse body found in forests",
+            "variant": "fey creature that's large with a horse body and human upper half living in woods"
+        },
+        {
+            "query": "agile archery monster that protects the wilderness",
+            "variant": "archer monster known for agility and guarding natural places"
+        },
+        {
+            "query": "proud forest-dwelling creature with powerful melee and ranged attacks",
+            "variant": "mighty creature in the forest that has strong close and distant attack abilities"
+        },
+        {
+            "query": "monster skilled in nature and survival with swift movement",
+            "variant": "creature proficient in nature and quick movement that excels in survival"
+        },
+        {
+            "query": "a centaur known for its charge ability and resilience against fear",
+            "variant": "centaur creature recognized for its charging attack and ability to resist being frightened"
+        }
+    ]
+}

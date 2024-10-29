@@ -1,0 +1,25 @@
+{
+    "name": "Eye Golem",
+    "queries": [
+        {
+            "query": "construct with blinding abilities in combat",
+            "variant": "construct that has blinding powers during battle"
+        },
+        {
+            "query": "large guardian that can inflict permanent blindness",
+            "variant": "big protector that has the ability to cause permanent blindness"
+        },
+        {
+            "query": "golem immune to spells with radiant attacks",
+            "variant": "golem that is spell resistant and has radiant damage in its attacks"
+        },
+        {
+            "query": "tall creature without the need for food or sleep",
+            "variant": "large entity that doesn't require food or rest"
+        },
+        {
+            "query": "strong melee attacker with a unique gaze ability",
+            "variant": "powerful melee fighter that possesses a special gaze attack"
+        }
+    ]
+}

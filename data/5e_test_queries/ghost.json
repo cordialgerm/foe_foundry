@@ -1,0 +1,25 @@
+{
+    "name": "Ghost",
+    "queries": [
+        {
+            "query": "spectral being with haunting abilities that can possess the living",
+            "variant": "haunting abilities of a spectral being that can take over living bodies"
+        },
+        {
+            "query": "medium undead creature that can pass through walls and instill fear",
+            "variant": "medium undead monster that induces fear and goes through walls"
+        },
+        {
+            "query": "ethereal ghost that drains life and returns after defeat",
+            "variant": "ghost from the ethereal plane that takes life energy and comes back after being defeated"
+        },
+        {
+            "query": "ghostly figure with high Charisma that frightens enemies and ages them",
+            "variant": "haunting figure that uses high Charisma to terrify foes and age them"
+        },
+        {
+            "query": "undead creature with immunity to necrotic damage that offers supernatural fear",
+            "variant": "undead being immune to necrotic damage providing supernatural fear effects"
+        }
+    ]
+}

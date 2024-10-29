@@ -1,0 +1,25 @@
+{
+    "name": "Bat",
+    "queries": [
+        {
+            "query": "tiny flying mammal that uses echolocation in dark places",
+            "variant": "tiny flying creature that uses echolocation in dark locations"
+        },
+        {
+            "query": "nocturnal beast found in crypts with silent movement",
+            "variant": "nocturnal creature found in crypts that moves silently"
+        },
+        {
+            "query": "small harmless creature with keen hearing often found in haunted forests",
+            "variant": "small non-threatening creature with excellent hearing usually found in spooky forests"
+        },
+        {
+            "query": "creature that can overwhelm travelers in large numbers with piercing bite",
+            "variant": "creature that can disorient travelers when in swarms with a biting attack"
+        },
+        {
+            "query": "winged tiny beast that is common prey for larger predators",
+            "variant": "tiny flying beast that often becomes food for bigger predators"
+        }
+    ]
+}

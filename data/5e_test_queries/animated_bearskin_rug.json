@@ -1,0 +1,25 @@
+{
+    "name": "Animated Bearskin Rug",
+    "queries": [
+        {
+            "query": "sinister rug creature that can attack from the floor",
+            "variant": "creature rug that seems harmless and attacks"
+        },
+        {
+            "query": "large construct with grappling abilities and low intelligence",
+            "variant": "large robot with weak intellect and grappling power"
+        },
+        {
+            "query": "rug that scares creatures and can restrain them",
+            "variant": "rug that frightens and grapples its targets"
+        },
+        {
+            "query": "animated decor that is immune to poison and psychic damage",
+            "variant": "living rug that cannot be hurt by poison or psychic attacks"
+        },
+        {
+            "query": "rug with a menacing roar and false appearance ability",
+            "variant": "rug that has a scary howl and looks like a real bearskin"
+        }
+    ]
+}

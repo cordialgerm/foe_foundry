@@ -1,0 +1,25 @@
+{
+    "name": "Elder Shadow Drake",
+    "queries": [
+        {
+            "query": "large dark dragon that breathes cold and has high melee attacks",
+            "variant": "big shadow dragon that exhale cold and deals powerful melee damage"
+        },
+        {
+            "query": "stealthy creature with darkvision that can teleport in dim light",
+            "variant": "sneaky monster with night vision that can blink in low light"
+        },
+        {
+            "query": "chaotic evil dragon that is vulnerable to radiant damage and has invisibility",
+            "variant": "evil chaotic dragon that takes extra damage from radiant and can become invisible"
+        },
+        {
+            "query": "Elder Shadow Drake abilities in dark environments with cold damage attacks",
+            "variant": "Elder Shadow Drake powers in shadows with cold breath attacks"
+        },
+        {
+            "query": "dragon with high strength and stealth skills that uses magical darkness",
+            "variant": "dragon with strong melee and stealth abilities that employs magical shadows"
+        }
+    ]
+}

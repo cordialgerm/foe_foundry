@@ -1,0 +1,25 @@
+{
+    "name": "Bloody Bones",
+    "queries": [
+        {
+            "query": "chaotic evil monster with a frightening aura",
+            "variant": "monster that is chaotic evil and has a frightening aura"
+        },
+        {
+            "query": "medium-sized monstrosity that mimics other creatures",
+            "variant": "monstrosity that is medium-sized and can mimic creatures"
+        },
+        {
+            "query": "creature with claw attacks and darkvision that uses stealth",
+            "variant": "darkvision creature that has claw attacks and proficiency in stealth"
+        },
+        {
+            "query": "horror monster that can regain hit points when hit",
+            "variant": "creature that can heal when it gets hit and is a horror"
+        },
+        {
+            "query": "psychological terror creature that deals slashing damage",
+            "variant": "creature that inflicts slashing damage and embodies psychological terror"
+        }
+    ]
+}

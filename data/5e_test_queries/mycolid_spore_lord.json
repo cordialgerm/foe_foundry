@@ -1,0 +1,25 @@
+{
+    "name": "Mycolid Spore Lord",
+    "queries": [
+        {
+            "query": "plant creature with toxic spores that helps mycolids",
+            "variant": "creature plant that helps mycolids and has toxic spores"
+        },
+        {
+            "query": "hazardous mushroom monster with telepathic abilities",
+            "variant": "telepathic monster with mushrooms that is hazardous"
+        },
+        {
+            "query": "medium plant creature known for area poison effects",
+            "variant": "area poison effects known medium plant creature"
+        },
+        {
+            "query": "slow-moving spore creature that can induce sleep",
+            "variant": "spore creature that induces sleep and is slow-moving"
+        },
+        {
+            "query": "mycolid spore lord's special abilities and toxic attacks",
+            "variant": "toxic attacks and special abilities of mycolid spore lord"
+        }
+    ]
+}

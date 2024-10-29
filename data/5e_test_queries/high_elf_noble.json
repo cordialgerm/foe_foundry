@@ -1,0 +1,25 @@
+{
+    "name": "High Elf Noble",
+    "queries": [
+        {
+            "query": "elegant humanoid with high charisma that uses persuasion",
+            "variant": "elegant humanoid high charisma uses persuasion"
+        },
+        {
+            "query": "noble character that excels in deception and has low physical strength",
+            "variant": "noble character excel in deception low strength"
+        },
+        {
+            "query": "High Elf with a rapier that can cast Ray of Frost",
+            "variant": "high elf noble rapier cast ray of frost"
+        },
+        {
+            "query": "medium humanoid known for manipulation and social interaction",
+            "variant": "medium humanoid manipulation social interact"
+        },
+        {
+            "query": "creature that can reduce speed with spells and has a parry ability",
+            "variant": "creature reduce speed spells parry ability"
+        }
+    ]
+}

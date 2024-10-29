@@ -1,0 +1,25 @@
+{
+    "name": "Bookkeeper",
+    "queries": [
+        {
+            "query": "tiny flying construct that guards a book and has stealth abilities",
+            "variant": "small flying monster that protects a book and has skills in stealth"
+        },
+        {
+            "query": "construct with low hit points that can go invisible when near its book",
+            "variant": "creature with few hit points that becomes invisible while with its book"
+        },
+        {
+            "query": "creature that blends into ink and can cause blindness with ink attack",
+            "variant": "monster that hides in ink and has an attack that can blind its target"
+        },
+        {
+            "query": "diminutive construct that uses the 'Between the Lines' ability to travel",
+            "variant": "small construct that utilizes the 'Between the Lines' skill to move"
+        },
+        {
+            "query": "fragile creature immune to charm and paralysis that aids its creator",
+            "variant": "delicate monster that can't be charmed or paralyzed and helps its master"
+        }
+    ]
+}

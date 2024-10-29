@@ -1,6 +1,8 @@
 <MonsterName/>Cipactli</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Cipactli is a Medium-sized chaotic evil fiend that thrives in aquatic environments as well as on land. With an Armor Class of 15 derived from its natural armor, and an impressive 78 hit points, it poses a significant threat to adventurers. Its ability to swim at a speed of 30 feet and walk at 20 feet allows it to maneuver effectively in both water and on land. The Cipactli has a Challenge Rating of 5, meaning it is a moderately dangerous opponent, providing 1,800 experience points upon defeat. Notably, it has immunity to cold and poison damage and can breathe both air and water, while being vulnerable to fire damage and resistant to lightning, making it a tricky foe in various combat scenarios.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Cipactli is a formidable opponent, especially in aquatic environmen
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cipactli
 
 *Medium* *Fiend* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Ancient Lullaby (Recharge 5-6):** A cipactli sings a soporific, primordial song of eternal rest and divine repose from its many mouths. Each creature within 100 feet of the cipactli that can hear the song must succeed on a DC 14 Charisma saving throw or fall asleep and remain unconscious for 10 minutes. A creature awakens if it takes damage or another creature takes an action to wake it. This song has no effect on constructs and undead.
 
 
+</statblock>
 
 

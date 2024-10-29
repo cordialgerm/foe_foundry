@@ -1,0 +1,25 @@
+{
+    "name": "Jeholopterus",
+    "queries": [
+        {
+            "query": "small flying dinosaur with blood-draining ability",
+            "variant": "small dinosaur that can fly and drains blood"
+        },
+        {
+            "query": "nimble beast that avoids attacks and attacks from the air",
+            "variant": "agile creature that attacks in the air and evades strikes"
+        },
+        {
+            "query": "dinosaur with keen senses that lives in the sky",
+            "variant": "flying dinosaur that has sharp sight and prefers the air"
+        },
+        {
+            "query": "fragile aerial predator with strong agility",
+            "variant": "delicate flying monster with great agility"
+        },
+        {
+            "query": "Jeholopterus abilities like Flyby and Blood Drain",
+            "variant": "abilities of Jeholopterus such as blood draining and flying"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Giant Mantis Shrimp",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 110,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 15 ft., burrow 15 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "aquatic",
+        "predator"
+    ],
+    "adjectives": [
+        "striking",
+        "formidable",
+        "lethal"
+    ],
+    "description": "The Giant Mantis Shrimp is a Large beast known for its striking appearance, featuring vibrant colors and a powerful build.",
+    "memorable": "Its ability to deal both piercing and thunder damage while grappling enemies makes it a unique threat.",
+    "goals": "Typically hunts prey in aquatic environments.",
+    "relations": "Might be encountered alongside other aquatic beasts.",
+    "environment": "Found in aquatic environments, often lurking in burrows or coral reefs.",
+    "strengths": "Strong melee attacks and unique thunder damage ability, combined with truesight.",
+    "weaknesses": "Very weak mental attributes, making it susceptible to manipulation.",
+    "attacks": "Can perform multiattacks with range, dealing piercing damage and potential stunning thunder damage.",
+    "most_powerful_ability": "The ability to stun and deafen opponents with its Sonic Claw attack.",
+    "equipment": null,
+    "senses": "Has truesight out to 60 feet, allowing it to see through illusions.",
+    "skills": "Possesses average perception, allowing it to detect threats around it.",
+    "additional_information": [
+        "Has a special ability that enhances intimidation tactics.",
+        "Utilizes its environment for stealthy ambushes.",
+        "Can blind multiple foes with a water jet attack.",
+        "Effective in both melee and ranged tactics.",
+        "Can reposition itself in combat while avoiding opportunity attacks."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large shrimp that can stun enemies",
+        "colorful aquatic predator with powerful melee attacks",
+        "beast capable of blinding opponents",
+        "giant shrimp with truesight and thunder damage",
+        "creature that grapples and stuns in combat"
+    ]
+}

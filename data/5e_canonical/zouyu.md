@@ -1,6 +1,8 @@
 <MonsterName/>Zouyu</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>17</AC>
+<HP/>114</HP>
 <summary>The Zouyu is a huge chaotic good monstrosity that exudes an aura of wild energy and unpredictable tactics. Its exceptional Dexterity and ability to manipulate luck make it a formidable foe in combat, while its high Armor Class and significant hit points allow it to endure substantial damage. The creature excels in mobility, boasting the ability to quickly cover vast distances, but it has vulnerabilities, particularly to thunder damage. With access to a variety of abilities that enhance its attack effectiveness and disrupt opponent actions, the Zouyu is both a resilient combatant and a strategic supporter for its allies.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Alter Luck is a unique and strategic ability where the Zouyu can influence the o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zouyu
 
 *Huge* *Monstrosity* *chaotic good*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Alter Luck:** The zouyu flicks its vibrant, multi-stranded tail and alters the luck of one creature it can see within 30 feet of it, choosing one of the following luck options. The zouyu can’t target itself with Alter Luck. <br>* Bestow Luck. The target has advantage on the next ability check, attack roll, or saving throw (zouyu’s choice) it makes before the end of its next turn. <br>* Steal Luck. The target must succeed on a DC 15 Wisdom saving throw or have disadvantage on the next ability check, attack roll, or saving throw (zouyu’s choice) it makes before the end of its next turn. If the target fails the saving throw, the zouyu has advantage on one attack roll or saving throw it makes before the start of its next turn.
 
 
+</statblock>
 
 

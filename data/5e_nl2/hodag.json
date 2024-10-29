@@ -1,0 +1,52 @@
+{
+    "name": "Hodag",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at 40 feet per round",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "melee",
+        "agile",
+        "physical prowess"
+    ],
+    "adjectives": [
+        "formidable",
+        "large",
+        "powerful",
+        "intimidating"
+    ],
+    "description": "A large beast with formidable physical prowess, known for its strong frame and sharp teeth, claws, and horns, making it a fearsome opponent in close combat.",
+    "memorable": "Its ability to charge and knock down foes, combined with its improved critical attack chance, makes it a dangerous melee combatant.",
+    "goals": "Typically seeks to dominate opponents through sheer physical strength and intimidate through its presence.",
+    "relations": "Might be encountered in the company of other large beasts or predators in its territory.",
+    "environment": "Often found in forests or wilderness areas where it can rely on its stealthy nature.",
+    "strengths": "Exceptional Strength and the ability to charge and knock down foes enhances its combat effectiveness.",
+    "weaknesses": "Lacks ranged attacks and spells, relying solely on physical attributes in combat.",
+    "attacks": "Multiattack options include a bite, claws, tail, and horns, each dealing significant damage.",
+    "most_powerful_ability": "Territorial Display, which can deal thunder damage and knock opponents prone.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, giving it advantage on perception checks related to sound or scent.",
+    "skills": "Proficient in Stealth, allowing it to move quietly, and has good perception skills.",
+    "additional_information": [
+        "Immune to being charmed.",
+        "Can score critical hits on a roll of 19 or 20.",
+        "Utilizes its size and strength to overpower opponents.",
+        "Can inflict extra damage when charging.",
+        "Territorial nature may create fear in nearby creatures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast with sharp horns",
+        "monster that charges and knocks down",
+        "powerful melee creature in the wilderness",
+        "Hodag territorial display thunder attack",
+        "strong creature with keen hearing and smell"
+    ]
+}

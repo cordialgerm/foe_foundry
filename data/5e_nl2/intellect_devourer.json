@@ -1,0 +1,52 @@
+{
+    "name": "Intellect Devourer",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 36,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "mental attacker",
+        "stealthy",
+        "manipulator"
+    ],
+    "adjectives": [
+        "cunning",
+        "insidious",
+        "stealthy"
+    ],
+    "description": "The Intellect Devourer is a small creature with a cunning appearance, characterized by its ability to manipulate and control others. It has a unique ability to devour brains and possess humanoids.",
+    "memorable": "Its Body Thief ability allows it to take control of other creatures by consuming their brains, making it a deadly psychological threat.",
+    "goals": "To manipulate and control other creatures, often targeting their minds directly in combat.",
+    "relations": "Often has connections to other aberrant creatures and might serve more powerful entities in its manipulative schemes.",
+    "environment": "Can typically be found lurking in dark, secluded places where it can ambush unsuspecting creatures.",
+    "strengths": "Possesses high Dexterity for evasion and effective mental manipulation abilities that can incapacitate enemies.",
+    "weaknesses": "Very low physical statistics make it vulnerable to direct physical confrontation and it lacks significant melee capabilities.",
+    "attacks": "Uses Claws to deal slashing damage and the Ego Whip to inflict psychic damage while potentially stunning targets.",
+    "most_powerful_ability": "The Body Thief ability allows it to take control of incapacitated humanoids, effectively making it a puppet master.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures in complete darkness.",
+    "skills": "Has proficiency in deception and stealth, showcasing its adeptness at manipulation and remaining unnoticed.",
+    "additional_information": [
+        "Can communicate telepathically within 120 feet.",
+        "Effectively uses its high Intelligence to strategize in combat.",
+        "Can control its possessed target while retaining its own mental attributes.",
+        "Thrives in ambush scenarios, attacking the mind before the body.",
+        "Low Strength makes it physically weak but mentally formidable."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small mental manipulator that controls minds",
+        "creature that devours brains and takes control",
+        "stealthy monster using psychic attacks",
+        "tiny monster with blindsight and brain abilities",
+        "cunning aberration lurking in the shadows"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Aviere",
+    "creature_type": "Celestial",
+    "alignment": "any good",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 30 ft., walk 10 ft.",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "protector",
+        "healer"
+    ],
+    "adjectives": [
+        "tiny",
+        "persistent",
+        "magical"
+    ],
+    "description": "The Aviere is a tiny celestial creature that serves as a protector and healer, embodying the virtues of good and light. It has a delicate appearance, enhanced by its ability to emit bright light.",
+    "memorable": "The Aviere's Divine Rejuvenation ability allows it to return to life after death, making it exceptionally resilient in encounters.",
+    "goals": "To assist and heal allies while upholding the virtues of good.",
+    "relations": "Often found alongside other celestial beings or good-aligned creatures.",
+    "environment": "Typically found near holy sites or places where good is upheld.",
+    "strengths": "Resistance to radiant damage and immunity to fire and poison, along with its magical attacks and healing abilities.",
+    "weaknesses": "Low strength and physical durability mean it is less effective in direct combat situations.",
+    "attacks": "Claw attack that deals slashing and fire damage, focusing on magical properties.",
+    "most_powerful_ability": "Divine Rejuvenation allows the Aviere to potentially come back to life after death.",
+    "senses": "Has a passive perception of 11.",
+    "skills": "Excels in performance with a +6 modifier, reflecting its high Charisma.",
+    "additional_information": [
+        "Sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+        "Gains advantage on saving throws against spells and magical effects due to Magic Resistance.",
+        "Its weapon attacks are considered magical, bypassing certain resistances.",
+        "Can stabilize allies with its Song of Life ability.",
+        "Can heal allies with its Song of Healing ability once a day."
+    ],
+    "damage_types": [
+        "fire",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny celestial healer",
+        "persistent magical creature",
+        "protector of the good",
+        "Aviere abilities",
+        "light-emitting celestial being"
+    ]
+}

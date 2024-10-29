@@ -1,0 +1,52 @@
+{
+    "name": "Commoner",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 4,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "standard walking speed of 30 feet",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "commoner",
+        "non-combatant"
+    ],
+    "adjectives": [
+        "ordinary",
+        "fragile",
+        "resourceful"
+    ],
+    "description": "A Commoner is an unassuming humanoid, typically a farmer, laborer, or craftsman, wearing simple clothes. They possess no combat training and have average abilities across all attributes.",
+    "memorable": "Despite their lack of power, they can form an Angry Mob that becomes surprisingly effective through numbers.",
+    "goals": "Commoners generally focus on surviving and maintaining their communities, often providing vital roles in support of adventurers.",
+    "relations": "Commoners can be encountered with other commoners and serve as civilians in a fantasy setting.",
+    "environment": "Typically found in villages or rural areas within fantasy worlds.",
+    "strengths": "They can coordinate with others to create chaotic group assaults through their Angry Mob ability.",
+    "weaknesses": "Very low hit points and AC make them highly vulnerable to combat threats.",
+    "attacks": "Basic melee attack with a club or a ranged stone throw, both dealing minimal bludgeoning damage.",
+    "most_powerful_ability": "Angry Mob - Allows commoners to rally together to attack a single target, increasing damage based on additional participants.",
+    "equipment": null,
+    "senses": "The Commoner has passive Perception of 10, reflecting average awareness.",
+    "skills": "Skills are lackluster with +0 modifiers, indicating no particular excelling area.",
+    "additional_information": [
+        "Represents everyday citizens in fantasy settings.",
+        "No special abilities beyond basic attacks.",
+        "Can communicate in a single language.",
+        "Commonly found in societies as peasants or tradespeople.",
+        "Ideal for role-playing or fleshing out backgrounds in campaigns."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humble farmer character with no combat skills",
+        "ordinary humanoid found in villages",
+        "weak character that can form a mob",
+        "simple citizen with average abilities",
+        "low threat creature in combat scenarios"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Akhlut</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>120</HP>
 <summary>The Akhlut is a formidable large beast characterized by its role as a powerful aquatic predator. With a challenge rating of 6, it possesses notable physical strength and speed, making it a dangerous opponent in both water and on land. Its key attributes include high strength and good agility, allowing it to deliver significant damage through its multiattack features. While it is resistant to cold damage, it lacks the ability to communicate with languages, making it somewhat limited in social interactions. Overall, the Akhlut is an exceptional threat in combat, especially when it operates in a pack.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For combat, the Akhlut can utilize a Multiattack action, allowing it to make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Akhlut
 
 *Large* *Beast* *unaligned*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Tail Slam:** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 22 (4d8 +4) bludgeoning damage.
 
 
+</statblock>
 
 

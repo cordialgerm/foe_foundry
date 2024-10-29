@@ -1,0 +1,53 @@
+{
+    "name": "Adult Sapphire Dragon",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 304,
+    "ac": 19,
+    "srd": false,
+    "cr": "19",
+    "movement": "walk 40 ft., burrow 30 ft., fly 80 ft.",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "psionic",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "intelligent",
+        "versatile",
+        "powerful"
+    ],
+    "description": "The Adult Sapphire Dragon is an imposing creature with exceptional physical and mental attributes. It possesses gleaming scales, keen eyes, and a commanding presence. It is capable of flight and burrowing, making it a versatile predator.",
+    "memorable": "Notable for its psionic abilities which allow it to manipulate reality and attack the minds of its enemies, making it a terrifying presence in combat.",
+    "goals": "To dominate others using its psychic powers and to exert control over its territory.",
+    "relations": "Can be encountered alongside other dragons or powerful psionic beings.",
+    "environment": "Typically found in mountainous regions or deep caves, often near areas rich in magic.",
+    "strengths": "Immune to psychic damage, possesses high armor class and hit points, and has strong intelligence and spellcasting abilities.",
+    "weaknesses": "Reliance on psychic attacks may be countered by opponents with resistance to such influences.",
+    "attacks": "Can perform a multiattack with its bite and claws, or unleash a devastating Psionic Wave dealing psychic damage.",
+    "most_powerful_ability": "Discognitive Breath, which unleashes a wave of psychic energy in a large area, inflicting significant psychic damage and causing ongoing effects.",
+    "equipment": "null",
+    "senses": "Passive perception of 24 indicates heightened awareness and keen senses.",
+    "skills": "Proficient in arcana, history, insight, and perception, showcasing its keen intellect.",
+    "additional_information": [
+        "Can see and heard through psionic observation up to 100 miles away.",
+        "Has Legendary Resistance, allowing it to succeed on saving throws.",
+        "Possesses psionic powers that are both magical and psionic in nature.",
+        "Can predict future events with high accuracy.",
+        "Unleashes powerful psychic attacks that can impose significant damage."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells like comprehend languages, detect thoughts, telekinesis, and wall of force without material components.",
+    "test_queries": [
+        "formidable dragon with psychic powers",
+        "huge sapphire dragon abilities",
+        "psionically aware dragon",
+        "dragon that can predict the future",
+        "monstrous creature with high intelligence"
+    ]
+}

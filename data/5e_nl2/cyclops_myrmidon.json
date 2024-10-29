@@ -1,0 +1,48 @@
+{
+    "name": "Cyclops Myrmidon",
+    "creature_type": "Giant",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 126,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "strength"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "resilient"
+    ],
+    "description": "The Cyclops Myrmidon is a huge, powerful giant that excels in melee combat, utilizing its significant strength to deliver devastating blows. It possesses a rugged physique and a single eye, showcasing its cyclopean heritage.",
+    "memorable": "The cyclops can attack with great power despite being limited by its poor depth perception, making it a fearsome opponent up close.",
+    "goals": "To dominate opponents in melee combat and withstand damage during battles.",
+    "relations": "May be encountered alongside other giants or creatures of strength.",
+    "environment": "Typically found in mountainous regions or vast open areas.",
+    "strengths": "High hit points and exceptional melee damage output with multiattack capabilities.",
+    "weaknesses": "Struggles with ranged attacks due to Poor Depth Perception, making it less effective at a distance.",
+    "attacks": "Capable of executing powerful melee attacks with a club and throwing large rocks.",
+    "most_powerful_ability": "Panicked Rage, granting advantage on attack rolls when frightened.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Limited skills in animal handling and survival due to low intelligence and average perception.",
+    "additional_information": [
+        "Unique cyclopic characteristics with a single eye.",
+        "Can retaliate with a powerful strike after being hit thanks to Big Windup.",
+        "Once per day, can remove debilitating conditions with Thick Skulled."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge giant with powerful melee attacks",
+        "strong cyclops that struggles with ranged combat",
+        "melee combatant giant with single eye",
+        "cyclops with panicked rage ability",
+        "formidable giant that throws rocks"
+    ]
+}

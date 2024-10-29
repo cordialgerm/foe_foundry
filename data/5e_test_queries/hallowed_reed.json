@@ -1,0 +1,25 @@
+{
+    "name": "Hallowed Reed",
+    "queries": [
+        {
+            "query": "medium celestial creature that heals and has radiant damage immunity",
+            "variant": "medium creature that is celestial and immune to radiant damage while healing"
+        },
+        {
+            "query": "creature with limited telepathy that can identify good-aligned beings",
+            "variant": "creature that has telepathy and knows if beings are good aligned"
+        },
+        {
+            "query": "beautiful plant-like celestial with protective abilities",
+            "variant": "lovely celestial plant with abilities for protection"
+        },
+        {
+            "query": "creature that can regrow and has grappling radiant attacks",
+            "variant": "monster that regrows and grapples with radiant damage attacks"
+        },
+        {
+            "query": "slow-moving creature that excels in helping good-aligned allies",
+            "variant": "creature that has low speed and is great at aiding good allies"
+        }
+    ]
+}

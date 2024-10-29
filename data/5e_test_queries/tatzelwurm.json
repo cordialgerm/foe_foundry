@@ -1,0 +1,25 @@
+{
+    "name": "Tatzelwurm",
+    "queries": [
+        {
+            "query": "medium dragon with poisonous attacks and climbs well",
+            "variant": "medium-sized dragon that uses poison attacks and climbs easily"
+        },
+        {
+            "query": "dragon that inflicts poison and knocks creatures prone",
+            "variant": "dragon that knocks enemies down and deals poison damage"
+        },
+        {
+            "query": "cunning evil dragon known for its climbing and poisonous blood",
+            "variant": "sly evil dragon famous for its climbing skills and toxic blood"
+        },
+        {
+            "query": "ferocious dragon in combat that can breathe poisonous vapor",
+            "variant": "fierce dragon that can exhale poisonous gas during battle"
+        },
+        {
+            "query": "monster with high hit points and poison immunity in a dark environment",
+            "variant": "creature with lots of hit points and immunity to poison living in darkness"
+        }
+    ]
+}

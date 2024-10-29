@@ -1,0 +1,25 @@
+{
+    "name": "Elophar",
+    "queries": [
+        {
+            "query": "large undead creature with chaotic personality that uses acid attacks",
+            "variant": "large unalive being with chaotic personality that uses acid attacks"
+        },
+        {
+            "query": "undead monster that can swap personalities and cast spells",
+            "variant": "monstrous undead being that can switch personalities and cast spells"
+        },
+        {
+            "query": "creepy large creature immune to poison that can cause acid damage",
+            "variant": "creepy big creature immune to poison that can deal acid damage"
+        },
+        {
+            "query": "undead with high Constitution that has a low Dexterity score",
+            "variant": "undead being with high Constitution that has a bad Dexterity score"
+        },
+        {
+            "query": "monster that uses Ectoplasmic Spray and has darkvision",
+            "variant": "creature that employs Ectoplasmic Spray and possesses darkvision"
+        }
+    ]
+}

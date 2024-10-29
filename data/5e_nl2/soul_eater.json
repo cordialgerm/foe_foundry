@@ -1,0 +1,52 @@
+{
+    "name": "Soul Eater",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "soul-consuming",
+        "psychic damage"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "malicious"
+    ],
+    "description": "The Soul Eater is a medium-sized fiend known for its malevolent design, featuring elements that embody horror. It is agile with high Dexterity and has a solid Armor Class, allowing it to withstand various attacks.",
+    "memorable": "The ability to consume souls grants it a unique and deadly edge, especially the Soul Drain reaction that can instantly kill and consume the souls of its victims.",
+    "goals": "The Soul Eater thrives on inflicting psychic pain and consuming the souls of its prey.",
+    "relations": "Related to other fiends and could serve dark powers or be sought after by those wishing to bargain with evil forces.",
+    "environment": "Typically found in dark, shadowy areas where it can ambush unsuspecting victims.",
+    "strengths": "High Dexterity enhances its agility and stealth, while Magic Resistance provides resilience against spells.",
+    "weaknesses": "Vulnerable to radiant damage and reliant on physical attacks.",
+    "attacks": "Utilizes two Claw attacks in one turn, dealing slashing and psychic damage simultaneously.",
+    "most_powerful_ability": "Soul Drain allows it to consume a target's soul upon reducing them to 0 hit points, potentially leading to immediate death.",
+    "equipment": null,
+    "senses": "Possesses Soul Sense, enabling it to detect souls within 60 feet, giving it tactical awareness of potential prey.",
+    "skills": "Excels in Stealth, allowing it to approach targets unnoticed, as well as Intimidation and basic Perception.",
+    "additional_information": [
+        "Immune to poison damage and several conditions including paralysis and unconsciousness",
+        "Resistant to cold, fire, lightning, and nonmagical physical damage",
+        "Can use Hasten Consumption to inflict heavy psychic damage to nearby creatures",
+        "Can regain a consumed soul under specific conditions, complicating encounters",
+        "Darkly alluring design contributes to its horror theme, making it a notable foe"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that consumes souls with psychic damage",
+        "agile monster that drains souls and inflicts horror",
+        "medium fiend with deadly claw attacks and magic resistance",
+        "soul-eating fiend that loves to inflict psychic pain",
+        "creature able to revive souls it consumes after battle"
+    ]
+}

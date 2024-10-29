@@ -1,0 +1,53 @@
+{
+    "name": "Parzz\u2019val",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 115,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "50 feet, nimble movement",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "regeneration",
+        "area control",
+        "acid damage"
+    ],
+    "adjectives": [
+        "chaotic",
+        "large",
+        "devastating"
+    ],
+    "description": "Parzz\u2019val is a large aberration that embodies chaos. Its skin is covered in a sticky, acidic webbing that it uses to create difficult terrain. With oversized fists and an exceptionally large maw, it looks formidable and threatening.",
+    "memorable": "Its ability to create caustic webs and regenerate health makes Parzz\u2019val a dangerous opponent, capable of controlling the battlefield and sustaining itself in combat.",
+    "goals": "To dominate its territory and overpower intruders using strategic web placement and devastating attacks.",
+    "relations": "Could be encountered with other chaotic aberrations or creatures attracted to its chaotic evil nature.",
+    "environment": "Typically found in chaotic, unstable, or warped environments that reflect its turbulent nature.",
+    "strengths": "Exceptional strength and significant regeneration abilities; can create difficult terrain with its caustic web.",
+    "weaknesses": "Vulnerable to thunder damage but immune to most physical attacks from non-magical sources.",
+    "attacks": "Multiattack using powerful oversized fists and a dangerous oversized maw that can swallow smaller creatures.",
+    "most_powerful_ability": "Caustic Web creates zones of difficult terrain that can deal persistent acid damage to those within it.",
+    "equipment": null,
+    "senses": "Has blindsight out to 120 feet, allowing it to detect creatures without needing to see them.",
+    "skills": "Proficient in stealth, giving it an advantage in hiding from enemies.",
+    "additional_information": [
+        "Regenerates 10 hit points at the start of each of its turns.",
+        "Can gain advantage on melee attacks after dealing damage with multiple attacks in one round.",
+        "Can swallow creatures smaller than itself, blinding and restraining them while dealing continuous acid damage.",
+        "The web it creates does not affect itself but hinders enemies trying to navigate through it.",
+        "Sustains high melee damage potential due to its exceptional strength."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic acid monster",
+        "aberration with acid web abilities",
+        "monster that regenerates health in combat",
+        "creature that can swallow its enemies",
+        "fast-moving aberration that controls terrain"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Shadow Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon that embodies darkness and uses shadow magic",
+            "variant": "gargantuan dark dragon that uses shadow magic and embodies darkness"
+        },
+        {
+            "query": "powerful flying dragon with damage immunities and a necrotic breath attack",
+            "variant": "strong flying dragon with immunities to damage and a necrotic breathing attack"
+        },
+        {
+            "query": "dragon skilled in deception and stealth that resides in dark areas",
+            "variant": "deceptive stealthy dragon that lives in dark environments"
+        },
+        {
+            "query": "shadow dragon with legendary actions and essence link weakness",
+            "variant": "dragon of shadow that has legendary actions and a weakness of essence link"
+        },
+        {
+            "query": "ancient dragon that can teleport and has a powerful aura",
+            "variant": "old dragon that is capable of teleporting and possesses a strong aura"
+        }
+    ]
+}

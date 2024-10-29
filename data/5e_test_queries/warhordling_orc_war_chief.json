@@ -1,0 +1,25 @@
+{
+    "name": "Warhordling Orc War Chief",
+    "queries": [
+        {
+            "query": "strong orc leader that attacks with a greataxe and commands allies",
+            "variant": "orc leader that is strong and uses a greataxe while commanding allies"
+        },
+        {
+            "query": "medium humanoid with high strength and dexterity leading orc bands",
+            "variant": "humanoid orc with great strength and dexterity that leads a band"
+        },
+        {
+            "query": "combat-focused orc with multiattack and aggressive tactics",
+            "variant": "orc that focuses on combat with aggressive tactics and can multiattack"
+        },
+        {
+            "query": "orc chief with powerful melee attacks and a high armor class",
+            "variant": "chief orc who has powerful melee strikes and high AC"
+        },
+        {
+            "query": "orcs in battle led by a resilient war chief with strategic limits",
+            "variant": "war chief leading orcs in battle, being resilient but strategically limited"
+        }
+    ]
+}

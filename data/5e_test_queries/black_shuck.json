@@ -1,0 +1,25 @@
+{
+    "name": "Black Shuck",
+    "queries": [
+        {
+            "query": "large fiend that attacks in melee and moves on water",
+            "variant": "large fiend that fights in close combat and can walk on water"
+        },
+        {
+            "query": "chaotic evil creature with powerful bite and natural armor",
+            "variant": "evil chaotic monster with strong bite attack and natural protection"
+        },
+        {
+            "query": "monster with high Constitution and fear-inducing howl",
+            "variant": "creature with great durability and terrifying howl"
+        },
+        {
+            "query": "intimidating fiend with darkvision and necrotic immunity",
+            "variant": "fearsome fiend that can see in darkness and is immune to necrotic"
+        },
+        {
+            "query": "Black Shuck's blood frenzy ability and curse powers",
+            "variant": "blood frenzy skill and cursing abilities of Black Shuck"
+        }
+    ]
+}

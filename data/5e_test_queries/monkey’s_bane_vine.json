@@ -1,0 +1,25 @@
+{
+    "name": "Monkey'S Bane Vine",
+    "queries": [
+        {
+            "query": "large plant creature that can grapple and restrain enemies",
+            "variant": "large vine creature that grapples and restrains foes"
+        },
+        {
+            "query": "vine monster that appears as a normal vine until attacked",
+            "variant": "vine creature that looks like a normal vine until it strikes"
+        },
+        {
+            "query": "plant with strong tendril attacks and effective damage resistances",
+            "variant": "plant creature with powerful tendril strikes and damage resistances"
+        },
+        {
+            "query": "monster in the form of a plant that can deal continuous damage",
+            "variant": "creature resembling a plant that deals ongoing damage"
+        },
+        {
+            "query": "creature that has potential to surprise adventurers and is tough to defeat",
+            "variant": "monster capable of surprising heroes and difficult to conquer"
+        }
+    ]
+}

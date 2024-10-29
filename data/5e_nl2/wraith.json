@@ -1,0 +1,54 @@
+{
+    "name": "Wraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 13,
+    "srd": true,
+    "cr": "5",
+    "movement": "fly 60 ft. (hover), cannot walk",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "fear",
+        "life drain",
+        "incorporeal"
+    ],
+    "adjectives": [
+        "malevolent",
+        "shadowy",
+        "ethereal",
+        "relentless"
+    ],
+    "description": "The Wraith appears as a shadowy, wisp-like figure with glowing eyes, floating silently through the air.",
+    "memorable": "Its ability to drain life and create specters makes it a terrifying foe.",
+    "goals": "Wraiths serve as guardians for cursed treasures and spread dread.",
+    "relations": "They may work as agents of necromancers or haunt ancient crypts.",
+    "environment": "Often found in ancient crypts or haunted places.",
+    "strengths": "Immunities to necrotic and poison damage enhance their threat in combat.",
+    "weaknesses": "Light sensitivity reduces their effectiveness in bright environments.",
+    "attacks": "Life Drain attack that inflicts necrotic damage and reduces maximum hit points.",
+    "most_powerful_ability": "Aura of Fear that frightens nearby creatures.",
+    "senses": "Possesses darkvision and a good passive perception, allowing it to navigate in darkness.",
+    "skills": "Exceptional Stealth skill, allowing it to remain undetected easily.",
+    "additional_information": [
+        "Incorporeal movement allows passing through objects.",
+        "Can create specters from the dead under its control.",
+        "Does not require air, food, drink, or sleep.",
+        "Can weaken healing received by opponents.",
+        "Life Drain can lead to instant death if maximum hit points are reduced to 0."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that drains life and creates specters",
+        "shadowy wraith with necrotic abilities",
+        "undead that instills fear in its enemies",
+        "ethereal being that haunts ancient crypts",
+        "incorporeal creature with life draining attacks"
+    ]
+}

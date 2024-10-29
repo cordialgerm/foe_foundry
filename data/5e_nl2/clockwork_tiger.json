@@ -1,0 +1,51 @@
+{
+    "name": "Clockwork Tiger",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walks at a speed of 40 feet",
+    "role": "Defender",
+    "tags": [
+        "mechanical",
+        "guardian",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "durable"
+    ],
+    "description": "A Large mechanical feline built for combat, it has a solid metallic structure, showcasing agility and power.",
+    "memorable": "Highly resistant to magical effects, functions as a protective guardian in battles.",
+    "goals": "Serves as a mechanical guardian for its masters, protecting them from harm.",
+    "relations": "May be found serving wizards or engineers who create constructs for defense.",
+    "environment": "Often found in workshops, laboratories, or battlegrounds protecting key locations.",
+    "strengths": "Magic Resistance provides advantage on saving throws against spells, and it is immune to many conditions.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma limit complex decisions and social interactions.",
+    "attacks": "Utilizes a Multiattack consisting of one bite and two claw strikes, capable of inflicting substantial damage.",
+    "most_powerful_ability": "Pounce ability allows it to knock foes prone and deal extra damage on a follow-up attack.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immutable Form grants immunity to forms of alteration.",
+        "Deflecting Leap offers tactical flexibility in protecting allies.",
+        "Can knock enemies prone, setting them up for devastating follow-up attacks."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian creature",
+        "large construct that protects its ward",
+        "tactical clockwork tiger with magical resistance",
+        "formidable cat-like construct in combat",
+        "mechanical feline with ability to knock down foes"
+    ]
+}

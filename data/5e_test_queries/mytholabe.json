@@ -1,0 +1,25 @@
+{
+    "name": "Mytholabe",
+    "queries": [
+        {
+            "query": "large flying construct with high armor class and magic resistance",
+            "variant": "large construct that flies and has high AC plus magic resistence"
+        },
+        {
+            "query": "combat-supporting construct with abilities to counter magic and deafening attack",
+            "variant": "combat-support construct that counters magic with deafening attacks"
+        },
+        {
+            "query": "creature that cannot walk but hovers and has powerful melee attacks",
+            "variant": "creature that flies and has strong melee attacks but cannot walk"
+        },
+        {
+            "query": "magical creature with low intelligence but excellent at physical combat",
+            "variant": "magical being with low IQ but great physical fighting skills"
+        },
+        {
+            "query": "deafening monster with critical hit penalties and healing abilities",
+            "variant": "monster that deafens foes and has healing powers plus critical hit penalties"
+        }
+    ]
+}

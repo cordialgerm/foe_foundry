@@ -1,0 +1,25 @@
+{
+    "name": "Holy Knight",
+    "queries": [
+        {
+            "query": "humanoid knight that heals allies and provides fear immunity",
+            "variant": "knight that is humanoid and can heal allies while making them immune to fear"
+        },
+        {
+            "query": "powerful medium creature with high strength and constitution",
+            "variant": "strong creature of medium size that has high constitution and strength attributes"
+        },
+        {
+            "query": "greatsword-wielding knight that supports allies in combat",
+            "variant": "knight using a greatsword that gives combat support to allies"
+        },
+        {
+            "query": "knight with an aura of courage and multiattack ability",
+            "variant": "aura of courage knight that has the ability to attack multiple times"
+        },
+        {
+            "query": "Holy Knight stats and abilities for D&D",
+            "variant": "D&D abilities and stats for the Holy Knight"
+        }
+    ]
+}

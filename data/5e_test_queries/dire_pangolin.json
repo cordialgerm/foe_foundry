@@ -1,0 +1,25 @@
+{
+    "name": "Dire Pangolin",
+    "queries": [
+        {
+            "query": "large beast with tough armor and slashing attack",
+            "variant": "big beast that has strong armor and slashing attack"
+        },
+        {
+            "query": "creature with clamping claws and resistance to poison",
+            "variant": "monster with sharp claws and poison resistance"
+        },
+        {
+            "query": "defensive creature that can curl into a ball and resist damage",
+            "variant": "creature that can roll into a ball and has damage resistance"
+        },
+        {
+            "query": "low-intelligence beast that has keen senses and strong melee attacks",
+            "variant": "beast with low intelligence, strong melee attacks, and keen senses"
+        },
+        {
+            "query": "Dire Pangolin abilities in combat and its natural armor",
+            "variant": "Dire Pangolin's combat skills and natural defense"
+        }
+    ]
+}

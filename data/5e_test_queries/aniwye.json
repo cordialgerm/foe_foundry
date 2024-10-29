@@ -1,0 +1,25 @@
+{
+    "name": "Aniwye",
+    "queries": [
+        {
+            "query": "large monstrosity that can shapeshift into an ogre or a skunk",
+            "variant": "big monster that shapeshifts into a skunk or ogre"
+        },
+        {
+            "query": "dangerous creature with deadly poison and high perception skills",
+            "variant": "hazardous beast with strong perception and lethal poison"
+        },
+        {
+            "query": "neutral evil monstrosity that excels in stealth and climbing",
+            "variant": "evil neutral monster skilled in climbing and stealthing"
+        },
+        {
+            "query": "skunk-like monster with powerful bludgeoning attacks in giant form",
+            "variant": "skunk creature with strong attacks when in giant shape"
+        },
+        {
+            "query": "Aniwye abilities and combat tactics in different forms",
+            "variant": "Aniwye combat strategies and abilities in various shapes"
+        }
+    ]
+}

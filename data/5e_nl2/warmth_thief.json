@@ -1,0 +1,52 @@
+{
+    "name": "Warmth Thief",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Tiny",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 40 ft, walk 10 ft",
+    "role": "Skirmisher",
+    "tags": [
+        "Fey",
+        "Cold",
+        "Undead"
+    ],
+    "adjectives": [
+        "tiny",
+        "cold",
+        "stealthy"
+    ],
+    "description": "The Warmth Thief is a tiny fey creature embodying the essence of cold and stealth, capable of siphoning warmth and life force.",
+    "memorable": "It drains warmth and life from its victims while being able to regain health from the damage dealt.",
+    "goals": "To manipulate and harm those around it by draining warmth and life.",
+    "relations": "It may be encountered with other fey creatures or cold-themed monsters.",
+    "environment": "Primarily found in colder climates but struggles in warm environments.",
+    "strengths": "Immune to cold damage and gains health from the cold damage it inflicts.",
+    "weaknesses": "Vulnerable to warm environments, risking exhaustion from heat.",
+    "attacks": "Uses freezing claws to deal slashing and cold damage, inflicting chilling effects on its targets.",
+    "most_powerful_ability": "Aura of Warmth Stealing allows it to deal cold damage and regain hit points from nearby foes.",
+    "equipment": null,
+    "senses": "Possesses truesight to detect hidden foes within 60 feet.",
+    "skills": "Excels in deception and stealth with +8 modifiers each.",
+    "additional_information": [
+        "Uses cold damage in its attacks and abilities.",
+        "Can create new undead threats from slain humanoids.",
+        "Resistant to physical attacks from most nonmagical sources.",
+        "Maintains mobility through immunity to paralysis and prone condition.",
+        "Possesses a high Dexterity and Constitution for agility and durability."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fey creature that siphons warmth",
+        "cold-themed stealthy creature in colder climates",
+        "manipulative tiny monster that drains life",
+        "creature immune to cold with chilling attacks",
+        "fey creature that creates undead upon death"
+    ]
+}

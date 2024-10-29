@@ -1,0 +1,51 @@
+{
+    "name": "Myrmex",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk, burrow, and climb at 40 feet each",
+    "role": "null",
+    "tags": [
+        "elemental",
+        "earth",
+        "nature"
+    ],
+    "adjectives": [
+        "resilient",
+        "earthy",
+        "manipulative"
+    ],
+    "description": "The Myrmex is a medium-sized elemental with a strong connection to earth and nature, boasting impressive durability and a physical presence. Its body allows it to maneuver seamlessly through various terrains.",
+    "memorable": "The Myrmex can manipulate earth and create barriers, influencing its environment dramatically.",
+    "goals": "To defend its territory and manipulate the battlefield.",
+    "relations": "Often found in the company of other earth-elementals or nature spirits.",
+    "environment": "Typically found in rocky terrain or natural settings rich in earth and stone.",
+    "strengths": "Possesses high durability and resistance to various damage types; can navigate difficult terrain effortlessly.",
+    "weaknesses": "Low Charisma limits social interactions, making it less engaging.",
+    "attacks": "Can deliver three powerful Bite attacks that inflict piercing and poison damage.",
+    "most_powerful_ability": "Earth Manipulation allows it to shape earth at will, creating obstacles or obstacles.",
+    "senses": "Has blindsight up to 60 feet, allowing it to sense surroundings in complete darkness.",
+    "skills": "Possesses good perception, with a +2 modifier to notice surroundings.",
+    "additional_information": [
+        "Elemental Nature means it doesn't require air, food, drink, or sleep.",
+        "Keen Smell gives it advantage on perception checks reliant on smell.",
+        "Limited Telepathy permits communication of simple messages to nearby creatures.",
+        "Stone Walk enables movement through difficult rocky terrain without penalty.",
+        "Immunity to exhaustion and several conditions increases its survivability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can perform Earth Shift and Wall of Earth as spell-like abilities.",
+    "test_queries": [
+        "earth manipulating elemental creature",
+        "tough elemental with keen smell",
+        "earth creature that molds terrain",
+        "battlefield controller with poison attacks",
+        "elemental that walks through stone effortlessly"
+    ]
+}

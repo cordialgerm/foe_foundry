@@ -1,6 +1,8 @@
 <MonsterName/>Rum Gremlin</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>27</HP>
 <summary>The Rum Gremlin is a tiny fey creature embodying the chaotic evil alignment. It uses its mischievous nature and abilities to create havoc, particularly by instilling a state of drunkenness in its victims. With a relatively low Armor Class of 13 and 27 hit points, it relies on cunning and speed rather than brute force. Its Dexterity score of 16 grants it a good level of agility and the ability to remain hidden, while its Constitution score of 14 provides it with average resilience against damage. The Rum Gremlin is skilled in stealth and has the unique ability to coil its surroundings in an aura that can incapacitate those who fail to resist its effects, making it a troublesome foe for unsuspecting adventurers. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Rum Gremlin excels at creating chaotic situations in battle, hinder
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Rum Gremlin
 
 *Tiny* *Fey* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, range 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
 - **Claws:** Melee Weapon Attack: +5 to hit, range 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.
 - **Spellcasting:** The gremlin casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 11):<br>At will: prestidigitation<br>3/day: command
+</statblock>
 
 

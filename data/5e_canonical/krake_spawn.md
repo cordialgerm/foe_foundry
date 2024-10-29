@@ -1,6 +1,8 @@
 <MonsterName/>Krake Spawn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>14</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>175</HP>
 <summary>The Krake Spawn is a formidable creature characterized as a Huge Monstrosity with a neutral evil alignment. It possesses robust physical attributes, particularly in Strength and Constitution, making it exceptionally durable in combat. With a significant pool of hit points and a challenge rating of 14, it serves as a powerful adversary for adventurers. Its primary strengths lie in its multiple attacks, high damage output, and the ability to grapple opponents with its tentacles, all while being immune to cold, poison, and psychic damage. However, its relatively low Dexterity leaves it vulnerable to ranged attacks and finesse-based maneuvers. Notably, the Krake Spawn's amphibious nature allows it to thrive both underwater and on land, enhancing its versatility during encounters.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ As a bonus action, it can use Water Jet, which pushes back nearby creatures and 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Krake Spawn
 
 *Huge* *Monstrosity* *Neutral Evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Water Jet:** Each creature within 5 feet of the krake spawn must succeed on a DC 17 Dexterity saving throw or be knocked prone. The spawn then swims up to half its swimming speed without provoking opportunity attacks. The spawn must be underwater to use this bonus action.
+</statblock>
 
 

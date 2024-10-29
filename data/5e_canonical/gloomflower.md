@@ -1,6 +1,8 @@
 <MonsterName/>Gloomflower</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>3</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Gloomflower is a tiny, unaligned plant creature with a unique blend of defensive and offensive capabilities, particularly focusing on psychic damage and manipulation of its opponents. With a relatively high Armor Class of 12 and a respectable pool of 44 hit points, it can withstand a moderate amount of damage. The Gloomflower’s primary strengths are its ability to inflict psychic damage through its attacks as well as its special abilities, which can confuse and incapacitate enemies. However, its weaknesses include low Dexterity and Intelligence scores, which limit its agility and cognitive capabilities, respectively. Its challenge rating of 3 indicates that it can pose a significant threat to lower-level adventurers, but the creature's reliance on psychic powers makes it less effective against foes with appropriate resistances.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Gloomflower's combination of psychic damage, disorienting effects, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gloomflower
 
 *Tiny* *Plant* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Corrupting Visions (Recharge 5-6):** Each creature of the gloomflower's choice that is within 60 feet of the gloomflower and aware of it must make a DC 14 Wisdom saving throw. On a failure, a creature is bombarded with visions of its fears and anxieties for 1 minute. While bombarded, it takes 7 (2d6) psychic damage at the start of each of its turns and must spend its action to make one melee attack against a creature within 5 feet of it, other than the gloomflower or itself. If the creature can't make a melee attack, it takes the Dodge action. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. On a success, a creature is incapacitated by hallucinations until the end of its next turn but isn't bombarded with visions of its fears and anxieties. <br><br>A creature that is reduced to 0 hp by this psychic damage falls unconscious and is stable. When that creature regains consciousness, it suffers permanent hallucinations and has disadvantage on ability checks until cured by a remove curse spell or similar magic.
 
 
+</statblock>
 
 

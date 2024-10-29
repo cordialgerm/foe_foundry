@@ -1,0 +1,25 @@
+{
+    "name": "Shroud",
+    "queries": [
+        {
+            "query": "stealthy undead creature vulnerable to radiant damage",
+            "variant": "undead creature that is stealthy and weak against radiant attacks"
+        },
+        {
+            "query": "medium-sized shadowy monster that drains strength",
+            "variant": "shadowy medium monster that can drain strength from foes"
+        },
+        {
+            "query": "creature immune to necrotic damage that attacks in darkness",
+            "variant": "monster that is immune to necrotic damage and strikes in shadows"
+        },
+        {
+            "query": "undead with darkvision and special abilities in dim light",
+            "variant": "a darkvision undead creature with unique abilities in low light"
+        },
+        {
+            "query": "creature that transforms into a shadow after draining life",
+            "variant": "monster that evolves into a shadow after absorbing life energy"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Giant Badger",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 15,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walk, 10 ft. burrow",
+    "role": null,
+    "tags": [
+        "beast",
+        "multiattack",
+        "burrowing"
+    ],
+    "adjectives": [
+        "giant",
+        "fierce",
+        "tenacious"
+    ],
+    "description": "The Giant Badger is a medium-sized creature known for its powerful claws and strong digging abilities, sporting a fierce appearance and aggressive behavior when provoked.",
+    "memorable": "Its keen sense of smell and aggressive combat responses make it a formidable opponent despite its size.",
+    "goals": "Primarily foragers, they dig through earth and soft rock to create extensive tunnel networks.",
+    "relations": "Usually found in forests or grasslands, they might be encountered alongside other burrowing creatures.",
+    "environment": "Forests or grasslands",
+    "strengths": "Highly mobile with burrowing capabilities and heightened smell perception.",
+    "weaknesses": "Low intelligence and charisma, making it ineffective in complex social interactions.",
+    "attacks": "Uses sharp claws and biting attacks to deal piercing and slashing damage.",
+    "most_powerful_ability": "Keen Smell, which gives it advantage on smell-based Perception checks.",
+    "equipment": null,
+    "senses": "Has a keen sense of smell, allowing for heightened awareness of surroundings.",
+    "skills": "Advantage on Perception checks that rely on smell enhances its tracking capabilities.",
+    "additional_information": [
+        "Aggressive if provoked, will retaliate against attackers.",
+        "Burrows to create extensive tunnel networks.",
+        "Uses a grumpy combat tactic to focus on attackers.",
+        "Average hit points for a creature of its challenge rating.",
+        "Low defensive capabilities with an armor class of 10."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive burrowing forest creature",
+        "medium-sized beast with sharp claws",
+        "giant badger with keen sense of smell",
+        "fierce badger that digs tunnels",
+        "badger that attacks when provoked"
+    ]
+}

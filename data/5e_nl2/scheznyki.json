@@ -1,0 +1,54 @@
+{
+    "name": "Scheznyki",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., fly 15 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "chaotic",
+        "spellcaster",
+        "melee"
+    ],
+    "adjectives": [
+        "small",
+        "chaotic",
+        "evil",
+        "magical"
+    ],
+    "description": "The Scheznyki is a small fey creature embodying chaotic evil with a formidable presence. It possesses striking features and a long beard, making it visually distinctive.",
+    "memorable": "Its unique weakness to having its beard cut off disables its powerful spellcasting ability, contrasting its formidable combat capabilities.",
+    "goals": "To sow chaos and engage enemies in battle using both melee and magic.",
+    "relations": "Associated with other chaotic fey and magical creatures.",
+    "environment": "Found in forested or magical areas, often hidden from view.",
+    "strengths": "Strong melee attacks enhanced by its Brute ability, along with robust magic resistance.",
+    "weaknesses": "Vulnerable if its beard is cut off, which disables its spellcasting.",
+    "attacks": "Utilizes a War Pick for melee attacks and an Arcane Bolt for ranged strikes, dealing substantial damage.",
+    "most_powerful_ability": "Can cast various spells like Dispel Magic and Hold Person, making it a versatile combatant.",
+    "equipment": "War Pick",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in complete darkness as if it were dim light.",
+    "skills": null,
+    "additional_information": [
+        "Immune to being unconscious",
+        "Has advantage on saving throws against spells",
+        "Can turn invisible until it attacks or casts a spell",
+        "Spellcasting ability based on Charisma with a DC of 14",
+        "Can cast various supportive and control spells daily"
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": "Can cast spells at will or multiple times a day, providing utility and battlefield control.",
+    "test_queries": [
+        "small chaotic evil fey creature",
+        "fey with powerful spells and melee strikes",
+        "magical creature that becomes invisible",
+        "creature vulnerable when its beard is cut",
+        "Scheznyki combat abilities and tactics"
+    ]
+}

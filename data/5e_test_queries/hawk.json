@@ -1,0 +1,25 @@
+{
+    "name": "Hawk",
+    "queries": [
+        {
+            "query": "tiny bird of prey with keen eyesight and fast flight",
+            "variant": "small prey bird known for quick flight and sharp vision"
+        },
+        {
+            "query": "fragile creature that can scout quickly in forests",
+            "variant": "delicate animal that swiftly scouts through woodlands"
+        },
+        {
+            "query": "flying small beast used for reconnaissance and evasion",
+            "variant": "small airborne creature utilized for scouting and escape"
+        },
+        {
+            "query": "hawk with advantageous sight and a quick in the air",
+            "variant": "bird of prey with enhanced vision and rapid airborne speed"
+        },
+        {
+            "query": "quick bird that hunts small animals and has weak strength",
+            "variant": "swift avian that captures small creatures and possesses low strength"
+        }
+    ]
+}

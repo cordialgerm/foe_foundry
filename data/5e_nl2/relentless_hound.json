@@ -1,0 +1,51 @@
+{
+    "name": "Relentless Hound",
+    "creature_type": "Undead",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "hound",
+        "necrotic"
+    ],
+    "adjectives": [
+        "menacing",
+        "chaotic",
+        "undead"
+    ],
+    "description": "A medium-sized, frightening undead creature with spectral features, embodying chaos and decay.",
+    "memorable": "Can charm humanoids with kindness and create spectral duplicates upon taking damage.",
+    "goals": "To terrorize and weaken opponents through relentless attacks and the creation of spectral allies.",
+    "relations": "Might be found alongside other undead creatures or spectral entities.",
+    "environment": "Can be encountered in eerie, haunted locations or battlegrounds of the dead.",
+    "strengths": "High physical strength increases the danger of its melee attacks, along with multiple resistances.",
+    "weaknesses": "Lacks intelligence and charisma, making it ineffective in social situations.",
+    "attacks": "Uses two spectral bites that deal necrotic damage and reduce maximum hit points if both connect.",
+    "most_powerful_ability": "The 'Multiply' ability creates spectral hounds to aid it in battle after taking damage.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see well in low-light conditions.",
+    "skills": "Average perception skill with a +0 modifier.",
+    "additional_information": [
+        "Immune to cold, necrotic, and poison damage.",
+        "Resistant to acid, fire, lightning, thunder, and nonmagical bludgeoning, piercing, and slashing.",
+        "Completely immune to conditions like exhaustion and paralysis.",
+        "Undead nature allows it to function without air, food, drink, or sleep.",
+        "Capable of causing long-term hit point loss to its targets."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead hound that creates spectral duplicates",
+        "menacing creature that drains maximum hit points",
+        "chaotic undead with the ability to charm",
+        "fast-moving hound with necrotic abilities",
+        "skirmisher hound that flies and attacks"
+    ]
+}

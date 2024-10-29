@@ -1,6 +1,8 @@
 <MonsterName/>Living Star</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>19</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>207</HP>
 <summary>The Living Star is a huge celestial creature that can embody any alignment, representing both a formidable presence in combat and a unique entity within the cosmos. With an impressive Armor Class of 19 and a significant pool of Hit Points totaling 207, it stands as a powerful adversary. This creature specializes in both melee and ranged attacks, leveraging its high Strength, Dexterity, and Charisma, making it exceptionally effective in engaging enemies. Its challenge rating of 19 indicates that it poses a significant threat to adventurers, capable of dealing devastating radiant damage and inflicting harmful conditions. Its major weaknesses include susceptibility to magical attacks, although it possesses some formidable defenses to mitigate those risks. Overall, the Living Star is an exceptionally powerful entity in the D&D universe, capable of casting spells and using special abilities that influence the course of battle.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ When it comes to its actions, the Living Star can make three attacks using its M
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Living Star
 
 *Huge* *Celestial* *any alignment*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Silvered Ray:** Ranged Spell Attack: +12 to hit, range 150 ft., one target. Hit: 28 (4d10 + 6) radiant damage, and the target must succeed on a DC 19 Charisma saving throw or be stunned until the end of its next turn.
 
 
+</statblock>
 
 

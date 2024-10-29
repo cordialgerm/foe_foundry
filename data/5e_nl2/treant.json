@@ -1,0 +1,50 @@
+{
+    "name": "Treant",
+    "creature_type": "Plant",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 16,
+    "srd": true,
+    "cr": "9",
+    "movement": "30 feet on the ground",
+    "role": "Defender",
+    "tags": [
+        "forest guardian",
+        "sentient tree",
+        "nature protector"
+    ],
+    "adjectives": [
+        "towering",
+        "ancient",
+        "wise"
+    ],
+    "description": "A towering, sentient tree-like creature with bark-like skin, branches for arms, and roots for legs, standing over 20 feet tall.",
+    "memorable": "The Treant's ability to animate trees and blend in with its surroundings makes it a formidable guardian of the forest.",
+    "goals": "To protect its woodland home and maintain harmony with nature.",
+    "relations": "Usually found in the company of other forest creatures; can communicate with beasts and plants.",
+    "environment": "Typically found in forests and natural landscapes.",
+    "strengths": "Exceptional physical strength and durability, coupled with the ability to animate plants for combat.",
+    "weaknesses": "Susceptible to fire damage, which can significantly weaken it.",
+    "attacks": "The Treant performs slam attacks with massive strength and can throw boulders, dealing heavy bludgeoning damage.",
+    "most_powerful_ability": "The ability to animate trees and plants to fight alongside it, creating difficult terrain for enemies.",
+    "equipment": null,
+    "senses": "Has keen passive perception of 15.",
+    "skills": null,
+    "additional_information": [
+        "Can blend into surroundings with False Appearance.",
+        "Deals double damage to objects and structures as a Siege Monster.",
+        "Pervasively wise, able to communicate effectively with forest life."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "towering guardian of the forest",
+        "ancient tree creature with strong attacks",
+        "sentient tree that animates plants",
+        "huge protector of woodlands",
+        "treant blends in with forest surroundings"
+    ]
+}

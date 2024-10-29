@@ -1,0 +1,51 @@
+{
+    "name": "Ghillie Dubh",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking, 20 feet climbing and swimming",
+    "role": "Defender",
+    "tags": [
+        "Celestial",
+        "Protector",
+        "Forest",
+        "Nature"
+    ],
+    "adjectives": [
+        "forest-dwelling",
+        "intelligent",
+        "adaptable",
+        "good-aligned"
+    ],
+    "description": "The Ghillie Dubh embodies the essence of good and is closely tied to woody environments, often seen as a protector of nature.",
+    "memorable": "Its ability to alter perception of creatures in the forest and communicate with beasts and plants makes it a unique guardian.",
+    "goals": "To protect its woodland domain and assist other creatures in navigating the forest.",
+    "relations": "Often encountered with other forest-dwelling creatures, it may also serve as a guardian for enchanted areas.",
+    "environment": "Forested areas, usually found in natural settings like woods and glades.",
+    "strengths": "Strong perception, capable of stealth and advantageous interactions in forest environments.",
+    "weaknesses": "Struggles against powerful foes due to lower overall damage output.",
+    "attacks": "Slam attack dealing bludgeoning damage with moderate efficacy.",
+    "most_powerful_ability": "Forest Knowledge allows manipulation of creatures\u2019 understanding of the forest environment.",
+    "senses": "Possesses passive perception of 16, indicating exceptional awareness of hidden creatures.",
+    "skills": "Proficient in nature, perception, stealth, and survival, excelling in forest-related tasks.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Resistant to cold and radiant damage.",
+        "Forest Camouflage grants advantage on stealth in forests.",
+        "One with the Trees provides enhanced perception in familiar forests.",
+        "Can create a sapling-shaped sensor for reconnaissance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "guardian of the forest with healing powers",
+        "protector creature that communicates with plants",
+        "intelligent celestial being in wooded areas",
+        "forest-dwelling creature with telepathic abilities",
+        "stealthy monster that influences survival in forests"
+    ]
+}

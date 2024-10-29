@@ -1,0 +1,52 @@
+{
+    "name": "Shetani",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "walks at 30 ft. and flies at 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "spellcaster",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptable",
+        "cunning"
+    ],
+    "description": "The Shetani is a Medium fiend with magical capabilities. It possesses a high Armor Class and significant hit points, making it a durable opponent. Its skin is likely dark or shadowy, and it has a menacing presence that reflects its malevolent nature.",
+    "memorable": "The Shetani has the ability to absorb moisture and cause exhaustion in its foes, along with powerful necrotic attacks and versatility in changing forms.",
+    "goals": "To manipulate and dominate through cruelty and powerful magic.",
+    "relations": "Can be encountered alongside other fiends or as part of a larger plot involving dark powers.",
+    "environment": "Commonly found in dark, desolate locations, often tied to infernal or corrupt lands.",
+    "strengths": "Highly mobile, with resistance to fire and poison, and magical resistance that allows it to effectively counter spell attacks.",
+    "weaknesses": "Dependent on spells and physical attacks, vulnerable to foes who can outmatch or bypass its defenses.",
+    "attacks": "Utilizes slashing strikes with claws that also inflict necrotic damage, alongside ranged necrotic attacks.",
+    "most_powerful_ability": "Desiccating Breath, which can affect multiple foes, draining life and causing exhaustion.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a high passive perception, aiding in detecting hidden threats.",
+    "skills": "Moderate perception skill enhancing its ability to notice hidden creatures or traps.",
+    "additional_information": [
+        "Can see through magical darkness with Devil\u2019s Sight.",
+        "Its attacks count as magical for overcoming resistances.",
+        "Can cast a variety of spells to manipulate the battlefield.",
+        "Can transform into a beast or humanoid for infiltration.",
+        "Has a powerful necrotic damage output with its attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Can cast spells such as Charm Person and Silent Image at will, with access to more powerful spells several times a day.",
+    "test_queries": [
+        "fiend with powerful necrotic attacks",
+        "cunning creature that can change shape",
+        "medium fiend with magical resistance",
+        "creature that drains moisture from foes",
+        "skirmisher fiend that casts spells"
+    ]
+}

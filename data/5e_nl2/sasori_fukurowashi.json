@@ -1,0 +1,57 @@
+{
+    "name": "Sasori Fukurowashi",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 123,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 80 ft., walk 40 ft., climb 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "agile",
+        "magical",
+        "versatile"
+    ],
+    "adjectives": [
+        "agile",
+        "versatile",
+        "stealthy",
+        "resilient"
+    ],
+    "description": "The Sasori Fukurowashi is a Medium-sized fey creature characterized by its exceptional agility and notable physical attributes. With high Dexterity and Wisdom scores, it is difficult to detect and has a keen awareness of its surroundings.",
+    "memorable": "Its ability to shift between planes and resist various elemental damages makes it a formidable foe in combat.",
+    "goals": "Typically seeks to explore and protect its surroundings, using its agility to evade danger.",
+    "relations": "May be found in the company of other fey creatures or serving as guardians of natural places.",
+    "environment": "Often encountered in magical forests or mystical realms.",
+    "strengths": "Possesses truesight up to 60 feet and can avoid opportunity attacks when flying, giving it tactical mobility.",
+    "weaknesses": "Vulnerable to magical attacks, despite its many resistances and immunities.",
+    "attacks": "Engages with multiple attacks using claws, sting, and talons, grappling targets and dealing a mix of bludgeoning, piercing, and slashing damages.",
+    "most_powerful_ability": "Ethereal Jaunt enables it to navigate between the Material and Ethereal Planes swiftly, enhancing its evasion tactics.",
+    "senses": "Has truesight out to 60 feet, allowing it to detect invisible creatures and objects.",
+    "skills": "Highly skilled in perception and stealth, making it adept at avoiding detection.",
+    "additional_information": [
+        "Immunity to poison damage and exhaustion enhances its resilience.",
+        "High passive perception and saving throws for Dexterity and Wisdom.",
+        "Magic Resistance provides an advantage against spells.",
+        "Equipped with Keen Hearing and Sight for improved senses."
+    ],
+    "damage_types": [
+        "poison",
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile fey that can fly and grapple",
+        "creature with magical resistance and truesight",
+        "stealthy fey with the ability to shift planes",
+        "resilient fey resistant to elemental damage",
+        "medium-sized fey known for its versatile attacks"
+    ]
+}

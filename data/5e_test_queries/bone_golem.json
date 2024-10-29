@@ -1,0 +1,25 @@
+{
+    "name": "Bone Golem",
+    "queries": [
+        {
+            "query": "durable construct that absorbs necrotic damage and goes berserk",
+            "variant": "strong golem that absorbs necrotic damage and can go into a berserk state"
+        },
+        {
+            "query": "medium-sized bone creature immune to necrotic and poison damage",
+            "variant": "medium construct made of bones that is immune to necrotic and poison attacks"
+        },
+        {
+            "query": "golem that looks like bones and has magic resistance",
+            "variant": "creature resembling bones that possesses resistance to magic"
+        },
+        {
+            "query": "construct that can heal from necrotic attacks and is hard to control when injured",
+            "variant": "golem that heals from necrotic damage and is difficult to manage when hurt"
+        },
+        {
+            "query": "creature with low intelligence that uses claws and bone shards in battle",
+            "variant": "monster with poor intelligence that attacks with claws and bone sharding"
+        }
+    ]
+}

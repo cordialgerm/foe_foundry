@@ -1,0 +1,25 @@
+{
+    "name": "Giant Sloth",
+    "queries": [
+        {
+            "query": "large beast with strong attacks that can stun opponents",
+            "variant": "big beast that has powerful attacks and can make enemies stunned"
+        },
+        {
+            "query": "slow-moving giant creature that smells bad and grapples foes",
+            "variant": "giant slow creature that has a bad smell and can grapple enemies"
+        },
+        {
+            "query": "furry giant sloth that doubles speed for one round",
+            "variant": "fluffy giant sloth that can increase its speed for a single round"
+        },
+        {
+            "query": "tough sloth known for its resilience and powerful claws",
+            "variant": "durable sloth recognized for its strong resilience and claw attacks"
+        },
+        {
+            "query": "creature with darkvision and special odor abilities",
+            "variant": "monster with dark sight and unique foul smell abilities"
+        }
+    ]
+}

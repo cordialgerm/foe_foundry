@@ -1,0 +1,25 @@
+{
+    "name": "Mahoru",
+    "queries": [
+        {
+            "query": "large amphibious creature with strong melee attacks",
+            "variant": "big amphibious monster with powerful melee strikes"
+        },
+        {
+            "query": "predatory monstrosity that thrives in water and land",
+            "variant": "hunting monster that excels in both aquatic and terrestrial environments"
+        },
+        {
+            "query": "creature with keen sight and smell that uses pack tactics",
+            "variant": "being with sharp vision and sense of smell that relies on team strategies"
+        },
+        {
+            "query": "ferocious monster with a terrifying roar and limb-damaging bite",
+            "variant": "fierce creature with a scary roar and the ability to bite off limbs"
+        },
+        {
+            "query": "monstrosity with low intelligence but high strength and agility",
+            "variant": "monster that lacks smarts but has great strength and dexterity"
+        }
+    ]
+}

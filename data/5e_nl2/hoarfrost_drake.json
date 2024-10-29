@@ -1,0 +1,52 @@
+{
+    "name": "Hoarfrost Drake",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 30 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "cold",
+        "chaotic"
+    ],
+    "adjectives": [
+        "frosty",
+        "agile",
+        "menacing"
+    ],
+    "description": "The Hoarfrost Drake is a medium-sized dragon with a chaotic evil nature, characterized by its icy breath and sharp claws. It embodies the dangers of cold environments and has distinctive icy scales.",
+    "memorable": "Its ability to create a cloud of freezing fog makes it a formidable foe that can control the battlefield.",
+    "goals": "Typically serves as a menace in icy locales, posing a threat to adventurers.",
+    "relations": "Often found in the company of cold-themed creatures or other evil dragons.",
+    "environment": "Commonly inhabits icy regions and snowy terrains.",
+    "strengths": "Immunity to cold damage and special abilities to traverse icy surfaces effortlessly.",
+    "weaknesses": "Vulnerable to fire damage, which poses a significant risk during encounters.",
+    "attacks": "Employs a multiattack with one bite dealing piercing and cold damage, alongside slashing damage from claws.",
+    "most_powerful_ability": "Cloud of Riming Ice creates difficult terrain and inflicts cold damage, while potentially causing creatures to drop their items.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses good skills in perception and stealth, allowing it to detect threats and navigate undetected.",
+    "additional_information": [
+        "The Ice Walk ability allows movement across icy surfaces without penalty.",
+        "Icy Scales grants advantage on escape from grapples.",
+        "The Passive Perception of 13 helps it notice hidden threats.",
+        "Retaliatory Slip enables it to escape grapples and counter with a bite.",
+        "The creature's chaotic evil nature makes it a treacherous opponent."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon with icy breath",
+        "menacing creature in snowy terrain",
+        "tricky ice dragon that controls cold",
+        "medium frost creature with claw attacks",
+        "dragon immune to cold and weak to fire"
+    ]
+}

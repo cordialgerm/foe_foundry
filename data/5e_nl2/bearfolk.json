@@ -1,0 +1,52 @@
+{
+    "name": "Bearfolk",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Good",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "bear",
+        "humanoid",
+        "frontline",
+        "melee fighter"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "brutal",
+        "brawny"
+    ],
+    "description": "The Bearfolk is a medium-sized humanoid creature characterized by its bear-like features and a strong build. It sports hide armor, showcasing its connection to nature and its formidable presence in combat.",
+    "memorable": "The Bearfolk's ability to enter a berserk frenzy enhances its combat prowess, making it a fearsome opponent capable of enduring significant damage while dealing powerful blows.",
+    "goals": "Bearfolk typically seek to protect their territory and those they care about, engaging actively in frontline combat to uphold their ideals.",
+    "relations": "Bearfolk are often linked to other nature-aligned creatures and may be found alongside druids or rangers due to their shared values of protecting nature.",
+    "environment": "They can usually be found in forested areas or wilderness regions where they can connect with nature.",
+    "strengths": "Bearfolk have high strength and constitution, making them exceptional melee combatants capable of absorbing damage and dealing substantial blows.",
+    "weaknesses": "Their low intelligence and charisma limit their effectiveness in social interactions and strategy-based situations.",
+    "attacks": "In combat, the Bearfolk can make a Multiattack with a battleaxe, warhammer, and a vicious bite, showcasing its adaptability with various melee attacks.",
+    "most_powerful_ability": "Frenzy allows the Bearfolk to gain resistance to damage and advantage on attack rolls while making it easier for opponents to hit it.",
+    "equipment": "The Bearfolk wields a battleaxe and a warhammer, showcasing its proficiency in melee combat.",
+    "senses": "The Bearfolk possesses Keen Smell, granting it advantage on Wisdom (Perception) checks that rely on smell, enhancing its tracking abilities.",
+    "skills": "The Bearfolk has average Wisdom, allowing it decent perception to notice threats and dangers in its environment.",
+    "additional_information": [
+        "Impressive strength score of 19, providing a +4 modifier for hit and damage rolls.",
+        "Able to adapt to various combat situations with versatile weapon attacks.",
+        "Can quickly enter a frenzy, significantly boosting its combat effectiveness.",
+        "Resistance to bludgeoning, piercing, and slashing damage during its Frenzy.",
+        "Average dexterity allows for good agility and reflexes, contributing to survivability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "bear-like humanoid warrior",
+        "chaotic good melee fighter",
+        "brawny nature protector",
+        "frantic bearfolk combatant",
+        "humanoid with keen smell"
+    ]
+}

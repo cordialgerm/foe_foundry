@@ -1,6 +1,8 @@
 <MonsterName/>Jinmenju</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>9</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>126</HP>
 <summary>The Jinmenju is a Huge, chaotic neutral plant creature known for its unique capabilities in combat and interaction. With an impressive 126 hit points and a moderate armor class of 14 due to its natural armor, it presents a solid challenge to adventurers. It stands out with its ability to attack from a distance through its roots, which can burst from the ground at strategic locations. The Jinmenju is immune to certain damage types, making it very resilient to non-magical attacks, and it possesses a formidable Charisma score of 22, allowing it to effectively manipulate encounters and communicate with a wide range of creatures. However, it lacks mobility with a speed of 0 ft. and is heavily dependent on its roots for both offense and defense.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Jinmenju also has access to legendary actions, allowing it to perform key ma
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Jinmenju
 
 *Huge* *Plant* *chaotic neutral*
@@ -59,5 +62,6 @@ The jinmenju can take 3 legendary actions, choosing from the options below. Only
 - **Root:** The jimenju makes one root attack.
 - **Revitalize Roots:** The jinmenju restores 10 (3d6) hp to each of its exposed roots.
 - **Mirthful Miasma (Costs 2 Actions):** The jinmenju emits a puff of purple gas around its roots. Each creature within 10 feet of an exposed root must succeed on a DC 16 Constitution saving throw or fall prone with laughter, becoming incapacitated and unable to stand up until the end of its next turn. A creature in an area of overlapping gas only makes the saving throw once. A creature with an Intelligence score of 4 or less isn't affected.
+</statblock>
 
 

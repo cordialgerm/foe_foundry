@@ -1,0 +1,56 @@
+{
+    "name": "Cult Fanatic",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any non-good alignment",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 14,
+    "srd": true,
+    "ac_description": "studded leather",
+    "cr": "2",
+    "movement": "30 ft.",
+    "role": "null",
+    "tags": [
+        "cultist",
+        "spellcaster",
+        "zealot"
+    ],
+    "adjectives": [
+        "fervent",
+        "dark",
+        "charismatic",
+        "dangerous"
+    ],
+    "description": "The Cult Fanatic is a Medium humanoid draped in dark robes adorned with strange symbols, showcasing their unwavering devotion to a dark god. They possess a dagger and exhibit powerful spellcasting abilities centered around necrotic and radiant magic.",
+    "memorable": "Their ability to manipulate and inspire fanaticism in followers makes them both dangerous opponents and compelling leaders.",
+    "goals": "To further the goals of their cult, often through sacrifices or unholy rituals.",
+    "relations": "Often leads or commands lesser cultists and might serve alongside fiends or other dark entities.",
+    "environment": "Typically found in hidden cult hideouts, dark temples, or places of power.",
+    "strengths": "Resistance to charm and fear, coupled with powerful spellcasting abilities that can inflict significant damage or control enemies.",
+    "weaknesses": "Relatively low physical strength and constitution, making them vulnerable in direct melee combat.",
+    "attacks": "Utilizes a sacrificial dagger for melee strikes, dealing both slashing and additional fire or necrotic damage, along with ranged attacks using unholy magic.",
+    "most_powerful_ability": "Their spellcasting allows for powerful effects, including dealing necrotic damage and manipulating enemies with spells like Hold Person.",
+    "equipment": "Sacrificial Dagger",
+    "senses": "Their passive perception of 12 allows them to detect hidden threats reasonably well.",
+    "skills": "Skilled in deception and persuasion, allowing them to manipulate others effectively.",
+    "additional_information": [
+        "Dark Devotion grants advantage on saving throws against being charmed or frightened.",
+        "Unholy Weapons deal additional fire or necrotic damage with attacks.",
+        "Spellcasting ability focuses on Wisdom for enhanced spell effectiveness.",
+        "Can perform rituals and cast spells to influence others or inflict harm.",
+        "Known for their charismatic leadership within cults."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": "The Cult Fanatic is a 4th-level spellcaster with spells prepared including Radiant and Necrotic damage infliction spells.",
+    "test_queries": [
+        "dark zealot that casts necrotic spells",
+        "cultist with unholy magical abilities",
+        "fanatic humanoid dressed in dark robes",
+        "cult fanatic who manipulates with magic",
+        "spellcasting leader of a dark cult"
+    ]
+}

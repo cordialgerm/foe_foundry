@@ -1,0 +1,52 @@
+{
+    "name": "Thursir",
+    "creature_type": "Giant",
+    "alignment": "Neutral Evil or Lawful Evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "maledicted",
+        "durable"
+    ],
+    "description": "A large giant with a hefty frame and a menacing presence, wearing a chain shirt.",
+    "memorable": "The Thursir has potent melee capabilities and can invoke fear with lightning-infused attacks.",
+    "goals": "Typically seeks confrontation and domination over weaker creatures.",
+    "relations": "Could be encountered alongside other giants or as a mercenary for evil-aligned forces.",
+    "environment": "Commonly found in mountainous regions or dark, secluded areas.",
+    "strengths": "High strength and constitution make it tough in battle, paired with exceptional melee damage potential.",
+    "weaknesses": "Lack of agility and lower dexterity creates vulnerabilities to strategic combat tactics.",
+    "attacks": "Wields a Warhammer for devastating melee strikes and can throw rocks for ranged assault.",
+    "most_powerful_ability": "Runic Blood allows it to enhance weapon strikes with extra lightning damage and control reactions.",
+    "equipment": "Warhammer and chain shirt.",
+    "senses": "Possesses darkvision, allowing it to see in dim light within 60 feet.",
+    "skills": "Proficient in Athletics and has good perception, reflecting its awareness and strength.",
+    "additional_information": [
+        "Advantage on saving throws against poison due to Cast Iron Stomach ability.",
+        "Can inscribe runes in its blood to enhance weapon attacks.",
+        "Has a good saving throw bonus against Constitution effects.",
+        "Able to deliver impactful melee and ranged attacks.",
+        "Presence is often intimidating to lesser creatures."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large evil giant with lightning attacks",
+        "brute strength giant wielding a Warhammer",
+        "mountain giant that casts lightning spells",
+        "formidable giant with poison resistance abilities",
+        "malicious giant known for melee attacks"
+    ]
+}

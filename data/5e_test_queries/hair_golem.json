@@ -1,0 +1,25 @@
+{
+    "name": "Hair Golem",
+    "queries": [
+        {
+            "query": "small construct immune to charm and poison",
+            "variant": "small golem that is immune to charm and poison"
+        },
+        {
+            "query": "golem made of hair that has high agility and low intelligence",
+            "variant": "hair golem with low intellignce and high agility"
+        },
+        {
+            "query": "creature that deals slashing damage and resists non-magical attacks",
+            "variant": "monster that has slashing damage and resists nonmagical attacks"
+        },
+        {
+            "query": "golem with darkvision and unique immutable form ability",
+            "variant": "construct with darkvision and an immutable form ability"
+        },
+        {
+            "query": "construct that attacks with a lash and is vulnerable to slashing",
+            "variant": "thing that has a lash attack and is vulnerable to slashing damage"
+        }
+    ]
+}

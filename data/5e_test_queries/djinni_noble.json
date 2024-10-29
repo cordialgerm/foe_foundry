@@ -1,0 +1,25 @@
+{
+    "name": "Djinni Noble",
+    "queries": [
+        {
+            "query": "majestic creature that controls wind and storms living in the Elemental Plane of Air",
+            "variant": "majestic being that controls storms and wind living in the Elemental Plane of Air"
+        },
+        {
+            "query": "powerful elemental with high flying speed and resistance to lightning",
+            "variant": "strong elemental with high speed flying and lightning damage resistance"
+        },
+        {
+            "query": "elemental creature that can turn into a giant and create whirlwinds",
+            "variant": "elemental being that can become a giant and summon whirlwinds"
+        },
+        {
+            "query": "wind and storm magic wielder with high Dexterity and Charisma",
+            "variant": "storm magic user with high Charisma and Dexterity"
+        },
+        {
+            "query": "creature with innate spellcasting that can summon air elementals",
+            "variant": "being with innate spellcasting ability that can conjure air elementals"
+        }
+    ]
+}

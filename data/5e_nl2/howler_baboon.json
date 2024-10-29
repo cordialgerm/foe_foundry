@@ -1,0 +1,48 @@
+{
+    "name": "Howler Baboon",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "pack tactics",
+        "agile"
+    ],
+    "adjectives": [
+        "agile",
+        "strong",
+        "socially inept"
+    ],
+    "description": "The Howler Baboon is a medium-sized beast characterized by its agility and strength. It thrives in packs, making it a fearsome opponent in combat.",
+    "memorable": "Its Pack Tactics ability allows it to gain an advantage when fighting alongside allies.",
+    "goals": "To hunt and defend territory in packs.",
+    "relations": "Often found in groups or packs, can be related to other creatures in similar environments.",
+    "environment": "Typically found in jungles or forested areas.",
+    "strengths": "Very effective in close combat, especially when working together with allies.",
+    "weaknesses": "Low intelligence makes it poorly suited for strategic planning.",
+    "attacks": "Makes melee attacks with its fists and has the ability to throw rocks at a distance, both dealing bludgeoning damage.",
+    "most_powerful_ability": "Pack Tactics grants it advantage on attack rolls when allies are nearby.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception score of 13 for decent awareness of surroundings.",
+    "skills": "Proficient in Athletics, allowing it to excel in physical challenges, and Perception for spotting threats.",
+    "additional_information": [
+        "Thrives in group combat situations.",
+        "Average physical defenses with good durability.",
+        "Noted for its low social influence capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "medium-sized agile baboon in packs",
+        "Howler Baboon pack tactics and attacks",
+        "strong beast that throws rocks",
+        "agile jungle creature with melee attacks",
+        "creature that excels in close combat"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Flame-Scourged Scion",
+    "queries": [
+        {
+            "query": "huge aberration that uses fire attacks and can grapple opponents",
+            "variant": "big aberration that grapples enemies and uses fire attacks"
+        },
+        {
+            "query": "creature that thrives in fire and has tentacle attacks",
+            "variant": "monster that loves fire and uses tentacles to attack"
+        },
+        {
+            "query": "chaotic evil creature immune to paralysis and resistant to fire",
+            "variant": "evil chaotic monster that resists fire and is immune to being paralyzed"
+        },
+        {
+            "query": "monster that can see through fire and has high constitution",
+            "variant": "creature with good constitution that sees through fire"
+        },
+        {
+            "query": "fire-resistant monster with the ability to fill the area with embers",
+            "variant": "creature that resists fire and can unleash embers in its area"
+        }
+    ]
+}

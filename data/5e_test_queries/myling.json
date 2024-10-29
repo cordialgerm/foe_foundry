@@ -1,0 +1,25 @@
+{
+    "name": "Myling",
+    "queries": [
+        {
+            "query": "small undead creature that attacks with claws and inflicts necrotic damage",
+            "variant": "small undead being that uses claw attacks and deals necrotic harm"
+        },
+        {
+            "query": "myling abilities in ambush scenarios with strength reduction",
+            "variant": "myling's powers for ambushing and weakening strength"
+        },
+        {
+            "query": "creature that can bury its victims alive and has a stealth bonus",
+            "variant": "monster that can bury its prey and has a bonus to stealth"
+        },
+        {
+            "query": "chaotic evil undead that requires no food or sleep to function",
+            "variant": "chaotic evil undead that doesn't need food or sleep"
+        },
+        {
+            "query": "undead with darkvision and necrotic immunity that can wear down opponents",
+            "variant": "undead with darkvision and immunity to necrotic damage that can weaken foes"
+        }
+    ]
+}

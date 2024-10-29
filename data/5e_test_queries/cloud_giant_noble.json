@@ -1,0 +1,25 @@
+{
+    "name": "Cloud Giant Noble",
+    "queries": [
+        {
+            "query": "huge giant with strong magical abilities and weather control",
+            "variant": "huge giants that have magic powers and can control weather"
+        },
+        {
+            "query": "giant with exceptional strength and lightning resistance living in the clouds",
+            "variant": "giant that has great strength and is resistant to lightning, found in the clouds"
+        },
+        {
+            "query": "tall cloud giant that excels in melee combat and has spellcasting",
+            "variant": "tall giant from the clouds that is great in melee and also casts spells"
+        },
+        {
+            "query": "powerful giant that can create fog and manipulate gravity",
+            "variant": "strong giant that can make fog and control gravity"
+        },
+        {
+            "query": "cloud giant known for its high hit points and formidable melee attacks",
+            "variant": "cloud giant recognized for its large hit points and strong melee strikes"
+        }
+    ]
+}

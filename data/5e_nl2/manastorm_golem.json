@@ -1,0 +1,49 @@
+{
+    "name": "Manastorm Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 60 ft. and walk 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "golem",
+        "construct",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "magical"
+    ],
+    "description": "The Manastorm Golem is a medium-sized construct notable for its humanoid-shaped cloud form and ability to deliver powerful force damage with its attacks.",
+    "memorable": "Its ability to stun opponents and communicate telepathically with its creator makes it a unique combatant.",
+    "goals": "Typically aimed at combat scenarios, protecting its creator, or executing specific magical commands.",
+    "relations": "Often serves a wizard or a powerful mage who created it.",
+    "environment": "Usually found in magical laboratories, arcane towers, or places of power.",
+    "strengths": "Immunities to numerous damage types and conditions, and advantage on saving throws against magic.",
+    "weaknesses": "Low physical strength limits its melee combat effectiveness and interactions.",
+    "attacks": "Features powerful slam attacks that can stun and a ranged Force Bolt that deals substantial damage.",
+    "most_powerful_ability": "The Multiattack ability can immobilize a foe by stunning them if both attacks hit.",
+    "senses": "Possesses truesight extending to 120 feet, allowing it to see through illusions and magical concealments.",
+    "skills": null,
+    "additional_information": [
+        "Can move through spaces as narrow as 1 inch due to its Amorphous trait.",
+        "Communication with its creator is magical and can pass through solid objects unless obstructed by certain materials.",
+        "Returns to its original form after any alteration lasts only one round."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful magical golem that can fly",
+        "golem that can stun enemies",
+        "construct with truesight and magic resistance",
+        "magical creature that communicates telepathically",
+        "formidable opponent with devastating force damage"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Rime Worm Grub",
+    "creature_type": "Elemental",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "cold",
+        "elemental",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "cold-affine",
+        "burrowing",
+        "stealthy",
+        "ambitious"
+    ],
+    "description": "The Rime Worm Grub is a medium-sized elemental marked by its affinity for cold environments, with a tough natural armor and notable camouflage in snowy terrain. It has a burrowing form and can engage in effective melee attacks with a striking tendril.",
+    "memorable": "It has the ability to ambush foes, deal additional damage to weak targets, and burrow through snow effortlessly.",
+    "goals": "To ambush unsuspecting creatures and survive in cold climates.",
+    "relations": "Could be found with other cold elementals or in frigid environments.",
+    "environment": "Typically found in snowy terrains and cold environments.",
+    "strengths": "Resistant to cold damage, proficient in stealth, and capable of ambushing and attacking weakened foes.",
+    "weaknesses": "Low intelligence, wisdom, and charisma make it inept in non-combat interactions.",
+    "attacks": "Rime Tendril delivers both bludgeoning and cold damage, effective particularly against weakened creatures within reach.",
+    "most_powerful_ability": "Ravenous Larva allows it to attack anyone leaving its reach and grants advantage against injured foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet for enhanced hunting in the dark.",
+    "skills": "Proficient in Stealth, enhancing its ability to hide in snowy terrains.",
+    "additional_information": [
+        "Can breathe air and water due to its amphibious nature.",
+        "Burrows through nonmagical snow, ice, and difficult terrain without penalty.",
+        "Has advantage on Stealth checks made in snowy environments."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold elemental creature with burrowing ability",
+        "stealthy snowy ambusher",
+        "rime worm grub attacks with cold damage",
+        "medium-sized creature found in icy terrain",
+        "elemental that thrives in cold environments"
+    ]
+}

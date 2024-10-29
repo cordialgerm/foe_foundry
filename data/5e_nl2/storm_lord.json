@@ -1,0 +1,54 @@
+{
+    "name": "Storm Lord",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "fly 50 ft., walk 50 ft.",
+    "role": "Controller",
+    "tags": [
+        "Elemental",
+        "Storm",
+        "Thunder"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "fearsome"
+    ],
+    "description": "The Storm Lord is a formidable Huge elemental with mastery over storms and lightning, surrounded by a powerful tempest that shapes the battlefield.",
+    "memorable": "Its ability to create a large tempest and control its environment makes it a significant threat in combat.",
+    "goals": "To dominate the battlefield with storms and lightning, creating chaos among foes.",
+    "relations": "Related to other elemental beings, often encountered in stormy or chaotic environments.",
+    "environment": "Typically found in stormy, chaotic areas where its powers can flourish.",
+    "strengths": "Immunity to poison and various conditions plus resistances to several damage types enhance its survivability.",
+    "weaknesses": "Vulnerable to magical attacks that can bypass its resistances.",
+    "attacks": "The Storm Lord can make powerful slam attacks and fire devastating lightning bolts.",
+    "most_powerful_ability": "Tempest creates a large storm, imposing disadvantages and hindering movement of foes.",
+    "equipment": null,
+    "senses": "It has darkvision up to 120 feet and a passive perception of 17.",
+    "skills": "Proficient in athletics (+10), nature (+6), and perception (+7), demonstrating its versatile nature.",
+    "additional_information": [
+        "Can push creatures away with its storm power.",
+        "Capable of inflicting deafening thunder damage with Thunder Clap.",
+        "Creates an environment that extinguishes flames and impedes visibility.",
+        "High physical and magical resilience with various immunities.",
+        "Excellent melee and ranged combat capabilities."
+    ],
+    "damage_types": [
+        "acid",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "elemental that controls storms and lightning",
+        "huge storm monster that creates tempests",
+        "monster surrounded by a thunderous storm",
+        "powerful lightning elemental in battle",
+        "huge creature with thunder clap ability"
+    ]
+}

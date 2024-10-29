@@ -1,0 +1,25 @@
+{
+    "name": "Faerie Dragon",
+    "queries": [
+        {
+            "query": "tiny colorful dragon that can turn invisible and casts spells",
+            "variant": "small multicolored dragon that can become invisible and uses magic"
+        },
+        {
+            "query": "playful dragon known for confusion and stealth abilities",
+            "variant": "whimsical dragon famous for its stealth and confusing powers"
+        },
+        {
+            "query": "magical creature that flies and causes blindness with light",
+            "variant": "enchanting being that can soar and blinds foes with bright light"
+        },
+        {
+            "query": "tiny dragon with high dexterity living in magical environments",
+            "variant": "small dragon featuring excellent agility residing in enchanted places"
+        },
+        {
+            "query": "creature known for its breath attack that confuses enemies",
+            "variant": "being famous for its breath ability that causes confusion among foes"
+        }
+    ]
+}

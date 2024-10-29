@@ -1,6 +1,9 @@
 <MonsterName/>Archdruid</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any lineage</Subtype>
+<CR/>12</CR>
+<AC/>17</AC>
+<HP/>210</HP>
 <summary>The Archdruid is a powerful medium humanoid figure from the natural world, capable of harnessing the forces of nature to both protect and attack. It boasts a high armor class of 17 when in its favored natural environment, augmented by its wisdom modifier, making it a formidable opponent in combat. With a significant pool of hit points at 210, it can endure a considerable amount of punishment. The Archdruid has a challenge rating of 12, indicating its strong presence in powerful encounters, and a variety of spells and abilities that provide utility in both offense and defense. It excels in its ability to deal additional elemental damage through its attacks and can change its form to a beast, allowing for surprising strategies in combat. Although it has weaknesses in terms of a lower constitution and charisma score, its other abilities compensate well, making it an exceptional asset for any nature-themed campaign.</summary>
 
 <detail>
@@ -21,6 +24,7 @@ Additionally, the Archdruid has a unique bonus action called Change Shape, allow
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archdruid
 
 *Medium humanoid (any lineage)*
@@ -59,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The archdruid magically transforms into a Beast that has a challenge rating no higher than its own, or back into its true form, which is Humanoid. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies. In a new form, the archdruid retains its HP, ability to speak, proficiencies, and INT, WIS, and CHA modifiers, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

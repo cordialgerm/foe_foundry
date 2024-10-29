@@ -1,0 +1,50 @@
+{
+    "name": "Ghost Boar",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 68,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 feet walking speed allows quick approach",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "boar",
+        "spectral"
+    ],
+    "adjectives": [
+        "ghostly",
+        "powerful",
+        "resilient"
+    ],
+    "description": "The Ghost Boar has a spectral appearance that blends physical might with ghostly abilities, featuring tusks that can deliver strong melee attacks.",
+    "memorable": "It can phase through objects and is extremely resilient due to its Relentless ability.",
+    "goals": "Typically engages in combat, using its physical strength to overpower opponents.",
+    "relations": "May be associated with undead or spectral creatures in the environment.",
+    "environment": "Often found in haunted forests or battlefields.",
+    "strengths": "High Strength score for powerful melee attacks and resilience against being knocked out.",
+    "weaknesses": "Low Intelligence and Charisma result in ineffective combat interactions.",
+    "attacks": "Can deliver tusk attacks with significant slashing damage, and has a retaliatory strike with Tusk Swipe.",
+    "most_powerful_ability": "Incorporeal Jaunt allows it to move through creatures and obstacles.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Charge ability increases damage and can knock targets prone",
+        "Relentless ability keeps it in the fight when damaged",
+        "Tusk Swipe enables reaction attacks against melee attackers"
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghostly large boar with tusks",
+        "spectral creature that charges at enemies",
+        "powerful ghost boar in haunted forests",
+        "boar that can phase through obstacles",
+        "resilient creature that retaliates with tusks"
+    ]
+}

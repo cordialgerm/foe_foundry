@@ -1,6 +1,8 @@
 <MonsterName/>Otterfolk</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>18</HP>
 <summary>The Otterfolk is a small humanoid creature characterized as chaotic good. It embodies a playful and agile spirit, making it an intriguing addition to any Dungeons & Dragons campaign. With a good Dexterity score of 17, the Otterfolk excels in stealth and agility, allowing it to navigate its environment skillfully. Its average armor class of 14 provides a reasonable defense while its hit points are modest at 18, making it relatively fragile in direct confrontations. As a creature with a challenge rating of 1/4, the Otterfolk is best suited for lower-level encounters or as a whimsical ally for adventurers. Notably, its unique special abilities enhance its survival and evasion capabilities, giving it an edge in aquatic environments and against reptilian foes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Otterfolk brings a unique set of skills and abilities to encounters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Otterfolk
 
 *Small* *Humanoid* *chaotic good*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Secrete Oil (Recharge 4-6):** The otterfolk secretes an oil that makes it slippery until the end of its next turn. It has advantage on ability checks and saving throws made to escape a grapple. If it is grappled when it takes this action, it can take a bonus action to escape the grapple.
 
 
+</statblock>
 
 

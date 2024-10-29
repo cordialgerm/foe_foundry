@@ -1,0 +1,49 @@
+{
+    "name": "Crocotta",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "cunning",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "predatory",
+        "fast",
+        "deceptive"
+    ],
+    "description": "The Crocotta is a Medium-sized monstrosity with strong physical features, noted for its agility and predatory instincts.",
+    "memorable": "Notorious for its paralyzing gaze and ability to mimic sounds, making it an unpredictable foe.",
+    "goals": "The Crocotta often seeks to deceive and incapacitate enemies for an easy kill.",
+    "relations": "Often encountered in the company of other predatory creatures or in regions where cunning hunters prey.",
+    "environment": "Typically found in wild, untamed habitats where it can use its stealth and agility to hunt.",
+    "strengths": "It possesses high mobility and strong melee attacks, along with the ability to paralyze foes.",
+    "weaknesses": "Low Intelligence limits complex tactics and social interactions.",
+    "attacks": "The Crocotta can make a powerful bite attack with significant piercing damage and a claw attack that can knock opponents prone.",
+    "most_powerful_ability": "The Paralyzing Gaze can incapacitate enemies, giving the Crocotta a significant tactical advantage.",
+    "equipment": null,
+    "senses": "The Crocotta has a passive perception of 15, making it quite aware of its surroundings.",
+    "skills": "It has notable proficiency in perception and stealth, allowing it to excel in ambush tactics.",
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage from metal weapons.",
+        "Immune to being blinded and charmed.",
+        "Canines are immune to its Paralyzing Gaze ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning predator with paralyzing gaze",
+        "medium fast monstrosity mimics sounds",
+        "stealthy creature that has a powerful bite",
+        "monster that can paralyze using its eyes",
+        "predatory creature known for ambush tactics"
+    ]
+}

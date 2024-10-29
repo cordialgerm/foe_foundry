@@ -1,0 +1,55 @@
+{
+    "name": "Marilith",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 189,
+    "ac": 18,
+    "srd": true,
+    "cr": "16",
+    "movement": "40 feet, capable of teleportation",
+    "role": "Ambusher",
+    "tags": [
+        "demon",
+        "fiend",
+        "chaotic",
+        "tactical"
+    ],
+    "adjectives": [
+        "six-armed",
+        "serpentine",
+        "cunning",
+        "powerful"
+    ],
+    "description": "A large fiend with the upper body of a humanoid woman and the lower body of a massive serpent, equipped with six swords.",
+    "memorable": "Known for their strategic minds and ability to fight multiple opponents at once, combining martial prowess and demonic magic.",
+    "goals": "Often serve as generals in the demonic armies of the Abyss, commanding troops and controlling battle scenarios.",
+    "relations": "May serve alongside other demons and fiends as part of a demonic army.",
+    "environment": "Typically found in the chaotic realms of the Abyss, where they lead armies and wreak havoc.",
+    "strengths": "Possesses a high degree of agility and resilience, along with formidable swordsmanship and spell resistance.",
+    "weaknesses": "Dependent on melee combat, susceptible to tactical disadvantages against ranged attackers.",
+    "attacks": "Makes six attacks with longswords, dealing significant slashing damage, along with a powerful tail attack that can grapple opponents.",
+    "most_powerful_ability": "Flaming Weapons, allowing each weapon attack to deal additional fire damage.",
+    "equipment": null,
+    "senses": "Truesight up to 120 feet allows the Marilith to see through illusions and magical disguises.",
+    "skills": "Possesses high proficiency in resisting spells thanks to its Magic Resistance.",
+    "additional_information": [
+        "Can teleport short distances, enhancing its mobility in combat.",
+        "Can issue tactical commands to allies, improving their combat effectiveness.",
+        "Radiates a Chaotic Evil aura, representing its nature.",
+        "Grapples and restrains targets with its tail attack.",
+        "Advantages on saving throws against spells and magical effects."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "six-armed serpent demon",
+        "magically teleporting demon with swords",
+        "marilith tactical combat abilities",
+        "fiend with truesight and fire damage",
+        "demon general with multiple attacks"
+    ]
+}

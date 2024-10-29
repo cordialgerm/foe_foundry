@@ -1,0 +1,54 @@
+{
+    "name": "Gaki",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "chaotic",
+        "horror",
+        "monster"
+    ],
+    "adjectives": [
+        "grotesque",
+        "famished",
+        "chaotic",
+        "manipulative"
+    ],
+    "description": "The Gaki appears as a grotesque and famished specter, embodying chaos and hunger.",
+    "memorable": "The Gaki can compel creatures to move closer to it with its Gluttonous Attraction ability, creating a dangerous dynamic in combat.",
+    "goals": "To consume living beings through manipulation and physical attack.",
+    "relations": "Other undead creatures, particularly those with hunger or chaotic themes.",
+    "environment": "Typically found in dark, desolate areas or battlefields where it can hunt for prey.",
+    "strengths": "Exceptional Dexterity and Charisma, making it quick and manipulative.",
+    "weaknesses": "Very low Strength, limiting its effectiveness in physical confrontations.",
+    "attacks": "Multiattack with two supernatural bite attacks dealing piercing and acid damage.",
+    "most_powerful_ability": "Aura of Famine, causing necrotic damage to nearby creatures.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficiency in Perception, with a passive score of 14.",
+    "additional_information": [
+        "Immune to cold, necrotic, and poison damage.",
+        "Advantage on attack rolls against wounded opponents.",
+        "Can move through creatures and objects without limitation.",
+        "Causes significant damage with its ranged Spit Acid attack."
+    ],
+    "damage_types": [
+        "necrotic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "grotesque undead creature that eats souls",
+        "chaotic specter with necrotic aura",
+        "undead monster that causes hunger and fear",
+        "monster that attracts creatures to it",
+        "famished gaki with acid attacks"
+    ]
+}

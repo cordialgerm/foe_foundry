@@ -1,6 +1,8 @@
 <MonsterName/>Elvish Veteran Archer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>16 (studded leather)</AC>
+<HP/>66</HP>
 <summary>The Elvish Veteran Archer is a skilled humanoid warrior adept in ranged combat, blending agility and precision. With a medium size and an armor class of 16, it presents a good defense due to its studded leather armor. The archer has a total of 66 hit points, calculated as 12d8 + 12, which gives it decent resilience in battle, making it a moderate threat with a challenge rating of 3, worth 700 experience points for defeated characters. This creature is notable for its exceptional dexterity, boasting a score of 18 which provides a +4 modifier, enabling superior ranged attacks and stealth capabilities. While it has average strength and charisma, its skills in Nature, Perception, Stealth, and Survival allow it to excel in navigating various environments, particularly in tracking beasts.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ In terms of actions, the Elvish Veteran Archer can perform a "Multiattack," allo
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elvish Veteran Archer
 
 *Medium* *Humanoid* *Any Alignment*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Shortsword:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit:7 (1d6 + 4) piercing damage.
 - **Longbow:** Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage. Instead of dealing damage, the archer can pin part of the target’s clothing or body to the ground or to a nearby wall or tree. If it does so, the target is restrained. A creature, including the target, can take its action to remove the arrow and free the restrained target by succeeding on a DC 14 Strength check.
 - **Arrow Spray (Recharge 5–6):** The elvish veteran archer fires a flurry of arrows in a 15-foot cone. Each creature in the cone must make a DC 14 Dexterity saving throw, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

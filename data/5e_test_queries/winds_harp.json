@@ -1,0 +1,25 @@
+{
+    "name": "Wind's Harp",
+    "queries": [
+        {
+            "query": "psycho damage fiend with flight and low armor class",
+            "variant": "fiendish creature with psychic damage and flight abilities but low AC"
+        },
+        {
+            "query": "evil medium creature that uses charm and stealth tactics",
+            "variant": "medium-sized evil fiend using charm and stealth tactics"
+        },
+        {
+            "query": "manipulative fiend immune to fire and cold",
+            "variant": "cold and fire immune creature that is also manipulative"
+        },
+        {
+            "query": "charismatic fiend utilizing magical resistance and ranged attacks",
+            "variant": "fiend with high charisma using magic resistance and ranged spells"
+        },
+        {
+            "query": "monster with an infernal attack that targets multiple enemies",
+            "variant": "creature with an infernal attack affecting multiple foes"
+        }
+    ]
+}

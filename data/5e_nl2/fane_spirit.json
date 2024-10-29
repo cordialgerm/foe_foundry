@@ -1,0 +1,52 @@
+{
+    "name": "Fane Spirit",
+    "creature_type": "Undead",
+    "alignment": "any lawful alignment",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., hover, fly 40 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "spellcaster",
+        "resilient"
+    ],
+    "adjectives": [
+        "incorporeal",
+        "deceptive",
+        "haunting"
+    ],
+    "description": "The Fane Spirit embodies the essence of those who were once living, shifting between incorporeal and living forms, appearing much as it did in life during the day.",
+    "memorable": "Its ability to make targets forget recent events makes it a complex challenge for adventurers.",
+    "goals": "To engage with the living, often manipulating memories or seeking to protect sacred spaces.",
+    "relations": "May be encountered alongside other undead or spirits, often associated with places of rest or memorials.",
+    "environment": "Typically found in graveyards, sacred sites, or areas of great spiritual significance.",
+    "strengths": "Resistant to many damage types and immune to various conditions, enhancing combat survivability.",
+    "weaknesses": "Vulnerable to damage from silvered weapons and has a low walking speed.",
+    "attacks": "The Touch of Forgetfulness inflicts psychic damage and can erase memories of recent events from the target.",
+    "most_powerful_ability": "The Veil of the Living allows the spirit to appear as it did in life, creating thematic tension during encounters.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive perception of 14, allowing it to notice details.",
+    "skills": "Proficient in deception and religion, useful for manipulation and knowledge checks.",
+    "additional_information": [
+        "Has immunity to poison and psychic damage.",
+        "Uses spells like Cure Wounds and Hold Person strategically.",
+        "Can revert to its incorporeal form upon taking damage, instilling fear in onlookers.",
+        "Innate spellcasting ability allows for flexibility in combat and healing.",
+        "Gains a Strength score of 10 during the day, enhancing its combat abilities temporarily."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells like Chill Touch and Spare the Dying at will, with several healing and control options available daily.",
+    "test_queries": [
+        "haunting spirit that erases memories",
+        "undead that shifts forms during the day",
+        "complex foe with psychic attack abilities",
+        "spirit that can heal and harm simultaneously",
+        "creature found in graveyards with spellcasting"
+    ]
+}

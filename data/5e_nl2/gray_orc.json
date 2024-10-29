@@ -1,0 +1,50 @@
+{
+    "name": "Gray Orc",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 15,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "climb 30 ft., walk 40 ft., burrow 20 ft.",
+    "role": null,
+    "tags": [
+        "stealth",
+        "orc",
+        "agile"
+    ],
+    "adjectives": [
+        "resourceful",
+        "cunning",
+        "predator"
+    ],
+    "description": "Gray Orcs have pale skin decorated with swirls of black resin, enhancing their ability to blend into their dark surroundings.",
+    "memorable": "Their unique 'Magic Absorption' ability allows them to regain hit points from spells, making them tough adversaries against spellcasters.",
+    "goals": "Gray Orcs typically seek to ambush prey and survive in darkness, using their stealth and agility to hunt successfully.",
+    "relations": "They are typically encountered in groups, often working alongside other orcs or predatory creatures.",
+    "environment": "Gray Orcs thrive in dark, subterranean environments where their stealth can be fully utilized.",
+    "strengths": "High stealth and agility, combined with abilities that enhance their combat efficacy in groups.",
+    "weaknesses": "Sunlight sensitivity makes them less effective during the day, imposing penalties to attacks and perception.",
+    "attacks": "They use their claws to deal slashing damage with agile melee strikes.",
+    "most_powerful_ability": "The 'Magic Absorption' trait allows them to recover hit points when affected by spells.",
+    "equipment": null,
+    "senses": "They have blindsight up to 30 feet, allowing them to sense creatures without sight in darkness.",
+    "skills": "Skilled in stealth and acrobatics, reflecting their capabilities in ambush and mobility.",
+    "additional_information": [
+        "Known to paint their skin with symbols of their gods for success in hunting.",
+        "Can engage enemies aggressively as a bonus action.",
+        "Advantage on attack rolls when allies are nearby, enhancing their pack tactics.",
+        "Good constitution and dexterity make them hard to take down quickly.",
+        "They often employ ambush tactics to surprise their enemies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy pale humanoid predator",
+        "orc that can absorb magic damage",
+        "agile creature thriving in darkness",
+        "gray-skinned monster with claw attacks",
+        "ambush hunter with sunlight vulnerability"
+    ]
+}

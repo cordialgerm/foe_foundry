@@ -1,0 +1,52 @@
+{
+    "name": "Moonweb",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 30 ft.",
+    "role": "null",
+    "tags": [
+        "aberration",
+        "stealth",
+        "flying"
+    ],
+    "adjectives": [
+        "daunting",
+        "resilient",
+        "mobile",
+        "ethereal"
+    ],
+    "description": "The Moonweb is a Medium aberration with a daunting appearance, characterized by its ability to evade attacks and move between planes, and is perfectly adapted to thrive in low-light environments.",
+    "memorable": "It can regain health from its acid damage and has the ability to paralyze targets with its tendrils.",
+    "goals": "To ambush and neutralize foes using stealth and mobility.",
+    "relations": "Often encountered in areas infused with otherworldly energies or with creatures that inhabit different planes.",
+    "environment": "Found in places of ethereal energy or locations that blur the lines between planes.",
+    "strengths": "High dexterity allows for effective dodging; immune to many conditions.",
+    "weaknesses": "Very low intelligence limits complex strategies.",
+    "attacks": "Dissolving Bite deals piercing and acid damage while healing the Moonweb, and Tendrils can paralyze foes.",
+    "most_powerful_ability": "Etheric Pulse creates area control, partially ethereal targets can only deal magical damage to others.",
+    "senses": "Blindsight up to 120 feet allows it to detect creatures regardless of visibility.",
+    "skills": "Good perception aids its awareness of surroundings despite its low intelligence.",
+    "additional_information": [
+        "Doesn\u2019t require air or sleep due to Alien Nature.",
+        "Gains advantage on stealth checks while motionless or in dim light.",
+        "Can position itself strategically with Ethereal Jaunt.",
+        "Ability to deal both piercing and acid damage enhances its lethality.",
+        "Can pinpoint the location of partially ethereal creatures."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mobile aberration with acid attacks",
+        "creature that can paralyze targets",
+        "stealthy flying monster in ethereal realm",
+        "monster that heals itself with attacks",
+        "ethereal creature with high dexterity"
+    ]
+}

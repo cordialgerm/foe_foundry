@@ -1,0 +1,25 @@
+{
+    "name": "Zirnitran",
+    "queries": [
+        {
+            "query": "huge celestial creature with powerful radiant attacks",
+            "variant": "huge celestial monster that has powerful attacks dealing radiant damage"
+        },
+        {
+            "query": "angelic being with spellcasting and flight capabilities",
+            "variant": "angelic entity with abilities of flight and spell casting"
+        },
+        {
+            "query": "Zirnitran characteristics including aura and divine awareness",
+            "variant": "Zirnitran traits such as divine awareness and aura control"
+        },
+        {
+            "query": "creature that can blind and frighten enemies from the heavens",
+            "variant": "monster that can frighten and potentially blind foes with a gaze from the heavens"
+        },
+        {
+            "query": "battlefield control with aura effects and legendary resistance",
+            "variant": "control in combat using aura abilities and legendary resistances"
+        }
+    ]
+}

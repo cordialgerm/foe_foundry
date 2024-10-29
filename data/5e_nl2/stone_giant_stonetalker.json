@@ -1,0 +1,53 @@
+{
+    "name": "Stone Giant Stonetalker",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "giant",
+        "stealth",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "massive",
+        "stealthy"
+    ],
+    "description": "The Stone Giant Stonetalker is a massive, muscular giant with a rugged appearance, adept at camouflaging itself within rocky terrains. It wields a greatclub with immense power and has the ability to manipulate the environment around it.",
+    "memorable": "This giant blends brute strength with cunning ambush tactics and spellcasting abilities, making it a unique foe.",
+    "goals": "Typically seeks to dominate its environment and ambush intruders.",
+    "relations": "May be encountered with other giants or elemental creatures in mountainous or rocky areas.",
+    "environment": "Found in rocky terrains, hills, and mountains where it can utilize its camouflage and stone manipulation abilities.",
+    "strengths": "High physical strength and resilience; adept at environmental control and ambush tactics.",
+    "weaknesses": "Average intelligence limits tactical versatility; vulnerable to clever opponents who can exploit its weaknesses.",
+    "attacks": "Utilizes a powerful greatclub for melee attacks, along with throwing rocks and using magical stone spikes.",
+    "most_powerful_ability": "Avalanche - can create an avalanche that displaces creatures and deals significant damage.",
+    "equipment": "Greatclub",
+    "senses": null,
+    "skills": "Possesses good stealth and athletics skills, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Camouflage grants advantage on Stealth checks in rocky terrain.",
+        "Innate spellcasting with powerful spells like Telekinesis and Stone Shape.",
+        "Can grapple targets easily for advantageous attacks.",
+        "Stone Spikes ability affects multiple creatures within range.",
+        "Defensive Rock Catching ability can negate projectile damage."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": "Innate spellcasting based on Constitution, allowing for spells like Stone Shape and Telekinesis.",
+    "test_queries": [
+        "massive giant skilled in ambush tactics",
+        "giant that manipulates stone and throws rocks",
+        "stealthy giant found in rocky terrains",
+        "ambushing stone giant with spellcasting abilities",
+        "formidable giant known for creating avalanches"
+    ]
+}

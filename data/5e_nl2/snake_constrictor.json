@@ -1,0 +1,52 @@
+{
+    "name": "Constrictor Snake",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 15,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "30 ft. walking, 30 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "constrictor",
+        "snake",
+        "beast",
+        "large"
+    ],
+    "adjectives": [
+        "versatile",
+        "grappling",
+        "control",
+        "ambushing"
+    ],
+    "description": "The Constrictor Snake has a large body known for its strength and agility, capable of grappling and restraining its prey effectively. Its scales are camouflaged with the environment, making it a formidable ambusher.",
+    "memorable": "Notable for its grappling ability and suffocation tactic, posing a threat to unsuspecting adventurers.",
+    "goals": "Typically hunts for smaller creatures and uses stealth to ambush prey.",
+    "relations": "May encounter other snakes or similar predators in its habitat.",
+    "environment": "Commonly found in swamps, forests, and near bodies of water.",
+    "strengths": "Excels at grappling and controlling the battlefield, making it a challenging opponent in close encounters.",
+    "weaknesses": "Limited in attack potential due to average Strength and Dexterity scores, making it manageable for experienced adventurers.",
+    "attacks": "Can perform a bite attack that deals piercing damage and a constrict attack that deals bludgeoning damage while grappling.",
+    "most_powerful_ability": "The crush ability, which can inflict damage and initiate suffocation on a grappled target.",
+    "equipment": null,
+    "senses": "Possesses keen senses up to 10 feet, allowing it to detect threats effectively.",
+    "skills": "Has a stealth skill that enables it to remain undetected in its surroundings.",
+    "additional_information": [
+        "Grappling ability can restrain and suffocate targets.",
+        "Can only grapple one creature at a time.",
+        "Effective ambusher due to its ability to blend into its environment.",
+        "Utilizes both bite and constrict tactics in combat.",
+        "Decent resilience for its challenge rating."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ambushing snake with grappling ability",
+        "snake that suffocates its prey",
+        "Constrictor Snake ambush tactics",
+        "grappling beast in swamps",
+        "versatile snake in forest environments"
+    ]
+}

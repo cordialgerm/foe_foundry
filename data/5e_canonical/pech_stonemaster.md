@@ -1,6 +1,8 @@
 <MonsterName/>Pech Stonemaster</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>65</HP>
 <summary>The Pech Stonemaster is a small elemental creature known for its neutral good alignment. This being is designed for both combat and utility, making it a valuable ally with unique abilities. With a strong Constitution score of 16, it can absorb damage effectively, and its impressive Strength of 18 allows it to deal considerable damage in melee combat. The Pech Stonemaster is uniquely adept at working with stone, drawing power from its environment. However, it suffers from light sensitivity, which can limit its effectiveness in brightly lit areas. With a challenge rating of 4, it can pose a substantial threat to lower-level adventurers but also has mechanisms to protect itself and its allies through innate spellcasting and special abilities.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For its actions, the Pech Stonemaster can perform a multiattack, making two stri
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Pech Stonemaster
 
 *Small* *Elemental* *neutral good*
@@ -58,5 +61,6 @@ At will: thunderwave
 - **Hammer:** Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

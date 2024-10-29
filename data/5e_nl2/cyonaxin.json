@@ -1,0 +1,54 @@
+{
+    "name": "Cyonaxin",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walking speed of 50 feet and swimming speed of 20 feet",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "protector",
+        "liberator",
+        "support"
+    ],
+    "adjectives": [
+        "chaotic",
+        "good",
+        "agile",
+        "formidable"
+    ],
+    "description": "Cyonaxin is a medium-sized celestial creature known for its chaotic good nature, possessing a sleek form that emphasizes agility and grace. It excels in mobility and can maneuver effectively thanks to its superior speed.",
+    "memorable": "Cyonaxin serves as a protector and ally, with abilities that enhance its allies and hinder foes. Its unique powers allow it to support and liberate others in battle.",
+    "goals": "To protect and support allies, liberating those in need.",
+    "relations": "Allied with other celestial beings and creatures in need of protection.",
+    "environment": "Found in various terrains, often where aid is needed.",
+    "strengths": "Superior mobility, multiple support abilities, and resistance to poison and radiant damage.",
+    "weaknesses": "Relatively low damage resistance against certain physical attacks.",
+    "attacks": "Multiattack consisting of a powerful Bite and swift Claw attacks, both augmented by radiant damage.",
+    "most_powerful_ability": "Liberating Churr empowers allies by granting them enhanced movement abilities and combat efficiency.",
+    "equipment": null,
+    "senses": "Cyonaxin has keen sensory capabilities with advantage on Wisdom (Perception) checks that rely on smell, making it highly perceptive.",
+    "skills": "Effective at resisting magical effects due to Magic Resistance, giving it an advantage on saving throws against spells.",
+    "additional_information": [
+        "Resistant to both poison and radiant damage.",
+        "Immunities to paralysis, poison, and stunning effects.",
+        "Can evade damage from certain effects with Evasion.",
+        "Ability to knock foes prone with Pounce if it charges at them.",
+        "Possesses Blur of Motion, making it harder for ranged attacks to hit."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic good celestial protector",
+        "agile medium-sized creature with support abilities",
+        "celestial creature that liberates allies",
+        "protector with high mobility and radiant attacks",
+        "supportive celestial with magic resistance"
+    ]
+}

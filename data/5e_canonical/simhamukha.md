@@ -1,6 +1,8 @@
 <MonsterName/>Simhamukha</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Simhamukha is a formidable huge celestial creature embodying chaotic good. It boasts a solid armor class of 16 and a robust pool of 115 hit points, making it a tough opponent in combat. With a Challenge Rating of 8, it poses a significant threat, capable of dealing substantial damage through both its multiattack capabilities and its powerful special abilities. The Simhamukha excels in melee combat, benefiting from magic weapon attacks and delivering radiant damage with its Smite ability, while also boasting impressive defenses including resistance to several damage types and advantageous saving throws against spells. However, its powers come with the caveat that it can be overwhelmed if faced with too many foes, particularly if it is unable to utilize its magical defenses effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions during combat, the Simhamukha can utilize a Multiattack opti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Simhamukha
 
 *Huge* *Celestial* *chaotic good*
@@ -59,5 +62,6 @@ At will: aid, guidance, spiritual weapon
 - **Weird (Recharge 6):** The simhamukha draws upon the deepest fears and regrets of the creatures around it, creating illusions visible only to them. Each creature within 40 feet of the simhamukha, must succeed on a DC 15 Charisma saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, taking 11 (2d10) psychic damage on a failure or ending the effect on itself on a success.
 
 
+</statblock>
 
 

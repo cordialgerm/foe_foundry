@@ -1,0 +1,25 @@
+{
+    "name": "Young Flame Dragon",
+    "queries": [
+        {
+            "query": "large fire dragon with high Charisma and fast flying speed",
+            "variant": "big flame dragon that has a high Charisma and can fly quickly"
+        },
+        {
+            "query": "dragon immune to fire damage and vulnerable to cold",
+            "variant": "fire-resistant dragon that is weak against cold attacks"
+        },
+        {
+            "query": "chaotic evil dragon that breathes fire and has heated body",
+            "variant": "evil chaotic dragon that can exhale fire and has a heated body ability"
+        },
+        {
+            "query": "young dragon with blindsight and darkvision abilities",
+            "variant": "youthful dragon that possesses blindsight and darkvision"
+        },
+        {
+            "query": "multiattack dragon that deals fire damage in melee",
+            "variant": "dragon with multiattack ability causing fire damage in close combat"
+        }
+    ]
+}

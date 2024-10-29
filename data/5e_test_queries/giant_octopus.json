@@ -1,0 +1,25 @@
+{
+    "name": "Giant Octopus",
+    "queries": [
+        {
+            "query": "large sea creature with tentacles and camouflage abilities",
+            "variant": "large aquatic creature with tentacles and camouflaging skills"
+        },
+        {
+            "query": "intelligent monster that can grapple and breathe underwater",
+            "variant": "smart creature that grapples opponents and breathes water"
+        },
+        {
+            "query": "stealthy underwater beast that uses ink to escape",
+            "variant": "sneaky underwater monster that releases ink to evade"
+        },
+        {
+            "query": "octopus that can hold its breath and has powerful tentacles",
+            "variant": "octopus able to hold breath and has strong tentacles"
+        },
+        {
+            "query": "huge octopus known for ambushing prey in aquatic environments",
+            "variant": "large octopus famous for ambushing its prey in water"
+        }
+    ]
+}

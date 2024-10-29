@@ -1,0 +1,55 @@
+{
+    "name": "Chimera",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 14,
+    "srd": true,
+    "cr": "6",
+    "movement": "30 ft. walk, 60 ft. fly",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "chaotic",
+        "three-headed",
+        "flyer"
+    ],
+    "adjectives": [
+        "fearsome",
+        "multi-headed",
+        "chaotic",
+        "territorial",
+        "predatory"
+    ],
+    "description": "A fearsome creature with the body of a lion, the wings of a dragon, and a serpent's tail, featuring three distinct heads: a lion, a goat, and a dragon.",
+    "memorable": "Each head acts independently, making it a formidable opponent in battle with versatile attack options.",
+    "goals": "Territorial predator often attacking anything that enters its lair.",
+    "relations": "Often encountered in remote mountain caves or desolate regions.",
+    "environment": "Remote mountain caves and desolate regions.",
+    "strengths": "High physical strength and multiple attack options with unique capabilities.",
+    "weaknesses": "Low intelligence reduces tactical understanding in combat.",
+    "attacks": "Employs a combination of Bite, Claw, and Headbutt attacks along with a devastating Fire Breath.",
+    "most_powerful_ability": "Fire Breath ability that deals area damage in a 15-foot cone.",
+    "equipment": null,
+    "senses": "High passive Perception of 18 allows it to notice hidden or stealthy creatures.",
+    "skills": "Has proficiency in Perception, enhancing its awareness of surroundings.",
+    "additional_information": [
+        "Has the Reactive Heads ability, allowing it to take multiple reactions.",
+        "Bickering Heads ability can distract it during combat by appealing to its various heads.",
+        "Resistant to conditions like being blinded, charmed, and frightened.",
+        "Can make multiple attacks in a single turn thanks to the Multiattack feature.",
+        "Possesses a powerful Tail Swipe reaction for retaliating against melee attackers."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "multi-headed monster that breathes fire",
+        "predatory beast with lion and dragon features",
+        "creature that attacks with three heads",
+        "large monster that can fly and use fire breath",
+        "chaotic lion-dragon-goat hybrid creature"
+    ]
+}

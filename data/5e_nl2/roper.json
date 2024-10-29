@@ -1,0 +1,53 @@
+{
+    "name": "Roper",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 93,
+    "ac": 20,
+    "srd": true,
+    "cr": "5",
+    "movement": "10 ft. walk, 10 ft. climb",
+    "role": "Ambusher",
+    "tags": [
+        "cave",
+        "ambush",
+        "monstrosity",
+        "predator"
+    ],
+    "adjectives": [
+        "stone-like",
+        "camouflaged",
+        "dangerous",
+        "lurking"
+    ],
+    "description": "A stone-like creature resembling stalagmites or stalactites, with long rope-like tendrils used for grappling.",
+    "memorable": "Its ability to blend into cave formations and its powerful tendril attacks make it a formidable ambush predator.",
+    "goals": "To ambush unsuspecting prey in dark caves and tunnels.",
+    "relations": "Often found in dark caves, could share territory with other subterranean creatures.",
+    "environment": "Caves and rocky underground landscapes.",
+    "strengths": "High armor class and hit points, powerful grappling abilities with long reach.",
+    "weaknesses": "Low mobility with a speed of only 10 ft., and vulnerabilities in its tendrils.",
+    "attacks": "Multiattack with up to four tendril strikes and a bite, grappling and restraining opponents.",
+    "most_powerful_ability": "Grasping Tendrils can restrain multiple targets, giving the Roper strong control over the battlefield.",
+    "senses": "Has blindsight up to 30 feet, allowing it to detect prey even in darkness.",
+    "skills": "Good at stealth, capable of hiding while motionless in its environment.",
+    "additional_information": [
+        "Can extrude replacement tendrils if damaged.",
+        "Immunity to poison and psychic damage for tendrils.",
+        "Can climb difficult surfaces, including ceilings, without needing checks.",
+        "False Appearance makes it difficult to detect while stationary.",
+        "Resistant to exhaustion and the frightened condition."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster that blends into cave walls",
+        "dangerous creature with long gripping tendrils",
+        "ambush predator found in caverns",
+        "large stone-like creature with multiple attacks",
+        "creature that grapples and pulls prey"
+    ]
+}

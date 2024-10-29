@@ -1,0 +1,25 @@
+{
+    "name": "Wood Ward",
+    "queries": [
+        {
+            "query": "wooden construct that protects natural areas and fears fire",
+            "variant": "wood construct that guards nature and is scared of fire"
+        },
+        {
+            "query": "magical guardian made from wood with damage immunities",
+            "variant": "enchantment guardian constructed from wood with immunities to damage"
+        },
+        {
+            "query": "medium-sized protector that can frighten enemies",
+            "variant": "protector of medium size that has the ability to scare foes"
+        },
+        {
+            "query": "creature with high Constitution and fire vulnerability",
+            "variant": "being with elevated Constitution stat but weak against fire"
+        },
+        {
+            "query": "tough wooden guardian immune to status effects",
+            "variant": "durable wood-based guardian that is unaffected by status conditions"
+        }
+    ]
+}

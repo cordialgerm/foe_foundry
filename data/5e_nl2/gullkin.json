@@ -1,0 +1,52 @@
+{
+    "name": "Gullkin",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., fly 30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "avian",
+        "combat",
+        "tactical"
+    ],
+    "adjectives": [
+        "avian",
+        "aquatic",
+        "versatile",
+        "adaptable"
+    ],
+    "description": "The Gullkin is a medium humanoid creature with avian and aquatic traits, known for its agility and the ability to fly and swim.",
+    "memorable": "This creature can control the battlefield with its Tempest Breath, pushing enemies away.",
+    "goals": "The Gullkin seeks to maneuver in combat, using its environment to its advantage.",
+    "relations": "May be encountered alongside aquatic or avian creatures.",
+    "environment": "Found in coastal areas or near bodies of water.",
+    "strengths": "High dexterity allows for agility and effective ranged attacks.",
+    "weaknesses": "Low armor class and hit points make it vulnerable in prolonged combat.",
+    "attacks": "The Gullkin attacks with its beak or javelin, dealing piercing damage.",
+    "most_powerful_ability": "Tempest Breath allows the Gullkin to push enemies away, disrupting their formations.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Gullkin has a perception skill score of +1, providing an average ability to detect hidden threats.",
+    "additional_information": [
+        "Can hold its breath for 15 minutes, enhancing its adaptability underwater.",
+        "Effective in close encounters due to its melee and ranged attack versatility.",
+        "Uses agility to navigate between flying and swimming.",
+        "Ability to control battlefield flow with Tempest Breath.",
+        "Appears as a blend of bird and fish-like features."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that can fly and swim",
+        "humanoid with avian and aquatic traits",
+        "monster that controls the battlefield",
+        "aquatic humanoid with strong dexterity",
+        "medium creature with Tempest Breath ability"
+    ]
+}

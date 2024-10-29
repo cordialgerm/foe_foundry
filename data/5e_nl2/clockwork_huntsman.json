@@ -1,0 +1,53 @@
+{
+    "name": "Clockwork Huntsman",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 99,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "40 ft. walk speed makes it agile",
+    "role": "Controller",
+    "tags": [
+        "mechanical",
+        "construct",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "mechanical",
+        "durable",
+        "explosive",
+        "tactical"
+    ],
+    "description": "The Clockwork Huntsman is a mechanical construct with durable armor and a series of intricate parts that allow it to function effectively in combat. It uses nets to control opponents and boasts a powerful explosive core.",
+    "memorable": "Its destructive explosive core provides a dramatic end and marks it as a formidable opponent on the battlefield.",
+    "goals": "To serve as a guardian or enforcer, controlling the battlefield and obstructing enemies.",
+    "relations": "Related to other constructs, potentially serving alongside clockwork creatures or guardians.",
+    "environment": "Typically found in settings where constructs are used, such as dungeons or as guardians of important locations.",
+    "strengths": "Immunity to various conditions, magic resistance, and the ability to control the battlefield make it a strong opponent.",
+    "weaknesses": "Very low intelligence, wisdom, and charisma limit its strategic capabilities beyond programmed directives.",
+    "attacks": "The Clockwork Huntsman can deliver powerful slam and longsword attacks, along with the ability to ensnare enemies using a net cannon.",
+    "most_powerful_ability": "Explosive Core, which damages nearby creatures upon its destruction.",
+    "equipment": null,
+    "senses": "Passive Perception at 14 allows it to perceive threats adequately, functioning effectively in its role.",
+    "skills": "Proficient in Perception and Survival, with a +4 bonus in each.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Has an immutable form, immune to shape-altering effects.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Can pull restrained creatures closer, maintaining battlefield control.",
+        "Has a net attack that can restrain Large or smaller targets."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical guardian with explosive destruction",
+        "battlefield controlling construct with net attacks",
+        "tactical construct with powerful melee and ranged abilities",
+        "durable clockwork monster that ensnares enemies",
+        "explosive core guardian with magic resistance"
+    ]
+}

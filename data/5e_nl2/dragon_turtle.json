@@ -1,0 +1,53 @@
+{
+    "name": "Dragon Turtle",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Gargantuan",
+    "hp": 341,
+    "ac": 20,
+    "srd": true,
+    "cr": "17",
+    "movement": "20 ft. walking, 40 ft. swimming",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "siege monster",
+        "dragon"
+    ],
+    "adjectives": [
+        "colossal",
+        "armored",
+        "intelligent"
+    ],
+    "description": "A gigantic, turtle-like creature with a massive armored shell and a dragon's head; its thick scales provide immense protection.",
+    "memorable": "Known for its steam breath attack that scalds enemies, and its ability to demand tribute from sailors.",
+    "goals": "Causing damage to ships and coastal settlements or negotiating with sailors for tribute.",
+    "relations": "Might be encountered alongside other sea creatures and dragons.",
+    "environment": "Deep seas and coastal waters.",
+    "strengths": "Exceptional durability, powerful attacks, amphibious nature allows it to thrive in water and land.",
+    "weaknesses": "Less agile due to average Dexterity.",
+    "attacks": "Multiattack includes a devastating bite and powerful claw and tail attacks that can grapple and push targets.",
+    "most_powerful_ability": "Steam Breath exhaling scalding steam in a wide area, dealing serious fire damage.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive perception score of 17, indicating good awareness.",
+    "skills": "High proficiency in perception and insight, enhancing its situational awareness.",
+    "additional_information": [
+        "Has innate spellcasting abilities, capable of casting control weather and water breathing.",
+        "Can latch onto vehicles, immobilizing them while automatically hitting with bite attacks.",
+        "Deals double damage to structures and vehicles, making it a significant threat in combat.",
+        "Can retract into its shell to regain hit points and gain defensive advantages.",
+        "Capacity to deal lightning damage once per day, adding to its formidable arsenal."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting with abilities to control weather and breathe water, influencing its interactions.",
+    "test_queries": [
+        "gargantuan turtle monster with steam breath",
+        "armored sea creature that breathes steam",
+        "dragon turtle that demands tribute from sailors",
+        "massive turtle known for devastating ship attacks",
+        "aquatic monster capable of lightning attacks"
+    ]
+}

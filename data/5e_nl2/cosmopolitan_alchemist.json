@@ -1,0 +1,54 @@
+{
+    "name": "Cosmopolitan Alchemist",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "alchemist",
+        "humanoid",
+        "support",
+        "potion"
+    ],
+    "adjectives": [
+        "formidable",
+        "adaptable",
+        "intelligent"
+    ],
+    "description": "A skilled humanoid proficient in potion crafting and alchemical creation, distinguished by a sharp mind and dexterous hands. Often carries a collection of useful potions and explosive bombs.",
+    "memorable": "Possesses the ability to craft legendary potions and utilizes bombs that can deal heavy area damage.",
+    "goals": "Support allies through potion crafting and control the battlefield with explosive bombs.",
+    "relations": "Might serve alongside adventurers or be encountered among other skilled alchemists.",
+    "environment": "Typically found in laboratories, apothecaries, or alchemical workshops.",
+    "strengths": "Exceptional intelligence enhances skills in arcana, investigation, and nature; proficient in crafting powerful potions.",
+    "weaknesses": "Relies on components and requires setup time to create potions.",
+    "attacks": "Uses a dagger for melee attacks and can deal poison damage, alongside explosive bombs that cause significant fire damage in an area.",
+    "most_powerful_ability": "Can throw bombs that explode in a large area, causing serious fire damage to multiple targets.",
+    "equipment": "dagger",
+    "senses": "Has a passive Perception of 15, allowing for good awareness of surroundings.",
+    "skills": "Proficient in arcana, investigation, and nature, allowing for high effectiveness in knowledge-based tasks.",
+    "additional_information": [
+        "Crafts potions of legendary rarity.",
+        "Can quickly change bomb damage type with Alter Bomb.",
+        "Uses a Desperate Drink reaction for emergency healing.",
+        "Has multiple healing potions available.",
+        "Resistant to fire and poison damage."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skilled potion crafting humanoid",
+        "humanoid alchemist with bomb abilities",
+        "adaptable alchemist who uses explosive bombs",
+        "Cosmopolitan Alchemist potion crafting skills",
+        "dangerous humanoid with healing potions"
+    ]
+}

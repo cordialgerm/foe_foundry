@@ -1,0 +1,51 @@
+{
+    "name": "Berstuc",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 157,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 20 ft., burrow 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "powerful",
+        "stealthy"
+    ],
+    "description": "The Berstuc is a formidable Large Fiend known for its cunning and strength, featuring a robust natural armor and impressive physical attributes that enable powerful attacks. It thrives in forested environments, capable of ambushing unsuspecting foes.",
+    "memorable": "The Berstuc's ability to disguise itself as a Fey while remaining a dangerous Fiend, along with its devastating ability to incapacitate foes with its Enclose ability, makes it a unique and terrifying opponent.",
+    "goals": "The Berstuc seeks to manipulate its environment and its opponents for its chaotic purposes, using stealth and ambush tactics.",
+    "relations": "It may be encountered alongside other fiends or creatures that dwell in forests, such as fey or other monstrous beings.",
+    "environment": "Typically found in forested regions where its stealth and camouflage abilities can be employed.",
+    "strengths": "High durability with resistances to multiple damage types, excellent stealth capabilities, and strong social manipulation skills.",
+    "weaknesses": "Its reliance on forested terrain can be a disadvantage when fighting in open areas, where its abilities to conceal itself are limited.",
+    "attacks": "Utilizes multiattacks with powerful Slam melee attacks that can grapple enemies and a unique Enclose ability to blind and restrain foes.",
+    "most_powerful_ability": "Enclose, which traps a grappled foe in its mossy growth, blinding and restraining them while dealing poison damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Deception and Nature, allowing it to manipulate social situations and navigate natural settings effectively.",
+    "additional_information": [
+        "Immune to lightning and poison damage, and resistant to several damage types.",
+        "Uses magic resistance to gain advantage on saving throws against spells.",
+        "Can travel through forests without leaving a trace, making it hard to track.",
+        "Tireless in pursuit due to its Verdant Nature, not requiring food or sleep.",
+        "Uses False Presence to disguise itself as a Fey to avoid detection."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "forest ambush fiend",
+        "cunning fiend with camouflage",
+        "stealthy chaotic evil creature",
+        "powerful woodland manipulator",
+        "creature that disguises as Fey"
+    ]
+}

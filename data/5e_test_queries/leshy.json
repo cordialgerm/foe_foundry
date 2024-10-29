@@ -1,0 +1,25 @@
+{
+    "name": "Leshy",
+    "queries": [
+        {
+            "query": "medium-sized nature spirit with poison immunity",
+            "variant": "medium nature spirit that is immune to poison"
+        },
+        {
+            "query": "chaotic creature that can talk to plants and animals",
+            "variant": "chaotic being that communicates with plants and animals"
+        },
+        {
+            "query": "monstrosity that thrives in plant-rich environments and uses deception",
+            "variant": "monstrosity that flourishes in environments full of plants and relies on deception"
+        },
+        {
+            "query": "Leshy abilities in combat and social interaction",
+            "variant": "abilities of the Leshy in battles and social situations"
+        },
+        {
+            "query": "stealthy creature that uses vine-wrapped weapons for poison damage",
+            "variant": "stealthy being that employs vine-enshrouded weapons for additional poison damage"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Fraughashar</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>Fraughashar is a small fey creature aligned with neutral evil, characterized by its cunning nature and affinity for icy terrains. With a Challenge Rating of 1/2, this creature presents a moderate threat to adventurers, particularly when in favorable conditions that enhance its mobility. The fraughashar excels with its agility, utilizing its dexterous build to evade threats and launch quick, impactful attacks. Its ability to navigate icy surfaces seamlessly lends it an advantage in challenging environments. However, its low strength and charisma, coupled with an overall fragile health pool, mark it as vulnerable in direct confrontations, especially against opponents capable of overcoming its defenses or exploiting its weaknesses.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Its primary ranged option is "Frost Bolt," a spell that allows the fraughashar t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fraughashar
 
 *Small* *Fey* *Neutral Evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Dagger:** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 - **Frost Bolt:** Ranged Spell Attack: +4 to hit, range 60 ft., one target. Hit: 7 (2d4 + 2) cold damage.
+</statblock>
 
 

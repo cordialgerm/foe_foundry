@@ -1,0 +1,25 @@
+{
+    "name": "Necrotic Tick",
+    "queries": [
+        {
+            "query": "tiny monster that drains blood and can turn hosts into zombies",
+            "variant": "small creature that sucks blood and can make hosts into zombies"
+        },
+        {
+            "query": "creature with necrotic regeneration that manipulates its host's behavior",
+            "variant": "beast that has necrotic healing and controls its host's actions"
+        },
+        {
+            "query": "nefarious tick that heals its host while inflicting necrotic damage",
+            "variant": "evil tick that regenerates its host while dealing necrotic harm"
+        },
+        {
+            "query": "small beast that uses blood drain to attack and control living hosts",
+            "variant": "tiny creature that attacks and controls living beings with blood loss"
+        },
+        {
+            "query": "darkvision tick that has abilities to incite aggression and create minions",
+            "variant": "shadowy tick that can cause hostility and spawn minions"
+        }
+    ]
+}

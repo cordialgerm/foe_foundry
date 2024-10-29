@@ -1,0 +1,49 @@
+{
+    "name": "Quiet Soul",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 10 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "psychic",
+        "crowd control"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "melancholic"
+    ],
+    "description": "The Quiet Soul resembles an ordinary humanoid corpse when motionless, but its presence exudes a feeling of lethargy and despair.",
+    "memorable": "Its ability to incapacitate foes with a melancholic aura makes it a dangerous opponent in combat.",
+    "goals": "To control the battlefield and incapacitate enemies using its abilities.",
+    "relations": "May serve other undead beings or be encountered alongside necromancers.",
+    "environment": "Typically found in graveyards, abandoned places, or anywhere death has lingered.",
+    "strengths": "Immune to cold, poison, and psychic damage, and possesses a potent crowd control ability.",
+    "weaknesses": "Low physical attributes, particularly in Strength, making it ineffective in physical combat.",
+    "attacks": "Ranged psychic lash attack dealing significant psychic damage, with the ability to further incapacitate unconscious foes.",
+    "most_powerful_ability": "Melancholic emanation can put multiple creatures to sleep, severely disrupting enemy tactics.",
+    "senses": "Has blindsight up to 60 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Possesses a high Perception skill at +7, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Indistinguishable from a humanoid corpse while motionless.",
+        "Strong resilience against mind-affecting effects due to high Wisdom saving throw.",
+        "Can dominate the battlefield by incapacitating foes."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "melancholic creature that controls the battlefield",
+        "undead that can incapacitate opponents",
+        "creature with psychic attacks and crowd control",
+        "monster resembling a corpse with mind powers",
+        "psychic monster immune to cold and poison"
+    ]
+}

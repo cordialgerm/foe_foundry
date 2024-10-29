@@ -1,0 +1,54 @@
+{
+    "name": "Peat Mammoth",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "slow walker, 30 feet speed",
+    "role": null,
+    "tags": [
+        "swamp",
+        "giant",
+        "plant",
+        "ambush"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "swamp-dwelling"
+    ],
+    "description": "A gigantic creature with a plant-based nature, the Peat Mammoth is adapted to swampy environments and is known for its robust size and defensive capabilities. Its body is saturated like a sponge, emphasizing its plant aspect.",
+    "memorable": "Its ability to ignite when taking fire damage and explode upon death creates a tactical challenge, while its capacity to engulf foes adds to its menace.",
+    "goals": "Typically aims to ambush foes, control its environment, and dominate in combat through its unique abilities.",
+    "relations": "May inhabit areas alongside other swamp creatures or serve as a protector of its territory.",
+    "environment": "Mostly found in swamps and marsh areas, making use of its camouflage among the foliage.",
+    "strengths": "High strength and constitution scores grant it powerful melee attacks and significant hit points; resistant to fire and necrotic damage.",
+    "weaknesses": "Low agility and dexterity resulting in poor movement and difficulty avoiding fast foes.",
+    "attacks": "Can perform devastating melee slam attacks and has the ability to engulf opponents, restraining them and dealing damage.",
+    "most_powerful_ability": "The 'Slow Burn' ability allows it to catch fire upon taking fire damage, leading to ongoing burning damage and an explosion upon death.",
+    "equipment": null,
+    "senses": "Possesses blindsight out to 120 feet, allowing it to detect creatures in its vicinity without relying on sight.",
+    "skills": "Has a +6 bonus in stealth due to its swamp camouflage, allowing it to ambush foes effectively.",
+    "additional_information": [
+        "Immune to conditions like blinded, deafened, or frightened.",
+        "Can engulf two creatures at once, making it a significant threat in combat.",
+        "Ignites when taking fire damage, creating tactical challenges.",
+        "Explodes upon death while on fire, dealing area damage.",
+        "Advantage on Dexterity (Stealth) checks in swampy terrain."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant swamp monster with explosive ability",
+        "massive plant creature found in swamps",
+        "peat mammoth ambush tactics in marshes",
+        "monster that engulfs and restrains enemies",
+        "swamp-dwelling beast resistant to fire"
+    ]
+}

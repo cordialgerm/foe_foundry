@@ -1,0 +1,55 @@
+{
+    "name": "Golmana",
+    "creature_type": "Fiend",
+    "creature_subtype": "demon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 118,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 ft., Spider Climb ability",
+    "role": null,
+    "tags": [
+        "fiend",
+        "demon",
+        "resilient",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "resilient"
+    ],
+    "description": "The Golmana is a Medium demon with a sturdy build, featuring sharp claws and a tail for vicious attacks, capable of climbing difficult surfaces effortlessly.",
+    "memorable": "Its Void Screech ability, which combines necrotic and thunder damage, creates an imposing threat on non-fiends.",
+    "goals": "To overpower enemies with physical and magical prowess while sustaining its own health.",
+    "relations": "May be encountered alongside other demons or fiends, often serving as enforcers in dark schemes.",
+    "environment": "Typically found in infernal realms or corrupted lands, thriving in hostile environments.",
+    "strengths": "Resistant to cold, fire, and lightning damage; immune to poison; has excellent stealth and hearing.",
+    "weaknesses": "Below-average intelligence, leading to potential strategic shortcomings.",
+    "attacks": "Utilizes claw attacks for slashing damage and a long-reaching tail strike",
+    "most_powerful_ability": "Void Screech, a cone attack causing significant necrotic and thunder damage, with added disadvantage on the next attack for affected targets.",
+    "equipment": null,
+    "senses": "Has heightened hearing, allowing it to perceive sounds with a score of 19.",
+    "skills": "Possesses high skills in Stealth and Perception, making it hard to detect.",
+    "additional_information": [
+        "Grapples and restrains smaller enemies with its claws.",
+        "Regains health when using the Consuming Rend ability.",
+        "Advantage on saving throws against magical effects due to Magic Resistance.",
+        "Can communicate telepathically within 60 feet.",
+        "Heightened awareness makes it difficult to surprise."
+    ],
+    "damage_types": [
+        "necrotic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "demon with void powers and supernatural climbing",
+        "formidable fiend immune to poison damage",
+        "highly perceptive demon with magical resistance",
+        "monster that grapples and drains health",
+        "menacing creature capable of necrotic damage"
+    ]
+}

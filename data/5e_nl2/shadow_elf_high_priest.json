@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Elf High Priest",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "shadow",
+        "elf"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "versatile",
+        "dark"
+    ],
+    "description": "The Shadow Elf High Priest is a Medium humanoid, notable for its dark robes and a commanding presence, utilizing a mace for melee combat.",
+    "memorable": "A powerful spellcaster with exceptional wisdom, capable of manipulating the battlefield with shadow magic and devastating spells.",
+    "goals": "To serve as a guardian and powerful spellcaster for followers of its dark and mysterious ways.",
+    "relations": "Can command followers and allies among shadow elves and serve a dark deity.",
+    "environment": "Typically found in dark, mysterious places, possibly within temples or areas of shadow.",
+    "strengths": "Exceptional spellcasting abilities with a focus on battlefield control and supportive spells.",
+    "weaknesses": "Moderate in direct melee combat; relies heavily on spellcasting for offense.",
+    "attacks": "Utilizes a mace for melee attacks, dealing bludgeoning damage, and casts spells for radiant and area damage.",
+    "most_powerful_ability": "Insect Plague, creating a hazardous area filled with biting insects that control movement and deal significant damage.",
+    "equipment": "Mace for physical attacks.",
+    "senses": "Darkvision allows it to see in darkness up to 120 feet.",
+    "skills": "Skilled in medicine and insight, providing strong non-combat capabilities.",
+    "additional_information": [
+        "Innate shadow magic allows for spells with no material components.",
+        "Can cast debilitating spells to hinder enemies significantly.",
+        "Access to unique spells for healing and divination.",
+        "Summons a spectral guardian to protect allies.",
+        "Can create difficult terrain with webs to control battlefield movement."
+    ],
+    "damage_types": [
+        "radiant",
+        "piercing"
+    ],
+    "spellcasting": "Proficient 11th-level spellcaster with a variety of cleric spells focused on control and support.",
+    "test_queries": [
+        "Dark spellcaster with shadow magic",
+        "Priest who controls the battlefield",
+        "Spellcaster that creates difficult terrain",
+        "High priest that summons spectral guardians",
+        "Mace-wielding shadow elf priest"
+    ]
+}

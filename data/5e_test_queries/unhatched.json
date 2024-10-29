@@ -1,0 +1,25 @@
+{
+    "name": "Unhatched",
+    "queries": [
+        {
+            "query": "small chaotic evil undead creature that curses healers",
+            "variant": "chaotic evil small undead creature that curses those who heal"
+        },
+        {
+            "query": "undead monster that can fly and has a necrotic breath attack",
+            "variant": "flying undead creature with necrotic breath attack"
+        },
+        {
+            "query": "monster immune to poison and resistant to necrotic damage",
+            "variant": "creature that resists necrotic damage and is immune to poison"
+        },
+        {
+            "query": "undead with hatred ability against those who heal others",
+            "variant": "creature with advantage on attacks against healers"
+        },
+        {
+            "query": "Unhatched capabilities in combat using spellcasting and multiattack",
+            "variant": "combat abilities of the Unhatched including multiattack and spellcasting"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Lacedon",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "paralysis",
+        "swimming"
+    ],
+    "adjectives": [
+        "malevolent",
+        "decaying",
+        "average"
+    ],
+    "description": "The Lacedon is a Medium undead creature that embodies a malevolent presence, often found lurking in dark waters or decaying environments, resembling a ghoul.",
+    "memorable": "Its ability to paralyze foes quickly makes it a formidable opponent in combat.",
+    "goals": "Typically seeks to ambush and subdue living creatures.",
+    "relations": "Often found alongside other undead creatures, as it shares traits with ghouls.",
+    "environment": "Dark waters or areas with decay.",
+    "strengths": "Good agility and the ability to paralyze living creatures.",
+    "weaknesses": "Vulnerable to radiant damage, which can impair its combat effectiveness.",
+    "attacks": "Paralyzing Claw can incapacitate foes; Bite can inflict additional damage on weakened targets.",
+    "most_powerful_ability": "Paralyzing Claw allows it to immobilize targets for up to a minute, significantly altering the battlefield dynamics.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Radiant Sensitivity makes it particularly weak against radiant damage.",
+        "Does not require air, food, or sleep, enhancing its survivability.",
+        "Can swim with ease, adding to its defensive tactics in aquatic environments.",
+        "Low intelligence limits its combat strategy despite its physical capabilities.",
+        "Resistant to necrotic damage, allowing it to endure in certain encounters."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that paralyzes foes",
+        "swimming undead lurking in dark waters",
+        "ghoul-like creature with a deadly claw attack",
+        "malevolent creature from decaying environments",
+        "monster capable of paralysis in combat"
+    ]
+}

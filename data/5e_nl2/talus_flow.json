@@ -1,0 +1,52 @@
+{
+    "name": "Talus Flow",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 102,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., climb 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "elemental",
+        "ambush",
+        "terrain control"
+    ],
+    "adjectives": [
+        "large",
+        "rocky",
+        "tactical"
+    ],
+    "description": "The Talus Flow resembles a pile of rocks and scree, adept at blending into rocky environments. It uses its bulk and natural features to surprise unsuspecting foes.",
+    "memorable": "It can disguise itself as a rocky surface, providing surprise attacks, while controlling the battlefield with terrain manipulation abilities.",
+    "goals": "To ambush unsuspecting creatures and control the battlefield through tactical maneuvering.",
+    "relations": "May be found in rocky terrains alongside other earth-based elementals.",
+    "environment": "Typically found in rocky or mountainous regions.",
+    "strengths": "High Strength and Constitution scores, significant condition immunities, and abilities to control space.",
+    "weaknesses": "Vulnerable to thunder damage and has average Dexterity, making it less agile.",
+    "attacks": "Multiattack with powerful Slam attacks that can grapple and potentially incapacitate foes.",
+    "most_powerful_ability": "Scree Form allows it to disrupt and control the movement of enemies, making it difficult terrain.",
+    "equipment": null,
+    "senses": "It has tremorsense out to 120 feet, allowing it to detect creatures through vibrations in the ground.",
+    "skills": "Possesses a +1 bonus in perception, giving it a slight edge in noticing potential threats.",
+    "additional_information": [
+        "Immune to conditions like exhaustion, paralyzed, and poisoned.",
+        "Ability to regain hit points by damaging creatures in close combat.",
+        "Can move through very narrow spaces, enhancing its ambush capabilities.",
+        "Advantage on Stealth checks made in rocky terrain.",
+        "Landslide ability can knock creatures prone, providing tactical advantages."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large rocky ambush predator",
+        "elemental that blends into rocks",
+        "creature with terrain control abilities",
+        "monster that can knock enemies prone",
+        "tactical elemental with healing abilities"
+    ]
+}

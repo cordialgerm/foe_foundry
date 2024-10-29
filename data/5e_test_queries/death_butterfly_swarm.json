@@ -1,0 +1,25 @@
+{
+    "name": "Death Butterfly Swarm",
+    "queries": [
+        {
+            "query": "large swarm of butterflies that inflicts poison damage",
+            "variant": "big butterfly swarm that deals poison damage"
+        },
+        {
+            "query": "flying swarm creature that blinds opponents with its wings",
+            "variant": "flying swarm monster that can blind enemies with its wings"
+        },
+        {
+            "query": "insect swarm with cold vulnerability and poison abilities",
+            "variant": "bug swarm that is weak to cold and has poison powers"
+        },
+        {
+            "query": "butterfly creature that hinders movement and is immune to poison",
+            "variant": "butterfly monster that slows movement and can't be poisoned"
+        },
+        {
+            "query": "creature that occupies spaces like insects and deals poison damage",
+            "variant": "monster that can fill spaces like bugs and causes poison harm"
+        }
+    ]
+}

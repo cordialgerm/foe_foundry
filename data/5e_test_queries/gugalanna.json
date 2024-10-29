@@ -1,0 +1,25 @@
+{
+    "name": "Gugalanna",
+    "queries": [
+        {
+            "query": "huge celestial creature with high AC and fire resistance",
+            "variant": "huge celestiel creature with high armor class and fire resitance"
+        },
+        {
+            "query": "chaotic good celestial that can fly and charges at enemies",
+            "variant": "chaotic good celestial that can flie and charges enemy"
+        },
+        {
+            "query": "powerful celestial that deals piercing damage and has magic resistance",
+            "variant": "powerful celestail that deals peircing damage and has magick resistence"
+        },
+        {
+            "query": "adventuring foe with high hit points and bludgeoning attacks",
+            "variant": "adventureing foe with high hitpoints and bludgeoning attackes"
+        },
+        {
+            "query": "massive celestial with trample charge ability and blazing sun disc",
+            "variant": "massive celestail with trampl charge abiltiy and blazing sun disc"
+        }
+    ]
+}

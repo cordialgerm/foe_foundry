@@ -1,0 +1,25 @@
+{
+    "name": "Lantern Beetle",
+    "queries": [
+        {
+            "query": "tiny glowing beetle that illuminates dark areas",
+            "variant": "tiny beetle that glows and lights up dark spaces"
+        },
+        {
+            "query": "beast with low hit points and bioluminescence in various environments",
+            "variant": "creature with few hit points and light-emitting ability found in different settings"
+        },
+        {
+            "query": "fragile insect that can fly and has a melee attack",
+            "variant": "delicate bug that flies and has a close combat attack"
+        },
+        {
+            "query": "creature known for its light emission and poor combat skills",
+            "variant": "monster famous for illuminating surroundings and weak in battle"
+        },
+        {
+            "query": "Lantern Beetle's ability to provide light in tricky situations",
+            "variant": "Lantern Beetle's skill to shed light in challenging scenarios"
+        }
+    ]
+}

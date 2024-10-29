@@ -1,0 +1,53 @@
+{
+    "name": "Bathhouse Drake",
+    "creature_type": "Dragon",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 60 ft., swim 60 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "aquatic",
+        "spellcaster",
+        "amphibious"
+    ],
+    "adjectives": [
+        "aquatic",
+        "versatile",
+        "supportive",
+        "tough"
+    ],
+    "description": "The Bathhouse Drake is a Medium-sized dragon with a robust form and a notably strong presence in aquatic environments, particularly near bathhouses. It showcases natural armor which grants it impressive durability.",
+    "memorable": "The Bathhouse Drake combines offensive capabilities with supportive spellcasting, creating a dynamic presence on the battlefield.",
+    "goals": "To protect its domain and influence its surroundings using its abilities and spells.",
+    "relations": "May be found in partnership with aquatic creatures or serving beings that respect its domain.",
+    "environment": "Usually found around bathhouses or other water-based environments.",
+    "strengths": "Notable resistance to fire damage and immunity to poison make it resilient against various attacks.",
+    "weaknesses": "Average attributes in strength, dexterity, and charisma mean it is not strong in direct combat situations.",
+    "attacks": "Uses a mix of melee attacks including a bite and claws, as well as ranged fire attacks through its Scalding Jet.",
+    "most_powerful_ability": "Steam Burst creates a significant area of effect attack that can blind enemies, shifting the dynamics of combat.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 10 feet and has a passive perception of 16, allowing it to detect hidden enemies effectively.",
+    "skills": "Skilled in medicine and persuasion, reflecting its capability to heal and interact positively with others.",
+    "additional_information": [
+        "Amphibious trait allows breathing in both air and water.",
+        "Soapy ability provides advantage on escaping grapples.",
+        "Has innate spellcasting ability with a focus on water manipulation."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Innate spellcaster with access to spells like 'Create or Destroy Water' and 'Misty Step' for versatile battlefield control.",
+    "test_queries": [
+        "dragon from a bathhouse",
+        "aquatic dragon with spells",
+        "steam attack dragon",
+        "creature with poison immunity",
+        "versatile aquatic dragon"
+    ]
+}

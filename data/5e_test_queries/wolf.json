@@ -1,0 +1,25 @@
+{
+    "name": "Wolf",
+    "queries": [
+        {
+            "query": "medium-sized predator with sharp teeth and claws that lives in forests",
+            "variant": "medium predator with sharp claws and teeth found in forests"
+        },
+        {
+            "query": "wolf that has a pack mentality and keen senses for hunting",
+            "variant": "wolf with keen hunting senses and a mentality of packs"
+        },
+        {
+            "query": "cunning and agile beast found in mountains, known for teamwork",
+            "variant": "agile and cunning beast that resides in mountains, famous for its teamwork"
+        },
+        {
+            "query": "swift animal that uses stealth and perception to hunt",
+            "variant": "quick animal using stealth and great perception for hunting"
+        },
+        {
+            "query": "aggressive territorial beast that can knock enemies prone",
+            "variant": "territorial and aggressive beast that has the ability to knock opponents down"
+        }
+    ]
+}

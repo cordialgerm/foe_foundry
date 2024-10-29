@@ -1,0 +1,25 @@
+{
+    "name": "Relentless Hound",
+    "queries": [
+        {
+            "query": "undead hound that flies and bites",
+            "variant": "flying undead hound with biting attacks"
+        },
+        {
+            "query": "creature with necrotic damage abilities that can pass through walls",
+            "variant": "monster capable of necrotic damage and moving through objects"
+        },
+        {
+            "query": "medium-sized undead dog that can be charmed with food",
+            "variant": "medium undead hound that is charmed by food"
+        },
+        {
+            "query": "menacing hound with strong physical attacks and low intelligence",
+            "variant": "threatening hound with high strength and poor intelligence"
+        },
+        {
+            "query": "monster immune to poison and cold that creates spectral allies",
+            "variant": "creature immune to cold and poison generating spectral companions"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Pyrohydra",
+    "queries": [
+        {
+            "query": "huge multi-headed fire monster with regeneration abilities",
+            "variant": "huge fire-breathing monster with multiple heads and ability to regenerate"
+        },
+        {
+            "query": "aquatic monster that can hold its breath and breathes fire",
+            "variant": "monster that can swim and hold its breath for an hour while having fire breath"
+        },
+        {
+            "query": "monster that has multiple heads and poisonous water lair",
+            "variant": "creature with several heads and a lair that poisons water"
+        },
+        {
+            "query": "fire-breathing creature with high hit points and challenging combat strategy",
+            "variant": "creature that breathes fire and has a lot of hit points making it tough in battle"
+        },
+        {
+            "query": "psychically limited hydra that is physically strong and tough",
+            "variant": "hydra with low intelligence but high strength and durability"
+        }
+    ]
+}

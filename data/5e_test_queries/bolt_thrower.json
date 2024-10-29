@@ -1,0 +1,25 @@
+{
+    "name": "Bolt-Thrower",
+    "queries": [
+        {
+            "query": "small ranged combat construct with turret-like abilities",
+            "variant": "small contruct for ranged combat that acts like a turret"
+        },
+        {
+            "query": "crossbow-using guardian that is rooted and has low strength",
+            "variant": "guardian with low strength that uses a crossbow and can become rooted"
+        },
+        {
+            "query": "construct immune to poison and psychic attacks with high dexterity",
+            "variant": "dexterous construct that is immune to psychic and poison damage"
+        },
+        {
+            "query": "creature with a passive perception of 14 and Clockwork Sights ability",
+            "variant": "monster that has Clockwork Sights and a passive perception score of 14"
+        },
+        {
+            "query": "battlefield guardian with multiattack using heavy and light crossbows",
+            "variant": "guardian on the battlefield that can attack multiple times with heavy and light crossbows"
+        }
+    ]
+}

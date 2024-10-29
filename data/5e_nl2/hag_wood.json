@@ -1,0 +1,54 @@
+{
+    "name": "Wood Hag",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 170,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "hag",
+        "woodland",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "crafty",
+        "manipulative",
+        "deceptive"
+    ],
+    "description": "The Wood Hag is a medium-sized fey creature known for its trickery and mastery of woodland environments. It camouflages perfectly as an old log in forest settings and carries an air of menace.",
+    "memorable": "Its ability to blend into the environment makes it difficult to detect, and its poisonous attacks can paralyze foes.",
+    "goals": "To manipulate and control the woodland and its denizens, often using trickery against adventurers.",
+    "relations": "Typically encountered alongside various woodland creatures and other fey entities.",
+    "environment": "Primarily found in forested areas and other places rich in plant life.",
+    "strengths": "Possesses powerful melee and ranged attacks, magical abilities, and camouflage.",
+    "weaknesses": "Susceptible to certain spells and effects typical of fey creatures.",
+    "attacks": "Can use 'Claw' attacks dealing slashing and poison damage, or 'Toxic Splinter' for ranged poison attacks that can paralyze.",
+    "most_powerful_ability": "Can camouflages itself perfectly in forest terrain, making it virtually undetectable when motionless.",
+    "equipment": null,
+    "senses": "It has a keen sense of perception with a passive score of 19.",
+    "skills": "Exceptionally perceptive, with a notable bonus to Wisdom saving throws.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saves against spells.",
+        "Can communicate with animals and plants, offering tactical advantages.",
+        "Capable of controlling the battlefield with spells like 'entangle' and 'plant growth'.",
+        "Has an ability to incite chaos in enemies with 'Nettling Word'.",
+        "Immune to poison and charmed conditions."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Uses Wisdom for spellcasting and can cast spells like 'charm person' and 'entangle' at will.",
+    "test_queries": [
+        "manipulative creature in the woods",
+        "cunning spellcaster that blends into trees",
+        "poisonous hag that uses tricks",
+        "deceptive fey with camouflage abilities",
+        "woodland monster with magical attacks"
+    ]
+}

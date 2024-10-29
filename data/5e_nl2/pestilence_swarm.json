@@ -1,0 +1,50 @@
+{
+    "name": "Pestilence Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 30 ft., walk 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "disease",
+        "swarm",
+        "stealthy"
+    ],
+    "adjectives": [
+        "menacing",
+        "diseased",
+        "agile"
+    ],
+    "description": "The Pestilence Swarm is composed of numerous small insects, appearing lifeless in darkness until light prompts its attack; it thrives in subtlety and hits with diseased bites.",
+    "memorable": "Inflicts the sewer plague, causing lasting exhaustion and debilitating effects over time.",
+    "goals": "Incapacitate foes through ambush and spread infection.",
+    "relations": "Often found in filth-ridden areas or near other pestilent creatures.",
+    "environment": "Dark and unsanitary locations, typically where ambushes can be executed.",
+    "strengths": "Stealthy and agile, with damage resistances and immunities to many control effects.",
+    "weaknesses": "Low hit points and vulnerable when exposed to light.",
+    "attacks": "Diseased Bites that deal significant piercing damage and have a chance to inflict sewer plague.",
+    "most_powerful_ability": "Dormant in Darkness allows it to remain hidden until light triggers its attack.",
+    "equipment": null,
+    "senses": "Has a passive perception of 11 which reflects basic awareness but is not exceptionally keen.",
+    "skills": null,
+    "additional_information": [
+        "Can occupy the same space as other creatures.",
+        "Can move through small openings due to its swarm nature.",
+        "Reverts to a dormant state after one minute in the dark unless damaged."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "disease-inflicting swarm of insects",
+        "ambush tactic insect swarm",
+        "creature that spreads sewer plague",
+        "insects that become active in light",
+        "swarm that attacks with diseased bites"
+    ]
+}

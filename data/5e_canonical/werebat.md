@@ -1,6 +1,8 @@
 <MonsterName/>Werebat</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>66</HP>
 <summary>The Werebat is a medium humanoid creature with a lawful evil alignment, embodying traits of both a human and a bat. This creature possesses significant strengths, particularly its ability to fly quickly and stealthily, making it a formidable opponent in combat. Its challenge rating of 3 indicates it can pose a significant threat to lower-level adventurers. The Werebat is particularly resilient against nonmagical attacks that are not made with silver, granting it damage immunities, which adds to its survivability. However, it has notable weaknesses such as a sensitivity to sunlight, resulting in disadvantage on attack rolls and perception checks when exposed. The combination of its unique abilities and form-changing capabilities makes the Werebat a versatile and dangerous adversary.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Werebat is a cunning and dangerous monster that players must approa
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Werebat
 
 *Medium* *Humanoid* *lawful evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Mace (Humanoid Form Only):** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.
 
 
+</statblock>
 
 

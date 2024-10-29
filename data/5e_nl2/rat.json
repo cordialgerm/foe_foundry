@@ -1,0 +1,50 @@
+{
+    "name": "Rat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 feet walking and swimming",
+    "role": null,
+    "tags": [
+        "urban",
+        "pest",
+        "stealthy"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "nuisance"
+    ],
+    "description": "The Rat is a tiny, agile rodent capable of slipping through small spaces, commonly found in cities, sewers, and forests. It has poor combat abilities but can spread diseases and gather in large numbers.",
+    "memorable": "Rats can become a significant annoyance when in swarms, despite their low individual threat level.",
+    "goals": "Primarily scavenging for food or infesting homes and dungeons.",
+    "relations": "Often encountered with urban wildlife and used by spellcasters as familiars.",
+    "environment": "Commonly found in urban and rural settings, especially in dirty or dark places.",
+    "strengths": "Possesses keen sense of smell which aids in detection and avoidance of threats.",
+    "weaknesses": "Extremely low hit points and poor physical attributes make it vulnerable.",
+    "attacks": "Bite attack that deals minimal piercing damage.",
+    "most_powerful_ability": "Keen Smell grants advantage on Perception checks relying on smell.",
+    "equipment": null,
+    "senses": "Has a heightened perception score of 15 when using its sense of smell.",
+    "skills": null,
+    "additional_information": [
+        "Accustomed to Filth gives advantage on saving throws against diseases.",
+        "Stealthy capabilities make it effective at avoiding detection.",
+        "Often used in roleplaying scenarios involving survival.",
+        "Commonly seen as pests in both rural and urban settings.",
+        "Can be trained or used by spellcasters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small rodent scavenger in sewers",
+        "tiny agile creature with keen sense of smell",
+        "nuisance pest found in urban areas",
+        "swift creature that spreads disease",
+        "rat that is often used as a familiar"
+    ]
+}

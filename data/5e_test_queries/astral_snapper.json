@@ -1,0 +1,25 @@
+{
+    "name": "Astral Snapper",
+    "queries": [
+        {
+            "query": "medium aberration that drains host's life essence",
+            "variant": "meduim aberration that drains hosts life essence"
+        },
+        {
+            "query": "creature with claws that teleports from its host",
+            "variant": "creature with claw that teleports from it host"
+        },
+        {
+            "query": "a hostile monster with a low charisma score and psychic abilities",
+            "variant": "a hostile monster with low charisma score and phychic abilities"
+        },
+        {
+            "query": "darkvision monster that causes constitution damage",
+            "variant": "dark viison monster that causes consitution damage"
+        },
+        {
+            "query": "astral creature with a special devour ability and decent perception",
+            "variant": "astral creatur with special devour abilty and decent preception"
+        }
+    ]
+}

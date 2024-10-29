@@ -1,0 +1,50 @@
+{
+    "name": "Spider",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "20 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "predatory",
+        "stealthy",
+        "ambusher"
+    ],
+    "adjectives": [
+        "tiny",
+        "venomous",
+        "web-spinning"
+    ],
+    "description": "A small, predatory arachnid known for spinning webs to trap prey, highly adaptable in climbing and ambushing.",
+    "memorable": "Noted for its ability to climb walls and ceilings, delivering venomous bites while being a common nuisance.",
+    "goals": "To ambush unsuspecting creatures and trap them using webs.",
+    "relations": "Often found with larger spiders or in environments where other small creatures are prey.",
+    "environment": "Commonly encountered in forests, caves, and other dark places.",
+    "strengths": "Excellent at stealth and ambushing due to its camouflaged body and abilities.",
+    "weaknesses": "Easily defeated due to low hit points and poor physical attributes.",
+    "attacks": "Uses a venomous bite that can deal piercing and poison damage, with a low damage output overall.",
+    "most_powerful_ability": "Spider Climb allows it to move effortlessly on difficult surfaces, enhancing its ambush tactics.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 30 feet, improving its ambush skills in low-light environments.",
+    "skills": "Proficient in stealth, granting it a high skill value to remain unnoticed.",
+    "additional_information": [
+        "Can sense creatures touching its webs, providing tactical awareness.",
+        "Completely unaffected by movement restrictions from webs.",
+        "Capable of launching webbing to hinder movement of prey."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small venomous creature with webs",
+        "tiny spider ambush predator in dark",
+        "stealthy web-slinging arachnid",
+        "common forest spider with climbing ability",
+        "predatory arachnid that traps prey"
+    ]
+}

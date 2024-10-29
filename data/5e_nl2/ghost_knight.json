@@ -1,0 +1,55 @@
+{
+    "name": "Ghost Knight",
+    "creature_type": "Undead",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 130,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "knight",
+        "mount",
+        "necrotic"
+    ],
+    "adjectives": [
+        "spectral",
+        "formidable",
+        "potent",
+        "lawful",
+        "evil"
+    ],
+    "description": "The Ghost Knight appears as a spectral warrior clad in half plate armor, exuding a menacing presence. It is often seen mounted on its loyal warhorse skeleton, both outfitted for combat.",
+    "memorable": "The combination of the Ghost Knight's special abilities and its necrotic weapon attacks makes it a challenging enemy, especially when working in tandem with its mount.",
+    "goals": "To serve as a formidable combatant and protect its surroundings, usually as a guardian of the undead or a cursed location.",
+    "relations": "Typically seen alongside other undead, especially those it might command or protect.",
+    "environment": "Often found in dark, eerie locations like graveyards, battlefields, or ancient ruins.",
+    "strengths": "Includes high armor class, substantial hit points, resistance to necrotic damage, and strong melee capabilities enhanced by its mount.",
+    "weaknesses": "Vulnerable to radiant damage, which can exploit its undead nature.",
+    "attacks": "It can execute multiple melee attacks, utilizing its Battleaxe or Lance with substantial necrotic damage added.",
+    "most_powerful_ability": "Necrotic Weapons, granting its attacks the ability to deal extra necrotic damage.",
+    "equipment": "Half plate armor and powerful melee weapons including a Battleaxe and Lance.",
+    "senses": "The Ghost Knight possesses darkvision up to 60 feet, enhancing its ability to perceive threats in low-light environments.",
+    "skills": "It excels in Athletics and Stealth, allowing for effective movement and maneuverability in combat.",
+    "additional_information": [
+        "Immune to poison damage.",
+        "Advantage on saving throws against effects that would turn undead.",
+        "Does not require air, food, drink, or sleep.",
+        "Locked Saddle ensures stability while mounted.",
+        "Can issue commands to its mount to enhance combat effectiveness."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spectral mounted warrior",
+        "undead knight with necrotic powers",
+        "ghost knight riding a skeleton horse",
+        "potent ghost knight with magical attacks",
+        "formidable undead with battleaxe and lance"
+    ]
+}

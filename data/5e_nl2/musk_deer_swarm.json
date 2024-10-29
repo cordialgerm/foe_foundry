@@ -1,0 +1,50 @@
+{
+    "name": "Musk Deer, Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "natural",
+        "agile"
+    ],
+    "adjectives": [
+        "nimble",
+        "evasive",
+        "swarming"
+    ],
+    "description": "The Musk Deer Swarm is a group of small, agile deer that can occupy the same space as other creatures and navigate through tiny openings. It has a unique appearance, with many deer moving together to create a fluid and cohesive form.",
+    "memorable": "The swarm's ability to share space and its significant biting damage can be quite overwhelming in numbers.",
+    "goals": "To evade threats and strike at opponents with quick, biting attacks.",
+    "relations": "Often found in wooded areas, may coexist with other wildlife.",
+    "environment": "Typically inhabits forested or natural environments.",
+    "strengths": "Strong mobility and evasive maneuvers; resistant to many physical damage types.",
+    "weaknesses": "Cannot regain hit points, making it vulnerable to focused attacks.",
+    "attacks": "The swarm can perform a devastating bite attack, inflicting up to 18 piercing damage.",
+    "most_powerful_ability": "The Swarm ability allows it to occupy the space of other creatures and escape through tiny openings.",
+    "senses": "Has a passive perception of 12, allowing it to detect hidden threats.",
+    "skills": "It has trained perception skill that enhances its ability to notice nearby dangers.",
+    "additional_information": [
+        "Immune to conditions like charmed and frightened.",
+        "Features a special ability to take the Dash action for enhanced movement.",
+        "The Musk ability can affect other creatures upon recharge.",
+        "Relies on swarm tactics rather than brute strength.",
+        "Resistant to common physical damage types."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile swarm of deer in the forest",
+        "swarming creatures that dash quickly",
+        "nimble creature with significant bite damage",
+        "deer swarm that avoids physical attacks",
+        "medium swarm with strong evasive tactics"
+    ]
+}

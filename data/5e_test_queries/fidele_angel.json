@@ -1,0 +1,25 @@
+{
+    "name": "Fidele Angel",
+    "queries": [
+        {
+            "query": "powerful celestial being with high Charisma and melee attack abilities",
+            "variant": "strong celestial creature that has great Charisma and melee attack skills"
+        },
+        {
+            "query": "loyal angel creature that shares damage with its partner",
+            "variant": "faithful angel that divides damage with its mate"
+        },
+        {
+            "query": "angelic protector immune to acid and cold damage",
+            "variant": "celestial guardian with immunity to acid and cold attacks"
+        },
+        {
+            "query": "winged celestial that can change shape and teleport to mate",
+            "variant": "celestial being with the ability to transform and teleport to its companion"
+        },
+        {
+            "query": "lawful good celestial with magic resistance and strong melee potential",
+            "variant": "lawful angelic being that has magic resistance and impressive physical power"
+        }
+    ]
+}

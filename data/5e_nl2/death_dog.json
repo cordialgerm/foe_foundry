@@ -1,0 +1,54 @@
+{
+    "name": "Death Dog",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "two-headed",
+        "predator",
+        "mountain",
+        "disease"
+    ],
+    "adjectives": [
+        "menacing",
+        "aggressive",
+        "two-headed",
+        "sickening"
+    ],
+    "description": "A two-headed, monstrous canine with matted fur and glowing, bloodshot eyes, known for its ferocity and aggressive nature.",
+    "memorable": "The Death Dog's ability to inflict a deadly disease with its bite and its relentless nature as a hunter make it a terrifying foe.",
+    "goals": "To guard tombs and ruins, and to hunt and attack travelers.",
+    "relations": "Often found in the company of dark masters or other aggressive creatures.",
+    "environment": "Typically found in plains and deserts.",
+    "strengths": "Two heads grant advantage on Perception checks and saving throws against various conditions; highly aggressive and territorial.",
+    "weaknesses": "Average armor class and relatively low intelligence, making tactical planning difficult.",
+    "attacks": "The Death Dog can make two bite attacks with its powerful jaws, capable of inflicting disease.",
+    "most_powerful_ability": "The 'Dual Bark' ability can deafens foes within range, creating chaos in encounters.",
+    "senses": "Possesses a passive Perception of 15, indicating keen awareness of surroundings.",
+    "skills": "Has proficiency in Stealth, indicating it can move quietly and ambush prey effectively.",
+    "additional_information": [
+        "Saliva carries a foul disease that can rot flesh over time.",
+        "Infectious bite that can poison and drain hit points.",
+        "Cannot be flanked due to its two-headed nature.",
+        "Resistant to the frightened condition.",
+        "Aggressive territorial behavior makes it dangerous to intruders."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "two-headed monstrous canine with diseased bite",
+        "aggressive predator guarding tombs",
+        "death dog that inflicts deadly disease",
+        "menacing dog that deafens its foes",
+        "two-headed dog lurking in plains"
+    ]
+}

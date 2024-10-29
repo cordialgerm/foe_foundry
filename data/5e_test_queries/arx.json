@@ -1,0 +1,25 @@
+{
+    "name": "Arx",
+    "queries": [
+        {
+            "query": "large fiend with spiky hide and damage resistances",
+            "variant": "fiend that is large and has a spiky hide with resistances to damage"
+        },
+        {
+            "query": "monster with lawful evil alignment that manipulates the battlefield",
+            "variant": "creature that is lawful evil and capable of battlefield control"
+        },
+        {
+            "query": "powerful fiend with high physical strength and low dexterity",
+            "variant": "strong fiend with a low dex score and high physical power"
+        },
+        {
+            "query": "Arx creature that can crush enemies with wall smash ability",
+            "variant": "creature Arx that uses wall smash to deal damage to foes"
+        },
+        {
+            "query": "large creature with darkvision and magic resistance",
+            "variant": "big monster that has darkvision and resistance to magic"
+        }
+    ]
+}

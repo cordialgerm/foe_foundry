@@ -1,0 +1,51 @@
+{
+    "name": "Ember Glider",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "flying",
+        "gliding"
+    ],
+    "adjectives": [
+        "fiery",
+        "agile",
+        "nimble"
+    ],
+    "description": "The Ember Glider is a medium-sized monstrosity that has membranes between its limbs for gliding and presents a fierce, fiery appearance in combat.",
+    "memorable": "It's notable for its fiery abilities and gliding capability, making it a formidable and challenging adversary.",
+    "goals": "To engage enemies with explosive fire attacks and avoid direct confrontation due to its low strength.",
+    "relations": "Could be encountered with other fire elementals or creatures that thrive in fiery environments.",
+    "environment": "Commonly found in fiery or volcanic regions.",
+    "strengths": "Immune to fire damage, resistance to poison, and high dexterity for nimble movement.",
+    "weaknesses": "Low strength and intelligence limit its physical confrontations and problem-solving abilities.",
+    "attacks": "Can bite for piercing damage, throw Brimstone Acorns that ignite targets, and unleash a fiery cone attack with its Blazing Tail.",
+    "most_powerful_ability": "The Blazing Tail releases a cone of fire dealing substantial damage and igniting flammable objects.",
+    "senses": "Has Keen Smell, granting advantage on Perception checks related to scent.",
+    "skills": "Possesses average awareness with a passive perception of 12.",
+    "additional_information": [
+        "Infused with elemental power allows it to require half the normal sustenance.",
+        "Glide ability lets it slow its descent and move while falling.",
+        "Sheds dim light in a 10-foot radius.",
+        "Heated Body causes fire damage to creatures touching it.",
+        "Low strength makes it less suitable for direct combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire creature that can glide",
+        "agile monster with fiery attacks",
+        "creature with heated body and keen smell",
+        "medium-sized monstrosity that glides",
+        "fiery skirmisher with explosive abilities"
+    ]
+}

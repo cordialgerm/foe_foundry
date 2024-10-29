@@ -1,0 +1,50 @@
+{
+    "name": "Narshark",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 25,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 40 ft., walk 10 ft., hover",
+    "role": null,
+    "tags": [
+        "flying",
+        "aggressive",
+        "magic"
+    ],
+    "adjectives": [
+        "large",
+        "dangerous",
+        "aggressive"
+    ],
+    "description": "The Narshark is a large creature with a magical horn that allows it to fly. It has a strong physique with a notable strength score, but it is dim-witted and has low charisma. Its horn is a valuable target for hunters.",
+    "memorable": "The Narshark's magical horn grants it the ability to fly, and severing this horn leads to a frenzied rage, making it more dangerous in combat.",
+    "goals": "The Narshark often engages in aggressive behavior when provoked and can be targeted by hunters for its magical horn.",
+    "relations": "Hunters often seek the Narshark to harvest its horn for magical purposes.",
+    "environment": "Typically found in areas where it can fly and navigate easily, like coastal regions.",
+    "strengths": "High perception and the ability to fly make it a challenging opponent.",
+    "weaknesses": "Low intelligence and charisma limit its strategic capabilities.",
+    "attacks": "Bite attack that deals piercing damage, with a chance to inflict additional damage through a wound effect.",
+    "most_powerful_ability": "The Narshark's Magical Horn, which allows it to fly and grants it advantage in combat if severed.",
+    "equipment": null,
+    "senses": "Keen sight allows it advantage on Perception checks relying on sight; it has a passive perception of 18.",
+    "skills": "Exceptional perception skills with a +6 bonus and decent stealth capabilities.",
+    "additional_information": [
+        "Immune to being knocked prone",
+        "Horn can be attacked and severed, damaging the Narshark",
+        "Weakness to attacks that exploit its low intelligence",
+        "Aggressive when its horn is threatened",
+        "Horn used in the creation of magic items"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large flying shark creature",
+        "aggressive monster with a magical horn",
+        "creature with piercing bite and flight",
+        "frenzied creature when horn is severed",
+        "dangerous flying monstrosity"
+    ]
+}

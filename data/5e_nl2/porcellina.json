@@ -1,0 +1,50 @@
+{
+    "name": "Porcellina",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walks quickly at 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "agile",
+        "poisonous"
+    ],
+    "adjectives": [
+        "tiny",
+        "cunning",
+        "resilient"
+    ],
+    "description": "The Porcellina is a tiny, agile beast with notable resilience in combat. It features a sharp, dexterous build that aids in cooperation with allies.",
+    "memorable": "Unique ability to poison foes through contact and the capability of instilling fear with its frightful scream.",
+    "goals": "Typically seeks to ambush prey or defend itself and its pack.",
+    "relations": "Often found working alongside other small creatures or beasts that rely on group tactics.",
+    "environment": "Commonly inhabits dense forests and areas with ample cover to support ambush strategies.",
+    "strengths": "Excellent dexterity and pack tactics allow for coordinated attacks.",
+    "weaknesses": "Low strength and intelligence render it ineffective in direct melee or complex problem-solving.",
+    "attacks": "Utilizes a Bite attack that deals piercing damage and can knock targets prone.",
+    "most_powerful_ability": "The ability to create fear in enemies with its Squeal reaction can disrupt combat.",
+    "equipment": null,
+    "senses": "Possesses keen hearing and smell, granting it advantage on perception checks related to these senses.",
+    "skills": "Has a strong saving throw bonus in Dexterity, enhancing its resilience against effects requiring such saves.",
+    "additional_information": [
+        "Has Pack Tactics for enhanced attack coordination.",
+        "Poisonous Flesh can impose poison status on attackers.",
+        "Features a high movement speed for quick escapes or ambushes."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny beast with poisonous skin",
+        "cunning creature that can knock enemies prone",
+        "agile monster that uses pack tactics",
+        "scream of the Porcellina causes fear",
+        "quick walking creature with keen senses"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Deep One",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "chaotic",
+        "evil",
+        "amphibious"
+    ],
+    "adjectives": [
+        "frenzied",
+        "aggressive",
+        "resilient"
+    ],
+    "description": "The Deep One is a muscular humanoid creature with enhanced physical traits, capable of operating effectively in both water and land. It features strong claws that deal significant damage.",
+    "memorable": "Its ability to enter a frenzied state when hurt, enhancing its combat effectiveness, makes it a particularly fearsome opponent.",
+    "goals": "Typically seeks to dominate environments, often terrorizing weaker creatures or adventurers.",
+    "relations": "May serve aquatic deities or ominous beings associated with the deep sea.",
+    "environment": "Commonly found in aquatic settings, swamps, or dark, dank places.",
+    "strengths": "Strong melee capabilities enhanced by a unique ability to become more dangerous when injured.",
+    "weaknesses": "Vulnerable to fire damage, which can easily exploit its weaknesses.",
+    "attacks": "Utilizes powerful claw strikes that provide substantial damage upon successful hits.",
+    "most_powerful_ability": "Frenzied Rage allows it to enhance its claw attacks significantly when damaged.",
+    "senses": "Has darkvision, allowing it to see in darkness up to 120 feet.",
+    "skills": "Not particularly skilled in perception, with a low passive awareness of 9.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Possesses a strong physical presence with a high strength score.",
+        "Weakness to fire damage makes it a target for fire-based attacks.",
+        "Resistance to cold damage grants it additional durability in icy environments."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid creature that breathes water and air",
+        "muscular monster with claws and frenzied rage",
+        "creature vulnerable to fire and strong in melee",
+        "chaotic evil monster found in swamps",
+        "aggressive humanoid with amphibious abilities"
+    ]
+}

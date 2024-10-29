@@ -1,6 +1,8 @@
 <MonsterName/>Vampire Mage</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>16</AC>
+<HP/>142</HP>
 <summary>The Vampire Mage is a powerful Medium Undead being that serves as a formidable adversary in any encounter. With an impressive hit point total and a high armor class, this creature is not only resilient but also capable of inflicting devastating damage through both spellcasting and melee attacks. The Vampire Mage is particularly notable for its combination of spellcasting abilities and its innate vampire powers, which allow it to charm, regenerate, and evade attacks effectively. However, it has weaknesses, especially against radiant damage and certain types of spells, making tactical play essential when facing it. The creature has a challenge rating of 13, indicating its ability to pose a significant threat to a party of adventurers.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Legendary actions are additional ways the Vampire Mage can act outside its turn,
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vampire Mage
 
 *Medium* *Undead*
@@ -88,5 +91,6 @@ Source: 5e_artisinal_monsters
 - **Grab:** The vampire makes a grab attack.
 - **Mist Form:** The vampire transforms into a mist or back into its true form. As mist, the vampire has a flying speed of 30, can't speak, can't take actions or manipulate objects, is immune to nonmagical damage from weapons, and has advantage on saving throws and Stealth checks. It can pass through a space as narrow as 1 inch without squeezing but can't pass through water. Anything its carrying transforms with it.
 - **Shapechange:** The vampire transforms into the shape of a Medium or smaller beast or back into its true form. While transformed, it has the beasts size and movement modes. It can't use reactions or legendary actions, and can't speak. Otherwise, it uses the vampires statistics. Anything its carrying transforms with it.
+</statblock>
 
 

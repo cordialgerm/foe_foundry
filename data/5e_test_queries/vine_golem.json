@@ -1,0 +1,25 @@
+{
+    "name": "Vine Golem",
+    "queries": [
+        {
+            "query": "plant-themed combat guardian that communicates telepathically with its master",
+            "variant": "guardian that uses plants in combat and can talk to its master through thoughts"
+        },
+        {
+            "query": "medium-sized construct with a thorny vine attack that ensnares enemies",
+            "variant": "construct of medium size that uses thorned vines to trap foes"
+        },
+        {
+            "query": "stealthy creature that thrives in plant-covered environments",
+            "variant": "creature that hides well in areas filled with plants"
+        },
+        {
+            "query": "golem that is immune to poison and resistant to physical attacks",
+            "variant": "this golem takes no damage from poison and is less affected by physical attacks"
+        },
+        {
+            "query": "Vine Golem's special abilities including telepathy and battlefield control",
+            "variant": "special powers of the Vine Golem such as mind communication and controlling enemies"
+        }
+    ]
+}

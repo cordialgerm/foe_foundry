@@ -1,0 +1,25 @@
+{
+    "name": "Corrupted Chieftain",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with magical weapons",
+            "variant": "chaotic evil giant that is large and wields magical weapons"
+        },
+        {
+            "query": "giant monster with high strength and low dexterity",
+            "variant": "monster giant with low dexterity and a very high strength score"
+        },
+        {
+            "query": "monster that inflicts damage when touched and has an ability to frighten",
+            "variant": "creature that has a fear-inducing ability and deals damage on contact"
+        },
+        {
+            "query": "combat-oriented giant with strong melee attacks and magical damage",
+            "variant": "giant that focuses on melee combat and has attacks that deal magical damage"
+        },
+        {
+            "query": "Corrupted Chieftain with special abilities like Chieftain\u2019s Command",
+            "variant": "special abilities like Chieftain's Might and Chieftain's Command from Corrupted Chieftain"
+        }
+    ]
+}

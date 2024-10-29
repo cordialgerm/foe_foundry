@@ -1,0 +1,25 @@
+{
+    "name": "Giant Mongoose",
+    "queries": [
+        {
+            "query": "agile medium beast with keen senses and stealth skills",
+            "variant": "medium beast that is agile and has keen senses with stealth skills"
+        },
+        {
+            "query": "creature with high dexterity that can bite and evade attacks",
+            "variant": "creature that can evade attacks and has a high dexterity, also deals bite damage"
+        },
+        {
+            "query": "mongooses that thrive in various environments and resist poison",
+            "variant": "mongooses thriving in different environments with poison resistance"
+        },
+        {
+            "query": "sneaky animal with darkvision and good perception",
+            "variant": "sneaky creature possessing darkvision and having good perception"
+        },
+        {
+            "query": "medium-sized animal known for ambushing and evading danger",
+            "variant": "medium animal known for its ambushing abilities and evasion techniques"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Boar",
+    "queries": [
+        {
+            "query": "massive beast with sharp tusks that roams forests",
+            "variant": "huge beast with sharp tusks that wanders woods"
+        },
+        {
+            "query": "aggressive creature with bristly fur and strong charge ability",
+            "variant": "hostile animal with rough fur and powerful charging attack"
+        },
+        {
+            "query": "territorial large animal that uses tusks to attack",
+            "variant": "large aggressive creature that attacks with tusks and is territorial"
+        },
+        {
+            "query": "large boar known for its fearsome attacks and durability",
+            "variant": "big boar recognized for its deadly attacks and resilience"
+        },
+        {
+            "query": "beast with high constitution and ability to knock foes prone",
+            "variant": "animal with great constitution and the capability to knock opponents down"
+        }
+    ]
+}

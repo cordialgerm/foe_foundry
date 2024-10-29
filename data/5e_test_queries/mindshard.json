@@ -1,0 +1,25 @@
+{
+    "name": "Mindshard",
+    "queries": [
+        {
+            "query": "small psychic creature that uses charm and manipulates foes",
+            "variant": "small mind control creature that manipulates and charms enemies"
+        },
+        {
+            "query": "creature with blindsight that creates cultists from fallen foes",
+            "variant": "monster that has blindsight and makes cultists from dead enemies"
+        },
+        {
+            "query": "aberration that flies and has strong charm abilities",
+            "variant": "flying aberration with powerful charm powers"
+        },
+        {
+            "query": "psychic damage dealer that remains difficult to detect",
+            "variant": "difficult to detect creature that deals psychic damage"
+        },
+        {
+            "query": "monster with high charisma and abilities to incapacitate",
+            "variant": "creature with great charisma that can incapacitate opponents"
+        }
+    ]
+}

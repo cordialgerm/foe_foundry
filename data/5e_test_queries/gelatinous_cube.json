@@ -1,0 +1,25 @@
+{
+    "name": "Gelatinous Cube",
+    "queries": [
+        {
+            "query": "transparent ooze creature that dissolves organic matter",
+            "variant": "transparent oozing creature that dissolves organic material"
+        },
+        {
+            "query": "large cube-shaped monster found in dungeons that restrains prey",
+            "variant": "big cube-shaped monster in dungeons that can restrain its prey"
+        },
+        {
+            "query": "creature with high hit points and acid damage attacks lurking in underground tunnels",
+            "variant": "monster with high hit points and acid-inflicting attacks hiding in underground passages"
+        },
+        {
+            "query": "sluggish ooze that can engulf adventurers in dark environments",
+            "variant": "slow ooze that can swallow adventurers in dark places"
+        },
+        {
+            "query": "ambush predator that cannot be blinded or fatigued and ambushes through invisibility",
+            "variant": "ambushing predator that is immune to being blinded or tired and attacks from invisibility"
+        }
+    ]
+}

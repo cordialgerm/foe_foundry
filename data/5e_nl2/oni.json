@@ -1,0 +1,54 @@
+{
+    "name": "Oni",
+    "creature_type": "Giant",
+    "creature_subtype": "outsider",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 110,
+    "ac": 16,
+    "srd": true,
+    "cr": "7",
+    "movement": "30 ft., fly 30 ft.",
+    "role": null,
+    "tags": [
+        "shape-shifter",
+        "giant",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "malevolent",
+        "cunning",
+        "cruel"
+    ],
+    "description": "An Oni has blue or green skin, large tusks, and horns. It can assume different forms, such as a human or a large ogre, and wields powerful magic and a glaive.",
+    "memorable": "Oni are known for their ability to infiltrate human settlements disguised as common folk, spreading chaos and preying on the weak.",
+    "goals": "To sow chaos, deceive adventurers, and feast on the weak.",
+    "relations": "Oni may have ties to other malevolent outsiders or be found in the company of other giants.",
+    "environment": "Typically found in human settlements or locations where they can deceive and manipulate others.",
+    "strengths": "Possesses both physical prowess and a variety of magical abilities, including invisibility and regeneration.",
+    "weaknesses": "Lacks mobility beyond flying, and can be diminished by restorative spells or abilities.",
+    "attacks": "Multiattack with claws or glaive, delivering slashing and additional force damage. Ranged Arcane Bolt attack deals force damage.",
+    "most_powerful_ability": "Regeneration: the Oni regains 10 hit points at the start of its turn if it has at least 1 HP.",
+    "equipment": "Glaive that adjusts in size when it changes form.",
+    "senses": null,
+    "skills": "Proficient in Deception and Arcana, uses cunning and magical knowledge to navigate encounters.",
+    "additional_information": [
+        "Can cast darkness and invisibility at will.",
+        "Regenerates health, enhancing its survivability.",
+        "Can create a magical wind with its Whirling Glaive ability.",
+        "Weapon attacks deal additional force damage.",
+        "Shape-shifting ability allows for tactical versatility."
+    ],
+    "damage_types": [
+        "force",
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting ability using Charisma, allowing it to cast spells like charm and sleep once per day.",
+    "test_queries": [
+        "malevolent giant that shape-shifts",
+        "Oni disguised as a human causing chaos",
+        "blue-skinned giant with powerful magic",
+        "cruel outsider that preys on the weak",
+        "giant that flies and uses magic"
+    ]
+}

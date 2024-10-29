@@ -1,0 +1,25 @@
+{
+    "name": "Adult Wasteland Dragon",
+    "queries": [
+        {
+            "query": "huge chaotic evil dragon with a fear-inducing presence",
+            "variant": "huge dragon that is chaotic evil and has a frightful presence"
+        },
+        {
+            "query": "dragon that can fly and has powerful force breath weapon",
+            "variant": "dragon with the ability to fly and a strong force damage breath attack"
+        },
+        {
+            "query": "big dragon with high hit points and damage immunity to force",
+            "variant": "large dragon that has high HP and immunity to force damage"
+        },
+        {
+            "query": "Wasteland Dragon with advantage in melee and stealth skills",
+            "variant": "Wasteland Dragon that excels in melee and has good stealth skills"
+        },
+        {
+            "query": "Adult Dragon known for burrowing and deadly breath attacks",
+            "variant": "Adult Dragon famous for its burrowing ability and lethal breath weapon"
+        }
+    ]
+}

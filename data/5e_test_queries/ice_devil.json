@@ -1,0 +1,25 @@
+{
+    "name": "Ice Devil",
+    "queries": [
+        {
+            "query": "large insect-like fiend that commands ice storms",
+            "variant": "big insect-ish fiend commanding storms of ice"
+        },
+        {
+            "query": "towering fiend with icy exoskeleton found in frozen realms",
+            "variant": "tall fiend with frost-covered exoskeleton from icy realms"
+        },
+        {
+            "query": "creature immune to fire that uses cold attacks",
+            "variant": "entity immune to fire using ice-based attacks"
+        },
+        {
+            "query": "menacing fiend with tactical abilities and cold damage",
+            "variant": "threatening fiend using strategies and cold-based damage"
+        },
+        {
+            "query": "fiend that creates ice walls and has a spiked tail",
+            "variant": "devil that makes ice barriers and sports a spiky tail"
+        }
+    ]
+}

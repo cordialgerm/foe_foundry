@@ -1,0 +1,25 @@
+{
+    "name": "Snow Ooze",
+    "queries": [
+        {
+            "query": "huge ooze monster that thrives in icy terrain and can blind opponents",
+            "variant": "monster that is huge and made of ooze, loves ice, and blinding enemies"
+        },
+        {
+            "query": "treacherous ooze with false appearance that ambushes in snowy environments",
+            "variant": "difficult ooze creature that disguises as snow to ambush in cold places"
+        },
+        {
+            "query": "blizzard monster that uses cold damage and burrows through snow",
+            "variant": "cold-themed ooze that attacks with blizzard abilities and burrows in snow"
+        },
+        {
+            "query": "slow-moving ooze that attacks using pseudopods in cold landscapes",
+            "variant": "ooze with low dexterity that strikes with pseudopods in icy areas"
+        },
+        {
+            "query": "blinded by snow ooze ability in snow-covered environments",
+            "variant": "ability of snow ooze to blind creatures in snowy settings"
+        }
+    ]
+}

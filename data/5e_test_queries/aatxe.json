@@ -1,0 +1,25 @@
+{
+    "name": "Aatxe",
+    "queries": [
+        {
+            "query": "large celestial guardian with magic resistance",
+            "variant": "large celestial protecter with magic resistence"
+        },
+        {
+            "query": "creature that can read thoughts and charge at enemies",
+            "variant": "monster that can read surface thoughts and charge at foes"
+        },
+        {
+            "query": "powerful celestial that frightens enemies and has high strength",
+            "variant": "strong celestial that terrifies foes and has great strength"
+        },
+        {
+            "query": "Aatxe abilities to polymorph and attack with gore",
+            "variant": "Aatxe's ability to change form and gore attack"
+        },
+        {
+            "query": "monster immune to charm that lives in a battle environment",
+            "variant": "creature that can't be charmed and exists in a combat setting"
+        }
+    ]
+}

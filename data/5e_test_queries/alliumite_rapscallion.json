@@ -1,0 +1,25 @@
+{
+    "name": "Alliumite, Rapscallion",
+    "queries": [
+        {
+            "query": "chaotic plant creature that can blend into the environment",
+            "variant": "plant creature that is chaotic and can blend into its surroundings"
+        },
+        {
+            "query": "small cunning monster with blinding ability and good dexterity",
+            "variant": "small cunning creature with dexterity and a blinding ability"
+        },
+        {
+            "query": "plant monster found in natural terrain with emotional attacks",
+            "variant": "monster made of plants that uses emotional attacks in natural areas"
+        },
+        {
+            "query": "Rapscallion plant that uses insults to hinder spellcasters",
+            "variant": "plant creature known as Rapscallion that hinders spellcasters with insults"
+        },
+        {
+            "query": "Alliumite with natural armor and mobility in combat",
+            "variant": "Alliumite plant creature with mobility and natural armor for combat"
+        }
+    ]
+}

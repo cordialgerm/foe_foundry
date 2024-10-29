@@ -1,0 +1,55 @@
+{
+    "name": "Chaos Creeper",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 15 ft., climb 10 ft.",
+    "role": null,
+    "tags": [
+        "chaotic",
+        "plant",
+        "magic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "magical",
+        "unpredictable"
+    ],
+    "description": "The Chaos Creeper is a plant creature that embodies chaos, featuring magical pitcher-shaped fruit that can produce various chaotic effects when consumed.",
+    "memorable": "It can produce magical fruit resulting in a range of unpredictable effects, impacting the battlefield dramatically.",
+    "goals": "To create chaos and influence the environment through its magical fruit.",
+    "relations": "Related to other chaotic or magical plants.",
+    "environment": "Typically found in chaotic or wild magical areas.",
+    "strengths": "Immune to poison damage and conditions, versatile in battle with multiple attack options.",
+    "weaknesses": "Average strength means not particularly skillful in direct physical combat.",
+    "attacks": "Multiattack options include bludgeoning attacks with vine whips or explosive fruit bombs that can deal various damage types.",
+    "most_powerful_ability": "Pandemonium Fruit, which allows the wielder to control chaotic effects when consuming or triggering its magical fruit.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to perceive beyond normal sight despite being a plant.",
+    "skills": "Average perception skill contributes to its awareness of surroundings.",
+    "additional_information": [
+        "Can heal conditions or induce transformations with its magical fruit.",
+        "Fruit effects are entirely based on chance unless the creature chooses to control them.",
+        "The Fruit Bombs can trigger its chaotic magic without directly consuming the fruit."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic plant with magical effects",
+        "creature that produces unpredictable fruit",
+        "plant monster with vine attacks",
+        "magical plant that creates explosions",
+        "creature immune to poison and blind"
+    ]
+}

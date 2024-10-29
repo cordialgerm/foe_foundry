@@ -1,0 +1,25 @@
+{
+    "name": "Spree",
+    "queries": [
+        {
+            "query": "small chaotic evil fiend with madness-inducing abilities",
+            "variant": "small fiend of chaotic evil nature that induces madness"
+        },
+        {
+            "query": "fiend that has chaotic effects in combat and can confuse opponents",
+            "variant": "fiend with chaotic combat effects and confusion abilities"
+        },
+        {
+            "query": "creature with darkvision and resistance to cold and fire damage",
+            "variant": "monster that has darkvision and is resistant to cold, fire damage"
+        },
+        {
+            "query": "small fiend that causes fear and has a frothing rage ability",
+            "variant": "small chaotic fiend that inflicts fear and has frothing rage ability"
+        },
+        {
+            "query": "creature with high dexterity and special claw attack effects",
+            "variant": "monster that has high dexterity and unique effects from claw attacks"
+        }
+    ]
+}

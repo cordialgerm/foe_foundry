@@ -1,6 +1,8 @@
 <MonsterName/>Droth</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>12</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>230</HP>
 <summary>The Droth is a formidable Huge Aberration that embodies both terror and complexity in its design. As a creature with a Challenge Rating of 12, it possesses substantial raw power, evidenced by its impressive 230 hit points, formidable armor class of 16, and a suite of unique abilities that make it a challenging opponent in combat. Its primarily offensive capabilities come from its sheer strength and special actions, which can deal significant damage while also incapacitating foes. Additionally, its ability to absorb knowledge and power from its victims adds a layer of strategy to its encounters, making the Droth a versatile threat. On the downside, the Droth has low Dexterity and is therefore less nimble, making it vulnerable to creatures that can exploit its weaknesses in speed and finesse.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Droth represents a multi-faceted encounter with powerful actions, s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Droth
 
 *Huge* *Aberration* *lawful neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Acid Wave (Recharge 5-6):** The droth rises up and crashes down, releasing a 20-foot-radius wave of acidic ooze. Each creature in the area must make a DC 17 Dexterity saving throw. On a failure, a creature takes 45 (10d8) acid damage and is knocked prone. On a success, a creature takes half the damage and isn't knocked prone.
 
 
+</statblock>
 
 

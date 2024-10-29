@@ -1,0 +1,50 @@
+{
+    "name": "Forest Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "climb 50 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "fire",
+        "forest"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "versatile"
+    ],
+    "description": "The Forest Drake is a relatively small draconic creature known for its impressive agility and vibrant scales, with a noticeable fiery presence.",
+    "memorable": "Its ability to leap impressive distances and deliver potent fire attacks makes this drake a notable opponent.",
+    "goals": "It interacts with adventurers and other forest creatures, serving as a guardian of its natural habitat.",
+    "relations": "It may be encountered alongside other forest creatures and potentially works with druids.",
+    "environment": "Found in forested areas, often climbing trees or maneuvering through dense foliage.",
+    "strengths": "Immunity to fire damage and resistance to being paralyzed or unconscious contributes to its survivability.",
+    "weaknesses": "Low Dexterity makes it less evasive compared to other nimble creatures.",
+    "attacks": "Engages using a combination of biting with fiery enhancement and slashing with its claws.",
+    "most_powerful_ability": "Fire Breath allows it to unleash a damaging area of flames, affecting multiple targets.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in low-light conditions.",
+    "skills": "Skilled in athletics and nature, showcasing its capabilities in movement and knowledge of the natural world.",
+    "additional_information": [
+        "Has a Mighty Leap ability for increased mobility in combat.",
+        "Can make multiattack defeating both melee and fire elements.",
+        "Resistant against common defensive countermeasures due to condition immunities."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small dragon that can breathe fire",
+        "agile drake that jumps long distances",
+        "forest creature with fiery abilities",
+        "neutral dragon in wooded areas",
+        "fire-breathing dragon with good athletics"
+    ]
+}

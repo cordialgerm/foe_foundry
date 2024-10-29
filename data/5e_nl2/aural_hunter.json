@@ -1,0 +1,52 @@
+{
+    "name": "Aural Hunter",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dangerous",
+        "deadly"
+    ],
+    "description": "The Aural Hunter is a large, monstrous aberration with a chaotic, evil demeanor. It features high durability and striking physical attributes, equipped with claws and rib hooks as its primary weapons.",
+    "memorable": "The Aural Hunter can consume sound, draining vitality from its foes while becoming even more resilient in battle.",
+    "goals": "To dominate battles by using its ability to control sound and drain the life force of its opponents.",
+    "relations": "Typically found in the company of other aberrations or chaotic evil creatures.",
+    "environment": "Commonly found in caverns or areas of chaotic sound.",
+    "strengths": "Exceptionally strong physically with the ability to grapple and silence opponents.",
+    "weaknesses": "Vulnerable to thunder damage, which can disable its blindsight and other abilities.",
+    "attacks": "Utilizes powerful claw and rib hook attacks, along with the formidable Consume Sound ability that inflicts necrotic damage.",
+    "most_powerful_ability": "Consume Sound, which allows it to siphon energy from grappled creatures, regain hit points, and render them deafened.",
+    "senses": "Possesses blindsight up to 60 feet but can only see 20 feet when deafened and has a passive Perception of 17 due to its exceptional Wisdom.",
+    "skills": "Holds an impressive perception skill due to its high Wisdom, allowing it to detect sound effectively.",
+    "additional_information": [
+        "Immune to blinding effects but cannot use blindsight while deafened or lacking sense of smell.",
+        "Grapples targets effectively with its Rib Hooks attack.",
+        "Can incapacitate foes through its sound-consuming abilities.",
+        "Possesses keen hearing with advantage on Perception checks reliant on hearing.",
+        "Weak against sound-related attacks that can deafen it."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster that consumes sound",
+        "chaotic evil aberration",
+        "large creature with necrotic attack",
+        "grappling sound-based monster",
+        "fearsome monster with unique sound abilities"
+    ]
+}

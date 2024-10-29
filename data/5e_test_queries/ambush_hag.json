@@ -1,0 +1,25 @@
+{
+    "name": "Ambush Hag",
+    "queries": [
+        {
+            "query": "deceptive fey creature that ambushes foes",
+            "variant": "fey creature that ambushes enemies and is deceptive"
+        },
+        {
+            "query": "spider climbing hag with poison attacks",
+            "variant": "hag that climbs like a spider and uses poison attacks"
+        },
+        {
+            "query": "medium fey with high stealth and illusion powers",
+            "variant": "fey with high stealth and illusion capabilities that is medium-sized"
+        },
+        {
+            "query": "hag that can mimic sounds and has paralyzing claws",
+            "variant": "creature that mimics sounds and uses claws to paralyze"
+        },
+        {
+            "query": "ambush specialist with charming abilities and darkvision",
+            "variant": "stealthy creature that excels in ambush tactics and has darkvision"
+        }
+    ]
+}

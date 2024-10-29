@@ -1,0 +1,25 @@
+{
+    "name": "Wampus Cat",
+    "queries": [
+        {
+            "query": "agile monster with charm abilities living in various environments",
+            "variant": "agile monster that has charm powers and lives in different environments"
+        },
+        {
+            "query": "cat-like creature using vocal powers to manipulate foes",
+            "variant": "creature that looks like a cat using sound to control enemies"
+        },
+        {
+            "query": "medium monstrosity with sweet song and terrifying yowl abilities",
+            "variant": "monstrosity that is medium-sized with abilities like sweet song and terrifying yowl"
+        },
+        {
+            "query": "wampus cat with divine animosity and high dexterity",
+            "variant": "Wampus Cat with the ability of divine animosity and exceptional dexterity"
+        },
+        {
+            "query": "shapeshifting monster that charms and frightens enemies",
+            "variant": "monster that can change shape and has abilities to charm and scare opponents"
+        }
+    ]
+}

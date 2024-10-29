@@ -1,0 +1,25 @@
+{
+    "name": "Death Vulture",
+    "queries": [
+        {
+            "query": "large grotesque flying monster with a stench and necrotic attacks",
+            "variant": "big ugly flying creature that has a smell and necrotic abilities"
+        },
+        {
+            "query": "vulture-like monstrosity that deals necrotic damage and has Pack Tactics",
+            "variant": "monstrosity resembling a vulture that utilizes necrotic damage and works with allies"
+        },
+        {
+            "query": "creature that causes poison with its stench and has high Strength",
+            "variant": "being that poisons with its smell and possesses great physical power"
+        },
+        {
+            "query": "predatory vulture monster that ages opponents and has sharp talons",
+            "variant": "hunting vulture creature that makes enemies older and features deadly talons"
+        },
+        {
+            "query": "flying creature with average Dexterity and horrific abilities",
+            "variant": "winged monster that has normal agility and terrifying powers"
+        }
+    ]
+}

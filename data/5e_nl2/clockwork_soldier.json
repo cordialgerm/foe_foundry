@@ -1,0 +1,50 @@
+{
+    "name": "Clockwork Soldier",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walks at a speed of 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "soldier",
+        "mechanical"
+    ],
+    "adjectives": [
+        "mechanical",
+        "resilient",
+        "intimidating"
+    ],
+    "description": "The Clockwork Soldier is a medium-sized construct with an unyielding metal body, capable of formidable combat. It wields a halberd in battle.",
+    "memorable": "Its Intimidating Legions ability makes it particularly fearsome in numbers, enhancing its effectiveness in groups.",
+    "goals": "To serve in combat and protect allies through overwhelming force.",
+    "relations": "Often found alongside other Clockwork Soldiers, they function better in groups.",
+    "environment": "Typically encountered in locations where they are deployed for security or warfare.",
+    "strengths": "Immunity to poison and psychic damage, various condition immunities, and Magic Resistance provide significant resilience.",
+    "weaknesses": "Very low intelligence and charisma, hindering its ability to think critically or intimidate without support.",
+    "attacks": "The Clockwork Soldier attacks with a halberd, dealing slashing damage with a reach of 10 feet.",
+    "most_powerful_ability": "Overdrive Flurry allows the soldier to unleash four halberd attacks in one action, though it becomes stunned after use.",
+    "equipment": "Wields a halberd.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in dim or dark conditions.",
+    "skills": "It has a good proficiency in Athletics but struggles with Intimidation due to low charisma.",
+    "additional_information": [
+        "Immune to spells or effects that alter its form.",
+        "Gains bonuses to Intimidation when surrounded by allies.",
+        "Constitution score grants strong health and resilience.",
+        "Performs adequately in physical tasks due to decent strength and dexterity.",
+        "Well-suited for low-level adventurers as a combat opponent."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fearsome mechanical soldier with halberd",
+        "intimidating construct that works in groups",
+        "poison and psychic immune battlefield guardian",
+        "resilient combatant with Magic Resistance",
+        "Clockwork Soldier tactics in numbers"
+    ]
+}

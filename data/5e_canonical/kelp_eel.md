@@ -1,6 +1,8 @@
 <MonsterName/>Kelp Eel</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Kelp Eel is a huge plant creature that embodies the merging of plant and aquatic characteristics. It presents a unique challenge to adventurers due to its formidable defensive capabilities, high hit points, and ability to control the battlefield through grappling mechanics. With an Armor Class of 17, it offers good protection from attacks, and with 157 hit points, it can withstand considerable amounts of damage. However, the Kelp Eel's intelligence is very low, which limits its tactical options in combat. It is primarily defensive and has a high ability to resist damage types of acid, bludgeoning, and piercing, providing it with good durability. Its ability to form into ordinary kelp gives it a cunning edge in ambush play, and its grappling capacity can restrict opponents effectively. Nevertheless, parties might exploit its vulnerability if they can remove enough of its dispersed components from water, leading to its permanent destruction.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Kelp Eel’s actions in combat include a "Multiattack," which permits it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kelp Eel
 
 *Huge* *Plant* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Reel:** The kelp eel pulls each creature grappled by it up to 25 feet straight toward it.
 
 
+</statblock>
 
 

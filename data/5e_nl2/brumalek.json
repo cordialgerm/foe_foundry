@@ -1,0 +1,53 @@
+{
+    "name": "Brumalek",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 40,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 20 ft. burrowing, 20 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "cold environment",
+        "pack tactics",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "agile",
+        "stealthy",
+        "nimble"
+    ],
+    "description": "The Brumalek is a small and agile beast with enhanced mobility through burrowing and climbing, and notable features like a thunderous howl and pack tactics.",
+    "memorable": "Its ability to deaf opponents with a howl while remaining agile makes it a unique threat in combat.",
+    "goals": "Typically hunts in packs, using stealthy movements to ambush prey.",
+    "relations": "Often found in groups with other Brumaleks, enhancing their effectiveness through Pack Tactics.",
+    "environment": "Primarily found in snowy regions and environments with earth and snow.",
+    "strengths": "Immunity to thunder damage and resistance to cold damage makes it effective in cold climates.",
+    "weaknesses": "Low strength and charisma scores limit its physical power and social interactions.",
+    "attacks": "Uses a melee attack called Headbutt, dealing bludgeoning damage.",
+    "most_powerful_ability": "Reverberating Howl, a cone attack that deafens foes while dealing thunder damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a decent perception skill of +1.",
+    "additional_information": [
+        "Can burrow through nonmagical snow without disturbing it.",
+        "Advantages on attack rolls if allies are nearby.",
+        "Ability to use Skittish action to enhance mobility.",
+        "Deafening howl audible from 300 feet away.",
+        "Poor physical and social abilities."
+    ],
+    "damage_types": [
+        "thunder",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile beast with a deafening howl",
+        "creature that burrows through snow stealthily",
+        "ambush predator in snowy environments",
+        "pack tactics monster with thunder damage",
+        "skirmisher that can climb and burrow"
+    ]
+}

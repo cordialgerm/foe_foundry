@@ -1,0 +1,25 @@
+{
+    "name": "Sodwose",
+    "queries": [
+        {
+            "query": "stealthy plant creature that ambushes in grasslands",
+            "variant": "sneaky plant monster that ambushes in grassy areas"
+        },
+        {
+            "query": "agile plant monster with a fear-inducing ability",
+            "variant": "quick plant creature that can frighten enemies"
+        },
+        {
+            "query": "grassland ambush predator that is weak to fire",
+            "variant": "grassland stealth monster vulnerable to fire damage"
+        },
+        {
+            "query": "medium plant creature known for camouflage and traps",
+            "variant": "medium-sized plant monster recognized for its hiding skills and snares"
+        },
+        {
+            "query": "plant creature with blindsight and grass whip attacks",
+            "variant": "plant monster that has blindsight and attacks using a grass whip"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Archdruid",
+    "queries": [
+        {
+            "query": "humanoid nature spellcaster with high wisdom and elemental attacks",
+            "variant": "nature spellcaster humanoid with high wisdom and elemental damage"
+        },
+        {
+            "query": "powerful creature that can shapeshift and casts nature spells",
+            "variant": "creature that casts nature spells and can change shape"
+        },
+        {
+            "query": "medium humanoid proficient in nature with a high armor class in natural environments",
+            "variant": "humanoid proficient in nature that has a high AC in natural settings"
+        },
+        {
+            "query": "strong nature-themed humanoid with high hit points and multiattack abilities",
+            "variant": "nature-themed humanoid with lots of hit points and multi-attack options"
+        },
+        {
+            "query": "archdruid abilities for transforming and dealing elemental damage",
+            "variant": "archdruid's powers for transformation and elemental attacks"
+        }
+    ]
+}

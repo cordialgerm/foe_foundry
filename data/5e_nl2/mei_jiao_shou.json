@@ -1,0 +1,50 @@
+{
+    "name": "Mei Jiao Shou",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 139,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "gargantuan",
+        "controller"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "massive"
+    ],
+    "description": "The Mei Jiao Shou is a gargantuan beast characterized by its immense size and strength. With a powerful physique and a massive head, it presents a terrifying presence on the battlefield.",
+    "memorable": "Its ability to trample opponents and reshape the battlefield with shockwaves makes the Mei Jiao Shou a distinctive foe.",
+    "goals": "To dominate opponents physically and control the battlefield environment.",
+    "relations": "May be associated with other large beasts or powerful predators.",
+    "environment": "Typically found in spacious terrains where it can utilize its movement and trample ability effectively.",
+    "strengths": "Exceptional Strength and Constitution allow for devastating melee attacks and high durability.",
+    "weaknesses": "Notably low Dexterity makes it vulnerable to ranged attacks and quick maneuvers.",
+    "attacks": "Utilizes a Head Bash to deal bludgeoning damage, followed by a powerful Stomp against prone targets.",
+    "most_powerful_ability": "Earth-Shaking Thump creates shockwaves that damage and knock prone multiple creatures while making the area difficult terrain.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 9, indicating limited awareness of its surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Striking presence in combat due to its gargantuan size.",
+        "Trampling Charge can incapacitate foes quickly.",
+        "Earth-Shaking Thump affects multiple creatures in an area.",
+        "Resilient with 139 hit points, capable of withstanding significant damage.",
+        "Utilizes both melee and area control tactics effectively."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan beast with powerful melee attacks",
+        "massive creature that controls the battlefield",
+        "animal that causes area shockwaves",
+        "strong beast with trampling abilities",
+        "powerful monster that knocks creatures prone"
+    ]
+}

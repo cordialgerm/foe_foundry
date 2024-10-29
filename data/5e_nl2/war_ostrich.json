@@ -1,0 +1,50 @@
+{
+    "name": "War Ostrich",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 42,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "combat",
+        "agile",
+        "unarmored"
+    ],
+    "adjectives": [
+        "large",
+        "swift",
+        "agile",
+        "formidable"
+    ],
+    "description": "The War Ostrich is a large, agile creature known for its remarkable speed and combat capabilities. It has strong claws and a beak, making it a surprising threat on the battlefield.",
+    "memorable": "Its ability to leap great distances and knock foes prone gives it a unique advantage in combat.",
+    "goals": "To disrupt and overwhelm foes on the battlefield.",
+    "relations": "May be found alongside other wild beasts or as a combat mount.",
+    "environment": "Natural environments such as plains or savannas where it can use its speed.",
+    "strengths": "High mobility allows quick repositioning, and it can disable enemies with its knockdown ability.",
+    "weaknesses": "Low intelligence and charisma make it difficult to control or direct.",
+    "attacks": "Melee attacks with beak and claws dealing piercing and bludgeoning damage, respectively.",
+    "most_powerful_ability": "Leaping Pounce that allows it to knock targets prone for tactical advantage.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can use Dash or Disengage as a bonus action for mobility.",
+        "Intimidating Screech can disrupt enemy actions.",
+        "Standing Leap allows significant jumping capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large swift combat beast",
+        "agile creature with powerful attacks",
+        "war ostrich battlefield tactics",
+        "creature that knocks enemies prone",
+        "swift beast with leaping ability"
+    ]
+}

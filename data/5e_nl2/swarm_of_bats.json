@@ -1,0 +1,53 @@
+{
+    "name": "Swarm of Bats",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "nocturnal",
+        "flying",
+        "chaotic"
+    ],
+    "adjectives": [
+        "tiny",
+        "swift",
+        "chaotic",
+        "overwhelming"
+    ],
+    "description": "A chaotic, flurry of small, nocturnal creatures characterized by their ability to swarm. They possess a keen sense of echolocation for navigation in darkness.",
+    "memorable": "Their overwhelming numbers can confuse and disorient foes, creating chaos on the battlefield.",
+    "goals": "Typically found in areas rich in insects or blood, they swarm to overwhelm their prey.",
+    "relations": "Often found in caves, ruins, or forests, where they might share habitats with other nocturnal or insectivorous creatures.",
+    "environment": "Caves, ruins, or forests.",
+    "strengths": "High mobility and the ability to occupy the same space as other creatures, making them effective in tight quarters.",
+    "weaknesses": "Very low Strength makes them ineffective in physical confrontations, relying instead on numbers and chaos.",
+    "attacks": "Uses Bites to attack, capable of significant damage when striking in numbers.",
+    "most_powerful_ability": "Echolocation allows them to navigate and attack even in complete darkness, although it is hindered when deafened.",
+    "senses": "Can detect prey through blindsight and has keen hearing, providing advantage on perception checks related to sound.",
+    "skills": "Has proficiency in Perception checks, particularly those that rely on hearing.",
+    "additional_information": [
+        "The swarm is immune to many conditions, maintaining effectiveness despite various attacks.",
+        "It occupies a unique niche as both a nuisance and a source of confusion in combat.",
+        "Unlike individual bats, a swarm collectively exerts greater influence in battles.",
+        "They cannot regain hit points or benefit from temporary hit points.",
+        "The swarm's chaotic movement can create panic among foes."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic flying swarm of bats",
+        "tiny bats that overwhelm with numbers",
+        "nocturnal swarm that uses echolocation",
+        "swarm of bats in caves and forests",
+        "swift bats that create confusion and panic"
+    ]
+}

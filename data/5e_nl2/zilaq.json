@@ -1,0 +1,51 @@
+{
+    "name": "Zilaq",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Tiny",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "spellcaster",
+        "manipulative"
+    ],
+    "adjectives": [
+        "tiny",
+        "neutral",
+        "formidable",
+        "strategic"
+    ],
+    "description": "Zilaq is a tiny dragon known for its strategic presence on the battlefield, with a notable ability to fly and maneuver in combat.",
+    "memorable": "Possesses unique abilities such as Eidetic Memory and Two-Headed resilience, allowing it to outmaneuver opponents and manipulate combat situations effectively.",
+    "goals": "To manipulate opponents in combat and gain both control and an advantage during encounters.",
+    "relations": "Could be encountered alongside other dragons or mystical creatures, offering support or companionship.",
+    "environment": "Typically found in areas where it can use its flight for mobility, likely in forests or mountainous regions.",
+    "strengths": "Immunity to thunder damage and abilities that grant it significant tactical advantages in combat.",
+    "weaknesses": "Low strength may limit its physical attacks and it lacks battlefield control outside of its spell-like abilities.",
+    "attacks": "Can execute a Multiattack with two Bite attacks, delivering piercing damage to nearby targets, and a sonic attack that affects multiple creatures.",
+    "most_powerful_ability": "Sonic Yelp, which deals substantial thunder damage to all creatures within 60 feet, creating a potential area of effect attack.",
+    "equipment": null,
+    "senses": "Zilaq has a passive perception of 10.",
+    "skills": "Possesses advantage on Intelligence checks related to Arcana and History as well as on Wisdom (Perception) checks, showcasing its vast knowledge and awareness.",
+    "additional_information": [
+        "Ability to create illusory creatures with Phantasmal Oratory for tactical deception.",
+        "Can charm multiple creatures and cause chaos with Enthralling Speech.",
+        "Remarkable strategic presence due to a combination of mobility and spell-like abilities."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon with charm abilities",
+        "dragon that creates illusions in battle",
+        "manipulative dragon capable of sonic attacks",
+        "dragon with advantage against being blinded",
+        "mobile creature with powerful thunder damage"
+    ]
+}

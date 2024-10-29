@@ -1,0 +1,25 @@
+{
+    "name": "Necromancer",
+    "queries": [
+        {
+            "query": "magic user who can control the dead and cast offensive spells",
+            "variant": "offensive spells caster that can control the dead and use magic"
+        },
+        {
+            "query": "humanoid spellcaster with high intelligence and weaker physical attacks",
+            "variant": "spellcasting humanoid that has a high intelligence and bad physical attacks"
+        },
+        {
+            "query": "creature that teleports and casts fireball spells",
+            "variant": "being that casts fireball and teleports with spells"
+        },
+        {
+            "query": "medium humanoid with powerful area damage spells and stealth abilities",
+            "variant": "medium creature with stealth skills and strong area damage spells"
+        },
+        {
+            "query": "necromancer with invisibility spells and decent constitution",
+            "variant": "invisibility spellcaster and decent constitution necromancer"
+        }
+    ]
+}

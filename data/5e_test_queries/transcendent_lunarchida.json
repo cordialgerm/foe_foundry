@@ -1,0 +1,25 @@
+{
+    "name": "Transcendent Lunarchida",
+    "queries": [
+        {
+            "query": "creature that manipulates light and darkness with high intelligence",
+            "variant": "monster that can control light and dark and has great intelligence"
+        },
+        {
+            "query": "aberration with sunlight sensitivity and spellcasting abilities",
+            "variant": "an aberration that has sensitivity to sunlight and can cast spells"
+        },
+        {
+            "query": "medium-sized stealthy monster that can climb walls and is evil",
+            "variant": "medium-sized evil creature that can climb up surfaces and is stealthy"
+        },
+        {
+            "query": "monster with necrotic bite attack and abilities against webs",
+            "variant": "creature that has a necrotic bite and can deal with webs effectively"
+        },
+        {
+            "query": "darkvision creature that is skilled in ambushing and has poison immunity",
+            "variant": "creature with darkvision that excels in ambush tactics and is immune to poison"
+        }
+    ]
+}

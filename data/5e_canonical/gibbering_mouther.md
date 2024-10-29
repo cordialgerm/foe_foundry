@@ -1,6 +1,8 @@
 <MonsterName/>Gibbering Mouther</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>9</AC>
+<HP/>67</HP>
 <summary>The Gibbering Mouther is a horrifying mass of flesh covered in multiple eyes and mouths that constantly babble in incomprehensible voices. This grotesque creature slithers and oozes across the ground, seeking to consume any living thing it encounters. The endless gibbering of its many mouths can drive creatures mad, causing confusion and fear. The Gibbering Mouther can bite with its countless mouths and spit blobs of acidic flesh that blind its foes. It is an abomination of pure chaos, existing only to devour and absorb anything it can consume into its amorphous body.</summary>
 
 <summary>The Gibbering Mouther is a Medium-sized aberration that embodies chaotic and unsettling traits. With a unique combination of confusion-inducing abilities and the capacity to manipulate its environment into treacherous terrain, it serves as a formidable challenge for adventurers. Its notable ability to absorb the victims it defeats reflects its grotesque nature. While it possesses a decent pool of health and resistance to psychic damage, its low armor class and lack of dexterity make it vulnerable to physical attacks. Adventurers must be cautious, as its babbling can disorient them, while its ability to impede movement can effectively control the battlefield.</summary>
@@ -57,6 +59,7 @@ Overall, the Gibbering Mouther is a creature designed to create chaos and confus
 
 Source: 5e_srd
 
+<statblock>
 ## Gibbering Mouther
 
 *Medium aberration, neutral*
@@ -89,7 +92,8 @@ Source: 5e_srd
 
 ***Bites***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 17 (5d6) piercing damage. If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.
 
-***Blinding Spittle (Recharge 5-6)***. The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+***Blinding Spittle (Recharge 5-6)***. The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.</statblock>
+
 
 
 
@@ -97,6 +101,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gibbering Mouther
 
 *Medium* *Aberration*
@@ -133,6 +138,7 @@ Source: 5e_artisinal_monsters
 - **Blinding Bile (Recharge 5-6):** Ranged Weapon Attack: +2 to hit, range 20/60 ft., one creature. Hit: 3 (1d6) acid damage, and the target is blinded until the end of the mouthers next turn.
 
 
+</statblock>
 
 
 
@@ -141,6 +147,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gibbering Mouther
 
 *Medium aberration*
@@ -176,5 +183,6 @@ Source: 5e_artisinal_monsters
 
 - **Blinding Spittle.** The mouther spits an otherworldly goo at up to two creatures it can see within 30 feet of it. Each target must succeed on a DC 13 DEX save or be blinded until the end of its next turn.
 
+</statblock>
 
 

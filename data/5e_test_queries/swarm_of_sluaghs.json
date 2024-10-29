@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Sluaghs",
+    "queries": [
+        {
+            "query": "medium-sized fey swarm that is weak to sunlight",
+            "variant": "fey medium-sized swarm that's vulnerable to sunlight"
+        },
+        {
+            "query": "stealthy creature that inflicts cold damage and hates sunlight",
+            "variant": "creature that is stealthy, deals cold damage, and despises sunlight"
+        },
+        {
+            "query": "chaotic evil swarm with flying capabilities living in darkness",
+            "variant": "swarm that is chaotic evil, can fly, and prefers dark places"
+        },
+        {
+            "query": "cold damage dealing fey swarm that relies on ambush tactics",
+            "variant": "fey swarm that deals cold damage and uses ambush tactics"
+        },
+        {
+            "query": "ambush predator fey creature with vulnerability to fire",
+            "variant": "fey creature that ambushes and is vulnerable to fire"
+        }
+    ]
+}

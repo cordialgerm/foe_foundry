@@ -1,0 +1,25 @@
+{
+    "name": "Akaasit",
+    "queries": [
+        {
+            "query": "construct with high agility that has magical resistance",
+            "variant": "construct that is very agile and has resistant magic"
+        },
+        {
+            "query": "medium-sized being with a strong blade attack and ability to flicker in time",
+            "variant": "medium creature with strong blade attacks and time flickering ability"
+        },
+        {
+            "query": "agile monster immune to form alteration that makes multiple melee attacks",
+            "variant": "agile creature that cannot have its form altered and can make multiple melee attacks"
+        },
+        {
+            "query": "dependencies and defenses of a creature with low intelligence and a challenge rating of 6",
+            "variant": "defenses and dependencies of a monster with a challenge rating 6 and low intelligence"
+        },
+        {
+            "query": "automaton with 91 hit points that can evade attackers and counterattack",
+            "variant": "automaton with 91 hit points that dodges attackers and can counterattack"
+        }
+    ]
+}

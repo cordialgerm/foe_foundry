@@ -1,0 +1,52 @@
+{
+    "name": "Aklea",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 656,
+    "ac": 21,
+    "srd": false,
+    "cr": "22",
+    "movement": "walk 60 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "celestial",
+        "gargantuan",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "immense",
+        "resilient",
+        "powerful",
+        "divine"
+    ],
+    "description": "Aklea is a gargantuan celestial creature embodying immense power and divine authority, characterized by its formidable stature and distinguished features.",
+    "memorable": "Its unique abilities and spellcasting make Aklea capable of dominating the battlefield, while its truesight helps it see through deceptions.",
+    "goals": "Aklea typically exerts its divine authority and participates in celestial matters or battles against evil.",
+    "relations": "A celestial being often encountered alongside other celestials or celestial creatures.",
+    "environment": "Usually found in celestial realms or places of great importance and magic.",
+    "strengths": "Immunities to radiant damage and non-magical weapons provide it with exceptional durability.",
+    "weaknesses": null,
+    "attacks": "Aklea's Maul delivers significant bludgeoning and radiant damage, with the ability to push and knock down foes.",
+    "most_powerful_ability": "Divine Grace allows it to nullify damage on successful saving throws against effects that deal half damage.",
+    "equipment": null,
+    "senses": "Aklea possesses truesight out to 120 feet, enhancing its battlefield awareness and strategic capabilities.",
+    "skills": null,
+    "additional_information": [
+        "Has a high Strength score of 30 and Constitution score of 30.",
+        "Innate spellcasting ability with spells like flame strike and hold monster.",
+        "Immortal Form allows it to change size between Gargantuan and Medium.",
+        "Can use legendary actions to attack, cast spells, fly, or shout at enemies."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Aklea has innate spellcasting ability allowing it to cast spells at will such as charm person and telekinesis, and powerful options like flame strike and hold monster multiple times per day.",
+    "test_queries": [
+        "immense celestial creature",
+        "divine authority monster",
+        "gargantuan celestial foe",
+        "creature with truesight",
+        "spellcasting celestial being"
+    ]
+}

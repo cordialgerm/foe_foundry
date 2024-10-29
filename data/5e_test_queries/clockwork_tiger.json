@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Tiger",
+    "queries": [
+        {
+            "query": "mechanical guardian beast with strong melee attacks",
+            "variant": "strong melee attacking guardian beast that is mechanical"
+        },
+        {
+            "query": "large construct that has magic resistance and a pounce ability",
+            "variant": "large mechanical beast with pounce ability and resistant to magic"
+        },
+        {
+            "query": "durable robotic tiger immune to charm and magic effects",
+            "variant": "robotic tiger that is immune to magic and charm effects"
+        },
+        {
+            "query": "tough clockwork creature that knocks enemies prone",
+            "variant": "tough mechanical creature that can knock foes down"
+        },
+        {
+            "query": "tiger construct with defensive reactions and high strength",
+            "variant": "construct tiger with high strength and defensive reaction abilities"
+        }
+    ]
+}

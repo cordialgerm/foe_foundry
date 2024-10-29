@@ -1,6 +1,8 @@
 <MonsterName/>Miremuck Goblin King</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>62</HP>
 <summary>The Miremuck Goblin King is a medium humanoid creature known for its cleverness and cunning leadership among goblins. With a notable charisma score of 18, the Goblin King excels in social interactions, particularly deception and persuasion, which allows it to manipulate others effectively. Although it has a decent armor class of 15 and a respectable pool of 62 hit points, the Goblin King is not exceptionally powerful in terms of durability. However, its unique ability, Death Transformation, ensures that even in death, the Goblin King retains a lasting influence over its followers. The Goblin King can be a formidable opponent due to its stealth capabilities and spellcasting ability, particularly its charm spell which can turn foes into allies. Overall, while it possesses good skills and a few tricksy abilities, the Goblin King’s survivability is somewhat average, and it relies on strategy and manipulation to thrive.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For reactions, the Goblin King has the ability to "Parry," which allows it to ad
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Miremuck Goblin King
 
 *Medium* *Humanoid*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Parry:** The goblin king adds 2 to his AC against onemelee attack that would hit him. To do this the goblinking must see the attacker and be wielding a meleeweapon.
 
 
+</statblock>
 
 

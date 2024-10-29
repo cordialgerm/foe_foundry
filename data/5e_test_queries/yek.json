@@ -1,0 +1,25 @@
+{
+    "name": "Yek",
+    "queries": [
+        {
+            "query": "small chaotic evil fiend with swarm abilities",
+            "variant": "small fiend chaotic evil that has the ability to form swarms"
+        },
+        {
+            "query": "fiend that uses pack tactics and has teleportation",
+            "variant": "fiend that employs pack tactics and is able to teleport"
+        },
+        {
+            "query": "agile fiend with resistance to fire and cold damage",
+            "variant": "swift fiend that has resistances to fire and cold"
+        },
+        {
+            "query": "Yek abilities for disrupting opponents in combat",
+            "variant": "Yek's tactics for hampering enemies during battle"
+        },
+        {
+            "query": "small fiend with high dexterity and melee attacks",
+            "variant": "little fiend that excels in dexterity and close-range attacks"
+        }
+    ]
+}

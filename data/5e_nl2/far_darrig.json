@@ -1,0 +1,50 @@
+{
+    "name": "Far Darrig",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 84,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "woodland",
+        "agile"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "agile"
+    ],
+    "description": "The Far Darrig is a small fey creature with a striking combination of agility and strength, showcasing woodland characteristics. It wields an Antler Glaive and is capable of summoning woodland creatures for aid in battle.",
+    "memorable": "Utilizes woodland companions and exhibits agility and strength despite being small.",
+    "goals": "To defend its territory and leverage allies in combat.",
+    "relations": "May be encountered alongside other woodland creatures or fey beings.",
+    "environment": "Commonly found in forests.",
+    "strengths": "Strong in melee combat and has excellent mobility in wooded areas.",
+    "weaknesses": "Average intelligence limits its tactical options.",
+    "attacks": "Antler Glaive delivers piercing or slashing damage along with force damage and can knock targets prone.",
+    "most_powerful_ability": "Woodland Friends allows it to summon allies such as elk or giant weasels to aid in combat.",
+    "equipment": "Antler Glaive",
+    "senses": "Possesses darkvision up to 60 feet and has a passive perception of 14.",
+    "skills": "Proficient in Nature, Animal Handling, Perception, and Survival with a +4 modifier, showcasing adaptability in the wilderness.",
+    "additional_information": [
+        "Strong charisma aids in persuasive interactions.",
+        "Can take the Dash or Disengage action as a bonus in forests.",
+        "Possesses good saving throw against charms and manipulations.",
+        "Uses a combination of physical attacks and summoned creatures in combat.",
+        "Capable of enduring multiple attacks with 84 hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile fey creature in the forest",
+        "small woodland monster with glaive",
+        "cunning fey that summons woodland allies",
+        "fey creature that knocks enemies prone",
+        "forest-dwelling creature with strong charisma"
+    ]
+}

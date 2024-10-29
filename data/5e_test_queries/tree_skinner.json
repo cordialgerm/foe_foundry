@@ -1,0 +1,25 @@
+{
+    "name": "Tree Skinner",
+    "queries": [
+        {
+            "query": "chaotic evil fiend that disguises as a tree in the woods",
+            "variant": "evil fiend that can hide as a tree in forested areas"
+        },
+        {
+            "query": "medium-sized monster with high Dexterity that lives in trees",
+            "variant": "monster of medium size with great Dexterity found in trees"
+        },
+        {
+            "query": "monster that grapples and poisons adventurers near trees",
+            "variant": "creature that uses grappling and poison attacks on adventurers near trees"
+        },
+        {
+            "query": "tree-like fiend with poison attacks and fire vulnerability",
+            "variant": "fiend that looks like a tree with poison damage and is weak to fire"
+        },
+        {
+            "query": "stealthy fiend that can vanish into trees and has magical resistance",
+            "variant": "sneaky fiend that disappears in trees and is resistant to magic"
+        }
+    ]
+}

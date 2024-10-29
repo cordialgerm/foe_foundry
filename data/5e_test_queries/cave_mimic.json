@@ -1,0 +1,25 @@
+{
+    "name": "Cave Mimic",
+    "queries": [
+        {
+            "query": "gargantuan creature that disguises itself as terrain and grapples foes",
+            "variant": "gargantuan monster that hides as terrain and catches enemies"
+        },
+        {
+            "query": "monstrosity with adhesive abilities that can burrow through rock",
+            "variant": "creature with sticking powers that tunnels through stone"
+        },
+        {
+            "query": "monster with high strength score that ambushes from the ground",
+            "variant": "creature with great strength that surprises from below"
+        },
+        {
+            "query": "resilient monster found in caves that can mimic objects",
+            "variant": "durable creature located in caverns that imitates items"
+        },
+        {
+            "query": "slow-moving monster that can turn into a large object and trap adventurers",
+            "variant": "sluggish creature that transforms into a giant object and ensnares heroes"
+        }
+    ]
+}

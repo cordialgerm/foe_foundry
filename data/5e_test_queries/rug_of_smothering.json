@@ -1,0 +1,25 @@
+{
+    "name": "Rug of Smothering",
+    "queries": [
+        {
+            "query": "animated rug that suffocates unsuspecting creatures",
+            "variant": "rug that animates and smothers unsuspecting targets"
+        },
+        {
+            "query": "large object that attacks by grappling and squeezing",
+            "variant": "big object that grapples and squeezes its victims"
+        },
+        {
+            "query": "decorative rug used as a trap in dungeons",
+            "variant": "trap rug found in dungeons that looks decorative"
+        },
+        {
+            "query": "sneaky rug that is immune to many conditions",
+            "variant": "stealthy rug resistant to multiple conditions"
+        },
+        {
+            "query": "rug that becomes animated and deadly upon being stepped on",
+            "variant": "rug that comes to life and attacks when stepped on"
+        }
+    ]
+}

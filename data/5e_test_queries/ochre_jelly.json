@@ -1,0 +1,25 @@
+{
+    "name": "Ochre Jelly",
+    "queries": [
+        {
+            "query": "large amorphous ooze that dissolves flesh in caves",
+            "variant": "large ooze that is amorphous and dissolves flesh in dark caves"
+        },
+        {
+            "query": "slow-moving jelly creature that splits when attacked",
+            "variant": "jelly creature that is slow-moving and splits when hit"
+        },
+        {
+            "query": "ochre jelly abilities and weaknesses in dungeons",
+            "variant": "abilities and weaknesses of ochre jelly in dungeon environments"
+        },
+        {
+            "query": "creature with corrosive acid attack that lives in damp places",
+            "variant": "monster that has a corrosive acid attack and dwells in damp locations"
+        },
+        {
+            "query": "ooze resistant to acid and sunlight with a damaging grappling ability",
+            "variant": "acid-resistant ooze with sunlight sensitivity and damaging grappling capabilities"
+        }
+    ]
+}

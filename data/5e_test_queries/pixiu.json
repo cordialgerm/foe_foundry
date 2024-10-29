@@ -1,0 +1,25 @@
+{
+    "name": "Pixiu",
+    "queries": [
+        {
+            "query": "large treasure-hungry monstrosity with piercing bite",
+            "variant": "big treasure-seeking monster that has a sharp bite"
+        },
+        {
+            "query": "creature that consumes valuables and protects allies",
+            "variant": "monster that devours riches and shields companions"
+        },
+        {
+            "query": "monstrosity with a keen sense for gold and immunity to disease",
+            "variant": "creature that can detect treasures and is resistant to sickness"
+        },
+        {
+            "query": "powerful entity with a treasure sense that flies and walks",
+            "variant": "strong being with an ability to sense wealth that can walk and fly"
+        },
+        {
+            "query": "Pixiu characteristics including high strength and poor intelligence",
+            "variant": "features of Pixiu like great strength and low intelligence"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Amethyst Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with telepathic abilities and psychic resistance",
+            "variant": "medium-sized dragon that has telepathic powers and resists psychic damage"
+        },
+        {
+            "query": "dragon that can psionically observe and has a breath attack",
+            "variant": "dragon capable of psionic observation and featuring a breath attack"
+        },
+        {
+            "query": "creature immune to fatigue that lives in high-altitude environments",
+            "variant": "monster that's immune to the fatigued condition and inhabits high-altitude areas"
+        },
+        {
+            "query": "combat-focused dragon known for spells and long-range abilities",
+            "variant": "spellcasting dragon recognized for its combat skills and abilities at a distance"
+        },
+        {
+            "query": "dragon with piercing bite attack and telepathy skills",
+            "variant": "dragon featuring a strong bite attack and skills in telepathy"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Armory Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "powerful"
+    ],
+    "description": "The Armory Golem is a large construct composed of various weapons and armor, exuding an aura of strength and durability. Its body is ruggedly built, showcasing a strong defensive structure.",
+    "memorable": "The Armory Golem's ability to disable its attacks and focus introduces a tactical element, challenging players to strategize in combat.",
+    "goals": "Typically serves as a powerful guardian in areas of importance or as a protector of valuable locations.",
+    "relations": "May be created by skilled artificers or powerful mages, and often partnered with other constructs or mechanical beings.",
+    "environment": "Found in locations where guardianship is paramount, such as ruins, treasure vaults, or magical laboratories.",
+    "strengths": "Immune to bludgeoning, piercing, and slashing damage from nonmagical attacks, and resistant to various conditions, enhancing its durability in battle.",
+    "weaknesses": "Lacks social skills due to a very poor Charisma, making it vulnerable to tactics that exploit its single-minded focus.",
+    "attacks": "Can perform multiple attacks with slam and polearm strikes that deal significant damage, and utilize ranged crossbow attacks.",
+    "most_powerful_ability": "Focus Weakness allows grappling creatures to potentially cripple the golem by destroying its focus, introducing critical stakes in combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Magic Resistance gives it advantage on saving throws against magical effects.",
+        "Its attacks are magical, allowing them to bypass resistances.",
+        "The Shield Wall ability temporarily increases its armor class while providing healing.",
+        "Armory Exploit introduces an element of choice in combat, allowing critical hits to disable attacks.",
+        "Immutable Form grants immunity to forms of alteration, making it resilient against charm or shape-changing effects."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct guardian",
+        "magical armor golem",
+        "resilient armored guardian",
+        "golem with tactical abilities",
+        "powerful construct with focus weakness"
+    ]
+}

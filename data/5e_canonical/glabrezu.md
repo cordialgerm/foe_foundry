@@ -1,6 +1,9 @@
 <MonsterName/>Glabrezu (Demon)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>demon</Subtype>
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>157</HP>
 <summary>A Glabrezu is a towering, demonic creature with the body of a monstrous beast and four arms—two ending in massive pincers, and two in clawed hands. These demons are masters of deception, often offering tempting deals and corrupting mortals through manipulation. Despite their cunning and deceitful nature, Glabrezus are also powerful combatants, capable of tearing through foes with their pincers or using their innate magical abilities to summon darkness, cast illusions, and control others. They serve as generals in the demonic armies of the Abyss, relishing both physical combat and psychological warfare.</summary>
 
 <summary>The Glabrezu is a large fiend known for its chaotic and evil nature, making it a formidable enemy in combat and a dangerous entity in social encounters. With an Armor Class of 17 and a significant pool of 157 hit points, it has solid defenses and can endure prolonged engagements. It is rated as a Challenge Rating 10, indicating that it presents a significant challenge to a party of adventurers. Its physical capabilities are strong, boasting a Strength score of 20 (+5), allowing it to perform powerful melee attacks, and it also possesses high Constitution and Charisma scores, giving it exceptional durability and effectiveness in manipulation. However, its weaknesses include vulnerability to radiant damage and limitations against certain types of magic. The Glabrezu’s unique abilities, especially its access to the spell Wish, make it a creature that not only fights fiercely but also can alter the course of events with the right conditions.</summary>
@@ -31,6 +34,7 @@ As a bonus action, the Glabrezu can utilize Manipulating Whispers to influence a
 
 Source: 5e_srd
 
+<statblock>
 ### Glabrezu (Demon)
 
 *Large fiend (demon), chaotic evil*
@@ -73,7 +77,8 @@ At will: *darkness*, *detect magic*, *dispel magic*
 
 ***Pincer***. *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target.
 
-***Fist***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.
+***Fist***. *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 7 (2d4+2) bludgeoning damage.</statblock>
+
 
 
 
@@ -81,6 +86,7 @@ At will: *darkness*, *detect magic*, *dispel magic*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glabrezu
 
 *Large* *Fiend*
@@ -122,6 +128,7 @@ Source: 5e_artisinal_monsters
 - **Confusion (1/Day):** The glabrezu targets up to three creatures within 90 feet. Each target makes a DC 16 Wisdom saving throw, becoming confused for 1 minute on a failure. A target repeats this saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 
 
@@ -130,6 +137,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Glabrezu
 
 *Large fiend (demon)*
@@ -169,5 +177,6 @@ Source: 5e_artisinal_monsters
 	- Confirmation of Wealth. The target is briefly overcome with the desire to confirm the amount and status of its valuables. It uses either an action or bonus action on its next turn (the glabrezu’s choice) to count and take stock of its valuables.
 	- Wrathful Strike. Anger temporarily fills the target, and it immediately lashes out at those nearby. The target uses its reaction to make one melee weapon attack against a creature of the glabrezu’s choice within 5 feet of the target.
 
+</statblock>
 
 

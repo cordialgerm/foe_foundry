@@ -1,0 +1,54 @@
+{
+    "name": "Magma Mephit",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "small",
+    "hp": 22,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "fire",
+        "magma",
+        "ambusher",
+        "explosive"
+    ],
+    "adjectives": [
+        "small",
+        "mischievous",
+        "fiery",
+        "dangerous"
+    ],
+    "description": "A small, impish creature made of molten rock and fire, often found near volcanoes and lava flows.",
+    "memorable": "The Magma Mephit explodes in a burst of fiery lava upon death, causing harm to nearby creatures.",
+    "goals": "Causes destruction and chaos, delights in igniting objects and summoning allies.",
+    "relations": "Often encountered with other mephits or elemental creatures; may serve powerful elemental beings.",
+    "environment": "Volcanic regions, near lava flows, or areas of intense heat.",
+    "strengths": "Immunity to fire and poison, capable of causing explosive damage upon death.",
+    "weaknesses": "Vulnerable to cold damage, relatively low hit points.",
+    "attacks": "Uses claws for melee slashing damage and can exhale fire in a cone, dealing damage.",
+    "most_powerful_ability": "Pyroclastic Burst unleashes an explosive blast of lava in a cone, pushing back and damaging foes.",
+    "senses": "Possesses darkvision, allowing it to see in low light and darkness.",
+    "skills": "Skilled in stealth, making it adept at ambushing unsuspecting enemies.",
+    "additional_information": [
+        "False Appearance ability lets it camouflage as a mound of magma.",
+        "Elemental Nature allows survival in hostile environments without air or sustenance.",
+        "Can cast Heat Metal once per day, affecting creatures wearing metal.",
+        "Death Burst ability deals area damage upon its demise.",
+        "Can create magical displays to incapacitate foes."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast Heat Metal once per day with Charisma as the spellcasting ability.",
+    "test_queries": [
+        "explosive lava creature in volcanoes",
+        "fire elemental that blends into magma",
+        "small creature with fiery breath attack",
+        "mischievous mephit with lava abilities",
+        "ambushing fire creature near lava"
+    ]
+}

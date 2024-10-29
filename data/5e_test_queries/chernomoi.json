@@ -1,0 +1,25 @@
+{
+    "name": "Chernomoi",
+    "queries": [
+        {
+            "query": "tiny fey creature with magical abilities and high dexterity",
+            "variant": "tiny fey with magic powers and high dexterity"
+        },
+        {
+            "query": "small trickster fey that uses spells and has a shriek ability",
+            "variant": "small fey trickster that has a shriek ability and casts spells"
+        },
+        {
+            "query": "creature resistant to nonmagical attacks that can fly",
+            "variant": "creature that can fly and is resistant to non-magical attacks"
+        },
+        {
+            "query": "Chernomoi's abilities and spells for cunning tactics",
+            "variant": "Chernomoi abilities and spell casting for clever tactics"
+        },
+        {
+            "query": "darkvision fey with stealth skills and a scimitar",
+            "variant": "fey with darkvision, stealth proficiency, and a scimitar"
+        }
+    ]
+}

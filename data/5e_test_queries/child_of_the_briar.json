@@ -1,0 +1,25 @@
+{
+    "name": "Child of the Briar",
+    "queries": [
+        {
+            "query": "tiny evil plant creature that ambushes enemies",
+            "variant": "small plant monster that is evil and ambushes its foes"
+        },
+        {
+            "query": "plant creature with darkvision and vulnerability to fire",
+            "variant": "plant being that can see in the dark and is weak against fire"
+        },
+        {
+            "query": "stealthy tiny monster that grapples opponents",
+            "variant": "small sneaky creature capable of grappling enemies"
+        },
+        {
+            "query": "child of the briar capabilities in combat",
+            "variant": "combat abilities of the child of the briar"
+        },
+        {
+            "query": "plant monster that casts entangle with allies",
+            "variant": "creature that uses entangle spell when near other plant creatures"
+        }
+    ]
+}

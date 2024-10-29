@@ -1,0 +1,48 @@
+{
+    "name": "Bloodstone Sentinel",
+    "creature_type": "Construct",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "construct",
+        "blood manipulation",
+        "chaos"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "durable"
+    ],
+    "description": "The Bloodstone Sentinel is a large construct known for its unique ability to manipulate bloodshed and cause chaos, featuring a robust design reflecting its durability and strength.",
+    "memorable": "Its ability to absorb blood and enhance its power makes it a notably dangerous foe on the battlefield.",
+    "goals": "To cause chaos and disruption among enemies while supporting allies.",
+    "relations": "Could be encountered with other constructs or creatures that engage in blood-related abilities.",
+    "environment": "Typically found in areas where bloodshed occurs or near battlefields.",
+    "strengths": "Immunities to poison and nonmagical bludgeoning, piercing, and slashing damage, as well as multiple condition immunities.",
+    "weaknesses": "Low Dexterity, resulting in poor agility.",
+    "attacks": "The Bloodstone Sentinel can make two claw attacks in a single turn, dealing significant slashing damage.",
+    "most_powerful_ability": "Blood Lure allows it to punish nearby creatures when they take damage, amplifying its own power.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can provide advantages to allies and disrupt enemies using its Blood Reservoir abilities.",
+        "Absorbs blood that is spilled nearby to fuel its powers.",
+        "Notable for causing chaos among enemy ranks with its Inspire Fury ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic blood-absorbing construct",
+        "blood manipulation creature",
+        "strong melee construct",
+        "neutral evil bloodstone sentinel",
+        "battlefield chaos entity"
+    ]
+}

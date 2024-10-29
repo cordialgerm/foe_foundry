@@ -1,0 +1,25 @@
+{
+    "name": "Snow Cat",
+    "queries": [
+        {
+            "query": "agile beast that thrives in snowy terrains",
+            "variant": "beast that is agile and lives in snowy areas"
+        },
+        {
+            "query": "snow camouflage and keen senses cat",
+            "variant": "cat that has keen senses and snow camouflage"
+        },
+        {
+            "query": "medium predator with stealth and grappling ability",
+            "variant": "medium-sized predator that can grapple and is stealthy"
+        },
+        {
+            "query": "beast with high dexterity and grapples surprised prey",
+            "variant": "animal that has high agility and can catch prey by surprise"
+        },
+        {
+            "query": "snowy environment ambush predator",
+            "variant": "predator that ambushes in a snowy habitat"
+        }
+    ]
+}

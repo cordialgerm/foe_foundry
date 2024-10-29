@@ -1,0 +1,51 @@
+{
+    "name": "Ice Bogie",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 25 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "cold",
+        "support",
+        "trickster"
+    ],
+    "adjectives": [
+        "nimble",
+        "chaotic",
+        "small"
+    ],
+    "description": "The Ice Bogie is a small fey creature known for its stealth and quick evasion. It has a low strength but excels at dexterity-based tasks.",
+    "memorable": "The Ice Bogie can evade threats with Nimble Escape and supports allies by sacrificing its own health to restore theirs.",
+    "goals": "Typically aims to deceive and support allies in combat situations.",
+    "relations": "Often found in groups with other Ice Bogies, maximizing their Pack Tactics ability.",
+    "environment": "Usually inhabits cold environments where its immunity to cold is advantageous.",
+    "strengths": "Highly adept at stealth, with advantage on attack rolls when allies are near.",
+    "weaknesses": "Vulnerable to fire damage and has low hit points.",
+    "attacks": "Uses Icicle Fist for melee cold damage and Spiteful Hail for ranged cold damage, imposing speed reduction.",
+    "most_powerful_ability": "Nimble Escape allows quick disengagement from combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in stealth with a +4 bonus.",
+    "additional_information": [
+        "Immunities to cold and poison damage",
+        "Cannot be charmed or petrified",
+        "Gains advantage on attack rolls with allies nearby"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey creature that supports allies",
+        "nimble cold monster known for evasion",
+        "tricky fey that uses icy attacks",
+        "cold-damage dealing fey with quick escape",
+        "supportive creature immune to poison and cold"
+    ]
+}

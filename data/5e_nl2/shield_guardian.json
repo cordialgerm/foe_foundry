@@ -1,0 +1,51 @@
+{
+    "name": "Shield Guardian",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 139,
+    "ac": 17,
+    "srd": true,
+    "cr": "7",
+    "movement": "30 ft. walking speed",
+    "role": "Defender",
+    "tags": [
+        "construct",
+        "protector",
+        "golem"
+    ],
+    "adjectives": [
+        "magical",
+        "towering",
+        "durable",
+        "fierce"
+    ],
+    "description": "A large, towering humanoid construct resembling a golem, made of magical materials to serve and protect its master.",
+    "memorable": "Its ability to absorb damage for its master and cast stored spells on command makes it a formidable ally.",
+    "goals": "To protect its master and intercept threats during combat.",
+    "relations": "Often found alongside powerful spellcasters or guarding valuable treasures.",
+    "environment": "Typically located in arcane workshops, wizard towers, or near magical artifacts.",
+    "strengths": "Incredibly durable with high hit points, can regenerate health, and has powerful melee attacks.",
+    "weaknesses": "Low Intelligence and Charisma impede strategic planning and social interactions.",
+    "attacks": "Uses a multiattack to perform two powerful fist strikes, dealing high bludgeoning damage.",
+    "most_powerful_ability": "Its magic absorption ability allows it to take half the damage meant for its master.",
+    "equipment": null,
+    "senses": "Keen sight within 10 feet and darkvision up to 60 feet aid in perceiving its surroundings.",
+    "skills": "Offers strong defensive capabilities through damage absorption and granting AC bonuses to its master.",
+    "additional_information": [
+        "Magically bound to an amulet, allowing command from its wearer.",
+        "Immunity to poison, psychic damage, and various conditions.",
+        "Regeneration ability enabling it to regain HP at the start of its turn.",
+        "Spell Storing capacity enabling it to cast designated spells on command.",
+        "Constructed nature negating needs for air, food, or sleep."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can store and cast spells of 4th level or lower using its master's command.",
+    "test_queries": [
+        "magical humanoid protector with damage absorption",
+        "towering construct that defends its master",
+        "golem with spellcasting abilities and regeneration",
+        "durable magical guardian for wizards and mages",
+        "heavy hitter that protects its spellcaster master"
+    ]
+}

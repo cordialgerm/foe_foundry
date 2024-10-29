@@ -1,0 +1,51 @@
+{
+    "name": "Half-Dragon Template",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 65,
+    "ac": 18,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "half-dragon",
+        "template"
+    ],
+    "adjectives": [
+        "powerful",
+        "fire-resistant"
+    ],
+    "description": "A Medium humanoid creature bearing the traits of a dragon, wearing plate armor.",
+    "memorable": "Possesses a breath weapon that deals significant fire damage.",
+    "goals": "Typically operates with the pride and ambition of a dragon.",
+    "relations": "May ally with full dragons or other draconic creatures.",
+    "environment": "Can be found in diverse environments, often in places associated with dragons.",
+    "strengths": "Resistance to fire damage and the ability to use a devastating fire breath attack.",
+    "weaknesses": null,
+    "attacks": "Makes multiple attacks with a longsword or shortsword, and can also fire a heavy crossbow.",
+    "most_powerful_ability": "Fire Breath, which deals substantial damage in a cone.",
+    "equipment": "Wears plate armor and wields a longsword and a heavy crossbow.",
+    "senses": "Has blindsight with a radius of 10 feet.",
+    "skills": "Proficient in Athletics and has decent Perception skills.",
+    "additional_information": [
+        "Gains damage resistance based on its dragon color.",
+        "Can be customized with different dragon qualities depending on the base creature.",
+        "Combines humanoid abilities with draconic traits effectively.",
+        "May serve as a leader among lesser creatures or adventurers.",
+        "Facilitates the blending of dragon lore and humanoid societies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful dragon-human hybrid",
+        "fire breath using dragon",
+        "armor-clad dragon-like creature",
+        "medium humanoid with draconic traits",
+        "creature with fire resistance and breath weapon"
+    ]
+}

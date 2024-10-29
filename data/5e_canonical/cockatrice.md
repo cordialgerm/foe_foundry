@@ -1,6 +1,8 @@
 <MonsterName/>Cockatrice</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>27</HP>
 <summary>The Cockatrice is a small, dragon-like creature with the wings of a bat, the body of a chicken, and a long, scaly tail. Despite its somewhat comical appearance, the Cockatrice is highly dangerous due to its ability to petrify creatures with a single peck. Its stone-turning gaze and bite can leave unsuspecting creatures as lifeless statues, frozen in mid-motion. Cockatrices are often found in caves, forests, or swamps, where they can stalk small prey or ambush larger creatures. Though they are not particularly intelligent or strong, their petrifying abilities make them a feared encounter.</summary>
 
 <summary>The Cockatrice is a small monstrosity known for its deadly bite that has the potential to petrify its victims. With a challenge rating of 1/2, it poses a moderate threat to lower-level adventurers but is not without its weaknesses. Its low Armor Class of 12 and modest Hit Points of 27 means it can be taken down relatively easily by characters with average to good attack rolls. The Cockatrice can fly, which grants it an advantage in mobility compared to many ground-based foes. However, its low Strength score makes it less effective in melee combat, while its Intelligence is poor, limiting its tactical choices. The ability to petrify opponents adds a level of danger that can create significant challenges if players are unprepared.</summary>
@@ -31,6 +33,7 @@ The cockatrice can also react with a special ability called Shrieking Crow. This
 
 Source: 5e_srd
 
+<statblock>
 ## Cockatrice
 
 *Small monstrosity, unaligned*
@@ -53,7 +56,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 3 (1d4+1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.
+***Bite***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one creature. *Hit:* 3 (1d4+1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.</statblock>
+
 
 
 
@@ -61,6 +65,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cockatrice
 
 *Small* *Monstrosity*
@@ -88,6 +93,7 @@ Source: 5e_artisinal_monsters
 - **Frenzy (1/Day):** When attacked by a creature it can see within 20 feet, the cockatrice moves up to half its Speed and makes a bite attack against that creature.
 
 
+</statblock>
 
 
 
@@ -96,6 +102,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Cockatrice
 
 *Small monstrosity*
@@ -127,5 +134,6 @@ Source: 5e_artisinal_monsters
 
 - **Shrieking Crow.** When a creature the cockatrice can see within 30 feet of it attacks it, the cockatrice can let out a startling crow. The attacker must succeed on a DC 11 WIS save or have disadvantage on the attack roll.
 
+</statblock>
 
 

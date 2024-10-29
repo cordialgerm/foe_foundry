@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Shieldbearer",
+    "queries": [
+        {
+            "query": "small humanoid that provides cover to allies in battle",
+            "variant": "humanoid that is small and helps allies take cover in fights"
+        },
+        {
+            "query": "goblin with tactical abilities and nimble escape",
+            "variant": "tactical goblin that can quickly escape and has agility"
+        },
+        {
+            "query": "stealthy goblin that uses a shortbow and shield wall tactic",
+            "variant": "goblin skilled in stealth that has a shortbow and uses shield wall"
+        },
+        {
+            "query": "fragile goblin with low hit points but good defensive tactics",
+            "variant": "weak goblin with few hit points but strong defense strategies"
+        },
+        {
+            "query": "small goblin humanoid skilled in stealth and coordinating with others",
+            "variant": "small humanoid goblin good at stealth and working with team"
+        }
+    ]
+}

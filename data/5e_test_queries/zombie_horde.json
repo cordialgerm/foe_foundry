@@ -1,0 +1,25 @@
+{
+    "name": "Zombie Horde",
+    "queries": [
+        {
+            "query": "large undead creature with bludgeoning vulnerability",
+            "variant": "big undead being that is weak to bludgeoning damage"
+        },
+        {
+            "query": "horde of zombies that can regenerate health",
+            "variant": "group of zombies that have the ability to heal"
+        },
+        {
+            "query": "undead horde that splits into zombies when reduced to zero hit points",
+            "variant": "zombie cluster that divides into smaller zombies when it hits 0 hit points"
+        },
+        {
+            "query": "slow-moving undead with low armor class and high hit points",
+            "variant": "undead that is slow, has low AC, but a lot of hit points"
+        },
+        {
+            "query": "zombie horde with darkvision and area vulnerability",
+            "variant": "horde of zombies that can see in the dark and is weak to area attacks"
+        }
+    ]
+}

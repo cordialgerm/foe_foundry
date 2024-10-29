@@ -1,0 +1,25 @@
+{
+    "name": "Tar Ooze",
+    "queries": [
+        {
+            "query": "large ooze creature that has fire-based abilities and creates tar",
+            "variant": "big ooze monster with fire powers and makes sticky tar"
+        },
+        {
+            "query": "sticky ooze that burns with fire damage and can immobilize enemies",
+            "variant": "sticky tar creature that catches fire and can freeze foes"
+        },
+        {
+            "query": "slow tar monster with high hit points and necrotic attacks",
+            "variant": "sluggish tar creature with large health and necrotic damage attacks"
+        },
+        {
+            "query": "monster that rises as a tar ghoul and is immune to poison",
+            "variant": "creature that comes back as a tar ghoul and resists poison damage"
+        },
+        {
+            "query": "combat challenges with a tar ooze that can ignite and slow movement",
+            "variant": "battle difficulties with a tar monster that sets on fire and halts speed"
+        }
+    ]
+}

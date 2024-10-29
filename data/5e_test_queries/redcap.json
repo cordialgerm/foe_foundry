@@ -1,0 +1,25 @@
+{
+    "name": "Redcap",
+    "queries": [
+        {
+            "query": "malevolent fey creature with a blood-soaked cap",
+            "variant": "fey creature that soaks its cap in blood and is malevolent"
+        },
+        {
+            "query": "dangerous fey that inflicts bleeding damage",
+            "variant": "fey that deals bleeding damage and is dangerous"
+        },
+        {
+            "query": "creature with high strength that requires blood to survive",
+            "variant": "blood-requiring creature with high strength"
+        },
+        {
+            "query": "medium-sized monster known for its brutal attacks",
+            "variant": "monster known for brutal attacks and being medium-sized"
+        },
+        {
+            "query": "creature with natural armor and a thirst for blood",
+            "variant": "blood-thirsty creature with natural armor"
+        }
+    ]
+}

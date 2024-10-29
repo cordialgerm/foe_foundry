@@ -1,0 +1,54 @@
+{
+    "name": "Myrmex Speaker",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 119,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "40 ft. walking, burrowing, and climbing speed",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "supportive",
+        "manipulator",
+        "psychic"
+    ],
+    "adjectives": [
+        "powerful",
+        "strategic",
+        "earthy",
+        "supportive"
+    ],
+    "description": "The Myrmex Speaker is a large elemental creature with a strong connection to earth and stone. It has an imposing presence and showcases its nature-oriented demeanor in its abilities and behavior.",
+    "memorable": "The Myrmex Speaker can manipulate the battlefield through earth manipulation and has powerful psychic abilities.",
+    "goals": "To support allies and control the battlefield effectively.",
+    "relations": "May associate with other earth elementals or creatures connected to nature.",
+    "environment": "Typically found in rocky or earthy terrains.",
+    "strengths": "High physical attributes in Strength and Constitution; immunity to exhaustion and paralysis; versatile in combat with multiple special abilities.",
+    "weaknesses": "Low Charisma, making social interactions challenging.",
+    "attacks": "Performs three effective Bite attacks, dealing both piercing and poison damage; can also push enemies and create a wall of earth.",
+    "most_powerful_ability": "Static Barrage, which deals psychic damage to multiple foes at once.",
+    "senses": "Relies on blindsight up to 60 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Has an average perception allowing it to detect hidden creatures or objects.",
+    "additional_information": [
+        "Elemental Nature negates the need for air, food, drink, or sleep.",
+        "Keen Smell grants advantage on perception checks relying on smell.",
+        "Stone Walk allows movement through difficult terrain without penalties.",
+        "Earth Manipulation creates permanent changes to the environment.",
+        "Can communicate through telepathy within 120 feet."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": "Can create a Wall of Earth and use abilities that involve strategic battlefield control.",
+    "test_queries": [
+        "earth elemental with psychic abilities",
+        "creature that manipulates the terrain and communicates telepathically",
+        "battlefield controller with powerful psychic attacks",
+        "stone and earth moving monster",
+        "strategic elemental that supports allies"
+    ]
+}

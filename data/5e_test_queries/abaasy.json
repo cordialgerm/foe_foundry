@@ -1,0 +1,25 @@
+{
+    "name": "Abaasy",
+    "queries": [
+        {
+            "query": "huge chaotic giant that fights with dual shields",
+            "variant": "huge giant who fights with dual shields and brings chaos"
+        },
+        {
+            "query": "powerful melee giant with poor depth perception and cold resistance",
+            "variant": "melee giant with cold resistance and bad depth perception"
+        },
+        {
+            "query": "neutral evil giant with high strength and a berserk ability",
+            "variant": "neutral evil giant possessing high strength and the ability to go berserk"
+        },
+        {
+            "query": "Abaasy combat tactics involving melee attacks and eyebeam",
+            "variant": "Abaasy combat strategies that involve using melee attacks and the eyebeam"
+        },
+        {
+            "query": "dangerous frontline giant that can absorb damage and attack",
+            "variant": "frontline giant who can take damage and dish out attacks"
+        }
+    ]
+}

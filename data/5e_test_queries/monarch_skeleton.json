@@ -1,0 +1,25 @@
+{
+    "name": "Monarch Skeleton",
+    "queries": [
+        {
+            "query": "undead creature with necrotic attacks that commands other skeletons",
+            "variant": "undead skeleton that has necrotic attacks and commands other undead"
+        },
+        {
+            "query": "strong melee undead skeleton wearing chain mail",
+            "variant": "powerful skeletal undead in chain mail with melee attacks"
+        },
+        {
+            "query": "skeleton with high hit points and damage immunities",
+            "variant": "skeleton with a lot of hit points and immunity to damage types"
+        },
+        {
+            "query": "medium undead that can restrain enemies and reduce their hit points",
+            "variant": "medium undead creature that restrains foes and lowers their health"
+        },
+        {
+            "query": "combat-oriented skeleton that is vulnerable to radiant damage",
+            "variant": "skeleton focused on combat that is weak to radiant attacks"
+        }
+    ]
+}

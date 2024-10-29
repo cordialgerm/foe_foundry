@@ -1,0 +1,54 @@
+{
+    "name": "Wintergrim",
+    "creature_type": "Fey",
+    "alignment": "chaotic good",
+    "size": "Small",
+    "hp": 26,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "guardian",
+        "winter",
+        "nature"
+    ],
+    "adjectives": [
+        "small",
+        "chaotic",
+        "playful",
+        "fierce"
+    ],
+    "description": "The Wintergrim is a small fey creature that embodies the playful yet fierce aspects of winter, characterized by a strong physique with a build that indicates great physical power.",
+    "memorable": "Its unique rules of conduct cause it to become enraged and boost its combat effectiveness when annoyed by others.",
+    "goals": "To serve as a guardian of nature while ensuring its rules of conduct are respected.",
+    "relations": "Often interacts with various animals and other fey creatures, potentially influencing alliances based on its spellcasting abilities.",
+    "environment": "Typically found in natural settings, especially in wintery or forested areas.",
+    "strengths": "High Strength and Constitution provide solid resilience and physical attack capabilities.",
+    "weaknesses": "Average Dexterity makes it less nimble compared to its peers; vulnerable to powerful spells.",
+    "attacks": "Can deliver powerful melee attacks with its fist or wield a handaxe for both melee and ranged combat.",
+    "most_powerful_ability": "Becomes enraged when its rules are broken, gaining advantages in combat and intimidation.",
+    "equipment": "Handaxe and natural fist attacks.",
+    "senses": null,
+    "skills": "Proficient in insight, nature, persuasion, and survival, indicating a strong awareness of its environment and social situations.",
+    "additional_information": [
+        "Resistance to cold damage",
+        "Immune to being charmed",
+        "Innate spellcasting allows communication with animals",
+        "Capable of healing and protection through spells",
+        "High Strength score for effective melee combat"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting based on Wisdom; can cast goodberry and speak with animals thrice per day, and lesser restoration and protection from poison once a day.",
+    "test_queries": [
+        "small fey guardian of nature",
+        "winter creature that gets angry",
+        "fey with innate spellcasting abilities",
+        "tough small fey with cold resistance",
+        "chaotic good creature from winter forests"
+    ]
+}

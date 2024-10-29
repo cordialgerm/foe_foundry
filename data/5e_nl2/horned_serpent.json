@@ -1,0 +1,56 @@
+{
+    "name": "Horned Serpent",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 210,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "swim 40 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "disease",
+        "poison",
+        "hazardous"
+    ],
+    "adjectives": [
+        "formidable",
+        "poisonous",
+        "debilitating",
+        "brutish"
+    ],
+    "description": "The Horned Serpent is a large monstrosity with a powerful physique, capable of moving swiftly both in water and on land.",
+    "memorable": "Its poisonous aura and the dangerous Corpse Cough disease make it a unique and menacing opponent.",
+    "goals": "To hunt prey and spread disease, making the battlefield hazardous for foes.",
+    "relations": "May be encountered alongside other water-based creatures or as a guardian of aquatic territories.",
+    "environment": "Typically found in aquatic environments, swamps, or flooded areas.",
+    "strengths": "High durability due to its natural armor and Hit Points, along with powerful melee attacks.",
+    "weaknesses": "Low Intelligence and lack of magical capabilities make it susceptible to tactical maneuvers.",
+    "attacks": "Utilizes a deadly multiattack with gore and bite attacks, each with significant damage potential.",
+    "most_powerful_ability": "Corpse Cough ability inflicts a debilitating disease, hindering the target's ability to take short or long rests.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficiency in stealth and perception, which allows it to ambush prey effectively.",
+    "additional_information": [
+        "Immune to necrotic and poison damage, adding to its combat resilience.",
+        "Has a Shielded Mind ability, protecting it from mental detection and scrying.",
+        "Poisonous Aura creates area-denial effects in combat.",
+        "Can breathe both air and water due to its amphibious nature.",
+        "Gem Gaze ability can inflict radiant damage to multiple creatures at once."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic monster with poison aura",
+        "deadly water serpent that spreads disease",
+        "horned serpent with debilitating cough attack",
+        "dangerous serpent known for brutal melee strikes",
+        "formidable serpent easily moves between water and land"
+    ]
+}

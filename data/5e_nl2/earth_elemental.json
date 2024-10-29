@@ -1,0 +1,50 @@
+{
+    "name": "Earth Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 126,
+    "ac": 17,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft. walking, 30 ft. burrowing through earth",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "earth",
+        "guardian"
+    ],
+    "adjectives": [
+        "towering",
+        "strong",
+        "resilient"
+    ],
+    "description": "A massive creature made of rock, stone, and dirt, animated by elemental magic. Its hulking form can blend into the earth and surprise foes.",
+    "memorable": "Capable of burrowing through earth and stone without causing disturbances; strong enough to deal double damage to structures.",
+    "goals": "Often summoned to guard or assist in battles.",
+    "relations": "Summoned by druids or wizards; may be allies of other earth-related creatures.",
+    "environment": "Typically found in rocky or earthy terrains.",
+    "strengths": "Exceptional physical strength and durability, with resistance to nonmagical damage and immunity to poison.",
+    "weaknesses": "Low agility and intelligence limit its mobility and cognitive functions.",
+    "attacks": "Multiattack with slam attacks, capable of grappling and dealing substantial bludgeoning damage.",
+    "most_powerful_ability": "Earth Glide allows it to burrow effortlessly through earth and stone for stealthy movement.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense, both extending 60 feet, providing good perception capabilities.",
+    "skills": "Limited Stealth ability, making it somewhat less adept at sneaking.",
+    "additional_information": [
+        "Does not require air, food, or sleep.",
+        "Elemental Resilience grants it immunity to exhaustion and various conditions.",
+        "Has advantage on attacks against grappled targets."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive creature made of rock and dirt",
+        "earth elemental that can burrow without disturbance",
+        "guardian elemental immune to poison",
+        "towering monster that deals double damage to structures",
+        "strong elemental with unique stealth abilities"
+    ]
+}

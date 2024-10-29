@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Leavesrot</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>4</CR>
+<AC/>8</AC>
+<HP/>105</HP>
 <summary>The Leavesrot is a large, unaligned ooze that serves as a formidable opponent in combat encounters. It possesses a substantial amount of hit points, making it resilient against damage. The ooze's primary strengths include its ability to move through narrow spaces and its effective use of poison to hinder opponents. Its passive abilities allow it to blend in with its environment, making it difficult to detect until it strikes. However, its low movement speed and poor Dexterity can limit its effectiveness in evading attacks. Overall, while it can inflict significant damage and impose debilitating conditions on its foes, the Leavesrot is not particularly agile, making it susceptible to ranged attacks.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Leavesrot can also release spores as a special action, which recharges on a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Leavesrot
 
 *Large* *Ooze* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Release Spores (Recharge 5–6):** Releases spores from the mold coating its leaves. Each creature within 20' of ooze: 14 (4d6) poison and is choking (DC 13 Con half damage and isn’t choking). A choking creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

@@ -1,0 +1,54 @@
+{
+    "name": "Young Sapphire Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 161,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft., burrow 20 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "psionic",
+        "flying",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "intelligent",
+        "formidable",
+        "versatile",
+        "powerful"
+    ],
+    "description": "A Large dragon with shimmering sapphire scales, capable of flight and psionic powers, it moves with grace and confidence.",
+    "memorable": "Possesses unique psionic abilities that allow it to observe creatures over vast distances, making it an exceptional scout.",
+    "goals": "Typically seeks to dominate using its psionic powers and to gather information about other beings.",
+    "relations": "May be encountered alongside other dragons or creatures of psionic nature, often in conflict over territory or secrets.",
+    "environment": "Typically found in mountainous or secluded areas where it can have vast spaces to utilize its flying speed and psionic observation.",
+    "strengths": "High Armor Class, substantial hit points, psychic damage immunity, and powerful mental abilities make it a dangerous opponent.",
+    "weaknesses": "Vulnerable to attacks that specifically target its psionic capabilities.",
+    "attacks": "Utilizes multiattack with a powerful bite and slashing claws, supplemented by its Discognitive Breath that deals substantial psychic damage.",
+    "most_powerful_ability": "Discognitive Breath, unleashing a cone of psychic energy that can severely damage multiple foes.",
+    "equipment": null,
+    "senses": "Has keen senses with a passive perception score of 20, allowing it to detect threats effectively.",
+    "skills": "Exeptionally skilled in arcana, history, and perception, making it a clever and insightful adversary.",
+    "additional_information": [
+        "Immunity to psychic damage and being fatigued.",
+        "Can communicate through telepathy over a distance of 120 feet.",
+        "Innate spellcasting ability allows for versatile magical capabilities.",
+        "Awareness of psionic activities within 100 miles through Far Thoughts.",
+        "Blind and deaf to its physical surroundings while using its psionic observation."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting ability with access to comprehend languages and detect thoughts three times per day.",
+    "test_queries": [
+        "powerful dragon with psychic abilities",
+        "dragon that can fly and observe from afar",
+        "sapphire dragon with devastating psychic breath",
+        "intelligent dragon that excels in psionic combat",
+        "large dragon immune to psychic damage"
+    ]
+}

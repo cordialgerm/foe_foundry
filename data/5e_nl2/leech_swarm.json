@@ -1,0 +1,50 @@
+{
+    "name": "Leech Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "10 ft. walking, 40 ft. swimming",
+    "role": null,
+    "tags": [
+        "swarm",
+        "aquatic",
+        "predatory"
+    ],
+    "adjectives": [
+        "agile",
+        "parasitic",
+        "dangerous"
+    ],
+    "description": "The Leech Swarm embodies a predatory nature, consisting of numerous small leeches that drain the life force from its victims.",
+    "memorable": "Capable of detecting blood and attacking weakened foes, the Leech Swarm is particularly lethal against injured creatures.",
+    "goals": "To drain the life force from its prey.",
+    "relations": "Related to other aquatic parasites or predatory beasts.",
+    "environment": "Typically found in aquatic environments.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, and immune to many control conditions.",
+    "weaknesses": "Incredibly weak strength and cannot heal itself, relying on offensive tactics.",
+    "attacks": "Bites that deal significant piercing damage and attach leeches that drain hit points.",
+    "most_powerful_ability": "Blood Frenzy grants advantage on attacks against injured creatures.",
+    "equipment": null,
+    "senses": "Has darkvision up to 30 feet, allowing it to see in dim light.",
+    "skills": "Proficient in Stealth and Perception, making it adept at sneaking up on prey.",
+    "additional_information": [
+        "Can occupy another creature's space and move through tight openings.",
+        "Immunity to various debilitating conditions such as paralysis and being stunned.",
+        "Weakness in strength limits physical attacks.",
+        "Can only detect non-undead and non-construct creatures through scent.",
+        "Harms its targets by attaching leeches that drain blood."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "parasitic creature in water",
+        "agile swarm that drains blood",
+        "predatory leeches attacking injured foes",
+        "aquatic creature with high stealth",
+        "blood-sensing leech swarm"
+    ]
+}

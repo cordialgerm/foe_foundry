@@ -1,0 +1,25 @@
+{
+    "name": "Rat",
+    "queries": [
+        {
+            "query": "tiny rodent found in urban areas that spreads disease",
+            "variant": "small rodent in cities that can spread disease"
+        },
+        {
+            "query": "small, agile beast that can navigate through tight spaces",
+            "variant": "agile tiny beast that can fit in small spaces"
+        },
+        {
+            "query": "creature with keen sense of smell that prefers dirty environments",
+            "variant": "animal with sharp smell that thrives in filth"
+        },
+        {
+            "query": "nuisance animal that can be found in sewers and homes",
+            "variant": "pest that lives in sewers and infests homes"
+        },
+        {
+            "query": "low health creature known for swarming and biting",
+            "variant": "creature with low hit points known to swarm and attack with bite"
+        }
+    ]
+}

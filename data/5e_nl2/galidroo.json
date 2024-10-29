@@ -1,0 +1,51 @@
+{
+    "name": "Galidroo",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "burrow 20 ft., walk 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "psychic",
+        "debilitating",
+        "burrower",
+        "multiattacker"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "lethargic",
+        "two-headed"
+    ],
+    "description": "The Galidroo is a huge creature with two heads, demonstrating exceptional physical prowess and psychic abilities. Its skin is tough, and it exhibits a formidable presence, showcasing its immense power and threatening demeanor.",
+    "memorable": "With its Aura of Lassitude and Prophetic Screech, the Galidroo can incapacitate foes and control the flow of battle effectively.",
+    "goals": "Typically seeks to weaken opponents and control the battlefield using its debilitating abilities.",
+    "relations": "May be accompanied by other creatures that benefit from psychic powers or share an evil alignment.",
+    "environment": "Usually found in dark, hidden places where it can ambush or control its surroundings.",
+    "strengths": "Immunity to psychic damage, and possesses multiple high-level attacks and debilitating abilities.",
+    "weaknesses": "Vulnerable to strong magical attacks that can bypass its resistances.",
+    "attacks": "Executes a Multiattack, making two Bite and two Claw attacks, or can use its Tail to grapple foes, dealing substantial damage.",
+    "most_powerful_ability": "Prophetic Screech, which can incapacitate foes and deal significant psychic damage.",
+    "senses": "Has advantage on Wisdom (Perception) checks due to its two heads, enhancing its ability to notice hidden threats.",
+    "skills": "Proficient in Perception with a +8 bonus, allowing it to easily spot hidden or stealthy creatures.",
+    "additional_information": [
+        "Aura of Lassitude makes foes lethargic if they fail a saving throw.",
+        "Selective Precognition allows it to cast divination and legend lore without components.",
+        "Can grapple Large or smaller creatures with its Tail attack."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast divination and legend lore once per day each, using Wisdom as its spellcasting ability.",
+    "test_queries": [
+        "huge monster with psychic abilities",
+        "creature that makes enemies lethargic",
+        "two-headed monster with damage immunity",
+        "Galidroo combat tactics",
+        "psychic screeching monstrous creature"
+    ]
+}

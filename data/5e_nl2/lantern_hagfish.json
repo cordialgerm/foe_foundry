@@ -1,0 +1,50 @@
+{
+    "name": "Lantern Hagfish",
+    "creature_type": "Aberration",
+    "alignment": null,
+    "size": "Small",
+    "hp": 9,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "15 ft., swim 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aberration",
+        "aquatic",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "bioluminescent",
+        "tactical",
+        "fragile"
+    ],
+    "description": "The Lantern Hagfish is a small aberration with bioluminescent slime that provides illumination and tactical advantages in combat, able to slide and control movement on the battlefield.",
+    "memorable": "Its ability to burrow into prey and inflict continuous damage makes it a uniquely dangerous foe.",
+    "goals": "Ambushing prey and manipulating its environment during combat.",
+    "relations": "Often encountered with other hagfish, benefiting from cooperative tactics.",
+    "environment": "Typically found in aquatic environments or the Void.",
+    "strengths": "Resistance to being charmed, frightened, paralyzed, and stunned, and advantage on saves against spells altering its form.",
+    "weaknesses": "Fragile with low Hit Points, making it vulnerable to direct damage.",
+    "attacks": "Bite attack that inflicts piercing damage and has the ability to burrow into prey for ongoing damage.",
+    "most_powerful_ability": "Bioluminescent Slime allows tactical advantage by providing illumination and enhancing attack rolls.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has a decent Stealth skill, allowing it to ambush effectively.",
+    "additional_information": [
+        "Can move through the Void without needing air or sleep.",
+        "Coats surface paths in slime to trip opponents.",
+        "Burrowing into prey adds a layer of strategic threat.",
+        "Can alter the radius of its bioluminescent light.",
+        "Minor combat class with potential for team tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "bioluminescent creature that ambushes",
+        "monstrous aquatic predator with slime",
+        "void-dwelling creature that eats prey from inside",
+        "small aberration that controls movement on battlefield",
+        "hagfish that uses light to enhance combat"
+    ]
+}

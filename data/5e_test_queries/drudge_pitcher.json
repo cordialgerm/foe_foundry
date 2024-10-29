@@ -1,0 +1,25 @@
+{
+    "name": "Drudge Pitcher",
+    "queries": [
+        {
+            "query": "huge plant creature that creates zombies from enemies",
+            "variant": "large plant monster that makes zombies from foes"
+        },
+        {
+            "query": "creature with high hit points and natural armor that is vulnerable to fire",
+            "variant": "monster with strong health and natural armor that takes extra damage from fire"
+        },
+        {
+            "query": "plant monster that traps enemies in pitchers and absorbs their health",
+            "variant": "creature that ensnares foes in pitchers and heals from them"
+        },
+        {
+            "query": "undead creator plant that can trap and damage enemies",
+            "variant": "zombie-generating plant that can ensnare and hurt foes"
+        },
+        {
+            "query": "low dexterity plant creature with powerful melee attacks",
+            "variant": "plant monster with poor agility but strong close-range attacks"
+        }
+    ]
+}

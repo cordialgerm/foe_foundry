@@ -1,0 +1,25 @@
+{
+    "name": "Crimson Drake",
+    "queries": [
+        {
+            "query": "tiny dragon with fire and poison attacks that is chaotic evil",
+            "variant": "tiny dragon that has fire and poison abilities and is evil chaotic"
+        },
+        {
+            "query": "dragon that can fly and has fire breath ability",
+            "variant": "dragon with the ability to fly and exhale fire"
+        },
+        {
+            "query": "mischievous dragon that can be a familiar and has high mobility",
+            "variant": "tricky dragon that can serve as familiar and is very mobile"
+        },
+        {
+            "query": "dragon with magic resistance and deadly stinger attack",
+            "variant": "dragon that resists magic and has a dangerous stinger"
+        },
+        {
+            "query": "creature with darkvision and strong poison damage capabilities",
+            "variant": "creature that can see in the dark and deals heavy poison damage"
+        }
+    ]
+}

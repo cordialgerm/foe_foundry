@@ -1,0 +1,50 @@
+{
+    "name": "Dragonbound Warrior",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "warrior",
+        "minion"
+    ],
+    "adjectives": [
+        "draconic",
+        "resilient",
+        "adaptable"
+    ],
+    "description": "The Dragonbound Warrior embodies the might of its draconic masters; it wields a spear and is equipped for both melee and ranged combat.",
+    "memorable": "Possesses abilities that enhance combat effectiveness through draconic powers.",
+    "goals": "Typically serves as a minion or guardian for dragon masters.",
+    "relations": "Often found alongside dragons or other dragon-worshiping creatures.",
+    "environment": "Commonly found in areas associated with dragons, such as mountainous regions or lairs.",
+    "strengths": "Proficient in stealth, perception, and survival skills.",
+    "weaknesses": "Limited hit points and moderate damage output reduce combat performance.",
+    "attacks": "Engages enemies using a spear, dealing moderate piercing damage.",
+    "most_powerful_ability": "Draconic Smite, which adds 1d6 elemental damage to its attacks.",
+    "equipment": "A spear for melee and ranged combat.",
+    "senses": "Has a passive perception of 14, showcasing good awareness of threats.",
+    "skills": "Proficient in athletics, stealth, perception, and survival, with notable bonuses.",
+    "additional_information": [
+        "Draconic Resistance grants damage reduction against specific elemental attacks.",
+        "Serves as a strategic ambusher due to its stealth abilities.",
+        "Represents the influence of its draconic master in combat.",
+        "Can adapt its attacks based on the elemental type of its master.",
+        "Relatively low complexity for a CR 1/4 creature."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "warrior influenced by dragons",
+        "humanoid class with draconic powers",
+        "combat minion of a dragon",
+        "stealthy warrior with elemental damage",
+        "dragon servant adept in ambush tactics"
+    ]
+}

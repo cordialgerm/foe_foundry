@@ -1,0 +1,25 @@
+{
+    "name": "Musk Deer, Swarm",
+    "queries": [
+        {
+            "query": "agile swarm of deer that can move through small openings",
+            "variant": "swarm of nimble deer that can fit through tiny spaces"
+        },
+        {
+            "query": "beast with damage resistances that lives in groups",
+            "variant": "creature that resists physical damage and prefers to be in a pack"
+        },
+        {
+            "query": "musk deer swarm that has a significant bite attack",
+            "variant": "musk deer swarm with a powerful biting attack"
+        },
+        {
+            "query": "creature with high dexterity that cannot regain health",
+            "variant": "beast that has high agility but can't recover hit points"
+        },
+        {
+            "query": "medium beast that is immune to frightened and paralyzed conditions",
+            "variant": "medium creature that resists being frightened or paralyzed"
+        }
+    ]
+}

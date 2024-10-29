@@ -1,0 +1,25 @@
+{
+    "name": "Dvarapala",
+    "queries": [
+        {
+            "query": "huge giant with divine words ability and keen senses",
+            "variant": "huge giant that has a keen senses and divine words ability"
+        },
+        {
+            "query": "powerful melee giant that can use thunderwave and gust of wind",
+            "variant": "strong melee giant able to cast thunderwave and gust of wind"
+        },
+        {
+            "query": "giant guardian with high Constitution and magical resistance",
+            "variant": "guardian giant with high Constitution and resistance to magic"
+        },
+        {
+            "query": "giant with darkvision that communicates telepathically",
+            "variant": "giant that has darkvision and can communicate via telepathy"
+        },
+        {
+            "query": "Dvarapala's attack abilities including sweeping strike and gada",
+            "variant": "attack abilities of the Dvarapala involving gada and sweeping strike"
+        }
+    ]
+}

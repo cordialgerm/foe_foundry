@@ -1,0 +1,25 @@
+{
+    "name": "Polar Bear",
+    "queries": [
+        {
+            "query": "large white-furred beast that hunts in icy environments",
+            "variant": "big white animal that preys in cold habitats"
+        },
+        {
+            "query": "strong predator known for swimming in cold waters",
+            "variant": "powerful hunter famous for swimming in icy seas"
+        },
+        {
+            "query": "bear that has claws and bites as main attacks",
+            "variant": "animal that uses claws and biting as primary attacks"
+        },
+        {
+            "query": "polar bear living in tundra with keen smell ability",
+            "variant": "arctic bear found in tundra that has a strong sense of smell"
+        },
+        {
+            "query": "solitary creature that fiercely defends its territory in cold regions",
+            "variant": "lone beast that aggressively protects its area in frigid places"
+        }
+    ]
+}

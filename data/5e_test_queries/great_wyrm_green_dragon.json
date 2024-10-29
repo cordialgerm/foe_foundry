@@ -1,0 +1,25 @@
+{
+    "name": "Great Wyrm Green Dragon",
+    "queries": [
+        {
+            "query": "large dragon that can breathe underwater and uses poison attacks",
+            "variant": "big dragon that breathes water and has poison abilities"
+        },
+        {
+            "query": "gargantuan dragon known for stealth in forests and venomous breath weapon",
+            "variant": "huge dragon famous for being stealthy in woods and having a poisonous breath attack"
+        },
+        {
+            "query": "green dragon that excels in combat and can manipulate foes socially",
+            "variant": "emerald dragon skillful in battles and capable of manipulating enemies"
+        },
+        {
+            "query": "formidable dragon that can use legendary actions and has high Charisma",
+            "variant": "powerful dragon able to perform legendary actions and possesses great Charisma"
+        },
+        {
+            "query": "dragon with amazing perception who utilizes poison and deception in fights",
+            "variant": "dragon that has excellent senses and uses poison and trickery in combat"
+        }
+    ]
+}

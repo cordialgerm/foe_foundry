@@ -1,0 +1,25 @@
+{
+    "name": "Bone Collective",
+    "queries": [
+        {
+            "query": "undead swarm of animated bones with telepathic abilities",
+            "variant": "swarm of animated bones that are undead and can communicate telepathically"
+        },
+        {
+            "query": "small chaotic evil creature that can shapeshift and inflicts poison",
+            "variant": "chaotic small evil creature that poisons and can change forms"
+        },
+        {
+            "query": "monster with high Dexterity and ability to occupy other creatures' space",
+            "variant": "creature with exceptional Dexterity that can occupy spaces of other monsters"
+        },
+        {
+            "query": "animated bone creature immune to poison and necrotic damage",
+            "variant": "bone animated creature with immunity to necrotic and poison damage"
+        },
+        {
+            "query": "humanoid form creature that can cast Animate Dead spell",
+            "variant": "creature in humanoid form capable of casting the Animate Dead spell"
+        }
+    ]
+}

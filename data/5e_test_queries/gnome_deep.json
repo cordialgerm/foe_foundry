@@ -1,0 +1,25 @@
+{
+    "name": "Gnome, Deep (Svirfneblin)",
+    "queries": [
+        {
+            "query": "small humanoid with darkvision that lives underground",
+            "variant": "small humanoid that can see in the dark and lives beneath the earth"
+        },
+        {
+            "query": "gnome creature skilled in stealth that uses poisoned darts",
+            "variant": "gnome-like creature adept at stealth with poisoned dart attacks"
+        },
+        {
+            "query": "creature with innate spellcasting and camouflage in rocky terrain",
+            "variant": "monster that can cast spells naturally and blend in with rocks"
+        },
+        {
+            "query": "deep gnome with a war pick and magic resistance",
+            "variant": "svirfneblin armed with a pick and resistant to magic"
+        },
+        {
+            "query": "neutral good deep gnome with low hit points and good defenses",
+            "variant": "neutral good svirfneblin with low health and decent armor"
+        }
+    ]
+}

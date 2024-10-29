@@ -1,0 +1,25 @@
+{
+    "name": "Ratfolk Warlock",
+    "queries": [
+        {
+            "query": "small humanoid spellcaster with high Dexterity and Charisma",
+            "variant": "humanoid spell caster with high Dexterity and small size"
+        },
+        {
+            "query": "Ratfolk Warlock abilities and tactics in combat",
+            "variant": "tactics and combat abilities of Ratfolk Warlock"
+        },
+        {
+            "query": "creature that uses Pack Tactics and can cast Darkness",
+            "variant": "creature with Pack Tactics and the ability to cast Darkness"
+        },
+        {
+            "query": "spellcaster with innate magic and nimbleness",
+            "variant": "nimble spell caster with innate magical abilities"
+        },
+        {
+            "query": "small warlock that can swim and has darkvision",
+            "variant": "warlock that is small, has darkvision, and can swim"
+        }
+    ]
+}

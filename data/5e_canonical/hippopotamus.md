@@ -1,6 +1,8 @@
 <MonsterName/>Hippopotamus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>The hippopotamus is a large, unaligned beast that plays a role similar to that of a tank in combat scenarios. With a robust armor class and a substantial pool of hit points, it is able to withstand significant damage, making it a formidable opponent. Its high strength allows it to deal considerable damage with its melee attacks, while its special abilities enhance its versatility in battle, particularly with powerful area effects. However, its low Dexterity makes it less agile and more vulnerable to attacks that require precise movement. Overall, the hippopotamus can serve as both a frontline combatant and a destabilizing force in encounters.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Another action it can utilize is "Thunderous Bray," which can be activated once 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hippopotamus
 
 *Large* *Beast* *unaligned*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Thunderous Bray (Recharge 5–6):** Emits a resounding bray in a 15 ft. cone. All in area make a DC 13 Con save. On a failure a creature takes 14 (4d6) thunder and is incapacitated until the end of its next turn. On a success a creature takes half the damage and isn’t incapacitated.
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Dragon Cultist</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>39</HP>
 <summary>The Dragon Cultist is a medium humanoid creature who serves the will of dragon masters, embodying a twisted devotion that manifests in various abilities. With an Armor Class of 12 and Hit Points totaling 39, they can sustain a moderate amount of damage in combat. Their Challenge Rating of 2 indicates a moderate threat level for adventurers, providing 450 XP upon defeat. The Dragon Cultist has a blend of strengths and weaknesses, notably benefiting from good Dexterity and Wisdom scores, which enhance their agility and spellcasting. However, their average Strength and Intelligence, combined with a lack of heavy armor, makes them less effective in direct melee combat.</summary>
 
 <detail>
@@ -28,6 +30,7 @@ In summary, the Dragon Cultist is a versatile and manipulative foe with both off
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon Cultist
 
 *Medium* *Humanoid*
@@ -73,5 +76,6 @@ Source: 5e_artisinal_monsters
 - **Hold Person (2nd-Level; V, S, M, Concentration):** One humanoid the cult fanatic can see within 60 feet makes a DC 12 Wisdom saving throw. On a failure  the target is paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 

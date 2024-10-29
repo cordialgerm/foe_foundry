@@ -1,0 +1,25 @@
+{
+    "name": "Diminution Drake",
+    "queries": [
+        {
+            "query": "medium dragon that can shrink enemies and is immune to poison",
+            "variant": "medium-sized dragon that shrinks enemies and has poison immunity"
+        },
+        {
+            "query": "stealthy poison dragon that changes size in combat",
+            "variant": "sneaky poison dragon that alters size during battles"
+        },
+        {
+            "query": "dragon with keen smell that uses poison breath and claw attacks",
+            "variant": "dragon possessing a keen sense of smell that attacks with claws and uses poisonous breath"
+        },
+        {
+            "query": "green and cunning dragon that flies fast and manipulates size",
+            "variant": "clever green dragon that has a fast flight and can manipulate its size"
+        },
+        {
+            "query": "dragon with high dexterity and low intelligence that enjoys deception",
+            "variant": "dragon that has high agility and poor mental capacity and loves trickery"
+        }
+    ]
+}

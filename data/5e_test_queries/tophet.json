@@ -1,0 +1,25 @@
+{
+    "name": "Tophet",
+    "queries": [
+        {
+            "query": "huge fire-resistant construct with devastating attacks",
+            "variant": "huge construct that resists fire and has deadly attacks"
+        },
+        {
+            "query": "neutral evil creature that grapples and inflicts fire damage",
+            "variant": "evil creature that grapples and deals fire damage"
+        },
+        {
+            "query": "construct that doesn't need food or sleep and has high HP",
+            "variant": "a construct that needs no food or sleep and has a lot of hit points"
+        },
+        {
+            "query": "tall opponent with multiple slam attacks and flame abilities",
+            "variant": "large opponent with many slam attacks and fire abilities"
+        },
+        {
+            "query": "creature immune to charming and paralyzing effects with fire damage abilities",
+            "variant": "being that is immune to charm and paralysis with fire attack skills"
+        }
+    ]
+}

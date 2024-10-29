@@ -1,0 +1,55 @@
+{
+    "name": "Dark Father",
+    "creature_type": "Undead",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 65,
+    "ac": 18,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 20 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "necrotic",
+        "stealth",
+        "mobility"
+    ],
+    "adjectives": [
+        "formidable",
+        "shadowy",
+        "powerful",
+        "undead"
+    ],
+    "description": "The Dark Father is a large undead creature that exudes a formidable presence, possessing natural armor and a skeletal appearance that reflects its mastery over necrotic energy. It appears to glide through shadows with an air of malevolence and has notable abilities that enhance its effectiveness in combat.",
+    "memorable": "The Dark Father's ability to absorb corpses and drain life through necrotic attacks makes it a truly terrifying adversary.",
+    "goals": "To drain life from foes and maintain control over dead bodies.",
+    "relations": "Typically encountered alongside other undead entities or necromancers.",
+    "environment": "Commonly found in dark, forgotten places and locations of death.",
+    "strengths": "Immunity to necrotic and poison damage along with resistance to nonmagical physical attacks.",
+    "weaknesses": "Notably weak in Strength, indicated by a low score of 6, which affects its physical attacks.",
+    "attacks": "Uses Life Drain to inflict heavy necrotic damage while also potentially reducing a target's maximum hit points.",
+    "most_powerful_ability": "None May Stop Death, which penalizes creatures that regain hit points, making it difficult for opponents to recover during combat.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in dark environments up to 60 feet.",
+    "skills": "Excels in stealth, making it effective at evasion and ambush tactics.",
+    "additional_information": [
+        "Can pass through objects and creatures due to its incorporeal nature.",
+        "Limited flying ability enables mobility and escape strategies.",
+        "Immunities to various conditions make it hard to control in combat.",
+        "Uses stealth to ambush unsuspecting targets effectively.",
+        "Has high skills in disrupting enemy spellcasters."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "Can counter evocation and necromancy spells using abilities like Banish Hope.",
+    "test_queries": [
+        "dark undead creature that drains life",
+        "powerful necrotic entity with life drain",
+        "manipulative undead that absorbs corpses",
+        "shadowy figure with stealthy movement",
+        "mobility enhanced undead with special abilities"
+    ]
+}

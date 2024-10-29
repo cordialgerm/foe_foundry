@@ -1,0 +1,48 @@
+{
+    "name": "Raptor",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 32,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "pack tactics",
+        "agile"
+    ],
+    "adjectives": [
+        "swift",
+        "potent",
+        "team-oriented"
+    ],
+    "description": "The Raptor is a medium-sized beast with high speed and strong physical traits, making it an efficient predator. It has a strong build with exceptional strength, and it relies on teamwork to take down prey effectively.",
+    "memorable": "The Raptor\u2019s ability to gain advantage on attacks when in packs makes them particularly dangerous when encountered in groups.",
+    "goals": "Hunt and take down prey using speed and coordinated attacks.",
+    "relations": "Often found in packs, coordinating with other Raptors for hunting.",
+    "environment": "Typically found in regions where they can pursue prey, such as forests or grasslands.",
+    "strengths": "High speed allows for rapid engagement in combat, and exceptional strength enhances offensive capabilities.",
+    "weaknesses": "Limited intelligence and strategic thinking outside of pack dynamics, and average passive perception.",
+    "attacks": "The Raptor uses a Claw attack that deals slashing damage and can knock Medium or smaller opponents prone.",
+    "most_powerful_ability": "Pack Tactics allows Raptors to gain advantage on attack rolls when allied with other Raptors, enhancing their combat effectiveness.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Excels in teamwork and positioning during combat.",
+        "Moderate armor class makes it somewhat resilient.",
+        "Fast movement speed of 60 feet enhances mobility."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "predatory beast with pack tactics",
+        "swift raptor that hunts in packs",
+        "medium-sized agile predator",
+        "claw attack that knocks down prey",
+        "team-oriented creature that uses speed"
+    ]
+}

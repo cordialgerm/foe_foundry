@@ -1,0 +1,53 @@
+{
+    "name": "Giant Poisonous Frog",
+    "creature_type": "Beast",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 44,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "poisonous",
+        "melee",
+        "swallowing"
+    ],
+    "adjectives": [
+        "large",
+        "toxic",
+        "hallucinogenic"
+    ],
+    "description": "A large frog with toxic skin and a greenish hue, able to leap great distances and swim with agility.",
+    "memorable": "Its toxic skin induces hallucinations and it can grapple or swallow prey.",
+    "goals": "To ambush and consume unsuspecting creatures that come too close.",
+    "relations": "May be found in marshes or near water bodies where other amphibious creatures reside.",
+    "environment": "Wetlands, swamps, and lakesides.",
+    "strengths": "Powerful grapple ability and toxic skin that can incapacitate attackers.",
+    "weaknesses": "Average defenses and poorly rated intelligence and charisma.",
+    "attacks": "A dangerous bite that inflicts both piercing and poison damage, with the ability to grapple.",
+    "most_powerful_ability": "Toxic skin that poisons and causes hallucinations to attackers.",
+    "equipment": null,
+    "senses": "Has darkvision, allowing it to see in the dark up to 30 feet.",
+    "skills": "Moderate stealth skills allow it to move quietly in its environment.",
+    "additional_information": [
+        "Amphibious nature allows it to live both in water and on land.",
+        "Standing leap capability makes it a surprising threat in combat.",
+        "Can swallow creatures, providing total cover from outside attacks.",
+        "It can pull creatures closer with its reeling tongue ability."
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant amphibious creature with toxic skin",
+        "large frog that swallows prey",
+        "poisonous frog found in swamps",
+        "hallucinogenic toxic skin creature",
+        "grappling frog that leaps great distances"
+    ]
+}

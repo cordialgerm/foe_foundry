@@ -1,0 +1,25 @@
+{
+    "name": "Tormented Qiqirn",
+    "queries": [
+        {
+            "query": "chaotic evil fiend that inflicts necrotic damage",
+            "variant": "chaotic fiend that inflicts necrcotic damage and is evil"
+        },
+        {
+            "query": "fast fiend with psychic abilities and natural armor",
+            "variant": "quick fiend that has psychic powers and uses natural armor"
+        },
+        {
+            "query": "large monster with a high Dexterity score and stealth skills",
+            "variant": "big monster that possesses high Dexterity and stealth abilities"
+        },
+        {
+            "query": "creature immune to necrotic damage and resistant to fire",
+            "variant": "monster that is immune to necrotic damage and resists fire"
+        },
+        {
+            "query": "Tormented Qiqirn abilities in combat with aura of pain",
+            "variant": "abilities of the Tormented Qiqirn in battle featuring aura of pain"
+        }
+    ]
+}

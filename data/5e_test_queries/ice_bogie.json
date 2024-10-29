@@ -1,0 +1,25 @@
+{
+    "name": "Ice Bogie",
+    "queries": [
+        {
+            "query": "small fey creature that is immune to cold and can hide easily",
+            "variant": "small fey monster immune to cold and that can hide quickly"
+        },
+        {
+            "query": "ice-based monster with support abilities and fire vulnerability",
+            "variant": "ice creature with support skills and weakness to fire"
+        },
+        {
+            "query": "quick monster that uses Pack Tactics and has low Strength",
+            "variant": "fast creature using Pack Tactics and weak Strength"
+        },
+        {
+            "query": "fey creature that communicates in Primordial and is chaotic neutral",
+            "variant": "fey monster speaking Primordial and neutral chaos"
+        },
+        {
+            "query": "small creature with icy attacks and Nimble Escape ability",
+            "variant": "tiny monster with ice attacks and ability to escape nimbly"
+        }
+    ]
+}

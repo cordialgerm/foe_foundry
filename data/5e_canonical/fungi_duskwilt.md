@@ -1,6 +1,8 @@
 <MonsterName/>Fungi, Duskwilt</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>97</HP>
 <summary>The Duskwilt is a small plant creature with a lawful neutral alignment that presents a unique blend of combat abilities and environmental manipulation. With a respectable Armor Class of 15 thanks to its natural armor and a hit point total of 97, it boasts durability in battle. The Duskwilt's significant speed enables it to move effectively across the battlefield, making it a versatile opponent. It demonstrates strong dexterity, making it quite agile, while also possessing a good constitution for resilience against damage. However, it has vulnerabilities to radiant damage, which can make it susceptible to specific divine attacks. Notable features include its ability to absorb light, altering visibility in its vicinity, and its capacity to inflict necrotic damage through physical and ranged attacks.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Duskwilt is an effective combatant and a tactical environmental man
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fungi, Duskwilt
 
 *Small* *Plant* *lawful neutral*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Necrotizing Spores (3/Day):** Each creature within 15 ft. of the duskwilt and that isn’t a Construct or Undead must make a DC 14 Con save. On a failure a creature takes 15 (6d4) poison and is poisoned for 1 min. On a success a creature takes half the damage and isn’t poisoned. The poisoned creature can re-save at end of each of its turns success ends effect on itself. In addition each Undead within 15 ft. of the duskwilt gains 7 (2d6) temp hp.
 
 
+</statblock>
 
 

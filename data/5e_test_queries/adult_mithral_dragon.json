@@ -1,0 +1,25 @@
+{
+    "name": "Adult Mithral Dragon",
+    "queries": [
+        {
+            "query": "majestic dragon with high Dexterity and slashing immunity",
+            "variant": "majestic draggon with high dexterity and immune to slashing"
+        },
+        {
+            "query": "large neutral dragon that uses magical abilities in combat",
+            "variant": "huge neutral draggon that uses magic for combat"
+        },
+        {
+            "query": "dragon that can reflect spells and is formidable in battle",
+            "variant": "draggon that reflects spells and is tough in combat"
+        },
+        {
+            "query": "huge dragon known for high stealth and multi-attack strength",
+            "variant": "huge draggon known for stealth and multiattack power"
+        },
+        {
+            "query": "Mithral Dragon with frightful presence and area damage breath",
+            "variant": "Mithral draggon with frightning presence and area attack breath"
+        }
+    ]
+}

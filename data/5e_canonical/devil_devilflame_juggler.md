@@ -1,6 +1,8 @@
 <MonsterName/>Devil, Devilflame Juggler</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>13</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The Devilflame Juggler is a large, lawful evil fiend that excels in combat through its agility and magical abilities. With an Armor Class of 18 and a substantial Hit Point total of 178, it can withstand considerable punishment while dishing out damage with its unique attack options. The creature has a very good Dexterity score at +5, allowing it to be quite nimble and evasive during encounters. Its challenge rating of 13 positions it as a formidable opponent for adventurers, capable of dealing both slashing and fire damage. The Juggler's special abilities, like Devil's Sight and Magic Resistance, further enhance its effectiveness in battles, making it a dangerous adversary. However, while it is powerful, it is still a fiend with potential weaknesses, particularly against magical attacks that use silvered weapons.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Juggler can perform a Nimble Leap, allowing it to take th
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devil, Devilflame Juggler
 
 *Large* *Fiend* *lawful evil*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Uncanny Dodge:** When an attacker it can see hits it with an attack can choose to take half dmg instead.
 
 
+</statblock>
 
 

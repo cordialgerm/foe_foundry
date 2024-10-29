@@ -1,0 +1,25 @@
+{
+    "name": "Swamp Naga",
+    "queries": [
+        {
+            "query": "large swamp monster that can regenerate and commands insects",
+            "variant": "big swamp creature that commands insects and can come back to life"
+        },
+        {
+            "query": "cunning creature found in swamps that deals poison damage",
+            "variant": "smart monster in swamp that inflicts poison damage"
+        },
+        {
+            "query": "serpent-like monster with high dexterity and spellcasting abilities",
+            "variant": "snake-like creature skilled in spellcasting and has high agility"
+        },
+        {
+            "query": "monstrous being with cloud of insects and grappling attacks",
+            "variant": "monster that uses a cloud of insects and can grapple its foes"
+        },
+        {
+            "query": "lawful evil creature from the swamp with strong melee attacks",
+            "variant": "evil lawful monster hailing from swamps with powerful melee strikes"
+        }
+    ]
+}

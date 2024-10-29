@@ -1,6 +1,8 @@
 <MonsterName/>Ushabti Royal Guard</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>14</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Ushabti Royal Guard is a large construct that serves as a formidable guardian, often positioned to protect ancient treasures or tombs. With an impressive Armor Class of 19, it boasts a significant total of 168 hit points, making it a durable combatant. This creature is classified as unaligned, relying primarily on its mechanical nature rather than moral inclinations. One of its key strengths lies in its resilience, demonstrated by its immunities to various conditions such as poison, psychic attacks, and physical damage from nonmagical sources. However, it does possess a weakness in its lack of social skills, as indicated by its low Charisma score. In combat, the Ushabti employs a combination of necrotic-infused weapon attacks and debilitating special abilities, making it a powerful foe that can control the battlefield while dealing substantial damage.</summary>
 
 <detail>
@@ -43,6 +45,7 @@ Overall, the Ushabti Royal Guard presents a daunting challenge with its strong d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ushabti Royal Guard
 
 *Large* *Construct* *Unaligned*
@@ -93,5 +96,6 @@ The ushabti can take 3 legendary actions, choosing from the options below. Only 
 - **Move:** The ushabti moves up to its speed without provoking opportunity attacks.
 - **Medjai’s Scepter (Costs 2 Actions):** The ushabti makes one Medjai’s Scepter attack.
 - **Telekinesis (Costs 2 Actions):** Up to two creatures the ushabti can see within 60 feet of it must succeed on a DC 18 Strength saving throw or the ushabti moves the creature up to 30 feet in any direction (including upward). A moved target is then restrained until the start of the ushabti’s next turn.
+</statblock>
 
 

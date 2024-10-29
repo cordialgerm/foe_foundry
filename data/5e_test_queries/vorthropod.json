@@ -1,0 +1,25 @@
+{
+    "name": "Vorthropod",
+    "queries": [
+        {
+            "query": "medium creature with lava affinity and fire immunity",
+            "variant": "medium-sized creature that is immune to fire and loves lava"
+        },
+        {
+            "query": "monstrosity that thrives in extreme heat and has a hardened shell",
+            "variant": "monstrosity with a tough shell that exists well in extreme heat"
+        },
+        {
+            "query": "creature with bludgeoning vulnerability living in volcanic terrain",
+            "variant": "monster vulnerable to bludgeoning living in volcanic areas"
+        },
+        {
+            "query": "Vorthropod abilities in magma environments with powerful claw attacks",
+            "variant": "abilities of Vorthropod in lava environments along with its strong claw"
+        },
+        {
+            "query": "fire-resistant monster with a cooling shell and lava camouflage",
+            "variant": "fire-resistant creature with an ability to camouflage in lava and a cooling shell"
+        }
+    ]
+}

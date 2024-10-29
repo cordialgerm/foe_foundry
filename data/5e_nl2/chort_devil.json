@@ -1,0 +1,55 @@
+{
+    "name": "Chort Devil",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 187,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "fire",
+        "spellcaster",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "brutal",
+        "resilient",
+        "strategic",
+        "combat-ready"
+    ],
+    "description": "The Chort Devil is a formidable Medium fiend, known for its high armor class and substantial hit points. Its impressive Strength of 24 and Constitution of 26 make it a powerful and durable opponent in combat, while its devilish appearance adds to its menacing presence.",
+    "memorable": "The Chort Devil's ability to deal significant fire damage with its attacks and its tactical use of teleportation makes it a uniquely challenging foe.",
+    "goals": "Typically seeks to manipulate encounters, exert control over opponents, and dominate in combat.",
+    "relations": "May be found working alongside other fiends or commanding lesser devils to achieve its goals.",
+    "environment": "Often encountered in hellish realms or in demonic summoning scenarios.",
+    "strengths": "Possesses high resistances to cold, fire, and poison damage, and has powerful spellcasting capabilities.",
+    "weaknesses": "Relies heavily on melee attacks, making it vulnerable in ranged combat scenarios.",
+    "attacks": "Utilizes multiattack capabilities, including a Claw attack that inflicts slashing and fire damage, while its Ranseur can strike from a distance.",
+    "most_powerful_ability": "Hellish Weapons ability allows its attacks to deal an additional 4d6 fire damage.",
+    "senses": "Has a passive Perception of 19, allowing it to spot threats effectively.",
+    "skills": "Skilled in Athletics, Deception, Insight, and Perception, with notable proficiency in Charm manipulation.",
+    "additional_information": [
+        "Immunities to cold, fire, and poison damage",
+        "Advantage on saving throws against spells due to Magic Resistance",
+        "Capable of seeing through magical darkness due to Devil's Sight",
+        "Can teleport up to 120 feet instantly",
+        "Can cast spells like charm person and modify memory."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells using Charisma as the spellcasting ability, including charm person and haste.",
+    "test_queries": [
+        "medium fiend that uses fire attacks",
+        "devil with teleportation abilities",
+        "powerful melee fiend with spellcasting",
+        "formidable creature with high fire damage",
+        "brutal fiend with magical resilience"
+    ]
+}

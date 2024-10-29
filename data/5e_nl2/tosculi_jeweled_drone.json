@@ -1,0 +1,52 @@
+{
+    "name": "Tosculi Jeweled Drone",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "tactical",
+        "supportive",
+        "mobile"
+    ],
+    "adjectives": [
+        "jeweled",
+        "cunning",
+        "striking"
+    ],
+    "description": "A small humanoid with a striking appearance, the Tosculi Jeweled Drone is adorned with a glittering carapace, exuding an aura of danger and charm.",
+    "memorable": "Its ability to enhance allies with pheromones and possibly blind foes with its scintillating carapace makes it a unique opponent.",
+    "goals": "To support its allies in battle while hindering enemies through tactical maneuvers and environmental effects.",
+    "relations": "Often found in the company of other tosculi, particularly hive queens.",
+    "environment": "Typically inhabits dark or underground areas where it can leverage its tactical abilities.",
+    "strengths": "High mobility and the ability to support allies significantly in combat.",
+    "weaknesses": "Vulnerable to strategic opponents who can avoid detection and its sight-based abilities.",
+    "attacks": "Utilizes claws for slashing damage and possesses a scimitar that deals additional poison damage.",
+    "most_powerful_ability": "The scintillating carapace can blind non-tosculi creatures nearby, disrupting their actions.",
+    "equipment": null,
+    "senses": "Has darkvision and passive perception of 12, aiding its tactical awareness.",
+    "skills": "Proficient in Deception and Persuasion, making it skilled in diplomatic and manipulative situations.",
+    "additional_information": [
+        "Immunity to being charmed or frightened.",
+        "Can enhance other tosculi's combat effectiveness with its pheromones.",
+        "Protects hive queens by boosting their armor class.",
+        "Capable of making multiple attacks in a single turn.",
+        "Can cause paralysis with its poison damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "deadly flying humanoid with poison attack",
+        "support creature that enhances allies in battle",
+        "small humanoid with dazzling carapace",
+        "monster that paralyzes foes with poison",
+        "tactical creature that blinds enemies"
+    ]
+}

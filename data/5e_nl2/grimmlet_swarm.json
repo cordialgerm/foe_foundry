@@ -1,0 +1,54 @@
+{
+    "name": "Grimmlet Swarm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 152,
+    "ac": 15,
+    "srd": false,
+    "cr": "14",
+    "movement": "fly 30 ft., hover",
+    "role": null,
+    "tags": [
+        "swarm",
+        "psychic",
+        "spellcaster",
+        "flying"
+    ],
+    "adjectives": [
+        "large",
+        "threatening",
+        "resilient",
+        "mystical"
+    ],
+    "description": "The Grimmlet Swarm is a large monstrosity, characterized by its multitude of tiny grimmlets that swarm together, creating a formidable presence on the battlefield. It has a strong Constitution and Charisma, is capable of flying, and inflicts psychic damage through its attacks and abilities.",
+    "memorable": "This swarm can multiply when damaged by spells, making it a relentlessly growing threat, and it releases a wave of despair upon dying.",
+    "goals": "To overwhelm foes with numbers and exert psychic influence in battle while causing exhaustion.",
+    "relations": "Potentially associated with other psychic creatures or entities that specialize in despair and mind-affecting tactics.",
+    "environment": "Typically found in locations that are rich in magic or psychic energy, such as mystical forests or ancient ruins.",
+    "strengths": "Immune to psychic damage and numerous conditions; capable of multiplying during combat.",
+    "weaknesses": "Low Intelligence limits its tactical options and communication.",
+    "attacks": "The swarm makes melee attacks with crystal edges, dealing slashing and potential psychic damage.",
+    "most_powerful_ability": "Reproduce, allowing new grimmlets to form from spell damage, making it a danger if not swiftly dealt with.",
+    "equipment": null,
+    "senses": "Possesses blindsight with a range of 120 feet, enabling it to sense its surroundings without sight.",
+    "skills": null,
+    "additional_information": [
+        "Explodes in despair upon death, affecting nearby creatures.",
+        "Inflicts exhaustion on targets that fail saving throws against its abilities.",
+        "Can occupy the same space as other creatures.",
+        "Cannot regain hit points or temporary hit points.",
+        "Innate spellcasting capabilities allow for manipulation of perception and movement."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting with a variety of psychic and illusion spells, including maddening whispers and void strike.",
+    "test_queries": [
+        "swarm of tiny psychic creatures",
+        "creature that multiplies when damaged",
+        "monster that drains life and causes exhaustion",
+        "flying swarm known for psychic attacks",
+        "large creature with innate spellcasting abilities"
+    ]
+}

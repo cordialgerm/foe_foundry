@@ -1,0 +1,25 @@
+{
+    "name": "Ushabti",
+    "queries": [
+        {
+            "query": "medium construct with necrotic attacks that can summon snakes",
+            "variant": "medium construct that can summon snakes and has necrotic attacks"
+        },
+        {
+            "query": "animated funerary statue immune to poison that curses its enemies",
+            "variant": "funerary statue that animates and curses foes while immune to poison"
+        },
+        {
+            "query": "tough combat construct with high Dexterity and magical resistance",
+            "variant": "combat construct with high Dexterity known for toughness and magic resistance"
+        },
+        {
+            "query": "Ushabti with the ability to manipulate creatures telekinetically",
+            "variant": "manipulative construct known as Ushabti that can move creatures telekinetically"
+        },
+        {
+            "query": "combatant that does not need food or sleep and has false appearance",
+            "variant": "combatant immune to food or sleep requirements with false appearance"
+        }
+    ]
+}

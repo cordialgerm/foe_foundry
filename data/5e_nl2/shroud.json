@@ -1,0 +1,52 @@
+{
+    "name": "Shroud",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "necrotic"
+    ],
+    "adjectives": [
+        "sneaky",
+        "cunning",
+        "threatening"
+    ],
+    "description": "The Shroud is a Medium-sized undead creature, characterized by its ability to move stealthily and strike from the shadows.",
+    "memorable": "Its capacity to drain the strength of its victims and potentially rise from the corpses of non-evil humanoids adds an unsettling layer to its already menacing presence.",
+    "goals": "Primarily seeks to weaken living foes and grow more powerful through life-draining attacks.",
+    "relations": "Can be encountered alongside other undead or dark creatures, and may serve as a scout or harbinger of greater evil.",
+    "environment": "Often found in dark areas such as crypts, abandoned buildings, or shadowy forests.",
+    "strengths": "Strong stealth abilities and the potential to evolve into a more dangerous form, the shadow.",
+    "weaknesses": "Vulnerable to radiant damage and significantly impaired in sunlight.",
+    "attacks": "Utilizes a Strength Drain attack that deals necrotic damage and imposes disadvantage on the target's Strength-based weapon attacks.",
+    "most_powerful_ability": "Shadow Evolution allows it to transform into a shadow after dealing substantial necrotic damage to a non-undead foe.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, allowing it to see in darkness as if it were dim light.",
+    "skills": "Proficient in Stealth, making it adept at avoiding detection.",
+    "additional_information": [
+        "Immunity to necrotic and poison damage.",
+        "Can move through narrow spaces without squeezing.",
+        "Does not require air, food, or sleep.",
+        "Can rise from the dead if it kills a non-evil humanoid.",
+        "Imposes disadvantage on its rolls if in sunlight."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy undead creature that drains strength",
+        "shadowy creature with necrotic abilities",
+        "undead that turns foes into more of its kind",
+        "dark mobile monster vulnerable to radiant damage",
+        "creature that becomes a shadow when it attacks"
+    ]
+}

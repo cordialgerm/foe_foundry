@@ -1,0 +1,25 @@
+{
+    "name": "Giant Toad",
+    "queries": [
+        {
+            "query": "large amphibious predator that can swim and swallow prey",
+            "variant": "amphibious large predator that can swim and swallow prey"
+        },
+        {
+            "query": "swamp creature with sticky tongue and warty skin",
+            "variant": "creature found in swamps with warty skin and sticky tongue"
+        },
+        {
+            "query": "beast that uses grappling to catch smaller creatures",
+            "variant": "beast that grapples to catch smaller creatures"
+        },
+        {
+            "query": "toad that can breathe underwater and has a powerful bite",
+            "variant": "toad that can breath in water with a powerful bite"
+        },
+        {
+            "query": "large toad that ambushes prey in water",
+            "variant": "big toad that ambushes its prey in aquatic environments"
+        }
+    ]
+}

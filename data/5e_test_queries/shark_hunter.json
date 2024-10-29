@@ -1,0 +1,25 @@
+{
+    "name": "Hunter Shark",
+    "queries": [
+        {
+            "query": "large predatory water creature with enhanced attack abilities",
+            "variant": "large water predator creature that has enhanced attack abilities"
+        },
+        {
+            "query": "shark that can detect injured creatures by scent and thrives in water",
+            "variant": "shark that thrives underwater and can sense injured creatures by smell"
+        },
+        {
+            "query": "aquatic beast with Blood Frenzy ability and swift movement in water",
+            "variant": "aquatic creature with Blood Frenzy and fast water movement"
+        },
+        {
+            "query": "predatory shark that is vulnerable on land and specializes in melee attacks",
+            "variant": "predator shark that is weak on land and focuses on melee attacks"
+        },
+        {
+            "query": "hunter shark that uses bite attacks and has a strong sense of smell",
+            "variant": "hunter shark that relies on bite attacks and has an excellent sense of smell"
+        }
+    ]
+}

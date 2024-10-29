@@ -1,0 +1,25 @@
+{
+    "name": "Wrackwraith",
+    "queries": [
+        {
+            "query": "undead creature that can fly and manipulates debris",
+            "variant": "creature that manipulates debris and flies, being undead"
+        },
+        {
+            "query": "medium-sized monster immune to poison and necrotic damage",
+            "variant": "monster that is medium-sized and has immunity to necrotic and poison damage"
+        },
+        {
+            "query": "neutral evil undead with necrotic attacks and a challenge rating of 3",
+            "variant": "undead with a CR of 3 that uses necrotic attacks and is neutral evil"
+        },
+        {
+            "query": "monster that can teleport and fill lungs with seawater",
+            "variant": "creature that fills lungs with seawater and can teleport"
+        },
+        {
+            "query": "creature with high dexterity and the ability to animate wrack",
+            "variant": "high dexterity creature that can animate debris"
+        }
+    ]
+}

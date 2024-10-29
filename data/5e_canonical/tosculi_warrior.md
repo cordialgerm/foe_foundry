@@ -1,6 +1,8 @@
 <MonsterName/>Tosculi Warrior</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>15</AC>
+<HP/>58</HP>
 <summary>The Tosculi Warrior is a small humanoid creature characterized by its lawful evil alignment. As a combatant, it excels in both melee and tactical situations, employing its speed and flight to maneuver effectively in battle. With an Armor Class of 15 and a health pool of 58 hit points, it can sustain some damage while delivering notable attacks. The Tosculi Warrior's strengths lie in its high dexterity of 20, which provides it with exceptional agility and accuracy in attacks, coupled with strong attacking options and debilitating abilities. However, its moderate strength and intelligence suggest limitations in physical might and mental prowess. The warrior's unique features—Crowd Tactics and Hive Sense—enhance its effectiveness in combat and connection to its hive, making it a formidable foe.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The "Prepare Host" ability is particularly deadly; if a target is already paraly
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tosculi Warrior
 
 *Small* *Humanoid* *Lawful Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) slashing damage.
 - **Stinger:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (2d4 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target is also paralyzed. A poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Prepare Host:** The tosculi extends the paralysis on a creature within 5 feet of it that was paralyzed by a tosculi’s Stinger attack. The paralyzed target must succeed on a DC 13 Constitution saving throw or be paralyzed for 8 hours and no longer makes saving throws to end the paralysis. The paralysis ends if the target takes damage while below half its hp maximum. Otherwise, a spell or effect that cures disease ends this paralysis.
+</statblock>
 
 

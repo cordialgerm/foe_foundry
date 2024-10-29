@@ -1,0 +1,25 @@
+{
+    "name": "Flutterflesh",
+    "queries": [
+        {
+            "query": "large undead creature with necrotic attacks and high mobility",
+            "variant": "big undead monster that uses necrotic strikes and has great speed"
+        },
+        {
+            "query": "chaotic evil undead that can regenerate and uses paralysis tactics",
+            "variant": "evil chaotic undead that regains health and employs paralyzing moves"
+        },
+        {
+            "query": "monster that grapples and inflicts psychic damage from afar",
+            "variant": "creature that grapples and deals psychic harm at a distance"
+        },
+        {
+            "query": "undead with a strong dexterity score and stealth abilities",
+            "variant": "undead creature that has high agility and skills in stealth"
+        },
+        {
+            "query": "Flutterflesh combat strategies with Creeping Death and Multiattack",
+            "variant": "Flutterflesh fighting tactics using Creeping Death and Multiattack"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Dune Mimic</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>8</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>168</HP>
 <summary>The Dune Mimic is a formidable Huge monstrosity that poses a unique challenge in combat and exploration scenarios. Its ability to disguise itself as ordinary sandy terrain allows it to blend in, creating ambush opportunities for unsuspecting adventurers. With a good Armor Class of 13 and a substantial 168 hit points, it showcases a strong defensive and offensive presence on the battlefield. The Dune Mimic's strengths lie in its grappling abilities and damage immunity to acid and fire, while its low Dexterity makes it vulnerable to ranged attacks, making it somewhat slow and less evasive. This creature operates effectively as a terrain-based ambusher, utilizing its adhesive properties and engulfing attacks to incapacitate its foes.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Dune Mimic can use "Change Shape" to transform into a Hug
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dune Mimic
 
 *Huge* *Monstrosity* *Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The dune mimic transforms into a Huge sand- or gravel-covered object, shapes itself into a sandy or rocky terrain feature no larger than a 20-foot cube or transforms back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.
+</statblock>
 
 

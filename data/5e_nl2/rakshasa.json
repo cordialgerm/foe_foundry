@@ -1,0 +1,54 @@
+{
+    "name": "Rakshasa",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 166,
+    "ac": 16,
+    "srd": true,
+    "cr": "13",
+    "movement": "40 ft. walking and 30 ft. flying (hover)",
+    "role": null,
+    "tags": [
+        "fiend",
+        "illusionist",
+        "manipulator",
+        "charming"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "fiendish",
+        "powerful"
+    ],
+    "description": "The Rakshasa has the body of a human and the head of a tiger, often exhibiting reversed hands. It possesses a strong presence and an agile figure.",
+    "memorable": "Rakshasas are notable for their illusion and manipulation abilities, making them formidable foes who prefer cunning over brute strength.",
+    "goals": "Rakshasas often aim to control and manipulate others for personal gain, using their magical and deceptive skills.",
+    "relations": "Rakshasas may associate with other fiends or serve darker powers, often deceiving mortals to achieve their aims.",
+    "environment": "Rakshasas commonly infiltrate mortal societies, often posing as nobles or wealthy merchants.",
+    "strengths": "They have innate spellcasting abilities, access to powerful spells, and a significant resilience against nonmagical attacks.",
+    "weaknesses": "Rakshasas are particularly vulnerable to piercing damage from magic weapons wielded by good creatures.",
+    "attacks": "They can perform multiattacks using claws or a rapier, inflicting slashing and piercing damage, and may curse targets.",
+    "most_powerful_ability": "Their ability to charm and stun targets through Sweet Promises can significantly hinder opponents in combat.",
+    "equipment": null,
+    "senses": "The Rakshasa has truesight up to 60 feet, allowing it to see through illusions and invisibility.",
+    "skills": "It is highly skilled in deception and insight, making it adept at manipulating social interactions.",
+    "additional_information": [
+        "Capable of shapeshifting into Medium or Small humanoids.",
+        "Has Limited Magic Immunity against spells of 6th level or lower.",
+        "Can cast a variety of spells at will, enhancing its deceptive capabilities.",
+        "Possesses the ability to fly, enabling tactical advantages in movement.",
+        "Uses charming gaze for additional control over opponents."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcaster; can cast spells like detect thoughts, charm person, and major image.",
+    "test_queries": [
+        "fiend with a tiger head and illusions",
+        "cunning spellcaster that manipulates mortals",
+        "deceptive fiend that can fly",
+        "shapeshifting monster with charming abilities",
+        "powerful illusionist posing as a merchant"
+    ]
+}

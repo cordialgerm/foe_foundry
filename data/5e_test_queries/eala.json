@@ -1,0 +1,25 @@
+{
+    "name": "Eala",
+    "queries": [
+        {
+            "query": "small flying monster with fiery breath",
+            "variant": "tiny flying creature that breathes fire"
+        },
+        {
+            "query": "agile monstrosity with a powerful fire attack",
+            "variant": "quick monstrosity that has a strong fire ability"
+        },
+        {
+            "query": "creature that can incapacitate enemies with song",
+            "variant": "monster that can sing and stun foes"
+        },
+        {
+            "query": "monstrosity with high Dexterity and fire immunity",
+            "variant": "creature with exceptional agility and immune to fire"
+        },
+        {
+            "query": "fiery cone attack from a small creature",
+            "variant": "small monster with a cone-shaped fire attack"
+        }
+    ]
+}

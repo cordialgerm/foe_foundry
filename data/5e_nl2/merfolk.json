@@ -1,0 +1,50 @@
+{
+    "name": "Merfolk",
+    "creature_type": "Humanoid",
+    "creature_subtype": "merfolk",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "10 feet on land, 40 feet swimming",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "humanoid",
+        "swimmer"
+    ],
+    "adjectives": [
+        "aquatic",
+        "adaptable",
+        "graceful",
+        "fierce"
+    ],
+    "description": "Merfolk possess the upper body of a human and the lower body of a fish, allowing for exceptional swimming abilities. They often have scales and coral armor.",
+    "memorable": "They can breathe both air and water, allowing them to interact with both aquatic and terrestrial environments seamlessly.",
+    "goals": "Typically protective of their underwater territories and communities, they will fight to defend their homes from intruders.",
+    "relations": "Often found in communities with other aquatic creatures and able to communicate with adventurers and other beings through shared languages.",
+    "environment": "Commonly found in oceans, lakes, and deep rivers, especially in underwater cities.",
+    "strengths": "Highly skilled swimmers with the ability to breathe underwater and air; agile in aquatic settings.",
+    "weaknesses": "Relatively fragile with low hit points and average physical abilities, making them less effective in direct combat.",
+    "attacks": "Can use a trident in melee or ranged attacks, providing versatility in combat. They can also perform a damaging Coral Scrape reaction.",
+    "most_powerful_ability": "Amphibious trait allows them to thrive in both aquatic and terrestrial environments without restrictions.",
+    "equipment": null,
+    "senses": "They have darkvision up to 60 feet and a decent perception skill, allowing them to notice hidden threats.",
+    "skills": "Possess proficiency in perception with a +2 modifier, making them attentive to their surroundings.",
+    "additional_information": [
+        "Capable of using both ranged and melee attacks with their trident.",
+        "Have a bonus action called Nimble Rush for enhanced mobility.",
+        "Their rough coral armor can inflict disadvantage on attackers in close quarters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic creature with human upper body",
+        "fish-like humanoid living underwater",
+        "Merfolk abilities and features in combat",
+        "creature that swims fast and defends territory",
+        "humanoid that breathes water and air"
+    ]
+}

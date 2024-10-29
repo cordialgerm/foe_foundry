@@ -1,0 +1,25 @@
+{
+    "name": "Imperial Ghoul",
+    "queries": [
+        {
+            "query": "undead monster with burrowing ability and poison immunity",
+            "variant": "monster undead that can burrow and is immune to poison"
+        },
+        {
+            "query": "creature that paralyzes victims and has a strong melee bite attack",
+            "variant": "creature with a strong bite attack that can paralyze its victims"
+        },
+        {
+            "query": "Medium undead that requires no air or sleep and has darkvision",
+            "variant": "undead creature that needs no air or sleep and can see in the dark"
+        },
+        {
+            "query": "lawful evil ghoul with high strength and claw attack",
+            "variant": "ghoul classified as lawful evil that has high strength and claw attack"
+        },
+        {
+            "query": "Imperial Ghoul combat tactics with multiattack abilities",
+            "variant": "combat tactics of the Imperial Ghoul featuring multiattack capabilities"
+        }
+    ]
+}

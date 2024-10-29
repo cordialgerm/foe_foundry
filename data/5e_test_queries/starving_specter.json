@@ -1,0 +1,25 @@
+{
+    "name": "Starving Specter",
+    "queries": [
+        {
+            "query": "undead creature that can manipulate fears and deals psychic damage",
+            "variant": "undead monster that manipulates fears and inflicts psychic harm"
+        },
+        {
+            "query": "ghostly figure that moves through objects and frightens enemies",
+            "variant": "spectral being that passes through things and terrifies foes"
+        },
+        {
+            "query": "medium chaotic evil undead with abilities to damage and confuse",
+            "variant": "medium evil undead creature with powers to inflict damage and cause confusion"
+        },
+        {
+            "query": "ethereal monster with life draining abilities and necrotic attacks",
+            "variant": "spirit with ghostly powers and necrotic strike abilities"
+        },
+        {
+            "query": "dangerous undead with auras that debilitate nearby creatures",
+            "variant": "menacing undead with an aura that weakens nearby foes"
+        }
+    ]
+}

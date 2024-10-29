@@ -1,0 +1,25 @@
+{
+    "name": "Giant Vulture",
+    "queries": [
+        {
+            "query": "large bird with hooked beak and sharp talons found in deserts",
+            "variant": "big bird with sharp talons and hooked beak found in desert areas"
+        },
+        {
+            "query": "scavenging giant bird that attacks weakened prey in the savannah",
+            "variant": "scavenger giant vulture that hunts wounded creatures in the savanna"
+        },
+        {
+            "query": "massive bird with a wingspan over 10 feet known for keen senses",
+            "variant": "huge bird with a wingspan more than 10 feet recognized for its sharp senses"
+        },
+        {
+            "query": "aggressive vulture that hunts in packs and relies on smell",
+            "variant": "hostile vulture that hunts in groups and uses its sense of smell"
+        },
+        {
+            "query": "intelligent giant vulture with a multiattack action and combat strategy",
+            "variant": "smart giant vulture featuring a multiattack and tactical combat options"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Gelatinous Wall",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 6,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., swim 15 ft.",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "sentient obstacle"
+    ],
+    "adjectives": [
+        "massive",
+        "gelatinous",
+        "transparent",
+        "dangerous"
+    ],
+    "description": "A massive, gelatinous creature that can engulf and trap foes, making it a formidable obstacle in combat. It remains motionless and transparent at times, making it hard to detect.",
+    "memorable": "Its ability to engulf and restrain creatures adds a complex tactical element to encounters.",
+    "goals": "Serve as a combat obstacle, ambushing unsuspecting creatures, and causing chaos in close quarters.",
+    "relations": "Related to other ooze creatures, may be encountered alongside smaller oozes or gelatinous types.",
+    "environment": "Typically found in dark, enclosed spaces where it can take advantage of its transparency.",
+    "strengths": "Robust hit points and the ability to attack multiple creatures by engulfing them.",
+    "weaknesses": "Low mobility and reduced effectiveness in bright light due to sunlight sensitivity.",
+    "attacks": "Pseudopod attack delivering acid and bludgeoning damage; Engulf action that can trap and damage multiple foes.",
+    "most_powerful_ability": "Engulf, which allows it to trap creatures, dealing damage and restraining them.",
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures in proximity despite being blind beyond that radius.",
+    "skills": "Limited skills due to low Intelligence, with a passive perception that is quite poor.",
+    "additional_information": [
+        "Does not require air or sleep, maintaining constant activity.",
+        "Can remain hidden while still, relying on its transparent nature for ambush tactics.",
+        "Suffers severe penalties in sunlight, necessitating strategic planning for encounters.",
+        "Can engulf multiple creatures within its large space, enhancing its threat level.",
+        "Requires DC 13 Strength checks for engulfed creatures to escape, intensifying combat dynamics."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive gelatinous monster that engulfs",
+        "transparent ooze that traps opponents",
+        "dangerous wall-like ooze in darkness",
+        "large acid creature that can't breathe",
+        "threatening gelatinous wall in combat"
+    ]
+}

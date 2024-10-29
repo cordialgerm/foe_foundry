@@ -1,0 +1,47 @@
+{
+    "name": "Gnarljak",
+    "creature_type": "Construct",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 88,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "construct",
+        "ambush",
+        "trap"
+    ],
+    "adjectives": [
+        "ferocious",
+        "deceptive",
+        "durable"
+    ],
+    "description": "The Gnarljak resembles a bear trap when motionless, its small construct body cleverly designed for stealth and ambush.",
+    "memorable": "It can attach to its prey with a gnawing bite, dealing continuous damage while holding the target in place.",
+    "goals": "To ambush unsuspecting creatures and incapacitate them with its attacks.",
+    "relations": "None mentioned, operates independently as an unaligned construct.",
+    "environment": "Typically found in areas conducive to ambush, often hidden in foliage or covered terrain.",
+    "strengths": "Immunities to poison and psychic damage, and resistance to nonmagical physical attacks enhance its survivability.",
+    "weaknesses": "Low Intelligence and Charisma scores, limiting its tactical versatility and social interaction.",
+    "attacks": "Multiattack with one gnawing bite that can attach to a target and two additional attacks with its chain tail.",
+    "most_powerful_ability": "False Appearance allows it to blend into its surroundings and surprise foes effectively.",
+    "senses": "It has blindsight with a range of 60 feet, enabling it to detect creatures within that distance.",
+    "skills": "Proficient in Stealth, allowing it to ambush effectively, and has a decent Perception check.",
+    "additional_information": [
+        "Construct Nature means it does not need air, food, drink, or sleep.",
+        "Can use Secure Tail to gain stability and restrain prey.",
+        "Condition immunities make it a consistent threat in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush creature disguised as a trap",
+        "small stealthy construct able to restrain",
+        "Gnarljak has impressive defenses and attack",
+        "creature with continuous damage attachment",
+        "trap-like monster with chain tail attacks"
+    ]
+}

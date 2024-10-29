@@ -1,0 +1,50 @@
+{
+    "name": "Bloodsapper",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking speed of 40 feet and climbing speed of 20 feet",
+    "role": "Ambusher",
+    "tags": [
+        "blood",
+        "tracking",
+        "acid"
+    ],
+    "adjectives": [
+        "chaotic",
+        "vicious",
+        "cunning"
+    ],
+    "description": "The Bloodsapper is a medium-sized aberration characterized by its chaotic evil nature. It possesses sharp claws and a long, lashing tongue used for draining life from its prey.",
+    "memorable": "Its unique ability to detect blood from 240 feet away enables it to track weakened foes, making it a relentless hunter.",
+    "goals": "The Bloodsapper seeks to drain the life from weakened creatures, exploiting injuries to sustain itself.",
+    "relations": "Often encountered in the company of other predators or as a servant of darker forces.",
+    "environment": "Typically found in dark, secluded areas where it can ambush wounded creatures.",
+    "strengths": "High mobility with good hit points, and excellent tracking abilities due to Blood Scent.",
+    "weaknesses": "Low intelligence and charisma limit its strategic capabilities and magical interactions.",
+    "attacks": "The Bloodsapper uses melee claw attacks and a Draining Tongue that latches onto targets to drain health.",
+    "most_powerful_ability": "Bloody Breath creates a damaging and poisoning effect, making it a dangerous area attack.",
+    "equipment": null,
+    "senses": "The Bloodsapper can smell blood within 240 feet, significantly enhancing its tracking capabilities.",
+    "skills": "It has good stealth and perception skills, aiding in ambush tactics against injured prey.",
+    "additional_information": [
+        "Has a powerful Draining Tongue that can attach to targets and drain life over time.",
+        "Regrows its severed tongue after a long rest or upon reducing a creature to 0 hp.",
+        "Can utilize offensive abilities and mobility to maintain pressure in combat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "blood-draining monster",
+        "chaotic evil aberration",
+        "creature that senses blood",
+        "ambushing predator",
+        "life-draining tongue attack"
+    ]
+}

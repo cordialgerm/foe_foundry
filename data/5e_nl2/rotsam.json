@@ -1,0 +1,51 @@
+{
+    "name": "Rotsam",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 30 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "disease",
+        "necrotic"
+    ],
+    "adjectives": [
+        "tiny",
+        "decaying",
+        "elusive"
+    ],
+    "description": "Rotsam is a small, gelatinous ooze that embodies disease and decay, and is capable of moving through narrow spaces effortlessly.",
+    "memorable": "It can inflict a debilitating disease that reduces hit point maximum over time.",
+    "goals": "Typically seeks to infect creatures and cause suffering.",
+    "relations": "Often encountered near areas of decay or disease.",
+    "environment": "Found in damp, decaying environments.",
+    "strengths": "Immunity to necrotic damage and numerous conditions makes it difficult to incapacitate.",
+    "weaknesses": "Low armor class and poor physical strength and charisma.",
+    "attacks": "Diseased Bite attack inflicts piercing and necrotic damage, potentially attaching to and infecting its target.",
+    "most_powerful_ability": "Bog Rot, a disease that progressively weakens infected creatures.",
+    "senses": "Blindsight up to 60 feet allows it to detect creatures nearby.",
+    "skills": null,
+    "additional_information": [
+        "Can squeeze through spaces as narrow as 1 inch.",
+        "Capable of climbing difficult surfaces including ceilings.",
+        "Creates a rot-like rash on infected creatures that causes a smell attracting predators.",
+        "Attaches to targets to continuously inflict necrotic damage.",
+        "Target must succeed on a saving throw to avoid contracting disease."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "decaying tiny ooze creature",
+        "disease inflicting ooze with necrotic damage",
+        "elusive monster that spreads decay",
+        "tiny ooze with deadly biting disease",
+        "creature that climbs ceilings and causes rot"
+    ]
+}

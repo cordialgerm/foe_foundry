@@ -1,0 +1,52 @@
+{
+    "name": "Suncatcher Scarab",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 145,
+    "ac": 19,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 30 ft., burrow 40 ft., fly 15 ft.",
+    "role": null,
+    "tags": [
+        "scarab",
+        "gargantuan",
+        "beast"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "powerful"
+    ],
+    "description": "The Suncatcher Scarab is a gargantuan beetle with armored plating, possessing an imposing presence and the ability to control its environment.",
+    "memorable": "Its ability to create zones of silence and double damage to structures makes it a unique threat on the battlefield.",
+    "goals": "To attack fortifications and disrupt enemy coordination, maximizing its overwhelming presence.",
+    "relations": "Potentially interacts with other large beasts or constructs it might encounter in its territory.",
+    "environment": "Typically found in open terrains or ruined structures where it can utilize its siege abilities.",
+    "strengths": "Highly resilient with damage resistance to non-magical physical attacks and various condition immunities.",
+    "weaknesses": "Extremely low intelligence limits its strategic capabilities in combat.",
+    "attacks": "Its bite attacks deal significant piercing and poison damage, and it can unleash devastating area effects with its burrowing burst.",
+    "most_powerful_ability": "The Discordant Drone prevents enemies from communicating and casting spells, creating disarray in enemy ranks.",
+    "equipment": null,
+    "senses": "Possesses blindsight with a range of 90 feet, allowing it to detect hidden threats nearby.",
+    "skills": "Has a perception skill with a modifier of +1, providing average awareness of its surroundings.",
+    "additional_information": [
+        "Can traverse difficult terrain without hindrance.",
+        "Can knock enemies prone with area effects.",
+        "Deals double damage to structures due to its siege ability.",
+        "Is a relentless force that cannot have its speed reduced.",
+        "Can unleash either thunder or radiant damage based on its wing position."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan scarab with silence ability",
+        "beast that deals double damage to objects",
+        "powerful insect capable of area control",
+        "monster with blindsight and poison attacks",
+        "scarab that can burrow and fly"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Horned Devil",
+    "queries": [
+        {
+            "query": "large red fiend with horns and wings that specializes in melee attacks",
+            "variant": "large red devil with wings and horns that is good at melee attacks"
+        },
+        {
+            "query": "devilish creature with fire immunity and lethal tail strikes",
+            "variant": "devil creature immune to fire and with deadly tail attacks"
+        },
+        {
+            "query": "Horned Devil's magical defenses and high Strength attacks",
+            "variant": "magical resistances of Horned Devil and its powerful Strength attacks"
+        },
+        {
+            "query": "fiendish enforcer from the Nine Hells with deadly flame abilities",
+            "variant": "enforcer from the Nine Hells who is a fiend with dangerous fire powers"
+        },
+        {
+            "query": "fiend with darkvision and telepathy that loves combat",
+            "variant": "devilish creature who has darkvision and can speak telepathically and enjoys battle"
+        }
+    ]
+}

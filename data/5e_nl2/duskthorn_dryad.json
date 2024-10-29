@@ -1,0 +1,51 @@
+{
+    "name": "Duskthorn Dryad",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "dryad",
+        "nature"
+    ],
+    "adjectives": [
+        "resilient",
+        "strategic",
+        "manipulative",
+        "charming"
+    ],
+    "description": "The Duskthorn Dryad embodies the chaotic neutrality of the fey world with exceptional beauty and charisma. It has a lithesome form and is often associated with the woodland, adorned with natural elements.",
+    "memorable": "Its ability to summon woodland allies and manipulate nature through magic enhances both combat and social scenarios.",
+    "goals": "To protect its forest home and manipulate those who intrude, using its nature-based abilities.",
+    "relations": "May be allied with woodland creatures, other fey beings, or plants.",
+    "environment": "Typically found in wooded areas and rural settings, especially near dead trees.",
+    "strengths": "High Charisma enhances social interactions and spellcasting, combined with Magic Resistance against spells.",
+    "weaknesses": "Average physical strength and durability, relying more on evasion and charm.",
+    "attacks": "Utilizes Thorned Slam for melee piercing damage and ranged Thorn attacks to strike enemies from a distance.",
+    "most_powerful_ability": "The ability to summon creatures with Children of the Forest provides tactical advantages in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light within 60 feet as if it were bright light.",
+    "skills": "Proficient in Deception and Persuasion, making it a master manipulator in social situations.",
+    "additional_information": [
+        "Can teleport between dead trees with Tree Stride.",
+        "Exceptional Charisma of 24 enhances social and magical capabilities.",
+        "Can cast spells like Charm Person and Invisibility to influence combat and negotiations.",
+        "Communicates with beasts and plants, reinforcing its connection to nature.",
+        "Magic Resistance gives it an advantage on saving throws against spells."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Druidcraft at will and has access to various spells like Charm Person and Invisibility up to three times a day.",
+    "test_queries": [
+        "forest fey with charm spells",
+        "dryad that summons woodland allies",
+        "chaotic neutral character with nature magic",
+        "medium fey creature protecting the forest",
+        "manipulative dryad who speaks to plants"
+    ]
+}

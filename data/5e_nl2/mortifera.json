@@ -1,0 +1,52 @@
+{
+    "name": "Mortifera",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walk and swim",
+    "role": "Bruiser",
+    "tags": [
+        "amphibious",
+        "poison",
+        "grappler"
+    ],
+    "adjectives": [
+        "chaotic",
+        "dangerous",
+        "hidden"
+    ],
+    "description": "Mortifera is a large aberration that blends seamlessly into swamp environments, resembling a bed of lotus flowers. It has a central maw and multiple tendrils.",
+    "memorable": "Its ability to blend into its surroundings and its poisonous attacks make it a formidable opponent.",
+    "goals": "To ambush prey in watery environments and use its poisonous attacks to incapacitate foes.",
+    "relations": "Could be related to other aquatic or plant-based aberrations; might be encountered with swamp-dwelling creatures.",
+    "environment": "Lurking underwater or in flower-laden swamps.",
+    "strengths": "High hit points and immunity to several conditions; advantage on saving throws against spells.",
+    "weaknesses": "Very low Intelligence and Charisma, making it poor in social interactions or clever tactics.",
+    "attacks": "Engages with Fanged Tentacles that grapple and poison, alongside Slam attacks for physical damage.",
+    "most_powerful_ability": "Poison Spray, dealing significant area poison damage to multiple targets.",
+    "equipment": null,
+    "senses": "Has blindsight for 60 feet, allowing it to detect creatures it cannot see.",
+    "skills": "Has a low passive Perception score of 13.",
+    "additional_information": [
+        "False Appearance allows it to remain unnoticed until it attacks.",
+        "Amphibious nature enables it to thrive both in water and on land.",
+        "Magic Resistance provides a defensive advantage against spells.",
+        "Grappling with its tendrils creates a strategic advantage in combat.",
+        "Can inflict both physical and poison damage simultaneously."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large hidden swamp monster",
+        "poisonous aberration with tentacles",
+        "creature that blends into lotus flowers",
+        "amphibious monster with grappling abilities",
+        "dangerous underwater predator"
+    ]
+}

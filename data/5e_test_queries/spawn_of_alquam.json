@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Alquam",
+    "queries": [
+        {
+            "query": "large fiend that uses ambush tactics and has high agility",
+            "variant": "big fiend that employs ambush strategies and possesses great agility"
+        },
+        {
+            "query": "chaotic evil creature that can speak with birds and excels in stealth",
+            "variant": "chaotic evil being that can communicate with birds and is very stealthy"
+        },
+        {
+            "query": "fiend with high Constitution and a ranged necrotic attack",
+            "variant": "fiend with strong Constitution and a ranged attack that deals necrotic damage"
+        },
+        {
+            "query": "creature that relies on surprise and has a significant amount of hit points",
+            "variant": "monster that depends on surprise and boasts a large number of hit points"
+        },
+        {
+            "query": "Spawn of Alquam features and abilities in combat",
+            "variant": "features and skills of the Spawn of Alquam during battle"
+        }
+    ]
+}

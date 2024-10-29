@@ -1,6 +1,8 @@
 <MonsterName/>Fleshdreg</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>115</HP>
 <summary>The Fleshdreg is a huge plant creature classified as neutral good, known for its resilience and regenerative abilities. With an impressive Armor Class of 15, this monster can withstand a fair amount of damage. It has a hefty pool of 115 hit points, providing a solid buffer in combat. The Fleshdreg excels in constitution, having a constitutional modifier of +5, which makes its saving throw against constitution checks exceptionally strong at +8. However, its dexterity is low, with a modifier of -2, making its reflexes and agility very bad. This creature plays a role as a defender and damage absorber in battles, utilizing its strong melee attacks and unique abilities to hinder and damage enemies while sustaining itself over prolonged encounters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Disgorge Innards action is particularly powerful, needing a recharge of 6 ro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fleshdreg
 
 *Huge* *Plant* *neutral good*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Disgorge Innards (Recharge 6):** The fleshdreg expels acidic sludge in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one. A creature that fails the saving throw takes 9 (2d8) acid damage the end of its next turn, unless it or a creature within 5 feet of it takes an action to remove the sludge.
 
 
+</statblock>
 
 

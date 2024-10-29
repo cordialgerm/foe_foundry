@@ -1,0 +1,53 @@
+{
+    "name": "Young Gold Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 178,
+    "ac": 18,
+    "srd": true,
+    "cr": "10",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "metallic",
+        "gold",
+        "magical"
+    ],
+    "adjectives": [
+        "majestic",
+        "noble",
+        "powerful",
+        "kind"
+    ],
+    "description": "A majestic creature with radiant golden scales that shimmer, the Young Gold Dragon possesses a strong and noble demeanor.",
+    "memorable": "Known for its devastating fire breath and charming presence, the dragon is a protector against evil.",
+    "goals": "To defend the innocent and serve as guardians against evil.",
+    "relations": "Often interacts with other dragons, both metallic and chromatic, and allies with good-aligned creatures.",
+    "environment": "Typically resides near sacred sites or secluded mountains.",
+    "strengths": "High Charisma and Constitution, granting it powerful spells and resilience in combat.",
+    "weaknesses": "Can be threatened by more agile or cunning opponents that exploit its potential disadvantage in certain situations.",
+    "attacks": "Multiattack with a bite and claws; devastating cone-shaped fire breath and weakening breath.",
+    "most_powerful_ability": "Breath Weapons unleash an area attack of fire or debilitating gas.",
+    "senses": "Has blindsight out to 30 feet and a keen perception modifier of +22.",
+    "skills": "Possesses notable proficiency in persuasion, making it a compelling figure in social interactions.",
+    "additional_information": [
+        "Can breathe both air and water, making it versatile.",
+        "Grants allies bonuses to saving throws and immunity to charms.",
+        "Capable of casting spells like Bless and Healing Word without material components.",
+        "Changes shape to a beast or humanoid, retaining hit points and abilities.",
+        "Despises cruelty and will act against injustice."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting using Charisma, able to cast Bless and Healing Word.",
+    "test_queries": [
+        "noble dragon with golden scales",
+        "fire-breathing dragon that protects the innocent",
+        "dragon that can swim and fly",
+        "magical creature that can charm enemies",
+        "powerful dragon with a devastating breath attack"
+    ]
+}

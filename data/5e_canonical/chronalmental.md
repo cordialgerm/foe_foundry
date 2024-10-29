@@ -1,6 +1,8 @@
 <MonsterName/>Chronalmental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>8</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Chronalmental is a formidable large elemental with a neutral alignment, serving as an embodiment of time within Dungeons & Dragons. With a substantial armor class of 17, it boasts a significant pool of hit points totaling 142, giving it considerable staying power in combat. The creature is particularly proficient in Dexterity, with a +5 modifier, making it agile and capable of avoiding attacks. Its challenge rating of 8 signifies that it is a potent opponent, apt to engage party members vigorously. Notably, the Chronalmental possesses a variety of damage immunities, including poison and nonmagical attacks, along with numerous condition immunities, further enhancing its resilience. However, it has relatively low Intelligence and Charisma scores, which might limit its ability to interact with others effectively. Overall, the Chronalmental’s strengths lie in its exceptional combat capabilities and its unique mechanics relating to the manipulation of time, which can alter the flow of battle significantly.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Chronalmental presents players with a unique combination of powerfu
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chronalmental
 
 *Large* *Elemental* *Neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Step Between Seconds (Recharge 4–6):** When a creature the chronalmental can see moves within 5 feet of it, the chronalmental can teleport, along with any equipment it is wearing or carrying, to an unoccupied space within 60 feet that it occupied within the past minute.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Deep Troll",
+    "queries": [
+        {
+            "query": "large green troll that regenerates health and can create oozing duplicates",
+            "variant": "large troll that is green, has health regeneration, and creates oozing copies"
+        },
+        {
+            "query": "creature that burrows underground and has high physical strength",
+            "variant": "underground burrowing creature with very high strength"
+        },
+        {
+            "query": "chaotic evil giant with melee attacks and resilience in battle",
+            "variant": "giant with chaotic evil nature, strong melee attacks, and great resilience in fights"
+        },
+        {
+            "query": "monster known for oozing flesh attacks and swift regeneration abilities",
+            "variant": "monster famous for its oozing flesh and quick regeneration powers"
+        },
+        {
+            "query": "deep subterranean monster with poor intelligence and strong melee skills",
+            "variant": "monster from deep underground that has low intelligence but powerful melee skills"
+        }
+    ]
+}

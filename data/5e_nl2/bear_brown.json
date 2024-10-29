@@ -1,0 +1,50 @@
+{
+    "name": "Brown Bear",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 44,
+    "ac": 11,
+    "srd": true,
+    "cr": "1",
+    "movement": "40 ft. walking, 30 ft. climbing",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "animal",
+        "predator"
+    ],
+    "adjectives": [
+        "large",
+        "strong",
+        "formidable"
+    ],
+    "description": "The Brown Bear is a powerful, large beast with a muscular build and thick fur, relying on its natural armor for defense.",
+    "memorable": "The Brown Bear's ability to grapple opponents with its powerful claws makes it a significant threat in close combat.",
+    "goals": "The Brown Bear typically seeks food, marking its territory, and protecting its young.",
+    "relations": "Brown Bears often inhabit areas where they may encounter other creatures such as deer or fish and can be predators in their ecosystem.",
+    "environment": "Brown Bears are commonly found in forested areas and mountainous regions.",
+    "strengths": "Notably strong with a high Strength score, capable of dealing substantial damage with bite and claw attacks.",
+    "weaknesses": "Poor Intelligence and Charisma, leading to a lack of cunning and social influence.",
+    "attacks": "The Brown Bear can make a Multiattack, using its Bite and Claws to inflict substantial piercing and slashing damage.",
+    "most_powerful_ability": "Heightened Smell allows the bear to detect hidden foes effectively, with a high Perception score of 18 when using smell.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Brown Bear has a passive Perception of 13 and a Stealth score of 10.",
+    "additional_information": [
+        "The bear can grapple with targets using its powerful claws after a successful Multiattack.",
+        "It relies on its natural armor for defense, which gives it a relatively low AC for its size.",
+        "The creature is a capable climber, useful for pursuing prey in varied terrains.",
+        "Its keen sense of smell enhances its hunting capabilities.",
+        "The bear lacks intelligence, making it straightforward in its behavior."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large ferocious bear",
+        "predatory brown bear",
+        "powerful animal with claws",
+        "bear with heightened sense of smell",
+        "grappling beast in the wild"
+    ]
+}

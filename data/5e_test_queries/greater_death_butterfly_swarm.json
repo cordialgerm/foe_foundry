@@ -1,0 +1,25 @@
+{
+    "name": "Greater Death Butterfly Swarm",
+    "queries": [
+        {
+            "query": "huge swarming butterfly monster that uses poison attacks",
+            "variant": "swarming butterfly monster that is huge and attacks with poison"
+        },
+        {
+            "query": "beautiful yet deadly creatures that inhabit battlefields",
+            "variant": "creatures that are beautiful yet deadly and found on battlefields"
+        },
+        {
+            "query": "monster with blinding wings and potent poison abilities",
+            "variant": "creature that has potent poison abilities and wings that blind"
+        },
+        {
+            "query": "swarm of butterflies that can affect undead with poison",
+            "variant": "butterfly swarm that can poison undead"
+        },
+        {
+            "query": "dangerous flying swarm resistant to many damage types",
+            "variant": "flying swarm that is dangerous and has resistances to various damage types"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Sand Worm",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 247,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 50 ft., burrow 20 ft.",
+    "role": null,
+    "tags": [
+        "burrower",
+        "gargantuan",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying"
+    ],
+    "description": "The Sand Worm is a gargantuan creature known for its formidable size, formidable attacks, and the ability to burrow through earth and rock, creating wide tunnels.",
+    "memorable": "This creature can incapacitate foes by swallowing them and deals significant damage with its attacks.",
+    "goals": "Hunt and ambush prey in its sandy environment.",
+    "relations": "May dwell alongside other monstrous creatures in desert or subterranean environments.",
+    "environment": "Typically found in deserts or rocky underground terrains.",
+    "strengths": "Impressive physical strength with a high attack modifier and the ability to incapacitate opponents.",
+    "weaknesses": "Low Dexterity and intelligence limit its agility and cognitive abilities.",
+    "attacks": "Can make a multiattack with its bite and tail stinger, dealing substantial piercing damage with each.",
+    "most_powerful_ability": "Sand Cascade, which can disrupt enemy formations by knocking them prone.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and tremorsense at 60 feet, allowing it to detect vibrations and movements effectively.",
+    "skills": "Has proficiency in Stealth, making it somewhat effective in ambush situations.",
+    "additional_information": [
+        "Can create a tunnel with a diameter of 10 feet.",
+        "Swallowing a creature blinds and restrains it.",
+        "Can retaliate against opportunity attacks with its bite or tail stinger."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan monster that burrows",
+        "creature with blindsight and tremorsense",
+        "desert predator with swallowing ability",
+        "massive terrifying sand creature",
+        "monstrosity that causes sand cascades"
+    ]
+}

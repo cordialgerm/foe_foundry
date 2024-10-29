@@ -1,6 +1,8 @@
 <MonsterName/>Young Black Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>7</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>127</HP>
 <summary>A Young Black Dragon is a fierce and cunning predator, already showing the cruelty and greed that will grow as it ages. Its glossy black scales glisten like wet obsidian, and its acidic breath is potent enough to melt armor and flesh. Young Black Dragons prefer to dwell in swamps or other decaying environments, where they use the murky waters to their advantage, ambushing prey with deadly precision. They are highly territorial and will go to great lengths to protect their hoard and hunting grounds. Despite their youth, they are formidable opponents, feared for their ruthlessness.</summary>
 
 <summary>The Young Black Dragon is a formidable foe in combat, characterized by its size and abilities that make it both fearsome and versatile. It boasts an impressive Armor Class of 18, allowing it to effectively defend against attacks, and a substantial pool of hit points totaling 144, which makes it resilient in prolonged battles. This dragon can navigate multiple terrains with its ability to walk, fly, and swim, showcasing a speed that makes it agile and hard to pin down. With a Challenge Rating of 9, it poses a significant threat to adventurers, capable of delivering high damage while harnessing innate magical powers. However, despite its strengths, it is essential for players to devise strategies to overcome its abilities, particularly with regard to its high damage potential and environmental advantages.</summary>
@@ -33,6 +35,7 @@ In terms of actions, the Young Black Dragon can use Multiattack to unleash one B
 
 Source: 5e_srd
 
+<statblock>
 # Young Black Dragon (Chromatic)
 
 *Large dragon, chaotic evil*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Acid Breath (Recharge 5-6)***. The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.
+***Acid Breath (Recharge 5-6)***. The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Black Dragon
 
 *Large* *Dragon*
@@ -112,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5-6):** The dragon exhales sizzling acid in a 40-foot-long  5-foot-wide line. Each creature in that area makes a DC 15 Dexterity saving throw  taking 45 (10d8) acid damage on a failed save or half damage on a success. A creature that fails the save is blinded until the end of its next turn.
 
 
+</statblock>
 
 
 
@@ -120,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Black Dragon
 
 *Large dragon*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Acid Breath (Recharge 5–6).** The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 DEX save, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Mummy, Peat</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Peat Mummy is a formidable undead creature that embodies the unsettling and decay-ridden characteristics of a bog. As a medium undead of neutral evil alignment, it primarily serves as an antagonist in combat scenarios. This creature possesses significant strengths, notably high physical strength and resilience, making it a dangerous foe in close encounters. With a Challenge Rating of 5, it is capable of taking and dealing substantial damage, making encounters with it challenging for low to mid-level adventurers. However, its lower Dexterity and Intelligence scores indicate its potential weaknesses, making it less capable in ranged combat or intellectual challenges. One particularly notable aspect of the Peat Mummy is its ability to inflict a debilitating curse called "bog melt," which can severely hinder opponents over time.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Peat Mummy can perform a multiattack, using two "Rabid Bite" atta
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mummy, Peat
 
 *Medium* *Undead* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Rabid Bite:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 11 (2d6+4) piercing damage + 7 (2d6) necrotic.
 
 
+</statblock>
 
 

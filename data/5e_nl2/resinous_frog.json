@@ -1,0 +1,48 @@
+{
+    "name": "Resinous Frog",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 19,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "frog",
+        "grappler",
+        "ambusher"
+    ],
+    "adjectives": [
+        "adhesive",
+        "versatile",
+        "cunning"
+    ],
+    "description": "The Resinous Frog is a small creature with a unique adhesive skin, allowing it to stick to anything that touches it. It has a resilient constitution and a prominent tongue which it can detach.",
+    "memorable": "Its ability to adhere to and drag along opponents in combat can create significant tactical challenges.",
+    "goals": "To ambush prey and immobilize creatures for easier capture.",
+    "relations": "May be encountered in swamps or dense vegetation with other small beasts.",
+    "environment": "Found in wetlands, swamps, or areas with abundant moisture.",
+    "strengths": "Strong constitution and the ability to immobilize creatures using its adhesive skin.",
+    "weaknesses": "Lower dexterity and intelligence make it less agile and cunning.",
+    "attacks": "Utilizes a sharp bite and a long, grappling tongue for combat.",
+    "most_powerful_ability": "Adhesive Skin allows it to successfully grapple and maneuver opponents.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Detaches tongue to avoid opportunity attacks.",
+        "Regenerates tongue after a short or long rest.",
+        "Gains advantage on attacks against grappled creatures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small frog that grapples with its tongue",
+        "frog with adhesive skin and detachable tongue",
+        "versatile amphibian that sticks to attackers",
+        "monster that immobilizes prey in swamps",
+        "cunning grappling frog in wetlands"
+    ]
+}

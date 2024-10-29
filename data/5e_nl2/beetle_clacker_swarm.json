@@ -1,0 +1,50 @@
+{
+    "name": "Beetle, Clacker Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "20 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beetle",
+        "thunder damage"
+    ],
+    "adjectives": [
+        "aggressive",
+        "unstoppable",
+        "noisy"
+    ],
+    "description": "The Clacker Swarm is composed of many aggressive beetles that make a constant clacking noise, representing a formidable threat to those who are surrounded, dealing notable thunder damage with their constant clacking.",
+    "memorable": "Its unique ability to swarm and inflict thunder damage makes it a challenging encounter, especially in tight spaces.",
+    "goals": "Typically, the swarm acts aggressively to defend its territory or to overwhelm creatures it perceives as threats.",
+    "relations": "May be found in ecosystems rich in various insects, often cohabiting with other pest creatures.",
+    "environment": "Commonly found in woodland areas, gardens, or fields where beetles gather.",
+    "strengths": "Immunity to several debilitating conditions makes it difficult to control in combat.",
+    "weaknesses": "Extremely low Strength and Intelligence scores limit its physical capabilities and tactical awareness.",
+    "attacks": "The swarm can bite, dealing significant piercing damage, enhancing its threat level when it is at full strength.",
+    "most_powerful_ability": "Constant Clacking, dealing thunder damage to creatures that begin their turn in its space.",
+    "senses": "Possesses blindsight for up to 30 feet, allowing it to navigate and detect threats without relying on sight.",
+    "skills": "Has an average perception skill, able to detect its surroundings despite a low passive perception score.",
+    "additional_information": [
+        "Swarm can move through openings suitable for Tiny creatures.",
+        "The swarm can't regain hit points or gain temporary hit points.",
+        "Struggles in prolonged encounters due to its inability to recover health.",
+        "Small size allows it to swarm and occupy the same space as other creatures."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive beetle swarm",
+        "thunder damage beetle",
+        "insect swarm encounter",
+        "beetle with constant clacking",
+        "swarm of beetles"
+    ]
+}

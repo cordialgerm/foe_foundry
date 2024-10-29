@@ -1,0 +1,25 @@
+{
+    "name": "Stryx",
+    "queries": [
+        {
+            "query": "tiny stealth monster that mimics an owl",
+            "variant": "tiny stealthy creature that looks like an owl"
+        },
+        {
+            "query": "quick flying creature with excellent perception skills",
+            "variant": "fast flying being with great perception abilities"
+        },
+        {
+            "query": "monstrosity that is a scout with false appearance",
+            "variant": "creature that serves as a scout and can disguise itself"
+        },
+        {
+            "query": "fragile flying monster with high stealth bonuses",
+            "variant": "delicate flying creature that excels in stealth"
+        },
+        {
+            "query": "owl-like creature that casts comprehend languages",
+            "variant": "owl resembling being that can use comprehend languages spell"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Marid Noble",
+    "queries": [
+        {
+            "query": "large water elemental with spellcasting abilities",
+            "variant": "large elemental that can cast spells and controls water"
+        },
+        {
+            "query": "powerful aquatic creature that can swim and fly",
+            "variant": "strong creature that swims and can also fly in the air"
+        },
+        {
+            "query": "resilient water monster with a high armor class",
+            "variant": "durable aquatic monster that has a strong armor rating"
+        },
+        {
+            "query": "majestic creature that can breathe both air and water",
+            "variant": "noble creature that breathes in water and air"
+        },
+        {
+            "query": "elemental with the ability to create fog and control water",
+            "variant": "elemental that can summon fog and manipulate water"
+        }
+    ]
+}

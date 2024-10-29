@@ -1,6 +1,8 @@
 <MonsterName/>Fulad-Zereh</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>9</CR>
+<AC/>18 (plate)</AC>
+<HP/>115</HP>
 <summary>The Fulad-Zereh is a formidable creature from the depths of the Abyss, classified as a huge fiend with a chaotic evil alignment. This demon embodies power and peril, with a high armor class and significant hit points, making it a challenging opponent in combat. Its abilities allow it to control the battlefield with debilitating effects like petrification, while its resistance to various damage types makes it difficult to defeat with standard attacks. Though it has a relatively low Dexterity, its high Constitution and the mechanics of its abilities mean it can endure substantial damage, making it a threat that should not be underestimated.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ For its actions, the Fulad-Zereh can use Multiattack, making two melee attacks i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fulad-Zereh
 
 *Huge* *Fiend* *chaotic evil*
@@ -57,5 +60,6 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw at the
 - **Battleaxe:** Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) slashing damage.
 
 
+</statblock>
 
 

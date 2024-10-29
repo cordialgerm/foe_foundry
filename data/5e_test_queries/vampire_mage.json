@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Mage",
+    "queries": [
+        {
+            "query": "undead spellcaster with charm and regeneration abilities",
+            "variant": "undead spell using charm and regenerative powers"
+        },
+        {
+            "query": "powerful vampire creature that climbs walls and casts fire spells",
+            "variant": "strong vampire that can scale walls and uses fire magic"
+        },
+        {
+            "query": "medium undead that regenerates and takes damage from sunlight",
+            "variant": "medium undead creature with regeneration that is harmed by sunlight"
+        },
+        {
+            "query": "creature with darkvision that uses necrotic damage in combat",
+            "variant": "monster with dark vision that deals necrotic damage during fights"
+        },
+        {
+            "query": "vampire mage with high hit points and multiple actions",
+            "variant": "mage vampire that has a lot of health and can perform many actions"
+        }
+    ]
+}

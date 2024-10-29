@@ -1,0 +1,25 @@
+{
+    "name": "Servant of the Unsated God",
+    "queries": [
+        {
+            "query": "undead creature that deals necrotic damage and has a stench ability",
+            "variant": "creature undead that inflicts necrotic damage and features a foul stench"
+        },
+        {
+            "query": "dark creature that has sunlight sensitivity and a powerful bite attack",
+            "variant": "creature of darkness sensitive to sunlight with a strong bite attack"
+        },
+        {
+            "query": "undead servant that can cast spells and uses a mace in combat",
+            "variant": "servant of the undead that casts spells and wields a mace during fights"
+        },
+        {
+            "query": "monster with darkvision that navigates effectively in low-light environments",
+            "variant": "creature with darkvision capable of moving well in dim-light surroundings"
+        },
+        {
+            "query": "aggressive undead entity with master of disguise abilities and poison immunity",
+            "variant": "hostile undead being that can disguise itself and is immune to poison"
+        }
+    ]
+}

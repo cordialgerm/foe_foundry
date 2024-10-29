@@ -1,0 +1,49 @@
+{
+    "name": "Two-Headed Eagle",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 100 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "agile",
+        "predatory"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "agile"
+    ],
+    "description": "The Two-Headed Eagle features impressive physical attributes with two heads providing it enhanced perception and combat capabilities. Its feathers are likely a mix of browns and whites, making it blend into various environments.",
+    "memorable": "The ability to attack while flying without provoking opportunity attacks makes it a dangerous foe in aerial combat.",
+    "goals": "Hunt prey and defend its territory from threats.",
+    "relations": "Often found in the company of other predatory creatures or as a guardian of lofty regions.",
+    "environment": "Typically found in mountainous or high-altitude areas where it can utilize its flying ability.",
+    "strengths": "Exceptional aerial agility and physical strength, along with advantage on perception checks.",
+    "weaknesses": "Low intelligence indicating poor tactical thinking and limited mental capabilities.",
+    "attacks": "Can make two vicious bite attacks followed by a powerful talons attack that grapples prey.",
+    "most_powerful_ability": "The Flyby ability allows it to maneuver around enemies without suffering attacks of opportunity.",
+    "senses": "Has truesight up to 120 feet, providing it unparalleled awareness in its surroundings.",
+    "skills": "Proficient in acrobatics and athletics, making it a highly maneuverable adversary.",
+    "additional_information": [
+        "Advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.",
+        "The Wakeful ability ensures at least one head remains alert while it sleeps.",
+        "High Dexterity enables it to evade attacks and maneuver skillfully.",
+        "Grapples opponents with a talons attack, allowing focus fire on a single target.",
+        "Can traverse both air and ground, giving it flexible combat options."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory bird with two heads",
+        "monster that flies and grapples foes",
+        "agile creature that hunts in the mountains",
+        "formidable aerial attacker with keen perception",
+        "two-headed monster that can evade attacks"
+    ]
+}

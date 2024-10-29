@@ -1,0 +1,53 @@
+{
+    "name": "Ogre, Kadag",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walks at 40 feet speed",
+    "role": "Bruiser",
+    "tags": [
+        "Ogre",
+        "Giant",
+        "Undead Manipulation"
+    ],
+    "adjectives": [
+        "fearsome",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Kadag Ogre is a large, intimidating giant with a fearsome presence, notable for its muscular build and ruthless demeanor.",
+    "memorable": "Its ability to poison nearby creatures and command undead allies makes it a unique and dangerous opponent in battle.",
+    "goals": "Seeks to dominate undead and exert power over living creatures.",
+    "relations": "Often found in the company of undead minions, such as skeletons and zombies.",
+    "environment": "Typically resides in desolate, grim areas where it can command the undead.",
+    "strengths": "Exceptional physical strength allows for devastating melee attacks; resistant to certain damage types.",
+    "weaknesses": "Low Dexterity and Charisma limits maneuverability and social interaction.",
+    "attacks": "Multiattack with three spear strikes, dealing considerable piercing damage.",
+    "most_powerful_ability": "The Scent of Death ability poisons nearby creatures, significantly hampering their combat effectiveness.",
+    "equipment": null,
+    "senses": "Has a passive perception of 16, indicating a good level of awareness.",
+    "skills": "Proficient in perception, giving it an average awareness in its surroundings.",
+    "additional_information": [
+        "Resistances to necrotic damage and piercing from nonmagical attacks",
+        "Grants temporary hit points to undead allies",
+        "Disadvantage for undead attacking it if it hasn't engaged them recently",
+        "Specializes in influencing both living beings and undead",
+        "Low Intelligence hampers strategic planning"
+    ],
+    "damage_types": [
+        "necrotic",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant with undead control abilities",
+        "powerful melee ogre that poisons enemies",
+        "fearsome creature commanding undead minions",
+        "kadag ogre with spear attacks",
+        "large giant resistant to necrotic damage"
+    ]
+}

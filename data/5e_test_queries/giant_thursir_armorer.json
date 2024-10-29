@@ -1,0 +1,25 @@
+{
+    "name": "Giant, Thursir Armorer",
+    "queries": [
+        {
+            "query": "large lawful evil giant wearing splint armor",
+            "variant": "giant wearing splint armor that is large and lawful evil"
+        },
+        {
+            "query": "strong melee giant with a high armor class and lightning damage",
+            "variant": "melee giant that is strong with high AC and can deal lightning damage"
+        },
+        {
+            "query": "giant with low dexterity and darkvision in combat",
+            "variant": "combat giant that has darkvision and low dexterity"
+        },
+        {
+            "query": "Giant Thursir Armorer abilities including multiattack and runic armor",
+            "variant": "abilities of the Thursir Armorer including runic armor and multiattack"
+        },
+        {
+            "query": "thursir armorer that can knock foes prone with its shield",
+            "variant": "armorer that uses its shield to knock enemies prone"
+        }
+    ]
+}

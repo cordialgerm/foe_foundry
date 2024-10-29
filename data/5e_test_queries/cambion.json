@@ -1,0 +1,25 @@
+{
+    "name": "Cambion",
+    "queries": [
+        {
+            "query": "medium fiend with shapeshifting abilities and fire attacks",
+            "variant": "medium-sized fiend that can shapeshift and has fire-based attacks"
+        },
+        {
+            "query": "creature with high Charisma that commands allies and charms foes",
+            "variant": "monster with a high Charisma score that can charm enemies and give commands to allies"
+        },
+        {
+            "query": "powerful fiend resistant to fire and cold in combat",
+            "variant": "strong fiend that is resistant to cold and fire damage during battles"
+        },
+        {
+            "query": "Cambion with ongoing damage attacks and a fiery escape",
+            "variant": "Cambion featuring attacks that cause ongoing damage and has a fiery escape ability"
+        },
+        {
+            "query": "stealthy fiend that excels in deception and intimidation",
+            "variant": "deceitful fiend that is very good at stealth and intimidation"
+        }
+    ]
+}

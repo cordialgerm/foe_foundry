@@ -1,6 +1,8 @@
 <MonsterName/>Soul Eater</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>16</AC>
+<HP/>105</HP>
 <summary>The Soul Eater is a formidable medium-sized fiend with a neutral evil alignment, embodying elements of horror and malice in its design. Known for its capacity to consume souls, it thrives on inflicting psychic damage while remaining resilient against a variety of attacks. The creature boasts a solid Armor Class of 16 and possesses 105 hit points derived from a robust pool of 14d8 plus 42, making it challenging for players to defeat. Its main strengths include high Dexterity, enabling a good attack modifier of +6 and exceptional Stealth capabilities with a +9 modifier, allowing it to approach unsuspecting foes. Conversely, its weaknesses lie in its reliance on physical attacks and the vulnerability to radiant damage. The Soul Eater’s challenge rating of 7 indicates that it should provide a moderately difficult combat encounter for a party of adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a reaction to reducing a target to 0 hit points, the Soul Eater can use its S
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Soul Eater
 
 *Medium* *Fiend* *Neutral Evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Soul Drain:** When the soul eater reduces a target to 0 hp, the soul eater consumes that creature’s soul. The victim must succeed on a DC 14 Constitution saving throw or immediately die as the soul eater consumes its soul. A creature killed in this way can be restored to life only by means of a true resurrection or a wish spell. If the soul eater is killed within 120 feet of the body of a soul it consumed and the victim has been dead for no longer than 1 minute, the victim’s soul returns to the body and returns to life, unconscious and stable with 0 hp.
+</statblock>
 
 

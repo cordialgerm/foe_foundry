@@ -1,0 +1,54 @@
+{
+    "name": "Krake Spawn",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 175,
+    "ac": 16,
+    "srd": false,
+    "cr": "14",
+    "movement": "60 ft. walking speed",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "tentacle",
+        "poisonous"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "The Krake Spawn is a Huge monstrosity with robust tentacles and a maw filled with teeth, showcasing its menacing presence in combat. Its skin is slick and covered in a protective layer, enhancing its durability.",
+    "memorable": "The Krake Spawn can grapple with its tentacles and unleash devastating acid and poison attacks, creating a hazardous battlefield for its enemies.",
+    "goals": "It often seeks to dominate aquatic environments and overpower adventurers that intrude on its territory.",
+    "relations": "Krake Spawn may be related to other aquatic monstrosities or serve as a guardian of deep-sea lairs.",
+    "environment": "Typically found in deep waters and coastal areas, thriving both underwater and on land.",
+    "strengths": "Immunity to cold, poison, and psychic damage; high damage output; multiple attack options.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks and finesse maneuvers.",
+    "attacks": "Multiattack feature allows for a combination of tentacle and bite attacks, along with a powerful Freezing Water Bolt.",
+    "most_powerful_ability": "Vomit Forth the Deeps can incapacitate enemies and deal substantial acid and poison damage in an area.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures in darkness or murky waters effectively.",
+    "skills": null,
+    "additional_information": [
+        "Can breathe both air and water, enhancing combat versatility.",
+        "Ink Cloud can obscure vision and inflict significant poison damage.",
+        "Tentacles can grapple, restraining foes and affecting their combat abilities.",
+        "Uses Water Jet to reposition and escape while not provoking opportunity attacks.",
+        "Strong physical attributes with a high Strength and Constitution."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster with tentacles and poison attacks",
+        "giant creature that lives underwater",
+        "durable beast with multiple melee attacks",
+        "aquatic monster that grapples and restrains",
+        "formidable creature with devastating area attacks"
+    ]
+}

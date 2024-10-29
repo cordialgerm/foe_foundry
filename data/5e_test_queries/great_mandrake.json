@@ -1,0 +1,25 @@
+{
+    "name": "Great Mandrake",
+    "queries": [
+        {
+            "query": "tiny plant creature with a powerful shriek ability",
+            "variant": "plant creature that is tiny and has a strong shriek ability"
+        },
+        {
+            "query": "small plant with poison immunity and stunning attack",
+            "variant": "tiny plant that is immune to poison and has a stunning attack"
+        },
+        {
+            "query": "resilient plant monster that can stun enemies",
+            "variant": "sturdy plant creature that can incapacitate foes"
+        },
+        {
+            "query": "mandrake that emits a damaging scream and is immune to exhaustion",
+            "variant": "great mandrake with a damaging shriek and immune to exhaustion"
+        },
+        {
+            "query": "Great Mandrake's combat abilities and defensive traits",
+            "variant": "combat features and defensive characteristics of Great Mandrake"
+        }
+    ]
+}

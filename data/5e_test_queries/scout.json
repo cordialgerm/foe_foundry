@@ -1,0 +1,25 @@
+{
+    "name": "Scout",
+    "queries": [
+        {
+            "query": "stealthy humanoid creature skilled in tracking and hunting",
+            "variant": "humanoid creature skilled at tracking and hunting stealthily"
+        },
+        {
+            "query": "agile scout with keen senses found in wilderness areas",
+            "variant": "keen senses scout that is agile, typically found in wild regions"
+        },
+        {
+            "query": "medium humanoid that uses bows and short swords for combat",
+            "variant": "medium humanoid using short swords and bows in battles"
+        },
+        {
+            "query": "spy-like creature with good stealth and perception abilities",
+            "variant": "creature that acts like a spy, possessing great stealth and perception skills"
+        },
+        {
+            "query": "humanoid that excels in ambush tactics and gathering intelligence",
+            "variant": "humanoid master of gathering intelligence and ambush tactics"
+        }
+    ]
+}

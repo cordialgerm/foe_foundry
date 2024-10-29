@@ -1,6 +1,8 @@
 <MonsterName/>Scarab, Ruin</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Ruin Scarab is a formidable Large Undead creature characterized by its neutral evil nature. It plays the role of a relentless predator on the battlefield, capable of dealing significant damage while providing adverse effects to its enemies. With a strong Armor Class of 15 and a substantial pool of Hit Points totalling 136, the Ruin Scarab can withstand considerable attacks before being defeated. Its strengths lie in its necrotic damage abilities and unique movement traits, making it a challenging opponent. However, it has notably low Intelligence and Charisma scores, resulting in very poor capabilities in social situations and intellectual pursuits. Overall, the Ruin Scarab is designed to sow chaos and destruction with its ability to incapacitate foes and avoid detection.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Ruin Scarab is a powerful undead adversary that leverages its abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scarab, Ruin
 
 *Large* *Undead* *neutral evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Relentless Pursuit:** When a creature within 10 ft. of the scarab moves away from it scarab can move up to half its speed toward that creature.
 
 
+</statblock>
 
 

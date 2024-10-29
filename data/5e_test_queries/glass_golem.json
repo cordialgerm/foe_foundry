@@ -1,0 +1,25 @@
+{
+    "name": "Glass Golem",
+    "queries": [
+        {
+            "query": "small glass creature that resists magic and takes bludgeoning damage",
+            "variant": "small creature made of glass that resists magic and is vulnerable to bludgeoning"
+        },
+        {
+            "query": "golem that uses shards to attack and is immune to poison",
+            "variant": "construct that attacks with shards and is immune to poison damage"
+        },
+        {
+            "query": "mechanical guardian made of glass with special abilities against spells",
+            "variant": "glass guardian with mechanical nature and abilities to resist spells"
+        },
+        {
+            "query": "creature with darkvision that protects treasures and takes extra damage from bludgeoning",
+            "variant": "creature with darkvision that guards treasures and is weak to bludgeoning attacks"
+        },
+        {
+            "query": "glass golem with low intelligence and skills resistant to magical attacks",
+            "variant": "golem made of glass with poor intelligence and resistant to magic"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Flame-Scourged Scion",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 125,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walks at a speed of 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "chaotic",
+        "fire",
+        "tentacles",
+        "area damage"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "fire-resistant",
+        "menacing",
+        "mobile"
+    ],
+    "description": "The Flame-Scourged Scion is a massive aberration with a chaotic appearance, equipped with tentacles that it uses to grapple its foes. Its body radiates an aura of heat, marked by the strange flickering embers that often surround it.",
+    "memorable": "The creature's ability to gain advantages from fire damage makes it a terrifying opponent in battle, especially in fiery environments.",
+    "goals": "Typically, it seeks to assert dominance in its environment and obliterate threats through aggressive combat tactics.",
+    "relations": "Might be encountered alongside other fire-based aberrations or chaos-themed creatures.",
+    "environment": "Often found in volcanic or fiery terrains, where fire damage is prevalent.",
+    "strengths": "Exceptional Constitution making it highly resilient, resistance to fire and nonmagical slashing damage, and abilities that enhance its attacks under fire damage.",
+    "weaknesses": "Low Wisdom score, making it vulnerable to effects requiring insight or perception.",
+    "attacks": "Utilizes multiple tentacle attacks to grapple and restrain enemies, inflicting significant bludgeoning damage.",
+    "most_powerful_ability": "Ember ability creates a localized area of burning embers, devastating nearby foes with fire damage.",
+    "equipment": null,
+    "senses": "Has the Firesight ability that allows it to see through fire, smoke, and fog without obstruction.",
+    "skills": "Possesses good proficiency in Insight and Perception, despite its low Wisdom.",
+    "additional_information": [
+        "Immune to grappled, paralyzed, and restrained conditions.",
+        "Can grapple multiple creatures simultaneously.",
+        "Gains advantages on attacks after taking fire damage.",
+        "Moves through difficult terrain without penalty.",
+        "Darkvision to assist in low-light conditions."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge chaotic fire creature",
+        "menacing tentacled monster with fire abilities",
+        "scary fire-based aberration with area damage",
+        "brutal monster that thrives in fire",
+        "creature that uses burning embers in battle"
+    ]
+}

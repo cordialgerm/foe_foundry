@@ -1,0 +1,25 @@
+{
+    "name": "Dire Wolf",
+    "queries": [
+        {
+            "query": "large predatory wolf with heightened senses",
+            "variant": "large wolf predator that has enhanced senses"
+        },
+        {
+            "query": "wolf with pack tactics that hunts in groups",
+            "variant": "wolf that hunts with pack tactics in groups"
+        },
+        {
+            "query": "melee attacking wolf that knocks targets prone",
+            "variant": "wolf that attacks in melee and can knock creatures down"
+        },
+        {
+            "query": "agile wolf that moves quickly and has natural armor",
+            "variant": "swift wolf with natural armor that is agile"
+        },
+        {
+            "query": "wolf that causes fear with a growl while hunting",
+            "variant": "wolf that intimidates with growl during a hunt"
+        }
+    ]
+}

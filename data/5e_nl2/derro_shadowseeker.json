@@ -1,0 +1,50 @@
+{
+    "name": "Derro Shadowseeker",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 112,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "ambush",
+        "chaotic"
+    ],
+    "adjectives": [
+        "small",
+        "chaotic",
+        "deceptive"
+    ],
+    "description": "The Derro Shadowseeker is a small humanoid with exceptional agility, characterized by erratic movements and a chaotic demeanor. It possesses a dexterous frame and is known for its sneaky nature.",
+    "memorable": "Its ability to confuse foes with maddening convulsions makes it a unique threat on the battlefield.",
+    "goals": "The Derro Shadowseeker typically seeks to ambush and confound its enemies, employing stealth for tactical advantage.",
+    "relations": "Often found in cohorts with other derro or evil creatures, using their cunning and chaotic nature to manipulate surroundings.",
+    "environment": "Commonly inhabits dark places, such as caves or ruins, where they can utilize their stealth effectively.",
+    "strengths": "Exceptional dexterity and evasive abilities make it a hard target; magic resistance provides added protection against spells.",
+    "weaknesses": "Vulnerable to sunlight, suffering disadvantage on attacks and perception checks relying on sight.",
+    "attacks": "Prefers close combat with daggers and employs ranged attacks with a light crossbow for versatility.",
+    "most_powerful_ability": "Maddening Convulsions can confuse surrounding enemies, adding a crowd control aspect to its skirmishing style.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Highly skilled in acrobatics and stealth, allowing it to move and attack without being easily detected.",
+    "additional_information": [
+        "Erratic Movement enhances its mobility, making it a difficult enemy to pin down.",
+        "Evasion allows it to avoid damage from area effects, increasing its survivability.",
+        "Magic Resistance provides protection from harmful spells.",
+        "Sunlight Sensitivity creates a notable vulnerability for strategic opponents to exploit.",
+        "Its Sneak Attack ability can significantly boost damage output when attacking from advantageous positions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid adept in stealth",
+        "chaotic evil skirmisher with daggers",
+        "ambushing creature with maddening convulsions",
+        "fey creature weakened by sunlight",
+        "elusive derro that confuses enemies"
+    ]
+}

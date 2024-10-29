@@ -1,0 +1,25 @@
+{
+    "name": "Quipper, Swarm of Quippers",
+    "queries": [
+        {
+            "query": "aggressive underwater swarm of tiny fish",
+            "variant": "agressive tiny fish swarm in water"
+        },
+        {
+            "query": "water-dwelling beast that can bleed targets",
+            "variant": "beast that lives in water and causes bleeding damage"
+        },
+        {
+            "query": "tiny aquatic swarm that moves fast in water",
+            "variant": "fast swimming tiny swarm of creatures"
+        },
+        {
+            "query": "swarm with blood frenzy ability in underwater",
+            "variant": "underwater swarm that has a blood frenzy trait"
+        },
+        {
+            "query": "creatures with low health and good stealth in aquatic environments",
+            "variant": "aquatic stealthy creatures with low health"
+        }
+    ]
+}

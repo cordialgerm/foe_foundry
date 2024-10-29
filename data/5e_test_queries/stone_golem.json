@@ -1,0 +1,25 @@
+{
+    "name": "Stone Golem",
+    "queries": [
+        {
+            "query": "massive rock creature that guards ancient temples",
+            "variant": "huge stone beast that protects old temples"
+        },
+        {
+            "query": "slow-moving guardian with incredible crushing strength",
+            "variant": "slow stone protector with immense crushing power"
+        },
+        {
+            "query": "construct with high hit points and immunity to non-magical attacks",
+            "variant": "golem that has a lot of hit points and can't be hurt by normal attacks"
+        },
+        {
+            "query": "golem that can use magic to slow enemies and suffers from low intelligence",
+            "variant": "stone creature that slows foes with magic and has poor intellect"
+        },
+        {
+            "query": "stone guardian with natural armor and multiple slam attacks",
+            "variant": "rock guardian that has natural protection and can hit several times"
+        }
+    ]
+}

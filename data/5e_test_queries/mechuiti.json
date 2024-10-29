@@ -1,0 +1,25 @@
+{
+    "name": "Mechuiti",
+    "queries": [
+        {
+            "query": "gargantuan chaotic evil fiend with high damage potential and cold vulnerability",
+            "variant": "gargantuan fiend that is chaotic evil and has high damage capabilities but is vulnerable to cold"
+        },
+        {
+            "query": "fiend with fiery weapons and a disease-causing ability that affects melee attackers",
+            "variant": "fiend that causes disease with melee attacks and has fiery weapons"
+        },
+        {
+            "query": "monster with true sight and immunity to many conditions that can cast spells without components",
+            "variant": "creature with true sight that can cast spells without need for components and is immune to many conditions"
+        },
+        {
+            "query": "Mechuiti's bite and claw attacks along with frightening presence",
+            "variant": "Mechuiti's attacks including bite and claw and its frightening ability"
+        },
+        {
+            "query": "gargantuan fiend with high hit points and immunity to acid and fire damage",
+            "variant": "gargantuan fiend with 462 HP and immunity against acid and fire"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Greater Ghast of Leng",
+    "queries": [
+        {
+            "query": "large chaotic evil creature with high Dexterity and Strength",
+            "variant": "big chaotic evil monster that has strong Dexterity and Strength"
+        },
+        {
+            "query": "monster that can command ghasts and excels in melee combat",
+            "variant": "creature that commands other ghasts and is great in close combat"
+        },
+        {
+            "query": "aberration vulnerable to radiant damage and sensitive to sunlight",
+            "variant": "creature type aberration that is weak to radiant damage and reacts poorly to sunlight"
+        },
+        {
+            "query": "predatory creature with keen smell and blood frenzy ability",
+            "variant": "hunting monster that has a strong sense of smell and a blood frenzy skill"
+        },
+        {
+            "query": "large creature with multiattack and necrotic damage abilities",
+            "variant": "big monster that can make multiple attacks and deals necrotic damage"
+        }
+    ]
+}

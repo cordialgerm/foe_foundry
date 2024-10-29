@@ -1,0 +1,53 @@
+{
+    "name": "Ancient Imperial Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Gargantuan",
+    "hp": 546,
+    "ac": 22,
+    "srd": false,
+    "cr": "26",
+    "movement": "swim 40 ft., walk 40 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "mythical",
+        "powerful"
+    ],
+    "adjectives": [
+        "ancient",
+        "imperial",
+        "formidable"
+    ],
+    "description": "The Ancient Imperial Dragon is an immense and awe-inspiring dragon known for its overwhelming power and mastery of nature, characterized by exceptional physical strength and distinctive scales.",
+    "memorable": "With the ability to charm opponents and transform its appearance, this dragon is both a fearsome combatant and a master of manipulation.",
+    "goals": "To assert dominance in its territory and engage in powerful magical displays.",
+    "relations": "Often encountered with other high-level dragons or commanding lesser dragon-like creatures.",
+    "environment": "Typically found in domains of great natural beauty, such as mountains, forests, or near large bodies of water.",
+    "strengths": "Exceptional physical prowess, high hit points, strong defenses, and a wide array of potent magical abilities.",
+    "weaknesses": "While resilient, its large size may make it less maneuverable in confined spaces.",
+    "attacks": "Devastating melee attacks including a powerful bite, slashing claws, and a crushing tail, alongside a breath weapon unleashing massive lightning damage.",
+    "most_powerful_ability": "Lightning Breath that deals substantial damage in a wide line and can incapacitate multiple foes.",
+    "equipment": null,
+    "senses": "Possesses blindsight to a range of 60 feet and an extremely high passive perception of 30.",
+    "skills": "Exhibits exceptional knowledge and proficiency in arcana, history, insight, and perception.",
+    "additional_information": [
+        "Amphibious trait allows breathing in both air and water.",
+        "Can communicate with any living creature using Truespeak.",
+        "Inherently casts powerful spells without components.",
+        "Can change its shape to a humanoid or lower CR beast for infiltration.",
+        "Legendary Resistance allows it to succeed on failed saving throws."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster with the ability to cast a variety of water and weather-related spells at will, with additional powerful spells available a limited number of times per day.",
+    "test_queries": [
+        "powerful nature dragon",
+        "gargantuan dragon with lightning breath",
+        "shape-shifting dragon abilities",
+        "dragon with mesmerize charm",
+        "ancient dragon with high perception"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Gigantura",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 248,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "horrifying",
+        "durable"
+    ],
+    "description": "The Gigantura is a massive aquatic creature with telescoping eyes that swim gracefully but powerfully through water. It has an unsettling presence, capable of swallowing its prey whole.",
+    "memorable": "Its ability to incapacitate foes with a horrifying gaze and swallow them whole creates a tense and dangerous situation for adventurers.",
+    "goals": "To hunt and incapacitate creatures that venture into its territory.",
+    "relations": "It may be encountered with other aquatic predators or in environments frequented by aquatic beasts.",
+    "environment": "Typically found in deep waters, lakes, or oceans.",
+    "strengths": "High durability and formidable offensive capabilities, particularly its multiattack abilities.",
+    "weaknesses": "Low intelligence and charisma, leading to simple tactics and poor social skills.",
+    "attacks": "Multiattack includes a horrifying gaze, a powerful bite that can swallow foes, and tail slaps that inflict bludgeoning damage.",
+    "most_powerful_ability": "Horrific Gaze allows targeting foes to become stunned, creating opportunities for the Gigantura to strike.",
+    "senses": "Possesses darkvision up to 120 feet and a high passive perception of 18, allowing it to detect hidden foes effectively.",
+    "skills": "Has proficiency in perception, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Can breathe only underwater, limiting its action on land.",
+        "Has resistance to cold damage, making it tougher against ice attacks.",
+        "Immunity to being stunned enhances its combat longevity.",
+        "Can swallow multiple creatures depending on size, making it a dangerous opponent when faced by groups.",
+        "Required saving throws to escape its grasp add danger to encounters."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive underwater predator with horrifying gaze",
+        "aquatic monster that swallows foes whole",
+        "fearsome creature that lives in deep water",
+        "brutal aquatic giant that incapacitates enemies",
+        "gargantuan monster with powerful bite attack"
+    ]
+}

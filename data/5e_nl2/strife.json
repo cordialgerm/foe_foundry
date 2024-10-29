@@ -1,0 +1,54 @@
+{
+    "name": "Strife",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft. fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaos",
+        "deception",
+        "stealth",
+        "manipulation"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "chaotic",
+        "small"
+    ],
+    "description": "Strife is a small, cunning fey with a mischievous appearance and exceptional agility. It can take to the air with ease, using its environment to confuse and disarm foes.",
+    "memorable": "Strife is unique for its ability to sow discord among enemies, creating chaos and mistrust with its powerful manipulation abilities.",
+    "goals": "To create confusion and chaos in battles, sowing distrust among enemies and gaining advantages in combat.",
+    "relations": "Strife might ally with other fey creatures or chaotic beings that enjoy color and chaos, often clashing with those who advocate for order.",
+    "environment": "Typically found in chaotic or wild lands, such as forests filled with magical anomalies or places of unrest.",
+    "strengths": "High Dexterity allows Strife to excel in Stealth and evade attacks, while its abilities enable it to manipulate enemies effectively.",
+    "weaknesses": "Low Strength limits its physical combat abilities and makes it vulnerable in direct confrontations.",
+    "attacks": "Strife uses its Claw attacks for melee damage while employing psychological tactics to disrupt foes.",
+    "most_powerful_ability": "Sow Discord can damage enemies while causing them to distrust their allies, effectively isolating them in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enhancing its ability to navigate dark environments.",
+    "skills": "Adept in Deception and Stealth, making it highly proficient in trickery and remaining hidden.",
+    "additional_information": [
+        "Can mimic humanoid voices, providing a deception tool.",
+        "Gains temporary hit points from nearby psychic damage.",
+        "Utilizes Invisibility strategically to control the battlefield.",
+        "Induces doubt in attackers to hinder their effectiveness."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that sows discord",
+        "cunning small creature that confuses enemies",
+        "tactical fey with maniuplative abilities",
+        "chaotic creature that turns invisible",
+        "stealthy creature that demoralizes attackers"
+    ]
+}

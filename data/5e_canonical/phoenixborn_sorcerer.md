@@ -1,6 +1,8 @@
 <MonsterName/>Phoenixborn Sorcerer</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>3</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Phoenixborn Sorcerer is a medium humanoid creature that embodies the fiery essence of phoenixes, granting it unique abilities and a flair for powerful spellcasting. With a relatively high armor class of 13, which can increase to 16 when using mage armor, it presents a decent challenge in combat. Its hit points are at a moderate level, allowing it to sustain some damage before being defeated. What stands out about the Phoenixborn Sorcerer is its ability to fly at a speed of 40 feet, alongside a slower walking speed of 20 feet, enabling tactical mobility. Its strengths lie in dexterity and charisma, which enhance its combat effectiveness and spellcasting capabilities. The creature has a challenge rating of 3, giving adventurers a fair amount of experience when defeated. However, it has average resilience with some vulnerabilities, making strategic play essential.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Lastly, the Phoenixborn Sorcerer is capable of spellcasting, with its spellcasti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Phoenixborn Sorcerer
 
 *Medium* *Humanoid* *any*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 13): At will: mage hand minor illusion light prestidigitation2/day ea: charm person continual flame mage armor1/day: dispel magic
 
 
+</statblock>
 
 

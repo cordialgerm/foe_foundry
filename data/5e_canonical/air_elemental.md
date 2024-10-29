@@ -1,6 +1,8 @@
 <MonsterName/>Air Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>90</HP>
 <summary>An Air Elemental is a swirling, translucent mass of wind and vapor, constantly in motion. Its form is difficult to see, often appearing as little more than a gust of wind, though at times it condenses into a vaguely humanoid shape with swirling arms and legs made of pure air. These beings move swiftly and silently through the sky, capable of generating powerful gusts of wind and whirlwinds that can lift creatures off the ground. They can also suffocate foes by surrounding them in a vortex of air. Air Elementals are wild and free-spirited, embodying the chaotic nature of the element they come from.</summary>
 
 <summary>The Air Elemental is a formidable creature known for its speed and versatility in combat. As a Large Elemental, it possesses a strong armor class of 14 and can endure a significant amount of punishment with 90 hit points, reflecting its resilience in battle. With a Challenge Rating of 5, it provides a reasonable challenge for adventurers, boasting exceptional dexterity with a score of 18, which gives it a +4 modifier for high agility and maneuverability. While its strength and intelligence scores are average to low, its unique abilities and resistances make it a significant opponent. Notably, it is immune to poison damage and has resistance to lightning and thunder damage, providing it with substantial survivability against many attacks. It operates well within the battlefield using its flying ability, allowing it to engage or disengage effectively.</summary>
@@ -44,6 +46,7 @@ The Air Elemental also has a defensive reaction called Thunderous Retreat. If it
 
 Source: 5e_srd
 
+<statblock>
 ### Air Elemental
 
 *Large elemental, neutral*
@@ -80,7 +83,8 @@ Source: 5e_srd
 
 ***Whirlwind (Recharge 4-6)***. Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8+2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
 
-If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
+If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</statblock>
+
 
 
 
@@ -88,6 +92,7 @@ If the saving throw is successful, the target takes half the bludgeoning damage 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Air Elemental
 
 *Large* *Elemental*
@@ -121,6 +126,7 @@ Source: 5e_artisinal_monsters
 - **Whirlwind (Recharge 5-6):** The elemental takes the form of a whirlwind  flies up to half of its fly speed without provoking opportunity attacks  and then resumes its normal form. When a creature shares its space with the whirlwind for the first time during this movement  that creature makes a DC 15 Strength saving throw. On a failure  the creature is carried inside the elementals space until the whirlwind ends  taking 3 (1d6) bludgeoning damage for each 10 feet it is carried  and falls prone at the end of the movement. The whirlwind can carry one Large creature or up to four Medium or smaller creatures.
 
 
+</statblock>
 
 
 
@@ -129,6 +135,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Air Elemental
 
 *Large elemental*
@@ -166,5 +173,6 @@ Source: 5e_artisinal_monsters
 
 - **Thunderous Retreat.** When a creature the air elemental can see deals damage to it, the elemental can expel a crack of thunder and move up to 15 feet to an unoccupied space it can see. Each creature within 5 feet of the space the elemental left must succeed on a DC 13 CON save or take 7 (2d6) thunder damage.
 
+</statblock>
 
 

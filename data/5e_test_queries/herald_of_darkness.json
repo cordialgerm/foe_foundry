@@ -1,0 +1,25 @@
+{
+    "name": "Herald of Darkness",
+    "queries": [
+        {
+            "query": "large fiend that causes fear and uses necrotic damage",
+            "variant": "big fiend that inflicts fear and deals necrotic damage"
+        },
+        {
+            "query": "dark-themed creature immune to necrotic and poison damage",
+            "variant": "shadowy creature that is immune to necrotic and poison attacks"
+        },
+        {
+            "query": "monster with shadow abilities and can paralyze foes",
+            "variant": "creature that has shadow powers and paralyzes enemies"
+        },
+        {
+            "query": "fiend that flies and has a powerful melee attack",
+            "variant": "fiendish creature that can fly and has strong melee attacks"
+        },
+        {
+            "query": "intelligent fiend with a charisma score of 19",
+            "variant": "smart fiend with a charisma of 19 points"
+        }
+    ]
+}

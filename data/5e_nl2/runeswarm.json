@@ -1,0 +1,56 @@
+{
+    "name": "Runeswarm",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 150,
+    "ac": 15,
+    "srd": false,
+    "cr": "10",
+    "movement": "fly 60 ft.",
+    "role": "Controller",
+    "tags": [
+        "construct",
+        "magic",
+        "swarm",
+        "versatile"
+    ],
+    "adjectives": [
+        "large",
+        "agile",
+        "magical",
+        "resilient"
+    ],
+    "description": "The Runeswarm is a large construct composed of swirling runes, characterized by its exceptional agility and magical prowess.",
+    "memorable": "It can unleash unpredictable magical effects through its Runecast ability, significantly influencing combat.",
+    "goals": "To support allies and hinder enemies using its versatile magical effects.",
+    "relations": "Related to other constructs, may be encountered with magical creatures due to its abilities.",
+    "environment": "Typically found in magical locations or places where constructs are created.",
+    "strengths": "High agility allows it to dodge attacks; extensive magical abilities enhance its combat versatility.",
+    "weaknesses": "Low physical power and inability to regain hit points as a swarm can limit its endurance.",
+    "attacks": "Utilizes a multiattack with magical and melee components, including the Cutting Runes and Runecast abilities.",
+    "most_powerful_ability": "Runecast, which can summon allies or deal elemental damage, among other magical effects.",
+    "senses": "Possesses blindsight 60 ft., allowing it to perceive its surroundings despite being blind beyond that radius.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to various conditions make it hard to control during combat.",
+        "Can share space with other creatures due to its swarm ability.",
+        "Effects from Runecast can significantly alter the battle dynamics.",
+        "Resistances to bludgeoning, piercing, and slashing damage improve its durability.",
+        "Low Intelligence indicates a lack of tactical awareness."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "versatile magical swarm creature",
+        "construct with magical effects",
+        "large agile construct with runes",
+        "magical construct that summons creatures",
+        "swarm with magical abilities and resistances"
+    ]
+}

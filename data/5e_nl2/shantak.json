@@ -1,0 +1,52 @@
+{
+    "name": "Shantak",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 123,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 60 ft., walk 10 ft.",
+    "role": "null",
+    "tags": [
+        "flying",
+        "terrifying",
+        "undead"
+    ],
+    "adjectives": [
+        "formidable",
+        "slippery",
+        "necrotic"
+    ],
+    "description": "A large monstrosity with an unctuous hide and the ability to fly gracefully. It features a terrifying screech and talons capable of inflicting necrotic damage.",
+    "memorable": "The chilling ability to frighten creatures with its terrifying screech and its slippery hide that challenges riders.",
+    "goals": "To hunt down prey and assert dominance in its territory.",
+    "relations": "May be summoned or commanded by powerful spellcasters and could easily coordinate with other like-minded creatures.",
+    "environment": "Prefers dark and secluded regions where it can use its flight and terrifying presence to its advantage.",
+    "strengths": "High Strength and Constitution scores, resistant to necrotic damage, and able to see through magical darkness.",
+    "weaknesses": "Low Intelligence and Charisma scores, making it ineffective in social interactions.",
+    "attacks": "Can bite and slash with talons, both empowered by necrotic damage.",
+    "most_powerful_ability": "Insane Tittering, which frightens non-Shantak creatures within range.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and advantage on perception checks related to sight and smell.",
+    "skills": "Proficient in perception, enhancing its ability to detect hidden creatures or traps.",
+    "additional_information": [
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can fly without provoking opportunity attacks through Flyby.",
+        "Uses Pack Tactics to increase its chances of hitting targets when allies are nearby.",
+        "Notable for its survivability and mobility in combat.",
+        "Possesses advantages in tracking due to Keen Sight and Smell."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large flying monster that uses necrotic attacks",
+        "terrifying creature with screeching abilities",
+        "slippery monster that frightens its prey",
+        "creature that sees through magical darkness",
+        "aggressive beast with strong physical attacks"
+    ]
+}

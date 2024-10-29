@@ -1,0 +1,53 @@
+{
+    "name": "Niya-Atha Sorcerer",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walking and climbing",
+    "role": "Controller",
+    "tags": [
+        "sorcerer",
+        "fey",
+        "ice",
+        "medium"
+    ],
+    "adjectives": [
+        "magical",
+        "frosty",
+        "strategic"
+    ],
+    "description": "A Medium Fey with a blend of magic and physical prowess, characterized by ice-themed abilities and a resilient constitution.",
+    "memorable": "Can summon an iceberg to hinder and damage multiple foes at once.",
+    "goals": "Uses its magic to control the battlefield and mitigate threats with cold damage.",
+    "relations": "Might ally with other fey creatures or ice-themed beings.",
+    "environment": "Likely found in cold or enchanted areas.",
+    "strengths": "Possesses cold damage resistance and can deal substantial damage with ice magic.",
+    "weaknesses": "Vulnerable to fire damage due to reliance on cold-based effects.",
+    "attacks": "Employs melee strikes with a scepter and ranged attacks using ice shards.",
+    "most_powerful_ability": "Summon Iceberg, which can restrain opponents and deal significant damage.",
+    "equipment": "Wields a scepter that enhances its melee attacks.",
+    "senses": "Passive Perception 12 reflects moderate awareness.",
+    "skills": "Proficient in Intelligence and Wisdom saving throws, indicating a good defense against mental effects.",
+    "additional_information": [
+        "Gains advantage on Strength checks and saving throws when enlarged.",
+        "Can revert to normal size without expending an action.",
+        "Can deal significant damage at range with Ice Shard.",
+        "Increased Armor Class when enlarged, strategic for survivability.",
+        "Ability to manipulate its size adds versatility to combat tactics."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Utilizes ice-themed spells for direct damage and battlefield control.",
+    "test_queries": [
+        "fey creature with ice powers",
+        "magical sorcerer that controls ice",
+        "cold damage wielder in combat",
+        "versatile fey with iceberg ability",
+        "Niya-Atha strategic ice sorcerer"
+    ]
+}

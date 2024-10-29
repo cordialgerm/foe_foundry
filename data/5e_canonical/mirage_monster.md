@@ -1,6 +1,8 @@
 <MonsterName/>Mirage Monster</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>12</AC>
+<HP/>76</HP>
 <summary>The Mirage Monster is a huge monstrosity that excels in deceptive tactics and control during combat. Its challenge rating is 4, providing a moderate threat to parties, particularly through its unique abilities that can ensnare and restrain foes, making it a potent ambush predator. With an armor class of 12 and hit points totaling 76, it can endure several hits while imposing significant damage with its melee attacks. However, its intelligence is quite low, which limits its strategic options. The creature’s strong physical attributes, particularly its strength of 18 (+4), enable it to grapple effectively and deal substantial damage through its biting and pseudopod attacks.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Mirage Monster is primarily a cunning ambusher with significant phy
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mirage Monster
 
 *Huge* *Monstrosity*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **The mirage monster can take 2 legendary actions:** Only one legendary action can be used at a time and only at the end of another creatures turn. It regains spent legendary actions at the start of its turn.
 - **Grasping Pseudopod:** The mirage monster makes a pseudopod attack with a range of 15 feet. On a hit, the target makes a DC 14 Strength saving throw. On a failure, the target is pulled up to 15 feet towards the mirage monster.
 - **Bite (Costs 2 Actions):** The mirage monster attacks with its bite.
+</statblock>
 
 

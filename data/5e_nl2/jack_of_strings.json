@@ -1,0 +1,52 @@
+{
+    "name": "Jack of Strings",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "chaotic",
+        "trickster",
+        "entertainer"
+    ],
+    "adjectives": [
+        "whimsical",
+        "deceptive",
+        "manipulative",
+        "chaotic",
+        "entertaining"
+    ],
+    "description": "The Jack of Strings is a whimsical entertainer with magical abilities, embodying chaos and trickery. It has exceptional agility and carries a playful demeanor.",
+    "memorable": "It has the ability to puppet-master its enemies, forcing them to act against their will, which adds a layer of psychological warfare.",
+    "goals": "To entertain and manipulate, using its cunning to outsmart opponents and control them through puppet illusions.",
+    "relations": "May be found alongside other chaotic fey creatures or summoned by those seeking tricky allies.",
+    "environment": "Commonly found in enchanted forests or areas rich in magical energy.",
+    "strengths": "High Dexterity and Charisma enhance its dodging abilities and charm, along with strong resistance to nonmagical damage.",
+    "weaknesses": "Relies on charm and cunning rather than brute strength, making it vulnerable to straightforward attacks.",
+    "attacks": "Performs two Mocking Slap melee attacks that deal bludgeoning and psychic damage, demonstrating its dual attack style.",
+    "most_powerful_ability": "Puppet Link allows the Jack to control its enemies directly, granting it significant battlefield advantage.",
+    "senses": "Passive perception of 12 and proficiency in acrobatics and performance indicate high agility and charisma.",
+    "skills": "Excels in Acrobatics and Performance, showcasing its agility and flair for manipulation.",
+    "additional_information": [
+        "Immunity to being charmed and frightened",
+        "Can animate puppets for distraction and offense",
+        "Has Magic Resistance for greater resilience against spells",
+        "Maintains an odd connection with its linked targets",
+        "Transforms fallen foes into wooden puppets"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fey creature with puppet abilities",
+        "manipulative entertainer that controls others",
+        "whimsical monster that animates puppets",
+        "fey creature with trickster abilities and magic",
+        "Jack of Strings combat tactics and features"
+    ]
+}

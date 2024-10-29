@@ -1,0 +1,50 @@
+{
+    "name": "Stygian Fat-Tailed Scorpion",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 63,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "poison",
+        "beast",
+        "scorpion"
+    ],
+    "adjectives": [
+        "tiny",
+        "poisonous",
+        "aggressive"
+    ],
+    "description": "The Stygian Fat-Tailed Scorpion is a small, aggressive creature known for its potent sting and claw attacks, possessing a robust build with natural armor.",
+    "memorable": "Its sting not only deals damage but can poison targets, potentially causing exhaustion with successive hits.",
+    "goals": "It typically seeks to ambush its prey and defend its territory.",
+    "relations": "It may be encountered in dark environments, possibly alongside other predators like giant spiders.",
+    "environment": "Usually found in dark places, such as caves or dense underbrush.",
+    "strengths": "Its ability to inflict poison and multiattack capabilities make it a formidable adversary.",
+    "weaknesses": "Low strength makes it less effective in grappling or physical contests.",
+    "attacks": "It can make two claw attacks and one sting attack in a single turn, with the sting inflicting both piercing and poison damage.",
+    "most_powerful_ability": "Sting attack that deals significant poison damage and can cause exhaustion if the target fails to resist.",
+    "equipment": null,
+    "senses": "It has darkvision, allowing it to see in dim light and darkness effectively.",
+    "skills": null,
+    "additional_information": [
+        "Inflicts a strong poison that lasts until a short or long rest.",
+        "Requires tactical positioning to effectively use its attacks.",
+        "Can create a significant challenge for low-level adventurers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny scorpion with a poisonous sting",
+        "aggressive poison-inflicting scorpion",
+        "dark environment predator with venomous attack",
+        "Scorpion that inflicts exhaustion with poison",
+        "multiattack poisonous scorpion assault"
+    ]
+}

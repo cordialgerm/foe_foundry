@@ -1,0 +1,25 @@
+{
+    "name": "Eagle",
+    "queries": [
+        {
+            "query": "small bird of prey with keen eyesight and ability to fly",
+            "variant": "small prey bird that has sharp eyesight and can fly"
+        },
+        {
+            "query": "nimble aerial creature known for exceptional perception and swift movement",
+            "variant": "quick flying creature that is known for its great observation skills and fast speed"
+        },
+        {
+            "query": "eagle with keen sight and low hit points good for scouting",
+            "variant": "eagle with good vision and few hit points suitable for reconnaissance"
+        },
+        {
+            "query": "bird that can swim and has advantage on perception checks",
+            "variant": "bird capable of swimming and has bonuses on perception rolls"
+        },
+        {
+            "query": "small beast with poor strength and great flight speed",
+            "variant": "little creature with weak physical power and high flying speed"
+        }
+    ]
+}

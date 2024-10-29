@@ -1,0 +1,25 @@
+{
+    "name": "Slithy Tove",
+    "queries": [
+        {
+            "query": "agile small creature that uses distractions in battle",
+            "variant": "small agile monster that distracts foes in combat"
+        },
+        {
+            "query": "swift monster with a unique teleporting ability and a poison cloud",
+            "variant": "swift creature that has special teleportation and a musk of clumsiness attack"
+        },
+        {
+            "query": "monster with high dexterity that can incapacitate enemies",
+            "variant": "creature with high agility and ability to incapacitate foes"
+        },
+        {
+            "query": "small monstrosity that can control the battlefield with its tactics",
+            "variant": "monstrosity that utilizes tactics to dominate the battlefield"
+        },
+        {
+            "query": "creature that inflicts poison damage and can pull enemies closer",
+            "variant": "creature that causes poison damage and pulls foes nearer"
+        }
+    ]
+}

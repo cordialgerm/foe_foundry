@@ -1,6 +1,8 @@
 <MonsterName/>Imperial Ghoul</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>93</HP>
 <summary>The Imperial Ghoul is a Medium-sized undead creature that embodies the essence of evil and decay. It is classified as Lawful Evil, making it a disciplined and strategical foe in combat situations. With an Armor Class of 16, it presents a decent defense against attacks. Its 93 hit points grant it considerable durability, allowing it to withstand a fair amount of damage before being taken down. While its movement speed of 15 feet on land is somewhat limited, it compensates with a burrowing speed of 30 feet, enabling it to navigate through terrain effectively and ambush unsuspecting opponents. With a challenge rating of 4, it presents a moderate challenge for adventurers, being capable of dealing significant damage through its bite and claw attacks, as well as inflicting debilitating effects.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Imperial Ghoul serves as a formidable opponent with strategic capab
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Imperial Ghoul
 
 *Medium* *Undead* *Lawful Evil*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and, if the target is a Humanoid, it must succeed on a DC 11 Constitution saving throw or contract the darakhul fever disease (see the Darakhul Fever sidebar).
 - **Claw:** Melee Weapon Attack: +5 to hit, reach, one target. Hit: 17 (4d6 + 3) slashing damage. If the target is a creature other than an elf or Undead, it must succeed on a DC 11 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - **Light Crossbow:** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Homunculus",
+    "queries": [
+        {
+            "query": "tiny magical creature with a bat-like body that serves a wizard",
+            "variant": "tiny magic creature that has a bat-like body and serves a wizard"
+        },
+        {
+            "query": "artificial creature with a humanoid face used as a servant",
+            "variant": "artificial being with a human-like face that acts as a servant"
+        },
+        {
+            "query": "small construct with telepathic abilities and low hit points",
+            "variant": "small construct that has telepathic powers and very few hit points"
+        },
+        {
+            "query": "creature that delivers messages and avoids combat",
+            "variant": "being that sends messages and steers clear of fights"
+        },
+        {
+            "query": "magic servant that can see in darkness and understands languages",
+            "variant": "magical assistant capable of seeing in dark and comprehending languages"
+        }
+    ]
+}

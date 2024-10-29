@@ -1,0 +1,51 @@
+{
+    "name": "Medusa",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 15,
+    "srd": true,
+    "cr": "6",
+    "movement": "30 ft. walk speed, average mobility",
+    "role": null,
+    "tags": [
+        "petrifying",
+        "cunning",
+        "poisonous",
+        "manipulative"
+    ],
+    "adjectives": [
+        "venomous",
+        "agile",
+        "serpentine"
+    ],
+    "description": "A cursed humanoid with a head full of venomous snakes instead of hair, notorious for its petrifying gaze.",
+    "memorable": "Can petrify foes instantly with a glance, turning them to stone.",
+    "goals": "Often found in ancient ruins or hidden lairs, surrounded by petrified victims and treasures; uses cunning and deception to control encounters.",
+    "relations": "May have connections with other monstrous serpents or creatures drawn to dark places.",
+    "environment": "Ancient ruins, hidden lairs.",
+    "strengths": "Combination of stealth, agility, and the petrifying gaze provides significant battlefield control.",
+    "weaknesses": "Somewhat reliant on its gaze; vulnerable if caught off guard or overwhelmed.",
+    "attacks": "Uses venomous snake hair and longbow for ranged and melee attacks, delivering piercing and poison damage.",
+    "most_powerful_ability": "Petrifying Gaze can instantly turn creatures to stone if they fail a saving throw.",
+    "equipment": "May wield weapons such as shortswords or bows.",
+    "senses": "Possesses a passive perception score of 15, enhancing its scouting and ambush capabilities.",
+    "skills": "Has proficiency in deception, insight, perception, and stealth, with high stealth capabilities.",
+    "additional_information": [
+        "Snake hair attack delivers poison damage along with piercing damage.",
+        "Monstrosity Resilience protects against exhaustion and frightened conditions.",
+        "Snake Friend ability allows communication with snakes, which are immune to its gaze."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cursed creature with snake hair and petrifying gaze",
+        "medium monstrosity that turns foes to stone",
+        "stealthy monster with deadly poisonous attacks",
+        "creature residing in ancient ruins with venomous snakes",
+        "agile humanoid with horrifying petrifying abilities"
+    ]
+}

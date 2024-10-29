@@ -1,0 +1,52 @@
+{
+    "name": "Avatar of Shoth",
+    "creature_type": "Aberration",
+    "alignment": "lawful neutral",
+    "size": "Gargantuan",
+    "hp": 341,
+    "ac": 18,
+    "srd": false,
+    "cr": "21",
+    "movement": "30 ft. climbing and walking",
+    "role": null,
+    "tags": [
+        "psionic",
+        "spellcaster",
+        "aberration"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "dominant"
+    ],
+    "description": "The Avatar of Shoth is a gargantuan creature with oozy tendrils, capable of blending into its surroundings. It has a grotesque form that can deform slightly, enabling it to pass through narrow spaces effortlessly.",
+    "memorable": "Its ability to absorb knowledge and replicate enemy abilities, coupled with powerful spells and a debuff aura, makes it a terrifying presence in combat.",
+    "goals": "To dominate its foes through manipulation and overwhelming force, while absorbing knowledge from its targets.",
+    "relations": "Might be encountered alongside other shoth creatures, serving as leaders or powerful allies in combat.",
+    "environment": "Typically found in dark, cavernous areas or mystical realms where aberrations thrive.",
+    "strengths": "High hit points, exceptional Charisma and Wisdom, various immunities, and the ability to replicate others' abilities make it a strategic threat.",
+    "weaknesses": "Lower Dexterity makes it easier to hit and can hinder its initiative in combat.",
+    "attacks": "Employs multiattack with tentacle strikes, inflicting both bludgeoning and acid damage. Acid Wave serves as a formidable area effect attack.",
+    "most_powerful_ability": "Absorbent allows it to replicate any action performed by a damaged creature, turning opponents' strengths against them.",
+    "equipment": null,
+    "senses": "Has blindsight and truesight both with a range of 60 feet, providing exceptional awareness of its surroundings.",
+    "skills": "Shows strong skills in Insight, Perception, and Persuasion, allowing it to excel in social interactions and awareness during encounters.",
+    "additional_information": [
+        "Beneficial Legendary Resistance to avoid failing saving throws can enhance its survivability.",
+        "The Soothing Aura ability can severely debuff nearby hostile creatures.",
+        "Innate Spellcasting without material components demonstrates its psionic capabilities.",
+        "Legendary Merge allows it to temporarily enhance weaker shoth creatures",
+        "Acid Wave and Consult the Zom provide area control and battlefield manipulation."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Can cast a variety of spells including area damage spells like Acid Splash and defensive spells like Shield.",
+    "test_queries": [
+        "Gargantuan psionic monster",
+        "knowledge absorbing aberration",
+        "powerful tentacle creature",
+        "spellcasting aberration",
+        "soothing aura debuff"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Dread Knight",
+    "queries": [
+        {
+            "query": "undead knight with high strength and fire-related abilities",
+            "variant": "high strength undead knight with fire abilities"
+        },
+        {
+            "query": "powerful undead creature immune to cold and fire",
+            "variant": "strong undead creature that is immune to fire and cold"
+        },
+        {
+            "query": "dark knight that can summon a nightmare and create ice walls",
+            "variant": "knight that summons nightmares and makes ice walls"
+        },
+        {
+            "query": "Dread Knight abilities and unholy aura effects",
+            "variant": "abilities of the Dread Knight and effects of its unholy aura"
+        },
+        {
+            "query": "medium undead with a cursed greatsword and high hit points",
+            "variant": "medium undead creature with high hit points and cursed greatsword"
+        }
+    ]
+}

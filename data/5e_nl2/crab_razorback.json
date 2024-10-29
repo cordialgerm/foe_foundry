@@ -1,0 +1,52 @@
+{
+    "name": "Razorback Crab",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., burrow 15 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "aggressive",
+        "marine"
+    ],
+    "adjectives": [
+        "spiky",
+        "tough",
+        "aggressive"
+    ],
+    "description": "The Razorback Crab features a distinctive spiky shell and aggressive physical attacks, allowing it to control the battlefield effectively.",
+    "memorable": "Its Bladed Shell inflicts slashing damage on contact, deterring close attacks.",
+    "goals": "To defend its territory and grapple potential threats.",
+    "relations": "May be found alongside other aquatic creatures or as a predator to smaller marine life.",
+    "environment": "Coastal areas, beaches, or areas near freshwater sources.",
+    "strengths": "High Armor Class and notable grappling abilities make it a formidable opponent in melee combat.",
+    "weaknesses": "Lacks mobility options and has low intelligence, making it predictable in battle.",
+    "attacks": "Uses multiattack to combine Claw and Shell Bash attacks, grappling foes with powerful claws.",
+    "most_powerful_ability": "The Bladed Shell feature inflicts damage when enemies engage it in melee.",
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect nearby movement.",
+    "skills": "Has average perception skills, giving it basic awareness of its surroundings.",
+    "additional_information": [
+        "Can knock opponents prone with its Pounce ability.",
+        "Utilizes grappling as a strategy to control combat.",
+        "Physical attacks include bludgeoning and slashing damage.",
+        "Good durability due to strong Constitution.",
+        "No special magical abilities or spells."
+    ],
+    "damage_types": [
+        "slashing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aggressive spiky shell creature",
+        "beach monster with powerful claws",
+        "medium-sized crab that grapples",
+        "Razorback Crab's abilities in combat",
+        "marine beast with bladed shell"
+    ]
+}

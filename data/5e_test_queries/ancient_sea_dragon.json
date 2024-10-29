@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Sea Dragon",
+    "queries": [
+        {
+            "query": "massive dragon immune to cold living in the ocean",
+            "variant": "huge dragon that is cold immune and dwells in the sea"
+        },
+        {
+            "query": "Gargantuan dragon that can breathe both air and water",
+            "variant": "huge dragon able to breathe air and water"
+        },
+        {
+            "query": "dragon with strong bite attack and Tidal Breath ability",
+            "variant": "dragon that has a powerful bite and a Tidal Breath attack"
+        },
+        {
+            "query": "sea creature that instills fear and has high Constitution",
+            "variant": "ocean-dwelling monster that causes fear and has a high Constitution score"
+        },
+        {
+            "query": "dragon that deals double damage to structures and has multiattack",
+            "variant": "dragon inflicting double damage to objects with multiattack feature"
+        }
+    ]
+}

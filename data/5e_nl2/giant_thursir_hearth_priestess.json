@@ -1,0 +1,51 @@
+{
+    "name": "Giant, Thursir Hearth Priestess",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walks at 40 feet",
+    "role": "Support",
+    "tags": [
+        "giant",
+        "spellcaster",
+        "support"
+    ],
+    "adjectives": [
+        "powerful",
+        "imposing"
+    ],
+    "description": "A large giant with magical capabilities that enhances allies and delivers strong melee attacks.",
+    "memorable": "Possesses magic resistance and the ability to support allies through unique spells and abilities.",
+    "goals": "To support allies in battle while delivering powerful attacks.",
+    "relations": "May work closely with other giants or entities aligned to lawful evil powers.",
+    "environment": "Often found in mountainous or heavily fortified areas.",
+    "strengths": "High hit points and magical resistance provide excellent survivability.",
+    "weaknesses": "Reliance on spellcasting and coordination with allies can be exploited.",
+    "attacks": "Utilizes a magical Runic Staff for bludgeoning and fire damage, along with supportive spells.",
+    "most_powerful_ability": "Hearth Blessing can significantly empower allies with various effects.",
+    "equipment": "Runic Staff",
+    "senses": "Possesses a passive Perception of 13, indicating she is aware of her surroundings.",
+    "skills": "Proficient in Wisdom saves, allowing her to resist effects that target Wisdom.",
+    "additional_information": [
+        "Magic attacks can bypass resistance from non-magical creatures.",
+        "The Protect the Hearth ability allows allies to quickly reposition.",
+        "Can cast supportive spells multiple times a day, enhancing the party's effectiveness.",
+        "High Constitution grants good defense against physical ailments.",
+        "Offers various empowerment options, tailoring support to allies' needs."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells like Cure Wounds, Heat Metal, and Haste to support allies.",
+    "test_queries": [
+        "powerful giant with healing magic",
+        "giant that supports allies with spells",
+        "fire-infused attacks from a priestess",
+        "lawful evil giant healer on the battlefield",
+        "large giant with magical weapon attacks"
+    ]
+}

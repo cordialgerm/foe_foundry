@@ -1,6 +1,8 @@
 <MonsterName/>Brownie Mystic</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15</AC>
+<HP/>82</HP>
 <summary>The Brownie Mystic is a small fey creature known for its beneficial nature and magical prowess. It possesses a good Armor Class of 15 along with a substantial pool of Hit Points, totaling 82. This makes it relatively resilient for a creature of its size. The Brownie Mystic has impressive Dexterity, which enhances its ability to evade attacks and perform agile maneuvers, coupled with good Constitution, ensuring it can endure in combat. However, its Strength is significantly low, making it unable to engage in heavy physical confrontations. With a Challenge Rating of 5, it is suitable for a party of adventurers with moderate experience. Its notable abilities include magic resistance, which grants it an advantage in saving throws against spells, and the ability to communicate with beasts.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Brownie Mystic can turn invisible, remaining undetected until 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Brownie Mystic
 
 *Tiny* *Fey* *neutral good*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Wis (DC 13) no material components: At will: mending minor illusion prestidigitation3/day ea: entangle mirror image1/day ea: confusion conjure animals dimension door
 
 
+</statblock>
 
 

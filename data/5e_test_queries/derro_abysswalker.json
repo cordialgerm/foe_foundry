@@ -1,0 +1,25 @@
+{
+    "name": "Derro, Abysswalker",
+    "queries": [
+        {
+            "query": "small humanoid creature with poison abilities and chaotic nature",
+            "variant": "humanoid creature that is small and has chaotic poison abilities"
+        },
+        {
+            "query": "monster immune to poison and has an advantage against being frightened",
+            "variant": "creature that is immune to poison and resistant to being frightened"
+        },
+        {
+            "query": "Abysswalker with darkvision and multiattack abilities",
+            "variant": "darkvision creature Abysswalker that can make multiattacks"
+        },
+        {
+            "query": "chaotic evil creature that uses poisonous vapors and grappling claws",
+            "variant": "this creature of chaotic evil uses grappling claws and poisonous vapors"
+        },
+        {
+            "query": "Derro with sunlight sensitivity and strong dexterity",
+            "variant": "Derro creature that has strong dexterity and sensitivity to sunlight"
+        }
+    ]
+}

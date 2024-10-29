@@ -1,0 +1,49 @@
+{
+    "name": "Ratfolk Warlock",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Small",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "swim at 10 ft., walk at 25 ft.",
+    "role": null,
+    "tags": [
+        "ratfolk",
+        "warlock",
+        "caster",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "nimble",
+        "charismatic",
+        "resourceful"
+    ],
+    "description": "The Ratfolk Warlock is a small humanoid characterized by dexterous movements, high Charisma, and a mix of melee and spellcasting capabilities.",
+    "memorable": "This creature seamlessly blends agility with powerful spellcasting abilities and can manipulate shadows with its unique actions.",
+    "goals": "To support its allies in combat, control the battlefield with spells, and evade direct confrontations.",
+    "relations": "Typically found among ratfolk or in alliances with other spellcasting creatures.",
+    "environment": "Often encountered in urban settings or near magical locales where it can practice its spells.",
+    "strengths": "High Dexterity and Charisma, capable of strong spellcasting and evasive tactics.",
+    "weaknesses": "Low Strength and average Constitution make it vulnerable in direct physical confrontations.",
+    "attacks": "Uses a dagger for piercing damage or a quarterstaff for bludgeoning damage; strong focus on spellcasting.",
+    "most_powerful_ability": "Darken ability restrains enemies with tendrils of shadow, providing tactical advantages during combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Arcana, Deception, and Perception, enhancing its magical knowledge and social interactions.",
+    "additional_information": [
+        "Gains advantage on attack rolls with Pack Tactics when allies are nearby.",
+        "Can cast a variety of spells that control light and darkness.",
+        "Utilizes agility to maneuver through larger creatures' spaces."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster using Charisma, with access to a variety of utility and offensive spells.",
+    "test_queries": [
+        "nimble magical rat humanoid",
+        "small humanoid with powerful spells",
+        "spellcaster that uses shadows in combat",
+        "charismatic ratfolk with strategic abilities",
+        "ratlike creature that commands tendrils of darkness"
+    ]
+}

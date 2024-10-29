@@ -1,6 +1,8 @@
 <MonsterName/>Corrupted Chieftain</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>7</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Corrupted Chieftain is a formidable opponent, embodying the chaotic evil typically associated with giants. Its large frame, combined with impressive physical attributes, grants it significant offensive capabilities. With a challenge rating of 7, this giant can absorb considerable damage with 133 hit points and an armor class of 17 due to its natural armor. Its strengths lie in its high strength (23), granting it exceptional melee attack damage, as well as its constitution (18), which enhances its durability in combat. However, it is notably weak in dexterity (8) and intelligence (5), which reflects a poor ability to dodge attacks and perform complex problem-solving. The chieftain wields both magical weaponry and powerful abilities that can turn the tide of battle, making it a terrifying foe for adventurers.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Chieftain’s Command allows the giant to grant advantage on the next attack rol
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Corrupted Chieftain
 
 *Large* *Giant* *Chaotic Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Aggressive:** The corrupted chieftain moves up to its speed toward a hostile creature it can see.
+</statblock>
 
 

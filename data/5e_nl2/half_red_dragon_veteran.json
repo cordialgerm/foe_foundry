@@ -1,0 +1,52 @@
+{
+    "name": "Half-Red Dragon Veteran",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed, can reposition without opportunity attacks",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "fire",
+        "fighter"
+    ],
+    "adjectives": [
+        "draconic",
+        "tactical",
+        "ferocious"
+    ],
+    "description": "A humanoid warrior with draconic features, armored and wielding a longsword and shortsword, breathing fire.",
+    "memorable": "The veteran combines martial combat skills with a powerful breath weapon, making it a versatile adversary.",
+    "goals": "To dominate the battlefield using strength and tactical positioning.",
+    "relations": "Related to other draconic creatures; may command lesser dragons or dragon-like beings.",
+    "environment": "Common in combat zones or regions associated with dragons.",
+    "strengths": "High melee attack bonuses, fire resistance, effective breath weapon.",
+    "weaknesses": "Average dexterity and wisdom reduce effectiveness in certain situations.",
+    "attacks": "Utilizes a longsword for slashing damage, a shortsword for piercing damage, and a heavy crossbow for ranged attacks.",
+    "most_powerful_ability": "Fire Breath, a powerful area-of-effect attack that deals substantial fire damage.",
+    "equipment": "Longsword, shortsword, and a heavy crossbow.",
+    "senses": "Blindsight out to 10 feet allows it to sense nearby creatures even in darkness.",
+    "skills": "Proficient in athletics for strong physical prowess and intimidation, along with basic perception.",
+    "additional_information": [
+        "Gains advantage while making melee attacks due to tactical movement.",
+        "Can retaliate against missed melee attacks with off-hand counter.",
+        "Each turn after its breath attack, enemies can suffer ongoing fire damage if not extinguished.",
+        "Good saving throws against physical threats.",
+        "Strategically utilizes movement to avoid being flanked."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid warrior with fire breath",
+        "tactical fighter with draconic heritage",
+        "creature resistant to fire attacks",
+        "medium dragon-like humanoid with swords",
+        "combat veteran with area fire damage"
+    ]
+}

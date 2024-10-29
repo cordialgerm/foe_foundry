@@ -1,0 +1,25 @@
+{
+    "name": "Ion Slime",
+    "queries": [
+        {
+            "query": "small ooze creature that excels in agility and is vulnerable to cold damage",
+            "variant": "small slime monster that is agile and weak to cold attacks"
+        },
+        {
+            "query": "ooze that absorbs lightning damage and moves through tight spaces",
+            "variant": "slime that can take in lightning and fit through narrow openings"
+        },
+        {
+            "query": "Ion Slime with supercharge ability and high constitution",
+            "variant": "Ion Slime that has supercharge and very high constitution"
+        },
+        {
+            "query": "lightning-damaging ooze with multiattack and blindsight",
+            "variant": "lightning-inflicting slime that can attack twice and has blindsight"
+        },
+        {
+            "query": "creature immune to exhaustion that can climb walls easily",
+            "variant": "monster that cannot get exhausted and can easily scale surfaces"
+        }
+    ]
+}

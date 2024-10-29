@@ -1,0 +1,25 @@
+{
+    "name": "Otterfolk",
+    "queries": [
+        {
+            "query": "small humanoid that excels in stealth and lives near water",
+            "variant": "humanoid that is small, good at stealth and dwells in aquatic regions"
+        },
+        {
+            "query": "playful creature with darkvision and survival skills in wilderness",
+            "variant": "creature known for its playful nature, has darkvision and good survival abilities"
+        },
+        {
+            "query": "aquatic monster with special abilities for evasion and tracking reptiles",
+            "variant": "water-dwelling creature with unique skills for escaping and following reptilian foes"
+        },
+        {
+            "query": "Otterfolk advantages in combat and aquatic environments",
+            "variant": "advantages of the Otterfolk in battle and its aquatic habitat"
+        },
+        {
+            "query": "creature with hold breath ability and good Dexterity stat",
+            "variant": "being that can hold its breath and has high Dexterity"
+        }
+    ]
+}

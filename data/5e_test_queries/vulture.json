@@ -1,0 +1,25 @@
+{
+    "name": "Vulture",
+    "queries": [
+        {
+            "query": "scavenging bird with sharp beak that feeds on carrion",
+            "variant": "bird that scavenges and has a sharp beak, eating dead animals"
+        },
+        {
+            "query": "large bird known for its keen senses and scavenging abilities in ecosystems",
+            "variant": "big bird recognized for its sharp senses and role as a scavenger in nature"
+        },
+        {
+            "query": "bird with a bald head that circles over dead creatures looking for food",
+            "variant": "bald-headed bird that flies in circles above corpses searching for food"
+        },
+        {
+            "query": "beast that can incapacitate attackers and has a defensive bile ability",
+            "variant": "creature that can incapacitate enemies and has a bile defense mechanism"
+        },
+        {
+            "query": "fragile bird that can fly quickly and has a weak melee attack",
+            "variant": "delicate bird able to fly fast but has a weak attack in close combat"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Infernal Tutor",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 182,
+    "ac": 17,
+    "srd": false,
+    "cr": "13",
+    "movement": "30 feet walk speed",
+    "role": "Controller",
+    "tags": [
+        "fiend",
+        "psychic",
+        "manipulation",
+        "magic",
+        "charm"
+    ],
+    "adjectives": [
+        "intelligent",
+        "manipulative",
+        "psychic",
+        "charming",
+        "strategic"
+    ],
+    "description": "The Infernal Tutor is a Medium fiend with a sinister appearance, characterized by its lawful evil demeanor and an aura of authority. It possesses remarkable magical abilities, high charismatic presence, and a keen intellect.",
+    "memorable": "It can charm targets, making them see it as an ally and can inflict significant psychic damage.",
+    "goals": "To manipulate and control humanoids, often through enchantments and psychic influence.",
+    "relations": "Often encountered with other fiends, serving in evil cults or dark alliances.",
+    "environment": "Typically found in dark, sinister locales, often in positions of power or influence.",
+    "strengths": "Exceptional Charisma and Intelligence enhance its spellcasting and manipulation capabilities. It also enjoys a high magical resistance.",
+    "weaknesses": "Lower physical strength and moderate Constitution make it less resilient in direct combat.",
+    "attacks": "Uses claws or batons to deal both slashing and psychic damage, with options to incapacitate foes.",
+    "most_powerful_ability": "Fiendish Indoctrination allows it to inflict heavy psychic damage and charm multiple targets at once.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight, allowing it to see through magical darkness.",
+    "skills": "Has proficiency in perception with a passive score of 15, detecting hidden foes effectively.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Phrenic Weapons inflict additional psychic damage with successful hits.",
+        "Weaken Resolve enhances its social manipulation through charming speech.",
+        "Can transform into a Small or Medium humanoid for strategic advantages.",
+        "Str of Character allows it to retaliate with psychic damage after a successful save."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast spells focused on control and manipulation, such as bane, suggestion, and geas, using its high Charisma.",
+    "test_queries": [
+        "manipulative fiend with psychic abilities",
+        "psychic damage dealer that charms enemies",
+        "intelligent fiend that influences humanoids",
+        "fiendish creature with devilish sight",
+        "sinister tutor specializing in enchantments"
+    ]
+}

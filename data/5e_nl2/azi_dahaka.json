@@ -1,0 +1,53 @@
+{
+    "name": "Azi Dahaka",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 15,
+    "srd": false,
+    "cr": "14",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "chaotic evil",
+        "apex predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "resilient"
+    ],
+    "description": "Azi Dahaka is a large, three-headed dragon with scales that reflect its chaotic nature. It possesses powerful jaws and claws capable of delivering devastating attacks. Its appearance is imposing, embodying raw power and menace.",
+    "memorable": "Its three-headed form and ability to control weather, along with devastating storm breath attacks, make Azi Dahaka a unique and fearsome foe.",
+    "goals": "Azi Dahaka typically seeks to dominate its territory and instill fear in other creatures as a powerful predator.",
+    "relations": "Azi Dahaka might be encountered with other dragons or as a master to lesser chaotic creatures, embodying evil and chaos.",
+    "environment": "Normally found in desolate areas or mountainous regions, where it can exert its dominance.",
+    "strengths": "High durability with substantial hit points, resistance to non-magical damage, and formidable multiattack capabilities.",
+    "weaknesses": "Vulnerable to magical attacks, presenting a tactical challenge for foes skilled in magic.",
+    "attacks": "Its attacks include three powerful bite attacks and two claw attacks per turn, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Storm Breath, a devastating area attack that deals bludgeoning and lightning damage, pushes opponents away, and can extinguish flames.",
+    "equipment": null,
+    "senses": "Azi Dahaka has blindsight extending 60 feet and a passive perception of 21, making it highly aware of its surroundings.",
+    "skills": "Azi Dahaka is proficient in Perception and Stealth, allowing it to effectively scout and ambush enemies.",
+    "additional_information": [
+        "Has Legendary Resistance, allowing it to succeed inherently on failed saves.",
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Reactive Heads allows for additional reactions during combat.",
+        "Vermin Blood ability inflicts damage on melee attackers.",
+        "Capable of altering weather conditions and effectively controlling the battlefield."
+    ],
+    "damage_types": [
+        "lightning",
+        "cold"
+    ],
+    "spellcasting": "Can cast spells such as Control Weather and Call Lightning using legendary actions.",
+    "test_queries": [
+        "three-headed dragon",
+        "chaotic evil dragon",
+        "powerful dragon with storm breath",
+        "apex predator in D&D",
+        "dragon with magical abilities"
+    ]
+}

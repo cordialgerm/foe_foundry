@@ -1,6 +1,8 @@
 <MonsterName/>Stone Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>178</HP>
 <summary>A Stone Golem is a massive construct made from solid rock, crafted through powerful magic to serve as a guardian or enforcer. These towering figures are incredibly strong and resilient, nearly impervious to most physical attacks. Stone Golems are often found guarding ancient temples, tombs, or treasures, standing motionless until commanded to act. Once activated, they are relentless and follow orders without question. Though slow-moving, their crushing strength and durability make them formidable opponents. Stone Golems can also use magic to slow their enemies, turning the tide of battle in their favor.</summary>
 
 <summary>The Stone Golem is a large construct known for its immense strength and durability, making it a formidable opponent in combat. With an armor class of 17, it has very good protection due to its natural armor plus 176 hit points, allowing it to withstand a significant amount of damage before being defeated. Its challenge rating is 10, indicating it is a strong creature typically encountered by mid to high-level adventurers. The golem has limited mobility with a speed of 30 feet but compensates for this with powerful melee attacks and special abilities. It has a mixture of strengths and weaknesses; notable strengths include its immunity to non-magical attacks and several conditions, while its lack of intelligence and charisma makes it less resilient to certain magical effects that rely on mental influence.</summary>
@@ -21,6 +23,7 @@ As a bonus action, the Stone Golem can use Rearrange Stone, altering the configu
 
 Source: 5e_srd
 
+<statblock>
 ### Stone Golem
 
 *Large construct, unaligned*
@@ -57,7 +60,8 @@ Source: 5e_srd
 
 ***Slam***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 19 (3d8+6) bludgeoning damage.
 
-***Slow (Recharge 5-6)***. The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+***Slow (Recharge 5-6)***. The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</statblock>
+
 
 
 
@@ -65,6 +69,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Stone Golem
 
 *Large construct*
@@ -104,5 +109,6 @@ Source: 5e_artisinal_monsters
 	- Jagged Stones. The golem turns several of the stones of its body to point outward. Its AC is reduced by 2, and each time a creature within 5 feet of the golem hits it with a melee attack, the attacker takes 5 (2d4) piercing damage.
 	- Protective Slabs. The golem slides several flat stones around its body to protect its vulnerable areas. Its speed is reduced by 10 feet, and each time it takes damage, the damage is reduced by 5 (2d4).
 
+</statblock>
 
 

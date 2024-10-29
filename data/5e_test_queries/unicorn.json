@@ -1,0 +1,25 @@
+{
+    "name": "Unicorn",
+    "queries": [
+        {
+            "query": "majestic celestial horse with a magical horn",
+            "variant": "celestial horse with a magical horn that is majestic"
+        },
+        {
+            "query": "healing creature that protects forests and sacred places",
+            "variant": "a creature that heals and protects sacred places and forests"
+        },
+        {
+            "query": "graceful unicorn that has healing magic and teleportation abilities",
+            "variant": "unicorn with teleportation abilities and graceful healing magic"
+        },
+        {
+            "query": "large magical creature known for its beauty and purity",
+            "variant": "beautiful large magical creature known for its purity"
+        },
+        {
+            "query": "good-aligned creature that is immune to poison and charmed",
+            "variant": "creature aligned with good that is immune to charm and poison"
+        }
+    ]
+}

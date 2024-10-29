@@ -1,0 +1,51 @@
+{
+    "name": "Kamaitachi",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 84,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking, 15 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "stealthy",
+        "chaotic",
+        "winter"
+    ],
+    "adjectives": [
+        "elusive",
+        "agile",
+        "menacing"
+    ],
+    "description": "The Kamaitachi is a small and elusive creature resembling a swirling mass of ice and snow, with sharp sickle-like claws and a chaotic demeanor.",
+    "memorable": "It can polymorph into a deceptive swirl of snow, making it difficult to detect and a dangerous ambusher in snowy terrains.",
+    "goals": "Thrives on chaos and stealth, often ambushing prey.",
+    "relations": "May be encountered alongside other winter-themed creatures and serves as a wild card in conflicts.",
+    "environment": "Typically found in snowy environments where it can utilize its abilities to maximum effect.",
+    "strengths": "High agility and unique ability to disguise itself as snow, making it hard to pin down.",
+    "weaknesses": "Struggles in direct confrontations, relying instead on stealth and environmental advantages.",
+    "attacks": "Employs sickle paw attacks that deal significant slashing damage and can use wintry assault to blind foes.",
+    "most_powerful_ability": "Shapechanger allows it to polymorph into a whirlwind of snow, gaining numerous advantages.",
+    "senses": "Possesses keen smell, giving it advantage on perception checks related to smell.",
+    "skills": "Excels in acrobatics and stealth, allowing for impressive maneuverability in combat.",
+    "additional_information": [
+        "Has resistance to cold damage.",
+        "Attack rolls against it have disadvantage when using its Concealing Snow ability.",
+        "Can fly 40 ft. while in its Wintry Swirl Form.",
+        "May avoid opportunity attacks while flying.",
+        "Can cause blinding conditions with its Wintry Assault ability."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile monster made of snow",
+        "creature that can turn into snow and fly",
+        "menacing ambusher in snowy environments",
+        "slippery winter monster with claw attacks",
+        "elusive monster that blinds with cold damage"
+    ]
+}

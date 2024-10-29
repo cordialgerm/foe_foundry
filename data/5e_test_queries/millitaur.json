@@ -1,0 +1,25 @@
+{
+    "name": "Millitaur",
+    "queries": [
+        {
+            "query": "large bull-like creature that uses poison and supports allies",
+            "variant": "big bull monster that supports friends and uses poison"
+        },
+        {
+            "query": "monstrosity with darkvision that excels in melee combat",
+            "variant": "creature with darkvision that is great in close combat"
+        },
+        {
+            "query": "creature with Healing Tonic ability and poison resistant",
+            "variant": "monster that has healing abilities and resists poison"
+        },
+        {
+            "query": "dual nature monster that fights using Handaxes",
+            "variant": "creature with two forms that attacks with Handaxes"
+        },
+        {
+            "query": "Millitaur habitat and battle strategy",
+            "variant": "where does the Millitaur live and how does it fight"
+        }
+    ]
+}

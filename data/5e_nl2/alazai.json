@@ -1,0 +1,53 @@
+{
+    "name": "Alazai",
+    "creature_type": "Elemental",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 149,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "chaotic",
+        "fire"
+    ],
+    "adjectives": [
+        "chaotic",
+        "formidable",
+        "unpredictable"
+    ],
+    "description": "The Alazai is a large elemental creature characterized by its fiery nature and chaotic appearance, often remaining mostly invisible under normal circumstances.",
+    "memorable": "The Alazai's ability to maintain conditional invisibility and its powerful fire attacks make it a daunting and unpredictable opponent.",
+    "goals": "To engage in chaotic interactions and battles, leveraging its elemental nature to disrupt foes.",
+    "relations": "It could be encountered with other elementals or creatures that thrive in chaotic environments.",
+    "environment": "Typically found in fiery or chaotic locales, where its elemental nature can flourish.",
+    "strengths": "Immunities to fire and poison grant it exceptional resilience against many attacks.",
+    "weaknesses": "Cold iron weapons can reveal its location and weaken its fire-related abilities.",
+    "attacks": "The Alazai delivers powerful melee and ranged fire attacks, igniting targets upon contact and creating devastating areas of effect around it.",
+    "most_powerful_ability": "Scorching Aura, which can cause significant fire damage and disrupt opponents' use of metal weapons and armor.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has a high Constitution score, giving it a vast pool of hit points.",
+        "Can squeeze through very tight spaces with ease due to its fire form.",
+        "Does not require air, food, drink, or sleep, allowing it to operate continuously.",
+        "Can engage in multiattacks, showcasing versatility in combat.",
+        "Attacks can cause ongoing damage to targets that are ignited."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire elemental creature",
+        "chaotic fire spirit",
+        "elemental with invisibility",
+        "monster with fire immunity",
+        "creature that disrupts metal"
+    ]
+}

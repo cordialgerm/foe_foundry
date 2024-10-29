@@ -1,0 +1,25 @@
+{
+    "name": "Snake Lamia",
+    "queries": [
+        {
+            "query": "large snake monster that can charm and manipulate others",
+            "variant": "big snake creature that can charm and deceive others"
+        },
+        {
+            "query": "snake-like creature with darkvision that casts spells",
+            "variant": "serpent creature with dark vision that can cast spells"
+        },
+        {
+            "query": "chaotic evil monstrosity with strong charisma and magical abilities",
+            "variant": "chaotic evil creature with high charisma and spellcasting powers"
+        },
+        {
+            "query": "monstrous snake that uses hypnotic patterns and can teleport",
+            "variant": "monster snake that can teleport and cast hypnotic patterns"
+        },
+        {
+            "query": "large creature that grapples opponents and has poison attacks",
+            "variant": "big creature that can grapple targets and has poison abilities"
+        }
+    ]
+}

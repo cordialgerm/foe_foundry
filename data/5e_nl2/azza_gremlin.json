@@ -1,0 +1,53 @@
+{
+    "name": "Azza Gremlin",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Small",
+    "hp": 7,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "lightning",
+        "mischievous"
+    ],
+    "adjectives": [
+        "agile",
+        "electric",
+        "unpredictable"
+    ],
+    "description": "The Azza Gremlin is a small fey creature known for its mischievous nature and affinity for lightning, distinguished by its vibrant energy and electric abilities.",
+    "memorable": "Its ability to manipulate lightning and teleport along bolts makes it a tricky opponent who can control the battlefield.",
+    "goals": "Causing mischief and utilizing its lightning abilities to disrupt foes.",
+    "relations": "Often found near other fey creatures or as a chaotic element in natural environments.",
+    "environment": "Typically inhabits areas associated with thunderstorms or enchanted forests.",
+    "strengths": "Immunity to lightning and thunder damage, highly dexterous with a strong ability to evade attacks.",
+    "weaknesses": "Very low Strength limits its capability for melee combat.",
+    "attacks": "Lightning Jolt deals 6 lightning damage and can impose the Contagious Lightning effect on its target.",
+    "most_powerful_ability": "Contagious Lightning makes foes vulnerable to future lightning attacks and can paralyze them if struck again.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, enhancing its sensory perception in dim conditions.",
+    "skills": null,
+    "additional_information": [
+        "Can communicate in Common and Primordial, relying on its Charisma for interactions.",
+        "High Dexterity allows for effective dodging.",
+        "Ability to teleport along lightning bolts adds strategic depth.",
+        "Imposes disadvantage on saving throws against spells for affected creatures.",
+        "Fragile due to low Hit Points."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "lightning manipulating fey creature",
+        "mischievous gremlin with electric abilities",
+        "small agile lightning fey",
+        "Azza Gremlin encounter",
+        "tricky fey creature"
+    ]
+}

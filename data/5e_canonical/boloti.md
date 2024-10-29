@@ -1,6 +1,8 @@
 <MonsterName/>Boloti</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>45</HP>
 <summary>The Boloti is a Tiny Fey creature known for its cunning and agility, embodying a neutral evil alignment. This creature excels in aquatic environments, using its special abilities and skills to enhance its combat effectiveness, particularly when submerged in water. With an Armor Class of 15 and Hit Points totaling 45, the Boloti can withstand a fair amount of damage while also being exceptionally fast, capable of walking 60 feet per turn. Its defining feature is its dual nature, allowing it to switch between a true form and a vortex form, adapting its tactics to the environment. However, it is somewhat limited when on dry land, facing disadvantages that can be exploited by careful opponents. Overall, the Boloti poses a moderate threat in aquatic scenarios, boasting good offensive capabilities coupled with strategic maneuvering.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Boloti can transform into a Vortex Form, allowing it to b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Boloti
 
 *Tiny* *Fey* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Vortex Form:** The boloti magically transforms into a Small vortex of swirling, churning water or back into its true form, which is Fey. The boloti can transform into its vortex form only while at least half of its body is submerged in water, and any creature it is grappling with Whirlpool is freed if the boloti transforms back to its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
+</statblock>
 
 

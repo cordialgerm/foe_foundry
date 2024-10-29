@@ -1,0 +1,25 @@
+{
+    "name": "Mirage Monster",
+    "queries": [
+        {
+            "query": "huge monster with deception abilities that ambushes in combat",
+            "variant": "huge creature that ambushes in combat and has deceptive powers"
+        },
+        {
+            "query": "ambush predator that can disguise itself as an object and restrain foes",
+            "variant": "predatory creature that can mimic objects and ensnare enemies"
+        },
+        {
+            "query": "monster that uses sticky attacks and can swallow smaller creatures",
+            "variant": "creature with sticky abilities that swallows medium or smaller foes"
+        },
+        {
+            "query": "strong melee creature that excels at stealth and battlefield control",
+            "variant": "stealthy monster that is strong in melee and controls the battlefield"
+        },
+        {
+            "query": "cunning monster with melee attacks and telepathic senses",
+            "variant": "sly creature with strong physical attacks and telepathic abilities"
+        }
+    ]
+}

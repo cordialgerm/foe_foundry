@@ -1,6 +1,9 @@
 <MonsterName/>Gnoll</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>gnoll</Subtype>
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>22</HP>
 <summary>A Gnoll is a hyena-like humanoid, known for its savage and brutal nature. Standing over six feet tall, Gnolls are covered in matted fur and wield crude weapons such as axes and spears. They are chaotic and bloodthirsty, often attacking in packs to overwhelm their enemies. Gnolls are driven by a hunger for destruction and are known to serve dark gods or demonic forces. They roam in warbands, raiding villages and slaughtering any who stand in their way. Though not particularly intelligent, their strength and ferocity make them dangerous opponents.</summary>
 
 <summary>The Gnoll is a medium humanoid creature known for its aggressive nature and teamwork in combat, making it a formidable opponent despite its relatively low challenge rating of 1/2, which grants it 100 experience points. With an Armor Class of 14 and 22 hit points, the Gnoll can withstand a fair amount of damage. Its physical attributes show a preferred strength score of 14, granting it a good modifier of +2, while its dexterity is average with a score of 12 and a +1 modifier. However, its intelligence and wisdom are both low, at 10 and 8 respectively, giving it average and bad modifiers, which limits its effectiveness in skill checks and spellcasting. The Gnoll is equipped with a unique ability called Pack Tactics, allowing it to gain advantage on attack rolls when fighting alongside allies. This means it’s more likely to hit its target when in a group, enhancing its overall threat level during combat.</summary>
@@ -33,6 +36,7 @@ As a reaction, the Gnoll can use Rampage when it reduces an opponent to 0 hit po
 
 Source: 5e_srd
 
+<statblock>
 ## Gnoll
 
 *Medium humanoid (gnoll), chaotic evil*
@@ -61,7 +65,8 @@ Source: 5e_srd
 
 ***Spear***. *Melee or Ranged Weapon Attack:* +4 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 5 (1d6+2) piercing damage, or 6 (1d8+2) piercing damage if used with two hands to make a melee attack.
 
-***Longbow***. *Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 5 (1d8+1) piercing damage.
+***Longbow***. *Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 5 (1d8+1) piercing damage.</statblock>
+
 
 
 
@@ -69,6 +74,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnoll
 
 *Medium* *Humanoid*
@@ -100,6 +106,7 @@ Source: 5e_artisinal_monsters
 - **Rampaging Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one bloodied creature. Hit: 4 (1d4 + 2) piercing damage.
 
 
+</statblock>
 
 
 
@@ -108,6 +115,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gnoll
 
 *Medium humanoid*
@@ -144,5 +152,6 @@ Source: 5e_artisinal_monsters
 
 - **Rampage.** When the gnoll reduces a creature to 0 HP, it can move up to half its speed and make one Bite attack. If it does, attack rolls against it have advantage until the start of its next turn.
 
+</statblock>
 
 

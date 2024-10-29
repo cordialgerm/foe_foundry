@@ -1,0 +1,52 @@
+{
+    "name": "Kobold War Machine",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 25 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "battlefield",
+        "damage dealer"
+    ],
+    "adjectives": [
+        "formidable",
+        "battlefield-dominating",
+        "resilient"
+    ],
+    "description": "A large, armored construct with exceptional physical strength and a design focused on battlefield dominance, featuring spiked wheels and fire breath.",
+    "memorable": "Its ability to carry operators while being immune to numerous effects makes it a unique and powerful battlefield presence.",
+    "goals": "To dominate the battlefield through damage output and structural destruction, while relying on skilled operators.",
+    "relations": "Often operated by kobolds, enhancing their combat effectiveness.",
+    "environment": "Typically found in war zones or areas where kobolds are preparing for battle.",
+    "strengths": "High damage output; immune to many conditions and damage effects, making it hard to disable.",
+    "weaknesses": "Low intelligence limits its independent function; effectiveness depends heavily on the presence of operators.",
+    "attacks": "Utilizes spiked wheel attacks for close combat and spits fire projectiles for ranged assaults.",
+    "most_powerful_ability": "Fire Breath: Exhales a damaging cone of fire, dealing significant area damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses good athleticism, capable of showcasing impressive feats of movement.",
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Can function normally with at least one operator.",
+        "Deals double damage to structures as a Siege Monster.",
+        "Can knock targets prone with a successful spiked wheel attack.",
+        "Requires skilled kobold operators to maximize effectiveness."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large armored battlefield construct",
+        "kobold-operated war machine with fire breath",
+        "Kobold mechanical siege machine",
+        "tough construct with spiked wheels",
+        "battlefield war machine immune to conditions"
+    ]
+}

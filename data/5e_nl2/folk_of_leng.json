@@ -1,0 +1,55 @@
+{
+    "name": "Folk of Leng",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "psychic",
+        "magic",
+        "humanoid",
+        "mystical"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "mystical",
+        "deceptive"
+    ],
+    "description": "The Folk of Leng is a Medium humanoid known for its cunning and mystical capabilities, enhanced by its robust hit points and formidable Dexterity and Charisma.",
+    "memorable": "Its unique ability to regenerate and resurrect after death unless killed with radiant damage makes it a challenging foe.",
+    "goals": "The Folk of Leng seeks to manipulate and deceive others, using its magical abilities and combat skills.",
+    "relations": "The Folk of Leng is connected to the mystical land of Leng and may interact with various magic-using creatures.",
+    "environment": "It can be found in various environments but particularly thrives in places where it can manipulate others, such as urban areas or mystical realms.",
+    "strengths": "It is immune to necrotic damage and resistant to cold, making it durable against several types of attacks.",
+    "weaknesses": "Vulnerable to radiant damage, which can prevent it from regenerating and resurrecting.",
+    "attacks": "Attacks include a scimitar strike dealing slashing plus psychic damage, a ranged psychic bolt, and net attacks that restrain and poison.",
+    "most_powerful_ability": "Its Leng Rejuvenation ability allows it to resurrect after death unless specific conditions, such as radiant damage, are met.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, reflecting its heightened awareness.",
+    "skills": "Skilled in Arcana, Deception, and has good perception.",
+    "additional_information": [
+        "Can cast spells without material components using Charisma.",
+        "Ethereal Sight allows it to see into the Ethereal Plane.",
+        "Makes melee attacks magical and adds psychic damage.",
+        "Can shift between the Material and Ethereal Plane as a bonus action.",
+        "Regenerates hit points each turn unless it takes specific damage."
+    ],
+    "damage_types": [
+        "psychic",
+        "poison"
+    ],
+    "spellcasting": "Can cast minor spells at will and has access to disguise self and suggestion three times per day.",
+    "test_queries": [
+        "humanoid with psychic abilities and regeneration",
+        "stealthy monster that can attack from the ethereal plane",
+        "creature that can manipulate and deceive with magic",
+        "mystical being immune to necrotic damage",
+        "monster that can see into the ethereal plane"
+    ]
+}

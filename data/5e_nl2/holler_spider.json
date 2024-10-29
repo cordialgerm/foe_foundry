@@ -1,0 +1,51 @@
+{
+    "name": "Holler Spider",
+    "creature_type": "Beast",
+    "alignment": "chaotic neutral",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "climb 25 ft., walk 25 ft.",
+    "role": "ambusher",
+    "tags": [
+        "spider",
+        "thunder",
+        "quiet"
+    ],
+    "adjectives": [
+        "tiny",
+        "stealthy",
+        "chaotic"
+    ],
+    "description": "The Holler Spider is a tiny, stealthy beast with a vibrant black body and agile legs, known for its unpredictable behavior.",
+    "memorable": "It can emit a powerful thunderous sound that can displace enemies and alert allies.",
+    "goals": "The Holler Spider typically seeks to ambush prey and protect its territory.",
+    "relations": "Often found alongside other small beasts or used by spellcasters for reconnaissance.",
+    "environment": "Commonly inhabits forested areas and caves, where it can easily climb and hide.",
+    "strengths": "Possesses exceptional agility and stealth capabilities, making it a difficult target to spot.",
+    "weaknesses": "Low physical strength limits its effectiveness in close combat.",
+    "attacks": "Includes a melee Bite attack that delivers piercing damage, and a ranged Hoot attack that inflicts thunder damage.",
+    "most_powerful_ability": "Distressed Discharge, which creates a thunderous cacophony that damages and pushes enemies away.",
+    "senses": "Blindsight allows it to detect movement nearby, enhancing its ambush predator abilities.",
+    "skills": "It has proficiency in stealth and perception, making it a skilled ambush attacker.",
+    "additional_information": [
+        "Can climb difficult surfaces with ease.",
+        "Gains advantage on perception and stealth checks when motionless.",
+        "Emits a loud alarm to warn allies of approaching threats.",
+        "Can push enemies back with critical hits.",
+        "Resistance to thunder damage."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny spider that emits loud noises",
+        "climbing spider with thunder attack",
+        "stealthy beast with ambush tactics",
+        "small creature that creates cacophony",
+        "spider that warns allies with alarm"
+    ]
+}

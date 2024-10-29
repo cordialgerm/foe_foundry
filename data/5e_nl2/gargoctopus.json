@@ -1,0 +1,50 @@
+{
+    "name": "Gargoctopus",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 104,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 feet climbing, 40 feet swimming, 40 feet walking",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "stealthy"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "adaptable"
+    ],
+    "description": "The Gargoctopus is a large reptilian creature with six tentacles, exhibiting notable camouflage abilities and a tough natural armor.",
+    "memorable": "Its ability to grapple multiple opponents while controlling the battlefield with ink clouds makes it a unique threat.",
+    "goals": "To ambush and overpower its prey in aquatic environments.",
+    "relations": "Often found in conjunction with other sea creatures and may dominate underwater territories.",
+    "environment": "Typically inhabits underwater or aquatic areas.",
+    "strengths": "High strength and intelligence allowing for effective melee attacks and strategic combat decisions.",
+    "weaknesses": "Moderate Dexterity and lack of ranged attacks makes it vulnerable to quicker opponents.",
+    "attacks": "Can make multiple attacks with long-reaching tentacles or a powerful bite, with the ability to grapple opponents.",
+    "most_powerful_ability": "Tentacle Slam, which can stun multiple grappled creatures and deal significant damage.",
+    "equipment": null,
+    "senses": "It has darkvision allowing it to see in darkness up to 60 feet.",
+    "skills": "Proficient in history, investigation, perception, and stealth, showcasing a high level of awareness and cunning.",
+    "additional_information": [
+        "Amphibious, can breathe both air and water.",
+        "Shifting camouflage for advantage on stealth checks.",
+        "Spider climb ability to traverse difficult surfaces seamlessly.",
+        "Ink cloud that creates heavily obscured areas for tactical advantage.",
+        "Can grapple multiple creatures simultaneously, increasing control in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large tentacled monster of the sea",
+        "ambush predator with ink cloud ability",
+        "grappling sea creature with camouflage",
+        "aquatic beast that climbs walls effortlessly",
+        "monster that throws opponents in combat"
+    ]
+}

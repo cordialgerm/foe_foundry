@@ -1,0 +1,50 @@
+{
+    "name": "Scorchrunner Jackal",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 38,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "sunlight",
+        "mobility"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "fiery"
+    ],
+    "description": "The Scorchrunner Jackal is a medium-sized monstrosity that thrives in brightly lit environments, showcasing a sleek form that allows it to dart swiftly between shadows and sunlight. It has a fiery presence and an affinity for heat.",
+    "memorable": "Its ability to become more accurate and lethal in sunlight makes it a unique opponent, as it uses both physical and magical attacks effectively while remaining evasive.",
+    "goals": "To hunt and ambush prey in sunlight, using its agility and fire affinity to outmaneuver opponents.",
+    "relations": "Could be found alongside other fire-themed monstrosities, often in deserts or sunlit open areas.",
+    "environment": "Typically found in warm, sunny areas or deserts.",
+    "strengths": "Immunity to fire damage and enhanced mobility in sunlight increase its effectiveness in combat.",
+    "weaknesses": "Low Strength score makes it less effective in direct melee combat and it has limited hit points.",
+    "attacks": "It can make two attacks using its Bite for piercing damage or a Flame Ray for ranged fire damage, enhancing its tactical options.",
+    "most_powerful_ability": "Day Hunter lets it add extra accuracy in sunlight, making its attacks deadlier.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 14, allowing it to spot hidden creatures and hazards effectively.",
+    "skills": "It has proficiency in Dexterity saving throws, enabling it to dodge traps and ranged attacks.",
+    "additional_information": [
+        "Can take the Dash or Dodge action as a bonus in sunlight for better mobility.",
+        "Gains half-cover after successfully hitting with Flame Ray, enhancing its defense.",
+        "Utilizes its swift movement to evade attacks while counterattacking."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile fiery jackal in sunlight",
+        "cunning monster that attacks in daylight",
+        "mobility-focused creature with flame attacks",
+        "fiery jackal that skirmishes in bright areas",
+        "fast monster with fire immunity in combat"
+    ]
+}

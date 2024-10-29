@@ -1,0 +1,52 @@
+{
+    "name": "Tatzelwurm",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "poison",
+        "area denial"
+    ],
+    "adjectives": [
+        "cunning",
+        "ferocious",
+        "toxic"
+    ],
+    "description": "The Tatzelwurm is a medium-sized dragon noted for its cunning nature and ferocity in combat. It possesses a scaled body and exhibits both mobility in climbing and fierce melee abilities. Its poisonous attacks make it particularly dangerous up close.",
+    "memorable": "Its poisonous blood and breath, which can incapacitate foes, make the Tatzelwurm a formidable opponent to encounter.",
+    "goals": "To intimidate opponents and establish territory through brute force and poison.",
+    "relations": "Related to other dragon species, but often found alone or in small numbers.",
+    "environment": "Typically found in rugged terrains and mountainous areas where it can utilize its climbing ability.",
+    "strengths": "Immunity to poison damage and ability to deal both piercing and poison damage in melee.",
+    "weaknesses": "Low intelligence reduces its tactical abilities in combat.",
+    "attacks": "Bite attack with significant piercing and poison damage, plus slashing damage from claws.",
+    "most_powerful_ability": "The Poisonous Breath can engulf multiple foes in a cloud of poisonous vapor, causing considerable harm and leaving them poisoned.",
+    "equipment": null,
+    "senses": "Blindsight for up to 10 feet helps it perceive its surroundings in close quarters.",
+    "skills": "Average perception, with a passive score of 14 that allows it to notice threats nearby.",
+    "additional_information": [
+        "Can knock targets prone and follow up with a bite attack.",
+        "Poisonous blood triggers damage to nearby creatures when injured.",
+        "Legendary actions allow it to reposition and frighten foes.",
+        "Cannot be poisoned or knocked prone due to its special immunities.",
+        "Significant area denial capabilities with its poisonous breath."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that breathes poison",
+        "climbing dragon with toxic attacks",
+        "medium dragon known for poisonous blood",
+        "ferocious dragon that can knock targets prone",
+        "cunning creature of the mountains with poisoned breath"
+    ]
+}

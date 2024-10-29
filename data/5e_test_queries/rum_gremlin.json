@@ -1,0 +1,25 @@
+{
+    "name": "Rum Gremlin",
+    "queries": [
+        {
+            "query": "tiny fey monster that creates drunkenness aura",
+            "variant": "small fey creature that has an aura of drunkenness"
+        },
+        {
+            "query": "mischievous creature with high Dexterity that can cause chaos",
+            "variant": "chaotic creature skilled in stealth with high agility"
+        },
+        {
+            "query": "fey creature immune to poisoning and skilled at hiding",
+            "variant": "fey monster that can\u2019t be poisoned and excellent at stealth"
+        },
+        {
+            "query": "Rum Gremlin abilities including Magic Resistance and Aura of Drunkenness",
+            "variant": "abilities of the Rum Gremlin including its aura and magic resistance"
+        },
+        {
+            "query": "small creature that can cast spells and uses Claws for attacks",
+            "variant": "tiny monster that casts spells and attacks with claws"
+        }
+    ]
+}

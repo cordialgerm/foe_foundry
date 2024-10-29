@@ -1,6 +1,8 @@
 <MonsterName/>Hawk, Blood</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>8</HP>
 <summary>The Blood Hawk is a small beast known for its agility and keen eyesight, making it an effective scout and aerial attacker in combat. With a Challenge Rating of 1/8, it is considered relatively weak but can be surprisingly effective in groups due to its Pack Tactics ability, which provides it with an advantage on attack rolls when working alongside allies. Its offensive capabilities include a beak attack that can inflict piercing damage. The Blood Hawk is exceptionally fast, being able to fly at a speed of 60 feet, which enhances its ability to maneuver in combat. However, its low armor class and hit points make it vulnerable, requiring careful positioning to avoid being easily dispatched.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ As a bonus action, the Blood Hawk can use Evasive Flight to either disengage fro
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hawk, Blood
 
 *Small beast*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 
 - **Evasive Flight.** The hawk takes the Disengage or Dodge action. It can use this bonus action only while flying.
 
+</statblock>
 
 

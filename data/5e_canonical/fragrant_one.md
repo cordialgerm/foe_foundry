@@ -1,6 +1,8 @@
 <MonsterName/>Fragrant One</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>11</AC>
+<HP/>45</HP>
 <summary>The Fragrant One is a small fey creature characterized by a chaotic neutral alignment. It serves as a manipulative charm caster, capable of influencing the minds of others with its sweet-smelling pheromones. With an Armor Class of 11, it possesses only average defense capabilities. However, it boasts a notable pool of hit points at 45, making it reasonably resilient. The Fragrant One is effective at mind control, using its charm abilities to bend allies to its will, which also enhances its own combat effectiveness as it gains temporary hit points and deals extra damage when surrounded by charmed allies. Despite its prowess in charm and manipulation, it has low physical strength indicated by a Strength score of 7, resulting in a very bad modifier, which makes it vulnerable in physical confrontations.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a reaction, the Fragrant One can employ the Interpose Ally ability. When targ
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fragrant One
 
 *Small* *Fey* *chaotic neutral*
@@ -61,5 +64,6 @@ The fragrant one can have no more than six creatures charmed at a time. The frag
 - **Interpose Ally:** When a creature the fragrant one can see targets it with an attack, the fragrant one can force a charmed ally within 5 feet of it to move between it and the attack. The charmed ally becomes the target of the attack instead. If the charmed ally takes damage from this attack, it can immediately repeat the Fragrant Aura’s saving throw, ending the charmed condition on itself on a success.
 
 
+</statblock>
 
 

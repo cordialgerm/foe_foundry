@@ -1,0 +1,25 @@
+{
+    "name": "Monolith Footman",
+    "queries": [
+        {
+            "query": "large construct with cold and fire damage abilities",
+            "variant": "big construct that has abilities dealing cold and fire damage"
+        },
+        {
+            "query": "imposing creature immune to poison found in fey environments",
+            "variant": "intimidating being that can't be poisoned and appears in fey areas"
+        },
+        {
+            "query": "battlefield presence that can paralyze and create illusions",
+            "variant": "combat entity that can stun and generate illusions"
+        },
+        {
+            "query": "magic-enhanced weapon attacks from a resilient construct",
+            "variant": "construct with enhanced magical weapon strikes and strong defenses"
+        },
+        {
+            "query": "defensive creature that requires no food or sleep and resists many damage types",
+            "variant": "creature with great defenses that doesn't need food or rest and has resistances to various damage"
+        }
+    ]
+}

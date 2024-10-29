@@ -1,0 +1,51 @@
+{
+    "name": "Avestruzii Champion",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "champion",
+        "fighter"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "strong",
+        "durable"
+    ],
+    "description": "The Avestruzii Champion is well-armored in scale mail and wields a Greataxe, showcasing a powerful physique with a sturdy build reflecting its combat prowess.",
+    "memorable": "The champion can strike twice with its Greataxe and has the ability to push enemies back, disrupting their formations, making it a strategic threat in combat.",
+    "goals": "To dominate opponents in battle using brute strength and tactical positioning.",
+    "relations": "May work alongside other warriors or serve a leader in battle contexts.",
+    "environment": "Typically found in combat arenas or military encampments.",
+    "strengths": "High Strength and Constitution scores provide robust combat capabilities and durability.",
+    "weaknesses": "Average Dexterity limits its agility in combat, making it less evasive.",
+    "attacks": "Multiattack with two Greataxe strikes and a Claw attack in close range; also has a ranged option with a Shortbow.",
+    "most_powerful_ability": "The ability to push a target back after a successful Greataxe hit, allowing it to control the battlefield.",
+    "equipment": "Equipped with a Greataxe and scale mail for protection.",
+    "senses": "Passive Perception of 12 indicates average awareness in combat scenarios.",
+    "skills": "Has average Perception proficiency, reflecting its awareness of surroundings.",
+    "additional_information": [
+        "Gains defensive advantages with the 'Dig In' reaction.",
+        "Capable of dealing both melee and ranged damage.",
+        "Effective in team combat scenarios due to its strong attack options."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong humanoid warrior",
+        "Avestruzii Champion combat abilities",
+        "humanoid with a greataxe",
+        "formidable battle champion",
+        "Avestruzii warrior tactics"
+    ]
+}

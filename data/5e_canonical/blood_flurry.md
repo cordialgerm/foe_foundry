@@ -1,6 +1,8 @@
 <MonsterName/>Blood Flurry</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Blood Flurry is a medium-sized aberration characterized by its neutral evil alignment. This creature has a unique and unsettling appearance, resembling a swirling collection of snowflakes when it remains motionless. It has a notable capacity for mobility, being able to fly at 40 feet, but its walking speed is limited to just 15 feet. With a challenge rating of 10, the Blood Flurry poses a significant threat to adventurers, particularly due to its substantial hit points of 144. It maintains an exceptional Dexterity score of 21, which provides it with a +5 modifier, allowing it to evade attacks effectively. However, its physical strength is puny, with a Strength score of 5, resulting in a -3 modifier, making it very ineffective in melee combat. The creature possesses resistant and immune traits, such as damage resistance to cold, bludgeoning, piercing, and slashing damage, along with immunity to numerous conditions including charmed and frightened. This combination of traits makes the Blood Flurry a resilient opponent in combat, but it does have vulnerabilities, particularly to rust-related effects due to its iron-heavy diet.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ In terms of actions, the Blood Flurry can execute a Multiattack action, allowing
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Blood Flurry
 
 *Medium* *Aberration* *neutral evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Free Bleeding Cuts:** Melee Weapon Attack: +9 to hit 0' 1 tgt in the swarm’s space. 27 (6d8) slashing damage or 13 (3d8) slashing damage if flurry has half of its hp or fewer. If target is a creature other than an Undead or a Construct: DC 16 Con save or lose 13 (3d8) hp at start of each of its turns due to a bleeding wound. Any creature can take an action to stanch the wound with successful DC 12 Wis (Medicine) check. Wound also closes if target receives magical healing.
 
 
+</statblock>
 
 

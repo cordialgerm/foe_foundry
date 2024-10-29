@@ -1,0 +1,49 @@
+{
+    "name": "Beggar Ghoul",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ambusher",
+        "ghoul"
+    ],
+    "adjectives": [
+        "chaotic",
+        "menacing"
+    ],
+    "description": "The Beggar Ghoul is a medium undead creature with deceptive charisma and unnerving presence, capable of frightening ambushes through its savage nature.",
+    "memorable": "Its ability to paralyze foes alongside its penchant for surprise attacks makes the Beggar Ghoul particularly dangerous in groups.",
+    "goals": "To ambush and dominate unsuspecting adventurers, leveraging its cunning and teamwork.",
+    "relations": "Typically found in the company of other undead or malicious creatures, using Pack Tactics to enhance its combat effectiveness.",
+    "environment": "Dark, abandoned urban areas or graveyards where it can effectively use the element of surprise.",
+    "strengths": "Utilizes ambush tactics and Pack Tactics to gain advantage on attacks, making it a formidable opponent when outnumbering its foes.",
+    "weaknesses": "Vulnerable to radiant damage, lacking strong defenses, particularly when isolated.",
+    "attacks": "The Beggar Ghoul primarily attacks with a vicious Bite and sharp Claws, the latter having the potential to paralyze non-undead targets.",
+    "most_powerful_ability": "Savage Hunger allows its Bite attack to score critical hits on surprised creatures, greatly increasing potential damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": null,
+    "additional_information": [
+        "Requires no air or sleep, making it vigilant and ever-watchful.",
+        "Works effectively in team settings due to its Pack Tactics ability.",
+        "Non-elf or undead targets risk paralysis from its Claws attack.",
+        "Relies on surprise to inflict devastating critical hits.",
+        "Characterized by its chaotic evil nature and unsettling presence."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead ambush creature",
+        "paralyzing ghoul",
+        "creepy undead attacker",
+        "sneaky beggar ghoul",
+        "chaotic evil undead"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Fire-Infused Water Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "swim 90 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "Elemental",
+        "Fire",
+        "Water"
+    ],
+    "adjectives": [
+        "formidable",
+        "unique",
+        "resilient",
+        "fiery"
+    ],
+    "description": "This Huge elemental creature combines properties of water with fiery essence, showcasing its dual elemental nature. It has strong physical appearance and is visually striking with its swirling water and flames.",
+    "memorable": "Combines water and fire, making it a unique challenge with special abilities like Water Form and Scald.",
+    "goals": "To engage enemies in battle and utilize its elemental abilities to control the battlefield.",
+    "relations": "Related to other elemental creatures and water entities, potentially serving larger elemental forces.",
+    "environment": "Typically found in aquatic or fiery environments.",
+    "strengths": "Immune to poison and numerous conditions, extensive movement abilities, and strong melee attacks.",
+    "weaknesses": "Low Intelligence and Charisma limit cognitive abilities.",
+    "attacks": "Can perform multiple melee slam attacks dealing bludgeoning and fire damage.",
+    "most_powerful_ability": "Scald ability unleashes a cone of superheated water, dealing significant damage and knocking enemies prone.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison and various conditions.",
+        "Resistances to acid, cold, fire, and nonmagical physical attacks.",
+        "Ability to squeeze through narrow spaces with Water Form.",
+        "Combat versatility with a strong multiattack.",
+        "Capable of controlling enemy positioning with Scald."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire and water elemental creature",
+        "unique elemental with water and fire",
+        "massive elemental with high melee damage",
+        "fiery water creature with control abilities",
+        "giant elemental that combines fire and water"
+    ]
+}

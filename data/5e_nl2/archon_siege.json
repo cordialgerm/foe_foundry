@@ -1,0 +1,52 @@
+{
+    "name": "Archon, Siege",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Huge",
+    "hp": 187,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "combatant",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "resilient",
+        "destructive"
+    ],
+    "description": "The Archon, Siege, is a Huge celestial creature with immense physical strength, adorned in plate armor. Its powerful physique and celestial nature make it a potent combatant on the battlefield.",
+    "memorable": "Its Siege Monster ability allows it to deal double damage to structures, making it exceptionally dangerous during sieges.",
+    "goals": "To serve as a powerful ally in battles, utilizing its physical strength and magical abilities to protect and enforce order.",
+    "relations": "Typically encountered alongside other celestial beings, such as angels or divine protectors.",
+    "environment": "Often found in battlefields or areas requiring formidable defense against invading forces.",
+    "strengths": "Resistant to radiant damage and non-magical attacks, with immunities to being charmed, exhausted, or frightened.",
+    "weaknesses": "Vulnerable to tactics leveraging its somewhat weaker defense against ranged attacks.",
+    "attacks": "Can perform multiattacks with its Trunk Maul, dealing both bludgeoning and force damage, or unleash powerful Trumpeting Blasts dealing thunder damage.",
+    "most_powerful_ability": "Sundering Quake, which can deal massive area-of-effect force damage and potentially collapse structures.",
+    "equipment": "wields a Trunk Maul that strikes with magical force damage",
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through illusions and invisibility, alongside a passive perception score of 20.",
+    "skills": "Has proficiency in perception, enabling it to notice hidden creatures or objects effectively.",
+    "additional_information": [
+        "Immortal Nature allows it to stay vigilant without needing food, drink, or sleep.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "False Appearance enables ambush tactics by remaining indistinguishable from an inanimate statue."
+    ],
+    "damage_types": [
+        "force",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial protector",
+        "huge siege monster",
+        "formidable battlefield ally",
+        "truesight celestial creature",
+        "destructive battle archon"
+    ]
+}

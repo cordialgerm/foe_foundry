@@ -1,0 +1,25 @@
+{
+    "name": "Marid",
+    "queries": [
+        {
+            "query": "large water elemental with trident attacks and fog ability",
+            "variant": "huge elemental of water with fog cloud and trident strikes"
+        },
+        {
+            "query": "water creature that can breathe both air and water and has strong defenses",
+            "variant": "creature that lives in water and air with high defenses and can breathe both"
+        },
+        {
+            "query": "mighty elemental with lightning resistance and spellcasting abilities",
+            "variant": "powerful elemental that resists lightning and has magic spells"
+        },
+        {
+            "query": "marid that can manipulate water and create fog for tactical advantages",
+            "variant": "marid capable of controlling water and generating fog for strategy"
+        },
+        {
+            "query": "creature with high Constitution and Dexterity that uses nets and water jets",
+            "variant": "being with great Constitution and Dexterity using nets and jets of water"
+        }
+    ]
+}

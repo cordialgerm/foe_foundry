@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Dwarf Lord",
+    "queries": [
+        {
+            "query": "dwarf combat expert with magic resistance and heavy armor",
+            "variant": "dawrf combat master with magc resistance and heavy armor"
+        },
+        {
+            "query": "tough humanoid that uses a battleaxe and commands allies",
+            "variant": "tough human that uses battleaxe and commands allies"
+        },
+        {
+            "query": "strong dwarf lord with high hit points and inspiring abilities",
+            "variant": "strong dwarf lord with hgh hit points and inspiring abilities"
+        },
+        {
+            "query": "Mountain Dwarf Lord abilities for combat and protection",
+            "variant": "Mountain Dwarf Lord abilties for combat and protection"
+        },
+        {
+            "query": "durable melee fighter wearing heavy armor and using a longbow",
+            "variant": "durable mlle fighter wearng heavy armor and usng a longbow"
+        }
+    ]
+}

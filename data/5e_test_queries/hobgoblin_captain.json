@@ -1,0 +1,25 @@
+{
+    "name": "Hobgoblin Captain",
+    "queries": [
+        {
+            "query": "tactical humanoid creature that inspires allies",
+            "variant": "humanoid creature that inspires allies and is tactical"
+        },
+        {
+            "query": "strong hobgoblin leader with slashing attacks",
+            "variant": "hobgoblin captain strong with slashing attacks"
+        },
+        {
+            "query": "medium goblinoid with darkvision and command abilities",
+            "variant": "goblinoid with command abilities and darkvision medium"
+        },
+        {
+            "query": "strategic military leader in combat with high AC",
+            "variant": "combat leader with high AC that is strategic"
+        },
+        {
+            "query": "hobgoblin with javelins and greatsword attacks",
+            "variant": "hobgoblin using greatsword and javelin attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Elf Spellcaster Drider",
+    "queries": [
+        {
+            "query": "large spider-like creature that can cast spells and prefers darkness",
+            "variant": "big creature like a spider that casts spells and enjoys dark places"
+        },
+        {
+            "query": "vulnerable to sunlight, powerful at night with spellcasting abilities",
+            "variant": "weak in sunlight, strong in dark with its spells"
+        },
+        {
+            "query": "agile drider with poison resistance and high melee damage",
+            "variant": "quick drider that resists poison and deals a lot of melee damage"
+        },
+        {
+            "query": "spellcasting monstrosity that wheels both claws and a longbow",
+            "variant": "monstrous spell user that uses claws and shoots a longbow"
+        },
+        {
+            "query": "shadow elf drider that excels in perception and stealth while climbing",
+            "variant": "shadow elf like drider good at sneaking and seeing while on walls"
+        }
+    ]
+}

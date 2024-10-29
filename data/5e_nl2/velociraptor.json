@@ -1,0 +1,49 @@
+{
+    "name": "Velociraptor",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Small",
+    "hp": 25,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "pack",
+        "agile",
+        "predator"
+    ],
+    "adjectives": [
+        "small",
+        "quick",
+        "coordinated"
+    ],
+    "description": "The Velociraptor is a small but agile beast known for its quickness and deadly coordination in packs, characterized by its sharp claws and beak.",
+    "memorable": "The Velociraptor uses Pack Tactics to enhance its attacks, making it a cunning opponent when in groups.",
+    "goals": "Hunt effectively in packs, restrain prey, and evade attacks.",
+    "relations": "Often found hunting alongside other predators.",
+    "environment": "Typically found in dense forests or open plains.",
+    "strengths": "Exceptional Dexterity allows it to evade attacks and land hits easily, especially when working with allies.",
+    "weaknesses": "Low Strength and Intelligence scores make it less effective in direct combat and strategic planning.",
+    "attacks": "Utilizes a combination of claw and bite attacks, able to grapple and restrain opponents.",
+    "most_powerful_ability": "Pack Tactics grants advantage on attack rolls against creatures threatened by its allies.",
+    "equipment": null,
+    "senses": "It has a high Stealth score of 14, allowing it to remain hidden effectively.",
+    "skills": "Good at staying stealthy and has decent perception.",
+    "additional_information": [
+        "Critical hits against it are treated as normal hits due to its Hardy ability.",
+        "Can grapple and restrain creatures, effectively controlling the battlefield.",
+        "Capable of dealing substantial damage through its Maul action while grappling.",
+        "Works better in groups due to its Pack Tactics ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small quick pack hunter",
+        "agile creature with deadly coordination",
+        "predator that works well in groups",
+        "quick beast with grappling ability",
+        "creature that evades attacks easily"
+    ]
+}

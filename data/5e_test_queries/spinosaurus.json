@@ -1,0 +1,25 @@
+{
+    "name": "Spinosaurus",
+    "queries": [
+        {
+            "query": "gargantuan predator with a grappling attack that lives in water",
+            "variant": "huge predator that can grapple its foes and swims in water"
+        },
+        {
+            "query": "massive dinosaur-like creature with a frightful presence and double damage to structures",
+            "variant": "enormous dinosaur-like beast that terrifies others and deals double damage to buildings"
+        },
+        {
+            "query": "strong beast with natural armor and a unique affinity for reptilian humanoids",
+            "variant": "powerful creature that has natural armor and favors reptilian humanoids"
+        },
+        {
+            "query": "large beast with high hit points that can hold its breath and attacks with claws and bite",
+            "variant": "big creature with lots of hit points that can breathe underwater and attacks using claws and a bite"
+        },
+        {
+            "query": "aquatic dinosaur with super strength and a low intelligence score",
+            "variant": "water-dwelling dinosaur that is incredibly strong but not very smart"
+        }
+    ]
+}

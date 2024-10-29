@@ -1,0 +1,25 @@
+{
+    "name": "Azeban",
+    "queries": [
+        {
+            "query": "fey creature with high mobility and magic resistance",
+            "variant": "fey being with great speed and spell resistance"
+        },
+        {
+            "query": "charming fey monster that uses deception in battle",
+            "variant": "deceptive fey beast known for its charm in combat"
+        },
+        {
+            "query": "medium-sized fey that can climb and cast spells",
+            "variant": "medium fey that can use spellcasting and climb"
+        },
+        {
+            "query": "monster with natural armor and thunder damage abilities",
+            "variant": "creature with natural defense and abilities dealing thunder damage"
+        },
+        {
+            "query": "chaotic neutral creature that can become invisible and has claws",
+            "variant": "creature of chaotic nature that has invisibility powers and claws"
+        }
+    ]
+}

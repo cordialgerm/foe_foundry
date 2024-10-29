@@ -1,0 +1,54 @@
+{
+    "name": "Phase Spider",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 73,
+    "ac": 13,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "spider",
+        "ethereal",
+        "ambush",
+        "predator"
+    ],
+    "adjectives": [
+        "venomous",
+        "stealthy",
+        "predatory",
+        "ethereal"
+    ],
+    "description": "A large, predatory spider with the ability to phase in and out of the Ethereal Plane, making it a master ambusher. It has a venomous bite and agile climbing ability, allowing it to move freely in various environments.",
+    "memorable": "Its terrifying ability to phase between planes makes it a unique and formidable opponent that can ambush and confuse enemies.",
+    "goals": "To hunt prey in the shadows and trap them with its webs, using its phasing ability for escape and positioning.",
+    "relations": "Often found in dark forests, caves, or near planar rifts, Phase Spiders may share their territory with other arachnids or predatory creatures.",
+    "environment": "Typically inhabits dark forests, caves, or planar rifts.",
+    "strengths": "Highly mobile and stealthy, capable of ambushing and evading attacks through ethereal travel.",
+    "weaknesses": "Low intelligence and charisma, making it less strategic in encounters.",
+    "attacks": "Uses a venomous bite that can paralyze targets and a multiattack that includes sharp barbed legs.",
+    "most_powerful_ability": "Ethereal Jaunt allows it to shift between the Material and Ethereal Planes, enhancing its ambush and escape tactics.",
+    "equipment": null,
+    "senses": "Possesses Ethereal Sight, enabling it to perceive creatures in both the Material and Ethereal Planes.",
+    "skills": "Skilled in Stealth with a notable +6 bonus, allowing it to remain hidden effectively.",
+    "additional_information": [
+        "Resistant to the frightened condition and exhaustion.",
+        "Can ignore movement restrictions caused by webs.",
+        "Capable of climbing difficult surfaces, including ceilings.",
+        "Uses webs to restrain prey, allowing for interactions with creatures on the Ethereal Plane.",
+        "The webbing it creates is vulnerable to fire damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous spider that phases between planes",
+        "spider with ability to ambush from shadows",
+        "creature that shifts into ethereal plane",
+        "predatory spider that can paralyze",
+        "stealthy spider found in dark forests"
+    ]
+}

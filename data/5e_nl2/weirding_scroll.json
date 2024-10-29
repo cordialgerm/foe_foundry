@@ -1,0 +1,53 @@
+{
+    "name": "Weirding Scroll",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 27,
+    "ac": 10,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 10 ft., walk 0 ft.",
+    "role": null,
+    "tags": [
+        "magical",
+        "deceptive",
+        "construct"
+    ],
+    "adjectives": [
+        "tiny",
+        "fascinating",
+        "vulnerable to fire"
+    ],
+    "description": "The Weirding Scroll is a tiny, unaligned construct that resembles a normal scroll and possesses unique magical abilities.",
+    "memorable": "Its ability to dominate humanoids telepathically makes it a uniquely dangerous opponent despite its low physical capabilities.",
+    "goals": "Typically aims to manipulate or control humanoids using its telepathic abilities.",
+    "relations": "Can be encountered alongside other magical constructs or as a guardian for arcane treasures.",
+    "environment": "Usually found in magical laboratories or arcane libraries.",
+    "strengths": "Strong against poison and psychic damage, with high immunity to conditions.",
+    "weaknesses": "Vulnerable to fire damage, significantly reducing its survivability.",
+    "attacks": "Can dominate humanoids at a distance and use the Tendril of Light for psychic and radiant damage.",
+    "most_powerful_ability": "Ability to dominate a humanoid telepathically for up to one hour.",
+    "equipment": null,
+    "senses": "Possesses blindsight within a 60-foot radius, allowing it to detect creatures without sight.",
+    "skills": "Skilled in deception, enabling effective trickery and manipulation.",
+    "additional_information": [
+        "Immunities to various conditions make it durable against status effects.",
+        "Can communicate telepathically within 120 feet.",
+        "Incapacitated in an antimagic field, limiting its effectiveness.",
+        "Has a false appearance ability to blend in as a normal scroll.",
+        "High intelligence indicating significant magical understanding."
+    ],
+    "damage_types": [
+        "psychic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny magical scroll that dominates humanoids",
+        "construct with telepathic powers and false appearance",
+        "magical creature vulnerable to fire and immune to poison",
+        "animated scroll that manipulates and deceives",
+        "flying construct with psychic damage abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Adult White Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with icy breath that hunts in frozen wastelands",
+            "variant": "large dragon that has an icy breath and hunts in cold areas"
+        },
+        {
+            "query": "white dragon that can burrow through snow and has legendary resistance",
+            "variant": "dragon that is white and can dig in snow with legendary resistance"
+        },
+        {
+            "query": "chilly dragon known for its frightful presence and cold immunity",
+            "variant": "frosty dragon recognized for its scary aura and immunity to cold"
+        },
+        {
+            "query": "feral dragon with scales that blend into ice and attacks with claws and bites",
+            "variant": "wild dragon that has scales matching ice and strikes with bites and claws"
+        },
+        {
+            "query": "territorial ice dragon that can freeze enemies and lives in ice caves",
+            "variant": "defensive ice dragon that freezes foes and resides in frozen caves"
+        }
+    ]
+}

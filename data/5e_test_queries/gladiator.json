@@ -1,0 +1,25 @@
+{
+    "name": "Gladiator",
+    "queries": [
+        {
+            "query": "medium humanoid skilled in combat and fights for glory",
+            "variant": "medium humanoid that fights for glory and is skilled in combat"
+        },
+        {
+            "query": "warrior with high strength and various weapons in arenas",
+            "variant": "warrior in arenas with high strength and multiple weapons"
+        },
+        {
+            "query": "tough gladiator that can use shield and spear attacks",
+            "variant": "gladiator capable of attacking with shield and spear and is tough"
+        },
+        {
+            "query": "combat master that uses tactical thinking and intimidation",
+            "variant": "master of combat who utilizes intimidation and tactical thinking"
+        },
+        {
+            "query": "humanoid fighter that can knock opponents prone and perform multiattacks",
+            "variant": "fighter who can knock foes down and execute multiattacks as a humanoid"
+        }
+    ]
+}

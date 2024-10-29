@@ -1,0 +1,59 @@
+{
+    "name": "Werebear",
+    "creature_type": "Humanoid",
+    "creature_subtype": [
+        "human",
+        "lycanthrope",
+        "shapechanger"
+    ],
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 10,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 feet in humanoid form; 40 feet and climbing 30 feet in bear or hybrid form",
+    "role": "Bruiser",
+    "tags": [
+        "werebear",
+        "lycanthrope",
+        "shapechanger",
+        "bear"
+    ],
+    "adjectives": [
+        "noble",
+        "protective",
+        "formidable",
+        "powerful"
+    ],
+    "description": "A humanoid cursed to transform into a massive bear, either fully or in a hybrid form, with thick fur and powerful claws.",
+    "memorable": "Can transmit lycanthropy through its bite and immune to non-silvered weapons.",
+    "goals": "To guard its territory and protect allies.",
+    "relations": "Associated with other lycanthropes and bears.",
+    "environment": "Forests and wilderness areas.",
+    "strengths": "Exceptional physical strength and resilience; has a Multiattack feature.",
+    "weaknesses": "Vulnerable to silvered weapons and wolfsbane.",
+    "attacks": "Can make two claw attacks, or use a greataxe in humanoid form, or a bite attack in bear form.",
+    "most_powerful_ability": "Shapechanger - can transform into bear or hybrid form, maintaining its statistics.",
+    "senses": "Has keen smell, granting it advantage on Perception checks that rely on smell.",
+    "skills": "Has proficiency in Perception, with a +7 bonus in its hybrid forms.",
+    "additional_information": [
+        "Can grapple opponents with claw attacks.",
+        "Curses humanoids bitten with werebear lycanthropy.",
+        "Heightened sensitivity to smell allowing exceptional tracking.",
+        "Can knock grappled creatures prone with a specialized pin maneuver.",
+        "Good at detecting hidden threats due to high passive perception."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shapeshifting bear humanoid creature",
+        "noble protector that turns into a bear",
+        "werebear with powerful claws and bites",
+        "humanoid that can transform into a bear",
+        "creature immune to non-silvered attacks"
+    ]
+}

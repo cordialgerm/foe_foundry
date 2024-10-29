@@ -1,0 +1,52 @@
+{
+    "name": "Guard",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 16,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 feet speed, typical movement",
+    "role": "Defender",
+    "tags": [
+        "guard",
+        "soldier",
+        "watchman"
+    ],
+    "adjectives": [
+        "disciplined",
+        "reliable",
+        "protective"
+    ],
+    "description": "A medium humanoid, the Guard is clad in armor and carries weapons like swords, spears, or crossbows. They are trained to maintain order and defend important locations.",
+    "memorable": "Guards are steadfast defenders with the ability to protect allies using their Protector\u2019s Parry ability.",
+    "goals": "To maintain order and protect their posts from intruders.",
+    "relations": "Often part of a larger force, Guards may be encountered alongside other city watch or sentries.",
+    "environment": "Typically found in cities, keeps, or noble estates.",
+    "strengths": "Decent armor class of 16 and the ability to engage in melee or ranged combat.",
+    "weaknesses": "Low hit points of 11, making them vulnerable to sustained attacks.",
+    "attacks": "Uses a spear for melee or ranged attacks, capable of dealing 3 to 5 piercing damage depending on usage.",
+    "most_powerful_ability": "Protector\u2019s Parry, allowing them to protect allies from incoming attacks.",
+    "equipment": "Equipped with a spear for combat.",
+    "senses": "Passive perception of 12, allowing them to notice hidden threats.",
+    "skills": "Proficient in perception with a +2 bonus, capable of detecting potential threats.",
+    "additional_information": [
+        "Often part of a city watch or noble's guard.",
+        "Disciplined soldiers trained for combat situations.",
+        "Can coordinate effectively with others in numbers.",
+        "Loyalty to employers strengthens their resolve.",
+        "Basic combat capabilities suitable for low-level encounters."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium armored soldier protecting a city",
+        "guard with protector's parry ability",
+        "watchman attacking with a spear",
+        "humanoid defender in noble estate",
+        "disciplined guard in city watch"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Apprentice Mage</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>10</AC>
+<HP/>11</HP>
 <summary>The Apprentice Mage is a Medium humanoid creature representing a novice spellcaster who has begun their journey into the arcane arts. With a challenge rating of 1/2, this creature is designed to be an entry-level adversary for adventurers, providing a moderate challenge due to its spellcasting capabilities rather than physical prowess. The Apprentice Mage has decent hit points for a lower-tier enemy but possesses minimal armor to defend against attacks. Its reliance on spellcasting allows it to deal damage from a distance and provide utility spells but leaves it vulnerable if engaged in melee combat. While not particularly strong in physical attributes, the Apprentice Mage excels in Intelligence-based skills, enhancing its magical effectiveness.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Apprentice Mage can represent various characters, such as a st
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Apprentice Mage
 
 *Medium* *Humanoid*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Whether a student attending a wizard college or serving a crotchety master:** Apprentice mage statistics can also be used to represent an older hedge wizard of limited accomplishments.
 
 
+</statblock>
 
 

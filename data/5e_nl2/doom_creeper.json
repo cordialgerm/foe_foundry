@@ -1,0 +1,52 @@
+{
+    "name": "Doom Creeper",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 137,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 15 ft., climb 45 ft., burrow 10 ft.",
+    "role": "null",
+    "tags": [
+        "plant",
+        "status effects",
+        "necrotic damage"
+    ],
+    "adjectives": [
+        "menacing",
+        "agile",
+        "debilitating"
+    ],
+    "description": "The Doom Creeper is a small plant creature with a formidable presence. It has a swift, agile form, capable of climbing and burrowing effectively, with a blend of slashing and necrotic attacks.",
+    "memorable": "Its combination of debilitating abilities and necrotic damage makes the Doom Creeper a tactically challenging foe.",
+    "goals": "Typically seeks to immobilize or debilitate opponents while dealing damage.",
+    "relations": "It may be found in areas with other plant creatures or magical beings.",
+    "environment": "Usually found in magical forests or overgrown areas.",
+    "strengths": "High agility with a +5 Dexterity modifier and formidable defensive capabilities through resistances and immunities.",
+    "weaknesses": "Vulnerable to cold damage and low strength limits physical confrontation.",
+    "attacks": "Utilizes Decaying Vine attacks for slashing and necrotic damage, with a magical beam attack that inflicts debilitating effects.",
+    "most_powerful_ability": "Death's Rose allows for a range of debilitating effects such as incapacitation and fear.",
+    "equipment": null,
+    "senses": "Blindsight out to 60 feet allows it to detect creatures without relying on sight.",
+    "skills": "Possesses average perception skills with a +2 modifier.",
+    "additional_information": [
+        "Resistant to bludgeoning and piercing damage.",
+        "Immune to blinded, deafened, and poisoned conditions.",
+        "Has notable speed with the ability to climb and burrow.",
+        "Can inflict a range of debilitating conditions with its magical abilities.",
+        "Lacks social prowess with a very low charisma score."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant monster that disables foes",
+        "agile creature with necrotic attacks",
+        "menacing plant with magical abilities",
+        "debilitating creature that can climb",
+        "small agile plant in magical forests"
+    ]
+}

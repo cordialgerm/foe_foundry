@@ -1,0 +1,52 @@
+{
+    "name": "Wolf Reaver Dwarf",
+    "creature_type": "Humanoid",
+    "alignment": "Any Chaotic Alignment",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 25 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dwarf",
+        "chaotic",
+        "melee",
+        "combat"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "resilient",
+        "chaotic"
+    ],
+    "description": "The Wolf Reaver Dwarf is a sturdy humanoid with a powerful build, featuring chain shirt armor and a shield for protection, and wields a battleaxe, handaxe, and spear for combat.",
+    "memorable": "It combines strong melee attacks with tactical coordination, making it a dangerous opponent in battle.",
+    "goals": "To engage foes in combat while leveraging advantage through teamwork.",
+    "relations": "Often found with other chaotic dwarves or allies that can capitalize on Pack Tactics.",
+    "environment": "Typically encountered in rugged terrain or any battlefield where chaotic beings gather.",
+    "strengths": "Strong physical attributes and resilience make it difficult to bring down; possesses abilities that enhance its combat effectiveness.",
+    "weaknesses": "Lower scores in Intelligence and Charisma may hinder its problem-solving and social capabilities.",
+    "attacks": "Can conduct multiple melee attacks in one turn, utilizing various weapons for maximum damage.",
+    "most_powerful_ability": "Reckless ability allows it to make powerful melee attacks at the risk of attracting more damage.",
+    "equipment": "Battleaxe, handaxe, spear",
+    "senses": "Has darkvision to see in dim light as if it were bright light, allowing effective combat in low visibility.",
+    "skills": "Skilled in Athletics and Intimidation, making it a formidable combatant.",
+    "additional_information": [
+        "Danger Sense grants advantage on Dexterity saving throws.",
+        "Dwarven Resilience provides advantage against poison.",
+        "Pack Tactics increases effectiveness when fighting alongside allies.",
+        "Reckless attack gives it a powerful offensive choice.",
+        "Exceptional Strength allows significant damage output."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical dwarf with strong melee attacks",
+        "resilient dwarf that fights alongside allies",
+        "chaotic humanoid with battleaxe and handaxe",
+        "dwarf that uses pack tactics in combat",
+        "powerful dwarf with high strength and constitution"
+    ]
+}

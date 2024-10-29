@@ -1,0 +1,25 @@
+{
+    "name": "Giant Water Scorpion",
+    "queries": [
+        {
+            "query": "large aquatic beast with poisonous attacks",
+            "variant": "large beast that is aquatic and has poisons"
+        },
+        {
+            "query": "stealthy predator living in water with grapple abilities",
+            "variant": "predatory creature that ambushes in water and can grapple"
+        },
+        {
+            "query": "monster that can hold its breath and has high strength",
+            "variant": "creature with a strong body that can hold breath"
+        },
+        {
+            "query": "creature that uses tail as a breathing tube in water",
+            "variant": "monster that breathes through its tail when near surface"
+        },
+        {
+            "query": "giant scorpion that attacks with claws and proboscis",
+            "variant": "big scorpion using its claws and proboscis for attack"
+        }
+    ]
+}

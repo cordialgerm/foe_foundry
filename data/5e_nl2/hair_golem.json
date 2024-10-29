@@ -1,0 +1,50 @@
+{
+    "name": "Hair Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "constructed creature",
+        "guardian"
+    ],
+    "adjectives": [
+        "unique",
+        "agile",
+        "immunized"
+    ],
+    "description": "A small construct made of hair, notable for its speed and specialized abilities.",
+    "memorable": "Immunity to spells that would alter its form makes it a strong guardian.",
+    "goals": "Typically serves as a guardian or minion, defending its creator.",
+    "relations": "May serve or be created by spellcasters or other constructs.",
+    "environment": "Often found in the service of a creator, potentially in magical locations.",
+    "strengths": "Highly resistant to certain damage types and immune to several conditions.",
+    "weaknesses": "Vulnerable to slashing damage, indicating a significant weakness.",
+    "attacks": "Can perform a Lash attack that deals slashing damage and may knock enemies prone.",
+    "most_powerful_ability": "Immutable Form renders it immune to any spell or effect that would change its form.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, aiding in low-light scenarios.",
+    "skills": null,
+    "additional_information": [
+        "Fast and agile with a high Dexterity score.",
+        "Limited intelligence and charm, making it ineffective outside combat.",
+        "Can resist bludgeoning and piercing damage from non-magical attacks.",
+        "Immunities include charm, exhaustion, fear, paralysis, petrification, and poison.",
+        "Best suited for low-level encounters as a minion."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "hair creature guardian with unique abilities",
+        "small agile construct that resists conditions",
+        "creature immune to form-altering spells",
+        "golem that performs slashing attacks",
+        "low-level golem with high Dexterity score"
+    ]
+}

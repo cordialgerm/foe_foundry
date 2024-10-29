@@ -1,0 +1,50 @@
+{
+    "name": "Brownie",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "magic",
+        "agile"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "agile"
+    ],
+    "description": "The Brownie is a small fey creature characterized by its exceptional agility and connection to nature, embodying a playful yet cunning demeanor.",
+    "memorable": "Its ability to turn invisible and resist magic makes the Brownie a tricky opponent.",
+    "goals": "To support allies with magic and gather information from beasts.",
+    "relations": "Often encountered with woodland creatures and other fey beings.",
+    "environment": "Typically found in forests or natural settings.",
+    "strengths": "High Dexterity gives it excellent evasion capabilities and magic resistance provides great defense against spell effects.",
+    "weaknesses": "Very low physical strength, making it ineffective in direct melee combat.",
+    "attacks": "Uses a Branch Spear for piercing damage, effective in both melee and ranged combat.",
+    "most_powerful_ability": "Invisibility allows it to ambush or evade threats dramatically.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses good perception skills, allowing it to notice hidden occurrences.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Can communicate with beasts, providing tactical advantages.",
+        "Uses Domestic Magic for minor magical tasks like cleaning or repairing.",
+        "Has a high Dexterity score, making it very agile.",
+        "Relies on stealth and magic to outmaneuver opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Mending and Prestidigitation at will.",
+    "test_queries": [
+        "small agile fey that turns invisible",
+        "fey creature that communicates with beasts",
+        "brownie stealth magic and agility",
+        "brownie uses magic resistance and Domestic Magic",
+        "tiny fey with high Dexterity and mischief"
+    ]
+}

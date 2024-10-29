@@ -1,0 +1,25 @@
+{
+    "name": "Scorpionfolk Imperator",
+    "queries": [
+        {
+            "query": "large scorpion creature that can cast spells and grapple opponents",
+            "variant": "big scorpion monster that grapples foes and uses magic"
+        },
+        {
+            "query": "magical scorpion-like monstrosity found in desert environments",
+            "variant": "spellcasting scorpionfolk creature that inhabits deserts"
+        },
+        {
+            "query": "intelligent scorpion humanoid with healing abilities and fiery spells",
+            "variant": "smart scorpionman that can heal and cast fire spells"
+        },
+        {
+            "query": "tactical scorpionfolk able to control the battlefield with wind and fire",
+            "variant": "strategic scorpion-like creature that uses fire and wind to dominate fights"
+        },
+        {
+            "query": "monstrous scorpion folk with decent durability and spellcasting skills",
+            "variant": "creepy scorpionfolk monster with good defenses and magic"
+        }
+    ]
+}

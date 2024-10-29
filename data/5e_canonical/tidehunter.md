@@ -1,6 +1,8 @@
 <MonsterName/>Tidehunter</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>133</HP>
 <summary>The Tidehunter is a formidable Huge Monstrosity that roams both land and water, combining its aquatic prowess with a terrifying melee presence. With a Challenge Rating of 6, it is a significant threat to adventurers and excels in ambush tactics due to its underwater camouflage and net-making skills. Its attributes reflect a creature built for physical combat, boasting a strong Strength score of 19 and a high Constitution of 18, which together enable it to absorb a considerable amount of damage while dealing out its own. However, the Tidehunter suffers from low Intelligence and Charisma, making it less effective in social situations or with intellect-based skills. The creature's speed allows for quick maneuverability both in water and on land, enhancing its hunting capabilities.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Tidehunter is a masterful ambusher and trapper, with robust physica
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tidehunter
 
 *Huge* *Monstrosity* *unaligned*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Entangle Weapon:** When the tidehunter is targeted by a melee weapon attack, the attacker must succeed on a DC 16 Dexterity saving throw or miss the attack as the tidehunter uses its net to interfere with the weapon. The tidehunter must have an empty net to use this reaction.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Dark Voice",
+    "queries": [
+        {
+            "query": "humanoid creature that thrives in darkness and uses psychic attacks",
+            "variant": "humanoid monster that uses psychic abilities and thrives in the darkness"
+        },
+        {
+            "query": "manipulative enemy that suffers in sunlight and has high charisma",
+            "variant": "enemy with high charisma that is manipulative and weak in sunlight"
+        },
+        {
+            "query": "creature with chain mail armor that regenerates in dim light",
+            "variant": "creature with chain mail that heals in dim light conditions"
+        },
+        {
+            "query": "dark humanoid with intimidation skills that can frighten opponents",
+            "variant": "dark humanoid creature that has intimidation abilities to frighten foes"
+        },
+        {
+            "query": "evil humanoid that deals cold damage and can attack at range",
+            "variant": "evil humanoid that attacks at a distance and deals cold damage"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Nian",
+    "queries": [
+        {
+            "query": "large monstrosity that is afraid of loud noises and fire",
+            "variant": "large monster that fears fire and loud sounds"
+        },
+        {
+            "query": "creature with truesight that has a strong fear of red objects",
+            "variant": "creature with true sight that fears red things"
+        },
+        {
+            "query": "chaotic neutral monster that can swim and climb quickly",
+            "variant": "chaotic creature that swims and climbs fast"
+        },
+        {
+            "query": "Nian abilities involving fear and control in combat",
+            "variant": "abilities of Nian related to fear and controlling battles"
+        },
+        {
+            "query": "monster with dark silence ability and a tendency to frighten easily",
+            "variant": "creature that uses dark silence and has a fear of things easily"
+        }
+    ]
+}

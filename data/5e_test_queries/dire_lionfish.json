@@ -1,0 +1,25 @@
+{
+    "name": "Dire Lionfish",
+    "queries": [
+        {
+            "query": "large aquatic predator with poisonous spines",
+            "variant": "large aquatic preditor with poisionus spines"
+        },
+        {
+            "query": "underwater creature that can ambush and inflicts poison",
+            "variant": "creature that ambushed under water and does poison damage"
+        },
+        {
+            "query": "formidable fish that uses camouflage in coral reefs",
+            "variant": "formidable fish using camouflage in coral reef"
+        },
+        {
+            "query": "swimming monster with powerful attack and water breathing",
+            "variant": "monster that swims and has a strong attack and can breathe water"
+        },
+        {
+            "query": "beast that attacks with headbutt and has a large health pool",
+            "variant": "beast attacking with headbut and has large health pool"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Nachzehrer",
+    "queries": [
+        {
+            "query": "undead monster that spreads diseases and weakens strength",
+            "variant": "monster that's undead, spreads diseases and weakens strength"
+        },
+        {
+            "query": "medium-sized creature with necrotic abilities found underground",
+            "variant": "medium creature with necrotic powers that lives underground"
+        },
+        {
+            "query": "chaotic evil creature with high strength and necrotic damage",
+            "variant": "chaotic evil monster with high Strenght and necrotic damage"
+        },
+        {
+            "query": "monster that causes exhaustion and has strong melee attacks",
+            "variant": "creature that induces exhaustion and has strong melee attacks"
+        },
+        {
+            "query": "undead with multiple attacks and contagion effects",
+            "variant": "undead creature with many attacks and contagion abilities"
+        }
+    ]
+}

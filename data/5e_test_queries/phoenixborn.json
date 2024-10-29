@@ -1,0 +1,25 @@
+{
+    "name": "Phoenixborn",
+    "queries": [
+        {
+            "query": "fire and rebirth humanoid creature with flight abilities",
+            "variant": "humanoid creature that embodies fire and rebirth and can fly"
+        },
+        {
+            "query": "creature with fiery attack that can heal itself",
+            "variant": "monster that has a fiery attack and can recover its health"
+        },
+        {
+            "query": "medium humanoid with fire resistance and ranged attacks",
+            "variant": "humanoid creature of medium size that resists fire and can attack from range"
+        },
+        {
+            "query": "talon attack and rebirth ability of a phoenixborn",
+            "variant": "abilities of a phoenixborn including talon attack and rebirth"
+        },
+        {
+            "query": "fiery feathers light source and danger in combat",
+            "variant": "dangerous combat creature with fiery feathers illuminating light"
+        }
+    ]
+}

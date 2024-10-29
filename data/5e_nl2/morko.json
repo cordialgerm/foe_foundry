@@ -1,0 +1,54 @@
+{
+    "name": "Morko",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking speed",
+    "role": "null",
+    "tags": [
+        "fey",
+        "chaotic evil",
+        "deceptive",
+        "magical"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "chaotic"
+    ],
+    "description": "Morko is a small fey creature known for its chaotic evil traits, embodying deception and mischief.",
+    "memorable": "Morko's ability to manipulate its size and use magic resistance makes it a tricky opponent despite its low hit points.",
+    "goals": "Morko thrives on chaos, deception, and mischief, aiming to disrupt and manipulate.",
+    "relations": "Morko may interact with other chaotic fey or serve a more powerful entity of mischief.",
+    "environment": "Typically found in areas where mischief and deception are prevalent, often in forests or fey realms.",
+    "strengths": "Morko has advantage on saving throws against spells, making it resilient against magical attacks.",
+    "weaknesses": "With low hit points and damage output, Morko is vulnerable when caught off guard.",
+    "attacks": "Using a spear for melee or ranged attacks, Morko can deal piercing damage effectively.",
+    "most_powerful_ability": "Disdainful Eye allows Morko to curse its foes, imposing disadvantage on Charisma-based checks.",
+    "equipment": "spear",
+    "senses": "Morko has a passive perception of 12, allowing it to notice hidden threats effectively.",
+    "skills": "Morko excels in stealth with a +6 modifier, making it quite elusive.",
+    "additional_information": [
+        "Morko is resistant to fire and poison damage.",
+        "Can shrink itself and its belongings, altering its combat capability.",
+        "Uses deception as its main tactic in conflicts.",
+        "Cursing enemies makes Morko effective at manipulating battles.",
+        "Possesses a low Charisma score, limiting its social effectiveness."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "deceptive small fey creature",
+        "chaotic fey that curses enemies",
+        "small creature with magic resistance",
+        "fey that can shrink and manipulate size",
+        "mischievous creature that embodies chaos"
+    ]
+}

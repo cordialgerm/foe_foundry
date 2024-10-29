@@ -1,0 +1,25 @@
+{
+    "name": "Deep Drake",
+    "queries": [
+        {
+            "query": "large chaotic evil dragon that inflicts necrotic damage",
+            "variant": "chaotic evil large dragon that deals necrotic damage"
+        },
+        {
+            "query": "Deep Drake abilities and sunlight sensitivity",
+            "variant": "sunlight sensitivity and abilities of the Deep Drake"
+        },
+        {
+            "query": "dragon with stunning breath attack and high armor class",
+            "variant": "high AC dragon that has a stunning breath attack"
+        },
+        {
+            "query": "Deep Drake environment and magical immunity",
+            "variant": "environment of the Deep Drake and its immunity to magic"
+        },
+        {
+            "query": "dragon that uses Multiattack and has blindsight",
+            "variant": "dragon with Multiattack and blindsight capabilities"
+        }
+    ]
+}

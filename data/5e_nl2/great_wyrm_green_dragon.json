@@ -1,0 +1,51 @@
+{
+    "name": "Great Wyrm Green Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Lawful Evil",
+    "size": "Gargantuan",
+    "hp": 840,
+    "ac": 21,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "gargantuan",
+        "poison"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "manipulative"
+    ],
+    "description": "A gargantuan green dragon with a masterful command of both land and aquatic environments, characterized by its cunning nature and ability to manipulate those around it.",
+    "memorable": "This dragon excels in stealth and intimidation while utilizing its powerful poison breath and social manipulation abilities.",
+    "goals": "Typically seeks to dominate its territory and manipulate others to achieve its ends.",
+    "relations": "Often serves as a master to lesser dragons and could be allied with other evil creatures.",
+    "environment": "Commonly found in forests, swamps, or near water bodies.",
+    "strengths": "Immunized against poison and skilled in both combat and manipulation with high damage output and tactical abilities.",
+    "weaknesses": "Relies on saving throws and has a limited number of powerful abilities.",
+    "attacks": "Three attacks per turn featuring a bite, claw strikes, and the ability to spit poison.",
+    "most_powerful_ability": "Poison Breath, which affects a large area and can reduce poison immunity in its targets.",
+    "senses": "Has blindsight up to 60 feet, a high passive Perception of 23, allowing it to detect intruders effectively.",
+    "skills": "Proficient in deception, insight, and stealth, enhancing its ability to manipulate and evade.",
+    "additional_information": [
+        "Legendary Resistance allows it to ignore failed saving throws.",
+        "Possesses the Amphibious trait, enabling it to breathe underwater.",
+        "The Woodland Stalker ability grants advantage on stealth checks in forests.",
+        "Blood Toxicity punishes melee attackers with poison damage.",
+        "Can use powerful spellcasting abilities innately."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can innately cast various spells including animal messenger, tongues, and mass suggestion.",
+    "test_queries": [
+        "formidable gargantuan green dragon in forests",
+        "poison-breathing dragon that can swim",
+        "cunning dragon with stealth abilities",
+        "powerful dragon that manipulates others",
+        "green dragon that excels in combat and deception"
+    ]
+}

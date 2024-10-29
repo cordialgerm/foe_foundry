@@ -1,0 +1,50 @@
+{
+    "name": "Polar Bear",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 42,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet walking, 30 feet swimming",
+    "role": "Bruiser",
+    "tags": [
+        "predator",
+        "hunter",
+        "arctic",
+        "beast"
+    ],
+    "adjectives": [
+        "massive",
+        "white-furred",
+        "ferocious",
+        "resilient"
+    ],
+    "description": "The Polar Bear is a massive, white-furred predator known for its strength and resilience, predominantly found in icy tundras and frozen seas.",
+    "memorable": "Its powerful claws and crushing bites make it a formidable attacker, while its keen sense of smell enhances its hunting prowess.",
+    "goals": "To hunt seals, fish, and defend its territory against intruders.",
+    "relations": "Typically solitary but fiercely protective of its territory and young.",
+    "environment": "Icy tundras and frozen seas.",
+    "strengths": "High Strength score allows for powerful claw and bite attacks.",
+    "weaknesses": "Very low Intelligence and Charisma limits its problem-solving and social interaction abilities.",
+    "attacks": "In combat, the Polar Bear can make a bite attack dealing piercing damage and claw attacks that can grapple smaller creatures.",
+    "most_powerful_ability": "Multiattack allows it to perform two powerful melee attacks in a single turn.",
+    "senses": "Possesses keen smell, granting it advantage on Perception checks based on scent.",
+    "skills": "Has proficiency in Perception, aiding in locating prey.",
+    "additional_information": [
+        "Efficient swimmer, travels long distances over ice and water.",
+        "Solitary by nature, prefers to hunt alone.",
+        "Strong territorial instincts, especially regarding young.",
+        "Effective predator in its frigid environment."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large white predator of the Arctic",
+        "massive beast with powerful claws and bites",
+        "ice-dwelling hunter with keen smell",
+        "solitary bear that excels in swimming",
+        "bruiser animal found in icy tundras"
+    ]
+}

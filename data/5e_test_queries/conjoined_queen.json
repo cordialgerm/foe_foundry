@@ -1,0 +1,25 @@
+{
+    "name": "Conjoined Queen",
+    "queries": [
+        {
+            "query": "large monstrosity with charm abilities and burrowing movement",
+            "variant": "big monster that can charm and has burrowing abilities"
+        },
+        {
+            "query": "queen creature that casts spells and has high hit points",
+            "variant": "creature queen with spellcasting and lots of hit points"
+        },
+        {
+            "query": "chaotic neutral monster with poison immunity and spell resistance",
+            "variant": "neutral monster that is chaotic, resistant to spells and immune to poison"
+        },
+        {
+            "query": "magically versatile queen that excels in melee and spells",
+            "variant": "queen with great spell abilities and good in melee combat"
+        },
+        {
+            "query": "monster with high strength that can stun enemies with pheromones",
+            "variant": "creature with strong attacks that stuns foes using pheromones"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Huli Jing",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 130,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "shapechanger",
+        "spellcaster",
+        "psychic",
+        "charm"
+    ],
+    "adjectives": [
+        "charming",
+        "manipulative",
+        "versatile",
+        "strategic",
+        "seductive"
+    ],
+    "description": "The Huli Jing can transform into a stunning human or a nine-tailed fox, showcasing a blend of beauty and cunning. Its fox form features fiery red fur and ethereal tails.",
+    "memorable": "Its unique ability to change shape and manipulate luck makes it a significant threat in combat and social situations.",
+    "goals": "To charm and manipulate others while using strategy in combat.",
+    "relations": "Often associated with other fey creatures, and can manipulate or charm beings it encounters.",
+    "environment": "Typically found in wooded or mystical areas that resonate with fey magic.",
+    "strengths": "High Charisma and dexterity, versatile in combat, and possesses strong manipulation and illusion spells.",
+    "weaknesses": "Vulnerable to cold iron attacks and relies heavily on deception and spellcasting.",
+    "attacks": "Uses bite attacks in fox form and jade daggers in humanoid form; both deal piercing and psychic damage.",
+    "most_powerful_ability": "Draining Glance allows the Huli Jing to inflict significant psychic damage and regain health.",
+    "equipment": "Jade daggers",
+    "senses": "With a passive perception of 21, the Huli Jing excels at detecting hidden foes and threats.",
+    "skills": "Highly skilled in perception and persuasion, enabling effective charm and deception.",
+    "additional_information": [
+        "Shapechanger ability for versatility in encounters",
+        "Innate spellcasting without material components",
+        "Curse of Luck can hinder multiple opponents",
+        "Resistant to nonmagical physical damage",
+        "Can regain health through its Draining Glance ability"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcaster focused on Charisma, capable of casting enchantments and illusions.",
+    "test_queries": [
+        "deceptive nine-tailed fox monster",
+        "charming creature with shapechanging abilities",
+        "fey monster that manipulates luck and charm",
+        "psychic damage dealing shapechanger in combat",
+        "beautiful fey that uses illusion spells"
+    ]
+}

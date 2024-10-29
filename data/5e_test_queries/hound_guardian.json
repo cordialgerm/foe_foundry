@@ -1,0 +1,25 @@
+{
+    "name": "Hound Guardian",
+    "queries": [
+        {
+            "query": "medium construct that protects its owner with a powerful bite",
+            "variant": "medium construct that guards its master with a strong bite"
+        },
+        {
+            "query": "guardian with keen hearing and smell that is immune to poison",
+            "variant": "protector with sharp hearing and smell that can't be harmed by poison"
+        },
+        {
+            "query": "tough protector creature immune to nonmagical weapons",
+            "variant": "durable guardian creature that is resistant to non-magical weapons"
+        },
+        {
+            "query": "creature designed for protection with a high AC and low intelligence",
+            "variant": "monster built for defense that has high armor class and very low intelligence"
+        },
+        {
+            "query": "swift combat guardian that can respond to threats to its master",
+            "variant": "fast fighting guardian that can react to dangers for its owner"
+        }
+    ]
+}

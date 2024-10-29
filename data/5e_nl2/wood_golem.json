@@ -1,0 +1,52 @@
+{
+    "name": "Wood Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "golem",
+        "protector"
+    ],
+    "adjectives": [
+        "tough",
+        "durable",
+        "strong"
+    ],
+    "description": "The Wood Golem is a medium-sized construct made of wood, designed as a protector or enforcer. It has considerable physical strength, low intelligence, and sturdy natural armor.",
+    "memorable": "Notably resilient against many effects, with magic resistance and a form that cannot be altered.",
+    "goals": "To serve as a protector or enforcer carrying out commands of its creator.",
+    "relations": "Typically created by a powerful entity, it may be found alongside other constructs or magical beings.",
+    "environment": "Often found in locations where its creator resides, such as ancient ruins or secluded areas.",
+    "strengths": "High Strength and Constitution, good physical defense, immunities to poison and psychic damage, resistance to nonmagical attacks.",
+    "weaknesses": "Vulnerable to fire damage, low intelligence limits complex actions.",
+    "attacks": "Can make two powerful slam attacks per turn, each dealing substantial bludgeoning damage.",
+    "most_powerful_ability": "Magic Resistance, providing advantage on saving throws against spells.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to conditions such as being charmed, exhausted, or frightened.",
+        "Immutable Form prevents alteration by magic.",
+        "Capable of absorbing a reasonable amount of damage with high hit points.",
+        "Effective melee combatant with a strong attack bonus.",
+        "Designed to fulfill commands without deep strategic thinking."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "durable wooden creature protector",
+        "strong golem with fire vulnerability",
+        "medium construct made of wood",
+        "golem resistant to physical attacks",
+        "creature immune to magical alterations"
+    ]
+}

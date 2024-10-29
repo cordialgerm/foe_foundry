@@ -1,0 +1,53 @@
+{
+    "name": "Red-Banded Line Spider",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 15,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "poison",
+        "ambush",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "poisonous"
+    ],
+    "description": "The Red-Banded Line Spider is a tiny creature known for its speed and agility, characterized by its poison-infused bite and ability to traverse difficult surfaces effortlessly.",
+    "memorable": "Its ability to use webbing to move quickly and stealthily adds a unique tactical element to encounters.",
+    "goals": "To ambush and poison unsuspecting creatures, using its agility to evade attacks.",
+    "relations": "May be encountered with other spiders or creatures in web-filled environments.",
+    "environment": "Often found in areas with webs, such as forests or dark underground spaces.",
+    "strengths": "High Dexterity enables impressive stealth and nimbleness in combat, along with poison-infused attacks that can severely debilitate foes.",
+    "weaknesses": "Low Strength makes it poor in physical confrontations, typically relying on ambush tactics.",
+    "attacks": "Utilizes a bite attack that deals piercing and poison damage, with a chance to inflict ongoing poison effects.",
+    "most_powerful_ability": "Reactive Venom adds extra poison damage to its already dangerous bite when the target is poisoned.",
+    "equipment": null,
+    "senses": "Has darkvision with a range of 60 feet, allowing it to see in dim light as if it were bright.",
+    "skills": "Excels in Stealth with a significant modifier and has an average Perception score.",
+    "additional_information": [
+        "Immune to psychic damage and conditions of being charmed or frightened.",
+        "Can easily traverse difficult surfaces including ceilings and walls.",
+        "Has a unique movement ability called Swingline that allows for strategic positioning.",
+        "High Dexterity facilitates stealthy ambush tactics.",
+        "Portrait of speed and cunning in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny poisonous spider with speed and agility",
+        "stealthy spider that climbs walls easily",
+        "ambush creature with venomous attacks",
+        "quick spider that uses webbing to move",
+        "red-banded spider with reactive venom ability"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Holler Spider</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>14</HP>
 <summary>The Holler Spider is a tiny beast known for its chaotic neutral alignment, making it unpredictable and capable of surprising encounters. With an Armor Class of 12, it can withstand some minor attacks, and its 14 hit points (calculated as 4d4 plus 4) allow it to endure a few rounds of combat. Its climbing speed of 25 feet and walking speed of 25 feet provide versatility in movement, allowing it to navigate various terrains effectively. The creature has a Challenge Rating of 1/4, representing its relatively low threat level, granting 50 experience points for defeated foes. Despite its low Strength score of 7, which gives it a very bad modifier of -2 for physical attacks, the Holler Spider excels in Dexterity with a score of 15 and a good +2 modifier, enhancing its agility and stealth abilities. It also possesses above-average Wisdom (14) and exceptional perception skills, allowing it to be an effective ambush predator.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Holler Spider has a reaction ability called Sound Alarm. This abili
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Holler Spider
 
 *Tiny* *Beast* *chaotic neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Sound Alarm:** When the holler spider detects a creature within 60 feet of it, the spider can emit a hoot or trumpet audible within 300 feet of it. The noise continues until the creature moves out of range, the spider’s handler uses an action to soothe it, or the spider ends the alarm (no action required).
 
 
+</statblock>
 
 

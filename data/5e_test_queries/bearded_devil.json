@@ -1,0 +1,25 @@
+{
+    "name": "Bearded Devil",
+    "queries": [
+        {
+            "query": "fiend with a snake-like beard that causes poison",
+            "variant": "fiend that has a snake-like beard and causes poison"
+        },
+        {
+            "query": "dark armored devil that fights with a glaive and a writhing beard",
+            "variant": "dark armoured devil wielding a glaive and has a writhing beard"
+        },
+        {
+            "query": "humanoid fiend that can see in magical darkness and poisons with its attacks",
+            "variant": "humanoid devil that sees in magical darkness and poisons with attacks"
+        },
+        {
+            "query": "devil soldier known for cruelty with a beard attack that prevents healing",
+            "variant": "soldier fiend recognized for its cruelty with a beard attack stopping healing"
+        },
+        {
+            "query": "creature from the infernal planes that thrives in dark environments",
+            "variant": "infernal creature that excels in dark surroundings"
+        }
+    ]
+}

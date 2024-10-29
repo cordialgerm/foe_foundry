@@ -1,6 +1,8 @@
 <MonsterName/>Giant Water Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>9</CR>
+<AC/>14</AC>
+<HP/>157</HP>
 <summary>The Giant Water Elemental is a formidable creature in the world of Dungeons & Dragons, classified as a Huge Elemental with a well-rounded role in combat thanks to its ability to deal damage, control space, and resist various forms of attack. With an armor class of 14, it is moderately resilient, and its impressive pool of 157 hit points gives it substantial staying power in battle. It boasts a challenge rating of 9, making it a strong opponent for mid-level adventurers. The Giant Water Elemental is particularly notable for its damage immunities and resistances, allowing it to endure many types of attacks while also posing a considerable threat through its slamming attacks and grappling abilities. However, its intelligence and charisma scores are quite low, suggesting limited utility outside of combat scenarios.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Giant Water Elemental is a powerful foe in aquatic settings or near
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Water Elemental
 
 *Huge* *Elemental*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Whelm:** The elemental targets each Large or smaller creature in its space. Each target makes a DC 15 Strength saving throw. On a failure  the target is grappled (escape DC 15). Until this grapple ends  the target is restrained and unable to breathe air. The elemental can move at full speed while carrying grappled creatures inside its space. It can grapple one Large creature or up to four Medium or smaller creatures.
 
 
+</statblock>
 
 

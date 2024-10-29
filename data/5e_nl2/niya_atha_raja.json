@@ -1,0 +1,50 @@
+{
+    "name": "Niya-Atha Raja",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking and climbing speed",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "enlarged",
+        "magical resistance"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "charming"
+    ],
+    "description": "The Niya-Atha Raja is characterized by its impressive stature, with a commanding presence and keen eyes, often wielding a Tulwar and possessing an aura of magical resistance.",
+    "memorable": "Its ability to frighten enemies with a loud bellow while providing charm immunity to allies creates a unique battlefield dynamic.",
+    "goals": "To control the battlefield and protect its allies while using intimidation tactics against foes.",
+    "relations": "Typically found among fey creatures, often allied with other magical beings or guardians of nature.",
+    "environment": "Commonly encountered in enchanted forests and other mystical locales.",
+    "strengths": "Resistance to being charmed or frightened, and advantage on saves against spells bolsters its durability against magic.",
+    "weaknesses": "Loses certain abilities like Evasion and Magic Resistance while enlarged, which requires tactical consideration.",
+    "attacks": "Can strike with a melee Tulwar or a ranged Dart, and uses a War Bellow to cause fear in nearby enemies.",
+    "most_powerful_ability": "War Bellow, a powerful ability that can frighten all nearby hostile creatures.",
+    "equipment": "Wields a Tulwar, a curved sword favored by fey warriors.",
+    "senses": "Has a passive perception of 14, indicating average awareness of surrounding threats.",
+    "skills": "Proficient in perception, though its capability is average.",
+    "additional_information": [
+        "Can enlarge itself to increase its physical size and damage output.",
+        "Immunity to being charmed and frightened enhances its role as a guardian.",
+        "The 'Commanding Bulk' ability boosts ally morale and effectiveness in combat.",
+        "It can tactically reduce its size to regain abilities.",
+        "The Niya-Atha Raja's Dexterity and Charisma make it a formidable opponent."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that can enlarge itself",
+        "agile fey with magical resistance",
+        "monster that frightens enemies with a bellow",
+        "formidable fey protector with charm immunity",
+        "swift attacker with melee and ranged options"
+    ]
+}

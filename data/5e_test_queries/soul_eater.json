@@ -1,0 +1,25 @@
+{
+    "name": "Soul Eater",
+    "queries": [
+        {
+            "query": "medium fiend that consumes souls and inflicts psychic damage",
+            "variant": "fiend that is medium-sized and eats souls while dealing psychic damage"
+        },
+        {
+            "query": "agile creature with high Dexterity and evil alignment lurking in the dark",
+            "variant": "sneaky monster possessing high Dexterity that has a neutral evil nature and hides in darkness"
+        },
+        {
+            "query": "creature that has magic resistance and uses psychic powers in combat",
+            "variant": "monster with an immunity to magic who attacks using psychic abilities"
+        },
+        {
+            "query": "fiend that is immune to poison and has high Stealth skills",
+            "variant": "creature immune to poison damage with excellent Stealth capabilities"
+        },
+        {
+            "query": "soul-consuming fiend with abilities that create disadvantage on saving throws",
+            "variant": "fiend that drains souls and can impose disadvantages on saving throws"
+        }
+    ]
+}

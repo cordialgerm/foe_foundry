@@ -1,0 +1,25 @@
+{
+    "name": "Adult Earth Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with earth manipulation abilities and high durability",
+            "variant": "huge dragon that manipulates earth and is very durable"
+        },
+        {
+            "query": "dragon that uses terrain to fight and has a bite attack",
+            "variant": "dragon with a bite attack that uses terrain in combat"
+        },
+        {
+            "query": "powerful dragon immune to petrification and resistant to nonmagical weapons",
+            "variant": "strong dragon resistant to regular weapons and immune to petrification"
+        },
+        {
+            "query": "earth-themed dragon that can camouflage as rock and burrow underground",
+            "variant": "earth dragon that can hide as rock and burrow underground"
+        },
+        {
+            "query": "legendary dragon with high strength and innate spellcasting abilities",
+            "variant": "legendary dragon with strong physical power and spellcasting skills"
+        }
+    ]
+}

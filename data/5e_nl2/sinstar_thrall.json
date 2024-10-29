@@ -1,0 +1,55 @@
+{
+    "name": "Sinstar Thrall",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "paralyzing",
+        "defensive",
+        "tactical"
+    ],
+    "adjectives": [
+        "formidable",
+        "piercing",
+        "poison-immune"
+    ],
+    "description": "A plant creature with a tough exterior and spiny defenses, designed for close combat.",
+    "memorable": "Capable of paralyzing enemies with its spines and defenses, making it highly disruptive in battles.",
+    "goals": "To incapacitate and deter attackers while defending its creator.",
+    "relations": "Created by a sinstar and shares a telepathic bond with it.",
+    "environment": "Can be found in areas close to its creator sinstars, likely in plant-rich environments.",
+    "strengths": "Robust against cold and fire damage, with abilities that paralyze attackers.",
+    "weaknesses": "Low intelligence and charisma means it struggles in social situations and lacks mental capabilities.",
+    "attacks": "Can slam enemies causing both bludgeoning and piercing damage, or shoot spines for area paralysis.",
+    "most_powerful_ability": "Shoot Spines: a powerful area attack that also paralyzes enemies.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures effectively despite being blind beyond that range.",
+    "skills": "Only has basic perception skills with a +0 modifier.",
+    "additional_information": [
+        "Immune to poison damage and resistant to cold and fire.",
+        "Paralysis inflicted by attacks adds to its defensive capabilities.",
+        "Relies on its creator for communication and sensory sharing.",
+        "Low Dexterity means it is not agile in movement.",
+        "Natural armor provides a solid form of defense."
+    ],
+    "damage_types": [
+        "poison",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant creature with paralyzing spines",
+        "defensive plant monster with telepathic bond",
+        "creature that inflicts paralysis with spikes",
+        "Sinstar Thrall attack mechanics",
+        "strong plant creature with piercing damage"
+    ]
+}

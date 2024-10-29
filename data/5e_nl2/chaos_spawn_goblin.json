@@ -1,0 +1,51 @@
+{
+    "name": "Chaos-Spawn Goblin",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "chaotic",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "annoying"
+    ],
+    "description": "A small humanoid goblin embodying chaotic evil, known for its cunning and agility.",
+    "memorable": "Its ability to disengage and hide makes it a slippery opponent, often escaping or repositioning during battle.",
+    "goals": "To ambush opponents and avoid direct confrontation, relying on cunning tactics.",
+    "relations": "Often found in chaotic settings or working alongside other chaotic creatures.",
+    "environment": "Typical of war-torn areas or spots of chaotic magic.",
+    "strengths": "High dexterity and adept at stealth, enhancing ambush capabilities.",
+    "weaknesses": "Low strength and intelligence limit its effectiveness in direct combat.",
+    "attacks": "Uses a scimitar for melee attacks and can employ a ranged psychic attack.",
+    "most_powerful_ability": "Psychic Stab allows it to deal significant psychic damage from a distance.",
+    "senses": "Possesses darkvision up to 60 feet.",
+    "skills": "Highly skilled in stealth, with a +6 modifier.",
+    "additional_information": [
+        "Damage resistance to psychic attacks.",
+        "Immune to the frightened condition.",
+        "Specializes in hit-and-run tactics.",
+        "Can communicate telepathically with other creatures.",
+        "Has a unique evasive ability with Nimble Escape."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile goblin that excels in stealth",
+        "annoying goblin with psychic attacks",
+        "chaotic creature that ambushes foes",
+        "goblin skilled in nimble escape tactics",
+        "small goblin with telepathic abilities"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Bone Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 142,
+    "ac": 19,
+    "srd": true,
+    "cr": "9",
+    "movement": "40 feet walking, 40 feet flying",
+    "role": "Ambusher",
+    "tags": [
+        "fiend",
+        "devil",
+        "undead",
+        "tormentor"
+    ],
+    "adjectives": [
+        "skeletal",
+        "gaunt",
+        "malevolent",
+        "cunning",
+        "terrifying"
+    ],
+    "description": "The Bone Devil is a tall, skeletal fiend with a long, barbed tail and wings made of bony spines, giving it a gaunt and terrifying appearance.",
+    "memorable": "Bone Devils thrive on causing pain and suffering, often overseeing torture and demonstrating cunning and brute strength in combat.",
+    "goals": "To torment souls and enforce the will of its infernal masters.",
+    "relations": "May command lesser devils and interact with other fiends in the Nine Hells.",
+    "environment": "Typically found in the Nine Hells, overseeing domains of suffering.",
+    "strengths": "Highly resilient, with resistances to nonmagical damage, immunity to fire and poison, and notable magical resistance.",
+    "weaknesses": "Some reliance on melee attacks may hinder effectiveness against ranged opponents.",
+    "attacks": "Utilizes a barbed spear for piercing damage, claws for slashing damage, and a venomous sting that can poison victims.",
+    "most_powerful_ability": "Devilish Command allows it to compel others to act against their will.",
+    "equipment": null,
+    "senses": "Has Devil's Sight, allowing it to see through magical darkness.",
+    "skills": "Skilled in athletics, deception, insight, perception, and stealth, with particularly high proficiency.",
+    "additional_information": [
+        "Can become invisible, making it difficult to target.",
+        "Features a Lawful Evil aura which enhances its manipulative nature.",
+        "Inflicts agonizing pain through its sting attack.",
+        "Can grapple targets with its barbed spear.",
+        "Possesses high Charisma, aiding in manipulation and commanding authority."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "skeletal fiend with barbed tail",
+        "tantrum-inducing tormentor from the underworld",
+        "devil with piercing claws and venomous sting",
+        "manipulative and cunning fiend",
+        "bone creature from the Nine Hells"
+    ]
+}

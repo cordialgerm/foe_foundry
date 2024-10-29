@@ -1,0 +1,54 @@
+{
+    "name": "Pescavitus",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "swim speed of 60 feet, no land movement",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "aquatic",
+        "curse",
+        "healer"
+    ],
+    "adjectives": [
+        "small",
+        "radiant",
+        "magical",
+        "cursed"
+    ],
+    "description": "Pescavitus is a small celestial creature that thrives underwater, with a slender body adapted for swimming.",
+    "memorable": "Its Piscine Curse can curse those who reduce it to 0 HP, making them less effective at healing.",
+    "goals": "To assist allies and protect aquatic environments.",
+    "relations": "Often associated with other celestial beings and aquatic creatures.",
+    "environment": "Aquatic environments such as lakes, rivers, and oceans.",
+    "strengths": "Magical weapon attacks deal additional radiant damage and it has strong utility abilities including healing and curse mechanics.",
+    "weaknesses": "Cannot move on land, highly reliant on aquatic environments.",
+    "attacks": "Slam attack deals both bludgeoning and radiant damage.",
+    "most_powerful_ability": "Piscine Curse, which curses enemies upon its defeat or if they consume its flesh.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet, enhancing its awareness in underwater environments.",
+    "skills": "It has basic perception abilities, reflected by a passive Perception of 10.",
+    "additional_information": [
+        "Immortal Nature: Does not require food, drink, or sleep.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Healing Touch can restore hit points and remove afflictions.",
+        "Air Bubble ability allows shared underwater breathing for multiple creatures.",
+        "Loses effectiveness on land due to inability to move."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small celestial creature that lives underwater",
+        "magical aquatic guardian with a curse",
+        "swimming healer with radiant attacks",
+        "creature that curses those who harm it",
+        "powerful underwater ally with healing abilities"
+    ]
+}

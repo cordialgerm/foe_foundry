@@ -1,0 +1,25 @@
+{
+    "name": "Queen of Witches",
+    "queries": [
+        {
+            "query": "powerful fey creature with spellcasting abilities and high Charisma",
+            "variant": "fey creature that can cast spells and has high charisma"
+        },
+        {
+            "query": "large witch-like fey that manipulates the battlefield and uses radiant magic",
+            "variant": "huge fey that uses radiant magic and manipulation in battle"
+        },
+        {
+            "query": "resilient spellcaster with immunity to being charmed and frightened",
+            "variant": "strong spellcaster immune to charm and fear effects"
+        },
+        {
+            "query": "Queen of Witches with legendary actions and magical weapon enhancements",
+            "variant": "Witch Queen possessing legendary actions and weapon improvements"
+        },
+        {
+            "query": "fey with multiattack capability and high damage resistance",
+            "variant": "fey that can attack multiple times and has strong damage resistance"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Aural Hunter",
+    "queries": [
+        {
+            "query": "chaotic evil large creature that consumes sound",
+            "variant": "large chaotic evil creature that eats sound"
+        },
+        {
+            "query": "monster with high hit points that can grapple and silence foes",
+            "variant": "creature with lots of hit points that grapples and can silence enemies"
+        },
+        {
+            "query": "aberration with blindsight that is vulnerable to thunder",
+            "variant": "creature with blindsight that's weak against thunder damage"
+        },
+        {
+            "query": "strong melee attacker that drains vitality from sound",
+            "variant": "powerful melee monster that siphons life from sound"
+        },
+        {
+            "query": "large aberration known for poor intelligence and strong perception",
+            "variant": "big aberration with low intelligence but good perception skills"
+        }
+    ]
+}

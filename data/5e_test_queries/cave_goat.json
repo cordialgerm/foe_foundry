@@ -1,0 +1,25 @@
+{
+    "name": "Cave Goat",
+    "queries": [
+        {
+            "query": "small beast with climbing abilities found in rocky environments",
+            "variant": "beast small that climbs well in rocky places"
+        },
+        {
+            "query": "agile creature that has keen hearing and excels at climbing",
+            "variant": "creature agile with great hearing and climbing skills"
+        },
+        {
+            "query": "Cave Goat's physical strength and its low intelligence",
+            "variant": "low intelligence and strong physical traits of the Cave Goat"
+        },
+        {
+            "query": "fast-moving goat-like monster known for its athleticism",
+            "variant": "quick goat-like beast recognized for its athletic abilities"
+        },
+        {
+            "query": "Cave Goat known for ram attack and climbing rocky surfaces",
+            "variant": "Cave Goat that attacks with ram and climbs over rocks"
+        }
+    ]
+}

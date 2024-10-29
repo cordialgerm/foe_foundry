@@ -1,0 +1,25 @@
+{
+    "name": "Guardian Naga",
+    "queries": [
+        {
+            "query": "large serpent-like guardian with magical abilities living in sacred sites",
+            "variant": "big snake-like guardian creature with magic powers found in holy places"
+        },
+        {
+            "query": "wise protector naga that heals and uses radiant damage",
+            "variant": "intelligent guardian naga that can heal and deals radiant damage"
+        },
+        {
+            "query": "amphibious creature with a humanoid face that casts spells",
+            "variant": "water and land creature with a human-like face that can perform magic"
+        },
+        {
+            "query": "naga with a venomous bite and rejuvenation ability",
+            "variant": "guardian naga featuring a poisonous bite and the ability to come back to life"
+        },
+        {
+            "query": "guardian naga that prefers peaceful solutions but fights with spells",
+            "variant": "guardian naga that likes non-violent resolutions but battles using magic"
+        }
+    ]
+}

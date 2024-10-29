@@ -1,0 +1,48 @@
+{
+    "name": "Brownie Beastrider",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 54,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "animal commander",
+        "invisibility"
+    ],
+    "adjectives": [
+        "nimble",
+        "agile",
+        "supportive"
+    ],
+    "description": "The Brownie Beastrider is a tiny fey creature known for its nimbleness, adorned with earthy tones that blend into forested environments. It can typically be seen riding a mount and exudes a magical presence.",
+    "memorable": "Its ability to summon and communicate with animals makes the Brownie Beastrider a unique and valuable ally in combat scenarios.",
+    "goals": "The Beastrider aims to assist its allies and maintain harmony with nature by leveraging its magical abilities and commanding animal allies.",
+    "relations": "Often encountered with various woodland creatures and other fey beings, it may serve as a protector of its forest home.",
+    "environment": "Commonly found in forested areas and natural settings, where it can easily interact with animals.",
+    "strengths": "Possesses Magic Resistance, which provides an advantage against spells and magical effects, as well as the ability to summon animal allies.",
+    "weaknesses": "Low Strength makes it weak in direct combat, relying mainly on agility and magic.",
+    "attacks": "It can perform multiattacks with its Branch Spear or coordinate attacks with its mount, dealing piercing damage effectively.",
+    "most_powerful_ability": "Invisibility allows it to vanish and gain a tactical advantage in combat, making it difficult to target.",
+    "senses": "Has a noteworthy passive perception of 14, showcasing its keen awareness of surroundings.",
+    "additional_information": [
+        "Can communicate with beasts to influence their behavior.",
+        "It ensures its mount is immune to charm and fright effects.",
+        "Magic allows it to perform prestidigitation and mending at will, providing useful utilities.",
+        "Can summon small predator animals or a bear to aid in combat once per day.",
+        "Exceptional Dexterity grants it a +5 acrobatics skill."
+    ],
+    "damage_types": [],
+    "spellcasting": "It can cast spells like mending and prestidigitation at will without components.",
+    "test_queries": [
+        "tiny fey creature that commands animals",
+        "nimble beast rider with invisibility",
+        "magic resistant creature with animal allies",
+        "agile creature that can summon beasts",
+        "supportive fey that rides a mount"
+    ]
+}

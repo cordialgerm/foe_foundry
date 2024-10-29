@@ -1,0 +1,25 @@
+{
+    "name": "Dancing Foliage",
+    "queries": [
+        {
+            "query": "whimsical plant creature that can charm nearby beings",
+            "variant": "whimsical creature plant that charms nearby beings"
+        },
+        {
+            "query": "medium-sized guardian of nature with slashing leaf attacks",
+            "variant": "medium-sized nature guardian with leaf attacks slashing"
+        },
+        {
+            "query": "colorful plant that is immune to poison and vulnerable to fire",
+            "variant": "plant colorful immune to poison vulnerable fire"
+        },
+        {
+            "query": "mobile creature known for evasion and flower dance abilities",
+            "variant": "creature mobile known for abilities evasion and flower dance"
+        },
+        {
+            "query": "guardian plant using illusion tactics and charming dance",
+            "variant": "plant guardian using enchanting tactics and dance charm"
+        }
+    ]
+}

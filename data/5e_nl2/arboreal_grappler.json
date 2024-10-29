@@ -1,0 +1,49 @@
+{
+    "name": "Arboreal Grappler",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "grappler",
+        "stealthy"
+    ],
+    "adjectives": [
+        "swift",
+        "stealthy",
+        "cunning"
+    ],
+    "description": "The Arboreal Grappler is a Medium aberration with powerful tentacles and a swift, stealthy demeanor suited for forested or jungle environments.",
+    "memorable": "Its mobility and grappling abilities make it an efficient ambusher that can overpower foes before they even realize they are in danger.",
+    "goals": "To ambush unsuspecting adventurers and restrain them to gain an advantage in combat.",
+    "relations": "Often associated with other cunning predators in forested areas, it may encounter or work alongside similar stealthy creatures.",
+    "environment": "Forested or jungle terrains.",
+    "strengths": "Excels in grappling and maneuverability, employing tactics that leverage its ability to ambush and control opponents.",
+    "weaknesses": "Relatively low Intelligence and Charisma, making it less effective in social situations.",
+    "attacks": "Can perform a Multiattack consisting of a Bite and two Tentacle attacks, dealing piercing and bludgeoning damage while attempting to restrain opponents.",
+    "most_powerful_ability": "Mobile Grappler ability allows it to maintain full speed when dragging a creature it has grappled.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dim light.",
+    "skills": "Proficient in Acrobatics and Stealth, making it exceptionally good at avoiding detection and navigating tricky terrain.",
+    "additional_information": [
+        "Uses Boscage Brachiation to climb without provoking opportunity attacks.",
+        "Can climb ceilings effortlessly due to its Spider Climb ability.",
+        "Has a notable escape DC of 13 for grappling escapes.",
+        "Maintains a good defense with natural armor providing an AC of 14."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "forest-dwelling ambush predator",
+        "quick grappling monster",
+        "stealthy aberration",
+        "jungle creature with tentacles",
+        "agile forest creature"
+    ]
+}

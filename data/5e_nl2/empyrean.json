@@ -1,0 +1,51 @@
+{
+    "name": "Empyrean",
+    "creature_type": "Celestial",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 328,
+    "ac": 21,
+    "srd": false,
+    "cr": "22",
+    "movement": "60 ft. walk, 60 ft. fly",
+    "role": null,
+    "tags": [
+        "celestial",
+        "gargantuan",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "divine",
+        "powerful",
+        "graceful"
+    ],
+    "description": "A gargantuan celestial being that epitomizes divine strength with exceptional physical capabilities and a suite of powerful spells.",
+    "memorable": "Its ability to negate damage and diverse spellcasting make it a formidable celestial adversary.",
+    "goals": "To serve as a potent force in combat and protect its allies.",
+    "relations": "May be related to other celestial beings or serve deities.",
+    "environment": "Open skies and celestial realms, often involved in divine battles.",
+    "strengths": "Immunities to radiant damage and nonmagical weapons; high Strength and Constitution scores.",
+    "weaknesses": "Can be overwhelmed by coordinated assaults due to notable weaknesses in Dexterity.",
+    "attacks": "Delivers powerful melee strikes with a maul, dealing bludgeoning and radiant damage, alongside potent spell attacks like lightning bolt and flame strike.",
+    "most_powerful_ability": "Divine Grace allows it to negate damage from certain effects and enhance its defensive capabilities.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 120 feet, allowing it to see through darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can change size between Gargantuan and Medium using Immortal Form.",
+        "Legendary actions include making attacks and casting spells after other creatures' turns.",
+        "Innate spellcasting ability based on Charisma with a high spell save DC of 23.",
+        "Can paralyze foes with Hold Monster and control the battlefield effectively."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcasting ability with powerful spells like flame strike and hold monster, allowing versatility in and out of combat.",
+    "test_queries": [
+        "gargantuan celestial with powerful spells",
+        "divine being that can change size",
+        "celestial creature immune to radiant damage",
+        "gargantuan monster with truesight",
+        "Empyrean tactics in battle and spells"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Catscratch",
+    "queries": [
+        {
+            "query": "large chaotic evil creature with poisonous attacks and good mobility",
+            "variant": "large chaotic creatures with poisonous attacks and mobility good"
+        },
+        {
+            "query": "aberration that moves quickly and has a strong bite attack",
+            "variant": "aberration that has a strong bite attack and moves quickly"
+        },
+        {
+            "query": "monster with keen smell ability that is immune to poison",
+            "variant": "monster that is immune to poison and has keen smell ability"
+        },
+        {
+            "query": "huge creature with nine lives ability that attacks with claws and bites",
+            "variant": "huge nine lives creature that attacks with claws and bites"
+        },
+        {
+            "query": "Catscratch abilities and combat tactics in a D&D game",
+            "variant": "Catscratch tactics and abilities for D&D game"
+        }
+    ]
+}

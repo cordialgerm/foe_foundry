@@ -1,6 +1,8 @@
 <MonsterName/>Uraeus</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>40</HP>
 <summary>The Uraeus is a tiny celestial creature characterized by its lawful neutral alignment and strong ties to the divine. It possesses unique abilities that make it an effective support and combatant in encounters. With an Armor Class of 14 and 40 hit points, it can withstand a moderate amount of damage, but its offensive capabilities lie in its venomous bite, fiery breath attacks, and protective bond with allies. It excels in maneuverability, having the ability to fly, avoiding opportunity attacks while in flight, which allows for strategic positioning in combat. The Uraeus is resilient against magic and has several immunities and resistances, providing it with defensive advantages. However, its low Strength and Charisma scores make it less effective in physical contests and social interactions.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Finally, the Uraeus has the reaction ability called Bonded Savior. When its bond
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Uraeus
 
 *Tiny* *Celestial* *Lawful Neutral*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Bonded Savior:** When the uraeus’s bonded ward takes damage, the uraeus prevents the ward from taking the damage and loses hp equal to that amount instead, regardless of the type of damage dealt.
+</statblock>
 
 

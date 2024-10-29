@@ -1,6 +1,8 @@
 <MonsterName/>Ouroban</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>11</CR>
+<AC/>18 (plate)</AC>
+<HP/>209</HP>
 <summary>The Ouroban is a formidable Medium humanoid known for its neutral evil alignment, serving as a potent and ruthless combatant in battle. With an armor class of 18 due to its plate armor, the Ouroban is well-protected and boasts a high hit point pool of 209, allowing it to endure considerable damage. Its challenge rating of 11 indicates that it provides a significant challenge for adventurers, making it a formidable foe in encounters worth 7,200 experience points. The creature's greatest strengths lie in its strong physical attributes, particularly its strength, as well as its spellcasting capabilities, allowing it to deal devastating damage and control the battlefield. However, its weaknesses include a lack of speed, agility, and versatility, indicated by average dexterity and only a limited range of spells.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Abyssal Fires ability represents a powerful area effect, summoning 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ouroban
 
 *Medium* *Humanoid* *neutral evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Abyssal Fires (Recharges after a Short or Long Rest):** The ouroban summons green flames under up to five creatures within 30 feet of it. Each target must succeed on a DC 17 Dexterity saving throw or take 18 (4d8) fire damage and be poisoned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success.<br><br>The ouroban has advantage on attack rolls and ability checks against a creature poisoned by its Abyssal Fires.
 
 
+</statblock>
 
 

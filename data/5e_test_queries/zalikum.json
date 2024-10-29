@@ -1,0 +1,25 @@
+{
+    "name": "Zalikum",
+    "queries": [
+        {
+            "query": "huge construct with a ghastly heated body that can fly",
+            "variant": "huge creature made of constructs that can fly and has a ghastly heated body"
+        },
+        {
+            "query": "tough construct immune to fire and capable of rejuvenation",
+            "variant": "tough creature that can rejuvenate and is immune to fire"
+        },
+        {
+            "query": "neutral evil flying monster that inflicts fire and necrotic damage",
+            "variant": "flying neutral evil creature that deals necrotic and fire damage"
+        },
+        {
+            "query": "construct that can store souls and has a powerful desert breath attack",
+            "variant": "creature that stores souls and has a strong desert breath ability"
+        },
+        {
+            "query": "monster with high strength that resists damage from nonmagical attacks",
+            "variant": "creature having high strength and resistance against nonmagical damage"
+        }
+    ]
+}

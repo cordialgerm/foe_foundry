@@ -1,0 +1,25 @@
+{
+    "name": "Alchemical Apprentice",
+    "queries": [
+        {
+            "query": "small ooze creature with potion absorption abilities",
+            "variant": "small ooze monster that absorbs potions"
+        },
+        {
+            "query": "ooze that dies in sunlight and has alchemical powers",
+            "variant": "ooze creature vulnerable to sunlight with alchemy skills"
+        },
+        {
+            "query": "creature with blindsight and and resistance to fire damage",
+            "variant": "monster with blindsight and fire resistance abilities"
+        },
+        {
+            "query": "potion-creating ooze that can slip through narrow spaces",
+            "variant": "ooze that makes potions and can fit through tight spaces"
+        },
+        {
+            "query": "weakness to sunlight and ability to produce common potions",
+            "variant": "creature vulnerable to sunlight that makes potions"
+        }
+    ]
+}

@@ -1,6 +1,9 @@
 <MonsterName/>Planetar (Angel)</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<Subtype/>angel</Subtype>
+<CR/>16</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>200</HP>
 <summary>A Planetar is a powerful celestial being that serves the gods of good, acting as a divine warrior and protector. Standing over 9 feet tall with muscular, radiant bodies, Planetars have glowing, ethereal wings and wield mighty weapons infused with divine energy. Their presence inspires awe and fear in both allies and enemies. Planetars are tasked with carrying out the will of their gods, whether by leading armies into battle, smiting evil, or guarding holy sites. They are skilled in both combat and divine magic, capable of healing allies or summoning radiant energy to vanquish their foes.</summary>
 
 <summary>The Planetar is a large celestial creature known for its immense power and divine presence on the battlefield. It serves as a champion of truth and justice, making it a highly revered and formidable opponent or ally. With an impressive armor class of 19 and a robust pool of hit points totaling 250, it can sustain significant damage while engaging foes. The Planetar is exceptionally quick and agile, capable of both walking at 40 feet per turn and flying at an impressive 120 feet. It has a challenge rating of 16, indicating that it poses a serious threat to adventuring parties, granting a substantial 15,000 XP upon defeat. Its numerous strengths include high attributes across the board, exceptional saving throws, and immunity to various damaging effects, making it a resilient combatant. However, while it excels in several areas, its reliance on spells and actions means that it must be strategically positioned to utilize its abilities effectively.</summary>
@@ -31,6 +34,7 @@ The Planetar can also cast spells without needing material components, using its
 
 Source: 5e_srd
 
+<statblock>
 ### Planetar (Angel)
 
 *Large celestial, lawful good*
@@ -79,7 +83,8 @@ At will: *detect evil and good*, *invisibility* (self only)
 
 ***Greatsword***. *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target. *Hit:* 21 (4d6+7) slashing damage plus 22 (5d8) radiant damage.
 
-***Healing Touch (4/Day)***. The planetar touches another creature. The target magically regains 30 (6d8+3) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+***Healing Touch (4/Day)***. The planetar touches another creature. The target magically regains 30 (6d8+3) hit points and is freed from any curse, disease, poison, blindness, or deafness.</statblock>
+
 
 
 
@@ -87,6 +92,7 @@ At will: *detect evil and good*, *invisibility* (self only)
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planetar
 
 *Large* *Celestial*
@@ -130,6 +136,7 @@ Source: 5e_artisinal_monsters
 - **Protective Parry:** When a creature within 5 feet would be hit with a melee attack, the planetar applies disadvantage to the attack roll.
 
 
+</statblock>
 
 
 
@@ -138,6 +145,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Planetar
 
 *Large celestial (angel)*
@@ -178,5 +186,6 @@ Source: 5e_artisinal_monsters
 	- At will: command, invisibility (self only)
 	- 3/day each: daylight, raise dead (as an action)
 
+</statblock>
 
 

@@ -1,0 +1,52 @@
+{
+    "name": "Greater Ghast of Leng",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 153,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "ghast",
+        "undead",
+        "predatory"
+    ],
+    "adjectives": [
+        "chaotic",
+        "large",
+        "deadly"
+    ],
+    "description": "The Greater Ghast of Leng is a large, twisted aberration with sharp claws and a ghastly appearance that embodies chaotic evil.",
+    "memorable": "Notable for its ability to command other ghasts and lethal attacks against weakened foes.",
+    "goals": "Seeks to hunt and devour the living, often targeting the injured or weak.",
+    "relations": "Commands other ghasts of Leng, which may serve it in battle.",
+    "environment": "Often found in dark, forgotten places, lurking in shadows or ruins.",
+    "strengths": "Excels in melee combat with enhanced Dexterity and Strength; has advantage on attacks against weakened foes.",
+    "weaknesses": "Vulnerable to radiant damage and significantly weakened in sunlight, suffering from attack penalties.",
+    "attacks": "Employs a multiattack with deadly bite and claw strikes, capable of grappling and restraining smaller opponents.",
+    "most_powerful_ability": "Blood Frenzy grants it an advantage against injured foes, enhancing its lethality.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting it advantage on perception checks that rely on smell.",
+    "skills": null,
+    "additional_information": [
+        "Blood Frenzy provides advantage on attack rolls against injured creatures.",
+        "Sunlight Hypersensitivity causes significant damage and disadvantages in sunlight.",
+        "Can command allies to attack, increasing its threat in combat.",
+        "Grapples and restrains targets with successful claw hits, reducing their mobility.",
+        "High Dexterity enhances its avoidance and attack success."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large deadly predator with ghastly features",
+        "monster that commands other ghasts in battle",
+        "menacing creature vulnerable to radiant damage",
+        "chaotic evil ghast that thrives in darkness",
+        "ferocious melee brawler with grappling ability"
+    ]
+}

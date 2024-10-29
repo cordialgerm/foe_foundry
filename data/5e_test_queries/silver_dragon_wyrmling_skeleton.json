@@ -1,0 +1,25 @@
+{
+    "name": "Silver Dragon Wyrmling Skeleton",
+    "queries": [
+        {
+            "query": "undead silver dragon skeleton with a strong bite attack",
+            "variant": "skeleton of silver dragon undead with powerful bite attack"
+        },
+        {
+            "query": "medium-sized evil creature that uses breath attacks in combat",
+            "variant": "evil medium creature that attacks with breath weapons"
+        },
+        {
+            "query": "skeleton that is immune to cold damage and has high hit points",
+            "variant": "cold damage immune skeleton with lots of hit points"
+        },
+        {
+            "query": "creature with blindsight and a vulnerability to bludgeoning damage",
+            "variant": "monster that has blindsight and is weak to bludgeoning"
+        },
+        {
+            "query": "undead creature that can poison enemies and has darkvision",
+            "variant": "undead monster capable of poisoning foes with darkvision"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Moderate Malleable",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 30 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "psychic",
+        "malleable"
+    ],
+    "adjectives": [
+        "large",
+        "chaotic",
+        "resilient",
+        "versatile",
+        "amorphous"
+    ],
+    "description": "A large, inside-out fleshy creature with chaotic features, capable of absorbing smaller malleables and altering its shape.",
+    "memorable": "Its ability to absorb minor malleables and transform into larger creatures makes it a unique and multifaceted threat.",
+    "goals": "To absorb and assimilate other malleables while using its psychic abilities to drain and weaken opponents.",
+    "relations": "Can be encountered alongside or as a part of a larger hive of malleables.",
+    "environment": "Typically found in areas where it can easily navigate and dominate through its psychic abilities.",
+    "strengths": "Immunities to psychic damage and conditions like blinded and prone; ability to heal by absorbing psychic damage.",
+    "weaknesses": "Low Dexterity makes it vulnerable to attacks requiring agility.",
+    "attacks": "Utilizes multiattack with Flesh Tendrils for grappling targets, inflicting bludgeoning damage, and employs Psychic Drain for significant psychic harm.",
+    "most_powerful_ability": "The ability to absorb a minor malleable to regain health and incorporate any effects into itself.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can pass through openings as narrow as one inch due to its Amorphous trait.",
+        "Can combine with others to form larger entities for strategic advantages.",
+        "Can split into four smaller malleables, redistributing health and conditions."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic large psychic creature",
+        "malleable monster with absorption abilities",
+        "fleshy creature that can split apart",
+        "monster with psychic drain and high resilience",
+        "creature that combines with others for strength"
+    ]
+}

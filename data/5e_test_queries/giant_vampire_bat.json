@@ -1,0 +1,25 @@
+{
+    "name": "Giant Vampire Bat",
+    "queries": [
+        {
+            "query": "large flying creature that grapples and recovers health",
+            "variant": "big flying beast that grapples and heals itself"
+        },
+        {
+            "query": "creature with echolocation that deals necrotic damage",
+            "variant": "being that has echolocation and deals necrotic damage"
+        },
+        {
+            "query": "Giant Vampire Bat abilities and combat actions",
+            "variant": "Giant Vampire Bat's combat tactics and abilities"
+        },
+        {
+            "query": "monster that has high Strength and Dexterity, lives in caves",
+            "variant": "creature with high Strength and Dexterity that inhabits caves"
+        },
+        {
+            "query": "bat creature that can't socialize but is strong in melee",
+            "variant": "bat beast that struggles in social situations but is melee strong"
+        }
+    ]
+}

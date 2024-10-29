@@ -1,0 +1,25 @@
+{
+    "name": "Sea Horse",
+    "queries": [
+        {
+            "query": "small graceful creature found in warm shallow ocean waters",
+            "variant": "graceful small creature that lives in warm ocean waters"
+        },
+        {
+            "query": "delicate beauty sea creature with a horse-like head",
+            "variant": "delicate sea creature with a head like a horse"
+        },
+        {
+            "query": "peaceful underwater dweller that clings to plants",
+            "variant": "underwater creature that clings to plants peacefully"
+        },
+        {
+            "query": "non-aggressive sea horse used as mounts by merfolk",
+            "variant": "merfolk use non-aggressive horse-like creature as mounts"
+        },
+        {
+            "query": "tiny ocean creature that eats plankton and small sea creatures",
+            "variant": "tiny sea creature that feeds on plankton and other small sea animals"
+        }
+    ]
+}

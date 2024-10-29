@@ -1,0 +1,54 @@
+{
+    "name": "Frost Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 15,
+    "srd": true,
+    "cr": "8",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "cold",
+        "melee",
+        "territorial"
+    ],
+    "adjectives": [
+        "massive",
+        "blue-tinged",
+        "dominant",
+        "aggressive"
+    ],
+    "description": "A massive humanoid with blue-tinged skin and white hair, wielding enormous ice and metal weapons.",
+    "memorable": "Frost Giants are powerful melee combatants capable of dealing significant damage and controlling the battlefield with cold-themed abilities.",
+    "goals": "To hunt for resources and raid settlements for slaves.",
+    "relations": "Often commands or interacts with other frost-themed creatures.",
+    "environment": "Icy tundras and frozen mountains.",
+    "strengths": "High resistance to cold damage and formidable melee attacks.",
+    "weaknesses": "Vulnerable to fire damage and becomes rattled when hit by fire attacks.",
+    "attacks": "Can perform multiple melee weapon attacks with a battleaxe or throw large rocks, dealing both slashing and bludgeoning damage.",
+    "most_powerful_ability": "Avalanche, which unleashes a wave of snow, dealing damage and potentially burying enemies.",
+    "equipment": "Battleaxe made of ice and metal.",
+    "senses": "Can see through snow and sleet without hindrance.",
+    "skills": "Skilled in athletics and perception, showing prowess in physical challenges and threat detection.",
+    "additional_information": [
+        "Highly territorial and aggressive.",
+        "Society built around strength and domination.",
+        "Can summon ice and frost in battles.",
+        "Resistant to being stunned.",
+        "Ignores movement penalties on icy terrain."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive cold warrior in icy tundras",
+        "giant with blue skin that attacks with ice",
+        "aggressive giant that raids settlements",
+        "brutal warrior with cold damage abilities",
+        "powerful giant that uses ice to control the battlefield"
+    ]
+}

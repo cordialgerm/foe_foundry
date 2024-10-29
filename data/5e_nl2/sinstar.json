@@ -1,0 +1,54 @@
+{
+    "name": "Sinstar",
+    "creature_type": "Plant",
+    "alignment": "lawful evil",
+    "size": "Tiny",
+    "hp": 275,
+    "ac": 17,
+    "srd": false,
+    "cr": "17",
+    "movement": "slow movement of 5 feet",
+    "role": "Controller",
+    "tags": [
+        "psychic",
+        "manipulation",
+        "disease",
+        "plant",
+        "magical"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "formidable"
+    ],
+    "description": "The Sinstar is a tiny, cunning plant creature characterized by its ability to manipulate and control others telepathically.",
+    "memorable": "Its ability to charm humanoids and inflict the debilitating Thrall Sickness disease makes it a truly dangerous adversary.",
+    "goals": "The Sinstar aims to control and manipulate others, often through psychic attacks and disease.",
+    "relations": "It may command star thralls, which are creatures transformed by its disease.",
+    "environment": "Typically found in dark, secluded areas where it can ensnare unwary humanoids.",
+    "strengths": "High intelligence and numerous immunities make it a difficult foe to combat directly.",
+    "weaknesses": "Very slow movement speed limits its mobility and escape options.",
+    "attacks": "Uses Alluring Whispers to charm and incapacitate foes, followed by piercing attacks with Spines or psychic attacks with Psychic Lash.",
+    "most_powerful_ability": "Alluring Whispers can incapacitate foes and force them to move closer, effectively controlling the battlefield.",
+    "senses": "The Sinstar possesses tremorsense up to 120 feet and blindsight up to 60 feet, allowing it to detect nearby creatures without sight.",
+    "skills": "It has proficiency in perception, giving it good awareness of its surroundings.",
+    "additional_information": [
+        "Immunity to poison damage and resistance to acid, cold, fire, and lightning damage.",
+        "Legendary Resistance allows it to avoid failure in saving throws three times a day.",
+        "Spiny Defense inflicts damage and can spread Thrall Sickness to attacking humanoids.",
+        "Can teleport up to 120 feet as a legendary action, enhancing its combat mobility.",
+        "Thrall Sickness can severely affect humanoids' Dexterity and Intelligence if untreated."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny plant creature that manipulates minds",
+        "psychic plant creature with debilitating disease",
+        "cunning plant monster that charms humanoids",
+        "creature with slow movement and powerful telepathy",
+        "damage-inflicting plant creature with legendary powers"
+    ]
+}

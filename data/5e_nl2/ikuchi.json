@@ -1,0 +1,50 @@
+{
+    "name": "Ikuchi",
+    "creature_type": "Elemental",
+    "alignment": "chaotic neutral",
+    "size": "Gargantuan",
+    "hp": 116,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walking 20 feet, swimming 50 feet",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "aquatic",
+        "chaotic",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "The Ikuchi is a gargantuan elemental creature that embodies chaotic forces of nature in aquatic environments, constantly emitting a thick, yellowish oil when submerged.",
+    "memorable": "It can create difficult terrain with its nonflammable oil and grapple opponents with great reach.",
+    "goals": "Survival and instinct-driven behavior in its aquatic habitat.",
+    "relations": "Often encountered in aquatic settings, this elemental may interact with other water-based creatures.",
+    "environment": "Typically found in underwater locations where it can exert control over its surroundings with its oil.",
+    "strengths": "Immune to poison, resistant to nonmagical bludgeoning, piercing, and slashing damage.",
+    "weaknesses": "Vulnerable to magical damage types, lacking inherent resistances against them.",
+    "attacks": "Multiattack with a fierce bite and constricting appendage, capable of grappling foes.",
+    "most_powerful_ability": "The Crush ability can severely damage all creatures it grapples, emphasizing its dominance in melee.",
+    "senses": "Has a passive Perception of 14, reflecting its keen awareness of its environment.",
+    "skills": "Proficient in perception, enhancing its ability to sense threats.",
+    "additional_information": [
+        "Constantly emits thick oil when submerged, making the area difficult terrain.",
+        "Can breathe only underwater, remaining submerged without surfacing.",
+        "Grapples opponents, restricting their movement and control.",
+        "Extensive reach for grappling attacks, targeting foes from afar.",
+        "Excellent durability with high hit points and natural armor."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan elemental creature in water",
+        "aquatic monster that grapples foes",
+        "thick oil creates difficult terrain underwater",
+        "strong aquatic creature with multiattack",
+        "chaotic neutral elemental in aquatic environments"
+    ]
+}

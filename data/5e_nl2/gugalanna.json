@@ -1,0 +1,51 @@
+{
+    "name": "Gugalanna",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 253,
+    "ac": 18,
+    "srd": false,
+    "cr": "21",
+    "movement": "fly 80 ft and walk 60 ft",
+    "role": null,
+    "tags": [
+        "celestial",
+        "chaotic good",
+        "flying"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "immune to fire",
+        "mobile"
+    ],
+    "description": "Gugalanna is a Huge Celestial creature characterized by its immense power and chaotic good nature, featuring high mobility and striking features.",
+    "memorable": "Gugalanna maintains distance while dealing damage with its Flyby ability and boasts significant resistance to various attacks.",
+    "goals": "To protect and challenge those it encounters, serving a guardian role while also engaging in combat.",
+    "relations": "Related to other celestial beings and could be encountered with allies that share its chaotic good alignment.",
+    "environment": "Typically found in celestial realms or places infused with magic.",
+    "strengths": "Immunities to fire and radiant damage make it highly resilient in combat, with significant combat abilities via its special traits.",
+    "weaknesses": "Susceptible to necrotic damage, which can be exploited in battle.",
+    "attacks": "Delivers a devastating melee attack using its horns, dealing piercing and fire damage, and follows up with a powerful kick.",
+    "most_powerful_ability": "The ability to avoid opportunity attacks while flying allows Gugalanna to maintain an advantageous position in battle.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 60 feet, allowing it to see things as they truly are.",
+    "skills": "Noteworthy skills in athletics, insight, and intimidation, showcasing its physical prowess and presence.",
+    "additional_information": [
+        "Ability to perform Multiattacks, executing two different attacks in a single turn.",
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "Trampling Charge can knock targets prone, allowing for additional attacks."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge celestial creature with powerful melee attacks",
+        "formidable protector with fire immunity",
+        "flying creature that can avoid opportunity attacks",
+        "chaotic good celestial being with truesight",
+        "creature that uses magic resistance in battle"
+    ]
+}

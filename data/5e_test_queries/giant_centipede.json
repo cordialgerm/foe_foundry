@@ -1,0 +1,25 @@
+{
+    "name": "Giant Centipede",
+    "queries": [
+        {
+            "query": "small poison-inflicting creature that can climb",
+            "variant": "small creature that inflicts poison and can climb"
+        },
+        {
+            "query": "long multi-legged insect found in dark caves",
+            "variant": "multi-legged insect that is long and dwells in dark caves"
+        },
+        {
+            "query": "agile beast with a venomous bite living in swamps",
+            "variant": "agile creature that bites with venom in swampy areas"
+        },
+        {
+            "query": "creature that paralyzes prey with poison in forests",
+            "variant": "poisonous creature that paralyzes its victims found in forests"
+        },
+        {
+            "query": "fast cave-dwelling insect with blindsight",
+            "variant": "quick insect from caves that has blindsight"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Glacial Crawler",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 207,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., burrow 30 ft., climb 20 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "cold-resistant",
+        "burrowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "acidic"
+    ],
+    "description": "A Huge, formidable Aberration known for its unique combination of acid and cold immunities, it can proficiently traverse snow and water, with a tough outer coating that deals acid damage to attackers.",
+    "memorable": "Its ability to coat attackers in superheated digestive juices makes it a dangerous foe in close quarters.",
+    "goals": "Survival and combat effectiveness without moral considerations.",
+    "relations": "May encounter other cold-based creatures or aberrations.",
+    "environment": "Often found in icy or snowy terrains.",
+    "strengths": "Immunity to acid, cold, and fire damage; high constitution.",
+    "weaknesses": "Low intelligence and charisma, unable to strategize effectively.",
+    "attacks": "Multiattack with two Bites dealing piercing and acid damage, possibly grappling foes; ranged attacks with a spitting ability that combines acid and fire damage.",
+    "most_powerful_ability": "Acidic Spray, dealing significant area damage and applying ongoing effects.",
+    "equipment": null,
+    "senses": "Blindsight and tremorsense allow it to detect creatures in its vicinity despite being blind.",
+    "skills": "Limited perceptive abilities with a passive perception score of 18.",
+    "additional_information": [
+        "Can create a tunnel while burrowing through snow and ice.",
+        "Advantage on stealth checks in snowy environments.",
+        "Has a diverse set of offensive and defensive capabilities."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge icy aberration that burrows",
+        "creature with acid coating and burrowing ability",
+        "monster that swims and traverses snow easily",
+        "crawler with superheated acid attacks",
+        "ice monster that hides in snowy terrain"
+    ]
+}

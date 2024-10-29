@@ -1,0 +1,54 @@
+{
+    "name": "Apau Perape",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 95,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking speed",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "summoner"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "durable",
+        "formidable"
+    ],
+    "description": "The Apau Perape is a large fiend with a robust melee attack profile and a fanciful appearance that emphasizes its chaotic evil nature.",
+    "memorable": "Its unique Diseased Ichor ability causes ongoing harm and danger to nearby creatures, even after initial combat.",
+    "goals": "Typically aims to create chaos in battle and weaken enemies over time.",
+    "relations": "May be associated with demons and other fiends, especially those it can summon.",
+    "environment": "Typically found in dark and chaotic areas, possibly in demonic realms or corrupted lands.",
+    "strengths": "High strength and dexterity scores enable it to excel in physical confrontations; advantage on saving throws against spells due to Magic Resistance.",
+    "weaknesses": "Vulnerable to cold damage and unable to withstand poison despite immunity to poisoned conditions.",
+    "attacks": "Utilizes powerful melee attacks with a Bite and two Claw attacks, delivering significant damage.",
+    "most_powerful_ability": "Diseased Ichor, which poisons nearby creatures and reduces their hit point maximum over time.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet, allowing it to see in darkness effectively.",
+    "skills": "Excels in stealth, intimidation, and has moderate perception skills.",
+    "additional_information": [
+        "Resistant to fire and lightning damage.",
+        "Can summon additional fiends to aid in combat.",
+        "Creates a zone of danger with its Fiery Roar ability, frightening enemies.",
+        "Immunity to the frightened and poisoned conditions.",
+        "Average intelligence but high physical capabilities."
+    ],
+    "damage_types": [
+        "fire",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil fiend",
+        "powerful demon summoner",
+        "mighty fiend with poisonous abilities",
+        "creature with caustic blood",
+        "large fiend with fire attacks"
+    ]
+}

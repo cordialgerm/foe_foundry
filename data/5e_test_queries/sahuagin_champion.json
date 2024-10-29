@@ -1,0 +1,25 @@
+{
+    "name": "Sahuagin Champion",
+    "queries": [
+        {
+            "query": "humanoid sea creature that can command sharks and fights in water",
+            "variant": "humanoid ocean creature that can control sharks and battles underwater"
+        },
+        {
+            "query": "formidable underwater fighter with advantage against wounded enemies",
+            "variant": "powerful aquatic combatant that has an edge against injured foes"
+        },
+        {
+            "query": "amphibious humanoid with a strong melee attack and darkvision",
+            "variant": "water-dwelling humanoid having a powerful physical attack and night vision"
+        },
+        {
+            "query": "creature that thrives underwater and can speak to sharks",
+            "variant": "monster that excels in water and can communicate with sharks"
+        },
+        {
+            "query": "strong sea monster with high dexterity and constitution",
+            "variant": "powerful oceanic creature with exceptional agility and durability"
+        }
+    ]
+}

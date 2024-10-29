@@ -1,0 +1,55 @@
+{
+    "name": "Forest Emperor",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 30 ft., climb 30 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "forest",
+        "aberration",
+        "mobile",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "formidable",
+        "acidic",
+        "frightening",
+        "durable",
+        "mobile"
+    ],
+    "description": "The Forest Emperor is a large aberration with a grotesque appearance, possessing acidic claws and a long tail. Its flower-ringed eye pits give it a distinct look, and it constantly rattles its tail, creating an ominous presence.",
+    "memorable": "Its ability to drain hit points from enemies permanently and impose fear makes the Forest Emperor a truly terrifying creature.",
+    "goals": "To dominate its environment and instill fear in others, assert its control, and eliminate threats.",
+    "relations": "Related to other aberrant creatures and may command lesser aberrations or terrorize forest animals.",
+    "environment": "Typically found in forested areas, where it can effectively utilize its camouflage abilities.",
+    "strengths": "High durability due to a large pool of hit points and resistances to acid and cold, strong physical attacks.",
+    "weaknesses": "Low Charisma leads to difficulties in social interactions.",
+    "attacks": "Multiattack with claw and tail strikes, dealing significant slashing, acid, and bludgeoning damage.",
+    "most_powerful_ability": "Toxic Nectar Spray, an area attack dealing heavy acid damage in a wide cone.",
+    "equipment": null,
+    "senses": "Possesses keen smell, gaining advantage on perception checks reliant on smell.",
+    "skills": "Excellent perception allows it to detect hidden creatures effectively.",
+    "additional_information": [
+        "Immunities to acid and cold damage",
+        "Resistance to nonmagical bludgeoning damage",
+        "Can frighten nearby creatures with its tail rattle",
+        "Regenerates health from drained hit points",
+        "Advantage on stealth checks in forest terrain"
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "forest monster with acidic attacks",
+        "huge aberration that drains hit points",
+        "creature that frightens foes in forests",
+        "acidic claw attacks and fear abilities",
+        "mobile forest predator with toxic spray"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Jackalwere Pack Leader",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 feet, agile in combat",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "shapeshifter",
+        "deceiver"
+    ],
+    "adjectives": [
+        "cunning",
+        "charismatic",
+        "manipulative"
+    ],
+    "description": "The Jackalwere Pack Leader appears as a medium, cunning fiend with wolf-like features that allow it to shapeshift between forms including a jackal-human hybrid. Its appearance is deceptive and its demeanor exudes charm and authority.",
+    "memorable": "This creature is notable for its ability to charm and incapacitate foes while manipulating its allies effectively in combat.",
+    "goals": "To control encounters and manipulate others through deception and cunning strategies.",
+    "relations": "Often leads groups of jackalweres and may collaborate with other fiends.",
+    "environment": "Typically found in areas where fiends and shapeshifters coexist, such as cursed lands or shadowy places.",
+    "strengths": "Resilient against nonmagical weapons and capable of stealthy maneuvers alongside pack tactics to overpower foes.",
+    "weaknesses": "Vulnerable to magical attacks, and it relies heavily on allies in combat situations.",
+    "attacks": "Capable of biting with sharp teeth or striking with a scimitar, and can incapacitate foes with its Sleep Gaze ability.",
+    "most_powerful_ability": "The Sleep Gaze ability can charm and potentially render foes incapacitated for 10 minutes, making them helpless.",
+    "equipment": "Wields a scimitar.",
+    "senses": "Has advantage on Perception checks that rely on hearing and smell, making it highly aware of its surroundings.",
+    "skills": "Proficient in deception and stealth, capable of maneuvering situations to its advantage.",
+    "additional_information": [
+        "Advantages from Pack Tactics when allies are nearby.",
+        "Must make a saving throw to speak the truth.",
+        "Can shapeshift into various forms including a jackal-human hybrid.",
+        "Fearless against mundane weapons, will retreat if outnumbered by magical foes.",
+        "Uses charm and intimidation as tools for manipulation."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that shapeshifts into a jackal",
+        "cunning leader of jackalwere creatures",
+        "monster with charm and deception abilities",
+        "stealthy fiend with Sleep Gaze ability",
+        "manipulative creature that leads fiends"
+    ]
+}

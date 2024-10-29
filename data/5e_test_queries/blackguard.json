@@ -1,0 +1,25 @@
+{
+    "name": "Blackguard",
+    "queries": [
+        {
+            "query": "humanoid combatant with Aura of Anger ability",
+            "variant": "humanoid fighter with Aura of Anger power"
+        },
+        {
+            "query": "medium creature that inflicts piercing and slashing damage",
+            "variant": "medium-sized being dealing piercing and slashing harm"
+        },
+        {
+            "query": "intimidating warrior with high armor class",
+            "variant": "fearsome fighter with great AC"
+        },
+        {
+            "query": "strong melee attacker that curses enemies",
+            "variant": "powerful melee foe that places a curse on targets"
+        },
+        {
+            "query": "Blackguard that strengthens allies and excels in close combat",
+            "variant": "Blackguard that boosts allies and is great in melee"
+        }
+    ]
+}

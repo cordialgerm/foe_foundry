@@ -1,0 +1,51 @@
+{
+    "name": "Ancient Mithral Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Gargantuan",
+    "hp": 490,
+    "ac": 20,
+    "srd": false,
+    "cr": "22",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "dragon",
+        "gargantuan",
+        "mythical"
+    ],
+    "adjectives": [
+        "ancient",
+        "powerful",
+        "versatile"
+    ],
+    "description": "The Ancient Mithral Dragon is a massive dragon with mithral scales, showcasing extraordinary agility and durability. It possesses an impressive blend of magical and physical traits that make it both a formidable opponent and a master tactician.",
+    "memorable": "Notable for its ability to reflect spells and its Shard Breath attack, which creates difficult terrain and inflicts slashing damage, making it an exceptional battlefield controller.",
+    "goals": "To assert dominance over its territory, use its intellect in combat, and protect its hoard from intruders.",
+    "relations": "It may command lesser dragons or allied creatures and could be sought after by powerful spellcasters for its magic-resistant qualities.",
+    "environment": "Usually found in mountainous regions, ancient ruins, or secluded lairs that serve as its domain.",
+    "strengths": "Possesses high Dexterity and Constitution, allowing it to evade attacks effectively while maintaining resilience.",
+    "weaknesses": "Only vulnerable to slashing damage, showing a narrow weakness compared to its overall defenses.",
+    "attacks": "Utilizes a multiattack consisting of a frightening presence, a bite that can end magical effects, multiple claw attacks causing ongoing damage, and a bludgeoning tail strike.",
+    "most_powerful_ability": "Shard Breath, which inflicts significant area damage and transforms the battlefield, creating both offensive and defensive challenges.",
+    "senses": "Has blindsight up to 60 feet and a passive Perception of 29, making it highly aware of its surroundings.",
+    "skills": "Highly proficient in Insight, Perception, and Stealth, allowing it to discern its opponents' intentions and approach stealthily.",
+    "additional_information": [
+        "Immunity to slashing damage",
+        "Legendary resistance offers it the power to avoid negative effects",
+        "Magic resistance grants it advantage against spells",
+        "Mithral scales can reflect spells when executed correctly",
+        "Frightful Presence can incapacitate foes with fear"
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive dragon with magical abilities",
+        "dragon that creates difficult terrain",
+        "powerful dragon with legendary resistance",
+        "ancient dragon with mithral scales",
+        "dragon with fear-inducing presence"
+    ]
+}

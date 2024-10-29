@@ -1,0 +1,54 @@
+{
+    "name": "Drow",
+    "creature_type": "Humanoid",
+    "creature_subtype": "elf",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 15,
+    "srd": true,
+    "ac_description": "chain shirt",
+    "cr": "1/4",
+    "movement": "30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dark elf",
+        "stealth",
+        "poison",
+        "magic"
+    ],
+    "adjectives": [
+        "dark-skinned",
+        "cunning",
+        "subterranean",
+        "agile"
+    ],
+    "description": "Drow are dark-skinned elves with a slender build, skilled in stealth and magic. They are often found wielding poisoned weapons, dressed in light armor suitable for quick movements.",
+    "memorable": "Drow are known for their cunning, manipulation, and use of poisons in combat, making them formidable opponents in the Underdark.",
+    "goals": "Drow typically seek power and favor from their dark goddess Lolth, often engaging in betrayal and intrigue.",
+    "relations": "Drow may be encountered with other Underdark creatures such as demons or beasts, or as rival factions within their own society.",
+    "environment": "They thrive in the dark, treacherous caves of the Underdark.",
+    "strengths": "Drow excel in stealth and ambush tactics, using their darkvision to navigate and attack in darkness effectively.",
+    "weaknesses": "Drow have a significant vulnerability to sunlight, which hampers their effectiveness.",
+    "attacks": "Drow are adept with shortswords and hand crossbows, often inflicting poison upon their targets.",
+    "most_powerful_ability": "Poison Weapon allows the drow to coat a weapon in poison, inflicting debilitating effects on its target.",
+    "equipment": null,
+    "senses": "Drow possess darkvision, allowing them to see in complete darkness up to 120 feet.",
+    "skills": "The drow has a high Stealth score, enabling them to remain hidden and surprise their enemies.",
+    "additional_information": [
+        "Drow are influenced by a strict hierarchy in their society ruled by female priestesses.",
+        "They can innately cast spells such as darkness and faerie fire.",
+        "Drow culture is marked by betrayal and power struggles."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Drow can innately cast dancing lights at will and darkness or faerie fire once per day.",
+    "test_queries": [
+        "dark elf with poisoned weapons",
+        "cunning subterranean humanoid",
+        "stealthy drow in darkness",
+        "ambush tactics of drow",
+        "drow spells and abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Pixie\u2019s Umbrella",
+    "queries": [
+        {
+            "query": "small plant creature that can float and releases poison spores",
+            "variant": "small creature that releases poison spores and can float"
+        },
+        {
+            "query": "monster that resembles a fungus and is weak in combat",
+            "variant": "weak monster that looks like a fungus"
+        },
+        {
+            "query": "plant that hides as fungus and has a low armor class",
+            "variant": "plant creature with low armor class that hides like a fungus"
+        },
+        {
+            "query": "creature with the ability to blend into surroundings and uses poison",
+            "variant": "creature using poison that blends into its surroundings"
+        },
+        {
+            "query": "weak monster with poor attributes that can evade danger",
+            "variant": "monster with bad attributes that can escape danger"
+        }
+    ]
+}

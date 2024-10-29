@@ -1,0 +1,25 @@
+{
+    "name": "Dracotaur",
+    "queries": [
+        {
+            "query": "large dragon with lightning abilities and good melee attacks",
+            "variant": "big dragon that has lightning powers and strong close combat skills"
+        },
+        {
+            "query": "monster that can burrow and has high hit points",
+            "variant": "creature able to dig and possesses substantial health points"
+        },
+        {
+            "query": "chaotic neutral creature that speaks common and draconic",
+            "variant": "creature of chaotic nature that talks common and draconic languages"
+        },
+        {
+            "query": "monster with a charge ability and multiattack action",
+            "variant": "creature that can charge at foes and use multiple attacks"
+        },
+        {
+            "query": "lightning immune creature with darkvision and high AC",
+            "variant": "creature immune to lightning damage that has darkvision and a high armor class"
+        }
+    ]
+}

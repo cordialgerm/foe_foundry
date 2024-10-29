@@ -1,0 +1,25 @@
+{
+    "name": "Blood Hawk",
+    "queries": [
+        {
+            "query": "small agile bird that attacks in groups",
+            "variant": "small agile raven that uses group attacks"
+        },
+        {
+            "query": "bird-like creature with keen sight and evasive flying",
+            "variant": "flying bird creature with good eyesight and dodging abilities"
+        },
+        {
+            "query": "blood hawk abilities and combat tactics",
+            "variant": "combat tactics and abilities of blood hawk"
+        },
+        {
+            "query": "flexible flying beast known for sharp beak attacks",
+            "variant": "flexible flying creature known for its sharp beak"
+        },
+        {
+            "query": "fast small beast with pack tactics and heightened sight",
+            "variant": "quick little beast with group tactics and enhanced sight"
+        }
+    ]
+}

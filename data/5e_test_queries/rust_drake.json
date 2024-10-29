@@ -1,0 +1,25 @@
+{
+    "name": "Rust Drake",
+    "queries": [
+        {
+            "query": "medium dragon that causes disease and has an acid vulnerability",
+            "variant": "medium-sized dragon that has acid weakness and causes diseases"
+        },
+        {
+            "query": "chaotic evil dragon with painful bite attack and high armor class",
+            "variant": "evil chaotic dragon with a painful bite and high AC"
+        },
+        {
+            "query": "dragon with speed of 80 feet that uses lockjaw disease in combat",
+            "variant": "dragon that can walk 80 feet and uses lockjaw disease"
+        },
+        {
+            "query": "flying dragon that deals slashing damage and is immune to poison",
+            "variant": "flying dragon that inflicts slashing damage and is immune from poison"
+        },
+        {
+            "query": "Rust Drake with strong strength and ability to paralyze enemies",
+            "variant": "Rust Drake that has high strength and can paralyze foes"
+        }
+    ]
+}

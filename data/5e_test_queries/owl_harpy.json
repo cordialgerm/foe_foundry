@@ -1,0 +1,25 @@
+{
+    "name": "Owl Harpy",
+    "queries": [
+        {
+            "query": "charming flying monster that uses darkness",
+            "variant": "flying monster that uses darkness and has charm"
+        },
+        {
+            "query": "sinister creature with a Sleeping Song and good stealth",
+            "variant": "stealthy creature with good stealth and Sleeping Song"
+        },
+        {
+            "query": "medium monstrosity that can manipulate prey in dark environments",
+            "variant": "manipulative medium monstrosity in dark environments"
+        },
+        {
+            "query": "owl-like monster with magical abilities and high Charisma",
+            "variant": "magical, owl-like creature with very high charisma"
+        },
+        {
+            "query": "swift monster that loves chaos and ambushes adventurers",
+            "variant": "chaos-loving, swift monster that ambushes adventurers"
+        }
+    ]
+}

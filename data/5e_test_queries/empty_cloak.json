@@ -1,0 +1,25 @@
+{
+    "name": "Empty Cloak",
+    "queries": [
+        {
+            "query": "shadowy construct that protects allies and is vulnerable to fire",
+            "variant": "shadowy construct that aids allies and is weak against fire"
+        },
+        {
+            "query": "medium creature made of shadows that engages in melee",
+            "variant": "medium-sized shadow creature that fights in close combat"
+        },
+        {
+            "query": "construct that can grapple and restrain with shadow tendrils",
+            "variant": "creature made of constructs that can ensnare and hold using shadowy tendrils"
+        },
+        {
+            "query": "fire-vulnerable construct known for Diligent Sentinel ability",
+            "variant": "construct weak to fire with advantage on Perception checks"
+        },
+        {
+            "query": "creature that does not need air or food and comes with unique damage mechanics",
+            "variant": "creature that requires no food or air and has special damage abilities"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Derro Explorer",
+    "creature_type": "Humanoid",
+    "alignment": "any non-good alignment",
+    "size": "Small",
+    "hp": 44,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Underdark",
+        "Ambusher",
+        "Scout"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "non-good"
+    ],
+    "description": "A cunning and agile small humanoid, characterized by its grey skin and mendicant appearance, optimized for survival in rocky underground locales.",
+    "memorable": "Combine mobility with substantial damage, particularly to humanoid targets, making it a versatile foe in combat.",
+    "goals": "To scout and ambush unsuspecting foes within the Underdark.",
+    "relations": "Often encountered alongside other derro or in connection with the Underdark's denizens.",
+    "environment": "Typically found in rocky underground terrains such as caves or the Underdark.",
+    "strengths": "Excellent mobility in difficult terrain and enhanced damage against humanoid targets.",
+    "weaknesses": "Lower resilience with relatively moderate hit points and non-synergistic Charisma.",
+    "attacks": "Uses a scimitar for melee attacks with poison-inflicting capabilities, and a shortbow for ranged strikes, both of which can deal significant supplementary damage.",
+    "most_powerful_ability": "The Humanoid Hunter ability allowing for extra damage against humanoids during attacks.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet for optimal navigation in dark environments.",
+    "skills": "Proficient in stealth, survival, and perception, enhancing its ability to ambush and evade.",
+    "additional_information": [
+        "Can move through difficult underground terrains without penalty.",
+        "Has advantage on saving throws against being charmed or frightened.",
+        "The passive perception of 13 increases its awareness.",
+        "Skilled at climbing in rocky environments due to its specialized abilities.",
+        "Exhibits a lower Charisma, affecting social interactions."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small scout in underground caves",
+        "agile humanoid with poison attacks",
+        "explorer that excels in rocky terrain",
+        "ambush predator with enhanced mobility",
+        "darkvision skilled hunter in the Underdark"
+    ]
+}

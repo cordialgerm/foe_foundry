@@ -1,0 +1,25 @@
+{
+    "name": "Draft Horse",
+    "queries": [
+        {
+            "query": "large beast that transports heavy loads and has strong hooves",
+            "variant": "big animal that carries heavy things and has powerful hooves"
+        },
+        {
+            "query": "draft horse characteristics including strength and low intelligence",
+            "variant": "qualities of a draft horse featuring high strength and poor intelligence"
+        },
+        {
+            "query": "beast with 15 hit points and ability to push heavy weights",
+            "variant": "creature with HP of 15 that can push heavy loads"
+        },
+        {
+            "query": "utility creature with average perception and good melee attack",
+            "variant": "helpful animal with average perception skills and strong melee attack"
+        },
+        {
+            "query": "horse that excels in logistics and has weak defenses",
+            "variant": "equine that is great at carrying tasks but has low defenses"
+        }
+    ]
+}

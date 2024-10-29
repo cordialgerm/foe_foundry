@@ -1,0 +1,25 @@
+{
+    "name": "Badger",
+    "queries": [
+        {
+            "query": "small mammal with burrowing abilities and a striped face",
+            "variant": "tiny animal that digs and has black-and-white stripes"
+        },
+        {
+            "query": "peaceful digger that becomes aggressive when provoked",
+            "variant": "calm burrowing creature that attacks when threatened"
+        },
+        {
+            "query": "beast that uses keen smell for perception and has low hit points",
+            "variant": "creature with strong scent abilities and minimal health points"
+        },
+        {
+            "query": "tiny creature known for its powerful claws and solitary nature",
+            "variant": "small animal famous for its digging claws and being alone"
+        },
+        {
+            "query": "badger combat tactics against larger predators",
+            "variant": "how badgers act in fights with bigger animals"
+        }
+    ]
+}

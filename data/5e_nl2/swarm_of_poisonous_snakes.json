@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Poisonous Snakes",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 36,
+    "ac": 14,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": "Ambusher",
+    "tags": [
+        "swarm",
+        "poisonous",
+        "beast"
+    ],
+    "adjectives": [
+        "writhing",
+        "venomous",
+        "agile"
+    ],
+    "description": "A writhing mass of serpents capable of delivering venomous bites, characterized by their quick and overwhelming strikes.",
+    "memorable": "The ability to paralyze or kill prey with venomous bites makes them a formidable challenge.",
+    "goals": "To ambush and overwhelm unsuspecting prey in their natural habitats like jungles and swamps.",
+    "relations": "Often encountered in pairs or larger sizes when in swarms; related to other snake-type creatures.",
+    "environment": "Commonly found in jungles, swamps, or dark caves.",
+    "strengths": "Exceptional agility with a high Dexterity score and numerous condition immunities make it difficult to control.",
+    "weaknesses": "Vulnerable to area effects; cannot regain hit points or gain temporary hit points.",
+    "attacks": "The swarm strikes with its Bites action, inflicting piercing and poison damage in rapid succession.",
+    "most_powerful_ability": "Its Swarm ability allows it to occupy a target's space and move through any opening suitable for a Tiny creature.",
+    "senses": "Possesses blindsight up to 10 feet, allowing it to detect nearby creatures without sight.",
+    "skills": null,
+    "additional_information": [
+        "Resistant to bludgeoning, piercing, and slashing damage.",
+        "Immune to being charmed, frightened, and paralyzed among other conditions.",
+        "Can deal significant damage quickly through coordinated attacks.",
+        "Cannot gain hit points or temporary hit points.",
+        "Effective in ambush scenarios due to its size and movement capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "writhing mass of venomous snakes",
+        "agile poisonous snakes ambush",
+        "medium swarm of snakes in swamp",
+        "dreaded venomous snake swarm",
+        "snakes capable of paralyzing bites"
+    ]
+}

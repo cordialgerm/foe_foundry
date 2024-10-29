@@ -1,0 +1,25 @@
+{
+    "name": "Serpentfolk of Yig",
+    "queries": [
+        {
+            "query": "humanoid serpent creature skilled in deception and magic",
+            "variant": "humanoid serpent being good at deception and magic"
+        },
+        {
+            "query": "cunning humanoid found in nefarious societies with poison immunity",
+            "variant": "clever humanoid that lives in evil societies and is immune to poison"
+        },
+        {
+            "query": "serpentfolk with innate spellcasting and ability to charm others",
+            "variant": "serpent creature with natural spellcasting and powers to charm others"
+        },
+        {
+            "query": "magic resistant humanoid that utilizes a bite and scimitar in combat",
+            "variant": "magic-resistant humanoid using a bite attack and scimitar in battle"
+        },
+        {
+            "query": "creature that sees in the dark and speaks multiple languages",
+            "variant": "monster that can see in darkness and communicates in various languages"
+        }
+    ]
+}

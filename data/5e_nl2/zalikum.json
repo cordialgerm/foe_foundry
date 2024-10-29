@@ -1,0 +1,52 @@
+{
+    "name": "Zalikum",
+    "creature_type": "Construct",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 103,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 20 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "agile"
+    ],
+    "description": "Zalikum is a huge, robust construct with a ghastly heated body. It features a beak and talons for attacks, and its body exudes a superheated sand-like material.",
+    "memorable": "Its ability to return to life by storing souls and its ghastly heated body make it a uniquely terrifying foe.",
+    "goals": "To eliminate enemies and store their souls for rejuvenation.",
+    "relations": "May serve a powerful creator or be encountered alongside other constructs.",
+    "environment": "Typically found in hostile environments, particularly deserts or locations of death and decay.",
+    "strengths": "Immunity to many forms of damage, high physical resilience, and devastating melee attacks.",
+    "weaknesses": "Limited intelligence and wisdom, making it ineffective in clever tasks.",
+    "attacks": "Zalikum uses a beak for piercing damage and talons for slashing damage, both infused with fire and necrotic energy.",
+    "most_powerful_ability": "Death-infused Desert Breath: exhale superheated sand in a cone, dealing significant fire and necrotic damage while potentially causing exhaustion.",
+    "equipment": null,
+    "senses": "Zalikum has darkvision up to 120 feet, allowing it to see in the dark effectively.",
+    "skills": "Zalikum has a perception skill, allowing it to notice its surroundings somewhat effectively.",
+    "additional_information": [
+        "Highly resilient against nonmagical attacks.",
+        "Can inflict damage to attackers with its heated body.",
+        "Rejuvenation ability involves storing souls.",
+        "Resistant to bludgeoning, piercing, and slashing from nonmagical attacks.",
+        "Does not provoke opportunity attacks when flying."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge construct with a heated body",
+        "monster that stores souls for resurrection",
+        "flying creature that inflicts fire damage",
+        "summoned creature from a hostile environment",
+        "agile monster with devastating breath attack"
+    ]
+}

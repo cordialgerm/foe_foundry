@@ -1,0 +1,25 @@
+{
+    "name": "Dire Wolf",
+    "queries": [
+        {
+            "query": "large aggressive wolf that hunts in packs",
+            "variant": "aggressive wolf that hunts in packs and is large"
+        },
+        {
+            "query": "fierce predator with keen hearing and smell from wilderness",
+            "variant": "predator that is fierce with keen hearing and smell from the wild"
+        },
+        {
+            "query": "muscular furry monster that uses pack tactics",
+            "variant": "furry muscular monster that employs pack tactics"
+        },
+        {
+            "query": "howling wolf creature that excels in stealth and perception",
+            "variant": "stealthy wolf creature that is great at perception and howling"
+        },
+        {
+            "query": "predatory wolf that can knock opponents prone and runs fast",
+            "variant": "predatory wolf that can make opponents fall and runs quick"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Insects",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "20 ft. walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "swarm",
+        "venomous"
+    ],
+    "adjectives": [
+        "buzzing",
+        "crawling",
+        "venomous"
+    ],
+    "description": "A buzzing, crawling mass of small creatures such as beetles, ants, or wasps. The swarm can strip vegetation or flesh in moments.",
+    "memorable": "Overwhelms opponents with sheer numbers and venomous bites.",
+    "goals": "To overwhelm prey by biting and stinging in large numbers.",
+    "relations": "Can appear with other insect swarms or nature-based creatures.",
+    "environment": "Typically found in jungles, forests, or deserts.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage; immune to various conditions.",
+    "weaknesses": "Very low Strength and Intelligence make it ineffective in physical confrontations beyond its bites.",
+    "attacks": "Bites and Venom attacks inflict piercing and poison damage.",
+    "most_powerful_ability": "Swarm ability allows it to occupy spaces of other creatures and move through tiny openings.",
+    "senses": "Possesses blindsight within 10 feet for sensing nearby creatures.",
+    "skills": "Very low passive perception of 8, indicating poor awareness.",
+    "additional_information": [
+        "May include variations like beetles, centipedes, spiders, or wasps.",
+        "Can deal damage even when bloodied, maintaining potency in combat.",
+        "Can maneuver through tight spaces, making it difficult to trap.",
+        "Inflicts poison damage, which complicates encounters.",
+        "Composed of several small creatures acting as one."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mass of crawling venomous insects",
+        "swarm that overwhelms with bites",
+        "insect swarm in jungles and forests",
+        "buzzing swarm of dangerous insects",
+        "biting swarm that can occupy spaces"
+    ]
+}

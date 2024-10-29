@@ -1,0 +1,25 @@
+{
+    "name": "Dark Father",
+    "queries": [
+        {
+            "query": "undead creature that can fly and drains life",
+            "variant": "flying undead monster that can drain life"
+        },
+        {
+            "query": "creature immune to necrotic damage and has high armor class",
+            "variant": "monster with resistance to necrotic damage and high AC"
+        },
+        {
+            "query": "dark entity that poses a challenge with stealth and mobility",
+            "variant": "shadowy creature with stealth and high mobility challenge"
+        },
+        {
+            "query": "undead being that absorbs corpses and has powerful abilities",
+            "variant": "creature capable of corpse absorption and strong abilities"
+        },
+        {
+            "query": "large undead that punishes healing near it and can move through objects",
+            "variant": "big undead monster that affects healing nearby and can pass through walls"
+        }
+    ]
+}

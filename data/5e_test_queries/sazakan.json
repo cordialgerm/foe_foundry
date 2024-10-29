@@ -1,0 +1,25 @@
+{
+    "name": "Sazakan",
+    "queries": [
+        {
+            "query": "elemental creature that controls weather and inflicts cold damage",
+            "variant": "elemental that controls the weather and does cold damage"
+        },
+        {
+            "query": "medium ice monster with high wisdom and natural armor",
+            "variant": "medium creature of ice with natural armor and high wisdom"
+        },
+        {
+            "query": "lawful neutral creature that requires less resources and has a blizzard ability",
+            "variant": "creature that is lawful neutral and needs less resources with a blizzard power"
+        },
+        {
+            "query": "cold elemental with blightsight and unique icy attacks",
+            "variant": "cold creature with blindsight and special icy attacks"
+        },
+        {
+            "query": "Sazakan abilities that involve ice and weather manipulation",
+            "variant": "abilities of the Sazakan related to ice and manipulating weather"
+        }
+    ]
+}

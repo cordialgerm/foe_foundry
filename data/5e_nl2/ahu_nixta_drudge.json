@@ -1,0 +1,51 @@
+{
+    "name": "Ahu-Nixta Drudge",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 26,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 30 ft., hover, walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "clockwork",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "mechanical",
+        "resilient",
+        "dangerous",
+        "unique"
+    ],
+    "description": "The Ahu-Nixta Drudge is a medium-sized aberration, characterized by its reliance on clockwork armor for protection and functionality. It has whirring blades for melee attacks and appears as a somewhat shapeless mass within the armor.",
+    "memorable": "Its dependency on clockwork armor for survival makes the Ahu-Nixta Drudge uniquely vulnerable; if the armor is destroyed, it dies.",
+    "goals": "Typically, it seeks to engage in combat while utilizing its magical abilities for offense and defense.",
+    "relations": "Often encountered alongside other aberrations or constructs that share a similar clockwork nature.",
+    "environment": "Usually found in locations where aberrations are prevalent, such as ancient ruins or laboratories.",
+    "strengths": "Possesses damage immunities to poison and psychic attacks, along with several condition immunities.",
+    "weaknesses": "Completely defenseless if its clockwork armor is destroyed.",
+    "attacks": "Uses whirring blades for melee attacks, dealing slashing damage to enemies.",
+    "most_powerful_ability": "Innate spellcasting which allows it to cast fire bolt at will and fear once per day.",
+    "equipment": "Clockwork armor that both protects and enables it to manipulate objects.",
+    "senses": "Has darkvision up to 60 feet, allowing strategic advantages in low-light situations.",
+    "skills": "Skilled in perception, enabling it to notice hidden threats effectively.",
+    "additional_information": [
+        "Immunities to charming, exhaustion, and various other conditions.",
+        "Clockwork Encasement ability ties its survival to its armor.",
+        "Immutable Form ability grants protection from spells that could change its shape.",
+        "Intelligence-based spellcasting with a spell save DC of 11.",
+        "Deals significant slashing damage in close combat with its whirring blades."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast fire bolt at will and fear once per day.",
+    "test_queries": [
+        "mechanical aberration with clockwork armor",
+        "spellcasting creature immune to shape change",
+        "tough drudge with whirring blades",
+        "creature dependent on armor for survival",
+        "resilient aberration with psychic immunity"
+    ]
+}

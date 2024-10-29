@@ -1,0 +1,25 @@
+{
+    "name": "Rockwood",
+    "queries": [
+        {
+            "query": "huge stone elemental that burrows through the earth",
+            "variant": "big stone elemental that can burrow through the dirt"
+        },
+        {
+            "query": "resilient earth creature immune to poison attacks",
+            "variant": "durable earth monster that is immune to poison damage"
+        },
+        {
+            "query": "rock monster with powerful melee attacks and battlefield manipulation",
+            "variant": "stone creature with strong melee abilities and terrain control"
+        },
+        {
+            "query": "elemental being with thunder vulnerability and high hit points",
+            "variant": "elemental creature with weakness to thunder and many hit points"
+        },
+        {
+            "query": "chaotic neutral monster that deals double damage to structures",
+            "variant": "chaotic neutral creature that inflicts double damage on buildings"
+        }
+    ]
+}

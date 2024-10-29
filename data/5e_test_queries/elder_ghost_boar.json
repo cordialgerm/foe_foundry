@@ -1,0 +1,25 @@
+{
+    "name": "Elder Ghost Boar",
+    "queries": [
+        {
+            "query": "huge spectral boar with powerful tusks",
+            "variant": "huge spectral pig with strong tusks"
+        },
+        {
+            "query": "monstrosity that phases through objects and has a deadly charge attack",
+            "variant": "monstrous creature that can pass through objects and has a lethal charge"
+        },
+        {
+            "query": "Elder Ghost Boar abilities and combat tactics",
+            "variant": "Elder Ghost Boar combat strategies and abilities"
+        },
+        {
+            "query": "creature with high strength that deals extra slashing damage on charge",
+            "variant": "being with high strength that adds slashing damage when charging"
+        },
+        {
+            "query": "boar that uses ghost abilities and speaks with dead",
+            "variant": "pig that utilizes ghostly powers and can communicate with the deceased"
+        }
+    ]
+}

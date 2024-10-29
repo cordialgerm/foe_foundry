@@ -1,0 +1,52 @@
+{
+    "name": "Sathaq Worm",
+    "creature_type": "Elemental",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 149,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "40 ft. walking and 20 ft. burrowing",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "burrowing",
+        "ambush"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "debilitating"
+    ],
+    "description": "A massive elemental worm with a strong constitution and notable durability, characterized by its impressive size and neutral evil nature.",
+    "memorable": "Ability to swallow opponents, dealing ongoing internal damage.",
+    "goals": "To ambush unsuspecting adventurers and incapacitate them.",
+    "relations": "May be encountered in areas with earth or stone, often alone or guarding territory.",
+    "environment": "Commonly found in sandy, muddy, or rocky terrains.",
+    "strengths": "High hit points and strong melee attacks; can camouflage and debilitate foes.",
+    "weaknesses": "Low dexterity and intelligence; limited agility in combat.",
+    "attacks": "Performing multiple melee attacks, including a biting and grappling attack.",
+    "most_powerful_ability": "Agonizing Aura that imposes disadvantage on attacks for nearby foes.",
+    "senses": "Possesses tremorsense up to 60 feet, allowing it to detect movement effectively.",
+    "skills": "Proficient in Perception, enabling it to notice hidden threats.",
+    "additional_information": [
+        "Immunity to acid and poison damage.",
+        "Resists non-magical bludgeoning, piercing, and slashing damage.",
+        "Can burrow undetected through earth and stone.",
+        "Advantage on Stealth checks in specific terrains.",
+        "Deals double damage to objects and structures with its Siege Monster ability."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive elemental worm that swallows enemies",
+        "earth burrowing creature with debilitating aura",
+        "neutral evil worm with high hit points",
+        "ambush predator in rocky terrain",
+        "powerful melee worm that grapples foes"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Illhveli, Nauthveli</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>16</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>280</HP>
 <summary>The Illhveli, known as Nauthveli, is a gargantuan monstrosity with a chaotic evil alignment that embodies the terror of the deep sea. With an impressive armor class of 18 due to its natural armor, it possesses a staggering 280 hit points, making it a formidable foe in battle. This creature's swimming speed is exceptional at 60 feet, although it can only walk a mere 10 feet, indicating its adaptation to aquatic environments. As a challenge rating 16 creature, it offers a substantial threat, granting 15,000 experience points upon defeat. The Illhveli is incredibly powerful due to its remarkable physical abilities and special features, but it has a low Intelligence, suggesting that it may rely more on instinct and raw strength than cunning. It is somewhat vulnerable to cold damage, though it is immune to the frightened and prone conditions.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Lastly, the Thunderous Bellow, which recharges on a roll of 5 or 6, allows the I
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Illhveli, Nauthveli
 
 *Gargantuan* *Monstrosity* *chaotic evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Thunderous Bellow (Recharge 5-6):** The nauthveli bellows in a 60-foot cone. Each creature in the area must make a DC 20 Dexterity saving throw. On a failure, a creature takes 54 (12d8) thunder damage and is pushed up to 15 feet away from the nauthveli and knocked prone. On a success, a creature takes half the damage and isn’t pushed or knocked prone.
 
 
+</statblock>
 
 

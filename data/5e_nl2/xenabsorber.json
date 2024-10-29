@@ -1,0 +1,49 @@
+{
+    "name": "Xenabsorber",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "deceptive",
+        "mimic",
+        "chaotic",
+        "combatant"
+    ],
+    "adjectives": [
+        "blue",
+        "crystalline",
+        "versatile"
+    ],
+    "description": "The Xenabsorber is a blue crystalline aberration that excels in deception and impersonation. It can mimic the physical traits and attacks of other creatures.",
+    "memorable": "Its unique ability to disguise itself and mimic traits makes it a tricky and unpredictable opponent in both combat and social settings.",
+    "goals": "To deceive and impersonate other creatures, using its mimicry to gain advantages in encounters.",
+    "relations": "Can be found in the company of other aberrations or creatures that value trickery.",
+    "environment": "Typically found in chaotic or unpredictable environments, where it can blend into various scenarios.",
+    "strengths": "Good physical capabilities with high strength and a strong ability to deceive.",
+    "weaknesses": "Reliance on observing traits to maintain its mimicry; it reverts to its true form if it fails to observe new traits over a week.",
+    "attacks": "Capable of executing two melee attacks, primarily using a slam attack that deals bludgeoning damage.",
+    "most_powerful_ability": "Trait Mimicry allows it to temporarily adopt the physical traits and attacks of other creatures, enhancing versatility.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, making it adept at noticing details in its environment.",
+    "skills": "Proficient in deception and perception, allowing it to trick others and observe its surroundings effectively.",
+    "additional_information": [
+        "Has advantage on Deception checks when impersonating other creatures.",
+        "Can mimic up to five traits, with a maximum of two being attacks.",
+        "Known for its chaotic nature and unpredictable behavior."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "blue crystalline mimic monster",
+        "deceptive creature that impersonates others",
+        "chaotic aberration with disguise abilities",
+        "medium aberration with high strength",
+        "monster with versatile mimicking traits"
+    ]
+}

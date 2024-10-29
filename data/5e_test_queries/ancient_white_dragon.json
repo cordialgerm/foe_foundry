@@ -1,0 +1,25 @@
+{
+    "name": "Ancient White Dragon",
+    "queries": [
+        {
+            "query": "massive cold dragon that controls icy environments",
+            "variant": "huge dragon that rules over ice and snow"
+        },
+        {
+            "query": "gargantuan predator with cold breath and feral instincts",
+            "variant": "giant predator known for its icy breath and primal nature"
+        },
+        {
+            "query": "dragon that uses ice attacks and thrives in frozen tundras",
+            "variant": "ice-wielding dragon that lives in icy wastelands"
+        },
+        {
+            "query": "cold-resistant dragon that can burrow through snow and ice",
+            "variant": "dragon with cold immunity that digs through ice"
+        },
+        {
+            "query": "ferocious dragon with chilling attacks and high armor class",
+            "variant": "brutal dragon known for icy powers and strong defenses"
+        }
+    ]
+}

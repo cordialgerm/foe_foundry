@@ -1,0 +1,53 @@
+{
+    "name": "Domovoi",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., teleport up to 120 ft.",
+    "role": "null",
+    "tags": [
+        "guardian",
+        "fey",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "chaotic",
+        "mystical",
+        "protector"
+    ],
+    "description": "The Domovoi is a medium-sized fey creature known for its chaotic nature, utilizing magical abilities to guard household spaces. It possesses a strong physical presence and can become invisible, enhancing its capabilities as a guardian.",
+    "memorable": "Its ability to teleport within protected structures and its use of spells like darkness and haste provide strategic control over its surroundings.",
+    "goals": "To protect household spaces and intimidate intruders.",
+    "relations": "Often found in homes, it may be related to or serve other fey creatures.",
+    "environment": "Mostly encountered in domestic settings or rural areas.",
+    "strengths": "High strength for melee attacks, strong spellcasting using Charisma, and the ability to teleport.",
+    "weaknesses": "Low intelligence limits tactical approaches.",
+    "attacks": "Makes two Slam attacks dealing bludgeoning damage with a solid to-hit bonus.",
+    "most_powerful_ability": "Invisibility allows it to ambush foes or reposition without being targeted.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has proficiency in Intimidation, which it uses effectively to intimidate intruders.",
+    "additional_information": [
+        "Immune to acid and lightning damage",
+        "Can magically protect a structure and grant limited effects",
+        "Utilizes spells like alter self, darkness, and haste",
+        "Strong Constitution enhances its durability",
+        "Visually dramatic teleportation effects when using Protector\u2019s Step"
+    ],
+    "damage_types": [
+        "acid",
+        "lightning"
+    ],
+    "spellcasting": "Can cast spells using Charisma as a modifier; can alter its form or create areas of magical darkness.",
+    "test_queries": [
+        "guardian fey that protects houses",
+        "invisible protector with teleportation abilities",
+        "chaotic creature that can cast darkness",
+        "strong melee and spellcasting fey guardian",
+        "home defender with magical powers"
+    ]
+}

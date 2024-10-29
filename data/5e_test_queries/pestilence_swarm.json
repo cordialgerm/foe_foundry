@@ -1,0 +1,25 @@
+{
+    "name": "Pestilence Swarm",
+    "queries": [
+        {
+            "query": "disease-inflicting insect swarm that hides in darkness",
+            "variant": "disease fecing insect scharm that hides in darknes"
+        },
+        {
+            "query": "medium beast that can ambush and cause sewer plague",
+            "variant": "medium beast that ambushes and causes sewer plauge"
+        },
+        {
+            "query": "swarm of pests with high agility that inflicts exhaustion",
+            "variant": "swarm of pests with high agillity that inflicts exhaution"
+        },
+        {
+            "query": "creature that attacks with bites and thrives in the dark",
+            "variant": "creater that attaks with bites and thrives in dark"
+        },
+        {
+            "query": "swarm that is immune to charm and frighten effects",
+            "variant": "swarm that immune to charm and frighten efects"
+        }
+    ]
+}

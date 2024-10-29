@@ -1,0 +1,25 @@
+{
+    "name": "Sentinel in Darkness",
+    "queries": [
+        {
+            "query": "large construct that guards hidden pathways and attacks with stone fists",
+            "variant": "big construct that defends secret paths and strikes with stone hands"
+        },
+        {
+            "query": "creature with darkvision advantages and high perception skills in combat",
+            "variant": "being with advantages against darkvision and excellent perception skills during battle"
+        },
+        {
+            "query": "formidable guardian immune to poison and debilitating conditions",
+            "variant": "powerful protector immune to toxins and debilitating effects"
+        },
+        {
+            "query": "strong durable monster that can teleport items and curses opponents",
+            "variant": "robust creature that teleports objects and places curses on foes"
+        },
+        {
+            "query": "Sentinel in Darkness abilities related to darkvision and illusory walls",
+            "variant": "Sentinel in Darkness powers connected to darkvision and false walls"
+        }
+    ]
+}

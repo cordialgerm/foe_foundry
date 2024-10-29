@@ -1,0 +1,48 @@
+{
+    "name": "Lesser Scrag",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 40 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "regenerating"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "dangerous"
+    ],
+    "description": "The Lesser Scrag is a chaotic evil aquatic creature characterized by its fearsome physical strength and regenerative abilities when in contact with water.",
+    "memorable": "Its ability to regenerate while in water makes it a resilient foe, especially vulnerable to acid and fire.",
+    "goals": "To hunt and ambush prey, taking advantage of its aquatic environment.",
+    "relations": "Commonly found in water bodies, could be seen with other aquatic monsters.",
+    "environment": "Primarily dwells in water.",
+    "strengths": "Formidable melee combat capabilities, excellent swimming speed, and regeneration in water.",
+    "weaknesses": "Limited mobility on land, vulnerable to acid and fire damage.",
+    "attacks": "It can slash with claws and bite, delivering significant melee damage.",
+    "most_powerful_ability": "Regeneration allows it to recover health at the start of its turn when in water.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Swim speed of 40 feet provides great agility in water.",
+        "Regeneration hinges on being in contact with water.",
+        "Dead only if it starts its turn with 0 hit points without regeneration."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "water-dwelling melee monster with regeneration",
+        "aquatic creature that can regenerate in water",
+        "chaotic evil monster with powerful attacks",
+        "creature that is vulnerable to acid and fire",
+        "slow land monster with fast swim speed"
+    ]
+}

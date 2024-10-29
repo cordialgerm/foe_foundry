@@ -1,0 +1,53 @@
+{
+    "name": "Ogrepede",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 142,
+    "ac": 13,
+    "srd": false,
+    "cr": "6",
+    "movement": "40 feet walking and 20 feet climbing",
+    "role": null,
+    "tags": [
+        "undead",
+        "evil",
+        "huge",
+        "fear"
+    ],
+    "adjectives": [
+        "massive",
+        "fearsome",
+        "chaotic"
+    ],
+    "description": "The Ogrepede is a massive undead creature with terrifying and chaotic features, characterized by its large size and fear-inducing presence.",
+    "memorable": "The Ogrepede can inflict fear on nearby opponents and has a potent charge attack that can critically strike its targets.",
+    "goals": "To instill fear and chaos in combat, overwhelming opponents with its brute strength.",
+    "relations": "It may be related to or serve other undead creatures or dark entities.",
+    "environment": "Typically found in dark and desolate locations, often where undead creatures dwell.",
+    "strengths": "High hit points, powerful melee attacks, ability to frighten multiple adversaries at once.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma may limit its tactical abilities and interactions.",
+    "attacks": "The Ogrepede attacks using a bite that deals piercing damage and a slam attack that delivers bludgeoning damage.",
+    "most_powerful_ability": "Overwhelming Assault, causing multiple nearby creatures to potentially become frightened on a critical hit.",
+    "equipment": null,
+    "senses": "It has darkvision up to 90 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to poison damage and conditions such as being charmed or exhausted.",
+        "Can make a critical hit that significantly increases its damage output.",
+        "Vulnerable to attacks when using its Haphazard Charge ability.",
+        "Can only understand languages it knew in life.",
+        "Very poor passive perception."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive undead creature that inflicts fear",
+        "huge monster with chaotic evil alignment",
+        "undead creature with powerful slam attacks",
+        "Ogrepede critical hit fear ability",
+        "terrifying undead that charges at enemies"
+    ]
+}

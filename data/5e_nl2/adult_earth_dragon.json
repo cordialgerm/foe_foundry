@@ -1,0 +1,50 @@
+{
+    "name": "Adult Earth Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Huge",
+    "hp": 287,
+    "ac": 19,
+    "srd": false,
+    "cr": "18",
+    "movement": "40 ft. walking, 40 ft. flying, 60 ft. burrowing",
+    "role": "Controller",
+    "tags": [
+        "dragon",
+        "earth",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Adult Earth Dragon is a large, imposing dragon with scales that resemble rough stone. It has sharp claws and a muscular build, well-equipped for battle and terrain manipulation.",
+    "memorable": "Its ability to camouflage itself as a rock formation and seamlessly burrow through earth makes it a unique and challenging foe in combat.",
+    "goals": "To guard its territory, manipulate the battlefield, and challenge intruders.",
+    "relations": "May be encountered alongside other earth or stone creatures, or as a guardian of natural sites.",
+    "environment": "Typically found in mountainous or rocky terrains, particularly in areas rich in earth and stone.",
+    "strengths": "High hit points, resistance to nonmagical damage, and the ability to manipulate terrain strategically.",
+    "weaknesses": "Becomes less effective when away from its linked territory, reducing its combat potential.",
+    "attacks": "Multiattack includes a strong bite and slam attacks, as well as a devastating cone attack that can blind enemies.",
+    "most_powerful_ability": "Scouring Breath unleashes a cone of abrasive sand and stones that inflicts severe damage and can blind foes.",
+    "equipment": null,
+    "senses": "Has superior sensory capabilities with a passive Perception of 21 and tremorsense of 90 feet.",
+    "skills": "Proficient in Athletics, Nature, and Insight, demonstrating its physical prowess and intelligence.",
+    "additional_information": [
+        "Can cast innate spells like 'spike growth' and 'wall of stone' without material components.",
+        "Earth Glide allows for undetected burrowing.",
+        "False Appearance ability enables it to blend in as a rock formation.",
+        "Legendary Resistance provides it an edge in saving throws.",
+        "Essence Link connects it spiritually to its territory."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can innately cast 'locate animals or plants', 'spike growth', 'stone shape', and 'wall of stone' three times per day.",
+    "test_queries": [
+        "dragons that manipulate terrain",
+        "huge rock-like dragon",
+        "powerful guardian dragon",
+        "earth dragon abilities",
+        "ancient stone dragon"
+    ]
+}

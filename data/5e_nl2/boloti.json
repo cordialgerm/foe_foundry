@@ -1,0 +1,50 @@
+{
+    "name": "Boloti",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Tiny",
+    "hp": 45,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "fast walk at 60 feet per turn",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "aquatic",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "deceptive"
+    ],
+    "description": "The Boloti is a Tiny fey creature known for its cunning and agility, capable of transforming between a true form and a vortex form.",
+    "memorable": "Its ability to blend into aquatic environments and use a vortex form makes it a unique and challenging opponent.",
+    "goals": "To ambush and outmaneuver opponents in aquatic terrains.",
+    "relations": "Related to other fey creatures, potentially serving aquatic beings or elementals.",
+    "environment": "Typically found in aquatic environments, particularly in or near bodies of water.",
+    "strengths": "Excels in stealth and agility while underwater, can ambush effectively, and has access to helpful spells.",
+    "weaknesses": "Disadvantaged on attack rolls when on dry land, vulnerable to being outmaneuvered on land.",
+    "attacks": "Can strike with a dagger for piercing damage or use whirlpool to grapple and restrain targets.",
+    "most_powerful_ability": "Water Mastery: Gains advantage on attack rolls when both it and its target are in the same body of water.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Highly skilled in Stealth and proficient in Perception.",
+    "additional_information": [
+        "Amphibious: Can breathe both air and water.",
+        "Water Camouflage: Advantage on Stealth checks while submerged.",
+        "Spellcasting: Can cast water-related spells, enhancing its aquatic capabilities.",
+        "Transformable: Can change between true and vortex forms.",
+        "Whirlpool ability: Grapples and restrains creatures within its space."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells such as water breathing and control water to assist in aquatic navigation and battlefield control.",
+    "test_queries": [
+        "aquatic fey creature",
+        "cunning water ambusher",
+        "vortex water monster",
+        "stealthy underwater creature",
+        "Nimble aquatic trickster"
+    ]
+}

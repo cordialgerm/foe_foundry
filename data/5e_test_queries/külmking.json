@@ -1,0 +1,25 @@
+{
+    "name": "K\u00fclmking",
+    "queries": [
+        {
+            "query": "large undead creature with corruption ability and darkvision",
+            "variant": "large undead beast with darkvision and corruption power"
+        },
+        {
+            "query": "creature that can manipulate souls and has high mobility",
+            "variant": "monster that can corrupt souls and has great mobility"
+        },
+        {
+            "query": "chaotic evil undead that attacks with claws and bite",
+            "variant": "chaotic undead entity that uses claws and bite for attacks"
+        },
+        {
+            "query": "undead monster immune to necrotic damage and cold",
+            "variant": "undead creature resistant to necrotic damage and cold"
+        },
+        {
+            "query": "K\u00fclmking abilities that cause paralysis and corruption",
+            "variant": "K\u00fclmking powers that inflict paralysis and soul corruption"
+        }
+    ]
+}

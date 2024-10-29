@@ -1,0 +1,55 @@
+{
+    "name": "Pyrohydra",
+    "creature_type": "Monstrosity",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 218,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "30 ft. walk, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "water",
+        "regeneration",
+        "multi-headed"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "aquatic",
+        "poisonous"
+    ],
+    "description": "The Pyrohydra is a huge creature with multiple fire-breathing heads, known for its impressive regenerative abilities and physical strength.",
+    "memorable": "Its ability to regrow heads makes it a persistent threat in combat.",
+    "goals": "To ambush intruders and dominate its environment, often utilizing poisonous water around its lair.",
+    "relations": "Often found in watery environments; may encounter or serve alongside other aquatic monstrosities.",
+    "environment": "Typically resides in aquatic locales, capable of both land and underwater ambushes.",
+    "strengths": "Exceptional physical stats in Strength and Constitution, grants it high durability and survival potential during combat encounters.",
+    "weaknesses": "Low Intelligence limits tactical maneuvers and decisions in combat.",
+    "attacks": "Can execute multiple bite attacks with each head, delivering deadly piercing damage, alongside a devastating fire breath attack.",
+    "most_powerful_ability": "Fire Breath allows it to deal massive area-of-effect fire damage to multiple enemies.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 15, indicating a high awareness of its surroundings.",
+    "skills": "Proficient in Perception and Stealth, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Can hold its breath for 1 hour.",
+        "Regenerates heads unless specific damage types are dealt.",
+        "Can take multiple reactions due to its available heads.",
+        "Water near its lair is poisoned, posing additional threats to intruders.",
+        "Utilizes legendary actions for strategic mobility and grappling."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with fire-breathing heads",
+        "multi-headed creature with regenerative abilities",
+        "ambush predator in aquatic environments",
+        "giant hydra that poisons water",
+        "fire-breathing beast with toxic lair"
+    ]
+}

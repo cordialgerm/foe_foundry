@@ -1,6 +1,8 @@
 <MonsterName/>Wakwak</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Wakwak is a large, unaligned beast known for its agility and ferocity in combat. It has a solid Armor Class of 13 thanks to its natural armor, allowing it to withstand moderate damage. With 45 hit points, it can endure a fair amount of punishment before being defeated. The Wakwak's strengths lie in its strong physical attributes, particularly a Strength score of 16, which provides it with a good +3 modifier, indicating a good level of effectiveness in physical confrontations. However, it has a low Intelligence of 2, rendering it very bad at tasks requiring mental acuity. Its Dexterity of 12 is average, contributing to its moderate mobility and defense, while its Wisdom of 10 and Charisma of 6 limit its perceptive and social capabilities respectively. The combination of its abilities makes the Wakwak a formidable melee combatant, especially when it can coordinate with allies in a pack.</summary>
 
 <detail>
@@ -15,6 +17,7 @@ In terms of actions, the Wakwak can make a Multiattack, which consists of one Be
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wakwak
 
 *Large* *Beast* *unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Wing Slap (Recharge 5–6):** Slams its sharp-edged wings together in front of itself in a 15 ft. cone. All in area make a DC 13 Dex save. On a failure a creature takes 10 (3d6) slashing damage and is pushed up to 10 ft. away from the wakwak and knocked prone. On a success a creature takes half the damage and isn’t pushed or knocked prone.
 
 
+</statblock>
 
 

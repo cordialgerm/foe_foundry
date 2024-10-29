@@ -1,0 +1,25 @@
+{
+    "name": "Deep Gnome Scout",
+    "queries": [
+        {
+            "query": "stealthy humanoid who excels in rocky terrain",
+            "variant": "humanoid that is stealthy and excels in rocky environments"
+        },
+        {
+            "query": "medium creature with keen hearing and camouflage abilities",
+            "variant": "medium-sized being with great hearing and camouflage skills"
+        },
+        {
+            "query": "agile deep gnome with magic resistance and perception skills",
+            "variant": "agile gnome from the depths with magic resistance and high perception abilities"
+        },
+        {
+            "query": "deep gnome scout known for stealth and gathering information",
+            "variant": "scout gnome from the deep that is known for stealth and info gathering"
+        },
+        {
+            "query": "humanoid with a war pick and ability to cast blindness",
+            "variant": "humanoid entity wielding a war pick and capable of casting blindness"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Giant Goat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 19,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "mountain",
+        "herbivore"
+    ],
+    "adjectives": [
+        "large",
+        "horned",
+        "strong",
+        "peaceful"
+    ],
+    "description": "A large, horned herbivore with thick, coarse fur and impressive, curved horns.",
+    "memorable": "Known for powerful headbutts that can knock enemies prone.",
+    "goals": "Grazes on grasses and shrubs in mountainous terrain.",
+    "relations": "Often found in hilly regions, could encounter other herbivores or predators.",
+    "environment": "Mountainous and hilly regions",
+    "strengths": "High physical strength and resilient, exceptional at climbing steep slopes.",
+    "weaknesses": "Low intelligence and minimal magical abilities.",
+    "attacks": "Strong Ram attack that can deal bludgeoning damage and knock opponents prone.",
+    "most_powerful_ability": "Charge ability deals extra damage and can knock the target prone.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Athletics, showcasing good climbing and jumping abilities.",
+    "additional_information": [
+        "Fauna of mountainous terrains",
+        "Has a Terrifying Scream to frighten nearby enemies",
+        "Strong saving throw bonuses against grappling",
+        "Average defensive capabilities with decent hit points",
+        "Very good physical power despite low intelligence"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large herbivore in mountainous areas",
+        "strong goat that can knock foes down",
+        "mountain goat that charges enemies",
+        "horned creature with powerful headbutt",
+        "peaceful giant goat with a frightening scream"
+    ]
+}

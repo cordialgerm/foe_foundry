@@ -1,6 +1,8 @@
 <MonsterName/>Transcendent Lunarchida</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>91</HP>
 <summary>The Transcendent Lunarchida is a formidable aberration characterized by its ability to manipulate light and darkness. As a neutral evil creature, it excels in deception and combat, using its spellcasting and physical prowess to outmaneuver foes. With an Armor Class of 16, it can withstand a considerable amount of damage before succumbing. Its health is robust, boasting 91 hit points, which allows it to remain active in battle for extended periods. However, the Lunarchida has notable weaknesses, particularly in bright sunlight, where it suffers disadvantages on attack rolls and perception checks. Its proficiency in stealth (highly effective with a +9 modifier) allows it to ambush enemies effectively, making it a dangerous opponent.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ The Transcendent Lunarchida represents a balance of cunning strategy and raw for
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Transcendent Lunarchida
 
 *Medium* *Aberration* *neutral evil*
@@ -78,5 +81,6 @@ Cantrips (at will): minor illusion, mage hand, poison spray, ray of frost
 - **Lunar Beam (Recharge 5–6):** The lunarchidna flashes a beam of moonlight in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 28 (8d6) radiant damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

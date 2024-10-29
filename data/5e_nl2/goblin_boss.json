@@ -1,0 +1,48 @@
+{
+    "name": "Goblin Boss",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 24,
+    "ac": 16,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "goblin",
+        "boss",
+        "humanoid"
+    ],
+    "adjectives": [
+        "cunning",
+        "mobile",
+        "strategic"
+    ],
+    "description": "The Goblin Boss is a small, agile humanoid that serves as a leader among goblins, wielding a scimitar and commanding its minions effectively.",
+    "memorable": "Commands lesser goblins to attack and has nimble retreat options.",
+    "goals": "To lead and coordinate goblin attacks against adventurers.",
+    "relations": "Can command up to three goblins within range during combat.",
+    "environment": "Commonly found in caves or areas occupied by goblins.",
+    "strengths": "Good Dexterity and tactical command of goblins enhance its combat abilities.",
+    "weaknesses": "Average Constitution limits its endurance in protracted battles.",
+    "attacks": "Attacks with a scimitar dealing slashing damage or fires a shortbow dealing piercing damage.",
+    "most_powerful_ability": "Command Minions allows multiple goblins to attack simultaneously.",
+    "equipment": "Scimitar and a shortbow.",
+    "senses": "Possesses darkvision up to 60 feet, but has average passive perception.",
+    "skills": "Proficient in stealth and intimidation, allowing it to hide and intimidate effectively.",
+    "additional_information": [
+        "Has the ability to evade attacks with Nimble Escape.",
+        "Utilizes multiattack for increased damage output.",
+        "Can command allies to enhance the number of attacks in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning goblin leader with good mobility",
+        "goblin that commands minions in combat",
+        "agile leader in humanoid form",
+        "small humanoid that uses scimitar and commands",
+        "strategic goblin boss in caves"
+    ]
+}

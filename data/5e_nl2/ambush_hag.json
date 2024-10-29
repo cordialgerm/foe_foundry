@@ -1,0 +1,51 @@
+{
+    "name": "Ambush Hag",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 156,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft., climb 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "fey",
+        "hag",
+        "ambusher"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "deadly"
+    ],
+    "description": "The Ambush Hag is a cunning fey with a formidable presence, notorious for its ability to deceive and ambush unsuspecting victims. It has a sinister appearance, blending seamlessly with its surroundings and utilizing dark illusions.",
+    "memorable": "The Ambush Hag's ability to paralyze foes with its poison-infused claw attacks and its skillful illusion spells can turn the tide of battle swiftly.",
+    "goals": "To ambush and deceive adventurers, causing chaos and taking advantage of their misfortunes.",
+    "relations": "Often finds companionship with other fey creatures or hags, and can be an ally or adversary to adventurers.",
+    "environment": "Typically found in eerie forests or secluded areas where it can set ambushes.",
+    "strengths": "High Dexterity allows for excellent stealth and ambushing capabilities. Strong spellcasting abilities enhance its combat effectiveness.",
+    "weaknesses": "Vulnerability to detection can be exploited by attentive foes, potentially revealing its tricks.",
+    "attacks": "Utilizes multiattack with claws and poisonous sprays, capable of inflicting significant damage and controlling enemies with paralysis.",
+    "most_powerful_ability": "The hypnotic pattern spell can incapacitate groups, controlling the battlefield and making it difficult for enemies to break free.",
+    "senses": "Possesses keen perception with a score of 16, allowing it to notice hidden or stealthy creatures effectively.",
+    "skills": "Expert in Stealth, with a significant Stealth score of 18, allowing it to remain hidden even in plain sight.",
+    "additional_information": [
+        "Can mimic animal sounds and humanoid voices to mislead.",
+        "Resistance to being charmed or rendered unconscious.",
+        "Spider Climb ability enhances its ambush tactics by allowing it to traverse vertical surfaces.",
+        "Illusory Appearance allows it to disguise itself effectively.",
+        "Spellcasting ability allows for creative manipulation of battlefield dynamics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast spells including message, minor illusion, and prestidigitation at will, alongside powerful spells like charm and hallucinatory terrain.",
+    "test_queries": [
+        "deceptive fey creature",
+        "ambushing spellcaster",
+        "poisonous claw attacks",
+        "illusion casting hag",
+        "stealthy ambush monster"
+    ]
+}

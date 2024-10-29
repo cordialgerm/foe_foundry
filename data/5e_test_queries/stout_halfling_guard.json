@@ -1,0 +1,25 @@
+{
+    "name": "Stout Halfling Guard",
+    "queries": [
+        {
+            "query": "small humanoid guard with good perception abilities",
+            "variant": "smal humanoid guard with good percepton skills"
+        },
+        {
+            "query": "halfling character that uses a spear in combat",
+            "variant": "halfling that uses spear in battle"
+        },
+        {
+            "query": "defensive small creature with 11 hit points and low damage output",
+            "variant": "defensive small monster with 11hp and low dmg output"
+        },
+        {
+            "query": "creature with an armor class of 15 and average agility",
+            "variant": "monster with armor class 15 and average agility"
+        },
+        {
+            "query": "entry-level humanoid that serves as a protector",
+            "variant": "entry level humanoid that acts as protector"
+        }
+    ]
+}

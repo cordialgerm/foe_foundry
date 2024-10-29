@@ -1,6 +1,8 @@
 <MonsterName/>Annelidast</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>184</HP>
 <summary>The Annelidast is a colossal monstrosity that operates effectively as a formidable opponent in combat. With its high Armor Class of 18 and significant hit points totaling 184, this creature is designed to withstand substantial damage while dealing it out aggressively. Its strengths lie in powerful melee attacks and unique abilities that capitalize on its burrowing nature and poisonous aura. However, despite its impressive Strength score of 26 and Constitution of 20, the Annelidast is lacking in Dexterity, Intelligence, Wisdom, and Charisma, which can pose limitations in certain interactions. Its challenge rating of 12 indicates it requires a well-coordinated party to defeat, leveraging its defensive capabilities and high damage output.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Annelidast breeds chaos and risk on the battlefield, with its poten
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Annelidast
 
 *Huge* *Monstrosity* *Unaligned*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Defensive Recoil:** When the annelidast takes damage, it can make one Slam attack against a creature restrained by it.
+</statblock>
 
 

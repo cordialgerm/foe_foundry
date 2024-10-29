@@ -1,0 +1,53 @@
+{
+    "name": "Trollkin Fire Shaman",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire magic",
+        "regeneration",
+        "elemental"
+    ],
+    "adjectives": [
+        "medium",
+        "humanoid",
+        "fiery",
+        "tough"
+    ],
+    "description": "A medium humanoid with an affinity for fire magic, the Trollkin Fire Shaman possesses thick skin and wields a staff for melee combat while also able to cast powerful fire spells.",
+    "memorable": "The ability to teleport while wreathed in flames allows for tactical repositioning and the potential to deal area damage when taking hits.",
+    "goals": "Utilizes fire magic for combat and to hinder foes, while also relying on regeneration to endure battles.",
+    "relations": "Often found in the company of other fire-themed creatures, or serving as a shamanic leader among Trollkin.",
+    "environment": "Typically found in volcanic regions, fire-themed terrains, or among other Trollkin.",
+    "strengths": "Possesses regeneration abilities and strong ranged fire attacks.",
+    "weaknesses": "Vulnerable to acid and fire, which negates its regeneration.",
+    "attacks": "Employs multiattack strategy with Mark Foe, unleashing Hurl Flame or staff strikes for damage.",
+    "most_powerful_ability": "Fiery Escape allows for tactical teleportation and area damage when taking damage.",
+    "equipment": "Wields a staff for melee combat.",
+    "senses": "Has a passive perception of 15, making it quite perceptive.",
+    "skills": "Skilled in perception with a +3 modifier, aiding in spotting hidden creatures.",
+    "additional_information": [
+        "Can regain 3 hit points at the start of its turn except when taking acid or fire damage.",
+        "Ability to inflict additional fire damage through the Mark Foe ability.",
+        "Thick skin grants a bonus to its armor class, enhancing its defenses.",
+        "Uses fire magic for ranged and area attacks, making it a formidable foe.",
+        "Possesses a unique teleport ability that increases its tactical options in combat."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast fire spells dealing significant damage at a distance.",
+    "test_queries": [
+        "fire magic humanoid with teleport ability",
+        "tough shaman that uses fire spells",
+        "regeneration and fire damage abilities",
+        "medium trollkin creature skilled in fire magic",
+        "humanoid that can teleport and cast fire"
+    ]
+}

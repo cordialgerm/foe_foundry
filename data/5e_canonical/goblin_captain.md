@@ -1,6 +1,8 @@
 <MonsterName/>Goblin Captain</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>17</AC>
+<HP/>32</HP>
 <summary>The Goblin Captain is a small humanoid creature that serves as a leader among goblins in combat scenarios. It has a relatively high Armor Class of 17, thanks to its chain shirt and shield, making it difficult for most attacks to penetrate its defenses. With 32 hit points, the Goblin Captain is moderately resilient, allowing it to withstand some damage in battle. As a Challenge Rating 1 creature, it poses a moderate threat to adventurers, but it excels mainly through its ability to coordinate attacks with its fellow goblins. The Goblin Captain’s strengths lie in its decent Dexterity modifier of +4, allowing it to be nimble and evade attacks. However, its Strength and Constitution are average, which affects its melee prowess and overall durability negatively, making it not particularly strong or robust.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ For defensive strategies, the Goblin Captain can use its reaction ability, "Prot
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Goblin Captain
 
 *Small humanoid*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 
 - **Protect Me!** When a creature the goblin captain can see targets it with an attack, the captain can sidestep behind an ally within 5 feet of it, moving to an unoccupied space within 5 feet of the ally. The chosen ally becomes the target of the attack instead.
 
+</statblock>
 
 

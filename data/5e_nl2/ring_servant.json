@@ -1,0 +1,49 @@
+{
+    "name": "Ring Servant",
+    "creature_type": "Construct",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "fly 60 ft., hover",
+    "role": "null",
+    "tags": [
+        "construct",
+        "magical"
+    ],
+    "adjectives": [
+        "powerful",
+        "durable",
+        "magical"
+    ],
+    "description": "The Ring Servant is a large, imposing construct with notable physical strength, designed to serve its creator in combat. It features tough natural armor and operates primarily in melee.",
+    "memorable": "Its ability to unleash a devastating area attack with its Ring of Destruction makes it a significant threat on the battlefield.",
+    "goals": "To protect and assist its creator in combat situations.",
+    "relations": "Typically encountered alongside its creator, as it serves as an ally.",
+    "environment": "Often found in settings where its creator operates, such as magical workshops or battlefields.",
+    "strengths": "Excels in melee combat with high Strength and durability, immune to many conditions and non-magical damage.",
+    "weaknesses": "Limited intelligence and inability to communicate verbally.",
+    "attacks": "Can perform two powerful slam attacks each turn, dealing significant bludgeoning damage and knocking opponents prone.",
+    "most_powerful_ability": "The Ring of Destruction allows the Ring Servant to deal massive force damage in an area, affecting multiple foes at once.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 14, enhancing its awareness of its surroundings.",
+    "skills": "Proficient in athletics and perception, allowing it to excel in physical tasks and remain alert.",
+    "additional_information": [
+        "Immunities to being charmed, frightened, paralyzed, and stunned ensure its reliability in battle.",
+        "Slam attacks are magical, allowing them to bypass certain resistances.",
+        "Immutable Form ability prevents alteration of its form from spells or effects."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "magical large construct with high strength",
+        "durable creature with devastating area attacks",
+        "combat ally for creators in D&D",
+        "powerful melee construct that serves its master",
+        "big construct with slam attacks and special abilities"
+    ]
+}

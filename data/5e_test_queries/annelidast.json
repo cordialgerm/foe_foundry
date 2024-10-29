@@ -1,0 +1,25 @@
+{
+    "name": "Annelidast",
+    "queries": [
+        {
+            "query": "colossal worm-like monster with poisonous aura",
+            "variant": "huge worm monster that has a poison aura"
+        },
+        {
+            "query": "burrowing creature immune to poison damage",
+            "variant": "creature that can burrow and is immune to poison"
+        },
+        {
+            "query": "strong melee attacker that operates underground",
+            "variant": "powerful melee monster that functions underground"
+        },
+        {
+            "query": "monstrosity with significant hit points and area damage ability",
+            "variant": "creature with high hit points and ability to deal area damage"
+        },
+        {
+            "query": "monster that creates hazardous zones around itself",
+            "variant": "creature that makes dangerous areas nearby"
+        }
+    ]
+}

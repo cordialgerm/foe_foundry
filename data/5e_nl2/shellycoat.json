@@ -1,0 +1,50 @@
+{
+    "name": "Shellycoat",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "water",
+        "petrification"
+    ],
+    "adjectives": [
+        "tricky",
+        "elusive",
+        "amphibious"
+    ],
+    "description": "The Shellycoat is a medium-sized fey creature that can thrive both in water and on land. It has a slimy exterior and possesses natural armor.",
+    "memorable": "Can regenerate hit points and is vulnerable to sunlight which can petrify it.",
+    "goals": "To ambush and hinder intruders in its watery domain.",
+    "relations": "Related to other fey creatures and large aquatic beings.",
+    "environment": "Commonly found in aquatic environments or near water bodies.",
+    "strengths": "Regeneration allows it to recover hit points, particularly effective in water due to camouflage.",
+    "weaknesses": "Sunlight petrifies it and it is vulnerable to fire and acid damage.",
+    "attacks": "Can bite to deal piercing damage and slash with claws while grappling opponents.",
+    "most_powerful_ability": "The Shellycoat\u2019s Fog ability creates heavily obscured fog and can poison intruders.",
+    "equipment": null,
+    "senses": "Has keen hearing, gaining advantage on perception checks based on sound.",
+    "skills": "Skilled in Stealth, making it capable of remaining undetected while submerged.",
+    "additional_information": [
+        "Immune to being charmed, poisoned, or unconscious.",
+        "Can breathe both air and water due to amphibious ability.",
+        "Regeneration ceases if damaged by acid or fire.",
+        "Ability to see through fog, smoke, and steam enhances combat effectiveness.",
+        "Grapples opponents with claw attacks, restraining them."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "amphibious fey creature in water",
+        "sneaky creature that uses fog",
+        "creature that regenerates but hates sunlight",
+        "medium-sized fey that can become petrified",
+        "water camouflage monster with claw attacks"
+    ]
+}

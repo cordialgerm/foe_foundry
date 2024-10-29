@@ -1,0 +1,25 @@
+{
+    "name": "Yathon",
+    "queries": [
+        {
+            "query": "large humanoid with strong claws that can fly",
+            "variant": "big humanoid with powerful claws and the ability to fly"
+        },
+        {
+            "query": "creature with echolocation weakness and high hit points",
+            "variant": "monster with a deafness vulnerability and impressive hit points"
+        },
+        {
+            "query": "monster that grapples smaller foes and attacks with claws",
+            "variant": "creature that can grapple smaller enemies and slash with claws"
+        },
+        {
+            "query": "humanoid that speaks Common and Orc and has blindsight",
+            "variant": "humanoid creature communicating in Common and Orc with blindsight"
+        },
+        {
+            "query": "flying monster with strong physical damage output",
+            "variant": "aerial creature with heavy melee damage capabilities"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Adult White Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 200,
+    "ac": 18,
+    "srd": true,
+    "cr": "13",
+    "movement": "40 ft., burrow 30 ft., fly 80 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "cold",
+        "ambush predator"
+    ],
+    "adjectives": [
+        "fierce",
+        "primal",
+        "territorial"
+    ],
+    "description": "It has scales resembling icy surroundings, cold calculating eyes, and large wings covered in frost.",
+    "memorable": "Known for its powerful icy breath that can encase enemies in ice and control the battlefield with cold effects.",
+    "goals": "Typically hunts large prey like mammoths or polar bears and defends its territory aggressively.",
+    "relations": "Often found in ice caves or glaciers, can be an adversary to players or allies to ice-based creatures.",
+    "environment": "Frozen wastelands",
+    "strengths": "Immunity to cold damage; exceptional durability and strength with high Constitution and damaging melee attacks.",
+    "weaknesses": "Relatively low Intelligence makes it easier to outsmart in social encounters; reliance on cold attacks might be ineffective against fire-resistant foes.",
+    "attacks": "Multiattack includes a powerful bite that deals piercing and cold damage, two slashing claw attacks, and an immobile tail strike.",
+    "most_powerful_ability": "Cold Breath can unleash a freezing blast in a 60-foot cone, dealing significant cold damage.",
+    "senses": "Possesses blindsight out to 60 feet, allowing it to detect creatures nearby without needing visibility.",
+    "skills": "Skilled in intimidation and perception, making it an effective ambusher with keen awareness.",
+    "additional_information": [
+        "Can burrow through snow and ice, leaving no trace.",
+        "Employs legendary resistance to mitigate damage.",
+        "Creates regional effects linked to its icy domain.",
+        "Capable of physical attacks that can push enemies away.",
+        "Emits a numbing chill to slow down foes within proximity."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can innately cast dominate beast, fire shield, animal friendship, and sleet storm without material components.",
+    "test_queries": [
+        "fierce ice dragon",
+        "powerful cold breath",
+        "primal dragon of the north",
+        "territorial ice beast",
+        "high CR blue ice dragon"
+    ]
+}

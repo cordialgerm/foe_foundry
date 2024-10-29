@@ -1,6 +1,8 @@
 <MonsterName/>Ettin</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>4</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>85</HP>
 <summary>An Ettin is a massive, two-headed giant with a brutish and violent nature. Each of its heads is independent, often arguing with the other, though this does not stop them from working together in battle. Ettins are savage creatures, wielding large, crude weapons such as clubs or tree trunks to smash their enemies. They live in isolated areas, such as caves or ruins, and are highly territorial, attacking any intruders without hesitation. Their dual heads give them an advantage in combat, allowing them to guard against attacks from multiple directions at once.</summary>
 
 <summary>The Ettin is a Large Giant known for its brute strength and unique two-headed physiology. With a challenge rating of 4, it possesses a considerable amount of hit points at 85, making it a formidable opponent in combat. The Ettin's primary strengths lie in its high Strength score of 20, yielding a very good +5 modifier, along with exceptional endurances due to a Constitution score of 16, providing it with a +3 modifier. However, it suffers from low Dexterity (8, -1 modifier), resulting in poor agility and speed when it comes to dodging attacks. One of the notable features of the Ettin is its two heads, which grant it various advantages in perception and saving throws, making it difficult to incapacitate. </summary>
@@ -31,6 +33,7 @@ The Ettin also possesses a "Bonus Action" called "That One!" where one of its he
 
 Source: 5e_srd
 
+<statblock>
 ## Ettin
 
 *Large giant, chaotic evil*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Battleaxe***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) slashing damage.
 
-***Morningstar***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) piercing damage.
+***Morningstar***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (2d8+5) piercing damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin
 
 *Large* *Giant*
@@ -105,6 +110,7 @@ Source: 5e_artisinal_monsters
 - **Axe Whirl (1/Day):** The ettin makes a battleaxe attack against each creature within 10 feet.
 
 
+</statblock>
 
 
 
@@ -113,6 +119,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ettin
 
 *Large giant*
@@ -149,5 +156,6 @@ Source: 5e_artisinal_monsters
 
 - **That** One! One of the ettin’s heads picks a creature the ettin can see within 30 feet of it, gaining advantage on its next attack against that creature. The other head doesn’t like being told what to do and has disadvantage on its next attack against that creature. Each weapon attack notes which head controls that weapon.
 
+</statblock>
 
 

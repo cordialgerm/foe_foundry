@@ -1,0 +1,25 @@
+{
+    "name": "Koralk",
+    "queries": [
+        {
+            "query": "Large fiend with poison immunity that uses venomous attacks",
+            "variant": "large fiend with poison imunity that uses venomous atacks"
+        },
+        {
+            "query": "lawful evil monster with high strength and darkvision",
+            "variant": "lawfull evil monster with high strenth and darkvision"
+        },
+        {
+            "query": "monster immune to fire that has a powerful bite attack",
+            "variant": "monster immun to fire that has a powerfull bite atack"
+        },
+        {
+            "query": "fiend that thrives in darkness and has a multiattack feature",
+            "variant": "fiend that thrivs in darknes and has a multiattack featur"
+        },
+        {
+            "query": "creature that resists cold damage and grapples with vestigial arms",
+            "variant": "creature that resist cold damage and graples with vestigial arms"
+        }
+    ]
+}

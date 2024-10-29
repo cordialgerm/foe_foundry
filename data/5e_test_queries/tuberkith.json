@@ -1,0 +1,25 @@
+{
+    "name": "Tuberkith",
+    "queries": [
+        {
+            "query": "small plant creature that can burrow and has many eyes",
+            "variant": "tiny plant monster that can tunnel and has dozens of eyes"
+        },
+        {
+            "query": "creature with darkvision that excels in perception and mobility",
+            "variant": "monster with the ability to see in darkness and is very mobile"
+        },
+        {
+            "query": "plant monster with unique defensive abilities that prevents teamwork",
+            "variant": "vegetable creature that has special defenses against coordinated attacks"
+        },
+        {
+            "query": "fast burrowing monster that can knock down enemies",
+            "variant": "quick digging creature that can trip opponents"
+        },
+        {
+            "query": "tough small plant with natural armor and slashing attacks",
+            "variant": "resilient tiny plant with natural defense and cutting strikes"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Sinkhole Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 108,
+    "ac": 7,
+    "srd": false,
+    "cr": "4",
+    "movement": "20 ft. walking, 40 ft. burrowing, 20 ft. climbing",
+    "role": "null",
+    "tags": [
+        "ooze",
+        "gargantuan",
+        "blindsight",
+        "grappling"
+    ],
+    "adjectives": [
+        "amorphous",
+        "formidable",
+        "sticky"
+    ],
+    "description": "The Sinkhole Ooze is a massive, amorphous blob that blends into the earth, designed to ensnare unsuspecting creatures that come too close.",
+    "memorable": "Its ability to create hollow cylindrical forms allows it to trap creatures inside while remaining indistinguishable from the ground.",
+    "goals": "To ensnare and digest creatures that venture into its space.",
+    "relations": "Similar to other oozes and could be encountered alongside other subterranean creatures.",
+    "environment": "Typically found in subterranean environments like pits or sinkholes.",
+    "strengths": "Resilient to damage, with multiple pseudopods for grappling and mobility advantage through shaping its form.",
+    "weaknesses": "Low Armor Class of 7 makes it susceptible to physical attacks.",
+    "attacks": "Pseudopod attacks that deal bludgeoning and acid damage while grappling targets.",
+    "most_powerful_ability": "The ability to stretch its body into a hollow cylinder, controlling the battlefield and trapping enemies.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Has a low passive perception score of 8.",
+    "additional_information": [
+        "Does not require sleep, remaining active.",
+        "Can extrude replacement pseudopods quickly when destroyed.",
+        "Grabs creatures falling into its cylinder with a Pluck reaction.",
+        "Immunity to acid damage enhances its survivability.",
+        "Can navigate tight spaces due to its Amorphous trait."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant amorphous creature that traps",
+        "sticky blob that grapples unsuspecting adventurers",
+        "gargantuan ooze found in pits",
+        "ooze that blends into the ground",
+        "creature with pseudopods and acid attacks"
+    ]
+}

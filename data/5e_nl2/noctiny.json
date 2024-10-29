@@ -1,0 +1,52 @@
+{
+    "name": "Noctiny",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "humanoid",
+        "spellcaster",
+        "magical"
+    ],
+    "adjectives": [
+        "cunning",
+        "unpredictable",
+        "strong"
+    ],
+    "description": "The Noctiny is a medium-sized humanoid with strong charisma and a skilled appearance, adept in magical confrontations.",
+    "memorable": "Notable for its magical weapon attacks and high resistance to spells, making it a challenging foe in magical battles.",
+    "goals": "To engage in combat using its magical enhancements and to overcome opponents through cunning strategy.",
+    "relations": "Can be encountered with other dark, cunning humanoids or creatures, particularly in contexts involving magical duels.",
+    "environment": "Typically found in places where magic thrives, such as enchanted forests or dark caverns.",
+    "strengths": "Possesses Magic Resistance allowing it to be resilient against spells, and Eldritch Weapons that enhance its damage output.",
+    "weaknesses": "Has no special senses or advanced skills, potentially leaving it vulnerable in other scenarios.",
+    "attacks": "Can perform Multiattacks with a Quarterstaff or use a ranged Eldritch Fury dealing significant force damage.",
+    "most_powerful_ability": "Eldritch Weapons allows it to deal extra magical damage with weapon strikes.",
+    "equipment": "Quarterstaff, capable of melee and ranged magical attacks.",
+    "senses": "Passive perception is average at 10 with no notable special senses.",
+    "skills": "No noteworthy skill proficiencies.",
+    "additional_information": [
+        "Can become a formidable opponent in magical confrontations.",
+        "High strength and charisma make it an effective combatant.",
+        "Eldritch Weapons ability significantly increases its damage potential.",
+        "Easily adaptable in combat with spell-like abilities.",
+        "Frightened condition immunity offers strategic advantages."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid with magical weapon attacks",
+        "cunning magical creature with strong charisma",
+        "strategic opponent resistant to spells",
+        "medium-sized creature with Eldritch abilities",
+        "Noctiny combat tactics and abilities"
+    ]
+}

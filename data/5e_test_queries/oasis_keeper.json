@@ -1,0 +1,25 @@
+{
+    "name": "Oasis Keeper",
+    "queries": [
+        {
+            "query": "huge desert monstrosity with poison abilities",
+            "variant": "big desert monster that uses poison powers"
+        },
+        {
+            "query": "stealthy creature that controls water and calms opponents",
+            "variant": "sneaky monster that can control water and pacifies foes"
+        },
+        {
+            "query": "strong desert guardian with melee attacks and poison",
+            "variant": "powerful oasis protector that attacks physically and uses poison"
+        },
+        {
+            "query": "desert monster that can hold its breath and has camouflage",
+            "variant": "desert creature capable of holding breath and using disguise"
+        },
+        {
+            "query": "creature with poison damage immunity and melee attack",
+            "variant": "monster immune to poison damage and has physical attack"
+        }
+    ]
+}

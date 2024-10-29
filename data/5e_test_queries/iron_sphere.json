@@ -1,0 +1,25 @@
+{
+    "name": "Iron Sphere",
+    "queries": [
+        {
+            "query": "small construct with high Constitution and lightning immunity",
+            "variant": "a small construct that has high Con and is immune to lightning"
+        },
+        {
+            "query": "tactical burrowing creature with melee attacks and damage resistance",
+            "variant": "a creature that burrows tactically with melee attacks and has damage resist"
+        },
+        {
+            "query": "Iron Sphere attributes and speed behavior in combat scenarios",
+            "variant": "attributes of Iron Sphere and its speed behavior during combat"
+        },
+        {
+            "query": "construct that jumps high and deals double damage to objects",
+            "variant": "a construct capable of high jumps and double damage to objects"
+        },
+        {
+            "query": "resilient small construct with blindsight and weak social skills",
+            "variant": "a small, resilient construct with blindsight but poor social skills"
+        }
+    ]
+}

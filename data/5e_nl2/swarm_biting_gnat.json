@@ -1,0 +1,50 @@
+{
+    "name": "Swarm of Biting Gnats",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 16,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "10 ft. walking and climbing, 30 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "nuisance"
+    ],
+    "adjectives": [
+        "biting",
+        "distracting",
+        "nimble"
+    ],
+    "description": "This swarm of small, biting gnats creates chaos through numbers, flying in a tumultuous cloud. Their tiny bodies are agile and able to slip through small spaces while causing annoyance and minor injuries to their foes.",
+    "memorable": "The swarm's ability to distract and debilitate opponents with their buzzing sound makes them a unique challenge.",
+    "goals": "To swarm over and distract enemies, feeding off their discomfort.",
+    "relations": "Could be related to other swarms or insects like mosquitoes or flies.",
+    "environment": "Commonly found in areas with warm-blooded creatures, such as forests or swamps.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, and immune to various conditions, making them difficult to deal with.",
+    "weaknesses": "Highly vulnerable to area-of-effect spells and attacks, which can clear out multiple gnats at once.",
+    "attacks": "The gnats make biting attacks that can inflict minor piercing damage, and may also blind their target temporarily.",
+    "most_powerful_ability": "Distracting Buzz, which imposes disadvantage on attackers by making them struggle to focus.",
+    "equipment": null,
+    "senses": "The swarm has Blood Sense, allowing them to detect warm-blooded creatures nearby, enhancing their hunting abilities.",
+    "skills": "The swarm has average perception skills.",
+    "additional_information": [
+        "The swarm can occupy larger creatures' spaces.",
+        "Due to its low strength, it cannot engage in physical confrontations.",
+        "While it can evade damage due to high dexterity, it is still a fragile creature.",
+        "Despite being unwise, it is a clever attacker in a swarm.",
+        "The swarm cannot regain hit points, making them dependent on numbers."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of tiny biting insects",
+        "annoying flying gnat swarm attack",
+        "beast with distraction and chaos tactics",
+        "small swarm that causes minor blindness",
+        "nimble swarm immune to many conditions"
+    ]
+}

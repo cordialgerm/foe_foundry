@@ -1,0 +1,53 @@
+{
+    "name": "Death Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "20 feet walking and burrowing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "lightning",
+        "poison",
+        "venom"
+    ],
+    "adjectives": [
+        "small",
+        "debilitating",
+        "mobile"
+    ],
+    "description": "The Death Worm is a small monstrosity with a serpentine body that includes the ability to burrow effectively. It is known for its ability to deliver both poison and lightning damage through its bite and ranged attacks.",
+    "memorable": "Its ability to detect life within a mile and deliver debilitating venom makes it a formidable opponent, especially in groups.",
+    "goals": "The Death Worm likely hunts other creatures, particularly those that are not Constructs or Undead.",
+    "relations": "Often encountered in groups, making them more dangerous due to their Lightning Arc ability.",
+    "environment": "Typically found in areas where it can burrow, such as deserts or rocky terrains.",
+    "strengths": "Immunity to lightning damage, ability to regenerate health, and effective area control tactics.",
+    "weaknesses": "Low Strength and Intelligence, limiting its physical attacks and cognitive abilities.",
+    "attacks": "Uses a bite that inflicts piercing, lightning, and poison damage combined with the potential for debilitating Dreaming Venom.",
+    "most_powerful_ability": "Dreaming Venom can reduce a target's maximum hit points and potentially lead to their death if not neutralized.",
+    "equipment": null,
+    "senses": "Has tremorsense, allowing it to detect movement within 60 feet.",
+    "skills": "Possesses a low perception skill level of +0.",
+    "additional_information": [
+        "Can regain 3 hit points at the start of its turn.",
+        "Detect Life ability helps it hunt effectively.",
+        "Discharge ability threatens nearby creatures.",
+        "Lightning Arc increases damage when in numbers.",
+        "Can attack both in melee and at range."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "poisonous small creature with lightning attacks",
+        "burrowing creature that senses life",
+        "mobile venomous monster that attacks in groups",
+        "lightning-infused worm with regeneration",
+        "small monster with debilitating effects"
+    ]
+}

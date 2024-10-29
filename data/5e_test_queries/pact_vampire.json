@@ -1,0 +1,25 @@
+{
+    "name": "Pact Vampire",
+    "queries": [
+        {
+            "query": "evil undead creature that can charm and regenerate health",
+            "variant": "undead evil creature that regenerates health and can charm"
+        },
+        {
+            "query": "medium vampire known for blood manipulation and poison resistance",
+            "variant": "vampire medium creature known for manipulating blood and resistant to poison"
+        },
+        {
+            "query": "combat-focused vampire with regenerative abilities and darkvision",
+            "variant": "vampire focused on combat with abilities to regenerate and has darkvision"
+        },
+        {
+            "query": "vampire with high Strength and Charisma that thrives in darkness",
+            "variant": "strong vampire with high Charisma that excels in darkness"
+        },
+        {
+            "query": "vampire that summons fiends and has immunity to poison damage",
+            "variant": "vampire summoning fiends and immune to poison damage"
+        }
+    ]
+}

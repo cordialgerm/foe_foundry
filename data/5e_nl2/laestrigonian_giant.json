@@ -1,0 +1,51 @@
+{
+    "name": "Laestrigonian Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 95,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "disease"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Laestrigonian Giant is a massive, brutish creature known for its raw power and menacing presence. Its notable features include a greatclub and a fearsome bite capable of inflicting diseases on its foes.",
+    "memorable": "It infects targets with debilitating diseases that prevent healing and can cause lethal consequences over time.",
+    "goals": "To dominate foes using brute strength and debilitating disease.",
+    "relations": "May be encountered with other chaotic evil creatures or giants.",
+    "environment": "Typically found in rugged terrain or locations suited for large creatures.",
+    "strengths": "Exceptional strength and durability, making it a strong physical threat.",
+    "weaknesses": "Low intelligence and charisma limit its strategic options and social interactions.",
+    "attacks": "Utilizes a multiattack combining a powerful bite with a greatclub strike, and can also throw rocks at range.",
+    "most_powerful_ability": "The ability to inflict a disease that severely hinders healing and can cause death over time.",
+    "equipment": "Greatclub",
+    "senses": "Has a passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Deals both physical and long-term disease damage.",
+        "Disease inflicted prevents healing through non-magical means.",
+        "High damage output with melee attacks."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large giant that inflicts diseases",
+        "brutal melee giant with greatclub",
+        "chaotic evil giant in rugged terrain",
+        "powerful giant with devastating bite",
+        "giant known for its raw power and chaos"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Hippogriff",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 39,
+    "ac": 12,
+    "srd": true,
+    "cr": "1",
+    "movement": "walk 40 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flyer",
+        "mount",
+        "predator"
+    ],
+    "adjectives": [
+        "majestic",
+        "proud",
+        "nimble",
+        "formidable"
+    ],
+    "description": "A majestic creature with the front half of an eagle and the hindquarters of a horse, displaying impressive flying capabilities and powerful melee attacks.",
+    "memorable": "Its ability to fly and strike with razor-sharp talons makes it a captivating opponent and a versatile mount.",
+    "goals": "Typically hunts for food and fiercely defends its nest and territory.",
+    "relations": "May be encountered with eagles or other aerial predators.",
+    "environment": "Usually found in high mountain ranges.",
+    "strengths": "Exceptional mobility with flying speed, strong physical attacks, and heightened senses.",
+    "weaknesses": "Low intelligence and charisma make it unsuitable for complex tasks and social interaction.",
+    "attacks": "Can use Multiattack to strike with beak and claws, dealing piercing and slashing damage respectively.",
+    "most_powerful_ability": "Heightened Sight increases its Perception score to 18 when relying on sight.",
+    "senses": "Has keen sight, giving it an advantage on sight-related Perception checks.",
+    "skills": "Proficient in Perception with a total bonus of +5, granting it excellent awareness of surroundings.",
+    "additional_information": [
+        "Resistance to exhaustion and the frightened condition",
+        "Can dive down onto enemies for extra damage",
+        "Strong bond with skilled riders, making them popular mounts",
+        "Defends nests fiercely from intruders",
+        "Known for their proud nature"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "majestic flying creature that hunts in mountains",
+        "large creature with eagle head and horse body",
+        "fiercely protective creature that flies",
+        "predatory monster with sharp claws and beak",
+        "formidable air combatant with keen sight"
+    ]
+}

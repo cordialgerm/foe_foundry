@@ -1,0 +1,56 @@
+{
+    "name": "Ice Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "null",
+    "size": "Gargantuan",
+    "hp": 247,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 50 ft., burrow 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monster",
+        "ice",
+        "gargantuan",
+        "predator",
+        "burrowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying",
+        "powerful",
+        "resilient",
+        "ambush"
+    ],
+    "description": "The Ice Worm is a gargantuan beast with a muscular, elongated body, capable of burrowing through rock and earth.",
+    "memorable": "Its ability to swallow opponents and inflict debilitating poison makes it a fearsome foe in combat.",
+    "goals": "Predation and ambushing warm-blooded creatures, utilizing its tunneling abilities.",
+    "relations": "Similar to other enormous predators, it might share territory with creatures that dwell underground.",
+    "environment": "Typically found in icy or rocky terrains where it can tunnel and ambush prey.",
+    "strengths": "Exceptionally powerful melee attacks and high durability with a significant HP pool.",
+    "weaknesses": "Low Dexterity and Intelligence, which may limit its maneuverability and strategic capabilities.",
+    "attacks": "Multiattack with a bite that can swallow, and a tail stinger that inflicts strong poison damage.",
+    "most_powerful_ability": "Swallowing large or smaller creatures makes the Ice Worm a deadly predator in close combat.",
+    "equipment": "null",
+    "senses": "Blindsight allows it to sense creatures without relying on sight, and tremorsense helps it detect movements through the ground.",
+    "skills": "null",
+    "additional_information": [
+        "Capable of creating large tunnels through solid rock.",
+        "Can sense warm-blooded creatures from a distance.",
+        "Resistant to adverse effects from various spells due to high Constitution.",
+        "Has an effective fighting style, even when retreating.",
+        "Dual attack options enhance its combat effectiveness."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan burrowing predator",
+        "monster that swallows prey and inflicts poison",
+        "powerful ice worm attacking warm creatures",
+        "ambushing creature with tunneling abilities",
+        "colossal worm in icy terrain"
+    ]
+}

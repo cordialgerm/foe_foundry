@@ -1,0 +1,53 @@
+{
+    "name": "Apprentice Mage",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 11,
+    "ac": 10,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "novice",
+        "arcane"
+    ],
+    "adjectives": [
+        "novice",
+        "arcane",
+        "intelligent"
+    ],
+    "description": "The Apprentice Mage is a Medium humanoid creature, representing a novice spellcaster beginning their journey into the arcane arts. It does not have much physical strength, but it is skilled in magical knowledge.",
+    "memorable": "Exhibits significant magical abilities as a low-level spellcaster, utilizing spells like Fire Bolt and Magic Missile, making it a unique and strategic adversary despite low physical prowess.",
+    "goals": "To learn and master the arcane arts, or fulfill a role such as a student at a wizard college.",
+    "relations": "Can be associated with wizards, magic academies, or serve as apprentices to more powerful spellcasters.",
+    "environment": "Typically found in magic academies, wizard towers, or places of arcane research.",
+    "strengths": "Possesses a range of spells for damage and utility, including a reliable defense through the Shield ability.",
+    "weaknesses": "Vulnerable in melee combat due to minimal armor and low physical damage output.",
+    "attacks": "Uses a dagger for melee or ranged attacks, along with ranged spell attacks like Fire Bolt and reliable spells such as Magic Missile.",
+    "most_powerful_ability": "The ability to cast Magic Missile, which can hit multiple targets unerringly.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Highly skilled in Arcana and History, enhancing its potential as a magical opponent.",
+    "additional_information": [
+        "Can represent various characters, such as a student at a wizard college or an older hedge wizard.",
+        "Uses spells effectively to deal damage from a distance.",
+        "Has a spellcasting ability reliant on Intelligence, highlighting its arcane focus.",
+        "Limited physical output makes it dependent on spells for combat effectiveness.",
+        "Can provide utility spells for party assistance."
+    ],
+    "damage_types": [
+        "fire",
+        "force"
+    ],
+    "spellcasting": "The Apprentice Mage can cast a selection of spells, including cantrips and first-level spells with a focus on damage and utility.",
+    "test_queries": [
+        "novice spellcaster",
+        "apprentice of the arcane",
+        "magical student character",
+        "beginner wizard adversary",
+        "low-level spellcaster"
+    ]
+}

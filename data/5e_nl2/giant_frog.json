@@ -1,0 +1,52 @@
+{
+    "name": "Giant Frog",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 18,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "predator",
+        "swamp"
+    ],
+    "adjectives": [
+        "large",
+        "sticky-tongued",
+        "voracious"
+    ],
+    "description": "A large, amphibious predator with a long, sticky tongue and a wide, toothless mouth, primarily found in wetlands.",
+    "memorable": "It can swallow smaller creatures whole, digesting them slowly while grappling with its strong bite.",
+    "goals": "To ambush and capture prey using its tongue and swallowing ability.",
+    "relations": "Often encountered in swamps or wetlands; may appear in groups.",
+    "environment": "Swamps, rivers, and other wetland areas.",
+    "strengths": "Excellent swimmers and ambushers, can grapple and swallow prey, has a powerful jump.",
+    "weaknesses": "Low intelligence and charisma limit strategic capabilities; vulnerable if isolated.",
+    "attacks": "Bites to grapple and swallow, pulling prey closer with its tongue.",
+    "most_powerful_ability": "Swallowing creatures whole, removing them from combat temporarily.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in low-light conditions and a good Perception score of 12.",
+    "skills": "Skilled at stealth, allowing it to effectively hide and ambush.",
+    "additional_information": [
+        "Amphibious ability allows breathing in water and air.",
+        "Standing Leap extends its jumping capabilities up to 20 feet.",
+        "Grappling restricts target movement and actions.",
+        "Swallowed creatures take acid damage each turn.",
+        "Can pull prey closer with a Reeling Tongue action."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large amphibious predator with sticky tongue",
+        "swamp creature that swallows prey whole",
+        "ambush beast found in wetlands",
+        "frog that pulls prey closer with tongue",
+        "giant frog that thrives in water and land"
+    ]
+}

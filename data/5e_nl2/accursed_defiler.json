@@ -1,0 +1,49 @@
+{
+    "name": "Accursed Defiler",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "desert",
+        "malevolence"
+    ],
+    "adjectives": [
+        "cursed",
+        "sand swirling",
+        "resilient"
+    ],
+    "description": "The Accursed Defiler is a medium undead creature embodying the malevolence of the wasteland, featuring a swirling sandstorm around it that obscures visibility.",
+    "memorable": "Its ability to disintegrate into sand and re-form at sundown unless specific conditions are met makes it hard to eliminate permanently.",
+    "goals": "To haunt and menace in desert environments, often leaving confusion in its wake.",
+    "relations": "It may serve or be associated with other desert-dwelling undead or malevolent entities.",
+    "environment": "Typically found in desert terrains.",
+    "strengths": "High Strength allows for strong physical attacks as well as a solid Constitution for damage resilience.",
+    "weaknesses": "Low Intelligence indicates poor cognitive abilities, making it susceptible to cunning tactics.",
+    "attacks": "Engages with two Slam attacks dealing significant bludgeoning damage, potentially exhausting targets, and can unleash a powerful area of effect attack with Sandslash.",
+    "most_powerful_ability": "Cursed Existence allows it to re-form in desert terrain unless killed under specific conditions, making it difficult to permanently defeat.",
+    "senses": "Possesses passive perception of 14, allowing for decent awareness despite its low Intelligence.",
+    "skills": "Skilled in Perception and Stealth, allowing it to evade detection and track its surroundings effectively.",
+    "additional_information": [
+        "Immune to poison and exhaustion, making it formidable in certain combat situations.",
+        "Can operate without air, food, drink, or sleep due to its undead nature.",
+        "Surrounded by a miniature sandstorm that creates difficult terrain for pursuers."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "desert undead creature",
+        "swirling sand monster",
+        "cursed defiled being",
+        "reforming undead in the desert",
+        "undead with exhaustion abilities"
+    ]
+}

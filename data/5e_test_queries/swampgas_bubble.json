@@ -1,0 +1,25 @@
+{
+    "name": "Swampgas Bubble",
+    "queries": [
+        {
+            "query": "poisonous ooze creature that can explode when damaged by fire",
+            "variant": "explosive poison ooze monster that dies by fire damage"
+        },
+        {
+            "query": "swamp-dwelling monster with bludgeoning resistance",
+            "variant": "monster that lives in swamps and resists bludgeoning attacks"
+        },
+        {
+            "query": "Medium ooze that suffocates its victims in swamps",
+            "variant": "suffocating swamp monster that is a Medium ooze"
+        },
+        {
+            "query": "creature with high Constitution and flying ability in swampy areas",
+            "variant": "flying monster that has a high Constitution score and lives in swamps"
+        },
+        {
+            "query": "gelatinous creature with poison damage and bludgeoning bounce ability",
+            "variant": "gel creature that deals poison damage and has a bounce defense against bludgeoning"
+        }
+    ]
+}

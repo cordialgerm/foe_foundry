@@ -1,0 +1,25 @@
+{
+    "name": "Mead Archon",
+    "queries": [
+        {
+            "query": "celestial being that drinks alcohol and creates healing potions",
+            "variant": "celestial creature that makes healing potions and drinks alcohol"
+        },
+        {
+            "query": "chaotic good celestial with high Charisma using spells",
+            "variant": "chaotic good celestial creature with spells and high Charisma"
+        },
+        {
+            "query": "strong celestial that is immune to charm and poison",
+            "variant": "powerful celestial being immune to charm and poison effects"
+        },
+        {
+            "query": "medium-sized archon that can fly and casts spells",
+            "variant": "medium celestial archon able to fly and cast spells"
+        },
+        {
+            "query": "Mead Archon abilities including drunken touch and radiant bolt",
+            "variant": "Mead Archon skills like Drunken Touch and Radiant Bolt"
+        }
+    ]
+}

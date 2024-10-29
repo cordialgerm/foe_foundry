@@ -1,0 +1,49 @@
+{
+    "name": "Capybear",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., swim 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swamp",
+        "aquatic",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "camouflaged",
+        "cooperative",
+        "durable"
+    ],
+    "description": "The Capybear is a medium-sized creature with strong physical traits and a unique combination of abilities that help it thrive in swampy environments.",
+    "memorable": "Its ability to provide tactical support for its allies makes it a notable companion in combat.",
+    "goals": "To inhabit swampy areas while utilizing camouflage for ambush tactics and support its pack.",
+    "relations": "Often found alongside other Capybears, using their pack intelligence to coordinate attacks.",
+    "environment": "Swamps and muddy terrains, where it can effectively use its camouflage.",
+    "strengths": "Possesses strong physical stats and abilities for mobility and group tactics.",
+    "weaknesses": "Notably low intelligence can hinder strategic planning during encounters.",
+    "attacks": "Capybear delivers powerful melee attacks with both a biting and slamming option, taking advantage of prone targets.",
+    "most_powerful_ability": "Pack Tactics, which allows it to gain advantage when an ally is nearby, enhancing its offensive capabilities.",
+    "senses": "It has keen smell, granting it advantage on perception checks that rely on smell.",
+    "skills": "Has proficiency in perception, improving its awareness in its environment.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes.",
+        "Gains advantage on stealth checks in swampy terrain.",
+        "Can knock enemies prone with Pounce ability.",
+        "Can intercept attacks directed at allies, showcasing its protective nature.",
+        "Utilizes terrain to enhance its ambush capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "medium swamp monster with camouflage",
+        "creature that can swim and knock targets prone",
+        "pack creature that uses keen smell to hunt",
+        "aquatic creature with strong melee attacks",
+        "monstrosity that protects allies in combat"
+    ]
+}

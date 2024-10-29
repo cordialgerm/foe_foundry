@@ -1,0 +1,48 @@
+{
+    "name": "Asp Vine",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "crowd control"
+    ],
+    "adjectives": [
+        "deadly",
+        "cunning"
+    ],
+    "description": "The Asp Vine resembles a normal cluster of vines when motionless, making it an effective ambush predator. It possesses thick, elongated vines that it uses to grapple its prey.",
+    "memorable": "Its ability to grapple and poison multiple targets at once while camouflaged as harmless vegetation makes it a unique and terrifying foe in its environment.",
+    "goals": "To ambush unsuspecting creatures and immobilize them for feeding.",
+    "relations": "Often found in dense vegetation or near other ambush predators, it may have a symbiotic relationship with other plant creatures.",
+    "environment": "Typically located in forests, jungles, or any overgrown areas with adequate cover.",
+    "strengths": "Strong grappling capability and poison damage, able to immobilize and harm multiple targets simultaneously.",
+    "weaknesses": "Vulnerable to slashing damage, which can easily bypass its defenses, and lacks offensive capabilities when grappling multiple foes.",
+    "attacks": "Uses up to four vine attacks per turn, delivering piercing and poison damage while grappling and restraining targets.",
+    "most_powerful_ability": "The ability to grapple up to four targets simultaneously while delivering poison damage makes it particularly deadly.",
+    "senses": "Possesses blindsight up to 30 feet, allowing it to sense its surroundings without sight.",
+    "skills": "Has a perception modifier of +4, enabling it to notice threats or prey effectively.",
+    "additional_information": [
+        "Immune to blinded, deafened, and frightened conditions.",
+        "Can camouflage itself effectively when stationary.",
+        "Deals poison damage over time to grappled creatures."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush plant creature",
+        "grappling vine monster",
+        "poisonous plant enemy",
+        "camouflaged ambush predator",
+        "crowd control plant"
+    ]
+}

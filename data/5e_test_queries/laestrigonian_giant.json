@@ -1,0 +1,25 @@
+{
+    "name": "Laestrigonian Giant",
+    "queries": [
+        {
+            "query": "large chaotic evil giant that inflicts disease",
+            "variant": "diseased inflicting large giant that is chaotic evil"
+        },
+        {
+            "query": "giant with high strength and low intelligence living chaotic life",
+            "variant": "chaotic living giant with low intelligence and high strength"
+        },
+        {
+            "query": "tall muscular monster that can attack with a club and bite",
+            "variant": "muscular tall monster that bites and attacks with a club"
+        },
+        {
+            "query": "creature that has natural armor and devastating melee attacks",
+            "variant": "devastating melee attacking creature that wears natural armor"
+        },
+        {
+            "query": "giant that speaks Common and has powerful melee attacks",
+            "variant": "powerful melee attacking giant that can speak Common"
+        }
+    ]
+}

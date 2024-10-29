@@ -1,6 +1,8 @@
 <MonsterName/>Shadow Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>16</AC>
+<HP/>52</HP>
 <summary>The Shadow Dragon Wyrmling is a medium-sized dragon that embodies traits of darkness and malevolence. It serves as a formidable adversary in combat, leveraging its speed, ability to fly, and powerful breath weapon to challenge adventurers. With an Armor Class of 16, it can take a decent amount of damage, sustained by its 52 hit points, which are notably average for its challenge rating of 3. This creature excels in stealth and deception, making it an effective ambusher, but has limitations against magical weaponry. Its connections to the essence of specific areas grant it unique abilities that can complicate encounters for players, especially in terms of long rests and environmental features.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ The combination of these attributes and abilities makes the Shadow Dragon Wyrmli
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -71,5 +74,6 @@ Source: 5e_artisinal_monsters
 - **Anguished Breath (Recharge 5-6):** The dragon exhales a shadowy maelstrom of anguish in a 15-foot cone. Each creature in that area makes a DC 12 Wisdom saving throw  taking 22 (4d8) necrotic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

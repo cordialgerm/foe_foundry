@@ -1,0 +1,49 @@
+{
+    "name": "Earth Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 17,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 30 ft., burrow 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "earth",
+        "wyrmling",
+        "guardian"
+    ],
+    "adjectives": [
+        "cunning",
+        "earthbound",
+        "ferocious"
+    ],
+    "description": "A medium-sized dragon with earthy tones blending into rocky terrain, showcasing its unique bond to the land.",
+    "memorable": "Can burrow seamlessly and become indistinguishable from rock, making it a formidable guardian of its territory.",
+    "goals": "To protect its linked area and ambush intruders, linked to the essence of the land.",
+    "relations": "Can be encountered alongside other earth-related creatures or as a protector of ancient landmarks.",
+    "environment": "Typically found in rocky and earthen landscapes, especially near specific landmarks.",
+    "strengths": "Has good physical attributes, damage resistance against nonmagical weapons, and a unique essence link to an area.",
+    "weaknesses": "Vulnerable to magical weapons which can bypass its resistances.",
+    "attacks": "Melee bite attack dealing significant piercing damage and a versatile breath weapon of sand and stones.",
+    "most_powerful_ability": "Earth Glide, allowing it to burrow without detection and ambush effectively.",
+    "equipment": null,
+    "senses": "Possesses tremorsense allowing it to detect movements through solid earth up to 30 feet away.",
+    "skills": "Excels in athletics and has good insight and perception skills, aiding in ambush tactics.",
+    "additional_information": [
+        "Immune to petrification, making it resilient against that condition.",
+        "Can create levels of fatigue and strife in its linked area upon death.",
+        "False Appearance ability allows it to blend in when motionless."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "earth dragon with burrowing ability",
+        "dragon wyrmling that blends in with rocky terrain",
+        "cunning ambusher in rocky environments",
+        "medium dragon linked to the earth",
+        "wyrmling with powerful sand breath attack"
+    ]
+}

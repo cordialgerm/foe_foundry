@@ -1,6 +1,8 @@
 <MonsterName/>Shadow of Death</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>21</CR>
+<AC/>18</AC>
+<HP/>250</HP>
 <summary>The Shadow of Death is a formidable celestial creature embodying chaotic evil. It stands large and poses a significant threat with an Armor Class of 18 and an impressive total of 250 hit points, granting it considerable resilience in combat. With a Challenge Rating of 21, it offers immense XP value, making encounters with it particularly rewarding or perilous for adventurers. The Shadow of Death boasts exceptional Dexterity and Charisma, enhancing its abilities in agility and persuasive manipulation. It is particularly potent in darkness or dim light, leveraging its powers to inflict necrotic damage while evading detection. However, it is vulnerable to radiant damage, which can be a critical exploit for those prepared to face this malevolent force.</summary>
 
 <detail>
@@ -39,6 +41,7 @@ Overall, the Shadow of Death is a creature that blends exceptional offense with 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow of Death
 
 *Large* *Celestial* *chaotic evil*
@@ -83,5 +86,6 @@ A creature that takes necrotic damage from the shadow death’s weapon must succ
 - **Teleport:** The shadow of death magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
 
 
+</statblock>
 
 

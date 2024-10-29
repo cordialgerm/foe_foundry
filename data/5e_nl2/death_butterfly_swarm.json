@@ -1,0 +1,52 @@
+{
+    "name": "Death Butterfly Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft., fly 5 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "poison",
+        "beast"
+    ],
+    "adjectives": [
+        "deadly",
+        "nimble",
+        "poisonous"
+    ],
+    "description": "A large swarm of butterflies that inflict poison damage, capable of occupying another creature's space and moving through tight openings.",
+    "memorable": "Its unique ability to inflict potent poison even on undead and its swarm tactics pose a significant threat.",
+    "goals": "To hinder enemy movement and inflict poison damage.",
+    "relations": "May swarm or appear alongside other insects or pests.",
+    "environment": "Typically found in gardens, fields, or areas with abundant flora.",
+    "strengths": "High mobility allows it to evade attacks and occupy spaces effectively in combat.",
+    "weaknesses": "Vulnerable to cold and fire damage, lacks sustained offensive capabilities outside its special abilities.",
+    "attacks": "Perform a melee attack called Bites, dealing piercing damage and possible ongoing poison damage.",
+    "most_powerful_ability": "Potent Poison allows it to affect even resistant undead with its poison damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "No notable skill proficiencies listed.",
+    "additional_information": [
+        "Can occupy a creature's space and move freely through tight openings.",
+        "Immunities include charm, fright, paralysis, and poison.",
+        "A creature starting its turn in its space is at risk of being blinded.",
+        "Cannot regain hit points or gain temporary hit points.",
+        "The swarm's speed reduction is a tactical advantage over opponents."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large swarm of poisonous butterflies",
+        "nimble insect swarm that hinders movement",
+        "swarm capable of blinding enemies",
+        "poisonous butterflies that can affect undead",
+        "dangerous insect swarm with potent poison"
+    ]
+}

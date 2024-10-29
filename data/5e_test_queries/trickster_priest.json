@@ -1,0 +1,25 @@
+{
+    "name": "Trickster Priest",
+    "queries": [
+        {
+            "query": "medium humanoid spellcaster with healing abilities and deceptive tactics",
+            "variant": "medium spellcaster humanoid with healing abilities and tactics that are deceptive"
+        },
+        {
+            "query": "trickster humanoid that excels in wisdom and uses spirit guardians",
+            "variant": "humanoid trickster that excels in wisdom and can use spirit guardians"
+        },
+        {
+            "query": "priest that can cast invisibility and has average physical stats",
+            "variant": "priest who can cast invisibility and has average physical attributes"
+        },
+        {
+            "query": "character with strong medicine skills and area control spells",
+            "variant": "character with powerful medicine skills and spells for area control"
+        },
+        {
+            "query": "spellcaster priest that can use healing word and minor illusion",
+            "variant": "priest spellcaster that can utilize healing word and minor illusion"
+        }
+    ]
+}

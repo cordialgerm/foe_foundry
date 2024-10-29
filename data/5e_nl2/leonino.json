@@ -1,0 +1,49 @@
+{
+    "name": "Leonino",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "fly 40 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "stealth",
+        "flying",
+        "charming"
+    ],
+    "adjectives": [
+        "nimble",
+        "elusive"
+    ],
+    "description": "The Leonino is a tiny beast known for its exceptional agility and ability to charm foes. It has a graceful build that facilitates its quick movements and stealthy nature.",
+    "memorable": "The Leonino can charm targets with its bite, creating unexpected alliances or distractions in hostile situations.",
+    "goals": "The Leonino typically seeks to avoid danger while navigating its surroundings and can charm adversaries to escape or gain advantage.",
+    "relations": "The Leonino may be encountered alongside other woodland creatures or small beasts.",
+    "environment": "Forested or urban settings where it can utilize its flying and stealth capabilities.",
+    "strengths": "Highly mobile with the ability to fly and evade attacks effectively.",
+    "weaknesses": "Vulnerable to damage if caught without its evasive maneuvers; low Intelligence and Wisdom may limit interactions.",
+    "attacks": "The Leonino attacks using a bite that can inflict slashing damage and charm foes if they fail a Wisdom saving throw.",
+    "most_powerful_ability": "Evasion allows the Leonino to completely avoid damage when succeeding on Dexterity saving throws.",
+    "equipment": null,
+    "senses": "The Leonino has darkvision up to 30 feet, aiding in its stealthy pursuits.",
+    "skills": "It has proficiency in Stealth, making it exceptionally difficult to detect while flying in its favored environments.",
+    "additional_information": [
+        "Flyby ability prevents opportunity attacks when leaving a target's reach.",
+        "Silent Wings trait provides advantage on Stealth checks while flying.",
+        "Low Challenge Rating makes it an accessible foe for novice adventurers.",
+        "Potential to create charm-based strategic interactions during encounters.",
+        "Relatively low hit points make it susceptible to damage despite its evasive tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "elusive tiny creature that flies",
+        "nimble beast that charms foes",
+        "stealthy beast with flying ability",
+        "quick small monster that avoids attacks",
+        "agile forest creature with charm effect"
+    ]
+}

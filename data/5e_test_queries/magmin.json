@@ -1,0 +1,25 @@
+{
+    "name": "Magmin",
+    "queries": [
+        {
+            "query": "small fiery elemental that explodes upon death",
+            "variant": "small elemental creature on fire that explodes when it dies"
+        },
+        {
+            "query": "creature made of molten rock that ignites objects",
+            "variant": "monster composed of magma that can set things on fire"
+        },
+        {
+            "query": "elemental creature of fire that thrives in combat",
+            "variant": "fire elemental that excels in battles"
+        },
+        {
+            "query": "magical creature that attacks with fire and bludgeoning damage",
+            "variant": "magical being that deals fire and bludgeoning damage in attacks"
+        },
+        {
+            "query": "chaotic elemental living in fiery environments",
+            "variant": "chaotic elemental that dwells in environments filled with fire"
+        }
+    ]
+}

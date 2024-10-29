@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Blight",
+    "creature_type": "Plant",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 65,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "undead",
+        "shadow",
+        "necrotic"
+    ],
+    "adjectives": [
+        "small",
+        "dark",
+        "stealthy",
+        "dangerous"
+    ],
+    "description": "The Shadow Blight is a small plant creature that resembles a stump of a dead tree when motionless, thriving in darkness and decay. It has resilient features with a decent level of natural armor and hit points.",
+    "memorable": "Its ability to animate plants and create more Shadow Blights makes it a formidable threat in natural environments.",
+    "goals": "It typically hides in the shadows to ambush unsuspecting prey and thrive in its dark, decayed surroundings.",
+    "relations": "It may be encountered alongside other dark or plant creatures, especially those that thrive in decay.",
+    "environment": "Usually found in dark, decayed areas rich with vegetation.",
+    "strengths": "Resistant to cold and necrotic damage, and immune to being blinded or deafened.",
+    "weaknesses": "Vulnerable to fire damage, taking double damage from such attacks.",
+    "attacks": "Uses Frozen Shadow Tendril to deal cold and necrotic damage, capable of inflicting significant harm.",
+    "most_powerful_ability": "Animate Plants, which allows it to turn nearby vegetation into allies that can potentially become new Shadow Blights.",
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures without needing sight.",
+    "skills": "Proficient in stealth, providing a +4 bonus to avoid detection.",
+    "additional_information": [
+        "Can blend in perfectly with its surroundings when motionless, difficult to detect.",
+        "It can produce additional threats by animating nearby plants.",
+        "Low intelligence and charisma indicate it's not very intelligent or socially engaging.",
+        "Can multiply its numbers in battle if not eliminated quickly.",
+        "Effectively utilizes darkness to its advantage for ambush tactics."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": "Can use Animate Plants to create animated allies.",
+    "test_queries": [
+        "small plant monster that thrives in darkness",
+        "ambushing dark plant creature with necrotic attacks",
+        "creature that animates plants in decay",
+        "shadowy plant that blends into the environment",
+        "cold damage dealing ambush monster"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Sand Hag",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., burrow 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "hag",
+        "illusion",
+        "sandy terrain"
+    ],
+    "adjectives": [
+        "chaotic",
+        "deceptive",
+        "ambush"
+    ],
+    "description": "The Sand Hag is a medium-sized, chaotic evil fey creature often found in sandy environments. It can disguise itself and others with illusory appearances, and manipulates the battlefield using hot winds and dense sand.",
+    "memorable": "Its ability to mimic sounds and create illusions makes it a master of deception, posing a significant threat in its desert domain.",
+    "goals": "To confuse and manipulate intruders while causing chaos.",
+    "relations": "Other hags or fey creatures that enjoy chaotic practices.",
+    "environment": "Sandy terrains and deserts.",
+    "strengths": "High hit points, strong melee attacks with claw strikes, and resistance to magic.",
+    "weaknesses": "Vulnerable to coordinated attacks from organized groups.",
+    "attacks": "Performs three claw attacks that deal slashing damage; can impose exhaustion on targets with successful hits.",
+    "most_powerful_ability": "Scouring Sirocco creates a damaging area of effect that blinds enemies and obscures vision.",
+    "senses": "Has tremorsense within a 30-foot radius while in sandy terrain, making it difficult to hide from.",
+    "skills": "Excels in Deception, making it a skilled deceiver, and has good Stealth and Perception abilities.",
+    "additional_information": [
+        "Grants advantage on saving throws against spells due to Magic Resistance.",
+        "Leaves no tracks in sandy terrain through Scorpion Walk.",
+        "Can replicate animal sounds and humanoid voices with Mimicry.",
+        "Illusory Appearance disguises itself and its belongings.",
+        "Can create illusions of terrain to confuse enemies."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast spells using Charisma, including at-will Silent Image and three times per day Hallucinatory Terrain and Major Image.",
+    "test_queries": [
+        "sandy illusionist fey in desert",
+        "deceptive creature that mimics sounds",
+        "chaotic hag with powerful magic",
+        "sand creature that blinds enemies",
+        "monster in sandy terrain with exhaustion attacks"
+    ]
+}

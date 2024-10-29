@@ -1,0 +1,48 @@
+{
+    "name": "Diomedian Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 57,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "combatant",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "powerful",
+        "strong",
+        "agile"
+    ],
+    "description": "The Diomedian Horse is a formidable, large beast with exceptional strength and agility, showcasing its impressive muscular build and natural armor.",
+    "memorable": "Its ability to knock targets prone and strike with pack tactics makes it a dangerous enemy in combat.",
+    "goals": "To engage in combat and protect its allies while using its abilities to overwhelm opponents.",
+    "relations": "Likely found in groups with other beasts, potentially alongside other combat-focused creatures.",
+    "environment": "Often found in areas where it can roam freely, such as plains or open fields.",
+    "strengths": "High strength and mobility combined with pack tactics allow it to be highly effective in group combat situations.",
+    "weaknesses": "Low intelligence limits its strategic capabilities and makes it predictable.",
+    "attacks": "Multiattack with a powerful Bite and Claw, capable of dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Pounce allows it to knock creatures prone for additional attacks, enhancing its offensive strategy.",
+    "equipment": null,
+    "senses": "Keen Smell grants it advantage on Perception checks that rely on smell.",
+    "skills": "Average perception abilities indicated by a +1 modifier.",
+    "additional_information": [
+        "Ability to work well with allies through Pack Tactics.",
+        "Exceptional durability with a high Constitution score.",
+        "Simple-minded, as indicated by its very low Intelligence."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful large horse with pack tactics",
+        "horse that knocks opponents prone and bites",
+        "beast that excels in strength and combat",
+        "agile horse with keen smell ability",
+        "large horse that attacks in packs"
+    ]
+}

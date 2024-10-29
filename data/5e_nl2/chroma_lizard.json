@@ -1,0 +1,52 @@
+{
+    "name": "Chroma Lizard",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walks at 40 feet speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "illusion",
+        "radiant"
+    ],
+    "adjectives": [
+        "reflective",
+        "colorful",
+        "nimble"
+    ],
+    "description": "The Chroma Lizard has striking, reflective scales that create dazzling displays of light.",
+    "memorable": "Its ability to create visual illusions and reflect radiant damage makes it a unique adversary.",
+    "goals": "Typically seeks to defend territory and disorient foes using its light manipulation.",
+    "relations": "May be found in the company of other magical beasts or wandering alone.",
+    "environment": "Generally found in brightly lit areas where it can fully utilize its abilities.",
+    "strengths": "High dexterity allows for nimble movement and evasive maneuvers.",
+    "weaknesses": "Vulnerability to radiant damage despite having resistance.",
+    "attacks": "Uses a combination of dazzling visual displays and physical bites and claws.",
+    "most_powerful_ability": "Dazzling Display can blind opponents, significantly hindering their effectiveness.",
+    "equipment": null,
+    "senses": "Has passive perception of 12.",
+    "skills": "Does not excel in perception due to a low score.",
+    "additional_information": [
+        "Can create visual illusions in bright light.",
+        "Becomes blinded if it sees its reflection in bright light.",
+        "Reflects half the radiant damage dealt to it back to the attacker.",
+        "Utilizes multiattack for strategic combat tactics.",
+        "Struggles with interactions due to low intelligence and charisma."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large colorful beast that blinds opponents",
+        "nimble lizard with dazzling reflective scales",
+        "monster that reflects radiant damage",
+        "bright light illusion creature in combat",
+        "chroma lizard habitat and abilities"
+    ]
+}

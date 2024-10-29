@@ -1,0 +1,52 @@
+{
+    "name": "Giant Toad",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 39,
+    "ac": 11,
+    "srd": true,
+    "cr": "1",
+    "movement": "20 feet on land, 40 feet swimming",
+    "role": "Artillery",
+    "tags": [
+        "amphibious",
+        "swamp",
+        "predator",
+        "aquatic"
+    ],
+    "adjectives": [
+        "large",
+        "warty",
+        "sticky"
+    ],
+    "description": "A large, amphibious predator with rough, warty skin that provides camouflage in swamps and ponds. It has a long, sticky tongue used to catch prey and can swallow smaller creatures whole.",
+    "memorable": "Its ability to grapple and swallow prey makes it a unique threat, and its Vaulting Leap surprises foes with its agility.",
+    "goals": "Ambushing prey near water bodies, using stealth in aquatic environments.",
+    "relations": "Can be found near aquatic creatures and may be a predator of smaller animals.",
+    "environment": "Swamps, ponds, and other bodies of water.",
+    "strengths": "Excellent swimmer with the ability to ambush and swallow prey.",
+    "weaknesses": "Slow movement on land and limited to grappling one creature at a time.",
+    "attacks": "Bite attack deals piercing and poison damage and can grapple opponents.",
+    "most_powerful_ability": "Swallow action, allowing it to incapacitate and digest opponents.",
+    "senses": "Passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Can breathe both air and water",
+        "Long jump of 20 feet and high jump of 10 feet",
+        "Grapple ability makes it dangerous in close combat",
+        "Massive size gives it an intimidating presence"
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large amphibious predator in swamps",
+        "toad that can swallow prey whole",
+        "swimming creature with sticky tongue",
+        "vaulting leap amphibious monster",
+        "giant swamp toad with grappling ability"
+    ]
+}

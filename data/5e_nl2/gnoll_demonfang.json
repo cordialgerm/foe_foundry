@@ -1,0 +1,50 @@
+{
+    "name": "Gnoll Demonfang",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "gnoll",
+        "demon",
+        "humanoid",
+        "chaotic",
+        "evil"
+    ],
+    "adjectives": [
+        "speedy",
+        "strong",
+        "menacing"
+    ],
+    "description": "The Gnoll Demonfang is a medium humanoid with a blend of speed and strength, embodying chaotic evil. It has sharp claws and a fearsome demeanor.",
+    "memorable": "The ability to transform into an ordinary gnoll when affected by certain spells, carrying over damage makes it both dangerous and unique.",
+    "goals": "Typically seeks to spread chaos and evil, often attacking and dominating weaker creatures.",
+    "relations": "Related to other gnolls, may be encountered with other chaotic or evil creatures.",
+    "environment": "Often found in dark, chaotic environments or places tainted by evil.",
+    "strengths": "High Strength and Dexterity make it formidable in melee combat, with a special ability to attack multiple times.",
+    "weaknesses": "Average Intelligence, Wisdom, and Charisma limit versatility and effectiveness in spellcasting.",
+    "attacks": "Utilizes a multiattack feature with its Charging Claw, capable of dealing significant slashing damage.",
+    "most_powerful_ability": "Possessed ability allows transformation under certain conditions, making it challenging to eliminate.",
+    "equipment": null,
+    "senses": "Darkvision enables it to see in dim light as if it were bright and in darkness as if it were dim light within 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to charmed and frightened conditions.",
+        "Has a strong Chaotic and Evil aura.",
+        "Effective at tactical movement after attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic evil humanoid with sharp claws",
+        "strong gnoll that can transform during combat",
+        "gnoll with high Dexterity in melee attacks",
+        "menacing gnoll that attacks multiple times",
+        "medium creature with evil aura"
+    ]
+}

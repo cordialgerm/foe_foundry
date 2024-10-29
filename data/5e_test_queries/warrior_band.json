@@ -1,0 +1,25 @@
+{
+    "name": "Warrior Band",
+    "queries": [
+        {
+            "query": "large humanoid that can split into multiple warriors when defeated",
+            "variant": "humanoid that splits into multiple warriors upon defeat and is large"
+        },
+        {
+            "query": "team-oriented monster with area vulnerability and robust physical abilities",
+            "variant": "monster strong in teamwork, has area weakness, and physical abilities"
+        },
+        {
+            "query": "humanoid creature proficient in stealth and survival tactics",
+            "variant": "stealthy humanoid with survival skills and proficiency"
+        },
+        {
+            "query": "humanoid that excels in close combat and has a high passive perception",
+            "variant": "creature good at close combat with high perception passively"
+        },
+        {
+            "query": "monster that uses spears and can endure significant punishment",
+            "variant": "creature that endures a lot and attacks with spears"
+        }
+    ]
+}

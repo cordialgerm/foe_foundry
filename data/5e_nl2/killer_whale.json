@@ -1,0 +1,49 @@
+{
+    "name": "Killer Whale",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 90,
+    "ac": 12,
+    "srd": true,
+    "cr": "3",
+    "movement": "swim 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "marine",
+        "social"
+    ],
+    "adjectives": [
+        "massive",
+        "intelligent",
+        "coordinated",
+        "agile"
+    ],
+    "description": "The Killer Whale has a sleek, black-and-white body designed for speed and agility in water. It is a powerful predator known for its intelligence and social behavior, hunting in pods with coordinated strategies.",
+    "memorable": "Its ability to use echolocation and its powerful bite make it a deadly predator in the oceans.",
+    "goals": "Primarily hunts marine animals like seals and fish, often cooperating with others in its pod.",
+    "relations": "Can be found with other marine creatures and commonly interacts with seafaring cultures.",
+    "environment": "Typically found in the oceans and large bodies of water.",
+    "strengths": "Impressive grappling capabilities and significant hit points provide durability in combat.",
+    "weaknesses": "Low intelligence and charisma scores limit complex strategies and social interactions.",
+    "attacks": "Can perform a strong Bite attack that deals 21 piercing damage, grappling the target for enhanced effectiveness.",
+    "most_powerful_ability": "Echolocation allows it to navigate and detect enemies underwater effectively.",
+    "senses": "Possesses blindsight up to 120 feet, enhancing its ability to perceive surroundings even in darkness or murk.",
+    "skills": "Has a decent Perception skill due to its good Wisdom score and keen hearing.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes while submerged.",
+        "Part of a highly social species that utilizes teamwork in hunting strategies.",
+        "Known for its ability to be trained by coastal cultures."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "intelligent marine predator",
+        "huge black and white ocean creature",
+        "social creature that hunts in pods",
+        "powerful predator with echolocation",
+        "killer whale swimming speed"
+    ]
+}

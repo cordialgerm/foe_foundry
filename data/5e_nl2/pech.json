@@ -1,0 +1,48 @@
+{
+    "name": "Pech",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 33,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "climb 10 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "earth",
+        "small creature"
+    ],
+    "adjectives": [
+        "stone masters",
+        "resilient",
+        "effective"
+    ],
+    "description": "The Pech is a small elemental with mastery over stone and earth, showing a sturdy build given its natural armor.",
+    "memorable": "Unique resilience with immunity to poison and conditions like paralysis, and its ability to incapacitate foes.",
+    "goals": "Typically seeks to protect its rocky environment and maintain balance within it.",
+    "relations": "Can be found alongside other earth elementals or in rocky terrains with various creatures.",
+    "environment": "Usually found in rocky or underground areas.",
+    "strengths": "Immunity to various conditions and a powerful melee ability with potential to incapacitate enemies.",
+    "weaknesses": "Light Sensitivity; vulnerable in bright light leads to disadvantage on attacks and perception checks.",
+    "attacks": "Multiattack feature allows the Pech to strike with a pick and a hammer, dealing piercing and bludgeoning damage.",
+    "most_powerful_ability": "One with the Stone grants temporary resistance to piercing and slashing damage, enhancing survivability.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, allowing it to see in dark environments.",
+    "skills": "Proficient in Athletics and Perception, it excels in physical contests and noticing environmental details.",
+    "additional_information": [
+        "Resistance to piercing and slashing damage when in contact with stone.",
+        "Can incapacitate enemies with a successful multiattack.",
+        "Effective in rocky environments due to climbing ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small elemental that masters stone",
+        "creature with natural armor in rocky areas",
+        "earth guardian that can incapacitate foes",
+        "resilient elemental with climbing ability",
+        "neutral good creature immune to poison"
+    ]
+}

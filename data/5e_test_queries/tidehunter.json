@@ -1,0 +1,25 @@
+{
+    "name": "Tidehunter",
+    "queries": [
+        {
+            "query": "huge aquatic monster that can tread water and land",
+            "variant": "huge water monster that can walk on land and in water"
+        },
+        {
+            "query": "strong creature with net-making abilities that lives in water",
+            "variant": "powerful creature that weaves nets and inhabits water"
+        },
+        {
+            "query": "ambush monster that uses camouflage and can breathe underwater",
+            "variant": "ambushing creature that hides and can live in both air and water"
+        },
+        {
+            "query": "monster with high strength and natural armor that attacks with claws",
+            "variant": "creature with strong physical power and natural defense that fights using claws"
+        },
+        {
+            "query": "tidehunter abilities in melee combat and net traps",
+            "variant": "tidehunter skills in close combat and net usage"
+        }
+    ]
+}

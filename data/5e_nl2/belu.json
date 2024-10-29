@@ -1,0 +1,48 @@
+{
+    "name": "Belu",
+    "creature_type": "Giant",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "benefactor",
+        "shape shifter"
+    ],
+    "adjectives": [
+        "huge",
+        "benevolent",
+        "adaptable"
+    ],
+    "description": "Belu is a Huge Giant characterized by its natural armor and formidable presence. It embodies strength with a robust physique and has a gentle demeanor, often using its power for healing and support.",
+    "memorable": "Belu's ability to change shape allows it to adapt to various situations and assist others, making it a unique ally and protector.",
+    "goals": "To assist and heal fellow creatures while ensuring the safety of the natural world.",
+    "relations": "Belu may be related to other benevolent giants or creatures that inhabit forests or natural areas.",
+    "environment": "Typically found in natural settings like forests or mountains.",
+    "strengths": "Belu is resistant to poison damage and immune to being poisoned, enhancing its durability and supportive capabilities.",
+    "weaknesses": "While Belu is strong, it lacks notable proficiency in perception and struggles to sense its surroundings effectively.",
+    "attacks": "Belu can perform multiattacks with its massive Slam attacks, dealing significant bludgeoning damage and potentially pushing opponents away.",
+    "most_powerful_ability": "Shatterstone, allowing Belu to hurl an enchanted rock that deals area damage, making it effective in ranged combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Belu possesses average perception but lacks proficiency, making it less aware of its surroundings.",
+    "additional_information": [
+        "Belu can craft a healing poultice that heals allies and cures diseases.",
+        "It can cast various spells that manipulate plants and the environment at will.",
+        "Belu has a Charisma saving throw difficulty class of 14, allowing it to effectively use its spells."
+    ],
+    "damage_types": [],
+    "spellcasting": "Belu can cast spells at will, including \u2018Entangle\u2019, \u2018Speak with Plants\u2019, \u2018Stone Shape\u2019, and \u2018Plant Growth\u2019 twice per day.",
+    "test_queries": [
+        "Benevolent giant healer",
+        "Shape-shifting ally creature",
+        "Powerful giant with spellcasting",
+        "Giant with healing abilities",
+        "Adaptable giant protector"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Crystallite",
+    "creature_type": "Giant",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "magical",
+        "tactician"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous",
+        "tactical"
+    ],
+    "description": "The Crystallite is a Large Giant resembling a massive geode when still, embodying a mix of crystal and earthy hues.",
+    "memorable": "Unique transformation upon death into a crystal object, presenting a secondary challenge.",
+    "goals": "To ambush opponents, grappling them and absorbing their lifeforce.",
+    "relations": "May be encountered with other crystalline or earth-themed creatures.",
+    "environment": "Often found in mountainous or rocky terrains.",
+    "strengths": "Exceptional melee combat prowess and the ability to regain health through absorption of lifeforce.",
+    "weaknesses": "Slow movement and low dexterity make it less evasive in combat.",
+    "attacks": "Multiattack with Crystal Limb strikes that can grapple and cause piercing and slashing damage.",
+    "most_powerful_ability": "Biomineralize, which not only drains life but also permanently reduces the target's maximum hit points.",
+    "equipment": null,
+    "senses": "Possesses tremorsense, allowing it to detect movement through vibrations.",
+    "skills": "No notable skill proficiencies beyond average perception.",
+    "additional_information": [
+        "Immunities to poison damage and poisoned condition.",
+        "Resistance to cold and fire damage.",
+        "Grappling attacks impale targets, creating urgency to escape.",
+        "False Appearance allows it to camouflage with surroundings.",
+        "Final Form turns it into a crystal object upon death."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large geode-like giant",
+        "giant with life-draining ability",
+        "massive crystal-formed giant",
+        "giant that grapples and absorbs life",
+        "tactical giant in rocky terrains"
+    ]
+}

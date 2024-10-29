@@ -1,0 +1,25 @@
+{
+    "name": "Midnight Sun",
+    "queries": [
+        {
+            "query": "large evil creature that manipulates light and darkness",
+            "variant": "huge evil monster that can control light and shadows"
+        },
+        {
+            "query": "flying orb that deals radiant damage in daylight",
+            "variant": "flying sphere that inflicts radiant damage during the day"
+        },
+        {
+            "query": "aberration with unique light-based abilities and high hit points",
+            "variant": "creature classified as aberration with special light powers and significant HP"
+        },
+        {
+            "query": "monster immune to necrotic damage in night form and has blindsight",
+            "variant": "creature that is immune to necrotic damage at night and possesses blindsight"
+        },
+        {
+            "query": "Midnight Sun combat tactics and changing forms",
+            "variant": "combat strategies of Midnight Sun and its ability to change forms"
+        }
+    ]
+}

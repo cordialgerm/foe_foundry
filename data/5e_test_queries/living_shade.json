@@ -1,0 +1,25 @@
+{
+    "name": "Living Shade",
+    "queries": [
+        {
+            "query": "stealthy fey creature that blends into shadows",
+            "variant": "fey that blends into shadows and is stealthy creature"
+        },
+        {
+            "query": "medium-sized monster vulnerable to radiant damage in bright light",
+            "variant": "monster that is medium-sized and vulnerable to radiant damage when in bright light"
+        },
+        {
+            "query": "creature with the ability to move through tight spaces and immune to frightened",
+            "variant": "being that can move through tight space and is immune to fear"
+        },
+        {
+            "query": "ambushing creature that thrives in dim light and has cold damage abilities",
+            "variant": "creature that ambushes and does cold damage, thriving in dim light"
+        },
+        {
+            "query": "fey that excels in stealth and has disadvantage in sunlight",
+            "variant": "stealth-excelling fey that suffers disadvantage when in sunlight"
+        }
+    ]
+}

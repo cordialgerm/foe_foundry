@@ -1,0 +1,56 @@
+{
+    "name": "Ettin",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 12,
+    "srd": true,
+    "cr": "4",
+    "movement": "walking speed of 40 feet, can close in quickly",
+    "role": null,
+    "tags": [
+        "giant",
+        "two-headed",
+        "savage",
+        "territorial"
+    ],
+    "adjectives": [
+        "massive",
+        "brutish",
+        "violent",
+        "dual-headed"
+    ],
+    "description": "A massive, two-headed giant wielding crude weapons with each head often arguing yet working together in battle.",
+    "memorable": "Its dual-head ability allows it to perceive threats effectively and resist common incapacitating conditions.",
+    "goals": "Highly territorial, attacks any intruders without hesitation.",
+    "relations": "Commonly found in isolated areas, possibly seen with other giants.",
+    "environment": "Lives in caves or ruins, in isolated areas.",
+    "strengths": "Strong in melee combat with high Strength score and advantage on perception and saving throws.",
+    "weaknesses": "Low Dexterity reduces agility and susceptibility to ranged attacks.",
+    "attacks": "Can perform multiple attacks with weapons like a battleaxe and clubs that deal significant damage; has a special attack called Axe Whirl.",
+    "most_powerful_ability": "Reactive Heads allows it to take two reactions per round.",
+    "equipment": null,
+    "senses": "Possesses advantageous perception due to its two heads, increasing its passive perception to 17.",
+    "skills": "Noteworthy for having high perception skills, benefiting from two heads.",
+    "additional_information": [
+        "Can take two reactions each round.",
+        "Has a bonus action called 'That One!' to gain attack advantage.",
+        "Equipped with a Knobbed Club and a Spiked Club for melee attacks.",
+        "Wakeful ability prevents easy ambush by keeping one head alert.",
+        "Resistant to being blinded, charmed, deafened, frightened, and stunned."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "two-headed giant with brute strength",
+        "savage giant with crude weapons",
+        "territorial creature who attacks intruders",
+        "giant with strong melee attacks",
+        "dual-headed monster that works together"
+    ]
+}

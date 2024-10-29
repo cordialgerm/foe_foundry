@@ -1,0 +1,25 @@
+{
+    "name": "Elephant",
+    "queries": [
+        {
+            "query": "massive herbivorous beast with long tusks that lives in grasslands",
+            "variant": "huge herbivorous creature with long tusks that inhabits grasslands"
+        },
+        {
+            "query": "powerful melee attacker with trample ability and low dexterity",
+            "variant": "strong melee attacker with trampling capability and poor agility"
+        },
+        {
+            "query": "wrinkled skin giant that charges at foes and knocks them prone",
+            "variant": "large creature with wrinkled skin that charges enemies and can knock them down"
+        },
+        {
+            "query": "herd animal that can stomp on prone targets and has average wisdom",
+            "variant": "social animal that can crush downed foes and possesses average sense"
+        },
+        {
+            "query": "jungle-dwelling creature known for its intelligence and strength",
+            "variant": "jungle inhabitant known for its strength and mental capabilities"
+        }
+    ]
+}

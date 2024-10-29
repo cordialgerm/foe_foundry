@@ -1,0 +1,25 @@
+{
+    "name": "Crystalline Monolith",
+    "queries": [
+        {
+            "query": "huge psychic monster with crystal appearance that can petrify",
+            "variant": "large crystal creature that uses psychic powers and can petrify enemies"
+        },
+        {
+            "query": "psychic damage dealer that looks like a massive crystal and hovers in battle",
+            "variant": "massive crystal-like creature that deals psychic damage and can hover"
+        },
+        {
+            "query": "creature with magic resistance and ability to stun opponents with psychic burst",
+            "variant": "monster that can stun foes with psychic burst and has resistance to magic"
+        },
+        {
+            "query": "aberration that has blindsight and can cast spells like detect magic",
+            "variant": "creature with blindsight and can use spells such as detect magic"
+        },
+        {
+            "query": "tough monster immune to many conditions and can control crowds",
+            "variant": "resilient creature that is immune to various conditions and crowd controlling"
+        }
+    ]
+}

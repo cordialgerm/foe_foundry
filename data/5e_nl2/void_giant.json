@@ -1,0 +1,50 @@
+{
+    "name": "Void Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 210,
+    "ac": 14,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "spellcaster",
+        "melee"
+    ],
+    "adjectives": [
+        "powerful",
+        "spell-infused",
+        "imposing"
+    ],
+    "description": "The Void Giant is a massive creature with significant physical strength and a commanding presence. It exhibits a chaotic aura and is capable of wielding powerful spells. Its sturdy frame reflects its high Strength and Intelligence.",
+    "memorable": "The Void Giant can stun opponents with its Void Casting, making it a tactical threat in battle.",
+    "goals": "To dominate its foes through brute strength and spellcraft.",
+    "relations": "Often encountered with other giants or powerful magical beings.",
+    "environment": "Typically found in chaotic regions or areas steeped in magic.",
+    "strengths": "High Strength and Intelligence scores contribute to its formidable physical and magical attacks.",
+    "weaknesses": "Average Dexterity may leave it vulnerable to agile opponents.",
+    "attacks": "Utilizes slam attacks that deal significant bludgeoning damage, enhanced by spellcasting abilities.",
+    "most_powerful_ability": "Void Casting allows it to stun enemies, creating tactical opportunities.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Arcana, History, and Investigation, demonstrating its vast knowledge.",
+    "additional_information": [
+        "Can absorb magic spells and use them to enhance its cast.",
+        "Capable of making two attacks in one action.",
+        "Possesses an extensive spell list, making it versatile in combat.",
+        "Has a high Constitution for durability.",
+        "Communicates in multiple languages including Common and Draconic."
+    ],
+    "damage_types": [],
+    "spellcasting": "An 11th-level spellcaster with access to powerful spells, including lightning bolt and disintegrate.",
+    "test_queries": [
+        "giant spellcaster that stuns with magic",
+        "powerful huge giant using void magic",
+        "tactical giant with strong melee and spells",
+        "Void Giant with high strength and intelligence",
+        "imposing dark giant known for spell absorption"
+    ]
+}

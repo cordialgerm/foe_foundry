@@ -1,0 +1,52 @@
+{
+    "name": "Chernomoi",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 32,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 20 ft., fly 20 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "tiny",
+        "magical",
+        "cunning"
+    ],
+    "adjectives": [
+        "versatile",
+        "nimble",
+        "cunning",
+        "magical"
+    ],
+    "description": "A tiny fey creature with exceptional agility and magical abilities, possessing a scimitar and capable of flight.",
+    "memorable": "The Chernomoi can emit a loud, disruptive shriek affecting multiple foes.",
+    "goals": "To manipulate situations through cunning and magic, often playing both mischievous and helpful roles.",
+    "relations": "Related to other fey creatures and potentially encountered alongside them.",
+    "environment": "Typically found in magical or enchanted locations.",
+    "strengths": "Possesses high Dexterity and Constitution, making it agile and resilient in combat.",
+    "weaknesses": "Very low Strength, making it vulnerable in physical confrontations requiring brute force.",
+    "attacks": "Melee attacks with a scimitar dealing slashing damage; disruptive thunder damage from its shriek.",
+    "most_powerful_ability": "The ability to emit a shriek that causes thunder damage to nearby foes.",
+    "equipment": "Scimitar",
+    "senses": "Has darkvision allowing it to see in low-light conditions.",
+    "skills": "Skilled in Acrobatics and Stealth, enabling nimble movements and the ability to go unnoticed.",
+    "additional_information": [
+        "Resistant to nonmagical physical damage not made with silvered weapons.",
+        "Capable of casting various utility spells at will.",
+        "Can detect magic and identity of poisons with spellcasting abilities.",
+        "May engage in both combat and supportive spellcasting roles.",
+        "Has a notably high Dexterity score granting a +4 modifier."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast utility spells at will as well as some once per day, focusing on information gathering and utility.",
+    "test_queries": [
+        "tiny mischievous fey that can fly",
+        "scimitar wielding fey creature with magical abilities",
+        "resilient fey that shrieks thunder damage",
+        "agile fey with utility spellcasting",
+        "Chernomoi magical abilities and stealth"
+    ]
+}

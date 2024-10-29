@@ -1,6 +1,8 @@
 <MonsterName/>Kobold Broodguard</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>44</HP>
 <summary>The Kobold Broodguard is a small humanoid creature that plays a role as a frontline combatant in its pack. With a moderately high Armor Class of 16, it can be quite resilient in battle, capable of absorbing hits while delivering effective ranged and melee attacks. The Broodguard's primary strength lies in its pack tactics, which allow it to gain advantages when partnered with its allies, making it particularly dangerous in group encounters. However, it suffers from weaknesses when exposed to sunlight, as it operates with disadvantage on attacks and perception checks in bright light. The Broodguard is a clever and strategic creature that can bolster the morale of its kin, ensuring they remain formidable adversaries in combat.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a reaction, the Kobold Broodguard can utilize its ability called "Rally!" onc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold Broodguard
 
 *Small* *Humanoid*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Rally! (1/Day:** When the kobold takes damage, it shouts a rallying cry. All kobolds within 30 feet that can hear it gain immunity to the frightened condition for 1 minute, and their next attack roll made before this effect ends deals an extra 1d4 damage.
 
 
+</statblock>
 
 

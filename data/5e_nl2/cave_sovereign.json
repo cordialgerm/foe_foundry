@@ -1,0 +1,52 @@
+{
+    "name": "Cave Sovereign",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 253,
+    "ac": 18,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "telepathic",
+        "mesmerizing",
+        "undead controller"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "chaotic"
+    ],
+    "description": "The Cave Sovereign is a huge aberration with glowing antennae and a terrifying presence. Its skin is a mass of writhing tendrils, and it utilizes its size and chaotic aura to dominate its environment.",
+    "memorable": "Its ability to stun opponents with mesmerizing Deathlights and control undead minions makes it a chilling foe.",
+    "goals": "To dominate its territory and instill fear in those who venture close.",
+    "relations": "It may be encountered alongside other aberrations or undead creatures it controls.",
+    "environment": "Typically found in dark, subterranean caves or areas shrouded in chaos.",
+    "strengths": "Resistant to various damage types and has the unique ability to incapacitate foes with its Deathlights.",
+    "weaknesses": "Low Dexterity score leads to poor agility and reflects its ineffective dodging ability.",
+    "attacks": "Multiattack allows for powerful combinations, including a biting attack that deals piercing and poison damage and a tail attack that can grapple foes.",
+    "most_powerful_ability": "Consume Soul ability lets it target incapacitated or stunned creatures for devastating psychic damage, potentially raising slain humanoids as zombies.",
+    "equipment": null,
+    "senses": "It has darkvision and tremorsense, allowing it to detect creatures without needing to see them directly.",
+    "skills": "Limited awareness with a low perception skill, making it susceptible to being outmaneuvered.",
+    "additional_information": [
+        "Deathlights can stun opponents, creating strategic combat opportunities.",
+        "Inscrutable nature protects it from being read or predicted by opponents.",
+        "Can communicate telepathically within 120 feet.",
+        "Magic Resistance provides advantage against spells.",
+        "Sinuous Form allows it to navigate tight spaces."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast various psionic spells without components, enhancing its tactical options.",
+    "test_queries": [
+        "huge aberration that can stun enemies",
+        "creature with telepathic communication and undead control",
+        "monster with mesmerizing antennae and strong attacks",
+        "cave dweller that manipulates darkness and fear",
+        "chaotic sovereign with ability to consume souls"
+    ]
+}

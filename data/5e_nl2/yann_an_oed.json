@@ -1,0 +1,49 @@
+{
+    "name": "Yann-An-Oed",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 47,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet on land and 40 feet while swimming",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "stealth"
+    ],
+    "adjectives": [
+        "huge",
+        "amphibious",
+        "adaptable"
+    ],
+    "description": "The Yann-An-Oed is a huge aberration, known for its adaptability both underwater and on land, featuring a blowhole for hooting calls.",
+    "memorable": "Its unique ability to swallow prey while dealing ongoing acid damage makes encountering it particularly dangerous.",
+    "goals": "To hunt and ambush prey in its aquatic environment.",
+    "relations": "Can be found in the company of other aquatic predators.",
+    "environment": "Typically found in aquatic environments, both in water and on land.",
+    "strengths": "Excellent stealth underwater and the ability to grapple and swallow foes.",
+    "weaknesses": "Low intelligence and charisma, leading to ineffective social interactions.",
+    "attacks": "Bite attack dealing piercing damage and tentacle attack that can grapple foes.",
+    "most_powerful_ability": "The Swallow ability, allowing it to consume prey and inflict ongoing acid damage while immobilized.",
+    "senses": "Possesses blindsight up to 60 feet, making it effective in dark or murky waters.",
+    "skills": "Has proficiency in perception enabling it to sense threats effectively.",
+    "additional_information": [
+        "Amphibious, can breathe both air and water.",
+        "Underwater camouflage grants advantage on stealth checks in water.",
+        "The Hoot ability can track creatures that respond to its call."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge aquatic predator with hooting call",
+        "ambush creature that can swallow prey",
+        "stealthy monster found in water and land",
+        "creature that grapples and deals acid damage",
+        "amphibious monster that hunts underwater"
+    ]
+}

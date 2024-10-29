@@ -1,0 +1,25 @@
+{
+    "name": "Brain Coral",
+    "queries": [
+        {
+            "query": "underwater creature with psychic immunity and cluster mechanics",
+            "variant": "underwater monster that has psychic damage immunity and cluster abilities"
+        },
+        {
+            "query": "huge aberration that can summon sea allies and breathes underwater",
+            "variant": "big aberration that summons sea creatures and breathes underwater"
+        },
+        {
+            "query": "neutral evil coral monster with poisonous abilities in aquatic settings",
+            "variant": "coral creature with neutral evil alignment and poison abilities in water"
+        },
+        {
+            "query": "monster with high intelligence and special abilities in ocean battles",
+            "variant": "creature with high INT and unique skills during oceanic combat"
+        },
+        {
+            "query": "formidable underwater foe that relies on colony-style combat",
+            "variant": "powerful ocean enemy using colony combat tactics"
+        }
+    ]
+}

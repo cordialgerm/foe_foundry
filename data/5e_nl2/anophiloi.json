@@ -1,0 +1,52 @@
+{
+    "name": "Anophiloi",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking, 20 feet climbing, 40 feet flying",
+    "role": "Skirmisher",
+    "tags": [
+        "predatory",
+        "ambush",
+        "life-draining"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "predatory"
+    ],
+    "description": "The Anophiloi is a small, predatory monstrosity known for its agility and deadly attack patterns. It has sharp claws and a vicious bite, suited for ambushing weakened foes.",
+    "memorable": "Its ability to drain the life force from its victims makes it particularly terrifying in combat, especially against vulnerable enemies.",
+    "goals": "The Anophiloi seeks to ambush and weaken its prey, thriving on the chaos of battle.",
+    "relations": "It may be encountered with other vile predators or creatures that inhabit dark, chaotic environments.",
+    "environment": "Typically found in dark, chaotic settings where it can effectively ambush its prey.",
+    "strengths": "Highly effective against weakened prey due to its Blood Frenzy ability, and its agility allows it to navigate diverse terrains.",
+    "weaknesses": "Vulnerable to cold damage and possesses below-average intelligence, limiting its strategic abilities.",
+    "attacks": "Utilizes Multiattack to make two separate assaults with claws and a bite, and can latch onto larger foes to drain their life.",
+    "most_powerful_ability": "Blood Frenzy allows it to gain advantage on melee attacks against creatures that are not at full health.",
+    "equipment": null,
+    "senses": "Possesses Blood Sense, enabling it to detect living creatures within 30 feet by scent.",
+    "skills": "Stealthy with a +4 proficiency, allowing it to surprise opponents easily.",
+    "additional_information": [
+        "Resistant to poison damage",
+        "Immune to the poisoned condition",
+        "Can drain blood while attached",
+        "Detaches after draining enough health",
+        "Can be detached by a Strength check"
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile life-draining monster",
+        "small predatory creature",
+        "stealthy ambusher",
+        "monstrosity with blood draining abilities",
+        "Anophiloi predator"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Young Red Dragon",
+    "queries": [
+        {
+            "query": "fiery dragon that hoards treasure in volcanic regions",
+            "variant": "dragon that is fiery and hoards treasure in volcanic areas"
+        },
+        {
+            "query": "large red dragon with fire breath and high hit points",
+            "variant": "big red dragon that has fire breath and lots of hit points"
+        },
+        {
+            "query": "aggressive dragon found in mountains with strong melee attacks",
+            "variant": "fierce dragon located in mountain regions with powerful melee abilities"
+        },
+        {
+            "query": "young dragon with explosive fire abilities and exceptional Charisma",
+            "variant": "young dragon that has fire abilities and a high Charisma score"
+        },
+        {
+            "query": "dragon immune to fire with devastating breath weapon",
+            "variant": "fire-resistant dragon that carries a powerful breath attack"
+        }
+    ]
+}

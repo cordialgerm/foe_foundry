@@ -1,0 +1,53 @@
+{
+    "name": "Adult Void Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Huge",
+    "hp": 229,
+    "ac": 19,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "void",
+        "chaotic",
+        "mystical"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "mysterious"
+    ],
+    "description": "The Adult Void Dragon is a massive dragon characterized by its impressive natural armor and formidable presence. It embodies chaos and the mysterious nature of the void.",
+    "memorable": "Its ability to inflict short-term madness and its powerful breath weapon options make it a uniquely challenging adversary.",
+    "goals": "To dominate its territory and impose chaos on its foes.",
+    "relations": "Often associated with other chaotic creatures, might serve or oppose beings of the void.",
+    "environment": "Typically found in places of chaos or the void, distant realms, or ancient lairs.",
+    "strengths": "High hit points and formidable saving throws, along with powerful cold damage capabilities.",
+    "weaknesses": "Limited mobility when not airborne and reliance on effective saving throws.",
+    "attacks": "Includes a terrifying multiattack that can disrupt opponents' minds and unleash physical destruction.",
+    "most_powerful_ability": "Chill of the Void allows its cold damage to bypass resistance.",
+    "equipment": null,
+    "senses": "Has blindsight out to 60 feet and a passive Perception of 21.",
+    "skills": "Proficient in Arcana and History, showcasing its extensive knowledge.",
+    "additional_information": [
+        "Can manipulate reality to redirect attacks with its Void Twist ability.",
+        "Possesses the ability to travel immense distances easily with Expert Void Traveler.",
+        "Can cause devastating area effects with its breath weapons, Gravitic Breath and Stellar Breath."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic dragon with madness abilities",
+        "massive void creature",
+        "dragon with cold damage",
+        "intimidating dragon with powerful breath attack",
+        "unique dragon with reality manipulation"
+    ]
+}

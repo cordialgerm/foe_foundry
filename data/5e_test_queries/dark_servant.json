@@ -1,0 +1,25 @@
+{
+    "name": "Dark Servant",
+    "queries": [
+        {
+            "query": "humanoid creature that thrives in shadows and has a weakness to sunlight",
+            "variant": "humanoid that lives in shadows and is weak against sunlight"
+        },
+        {
+            "query": "dark vision ability and skills against fear effects",
+            "variant": "skills against fear and dark vision powers"
+        },
+        {
+            "query": "creature with sickle attacks and pack tactics abilities",
+            "variant": "creature that uses sickle for attacks and has pack tactic features"
+        },
+        {
+            "query": "medium humanoid with 55 hit points and disadvantage in sunlight",
+            "variant": "medium humanoid with 55 hp and weak in sunlight"
+        },
+        {
+            "query": "dark servant that can understand Common and Umbral languages",
+            "variant": "dark servant who speaks Common and Umbral languages"
+        }
+    ]
+}

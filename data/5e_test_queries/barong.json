@@ -1,0 +1,25 @@
+{
+    "name": "Barong",
+    "queries": [
+        {
+            "query": "large celestial monster that provides bonuses to allies",
+            "variant": "big celestial being that gives bonuses to teammates"
+        },
+        {
+            "query": "powerful protector with high damage and magical abilities",
+            "variant": "strong defender with significant damage and magical powers"
+        },
+        {
+            "query": "monster that protects allies and has truesight ability",
+            "variant": "creature that shields friends and possesses truesight"
+        },
+        {
+            "query": "celestial being with damage resistances and legendary actions",
+            "variant": "heavenly creature that has damage resistances and can take legendary actions"
+        },
+        {
+            "query": "lawful good celestial with a challenging combat rating",
+            "variant": "lawful good celestial being with a tough challenge level"
+        }
+    ]
+}

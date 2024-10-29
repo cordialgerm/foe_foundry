@@ -1,6 +1,8 @@
 <MonsterName/>Flesh Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>5</CR>
+<AC/>9</AC>
+<HP/>93</HP>
 <summary>A Flesh Golem is a monstrous construct created from the stitched-together body parts of dead creatures, animated through dark magic. Its appearance is gruesome, with mismatched limbs and a face twisted in a permanent grimace of pain. Flesh Golems are incredibly strong and resilient, able to withstand immense punishment without faltering. However, they are often unpredictable, as the magic that binds them is unstable, and they may go berserk when damaged. Despite their horrific appearance, Flesh Golems are mindless servants, following the commands of their creators without question.</summary>
 
 <summary>The Flesh Golem is a medium-sized construct and a formidable presence in any encounter, characterized by its resilience and physical power. With an Armor Class of 9 and a substantial pool of 129 hit points, it can absorb a considerable amount of damage. Its Challenge Rating of 5 indicates that it poses a moderate to high threat level to adventurers. The golem is particularly strong against nonmagical attacks; it is immune to various conditions including exhaustion, charm, and fear, which allows it to remain a relentless adversary. However, it does have weaknesses, such as a low Armor Class and a vulnerability to fire damage, which can temporarily impair its effectiveness in combat.</summary>
@@ -21,6 +23,7 @@ Overall, the Flesh Golem is a powerful combatant that benefits from its high res
 
 Source: 5e_srd
 
+<statblock>
 ### Flesh Golem
 
 *Medium construct, neutral*
@@ -63,7 +66,8 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 ***Multiattack***. The golem makes two slam attacks.
 
-***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.
+***Slam***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) bludgeoning damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Flesh Golem
 
 *Medium construct*
@@ -107,5 +112,6 @@ Source: 5e_artisinal_monsters
 - **Slam.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage.
 - **Creator’s Anguish (Recharge 5–6).** The golem releases a wave of emotional anguish from its core. Each creature within 15 feet of the golem must make a DC 15 WIS save. On a failure, a creature takes 31 (9d6) psychic damage and is incapacitated until the end of its next turn, as its mind fills with memories of its greatest failures. On a success, a creature takes half the damage and isn’t incapacitated.
 
+</statblock>
 
 

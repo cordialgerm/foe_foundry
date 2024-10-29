@@ -1,0 +1,51 @@
+{
+    "name": "Divi Noble",
+    "creature_type": "Elemental",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 345,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 ft. walking, 30 ft. burrowing, 30 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "earth",
+        "large"
+    ],
+    "adjectives": [
+        "formidable",
+        "unyielding"
+    ],
+    "description": "The Divi Noble is a large elemental creature embodying the power of earth, capable of burrowing through stone and earth without a trace.",
+    "memorable": "Its ability to manipulate the terrain and summon stone walls makes it a strategic enemy in battle.",
+    "goals": "To dominate the battlefield through physical combat and terrain manipulation.",
+    "relations": "May serve powerful elemental beings or dwell within mountainous regions.",
+    "environment": "Typically found in earth or stone-rich environments, such as caves or mountainous areas.",
+    "strengths": "Exceptional strength and constitution make it a tough opponent in melee combat.",
+    "weaknesses": "Very low intelligence, wisdom, and charisma, limiting its interaction capabilities.",
+    "attacks": "Crushing Hand grapples foes, Stone Club delivers powerful bludgeoning damage, and Quake creates difficult terrain.",
+    "most_powerful_ability": "Earth Glide allows it to maneuver through earth and stone with ease.",
+    "equipment": "null",
+    "senses": "The Divi Noble possesses tremorsense and has a passive perception of 16.",
+    "skills": "Excels in athletics and has notable perception abilities.",
+    "additional_information": [
+        "Can summon an earth elemental once a day.",
+        "Innate spellcasting ability with a range of useful spells.",
+        "Can create permanent stone walls for strategic advantages.",
+        "Immunities to being petrified.",
+        "Resistant to acid damage."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting ability for shape manipulation, detection, and terrain control spells.",
+    "test_queries": [
+        "earth elemental with ground-shaking abilities",
+        "large stone creature that manipulates terrain",
+        "powerful elemental that can burrow underground",
+        "monster that creates stone walls and causes earthquakes",
+        "tough elemental with high hit points and strength"
+    ]
+}

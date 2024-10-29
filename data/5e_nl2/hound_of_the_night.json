@@ -1,0 +1,54 @@
+{
+    "name": "Hound of the Night",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "hound",
+        "cold damage",
+        "tracking"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "agile",
+        "menacing"
+    ],
+    "description": "The Hound of the Night is a large and formidable creature with exceptional attributes in Strength and Dexterity. It has a powerful bite and features frost-like characteristics indicative of its cold damage ability.",
+    "memorable": "Its ability to teleport and its advantages on tracking fey creatures make it a unique foe during combat.",
+    "goals": "Typically seeks to hunt and track down prey, especially those of fey origin.",
+    "relations": "Could be encountered alongside other fey creatures or serve as a guardian for a more powerful entity.",
+    "environment": "Often found in dark, cold environments where it can leverage its abilities effectively.",
+    "strengths": "Possesses strong melee capabilities and impressive tracking skills, particularly against fey targets.",
+    "weaknesses": "Vulnerable to fire damage, allowing for strategic counterattacks from knowledgeable opponents.",
+    "attacks": "Can deliver vicious bite attacks that inflict piercing and cold damage, potentially knocking foes prone.",
+    "most_powerful_ability": "Frost Breath attack deals significant cold damage in a cone, affecting multiple enemies.",
+    "equipment": null,
+    "senses": "The hound has keen senses with a passive Perception of 15, allowing it to detect hidden foes easily.",
+    "skills": "Skilled in Stealth and Intimidation, enhances its ambush potential.",
+    "additional_information": [
+        "Immunities to cold damage enhance its survivability in icy environments.",
+        "Ability to track fey even through the Border Ethereal makes it a relentless pursuer.",
+        "Multiattack feature allows it to strike quickly in combat.",
+        "Teleportation ability adds strategic versatility during encounters.",
+        "Possesses darkvision to see in low-light conditions."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large cold damage creature with teleportation abilities",
+        "hound that hunts fey with cold attacks",
+        "formidable monster with frost breath",
+        "skirmishing monster with keen tracking skills",
+        "menacing hound that can teleport"
+    ]
+}

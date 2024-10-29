@@ -1,0 +1,25 @@
+{
+    "name": "Pelagic Deva",
+    "queries": [
+        {
+            "query": "guardian of the seas with angel-like features that breathes air and water",
+            "variant": "sea guardian with angel features who can breathe air and water"
+        },
+        {
+            "query": "celestial creature with high Charisma and swimming speed",
+            "variant": "celestial being with elevated Charisma and fast swimming speed"
+        },
+        {
+            "query": "powerful aquatic guardian immune to charm and fear",
+            "variant": "strong ocean guardian that can't be charmed or frightened"
+        },
+        {
+            "query": "living coral armor and radiant weapon attacks",
+            "variant": "armor made of living coral and radiant damage weapon attacks"
+        },
+        {
+            "query": "angelic being with abilities to polymorph creatures and create anoxic aura",
+            "variant": "angel creature that can transform beings and summon anoxic area"
+        }
+    ]
+}

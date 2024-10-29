@@ -1,0 +1,52 @@
+{
+    "name": "Thundercall Hadrosaur",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walks at 40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "thunder",
+        "monstrosity"
+    ],
+    "adjectives": [
+        "massive",
+        "powerful",
+        "thunderous"
+    ],
+    "description": "The Thundercall Hadrosaur is a massive dinosaur known for its thunderous bellow and powerful melee attacks, standing out with its impressive physical strength.",
+    "memorable": "Its ability to unleash a powerful Thunderous Bellow can knock enemies prone and disrupt the battlefield.",
+    "goals": "Typically aims to dominate its territory and use its powerful attacks in combat.",
+    "relations": "May be related to other dinosaurs or large creatures in its habitat.",
+    "environment": "Usually found in rugged terrain where it can utilize its size and power.",
+    "strengths": "Exceptional physical strength allows it to overpower opponents and it deals double damage to structures as a Siege Monster.",
+    "weaknesses": "Low Dexterity makes it easier to hit with ranged attacks.",
+    "attacks": "Can make three Slam attacks that deal significant bludgeoning damage and has a powerful area attack with Thunderous Bellow.",
+    "most_powerful_ability": "Thunderous Bellow can damage multiple foes and knock them prone.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, allowing it to effectively notice threats.",
+    "skills": "Proficient in perception, giving it a decent awareness of surroundings.",
+    "additional_information": [
+        "Has resistance to thunder damage and immunity to deafness.",
+        "Can use Sonic Shield to enhance its AC against ranged attacks.",
+        "Low Intelligence and Charisma, limiting its social interaction abilities.",
+        "Massive size lends itself to being a dominant presence in battle.",
+        "Notable ability to knock prone with its slam attacks."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive dinosaur with thunderous attacks",
+        "huge monster that can knock enemies prone",
+        "thundercall dinosaur with powerful melee attacks",
+        "dinosaur known for thunderous bellow attack",
+        "strong creature that dominates rugged terrain"
+    ]
+}

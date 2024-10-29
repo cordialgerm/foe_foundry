@@ -1,0 +1,57 @@
+{
+    "name": "Queen of Night and Magic",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 225,
+    "ac": 22,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 60 ft., fly 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "Fey",
+        "Magic",
+        "Cold",
+        "Control"
+    ],
+    "adjectives": [
+        "formidable",
+        "charismatic",
+        "magical",
+        "cunning"
+    ],
+    "description": "The Queen of Night and Magic is a Medium Fey with exceptional magical abilities, characterized by her regal bearing and an enchanting, otherworldly appearance.",
+    "memorable": "Her ability to manipulate magic and control her surroundings makes her a dangerous and tactical adversary.",
+    "goals": "To dominate the battlefield with powerful spells and control her enemies.",
+    "relations": "May have connections with other fey creatures or serve dark gods of winter and magic.",
+    "environment": "Typically found in shadowy places where magic prevails, often in fey realms or dark forests.",
+    "strengths": "Resistant to magic and immune to cold damage and nonmagical attacks not made with cold iron.",
+    "weaknesses": "Vulnerable to counterspells and lacks healing capabilities.",
+    "attacks": "Can perform multiple attacks with her Rapier, dealing piercing and additional cold damage, or utilize powerful ranged spell attacks.",
+    "most_powerful_ability": "Shadow Rift, inflicting substantial cold and necrotic damage while restraining enemies in its area.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing her to see through illusions and magical darkness.",
+    "skills": "Exceptionally skilled in deception and intimidation, making her a dangerous social adversary.",
+    "additional_information": [
+        "Can teleport as a bonus action for tactical advantage.",
+        "Capable of dispelling spells with her Sudden Fraying reaction.",
+        "Utilizes Legendary Resistance for enhanced survivability against magic.",
+        "Casts various spells at will to manipulate the battlefield.",
+        "Employs area control tactics with her Shadow Rift ability."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "radiant",
+        "necrotic"
+    ],
+    "spellcasting": "Can cast a variety of spells at will and several powerful ones three times per day or once per day.",
+    "test_queries": [
+        "regal fey with magic powers",
+        "cold damage dealing fey queen",
+        "powerful spellcaster with truesight",
+        "manipulative fey creature with shadow abilities",
+        "queen who dominates with spells and attacks"
+    ]
+}

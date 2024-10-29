@@ -1,0 +1,48 @@
+{
+    "name": "Gorao-Ka",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 20 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "trickster",
+        "magical"
+    ],
+    "adjectives": [
+        "whimsical",
+        "cunning",
+        "lucky"
+    ],
+    "description": "The Gorao-Ka is a tiny fey creature known for its whimsical nature and magical effects surrounding luck and treasure. It is adorned with a copper coat.",
+    "memorable": "Its unique abilities like Fool's Gold create lasting effects, punishing thieves and encouraging teamwork with lucky coins.",
+    "goals": "To play tricks, influence luck, and hoard treasure through cunning and trickery.",
+    "relations": "Related to other fey creatures and potentially allies with trickster spirits.",
+    "environment": "Typically found in whimsical, magical forests or areas rich in treasure.",
+    "strengths": "Possesses unique abilities that influence combat and interactions, particularly in luck manipulation.",
+    "weaknesses": "Relatively low hit points and Armor Class, making it susceptible in direct combat.",
+    "attacks": "Can strike with a melee attack using a sack of coins, dealing average damage.",
+    "most_powerful_ability": "Fool's Gold, which curses thieves by making them lose gold until certain conditions are met.",
+    "equipment": null,
+    "senses": "Has passive perception of 13, indicating decent awareness of hidden creatures.",
+    "skills": null,
+    "additional_information": [
+        "Carries multiple pouches of gold, each with varying amounts.",
+        "Upon death, it explodes in a spray of silver coins, punishing attackers.",
+        "Encourages teamwork through its Find a Penny ability, granting luck to allies."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "whimsical tiny fey creature with golden pouches",
+        "fey that creates luck and punishes thieves",
+        "tiny creature that explodes in silver coins",
+        "magical creature with a copper coat",
+        "whimsical fey encouraging teamwork and luck"
+    ]
+}

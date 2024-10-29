@@ -1,0 +1,50 @@
+{
+    "name": "Vulture",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 5,
+    "ac": 10,
+    "srd": true,
+    "cr": "0",
+    "movement": "walk 10 ft., fly 50 ft.",
+    "role": null,
+    "tags": [
+        "scavenger",
+        "flying",
+        "carrion eater"
+    ],
+    "adjectives": [
+        "carrion-eating",
+        "keen-sensed",
+        "fragile"
+    ],
+    "description": "A large bird with a bald head and sharp beak, known for scavenging.",
+    "memorable": "Its keen scent and sight make it a proficient scavenger.",
+    "goals": "To scavenge dead creatures and carcasses for sustenance.",
+    "relations": "Often found in groups scavenging together.",
+    "environment": "Open areas and regions with decaying wildlife.",
+    "strengths": "Possesses keen sight and smell to locate food sources from afar.",
+    "weaknesses": "Very low strength, intelligence, and charisma, making it frail in combat.",
+    "attacks": "Uses its sharp beak to deliver piercing damage.",
+    "most_powerful_ability": "Defensive Bile can incapacitate attackers that hit it in melee combat.",
+    "equipment": null,
+    "senses": "Has a highly perceptive ability, translating to effective perception of 18 when using sight or smell.",
+    "skills": "Proficient in perception, allowing it to detect threats or carrion from a distance.",
+    "additional_information": [
+        "Carrion Sense allows it to find dead creatures within 60 feet.",
+        "Pack Tactics provides advantage on attack rolls when allies are nearby.",
+        "Can use Retreat to evade melee attacks effectively.",
+        "Fragile with only 5 hit points and an AC of 10.",
+        "Not typically aggressive, prioritizes scavenging over combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "scavenging bird with keen senses",
+        "carrion-eating bird that avoids combat",
+        "bird that finds dead creatures from afar",
+        "flying scavenger with sharp beak",
+        "medium beast known for scavenging"
+    ]
+}

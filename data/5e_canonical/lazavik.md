@@ -1,6 +1,8 @@
 <MonsterName/>Lazavik</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>14</AC>
+<HP/>36</HP>
 <summary>Lazavik is a small, neutral good fey creature characterized by its unique abilities and affinity for swampy environments. This tiny being possesses a good balance of mobility and defense, highlighted by its notable defensive capabilities, including a decent Armor Class of 14 and a substantial hit point pool of 36, making it resilient in combat for a creature of its size. With a Challenge Rating of 3, Lazavik can pose a moderate challenge for adventurers, offering 700 XP upon defeat. Its impressive Dexterity score of 18 gives it an exceptional bonus of +4 to important skills like stealth, allowing it to navigate the battlefield effectively and evade attacks. However, while it possesses advantageous resistances and immunities, its combat strength primarily lies in its unique special abilities which enhance both its survival and support roles in combat.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, Lazavik can use its Reed Whip melee weapon attack with a +6
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lazavik
 
 *Tiny* *Fey* *neutral good*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Eye Flare (Recharge 5-6):** The lazavik’s eye flares with blinding light in a 15-foot cone. Each creature in the area much make a DC 13 Dexterity saving throw. On a failure, a creature takes 10 (3d6) radiant damage and is blinded for 1 minute. On a success, a creature takes half the damage and isn’t blinded. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

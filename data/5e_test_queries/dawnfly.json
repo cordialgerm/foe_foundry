@@ -1,0 +1,25 @@
+{
+    "name": "Dawnfly",
+    "queries": [
+        {
+            "query": "gargantuan creature that can fly and has fire attacks",
+            "variant": "gargantuan monster that can fly and has fire attacks"
+        },
+        {
+            "query": "large beast with powerful tail attacks and mobility in the sky",
+            "variant": "big beast with strong tail attacks and skill in the sky"
+        },
+        {
+            "query": "monster that creates blinding dust and can incapacitate nearby creatures",
+            "variant": "creature that makes blinding dust and incapacitates nearby creatures"
+        },
+        {
+            "query": "beast that doubles damage against structures and is immune to fire",
+            "variant": "monster that doubles damage to structures and immune to fire"
+        },
+        {
+            "query": "massive beast that strikes with bite and impressive slashing attacks",
+            "variant": "huge beast that attacks with bite and impressive slashing strikes"
+        }
+    ]
+}

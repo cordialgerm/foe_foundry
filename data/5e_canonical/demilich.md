@@ -1,6 +1,8 @@
 <MonsterName/>Demilich</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>18</CR>
+<AC/>20</AC>
+<HP/>159</HP>
 <summary>The Demilich is a powerful and eerie undead creature that serves as a formidable opponent in combat. Drawing from its magical background, it possesses exceptional intelligence and charisma, making it a master of manipulation and defense. With an Armor Class of 20 and 159 hit points, it can withstand considerable damage, while its ability to fly enhances its mobility on the battlefield. The Demilich excels in debilitating foes, stealing their souls, and using them to heal itself, making it a dangerous entity that can shift the tide of battle in its favor. However, its reliance on souls for sustenance means that if faced with opponents who can destroy its soul gems, it becomes vulnerable. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ In summary, the Demilich is a highly intelligent and deadly foe, capable of evad
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Demilich
 
 *Tiny* *Undead*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Dust Storm (Costs 2 Actions):** The dust of the demilichs body swirls in a 30-foot radius around the demilich. Each creature in the area makes a DC 17 Constitution saving throw. On a failure, the creature takes 21 (6d6) necrotic damage and is blinded until the end of its next turn. The demilich then moves up to its speed.
 - **Ringing Laugh (Costs 2 Actions):** Each creature within 60 feet that can hear the demilich makes a DC 17 Wisdom saving throw. On a failure, a creature is frightened until the end of its next turn.
 - **Telekinesis:** The demilich targets a Huge or smaller creature or an object weighing up to 1,000 pounds within 60 feet. If the target is a creature, it must succeed on a DC 17 Strength saving throw. Otherwise, the demilich moves the target up to 30 feet in any direction, including up. If another creature or object stops the targets movement, both take 10 (3d6) bludgeoning damage. At the end of this movement, the target falls if it is still in the air, taking falling damage as normal.
+</statblock>
 
 

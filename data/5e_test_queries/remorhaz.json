@@ -1,0 +1,25 @@
+{
+    "name": "Remorhaz",
+    "queries": [
+        {
+            "query": "massive centipede-like monster that generates heat in icy environments",
+            "variant": "huge centipede monster producing heat in cold places"
+        },
+        {
+            "query": "cold dwelling monster with hard icy-blue plates that swallows prey",
+            "variant": "ice dwelling creature with tough blue armor that engulfs its victims"
+        },
+        {
+            "query": " Huge creature that burrows through snow and has fiery bites",
+            "variant": "large monster that digs through ice and has burning attacks"
+        },
+        {
+            "query": "arctic predator that grapples and inflicts fire damage",
+            "variant": "northern hunter that grips and deals burning harm"
+        },
+        {
+            "query": "sturdy creature with high hit points and melee grappling ability",
+            "variant": "resilient monster with significant HP and close combat grappling powers"
+        }
+    ]
+}

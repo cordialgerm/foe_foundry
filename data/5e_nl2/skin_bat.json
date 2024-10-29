@@ -1,0 +1,49 @@
+{
+    "name": "Skin Bat",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "bat",
+        "summoning"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "malevolent"
+    ],
+    "description": "The Skin Bat is a small undead creature with exceptional agility and malevolent instincts. Its ability to navigate in darkness is enhanced by its echolocation and blindsight.",
+    "memorable": "Its ability to paralyze foes and summon other bats makes it a unique threat in battle.",
+    "goals": "To incapacitate foes and gather aid from other bats during combat.",
+    "relations": "Often associated with other undead or bat-like creatures.",
+    "environment": "Commonly found in dimly lit areas, such as caves or ruins, particularly at night.",
+    "strengths": "High Dexterity and immunity to poison make it a dangerous foe.",
+    "weaknesses": "Low Constitution and limited control over its language reduce strategic capabilities.",
+    "attacks": "Bite attack that inflicts piercing damage and can paralyze the target temporarily.",
+    "most_powerful_ability": "Echolocation allows it to sense its environment, but it is nullified if deafened.",
+    "senses": "Has blindsight up to 20 feet, allowing it to detect its surroundings effectively in darkness.",
+    "skills": "Possesses a Perception skill of +3, enhancing its ability to detect threats.",
+    "additional_information": [
+        "Does not require air or sleep due to its undead nature.",
+        "Can attract additional bats for assistance when in danger.",
+        "Hindered during deafness, affecting its echolocation ability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small undead creature with echolocation",
+        "agile bat monster that can paralyze",
+        "undead bat that summons allies in danger",
+        "creature that attacks with a bite and paralysis",
+        "flying creature found in dark lit areas"
+    ]
+}

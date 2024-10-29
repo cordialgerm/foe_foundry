@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Red Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with molten lava scales that breathes fire",
+            "variant": "gargantuan dragon with molten scales that breathe fire"
+        },
+        {
+            "query": "dragon that lives in volcanic mountains and hoards treasure",
+            "variant": "dragon that makes its home in volcanic mountains and collects treasure"
+        },
+        {
+            "query": "powerful fire-breathing dragon with high hit points",
+            "variant": "strong fire-breathing dragon with a lot of hit points"
+        },
+        {
+            "query": "fierce dragon that intimidates with its presence and attacks",
+            "variant": "fierce dragon that intimidates with its actions and presence"
+        },
+        {
+            "query": "ancient dragon known for its legendary resistance and fire attacks",
+            "variant": "old dragon known for its legendary resistance and flame attacks"
+        }
+    ]
+}

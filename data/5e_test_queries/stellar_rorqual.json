@@ -1,0 +1,25 @@
+{
+    "name": "Stellar Rorqual",
+    "queries": [
+        {
+            "query": "gargantuan cosmic aberration with a mouth compartment",
+            "variant": "huge aberration with a mouth compartment in its cosmic design"
+        },
+        {
+            "query": "creature that flies through space and has blindsight",
+            "variant": "monster that can glide through space and possesses blindsight"
+        },
+        {
+            "query": "powerful melee monster with solar energy abilities",
+            "variant": "strong melee creature that has solar energy attacks"
+        },
+        {
+            "query": "aberration that can transport itself and allies to different planes",
+            "variant": "creature that transports itself and its companions to various dimensions"
+        },
+        {
+            "query": "Stellar Rorqual with telepathy and special energy burst",
+            "variant": "Stellar Rorqual that communicates via telepathy and has a unique energy burst ability"
+        }
+    ]
+}

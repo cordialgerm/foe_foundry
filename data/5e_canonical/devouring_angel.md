@@ -1,6 +1,8 @@
 <MonsterName/>Devouring Angel</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>12</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>220</HP>
 <summary>The Devouring Angel is a formidable aberration with a challenge rating of 12, making it a significant opponent for adventurers. With a large size and an impressive suite of abilities, it boasts a considerable armor class of 15, high hit points totaling 220, and various movement options that enhance its combat effectiveness. Its primary attributes are remarkably strong, especially its Strength at 20 and Constitution at 21, indicating exceptional durability and offensive potential. However, it possesses a low Intelligence score, which may limit its strategic capabilities in certain circumstances. This creature has a range of immunities to conditions such as being blinded, charmed, or frightened, enabling it to maintain its effectiveness in battle. While it can understand Common and Celestial, it lacks the ability to speak, relying instead on telepathic communication to convey simple messages. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Additionally, the Devouring Angel can unleash Shed Spines as a recharge action t
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Devouring Angel
 
 *Large* *Aberration* *neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Shed Spines (Recharge 5–6):** Shakes its body sending acid-coated spines outward. Each creature within 10 ft. of it: 18 (4d8) piercing damage and 24 (7d6) acid (DC 17 Dex half).
 
 
+</statblock>
 
 

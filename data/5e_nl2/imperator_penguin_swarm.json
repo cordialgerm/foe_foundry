@@ -1,0 +1,57 @@
+{
+    "name": "Imperator, Penguin Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 114,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "cold",
+        "mobility",
+        "beast"
+    ],
+    "adjectives": [
+        "swift",
+        "numerous",
+        "formidable",
+        "icy"
+    ],
+    "description": "The Imperator, a huge swarm of penguins, showcases a lively and overwhelming presence on icy terrain, utilizing its sheer numbers to intimidate foes.",
+    "memorable": "Its ability to swarm and knock adversaries prone while gliding over ice makes it a unique challenge.",
+    "goals": "To overwhelm adversaries with numbers and control the battlefield.",
+    "relations": "May form swarms with other penguin types, typically encountered in cold environments.",
+    "environment": "Frigid environments, particularly snowy or icy areas.",
+    "strengths": "Resistant to various damage types and immune to many conditions, increasing its survivability.",
+    "weaknesses": "Low Armor Class makes it vulnerable to precise attacks, especially from ranged attackers.",
+    "attacks": "Uses its beaks for piercing damage in melee attacks, delivering significant blows when healthy.",
+    "most_powerful_ability": "Toboggan Charge allows it to charge through opponents, dealing damage and possibly knocking them prone.",
+    "equipment": null,
+    "senses": "Passive perception of 12 allows it to notice disturbances reasonably well.",
+    "skills": "Has a perception skill of +2, indicating decent awareness of hidden threats.",
+    "additional_information": [
+        "Swarm can occupy the same space as creatures.",
+        "Can glide over icy surfaces at double its walking speed.",
+        "Immunities include charm, fear, and paralysis.",
+        "Damage can vary based on its current hit points.",
+        "Can\u2019t regain or gain temporary hit points while in swarm form."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "cold",
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge icy penguin swarm",
+        "swarming creature that glides on ice",
+        "penguin swarm that knocks foes prone",
+        "dangerous icy beast with piercing beaks",
+        "creature that overwhelms with numbers on ice"
+    ]
+}

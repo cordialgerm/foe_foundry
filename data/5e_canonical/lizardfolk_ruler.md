@@ -1,6 +1,8 @@
 <MonsterName/>Lizardfolk Ruler</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (scale mail)</AC>
+<HP/>100</HP>
 <summary>The Lizardfolk Ruler is a medium humanoid creature known for its commanding presence and aggressive combat style. With a challenge rating of 4, it possesses a strong mix of physical abilities, making it a formidable foe in battle. Its armor class of 15 and a total of 100 hit points give it good resilience, while its decent movement options—30 feet on land, 15 feet climbing, and 30 feet swimming—allow for versatile positioning. Strength (STR) is the Ruler's primary attribute, rated at +3, which is considered good and enhances its melee attacks. Its dexterity (DEX) at +1 is average, and a constitution (CON) modifier of +2 contributes to its endurance. In social interactions, the Ruler's charisma (CHA) score of +2 is also above average. However, it lacks intelligence (INT) and has a modifier of +0, indicating average cognitive abilities, which is notable but not detrimental. The Lizardfolk Ruler excels in melee combat, particularly with its special abilities that boost damage output and provide tactical advantages for itself and allies.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In reaction, the "Inspiring Hiss" ability empowers friendly Lizardfolk within 30
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lizardfolk Ruler
 
 *Medium humanoid*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 
 - **Inspiring Hiss.** When a friendly lizardfolk the ruler can see within 30 feet of it is hit by an attack, the ruler can hiss out inspiring words to encourage the lizardfolk to keep going. The target gains 5 (2d4) temporary HP for 1 minute.
 
+</statblock>
 
 

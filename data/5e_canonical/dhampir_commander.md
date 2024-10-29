@@ -1,6 +1,8 @@
 <MonsterName/>Dhampir Commander</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>7</CR>
+<AC/>17</AC>
+<HP/>97</HP>
 <summary>The Dhampir Commander is a medium humanoid creature that embodies a blend of vampiric traits and a commanding presence. It is characterized by its ability to inspire allies in combat and its adeptness in both melee and ranged attacks. With a formidable Armor Class of 17 and a healthy pool of 97 hit points, it is a resilient opponent in battle. The Dhampir Commander has a Challenge Rating of 7, making it suitable for confronting parties of moderate level. Its strengths lie in its dexterity and charisma, allowing it to effectively manipulate foes and coordinate attacks among allies. However, it is susceptible to radiant damage and, despite its high defenses, can be overwhelmed if outnumbered. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ In conclusion, the Dhampir Commander is a tactical and resilient figure in the b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dhampir Commander
 
 *Medium* *Humanoid* *any alignment*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Leadership (Recharges after a Short or Long Rest):** For 1 minute, the dhampir can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the dhampir. A creature can benefit from only one Leadership die at a time. This effect ends if the dhampir is incapacitated. Dinosaur
 
 
+</statblock>
 
 

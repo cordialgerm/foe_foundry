@@ -1,0 +1,51 @@
+{
+    "name": "Brachyura Shambler",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "grappling",
+        "disease",
+        "piercing damage"
+    ],
+    "adjectives": [
+        "dangerous",
+        "debilitating",
+        "formidable"
+    ],
+    "description": "A Medium-sized monstrosity with potent grappling abilities and a fearsome appearance, characterized by its powerful claws.",
+    "memorable": "Can inflict sewer plague disease, adding a lingering threat to encounters.",
+    "goals": "To incapacitate and afflict opponents with its disease and grappling attacks.",
+    "relations": "May be encountered alongside other monstrosities or in environments tainted by decay.",
+    "environment": "Typically found in damp or urban areas, often near sewers or similar environments.",
+    "strengths": "Exceptional physical attacks with grappling capabilities that can restrain foes.",
+    "weaknesses": "Poor mental attributes lead to low Intelligence and Charisma.",
+    "attacks": "Uses claw attacks to grapple opponents and can inflict acid damage with its diseased spit.",
+    "most_powerful_ability": "Diseased Spit causes lingering effects, such as exhaustion and impaired healing.",
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": null,
+    "additional_information": [
+        "Inflicts 7 points of acid damage with its Diseased Spit.",
+        "Grappling creates a significant tactical challenge for opponents.",
+        "Sewer plague symptoms manifest 1d4 days after exposure.",
+        "Targets remain grappled until they escape or the shambler releases them.",
+        "Damage resistance to bludgeoning mitigates some physical attacks."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "grappling monstrosity that inflicts disease",
+        "tough monster with debilitating claw attacks",
+        "monster that can infect with sewer plague",
+        "creature that grapples and restrains opponents",
+        "medium-sized creature found in sewers"
+    ]
+}

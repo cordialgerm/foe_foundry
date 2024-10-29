@@ -1,0 +1,25 @@
+{
+    "name": "Clacker Soldier",
+    "queries": [
+        {
+            "query": "small beetle that creates a thunder noise and bites",
+            "variant": "small beetle emitting thunder sounds and using bite attacks"
+        },
+        {
+            "query": "creature with good dexterity that loves noisy combat",
+            "variant": "creature with high dexterity enjoying loud battles"
+        },
+        {
+            "query": "beast with low intelligence that uses sound damage in fights",
+            "variant": "beast lacking intelligence that attacks using thunder damage"
+        },
+        {
+            "query": "tactical beetle that can occupy the same space as its allies",
+            "variant": "strategic beetle able to share space with other clackers"
+        },
+        {
+            "query": "resilient small monster resistant to slashing damage",
+            "variant": "durable tiny creature immune to slashing attacks"
+        }
+    ]
+}

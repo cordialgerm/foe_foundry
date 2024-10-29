@@ -1,0 +1,25 @@
+{
+    "name": "Imperator, Penguin Swarm",
+    "queries": [
+        {
+            "query": "huge swarm of penguins that can swarm opponents in icy environments",
+            "variant": "huge penguin swarm that can swarm to attack in cold environments"
+        },
+        {
+            "query": "penguin monster with high hit points and charge attack",
+            "variant": "penguin beast with lots of hit points and a powerful charge action"
+        },
+        {
+            "query": "massive penguin creature immune to charm and fear",
+            "variant": "large penguin beast that can't be charmed or scared"
+        },
+        {
+            "query": "monstrous penguin swarm with fast movement over snow and ice",
+            "variant": "monstrous penguin group that moves quickly on ice and snow"
+        },
+        {
+            "query": "creature with multiple damage resistances and ability to knock prone",
+            "variant": "monster that resists various damages and can knock enemies down"
+        }
+    ]
+}

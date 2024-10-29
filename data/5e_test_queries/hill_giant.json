@@ -1,0 +1,25 @@
+{
+    "name": "Hill Giant",
+    "queries": [
+        {
+            "query": "enormous brutish giant living in hills",
+            "variant": "brutish giant that lives in hilly areas"
+        },
+        {
+            "query": "physically powerful giant that throws boulders",
+            "variant": "giant that can throw boulders and is physically strong"
+        },
+        {
+            "query": "giant with low intelligence that raids settlements",
+            "variant": "hill giant known for raiding nearby settlements and having low intelligence"
+        },
+        {
+            "query": "lazy giant with huge size and immense strength",
+            "variant": "immense lazy giant with large size and great strength"
+        },
+        {
+            "query": "giant with greatclub attacks and high hit points",
+            "variant": "hill giant with high hit points and attacks using a greatclub"
+        }
+    ]
+}

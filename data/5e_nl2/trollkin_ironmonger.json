@@ -1,0 +1,49 @@
+{
+    "name": "Trollkin Ironmonger",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 19,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "trollkin",
+        "humanoid",
+        "regenerative",
+        "melee"
+    ],
+    "adjectives": [
+        "sturdy",
+        "formidable",
+        "durable"
+    ],
+    "description": "The Trollkin Ironmonger is a sturdy humanoid with thick skin and powerful regenerative abilities, clad in protective plate armor. It is known for its high strength and can be a significant melee threat.",
+    "memorable": "Its regeneration ability allows it to recover hit points each turn unless it suffers fire or acid damage, creating a strategic element in combat.",
+    "goals": "Typically engages in combat to defend itself or its territory, using its durability and melee prowess to outlast foes.",
+    "relations": "May be found alone or in groups, possibly allied with other trolls or similar creatures.",
+    "environment": "Commonly found in rugged terrains or areas where trolls are known to dwell.",
+    "strengths": "Regeneration and high Armor Class provide exceptional durability in battle.",
+    "weaknesses": "Vulnerable to fire and acid damage, which can negate its healing ability.",
+    "attacks": "Can make powerful melee attacks with a Greatsword, two Slam attacks, or throw axes.",
+    "most_powerful_ability": "Regeneration allows it to regain health at the start of its turn, complicating combat for opponents.",
+    "equipment": "Wields a Greatsword and Throwing Axes.",
+    "senses": "Has darkvision, allowing it to see in dark environments up to 60 feet.",
+    "skills": "Possesses a skill in perception with a +1 bonus, indicating average awareness of surroundings.",
+    "additional_information": [
+        "Impregnable Counter ability can knock prone attackers within close range.",
+        "Thick Skin grants an additional bonus to its Armor Class.",
+        "High Strength allows for significant melee damage output."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "sturdy humanoid with regeneration ability",
+        "trollkin that excels in melee combat",
+        "durable creature vulnerable to fire and acid",
+        "medium humanoid with thick skin and plate armor",
+        "formidable opponent with multiple attacks"
+    ]
+}

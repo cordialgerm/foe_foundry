@@ -1,0 +1,25 @@
+{
+    "name": "Catonoctrix",
+    "queries": [
+        {
+            "query": "large aberration that manipulates minds and has psychic immunity",
+            "variant": "big monster that has psychic immunity and messes with minds"
+        },
+        {
+            "query": "creature with darkvision and powerful psychic attacks",
+            "variant": "monster that possesses darkvision and strong psychic abilities"
+        },
+        {
+            "query": "neutral evil monster that can fly and has high Armor Class",
+            "variant": "evil creature that flies and has a very high AC"
+        },
+        {
+            "query": "Catonoctrix abilities include Mind Ravage and Pierce the Veil",
+            "variant": "ability of Catonoctrix to use Mind Ravage and Pierce the Veil"
+        },
+        {
+            "query": "monster with a high hit point total and can use telepathy",
+            "variant": "creature with lots of hit points and telepathic abilities"
+        }
+    ]
+}

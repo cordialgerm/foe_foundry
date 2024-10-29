@@ -1,0 +1,25 @@
+{
+    "name": "Deathsworn Elf",
+    "queries": [
+        {
+            "query": "stealthy archer that excels in ranged combat",
+            "variant": "archer that excels in rangd combat and is stealthy"
+        },
+        {
+            "query": "Medium humanoid with high Dexterity and fire damage abilities",
+            "variant": "humanoid with high dexterity that deals fire damage"
+        },
+        {
+            "query": "elf with magical arrows and evasion skills that hides easily",
+            "variant": "magical arrows elf that can hide easily with evasion skills"
+        },
+        {
+            "query": "chaotic neutral creature that uses Disengage and has high perception",
+            "variant": "chaotic creature with high perception and can use disengage"
+        },
+        {
+            "query": "Deathsworn Elf abilities including Surprise Attack and Volley",
+            "variant": "abilities of Deathsworn Elf such as surprise attack and volley"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Ice Borers Swarm",
+    "creature_type": "Elemental",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 40,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "10 ft. walk, 10 ft. climb, 30 ft. fly",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "cold",
+        "swarm"
+    ],
+    "adjectives": [
+        "chilling",
+        "mobile",
+        "deceptive"
+    ],
+    "description": "This swarm resembles a cluster of icicles, providing a chilling and deceptive appearance, allowing it to blend into icy environments.",
+    "memorable": "Its ability to camouflage as icicles and deal substantial cold damage makes it a formidable and scary opponent in winter landscapes.",
+    "goals": "The swarm seeks to ambush and eliminate warm-blooded creatures, inflicting cold damage.",
+    "relations": "Typically encountered in cold environments, possibly alongside other ice-related creatures.",
+    "environment": "Icy and cold regions.",
+    "strengths": "Strong mobility and the ability to detect warm-blooded creatures enhance its ambush tactics.",
+    "weaknesses": "Low Strength makes it vulnerable in physical confrontations.",
+    "attacks": "Impale attack deals piercing and cold damage, increasing its lethality in close proximity to foes.",
+    "most_powerful_ability": "Frigid Mass allows it to inflict continuous cold damage to creatures within its space.",
+    "equipment": null,
+    "senses": "Heatsense enables it to detect warm-blooded creatures within a 30-foot range.",
+    "skills": "Average perception reflects its ability to be aware of surroundings, but not standout.",
+    "additional_information": [
+        "Can move across difficult surfaces like ceilings using Spider Climb.",
+        "Immunity to cold damage prevents it from being harmed by its own elemental nature.",
+        "Camouflaged form offers tactical advantages for ambushes.",
+        "Swarm allows it to occupy and move through small openings.",
+        "Reduced damage output when below half hit points."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cold damage swarm creature ambush",
+        "icy elemental that disguises as icicles",
+        "mobile swarm that inflicts cold damage",
+        "ice monster with heatsense abilities",
+        "creature that thrives in icy environments"
+    ]
+}

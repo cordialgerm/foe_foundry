@@ -1,0 +1,25 @@
+{
+    "name": "Kuunganisha",
+    "queries": [
+        {
+            "query": "small cunning fiend that can fly and regenerate health",
+            "variant": "cunning small fiend that flies and has health regeneration"
+        },
+        {
+            "query": "fiend with invisibility and poison attacks",
+            "variant": "poison attacking fiend that can turn invisible"
+        },
+        {
+            "query": "creature that serves evil masters and has magical resistance",
+            "variant": "magically resistant creature that serves evil masters"
+        },
+        {
+            "query": "small fiend with darkvision and stealth abilities",
+            "variant": "stealthy small fiend that possesses darkvision"
+        },
+        {
+            "query": "fiend that uses Multiattack and has a low Strength score",
+            "variant": "low Strength score fiend that employs Multiattack"
+        }
+    ]
+}

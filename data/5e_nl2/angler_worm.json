@@ -1,0 +1,51 @@
+{
+    "name": "Angler Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 104,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "angler",
+        "worm",
+        "grappler"
+    ],
+    "adjectives": [
+        "huge",
+        "dangerous",
+        "vibrational-sensitive"
+    ],
+    "description": "The Angler Worm is a massive creature with a powerful physique and unique predatory adaptations. It has a prominent, serpentine body equipped with keen sensory abilities to detect vibrations.",
+    "memorable": "This creature's ability to create nearly invisible snares and control the battlefield with its Ethereal Lure makes it a uniquely formidable foe.",
+    "goals": "To ambush and capture prey by trapping them in snares while leveraging its vibrations sense for detection.",
+    "relations": "It is likely to be encountered in environments with other Angler Worms, and may serve as a predator in subterranean or swampy areas.",
+    "environment": "Commonly found in swamps or caverns where it can effectively utilize its snare traps.",
+    "strengths": "Immunity to poison and various conditions, combined with tremorsense that extends up to 60 feet, enhances its battlefield control.",
+    "weaknesses": "Low Dexterity makes it vulnerable to being hit in combat, especially against faster and more agile foes.",
+    "attacks": "It can deliver powerful biting attacks with additional acid damage and grapple foes with its Coils for ongoing bludgeoning damage.",
+    "most_powerful_ability": "The Ethereal Lure ability creates a glowing orb that charms creatures, compelling them to move directly towards it, potentially leading them into traps.",
+    "senses": "Possesses tremorsense up to 60 feet, enhancing its ability to detect movement and vibrations for combat advantage.",
+    "skills": "None notably proficient, but its Keen Touch ability grants it advantage on Perception checks reliant on vibrations.",
+    "additional_information": [
+        "Grapples its prey to restrict movement and deal continuous damage.",
+        "Utilizes snares for environmental warfare, creating hazardous terrains.",
+        "Can climb walls and ceilings effortlessly, enhancing its mobility.",
+        "Low Intelligence limits its tactical flexibility but compensates with physical prowess.",
+        "Particularly dangerous in environments where it can effectively set traps."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive underground predator",
+        "vibration-sensitive grappling monster",
+        "angler creature with snares",
+        "huge swamp ambusher",
+        "lethal trap-setting monster"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Idolic Deity",
+    "creature_type": "Construct",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 105,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "stealth",
+        "deception",
+        "spell disruption"
+    ],
+    "adjectives": [
+        "deceptive",
+        "corrupting",
+        "tactical",
+        "formidable"
+    ],
+    "description": "The Idolic Deity resembles a small statue, enhanced by a remarkable Dexterity and Charisma, signifying its stealth and deceptive capabilities in combat. It can blend into its surroundings and can move through objects.",
+    "memorable": "Its Apostasy Aura disrupts divine powers, making it a significant threat to clerics and paladins.",
+    "goals": "To undermine and corrupt those who wield divine or celestial power.",
+    "relations": "Its abilities make it particularly dangerous to divine spellcasters and paladins.",
+    "environment": "Often found in dark or obscured areas where it can utilize its stealth.",
+    "strengths": "High Dexterity and Charisma, exceptional stealth and deception skills, immunity to several damage types and conditions, and the ability to disrupt spellcasting.",
+    "weaknesses": "Weak against magical attacks and dependent on stealth for effectiveness.",
+    "attacks": "Utilizes the Seduce the Righteous ability to impose disadvantage on foes, followed by powerful Slam attacks dealing bludgeoning and psychic damage.",
+    "most_powerful_ability": "Apostasy Aura, which causes divine powers to fail, posing a significant challenge to divine allies.",
+    "equipment": null,
+    "senses": "It has darkvision allowing it to see in low light conditions.",
+    "skills": "Skilled in Deception and Stealth, enhancing its ability to evade and manipulate.",
+    "additional_information": [
+        "Construct nature means it doesn't require food, air, or sleep.",
+        "Can take on a False Appearance and blend seamlessly with surroundings.",
+        "Incorporeal Movement grants tactical advantages in combat.",
+        "Immunities to poison and psychic damage.",
+        "Resistance to nonmagical physical damage."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "corrupting statue that disrupts divine power",
+        "stealthy construct that poses a threat to clerics",
+        "small deity that punishes divine spellcasters",
+        "tactical foe that can blend into surroundings",
+        "dangerous construct with psychic attacks"
+    ]
+}

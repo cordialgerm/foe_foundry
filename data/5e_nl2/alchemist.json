@@ -1,0 +1,53 @@
+{
+    "name": "Alchemist",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 91,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "alchemical",
+        "support",
+        "potion maker"
+    ],
+    "adjectives": [
+        "intelligent",
+        "dexterous",
+        "resilient"
+    ],
+    "description": "The Alchemist is a medium humanoid renowned for its potion-making skills, often seen with various alchemical supplies and vials. It has an agile build, characterized by impressive dexterity and keen intelligence.",
+    "memorable": "The Alchemist's ability to craft potent potions and explosive bombs makes it a unique and strategic threat in combat.",
+    "goals": "To create powerful potions, defend itself and its allies, and control the battlefield with alchemical effects.",
+    "relations": "Possibly accompanied by other alchemical creatures or constructs and various allies benefiting from its potions.",
+    "environment": "Typically found in labs, alchemical workshops, or regions rich in magical resources.",
+    "strengths": "Excellent at crafting and using potions; capable of inflicting area damage with bombs; adept at supporting allies.",
+    "weaknesses": "Average physical strength limits melee effectiveness; reliance on alchemical resources can be a potential vulnerability.",
+    "attacks": "Multiattack with a dagger dealing piercing and poison damage; bombs that explode for area fire damage; strategic versatility with altering bomb types.",
+    "most_powerful_ability": "Alchemical Vapors causing substantial poison damage in an area while providing resistance to certain allies.",
+    "equipment": null,
+    "senses": "Passive perception of 15, indicating good awareness of its surroundings.",
+    "skills": "Proficient in arcana, investigation, nature, and perception, showcasing expertise in magical and scientific knowledge.",
+    "additional_information": [
+        "Immunity to poison damage and cannot be poisoned.",
+        "Ability to craft potions of up to legendary rarity.",
+        "Uses Pack Tactics to gain advantage on attacks when allies are nearby.",
+        "Sunlight Sensitivity imposes disadvantage on attacks and perception checks in sunlight.",
+        "Can heal itself immediately upon taking damage."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "master potion maker",
+        "crafts explosive bombs",
+        "alchemical support creature",
+        "versatile damage dealer",
+        "lawful neutral alchemist"
+    ]
+}

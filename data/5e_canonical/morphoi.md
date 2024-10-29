@@ -1,6 +1,8 @@
 <MonsterName/>Morphoi</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>33</HP>
 <summary>The Morphoi is a chaotic evil plant creature with an unsettling ability to transform into humanoid shapes. This adaptability makes it a versatile opponent, capable of engaging both in melee and ranged combat effectively. With a well-rounded set of abilities, it demonstrates good dexterity and strength, allowing for nimble movements and solid attacks, but it has average resilience and wisdom. The Morphoi's amphibious nature grants it the ability to navigate both water and land seamlessly, enhancing its tactical options during encounters. However, it is relatively low in Hit Points compared to stronger foes, which can make it susceptible to sustained damage if caught off guard.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ For bonus actions, the Morphoi has the **Change Shape** ability. This grants it 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Morphoi
 
 *Medium* *Plant* *Chaotic Evil*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The morphoi transforms into a Medium Humanoid or back into its true form, which is a Plant. Its statistics are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form when it dies.
+</statblock>
 
 

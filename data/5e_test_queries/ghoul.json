@@ -1,0 +1,25 @@
+{
+    "name": "Ghoul",
+    "queries": [
+        {
+            "query": "tall undead creature with a hunger for flesh found in graveyards",
+            "variant": "tall creature undead with meat hunger found in graveyards"
+        },
+        {
+            "query": "creature that can paralyze you and is often encountered in dark places",
+            "variant": "monster that can paralyze you often found in dark areas"
+        },
+        {
+            "query": "fast undead with claw attacks that loves to feast on the living",
+            "variant": "fast undead claw attacker that enjoys feasting on live flesh"
+        },
+        {
+            "query": "zombie-like monster that climbs walls and must eat raw meat daily",
+            "variant": "zombie monster climbs walls and needs to eat raw meat each day"
+        },
+        {
+            "query": "ambush predator undead with darkvision and resistance to poison",
+            "variant": "ambushing predator undead that has darkvision and is poison resistant"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Ice Mephit",
+    "creature_type": "Elemental",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 21,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 30 ft. flying",
+    "role": null,
+    "tags": [
+        "elemental",
+        "cold",
+        "frost",
+        "mephit"
+    ],
+    "adjectives": [
+        "mischievous",
+        "impish",
+        "icy"
+    ],
+    "description": "An Ice Mephit is a small creature made of ice and frost with jagged wings and sharp claws.",
+    "memorable": "Can explode in a burst of ice upon death, causing area damage.",
+    "goals": "To create chaos in cold environments and ambush unwary adventurers.",
+    "relations": "Often found among other mephits or in the company of ice-themed creatures.",
+    "environment": "Cold environments such as glaciers, snow-covered mountains, or icy caves.",
+    "strengths": "Immunity to cold and poison damage; can summon other mephits.",
+    "weaknesses": "Vulnerable to bludgeoning and fire damage, limiting its combat options.",
+    "attacks": "Claws attack inflicts slashing and cold damage; can use freezing breath for area control.",
+    "most_powerful_ability": "Frost Breath, causing cold damage and potential restraining of enemies.",
+    "equipment": null,
+    "senses": "Can see in darkness with darkvision and has average perception.",
+    "skills": "Skilled in stealth, allowing it to remain unnoticed.",
+    "additional_information": [
+        "Can camouflage as an ordinary shard of ice.",
+        "Does not require air, sustenance, or sleep.",
+        "Can create areas of obscured visibility with fog."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast fog cloud once per day without material components.",
+    "test_queries": [
+        "small icy creature with explosive death",
+        "elemental that can summon other mephits",
+        "mephit that uses cold for attacks and ambush",
+        "frosty demon that hides as ice shard",
+        "creature from icy caves capable of obscuring fog"
+    ]
+}

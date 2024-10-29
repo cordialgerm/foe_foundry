@@ -1,0 +1,25 @@
+{
+    "name": "Berserker",
+    "queries": [
+        {
+            "query": "medium humanoid warrior wearing hide armor and wielding a greataxe",
+            "variant": "medium humanoid fighter with hide armor and a greataxe"
+        },
+        {
+            "query": "aggressive melee fighter from tribal societies with high strength",
+            "variant": "fierce melee combatant from tribal cultures with strong attributes"
+        },
+        {
+            "query": "savage warrior that can go into a battle frenzy and ignores wounds",
+            "variant": "brutal fighter able to enter a frenzy and overlook injuries"
+        },
+        {
+            "query": "lightly-armored brute with powerful melee attacks and reckless style",
+            "variant": "lightly armed fighter who uses powerful melee attacks and a reckless approach"
+        },
+        {
+            "query": "Berserker with bloodied frenzy ability that enhances attacks",
+            "variant": "Berserker using bloodied frenzy skill to boost its attacks"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Minotaur Skeleton",
+    "creature_type": "Undead",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 67,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "skeleton",
+        "minotaur",
+        "guardian"
+    ],
+    "adjectives": [
+        "terrifying",
+        "strong",
+        "relentless",
+        "ancient"
+    ],
+    "description": "The Minotaur Skeleton is an undead creature appearing as a large, reanimated skeletal minotaur wielding large, rusted weapons. It lacks flesh and possesses immense strength.",
+    "memorable": "Its ability to ambush players while motionless presents a unique tactical challenge.",
+    "goals": "Often found guarding ancient ruins or tombs, serving dark masters.",
+    "relations": "May be encountered alongside other undead or creatures controlled by necromantic forces.",
+    "environment": "Typically found in ancient ruins, dungeons, or tombs.",
+    "strengths": "High damage output through melee attacks and the ability to charge, causing additional damage.",
+    "weaknesses": "Relatively low armor class and limited mobility, making it vulnerable to clever tactics.",
+    "attacks": "Can attack with a greataxe or gore with its horns, dealing significant slashing or piercing damage.",
+    "most_powerful_ability": "Charge ability allows it to inflict extra damage and knock foes prone after a strong charge.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "Lacks strategic intelligence but uses its charge and counterattack effectively in combat.",
+    "additional_information": [
+        "Immune to poison damage and exhaustion effects.",
+        "Can remain motionless and appear as an ordinary skeleton, aiding in ambush tactics.",
+        "Possesses labyrinthine memories, providing it advantage on navigation checks."
+    ],
+    "damage_types": [
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead minotaur skeleton with rusted weapons",
+        "skeleton that charges and knocks foes prone",
+        "guardian minotaur skeleton found in tombs",
+        "terrifying skeletal warrior with a greataxe",
+        "ambush tactics of an undead minotaur"
+    ]
+}

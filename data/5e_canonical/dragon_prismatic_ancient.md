@@ -1,6 +1,8 @@
 <MonsterName/>Dragon, Prismatic Ancient</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>21</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>407</HP>
 <summary>The Prismatic Ancient Dragon is a gargantuan neutral creature, renowned for its formidable presence and devastating abilities on the battlefield. With an impressive Armor Class of 20 due to its natural armor and an astonishing 407 hit points derived from 22d20+176, this dragon exemplifies strength and durability. It possesses a challenge rating of 21, making it a significant threat in any encounter, worth 33,000 experience points. This dragon can move quickly, with a walking speed of 50 feet and a climbing speed of 40 feet. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ In combat, the dragon can also use its legendary actions, which include making a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dragon, Prismatic Ancient
 
 *Gargantuan* *Dragon* *neutral*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Tail Attack:** Makes a tail attack.
 - **Cast a Spell (2):** Uses Spellcasting.
 - **Shimmering Wings (2):** Each creature within 20': DC 19 Wis save or take 16 (3d10) radiant and blinded until start of its next turn.
+</statblock>
 
 

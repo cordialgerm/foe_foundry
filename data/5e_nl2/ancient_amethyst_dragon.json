@@ -1,0 +1,55 @@
+{
+    "name": "Ancient Amethyst Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 313,
+    "ac": 20,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 40 ft., burrow 40 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "psionic",
+        "spellcaster",
+        "legendary"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "majestic",
+        "formidable",
+        "psionic"
+    ],
+    "description": "The Ancient Amethyst Dragon embodies the power and majesty of dragons, showcasing a formidable presence with psionic abilities that manipulate the minds of its foes. It is characterized by its dark, scaled body and regal demeanor, exuding both power and intelligence.",
+    "memorable": "This dragon stands out with its potent psionic abilities, allowing it to observe and manipulate creatures from great distances, making it a complex adversary.",
+    "goals": "The dragon seeks to dominate lesser beings, gain knowledge, and assert its will through manipulation and power.",
+    "relations": "Other dragons may view it as a powerful ally or foe, and it may command lesser creatures or psychic entities.",
+    "environment": "Typically found in lairs that are secluded and secure, often within mountain ranges or ancient ruins.",
+    "strengths": "Resistances to force and psychic damage, immunity to fatigue, and high saving throw bonuses reflect its resilience.",
+    "weaknesses": "Vulnerable to opponents immune or particularly resistant to psychic effects.",
+    "attacks": "Employs a bite that deals piercing and force damage, claws that inflict slashing damage, and a powerful Psionic Wave attack causing psychic damage.",
+    "most_powerful_ability": "Concussive Breath, a 90-foot cone of telekinetic energy causing devastating force damage to multiple targets.",
+    "equipment": null,
+    "senses": "Possesses darkvision that extends 120 feet and a passive perception of 20.",
+    "skills": "Notable for high skill proficiencies in deception, persuasion, and insight, facilitating manipulation in encounters.",
+    "additional_information": [
+        "Legendary Resistance allows it to ensure survival against magical effects.",
+        "Far Thoughts enables it to see and hear any psionic creature within 100 miles.",
+        "Innate Spellcasting grants access to powerful spells without components.",
+        "Can charm enemies as a legendary action for battlefield control.",
+        "Assume Control enables manipulation of charmed creatures to act in its favor."
+    ],
+    "damage_types": [
+        "force",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting with the ability to cast calming and controlling spells like calm emotions, charm person, and modify memory.",
+    "test_queries": [
+        "powerful psionic dragon",
+        "mind-controlling ancient dragon",
+        "majestic giant dragon",
+        "dragon with telepathy",
+        "dragon that manipulates minds"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Aboleth",
+    "creature_type": "Aberration",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 135,
+    "ac": 17,
+    "srd": true,
+    "cr": "10",
+    "movement": "10 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "psychic",
+        "manipulative",
+        "disease",
+        "underwater"
+    ],
+    "adjectives": [
+        "ancient",
+        "massive",
+        "cunning"
+    ],
+    "description": "The Aboleth has a long, eel-like body covered in mucus-coated skin, with three glowing eyes stacked vertically and four powerful tentacles used to ensnare prey.",
+    "memorable": "The Aboleth's ancient presence and powerful psychic abilities allow it to manipulate and control other creatures, making it a formidable presence in the depths.",
+    "goals": "To manipulate and enslave other creatures through psychic control and disease, while maintaining dominion over its dark aquatic domain.",
+    "relations": "Often encountered with sea creatures or used as a master by other aquatic abominations.",
+    "environment": "Deep oceans or underground lakes, away from light.",
+    "strengths": "Possesses powerful psychic abilities, exceptional intelligence, and defenses against mind-altering effects.",
+    "weaknesses": "Limited mobility on land, only 10 feet, making it vulnerable outside of aquatic environments.",
+    "attacks": "Multiattack with tentacles that can ensnare prey and a Psychic Bolt that inflicts psychic damage.",
+    "most_powerful_ability": "Psychic Torrent, which can incapacitate multiple enemies while dealing significant psychic damage.",
+    "senses": "Features blindsight up to 30 feet and a high passive perception of 20, allowing it to detect creatures in its vicinity easily.",
+    "skills": "Excels in History, allowing it to recall information from its ancient existence, and has exceptional Perception for detecting threats.",
+    "additional_information": [
+        "Amphibious, able to breathe air and water.",
+        "Infects creatures with a debilitating disease known as Sea Change.",
+        "Can invoke legendary actions to enhance combat efficacy and maneuvering.",
+        "Has powerful innate spellcasting abilities related to mental manipulation.",
+        "Resistant to various status effects, enhancing its survivability."
+    ],
+    "damage_types": [
+        "psychic",
+        "acid",
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting rooted in Charisma, allowing it to cast spells like Detect Thoughts and Project Image three times a day without components.",
+    "test_queries": [
+        "ancient underwater monster",
+        "psychic abomination",
+        "manipulative sea creature",
+        "creature that enslaves minds",
+        "large aquatic threat"
+    ]
+}

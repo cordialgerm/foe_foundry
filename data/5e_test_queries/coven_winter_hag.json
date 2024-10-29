@@ -1,0 +1,25 @@
+{
+    "name": "Coven Winter Hag",
+    "queries": [
+        {
+            "query": "fey creature that curses its enemies and manipulates cold weather",
+            "variant": "fey monster that manipulates weather and curses its foes"
+        },
+        {
+            "query": "spellcasting winter hag with icy travel ability",
+            "variant": "ice-themed hag with spellcasting powers and icy travel"
+        },
+        {
+            "query": "cold damage resistant creature that can shapeshift",
+            "variant": "monster resistant to cold that can change form"
+        },
+        {
+            "query": "deception skilled hag that uses ice attacks",
+            "variant": "hag with high deception who attacks with ice spells"
+        },
+        {
+            "query": "dangerous winter fey with high charisma and multiattack",
+            "variant": "powerful winter fey that has a high charisma and multiattack action"
+        }
+    ]
+}

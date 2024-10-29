@@ -1,0 +1,25 @@
+{
+    "name": "Magnetic Elemental",
+    "queries": [
+        {
+            "query": "large elemental creature that manipulates metal and attacks armored foes",
+            "variant": "big elemental monster that controls metal and strikes against armored enemies"
+        },
+        {
+            "query": "creature with magnetism abilities that immobilizes metal armor users",
+            "variant": "being with magnetic powers that traps users of metal armor"
+        },
+        {
+            "query": "elemental with bludgeoning slam attacks and high physical strength",
+            "variant": "elemental that performs slamming damage and has strong physical might"
+        },
+        {
+            "query": "neutral elemental living underground and flying, capable of pulling metal items",
+            "variant": "neutral elemental that can burrow and fly, able to attract metal objects"
+        },
+        {
+            "query": "elemental with damage immunities to lightning and poison in combat",
+            "variant": "elemental immune to lightning and poison during battles"
+        }
+    ]
+}

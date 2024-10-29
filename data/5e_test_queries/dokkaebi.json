@@ -1,0 +1,25 @@
+{
+    "name": "Dokkaebi",
+    "queries": [
+        {
+            "query": "fey creature with mischievous abilities and darkvision",
+            "variant": "fey monster that has darkvision and playful tricks"
+        },
+        {
+            "query": "medium-sized trickster with invisibility and neat melee attacks",
+            "variant": "medium tricksy creature with melee capabilities and invisibility"
+        },
+        {
+            "query": "Dokkaebi has a hat that makes it invisible and good grappling skills",
+            "variant": "the dokkaebi uses a hat for invisibility and excels in grappling"
+        },
+        {
+            "query": "a playful fey creature that uses tricks in combat and has decent hit points",
+            "variant": "a cheerful fey that employs tricks during battle and has good endurance"
+        },
+        {
+            "query": "monster with a decent Armor Class and special abilities for grappling",
+            "variant": "creature with average AC and unique grappling skills"
+        }
+    ]
+}

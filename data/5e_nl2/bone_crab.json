@@ -1,0 +1,50 @@
+{
+    "name": "Bone Crab",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Small",
+    "hp": 33,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 10 ft.",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "stealthy",
+        "disease carrier"
+    ],
+    "adjectives": [
+        "small",
+        "unassuming",
+        "agile"
+    ],
+    "description": "The Bone Crab is a small, agile creature with natural armor and a shell that allows it to hide effectively among bones. It has a unique ability to enhance its stealth through bone camouflage.",
+    "memorable": "Notable for its disease mechanic, the white ghost shivers, which causes debilitating symptoms to anyone that consumes it or is bitten by an infected creature.",
+    "goals": "Typically found lurking near the remains of other creatures, waiting for unsuspecting prey to ambush.",
+    "relations": "May be encountered in groups, using pack tactics to coordinate attacks effectively.",
+    "environment": "Often found in coastal areas or near graveyards where it can hide among bones.",
+    "strengths": "Advantage on Dexterity (Stealth) checks and strong pack tactics when in groups makes it a formidable surprise attacker.",
+    "weaknesses": "Low intelligence and charisma, making it easy to outsmart in combat or social situations.",
+    "attacks": "Claw attack that deals slashing damage with a decent chance of hitting and enhanced by its pack tactics.",
+    "most_powerful_ability": "White ghost shivers disease, which can incapacitate prey over time.",
+    "equipment": null,
+    "senses": "Limited telepathy allows simple communication with other Bone Crabs in a pack within 100 feet.",
+    "skills": "Proficient in Perception and Stealth, making it a capable ambusher and scout.",
+    "additional_information": [
+        "Can jump long distances with its standing leap ability.",
+        "Infected creatures suffer increased exhaustion over time.",
+        "Communicates telepathically with other Bone Crabs for coordinated attacks.",
+        "Has resistance to bludgeoning damage.",
+        "Utilizes its camouflage to hide effectively and ambush prey."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small stealthy crab monster",
+        "disease-carrying crab creature",
+        "bone camouflage creature",
+        "amphibious predatory crab",
+        "agile little beast with diseases"
+    ]
+}

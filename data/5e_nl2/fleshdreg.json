@@ -1,0 +1,52 @@
+{
+    "name": "Fleshdreg",
+    "creature_type": "Plant",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "plant",
+        "regenerative",
+        "tough"
+    ],
+    "adjectives": [
+        "huge",
+        "acidic",
+        "resilient"
+    ],
+    "description": "A massive plant creature with thick, fibrous appendages and acidic sludge pools that ooze from its body, embodying a threatening presence.",
+    "memorable": "It possesses a powerful regeneration ability and the ability to unleash acidic sludge, making it a dangerous foe in battle.",
+    "goals": "To protect its territory and absorb damage for its allies in combat.",
+    "relations": "Often found in the company of other plant creatures or guardians of nature.",
+    "environment": "Typically inhabits forests, swamps, or areas with abundant plant life.",
+    "strengths": "Immunity to acid damage, resistance to fire, and strong regenerative abilities.",
+    "weaknesses": "Low dexterity results in poor agility, which may hinder its defenses against fast opponents.",
+    "attacks": "Can make formidable melee slam attacks and hurl rocks for ranged damage.",
+    "most_powerful_ability": "Disgorge Innards lets it unleash a damaging line of acidic sludge that continues to harm affected creatures.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses good insight and moderate nature skills, making it perceptive to its surroundings.",
+    "additional_information": [
+        "High Constitution provides outstanding saving throws against many effects.",
+        "Multiattack allows it to strike multiple times in a single turn.",
+        "Regeneration provides exceptional sustainability during prolonged combat.",
+        "Presence of acidic sludge creates tactical advantages in battles.",
+        "Creature's Charisma is notably low, indicating poor social influence."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge plant with regenerative abilities",
+        "monster that unleashes acidic sludge",
+        "resilient defender with high HP",
+        "plant creature immune to acid damage",
+        "powerful melee attacks from a Fleshdreg"
+    ]
+}

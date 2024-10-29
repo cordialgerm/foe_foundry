@@ -1,6 +1,8 @@
 <MonsterName/>Snow Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>3</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Snow Hag is a medium-sized fey creature known for its neutral evil alignment. As a formidable foe, it brings a combination of magical abilities and physical attacks that can catch unsuspecting adventurers off guard. With a challenge rating of 3, the Snow Hag is best suited for mid-level encounters, presenting a balanced threat due to its strong magical arsenal and decent physical prowess. It has high hit points, a good armor class, and excels in cold environments while being particularly vulnerable to fire. This makes it a strategic opponent that can manipulate its surroundings and create illusions to mislead its enemies.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Illusory Appearance ability allows the Snow Hag to disguise itself as anothe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snow Hag
 
 *Medium* *Fey* *neutral evil*
@@ -55,5 +58,6 @@ At will: minor illusion, prestidigitation, ray of frost
 - **Illusory Appearance:** The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies. <br><br>The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have human hands, but someone touching them would feel her sharp claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that the hag is disguised.
 
 
+</statblock>
 
 

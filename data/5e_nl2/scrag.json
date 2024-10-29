@@ -1,0 +1,50 @@
+{
+    "name": "Scrag",
+    "creature_type": "Giant",
+    "alignment": null,
+    "size": "Large",
+    "hp": 84,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft. swim 30 ft.",
+    "role": null,
+    "tags": [
+        "regeneration",
+        "aquatic",
+        "giant"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "amphibious"
+    ],
+    "description": "The Scrag is a large, resilient giant known for its amphibious adaptability and notable physical prowess. It has a robust body and utilizes its keen senses for tracking.",
+    "memorable": "Its ability to regenerate hit points each turn makes it a tough adversary, while the Severed Limbs ability adds a unique dynamic to combat.",
+    "goals": "Typically engages in combat to defend its territory or ambush prey.",
+    "relations": "Often found in the company of other aquatic giants or lurking near water bodies.",
+    "environment": "Commonly inhabits swampy or aquatic terrains where it can utilize its swimming capabilities.",
+    "strengths": "Excels in combat with high physical strength, a regenerative ability, and the capacity to breathe underwater.",
+    "weaknesses": "Susceptible to fire and acid damage, which negate its regenerative capabilities.",
+    "attacks": "Utilizes a multiattack strategy, making a bite attack followed by two claw attacks, dealing substantial piercing and slashing damage.",
+    "most_powerful_ability": "Regeneration: Recovers 10 hit points at the start of its turn unless damaged by acid or fire.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting it advantage on Perception checks based on smell.",
+    "skills": "Has proficiency in stealth, making it a capable ambusher.",
+    "additional_information": [
+        "The Scrag's Severed Limbs ability allows it to continue fighting even after losing an extremity.",
+        "It can be particularly dangerous if not confronted with fire or acid attacks.",
+        "Its intelligence is low, indicating limited strategic thinking.",
+        "The Scrag has an exceptional Constitution score, making it very durable.",
+        "It can control severed limbs, allowing for additional attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic giant with regeneration",
+        "giant that can breathe underwater and regenerate",
+        "monster with severed limbs ability",
+        "regenerative giant found in swamps",
+        "tough giant with keen smell and aquatic traits"
+    ]
+}

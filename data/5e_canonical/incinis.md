@@ -1,6 +1,8 @@
 <MonsterName/>Incinis</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>171</HP>
 <summary>The Incinis is a formidable large elemental creature, embodying the destructive aspects of magma and fire. With a challenge rating of 10, it poses a significant threat to adventurers, capable of dealing both bludgeoning and fire damage through its unique abilities. Its high Armor Class of 17 and impressive Hit Points totaling 171 make it a resilient opponent in battle. The Incinis thrives in close combat, using its high Dexterity and Constitution to outmaneuver and withstand attacks while inflicting substantial damage. Notably, it is immune to fire and poison damage, as well as many conditions such as being grappled or paralyzed, which gives it a tactical edge in prolonged encounters. However, it has average mental stats with an Intelligence of 10 and Charisma of 10, meaning it may not excel in charm or cunning tactics.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Incinis can execute a "Multiattack" action, where it can make two
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Incinis
 
 *Large* *Elemental* *neutral evil*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Wave of Magma (Recharge 5-6):** The incinis transforms into a wave of magma, moving up to its speed in a straight line. Each creature in the path where the incinis moves must make a DC 17 Dexterity saving throw. On a failure, a target takes 21 (6d6) fire damage and, if it is a Large or smaller creature, it is pushed ahead of the incinis and knocked prone in an unoccupied space within 5 feet of where the incinis ends its movement. On a success, a target takes half the damage and is neither pushed nor knocked prone.
 
 
+</statblock>
 
 

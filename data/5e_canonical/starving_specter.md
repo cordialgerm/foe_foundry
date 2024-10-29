@@ -1,6 +1,8 @@
 <MonsterName/>Starving Specter</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>5</CR>
+<AC/>13</AC>
+<HP/>90</HP>
 <summary>The Starving Specter is a Medium Undead creature with a chaotic evil alignment that presents a formidable challenge in combat and encounters. With a Challenge Rating of 5, it poses a significant threat to adventurers, especially due to its ability to inflict psychic damage and frighten its enemies. The specter's primary strengths include its decent armor class of 13, an impressive pool of 90 hit points, and an array of abilities that manipulate the battlefield and prey on the fears of its foes. However, it is vulnerable to psychic damage, making it susceptible to certain spells and attacks. Its ethereal nature allows it to move through objects, presenting unique challenges to those who confront it.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ This combination of abilities and attacks makes the Starving Specter a menacing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Starving Specter
 
 *Medium* *Undead* *chaotic evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bladed Arm:** Melee Weapon Attack: +6 to hit, 10 ft., one target, 10 (2d6+3) slashing damage. This attack can target a creature on the Ethereal or Material Plane.
 
 
+</statblock>
 
 

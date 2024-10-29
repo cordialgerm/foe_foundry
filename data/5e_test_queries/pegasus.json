@@ -1,0 +1,25 @@
+{
+    "name": "Pegasus",
+    "queries": [
+        {
+            "query": "majestic winged horse associated with good deities",
+            "variant": "majestic horse with wings linked to good deities"
+        },
+        {
+            "query": "celestial creature known for speed and loyalty",
+            "variant": "celestial being famous for its speed and loyalty"
+        },
+        {
+            "query": "large horse-like creature that can fly and supports its rider",
+            "variant": "big horse-like being that supports its rider and can fly"
+        },
+        {
+            "query": "intelligent celestial steed that has special abilities for riders",
+            "variant": "smart celestial mount with unique abilities for its riders"
+        },
+        {
+            "query": "creature with high flying speed and ability to knock enemies prone",
+            "variant": "being with a fast flying speed that can make enemies fall prone"
+        }
+    ]
+}

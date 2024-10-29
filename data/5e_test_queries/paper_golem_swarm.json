@@ -1,0 +1,25 @@
+{
+    "name": "Paper Golem Swarm",
+    "queries": [
+        {
+            "query": "paper creature that flies and confuses enemies",
+            "variant": "flying paper enemy that confuses foes"
+        },
+        {
+            "query": "swarm of paper constructs immune to spell changes",
+            "variant": "group of paper golems immune to form altering spells"
+        },
+        {
+            "query": "creature made of paper that deals slashing damage",
+            "variant": "monster composed of paper that inflicts slashing damage"
+        },
+        {
+            "query": "ink-using paper monster in combat",
+            "variant": "combat-focused paper creature that uses ink"
+        },
+        {
+            "query": "medium construct with vulnerabilities to fire",
+            "variant": "construct creature of medium size that is vulnerable to fire"
+        }
+    ]
+}

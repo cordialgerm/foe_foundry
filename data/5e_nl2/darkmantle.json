@@ -1,0 +1,49 @@
+{
+    "name": "Darkmantle",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 22,
+    "ac": 11,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "slow walk of 10 feet and fast flight of 30 feet",
+    "role": "Ambusher",
+    "tags": [
+        "cave",
+        "predator",
+        "darkness"
+    ],
+    "adjectives": [
+        "shadowy",
+        "octopus-like",
+        "camouflaged"
+    ],
+    "description": "A shadowy, octopus-like creature that clings to cavern ceilings and has a leathery, dark-colored body that blends into the shadows.",
+    "memorable": "Its ability to create magical darkness and grapple its prey make it a deadly ambush predator.",
+    "goals": "To ambush and smother prey passing below.",
+    "relations": "Frequently found in caves alongside other subterranean creatures.",
+    "environment": "Caves or the Underdark, using camouflage in dark areas.",
+    "strengths": "Blindsight up to 60 feet, resistance to exhaustion and the frightened condition.",
+    "weaknesses": "Relatively low armor class and hit points make it vulnerable if discovered.",
+    "attacks": "Can perform Crush attacks that bludgeon and can attach itself to the target, causing blindness.",
+    "most_powerful_ability": "Darkness Aura, creating an area of magical darkness that impairs visibility.",
+    "senses": "Has blindsight up to 60 feet, allowing it to detect creatures in total darkness.",
+    "skills": "Skilled in Stealth, able to hide effectively from prey.",
+    "additional_information": [
+        "False appearance allows it to blend seamlessly with cave formations.",
+        "Can deal damage to attackers with its Jagged Hide.",
+        "Creates a tactical advantage by obscuring vision during combat.",
+        "While attached to a target, it can knock the target prone with a successful move.",
+        "Its multiattack provides both darkness creation and offensive capabilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy cave predator with magical darkness",
+        "small ambush creature that smothers its prey",
+        "octopus-like monster hiding in caves",
+        "creature that blends with stalactites and attacks",
+        "darkness aura granting tactical advantage in caves"
+    ]
+}

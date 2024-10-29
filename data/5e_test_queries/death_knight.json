@@ -1,0 +1,25 @@
+{
+    "name": "Death Knight",
+    "queries": [
+        {
+            "query": "undead knight that uses necrotic damage and has high armor class",
+            "variant": "knight undead that has high armor class and uses necrotic damage"
+        },
+        {
+            "query": "medium undead creature with magic resistance and ability to come back to life",
+            "variant": "undead creature medium with ability to return to life and magic resistance"
+        },
+        {
+            "query": "heavy armored foe that absorbs souls and is vulnerable to radiant damage",
+            "variant": "foe heavily armored that is susceptible to radiant damage and absorbs souls"
+        },
+        {
+            "query": "powerful undead with significant hit points and strong charisma",
+            "variant": "undead powerful with strong charisma and significant hit points"
+        },
+        {
+            "query": "death-themed creature that can regenerate and has tactical abilities",
+            "variant": "creature themed around death that possesses tactical abilities and can regenerate"
+        }
+    ]
+}

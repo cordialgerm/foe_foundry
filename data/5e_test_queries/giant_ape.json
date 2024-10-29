@@ -1,0 +1,25 @@
+{
+    "name": "Giant Ape",
+    "queries": [
+        {
+            "query": "large jungle beast with powerful arms that can throw rocks",
+            "variant": "jungle beast that is large and can throw rocks with its powerful arms"
+        },
+        {
+            "query": "massive creature that grapples opponents and has high hit points",
+            "variant": "huge creature with high hit points and the ability to grapple opponents"
+        },
+        {
+            "query": "towering primate found in mountains known for multiattack ability",
+            "variant": "tall primate in the mountains famous for its multiattack skill"
+        },
+        {
+            "query": "intelligent yet aggressive ape that excels in physical combat",
+            "variant": "ape that is smart but aggressive and stands out in physical combat"
+        },
+        {
+            "query": "beast with exceptional strength that can knock enemies prone",
+            "variant": "creature with great strength capable of knocking foes down"
+        }
+    ]
+}

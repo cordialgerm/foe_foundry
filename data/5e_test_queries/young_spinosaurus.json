@@ -1,0 +1,25 @@
+{
+    "name": "Young Spinosaurus",
+    "queries": [
+        {
+            "query": "huge reptilian creature that can hold breath for an hour",
+            "variant": "huge lizard-like monster that can breath hold for an hour"
+        },
+        {
+            "query": "strong dinosaur with multiattack and grappling ability",
+            "variant": "powerful dinosaur with ability to multiattack and grapple"
+        },
+        {
+            "query": "beast that avoids fighting reptilian humanoids unless attacked",
+            "variant": "creature that sidesteps confrontations with reptilian humanoids unless provoked"
+        },
+        {
+            "query": "massive beast with high strength and natural armor in the wild",
+            "variant": "large creature with strong abilities and natural armor found in wild"
+        },
+        {
+            "query": "Young Spinosaurus combat tactics and abilities",
+            "variant": "tactics and skills of Young Spinosaurus in fight"
+        }
+    ]
+}

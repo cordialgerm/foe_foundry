@@ -1,0 +1,52 @@
+{
+    "name": "Hill Giant Chief",
+    "creature_type": "Giant",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "control"
+    ],
+    "adjectives": [
+        "formidable",
+        "strong",
+        "gullible"
+    ],
+    "description": "The Hill Giant Chief is a massive giant characterized by its exceptional strength and clumsiness. It wields a greatclub and possesses a single-minded nature.",
+    "memorable": "This giant can control the battlefield with powerful area attacks and its ability to grapple and slam opponents.",
+    "goals": "To dominate in melee combat and control the battlefield against its foes.",
+    "relations": "Commonly found with other giants or giantkin as well as in the company of lesser creatures it can intimidate.",
+    "environment": "Typically found in hilly or mountainous regions, often where it can exert its brute strength.",
+    "strengths": "Exceptional melee capabilities, substantial durability, and battlefield control ability with area attacks.",
+    "weaknesses": "Very low Dexterity makes it easy to hit; it is gullible and easily misled in social interactions.",
+    "attacks": "Can strike twice with its greatclub for substantial bludgeoning damage, can also throw large rocks or creatures.",
+    "most_powerful_ability": "Greatclub Sweep, an area attack that can knock multiple foes prone and push them away.",
+    "equipment": "Wields a greatclub as its main weapon.",
+    "senses": "Passive perception of 10 indicates average awareness.",
+    "skills": "Has a significant advantage in Strength saving throws, making it resistant to physical attacks.",
+    "additional_information": [
+        "Ability to transform terrain into difficult muddy ground once per day",
+        "Can grapple and control smaller creatures effectively",
+        "Possesses a strong area control ability with its stomp and sweep attacks",
+        "Very gullible, making it susceptible to deception",
+        "Limited agility due to low Dexterity"
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge giant that uses greatclub",
+        "giant with powerful area attacks",
+        "formidable melee giant with basic intelligence",
+        "hill giant that controls battlefield with mud",
+        "strong giant that can throw rocks and creatures"
+    ]
+}

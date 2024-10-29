@@ -1,6 +1,8 @@
 <MonsterName/>Minotaur</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>76</HP>
 <summary>A Minotaur is a fearsome, humanoid creature with the head of a bull and the body of a massive, muscular man. Minotaurs are known for their incredible strength, aggressive nature, and skill in combat. They often wield large axes or clubs, using their horns to charge at enemies and gore them in battle. Minotaurs are often found in labyrinthine ruins or underground lairs, where they use their keen sense of direction and savage cunning to hunt down intruders. Though they are often depicted as brutal and violent, some Minotaurs live in small tribes with their own customs and hierarchies.</summary>
 
 <summary>The minotaur is a large monstrosity known for its immense strength and ferocity in battle. With a challenge rating of 4 and 76 hit points, it presents a substantial threat to players. Its notable physical prowess is reflected in its strong statistics, boasting an impressive Strength of 18, which translates to a +4 modifier, and a Constitution of 16, granting a +3 modifier. While its Dexterity and other mental stats are average, it compensates with exceptional combat abilities and a special power that allows it to recall any path it has taken, making it a formidable opponent in labyrinthine settings. The minotaur's primary weakness is its average Dexterity, making it less evasive in combat, and its reliance on melee attacks means it can be outmaneuvered at range.</summary>
@@ -31,6 +33,7 @@ Overall, the Minotaur is a powerful melee combatant with abilities that enhance 
 
 Source: 5e_srd
 
+<statblock>
 ## Minotaur
 
 *Large monstrosity, chaotic evil*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Greataxe***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 17 (2d12+4) slashing damage.
 
-***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.
+***Gore***. *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (2d8+4) piercing damage.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur
 
 *Large* *Monstrosity*
@@ -103,6 +108,7 @@ Source: 5e_artisinal_monsters
 - **Roar of Triumph:** If the minotaur reduced a living creature to 0 hit points since the end of its last turn, it roars and gains 10 (3d6) temporary hit points.
 
 
+</statblock>
 
 
 
@@ -111,6 +117,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Minotaur
 
 *Large monstrosity*
@@ -148,5 +155,6 @@ Source: 5e_artisinal_monsters
 
 - **Bleeding Frenzy (44 HP or Fewer).** The minotaur enters a frenzy until the start of its next turn. Until the frenzy ends, the minotaur deals an extra 3 (1d6) damage of the weapon’s type each time it hits with a melee weapon attack, and the minotaur takes an extra 3 (1d6) damage of the weapon’s type the first time it is hit with a melee weapon attack before the frenzy ends.
 
+</statblock>
 
 

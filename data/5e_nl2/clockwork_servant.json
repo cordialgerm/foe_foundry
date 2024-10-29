@@ -1,0 +1,50 @@
+{
+    "name": "Clockwork Servant",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 11,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 25 ft.",
+    "role": null,
+    "tags": [
+        "construct",
+        "helper",
+        "automaton"
+    ],
+    "adjectives": [
+        "mechanical",
+        "durable",
+        "reliable"
+    ],
+    "description": "The Clockwork Servant is a mechanical helper crafted for domestic tasks, characterized by its sturdy construction and reliable nature. It shows signs of intricate clockwork mechanisms but lacks any defining facial features.",
+    "memorable": "Immunity to various conditions and spells, making it a dependable ally.",
+    "goals": "To assist its master with various tasks and minor repairs.",
+    "relations": "Often created or owned by spellcasters, inventors, or wealthy individuals.",
+    "environment": "Typically found in workshops, personal estates, or wherever it is summoned to assist.",
+    "strengths": "Immunity to poison and psychic damage, along with several conditions, enhances its role as a companion.",
+    "weaknesses": "Not particularly durable with a low armor class and hit points, making it vulnerable in combat.",
+    "attacks": "A melee slam attack that deals moderate bludgeoning damage to nearby foes.",
+    "most_powerful_ability": "Magic Resistance, providing advantages against magical influences.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a high passive Perception score of 15.",
+    "skills": "Proficient in Investigation and possesses a high Perception skill, allowing it to notice details effectively.",
+    "additional_information": [
+        "Can cast mending and prestidigitation cantrips at will.",
+        "Immutable Form grants immunity to form-altering effects.",
+        "Uses its mechanical form for reliable and repetitive tasks.",
+        "Can operate without needing direct commands, performing tasks effectively.",
+        "Lacks social skills due to very low Charisma."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast mending and prestidigitation cantrips at will.",
+    "test_queries": [
+        "mechanical helper for household tasks",
+        "construct with spell resistances",
+        "automaton immune to charm effects",
+        "Clockwork Servant abilities and traits",
+        "creature that performs minor repairs"
+    ]
+}

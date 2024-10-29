@@ -1,0 +1,53 @@
+{
+    "name": "Midnight Sun",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "flying speed of 60 feet, cannot walk",
+    "role": null,
+    "tags": [
+        "aberration",
+        "flying",
+        "shape-shifter",
+        "light manipulation"
+    ],
+    "adjectives": [
+        "large",
+        "resilient",
+        "versatile",
+        "menacing"
+    ],
+    "description": "A large aberration capable of manipulating light and darkness, changing forms based on lighting conditions.",
+    "memorable": "It can morph between different forms dealing various types of damage and has strong immunities and resistances.",
+    "goals": "To create chaos on the battlefield by manipulating light and darkness to its advantage.",
+    "relations": "Often associated with other aberrations and creatures of darkness or light.",
+    "environment": "Found in areas with variable lighting, such as caves or twilight zones.",
+    "strengths": "High damage resistance and versatility in combat through its changing form mechanics.",
+    "weaknesses": "Vulnerable to necrotic damage in day form and radiant damage in night form.",
+    "attacks": "Can unleash three Energy Blast attacks that change damage type based on its current form.",
+    "most_powerful_ability": "Changing Form, allowing it to adapt its damage and immunity based on the light's presence.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet and a passive perception of 17, allowing it to perceive creatures without sight.",
+    "skills": "Excels in perception skills with a +4 modifier.",
+    "additional_information": [
+        "Immunities to conditions like blinded, charmed, and frightened.",
+        "Can move through spaces as narrow as 1 inch without squeezing.",
+        "Energy Pulse can deal significant damage to multiple targets."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that manipulates light and darkness",
+        "large aberration with versatile damage types",
+        "monster with changing form based on light",
+        "light manipulating creature immune to many effects",
+        "flying enemy with powerful area damage attack"
+    ]
+}

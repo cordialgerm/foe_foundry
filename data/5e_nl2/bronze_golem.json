@@ -1,0 +1,53 @@
+{
+    "name": "Bronze Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 57,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "golem",
+        "guardian",
+        "magic"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "magical"
+    ],
+    "description": "The Bronze Golem is a massive construct made of bronze, representing the blend of arcane magic and metalwork. Its body is hot to the touch, featuring an internal boiler.",
+    "memorable": "Its Brazen Bull ability traps enemies in its body, causing severe fire damage and blindness.",
+    "goals": "To serve as a guardian or weapon for its creator.",
+    "relations": "May serve powerful creators or be found alongside other constructs.",
+    "environment": "Often found in magical workshops or ruins where it was created.",
+    "strengths": "Immune to many conditions, highly resistant to non-magical physical damage, and has powerful melee attacks.",
+    "weaknesses": "Low Dexterity and Intelligence make it slow and unwise in combat.",
+    "attacks": "Can perform two powerful slam attacks and grapple opponents, and has a dangerous ability to force grappling foes into its boiler.",
+    "most_powerful_ability": "Brazen Bull, allowing it to trap and severely harm grappling targets.",
+    "equipment": null,
+    "senses": "Has a passive perception of 14, enhancing its ability to notice hidden creatures.",
+    "skills": "Possesses a perception skill with a +4 modifier.",
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Resistant to fire damage.",
+        "Grapples opponents and can only hold one at a time in its boiler.",
+        "All weapon attacks are considered magical.",
+        "Magic Resistance gives it an advantage against spells."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive bronze construct with fire abilities",
+        "golem that traps enemies in its boiler",
+        "highly resistant guardian made of bronze",
+        "magical guardian with boiling body feature",
+        "large construct immune to many conditions"
+    ]
+}

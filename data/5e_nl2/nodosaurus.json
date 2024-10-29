@@ -1,0 +1,50 @@
+{
+    "name": "Nodosaurus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swamp",
+        "ambush",
+        "predator"
+    ],
+    "adjectives": [
+        "large",
+        "stealthy",
+        "bludgeoning"
+    ],
+    "description": "The Nodosaurus is a large, unaligned beast that thrives in swampy environments, featuring a massive tail used for powerful strikes.",
+    "memorable": "It excels at stealth in swampy terrain, making it a dangerous ambush predator.",
+    "goals": "To blend into its environment and ambush prey.",
+    "relations": "May be encountered alongside other swamp-dwelling beasts.",
+    "environment": "swamps",
+    "strengths": "Highly capable in melee with abundant bludgeoning damage and adept at stealth in its habitat.",
+    "weaknesses": "Very low Intelligence and Charisma scores limit strategy and interaction.",
+    "attacks": "Employs a tail attack, delivering significant bludgeoning damage.",
+    "most_powerful_ability": "Swamp Camouflage, granting advantage on stealth checks in swampy terrain.",
+    "equipment": null,
+    "senses": "Passive Perception of 11 allows it to notice average details in its environment.",
+    "skills": "No special skills are listed.",
+    "additional_information": [
+        "Strong and durable with a Constitution of 14.",
+        "Average Dexterity does not impact agility significantly.",
+        "Low Intelligence restricts understanding of complex concepts.",
+        "Very low Charisma makes it ineffective in social situations.",
+        "Ability to deliver 12 bludgeoning damage with its tail attack."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large swamp predator with a powerful tail",
+        "stealthy creature that hides in swamps",
+        "ambush predator in swamp environment",
+        "Nodosaurus tail attack details",
+        "beast with swamp camouflage ability"
+    ]
+}

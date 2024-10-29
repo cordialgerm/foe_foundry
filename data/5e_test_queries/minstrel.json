@@ -1,0 +1,25 @@
+{
+    "name": "Minstrel",
+    "queries": [
+        {
+            "query": "humanoid spellcaster with charm and deception abilities",
+            "variant": "humanoid caster that uses charm and deception skills"
+        },
+        {
+            "query": "support character that uses spells to manipulate enemies in combat",
+            "variant": "supporting character using spells to influence foes in battle"
+        },
+        {
+            "query": "medium character that uses charisma for spellcasting and social skills",
+            "variant": "medium-sized creature that relies on charisma for spells and social interactions"
+        },
+        {
+            "query": "bard-like figure that can heal allies and cast invisibility",
+            "variant": "bard such character who can heal friends and use invisibility"
+        },
+        {
+            "query": "spellcaster with decent armor class and multiple crowd control spells",
+            "variant": "caster with good armor rating and various area control spells"
+        }
+    ]
+}

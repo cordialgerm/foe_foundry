@@ -1,0 +1,25 @@
+{
+    "name": "Demilich",
+    "queries": [
+        {
+            "query": "intelligent undead creature that steals souls",
+            "variant": "smart undead being that takes souls"
+        },
+        {
+            "query": "undead creature with high dexterity that can fly",
+            "variant": "flying undead monster with excellent agility"
+        },
+        {
+            "query": "powerful undead that manipulates battle with fear",
+            "variant": "strong undead that controls combat using fear"
+        },
+        {
+            "query": "eerie tiny flying undead with soul gems",
+            "variant": "creepy tiny undead that uses soul gems"
+        },
+        {
+            "query": "undead with abilities to blind and teleport",
+            "variant": "undead creature that can teleport and blind"
+        }
+    ]
+}

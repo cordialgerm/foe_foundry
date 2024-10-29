@@ -1,0 +1,52 @@
+{
+    "name": "Bastet Temple Cat",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Small",
+    "hp": 40,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "cat",
+        "temple",
+        "spellcaster",
+        "charming"
+    ],
+    "adjectives": [
+        "chaotic",
+        "small",
+        "agile",
+        "charming"
+    ],
+    "description": "The Bastet Temple Cat is a small, agile creature with a sleek fur coat and an enchanting presence. It is known for its charming personality and is capable of assisting spellcasters.",
+    "memorable": "Its ability to charm opponents with its Fascinating Purr and act as a magical reservoir for spellcasters makes it a unique companion in combat.",
+    "goals": "To serve as a companion and assist spellcasters by imbuing them with spells.",
+    "relations": "Often found with clerics or paladins who worship Bastet, it may have ties with other temple guardians.",
+    "environment": "Typically found in temples or sacred spaces dedicated to Bastet.",
+    "strengths": "Exceptional agility and stealth, allows for effective scouting and charming abilities.",
+    "weaknesses": "Lacks physical strength and toughness, making it vulnerable to direct combat.",
+    "attacks": "Can perform a Multiattack including a Bite and Claws attack, dealing piercing and slashing damage respectively.",
+    "most_powerful_ability": "Fascinating Purr, which can incapacitate opponents and compel them to move towards it.",
+    "equipment": null,
+    "senses": "Possesses Keen Smell, granting it advantage on Perception checks based on scent.",
+    "skills": "Has high Stealth and Perception skills, making it adept at avoiding detection and spotting hidden creatures.",
+    "additional_information": [
+        "Can imbuing spells without expending spell slots for clerics and paladins.",
+        "Capable of casting guidance at will.",
+        "Can charm humanoids within a 30-foot range with its Fascinating Purr ability.",
+        "Excels in social interactions due to high Charisma.",
+        "Can enhance its agility using the Cat's Grace spell."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast guidance at will, charm person and cure wounds three times per day, and enhance ability once per day (Cat's Grace).",
+    "test_queries": [
+        "charming temple cat",
+        "agile magic companion",
+        "supportive spellcasting cat",
+        "feline protector of Bastet",
+        "cat with enchanting purr"
+    ]
+}

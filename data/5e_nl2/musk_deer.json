@@ -1,0 +1,50 @@
+{
+    "name": "Musk Deer",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "tiny",
+        "musk"
+    ],
+    "adjectives": [
+        "agile",
+        "evasive",
+        "fragile"
+    ],
+    "description": "The Musk Deer is a tiny creature known for its remarkable agility and ability to emit a potent musk. It has a slender build with notable dexterity.",
+    "memorable": "Unique ability to emit a potent musk that affects nearby creatures, creating tactical advantages.",
+    "goals": "Primarily to scout and evade predators while using its musk for defense.",
+    "relations": "May encounter other small woodland creatures or larger predators in its environment.",
+    "environment": "Typically found in wooded areas or forests.",
+    "strengths": "Highly agile with the ability to dash as a bonus action and use musk to hinder opponents.",
+    "weaknesses": "Vulnerable due to low Constitution and Intelligence scores, making it prone to control.",
+    "attacks": "Bite attack dealing 6 piercing damage, effective mainly for self-defense.",
+    "most_powerful_ability": "Musk ability can poison creatures nearby and give others advantage on tracking.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 12.",
+    "skills": "Proficient in perception, allowing it to notice threats.",
+    "additional_information": [
+        "Condition immunities include poisoned.",
+        "Can reapply musk ability after a short or long rest.",
+        "Excels in evasion rather than direct confrontation.",
+        "Not a primary attacker due to low Strength.",
+        "Uses mobility to create tactical advantages."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny evasive deer with musk ability",
+        "agile forest creature that poisons opponents",
+        "small beast that uses scent for evasion",
+        "woodland creature that emits pungent musk",
+        "quick deer known for escaping predators"
+    ]
+}

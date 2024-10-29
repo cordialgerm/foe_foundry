@@ -1,0 +1,25 @@
+{
+    "name": "Gnoll",
+    "queries": [
+        {
+            "query": "hyena-like humanoid with an aggressive nature that attacks in packs",
+            "variant": "humanoid with hyena features that is aggressive and attacks in groups"
+        },
+        {
+            "query": "medium creature with darkvision that wields a spear",
+            "variant": "medium-sized monster that has darkvision and uses a spear"
+        },
+        {
+            "query": "brutal humanoid known for savage combat and taunting abilities",
+            "variant": "savage humanoid famous for its brutal fighting style and taunting skills"
+        },
+        {
+            "query": "medium gnoll known for teamwork in combat and heightened smell",
+            "variant": "medium gnoll famous for its combat teamwork and improved smell abilities"
+        },
+        {
+            "query": "bloodthirsty creature with Pack Tactics that serves dark gods",
+            "variant": "creature that is bloodthirsty, has Pack Tactics, and worships dark deities"
+        }
+    ]
+}

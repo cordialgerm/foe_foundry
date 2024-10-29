@@ -1,0 +1,50 @@
+{
+    "name": "Giant Wasp",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 25,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "10 ft. walk, 50 ft. fly",
+    "role": "Skirmisher",
+    "tags": [
+        "insect",
+        "flying",
+        "poison"
+    ],
+    "adjectives": [
+        "agile",
+        "venomous",
+        "threatening"
+    ],
+    "description": "The Giant Wasp is a medium-sized insect with a streamlined body and sharp stinger, showcasing a yellow and black coloration common in aggressive species.",
+    "memorable": "Possesses a venomous sting that can paralyze foes and emit pheromones to enhance allies' attacks.",
+    "goals": "To ambush prey and incapacitate foes with its venomous sting.",
+    "relations": "Can be encountered along with other wasps, as its pheromone ability boosts their effectiveness.",
+    "environment": "Typically found in wooded or overgrown areas, where it can utilize its flying ability to evade threats.",
+    "strengths": "High agility and the ability to paralyze targets with poison.",
+    "weaknesses": "Very low Intelligence and Charisma, making it mentally inept and vulnerable in social situations.",
+    "attacks": "Uses a venomous sting that deals piercing and poison damage, capable of incapacitating targets.",
+    "most_powerful_ability": "Assailing Pheromone, which enhances allies' attack rolls after taking damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in Stealth, allowing it to ambush unsuspecting prey.",
+    "additional_information": [
+        "Pheromone ability enhances allies' combat capabilities",
+        "Can paralyze prey upon poisoning",
+        "Relatively durable for its challenge rating"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "venomous insect that flies quickly",
+        "poisonous stinging insect in the woods",
+        "agile insect that paralyzes with a sting",
+        "insect that boosts allies' attack rolls",
+        "yellow and black dangerous flying creature"
+    ]
+}

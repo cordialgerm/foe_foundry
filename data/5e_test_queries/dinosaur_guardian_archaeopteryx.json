@@ -1,0 +1,25 @@
+{
+    "name": "Guardian Archaeopteryx",
+    "queries": [
+        {
+            "query": "small dinosaur-like creature that can fly and uses poison attacks",
+            "variant": "small flying dinosaur creature that uses poison in attacks"
+        },
+        {
+            "query": "nimble beast that has a beak attack and supports its allies with poison",
+            "variant": "agile beast with beak attacks that supports allies using poison"
+        },
+        {
+            "query": "flying creature with resistance to poison that understands Common",
+            "variant": "flying beast with poison resistance that understands Common language"
+        },
+        {
+            "query": "Guardian Archaeopteryx abilities including flyby and magic resistance",
+            "variant": "abilities of Guardian Archaeopteryx like flyby and magic resist"
+        },
+        {
+            "query": "creature with high dexterity and low intelligence that can be poisoned",
+            "variant": "beast with low intelligence but high dexterity that can be poisoned"
+        }
+    ]
+}

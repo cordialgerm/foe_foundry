@@ -1,0 +1,25 @@
+{
+    "name": "Young Imperial Dragon",
+    "queries": [
+        {
+            "query": "large neutral dragon that breathes lightning and can swim",
+            "variant": "neutral large dragon that swims and breathes lightning"
+        },
+        {
+            "query": "aquatic dragon with innate spellcasting and high hit points",
+            "variant": "dragon that can cast spells and has a lot of hit points living in water"
+        },
+        {
+            "query": "Young Imperial Dragon features, including amphibious ability and strong Constitution",
+            "variant": "features of the Young Imperial Dragon, like its strong Constitution and ability to breathe both air and water"
+        },
+        {
+            "query": "dragon immune to lightning with good perception and combat abilities",
+            "variant": "dragon that is immune to lightning and has great perception and strong combat skills"
+        },
+        {
+            "query": "creature that can communicate in Draconic and uses multiattack",
+            "variant": "creature that speaks Draconic and attacks multiple times"
+        }
+    ]
+}

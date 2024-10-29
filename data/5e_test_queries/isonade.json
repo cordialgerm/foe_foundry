@@ -1,0 +1,25 @@
+{
+    "name": "Isonade",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster that controls weather",
+            "variant": "gargantuann water monster that can control weather"
+        },
+        {
+            "query": "massive sea creature immune to cold damage",
+            "variant": "huge ocean monster that is immune to cold"
+        },
+        {
+            "query": "monstrosity that can swallow smaller creatures",
+            "variant": "monster that can engulf smaller enemies"
+        },
+        {
+            "query": "creature with powerful bite attack and tail slap",
+            "variant": "monster with strong bite and tail attack"
+        },
+        {
+            "query": "aquatic beast with high strength and magical resistance",
+            "variant": "water creature with great strength and resist magic"
+        }
+    ]
+}

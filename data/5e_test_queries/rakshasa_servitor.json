@@ -1,0 +1,25 @@
+{
+    "name": "Rakshasa, Servitor",
+    "queries": [
+        {
+            "query": "deceptive fiend that can read minds and has magic immunity",
+            "variant": "fiend that reads minds, has immune to magic and is cunning"
+        },
+        {
+            "query": "medium-sized monster with protective instincts and charisma-based spells",
+            "variant": "monster with charisma spells and instincts for protection that is medium in size"
+        },
+        {
+            "query": "lawful evil creature that uses poison and protects allies",
+            "variant": "creature that is evil and lawful, uses poison and guards allies"
+        },
+        {
+            "query": "Rakshasa with darkvision that attacks with a dagger",
+            "variant": "darkvision serving Rakshasa attacks using a dagger"
+        },
+        {
+            "query": "creature vulnerable to magic weapons used by good-aligned beings",
+            "variant": "being that is weak against magical weapons wielded by good"
+        }
+    ]
+}

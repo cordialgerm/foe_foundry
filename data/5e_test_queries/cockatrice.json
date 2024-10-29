@@ -1,0 +1,25 @@
+{
+    "name": "Cockatrice",
+    "queries": [
+        {
+            "query": "small dragon-like creature with a petrifying bite",
+            "variant": "small draconian creature that has a bite attack which petrifies"
+        },
+        {
+            "query": "cockatrice habitat in caves and swamps",
+            "variant": "habitation of cockatrice found in caves and marshlands"
+        },
+        {
+            "query": "monster with petrification ability that lives in forests",
+            "variant": "creature that can petrify and resides in wooded areas"
+        },
+        {
+            "query": "flying monster with low strength and petrifying gaze",
+            "variant": "aerial creature with weak physical power and stone-turning stare"
+        },
+        {
+            "query": "cockatrice attributes low intelligence and high dexterity",
+            "variant": "cockatrice has low mental capability but good agility stats"
+        }
+    ]
+}

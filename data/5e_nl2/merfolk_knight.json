@@ -1,0 +1,48 @@
+{
+    "name": "Merfolk Knight",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim 40 ft., walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Aquatic",
+        "Knight",
+        "Support"
+    ],
+    "adjectives": [
+        "amphibious",
+        "brave",
+        "combat-capable"
+    ],
+    "description": "The Merfolk Knight is a humanoid adorned in robust armor, skilled both underwater and on land. It wields a trident with grace and can inspire its allies.",
+    "memorable": "Its ability to inspire allies in battle makes it a unique supporter, while its amphibious nature allows versatility in various environments.",
+    "goals": "To protect its aquatic home and support allies in combat.",
+    "relations": "Commonly found alongside other merfolk or aquatic creatures, potentially serving aquatic deities.",
+    "environment": "Typically resides in oceanic or freshwater environments.",
+    "strengths": "Excellent in melee and ranged combat, particularly in aquatic settings; can inspire allies.",
+    "weaknesses": "Vulnerable to ranged attacks if not positioned wisely.",
+    "attacks": "Employs a multiattack with its trident, dealing piercing damage with melee and ranged options.",
+    "most_powerful_ability": "Knightly Inspiration, which enhances the combat capabilities of nearby allies for one minute.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 30 feet, allowing it to see in dimly lit environments.",
+    "skills": "Has skilled proficiency in athletics and perception, enabling effective movement and awareness.",
+    "additional_information": [
+        "Amphibious nature allows breathing in both air and water",
+        "Advantage on saving throws against being frightened",
+        "Can make a trident attack as a bonus action"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "brave knight that can swim",
+        "aquatic creature with combat skills",
+        "merfolk knight inspires allies in battle",
+        "combat-ready merfolk in armor",
+        "amphibious knight supports its team"
+    ]
+}

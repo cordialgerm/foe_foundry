@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Leech",
+    "queries": [
+        {
+            "query": "mechanical predatory creature that drains health",
+            "variant": "predatory machine that sucks health from its prey"
+        },
+        {
+            "query": "stealthy construct with a dangerous bite attack",
+            "variant": "construct that can bite stealthily and is dangerous"
+        },
+        {
+            "query": "creature that can\u2019t be poisoned and drains life",
+            "variant": "being immune to poison and capable of draining life energy"
+        },
+        {
+            "query": "Clockwork Leech abilities concerning stealth and damage",
+            "variant": "abilities of Clockwork Leech in stealth and its damage dealing"
+        },
+        {
+            "query": "artificial monster with resistance to magical effects",
+            "variant": "magical resistant artificial creature"
+        }
+    ]
+}

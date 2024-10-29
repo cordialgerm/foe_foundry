@@ -1,0 +1,25 @@
+{
+    "name": "Thorned Sulfurlord",
+    "queries": [
+        {
+            "query": "huge evil fiend with high damage immunity and cold vulnerability",
+            "variant": "huge fiendish monster that's evil and immune to fire but vulnerable to cold"
+        },
+        {
+            "query": "fiend that uses fire damage and makes terrain difficult",
+            "variant": "fiendish creature that deals fire damage and turns ground into difficult terrain"
+        },
+        {
+            "query": "creature that senses evil beings and can communicate telepathically",
+            "variant": "monster that can sense evil creatures and speaks through telepathy"
+        },
+        {
+            "query": "thorned monster with powerful melee attack and special fire abilities",
+            "variant": "thorny creature that has strong melee attacks and effective fire abilities"
+        },
+        {
+            "query": "monster that doesn't like cold damage and has truesight",
+            "variant": "creature weak to cold that's also able to see using truesight"
+        }
+    ]
+}

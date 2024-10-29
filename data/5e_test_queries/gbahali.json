@@ -1,0 +1,25 @@
+{
+    "name": "Gbahali",
+    "queries": [
+        {
+            "query": "huge beast with excellent stealth in natural environments",
+            "variant": "huge animal with great stealth in natural surroundings"
+        },
+        {
+            "query": "strong creature that can grapple and restrain its prey",
+            "variant": "powerful monster that grapples and restrains its targets"
+        },
+        {
+            "query": "beast that blends into its surroundings and attacks quickly",
+            "variant": "creature that camouflages well and strikes rapidly"
+        },
+        {
+            "query": "agile monster with high hit points and natural armor",
+            "variant": "quick beast with a lot of hit points and natural protection"
+        },
+        {
+            "query": "formidable monster known for its bite and claw attacks",
+            "variant": "intimidating creature recognized for its bite and claw strikes"
+        }
+    ]
+}

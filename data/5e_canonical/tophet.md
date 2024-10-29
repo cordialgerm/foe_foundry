@@ -1,6 +1,8 @@
 <MonsterName/>Tophet</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>161</HP>
 <summary>The Tophet is a formidable Huge Construct with a neutral evil alignment. Designed as a vessel of destruction, it stands out in combat due to its high Armor Class of 16 and a significant pool of hit points totaling 161. This creature excels in both offensive and defensive capabilities, making it a challenging opponent for adventurers. Its most notable strengths are its fire resistance and immunity to numerous conditions such as being charmed or frightened. However, its low Intelligence score of 6 indicates a lack of strategic thinking and adaptability in battles. Players must be cautious when engaging a Tophet, as its devastating fire attacks can quickly turn the tide of combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ It also possesses a "Gout of Flame" ability that can be used every 5 to 6 rounds
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tophet
 
 *Huge* *Construct* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Slam:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage plus 7 (2d6) fire damage, and the target is grappled (escape DC 16) if it is a Large or smaller creature.
 - **Burning Belly:** The tophet makes one Slam attack against a target it is grappling as it shoves the creature into its open, flame-filled belly. If the attack hits, the target is forced into the tophet’s burning belly, and the grapple ends. While inside the belly, the target is restrained, has three-quarters cover against attacks and other effects outside the belly, and it takes 14 (4d6) fire damage at the start of each of its turns. A creature, including the target, can take its action to pull the target free from the belly by succeeding on a DC 16 Strength check. The creature making the attempt takes 7 (2d6) fire damage.
 - **Gout of Flame (Recharge 5–6):** Flames erupt on a point the tophet can see within 100 feet of it. Each creature within 10 feet of that point must make a DC 16 Dexterity saving throw, taking 35 (10d6) fire damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

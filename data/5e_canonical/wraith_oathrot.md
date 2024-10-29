@@ -1,6 +1,8 @@
 <MonsterName/>Wraith, Oathrot</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Oathrot Wraith is a Medium undead creature with a neutral evil alignment, making it a formidable opponent in combat. With an Armor Class of 13 and 52 hit points, this wraith is capable of dealing significant damage while having notable resistances. It is primarily characterized by its ability to manipulate the oaths of living creatures, cursing them and imposing penalties on their ability to maintain concentration and perform proficient actions. The wraith can fly at a speed of 60 feet, allowing it to navigate the battlefield effectively while remaining immune to various damage types. However, it is vulnerable to radiant damage and suffers a disadvantage in sunlight, which can be exploited by clever players. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Oathrot Wraith can utilize its "Life Drain" melee weapon attack, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Wraith, Oathrot
 
 *Medium* *Undead* *neutral evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Life Drain:** Melee Weapon Attack: +5 to hit, 5 ft., one creature,. 20 (4d8+2) necrotic. The target must make DC 13 Con save or its hp max is reduced by amount equal to damage taken. Reduction lasts until target finishes long rest. Target dies if this reduces its hp max to 0.
 
 
+</statblock>
 
 

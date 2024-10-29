@@ -1,0 +1,25 @@
+{
+    "name": "Chill Haunt",
+    "queries": [
+        {
+            "query": "undead creature with cold damage abilities and incorporeal movement",
+            "variant": "undead monster that has cold damage powers and can move through objects"
+        },
+        {
+            "query": "ghostly monster immune to fire and necrotic damage with life-draining attacks",
+            "variant": "spooky creature that is immune to fire and necrotic damage while draining life from opponents"
+        },
+        {
+            "query": "medium-sized cold-themed undead that can bypass physical barriers",
+            "variant": "medium cold-themed undead creature that moves through barriers"
+        },
+        {
+            "query": "creature that uses Shivering Touch and heals from fire damage",
+            "variant": "monster that attacks with Shivering Touch and absorbs fire damage to heal"
+        },
+        {
+            "query": "Chill Haunt's weakness to nonmagical attacks and ability to frighten enemies",
+            "variant": "weakness of Chill Haunt to nonmagical damage and its capacity to scare foes"
+        }
+    ]
+}

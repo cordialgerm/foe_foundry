@@ -1,0 +1,25 @@
+{
+    "name": "Quicksilver Siege Orb",
+    "queries": [
+        {
+            "query": "construct that can shift between forms and has high agility",
+            "variant": "construct with ability to change forms and great agility"
+        },
+        {
+            "query": "small agile monster immune to multiple damage types",
+            "variant": "little quick monster that is immune to various damages"
+        },
+        {
+            "query": "flying construct with bludgeoning immunity and stealth skills",
+            "variant": "flying construct that is immune to bludgeoning and has stealth abilities"
+        },
+        {
+            "query": "mechanical orb that deals slashing damage and avoids opportunity attacks",
+            "variant": "orb that is mechanical and does slashing damage while escaping attacks of opportunity"
+        },
+        {
+            "query": "versatile construct that excels in mobility and crowd control",
+            "variant": "adaptable construct that is great at mobility and controlling crowds"
+        }
+    ]
+}

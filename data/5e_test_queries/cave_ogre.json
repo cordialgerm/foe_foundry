@@ -1,0 +1,25 @@
+{
+    "name": "Cave Ogre",
+    "queries": [
+        {
+            "query": "large giant with high strength that recovers from conditions in combat",
+            "variant": "big giant with strong muscles that heals from effects during battles"
+        },
+        {
+            "query": "ogre that attacks with a greatclub and has low dexterity",
+            "variant": "ogre using a big club to hit and has poor agility"
+        },
+        {
+            "query": "Cave Ogre special ability of Elite Recovery and its bludgeoning damage attacks",
+            "variant": "Cave Ogre ability Elite Recovery and its club damage strikes"
+        },
+        {
+            "query": "darkvision giant that can speak Common and Giant languages",
+            "variant": "giant with night vision who knows Common and Giant talk"
+        },
+        {
+            "query": "strong melee attacker that can push back medium-sized opponents",
+            "variant": "powerful close-range fighter that can shove medium creatures away"
+        }
+    ]
+}

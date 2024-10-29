@@ -1,0 +1,25 @@
+{
+    "name": "Waterkledde",
+    "queries": [
+        {
+            "query": "large fiend that can swim and has a terrifying screech",
+            "variant": "fiendish large creature that swims and screeches frightfully"
+        },
+        {
+            "query": "creature with natural armor that grapples opponents in water",
+            "variant": "monster that has natural armor and can grapple foes underwater"
+        },
+        {
+            "query": "chaotic evil water monster with psychic damage abilities",
+            "variant": "evil chaotic water creature that deals psychic damage"
+        },
+        {
+            "query": "fiend that can change shape and has darkvision",
+            "variant": "creature capable of changing form and possessing darkvision"
+        },
+        {
+            "query": "Waterkledde abilities in combat and its special powers",
+            "variant": "abilities and special powers of the Waterkledde in fights"
+        }
+    ]
+}

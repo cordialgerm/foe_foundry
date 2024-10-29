@@ -1,0 +1,25 @@
+{
+    "name": "Rimepacted Devil",
+    "queries": [
+        {
+            "query": "medium fiend with cold damage abilities and lawful evil alignment",
+            "variant": "medium fiend that deals cold damage and is lawful evil"
+        },
+        {
+            "query": "creature that burrows through snow and has a powerful freezing attack",
+            "variant": "creature that can burrow in snow and uses strong freezing attacks"
+        },
+        {
+            "query": "fiend immune to fire and has a control ability with a cold vortex",
+            "variant": "fiend that is resistant to fire and controls area with cold vortex"
+        },
+        {
+            "query": "Rimepacted Devil's combat tactics including icy claw and frostbolt",
+            "variant": "Rimepacted Devil's fighting strategies involving icy claw and frostbolt"
+        },
+        {
+            "query": "devil that can see in magical darkness and creates hazardous wind zones",
+            "variant": "devil able to see through magical darkness and makes dangerous wind areas"
+        }
+    ]
+}

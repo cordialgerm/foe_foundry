@@ -1,0 +1,25 @@
+{
+    "name": "Adult Emerald Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with psionic powers that deals thunder damage",
+            "variant": "big dragon that has psionic powers and does thunder damage"
+        },
+        {
+            "query": "emerald dragon capable of confusion and strong mental attacks",
+            "variant": "green dragon that can confuse foes and has powerful mental attacks"
+        },
+        {
+            "query": "dragon that can fly and has high intelligence and charisma",
+            "variant": "the dragon that flies and possesses great charisma and intelligence"
+        },
+        {
+            "query": "formidable dragon that resists psychic damage and uses telepathy",
+            "variant": "powerful dragon resistant to psychic attacks and able to communicate telepathically"
+        },
+        {
+            "query": "huge emerald dragon that excels in deception and history skills",
+            "variant": "large emerald dragon that is skilled in deception and history"
+        }
+    ]
+}

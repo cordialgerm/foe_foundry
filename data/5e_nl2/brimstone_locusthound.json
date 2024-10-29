@@ -1,0 +1,51 @@
+{
+    "name": "Brimstone Locusthound",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "monstrosity",
+        "ambush",
+        "area control"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "disruptive"
+    ],
+    "description": "The Brimstone Locusthound has a smoky appearance, surrounded by a dense aura that obscures vision around it.",
+    "memorable": "Its Smoky Aura can blind opponents, dictating the flow of battle.",
+    "goals": "To ambush prey and control the battlefield with its smoke.",
+    "relations": "Likely to be encountered with other chaotic creatures in tumultuous environments.",
+    "environment": "Chaotic areas, possibly near battlefields or environments where smoke can obscure vision.",
+    "strengths": "Exceptional physical abilities and the unique capability to blind and control opponents.",
+    "weaknesses": "Very low intelligence and charisma, making it ineffective in strategic or social encounters.",
+    "attacks": "Can make two claw attacks dealing slashing damage or use Sticky Spittle to attack from a distance and potentially restrain.",
+    "most_powerful_ability": "Smoky Aura creates heavily obscured areas that blind enemies and force them to fail saving throws.",
+    "senses": "Has blindsight up to 10 feet, allowing it to sense creatures within close range despite its low perception.",
+    "skills": null,
+    "additional_information": [
+        "Can deactivate Smoky Aura at the start of each turn for strategic advantage.",
+        "Sticky Spittle can restrain targets, increasing battlefield control.",
+        "Smoky Haze grants it protection from ranged attacks.",
+        "Robust constitution provides decent durability in combat.",
+        "Operates effectively as an ambush predator in chaotic environments."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature with smoky aura that blinds enemies",
+        "ambush predator that controls battle atmosphere",
+        "monster that can fly and uses acid attacks",
+        "chaotic creature with powerful melee strikes",
+        "monster that obscures vision and restrains targets"
+    ]
+}

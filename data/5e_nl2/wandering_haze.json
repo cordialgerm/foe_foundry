@@ -1,0 +1,51 @@
+{
+    "name": "Wandering Haze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 170,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "5 feet on the ground, 40 feet flying",
+    "role": null,
+    "tags": [
+        "ooze",
+        "acid",
+        "psychic"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "corrosive",
+        "cloud-like"
+    ],
+    "description": "The Wandering Haze is a gargantuan ooze resembling a chaotic cloud, capable of engulfing and manipulating its surroundings.",
+    "memorable": "Its Sheath of Chaos action deals psychic damage and disorients enemies, causing them to move randomly.",
+    "goals": "To ambush and damage creatures with its corrosive abilities.",
+    "relations": "Potentially encountered with other oozes or creatures that thrive in foggy environments.",
+    "environment": "Commonly found in damp, fog-laden areas, such as swamps or caves.",
+    "strengths": "Immunity to acid and numerous condition immunities make it a resilient foe.",
+    "weaknesses": null,
+    "attacks": "Performs three Pseudopod melee attacks that deal bludgeoning and acid damage combined.",
+    "most_powerful_ability": "Acidic Cloudburst unleashes a torrential spray of acid affecting a wide area and reducing movement speed.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet for detecting creatures without sight.",
+    "skills": "Has a passive perception of 15, indicating average awareness of its surroundings.",
+    "additional_information": [
+        "Can move through very narrow spaces due to its Cloud Form ability.",
+        "Camouflages as an ordinary cloud when motionless, enhancing its ambush capabilities.",
+        "Does not require sleep, allowing for constant activity."
+    ],
+    "damage_types": [
+        "acid",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan ooze that flies",
+        "acidic fog cloud monster",
+        "psychic damage disorienting ooze",
+        "cloud-like creature with corrosive attacks",
+        "ambush monster in damp environments"
+    ]
+}

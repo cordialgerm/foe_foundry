@@ -1,0 +1,25 @@
+{
+    "name": "Jaculus",
+    "queries": [
+        {
+            "query": "agile small dragon with powerful bite and stealth abilities",
+            "variant": "agile small dragon with strong bite and stealth skills"
+        },
+        {
+            "query": "dragon that can leap great distances and knock opponents prone",
+            "variant": "dragon that can jump far and knock enemies down"
+        },
+        {
+            "query": "cunning dragon with high Dexterity and natural armor",
+            "variant": "sly dragon with excellent Dexterity and natural defense"
+        },
+        {
+            "query": "dragon that resists acid and lightning with exceptional agility",
+            "variant": "dragon that has resistance to acid and lightning with great agility"
+        },
+        {
+            "query": "neutral evil dragon known for speed and tactical melee attacks",
+            "variant": "evil neutral dragon recognized for speed and tactical combat moves"
+        }
+    ]
+}

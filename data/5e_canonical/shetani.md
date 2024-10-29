@@ -1,6 +1,8 @@
 <MonsterName/>Shetani</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>14</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>190</HP>
 <summary>The Shetani is a Medium neutral evil fiend known for its formidable combat prowess and spellcasting abilities. With a high Armor Class of 18, it is well-protected, while its impressive 190 hit points make it a durable adversary in battle. Able to move quickly on foot and even faster while flying, the Shetani can engage or disengage from combat according to its strategy. It poses a significant challenge to adventurers due to its range of powerful attacks, magical resistance, and special abilities. However, it is not invincible; its reliance on spells and physical attacks means it can be disrupted if opponents can overcome its defenses and resistances. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ As a bonus action, the Shetani can "Change Shape," transforming into a Large or 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shetani
 
 *Medium* *Fiend* *neutral evil*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Change Shape:** Transforms into a Large or smaller Beast or Humanoid or back into its true form which is a Fiend. Without wings it loses its flying speed. Its statistics other than size and speed are the same in each form. Items worn/carried transformed as desired by the shetani taking whatever color or shape it deems appropriate. Reverts on death.
 
 
+</statblock>
 
 

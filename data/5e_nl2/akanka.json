@@ -1,0 +1,49 @@
+{
+    "name": "Akanka",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Fey",
+        "Illusion",
+        "Deceptive"
+    ],
+    "adjectives": [
+        "cunning",
+        "chaotic",
+        "manipulative"
+    ],
+    "description": "The Akanka is a medium-sized fey creature known for its chaotic nature and deceptive tactics. It possesses the ability to project an illusory duplicate of itself and utilizes a variety of spells to manipulate its surroundings.",
+    "memorable": "Its ability to create illusory duplicates makes it a tricky opponent, capable of confounding its enemies in combat.",
+    "goals": "Typically seeks to outsmart and manipulate its foes, preferring to engage in cunning tactics over straightforward combat.",
+    "relations": "Can be encountered with other fey creatures or as a servant of a more powerful fey entity.",
+    "environment": "Usually found in forested or mystical areas that complement its fey nature.",
+    "strengths": "Possesses strong mobility with Spider Climb and can manipulate visuals to confuse opponents.",
+    "weaknesses": "Reliance on visual abilities makes it vulnerable to enemies with blindsight or truesight.",
+    "attacks": "Uses a multiattack strategy with a biting attack that can potentially incapacitate its target.",
+    "most_powerful_ability": "Mirrored Carapace, which creates an illusory duplicate to confuse attackers.",
+    "spellcasting": "Can cast illusion spells including Minor Illusion, Silent Image, Major Image, and Hallucinatory Terrain using Charisma as its spellcasting ability.",
+    "additional_information": [
+        "Has the ability to ignore difficult terrain caused by webs with Web Walker.",
+        "Web Sense allows it to locate creatures in contact with the same web, giving it an advantage in ambush situations.",
+        "Can fall back on its unconscious condition immunity during a fight.",
+        "Charisma and Dexterity are its most notable attributes, enhancing both its spellcasting and agility.",
+        "Can project illusions that can significantly alter battlefield perception."
+    ],
+    "damage_types": [],
+    "senses": "Has passive Perception of 12, which is average.",
+    "skills": "Lacks notable skill proficiencies, only has an average passive Perception.",
+    "test_queries": [
+        "deceptive fey monster",
+        "creature with illusion abilities",
+        "chaotic fey with web powers",
+        "cunning fey attacker",
+        "Akanka abilities"
+    ]
+}

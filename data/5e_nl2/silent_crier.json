@@ -1,0 +1,52 @@
+{
+    "name": "Silent Crier",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "fiend",
+        "psychological",
+        "control"
+    ],
+    "adjectives": [
+        "silent",
+        "haunting",
+        "chilling"
+    ],
+    "description": "A medium-sized fiend that appears as an ominous presence, focused on psychological and area control during combat.",
+    "memorable": "Possesses unique abilities like the Bell Toll that disrupts battlefield dynamics and instills fear.",
+    "goals": "To control the battlefield, instill fear in enemies, and protect its territory through psychological tactics.",
+    "relations": "Could be found alongside other fiends or dark creatures, possibly serving a greater evil entity.",
+    "environment": "Often encountered in dark, eerie locations where it can leverage its psychological tactics.",
+    "strengths": "Has damage resistances to cold, fire, lightning, and psychic attacks along with several condition immunities.",
+    "weaknesses": "Limited mobility with a walking speed of only 30 feet, potentially restricting its positioning in combat.",
+    "attacks": "Utilizes Mega Slam attacks combined with its Bell Toll abilities to deal damage and control enemies in area.",
+    "most_powerful_ability": "Bell Toll, which can stun, damage, deafen, or frighten groups of enemies within its range.",
+    "senses": "Has blindsight extending 120 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Displays a keen awareness with a perception skill of +4.",
+    "additional_information": [
+        "Immunity to being blinded, charmed, deafened, frightened, and poisoned.",
+        "Can perform a Multiattack with both Slam attacks and Bell Toll in the same turn.",
+        "Has a haunting presence with abilities like Endless Ringing that disrupt verbal spellcasting.",
+        "Broken Silence ensures Bell Toll effects impact all creatures, regardless of hearing status.",
+        "Thrives in dark environments where it can invoke fear and control its foes."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend with fear and control abilities",
+        "monster that disrupts spellcasting with sound",
+        "creature that stuns enemies with a bell",
+        "medium-sized fiend that instills fear",
+        "psychological monster with area control tactics"
+    ]
+}

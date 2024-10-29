@@ -1,6 +1,8 @@
 <MonsterName/>Junk Shaman</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>12</AC>
+<HP/>42</HP>
 <summary>The Junk Shaman is a small humanoid creature that operates within a lawful neutral framework. It has a Challenge Rating of 2, indicating it is suitable for a party of adventurers at lower levels, having a total of 42 hit points derived from 12d6. The Junk Shaman is characterized by its unique ability to create magical junk armor, significantly bolstering its defense, which can increase its Armor Class to 15. While it has relatively low strength and charisma scores, its dexterity and wisdom are above average, allowing it to be agile in combat and proficient in certain skills. Its reliance on pack tactics can make it formidable when surrounded by allies, though it does struggle in direct sunlight due to its sunlight sensitivity, which imposes disadvantages on its attacks and perception checks.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Additionally, the Junk Shaman can unleash a Flame Jet as a ranged spell attack w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Junk Shaman
 
 *Small* *Humanoid* *lawful neutral*
@@ -66,5 +69,6 @@ Source: 5e_artisinal_monsters
 - **Flame Jet:** Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 7 (2d6) fire damage. If the target is a creature or flammable object that isn't being worn or carried, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the start of each of its turns.
 
 
+</statblock>
 
 

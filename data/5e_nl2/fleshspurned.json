@@ -1,0 +1,51 @@
+{
+    "name": "Fleshspurned",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "necrotic"
+    ],
+    "adjectives": [
+        "confusing",
+        "debilitating",
+        "chaotic"
+    ],
+    "description": "A spectral undead creature with an eerie presence, possessing oversized teeth and the ability to fly without walking.",
+    "memorable": "It thrives on causing confusion and can turn its enemies ghostly, making them susceptible to its attacks.",
+    "goals": "To disrupt opponents and weaken them by causing chaos and confusion in combat.",
+    "relations": "Can be encountered alongside other undead creatures.",
+    "environment": "Typically found in dark or haunted areas, often where the undead gather.",
+    "strengths": "Advantage on attacks against incorporeal undead; significant necrotic damage output.",
+    "weaknesses": "Very low Strength makes it weak in direct melee confrontations.",
+    "attacks": "Phantasmal Bite deals necrotic damage and can cause targets to become ghostly, while Chatter confuses enemies within range.",
+    "most_powerful_ability": "Ghost Eater, which allows it to gain temporary hit points by defeating other undead.",
+    "senses": "Has a passive perception of 14, reflecting its awareness of threats.",
+    "skills": "Proficient in stealth and perception, enhancing its capabilities as a stealthy foe.",
+    "additional_information": [
+        "Immune to necrotic and poison damage.",
+        "Can move through objects as if difficult terrain, risking force damage.",
+        "Resilient against many conditions, making it hard to disable.",
+        "Attacks lead to confusion or ghostly effects on targets.",
+        "Uses confusion tactics to disrupt enemy strategies."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that confuses enemies",
+        "flying monster with ghostly abilities",
+        "stealthy undead that deals necrotic damage",
+        "creature that sustains itself through chaos",
+        "monster with oversized teeth that causes confusion"
+    ]
+}

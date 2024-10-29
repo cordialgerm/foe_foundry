@@ -1,0 +1,52 @@
+{
+    "name": "Corpselight Moth",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 136,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "15 ft. walking, 15 ft. climbing, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "flying",
+        "radiant"
+    ],
+    "adjectives": [
+        "radiant",
+        "mobile",
+        "predatory"
+    ],
+    "description": "A large moth with the ability to emit bright light from its abdomen, showcasing distinct wings and a sturdy body.",
+    "memorable": "Can create difficult terrain and emits a magical wind that deals radiant damage, knocking enemies prone.",
+    "goals": "Predatory behavior, attacking foes while supporting allies by illuminating the area and providing resistance.",
+    "relations": "May be encountered alongside other radiant or predatory creatures.",
+    "environment": "Typically found in places where it can fly freely, often in environments with low light.",
+    "strengths": "High Dexterity enhances evasion and attack capabilities, and it deals radiant damage.",
+    "weaknesses": "Low Intelligence and Charisma hinder cognitive tasks and social interactions.",
+    "attacks": "Multiattack capabilities with a Proboscis that inflicts both piercing and radiant damage.",
+    "most_powerful_ability": "Radiant Wind releases a magical wind dealing significant area damage and knocking enemies prone.",
+    "equipment": null,
+    "senses": "Has tremorsense to locate creatures within 30 feet even without sight.",
+    "skills": "Possesses keen senses related to smell, giving advantage on perception checks based on scent.",
+    "additional_information": [
+        "Can create difficult terrain through its Downdraft ability.",
+        "Immunity to radiant damage provides an edge against certain foes.",
+        "Illuminates dark areas, enhancing tactical maneuvers.",
+        "Necrotic Dampening ability provides ally support against necrotic threats.",
+        "Spider Climb allows it to traverse difficult surfaces easily."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large glowing moth that deals radiant damage",
+        "flying beast with tough natural armor",
+        "predatory moth that creates difficult terrain",
+        "moth that knocks enemies prone with wind",
+        "radiant creature that supports allies"
+    ]
+}

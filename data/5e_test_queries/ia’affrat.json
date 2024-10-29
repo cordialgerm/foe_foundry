@@ -1,0 +1,25 @@
+{
+    "name": "Ia\u2019Affrat",
+    "queries": [
+        {
+            "query": "large fiend with telepathic powers living in darkness",
+            "variant": "big fiend that has telepathic abilities and dwells in dark places"
+        },
+        {
+            "query": "intelligent fiend that is vulnerable to cold damage and excels in manipulation",
+            "variant": "smart fiend that is weak against cold attacks and is skilled at manipulation"
+        },
+        {
+            "query": "cunning swarm fiend known for its dark smoke and powerful magical abilities",
+            "variant": "sly swarm fiend recognized for its cloud of dark smoke and strong magical powers"
+        },
+        {
+            "query": "manipulative monster with high charisma living in a dark environment",
+            "variant": "deceptive creature with elevated charisma existing in a shadowy setting"
+        },
+        {
+            "query": "fiend that transforms into a shapeless form and commands swarms of insects",
+            "variant": "fiend able to change into a formless shape and control insect swarms"
+        }
+    ]
+}

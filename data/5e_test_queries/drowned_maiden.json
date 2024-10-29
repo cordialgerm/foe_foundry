@@ -1,0 +1,25 @@
+{
+    "name": "Drowned Maiden",
+    "queries": [
+        {
+            "query": "undead creature with charm abilities and grappling attacks",
+            "variant": "undead being that can charm and grapple"
+        },
+        {
+            "query": "creature that deals psychic damage and reduces strength",
+            "variant": "monster that can lower strength and inflict psychic harm"
+        },
+        {
+            "query": "far-reaching grappler disguised as humanoid",
+            "variant": "long-reaching grappler posing as a humanoid"
+        },
+        {
+            "query": "menacing undead with manipulation abilities and high charisma",
+            "variant": "threatening undead that excels at manipulation and has high charisma"
+        },
+        {
+            "query": "medium undead that uses illusions and has deception tactics",
+            "variant": "medium-sized undead that employs illusions and deceptive strategies"
+        }
+    ]
+}

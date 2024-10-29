@@ -1,6 +1,8 @@
 <MonsterName/>Keelbreaker Crab</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>157</HP>
 <summary>The Keelbreaker Crab is a Huge monstrosity that embodies a versatile threat both in aquatic and terrestrial environments. This creature is particularly known for its impressive durability and the ability to deal significant damage to structures, making it a formidable opponent in both combat and siege scenarios. With a robust Armor Class of 16 and a substantial pool of Hit Points totaling 157, it can sustain significant amounts of damage. The crab excels in grappling enemies with its powerful pincers and may disorient foes with its magical wailing abilities. However, it lacks intelligence and social interaction capabilities, as reflected in its low Intelligence score. The presence of magical figureheads adds an interesting tactical layer, as their destruction can limit the crab's abilities.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Keelbreaker Crab presents a challenging combatant with unique mecha
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Keelbreaker Crab
 
 *Huge* *Monstrosity* *unaligned*
@@ -69,5 +72,6 @@ Each figurehead is an object with AC 15, 20 hp, resistance to bludgeoning and pi
 - **Wail:** As long as at least one if its living figureheads remains intact, the keelbreaker crab can cause the figurehead to wail. Roll a d6 and consult the following table to determine the wail.<br><br>| d6 | Wail |<br>|----|------|<br>| 1-2 | Frightening Wail. Each creature within 60 feet who can hear the crab must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the keelbreaker crab’s Frightening Wail for the next 24 hours. |<br>| 3-4 | Maddening Wail. Each creature within 60 feet who can hear the crab must succeed on a DC 16 Wisdom saving throw or take 18 (4d8) psychic damage. |<br>| 5-6 | Stunning Wail. Each creature within 60 feet who can hear the crab must make a DC 16 Constitution saving throw. On a failure, a creature takes 9 (2d8) thunder damage and is stunned until the end of its next turn. On a success, a creature takes half the damage and isn’t stunned. |
 
 
+</statblock>
 
 

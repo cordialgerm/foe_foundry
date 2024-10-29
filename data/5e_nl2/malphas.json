@@ -1,0 +1,53 @@
+{
+    "name": "Malphas",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft., fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fey",
+        "necrotic",
+        "shadow",
+        "agile"
+    ],
+    "adjectives": [
+        "malevolent",
+        "agile",
+        "necromantic"
+    ],
+    "description": "Malphas is a medium-sized fey creature with formidable physical abilities and magical prowess, embodying a malevolent presence. It boasts exceptional dexterity and strength, giving it good agility and melee capabilities. It's adorned in studded leather armor that provides reasonable protection.",
+    "memorable": "Malphas's weapon attacks are infused with shadows, dealing additional necrotic damage and having the potential to blind foes.",
+    "goals": "Malphas seeks to dominate and undermine its opponents, often utilizing stealth and deception in combat.",
+    "relations": "Malphas might be found alongside other fey creatures or in the service of darker entities, leveraging its unique abilities to achieve its goals.",
+    "environment": "Typically found in shadowy forests, dark magical realms, or places tainted by malevolence.",
+    "strengths": "Showcases exceptional melee combat potential and agility, complemented by magical attack options that inflict necrotic damage.",
+    "weaknesses": "Sunlight sensitivity reduces its combat effectiveness in bright conditions, making it vulnerable during the day.",
+    "attacks": "Uses a Multiattack action to make either long sword attacks that deal slashing and necrotic damage or shadow bolt attacks that inflict necrotic damage.",
+    "most_powerful_ability": "Shadow-Infused Weapons allow weapon attacks to deal significant extra necrotic damage, making each strike doubly deadly.",
+    "equipment": "Equipped with a longsword and studded leather armor.",
+    "senses": "Has a passive perception of 14, indicating capable awareness, but it must operate effectively in dimly lit conditions due to sunlight sensitivity.",
+    "skills": "Possesses good dexterity and wisdom saving throws, enhancing its survivability and perceptiveness in combat.",
+    "additional_information": [
+        "Can retaliate with Shadow Call when hit by ranged attacks.",
+        "Has two attack modes: melee longsword attacks and ranged shadow bolt attacks.",
+        "Ability to inflict blindness on targets hit with two longsword attacks.",
+        "Relies heavily on darkness to maximize its combat efficiency.",
+        "Is a significant threat due to its combination of agility, strength, and necromantic abilities."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadow-infused fey with necrotic attacks",
+        "agile fey creature that relies on shadows",
+        "dark fae known for necrotic damage",
+        "medium creature with sunlight sensitivity and flight",
+        "malevolent fey that blinds its enemies"
+    ]
+}

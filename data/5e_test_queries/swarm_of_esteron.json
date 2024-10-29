@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Esteron",
+    "queries": [
+        {
+            "query": "medium aquatic swarm that can breathe both air and water",
+            "variant": "medium water swarm that breathes air and water"
+        },
+        {
+            "query": "beast swarm with keen sense of smell that engages multiple opponents",
+            "variant": "swarm beast that can smell keenly and fight multiple foes"
+        },
+        {
+            "query": "creature with good dexterity that is immune to being grappled",
+            "variant": "monster with high dexterity immune to grapple"
+        },
+        {
+            "query": "combat swarm that has damage resistance and occupies other creatures' space",
+            "variant": "a swarm that resists damage and shares space with other creatures"
+        },
+        {
+            "query": "medium-sized beast with low intelligence and special biting attack",
+            "variant": "medium beast with poor intelligence and a unique bite attack"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Skeletal Champion",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "fighter",
+        "skeleton"
+    ],
+    "adjectives": [
+        "resilient",
+        "formidable",
+        "relentless"
+    ],
+    "description": "The Skeletal Champion is a strong undead warrior with exceptional strength and dexterity. It wields a longsword and is protected by an armor of bones.",
+    "memorable": "Its ability to retaliate against missed attacks with Shielding Riposte makes it a tactical threat in melee combat.",
+    "goals": "To serve its purpose in combat and protect its allies.",
+    "relations": "Often serves under more powerful undead or necromancers.",
+    "environment": "Graveyards, ruins, and battlefields where it was once a combatant.",
+    "strengths": "High strength and dexterity allow for effective melee combat and good saving throws against physical effects.",
+    "weaknesses": "Vulnerable to bludgeoning damage, which can be exploited by adventurers.",
+    "attacks": "Engages with a longsword for slashing damage and can strike from distance with a heavy crossbow.",
+    "most_powerful_ability": "Shielding Riposte, allowing it to counter and attack enemies that miss their strikes.",
+    "equipment": "Longsword and heavy crossbow.",
+    "senses": "Has darkvision that allows it to see in low-light conditions.",
+    "skills": "It possesses above-average saving throws in Strength, Dexterity, and Constitution.",
+    "additional_information": [
+        "Immunity to poison damage and fatigue.",
+        "Does not require air, food, or sleep due to its undead nature.",
+        "Above-average combat proficiency with two melee attacks per turn.",
+        "Can respond to missed attacks against it or its allies.",
+        "A classic skeletal warrior appearance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead warrior that wields a sword",
+        "skeleton with powerful melee attacks",
+        "resilient undead protector in battle",
+        "monster with shielding counterattack",
+        "skeleton that retaliates against misses"
+    ]
+}

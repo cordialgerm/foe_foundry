@@ -1,0 +1,54 @@
+{
+    "name": "Sprite",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 15,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "10 ft. walking, 40 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "magical",
+        "stealthy",
+        "protector"
+    ],
+    "adjectives": [
+        "tiny",
+        "winged",
+        "playful",
+        "elusive"
+    ],
+    "description": "A tiny, winged fey creature resembling a miniature elf with insect-like wings. Often found in enchanted forests, they are shy, elusive, yet fiercely protective of their homes.",
+    "memorable": "Sprites are excellent judges of character and can sense emotions, making them unique allies or adversaries.",
+    "goals": "To protect nature, its home, and play tricks on intruders.",
+    "relations": "Often found in the company of other fey, they may be allies to forest creatures and guardians of nature.",
+    "environment": "Enchanted forests or glades.",
+    "strengths": "High Dexterity enhances evasiveness and stealth capabilities; magical abilities like Invisibility and Heart Sight lend unique advantages.",
+    "weaknesses": "Extremely fragile in combat with only 2 hit points, making them vulnerable to attacks.",
+    "attacks": "Uses a rapier and shortbow, both dealing piercing and poison damage; capable of applying sleep effects with successful hits.",
+    "most_powerful_ability": "Heart Sight allows the Sprite to read a target's emotional state and intentions, particularly effective against celestials, fiends, and undead.",
+    "equipment": "Rapier and shortbow.",
+    "senses": "Possesses keen perception skills that help it notice hidden threats.",
+    "skills": "Has proficiency in Stealth, allowing it to move undetected effectively.",
+    "additional_information": [
+        "Fey Resilience grants resistance to charmed and unconscious conditions.",
+        "Can speak with beasts and plants as if sharing a language.",
+        "Utilizes Faerie Light to illuminate areas.",
+        "Skilled in evasive maneuvers and quick repositioning.",
+        "Can manipulate emotions and deceive others effectively."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny winged creature that casts invisibility",
+        "playful fey protector of enchanted forests",
+        "stealthy sprite with magical abilities",
+        "small fey that can read emotions",
+        "quick fairy that uses poison in combat"
+    ]
+}

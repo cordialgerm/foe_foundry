@@ -1,0 +1,25 @@
+{
+    "name": "Undead Phoenix",
+    "queries": [
+        {
+            "query": "huge undead creature that can fly and curses opponents",
+            "variant": "big undead monster that flies and can curse its foes"
+        },
+        {
+            "query": "chaotic evil phoenix that has a bilious aura and high hit points",
+            "variant": "evil phoenix with bilious aura and lots of hit points"
+        },
+        {
+            "query": "undead bird that deals slashing and necrotic damage in combat",
+            "variant": "undead avian creature that inflicts slashing and necrotic attacks"
+        },
+        {
+            "query": "resilient undead phoenix that can\u2019t be healed near its aura",
+            "variant": "strong undead phoenix that prevents healing near its aura"
+        },
+        {
+            "query": "creature that resurrects after 24 hours unless killed with radiant damage",
+            "variant": "monster that comes back to life in 24 hours unless slain with radiant"
+        }
+    ]
+}

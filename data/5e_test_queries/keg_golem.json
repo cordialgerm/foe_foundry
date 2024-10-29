@@ -1,0 +1,25 @@
+{
+    "name": "Keg Golem",
+    "queries": [
+        {
+            "query": "medium-sized construct that relies on ale and knocks enemies prone",
+            "variant": "medium construct that needs ale and can knock opponents down"
+        },
+        {
+            "query": "creature immune to poison and psychic damage with relentless physical strength",
+            "variant": "being immune to psychic and poison damage with strong physical abilities"
+        },
+        {
+            "query": "golem with a unique ability to blast ale and reduce speed without ale",
+            "variant": "construct having the unique power to blast ale and slow down without it"
+        },
+        {
+            "query": "creature that can't speak, but understands its creator's language, and has low intelligence",
+            "variant": "being that cannot talk but comprehends its creator\u2019s language and has very low IQ"
+        },
+        {
+            "query": "battlefield construct with magic resistance and a slam attack",
+            "variant": "construct in combat with magic resistances and a melee slam attack"
+        }
+    ]
+}

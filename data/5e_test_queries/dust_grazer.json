@@ -1,0 +1,25 @@
+{
+    "name": "Dust Grazer",
+    "queries": [
+        {
+            "query": "large grotesque aberration that can fly and inflicts poison damage",
+            "variant": "grotesque large flying aberration that deals poison damage"
+        },
+        {
+            "query": "creature with high Constitution that uses tendrils and death spores",
+            "variant": "monster with a strong Constitution that attacks with tendrils and death spores"
+        },
+        {
+            "query": "poison-immune monster that grapples and absorbs smaller creatures",
+            "variant": "monster immune to poison that can grapple and absorb smaller creatures"
+        },
+        {
+            "query": "Dust Grazer abilities and tactics for combat",
+            "variant": "abilities and combat tactics of the Dust Grazer"
+        },
+        {
+            "query": "creature known for its blindsight and poison-based attacks",
+            "variant": "monster recognized for poison-based attacks and blindsight"
+        }
+    ]
+}

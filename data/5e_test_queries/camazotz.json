@@ -1,0 +1,25 @@
+{
+    "name": "Camazotz",
+    "queries": [
+        {
+            "query": "large fiend that can fly and deals fire damage",
+            "variant": "big fiend that flies and does fire damage"
+        },
+        {
+            "query": "chaotic evil creature with the ability to summon bats and fire breath",
+            "variant": "evil chaotic beast that can call bats and has fire breath"
+        },
+        {
+            "query": "powerful monster with high hit points and cold vulnerability",
+            "variant": "strong creature with lots of hit points and weak to cold attacks"
+        },
+        {
+            "query": "fiend with claw and bite attacks that can reduce strength",
+            "variant": "demon that has claw and bite strikes which can weaken strength"
+        },
+        {
+            "query": "Camazotz traits including legendary resistance and heated body ability",
+            "variant": "Camazotz characteristics like legendary resistance and ability Heated Body"
+        }
+    ]
+}

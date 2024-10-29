@@ -1,0 +1,54 @@
+{
+    "name": "Ogre, Rockchewer",
+    "creature_type": "Giant",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "ogre",
+        "melee",
+        "rock"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "massive",
+        "durable"
+    ],
+    "description": "The Rockchewer Ogre is a massive creature with immense physical strength and notable abilities related to stone. It has a high Hit Point total, allowing it to withstand significant damage.",
+    "memorable": "Its ability to deal double damage to stone objects with its bite makes it a unique threat in rocky terrain.",
+    "goals": "Typically seeks to dominate foes in battle and manipulate the rocky environment to its advantage.",
+    "relations": "Often encountered with other giants or ogres; might serve as a minion to a stronger giant.",
+    "environment": "Commonly found in rocky areas or mountainous regions.",
+    "strengths": "Possesses damage resistance to nonmagical bludgeoning, making it tough against standard weaponry.",
+    "weaknesses": "Low Dexterity and mental stats make it easy to hit and less effective in social situations.",
+    "attacks": "Can deliver two powerful Slam attacks or a combination of a Bite attack and a Slam, emphasizing its melee prowess.",
+    "most_powerful_ability": "Stone Chomper allows it to deal double damage to stone structures and objects, adding to its threat in rocky environments.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in low-light areas.",
+    "skills": "Somewhat perceptive with a +1 modifier to Perception, but has a passive Perception score of 9.",
+    "additional_information": [
+        "Capable of ranged attacks by throwing rocks.",
+        "Can use Gravel Spray to control area and deal damage.",
+        "Has strategic abilities that allow for tactical advantages in combat.",
+        "Quick Chew ability recharges its Chew Rock for further damage potential.",
+        "Can catch small rocks hurled at it with its Rock Catching reaction."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge ogre with rock crushing abilities",
+        "powerful melee giant from rocky environments",
+        "ogre that deals double damage to stone",
+        "bruiser creature with high hit points",
+        "giant with area damage through gravel spray"
+    ]
+}

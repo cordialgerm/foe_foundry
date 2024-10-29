@@ -1,0 +1,52 @@
+{
+    "name": "Megapede",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 40 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "monstrosity",
+        "creature",
+        "skirmisher"
+    ],
+    "adjectives": [
+        "large",
+        "venomous",
+        "metal-sensitive"
+    ],
+    "description": "The Megapede is a large, segmented creature capable of grappling foes and delivering toxic stings. It has many legs and a menacing stinger.",
+    "memorable": "Its ability to sense and consume metal makes it particularly dangerous to armored foes.",
+    "goals": "Typically seeks to grapple enemies and consume metal objects.",
+    "relations": "Can be encountered with other scavenger creatures or in areas rich with metal.",
+    "environment": "Typically found in caves or ruins with metal and debris.",
+    "strengths": "Its Metal Sense allows it to detect metal from great distances, making it a strategic hunter.",
+    "weaknesses": "Low intelligence and social skills, making it vulnerable to manipulation tactics.",
+    "attacks": "Bite attack that deals slashing and acid damage, and a stinger attack that poisons foes.",
+    "most_powerful_ability": "Acid Spray that can damage multiple creatures in a line.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect nearby threats without sight.",
+    "skills": "Has low passive Perception, making it less aware of subtle danger.",
+    "additional_information": [
+        "Can grapple foes and deal extra damage to them.",
+        "Acid immunity provides a defensive edge.",
+        "Multiattack option enables it to strike multiple times in a turn.",
+        "Consumes metal objects for strategic advantage.",
+        "Poisoned enemies suffer reduced combat effectiveness."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large venomous creature that senses metal",
+        "monstrosity with poisonous stinger and acid spray",
+        "segment monster that grapples and eats metal",
+        "metal-sensitive creature with strong bite attack",
+        "skirmisher that deals acid damage and can poison"
+    ]
+}

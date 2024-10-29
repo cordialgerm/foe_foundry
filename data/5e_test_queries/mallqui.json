@@ -1,0 +1,25 @@
+{
+    "name": "Mallqui",
+    "queries": [
+        {
+            "query": "medium undead creature with high wisdom and necrotic powers",
+            "variant": "medium undead being with high wisdom and necrotic abilities"
+        },
+        {
+            "query": "lawful neutral monster that regenerates unless hit by radiant damage",
+            "variant": "lawful neutral creature that heals unless it takes radiant damage"
+        },
+        {
+            "query": "creature that can cast spells and has decent physical strength",
+            "variant": "monster that casts spells and possesses good physical strength"
+        },
+        {
+            "query": "undead that drains moisture and causes exhaustion to nearby foes",
+            "variant": "undead creature that drains moisture from nearby enemies causing exhaustion"
+        },
+        {
+            "query": "durable creature vulnerable to water and radiant attacks",
+            "variant": "durable beast weak to radiant and water attacks"
+        }
+    ]
+}

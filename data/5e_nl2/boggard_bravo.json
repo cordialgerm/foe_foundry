@@ -1,0 +1,48 @@
+{
+    "name": "Boggard Bravo",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "amphibious",
+        "stealthy",
+        "mobile"
+    ],
+    "adjectives": [
+        "nimble",
+        "agile",
+        "tactical"
+    ],
+    "description": "The Boggard Bravo is a medium humanoid with amphibious capabilities, featuring a lean, agile build suitable for both land and water combat. It wields a spear and has a long tongue for capturing prey.",
+    "memorable": "The Boggard Bravo's ability to Vaulting Leap distances quickly to gain tactical advantage in combat makes it a unique threat, alongside its versatile Tongue attack for battlefield control.",
+    "goals": "Typically aims to outmaneuver opponents in combat and utilize guerrilla tactics in its natural habitats.",
+    "relations": "May be found among other boggards or amphibious creatures like frogs and toads, potentially working together in skirmishes.",
+    "environment": "Commonly found in wetlands, swamps, and areas surrounding lakes where it can thrive both in water and on land.",
+    "strengths": "Excels in mobility and stealth, able to jump significant distances without provoking attacks. Proficient in blending into surroundings and manipulating the battlefield.",
+    "weaknesses": "Average resilience and lacks high intelligence or wisdom, making it predictable in tactics.",
+    "attacks": "Uses a spear for melee or ranged strikes, a bite for close-range combat, and a long tongue to pull enemies closer or disrupt their positioning.",
+    "most_powerful_ability": "Vaulting Leap allows it to move rapidly across the battlefield and attack with advantage if it lands near an enemy.",
+    "equipment": "A spear suitable for both melee and ranged attacks.",
+    "senses": null,
+    "skills": "Has proficiency in stealth, allowing it to effectively hide and ambush, as well as survival skills for navigating natural terrains.",
+    "additional_information": [
+        "Can breathe both air and water due to its amphibious nature.",
+        "Communicates with frogs and toads, which may provide additional tactical advantages.",
+        "Possesses a Tongue ability that can pull enemies closer, knock them prone, or disarm them."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "amphibious humanoid combatant",
+        "agile swamp fighter",
+        "tactical skirmisher",
+        "nimble wetlands creature",
+        "guerrilla tactics boggard"
+    ]
+}

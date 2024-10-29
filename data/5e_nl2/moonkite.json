@@ -1,0 +1,53 @@
+{
+    "name": "Moonkite",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 93,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 120 ft., hover",
+    "role": "Artillery",
+    "tags": [
+        "celestial",
+        "flying",
+        "radiant"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "protective",
+        "magical"
+    ],
+    "description": "The Moonkite is a large celestial creature that embodies goodness and light, with striking wings and a radiant presence.",
+    "memorable": "It serves as a protector, equipped with various magical abilities, and can teleport to different planes.",
+    "goals": "To guide and protect those in need, using its powers to combat evil.",
+    "relations": "Associated with other celestial beings, often working alongside divine allies.",
+    "environment": "Typically found in celestial realms or areas infused with radiant energy.",
+    "strengths": "High flying speed and mobility, multiple powerful ranged and melee attacks, and strong defenses against magical effects.",
+    "weaknesses": "Does not excel in traditional melee combat; relies on mobility and special abilities.",
+    "attacks": "Can unleash four wing buffet attacks or two radiant arrow attacks, dealing radiant damage.",
+    "most_powerful_ability": "Planar Traveler allows it to teleport itself and a willing rider to another plane of existence.",
+    "senses": "Blindsight up to 120 ft., allowing it to sense its surroundings without sight.",
+    "skills": "Proficient in insight, perception, and religion, showcasing its celestial knowledge and acute awareness.",
+    "additional_information": [
+        "Immune to poison and resistant to fire and radiant damage.",
+        "Advantage on saving throws against spells and magical effects.",
+        "Condition immunities include blinded, exhausted, frightened, and poisoned.",
+        "Magical weapon attacks can bypass defenses of many creatures.",
+        "Ability to ignore difficult terrain and nonmagical restraints."
+    ],
+    "damage_types": [
+        "radiant",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large celestial creature that flies fast",
+        "protector with radiant magic attacks",
+        "moon creature immune to poison",
+        "agile celestial being with teleport ability",
+        "monster that bypasses magical defenses"
+    ]
+}

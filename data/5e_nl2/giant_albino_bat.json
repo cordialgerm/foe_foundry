@@ -1,0 +1,50 @@
+{
+    "name": "Giant Albino Bat",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 80 ft., walk 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "bat",
+        "monstrosity",
+        "predator"
+    ],
+    "adjectives": [
+        "giant",
+        "albino",
+        "fierce"
+    ],
+    "description": "The Giant Albino Bat is a huge, formidable creature distinguished by its pale coloration and significant wingspan. It boasts sharp claws and a strong bite, making it a fearsome predator.",
+    "memorable": "This creature uses its echolocation and keen senses to hunt, making it a relentless predator in its environment.",
+    "goals": "Primarily serves as a dangerous predator, hunting prey in its territory.",
+    "relations": "May be encountered alongside other monstrous predators or in environments rich with prey.",
+    "environment": "Typically found in dark caves or regions where it can find ample prey.",
+    "strengths": "Possesses high strength and dexterity, enabling powerful attacks and good mobility.",
+    "weaknesses": "Low intelligence and charisma limit social interaction and problem-solving capabilities.",
+    "attacks": "Utilizes a multiattack action to deliver a potent bite and powerful claw strikes, capable of grappling targets.",
+    "most_powerful_ability": "Echolocation allows navigation and prey detection in total darkness.",
+    "equipment": null,
+    "senses": "Blindsight enables it to detect prey within 60 feet, enhancing its predatory skills.",
+    "skills": "Keen hearing provides it with an advantage on perceptive checks that rely on sound.",
+    "additional_information": [
+        "Can grapple Large or smaller creatures, restraining them in combat.",
+        "Possesses a strong constitution that aids in damage resistance.",
+        "Grappling with the bat can prevent targets from making attacks.",
+        "Combines agility with ferocity for effective ambush tactics.",
+        "Significant threat level for adventurers in favorable hunting grounds."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fierce giant white bat predator",
+        "huge monster with keen hearing and echolocation",
+        "battling a giant albino bat in dark caves",
+        "predatory bat with powerful bite and claws",
+        "albino monstrosity that hunts using echolocation"
+    ]
+}

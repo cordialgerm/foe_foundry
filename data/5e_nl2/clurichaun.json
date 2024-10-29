@@ -1,0 +1,52 @@
+{
+    "name": "Clurichaun",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "chaotic",
+        "magical"
+    ],
+    "adjectives": [
+        "mischievous",
+        "clever",
+        "unpredictable",
+        "chaotic"
+    ],
+    "description": "The Clurichaun is a tiny fey creature known for its mischievous and unpredictable nature, often serving as an entertainer and trickster.",
+    "memorable": "Its unique ability to use its Charisma to enhance its own Armor Class adds to its resilience, making it an elusive target.",
+    "goals": "To entertain, trick, and manipulate both allies and foes in unpredictable ways.",
+    "relations": "Often found in the company of other fey creatures, likely engaging in mischief together.",
+    "environment": "Typically encountered in enchanted forests or areas with strong fey influence.",
+    "strengths": "Good Charisma-based spellcasting abilities, ability to enhance its own defenses through Clurichaun's Luck, and resistance to magic.",
+    "weaknesses": "Average physical attributes and relies heavily on magical abilities rather than brute strength.",
+    "attacks": "Uses improvised weapons and slam attacks for melee combat, but particularly dangerous with its Bawdy Remark that can incapacitate foes.",
+    "most_powerful_ability": "Bawdy Remark can incapacitate opponents, allowing for control over the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to navigate well in dim light.",
+    "skills": "Skilled in Stealth, capable of sneaking around undetected.",
+    "additional_information": [
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Condition immunities to being frightened or poisoned enhance its survivability.",
+        "Can cast utility spells like mending and purify food and drink at will.",
+        "Has a playful and chaotic personality that can lead to unexpected outcomes.",
+        "Utilizes alcohol as a material component for spellcasting."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast mending and purify food and drink at will; can also cast blur, heroism, and suggestion once per day.",
+    "test_queries": [
+        "tiny mischievous fey creature",
+        "trickster fey with psychic attack",
+        "magical being that loves alcohol",
+        "chaotic creature with spell abilities",
+        "sneaky attacker that can incapacitate"
+    ]
+}

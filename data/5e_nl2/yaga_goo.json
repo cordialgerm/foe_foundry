@@ -1,0 +1,51 @@
+{
+    "name": "Yaga Goo",
+    "creature_type": "Ooze",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 20 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ooze",
+        "necrotic damage",
+        "ambush"
+    ],
+    "adjectives": [
+        "sinister",
+        "elusive",
+        "cunning"
+    ],
+    "description": "The Yaga Goo is a small, amorphous ooze with a sinister nature, known for its agility and deadly attacks.",
+    "memorable": "Its ability to teleport and create hazardous puddles makes it a unique and constant threat in combat.",
+    "goals": "To ambush its foes and spread fear through necrotic damage.",
+    "relations": "Often found alone but can be encountered with other oozes or fey creatures.",
+    "environment": "Typically found in dark, hidden places and ruins.",
+    "strengths": "Immunity to necrotic damage; advantage on attacks against fey creatures; excellent stealth capabilities.",
+    "weaknesses": "Average intelligence and charisma limits its strategic capabilities.",
+    "attacks": "Can make two pseudopod attacks that deal bludgeoning and necrotic damage; uses teleportation to evade attacks.",
+    "most_powerful_ability": "Foul Transit allows it to teleport while inflicting necrotic damage in the area it vacated.",
+    "senses": "Blindsight within 60 feet allows it to perceive surroundings without sight.",
+    "skills": "Proficient in stealth with an impressive +10 modifier.",
+    "additional_information": [
+        "Can squeeze through openings as narrow as 1 inch.",
+        "Ability to poison creatures that enter its created puddles.",
+        "Puddle Splash reaction enables it to teleport and counterattack.",
+        "Forms puddles that remain for a minute or until it is killed.",
+        "Has a strong dexterity score, enhancing its ambush tactics."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sinister agile ooze that teleports",
+        "elusive ooze with deadly necrotic attacks",
+        "small ooze that creates hazardous puddles",
+        "ambush creature with necrotic and bludgeoning damage",
+        "cunning ooze that poisons and evades attacks"
+    ]
+}

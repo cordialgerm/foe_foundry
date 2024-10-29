@@ -1,6 +1,8 @@
 <MonsterName/>Satyr</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (leather armor)</AC>
+<HP/>31</HP>
 <summary>A Satyr is a fey creature with the upper body of a man and the lower body of a goat, complete with horns and hooves. Satyrs are known for their playful, hedonistic nature, often indulging in wine, music, and mischief. They are curious and love to cause harmless trouble for travelers, leading them astray with enchanting pipes or confusing them with illusions. Satyrs are highly charismatic and often use their charm to avoid conflict. However, when threatened, they are quick and nimble fighters, using their horns to ram enemies or fleeing into the safety of the forest.</summary>
 
 <summary>The Satyr is a Medium fey creature known for its mischievous and enchanting nature. With a Challenge Rating of 1/2, it is a relatively low-tier monster, making it suitable for lower-level adventurers seeking to encounter fey magic and whimsical trickery. The Satyr possesses a good range of Dexterity and Charisma, offering it exceptional capabilities in stealth and performance. Its strengths lie in its magical resistance and its ability to charm and incapacitate opponents with its enchanting dance and lullaby. However, its Hit Points are relatively low, making it vulnerable if engaged directly in combat, especially against multiple attackers.</summary>
@@ -43,6 +45,7 @@ Overall, the satyr is a captivating creature that excels in charm and manipulati
 
 Source: 5e_srd
 
+<statblock>
 ## Satyr
 
 *Medium fey, chaotic neutral*
@@ -73,7 +76,8 @@ Source: 5e_srd
 
 ***Shortsword***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
 
-***Shortbow***. *Ranged Weapon Attack:* +5 to hit, range 80/320 ft., one target. *Hit:* 6 (1d6+3) piercing damage.
+***Shortbow***. *Ranged Weapon Attack:* +5 to hit, range 80/320 ft., one target. *Hit:* 6 (1d6+3) piercing damage.</statblock>
+
 
 
 
@@ -81,6 +85,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Satyr
 
 *Medium* *Fey*
@@ -112,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Lullaby:** Each humanoid or giant within 30 feet that can hear the satyr makes a DC 13 Constitution saving throw. On a failure  it falls asleep. It wakes up if a creature uses an action to wake it or if the satyr ends a turn without using its action to continue the lullaby. If a creatures saving throw is successful or the effect ends for it  it is immune to any satyrs Lullaby for 24 hours. This is a magical charm effect.
 
 
+</statblock>
 
 
 
@@ -120,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Satyr
 
 *Medium fey*
@@ -156,5 +163,6 @@ Source: 5e_artisinal_monsters
 	- Overindulge. The satyr’s song is laced with magical enchantments, and the target is forced to dance along with the music. Until the start of the satyr’s next turn, the target is charmed, and its speed is reduced by 10 feet, as it dances uncontrollably.
 	- Unnerve. The satyr’s song and dance turn frightful with heavy stomps, shrill notes, and a rapid, staccato melody. The target is frightened until the end of its next turn.
 
+</statblock>
 
 

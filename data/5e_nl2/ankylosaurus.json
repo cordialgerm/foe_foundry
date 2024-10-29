@@ -1,0 +1,50 @@
+{
+    "name": "Ankylosaurus",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 68,
+    "ac": 15,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "beast",
+        "tank"
+    ],
+    "adjectives": [
+        "massive",
+        "armored",
+        "physically powerful"
+    ],
+    "description": "The Ankylosaurus is a massive beast characterized by its heavy armor, with a notable tail used for attacks.",
+    "memorable": "Its ability to knock opponents prone with its tail attack makes the Ankylosaurus a formidable presence in combat.",
+    "goals": "Often serves to protect its territory or seek food, depending on its environment.",
+    "relations": "May be encountered in the company of other prehistoric creatures or within wild, untamed lands.",
+    "environment": "Usually found in prehistoric or jungle-like environments.",
+    "strengths": "High armor class and hit points make it a durable creature in combat, excelling in physical confrontations.",
+    "weaknesses": "Low intelligence and charisma limit its abilities outside of physical combat, and it has a slower movement speed compared to other creatures.",
+    "attacks": "Relies on a powerful tail attack that deals significant bludgeoning damage and can knock targets prone.",
+    "most_powerful_ability": "Tail attack, which can deal substantial damage and potentially knock targets prone.",
+    "equipment": null,
+    "senses": "Has a passive perception of 11, indicating average perception ability.",
+    "skills": null,
+    "additional_information": [
+        "High strength and constitution scores provide exceptional physical power.",
+        "Remarkably durable, making it a tough opponent to defeat.",
+        "Tail attack has a reach of 10 feet, allowing it to strike targets from a distance.",
+        "Challenge rating of 3 indicates a moderate threat to adventurers.",
+        "With no ability in strategy or tactics, it focuses purely on physical confrontations."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "prehistoric armored dinosaur",
+        "massive tank-like creature",
+        "bludgeoning tail attack monster",
+        "beast with heavy natural armor",
+        "creature that knocks opponents prone"
+    ]
+}

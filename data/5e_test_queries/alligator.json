@@ -1,0 +1,25 @@
+{
+    "name": "Alligator",
+    "queries": [
+        {
+            "query": "medium-sized predator that lives in water and can hold its breath",
+            "variant": "predatory medium beast that can hold its breath underwater and lives in water"
+        },
+        {
+            "query": "creature with a powerful bite that ambushes prey in swamps",
+            "variant": "beast that ambushes prey in swamp and has a strong biting attack"
+        },
+        {
+            "query": "agile alligator that grapples its victims and is unaligned",
+            "variant": "unaligned agile beast that grapples its prey and is known as an alligator"
+        },
+        {
+            "query": "alligator characteristics and abilities in aquatic environments",
+            "variant": "characteristics and skills of an alligator in water habitats"
+        },
+        {
+            "query": "animal with low intelligence that can swim quickly and bite",
+            "variant": "swift swimming creature with a powerful bite and poor intelligence"
+        }
+    ]
+}

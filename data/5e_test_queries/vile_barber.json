@@ -1,0 +1,25 @@
+{
+    "name": "Vile Barber",
+    "queries": [
+        {
+            "query": "small fey creature that uses stealth and causes bleeding",
+            "variant": "small fey monster that uses stealth and inflicts bleeding damage"
+        },
+        {
+            "query": "chaotic evil barber fey known for its deceptive attacks",
+            "variant": "chaotic evil barber fey recognized for its trickster attacks"
+        },
+        {
+            "query": "fey creature with high Dexterity and blood frenzy ability",
+            "variant": "fey monster with high dexterity and blood frenzy skill"
+        },
+        {
+            "query": "vile barber who can teleport and inflicts necrotic damage",
+            "variant": "vile barber that can teleport and deals necrotic damage"
+        },
+        {
+            "query": "magical creature that steals items and causes fear",
+            "variant": "magical creature stealing items and inducing fear"
+        }
+    ]
+}

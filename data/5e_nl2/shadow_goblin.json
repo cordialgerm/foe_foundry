@@ -1,0 +1,52 @@
+{
+    "name": "Shadow Goblin",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 13,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "shadow",
+        "stealth",
+        "trickster"
+    ],
+    "adjectives": [
+        "cunning",
+        "nimble",
+        "sneaky",
+        "evil"
+    ],
+    "description": "The Shadow Goblin is a small, cunning humanoid with excellent agility and stealth capabilities, often found lurking in darkness.",
+    "memorable": "It excels in stealth and ambush tactics, utilizing its Sunlight Sensitivity as a significant vulnerability in brightly lit areas.",
+    "goals": "To ambush foes, steal, and escape undetected.",
+    "relations": "Usually encountered alone or in small groups, possibly related to dark creatures or other goblins.",
+    "environment": "Prefers dark places and shadows, avoiding bright light.",
+    "strengths": "High Dexterity for stealth and evasive maneuvers; abilities to escape or hide enhance survivability.",
+    "weaknesses": "Sunlight Sensitivity makes it vulnerable to bright light, affecting its combat effectiveness.",
+    "attacks": "Uses a kitchen knife for melee or ranged attacks, dealing piercing damage with a quick multiattack strategy.",
+    "most_powerful_ability": "Nimble Escape allows it to evade attacks and reposition on the battlefield effectively.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, providing a significant advantage in dim light conditions.",
+    "skills": "Highly skilled in stealth, with a +5 modifier, enhancing its ability to remain undetected.",
+    "additional_information": [
+        "Immunity to magical sleep effects.",
+        "Advantage on saving throws against being charmed due to Unseelie Blessing.",
+        "Can use Vengeful Jinx to weaken attackers.",
+        "Advantage on Arcana checks related to shadow magic.",
+        "Shadow Camouflage makes it difficult to spot in low light."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small dark creature with stealth",
+        "goblin that thrives in darkness",
+        "shadow creature vulnerable to sunlight",
+        "quick and stealthy kitchen knife user",
+        "nimble humanoid with ambush tactics"
+    ]
+}

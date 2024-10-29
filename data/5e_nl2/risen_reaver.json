@@ -1,0 +1,50 @@
+{
+    "name": "Risen Reaver",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 168,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 feet, agile movement",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "melee",
+        "tracker"
+    ],
+    "adjectives": [
+        "formidable",
+        "relentless",
+        "chaotic"
+    ],
+    "description": "A large, grotesque undead creature wearing studded leather armor, possessing a bladed fist and a terrifying presence.",
+    "memorable": "The ability to absorb nonmagical melee weapons enhances its combat capabilities and adds a layer of strategy.",
+    "goals": "To relentlessly pursue and eliminate living foes.",
+    "relations": "Often encountered alongside other undead creatures.",
+    "environment": "Typically found in battlefields or areas with a high presence of death.",
+    "strengths": "High durability and strength, exceptional mobility, ability to detect life nearby.",
+    "weaknesses": "Low intelligence, wisdom, and charisma, limiting strategic options.",
+    "attacks": "Multiattack with three melee strikes using a bladed fist, dealing considerable slashing damage.",
+    "most_powerful_ability": "The Infused Arsenal allows it to absorb weapons and gain immunity to damage types from those weapons for enhanced attacks.",
+    "equipment": "Studded leather armor.",
+    "senses": "Possesses Blood Sense, allowing it to detect living creatures within 60 feet and track them up to a mile away.",
+    "skills": "Has proficiency in perception, though its perception score is average.",
+    "additional_information": [
+        "Absorbs a weapon if hit by a nonmagical melee attack.",
+        "Can adapt its damage type based on absorbed weapons.",
+        "Does not require air, food, drink, or sleep due to Undead Nature.",
+        "Extremely mobile with the Skitter ability to dash.",
+        "Can absorb up to three nonmagical weapons every 24 hours."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead creature with weapon absorption",
+        "formidable melee attacker that tracks blood",
+        "chaotic evil undead with slashing attacks",
+        "Risen Reaver's blood tracking ability",
+        "undead monster that absorbs melee weapons"
+    ]
+}

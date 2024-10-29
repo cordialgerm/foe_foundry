@@ -1,0 +1,54 @@
+{
+    "name": "Barnyard Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 9,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Defender",
+    "tags": [
+        "golem",
+        "guardian",
+        "construct",
+        "poison"
+    ],
+    "adjectives": [
+        "resilient",
+        "strong",
+        "agricultural",
+        "durable"
+    ],
+    "description": "The Barnyard Golem is a medium-sized construct resembling a rural guardian, built from various agricultural materials. It has a massive form derived from barnyard elements, with a rough texture and an imposing presence.",
+    "memorable": "It can absorb lightning damage to heal itself, making it a unique and resilient combatant in battle.",
+    "goals": "To serve as a guardian or defender in rural settings, protecting its domain from threats.",
+    "relations": "Associated with agricultural settings, it may be found alongside farm animals or in the company of other constructs.",
+    "environment": "Rural or agricultural areas.",
+    "strengths": "Exemplifies high strength, durability, and several immunities to conditions and damage types.",
+    "weaknesses": "Limited agility and intelligence, making it susceptible to cunning and mobile opponents.",
+    "attacks": "Utilizes a multiattack with a powerful bite and a devastating wing slap, also capable of expelling poison in a cone.",
+    "most_powerful_ability": "Chymus Expulsion, which unleashes a cone of poison damage affecting multiple targets.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has an average perception skill, but can be easily distracted.",
+    "additional_information": [
+        "Immune to charm and fear effects.",
+        "Construct nature allows it to operate without basic needs.",
+        "Resistant to nonmagical weapon attacks.",
+        "Can heal itself using lightning damage.",
+        "Magic resistance provides advantage against spells."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agriculture monster with poison attacks",
+        "construct that can absorb lightning damage",
+        "strong barnyard guardian creature",
+        "defender golem in rural environment",
+        "golem that uses poison and bludgeoning attacks"
+    ]
+}

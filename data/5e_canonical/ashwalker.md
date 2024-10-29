@@ -1,6 +1,8 @@
 <MonsterName/>Ashwalker</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>31</HP>
 <summary>The Ashwalker is a Medium-sized undead creature embodying a unique blend of draconic traits and malevolent energy. It is classified as Neutral Evil and has an overall challenge rating of 1, making it a relatively low-level adversary with a distinct threat due to its breath-based abilities. The Ashwalker has moderate resilience, having an Armor Class of 12, and a total of 31 hit points, which allows it to withstand a few hits before being incapacitated. Its strengths lie in its elemental resistances and abilities that deal damage based on the dragon type associated with its death. However, its intelligence and charisma are low, limiting its utility in social interactions and strategic planning. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Ashwalker can make a "Slam" attack, which has a +4 to h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ashwalker
 
 *Medium* *Undead* *Neutral Evil*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 3 (1d6) damage of the type noted in the ashwalker’s Breath Born trait.
 - **Draconic Breath (Recharge 6):** The ashwalker exhales elemental energy in a 15-foot cone. Each creature in the area must make a DC 12 Constitution saving throw, taking 14 (4d6) damage of the type noted in its Breath Born trait on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

@@ -1,0 +1,52 @@
+{
+    "name": "Gnoll Havoc Runner",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "gnoll",
+        "humanoid",
+        "predator",
+        "cunning"
+    ],
+    "adjectives": [
+        "chaotic",
+        "relentless",
+        "tactical",
+        "dangerous"
+    ],
+    "description": "The Gnoll Havoc Runner is a medium-sized, cunning predator clad in a chain shirt. It has a robust build with sharp features, making it an intimidating presence on the battlefield.",
+    "memorable": "Its ability to coordinate with allies and inflict disadvantage on opponents makes it a formidable foe in combat.",
+    "goals": "To hunt and disrupt enemy ranks while maximizing damage with its pack.",
+    "relations": "Often found in packs with other gnolls, working together to overwhelm enemies.",
+    "environment": "Usually resides in wilderness areas and can often be found in groups during skirmishes.",
+    "strengths": "High strength allows for substantial melee damage, and its Pack Tactics ability enhances its attack effectiveness.",
+    "weaknesses": "Relatively low intelligence and charisma, which may limit strategic depth and social interactions.",
+    "attacks": "Utilizes a combination of a bite attack and battleaxe attacks, dealing piercing and slashing damage.",
+    "most_powerful_ability": "Harrying Attacks can impose disadvantage on a target's attack rolls, significantly affecting combat dynamics.",
+    "equipment": "Battleaxe and chain shirt armor.",
+    "senses": "Possesses darkvision up to 60 feet, enhancing its effectiveness in dim light.",
+    "skills": "Proficient in Athletics and Perception, allowing it to excel in physical challenges and identify threats.",
+    "additional_information": [
+        "Uses Lightning Lope for improved mobility during combat.",
+        "Can work effectively with allies to maximize damage output.",
+        "Effective in ambush tactics due to its coordination with pack members.",
+        "Notable for its ability to disrupt enemy actions.",
+        "Embodies the traits of a cunning and persistent predator."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "gnoll skirmisher with pack tactics",
+        "humanoid monster that attacks in packs",
+        "cunning melee fighter in wilderness",
+        "medium-sized chaotic evil predator",
+        "gnoll that inflicts disadvantage on foes"
+    ]
+}

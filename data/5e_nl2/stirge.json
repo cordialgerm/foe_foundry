@@ -1,0 +1,51 @@
+{
+    "name": "Stirge",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 14,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "10 ft. walking, 40 ft. flying",
+    "role": null,
+    "tags": [
+        "bloodsucker",
+        "swarm",
+        "pest"
+    ],
+    "adjectives": [
+        "tiny",
+        "bat-like",
+        "vampiric"
+    ],
+    "description": "A small, bat-like creature with a long, needle-like proboscis used for feeding on blood. It is often found in swamps, forests, or dark caves.",
+    "memorable": "Stirges can swarm, attaching to larger creatures and draining their blood, which can be dangerous despite their small size.",
+    "goals": "To drain blood from living creatures.",
+    "relations": "Often encountered in groups; serves as a minor threat in ecosystems.",
+    "environment": "Swamps, forests, dark caves.",
+    "strengths": "High agility and ability to drain blood from victims.",
+    "weaknesses": "Very low hit points and strength, making them vulnerable to direct attacks.",
+    "attacks": "Uses a proboscis to attach and drain blood, dealing damage over time.",
+    "most_powerful_ability": "Blood Drain allows it to inflict significant damage while attached to larger creatures.",
+    "senses": "Has darkvision with a range of 60 feet, allowing it to see in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Capable of flying at 40 feet, which improves its mobility.",
+        "Drawn to the scent of blood, increasing its chances of ambush.",
+        "Can detach itself after draining a certain amount of blood.",
+        "Can redirect attacks using Reactive Wiggle when attached to prey.",
+        "Typically found in swarms, making them effective in larger numbers."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small blood-draining monster",
+        "tiny creature that drains blood",
+        "bat-like pest known for swarming",
+        "blood-sucking monster in swamps",
+        "vampiric creature with proboscis attack"
+    ]
+}

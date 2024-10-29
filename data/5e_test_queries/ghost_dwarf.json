@@ -1,0 +1,25 @@
+{
+    "name": "Ghost Dwarf",
+    "queries": [
+        {
+            "query": "undead dwarf with flying ability that is weak to sunlight",
+            "variant": "flying undead dwarf that is sensitive to sunlight"
+        },
+        {
+            "query": "medium undead creature that uses necrotic damage in combat",
+            "variant": "medium undead monster that inflicts necrotic damage during battle"
+        },
+        {
+            "query": "creature with aura of defiance that frightens foes",
+            "variant": "monster with defiance aura that can scare enemies"
+        },
+        {
+            "query": "ghostly creature that can pass through walls and has a cursed presence",
+            "variant": "spooky creature able to move through walls and has an ominous aura"
+        },
+        {
+            "query": "evil spirit that can make multiple attacks and weakens opponents",
+            "variant": "malevolent spirit capable of several attacks that diminishes foes"
+        }
+    ]
+}

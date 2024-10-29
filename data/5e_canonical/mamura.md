@@ -1,6 +1,8 @@
 <MonsterName/>Mamura</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Mamura is a small aberration characterized by its neutral evil demeanor and cunningly deceptive abilities. With an armor class of 16, it displays decent defensive capabilities, while its hit points total 112, making it fairly resilient for its size. The Mamura excels in mobility with a walking speed of 30 feet and a flying speed of 20 feet, allowing it to navigate the battlefield effectively. It has a challenge rating of 6, indicating that it poses a moderate threat to a party of adventurers, providing a substantial experience reward when defeated. The creature is highly agile due to its Dexterity score of 18, enabling it to be quite evasive in combat, while its strengths also include good Constitution and Charisma scores. Its primary weaknesses lie in its low Strength and Wisdom stats, which make it less effective in physical confrontations and susceptible to mental and perceptual challenges. What makes the Mamura particularly notable is its array of special abilities that can disrupt spellcasters and enhance its combat performance.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Finally, the Mamura has a bonus action called Shadow Stealth, which allows it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mamura
 
 *Small* *Aberration* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Shadow Stealth:** While in dim light or darkness, the mamura takes the Hide action.
+</statblock>
 
 

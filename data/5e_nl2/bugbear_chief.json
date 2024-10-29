@@ -1,0 +1,51 @@
+{
+    "name": "Bugbear Chief",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "bugbear",
+        "chief",
+        "leader",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "A strong humanoid with a muscular build, capable of dealing substantial melee damage.",
+    "memorable": "Combines brute strength with tactical cunning, making it a dangerous opponent.",
+    "goals": "Seeks to lead and surprise enemies, using ambush tactics.",
+    "relations": "Often leads other bugbears; may command lesser goblinoids.",
+    "environment": "Typically found in forests or caves where they can ambush travelers.",
+    "strengths": "High Strength and Dexterity, capable of significant damage and stealthy movement.",
+    "weaknesses": "Average intelligence and charisma may hinder social interactions.",
+    "attacks": "Melee attacks with a maul, dealing substantial damage; also uses javelins for ranged combat.",
+    "most_powerful_ability": "Move Out allows for strategic repositioning of allies without provoking attacks.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, enabling it to detect hidden enemies.",
+    "skills": "Proficient in athletics and stealth, enhancing its ambush capabilities.",
+    "additional_information": [
+        "Can deal increased damage to surprised foes.",
+        "Uses tactical maneuvers to reposition allies in battle."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong humanoid ambush leader",
+        "bugbear chief with melee attacks and tactics",
+        "cunning stealthy bugbear leader in the forest",
+        "formidable ambusher capable of surprise attacks",
+        "medium humanoid with powerful physical attacks"
+    ]
+}

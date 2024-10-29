@@ -1,6 +1,8 @@
 <MonsterName/>Hag, Brine</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>9</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Brine Hag is a Medium-sized fey creature known for its lawful evil nature. It possesses a remarkable ability to thrive in aquatic environments, with a formidable swimming speed accompanied by spellcasting capabilities. With a high armor class of 16 due to its natural armor, it can withstand significant damage while its health pool of 150 hit points allows it to endure extended encounters. The creature's challenge rating of 9 indicates a powerful foe worth 5,000 experience points. The Brine Hag capitalizes on its strengths through a range of offensive abilities and magical spells while maintaining important resistances, making it a significant threat in both water and combat situations.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Brine Hag is also capable of spellcasting, with Charisma as its spellcasting
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hag, Brine
 
 *Medium* *Fey* *lawful evil*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Spellcasting:** Cha (DC 16) no material components: At will: minor illusion  • 3/day ea: charm person major image1/day: control water
 
 
+</statblock>
 
 

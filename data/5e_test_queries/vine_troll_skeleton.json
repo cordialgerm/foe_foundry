@@ -1,0 +1,25 @@
+{
+    "name": "Vine Troll Skeleton",
+    "queries": [
+        {
+            "query": "large undead creature with regenerative abilities that is bound to a tree",
+            "variant": "large unddead monster that can regenerate and is tied to a tree"
+        },
+        {
+            "query": "skeleton that deals poison damage and has high hit points",
+            "variant": "skeleton who does poison damage and has high hitpoints"
+        },
+        {
+            "query": "undead monster with resistance to nonmagical damage and vulnerabilities to acid",
+            "variant": "undead creature that resists nonmagical damage and has weakness to acid"
+        },
+        {
+            "query": "tough large skeleton with high Strength and multiattack capabilities",
+            "variant": "strong large skeleton that has multiattack and high strength"
+        },
+        {
+            "query": "creature that can regenerate and possesses an impairment against fire attacks",
+            "variant": "monster that regains health and is weak to fire damage"
+        }
+    ]
+}

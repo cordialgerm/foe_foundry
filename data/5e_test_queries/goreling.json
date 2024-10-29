@@ -1,0 +1,25 @@
+{
+    "name": "Goreling",
+    "queries": [
+        {
+            "query": "small undead creature that can multiply in combat",
+            "variant": "small unalive monster that can divide in battle"
+        },
+        {
+            "query": "creature with blindsight that deals extra necrotic damage when in groups",
+            "variant": "monster with 60 feet blindsight that increases necrotic damage in packs"
+        },
+        {
+            "query": "Goreling tactics for overwhelming adventurers",
+            "variant": "Goreling strategy for swarming heroes"
+        },
+        {
+            "query": "undead monster that swarms and splits when attacked",
+            "variant": "unliving creature that multiplies and attacks in groups"
+        },
+        {
+            "query": "creature that is weak in intelligence but strong in numbers",
+            "variant": "monster with low intelligence but powerful in large groups"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Lord of the Hunt",
+    "creature_type": "Fey",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 229,
+    "ac": 18,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "magical",
+        "ranged",
+        "melee"
+    ],
+    "adjectives": [
+        "powerful",
+        "intelligent",
+        "tactical"
+    ],
+    "description": "The Lord of the Hunt is a formidable fey creature with exceptional strength and dexterity, embodying the spirit of the hunt. It typically wields a spear and longbow, utilizing magical weaponry.",
+    "memorable": "Equipped with magical weapon attacks that inflict additional poison damage, it can summon beasts to assist in combat and charm opponents with its hunting horn.",
+    "goals": "To lead hunts and command respect on the battlefield, utilizing strategy to achieve its objectives.",
+    "relations": "Often associated with other fey creatures or beasts, it commands loyalty from summoned animals.",
+    "environment": "Typically found in forested or natural areas where it can effectively manage its hunting endeavors.",
+    "strengths": "Possesses high physical attributes, immunity to cold and poison damage, and legendary resistance enhancing survivability.",
+    "weaknesses": "May struggle against opponents who excel in maneuverability or clever tactics.",
+    "attacks": "Utilizes multiattacks with spear or longbow that can teleport the spear back to its hand, and deals significant poison damage.",
+    "most_powerful_ability": "Huntsman\u2019s Weapons, allowing its magical weapon attacks to inflict an extra 14 poison damage.",
+    "equipment": "Wields a magical spear and longbow.",
+    "senses": "Blindsight up to 10 feet and a high passive perception of 20.",
+    "skills": "Proficient in Athletics, Perception, and Survival, reflecting its connection to nature and the hunt.",
+    "additional_information": [
+        "Immune to conditions such as exhaustion and charmed.",
+        "Can summon a magical Fey mount that shares its resistances and immunities.",
+        "The Call to the Hunt allows charming a creature within 60 feet.",
+        "Resists nonmagical bludgeoning, piercing, and slashing damage from attacks unless made with cold iron.",
+        "Uses Parry reaction to enhance defensive capabilities."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature that commands beasts",
+        "magical creature resembling a hunter",
+        "poison dealing fey with magical weapons",
+        "creature that can charm opponents",
+        "strong tactical fey that leads hunts"
+    ]
+}

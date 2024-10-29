@@ -1,0 +1,50 @@
+{
+    "name": "Boggard Sovereign",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 67,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., swim 40 ft.",
+    "role": "Leader",
+    "tags": [
+        "amphibious",
+        "commanding",
+        "swamp"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactically clever"
+    ],
+    "description": "The Boggard Sovereign is a large humanoid with a commanding presence among other boggards. It exhibits amphibious traits and thrives in aquatic environments.",
+    "memorable": "Its ability to summon frog allies and incite frenzy among boggards makes it a formidable foe in battles.",
+    "goals": "Acts as a leader and tactician among boggards, aiming to control the battlefield and support allied creatures.",
+    "relations": "Other boggards and amphibious creatures, particularly frogs and toads, as it can communicate with them.",
+    "environment": "Swamps and aquatic environments.",
+    "strengths": "Possesses strong physical attributes, good stealth, and skills in intimidation and perception.",
+    "weaknesses": "Moderate speed on land may limit mobility outside water.",
+    "attacks": "Parting Bite attack that deals both piercing and poison damage, with the ability to leap away after the strike.",
+    "most_powerful_ability": "Incite Frenzy allows allies to make additional attacks, significantly escalating combat dynamics.",
+    "equipment": null,
+    "senses": "Has a passive perception of 13, allowing it to detect threats effectively.",
+    "skills": "Skilled in stealth, perception, and intimidation with modifiers of +3.",
+    "additional_information": [
+        "Can breathe both air and water due to its amphibious nature.",
+        "Can summon frog guardians to aid in battle.",
+        "Can communicate with frogs and toads, enhancing its leadership role."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "amphibious swamp creature",
+        "Boggard leader",
+        "combat summoning monster",
+        "aquatic humanoid with frenzy ability",
+        "tactician among amphibians"
+    ]
+}

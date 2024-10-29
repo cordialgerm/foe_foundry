@@ -1,0 +1,25 @@
+{
+    "name": "Ice Borers Swarm",
+    "queries": [
+        {
+            "query": "cold damage creature that thrives in icy environments",
+            "variant": "creature that thrives in cold environments and deals damage through ice"
+        },
+        {
+            "query": "medium elemental that can camouflage as icicles",
+            "variant": "elemental that appears like icicles when still"
+        },
+        {
+            "query": "swarm with heatsense that targets warm-blooded creatures",
+            "variant": "heatsensing swarm that hunts warm-blooded beings"
+        },
+        {
+            "query": "mobile cold-inflicting swarm that uses frigid mass",
+            "variant": "cold-inflicting swarm that has frigid mass ability and is mobile"
+        },
+        {
+            "query": "elemental with low strength and high dexterity",
+            "variant": "creature with high dexterity but very low strength"
+        }
+    ]
+}

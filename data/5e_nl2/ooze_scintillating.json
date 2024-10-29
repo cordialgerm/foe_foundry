@@ -1,0 +1,51 @@
+{
+    "name": "Scintillating Ooze",
+    "creature_type": "Ooze",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 165,
+    "ac": 15,
+    "srd": false,
+    "cr": "12",
+    "movement": "30 ft. walk, 30 ft. climb",
+    "role": "Bruiser",
+    "tags": [
+        "ooze",
+        "acid",
+        "combat"
+    ],
+    "adjectives": [
+        "corrosive",
+        "durable",
+        "amorphous"
+    ],
+    "description": "A formidable Large ooze creature with a slippery, gelatinous form that shimmers with vibrant colors.",
+    "memorable": "Its ability to create smaller oozlings when injured makes it a persistent threat.",
+    "goals": "To engage in close combat and incapacitate or dissolve foes it comes into contact with.",
+    "relations": "It may be encountered alongside other oozes or in areas with hazardous liquid environments.",
+    "environment": "Typically found in dark, damp places such as caves, sewers, or swamps.",
+    "strengths": "Immunity to multiple damage types, including acid and slashing, and condition immunities make it a tough adversary.",
+    "weaknesses": "Exceptionally low Intelligence and Charisma limit its ability to strategize or communicate.",
+    "attacks": "Utilizes powerful pseudopod and thrashing attacks that deal both bludgeoning and acid damage.",
+    "most_powerful_ability": "The ability to shed smaller oozlings when damaged, creating additional threats on the battlefield.",
+    "senses": "Blindsight allows it to perceive its surroundings within a range of 120 feet without vision.",
+    "skills": "Has a perception skill of -2, reflecting its low Wisdom.",
+    "additional_information": [
+        "Can traverse difficult surfaces, including ceilings.",
+        "Operates effectively in total darkness.",
+        "Does not require sleep, allowing for continuous activity.",
+        "Can create oozlings when subjected to specific damage types.",
+        "Possesses a combination of melee attack versatility."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large acid creature that splits into smaller oozes",
+        "monster with corrosive touch and climbing ability",
+        "gelatinous being immune to slashing damage",
+        "blindsight ooze that creates oozlings",
+        "formidable ooze encountered in dark caves"
+    ]
+}

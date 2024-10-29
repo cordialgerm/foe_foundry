@@ -1,6 +1,8 @@
 <MonsterName/>Clockwork Weaving Spider</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>1</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>30</HP>
 <summary>The Clockwork Weaving Spider is a tiny, unaligned construct that embodies the intricate machinery and artistry of a clockwork design. With an Armor Class of 15 and 30 hit points, it is moderately resilient, making it a challenging opponent for low-level adventurers. Its strengths lie in its high Dexterity score of 16, which grants it a good modifier of +3, allowing it to evade many attacks and granting higher chances for successful strikes in combat. However, its Intelligence, Wisdom, and Charisma scores are quite low, with modifiers of -1, indicating average understanding and interaction capabilities. The spider excels in mobility and agility, evidenced by its speed of 40 feet and proficiency in Acrobatics, where it has an exceptional modifier of +5, while also possessing a good passive Perception of 13.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the spider can execute a "Multiattack," allowing it to make two Trimm
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Clockwork Weaving Spider
 
 *Tiny* *Construct* *Unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The clockwork weaving spider makes two Trimming Blade attacks or two Poisoned Needle Shuttle attacks.
 - **Trimming Blade:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.
 - **Poisoned Needle Shuttle:** Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

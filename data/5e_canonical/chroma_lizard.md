@@ -1,6 +1,8 @@
 <MonsterName/>Chroma Lizard</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>90</HP>
 <summary>The Chroma Lizard is a large, unaligned beast known for its striking, reflective scales that create dazzling displays of light. With an armor class of 15, it has a decent level of defense thanks to its natural armor, making it reasonably tough in combat. The lizard has a significant pool of hit points, totaling 90, which allows it to endure through several rounds of conflict. As a challenge rating 4 creature, it offers a moderate level of challenge to adventurers, granting 1,100 experience points upon defeat. The Chroma Lizard's strengths lie in its dexterity and unique abilities to manipulate light for both offense and defense. However, it possesses low intelligence and charisma, making it less effective in interactions outside of combat. Its weaknesses include vulnerability to radiant damage, despite having some resistance.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Chroma Lizard is capable of performing multiple actions thanks to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Chroma Lizard
 
 *Large* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Dazzling Display:** Causes its chrome scales to ripple casting dizzying reflections of light. Each creature that can see the chroma lizard must make DC 15 Con save or be blinded until the end of its next turn. The lizard can’t use this action while in darkness and creatures have advantage on the save if the chroma lizard is in dim light.
 
 
+</statblock>
 
 

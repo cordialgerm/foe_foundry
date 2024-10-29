@@ -1,0 +1,25 @@
+{
+    "name": "Therizinosaurus",
+    "queries": [
+        {
+            "query": "huge dinosaur with powerful claws that can knock opponents prone",
+            "variant": "large dinosaur with mighty claws that can make adversaries fall"
+        },
+        {
+            "query": "beast with high strength and natural armor in combat",
+            "variant": "creature with great strength and natural defense in battles"
+        },
+        {
+            "query": "dinosaur that has relentless ability and high hit points",
+            "variant": "dino with a relentless trait and a large health pool"
+        },
+        {
+            "query": "massive beast known for its claw attacks and survivability",
+            "variant": "big creature recognized for its claw strikes and durability"
+        },
+        {
+            "query": "high strength beast that loves to fight and can endure lethal damage",
+            "variant": "strong creature that enjoys battle and can survive fatal blows"
+        }
+    ]
+}

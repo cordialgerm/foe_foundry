@@ -1,0 +1,25 @@
+{
+    "name": "Wicked Skull",
+    "queries": [
+        {
+            "query": "tiny mischievous monster that can change shapes and tells jokes",
+            "variant": "small trickster creature that can morph and cracks jokes"
+        },
+        {
+            "query": "deceptive creature with darkvision that disguises itself as an object",
+            "variant": "creature with darksight that pretends to be a common item for trickery"
+        },
+        {
+            "query": "monster with a melee attack that uses humor to disrupt enemies",
+            "variant": "creature using melee strikes and jokes to confuse opponents"
+        },
+        {
+            "query": "chaotic neutral spirit that uses persuasion and stealth",
+            "variant": "mischievous spirit that employs stealth and persuasive abilities"
+        },
+        {
+            "query": "fragile monster with excellent dexterity and charm abilities",
+            "variant": "delicate creature having high agility and charismatic skills"
+        }
+    ]
+}

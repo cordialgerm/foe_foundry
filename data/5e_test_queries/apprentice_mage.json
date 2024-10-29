@@ -1,0 +1,25 @@
+{
+    "name": "Apprentice Mage",
+    "queries": [
+        {
+            "query": "magic user with low armor and basic spells",
+            "variant": "magic using creature with basic spells and low armor"
+        },
+        {
+            "query": "humanoid spellcaster with fire attack and magic shield",
+            "variant": "humanoid caster with fire bolt and protective magic"
+        },
+        {
+            "query": "novice mage who excels in arcana and has low hit points",
+            "variant": "beginner mage skilled in arcane knowledge with few hit points"
+        },
+        {
+            "query": "intelligent character using spells from a distance",
+            "variant": "smart character casting spells remotely"
+        },
+        {
+            "query": "student mage with cantrips and limited melee skills",
+            "variant": "mage student using cantrips and having weak melee abilities"
+        }
+    ]
+}
