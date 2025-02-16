@@ -1,0 +1,25 @@
+{
+    "name": "Strider",
+    "queries": [
+        {
+            "query": "agile humanoid that excels in stealth and evasion",
+            "variant": "humanoid that is agile and excels in stealth and evasion"
+        },
+        {
+            "query": "fast tracker with keen hearing and sight in the wilderness",
+            "variant": "wilderness expert with sharp hearing and sight and speed"
+        },
+        {
+            "query": "creature with high dexterity that can deal extra damage in combat",
+            "variant": "high dexterity creature that can do extra damage in fights"
+        },
+        {
+            "query": "medium humanoid with strong Armor Class living in natural environments",
+            "variant": "medium humanoid living in nature with strong AC"
+        },
+        {
+            "query": "stealthy creature that can move without being tracked and is good at survival",
+            "variant": "survival expert that is stealthy and can't be tracked easily"
+        }
+    ]
+}

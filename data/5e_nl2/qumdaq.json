@@ -1,0 +1,48 @@
+{
+    "name": "Qumdaq",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 18,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "30 ft. walking and burrowing speed",
+    "role": null,
+    "tags": [
+        "elemental",
+        "earth",
+        "sand"
+    ],
+    "adjectives": [
+        "small",
+        "earthy",
+        "neutral"
+    ],
+    "description": "The Qumdaq is a small elemental creature embodying sand and earth, displaying a unique ability to manipulate its environment.",
+    "memorable": "It can burst into a shower of sand upon death to heal nearby allies or grant them temporary hit points.",
+    "goals": "To support allies in battle and manipulate the battlefield through burrowing.",
+    "relations": "It may be found alongside other elemental creatures or those related to earth and sand.",
+    "environment": "Commonly found in desert areas or regions with loose earth.",
+    "strengths": "Ability to burrow without disturbing the surroundings; condition immunities make it resilient to control effects.",
+    "weaknesses": "Low hit points that render it vulnerable if targeted directly.",
+    "attacks": "Slam attack dealing bludgeoning damage; can create a damaging Desiccation Field attack.",
+    "most_powerful_ability": "Desiccation Field, which damages and exhausts multiple foes at once.",
+    "equipment": null,
+    "senses": "Possesses darkvision and tremorsense within 30 feet, allowing it to perceive its environment effectively.",
+    "skills": "Has average perception skills, indicating it can detect danger but lacks proficiency in it.",
+    "additional_information": [
+        "Elemental nature allows it to function without air, food, or sleep.",
+        "Gains advantage on attacks when allies are near, encouraging teamwork in battle.",
+        "Can sense magical auras within 60 feet without consuming spell resources."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small sand elemental with healing abilities",
+        "earth creature that can burrow without disturbance",
+        "elemental that exhausts foes with swirling sand",
+        "neutral creature made of earth and sand",
+        "small creature that supports allies in battle"
+    ]
+}

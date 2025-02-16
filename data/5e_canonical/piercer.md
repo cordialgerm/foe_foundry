@@ -1,6 +1,8 @@
 <MonsterName/>Piercer</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>17</AC>
+<HP/>9</HP>
 <summary>The Piercer is a small monstrosity that poses a unique challenge for adventurers. While it has a relatively low health pool of 9 hit points and an average armor class of 17, making it somewhat resilient for its size, its main strength lies in its deceptive nature. The Piercer can blend in with its surroundings as it resembles a stalactite when motionless. This allows it to ambush unsuspecting creatures beneath it. However, despite its ambush potential, the Piercer has very low attributes in intelligence, wisdom, and charisma, making it a fundamentally unthinking creature driven only by instinct. It has a challenge rating of 1/2, indicating that it is suitable for low-level encounters but can be dangerous if players are not cautious.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Piercer has a melee weapon attack called Pierce. This a
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Piercer
 
 *Small* *Monstrosity*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Pierce:** Melee Weapon Attack: +2 to hit  one target directly underneath the piercer. Hit: 10 (3d6) piercing damage. This attack has disadvantage against a creature that is protecting its head with a shield or similar object. If the attack misses  the piercer dies.
 
 
+</statblock>
 
 

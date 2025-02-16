@@ -1,0 +1,55 @@
+{
+    "name": "Fire Imp",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "fly 40 ft., walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "imp",
+        "fiend",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "tiny",
+        "deceptive",
+        "cunning",
+        "dangerous"
+    ],
+    "description": "The Fire Imp is a tiny fiend known for its cunning nature, possessing red skin and fiery eyes. It is adept at avoiding damage and utilizes magical abilities for stealth and combat.",
+    "memorable": "Its ability to absorb fire damage and simultaneously heal makes it a unique threat in battle.",
+    "goals": "Using cunning tactics to deceive and outsmart opponents, while thriving in magical and combat situations.",
+    "relations": "Often found serving more powerful fiends or in the company of other elemental creatures.",
+    "environment": "Commonly found in fiery or infernal areas, often in service to demon lords or during magical duels.",
+    "strengths": "Effective at manipulating fire, highly mobile, and possesses magic resistance.",
+    "weaknesses": "Low physical strength and susceptible to certain types of magic.",
+    "attacks": "Utilizes Fire Touch for melee attacks and Hurl Flame for ranged assaults, both dealing fire damage.",
+    "most_powerful_ability": "Fire Absorption, which allows it to heal instead of taking fire damage.",
+    "equipment": null,
+    "senses": "Possesses Devil's Sight enabling it to see in magical darkness.",
+    "skills": "Proficient in deception and stealth, enhancing its ability to avoid detection and manipulate situations.",
+    "additional_information": [
+        "Can cast Heat Metal once per day without using components.",
+        "Regenerates health from fire damage received.",
+        "Has advantage on saving throws against spells.",
+        "Ignores normal darkness due to Devil's Sight.",
+        "Utilizes environment to create ambushes."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Capable of casting Heat Metal and exhibiting various magical abilities.",
+    "test_queries": [
+        "tiny fiend with fire powers",
+        "quick flying imp that absorbs fire",
+        "deceptive fire creature that casts spells",
+        "cunning fiend that uses heat metal",
+        "fire imp with magical sight and resistance"
+    ]
+}

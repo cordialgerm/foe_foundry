@@ -1,6 +1,8 @@
 <MonsterName/>Witchalder</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Witchalder is a Medium-sized plant creature with a neutral evil alignment, embodying a blend of resilience and menace in its environment. With an Armor Class of 15, the Witchalder boasts solid natural defenses complemented by its Hit Points totaling 102, derived from rolling 12d8 plus a substantial Constitution modifier. It has a walking speed of 30 feet, making it moderately mobile in engagements. Assigned a Challenge Rating of 6, it can provide a significant challenge for lower-level adventurers. The creature is adept at grappling and control tactics, capable of dealing substantial bludgeoning damage and applying debilitating effects in combat. Its vulnerabilities to fire, combined with resistances to bludgeoning damage and immunities to being charmed or poisoned, highlight its strengths while revealing its weaknesses.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Witchalder is a dangerous enemy well-equipped for ambush tactics an
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Witchalder
 
 *Medium* *Plant* *neutral evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 - **Pollen Cloud (Recharge 6):** Each creature within 15 ft. of witchalder: 22 (5d8) poison and incapacitated for 1 min (DC 15 Con half damage and isn’t incapacitated). Incapacitated creature can re-save at end of each of its turns success ends effect on itself.
 
 
+</statblock>
 
 

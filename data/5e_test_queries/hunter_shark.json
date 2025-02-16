@@ -1,0 +1,25 @@
+{
+    "name": "Hunter Shark",
+    "queries": [
+        {
+            "query": "large predatory fish that hunts alone in the ocean",
+            "variant": "big predatory fish that hunts by itself in the ocean"
+        },
+        {
+            "query": "shark with powerful jaws capable of inflicting heavy damage",
+            "variant": "shark with strong jaws that can deal a lot of damage"
+        },
+        {
+            "query": "ocean predator that can smell blood from miles away",
+            "variant": "sea predator that can detect blood from a long distance"
+        },
+        {
+            "query": "beast that excels in underwater combat with fast swimming speed",
+            "variant": "creature that is great in water battles and swims quickly"
+        },
+        {
+            "query": "aquatic hunter known for its impressive bite attack",
+            "variant": "water hunter famous for its strong biting ability"
+        }
+    ]
+}

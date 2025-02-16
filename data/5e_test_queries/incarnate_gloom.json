@@ -1,0 +1,25 @@
+{
+    "name": "Incarnate Gloom",
+    "queries": [
+        {
+            "query": "gargantuan undead creature that manipulates darkness and inflicts psychic damage",
+            "variant": "gargantuan undead being that uses darkness manipulation and deals psychic harm"
+        },
+        {
+            "query": "fear-inducing monster with high dexterity and low strength living in darkness",
+            "variant": "fearsome creature with a low strength score and high dexterity that thrives in darkness"
+        },
+        {
+            "query": "undead creature immune to necrotic damage and can engulf enemies in shadow",
+            "variant": "undead being that has immunity to necrotic damage and can trap foes in shadows"
+        },
+        {
+            "query": "creature that can blind and restrain using necrotic attacks and has a vulnerability to radiant damage",
+            "variant": "monster capable of blinding and restraining while dealing necrotic damage and is weak to radiant"
+        },
+        {
+            "query": "darkness-loving undead with powerful intimidation skills and significant hit points",
+            "variant": "undead creature that thrives in darkness with strong intimidation abilities and high hit points"
+        }
+    ]
+}

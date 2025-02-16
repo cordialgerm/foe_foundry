@@ -1,0 +1,53 @@
+{
+    "name": "Barbed Devil",
+    "creature_type": "Fiend",
+    "creature_subtype": "devil",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 110,
+    "ac": 15,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "devil",
+        "grappler",
+        "fire"
+    ],
+    "adjectives": [
+        "barbed",
+        "sadistic",
+        "malevolent",
+        "twisted"
+    ],
+    "description": "A Barbed Devil is a fiendish creature covered in sharp, spiny protrusions that can pierce through flesh. Its skin is dark reddish-brown, with glowing eyes signifying its intelligence and sadistic nature.",
+    "memorable": "The Barbed Devil delights in inflicting pain and is particularly dangerous due to its ability to grapple and deal additional piercing damage to foes.",
+    "goals": "To serve higher-ranking fiends and inflict suffering on its enemies.",
+    "relations": "Often seen serving more powerful fiends in the infernal hierarchy.",
+    "environment": "Typically found in infernal realms or locations associated with evil.",
+    "strengths": "Immunities to fire and poison damage, resistance to cold damage, and the ability to grapple effectively.",
+    "weaknesses": "Vulnerable to radiant damage and has a reliance on maintaining grapple for control.",
+    "attacks": "Can perform two claw attacks and one tail attack or cast 'Hurl Flame' twice, dealing piercing and fire damage.",
+    "most_powerful_ability": "Barbed Hide inflicts piercing damage to creatures grappling or grappled by the devil at the start of its turn.",
+    "equipment": null,
+    "senses": "Possesses true devil's sight enabling it to see through magical darkness.",
+    "skills": "Skilled in Athletics, Deception, Insight, and Perception, showcasing its versatility.",
+    "additional_information": [
+        "The Barbed Death ability creates hazardous terrain upon its demise.",
+        "Magic Resistance gives it advantage on saving throws against spells.",
+        "It can communicate telepathically within 120 feet."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spiny fiend creature",
+        "devil with barbed skin",
+        "cruel infernal being",
+        "fiend that grapples enemies",
+        "fire-hurling devil"
+    ]
+}

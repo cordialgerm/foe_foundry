@@ -1,0 +1,52 @@
+{
+    "name": "Vine Troll Skeleton",
+    "creature_type": "Undead",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 153,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "skeleton",
+        "troll"
+    ],
+    "adjectives": [
+        "formidable",
+        "regenerative",
+        "durable"
+    ],
+    "description": "A large undead creature with exceptional physical strength, resembling a skeletal troll, bound to a duskthorn dryad or tree.",
+    "memorable": "The Vine Troll Skeleton can regenerate hit points unless damaged by acid or fire, making it a resilient adversary.",
+    "goals": "To serve as a guardian tied to its binding tree or dryad.",
+    "relations": "Magically bound to a duskthorn dryad, tree, or treant.",
+    "environment": "Typically found in forests or areas with dense vegetation.",
+    "strengths": "High hit points and regeneration ability, resistance to nonmagical damage.",
+    "weaknesses": "Vulnerable to acid and fire damage; can be destroyed if its binding tree is killed.",
+    "attacks": "Uses a multiattack option involving a powerful bite and claw attacks, as well as ranged poisoned thorn attacks.",
+    "most_powerful_ability": "Regeneration trait that allows it to regain hit points unless it takes acid or fire damage.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and conditions like exhaustion.",
+        "Low intelligence and charm, making it a mindless predator.",
+        "Durability enhanced by magical binding to its tree.",
+        "Can only die if its binding entity is killed or it starts its turn with 0 hit points.",
+        "Versatile in combat with both melee and ranged attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable undead guardian of nature",
+        "skeleton with regeneration and poison attacks",
+        "large undead tied to a tree",
+        "vulnerable to fire and acid damage",
+        "creature that serves a duskthorn dryad"
+    ]
+}

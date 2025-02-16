@@ -1,0 +1,50 @@
+{
+    "name": "Preta",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "blood manipulation",
+        "stealth"
+    ],
+    "adjectives": [
+        "deceptive",
+        "stealthy",
+        "necrotic"
+    ],
+    "description": "The Preta is a Medium-sized undead creature with a hunger for blood, characterized by its shadowy presence and the ability to manipulate blood necromantically. Its appearance is subtle yet unsettling, embodying the essence of a haunting specter.",
+    "memorable": "The Preta can heal itself by drawing blood from its victims, making it a challenging foe in prolonged encounters.",
+    "goals": "To ambush and siphon the life force from unsuspecting victims.",
+    "relations": "Typically encountered by those who delve into the undead realms or come across dark necromantic cults.",
+    "environment": "Often found in dark, shadowy areas or haunted sites where undead linger.",
+    "strengths": "Immunities to poison damage and several conditions enhance its durability, and its Blood Siphon ability allows for self-healing.",
+    "weaknesses": "Moderate defenses and reliance on stealth tactics make it vulnerable to perceptive foes adept in combat.",
+    "attacks": "Employs a combination of Blood Siphon that deals necrotic damage and claw attacks that slash at its prey.",
+    "most_powerful_ability": "Blood Siphon allows the Preta to drain life, dealing necrotic damage while also healing itself.",
+    "senses": "Possesses Ethereal Sight to perceive threats in the Ethereal Plane.",
+    "skills": "Proficient in stealth, allowing it to move undetected and manipulate its surroundings.",
+    "additional_information": [
+        "Can become invisible until it attacks, enhancing its stealth capabilities.",
+        "Can create illusory sounds and images to confuse opponents.",
+        "Gains tactical advantages by shifting between the Ethereal Plane and Material Plane.",
+        "Immune to exhaustion, frightened, and other debilitating conditions."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy undead that drains blood",
+        "dark creature that manipulates blood",
+        "necrotic damage dealer in shadows",
+        "invisible undead with life-siphoning abilities",
+        "undead that can shift to Ethereal Plane"
+    ]
+}

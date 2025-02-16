@@ -1,0 +1,25 @@
+{
+    "name": "Trollkin Ragecaster",
+    "queries": [
+        {
+            "query": "humanoid creature that uses elemental spells and has strong regeneration",
+            "variant": "humanoid that casts elemental spells and has great regenerative abilities"
+        },
+        {
+            "query": "medium trollkin with high Charisma and poor Intelligence that lives in combat",
+            "variant": "trollkin that's medium-sized with high Charisma but low Intelligence who enjoys combat"
+        },
+        {
+            "query": "creature with claws that can also perform ranged magical attacks and has disadvantage on Wisdom saves",
+            "variant": "monster with claw attacks and can do ranged magic while facing disadvantages on Wisdom saves"
+        },
+        {
+            "query": "tough humanoid with good defenses and a vulnerability to fire and acid attacks",
+            "variant": "durable humanoid with solid defenses but vulnerable to acid and fire"
+        },
+        {
+            "query": "creature that can fly while enraged but has low tactical knowledge",
+            "variant": "monster that gains flying ability in rage but lacks tactical skills"
+        }
+    ]
+}

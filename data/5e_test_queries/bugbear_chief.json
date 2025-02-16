@@ -1,0 +1,25 @@
+{
+    "name": "Bugbear Chief",
+    "queries": [
+        {
+            "query": "strong humanoid leader that attacks from stealth",
+            "variant": "humanoid leader with strong attacks and stealth"
+        },
+        {
+            "query": "Bugbear Chief ambush tactics and physical strength",
+            "variant": "ambush tactics and strong physical abilities of the Bugbear Chief"
+        },
+        {
+            "query": "creature with darkvision and high melee damage",
+            "variant": "monster with darkvision capable of high melee damage"
+        },
+        {
+            "query": "Bugbear Chief multiattack ability and javelin damage",
+            "variant": "multiattack feature and javelin damage of the Bugbear Chief"
+        },
+        {
+            "query": "medium humanoid with 71 HP and Armor Class of 15",
+            "variant": "humanoid creature with 71 hit points and AC of 15"
+        }
+    ]
+}

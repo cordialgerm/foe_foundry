@@ -1,0 +1,25 @@
+{
+    "name": "Dragonflesh Golem",
+    "queries": [
+        {
+            "query": "large construct with magical attacks that can frighten enemies",
+            "variant": "big construct that frightens foes and has magical attacks"
+        },
+        {
+            "query": "magical golem that resists spells and has a strong bite attack",
+            "variant": "spell-resistant golem with powerful bite and magic attacks"
+        },
+        {
+            "query": "creature made of dragon flesh with devastating elemental breath",
+            "variant": "golem crafted from dragon flesh that has a strong elemental breath"
+        },
+        {
+            "query": "strong melee attacker with immunity to form-altering spells",
+            "variant": "powerful melee combatant immune to spells that change its form"
+        },
+        {
+            "query": "constructed being that deals multiple damage types and has high strength",
+            "variant": "golem dealing various damage types with high strength"
+        }
+    ]
+}

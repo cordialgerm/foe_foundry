@@ -1,0 +1,52 @@
+{
+    "name": "Aphasian Abomination",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 170,
+    "ac": 15,
+    "srd": false,
+    "cr": "10",
+    "movement": "fly 60 ft.",
+    "role": null,
+    "tags": [
+        "psychic distortion",
+        "amagic resistance",
+        "construct"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "intelligent"
+    ],
+    "description": "The Aphasian Abomination is a Large Construct, notable for its high Dexterity and exceptional Wisdom, giving it enhanced evasiveness. It lacks physical strength, with a Strength score of 1, and is designed to manipulate psychic energies.",
+    "memorable": "Its ability to create an Aphasic Field, rendering creatures within it unable to speak coherently and disrupting their spellcasting, makes it a unique threat.",
+    "goals": "Typically engages in disrupting and dominating encounters through psychic manipulation.",
+    "relations": "Constructs or other magically created entities may be seen alongside it or as its masters.",
+    "environment": "Thrives in areas rich in magical energy or within psychic realms.",
+    "strengths": "Possesses Magic Resistance, immunity to various conditions, and the capacity to operate without the need for air, food, drink, or sleep.",
+    "weaknesses": "Very weak in physical confrontations due to an abysmal Strength and a lack of social interaction capabilities.",
+    "attacks": "Uses Multiattack to launch three ranged Force Blast attacks, dealing significant force damage from a distance.",
+    "most_powerful_ability": "The Aphasic Field effectively prevents spellcasters from using verbal components and can inflict psychic damage if they attempt to do so.",
+    "equipment": null,
+    "senses": "It has darkvision up to 120 feet and a passive Perception of 19, enhancing its awareness.",
+    "skills": "Skilled in perception, benefiting from its high Wisdom score.",
+    "additional_information": [
+        "Amorphous trait allows it to move through narrow spaces without penalties.",
+        "Immutable Form grants immunity to form-altering spells and effects.",
+        "Made of Magic allows it to temporarily vanish in an antimagic field.",
+        "Inflicts psychic damage on attempts to dispel it.",
+        "Challenges spellcasters with its unique Psychic Distortion abilities."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "psychic disrupting monster",
+        "fortified magical construct",
+        "Aphasian Abomination abilities",
+        "larger psychic threat",
+        "magically created entity"
+    ]
+}

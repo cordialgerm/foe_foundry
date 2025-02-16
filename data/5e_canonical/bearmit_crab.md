@@ -1,6 +1,8 @@
 <MonsterName/>Bearmit Crab</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>59</HP>
 <summary>The Bearmit Crab is a large monstrosity known for its unique blend of defensive and offensive capabilities, making it a formidable creature in combat. With a challenge rating of 2 and 59 hit points, it has the resilience to withstand a decent amount of damage while delivering impactful attacks. The creature is characterized by its strong armor class of 14 due to its natural armor. It can move both in water and on land, but its swimming speed is notably slower than its walking speed. The Bearmit Crab has particular strengths against bludgeoning damage, granting it resistance in combat. Its offensive attacks include claw and bite strikes, both of which can grapple its prey. Notable abilities such as Viscid Shell create unique challenges for melee attackers, while its False Appearance grants it stealth potential in certain environments.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ In combat, the Bearmit Crab can use its Multiattack action to perform two attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bearmit Crab
 
 *Large* *Monstrosity* *unaligned*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.
 
 
+</statblock>
 
 

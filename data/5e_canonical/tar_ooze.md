@@ -1,6 +1,8 @@
 <MonsterName/>Tar Ooze</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>6</CR>
+<AC/>9</AC>
+<HP/>120</HP>
 <summary>The Tar Ooze is a formidable Large ooze creature, categorized as unaligned, capable of both melee and ranged attacks. With an Armor Class of 9 and a substantial pool of 120 hit points, the ooze is quite durable in combat. It operates effectively both on the ground and climbing, moving at a speed of 20 feet. It has a Challenge Rating of 6, indicating it poses a moderate threat to adventurers. The ooze's most notable strengths include its immunities to fire, necrotic, and poison damage, as well as various condition immunities, making it a resilient opponent. However, it also displays weaknesses, particularly in its low Dexterity score and limited offensive capabilities. Its unique abilities, such as causing fire hazards and creating sticky tar, can greatly influence combat dynamics.</summary>
 
 <detail>
@@ -38,6 +40,7 @@ Overall, the Tar Ooze is a tactically challenging adversary due to its control o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Tar Ooze
 
 *Large* *Ooze* *unaligned*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Hurl Tar:** Ranged Weapon Attack: +2 to hit, range 60 ft., one target. Hit: 14 (4d6) necrotic damage and the target must succeed on a DC 14 Dexterity saving throw or be covered in tar (see Sticky Situation).
 
 
+</statblock>
 
 

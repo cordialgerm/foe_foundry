@@ -1,6 +1,8 @@
 <MonsterName/>Archaeopteryx</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12 (natural armor)</AC>
+<HP/>7</HP>
 <summary>The Archaeopteryx is a tiny, unaligned beast that serves as a swift and nimble creature in the realm of Dungeons & Dragons 5e. With a challenge rating of 1/4, it presents a low-threat option that can still offer unique tactical possibilities in a game. Notably, it is capable of flying at 50 feet, making it a difficult target to hit and allowing it to maneuver around enemies with ease. Its overall combat effectiveness is somewhat limited due to low hit points and average attack capabilities, but its special ability, Flyby, allows it to evade opportunity attacks while flying, giving it a distinct advantage. However, with poor physical strength and intelligence, the Archaeopteryx’s versatility is hampered, making it more of a nuisance than a direct threat in combat encounters.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In terms of actions, the Archaeopteryx can perform a Multiattack, allowing it to
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Archaeopteryx
 
 *Tiny* *Beast* *unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.
 
 
+</statblock>
 
 

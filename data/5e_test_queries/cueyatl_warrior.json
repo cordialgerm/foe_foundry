@@ -1,0 +1,25 @@
+{
+    "name": "Cueyatl Warrior",
+    "queries": [
+        {
+            "query": "small humanoid that thrives in the jungle and swims well",
+            "variant": "small warrior that swims and excels in jungle environments"
+        },
+        {
+            "query": "humanoid with poison attacks and combat skills in water",
+            "variant": "poison-using humanoid with combat capabilities in aquatic settings"
+        },
+        {
+            "query": "warrior that can breathe both air and water and excels in stealth",
+            "variant": "combatant that breathes water and air, skilled in hiding"
+        },
+        {
+            "query": "agile creature with a battleaxe that deals poison damage",
+            "variant": "nimble being using a battleaxe that inflicts poison damage"
+        },
+        {
+            "query": "jungle-dwelling creature with acrobatic skills and amphibious nature",
+            "variant": "creature living in the jungle, good at acrobatics and can live in water"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Seahorse",
+    "queries": [
+        {
+            "query": "tiny underwater creature that can only breathe in water",
+            "variant": "little water creature that breaths only underwater"
+        },
+        {
+            "query": "fragile aquatic beast known for stealth in water",
+            "variant": "delicate water beast great at hiding in water"
+        },
+        {
+            "query": "marine life with low hit points and no offensive capabilities",
+            "variant": "ocean creature with few hit points and no attack power"
+        },
+        {
+            "query": "small sea animal adapted to underwater living",
+            "variant": "little marine animal adjusted for life underwater"
+        },
+        {
+            "query": "seahorse-like creature with camouflage abilities in water",
+            "variant": "creature similar to seahorse with hiding skills underwater"
+        }
+    ]
+}

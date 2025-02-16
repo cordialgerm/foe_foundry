@@ -1,0 +1,46 @@
+{
+    "name": "Hippocampus",
+    "creature_type": "Beast",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 42,
+    "ac": 11,
+    "srd": false,
+    "cr": "1",
+    "movement": "10 ft., swim 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "mount"
+    ],
+    "adjectives": [
+        "large",
+        "versatile",
+        "adaptive"
+    ],
+    "description": "The Hippocampus is a large beast known for its horse-like body and fish-like tail, enabling it to thrive in both water and air environments, with special gills providing fresh air to riders.",
+    "memorable": "Its unique ability to provide fresh air to riders sets the Hippocampus apart, making it valuable for underwater journeys.",
+    "goals": "To aid riders in aquatic environments and assert dominance in waters.",
+    "relations": "Often found alongside aquatic creatures and can serve as a mount for adventurers.",
+    "environment": "Typically inhabits aquatic environments, such as rivers and oceans.",
+    "strengths": "Exceptional swimming speed allows for quick evasive maneuvers in water.",
+    "weaknesses": "Low Armor Class makes it vulnerable to attacks if caught off guard.",
+    "attacks": "Effective at melee combat with a Bite attack dealing piercing damage and a Tail Slap attack dealing bludgeoning damage.",
+    "most_powerful_ability": "Shared Breath allows it to assist comrades by providing fresh air when needed.",
+    "senses": "Possesses good perception with a score of 13, indicating awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Capable of performing a Rearing Kick to control enemies.",
+        "Utilizes Multiattack to strike twice in one turn."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic mount with gills",
+        "beast that helps riders breathe underwater",
+        "swimming horse-like creature",
+        "creature with tail slap attack",
+        "monster with powerful kick ability"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ankheg Spawn",
+    "queries": [
+        {
+            "query": "medium monster that can burrow and has acid resistance",
+            "variant": "monster that burrows and resists acid damage, medium size"
+        },
+        {
+            "query": "creature with slashing damage attacks and tremorsense",
+            "variant": "creature with tremorsense and attacks that deal slashing damage"
+        },
+        {
+            "query": "predatory monstrosity with a low intelligence and high strength",
+            "variant": "monstrosity with high strength and low intelligence, predatory nature"
+        },
+        {
+            "query": "ambush creature that can knock targets prone",
+            "variant": "creature that ambushes and can make targets fall prone"
+        },
+        {
+            "query": "Ankheg Spawn abilities and defensive traits",
+            "variant": "abilities and defenses of Ankheg Spawn"
+        }
+    ]
+}

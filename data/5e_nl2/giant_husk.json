@@ -1,0 +1,50 @@
+{
+    "name": "Giant Husk",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 9,
+    "srd": false,
+    "cr": "7",
+    "movement": "40 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "grappling",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "large"
+    ],
+    "description": "The Giant Husk is a large, imposing undead creature that excels in melee combat, characterized by its stitched-together body and rotting flesh.",
+    "memorable": "Its ability to smother and restrain multiple opponents while transferring damage makes it a deadly adversary in close quarters.",
+    "goals": "To overpower and eliminate living creatures using its physical strength and unique grappling techniques.",
+    "relations": "Could be associated with other undead creatures or serve as a minion to more powerful dark entities.",
+    "environment": "Typically found in dark and decaying environments such as graveyards, ruins, or any area rich with death.",
+    "strengths": "Its significant hit points and ability to grapple multiple foes provide it with excellent durability and control in combat.",
+    "weaknesses": "Low dexterity makes it vulnerable to ranged attacks and dexterity-based maneuvers.",
+    "attacks": "Utilizes the Smother attack to grapple and restrain opponents, dealing ongoing bludgeoning damage over time.",
+    "most_powerful_ability": "Damage Transfer ability allows it to split damage with creatures it grapples, increasing its survivability.",
+    "equipment": null,
+    "senses": "Has darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": "Has low passive perception, indicating an average awareness of surroundings.",
+    "additional_information": [
+        "Amorphous form allows squeezing through tight spaces.",
+        "Immune to poison damage and cannot be poisoned.",
+        "Excels at controlling the battlefield with grappling techniques.",
+        "Can smother various sizes of creatures simultaneously.",
+        "Relies on brute strength rather than dexterity."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that grapples opponents",
+        "large undead that can restrain multiple creatures",
+        "monster with damage transfer ability",
+        "chaotic evil giant that smothers enemies",
+        "formidable undead with poor dexterity"
+    ]
+}

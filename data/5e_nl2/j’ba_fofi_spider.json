@@ -1,0 +1,52 @@
+{
+    "name": "J\u2019ba Fofi Spider",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 75,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "spider",
+        "beast",
+        "stealth",
+        "forest"
+    ],
+    "adjectives": [
+        "large",
+        "stealthy",
+        "lethal"
+    ],
+    "description": "The J\u2019ba Fofi Spider is a large, agile spider with impressive hunting skills, blending seamlessly into its forest habitat.",
+    "memorable": "It can create camouflaged webs and summon swarms of spiderlings to aid it in battle.",
+    "goals": "To ambush prey and control its hunting ground with webs.",
+    "relations": "May collaborate with other spiders due to its Spider Passivism ability.",
+    "environment": "Typically found in forested areas.",
+    "strengths": "High strength and dexterity make it dangerous in melee and adept at avoiding attacks.",
+    "weaknesses": "Low charisma limits its effectiveness in social situations.",
+    "attacks": "Its primary attack is a venomous bite that deals piercing and poison damage.",
+    "most_powerful_ability": "Camouflaged Webs that can ensnare unsuspecting intruders.",
+    "senses": "Has blindsight up to 10 feet, allowing it to detect creatures in close proximity even without light.",
+    "skills": "Expert at stealth with a +5 bonus, making it difficult to detect.",
+    "additional_information": [
+        "Offers significant control over battlefield space with webs.",
+        "Can climb any surface, including ceilings.",
+        "Releases pheromones to summon spider allies.",
+        "Relying on ambush tactics to capture prey.",
+        "Resilient with a high armor class."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large lethal spider that ambushes in forests",
+        "stealthy spider that creates camouflaged webs",
+        "venomous spider that controls battlefield space",
+        "agile spider with summoning abilities",
+        "forest predator with deadly bite attack"
+    ]
+}

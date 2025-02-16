@@ -1,0 +1,25 @@
+{
+    "name": "Grave Behemoth",
+    "queries": [
+        {
+            "query": "Huge undead creature that summons zombies in battle",
+            "variant": "Huge undead monster that can summon zombies during fights"
+        },
+        {
+            "query": "slow moving undead with powerful melee attacks",
+            "variant": "undead creature that moves slowly but has strong melee capability"
+        },
+        {
+            "query": "creature that vomits putrid flesh and creates more zombies",
+            "variant": "monster that throws up rotting flesh and spawns additional zombies"
+        },
+        {
+            "query": "flesh-wound ability of a large undead monster",
+            "variant": "ability of a huge monster known as flesh-wound for the undead"
+        },
+        {
+            "query": "undead behemoth with high hit points and low armor class",
+            "variant": "behemoth undead creature that has a lot of hit points but low AC"
+        }
+    ]
+}

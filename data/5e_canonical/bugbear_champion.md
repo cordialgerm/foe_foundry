@@ -1,6 +1,8 @@
 <MonsterName/>Bugbear Champion</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>4</CR>
+<AC/>17</AC>
+<HP/>85</HP>
 <summary>The Bugbear Champion is a formidable Medium humanoid creature that serves as a powerful combatant in battle. With a Challenge Rating of 4, it presents a substantial threat to adventurers, leveraging a combination of strong physical attacks and resilience. The Bugbear Champion possesses an Armor Class of 17, indicating good defensive capabilities, and a robust pool of 85 hit points, allowing it to endure significant damage. Known for its high Strength score of +6, it excels in melee combat, making its attacks particularly dangerous. Its weaknesses include average Dexterity and Constitution scores, which while decent, do not make it exceptionally agile or hard to kill. Noteworthy abilities like "Brutal" enhance its damage output, while its "Stubborn Attacker" reaction grants it a second chance at a missed attack, bolstering its effectiveness in skirmishes.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ As a reaction, the Bugbear Champion has "Stubborn Attacker," which recharges on 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bugbear Champion
 
 *Medium humanoid*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 
 - **Stubborn Attacker (Recharge 5–6).** When the bugbear champion misses with an attack, it can change that miss to a hit.
 
+</statblock>
 
 

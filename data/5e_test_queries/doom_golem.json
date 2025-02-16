@@ -1,0 +1,25 @@
+{
+    "name": "Doom Golem",
+    "queries": [
+        {
+            "query": "large construct that induces fear and has cold damage attacks",
+            "variant": "big construct that causes fear and deals cold damage attacks"
+        },
+        {
+            "query": "high armor class construct immune to many damage types",
+            "variant": "construct with a high AC that is immune to various damage types"
+        },
+        {
+            "query": "physical damage monster with powerful melee attacks that creates an arctic wind",
+            "variant": "monster with strong melee attacks that produces a cold wind and deals physical damage"
+        },
+        {
+            "query": "creature that can't speak but understands its creator with a fear aura",
+            "variant": "being that cannot talk but comprehends its creator and has a fear-inducing aura"
+        },
+        {
+            "query": "Doom Golem's magical attacks and its reactability to spell attacks",
+            "variant": "fantasy creature with magical strikes and responds to spell hits"
+        }
+    ]
+}

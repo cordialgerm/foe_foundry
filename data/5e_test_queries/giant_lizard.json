@@ -1,0 +1,25 @@
+{
+    "name": "Giant Lizard",
+    "queries": [
+        {
+            "query": "large cold-blooded reptile that can climb",
+            "variant": "big reptile that climbs and is cold-blooded"
+        },
+        {
+            "query": "Giant Lizard used as a mount by tribes in deserts",
+            "variant": "large lizard that desert tribes ride as mounts"
+        },
+        {
+            "query": "Giant Lizard with a powerful bite and low intelligence",
+            "variant": "lizard with a strong bite attack and very low intelligence"
+        },
+        {
+            "query": "agile lizard found in jungles and has darkvision",
+            "variant": "quick lizard that lives in jungles and can see in the dark"
+        },
+        {
+            "query": "beast with good climbing ability that can detach its tail",
+            "variant": "creature that can detach its tail and has great climbing skills"
+        }
+    ]
+}

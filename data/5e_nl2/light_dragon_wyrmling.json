@@ -1,0 +1,53 @@
+{
+    "name": "Light Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "light",
+        "wyrmling",
+        "radiant"
+    ],
+    "adjectives": [
+        "benevolent",
+        "radiant",
+        "medium-sized"
+    ],
+    "description": "A medium-sized dragon known for its benevolent nature and strong affinity for radiant energy, capable of flying and shedding bright light.",
+    "memorable": "The Light Dragon Wyrmling possesses powerful breath weapons that can blind foes and turn undead, making it formidable in combat.",
+    "goals": "Typically seeks to protect the innocent and combat evil, especially undead creatures.",
+    "relations": "Often interacts with other benevolent beings and can be in the company of other dragons.",
+    "environment": "Can be found in areas where good is prevalent, often associated with natural light or places of purity.",
+    "strengths": "Immunity to radiant damage and resistance to nonmagical physical attacks, along with powerful radiant breath and blinding features.",
+    "weaknesses": "Vulnerable to any non-radiant damage types, particularly from magic or strong opponents.",
+    "attacks": "Utilizes a bite attack and possesses two breath weapons, one dealing radiant damage and the other blinding enemies.",
+    "most_powerful_ability": "Flaring Breath can blind enemies and turn undead, presenting a significant tactical advantage.",
+    "equipment": null,
+    "senses": "Has blindsight extending 10 feet, aiding in its perception of surroundings even in darkness.",
+    "skills": "Skilled in perception, with a notable modifier enhancing its vigilance.",
+    "additional_information": [
+        "Illumination ability sheds light in dim places.",
+        "Incorporeal Movement allows it to pass through objects.",
+        "Resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+        "Immune to being blinded condition.",
+        "Possesses a decent passive perception."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium dragon with powerful radiant breath",
+        "dragon that can blind and turn undead",
+        "flying benevolent dragon with illumination",
+        "radiant energy breath weapon dragon",
+        "dragon known for fighting evil and undead"
+    ]
+}

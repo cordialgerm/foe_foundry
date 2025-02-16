@@ -1,0 +1,25 @@
+{
+    "name": "Mngwa",
+    "queries": [
+        {
+            "query": "medium-sized aberration that can see in the Ethereal Plane",
+            "variant": "medium aberration that sees in the Ethereal Plane"
+        },
+        {
+            "query": "monster with feline communication and high Armor Class",
+            "variant": "creature that can talk to felines and has high Armor Class"
+        },
+        {
+            "query": "agile creature with a strong melee attack and Ethereal Step ability",
+            "variant": "quick creature with powerful melee hits and the ability to shift planes"
+        },
+        {
+            "query": "neutral evil monster that excels in close-quarters combat",
+            "variant": "evil creature that is great in melee fighting"
+        },
+        {
+            "query": "creature that leaps impressive distances and uses pack tactics",
+            "variant": "monster that can jump far and benefits from ally support in battle"
+        }
+    ]
+}

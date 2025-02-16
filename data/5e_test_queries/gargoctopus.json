@@ -1,0 +1,25 @@
+{
+    "name": "Gargoctopus",
+    "queries": [
+        {
+            "query": "large aquatic monster with tentacles and the ability to blend into surroundings",
+            "variant": "big underwater creature with tentacles that can camouflage itself"
+        },
+        {
+            "query": "monstrosity that can swim, climb, and grapples with tentacles",
+            "variant": "creature that swims and climbs while using tentacles to grapple"
+        },
+        {
+            "query": "intelligent underwater beast capable of telepathic communication",
+            "variant": "smart sea monster that can communicate telepathically"
+        },
+        {
+            "query": "Gargoctopus combat tactics including ink cloud and fling abilities",
+            "variant": "combat strategies for the Gargoctopus using ink cloud and fling"
+        },
+        {
+            "query": "monster with high strength and stealth abilities in aquatic environments",
+            "variant": "creature with great strength and stealth skills in water habitats"
+        }
+    ]
+}

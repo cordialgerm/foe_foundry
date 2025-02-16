@@ -1,0 +1,54 @@
+{
+    "name": "Cultist",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any non-good alignment",
+    "size": "Medium",
+    "hp": 9,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 feet walking speed",
+    "role": "null",
+    "tags": [
+        "fanatic",
+        "dark ritual",
+        "minion",
+        "religious sect"
+    ],
+    "adjectives": [
+        "fanatical",
+        "fragile",
+        "devoted",
+        "sinister",
+        "sacrificial"
+    ],
+    "description": "Cultists are medium humanoids typically wearing tattered robes and armed with crude weapons like daggers, demonstrating a fanatical loyalty to dark deities.",
+    "memorable": "Their unwavering devotion can lead to dangerous situations, especially when they perform dark rituals or summon creatures.",
+    "goals": "Carrying out the will of darker powers and performing secretive, malevolent practices.",
+    "relations": "Often work in groups and can be encountered alongside more powerful dark entities.",
+    "environment": "Hidden temples, caves, or abandoned ruins.",
+    "strengths": "Possess advantage on saving throws against being charmed or frightened, reflecting their strong dedication.",
+    "weaknesses": "Very low hit points make them easy to defeat if targeted effectively.",
+    "attacks": "Employ a Dagger for melee or ranged attacks, dealing low piercing damage but can capitalize on vulnerable targets.",
+    "most_powerful_ability": "Dark Devotion grants resistance against being charmed or frightened, providing them with some resilience.",
+    "equipment": "Wears simple leather armor and uses a dagger as a weapon.",
+    "senses": "None noted.",
+    "skills": "Skilled in Deception and Religion, enabling them to manipulate and deceive others in pursuit of their goals.",
+    "additional_information": [
+        "Cultists can sacrifice themselves to protect allies nearby.",
+        "Often appear insane in their beliefs and practices.",
+        "Perform dark rituals to summon powers and creatures.",
+        "Relatively agile in combat due to decent Dexterity.",
+        "Act as expendable servants to greater evils."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fanatical dark robe wearers",
+        "low hit point followers of evil deities",
+        "sinister cultists performing dark rituals",
+        "fragile minions dedicated to dark powers",
+        "humanoid sinister dagger wielders"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Wrackwraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking and 30 feet flying",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "ghost",
+        "flying"
+    ],
+    "adjectives": [
+        "malevolent",
+        "ghostly",
+        "evasive"
+    ],
+    "description": "The Wrackwraith is a medium-sized undead creature known for its ghostly form and ability to animate debris.",
+    "memorable": "It can animate piles of debris, providing it both offensive and defensive capabilities.",
+    "goals": "To engage foes in combat while manipulating its environment for strategic advantage.",
+    "relations": "Often encountered near ruins or battlefields, typically where debris is abundant.",
+    "environment": "Can usually be found in desolate areas or locations with remnants of past conflicts.",
+    "strengths": "Immunities to necrotic and poison damage and several conditions makes it a tough opponent.",
+    "weaknesses": "Vulnerable to force damage when it ends its turn inside objects.",
+    "attacks": "Utilizes Ghostly Touch for necrotic damage and can grapple with its Slam attack.",
+    "most_powerful_ability": "Deluge: a powerful attack that can choke and harm grappling targets.",
+    "equipment": null,
+    "senses": "It has a passive perception of 13.",
+    "skills": "Possesses average perception skills.",
+    "additional_information": [
+        "Possesses Incorporeal Movement to move through objects.",
+        "Can utilize Wrack Jump to teleport between debris.",
+        "While in Wrack Form, increases its Armor Class to 18.",
+        "Can animate debris to provide it with a protective covering.",
+        "Resistant to multiple damage types including acid and fire."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead ghost creature that manipulates debris",
+        "ghostly creature able to animate wreckage",
+        "flying skirmisher with necrotic attacks",
+        "evasive undead that can choke enemies",
+        "Wrackwraith abilities and tactics"
+    ]
+}

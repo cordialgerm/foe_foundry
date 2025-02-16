@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Emerald Dragon",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 346,
+    "ac": 20,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 40 ft., burrow 40 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "psionic",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "gargantuan",
+        "intelligent",
+        "cunning"
+    ],
+    "description": "The Ancient Emerald Dragon is a powerful, gargantuan creature known for its dominating presence. It exhibits high-level psionic abilities and an extraordinary intellect, showcasing a stunning green hue and an imposing visage.",
+    "memorable": "This dragon's ability to manipulate both magical and psionic forces makes it a versatile and formidable adversary, capable of dominating the battlefield with mind-affecting powers.",
+    "goals": "The creature often seeks to outsmart its opponents while controlling the battlefield through both magical might and psionic influence.",
+    "relations": "This dragon may relate to other powerful dragons or psionic creatures, commanding respect and awe in its domain.",
+    "environment": "Typically found in secluded mountainous regions or ancient ruins, often lairs rich in treasure and magic.",
+    "strengths": "Extremely resilient due to high saving throw bonuses and damage resistance to psychic and thunder damage; can utilize psionic powers effectively.",
+    "weaknesses": "Limited mobility in tight spaces and potential vulnerabilities to certain magical influences.",
+    "attacks": "Employs a multiattack approach with a devastating bite, claw strikes, and powerful psionic waves that confuse and damage foes.",
+    "most_powerful_ability": "Psionic Wave, which sends a wave of mental pressure to damage and potentially confuse multiple enemies in the area.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive perception score of 19, allowing it to detect hidden creatures effectively.",
+    "skills": "Highly skilled in deception and history, showcasing cunning awareness and strategic capabilities.",
+    "additional_information": [
+        "Can resist conditions that would cause fatigue, making it effective in prolonged encounters.",
+        "Has a unique ability called Far Thoughts that allows it to psionically observe creatures using psionic abilities within 100 miles.",
+        "Possesses a Legendary Resistance, allowing it to succeed on failed saving throws up to three times a day."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster that can cast a variety of mind-affecting spells, such as confusion and dominate person, without material components.",
+    "test_queries": [
+        "powerful psionic dragon",
+        "emerald dragon abilities",
+        "gargantuan mind-controlling dragon",
+        "legendary dragon with psionics",
+        "intelligent dragon foe"
+    ]
+}

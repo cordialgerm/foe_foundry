@@ -1,0 +1,25 @@
+{
+    "name": "Shockwing",
+    "queries": [
+        {
+            "query": "giant moth beast that can stun opponents and immune to lightning",
+            "variant": "beast resembling a giant moth that can stun enemies and is immune to lightning"
+        },
+        {
+            "query": "small flying creature that deals lightning damage and has high stealth",
+            "variant": "small creature that flies and deals lightning damage with high stealth abilities"
+        },
+        {
+            "query": "moth-like monster with advantage on smell and electric area attacks",
+            "variant": "monster that looks like a moth with an edge in smell detection and electric attacks"
+        },
+        {
+            "query": "quick creature with evasion and area-of-effect lightning attack",
+            "variant": "fast creature that can avoid hits and has a lightning area attack"
+        },
+        {
+            "query": "beast with low intelligence that uses lightning in combat",
+            "variant": "creature with poor intelligence that attacks using lightning"
+        }
+    ]
+}

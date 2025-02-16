@@ -1,0 +1,54 @@
+{
+    "name": "Living Soot",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 50 ft.",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "poison",
+        "hazardous",
+        "fire immune"
+    ],
+    "adjectives": [
+        "chaotic",
+        "toxic",
+        "resilient",
+        "dark"
+    ],
+    "description": "The Living Soot is a large elemental creature defined by its chaotic and hazardous nature, resembling a tangled mass of blackened, dusty webbing that can effortlessly glide through the air.",
+    "memorable": "Its ability to engulf opponents in toxic fumes and create choking ash storms makes it a formidable presence on the battlefield.",
+    "goals": "It usually aims to control the battlefield by hindering opponents and dealing damage through its toxic effects.",
+    "relations": "It may be encountered alongside other elemental creatures or in environments heavily infused with soot and ash.",
+    "environment": "Commonly found in areas rich in soot and ash, such as volcanic regions or burnt landscapes.",
+    "strengths": "The Living Soot is immune to fire and poison damage, allowing it to endure longer in combat.",
+    "weaknesses": "It has a vulnerability to cold damage, which can impair its mobility and defenses significantly.",
+    "attacks": "It can make two powerful Slam attacks or grapple with its Constrict attack, dealing substantial bludgeoning and poison damage.",
+    "most_powerful_ability": "Engulfing Sootstorm, which spreads poisonous ash in a wide radius, dealing significant damage and halving opponents\u2019 speed.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has average perception abilities with a passive perception of 10.",
+    "additional_information": [
+        "Can partially freeze when exposed to cold damage, reducing speed and AC temporarily.",
+        "Does not require air, food, drink, or sleep due to its elemental nature.",
+        "Can move through narrow spaces without squeezing.",
+        "Can disguise itself by remaining motionless as a web-like mass.",
+        "Causes damage and breathing restrictions when entering a hostile creature's space."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large toxic elemental that flies",
+        "creature that spreads poisonous ash",
+        "soot creature with engulfing attacks",
+        "hazardous creature immune to fire",
+        "elemental that restricts breathing"
+    ]
+}

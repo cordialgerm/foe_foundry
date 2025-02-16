@@ -1,6 +1,8 @@
 <MonsterName/>Baboon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>12</AC>
+<HP/>3</HP>
 <summary>The Baboon is a small, agile primate with sharp fangs and a brightly colored face. These creatures are known for their aggressive behavior and live in large, noisy troops. Baboons are highly social animals, constantly chattering and interacting with one another. They are opportunistic scavengers and are quick to defend their territory against perceived threats. In battle, they use their speed and sharp teeth to harass and bite enemies, often overwhelming opponents through sheer numbers. Baboons are also skilled climbers, easily navigating trees or rocky terrain.</summary>
 
 <summary>The baboon is a small beast often found in similarly-sized groups in the wild, offering an interesting challenge for low-level adventurers. With a relatively low challenge rating of 0, it poses minimal threat, making it ideal for new players or as a minor encounter. Its primary strengths lie in its agility, reflected in a good Dexterity score of +2, and its ability to utilize Pack Tactics, which allows it to work effectively with its allies. However, its overall combat capabilities are limited, characterized by low hit points and damage output, which could be easily overwhelmed by more capable foes.</summary>
@@ -27,6 +29,7 @@ In addition to their offensive capabilities, baboons can also utilize a reaction
 
 Source: 5e_srd
 
+<statblock>
 ### Baboon
 
 *Small beast, unaligned*
@@ -51,7 +54,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.
+***Bite***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) piercing damage.</statblock>
+
 
 
 
@@ -59,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baboon
 
 *Small* *Beast*
@@ -86,6 +91,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 piercing damage.
 
 
+</statblock>
 
 
 
@@ -94,6 +100,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Baboon
 
 *Small beast*
@@ -125,5 +132,6 @@ Source: 5e_artisinal_monsters
 
 - **Startling Display.** When a creature the baboon can see attacks it while within 5 feet of it, the baboon can bare its teeth, puff its chest, or emit a quick series of barks. The attacker must succeed on a DC 11 WIS save or have disadvantage on the attack roll.
 
+</statblock>
 
 

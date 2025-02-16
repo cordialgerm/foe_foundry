@@ -1,0 +1,25 @@
+{
+    "name": "Gug",
+    "queries": [
+        {
+            "query": "massive giant with grappling abilities and a powerful stomp attack",
+            "variant": "huge giant that can grapple foes and has a strong stomp attack"
+        },
+        {
+            "query": "neutral evil giant that swallows its prey and deals acid damage",
+            "variant": "giant of neutral evil alignment that can consume its enemies and apply acid damage"
+        },
+        {
+            "query": "towering creature with high strength that throws opponents",
+            "variant": "giant with enormous strength that can fling its enemies"
+        },
+        {
+            "query": "giant with poison immunity and strong melee attacks",
+            "variant": "a giant that is immune to poison and has powerful melee attack capabilities"
+        },
+        {
+            "query": "creature with darkvision and multiple attacks per turn",
+            "variant": "monster with darkvision and can perform several attacks in one turn"
+        }
+    ]
+}

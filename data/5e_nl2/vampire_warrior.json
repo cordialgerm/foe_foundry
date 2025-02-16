@@ -1,0 +1,53 @@
+{
+    "name": "Vampire Warrior",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., climb 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "vampire",
+        "fighter"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "strong",
+        "resilient"
+    ],
+    "description": "The Vampire Warrior is characterized by a powerful physique, razor-sharp fangs, and a charming demeanor. It is known for wielding a Reaping Greatsword and possessing dark, brooding features.",
+    "memorable": "Its ability to charm and manipulate foes makes it a deadly opponent, while its gift for regeneration and mist transformation allows it to evade defeat.",
+    "goals": "To dominate its enemies in battle while spreading its vampiric influence.",
+    "relations": "Often serves as a master to lesser undead and may be allied with other evil creatures.",
+    "environment": "Commonly found in dark, forgotten places, ruins, or anywhere suitable for an undead lair.",
+    "strengths": "Possesses high strength and constitution, excellent at grappling and causing necrotic damage, and able to charm foes.",
+    "weaknesses": "Vulnerable to sunlight and running water, which can incapacitate or damage it significantly.",
+    "attacks": "Melee attacks include a powerful Reaping Greatsword that can strike multiple targets, a debilitating Bite that deals necrotic damage and reduces maximum health, and a Grab action to restrain foes.",
+    "most_powerful_ability": "Misty Recovery allows the Vampire Warrior to turn into mist upon reaching zero hit points, potentially escaping destruction.",
+    "equipment": "Wields a Reaping Greatsword and possesses natural weapons enhanced by its necrotic abilities.",
+    "senses": "Has darkvision with a range of 120 feet and a passive perception of 17, allowing it to detect hidden creatures easily.",
+    "skills": "Skilled in stealth and persuasion, making it adept at ambushes and manipulative encounters.",
+    "additional_information": [
+        "Can transform into mist or a small beast.",
+        "Resting place must contain soil from its homeland.",
+        "Regenerates hit points unless damaged by radiant sources.",
+        "Can command lesser undead as vampire spawn.",
+        "Can use legendary actions to gain strategic advantages."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead warrior known for charm and strength",
+        "vampire with powerful melee attacks and magic",
+        "creature that can turn into mist during battle",
+        "strong and resilient vampire manipulator",
+        "deadly vampire warrior with deadly regeneration"
+    ]
+}

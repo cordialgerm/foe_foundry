@@ -1,0 +1,54 @@
+{
+    "name": "Young Copper Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 144,
+    "ac": 17,
+    "srd": true,
+    "cr": "7",
+    "movement": "40 ft. walking, 40 ft. climbing, 80 ft. flying",
+    "role": null,
+    "tags": [
+        "dragon",
+        "metallic",
+        "copper",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "playful",
+        "quick-witted",
+        "cunning",
+        "mischievous"
+    ],
+    "description": "A large dragon with gleaming copper-colored scales, known for its love of riddles and pranks.",
+    "memorable": "Combines physical attacks with unique breath weapons and clever abilities.",
+    "goals": "Enjoys playing tricks on travelers and collecting treasure while avoiding violence.",
+    "relations": "Often interacts with other dragons and can be encountered in mountainous regions.",
+    "environment": "Typically found in hilly or mountainous areas.",
+    "strengths": "Highly intelligent and versatile, capable of dealing significant damage with breath weapons and spells.",
+    "weaknesses": "Reliant on breath weapon recharge and average dexterity limits agility.",
+    "attacks": "Multiattack with a bite and two claw attacks; breath weapons inflict area damage and debilitate foes.",
+    "most_powerful_ability": "Acid Breath, which can deal extensive damage in a line and is incredibly potent.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet and keen senses, allowing for effective detection of hidden threats.",
+    "skills": "Excels in deception and perception, showcasing adeptness in stealth and cunning.",
+    "additional_information": [
+        "Possesses a special ability called Corrosive Scales that damages metal weapons striking it.",
+        "Can change shape into any beast or humanoid of equal or lower challenge rating.",
+        "Has a unique ability called Flow Within the Mountain for enhanced stealth in mountainous regions.",
+        "Innate spellcasting allows casting of suggestion and hideous laughter three times per day.",
+        "Has a passive perception of 17, making it highly aware of its surroundings."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting using Charisma; can cast suggestion and hideous laughter.",
+    "test_queries": [
+        "playful copper dragon known for riddles",
+        "large dragon that breathes acid and gas",
+        "clever dragon with corrosive scales and tricks",
+        "quick-witted dragon in mountainous areas",
+        "dragon that can change shape and cast spells"
+    ]
+}

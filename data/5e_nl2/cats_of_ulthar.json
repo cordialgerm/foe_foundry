@@ -1,0 +1,50 @@
+{
+    "name": "Cats of Ulthar",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 55,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "fear"
+    ],
+    "adjectives": [
+        "fearsome",
+        "agile",
+        "coordinated"
+    ],
+    "description": "The Cats of Ulthar are a swarm of Huge agile cats that can occupy the same space as others, utilizing their coordinated attacks and exceptional agility to overwhelm foes.",
+    "memorable": "Their unique Feline Terror ability can incapacitate enemies with fear, disrupting their actions and placements.",
+    "goals": "They typically aim to overwhelm and incapacitate their enemies through fear and swarming tactics.",
+    "relations": "They may be associated with other beasts or creatures that utilize swarm tactics.",
+    "environment": "Often found in urban areas or places where they can form swarms.",
+    "strengths": "Exceptional agility and swarming capability, with the ability to inflict significant damage through coordinated bites.",
+    "weaknesses": "Low physical strength, Constitution, and Intelligence scores make them vulnerable to certain attacks and challenges.",
+    "attacks": "They can perform coordinated bites that deal significant piercing damage, targeting up to two creatures at once.",
+    "most_powerful_ability": "Feline Terror, which can incapacitate creatures with fear, causing them to fall prone for one minute.",
+    "equipment": null,
+    "senses": "They possess Keen Senses, allowing them advantage on perception checks based on sight, hearing, or smell.",
+    "skills": "They have a notably high Stealth skill, making them adept at avoiding detection.",
+    "additional_information": [
+        "Swarm ability enables them to share space with other creatures.",
+        "Damage resistance to bludgeoning, piercing, and slashing.",
+        "Condition immunities include charmed, frightened, and paralyzed.",
+        "Feline Terror can disrupt enemy combat effectiveness.",
+        "They cannot regain hit points or gain temporary hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of agile cats with fear abilities",
+        "huge cats that can incapacitate enemies",
+        "monster that overwhelms foes with numbers",
+        "fear-inducing cats swarm in urban areas",
+        "coordinated biting attacks by cats"
+    ]
+}

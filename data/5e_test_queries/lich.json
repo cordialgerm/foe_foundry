@@ -1,0 +1,25 @@
+{
+    "name": "Lich",
+    "queries": [
+        {
+            "query": "undead spellcaster in decayed robes with glowing eyes",
+            "variant": "undead magic user in tattered robes with bright eyes"
+        },
+        {
+            "query": "powerful intelligence undead creature that uses necromancy",
+            "variant": "intelligent undead being that practices dark magic"
+        },
+        {
+            "query": "Lich with a phylactery that prevents permanent death",
+            "variant": "Lich having a soul vessel ensuring it can't be permanently killed"
+        },
+        {
+            "query": "ancient tower dwelling undead spellcaster that can paralyze",
+            "variant": "old tower resident undead magic user with paralyzing attacks"
+        },
+        {
+            "query": "medium undead type with cold and lightning resistances",
+            "variant": "medium undead creature resistant to cold and lightning damage"
+        }
+    ]
+}

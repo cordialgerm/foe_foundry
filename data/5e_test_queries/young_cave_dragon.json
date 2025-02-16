@@ -1,0 +1,25 @@
+{
+    "name": "Young Cave Dragon",
+    "queries": [
+        {
+            "query": "large dragon that burrows through rock and has poisonous breath",
+            "variant": "large drgon that burrows throguh rock and has posinous breath"
+        },
+        {
+            "query": "dragon that uses darkness to attack and is skilled at climbing",
+            "variant": "dragon that uses darknes to attack and is skilld at climbing"
+        },
+        {
+            "query": "subterranean dragon with spikes that intimidates intruders",
+            "variant": "subterranian dragon with spiks that intimidates intruders"
+        },
+        {
+            "query": "cunning dragon with high strength in underground environments",
+            "variant": "cunning drgn with hgih strngth in underground enviroments"
+        },
+        {
+            "query": "evil dragon known for poison attacks and underground lairs",
+            "variant": "evil drgon knwn for poisn ataks and underground lairs"
+        }
+    ]
+}

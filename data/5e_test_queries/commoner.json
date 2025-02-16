@@ -1,0 +1,25 @@
+{
+    "name": "Commoner",
+    "queries": [
+        {
+            "query": "humanoid character that lacks combat skills and has low hit points",
+            "variant": "humanoid creature without combat skills and few hit points"
+        },
+        {
+            "query": "ordinary people carrying everyday tools in a fantasy setting",
+            "variant": "common folks with simple tools in a fantasy environment"
+        },
+        {
+            "query": "low-level creature that typically works as a farmer or craftsman",
+            "variant": "creature with low challenge rating often serving as farmer or artisan"
+        },
+        {
+            "query": "weak humans that can band together for a surprising attack",
+            "variant": "fragile humanoids that can unite for an unexpected assault"
+        },
+        {
+            "query": "simple character with average stats and basic melee attacks",
+            "variant": "basic character featuring average abilities and simple melee moves"
+        }
+    ]
+}

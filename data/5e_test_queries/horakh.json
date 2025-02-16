@@ -1,0 +1,25 @@
+{
+    "name": "Horakh",
+    "queries": [
+        {
+            "query": "medium-sized monstrosity that implants eggs into prey",
+            "variant": "monstrosity that is medium-sized and implants eggs into its prey"
+        },
+        {
+            "query": "stealthy ambush predator with darkvision and high jump ability",
+            "variant": "predator with high jump ability and darkvision that is also stealthy"
+        },
+        {
+            "query": "agile creature with a strong bite attack that blinds victims",
+            "variant": "creature with strong bite attack that can blind its victims and is agile"
+        },
+        {
+            "query": "cunning monster with the ability to inflict disadvantage on perception",
+            "variant": "monster that is cunning and can inflict disadvantage on perception checks"
+        },
+        {
+            "query": "horrifying monstrosity with a challenge rating of 9 and parasite-like behavior",
+            "variant": "monstrosity with a challenge rating of 9 and parasitic behavior that is horrifying"
+        }
+    ]
+}

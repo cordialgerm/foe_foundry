@@ -1,6 +1,8 @@
 <MonsterName/>Ahuizotl</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>71</HP>
 <summary>The Ahuizotl is a small, unaligned monstrosity known for its agility and aquatic capabilities. With a challenge rating of 2, it presents a moderate threat to low-level adventurers. The creature has a good balance of physical stats, particularly in Strength and Dexterity, making it effective in melee combat. Its notable features include a spiky coat that can damage opponents upon touch and the ability to grapple other creatures or objects, pulling them along as it swims or moves. While it has decent hit points, its weaknesses lie in its low Intelligence, Wisdom, and Charisma, making it less effective in social interactions or strategic planning. Overall, the Ahuizotl thrives in ambush scenarios, capitalizing on its strong physical attacks and aquatic versatility.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Ahuizotl’s blend of agility, melee capabilities, and special abil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ahuizotl
 
 *Small* *Monstrosity* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Tail Grab:** The ahuizotl grabs a creature or item. If the target is a Medium or smaller creature, it must succeed on a DC 14 Strength saving throw or be grappled (escape DC 14). The ahuizotl can then move up to its speed as a bonus action. The grappled creature must succeed on a DC 14 Strength saving throw or be pulled along 5 feet behind the ahuizotl. A creature being dragged by the ahuizotl makes attack rolls and Dexterity saving throws with disadvantage.<br><br>If the target is an object or weapon being held by another creature, that creature must succeed on a DC 14 Strength saving throw, or the ahuizotl pulls the object away from the creature. After stealing an object or weapon, the ahuizotl can move up to its speed as a bonus action. The ahuizotl can only grapple one creature or hold one weapon or object at a time. If holding a weapon, it can use its Tail Grab action to make one attack with the weapon with no proficiency bonus
 
 
+</statblock>
 
 

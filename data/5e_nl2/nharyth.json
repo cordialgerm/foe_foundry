@@ -1,0 +1,51 @@
+{
+    "name": "Nharyth",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "hover 0 ft., fly 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "chaotic evil",
+        "hovering",
+        "underground"
+    ],
+    "adjectives": [
+        "huge",
+        "dangerous",
+        "debilitating",
+        "chaotic"
+    ],
+    "description": "A huge aberration with chaotic features, it exhibits a powerful presence and grotesque attributes. Its body is characterized by the chaotic nature of its spines and malformations.",
+    "memorable": "Its ability to create difficult terrain with spine traps and paralyze foes makes it an intimidating opponent.",
+    "goals": "To ambush and incapacitate foes, using its traps and debilitating attacks.",
+    "relations": "Often encountered in the company of other aberrations or creatures that dwell in darkness.",
+    "environment": "Typically found in dark, secluded areas, possibly underground or in hidden lairs.",
+    "strengths": "High resilience with substantial hit points and several resistances; immune to conditions that would hinder its combat effectiveness.",
+    "weaknesses": "Low Intelligence and Charisma suggest vulnerability in mental challenges and social interactions.",
+    "attacks": "Utilizes multiattack options with powerful spined slap and ranged spine shot attacks, able to inflict paralysis on hitting opponents.",
+    "most_powerful_ability": "The devastating Spine Trap, which can create hazardous terrain that ensnares and paralyzes enemies.",
+    "senses": "Possesses blindsight out to 120 feet, allowing it to navigate effectively in total darkness.",
+    "skills": "Excels in perception and stealth, making it a formidable ambusher.",
+    "additional_information": [
+        "Resistant to bludgeoning and psychic damage",
+        "Immune to being blinded, deafened, and paralyzed",
+        "Can create a web of nearly transparent spines",
+        "Can plant up to 24 spines before needing a long rest",
+        "Paralyzes opponents that get ensnared by its traps"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that can fly and paralyze",
+        "huge chaotic creature that hides spines",
+        "aberration that creates hazardous terrain",
+        "flying creature with debilitating attacks",
+        "monster with strong perceptive abilities and traps"
+    ]
+}

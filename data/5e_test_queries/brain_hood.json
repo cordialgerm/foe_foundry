@@ -1,0 +1,25 @@
+{
+    "name": "Brain Hood",
+    "queries": [
+        {
+            "query": "tiny psychic creature that can control beasts",
+            "variant": "small mental being able to take over animals"
+        },
+        {
+            "query": "creature with spellcasting abilities and a low strength score",
+            "variant": "monster having low strength but can cast spells"
+        },
+        {
+            "query": "neutral evil aberration that communicates through telepathy",
+            "variant": "evil-minded aberrant creature using telepathy to communicate"
+        },
+        {
+            "query": "psychic monster that merges with animals and has a high intelligence",
+            "variant": "mental creature blending with beasts having great intelligence"
+        },
+        {
+            "query": "spellcasting creature with blindsight and controls beasts",
+            "variant": "spell using being with blindsight that can take control of animals"
+        }
+    ]
+}

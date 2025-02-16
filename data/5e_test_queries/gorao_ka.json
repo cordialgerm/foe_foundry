@@ -1,0 +1,25 @@
+{
+    "name": "Gorao-Ka",
+    "queries": [
+        {
+            "query": "tiny fey creature that influences luck and has magical pouches",
+            "variant": "tiny creature of fey origin that affects luck and carries magical pouches"
+        },
+        {
+            "query": "whimsical fey that explodes with silver coins upon death",
+            "variant": "playful fey that bursts with silver coins when it dies"
+        },
+        {
+            "query": "creature that can bless allies with good luck and carries money pouches",
+            "variant": "creature that can grant allies good luck and has pouches of money"
+        },
+        {
+            "query": "fey character known for cunning tricks and magical ability",
+            "variant": "fey being recognized for sly tricks and magical powers"
+        },
+        {
+            "query": "tiny neutral good fey with unique abilities affecting treasure",
+            "variant": "small neutral good fey that has special abilities related to treasure"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Underworld Sentinel",
+    "queries": [
+        {
+            "query": "huge undead guardian with high melee damage",
+            "variant": "large undead protector with strong melee attacks"
+        },
+        {
+            "query": "creature with scythe attack and necrotic damage",
+            "variant": "monster that has a scythe attack dealing necrotic damage"
+        },
+        {
+            "query": "undead monster immune to turning effects and poison",
+            "variant": "undead creature that is immune to turning and poison"
+        },
+        {
+            "query": "powerful foe with blindsight and darkvision",
+            "variant": "strong adversary possessing blindsight and darkvision"
+        },
+        {
+            "query": "sentinel that can control passage and deal area damage",
+            "variant": "guardian that controls passage and inflicts area damage"
+        }
+    ]
+}

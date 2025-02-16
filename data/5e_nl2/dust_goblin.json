@@ -1,0 +1,52 @@
+{
+    "name": "Dust Goblin",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 16,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walks 30 feet per round",
+    "role": "Ambusher",
+    "tags": [
+        "goblin",
+        "sneaky",
+        "ambush"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "fear-inducing"
+    ],
+    "description": "The Dust Goblin is a small humanoid creature characterized by its stealthy nature and a penchant for ambush tactics. It excels in evading detection thanks to its high Dexterity and Stealth proficiency.",
+    "memorable": "It can instill fear in its opponents, making it a tricky adversary despite its small size.",
+    "goals": "To ambush foes and create fear.",
+    "relations": "Often operates alone or in small groups, potentially alongside other goblins or similar creatures.",
+    "environment": "Commonly found in areas where they can easily hide and strike from the shadows.",
+    "strengths": "High Dexterity aids in stealth and ranged attacks, making it effective in surprise engagements.",
+    "weaknesses": "Low Strength makes it physically weak in melee combat.",
+    "attacks": "Uses a shortsword for melee attacks or a light crossbow for ranged attacks, both capable of dealing piercing damage.",
+    "most_powerful_ability": "Twisted: Causes targets to become frightened if attacked from hiding, disrupting their actions.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in low-light conditions.",
+    "skills": "Highly proficient in Stealth with a +7 modifier.",
+    "additional_information": [
+        "Immunity to charmed and frightened conditions",
+        "Expert at ambush tactics",
+        "Low hit points make it fragile",
+        "Good Armor Class allows some resilience",
+        "Excellent in evading detection"
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small humanoid that ambushes with fear",
+        "stealthy creature skilled in surprise attacks",
+        "goblin-like monster with piercing attacks",
+        "fear-inducing ambusher in low-light",
+        "sneaky creature with high dexterity"
+    ]
+}

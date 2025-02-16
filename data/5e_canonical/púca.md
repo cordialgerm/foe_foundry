@@ -1,6 +1,8 @@
 <MonsterName/>Púca</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>12</AC>
+<HP/>142</HP>
 <summary>The Púca is a large fey creature characterized by its neutral evil alignment. It serves as a cunning manipulator, preying upon unsuspecting travelers with its beguiling abilities. With a moderate armor class of 12 and a substantial pool of hit points totaling 142 from 19d10+38, the Púca can endure significant damage while also posing a considerable threat in combat. It has a nimble speed of 50 feet, allowing it to maneuver effectively during encounters. The creature's challenge rating of 7 reflects its capability to contend with mid-level adventurers, providing 2,900 experience points upon defeat. Its strengths lie in its high Strength and Charisma scores, allowing it to deliver powerful physical attacks while charming its foes. However, its weaknesses include average Wisdom, which may make it susceptible to certain forms of magic, and it is also vulnerable to attacks made with cold iron weapons.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ For actions during combat, the Púca can perform a "Multiattack," using two Chai
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Púca
 
 *Large* *Fey* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +7 to hit, 5 ft., one target, 13 (2d8+4) bludgeoning damage and target must make DC 15 Str save or be knocked prone.
 
 
+</statblock>
 
 

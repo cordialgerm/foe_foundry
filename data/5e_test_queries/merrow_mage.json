@@ -1,0 +1,25 @@
+{
+    "name": "Merrow Mage",
+    "queries": [
+        {
+            "query": "large aquatic monster with spellcasting abilities",
+            "variant": "big water monster with magic powers"
+        },
+        {
+            "query": "monstrous creature that can breathe underwater and regenerate health",
+            "variant": "monster that can breathe in water and heals itself"
+        },
+        {
+            "query": "merfolk-like creature that uses darkness and charm magic",
+            "variant": "creature similar to merfolk using charm and darkness spells"
+        },
+        {
+            "query": "strong melee attacker that lives in aquatic environments",
+            "variant": "powerful close combat fighter found in water environments"
+        },
+        {
+            "query": "creature with claws and a harpoon, adept in ambushing",
+            "variant": "monster with claws and a harpoon skilled at surprise attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Holler Spider",
+    "queries": [
+        {
+            "query": "small spider that climbs well and makes loud noises",
+            "variant": "tiny spider that hoots loudly and climbs great"
+        },
+        {
+            "query": "ambush predator with impressive stealth in various terrains",
+            "variant": "stealthy ambush predator that can navigate different terrains"
+        },
+        {
+            "query": "spider that uses thunder damage and hides effectively",
+            "variant": "spider that inflicts thunder damage and is good at hiding"
+        },
+        {
+            "query": "creature with high dexterity and ability to climb ceilings",
+            "variant": "beast with excellent dexterity and can climb upside down"
+        },
+        {
+            "query": "tiny beast that creates alarm sounds and has a bite attack",
+            "variant": "small creature that makes loud alarms and has a biting attack"
+        }
+    ]
+}

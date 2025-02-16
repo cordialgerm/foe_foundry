@@ -1,0 +1,25 @@
+{
+    "name": "Armory Golem",
+    "queries": [
+        {
+            "query": "large construct with high strength and poor charisma",
+            "variant": "golem that is large with bad charisma but great strength"
+        },
+        {
+            "query": "defensive guardian made of armor immune to physical damage",
+            "variant": "guardian creature made from armor that is immune to most physical attacks"
+        },
+        {
+            "query": "creature that can regain hit points with armor enhancement",
+            "variant": "monster that enhances its armor to heal during battle"
+        },
+        {
+            "query": "tactical challenge monster that can disable its own attacks",
+            "variant": "monster that presents a tactical challenge by possibly disabling its own attacks"
+        },
+        {
+            "query": "powerful guardian with magical weapon attacks and condition immunities",
+            "variant": "strong defensive creature with immunity to conditions and magical attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Qiqirn",
+    "queries": [
+        {
+            "query": "small agile creature that can inflict necrotic damage and uses stealth",
+            "variant": "agile small creature that can cause necrotic damage and is stealthy"
+        },
+        {
+            "query": "monstrosity with high Dexterity that frightens its enemies",
+            "variant": "monstrosity with great Dexterity that can scare its foes"
+        },
+        {
+            "query": "Qiqirn abilities like Keen Smell and Horrifying Wail",
+            "variant": "Qiqirn powers such as Keen Smell and Horrifying Wail"
+        },
+        {
+            "query": "creature that understands Common but cannot speak and has darkvision",
+            "variant": "monster that knows Common but is mute and has dark vision"
+        },
+        {
+            "query": "stealthy creature with low Intelligence and strong melee attack",
+            "variant": "stealthy monster with bad Intelligence and powerful melee attack"
+        }
+    ]
+}

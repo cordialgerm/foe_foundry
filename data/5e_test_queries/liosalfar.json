@@ -1,0 +1,25 @@
+{
+    "name": "Liosalfar",
+    "queries": [
+        {
+            "query": "large elemental creature that deals radiant damage and can charm foes",
+            "variant": "large elemental that can charm enemies and deals radiant damage"
+        },
+        {
+            "query": "neutral aligned elemental with truesight and mesmerizing abilities",
+            "variant": "elemental with neutral alignment that has truesight and mesmerizing powers"
+        },
+        {
+            "query": "elemental that is immune to charm and has high dexterity",
+            "variant": "high dexterity elemental that is resistant to being charmed"
+        },
+        {
+            "query": "creature with radiant touch attack and multiple movement abilities",
+            "variant": "creature that has a radiant touch ability and can move in unique ways"
+        },
+        {
+            "query": "elemental that takes damage in darkness and has bonus light effects",
+            "variant": "elemental that is harmed in magical darkness and can emit light"
+        }
+    ]
+}

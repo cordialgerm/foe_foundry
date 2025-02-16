@@ -1,0 +1,25 @@
+{
+    "name": "Rageipede",
+    "queries": [
+        {
+            "query": "small beast that hides in forests and induces rage",
+            "variant": "beastly small creature that induces rage and hides in woods"
+        },
+        {
+            "query": "creature with natural camouflage and poison bite found in grasslands",
+            "variant": "grassland creature with poison bite and natural camouflage"
+        },
+        {
+            "query": "forest-dwelling monster that can make targets go berserk",
+            "variant": "monster that resides in forests and makes victims go berserk"
+        },
+        {
+            "query": "beast that has a bite attack and causes confusion in combat",
+            "variant": "creature causing confusion in battle with its bite attack"
+        },
+        {
+            "query": "small creature with high AC and surprise attack ability in tall grass",
+            "variant": "small beast in tall grass with high AC and surprise ability"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Living Colossus",
+    "queries": [
+        {
+            "query": "gargantuan construct with high hit points that can deal double damage to structures",
+            "variant": "huge construct that has high hitpoints and deals double damage to objects"
+        },
+        {
+            "query": "massive statue-like creature that doesn\u2019t need to eat or sleep and has thunderous abilities",
+            "variant": "large statue creature that requires no food or sleep and can use thunder attacks"
+        },
+        {
+            "query": "strong and resilient construct that can provide temporary hit points to allies",
+            "variant": "resilient and powerful construct that grants allies temporary health"
+        },
+        {
+            "query": "living statue with a low dexterity score that knocks creatures prone",
+            "variant": "living monument with poor dexterity that can knock enemies down"
+        },
+        {
+            "query": "tall construct with slam attacks and special area damage ability",
+            "variant": "giant construct that can make slam attacks and has an area damage special ability"
+        }
+    ]
+}

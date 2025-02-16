@@ -1,0 +1,25 @@
+{
+    "name": "Scarecrow",
+    "queries": [
+        {
+            "query": "construct that instills fear and is vulnerable to fire",
+            "variant": "fear-inducing construct that's weak to fire"
+        },
+        {
+            "query": "medium-sized creature that resembles a typical scarecrow and resists being frightened",
+            "variant": "medium creature shaped like a scarecrow that cannot be easily scared"
+        },
+        {
+            "query": "creature with darkvision that can become invisible when still and moves slowly",
+            "variant": "slow-moving creature with darkvision that vanishes when motionless"
+        },
+        {
+            "query": "monster that can frighten enemies and has an illusionary ability once a day",
+            "variant": "monster with the power to scare foes and cast illusions daily"
+        },
+        {
+            "query": "scarecrow-like creature immune to poison and resistant to bludgeoning damage",
+            "variant": "scarecrow creature that can't be poisoned and resists blunt attacks"
+        }
+    ]
+}

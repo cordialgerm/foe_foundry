@@ -1,0 +1,25 @@
+{
+    "name": "Adult Bronze Dragon",
+    "queries": [
+        {
+            "query": "majestic dragon with bronze scales that lives by the sea",
+            "variant": "majestic sea dragon with bronze scales"
+        },
+        {
+            "query": "huge dragon that can breathe lightning and manipulate water",
+            "variant": "large dragon that breathes lightning and manipulates water"
+        },
+        {
+            "query": "bronze dragon known for its lightning breath and amphibious abilities",
+            "variant": "bronze dragon famous for lightning breath and can breathe underwater"
+        },
+        {
+            "query": "giant dragon that protects coastal areas and has a fearsome roar",
+            "variant": "huge dragon guarding coastal regions with a terrifying roar"
+        },
+        {
+            "query": "dragon with a high hit point pool and mastery over storms",
+            "variant": "dragon that has a large number of hit points and controls storms"
+        }
+    ]
+}

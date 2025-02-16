@@ -1,0 +1,25 @@
+{
+    "name": "Black Patch",
+    "queries": [
+        {
+            "query": "amorphous aquatic ooze that can mesmerize enemies",
+            "variant": "aquatic ooze that is amorphous and can mesmerize foes"
+        },
+        {
+            "query": "large black ooze with a swimming speed of 40 feet",
+            "variant": "big black ooze that swims at 40 feet speed"
+        },
+        {
+            "query": "creature with high hit points and acid damage immunity found in water",
+            "variant": "monster with resistance to acid and high hit points living in aquatic environments"
+        },
+        {
+            "query": "combat ability to attach and suffocate creatures in water",
+            "variant": "ability to suffocate and attach to foes during combat in water"
+        },
+        {
+            "query": "sluggish creature that can pass through tight spaces and breathe underwater",
+            "variant": "slow-moving creature that can squeeze through tight spots and breathes underwater"
+        }
+    ]
+}

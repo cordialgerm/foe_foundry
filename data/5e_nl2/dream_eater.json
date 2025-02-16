@@ -1,0 +1,49 @@
+{
+    "name": "Dream Eater",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 ft. walking, 30 ft. flying",
+    "role": "Ambusher",
+    "tags": [
+        "fiend",
+        "nightmare",
+        "dream",
+        "predator"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "nightmarish"
+    ],
+    "description": "The Dream Eater is a medium fiend characterized by its deceptive nature, with dark and insidious features that invoke fear. Its high charisma and dexterity enable it to excel in combat as it utilizes claws and bites to attack.",
+    "memorable": "It feeds on the dreams and mental states of victims, inducing nightmares and incapacitating foes with potent charm effects.",
+    "goals": "To manipulate and incapacitate foes while feeding on their mental energy from dreams.",
+    "relations": "Often encountered with other fiends or as a master of underlings that share its sinister goals.",
+    "environment": "The Dream Eater usually dwells in dark places, often haunting sleep or dream realms.",
+    "strengths": "It possesses damage immunities and resistances, along with abilities that cause psychic damage and control over its victims.",
+    "weaknesses": "Notably vulnerable to magical attacks that can bypass its resistances, making it susceptible to skilled spellcasters.",
+    "attacks": "Employs claws and bite attacks, employing swift, predatory strikes as well as incapacitating foes with charm effects.",
+    "most_powerful_ability": "Waking Dreams, causing significant psychic damage and incapacitating creatures within its area of influence.",
+    "equipment": null,
+    "senses": "Darkvision up to 60 feet enhances its effectiveness in shadowy environments.",
+    "skills": "High proficiency in Deception and Persuasion, allowing it to easily manipulate and trick its victims.",
+    "additional_information": [
+        "Immunities to poison damage and poisoned condition",
+        "Capable of grappling and restraining opponents with its claws",
+        "Can change shape to mimic humanoids, enhancing its infiltration abilities"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "monster that feeds on dreams and mental states",
+        "powerful fiend with charm abilities",
+        "nightmare creature that can fly and shapeshift",
+        "dream predator with psychic attacks",
+        "deceptive fiend that grapples and incapacitates"
+    ]
+}

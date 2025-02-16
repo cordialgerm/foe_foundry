@@ -1,0 +1,25 @@
+{
+    "name": "Grimlock",
+    "queries": [
+        {
+            "query": "blind humanoid creature that lives in the Underdark with keen senses",
+            "variant": "humanoid creature that is blind and dwells in the Underdark with sharp senses"
+        },
+        {
+            "query": "pale gray skinned creature that excels in stealth and ambush tactics",
+            "variant": "creature with pale gray skin that is good at stealth and ambushing"
+        },
+        {
+            "query": "savage primitive hunter with a spiked club that uses smell and hearing",
+            "variant": "primitive hunter that uses hearing and smell with a club weapon"
+        },
+        {
+            "query": "medium humanoid that thrives in rocky environments and has poor charisma",
+            "variant": "medium creature that is skilled in rocky areas and has low charisma"
+        },
+        {
+            "query": "creature that relies on camouflage for hiding and has a brutal combat style",
+            "variant": "monster that uses camouflage to hide and fights brutally"
+        }
+    ]
+}

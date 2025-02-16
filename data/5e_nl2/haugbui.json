@@ -1,0 +1,50 @@
+{
+    "name": "Haugbui",
+    "creature_type": "Undead",
+    "alignment": "Lawful Neutral",
+    "size": "Medium",
+    "hp": 153,
+    "ac": 15,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "psychic"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "durable"
+    ],
+    "description": "The Haugbui is a formidable undead creature with incorporeal nature, allowing it to move through obstacles. It showcases a ghostly appearance and possesses exceptional agility and wisdom.",
+    "memorable": "Its unique ability to create an invisible sensor up to 5 miles from its burial mound allows it to perceive and act independently.",
+    "goals": "To thwart adventurers and protect its burial ground.",
+    "relations": "Could be associated with other undead or serve as a guardian for ancient sites.",
+    "environment": "Typically found near burial mounds or ancient graveyards.",
+    "strengths": "Exceptional Dexterity and Wisdom lend it agility and perceptiveness, making it difficult to target.",
+    "weaknesses": "Vulnerable to sunlight, suffering penalties in bright light.",
+    "attacks": "Psychic Blast delivers devastating psychic damage, while Invisibility makes it hard to target.",
+    "most_powerful_ability": "Sepulchral Scrying allows it to project its senses and act through an invisible sensor, enhancing its strategic options.",
+    "equipment": null,
+    "senses": "The Haugbui has truesight within a 60-foot range and a high passive Perception score of 20.",
+    "skills": "It excels in skills like Perception and Religion, showcasing its knowledge of the arcane and undead.",
+    "additional_information": [
+        "Immunities to poison and nonmagical physical damage",
+        "Possesses a variety of spellcasting abilities",
+        "Gains advantage on saving throws against turning effects",
+        "Incorporeal Movement for tactical advantages",
+        "Undead Nature means it does not require food or sleep"
+    ],
+    "damage_types": [],
+    "spellcasting": "Utilizes Wisdom for spellcasting with a variety of spells available for utility and crowd control.",
+    "test_queries": [
+        "undead creature with psychic powers",
+        "ghostly monster that moves through walls",
+        "tough undead entity with invisibility",
+        "strategic spellcasting creature in graveyards",
+        "undead creature vulnerable to sunlight"
+    ]
+}

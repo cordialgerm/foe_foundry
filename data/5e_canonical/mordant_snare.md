@@ -1,6 +1,8 @@
 <MonsterName/>Mordant Snare</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>248</HP>
 <summary>The Mordant Snare is a formidable and grotesque aberration known for its chaotic evil nature. With a gargantuan size, it poses a significant threat in combat and is an expert in ambush tactics. One of its greatest strengths lies in its substantial hit points, allowing it to absorb considerable damage before being defeated. Its high Armor Class and resistance to physical damage from nonmagical sources further enhance its survivability. The creature's ability to create Mordant Puppets from deceased humanoids adds a strategic layer to its offensive capabilities, allowing it to control additional combatants. However, the Mordant Snare struggles with low Charisma and has average Wisdom, affecting its interactions outside of combat. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Mordant Snare is a complex creature that embodies both strength and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mordant Snare
 
 *Gargantuan* *Aberration* *Chaotic Evil*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Tentacle:** Melee Weapon Attack: +11 to hit, reach 20 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage, and the target is grappled (escape DC 18) if it is a Large or smaller creature. The mordant snare has eleven tentacles, each of which can grapple only one target.
 - **Acid Spike:** Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 13 (3d8) acid damage.
 - **Hidden Trap:** While underground, the mordant snare covers itself in dirt, sand, or other material and lurks just below the surface. The mordant snare is indistinguishable from the ground around it while motionless and covered in this way. When a creature enters the mordant snare’s space, the snare can make one Tentacle attack against the creature as a reaction, removing the covering material.
+</statblock>
 
 

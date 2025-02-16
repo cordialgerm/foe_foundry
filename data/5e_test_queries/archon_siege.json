@@ -1,0 +1,25 @@
+{
+    "name": "Archon, Siege",
+    "queries": [
+        {
+            "query": "huge celestial creature with magical attacks and high defense",
+            "variant": "massive celestial being with magical strikes and good defense"
+        },
+        {
+            "query": "lawful good giant monster that can cause massive damage to structures",
+            "variant": "lawful good large beast that inflicts great damage on buildings"
+        },
+        {
+            "query": "immortal celestial being with true sight and telepathy abilities",
+            "variant": "eternal celestial entity with true sight and telepathic powers"
+        },
+        {
+            "query": "large celestial creature that specializes in combat and siege warfare",
+            "variant": "big celestial monster focusing on battle and siege tactics"
+        },
+        {
+            "query": "powerful celestial monster with good perception and resistance to magic",
+            "variant": "strong celestial being that possesses keen perception and is magic-resistant"
+        }
+    ]
+}

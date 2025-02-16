@@ -1,0 +1,25 @@
+{
+    "name": "Giant Air Elemental",
+    "queries": [
+        {
+            "query": "huge wind creature that flies and resists lightning damage",
+            "variant": "massive air monster that can fly and is resistant to lightning attacks"
+        },
+        {
+            "query": "elemental that can move through narrow spaces and has a whirlwind attack",
+            "variant": "creature that can glide through tight spots and performs a whirlwind move"
+        },
+        {
+            "query": "flying elemental with high dexterity and multiple slam attacks",
+            "variant": "air-based creature with great agility and can do two slam moves"
+        },
+        {
+            "query": "monster that doesn't need air or food and has a lot of hit points",
+            "variant": "creature that requires no sustenance and has high health points"
+        },
+        {
+            "query": "air-based monster with damage immunity to poison and prone status",
+            "variant": "wind elemental with resistance to poison damage and can become prone"
+        }
+    ]
+}

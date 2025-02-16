@@ -1,0 +1,25 @@
+{
+    "name": "Titanic Kraken",
+    "queries": [
+        {
+            "query": "enormous ocean monster with ink cloud ability",
+            "variant": "huge monster from the ocean that has an ink cloud attack"
+        },
+        {
+            "query": "monstrous creature that swallows its prey and summons storms",
+            "variant": "huge creature that engulfs its enemies and can create storms"
+        },
+        {
+            "query": "gargantuan kraken that resists magic and uses lightning attacks",
+            "variant": "massive kraken that has magic resistance and attacks with lightning"
+        },
+        {
+            "query": "water-dwelling leviathan with tentacles and overwhelming strength",
+            "variant": "oceanic leviathan that has powerful tentacles and great strength"
+        },
+        {
+            "query": "creature that grapples foes and creates chaos in the water",
+            "variant": "monster that can grapple enemies and wreak havoc in aquatic environments"
+        }
+    ]
+}

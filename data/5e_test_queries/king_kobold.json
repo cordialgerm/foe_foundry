@@ -1,0 +1,25 @@
+{
+    "name": "King Kobold",
+    "queries": [
+        {
+            "query": "small humanoid with high dexterity that uses spells",
+            "variant": "humanoid creature that is small and has great dexterity while casting spells"
+        },
+        {
+            "query": "cunning kobold that fights in darkness and uses magic",
+            "variant": "sneaky kobold that fights using the shadows and utilizes spells"
+        },
+        {
+            "query": "lawful neutral creature skilled in deception and intimidation",
+            "variant": "lawful neutral being proficient in deception and intimidation tactics"
+        },
+        {
+            "query": "Kobold king with poison spells and ambush tactics",
+            "variant": "King Kobold that employs poison spells and ambushing strategies"
+        },
+        {
+            "query": "King Kobold vulnerable to sunlight but excels in skirmishes",
+            "variant": "Kobold king disadvantaged in sunlight yet great at hit-and-run tactics"
+        }
+    ]
+}

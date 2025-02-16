@@ -1,0 +1,25 @@
+{
+    "name": "Elk",
+    "queries": [
+        {
+            "query": "large herbivore with antlers found in forests",
+            "variant": "big herbivore with antlers in forest areas"
+        },
+        {
+            "query": "fast creature that grazes on grass and has a low intelligence",
+            "variant": "quick animal that eats grass and has poor intelligence"
+        },
+        {
+            "query": "beast known for its charge ability and low armor class",
+            "variant": "animal recognized for its charging attack and weak armor"
+        },
+        {
+            "query": "majestic animal typically seen in herds that can deal bludgeoning damage",
+            "variant": "noble beast often found in groups that can inflict blunt damage"
+        },
+        {
+            "query": "vulnerable animal with a powerful ram attack and a DC saving throw",
+            "variant": "weak creature with strong ram assault and a difficulty class saving throw"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Blood Hawk",
+    "queries": [
+        {
+            "query": "aggressive red and black bird that hunts in packs",
+            "variant": "red and black aggressive bird that hunts in packs"
+        },
+        {
+            "query": "small predatory bird known for keen eyesight and flying",
+            "variant": "predatory small bird known for its eyesight and flying"
+        },
+        {
+            "query": "bird with sharp beak that thrives in mountainous regions",
+            "variant": "bird that has a sharp beak and thrives in mountain areas"
+        },
+        {
+            "query": "territorial bird that attacks larger creatures with talons",
+            "variant": "territorial bird attacking larger creatures with claws"
+        },
+        {
+            "query": "blood hawk hunting behavior and special abilities",
+            "variant": "hunting behavior and special abilities of a blood hawk"
+        }
+    ]
+}

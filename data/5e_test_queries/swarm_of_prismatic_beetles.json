@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Prismatic Beetles",
+    "queries": [
+        {
+            "query": "swarm of colorful beetles that incapacitate enemies",
+            "variant": "swarm of bright beetles that make opponents helpless"
+        },
+        {
+            "query": "medium-sized swarm that uses agility instead of strength",
+            "variant": "set of medium-sized insects that rely on speed, not power"
+        },
+        {
+            "query": "beetle swarm that thrives in bright and dim light",
+            "variant": "beetle swarm flourishing in low or bright light conditions"
+        },
+        {
+            "query": "insect swarm with poison attack that causes euphoric state",
+            "variant": "insect swarm that deals poison damage and induces euphoria"
+        },
+        {
+            "query": "creature immune to being frightened with blindsight",
+            "variant": "monster that cannot be scared and has blindsight capability"
+        }
+    ]
+}

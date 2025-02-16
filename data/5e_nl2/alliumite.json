@@ -1,0 +1,49 @@
+{
+    "name": "Alliumite",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 18,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "burrow 20 ft., walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "stealth",
+        "ambush"
+    ],
+    "adjectives": [
+        "chaotic",
+        "stealthy",
+        "agile"
+    ],
+    "description": "The Alliumite is a small, stealthy plant creature that excels in camouflage and ambush tactics, utilizing its distinctive Tearful Stench ability to incapacitate foes.",
+    "memorable": "Its ability to blend into plant life makes it a rare sight, while its Tearful Stench can turn the tide of battle by blinding nearby enemies.",
+    "goals": "To ambush and incapacitate enemies while remaining hidden in natural environments.",
+    "relations": "Often found in conjunction with other plant creatures or in forested areas.",
+    "environment": "Typically located in forests or overgrown terrains where it can use its camouflage.",
+    "strengths": "Exceptionally skilled in stealth and ambush tactics, with potent area denial through its Tearful Stench ability.",
+    "weaknesses": "Low strength and charisma make it vulnerable in direct confrontations and social interactions.",
+    "attacks": "Uses Thorn Dart for ranged attacks and Grass Blade for melee, both with considerable accuracy.",
+    "most_powerful_ability": "Tearful Stench can blind nearby creatures and control the battlefield during combat.",
+    "senses": "Has darkvision up to 60 feet and a passive perception of 13, aiding its stealthy nature.",
+    "skills": "Proficient in stealth, allowing it to evade detection effectively.",
+    "additional_information": [
+        "Plant Camouflage grants advantage on Stealth checks in foliage.",
+        "Strong dexterity makes it highly maneuverable.",
+        "Uses burrowing ability to escape or reposition.",
+        "Can incapacitate multiple foes within close proximity using its stench.",
+        "Resilient for its size, making it a surprisingly difficult foe to defeat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy plant creature",
+        "ambush plant monster",
+        "plant with blinding ability",
+        "small agile ambusher",
+        "chaotic neutral plant"
+    ]
+}

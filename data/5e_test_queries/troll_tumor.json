@@ -1,0 +1,25 @@
+{
+    "name": "Troll, Tumor",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with regenerative abilities and poison immunity",
+            "variant": "chaotic evil large giant with poison immunity and regenerative skills"
+        },
+        {
+            "query": "troll that thrives in chaotic combat and has unique teratomas",
+            "variant": "troll thriving in chaos with unique teratoma abilities"
+        },
+        {
+            "query": "big monster with high hit points that can only be killed by fire or acid",
+            "variant": "large creature with a lot of hit points that dies only with fire or acid"
+        },
+        {
+            "query": "strong giant that uses Multiattack and can fling limbs at enemies",
+            "variant": "powerful giant using Multiattack and able to throw limbs at foes"
+        },
+        {
+            "query": "creature with low intelligence that has multiple special abilities",
+            "variant": "monster with a low IQ and various unique abilities"
+        }
+    ]
+}

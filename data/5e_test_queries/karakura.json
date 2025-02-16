@@ -1,0 +1,25 @@
+{
+    "name": "Karakura",
+    "queries": [
+        {
+            "query": "fiend with shape-shifting abilities that operates at night",
+            "variant": "fiend that can shape-shift and serves at night"
+        },
+        {
+            "query": "charismatic fiend vulnerable to radiant damage in dark environments",
+            "variant": "charismatic fiend weak to radiant damage in dark areas"
+        },
+        {
+            "query": "flying fiend skilled in deception and charm",
+            "variant": "flying fiend good at deception and charm"
+        },
+        {
+            "query": "medium fiend that can communicate telepathically and has darkvision",
+            "variant": "medium fiend with telepathic communication and darkvision"
+        },
+        {
+            "query": "manipulative fiend that can teleport to the Plane of Shadow",
+            "variant": "manipulative fiend able to move to the Plane of Shadow"
+        }
+    ]
+}

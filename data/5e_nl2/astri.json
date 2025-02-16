@@ -1,0 +1,50 @@
+{
+    "name": "Astri",
+    "creature_type": "Celestial",
+    "alignment": "chaotic good",
+    "size": "Small",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "burrow 30 ft., walk 30 ft.",
+    "role": "Support",
+    "tags": [
+        "Celestial",
+        "Healer",
+        "Spellcaster"
+    ],
+    "adjectives": [
+        "benevolent",
+        "whimsical",
+        "durable"
+    ],
+    "description": "The Astri is a small celestial being with a whimsical nature, featuring an exceptional Dexterity and a vibrant appearance characteristic of chaotic good entities.",
+    "memorable": "Its ability to enforce good deeds upon those it assists and its multiple support capabilities make the Astri a memorable ally in any situation.",
+    "goals": "The Astri aims to aid others and inspire acts of kindness and charity.",
+    "relations": "It may be encountered with other celestial beings or creatures that embody good and altruism.",
+    "environment": "Typically found in areas of light or goodness, or where help is needed.",
+    "strengths": "Resistant to damage from nonmagical attacks and immune to charm and exhaustion.",
+    "weaknesses": "Relatively average strength, which may limit its physical capabilities in combat.",
+    "attacks": "Multiattack consisting of three magical bite attacks, dealing both piercing and radiant damage.",
+    "most_powerful_ability": "Enforce Good Deeds, compelling assisted creatures to perform altruistic actions for up to 30 days.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 90 feet and a passive perception of 16.",
+    "skills": "Highly skilled in stealth and survival, taking advantage of its Dexterity to remain undetected.",
+    "additional_information": [
+        "Can provide assistance as a bonus action, enhancing combat capabilities.",
+        "Innate spellcasting abilities allow it to cast useful spells without components.",
+        "Healing Touch ability can restore hit points and cure various conditions.",
+        "Magic Resistance grants it advantage on saving throws against spells.",
+        "Defensive Counter allows punishment of attackers targeting its allies."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster using Charisma, capable of casting spells for healing, utility, and support.",
+    "test_queries": [
+        "whimsical celestial healer",
+        "small benevolent elemental",
+        "creature that inspires good deeds",
+        "magic using support creature",
+        "plus healer with bite attacks"
+    ]
+}

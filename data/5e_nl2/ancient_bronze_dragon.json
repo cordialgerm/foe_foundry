@@ -1,0 +1,51 @@
+{
+    "name": "Ancient Bronze Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Gargantuan",
+    "hp": 444,
+    "ac": 22,
+    "srd": true,
+    "cr": "22",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "metallic",
+        "water"
+    ],
+    "adjectives": [
+        "noble",
+        "formidable",
+        "intelligent"
+    ],
+    "description": "The Ancient Bronze Dragon has shiny, polished bronze scales and embodies a majestic presence. It possesses powerful jaws capable of delivering a devastating bite, alongside its large claws and tail, which demonstrate its immense physical power.",
+    "memorable": "An Ancient Bronze Dragon serves as a reputed guardian of coastal regions, combining elemental prowess with diplomatic capabilities, often opting for reason over brute force.",
+    "goals": "To protect coastal areas and ensure justice, often intervening in conflicts to maintain order.",
+    "relations": "May ally with good-aligned adventurers, sailors, and other draconic creatures.",
+    "environment": "Typically found near coastlines or large bodies of water, where it can oversee and defend its territory.",
+    "strengths": "Possesses lightning immunity and powerful breath weapons, coupled with high hit points and impressive natural armor.",
+    "weaknesses": "Relies on abilities that have recharge times; vulnerable to tactics exploiting its legendary actions or reduced Armor Class from the use of its Legendary Resistance.",
+    "attacks": "Makes a multiattack using its powerful bite, claws, and tail, capable of dealing substantial damage and controlling the battlefield through frightful presence and breath attacks.",
+    "most_powerful_ability": "Lightning Breath, unleashing a devastating line of lightning damage over a wide area, capable of incapacitating foes.",
+    "senses": "Boasts blindsight up to 60 feet and a remarkable passive perception of 27, making it exceedingly aware of hidden threats.",
+    "skills": "Possesses proficiency in Insight and Perception, displaying exceptional awareness and understanding of its surroundings.",
+    "additional_information": [
+        "Can breathe both air and water, enhancing its mobility.",
+        "Has the ability to transform into a humanoid or beast form while retaining its core abilities.",
+        "Can predict the weather for up to seven days and utilize scrying in bodies of water.",
+        "Capable of using legendary actions to gain tactical advantages in combat.",
+        "Exemplifies a strong sense of justice, actively defending those in need."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting allows for versatile use of spells, including control weather and etherealness once per day.",
+    "test_queries": [
+        "majestic bronze dragon",
+        "powerful coastal guardian",
+        "elemental controlling dragon",
+        "formidable foe in battle",
+        "diplomatic dragon with lightning powers"
+    ]
+}

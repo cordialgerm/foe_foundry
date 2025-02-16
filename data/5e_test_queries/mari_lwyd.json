@@ -1,0 +1,25 @@
+{
+    "name": "Mari Lwyd",
+    "queries": [
+        {
+            "query": "large undead creature with rhyme duel ability",
+            "variant": "large undead monster that has a ability for duel with rhymes"
+        },
+        {
+            "query": "undead monster that casts spells and has bite attacks",
+            "variant": "spellcasting undead creature with bite attacks"
+        },
+        {
+            "query": "creature resistant to necrotic damage and immune to poison",
+            "variant": "monster that resists necrotic damage and is immune to poison"
+        },
+        {
+            "query": "Mari Lwyd's combat abilities and undead characteristics",
+            "variant": "combat abilities of Mari Lwyd and its undead traits"
+        },
+        {
+            "query": "undead with high hit points that performs melee attacks",
+            "variant": "high hit point undead that executes melee attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Green Dragon",
+    "queries": [
+        {
+            "query": "cunning green dragon with poisonous breath that lives in forests",
+            "variant": "sneaky green dragon with poison breath that dwells in woods"
+        },
+        {
+            "query": "gargantuan dragon with deep green scales and powerful abilities in combat",
+            "variant": "huge dragon with dark green scales and strong fight skills"
+        },
+        {
+            "query": "amphibious dragon that can manipulate others and control battles",
+            "variant": "water-breathing dragon that can influence foes and dominate fights"
+        },
+        {
+            "query": "intelligent dragon that uses deceit and fear to attack enemies",
+            "variant": "smart dragon that employs trickery and fright to strike foes"
+        },
+        {
+            "query": "dragon that can fly and swim, with a devastating poison breath attack",
+            "variant": "dragon capable of flying and swimming, with a deadly toxic breath"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Overshadow",
+    "queries": [
+        {
+            "query": "large undead creature with high dexterity that thrives in darkness",
+            "variant": "big undead monster thriving in the dark with a high dexterity"
+        },
+        {
+            "query": "stealthy undead that weakens strength in dim light",
+            "variant": "sneaky undead creature that reduces strength in darkness"
+        },
+        {
+            "query": "monster with amorphous trait that suffers in sunlight",
+            "variant": "creature with amorphous ability that is weakened by sunlight"
+        },
+        {
+            "query": "chaotic evil undead that drains strength from its victims",
+            "variant": "evil chaotic undead that steals strength from its enemies"
+        },
+        {
+            "query": "Undead creature that deals necrotic damage and is immune to poison",
+            "variant": "undead monster immune to poison and that inflicts necrotic damage"
+        }
+    ]
+}

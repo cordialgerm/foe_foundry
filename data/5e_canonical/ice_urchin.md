@@ -1,6 +1,8 @@
 <MonsterName/>Ice Urchin</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>45</HP>
 <summary>The Ice Urchin is a large monstrosity characterized by its affinity for cold environments and a notable vulnerability to fire. It has a solid Armor Class of 14 due to its natural armor and possesses a total of 45 hit points, making it moderately resilient in combat with a challenge rating of 1, which means it is suitable for low-level adventurers. The Ice Urchin has a good strength of 15, providing it with a solid attack capability, but its intelligence and charisma scores are significantly low, indicating that it is not very adept in social situations or complex tasks. It excels in icy terrains, moving quickly and without hindrance on snow or ice. However, it is particularly vulnerable to fire, which can cause it to become frightened and reduces its combat effectiveness.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ Regarding its actions, the Ice Urchin can make a melee attack with its "Ice Spin
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ice Urchin
 
 *Large* *Monstrosity* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Venomous Spine:** Ranged Weapon Attack: +3 to hit range 20/60' one target 3 (1d4+1) piercing damage + 2 (1d4) cold and 7 (2d6) poison.
 
 
+</statblock>
 
 

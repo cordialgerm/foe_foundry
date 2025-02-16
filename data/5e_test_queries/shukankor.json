@@ -1,0 +1,25 @@
+{
+    "name": "Shukankor",
+    "queries": [
+        {
+            "query": "chaotic evil aberration with self-duplication ability",
+            "variant": "aberration that is chaotic evil and can duplicate itself"
+        },
+        {
+            "query": "huge creature resistant to nonmagical damage and capable of telepathic communication",
+            "variant": "large monster that resists nonmagical attacks and can talk telepathically"
+        },
+        {
+            "query": "strong monster with high Strength stat and deadly beak attack",
+            "variant": "powerful creature with strong physical stats and a lethal beak attack"
+        },
+        {
+            "query": "darkvision creature that creates replicas to confuse opponents",
+            "variant": "creature with darkvision that can make duplicates to bewilder enemies"
+        },
+        {
+            "query": "Shukankor in combat and its many eyes advantage",
+            "variant": "combat tactics of the Shukankor and its many eyes ability"
+        }
+    ]
+}

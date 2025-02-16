@@ -1,0 +1,51 @@
+{
+    "name": "Sanddrift Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "climb 20 ft., walk 40 ft., burrow 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "sandy terrain",
+        "burrowing"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Sanddrift Drake is a large, dragon-like creature with natural armor, adapted to sandy environments. It has a sleek body built for agility and stealth.",
+    "memorable": "The drake can burrow silently through sand and uses ambush tactics, making it a cunning predator.",
+    "goals": "To hunt and ambush prey in its sandy habitat.",
+    "relations": "It may encounter other desert-dwelling creatures or serve under a more powerful dragon.",
+    "environment": "Usually found in sandy terrain, such as deserts.",
+    "strengths": "High Dexterity allows for effective stealth and quick strikes. Immune to fire damage.",
+    "weaknesses": "Low Intelligence and Charisma may hinder its problem-solving and social interactions.",
+    "attacks": "Multiattack featuring a bite that can halve speed or paralyze and claws dealing slashing damage.",
+    "most_powerful_ability": "Heatwave Breath can inflict significant fire damage and cause exhaustion.",
+    "senses": "Possesses tremorsense, allowing it to detect vibrations through the ground effectively.",
+    "skills": "Proficient in stealth, enabling it to hide in sandy terrain easily.",
+    "additional_information": [
+        "Desert Camouflage gives advantage on Stealth checks in sandy environments.",
+        "Sand Glide ability allows it to move through sand without leaving traces.",
+        "Capable of sustaining considerable damage due to high hit points.",
+        "Uses ambush tactics effectively by burrowing and striking unexpectedly.",
+        "Paralysis feature adds a strategic danger to its bite attack."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile dragon that ambushes in sand",
+        "dragon with burrowing abilities in desert",
+        "sand drake that uses heatwave breath",
+        "stealthy large dragon in sandy terrains",
+        "fire immune predator with paralysis attack"
+    ]
+}

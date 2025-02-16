@@ -1,0 +1,25 @@
+{
+    "name": "Grimlock Technical",
+    "queries": [
+        {
+            "query": "stealthy humanoid that lives in rocky terrain",
+            "variant": "humanoid that is stealthy and lives in rocky areas"
+        },
+        {
+            "query": "cunning ambush predator with good physicality",
+            "variant": "cunning predator that can ambush and has strong physical abilities"
+        },
+        {
+            "query": "creature with keen hearing and bludgeoning attacks",
+            "variant": "monster that has keen hearing and can use bludgeoning damage in attacks"
+        },
+        {
+            "query": "Grimlock Technical combat tactics and camouflage",
+            "variant": "combat strategies of Grimlock Technical and its camouflage abilities"
+        },
+        {
+            "query": "small humanoid with lightning damage abilities",
+            "variant": "small humanoid capable of dealing lightning damage"
+        }
+    ]
+}

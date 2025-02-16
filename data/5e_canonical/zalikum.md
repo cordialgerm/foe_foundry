@@ -1,6 +1,8 @@
 <MonsterName/>Zalikum</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>103</HP>
 <summary>Zalikum is a huge construct with a neutral evil alignment, designed to be a formidable foe in combat. It possesses a robust Armor Class of 16 due to its natural armor, and with 103 hit points, it can withstand significant damage. Its movement capabilities are notable, with a walking speed of 20 feet and the ability to fly at 80 feet, making it agile in the air. As a Challenge Rating 7 creature, it poses a serious threat to adventurers, granting 2,900 experience points upon defeat. Zalikum's strengths include high strength and constitution scores, which enhance its physical attacks and durability, while its weaknesses lie in its limited intelligence and wisdom, making it less effective in tasks requiring cleverness or insight.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Zalikum’s most devastating ability is the Death-infused Desert Breath, which h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Zalikum
 
 *Huge* *Construct* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Death-infused Desert Breath (Recharge 6):** The zalikum exhales superheated sand infused with the power of damned souls in a 30-foot cone. Each creature in the area must make a DC 16 Dexterity saving throw, taking 14 (4d6) fire damage and 14 (4d6) necrotic damage on a failed save, or half as much damage on a successful one. If a creature’s saving throw fails by 5 or more, the creature also suffers one level of exhaustion.
 
 
+</statblock>
 
 

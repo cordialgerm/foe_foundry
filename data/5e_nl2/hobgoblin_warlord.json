@@ -1,0 +1,50 @@
+{
+    "name": "Hobgoblin Warlord",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Evil",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "humanoid",
+        "warlord",
+        "military"
+    ],
+    "adjectives": [
+        "formidable",
+        "tactical",
+        "strategic"
+    ],
+    "description": "The Hobgoblin Warlord is a formidable warrior with a strong build and a commanding presence, usually equipped with a greatsword and javelin.",
+    "memorable": "Its ability to inspire weaker allies and strike multiple times when bloodied makes it a key tactical leader on the battlefield.",
+    "goals": "To lead troops in battle, making strategic decisions to turn the tide in favor of its side.",
+    "relations": "Often accompanied by other goblinoids and military units, serving as an elite leader among hobgoblins.",
+    "environment": "Typically found in military encampments, war zones, or strongholds of hobgoblins.",
+    "strengths": "High melee capabilities with multiple attacks and the ability to motivate allies, making it a dangerous opponent.",
+    "weaknesses": "Becomes vulnerable when bloodied, losing benefits tied to military training.",
+    "attacks": "Uses a greatsword for powerful melee slashes and a javelin for ranged strikes.",
+    "most_powerful_ability": "Bloodied Rage allows it to attack multiple times, striking fear into its enemies when in danger.",
+    "equipment": "Greatsword and javelin.",
+    "senses": null,
+    "skills": "Proficient in Athletics, Engineering, and Intimidation, showcasing combat readiness and tactical acumen.",
+    "additional_information": [
+        "Possesses a high armor class and significant hit points.",
+        "Utilizes tactical movement to avoid opportunity attacks.",
+        "Can inspire lower challenge rating allies with Officers Command.",
+        "Advantage on tactical decision-making due to Military Training.",
+        "Can remove conditions while bloodied with Elite Recovery."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tactical hobgoblin who leads in battle",
+        "warlord with greatsword and javelin",
+        "humanoid leader that inspires its allies",
+        "strong melee combatant with multiple attacks",
+        "military strategist hobgoblin in combat"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Animated Instrument, Quartet",
+    "queries": [
+        {
+            "query": "large musical construct with flying ability and charm resistance",
+            "variant": "big musical construct that can fly and is resistant to charm"
+        },
+        {
+            "query": "construct that produces terrifying melodies and engages in combat",
+            "variant": "creature that plays frightening tunes and fights"
+        },
+        {
+            "query": "Aura of musicality and immune to psychic damage",
+            "variant": "musical aura and resistance to psychic attacks"
+        },
+        {
+            "query": "animated musical quartet that can attack multiple times",
+            "variant": "musical quartet that can perform multiple attacks"
+        },
+        {
+            "query": "magical construct with a poor intelligence and high charisma",
+            "variant": "magical creature with low intellect and high charisma"
+        }
+    ]
+}

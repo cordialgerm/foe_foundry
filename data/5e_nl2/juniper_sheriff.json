@@ -1,0 +1,53 @@
+{
+    "name": "Juniper Sheriff",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 31,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 40 feet, allowing quick engagement",
+    "role": null,
+    "tags": [
+        "fey",
+        "guardian",
+        "truth",
+        "deception"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "perceptive"
+    ],
+    "description": "The Juniper Sheriff is a small fey creature known for its agile build, embodying the essence of a guardian of truth.",
+    "memorable": "Its unique abilities focus on enforcing honesty and detecting lies in others.",
+    "goals": "To maintain integrity and truth within its vicinity.",
+    "relations": "Can cooperate with other law-abiding creatures or fey.",
+    "environment": "Typically found in areas where honesty is upheld, such as enchanted glades or mystical forests.",
+    "strengths": "Possesses an Aura of Honesty that enforces truth-telling.",
+    "weaknesses": "Low physical strength and resilience, making it vulnerable in direct confrontations.",
+    "attacks": "Wields a saber for melee attacks and can cast Bitter Truth for psychic damage.",
+    "most_powerful_ability": "Aura of Honesty, which compels creatures to avoid lying in proximity.",
+    "equipment": "Saber",
+    "senses": "Has passive Perception of 15, making it highly perceptive.",
+    "skills": "Proficient in Perception, able to detect deceptions effectively.",
+    "additional_information": [
+        "Aura of Honesty creates a 10-foot radius",
+        "Knows if a lie is spoken nearby",
+        "Remembers all creatures it has encountered",
+        "Can Dash or Disengage quickly",
+        "Has advantage on insight and perception checks for familiar creatures"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast Bitter Truth, dealing psychic damage and creating disadvantage on saving throws against its aura.",
+    "test_queries": [
+        "small fey creature that enforces honesty",
+        "agile guardian of truth in magical forests",
+        "fey that detects lies near it",
+        "Juniper Sheriff unique abilities and role",
+        "creature with aura preventing lies"
+    ]
+}

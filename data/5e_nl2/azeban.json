@@ -1,0 +1,52 @@
+{
+    "name": "Azeban",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "climb 30 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "magical",
+        "deceptive"
+    ],
+    "adjectives": [
+        "chaotic",
+        "elusive",
+        "mobile"
+    ],
+    "description": "The Azeban is a Medium-sized fey creature known for its chaotic appearance and crafty demeanor. With exceptional Dexterity and Charisma, this creature is adept in social situations and combat evasion. Its natural armor offers a good level of protection, and its features are often characterized by a whimsical nature.",
+    "memorable": "The Azeban's Ear-Splitting Yawp is a powerful area attack that can deafen foes, and its ability to reposition rapidly makes it unpredictable in battle.",
+    "goals": "The Azeban often seeks to outmaneuver opponents, escape danger, and use its illusion magic for mischief or tactical advantages during encounters.",
+    "relations": "It may be encountered alongside other fey creatures or magical beings, and could be a servant or ally to a more powerful fey lord.",
+    "environment": "This creature usually inhabits enchanted forests, glades, or other magical realms.",
+    "strengths": "The Azeban excels in deception and mobility with innate spellcasting and remarkable resistance to various magical effects.",
+    "weaknesses": "It has low Wisdom, which makes it vulnerable to effects targeting that attribute.",
+    "attacks": "The Azeban can make quick melee attacks with its bite and claws, inflicting piercing and slashing damage, respectively.",
+    "most_powerful_ability": "The Ear-Splitting Yawp can deal thunder damage and incapacitate enemies through deafening effects.",
+    "equipment": null,
+    "senses": null,
+    "skills": "The Azeban has notable proficiency in deception and stealth, allowing it to outsmart and avoid detection by enemies.",
+    "additional_information": [
+        "It has damage resistances to cold and nonmagical physical attacks not made with cold iron.",
+        "The Azeban is immune to being charmed and frightened.",
+        "It benefits from Magic Resistance, granting an advantage on saving throws against spells.",
+        "The creature's innate spellcasting allows it to use various spells at will or multiple times per day.",
+        "Its dexterous abilities enable it to take bonus actions for Dash, Disengage, or Hide."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": "The Azeban can cast spells innately, including utility spells like Dancing Lights and offensive spells like Faerie Fire.",
+    "test_queries": [
+        "chaotic fey creature",
+        "elusive trickster fey",
+        "thunder damage area attack",
+        "magical deception abilities",
+        "fast climbing fey"
+    ]
+}

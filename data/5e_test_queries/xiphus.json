@@ -1,0 +1,25 @@
+{
+    "name": "Xiphus",
+    "queries": [
+        {
+            "query": "small fey creature that absorbs lightning damage",
+            "variant": "fey small creature that absorbs lightning damage"
+        },
+        {
+            "query": "agile monster with chaotic evil traits and high dexterity",
+            "variant": "chaotic evil agile creature with high dexterity"
+        },
+        {
+            "query": "creature with speed 50 feet and special evasion ability",
+            "variant": "monster with a speed of 50 feet and an evasion ability"
+        },
+        {
+            "query": "Xiphus abilities including siphon time and borrowed time",
+            "variant": "abilities of the Xiphus like borrowed time and siphon time"
+        },
+        {
+            "query": "fey creature capable of devastating combat maneuvers",
+            "variant": "creature that can perform devastating combat maneuvers and is a fey"
+        }
+    ]
+}

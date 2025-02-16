@@ -1,0 +1,54 @@
+{
+    "name": "Map Mimic",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 15 ft., fly 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "mimic",
+        "map",
+        "ambush",
+        "stealth"
+    ],
+    "adjectives": [
+        "tiny",
+        "amorphous",
+        "deceptive",
+        "agile"
+    ],
+    "description": "The Map Mimic is a tiny, amorphous creature that can disguise itself as an ordinary object. Its surface can create a map indicating the terrain features it has traveled through.",
+    "memorable": "It can blend perfectly with its surroundings and launch surprise attacks, as well as create navigational maps.",
+    "goals": "To ambush unsuspecting adventurers and escape detection while providing navigational assistance.",
+    "relations": "Related to other mimics, often lurking in areas where travelers frequent.",
+    "environment": "Usually found in places frequented by adventurers, such as dungeons or mysterious forests.",
+    "strengths": "Good Dexterity for evasion, decent Constitution for endurance, and deceptive abilities for ambush.",
+    "weaknesses": "Very low Strength and Intelligence, low hit points make it vulnerable.",
+    "attacks": "Uses a pseudopod attack that can inflict continuous bludgeoning damage while attached to its target.",
+    "most_powerful_ability": "False Appearance allows it to mimic ordinary objects and remain undetected until it strikes.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Can attach to targets, blinding them.",
+        "Ability to fly enhances its tactical positioning.",
+        "Transforms into a Tiny object for stealth.",
+        "Capable of creating a detailed map of its travels.",
+        "Low challenge rating makes it a minor threat."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny creature that ambushes as an object",
+        "creature that creates maps and surprises adventurers",
+        "map-making mimic that disguises as furniture",
+        "stealthy monster capable of flight and attachment",
+        "ambush monster that visually blends into the environment"
+    ]
+}

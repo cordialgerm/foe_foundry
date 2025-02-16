@@ -1,0 +1,25 @@
+{
+    "name": "Derro Guard",
+    "queries": [
+        {
+            "query": "small humanoid in underground realms that uses aklys weapons",
+            "variant": "small humanoid that uses aklys weapons and lives underground"
+        },
+        {
+            "query": "stealthy monster with darkvision that is weak to sunlight",
+            "variant": "monster with darkvision that is very weak to sunlight and stealthy"
+        },
+        {
+            "query": "Derro creature with ranged attacks that prefers dark environments",
+            "variant": "Derro that prefers dark environments and has ranged attacks"
+        },
+        {
+            "query": "underground guardian with low wisdom and proficiency in stealth",
+            "variant": "guardian with low wisdom and a proficiency in stealth that lives underground"
+        },
+        {
+            "query": "humanoid with magic resistance that performs better in darkness",
+            "variant": "humanoid with resistance to magic that does better in dark conditions"
+        }
+    ]
+}

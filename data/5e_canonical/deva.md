@@ -1,6 +1,9 @@
 <MonsterName/>Deva (Angel)</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<Subtype/>angel</Subtype>
+<CR/>10</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>136</HP>
 <summary>A Deva is a celestial being of great power and beauty, often acting as a messenger or servant of the gods. With a radiant, humanoid form, Devas are typically adorned with luminous wings and glowing skin, exuding an aura of peace and divine grace. They are known for their unwavering dedication to good, often intervening in mortal affairs to guide, protect, or defend those who are worthy. Devas possess powerful healing magic and can summon radiant energy to smite their foes. They are wise, just, and deeply compassionate, though they will fiercely battle against evil forces when necessary.</summary>
 
 <summary>The Deva is a Medium Celestial being known for its powerful abilities, defensive capabilities, and healing prowess. With a Challenge Rating of 10, it presents a significant threat on the battlefield, boasting high Armor Class and Hit Points, allowing it to withstand considerable damage. The Deva's strengths include impressive physical attributes, strong saving throws, and resistance to radiant damage, making it a fierce opponent. In addition to its combat prowess, the Deva can heal allies or deal substantial radiant damage, giving it both offensive and supportive roles in encounters. However, its reliance on magical attacks means it may struggle against foes with strong resistance to magical damage.</summary>
@@ -35,6 +38,7 @@ As a bonus action, the Deva can use Change Shape to magically transform into a L
 
 Source: 5e_srd
 
+<statblock>
 ### Deva (Angel)
 
 *Medium celestial, lawful good*
@@ -83,7 +87,8 @@ At will: *detect evil and good*
 
 ***Change Shape***. The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).
 
-In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.
+In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.</statblock>
+
 
 
 
@@ -91,6 +96,7 @@ In a new form, the deva retains its game statistics and ability to speak, but it
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deva
 
 *Medium* *Celestial*
@@ -129,6 +135,7 @@ Source: 5e_artisinal_monsters
 - **Change Form:** The deva magically transforms into a beast or humanoid or back into its true form. It retains its deva statistics  including speech and telepathy  except that it has the size  movement modes  and traits of its new form.
 
 
+</statblock>
 
 
 
@@ -137,6 +144,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deva
 
 *Medium celestial (angel)*
@@ -175,5 +183,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape.** The deva magically transforms into a Large or smaller Beast or Humanoid that has a challenge rating no higher than its own, or back into its true form, which is Celestial. Any equipment it is wearing or carrying transforms with it or is borne by the new form (the deva’s choice). It reverts to its true form if it dies. In a new form, the deva retains its Angelic Resilience, Angelic Senses, and Immortal Nature traits and its HP, HD, ability to speak, proficiencies, and INT, WIS, and CHA scores, as well as this bonus action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
 
+</statblock>
 
 

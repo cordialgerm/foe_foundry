@@ -1,0 +1,25 @@
+{
+    "name": "Wilderness Crone",
+    "queries": [
+        {
+            "query": "fey creature that can talk to animals and plants",
+            "variant": "creature that is fey and speaks with animals and plants"
+        },
+        {
+            "query": "magical guardian of the natural world with a staff",
+            "variant": "magical protector of nature wielding a staff"
+        },
+        {
+            "query": "medium-sized fey that can revive humanoids as beasts",
+            "variant": "fey with a medium size that can bring humanoids back as beasts"
+        },
+        {
+            "query": "monster with piercing damage resistance and darkvision",
+            "variant": "creature that has darkvision and resists piercing damage"
+        },
+        {
+            "query": "Wilderness Crone abilities defined by nature",
+            "variant": "abilities of a nature-based creature known as Wilderness Crone"
+        }
+    ]
+}

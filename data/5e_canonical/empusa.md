@@ -1,6 +1,8 @@
 <MonsterName/>Empusa</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Empusa is a Medium Monstrosity with a chaotic evil alignment, known for its cunning and deadly capabilities in combat. With an Armor Class of 16 and a substantial pool of 102 hit points, it can withstand a fair amount of damage before being brought down, making it a formidable opponent. It possesses a Challenge Rating of 5, indicating that it is a suitable challenge for a party of experienced adventurers. The Empusa's strengths lie in its high Strength, effective deception skills, and special abilities that enhance its combat performance, such as the ability to ambush unsuspecting foes and transform into various forms. Its primary weaknesses are its reliance on surprise and its relatively average Dexterity, which might limit its evasiveness in certain situations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Empusa is a dangerous foe with a blend of physical prowess, magical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Empusa
 
 *Medium* *Monstrosity* *chaotic evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Kick:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage, and the target must succeed on a DC 15 Strength saving throw or be pushed up to 10 feet away from the empusa and knocked prone.
 
 
+</statblock>
 
 

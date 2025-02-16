@@ -1,0 +1,51 @@
+{
+    "name": "Scarsupial",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 39,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "agile",
+        "climber",
+        "mobile"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "resilient"
+    ],
+    "description": "The Scarsupial is a small and agile beast characterized by its strong legs and climbing abilities, capable of navigating treetops effortlessly.",
+    "memorable": "Its ability to avoid falling damage and knock enemies prone after pouncing from heights sets it apart as a formidable foe.",
+    "goals": "To hunt and ambush prey effectively while utilizing vertical environment advantages.",
+    "relations": "Potentially encountered alongside other small beasts or in regions shared with climbing predators.",
+    "environment": "Typically found in forested areas or regions where climbing is beneficial.",
+    "strengths": "High mobility and strength make it an adept ambusher in a variety of terrains.",
+    "weaknesses": "Very low intelligence makes it simple-minded and potentially predictable in tactics.",
+    "attacks": "Utilizes multiattack with claw and bite, dealing slashing and piercing damage respectively.",
+    "most_powerful_ability": "Vertical Pounce, which allows it to knock opponents prone while following up with a bite attack.",
+    "equipment": null,
+    "senses": "It has a passive perception of 13, allowing it to detect hidden threats at an average level.",
+    "skills": "Has proficiency in perception, enhancing its ability to notice threats in its environment.",
+    "additional_information": [
+        "Perfect Landing allows it to avoid fall damage.",
+        "Can take a bonus action to Dash or Disengage with Scrabble.",
+        "Strong physical attributes with a strength score of 16.",
+        "Can strike quickly from above using Vertical Pounce.",
+        "Resilient constitution with a score of 16."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile climbing beast with strong legs",
+        "small animal that pounces from trees",
+        "resilient creature that never takes fall damage",
+        "cunning skirmisher found in forests",
+        "beast that can knock enemies prone"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Bleakheart",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "stealth",
+        "psychic"
+    ],
+    "adjectives": [
+        "haunting",
+        "manipulative",
+        "dreadful"
+    ],
+    "description": "The Bleakheart is a Medium-sized undead creature that embodies a haunting presence, instilling despair in its victims. It is characterized by its spectral form and the dark aura that surrounds it.",
+    "memorable": "The Bleakheart is feared for its ability to reduce the Charisma of its foes and compel them to end their own lives, making it a true embodiment of despair.",
+    "goals": "The Bleakheart seeks to infiltrate and weaken its enemies spiritually, often operating in shadows and darker places.",
+    "relations": "It may be encountered alongside other undead or malevolent creatures, and it thrives in environments accompanied by darkness.",
+    "environment": "Typically found in shadowy or dark locations where it can easily blend into its surroundings.",
+    "strengths": "Immune to necrotic and poison damage, resistant to cold and nonmagical bludgeoning, piercing, and slashing damage.",
+    "weaknesses": "Significantly hindered in sunlight, suffering disadvantage on all rolls.",
+    "attacks": "Utilizes 'Disheartening Touch' for psychic damage and 'Steal Joy' to reduce Charisma of multiple targets.",
+    "most_powerful_ability": "Its spellcasting abilities allow it to manipulate thoughts and create illusions, enhancing its stealth.",
+    "equipment": null,
+    "senses": "The Bleakheart has darkvision up to 60 feet, aiding its stealthy movements in darkness.",
+    "skills": "Proficient in persuasion and stealth, allowing it to navigate social situations and remain undetected.",
+    "additional_information": [
+        "Indiscernible in Shadows: Invisible in dim light and darkness.",
+        "Silent Entry: Can unlock doors without noise.",
+        "Innate spellcasting based on Charisma.",
+        "Has condition immunities including charmed and frightened.",
+        "Can create new Bleakhearts from those it has killed."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast 'detect thoughts' and 'minor illusion' at will, and 'disguise self' three times a day.",
+    "test_queries": [
+        "haunting undead creature",
+        "stealthy monster of despair",
+        "psychic damage enemy",
+        "shadowy undead assassin",
+        "creature that manipulates emotions"
+    ]
+}

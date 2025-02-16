@@ -1,0 +1,25 @@
+{
+    "name": "Dissimortuum",
+    "queries": [
+        {
+            "query": "medium undead creature with a terrifying appearance that can climb walls",
+            "variant": "undead creature that is medium-sized and uses terrifying abilities while climbing walls"
+        },
+        {
+            "query": "chaotic evil monster with high Charisma and strong Constitution",
+            "variant": "monster characterized by chaos and evil, possessing exceptional Charisma and good Constitution"
+        },
+        {
+            "query": "undead foe immune to necrotic damage that uses fear tactics",
+            "variant": "necrotic damage-resistant undead enemy that employs fear-based tactics"
+        },
+        {
+            "query": "creature with natural armor that can move 30 feet and attacks with claws",
+            "variant": "monster with armor derived from nature, moving 30 feet and capable of claw attacks"
+        },
+        {
+            "query": "Dissimortuum's abilities related to climbing and fear induction",
+            "variant": "abilities of Dissimortuum that involve climbing surfaces and inducing fear"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Gargoyle",
+    "queries": [
+        {
+            "query": "stone-skinned creature that hides among statues and flies",
+            "variant": "stone creature that flies and hides in the statues"
+        },
+        {
+            "query": "predatory monster with leathery wings and a bite attack",
+            "variant": "predatory creature featuring leathery wings and bite attacks"
+        },
+        {
+            "query": "guardian creature that remains motionless and uses ambush tactics",
+            "variant": "guardian monster that stays still and ambushes"
+        },
+        {
+            "query": "elemental creature with damage resistance and darkvision",
+            "variant": "elemental monster possessing darkvision and resistances"
+        },
+        {
+            "query": "intimidating creature with a fear ability and a rocky appearance",
+            "variant": "intimidating monster with fear tactics and rocky look"
+        }
+    ]
+}

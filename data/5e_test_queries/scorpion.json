@@ -1,0 +1,25 @@
+{
+    "name": "Scorpion",
+    "queries": [
+        {
+            "query": "small venomous creature with pincers found in deserts",
+            "variant": "tiny creature with pincers and venom that lives in arid regions"
+        },
+        {
+            "query": "stealthy hunter with poison sting that blends into the sand",
+            "variant": "sneaky creature that can poison its prey and hides in the sand"
+        },
+        {
+            "query": "predatory arachnid that delivers poison damage",
+            "variant": "carnivorous arachnid that inflicts venom damage"
+        },
+        {
+            "query": "tiny beast that can swarm and is weak individually",
+            "variant": "small creature that is weak alone but can come in large numbers"
+        },
+        {
+            "query": "desert-dwelling creature with a low hit point and high stealth",
+            "variant": "sand-dwelling creature that is not tough but very stealthy"
+        }
+    ]
+}

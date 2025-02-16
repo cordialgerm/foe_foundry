@@ -1,6 +1,8 @@
 <MonsterName/>Forest Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>60</HP>
 <summary>The Forest Drake is a relatively small draconic creature known for its agility and versatility in combat. As a neutral creature, it occupies an interesting role in the ecosystem, often interacting with both adventurers and other creatures in the forest. The drake boasts a solid Armor Class of 15 due to its natural armor, along with a respectable pool of 60 hit points, which makes it moderately resilient. With a Challenge Rating of 2, it serves as an appropriate foe for mid-level adventurers. The most notable aspect of the Forest Drake is its ability to launch into impressive leaps, giving it significant mobility in its environment, as well as potent fire-based attacks.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Forest Drake's **Fire Breath** ability allows it to exhale a blast of fire i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Forest Drake
 
 *Small* *Dragon* *neutral*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Fire Breath (Recharge 5-6):** The drake exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

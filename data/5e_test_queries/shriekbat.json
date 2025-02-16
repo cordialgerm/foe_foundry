@@ -1,0 +1,25 @@
+{
+    "name": "Shriekbat",
+    "queries": [
+        {
+            "query": "huge monster that uses sound attacks and can fly",
+            "variant": "big monster that can fly and uses sound as a weapon"
+        },
+        {
+            "query": "monster with devastating thunder abilities that grapples enemies",
+            "variant": "creature with powerful thunder attacks and the ability to restrain foes"
+        },
+        {
+            "query": "stealthy creature that is immune to thunder attacks and uses echolocation",
+            "variant": "sneaky monster that can't be hurt by thunder and relies on echolocation"
+        },
+        {
+            "query": "monstrosity with high strength and low intelligence living in chaotic environments",
+            "variant": "creature with great physical power but weak intellect found in wild settings"
+        },
+        {
+            "query": "Shriekbat abilities and combat strategies against adventurers",
+            "variant": "Shriekbat combat tactics and the skills it uses against party members"
+        }
+    ]
+}

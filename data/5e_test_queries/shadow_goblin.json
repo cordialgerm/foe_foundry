@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Goblin",
+    "queries": [
+        {
+            "query": "small humanoid that thrives in darkness and has stealth abilities",
+            "variant": "small humanoid that has stealth abilities and thrives in dark"
+        },
+        {
+            "query": "cunning creature with sunlight sensitivity and high Dexterity",
+            "variant": "cunning creature with high Dexterity and sensitivity to sunlight"
+        },
+        {
+            "query": "darkvision humanoid that excels in stealth and evasion",
+            "variant": "humanoid that excels in stealth and evasion with darkvision"
+        },
+        {
+            "query": "agile creature that uses kitchen knife and can hide easily",
+            "variant": "agile creature that can hide easily and wields a kitchen knife"
+        },
+        {
+            "query": "evil alignment goblin found in shadows with nimble escape",
+            "variant": "goblin with evil alignment found in shadows and has nimble escape"
+        }
+    ]
+}

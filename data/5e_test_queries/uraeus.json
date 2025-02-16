@@ -1,0 +1,25 @@
+{
+    "name": "Uraeus",
+    "queries": [
+        {
+            "query": "tiny celestial creature with a venomous bite and fire breath",
+            "variant": "tiny celestail beast with fire breath and a venomous bite"
+        },
+        {
+            "query": "flying monster that creates magical bonds and withstands fire damage",
+            "variant": "monster that flies, creates magical bonds, and is immune to fire damage"
+        },
+        {
+            "query": "creature that can fly and has a bond with allies while being immune to poison",
+            "variant": "being that can fly and has a bond with allies, completely immune to poison"
+        },
+        {
+            "query": "lavish divine monster known for its fiery breath and protective abilities",
+            "variant": "lavish celestial beast famous for fiery breath and protection abilities"
+        },
+        {
+            "query": "celestial creature with blindsight and resistance to magic",
+            "variant": "celestial being that has blindsight and is resistant to magical effects"
+        }
+    ]
+}

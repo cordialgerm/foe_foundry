@@ -1,0 +1,25 @@
+{
+    "name": "Vent Linnorm",
+    "queries": [
+        {
+            "query": "gargantuan dragon with cold immunity that lives in water",
+            "variant": "gargantuan drake that is immune to cold and inhabits water"
+        },
+        {
+            "query": "dragon that can breathe both air and water and deals necrotic damage",
+            "variant": "dragon able to breathe water and air and inflicts necrotic damage"
+        },
+        {
+            "query": "neutral evil dragon with high hit points that instills fear",
+            "variant": "neutral evil dragon with considerable hit points that induces fear"
+        },
+        {
+            "query": "creature with blindsight and a frightful presence ability",
+            "variant": "being with blindsight and frightening presence abilities"
+        },
+        {
+            "query": "multiattack dragon with blood scent ability that grapples",
+            "variant": "dragon with multiple attacks that has blood scent and can grapple"
+        }
+    ]
+}

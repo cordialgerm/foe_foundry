@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Void Dragon",
+    "queries": [
+        {
+            "query": "gigantic dragon with cold immunity that can manipulate reality",
+            "variant": "huge dragon that is immune to cold and manipulates reality"
+        },
+        {
+            "query": "intelligent chaotic dragon that travels through the void",
+            "variant": "chaotic intelligent dragon that can traverse the void"
+        },
+        {
+            "query": "Ancient dragon that causes madness in nearby creatures",
+            "variant": "Ancient dragon that inflicts madness on creatures near it"
+        },
+        {
+            "query": "Gargantuan dragon with powerful breath weapons and legendary actions",
+            "variant": "Gargantuan dragon featuring strong breath attacks and legendary abilities"
+        },
+        {
+            "query": "dragon that triggers explosions on death and has high hit points",
+            "variant": "dragon that causes destruction upon death and has a lot of hit points"
+        }
+    ]
+}

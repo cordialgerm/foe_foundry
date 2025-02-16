@@ -1,0 +1,53 @@
+{
+    "name": "Adult Black Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 238,
+    "ac": 19,
+    "srd": true,
+    "cr": "14",
+    "movement": "40 ft. walking, 80 ft. flying, 40 ft. swimming",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "black",
+        "chromatic",
+        "acid"
+    ],
+    "adjectives": [
+        "fearsome",
+        "malevolent",
+        "cunning",
+        "dark"
+    ],
+    "description": "The Adult Black Dragon has glossy black scales that absorb light, bat-like wings, and a barbed tail. It typically resides in swamps or desolate ruins, using its environment to ambush prey.",
+    "memorable": "This dragon's acidic breath is devastating, and it revels in tormenting its prey before the kill, making it a truly terrifying opponent.",
+    "goals": "To hunt and torment its foes, collecting trophies from its victims.",
+    "relations": "Related to other chromatic dragons and may have minions or followers in its lair.",
+    "environment": "Swamps, desolate ruins, and other murky areas.",
+    "strengths": "Immune to acid damage, high Armor Class, extensive Hit Points, and a variety of powerful attacks.",
+    "weaknesses": "Reliance on saving throws for certain abilities, can be temporarily weakened by its Legendary Resistance.",
+    "attacks": "Can bite, claw, and strike with its tail, using a combination of piercing, slashing, and bludgeoning damage, along with acid damage from its breath and other attacks.",
+    "most_powerful_ability": "The Acid Breath can obliterate foes in a wide line, causing massive acid damage and potential blindness.",
+    "senses": "Possesses blindsight up to 60 feet and darkvision up to 120 feet, providing it an extensive range of awareness in darkness.",
+    "skills": "Excels in stealth and perception, regularly ambushing foes with high efficiency.",
+    "additional_information": [
+        "Can breathe air and water (Amphibious trait).",
+        "Uses Acidic Vapors after its Acid Breath attack to poison nearby creatures.",
+        "Can instill fear in nearby foes with its Frightful Presence.",
+        "Has the ability to manipulate the battlefield with Legendary Actions.",
+        "Can collect and hoard trophies from its victims."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "acid-spitting dragon",
+        "fearsome swamp dragon",
+        "chromatic dragon encounter",
+        "dragon with acidic breath",
+        "huge black dragon"
+    ]
+}

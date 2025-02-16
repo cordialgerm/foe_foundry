@@ -1,0 +1,52 @@
+{
+    "name": "Catscratch",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 76,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 15 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "combat",
+        "poison",
+        "tracking"
+    ],
+    "adjectives": [
+        "huge",
+        "chaotic",
+        "mobile",
+        "poisonous"
+    ],
+    "description": "The Catscratch is a huge, physically powerful aberration with an unsettling presence. It possesses keen physical features and a menacing, chaotic appearance that enhances its menacing nature.",
+    "memorable": "The Catscratch can survive lethal damage thanks to its Nine Lives ability, making it hard to take down in combat.",
+    "goals": "To hunt opponents using its physical prowess and poison-based attacks while leveraging its resilience.",
+    "relations": "It may be encountered alongside other chaotic creatures or as a guardian of dark places.",
+    "environment": "Often found in chaotic terrains or dark environments where it can utilize its keen senses to track prey.",
+    "strengths": "Exceptional physical abilities along with the ability to resist poison and a strong tracking capability.",
+    "weaknesses": "Significantly low intelligence and reliance on physical attacks may limit its tactical versatility.",
+    "attacks": "It can execute a Multiattack combining a devastating bite that inflicts piercing damage and a claw attack that deals slashing damage.",
+    "most_powerful_ability": "The Vomit ability unleashes a 15-foot cone of poisonous bile, causing significant poison damage and possibly inflicting catscratch fugue.",
+    "senses": "Possesses keen smell, granting advantage on perception checks that rely on smell.",
+    "skills": "Notable stealth proficiency enhances its ability to ambush unsuspecting foes.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Can knock opponents prone using its Pounce ability.",
+        "Has a potentially lethal bite attack that can cripple felids.",
+        "Resilient with the ability to reduce fatal damage to 9 hit points.",
+        "Combines both mobility and poison for tactical combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge chaotic monster with poison abilities",
+        "mobile beast that drops to 9 hit points",
+        "monstrous predator with keen smell and poison",
+        "agile creature that knocks opponents down",
+        "large aberration that vomits poisonous bile"
+    ]
+}

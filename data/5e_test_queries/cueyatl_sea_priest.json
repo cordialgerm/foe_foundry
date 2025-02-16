@@ -1,0 +1,25 @@
+{
+    "name": "Cueyatl Sea Priest",
+    "queries": [
+        {
+            "query": "small humanoid creature that can breathe water and air",
+            "variant": "small creature that can breathe both water and air"
+        },
+        {
+            "query": "jungle camouflage ability in aquatic environments",
+            "variant": "ability to hide in jungles while being aquatic"
+        },
+        {
+            "query": "creature that communicates with sea life and uses poison",
+            "variant": "monster that talks to sea creatures and has poison attacks"
+        },
+        {
+            "query": "lawful evil sea priest with spellcasting abilities",
+            "variant": "sea priest that is lawful evil and can cast spells"
+        },
+        {
+            "query": "Cueyatl Sea Priest abilities in jungle terrain",
+            "variant": "abilities of Cueyatl Sea Priest in jungle environments"
+        }
+    ]
+}

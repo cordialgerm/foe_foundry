@@ -1,0 +1,25 @@
+{
+    "name": "Erina Tussler",
+    "queries": [
+        {
+            "query": "small humanoid with spines and grappling abilities",
+            "variant": "small humanoid with grappling skills and spines"
+        },
+        {
+            "query": "creature that regenerates arm spines and thrives in close combat",
+            "variant": "creature that excels in close combat and can regenerate spines"
+        },
+        {
+            "query": "tactical grappler with piercing damage and burrowing speed",
+            "variant": "tactical grappler that can burrow and deals piercing damage"
+        },
+        {
+            "query": "humanoid with keen smell and advantageous against poison",
+            "variant": "humanoid with great smell and advantage on poison saves"
+        },
+        {
+            "query": "Erina Tussler combat abilities focusing on range and melee",
+            "variant": "combat skills of Erina Tussler centered around melee and ranged"
+        }
+    ]
+}

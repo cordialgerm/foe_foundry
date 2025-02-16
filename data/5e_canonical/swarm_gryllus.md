@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Gryllus</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>110</HP>
 <summary>The Gryllus Swarm is a large, construct creature that embodies a unique blend of magical and mechanical properties, making it an intriguing opponent in combat. As a lawful neutral entity, its actions are predictable and structured, often making tactical decisions rather than acting on whim. With strong Dexterity, it has good agility that allows for dexterous maneuvers in battle, while its notable feature of being bound to a book provides a strategic vulnerability that players can exploit. Though it possesses a substantial pool of hit points, its reliance on proximity to its book for maximum health can be a significant weakness. Overall, the Gryllus Swarm presents a considerable challenge with its mix of mobility, resistances, and unique abilities, but a well-strategized approach can turn the tide in players' favor.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Gryllus Swarm can perform a "Multiattack," allowing it to make tw
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Gryllus
 
 *Large* *Construct* *lawful neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Timber:** Calls out in synchronous tiny voices before chopping away at the feet of one creature in the swarm’s space. Target knocked prone (DC 15 Str negates). If target is knocked prone swarm can then make one Go for the Knees attack vs. it as a bonus action.
 
 
+</statblock>
 
 

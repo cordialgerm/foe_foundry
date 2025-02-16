@@ -1,0 +1,54 @@
+{
+    "name": "Kobold Ettin",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 34,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "giant",
+        "kobold",
+        "combat",
+        "chaotic",
+        "mischievous"
+    ],
+    "adjectives": [
+        "chaotic",
+        "mischievous",
+        "two-headed"
+    ],
+    "description": "The Kobold Ettin is a medium-sized giant with two heads that constantly bicker, showcasing a mix of giant strength and kobold cunning.",
+    "memorable": "It is notable for its constant bickering, unique dual persona, and its powerful area control ability called Echoing Burps.",
+    "goals": "Commonly seeks to engage in combat while utilizing its size and chaotic nature to advantage.",
+    "relations": "Often encountered with other kobolds or allies in cooperative tactics.",
+    "environment": "Typically found in underground lairs or areas inhabited by kobolds.",
+    "strengths": "Strong in melee combat with advantages when supported by allies, also resilient to various conditions.",
+    "weaknesses": "Significantly hindered by sunlight, which affects its accuracy and perception.",
+    "attacks": "Can make two attacks using either a Greatclub or a Spear, offering versatility in melee or ranged options.",
+    "most_powerful_ability": "Echoing Burps can incapacitate foes in a large area while dealing thunder damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision to see in darkness and an average passive perception score of 9.",
+    "skills": "Has a poor perception skill due to low Wisdom score.",
+    "additional_information": [
+        "Gains advantage on attacks when allies are nearby due to Pack Tactics.",
+        "Classifies as a Large Giant for carrying capacity despite being Medium-sized.",
+        "Has advantage on saving throws against being blinded, charmed, or incapacitated.",
+        "Disadvantaged in Stealth checks due to bickering heads.",
+        "Its chaotic nature makes it unpredictable in combat."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant creature with two arguing heads",
+        "medium giant that uses thunder attacks",
+        "chaotic monster with sunlight sensitivity",
+        "mischievous giant with notable burps",
+        "strong melee attacker with bickering heads"
+    ]
+}

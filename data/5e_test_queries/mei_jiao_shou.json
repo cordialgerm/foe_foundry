@@ -1,0 +1,25 @@
+{
+    "name": "Mei Jiao Shou",
+    "queries": [
+        {
+            "query": "gargantuan beast with a head bash attack and area damage",
+            "variant": "huge beast that has a head bash and an area attack"
+        },
+        {
+            "query": "creature with low dexterity that causes difficult terrain",
+            "variant": "monster with bad dexterity that creates difficult terrain"
+        },
+        {
+            "query": "strong melee fighter that can knock targets prone",
+            "variant": "powerful melee monster that can make foes fall down"
+        },
+        {
+            "query": "massive beast that dominates the battlefield with stomps",
+            "variant": "big creature that controls the battlefield with stomp attacks"
+        },
+        {
+            "query": "Mei Jiao Shou tactics for controlling terrain and melee combat",
+            "variant": "tactics of Mei Jiao Shou for melee fights and controlling areas"
+        }
+    ]
+}

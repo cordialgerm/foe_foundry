@@ -1,0 +1,25 @@
+{
+    "name": "Tulpa",
+    "queries": [
+        {
+            "query": "undead creature with psychic powers that can reform near its creator",
+            "variant": "creature that is undead and has psychic abilities, able to come back near its creator"
+        },
+        {
+            "query": "medium neutral evil monster that frightens foes and uses necrotic damage",
+            "variant": "medium-sized evil monster that uses fright tactics and necrotic attacks"
+        },
+        {
+            "query": "psychological threat that can move through objects and causes dark thoughts",
+            "variant": "threat that causes fear and can pass through solid objects while inducing dark thoughts"
+        },
+        {
+            "query": "monster with incorporeal movement and a following ability that hinders its creator",
+            "variant": "creature that can move through objects and has a power that negatively affects its creator"
+        },
+        {
+            "query": "Tulpa abilities include psychic blast and imposing dread",
+            "variant": "abilities of Tulpa feature psychic attack and the power of imposing dread"
+        }
+    ]
+}

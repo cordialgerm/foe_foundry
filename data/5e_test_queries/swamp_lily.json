@@ -1,0 +1,25 @@
+{
+    "name": "Swamp Lily",
+    "queries": [
+        {
+            "query": "plant creature that creates illusory banquets and can charm",
+            "variant": "creature that charms and makes fake feasts using illusions"
+        },
+        {
+            "query": "medium-sized plant in swamp environments with poison immunities",
+            "variant": "medium plant creature found in swamps that is immune to poison"
+        },
+        {
+            "query": "deceptive plant monster with the ability to manipulate opponents",
+            "variant": "manipulative plant creature that is deceptive to foes"
+        },
+        {
+            "query": "Swamp Lily with root attacks and poison damage potential",
+            "variant": "Swamp Lily plant that attacks with roots and poisons"
+        },
+        {
+            "query": "creature that reads thoughts about food preferences and can incapacitate",
+            "variant": "monster that discerns food preferences and has the ability to incapacitate"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wood Elf Scout",
+    "queries": [
+        {
+            "query": "agile humanoid that excels in ranged combat and stealth",
+            "variant": "humanoid that is agile and excels in stealth and ranged combat"
+        },
+        {
+            "query": "wood elf character with high dexterity and perception skills",
+            "variant": "character that is a wood elf with high perception and dexterity skills"
+        },
+        {
+            "query": "humanoid scout that can climb effectively and has keen senses",
+            "variant": "scout humanoid that has keen senses and climbs effectively"
+        },
+        {
+            "query": "stealthy elf scout with a longbow and shortsword in combat",
+            "variant": "elf scout that is stealthy and uses a shortsword and longbow in fights"
+        },
+        {
+            "query": "wood elf with 19 hit points and armor class of 15",
+            "variant": "elf that has 15 armor class and 19 hit points"
+        }
+    ]
+}

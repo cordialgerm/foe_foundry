@@ -1,0 +1,55 @@
+{
+    "name": "Prismatic Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 feet walking, 15 feet climbing",
+    "role": null,
+    "tags": [
+        "dragon",
+        "magical",
+        "colorful",
+        "spellcaster",
+        "radiant"
+    ],
+    "adjectives": [
+        "vibrant",
+        "formidable",
+        "versatile",
+        "unique"
+    ],
+    "description": "A medium-sized dragon known for its vibrant appearance and formidable magical abilities, featuring radiant scales that shimmer in multiple colors.",
+    "memorable": "The Prismatic Wyrmling is immune to radiant damage and possesses powerful spellcasting abilities, making it a unique opponent.",
+    "goals": "To assert its dominance in its territory and employ magic for various strategic advantages.",
+    "relations": "Related to other dragons and could be found in a lair alongside elder dragons.",
+    "environment": "Typically found in magical forests or caverns where it can protect its territory.",
+    "strengths": "Immunity to radiant damage and ability to cast spells at will enhance its combat versatility.",
+    "weaknesses": "Average Dexterity makes it less evasive compared to other creatures.",
+    "attacks": "Vicious bite attack dealing piercing damage and a powerful Light Beam that inflicts radiant damage in a straight line.",
+    "most_powerful_ability": "Light Beam attack that emits a damaging beam of radiant energy.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 feet allows it to detect hidden threats nearby, even in complete darkness.",
+    "skills": "Has a modest skill in Perception, making it able to notice hidden things somewhat effectively.",
+    "additional_information": [
+        "Can cast Dancing Lights at will for illumination.",
+        "Once per day can charm humanoids using Charm Person.",
+        "Has the ability to blind foes temporarily using Color Spray.",
+        "Relies on its spellcasting to control the battlefield.",
+        "Radiant transformation of its body makes it visually striking."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells at will and once per day, including Dancing Lights, Charm Person, and Color Spray.",
+    "test_queries": [
+        "colorful dragon with radiant magic",
+        "medium dragon that can blind enemies",
+        "prismatic wyrmling abilities and attacks",
+        "spellcasting dragon immune to radiant damage",
+        "dragon known for vibrant magical attacks"
+    ]
+}

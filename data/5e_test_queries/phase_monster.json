@@ -1,0 +1,25 @@
+{
+    "name": "Phase Monster",
+    "queries": [
+        {
+            "query": "large creature that can fly and creates illusions",
+            "variant": "big monster that can fly and makes illusions"
+        },
+        {
+            "query": "powerful monster with a blood-curdling scream that is ineffective in social situations",
+            "variant": "strong monstrosity with a terrifying scream and poor social skills"
+        },
+        {
+            "query": "agile large monstrosity that uses mirror image and prefers combat",
+            "variant": "swift big monster that employs mirror image and likes fighting"
+        },
+        {
+            "query": "monster with high strength and average dexterity that frightens opponents",
+            "variant": "creature with great physical power and normal agility that terrifies enemies"
+        },
+        {
+            "query": "combat-focused creature with shapeshifting abilities and low intelligence",
+            "variant": "fight-oriented monster that can change shape and has poor mental capacity"
+        }
+    ]
+}

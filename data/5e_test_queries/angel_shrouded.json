@@ -1,0 +1,25 @@
+{
+    "name": "Angel, Shrouded",
+    "queries": [
+        {
+            "query": "celestial creature with radiant poison and flying abilities",
+            "variant": "celestial being that can fly and has radiant poison attacks"
+        },
+        {
+            "query": "powerful angel that is immune to various conditions and resists poison",
+            "variant": "strong angel that resists poison and is immune to many conditions"
+        },
+        {
+            "query": "fast celestial angel with high Dexterity and Evasion ability",
+            "variant": "swift celestial being with formidable Dexterity and the Evasion skill"
+        },
+        {
+            "query": "angel that attacks with slashing damage and casts spells",
+            "variant": "creature that uses slashing attacks and has spellcasting abilities"
+        },
+        {
+            "query": "medium chaotic good celestial angel with high flying speed",
+            "variant": "medium-sized chaotic good celestial creature that flies fast"
+        }
+    ]
+}

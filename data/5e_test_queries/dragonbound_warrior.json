@@ -1,0 +1,25 @@
+{
+    "name": "Dragonbound Warrior",
+    "queries": [
+        {
+            "query": "humanoid warrior with dragon powers and average strength",
+            "variant": "warrior humanoid with dragon abilities and average strength"
+        },
+        {
+            "query": "medium creature skilled in stealth and perception that serves dragons",
+            "variant": "medium creature that excels in perception and stealth serving dragons"
+        },
+        {
+            "query": "dragon servant with resistance to elemental damage and draconic abilities",
+            "variant": "elemental resistant dragon servant with abilities from draconic heritage"
+        },
+        {
+            "query": "combat-focused humanoid that uses a spear and has draconic traits",
+            "variant": "humanoid specializing in combat with a spear and possessing draconic features"
+        },
+        {
+            "query": "medium humanoid with average stats and dragon-related skills",
+            "variant": "medium creature with average abilities and skills related to dragons"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Lemure Band",
+    "queries": [
+        {
+            "query": "fiendish collective of lesser devils with a menacing presence",
+            "variant": "menacing presence of lesser devils in a fiendish collective"
+        },
+        {
+            "query": "large fiend that splits into lemures when defeated",
+            "variant": "fiend that becomes lemures when reduced to zero hit points"
+        },
+        {
+            "query": "creature with low Dexterity and chilling groan ability",
+            "variant": "chilling groan ability with very low Dexterity creature"
+        },
+        {
+            "query": "darkvision fiend immune to fire and poison damage",
+            "variant": "fire and poison immune fiend with darkvision"
+        },
+        {
+            "query": "creature that deals bludgeoning damage and is susceptible to area attacks",
+            "variant": "area attacks could do double damage to this bludgeoning damage creature"
+        }
+    ]
+}

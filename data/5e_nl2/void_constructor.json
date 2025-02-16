@@ -1,0 +1,51 @@
+{
+    "name": "Void Constructor",
+    "creature_type": "Construct",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 43,
+    "ac": 19,
+    "srd": false,
+    "cr": "3",
+    "movement": "fly 30 ft., walking speed of 0 ft.",
+    "role": null,
+    "tags": [
+        "Construct",
+        "Necrotic",
+        "Grappler",
+        "Aura"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "tactical"
+    ],
+    "description": "The Void Constructor is a Medium-sized Construct with a high Armor Class and notable natural defenses, characterized by its ability to fly and grapple opponents.",
+    "memorable": "With the Tainted Aura ability, it damages nearby enemies with necrotic energy, making it a dangerous opponent in close combat.",
+    "goals": "Typically seeks to grapple foes and deal continuous damage while maintaining its tactical advantage in battle.",
+    "relations": "Can be encountered alongside other Constructs or creatures drawn to necrotic energy.",
+    "environment": "Often found within a mile of a Void henge, utilizing the ambient necrotic energy.",
+    "strengths": "High Armor Class and immunities to necrotic, poison, and psychic damage.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma scores make it vulnerable to certain tactics.",
+    "attacks": "Can perform Multiattacks with Slam strikes or reach foes with Tentacles, grappling them for control.",
+    "most_powerful_ability": "Tainted Aura allows it to harm multiple nearby enemies with necrotic damage at the start of its turn.",
+    "equipment": null,
+    "senses": "Passive Perception is low, indicating a lack of awareness.",
+    "skills": "Has a moderate perception skill at -1, suggesting limited ability to notice threats.",
+    "additional_information": [
+        "Can move at full speed while grappling, providing tactical mobility.",
+        "Exempts grappled creatures from its Tainted Aura, allowing strategic choices in battle.",
+        "Uses natural armor to maintain high defenses against attacks."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "flying grappler with necrotic aura",
+        "construct that damages nearby foes",
+        "strong durability flying monster",
+        "necrotic damage dealing construct",
+        "mobile grappler in combat"
+    ]
+}

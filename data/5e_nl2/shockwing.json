@@ -1,0 +1,51 @@
+{
+    "name": "Shockwing",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 27,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 30 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "lightning",
+        "flying"
+    ],
+    "adjectives": [
+        "electric",
+        "agile"
+    ],
+    "description": "The Shockwing resembles a giant moth with notable electrical qualities, featuring notable agility and a striking appearance.",
+    "memorable": "It can stun opponents with its electric burst while being immune to lightning damage.",
+    "goals": "Typically engage in aerial combat and quickly dispatch foes.",
+    "relations": "May be encountered alongside other beasts or creatures drawn to electrical phenomena.",
+    "environment": "Often found in areas with storms or electric disturbances.",
+    "strengths": "Immunity to lightning damage and ability to stun multiple enemies at once.",
+    "weaknesses": "Very low Intelligence and Charisma, limited to physical attacks.",
+    "attacks": "Utilizes a proboscis attack that deals piercing and additional lightning damage.",
+    "most_powerful_ability": "Fulminating Wings, which stuns creatures in a large area.",
+    "equipment": null,
+    "senses": "Possesses darkvision and has advantage on perception checks that rely on smell.",
+    "skills": "Excels in stealth with a +4 bonus, making it adept at avoiding detection.",
+    "additional_information": [
+        "Capable of creating area-of-effect lightning damage.",
+        "Has an impressive Dexterity score for evasion.",
+        "Low damage output compared to other creatures for its CR.",
+        "Can deliver continuous lightning damage within close range.",
+        "Notable for its ability to operate effectively in both the air and on land."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant moth that can stun",
+        "electric creature with flying speed",
+        "small creature resistant to lightning",
+        "moth that deals area lightning damage",
+        "stealthy beast with proboscis attacks"
+    ]
+}

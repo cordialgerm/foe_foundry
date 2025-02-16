@@ -1,0 +1,25 @@
+{
+    "name": "Ethereal Drake",
+    "queries": [
+        {
+            "query": "large dragon that can shift between planes and has a powerful breath attack",
+            "variant": "big dragon with plane shifting abilities and strong breath attack"
+        },
+        {
+            "query": "mobility focused dragon with ethereal sight and high HP",
+            "variant": "dragon with great mobility, ethereal sight, and a lot of hit points"
+        },
+        {
+            "query": "chaotic neutral dragon with poison immunity and claw attacks",
+            "variant": "dragon of chaotic neutral alignment that is immune to poison and uses claw attacks"
+        },
+        {
+            "query": "Ethereal Drake tactics for combat with fluid plane transitions",
+            "variant": "combat strategies for Ethereal Drake involving smooth plane shifts"
+        },
+        {
+            "query": "dragon that can grapple and displace creatures to the Ethereal Plane",
+            "variant": "creature that can grapple and send opponents to the Ethereal Plane"
+        }
+    ]
+}

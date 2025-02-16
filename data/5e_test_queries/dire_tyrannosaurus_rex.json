@@ -1,0 +1,25 @@
+{
+    "name": "Dire Tyrannosaurus Rex",
+    "queries": [
+        {
+            "query": "huge ferocious dinosaur that grapples enemies in combat",
+            "variant": "huge dinosaur that is ferocious and can grapple foes in battle"
+        },
+        {
+            "query": "powerful beast with high HP and average armor class",
+            "variant": "strong beast that has high hit points and an average armor class"
+        },
+        {
+            "query": "large dinosaur that attacks with bite and tail",
+            "variant": "big dinosaur that has attacks with tail and bite"
+        },
+        {
+            "query": "fast-moving predator with significant damage output",
+            "variant": "quick predator capable of dealing considerable damage"
+        },
+        {
+            "query": "predator from the past with low intelligence and strong strength",
+            "variant": "ancient predator with a strong strength score and low intelligence"
+        }
+    ]
+}

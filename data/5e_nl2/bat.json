@@ -1,0 +1,47 @@
+{
+    "name": "Bat",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 12,
+    "srd": true,
+    "cr": "0",
+    "movement": "5 ft. walking, 30 ft. flying",
+    "role": null,
+    "tags": [
+        "flying",
+        "nocturnal",
+        "swarm"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "nocturnal"
+    ],
+    "description": "A tiny, nocturnal mammal with membranous wings that allow it to fly silently through the night.",
+    "memorable": "Bats use echolocation to navigate and often appear in large swarms that can disorient unprepared travelers.",
+    "goals": "Searching for insects to eat, often dwelling in dark areas like caves or forests.",
+    "relations": "Often found in dark environments and may serve as a food source for larger predators.",
+    "environment": "Dark caves, forests, in swarms, often associated with eerie locations.",
+    "strengths": "Possesses echolocation for navigation and keen hearing for enhanced perception.",
+    "weaknesses": "Extremely low hit points and armor class, making it very easy to defeat.",
+    "attacks": "Can perform a bite attack dealing 1 piercing damage; effective in swarming targets.",
+    "most_powerful_ability": "Echolocation allows it to navigate and detect creatures by sound.",
+    "senses": "Has blindsight to 60 ft. and can detect nearby creatures in darkness.",
+    "skills": "Advantage on Wisdom (Perception) checks that rely on hearing due to keen hearing.",
+    "additional_information": [
+        "Can navigate dark caves and forests effectively.",
+        "May serve as a minor nuisance but is harmless on its own.",
+        "Typically encountered as environmental detail or minor obstacle early in campaigns."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny flying mammal",
+        "nocturnal creature with echolocation",
+        "swarms of bats in dark caves",
+        "agile small creature",
+        "harmless insect-eating bat"
+    ]
+}

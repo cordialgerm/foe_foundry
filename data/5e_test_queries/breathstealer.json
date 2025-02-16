@@ -1,0 +1,25 @@
+{
+    "name": "Breathstealer",
+    "queries": [
+        {
+            "query": "psychic humanoid that threatens with suffocation",
+            "variant": "humanoid psychic that can suffocate its victims"
+        },
+        {
+            "query": "agile creature with magical weapon attacks that deals psychic damage",
+            "variant": "creature with agility and magical psychic weapon attacks"
+        },
+        {
+            "query": "tactic of a cunning humanoid that manipulates opponents",
+            "variant": "strategies of a clever humanoid that controls foes"
+        },
+        {
+            "query": "medium-sized monster with high Dexterity and psychic abilities",
+            "variant": "monster of medium size with Dex and psychic powers"
+        },
+        {
+            "query": "humanoid that uses Gasp to Survive and delivers psychic blasts",
+            "variant": "humanoid using suffocation and psychic attack"
+        }
+    ]
+}

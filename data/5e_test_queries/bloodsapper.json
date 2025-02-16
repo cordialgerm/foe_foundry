@@ -1,0 +1,25 @@
+{
+    "name": "Bloodsapper",
+    "queries": [
+        {
+            "query": "medium-sized chaotic evil monster that can smell blood from 240 feet away",
+            "variant": "medium chaotic evil creature that can detect blood within 240 feet"
+        },
+        {
+            "query": "vicious aberration with strong melee attacks and life-draining abilities",
+            "variant": "ferocious aberration that excels in melee combat and can drain life"
+        },
+        {
+            "query": "monster with high mobility that hunts injured prey using Blood Scent",
+            "variant": "creature that tracks wounded foes and has impressive mobility"
+        },
+        {
+            "query": "bloodsucking monster with a corrosive breath attack and stealth skills",
+            "variant": "blood-draining creature that has acid breath and is good at stealth"
+        },
+        {
+            "query": "cunning medium aberration with high hit points and dangerous tongue attack",
+            "variant": "sly medium-sized aberration with significant hp and a deadly tongue attack"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Nihileth",
+    "queries": [
+        {
+            "query": "large undead creature with disease-spreading abilities",
+            "variant": "big undead monster that can spread diseases"
+        },
+        {
+            "query": "chaotic evil undead that can switch forms",
+            "variant": "undead creature with chaotic evil alignment and form-switching ability"
+        },
+        {
+            "query": "undead with high hit points and cold damage immunity",
+            "variant": "creature with 157 hit points and immunity to cold damage"
+        },
+        {
+            "query": "monster that uses telepathy and deals necrotic damage",
+            "variant": "creature that communicates telepathically and inflicts necrotic damage"
+        },
+        {
+            "query": "large undead monster with bludgeoning resistance and slow dexterity",
+            "variant": "big undead being with resistance to bludgeoning and poor dexterity"
+        }
+    ]
+}

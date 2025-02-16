@@ -1,0 +1,52 @@
+{
+    "name": "Forgotten Regent",
+    "creature_type": "Undead",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 187,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "30 feet walking and 50 feet flying provides good mobility",
+    "role": "Leader",
+    "tags": [
+        "undead",
+        "frost",
+        "necromancer"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "manipulative"
+    ],
+    "description": "The Forgotten Regent manifests as a powerful leader of necromantic forces, wielding frost abilities to immobilize foes and empower allies. It has an imposing presence that commands legions of undead.",
+    "memorable": "Can petrify enemies in magical ice and summon undead to fight at its side.",
+    "goals": "To lead and enhance its undead forces in battle.",
+    "relations": "Typically commands legions of undead like skeletons and zombies.",
+    "environment": "Often found in dark and desolate areas, controlling undead minions.",
+    "strengths": "Immunity to cold, necrotic, and poison, with high hit points and a variety of battlefield control abilities.",
+    "weaknesses": "Vulnerable to fire and reliant on undead companions for full effectiveness.",
+    "attacks": "Uses 'Frozen Rune Maul' for melee attacks dealing bludgeoning and cold damage, or 'Frost Blast' for ranged cold damage.",
+    "most_powerful_ability": "Glacier Imprisonment can petrify opponents in ice, severely limiting their combat capabilities.",
+    "equipment": null,
+    "senses": "Has darkvision and a passive perception of 16, giving it a keen awareness of its surroundings.",
+    "skills": "Proficient in perception, providing average awareness.",
+    "additional_information": [
+        "Can move through objects and creatures as difficult terrain.",
+        "Legendary Resistance allows it to succeed on failed saves three times a day.",
+        "Empowers undead allies with temporary hit points.",
+        "Calls forth additional undead allies once per day.",
+        "Does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "necromantic leader with frost abilities",
+        "powerful undead that commands legions",
+        "undead boss with glacier imprisonment",
+        "frost-themed monster summoning skeletons",
+        "creature that petrifies with ice powers"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Permafrost Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 133,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking at 20 feet and burrowing at 30 feet",
+    "role": null,
+    "tags": [
+        "elemental",
+        "cold",
+        "disease",
+        "ice"
+    ],
+    "adjectives": [
+        "cold",
+        "large",
+        "formidable",
+        "diseased"
+    ],
+    "description": "The Permafrost Elemental is a large creature associated with cold and ice, possessing a formidable presence in battle and severe cold damage abilities.",
+    "memorable": "Its ability to infect nearby creatures with a deadly disease upon taking fire damage makes it a grave threat.",
+    "goals": "To engage in combat and dominate foes with cold and disease effects.",
+    "relations": "Can be encountered with other elementals or cold-themed creatures.",
+    "environment": "Typically found in cold, icy terrains.",
+    "strengths": "Immunity to numerous conditions like paralysis and poison, and has strong physical might.",
+    "weaknesses": "Vulnerable to fire damage.",
+    "attacks": "Can perform a Multiattack with two Slam attacks, inflicting both bludgeoning and cold damage.",
+    "most_powerful_ability": "The Plague-Ridden Pound can knock creatures prone as well as inflict a potent disease.",
+    "equipment": null,
+    "senses": "Possesses both darkvision and tremorsense, allowing it to detect creatures in darkness and through solid ground.",
+    "skills": "Has average perception skills with a +2 modifier.",
+    "additional_information": [
+        "Earth Glide ability allows it to burrow without disrupting surroundings.",
+        "The Frigid Footprints ability creates difficult terrain around it.",
+        "It does not require air, food, drink, or sleep.",
+        "Can spread the primordial plague disease when taking fire damage.",
+        "Resistance to nonmagical bludgeoning, piercing, and slashing attacks."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ice elemental with disease capabilities",
+        "creature that freezes ground and hampers movement",
+        "cold elemental that infects with diseases",
+        "monstrous ice creature with strong melee attacks",
+        "elemental that burrows and creates difficult terrain"
+    ]
+}

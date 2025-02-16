@@ -1,0 +1,51 @@
+{
+    "name": "Chelicerae",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 153,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "poisonous",
+        "durable",
+        "magical"
+    ],
+    "description": "The Chelicerae is a large, cunning aberration that utilizes its magical prowess and stealth to trap and poison foes. It features notable physical strength and intelligence, indicated by its sinister appearance.",
+    "memorable": "It possesses a unique ability to siphon magic from spellcasters, diminishing their abilities while enhancing its own.",
+    "goals": "To trap, poison, and drain the powers of its enemies for its own sinister motives.",
+    "relations": "Often operates independently, but may be encountered alongside other creatures of evil nature.",
+    "environment": "Typically found in dark, secluded places where it can ambush unwary travelers.",
+    "strengths": "High Armor Class and Hit Points; advantage on saving throws against spells and magical effects; immunity to poison damage.",
+    "weaknesses": "Relatively low movement speed compared to some other agile creatures.",
+    "attacks": "The Chelicerae can deliver powerful melee attacks with its bite, which can poison targets, and claws along with a magical discharge that affects multiple foes.",
+    "most_powerful_ability": "The ability to siphon magic from spellcasters, causing them significant disadvantage while regaining its spellcasting capability.",
+    "equipment": null,
+    "senses": "Has darkvision out to 60 feet, allowing it to see in darkness.",
+    "skills": "Excels in Acrobatics, Athletics, Stealth, and has good proficiency in Perception.",
+    "additional_information": [
+        "Poison immunity and resistance to being charmed or poisoned.",
+        "Can traverse difficult surfaces and ceilings with ease.",
+        "Can cast spells for tactical advantages including buff spells like haste or methods to incapacitate enemies.",
+        "Exceptional Strength and Intelligence scores enhance physical and magical attacks.",
+        "Uses stealth and agility in combat for an ambush-style approach."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast spells like *mage hand* and *invisibility*, enhancing its versatility in encounters.",
+    "test_queries": [
+        "cunning large monster with magical powers",
+        "poisonous predator that drains magic",
+        "large creature that climbs walls and ceilings",
+        "stealthy aberration known for ambush tactics",
+        "evil aberration with powerful bite attack"
+    ]
+}

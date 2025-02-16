@@ -1,0 +1,25 @@
+{
+    "name": "Bagiennik",
+    "queries": [
+        {
+            "query": "medium aberration with slippery acid spray and healing abilities",
+            "variant": "medium-sized aberration that uses slippery acid spray and has healing powers"
+        },
+        {
+            "query": "creature with claws that can heal and create hazardous puddles",
+            "variant": "monster with claws, capable of healing and making dangerous puddles"
+        },
+        {
+            "query": "chaotic creature with good dexterity and supports allies in combat",
+            "variant": "chaotic monster with high dexterity that helps allies during battles"
+        },
+        {
+            "query": "Bagiennik-like monster with slashing attacks and a speed of 40 feet",
+            "variant": "monster resembling Bagiennik with slashing capabilities and 40 feet of speed"
+        },
+        {
+            "query": "unpredictable creature that can knock foes prone and heal allies",
+            "variant": "unreliable monster that has the ability to knock enemies down and heal companions"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Divi Noble",
+    "queries": [
+        {
+            "query": "large elemental creature with earth manipulation abilities",
+            "variant": "big elemental monster that can manipulate earth"
+        },
+        {
+            "query": "powerful creature from the Elemental Plane of Earth with high hit points",
+            "variant": "strong being from Earth Elemental Plane with a lot of hit points"
+        },
+        {
+            "query": "earth-based monster known for grappling attacks and creating stone walls",
+            "variant": "rock-themed creature famous for grappling and making stone walls"
+        },
+        {
+            "query": "earth-themed creature that can burrow and has a multiattack",
+            "variant": "earth style monster that is able to dig and perform multi-attacks"
+        },
+        {
+            "query": "large creature with low intelligence and powerful melee attacks",
+            "variant": "big monster with poor intelligence and strong melee strikes"
+        }
+    ]
+}

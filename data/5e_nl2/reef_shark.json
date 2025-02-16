@@ -1,0 +1,47 @@
+{
+    "name": "Reef Shark",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "shark"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "swift",
+        "predatory"
+    ],
+    "description": "A medium-sized predator with sharp teeth, known for swift swimming in warm, shallow waters near coral reefs.",
+    "memorable": "Efficient hunter that attacks when provoked, especially in packs.",
+    "goals": "Hunt fish and smaller sea creatures for food.",
+    "relations": "Often found hunting in small packs with other reef sharks.",
+    "environment": "Warm, shallow waters near coral reefs.",
+    "strengths": "Good melee damage output with Bite and advantage on attacks through Pack Tactics.",
+    "weaknesses": "Very low intelligence and charisma hinder complex actions and social interactions.",
+    "attacks": "Bite attack with 6 piercing damage, enhanced by Pack Tactics when hunting in groups.",
+    "most_powerful_ability": "Pack Tactics, providing advantage on attack rolls when allies are nearby.",
+    "senses": "Blindsight with a range of 30 feet allows perception of surroundings without sight.",
+    "skills": "Possesses perception proficiency, enhancing its ability to detect threats in its environment.",
+    "additional_information": [
+        "Can only breathe underwater, limiting its mobility on land.",
+        "Typically measures 6 to 10 feet in length.",
+        "Swift and agile predator, making it formidable in water."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "medium shark predator in shallow waters",
+        "swift aquatic predator with sharp teeth",
+        "shark that hunts in packs near coral reefs",
+        "dangerous shark with blindsight ability",
+        "shark known for water breathing and stealth attacks"
+    ]
+}

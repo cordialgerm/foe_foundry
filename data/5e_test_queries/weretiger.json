@@ -1,0 +1,25 @@
+{
+    "name": "Weretiger",
+    "queries": [
+        {
+            "query": "humanoid creature that transforms into a powerful tiger",
+            "variant": "humaniod that can change into a powerful tiger"
+        },
+        {
+            "query": "stealthy jungle monster with lycanthropy abilities",
+            "variant": "jungle monster stealthy with abilities of lycanthropy"
+        },
+        {
+            "query": "predator that shifts between human and tiger forms",
+            "variant": "shifts between human form and tiger as a predator"
+        },
+        {
+            "query": "fast jungle dweller that bites to spread lycanthropy",
+            "variant": "jungle dweller fast that spreads lycanthropy with bites"
+        },
+        {
+            "query": "weretiger traits like keen smell and pounce attack",
+            "variant": "traits of the weretiger include keen smell and pounce"
+        }
+    ]
+}

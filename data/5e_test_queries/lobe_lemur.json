@@ -1,0 +1,25 @@
+{
+    "name": "Lobe Lemur",
+    "queries": [
+        {
+            "query": "small swamp monster with camouflage and jumping abilities",
+            "variant": "small monster that jumps and hides in swamps"
+        },
+        {
+            "query": "agile creature that can blind enemies and thrives in wet environments",
+            "variant": "creature that blinds foes and excels in wet surroundings"
+        },
+        {
+            "query": "monstrosity that excels in Dexterity and can perform multiattacks",
+            "variant": "Dexterity monster that can make several attacks"
+        },
+        {
+            "query": "stealthy swamp creature with unique climbing and swimming skills",
+            "variant": "swamp creature that is stealthy and can climb and swim"
+        },
+        {
+            "query": "small, neutral monstrosity known for its agile attacks and height advantage",
+            "variant": "neutral small monstrosity recognized for its jumping attacks and height benefit"
+        }
+    ]
+}

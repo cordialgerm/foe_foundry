@@ -1,0 +1,50 @@
+{
+    "name": "Scout",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 16,
+    "ac": 13,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "scout",
+        "stealth",
+        "tracker"
+    ],
+    "adjectives": [
+        "agile",
+        "trained",
+        "observant"
+    ],
+    "description": "The Scout is a Medium humanoid known for its agility and stealth. Dressed in light leather armor, it is often equipped with a longsword and a longbow, allowing it to engage in combat or avoid detection while observing.",
+    "memorable": "Its keen senses grant it advantage on perception checks, making it a formidable foe in stealthy or reconnaissance missions.",
+    "goals": "Scouts typically aim to gather intelligence, navigate dangerous terrains, or provide military reconnaissance.",
+    "relations": "Scouts may work independently or as part of a team within military forces, rangers, or adventuring parties.",
+    "environment": "Commonly found in wilderness areas, patrolling borders, or acting as guides.",
+    "strengths": "Excels in stealth, agility, and observation, which are essential for successful reconnaissance.",
+    "weaknesses": "Lacks raw physical power and charisma, making it less effective in direct confrontations.",
+    "attacks": "Uses a shortsword for close combat or a longbow for ranged attacks, dealing piercing damage.",
+    "most_powerful_ability": "Keen Hearing and Sight, allowing it to detect threats more effectively.",
+    "equipment": "Equipped with leather armor, a shortsword, and a longbow, facilitating stealthy movement and ranged attacks.",
+    "senses": "Possesses enhanced perception with a passive score of 15, allowing it to detect hidden threats.",
+    "skills": "Trained in stealth, survival, and perception, giving it an edge in navigating and interacting with its environment.",
+    "additional_information": [
+        "Can engage in multiattacks for greater combat versatility.",
+        "Ability to escape quickly using Dash or Disengage actions with Escape to Report.",
+        "Typically employed in military or ranger roles for gathering intelligence.",
+        "Skilled at navigating treacherous regions and avoiding detection.",
+        "Heightened senses improve its ability to notice ambushes or traps."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid with keen senses",
+        "medium agile tracker in light armor",
+        "ranged combatant skilled in survival",
+        "humanoid scout with exceptional perception",
+        "quick-moving recon unit in wilderness"
+    ]
+}

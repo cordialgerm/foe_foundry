@@ -1,0 +1,25 @@
+{
+    "name": "Forgotten Regent",
+    "queries": [
+        {
+            "query": "powerful undead creature with frost abilities and high hit points",
+            "variant": "strong undead monster with ice attacks and lots of hit points"
+        },
+        {
+            "query": "necromancer leader who commands skeletons and can freeze enemies",
+            "variant": "leader of undead that can summon skeletons and freeze foes"
+        },
+        {
+            "query": "medium undead with a challenge rating of 10 and frost attacks",
+            "variant": "undead of medium size with CR 10 and ice damage"
+        },
+        {
+            "query": "undead commander that manipulates battlefields and allies",
+            "variant": "commander of undead that controls the battlefield and its minions"
+        },
+        {
+            "query": "undead that is vulnerable to fire and has high armor class",
+            "variant": "creature that is weak to fire and has tough armor"
+        }
+    ]
+}

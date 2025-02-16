@@ -1,0 +1,25 @@
+{
+    "name": "Animal Lord, Mammoth Queen",
+    "queries": [
+        {
+            "query": "huge fey creature with elephantine features that uses magic resistance",
+            "variant": "huge fey monster with elephant features that has magic resistence"
+        },
+        {
+            "query": "mammoth-shaped fey that can rejuvenate after death and control the battlefield",
+            "variant": "mammoth form fey that can regenerate after death and manipulate the battlefield"
+        },
+        {
+            "query": "powerful animal lord that can communicate telepathically and has immunities",
+            "variant": "strong animal queen that can talk directly with minds and has condition immunities"
+        },
+        {
+            "query": "massive creature immune to cold that loves to protect elephantine beings",
+            "variant": "huge creature that is cold immune and enjoys defending elephant-like creatures"
+        },
+        {
+            "query": "tough fey antagonist with truesight that has devastating physical attacks",
+            "variant": "resilient fey enemy with true sight and powerful physical strikes"
+        }
+    ]
+}

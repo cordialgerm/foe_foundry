@@ -1,0 +1,25 @@
+{
+    "name": "Awakened Tree",
+    "queries": [
+        {
+            "query": "massive tree creature that guards enchanted forests and attacks intruders",
+            "variant": "huge tree monster that protects enchanted woods and strikes foes"
+        },
+        {
+            "query": "slow-moving plant guardian that can blend in with regular trees",
+            "variant": "plant protector that moves slowly and looks like a normal tree"
+        },
+        {
+            "query": "ancient tree with powerful melee attacks and vulnerability to fire",
+            "variant": "old tree that hits hard and is weak to fire damage"
+        },
+        {
+            "query": "creature from magical woods that uses roots to restrain enemies",
+            "variant": "monster from enchanted forests that can entangle foes with roots"
+        },
+        {
+            "query": "strong plant creature with high Constitution and natural camouflage ability",
+            "variant": "powerful plant monster with good Constitution and ability to hide in plain sight"
+        }
+    ]
+}

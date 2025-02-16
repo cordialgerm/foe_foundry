@@ -1,0 +1,25 @@
+{
+    "name": "Darakhul High Priestess",
+    "queries": [
+        {
+            "query": "undead spellcaster that uses necrotic damage and has sunlight sensitivity",
+            "variant": "spellcaster undead that has sunlight sensitivity and deals necrotic damage"
+        },
+        {
+            "query": "High Priestess with high Wisdom and poison immunity lurking in shadows",
+            "variant": "priestess with high wisdom lurking in shadows and immune to poison"
+        },
+        {
+            "query": "dangerous melee combatant who can inflict debilitating diseases",
+            "variant": "melee combatant who can inflict diseases and is very dangerous"
+        },
+        {
+            "query": "darakhul priestess with disguise abilities and multiple bite attacks",
+            "variant": "priestess that can disguise herself and has multiple bite attacks"
+        },
+        {
+            "query": "Medium undead creature with high Armor Class and high Hit Points",
+            "variant": "undead creature with high Hit Points and Armor Class that is Medium sized"
+        }
+    ]
+}

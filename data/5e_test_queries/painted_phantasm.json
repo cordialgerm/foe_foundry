@@ -1,0 +1,25 @@
+{
+    "name": "Painted Phantasm",
+    "queries": [
+        {
+            "query": "medium artistic construct that uses painted images to capture creatures",
+            "variant": "medium construct that captures creatures using painted images and has artistic traits"
+        },
+        {
+            "query": "painted creature with magical abilities and low intelligence",
+            "variant": "magic-using painted construct with low cognitive skills"
+        },
+        {
+            "query": "artwork-themed monster immune to charm and exhaustion",
+            "variant": "monster themed around artwork that resists charm and exhaustion states"
+        },
+        {
+            "query": "agile construct that can teleport through artwork",
+            "variant": "nimble construct that can move through art and teleport"
+        },
+        {
+            "query": "monster that restrains enemies as artwork and has high charisma",
+            "variant": "creature that captures foes as paintings and possesses high charisma"
+        }
+    ]
+}

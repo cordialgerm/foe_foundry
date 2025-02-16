@@ -1,0 +1,51 @@
+{
+    "name": "Monolith Footman",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 60,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "magical",
+        "battlefield control"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "resilient"
+    ],
+    "description": "The Monolith Footman is a large construct with solid defenses and a substantial pool of hit points, enhanced with magical properties allowing it to deal significant melee damage.",
+    "memorable": "Highly resilient against various damage types and has abilities to control the battlefield, especially in fey-influenced areas.",
+    "goals": "To serve as an imposing presence on the battlefield, absorbing damage and disrupting enemy actions.",
+    "relations": "Constructs and fey creatures that might work together in fey-influenced areas.",
+    "environment": "Typically found in locations influenced by fey magic.",
+    "strengths": "Immune to poison and psychic damage, with resistances to nonmagical attacks. Can control the battlefield with its abilities.",
+    "weaknesses": "Intelligence and charisma limitations make it ineffective in complex decision-making and social interactions.",
+    "attacks": "Can make two attacks with a shortsword, dealing slashing damage plus additional cold or fire damage.",
+    "most_powerful_ability": "Coldfire Weapons ability that enhances its attack damage with an extra 1d8 cold or fire damage.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in dim light, effective in low-visibility environments.",
+    "skills": null,
+    "additional_information": [
+        "Critical hits destroy the construct and affect nearby creatures.",
+        "Does not require air, food, drink, or sleep.",
+        "Can utilize illusion tactics to mislead enemies."
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct with battlefield control abilities",
+        "large magical creature immune to poison",
+        "intimidating footman with special attack",
+        "monolith fighter in fey environments",
+        "tough construct with fey fire weapons"
+    ]
+}

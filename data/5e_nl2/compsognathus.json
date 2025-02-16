@@ -1,0 +1,49 @@
+{
+    "name": "Compsognathus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "ambush",
+        "teamwork",
+        "grasslands"
+    ],
+    "adjectives": [
+        "small",
+        "quick",
+        "agile",
+        "fragile"
+    ],
+    "description": "The Compsognathus is a small, agile beast known for its speed and stealth. It has a slender body and blends well in tall grass, making it efficient for ambush tactics.",
+    "memorable": "Its ability to camouflage in grass and use pack tactics makes it particularly dangerous when encountered in groups.",
+    "goals": "Typically acts as a nuisance or minor enemy, often preferring to ambush its foes with stealth.",
+    "relations": "Often found in packs, it works well with others of its kind to leverage its Pack Tactics ability.",
+    "environment": "Commonly inhabits grasslands or areas with tall vegetation.",
+    "strengths": "Excels in stealth and can gain significant advantages in quick, coordinated attacks when in numbers.",
+    "weaknesses": "Very low physical strength and charisma, making it ineffective in direct confrontations outside of ambush tactics.",
+    "attacks": "Bite attack that deals 4 piercing damage, with a good chance to hit due to Pack Tactics.",
+    "most_powerful_ability": "Grasslands Camouflage allows for advantage on stealth checks when hiding, significantly enhancing ambush potential.",
+    "senses": "Has a passive perception of 12, allowing it to notice threats reasonably well.",
+    "skills": "Proficient in stealth with a +6 bonus, making it highly effective at remaining hidden.",
+    "additional_information": [
+        "Utilizes teamwork effectively through Pack Tactics.",
+        "Can roll twice for stealth checks in tall grass.",
+        "Low intelligence limits problem-solving abilities."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny stealthy ambush dinosaur",
+        "quick agile creature that hides in grass",
+        "small beast with pack tactics ability",
+        "fragile dinosaur that excels in stealth",
+        "camouflaged predator in grassy terrain"
+    ]
+}

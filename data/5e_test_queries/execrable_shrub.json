@@ -1,0 +1,25 @@
+{
+    "name": "Execrable Shrub",
+    "queries": [
+        {
+            "query": "medium-sized fiend that heals when enemies are defeated",
+            "variant": "medium fiend that regains health when other creatures die"
+        },
+        {
+            "query": "creature with tremorsense that can telepathically communicate with evil beings",
+            "variant": "monster with tremor sense and limited telepathy for evil creatures"
+        },
+        {
+            "query": "shrub-like fiend with fire immunity and smoke generation abilities",
+            "variant": "fiend that looks like a shrub and can create smoke clouds with fire resistance"
+        },
+        {
+            "query": "evil aligned plant creature with slashing and fire damage attacks",
+            "variant": "plant-like evil creature that deals slashing and fire damage with its attacks"
+        },
+        {
+            "query": "Execrable Shrub abilities including healing and smoke cover",
+            "variant": "abilities of the Execrable Shrub involving smoke and healing features"
+        }
+    ]
+}

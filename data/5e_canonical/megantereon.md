@@ -1,6 +1,8 @@
 <MonsterName/>Megantereon</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>52</HP>
 <summary>The Megantereon is a medium-sized, unaligned beast that is best represented as a powerful predator in its environment, excelling in speed and stealth. With a Challenge Rating of 2, it presents a moderate challenge to adventurers, providing both offense and mobility in combat. The Megantereon boasts a strong physical presence with high Strength and Dexterity, making its attacks not only effective but also enhancing its ability to evade defensive maneuvers from foes. While it has notable strengths, such as its ability to hide effectively in grassland and a potent attack that can inflict ongoing damage, its low Intelligence and Charisma indicate limited social interaction capabilities. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Megantereon embodies the characteristics of a swift and lethal hunt
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Megantereon
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, 5 ft., one creature,. 11 (2d6+4) slashing damage.
 
 
+</statblock>
 
 

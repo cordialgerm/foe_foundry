@@ -1,0 +1,51 @@
+{
+    "name": "Roggenwolf",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "agile",
+        "stealthy",
+        "predator"
+    ],
+    "adjectives": [
+        "fearsome",
+        "cunning",
+        "quick"
+    ],
+    "description": "The Roggenwolf is a medium-sized monstrosity with excellent agility, featuring sharp senses and a muscular build. It displays a threatening demeanor with a potent howl that can instill fear in others.",
+    "memorable": "Its ability to instill fear through its howl, combined with its agility and stealth, makes the Roggenwolf a memorable and dangerous opponent.",
+    "goals": "To hunt and ambush prey, utilizing stealth and psychological tactics.",
+    "relations": "Similar to wolves or other predatory creatures, it may hunt in packs or be found alongside other monstrous creatures.",
+    "environment": "Typically found in dark forests or caves, where it can rely on its stealth and cunning to best its prey.",
+    "strengths": "High Dexterity and stealth proficiency allow it to be an exceptional ambusher; resistance to nonmagical damage adds a tactical edge.",
+    "weaknesses": "Weak against silvered weapons, making it vulnerable to certain forms of attack.",
+    "attacks": "Bite attack dealing necrotic damage and a terrifying howl that frightens and restrains its foes.",
+    "most_powerful_ability": "The Howl can frighten and restrain multiple targets, significantly hindering their actions.",
+    "senses": "The creature has keen senses, especially in hearing and smell, granting it advantage on Perception checks relying on these senses.",
+    "skills": "Proficient in stealth, allowing it to approach unsuspecting prey effectively.",
+    "additional_information": [
+        "Possesses resistance to nonmagical weapon damage unless made with silver.",
+        "Has a strong physical presence with notable good Strength.",
+        "Very low Intelligence indicating primal instincts.",
+        "Keen Hearing and Smell special ability enhances its tracking capabilities.",
+        "Agile predator with a knack for ambush tactics."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "wolf-like creature with a terrifying howl",
+        "stealthy predator with necrotic bite",
+        "agile monster that uses fear in combat",
+        "Roggenwolf tactics from dark forests",
+        "medium creature known for ambush and stealth"
+    ]
+}

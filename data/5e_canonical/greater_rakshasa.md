@@ -1,6 +1,8 @@
 <MonsterName/>Greater Rakshasa</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>15</CR>
+<AC/>18 (natural armor)</AC>
+<HP/>144</HP>
 <summary>The Greater Rakshasa is a formidable and manipulative fiend, known for its cunning and malevolent nature. This creature serves as a powerful adversary in any campaign, wielding both physical prowess and potent magical abilities. With an armor class of 18, it is quite resilient in combat, and its substantial hit points total 144, making it a daunting opponent. The creature's strengths lie in its high Dexterity and Charisma, enabling it to evade attacks while also effectively manipulating others through its charm and spellcasting. Notably, it possesses damage immunities to bludgeoning, piercing, and slashing from non-magical attacks, making it further difficult to confront without magic. However, it has vulnerabilities to piercing damage from magic weapons wielded by good creatures, which can be exploited by its adversaries. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Greater Rakshasa is also capable of performing legendary actions. It can mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Greater Rakshasa
 
 *Medium* *Fiend* *lawful evil*
@@ -63,5 +66,6 @@ The greater rakshasa can take 3 legendary actions, choosing from the options bel
 - **Claw Attack:** The greater rakshasa makes one claw attack.
 - **Misleading Escape (Costs 2 Actions):** The greater rakshasa becomes invisible at the same time that an illusory double of itself appears where it is standing. This switch is indiscernible to others. After the double appears, the greater rakshasa can move up to its speed. Both effects last until the start of the greater rakshasa's next turn, but the invisibility ends if the greater rakshasa makes an attack or casts a spell before then.
 - **Cast a Spell (Costs 3 Actions):** The greater rakshasa casts a spell from its list of innate spells, consuming a use of the spell as normal.
+</statblock>
 
 

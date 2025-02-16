@@ -1,0 +1,25 @@
+{
+    "name": "Shadow Lurker",
+    "queries": [
+        {
+            "query": "fey creature that thrives in dim light and steals shadows",
+            "variant": "fey monster that excels in dim light and takes shadows"
+        },
+        {
+            "query": "chaotic evil creature with shadow abilities and sunlight sensitivity",
+            "variant": "chaotic evil monster with shadow powers and sensitivity to sunlight"
+        },
+        {
+            "query": "stealthy medium creature that deals slashing and cold damage",
+            "variant": "stealthy middle-sized creature that inflicts slashing and cold damage"
+        },
+        {
+            "query": "monster that manipulates shadows and has exhaustion curses",
+            "variant": "creature that controls shadows and inflicts exhaustion curses"
+        },
+        {
+            "query": "shadowy fey that can hide and attack in darkness",
+            "variant": "shadowy fey creature that can conceal and strike in darkness"
+        }
+    ]
+}

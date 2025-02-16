@@ -1,0 +1,25 @@
+{
+    "name": "Bloodstone Sentinel",
+    "queries": [
+        {
+            "query": "large construct that absorbs blood and causes chaos",
+            "variant": "large construct that absorbs blood and creates chaos"
+        },
+        {
+            "query": "creature with 114 hit points and damage immunities",
+            "variant": "monster with 114 hit points and immunity to damage"
+        },
+        {
+            "query": "blood manipulation monster with low Dexterity",
+            "variant": "blood manipulating creature with poor Dexterity"
+        },
+        {
+            "query": "neutral evil construct with blood lure ability",
+            "variant": "neutral evil construct that has blood lure powers"
+        },
+        {
+            "query": "bloodstone sentinel abilities that affect allies and enemies",
+            "variant": "abilities of the bloodstone sentinel that impact allies and foes"
+        }
+    ]
+}

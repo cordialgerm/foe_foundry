@@ -1,0 +1,46 @@
+{
+    "name": "Cave Drake",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 95,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 ft. walking and climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "subterranean"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy"
+    ],
+    "description": "The Cave Drake is a large dragon with a powerful build, adapted to life in subterranean environments. It features a stealthy form capable of blending into rocky terrain.",
+    "memorable": "Its blinding spit ability can incapacitate foes, making it a dangerous encounter in close quarters.",
+    "goals": "Typically seeks to ambush prey and defend its territory in caves or underground lairs.",
+    "relations": "May be found alongside other subterranean creatures, often in conflict with rival predators.",
+    "environment": "Commonly inhabits caves, tunnels, and other dark, rocky places.",
+    "strengths": "Has strong melee combat abilities, enhanced stealth, and ambush tactics.",
+    "weaknesses": "Low intelligence can limit strategic decision-making in complex encounters.",
+    "attacks": "Can bite for piercing damage and claw for slashing damage, with a powerful blinding spit attack.",
+    "most_powerful_ability": "Blinding Spit can poison and blind targets, greatly hindering their combat effectiveness.",
+    "senses": "Possesses keen smell, allowing it to notice foes more easily through scent.",
+    "skills": "Excels in stealth, making it a proficient ambusher in its rocky habitat.",
+    "additional_information": [
+        "Damage immunity to poison and immunity to the poisoned condition.",
+        "Gains advantage on attack rolls against surprised creatures.",
+        "Can climb without difficulty, even upside down.",
+        "Advantage on stealth checks in rocky terrain."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large subterranean dragon with stealth",
+        "ambushing dragon that uses blinding spit",
+        "rocky terrain hiding dragon",
+        "cave drake ambush tactics",
+        "dragon known for keen smell and climbing"
+    ]
+}

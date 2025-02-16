@@ -1,0 +1,52 @@
+{
+    "name": "Fire Giant War Priest",
+    "creature_type": "Giant",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 162,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "giant",
+        "fire",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "imposing",
+        "powerful",
+        "fiery"
+    ],
+    "description": "An imposing and massive giant with fiery magical abilities, often wielding a greatsword.",
+    "memorable": "Combines martial prowess with fiery magic, capable of devastating area attacks.",
+    "goals": "To dominate the battlefield using fire magic and brute strength.",
+    "relations": "May be encountered alongside other fire giants or elemental creatures.",
+    "environment": "Typically found in volcanic or mountainous regions.",
+    "strengths": "Immune to fire damage and can empower allies' attacks with additional fire damage.",
+    "weaknesses": "Vulnerable to cold damage, which reduces its speed.",
+    "attacks": "Capable of making powerful melee attacks with a greatsword and throwing rocks, dealing slashing and bludgeoning damage.",
+    "most_powerful_ability": "Pillar of Flame creates a large area of fire that can cause massive damage.",
+    "equipment": "Wields a greatsword.",
+    "senses": "Has a passive Perception of 16.",
+    "skills": "Notable in athletics, perception, and intimidation.",
+    "additional_information": [
+        "Can use Sword Sweep to attack multiple foes around it.",
+        "Ignite Blades ability enhances allies' attacks with fire damage for a duration.",
+        "Kick reaction adds defensive capabilities against smaller attackers.",
+        "Cold Weakness reduces its speed when taking cold damage.",
+        "High damage output makes it a formidable opponent."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant with fire magic abilities",
+        "huge fire monster with greatsword",
+        "war priest giant that uses flame attacks",
+        "fire immune giant vulnerable to cold",
+        "devastating fire giant in volcanic regions"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Snake Lamia</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13</AC>
+<HP/>85</HP>
 <summary>The Snake Lamia is a formidable Large monstrosity known for its cunning and charm. It is characterized by its chaotic and evil nature, which gives it an aura of malevolence. With a strong blend of physical prowess and magical abilities, the Snake Lamia can manipulate and deceive opponents, making it a dangerous foe in battle. It boasts good defensive capabilities with an Armor Class of 13 and substantial Hit Points of 85, making it resilient in combat scenarios. The Lamia's Challenge Rating is 4, reflecting its suitable power level for adventurers facing it. However, despite its strengths, its reliance on spells and charm effects can be liabilities if the opponents resist these abilities.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Snake Lamia can use "Misty Step," teleporting to any unoc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake Lamia
 
 *Large* *Monstrosity*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The lamia teleports to an unoccupied space it can see within 30 feet. The lamia can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 

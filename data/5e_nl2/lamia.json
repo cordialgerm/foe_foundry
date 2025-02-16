@@ -1,0 +1,51 @@
+{
+    "name": "Lamia",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 97,
+    "ac": 13,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "deceiver",
+        "manipulator",
+        "illusionist"
+    ],
+    "adjectives": [
+        "cunning",
+        "enchanting",
+        "sadistic"
+    ],
+    "description": "A Lamia has the upper body of a beautiful humanoid woman and the lower body of a lion or serpentine form, exuding a chaotic and evil aura.",
+    "memorable": "Known for using charm magic and illusions to deceive and manipulate victims.",
+    "goals": "To lure travelers into traps and drain their life force.",
+    "relations": "Often serves dark gods or demonic powers.",
+    "environment": "Typically found in deserts or ancient ruins.",
+    "strengths": "Possesses strong spellcasting abilities and effective in manipulation.",
+    "weaknesses": "Relatively vulnerable to sustained attacks due to average Armor Class.",
+    "attacks": "Utilizes claws for slashing and a dagger attack that can deal piercing damage with poison effects.",
+    "most_powerful_ability": "Hypnotic Pattern, which incapacitates multiple foes within its area of effect.",
+    "senses": "Has a passive Perception score of 15, enabling it to detect hidden creatures effectively.",
+    "skills": "Skilled in Deception, Insight, and Stealth, allowing for effective manipulation and sneaky maneuvers.",
+    "additional_information": [
+        "Possesses the ability to traverse difficult terrains without leaving traces.",
+        "Resistant to exhaustion and frightened conditions.",
+        "Can teleport short distances using Misty Step.",
+        "Can charm targets with Intoxicating Gaze, reducing their ability to resist.",
+        "Can create powerful illusions to deceive foes."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting focused on charm and illusion spells, including *disguise self* and *major image*.",
+    "test_queries": [
+        "beautiful humanoid with lion body",
+        "deceptive magic user in ruins",
+        "charming monster that drains life force",
+        "manipulative foe with hypnotic abilities",
+        "skilled illusionist in desert environment"
+    ]
+}

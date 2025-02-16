@@ -1,6 +1,8 @@
 <MonsterName/>Poisonous Snake</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>2</HP>
 <summary>A Poisonous Snake is a small, stealthy predator known for its venomous bite. These creatures are commonly found in forests, jungles, or deserts, where they hide in tall grass, under rocks, or in trees. Poisonous Snakes strike quickly, injecting venom into their prey, which paralyzes or kills smaller creatures. Though they are not typically aggressive unless threatened, their venomous bite can be deadly to unprepared adventurers. Their natural stealth and ability to blend into their environment make them difficult to spot until it’s too late.</summary>
 
 <summary>The Poisonous Snake is a tiny beast that poses a surprising threat despite its small size. With a challenge rating of 1/8, it is considered a relatively weak opponent, suitable for low-level encounters. However, its ability to deal poison damage can catch unsuspecting characters off guard. The snake is stealthy, thanks to its decent Dexterity score, making it good at avoiding attacks. While its physical attributes are weak, its use of poison can be a notable factor in combat, effectively depleting the health of characters that fail their saving throws.</summary>
@@ -19,6 +21,7 @@ In terms of its actions, the primary one available to the Poisonous Snake is its
 
 Source: 5e_srd
 
+<statblock>
 ### Poisonous Snake
 
 *Tiny beast, unaligned*
@@ -41,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -49,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Poisonous Snake
 
 *Tiny* *Beast*
@@ -72,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 10 Constitution saving throw  taking 5 (2d4) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

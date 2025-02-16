@@ -1,6 +1,8 @@
 <MonsterName/>Luck Leech</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (studded leather)</AC>
+<HP/>150</HP>
 <summary>The Luck Leech is a Medium-sized fey creature marked by its neutral evil alignment, embodying a malevolent force that primarily thrives on exploiting the fortune of others. With a challenging rating of 10, this creature has notable strengths in agility, charm, and perception, making it a cunning opponent in combat. It possesses a high Armor Class of 17, allowing it to evade many attacks, and can endure significant damage due to its 150 hit points, which are calculated from 20d8 + 60. The Luck Leech's most dangerous ability is its capacity to absorb luck from nearby creatures, turning their fortuitous moments into advantages for itself. However, its reliance on other creatures' successes can be seen as a weakness, strategically vulnerable when facing opponents who are less capable of rolling high.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of offensive capabilities, the Luck Leech can perform a Multiattack, al
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Luck Leech
 
 *Medium* *Fey* *neutral evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Feast of Fortune (Recharge 6):** Each creature the luck leech can see within 30 feet of it must make a DC 16 Charisma saving throw. On a failure, the creature takes 27 (6d8) psychic damage, becomes blinded until the end of its next turn, and is cursed with falling fortunes. On a success, a creature takes half the damage and isn’t blinded or cursed. For each creature that fails this saving throw, the luck leech gains 1 luck point.
 
 
+</statblock>
 
 

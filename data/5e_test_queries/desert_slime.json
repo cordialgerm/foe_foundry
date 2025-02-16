@@ -1,0 +1,25 @@
+{
+    "name": "Desert Slime",
+    "queries": [
+        {
+            "query": "large ooze that resembles sand and ambushes prey",
+            "variant": "big slime that looks like sand and attacks hidden"
+        },
+        {
+            "query": "creature with acid immunity that lives in deserts",
+            "variant": "monster immune to acid found in arid environments"
+        },
+        {
+            "query": "slime that can restrain and deals acid damage",
+            "variant": "ooze that immobilizes and inflicts acid harm"
+        },
+        {
+            "query": "blindsight ooze that doesn't require sleep and moves through narrow spaces",
+            "variant": "blind slime that needs no rest and squeezes through tight areas"
+        },
+        {
+            "query": "monster with low armor class that can occupy the same space as other creatures",
+            "variant": "creature with poor AC that shares space with others"
+        }
+    ]
+}

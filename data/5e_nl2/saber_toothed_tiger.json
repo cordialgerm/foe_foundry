@@ -1,0 +1,50 @@
+{
+    "name": "Saber-Toothed Tiger",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 52,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "predator",
+        "ambusher",
+        "beast"
+    ],
+    "adjectives": [
+        "ferocious",
+        "agile",
+        "prehistoric"
+    ],
+    "description": "A large, prehistoric predator with long, curved canine teeth and powerful jaws, covered in sleek fur.",
+    "memorable": "Notable for its long, lethal fangs capable of piercing flesh and bone.",
+    "goals": "To stalk and ambush prey in cold, mountainous regions or ancient forests.",
+    "relations": "Related to other large predators and may be encountered with similar beasts.",
+    "environment": "Cold, mountainous regions or ancient forests.",
+    "strengths": "Exceptional Strength allowing for powerful melee attacks, and agility for stealthy movements.",
+    "weaknesses": "Lacks intelligence and charm, making it ineffective in social interactions.",
+    "attacks": "Powerful melee attacks with claws and bite, capable of inflicting significant damage.",
+    "most_powerful_ability": "Pounce ability, allowing it to knock targets prone and follow up with a bite.",
+    "equipment": null,
+    "senses": "Has keen sense of smell, gaining advantage on Perception checks that rely on it.",
+    "skills": "Skilled in Perception and Stealth, enhancing its ability to track and ambush prey.",
+    "additional_information": [
+        "Solitary creature relying on stealth and raw power",
+        "Can deal significant damage with its claws and bite",
+        "Specializes in ambush tactics",
+        "Passive Perception of 13",
+        "Uses its fangs to effectively hunt large animals"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large prehistoric predator with fangs",
+        "ambush cat that stalks prey stealthily",
+        "solitary cat with powerful jaws",
+        "ferocious hunter in cold environments",
+        "agile large beast with keen sense of smell"
+    ]
+}

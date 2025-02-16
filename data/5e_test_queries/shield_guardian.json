@@ -1,0 +1,25 @@
+{
+    "name": "Shield Guardian",
+    "queries": [
+        {
+            "query": "large magical construct that protects its master and absorbs damage",
+            "variant": "large construct that absorbs damage and protects its master"
+        },
+        {
+            "query": "towering golem with magical abilities that guards spellcasters",
+            "variant": "golem with magical abilities that guards tall spellcasters"
+        },
+        {
+            "query": "durable creature that regenerates health and stores spells",
+            "variant": "creature that regenerates HP and stores spells"
+        },
+        {
+            "query": "armored protector that teleports to its wearer when called",
+            "variant": "protector that can teleport to its master when called"
+        },
+        {
+            "query": "humanoid golem with high armor class and melee attacks",
+            "variant": "humanoid construct with strong AC and melee attacks"
+        }
+    ]
+}

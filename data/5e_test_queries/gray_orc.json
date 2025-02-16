@@ -1,0 +1,25 @@
+{
+    "name": "Gray Orc",
+    "queries": [
+        {
+            "query": "stealthy gray humanoid that hunts silently",
+            "variant": "gray stealth monster that hunts without sound"
+        },
+        {
+            "query": "gray orc that is sensitive to sunlight and uses claws",
+            "variant": "orc that has sunlight sensitivity and attacks with claws"
+        },
+        {
+            "query": "agile orc found underground with darkvision",
+            "variant": "orc that is agile and lives in caves with darkvision"
+        },
+        {
+            "query": "predator that excels in stealth and mobility in dark places",
+            "variant": "stealthy predator that is great at moving quickly in the dark"
+        },
+        {
+            "query": "medium humanoid with magic absorption and pack tactics",
+            "variant": "humanoid creature that absorbs magic and has pack tactics"
+        }
+    ]
+}

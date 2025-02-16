@@ -1,0 +1,25 @@
+{
+    "name": "Cavefish Zombie",
+    "queries": [
+        {
+            "query": "undead creature that dwells in water and has a stench",
+            "variant": "creature that is undead and has a foul odor while living in water"
+        },
+        {
+            "query": "zombie fish with a strong constitution and poison immunity",
+            "variant": "fish zombie that possesses high constitution and is immune to poison"
+        },
+        {
+            "query": "medium-sized undead that attacks with a slam and swims",
+            "variant": "medium undead creature that engages using a slam attack and can swim"
+        },
+        {
+            "query": "creature with low intelligence that can survive near death",
+            "variant": "monster with poor intelligence that can escape death easily"
+        },
+        {
+            "query": "aquatic zombie known for its stench and low perception",
+            "variant": "zombie found in water that's recognized for its foul odor and poor perception"
+        }
+    ]
+}

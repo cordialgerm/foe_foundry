@@ -1,0 +1,55 @@
+{
+    "name": "Scroll Mummy",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 12,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking speed",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "absorber"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "strategic",
+        "dynamic"
+    ],
+    "description": "A medium-sized undead creature wrapped in parchment and inscribed with mystical symbols, the Scroll Mummy has an eerie presence. Its appearance suggests it has absorbed numerous spells, enhancing its foreboding nature.",
+    "memorable": "The Scroll Mummy can drain spells from its opponents and inscribe them onto its body, turning enemies' magic against them.",
+    "goals": "To absorb spells from powerful spellcasters and use their magic to enhance its own capabilities.",
+    "relations": "May serve as guardians for ancient tombs or libraries, often found alongside other undead.",
+    "environment": "Typically found in ancient ruins, tombs, or places rich in magical history.",
+    "strengths": "Magic Resistance grants it an advantage against spellcasting, along with immunities to common damage types like fire and necrotic.",
+    "weaknesses": "Low Dexterity severely impacts its agility, making it poor at dodging physical attacks.",
+    "attacks": "Utilizes a spell-siphoning fist attack that deals bludgeoning and force damage while potentially stripping spells from casters.",
+    "most_powerful_ability": "Scroll Body allows it to inscribe and cast spells taken from defeated spellcasters.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in Arcana and History skills, making it knowledgeable in magical lore and events.",
+    "additional_information": [
+        "Immune to conditions like charmed and frightened.",
+        "Can cast spells without material components using its innate spellcasting.",
+        "Can inflict significant damage through both melee and spellcasting capabilities.",
+        "Strong thematic connection to ancient magic and spell lore.",
+        "Possesses a unique ability that enhances its versatility in combat."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": "Innate Spellcasting allows it to cast spells like fire bolt and hold person without needing material components.",
+    "test_queries": [
+        "undead creature that absorbs spells",
+        "scroll mummy with unique spellcasting abilities",
+        "mummy that drains magical energy",
+        "magical undead with resistances",
+        "creature that turns enemies' spells against them"
+    ]
+}

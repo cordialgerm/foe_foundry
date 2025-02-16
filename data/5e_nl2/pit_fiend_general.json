@@ -1,0 +1,54 @@
+{
+    "name": "Pit Fiend General",
+    "creature_type": "Fiend",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 600,
+    "ac": 19,
+    "srd": false,
+    "cr": "20",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "spellcaster",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "fearsome",
+        "devastating",
+        "powerful",
+        "magical"
+    ],
+    "description": "The Pit Fiend General is a towering, imposing fiend with a fierce presence. It has a formidable physique, glowing eyes, and appears clad in dark, intimidating armor.",
+    "memorable": "Its aura induces fear, making adversaries falter before combat begins, while its powerful spells and multiple attacks wreak havoc on the battlefield.",
+    "goals": "To dominate opponents through fear and overwhelming magical power.",
+    "relations": "Often found leading other fiends or as a servant of a higher fiendish hierarchy.",
+    "environment": "Commonly resides in infernal realms or areas of chaos and destruction.",
+    "strengths": "High hit points and armor class, powerful melee attacks, significant spellcasting abilities.",
+    "weaknesses": "Lower dexterity and intelligence compared to its exceptional strength and charisma; vulnerable to specific conditions.",
+    "attacks": "Utilizes powerful melee attacks with its bite and mace, along with secondary claw and tail attacks.",
+    "most_powerful_ability": "Circle of Fire creates a damaging area of flames that can incapacitate and severely harm foes.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet and a high passive perception score of 21, allowing it to sense hidden threats.",
+    "skills": "Excels in athletics and insight, contributing to its effectiveness in both combat and perception.",
+    "additional_information": [
+        "Immunities to fire and poison damage",
+        "Can cast fireball spell at will",
+        "Fear Aura that frightens enemies within 20 feet",
+        "Innate spellcasting ability based on Wisdom",
+        "Multiattack option using bite and mace simultaneously"
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting allowing it to cast spells like detect magic and fireball at will, and hold monster and sending three times per day.",
+    "test_queries": [
+        "giant fire-wielding fiend leader",
+        "monstrous creature with fear aura",
+        "huge fiend with devastating magic attacks",
+        "aura that frightens enemies in battle",
+        "pit fiend with strong melee and spellcasting"
+    ]
+}

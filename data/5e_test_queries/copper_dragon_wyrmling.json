@@ -1,0 +1,25 @@
+{
+    "name": "Copper Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with acid immunity that can fly and climb",
+            "variant": "medium-sized dragon that can fly and climb, immune to acid"
+        },
+        {
+            "query": "cunning dragon that excels in stealth and enjoys mountainous regions",
+            "variant": "stealthy dragon that thrives in mountains and is known for its cunning"
+        },
+        {
+            "query": "dragon with high Dexterity and breath weapons that can slow enemies",
+            "variant": "dragon with excellent Dexterity and abilities to slow opponents using breath attacks"
+        },
+        {
+            "query": "smart and agile dragon that speaks Draconic and can ambush in combat",
+            "variant": "intelligent dragon that knows Draconic and can effectively ambush in battle"
+        },
+        {
+            "query": "copper dragon wyrmling known for its mobility and versatility in combat",
+            "variant": "copper dragon youngling recognized for its agility and adaptable fighting style"
+        }
+    ]
+}

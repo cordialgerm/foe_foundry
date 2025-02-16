@@ -1,6 +1,8 @@
 <MonsterName/>Giant Owl</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>19</HP>
 <summary>A Giant Owl is an enormous bird of prey, standing as tall as a horse with a wingspan that allows it to soar silently through the night sky. Its large, forward-facing eyes give it exceptional vision in the dark, and its sharp talons and beak make it a deadly predator. Giant Owls are intelligent creatures and sometimes form bonds with humanoids, acting as guardians or companions. They are often found in ancient forests or high mountain ranges, where they hunt for large prey like deer or other large creatures. Their silent flight and keen senses make them elusive and dangerous.</summary>
 
 <summary>The Giant Owl is a large beast known for its agility and keen senses, making it a notable scout or companion in various settings. With a challenge rating of 1/4, it is considered a relatively easy threat for adventurers, yet it possesses impressive flying capabilities and can evade attacks quite effectively. Its primary weaknesses include low hit points and relatively modest armor class, making it somewhat frail if caught in sustained combat. However, its ability to fly quickly and utilize stealth makes it a valuable asset for reconnaissance or unexpected strikes against foes.</summary>
@@ -33,6 +35,7 @@ Overall, the Giant Owl is a highly mobile and perceptive creature, perfect for s
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Owl
 
 *Large beast, neutral*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Talons***. *Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 8 (2d6+1) slashing damage.
 
-**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.
+**Giant owls** often befriend fey and other sylvan creatures and are guardians of their woodland realms.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Owl
 
 *Large* *Beast*
@@ -99,6 +104,7 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage.
 
 
+</statblock>
 
 
 
@@ -107,6 +113,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Owl, Giant
 
 *Large beast*
@@ -140,5 +147,6 @@ Source: 5e_artisinal_monsters
 
 - **Puffed Up Display.** When a creature the owl is aware of and that is within 30 feet of it attacks it, the owl can suddenly turn its piercing gaze on the creature, puff up its feathers, and release a quick hiss, startling the creature. The attacker has disadvantage on the attack roll.
 
+</statblock>
 
 

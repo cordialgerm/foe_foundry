@@ -1,0 +1,53 @@
+{
+    "name": "Spawn of Rhopalocerex",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 112,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "hovering, walking, and flying at 30 feet",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "caster",
+        "charm"
+    ],
+    "adjectives": [
+        "chaotic",
+        "vulnerable",
+        "charming",
+        "agile"
+    ],
+    "description": "The Spawn of Rhopalocerex is a large fiend known for its chaotic evil nature, characterized by its ability to hover and fly, with brilliant eyes and a fearsome appearance.",
+    "memorable": "It possesses Magic Resistance and can charm foes with its Enchanting Display, turning them into temporary allies.",
+    "goals": "To engage in chaotic battle and manipulate foes, potentially turning them into allies.",
+    "relations": "May serve more powerful fiends or act alongside other chaotic creatures.",
+    "environment": "Typically found in dark, unstable areas suitable for fiends and chaotic entities.",
+    "strengths": "Immunity to poison and resistant to cold, fire, and lightning damage.",
+    "weaknesses": "Average intelligence and wisdom make it vulnerable to cunning opponents.",
+    "attacks": "Utilizes a multiattack with a bite and two claws, capable of inflicting piercing and slashing damage, alongside poison effects.",
+    "most_powerful_ability": "Enchanting Display that can charm opponents and deal psychic damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in darkness as if it were dim light.",
+    "skills": "Exceptional Charisma saving throw modifier reflects its influence in social situations.",
+    "additional_information": [
+        "Resilient due to high hit points and natural armor.",
+        "Can communicate telepathically with creatures within 60 feet.",
+        "Agile thanks to high Dexterity score, making it hard to hit.",
+        "Multiattack feature allows it to deal with multiple foes in one turn.",
+        "Thrives in battles utilizing magical resistances."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Possesses Magic Resistance, providing advantage on saving throws against spells.",
+    "test_queries": [
+        "large chaotic fiend with magical abilities",
+        "creature that can charm and poison enemies",
+        "fiend with agility and high damage resistance",
+        "monster that hovers and casts spells in combat",
+        "Spawn of Rhopalocerex unique attacks"
+    ]
+}

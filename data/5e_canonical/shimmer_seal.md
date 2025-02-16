@@ -1,6 +1,8 @@
 <MonsterName/>Shimmer Seal</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>12</AC>
+<HP/>105</HP>
 <summary>The Shimmer Seal is a unique and agile creature categorized as a Medium Beast, notable for its excellent swimming capabilities and its ability to blend into icy environments. With a Challenge Rating of 5, it poses a moderate threat to adventurers. This creature boasts a solid hit point pool of 105, derived from 14d8+42, making it quite resilient in combat. Its key strengths lie in its high Strength and good Dexterity, allowing it to deal significant damage and evade attacks effectively. However, its Intelligence and Charisma are low, making it less effective in social interactions and certain puzzle scenarios. The Shimmer Seal is particularly dangerous when near icy surfaces, leveraging its special abilities for stealth and mobility.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Shimmer Seal employs a Multiattack strategy, which allows it to m
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shimmer Seal
 
 *Medium* *Beast* *unaligned*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Tusk:** Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 14 (3d6 + 4) slashing damage.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Gulon",
+    "queries": [
+        {
+            "query": "large monstrosity with keen smell and poison immunity",
+            "variant": "big monster with poison immunity and keen sense of smell"
+        },
+        {
+            "query": "agile creature that can squeeze through narrow spaces and inflict damage",
+            "variant": "quick creature that can fit in tight spots and deal damage"
+        },
+        {
+            "query": "monster with high strength that attacks multiple times in one turn",
+            "variant": "creature with strong attacks that strikes three times each turn"
+        },
+        {
+            "query": "burly creature that leaves behind difficult terrain and has a powerful gas attack",
+            "variant": "sturdy monster that creates hard-to-cross terrain and can release toxic gas"
+        },
+        {
+            "query": "Gulon abilities include Multiattack and Amorphous for combat advantage",
+            "variant": "Gulon features Multiattack and Amorphous for tactical edge in fights"
+        }
+    ]
+}

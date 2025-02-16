@@ -1,0 +1,25 @@
+{
+    "name": "White Ape",
+    "queries": [
+        {
+            "query": "large white fur monster that inflicts disease on spellcasters",
+            "variant": "big white furry creature that causes disease to spellcasters"
+        },
+        {
+            "query": "powerful melee combat monster with magical resistance and high strength",
+            "variant": "strong melee creature with magic resistance and high strength"
+        },
+        {
+            "query": "monstrosity that thrives in battle and specializes in attacking mages",
+            "variant": "creature that excels in combat and focuses on attacking spellcasters"
+        },
+        {
+            "query": "agile ape creature with healing abilities and dangerous bite",
+            "variant": "quick ape monster with harmful bite and healing skills"
+        },
+        {
+            "query": "brutal ape with a debilitating disease and strong physical attacks",
+            "variant": "ferocious ape having a crippling disease and powerful attacks"
+        }
+    ]
+}

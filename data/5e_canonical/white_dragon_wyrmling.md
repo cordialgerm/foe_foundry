@@ -1,6 +1,8 @@
 <MonsterName/>White Dragon Wyrmling (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>32</HP>
 <summary>The White Dragon Wyrmling is a Medium-sized dragon distinguished by its icy abilities and formidable presence. With an Armor Class of 16 and 45 Hit Points, it has a respectable defensive capacity and can shrug off damage thanks to its cold immunity. While its powers place it at a Challenge Rating of 2, which indicates it can pose a significant threat to low-level adventurers, the creature also exhibits weaknesses typical of its youth, particularly in its mental attributes. It excels in stealthy combat due to its decent Dexterity, and its special abilities enable it to maneuver effortlessly through icy terrains, making it a potent foe in cold environments.</summary>
 
 <detail>
@@ -33,6 +35,7 @@ Overall, the White Dragon Wyrmling is a fearsome creature that combines mobility
 
 Source: 5e_srd
 
+<statblock>
 # White Dragon Wyrmling (Chromatic)
 
 *Medium dragon, chaotic evil*
@@ -63,7 +66,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (1d10+2) piercing damage plus 2 (1d4) cold damage.
 
-***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.
+***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -71,6 +75,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # White Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -100,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Cold Breath (Recharge 5-6):** The dragon exhales a 15-foot cone of frost. Each creature in that area makes a DC 12 Constitution saving throw  taking 10 (3d6) cold damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -108,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # White Dragon Wyrmling
 
 *Medium dragon*
@@ -139,5 +146,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
 - **Cold Breath (Recharge 5–6).** The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 12 CON save, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

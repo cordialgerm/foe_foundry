@@ -1,0 +1,25 @@
+{
+    "name": "Giant Eagle",
+    "queries": [
+        {
+            "query": "large bird creature that soars in the sky and can grapple opponents",
+            "variant": "large soaring bird that can grapple foes and flies in the sky"
+        },
+        {
+            "query": "beast that hunts in mountains with a significant wingspan",
+            "variant": "creature that preys in high mountains and has a large wingspan"
+        },
+        {
+            "query": "intelligent predator with keen sight and Cunning abilities",
+            "variant": "smart predator with sharp vision and clever skills"
+        },
+        {
+            "query": "majestic creature with slashing talons and piercing beak",
+            "variant": "noble beast with sharp beak and slashing claws"
+        },
+        {
+            "query": "flying creature that acts as a guardian and can communicate with humanoids",
+            "variant": "winged beast that serves as a protector and understands humanoid speech"
+        }
+    ]
+}

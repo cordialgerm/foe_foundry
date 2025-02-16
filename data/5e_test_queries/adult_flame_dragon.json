@@ -1,0 +1,25 @@
+{
+    "name": "Adult Flame Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with fire-based powers and chaotic evil alignment",
+            "variant": "huge fire dragon that has chaotic evil alignment and several powers"
+        },
+        {
+            "query": "dragon immune to fire that can fly and breathe fire",
+            "variant": "fire-proof dragon that has flying capabilities and can exhale fire"
+        },
+        {
+            "query": "formidable dragon with high damage output and frightening presence",
+            "variant": "powerful dragon that deals high damage and can instill fear in foes"
+        },
+        {
+            "query": "Adult Flame Dragon with special abilities and high hit points",
+            "variant": "Flame Dragon with unique abilities and 275 hit points"
+        },
+        {
+            "query": "dragon that deals fire damage on contact and has keen senses",
+            "variant": "fire damage dealing dragon upon contact that possesses sharp senses"
+        }
+    ]
+}

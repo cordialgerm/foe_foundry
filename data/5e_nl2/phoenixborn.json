@@ -1,0 +1,52 @@
+{
+    "name": "Phoenixborn",
+    "creature_type": "Humanoid",
+    "alignment": "any",
+    "size": "Medium",
+    "hp": 33,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "fire",
+        "rebirth",
+        "humanoid"
+    ],
+    "adjectives": [
+        "fiery",
+        "resilient",
+        "versatile"
+    ],
+    "description": "The Phoenixborn embodies the essence of fire and rebirth with fiery feathers that illuminate its surroundings.",
+    "memorable": "It can heal itself upon reaching 0 hit points, causing a fiery explosion that damages nearby creatures.",
+    "goals": "To engage in combat while utilizing flight and fiery abilities.",
+    "relations": "Might be found alongside other fire-affiliated creatures.",
+    "environment": "Typically inhabits warm or volcanic regions.",
+    "strengths": "Resistant to fire damage and capable of both melee and ranged attacks.",
+    "weaknesses": null,
+    "attacks": "Uses a Talon attack for slashing damage and Hurl Flame for fire damage.",
+    "most_powerful_ability": "Rebirth allows it to erupt in flames and regain health while damaging foes when defeated.",
+    "equipment": null,
+    "senses": "Has a passive perception score of 12, allowing it to sense its environment adequately.",
+    "skills": "Average perception skills, indicating it doesn't excel in noticing hidden threats.",
+    "additional_information": [
+        "Sheds bright light in a 10-foot radius with dim light for an additional 10 feet.",
+        "Can fly, making it versatile in combat.",
+        "Offers 100 experience points upon defeat.",
+        "Good Dexterity allows for effective dodging.",
+        "Lower Intelligence indicates limitations in complex reasoning."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fire-resistant humanoid that can fly",
+        "creature that heals by exploding in flames",
+        "humanoid with fiery feathers and melee attacks",
+        "phoenix-themed creature that uses fire attacks",
+        "resilient creature that embodies fire and rebirth"
+    ]
+}

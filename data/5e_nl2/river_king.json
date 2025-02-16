@@ -1,0 +1,54 @@
+{
+    "name": "River King",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 190,
+    "ac": 18,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "river",
+        "water",
+        "magical"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "versatile",
+        "resilient"
+    ],
+    "description": "The River King is a medium-sized fey with remarkable agility, characterized by its ability to control both water and weather while excelling in combat with magical weapon attacks.",
+    "memorable": "The River King's ability to control water and use powerful spells makes it a formidable foe, especially in aquatic environments.",
+    "goals": "To dominate and manipulate waterways, and protect its territory while engaging intruders.",
+    "relations": "Often associated with other fey creatures and possibly serves a greater fey lord.",
+    "environment": "Typically found near rivers, lakes, and other bodies of water.",
+    "strengths": "Immunity to poison, significant damage resistances, and powerful battlefield control abilities.",
+    "weaknesses": "Vulnerable to nonmagical attacks not made with cold iron.",
+    "attacks": "Can make magical attacks with both melee long sword strikes and a powerful Flood Blast ranged attack that pushes opponents.",
+    "most_powerful_ability": "Grasping Whirlpool: Creates a vortex that restrains and damages any caught enemies.",
+    "equipment": null,
+    "senses": "The River King possesses blindsight up to 10 feet, allowing it to detect creatures even in complete darkness.",
+    "skills": "Proficient in intimidation, nature, perception, and stealth, making it a capable combatant and environmental manipulator.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "All weapon attacks are magical and deal additional poison damage.",
+        "Can breathe both air and water with the Amphibious trait.",
+        "Can manipulate water and weather through spells, enhancing its environment control.",
+        "Has a powerful presence in both melee and spellcasting."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "The River King can cast spells like control weather and freedom of movement, utilizing Charisma as its spellcasting ability.",
+    "test_queries": [
+        "fey creature that manipulates water",
+        "versatile river guardian with spellcasting abilities",
+        "magical creature dwelling near water bodies",
+        "formidable opponent with poison attacks",
+        "creature that controls whirlpools and weather"
+    ]
+}

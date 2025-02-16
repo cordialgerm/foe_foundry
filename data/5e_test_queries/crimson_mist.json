@@ -1,0 +1,25 @@
+{
+    "name": "Crimson Mist",
+    "queries": [
+        {
+            "query": "undead creature that uses necrotic damage and can engulf foes",
+            "variant": "undead monster that engulfs enemies and deals necrotic damage"
+        },
+        {
+            "query": "chaotic evil mist vampire that is vulnerable to sunlight",
+            "variant": "chaotic evil vampire mist that suffers in sunlight"
+        },
+        {
+            "query": "medium undead hovering creature with blood draining abilities",
+            "variant": "hovering medium undead creature with abilities to drain blood"
+        },
+        {
+            "query": "spectral creature immune to cold but weak against running water",
+            "variant": "spectral undead that is immune to cold but weak to running water"
+        },
+        {
+            "query": "mist-like vampire that can reduce hit points of its opponents",
+            "variant": "vampire-like mist that reduces opponents' maximum hit points"
+        }
+    ]
+}

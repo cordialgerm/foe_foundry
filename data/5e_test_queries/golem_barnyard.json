@@ -1,0 +1,25 @@
+{
+    "name": "Golem, Barnyard",
+    "queries": [
+        {
+            "query": "strong rural construct that can heal from lightning damage",
+            "variant": "strong barnyard construct that heals from lightning"
+        },
+        {
+            "query": "medium-sized golem with poison attacks in agricultural settings",
+            "variant": "medium golem that attacks with poison in farm settings"
+        },
+        {
+            "query": "durable monster with low armor class and high hit points",
+            "variant": "tough creature with low AC and lots of hit points"
+        },
+        {
+            "query": "golem with unique abilities making it hard to control in battle",
+            "variant": "construct with strange abilities that are tough to manage in combat"
+        },
+        {
+            "query": "creature that doesn't need air or food and has low intelligence",
+            "variant": "monster that requires neither air nor food and has very low intelligence"
+        }
+    ]
+}

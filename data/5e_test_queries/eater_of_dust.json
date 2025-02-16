@@ -1,0 +1,25 @@
+{
+    "name": "Eater of Dust",
+    "queries": [
+        {
+            "query": "medium aberration that regenerates and deals necrotic damage",
+            "variant": "medium abberation that regenerate and do necrotic damage"
+        },
+        {
+            "query": "creature with high AC that can teleport and drain hit points",
+            "variant": "monster with high armor class that can teleport and sap hit points"
+        },
+        {
+            "query": "Eater of Dust abilities include Magic Maw and regeneration",
+            "variant": "Eater of Dust has abilities like magic maw and regeneration"
+        },
+        {
+            "query": "evil creature immune to lightning and has a strong melee attack",
+            "variant": "evil monster that is immune to lightning and has powerful melee attacks"
+        },
+        {
+            "query": "aberration that diminishes hit point maximum and hates fire",
+            "variant": "aberration that reduces hit point max and is weak to fire"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Jiangshi",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "slow walking speed of 20 feet",
+    "role": null,
+    "tags": [
+        "undead",
+        "fear",
+        "life drain"
+    ],
+    "adjectives": [
+        "chaotic",
+        "fearsome",
+        "undead"
+    ],
+    "description": "The Jiangshi is a Medium undead creature known for its physical durability and fear-inducing presence. It possesses strong claw attacks and the ability to drain life from its enemies.",
+    "memorable": "Can instill fear in enemies and drain life, turning defeated foes into Jiangshi.",
+    "goals": "To dominate its surroundings and weaken opponents through fear and life drain.",
+    "relations": "Often associated with other undead creatures or malevolent spirits.",
+    "environment": "Typically found in haunted or cursed locations.",
+    "strengths": "Strong melee capabilities and the ability to instill fear.",
+    "weaknesses": "Vulnerable to fire damage and has a low speed.",
+    "attacks": "Multiattack with two claw strikes or life-draining capability.",
+    "most_powerful_ability": "Life Drain attack can reduce a target's maximum hit points and turn them into another Jiangshi if they die.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect foes without sight.",
+    "skills": "Has notable skills in athletics and perception, aiding in physical tasks and detecting enemies.",
+    "additional_information": [
+        "Immune to poison damage and conditions like blindness and exhaustion.",
+        "Can jump significant distances with Standing Leap ability.",
+        "Keen Hearing grants it advantage on auditory perception checks.",
+        "Grappling ability enables it to restrain opponents easily.",
+        "Terrifying Appearance can frighten opponents within close range."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that drains life",
+        "fearful undead with claws",
+        "medium chaotic evil creature",
+        "slow moving but terrifying undead",
+        "monster that turns foes into undead"
+    ]
+}

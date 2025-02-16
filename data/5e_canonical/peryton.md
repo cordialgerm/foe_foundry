@@ -1,6 +1,8 @@
 <MonsterName/>Peryton</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>34</HP>
 <summary>The Peryton is a large monstrosity known for its brutal combat style and striking appearance, a combination of avian and deer features. It possesses a challenge rating of 2, making it a moderate threat in encounters. With a solid Armor Class of 13 and 34 hit points, it can withstand some damage while dishing out significant harm with its sharp claws and vicious gore attacks. The creature excels in its ability to fly, enhancing its mobility in battle, while its robust physical attributes make it a formidable opponent. However, it lacks proficiency in spellcasting and relies on its physical prowess and keen senses to navigate and dominate its surroundings. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Talons attack also has a +5 to hit and impacts within the same reach. It dea
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Peryton
 
 *Large* *Monstrosity*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Talons:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage  or 10 (2d6 + 3) damage if the peryton moves at least 20 feet straight towards the target before the attack.
 
 
+</statblock>
 
 

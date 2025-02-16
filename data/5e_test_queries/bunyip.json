@@ -1,0 +1,25 @@
+{
+    "name": "Bunyip",
+    "queries": [
+        {
+            "query": "huge aquatic beast with a terrifying howl",
+            "variant": "large water monster with a scary scream"
+        },
+        {
+            "query": "predatory creature that can grapple and frighten foes",
+            "variant": "fierce beast that restrains enemies and instills fear"
+        },
+        {
+            "query": "monster with high strength and underwater combat abilities",
+            "variant": "creature with great physical power and fighting skill in water"
+        },
+        {
+            "query": "beast that holds its breath and has keen senses",
+            "variant": "animal that can breathe underwater and has sharp hearing and smell"
+        },
+        {
+            "query": "water-based creature with bite and slam attacks",
+            "variant": "aquatic monster that can bite and slam enemies"
+        }
+    ]
+}

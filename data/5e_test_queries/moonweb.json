@@ -1,0 +1,25 @@
+{
+    "name": "Moonweb",
+    "queries": [
+        {
+            "query": "aberration that flies and has acid attacks",
+            "variant": "flying acid-attacking aberration"
+        },
+        {
+            "query": "creature with stealth abilities that doesn't require air",
+            "variant": "stealthy creature that can survive without air"
+        },
+        {
+            "query": "medium monster with piercing damage and paralysis ability",
+            "variant": "medium-sized monster that inflicts piercing damage and can paralyse"
+        },
+        {
+            "query": "dangerous creature with high mobility and low intelligence",
+            "variant": "formidable being with great mobility but poor intelligence"
+        },
+        {
+            "query": "Moonweb-like monster with unique combat abilities",
+            "variant": "monster similar to Moonweb that has special fighting skills"
+        }
+    ]
+}

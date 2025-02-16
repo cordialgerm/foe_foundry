@@ -1,0 +1,52 @@
+{
+    "name": "Broodmother of Leng",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "climb 30 ft., walk 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "aberration",
+        "spellcaster",
+        "summoner"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "poisonous"
+    ],
+    "description": "The Broodmother of Leng is a massive aberration with a chaotic evil demeanor, possessing a grotesque appearance and a multitude of arachnid traits. She commands spider allies and is known for her dark and powerful spells.",
+    "memorable": "Her ability to summon swarms of spiderlings and retaliate with poisonous blood makes her a chilling presence.",
+    "goals": "To dominate and control through fear and manipulation, using her spider allies.",
+    "relations": "Often accompanied by various arachnid creatures and potential cultists or followers.",
+    "environment": "Typically found in dark, secluded areas such as caves or abandoned ruins.",
+    "strengths": "Strong melee combatant with the ability to cast a variety of spells and summon reinforcements.",
+    "weaknesses": "Less effective at ranged combat, vulnerable to attacks from afar.",
+    "attacks": "Powerful claw attacks delivering heavy slashing and poison damage, as well as the ability to spit venom at range.",
+    "most_powerful_ability": "Call Brood enables her to summon swarms of spiderlings to overwhelm her foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 240 feet, allowing her to see in complete darkness.",
+    "skills": "Skilled in stealth and intimidation, enhancing her ability to strike fear into her enemies.",
+    "additional_information": [
+        "Immune to poison damage and various conditions like being charmed or unconscious.",
+        "Can read and utilize any scroll due to her Eldritch Understanding.",
+        "Poisonous Blood ability punishes melee attackers with poison damage.",
+        "Innate spellcasting allows her to cast a range of powerful spells without components.",
+        "Tactically redirects attacks to her spider allies with Protect the Future ability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting ability allows her to cast charm person, chill touch, comprehend languages, detect magic at will, and hold person, suggestion, thunderwave three times a day.",
+    "test_queries": [
+        "huge aberration that commands spiders",
+        "poisonous blood attacking creature in melee",
+        "spellcasting monster that summons spiderlings",
+        "fearful creature with toxic attacks",
+        "dark creature skilled in stealth and intimidation"
+    ]
+}

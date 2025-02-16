@@ -1,0 +1,25 @@
+{
+    "name": "Darakhul Spy",
+    "queries": [
+        {
+            "query": "stealthy undead creature that attacks with claws",
+            "variant": "undead creature that attacks with claws and is stealthy"
+        },
+        {
+            "query": "monster immune to poison that uses deception tactics",
+            "variant": "deception tactics using monster immune to poison"
+        },
+        {
+            "query": "medium undead with strong attacks and sunlight sensitivity",
+            "variant": "undead medium creature with sunlight sensitivity and strong attacks"
+        },
+        {
+            "query": "creature with darkvision that can paralyze opponents",
+            "variant": "paralyze opponents and has darkvision creature"
+        },
+        {
+            "query": "undead that excels in subterfuge and poison effects",
+            "variant": "subterfuge and poison effects excelling undead"
+        }
+    ]
+}

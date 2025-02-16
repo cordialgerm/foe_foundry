@@ -1,0 +1,54 @@
+{
+    "name": "Darakhul High Priestess",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "spellcaster",
+        "high priestess",
+        "necrotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "manipulative",
+        "dangerous",
+        "resilient"
+    ],
+    "description": "The Darakhul High Priestess is a cunning undead creature with a sinister aura, marked by her half-plate armor and a gaunt appearance that speaks of her connection to death.",
+    "memorable": "Her ability to disguise herself, paired with her stench and powerful spellcasting, makes her a unique and terrifying opponent.",
+    "goals": "To manipulate and control the living and raise the dead to serve her purposes.",
+    "relations": "May command minions such as ghouls or work alongside other undead creatures.",
+    "environment": "Typically found in dark, shadowy places, such as crypts or graveyards.",
+    "strengths": "High resilience with poison immunity and powerful spellcasting capabilities.",
+    "weaknesses": "Disadvantage on attack rolls and perception checks in sunlight, making her vulnerable during the day.",
+    "attacks": "Engages with a multiattack that includes slashing claw attacks and a necrotic bite attack that can inflict diseases.",
+    "most_powerful_ability": "Her spellcasting as a 15th-level spellcaster allows her to summon undead and deal devastating area damage with spells like Spirit Guardians.",
+    "equipment": null,
+    "senses": "Darkvision up to 60 feet allows her to see in darkness.",
+    "skills": "Excels in insight and deception, making her adept at manipulation and guile.",
+    "additional_information": [
+        "Can make up to three bonus bite attacks in a frenzy.",
+        "Has a debilitating stench that poisons nearby creatures.",
+        "Can turn fallen foes into undead servants through her Animate Dead spell.",
+        "Gains advantage against effects that turn undead with Turning Defiance.",
+        "Utilizes Master of Disguise to blend in with the living."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "As a 15th-level spellcaster, she wields powerful spells including Inflict Wounds, Spirit Guardians, and Antimagic Field.",
+    "test_queries": [
+        "undead spellcaster with a dangerous stench",
+        "sinister priestess that can raise the dead",
+        "stealthy priestess that uses shadows",
+        "undead manipulator with powerful spells",
+        "creature that has a poison aura in combat"
+    ]
+}

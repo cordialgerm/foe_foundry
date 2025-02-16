@@ -1,0 +1,55 @@
+{
+    "name": "Efreeti",
+    "creature_type": "Elemental",
+    "creature_subtype": "outsider",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 200,
+    "ac": 17,
+    "srd": true,
+    "cr": "11",
+    "movement": "40 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "genie",
+        "fire",
+        "elemental"
+    ],
+    "adjectives": [
+        "powerful",
+        "fiery",
+        "cruel",
+        "muscular",
+        "intelligent"
+    ],
+    "description": "The Efreeti is a large, muscular genie wreathed in flames, with molten bronze skin and glowing ember-like eyes. It appears as a humanoid figure with a fiery presence.",
+    "memorable": "Efreeti are known for their fiery tempers, immense strength, and mastery over fire, making them dangerous foes capable of manipulating the battlefield.",
+    "goals": "They often seek to rule and enslave lesser beings, enjoying the suffering of others.",
+    "relations": "Efreeti may command lesser fire creatures and be encountered alongside other genies or fire elementals.",
+    "environment": "Typically found in vast cities of brass and flame, particularly on the Elemental Plane of Fire.",
+    "strengths": "They have strong combat capabilities, innate spellcasting abilities, and immunity to fire damage.",
+    "weaknesses": "Particularly vulnerable to cold damage.",
+    "attacks": "Multiattack involving a scimitar strike and hurling flames, both inflicting fire damage along with slashing or bludgeoning damage.",
+    "most_powerful_ability": "Can create a Fiery Wall that damages any creature within its area of effect, creating strategic zones on the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and can conceal itself effectively in combat.",
+    "skills": "Exceptional skills in Athletics and Stealth, making it agile and able to evade detection.",
+    "additional_information": [
+        "Can shift to the Elemental Plane of Fire once per day.",
+        "Innate spellcaster with a variety of fire-related spells.",
+        "Can transform into a cloud of smoke filled with fire sparks for stealth.",
+        "Shows exceptional dominance in combat with high physical attributes.",
+        "Inherently cruel, relishing in tyrannical rule over lesser beings."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Innate spellcasting relies on Charisma, allowing for versatile magical capabilities without material components.",
+    "test_queries": [
+        "large fire genie with cruel temper",
+        "muscular elemental with mastery of fire",
+        "fiery cloud creature capable of spellcasting",
+        "powerful genie that commands fire elementals",
+        "genie with wall of fire ability"
+    ]
+}

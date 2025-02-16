@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Patrician",
+    "queries": [
+        {
+            "query": "medium undead creature with lawful evil nature that can regenerate",
+            "variant": "lawful evil undead creature of medium size that can regenerate"
+        },
+        {
+            "query": "vampire that can summon hunting hounds and has weaknesses to sunlight",
+            "variant": "vampire capable of summoning hunting hounds and sensitive to sunlight"
+        },
+        {
+            "query": "vampire with high charisma that manipulates enemies and avoids sunlight",
+            "variant": "charismatic vampire that deceives foes and hates sunlight"
+        },
+        {
+            "query": "undead monster with multiattack and special abilities in combat",
+            "variant": "undead creature featuring multiattack and special combat abilities"
+        },
+        {
+            "query": "creature that needs invitation to enter homes and can paralyze with gaze",
+            "variant": "being that requires an invitation to entry and can paralyze with its gaze"
+        }
+    ]
+}

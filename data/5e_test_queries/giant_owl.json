@@ -1,0 +1,25 @@
+{
+    "name": "Giant Owl",
+    "queries": [
+        {
+            "query": "large bird of prey that can fly silently at night",
+            "variant": "bird of prey that is large and can fly silently at night"
+        },
+        {
+            "query": "owl that lives in ancient forests and hunts large prey",
+            "variant": "large owl that hunts prey and resides in ancient forests"
+        },
+        {
+            "query": "creature with darkvision that can understand Elvish but not speak",
+            "variant": "beast with darkvision that understands but can't speak Elvish"
+        },
+        {
+            "query": "stealthy giant owl with talons that can attack from the air",
+            "variant": "giant owl that is stealthy and uses its talons to attack from above"
+        },
+        {
+            "query": "owl that can evade attacks and acts as a guardian",
+            "variant": "guardian-like owl that can evade attacks"
+        }
+    ]
+}

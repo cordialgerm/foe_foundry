@@ -1,0 +1,25 @@
+{
+    "name": "Mask Wight",
+    "queries": [
+        {
+            "query": "powerful undead creature that erases memories and deals necrotic damage",
+            "variant": "strong undead being that removes memories and inflicts necrotic damage"
+        },
+        {
+            "query": "medium undead with high armor class that attacks fiends",
+            "variant": "medium undead creature with high AC that targets fiends"
+        },
+        {
+            "query": "monster immune to most conditions that can knock targets prone",
+            "variant": "creature immune to many conditions that has the ability to knock enemies down"
+        },
+        {
+            "query": "evil creature with devastating wail and necrotic weapons",
+            "variant": "malevolent entity with a powerful wail and necrotic weapon attacks"
+        },
+        {
+            "query": "durable undead that is vulnerable to radiant damage and uses multiattack",
+            "variant": "tough undead being vulnerable to radiant attacks and capable of multiattacking"
+        }
+    ]
+}

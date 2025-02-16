@@ -1,0 +1,25 @@
+{
+    "name": "Awakened Shrub",
+    "queries": [
+        {
+            "query": "small plant creature that can blend into gardens",
+            "variant": "plant creature that is small and can blend into gardens"
+        },
+        {
+            "query": "animated shrub that serves as a garden sentinel",
+            "variant": "a shrub that is animated and serves as a guardian in gardens"
+        },
+        {
+            "query": "creature resistant to bludgeoning and immune to paralysis",
+            "variant": "a creature that is resistant to bludgeoning and immune to being paralyzed"
+        },
+        {
+            "query": "shrub that has special camouflage abilities and low hit points",
+            "variant": "a shrub with camouflage abilities and hit points that are low"
+        },
+        {
+            "query": "plant-like creature with fire vulnerability and slashing attacks",
+            "variant": "creature like a plant that is vulnerable to fire and has slashing attacks"
+        }
+    ]
+}

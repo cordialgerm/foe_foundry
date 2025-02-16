@@ -1,0 +1,25 @@
+{
+    "name": "Ghoulsteed",
+    "queries": [
+        {
+            "query": "large undead horse-like creature with pounce ability",
+            "variant": "large undead creature that looks like a horse and has a pounce ability"
+        },
+        {
+            "query": "monster with high strength and mobility in combat",
+            "variant": "creature that has strong physical capabilities and fast movement in battles"
+        },
+        {
+            "query": "undead beast immune to poison that can rise again after being killed",
+            "variant": "poison-immune undead creature that can come back from zero hp"
+        },
+        {
+            "query": "aggressive undead creature that speaks Common and Darakhul",
+            "variant": "hostile undead monster which communicates using Common and Darakhul"
+        },
+        {
+            "query": "fast undead opponent with bite attacks and temporary hit points",
+            "variant": "quick undead adversary that has biting attacks and gains temporary hit points"
+        }
+    ]
+}

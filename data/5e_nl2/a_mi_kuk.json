@@ -1,0 +1,55 @@
+{
+    "name": "A-mi-kuk",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 115,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "swimming speed of 40 feet, burrowing speed of 20 feet, and walking speed of 30 feet, providing good mobility",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "cold immunity",
+        "athletic",
+        "fear-inducing"
+    ],
+    "adjectives": [
+        "chaotic",
+        "foreboding",
+        "physically strong",
+        "durable"
+    ],
+    "description": "The A-mi-kuk is a large aberration covered in icy slime, featuring powerful muscles and claw-like appendages. Its physical form is imposing, able to grapple and strangle its foes.",
+    "memorable": "The A-mi-kuk is notable for its unique Icy Slime ability, which deals cold damage to attackers and makes it a formidable close-quarters combatant, along with its fear of fire.",
+    "goals": "Its goals often include instilling fear and chaos in its opponents, using its physical strength and abilities to overpower foes.",
+    "relations": "It may be found alongside other chaotic creatures or serve dark masters that revel in chaos and fear.",
+    "environment": "The A-mi-kuk typically inhabits damp, subterranean environments or cold, dark areas where it can utilize its swimming and burrowing abilities.",
+    "strengths": "Exceptional physical strength and resilience, immunity to cold damage, and the ability to grapple multiple foes.",
+    "weaknesses": "It has a significant fear of fire that can be exploited in combat, coupled with poor Dexterity making it less evasive.",
+    "attacks": "The A-mi-kuk can attack using a powerful bite that deals piercing damage, and a grasping claw that can grapple opponents while dealing bludgeoning damage.",
+    "most_powerful_ability": "Its Strangle ability allows it to suffocate grappled opponents, inflicting substantial ongoing bludgeoning damage.",
+    "equipment": null,
+    "senses": "The A-mi-kuk has tremorsense capable of detecting vibrations in the ground up to 30 feet away.",
+    "skills": "It is proficient in athletics, allowing it to effectively grapple targets, and has decent perception skills.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes, making it adept in underwater scenarios.",
+        "Immunity to paralyzed and restrained conditions enhances its combat endurance.",
+        "Resistant to acid and nonmagical bludgeoning, piercing, or slashing damage.",
+        "The icy slime coating causes damage to any creature that attacks it in melee.",
+        "It can strangle multiple smaller creatures or one larger creature simultaneously."
+    ],
+    "damage_types": [
+        "cold",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ice-covered monster",
+        "giant grappling creature",
+        "cold damage aberration",
+        "fear-inducing aquatic beast",
+        "slime-covered giant"
+    ]
+}

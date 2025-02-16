@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Warlock",
+    "queries": [
+        {
+            "query": "small goblin spellcaster that uses fire magic",
+            "variant": "tiny goblin magic user that casts fire spells"
+        },
+        {
+            "query": "humanoid creature skilled in stealth and illusion magic",
+            "variant": "humanoid being adept at sneaking and magical deception"
+        },
+        {
+            "query": "goblin warlock with quick teleporting ability and low hit points",
+            "variant": "goblin spellcaster with teleportation skill and fragile health"
+        },
+        {
+            "query": "goblin that creates illusions and deals fire damage",
+            "variant": "goblin using illusions to trick others and inflict fire damage"
+        },
+        {
+            "query": "intelligent goblin with charm and cunning in battles",
+            "variant": "smart goblin with tactical charm and cleverness during fights"
+        }
+    ]
+}

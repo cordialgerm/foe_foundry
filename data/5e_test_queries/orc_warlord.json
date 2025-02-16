@@ -1,0 +1,25 @@
+{
+    "name": "Orc Warlord",
+    "queries": [
+        {
+            "query": "strong humanoid leader with a sword",
+            "variant": "leader humanoid that is strong and uses a sword"
+        },
+        {
+            "query": "durable orc creature skilled in melee combat",
+            "variant": "orc that is durable and is skilled at melee fighting"
+        },
+        {
+            "query": "battlefield orc with rallying abilities",
+            "variant": "orc on the battlefield that has abilities to rally allies"
+        },
+        {
+            "query": "medium humanoid with high armor class and hit points",
+            "variant": "humanoid creature with high hit points and armor class"
+        },
+        {
+            "query": "orc warlord tactics for melee and ranged attacks",
+            "variant": "tactics for attacking using melee and ranged as an orc warlord"
+        }
+    ]
+}

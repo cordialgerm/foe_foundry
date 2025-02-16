@@ -1,0 +1,51 @@
+{
+    "name": "Boreal Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 17,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft., fly 60 ft., swim 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wymling",
+        "elemental"
+    ],
+    "adjectives": [
+        "icy",
+        "agile",
+        "fiery"
+    ],
+    "description": "This medium-sized dragon features icy scales and embodies the chaotic nature of its kind. It possesses the ability to fly gracefully and harnesses fiery breath, showcasing both agility and elemental power.",
+    "memorable": "Capable of unleashing a fiery breath weapon that creates an area of dangerous embers, making it a formidable young dragon.",
+    "goals": "To engage in skirmishes, utilizing its breath weapon to damage multiple foes.",
+    "relations": "Dragonkind, other elemental creatures.",
+    "environment": "Typically found in icy or snowy areas.",
+    "strengths": "Immunity to fire damage and resistance to cold damage enhance its survivability.",
+    "weaknesses": "Average Dexterity and limited ranged options can hinder its effectiveness in certain situations.",
+    "attacks": "Utilizes a potent bite attack for melee and unleashes Cinder Breath for area damage.",
+    "most_powerful_ability": "Cinder Breath creates a 15-foot cone of superheated air, dealing significant fire damage.",
+    "senses": "Possesses blindsight up to 10 feet and a passive Perception of 15.",
+    "skills": "Excels in athletics and perception, both at a +5 bonus.",
+    "additional_information": [
+        "Has a high Armor Class due to natural armor.",
+        "It has weak mental attributes.",
+        "Its breath weapon recharges on a roll of 5 or 6.",
+        "Capable of significant mobility with flying speed.",
+        "Can endure a good amount of damage before falling."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "icy dragon with fiery breath",
+        "medium dragon that can fly",
+        "dragon inhabiting snowy environments",
+        "dragon with immunity to fire damage",
+        "youthful dragon able to unleash embers"
+    ]
+}

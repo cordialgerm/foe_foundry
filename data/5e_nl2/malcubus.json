@@ -1,0 +1,55 @@
+{
+    "name": "Malcubus",
+    "creature_type": "Fiend",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 60 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "charm",
+        "manipulation",
+        "psychic"
+    ],
+    "adjectives": [
+        "cunning",
+        "manipulative",
+        "agile",
+        "crafty"
+    ],
+    "description": "Malcubus is a medium-sized fiend possessing a cunning and challenging presence in combat, characterized by its ability to charm and manipulate others.",
+    "memorable": "Its ability to drain life force through a kiss while charming adversaries makes it a significant threat.",
+    "goals": "To charm and manipulate creatures to serve or obey its commands.",
+    "relations": "May be encountered with other fiends or as a servant to more powerful malevolent entities.",
+    "environment": "Typically found in dark, shadowy places or on the Ethereal Plane.",
+    "strengths": "High Charisma aids in charm and manipulation, with resistance to various damage types.",
+    "weaknesses": "Average physical combat abilities, making it less effective in direct melee encounters.",
+    "attacks": "Claw attack inflicts slashing and necrotic damage; charms a target to compel obedience; draining kiss deals psychic damage and heals the Malcubus.",
+    "most_powerful_ability": "Draining Kiss allows it to inflict significant psychic damage while healing itself.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, allowing it to be aware of subtle threats.",
+    "skills": "Proficient in deception and persuasion, enhancing its manipulative capabilities.",
+    "additional_information": [
+        "The 'Cloaked Mind' ability makes it difficult to detect.",
+        "Can shapeshift into Medium or Small humanoids.",
+        "Etherealness provides escape options and strategic advantages.",
+        "Telepathic Bond enables communication across distances.",
+        "Dream ability disrupts targets' rest and offers opportunities for manipulation."
+    ],
+    "damage_types": [
+        "psychic",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend with charm abilities and flight",
+        "crafty fiend that drains life with a kiss",
+        "medium fiend reliant on manipulation",
+        "agile fiend with telepathic bond capability",
+        "malcubus abilities for mind control and escape"
+    ]
+}

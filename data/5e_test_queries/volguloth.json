@@ -1,0 +1,25 @@
+{
+    "name": "Volguloth",
+    "queries": [
+        {
+            "query": "sneaky medium fiend with poisonous attacks and stealthy abilities",
+            "variant": "sneaky fiend, medium-sized, with poison attacks and stealth skills"
+        },
+        {
+            "query": "aggressive fiend that can grapple and enshroud its prey",
+            "variant": "aggressive medium fiend able to enshroud and grapple its targets"
+        },
+        {
+            "query": "creature with glide ability and high poison damage in melee",
+            "variant": "creature using glide with high poison damage in close combat"
+        },
+        {
+            "query": "medium fiend with good perception and darkvision traits",
+            "variant": "medium-size fiend with excellent perception and darkvision features"
+        },
+        {
+            "query": "fiend that can withstand a lot of damage and has magic resistance",
+            "variant": "fiend with high durability and resistance to magic effects"
+        }
+    ]
+}

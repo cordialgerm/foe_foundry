@@ -1,0 +1,25 @@
+{
+    "name": "Purple Worm",
+    "queries": [
+        {
+            "query": "huge burrowing monster with a deadly bite and acid damage",
+            "variant": "large underground creature known for its massive size and acid attacks"
+        },
+        {
+            "query": "gargantuan monster that can swallow creatures whole and has tremorsense",
+            "variant": "enormous creature able to devour foes and detect movements through tremorsense"
+        },
+        {
+            "query": "monster characterized by sharp teeth that creates tunnels underground",
+            "variant": "creature with crushing teeth that can dig tunnels beneath the ground"
+        },
+        {
+            "query": "large segmented creature feared in the Underdark for its swallowing ability",
+            "variant": "huge segmented beast dreaded in subterranean areas for its capacity to swallow"
+        },
+        {
+            "query": "predator with high hit points and a strong physical attack that burrows",
+            "variant": "fearsome creature with a substantial pool of hit points and powerful melee attacks that can dig"
+        }
+    ]
+}

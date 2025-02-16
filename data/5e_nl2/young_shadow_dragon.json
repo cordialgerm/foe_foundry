@@ -1,0 +1,60 @@
+{
+    "name": "Young Shadow Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "40 ft. walk, 40 ft. climb, 80 ft. fly, 40 ft. swim",
+    "role": "Ambusher",
+    "tags": [
+        "dragon",
+        "shadow",
+        "immortal",
+        "spatial control"
+    ],
+    "adjectives": [
+        "formidable",
+        "malevolent",
+        "shadowy",
+        "incorporeal"
+    ],
+    "description": "A large dragon that embodies darkness with a majestic yet sinister appearance, capable of moving through objects and creatures.",
+    "memorable": "It has an essence link to a specific area, causing fatigue and strife in intruders, while its Anguished Breath can significantly alter a battle.",
+    "goals": "To protect its essence area and dominate over weaker creatures.",
+    "relations": "Related to other dragons; may command lesser shadow creatures.",
+    "environment": "Usually found in dark places tied to its essence, such as ancient ruins or shadowy forests.",
+    "strengths": "Possesses high physical and mental capabilities, resistant to many damage types, and immune to necrotic damage.",
+    "weaknesses": "Vulnerable when separated from its essence link; cannot regain hit points away from its linked area.",
+    "attacks": "Uses multiattack consisting of a powerful bite and slashing claw strikes.",
+    "most_powerful_ability": "Anguished Breath, exhaling a damaging shadowy maelstrom that instills fear.",
+    "equipment": null,
+    "senses": "Has darkvision up to 240 feet and a passive perception of 15, aiding it in stealthy and hidden environments.",
+    "skills": "Notably skilled in deception and stealth, making it a cunning predator.",
+    "additional_information": [
+        "Radiates an Evil aura that establishes its menacing presence.",
+        "Incorporeal movement allows passing through creatures and objects.",
+        "Innate spellcasting of darkness and detect evil and good for battlefield control.",
+        "Immune to conditions like frightened and paralyzed, enhancing combat longevity.",
+        "Resistance to various elemental damages aids in survival."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison",
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Can innately cast darkness and detect evil and good three times per day each.",
+    "test_queries": [
+        "dragon that can move through walls",
+        "shadow dragon with a breath attack",
+        "large creature with necrotic immunity",
+        "dragon linked to a specific area",
+        "menacing dragon that instills fear"
+    ]
+}

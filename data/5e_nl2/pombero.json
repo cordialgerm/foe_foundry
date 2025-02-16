@@ -1,0 +1,51 @@
+{
+    "name": "Pombero",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fey",
+        "chaotic",
+        "charming",
+        "stealthy"
+    ],
+    "adjectives": [
+        "playful",
+        "canny",
+        "agile"
+    ],
+    "description": "The Pombero is a medium-sized fey creature known for its chaotic nature and playful yet canny demeanor, capable of contorting its body into unnatural shapes.",
+    "memorable": "The Pombero can charm creatures with its touch and become invisible for tactical advantage.",
+    "goals": "Engaging in playful trickery and forming connections with beasts.",
+    "relations": "Often found in the company of woodland animals and other fey creatures.",
+    "environment": "Wooded and forested areas, where it uses its camouflage to its advantage.",
+    "strengths": "Excellent at stealthing in forested environments and has the ability to charm other creatures.",
+    "weaknesses": "Low intelligence, which limits its problem-solving capabilities.",
+    "attacks": "Makes two slam attacks dealing bludgeoning damage, with a special Charming Touch attack that may charm a target.",
+    "most_powerful_ability": "Charming Touch allows it to charm a creature, influencing their emotions for strategic advantage.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Athletics, Sleight of Hand, and Stealth, enhancing its physical capabilities and stealthy nature.",
+    "additional_information": [
+        "Can speak with beasts, facilitating communication with animal creatures.",
+        "Has a unique ability called Forest Camouflage, gaining advantage on Stealth checks.",
+        "Can turn invisible, gaining a tactical edge in encounters.",
+        "Can contort to fit through tight spaces, avoiding some obstacles.",
+        "Possesses decent physical ability scores, enhancing its combat effectiveness."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fey creature with charm abilities",
+        "medium fey known for stealth and charm",
+        "playful creature that can turn invisible",
+        "forest dwelling trickster that communicates with beasts",
+        "agile monster that can contort its body"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Grove Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>13</HP>
 <summary>The Grove Bear is a medium-sized beast characterized by its physical strength and adaptability to its natural environment. It has a relatively low challenge rating of 1/4, making it an appropriate encounter for lower-level adventurers or as a guardian of natural areas. This creature's strengths lie in its formidable melee attacks and its ability to grapple opponents effectively, giving it control in combat situations. While its intellect is quite low and it lacks effective social skills, it compensates with its exceptional physical abilities and enhanced senses. Overall, it serves as a robust combatant with the potential to surprise unsuspecting foes.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Grove Bear's primary action is its Claws attack, which functions as a melee 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Grove Bear
 
 *Medium* *Beast* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage and the target is grappled (escape DC 13). Until this grapple ends, the bear can’t use its claws on another target.
 
 
+</statblock>
 
 

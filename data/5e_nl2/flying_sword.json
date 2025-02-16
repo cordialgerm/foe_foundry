@@ -1,0 +1,49 @@
+{
+    "name": "Flying Sword",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "small",
+    "hp": 17,
+    "ac": 17,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "fly 50 ft. (hover), cannot walk",
+    "role": "Skirmisher",
+    "tags": [
+        "animated object",
+        "magical guardian",
+        "construct"
+    ],
+    "adjectives": [
+        "flying",
+        "magical",
+        "guarding",
+        "mechanical"
+    ],
+    "description": "A small construct resembling a sword that hovers in the air and attacks under its own power. It can fly swiftly and with precision, easily striking at intruders.",
+    "memorable": "The Flying Sword can blend in as a normal sword when not in motion, making it a stealthy guardian.",
+    "goals": "To guard specific areas or objects, attacking any intruders.",
+    "relations": "Often found in the company of magical constructs and protecting treasure or valuable locations.",
+    "environment": "Ancient castles, wizard's towers, or places imbued with magic.",
+    "strengths": "Immunity to poison and psychic damage, resistance to piercing damage, and various condition immunities.",
+    "weaknesses": "Susceptible to demolishing magic like dispel magic and incapacitated within an antimagic field.",
+    "attacks": "Performs a melee weapon attack with its longsword that deals slashing damage.",
+    "most_powerful_ability": "Antimagic Susceptibility, rendering it incapacitated within an antimagic field.",
+    "equipment": null,
+    "senses": "Has blindsight out to 60 feet, allowing it to perceive nearby creatures but not beyond that range.",
+    "skills": "No special skills, but has average stealth capabilities when motionless.",
+    "additional_information": [
+        "Relentlessly attacks based on simple commands set by its creator.",
+        "Capable of flying and hovering without requiring rest or sustenance.",
+        "Can make a last-ditch attack when reduced to low hit points using Whirling Blade."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "hovering magical sword guardian",
+        "animated sword that flies and attacks",
+        "magical sword that blends in as normal",
+        "sentinel sword in wizard's tower",
+        "flying sword with magical abilities"
+    ]
+}

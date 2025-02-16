@@ -1,0 +1,25 @@
+{
+    "name": "Bar Brawl",
+    "queries": [
+        {
+            "query": "large humanoid that uses improvised weapons in bars",
+            "variant": "huge humanoid that fights with improvised weapons in taverns"
+        },
+        {
+            "query": "creature with temporary hit points from drinking",
+            "variant": "monster that gains temporary hit points from alcohol consumption"
+        },
+        {
+            "query": "brawler that is immune to being frightened and paralyzed",
+            "variant": "combatant that cannot be scared or paralyzed"
+        },
+        {
+            "query": "chaotic fighter with resistance to slashing damage",
+            "variant": "disorderly combatant that resists slashing attacks"
+        },
+        {
+            "query": "monster that shares space with other creatures during fights",
+            "variant": "creature that can occupy the same space as others in battle"
+        }
+    ]
+}

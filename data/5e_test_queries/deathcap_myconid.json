@@ -1,0 +1,25 @@
+{
+    "name": "Deathcap Myconid",
+    "queries": [
+        {
+            "query": "toxic plant monster that thrives in darkness and hates sunlight",
+            "variant": "plant monster that is toxic and loves dark places while being vulnerable to sunlight"
+        },
+        {
+            "query": "medium-sized creature with toxic spores that lives in the shadows",
+            "variant": "creature of medium size that uses toxic spores and dwells in shadows"
+        },
+        {
+            "query": "slow-moving monster with a poisonous touch that seeks darkness",
+            "variant": "a slow plant monster with poisonous attacks that prefers dark environments"
+        },
+        {
+            "query": "venomous plant that suffers in sunlight and has darkvision",
+            "variant": "sunlight-sensitive plant creature with the ability to see in darkness"
+        },
+        {
+            "query": "deathcap myconid abilities and sunlight sensitivity",
+            "variant": "myconid creature powers and its weakness to sunlight"
+        }
+    ]
+}

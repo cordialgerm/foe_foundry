@@ -1,6 +1,8 @@
 <MonsterName/>Haugbui</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>13</CR>
+<AC/>15</AC>
+<HP/>153</HP>
 <summary>The Haugbui is a formidable undead creature that serves a unique role in gameplay, combining elements of spellcasting and physical prowess. With a challenge rating of 13, it presents a significant obstacle for adventurers, boasting a total of 153 hit points, which makes it very durable in battle. The Haugbui possesses a high Armor Class of 15, indicating it is fairly resistant to attacks. Its primary strengths include exceptional Dexterity and Wisdom, allowing it to evade attacks and make effective perception checks. It has very good spellcasting abilities and access to a variety of powerful spells, which can impact combat dynamics greatly. However, the Haugbui exhibits a weakness to sunlight, suffering penalties while exposed to it. Its incorporeal nature allows it to move through obstacles, providing tactical advantages during encounters.</summary>
 
 <detail>
@@ -43,6 +45,7 @@ Overall, the Haugbui is a strong opponent that combines physical might with impr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Haugbui
 
 *Medium* *Undead* *Lawful Neutral*
@@ -81,5 +84,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Sepulchral Scrying (Recharge 6):** While within 1 mile of its burial mound, the haugbui creates an invisible sensor within 5 miles of the mound for 1 minute. When it uses this bonus action and as a bonus action on each of its turns for the duration, the haugbui can switch between using its own senses and projecting its senses through the sensor. While projecting its senses through the sensor, it can see, hear, telepathically communicate, and cast spells as if it was in the sensor’s space, and it is blinded and deafened with regard to its own senses. The sensor can be dispelled (DC 14).
+</statblock>
 
 

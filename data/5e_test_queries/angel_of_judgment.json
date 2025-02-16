@@ -1,0 +1,25 @@
+{
+    "name": "Angel of Judgment",
+    "queries": [
+        {
+            "query": "powerful celestial with the ability to change alignment in battle",
+            "variant": "celestial that can change its alignment and is very powerful in fights"
+        },
+        {
+            "query": "huge celestial creature that embodies law and chaos",
+            "variant": "large celestial being that represents balance between law and chaos"
+        },
+        {
+            "query": "angelic being with high durability and magical resistance",
+            "variant": "angel that is very tough and resistant to magic attacks"
+        },
+        {
+            "query": "celestial monster with stunning gaze and weapon attacks dealing extra force damage",
+            "variant": "celestial creature that has a gaze that stuns and does extra force damage with weapons"
+        },
+        {
+            "query": "angel who can discern lies and has high perception",
+            "variant": "angel that can tell when someone lies and has great perception skills"
+        }
+    ]
+}

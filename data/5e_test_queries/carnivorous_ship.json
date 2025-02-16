@@ -1,0 +1,25 @@
+{
+    "name": "Carnivorous Ship",
+    "queries": [
+        {
+            "query": "gargantuan ship that hunts on land and sea",
+            "variant": "huge ship that hunts on land and sea"
+        },
+        {
+            "query": "aquatic monster with humanoid drones",
+            "variant": "water monster that creates humanoid drones"
+        },
+        {
+            "query": "monstrosity that can breathe air and water",
+            "variant": "creature that can breathe both air and water"
+        },
+        {
+            "query": "monster with high strength that attacks with bites",
+            "variant": "creature with great strength that uses bite attacks"
+        },
+        {
+            "query": "ship that can polymorph and attack with cannonballs",
+            "variant": "vessel that can shapeshift and launch cannonball attacks"
+        }
+    ]
+}

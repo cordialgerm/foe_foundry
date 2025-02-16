@@ -1,0 +1,25 @@
+{
+    "name": "Cats of Ulthar",
+    "queries": [
+        {
+            "query": "huge swarm of agile cats that can frighten enemies",
+            "variant": "huge group of quick cats that instills fear in foes"
+        },
+        {
+            "query": "cats with keen senses that swarm opponents and bite",
+            "variant": "cats possessing excellent senses that swarm their foes and attack"
+        },
+        {
+            "query": "feline creature that utilizes swarming tactics and has piercing bites",
+            "variant": "feline beast using swarm tactics with biting attacks"
+        },
+        {
+            "query": "fear-inducing swarm of cats found in various environments",
+            "variant": "cats that cause fear and can be encountered in different habitats"
+        },
+        {
+            "query": "swarm of fearsome beasts with high dexterity and stealth",
+            "variant": "group of terrifying creatures with exceptional agility and stealth"
+        }
+    ]
+}

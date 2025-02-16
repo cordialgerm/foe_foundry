@@ -1,0 +1,55 @@
+{
+    "name": "Tar Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walking and climbing",
+    "role": "Bruiser",
+    "tags": [
+        "Construct",
+        "Golem",
+        "Fire",
+        "Poison"
+    ],
+    "adjectives": [
+        "sticky",
+        "resilient",
+        "fiery",
+        "poisonous",
+        "durable"
+    ],
+    "description": "The Tar Golem embodies the raw, sticky nature of tar, serving as a formidable adversary in combat. It is a large, amorphous creature with a gooey exterior that can burn and poison those who come too close.",
+    "memorable": "The Golem ignites when taking fire damage and emits poisonous smoke while burning, providing unique area control and intimidation.",
+    "goals": "To serve as a relentless combatant and protect its creator, engaging in direct melee encounters.",
+    "relations": "May be created or controlled by powerful spellcasters or alchemists, often found with other constructs.",
+    "environment": "Typically found in volcanic areas or regions with abundant natural tar or oil.",
+    "strengths": "Immunities to fire, poison, psychic damage, and non-magical physical attacks except those made with adamantine weapons; also has magic resistance.",
+    "weaknesses": "Vulnerable to cold damage, which can significantly impair its function.",
+    "attacks": "Performs strong Slam melee attacks dealing significant bludgeoning damage, with the ability to create additional fire damage when ignited.",
+    "most_powerful_ability": "The Fire Hazard ability allows the golem to burst into flames upon taking fire damage, causing area damage to nearby creatures.",
+    "senses": "Has darkvision and a passive perception of 10.",
+    "skills": "Limited perception skill, as indicated by a passive perception score of 10.",
+    "additional_information": [
+        "Functions without the need for air, food, drink, or sleep.",
+        "Can absorb nearby non-magical fire, activating its fire hazard.",
+        "Has a unique ability to regain hit points when subjected to fire while paralyzed.",
+        "Weapon attacks are treated as magical to overcome damage resistances.",
+        "Can traverse difficult surfaces and ceilings easily."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sticky golem that ignites in fire",
+        "poisonous golem that can climb surfaces",
+        "construct creature vulnerable to cold damage",
+        "golem that emits noxious smoke when burning",
+        "medium-sized golem with strong slam attacks"
+    ]
+}

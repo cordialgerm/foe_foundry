@@ -1,0 +1,25 @@
+{
+    "name": "Suppurating Ooze",
+    "queries": [
+        {
+            "query": "medium ooze creature with necrotic damage and debilitating disease ability",
+            "variant": "medium-sized ooze with necrotic attack and disease causing abilities"
+        },
+        {
+            "query": "climbing ooze that can fit through small spaces and inflicts diseases",
+            "variant": "an ooze that climbs and can squeeze through narrow openings while spreading diseases"
+        },
+        {
+            "query": "ooze with high constitution and poison immunity that deals necrotic damage",
+            "variant": "a high constitution ooze immune to poison that also inflicts necrotic damage"
+        },
+        {
+            "query": "simple-minded ooze that is dangerous in melee and can climb walls",
+            "variant": "an oozing creature with low intelligence that poses a threat in close combat and can scale surfaces"
+        },
+        {
+            "query": "slow-moving ooze with poisons and resistances found in dark places",
+            "variant": "an ooze that moves slowly, has poison resistances, and often lurks in shadows"
+        }
+    ]
+}

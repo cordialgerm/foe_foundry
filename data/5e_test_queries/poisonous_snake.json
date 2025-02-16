@@ -1,0 +1,25 @@
+{
+    "name": "Poisonous Snake",
+    "queries": [
+        {
+            "query": "tiny venomous snake hiding in grass",
+            "variant": "tiny snake that is venomous and hiding in tall grass"
+        },
+        {
+            "query": "stealthy predator that injects poison",
+            "variant": "stealthy hunter that injects venom"
+        },
+        {
+            "query": "desert snake that paralyzes its prey",
+            "variant": "snake found in the desert that can paralyze"
+        },
+        {
+            "query": "small agile snake with a deadly bite",
+            "variant": "small fast snake that has a deadly bite attack"
+        },
+        {
+            "query": "forest snake that strikes quickly and venomously",
+            "variant": "forest-dwelling snake that strikes fast and with venom"
+        }
+    ]
+}

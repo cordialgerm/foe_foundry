@@ -1,0 +1,25 @@
+{
+    "name": "Darakhul Captain",
+    "queries": [
+        {
+            "query": "undead tactical leader that uses necrotic attacks and commands ghouls",
+            "variant": "necrotic attacking undead leader that commands ghouls and is tactical"
+        },
+        {
+            "query": "medium undead creature with high armor class and sunlight sensitivity",
+            "variant": "undead medium creature with strong armor and sunlight sensitivity"
+        },
+        {
+            "query": "creature that can paralyze foes and contracts darakhul fever",
+            "variant": "monster able to paralyze enemies and causes darakhul fever"
+        },
+        {
+            "query": "intimidating undead with master of disguise ability and necrotic damage",
+            "variant": "daunting undead that has necrotic attacks and mastery of disguise"
+        },
+        {
+            "query": "undead captain with leadership ability and significant hit points",
+            "variant": "captain undead possessing leadership skills and high health"
+        }
+    ]
+}

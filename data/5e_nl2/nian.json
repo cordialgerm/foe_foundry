@@ -1,0 +1,52 @@
+{
+    "name": "Nian",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "50 ft. walking, 30 ft. climbing, 30 ft. swimming",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "fear",
+        "charge",
+        "darkness"
+    ],
+    "adjectives": [
+        "chaotic",
+        "fearful",
+        "powerful",
+        "adaptable"
+    ],
+    "description": "The Nian is a large, fearsome creature with a robust body capable of traversing land and water. It has notable strength and exceptional presence in combat, reflected in its strong build.",
+    "memorable": "Its unique ability to create areas of magical darkness and silence makes it highly effective in controlling battles.",
+    "goals": "The Nian often seeks to terrify or dominate its foes through strategic use of its abilities.",
+    "relations": "Often found in wilderness areas, it may be encountered alongside other monstrous creatures that dwell in similar environments.",
+    "environment": "Forests and mountainous regions, particularly near bodies of water.",
+    "strengths": "Immunity to poison and conditions like charm, paralysis, and a strong ability to control space and movement.",
+    "weaknesses": "Highly susceptible to loud noises, fire, and the color red, which can instill fear and panic.",
+    "attacks": "The Nian can deliver powerful melee attacks including a bite, gore, and a stomp on prone targets, showcasing its formidable physicality.",
+    "most_powerful_ability": "Year's Termination creates a 15-foot radius of magical darkness and silence, rendering opponents unable to cast spells or perceive their surroundings effectively.",
+    "equipment": null,
+    "senses": "Possesses truesight out to 60 feet, allowing it to see the unseen.",
+    "skills": "Has a passive perception of 13, giving it an average ability to notice hidden threats.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes while underwater.",
+        "Trampling Charge can knock opponents prone, enabling follow-up attacks.",
+        "Fearful of loud noises and fire, creating exploitable weaknesses in combat.",
+        "Can communicate telepathically within 60 feet.",
+        "Strong physical attributes make it a resilient opponent."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large chaotic monster that fears fire",
+        "powerful creature that creates magical darkness",
+        "fearful beast with strong melee attacks",
+        "water-dwelling monster with impressive mobility",
+        "Nian abilities that exploit noise and colors"
+    ]
+}

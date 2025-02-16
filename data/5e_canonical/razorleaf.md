@@ -1,6 +1,8 @@
 <MonsterName/>Razorleaf</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Razorleaf is a medium-sized plant creature with a neutral evil alignment. It is primarily characterized by its unique abilities that allow it to control its surroundings and deal substantial damage. With an Armor Class of 14, it possesses reliable defense thanks to its natural armor. It has a hefty pool of Hit Points totaling 112, providing it with considerable endurance in battle, making it a challenging opponent with a Challenge Rating of 5. Its strengths lie in its capacity to manipulate the battlefield through shadowy effects and its ability to inflict damage on attackers that come too close. However, it has a weakness to fire damage, which makes it vulnerable to certain spells and attacks. Overall, the Razorleaf is a formidable adversary, leveraging its abilities to hinder and harm its foes while maintaining a tough presence in combat.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Razorleaf can use the Multiattack action to make two melee attack
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Razorleaf
 
 *Medium* *Plant* *neutral evil*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Shower of Razors (Recharge 5-6):** The razorleaf shakes loose a deadly shower of slicing leaves. Each creature within 10 feet of the razorleaf must make a DC 14 Dexterity saving throw, taking 21 (6d6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

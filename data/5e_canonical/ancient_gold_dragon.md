@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Gold Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22 (natural armor)</AC>
+<HP/>546</HP>
 <summary>The Ancient Gold Dragon is a majestic and awe-inspiring creature, with scales that gleam like burnished gold. Its wings are massive, and its eyes shine with wisdom and benevolence. Gold Dragons are known for their kindness and sense of justice, often acting as protectors of the innocent and champions of good. Their lairs are typically found in high, secluded mountains, where they watch over the world below. They possess a powerful fire breath capable of reducing entire armies to ash, as well as a weakening gas that can sap the strength of their foes. Gold Dragons are highly intelligent, preferring to resolve conflicts through diplomacy whenever possible.</summary>
 
 <summary>The Ancient Gold Dragon is a gargantuan and powerful creature renowned for its regal presence and formidable combat abilities. With an impressive challenge rating of 26, it poses a significant threat to adventurers. Its high armor class of 22 and substantial hit points totaling 487 make it exceptionally durable in battle. The dragon possesses exceptional abilities in both offense and defense, including devastating breath weapons and a suite of spells that can shift the tide of combat. However, its reliance on legendary actions and its limited usage of certain abilities do present weaknesses. Overall, the Ancient Gold Dragon embodies both majesty and terror, serving as a fitting adversary for experienced adventuring parties.</summary>
@@ -49,6 +51,7 @@ Lastly, if the Ancient Gold Dragon meets its end, it can cause regional effects 
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Gold Dragon (Metallic)
 
 *Gargantuan dragon, lawful good*
@@ -109,7 +112,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6+10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6+10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -117,6 +121,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Gold Dragon
 
 *Gargantuan* *Dragon*
@@ -169,6 +174,7 @@ Source: 5e_artisinal_monsters
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 25 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 26 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
 - **Fiery Reprisal (Costs 2 Actions):** The dragon uses Molten Spit against the last creature to deal damage to it.
+</statblock>
 
 
 
@@ -177,6 +183,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Gold Dragon
 
 *Gargantuan dragon*
@@ -228,5 +235,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days.
+</statblock>
 
 

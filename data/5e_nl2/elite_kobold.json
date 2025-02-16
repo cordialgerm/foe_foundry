@@ -1,0 +1,53 @@
+{
+    "name": "Elite Kobold",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 26,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walk",
+    "role": "Skirmisher",
+    "tags": [
+        "Kobold",
+        "Tactical",
+        "Ambusher"
+    ],
+    "adjectives": [
+        "cunning",
+        "resourceful",
+        "tactical",
+        "supportive"
+    ],
+    "description": "The Elite Kobold is a small humanoid creature with a cunning and tactical mindset typical of its kind, equipped with leather armor.",
+    "memorable": "Offers a mix of combat prowess and unique tactical benefits via teamwork.",
+    "goals": "To aid allies and create strategic advantages in battles.",
+    "relations": "Often found working in groups with other Kobolds.",
+    "environment": "Typically found in caves or underground areas.",
+    "strengths": "High Dexterity enhances stealth and ranged attacks, tactical abilities like Pack Tactics.",
+    "weaknesses": "Sunlight sensitivity hampers effectiveness in bright environments.",
+    "attacks": "Uses a mining pick for melee and a sling for ranged attacks, splashes burning oil for area control.",
+    "most_powerful_ability": "Lantern Splash deals significant fire damage in an area and can control the battlefield.",
+    "equipment": "Mining pick and sling.",
+    "senses": "Possesses darkvision allowing it to see in dim light as if it were bright light, and has a passive perception score of 14.",
+    "skills": "Proficient in perception and stealth, making it vigilant against surprise attacks.",
+    "additional_information": [
+        "Can burrow through non-rocky soil when working with another Kobold.",
+        "Gains advantage on attack rolls against targets with nearby allies.",
+        "Can create damaging area effects with combined actions.",
+        "Exhibits strong teamwork tactics.",
+        "Utilizes a mix of melee and ranged attacks effectively."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small humanoid creatures",
+        "tactical kobold with fire splash attack",
+        "elite kobold ambusher with sunlight sensitivity",
+        "kobold that supports allies in battle",
+        "stealthy creature with tunneling abilities"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Lizardfolk Chosen One",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 feet walking and swimming",
+    "role": "Bruiser",
+    "tags": [
+        "lizardfolk",
+        "chosen one",
+        "spiritual",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "spiritual"
+    ],
+    "description": "The Lizardfolk Chosen One is a medium humanoid with a powerful physique, characterized by its strength and durable presence in battle, showcasing its lizard-like features.",
+    "memorable": "It possesses multiattack capabilities and can retaliate with supernatural abilities, reflecting its combat prowess and spiritual connection.",
+    "goals": "Typically participates in combat, upholding the values of its tribe or beliefs, and providing defense for allies.",
+    "relations": "May be encountered with other lizardfolk or serve as a protector for specific territories or spiritual sites.",
+    "environment": "Typically found in swamps, underwater areas, or near water sources where it can leverage its swimming ability.",
+    "strengths": "Strong physical attacks with the ability to gain temporary hit points, along with effective retaliatory capabilities.",
+    "weaknesses": "Average dexterity may limit agility and evade ranged attacks.",
+    "attacks": "Featured attacks include using a trident for piercing damage and a shield for bludgeoning damage that can knock enemies prone.",
+    "most_powerful_ability": "Supernatural Rebuke allows it to deal significant damage to attackers when it suffers damage.",
+    "equipment": null,
+    "senses": "It has a passive perception of 15, which enables it to detect hidden threats effectively.",
+    "skills": "Skilled in perception, stealth, and survival, enhancing its awareness and ability to navigate stealthily through its environment.",
+    "additional_information": [
+        "Can hold breath for 15 minutes, advantageous in aquatic encounters.",
+        "Radiates a Good or Evil aura that can influence interactions.",
+        "Utilizes a multiattack action for maximum offense."
+    ],
+    "damage_types": [
+        "fire",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong lizardfolk melee attacker",
+        "humanoid with trident and shield",
+        "aquatic combatant with spiritual abilities",
+        "multiattack lizardfolk with combat prowess",
+        "bruiser lizardfolk that can hold breath"
+    ]
+}

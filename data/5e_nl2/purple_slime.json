@@ -1,0 +1,52 @@
+{
+    "name": "Purple Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 7,
+    "srd": false,
+    "cr": "3",
+    "movement": "climb 10 ft., swim 30 ft., walk 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "ambush predator",
+        "aquatic"
+    ],
+    "adjectives": [
+        "purple",
+        "amphibious",
+        "durable"
+    ],
+    "description": "The Purple Slime is a large ooze with a vibrant purple hue, capable of squeezing through tight spaces and surviving in both air and water.",
+    "memorable": "Its ability to reduce a target's Strength score dramatically and its immunity to many conditions make it a formidable opponent.",
+    "goals": "To ambush and incapacitate prey using its sticky and toxic spikes.",
+    "relations": "Other oozes and aquatic creatures.",
+    "environment": "Found in both aquatic settings and damp environments.",
+    "strengths": "Exceptional strength and high hit points; immune to acid and cold damage.",
+    "weaknesses": "Poor dexterity makes it less capable of avoiding attacks.",
+    "attacks": "Multiattack with two spike attacks, dealing both piercing and poison damage.",
+    "most_powerful_ability": "The ability to reduce an opponent's Strength score, potentially leading to their death if reduced to 0.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 ft., but is blind beyond that radius.",
+    "skills": "Average stealth skill due to low dexterity.",
+    "additional_information": [
+        "Amorphous ability allows it to fit through narrow spaces.",
+        "Amphibious nature enables breathing in air and water.",
+        "Underwater camouflage provides advantage on stealth checks while submerged.",
+        "Immune to a variety of conditions including fear and exhaustion.",
+        "High Constitution score enhances its overall durability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large purple ambush predator in water",
+        "ooze that weakens foes by reducing strength",
+        "durable slime that can swim and climb",
+        "creature with high poison damage attacks",
+        "amphibious creature immune to acid and cold"
+    ]
+}

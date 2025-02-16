@@ -1,0 +1,51 @@
+{
+    "name": "Lizardfolk",
+    "creature_type": "Humanoid",
+    "creature_subtype": "lizardfolk",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 15,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 30 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "reptilian",
+        "aquatic",
+        "hunter"
+    ],
+    "adjectives": [
+        "scaly",
+        "territorial",
+        "predatory"
+    ],
+    "description": "Lizardfolk are reptilian humanoids with scaly skin, strong physical traits, and an aquatic adaptability. They wield weapons like clubs and javelins, and are noted for their natural claws and teeth used in combat.",
+    "memorable": "Lizardfolk are skilled hunters with a fierce, predatory nature, capable of holding their breath underwater, and possessing keen senses to detect prey.",
+    "goals": "To hunt for food and defend their tribes in swamps or jungles.",
+    "relations": "Lizardfolk often have conflicts with other humanoids and can serve as guardians of their territory.",
+    "environment": "Swamps, marshes, and jungles.",
+    "strengths": "Good swimming speed and strong perception, especially through smell or taste.",
+    "weaknesses": "Low intelligence and charisma; not skilled in social interactions.",
+    "attacks": "Multiattack using a combination of Bite, Heavy Club, or Javelin attacks with decent damage output.",
+    "most_powerful_ability": "Hold Breath, allowing them to stay submerged underwater for up to 15 minutes.",
+    "equipment": null,
+    "senses": "Heightened smell and taste allow a perception score of 18 for tracking purposes.",
+    "skills": "Proficient in Stealth and Survival, making them adept ambushers.",
+    "additional_information": [
+        "Territorial and primitive culture focused on survival.",
+        "Excellent swimmers that can climb with relative ease.",
+        "Aggressive combatants that utilize their environment for hunting.",
+        "Low intelligence limits complex problem solving.",
+        "Often communicate in Draconic, indicating a primitive culture."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "scaly predator of the swamps",
+        "reptilian hunter skilled in ambush",
+        "aquatic humanoid with heightened senses",
+        "creature that can hold breath underwater",
+        "hunter of marshes with sharp claws"
+    ]
+}

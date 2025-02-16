@@ -1,0 +1,25 @@
+{
+    "name": "Vanara",
+    "queries": [
+        {
+            "query": "humanoid jungle creature known for agility and distracting foes",
+            "variant": "agile creature that distracts enemies and is a humanoid"
+        },
+        {
+            "query": "playful creature that excels in stealthy attacks and quick movements",
+            "variant": "stealthy monster that is playful and known for fast movements"
+        },
+        {
+            "query": "medium-sized fighter with a tail that can distract opponents",
+            "variant": "medium fighter with a distracting tail and good agility"
+        },
+        {
+            "query": "humanoid with a high Dexterity score that uses tactical distractions",
+            "variant": "tactical distraction user who has a high Dexterity humanoid"
+        },
+        {
+            "query": "creature that can jump long distances and disrupt enemy attacks",
+            "variant": "monster able to leap far and interrupt attacks from enemies"
+        }
+    ]
+}

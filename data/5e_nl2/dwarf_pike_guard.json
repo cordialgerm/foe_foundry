@@ -1,0 +1,52 @@
+{
+    "name": "Dwarf Pike Guard",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 16,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking speed of 25 feet",
+    "role": "Defender",
+    "tags": [
+        "dwarf",
+        "guard",
+        "pike",
+        "lawful",
+        "neutral"
+    ],
+    "adjectives": [
+        "stout",
+        "stalwart",
+        "defensive"
+    ],
+    "description": "The Dwarf Pike Guard is a medium humanoid with a strong physical presence, clad in chain mail and armed with a deadly pike. They have a durable constitution and work effectively in tactical formations.",
+    "memorable": "Their 'Forest of Pikes' ability allows for enhanced defense in groups, making them formidable in ranged combat.",
+    "goals": "To maintain order and protect their territory.",
+    "relations": "Often seen alongside other Pike Guards or Pike Guard Captains.",
+    "environment": "Typically found in military encampments or guarding key areas in dwarven settlements.",
+    "strengths": "High resilience due to good constitution and the ability to gain cover when near allies.",
+    "weaknesses": "Limited mobility and low dexterity make them vulnerable in agile or fast-paced encounters.",
+    "attacks": "They attack with a melee pike strike, boasting good reach and dealing notable piercing damage.",
+    "most_powerful_ability": "The 'Forest of Pikes' ability enhances their defensive capabilities against ranged attacks when adjacent to allies.",
+    "equipment": "wields a pike and wears chain mail armor",
+    "senses": "They have darkvision, allowing them to see in darkness as if it were dim light.",
+    "skills": "Proficient in perception, giving them a slight edge in spotting hidden threats.",
+    "additional_information": [
+        "Damage resistance to poison",
+        "Works well in groups, leveraging their 'Forest of Pikes' ability",
+        "Offers strategic advantage through the 'Brace Pike' reaction",
+        "Armed with a long-reach weapon",
+        "Capable of taking on lower-level adventurers"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "medium humanoid with pike armor",
+        "stout dwarf guard with strong defenses",
+        "lawful neutral pike-wielding defender",
+        "pike guard that works well in groups",
+        "dwarven soldier specializing in ranged defense"
+    ]
+}

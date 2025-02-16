@@ -1,0 +1,54 @@
+{
+    "name": "Ogre, Cunning Artisan",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 119,
+    "ac": 14,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "ogre",
+        "giant",
+        "artisan",
+        "magic"
+    ],
+    "adjectives": [
+        "cunning",
+        "artistic",
+        "dangerous"
+    ],
+    "description": "The Cunning Artisan Ogre is a large giant with unexpected intelligence and magical prowess, featuring an arsenal of magic-infused abilities.",
+    "memorable": "Its ability to activate magic items as a bonus action and sense magic gives it a unique edge in combat.",
+    "goals": "Typically looking to dominate weaker foes and manipulate magical items for its own advantage.",
+    "relations": "Often found with other giants or magical creatures, it can serve as an antagonist or a formidable ally.",
+    "environment": "Usually found in areas rich with magical artifacts or in places where it can enhance its craft.",
+    "strengths": "High strength and constitution allow it to deal and absorb significant damage, while its intelligence aids in magical manipulation.",
+    "weaknesses": "Limited mobility and average dexterity can be exploited by agile and strategic opponents.",
+    "attacks": "It can strike with two battleaxes or launch three arcane bolts, combining brute strength with magical damage.",
+    "most_powerful_ability": "Its 'Arcane Weapons' ability adds extra force damage to its attacks, making it particularly lethal.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enabling it to see in dim light effectively.",
+    "skills": "Has average perception, reflecting its limited awareness despite strong saving throws.",
+    "additional_information": [
+        "Can curse magic items to weaken foes.",
+        "Has a tactical sensing ability similar to detect magic.",
+        "Combines melee and ranged attacks effectively.",
+        "Good interaction skills thanks to its high charisma.",
+        "Highly versatile in combat with strategic damage options."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ogre that uses magic and curses items",
+        "intelligent giant with magical weapon attacks",
+        "large ogre skilled in magical arts",
+        "cunning artisan with force damage abilities",
+        "dangerous giant that detects magic"
+    ]
+}

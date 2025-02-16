@@ -1,0 +1,25 @@
+{
+    "name": "Azer",
+    "queries": [
+        {
+            "query": "humanoid creature made of living metal and fire",
+            "variant": "humanoid fire and metal creature"
+        },
+        {
+            "query": "elemental creature that can teleport in flames",
+            "variant": "flame teleporting elemental creature"
+        },
+        {
+            "query": "small fighter made of molten metal with fire damage abilities",
+            "variant": "small molten metal fighter with fire damage"
+        },
+        {
+            "query": "craftsman elemental creature with fiery aura and melee attacks",
+            "variant": "fiery aura craftsman elemental with melee"
+        },
+        {
+            "query": "fire-resistant creature that catches others on fire",
+            "variant": "fire-resistant creature that sets others ablaze"
+        }
+    ]
+}

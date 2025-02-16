@@ -1,6 +1,8 @@
 <MonsterName/>Alkonost</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>17</HP>
 <summary>The Alkonost is a small monstrosity that embodies the mystique of lightning and the winds. With a Challenge Rating of 1/2, it is a creature that may seem weak at first glance, but its abilities allow it to manipulate the environment to its advantage. It has good mobility with a flying speed of 40 feet, allowing it to evade danger effectively. Its defenses are average, with an Armor Class of 12 and a modest pool of 17 hit points. The creature's notable feature is its immunity to winds, whether natural or magical, giving it exceptional resilience against effects that could hinder its movement. However, with low intelligence and constitution, it remains vulnerable in situations that exploit its mental or physical weaknesses.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ The Alkonost can use its claws to make a melee weapon attack, which has a +4 to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Alkonost
 
 *Small* *Monstrosity* *neutral*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Charged Melody (Recharge 6):** The alkonost sings a beautiful melody. Each creature within 30 feet of it that can hear the melody must succeed on a DC 12 Charisma saving throw or take 7 (2d6) lightning damage the next time it moves.
 
 
+</statblock>
 
 

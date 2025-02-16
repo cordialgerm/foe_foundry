@@ -1,0 +1,51 @@
+{
+    "name": "Blaspheming Hand",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Large",
+    "hp": 68,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., fly 30 ft.",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "evil"
+    ],
+    "adjectives": [
+        "blasphemous",
+        "ominous"
+    ],
+    "description": "The Blaspheming Hand is a Large fiend, characterized by its impressive size and eerie gestures. It has a formidable presence, capable of flying and executing powerful magical effects in combat.",
+    "memorable": "It has an intriguing Evil Fingers ability that inflicts various detrimental effects on enemies while grappling them.",
+    "goals": "To control the battlefield and weaken opponents through a combination of grappling and magical attacks.",
+    "relations": "Often serves alongside other fiends or evil creatures, benefiting from their presence through its Steadfast ability.",
+    "environment": "Typically found in dark, sinister locations or realms associated with evil.",
+    "strengths": "Possesses Magic Resistance, making it resistant to many spell effects, and its Evil Fingers ability complicates encounters for adventurers.",
+    "weaknesses": "Vulnerable to magical weapons and can be overwhelmed if isolated from allies.",
+    "attacks": "Uses a Claw attack that deals significant slashing damage and can grapple targets, inhibiting their movement.",
+    "most_powerful_ability": "Evil Fingers allows it to manipulate opponents with various harmful effects, adding strategic value to its attacks.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "Has moderate perception skills with a +1 modifier.",
+    "additional_information": [
+        "Grants advantage on saving throws against spells and magical effects due to its Magic Resistance.",
+        "Can restrain Medium or smaller creatures while grappling.",
+        "Can pull or push enemies with magical effects, altering their positioning in combat.",
+        "Can regain hit points by damaging marked targets through its Unravelling Finger ability.",
+        "Operates best in cooperation with other allies to maintain its Steadfast immunity."
+    ],
+    "damage_types": [
+        "fire",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant evil hand",
+        "evil fiend grapple attacks",
+        "blasphemous hand abilities",
+        "creature with magical effects",
+        "large fiend creature"
+    ]
+}

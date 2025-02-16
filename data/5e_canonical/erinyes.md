@@ -1,6 +1,9 @@
 <MonsterName/>Erinyes (Devil)</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<Subtype/>devil</Subtype>
+<CR/>12</CR>
+<AC/>18 (plate)</AC>
+<HP/>153</HP>
 <summary>Erinyes are fearsome, fiendish warriors from the Nine Hells, resembling dark, fallen angels. They have large, black-feathered wings, and their bodies are clad in dark armor, often stained with the blood of their enemies. Their beauty is deceptive, as they are ruthless in battle, wielding magical swords and whips with deadly precision. Erinyes serve as enforcers and punishers for powerful devils, often hunting down those who have defied infernal contracts. They are skilled combatants and spellcasters, capable of flight and using their magic to manipulate and deceive mortals. Their presence is often a sign of infernal retribution.</summary>
 
 <summary>The Erinyes is a powerful Medium Fiend known for its lethal combat abilities and tactical prowess. This creature has a notable Armor Class of 18 and a high hit point total of 161, making it quite resilient in battle. With a Challenge Rating of 12, the Erinyes can provide a significant challenge for adventurers, earning 8,400 experience points upon defeat. It is characterized by its lawful evil alignment, indicating its adherence to a strict code of conduct while engaging in malevolent acts. The Erinyes possesses impressive physical and magical attributes, with a Strength of 18, Dexterity of 18, Constitution of 18, Intelligence of 14, Wisdom of 16, and Charisma of 18, all of which contribute to its exceptional combat effectiveness. Its primary strengths lie in its high damage output, magic resistance, and the ability to control the battlefield. However, it is vulnerable to radiant damage and can be affected by abilities that bypass its damage resistances.</summary>
@@ -35,6 +38,7 @@ As a reaction, the Erinyes can perform a Parry, which allows it to add 4 to its 
 
 Source: 5e_srd
 
+<statblock>
 ### Erinyes (Devil)
 
 *Medium fiend (devil), lawful evil*
@@ -77,7 +81,8 @@ Source: 5e_srd
 
 ###### Reactions
 
-***Parry***. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.
+***Parry***. The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.</statblock>
+
 
 
 
@@ -85,6 +90,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erinyes
 
 *Medium* *Fiend*
@@ -124,6 +130,7 @@ Source: 5e_artisinal_monsters
 - **Parry:** If the erinyes is wielding a longsword and can see its attacker, it adds 4 to its AC against one melee attack that would hit it.
 
 
+</statblock>
 
 
 
@@ -132,6 +139,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Erinyes
 
 *Medium fiend (devil)*
@@ -168,5 +176,6 @@ Source: 5e_artisinal_monsters
 
 - **Parry.** The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.
 
+</statblock>
 
 

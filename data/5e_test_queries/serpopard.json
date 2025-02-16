@@ -1,0 +1,25 @@
+{
+    "name": "Serpopard",
+    "queries": [
+        {
+            "query": "large ambush predator that thrives in swampy areas",
+            "variant": "huge predator skilled in ambush that lives in swamps"
+        },
+        {
+            "query": "stealthy coastal monster with natural armor and poison abilities",
+            "variant": "stealthy monster from the coast that has natural armor and poison attacks"
+        },
+        {
+            "query": "creature with high Dexterity and special stealth skills",
+            "variant": "monster with good Dexterity and special abilities in stealth"
+        },
+        {
+            "query": "ambushing monstrosity that uses musk to poison enemies",
+            "variant": "monster that ambushes and uses its musk to poison"
+        },
+        {
+            "query": "mid-tier CR 4 creature with strong bite and claw attacks",
+            "variant": "CR 4 creature with powerful bite and claw attacks"
+        }
+    ]
+}

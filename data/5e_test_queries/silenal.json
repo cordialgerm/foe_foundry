@@ -1,0 +1,25 @@
+{
+    "name": "Silenal",
+    "queries": [
+        {
+            "query": "chaotic neutral small fey that can charm and intoxicate",
+            "variant": "small fey creature that can intoxicate and charm, chaotic neutral"
+        },
+        {
+            "query": "fey creature with high Charisma and cunning abilities",
+            "variant": "high Charisma fey creature with cunning abilities"
+        },
+        {
+            "query": "small fey that manipulates combat and enjoys drinking",
+            "variant": "fey that enjoys drinking and manipulates combat, is small"
+        },
+        {
+            "query": "fey that has a drunken clarity ability while near alcohol",
+            "variant": "creature with a drunken clarity ability when near alcohol"
+        },
+        {
+            "query": "small fey with advantages and disadvantages in charm effects",
+            "variant": "fey creature with charm effect advantages and disadvantages, small"
+        }
+    ]
+}

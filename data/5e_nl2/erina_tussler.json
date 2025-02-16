@@ -1,0 +1,52 @@
+{
+    "name": "Erina Tussler",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 66,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft. burrow 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "grappler",
+        "regenerating",
+        "tactical"
+    ],
+    "adjectives": [
+        "small",
+        "piercing",
+        "agile"
+    ],
+    "description": "Erina Tussler is a small humanoid with notable arm spines it can use in combat. It wears leather armor and features agility in its movements.",
+    "memorable": "The ability to regenerate its arm spines and grapple creatures much larger than itself.",
+    "goals": "Engage in combat using grappling tactics and ranged spine attacks.",
+    "relations": "May be encountered with other humanoids or creatures that prefer agility-focused combat.",
+    "environment": "Typically found in natural settings where burrowing is possible.",
+    "strengths": "Good agility enhances ranged attack accuracy; ability to grapple larger foes and move while grappling.",
+    "weaknesses": "Average attributes can leave it vulnerable against stronger creatures.",
+    "attacks": "Uses Punching Spines in melee, dealing piercing damage, or Throws Spines that embed into targets.",
+    "most_powerful_ability": "Arm Spine Regrowth allows continuous use of spines without running out.",
+    "equipment": "leather armor",
+    "senses": "Has keen sense of smell, providing an advantage on perception checks relying on smell.",
+    "skills": "Possesses a positive bonus for perception checks.",
+    "additional_information": [
+        "Regenerates used spines after a long rest.",
+        "Can grapple twice its size for tactical advantage.",
+        "Grappled foes have disadvantage on escape attempts.",
+        "Injury from its spines upon contact or attacks.",
+        "Disadvantage on Strength-based attacks when spines are lodged."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile small humanoid with spines",
+        "creature that grapples larger foes effectively",
+        "regenerating spine monster in combat",
+        "tactical skirmisher with keen smell",
+        "monster that uses spines for ranged attacks"
+    ]
+}

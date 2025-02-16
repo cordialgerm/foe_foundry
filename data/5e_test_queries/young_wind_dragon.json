@@ -1,0 +1,25 @@
+{
+    "name": "Young Wind Dragon",
+    "queries": [
+        {
+            "query": "large stormy dragon that can fly and uses wind attacks",
+            "variant": "large draconic creature that's stormy and capable of flying with wind abilities"
+        },
+        {
+            "query": "chaotic neutral dragon that has high strength and lightning immunity",
+            "variant": "dragon with chaotic alignment, impressive strength, and immune to lightning"
+        },
+        {
+            "query": "dragon with exceptional flying speed and bludgeoning breath attack",
+            "variant": "dragon exhibiting fast flight capabilities and a powerful bludgeoning breath"
+        },
+        {
+            "query": "monster that controls storms and has a bite and claw attack",
+            "variant": "creature that manipulates storm powers and is able to bite and slash with claws"
+        },
+        {
+            "query": "dragon that excels in acrobatics and sees through fog and mist",
+            "variant": "creature proficient in acrobatics and able to see through fog or mist"
+        }
+    ]
+}

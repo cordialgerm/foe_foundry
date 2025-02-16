@@ -1,0 +1,25 @@
+{
+    "name": "Massive Malleable",
+    "queries": [
+        {
+            "query": "gargantuan shapeshifter with psychic immunity",
+            "variant": "shapeshifter with psychic damage immunity and gargantuan size"
+        },
+        {
+            "query": "chaotic aberration that absorbs other creatures",
+            "variant": "aberration that can absorb other creatures and is chaotic"
+        },
+        {
+            "query": "massive creature that regenerates and drains life",
+            "variant": "large creature that can regenerate and drain life force"
+        },
+        {
+            "query": "monster with high strength and low dexterity",
+            "variant": "creature that has low dexterity but high strength"
+        },
+        {
+            "query": "terrifying monster that can split into smaller malleables",
+            "variant": "frightening creature capable of splitting into tinier malleables"
+        }
+    ]
+}

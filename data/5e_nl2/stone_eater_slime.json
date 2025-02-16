@@ -1,0 +1,52 @@
+{
+    "name": "Stone-Eater Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 90,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "20 feet on land, 10 feet climbing",
+    "role": null,
+    "tags": [
+        "ooze",
+        "petrification",
+        "acid"
+    ],
+    "adjectives": [
+        "small",
+        "destructive",
+        "petrifying"
+    ],
+    "description": "The Stone-Eater Slime is a small, greenish ooze that can dissolve stone and petrify creatures. It has a strong, amorphous body allowing it to squeeze through tight spaces.",
+    "memorable": "Its ability to petrify foes and dissolve stone makes this slime a formidable opponent, able to consume the very materials that structure its environment.",
+    "goals": "To dissolve stone and petrify creatures, likely to feed and regain health.",
+    "relations": "Often found in caves or ruins alongside other oozes, it can be encountered as a guardian of treasure.",
+    "environment": "Caves, ruins, or areas with significant stone or crystal structures.",
+    "strengths": "High Constitution for durability, ability to petrify, and dissolve stone.",
+    "weaknesses": "Low Intelligence and Charisma limit its interactions and strategic planning.",
+    "attacks": "Multiattack with two Slam attacks causing bludgeoning and acid damage, with a chance to petrify.",
+    "most_powerful_ability": "Dissolve Stone lets it destroy stone materials and regain hit points in the process.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet, which allows it to detect its surroundings even while blind.",
+    "skills": "Has a passive Perception score of 8, indicating its limited awareness.",
+    "additional_information": [
+        "Immune to acid damage and various debilitating conditions.",
+        "Doesn't require sleep, remaining active indefinitely.",
+        "Can move on difficult surfaces without requiring ability checks.",
+        "Destroys stone armor and weapons permanently, weakening foes over time.",
+        "Can absorb stone to heal itself."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "petrifying slime that dissolves stone",
+        "destructive ooze with acid attacks",
+        "small creature that petrifies and heals",
+        "slime that survives without sleep",
+        "ooze that can damage stone armor"
+    ]
+}

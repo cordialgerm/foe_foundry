@@ -1,0 +1,25 @@
+{
+    "name": "Forgotten God",
+    "queries": [
+        {
+            "query": "celestial being with high armor class and powerful spellcasting",
+            "variant": "high armor class celestial creature with strong spells"
+        },
+        {
+            "query": "divine creature that has a stunning gaze and flies",
+            "variant": "flying divine being with stunning gaze ability"
+        },
+        {
+            "query": "monster that can cast spirit guardians and has radiant damage",
+            "variant": "creature able to use spirit guardians and deals radiant damage"
+        },
+        {
+            "query": "forgotten god with high strength and wisdom that manipulates the battlefield",
+            "variant": "forgotten deity with strong strength and wisdom to control combat"
+        },
+        {
+            "query": "celestial being immune to fear and poison that has divine wrath",
+            "variant": "celestial entity impervious to fear and poisons with divine rage"
+        }
+    ]
+}

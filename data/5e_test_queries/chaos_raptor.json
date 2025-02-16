@@ -1,0 +1,25 @@
+{
+    "name": "Chaos Raptor",
+    "queries": [
+        {
+            "query": "gargantuan chaotic monster that can burrow and fly",
+            "variant": "gargantuan chaos monster able to burrow and fly"
+        },
+        {
+            "query": "creature with high hit points and chaotic abilities",
+            "variant": "monster with significant hit points and chaotic powers"
+        },
+        {
+            "query": "agile beast that grapples and has a chaotic aura",
+            "variant": "agile creature that grapples and possesses a chaotic aura"
+        },
+        {
+            "query": "monster that has regeneration and can move through earth",
+            "variant": "creature that can regenerate and moves through earth"
+        },
+        {
+            "query": "strong monster with multiple attacks and chaotic influences",
+            "variant": "powerful creature with multi-attack and chaos effects"
+        }
+    ]
+}

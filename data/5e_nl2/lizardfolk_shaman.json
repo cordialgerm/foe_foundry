@@ -1,0 +1,53 @@
+{
+    "name": "Lizardfolk Shaman",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 57,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking, 15 ft. climbing, 30 ft. swimming",
+    "role": "Controller",
+    "tags": [
+        "shaman",
+        "lizardfolk",
+        "poison",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "versatile",
+        "spellcasting",
+        "poisonous"
+    ],
+    "description": "The Lizardfolk Shaman is a medium humanoid with green scales, adept at spellcasting and combat. It carries a Ritual Staff and has a notable affinity for poison. This shaman exudes an aura of resilience, amplified by its natural armor.",
+    "memorable": "Possesses unique abilities like heightened smell and taste for tracking, and can poison attackers with its 'Poisoned Body' ability.",
+    "goals": "To support its allies through healing spells and control the battlefield with entanglements and poison.",
+    "relations": "Related to other Lizardfolk and could be encountered with druidic allies or in swamps.",
+    "environment": "Usually found in swamps and aquatic environments.",
+    "strengths": "Exceptional Wisdom enhances spellcasting and perception, capable of both dealing and mitigating damage.",
+    "weaknesses": "While versatile, its attributes are mostly average, making it less effective in direct physical confrontations.",
+    "attacks": "Utilizes a Multiattack combining a Bite and Ritual Staff swing, or unleashes dangerous Swamp Bolt spells.",
+    "most_powerful_ability": "Poisoned Body ability that inflicts damage on melee attackers, deterring close combat.",
+    "equipment": "Ritual Staff",
+    "senses": "Possesses an impressive perception score of 15, enabling it to detect hidden threats effectively.",
+    "skills": "Has proficiency in Stealth but is primarily a spellcaster, leveraging its high Wisdom for spells.",
+    "additional_information": [
+        "Can hold breath for 15 minutes, enhancing survivability underwater.",
+        "Expert at using its environment for mobility with climbing and swimming abilities.",
+        "Can cast control and healing spells, making it crucial in party dynamics.",
+        "Bite attack and Ritual Staff attack deal significant damage, especially with poison effects.",
+        "Heightened smell provides a unique tracking advantage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Casts utility and healing spells like druidcraft, guidance, and mending at will, plus offensive spells twice per day.",
+    "test_queries": [
+        "versatile swamp spellcaster with poison abilities",
+        "lizardfolk shaman that supports allies and controls battlefield",
+        "humanoid creature with significant spellcasting and poison tactics",
+        "poisonous humanoid in swamps with strong perception skills",
+        "shaman with unique poison and healing spells"
+    ]
+}

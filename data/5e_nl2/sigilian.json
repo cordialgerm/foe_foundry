@@ -1,0 +1,53 @@
+{
+    "name": "Sigilian",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 60 ft., can't walk",
+    "role": "null",
+    "tags": [
+        "construct",
+        "spellcaster",
+        "book manipulator"
+    ],
+    "adjectives": [
+        "aerial",
+        "intelligent",
+        "stealthy",
+        "resilient"
+    ],
+    "description": "The Sigilian is a Medium Construct with the ability to manipulate books and harness magical energies. It has a spectral appearance and can move through spaces as narrow as 1 inch.",
+    "memorable": "The Sigilian can restore its health by removing words from pages, making it a unique challenge.",
+    "goals": "It seeks to absorb magical energies and maintain its vitality.",
+    "relations": "Often encountered in libraries or places of magical knowledge, may be linked to spellcasters or guardians of tomes.",
+    "environment": "Typically found in libraries, archives, or places rich in magical lore.",
+    "strengths": "Resilient to many forms of damage, immune to poison, and can regain health through abilities.",
+    "weaknesses": "Vulnerable to psychic damage and physically weak, limiting its direct combat abilities.",
+    "attacks": "Utilizes Cut to deal slashing damage and copy attacks, and Paste to adapt damage type based on previous attacks.",
+    "most_powerful_ability": "Devour Spell allows it to consume spells from spellbooks, amplifying its damage or restoring health.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in stealth, making it adept at sneaking.",
+    "additional_information": [
+        "Can enter books carried by others, creating unique evasion tactics.",
+        "Immune to several conditions like blinded, charmed, and frightened.",
+        "Can only consume one spell at a time, requiring strategic planning.",
+        "Possesses Amorphous ability, enhancing its mobility.",
+        "Absorbs energy from spellbooks, making it a threat in magical situations."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that manipulates spellbooks",
+        "book-dwelling magical creature",
+        "aerial construct with spell absorption",
+        "stealthy creature that heals with books",
+        "resilient construct vulnerable to psychic damage"
+    ]
+}

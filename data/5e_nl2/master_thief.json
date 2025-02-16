@@ -1,0 +1,52 @@
+{
+    "name": "Master Thief",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 143,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "ambusher",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Master Thief is a humanoid with exceptional agility and cunning intelligence, skilled in stealth and ambush tactics.",
+    "memorable": "Combines high offensive capabilities with evasiveness and cunning, providing a significant challenge for adventurers.",
+    "goals": "Uses stealth and deception to outmaneuver enemies and obtain valuable targets.",
+    "relations": "May work with other thieves or assassins and can be a rival to adventurers.",
+    "environment": "Often found in urban settings, such as cities or dungeons, where stealth and cunning are advantageous.",
+    "strengths": "High Dexterity allows for impressive agility and evasive maneuvers, along with the ability to deal significant damage through sneak attacks.",
+    "weaknesses": "Moderate Wisdom makes it somewhat vulnerable to perceptive strategies.",
+    "attacks": "Utilizes a shortsword for melee and a light crossbow for ranged attacks, each capable of delivering poison damage.",
+    "most_powerful_ability": "Sneak Attack, adding significant damage under optimal conditions.",
+    "equipment": null,
+    "senses": "Has blindsight and passive Perception of 17, allowing it to operate effectively even in low visibility.",
+    "skills": "Proficient in Acrobatics and Stealth, enhancing its ability to avoid detection and navigate combat.",
+    "additional_information": [
+        "Proficient in Dexterity, Intelligence, and Wisdom saving throws.",
+        "Possesses the ability 'Evasion' to avoid area effects.",
+        "Can take two bonus actions per turn due to 'Cunning Celerity'.",
+        "Uses 'Deadly Poison' to incapacitate foes.",
+        "Skilled in deception for social interactions."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile humanoid master of stealth",
+        "cunning thief with deadly poison abilities",
+        "urban ambusher skilled in deception",
+        "high dexterity humanoid using sneak attacks",
+        "master thief with exceptional agility and cunning"
+    ]
+}

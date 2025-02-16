@@ -1,0 +1,25 @@
+{
+    "name": "Garroter Crab",
+    "queries": [
+        {
+            "query": "tiny crab that grapples and delivers future visions",
+            "variant": "tinny crab that grapples and gives future visions"
+        },
+        {
+            "query": "vicious little crab that thrives in water and air",
+            "variant": "vicious little crab that lives in water and air"
+        },
+        {
+            "query": "crab with strangling ability in ambush tactics",
+            "variant": "crab with strangler ability in ambush stratergies"
+        },
+        {
+            "query": "ambush predator that can breathe both air and water",
+            "variant": "ambushing predator that can breath air and water"
+        },
+        {
+            "query": "agile crab that disrupts spellcasting while grappling",
+            "variant": "active crab that messes with spellcasting while grappling"
+        }
+    ]
+}

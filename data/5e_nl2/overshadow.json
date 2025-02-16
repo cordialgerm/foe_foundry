@@ -1,0 +1,52 @@
+{
+    "name": "Overshadow",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "stealth",
+        "necrotic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "dangerous",
+        "cunning"
+    ],
+    "description": "The Overshadow is a large undead creature that thrives in darkness, with a shadowy form allowing it to navigate through tight spaces seamlessly. It possesses a high Dexterity that enhances its stealth capabilities, making it difficult to detect in dim light.",
+    "memorable": "Its ability to drain the strength from its enemies while evading detection makes it a formidable opponent.",
+    "goals": "Typically aims to weaken and take down prey stealthily.",
+    "relations": "May be encountered with other undead or in dark, haunted locations.",
+    "environment": "Often found in dark, shadowy areas or places devoid of light.",
+    "strengths": "High dexterity enhances stealth, resistance to many damage types.",
+    "weaknesses": "Significant vulnerability to radiant damage and severely hindered during sunlight.",
+    "attacks": "Utilizes Strength Drain attacks, siphoning strength while dealing necrotic damage.",
+    "most_powerful_ability": "Bringer of Darkness, which dims light sources to enhance its stealth.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in stealth, enabling it to evade detection effectively.",
+    "additional_information": [
+        "Can slip through narrow spaces without squeezing due to Amorphous trait.",
+        "Disadvantaged in sunlight, limiting attack and saving throws.",
+        "Strength Drain can lead to death if a target's Strength score is reduced to zero.",
+        "Shadow Stealth allows it to hide quickly in dim light or darkness.",
+        "Resistant to most damage types, enhancing its survivability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy undead creature that thrives in darkness",
+        "large chaotic evil monster with strength drain",
+        "shadowy creature vulnerable to radiant damage",
+        "undead that hates sunlight and dims light sources",
+        "mobile creature with high dexterity and stealth abilities"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Annelidast",
+    "creature_type": "Monstrosity",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 18,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 30 ft., burrow 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "huge",
+        "poisonous",
+        "burrowing"
+    ],
+    "adjectives": [
+        "colossal",
+        "formidable",
+        "aggressive"
+    ],
+    "description": "The Annelidast is a colossal monstrosity with a tough, natural armor. It has powerful melee capabilities and a significant burrowing ability that allows it to dig through rock and create tunnels.",
+    "memorable": "Its Primordial Aura inflicts poison damage and can cause lasting effects, while its ability to create tunnels adds a tactical advantage.",
+    "goals": "To dominate encounters, imposing chaos and risk on opponents through its attacks and abilities.",
+    "relations": "Often found in proximity to other underground creatures, potentially serving as a guardian or threat in subterranean environments.",
+    "environment": "Typically dwells underground, navigating through solid rock and creating hazardous zones.",
+    "strengths": "High hit points and Armor Class, powerful melee attacks, and potent poison-based abilities.",
+    "weaknesses": "Lacks in Dexterity, Intelligence, Wisdom, and Charisma, potentially limiting its interactions.",
+    "attacks": "Uses multiattack with three powerful Slam attacks that deal significant bludgeoning damage, can push targets back or restrain them.",
+    "most_powerful_ability": "The Primordial Aura, which inflicts poison damage to creatures starting their turn nearby and poses a long-term threat by causing tumors.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 120 feet, allowing it to sense vibrations and navigate its surroundings effectively.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to poison damage and bludgeoning from nonmagical attacks, and resistance to lightning damage",
+        "Can burrow through solid rock and create wide tunnels",
+        "Has a defensive reaction that allows it to strike back when injured",
+        "Capable of creating hazardous areas that affect both enemies and allies",
+        "Does not require air to survive, making it well-suited for underground environments"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant subterranean monster",
+        "poisonous creature with tunneling abilities",
+        "huge bludgeoning damage monster",
+        "underground monstrosity",
+        "chaotic battlefield creature"
+    ]
+}

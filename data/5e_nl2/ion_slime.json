@@ -1,0 +1,54 @@
+{
+    "name": "Ion Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 112,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "20 ft. walking and swimming",
+    "role": null,
+    "tags": [
+        "ooze",
+        "elemental",
+        "lightning",
+        "agile"
+    ],
+    "adjectives": [
+        "unique",
+        "formidable",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Ion Slime is a small oozing creature capable of contorting through tight spaces, with a translucent form and glimmering surfaces that hint at its electrical properties.",
+    "memorable": "It can absorb lightning attacks, healing itself and empowering its own attacks while being vulnerable to cold damage.",
+    "goals": "To engage in combat while utilizing its unique elemental properties to gain an advantage.",
+    "relations": "It may be found alongside other elemental creatures or oozes that thrive in electrically charged environments.",
+    "environment": "Typically encountered in locations with high electrical activity or near bodies of water.",
+    "strengths": "Resilient to bludgeoning and thunder damage, and able to utilize lightning to heal itself.",
+    "weaknesses": "Vulnerable to cold damage, which can disrupt its supercharged state.",
+    "attacks": "Can perform multiattacks with pseudopods dealing bludgeoning and lightning damage, with a potent discharge attack when supercharged.",
+    "most_powerful_ability": "Discharge, which unleashes a powerful chain lightning effect after collecting ambient electricity.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing perception without relying on sight.",
+    "skills": "Has proficiency in perception, enhancing its ability to detect threats in its surroundings.",
+    "additional_information": [
+        "Amorphous trait allows movement through tight spaces effortlessly.",
+        "Ooze Nature means it does not require sleep.",
+        "Spider Climb ability facilitates movement on difficult surfaces without checks.",
+        "Supercharged state increases its AC and grants an additional action.",
+        "Feedback damage if it fails to use Discharge while supercharged."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small agile ooze that absorbs lightning",
+        "ooze with discharge and amorphous traits",
+        "Ion Slime combat abilities and vulnerabilities",
+        "creature that moves through tight spaces easily",
+        "versatile slime with lightning powers and cold weakness"
+    ]
+}

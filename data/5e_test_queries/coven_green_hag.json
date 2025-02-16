@@ -1,0 +1,25 @@
+{
+    "name": "Coven Green Hag",
+    "queries": [
+        {
+            "query": "cunning fey creature with transformational powers and spellcasting abilities",
+            "variant": "fey creature that can transform and cast spells, cunning in nature"
+        },
+        {
+            "query": "green hag that breathes both air and water with hexing abilities",
+            "variant": "hag capable of breathing air and water that can hex enemies"
+        },
+        {
+            "query": "medium-sized fey monster that uses deception and has a challenge rating of 5",
+            "variant": "medium fey creature known for its cunning and rated at challenge level 5"
+        },
+        {
+            "query": "dangerous fey with claws and the ability to charm or frighten",
+            "variant": "treacherous fey monster that can charm or instill fear and has claws"
+        },
+        {
+            "query": "hag that transforms into beasts and has a variety of damaging hexes",
+            "variant": "hag able to change into beasts and has different kinds of hex attacks"
+        }
+    ]
+}

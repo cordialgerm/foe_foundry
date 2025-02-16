@@ -1,0 +1,25 @@
+{
+    "name": "Black Sun Priestess",
+    "queries": [
+        {
+            "query": "humanoid spellcaster that thrives in darkness but struggles in bright light",
+            "variant": "humanoid that thrives in dark and is weak in bright light spellcaster"
+        },
+        {
+            "query": "chaotic evil character with darkvision and aggressive melee tactics",
+            "variant": "chaotic evil character who has darkvision and aggressive melee abilities"
+        },
+        {
+            "query": "mage with strong intimidation skills who can animate dead creatures",
+            "variant": "strong intimidating mage that can raise the dead"
+        },
+        {
+            "query": "priestess with higher strength and constitution who casts spells like bane and cure wounds",
+            "variant": "priestess with high strength and constitution that casts bane and cure"
+        },
+        {
+            "query": "medium humanoid that uses a greatclub and has access to spiritual weapon spell",
+            "variant": "medium humanoid who uses greatclub and can cast spiritual weapon"
+        }
+    ]
+}

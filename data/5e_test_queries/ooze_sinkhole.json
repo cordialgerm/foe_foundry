@@ -1,0 +1,25 @@
+{
+    "name": "Sinkhole Ooze",
+    "queries": [
+        {
+            "query": "gargantuan ooze that blends into pits and grapples foes",
+            "variant": "huge ooze blending into sinkholes and restraining enemies"
+        },
+        {
+            "query": "amorphous monster with acid immunity that inhabits the ground",
+            "variant": "shape-shifting creature immune to acid that lives underground"
+        },
+        {
+            "query": "monster with pseudopods that attacks from below and is not affected by sleep",
+            "variant": "creature with tendril-like limbs that strikes from beneath and never sleeps"
+        },
+        {
+            "query": "Sinkhole Ooze's ability to restrain enemies with tentacles in a pit",
+            "variant": "ability of the Sinkhole Ooze to grapple foes using its tendrils within a sinkhole"
+        },
+        {
+            "query": "gargantuan creature with a low AC but high hit points and damage immunities",
+            "variant": "huge monster with weak defenses but robust health and damage resistances"
+        }
+    ]
+}

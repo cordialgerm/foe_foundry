@@ -1,0 +1,53 @@
+{
+    "name": "Necromancer",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 67,
+    "ac": 12,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "necromancer",
+        "magic"
+    ],
+    "adjectives": [
+        "medium",
+        "spellcasting",
+        "intelligent"
+    ],
+    "description": "The Necromancer is a medium humanoid skilled in necromantic magic, often wielding a dagger and casting devastating spells like Fireball and Cone of Cold.",
+    "memorable": "Its extensive spell list and ability to summon the dead make it a formidable opponent.",
+    "goals": "Typically seeks to control the battlefield and manipulate life and death through necromancy.",
+    "relations": "May interact with undead creatures or other spellcasters, potentially commanding zombies or skeletons.",
+    "environment": "Often found in dark towers, crypts, or places of power related to death.",
+    "strengths": "Exceptional spellcasting abilities with powerful area damage spells and control magic like Greater Invisibility.",
+    "weaknesses": "Relatively low physical capabilities, making it vulnerable to direct melee attacks.",
+    "attacks": "Uses a mixture of melee dagger attacks and ranged spells, notably Fire Bolt and Fireball.",
+    "most_powerful_ability": "The ability to cast Cone of Cold, delivering a powerful burst of cold damage in a large area.",
+    "equipment": "Typically carries a dagger for close combat alongside spell components.",
+    "senses": "Has a passive Perception of 14, indicating good awareness of its surroundings.",
+    "skills": "Demonstrates exceptional knowledge in Arcana, History, and Investigation, with a proficiency modifier of +6 in each.",
+    "additional_information": [
+        "9th level spellcaster with Intelligence as the spellcasting ability.",
+        "Can teleport short distances using Misty Step.",
+        "Capable of countering enemy spells with Counterspell.",
+        "Can create undead minions using Animate Dead.",
+        "Maintains considerable survivability with the Shield spell."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "Can cast a variety of spells, including area damage spells and spells for defense and manipulation such as Fireball and Greater Invisibility.",
+    "test_queries": [
+        "spellcasting humanoid with necromantic abilities",
+        "area damage spells user in dark tower",
+        "creature that manipulates the undead and casts fireball",
+        "powerful spellcaster with greater invisibility",
+        "intelligent creature summoning minions in combat"
+    ]
+}

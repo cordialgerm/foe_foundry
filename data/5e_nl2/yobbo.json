@@ -1,0 +1,47 @@
+{
+    "name": "Yobbo",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Small",
+    "hp": 11,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "magical",
+        "trap",
+        "stealth"
+    ],
+    "adjectives": [
+        "small",
+        "sneaky",
+        "explosive"
+    ],
+    "description": "The Yobbo is a small humanoid creature adept at ambushing spellcasters. It has a notable appearance due to its ability to consume magical items.",
+    "memorable": "The Yobbo can explode on death, releasing a random spell, making it a unique and dangerous foe.",
+    "goals": "To consume magical items and disrupt spellcasters.",
+    "relations": "May typically be found near magic users or hoarding magical trinkets.",
+    "environment": "Commonly found in areas with magical influences or near spellcasters.",
+    "strengths": "Proficient in stealth and arcana, allowing it to sneak up on magical targets and identify their items.",
+    "weaknesses": "Low Strength and Wisdom scores make it vulnerable in direct combat and against wisdom-based effects.",
+    "attacks": "Mangler attack deals slashing damage; Spike Ball attack can deal bludgeoning damage from a distance.",
+    "most_powerful_ability": "The Magic Eater ability allows it to consume magical items, potentially gaining their powers.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in dim light and darkness, which aids in its stealth.",
+    "skills": "Highly skilled in stealth and arcana, allowing for effective sneaking and magical identification.",
+    "additional_information": [
+        "Can mangle a target's hand on a critical hit, rendering it useless for a time.",
+        "Acts unpredictably upon being reduced to zero hit points due to its explosive death ability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small sneaky creature that eats magic",
+        "explosive humanoid with stealth abilities",
+        "Yobbo magic eater with ambush tactics",
+        "spell-consuming small humanoid creature",
+        "creature that explodes and casts spells"
+    ]
+}

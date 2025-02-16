@@ -1,0 +1,51 @@
+{
+    "name": "Catamount",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 117,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "earth manipulation",
+        "control",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "aggressive",
+        "physical"
+    ],
+    "description": "The Catamount is a large, robust creature with exceptional physical strength and notable earth-manipulating abilities. It features powerful claws and a biting jaw, making it a fierce predator.",
+    "memorable": "Its ability to manipulate terrain with earth-based powers makes it a strategic combatant, adapting the battlefield to its advantage.",
+    "goals": "To assert dominance in its territory and control the battlefield by using its abilities to manipulate the environment.",
+    "relations": "May be encountered with other earth-affine creatures or beasts that thrive in rough terrains.",
+    "environment": "Often found in rugged and hilly terrains where it can utilize its earth manipulation abilities.",
+    "strengths": "Possesses high hit points and strong physical attacks, along with unique terrain control abilities.",
+    "weaknesses": "Low intelligence and charisma; vulnerable to magic due to low AC.",
+    "attacks": "Capable of a multiattack featuring a strong bite and lethal claw strikes.",
+    "most_powerful_ability": "Control Earth allows it to create barriers and rifts, controlling movement and positioning of foes effectively.",
+    "equipment": null,
+    "senses": "Has tremorsense within 30 feet, allowing it to detect creatures through vibrations in the ground.",
+    "skills": null,
+    "additional_information": [
+        "Can create a Stone Wall to block enemy movement.",
+        "Can form a Fissure that traps opponents within its area.",
+        "The Well-Grounded ability makes it hard to knock down.",
+        "Its Tremors ability can damage and knock foes prone.",
+        "Relatively low Armor Class makes it susceptible to targeted attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster that manipulates the earth",
+        "fierce predator with terrain control",
+        "monster that knocks foes prone with tremors",
+        "aggressive large beast with strong claws",
+        "earth-shaping creature in rocky environments"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant, Shire",
+    "queries": [
+        {
+            "query": "huge evil giant with pitchfork abilities",
+            "variant": "huge giant evil that uses pitchfork attacks"
+        },
+        {
+            "query": "strong giant that throws smaller creatures",
+            "variant": "powerful giant that can throw medium or smaller foes"
+        },
+        {
+            "query": "monster with high constitution and low dexterity",
+            "variant": "creature with exceptional constitution but poor dexterity"
+        },
+        {
+            "query": "giant that is effective in melee combat and has a grapple ability",
+            "variant": "a giant that excels in melee and can grapple opponents"
+        },
+        {
+            "query": "lawful evil giant living in a battlefield environment",
+            "variant": "evil giant of lawful nature found on the battlefield"
+        }
+    ]
+}

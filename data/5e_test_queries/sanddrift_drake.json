@@ -1,0 +1,25 @@
+{
+    "name": "Sanddrift Drake",
+    "queries": [
+        {
+            "query": "large dragon that lives in sandy terrain and can burrow",
+            "variant": "large drake that digs in sand and lives in desert"
+        },
+        {
+            "query": "agile monster with fire immunity that ambushes in the desert",
+            "variant": "stealthy creature immune to fire that surprises in sandy areas"
+        },
+        {
+            "query": "sand drake with strong Dexterity and dangerous bite attack",
+            "variant": "drake with high agility and harmful bite that lives in sand"
+        },
+        {
+            "query": "dragon that uses Heatwave Breath and can hide in sand",
+            "variant": "dragon that breathes fire and becomes invisible in sandy terrain"
+        },
+        {
+            "query": "creature with high Constitution and paralysis ability found in deserts",
+            "variant": "desert monster with strong resilience and ability to paralyze its foes"
+        }
+    ]
+}

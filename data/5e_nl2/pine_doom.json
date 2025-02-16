@@ -1,0 +1,51 @@
+{
+    "name": "Pine Doom",
+    "creature_type": "Plant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 172,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush predator",
+        "giant"
+    ],
+    "adjectives": [
+        "formidable",
+        "sticky",
+        "cunning"
+    ],
+    "description": "The Pine Doom resembles a colossal pine tree, blending seamlessly into the forest when motionless, while possessing a powerful physical presence indicated by its large size and strength.",
+    "memorable": "This creature can disguise itself as a tree, grapples foes with sticky pine tar, and is exceptionally dangerous to structures, making it a serious threat in wooded areas.",
+    "goals": "The Pine Doom typically aims to ambush unsuspecting creatures and defend its territory from intruders, often lurking motionless until its prey approaches.",
+    "relations": "Pine Doom might be found in the company of other forest-dwelling creatures or allies who seek to protect the woodland.",
+    "environment": "Usually found in forested areas, particularly where it can effectively camouflage with other trees.",
+    "strengths": "It has exceptional damage output against structures, and its grappling ability limits enemy actions, providing strategic control over battlefield movement.",
+    "weaknesses": "Vulnerable to fire damage, which can exploit its weaknesses despite its resistances to bludgeoning and piercing.",
+    "attacks": "The Pine Doom can unleash multiple slam attacks, utilize sap-filled pinecones to restrain foes, or unleash a flurry of pinecones in a potent area damage attack.",
+    "most_powerful_ability": "The Siege Monster ability allows it to deal double damage to structures, making it particularly dangerous in combat within fortified locations.",
+    "senses": "Possesses a high passive perception score of 17, making it very aware of its surroundings.",
+    "skills": "Skilled in Nature and Perception, allowing it to navigate and control its forest environment effectively.",
+    "additional_information": [
+        "Can confuse and restrict enemies with sticky pine tar.",
+        "Can remain motionless to camouflage effectively as a tree.",
+        "Requires specific actions or conditions to remove stuck weapons.",
+        "Grappling ability limits enemy actions significantly.",
+        "Inflicts area damage as an attack, adding to its threat level."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge ambush predator in the forest",
+        "cunning tree monster with sticky tar",
+        "plant creature that grapples enemies with tar",
+        "siege monster that deals double damage",
+        "camouflaged tree that attacks with pinecones"
+    ]
+}

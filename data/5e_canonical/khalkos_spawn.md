@@ -1,6 +1,8 @@
 <MonsterName/>Khalkos Spawn</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>2</CR>
+<AC/>16</AC>
+<HP/>27</HP>
 <summary>The Khalkos Spawn is a tiny aberration known for its cunning and strategic approach in combat. With an Armor Class of 16 and a total of 27 hit points, it combines decent protection with moderate durability, making it a formidable opponent despite its small size. While its Challenge Rating of 2 indicates that it is suitable for low-level encounters, its 18 Intelligence grants it a high level of cunning and tactical awareness. The creature’s impressive Dexterity score allows it to evade attacks effectively, making it quite mobile with a walking speed of 30 feet and a flying speed of 30 feet. Notably, the Khalkos Spawn has abilities that manipulate the battlefield and confuse its foes, giving it an edge in tactical scenarios. However, its physical strength is significantly lacking, with a Strength score of 6, making it reliant on its other attributes and abilities for effectiveness in combat.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The "Sting" attack allows it to make a melee weapon attack that has a +5 to hit 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Khalkos Spawn
 
 *Tiny* *Aberration*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) poison damage.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Goblin",
+    "queries": [
+        {
+            "query": "small green humanoid found in caves and forests that uses stealth",
+            "variant": "green small humanoid that lives in caves and forests and is very stealthy"
+        },
+        {
+            "query": "crafty monster known for ambush tactics and low hit points",
+            "variant": "sneaky creature famous for ambushes with low hit points"
+        },
+        {
+            "query": "goblin that coordinates attacks with its group and has darkvision",
+            "variant": "goblin that attacks in groups and can see in the dark"
+        },
+        {
+            "query": "humanoid creature with high dexterity and a penchant for hit-and-run tactics",
+            "variant": "humanoid with great agility and a love for quick attacks"
+        },
+        {
+            "query": "small trickster that uses bows and melee weapons for combat",
+            "variant": "little trickster using both bows and melee weapons in fights"
+        }
+    ]
+}

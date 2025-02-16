@@ -1,6 +1,8 @@
 <MonsterName/>Urochar</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>17</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>256</HP>
 <summary>The Urochar is a formidable creature from the realm of aberrations, epitomizing chaotic evil with its terrifying presence and unique abilities. It stands out as a huge monster, making it physically imposing in battle. With a high Armor Class of 19 due to its natural armor and impressive Hit Points totaling 256, the Urochar is designed to withstand significant damage. It has exceptional Strength of 24, providing powerful melee attacks, and it excels in grappling with its tentacles. While it possesses notable Dexterity and Charisma, its true strengths lie in its damage immunities and resistances, making it a resilient adversary. The Urochar also features various abilities that can control the battlefield, instill fear, and disable opponents, but relies heavily on its ability to grapple and maintain control of its targets. Adventurers must tread carefully, as it can quickly shift the tide of battle in its favor with its psychic abilities and paralyzing effects.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Urochar also has a bonus action called "Hidden Step," allowing it to magical
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Urochar
 
 *Huge* *Aberration* *Chaotic Evil*
@@ -59,5 +62,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Hidden Step:** The urochar magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see and takes the Hide action. Grappled creatures are no longer grappled and don’t teleport with it.
+</statblock>
 
 

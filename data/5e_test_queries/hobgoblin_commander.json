@@ -1,0 +1,25 @@
+{
+    "name": "Hobgoblin Commander",
+    "queries": [
+        {
+            "query": "humanoid leader in heavy armor that commands allies",
+            "variant": "leader in heavy armor who commands allies humanoid"
+        },
+        {
+            "query": "tactical combat leader with darkvision and battlefield control",
+            "variant": "combat leader with darkvision and battlefield control tactics"
+        },
+        {
+            "query": "Hobgoblin commander with supportive abilities and good armor",
+            "variant": "commander hobgoblin with good armor and supportive abilities"
+        },
+        {
+            "query": "medium humanoid with a Greatsword and leadership skills",
+            "variant": "humanoid medium with leadership skills and a Greatsword"
+        },
+        {
+            "query": "battlefield strategist who grants temporary hit points to allies",
+            "variant": "strategist on the battlefield providing temporary hit points to allies"
+        }
+    ]
+}

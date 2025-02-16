@@ -1,0 +1,53 @@
+{
+    "name": "Will-o-Wisp",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Tiny",
+    "hp": 22,
+    "ac": 19,
+    "srd": true,
+    "cr": "2",
+    "movement": "fly 50 ft. (hover)",
+    "role": "null",
+    "tags": [
+        "undead",
+        "spirit",
+        "elusive",
+        "light"
+    ],
+    "adjectives": [
+        "ethereal",
+        "mischievous",
+        "malevolent"
+    ],
+    "description": "A small, floating orb of light that lures travelers into dangerous areas like swamps or bogs.",
+    "memorable": "It feeds on the fear and despair of victims and can control its glow, making it nearly invisible.",
+    "goals": "To lure and trap lost travelers into danger for sustenance.",
+    "relations": "Often found haunting graveyards, marshes, or cursed lands, leading victims to their doom.",
+    "environment": "Dark and eerie locations, such as graveyards and marshes.",
+    "strengths": "Incredibly fast and elusive, with high dexterity and multiple immunities.",
+    "weaknesses": "Physically weak with a very low strength score.",
+    "attacks": "It can deliver deadly shocks of electrical energy to those who touch it or engage it in melee.",
+    "most_powerful_ability": "Conductive ability inflicts lightning damage to creatures that touch it.",
+    "senses": "It has darkvision up to 120 feet, allowing it to navigate effectively in darkness.",
+    "skills": "Its high dexterity enables it to evade physical threats efficiently.",
+    "additional_information": [
+        "Requires neither air, sustenance, nor sleep.",
+        "Can alter its glow to change visibility or evade detection.",
+        "Senses treasure within a considerable range of 500 feet.",
+        "Incorporeal movement allows it to pass through objects.",
+        "Can become invisible until it attacks or uses a specific ability."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small glowing undead creature in swamps",
+        "ethereal spirit that lures travelers to danger",
+        "ghostly orb that shocks its victims",
+        "invisible creature that feeds on fear",
+        "malevolent wisp haunting graveyards"
+    ]
+}

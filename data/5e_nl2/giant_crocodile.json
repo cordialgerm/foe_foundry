@@ -1,0 +1,51 @@
+{
+    "name": "Giant Crocodile",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 85,
+    "ac": 14,
+    "srd": true,
+    "cr": "5",
+    "movement": "30 ft. walking, 50 ft. swimming",
+    "role": "Ambusher",
+    "tags": [
+        "aquatic",
+        "predator",
+        "beast",
+        "ambusher"
+    ],
+    "adjectives": [
+        "massive",
+        "predatory",
+        "territorial",
+        "aggressive"
+    ],
+    "description": "The Giant Crocodile is a massive, predatory reptile with a formidable presence, featuring powerful jaws and the ability to perform a deadly death roll. It is highly aggressive and excels in both aquatic and terrestrial environments.",
+    "memorable": "Its death roll ability allows it to spin and tear apart its prey, making it a terrifying presence in water.",
+    "goals": "To ambush and capture prey in its territory, defending its hunting grounds fiercely.",
+    "relations": "May be encountered alongside other aquatic predators or in the company of territorial creatures.",
+    "environment": "Lurks in rivers, swamps, and lakes.",
+    "strengths": "Exceptional strength with powerful bite and tail attacks; can immobilize prey.",
+    "weaknesses": "Low dexterity and intelligence, making it less agile and strategic.",
+    "attacks": "Multiattack with a powerful bite that grapples, and a long-reaching tail that can knock foes prone.",
+    "most_powerful_ability": "The death roll enhances its grappling ability, inflicting additional damage to restrained targets.",
+    "senses": "Has passive perception, allowing it to notice surroundings with average awareness.",
+    "skills": "Possesses above-average stealth capabilities, helping it ambush prey.",
+    "additional_information": [
+        "Can hold its breath for 30 minutes.",
+        "Highly territorial and aggressive towards intruders.",
+        "Jogging slowly on land due to low dexterity.",
+        "Capable of devastating damage with its bite and tail.",
+        "Once prey is grappled, the Giant Crocodile controls the combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive predatory river reptile",
+        "ambush predator in swamps and lakes",
+        "Giant Crocodile's death roll attack",
+        "aggressive territorial aquatic creature",
+        "grappling monster with powerful jaws"
+    ]
+}

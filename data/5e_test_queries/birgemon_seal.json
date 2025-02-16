@@ -1,0 +1,25 @@
+{
+    "name": "Birgemon Seal",
+    "queries": [
+        {
+            "query": "medium snow-loving aberration with gliding abilities",
+            "variant": "medium aberration that likes snow and can glide"
+        },
+        {
+            "query": "creature with underwater navigation and strong in Constitution",
+            "variant": "monster that can navigate underwater and has high Constitution"
+        },
+        {
+            "query": "monster that grapples its opponents and can slide on ice",
+            "variant": "creature that can pull grappled enemies and slides on ice"
+        },
+        {
+            "query": "Birgemon Seal abilities for cold environments and aquatic combat",
+            "variant": "abilities of Birgemon Seal for icy settings and underwater battles"
+        },
+        {
+            "query": "being that is immobile on snow and has a weak Intelligence",
+            "variant": "creature that cannot move on snow and has low Intelligence"
+        }
+    ]
+}

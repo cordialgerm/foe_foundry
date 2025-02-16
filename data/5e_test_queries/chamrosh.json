@@ -1,0 +1,25 @@
+{
+    "name": "Chamrosh",
+    "queries": [
+        {
+            "query": "flying celestial creature that heals and frightens evil beings",
+            "variant": "celestial flyer that frightens evil and heals companions"
+        },
+        {
+            "query": "medium celestial with good charisma and a fearsome bark attack",
+            "variant": "medium celestial that barks fear and has great charisma"
+        },
+        {
+            "query": "swift creature with keen senses that is resilient to fire damage",
+            "variant": "agile being with sharp senses that resists fire"
+        },
+        {
+            "query": "creature that communicates telepathically and can fly",
+            "variant": "being that can fly and has telepathic communication"
+        },
+        {
+            "query": "intelligent celestial with unique insight abilities and natural armor",
+            "variant": "celestial with natural armor and special insight abilities"
+        }
+    ]
+}

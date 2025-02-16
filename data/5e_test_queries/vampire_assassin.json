@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Assassin",
+    "queries": [
+        {
+            "query": "undead creature with charm abilities that thrives in dark environments",
+            "variant": "undead monster that has charm powers and loves darkness"
+        },
+        {
+            "query": "stealthy vampire that can turn into mist and assaults from shadows",
+            "variant": "vampire stealth assassin that shifts into mist and attacks from the shadows"
+        },
+        {
+            "query": "undead with high dexterity and regeneration abilities, often hiding in dark places",
+            "variant": "undead creature with great dexterity and healing, usually found in dark areas"
+        },
+        {
+            "query": "vampire with powerful melee attacks and the ability to charm its foes",
+            "variant": "vampire that deals heavy melee damage and can charm enemies"
+        },
+        {
+            "query": "creature susceptible to radiant damage that uses stealth and tactics in combat",
+            "variant": "monster weak to radiant damage that employs stealthy tactics in fights"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Wharfling",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Tiny",
+    "hp": 10,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "agile",
+        "stealthy",
+        "thief"
+    ],
+    "adjectives": [
+        "mischievous",
+        "tiny",
+        "fragile"
+    ],
+    "description": "The Wharfling is a tiny, agile beast that can navigate both land and water with ease. It is characterized by its exceptional dexterity, making it a clever thief in combat.",
+    "memorable": "Notable for its pilfering abilities and amphibious nature, allowing it to thrive in various environments.",
+    "goals": "To steal valuable items from unsuspecting targets using agility and stealth.",
+    "relations": "Might be encountered alone or in groups, often in the company of other mischievous or nimble creatures.",
+    "environment": "Thrives in areas where it can use its dexterity and stealth to pilfer items, such as urban locales or near bodies of water.",
+    "strengths": "High dexterity enhances evasion and agility, along with skills in Perception and Sleight of Hand.",
+    "weaknesses": "Fragile with low hit points and poor strength, making it vulnerable if caught.",
+    "attacks": "Uses its Pilfering Bite, dealing piercing damage or stealing an item from the target.",
+    "most_powerful_ability": "Amphibious ability allows it to breathe both air and water, giving it an edge in various environments.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive Perception score of 13, indicating heightened awareness.",
+    "skills": "Proficient in Perception and Sleight of Hand, enabling it to notice threats and steal items effectively.",
+    "additional_information": [
+        "Can steal items that weigh no more than 10 pounds.",
+        "Avoids direct confrontation due to its low hit points.",
+        "Relies on stealth tactics to survive and thrive.",
+        "Uses agility to escape threats after pilfering.",
+        "A cunning little creature that's often underestimated."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny agile thief that lives near water",
+        "small beast known for stealing items",
+        "mischievous creature with amphibious abilities",
+        "fragile thief that can navigate land and water",
+        "stealthy creature with a pilfering bite"
+    ]
+}

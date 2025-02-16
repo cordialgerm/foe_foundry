@@ -1,6 +1,8 @@
 <MonsterName/>Nian</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Nian is a large chaotic neutral monstrosity that embodies a blend of fear and power. With a robust constitution and formidable strength, this creature is capable of both engaging enemies directly and utilizing its unique abilities strategically in combat. One of its notable strengths lies in its speed and mobility, allowing it to quickly traverse various terrains, including climbing and swimming. However, its susceptibility to loud noises, fire, and the color red presents a significant weakness, which marks it as a creature that can be easily frightened if those elements are used effectively against it. The Nian presents a challenge at a Challenge Rating of 4, making it a suitable adversary for mid-level adventurers who may employ various tactics to exploit its fears.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ The Nian also has a special ability called Year's Termination, which it can use 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Nian
 
 *Large* *Monstrosity* *chaotic neutral*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Year's Termination (1/Day):** The nian creates magical darkness and silence around it in a 15-foot-radius sphere that moves with it and spreads around corners. The dark silence lasts as long as the nian maintains concentration, up to 10 minutes (as if concentrating on a spell). The nian sees objects in the sphere in shades of gray. Darkvision can't penetrate the darkness, no natural light can illuminate it, no sound can be created within or pass through it, and any creature or object entirely inside the sphere of dark silence is immune to thunder damage. Creatures entirely inside the darkness are deafened and can't cast spells that include a verbal component. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is destroyed.
 
 
+</statblock>
 
 

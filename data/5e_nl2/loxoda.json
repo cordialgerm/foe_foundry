@@ -1,0 +1,52 @@
+{
+    "name": "Loxoda",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 147,
+    "ac": 13,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "melee",
+        "crowd control"
+    ],
+    "adjectives": [
+        "powerful",
+        "devastating",
+        "brutal"
+    ],
+    "description": "The Loxoda is a huge monstrosity known for its exceptional strength and resilience, sporting a massive frame that slams down with devastating force.",
+    "memorable": "Its ability to create shockwaves with the Tooth-Rattling Pound can affect multiple creatures at once, making it particularly fearsome in battle.",
+    "goals": "The Loxoda typically seeks to dominate its territory and eliminate threats through overwhelming physical power.",
+    "relations": "Often encountered in the company of other monstrous creatures, the Loxoda may serve as a guardian of its domain.",
+    "environment": "Commonly found in rugged terrains and areas with plenty of space to maneuver due to its large size.",
+    "strengths": "High hit points and solid physical attacks make the Loxoda a formidable opponent in melee combat.",
+    "weaknesses": "Lower flexibility and intelligence limit its strategic maneuvers in combat situations.",
+    "attacks": "Multiattack featuring a devastating Slam and Spear, along with a Stomp that targets prone creatures.",
+    "most_powerful_ability": "Tooth-Rattling Pound, capable of causing widespread bludgeoning and thunder damage to creatures in a large radius.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 12, indicating reasonable awareness of its surroundings.",
+    "skills": "Proficient in Athletics and Survival, reflecting its prowess in physical tasks and natural instincts.",
+    "additional_information": [
+        "Strong constitution allowing it to soak up damage",
+        "Utilizes both melee and ranged attacks effectively",
+        "Can deal sustained area damage with Tooth-Rattling Pound",
+        "Experiences minimal impact from limited intelligence",
+        "Neutral evil alignment suggests a ruthless nature"
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge monster with devastating shockwave attack",
+        "powerful brute that creates shockwaves",
+        "monstrosity with strong melee attacks",
+        "creature that stomps for area bludgeoning damage",
+        "Loxoda characteristics and abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Star-Nosed Diopsid",
+    "queries": [
+        {
+            "query": "large aberration with a poisonous ability that transforms humanoids",
+            "variant": "big aberration that can poison and change humanoids into diopsids"
+        },
+        {
+            "query": "creature with stinger attacks that uses poison to control foes",
+            "variant": "monster that attacks with a stinger and uses venom to dominate enemies"
+        },
+        {
+            "query": "humanoid transforming poison creature found underground",
+            "variant": "underground poison creature that transforms humanoids"
+        },
+        {
+            "query": "lawful evil aberration known for mutagenic venom and grappling attacks",
+            "variant": "evil lawful aberration recognized for its venom and grappling abilities"
+        },
+        {
+            "query": "intelligent aberration that shrinks hit points and controls envenomed targets",
+            "variant": "smart aberration that reduces HP and manipulates poisoned targets"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wirbeln Fungi",
+    "queries": [
+        {
+            "query": "small plant creature that can camouflage as fungi and uses poison attacks",
+            "variant": "small plant being that hides as fungi and employs poison strikes"
+        },
+        {
+            "query": "stealthy plant monster with a poisonous spore ability living in hidden glades",
+            "variant": "sneaky plant creature having a poison spore power found in secluded groves"
+        },
+        {
+            "query": "fungus-like enemy that is good at stealth and can poison opponents",
+            "variant": "fungus-like foe skilled in stealth and capable of poisoning enemies"
+        },
+        {
+            "query": "lawful neutral creature that remains motionless and ambushes with poison",
+            "variant": "lawful neutral being that stays still and ambushes using poison"
+        },
+        {
+            "query": "creature with high dexterity and stealth skills that resembles ordinary fungus",
+            "variant": "monster with elevated dexterity and stealth abilities that looks like common fungus"
+        }
+    ]
+}

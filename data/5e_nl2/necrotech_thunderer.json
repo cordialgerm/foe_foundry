@@ -1,0 +1,53 @@
+{
+    "name": "Necrotech Thunderer",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "siege",
+        "powerful",
+        "slow"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "tireless",
+        "devastating"
+    ],
+    "description": "The Necrotech Thunderer is a massive, undead creature known for its imposing presence. It has high hit points and remarkable strength, which it uses to create chaos on the battlefield.",
+    "memorable": "With its ability to deal double damage to structures and powerful area effects, it poses a significant threat to foes unprepared for its strength.",
+    "goals": "To cause havoc on the battlefield and destroy structures.",
+    "relations": "Often encountered along with other undead creatures or employed by evil necromancers.",
+    "environment": "Typically found on battlefields, especially during sieges.",
+    "strengths": "High hit points, powerful melee attacks, and immunity to several damage types.",
+    "weaknesses": "Limited speed makes it vulnerable to ranged and magical attacks.",
+    "attacks": "Uses Trample attacks to deal heavy bludgeoning damage and has ranged necrotic abilities.",
+    "most_powerful_ability": "Concentrated Shot allows it to affect multiple targets with significant necrotic damage and possibly cause exhaustion.",
+    "senses": "Possesses blindsight up to 120 feet, allowing it to perceive its surroundings without relying on vision.",
+    "skills": "Has average perception skills, able to detect hidden foes effectively.",
+    "additional_information": [
+        "Immune to necrotic and poison damage",
+        "Resistant to nonmagic bludgeoning, piercing, and slashing damage",
+        "Advantage on saving throws against turn undead effects",
+        "Does not require food, drink, or sleep, allowing for relentless pursuit",
+        "Can perform multiattack with two Trample attacks"
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive undead creature with siege capabilities",
+        "slow but powerful monster that destroys structures",
+        "creature with area-effect necrotic attacks",
+        "undead monster that can trample foes",
+        "monster with blindsight and high strength"
+    ]
+}

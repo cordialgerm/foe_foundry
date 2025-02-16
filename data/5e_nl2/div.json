@@ -1,0 +1,54 @@
+{
+    "name": "Div",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 99,
+    "ac": 17,
+    "srd": false,
+    "cr": "5",
+    "movement": "moderate walking speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "spellcaster",
+        "ambusher"
+    ],
+    "adjectives": [
+        "small",
+        "noxious",
+        "cunning",
+        "treacherous"
+    ],
+    "description": "The Div is a Small Elemental creature with a form that suggests both adaptability and danger, often appearing with a noxious sludge-like appearance. It is well-protected with half plate armor and exudes a sense of menace.",
+    "memorable": "The Div has the ability to disintegrate upon death, leaving behind only its equipment, and has powerful spellcasting abilities that allow it to manipulate and ambush foes.",
+    "goals": "To serve as a formidable antagonist, using cunning and magical abilities to control battles and social encounters.",
+    "relations": "Other elemental creatures or beings aligned with the forces of chaos and malevolence.",
+    "environment": "Typically found in locations tainted by elemental chaos or in areas that are poorly lit, where its abilities can flourish.",
+    "strengths": "Possesses strong melee attacks, effective spellcasting, and tactics that can manipulate combat situations.",
+    "weaknesses": "Vulnerable to direct sunlight, which imposes disadvantages on attacks and vision-based checks.",
+    "attacks": "Claw attack dealing slashing and acid damage, Scimitar attacks for close-range engagements, and Noxious Blast as a powerful ranged option.",
+    "most_powerful_ability": "Noxious Sands, which can inflict heavy area damage and has the potential to debilitate multiple foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision which allows it to see in dim light and has a passive Perception of 14.",
+    "skills": "Has limited skill proficiency with a noticeable +1 in Perception.",
+    "additional_information": [
+        "Disintegrates into noxious sludge upon death, leaving no trace of its physical form.",
+        "Resistant to acid and fire damage, increasing its durability in combat.",
+        "Can change its appearance with Disguise Self, allowing for ambush tactics.",
+        "Capable of charming and manipulating foes with spells like Charm Person and Suggestion.",
+        "Uses tactical maneuvering to exploit its Sunlight Sensitivity weakness."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": "Can cast spells without material components, having access to illusions and manipulation spells at will as well as more powerful effects a few times a day.",
+    "test_queries": [
+        "small elemental with powerful spells and ambush tactics",
+        "treacherous creature that disintegrates upon death",
+        "noxious monster suitable for dark environments",
+        "elemental that weakens in sunlight",
+        "sneaky creature that can disguise itself and charm foes"
+    ]
+}

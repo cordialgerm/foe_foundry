@@ -1,0 +1,51 @@
+{
+    "name": "Bronze Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 17,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walk, 60 ft. fly, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "metallic"
+    ],
+    "adjectives": [
+        "young",
+        "agile",
+        "clever",
+        "honorable"
+    ],
+    "description": "The Bronze Dragon Wyrmling is a Medium dragon characterized by its bronze scales and a streamlined, agile body well-suited for both aerial and aquatic environments.",
+    "memorable": "It has a powerful breath weapon that deals lightning damage and can also manipulate the battlefield by pushing enemies away with its ocean surge attack.",
+    "goals": "Defend its territory, protect weaker creatures, and seek out honorable challenges.",
+    "relations": "Related to other dragons, particularly metallic dragons, and may serve as a guardian to good-aligned adventurers.",
+    "environment": "Commonly found near coastal areas, lakes, or rivers where it can thrive both in water and on land.",
+    "strengths": "Immunity to lightning damage, possesses significant mobility in land and water, and effective area damage potential with its breath weapons.",
+    "weaknesses": "Average Dexterity and lower intelligence compared to older dragons make it less nimble and clever.",
+    "attacks": "Makes a Bite attack dealing piercing damage and can execute breath attacks that inflict lightning damage or push foes away.",
+    "most_powerful_ability": "Lightning Breath allows it to unleash a potent attack in a line, dealing significant area damage.",
+    "senses": "Blindsight 10 ft. allows it to sense the presence of creatures nearby without relying on sight.",
+    "skills": "It has proficiency in Perception and Stealth, enhancing its abilities to notice hidden threats and navigate stealthily.",
+    "additional_information": [
+        "Amphibious trait allows breathing in air and water.",
+        "Pounce ability enables it to knock foes prone and follow-up attacks.",
+        "Breath weapon recharge mechanics add tactical considerations.",
+        "Effective in both land and aquatic combat due to versatile movement options.",
+        "Possesses high Charisma, aiding in social interactions."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "young dragon with powerful lightning breath",
+        "agile aquatic dragon that breathes electricity",
+        "bronze dragon with amphibious abilities",
+        "medium dragon with pounce attack",
+        "dragon known for area damage breath weapon"
+    ]
+}

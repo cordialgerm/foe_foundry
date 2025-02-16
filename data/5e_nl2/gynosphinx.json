@@ -1,0 +1,52 @@
+{
+    "name": "Gynosphinx",
+    "creature_type": "Monstrosity",
+    "alignment": "lawful neutral",
+    "size": "Large",
+    "hp": 204,
+    "ac": 17,
+    "srd": true,
+    "cr": "11",
+    "movement": "40 ft., fly 60 ft.",
+    "role": "Artillery",
+    "tags": [
+        "sphinx",
+        "magical",
+        "guardian",
+        "mysterious"
+    ],
+    "adjectives": [
+        "intelligent",
+        "powerful",
+        "aloof",
+        "formidable"
+    ],
+    "description": "The Gynosphinx has the body of a lioness and the head of a woman. It is a powerful and magical being that loves riddles and puzzles.",
+    "memorable": "Known for its psychic abilities and truesight, capable of rewarding cleverness or punishing failure.",
+    "goals": "Typically guards ancient temples or knowledge, testing those who seek to pass through its territory.",
+    "relations": "May serve alongside other sphinxes or magical guardians, acting as protectors of knowledge.",
+    "environment": "Often found in ancient ruins, temples, or secluded areas rich in history and magic.",
+    "strengths": "Possesses truesight allowing it to see through illusions, strong spellcasting abilities, and the power to manipulate minds.",
+    "weaknesses": "Low strength and dexterity may limit physical combat effectiveness.",
+    "attacks": "Claw attacks that deal slashing and psychic damage, and ranged psychic bolt attacks that can incapacitate foes.",
+    "most_powerful_ability": "Psychic Burst, sending out a burst of psychic energy that can incapacitate multiple creatures.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to perceive things as they truly are.",
+    "skills": "Highly proficient in Arcana, History, and Religion, showcasing its vast knowledge.",
+    "additional_information": [
+        "Immune to psychic damage and effects that sense emotions.",
+        "Can initiate a psychic connection to control others' actions.",
+        "Uses spells like augury and hallucinatory terrain for manipulation."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "9th-level spellcaster with a spell save DC of 17, capable of casting powerful spells to mislead and control.",
+    "test_queries": [
+        "intelligent monster that loves riddles",
+        "psychic lioness creature guarding ancient knowledge",
+        "large monster with the head of a woman",
+        "magic user that can teleport and manipulate minds",
+        "guardian of temples with powerful psychic attacks"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Arcanaphage</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>14</AC>
+<HP/>60</HP>
 <summary>The Arcanaphage is a Medium-sized monstrosity that dwells in the magical realms of Dungeons & Dragons, often serving as a formidable foe for adventurers seeking to harness arcane power. With a Challenge Rating of 4, it poses a significant threat due to its unique abilities centered around feeding on magical energy and countering spells. Its strengths lie in its speed and dexterity, allowing it to evade attacks and quickly close distances, as well as its powerful reactive abilities that can disrupt spellcasters. However, its low intelligence and lack of alignment make it less strategic in combat situations, relying heavily on its innate abilities to survive. The Arcanaphage's reliance on feeding to sustain itself can also be exploited by clever players who manage to keep their magical resources away from it.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ During combat, the Arcanaphage can take advantage of multiattack to make two ten
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Arcanaphage
 
 *Medium* *Monstrosity* *unaligned*
@@ -56,5 +59,6 @@ Source: 5e_artisinal_monsters
 - **Voracious:** The arcanaphage's tentacles glow when a spell is cast within 30 feet of it, countering the spell. This reaction works like the counterspell spell, except the arcanaphage must always make a spellcasting ability check, no matter the spell level. Its ability check for this is +5. If it successfully counters the spell, the arcanaphage feeds.
 
 
+</statblock>
 
 

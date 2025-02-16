@@ -1,0 +1,25 @@
+{
+    "name": "Venomous Mummy",
+    "queries": [
+        {
+            "query": "undead creature that uses poison and curses in combat",
+            "variant": "creature that is undead and uses poison along with curses in fights"
+        },
+        {
+            "query": "medium mummy with poisonous smoke ability and fire vulnerability",
+            "variant": "mummy that is medium-sized, has a poisonous smoke skill and is vulnerable to fire"
+        },
+        {
+            "query": "lawful evil mummy that inflicts ongoing poison damage and has resistance to nonmagical attacks",
+            "variant": "evil lawful mummy that causes continuous poison damage and resists nonmagical strikes"
+        },
+        {
+            "query": "creature with low Dexterity but high Strength that specializes in melee attacks",
+            "variant": "beast that has weak Dexterity but strong Strength focusing on hand-to-hand combat"
+        },
+        {
+            "query": "Venomous Mummy special abilities and characteristics in combat",
+            "variant": "abilities and traits of the Venomous Mummy during battles"
+        }
+    ]
+}

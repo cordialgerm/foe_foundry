@@ -1,0 +1,25 @@
+{
+    "name": "Duskthorn Dryad",
+    "queries": [
+        {
+            "query": "Fey creature with charm abilities that summons woodland allies",
+            "variant": "charm-using fey creature that can summon forest allies"
+        },
+        {
+            "query": "medium-sized dryad living in dead trees with powerful spells",
+            "variant": "medium dryad that utilizes spells and resides in dead trees"
+        },
+        {
+            "query": "creature that manipulates nature and communicates with plants",
+            "variant": "being that controls nature and speaks to plants"
+        },
+        {
+            "query": "Fey with high Charisma and proficiency in deception",
+            "variant": "Fey creature strong in deception and has a high charisma"
+        },
+        {
+            "query": "dryad with exceptional Dexterity that evades attacks",
+            "variant": "evading dryad that possesses exceptional dexterity"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Kobold, Leviathan Hunter</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>10</CR>
+<AC/>17 (Hardy Defense)</AC>
+<HP/>190</HP>
 <summary>The Kobold Leviathan Hunter is a medium-sized humanoid creature embodying chaotic neutral alignment. It serves as a formidable opponent in aquatic environments, adept at grappling larger creatures and utilizing a variety of magical weapon attacks. With an Armor Class of 17 and 190 hit points, it boasts considerable durability in battle. Its strengths lie in its ability to resist damage, excellent grappling skills, and advantageous combat tactics when working with allies. However, it is sensitive to sunlight, which imposes penalties on its attacks and perception checks. The Kobold exemplifies a dangerous combination of agility, strength, and intelligence on the battlefield.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ Overall, the Kobold Leviathan Hunter is a tactical combatant that excels in grap
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kobold, Leviathan Hunter
 
 *Medium* *Humanoid* *chaotic neutral*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Grappled Redirect:** If it is target of an attack it can see while grappling a creature it can hold the grappled creature in the way and the grappled creature becomes attack's target instead.
 
 
+</statblock>
 
 

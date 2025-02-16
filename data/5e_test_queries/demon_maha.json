@@ -1,0 +1,25 @@
+{
+    "name": "Maha",
+    "queries": [
+        {
+            "query": "medium fiend with frozen aura and deadly laughter",
+            "variant": "medium fiend that has a frozen aura and deadly laughter ability"
+        },
+        {
+            "query": "chaotic evil monster with high dexterity and cold immunity",
+            "variant": "chaotic evil creature possessing a high dexterity and immune to cold"
+        },
+        {
+            "query": "demon with telepathy and piercing attacks",
+            "variant": "demon possessing telepathy and capable of piercing attacks"
+        },
+        {
+            "query": "fiend that reduces speed with aura and laughs at foes",
+            "variant": "fiend which decreases speed with its aura and laughs at its enemies"
+        },
+        {
+            "query": "monster with resistance to fire and magical spells",
+            "variant": "creature resistant to fire and spells"
+        }
+    ]
+}

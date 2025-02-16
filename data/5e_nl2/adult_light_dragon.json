@@ -1,0 +1,56 @@
+{
+    "name": "Adult Light Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 212,
+    "ac": 17,
+    "srd": false,
+    "cr": "16",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "light",
+        "magical",
+        "mythical"
+    ],
+    "adjectives": [
+        "majestic",
+        "formidable",
+        "powerful",
+        "wisdom-filled",
+        "radiant"
+    ],
+    "description": "The Adult Light Dragon is a Huge, formidable creature that embodies the essence of light, showcasing an impressive array of physical attributes complemented by its majestic appearance.",
+    "memorable": "Its ability to traverse the Ethereal Plane and its powerful breath weapons make it a unique adversary, embodying the dual nature of beauty and danger.",
+    "goals": "To protect realms of light and goodness while acting as a formidable guardian against dark forces.",
+    "relations": "Often associated with celestial beings and other dragons, it can also be found alongside paladins or protective entities.",
+    "environment": "Typically found in celestial realms, high mountains, or areas suffused with radiant energy.",
+    "strengths": "Immunity to radiant damage, access to legendary actions, and the ability to frighten opponents make it a significant threat in combat.",
+    "weaknesses": "Vulnerability to magical attacks that bypass its resistances could be a notable disadvantage.",
+    "attacks": "Employs a multiattack strategy using its powerful bite, claws, and tail, alongside a frightful presence that intimidates its foes.",
+    "most_powerful_ability": "Breath weapon capable of unleashing devastating radiant energy in a large area or blinding opponents.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive perception of 19, enhancing its tactical awareness.",
+    "skills": "Expertise in areas of Arcana, Nature, Perception, Persuasion, and Religion showcases its extensive knowledge.",
+    "additional_information": [
+        "Ethereal Sight allows perception of both Material and Ethereal Planes.",
+        "Incorporeal Movement lets it traverse through objects effortlessly.",
+        "Legendary Resistance provides resilience against debilitating effects.",
+        "Void Traveler capability allows it to traverse through space without basic life sustenance.",
+        "Illumination creates bright light in a radius, reinforcing its thematic association with light."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "majestic radiant dragon",
+        "light-infused dragon",
+        "powerful ethereal creature",
+        "formidable guardian of light",
+        "giant dragon with radiant breath"
+    ]
+}

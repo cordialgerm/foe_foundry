@@ -1,0 +1,25 @@
+{
+    "name": "Inkling",
+    "queries": [
+        {
+            "query": "tiny construct that can learn spells and evade magic",
+            "variant": "small construct that learns spells and avoids magic"
+        },
+        {
+            "query": "agile magical creature with stealth abilities",
+            "variant": "quick magic creature that has stealth skills"
+        },
+        {
+            "query": "construct with magic resistance and high dexterity",
+            "variant": "creature with dexterity and resistance to magic"
+        },
+        {
+            "query": "inkling with the ability to redirect spells and cast magic",
+            "variant": "ink creature that can redirect magic and cast spells"
+        },
+        {
+            "query": "fragile creature that can fit through narrow spaces and has blindsight",
+            "variant": "delicate monster that can move through tight spots and has blindsight"
+        }
+    ]
+}

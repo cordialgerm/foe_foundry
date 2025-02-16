@@ -1,0 +1,51 @@
+{
+    "name": "Ogre, Alleybasher",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 85,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "melee",
+        "chaotic",
+        "brute"
+    ],
+    "adjectives": [
+        "large",
+        "terrifying",
+        "intimidating"
+    ],
+    "description": "The Alleybasher Ogre is a large, chaotic evil giant known for its intimidating presence and brute strength. It wears studded leather armor and exhibits a raw, powerful build.",
+    "memorable": "The Alleybasher's ability to knock opponents prone and blind them with a cloud of sand and rocks makes it a dangerous foe.",
+    "goals": "Typically seeks to impose its will through intimidation and overwhelming strength, often working in service of a more intelligent leader.",
+    "relations": "May encounter other ogres or be allied with less intelligent giants and chaotic creatures.",
+    "environment": "Usually found in urban areas, specifically alleys or ruins, where it can leverage its imposing figure.",
+    "strengths": "High Strength score enables powerful melee attacks and damage output, along with a good pool of hit points.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma scores suggest a lack of strategic thinking and social finesse.",
+    "attacks": "Can make two powerful fist attacks or throw bricks to engage enemies at range, adding to its brute force tactics.",
+    "most_powerful_ability": "Handful of Sandy Rocks allows it to hinder multiple foes with blinding sand and bludgeoning damage.",
+    "equipment": "Wears studded leather armor.",
+    "senses": "Possesses darkvision to see in darkness up to 60 feet.",
+    "skills": "Has a poor perception score of -2, making it notably unobservant.",
+    "additional_information": [
+        "Uses Strength modifier for Intimidation checks.",
+        "Can borrow saving throw modifiers from superiors.",
+        "Capable of delivering devastating melee attacks.",
+        "Can knock enemies prone with successful attacks.",
+        "Intimidating Rebuff can disrupt enemy attacks."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large intimidating giant with powerful melee attacks",
+        "chaotic evil ogre that knocks enemies prone",
+        "brute strength giant using throwing bricks",
+        "ogre that blinds foes with sand and rocks",
+        "enforcer ogre working for a boss"
+    ]
+}

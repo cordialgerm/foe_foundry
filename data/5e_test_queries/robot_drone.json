@@ -1,0 +1,25 @@
+{
+    "name": "Robot Drone",
+    "queries": [
+        {
+            "query": "small flying construct with high armor class and flame attack",
+            "variant": "tiny construct that can fly, has a high AC, and a fire attack"
+        },
+        {
+            "query": "agile scouting robot that emits fuel fumes and has electric vulnerability",
+            "variant": "scouting robot that's agile, leaves fumes behind, and is vulnerable to electricity"
+        },
+        {
+            "query": "tiny drone immune to poison and can make ranged attacks",
+            "variant": "small drone that is immune to poison and can do ranged attacks"
+        },
+        {
+            "query": "mechanical construct with good stealth and darkvision",
+            "variant": "robotic construct that has darkvision and excels in stealth"
+        },
+        {
+            "query": "drone that does not require food and has poor strength",
+            "variant": "robot that doesn't need food and has a very low strength score"
+        }
+    ]
+}

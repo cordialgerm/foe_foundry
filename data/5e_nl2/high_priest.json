@@ -1,0 +1,53 @@
+{
+    "name": "High Priest",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 82,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "spellcaster",
+        "support",
+        "healer"
+    ],
+    "adjectives": [
+        "powerful",
+        "versatile",
+        "observant"
+    ],
+    "description": "The High Priest is a resilient spellcaster with high Wisdom and Charisma, wielding a mace and capable of summoning radiant damage.",
+    "memorable": "The ability to expend spell slots for extra radiant damage enhances their melee capabilities.",
+    "goals": "Provides healing and support, challenging enemies with control and area damage spells.",
+    "relations": "Often found alongside followers or other clerics, potentially serving a deity.",
+    "environment": "Typically found in temples, sanctuaries, or during divine missions.",
+    "strengths": "High saving throw bonuses and an array of powerful healing and damage spells.",
+    "weaknesses": "Average Dexterity makes them somewhat slow and less mobile in combat.",
+    "attacks": "Utilizes a mace for melee attacks, with the option to add radiant damage based on spell slots.",
+    "most_powerful_ability": "Flame Strike deals significant area damage with both fire and radiant effects.",
+    "equipment": "Wields a mace for physical attacks.",
+    "senses": "Passive Perception of 14 indicates they are particularly observant.",
+    "skills": "Proficient in medicine, insight, and religion, making them effective in social and healing situations.",
+    "additional_information": [
+        "High Wisdom allows for strong spellcasting and resilience.",
+        "Can prepare a wide array of cleric spells for versatility.",
+        "Excels at controlling the battlefield with spells like Hold Person and Guardian of Faith.",
+        "Casts Healing Word for quick healing as a bonus action.",
+        "Can target multiple creatures with area spells like Flame Strike."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": "An 11th-level spellcaster with a wide variety of cleric spells, leveraging Wisdom for spellcasting.",
+    "test_queries": [
+        "powerful cleric spellcaster",
+        "high wisdom healer with area control",
+        "medium humanoid with radiant spells",
+        "priest that heals and deals radiant damage",
+        "versatile spellcaster with strong saving throws"
+    ]
+}

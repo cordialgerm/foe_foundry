@@ -1,0 +1,54 @@
+{
+    "name": "Deep Gnome (Svirfneblin)",
+    "creature_type": "Humanoid",
+    "creature_subtype": "gnome",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 16,
+    "ac": 15,
+    "srd": false,
+    "ac_description": "chain shirt",
+    "cr": "1/2",
+    "movement": "20 ft.",
+    "role": null,
+    "tags": [
+        "gnome",
+        "underdark",
+        "stealth",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "small",
+        "stealthy",
+        "cunning",
+        "magical"
+    ],
+    "description": "A small humanoid with earthy skin tones, a subtle gnome's features, wearing a chain shirt. Often seen in rocky environments.",
+    "memorable": "Possesses innate spellcasting abilities and is incredibly stealthy in rocky terrain.",
+    "goals": "To explore, gather knowledge and defend their home against threats.",
+    "relations": "May encounter other gnomes, underground creatures, or members of the Underdark factions.",
+    "environment": "Typically found in the Underdark, especially in rocky areas.",
+    "strengths": "Advantage on stealth checks in rocky terrain and saving throws against magic.",
+    "weaknesses": "Lower Charisma may hinder social interactions.",
+    "attacks": "Uses a war pick or poisoned darts to deal piercing damage and inflict poison.",
+    "most_powerful_ability": "Innate spellcasting allows access to spells like blindness/deafness and nondetection.",
+    "equipment": "Wields a war pick and carries poisoned darts.",
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Skilled in Investigation and Stealth, making it adept at hiding and searching.",
+    "additional_information": [
+        "Stone Camouflage for hiding in rocky terrain",
+        "Advantage on certain saving throws against magic",
+        "Can cast several utility spells innately"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Can cast nondetection at will and has other spells available once per day.",
+    "test_queries": [
+        "stealthy dark gnome with spellcasting",
+        "small creature from the Underdark",
+        "gnome with poison darts and camouflage",
+        "magical stealthy gnome in rocky areas",
+        "creature that can become unseen in rocks"
+    ]
+}

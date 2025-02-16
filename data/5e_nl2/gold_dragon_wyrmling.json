@@ -1,0 +1,51 @@
+{
+    "name": "Gold Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 17,
+    "srd": true,
+    "cr": "3",
+    "movement": "30 ft. walk, 60 ft. fly, 30 ft. swim",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "metallic"
+    ],
+    "adjectives": [
+        "golden",
+        "majestic",
+        "formidable"
+    ],
+    "description": "A striking dragon with golden scales, known for its powerful presence.",
+    "memorable": "Versatile abilities including fire immunity and potent breath attacks make it a formidable foe.",
+    "goals": "Typically acts as a guardian or protector and may aid good-aligned adventurers.",
+    "relations": "May interact with other dragons and can serve as a youthful ally or adversary.",
+    "environment": "Found in mountainous regions or treasures hoards.",
+    "strengths": "Elemental fire immunity and powerful breath weapons create tactical combat options.",
+    "weaknesses": "While powerful, its intelligence and wisdom may limit strategic capabilities.",
+    "attacks": "Features a Bite attack for piercing damage and two breath weapons with area effects.",
+    "most_powerful_ability": "Breath weapons can either deal significant fire damage or weaken opponents significantly.",
+    "senses": "Has blindsight out to 10 feet, allowing it to detect hidden threats nearby.",
+    "skills": "Good at stealth with a +4 modifier, making it somewhat adept at remaining unnoticed.",
+    "additional_information": [
+        "Amphibious, breathes both air and water.",
+        "Pounce ability can knock foes prone for advantage.",
+        "Two different breath attacks for versatility.",
+        "Strong physical and social presence from high Charisma.",
+        "Resilient with a high Constitution."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "golden dragon with powerful breath attacks",
+        "majestic wyrmling that breathes fire and weakens foes",
+        "medium dragon with amphibious breathing and pounce attack",
+        "formidable dragon known for its fire immunity",
+        "gold dragon that protects treasure and fights bravely"
+    ]
+}

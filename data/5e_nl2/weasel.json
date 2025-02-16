@@ -1,0 +1,47 @@
+{
+    "name": "Weasel",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 13,
+    "srd": true,
+    "cr": "0",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "beast",
+        "small predator",
+        "stealthy"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "A small, slender mammal known for its agility and speed, the Weasel has sharp teeth and excels at sneaking and hunting small prey.",
+    "memorable": "Despite its size, it is a fierce hunter capable of stealing items from larger prey.",
+    "goals": "To hunt small prey and find food in its natural environment.",
+    "relations": "Weasels may be familiars to spellcasters and could be found in the same habitats as rodents and birds.",
+    "environment": "Forests, grasslands, and other natural environments.",
+    "strengths": "Exceptional agility and stealth allow it to avoid detection and capture small prey.",
+    "weaknesses": "Extremely low hit points and weak strength limit its combat effectiveness.",
+    "attacks": "It can make a Bite attack that deals minor piercing damage but has the unique ability to steal small items.",
+    "most_powerful_ability": "Keen Hearing and Smell provides advantage on Perception checks based on those senses.",
+    "senses": "Heightened Hearing and Smell allowing a perception score of 18 when relying on these senses.",
+    "skills": "Has good stealth and perception skills, making it effective at sneaking and detecting hidden threats.",
+    "additional_information": [
+        "Can steal items weighing 5 pounds or less from targets instead of dealing damage.",
+        "Fragile with only 1 hit point.",
+        "Makes an effective scout due to its agility and keen senses."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small stealthy predator in the grasslands",
+        "agile creature known for stealing items",
+        "tiny creature with keen senses and high stealth",
+        "slender animal that hunts rodents and birds",
+        "weasel with keen hearing and smell"
+    ]
+}

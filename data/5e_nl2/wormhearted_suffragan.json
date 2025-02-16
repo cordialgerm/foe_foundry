@@ -1,0 +1,52 @@
+{
+    "name": "Wormhearted Suffragan",
+    "creature_type": "Undead",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 120,
+    "ac": 13,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "necromancer",
+        "disease",
+        "paralysis"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evil",
+        "resilient",
+        "agile"
+    ],
+    "description": "A medium-sized undead creature with the ability to control lesser undead and inflict diseases on its enemies.",
+    "memorable": "Has the unique ability to raise humanoids it has killed as skeletons or zombies, forming a small army.",
+    "goals": "To spread disease and chaos, utilizing its control over the undead.",
+    "relations": "Often encountered with other undead creatures; potentially serves more powerful undead beings.",
+    "environment": "Commonly found in graveyards, ruins, or dark, decaying locations.",
+    "strengths": "Magic Resistance makes it hard to control with magic; can create an army of undead.",
+    "weaknesses": "Vulnerable to radiant damage, indicating a significant weakness to holy magic.",
+    "attacks": "Can use a Worm-Coated Fist attack that deals bludgeoning and necrotic damage, or a ranged Paralyzing Bolt attack.",
+    "most_powerful_ability": "Master of Undeath allows it to animate dead humanoids, adding to its army of undead.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive Perception of 13, allowing it to be aware of its surroundings.",
+    "skills": "Proficient in Medicine and Religion, giving it an edge in healing and knowledge about the undead.",
+    "additional_information": [
+        "Immunity to necrotic damage and poison, showcasing its undead nature.",
+        "Cannot be poisoned, adding to its resilience.",
+        "Does not require air, food, drink, or sleep due to its Undead Nature."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead master who raises skeletons",
+        "creature that inflicts diseases and paralysis",
+        "medium undead with strong necrotic abilities",
+        "resilient undead that commands lesser zombies",
+        "chaotic evil creature with magic resistance"
+    ]
+}

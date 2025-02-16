@@ -1,0 +1,51 @@
+{
+    "name": "Lycanthrope, Werecrocodile",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 58,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "werecrocodile",
+        "lycanthrope",
+        "humanoid",
+        "crocodile"
+    ],
+    "adjectives": [
+        "adaptable",
+        "ferocious",
+        "intelligent"
+    ],
+    "description": "The Werecrocodile is a robust humanoid creature with the ferocity and features of a crocodile, able to switch between humanoid and crocodilian forms, characterized by its sharp teeth and powerful tail.",
+    "memorable": "Its ability to grapple humanoids and potentially curse them with lycanthropy makes it particularly dangerous.",
+    "goals": "The Werecrocodile often preys on unsuspecting victims and may seek to spread its lycanthropy.",
+    "relations": "Related to other lycanthropes and may associate with swamp creatures or similar predators.",
+    "environment": "Commonly found in swamps, rivers, or other water bodies.",
+    "strengths": "Possesses resilience and versatility in attack methods, able to adapt its strategy based on form.",
+    "weaknesses": "Vulnerable to silvered weapons, which can bypass its damage immunities.",
+    "attacks": "Can perform a Multiattack with a combination of biting and tail swiping, or using a Khopesh.",
+    "most_powerful_ability": "The bite attack can grapple opponents and if they are humanoids, they may be cursed with lycanthropy.",
+    "equipment": "Wields a Khopesh in humanoid form, capable of dealing significant slashing damage.",
+    "senses": null,
+    "skills": "Has a very low passive Perception of 0.",
+    "additional_information": [
+        "Can hold its breath underwater for 15 minutes.",
+        "Can revert to true form upon death.",
+        "Can transform into a large crocodile.",
+        "Grappling ability restricts the target's movement.",
+        "Employs underwater stealth effectively."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid crocodile with lycanthropy abilities",
+        "adaptable swamp predator that transforms",
+        "ferocious hybrid with grappling bite",
+        "crocodile monster with a powerful tail",
+        "werecrocodile that can curse humanoids"
+    ]
+}

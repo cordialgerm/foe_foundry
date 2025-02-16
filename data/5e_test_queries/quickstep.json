@@ -1,0 +1,25 @@
+{
+    "name": "Quickstep",
+    "queries": [
+        {
+            "query": "small fey creature with exceptional speed and evasion",
+            "variant": "fey creature that is small and has incredible speed and agility"
+        },
+        {
+            "query": "quick and agile fey that uses cold damage attacks",
+            "variant": "fast and nimble fey that attacks with ice damage"
+        },
+        {
+            "query": "neutral evil fey that excels in deception and intimidation",
+            "variant": "fey with neutral evil nature that is great at intimidation and deception"
+        },
+        {
+            "query": "swift fey creature that becomes harder to hit after moving",
+            "variant": "fey creature that is swift and difficult to land hits on after moving"
+        },
+        {
+            "query": "fey with the ability to paralyze targets and evade attacks",
+            "variant": "fey creature that can paralyze foes and dodge incoming attacks"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Scorpion",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "10 feet walking",
+    "role": "null",
+    "tags": [
+        "predatory",
+        "venomous",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "poisonous",
+        "stealthy"
+    ],
+    "description": "A small, predatory arachnid with pincers and a venomous stinger, blending into its arid surroundings.",
+    "memorable": "Capable of delivering a venomous sting that poses a greater threat to small creatures.",
+    "goals": "To hunt and capture prey using its pincers and stinger.",
+    "relations": "Related to larger versions such as Giant Scorpions that are more deadly.",
+    "environment": "Typically found in deserts and arid environments.",
+    "strengths": "Stealthy hunter with a potentially deadly venom.",
+    "weaknesses": "Extremely low hit points and physical attributes.",
+    "attacks": "Delivers a sting that inflicts piercing damage followed by poison damage.",
+    "most_powerful_ability": "Sting attack dealing both piercing and poison damage.",
+    "senses": "Possesses blindsight up to 10 feet, allowing it to perceive surroundings without sight.",
+    "skills": "Lacks noteworthy skill proficiencies.",
+    "additional_information": [
+        "Weak in physical contests due to low strength.",
+        "Can pose a nuisance, potentially swarming players.",
+        "Effective against small creatures more than larger adventurers.",
+        "Blends into surroundings, making it difficult to spot.",
+        "Low challenge rating, suitable for inexperienced adventurers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny venomous monster in the desert",
+        "stealthy arachnid with a stinger",
+        "predatory scorpion with poison effects",
+        "small creature that blends into surroundings",
+        "desert scorpion with pincers and venom"
+    ]
+}

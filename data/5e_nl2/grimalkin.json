@@ -1,0 +1,50 @@
+{
+    "name": "Grimalkin",
+    "creature_type": "Monstrosity",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 50 ft., climb 40 ft.",
+    "role": null,
+    "tags": [
+        "stealthy",
+        "adaptable",
+        "quick"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "versatile"
+    ],
+    "description": "The Grimalkin is a Medium monstrosity that can shift forms between a small cat and a larger panther, showcasing its agility and adaptability.",
+    "memorable": "Its ability to shapeshift offers strategic advantages, allowing it to adapt in various situations while maintaining its original statistics.",
+    "goals": "Primarily uses stealth and agility to track prey and engage in combat.",
+    "relations": "May be encountered alongside other stealthy creatures or serve as companions to cunning characters.",
+    "environment": "Typically found in areas where it can utilize its stealth, such as forests or urban environments.",
+    "strengths": "Possesses keen senses, particularly a heightened sense of smell, and a strong stealth ability.",
+    "weaknesses": "Very low Intelligence limits its ability in complex interactions and spellcasting.",
+    "attacks": "Can deliver slashing damage with claws and piercing damage with bite attacks, leveraging speed for tactical advantages.",
+    "most_powerful_ability": "The ability to shapeshift, allowing it to switch forms and utilize tactics based on its surroundings.",
+    "equipment": null,
+    "senses": "Has keen smell, granting it advantage on Perception checks that rely on its sense of smell.",
+    "skills": "Adept in stealth, with a +5 to hit in stealth checks.",
+    "additional_information": [
+        "Bite attack becomes easier against prone targets.",
+        "Can charge targets for tactical advantages in combat.",
+        "Automatic reversion to true form upon death.",
+        "High Dexterity supports its stealth capabilities.",
+        "Moderate Constitution allows it to withstand some damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "quick and cunning shapeshifting creature",
+        "stealthy panther-like monster",
+        "versatile monster that can become a cat",
+        "agile creature with keen senses in dark",
+        "monster with powerful bite against prone foes"
+    ]
+}

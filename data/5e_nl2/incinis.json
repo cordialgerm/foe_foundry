@@ -1,0 +1,53 @@
+{
+    "name": "Incinis",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 171,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "fire",
+        "magma"
+    ],
+    "adjectives": [
+        "formidable",
+        "destructive",
+        "fire-resistant",
+        "resilient"
+    ],
+    "description": "The Incinis is a large elemental creature embodying magma and fire, with a fiery appearance that can inflict damage on contact.",
+    "memorable": "Its ability to cause continuous fire damage when touched makes it a risky opponent to engage in close combat.",
+    "goals": "Engage adventurers in battle, using its fiery abilities to dominate the battlefield.",
+    "relations": "May be encountered alongside other fire elementals or creatures that thrive in volcanic environments.",
+    "environment": "Typically found in volcanic regions or places with intense heat.",
+    "strengths": "Immunity to fire and poison damage, high Dexterity for agility, and high HP for resilience.",
+    "weaknesses": "Average mental statistics may limit tactical complexity; weakness against cold damage.",
+    "attacks": "Can make two magma fist attacks that deal substantial bludgeoning and fire damage, as well as unleash a powerful wave of magma.",
+    "most_powerful_ability": "Wave of Magma, which allows it to move as a wave of lava, dealing significant fire damage and controlling enemy positioning.",
+    "equipment": null,
+    "senses": "Has darkvision allowing it to see in darkness up to 60 feet.",
+    "skills": "It possesses exceptional Dexterity and Constitution, enhancing its combat performance.",
+    "additional_information": [
+        "Can move through very narrow spaces easily due to its Magma Form.",
+        "Inflicts damage to those who attempt to engage in melee combat with it.",
+        "Can resist various conditions, making it harder to incapacitate.",
+        "Presents a significant threat due to its ability to control the battlefield.",
+        "Immunities provide it with tactical advantages in prolonged encounters."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature that embodies magma and fire",
+        "fire elemental with continuous damage abilities",
+        "large elemental that controls the battlefield",
+        "magma monster with bludgeoning and fire attacks",
+        "fire-resistant creature found in volcanic regions"
+    ]
+}

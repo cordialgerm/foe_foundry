@@ -1,0 +1,25 @@
+{
+    "name": "Ahu-Nixta Drudge",
+    "queries": [
+        {
+            "query": "creature with clockwork armor that flies and casts fear",
+            "variant": "creature that uses clockwork armor, can fly, and uses fear"
+        },
+        {
+            "query": "medium-sized aberration immune to poison with whirring blades",
+            "variant": "medium aberration that is immune to poison and has whirring blades"
+        },
+        {
+            "query": "neutral evil monster with darkvision and spellcasting abilities",
+            "variant": "monster that is neutral evil with darkvision and can cast spells"
+        },
+        {
+            "query": "tough armored creature that relies on clockwork and fears",
+            "variant": "armored tough creature that uses clockwork and has fear spells"
+        },
+        {
+            "query": "aberration skilled in perception and resistant to psychic damage",
+            "variant": "aberration that is good at perception and resists psychic attacks"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Incarnate Gloom",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 184,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "fly 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "undead",
+        "gloom",
+        "intimidation",
+        "darkness"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "intimidating",
+        "shadowy",
+        "undead"
+    ],
+    "description": "The Incarnate Gloom is a gargantuan undead creature designed to instill fear and despair. It is cloaked in magical darkness, blending into the shadowy environment and making it hard to detect.",
+    "memorable": "It generates a permanent sphere of magical darkness, impenetrable to normal light and darkvision, and can engulf enemies in shadow, blinding and restraining them.",
+    "goals": "To instill fear, manipulate darkness, and defeat foes through despair and control.",
+    "relations": "Often found in the company of other undead or dark creatures, acting as a master in dark domains.",
+    "environment": "Typically found in dark, shadowy areas or as guardians of forgotten tombs.",
+    "strengths": "Excellent at stealth and intimidation, and immune to many conditions.",
+    "weaknesses": "Vulnerable to radiant damage, which can significantly hinder its effectiveness.",
+    "attacks": "Uses a multiattack with its Despairing Touch to deal psychic damage and Engulf in Shadow to trap and harm foes.",
+    "most_powerful_ability": "Deepening Gloom, which enshrouds the area in magical darkness that is impervious to darkvision.",
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through normal and magical darkness.",
+    "skills": "Proficient in intimidation and stealth, making it highly effective in ambushes.",
+    "additional_information": [
+        "Can move through other creatures and objects.",
+        "Inflicts necrotic damage and can cause exhaustion.",
+        "Can be affected by the calm emotions spell, leading to psychic damage.",
+        "Immunities to necrotic and poison damage.",
+        "Resistant to several damage types including acid, cold, fire, lightning, and thunder."
+    ],
+    "damage_types": [
+        "psychic",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan undead creature of darkness",
+        "shadowy monster that inflicts despair",
+        "creature that engulfs foes in shadows",
+        "intimidating undead with truesight",
+        "ambushing creature that manipulates darkness"
+    ]
+}

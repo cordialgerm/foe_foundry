@@ -1,0 +1,53 @@
+{
+    "name": "Death Knight",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 140,
+    "ac": 18,
+    "srd": false,
+    "ac_description": "plate",
+    "cr": "8",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic",
+        "fighter"
+    ],
+    "adjectives": [
+        "formidable",
+        "relentless",
+        "undead"
+    ],
+    "description": "The Death Knight is a towering skeletal figure clad in dark plate armor, with a glowing sword that pulses with necrotic energy. Its eyes burn with malevolent intent, revealing its undead nature.",
+    "memorable": "The Death Knight can return from destruction unless redeemed, making it a persistent adversary.",
+    "goals": "Typically seeks vengeance or to enforce its will against living beings.",
+    "relations": "May be accompanied by other undead creatures or serve dark masters.",
+    "environment": "Usually found in grim locations such as haunted ruins, ancient battlefields, or dark castles.",
+    "strengths": "Has magic resistance, making it durable against spells, and can deal substantial necrotic damage.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Can perform multiattacks with a powerful Greatsword and cast Necrotic Bolt for ranged necrotic damage.",
+    "most_powerful_ability": "Soul Drain allows it to trap souls, enhancing its power and preventing resurrection.",
+    "equipment": "Wields a Greatsword and has magical effects associated with its attacks.",
+    "senses": "The Death Knight has darkvision that allows it to see in dim light as if it were bright light.",
+    "skills": "It possess a high Wisdom score, granting it effective insight into its foes.",
+    "additional_information": [
+        "Immune to poison damage and exhaustion.",
+        "Can absorb souls, making it more dangerous after a kill.",
+        "Doesn't require food, air, or sleep due to its undead nature.",
+        "Challenges foes directly through its Champion's Challenge ability.",
+        "Resurrects after a short time unless it is redeemed."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead knight that returns from death",
+        "skeleton warrior with necrotic powers",
+        "powerful undead that absorbs souls",
+        "dark knight in plate armor",
+        "relentless creature with magic resistance"
+    ]
+}

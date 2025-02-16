@@ -1,0 +1,25 @@
+{
+    "name": "Mordant Snare",
+    "queries": [
+        {
+            "query": "grotesque large monster that ambushes and controls dead humanoids",
+            "variant": "huge grotesque monster that ambushes and takes control of dead humanoids"
+        },
+        {
+            "query": "chaotic evil aberration with high hit points and natural armor",
+            "variant": "chaotic evil aberrant creature with high health and natural armor"
+        },
+        {
+            "query": "creature that can create puppets from slain enemies and is difficult to hit",
+            "variant": "monster that creates puppets from dead foes and has a high armor class"
+        },
+        {
+            "query": "strong and strategic monster that thrives in dark and burrowing environments",
+            "variant": "powerful and tactical creature that excels in dark and underground areas"
+        },
+        {
+            "query": "gargantuan aberration resistant to physical damage and immune to being prone",
+            "variant": "huge aberration resistant to nonmagical attacks and immune to falling prone"
+        }
+    ]
+}

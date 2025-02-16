@@ -1,0 +1,25 @@
+{
+    "name": "Arachnocrat",
+    "queries": [
+        {
+            "query": "medium fiend that can climb and uses deception",
+            "variant": "fiend that is medium sized, climbs well, and is great at deception"
+        },
+        {
+            "query": "creature with poison attacks and communication with spiders",
+            "variant": "monster that has poison bites and can talk to spiders"
+        },
+        {
+            "query": "lawful evil creature that excels in social skills and stealth",
+            "variant": "evil fiend that is lawful, has high charisma, and moves stealthily"
+        },
+        {
+            "query": "fiend with resistance to cold and immunity to poison damage",
+            "variant": "a fiend that resists cold and is immune to being poisoned"
+        },
+        {
+            "query": "Arachnocrat tactics for restraining opponents in gilded webbing",
+            "variant": "how does Arachnocrat restrain foes using gilded webs"
+        }
+    ]
+}

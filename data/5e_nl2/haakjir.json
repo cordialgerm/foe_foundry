@@ -1,0 +1,53 @@
+{
+    "name": "Haakjir",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft., burrow 15 ft., climb 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "earth manipulation",
+        "tactical combat",
+        "climbing",
+        "burrowing"
+    ],
+    "adjectives": [
+        "lethal",
+        "agile",
+        "cunning"
+    ],
+    "description": "The Haakjir is a medium-sized monstrosity with lethal claws and unique earth manipulation abilities, enabling it to traverse rocky terrains effortlessly.",
+    "memorable": "Its Claw attacks can bypass the armor of metal-wielding foes, making it a dangerous opponent in combat.",
+    "goals": "Engages in tactical combat, often alongside allies, to outmaneuver and overpower its enemies.",
+    "relations": "May be found in the company of other earth-based creatures or allies that complement its tactical abilities.",
+    "environment": "Typically found in rocky or uneven terrains, where it can utilize its burrowing and climbing skills.",
+    "strengths": "High Strength and Dexterity allow for effective melee damage and agility in combat scenarios, along with its Pack Tactics for enhanced attack opportunities.",
+    "weaknesses": "Low Intelligence and Charisma hinder its problem-solving abilities and social interactions.",
+    "attacks": "Multiattack includes one Bite dealing 10 piercing damage and two Claws each dealing 8 slashing damage.",
+    "most_powerful_ability": "Earthen Claws allow it to ignore the armor bonuses of metal armors, making it particularly deadly against certain foes.",
+    "equipment": null,
+    "senses": "Possesses tremorsense, allowing it to detect vibrations within 30 feet.",
+    "skills": null,
+    "additional_information": [
+        "Can climb upside down on ceilings with Earth Climb ability.",
+        "Stealthy approach is enhanced by Earth Glide, enabling it to burrow without being detected.",
+        "Gains advantage on Dexterity (Stealth) checks in rocky environments due to Stone Camouflage."
+    ],
+    "damage_types": [
+        "acid",
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster with lethal claws and earth manipulation",
+        "agile creature that can burrow and climb",
+        "tactical monster skilled in rocky environments",
+        "medium monstrosity able to bypass armor",
+        "neutral creature with climbing and burrowing abilities"
+    ]
+}

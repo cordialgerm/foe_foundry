@@ -1,0 +1,54 @@
+{
+    "name": "Sila",
+    "creature_type": "Elemental",
+    "creature_subtype": "outsider",
+    "alignment": null,
+    "size": "Large",
+    "hp": 216,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 ft. walking, 60 ft. flying, 90 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "outsider",
+        "water"
+    ],
+    "adjectives": [
+        "formidable",
+        "versatile",
+        "graceful"
+    ],
+    "description": "The Sila is a large, formidable elemental creature with a striking appearance, capable of thriving both in water and on land.",
+    "memorable": "Combines impressive mobility with powerful elemental attacks and battlefield manipulation.",
+    "goals": "To control the battlefield and summon allies.",
+    "relations": "Might be encountered with other water-based creatures or elementals.",
+    "environment": "Primarily found in aquatic environments, capable of living both in water and on land.",
+    "strengths": "Good Dexterity and Charisma allow graceful movement and spell manipulation.",
+    "weaknesses": "Limited offensive power in its nebulous form, unable to attack or manipulate objects.",
+    "attacks": "Employs multiple Cold-Infused Jambiya and Water Burst attacks that deal both slashing and bludgeoning damage.",
+    "most_powerful_ability": "Can create a water elemental ally once per day to assist in battles.",
+    "equipment": null,
+    "senses": "Possesses darkvision with a perception score of 16, allowing it to notice hidden threats effectively.",
+    "skills": "Has a stealth score of 16, aiding in ambushing foes.",
+    "additional_information": [
+        "Amphibious trait allows breathing in both air and water.",
+        "Fluid Body ability enables movement through spaces without restriction.",
+        "Nebulous form grants exceptional stealth and mobility at the cost of offensive capabilities.",
+        "Clouded Eyes ability can blind opponents temporarily.",
+        "Travel the Planes ability allows transportation to another plane of existence."
+    ],
+    "damage_types": [
+        "cold",
+        "bludgeoning"
+    ],
+    "spellcasting": "Can cast spells such as Create Water Elemental once per day and has access to other spell-like abilities.",
+    "test_queries": [
+        "large water elemental with flight abilities",
+        "creature that can turn into a cloud of mist",
+        "formidable elemental creature from aquatic environments",
+        "monster that can summon allies in battle",
+        "elemental with multiple attacks and battlefield control"
+    ]
+}

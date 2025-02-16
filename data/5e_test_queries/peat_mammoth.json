@@ -1,0 +1,25 @@
+{
+    "name": "Peat Mammoth",
+    "queries": [
+        {
+            "query": "huge plant monster that explodes when dies",
+            "variant": "huge monster made of plants that explodes upon death"
+        },
+        {
+            "query": "swamp-dwelling creature with strong melee attacks",
+            "variant": "creature living in swamps with powerful melee attacks"
+        },
+        {
+            "query": "monster resistant to fire damage with engulfing ability",
+            "variant": "creature that resists fire damage and can engulf foes"
+        },
+        {
+            "query": "massive creature with swamp camouflage and low agility",
+            "variant": "large creature with camouflage in swamps and poor agility"
+        },
+        {
+            "query": "blindsight creature found in wetlands that restrains opponents",
+            "variant": "wetland creature with blindsight that can restrain enemies"
+        }
+    ]
+}

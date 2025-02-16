@@ -1,0 +1,52 @@
+{
+    "name": "Adult Mithral Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 253,
+    "ac": 18,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "mythical",
+        "majestic"
+    ],
+    "adjectives": [
+        "powerful",
+        "agile",
+        "magical"
+    ],
+    "description": "The Adult Mithral Dragon is a large, majestic dragon known for its shiny mithral scales that reflect light beautifully. With a sleek, streamlined body, it possesses sharp claws and a long, powerful tail, capable of delivering devastating attacks.",
+    "memorable": "This dragon's unique Mithral Scales ability allows it to reflect spells back at casters, showcasing its magical prowess beyond physical might.",
+    "goals": "The dragon may act as a guardian of treasures or ancient wisdom, seeking to outsmart enemies and protect its domain.",
+    "relations": "Typically associated with other dragons or magical creatures, it may also coexist with wise beings or serve as an ally to powerful spellcasters.",
+    "environment": "Prefers lofty mountainous regions or ancient ruins, often where its shimmering scales can be hidden or revealed by the sun.",
+    "strengths": "Exceptional agility due to high Dexterity, combined with powerful magical defenses like Legendary Resistance and Magic Resistance.",
+    "weaknesses": "Average Strength score, relying more on cunning and magical abilities than brute force in combat.",
+    "attacks": "Engages enemies with a mix of powerful Bite and Claw attacks, along with a frightening presence that can instill fear.",
+    "most_powerful_ability": "Shard Breath, an area-effect attack dealing slashing damage while creating difficult terrain.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet and a passive Perception score of 26 indicate sharp awareness of its surroundings.",
+    "skills": "Impressive proficiency in Perception and Stealth, making it adept at avoiding detection.",
+    "additional_information": [
+        "Can communicate telepathically up to 120 feet.",
+        "Possesses legendary actions to control the battlefield effectively.",
+        "Immunity to slashing damage enhances its durability against physical attacks.",
+        "Ability to end magical effects on targets through its Bite attack.",
+        "Ability to inflict continual damage through its Claw attack."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "majestic dragon with magical abilities",
+        "dragon that reflects spells",
+        "agile dragon with high Dexterity",
+        "Adult Mithral Dragon abilities",
+        "powerful Huge Dragon for combat"
+    ]
+}

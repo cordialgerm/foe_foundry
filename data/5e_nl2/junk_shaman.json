@@ -1,0 +1,52 @@
+{
+    "name": "Junk Shaman",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 42,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "junk",
+        "shaman",
+        "magical"
+    ],
+    "adjectives": [
+        "small",
+        "agile",
+        "resourceful"
+    ],
+    "description": "A small humanoid creature, the Junk Shaman creates magical armor from discarded materials, appearing as a patched-together figure with an affinity for tinkering with junk.",
+    "memorable": "Possesses the unique ability to create magical junk armor that increases its defense.",
+    "goals": "To protect its territory and allies using magical objects and pack tactics.",
+    "relations": "Often found among other humanoids interested in scavenging and magic.",
+    "environment": "Typically inhabits areas with discarded materials or ruins.",
+    "strengths": "Good dexterity and wisdom make it agile and perceptive; can manipulate objects through spellcasting.",
+    "weaknesses": "Sunlight sensitivity causes disadvantage in bright conditions.",
+    "attacks": "Uses a Multiattack with its Junk Staff, inflicting bludgeoning and fire damage, can also unleash a Flame Jet for ranged fire damage.",
+    "most_powerful_ability": "Animate Objects spell allows manipulation of multiple items as distractions or weapons.",
+    "equipment": null,
+    "senses": "Possesses darkvision and a passive perception of 13, enabling it to notice hidden threats.",
+    "skills": "Excels in Dexterity saving throws and Wisdom saving throws.",
+    "additional_information": [
+        "Can create magical armor with notable defense enhancements.",
+        "Pack Tactics grants advantage on attack rolls when allies are nearby.",
+        "Critical hits against it are treated as normal hits.",
+        "It can ignite flammable targets, causing ongoing fire damage.",
+        "Is resourceful, often using the environment to its advantage."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast Animate Objects once per day without components, using Wisdom as its spellcasting ability.",
+    "test_queries": [
+        "small junk magician with fire abilities",
+        "humanoid that makes magical armor from junk",
+        "shaman with fire attacks and pack tactics",
+        "creature sensitive to sunlight and fire damage",
+        "agile humanoid using junk for combat"
+    ]
+}

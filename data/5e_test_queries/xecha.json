@@ -1,0 +1,25 @@
+{
+    "name": "Xecha",
+    "queries": [
+        {
+            "query": "chaotic evil fiend that can manipulate its form",
+            "variant": "fiend that is chaotic evil and manipulates its form"
+        },
+        {
+            "query": "medium-sized fiend known for its deceptive abilities and magic resistance",
+            "variant": "deceptive medium fiend with magic resistance"
+        },
+        {
+            "query": "creature that can impersonate the dead and has psychic attacks",
+            "variant": "monster that can take on dead forms and uses psychic attacks"
+        },
+        {
+            "query": "monster with good Dexterity, high HP, and blindsight in dark environments",
+            "variant": "monster that has high HP, good Dexterity, and can see in darkness"
+        },
+        {
+            "query": "fiend known for ambushing with transparency and sensory overload attacks",
+            "variant": "fiend that ambushes using transparency and has sensory overload"
+        }
+    ]
+}

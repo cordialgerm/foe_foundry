@@ -1,0 +1,51 @@
+{
+    "name": "Sand Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 18,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., burrow 20 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "sand",
+        "wyrmling",
+        "elemental"
+    ],
+    "adjectives": [
+        "arid",
+        "agile",
+        "formidable"
+    ],
+    "description": "The Sand Wyrmling embodies the essence of the arid desert, with scales that evoke sandy terrain, making it blend in seamlessly. It is a medium-sized dragon with sharp features and an aggressive posture, ready to strike with its natural weaponry.",
+    "memorable": "Its ability to unleash superheated sand breath and cause blindness creates a unique battlefield control dynamic.",
+    "goals": "To dominate its territory and ambush unsuspecting prey in sandy environments.",
+    "relations": "It may have connections with other evil dragons or desert-dwelling creatures.",
+    "environment": "Typically found in arid or desert regions, thriving in sandy terrain.",
+    "strengths": "Immunity to fire damage and the ability to effectively camouflage itself in sandy environments.",
+    "weaknesses": "Despite good physical stats, its average intelligence can hinder strategic planning.",
+    "attacks": "The Sand Wyrmling utilizes a bite attack for physical damage and a breath weapon that can cause damage or blindness.",
+    "most_powerful_ability": "Breath Weapon allowing for either piercing and fire damage or a blinding effect.",
+    "senses": "Has blindsight within 10 feet, allowing it to detect creatures even in complete darkness.",
+    "skills": "Proficient in perception, reflecting its high awareness and ability to notice hidden creatures.",
+    "additional_information": [
+        "Advantage on Dexterity (Stealth) checks in sandy terrain.",
+        "Requires only half the usual food and drink.",
+        "Can cause disadvantage on targets with its Stinging Sand ability.",
+        "Blindsighted creatures can take action to clear their vision."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "desert dragon with blindness attack",
+        "sandy creature that thrives in desert",
+        "dragon with heat-based breath weapon",
+        "medium dragon that uses ambush tactics",
+        "dragon adept at hiding in sand"
+    ]
+}

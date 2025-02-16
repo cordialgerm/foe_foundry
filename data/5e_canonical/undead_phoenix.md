@@ -1,6 +1,8 @@
 <MonsterName/>Undead Phoenix</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>12</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>142</HP>
 <summary>The Undead Phoenix is a formidable creature characterized by its huge size and chaotic evil alignment. As an undead entity, it has a unique combination of resilience and destructive capabilities, making it a significant threat in combat scenarios. With a high armor class of 17 and a substantial hit point pool of 142, it is well-equipped to withstand prolonged conflicts. The creature's speed allows it to fly swiftly at 90 feet and walk at a moderate pace of 30 feet, enhancing its mobility in battles. Its challenge rating of 12 indicates that it presents a serious challenge for adventurers, granting it a reward of 8,400 experience points upon defeat. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Undead Phoenix embodies a blend of overwhelming power and a persist
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Undead Phoenix
 
 *Huge* *Undead* *chaotic evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Decaying Bite:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 14 (4d6) necrotic damage. The target must succeed on a DC 15 Constitution saving throw or be cursed with perpetual decay. The cursed target can't regain hp until the curse is lifted by the remove curse spell or similar magic.
 
 
+</statblock>
 
 

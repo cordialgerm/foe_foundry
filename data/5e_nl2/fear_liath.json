@@ -1,0 +1,50 @@
+{
+    "name": "Fear Liath",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 33,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 feet walk speed",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "curse",
+        "fear",
+        "incorporeal"
+    ],
+    "adjectives": [
+        "menacing",
+        "cursed",
+        "shadowy"
+    ],
+    "description": "The Fear Liath is a Large undead creature with a dark gray shadow form. It manipulates the battlefield and instills fear in its enemies utilizing its Gray Curse ability.",
+    "memorable": "The Fear Liath creates a dark cycle of death and resurrection, where it can turn its victims into more of itself.",
+    "goals": "To instill fear and spread its curse among living creatures.",
+    "relations": "May serve under necromantic entities or dark forces eager to spread fear and terror.",
+    "environment": "Typically found in dark, ominous locations where fear prevails.",
+    "strengths": "Resilient against various damage types when incorporeal and immune to common conditions like fear and poison.",
+    "weaknesses": "Lower hit points and average defense make it vulnerable to strategic attacks.",
+    "attacks": "Executes a melee slam attack, inflicting bludgeoning damage and potentially blinding opponents.",
+    "most_powerful_ability": "The Gray Curse ability can result in instant destruction from remove curse and creates endless fear by raising victims as new Fear Liaths.",
+    "senses": "Possesses darkvision up to 60 feet, enhancing its perception in low-light conditions.",
+    "skills": "Notable for high stealth +6 and athletics +5, enabling it to move quietly and evade detection.",
+    "additional_information": [
+        "Incorporeal form appears as a dark gray shadow when observed.",
+        "Affected opponents must avert their gaze to avoid targeting it directly.",
+        "Gains resistance to various damage types while incorporeal.",
+        "Vulnerable to strategic attacks due to low hit points.",
+        "Possesses a decent melee attack capability."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that curses and blinds",
+        "shadowy monster with high stealth and fear abilities",
+        "fear-inducing monster that raises victims",
+        "large incorporeal undead lurking in darkness",
+        "powerful cursed entity that manipulates foes"
+    ]
+}

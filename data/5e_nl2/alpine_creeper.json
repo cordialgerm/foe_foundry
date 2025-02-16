@@ -1,0 +1,48 @@
+{
+    "name": "Alpine Creeper",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 95,
+    "ac": 5,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 15 ft.",
+    "role": "Controller",
+    "tags": [
+        "plant",
+        "ambush",
+        "area control"
+    ],
+    "adjectives": [
+        "huge",
+        "stealthy"
+    ],
+    "description": "A large plant creature that resembles a patch of lichen and is capable of remaining motionless to ambush unsuspecting adventurers.",
+    "memorable": "Its ability to summon various beasts to its aid creates unpredictability in combat, and it can incapacitate foes with sleep-inducing spores.",
+    "goals": "To incapacitate adventurers and call nearby beasts to attack them.",
+    "relations": "Likely found near other beasts it can summon to aid in confrontations.",
+    "environment": "Often found in alpine or mountainous regions, camouflaging itself among the natural flora.",
+    "strengths": "Immune to cold damage, resistant to bludgeoning and piercing, and possesses abilities to incapacitate foes.",
+    "weaknesses": "Vulnerable to fire damage, which is a significant weakness.",
+    "attacks": "Uses Gentle Dissolution to deal acid damage and Sleep Spores to put foes to sleep.",
+    "most_powerful_ability": "Cleaning Call, which summons beasts to attack its enemies.",
+    "senses": "The Alpine Creeper has tremorsense out to 60 feet, allowing it to detect creatures around it even while motionless.",
+    "skills": "It has a perception skill with a -3 modifier, reflecting a limited ability to detect nearby threats.",
+    "additional_information": [
+        "Has condition immunities to being blinded, charmed, deafened, frightened, grappled, and prone.",
+        "Can inflict exhaustion on unconscious foes with Lethargic Stupor.",
+        "The Mossy Carpet ability allows it to navigate tight spaces effectively."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambushing plant creature",
+        "huge stealthy plant",
+        "area control plant monster",
+        "creature summoning beasts",
+        "sleep-inducing spore monster"
+    ]
+}

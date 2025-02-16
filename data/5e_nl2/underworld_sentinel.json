@@ -1,0 +1,50 @@
+{
+    "name": "Underworld Sentinel",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walking speed of 40 feet",
+    "role": "Defender",
+    "tags": [
+        "undead",
+        "guardian",
+        "powerful"
+    ],
+    "adjectives": [
+        "formidable",
+        "undead",
+        "robust"
+    ],
+    "description": "A Huge undead being embodying the essence of undead power, resembling a guardian with a scythe.",
+    "memorable": "Its ability to restrict healing on its foes while delivering devastating melee attacks makes it a challenging adversary.",
+    "goals": "To guard its domain and challenge intruders with powerful melee and necrotic attacks.",
+    "relations": "May serve other powerful undead or function as a guardian of dark places.",
+    "environment": "Typically found in dark, foreboding locations like ruined castles or ancient burial grounds.",
+    "strengths": "Immunity to poison damage and effects that would turn undead, along with strong melee and ranged attacks.",
+    "weaknesses": "Limited mobility beyond a normal walking speed and reliant on physical combat.",
+    "attacks": "Devastating melee scythe attacks with slashing and necrotic damage, as well as a necrotic ranged attack.",
+    "most_powerful_ability": "Grim Reaping, allowing it to damage multiple foes at once while preventing them from healing.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet and darkvision up to 120 feet.",
+    "skills": "Proficient in Dexterity, Constitution, and Wisdom saving throws, making it tough against endurance and perception challenges.",
+    "additional_information": [
+        "Can make opportunity attacks when creatures enter or leave its reach.",
+        "Does not require air, food, drink, or sleep due to Undead Nature.",
+        "Deals additional necrotic damage when attacking weakened foes."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge undead guardian with scythe",
+        "powerful undead that prevents healing",
+        "formidable creature with necrotic attacks",
+        "sentinel that guards dark locations",
+        "undead giant with area control capabilities"
+    ]
+}

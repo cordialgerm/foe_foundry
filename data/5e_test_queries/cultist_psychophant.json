@@ -1,0 +1,25 @@
+{
+    "name": "Cultist Psychophant",
+    "queries": [
+        {
+            "query": "medium humanoid that uses psychic manipulation and has high charisma",
+            "variant": "medium humanoid with high charisma that manipulates using psychic powers"
+        },
+        {
+            "query": "humanoid that can stun opponents and has psychic resistance",
+            "variant": "humanoid with resistance to psychic damage and ability to stun enemies"
+        },
+        {
+            "query": "psychic damage dealer in combat that excels in psychological warfare",
+            "variant": "combatant that deals psychic damage and is skilled in psychological warfare"
+        },
+        {
+            "query": "Cultist-like creature with abilities to warp weapons and redirect attacks",
+            "variant": "creature resembling a cultist that can warp weapons and switch attack targets"
+        },
+        {
+            "query": "non-good aligned medium creature with powerful mental abilities",
+            "variant": "medium creature with strong mental powers that is not good aligned"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Sammael",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 40 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "divine",
+        "warrior"
+    ],
+    "adjectives": [
+        "powerful",
+        "resilient",
+        "manipulative",
+        "divine"
+    ],
+    "description": "Sammael is a medium celestial with a strong physique and a refined appearance that reflects its divine nature.",
+    "memorable": "Sammael can shift between roles such as Destructor, Executioner, and Punisher, enhancing its versatility in combat.",
+    "goals": "To serve its deity by inflicting punishment, destruction, or targeted execution based on its chosen role.",
+    "relations": "Sammael may serve a higher celestial power or interact with other divine beings.",
+    "environment": "Typically found in areas sacred to its deity or where divine will needs to be enforced.",
+    "strengths": "Resilient to radiant damage and nonmagical physical attacks, with excellent Wisdom saving throws.",
+    "weaknesses": "Average dexterity and intelligence scores limit its agility and cleverness.",
+    "attacks": "Utilizes a multiattack feature with options for slashing, fire, and radiant damage based on the chosen form.",
+    "most_powerful_ability": "Angelic Weapons, adding 2d8 radiant damage on every successful weapon hit.",
+    "senses": "Sammael has darkvision up to 120 feet and a passive Perception of 17, boosting its ability to detect threats.",
+    "skills": "Sammael is proficient in Insight and Perception, providing a +7 modifier for both skills to detect hidden dangers.",
+    "additional_information": [
+        "Immunities to charmed, exhaustion, and frightened conditions.",
+        "Can communicate telepathically up to 120 feet.",
+        "Has the ability to impose lasting effects on defeated foes, reducing their Charisma.",
+        "Designed to be resilient against spells targeting Wisdom and Charisma.",
+        "Can shift roles strategically in combat for tactical advantage."
+    ],
+    "damage_types": [
+        "radiant",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful celestial warrior with divine abilities",
+        "angelic creature that inflicts lasting suffering",
+        "celestial being with radiant and fire attacks",
+        "Sammael's abilities as Destructor Executioner Punisher",
+        "creature resistant to radiant damage and conditions"
+    ]
+}

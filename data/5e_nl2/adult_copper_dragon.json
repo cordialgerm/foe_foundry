@@ -1,0 +1,53 @@
+{
+    "name": "Adult Copper Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Huge",
+    "hp": 184,
+    "ac": 18,
+    "srd": true,
+    "cr": "14",
+    "movement": "40 ft. walking, 40 ft. climbing, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "metallic",
+        "copper",
+        "challenge rating 14"
+    ],
+    "adjectives": [
+        "agile",
+        "formidable",
+        "playful",
+        "acidic"
+    ],
+    "description": "The Adult Copper Dragon has scales that shimmer like aged copper and is known for its lithe and agile form. Its playful and mischievous nature comes to life in its love for pranks and wordplay. This dragon prefers rocky hills and mountains, dwelling in hidden caves.",
+    "memorable": "This dragon possesses a unique ability to control the battlefield with its mischievous nature and formidable breath weapons, including Acid Breath and Slowing Breath, making encounters both challenging and engaging.",
+    "goals": "It enjoys engaging in puzzles and games of wit, seeking to outsmart opponents and entertain itself through clever challenges.",
+    "relations": "Copper Dragons often interact with other good-aligned creatures and can be found in the company of adventurers who share their sense of duty and playfulness.",
+    "environment": "Commonly found in rocky hills and mountainous regions, preferring to lair in hidden caves.",
+    "strengths": "Immune to acid damage and possesses a high passive perception of 22, along with significant damage output through its multiattack feature and breath weapons.",
+    "weaknesses": "Its effectiveness can be diminished if legendary resistances are depleted, resulting in a lower Armor Class until it completes a long rest.",
+    "attacks": "Utilizes a potent multiattack that includes a Bite, two Claw attacks, and a Tail strike. Its breath weapons deal massive area damage and can inflict debilitating conditions.",
+    "most_powerful_ability": "Breath Weapons, such as Acid Breath which unleashes a devastating line of corrosive acid capable of blinding foes and dealing significant damage.",
+    "senses": "Blindsight up to 60 feet enhances its awareness, allowing it to detect hidden creatures.",
+    "skills": "Excels in deception with a +10 bonus and has a high perception score of 12, making it effective in spotting hidden threats.",
+    "additional_information": [
+        "Possesses a playful personality, often engaging in riddles and word games.",
+        "Can change shape into a humanoid or beast, retaining its legendary resistance.",
+        "Features the ability 'Flow Within the Mountain', enabling it to hide more effectively in rocky terrains.",
+        "Has a special ability called 'Legendary Resistance' that allows it to negate failed saving throws three times per day.",
+        "Can exert control over the battlefield using legendary actions, such as 'Wing Attack' and 'Elemental Roar'."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting ability allows it to cast spells like 'hideous laughter', 'suggestion', 'mislead', and 'polymorph'.",
+    "test_queries": [
+        "mischievous dragon",
+        "copper scaled dragon",
+        "dragon with riddles",
+        "acid breath dragon",
+        "playful giant dragon"
+    ]
+}

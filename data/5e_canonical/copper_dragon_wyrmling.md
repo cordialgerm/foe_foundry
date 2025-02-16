@@ -1,6 +1,8 @@
 <MonsterName/>Copper Dragon Wyrmling (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>1</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>22</HP>
 <summary>The Copper Dragon Wyrmling is a Medium-sized dragon known for its cunning and agility. With an armor class of 16 and hit points totaling 44, it presents a formidable challenge for adventurers with a Challenge Rating of 2, making it well-suited for encounters with lower-level parties. Its strengths lie in its mobility; it can walk and climb at 30 feet and fly at a speed of 60 feet, granting it exceptional maneuverability in combat. Additionally, it possesses damage immunity to acid, making it resilient against certain attacks. Despite these strengths, the wyrmling has average Constitution and Wisdom scores, which may limit its durability in prolonged combat situations. Its special ability, "Flow Within the Mountain," provides it with very good stealth capabilities in mountainous regions, enhancing its ability to ambush foes. </summary>
 
 <detail>
@@ -50,6 +52,7 @@ Overall, the Copper Dragon Wyrmling is a dynamic creature whose unique combinati
 
 Source: 5e_srd
 
+<statblock>
 # Copper Dragon Wyrmling (Metallic)
 
 *Medium dragon, chaotic good*
@@ -85,6 +88,7 @@ Source: 5e_srd
 **Acid Breath**. The dragon exhales acid in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
 
 **Slowing Breath**. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.
+</statblock>
 
 
 
@@ -93,6 +97,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Copper Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -124,6 +129,7 @@ Source: 5e_artisinal_monsters
 - **Slowing Breath:** The dragon exhales toxic gas in a 15-foot cone. Each creature in the area makes a DC 11 Constitution saving throw  becoming slowed for 1 minute on a failure. A creature repeats the saving throw at the end of each of its turns  ending the effect on itself on a success.
 
 
+</statblock>
 
 
 
@@ -132,6 +138,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Copper Dragon Wyrmling
 
 *Medium dragon*
@@ -163,5 +170,6 @@ Source: 5e_artisinal_monsters
 - **Acid Breath (Recharge 5–6).** The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 11 DEX save, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
 - **Slowing Breath (Recharge 6).** The dragon exhales slowing gas in a 15-foot cone. Each creature in that area must make a DC 11 CON save. On a failure, the creature can’t use reactions, its speed is halved, and it can’t make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, not both. These effects last for 1 minute. The creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.
 
+</statblock>
 
 

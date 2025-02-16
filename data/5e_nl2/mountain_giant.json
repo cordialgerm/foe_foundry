@@ -1,0 +1,51 @@
+{
+    "name": "Mountain Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 313,
+    "ac": 20,
+    "srd": false,
+    "cr": "21",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "mountain",
+        "area control",
+        "siege"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "powerful",
+        "menacing"
+    ],
+    "description": "The Mountain Giant is a massive creature representing the raw power of the mountains, with formidable physical strength and the ability to manipulate terrain at will.",
+    "memorable": "Its ability to control earth and unleash devastating boulder attacks makes it a terrifying opponent on the battlefield.",
+    "goals": "To dominate battles and instill fear through physical prowess and manipulation of its environment.",
+    "relations": "Often related to other giants, earth elementals, or beings that embody the forces of nature.",
+    "environment": "Typically found in mountainous regions or rocky terrains.",
+    "strengths": "Possesses Legendary Resistance, Magic Resistance, and can manipulate terrain like the move earth spell",
+    "weaknesses": "Average Dexterity makes it somewhat vulnerable to ranged attacks",
+    "attacks": "Executes two powerful melee slam attacks and can hurl boulders or unleash destructive area attacks with its Boulder Spray.",
+    "most_powerful_ability": "Can manipulate terrain infinitely, like the move earth spell, creating advantageous battlefield conditions.",
+    "equipment": null,
+    "senses": "Has tremorsense, allowing it to perceive activity in a 120-foot radius, and a high passive perception of 22.",
+    "skills": "Excels in Athletics and Perception, showcasing exceptional physical capability and awareness.",
+    "additional_information": [
+        "Immunities to cold, fire, lightning, thunder damage",
+        "Immunities to being charmed, frightened, paralyzed, petrified, and stunned",
+        "Can summon up to five earth elementals to aid in combat",
+        "Can deal triple damage to objects and structures as a Siege Monster",
+        "Uses a terrifying roar to knock foes prone and damage nearby creatures"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive earth-controlling giant",
+        "gargantuan giant with devastating attacks",
+        "giant that manipulates terrain and hurls boulders",
+        "mountain giant that summons earth elementals",
+        "fearsome creature of the mountains with roar"
+    ]
+}

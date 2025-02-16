@@ -1,0 +1,25 @@
+{
+    "name": "Belu",
+    "queries": [
+        {
+            "query": "huge giant that can heal others and change shape",
+            "variant": "huge giant that heals and can change its shape"
+        },
+        {
+            "query": "strong benevolent giant with slam attacks and spellcasting abilities",
+            "variant": "strong giant with a good heart and spellcasting abilities along with slam attacks"
+        },
+        {
+            "query": "giant creature with high hit points that uses entangle and has darkvision",
+            "variant": "giant with a lot of hit points that can use entangle and has darkvision"
+        },
+        {
+            "query": "monster that hurls enchanted rocks and has resistance to poison",
+            "variant": "creature that throws enchanted rocks and is resistant to poison"
+        },
+        {
+            "query": "chaotic good giant with multiattack and a healing ability",
+            "variant": "chaotic good giant that can multiattack and also has a healing ability"
+        }
+    ]
+}

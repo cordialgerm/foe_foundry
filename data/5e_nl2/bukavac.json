@@ -1,0 +1,52 @@
+{
+    "name": "Bukavac",
+    "creature_type": "Monstrosity",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 199,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "limited walking speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "thunder",
+        "grappler",
+        "ambusher"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "strong"
+    ],
+    "description": "The Bukavac is a large monstrosity with high strength and constitution, notable for its fearsome Bite, Gore, and Claw attacks. It lacks intelligence but relies on its physical capabilities and special thunderous abilities.",
+    "memorable": "Its ability to unleash a Croaking Blast that deals thunder damage and deafens opponents makes it a formidable foe in battle.",
+    "goals": "The Bukavac typically seeks to dominate its environment and crush its enemies through raw physical strength and devastating area attacks.",
+    "relations": "It may be related to other monstrosities that thrive in chaotic or aquatic environments.",
+    "environment": "Often found in marshy or swampy areas where it can take advantage of its Hold Breath ability.",
+    "strengths": "High strength allows for deadly melee attacks and grappling capabilities against weaker foes.",
+    "weaknesses": "Relatively low armor class and limited movement speed can make it susceptible to ranged or agile attackers.",
+    "attacks": "Multiattack includes a fierce Bite that inflicts piercing damage, Claw attacks that can grapple enemies, and a potent Gore attack.",
+    "most_powerful_ability": "The Croaking Blast creates a thunderclap in a wide radius, dealing substantial damage and deafening those caught in it.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 20, allowing it to detect foes effectively.",
+    "skills": "Boasts proficiency in Stealth and Perception, enhancing its ambush tactics.",
+    "additional_information": [
+        "Can hold its breath for up to 20 minutes.",
+        "Impressive jumping ability allows long and high jumps.",
+        "Natural armor provides decent protection.",
+        "High hit points enable it to endure significant damage.",
+        "Intelligence score indicates poor strategic thinking."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster with devastating thunder attack",
+        "creature that grapples smaller foes",
+        "formidable swamp monster with thunder abilities",
+        "hulking beast that moves slowly but hits hard",
+        "monster with dangerous area effect attack"
+    ]
+}

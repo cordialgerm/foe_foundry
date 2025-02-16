@@ -1,0 +1,25 @@
+{
+    "name": "Tosculi Drone",
+    "queries": [
+        {
+            "query": "small humanoid creature skilled in teamwork and combat tactics",
+            "variant": "humanoid creature that is small and excels in combat tactics with teamwork"
+        },
+        {
+            "query": "stealthy monster with wings that glides and uses crowd tactics",
+            "variant": "winged monster that glides, known for its crowd tactics and stealth"
+        },
+        {
+            "query": "lawful evil creature that can locate its hive queen and cooperate with allies",
+            "variant": "evil creature that is lawful, can sense its hive queen, and works with allies"
+        },
+        {
+            "query": "Tosculi Drone abilities including Glide and Hive Sense",
+            "variant": "abilities of Tosculi Drone like Hive Sense and Glide"
+        },
+        {
+            "query": "agile humanoid with a low strength score and cooperative attack bonuses",
+            "variant": "humanoid that is agile with low strength, utilizing cooperative attack bonuses"
+        }
+    ]
+}

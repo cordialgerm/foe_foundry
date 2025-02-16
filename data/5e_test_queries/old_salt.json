@@ -1,0 +1,25 @@
+{
+    "name": "Old Salt",
+    "queries": [
+        {
+            "query": "undead sea creature that can choke enemies with seawater",
+            "variant": "sea undead that can choke foes with a wave of seawater"
+        },
+        {
+            "query": "medium-sized creature that can swim and has bludgeoning and necrotic attacks",
+            "variant": "medium creature that swims and uses bludgeoning and necrotic damage in attacks"
+        },
+        {
+            "query": "undead monster with advantage on climbing aboard ships",
+            "variant": "undead creature with climbing advantage on sailing vessels"
+        },
+        {
+            "query": "monster that can regenerate after 13 days if its name is not cleared",
+            "variant": "creature that returns to life in 13 days if its name isn't cleared"
+        },
+        {
+            "query": "evil undead with darkvision and good perception",
+            "variant": "malevolent undead creature with darkvision and enhanced perception"
+        }
+    ]
+}

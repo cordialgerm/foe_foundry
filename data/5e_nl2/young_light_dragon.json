@@ -1,0 +1,53 @@
+{
+    "name": "Young Light Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Large",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 80 ft., walk 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "celestial",
+        "radiant",
+        "undead"
+    ],
+    "adjectives": [
+        "large",
+        "benevolent",
+        "mystical"
+    ],
+    "description": "The Young Light Dragon is known for its celestial powers, shining bright light in a 30-foot area, and having the ability to glide effortlessly through space.",
+    "memorable": "Its ability to unleash radiant damage and dazzle enemies with blinding light makes it a unique and formidable foe.",
+    "goals": "Typically seeks to protect the weak and combat undead forces.",
+    "relations": "May be encountered alongside other celestial beings or dragons.",
+    "environment": "Can often be found in celestial realms or among the stars.",
+    "strengths": "Immunity to radiant damage and resilience against non-magical attacks.",
+    "weaknesses": "Average Dexterity makes it less agile in combat.",
+    "attacks": "Can bite with a powerful melee attack and unleash devastating breath weapons.",
+    "most_powerful_ability": "Radiant Breath dealing significant area damage to multiple foes.",
+    "equipment": null,
+    "senses": "Has blindsight out to 30 feet, allowing it to perceive its environment without relying on sight.",
+    "skills": "Exceptional perception skills enhance its awareness in battle.",
+    "additional_information": [
+        "Sheds bright light in a 15-foot radius and dim light for an additional 15 feet.",
+        "Can move through objects and creatures as difficult terrain with Incorporeal Movement.",
+        "Travels through the void without needing air, food, or sleep.",
+        "Breath weapons can blind foes or destroy weaker undead instantly.",
+        "High Constitution and Strength scores enhance its durability and melee capability."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that glides through stars",
+        "large benevolent celestial dragon",
+        "radiant damage breath weapon dragon",
+        "dragon that can blind enemies",
+        "monster with significant melee damage"
+    ]
+}

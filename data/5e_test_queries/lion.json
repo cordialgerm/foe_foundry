@@ -1,0 +1,25 @@
+{
+    "name": "Lion",
+    "queries": [
+        {
+            "query": "large cat from the savanna with a powerful bite",
+            "variant": "big cat that lives in the savanna with a strong bite"
+        },
+        {
+            "query": "king of the beasts with sharp claws and strong paws",
+            "variant": "monarch of the animals known for its sharp claws and powerful paws"
+        },
+        {
+            "query": "predatory beast with keen smell and pack tactics",
+            "variant": "hunting animal that has a strong sense of smell and group fighting strategies"
+        },
+        {
+            "query": "aggressive animal that attacks with claws and bites",
+            "variant": "fierce creature that strikes with claws and bites"
+        },
+        {
+            "query": "fierce predator that hunts in packs and is very agile",
+            "variant": "ferocious hunter that hunts in groups and is incredibly quick"
+        }
+    ]
+}

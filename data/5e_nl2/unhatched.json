@@ -1,0 +1,54 @@
+{
+    "name": "Unhatched",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 71,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 40 ft. and walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "flying",
+        "necromantic",
+        "curse",
+        "evil"
+    ],
+    "adjectives": [
+        "chaotic",
+        "malicious",
+        "intelligent"
+    ],
+    "description": "A small, chaotic evil undead creature that embodies darkness and malice, with a ghostly skeletal appearance and a chilling aura.",
+    "memorable": "It uniquely punishes those who attempt to heal or aid others, making it a fearsome adversary.",
+    "goals": "To curse and harm those who engage in restorative magic.",
+    "relations": "May be related to other undead beings and could be found alongside necromancers or other malevolent entities.",
+    "environment": "Often found in dark, cursed places where death hangs thick in the air.",
+    "strengths": "Resistant to necrotic damage and conditions while possessing strong multiattack capabilities.",
+    "weaknesses": "Particularly vulnerable to bludgeoning damage.",
+    "attacks": "Utilizes multiattack actions with a combination of claw and bite attacks, alongside a damaging breath weapon.",
+    "most_powerful_ability": "Desiccating Breath unleashes choking dust that inflicts significant necrotic damage and silences foes.",
+    "equipment": null,
+    "senses": "Possesses darkvision, allowing it to see in darkness within 60 feet.",
+    "skills": "Skilled in perception with a +2 modifier.",
+    "additional_information": [
+        "Has advantage on attacks against creatures that have recently healed.",
+        "Can cast chill touch and minor illusion at will.",
+        "Can cast bane once per day to weaken enemies.",
+        "Part of its nature embodies a curse against healing.",
+        "Immune to poison and many debilitating conditions."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting with spells focusing on necromancy and illusion, utilizing an Intelligence-based ability.",
+    "test_queries": [
+        "small undead that punishes healers",
+        "chaotic evil flying creature with necromantic powers",
+        "malicious creature that attacks healers",
+        "undead monster with a powerful breath attack",
+        "creature that inflicts choking dust"
+    ]
+}

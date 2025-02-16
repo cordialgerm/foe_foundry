@@ -1,0 +1,52 @@
+{
+    "name": "Archpriest",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 150,
+    "ac": 20,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "spellcaster",
+        "healer",
+        "martial"
+    ],
+    "adjectives": [
+        "powerful",
+        "durable",
+        "exceptional"
+    ],
+    "description": "The Archpriest is a formidable humanoid with a strong presence, capable of both martial and magical prowess. Equipped with resilience and an array of spells, it appears regal and imposing.",
+    "memorable": "The Archpriest's ability to heal and harm simultaneously makes it a unique threat on the battlefield, able to change the tide of battle with its spells.",
+    "goals": "To serve as a protector and healer, leading allies against threats while commanding significant magical power.",
+    "relations": "Members of religious orders or councils, likely in the company of clerics and paladins.",
+    "environment": "Temples, sacred grounds, or among allied forces in various battlefields.",
+    "strengths": "Exceptional spellcasting capabilities with spells that provide powerful healing and formidable damage, as well as significant resistance to magical attacks.",
+    "weaknesses": "Has average Dexterity, making it less agile compared to more nimble opponents.",
+    "attacks": "Utilizes a mace for melee attacks alongside devastating spells like Flame Strike and Fire Storm to deal damage.",
+    "most_powerful_ability": "Mass Heal allows the Archpriest to restore significant hit points to allies while curing debilitating conditions.",
+    "equipment": "Mace",
+    "senses": "Possesses a passive perception of 15, reflecting its keen awareness.",
+    "skills": "Proficient in insight, medicine, persuasion, and religion, showcasing a blend of combat and social aptitude.",
+    "additional_information": [
+        "Anointed Healing enhances any healing spells it casts.",
+        "Magic Resistance gives advantage on saving throws against spells.",
+        "Divine Word can incapacitate or kill enemies based on their hit points.",
+        "Leads religious orders and may act as a high-ranking adviser to monarchs.",
+        "Considered a mouthpiece of their god, significant in religious and political contexts."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "The Archpriest is a 20th-level spellcaster specializing in a variety of cleric spells that offer healing, support, and damage options.",
+    "test_queries": [
+        "divine healer humanoid",
+        "powerful magical priest",
+        "radiant damage spellcaster",
+        "high AC humanoid enemy",
+        "cleric with mass heal abilities"
+    ]
+}

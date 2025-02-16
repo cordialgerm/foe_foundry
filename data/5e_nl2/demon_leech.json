@@ -1,0 +1,53 @@
+{
+    "name": "Leech Demon",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 147,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "demon",
+        "aquatic"
+    ],
+    "adjectives": [
+        "insidious",
+        "blood-draining",
+        "amphibious"
+    ],
+    "description": "The Leech Demon is a Large chaotic evil fiend known for its blood-draining abilities and resides in dark waters. It has a formidable presence with tentacles and robust skills for combat.",
+    "memorable": "Its ability to drain life force with tentacles while gaining temporary hit points makes it a dangerous adversary.",
+    "goals": "Hunting living creatures to drain their blood and sustain itself.",
+    "relations": "May be encountered alongside other dark fiends or aquatic creatures.",
+    "environment": "Dark aquatic environments, such as swamps, ponds, or oceans.",
+    "strengths": "Possesses amphibious nature, allowing it to thrive in both water and air, along with skills in combat.",
+    "weaknesses": "Low Charisma score, making it poor in social interactions.",
+    "attacks": "Can perform multiple attacks with bites and tentacle bites, dealing significant piercing and necrotic damage.",
+    "most_powerful_ability": "Release Swarm allows it to summon a leech swarm that acts as an ally and provides additional temporary hit points.",
+    "equipment": null,
+    "senses": "Possesses blood sense, allowing it to detect creatures by scent within 30 feet, enhancing its hunting capabilities.",
+    "skills": "Has a perception skill bonus of +1.",
+    "additional_information": [
+        "Blood draining ability provides temporary hit points.",
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Tentacle Bite restrains targets and inflicts ongoing blood loss damage.",
+        "Can detach its tentacles as a bonus action.",
+        "Maintain only one leech swarm at a time during combat."
+    ],
+    "damage_types": [
+        "acid",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "demon that drains blood and lives in water",
+        "aquatic fiend with leech abilities",
+        "Large fiend with tentacles and blood sense",
+        "blood-draining demon that summons leeches",
+        "insidious amphibious creature from dark waters"
+    ]
+}

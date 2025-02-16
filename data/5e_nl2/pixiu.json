@@ -1,0 +1,51 @@
+{
+    "name": "Pixiu",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 112,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "treasure-seeker",
+        "protector",
+        "magical menace"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "wealth-hungry"
+    ],
+    "description": "The Pixiu is a large, treasure-seeking monstrosity with a keen ability to locate valuable metals and stones, and a substantial appetite for wealth.",
+    "memorable": "Its ability to consume magical items and potentially render them useless makes it a unique threat.",
+    "goals": "To seek out and consume treasures, particularly magical items.",
+    "relations": "Often encountered with treasure hunters and adventurers seeking to protect or reclaim their valuable possessions.",
+    "environment": "Typically found in treasure hoards, caves, or areas rich in gems and gold.",
+    "strengths": "Immunity to disease, protective abilities for allies, and a strong melee attack.",
+    "weaknesses": "Low intelligence and susceptibility to strategies that exploit its lack of problem-solving skills.",
+    "attacks": "Utilizes a multiattack with a formidable bite and claw strikes that deal significant damage.",
+    "most_powerful_ability": "Consume Treasure allows it to potentially break and dispel the magic of valuable items.",
+    "senses": "Possesses keen perception to detect valuable items within 60 feet.",
+    "skills": "Has a good perception skill, allowing it to locate treasure effectively.",
+    "additional_information": [
+        "Keen appetite for gold and jewels helps define its character.",
+        "Protective nature enhances its allies' resilience in battle.",
+        "Desires to consume treasures, impacting combat tactics.",
+        "Recognizes all languages, providing a unique personal dynamic in encounters.",
+        "Can pinpoint the location of precious metals and stones by scent."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large treasure-hunting monster",
+        "creature that consumes magical items",
+        "monster with powerful melee attacks and keen senses",
+        "wealth-hungry protector that can fly",
+        "Pixiu abilities related to treasure sense"
+    ]
+}

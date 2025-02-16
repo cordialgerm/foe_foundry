@@ -1,0 +1,25 @@
+{
+    "name": "Hound of Tindalos",
+    "queries": [
+        {
+            "query": "aberration that can teleport and hunts through corners",
+            "variant": "teleporting aberration that hunts in sharp corners"
+        },
+        {
+            "query": "creature with keen smell and magical resistance that is neutral evil",
+            "variant": "neutral evil creature with magic resistance and keen smell"
+        },
+        {
+            "query": "medium-sized monster immune to cold and psychic damage",
+            "variant": "medium creature immune to psychic and cold damage"
+        },
+        {
+            "query": "agile creature with strong claw attacks and high Dexterity",
+            "variant": "fast creature with strong claws and high dexterity"
+        },
+        {
+            "query": "monster that can teleport and has a high AC of 17",
+            "variant": "creature that teleports and possesses an AC of 17"
+        }
+    ]
+}

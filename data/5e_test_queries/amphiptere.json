@@ -1,0 +1,25 @@
+{
+    "name": "Amphiptere",
+    "queries": [
+        {
+            "query": "medium beast with flying agility and poison attack",
+            "variant": "beast that is medium-sized and has flying agility plus poison attack"
+        },
+        {
+            "query": "poisonous predator with good perception and flyby ability",
+            "variant": "predator that's poisonous with great perception skill and flyby feature"
+        },
+        {
+            "query": "agile creature that swarms and uses multiattack",
+            "variant": "creature that is agile, utilizes swarming tactics, and can multiattack"
+        },
+        {
+            "query": "beast with blindsight that can disengage from opponents",
+            "variant": "creature with the ability to see without sight and can disengage from foes"
+        },
+        {
+            "query": "fast monster that deals piercing and poison damage",
+            "variant": "quick monster that inflicts piercing and poison damage"
+        }
+    ]
+}

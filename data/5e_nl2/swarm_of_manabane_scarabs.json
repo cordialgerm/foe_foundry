@@ -1,0 +1,48 @@
+{
+    "name": "Swarm of Manabane Scarabs",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft., fly 20 ft., burrow 20 ft.",
+    "role": "null",
+    "tags": [
+        "swarm",
+        "magical disruptor",
+        "pestilent"
+    ],
+    "adjectives": [
+        "formidable",
+        "unique",
+        "pestilent"
+    ],
+    "description": "A swarm of small, insect-like creatures that possess the ability to disrupt magic and drain magical items. The swarm can occupy spaces of other creatures and move through tiny openings.",
+    "memorable": "It excels at countering spellcasters, having limited magic immunity and the ability to drain magic from items.",
+    "goals": "To disrupt magic and combat spellcasters effectively.",
+    "relations": "May be encountered in areas rich in magic or near spellcasters.",
+    "environment": "Often found in magical locales or places where spellcasting is common.",
+    "strengths": "Good defenses with damage resistances and condition immunities. Advantage on saving throws against spells.",
+    "weaknesses": "Low offensive capabilities and inability to regain hit points.",
+    "attacks": "Utilizes Bites for piercing damage and can disrupt magical effects.",
+    "most_powerful_ability": "Limited Magic Immunity, allowing it protection from lower-level spells.",
+    "equipment": null,
+    "senses": "Possesses blindsight, darkvision, and tremorsense, offering great sensory capabilities for tracking targets.",
+    "skills": "Proficient in Stealth and has decent Perception.",
+    "additional_information": [
+        "Drains magic from items in its space.",
+        "Can sense magic within a 120-foot radius at will.",
+        "Cannot regain hit points or gain temporary hit points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "magic draining insect swarm",
+        "swarm that disrupts spells",
+        "pestilent swarm of magical scarabs",
+        "creatures that drain magic items",
+        "insects immune to low-level spells"
+    ]
+}

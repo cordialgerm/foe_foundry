@@ -1,6 +1,8 @@
 <MonsterName/>Putrid Haunt</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>44</HP>
 <summary>The Putrid Haunt is a Medium-sized undead creature that embodies the essence of decay and malice. It is classified as Neutral Evil, suggesting a malevolent nature driven by a desire to inflict harm without moral considerations. The Putrid Haunt is particularly effective in swampy terrains, using its special abilities to hide and move through difficult environments easily. Its strengths lie in its high Strength score of 17, granting it a good melee attack. However, its Dexterity is notably low at 8, making it less effective at avoiding attacks. With a Challenge Rating of 2, it poses a moderate threat to adventurers, capable of delivering substantial damage through its physical attacks and its ability to summon vermin. On the downside, this creature’s low Constitution and Charisma scores limit its durability and social interactions, respectively.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Putrid Haunt stands as a formidable opponent in swamp terrains, lev
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Putrid Haunt
 
 *Medium* *Undead* *Neutral Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 
 - **Slam:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage plus 5 (2d4) poison damage.
 - **Expel Vermin (Recharge 6):** The putrid haunt vomits forth the leeches, stinging insects, and other swamp vermin infesting its innards in a 15-foot cone. Each creature in the area must make a DC 13 Dexterity saving throw. On a failure, a creature takes 7 (2d6) piercing damage and 7 (2d6) poison damage and is poisoned for 1 minute. On a success, a creature takes half the damage and isn’t poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+</statblock>
 
 

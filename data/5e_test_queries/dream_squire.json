@@ -1,0 +1,25 @@
+{
+    "name": "Dream Squire",
+    "queries": [
+        {
+            "query": "Fey creature that protects its master and has telepathic communication",
+            "variant": "creature that is Fey and telepathically communicates with its master while protecting them"
+        },
+        {
+            "query": "medium-sized serving fey with strong athletics and poor social skills",
+            "variant": "serving fey with medium size, strong athletic ability, and bad charisma"
+        },
+        {
+            "query": "neutral alignment fey that can resist charm effects for its master",
+            "variant": "fey with neutral alignment that resists charm effects to protect its master"
+        },
+        {
+            "query": "magic guardian creature with darkvision and a chain shirt armor",
+            "variant": "guardian creature with chain shirt armor and the ability to see in darkness"
+        },
+        {
+            "query": "servant fey that can teleport to protect its master from attacks",
+            "variant": "fey servant that teleports to defend its master against attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ikuchi",
+    "queries": [
+        {
+            "query": "gargantuan water elemental with difficult terrain abilities",
+            "variant": "gargantuan water elemental that can create difficult terrain"
+        },
+        {
+            "query": "aquatic creature that can breathe underwater and emits oil",
+            "variant": "water creature that emits oil and can breathe only underwater"
+        },
+        {
+            "query": "chaotic neutral elemental that restrains with oil",
+            "variant": "elemental that is chaotic neutral and can restrain with oil"
+        },
+        {
+            "query": "large monster with powerful bite and constrict attack",
+            "variant": "big monster that has a strong bite and a constrict ability"
+        },
+        {
+            "query": "ikuchi damage resistances and special abilities in water",
+            "variant": "ikuchi resistances and special attacks when in water"
+        }
+    ]
+}

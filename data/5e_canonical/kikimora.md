@@ -1,6 +1,8 @@
 <MonsterName/>Kikimora</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>78</HP>
 <summary>The Kikimora is a Medium-sized fey creature characterized by its chaotic neutral alignment. This creature is known for its mischievous and elusive nature, making it a tricky adversary in combat and a deceptive interaction partner outside of it. With an Armor Class of 15 and 78 hit points, the Kikimora is reasonably durable for its challenge rating of 5, providing a good balance of offense and defense. Its strengths lie in its high Dexterity and Charisma scores, allowing it to excel in stealth and social interactions, while also making it a potent spellcaster. However, it is vulnerable to magical attacks, which may bypass its resistances, so characters who rely on spells can exploit this weakness. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ Another special ability, House Pests, allows the Kikimora to summon a swarm of b
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Kikimora
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Homeward Step:** While within a structure containing its hidden home (see the Hidden Home trait), the kikimora magically teleports, along with any equipment it is wearing or carrying, to an unoccupied space within 15 feet of the hidden home’s symbol.
+</statblock>
 
 

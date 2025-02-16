@@ -1,6 +1,8 @@
 <MonsterName/>Fallen Planetar</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>16</CR>
+<AC/>19</AC>
+<HP/>250</HP>
 <summary>The Fallen Planetar is a large Celestial creature known for its exceptional combat prowess, powerful innate spells, and a strong knack for truth detection. With a high Armor Class of 19 and a formidable hit point pool of 250, it serves as a powerful protector in confrontations. The creature excels in both melee and ranged attacks, utilizing its flaming sword to deliver significant damage while also possessing healing abilities to support allies. However, it is vulnerable to radiant damage, which can be a key exploit used against it. The Fallen Planetar's challenge rating of 16 signifies it is an advanced threat for mid to high-level adventurers, capable of turning the tide of battle with its impressive abilities.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Lastly, the Fallen Planetar has a Protective Parry reaction that allows it to im
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fallen Planetar
 
 *Large* *Celestial*
@@ -72,5 +75,6 @@ Source: 5e_artisinal_monsters
 - **Protective Parry:** When a creature within 5 feet would be hit with a melee attack, the planetar applies disadvantage to the attack roll.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Purple Slime",
+    "queries": [
+        {
+            "query": "durable underwater ooze that reduces strength",
+            "variant": "durable ooze underwater that lowers strength"
+        },
+        {
+            "query": "large slime with spike attacks and poison damage",
+            "variant": "big slime that has spike attacks and deals poison damage"
+        },
+        {
+            "query": "amphibious creature that is immune to acid and cold",
+            "variant": "creature that can breathe in water and air immune to acid and cold"
+        },
+        {
+            "query": "slime that can move through tight spaces and ambush enemies",
+            "variant": "slime that ambushes enemies and can fit through narrow spaces"
+        },
+        {
+            "query": "monster with high hit points and ineffective dodging ability",
+            "variant": "monster that has a lot of hit points but dodges poorly"
+        }
+    ]
+}

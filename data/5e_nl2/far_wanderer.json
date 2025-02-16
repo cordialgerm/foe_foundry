@@ -1,0 +1,53 @@
+{
+    "name": "Far Wanderer",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 88,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "teleportation",
+        "mind manipulation",
+        "cold resistance"
+    ],
+    "adjectives": [
+        "enigmatic",
+        "manipulative",
+        "mobile"
+    ],
+    "description": "The Far Wanderer is a Medium aberration characterized by its unique powers and an exceptional Dexterity of 18, allowing it to be evasive and effective in stealth.",
+    "memorable": "Its ability to read surface thoughts and teleport makes it a manipulating and unpredictable foe on the battlefield.",
+    "goals": "To control the battlefield, confuse enemies, and gather information.",
+    "relations": "Might be encountered alongside other aberrations or creatures that manipulate reality.",
+    "environment": "Typically found in locations that are mysterious or associated with the cosmos.",
+    "strengths": "High Dexterity and Intelligence, enabling effective attacks and evasive maneuvers.",
+    "weaknesses": "Lower Constitution, Wisdom, and Charisma, affecting its resilience and interactions.",
+    "attacks": "Can strike with the Stardust Blade or hit targets from a distance with the Stardust Bow, dealing cold damage as well.",
+    "most_powerful_ability": "Once per day, can channel the power of Yorama to either damage or heal creatures within range.",
+    "equipment": null,
+    "senses": "Darkvision allows it to see in darkness up to 120 feet.",
+    "skills": "Skilled in Arcana and Stealth, with a good proficiency in Dexterity saving throws.",
+    "additional_information": [
+        "Immunity to exhaustion and poisoned conditions.",
+        "Can manipulate thoughts without a time constraint.",
+        "Appears with a dazzling starlight when teleporting.",
+        "Capable of sowing confusion among foes.",
+        "Uses language understanding for effective manipulation."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "teleporting monster with mind reading ability",
+        "mysterious creature that understands all languages",
+        "aberration that manipulates reality with starlight",
+        "cold-damaging creature with teleportation powers",
+        "creature skilled in Arcana and Stealth"
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Pixie",
+    "creature_type": "Fey",
+    "alignment": "Neutral Good",
+    "size": "Tiny",
+    "hp": 2,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "magic",
+        "stealth"
+    ],
+    "adjectives": [
+        "diminutive",
+        "whimsical",
+        "mischievous"
+    ],
+    "description": "The Pixie is a tiny, whimsical creature with bright wings that shimmer in the light, known for its playful and mischievous demeanor.",
+    "memorable": "Its ability to magically curse and bless others makes encounters with Pixies both enchanting and perilous.",
+    "goals": "To play tricks on others, spread joy, and protect nature.",
+    "relations": "Associated with other fey creatures like sprites and dryads.",
+    "environment": "Typically found in enchanted forests or natural landscapes.",
+    "strengths": "Exceptional agility, advanced stealth capabilities, and strong magical resistance.",
+    "weaknesses": "Very low physical strength and hit points, making it vulnerable in combat.",
+    "attacks": "Uses a thorn dagger for minimal piercing damage and can inflict magical curses with its abilities.",
+    "most_powerful_ability": "Faerie Curse allows it to inflict various debilitating effects on its targets.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive Perception of 13, allowing it to notice hidden creatures effectively.",
+    "skills": "Proficient in stealth and perception, able to hide and observe with ease.",
+    "additional_information": [
+        "Can become invisible as a bonus action.",
+        "Has the ability to grant truesight to allies for a limited time.",
+        "Can resist magical attacks with its Magic Resistance."
+    ],
+    "damage_types": [],
+    "spellcasting": "Can cast Faerie Light and use magical abilities like Faerie Blessing.",
+    "test_queries": [
+        "tiny fey with magical curses",
+        "whimsical flying creature that can become invisible",
+        "fey that spreads joy and plays tricks",
+        "small creature with exceptional stealth abilities",
+        "Pixie tricks and magical blessings"
+    ]
+}

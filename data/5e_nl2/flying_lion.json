@@ -1,0 +1,48 @@
+{
+    "name": "Flying Lion",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 57,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walking speed of 30 feet and flying speed of 80 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "aerial",
+        "beast",
+        "predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "aerial",
+        "strong",
+        "keen-sensed"
+    ],
+    "description": "The Flying Lion is a large monstrosity with formidable strength and resilience. It boasts large wings that grant it impressive flying speed, alongside a powerful physique suitable for melee combat. Its keen smell enhances its perceptiveness.",
+    "memorable": "Notably combines aerial mobility with strong physical prowess, making it a versatile and dangerous predator.",
+    "goals": "Actively hunts prey using its speed and strength, typically engaging in ambush tactics.",
+    "relations": "Can be encountered alongside other aerial predators or within regions that support large beasts.",
+    "environment": "Prefers open skies and areas where it can take advantage of height during combat.",
+    "strengths": "High Strength and Constitution scores enhance its durability and melee damage output, along with excellent flying capabilities.",
+    "weaknesses": "Low Intelligence and Charisma limit its tactical versatility and social interactions.",
+    "attacks": "Can perform two attacks in a single turn with its bite and talons, dealing significant piercing and slashing damage respectively.",
+    "most_powerful_ability": "Keen Smell grants it advantage on Perception checks based on smell, enhancing its tracking abilities.",
+    "equipment": null,
+    "senses": "Possesses a passive Perception of 15, allowing it to be aware of its surroundings effectively.",
+    "skills": "Exceptional skill in perception with a +5 modifier, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Can grapple targets, making it easier to control and deal damage.",
+        "Strong melee attacks paired with aerial movement give it a unique combat edge."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong flying predator with keen senses",
+        "large beast capable of aerial attacks",
+        "aerial creature with powerful melee attacks",
+        "formidable lion monster with strength and speed",
+        "flying lion skilled in tracking and combat"
+    ]
+}

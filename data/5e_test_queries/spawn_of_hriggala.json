@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Hriggala",
+    "queries": [
+        {
+            "query": "huge fiend that burrows through rock and has necrotic attacks",
+            "variant": "large fiend that can tunnel through stone and delivers necrotic damage"
+        },
+        {
+            "query": "chaotic evil creature with high health and damage immunities",
+            "variant": "evil chaotic monster with significant hit points and damage resistances"
+        },
+        {
+            "query": "monster with multiattack and magic resistance that likes to grapple",
+            "variant": "creature featuring multiattack and resistance to magic that enjoys grappling"
+        },
+        {
+            "query": "strong fiend with brutal melee attacks and a high armor class",
+            "variant": "powerful fiend boasting severe melee strikes and excellent armor rating"
+        },
+        {
+            "query": "fiend with tremorsense and the ability to summon undead",
+            "variant": "creature possessing tremorsense and can call forth undead beings"
+        }
+    ]
+}

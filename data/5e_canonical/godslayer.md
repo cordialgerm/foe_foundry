@@ -1,6 +1,8 @@
 <MonsterName/>Godslayer</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>30</CR>
+<AC/>24 (natural armor)</AC>
+<HP/>580</HP>
 <summary>The Godslayer is a formidable creature, categorized as a huge construct. Its high challenge rating of 30 highlights its significant power, making it an incredibly dangerous opponent for any adventuring party. With an Armor Class of 24, the Godslayer is highly resistant to attacks, and its extensive hit points of 580 ensure that it can withstand a great deal of damage. Notably, it has the unique ability to target and affect immortal beings like gods, making it a special adversary in campaigns involving celestial or divine elements. However, despite its strengths in combat, it has no intelligence or capability to communicate, posing a challenge in character interactions. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Finally, the Godslayer has legendary actions it can use, including marking targe
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Godslayer
 
 *Huge* *Construct* *unaligned*
@@ -79,5 +82,6 @@ Source: 5e_artisinal_monsters
 - **Attack:** Makes one Energy Glaive or Rune Discus attack.
 - **Move:** Up to its speed with o provoking opportunity attacks.
 - **Rejuvenating Repair (2):** Regains 65 (10d12) hp.
+</statblock>
 
 

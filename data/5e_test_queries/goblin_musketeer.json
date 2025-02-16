@@ -1,0 +1,25 @@
+{
+    "name": "Goblin Musketeer",
+    "queries": [
+        {
+            "query": "small agile humanoid that uses muskets in battle",
+            "variant": "small humanoid that is agile and uses muskets in combat"
+        },
+        {
+            "query": "goblin creature with darkvision and high stealth skills",
+            "variant": "creature that is a goblin with darkvision and good stealth abilities"
+        },
+        {
+            "query": "low-level humanoid with ranged attacks that avoids close combat",
+            "variant": "low CR humanoid that prefers ranged combat and avoids melee"
+        },
+        {
+            "query": "small goblin with nimble escape ability and musket attacks",
+            "variant": "small goblin that can use nimble escape and attacks with a musket"
+        },
+        {
+            "query": "goblin musketeer tactics for effective ranged combat",
+            "variant": "tactics for goblin musketeer in ranged combat situations"
+        }
+    ]
+}

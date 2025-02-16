@@ -1,0 +1,25 @@
+{
+    "name": "Rakshasa, Myrmidon",
+    "queries": [
+        {
+            "query": "fiend that can resist magic and uses a forked scimitar",
+            "variant": "fiend that can resist magic and wields a forked scimitar"
+        },
+        {
+            "query": "medium lawful evil creature with special attack abilities in combat",
+            "variant": "medium lawful evil monster with unique attacks during combat"
+        },
+        {
+            "query": "Rakshasa that can disarm opponents and has darkvision",
+            "variant": "Rakshasa that can disarm enemies and possesses darkvision"
+        },
+        {
+            "query": "strong fiend with magical weapons and advantage on fear saves",
+            "variant": "powerful fiend with enchanted weapons and benefits against fear"
+        },
+        {
+            "query": "creature with high AC and combines melee and ranged attacks",
+            "variant": "monster with a high Armor Class that uses both melee and ranged attacks"
+        }
+    ]
+}

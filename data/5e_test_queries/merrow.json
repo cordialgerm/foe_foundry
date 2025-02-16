@@ -1,0 +1,25 @@
+{
+    "name": "Merrow",
+    "queries": [
+        {
+            "query": "large aquatic monster with sharp claws and jagged teeth",
+            "variant": "big water monster with sharp claws and jagged teeth"
+        },
+        {
+            "query": "monstrous sea creature that drags victims underwater",
+            "variant": "monster from the sea that pulls victims into the depths"
+        },
+        {
+            "query": "fierce deep-sea predator that uses harpoons",
+            "variant": "ferocious ocean predator using harpoons"
+        },
+        {
+            "query": "twisted merfolk variant that breathes underwater and air",
+            "variant": "corrupt merfolk type able to breathe both underwater and in the air"
+        },
+        {
+            "query": "cruel underwater hunter with high strength and melee attacks",
+            "variant": "savage water hunter with great strength and melee abilities"
+        }
+    ]
+}

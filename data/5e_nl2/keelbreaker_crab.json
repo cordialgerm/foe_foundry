@@ -1,0 +1,53 @@
+{
+    "name": "Keelbreaker Crab",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 40 ft., swim 40 ft.",
+    "role": "null",
+    "tags": [
+        "aquatic",
+        "siege",
+        "grappler"
+    ],
+    "adjectives": [
+        "durable",
+        "formidable",
+        "destructive"
+    ],
+    "description": "The Keelbreaker Crab is a Huge crustacean with impressive natural armor and massive pincers capable of grappling and crushing foes.",
+    "memorable": "It can unleash a powerful magical wail, causing fear, psychic damage, or stunning effects, while also being a menace to structures.",
+    "goals": "To dominate its environment and destroy barriers or structures with its siege capabilities.",
+    "relations": "It may be encountered near water, possibly with other aquatic monsters or creatures that thrive in similar environments.",
+    "environment": "Found in aquatic and terrestrial areas, highlighting its amphibious nature.",
+    "strengths": "High durability and the ability to deal double damage to objects and structures.",
+    "weaknesses": "Low intelligence limits its tactical capabilities and social interactions.",
+    "attacks": "Uses powerful pincer attacks and can grapple foes with its massive pincers.",
+    "most_powerful_ability": "Wail ability that can frighten, damage, or stun enemies within range.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense nearby creatures without sight.",
+    "skills": "Has proficiency in Perception and Stealth, making it capable of noticing hidden creatures and remaining undetected.",
+    "additional_information": [
+        "Living figureheads grant it combat advantages and unique abilities.",
+        "Each figurehead has resistances and immunities to certain damage types.",
+        "If all figureheads are destroyed, it cannot use the Wail ability.",
+        "Effective in both combat and siege scenarios.",
+        "Representing a significant threat due to its size and magical abilities."
+    ],
+    "damage_types": [
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive crab that causes psychic damage",
+        "aquatic monster with magical wail ability",
+        "giant crab capable of grappling enemies",
+        "crustacean that destroys structures easily",
+        "crab with magical figureheads and blinding wail"
+    ]
+}

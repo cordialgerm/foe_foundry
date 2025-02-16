@@ -1,0 +1,25 @@
+{
+    "name": "Infernal Knight",
+    "queries": [
+        {
+            "query": "fiendish knight that can regenerate health and captures souls",
+            "variant": "knight fiend that captures souls and can heal itself"
+        },
+        {
+            "query": "lawful evil knight with flame-based and necrotic attacks",
+            "variant": "evil lawful knight that uses necrotic damage and fire attacks"
+        },
+        {
+            "query": "medium-sized monster immune to fire and necrotic damage",
+            "variant": "monster of medium size with immunity to necrotic and fire damage"
+        },
+        {
+            "query": "knight with high strength and ability to track enemies",
+            "variant": "strong knight that can track foes effectively"
+        },
+        {
+            "query": "formidable fiend that can create portals and has high AC",
+            "variant": "tough fiend that creates rifts and has a high armor class"
+        }
+    ]
+}

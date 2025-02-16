@@ -1,0 +1,53 @@
+{
+    "name": "Abaasy",
+    "creature_type": "Giant",
+    "alignment": "neutral evil",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 18,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "berserk"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "chaotic"
+    ],
+    "description": "The Abaasy is a massive giant bearing iron plates bolted to its body, equipped with dual shields for enhanced defense. It exudes an aura of chaos, ready to plunge into battle with sheer physical power.",
+    "memorable": "The Abaasy's ability to go berserk makes it a terrifying foe that can shift the battle's momentum in an instant, becoming an unrelenting attacker as it fights in a frenzied state.",
+    "goals": "The Abaasy typically seeks to dominate its foes through overwhelming force, reveling in chaos and destruction on the battlefield.",
+    "relations": "The Abaasy may be encountered alongside other giants or be a part of a larger chaotic entity's forces.",
+    "environment": "It is usually found in desolate or mountainous regions where it can cause significant disruption.",
+    "strengths": "Exceptionally high strength and constitution, formidable melee capabilities, and resistance to cold damage.",
+    "weaknesses": "Poor depth perception, which imposes disadvantage on attacks against distant targets.",
+    "attacks": "The Abaasy can unleash multiple melee attacks with its Iron Axe or thrust with its Spear, and it can also execute a Shield Shove to knock opponents prone.",
+    "most_powerful_ability": "Eyebeam, which can devastate multiple foes in a line with radiant damage.",
+    "equipment": "Dual Shields that enhance its armor class.",
+    "senses": "Passive perception of 15, allowing it to notice details effectively.",
+    "skills": "Average perception skills, enabling it to notice its surroundings but not exceptionally keen.",
+    "additional_information": [
+        "It goes berserk when wounded, gaining resistance to damage.",
+        "It can attack objects when no creatures are nearby.",
+        "Its attacks can knock enemies prone or push them away.",
+        "Has a unique combination of durability and offensive capabilities.",
+        "Can fire a powerful energy beam once recharged."
+    ],
+    "damage_types": [
+        "radiant",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic giant warrior",
+        "berserk combat giant",
+        "dual shield giant",
+        "Abaasy abilities",
+        "radiant damage giant"
+    ]
+}

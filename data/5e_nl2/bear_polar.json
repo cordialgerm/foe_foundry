@@ -1,0 +1,51 @@
+{
+    "name": "Polar Bear",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 60,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 ft., swim 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "cold environment",
+        "melee combatant"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "strong",
+        "dangerous"
+    ],
+    "description": "The Polar Bear is a large beast characterized by its significant physical prowess, with a powerful build and wild fur suited for cold environments, making it a formidable opponent in combat.",
+    "memorable": "Its increased effective perception by scent makes it a fearsome tracker in icy habitats.",
+    "goals": "Typically preys on seals and other marine life, using brute strength to overcome rivals.",
+    "relations": "Often found in the arctic regions, they may share their habitat with other cold-weather animals.",
+    "environment": "Cold environments, particularly the Arctic and subarctic regions.",
+    "strengths": "Exceptional strength allows powerful melee attacks and grappling capabilities.",
+    "weaknesses": "Low intelligence and charisma suggests poor social interaction and strategy.",
+    "attacks": "Utilizes a Multiattack with a Bite and Claws, capable of significant damage and controlling an opponent through grappling.",
+    "most_powerful_ability": "Heightened Smell allows it to track creatures effectively with a Perception of 18.",
+    "equipment": null,
+    "senses": "Heightened sense of smell enhances tracking ability.",
+    "skills": null,
+    "additional_information": [
+        "Bite attack deals 9 piercing damage.",
+        "Claws attack deals 12 slashing damage.",
+        "Grapples target to restrict movement if both attacks hit.",
+        "Durable with 60 hit points.",
+        "Significant threat to adventurers unprepared for melee combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "fierce arctic predator",
+        "large cold environment beast",
+        "powerful polar wildlife",
+        "mighty bear with grapple",
+        "ice-dwelling combat creature"
+    ]
+}

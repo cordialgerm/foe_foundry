@@ -1,6 +1,8 @@
 <MonsterName/>Fallen Solar</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>21</CR>
+<AC/>21</AC>
+<HP/>319</HP>
 <summary>The Fallen Solar is a formidable Large Celestial creature, known for its exceptional power and radiant presence. With an impressive Armor Class of 21 and a massive hit point pool of 319, it stands as a significant challenge to adventurers, boasting a Challenge Rating of 21, which translates to 33,000 experience points. The Fallen Solar excels at both melee combat and spellcasting, leveraging its high Strength and Charisma scores to enhance its physical attacks and magical abilities. Notably, it can soar through the skies at a flying speed of 150 feet and possesses remarkable resilience against various damage types. However, it is vulnerable to radiant damage, which can be exploited by cunning foes.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Fallen Solar is a powerful and complex entity capable of both deali
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Fallen Solar
 
 *Large* *Celestial*
@@ -78,5 +81,6 @@ Source: 5e_artisinal_monsters
 - **Approach! The creature must use its reaction:** 
 - **Flee! The creature must use its reaction:** 
 - **Surrender! The creature drops anything it is holding:** 
+</statblock>
 
 

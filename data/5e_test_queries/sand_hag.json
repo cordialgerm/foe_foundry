@@ -1,0 +1,25 @@
+{
+    "name": "Sand Hag",
+    "queries": [
+        {
+            "query": "chaotic evil fey creature that manipulates sand",
+            "variant": "fey creature that is chaotic evil and manipulates the sand"
+        },
+        {
+            "query": "medium size monster that can mimic sounds and walk through sand",
+            "variant": "monster of medium size that walks easily through sand and mimics sounds"
+        },
+        {
+            "query": "sand hag abilities including magical resistance and claw attacks",
+            "variant": "abilities of sand hag like claw attacks and magic resistance"
+        },
+        {
+            "query": "desert dwelling fey that uses illusions and has high agility",
+            "variant": "fey creature that dwells in deserts and uses illusions with good agility"
+        },
+        {
+            "query": "Fey creature with strong offensive spells and high hit points",
+            "variant": "creature of fey type that has high hit points and powerful offensive spells"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Rime Worm",
+    "creature_type": "Elemental",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 feet walking and burrowing",
+    "role": null,
+    "tags": [
+        "elemental",
+        "cold",
+        "ambush",
+        "burrowing"
+    ],
+    "adjectives": [
+        "icy",
+        "formidable",
+        "versatile",
+        "stealthy"
+    ],
+    "description": "The Rime Worm is a large elemental creature embodying the harshness of winter, with an icy body that deals cold damage to attackers. It navigates through icy terrains effortlessly.",
+    "memorable": "It can petrify foes in ice, making it a formidable enemy in icy landscapes.",
+    "goals": "To dominate in icy habitats, ambushing unsuspecting creatures.",
+    "relations": "Typically found in frigid regions, it may share environments with other cold-based creatures.",
+    "environment": "Icy environments, such as snowy landscapes and frozen grounds.",
+    "strengths": "High Strength and Constitution, immunity to cold damage, and abilities that control the battlefield.",
+    "weaknesses": "Low Intelligence and Charisma, making it limited in social interactions.",
+    "attacks": "Makes two Rime Tendril attacks dealing bludgeoning and cold damage, can grapple foes, and has an area attack with Black Ice Spray.",
+    "most_powerful_ability": "Freeze Prey, which can petrify a grappled target with cold effects.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet.",
+    "skills": "Proficient in Stealth checks in snowy terrain, giving it an advantage for hiding.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Imposes difficult terrain with its Black Ice Spray ability.",
+        "Utilizes snow camouflage to ambush.",
+        "Burrows through snow and ice without penalty.",
+        "Strong in environment control."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large icy elemental creature",
+        "winter-themed ambush monster",
+        "creature that can petrify enemies with ice",
+        "burrowing elemental found in snow",
+        "Rime Worm cold damage attacks"
+    ]
+}

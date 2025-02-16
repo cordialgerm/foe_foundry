@@ -1,0 +1,25 @@
+{
+    "name": "Leashed Lesion",
+    "queries": [
+        {
+            "query": "large chaotic evil monster with a health-draining ability",
+            "variant": "big evil monster that drains health and is chaotic"
+        },
+        {
+            "query": "monster with natural armor that uses necrotic damage",
+            "variant": "creature with natural armor and attacks with necrotic damage"
+        },
+        {
+            "query": "aberration that has a symbiotic tether and blindsight",
+            "variant": "aberration using symbiotic tether and has blindsight"
+        },
+        {
+            "query": "monster that regains health through its attacks",
+            "variant": "creature that heals itself when attacking"
+        },
+        {
+            "query": "Leashed Lesion combat tactics with Life Tether and Draining Burst",
+            "variant": "tactics for Leashed Lesion including Life Tether and High Damage Burst moves"
+        }
+    ]
+}

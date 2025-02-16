@@ -1,0 +1,50 @@
+{
+    "name": "Dragon Cultist",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 39,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "cultist",
+        "spellcaster",
+        "dragon"
+    ],
+    "adjectives": [
+        "manipulative",
+        "devoted",
+        "resilient"
+    ],
+    "description": "The Dragon Cultist is a medium humanoid with a twisted devotion to dragon masters. They wield a dagger and are skilled in deception and persuasion.",
+    "memorable": "Their ability to resist mental effects makes them a challenging opponent.",
+    "goals": "To serve their dragon masters and spread their influence.",
+    "relations": "Related to other dragon cultists and dragons.",
+    "environment": "Can be found in places where dragon cults have taken root.",
+    "strengths": "Good Dexterity, Wisdom, and spellcasting abilities enhance their agility and manipulation.",
+    "weaknesses": "Average Strength and Intelligence limit their physical effectiveness in combat.",
+    "attacks": "Utilizes a dagger for melee or ranged attacks and has powerful spells like Inflict Wounds and Hold Person.",
+    "most_powerful_ability": "Hold Person can paralyze a foe, making them vulnerable to attack.",
+    "equipment": "Dagger",
+    "senses": "Passive Perception of 12.",
+    "skills": "Proficient in deception and persuasion, making them skilled social manipulators.",
+    "additional_information": [
+        "Immune to one damage type from their dragon master's breath weapon",
+        "Advantage on saving throws against being charmed or frightened",
+        "4th level spellcaster with a spell save DC of 12",
+        "Prepared spells include damage and control options",
+        "Can cause substantial harm with necrotic damage attacks"
+    ],
+    "damage_types": [],
+    "spellcasting": "4th level spellcaster using Wisdom; prepares various spells including damage and control options.",
+    "test_queries": [
+        "dragon worshiping humanoid",
+        "cultist with powerful spells",
+        "manipulative spellcaster serving dragons",
+        "humanoid creature with a dagger",
+        "cultist that can paralyze enemies"
+    ]
+}

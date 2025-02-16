@@ -1,0 +1,25 @@
+{
+    "name": "Ice Worm",
+    "queries": [
+        {
+            "query": "gargantuan monster that burrows through earth and senses heat",
+            "variant": "gargantuan creature that senses heat and tunnels through the ground"
+        },
+        {
+            "query": "powerful icy predator with a venomous tail and the ability to swallow prey",
+            "variant": "strong icy predator with a poison stinger and the capability to consume prey"
+        },
+        {
+            "query": "massive worm-like creature that inflicts acid damage and has a high Armor Class",
+            "variant": "huge worm creature with a high AC that deals acid damage"
+        },
+        {
+            "query": "monstrous worm with debilitating venom that hunts warm-blooded creatures",
+            "variant": "monstrous ice worm that targets warm-blooded prey and has poisonous attacks"
+        },
+        {
+            "query": "Ice Worm combat tactics featuring multiattack and burrowing abilities",
+            "variant": "tactics of Ice Worm in battle using multiattack and tunneling skills"
+        }
+    ]
+}

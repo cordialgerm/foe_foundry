@@ -1,0 +1,25 @@
+{
+    "name": "Spymaster",
+    "queries": [
+        {
+            "query": "cunning humanoid that excels in stealth and deception",
+            "variant": "humanoid that is cunning and specializes in stealth and trickery"
+        },
+        {
+            "query": "tactical monster with high dexterity and assassination skills",
+            "variant": "monster with high dexterity and tactical assassination abilities"
+        },
+        {
+            "query": "stealthy humanoid that can apply poison to weapons",
+            "variant": "humanoid that applies dangerous poison on melee weapons"
+        },
+        {
+            "query": "combat creature with evasion and sneak attack abilities",
+            "variant": "creature with sneak attack and evasion combat abilities"
+        },
+        {
+            "query": "humanoid with disguise abilities lurking in the shadows",
+            "variant": "humanoid that can disguise itself and lurks in shadows"
+        }
+    ]
+}

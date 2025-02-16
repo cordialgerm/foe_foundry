@@ -1,0 +1,25 @@
+{
+    "name": "Haladron",
+    "queries": [
+        {
+            "query": "tiny celestial being that can heal allies and fly",
+            "variant": "tiny celestial creature that flies and heals friends"
+        },
+        {
+            "query": "angelic creature immune to exhaustion and poison with radiant resistance",
+            "variant": "angelic being resistant to radiant damage and immune to poisoned and exhaustion"
+        },
+        {
+            "query": "haladron support character with flyby ability and limited attacking power",
+            "variant": "haladron as a support character with flyby ability and not much offensive power"
+        },
+        {
+            "query": "celestial creature with darkvision that uses magic and telepathy",
+            "variant": "celestial being with darkvision capable of using magic and telepathic communication"
+        },
+        {
+            "query": "small angel that embodies lawful good and has a healing action",
+            "variant": "small angelic figure representing lawful good with a healing ability"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Half-Shadow Dragon Assassin",
+    "queries": [
+        {
+            "query": "stealthy dragon humanoid that uses poison",
+            "variant": "stealthy humaniod dragon that uses poisun"
+        },
+        {
+            "query": "medium agile assassin with necrotic breath attack",
+            "variant": "medium agile assasin with necrotic breath attak"
+        },
+        {
+            "query": "humanoid that excels in ambush tactics and uses shadows",
+            "variant": "humanoid that is good in ambush tactics and uses shadoes"
+        },
+        {
+            "query": "assassin that combines dragon traits with stealth abilities",
+            "variant": "assasin that mixes dragon traits with stealth abilities"
+        },
+        {
+            "query": "creature with darkvision and deadly sneak attacks",
+            "variant": "creature with dark vision and deadly sneak atacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Coralfish",
+    "queries": [
+        {
+            "query": "small aquatic monster with a petrifying bite",
+            "variant": "small water creature that has a petrifying bite"
+        },
+        {
+            "query": "monstrosity that can only breathe underwater and has good swimming speed",
+            "variant": "creature that can only breathe in water and has a high swimming speed"
+        },
+        {
+            "query": "Coralfish abilities and aquatic habitat",
+            "variant": "Coralfish skills and its living environment in water"
+        },
+        {
+            "query": "monster that turns foes into statues with its bite in water",
+            "variant": "creature that petrifies enemies into statues with its bite while in water"
+        },
+        {
+            "query": "dexterous fish-like monster that is weak on land",
+            "variant": "agile fish-type monster that struggles on land"
+        }
+    ]
+}

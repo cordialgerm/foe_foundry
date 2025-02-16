@@ -1,6 +1,8 @@
 <MonsterName/>Camel</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>9</AC>
+<HP/>15</HP>
 <summary>The Camel is a large, long-legged mammal well-adapted to surviving in desert environments. With its humped back and thick, resilient skin, a camel can travel long distances across arid landscapes with little water. Camels are commonly used as mounts or beasts of burden, known for their endurance and ability to carry heavy loads through harsh climates. Though generally docile, camels can become aggressive when threatened, using their powerful legs to kick at predators or intruders. They are often found in desert caravans, serving as essential transportation for nomadic peoples and traders.</summary>
 
 <summary>The Camel is a Medium-sized beast that primarily serves as a mount or pack animal, often utilized in arid environments where its speed and endurance can shine. With an Armor Class of 10, it has limited defenses against attacks, making it vulnerable compared to combat-focused creatures. Its Hit Points total 15, which allows it to sustain some damage before falling in battle. The Camel has a walking speed of 50 feet, granting it good mobility. Given its Challenge Rating of 1/8, it represents a minor challenge for adventurers, granting only 25 experience points upon defeat. </summary>
@@ -29,6 +31,7 @@ Overall, the camel is not just a simple beast but can be utilized effectively in
 
 Source: 5e_srd
 
+<statblock>
 ### Camel
 
 *Large beast, unaligned*
@@ -51,7 +54,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.
+***Bite***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 2 (1d4) bludgeoning damage.</statblock>
+
 
 
 
@@ -59,6 +63,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Camel
 
 *Medium* *Beast*
@@ -82,6 +87,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
 
+</statblock>
 
 
 
@@ -90,6 +96,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Camel
 
 *Large beast*
@@ -118,5 +125,6 @@ Source: 5e_artisinal_monsters
 - **Bite.** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) bludgeoning damage.
 - **Bile Spit.** Ranged Weapon Attack: +2 to hit, range 20/60 ft., one creature. Hit: 2 (1d4) acid damage, and the target must succeed on a DC 12 CON save or be smelly for 1 hour or until a creature spends 1 minute cleaning off the spit. A smelly creature has disadvantage on CHA checks.
 
+</statblock>
 
 

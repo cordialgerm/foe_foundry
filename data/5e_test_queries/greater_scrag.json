@@ -1,0 +1,25 @@
+{
+    "name": "Greater Scrag",
+    "queries": [
+        {
+            "query": "large swamp monster that regenerates health",
+            "variant": "large monster in swamps that can heal itself"
+        },
+        {
+            "query": "chaotic evil creature with blood frenzy ability",
+            "variant": "evil chaotic creature having blood frenzy"
+        },
+        {
+            "query": "monstrosity that can breathe underwater and attacks from water",
+            "variant": "water attacking monstrosity that breathes both air and water"
+        },
+        {
+            "query": "strong creature with high hit points that lives in murky water",
+            "variant": "powerful creature with lots of hit points found in muddy waters"
+        },
+        {
+            "query": "monster with multiattack that lurks in swamps",
+            "variant": "swamp lurking monster that can make multiple attacks"
+        }
+    ]
+}

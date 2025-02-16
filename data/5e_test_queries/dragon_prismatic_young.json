@@ -1,0 +1,25 @@
+{
+    "name": "Prismatic Young Dragon",
+    "queries": [
+        {
+            "query": "large dragon with radiant damage immunity and spellcasting abilities",
+            "variant": "dragon that is large immunity to radiant damage and has spellcasting powers"
+        },
+        {
+            "query": "powerful dragon that can charm humanoids and uses light beams",
+            "variant": "strong dragon that charm humanoids and beams of light"
+        },
+        {
+            "query": "dragon with high Constitution and strong melee attacks",
+            "variant": "dragon that has a high Constitution and good melee attacks"
+        },
+        {
+            "query": "medium-sized dragon with darkvision and blindsight",
+            "variant": "medium dragon that can see in the dark and has blindsight"
+        },
+        {
+            "query": "Prismatic Young Dragon's appearance and combat tactics",
+            "variant": "appearance of Prismatic Young Dragon and how it fights"
+        }
+    ]
+}

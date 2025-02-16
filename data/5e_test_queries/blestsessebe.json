@@ -1,0 +1,25 @@
+{
+    "name": "Blestsessebe",
+    "queries": [
+        {
+            "query": "large celestial guardian with magic resistance and mobility abilities",
+            "variant": "big celestial protector that has magic resistance and mobility powers"
+        },
+        {
+            "query": "blessed creature that can distract enemies and enhance allies' speed",
+            "variant": "celestial being that can distract foes and boost allies' movement speed"
+        },
+        {
+            "query": "neutral goodness celestial that charges at enemies and knocks them prone",
+            "variant": "good aligned celestial creature that charges at foes and takes them down"
+        },
+        {
+            "query": "guardian with a significant hit point pool and strong melee attacks",
+            "variant": "protector with a large health pool and powerful melee strikes"
+        },
+        {
+            "query": "agile celestial that counters magical effects and uses hooves in combat",
+            "variant": "nimble celestial that resists magical attacks and uses hooves during fights"
+        }
+    ]
+}

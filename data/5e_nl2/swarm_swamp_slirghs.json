@@ -1,0 +1,52 @@
+{
+    "name": "Swarm of Swamp Slirghs",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 66,
+    "ac": 10,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., swim 40 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "swamp",
+        "poison"
+    ],
+    "adjectives": [
+        "swampy",
+        "poisonous",
+        "swarming"
+    ],
+    "description": "Large swamp-dwelling elemental composed of slirghs, capable of maneuvering through water and creating an effective offensive presence.",
+    "memorable": "Can teleport through water, creating surprises in combat and dealing significant poison damage.",
+    "goals": "To inhabit wetlands and ambush unsuspecting creatures that venture too close.",
+    "relations": "May be found in the company of other elemental creatures or lurking in the swamps.",
+    "environment": "Wetlands and swamps.",
+    "strengths": "Immunity to poison and a variety of conditions, along with the ability to teleport in water.",
+    "weaknesses": "Low armor class and predictable strategies due to low intelligence and charisma.",
+    "attacks": "Can bite for piercing and poison damage, and spit swamp sludge for ranged poison damage.",
+    "most_powerful_ability": "Puddle Jump allows for strategic teleportation through water, enhancing mobility in combat.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 60 feet, enhancing its awareness of nearby creatures.",
+    "skills": "Skilled in perception with a +2 bonus, improving its ability to detect hidden threats.",
+    "additional_information": [
+        "Can occupy the same space as other creatures.",
+        "Poisoned creatures near the swarm may suffer debilitating effects.",
+        "Has resistance to bludgeoning, piercing, and slashing damage.",
+        "Effective at ambushing enemies in aquatic environments.",
+        "The swarm's combat effectiveness declines as its hit points drop."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swamp elemental that teleports through water",
+        "poisonous swamp monster with teleporting ability",
+        "large creature that inflicts damage in water",
+        "swarm of creatures dealing poison damage",
+        "elemental creature found in wetlands"
+    ]
+}

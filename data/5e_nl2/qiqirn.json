@@ -1,0 +1,50 @@
+{
+    "name": "Qiqirn",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 38,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "necrotic",
+        "fear"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "sneaky"
+    ],
+    "description": "The Qiqirn is a small, agile monstrosity known for its stealth, with a keen sense of smell and a notable presence on the battlefield.",
+    "memorable": "Its ability to instill fear through vocalizations and its necrotic damage adds psychological depth to its combat capabilities.",
+    "goals": "The Qiqirn typically seeks to surprise and outmaneuver its foes, using stealth and fear to gain the upper hand.",
+    "relations": "It is often found in the company of other cunning monsters and can be seen working alongside creatures that prefer ambush tactics.",
+    "environment": "The Qiqirn can thrive in forests, swamps, or any area where it can easily hide and use its agility.",
+    "strengths": "High Dexterity and stealth capabilities allow it to remain hidden and strike effectively from the shadows.",
+    "weaknesses": "Its low intelligence makes it vulnerable to strategic manipulation and mental challenges.",
+    "attacks": "The Qiqirn can deliver a biting attack that deals piercing and necrotic damage, with the potential to knock foes prone.",
+    "most_powerful_ability": "Horrifying Wail instills fear in opponents when it takes damage, providing a defense mechanism that disrupts its enemies.",
+    "equipment": null,
+    "senses": "It has keen senses due to its Keen Smell ability, giving it an advantage on smell-related perception checks.",
+    "skills": "Skilled in perception and stealth, enhancing its ability to avoid detection and notice threats.",
+    "additional_information": [
+        "Possesses resistance to necrotic damage.",
+        "Can be frightened by intimidation if it fails a Wisdom saving throw.",
+        "Uses a unique Spirit-infused Yip to inflict necrotic damage."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sneaky small monster with fear abilities",
+        "agile creature that uses necrotic damage",
+        "cunning beast known for stealth and bite",
+        "monstrosity that frightens enemies with wails",
+        "sharp-sensed creature that excels in hiding"
+    ]
+}

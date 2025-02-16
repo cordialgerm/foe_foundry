@@ -1,0 +1,54 @@
+{
+    "name": "Queen of Witches",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 218,
+    "ac": 18,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 50 ft., fly 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "spellcaster",
+        "boss"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "manipulative"
+    ],
+    "description": "The Queen of Witches is a massive, imposing figure known for her powerful spellcasting and her ability to control the battlefield. She wields the Moonsilver Ring, adorned with radiant power, enhancing her already formidable melee attacks.",
+    "memorable": "Her ability to absorb spells and regain health, as well as her devastating Spray of Moonlight, make her a terrifying opponent.",
+    "goals": "To maintain control over her domain and manipulate those around her.",
+    "relations": "May serve as a leader to lesser fey creatures or witches, and could be related to other magical beings.",
+    "environment": "Often found in enchanted forests or areas where magic is strong, likely during the night when moonlight is abundant.",
+    "strengths": "High Armor Class, significant hit points, and resistance to several damage types. Her ability to absorb spells and regenerate health provides unmatched resilience.",
+    "weaknesses": "Primarily vulnerable to cold iron weapons, which bypass her damage resistance.",
+    "attacks": "Utilizes a combination of melee attacks with her Moonsilver Ring and ranged attacks with Mystical Blast, dealing slashing and radiant damage.",
+    "most_powerful_ability": "Her Spray of Moonlight can deal massive radiant damage and has the potential to blind enemies, while her absorb spell ability allows her to regain health.",
+    "equipment": "Moonsilver Ring, enhances her melee damage and provides radiant attacks.",
+    "senses": "Possesses truesight up to 60 feet, allowing her to see through illusions and magical darkness, as well as a high passive perception of 20.",
+    "skills": "Proficient in Arcana, Deception, History, Insight, and Perception, making her adept in both combat and social situations.",
+    "additional_information": [
+        "Immunity to being blinded, charmed, or frightened.",
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Legendary Resistance allows her to succeed on failed saving throws three times a day.",
+        "Token of Favor ability grants allies magic resistance at her discretion.",
+        "Has access to powerful spells like power word kill and true polymorph."
+    ],
+    "damage_types": [
+        "radiant",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": "Can cast spells at will, including faerie fire and silent image; can cast higher-level spells like power word kill and true polymorph.",
+    "test_queries": [
+        "powerful fey spellcaster with radiant abilities",
+        "large witch that manipulates the battlefield",
+        "magical queen with devastating moonlight attacks",
+        "spellcaster immune to charms and fear",
+        "formidable adversary with healing spells"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Cloaker",
+    "queries": [
+        {
+            "query": "dark manta ray creature that lurks in shadows and suffocates victims",
+            "variant": "dark manta ray monster that hides in shadows and suffocates prey"
+        },
+        {
+            "query": "large dark creature with whip-like tails that attacks from above",
+            "variant": "big dark monster with long tails that strikes from above"
+        },
+        {
+            "query": "creature that disguises as a cloak and uses psychic moans to frighten",
+            "variant": "monster that pretends to be a cloak and uses scary moans to terrify"
+        },
+        {
+            "query": "intelligent creature that combines combat skills and deception in caverns",
+            "variant": "smart monster that mixes fighting skills and trickery in caves"
+        },
+        {
+            "query": "stealthy aberration that suffers in bright light and has damage transfer ability",
+            "variant": "sneaky aberration that is weak in bright light and can transfer damage"
+        }
+    ]
+}

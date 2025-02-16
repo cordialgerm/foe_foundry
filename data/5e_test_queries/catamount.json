@@ -1,0 +1,25 @@
+{
+    "name": "Catamount",
+    "queries": [
+        {
+            "query": "large earth-manipulating monstrosity with strong physical attacks",
+            "variant": "large monstrosity that manipulates earth and has strong physical attacks"
+        },
+        {
+            "query": "high hit points creature that uses stone walls to control the battlefield",
+            "variant": "creature with high hit points that controls the battlefield using stone walls"
+        },
+        {
+            "query": "feline-like monster known for its multiattack and terrain manipulation",
+            "variant": "monster resembling a feline that excels in multiattack and terrain control"
+        },
+        {
+            "query": "combat-oriented monstrosity with good dexterity saves and tremorsense",
+            "variant": "monstrosity focused on combat with excellent dexterity saving throws and tremorsense"
+        },
+        {
+            "query": "Catamount's special ability to create fissures and knock enemies prone",
+            "variant": "special ability of the Catamount that opens fissures and knocks foes prone"
+        }
+    ]
+}

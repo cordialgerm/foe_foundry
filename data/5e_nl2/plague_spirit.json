@@ -1,0 +1,55 @@
+{
+    "name": "Plague Spirit",
+    "creature_type": "Fey",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 150,
+    "ac": 14,
+    "srd": false,
+    "cr": "9",
+    "movement": "speed of 40 feet",
+    "role": "Controller",
+    "tags": [
+        "fey",
+        "spirit",
+        "necrotic",
+        "undead"
+    ],
+    "adjectives": [
+        "formidable",
+        "decaying",
+        "agile",
+        "perceptive"
+    ],
+    "description": "The Plague Spirit embodies decay and despair, marked by a cloud of green mist surrounding it. It has a spectral presence, exuding a menacing aura.",
+    "memorable": "Its ability to inflict aging effects and diminish foes' Strength makes it a terrifying adversary.",
+    "goals": "To weaken and incapacitate living creatures it encounters.",
+    "relations": "Might be encountered alongside other fey creatures or undead.",
+    "environment": "Associated with areas plagued by decay and despair, often surrounded by a sickly mist.",
+    "strengths": "Immunity to necrotic and poison damage, powerful multiattack abilities, and the ability to create debilitating mist.",
+    "weaknesses": "Low Intelligence limits tactical communication; its mist doesn't affect undead or constructs.",
+    "attacks": "Uses multiattack with Enfeebling Touch and a Censer, dealing both bludgeoning and necrotic damage.",
+    "most_powerful_ability": "Dance of Death creates a large area of frightful necrotic damage that also causes fear.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunity to several conditions including charm and poison.",
+        "Capable of sensing living creatures within a 50-mile radius.",
+        "Aging effect from Decrepit Mist can significantly impact long-term adventurers.",
+        "Can weaken foes by reducing their Strength effectively leading to their demise.",
+        "The combination of high Dexterity and Wisdom makes it elusive and difficult to combat."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spirit that embodies decay and despair",
+        "fey creature surrounded by sickly mist",
+        "monster with powerful necrotic attacks",
+        "creature that weakens foes with aging effects",
+        "agile spirit capable of causing fear"
+    ]
+}

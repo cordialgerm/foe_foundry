@@ -1,6 +1,8 @@
 <MonsterName/>Gilded Devil</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>7</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>112</HP>
 <summary>The Gilded Devil is a medium-sized fiend known for embodying lawful evil nature. It excels in deception and manipulation while wielding potent magical abilities that can turn the tide of battle. With a high Armor Class of 16 and significant hit points totaling 112, it proves to be a resilient opponent. The Gilded Devil's strength lies in its powerful attacks and spellcasting capabilities, as well as its proficiency in persuading and deceiving others. However, it is vulnerable to silvered weapons and is primarily reliant on its spells for crowd control and manipulation. The Gilded Devil represents both physical prowess and cunning intellect, making it a dangerous adversary.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ As a bonus action, the Gilded Devil can use Betrayal of Riches, which targets a 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gilded Devil
 
 *Medium* *Fiend* *Lawful Evil*
@@ -62,5 +65,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Betrayal of Riches (Recharge 4–6):** One creature wearing jewelry (an object made of precious material and worth at least 100 gp) the gilded devil can see within 60 feet of it must make a DC 15 Wisdom saving throw. On a failure, the target takes 13 (3d8) bludgeoning damage and suffers an effect until it finishes a short rest. The effect is based on the location of the worn jewelry (devil’s choice if worn in multiple locations): on upper limbs, its melee damage is halved; on lower limbs, its speed is halved; on head, it is blinded or deafened (devil’s choice); on body, it has vulnerability to bludgeoning damage. On a success, the target takes half the damage and doesn’t suffer an additional effect.
+</statblock>
 
 

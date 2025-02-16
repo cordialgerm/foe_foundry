@@ -1,0 +1,53 @@
+{
+    "name": "Ettercap",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 54,
+    "ac": 13,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet walking, 30 feet climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "spider",
+        "ambush",
+        "predator"
+    ],
+    "adjectives": [
+        "humanoid",
+        "twisted",
+        "hair-covered",
+        "cunning",
+        "dangerous"
+    ],
+    "description": "The Ettercap is a twisted, humanoid spider-like creature with a hunched body, long claws, and a grotesque face featuring mandibles capable of spinning webs.",
+    "memorable": "Ettercaps are skilled trappers, weaving intricate webs to capture their prey, including unsuspecting adventurers.",
+    "goals": "To lie in ambush and capture prey using webs and cunning tactics.",
+    "relations": "Often found alongside giant spiders and other arachnids, under their command.",
+    "environment": "Dark forests and caves, often making their lairs among the remains of past victims.",
+    "strengths": "Excellent at ambushing foes with stealth and climbing abilities; can control the battlefield with webs.",
+    "weaknesses": "Low intelligence limits tactical options; average defenses make it vulnerable when caught out in the open without webs.",
+    "attacks": "A Multiattack style using Bite and Claw strikes, along with debilitating webbing for restraining foes.",
+    "most_powerful_ability": "The ability to restrain and control enemies with webs, drastically altering combat dynamics.",
+    "senses": "Possesses Web Sense, knowing the location of any creatures in contact with its webs.",
+    "skills": "Good at Stealth and Perception, allowing it to effectively navigate and ambush prey.",
+    "additional_information": [
+        "Can command and communicate with spiders nearby.",
+        "Utilizes Spider Climb to navigate vertical surfaces effortlessly.",
+        "The webs it produces have specific weaknesses, making their destruction tactical.",
+        "Known for creating lairs filled with the cocoons of past victims.",
+        "Cunning predator that relies on stealth and traps."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "spider-like creature in dark forests",
+        "humanoid predator that sets traps",
+        "cunning web-weaving monster",
+        "monster that controls giant spiders",
+        "dangerous creature with poisonous bite"
+    ]
+}

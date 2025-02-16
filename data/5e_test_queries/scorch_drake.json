@@ -1,0 +1,25 @@
+{
+    "name": "Scorch Drake",
+    "queries": [
+        {
+            "query": "large dragon from fiery environments with fire breath ability",
+            "variant": "big drake from hot places with a fire breath attack"
+        },
+        {
+            "query": "fire monster that can create illusions and inflicts fire damage",
+            "variant": "flame creature that creates illusions and deals fire damage"
+        },
+        {
+            "query": "dragon with high Constitution and low Intelligence that lives in heat",
+            "variant": "drake with good Constitution and poor Intelligence living in hot areas"
+        },
+        {
+            "query": "monster that ignites attackers and has good mobility with flying",
+            "variant": "creature that sets attackers on fire and moves well while flying"
+        },
+        {
+            "query": "Scorch Drake abilities like Fan the Flames and Heat Shimmer",
+            "variant": "abilities of the Scorch Drake such as Heat Shimmer and Fan the Flames"
+        }
+    ]
+}

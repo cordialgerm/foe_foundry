@@ -1,0 +1,50 @@
+{
+    "name": "Kitsune",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 49,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "shapeshifter",
+        "trickster",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "versatile",
+        "cunning",
+        "deceptive"
+    ],
+    "description": "The Kitsune is a small, fox-like fey known for its magical abilities and trickster nature, often appearing in a humanoid form with a fine coat of fur.",
+    "memorable": "Its ability to shapeshift and cast powerful spells makes the Kitsune a formidable trickster and manipulator.",
+    "goals": "The Kitsune typically aims to outwit opponents and escape danger while engaging in playful deception.",
+    "relations": "Kitsune are often related to other fey creatures, serving as tricksters or allies to nature spirits.",
+    "environment": "Kitsune are usually found in forests or magical realms, where they can play tricks on travelers.",
+    "strengths": "The Kitsune has significant magical versatility and agility, making it a challenging opponent in both combat and social interactions.",
+    "weaknesses": "Its low physical strength makes it struggle in direct combat situations where brute force is necessary.",
+    "attacks": "In combat, the Kitsune can perform a multiattack, striking with a rapier and dagger in humanoid form, or using bites in fox form.",
+    "most_powerful_ability": "The Kitsune's most powerful ability is its innate spellcasting, allowing it to cast spells like Invisibility and Major Image without using material components.",
+    "equipment": null,
+    "senses": "The Kitsune has darkvision out to 60 feet, enhancing its ability to perceive hidden threats.",
+    "skills": "The Kitsune possesses a +4 proficiency in perception, allowing it to notice hidden threats or clues easily.",
+    "additional_information": [
+        "Shapechanger ability allows it to switch forms at will.",
+        "Innate spellcasting based on Charisma, with a spell save DC of 12.",
+        "Can cast spells like Detect Thoughts and Fire Bolt at will.",
+        "Has the ability to disguise itself and instill fear in others.",
+        "Can fly and create illusions using its powerful magic."
+    ],
+    "damage_types": [],
+    "spellcasting": "The Kitsune can innately cast spells including detect thoughts, fire bolt, and invisibility at will.",
+    "test_queries": [
+        "deceptive fox fey with magical abilities",
+        "shapechanging fey that casts spells",
+        "clever trickster known for illusions",
+        "magical creature that transforms into humanoid",
+        "small fey with powerful innate spells"
+    ]
+}

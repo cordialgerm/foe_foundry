@@ -1,6 +1,8 @@
 <MonsterName/>Giant Toad</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>39</HP>
 <summary>A Giant Toad is a large, amphibious predator that lives near swamps, ponds, and other bodies of water. Its rough, warty skin provides camouflage in its natural habitat, and its long, sticky tongue allows it to snatch prey from a distance. Giant Toads can swallow smaller creatures whole, digesting them slowly within their massive bellies. They are excellent swimmers and often ambush prey by hiding just beneath the water's surface. Though not aggressive unless provoked, Giant Toads can be dangerous to smaller creatures, and their size makes them formidable in combat.</summary>
 
 <summary>The Giant Toad is a Large Beast known for its formidable swamp-based capabilities. With an Armor Class of 11, it is not particularly tough defensively, but its 33 hit points provide a decent buffer against attacks. Its role in combat often revolves around grappling and swallowing smaller prey, making it a dangerous foe for unprepared adventurers. The toad's swimming speed of 40 feet gives it an advantage in aquatic environments, while its movement on land is limited to 20 feet, making it slower on dry ground. The creature has an overall challenge rating of 1, indicating it can provide a moderate challenge for low-level adventurers. Notably, its ability to grapple and swallow opponents makes it a unique threat, especially when using its Vaulting Leap to surprise foes.</summary>
@@ -25,6 +27,7 @@ Overall, the Giant Toad is a unique beast capable of leveraging its environment 
 
 Source: 5e_srd
 
+<statblock>
 ### Giant Toad
 
 *Large beast, unaligned*
@@ -55,7 +58,8 @@ Source: 5e_srd
 
 ***Swallow***. The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.
 
-If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
+If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</statblock>
+
 
 
 
@@ -63,6 +67,7 @@ If the toad dies, a swallowed creature is no longer restrained by it and can esc
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Toad
 
 *Large* *Beast*
@@ -92,5 +97,6 @@ Source: 5e_artisinal_monsters
 - **Vaulting Leap:** The toad jumps up to 20 feet horizontally and 10 feet vertically. If its within 5 feet of a creature that it is not grappling at the end of this movement  it can make a bite attack against that creature with advantage.
 
 
+</statblock>
 
 

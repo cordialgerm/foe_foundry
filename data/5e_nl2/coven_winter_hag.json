@@ -1,0 +1,51 @@
+{
+    "name": "Coven Winter Hag",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 135,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "spellcaster",
+        "cold",
+        "cursed"
+    ],
+    "adjectives": [
+        "winter",
+        "malicious",
+        "cunning"
+    ],
+    "description": "The Coven Winter Hag embodies winter's essence, featuring a streak of white hair and a demeanor that suggests malice and cunning. It combines a formidable presence with various cold and illusion powers.",
+    "memorable": "Notable for its curse ability that can incapacitate foes and its command over winter spells.",
+    "goals": "To manipulate others, spread curses, and control cold weather to its advantage.",
+    "relations": "May be found alongside other hags or dark fey, often leading groups that serve cold-themed deities.",
+    "environment": "Typically found in cold, snowy regions or dark forests during winter.",
+    "strengths": "High Charisma enhances spellcasting; it can control cold weather and is resistant to cold damage.",
+    "weaknesses": "Vulnerable to spells or tactics that resist its magic, particularly those that are effective against charm spells.",
+    "attacks": "Utilizes claws to deal physical damage and Ice Bolt for ranged cold damage that can restrain or petrify.",
+    "most_powerful_ability": "Curse, which ensnares creatures that accept gifts, making them automatically fail saving throws against the hag's spells.",
+    "senses": "Has a passive perception score of 16, indicating high awareness of its surroundings.",
+    "skills": "Proficient in arcana and deception, allowing it to manipulate and influence effectively.",
+    "additional_information": [
+        "Can shapeshift into humanoid forms while retaining its statistics.",
+        "Innate spellcasting includes powerful cold-related spells such as cone of cold and wall of ice.",
+        "Capable of moving through snowy areas without leaving traces, perfect for ambushes.",
+        "Uses Ice Shield to enhance its AC against incoming melee attacks.",
+        "Relies on charm and manipulation to gain the upper hand in encounters."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate spellcasting includes various charm and cold spells, with the ability to cast several spells at will.",
+    "test_queries": [
+        "cunning winter spellcaster",
+        "cold-themed fey with curse ability",
+        "malicious hag that uses ice spells",
+        "fey with shapeshifting power and control over weather",
+        "winter hag that can petrify foes"
+    ]
+}

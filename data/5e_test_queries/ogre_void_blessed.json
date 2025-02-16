@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Void Blessed",
+    "queries": [
+        {
+            "query": "large chaotic evil giant with psychic immunity and necrotic abilities",
+            "variant": "big chaotic evil giant who has immunity to psychic damage and necrotic powers"
+        },
+        {
+            "query": "strong ogre that can blind opponents and regurgitate necrotic energy",
+            "variant": "powerful ogre capable of blinding enemies and spewing necrotic energy"
+        },
+        {
+            "query": "Ogre with high hit points and ability to deal psychic damage",
+            "variant": "Ogre that has lots of health and can inflict psychic harm"
+        },
+        {
+            "query": "giant with keen senses living in chaotic evil environments",
+            "variant": "massive creature with sharp senses found in chaotic evil settings"
+        },
+        {
+            "query": "Ogre that uses tentacle attacks and has unique necrotic attacks",
+            "variant": "Ogre utilizing tentacle strikes and possessing special necrotic offenses"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wereboar (Lycanthrope)",
+    "queries": [
+        {
+            "query": "humanoid that transforms into a powerful boar",
+            "variant": "humanoid creature that can change into a strong boar"
+        },
+        {
+            "query": "aggressive creature with tusks that lives in forest areas",
+            "variant": "hostile beast with tusks found in wooded environments"
+        },
+        {
+            "query": "wereboar abilities include high strength and shapeshifting",
+            "variant": "wereboar powers involve strong attacks and changing shape"
+        },
+        {
+            "query": "medium humanoid that becomes ferocious in combat",
+            "variant": "medium creature that turns aggressive during fights"
+        },
+        {
+            "query": "shapechanger lycanthrope known for charging attacks",
+            "variant": "lycanthropic shape shifter famous for its charging ability"
+        }
+    ]
+}

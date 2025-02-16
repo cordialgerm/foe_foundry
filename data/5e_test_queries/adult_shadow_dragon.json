@@ -1,0 +1,25 @@
+{
+    "name": "Adult Shadow Dragon",
+    "queries": [
+        {
+            "query": "huge dark-colored dragon that can move through objects and has necrotic breath attack",
+            "variant": "big dark dragon that can go through objects and has a necrotic breath attack"
+        },
+        {
+            "query": "shadowy dragon with powerful spellcasting abilities and resistance to poison",
+            "variant": "shadow dragon with strong spellcasting powers and resistance to poison"
+        },
+        {
+            "query": "dragon that emits an evil aura and can grapple with shadow tendrils",
+            "variant": "dragon that radiates an evil aura and can use shadow tendrils to grapple"
+        },
+        {
+            "query": "agile dragon that thrives in dim light and has a connection to its lair",
+            "variant": "quick dragon that excels in low light and is linked to its lair"
+        },
+        {
+            "query": "dragon immune to necrotic damage that strikes fear into its enemies",
+            "variant": "dragon not affected by necrotic damage that instills fear in its foes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Dream Eater",
+    "queries": [
+        {
+            "query": "medium fiend that feeds on dreams and uses deception",
+            "variant": "fiend that is medium-sized and feeds on dreams, skilled in deception"
+        },
+        {
+            "query": "nightmarish creature with psychic abilities that can fly",
+            "variant": "creature with psychic powers and the ability to fly that is also nightmarish"
+        },
+        {
+            "query": "lawful evil fiend that charms and poisons its victims",
+            "variant": "fiend aligned with lawful evil that can charm and poison its enemies"
+        },
+        {
+            "query": "creature that grapples foes and has strong Charisma",
+            "variant": "monster that restrains opponents and possesses high Charisma"
+        },
+        {
+            "query": "Dream Eater skills in Deception and Persuasion",
+            "variant": "skills of Dream Eater in Deception and Persuasion"
+        }
+    ]
+}

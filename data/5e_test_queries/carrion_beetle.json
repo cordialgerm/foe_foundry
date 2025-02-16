@@ -1,0 +1,25 @@
+{
+    "name": "Carrion Beetle",
+    "queries": [
+        {
+            "query": "large beetle that spits acid and is immune to paralysis",
+            "variant": "big beetle that can spit acid and is not affected by paralysis"
+        },
+        {
+            "query": "beast with powerful bite and slow movement that lives underground",
+            "variant": "beast that has a strong bite and walks slowly, lives in the ground"
+        },
+        {
+            "query": "combat insect that deals slashing damage and has darkvision",
+            "variant": "fighting insect that inflicts slashing damage and can see in the dark"
+        },
+        {
+            "query": "creature with high hit points and a multiattack feature",
+            "variant": "monster that has many hit points and can attack multiple times"
+        },
+        {
+            "query": "slow-moving monster that uses acid attacks and has good defense",
+            "variant": "slow creature that employs acid attacks and possesses strong defense"
+        }
+    ]
+}

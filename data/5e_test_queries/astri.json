@@ -1,0 +1,25 @@
+{
+    "name": "Astri",
+    "queries": [
+        {
+            "query": "small celestial being with chaotic good alignment and healing abilities",
+            "variant": "tiny celestial creature that embodies chaotic good and has healing powers"
+        },
+        {
+            "query": "stealthy celestial that can fly and assist allies in combat",
+            "variant": "sneaky celestial being that can support allies in battle and has magical abilities"
+        },
+        {
+            "query": "celestial creature that can burrow and cast beneficial spells",
+            "variant": "heavenly being able to dig and use helpful magic spells"
+        },
+        {
+            "query": "Astri abilities in healing and enforcing good deeds",
+            "variant": "Astri healing powers and tactics to enforce good actions"
+        },
+        {
+            "query": "creature with high dexterity living in underground terrains and performing altruistic actions",
+            "variant": "being with exceptional dexterity that resides underground and engages in kind actions"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Warlord's Ghost",
+    "creature_type": "Undead",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 58,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft., fly 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "spectral",
+        "revenant"
+    ],
+    "adjectives": [
+        "haunting",
+        "vengeful",
+        "ethereal"
+    ],
+    "description": "The Warlord's Ghost embodies the essence of a once-great warrior, now a haunting apparition. It can phase through obstacles and has a strong presence enhanced by its high Charisma.",
+    "memorable": "It can unleash a Baleful Wail on death, causing massive psychic damage to enemies.",
+    "goals": "To seek revenge on those who wronged it in life.",
+    "relations": "Can be encountered with other undead or summoned by dark powers.",
+    "environment": "Typically found in battlefields or ruins where it once fought.",
+    "strengths": "It is immune to many conditions and non-magical damage, granting it significant survivability.",
+    "weaknesses": "Physically fragile and vulnerable to magical attacks.",
+    "attacks": "Uses psychic abilities like Presage Death and Baleful Wail to incapacitate foes.",
+    "most_powerful_ability": "The Baleful Wail can instantly drop weakened foes to 0 hit points.",
+    "equipment": null,
+    "senses": "Possesses darkvision and can detect living creatures up to 5 miles away.",
+    "skills": null,
+    "additional_information": [
+        "Can phase through solid objects with Incorporeal Movement.",
+        "Does not require air, sustenance, or sleep due to its undead nature.",
+        "Returns on the anniversary of its death if not permanently put to rest.",
+        "Has a reaction ability that retaliates against attackers.",
+        "Curses targets, making them easier to defeat."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ghost that can pass through objects",
+        "revenant seeking revenge on enemies",
+        "undead creature that uses psychic attacks",
+        "warlord's ghost with a powerful wail",
+        "haunting apparition with significant resistances"
+    ]
+}

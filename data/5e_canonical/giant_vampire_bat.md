@@ -1,6 +1,8 @@
 <MonsterName/>Giant Vampire Bat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>13</AC>
+<HP/>60</HP>
 <summary>The Giant Vampire Bat is a large, unaligned beast that serves as a formidable foe in combat, primarily using its flying ability and biting attack to incapacitate its enemies. With a Challenge Rating of 2, it offers a moderate challenge for adventurers, boasting decent Armor Class and Hit Points. The bat's strengths lie in its high Strength and Dexterity, allowing it to effectively engage in melee combat and dodge attacks. However, it has poor Intelligence and Charisma scores, making it less effective in social interactions and problem-solving scenarios. Its notable abilities include echolocation, which provides it with a strong sensory advantage in its environment, and it can recover health by dealing necrotic damage with its bite.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ For actions, the Giant Vampire Bat can perform a melee bite attack. This attack 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Vampire Bat
 
 *Large* *Beast* *unaligned*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the bat can't bite another target. The bat regains hp equal to the necrotic damage dealt.
 
 
+</statblock>
 
 

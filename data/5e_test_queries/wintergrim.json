@@ -1,0 +1,25 @@
+{
+    "name": "Wintergrim",
+    "queries": [
+        {
+            "query": "small fey creature that can communicate with animals and is a guardian of nature",
+            "variant": "little fey creature that talks to animals and guards nature"
+        },
+        {
+            "query": "chaotic good fey with offensive abilities and cold damage resistance",
+            "variant": "chaotic good fey with attack powers and resistance to cold damage"
+        },
+        {
+            "query": "enraged tiny fey with a strong melee attack and unique conduct rules",
+            "variant": "angry small fey with strong melee attacks and special rules of conduct"
+        },
+        {
+            "query": "nature guardian that can heal and protect against poison while being immune to charm",
+            "variant": "guardian of nature that heals and shields from poison, immune to charm effects"
+        },
+        {
+            "query": "fey creature that uses goodberry spell and has good insight skills",
+            "variant": "fey being that casts goodberry and excels in insight abilities"
+        }
+    ]
+}

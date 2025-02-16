@@ -1,0 +1,52 @@
+{
+    "name": "Fext",
+    "creature_type": "Undead",
+    "alignment": "Any Alignment",
+    "size": "Medium",
+    "hp": 77,
+    "ac": 17,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "magical",
+        "psychic"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "chaotic"
+    ],
+    "description": "The Fext is a Medium undead creature with magical attacks, characterized by its unsettling presence and infusion of powerful magic into its weaponry.",
+    "memorable": "It can terrify enemies within a 10-foot radius with psychic damage, disrupting battlefield dynamics.",
+    "goals": "To inflict significant damage and instill fear among its enemies through powerful magical attacks.",
+    "relations": "Can be encountered alongside other undead creatures or magical beings.",
+    "environment": "Typically found in dark, eerie places or areas corrupted by dark magic.",
+    "strengths": "Exceptionally high Charisma enhances its defense, magical damage output, and ability to resist spells.",
+    "weaknesses": "Relies heavily on spells, which may open it up to specific forms of melee combat or strategic defenses.",
+    "attacks": "Makes two attacks with either the Eldritch Blade, dealing slashing and force damage, or the Eldritch Fury, a ranged attack that deals force damage.",
+    "most_powerful_ability": "Patron\u2019s Might can inflict significant psychic damage and frighten nearby enemies, causing chaos.",
+    "senses": "Possesses truesight up to 20 feet, allowing it to pierce illusions and perceive unseen creatures.",
+    "skills": "Noteworthy in Perception, indicating good awareness in combat situations.",
+    "additional_information": [
+        "Immune to poison and several debilitating conditions.",
+        "Resistance to nonmagical physical damage enhances its durability.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Utilizes magical weapon attacks that deal significant additional force damage.",
+        "Gains advantage on saving throws against spells."
+    ],
+    "damage_types": [
+        "psychic",
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with magical attacks",
+        "medium undead that instills fear",
+        "psychic damaging monster in combat",
+        "creature with truesight and magical weapons",
+        "resilient undead with powerful magic"
+    ]
+}

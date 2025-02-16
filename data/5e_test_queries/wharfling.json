@@ -1,0 +1,25 @@
+{
+    "name": "Wharfling",
+    "queries": [
+        {
+            "query": "tiny agile beast that can breathe in water and air",
+            "variant": "small quick beast that can breath both air and water"
+        },
+        {
+            "query": "creature with high dexterity that steals items",
+            "variant": "monster with great dexterity that can pilfer belongings"
+        },
+        {
+            "query": "mischievous creature that thrives in aquatic environments and steals",
+            "variant": "playful monster that loves water and takes items"
+        },
+        {
+            "query": "fragile beast with darkvision and sleight of hand skills",
+            "variant": "delicate creature with low-light vision and abilities in sleight of hand"
+        },
+        {
+            "query": "small unaligned creature that can attack and steal",
+            "variant": "little neutral monster that can strike and take items"
+        }
+    ]
+}

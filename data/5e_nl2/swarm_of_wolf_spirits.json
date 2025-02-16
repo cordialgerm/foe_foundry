@@ -1,0 +1,51 @@
+{
+    "name": "Swarm of Wolf Spirits",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 104,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 50 ft., fly 50 ft.",
+    "role": "null",
+    "tags": [
+        "undead",
+        "swarm",
+        "cold damage"
+    ],
+    "adjectives": [
+        "fearsome",
+        "mobile",
+        "elusive"
+    ],
+    "description": "A formidable swarm of ghostly wolf spirits that is both agile and stealthy, capable of moving through objects.",
+    "memorable": "Its ability to incapacitate foes with a chilling howl and pass through objects adds a unique twist to combat.",
+    "goals": "Typically seeks to terrify and incapacitate foes in its vicinity.",
+    "relations": "May be encountered alongside other undead or spectral entities.",
+    "environment": "Usually found in dark, eerie settings where spirits might gather.",
+    "strengths": "Immune to cold and poison damage, resistant to multiple damage types, and immune to many conditions.",
+    "weaknesses": "Vulnerable to force damage and has a very low intelligence, hindering strategic capabilities.",
+    "attacks": "Can make two spectralbite attacks that deal cold and necrotic damage, plus has a chilling howl ability to frighten enemies.",
+    "most_powerful_ability": "The Chilling Howl incapacitating foes, causing damage and fear at the same time.",
+    "equipment": null,
+    "senses": "It has darkvision up to 120 feet and a passive perception of 13.",
+    "skills": "Possesses proficiency in Stealth and Perception, allowing it to remain undetected and notice intruders.",
+    "additional_information": [
+        "Takes force damage if its incorporeal movement ends inside an object.",
+        "Can occupy the same space as other creatures, enhancing tactical combat options.",
+        "Does not require air, food, drink, or sleep, making it resilient to strategies targeting living creatures."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead wolf spirit swarm",
+        "mobile swarm with chilling howl",
+        "ghostly wolf spirits that frighten foes",
+        "elusive undead that moves through objects",
+        "swarm with cold and necrotic attacks"
+    ]
+}

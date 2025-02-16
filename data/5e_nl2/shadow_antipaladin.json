@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Antipaladin",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 82,
+    "ac": 18,
+    "srd": false,
+    "cr": "5",
+    "movement": "average speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "evil",
+        "chaotic",
+        "undead",
+        "necrotic"
+    ],
+    "adjectives": [
+        "shadowy",
+        "agile",
+        "mischievous",
+        "menacing"
+    ],
+    "description": "A small humanoid with a chaotic evil appearance, wearing a breastplate and wielding a scimitar and heavy crossbow. Its sinister features demonstrate its affinity for darkness and necrotic energy.",
+    "memorable": "It inflicts devastating necrotic damage with its attacks and can manipulate the minds of its enemies.",
+    "goals": "To spread chaos and instill fear, often manipulating others for its own gain.",
+    "relations": "Related to other evil creatures, likely encountered with other dark entities or minions.",
+    "environment": "Often found in dark, shadowy locales or areas devoid of sunlight.",
+    "strengths": "High agility and resilience, capable of avoiding damage and resistant to magic.",
+    "weaknesses": "Sensitive to sunlight, which imposes disadvantages on its actions.",
+    "attacks": "Can attack with a scimitar or heavy crossbow, delivering additional necrotic damage on successful hits.",
+    "most_powerful_ability": "Infectious Insanity allows it to incapacitate multiple enemies, filling their minds with eldritch horrors.",
+    "equipment": "Carries a scimitar and a heavy crossbow, wearing breastplate armor.",
+    "skills": "Proficient in stealth, making it a very effective ambusher.",
+    "additional_information": [
+        "Has advantage on saving throws against being charmed or frightened.",
+        "Gains advantage on saving throws against magical effects.",
+        "Can avoid damage from certain effects through Evasion.",
+        "Uses a reaction to increase its AC against melee attacks.",
+        "Necrotic Weapons ability increases its damage output significantly."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small evil humanoid with necrotic abilities",
+        "agile monster that thrives in darkness",
+        "shadowy creature attacking with insanity",
+        "menacing antipaladin with sunlight sensitivity",
+        "chaotic evil monster with powerful attacks"
+    ]
+}

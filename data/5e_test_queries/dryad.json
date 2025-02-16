@@ -1,0 +1,25 @@
+{
+    "name": "Dryad",
+    "queries": [
+        {
+            "query": "fey spirit that guards trees and uses charm magic",
+            "variant": "guarding tree spirit that uses charm magic and is fey"
+        },
+        {
+            "query": "woodland creature with bark-like skin that communicates with animals",
+            "variant": "woodsy creature with bark-like skin that talks to animals"
+        },
+        {
+            "query": "magically moves between trees and entangles foes with plants",
+            "variant": "moves magically through trees and uses plants to entangle enemies"
+        },
+        {
+            "query": "charming forest guardian that can summon animals for aid",
+            "variant": "forest guardian that charms and summons animals for help"
+        },
+        {
+            "query": "nature spirit that protects ancient trees and has exceptional charisma",
+            "variant": "spiritual protector of ancient trees with high charisma"
+        }
+    ]
+}

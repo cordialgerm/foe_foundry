@@ -1,0 +1,53 @@
+{
+    "name": "Gnoll",
+    "creature_type": "Humanoid",
+    "creature_subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 15,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "feral",
+        "predatory",
+        "aggressive",
+        "chaotic"
+    ],
+    "adjectives": [
+        "savage",
+        "brutal",
+        "bloodthirsty",
+        "ferocious"
+    ],
+    "description": "A hyena-like humanoid over six feet tall, covered in matted fur and wielding crude weapons such as axes and spears. Known for their chaotic nature and bloodthirsty behavior.",
+    "memorable": "Gnolls attack in packs and serve dark gods, emphasizing their ferocity in combat.",
+    "goals": "They are driven by a hunger for destruction, often raiding villages and overwhelming foes.",
+    "relations": "Often found in warbands, potentially serving demonic forces.",
+    "environment": "Roams in warbands, common in areas plagued by chaos.",
+    "strengths": "Strong melee attackers with the ability to gain advantage on attacks when working in packs through Pack Tactics.",
+    "weaknesses": "Low wisdom and intelligence scores limit their strategic abilities.",
+    "attacks": "Utilizes a spear for both melee and ranged attacks, and can bite bloodied enemies for extra damage.",
+    "most_powerful_ability": "Rampage ability allows them to move and attack again when they reduce a creature to 0 hit points.",
+    "equipment": null,
+    "senses": "Possesses heightened smell, increasing Perception to 15 when tracking.",
+    "skills": "Moderate awareness of surroundings but limited by low wisdom.",
+    "additional_information": [
+        "Upper limit of height is over six feet.",
+        "Uses crude weapons effectively in close combat.",
+        "Ability to manipulate enemies with a taunting bark.",
+        "Explicitly chaotic and unpredictable in behavior.",
+        "Known to serve demonic deities or dark forces."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "savage hyena-like humanoid",
+        "bloodthirsty monster raiding villages",
+        "hungry chaotic creature attacking in packs",
+        "brutal humanoid wielding crude weapons",
+        "ferocious monster with heightened smell"
+    ]
+}

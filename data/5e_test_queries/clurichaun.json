@@ -1,0 +1,25 @@
+{
+    "name": "Clurichaun",
+    "queries": [
+        {
+            "query": "tiny fey trickster with magical abilities",
+            "variant": "tiny fey creature that tricks and uses magic"
+        },
+        {
+            "query": "chaotic neutral fey that uses alcohol for spells",
+            "variant": "fey creature neutral chaotic that requires alcohol for its spells"
+        },
+        {
+            "query": "sneaky little monster with darkvision and charm",
+            "variant": "sneaky creature that has darkvision and uses charm"
+        },
+        {
+            "query": "magical fey that can incapacitate with laughter",
+            "variant": "fey creature that incapacitates enemies with laughter magic"
+        },
+        {
+            "query": "small creature immune to poison and frightened",
+            "variant": "tiny creature that can't be poisoned or frightened"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Manggus",
+    "queries": [
+        {
+            "query": "giant monster that can shapeshift into a hydra and frightens its enemies",
+            "variant": "monster that shapeshifts into a hydra and has a terrifying roar"
+        },
+        {
+            "query": "chaotic evil giant with impressive strength and regeneration abilities",
+            "variant": "evil giant known for strength and the ability to regenerate"
+        },
+        {
+            "query": "large giant that can transform into a three-headed hydra in battle",
+            "variant": "big giant that shifts into a hydra with three heads during combat"
+        },
+        {
+            "query": "monster with a roar that frightens creatures and has three heads",
+            "variant": "creature that roars to scare enemies and has three heads"
+        },
+        {
+            "query": "Manggus abilities including paralyzing roar and shapechanging",
+            "variant": "abilities of Manggus such as a fear-inducing roar and ability to change shape"
+        }
+    ]
+}

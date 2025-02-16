@@ -1,6 +1,8 @@
 <MonsterName/>Sapphire Dragon Wyrmling</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>3</CR>
+<AC/>17</AC>
+<HP/>58</HP>
 <summary>The Sapphire Dragon Wyrmling is a medium-sized dragon notable for its combination of psionic abilities and physical prowess. With a decent armor class of 17 and a total of 58 hit points, this creature offers good durability in combat. Its movement capabilities are impressive, featuring a standard walking speed of 30 feet, a burrowing speed of 15 feet, and a flying speed of 60 feet, making it quite mobile. The Sapphire Dragon Wyrmling has a challenge rating of 3, indicating it poses moderate difficulty for adventurers, yielding 700 experience points upon defeat. Its exceptional abilities stem from its 16 Strength, 16 Dexterity, and 16 Intelligence, which all provide very good modifiers for physical and mental interactions in the game. </summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of combat actions, the Sapphire Dragon Wyrmling has a melee attack opti
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sapphire Dragon Wyrmling
 
 *Medium* *Dragon*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Discognitive Breath (Recharge 5-6):** The dragon unleashes psychic energy in a 15-foot cone. Each creature in that area makes a DC 12 Intelligence saving throw  taking 22 (4d10) psychic damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 

@@ -1,0 +1,53 @@
+{
+    "name": "Blood Hag",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 204,
+    "ac": 16,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fey",
+        "hag",
+        "undead",
+        "necromancer"
+    ],
+    "adjectives": [
+        "sinister",
+        "formidable",
+        "chaotic"
+    ],
+    "description": "The Blood Hag is a medium-sized fey with an unsettling presence, characterized by her two claws, sharp teeth, and a wild mane embodying her chaotic nature. She is known for her bloodthirsty demeanor, often shown in her combat techniques that revolve around grappling and draining life from her foes.",
+    "memorable": "Her ability to drain blood and curse her enemies makes her a unique and terrifying opponent, particularly with her stunning Face Peel ability.",
+    "goals": "The Blood Hag seeks to drain life from her adversaries and manipulate them for her own chaotic purposes.",
+    "relations": "Blood Hags often associate with other dark fey creatures and may serve as subordinates to more powerful entities within the fey realm.",
+    "environment": "Typically found in dark forests or cursed areas, often near sources of blood or conflict.",
+    "strengths": "With high strength and constitution, she is tough to defeat in combat, able to endure and inflict significant damage.",
+    "weaknesses": "Vulnerable to radiant damage and can be hindered by swift attacks that negate her grappling.",
+    "attacks": "The Blood Hag employs a mix of melee and spell attacks, dealing slashing and necrotic damage, while her blood-draining abilities allow her to recover health.",
+    "most_powerful_ability": "Sanguine Curse, which incapacities a foe and inflicts ongoing necrotic damage while they struggle to break free from the curse.",
+    "equipment": null,
+    "senses": "Possesses Blood Sense, allowing her to detect living creatures within 60 feet and sense their direction up to 1 mile away.",
+    "skills": "Skilled in Deception, Intimidation, Perception, and Stealth, showcasing her proficiency in manipulation and stealth tactics.",
+    "additional_information": [
+        "Immune to being charmed or poisoned.",
+        "Can cast spells like Disguise Self and Modify Memory, enhancing her deceptive capabilities.",
+        "Her claws can grapple creatures, making them easier prey for her blood-draining abilities.",
+        "Can stun opponents with her Face Peel ability, further hindering their combat effectiveness.",
+        "High passive perception allows her to notice unseen threats."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": "Casts spells like Disguise Self, Knock, and Tongues at will; can also cast Modify Memory and Pass Without Trace three times a day.",
+    "test_queries": [
+        "blood-draining fey creature",
+        "sinister hag with blood powers",
+        "necromancer fey abilities",
+        "deceptive fey monster",
+        "chaotic evil blood hag"
+    ]
+}

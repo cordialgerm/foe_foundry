@@ -1,0 +1,25 @@
+{
+    "name": "Wraith Bear",
+    "queries": [
+        {
+            "query": "large undead bear that can fly and drain life",
+            "variant": "large bear undead that can drain life and fly"
+        },
+        {
+            "query": "creature with a supernatural roar that deals necrotic damage",
+            "variant": "monster with necrotic damage and a supernatural roar"
+        },
+        {
+            "query": "chaotic evil undead bear that can regenerate health from plants",
+            "variant": "undead bear that is chaotic evil and regenerates health from plants"
+        },
+        {
+            "query": "Wraith Bear abilities including life drain and incapacitating roar",
+            "variant": "abilities of Wraith Bear like life drain and roar that incapacitates"
+        },
+        {
+            "query": "bear with incorporeal movement and damage immunities",
+            "variant": "bear that has damage immunities and can move incorporeally"
+        }
+    ]
+}

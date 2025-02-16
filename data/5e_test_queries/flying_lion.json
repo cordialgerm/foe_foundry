@@ -1,0 +1,25 @@
+{
+    "name": "Flying Lion",
+    "queries": [
+        {
+            "query": "large flying monster with keen smell and strong physical attacks",
+            "variant": "big aerial creature that has keen smell and powerful melee attacks"
+        },
+        {
+            "query": "aerial creature that grapples enemies and has good perception",
+            "variant": "flying beast which can grip foes and has strong perceptive abilities"
+        },
+        {
+            "query": "tall lion-shaped monster that attacks with bite and talons",
+            "variant": "big lion-like creature that uses bites and talon strikes to attack"
+        },
+        {
+            "query": "flying monstrosity known for its strength and resilience",
+            "variant": "aerial monstrosity recognized for its power and durability"
+        },
+        {
+            "query": "powerful lion-like creature that can fly and has average agility",
+            "variant": "strong lion-inspired monster which can soar and has decent nimbleness"
+        }
+    ]
+}

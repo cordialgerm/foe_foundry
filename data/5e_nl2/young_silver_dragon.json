@@ -1,0 +1,50 @@
+{
+    "name": "Young Silver Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful good",
+    "size": "Large",
+    "hp": 168,
+    "ac": 18,
+    "srd": true,
+    "cr": "9",
+    "movement": "40 ft. walking, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "metallic",
+        "young"
+    ],
+    "adjectives": [
+        "graceful",
+        "majestic",
+        "powerful"
+    ],
+    "description": "A Young Silver Dragon has metallic silver scales that gleam in sunlight, embodying grace and majesty. It has a powerful presence with a strong, well-built physique, large wings, and a notable tail.",
+    "memorable": "A Young Silver Dragon combines its impressive physical abilities with magical prowess. It is known for its icy breath attack and ability to paralyze foes, while also being a noble protector of the innocent.",
+    "goals": "Protect nearby settlements from evil forces, provide guidance to mortals, avoid conflict when possible.",
+    "relations": "Commonly allies with good-aligned creatures and serves as a guardian.",
+    "environment": "Cold, mountainous regions.",
+    "strengths": "Immunity to cold damage, high AC, and significant hit points make it tough to defeat.",
+    "weaknesses": "Lower Wisdom may affect its perception and insight abilities.",
+    "attacks": "Multiattack with a bite and two claws, dealing piercing and slashing damage, supplemented by cold damage from its Breath Weapons.",
+    "most_powerful_ability": "Frost Breath that deals high cold damage in a wide cone and can severely impact multiple foes at once.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Proficient in Arcana and History, showcasing its knowledge of magical and historical lore.",
+    "additional_information": [
+        "Can cast spells like charm person and faerie fire innately.",
+        "Cloud Strider ability allows it to thrive at high altitudes.",
+        "Change Shape ability grants versatility in form and tactics."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Innate casting of charm person and faerie fire with Charisma as the spellcasting ability.",
+    "test_queries": [
+        "dragon with icy breath",
+        "noble protector of the innocent",
+        "young dragon with freezing cloud abilities",
+        "large silver dragon in cold mountains",
+        "metallic dragon that can paralyze"
+    ]
+}

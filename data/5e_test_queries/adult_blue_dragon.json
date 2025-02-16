@@ -1,0 +1,25 @@
+{
+    "name": "Adult Blue Dragon",
+    "queries": [
+        {
+            "query": "serpentine creature with sapphire scales that lives in deserts",
+            "variant": "sapphire scaled serpentine creature that dwells in deserts"
+        },
+        {
+            "query": "dragon that breathes lightning and has a powerful presence",
+            "variant": "lightning breathing dragon with a strong presence"
+        },
+        {
+            "query": "muscular draconic creature capable of flying and burrowing",
+            "variant": "draconic creature with muscles that can fly and burrow"
+        },
+        {
+            "query": "intelligent blue dragon that uses mirages to deceive foes",
+            "variant": "blue dragon that is clever and uses illusions to trick enemies"
+        },
+        {
+            "query": "huge dragon with high durability and a lightning breath attack",
+            "variant": "large dragon with exceptional durability and an electric breath attack"
+        }
+    ]
+}

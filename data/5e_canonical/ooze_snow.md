@@ -1,6 +1,8 @@
 <MonsterName/>Ooze, Snow</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>7</CR>
+<AC/>6</AC>
+<HP/>171</HP>
 <summary>The Snow Ooze is a formidable, huge ooze creature that serves as a treacherous obstacle in icy environments. It is unaligned and acts mainly on instinct, relying on its physical prowess and unique abilities to dominate its surroundings. This creature possesses high durability, demonstrated by its significant hit points of 171, which allows it to withstand considerable damage. Its strengths lie in its cold damage capabilities, various movement options, and its power to blind foes, yet it has very low Dexterity and Intelligence, making it less agile and unable to strategize effectively. Notably, the Snow Ooze thrives in snowy and icy terrains, where it can move with ease and catch unsuspecting creatures off-guard.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Snow Ooze is a dangerous opponent particularly well-suited to ambus
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ooze, Snow
 
 *Huge* *Ooze* *unaligned*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Avalanche (Recharge 4–6):** Rumbles forward stirring up snow. Moves up to 30' in straight line and can move through space of any Large or smaller creature. 1st time it enters creature’s space during this move that creature: 10 (3d6) bludgeoning damage and 18 (4d8) cold and buried in slushy snow (DC 15 Dex half damage not buried). Buried creature is restrained and unable to breathe or stand up. A creature including buried creature can use action to free buried creature via DC 15 Str check. A buried creature with swim speed has advantage on this check.
 
 
+</statblock>
 
 

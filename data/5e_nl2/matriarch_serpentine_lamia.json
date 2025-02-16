@@ -1,0 +1,49 @@
+{
+    "name": "Matriarch Serpentine Lamia",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 90,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 20 ft., swim 20 ft., walk 40 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "deceptive",
+        "manipulative",
+        "charming"
+    ],
+    "adjectives": [
+        "cunning",
+        "serpentine",
+        "sneaky"
+    ],
+    "description": "The Matriarch Serpentine Lamia has a serpentine lower body blending into a humanoid upper body, with a cunning gaze and alluring presence.",
+    "memorable": "Her ability to charm and manipulate others makes her a dangerous foe in both combat and social encounters.",
+    "goals": "To control and manipulate prey, using deception and charm.",
+    "relations": "Might summon or communicate with serpents.",
+    "environment": "Prefers dark, shadowy areas where she can ambush her targets.",
+    "strengths": "High Charisma and Dexterity make her adept at charming and avoiding attacks.",
+    "weaknesses": "Lower Intelligence limits strategic options and complex tactics.",
+    "attacks": "Utilizes a scimitar for slashing damage, and can grapple with a restraining constricting attack.",
+    "most_powerful_ability": "The ability to charm a humanoid for a day and control their actions as long as they are not harmed.",
+    "senses": "Notable for her high proficiency in deception and intimidation.",
+    "skills": "Excels in deception and intimidation with exceptional skill to manipulate others.",
+    "additional_information": [
+        "Can communicate with serpents for intelligence or assistance.",
+        "Gains advantage on attacks against surprised or charmed foes.",
+        "Resilient to being knocked prone due to her snake body.",
+        "Inherits a magical ability to cast various spells based on Charisma.",
+        "Can use stealth effectively to ambush targets."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting with spells including charm and illusion effects.",
+    "test_queries": [
+        "sneaky monster that can charm humanoids",
+        "serpentine creature that controls snakes",
+        "manipulative monster with strong charisma",
+        "ambushing creature with magical charm abilities",
+        "deceptive large monster that loves shadows"
+    ]
+}

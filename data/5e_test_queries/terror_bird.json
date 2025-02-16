@@ -1,0 +1,25 @@
+{
+    "name": "Terror Bird",
+    "queries": [
+        {
+            "query": "large flightless bird with powerful melee attacks",
+            "variant": "big bird that can't fly and has strong melee abilities"
+        },
+        {
+            "query": "beast that relies on pack tactics and lives in wild areas",
+            "variant": "animal using pack tactics that resides in the wilderness"
+        },
+        {
+            "query": "fierce creature with darkvision and high athletics skill",
+            "variant": "ferocious being with the ability to see in the dark and excels in athletics"
+        },
+        {
+            "query": "quick predator with serrated beak and charging attack",
+            "variant": "fast hunter that has a jagged beak and can charge at its prey"
+        },
+        {
+            "query": "unaligned large beast with a challenge rating of 2",
+            "variant": "non-aligned big creature rated 2 for challenge level"
+        }
+    ]
+}

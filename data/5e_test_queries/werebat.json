@@ -1,0 +1,25 @@
+{
+    "name": "Werebat",
+    "queries": [
+        {
+            "query": "humanoid bat creature with flying abilities and sunlight weakness",
+            "variant": "bat-like humanoid with flight and weakness to sunlight"
+        },
+        {
+            "query": "creature that can transform into a bat and has echolocation",
+            "variant": "shape-shifting monster that can become a bat and uses echolocation"
+        },
+        {
+            "query": "lawful evil bat-human hybrid living in darkness",
+            "variant": "darkness-dwelling humanoid bat with lawful evil alignment"
+        },
+        {
+            "query": "Werebat tactics and abilities in combat",
+            "variant": "combat abilities and tactics of the Werebat"
+        },
+        {
+            "query": "monster that has damage immunity against non-silver weapons and can fly",
+            "variant": "creature with flying speed and immune to non-silver weapon damage"
+        }
+    ]
+}

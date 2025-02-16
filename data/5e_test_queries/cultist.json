@@ -1,0 +1,25 @@
+{
+    "name": "Cultist",
+    "queries": [
+        {
+            "query": "dark religious follower wearing tattered robes",
+            "variant": "follower of dark religion in tattered robes"
+        },
+        {
+            "query": "medium humanoid who serves evil deities",
+            "variant": "humanoid creature serving evil gods"
+        },
+        {
+            "query": "cultist armed with daggers and rituals",
+            "variant": "cultist performing dark rituals with daggers"
+        },
+        {
+            "query": "low-level minion from forbidden sects",
+            "variant": "minion of a forbidden sect with low power"
+        },
+        {
+            "query": "chaotic worshipper hiding in abandoned ruins",
+            "variant": "worshipper of chaos living in ruins"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "King Fomor",
+    "queries": [
+        {
+            "query": "gargantuan celestial creature with high hit points and powerful melee attacks",
+            "variant": "gargantuan celestial being with massive hit points and strong melee damage"
+        },
+        {
+            "query": "celestial creature that uses spells and has exceptional Charisma for casting",
+            "variant": "celestial being that casts spells and relies on strong Charisma for spellcasting"
+        },
+        {
+            "query": "King Fomor abilities related to radiant damage immunity and spellcasting",
+            "variant": "King Fomor powers focusing on immunity to radiant attacks and casting spells"
+        },
+        {
+            "query": "monster with truesight and divine flame attacks that can paralyze enemies",
+            "variant": "creature with truesight and divine fire abilities that can immobilize foes"
+        },
+        {
+            "query": "powerful celestial that can transform size and end negative effects while bloodied",
+            "variant": "strong celestial that can change size and remove conditions when injured"
+        }
+    ]
+}

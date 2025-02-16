@@ -1,0 +1,54 @@
+{
+    "name": "Dwarf, Pike Guard Captain",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 18,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 25 ft.",
+    "role": "Defender",
+    "tags": [
+        "dwarf",
+        "guard",
+        "captain",
+        "tactical",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "disciplined",
+        "tactical"
+    ],
+    "description": "The Dwarf Pike Guard Captain is a stout warrior clad in plate armor, wielding a long pike and exhibiting a commanding presence on the battlefield.",
+    "memorable": "Has inspiring abilities that bolster allies' combat effectiveness.",
+    "goals": "To control the battlefield strategically and support allied troops.",
+    "relations": "Often commands pike guards and can be found with a unit of soldiers.",
+    "environment": "Typically found in fortifications or military encampments.",
+    "strengths": "High durability and damage resistance to poison, capable of tactical buffs and commanding presence.",
+    "weaknesses": "Low Dexterity makes them vulnerable to ranged attacks.",
+    "attacks": "Can perform powerful pike attacks with a significant range, dealing piercing damage.",
+    "most_powerful_ability": "Not One Step Back! inspires allies, granting them immunity to fear and charmed effects.",
+    "equipment": "Plate armor and a pike.",
+    "senses": "Possesses darkvision up to 60 feet and a passive perception of 14.",
+    "skills": "Has proficiency in Intelligence and Wisdom saving throws.",
+    "additional_information": [
+        "Grants half cover to allies within proximity against ranged attacks.",
+        "Can make opportunity attacks when allies deal damage.",
+        "Uses strategic commands to bolster frontline defense.",
+        "Can brace its pike for advantage against incoming threats.",
+        "Specializes in battlefield control and support."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "defensive dwarf guard commander",
+        "tactically inclined pike wielding captain",
+        "medium humanoid with pike and plate armor",
+        "dwarf captain that boosts allies in combat",
+        "bulwark dwarf with commanding battle presence"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Lord Zombie",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 82,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "zombie",
+        "necromancer"
+    ],
+    "adjectives": [
+        "malevolent",
+        "formidable",
+        "resilient",
+        "commanding"
+    ],
+    "description": "The Lord Zombie is a powerful and malevolent undead creature, showcasing typical traits of undead beings. It possesses natural armor and exudes an aura of decay, making it a fearsome sight in battle.",
+    "memorable": "Its ability to rise from death and control lesser undead makes the Lord Zombie a memorable and dangerous foe.",
+    "goals": "The Lord Zombie seeks to dominate through fear, using its necromantic powers to control other undead and eliminate living threats.",
+    "relations": "It can command lesser zombies and may be encountered alongside other undead.",
+    "environment": "Typically found in graveyards, ruins, or areas steeped in dark magic.",
+    "strengths": "Immunity to necrotic and poison damage, with legendary resistance allowing it to defy failed saving throws.",
+    "weaknesses": "Susceptible to radiant damage, which bypasses many of its defenses.",
+    "attacks": "The Lord Zombie can make two slam attacks or a life-draining attack that reduces the maximum hit points of its target.",
+    "most_powerful_ability": "The ability to raise slain foes as zombies under its control, significantly bolstering its numbers in combat.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 60 feet, enhancing its perception in dim light.",
+    "skills": "Has a good perception skill, making it adept at noticing hidden or stealthy creatures.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on saving throws it would normally fail.",
+        "Stench ability can poison non-undead creatures nearby.",
+        "Undead Fortitude enables it to survive a lethal blow if not dealt radiant damage.",
+        "Can control up to twenty zombies at one time.",
+        "Ability to command zombies telepathically within a mile."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing undead creature with poison aura",
+        "powerful zombie that commands others",
+        "undead monster with life-draining attack",
+        "creature immune to necrotic damage and poison",
+        "zombie lord capable of rising the dead"
+    ]
+}

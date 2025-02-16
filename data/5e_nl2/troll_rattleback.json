@@ -1,0 +1,53 @@
+{
+    "name": "Rattleback Troll",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 126,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "troll",
+        "poison",
+        "regeneration"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "savage"
+    ],
+    "description": "A large giant creature with a constant droning noise from its shell plates, embodying chaos and savagery.",
+    "memorable": "Its abilities to debilitate spellcasters and its regenerative traits make it a tough opponent.",
+    "goals": "To engage and overpower opponents using brute strength and poison.",
+    "relations": "May be found in the company of other chaotic beings or monstrous creatures.",
+    "environment": "Commonly found in dark or shadowy areas, exploiting its advantages in dim light.",
+    "strengths": "Impressive physical attributes with high strength, constitution, and dexterity; possesses poison immunity.",
+    "weaknesses": "Very low intelligence and charisma, making it poor at tactical maneuvers or engaging with others.",
+    "attacks": "Employs a multiattack that includes a bite and two claw strikes, using poison to debilitate foes.",
+    "most_powerful_ability": "Venom Spray creates a 30-foot cone that deals significant poison damage and incapacitates targets from regaining hit points.",
+    "equipment": null,
+    "senses": "Has darkvision and advantage on perception checks in dim light or darkness, enhancing its effectiveness in stealthy environments.",
+    "skills": "Possesses average perception skill, indicating limited awareness compared to other creatures.",
+    "additional_information": [
+        "Regenerates 10 hit points each turn unless hit by fire damage.",
+        "Distracting Rattle hinders spellcasters within close proximity.",
+        "Advantage on attacks during dim light or darkness due to Night Hunters trait.",
+        "Poison from both bite and venom spray prevents targets from regaining hit points for a minute.",
+        "Can be a formidable foe for low to mid-level adventurers."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic giant with poison abilities",
+        "large monster that regenerates and uses poison",
+        "troll that hinders spellcasters with its rattle",
+        "savage giant found in dark environments",
+        "Rattleback Troll abilities and tactics"
+    ]
+}

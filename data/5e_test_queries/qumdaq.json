@@ -1,0 +1,25 @@
+{
+    "name": "Qumdaq",
+    "queries": [
+        {
+            "query": "small sand element that can burrow",
+            "variant": "small elemntal of sand that can dig"
+        },
+        {
+            "query": "earth-based creature that restores hit points to allies",
+            "variant": "creature from earth that can heal allies"
+        },
+        {
+            "query": "neutral elemental that uses sand attacks",
+            "variant": "elemental with no alignment that attacks with sand"
+        },
+        {
+            "query": "monster with low hit points that senses magic",
+            "variant": "creature with few hit points that can detect magic"
+        },
+        {
+            "query": "small creature with Earth Glide ability and exhaustion immunity",
+            "variant": "little critter that can glide through earth and is immune to exhaustion"
+        }
+    ]
+}

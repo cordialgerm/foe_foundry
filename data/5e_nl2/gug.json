@@ -1,0 +1,53 @@
+{
+    "name": "Gug",
+    "creature_type": "Giant",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 230,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "creature",
+        "brute",
+        "menacing"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "threatening"
+    ],
+    "description": "The Gug is a massive, menacing giant characterized by its immense strength and formidable presence, with a notable feature of four grasping claws and a massive frame that can grapple multiple foes.",
+    "memorable": "Its ability to swallow opponents whole and deal ongoing acid damage makes the Gug an intimidating foe.",
+    "goals": "Thrives on chaos and destruction, seeking to overpower foes.",
+    "relations": "Can be encountered with other evil giants or monstrous beings.",
+    "environment": "Typically found in desolate, ruinous landscapes where chaos can reign.",
+    "strengths": "High Strength score, allowing it to overpower foes and grapple effectively, along with resistance to poison and several conditions.",
+    "weaknesses": "Average Dexterity makes it vulnerable to ranged attacks and agile enemies.",
+    "attacks": "Can perform powerful melee Grasping Claw and Stomp attacks, capable of grappling and knocking opponents prone.",
+    "most_powerful_ability": "The ability to swallow a creature, blinding and restraining them while dealing ongoing acid damage.",
+    "equipment": null,
+    "senses": "The Gug has darkvision out to 240 feet, allowing it to perceive its surroundings more easily in darkness.",
+    "skills": "Proficient in Athletics and Stealth, reflecting its physical prowess and ability to move surprisingly quietly for its size.",
+    "additional_information": [
+        "Can fling opponents or objects, enhancing battlefield control.",
+        "Immunity to conditions like exhaustion and paralysis.",
+        "Possesses considerable natural armor, increasing its resilience.",
+        "Uses Deep Speech, Giant, and Undercommon for unique interactions.",
+        "Capable of executing a devastating multiattack sequence."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant that swallows opponents",
+        "menacing creature with grappling claws",
+        "brute giant with chaos-driven behavior",
+        "giant that can throw grappling foes",
+        "powerful creature with high strength abilities"
+    ]
+}

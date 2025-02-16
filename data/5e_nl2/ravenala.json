@@ -1,0 +1,53 @@
+{
+    "name": "Ravenala",
+    "creature_type": "Plant",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "nature",
+        "plant",
+        "guardian",
+        "healer"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "nature-bound",
+        "muted"
+    ],
+    "description": "The Ravenala is a large plant creature with a robust build, showcasing a natural armor and vibrant green leaves, embodying a guardian of nature.",
+    "memorable": "Its ability to engulf creatures, leaving them singing their regrets while being blinded and restrained, makes it a unique and fearful enemy.",
+    "goals": "To protect its domain and heal nearby creatures, representing neutrality in the balance of nature.",
+    "relations": "It may interact with druids, fey creatures, and other natural entities, serving as a guardian within forested environments.",
+    "environment": "Typically found in forested or overgrown areas, where it can blend into its surroundings.",
+    "strengths": "Exceptional physical strength and constitution grant it significant durability and melee damage potential, along with magic resistance.",
+    "weaknesses": "Vulnerable to cold and fire damage, which can be exploited in combat.",
+    "attacks": "Can perform slamming melee attacks or ranged bursts of energy, grappling smaller foes and engulfing them.",
+    "most_powerful_ability": "Lamenting Engulfment allows the Ravenala to engulf a creature, blinding and restraining it while compelling it to sing of its past mistakes.",
+    "equipment": null,
+    "senses": "Possesses passive perception of 13.",
+    "skills": null,
+    "additional_information": [
+        "Has magic resistance providing advantage on saving throws against spells.",
+        "Can use Healing Leaves for restorative healing to allies.",
+        "Can encourage plant growth making terrain difficult for enemies."
+    ],
+    "damage_types": [
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large guardian plant in the forest",
+        "plant creature that heals allies and grapples foes",
+        "blinded and restrained plant monster",
+        "nature guardian with magic resistance and healing abilities",
+        "powerful plant creature that restricts movement"
+    ]
+}

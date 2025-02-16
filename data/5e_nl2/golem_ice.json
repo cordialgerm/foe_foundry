@@ -1,0 +1,51 @@
+{
+    "name": "Ice Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "30 feet walking speed",
+    "role": null,
+    "tags": [
+        "golem",
+        "ice",
+        "construct",
+        "guardian"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "cold"
+    ],
+    "description": "The Ice Golem is a large construct made of ice, designed as a guardian in frigid environments. Its towering figure is composed of solidified ice, with a chilling aura that reflects its cold nature.",
+    "memorable": "Notable for its ability to grapple foes and preserve them within its icy core, effectively incapacitating them.",
+    "goals": "To guard and protect its designated area or master by incapacitating intruders.",
+    "relations": "Typically encountered in icy terrain or near other constructs or guardians.",
+    "environment": "Usually found in cold, icy environments, serving as a protector in such regions.",
+    "strengths": "Immunity to cold, poison, and psychic damage, along with resistances to various conditions; strong physical attacks.",
+    "weaknesses": "Vulnerable to fire damage, which can liquefy its ice cavity and disrupt its abilities.",
+    "attacks": "Uses powerful slam attacks dealing bludgeoning and cold damage, and can grapple medium or smaller creatures.",
+    "most_powerful_ability": "Preserve Creature ability allows it to freeze and incapacitate enemies, maintaining them within its icy body.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has a low passive perception of 13, indicating it is not very aware.",
+    "additional_information": [
+        "Can liquefy and freeze its Ice Cavity to control trapped creatures.",
+        "Possesses Immutable Form, making it immune to form-altering spells.",
+        "Magic Resistance grants it an advantage on saving throws against spells."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ice guardian with freezing abilities",
+        "construct that grapples and preserves enemies",
+        "ice creature with powerful slam attacks",
+        "golem immune to cold and poison",
+        "cold damaging monster that immobilizes foes"
+    ]
+}

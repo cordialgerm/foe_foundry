@@ -1,0 +1,25 @@
+{
+    "name": "Mithral Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "agile dragon that uses magical shards in combat",
+            "variant": "quick dragon that attacks with magic shards"
+        },
+        {
+            "query": "medium neutral dragon with high perception skills",
+            "variant": "neutral medium dragon with great perception abilities"
+        },
+        {
+            "query": "dragon with slashing damage immunity that loves to fly",
+            "variant": "flying dragon immune to slashing damage"
+        },
+        {
+            "query": "Mithral Dragon Wyrmling characteristics and abilities",
+            "variant": "traits and powers of the Mithral Dragon Wyrmling"
+        },
+        {
+            "query": "metallic dragon with magical resistance and difficult terrain abilities",
+            "variant": "dragon of metal type with magic protection and terrain alteration"
+        }
+    ]
+}

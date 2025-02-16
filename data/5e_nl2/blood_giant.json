@@ -1,0 +1,52 @@
+{
+    "name": "Blood Giant",
+    "creature_type": "Giant",
+    "alignment": "lawful neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "blood magic",
+        "monstrous"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "tactical"
+    ],
+    "description": "The Blood Giant is a massive creature with extraordinary physical strength. It has a striking presence, characterized by its blood-red aura and the magical weaponry it wields.",
+    "memorable": "Its ability to sense living creatures from great distances and utilize blood-based magic makes it a unique and terrifying foe.",
+    "goals": "Typically seeks to dominate the battlefield, using both brute strength and magic to assert control.",
+    "relations": "May be encountered alongside other giants or powerful magical creatures.",
+    "environment": "Often found in remote mountainous regions or places steeped in ancient blood magic.",
+    "strengths": "Exceptional physical strength and resilience, combined with magical attacks that inflict both piercing and cold damage.",
+    "weaknesses": "Low intelligence and charisma, making it less capable of strategic mental warfare and social interactions.",
+    "attacks": "Utilizes the Blood Spear for powerful melee strikes, and can attack from a distance with rock throwing.",
+    "most_powerful_ability": "Blood Magic, which can create hazardous blood spikes, incapacitate foes, or obscure vision extensively.",
+    "equipment": null,
+    "senses": "Possesses Blood Sense, detecting living creatures within 60 feet and their general direction up to 1 mile away.",
+    "skills": "Skilled in perception, allowing it to effectively detect hidden creatures and threats.",
+    "additional_information": [
+        "Immunity to cold and poison damage.",
+        "Resistant to necrotic damage.",
+        "Conditionally immune to exhaustion and poisoned status.",
+        "Has decent insight due to a high Wisdom score."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive crimson giant",
+        "blood magic using giant",
+        "formidable blood giant encounter",
+        "giant with blood sense",
+        "cold damage giant monster"
+    ]
+}

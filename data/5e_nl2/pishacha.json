@@ -1,0 +1,51 @@
+{
+    "name": "Pishacha",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "shapechanger",
+        "trickster"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "chaotic"
+    ],
+    "description": "The Pishacha is a medium-sized fiend with the ability to shapechange into a tiger or a wolf. Its cunning nature is reflected in its chaotic appearance and the aura of malevolence around it.",
+    "memorable": "Its ability to possess humanoids and create chaos makes it a particularly dangerous foe in combat.",
+    "goals": "The Pishacha seeks to control and deceive others while causing mayhem in its path.",
+    "relations": "As a fiend, it may be encountered alongside other chaotic evil entities or demons.",
+    "environment": "It can usually be found in dark, infernal realms or places of significant chaos.",
+    "strengths": "Its Shapechanger ability allows it to adapt and evade capture, while its Demonic Possession can incapacitate enemies.",
+    "weaknesses": "Vulnerable to radiant damage, which it takes double from.",
+    "attacks": "It can make a bite attack dealing 12 piercing damage and a claws attack dealing 10 slashing damage.",
+    "most_powerful_ability": "Demonic Possession can incapacitate a target and create long-lasting madness.",
+    "senses": "The Pishacha has a passive Perception of 15, indicating a keen awareness of its surroundings.",
+    "skills": "It has proficiency in Perception, making it particularly good at noticing hidden threats.",
+    "additional_information": [
+        "Immunities include poison damage and being poisoned.",
+        "Resistant to cold, fire, and lightning damage.",
+        "The Shapechanger ability allows it to take on the forms of animals.",
+        "Can become magically invisible until it attacks.",
+        "Possession ability allows control over its victim's actions."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend with shapechanging abilities",
+        "chaotic evil creature that possesses",
+        "monster that can turn invisible and deceive",
+        "medium-sized fiend that causes chaos",
+        "creature that transforms into tiger or wolf"
+    ]
+}

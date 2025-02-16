@@ -1,0 +1,51 @@
+{
+    "name": "Giant Firestorm",
+    "creature_type": "Giant",
+    "alignment": "Neutral",
+    "size": "Huge",
+    "hp": 149,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "elemental",
+        "fire"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "versatile"
+    ],
+    "description": "The Giant Firestorm is a huge, imposing figure with high Strength and Constitution, clad in hide armor. It wields an Obsidian Axe and can unleash devastating attacks infused with fire and cold damage.",
+    "memorable": "Immunities to cold and fire damage, combined with the ability to create difficult terrain with Lava Geyser, make it a unique threat in battle.",
+    "goals": "Engage in combat and control battlefield dynamics.",
+    "relations": "May be encountered with other fire-based creatures or elemental beings.",
+    "environment": "Typically found in volcanic areas or regions with extreme heat.",
+    "strengths": "High damage output from melee and ranged attacks, along with the ability to manipulate terrain.",
+    "weaknesses": "Low Charisma suggests poor social interactions or persuasion abilities.",
+    "attacks": "Multiattack with the Obsidian Axe for slashing and elemental damage, and Firestorm Bolt for ranged fire and cold damage.",
+    "most_powerful_ability": "Lava Geyser creates hazardous terrain and can severely damage foes with fire.",
+    "equipment": "Obsidian Axe",
+    "senses": "It has a passive Perception of 16, allowing it to detect hidden threats effectively.",
+    "skills": "Proficient in perception, enhancing its ability to notice enemies.",
+    "additional_information": [
+        "Can deal both slashing and elemental damage.",
+        "High Strength (23) and Constitution (20) for durability.",
+        "Lava Geyser can affect multiple creatures."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "Can perform Firestorm Bolt as a ranged spell attack.",
+    "test_queries": [
+        "huge giant that controls lava",
+        "fire elemental giant with slashing attacks",
+        "monster with fire immunity and tough defense",
+        "battlefield controlling giant with lava abilities",
+        "giant that attacks with obsidian axe"
+    ]
+}

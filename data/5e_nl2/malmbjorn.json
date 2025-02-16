@@ -1,0 +1,52 @@
+{
+    "name": "Malmbjorn",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 218,
+    "ac": 18,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 40 ft., burrow 10 ft., swim 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "predator",
+        "ambusher"
+    ],
+    "adjectives": [
+        "huge",
+        "burrowing",
+        "powerful"
+    ],
+    "description": "The Malmbjorn is a massive creature with a grotesque visage, ferocious claws, and a muscular build, covered in a thick hide that contains ferrous metal spikes. It has a huge maw capable of grappling prey and enormous claws that can easily tear through armor.",
+    "memorable": "Its ability to swallow metal items and bolster its defenses when attacked makes it a formidable and unique foe.",
+    "goals": "Typically hunts down foes or prey, seeking to ambush with its burrowing abilities.",
+    "relations": "May coexist with other monsters that share its environment or may prey upon or be preyed upon by smaller creatures.",
+    "environment": "Often found in rocky terrains or underground, where it can utilize its burrowing abilities.",
+    "strengths": "Exceptional physical prowess with high strength and durability in combat.",
+    "weaknesses": "Vulnerable to acid damage, immune to cold damage but only resists nonmagical attacks.",
+    "attacks": "Can make a fierce bite attack that grapples targets, as well as two slashing attacks with adamantine claws that deal double damage to objects.",
+    "most_powerful_ability": "Metal Volley can inflict area slashing damage to multiple foes.",
+    "equipment": null,
+    "senses": "It has keen sense of smell, granting it an enhanced ability to detect prey or threats in its vicinity.",
+    "skills": "It has a basic perception skill, which limits its awareness in certain situations.",
+    "additional_information": [
+        "Can burrow through solid rock, leaving large tunnels.",
+        "Ability to pinpoint ferrous metals nearby enhances its hunting capabilities.",
+        "Uses Ironhide to temporarily boost its defenses when hit by metal weapons.",
+        "Can digest nonmagical metal objects, removing them from opponents.",
+        "Low intelligence limits strategic capabilities but compensates with brute strength."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge creature that eats metal",
+        "burrowing monster with powerful claws",
+        "predatory rock monster with keen senses",
+        "malmbjorn ambush tactics",
+        "monster immune to cold but weak to acid"
+    ]
+}

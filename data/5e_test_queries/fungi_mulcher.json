@@ -1,0 +1,25 @@
+{
+    "name": "Fungi, Mulcher",
+    "queries": [
+        {
+            "query": "gargantuan plant creature that can create pits and regenerate",
+            "variant": "plant monster that is gargantuan and creates pits while regenerating"
+        },
+        {
+            "query": "slow monster with significant piercing damage and a weakness to fire",
+            "variant": "monster that is slow and deals piercing damage while vulnerable to fire"
+        },
+        {
+            "query": "plant creature that grapples enemies and makes difficult terrain",
+            "variant": "creature made of plant that grapples foes and creates difficult ground"
+        },
+        {
+            "query": "monster with low dexterity that can burrow and create traps",
+            "variant": "creature with bad dexterity that can burrow underground and set traps"
+        },
+        {
+            "query": "Fungi creature with a central stalk weakness and a burrowing ability",
+            "variant": "fungal monster that has a weakness in central stalk and burrows"
+        }
+    ]
+}

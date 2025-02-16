@@ -1,6 +1,8 @@
 <MonsterName/>Dream Eater</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Dream Eater is a medium-sized fiend characterized by its lawful evil alignment. Known for its deceptive nature and nightmarish abilities, it plays the role of a cunning predator that feeds on the dreams and mental states of its victims. With robust hit points and a combination of physical and psychic damage capabilities, the Dream Eater poses a significant threat in combat. It has strong Charisma and Dexterity, making it not only an effective attacker with its claws and bite but also highly skilled in deception and charm effects. Its key strengths include its damage immunities and resistances, while it is notably vulnerable to magical attacks that overcome its resistances.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ For mobility and strategy, the Dream Eater can use a bonus action called “Chan
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dream Eater
 
 *Medium* *Fiend* *Lawful Evil*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 ### Bonus Actions
 
 - **Change Shape:** The dream eater magically transforms into a Small or Medium humanoid it has seen, or back into its true form, which is a Fiend. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying transforms with it. It reverts to its true form if it dies.
+</statblock>
 
 

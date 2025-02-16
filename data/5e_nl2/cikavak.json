@@ -1,0 +1,55 @@
+{
+    "name": "Cikavak",
+    "creature_type": "Fey",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 17,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 40 ft., fly 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "tiny",
+        "mischief",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "stealthy"
+    ],
+    "description": "A tiny fey creature that embodies mischief and cleverness with a distinctive beak and a mischievous demeanor.",
+    "memorable": "Its unique magical abilities to silence opponents and communicate telepathically make it a strategic ally.",
+    "goals": "To manipulate the battlefield and support allies through stealth and cunning tactics.",
+    "relations": "May associate with other fey creatures or animal companions for information or support.",
+    "environment": "Typically found in forested areas or places of natural beauty.",
+    "strengths": "Excels in stealth and perception, with resistance to acid, fire, and poison.",
+    "weaknesses": "Fragile in direct combat with a very low Strength score, making it ineffective in physical confrontations.",
+    "attacks": "Uses a beak attack for piercing damage and a special ability to unleash a Silencing Squawk.",
+    "most_powerful_ability": "Silencing Squawk that deafens and silences creatures in a cone, providing tactical control in encounters.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 15, making it highly aware of its surroundings.",
+    "skills": "Has proficiency in Perception and Stealth, making it an effective scout.",
+    "additional_information": [
+        "Can communicate telepathically through Limited Telepathy.",
+        "Ability to Speak with Beasts allows interaction with animal creatures.",
+        "Very low Strength score makes it poor in physical confrontations.",
+        "Good Dexterity helps evade attacks and enhance stealth abilities.",
+        "Absorbs magical attacks from acid, fire, and poison."
+    ],
+    "damage_types": [
+        "acid",
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny fey creature with magical abilities",
+        "stealthy creature that can silence",
+        "Cikavak tactics and abilities",
+        "fey scout that talks to animals",
+        "mischievous tiny creature in forests"
+    ]
+}

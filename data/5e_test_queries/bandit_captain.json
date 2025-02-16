@@ -1,0 +1,25 @@
+{
+    "name": "Bandit Captain",
+    "queries": [
+        {
+            "query": "humanoid leader of bandits with tactical skills",
+            "variant": "humanoid leader of bandits that has strategy skills"
+        },
+        {
+            "query": "ruthless criminal captain in studded leather armor",
+            "variant": "ruthless criminal leader wearing studded leather armor"
+        },
+        {
+            "query": "medium humanoid with high dexterity and sneak attacks",
+            "variant": "medium humanoid with strong dexterity and stealth attacks"
+        },
+        {
+            "query": "leader of a gang known for ambush tactics and intimidation",
+            "variant": "gang leader known for ambush strategies and fear tactics"
+        },
+        {
+            "query": "Bandit Captain with reactions and special abilities",
+            "variant": "Bandit Captain that has special moves and reaction skills"
+        }
+    ]
+}

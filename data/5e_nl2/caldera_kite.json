@@ -1,0 +1,52 @@
+{
+    "name": "Caldera Kite",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 17,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "flying",
+        "toxic",
+        "poison"
+    ],
+    "adjectives": [
+        "toxic",
+        "mobile",
+        "grappling"
+    ],
+    "description": "A large monstrosity that can fly gracefully while emanating toxic effects and obscuring haze around it.",
+    "memorable": "The ability to create a toxic cloud and evade opportunity attacks enhances its threat factor in combat.",
+    "goals": "Typically seeks to incapacitate enemies through poison and mobility.",
+    "relations": "May be found with other poisonous creatures or in hazardous environments.",
+    "environment": "Often found in volcanic or toxic landscapes.",
+    "strengths": "Exceptional mobility and immunities to acid, fire, and poison damage.",
+    "weaknesses": "Very low intelligence and charisma, making it ineffective in strategy or social interactions.",
+    "attacks": "Can perform Multiattacks with slashing and poisonous damage from its Wings and grapple with its Proboscis.",
+    "most_powerful_ability": "Dust Cloud releases toxic gases affecting creatures in close proximity, causing severe poison damage and incapacitation.",
+    "equipment": null,
+    "senses": "Possesses Firesight to see through smoke and a passive perception of 14.",
+    "skills": "Has a basic skill in perception.",
+    "additional_information": [
+        "Immunities to exhaustion and poisoned condition.",
+        "Grapples and restrains medium or smaller creatures.",
+        "Sulfuric Haze creates area denial through poison.",
+        "Does not provoke opportunity attacks when moving.",
+        "Can remain undetected in obscured environments."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "toxic flying monster with poisonous haze",
+        "large creature that grapples and poisons",
+        "mobile kite creature found in volcanic areas",
+        "monster that creates a toxic cloud and flies",
+        "Caldera Kite attack techniques and abilities"
+    ]
+}

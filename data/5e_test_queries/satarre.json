@@ -1,0 +1,25 @@
+{
+    "name": "Satarre",
+    "queries": [
+        {
+            "query": "humanoid combatant that deals necrotic damage",
+            "variant": "combatant humanoid that deals necrotic dmg"
+        },
+        {
+            "query": "medium creature with resistance to being stunned and blinding",
+            "variant": "medium creature resistant to blinding and stunned"
+        },
+        {
+            "query": "Satarre abilities with multiattack and magical weapon attacks",
+            "variant": "abilities of Satarre with magical weapon attacks and multiattack"
+        },
+        {
+            "query": "creature with decent physical stats and darkvision",
+            "variant": "creature with darkvision and average physical stats"
+        },
+        {
+            "query": "combat-focused humanoid that speaks Void Speech",
+            "variant": "humanoid that speaks Void Speech and focuses on combat"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Kappa",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral or chaotic evil",
+    "size": "Small",
+    "hp": 49,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "swim 40 ft., walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "aquatic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "agile",
+        "strong"
+    ],
+    "description": "The Kappa is a small fey creature with a bowl-shaped indent on its head that holds water, embodying chaos and agility.",
+    "memorable": "The Kappa can grapple creatures larger than itself and suffers significant penalties if its head bowl is emptied.",
+    "goals": "Usually serves as a trickster in aquatic environments, causing chaos and engaging in physical contests.",
+    "relations": "Often found near lakes or rivers and may interact with other fey creatures or aquatic beings.",
+    "environment": "Typically found near lakes or rivers.",
+    "strengths": "Possesses excellent physical strength and can effectively control opponents with grappling.",
+    "weaknesses": "Vulnerable when its head bowl is empty, leading to disadvantages in combat.",
+    "attacks": "Can make two claw attacks, dealing slashing damage and grappling larger foes.",
+    "most_powerful_ability": "Expert Wrestler allows it to grapple larger creatures and maintain mobility while doing so.",
+    "senses": "Passive Perception of 14 gives it good awareness of its surroundings.",
+    "skills": "Proficient in Athletics, Medicine, Perception, and Stealth, enhancing its abilities in physical activities.",
+    "additional_information": [
+        "Requires water in its head bowl to function at full capacity",
+        "Can breathe both air and water",
+        "Has advantage on escaping grapples and resisting being knocked prone"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small fey creature that lives by water",
+        "trickster monster with a water bowl on head",
+        "strong agile creature that grapples larger foes",
+        "chaotic water creature that suffers without water",
+        "Kappa tactics in aquatic environments"
+    ]
+}

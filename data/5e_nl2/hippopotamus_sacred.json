@@ -1,0 +1,53 @@
+{
+    "name": "Hippopotamus, Sacred",
+    "creature_type": "Celestial",
+    "alignment": "any alignment (as its deity)",
+    "size": "Huge",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "guardian",
+        "healer"
+    ],
+    "adjectives": [
+        "sacred",
+        "formidable",
+        "magical"
+    ],
+    "description": "The Sacred Hippopotamus is a massive celestial creature with impressive natural armor and significant physical strength. It serves as a guardian of sacred sites, possessing a sleek, powerful form.",
+    "memorable": "Its ability to teleport within sacred sites and unleash the Divine Cacophony makes it a formidable opponent and protector.",
+    "goals": "To guard sacred spaces and heal allies while deterring rival worshipers.",
+    "relations": "Related to other celestial beings; may serve deities or inhabit realms of divine protection.",
+    "environment": "Usually found near sacred sites or places of worship.",
+    "strengths": "Immunities to poison and conditions like charmed or frightened; significant magical resistance.",
+    "weaknesses": "Low Dexterity makes it more vulnerable to ranged attacks.",
+    "attacks": "Gore melee attack that deals piercing damage and additional necrotic or radiant damage; uses Divine Cacophony to damage and stun enemies.",
+    "most_powerful_ability": "Divine Cacophony, which deals heavy damage and stuns enemies in a wide area.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception score of 17.",
+    "skills": "Excels in perception with a +4 proficiency.",
+    "additional_information": [
+        "Can hold its breath for 30 minutes.",
+        "Ability to pinpoint locations of enemies or rival worshipers.",
+        "Uses magical attack for melee and enhances damage with necrotic or radiant options.",
+        "Can heal allies and cure ailments with Healing Rumble.",
+        "Teleportation ability visualized with either golden light or shadow tendrils."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial guardian that teleports",
+        "huge hippo that heals allies",
+        "sacred creature with magical attacks",
+        "hippopotamus with necrotic powers",
+        "defensive hippo protecting a sacred site"
+    ]
+}

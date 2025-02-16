@@ -1,0 +1,49 @@
+{
+    "name": "Faerie Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "10 ft. walking, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "faerie",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "whimsical",
+        "playful",
+        "elusive"
+    ],
+    "description": "A Tiny dragon with vibrant scales and a playful demeanor, known for its innate magical abilities.",
+    "memorable": "Excels in evasion and confusion rather than brute force, using spells to manipulate the battlefield.",
+    "goals": "To bring joy and mischief while influencing others through its charm and magic.",
+    "relations": "Often encountered with other faeries and magical beings.",
+    "environment": "Typically found in enchanted woods or areas rich in magic.",
+    "strengths": "High Dexterity and Charisma make it good at stealth and spellcasting, with abilities to confuse foes.",
+    "weaknesses": "Very low Strength makes it vulnerable in physical confrontations; weak in direct combat.",
+    "attacks": "Uses a Bite attack for minimal damage, but relies on Euphoria Breath and Prismatic Light for battlefield control.",
+    "most_powerful_ability": "Can turn invisible, providing excellent escape and surprise opportunities.",
+    "senses": "Has darkvision up to 60 feet, allowing it to see in the dark.",
+    "skills": "Proficient in stealth, allowing for excellent capabilities in avoiding detection.",
+    "additional_information": [
+        "Innate spellcasting abilities that grow as it ages.",
+        "Can confuse enemies with Euphoria Breath.",
+        "Magical blinding effect with Prismatic Light.",
+        "Transforms creatures into harmless Tiny beasts with Beast Form.",
+        "Magically turns invisible for stealthy maneuvers."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting allows it to cast various spells at will and as it ages.",
+    "test_queries": [
+        "tiny dragon with magical abilities",
+        "playful dragon that confuses enemies",
+        "whimsical dragon found in enchanted woods",
+        "dragon that uses spells to manipulate battle",
+        "elusive dragon with stealth capabilities"
+    ]
+}

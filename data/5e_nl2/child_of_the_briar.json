@@ -1,0 +1,49 @@
+{
+    "name": "Child of the Briar",
+    "creature_type": "Plant",
+    "alignment": "Neutral Evil",
+    "size": "Tiny",
+    "hp": 50,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 10 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "control"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "manipulative"
+    ],
+    "description": "The Child of the Briar is a cunning, stealthy plant creature characterized by its sharp claws and the ability to entangle foes in vines.",
+    "memorable": "It uses its ability to grapple and inflict damage over time while controlling the battlefield through entanglement.",
+    "goals": "To ambush and control its enemies using stealthy tactics and teamwork with other Child of the Briar.",
+    "relations": "Often found in groups with other Child of the Briar, enhancing their ambush capabilities.",
+    "environment": "Typically inhabits wooded or overgrown areas where it can blend into the environment.",
+    "strengths": "High Dexterity and Charisma benefit its stealth capabilities and ability to influence others.",
+    "weaknesses": "Vulnerable to fire damage, which can deal double damage to it.",
+    "attacks": "Utilizes claw attacks for melee damage, grappling its prey, and a ranged Spitdart Tongue for versatility.",
+    "most_powerful_ability": "The ability to cast entangle when near other Child of the Briar, increasing the spell's effectiveness based on the number of allies present.",
+    "senses": "Possesses darkvision up to 60 feet and a passive Perception score of 14, allowing it to notice hidden creatures effectively.",
+    "skills": "Skilled in Stealth with a +7 bonus, making it adept at hiding and ambushing.",
+    "additional_information": [
+        "Can grapple opponents, dealing damage over time.",
+        "Forms tactical connections with other Child of the Briar to enhance abilities.",
+        "Uses cunning stealth tactics to launch surprise attacks."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast the entangle spell, controlling the battlefield and restricting enemy movement.",
+    "test_queries": [
+        "stealthy plant creature that ambushes enemies",
+        "cunning monster living in overgrown areas",
+        "tiny plant with entangling abilities",
+        "ambush predator using vines and claws",
+        "manipulative creature that grapples opponents"
+    ]
+}

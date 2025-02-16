@@ -1,0 +1,52 @@
+{
+    "name": "Wild Sirocco",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 105,
+    "ac": 13,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 80 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fire",
+        "wind",
+        "elemental"
+    ],
+    "adjectives": [
+        "formidable",
+        "mobile",
+        "elemental"
+    ],
+    "description": "A large elemental creature with a mastery over fire and wind, with the ability to move through narrow spaces without hindrance.",
+    "memorable": "Its ability to throw creatures with scorching winds and ignite them adds a unique challenge to encounters.",
+    "goals": "Engages in combat to overwhelm and disrupt its foes using mobility and element-themed attacks.",
+    "relations": "Often found in deserts or fiery environments, it may be related to other elemental creatures.",
+    "environment": "Can usually be found in hot, dry spaces or locations with strong wind currents.",
+    "strengths": "Has high mobility with a flying speed, immunity to fire and poison damage, and the ability to deal continuous fire damage.",
+    "weaknesses": "Vulnerable to cold damage, taking extra harm when moving through water or being splashed.",
+    "attacks": "Multiattack with two Fiery Wallop strikes, dealing both bludgeoning and fire damage.",
+    "most_powerful_ability": "Scorching Winds, dealing area fire damage and potentially knocking targets prone.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immunities to exhaustion, grappling, paralysis, petrification, and several other conditions.",
+        "Can move through spaces as narrow as 1 inch.",
+        "Does not require air, food, drink, or sleep.",
+        "Ignited creatures take ongoing fire damage until they extinguish.",
+        "Ability to throw creatures back in combat adds strategic depth."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fire elemental that flies",
+        "creature that ignites and throws enemies away",
+        "fire and wind monster with agile movements",
+        "mobile elemental immune to fire damage",
+        "elemental that can move through narrow spaces"
+    ]
+}

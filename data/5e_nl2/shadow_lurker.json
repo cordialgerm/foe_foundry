@@ -1,0 +1,54 @@
+{
+    "name": "Shadow Lurker",
+    "creature_type": "Fey",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 84,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet per turn, decent speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "stealth",
+        "shadow",
+        "curse"
+    ],
+    "adjectives": [
+        "shadowy",
+        "cunning",
+        "malevolent"
+    ],
+    "description": "The Shadow Lurker is a fey creature that manipulates shadows, with a dark and intangible appearance enveloped in mist. It thrives in dim light or darkness, with a keen sense of stealth and an unsettling ability to control shadows.",
+    "memorable": "The ability to steal shadows from targets, causing exhaustion and rendering them shadowless makes it a uniquely dangerous foe.",
+    "goals": "To ensnare victims by stealing their shadows and creating living shades under its control.",
+    "relations": "May be encountered with other shadowy entities or dark fey that share a penchant for manipulation.",
+    "environment": "Favors dimly lit areas, especially dungeons, forests at dusk, or places steeped in shadow.",
+    "strengths": "Excels in stealth and combat in dim light, able to diminish light sources and hide effortlessly.",
+    "weaknesses": "Suffers disadvantages in sunlight, making it vulnerable to light-based attacks or environments.",
+    "attacks": "Utilizes Shadow Strikes that deal slashing and cold damage, alongside the debilitating Shadow Steal ability.",
+    "most_powerful_ability": "Shadow Steal, which curses targets by depriving them of their shadow and imposing exhaustion.",
+    "equipment": null,
+    "senses": "Has advantage on Wisdom (Perception) checks in dim light or darkness due to its shadowy nature.",
+    "skills": "Possesses basic skill proficiencies, including a moderate Perception score with a +2 bonus.",
+    "additional_information": [
+        "Can fill a 60-foot radius with shadowy mist that dims bright light.",
+        "Capable of controlling up to ten living shades or five stolen shadows at once.",
+        "Cursed targets must succeed on a Charisma saving throw or suffer an exhaustion level.",
+        "Ability to hide as a bonus action in dim light or darkness further enhances its ambush tactics.",
+        "If a cursed creature's shadow is destroyed, it returns as a mundane shadow, allowing easier recovery."
+    ],
+    "damage_types": [
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadow monster that manipulates darkness",
+        "cunning fey with shadow stealing abilities",
+        "creature that controls living shades",
+        "dangerous stealthy fey in dim light",
+        "shadowy creature with sunlight sensitivity"
+    ]
+}

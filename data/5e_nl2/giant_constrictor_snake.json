@@ -1,0 +1,50 @@
+{
+    "name": "Giant Constrictor Snake",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 60,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet walking, 30 feet swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "snake",
+        "predator",
+        "ambush"
+    ],
+    "adjectives": [
+        "enormous",
+        "fearsome",
+        "stealthy"
+    ],
+    "description": "An enormous serpent that can grow to over 30 feet in length, it has a muscular body capable of wrapping around its prey. It blends well with its surroundings, aiding its ambush tactics.",
+    "memorable": "Its ability to grapple and constrict victims makes it a dangerous predator that can suffocate its prey.",
+    "goals": "Eager to ambush and capture prey using stealth and strength.",
+    "relations": "Often found in jungles or swamps, it may be encountered with other predators in those environments.",
+    "environment": "Typically found in jungles or swamps, lurking in water or dense vegetation.",
+    "strengths": "Exceptional grappling capabilities and significant physical damage with biting and constricting attacks.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma indicate primitive behavior.",
+    "attacks": "Bites with sharp fangs and constricts with powerful muscles to restrain and suffocate its prey.",
+    "most_powerful_ability": "Constricts and grapples victims, making it difficult for them to escape.",
+    "equipment": null,
+    "senses": "Possesses blindsight allowing it to sense its surroundings within 10 feet even in total darkness.",
+    "skills": "Has a decent perception skill, which makes it capable of noticing details and tracking movements.",
+    "additional_information": [
+        "Can grow to over 30 feet in length",
+        "Stealthy hunter using camouflage",
+        "Employs ambush tactics effectively",
+        "Significant physical power with a Strength score of 18",
+        "Very effective at grappling actions"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge snake that ambushes prey",
+        "stealthy predator found in swamps",
+        "enormous serpent with grappling abilities",
+        "fearsome snake with blinding speed",
+        "jungle monster that constricts and bites"
+    ]
+}

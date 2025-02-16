@@ -1,6 +1,8 @@
 <MonsterName/>Dead Mans Fingers</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>10</CR>
+<AC/>15</AC>
+<HP/>190</HP>
 <summary>The Dead Man's Fingers is a medium-sized plant creature that exists simultaneously on the Ethereal and Material Planes, making it a formidable opponent in combat. With an Armor Class of 15 and 190 hit points, it can endure a fair amount of damage. It has a Challenge Rating of 10, which indicates it is a significant threat to adventurers, providing 5,900 experience points upon defeat. The creature possesses exceptional Strength and Constitution scores, with a Strength of 20 (+5) and Constitution of 20 (+5), making it physically powerful and resilient. However, it has low Intelligence and Charisma, resulting in only bad performance in their associated saving throws. Notably, the Dead Man's Fingers is immune to a wide array of conditions, including being blinded, charmed, deafened, fatigued, frightened, prone, restrained, and stunned, which makes it hard to control or incapacitate. Its blindsight extends for 90 feet, allowing it to perceive its surroundings even when blinded but renders it unaware beyond that radius.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ As a bonus action, the Dead Man's Fingers can use Telekinetic Pull to target one
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dead Mans Fingers
 
 *Medium* *Plant*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Telekinetic Pull (Ethereal or Material Plane):** One creature within 90 feet makes a DC 15 Strength saving throw. On a failure, it is magically pulled up to 60 feet straight towards the dead mans fingers.
 
 
+</statblock>
 
 

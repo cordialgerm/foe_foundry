@@ -1,0 +1,25 @@
+{
+    "name": "Khalkos",
+    "queries": [
+        {
+            "query": "intelligent aberration with psionic abilities and damage resistances",
+            "variant": "intelligent abberation wih psionic abilties and damage resistences"
+        },
+        {
+            "query": "medium creature immune to charm that can fly",
+            "variant": "medium creatuer immun to charm hat can fly"
+        },
+        {
+            "query": "monster that can confuse opponents and has high intelligence",
+            "variant": "monstr that can confuze opponents and has hgih intelligence"
+        },
+        {
+            "query": "tactical creature with darkvision and psionic powers",
+            "variant": "tactical creatur with darkvision and psionic powrs"
+        },
+        {
+            "query": "aberration that inflicts confusion and has high AC",
+            "variant": "abberration that inflcts confusion and has hgih AC"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Snow Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 171,
+    "ac": 6,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 30 ft., burrow 20 ft.",
+    "role": "Controller",
+    "tags": [
+        "snow",
+        "ice",
+        "ambush",
+        "blinding"
+    ],
+    "adjectives": [
+        "formidable",
+        "treacherous",
+        "cold-damaging",
+        "durable"
+    ],
+    "description": "The Snow Ooze is a large ooze creature that resembles a patch of snow, ambushing unsuspecting travelers. It possesses a semi-transparent, gelatinous form that blends seamlessly with its icy environment.",
+    "memorable": "Its ability to blind creatures and control the battlefield with snow-based attacks and ambushing tactics makes it a formidable opponent.",
+    "goals": "To dominate frigid environments and ambush unsuspecting creatures.",
+    "relations": "Related to other oozes, it may inhabit areas alongside frost-themed creatures.",
+    "environment": "Typically found in snowy and icy terrains.",
+    "strengths": "High durability with significant hit points and powerful cold damage attacks.",
+    "weaknesses": "Very low Dexterity and Intelligence, making it less agile and strategic.",
+    "attacks": "The Snow Ooze delivers powerful pseudopod strikes and can execute a devastating avalanche attack.",
+    "most_powerful_ability": "Snow Blindness, allowing it to blind creatures that start their turn within 30 feet unless they succeed on a saving throw.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet enables it to sense creatures around it without sight.",
+    "skills": "Possesses passive Perception of 11, aiding in detecting nearby creatures.",
+    "additional_information": [
+        "Amorphous ability allows movement through narrow spaces easily.",
+        "False Appearance lets it disguise itself as snow when motionless.",
+        "Ice Walk allows it to traverse icy surfaces without difficulty.",
+        "Ooze Nature means it doesn't require sleep.",
+        "Snow Burrower ability permits burrowing through snow and ice easily."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge ice creature that blinds",
+        "ambush monster in snowy terrain",
+        "gelatinous foe that controls snow",
+        "powerful cold-damaging ooze",
+        "treacherous creature resembling snow"
+    ]
+}

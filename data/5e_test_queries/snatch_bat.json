@@ -1,0 +1,25 @@
+{
+    "name": "Snatch Bat",
+    "queries": [
+        {
+            "query": "flying creature that steals items and has blindsight",
+            "variant": "creature that flies and can steal items with blindsight"
+        },
+        {
+            "query": "agile ambush predator with natural armor and psychic resistance",
+            "variant": "ambush predator that is agile and has natural armor plus psychic resistances"
+        },
+        {
+            "query": "medium aberration known for its treasure sense and quick attacks",
+            "variant": "medium-sized aberration famous for being quick and having treasure sense"
+        },
+        {
+            "query": "cunning flying monster that is immune to exhaustion and charms",
+            "variant": "flying monster that is clever and immune to exhaustion and charm"
+        },
+        {
+            "query": "bat-like aberration that can detect precious metals and evade attacks",
+            "variant": "aberration resembling a bat that can sense precious metals and avoid attacks"
+        }
+    ]
+}

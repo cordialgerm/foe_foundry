@@ -1,0 +1,25 @@
+{
+    "name": "Pony",
+    "queries": [
+        {
+            "query": "small sturdy horse that is good for carrying loads",
+            "variant": "sturdy small horse that carries loads well"
+        },
+        {
+            "query": "gentle work animal found on farms with low hit points",
+            "variant": "gentle farm animal with few hit points"
+        },
+        {
+            "query": "medium beast that can travel 40 feet and has basic melee attack",
+            "variant": "medium creature with a 40-foot speed and simple melee capabilities"
+        },
+        {
+            "query": "reliable pony used as mount for halflings and children",
+            "variant": "trusty pony often ridden by halflings and kids"
+        },
+        {
+            "query": "Horse-like creature with poor intelligence and good strength",
+            "variant": "horse-like beast that is strong but not very smart"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Wandering Haze",
+    "queries": [
+        {
+            "query": "gargantuan ooze that deals psychic damage and moves through narrow spaces",
+            "variant": "gargantuan ooze which inflicts psychic harm and can squeeze through tight areas"
+        },
+        {
+            "query": "cloud-like monster with high mobility and acid attacks",
+            "variant": "cloud-like creature that has great movement and can attack with acid"
+        },
+        {
+            "query": "mobile ooze that can camouflage and inflicts acid damage",
+            "variant": "ooze that is able to hide and deals acid damage while being highly mobile"
+        },
+        {
+            "query": "massive ooze immune to acid with dangerous abilities",
+            "variant": "huge ooze resistant to acid that has lethal powers"
+        },
+        {
+            "query": "Wandering Haze abilities in combat including multiattack and cloud form",
+            "variant": "Wandering Haze's combat abilities including multi-attack and cloud form power"
+        }
+    ]
+}

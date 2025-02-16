@@ -1,0 +1,52 @@
+{
+    "name": "Amphibolt",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 85,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "amphibious",
+        "lightning",
+        "camouflage"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "powerful"
+    ],
+    "description": "The Amphibolt is a large monstrosity with good strength and agility, capable of existing both in water and on land. It resembles a large rock when motionless, making it a master of ambush tactics.",
+    "memorable": "Its unique Lightning Leap ability allows it to jump long distances while dealing damage and potentially knocking opponents prone.",
+    "goals": "To ambush creatures and control the battlefield using its mobility and powerful attacks.",
+    "relations": "It may associate with other aquatic or amphibious creatures, as well as predatory animals in its environment.",
+    "environment": "Typically found in areas with both land and water, such as riverbanks, swamps, or coastal regions.",
+    "strengths": "High Dexterity and Constitution scores ensure agility and durability in combat.",
+    "weaknesses": "Very low Intelligence, Wisdom, and Charisma, limiting its mental capabilities and social interactions.",
+    "attacks": "The Amphibolt can inflict significant damage with its Bite attacks, dealing piercing and lightning damage, and has the capability to swallow opponents whole.",
+    "most_powerful_ability": "Lightning Leap, which allows it to make long jumps and deal both bludgeoning and lightning damage to enemies in its path.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see in dark or dim light conditions.",
+    "skills": "Has an average perception skill, though its low Wisdom indicates it may miss subtle details.",
+    "additional_information": [
+        "Immunity to lightning damage makes it a resilient foe against electrical attacks.",
+        "False Appearance ability allows it to hide effectively from unsuspecting prey.",
+        "Can only swallow one creature at a time, highlighting its predatory focus.",
+        "Lightning damage adds a flexibility to its attack strategy.",
+        "Amphibious nature provides advantages in diverse combat situations."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator in aquatic environments",
+        "lightning-dispensing monster",
+        "large amphibious beast",
+        "camouflaged ambush creature",
+        "mobile combatant with lightning abilities"
+    ]
+}

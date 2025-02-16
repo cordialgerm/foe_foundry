@@ -1,0 +1,50 @@
+{
+    "name": "Haunted Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 20,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "haunted",
+        "spiritual"
+    ],
+    "adjectives": [
+        "massive",
+        "chaotic",
+        "intimidating"
+    ],
+    "description": "The Haunted Giant is a massive, chaotic neutral giant that embodies chaos and is accompanied by three ghostly ancestral spirits. It has natural armor, granting it a high Armor Class, and a strong physical presence, with notable strength and constitution.",
+    "memorable": "The giant's connection with the ancestral spirits and the ability to see invisible creatures makes it a formidable and eerie opponent.",
+    "goals": "Typically seeks to defend its realm and exert chaos upon intruders.",
+    "relations": "Might be encountered with other supernatural entities or benevolent spirits.",
+    "environment": "Found in places that blur the lines between the living and ethereal realms.",
+    "strengths": "High Armor Class, summoned spirits for defense, ability to see invisibility.",
+    "weaknesses": "Low Dexterity and Intelligence scores, making it vulnerable to ranged attacks and cunning tactics.",
+    "attacks": "Can perform multiple melee attacks with a greatclub, and also throw rocks as ranged attacks.",
+    "most_powerful_ability": "Ancestral Spirits ability that provides defensive buffs and additional HP.",
+    "equipment": null,
+    "senses": "Can see invisible creatures and objects, and perceive them as if they were visible.",
+    "skills": "Has proficiency in Athletics, allowing it to excel in physical contests.",
+    "additional_information": [
+        "Immune to being charmed or frightened.",
+        "Can attack with advantage through its Reckless ability.",
+        "Spiritual allies provide significant defensive benefits.",
+        "Low perception limits its awareness despite other strengths.",
+        "Vulnerable to radiant damage for its ancestral spirits."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant with ancestral spirits",
+        "giant that can see invisible enemies",
+        "chaotic giant with high armor class",
+        "haunted giant capable of reckless attacks",
+        "giant immune to charm and fear"
+    ]
+}

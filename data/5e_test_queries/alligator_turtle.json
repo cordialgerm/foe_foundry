@@ -1,0 +1,25 @@
+{
+    "name": "Alligator Turtle",
+    "queries": [
+        {
+            "query": "medium aquatic turtle with strong natural armor",
+            "variant": "medium turtle that lives in water and has resilient natural armor"
+        },
+        {
+            "query": "turtle that can hold its breath for an hour and attacks with a bite",
+            "variant": "turtle able to hold its breath for 1 hour and bites its enemies"
+        },
+        {
+            "query": "beast that swims fast and has a grapple ability",
+            "variant": "creature that swims quickly and can grapple opponents"
+        },
+        {
+            "query": "Alligator Turtle abilities in combat and its movement speed",
+            "variant": "abilities of the Alligator Turtle in battle and how fast it moves"
+        },
+        {
+            "query": "low Challenge Rating turtle with decent stealth",
+            "variant": "turtle with a low CR and good stealth skills"
+        }
+    ]
+}

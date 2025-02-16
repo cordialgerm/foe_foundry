@@ -1,0 +1,46 @@
+{
+    "name": "Alligator",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "swim 30 ft., walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "predator",
+        "water creature"
+    ],
+    "adjectives": [
+        "formidable",
+        "agile",
+        "stealthy"
+    ],
+    "description": "The alligator is a medium-sized beast known for its agility in water and formidable bite, utilizing its speed to ambush prey both in water and on land.",
+    "memorable": "Its ability to grapple opponents with its bite attack can turn the tide of a skirmish, restricting target movement.",
+    "goals": "Primarily a predator, it seeks to ambush prey.",
+    "relations": "Can be encountered alongside other aquatic or swamp creatures.",
+    "environment": "Typically found in aquatic or swamp environments.",
+    "strengths": "Good physical threat due to high strength and ability to grapple prey.",
+    "weaknesses": "Low intelligence and charisma limit its effectiveness in social interactions.",
+    "attacks": "Bite attack with a +4 to hit, dealing 5 piercing damage and grappling the target.",
+    "most_powerful_ability": "Hold Breath for 15 minutes, enabling it to stay submerged and ambush effectively.",
+    "senses": "Possesses a passive Perception score of 10.",
+    "skills": "Proficient in stealth, allowing it to move quietly when approaching prey.",
+    "additional_information": [
+        "Abilities to grapple and restrain targets.",
+        "Relatively resilient due to natural armor.",
+        "Good ambush predator due to speed in aquatic environments."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator",
+        "swamp creature",
+        "formidable water beast",
+        "alligator characteristics",
+        "agile aquatic predator"
+    ]
+}

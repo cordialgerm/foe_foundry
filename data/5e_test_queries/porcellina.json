@@ -1,0 +1,25 @@
+{
+    "name": "Porcellina",
+    "queries": [
+        {
+            "query": "small agile beast with poisonous flesh",
+            "variant": "tiny agile creature that has poisonous meat"
+        },
+        {
+            "query": "creature that can knock foes prone and has keen hearing",
+            "variant": "monster that knocks enemies down and has sharp hearing"
+        },
+        {
+            "query": "cunning tiny beast that fights better in packs",
+            "variant": "sly small creature that is stronger with allies"
+        },
+        {
+            "query": "creature with a blood-curdling scream that frightens enemies",
+            "variant": "monster that can scream loudly to scare foes"
+        },
+        {
+            "query": "beast with a challenge rating of 1/2 and decent dexterity",
+            "variant": "creature rated as 1/2 challenge level with good dexterity"
+        }
+    ]
+}

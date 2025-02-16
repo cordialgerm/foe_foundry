@@ -1,0 +1,25 @@
+{
+    "name": "Sinstar",
+    "queries": [
+        {
+            "query": "tiny plant creature with telepathic abilities and disease manipulation",
+            "variant": "tiny creature that is a plant and can manipulate disease with telepathic powers"
+        },
+        {
+            "query": "lawful evil plant monster that inflicts thrall sickness",
+            "variant": "plant monster with lawful evil traits that causes thrall sickness"
+        },
+        {
+            "query": "manipulative plant creature that charms humanoids and uses psychic attacks",
+            "variant": "charming plant creature that manipulates humanoids and makes psychic attacks"
+        },
+        {
+            "query": "Sinstar abilities and defenses in combat",
+            "variant": "abilities and defenses of the Sinstar during combat"
+        },
+        {
+            "query": "high intelligent plant monster with slow movement and powerful defenses",
+            "variant": "plant monster with high intelligence, powerful defenses, and a slow speed"
+        }
+    ]
+}

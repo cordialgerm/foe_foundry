@@ -1,0 +1,53 @@
+{
+    "name": "Ala",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 127,
+    "ac": 17,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft., fly 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Fey",
+        "Lightning",
+        "Poison"
+    ],
+    "adjectives": [
+        "chaotic",
+        "powerful",
+        "mobile"
+    ],
+    "description": "The Ala is a striking fey creature known for its formidable combat prowess. With a robust physique, it showcases exceptional strength, a keen perception, and a unique poisonous essence in its flesh. Its ability to fly adds to its agility in battle, enabling strategic movements.",
+    "memorable": "The Ala combines lethal melee attacks with devastating lightning strikes, particularly deadly in stormy environments where its abilities are enhanced.",
+    "goals": "Typically seeks to dominate battles through swift and powerful melee attacks, utilizing its poison and elemental abilities to overwhelm foes.",
+    "relations": "May be encountered alongside other fey or creatures influenced by storms; its chaotic nature can forge temporary alliances with similarly ruthless entities.",
+    "environment": "Often found in areas prone to electrical storms or places imbued with chaotic magic.",
+    "strengths": "Possesses high mobility, immunity to specific damage types, and potent offensive abilities that can strike multiple targets simultaneously.",
+    "weaknesses": "Low Charisma indicates difficulty in social interactions and susceptibility to charm effects.",
+    "attacks": "Utilizes a Multiattack to unleash a powerful Bite and two Claw strikes, each infused with poison to deal additional damage.",
+    "most_powerful_ability": "Lightning\u2019s Kiss attack can deal devastating lightning damage to multiple targets, especially potent in stormy conditions.",
+    "equipment": null,
+    "senses": "Has a passive perception of 19, highlighting its keen awareness of surroundings.",
+    "skills": "Well-versed in Athletics, Stealth, and has an excellent perception to detect threats.",
+    "additional_information": [
+        "Immune to lightning, poison, and thunder damage.",
+        "Poisonous Flesh ability deals damage to those who come into contact with it or strike it in melee.",
+        "Flyby ability allows it to move freely without provoking opportunity attacks.",
+        "Storm's Strength enhances its attack efficacy during electrical storms.",
+        "Exceptional Strength of 20 makes it a formidable opponent in physical confrontations."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fey creature",
+        "lightning-infused monster",
+        "poisonous fey with flight",
+        "agile storm-themed fey",
+        "strong melee fey attacker"
+    ]
+}

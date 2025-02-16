@@ -1,0 +1,25 @@
+{
+    "name": "Heggarna",
+    "queries": [
+        {
+            "query": "tiny shadow creature that causes nightmares and disguises as a cat",
+            "variant": "tiny shadwo creatur that brings nightmares and pretends to be a cat"
+        },
+        {
+            "query": "deceptive monster that can hide in darkness and attack with psychic abilities",
+            "variant": "deceptiv monster that can hide in darknes and strike with psychic power"
+        },
+        {
+            "query": "creature with darkvision that consumes dreams and is physically weak",
+            "variant": "creature that has dark vision and eats dreams, but is weak physically"
+        },
+        {
+            "query": "stealthy manipulative being that appears as a harmless animal while attacking",
+            "variant": "stealthy manipulative entity that looks like a harmless animal while striking"
+        },
+        {
+            "query": "nightmare-inducing aberration that infiltrates and feeds on Charisma",
+            "variant": "nightmare causing aberration that sneaks in and drains Charisma"
+        }
+    ]
+}

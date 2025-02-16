@@ -1,0 +1,25 @@
+{
+    "name": "Mummy Lord",
+    "queries": [
+        {
+            "query": "undead ruler with powerful curses living in ancient tombs",
+            "variant": "undead king with strong curses found in old tombs"
+        },
+        {
+            "query": "creature that can curse enemies and is resistant to fire damage",
+            "variant": "monster that curses foes and has fire immunity"
+        },
+        {
+            "query": "intelligent mummy with necromantic abilities and command over undead",
+            "variant": "smart mummy with dark powers and control over undead creatures"
+        },
+        {
+            "query": "Mummy Lord characteristics and battle tactics",
+            "variant": "attributes and strategies of Mummy Lord"
+        },
+        {
+            "query": "ancient undead with legendary resistance and darkvision",
+            "variant": "old undead creature with magic resistance and night sight"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Empusa",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 102,
+    "ac": 16,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 feet walking speed",
+    "role": "Ambusher",
+    "tags": [
+        "ambush",
+        "shapechanger",
+        "deception",
+        "mobility"
+    ],
+    "adjectives": [
+        "cunning",
+        "deadly",
+        "magical",
+        "form-shifting"
+    ],
+    "description": "The Empusa is a Medium monstrosity with a coppery hue and a formidable presence, known for its deadly attacks and ability to shift forms.",
+    "memorable": "Notorious for its ability to ambush and manipulate, the Empusa is a dangerous foe with both magical and physical attacks.",
+    "goals": "Typically seeks to surprise and overpower its enemies using speed and cunning.",
+    "relations": "Could be encountered alongside other chaotic evil creatures or serve as a minion to a more powerful entity.",
+    "environment": "Commonly found in dark, secluded areas where it can ambush unsuspecting travelers.",
+    "strengths": "Exceptional strength and capabilities in deceit, with magical attacks that bypass resistances.",
+    "weaknesses": "Relies on surprise and cunning; average Dexterity affects evasiveness.",
+    "attacks": "Utilizes multiattack options with claws and kicks that can knock opponents prone.",
+    "most_powerful_ability": "Shapechanger ability allows it to adopt various forms, enhancing its versatility in combat.",
+    "equipment": null,
+    "senses": "It has a passive perception of 15, indicating a keen awareness of its surroundings.",
+    "skills": "Excels in deception and has decent perception and stealth skills.",
+    "additional_information": [
+        "Ambusher trait grants advantage on surprise attack rolls.",
+        "Magical attacks allow it to overcome damage resistances.",
+        "Nimble Fighter ability enhances movement options during combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning shapeshifting monster",
+        "deadly creature with ambush tactics",
+        "deceptive beast that surprises opponents",
+        "swift creature with magical attacks",
+        "coppery hued monster in dark environments"
+    ]
+}

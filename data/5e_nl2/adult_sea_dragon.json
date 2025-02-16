@@ -1,0 +1,50 @@
+{
+    "name": "Adult Sea Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Huge",
+    "hp": 275,
+    "ac": 19,
+    "srd": false,
+    "cr": "18",
+    "movement": "walk 60 ft., fly 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "sea",
+        "amphibious",
+        "legendary"
+    ],
+    "adjectives": [
+        "formidable",
+        "lethal",
+        "strategic"
+    ],
+    "description": "The Adult Sea Dragon is a massive and powerful dragon, with a strong body, characterized by its ability to traverse both land and sea. It has a menacing appearance typical of dragons, showcasing its immense size and intimidating presence.",
+    "memorable": "Master of both land and sea with abilities like Tidal Breath that can control the battlefield and frighten opponents with its Frightful Presence.",
+    "goals": "To dominate its territory, instill fear, and crush its enemies both in combat and through psychological intimidation.",
+    "relations": "Other dragons, sea creatures, and potentially other evil entities that share similar goals.",
+    "environment": "Typically found in coastal areas, deep oceans, or anywhere adjacent to large bodies of water.",
+    "strengths": "High hit points and AC, a strong array of attacks including devastating multiattack capabilities, and abilities that control the battlefield.",
+    "weaknesses": "Low Dexterity score which results in vulnerability to faster opponents and attacks.",
+    "attacks": "Bite, Fin, and Tail attacks, all capable of delivering significant damage and cold effects, adding to its threat level.",
+    "most_powerful_ability": "Tidal Breath, which unleashes a wave of frigid seawater, causing devastating area damage and the potential to knock opponents prone.",
+    "senses": "The dragon possesses blindsight up to 60 feet and has an impressive passive Perception of 24, allowing it to detect threats before they approach.",
+    "skills": "Exceptional in Perception, making it highly aware of its surroundings.",
+    "additional_information": [
+        "Can breathe both air and water due to its Amphibious trait.",
+        "Legendary Resistance makes it difficult to control or hinder.",
+        "Has a Siege Monster trait, dealing double damage to structures."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mighty ocean dragon",
+        "fearsome sea beast",
+        "legendary water dragon",
+        "amphibious dragon",
+        "massive sea creature"
+    ]
+}

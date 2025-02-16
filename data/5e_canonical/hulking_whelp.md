@@ -1,6 +1,8 @@
 <MonsterName/>Hulking Whelp</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>94</HP>
 <summary>The Hulking Whelp is a small fey creature with chaotic neutral alignment that can transition between two distinctive forms: a whelp and a hulking canine variant. It possesses a solid natural armor class of 15 and has an impressive pool of hit points totaling 94, which gives it good durability in combat. With a speed of 40 feet, the hulking whelp can maneuver effectively on the battlefield. It has a challenge rating of 5, making it a suitable encounter for a party of adventurers seeking moderate difficulty. The creature exhibits extraordinary strength with a score of 21 (+5 modifier, considered exceptional), allowing for potent melee attacks, while its resilience is bolstered by a constitution score of 18 (+4, rated as very good). However, its intelligence is low (7, -2), which limits its strategic capabilities and interactions outside of combat. Notably, the hulking whelp has damage resistances to most nonmagical physical attacks, adding another layer of protection against standard weaponry.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Finally, its reaction ability, "Defensive Transformation," can trigger when it i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hulking Whelp
 
 *Small* *Fey* *Chaotic Neutral*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Defensive Transformation (Whelp Form Only):** When the hulking whelp is hit with an attack or when a creature it can see or hear within 30 feet of it threatens to harm it, it must succeed on a DC 12 Wisdom saving throw or transform into its hulking canine form (see the Change Shape bonus action).
+</statblock>
 
 

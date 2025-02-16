@@ -1,0 +1,53 @@
+{
+    "name": "Butatsch",
+    "creature_type": "Aberration",
+    "alignment": "chaotic neutral",
+    "size": "Gargantuan",
+    "hp": 248,
+    "ac": 17,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 20 ft. swim 50 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "aberration",
+        "gargantuan",
+        "ambush",
+        "fire"
+    ],
+    "adjectives": [
+        "chaotic",
+        "magical",
+        "formidable"
+    ],
+    "description": "The Butatsch is a gargantuan aberration that has a formidable physical presence and is adept at ambush tactics. It wields a unique ability known as Immolating Gaze, enabling it to inflict fire damage and ongoing fire effects on multiple targets. It also has multiple eyes, contributing to its perceptive capabilities.",
+    "memorable": "Its ability to blend powerful melee attacks with ongoing fire damage creates constant pressure on opponents, while its truesight and Thousands of Eyes make it extremely difficult to ambush.",
+    "goals": "Typically seeks to dominate its environment by ambushing intruders and using area denial tactics.",
+    "relations": "Likely serves other aberrations or commands lesser creatures in its domain.",
+    "environment": "Can be found in subterranean lairs or areas where it can effectively utilize its ambush tactics and swimming capability.",
+    "strengths": "High resilience and advantage on perception checks make it a formidable opponent in combat scenarios.",
+    "weaknesses": "Slow movement speed on land limits its mobility compared to faster creatures.",
+    "attacks": "Multiattack includes an Immolating Gaze followed by powerful slam attacks, dealing both bludgeoning and fire damage.",
+    "most_powerful_ability": "Immolating Gaze allows it to target multiple creatures with potential ongoing fire damage, creating a significant tactical advantage.",
+    "equipment": null,
+    "senses": "Truesight up to 120 feet enhances its awareness and counters illusions.",
+    "skills": "Exceptional perception skill with a +13 modifier enables it to detect hidden foes effectively.",
+    "additional_information": [
+        "Immunity to acid and fire damage makes it resilient against common elemental attacks.",
+        "The Ingest ability allows it to swallow creatures for additional damage and control over them.",
+        "High Constitution score provides superior resilience against health-draining effects.",
+        "Bludgeoning resistance further enhances its durability in combat."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan creature with fire gaze",
+        "chaotic monster with swimming speed",
+        "aberration that can swallow enemies",
+        "monster with perception advantage and fire attacks",
+        "ambush creature with truesight"
+    ]
+}

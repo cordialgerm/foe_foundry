@@ -1,0 +1,54 @@
+{
+    "name": "Couatl",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 19,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft. on ground, 90 ft. flying",
+    "role": "Support",
+    "tags": [
+        "celestial",
+        "guardian",
+        "protector"
+    ],
+    "adjectives": [
+        "wise",
+        "benevolent",
+        "vibrant",
+        "formidable"
+    ],
+    "description": "The Couatl is a celestial serpent adorned with colorful, feathered wings and shimmering iridescent scales.",
+    "memorable": "The Couatl's unique abilities to shapeshift and cast powerful spells while maintaining a protective nature make it stand out.",
+    "goals": "Guarding sacred places and protecting good-aligned individuals from evil forces.",
+    "relations": "Often acts as a guide or ally to adventurers and good-aligned creatures.",
+    "environment": "Sacred locations, often found protecting important individuals or areas.",
+    "strengths": "Excellent spellcasting capabilities, strong resistances, and the ability to heal and protect allies.",
+    "weaknesses": "Can be overwhelmed if caught by surprise or outmatched by coordinated attacks.",
+    "attacks": "Utilizes a potent bite attack that can induce a poison effect and a constrict move that grapples enemies.",
+    "most_powerful_ability": "Can heal allies and remove poison or disease with a magical touch, demonstrating its support role.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see the invisible and discern true forms.",
+    "skills": "Highly skilled in perception and religion, with good proficiency in persuasion.",
+    "additional_information": [
+        "Resistant to radiant damage and nonmagical physical damage.",
+        "Magic resistance grants advantage on saves against spells.",
+        "Innate spellcasting allows versatile utility without material components.",
+        "Can change shape into a humanoid or beast for versatility.",
+        "Has the Shielding Wing ability to protect allies from attacks."
+    ],
+    "damage_types": [
+        "psychic",
+        "radiant"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma, allowing it to cast spells like detect magic and heal allies.",
+    "test_queries": [
+        "colorful celestial serpent guardian",
+        "magical creature that can shapeshift",
+        "serpent with healing abilities and radiant resistance",
+        "wise protector with powerful spells",
+        "creature with truesight defending sacred places"
+    ]
+}

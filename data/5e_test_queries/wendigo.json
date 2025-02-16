@@ -1,0 +1,25 @@
+{
+    "name": "Wendigo",
+    "queries": [
+        {
+            "query": "cold monster that can paralyze with its aura and has claw attacks",
+            "variant": "monster that can paralyze using its aura and has icy claw attacks"
+        },
+        {
+            "query": "medium monstrosity immune to cold and fire with strong melee attacks",
+            "variant": "monstrosity immune to cold and fire that has powerful melee attacks"
+        },
+        {
+            "query": "creature with high hit points that thrives in winter environments and uses magic",
+            "variant": "high hit point creature that uses magic and survives in winter habitats"
+        },
+        {
+            "query": "beast with darkvision and stealth skills, known for its chaotic evil nature",
+            "variant": "chaotic evil beast that has darkvision and excels at stealth"
+        },
+        {
+            "query": "Wendigo abilities that cause starvation and have a strong survival skill",
+            "variant": "abilities of the Wendigo that induce starvation and possess a strong survival skill"
+        }
+    ]
+}

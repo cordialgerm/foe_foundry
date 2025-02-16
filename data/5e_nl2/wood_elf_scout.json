@@ -1,0 +1,48 @@
+{
+    "name": "Wood Elf Scout",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 19,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "35 feet walking and climbing speed",
+    "role": "Skirmisher",
+    "tags": [
+        "elf",
+        "scout",
+        "stealth"
+    ],
+    "adjectives": [
+        "agile",
+        "stealthy",
+        "perceptive"
+    ],
+    "description": "The Wood Elf Scout is a specialized humanoid with a lean build, skilled in stealth and reconnaissance, armed with a shortsword and longbow for combat.",
+    "memorable": "Its exceptional agility and keen senses make it an adept scout capable of detecting hidden foes.",
+    "goals": "Designed for stealth operations, scouting, and ambush tactics.",
+    "relations": "Often encountered with other elves or in elven communities.",
+    "environment": "Typically found in forests or wooded areas.",
+    "strengths": "High Dexterity allows for effective ranged attacks and stealth capabilities.",
+    "weaknesses": "Relatively low in direct confrontations due to low Hit Points and Armor Class.",
+    "attacks": "Uses a shortsword for melee combat and a longbow for ranged attacks, both dealing piercing damage.",
+    "most_powerful_ability": "Keen Hearing and Sight grants advantage on Perception checks related to hearing or sight.",
+    "equipment": null,
+    "senses": "Possesses keen senses with a passive Perception score of 16 for detecting threats.",
+    "skills": "Proficient in stealth and perception, making it highly effective in scouting situations.",
+    "additional_information": [
+        "Excels at ranged combat with a longbow.",
+        "Can climb effectively, enhancing its scouting capabilities.",
+        "Moderate durability with AC 15 and 19 Hit Points."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile elf scout with a longbow",
+        "stealthy humanoid adept at reconnaissance",
+        "wood elf with keen hearing and sight",
+        "ranged combat specialist in woodland",
+        "wood elf that is effective in ambushes"
+    ]
+}

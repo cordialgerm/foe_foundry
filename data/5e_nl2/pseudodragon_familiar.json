@@ -1,0 +1,48 @@
+{
+    "name": "Pseudodragon Familiar",
+    "creature_type": "Dragon",
+    "alignment": null,
+    "size": "Tiny",
+    "hp": 7,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walking speed of 15 feet and flying speed of 60 feet",
+    "role": "null",
+    "tags": [
+        "familiar",
+        "magical",
+        "stealthy"
+    ],
+    "adjectives": [
+        "tiny",
+        "agile",
+        "magical"
+    ],
+    "description": "The Pseudodragon is a small, dragon-like creature associated with magic, known for its vibrant scales and delicate wings.",
+    "memorable": "Its ability to communicate telepathically and resist magic makes it a valuable ally to spellcasters.",
+    "goals": "Often serves as a magical familiar, assisting its master with reconnaissance and enhancing spellcasting.",
+    "relations": "Typically found accompanying spellcasters or other magical beings.",
+    "environment": "Commonly found in mystical settings or areas where magic is prevalent.",
+    "strengths": "Notable for agility in flight and resistance to magic, along with stealth skills.",
+    "weaknesses": "Low hit points and physical strength make it vulnerable in direct combat.",
+    "attacks": "Makes a melee attack with its Sting, causing piercing damage and potentially poisoning the target.",
+    "most_powerful_ability": "Telepathic Static: can stun enemies with overwhelming telepathic imagery.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 10 feet and exceptional passive Perception of 16.",
+    "skills": "Excels in Stealth with a +4 modifier, allowing it to remain hidden.",
+    "additional_information": [
+        "Limited Telepathy to communicate simple ideas within 10 feet.",
+        "Advantage on saving throws against spells due to Magic Resistance.",
+        "Can share its Magic Resistance trait with its master when close."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny dragon-like magical companion",
+        "agile familiar with telepathic abilities",
+        "small dragon that resists magic",
+        "flying creature that can stun enemies",
+        "stealthy familiar with limited telepathy"
+    ]
+}

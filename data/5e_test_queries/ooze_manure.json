@@ -1,0 +1,25 @@
+{
+    "name": "Manure Ooze",
+    "queries": [
+        {
+            "query": "sluggish ooze with a strong smell that regenerates health",
+            "variant": "sluggish ooze that regenerates health and has a strong odor"
+        },
+        {
+            "query": "poisonous melee attack ooze that splits into smaller monsters",
+            "variant": "ooze that splits into smaller forms and has a poisonous melee attack"
+        },
+        {
+            "query": "medium ooze creature found in tight spaces with disadvantage causing abilities",
+            "variant": "creature that is a medium ooze and can navigate tight spaces while causing disadvantage"
+        },
+        {
+            "query": "defensive ooze that can ambush adventurers due to its lack of sleep requirement",
+            "variant": "ooze that doesn't require sleep and can ambush adventurers defensively"
+        },
+        {
+            "query": "creature with a noxious odor and the ability to digest corpses for healing",
+            "variant": "creature that digests corpses for health and has a noxious smell"
+        }
+    ]
+}

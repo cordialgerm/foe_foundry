@@ -1,0 +1,25 @@
+{
+    "name": "Giant, Thursir Hearth Priestess",
+    "queries": [
+        {
+            "query": "powerful giant that supports allies and uses magic",
+            "variant": "giant that is powerful and supports teammates with magic"
+        },
+        {
+            "query": "lawful evil giant with fire-based abilities and healing powers",
+            "variant": "giant who is evil and has fire skills along with healing abilities"
+        },
+        {
+            "query": "large giant in hide armor who can empower allies",
+            "variant": "big giant dressed in hide armor that can enhance her companions"
+        },
+        {
+            "query": "giant priestess with high Wisdom and magic resistance",
+            "variant": "priestess giant who possesses strong Wisdom and has resistance to magic"
+        },
+        {
+            "query": "Thursir Hearth Priestess tactics for battlefield support",
+            "variant": "tactics of the Hearth Priestess giant for supporting in battles"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ape",
+    "queries": [
+        {
+            "query": "muscular primate that climbs and swings",
+            "variant": "muscular monkey that swings and climbs"
+        },
+        {
+            "query": "large beast known for strength and agility in trees",
+            "variant": "big beast famous for its strength and agility among trees"
+        },
+        {
+            "query": "furry ape that fights with fists and throws rocks",
+            "variant": "fur-covered ape that battles with punches and throws stones"
+        },
+        {
+            "query": "intelligent ape living in family groups with strong social behavior",
+            "variant": "smart ape that lives in family packs showing strong social traits"
+        },
+        {
+            "query": "territorial beast with impressive strength and low intelligence",
+            "variant": "territorial creature with significant strength and poor intelligence"
+        }
+    ]
+}

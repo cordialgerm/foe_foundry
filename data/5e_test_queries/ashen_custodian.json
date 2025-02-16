@@ -1,0 +1,25 @@
+{
+    "name": "Ashen Custodian",
+    "queries": [
+        {
+            "query": "fey creature that controls fire and protects forests",
+            "variant": "fire-controlling fey creature that guards forests"
+        },
+        {
+            "query": "Medium-sized creature immune to fire with strong magical abilities",
+            "variant": "creature immune to fire that is medium-sized and has strong magic"
+        },
+        {
+            "query": "agile monster with high Dexterity and healing presence",
+            "variant": "Dexterous creature that can heal nearby allies and is very agile"
+        },
+        {
+            "query": "guardian creature with fire abilities and extra damage to plant creatures",
+            "variant": "creature that guards and has fire skills with added damage against plants"
+        },
+        {
+            "query": "creature with darkvision that benefits allies while harming enemies",
+            "variant": "monster with darkvision which aids friends while damaging foes"
+        }
+    ]
+}

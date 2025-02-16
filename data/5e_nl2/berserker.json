@@ -1,0 +1,54 @@
+{
+    "name": "Berserker",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "chaotic",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 13,
+    "srd": true,
+    "ac_description": "hide armor",
+    "cr": "2",
+    "movement": "30 feet, with aggressive positioning capabilities",
+    "role": "Bruiser",
+    "tags": [
+        "warrior",
+        "aggressive",
+        "frenzy"
+    ],
+    "adjectives": [
+        "savage",
+        "unpredictable",
+        "fierce"
+    ],
+    "description": "A Berserker is clad in furs or piecemeal armor, wielding massive weapons like great axes or clubs. They exhibit a brutal fighting style driven by rage, allowing them to shrug off injuries.",
+    "memorable": "Known for their ability to unleash powerful attacks in a frenzied state, making them dangerous opponents in combat.",
+    "goals": "To engage in battle and conflict, driven by a desire to prove their strength.",
+    "relations": "Often found among tribal or wild societies, they may serve as shock troops or warriors in larger war bands.",
+    "environment": "Hailing from uncivilized lands, they prefer areas conducive to conflict and warfare.",
+    "strengths": "High physical strength and resilience, particularly effective in melee combat with multiattack capabilities.",
+    "weaknesses": "Low tactical thinking and agility, making them vulnerable to coordinated attacks.",
+    "attacks": "The Berserker can make two melee attacks in one turn, using a greataxe to deal high slashing damage.",
+    "most_powerful_ability": "Bloodied Frenzy, granting advantage on all attacks when bloodied, making them formidable and dangerous opponents.",
+    "equipment": "Greataxe and potentially a Handaxe for ranged combat.",
+    "senses": "Passively perceives environments with a perception score of 10.",
+    "skills": "Proficient in athletics and intimidation, making them effective in physical confrontations and social scenarios.",
+    "additional_information": [
+        "Employs reckless attacks that can turn the tide of battle.",
+        "Rely on raw power and bloodlust rather than strategy.",
+        "Ability to shrug off wounds due to high constitution.",
+        "Vulnerable to counterattacks due to reckless fighting style.",
+        "Easily overwhelmed without support from allies."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "savage warrior",
+        "wild fighter with axes",
+        "brutal melee combatant",
+        "unpredictable tribal fighter",
+        "Berserker battle tactics"
+    ]
+}

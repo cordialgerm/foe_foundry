@@ -1,0 +1,54 @@
+{
+    "name": "Grolar Bear Alpha",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 152,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft., swim 30 ft., climb 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "bear",
+        "predator",
+        "camouflage"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "brutal",
+        "adaptable"
+    ],
+    "description": "A large and ferocious bear with powerful limbs, capable of incredible melee attacks. It can shift its fur color for camouflage and features a terrifying critical hit attack.",
+    "memorable": "The ability to tear off limbs with critical hits and its camouflage in both forest and snowy terrains make it a unique and horrifying adversary.",
+    "goals": "To hunt for prey, establish territory, and dominate its environment.",
+    "relations": "Typically competes with other large predators and can be encountered with lesser bears or similar creatures.",
+    "environment": "Often found in forested areas or snowy landscapes, utilizing its camouflage to ambush unsuspecting travelers.",
+    "strengths": "Excellent physical prowess with a high Strength score, capable of significant melee damage and battlefield control through stunning attacks.",
+    "weaknesses": "Low Intelligence and Charisma; operates purely on instinct, which might limit its strategic planning.",
+    "attacks": "Multiattack consisting of a powerful bite and two slashing claw strikes, capable of causing heavy damage.",
+    "most_powerful_ability": "Dismembering Strike, which allows it to incapacitate foes dramatically by removing limbs on a critical hit.",
+    "equipment": null,
+    "senses": "It has keen smell, giving it advantage on perception checks that rely on scent.",
+    "skills": "Has proficiency in perception, with a passive score of 14.",
+    "additional_information": [
+        "Resistant to cold damage, enhancing its survival in icy environments.",
+        "Can adapt its fur color for effective camouflage in varying terrains.",
+        "Average perception and insight, with a commendable ability to navigate its environment.",
+        "Uses brute force combined with stealth to hunt effectively.",
+        "Instinct-driven behavior makes it a relentless predator."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monstrous bear with camouflage abilities",
+        "ferocious predator with dismembering attack",
+        "large bear that hunts in snowy forests",
+        "brutal melee attacker with keen senses",
+        "intimidating creature with white and brown fur"
+    ]
+}

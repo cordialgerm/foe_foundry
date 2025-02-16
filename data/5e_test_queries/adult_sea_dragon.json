@@ -1,0 +1,25 @@
+{
+    "name": "Adult Sea Dragon",
+    "queries": [
+        {
+            "query": "huge dragon that thrives in aquatic environments with powerful icy breath",
+            "variant": "big dragon that lives in water with strong ice breath attack"
+        },
+        {
+            "query": "formidable sea monster with frightful presence and multiattack ability",
+            "variant": "strong ocean creature that has multiattacks and scary presence"
+        },
+        {
+            "query": "dragon with cold damage immunity that can breathe underwater",
+            "variant": "a dragon that is immune to cold attacks and can hold breath underwater"
+        },
+        {
+            "query": "massive dragon capable of area control with Tidal Breath attack",
+            "variant": "big dragon that can control the battlefield using its Tidal Breath ability"
+        },
+        {
+            "query": "dragon that has legendary resistance and targets creatures with fear",
+            "variant": "a dragon with special saving throw ability that can frighten foes"
+        }
+    ]
+}

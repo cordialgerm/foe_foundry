@@ -1,0 +1,53 @@
+{
+    "name": "Owlbear",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "animal",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 59,
+    "ac": 13,
+    "srd": true,
+    "cr": "3",
+    "movement": "40 ft. walking, 20 ft. climbing",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "animal",
+        "beast",
+        "forest"
+    ],
+    "adjectives": [
+        "ferocious",
+        "aggressive",
+        "large",
+        "territorial"
+    ],
+    "description": "An owlbear is a fearsome hybrid creature that combines the body of a bear with the head and beak of a giant owl, exhibiting sharp claws and a powerful beak.",
+    "memorable": "Owlbears are known for their brute strength and aggressive territorial behavior, making them deadly opponents.",
+    "goals": "Solitary hunters that defend their territory and hunt down prey.",
+    "relations": "May encounter other beasts in forests or act as guardians for lairs.",
+    "environment": "Commonly found in forests or caves.",
+    "strengths": "Exceptional physical strength and durability, capable of dealing significant melee damage.",
+    "weaknesses": "Low intelligence and charisma, making it ineffective in social interactions.",
+    "attacks": "Multiattack with a beak and claws, delivering piercing and slashing damage.",
+    "most_powerful_ability": "Vicious Bound allows it to barrel through creatures, dealing damage and knocking them prone.",
+    "equipment": null,
+    "senses": "Possesses keen sight and smell, granting advantage on Perception checks related to those senses.",
+    "skills": "Skilled in perception and stealth, allowing it to detect threats effectively.",
+    "additional_information": [
+        "Glides to avoid falling damage while descending.",
+        "Resistant to exhaustion and fear, making it durable in prolonged encounters.",
+        "Grapples smaller creatures with its Multiattack if both attacks hit.",
+        "Capable of inflicting a combined total of 24 damage with its beak and claws.",
+        "Easily recognized due to its unique owl-bear hybrid appearance."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive hybrid beast",
+        "creature with claws and beak",
+        "territorial monster of the forest",
+        "brute strength animal hybrid",
+        "owl-like bear with sharp attacks"
+    ]
+}

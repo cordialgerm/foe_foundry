@@ -1,0 +1,25 @@
+{
+    "name": "Beach Weird",
+    "queries": [
+        {
+            "query": "elemental creature that lives in coastal environments with a slam attack",
+            "variant": "coastal elemental monster with slam attack and quicksand ability"
+        },
+        {
+            "query": "large elemental that creates quicksand and is bound to tide pools",
+            "variant": "big elemental creature bound to tidepools and creates quicksand"
+        },
+        {
+            "query": "creature with damage immunity to poison and can swim in sand",
+            "variant": "monster immune to poison that can burrow through sand"
+        },
+        {
+            "query": "beach guardian with high strength and invisibility in water",
+            "variant": "strong beach guardian that becomes invisible when immersed in water"
+        },
+        {
+            "query": "tide pool monster with high hit points and powerful melee attacks",
+            "variant": "monster from tide pools with a lot of hit points and strong physical attacks"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Sea Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 1,
+    "ac": 11,
+    "srd": true,
+    "cr": "0",
+    "movement": "swim 20 ft.",
+    "role": null,
+    "tags": [
+        "aquatic",
+        "peaceful"
+    ],
+    "adjectives": [
+        "graceful",
+        "delicate"
+    ],
+    "description": "A small, graceful creature with a long, curled tail and a distinctive horse-like head, often found clinging to underwater plants.",
+    "memorable": "Admired for their delicate beauty, often used as mounts by small aquatic creatures.",
+    "goals": "To feed on plankton and small sea creatures while clinging to underwater plants.",
+    "relations": "Can be encountered with merfolk and other small aquatic creatures.",
+    "environment": "Warm, shallow ocean waters, coral reefs, and seaweed forests.",
+    "strengths": "Non-aggressive and harmless, plays an important role in its ecosystem.",
+    "weaknesses": "Very low hit points, vulnerable to many threats in its environment.",
+    "attacks": "None, as they are peaceful creatures.",
+    "most_powerful_ability": "Water Breathing, allowing them to breathe only underwater.",
+    "equipment": null,
+    "senses": "Passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Often admired for their beauty.",
+        "Can cling to underwater vegetation.",
+        "Plays a vital role in marine ecosystems.",
+        "Popular as pets in aquatic environments."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small graceful ocean creature",
+        "tiny creature with curled tail",
+        "marine animal that clings to plants",
+        "delicate horse-like sea animal",
+        "non-aggressive underwater dweller"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Faceless Wanderer",
+    "queries": [
+        {
+            "query": "medium creature that drains memories and floats in the air",
+            "variant": "medium creature floating in the air that drains memories"
+        },
+        {
+            "query": "aberration with psychic damage immunity and can regenerate",
+            "variant": "psychic damage immune aberration that has regeneration capabilities"
+        },
+        {
+            "query": "neutral evil monster that has claws and steals memories",
+            "variant": "monster that is neutral evil with claws and can steal memories"
+        },
+        {
+            "query": "creature with high Dexterity that can manipulate memory and regenerate",
+            "variant": "creature that has high Dexterity, can regenerate, and manipulate memory"
+        },
+        {
+            "query": "Faceless Wanderer abilities related to Memory Drain and regeneration",
+            "variant": "abilities of the Faceless Wanderer about Memory Drain and its regeneration"
+        }
+    ]
+}

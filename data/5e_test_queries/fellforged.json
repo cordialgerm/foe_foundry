@@ -1,0 +1,25 @@
+{
+    "name": "Fellforged",
+    "queries": [
+        {
+            "query": "mechanical and spectral construct with sunlight sensitivity",
+            "variant": "construct that is both mechanical and ghostly and has a weakness to sunlight"
+        },
+        {
+            "query": "lawful evil creature that inflicts necrotic damage in combat",
+            "variant": "evil lawful entity that causes damage with necrotic attacks during fights"
+        },
+        {
+            "query": "medium construct with high hit points and damage immunities",
+            "variant": "construct of medium size featuring significant hit points and several damage immunities"
+        },
+        {
+            "query": "Fellforged's unique abilities and its connection to a specter",
+            "variant": "abilities of the Fellforged and its animated bond with a specter"
+        },
+        {
+            "query": "Fellforged's Multiattack and Burst Gears abilities",
+            "variant": "abilities of Burst Gears and Multiattack of the Fellforged"
+        }
+    ]
+}

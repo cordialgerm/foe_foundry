@@ -1,0 +1,50 @@
+{
+    "name": "Orphan of the Black",
+    "creature_type": "Fey",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 49,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "fey",
+        "manipulative",
+        "chaotic"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "malevolent"
+    ],
+    "description": "The Orphan of the Black is a small fey creature characterized by its cunning and manipulative nature, thriving on chaos and violence. It has a lean, agile build that reflects its dexterity.",
+    "memorable": "It can compel others to attack each other, creating chaotic scenarios in combat.",
+    "goals": "To incite conflict and chaos among others, leveraging manipulation to gain access to restricted areas.",
+    "relations": "May be encountered with other chaotic fey or creatures that align with unlawful tactics.",
+    "environment": "Typically found in dark, chaotic places where manipulation can flourish.",
+    "strengths": "Possesses high dexterity, allowing it to evade attacks and perform quick maneuvers.",
+    "weaknesses": "Low physical strength and intelligence limit its direct combat effectiveness.",
+    "attacks": "Can perform a Slam attack that deals bludgeoning damage; utilizes multiattack for enhanced action.",
+    "most_powerful_ability": "Incite Violence, compelling nearby creatures to attack each other, fostering chaos.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has abilities like Forbiddance and Sense Law that aid in manipulation and controlling encounters.",
+    "additional_information": [
+        "Resistant to bludgeoning damage.",
+        "Immune to charm and fear effects.",
+        "Can pinpoint lawful creatures within close range."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic small fey that manipulates others",
+        "creature that incites violence among foes",
+        "cunning fey with high agility",
+        "fey creature that thrives on chaos",
+        "manipulative fey that can't enter homes"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Jotun",
+    "creature_type": "Giant",
+    "alignment": "Chaotic Neutral",
+    "size": "Gargantuan",
+    "hp": 370,
+    "ac": 20,
+    "srd": false,
+    "cr": "22",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "magical",
+        "cold"
+    ],
+    "adjectives": [
+        "formidable",
+        "gargantuan",
+        "chaotic"
+    ],
+    "description": "The Jotun is a gargantuan giant characterized by its impressive stature and possesses icy weapon attacks that deal extra cold damage.",
+    "memorable": "Notably, the Jotun has magic resistance, unique abilities like Icy Weapons and Demigod\u2019s Vitality, and can instill fear in nearby enemies.",
+    "goals": "The Jotun typically seeks dominance in battle and can use its magical abilities for strategic advantages.",
+    "relations": "Frequently encountered with other giants and creatures of cold environments.",
+    "environment": "Usually found in icy terrains or mountainous regions.",
+    "strengths": "High damage output, formidable hit points, and resistance to magical effects.",
+    "weaknesses": "Low Dexterity makes it vulnerable to faster opponents.",
+    "attacks": "Utilizes powerful melee attacks with its Greatclub and ranged Rock attacks, both enhanced with icy cold damage.",
+    "most_powerful_ability": "The Icy Sweep allows it to deal massive area damage and control the battlefield.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 120 feet and passive Perception of 15, providing good awareness in dimly lit environments.",
+    "skills": "Proficient in Arcana, History, and Nature, reflecting above-average knowledge.",
+    "additional_information": [
+        "Magic Resistance grants advantage on saving throws against spells.",
+        "Icy Weapons ability adds extra cold damage to all weapon attacks.",
+        "Material Bound ability makes it immune to effects that would move it from the Material Plane.",
+        "Frightful Presence ability can potentially frighten multiple enemies.",
+        "Rock Catching ability shows unexpected agility despite low Dexterity."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like earthquake and speak with animals at will, along with other useful spells three times per day.",
+    "test_queries": [
+        "gargantuan icy giant with magic resistance",
+        "cold damage giant with fear tactics",
+        "powerful giant that uses cold weapons",
+        "gargantuan creature immune to nonmagical damage",
+        "ice-covered giant that casts powerful spells"
+    ]
+}

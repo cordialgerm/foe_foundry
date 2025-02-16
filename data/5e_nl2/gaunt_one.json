@@ -1,0 +1,52 @@
+{
+    "name": "Gaunt One",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "grapple",
+        "menacing",
+        "stealth"
+    ],
+    "adjectives": [
+        "menacing",
+        "brutal",
+        "strong"
+    ],
+    "description": "The Gaunt One is a tall, thin aberration with elongated limbs and a predatory grace. It has sharp claws and a haunting appearance that instills fear in its opponents.",
+    "memorable": "Its ability to extract and consume the hearts of its victims makes it particularly terrifying.",
+    "goals": "To hunt and consume humanoids, exploiting its grappling abilities.",
+    "relations": "It may be related to other aberrations or serve darker entities craving for chaos.",
+    "environment": "Often found in shadowy, secluded places or areas where humanoids gather.",
+    "strengths": "Exceptional grappling capabilities and a powerful heart-extracting attack.",
+    "weaknesses": "Very low Charisma makes it poor in social interactions.",
+    "attacks": "Can make swift claw attacks that deal slashing damage and grapple targets, followed by a deadly heart extraction.",
+    "most_powerful_ability": "Extract Heart allows it to kill a grappled humanoid by consuming their heart, dealing massive damage.",
+    "senses": "Possesses Keen Hearing, granting it advantage on perception checks involving sound.",
+    "skills": "Proficient in Stealth, allowing it to hide effectively.",
+    "additional_information": [
+        "Natural armor grants a solid defense.",
+        "Moderate challenge rating of 3 poses an interesting threat to adventurers.",
+        "High Strength enables significant physical confrontation.",
+        "Decent Dexterity contributes to evading attacks.",
+        "Extract Heart ability is both brutal and memorable."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "menacing creature that extracts hearts",
+        "aberration with deadly grappling skills",
+        "tall thin monster that consumes humanoids",
+        "brutal heart-extracting melee attacker",
+        "stealthy monster with keen hearing ability"
+    ]
+}

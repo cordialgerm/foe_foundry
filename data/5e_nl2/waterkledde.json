@@ -1,0 +1,52 @@
+{
+    "name": "Waterkledde",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 123,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "40 ft. walking, flying, and swimming speed",
+    "role": null,
+    "tags": [
+        "fiend",
+        "chaotic",
+        "waterborne"
+    ],
+    "adjectives": [
+        "swift",
+        "fearsome",
+        "manipulative"
+    ],
+    "description": "The Waterkledde is a large, chaotic evil fiend that embodies the destructive forces of nature, characterized by its formidable presence and impressive mobility in various terrains.",
+    "memorable": "It has the unique ability to emit a terrifying scream that instills fear and causes psychic damage.",
+    "goals": "Typically seeks to create fear and chaos among its foes and dominate aquatic environments.",
+    "relations": "Often encountered alongside other fiends or chaotic creatures, not commonly seen allied with lawful or good beings.",
+    "environment": "Usually found in water-based ecosystems, such as lakes or rivers.",
+    "strengths": "High mobility with swimming, flying, and walking speeds; ability to manipulate fear and grapple opponents.",
+    "weaknesses": "Vulnerable to radiant damage commonly associated with good-aligned creatures.",
+    "attacks": "Multiattack consisting of a powerful Bite and two slashing Claw attacks, with grappling capabilities to restrain its prey.",
+    "most_powerful_ability": "Frightening Call, which can terrify and damage multiple targets in a wide area.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Has basic perception skills, with a passive perception score of 11 indicating moderate awareness of its surroundings.",
+    "additional_information": [
+        "Can hold its breath for up to 15 minutes, allowing it to stay submerged.",
+        "Able to magically change shape into smaller beasts.",
+        "Eyes remain an unnatural green regardless of its form.",
+        "Resistant to cold and non-magical bludgeoning, piercing, and slashing damage.",
+        "Impressive Constitution score enhancing its hit points and survivability."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that can swim and fly",
+        "water monster with terrifying scream",
+        "large chaotic evil creature in water",
+        "manipulative fiend that grapples enemies",
+        "swift aquatic fiend with unique abilities"
+    ]
+}

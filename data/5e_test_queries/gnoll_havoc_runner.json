@@ -1,0 +1,25 @@
+{
+    "name": "Gnoll Havoc Runner",
+    "queries": [
+        {
+            "query": "medium humanoid monster with good mobility and pack tactics",
+            "variant": "humanoid monster with good mobility and pack tactics, medium size"
+        },
+        {
+            "query": "cunning chaotic evil creature that attacks multiple foes",
+            "variant": "chaotic evil creature that can attack several foes and is cunning"
+        },
+        {
+            "query": "strong gnoll with darkvision and Athletics skill",
+            "variant": "gnoll with strong abilities, darkvision, and Athletics proficiency"
+        },
+        {
+            "query": "battleaxe wielding gnoll that uses lightning lope",
+            "variant": "gnoll using lightning lope and wields a battleaxe"
+        },
+        {
+            "query": "gnoll with high strength and harrying attacks ability",
+            "variant": "strong gnoll featuring harrying attacks ability"
+        }
+    ]
+}

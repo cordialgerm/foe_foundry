@@ -1,6 +1,8 @@
 <MonsterName/>Knight of the Road</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (breastplate)</AC>
+<HP/>117</HP>
 <summary>The Knight of the Road is a formidable humanoid creature, embodying the essence of shadowy intrigue and malevolence. This lawful evil entity is a master of manipulation and subterfuge, utilizing both physical prowess and cunning magical abilities to control its surroundings and dominate its foes. With a challenge rating of 5, it poses a significant threat to adventurers, possessing a solid combination of physical attacks and spells that can disrupt and disorient a party. However, it is sensitive to sunlight, which hampers its combat effectiveness. Notable features include its cunning abilities to obscure travel routes and its capacity to disappear into darkness, making it a master of evasion and ambush.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ Overall, the Knight of the Road is a cunning and powerful adversary that combine
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight of the Road
 
 *Medium* *Humanoid* *lawful evil*
@@ -63,5 +66,6 @@ Source: 5e_artisinal_monsters
 - **Shortbow:** Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 7 (1d6 + 4) piercing damage and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 
+</statblock>
 
 

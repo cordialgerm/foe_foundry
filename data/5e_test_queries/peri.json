@@ -1,0 +1,25 @@
+{
+    "name": "Peri",
+    "queries": [
+        {
+            "query": "small elemental creature with chaotic goodness and good flying speed",
+            "variant": "small elemental being that embodies chaotic goodness and has great flying effectiveness"
+        },
+        {
+            "query": "agile creature that can turn invisible and has lightning resistance",
+            "variant": "nimble monster that can go invisible and has resistance to lightning damage"
+        },
+        {
+            "query": "elemental creature known for its magical abilities and low strength",
+            "variant": "elemental being recognized for its magical prowess and weak strength score"
+        },
+        {
+            "query": "Peri that disintegrates into a breeze upon death and has high charisma",
+            "variant": "Peri that turns into a warm breeze when killed and has exceptional charisma"
+        },
+        {
+            "query": "combatant with wind slash attack and thunder damage resistance",
+            "variant": "fighter with wind slash action and resistance to thunder attacks"
+        }
+    ]
+}

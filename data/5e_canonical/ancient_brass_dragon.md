@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Brass Dragon (Metallic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>20</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>297</HP>
 <summary>The Ancient Brass Dragon is a wise and curious creature, with dull, tarnished brass-colored scales that shimmer in the sunlight. These dragons are known for their love of conversation and storytelling, often speaking with travelers for hours or even days before allowing them to pass through their territory. They prefer hot, dry environments, such as deserts, where they make their homes in vast, labyrinthine caves. While they may seem amiable and lighthearted, Ancient Brass Dragons are still powerful creatures, capable of breathing a devastating heat or releasing a gas that can put creatures to sleep. They value knowledge and prefer to avoid violence.</summary>
 
 <summary>The Ancient Brass Dragon is an exceptionally powerful and intelligent creature classified as Gargantuan in size. With an impressive Armor Class of 20 and a hefty 367 hit points, this dragon serves as a formidable opponent in combat. Notably, its strengths include a high Constitution score of 24, which enhances its durability, and a wide array of spells that enhance its versatility. Its ability to fly at a speed of 80 feet allows for swift maneuvers in battle. However, it has a poor Dexterity score of 10, making it vulnerable to ranged attacks. With a Challenge Rating of 22, the Ancient Brass Dragon is a significant threat to any adventuring party, capable of dealing devastating amounts of damage while showcasing its deep knowledge as a scholar.</summary>
@@ -61,6 +63,7 @@ Finally, the dragon has Regional Effects that pertain to its lair, which can inc
 
 Source: 5e_srd
 
+<statblock>
 # Ancient Brass Dragon (Metallic)
 
 *Gargantuan dragon, chaotic good*
@@ -119,7 +122,8 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 **Tail Attack**. The dragon makes a tail attack.
 
-**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+**Wing Attack (Costs 2 Actions)**. The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6+8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</statblock>
+
 
 
 
@@ -127,6 +131,7 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Brass Dragon
 
 *Gargantuan* *Dragon*
@@ -179,6 +184,7 @@ Source: 5e_artisinal_monsters
 - **Analyze:** The dragon evaluates one creature it can see within 60 feet. It learns the creatures resistances, immunities, vulnerabilities, and current and maximum hit points. That creatures next attack roll against the dragon before the start of the dragons next turn is made with disadvantage.
 - **Roar:** Each creature of the dragons choice within 120 feet that can hear it makes a DC 19 Charisma saving throw. On a failure, it is frightened for 1 minute. A creature repeats the saving throw at the end of its turns, ending the effect on itself on a success. When it succeeds on a saving throw or the effect ends for it, it is immune to Roar for 24 hours.
 - **Wing Attack:** The dragon beats its wings. Each creature within 15 feet makes a DC 23 Dexterity saving throw. On a failure, it is pushed 10 feet away and knocked prone. The dragon can then fly up to half its fly speed.
+</statblock>
 
 
 
@@ -187,6 +193,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Brass Dragon
 
 *Gargantuan dragon*
@@ -237,5 +244,6 @@ The dragon can take 3 legendary actions, choosing from the options below. Only o
 ### Regional Effects
 
 - **1d10** If the dragon dies, these effects fade in  days. If the dragon spends more than 30 days away from either its desert or humanoid lair, that lair loses its associated regional effects. If the dragon has only one lair, the regional effects fade only if the dragon dies.
+</statblock>
 
 

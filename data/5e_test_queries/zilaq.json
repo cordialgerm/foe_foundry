@@ -1,0 +1,25 @@
+{
+    "name": "Zilaq",
+    "queries": [
+        {
+            "query": "tiny dragon with impressive flight speed and thunder immunity",
+            "variant": "tiny drgona with impressive flight speed and thunder inmunity"
+        },
+        {
+            "query": "dragon that uses Sonic Yelp and charming abilities in combat",
+            "variant": "dragon using Sonic Yelp and charmin abilities during battles"
+        },
+        {
+            "query": "neutral dragon with Eidetic Memory and Two-Headed advantage",
+            "variant": "neutral drgons with Eidetic Memory and Two-Headed edge"
+        },
+        {
+            "query": "creature with a challenge rating of 4 that prefers mobility in battle",
+            "variant": "creatur with challenge rating 4 that likes mobilty during fights"
+        },
+        {
+            "query": "Zilaq's unique abilities for battlefield manipulation and control tactics",
+            "variant": "Zilaqs unique abilities for battlefield manipualtion and control tactics"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ouroboros",
+    "queries": [
+        {
+            "query": "massive dragon that can rebirth itself and has versatile damage types",
+            "variant": "huge dragon that can reborn itself and has versatile damage types"
+        },
+        {
+            "query": "dragon with high Strength and the ability to incapacitate foes",
+            "variant": "dragon with great Strength and a capability to incapacitate enemies"
+        },
+        {
+            "query": "creature that heals allies or harms enemies upon being slain",
+            "variant": "creature that can heal allies or damage foes after being killed"
+        },
+        {
+            "query": "neutral dragon that can adapt its defenses and change damage immunity",
+            "variant": "neutral dragon able to adapt its defenses and switch immunity types"
+        },
+        {
+            "query": "dragon with impressive arcana skills and knowledge of all languages",
+            "variant": "dragon having exceptional arcane skills and understands all languages"
+        }
+    ]
+}

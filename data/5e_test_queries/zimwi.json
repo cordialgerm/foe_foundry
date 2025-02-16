@@ -1,0 +1,25 @@
+{
+    "name": "Zimwi",
+    "queries": [
+        {
+            "query": "giant creature with high dexterity and ability to swallow enemies",
+            "variant": "giant monster that has great dexterity and can eat foes"
+        },
+        {
+            "query": "chaotic evil giant that deals acid damage when it swallows prey",
+            "variant": "chaotic evil giant monster that inflicts acid damage on swallowed victims"
+        },
+        {
+            "query": "medium-sized giant with multiattack and desperate hunger ability",
+            "variant": "medium giant that has multiattack and a desperate hunger skill"
+        },
+        {
+            "query": "agile creature that grapples and consumes enemies",
+            "variant": "nimble monster that can grab and eat foes"
+        },
+        {
+            "query": "Zimwi combat tactics and abilities in battle",
+            "variant": "Zimwi fight strategies and skills during combat"
+        }
+    ]
+}

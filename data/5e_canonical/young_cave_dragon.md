@@ -1,6 +1,8 @@
 <MonsterName/>Young Cave Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>9</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>189</HP>
 <summary>The Young Cave Dragon is a formidable creature embodying the classic traits of dragonkind but is notably characterized by its connection to subterranean landscapes. As a Large Neutral Evil dragon, it possesses a cunning and a predatory nature, making it a significant threat to adventurers who venture into its lair. With a robust armor class of 17 and a remarkable pool of hit points amounting to 189, the dragon can withstand considerable punishment before being defeated. Its power is amplified through its impressive stats, including a Strength score of 23, which translates to a very good +6 modifier, and it showcases solid resilience with a Constitution score of 21, also yielding a +5 modifier. While it has some weaknesses due to its low Dexterity score of 12 (average +1) and Intelligence score of 10 (average +0), its defensive and offensive capabilities more than compensate.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In addition to its attacks, the Young Cave Dragon can react to nearby movements 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young Cave Dragon
 
 *Large* *Dragon* *Neutral Evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 ### Reactions
 
 - **Ruff Spikes:** When a creature moves to a space within 5 feet of the cave dragon, the dragon flares its many feelers and spikes. The creature must succeed on a DC 17 Dexterity saving throw or take 4 (1d8) piercing damage and be prevented from entering that space.
+</statblock>
 
 

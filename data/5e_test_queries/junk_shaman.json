@@ -1,0 +1,25 @@
+{
+    "name": "Junk Shaman",
+    "queries": [
+        {
+            "query": "small humanoid that creates magical armor from junk",
+            "variant": "small creature that makes magical junk armor"
+        },
+        {
+            "query": "monster with sunlight sensitivity that uses pack tactics",
+            "variant": "creature that has pack tactics and is sensitive to sunlight"
+        },
+        {
+            "query": "Junk Shaman abilities and weaknesses in combat",
+            "variant": "abilities and battle weaknesses of the Junk Shaman"
+        },
+        {
+            "query": "humanoid warlock that attacks with fire and bludgeoning damage",
+            "variant": "fire-attacking humanoid that uses bludgeoning damage"
+        },
+        {
+            "query": "small creature that speaks Common and Draconic",
+            "variant": "small monster that knows Common and Draconic languages"
+        }
+    ]
+}

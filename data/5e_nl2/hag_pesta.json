@@ -1,0 +1,53 @@
+{
+    "name": "Hag, Pesta",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 17,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "Controller",
+    "tags": [
+        "hag",
+        "pestilence",
+        "disease",
+        "fey"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "diseased",
+        "unpredictable"
+    ],
+    "description": "A Medium Fey hag known for her chaotic nature and abilities centered around disease and pestilence.",
+    "memorable": "Her ability to pinpoint sick creatures and spread a variety of diseases makes her a dangerous foe.",
+    "goals": "To spread disease and chaos among creatures.",
+    "relations": "Often associated with other hags or creatures that thrive in sickness and decay.",
+    "environment": "Typically found in swamps, dark forests, or anywhere pathogens thrive.",
+    "strengths": "She can inflict disease with her Pestilence Aura and is immune to diseases herself.",
+    "weaknesses": "Vulnerable to radiant damage.",
+    "attacks": "Uses Pestilence Rake and Poison Bolt to deal piercing and poison damage, potentially causing diseases.",
+    "most_powerful_ability": "The Pestilence Aura damages nearby creatures and can inflict debilitating diseases.",
+    "senses": "Possesses darkvision and a passive perception of 15, aiding her in locating hidden creatures.",
+    "skills": "She has a +3 in Perception, allowing her to notice subtle movements and hidden threats.",
+    "additional_information": [
+        "Can heal allies with Curative Touch, restoring hit points and curing diseases.",
+        "Summons rat swarms that act as allies, spreading further disease.",
+        "Highly durable due to her strong Constitution and natural armor.",
+        "Displays unpredictability in her chaotic actions, making her difficult to predict.",
+        "Possesses a powerful combination of melee and ranged attacks."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "hag that spreads diseases and pestilence",
+        "medium fey with deadly disease abilities",
+        "pestilence aura that harms nearby creatures",
+        "hag immune to diseases and uses rat swarms",
+        "chaotic neutral hag known for poison attacks"
+    ]
+}

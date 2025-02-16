@@ -1,0 +1,25 @@
+{
+    "name": "Golmana",
+    "queries": [
+        {
+            "query": "demon creature that can climb walls and has magic resistance",
+            "variant": "demon that climbs walls and has a resistance to magic"
+        },
+        {
+            "query": "medium fiend with a powerful cone attack and slashing claws",
+            "variant": "medium fiend with slashing claws and a powerful cone attack"
+        },
+        {
+            "query": "creature with immunity to poison and high stealth abilities",
+            "variant": "creature immune to poison and has great stealth abilities"
+        },
+        {
+            "query": "fiend that has a vocal attack and regains health from grappling",
+            "variant": "fiend with a vocal-based attack and heals while grappling"
+        },
+        {
+            "query": "strong physical attacker that resists cold and fire damage",
+            "variant": "powerful attacker resistant to cold and fire damage"
+        }
+    ]
+}

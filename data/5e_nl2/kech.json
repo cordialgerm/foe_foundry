@@ -1,0 +1,50 @@
+{
+    "name": "Kech",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., climb 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "stealth",
+        "grappler",
+        "ambush"
+    ],
+    "adjectives": [
+        "stealthy",
+        "physically capable",
+        "ambush"
+    ],
+    "description": "The Kech is a physically strong and agile humanoid with notable stealth abilities, known for its grappling techniques and surprise tactics. It has an average appearance but is lethal in ambush scenarios.",
+    "memorable": "The Kech excels at ambushing foes, leveraging its grappling move Strangle to incapacitate enemies.",
+    "goals": "To ambush and incapacitate unsuspecting opponents, using stealth and grappling tactics.",
+    "relations": "Often found in conjunction with other ambush-oriented creatures and those who appreciate stealth.",
+    "environment": "Often found in dark or low-light environments where it can utilize its stealth capabilities effectively.",
+    "strengths": "High Strength, Dexterity, and Constitution scores enhance its physical presence and survivability.",
+    "weaknesses": "Average intelligence and low armor class make it vulnerable to concentrated attacks.",
+    "attacks": "The Kech uses its Strangle ability to grapple opponents and deal damage, and its claws for close combat slashing attacks.",
+    "most_powerful_ability": "Strangle allows the Kech to automatically hit a grappled creature while preventing it from breathing.",
+    "senses": "The Kech possesses darkvision, providing good visibility in low-light conditions and passive Perception of 15 indicating a keen awareness of surroundings.",
+    "skills": "Skilled in athletics and stealth, allowing for effective ambush tactics.",
+    "additional_information": [
+        "Solid mix of physical attributes with +2 modifiers",
+        "Effective in surprise situations",
+        "Can move stealthily without provoking attacks",
+        "Capable of grappling enemies for sustained damage",
+        "Low health compared to more powerful creatures"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy humanoid that can grapple",
+        "ambush monster with climbing abilities",
+        "creature that excels in surprise attacks",
+        "medium humanoid with strong grappling attack",
+        "physical monster with stealth tactics"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Mechuiti</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>27</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>462</HP>
 <summary>Mechuiti is a formidable and gargantuan fiend embodying chaotic evil, serving as an exceptionally challenging adversary for parties of high-level adventurers. With an Armor Class of 19 and a staggering 462 hit points, Mechuiti presents a significant threat on the battlefield, relying on both its physical prowess and powerful magical abilities. Its primary strengths lie in its high damage potential, debilitating disease, and fear-inducing presence. Despite its strengths, Mechuiti suffers from a vulnerability to cold damage, making it crucial for adventurers to exploit this weakness during encounters. Overall, Mechuiti is designed to be an overwhelming force, with mechanics that encourage strategic planning and powerful responses from players.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, Mechuiti can also engage in legendary actions, including moving swiftly
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mechuiti
 
 *Gargantuan* *Fiend* *Chaotic Evil*
@@ -70,5 +73,6 @@ Mechuiti can take 3 legendary actions, choosing from the options below. Only one
 - **Move:** Mechuiti moves up to his speed, or he climbs up to half his speed. This movement doesn’t provoke opportunity attacks.
 - **Burn from the Inside:** Mechuiti chooses a creature within 120 feet of him that is infected with the Mechuiti’s deadly ichor disease. The target must make a DC 24 Constitution saving throw. On a failure, the target takes 10 (3d6) fire damage and 10 (3d6) acid damage and catches fire. On a success, the target takes half the damage and doesn’t catch fire. Until a creature uses an action to douse the fire, the target takes 7 (2d6) fire damage at the start of each of its turns.
 - **Cast a Spell (Costs 2 Actions):** Mechuiti uses Spellcasting.
+</statblock>
 
 

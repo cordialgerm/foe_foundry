@@ -1,0 +1,53 @@
+{
+    "name": "Life Broker",
+    "creature_type": "Fey",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 190,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "13",
+    "movement": "walks at 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "necromancer",
+        "life-drainer"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategic",
+        "necrotic"
+    ],
+    "description": "The Life Broker is a Medium Fey known for manipulating life energy, appearing as a shrouded figure who has an air of authority.",
+    "memorable": "It can drain life essence from others, killing them permanently unless brought back by a wish spell.",
+    "goals": "To manipulate and drain the life essence of other creatures for its own gain.",
+    "relations": "May ally with creatures that provide life energy, and could be opposed by those who resist its influence.",
+    "environment": "Typically found in areas rich in life forms, such as enchanted forests or near mortal settlements.",
+    "strengths": "Possesses high Dexterity and Constitution, along with powerful life-draining abilities.",
+    "weaknesses": "Vulnerable against beings that cannot willingly provide energy, plus low saving throw modifiers in Constitution, Wisdom, and Charisma.",
+    "attacks": "Utilizes quick multiattacks with a rapier that cause both piercing and additional necrotic damage.",
+    "most_powerful_ability": "Life Feast, which draws life energy from nearby creatures, inflicting significant necrotic damage.",
+    "equipment": null,
+    "senses": "Has passive perception of 17.",
+    "skills": "Proficient in perception, allowing it to notice details about its surroundings effectively.",
+    "additional_information": [
+        "Can gain temporary hit points from its Life Feast ability.",
+        "Life Reading capability reveals exact remaining lifespan of targets.",
+        "Resistant to nonmagical attacks not made with cold iron.",
+        "Immune to charmed and frightened conditions.",
+        "Utilizes necrotic weapons for added damage."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fey life-draining creature",
+        "medium creature manipulating life energy",
+        "necrotic weapon attacks fey being",
+        "lawful neutral fey with life essence powers",
+        "strategic foe that pulls life energy"
+    ]
+}

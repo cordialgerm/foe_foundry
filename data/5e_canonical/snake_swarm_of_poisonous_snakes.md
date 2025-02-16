@@ -1,6 +1,8 @@
 <MonsterName/>Snake, Swarm of Poisonous Snakes</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>2</CR>
+<AC/>14</AC>
+<HP/>48</HP>
 <summary>The Swarm of Poisonous Snakes is a Medium swarm composed of numerous tiny, venomous snakes. This creature takes on the role of an ambush predator in combat, capable of dealing significant poison damage to unsuspecting foes. It has a fair amount of durability, with an Armor Class of 14 and 48 hit points, making it a good threat for parties at Challenge Rating 2. The swarm is particularly dangerous when foes are caught in its area, as its poisonous nature can incapacitate or severely weaken them. However, it has weaknesses, such as low strength and intelligence scores, which limit its ability to engage in direct combat effectively. Moreover, the swarm cannot regain hit points, which makes it vulnerable if it faces concentrated attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the swarm can perform bites against creatures within its ar
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Snake, Swarm of Poisonous Snakes
 
 *Medium swarm (of tiny beasts)*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 
 - **Bites.** Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its HP or fewer. The target must make a DC 14 CON save, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

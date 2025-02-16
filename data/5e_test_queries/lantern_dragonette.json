@@ -1,0 +1,25 @@
+{
+    "name": "Lantern Dragonette",
+    "queries": [
+        {
+            "query": "tiny dragon that creates light and breathes fire",
+            "variant": "small dragonette which can manipulate light and uses fire breath"
+        },
+        {
+            "query": "dragon that struggles in magical darkness and can fly",
+            "variant": "dragonette that is vulnerable in magical dark areas and has flying abilities"
+        },
+        {
+            "query": "dragon companion with good intelligence and unique light ability",
+            "variant": "intelligent dragonette that has a special light manipulation power"
+        },
+        {
+            "query": "creature with darkvision that lights up areas and uses fire attacks",
+            "variant": "monster with darkvision skills that illuminates spaces and breathes fire"
+        },
+        {
+            "query": "lawful neutral dragon that has a weakness to magic darkness",
+            "variant": "lawful neutral dragonette vulnerable to magical darkness"
+        }
+    ]
+}

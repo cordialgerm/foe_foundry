@@ -1,0 +1,48 @@
+{
+    "name": "Lystrosaurus",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "burrow 5 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "physical combatant"
+    ],
+    "adjectives": [
+        "robust",
+        "strong"
+    ],
+    "description": "The Lystrosaurus has a robust physique, characterized by strong limbs and a large head, making it adept in physical confrontations.",
+    "memorable": "It can knock targets prone with its headbutt and follow up with a deadly bite attack, adding tactical depth to its combat.",
+    "goals": "Engages in physical confrontations with significant damage output, relying on melee attacks.",
+    "relations": "Could be encountered alongside other beasts or serve as a guardian for a territory.",
+    "environment": "Typically found in rugged terrains or regions with ample vegetation.",
+    "strengths": "High strength and constitution scores enhance its physical attack capabilities and durability.",
+    "weaknesses": "Lacks ranged attacks and has low dexterity, making it vulnerable to agile opponents.",
+    "attacks": "Utilizes a ram attack for bludgeoning damage and a potent bite attack for piercing damage.",
+    "most_powerful_ability": "The ability to knock opponents prone with its headbutt and then attack them while they are vulnerable adds a tactical edge in battle.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 13, indicating decent awareness of its surroundings.",
+    "skills": "Proficient in athletics, making it a competent climber, and has moderate perception capabilities.",
+    "additional_information": [
+        "Strong physical combatant with significant melee damage output.",
+        "Can knock opponents prone to follow up with additional damage.",
+        "Has a good constitution save, increasing its resilience.",
+        "Average dexterity limits its ability to evade attacks.",
+        "Low intelligence and charisma affect its problem-solving and social interactions."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "robust beast that knocks foes prone",
+        "strong physical beast with deadly bite",
+        "Lystrosaurus headbutt attack tactic",
+        "medium-sized beast with burrowing movement",
+        "powerful melee attacker with good agility"
+    ]
+}

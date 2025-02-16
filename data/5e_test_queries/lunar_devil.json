@@ -1,0 +1,25 @@
+{
+    "name": "Lunar Devil",
+    "queries": [
+        {
+            "query": "fiend that uses moonlight for defense and has high dexterity",
+            "variant": "fiend that has strong defenses and uses moonlight for mobility"
+        },
+        {
+            "query": "lawful evil fiend immune to fire and can summon allies",
+            "variant": "lawful evil fiend that can call allies and is immune to fire"
+        },
+        {
+            "query": "large creature with darkvision that thrives in moonlight",
+            "variant": "large creature with darkvision that excels in moonlight conditions"
+        },
+        {
+            "query": "strong melee attacker that can fly and uses cold damage",
+            "variant": "powerful melee attacker that utilizes cold damage and has the ability to fly"
+        },
+        {
+            "query": "cunning monster with high Charisma and spellcasting abilities",
+            "variant": "smart creature with spellcasting action and high Charisma"
+        }
+    ]
+}

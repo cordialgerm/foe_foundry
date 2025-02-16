@@ -1,6 +1,8 @@
 <MonsterName/>Mountain Giant</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>21</CR>
+<AC/>20 (natural armor)</AC>
+<HP/>313</HP>
 <summary>The Mountain Giant is a gargantuan creature that embodies the raw power of the mountains. As a neutral evil being, it uses its immense physical strength and mastery of the terrain to dominate battles and instill fear. With a formidable Armor Class of 20, it is quite resistant to physical attacks, bolstered by a whopping 313 hit points, making it a long-lasting foe in combat. Its high Strength score of 26 offers exceptional melee capabilities, complemented by a solid Constitution score that enhances its durability. However, its Dexterity is average, leaving it somewhat vulnerable to ranged attacks. The Mountain Giant's abilities allow it to manipulate the environment and unleash devastating area attacks, making it a versatile threat on the battlefield.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Mountain Giant can use legendary actions to further influence the battle. Gr
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mountain Giant
 
 *Gargantuan* *Giant* *neutral evil*
@@ -63,5 +66,6 @@ A mountain giant can take 3 legendary actions, choosing from the options below. 
 - **Grasping Soil:** The mountain giant commands the earth itself to assist in the fight. The giant chooses three creatures it can see within 60 feet. Each target must succeed on a DC 21 Dexterity saving throw or be restrained until the start of its next turn.
 - **Roar (Costs 2 Actions):** The mountain giant emits a tremendous growl. Each creature within 20 feet of the giant must make a DC 21 Constitution saving throw. On a failure, a creature takes 21 (6d6) thunder damage and is knocked prone. On a success, a creature takes half the damage and isn't knocked prone.
 - **Spawn Elemental (Costs 3 Actions):** A piece of the mountain giant's body tears away in the form of an earth elemental. The earth elemental acts on the same initiative count as the mountain giant, obeying the mountain giant's commands and fighting until destroyed. The mountain giant can have no more than five earth elementals under its control at one time.
+</statblock>
 
 

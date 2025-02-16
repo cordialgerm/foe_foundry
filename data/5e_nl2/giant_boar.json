@@ -1,0 +1,52 @@
+{
+    "name": "Giant Boar",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 47,
+    "ac": 12,
+    "srd": true,
+    "cr": "2",
+    "movement": "40 feet, quick and aggressive",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "aggressive",
+        "territorial"
+    ],
+    "adjectives": [
+        "massive",
+        "fearsome",
+        "resilient"
+    ],
+    "description": "The Giant Boar is a massive, aggressive beast with thick, bristly fur and sharp tusks. It charges at threats with ferocity and is known for its impressive size and strength.",
+    "memorable": "Its ability to knock down foes with a powerful charge and its Relentless trait allow it to endure lethal damage.",
+    "goals": "To forage for food and fiercely defend its territory and young.",
+    "relations": "Often encountered in herds, could be seen with smaller wild animals.",
+    "environment": "Roams forests and plains.",
+    "strengths": "High hit points and strong melee attack capabilities, especially when charging.",
+    "weaknesses": "Very low intelligence, wisdom, and charisma, making it poor at social interactions.",
+    "attacks": "Uses tusk attacks that deal significant slashing damage and can knock targets prone.",
+    "most_powerful_ability": "Charge ability that enhances its attacks and can knock down opponents.",
+    "equipment": null,
+    "senses": "Passive Perception score is relatively low at 9, making it struggle to notice hidden threats.",
+    "skills": null,
+    "additional_information": [
+        "Capable of multiattacking with two tusk strikes.",
+        "Has a bonus action called Challenging Snort to intimidate foes.",
+        "Territorial and fiercely protective of its herd.",
+        "Uses a powerful tusk attack with a +5 to hit modifier.",
+        "Relentless ability allows it to remain active after taking lethal damage."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large tusked beast that charges",
+        "territorial wild pig with sharp tusks",
+        "fierce boar that knocks down opponents",
+        "aggressive giant creature in forests",
+        "massive beast with high hit points"
+    ]
+}

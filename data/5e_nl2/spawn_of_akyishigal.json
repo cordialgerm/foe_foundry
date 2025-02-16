@@ -1,0 +1,51 @@
+{
+    "name": "Spawn of Akyishigal",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Medium",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "insectoid",
+        "summoner"
+    ],
+    "adjectives": [
+        "chaotic",
+        "malevolent",
+        "cunning"
+    ],
+    "description": "The Spawn of Akyishigal is a medium-sized chaotic evil fiend, characterized by its malice and cunning nature.",
+    "memorable": "It can command insectoid beasts and summon swarms, complicating battles for its foes.",
+    "goals": "To manipulate and control lesser creatures while spreading chaos and malice.",
+    "relations": "Related to other powerful fiends and could be encountered with insect-like monsters.",
+    "environment": "Typically found in areas teeming with insect life, thriving in chaotic settings.",
+    "strengths": "Immunity to poison damage and resistance to cold, fire, and lightning.",
+    "weaknesses": "Average intelligence might limit its strategic options in combat.",
+    "attacks": "Uses a Multiattack featuring a Bite and two Sting attacks, causing piercing and poison damage.",
+    "most_powerful_ability": "Can summon swarms of insects to act as allies in battle, complicating combat for enemies.",
+    "senses": "The creature has darkvision up to 60 feet, allowing it to see in dim light and darkness.",
+    "skills": "Good at evading attacks due to its Dexterity saving throw bonus.",
+    "additional_information": [
+        "Controls lesser insectoid beasts with its Command Vermin ability.",
+        "Gains advantage on saving throws against spells, showcasing its magic resistance.",
+        "Can create two swarms of insects to perform its bidding in battle.",
+        "Attack from its Sting has potential to poison targets, impairing their actions.",
+        "Notable for combining physical and magical resilience."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic fiend commanding swarms of insects",
+        "medium fiend with poison immunity and swarm ability",
+        "cunning fiend controlling insectoid beasts",
+        "monster that summons insect swarms in battle",
+        "Spawn of Akyishigal tactics and abilities"
+    ]
+}

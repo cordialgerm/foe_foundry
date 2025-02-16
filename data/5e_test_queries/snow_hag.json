@@ -1,0 +1,25 @@
+{
+    "name": "Snow Hag",
+    "queries": [
+        {
+            "query": "fey creature that excels in icy environments and uses illusions to deceive",
+            "variant": "fey being that is great in cold places and uses illusions to trick"
+        },
+        {
+            "query": "cold-dwelling hag with powerful spellcasting abilities and weak to fire",
+            "variant": "hag from cold climates with strong spellcasting that is vulnerable to fire"
+        },
+        {
+            "query": "icy monster that can charm and create fog clouds",
+            "variant": "frosty creature that can charm others and summon fog clouds"
+        },
+        {
+            "query": "neutral evil creature with claws attack and freezing breath abilities",
+            "variant": "neutral evil being with claw strikes and freezing fog powers"
+        },
+        {
+            "query": "snow-themed hag that manipulates its appearance and uses darkvision",
+            "variant": "hag with a snow theme that alters its looks and possesses darkvision"
+        }
+    ]
+}

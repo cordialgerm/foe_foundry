@@ -1,6 +1,8 @@
 <MonsterName/>Drop Bear</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>3</CR>
+<AC/>12</AC>
+<HP/>42</HP>
 <summary>The Drop Bear is a formidable large beast, designed to ambush unsuspecting adventurers from above. With a robust set of physical attributes, including a high Strength score of 20, this creature is adept at dealing significant damage in melee combat, particularly with its bite and claws. With a Challenge Rating of 3, it offers a moderate challenge, presenting an opportunity for tactical play in forested environments where it can utilize its climbing speed and stealth advantages. Notably, its unique ability to fall from heights without suffering damage allows it to engage from above, delivering added impact to its attacks. While its Intelligence and Charisma are poor, the creature excels in physical confrontations, making it especially dangerous in its preferred habitats.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Drop Bear can perform a Multiattack, allowing it to mak
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Drop Bear
 
 *Large* *Beast*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Claws:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d4+5) slashing damage. If the target is a Medium or smaller creature  it is grappled (escape DC 15). Until this grapple ends  the bear can't attack a different target with its claws.
 
 
+</statblock>
 
 

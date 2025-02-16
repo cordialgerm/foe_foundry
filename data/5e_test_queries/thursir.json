@@ -1,0 +1,25 @@
+{
+    "name": "Thursir",
+    "queries": [
+        {
+            "query": "large evil giant with high strength and poison resistance",
+            "variant": "big evil giant with powerful strength and resistance against poison"
+        },
+        {
+            "query": "giant with strong melee attacks and a special ability involving runes",
+            "variant": "giant noted for its powerful melee strikes and a unique rune ability"
+        },
+        {
+            "query": "Thursir appearance and abilities in combat",
+            "variant": "how does the Thursir look and what combat abilities does it have"
+        },
+        {
+            "query": "tall giant with a warhammer and good athletic skills",
+            "variant": "big giant wielding a warhammer and proficient in athletics"
+        },
+        {
+            "query": "creature with high constitution that excels in direct confrontations",
+            "variant": "being with powerful constitution that thrives in close combat"
+        }
+    ]
+}

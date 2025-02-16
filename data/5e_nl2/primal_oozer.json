@@ -1,0 +1,51 @@
+{
+    "name": "Primal Oozer",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 112,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking, 10 ft. climbing, 20 ft. swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "ooze",
+        "disease",
+        "combat"
+    ],
+    "adjectives": [
+        "slimy",
+        "debilitating",
+        "menacing"
+    ],
+    "description": "A formidable ooze-like aberration with a slimy body, capable of climbing and swimming.",
+    "memorable": "Inflicts ooze plague disease, which can turn victims into ochre jelly.",
+    "goals": "Hunts and infects creatures with its disease.",
+    "relations": "Could be encountered alongside other oozes or related aberrations.",
+    "environment": "Typically found in damp, dark places, such as caves or swamps.",
+    "strengths": "High Strength for powerful melee attacks; can move through various terrains.",
+    "weaknesses": "Low Intelligence and Charisma; struggles in social situations.",
+    "attacks": "Utilizes multiattack with bite, dealing slashing damage and potential acid damage.",
+    "most_powerful_ability": "Ooze Plague can drastically weaken foes and turn them into new oozes.",
+    "senses": "Possesses darkvision to navigate in darkness effectively.",
+    "skills": "Has average Dexterity, aiding its movement and avoidance during battles.",
+    "additional_information": [
+        "Damage immunity to acid helps it resist common attacks.",
+        "Can inflict Acidic Slime damage when touched or hit in melee.",
+        "Has Pack Tactics for advantageous positioning in combat.",
+        "Advantage on escape checks due to Slimy Body ability.",
+        "Low passive perception but good Wisdom."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ooze-like creature that infects with disease",
+        "menacing slime monster that causes ooze plague",
+        "slimy creature that can swim and climb",
+        "powerful aberration with debilitating attacks",
+        "monster that turns victims into ochre jelly"
+    ]
+}

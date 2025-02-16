@@ -1,0 +1,49 @@
+{
+    "name": "Giant Crab",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 15,
+    "srd": true,
+    "cr": "1/8",
+    "movement": "30 feet walking and swimming speed",
+    "role": "null",
+    "tags": [
+        "amphibious",
+        "predator",
+        "crustacean"
+    ],
+    "adjectives": [
+        "massive",
+        "territorial",
+        "formidable"
+    ],
+    "description": "A massive crustacean predator with a hard, chitinous shell and enormous pincers capable of crushing bone.",
+    "memorable": "Its grappling capability can incapacitate foes, especially spellcasters, by suffocating them.",
+    "goals": "Territorial defense of their nests or hunting grounds.",
+    "relations": "Often encountered in groups around coastal waters and marshes.",
+    "environment": "Found in coastal waters, rocky shores, and underground caves.",
+    "strengths": "Fast movement on land despite its size and effective in ambush tactics.",
+    "weaknesses": "Low intelligence makes it susceptible to traps and illusions.",
+    "attacks": "Uses powerful pincers to crush prey and grapple enemies.",
+    "most_powerful_ability": "Pincer Pinch can incapacitate and suffocate grappled creatures.",
+    "equipment": null,
+    "senses": "The Giant Crab has blindsight which allows it to sense vibrations in water and air within 30 feet.",
+    "skills": "Excels in stealth, making it a good ambusher.",
+    "additional_information": [
+        "Possesses keen senses for environmental perception.",
+        "Can grapple two separate targets simultaneously.",
+        "Vulnerable due to its low charisma and wisdom scores.",
+        "Relies on its tough shell for defense in combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "massive coastal predator with pincers",
+        "crustacean that grapples enemies",
+        "swift giant crab in rocky shores",
+        "amphibious creature that suffocates foes",
+        "territorial predator with crushing claws"
+    ]
+}

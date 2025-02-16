@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Dryad",
+    "queries": [
+        {
+            "query": "huge fey creature that can burrow through earth",
+            "variant": "huge fey beast that burrows through the earth"
+        },
+        {
+            "query": "monster with magic resistance and can charm foes",
+            "variant": "creature with magic resist and ability to charm enemies"
+        },
+        {
+            "query": "earth manipulating creature with high athletics skill",
+            "variant": "creature that manipulates earth and has exceptional athletics"
+        },
+        {
+            "query": "monster immune to being charmed and has high hit points",
+            "variant": "creature that is immune to charm and has a lot of hit points"
+        },
+        {
+            "query": "versatile fey with melee and ranged attacks",
+            "variant": "versatile fey creature capable of melee and range attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Enchanter",
+    "queries": [
+        {
+            "query": "humanoid spellcaster that manipulates enemies with enchantment spells",
+            "variant": "spellcasting humanoid that enchants foes and manipulates them"
+        },
+        {
+            "query": "medium creature with the ability to charm and incapacitate opponents",
+            "variant": "medium-sized monster that charms and incapacitates its foes"
+        },
+        {
+            "query": "intelligent magic user with high Charisma that casts spells",
+            "variant": "Charisma-focused intelligent spellcaster capable of casting various spells"
+        },
+        {
+            "query": "monster that uses captivating gaze and beguiling parry in combat",
+            "variant": "creature that employs captivating gaze and beguiling parry during fights"
+        },
+        {
+            "query": "enchanter with fey ancestry and darkvision living in diverse environments",
+            "variant": "enchanter with darkvision and fey ancestry found in various settings"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Cackling Skeleton",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 26,
+    "ac": 9,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "skeleton",
+        "undead",
+        "cackle",
+        "psychological warfare"
+    ],
+    "adjectives": [
+        "chaotic",
+        "malevolent",
+        "demoralizing"
+    ],
+    "description": "The Cackling Skeleton is a medium-sized undead creature with unsettling laughter and a mocking demeanor, making it appear more sinister.",
+    "memorable": "Its ability to impose disadvantage on attacks through cackling makes it unique in combat.",
+    "goals": "To demoralize and disrupt living foes in battle.",
+    "relations": "Often found among other undead or malicious creatures.",
+    "environment": "Commonly found in graveyards, haunted locations, or areas rife with undead.",
+    "strengths": "Immunities to poison damage and conditions like exhaustion enhance its resilience.",
+    "weaknesses": "Vulnerability to effects that turn undead significantly affects its survival.",
+    "attacks": "Executes a Slam attack with a chance to hit harder if targets are demoralized.",
+    "most_powerful_ability": "The Cackle demoralizes opponents, giving them disadvantage on attack rolls.",
+    "equipment": null,
+    "senses": "It possesses darkvision, allowing it to see in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can target multiple foes with its Mock ability.",
+        "Demoralizes opponents, affecting their combat effectiveness.",
+        "Relatively easy to defeat due to low Armor Class.",
+        "Immunities help it withstand certain attacks.",
+        "Harnesses psychological warfare through laughter."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that laughs",
+        "skeleton with demoralizing abilities",
+        "psychological warfare skeleton",
+        "creature that disrupts attacks with laughter",
+        "undead that imposes disadvantage"
+    ]
+}

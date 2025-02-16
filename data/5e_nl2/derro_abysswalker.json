@@ -1,0 +1,53 @@
+{
+    "name": "Derro, Abysswalker",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 112,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 25 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "poison",
+        "chaotic"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "dangerous",
+        "chaotic"
+    ],
+    "description": "The Derro, Abysswalker is a small humanoid with a cunning and dangerous demeanor, sporting enhanced Dexterity and Constitution.",
+    "memorable": "It excels in using poison against enemies and has immunity to poison damage, making it a treacherous foe.",
+    "goals": "Typically seeks to engage in chaotic and dangerous confrontations, leveraging its abilities to manipulate battles.",
+    "relations": "Often encountered alongside other derro or malevolent creatures of the Abyss.",
+    "environment": "Primarily found in dark, chaotic areas conducive to its poisonous abilities.",
+    "strengths": "Immune to poison and resistant to cold, fire, and lightning damage.",
+    "weaknesses": "Suffers from Sunlight Sensitivity, leading to disadvantage on attacks and Perception checks in sunlight.",
+    "attacks": "Utilizes multiattacks with a combination of Bite, Claw, and Scimitar, delivering significant damage both physically and with poison.",
+    "most_powerful_ability": "Poisonous Vapors creates a hazardous area around it, dealing poison damage and poisoning any close proximity foes.",
+    "equipment": "wields a scimitar",
+    "senses": "Has darkvision up to 120 feet, allowing it to see in complete darkness.",
+    "skills": "Possesses poor perception skills with a modifier of -2.",
+    "additional_information": [
+        "Advantage on saves against being charmed or frightened due to its Insanity ability.",
+        "Can grapple Medium or smaller creatures with its Claw attack.",
+        "Allows for strategic positioning in battles with its area denial from Poisonous Vapors."
+    ],
+    "damage_types": [
+        "poison",
+        "bludgeoning",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small malicious humanoid with poison abilities",
+        "chaotic creature that grapples enemies",
+        "poisonous vapors dangerous close combat opponent",
+        "cunning humanoid that thrives in darkness",
+        "derro monster with sunlight sensitivity weaknesses"
+    ]
+}

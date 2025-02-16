@@ -1,0 +1,25 @@
+{
+    "name": "Void Knight",
+    "queries": [
+        {
+            "query": "malevolent construct with powerful melee attacks and magic resistance",
+            "variant": "construct that is malevolent, has strong melee attacks and resists magic"
+        },
+        {
+            "query": "medium creature that can communicate with telepathy and does force damage",
+            "variant": "medium-sized monster able to speak via telepathy and inflicts force damage"
+        },
+        {
+            "query": "creature with high strength score that can immobilize foes and has a low dexterity",
+            "variant": "monster featuring a high strength and the ability to immobilize enemies, but with a low dexterity"
+        },
+        {
+            "query": "void-themed knight that doesn\u2019t require food or sleep and can pull enemies closer",
+            "variant": "knight themed around the void that needs neither food nor sleep and can tug enemies nearer"
+        },
+        {
+            "query": "construct with high armor class that deals slashing and force damage in combat",
+            "variant": "construct featuring a high AC that delivers slashing and force damage during fights"
+        }
+    ]
+}

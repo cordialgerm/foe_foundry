@@ -1,0 +1,25 @@
+{
+    "name": "Khamaseen",
+    "queries": [
+        {
+            "query": "tiny elemental creature that can fly and uses dust for attacks",
+            "variant": "tiny creature able to fly and uses dust for its attacks, elemental"
+        },
+        {
+            "query": "dust-based monster with lightning abilities that doesn't need to sleep",
+            "variant": "monster based on dust with lightning powers that doesn't require sleep"
+        },
+        {
+            "query": "creature resistant to poison that can incapacitate foes with a cloud",
+            "variant": "poison-resistant creature that can incapacitate enemies using a cloud"
+        },
+        {
+            "query": "elemental that disrupts attacks and has an ability to engulf in dust",
+            "variant": "disruptive elemental with a power to engulf foes in dust clouds"
+        },
+        {
+            "query": "small creature immune to exhaustion with decent physical attributes",
+            "variant": "small creature that has immunity to exhaustion and reasonable physical traits"
+        }
+    ]
+}

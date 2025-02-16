@@ -1,0 +1,25 @@
+{
+    "name": "Brachyura Shambler",
+    "queries": [
+        {
+            "query": "medium-sized monster with grappling abilities and a sewer plague",
+            "variant": "medium sized creature that grapples and inflicts sewer plague"
+        },
+        {
+            "query": "monstrosity that has natural armor and acid-based attacks",
+            "variant": "creature with natural armor and acid attacks"
+        },
+        {
+            "query": "neutral evil creature that has bludgeoning resistance and darkvision",
+            "variant": "evil monstrosity known for bludgeoning resistance and darkvision"
+        },
+        {
+            "query": "Brachyura Shambler abilities for aquatic encounters",
+            "variant": "Brachyura Shambler powers in water-based battles"
+        },
+        {
+            "query": "monster with piercing claws and disease-inflicting spit",
+            "variant": "creature that has claws and can inflict disease through spit"
+        }
+    ]
+}

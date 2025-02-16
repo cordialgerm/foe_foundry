@@ -1,0 +1,25 @@
+{
+    "name": "Treacle",
+    "queries": [
+        {
+            "query": "tiny ooze that drains blood and disguises itself",
+            "variant": "tiny ooze that can drain blood and changes shape"
+        },
+        {
+            "query": "small creature with mimicry ability that loves to ambush",
+            "variant": "small creature that can imitate sounds and ambushes its prey"
+        },
+        {
+            "query": "creature that can fit through tight spaces and has a soft texture",
+            "variant": "monster that can go through small openings and is soft to the touch"
+        },
+        {
+            "query": "deceptive ooze that can hide as non-threatening objects",
+            "variant": "tricky ooze that disguises itself as harmless things"
+        },
+        {
+            "query": "low health creature with blood draining attack and good deceit skills",
+            "variant": "creature with low hit points that drains blood and has strong deception"
+        }
+    ]
+}

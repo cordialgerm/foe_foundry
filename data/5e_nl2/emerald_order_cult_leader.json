@@ -1,0 +1,52 @@
+{
+    "name": "Emerald Order Cult Leader",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Neutral or Lawful Evil",
+    "size": "Medium",
+    "hp": 156,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "cult",
+        "spellcaster",
+        "support"
+    ],
+    "adjectives": [
+        "powerful",
+        "divine",
+        "martial"
+    ],
+    "description": "A formidable humanoid figure embodying a mix of martial prowess and divine magic, known for its radiant weapon attacks and tactical leadership abilities.",
+    "memorable": "Unique for its capacity to enhance allies' effectiveness in combat while also dealing significant radiant damage with its blessed weapon attacks.",
+    "goals": "Leading a cult with strict adherence to personal beliefs and authority of its deity.",
+    "relations": "Typically found with cult followers or other divine spellcasters.",
+    "environment": "Often found in religious or cult centers, typically in areas of worship.",
+    "strengths": "Possesses strong melee and spellcasting capabilities, as well as abilities that enhance its allies and improve its own survivability.",
+    "weaknesses": "Lacks mobility compared to faster creatures, potentially making it vulnerable to ranged attacks.",
+    "attacks": "Wields a mace for bludgeoning and radiant damage, and can unleash a powerful Radiant Bolt.",
+    "most_powerful_ability": "Blessed Weapons, which add significant radiant damage to its weapon attacks.",
+    "equipment": null,
+    "senses": "Has a passive perception of 15, allowing it to effectively notice details in low light.",
+    "skills": "Proficient in Arcana, Deception, History, and Religion, showcasing a breadth of knowledge.",
+    "additional_information": [
+        "Can grant allies an advantage on attack rolls with Prophetic Tactics.",
+        "Specializes in both support and damage dealing with divine magic.",
+        "Has access to a variety of spells for control and utility.",
+        "Utilizes Esoteric Vengeance to retaliate against attackers.",
+        "Enhances its AC significantly when unarmored due to Divine Blessing."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells like Command, Detect Thoughts, Dimension Door, and Silence, primarily using Wisdom.",
+    "test_queries": [
+        "cult leader with divine magic",
+        "humanoid that enhances allies in combat",
+        "powerful figure dealing radiant damage",
+        "cult leader known for tactical abilities",
+        "creature using spells and blessed weapons"
+    ]
+}

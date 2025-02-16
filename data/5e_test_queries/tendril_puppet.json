@@ -1,0 +1,25 @@
+{
+    "name": "Tendril Puppet",
+    "queries": [
+        {
+            "query": "plant creature with regenerative abilities in forests and vulnerable to fire",
+            "variant": "plant monster that has regeneration in forests and is weak to fire"
+        },
+        {
+            "query": "living puppet that communicates telepathically with its vine lord and uses thorn attacks",
+            "variant": "puppet that can communicate with its vine lord through thoughts and has thorn-based attacks"
+        },
+        {
+            "query": "medium plant creature with strong defense and area damage capabilities",
+            "variant": "medium-sized plant monster that has great defense and can deal area damage"
+        },
+        {
+            "query": "magically resistant plant creature that uses thorns and lives in wooded areas",
+            "variant": "thorn-using plant monster that lives in woods and resists magical attacks"
+        },
+        {
+            "query": "minion of a vine lord that thrives in natural environments and can regenerate health",
+            "variant": "servant of vine lord thriving in nature and able to recover hit points"
+        }
+    ]
+}

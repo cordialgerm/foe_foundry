@@ -1,0 +1,51 @@
+{
+    "name": "Void Fungus",
+    "creature_type": "Plant",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "walks at a speed of 30 feet",
+    "role": "null",
+    "tags": [
+        "fungus",
+        "psychic"
+    ],
+    "adjectives": [
+        "unique",
+        "eerie",
+        "chaotic"
+    ],
+    "description": "The Void Fungus is an eerie medium-sized plant that blends well with its environment, appearing as a glowing patch of fungus when motionless. It has a cap covered in hair-like tendrils.",
+    "memorable": "The ability to draw psychic energy from nearby creatures while regaining hit points makes the Void Fungus a durable and unique foe.",
+    "goals": "The Void Fungus typically aims to ensnare its foes through psychological manipulation and stealth.",
+    "relations": "It might be encountered alongside other plant creatures in damp, dark environments.",
+    "environment": "usually found in dark, damp areas with plenty of organic material.",
+    "strengths": "Immunity to conditions such as being frightened, charmed, or poisoned.",
+    "weaknesses": "Vulnerable to radiant damage and has low charisma, limiting social interactions.",
+    "attacks": "Can attack with poisonous mycelium or psychic blasts, dealing significant piercing and psychic damage while potentially charming foes.",
+    "most_powerful_ability": "Consume Energy allows it to drain psychic energy from creatures, dealing damage and regaining hit points.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to perceive nearby creatures despite being blind.",
+    "skills": "Boasts a good perception skill due to high wisdom, allowing it to notice creatures effectively.",
+    "additional_information": [
+        "Emits dim light in a 10-foot radius",
+        "Can communicate through telepathy up to 60 feet",
+        "Ability to charm targets if both psychic blasts hit",
+        "Effective at stealth tactics due to its False Appearance ability",
+        "Average intelligence but excels in physical strength and health"
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast psychic spells, dealing psychic damage to foes.",
+    "test_queries": [
+        "weird glowing fungus that drains psychic energy",
+        "creature that blends into dark environments",
+        "eerie plant with psychic attacks and healing",
+        "fungus that charms and poisons adventurers",
+        "medium-sized plant that emits dim light"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Adult Blue Dragon",
+    "creature_type": "Dragon",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 225,
+    "ac": 19,
+    "srd": true,
+    "cr": "16",
+    "movement": "40 ft., burrow 30 ft., fly 80 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "chromatic",
+        "blue",
+        "elemental"
+    ],
+    "adjectives": [
+        "majestic",
+        "serpentine",
+        "territorial",
+        "formidable"
+    ],
+    "description": "The Adult Blue Dragon features shimmering sapphire scales, long curved horns, and large muscular wings, showcasing a regal appearance. It blends well in desert environments, emphasizing its cunning and prideful nature.",
+    "memorable": "Known for its ability to summon powerful lightning and manipulate illusions, the Adult Blue Dragon is a fierce predator and master strategist that dominates its territory.",
+    "goals": "To assert dominance over its territory, gather treasure, and eliminate threats to its power.",
+    "relations": "Often found in deserts and arid landscapes, it is related to other chromatic dragons, particularly those of lightning and thunder.",
+    "environment": "Deserts and arid landscapes.",
+    "strengths": "Immunity to lightning damage, exceptional physical attacks, innate spellcasting abilities, high Strength and Constitution, and the ability to manipulate the battlefield with fear effects and area damage.",
+    "weaknesses": "Limited Dexterity, making it potentially vulnerable to certain combat tactics or approaches.",
+    "attacks": "Can execute a multiattack including a bite that deals piercing damage and additional lightning damage, two claw attacks dealing slashing damage, and a tail attack for bludgeoning damage.",
+    "most_powerful_ability": "Lightning Breath, a powerful area attack that deals massive lightning damage in a wide line, capable of incapacitating foes who fail their saving throw.",
+    "equipment": null,
+    "senses": "The dragon possesses blindsight up to 60 feet, allowing it to detect hidden creatures effectively.",
+    "skills": "High Perception score of 22, giving it an exceptional awareness of its surroundings.",
+    "additional_information": [
+        "Capable of generating an electrical charge that incapacitates nearby foes.",
+        "Uses legendary resistance three times a day to enhance its survivability.",
+        "Can create mirage illusions to confuse and outmaneuver enemies."
+    ],
+    "damage_types": [
+        "lightning"
+    ],
+    "spellcasting": "Innate spellcasting ability with a DC of 18, capable of casting spells such as Blur, Silent Image, Blight, and Hypnotic Pattern.",
+    "test_queries": [
+        "regal blue dragon",
+        "desert predator",
+        "majestic lightning beast",
+        "serpentine dragon with cunning",
+        "powerful elemental dragon"
+    ]
+}

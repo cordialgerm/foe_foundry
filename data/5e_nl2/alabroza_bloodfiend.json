@@ -1,0 +1,52 @@
+{
+    "name": "Alabroza, Bloodfiend",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 72,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 10 ft., fly 50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "bloodthirsty",
+        "charm",
+        "deception",
+        "flying"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "elusive"
+    ],
+    "description": "Alabroza is a small fiendish creature with bird-like features, embodying hunger and deceit. It has a beak capable of piercing attacks and carries a sinister aura.",
+    "memorable": "Alabroza's ability to charm and attach to its victims, inflicting continuous blood loss makes it a unique and formidable foe.",
+    "goals": "To consume blood, enforce its will on others through charm, and manipulate situations to its advantage.",
+    "relations": "Often serves other evil creatures and can be encountered alongside other fiends.",
+    "environment": "Commonly found in dark places where it can prey on unsuspecting victims.",
+    "strengths": "Possesses impressive mobility and magical abilities, as well as a unique method of dealing continuous damage while attached to its prey.",
+    "weaknesses": "Dependency on fresh blood; failure to feed results in exhaustion, limiting its combat effectiveness.",
+    "attacks": "Utilizes a combination of physical attacks with its beak and talons, alongside the charm of its hypnotic gaze.",
+    "most_powerful_ability": "Hypnotic Gaze, which incapacitates and charms targets, rendering them unable to detach the Bloodfiend.",
+    "equipment": null,
+    "senses": "Alabroza has a passive Perception of 15, making it aware of its surroundings.",
+    "skills": "Skilled in perception, enhancing its ability to detect prey.",
+    "additional_information": [
+        "Relies on drinking blood for sustenance.",
+        "Can change shape into a humanoid or mist, providing strategic evasion options.",
+        "Resists cold, fire, lightning, and poison damage.",
+        "Immune to charm effects, making it a formidable manipulator.",
+        "Uses spells like Minor Illusion and Suggestion to control the battlefield and deceive opponents."
+    ],
+    "damage_types": [],
+    "spellcasting": "At will: Minor Illusion; 3/day each: Detect Thoughts, Suggestion.",
+    "test_queries": [
+        "elusive bloodthirsty fiend",
+        "charming bloodsucker",
+        "deceptive fiend creature",
+        "flying hunger-themed monster",
+        "insatiable blood predator"
+    ]
+}

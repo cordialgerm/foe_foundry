@@ -1,0 +1,25 @@
+{
+    "name": "Vrock",
+    "queries": [
+        {
+            "query": "large vulture-like demon that uses poisonous spores",
+            "variant": "big demon with vulture features that can release toxic spores"
+        },
+        {
+            "query": "fiend that can fly and has a stunning screech ability",
+            "variant": "demon that can soar and uses a screech to stun enemies"
+        },
+        {
+            "query": "chaotic evil creature with sharp talons and a beak",
+            "variant": "creature with a beak and claws that embodies chaos and evil"
+        },
+        {
+            "query": "Vrock features and battlefield control abilities",
+            "variant": "characteristics of Vrock and its ability to control the battlefield"
+        },
+        {
+            "query": "powerful demon with darkvision and telepathy",
+            "variant": "strong fiend that has darkvision and can communicate telepathically"
+        }
+    ]
+}

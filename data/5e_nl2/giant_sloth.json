@@ -1,0 +1,51 @@
+{
+    "name": "Giant Sloth",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 168,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "climb 20 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "sloth",
+        "combat",
+        "grappler"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "durable"
+    ],
+    "description": "The Giant Sloth is a large beast characterized by its impressive physical power and considerable durability. It has a robust body covered in thick fur, with powerful claws and a menacing bite.",
+    "memorable": "Unique abilities like 'Foul Odor' impose disadvantages on nearby enemies, and 'Hunter's Dash' allows it to become a fearsome attacker in critical moments.",
+    "goals": "Typically seeks to deter threats and subdue prey using its powerful attacks and special abilities.",
+    "relations": "May be found in the company of other beasts or in isolated jungles.",
+    "environment": "Typically found in dense jungles or forested areas.",
+    "strengths": "High strength and constitution make it a formidable opponent, capable of absorbing damage and delivering devastating attacks.",
+    "weaknesses": "Slow movement speed makes it less agile in combat situations.",
+    "attacks": "The Giant Sloth uses multiattacks with powerful claws for grappling and a strong bite that can deal significant piercing damage.",
+    "most_powerful_ability": "'Sloth's Embrace' allows it to crush grappled enemies, dealing high damage and potentially stunning them.",
+    "equipment": null,
+    "senses": "Has darkvision up to 120 feet and a passive Perception of 14, allowing good awareness of its surroundings.",
+    "skills": "Skills in athletics and perception indicate a strong physical prowess and average environmental awareness.",
+    "additional_information": [
+        "Resistant to poison damage and immune to the poisoned condition.",
+        "'Foul Odor' deters enemies from closing in effectively.",
+        "'Hunter's Dash' enhances mobility and attack capability for one round per day."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast with strong claws in the jungle",
+        "slow but powerful creature known for grappling",
+        "beast that uses foul odor to deter enemies",
+        "giant sloth with strong attacks and stunning abilities",
+        "jungle creature with impressive physical power"
+    ]
+}

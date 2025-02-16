@@ -1,0 +1,25 @@
+{
+    "name": "Pixie",
+    "queries": [
+        {
+            "query": "tiny fey creature with magical abilities and high agility",
+            "variant": "magical tiny fey creature with great agility"
+        },
+        {
+            "query": "playful creature that can become invisible and resist spells",
+            "variant": "invisible playful creature that resists magical effects"
+        },
+        {
+            "query": "small delicate fairy known for mischief and clever tactics",
+            "variant": "small fairy known for its clever mischief and tactics"
+        },
+        {
+            "query": "whimsical creature with a thorn dagger and flight capabilities",
+            "variant": "whimsical fey that uses a thorn dagger and can fly"
+        },
+        {
+            "query": "tiny creature that curses foes and grants magical blessings",
+            "variant": "small creature that gives magical blessings and curses enemies"
+        }
+    ]
+}

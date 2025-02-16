@@ -1,0 +1,54 @@
+{
+    "name": "Clockwork Conductor",
+    "creature_type": "Construct",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "standard walking speed of 30 feet",
+    "role": "Support",
+    "tags": [
+        "construct",
+        "support",
+        "magical resilience"
+    ],
+    "adjectives": [
+        "mechanical",
+        "precise",
+        "supportive"
+    ],
+    "description": "The Clockwork Conductor is a small, mechanical creature that provides support to allies through its unique abilities. It consists of metallic components and gears, embodying a precise and methodical appearance.",
+    "memorable": "The ability to treat an ally's d20 roll as a 10 significantly increases their chances of success.",
+    "goals": "To enhance the capabilities of its allies and occupy a supportive role on the battlefield.",
+    "relations": "Often found with other constructs or mechanical allies.",
+    "environment": "Can operate in various environments without the need for sustenance.",
+    "strengths": "Acts as a powerful support figure, enhancing allies' performance and providing magical resistance.",
+    "weaknesses": "Limited in direct combat capabilities due to low strength and constitution.",
+    "attacks": "Uses a conductive baton to deal bludgeoning and lightning damage, restricting the target's reactions.",
+    "most_powerful_ability": "Overclocked Finale provides a +5 bonus to attack rolls, damage rolls, and ability checks for allies.",
+    "senses": "Possesses darkvision up to 60 feet and has a passive perception score of 13.",
+    "skills": "Has proficiency in perception, allowing it to aid allies by spotting hidden threats.",
+    "additional_information": [
+        "Construct nature allows it to operate without air, food, drink, or sleep.",
+        "Immutable form grants immunity to form-altering spells.",
+        "Magic resistance provides advantage on saving throws against magical effects.",
+        "Metronomic aura enhances attack rolls and performance checks of nearby allies.",
+        "Inspiration through concerted effort enhances allies' effectiveness in combat."
+    ],
+    "damage_types": [
+        "lightning",
+        "poison",
+        "psychic",
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical support creature with aura",
+        "small construct that boosts allies",
+        "combat support machine with lightning damage",
+        "clockwork creature enhances ally attacks",
+        "supportive automaton in battle"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Dhampir",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 15,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "vampiric",
+        "charming",
+        "stealthy"
+    ],
+    "adjectives": [
+        "agile",
+        "charismatic",
+        "cunning"
+    ],
+    "description": "The Dhampir blends the lineage of vampires with humans, featuring notable agility and charm, and carries a rapier or shortbow for combat.",
+    "memorable": "Its ability to charm foes and regain health through necrotic attacks makes it a dangerous opponent.",
+    "goals": "The Dhampir generally seeks to manipulate situations to its advantage, often engaging in combat, charm, or stealth.",
+    "relations": "Dhampirs may be associated with undead creatures, vampires, or other humanoid beings.",
+    "environment": "Typically found in urban areas or places with darker influences.",
+    "strengths": "Possesses resistance to necrotic damage and advantages in Dexterity and Charisma-based checks.",
+    "weaknesses": "Lower health pool makes it susceptible to attacks despite its agility.",
+    "attacks": "Utilizes a rapier for close combat and a shortbow for ranged attacks, allowing for multiattacks and grappling.",
+    "most_powerful_ability": "Dark Thirst allows the Dhampir to regain health by inflicting necrotic damage to incapacitated foes.",
+    "equipment": "Rapier or shortbow may be used as weapons.",
+    "senses": "Passive Perception of 10 indicates a standard awareness.",
+    "skills": "Specializes in athletics, deception, persuasion, and stealth, excelling in tactical and social environments.",
+    "additional_information": [
+        "Advantage on saving throws against disease due to Undead Resistance.",
+        "Can charm one humanoid at a time for social manipulation.",
+        "Multiattack capability allows for versatile combat options.",
+        "Regains health through necrotic damage inflicted with Dark Thirst.",
+        "Charisma-based interactions are notably strong."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "agile humanoid with vampire abilities",
+        "charismatic creature that manipulates others",
+        "stealthy fighter with necrotic resistance",
+        "humanoid that charms opponents easily",
+        "vampiric humanoid with healing abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mud Golem",
+    "queries": [
+        {
+            "query": "small mud monster with strong defenses and slow movement",
+            "variant": "small monster of mud with strong defense and slow speed"
+        },
+        {
+            "query": "construct creature immune to poison and psychic attacks",
+            "variant": "creature construct that is immune to poison and psychic damage"
+        },
+        {
+            "query": "mud golem that can blind its enemies with a mud ball attack",
+            "variant": "mud golem capable of blinding foes using mud ball attack"
+        },
+        {
+            "query": "combat-oriented mud creature with resistance to non-magical damage",
+            "variant": "combat-focused mud creature resistant to nonmagical attacks"
+        },
+        {
+            "query": "sturdy small construct with a challenge rating of 1",
+            "variant": "durable small construct having a CR of 1"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Centaur Chieftain",
+    "queries": [
+        {
+            "query": "large centaur monster that leads in battle",
+            "variant": "big centaur creature that commands in combat"
+        },
+        {
+            "query": "chaotic neutral centaur with high strength and charge ability",
+            "variant": "chaotic chieftain centaur strong with a charge attack"
+        },
+        {
+            "query": "strong centaur with tactics and multiple attacks",
+            "variant": "powerful centaur that uses strategy and can attack multiple times"
+        },
+        {
+            "query": "monstrosity with impressive durability living in the forest",
+            "variant": "monstrous creature with great durability that resides in woods"
+        },
+        {
+            "query": "Centaurs that can lead allies and deal area damage",
+            "variant": "Centaurs that enhance teammates and can inflict area harm"
+        }
+    ]
+}

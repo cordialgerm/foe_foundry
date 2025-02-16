@@ -1,0 +1,52 @@
+{
+    "name": "Wolf, Dire",
+    "creature_type": "Beast",
+    "alignment": null,
+    "size": "Large",
+    "hp": 40,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "50 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "wolf",
+        "predator",
+        "beast"
+    ],
+    "adjectives": [
+        "formidable",
+        "ferocious",
+        "large"
+    ],
+    "description": "The Dire Wolf is a large, formidable predator with a powerful bite and keen senses, making it an effective hunter.",
+    "memorable": "Its Pack Tactics ability allows it to coordinate deadly attacks with allies.",
+    "goals": "To hunt and prey on creatures within its territory.",
+    "relations": "Often found in packs, hunting alongside other wolves.",
+    "environment": "Typically inhabits forests and wilderness areas.",
+    "strengths": "Good damage potential with high mobility and pack tactics.",
+    "weaknesses": "Low intelligence and charisma scores limit its problem-solving abilities.",
+    "attacks": "Bite attack deals significant piercing damage with a chance to knock targets prone.",
+    "most_powerful_ability": "Hungry Growl can frighten foes and set up advantageous attacks.",
+    "equipment": null,
+    "senses": "Heightened hearing and smell enhance its perception to 18 when hunting.",
+    "skills": "Stealthy creature with a high stealth score, allowing it to approach prey quietly.",
+    "additional_information": [
+        "Packs often hunt in groups for strategic advantages.",
+        "Frightening growl can disrupt enemy strategies.",
+        "Natural camouflage aids in stealthy approaches.",
+        "Strong physical capabilities make it durable in combat.",
+        "Effective at ambushing prey due to high speed."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large predatory wolf with pack tactics",
+        "wolf known for frightening growl ability",
+        "formidable hunter with keen senses",
+        "fast large beast with strong bite",
+        "predator that hunts in packs"
+    ]
+}

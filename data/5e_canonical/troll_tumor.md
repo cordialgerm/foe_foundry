@@ -1,6 +1,8 @@
 <MonsterName/>Troll, Tumor</MonsterName>
 <CreatureType/>Giant</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>125</HP>
 <summary>The Tumor Troll is a large chaotic evil giant characterized by its horrifying regenerative abilities and the chaos brought about by its unique teratomas. With a high number of hit points, it stands as a formidable adversary in battle, proving difficult to defeat unless targeted effectively with fire or acid. Its strength and vitality make it dangerous, while its low dexterity and intelligence present opportunities for smarter combat strategies. This creature thrives in chaotic encounters, constantly adapting through its unpredictable special abilities, which can significantly alter the dynamics of a fight.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the Tumor Troll is an unpredictable monster that thrives on chaos and r
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Troll, Tumor
 
 *Large* *Giant* *chaotic evil*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Fling Limb:** Ranged Weapon Attack: +7 to hit 20/60' one target 9 (2d4+4) bludgeoning damage + 7 (2d6) poison. Remove a teratoma from itself if it has one.
 
 
+</statblock>
 
 

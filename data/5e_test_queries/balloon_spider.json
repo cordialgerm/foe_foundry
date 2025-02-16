@@ -1,0 +1,25 @@
+{
+    "name": "Balloon Spider",
+    "queries": [
+        {
+            "query": "creature that hovers and delivers lightning damage",
+            "variant": "creature that delivers lightning damage and hovers"
+        },
+        {
+            "query": "ambush predator with a unique lightning ability",
+            "variant": "predator that ambushes and has a unique ability with lightning"
+        },
+        {
+            "query": "medium beast that grapples and inflicts lightning damage",
+            "variant": "beast that grapples and can inflict lightning damage, medium size"
+        },
+        {
+            "query": "spider that uses electric attacks and can hover",
+            "variant": "electric attack spider that hovers"
+        },
+        {
+            "query": "creature with blindsight that deals lightning damage",
+            "variant": "creature that deals lightning damage and has blindsight"
+        }
+    ]
+}

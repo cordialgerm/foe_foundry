@@ -1,0 +1,52 @@
+{
+    "name": "Lemure Band",
+    "creature_type": "Fiend",
+    "alignment": "Lawful Evil",
+    "size": "Large",
+    "hp": 67,
+    "ac": 7,
+    "srd": false,
+    "cr": "2",
+    "movement": "slow walking speed of 15 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "devil",
+        "undead"
+    ],
+    "adjectives": [
+        "large",
+        "menacing",
+        "resilient"
+    ],
+    "description": "The Lemure Band is a collective of menacing lemures, embodying dark fiendish presence, notable for their ability to split into multiple entities.",
+    "memorable": "Their ability to disperse into separate lemures when defeated makes them a continuous threat, challenging foes with high damage potential.",
+    "goals": "Typically seeks to intimidate and disrupt enemies, leveraging their numbers and abilities to create chaos.",
+    "relations": "Often associated with other devils or fiends and can work in groups for more impactful encounters.",
+    "environment": "Commonly found in infernal realms or areas tainted by evil.",
+    "strengths": "High damage potential, especially in numbers, and ability to create a sense of dread with their Eerie Groan.",
+    "weaknesses": "Vulnerable to area-of-effect attacks and has low Dexterity, making it less nimble.",
+    "attacks": "Melee attack using Fists, dealing substantial bludgeoning damage.",
+    "most_powerful_ability": "Band Dispersal allows it to split into separate lemures upon defeat, continuing to threaten enemies.",
+    "equipment": null,
+    "senses": "Possesses darkvision that penetrates magical darkness.",
+    "skills": "Has immunities to fire and poison, adding resilience against certain damage types.",
+    "additional_information": [
+        "Immunities to being poisoned and cold damage resistance.",
+        "Can share its space with smaller creatures.",
+        "Eerie Groan can disrupt enemy focus from a distance."
+    ],
+    "damage_types": [
+        "fire",
+        "poison",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dark fiendish collective of lemures",
+        "large fiend that splits into smaller devils",
+        "menacing monster with high damage potential",
+        "ambushing devils that frighten non-devils",
+        "area attack vulnerability in fiend creature"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Yali",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "medium",
+        "combat",
+        "strength"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "speedy"
+    ],
+    "description": "The Yali is a medium-sized construct, characterized by its high Strength and Constitution, featuring a rugged appearance akin to a statue. It has a solid build, able to blend in as a false statue while motionless.",
+    "memorable": "Excels in physical combat with its high Strength and ability to knock opponents prone through its Flinging Pounce ability.",
+    "goals": "Typically engages in direct combat, using its physical capabilities to overpower foes.",
+    "relations": "May serve as guardians or hired protection alongside similar constructs.",
+    "environment": "Found in places where constructs are employed, often as protectors or guardians.",
+    "strengths": "Immunity to poison and psychic damage, coupled with abilities that enhance combat effectiveness.",
+    "weaknesses": "Lacks strategic complexity due to low Intelligence, relies primarily on physical attributes.",
+    "attacks": "Utilizes tusk and claw attacks, with a strong focus on melee damage and a thunderous area attack.",
+    "most_powerful_ability": "Trumpeting Blast unleashes a powerful sound, causing thunder damage and deafening multiple foes.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 16, enabling it to detect hidden creatures effectively.",
+    "skills": "Possesses proficiency in perception, enhancing its ability to notice hidden elements in its surroundings.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep due to its construct nature.",
+        "Can leap long distances, making it agile in combat situations.",
+        "Can disguise itself as a statue while motionless, allowing for stealthy ambushes.",
+        "Resilient in battle with excellent armor and hit points.",
+        "Utilizes multiattack capabilities for increased damage output."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium construct with powerful melee attacks",
+        "statue-like creature that excels in combat",
+        "brutal construct that can knock foes down",
+        "Yali with thunderous sound attack",
+        "speedy Yali with extraordinary jumping ability"
+    ]
+}

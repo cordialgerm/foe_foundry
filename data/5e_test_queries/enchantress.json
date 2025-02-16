@@ -1,0 +1,25 @@
+{
+    "name": "Enchantress",
+    "queries": [
+        {
+            "query": "humanoid with magical charm and shadow teleportation abilities",
+            "variant": "humanoid that can teleport in shadows and uses magical charm"
+        },
+        {
+            "query": "creature sensitive to sunlight with high charisma",
+            "variant": "monster that is vulnerable to bright light and has a strong charisma"
+        },
+        {
+            "query": "intelligent spellcaster that manipulates opponents",
+            "variant": "spellcasting creature that excels in deception and manipulation"
+        },
+        {
+            "query": "lawful evil enchantress with psychic weapon damage",
+            "variant": "evil enchantress who deals extra psychic damage with weapons"
+        },
+        {
+            "query": "medium humanoid using beguiling whispers in combat",
+            "variant": "medium enchantress that employs charming whispers during battle"
+        }
+    ]
+}

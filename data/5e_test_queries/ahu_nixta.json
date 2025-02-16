@@ -1,0 +1,25 @@
+{
+    "name": "Ahu-Nixta",
+    "queries": [
+        {
+            "query": "mechanical aberration with darkvision and spellcasting abilities",
+            "variant": "darkvision spellcasting creature that is mechanical aberration"
+        },
+        {
+            "query": "large creature that can fly and swim with clockwork armor",
+            "variant": "creature that can swim and fly, wearing clockwork armor"
+        },
+        {
+            "query": "intelligent evil monster with damage immunities that can cast spells",
+            "variant": "evil creature that can cast spells and has immunities to damage"
+        },
+        {
+            "query": "threatening clockwork creature with a multiattack ability",
+            "variant": "multiattack capable threat with clockwork features"
+        },
+        {
+            "query": "vulnerable when exiting clockwork armor but powerful in battle",
+            "variant": "powerful in battle but vulnerable outside clockwork armor"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Library Automaton",
+    "queries": [
+        {
+            "query": "small construct that safeguards books and understands written languages",
+            "variant": "small construct that keeps books safe and understnads written languages"
+        },
+        {
+            "query": "magical guardian of libraries that can manipulate objects from a distance",
+            "variant": "magic guardian of libraries that manipulates objects from distance"
+        },
+        {
+            "query": "intelligent creature that uses extradimensional space to store written works",
+            "variant": "smart creature that stores written works in extradimensional space"
+        },
+        {
+            "query": "a construct that can perform tasks involving books and has an unnerving gaze",
+            "variant": "construct that can do tasks with books and has an unnerving stare"
+        },
+        {
+            "query": "creature immune to poison and psychic damage that assists in organizing knowledge",
+            "variant": "creature that is immune to poison and psychic damage and helps organize knowledge"
+        }
+    ]
+}

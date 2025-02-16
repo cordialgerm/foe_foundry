@@ -1,0 +1,25 @@
+{
+    "name": "Rattleback Troll",
+    "queries": [
+        {
+            "query": "large giant with poison attacks that regenerates health",
+            "variant": "big giant that has poisonous attacks and heals itself"
+        },
+        {
+            "query": "chaotic evil creature with darkvision that disrupts spellcasting",
+            "variant": "chaotic evil monster that has darkvision and interrupts casting spells"
+        },
+        {
+            "query": "troll known for venom spray that thrives in darkness",
+            "variant": "troll recognized for its venom spray and excels in dark areas"
+        },
+        {
+            "query": "Rattleback Troll with high physical stats and poison immunity",
+            "variant": "Rattleback Troll that boasts strong physical abilities and is immune to poison"
+        },
+        {
+            "query": "strong troll that can poison and heal itself in combat",
+            "variant": "powerful troll that can inflict poison and regain health during fights"
+        }
+    ]
+}

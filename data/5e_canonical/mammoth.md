@@ -1,6 +1,8 @@
 <MonsterName/>Mammoth</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>6</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>126</HP>
 <summary>A Mammoth is a massive, woolly beast resembling an enormous elephant with long, curved tusks. These creatures once roamed icy tundras and cold forests, using their tusks to dig through snow and ice to reach vegetation. Mammoths are powerful and resilient, able to crush enemies with their weight or gore them with their tusks. Despite their size, they are generally peaceful herbivores, but they will defend their herd or territory with ferocity if threatened. Mammoths are symbols of strength and endurance in many cultures, revered for their size and majesty.</summary>
 
 <summary>The Mammoth is a massive creature representing a powerful and persistent force on the battlefield. As a Huge Beast with significant hit points and a formidable challenge rating, it excels in melee combat, capable of dealing heavy damage through its physical attacks. With a strong Strength score of 24, it has exceptional modifiers for its attack rolls and damage, making it a reliable frontline fighter. However, its low Dexterity score indicates that it may struggle with agility and evasive maneuvers. Despite its strengths in raw power, the Mammoth's limited intelligence and charisma scores suggest that it may not be particularly adept in social interactions or complex strategies.</summary>
@@ -41,6 +43,7 @@ Overall, the mammoth is a powerful beast that excels in direct confrontations, u
 
 Source: 5e_srd
 
+<statblock>
 ### Mammoth
 
 *Huge beast, unaligned*
@@ -69,7 +72,8 @@ Source: 5e_srd
 
 ***Stomp***. *Melee Weapon Attack:* +10 to hit, reach 5 ft., one prone creature. *Hit:* 29 (4d10+7) bludgeoning damage.
 
-A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.
+A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.</statblock>
+
 
 
 
@@ -77,6 +81,7 @@ A **mammoth** is an elephantine creature with thick fur and long tusks. Stockier
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mammoth
 
 *Huge* *Beast*
@@ -106,6 +111,7 @@ Source: 5e_artisinal_monsters
 - **Trunk Fling:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d6+7) bludgeoning damage. If the target is a Large or smaller creature, it is pushed 10 feet away from the mammoth and knocked prone.
 
 
+</statblock>
 
 
 
@@ -114,6 +120,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mammoth
 
 *Huge beast*
@@ -147,5 +154,6 @@ Source: 5e_artisinal_monsters
 
 - **Trunk Grab.** The mammoth grabs one Large or smaller creature within 10 feet of it. The target must succeed on a DC 17 STR save or be grappled (escape DC 17). Until this grapple ends, the target is restrained, and the mammoth can’t use Trunk Grab on another creature.
 
+</statblock>
 
 

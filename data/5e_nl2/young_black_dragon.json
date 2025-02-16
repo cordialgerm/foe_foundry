@@ -1,0 +1,52 @@
+{
+    "name": "Young Black Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 136,
+    "ac": 18,
+    "srd": true,
+    "cr": "7",
+    "movement": "walk 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "ambush",
+        "acid"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "ruthless"
+    ],
+    "description": "The Young Black Dragon has glossy black scales resembling wet obsidian and is known for its acidic breath that can melt armor and flesh. It is a fierce predator that excels in swampy, decaying environments, utilizing ambush tactics.",
+    "memorable": "The Young Black Dragon's ability to blind opponents with its Acid Breath and its agility in water makes it a fearsome foe.",
+    "goals": "To protect its hoard and hunting grounds and terrorize its territory.",
+    "relations": "Related to other chromatic dragons and often feared by local wildlife and adventurers.",
+    "environment": "Swamps and decaying areas.",
+    "strengths": "Immunity to acid damage, deadly ambusher, and high damage potential.",
+    "weaknesses": "Can be vulnerable when its Acid Breath is on cooldown and relies on environmental factors.",
+    "attacks": "Multiattack includes a bite that deals piercing damage and claw attacks that deliver slashing damage.",
+    "most_powerful_ability": "Acid Breath, which can deal significant damage and blind affected creatures.",
+    "equipment": null,
+    "senses": "The Young Black Dragon has blindsight up to 30 feet, allowing it to detect creatures without needing light.",
+    "skills": "Proficient in stealth, making it difficult to detect while ambushing",
+    "additional_information": [
+        "Ambusher trait grants advantage on Stealth checks in water.",
+        "Amphibious trait allows it to breathe air and water.",
+        "Ruthless ability allows for a follow-up attack after a critical hit.",
+        "Acidic Vapors create a dangerous zone around the dragon after using Acid Breath.",
+        "Can innately cast fog cloud and pass without trace to enhance stealth."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": "Innate spellcasting includes fog cloud and pass without trace, enhancing tactical advantages in combat.",
+    "test_queries": [
+        "black dragon that breathes acid",
+        "formidable dragon in swampy environment",
+        "cunning black dragon with ambush tactics",
+        "dragon with acidic breath and keen senses",
+        "young black dragon known for ruthlessness"
+    ]
+}

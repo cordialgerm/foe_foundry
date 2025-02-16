@@ -1,0 +1,25 @@
+{
+    "name": "Wind Demon",
+    "queries": [
+        {
+            "query": "small fiend with unique ranged defense abilities",
+            "variant": "small fiend that has unique abilities for defending against ranged attacks"
+        },
+        {
+            "query": "chaotic evil creature that is immune to cold and poison",
+            "variant": "chaotic evil entity immune to both cold and poison damage"
+        },
+        {
+            "query": "wind demon with high dexterity and stealth skills",
+            "variant": "wind demon that possesses high nimbleness and stealth abilities"
+        },
+        {
+            "query": "fiend that flies and can reflect ranged attacks",
+            "variant": "fiendish creature that has the ability to fly and reflects ranged strikes"
+        },
+        {
+            "query": "creature communicating in abyssal and common language",
+            "variant": "being that can speak in abyssal and common tongues"
+        }
+    ]
+}

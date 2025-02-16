@@ -1,0 +1,50 @@
+{
+    "name": "Zanskaran Viper",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 34,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "predator",
+        "poisonous"
+    ],
+    "adjectives": [
+        "formidable",
+        "dangerous"
+    ],
+    "description": "The Zanskaran Viper is a large, formidable beast with exceptional physical strength and a powerful bite.",
+    "memorable": "Its bite has a debilitating poison effect that can blind prey.",
+    "goals": "To hunt and incapacitate its prey.",
+    "relations": "Related to various other large predatory beasts.",
+    "environment": "Typically found in areas conducive to ambush hunting.",
+    "strengths": "High Constitution and a potent poisonous bite.",
+    "weaknesses": "Low intelligence and charisma, making it basic in strategy.",
+    "attacks": "Powerful bite that can deal piercing damage and cause poison.",
+    "most_powerful_ability": "The ability to poison its prey, leading to blindness and additional damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Has a strong physical attack capability.",
+        "Requires a DC 13 Constitution saving throw to resist its poison.",
+        "Can deal additional poison damage while the target is poisoned.",
+        "Is primarily a predator, relying on ambush tactics.",
+        "Non-social creature, driven by instinct."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large poisonous snake with a deadly bite",
+        "predatory viper that blinds its prey",
+        "dangerous beast with stunning poison attack",
+        "formidable snake that attacks from ambush",
+        "creature with debilitating poisoned bite"
+    ]
+}

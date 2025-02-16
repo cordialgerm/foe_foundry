@@ -1,0 +1,54 @@
+{
+    "name": "Ouroban",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 209,
+    "ac": 18,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "spellcaster",
+        "melee"
+    ],
+    "adjectives": [
+        "formidable",
+        "ruthless",
+        "spellcasting",
+        "poisonous"
+    ],
+    "description": "The Ouroban is a formidable humanoid, clad in protective plate armor, wielding a greatsword and carrying a heavy crossbow, known for its fire-based abilities and intimidating presence.",
+    "memorable": "The Ouroban can absorb fire damage to heal itself, making it a dangerous foe, especially in fiery combat situations.",
+    "goals": "To dominate foes through intimidation and ruthless efficiency in combat, leveraging its spellcasting and fire abilities.",
+    "relations": "Possibly serves dark powers or beings associated with fire and poison, and may be encountered alongside other evil entities.",
+    "environment": "Typically found in shadowy locales or battlefields, areas infused with dark magic or fire.",
+    "strengths": "Exceptional physical strength, robust spellcasting capabilities, and immunity to fire damage.",
+    "weaknesses": "Limited speed and agility, with average dexterity affecting its maneuverability.",
+    "attacks": "Three melee attacks with a greatsword delivering slashing and fire damage.",
+    "most_powerful_ability": "Abyssal Fires allows the Ouroban to summon damaging and debilitating flames under its foes.",
+    "equipment": "Greatsword and heavy crossbow",
+    "senses": null,
+    "skills": "Skilled in athletics and intimidation, showcasing its physical prowess and ability to intimidate others.",
+    "additional_information": [
+        "Immune to fire damage and cannot be poisoned.",
+        "Uses necrotic damage in addition to its regular attacks after using its Devastate ability.",
+        "Has a variety of control spells, enhancing its presence in battle.",
+        "Fire Breath attack that can damage multiple targets.",
+        "A tactical spellcaster with potent area control abilities."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": "14th-level spellcaster with a variety of paladin spells focused on healing, control, and fire damage.",
+    "test_queries": [
+        "formidable fire-absorbing humanoid",
+        "humanoid that uses necrotic and fire damage",
+        "ruthless spellcaster with greatsword",
+        "creature summoning poisonous green flames",
+        "intimidating humanoid with heavy armor"
+    ]
+}

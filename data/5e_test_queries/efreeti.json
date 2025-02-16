@@ -1,0 +1,25 @@
+{
+    "name": "Efreeti",
+    "queries": [
+        {
+            "query": "large fire elemental with a flaming appearance and high intelligence",
+            "variant": "large elemental of fire with flames and great intellect"
+        },
+        {
+            "query": "fiery creature that can summon fire elementals and create walls of flame",
+            "variant": "flame creature able to call fire elementals and generate fire walls"
+        },
+        {
+            "query": "muscular humanoid with molten bronze skin that resides in cities of brass",
+            "variant": "strong humanoid with bronze skin living in brass cities"
+        },
+        {
+            "query": "giant monster that uses fire magic and boasts high strength and constitution",
+            "variant": "big creature with fire spells and strong health and might"
+        },
+        {
+            "query": "genie from the Elemental Plane of Fire that enjoys cruelty and has darkvision",
+            "variant": "fire plane genie that delights in suffering and possesses darkvision"
+        }
+    ]
+}

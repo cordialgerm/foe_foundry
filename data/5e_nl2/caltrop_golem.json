@@ -1,0 +1,53 @@
+{
+    "name": "Caltrop Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "walking speed of 30 feet",
+    "role": "Controller",
+    "tags": [
+        "golem",
+        "construct",
+        "ambusher"
+    ],
+    "adjectives": [
+        "medium",
+        "stealthy",
+        "defensive",
+        "offensive"
+    ],
+    "description": "The Caltrop Golem appears as a pile of caltrops, indistinguishable from an ordinary one when scattered. It is agile and capable of ambush tactics, utilizing its environment effectively.",
+    "memorable": "It can scatter itself and reform, controlling the battlefield with caltrops and dealing damage to foes who traverse its area.",
+    "goals": "To ambush adversaries and control the battlefield by immobilizing enemies.",
+    "relations": "Constructs and other golems, potentially created by a wizard or artificer.",
+    "environment": "Typically found in ruins or places where it can surprise intruders.",
+    "strengths": "High Dexterity grants exceptional stealth and an advantageous position in combat.",
+    "weaknesses": "Vulnerable to adamantine weapons and unable to act while scattered.",
+    "attacks": "Utilizes two slam attacks for piercing damage or attacks at range with Steel Shot.",
+    "most_powerful_ability": "Scattershot can deal significant damage to multiple enemies and knock them prone.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 30 feet, enhancing its ability to detect movement nearby.",
+    "skills": "Skilled in stealth with a +7 modifier, making it difficult to detect.",
+    "additional_information": [
+        "Can reform itself if scattered and has hit points remaining.",
+        "Ambusher ability grants advantage on attacks against surprised foes.",
+        "Magic Resistance provides advantage on saves against spells.",
+        "Can create an area of control with its caltrops.",
+        "False Appearance allows it to blend into surroundings while scattered."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that controls the battlefield with caltrops",
+        "stealthy golem that ambushes foes",
+        "medium creature with the ability to scatter",
+        "golem that explodes in an area and knocks foes prone",
+        "caltrop golem ambusher tactics"
+    ]
+}

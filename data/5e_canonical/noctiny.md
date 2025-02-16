@@ -1,6 +1,8 @@
 <MonsterName/>Noctiny</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>2</CR>
+<AC/>13 (studded leather)</AC>
+<HP/>52</HP>
 <summary>The Noctiny is a medium-sized humanoid of neutral evil alignment, making it a cunning and unpredictable adversary in combat. With its notable roster of abilities, it serves as a formidable opponent, particularly in magical confrontations. The Noctiny features a good Armor Class of 13 and has 52 hit points, placing it in a solid position for resilience. Its primary strengths include Eldritch Weapons, which augment its damage output significantly, and Magic Resistance, granting it an advantage against spells. However, its lack of advanced skills or special senses might leave it vulnerable in certain scenarios. Overall, the Noctiny embodies a blend of potent offense, decent defense, and strategic magical advantages.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Noctiny can perform a Multiattack, allowing it to make 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Noctiny
 
 *Medium* *Humanoid* *Neutral Evil*
@@ -46,5 +49,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The noctiny makes two Quarterstaff or Eldritch Fury attacks.
 - **Quarterstaff:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, or 7 (1d8 + 3) bludgeoning damage if used in two hands, plus 3 (1d6) force damage.
 - **Eldritch Fury:** Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 10 (2d6 + 3) force damage.
+</statblock>
 
 

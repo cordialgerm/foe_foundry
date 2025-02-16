@@ -1,0 +1,53 @@
+{
+    "name": "Yathon",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 152,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "flying",
+        "grappler",
+        "melee"
+    ],
+    "adjectives": [
+        "strong",
+        "aerial",
+        "formidable"
+    ],
+    "description": "The Yathon is a large humanoid creature, characterized by its impressive physical appearance and strong presence. It boasts powerful claws and wields a greatsword.",
+    "memorable": "The Yathon's ability to grapple and automatically hit restrained foes makes it a dangerous combatant.",
+    "goals": "Typically seeks to dominate smaller foes in battle through grappling and powerful attacks.",
+    "relations": "Might be encountered alongside other humanoid warriors or creatures that share a similar physical prowess.",
+    "environment": "Often found in rugged terrains, likely in areas where it can utilize its aerial capabilities.",
+    "strengths": "Exceptional strength (21) allows for devastating melee attacks, while its blindsight grants it effective detection abilities.",
+    "weaknesses": "Vulnerable when deafened, as it loses its blindsight and echolocation abilities.",
+    "attacks": "Utilizes powerful claw strikes and greatsword attacks, capable of inflicting significant slashing damage.",
+    "most_powerful_ability": "Precognition allows it to anticipate attacks and react defensively against melee assaults.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures without reliance on sight unless deafened.",
+    "skills": "Has an average passive perception of 13, enabling it to perceive hidden creatures and objects.",
+    "additional_information": [
+        "Uses Multiattack to strike multiple times in a turn",
+        "Grapples smaller enemies with a successful claw hit",
+        "Can reroll its attack if it misses using Precognition",
+        "Noted for a lack of social skills due to low charisma",
+        "Rapidly maneuvers in combat using flying speed"
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large humanoid with powerful claws",
+        "creature that grapples and restrains enemies",
+        "flying bruiser with blindsight",
+        "strong humanoid wielding a greatsword",
+        "monster that anticipates attacks in combat"
+    ]
+}

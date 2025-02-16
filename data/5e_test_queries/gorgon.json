@@ -1,0 +1,25 @@
+{
+    "name": "Gorgon",
+    "queries": [
+        {
+            "query": "large bull-like creature with metallic scales and petrifying attack",
+            "variant": "bull like large creature with metal scales and petrifying attack"
+        },
+        {
+            "query": "strong monster that can turn opponents to stone with gas",
+            "variant": "powerful creature that turns foes into stone with gas"
+        },
+        {
+            "query": "territorial creature found in remote forests with toxic breath",
+            "variant": "territorial beast found in distant forests with poisonous breath"
+        },
+        {
+            "query": "monstrosity with high physical strength and low intelligence",
+            "variant": "creature with high strength and low intellect"
+        },
+        {
+            "query": "creature that charges at intruders and uses petrifying gas",
+            "variant": "creature that rushes at intruders and exhales petrifying gas"
+        }
+    ]
+}

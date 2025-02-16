@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Mandriano",
+    "queries": [
+        {
+            "query": "huge plant creature with necrotic damage abilities",
+            "variant": "huge plant monster with necrotic damage powers"
+        },
+        {
+            "query": "lawful evil plant that animates dead bodies",
+            "variant": "lawful evil creature that brings dead back to life"
+        },
+        {
+            "query": "fire vulnerable plant monster that grapples enemies",
+            "variant": "fire weak plant being that can grasp foes"
+        },
+        {
+            "query": "formidable plant that drains life essence",
+            "variant": "powerful plant creature that steals life force"
+        },
+        {
+            "query": "creature with multiattack and siege abilities in combat",
+            "variant": "monster with multi attack and siege skills in battle"
+        }
+    ]
+}

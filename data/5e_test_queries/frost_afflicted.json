@@ -1,0 +1,25 @@
+{
+    "name": "Frost-Afflicted",
+    "queries": [
+        {
+            "query": "humanoid creature immune to cold damage with ice abilities",
+            "variant": "humanoid that has ice powers and immune to cold attack"
+        },
+        {
+            "query": "medium-sized monster with cold attack and frigid response",
+            "variant": "monster of medium size that attacks with cold and reacts with ice"
+        },
+        {
+            "query": "chaotic neutral ice creature that requires less food",
+            "variant": "chaotic neutral creature that needs less food and has ice abilities"
+        },
+        {
+            "query": "Frost-Afflicted's ice-based attacks and cold immunity",
+            "variant": "ice attacks of Frost-Afflicted and its immunity to cold"
+        },
+        {
+            "query": "cold damage dealing humanoid that is good at perception",
+            "variant": "humanoid that deals cold damage and is skilled in perception"
+        }
+    ]
+}

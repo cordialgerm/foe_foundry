@@ -1,0 +1,53 @@
+{
+    "name": "Wraith Bear",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 133,
+    "ac": 13,
+    "srd": false,
+    "cr": "9",
+    "movement": "hover 0 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "necrotic",
+        "bear"
+    ],
+    "adjectives": [
+        "terrifying",
+        "chaotic",
+        "formidable",
+        "regenerating"
+    ],
+    "description": "A large, spectral bear that embodies chaos, with a menacing appearance rooted in its status as an undead creature.",
+    "memorable": "The Wraith Bear's ability to drain life and regenerate health makes it a terrifying encounter.",
+    "goals": "To drain the life from living beings and assert dominance in its territory.",
+    "relations": "Typically solitary, but may be related to undead entities or cursed creatures.",
+    "environment": "Often found in murky, cursed woods or battlefields where life has been drained.",
+    "strengths": "Regenerates health from nearby living plants and can incapacitate with its roar.",
+    "weaknesses": "Vulnerable to silvered weapons and magical attacks, alongside being affected by certain spells.",
+    "attacks": "Life Drain attack that deals significant necrotic damage and reduces maximum Hit Points.",
+    "most_powerful_ability": "Baleful Roar can incapacitate multiple foes, swaying the tide of battle.",
+    "senses": "Possesses keen perception with a passive score of 17, allowing it to detect nearby threats effectively.",
+    "skills": "Skilled in perception and survival, making it a dangerous predator.",
+    "additional_information": [
+        "Immune to necrotic and poison damage",
+        "Condition immunity to charm and paralysis",
+        "Can move through objects as difficult terrain",
+        "Draining regeneration destroys nearby plants",
+        "Life drain potentially reduces maximum Hit Points"
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large undead bear with life-draining abilities",
+        "terrifying spectral bear found in cursed woods",
+        "chaotic necrotic creature capable of regeneration",
+        "bear that can incapacitate enemies with roar",
+        "undead that drains life and flies through walls"
+    ]
+}

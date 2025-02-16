@@ -1,0 +1,52 @@
+{
+    "name": "Nihilethic Zombie",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 37,
+    "ac": 8,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "void",
+        "zombie"
+    ],
+    "adjectives": [
+        "eerie",
+        "resilient",
+        "decayed",
+        "dark"
+    ],
+    "description": "A medium-sized undead creature connected to the void, characterized by its eerie presence and decay. It can switch between a physical undead form and a ghostly void form.",
+    "memorable": "The Nihilethic Zombie's ability to shift between forms and its Undead Fortitude makes it a formidable opponent that can endure combat longer than usual zombies.",
+    "goals": "Primarily to serve its nihileth master and perpetuate decay and darkness.",
+    "relations": "Typically found alongside nihileths or other void-related undead.",
+    "environment": "Often encountered in dark, decaying areas or places filled with void energy.",
+    "strengths": "Resistant to nonmagical physical damage in ghost form, immune to cold, necrotic, and poisonous damage types.",
+    "weaknesses": "Vulnerable to radiant damage, making it particularly weak against light-based attacks.",
+    "attacks": "The Nihilethic Zombie uses a melee slam attack in its undead form, dealing both bludgeoning and necrotic damage, or a withering touch attack in ghost form, primarily dealing necrotic damage.",
+    "most_powerful_ability": "Undead Fortitude allows it to avoid being reduced to 0 hit points from damage, instead dropping to 1 hit point.",
+    "senses": "Passive Perception of 8, indicating a low level of alertness to surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Can be switched between Undead and Void Ghost forms at will.",
+        "Ignores limitations of air, food, drink, or sleep.",
+        "Suffers force damage if it ends its turn inside an object while in ghost form.",
+        "Can transfer life force to a nihileth, sacrificing its own hit points.",
+        "Has a low armor class, making it susceptible to attacks despite its hit points."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that shifts forms",
+        "void-themed zombie with unique abilities",
+        "zombie that serves a nihileth master",
+        "eerie creature with necrotic attacks",
+        "zombie vulnerable to radiant damage"
+    ]
+}

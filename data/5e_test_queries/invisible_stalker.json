@@ -1,0 +1,25 @@
+{
+    "name": "Invisible Stalker",
+    "queries": [
+        {
+            "query": "invisible elemental that tracks targets across distances",
+            "variant": "elemental that is invisible and tracks targets over long distances"
+        },
+        {
+            "query": "medium air creature that can fly and is nearly undetectable",
+            "variant": "medium creature of air that flies and is hard to detect"
+        },
+        {
+            "query": "stealthy spirit that can ambush enemies and is immune to poison",
+            "variant": "ambushing spirit that is stealthy and immune to poison damage"
+        },
+        {
+            "query": "monster known for its tracking ability that can easily navigate around enemies",
+            "variant": "creature recognized for tracking that can navigate past foes easily"
+        },
+        {
+            "query": "creature that doesn't need air or sleep and has high stealth skills",
+            "variant": "monster that requires no air or sleep and possesses high stealth capabilities"
+        }
+    ]
+}

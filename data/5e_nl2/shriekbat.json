@@ -1,0 +1,52 @@
+{
+    "name": "Shriekbat",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 178,
+    "ac": 15,
+    "srd": false,
+    "cr": "9",
+    "movement": "fly 100 ft., walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "thunder",
+        "sound",
+        "flying",
+        "grappler"
+    ],
+    "adjectives": [
+        "huge",
+        "formidable",
+        "primal"
+    ],
+    "description": "The Shriekbat is a huge monstrosity with impressive combat capabilities and sound-based attacks. It has a powerful bite and talons, along with a unique shriek ability that can stun and damage foes.",
+    "memorable": "Notable for its devastating sound attacks and grappling talons, as well as an impressive strength score.",
+    "goals": "Ambush prey and dominate the battlefield using sound-based attacks.",
+    "relations": "May be found in the company of other monstrous creatures or in areas with abundant prey.",
+    "environment": "Typically found in dark caverns or locations with ample flying space.",
+    "strengths": "Excels in melee damage and area-of-effect sound attacks, immune to thunder damage.",
+    "weaknesses": "Low Intelligence, Wisdom, and Charisma, which limits its strategic capabilities.",
+    "attacks": "Makes two attacks per turn: a powerful bite for piercing damage and grappling talons for slashing damage.",
+    "most_powerful_ability": "The Shriek ability emits a devastating cone of sound that can deal extensive damage and stun enemies.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense surroundings unless deafened.",
+    "skills": "Proficient in Stealth, making it capable of ambushing unsuspecting prey.",
+    "additional_information": [
+        "Immune to thunder damage.",
+        "Can grapple targets with talons, restraining them.",
+        "Uses echolocation as a means of perception.",
+        "Average passive perception.",
+        "Deals significant area damage with a risk of stunning."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge flying monster that screams loud",
+        "monstrous bat with thunder abilities",
+        "creature that grapples with talons and shrieks",
+        "ambush predator immune to thunder damage",
+        "primal beast that attacks with sound"
+    ]
+}

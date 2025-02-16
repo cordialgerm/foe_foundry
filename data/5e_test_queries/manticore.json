@@ -1,0 +1,25 @@
+{
+    "name": "Manticore",
+    "queries": [
+        {
+            "query": "predatory lion-like monster with bat wings and human-like face",
+            "variant": "predatory lion monster with wings and a human face"
+        },
+        {
+            "query": "aggressive monster that uses tail spikes and can fly",
+            "variant": "aggressive creature that flies and attacks with tail spikes"
+        },
+        {
+            "query": "large creature that hunts from the air and attacks with claws",
+            "variant": "big beast that sweeps down from the sky to claw at prey"
+        },
+        {
+            "query": "cunning predator with the ability to mimic voices and shoot spikes",
+            "variant": "clever monster that can imitate sounds and launch spikes"
+        },
+        {
+            "query": "mountain-dwelling monster known for its cruelty and hunger for flesh",
+            "variant": "creature that lives in mountains and is viciously hungry for flesh"
+        }
+    ]
+}

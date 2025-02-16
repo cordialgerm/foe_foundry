@@ -1,0 +1,25 @@
+{
+    "name": "Skitterhaunt",
+    "queries": [
+        {
+            "query": "large ooze creature that infests other beasts and deals acid damage",
+            "variant": "big ooze monster that infests beasts and does acid damage"
+        },
+        {
+            "query": "creature that transforms into a smaller ooze when reduced to zero hit points",
+            "variant": "monster that changes into a small ooze when at zero hit points"
+        },
+        {
+            "query": "acid-spraying ooze that grapples medium or smaller creatures",
+            "variant": "ooze that sprays acid and can grapple medium or smaller foes"
+        },
+        {
+            "query": "creature with a high constitution and low intelligence that can infect others",
+            "variant": "monster with high constitution and low intelligence that can infest"
+        },
+        {
+            "query": "Skitterhaunt abilities including Vermin Encasement and Broken Shell",
+            "variant": "Skitterhaunt's powers like Vermin Encasement and Broken Shell"
+        }
+    ]
+}

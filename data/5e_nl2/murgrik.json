@@ -1,0 +1,54 @@
+{
+    "name": "Murgrik",
+    "creature_type": "Aberration",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 152,
+    "ac": 18,
+    "srd": false,
+    "cr": "9",
+    "movement": "swim 40 ft., fly 20 ft., walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "aberration",
+        "flying",
+        "psychic",
+        "grappler",
+        "swimming"
+    ],
+    "adjectives": [
+        "formidable",
+        "disturbing",
+        "chaotic"
+    ],
+    "description": "Murgrik is a large, disturbing aberration with a remarkable capacity for movement, possessing multiple tentacles that allow it to fly and swim with ease.",
+    "memorable": "Its unsettling ululations can frighten foes, and its ability to swallow smaller creatures makes it a relentless predator.",
+    "goals": "Murgrik typically seeks to overpower and devour its prey, using psychological tactics to gain the upper hand in combat.",
+    "relations": "Murgrik may be found lurking in dark, aquatic environments, possibly serving as a guardian for greater fiends or aberrations.",
+    "environment": "Usually found in dark waters or environments that allow for quick movement and ambush tactics.",
+    "strengths": "High mobility, blood frenzy increases attack efficiency against wounded foes, and powerful psychic attack.",
+    "weaknesses": "Low intelligence and charisma make it vulnerable in social situations and tactics that require clever negotiation.",
+    "attacks": "Employs a vicious multiattack with a bite and tentacles, capable of grappling and swallowing smaller creatures.",
+    "most_powerful_ability": "Unsettling Ululations creates a fear-inducing wail that can damage and frighten multiple enemies around it.",
+    "senses": "Possesses keen smell, granting it advantage on perception checks relying on scent.",
+    "skills": "Noteworthy in athletics and perception, making it capable of both physical pursuits and detection.",
+    "additional_information": [
+        "Ability to hold breath underwater for up to 30 minutes.",
+        "Can swallow creatures it grapples, inflicting acid damage over time.",
+        "Blood frenzy grants advantage on attack rolls against wounded foes.",
+        "Tentacles can grapple and restrict movement of small or medium targets.",
+        "Possesses a significant physical power with a high strength score."
+    ],
+    "damage_types": [
+        "psychic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "flying creature that uses tentacles to attack",
+        "aquatic monster that swallows and restrains prey",
+        "psychic wailing monster with tentacle flight",
+        "large aberration with blood frenzy ability",
+        "fear inducing creature lurking in dark waters"
+    ]
+}

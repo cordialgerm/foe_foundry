@@ -1,0 +1,25 @@
+{
+    "name": "Riding Horse",
+    "queries": [
+        {
+            "query": "large domesticated beast used for transportation",
+            "variant": "big domesticated beast for transport"
+        },
+        {
+            "query": "horse with high strength that can travel fast",
+            "variant": "horse that has high strength and travels quickly"
+        },
+        {
+            "query": "non-aggressive horse that can be easily spooked",
+            "variant": "not aggressive horse that gets scared easily"
+        },
+        {
+            "query": "mount for adventurers known for endurance",
+            "variant": "mount for adventurers that's famous for stamina"
+        },
+        {
+            "query": "Riding Horse abilities and uses in adventures",
+            "variant": "Riding Horse skills and how it's used in adventures"
+        }
+    ]
+}

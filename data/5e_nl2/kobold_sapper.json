@@ -1,0 +1,53 @@
+{
+    "name": "Kobold, Sapper",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Small",
+    "hp": 66,
+    "ac": 15,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 30 ft., burrow 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "ambush",
+        "explosives",
+        "trap-master"
+    ],
+    "adjectives": [
+        "cunning",
+        "resourceful",
+        "agile"
+    ],
+    "description": "The Kobold Sapper is a small humanoid with exceptional agility and cunning, often engaged in sabotage and tactical ambushes. It wears studded leather armor and relies on traps and explosives.",
+    "memorable": "The Sapper excels in setting traps and using explosives to manipulate the battlefield, with a knack for group tactics and ambush strategies.",
+    "goals": "Typically seeks to ambush enemies or sabotage structures, often working in concert with its tribe.",
+    "relations": "Usually found among other kobolds, often working as part of a tribe and may be accompanied by allies to enhance its tactics.",
+    "environment": "Prefers darker environments where it can exploit its sunlight sensitivity, often found in caves or underground.",
+    "strengths": "Possesses exceptional Dexterity and Intelligence, enabling it to evade attacks, set traps, and strike with precision.",
+    "weaknesses": "Suffers from Sunlight Sensitivity, making it ineffective in bright light.",
+    "attacks": "Utilizes multiattack with Mining Picks, and can throw explosives to deal area damage.",
+    "most_powerful_ability": "Explosive Charge allows it to deal devastating damage in a large area and push enemies away.",
+    "equipment": "Wields Mining Picks and has access to various explosive devices.",
+    "senses": "Has a passive perception of 13, enhancing its ability to detect traps and ambushes.",
+    "skills": "Has advantage on ability checks for picking locks and detecting traps due to its Crafty trait.",
+    "additional_information": [
+        "Utilizes tactical group combat with Pack Tactics.",
+        "Can effectively double damage to structures as a Siege Monster.",
+        "Possesses an Evasion ability to avoid damage from area effects.",
+        "Can delay the detonation of explosives for strategic advantage.",
+        "Excels in intelligence-related tasks, making it a cunning adversary."
+    ],
+    "damage_types": [
+        "force",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning sapper ambush tactics",
+        "small explosive-using kobold",
+        "traps and explosives in dark areas",
+        "agile kobold that excels in sabotage",
+        "resourceful creature attacking fortifications"
+    ]
+}

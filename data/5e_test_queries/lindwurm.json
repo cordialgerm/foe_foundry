@@ -1,0 +1,25 @@
+{
+    "name": "Lindwurm",
+    "queries": [
+        {
+            "query": "large dragon that thrives in icy environments with a disease-inflicting bite",
+            "variant": "big dragon living in ice with a bite that causes disease"
+        },
+        {
+            "query": "neutral evil dragon with immunity to cold and vulnerability to fire",
+            "variant": "dragon that is neutral evil, immune to cold, and weak against fire"
+        },
+        {
+            "query": "strong dragon skilled in acrobatics and stealth that can move easily on snow",
+            "variant": "powerful dragon good at acrobatics and stealth able to walk easily on snow"
+        },
+        {
+            "query": "ice monster with grappling ability and a poisonous bite attack",
+            "variant": "frozen monster that can grapple and has a bite that poisons"
+        },
+        {
+            "query": "dragon with high dexterity and a multiattack option that uses claws and bites",
+            "variant": "dragon that has a lot of dexterity and can attack multiple times using claws and bites"
+        }
+    ]
+}

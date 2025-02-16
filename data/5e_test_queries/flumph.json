@@ -1,0 +1,25 @@
+{
+    "name": "Flumph",
+    "queries": [
+        {
+            "query": "small telepathic amphibious creature that emits light",
+            "variant": "small amphibious creature that emits light and has telepathy"
+        },
+        {
+            "query": "quirky creature with weak strength and a stench ability",
+            "variant": "quirky monster with low strength and an ability to spray stench"
+        },
+        {
+            "query": "aberration that can swim and communicate telepathically",
+            "variant": "amphibious aberration with telepathic communication abilities"
+        },
+        {
+            "query": "stealthy creature that can glow and has a low challenge rating",
+            "variant": "creature with low challenge rating that can glow and is stealthy"
+        },
+        {
+            "query": "small aberration with average armor class and special abilities",
+            "variant": "aberration with average AC and unique special abilities"
+        }
+    ]
+}

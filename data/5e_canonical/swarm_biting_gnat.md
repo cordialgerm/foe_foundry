@@ -1,6 +1,8 @@
 <MonsterName/>Swarm, Biting Gnat</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>16</HP>
 <summary>The Swarm of Biting Gnats is a Medium unaligned beast known for its ability to create chaos on the battlefield through numbers rather than singular strength. With a challenge rating of 1/4, it is relatively weak in terms of hit points and combat durability, but its strengths lie in its special abilities and swarm tactics. The gnat swarm can effectively distract and debilitate opponents while inflicting minor piercing damage through bites. Although it has a poor constitution, its dexterity allows it to be nimble, and it can evade many types of damage. However, the swarm’s low strength and reliance on numbers make it vulnerable to area-of-effect attacks and spells that can clear or harm the swarm at once.</summary>
 
 <detail>
@@ -29,6 +31,7 @@ Overall, the Swarm of Biting Gnats excels in numbers providing debilitating dist
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swarm, Biting Gnat
 
 *Medium* *Beast* *unaligned*
@@ -60,5 +63,6 @@ Source: 5e_artisinal_monsters
 - **Bites:** Melee Weapon Attack: +5 to hit 0' 1 tgt in the swarm’s space. 5 (2d4) piercing damage or 2 (1d4) piercing damage if the swarm has half its hp or fewer. The target must make DC 11 Con save or become blinded for 1 min. The target can re-save at end of each of its turns success ends effect on itself. Alternatively target can use action to clear its eyes of the insects ending effect.
 
 
+</statblock>
 
 

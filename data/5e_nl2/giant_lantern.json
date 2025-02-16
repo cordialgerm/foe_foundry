@@ -1,0 +1,54 @@
+{
+    "name": "Giant Lantern",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 225,
+    "ac": 16,
+    "srd": false,
+    "cr": "12",
+    "movement": "walk 40 ft., swim 60 ft.",
+    "role": null,
+    "tags": [
+        "giant",
+        "aquatic",
+        "charming",
+        "hypnotic"
+    ],
+    "adjectives": [
+        "formidable",
+        "hypnotic",
+        "powerful",
+        "mystical"
+    ],
+    "description": "A huge giant creature with a tendril on its head that emits bright light, making it both an impressive sight and a powerful foe.",
+    "memorable": "Its ability to charm creatures with its mesmerizing light is both captivating and dangerous, making it a formidable opponent.",
+    "goals": "Survive by staying submerged in water and charming creatures.",
+    "relations": "Can communicate with aquatic monstrosities and beasts.",
+    "environment": "Typically found in oceanic environments where it can swim.",
+    "strengths": "Immunity to cold damage, strong melee and ranged attacks with tridents, and the ability to manipulate water.",
+    "weaknesses": "Dependent on being submerged to avoid suffocation and has limited land mobility.",
+    "attacks": "Can make a multiattack with tridents, dealing piercing damage, and summon ocean pressure to crush opponents.",
+    "most_powerful_ability": "Hypnotic Luminescence, which charms creatures in its light.",
+    "equipment": null,
+    "senses": "Blindsight up to 120 feet, but cannot see beyond that range.",
+    "skills": "Proficient in perception with a passive score of 17.",
+    "additional_information": [
+        "Requires submersion at least every four hours.",
+        "Can cast powerful aquatic spells without material components.",
+        "Charms creatures with a DC 18 Charisma saving throw.",
+        "Can communicate effectively with aquatic creatures.",
+        "Limited on land due to lower speed compared to its swimming capabilities."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": "Can cast spells like control water and freedom of movement without material components.",
+    "test_queries": [
+        "huge giant with hypnotic light",
+        "oceanic giant that charms creatures",
+        "powerful giant with bright glowing tendril",
+        "giant that manipulates water and navigates seas",
+        "giant creature that requires water to survive"
+    ]
+}

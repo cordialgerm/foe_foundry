@@ -1,0 +1,55 @@
+{
+    "name": "Adult Red Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Huge",
+    "hp": 256,
+    "ac": 19,
+    "srd": true,
+    "cr": "17",
+    "movement": "40 ft. walking, 40 ft. climbing, 80 ft. flying",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "dragon",
+        "mythical",
+        "legendary",
+        "apex predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "intimidating",
+        "fearsome",
+        "powerful",
+        "fiery"
+    ],
+    "description": "The Adult Red Dragon is a massive creature with scales that resemble molten lava and smoke billowing from its nostrils. It has large, bat-like wings, jagged spines, and an air of overwhelming dominance.",
+    "memorable": "Among the most feared creatures in Dungeons & Dragons, it can decimate foes with its devastating fire breath and possesses a commanding presence in battle.",
+    "goals": "Typically seeks to amass treasures and dominate any perceived threats to its hoard or territory.",
+    "relations": "Often encountered alongside lesser draconic minions or other fire-themed creatures in volcanic environments.",
+    "environment": "Commonly found in volcanic lairs, caves filled with treasure, or mountainous terrains.",
+    "strengths": "Immunity to fire damage, incredibly high hit points, and powerful spellcasting abilities.",
+    "weaknesses": "Potential overreliance on strategies involving high Dexterity rolls; average Dexterity may limit agility.",
+    "attacks": "Can perform multiple melee attacks with its bite and claws, and delivers a devastating breath weapon in a fiery cone.",
+    "most_powerful_ability": "Fire Breath, which deals massive fire damage in a sweeping area and can instill fear in its victims.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect foes even in darkness.",
+    "skills": "Proficient in Intimidation, making it a terrifying presence both socially and in combat.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws up to three times a day.",
+        "The 'Boil Over' ability creates intense heat around it, dealing damage to nearby foes.",
+        "Can frighten enemies with its Frightful Presence, punishing those who oppose it.",
+        "The 'Cruel Tyranny' ability helps bolster allies, making them stronger in combat.",
+        "Legendary Actions provide additional options for retaliation and area control."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can innately cast several spells including Command, Hold Person, Glyph of Warding, and Wall of Fire without needing material components.",
+    "test_queries": [
+        "Ultimate fire dragon",
+        "Legendary dragon spellcaster",
+        "Giant dragon with fiery breath",
+        "Terrifying apex predator",
+        "Mythical creature of dominance"
+    ]
+}

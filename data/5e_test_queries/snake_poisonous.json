@@ -1,0 +1,25 @@
+{
+    "name": "Poisonous Snake",
+    "queries": [
+        {
+            "query": "tiny venomous creature that can poison adventurers",
+            "variant": "tiny venomus creature that poisons adventurers"
+        },
+        {
+            "query": "snake with biting attack and poison damage abilities",
+            "variant": "snake with bite attack and venom damage abilities"
+        },
+        {
+            "query": "fragile snake that relies on agility and poison to survive",
+            "variant": "delicate snake that uses agility and venom to stay alive"
+        },
+        {
+            "query": "creature that has keen senses and can inflict poison damage",
+            "variant": "being with sharp senses and capable of dealing poison damage"
+        },
+        {
+            "query": "poisonous snake hiding in low-level encounters",
+            "variant": "snake with venom lurking in low-level encounters"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Veritigibbet",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 63,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "30 ft. walking, 60 ft. flying",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "trickster",
+        "psychic"
+    ],
+    "adjectives": [
+        "cunning",
+        "tricky",
+        "elusive"
+    ],
+    "description": "The Veritigibbet is a small fey creature known for its chaotic nature and skill in trickery. It has a delicate frame and often employs psychological manipulation in encounters.",
+    "memorable": "Its ability to ask questions that compel truthful answers or inflict disadvantages makes it a unique foe in combat.",
+    "goals": "The Veritigibbet thrives on chaos, often seeking to manipulate others rather than engage directly in conflict.",
+    "relations": "Might ally with other mischievous fey or tricksters, and is often encountered alone or in small groups.",
+    "environment": "Typically found in forests or areas infused with magic and mischief.",
+    "strengths": "High dexterity and charisma make it difficult to hit and great at deception and manipulation.",
+    "weaknesses": "Low strength and moderate constitution prevent it from excelling in direct combat.",
+    "attacks": "It can perform two psychic damage-inflicting Repartee attacks during its turn.",
+    "most_powerful_ability": "Blather, which forces targets to either answer truthfully or suffer disadvantages.",
+    "senses": "It has an average passive perception.",
+    "skills": "The Veritigibbet has basic perception skills, with a notable focus on psychological and social manipulation.",
+    "additional_information": [
+        "Immune to charm and fear effects.",
+        "Can teleport and become invisible to escape danger.",
+        "Resists non-magical bludgeoning, piercing, and slashing unless from cold iron.",
+        "Can project its voice for misdirection and trickery.",
+        "Perpetuates its chaotic nature through psychological tactics."
+    ],
+    "damage_types": [
+        "psychic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tricky small fey that manipulates others",
+        "chaotic fey with mind tricks and lies",
+        "small creature that teleports and deceives",
+        "psychic damage inflicting fey trickster",
+        "elusive fey that avoids direct combat"
+    ]
+}

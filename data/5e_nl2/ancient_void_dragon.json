@@ -1,0 +1,54 @@
+{
+    "name": "Ancient Void Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Neutral",
+    "size": "Gargantuan",
+    "hp": 429,
+    "ac": 22,
+    "srd": false,
+    "cr": "24",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "void",
+        "chaotic",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "colossal",
+        "formidable",
+        "menacing",
+        "chaotic"
+    ],
+    "description": "The Ancient Void Dragon is a gargantuan creature steeped in chaos and fear, showcasing exceptional physical attributes with a striking presence in combat. Its body reflects a majestic yet terrifying aspect of the void, embodying its mastery of the realms beyond reality.",
+    "memorable": "The dragon\u2019s death triggers a powerful explosion, the 'Collapsing Star', causing immense damage and potentially ejecting creatures to other planes, making encounters with it profoundly impactful.",
+    "goals": "To dominate its surroundings, represent chaos, and assert its power over others.",
+    "relations": "Other dragons might serve it or come from its lair, as well as cosmic entities drawn to the chaotic energies it embodies.",
+    "environment": "Typically found in chaotic locales or areas associated with the void, such as abandoned ruins of ancient civilizations.",
+    "strengths": "Exceptional Strength and Constitution make it a powerful combatant, along with significant immunities to cold damage and mental effects.",
+    "weaknesses": "Average Dexterity may leave it open to certain ranged attacks and tactically vulnerable situations.",
+    "attacks": "The Ancient Void Dragon's attacks include a chilling 'Bite' that does both piercing and cold damage, slashing 'Claws', and a devastating 'Tail' strike. It also employs fearsome breath attacks.",
+    "most_powerful_ability": "The 'Collapsing Star' explosion upon death, dealing substantial bludgeoning and cold damage to nearby creatures and causing chaotic effects on the battlefield.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a passive Perception score of 26, showcasing exceptional awareness of its surroundings.",
+    "skills": "Proficient in Arcana and History, both at +18, reflecting its deep knowledge of cosmic phenomena.",
+    "additional_information": [
+        "Immune to cold damage and condition immunities to charm and fright.",
+        "Can manipulate reality with 'Void Twist', redirecting attacks to other targets.",
+        "Possesses powerful breath weapons, including 'Gravitic Breath' and 'Stellar Breath', that cause large area damage.",
+        "'Aura of Madness' ability can induce madness in nearby creatures.",
+        "Expert Void Traveler, able to traverse the void effortlessly without needing sustenance."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic cosmic dragon",
+        "gargantuan void creature",
+        "dragon with death explosion ability",
+        "fearsome ancient void dragon",
+        "void manipulating dragon"
+    ]
+}

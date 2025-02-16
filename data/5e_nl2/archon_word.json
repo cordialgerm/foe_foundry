@@ -1,0 +1,53 @@
+{
+    "name": "Archon, Word",
+    "creature_type": "Celestial",
+    "alignment": "lawful good",
+    "size": "Tiny",
+    "hp": 28,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 90 ft.",
+    "role": "null",
+    "tags": [
+        "celestial",
+        "support",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "benevolent",
+        "immortal",
+        "supportive",
+        "perceptive"
+    ],
+    "description": "The Archon, Word is a Tiny Celestial creature known for its benevolent nature, often serving as a guardian or divine messenger. It has impressive abilities to assist allies during combat and is characterized by its radiant energy.",
+    "memorable": "Its ability to share smite and enhance allies' attacks with radiant damage makes it a unique and effective support in battle.",
+    "goals": "To assist allies in combat and serve as a divine messenger.",
+    "relations": "Can be encountered with other celestial beings or divine entities.",
+    "environment": "Typically found in celestial realms or places of great goodness and light.",
+    "strengths": "Moderate resistance to radiant damage, immunity to necrotic damage, and several conditions enhance its durability in combat.",
+    "weaknesses": "Relatively low Armor Class of 13 and limited hit points make it vulnerable if engaged directly.",
+    "attacks": "Slam deals radiant damage in melee; Forceful Words as a ranged spell attack; Share Smite empowers allies' attacks.",
+    "most_powerful_ability": "Share Smite, allowing it to empower an ally's weapon to deal extra radiant damage.",
+    "equipment": null,
+    "senses": "Advantage on Wisdom (Perception) checks related to sight due to Keen Sight.",
+    "skills": "Excels in saving throws against spells and magical effects with +5 in Wisdom and Charisma.",
+    "additional_information": [
+        "Does not require food, drink, or sleep due to Immortal Nature.",
+        "Can communicate in all languages and has telepathy within 60 feet.",
+        "Can cast spells without needing material or somatic components.",
+        "Possesses immunity to being charmed, frightened, poisoned, and prone.",
+        "Can outline targets in light with Faerie Fire, making them easier to hit."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells like Dancing Lights, Message, True Strike, Faerie Fire, and Heroism to support allies.",
+    "test_queries": [
+        "celestial guardian",
+        "supportive spellcaster",
+        "benevolent creature",
+        "radiant damage dealer",
+        "immortal messenger"
+    ]
+}

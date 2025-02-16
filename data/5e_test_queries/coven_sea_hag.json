@@ -1,0 +1,25 @@
+{
+    "name": "Coven Sea Hag",
+    "queries": [
+        {
+            "query": "a magical hag that can swim and breathe underwater",
+            "variant": "magical hag who swims and can breathe in water"
+        },
+        {
+            "query": "cunning creature with spellcasting abilities and amphibious nature",
+            "variant": "clever creature with ability to cast spells and lives in water and air"
+        },
+        {
+            "query": "hag with claws and the ability to inflict curses",
+            "variant": "hag that has claws and can cast curses"
+        },
+        {
+            "query": "medium fey monster skilled in deception and arcana",
+            "variant": "medium fey creature that is good at arcana and deception"
+        },
+        {
+            "query": "sea hag that uses lightning attack and frightens foes",
+            "variant": "ocean hag that blasts with lightning and terrifies enemies"
+        }
+    ]
+}

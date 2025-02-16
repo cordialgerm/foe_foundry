@@ -1,0 +1,55 @@
+{
+    "name": "Forest Gnome Illusionist",
+    "creature_type": "Humanoid",
+    "alignment": "neutral good",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 12,
+    "srd": false,
+    "cr": "6",
+    "movement": "30 ft. walking speed",
+    "role": "Controller",
+    "tags": [
+        "spellcaster",
+        "illusionist",
+        "gnome",
+        "nature"
+    ],
+    "adjectives": [
+        "crafty",
+        "versatile",
+        "spellcasting",
+        "supportive"
+    ],
+    "description": "A nimble Forest Gnome Illusionist equipped with a dagger, adept at casting illusions and controlling the battlefield.",
+    "memorable": "Excels in crowd control with powerful illusions and area spells.",
+    "goals": "To support allies and manipulate foes through illusion magic.",
+    "relations": "May be encountered with small and tiny beasts due to its communication ability.",
+    "environment": "Typically found in forested areas where it can blend with nature.",
+    "strengths": "Strong in intelligence and dexterity, allowing for effective spellcasting and mobility.",
+    "weaknesses": "Weak melee capabilities and low charisma limit social interactions.",
+    "attacks": "Uses spells like fire bolt for ranged fire damage and dagger for melee attack.",
+    "most_powerful_ability": "Casting fireball to deal significant area damage.",
+    "equipment": "Carries a dagger for melee or ranged attacks.",
+    "senses": "Has a passive perception of 14, allowing for good awareness of hidden threats.",
+    "skills": "Proficient in arcana, history, and investigation, enhancing its magical expertise.",
+    "additional_information": [
+        "Innate ability to communicate with Small and Tiny beasts.",
+        "Can cast major image and disguise self without using material components.",
+        "High spellcasting level allows for a diverse range of spells.",
+        "Effective crowd control with spells like hypnotic pattern.",
+        "Uses dimension door for teleportation and greater invisibility for stealth."
+    ],
+    "damage_types": [
+        "fire",
+        "cold"
+    ],
+    "spellcasting": "9th-level spellcaster with spells prepared for various situations.",
+    "test_queries": [
+        "gnome illusionist that casts fireball",
+        "crafty spellcaster communicating with small beasts",
+        "forest gnome with powerful illusion spells",
+        "spellcaster adept at area control in combat",
+        "versatile gnome using deception in spells"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Ahu-Nixta Mechanon",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 51,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 20 ft., climb 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "construct",
+        "mechanon",
+        "restorative"
+    ],
+    "adjectives": [
+        "durable",
+        "independent",
+        "versatile"
+    ],
+    "description": "The Ahu-Nixta Mechanon is a Medium-sized construct with a strong physical presence, exhibiting notable combat proficiency and unique restorative capabilities. Its design allows it to grapple enemies and deliver powerful sonic attacks.",
+    "memorable": "Its ability to reactivate by absorbing the souls of the fallen makes it a fearsome opponent in battle, as it can rejuvenate itself if slain.",
+    "goals": "Protect itself and other constructs, engage in combat, and restore allies.",
+    "relations": "Can be allied with other constructs and operates independently in various environments.",
+    "environment": "Typically found in construct-heavy areas or artificial constructs environments.",
+    "strengths": "Immunity to poison and psychic damage; ability to grapple and incapacitate foes; can heal itself and others.",
+    "weaknesses": "Very low Intelligence and Charisma, limiting strategic thinking and social interactions.",
+    "attacks": "Utilizes Multiattack with either Utility Arms or a combination of Slam and Utility Arm attacks. Sonic Disruptor offers control via thunder damage.",
+    "most_powerful_ability": "Soul Reactivation allows it to regain HP from the souls of deceased creatures, reviving itself after defeat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses decent perception skills with a +2 bonus.",
+    "additional_information": [
+        "Doesn't require air, food, drink, or sleep due to its Construct Nature.",
+        "Can manipulate objects and move creatures or items telekinetically within 60 feet.",
+        "Critical Malfunction introduces a chance of being stunned by critical hits.",
+        "Can heal constructs twice a day, enhancing its support role.",
+        "Adapt Appendage allows it to swap Utility Arms, showcasing its versatility."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical construct with healing abilities",
+        "battlefield control mechanon",
+        "reviving construct monster",
+        "grappling construct enemy",
+        "ton of thunder damage creature"
+    ]
+}

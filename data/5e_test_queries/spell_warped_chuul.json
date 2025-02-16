@@ -1,0 +1,25 @@
+{
+    "name": "Spell-warped Chuul",
+    "queries": [
+        {
+            "query": "large amphibious monster that can breathe air and water",
+            "variant": "big water creature that breathes both air and water"
+        },
+        {
+            "query": "creature with pincers that deals bludgeoning and force damage",
+            "variant": "monster with pinchers that can inflict bludgeoning and force damage"
+        },
+        {
+            "query": "aberration that gains temporary hit points from absorbing magic",
+            "variant": "weird monster that gets temporary hit points by absorbing magic"
+        },
+        {
+            "query": "monster with low intelligence that can paralyze enemies",
+            "variant": "creature with a very low IQ that can stop enemies from moving"
+        },
+        {
+            "query": "unique creature with special abilities to detect magic",
+            "variant": "distinct monster with abilities to sense magic"
+        }
+    ]
+}

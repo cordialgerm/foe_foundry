@@ -1,0 +1,54 @@
+{
+    "name": "Goblin Alchemist",
+    "creature_type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "size": "Small",
+    "hp": 10,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "goblin",
+        "alchemist",
+        "fire",
+        "stealth"
+    ],
+    "adjectives": [
+        "cunning",
+        "agile",
+        "small"
+    ],
+    "description": "The Goblin Alchemist is a small, green-skinned humanoid with a knack for alchemical substances. It wields a shortsword and a shortbow, and often carries vials of fire and acid for throwing.",
+    "memorable": "It can deal ongoing fire damage and quickly escape, making it tricky to catch in combat.",
+    "goals": "To outmaneuver and surprise enemies using its alchemical skills.",
+    "relations": "Other goblins and alchemists who may provide assistance or share knowledge.",
+    "environment": "Found in caves or areas where alchemical ingredients are available.",
+    "strengths": "Strong stealth ability, capable of ongoing damage with alchemical attacks.",
+    "weaknesses": "Low physical attributes make it vulnerable in direct confrontations.",
+    "attacks": "Uses a shortsword for melee and a shortbow for ranged piercing damage; can throw vials for ongoing fire damage.",
+    "most_powerful_ability": "Throw Vial - deals ongoing fire damage that persists until extinguished.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, allowing it to see well in dim lighting.",
+    "skills": "Expert in stealth, with a +3 modifier to blend into surroundings.",
+    "additional_information": [
+        "Can substitute acid for its alchemical fire damage.",
+        "Utilizes Nimble Escape to avoid attacks.",
+        "Relies on agility and cunning rather than brute strength.",
+        "Low hit points make it susceptible to quick defeats.",
+        "Specializes in surprise tactics to outmaneuver opponents."
+    ],
+    "damage_types": [
+        "fire",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning small goblin with fire attacks",
+        "agile monster that uses alchemy",
+        "goblin that throws vials of fire",
+        "stealthy creature with ongoing fire damage",
+        "small humanoid that specializes in alchemy"
+    ]
+}

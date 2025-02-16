@@ -1,0 +1,52 @@
+{
+    "name": "Noble",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any race, any lineage",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 9,
+    "ac": 15,
+    "srd": true,
+    "ac_description": "breastplate",
+    "cr": "1/8",
+    "movement": "30 ft.",
+    "role": null,
+    "tags": [
+        "aristocracy",
+        "political",
+        "influence"
+    ],
+    "adjectives": [
+        "charming",
+        "political",
+        "fragile"
+    ],
+    "description": "The Noble is adorned in fine clothing, often wearing symbols of their status such as signet rings or coats of arms. They embody charm and finesse, representing authority and influence.",
+    "memorable": "Possesses high charisma and political connections, wielding power through manipulation rather than combat.",
+    "goals": "To engage in social interactions and negotiations, maintaining authority and influence.",
+    "relations": "Often accompanied by guards and servants, potentially serving as a leader to followers.",
+    "environment": "Typically found in courts, noble estates, or affluent areas.",
+    "strengths": "High charisma and exceptional social skills make them effective diplomats and performers.",
+    "weaknesses": "Low hit points and limited combat abilities render them vulnerable in direct confrontations.",
+    "attacks": "Attacks with a rapier, dealing 5 piercing damage, showcasing finesse rather than brute strength.",
+    "most_powerful_ability": "Impenetrable Ego allows them to add their charisma modifier to their AC when unarmored, making them harder to hit.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in deception, intimidation, performance, and persuasion, enhancing their social capabilities.",
+    "additional_information": [
+        "Can speak any two languages, offering versatility in communication.",
+        "Resistance to being charmed or frightened allows for composure in tense situations.",
+        "Commands loyalty from guards, servants, and followers.",
+        "Notable for their ability to marshal resources for political schemes.",
+        "Represents courtiers who may not be of noble birth."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "aristocratic humanoid that influences others",
+        "political figure with charm and power",
+        "noble character skilled in deception and persuasion",
+        "humanoid with high charisma and average combat skills",
+        "fragile creature that uses diplomacy as a weapon"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Leshy",
+    "creature_type": "Monstrosity",
+    "alignment": "Chaotic Neutral",
+    "size": "Medium",
+    "hp": 45,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "nature",
+        "deception",
+        "magic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "mischievous",
+        "poisonous"
+    ],
+    "description": "The Leshy is a medium-sized monstrosity embodying the spirit of nature, with vines intertwining its weapon. It has a humanoid shape and a playful demeanor, often seen in lush, green environments.",
+    "memorable": "Its ability to mimic sounds and communicate with animals adds an unexpected layer of cunning.",
+    "goals": "The Leshy often seeks to protect nature and engage in mischief, using its abilities to confuse and manipulate intruders.",
+    "relations": "It may ally with or command plants and beasts, serving as a guardian of the natural world.",
+    "environment": "Typically found in forests and areas rich with plant life.",
+    "strengths": "High Strength and Charisma make it formidable in both combat and social interactions.",
+    "weaknesses": "Average Dexterity could make it vulnerable to agile opponents.",
+    "attacks": "Uses a club attack that deals bludgeoning and additional poison damage, along with its Frightening Mien ability to intimidate foes.",
+    "most_powerful_ability": "Encourage Growth can magically alter the battlefield, creating difficult terrain to impede enemies.",
+    "equipment": null,
+    "senses": "It has a passive perception of 14, indicative of good awareness in its environment.",
+    "skills": "Proficient in Deception and Survival, allowing it to cleverly navigate both social interactions and natural settings.",
+    "additional_information": [
+        "Immune to poison damage and the poisoned condition.",
+        "Has advantage on Stealth checks in plant-rich areas.",
+        "Can communicate with animals and plants as if sharing a language.",
+        "Vine-Wrapped Weapons deal extra 2d4 poison damage on hit.",
+        "The ability to frighten foes creates a tactical advantage in combat."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "nature spirit that can mimic sounds",
+        "chaotic creature living in forests",
+        "plant-covered monster with poison attacks",
+        "creature that can intimidate with its appearance",
+        "guardian of nature with vine-wrapped weapon"
+    ]
+}

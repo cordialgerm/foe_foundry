@@ -1,0 +1,50 @@
+{
+    "name": "Revilock",
+    "creature_type": "Humanoid",
+    "alignment": "null",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "humanoid",
+        "ambush predator",
+        "psionic"
+    ],
+    "adjectives": [
+        "cunning",
+        "stealthy",
+        "resourceful"
+    ],
+    "description": "The Revilock is a Medium humanoid that excels in ambushing prey, utilizing natural camouflage and keen senses. It possesses good physical combat skills and employs stealth to stalk its surroundings.",
+    "memorable": "Its ability to blend into rocky terrain and utilize telepathy makes it a unique predator.",
+    "goals": "To ambush prey and navigate its environment using stealth.",
+    "relations": "Could be encountered alongside other humanoids or psionic creatures in rocky terrains.",
+    "environment": "Prefers rocky environments suitable for ambushing.",
+    "strengths": "Exceptional at Stealth checks in rocky terrains and has blindsight to sense surroundings.",
+    "weaknesses": "Lacks social skills and mental fortitude due to low charisma and wisdom.",
+    "attacks": "Attacks with a spiked club or grapples with a throttle action, making it a tactical opponent.",
+    "most_powerful_ability": "Camouflage ability grants advantage on Stealth checks in rocky terrain for effective ambushing.",
+    "equipment": null,
+    "senses": "Possesses blindsight within 30 feet, allowing it to sense surroundings without sight.",
+    "skills": "Proficient in athletics, engineering, perception, and stealth, which supports its ambush tactics.",
+    "additional_information": [
+        "Immune to being blinded",
+        "Can communicate telepathically up to 60 feet",
+        "Balanced physical attributes for combat and intelligence for psionic abilities",
+        "Utilizes intelligence for psionic spellcasting",
+        "Has a predatory instinct that enhances tracking and ambushing capabilities"
+    ],
+    "damage_types": [],
+    "spellcasting": "Can innately cast psionic spells using intelligence as the spellcasting ability.",
+    "test_queries": [
+        "humanoid ambush predator in rocky terrain",
+        "stealthy creature that uses telepathy",
+        "spiked club wielding ambusher",
+        "keen sense monster with blindsight abilities",
+        "cunning predator with psionic powers"
+    ]
+}

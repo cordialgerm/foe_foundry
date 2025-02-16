@@ -1,6 +1,8 @@
 <MonsterName/>Mirror Hag</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>147</HP>
 <summary>The Mirror Hag is a Medium-sized fey creature that embodies chaotic neutrality. With a challenge rating of 6 and a total of 147 hit points, it possesses formidable combat prowess, primarily through its unique abilities and spells. The hag excels at incapacitating foes and altering their forms, making her a dangerous adversary in battle. With an armor class of 16 derived from natural armor, she can withstand a fair amount of damage. Defensively, she has resistance to thunder damage and is immune to conditions such as being charmed or frightened, rendering her resistant to typical crowd control tactics. However, her physical attributes show that she is only average in strength and intelligence, with exceptional constitution contributing to her durability.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Mirror Hag is capable of casting spells as well, using Charisma for spellcas
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mirror Hag
 
 *Medium* *Fey* *Chaotic Neutral*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 5 (2d4) necrotic damage.
 - **Reconfiguring Curse:** The mirror hag curses one creature she can see within 60 feet of her, corrupting its form. The target must make a DC 15 Constitution saving throw. On a success, the target is immune to the hag’s Reconfiguring Curse for the next 24 hours. On a failure, the target is cursed, suffering one of the following effects of the hag’s choice:
 - **Spellcasting:** The mirror hag casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):<br>At will: disguise self, ray of enfeeblement<br>1/day each: dispel magic, locate creature
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Buraq</MonsterName>
 <CreatureType/>Celestial</CreatureType>
-
+<CR/>11</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>152</HP>
 <summary>The Buraq is a formidable celestial creature with a lawful good alignment, embodying both grace and power. Its primary role is as a protector and beacon of light, serving as a mount or ally to those who champion good. With a substantial Armor Class of 17 and high hit points at 152, it is well-protected and capable of enduring extended encounters. The Buraq possesses exceptional Dexterity and Charisma, making it agile in combat and persuasive in interaction. Its combination of radiant damage and magical abilities grants it an edge against foes, while its resistances and immunities allow it to mitigate some of the most common threats encountered. Notably, the Buraq has the ability to teleport and perceive nonmagical darkness, adding to its strategic versatility in combat situations.</summary>
 
 <detail>
@@ -36,6 +38,7 @@ Overall, the Buraq is a powerful, resilient, and strategically adept celestial c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Buraq
 
 *Medium* *Celestial* *Lawful Good*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Hooves:** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage plus 18 (4d8) radiant damage.
 - **Teleport (1/Day):** The buraq magically teleports itself and its rider, along with any equipment it is wearing or carrying, to a location the buraq is familiar with, up to 1 mile away.
 - **Spellcasting:** The buraq casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 17):<br>At will: comprehend languages, detect evil and good, holy aura, pass without trace<br>3/day each: haste, longstrider<br>1/day each: plane shift, wind walk<br>Teleport (1/Day)The buraq magically teleports itself and its rider, along with any equipment it is wearing or carrying, to a location the buraq is familiar with, up to 1 mile away.
+</statblock>
 
 

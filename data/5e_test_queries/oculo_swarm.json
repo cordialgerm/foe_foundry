@@ -1,0 +1,25 @@
+{
+    "name": "Oculo Swarm",
+    "queries": [
+        {
+            "query": "large swarm creature with hundreds of eyes that can remove my eyes",
+            "variant": "big swarm abomination with lots of eyes that can take my eyes out"
+        },
+        {
+            "query": "fast flying swarm beast that has psychic attacks and eye extraction ability",
+            "variant": "quick flying swarm monster with mind attacks and eye removal skill"
+        },
+        {
+            "query": "swarm with high dexterity that gets advantages in perception checks",
+            "variant": "swarm with excellent agility that has benefits on perception tests"
+        },
+        {
+            "query": "monster immune to many conditions and specializes in disorienting foes",
+            "variant": "creature resistant to many effects and focuses on confusing enemies"
+        },
+        {
+            "query": "neutral evil aberration that occupies spaces of other creatures in combat",
+            "variant": "neutral wicked aberration that fills spaces of other beings during battle"
+        }
+    ]
+}

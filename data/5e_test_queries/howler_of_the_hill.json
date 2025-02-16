@@ -1,0 +1,25 @@
+{
+    "name": "Howler Of The Hill",
+    "queries": [
+        {
+            "query": "large psychic monster that can stun multiple foes",
+            "variant": "large monster with psychic powers that can stun many opponents"
+        },
+        {
+            "query": "aberration that does not need air or food",
+            "variant": "a monster that doesn't need air or food and is an aberration"
+        },
+        {
+            "query": "creature with a powerful howl and high mobility",
+            "variant": "monster known for its strong howl and exceptional mobility"
+        },
+        {
+            "query": "fear-inducing creature that thrives in darkness",
+            "variant": "monster that induces fear and excels in dark environments"
+        },
+        {
+            "query": "howler that has immunity to psychic damage",
+            "variant": "a howler creature immune to psychic type damage"
+        }
+    ]
+}

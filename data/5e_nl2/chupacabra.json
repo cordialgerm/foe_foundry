@@ -1,0 +1,49 @@
+{
+    "name": "Chupacabra",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 36,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "predatory",
+        "stealthy",
+        "paralyzing"
+    ],
+    "adjectives": [
+        "small",
+        "dangerous",
+        "elusive"
+    ],
+    "description": "The Chupacabra is a small, predatory creature with exceptional strength and agility, characterized by its stealthy nature. It has sharp bite and a fearsome gaze that can paralyze foes.",
+    "memorable": "Its ability to attach and drain life from its targets, alongside its paralyzing gaze, makes it a frightening opponent.",
+    "goals": "To hunt and drain blood from its prey.",
+    "relations": "May be found in areas with livestock or other small creatures to hunt.",
+    "environment": "Often found in rural areas, near farms, or places with small livestock.",
+    "strengths": "High Strength and Dexterity make it dangerous in melee and adept at stealth.",
+    "weaknesses": "Low Intelligence and Charisma indicate social limitations and poor strategic planning.",
+    "attacks": "Bite attack that inflicts piercing damage and attaches to the target for ongoing blood loss.",
+    "most_powerful_ability": "Fearful Gaze can paralyze a creature, significantly hindering its actions.",
+    "senses": "Possesses Keen Hearing and Smell, giving it advantage on perception checks related to these senses.",
+    "skills": "Skilled in Acrobatics, Stealth, and Perception, enhancing its ability to sneak and navigate terrains.",
+    "additional_information": [
+        "Immune to poison, increasing its survivability",
+        "Can perform long jumps of up to 25 feet",
+        "Emits a foul stench when its health is low, poisoning nearby creatures",
+        "Relatively high Dexterity increases agility in encounters",
+        "Strong melee attacks due to high Strength"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small predatory creature with paralyzing gaze",
+        "stealthy blood-draining monster",
+        "foul-smelling creature that can jump far",
+        "dangerous creature that attaches to its prey",
+        "monster known for fearful attack"
+    ]
+}

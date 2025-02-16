@@ -1,0 +1,25 @@
+{
+    "name": "Bulbous Violet",
+    "queries": [
+        {
+            "query": "plant creature that grapples and deals acid damage",
+            "variant": "creature that grapples and uses acid damage plant"
+        },
+        {
+            "query": "purple flowering plant that can detect flesh creatures",
+            "variant": "flowering purple plant able to sense flesh creatures"
+        },
+        {
+            "query": "medium-sized plant that can camouflage among flowers",
+            "variant": "medium plant that hides among flowering plants"
+        },
+        {
+            "query": "acid-using plant monster with low intelligence",
+            "variant": "monster plant using acid with very low intelligence"
+        },
+        {
+            "query": "Bulbous Violet special abilities and attack methods",
+            "variant": "special abilities and attack strategies of Bulbous Violet"
+        }
+    ]
+}

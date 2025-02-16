@@ -1,0 +1,25 @@
+{
+    "name": "Web Zombie",
+    "queries": [
+        {
+            "query": "undead creature that can climb walls and inflict necrotic damage",
+            "variant": "undead monster that inflicts necrotic damage and can climb walls"
+        },
+        {
+            "query": "medium zombie that uses webbing and has low Dexterity",
+            "variant": "zombie that is medium-sized and has low Dexterity while using webbing"
+        },
+        {
+            "query": "creature with spider-like abilities and undead traits",
+            "variant": "creature that has undead traits and abilities similar to spiders"
+        },
+        {
+            "query": "weak but tricky undead that can restrain targets with webbing",
+            "variant": "undead that is weak but tricky, able to trap targets in webbing"
+        },
+        {
+            "query": "zombie that can come back from 0 hit points and moves through webs",
+            "variant": "zombie that can revive from 0 hit points and can freely move through webs"
+        }
+    ]
+}

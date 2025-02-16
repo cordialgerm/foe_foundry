@@ -1,0 +1,53 @@
+{
+    "name": "Woodwose",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic neutral",
+    "size": "Medium",
+    "hp": 27,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 ft. walking, 20 ft. climbing",
+    "role": "Skirmisher",
+    "tags": [
+        "nature",
+        "fey",
+        "forest",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "nature-oriented",
+        "agile",
+        "resilient"
+    ],
+    "description": "The Woodwose is a medium-sized humanoid with a strong build and nature-inspired characteristics. It excels in close combat due to its physical strength and has a unique connection to the natural world.",
+    "memorable": "Its ability to communicate with beasts and plants makes it an intriguing presence in forested areas.",
+    "goals": "To thrive in natural environments and protect the forest.",
+    "relations": "Might be encountered alongside other fey creatures or woodland beings.",
+    "environment": "Typically found in forested or natural settings.",
+    "strengths": "High strength allows it to excel in melee combat.",
+    "weaknesses": "Low charisma hampers social interactions significantly.",
+    "attacks": "Attacks with a club or a shortbow, and can enhance its attacks through spells.",
+    "most_powerful_ability": "Can cast Entangle to control the battlefield and restrict enemies.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 14, enabling it to notice hidden creatures effectively.",
+    "skills": "Proficient in nature, perception, stealth, and survival.",
+    "additional_information": [
+        "Advantage on saving throws against being charmed",
+        "Immune to magical sleep effects",
+        "Can cast Shillelagh at will to enhance melee attacks",
+        "Can cast Pass Without Trace to aid stealth",
+        "Can communicate with plants and beasts"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting ability is Wisdom; can cast Shillelagh at will and Pass Without Trace multiple times per day.",
+    "test_queries": [
+        "nature-oriented humanoid with climbing ability",
+        "agile humanoid that can control plants",
+        "medium-sized creature strong in melee combat",
+        "spellcaster that speaks with beasts and plants",
+        "chaotic neutral creature found in forests"
+    ]
+}

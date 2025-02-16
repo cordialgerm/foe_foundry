@@ -1,0 +1,54 @@
+{
+    "name": "Azer",
+    "creature_type": "Elemental",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 39,
+    "ac": 17,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 feet walking speed",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "fire",
+        "combatant",
+        "forger"
+    ],
+    "adjectives": [
+        "humanoid",
+        "metallic",
+        "fiery",
+        "loyal"
+    ],
+    "description": "An Azer is a humanoid creature composed of living metal and flames. Its body is made of glowing, molten brass or bronze, and its hair and beard burn with an eternal fire.",
+    "memorable": "Azer's ability to channel the heat of its fiery body into powerful strikes and its role as skilled smiths who forge weapons and armor of incredible quality make it unique.",
+    "goals": "To craft exceptional weapons and armor while fiercely guarding their forges and kin.",
+    "relations": "Azers can often be found in the company of other fire elementals or in the Elemental Plane of Fire.",
+    "environment": "Elemental Plane of Fire or locations with strong connections to fire.",
+    "strengths": "Immunity to fire and poison, along with strong melee capabilities and a fiery aura that damages nearby foes.",
+    "weaknesses": "Vulnerable to cold damage, which can be exploited by opponents.",
+    "attacks": "The Azer strikes with a Warhammer dealing bludgeoning damage boosted by fiery damage, making it effective in combat.",
+    "most_powerful_ability": "Fiery Aura, which damages any creature that ends its turn close to the Azer.",
+    "equipment": "Wields a Warhammer in combat.",
+    "senses": "Possesses a passive Perception of 11, which is average for noticing hidden threats.",
+    "skills": "The Azer has average skills, with no particularly noteworthy proficiencies.",
+    "additional_information": [
+        "Can teleport up to 90 feet while standing in fire.",
+        "Inflicts damage to creatures who touch it or hit it with melee attacks.",
+        "Can create a line of fire as a defensive mechanism.",
+        "Skilled in crafting, particularly weapon and armor creation.",
+        "Bears an eternal flame in its hair and beard."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast Heat Metal, dealing fire damage to enemies holding metal items.",
+    "test_queries": [
+        "fiery metallic humanoid",
+        "elemental fire creature",
+        "forge guardian elemental",
+        "living metal being",
+        "Azer abilities"
+    ]
+}

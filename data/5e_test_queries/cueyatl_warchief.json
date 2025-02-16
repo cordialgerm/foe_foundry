@@ -1,0 +1,25 @@
+{
+    "name": "Cueyatl Warchief",
+    "queries": [
+        {
+            "query": "amphibious jungle humanoid with strong melee attacks",
+            "variant": "humanoid that is amphibious and has strong melee attacks in jungle"
+        },
+        {
+            "query": "small lawful evil warchief with insect communication skills",
+            "variant": "lawful evil small warchief that can communicate with insects"
+        },
+        {
+            "query": "creature with high Strength and ability to jump far",
+            "variant": "creature that can jump long distances and has high Strength"
+        },
+        {
+            "query": "combatant in studded leather armor with versatile movement",
+            "variant": "combatant wearing studded leather armor and having varied movement abilities"
+        },
+        {
+            "query": "warchief that can evade grapples and uses lances",
+            "variant": "warchief that uses lances and has abilities to escape grapples"
+        }
+    ]
+}

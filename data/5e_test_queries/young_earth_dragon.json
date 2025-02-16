@@ -1,0 +1,25 @@
+{
+    "name": "Young Earth Dragon",
+    "queries": [
+        {
+            "query": "large dragon that burrows and has rocky camouflage",
+            "variant": "big dragon that can burrow and has a camouflage like rocks"
+        },
+        {
+            "query": "guardian dragon with high Constitution and scouring sand attack",
+            "variant": "protector dragon with strong Constitution and scouring sand breath"
+        },
+        {
+            "query": "tough dragon found in earthy terrain with innate spellcasting",
+            "variant": "strong dragon located in earth areas and has innate magic powers"
+        },
+        {
+            "query": "dragon resistant to nonmagical damage with darkvision",
+            "variant": "dragon that resists normal damage and has darkvision"
+        },
+        {
+            "query": "earth dragon with breath attack and essence link abilities",
+            "variant": "dragon of the earth that can use a breath attack and has an essence link"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ophinix",
+    "queries": [
+        {
+            "query": "large creature that can harness electricity and has weak intelligence",
+            "variant": "big monster that harnesses electric charge and has poor intelligence"
+        },
+        {
+            "query": "flying monster with high strength that deals lightning damage",
+            "variant": "flying creature with strong might that can inflict lightning damage"
+        },
+        {
+            "query": "electricity-using monstrosity found in combat with good dexterity",
+            "variant": "monstrosity that uses electricity in battle with high agility"
+        },
+        {
+            "query": "creature that uses lightning recharge and has conductive fur",
+            "variant": "monster with lightning recharge ability and electric fur"
+        },
+        {
+            "query": "tactical flying monster with average armor class and high hit points",
+            "variant": "strategic flying creature with moderate AC and good HP"
+        }
+    ]
+}

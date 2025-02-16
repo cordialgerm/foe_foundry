@@ -1,0 +1,25 @@
+{
+    "name": "Phoenixborn Sorcerer",
+    "queries": [
+        {
+            "query": "humanoid creature with fiery abilities and flight",
+            "variant": "fiery humanoid creature that can fly and has special abilities"
+        },
+        {
+            "query": "Phoenixborn monster that casts spells and has high charisma",
+            "variant": "creature with Phoenixborn traits that is good at spellcasting and has high charisma"
+        },
+        {
+            "query": "fire-themed spellcaster that can rejuvenate itself",
+            "variant": "spellcasting creature themed around fire that can heal itself"
+        },
+        {
+            "query": "monster with talon attack and fire jet ability",
+            "variant": "creature that uses talon attacks and has fire jet powers"
+        },
+        {
+            "query": "medium humanoid that walks slowly but flies fast",
+            "variant": "humanoid creature of medium size that has a slow walk speed yet can fly quickly"
+        }
+    ]
+}

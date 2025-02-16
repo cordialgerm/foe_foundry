@@ -1,0 +1,53 @@
+{
+    "name": "Coastline Reaper",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 144,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 10 ft., swim 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "predator",
+        "fearsome"
+    ],
+    "adjectives": [
+        "formidable",
+        "eerie",
+        "dangerous"
+    ],
+    "description": "The Coastline Reaper is a Large monstrosity that lurks in aquatic environments, characterized by its eerie pale blue glowing organs when underwater. It is capable of walking slowly on land, but swims quickly, making it an adept predator.",
+    "memorable": "It can paralyze its foes with a stinging tentacle attack and has a horrifying fright ability that inflicts psychic damage and fear.",
+    "goals": "It typically ambushes aquatic prey and instills fear in its opponents.",
+    "relations": "It often inhabits coastal and aquatic regions, potentially interacting with other aquatic creatures.",
+    "environment": "Aquatic environments, particularly coastlines.",
+    "strengths": "Resistant to cold and poison damage, immune to exhaustion and poisoned condition.",
+    "weaknesses": "Very low Intelligence, making it poor in problem-solving and social interactions.",
+    "attacks": "Uses tentacle lashes for bludgeoning damage and stinging tentacles that inflict poison and paralysis.",
+    "most_powerful_ability": "Frightening Visage, which creates a terrifying skull-like appearance and instills fright in nearby humanoids.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has average perception skills, able to notice hidden elements but not exceptional.",
+    "additional_information": [
+        "Can hold its breath for 30 minutes while out of water",
+        "Can only breathe underwater",
+        "Functions primarily as an ambusher in its aquatic habitat",
+        "Uses glowing organs to create dim light underwater",
+        "Capable of paralyzing foes with its attacks"
+    ],
+    "damage_types": [
+        "psychic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic monster with glowing organs",
+        "predator that paralyzes with stinging tentacle",
+        "fearsome creature that lives near coastlines",
+        "monster with terrifying skull-like visage",
+        "creature that can swim quickly and ambush"
+    ]
+}

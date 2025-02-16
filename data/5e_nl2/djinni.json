@@ -1,0 +1,53 @@
+{
+    "name": "Djinni",
+    "creature_type": "Elemental",
+    "creature_subtype": "outsider",
+    "alignment": "chaotic good",
+    "size": "Large",
+    "hp": 161,
+    "ac": 17,
+    "srd": true,
+    "cr": "11",
+    "movement": "30 ft. walking and 90 ft. flying",
+    "role": "Artillery",
+    "tags": [
+        "genie",
+        "elemental",
+        "air"
+    ],
+    "adjectives": [
+        "muscular",
+        "blue",
+        "noble"
+    ],
+    "description": "A tall, muscular figure with blue skin, adorned in flowing, ethereal garments, and surrounded by swirling winds.",
+    "memorable": "Known for its charm, wit, and capricious nature, the Djinni is a powerful influencer of weather and air.",
+    "goals": "Interact with mortals and manipulate the weather.",
+    "relations": "Rulers of lesser air elementals, often found in palaces of solidified clouds.",
+    "environment": "Elemental Plane of Air or magnificent cloud palaces.",
+    "strengths": "Exceptionally high Dexterity, Constitution, and Charisma; strong spellcasting abilities.",
+    "weaknesses": "Resistance limited to lightning and thunder; potential vulnerabilities to counterspells.",
+    "attacks": "Multiattack with scimitar strikes dealing slashing and lightning damage; can unleash a Lightning Blast as a ranged attack.",
+    "most_powerful_ability": "Can create a whirlwind to restrain enemies and control the battlefield.",
+    "senses": "Blindsight to a range of 120 feet.",
+    "skills": "High proficiency in Acrobatics, Insight, and Perception, showcasing agility and awareness.",
+    "additional_information": [
+        "Can transform into a Huge cloud form which enhances stealth.",
+        "Ability to summon an air elemental as an ally once per day.",
+        "Innate spellcaster with access to powerful spells including flight and weather control.",
+        "Generates powerful whirlwinds capable of affecting enemy movement.",
+        "Can travel to other planes once per day."
+    ],
+    "damage_types": [
+        "lightning",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcasting with a focus on manipulation and control spells like wind walk and major image.",
+    "test_queries": [
+        "noble blue genie with winds",
+        "muscular air elemental that manipulates weather",
+        "genie who creates powerful whirlwinds",
+        "elemental creature that summons air elementals",
+        "tall blue being with spellcasting abilities"
+    ]
+}

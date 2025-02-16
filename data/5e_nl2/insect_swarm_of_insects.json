@@ -1,0 +1,50 @@
+{
+    "name": "Insect, Swarm of Insects",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 24,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "20 ft. on ground, climbs at same speed",
+    "role": "null",
+    "tags": [
+        "swarm",
+        "insect",
+        "disruptive"
+    ],
+    "adjectives": [
+        "tiny",
+        "overwhelming",
+        "resilient"
+    ],
+    "description": "A swarm of tiny insects that can crawl all over to disrupt foes. It moves fluidly through small openings and can cover creatures in buzzing bugs.",
+    "memorable": "Can disrupt spellcasting by covering foes in insects.",
+    "goals": "To surround, overwhelm, and disrupt spellcasters in combat.",
+    "relations": "Often found in numbers, may accompany other creatures that benefit from its disruptive abilities.",
+    "environment": "Commonly found in rural or wild environments, especially where there are natural hiding spots.",
+    "strengths": "Resistant to bludgeoning, piercing, and slashing damage, and immune to many conditions.",
+    "weaknesses": "Low offensive power and relies on numbers for effectiveness.",
+    "attacks": "Bites that deal piercing damage, fluctuating based on hit points.",
+    "most_powerful_ability": "Crawling Swarm, which disrupts enemy spellcasting.",
+    "equipment": null,
+    "senses": "Keen senses with a perception score of 8, granting very poor awareness.",
+    "skills": "High stealth modifier of +11, making it very good at remaining unseen until attacking.",
+    "additional_information": [
+        "Can occupy the same space as other creatures and move through tiny openings.",
+        "Cannot regain hit points or gain temporary hit points.",
+        "Effective in larger numbers to create challenges for players.",
+        "Can be a nuisance in combat by hindering spellcasters.",
+        "Often used to create tactical advantages in encounters."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "swarm of tiny insects that disrupt spells",
+        "insect swarm that moves through small openings",
+        "overwhelming swarm with high stealth",
+        "tiny creatures that hinder spellcasting",
+        "resilient swarm immune to conditions"
+    ]
+}

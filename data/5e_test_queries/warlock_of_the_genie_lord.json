@@ -1,0 +1,25 @@
+{
+    "name": "Warlock Of The Genie Lord",
+    "queries": [
+        {
+            "query": "humanoid with spellcasting and elemental damage resistance",
+            "variant": "spellcasting humanoid that has resistance to elemental damage"
+        },
+        {
+            "query": "medium creature that can fly and summon elementals",
+            "variant": "medium-sized being that can conjure elementals and fly"
+        },
+        {
+            "query": "Warlock that deals burst damage with elemental spells",
+            "variant": "warlock capable of delivering burst damage through elemental spells"
+        },
+        {
+            "query": "creature with high Charisma and resistance to acid and fire",
+            "variant": "being with elevated Charisma and resistant to acid and fire damage"
+        },
+        {
+            "query": "genie-themed warlock with special elemental weapons",
+            "variant": "warlock inspired by genies that uses unique elemental weapons"
+        }
+    ]
+}

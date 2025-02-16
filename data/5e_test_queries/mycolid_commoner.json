@@ -1,0 +1,25 @@
+{
+    "name": "Mycolid Commoner",
+    "queries": [
+        {
+            "query": "small plant creature with potent poison abilities that lives in the wild",
+            "variant": "plant creature that is small and has strong poison abilities living in the wilderness"
+        },
+        {
+            "query": "fungal monster that can communicate telepathically and has high wisdom",
+            "variant": "monster made of fungus that can talk with telepathy and has good wisdom"
+        },
+        {
+            "query": "creature with low physical power but excels in stealth and perception",
+            "variant": "monster that lacks physical strength but is great at stealth and perceiving surroundings"
+        },
+        {
+            "query": "mycolid that heals by eating rotting vegetation and can slow its enemies",
+            "variant": "mycolid creature that regains health from rotting plants and can make enemies slow down"
+        },
+        {
+            "query": "plant-like being that inflicts poison damage and resists exhaustion",
+            "variant": "being that looks like a plant, causing poison damage and resisting tiring effects"
+        }
+    ]
+}

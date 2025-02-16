@@ -1,0 +1,54 @@
+{
+    "name": "Elder Shadow Drake",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 114,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 60 ft., fly 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "stealth",
+        "cold damage",
+        "darkness"
+    ],
+    "adjectives": [
+        "formidable",
+        "shadowy",
+        "chaotic",
+        "powerful"
+    ],
+    "description": "The Elder Shadow Drake is a large dragon characterized by its chaotic evil alignment and formidable presence, featuring a menacing physique capable of seamless stealth in darkness.",
+    "memorable": "Its Shadow Sight ability enables it to excel in dim light or darkness, making it a lethal ambusher despite its vulnerabilities.",
+    "goals": "To dominate its territory and ambush intruders using stealth and surprise attacks.",
+    "relations": "Often encountered alongside other draconic or shadowy creatures, may have minions or allies in the dark.",
+    "environment": "Typically found in dark, shadowy locations where it can leverage its stealth abilities.",
+    "strengths": "High Strength grants powerful physical attacks, coupled with the ability to become invisible and teleport in darkness.",
+    "weaknesses": "Vulnerable to radiant damage and requires dim light or darkness to use its stealth abilities effectively.",
+    "attacks": "Utilizes a multiattack with a strong bite that deals piercing damage and tail slaps for bludgeoning damage, plus a devastating area cold damage breath weapon.",
+    "most_powerful_ability": "Stygian Breath creates a wide area of magical darkness that also inflicts cold damage, instilling fear and confusion in enemies.",
+    "equipment": null,
+    "senses": "Possesses darkvision that allows it to see in darkness up to 120 feet and a passive Perception of 15, enhancing its ambush capabilities.",
+    "skills": "Proficient in Perception and Stealth, making it highly effective in stealthy combat scenarios.",
+    "additional_information": [
+        "Immune to cold damage, making it resilient against certain attacks.",
+        "Can teleport with Shadow Step, providing exceptional mobility in combat.",
+        "Advantage on Perception checks in dim light or darkness due to Shadow Sight.",
+        "Uses Invisibility to reposition strategically before attacking.",
+        "Creates magical darkness with its Stygian Breath, disrupting visibility."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shadowy large dragon with breath attack",
+        "dragon that creates magical darkness and breathes cold",
+        "chaotic evil dragon utilizing stealth in shadows",
+        "powerful ambusher in dark environments",
+        "Elder Shadow Drake strategic combat tactics"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "White Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 32,
+    "ac": 16,
+    "srd": true,
+    "cr": "2",
+    "movement": "30 ft. walk, 15 ft. burrow, 60 ft. fly, 30 ft. swim",
+    "role": "null",
+    "tags": [
+        "dragon",
+        "icy",
+        "cold",
+        "wyrmling"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "ferocious",
+        "icy",
+        "stealthy"
+    ],
+    "description": "The White Dragon Wyrmling is a Medium-sized dragon distinguished by its icy abilities and formidable presence. Its scales are white like snow, making it blend into cold environments.",
+    "memorable": "Its Cold Breath ability allows it to unleash a devastating icy blast, making it a significant threat to unprepared adventurers.",
+    "goals": "To dominate cold environments and prey upon weaker creatures.",
+    "relations": "Associated with other chromatic dragons and likely to be found with minions or other wyrmlings.",
+    "environment": "Typically found in icy, snowy terrains or cold climates.",
+    "strengths": "Immunity to cold damage, effective mobility over icy surfaces.",
+    "weaknesses": "Low intelligence, making it less effective in strategic planning.",
+    "attacks": "Bite attack that delivers piercing and cold damage, and a powerful Cold Breath for area damage.",
+    "most_powerful_ability": "Cold Breath allows the dragon to exhale a chilling blast that can damage multiple enemies.",
+    "equipment": null,
+    "senses": "Blindsight up to 10 feet, allowing it to sense nearby creatures in complete darkness.",
+    "skills": "Proficient in Perception and Stealth, enhancing its effectiveness in ambushes.",
+    "additional_information": [
+        "Can move across icy surfaces without hindrance due to Ice Walk ability.",
+        "Cold Mastery enhances its mobility in snowy environments.",
+        "Has the ability to knock targets prone with Pounce attack.",
+        "Multiattack allows it to strike effectively with both bite and claw.",
+        "Higher than average Constitution makes it resilient in combat."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "icy dragon that breathes cold",
+        "medium-sized dragon with cold attacks",
+        "dragon that dominates snowy environments",
+        "stealthy creature with cold breath",
+        "ferocious wyrmling immune to cold"
+    ]
+}

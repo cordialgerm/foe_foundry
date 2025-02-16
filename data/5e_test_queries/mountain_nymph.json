@@ -1,0 +1,25 @@
+{
+    "name": "Mountain Nymph",
+    "queries": [
+        {
+            "query": "agile fey that can teleport and climb rocky surfaces",
+            "variant": "agile fay that climbs rocks and can teleport"
+        },
+        {
+            "query": "medium-sized creature with high dexterity and stealth skills",
+            "variant": "medium creature with stealth skills and high dexterity"
+        },
+        {
+            "query": "mountain dwelling fey that excels in ranged combat",
+            "variant": "fey that excels in range combat and lives in mountains"
+        },
+        {
+            "query": "clever and elusive fey with piercing longbow attacks",
+            "variant": "elusive fey with longbow attacks that pierce"
+        },
+        {
+            "query": "chaotic neutral fey that uses hunter's mark and spells",
+            "variant": "chaotic neutral fay that uses hunters mark and spells"
+        }
+    ]
+}

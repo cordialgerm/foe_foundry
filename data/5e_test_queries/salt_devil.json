@@ -1,0 +1,25 @@
+{
+    "name": "Salt Devil",
+    "queries": [
+        {
+            "query": "fiend with slashing attacks that can teleport",
+            "variant": "fiend that can teleport and uses slashing attacks"
+        },
+        {
+            "query": "medium-sized evil creature resistant to fire and immune to poison",
+            "variant": "medium creature with fire resistance and poison immunity"
+        },
+        {
+            "query": "lawful evil salt-themed monster with special abilities",
+            "variant": "salt-themed monster with unique abilities and lawful evil alignment"
+        },
+        {
+            "query": "combat monster that summons allies and drains water",
+            "variant": "monster in combat that can summon allies and has a water-draining ability"
+        },
+        {
+            "query": "creature with high Constitution that deals necrotic damage",
+            "variant": "monster with strong Constitution and necrotic damage abilities"
+        }
+    ]
+}

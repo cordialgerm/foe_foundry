@@ -1,0 +1,51 @@
+{
+    "name": "Clockwork Archon",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 201,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "30 ft. walking speed, 30 ft. hovering speed, 60 ft. flying speed",
+    "role": "Bruiser",
+    "tags": [
+        "construct",
+        "gargantuan",
+        "magic resistance",
+        "transport"
+    ],
+    "adjectives": [
+        "heavily armored",
+        "resilient",
+        "powerful",
+        "strategic"
+    ],
+    "description": "The Clockwork Archon is a formidable construct, impressively built with robust armor. It has a large frame suitable for transporting allies and features transforming weapons that can switch between bludgeoning and slashing damage.",
+    "memorable": "The archon's ability to act as an armored transport while also unleashing a devastating radiant attack makes it a unique battlefield presence.",
+    "goals": "To serve as a frontline fighter, protect smaller allies, and demolish structures or obstacles in its path.",
+    "relations": "May serve or be created by powerful spellcasters or construct makers, and often accompanies smaller allies in battle.",
+    "environment": "Typically found in regions of conflict, within magical workshops, or as guardians of important sites.",
+    "strengths": "High durability with 201 Hit Points and impressive melee capabilities due to high Strength score.",
+    "weaknesses": "Low Dexterity makes it vulnerable to ranged attacks, and limited versatility due to low Intelligence, Wisdom, and Charisma.",
+    "attacks": "Multiattack with a transforming weapon, dealing significant damage, and a powerful Fire from Heaven ability that affects multiple targets in a straight line.",
+    "most_powerful_ability": "Fire from Heaven unleashes a radiant beam that damages multiple targets in its path.",
+    "equipment": "Transforming weapon that can switch between a sword and hammer, providing versatility in damage type.",
+    "senses": "Equipped with darkvision up to 60 feet and passive perception of 10.",
+    "skills": null,
+    "additional_information": [
+        "Armored Transport capability for small creatures",
+        "Immutable Form grants immunity to shape-altering effects",
+        "Magic Resistance provides an advantage against spells",
+        "Siege Monster ability doubles damage to structures"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that carries and protects allies",
+        "massive armored warrior with radiant beam attack",
+        "powerful construct effective in demolishing structures",
+        "Gargantuan construct with transforming weapon",
+        "unyielding construct with magic resistance"
+    ]
+}

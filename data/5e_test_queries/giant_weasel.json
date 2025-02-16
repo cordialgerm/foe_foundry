@@ -1,0 +1,25 @@
+{
+    "name": "Giant Weasel",
+    "queries": [
+        {
+            "query": "agile predator that hunts in forests",
+            "variant": "predator that hunts in forests and is agile"
+        },
+        {
+            "query": "medium-sized weasel known for stealth and intelligence",
+            "variant": "medium weasel known for being stealthy and smart"
+        },
+        {
+            "query": "swift creature with sharp teeth that defends itself",
+            "variant": "creature with sharp teeth that defends itself quickly"
+        },
+        {
+            "query": "darkvision weasel that can grapple its prey",
+            "variant": "weasel that can see in the dark and grapple prey"
+        },
+        {
+            "query": "cunning beast found in grasslands with keen senses",
+            "variant": "cunning beast in grasslands known for its sharp senses"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Illhveli, Nauthveli",
+    "queries": [
+        {
+            "query": "gargantuan sea monster with fear-inducing aura",
+            "variant": "gargantuan ocean monster that has a dread-inducing aura"
+        },
+        {
+            "query": "aquatic monstrosity that can swallow creatures and has a powerful bellow",
+            "variant": "sea monstrosity capable of swallowing foes and unleashing a strong bellow"
+        },
+        {
+            "query": "monster with natural armor, high hit points, and cold vulnerability",
+            "variant": "creature with natural armor, a lot of hit points, and vulnerability to cold"
+        },
+        {
+            "query": "deep sea creature that grapples and restrains its prey",
+            "variant": "ocean creature that can grapple and hold its prey"
+        },
+        {
+            "query": "chaotic evil creature that excels in Strength and can swim quickly",
+            "variant": "creature of chaotic evil that has high Strength and fast swimming speed"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Bonespitter",
+    "queries": [
+        {
+            "query": "gargantuan creature that can restrain opponents and uses bone shards",
+            "variant": "large creature that uses bone shards and can restrain enemies"
+        },
+        {
+            "query": "monster with natural armor and powerful bite attack that thrives in combat",
+            "variant": "creature with strong armor and a powerful biting attack that excels in battle"
+        },
+        {
+            "query": "fearsome monstrosity that deals piercing damage and has a low dexterity",
+            "variant": "intimidating creature that inflicts piercing damage and has poor reflexes"
+        },
+        {
+            "query": "Bonespitter tactics in combat while using its Bony Body ability",
+            "variant": "Bonespitter battle strategies while utilizing its Bony Body skill"
+        },
+        {
+            "query": "large monster that has high hit points and a unique shard spray attack",
+            "variant": "big creature with high health and a special shard spray move"
+        }
+    ]
+}

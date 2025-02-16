@@ -1,0 +1,52 @@
+{
+    "name": "Corrupted Ushabti",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 97,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "undead",
+        "necrotic",
+        "scarabs"
+    ],
+    "adjectives": [
+        "fearsome",
+        "regenerative",
+        "magical"
+    ],
+    "description": "The Corrupted Ushabti is a Medium-sized undead creature that embodies the essence of neutral evil, appearing as a spirit inhabiting a colony of scarabs wrapped around a humanoid skeleton.",
+    "memorable": "Known for its regenerative abilities and necrotic weapon attacks that deal additional damage.",
+    "goals": "Destroy or hinder adventurers by utilizing dark magic and physical attacks.",
+    "relations": "Related to other undead creatures, might encounter mummies or necromancers.",
+    "environment": "Often found in tombs or necromancer lairs.",
+    "strengths": "Has necrotic weapon attacks, self-regeneration, and can move through tight spaces.",
+    "weaknesses": "Vulnerable to fire damage and susceptible to non-magical attacks.",
+    "attacks": "Uses a Multiattack with a Ceremonial Greatsword dealing slashing and additional necrotic damage; can unleash a Vomit Swarm attack to cover enemies in scarabs.",
+    "most_powerful_ability": "Vomit Swarm attack, which can deal significant area damage and cover opponents in damaging scarabs.",
+    "equipment": "Ceremonial Greatsword",
+    "senses": "Has darkvision of 60 ft. and possesses average passive perception.",
+    "skills": null,
+    "additional_information": [
+        "Regenerates 5 HP at the start of its turn if alive.",
+        "Weapon attacks deal extra necrotic damage.",
+        "Can move through openings large enough for tiny scarabs.",
+        "Does not require air, food, drink, or sleep."
+    ],
+    "damage_types": [
+        "necrotic",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature with scarabs",
+        "necrotic weapon attacks and regeneration",
+        "spirit inhabiting a colony of scarabs",
+        "monster that can crawl through small spaces",
+        "fearsome undead that attacks with swarms"
+    ]
+}

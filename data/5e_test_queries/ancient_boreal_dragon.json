@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Boreal Dragon",
+    "queries": [
+        {
+            "query": "gargantuan dragon with a devastating breath attack that lives in cold regions",
+            "variant": "gargantuann dragon that has a breath attack and is found in cold areas"
+        },
+        {
+            "query": "towering dragon that causes fear with its presence and has high armor class",
+            "variant": "tall dragon that intimidates others and features a high AC"
+        },
+        {
+            "query": "cold damage resistant dragon with exceptional melee capabilities",
+            "variant": "dragon resistant to cold damage and very strong in close combat"
+        },
+        {
+            "query": "ancient dragon that utilizes Ember Wreath ability and has high hit points",
+            "variant": "old dragon with Ember Wreath power and a lot of hit points"
+        },
+        {
+            "query": "legendary dragon that can frighten enemies and has fire immunity",
+            "variant": "legendary creature that frightens foes and is immune to fire attacks"
+        }
+    ]
+}

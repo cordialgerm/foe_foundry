@@ -1,0 +1,25 @@
+{
+    "name": "Bonepowder Ghoul",
+    "queries": [
+        {
+            "query": "small undead creature with high dexterity and necrotic abilities",
+            "variant": "small undead being with dexterity and necrotic powers"
+        },
+        {
+            "query": "menacing ghost that can pass through tight spaces and uses necrotic damage",
+            "variant": "intimidating spirit that moves through narrow gaps and deals necrotic harm"
+        },
+        {
+            "query": "creature that inflicts strength loss with biting attack and has spellcasting abilities",
+            "variant": "monster that reduces strength when it bites and casts spells"
+        },
+        {
+            "query": "undead foe with damage immunities and can create a whirlwind attack",
+            "variant": "undead adversary immune to damage and capable of creating a whirlwind"
+        },
+        {
+            "query": "ghoul that communicates in multiple languages and can inflict darakhul fever",
+            "variant": "ghoul that speaks various languages and spreads darakhul fever"
+        }
+    ]
+}

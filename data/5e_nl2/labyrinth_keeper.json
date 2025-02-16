@@ -1,0 +1,51 @@
+{
+    "name": "Labyrinth Keeper",
+    "creature_type": "Monstrosity",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 119,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "monstrosity",
+        "spellcaster",
+        "manipulator"
+    ],
+    "adjectives": [
+        "formidable",
+        "durable",
+        "cunning",
+        "chaotic"
+    ],
+    "description": "The Labyrinth Keeper is a Large Monstrosity with exceptional strength and spellcasting abilities, embodying chaos and evil.",
+    "memorable": "Its ability to manipulate its labyrinth and use spellcasting makes it a versatile and dangerous opponent.",
+    "goals": "To protect its maze-like territory and eliminate intruders.",
+    "relations": "Commonly associated with other chaotic evil creatures.",
+    "environment": "Typically found within complex mazes or labyrinths.",
+    "strengths": "Strong melee attacks combined with powerful spellcasting.",
+    "weaknesses": "Average Dexterity makes it vulnerable to attacks.",
+    "attacks": "Can deliver a devastating gore attack and follow up with a quick shortsword strike.",
+    "most_powerful_ability": "Reckless Caster allows it to have advantage on spell attacks at a cost.",
+    "equipment": null,
+    "senses": "Has darkvision to see in low-light conditions and a high passive Perception of 17.",
+    "skills": "Possesses strong perception skills with a +7 bonus.",
+    "additional_information": [
+        "Charge ability enhances its melee damage while altering battlefield dynamics.",
+        "Labyrinthine Recall skill enables it to navigate its territory effortlessly.",
+        "Innate spellcasting allows flexibility in both combat and utility.",
+        "Can cast various spells at will, including damaging and utility spells.",
+        "Dual-attack capability with both gore and shortsword increases its offensive options."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcaster with spells including acid arrow, fire bolt, and misty step.",
+    "test_queries": [
+        "monster that manipulates a maze",
+        "large minotaur-like creature with spells",
+        "chaotic guardian of labyrinth",
+        "powerful melee and spellcaster monster",
+        "labyrinth keeper abilities and attacks"
+    ]
+}

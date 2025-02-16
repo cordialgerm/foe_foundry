@@ -1,0 +1,25 @@
+{
+    "name": "Swarm of Wolf Spirits",
+    "queries": [
+        {
+            "query": "undead swarm that can fly and inflicts cold damage",
+            "variant": "flying undead swarm that deals cold damage"
+        },
+        {
+            "query": "large ghostly wolves that frighten enemies and resist fire",
+            "variant": "big ghost wolves that scare foes and are resistant to fire"
+        },
+        {
+            "query": "spiritual wolf horde immune to cold and poison",
+            "variant": "wolf spirit swarm immune to cold and poison damage"
+        },
+        {
+            "query": "creature that merges with walls and has a chilling howl ability",
+            "variant": "monster that blends into walls and can howl chillingly"
+        },
+        {
+            "query": "wolf spirits that bypass physical attacks and cause exhaustion",
+            "variant": "spirits of wolves that can ignore physical hits and induce exhaustion"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Subek",
+    "creature_type": "Humanoid",
+    "alignment": "Lawful Neutral",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "humanoid",
+        "aggressive",
+        "chaotic",
+        "flood"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "invulnerable"
+    ],
+    "description": "The Subek is a large humanoid creature with a chaotic and aggressive nature, especially during flood season. It possesses exceptional physical strength and natural armor, making it a dangerous opponent in melee combat.",
+    "memorable": "Its unique Blood Frenzy ability makes it particularly lethal when near food, enhancing its attacks against weakened foes.",
+    "goals": "The Subek often seeks to dominate its surroundings, especially when hungry or agitated.",
+    "relations": "Subek might be encountered in the company of other chaotic creatures or in situations involving floodwaters.",
+    "environment": "Typically found in areas prone to flooding or near water bodies.",
+    "strengths": "Very strong and resilient, capable of dealing significant melee damage with multiple attacks.",
+    "weaknesses": "Average Dexterity makes it slower and less evasive against faster enemies.",
+    "attacks": "The Subek can perform a multiattack, utilizing a Bite and two Claw attacks, dealing high piercing and slashing damage.",
+    "most_powerful_ability": "Flood Fever enhances aggression and melee attack efficiency against injured targets.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, aiding its ability to see in dark environments.",
+    "skills": "Proficient in History and Investigation, though loses efficiency during its Flood Fever state.",
+    "additional_information": [
+        "Can hold its breath underwater for 15 minutes.",
+        "Becomes extremely aggressive when hungry or during flood season.",
+        "Loses proficiency in certain skills when affected by Flood Fever."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive humanoid during flood season",
+        "substantial melee attacks from a large creature",
+        "formidable humanoid with frenzy ability",
+        "chaotic monster associated with flooding",
+        "strong creature that attacks when hungry"
+    ]
+}

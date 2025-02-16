@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Flame Dragon",
+    "queries": [
+        {
+            "query": "gigantic fire-breathing dragon that causes fear",
+            "variant": "huge dragon that breathes fire and instills fear"
+        },
+        {
+            "query": "dragon with heated body and fire damage immunity",
+            "variant": "flame dragon immune to fire damage and has heated body"
+        },
+        {
+            "query": "chaotic evil dragon that flies and has high Constitution",
+            "variant": "evil dragon that is chaotic, can fly, and has exceptional Constitution"
+        },
+        {
+            "query": "Gargantuan dragon with powerful presence and fire breath",
+            "variant": "massive dragon with an intimidating presence and breathes fire"
+        },
+        {
+            "query": "dragon that transforms into fire elemental and has multiattack",
+            "variant": "dragon with ability to shift into fire elemental and use multiattack"
+        }
+    ]
+}

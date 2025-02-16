@@ -1,0 +1,56 @@
+{
+    "name": "Adult Boreal Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic neutral",
+    "size": "Huge",
+    "hp": 212,
+    "ac": 19,
+    "srd": false,
+    "cr": "17",
+    "movement": "fly 80 ft., walk 40 ft., swim 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "boreal",
+        "fire immunity",
+        "cold resistance",
+        "legendary",
+        "frightening"
+    ],
+    "adjectives": [
+        "formidable",
+        "fearsome",
+        "powerful",
+        "intelligent"
+    ],
+    "description": "The Adult Boreal Dragon is a massive, imposing creature with scales that reflect shades of blue and white, reminiscent of icy caverns. Its powerful physique is complemented by large, majestic wings and sharp talons that strike fear into its enemies.",
+    "memorable": "Its Cinder Breath ability unleashes a devastating 60-foot cone of superheated air, capable of incinerating foes, while its Frightful Presence can instill fear in multiple adversaries at once.",
+    "goals": "The dragon tends to guard its territory fiercely, often seeking to assert dominance or protect treasures within its lair.",
+    "relations": "It may be found near other draconic or icy entities, serving as a challenging guardian to powerful artifacts or locations.",
+    "environment": "Typically found in icy mountains or caves, favoring cold climates where it can harness its elemental abilities.",
+    "strengths": "Possesses a high Strength and Constitution, making it a durable combatant. Blindsight allows it to sense foes even in darkness.",
+    "weaknesses": "Average Dexterity makes it less agile compared to its might, and its reliance on area damage can be mitigated by clever tactics.",
+    "attacks": "Utilizes a combination of bite, claw, and tail attacks alongside area-effect breath weapon, allowing for both single-target and multiple-target strategies.",
+    "most_powerful_ability": "Cinder Breath, which deals significant fire damage in a wide area and can incapacitate multiple enemies at once.",
+    "equipment": null,
+    "senses": "Has blindsight up to 60 feet, allowing it to perceive creatures even in total darkness.",
+    "skills": "Excels in Athletics and Perception, making it adept at maneuvering through terrain and detecting hidden foes.",
+    "additional_information": [
+        "Legendary Resistance allows it to succeed on failed saving throws three times a day.",
+        "High passive Perception of 23 makes it difficult to approach unnoticed.",
+        "Frightful Presence can frighten multiple enemies, disrupting their combat strategies.",
+        "The dragon\u2019s cold resistance makes it more resilient in harsh icy environments.",
+        "Successful intelligence and charm make it capable of manipulation and strategies beyond brute force."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ice-themed dragon",
+        "legendary dragon with fire breath",
+        "fantasy creature with cold resistance",
+        "boreal dragon with frightening presence",
+        "huge dragon in icy mountains"
+    ]
+}

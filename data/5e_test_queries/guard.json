@@ -1,0 +1,25 @@
+{
+    "name": "Guard",
+    "queries": [
+        {
+            "query": "humanoid soldier with armor and a spear protecting a city",
+            "variant": "armored humanoid soldier guarding a city with a spear"
+        },
+        {
+            "query": "medium guard with decent perception skills and low hit points",
+            "variant": "medium guard having low hit points and good perception skills"
+        },
+        {
+            "query": "guard that can parry attacks to protect allies and uses a spear",
+            "variant": "guard using a spear and able to parry attacks for allies"
+        },
+        {
+            "query": "watchman in chain shirt armor capable of ranged attacks",
+            "variant": "chain shirt armored watchman who can make ranged attacks"
+        },
+        {
+            "query": "low-level humanoid creature that protects nobles and merchants",
+            "variant": "humanoid low-level creature serving to protect merchants and nobles"
+        }
+    ]
+}

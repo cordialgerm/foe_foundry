@@ -1,0 +1,25 @@
+{
+    "name": "Mineral Ooze",
+    "queries": [
+        {
+            "query": "large ooze that can encase its enemies in acid",
+            "variant": "big ooze able to cover its foes in acid"
+        },
+        {
+            "query": "monster disguised as a pool that restricts movement",
+            "variant": "creature posing as a puddle that binds movement"
+        },
+        {
+            "query": "neutral ooze that is weak against ranged attacks",
+            "variant": "neutral creature with vulnerability to ranged attacks"
+        },
+        {
+            "query": "sluggish ooze with unique abilities in combat",
+            "variant": "slow ooze having special combat abilities"
+        },
+        {
+            "query": "blinded creature trapped in a mineralized ooze",
+            "variant": "creature unable to see while inside a hardening ooze"
+        }
+    ]
+}

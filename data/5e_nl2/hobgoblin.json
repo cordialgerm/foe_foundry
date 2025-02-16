@@ -1,0 +1,56 @@
+{
+    "name": "Hobgoblin",
+    "creature_type": "Humanoid",
+    "creature_subtype": "goblinoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 11,
+    "ac": 18,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "goblinoid",
+        "militaristic",
+        "tactical"
+    ],
+    "adjectives": [
+        "disciplined",
+        "organized",
+        "resilient",
+        "military"
+    ],
+    "description": "Hobgoblins are disciplined martial humanoids clad in armor and wielding swords or bows. They are larger and more organized than goblins, with a strong sense of hierarchy.",
+    "memorable": "Their tactical leadership and teamwork in battle, along with their military honor, set them apart from other goblinoids.",
+    "goals": "Typically found leading raids, conquering weaker creatures, and expanding their territories.",
+    "relations": "Often allied with other warlike races to form structured warbands.",
+    "environment": "Commonly seen in structured armies or warbands.",
+    "strengths": "Skilled tacticians with a robust combat style, especially when in groups.",
+    "weaknesses": "Lacks intelligence and charisma, making them ineffective in social situations.",
+    "attacks": "Attacks with either a longsword or longbow, utilizing teamwork to increase damage output.",
+    "most_powerful_ability": "Formation Movement allows them to reposition in combat without provoking opportunity attacks.",
+    "equipment": "Typically equipped with chain mail, shields, longswords, and longbows.",
+    "senses": "Possesses darkvision, allowing it to see in dim light as if it were bright light.",
+    "skills": "Expert in perception and survival, which helps in spotting hidden dangers.",
+    "additional_information": [
+        "Can engage in combat with a Multiattack feature, allowing two strikes per turn.",
+        "Utilizes Tactical Analysis to gain advantages on attack rolls against enemies.",
+        "Valued for their loyalty and strength within their societal structure.",
+        "Can inflict extra damage when allied with capable partners.",
+        "Typically encountered in structured platoons or formations."
+    ],
+    "damage_types": [
+        "slashing",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "military humanoid skilled in combat",
+        "disciplined soldier wielding sword or bow",
+        "tactical creature in organized warbands",
+        "goblinoid with darkvision and armor",
+        "medium humanoid known for formation movement"
+    ]
+}

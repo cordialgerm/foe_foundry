@@ -1,0 +1,48 @@
+{
+    "name": "Akhlut",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 120,
+    "ac": 14,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft., swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "stealthy"
+    ],
+    "description": "The Akhlut is a large, aquatic predator characterized by its powerful build and remarkable agility, making it a dangerous opponent both in water and on land.",
+    "memorable": "The Akhlut\u2019s ability to work effectively in packs and its devastating multiattack capabilities make it a uniquely fearsome adversary.",
+    "goals": "The Akhlut typically seeks to hunt and overpower its prey, often working in groups to take down larger targets.",
+    "relations": "It may be encountered alongside other similar aquatic predators or creatures that inhabit cold waters.",
+    "environment": "The Akhlut is usually found in aquatic environments, particularly in cold water regions.",
+    "strengths": "High strength allows it to deal significant melee damage, combined with good speed for both swimming and walking.",
+    "weaknesses": "It has low intelligence, limiting its cognitive abilities and strategies in combat.",
+    "attacks": "The Akhlut can bite with powerful jaws and slam with its tail, delivering piercing and bludgeoning damage respectively.",
+    "most_powerful_ability": "Pack Tactics allows the Akhlut to gain advantage on attack rolls against targets near its allies.",
+    "senses": "Possesses blindsight to 120 feet, enabling it to detect its surroundings without relying on sight, provided it is not deafened.",
+    "skills": "It has notable proficiency in stealth and perception, allowing it to remain undetected while tracking prey effectively.",
+    "additional_information": [
+        "Can hold its breath for up to 30 minutes, providing a significant advantage underwater.",
+        "Keen hearing and smell grant it advantage on perception checks that rely on these senses.",
+        "Its echolocation ability is critical for navigation in dark or murky waters."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "aquatic predator beast",
+        "large formidable hunter",
+        "cold-resistant predator",
+        "stealthy marine creature",
+        "multiattack water beast"
+    ]
+}

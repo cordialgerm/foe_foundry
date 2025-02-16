@@ -1,0 +1,25 @@
+{
+    "name": "Trollkin Ironmonger",
+    "queries": [
+        {
+            "query": "sturdy humanoid with regenerative abilities that uses a greatsword",
+            "variant": "sturdy humanoid that uses a greatsword and has regenerative powers"
+        },
+        {
+            "query": "medium creature with thick skin and high armor class",
+            "variant": "medium monster with tough skin and a high AC"
+        },
+        {
+            "query": "humanoid that excels in melee combat and has a vulnerability to fire",
+            "variant": "humanoid proficient in melee combat and weak against fire"
+        },
+        {
+            "query": "creature that has darkvision and can communicate in Trollkin",
+            "variant": "monster that can see in the dark and speaks Trollkin"
+        },
+        {
+            "query": "Trollkin Ironmonger combat tactics and special abilities",
+            "variant": "combat tactics and special skills of the Trollkin Ironmonger"
+        }
+    ]
+}

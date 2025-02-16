@@ -1,0 +1,25 @@
+{
+    "name": "Animated Instrument, Symphony",
+    "queries": [
+        {
+            "query": "gargantuan musical construct with combat abilities",
+            "variant": "gargantuan construct musician with combat skills"
+        },
+        {
+            "query": "musical creature that can control the battlefield and occupy spaces",
+            "variant": "creature that controls the battlefield with music and can share spaces"
+        },
+        {
+            "query": "animated instrument that causes fear and curses enemies",
+            "variant": "living musical instrument that curses foes and instills fear"
+        },
+        {
+            "query": "magically resistant construct that doesn't need food or sleep",
+            "variant": "construct immune to magic that requires no food or sleep"
+        },
+        {
+            "query": "gargantuan creature with powerful wind abilities and musical arrangements",
+            "variant": "huge creature with strong wind powers and musical capabilities"
+        }
+    ]
+}

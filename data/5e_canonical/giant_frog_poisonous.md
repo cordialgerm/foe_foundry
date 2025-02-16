@@ -1,6 +1,8 @@
 <MonsterName/>Frog, Giant Poisonous</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>11</AC>
+<HP/>44</HP>
 <summary>The Giant Poisonous Frog is a large beast that poses an interesting challenge for adventurers in any Dungeons & Dragons setting. With an Armor Class of 11 and 44 hit points, it has a relatively average durability for a creature of its Challenge Rating of 1. The frog's stats give it good strength with a +3 modifier, average dexterity at +1, and average constitution at +1, but it suffers from very bad intelligence and charisma scores, both at -4. The frog's strengths lie in its special abilities, notably its toxic skin, which can poison attackers and create mild hallucinations, and its ability to grapple and swallow prey, making it a formidable opponent in close combat. While it has the ability to leap great distances and swim with ease, it is predominantly a melee threat due to its capabilities in grappling and its dangerous bite.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ Overall, the Giant Poisonous Frog is a unique creature that combines offensive c
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Frog, Giant Poisonous
 
 *Large beast*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 
 - **Reeling Tongue.** The frog lashes out its tongue at one Large or smaller creature it can see within 20 feet of it. The target must succeed on a DC 13 STR save or be pulled up to 15 feet closer to the frog.
 
+</statblock>
 
 

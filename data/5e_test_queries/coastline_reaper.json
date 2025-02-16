@@ -1,0 +1,25 @@
+{
+    "name": "Coastline Reaper",
+    "queries": [
+        {
+            "query": "aquatic monster with glowing organs and tentacles",
+            "variant": "monster that glows underwater and has tentacle attacks"
+        },
+        {
+            "query": "large creature that paralyzes foes and lurks in water",
+            "variant": "big monster that hides in water and paralyzes enemies"
+        },
+        {
+            "query": "predatory monster with skull-like appearance and psychic damage",
+            "variant": "predator monster that looks like a skull and inflicts psychic harm"
+        },
+        {
+            "query": "creature that can breathe underwater and has high Dexterity",
+            "variant": "monster that breathes in water and is very dexterous"
+        },
+        {
+            "query": "fearsome aquatic beast with cold resistance and low intelligence",
+            "variant": "terrifying water monster that resists cold and is not smart"
+        }
+    ]
+}

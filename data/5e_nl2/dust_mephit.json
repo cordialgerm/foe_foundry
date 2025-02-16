@@ -1,0 +1,53 @@
+{
+    "name": "Dust Mephit",
+    "creature_type": "Elemental",
+    "alignment": "neutral evil",
+    "size": "Small",
+    "hp": 17,
+    "ac": 12,
+    "srd": true,
+    "cr": "1/2",
+    "movement": "30 ft. walking and flying at 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "mischievous",
+        "blinding"
+    ],
+    "adjectives": [
+        "small",
+        "deceptive",
+        "impish",
+        "dusty"
+    ],
+    "description": "A small, impish elemental creature made of swirling dust and sand, with a body that constantly shifts and ragged wings.",
+    "memorable": "The Dust Mephit delights in causing confusion and blinding foes with clouds of dust.",
+    "goals": "To create chaos and confusion in desolate areas while evading direct confrontation.",
+    "relations": "Often found alongside other elemental creatures or in areas plagued by dust storms.",
+    "environment": "Deserts and ruins, where it can hide in the swirling sands.",
+    "strengths": "Can blind or incapacitate enemies with its special abilities and has decent agility.",
+    "weaknesses": "Physically weak with low strength and constitution, vulnerable to fire damage.",
+    "attacks": "Uses claws to deal slashing damage, and can exhale a cone of blinding dust.",
+    "most_powerful_ability": "Blinding Breath, which creates a cloud of dust that blinds enemies.",
+    "equipment": null,
+    "senses": "Has darkvision with a range of 60 feet and a passive perception of 12.",
+    "skills": "Proficient in stealth and capable of surprising opponents effectively.",
+    "additional_information": [
+        "Explodes in a cloud of dust upon death, blinding nearby creatures.",
+        "Can blend in with dirt while motionless, making it difficult to detect.",
+        "Immune to poison damage and does not require air, sustenance, or sleep.",
+        "Can cast the sleep spell once per day without components.",
+        "Uses sand irritation to deal additional damage over time."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Can cast the sleep spell once per day using Wisdom as its spellcasting ability.",
+    "test_queries": [
+        "dust creature that can blind foes",
+        "mischievous elemental that hides in dirt",
+        "impish creature that creates dust storms",
+        "small flying creature with abilities to confuse",
+        "elemental that explodes into dust upon death"
+    ]
+}

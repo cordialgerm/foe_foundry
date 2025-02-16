@@ -1,0 +1,51 @@
+{
+    "name": "Living Shade",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 18,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealth",
+        "shadow",
+        "fey"
+    ],
+    "adjectives": [
+        "stealthy",
+        "elusive",
+        "shadowy"
+    ],
+    "description": "The Living Shade is a medium-sized fey creature that blends seamlessly into shadows, characterized by its stealthy nature and ability to navigate tight spaces with ease.",
+    "memorable": "Its ability to become almost invisible in dim light makes it a dangerous ambusher, while its vulnerability to radiant damage creates a unique tactical challenge.",
+    "goals": "To ambush and evade opponents, often lurking in dark environments.",
+    "relations": "May be encountered with other fey creatures or dark entities that utilize stealth.",
+    "environment": "Typically found in dimly lit areas or shadowy environments.",
+    "strengths": "High stealth abilities and immunity to many conditions make it a difficult foe to confront directly.",
+    "weaknesses": "Vulnerable to radiant damage, and its effectiveness diminishes in bright sunlight.",
+    "attacks": "Shadow Touch - a melee attack dealing cold damage, targeting nearby foes with a decent hit modifier.",
+    "most_powerful_ability": "Shadow Stealth - allows it to hide as a bonus action in dim light or darkness.",
+    "senses": "Has darkvision up to 60 feet, enabling it to see in dark or dim conditions.",
+    "skills": "Excels in stealth with a proficiency modifier of +6, making it hard to detect.",
+    "additional_information": [
+        "Amorphous ability allows movement through narrow spaces without squeezing.",
+        "Immunities to necrotic and poison damage enhance its survivability.",
+        "Condition immunities make it resilient against various combat effects.",
+        "Disadvantage in sunlight heavily restricts its combat effectiveness.",
+        "Cold damage from its attacks can be significant against certain enemies."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "stealthy shadowy fey creature",
+        "creature that thrives in dim light",
+        "elusive fey with cold damage attacks",
+        "ambusher that avoids sunlight",
+        "creature with notable stealth abilities"
+    ]
+}

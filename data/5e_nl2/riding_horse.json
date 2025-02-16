@@ -1,0 +1,50 @@
+{
+    "name": "Riding Horse",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 13,
+    "ac": 10,
+    "srd": true,
+    "cr": "1/4",
+    "movement": "60 ft., capable of navigating various terrains",
+    "role": null,
+    "tags": [
+        "mount",
+        "transport",
+        "beast"
+    ],
+    "adjectives": [
+        "fast",
+        "reliable",
+        "strong"
+    ],
+    "description": "A large, domesticated horse bred for speed and endurance, possessing a strong build and capable of carrying riders across long distances.",
+    "memorable": "Utilized as a dependable mount for adventurers, known for its stamina and speed.",
+    "goals": "Mainly serves as reliable transportation for travelers and soldiers.",
+    "relations": "Commonly encountered alongside adventurers or in stables with other domesticated animals.",
+    "environment": "Typically found in stables, farms, or accompanied by travelers and soldiers.",
+    "strengths": "High Strength score of 16 allows it to effectively engage in melee hoof attacks.",
+    "weaknesses": "Very low intelligence and charisma, limiting its cognitive abilities and understanding.",
+    "attacks": "Can deliver powerful melee attacks with its hooves, dealing bludgeoning damage.",
+    "most_powerful_ability": "Has a strong charge with its hooves that can inflict significant damage.",
+    "equipment": null,
+    "senses": "Possesses a passive perception of 10, indicating average awareness of surroundings.",
+    "skills": null,
+    "additional_information": [
+        "Spooked easily but can be trained for reliability.",
+        "Commonly used by messengers due to its speed.",
+        "Not aggressive, but capable of minor combat.",
+        "Bred for long distances rather than direct combat prowess.",
+        "Represents the quintessential mount for characters in quests."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "strong horse that can carry riders",
+        "large beast used for transportation",
+        "fast mount for adventurers",
+        "reliable horse for knights and soldiers",
+        "horse with strong melee attack"
+    ]
+}

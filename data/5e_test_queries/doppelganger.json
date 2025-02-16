@@ -1,0 +1,25 @@
+{
+    "name": "Doppelganger",
+    "queries": [
+        {
+            "query": "shapechanging monster that mimics humanoids",
+            "variant": "monster that mimics humanoids and can change shape"
+        },
+        {
+            "query": "pale gelatinous creature skilled in deception",
+            "variant": "gelatinous pale creature that is very good at deception"
+        },
+        {
+            "query": "intelligent monster that reads thoughts and shapeshifts",
+            "variant": "smart creature that can read thoughts and shapeshift"
+        },
+        {
+            "query": "ambush monster that deals extra damage when surprising",
+            "variant": "monster that ambushes and does more damage when surprising"
+        },
+        {
+            "query": "medium monstrosity that can assume the appearance of any humanoid",
+            "variant": "monstrosity of medium size that can look like any humanoid"
+        }
+    ]
+}

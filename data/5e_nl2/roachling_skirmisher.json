@@ -1,0 +1,50 @@
+{
+    "name": "Roachling Skirmisher",
+    "creature_type": "Humanoid",
+    "alignment": "Chaotic Neutral",
+    "size": "Small",
+    "hp": 21,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walking speed of 25 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "agile",
+        "sneaky",
+        "tricky"
+    ],
+    "adjectives": [
+        "chaotic",
+        "small",
+        "resilient"
+    ],
+    "description": "The Roachling Skirmisher is a small humanoid known for its agility. It has good Dexterity and excels in evading attacks.",
+    "memorable": "Immunity to diseases and a strong ability to remain hidden make it notable.",
+    "goals": "Typically seeks to evade direct confrontation and utilize agility in combat.",
+    "relations": "Might be found alongside other chaotic or stealth-based creatures.",
+    "environment": "Often encountered in urban or wild environments where it can remain hidden.",
+    "strengths": "Immunity to diseases and advantageous Constitution saving throws enhance survivability.",
+    "weaknesses": "Low Wisdom and Charisma scores lead to poor social interactions and perception.",
+    "attacks": "Utilizes a Shortsword for melee and a Dart for ranged attacks.",
+    "most_powerful_ability": "Its Hardy ability gives it immunity to diseases, aiding in its survival.",
+    "equipment": "Shortsword and Darts as weapons.",
+    "senses": "Possesses tremorsense up to 10 feet, allowing it to detect nearby movements.",
+    "skills": "Proficient in Acrobatics and Stealth, reflecting its agile nature.",
+    "additional_information": [
+        "Disadvantage on interactions due to Unpleasant Scent unless bathed",
+        "Can perform Acrobatics and Stealth activities effectively",
+        "Low challenge rating making it suitable for low-level encounters",
+        "Tricky nature makes it a difficult target to pin down",
+        "Survives by utilizing a combination of evasion and stealth tactics"
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "agile humanoid with unpleasant scent",
+        "small chaotic skirmisher with disease immunity",
+        "stealthy creature that uses a shortsword",
+        "tricky roachling with good agility and stealth",
+        "humanoid that excels in evading combat"
+    ]
+}

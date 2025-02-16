@@ -1,0 +1,25 @@
+{
+    "name": "Crocotta",
+    "queries": [
+        {
+            "query": "medium-sized monster that can mimic sounds and has a paralyzing gaze",
+            "variant": "monster that is medium-sized and can imitate animal sounds with a paralyzing gaze"
+        },
+        {
+            "query": "predatory creature with high strength that lives in various environments",
+            "variant": "predatory beast that has strong strength and can adapt to different surroundings"
+        },
+        {
+            "query": "cunning evil monster that attacks with bite and claw",
+            "variant": "evil creature that's clever and uses bite and claw to attack"
+        },
+        {
+            "query": "fast monster with stealth abilities resistant to metal attacks",
+            "variant": "swift creature that has stealth skills and is resistant to damage from metal weapons"
+        },
+        {
+            "query": "monster immune to being charmed that utilizes mimicry in combat",
+            "variant": "creature that's immune to charm effects and uses mimicry during fights"
+        }
+    ]
+}

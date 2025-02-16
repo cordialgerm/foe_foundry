@@ -1,0 +1,25 @@
+{
+    "name": "Sarcophagus Slime",
+    "queries": [
+        {
+            "query": "undead creature that drains vitality and instills fear",
+            "variant": "creature that drains life and instills fear, undead"
+        },
+        {
+            "query": "slime monster with necrotic attacks and amorphous movement",
+            "variant": "slime creature that uses necrotic attacks and can move through narrow spaces"
+        },
+        {
+            "query": "monster that thrives in darkness and has a frightening presence",
+            "variant": "creature that thrives in dark settings and has a fear-inducing ability"
+        },
+        {
+            "query": "medium undead with high Constitution and low Intelligence",
+            "variant": "medium undead with low Int and strong Constitution score"
+        },
+        {
+            "query": "creature that is poison immune and drains health with its gaze",
+            "variant": "monster immune to poison that can drain health using its gaze"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Daeodon",
+    "queries": [
+        {
+            "query": "large beast with powerful melee attacks and a fearsome call",
+            "variant": "big beast that has strong melee abilities and a terrifying scream"
+        },
+        {
+            "query": "slow but resilient monster that has a keen sense of smell",
+            "variant": "clumsy yet tough creature that can smell threats easily"
+        },
+        {
+            "query": "beast that can knock targets prone and has high strength",
+            "variant": "creature that can make opponents fall and has a strong physique"
+        },
+        {
+            "query": "monster with relentless ability and intimidating presence",
+            "variant": "creature that withstands damage and has a strong frightening aura"
+        },
+        {
+            "query": "Daeodon tactics in battle featuring melee and intimidation skills",
+            "variant": "strategies for using Daeodon in combat, emphasizing attacks and fear"
+        }
+    ]
+}

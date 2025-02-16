@@ -1,0 +1,55 @@
+{
+    "name": "Ur-Otyugh",
+    "creature_type": "Aberration",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 144,
+    "ac": 14,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 50 ft., swim 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "grappler",
+        "disease",
+        "strong"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "tenacious"
+    ],
+    "description": "The Ur-Otyugh is a large, grotesque creature with a strong physical presence, featuring tentacles for grappling and a maw filled with sharp teeth.",
+    "memorable": "Its ability to grapple and restrain foes while inflicting a debilitating disease makes it a uniquely formidable threat.",
+    "goals": "The Ur-Otyugh typically lurks in underground lairs or polluted waters, preying on unwary adventurers.",
+    "relations": "It may be encountered alongside other aberrations or in filthy, stagnant environments.",
+    "environment": "Usually found in underground lairs or polluted waters.",
+    "strengths": "High Strength and Constitution scores make it effective in grappling and resisting physical effects.",
+    "weaknesses": "Low Intelligence and Charisma suggest it can be manipulated in interactions or outsmarted.",
+    "attacks": "It grapples with its tentacles inflicting both bludgeoning and piercing damage, can slam targets into surfaces, and bites to spread disease.",
+    "most_powerful_ability": "Mental Fuzz, a psionic attack that can stun nearby creatures, significantly affecting combat dynamics.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive Perception of 12.",
+    "skills": null,
+    "additional_information": [
+        "Can use Legendary Resistance to negate saving throws twice per day",
+        "Swallows foes whole for continuous acid damage",
+        "Grapples Medium or smaller creatures effectively",
+        "Stuns targets with tentacle slams",
+        "Inflicts ongoing hit point reduction through disease"
+    ],
+    "damage_types": [
+        "poison",
+        "psychic",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "grotesque tentacled monster in polluted waters",
+        "large abomination that grapples and diseases",
+        "strong underwater creature with psionic attacks",
+        "monster with tentacles that can swallow whole",
+        "formidable underground foe that inflicts harm"
+    ]
+}

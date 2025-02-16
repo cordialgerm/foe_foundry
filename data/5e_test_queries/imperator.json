@@ -1,0 +1,25 @@
+{
+    "name": "Imperator",
+    "queries": [
+        {
+            "query": "huge aquatic creature that commands penguins and has high hit points",
+            "variant": "huge monster that commands penguins and has lots of hit points"
+        },
+        {
+            "query": "powerful bludgeoning monster with a melee attack and telepathy",
+            "variant": "strong melee creature with telepathy abilities and bludgeoning attacks"
+        },
+        {
+            "query": "hulking monstrosity that excels in icy environments and has area damage abilities",
+            "variant": "massive monster that is good in icy places and has area damage skills"
+        },
+        {
+            "query": "creature with strong swimming speed and a toboggan charge ability",
+            "variant": "monster that has good swimming speed and uses a toboggan charge"
+        },
+        {
+            "query": "bludgeoning damage inflicting creature that regurgitates stomach contents",
+            "variant": "creature that causes bludgeoning damage and can spit out its stomach contents"
+        }
+    ]
+}

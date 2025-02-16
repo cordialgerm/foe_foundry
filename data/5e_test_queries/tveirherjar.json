@@ -1,0 +1,25 @@
+{
+    "name": "Tveirherjar",
+    "queries": [
+        {
+            "query": "medium undead creature that thrives in battle and uses necrotic attacks",
+            "variant": "undead medium creature that excels in battle and has necrotic abilities"
+        },
+        {
+            "query": "lawful evil monster with high armor class and the ability to track opponents",
+            "variant": "evil lawful creature with high AC and opponent tracking abilities"
+        },
+        {
+            "query": "powerful undead that transforms einherjar at sundown and has a longsword",
+            "variant": "strong undead that turns einherjar into svoh at sunset and wields a longsword"
+        },
+        {
+            "query": "creature with battle frenzy ability that deals slashing and necrotic damage",
+            "variant": "monster with a battle frenzy skill that inflicts slashing and necrotic harm"
+        },
+        {
+            "query": "Tveirherjar's terrifying glare ability that paralyzes enemies",
+            "variant": "the terrifying glare power of Tveirherjar that can paralyze foes"
+        }
+    ]
+}

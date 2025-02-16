@@ -1,0 +1,25 @@
+{
+    "name": "Deep One Priest",
+    "queries": [
+        {
+            "query": "humanoid aquatic creature with spellcasting and fire vulnerability",
+            "variant": "aquatic humanoid creature that can cast spells and is weak against fire"
+        },
+        {
+            "query": "deep sea monster that charms and manipulates foes",
+            "variant": "monster from the deep sea that manipulates and charms its enemies"
+        },
+        {
+            "query": "tall humanoid with darkvision and melee combat abilities",
+            "variant": "medium humanoid with the ability to see in darkness and excel in melee fights"
+        },
+        {
+            "query": "monster specializing in memory manipulation and lightning attacks",
+            "variant": "creature that focuses on altering memories and uses lightning damage"
+        },
+        {
+            "query": "chaotic evil creature that breathes air and water and gains strength when damaged",
+            "variant": "chaotic evil being that can breathe both water and air and gets stronger when hurt"
+        }
+    ]
+}

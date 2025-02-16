@@ -1,6 +1,8 @@
 <MonsterName/>Talus Flow</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>3</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>102</HP>
 <summary>The Talus Flow is a large elemental creature characterized by its neutral evil alignment. This being has a unique role in combat, acting as both a potential ambush predator due to its ability to conceal itself as a pile of rocks and a formidable opponent with its ability to control the battlefield through terrain manipulation. It possesses significant defensive capabilities, with a natural armor class of 13 and a total of 102 hit points, making it reasonably difficult to take down for characters of lower levels. Notably, the Talus Flow has vulnerabilities to thunder damage, meaning it takes extra damage from such attacks. Its strengths lie in its various special abilities which provide tactical advantages in combat, while its relatively low Dexterity score can be classified as average, making it less agile in terms of dodging attacks.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Talus Flow can perform a "Multiattack," allowing it to 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Talus Flow
 
 *Large* *Elemental* *neutral evil*
@@ -51,5 +54,6 @@ Source: 5e_artisinal_monsters
 - **Grind:** Grinds its form over one creature in its space or that is grappled by it. Target takes 21 (6d6) bludgeoning damage (DC 13 Dex half). Flow regains hp equal to half the damage taken if creature is not a Construct or Undead.
 
 
+</statblock>
 
 

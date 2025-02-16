@@ -1,6 +1,8 @@
 <MonsterName/>Bunyip</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>8</CR>
+<AC/>14</AC>
+<HP/>150</HP>
 <summary>The Bunyip is a huge beast that serves as a formidable aquatic predator in the wilderness. With an impressive Armor Class of 14 and a hefty pool of 150 hit points, it can endure significant damage while dishing out powerful strikes with its melee attacks. This creature excels in both its swimming prowess and combat capabilities, making it dangerous in water-based encounters. While its Intelligence score is very low, indicating that it has limited cognitive abilities, its exceptional Strength and Constitution scores of 23 and 22, respectively, enhance its physical attacks and overall resilience. The Bunyip's challenge rating of 8 suggests it poses a serious threat to groups of adventurers, especially given its ability to frighten foes and restrain them with its grappling maneuvers. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In summary, the Bunyip is a powerful aquatic beast with strong melee capabilitie
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bunyip
 
 *Huge* *Beast*
@@ -58,5 +61,6 @@ Source: 5e_artisinal_monsters
 - **Terrifying Howl:** The bunyip unleashes a terrifying howl. Each creature of its choice within 120 feet that can see and hear it makes a DC 17 Wisdom saving throw, becoming frightened for 1 minute on a failure. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creatures saving throw is successful or the effect ends for it, the creature is immune to the bunyips Terrifying Howl for the next 24 hours.
 
 
+</statblock>
 
 

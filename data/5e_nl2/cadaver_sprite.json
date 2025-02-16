@@ -1,0 +1,53 @@
+{
+    "name": "Cadaver Sprite",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Tiny",
+    "hp": 20,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 20 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "Undead",
+        "Stealth",
+        "Invisibility",
+        "Ambusher"
+    ],
+    "adjectives": [
+        "sneaky",
+        "unsettling",
+        "cunning"
+    ],
+    "description": "The Cadaver Sprite is a tiny undead creature with exceptional agility and a sinister presence, using its stealth to ambush its prey.",
+    "memorable": "Its ability to turn invisible and the capacity to incapacitate foes with its poisonous attacks make it a formidable foe despite its small size.",
+    "goals": "To ambush and incapacitate unsuspecting victims, utilizing stealth and ranged attacks.",
+    "relations": "Often found in dark and eerie environments, the Cadaver Sprite may serve other malevolent undead or function in packs as ambushers.",
+    "environment": "Usually inhabits dark areas, such as graves or ruined buildings, where it can hide easily.",
+    "strengths": "Exceptional stealth abilities allow it to ambush targets effectively, while its invisibility adds to its tactical advantages.",
+    "weaknesses": "Vulnerable to bludgeoning damage, making it susceptible to certain types of attacks.",
+    "attacks": "Uses a shortbow for ranged attacks, dealing piercing damage and potentially poisoning foes, along with a melee attack that adds necrotic damage.",
+    "most_powerful_ability": "Invisibility, allowing it to evade detection until it strikes.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet, enabling it to see in darkness.",
+    "skills": "Highly skilled in stealth, boasting a +8 modifier, and reasonably perceptive with a +3 in perception.",
+    "additional_information": [
+        "Immunity to poison damage and conditions like exhaustion and being poisoned.",
+        "Low physical strength making it ineffective in direct melee confrontations.",
+        "Tactics rely on ambush and using poison to incapacitate targets.",
+        "Has a cunning intelligence allowing for strategic planning in attacks.",
+        "Offers a unique combination of melee and ranged capabilities for tactical versatility."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sneaky tiny undead with invisibility",
+        "ambushing poison creature in dark areas",
+        "undead sprite that uses stealth tactics",
+        "tiny poison wielding undead ambusher",
+        "creature that turns invisible and poisons"
+    ]
+}

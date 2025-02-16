@@ -1,0 +1,53 @@
+{
+    "name": "Shrieker",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 13,
+    "ac": 5,
+    "srd": true,
+    "cr": "0",
+    "movement": "immobile with a speed of 0 ft.",
+    "role": null,
+    "tags": [
+        "fungus",
+        "hazard",
+        "alarm"
+    ],
+    "adjectives": [
+        "large",
+        "auditory",
+        "environmental",
+        "stealthy"
+    ],
+    "description": "The Shrieker resembles ordinary fungus while motionless, blending seamlessly into dark, damp cave environments. When disturbed, it emits a loud, piercing shriek, serving as an alarm to predators and nearby guardians.",
+    "memorable": "Its shrill scream can attract dangerous creatures, making it a unique obstacle in cave exploration.",
+    "goals": "To act as an alarm system in its environment, alerting others to intruders.",
+    "relations": "Often found in clusters with other fungi, drawing attention from various predators.",
+    "environment": "Dark, damp caves or underground areas.",
+    "strengths": "False Appearance ability allows it to blend in with surroundings, making it difficult to detect until it shrieks.",
+    "weaknesses": "Vulnerability to fire damage and poor physical attributes renders it ineffective in direct combat.",
+    "attacks": "Can use Thunderous Burst to create a concentrated sound wave, and its primary action, a high-pitched Shriek, frightens intruders.",
+    "most_powerful_ability": "The ability to emit a continuous shriek that can be heard from 300 feet away, potentially alerting other creatures.",
+    "equipment": null,
+    "senses": "Has blindsight up to 30 feet, but is blind beyond that range.",
+    "skills": "Passive Perception is very low at 6, indicating poor awareness.",
+    "additional_information": [
+        "Emits a loud shriek when bright light or movement is detected.",
+        "Condition immunities include blinded, deafened, and frightened.",
+        "False Appearance allows it to act like ordinary fungus.",
+        "Cannot move or attack, exclusively serving as an environmental hazard.",
+        "Commonly found alongside other fungi, creating clusters in dark areas."
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fungus that shrieks in caves",
+        "audible plant that alerts predators",
+        "cave dwelling monster with a loud scream",
+        "stealthy fungus that acts as an alarm",
+        "creature that emits sound to deter intruders"
+    ]
+}

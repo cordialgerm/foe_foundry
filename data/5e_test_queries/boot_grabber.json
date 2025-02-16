@@ -1,0 +1,25 @@
+{
+    "name": "Boot Grabber",
+    "queries": [
+        {
+            "query": "small monster that can grapple larger opponents with its sticky body",
+            "variant": "tiny monster that can grab bigger enemies with its adhesive body"
+        },
+        {
+            "query": "creature with blinsight that resembles a dirty puddle",
+            "variant": "monster with blindsight that looks like a filthy puddle"
+        },
+        {
+            "query": "aberration with abilities to surprise foes and manipulate movement",
+            "variant": "weird creature with powers to ambush enemies and control their movement"
+        },
+        {
+            "query": "low hit point aberration that resists acid damage and is immune to prone condition",
+            "variant": "creature with few hit points that can resist acid attacks and can't be knocked prone"
+        },
+        {
+            "query": "ambush monster that adheres to prey and drags them closer",
+            "variant": "trap creature that sticks to victims and pulls them nearer"
+        }
+    ]
+}

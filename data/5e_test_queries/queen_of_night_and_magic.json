@@ -1,0 +1,25 @@
+{
+    "name": "Queen of Night and Magic",
+    "queries": [
+        {
+            "query": "magical fey creature with high Charisma and cold power",
+            "variant": "magical creature fey with high charisma and cold powers"
+        },
+        {
+            "query": "evil fey that dispels magic and attacks with a rapier",
+            "variant": "fey evil that uses rapier and dispels magic"
+        },
+        {
+            "query": "tall fey in a regal gown that resists cold damage",
+            "variant": "tall fey in a regal dress that resists cold"
+        },
+        {
+            "query": "Queen of Night and Magic with spellcasting and teleport abilities",
+            "variant": "Queen of Night and Magic with teleportation and spell casting"
+        },
+        {
+            "query": "medium fey that manipulates shadows and has high AC",
+            "variant": "medium fey that can manipulate shadows and has a high armor class"
+        }
+    ]
+}

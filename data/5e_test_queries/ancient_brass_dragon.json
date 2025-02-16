@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Brass Dragon",
+    "queries": [
+        {
+            "query": "large dragon with brass-colored scales that prefers deserts",
+            "variant": "large brass-scaled dragon that prefers warm desert habitats"
+        },
+        {
+            "query": "intelligent dragon that can breathe fire and use sleep gas",
+            "variant": "smart dragon that breathes fire and can put creatures to sleep"
+        },
+        {
+            "query": "gargantuan dragon with powerful fire breath and a love for storytelling",
+            "variant": "huge dragon with strong fire abilities and an interest in tales"
+        },
+        {
+            "query": "dragon that uses magic spells and has high wisdom",
+            "variant": "magic-using dragon with exceptional wisdom abilities"
+        },
+        {
+            "query": "brass dragon with legendary actions and change shape ability",
+            "variant": "brass-colored dragon that has legendary actions and can shapeshift"
+        }
+    ]
+}

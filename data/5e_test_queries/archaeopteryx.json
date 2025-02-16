@@ -1,0 +1,25 @@
+{
+    "name": "Archaeopteryx",
+    "queries": [
+        {
+            "query": "tiny flying beast with weak intelligence and evasive flying tactics",
+            "variant": "tiny beast that can fly and has low intelligence with evasive flight tactics"
+        },
+        {
+            "query": "nimble creature that attacks with beak and talons while avoiding retaliation",
+            "variant": "quick creature that uses its beak and talons to attack while dodging retaliation"
+        },
+        {
+            "query": "swift flying monster that has a passive perception of 12",
+            "variant": "fast flying creature with a passive perception score of 12"
+        },
+        {
+            "query": "unaligned tiny creature that moves quickly and has low hit points",
+            "variant": "unaligned small creature that is fast and has very few hit points"
+        },
+        {
+            "query": "beast with average dexterity that uses multiattack in combat",
+            "variant": "creature with decent dexterity using multiattack in fights"
+        }
+    ]
+}

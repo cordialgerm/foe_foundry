@@ -1,0 +1,25 @@
+{
+    "name": "Fomorian",
+    "queries": [
+        {
+            "query": "huge fey creature with charm abilities",
+            "variant": "huge fey monster that has charm powers"
+        },
+        {
+            "query": "creature that can manipulate foes with its gaze and is resistant to non-magical damage",
+            "variant": "monster that can control enemies with its stare and is immune to normal damage"
+        },
+        {
+            "query": "powerful fey that excels in persuasion and can change its form",
+            "variant": "strong fey creature that is good at persuasion and can transform"
+        },
+        {
+            "query": "tough fey monster dwelling in its lair with strong melee attacks",
+            "variant": "robust fey being residing in its domain with powerful physical strikes"
+        },
+        {
+            "query": "fey creature with high strength and unique eye vulnerability mechanic",
+            "variant": "fey monster that has great strength and a special eye targeting rule"
+        }
+    ]
+}

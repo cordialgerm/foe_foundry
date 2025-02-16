@@ -1,0 +1,53 @@
+{
+    "name": "Desert Slime",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 75,
+    "ac": 8,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "desert",
+        "ambush"
+    ],
+    "adjectives": [
+        "large",
+        "formidable",
+        "sandy"
+    ],
+    "description": "The Desert Slime resembles ordinary sand when still, making it difficult to detect. It can squeeze through narrow spaces and blend in with its environment.",
+    "memorable": "Its ability to restrain and damage foes while blending into the environment makes the Desert Slime a unique combat threat.",
+    "goals": "The Desert Slime aims to ambush and incapacitate creatures that come too close, utilizing its stealth.",
+    "relations": "It may be encountered in arid or sandy environments, often found lurking among dunes or desert ruins.",
+    "environment": "Arid environments, particularly deserts and sandy areas.",
+    "strengths": "Immunity to acid and fire damage; blending into the environment; unique restrained condition attack.",
+    "weaknesses": "Low Armor Class makes it easy to hit; poor Dexterity affects agility.",
+    "attacks": "Pseudopod attack deals bludgeoning and acid damage, with a significant restraining ability.",
+    "most_powerful_ability": "The 'Mire' ability can permanently restrain and damage a target, making it a serious danger.",
+    "equipment": null,
+    "senses": "It has blindsight out to 60 feet, enabling it to detect creatures without relying on sight.",
+    "skills": "Has a passive Perception score of 10.",
+    "additional_information": [
+        "Can occupy the same space as another creature, creating difficult terrain.",
+        "Does not require sleep, making it a constant threat.",
+        "Can move through spaces that are at least 1 foot wide without hindrance.",
+        "False Appearance trait allows it to disguise as ordinary sand.",
+        "Can only restrain one creature at a time with its Mire ability."
+    ],
+    "damage_types": [
+        "acid",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "sandy ooze that ambushes in deserts",
+        "large ooze that looks like sand",
+        "creature with acid attacks and stealth",
+        "desert slime that restrains opponents",
+        "ooze immune to acid and fire damage"
+    ]
+}

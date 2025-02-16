@@ -1,0 +1,52 @@
+{
+    "name": "Wardu",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 105,
+    "ac": 16,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 40 ft., walk 0 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "magic resistant",
+        "flying",
+        "debuffing"
+    ],
+    "adjectives": [
+        "tricky",
+        "mobile",
+        "undead"
+    ],
+    "description": "The Wardu is a Medium-sized aberration known for its blend of magical abilities and evasive maneuverability. It possesses a segmented central eye and a long proboscis that it uses to attack.",
+    "memorable": "The Wardu can inflict debilitating conditions on its foes while healing itself through its attacks, making it a challenging opponent.",
+    "goals": "To debilitate enemies and sustain itself in combat through its attacks.",
+    "relations": "May be encountered alongside other aberrations or magical creatures.",
+    "environment": "Often found in mystical or corrupted locales where magic is prevalent.",
+    "strengths": "Strong magical resistance and ability to inflict various debilitating conditions on opponents.",
+    "weaknesses": "Lack of physical movement on the ground limits its combat engagement options.",
+    "attacks": "Uses a multiattack strategy that includes a magical gaze followed by a melee proboscis attack.",
+    "most_powerful_ability": "Segmented Gaze, which can debilitate opponents with conditions like blinded or incapacitated.",
+    "equipment": null,
+    "senses": "Has a passive Perception of 13.",
+    "skills": null,
+    "additional_information": [
+        "Immune to exhaustion and the prone condition.",
+        "Regains hit points equal to half the damage dealt with its proboscis attack.",
+        "Has Flyby ability to avoid opportunity attacks while flying.",
+        "Magic Resistance provides advantage on saving throws against spells.",
+        "Targets attacked may suffer disadvantage on concentration checks if they are spellcasters."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature with magical resistance and flying speed",
+        "aberration that debuffs enemies and heals itself",
+        "creature that inflicts conditions with its gaze",
+        "mobile monster immune to exhaustion in battle",
+        "proboscis attack that restores health when hitting"
+    ]
+}

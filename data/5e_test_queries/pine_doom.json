@@ -1,0 +1,25 @@
+{
+    "name": "Pine Doom",
+    "queries": [
+        {
+            "query": "colossal plant creature that disguises itself as a tree and grapples foes",
+            "variant": "big plant monster that hides as a tree and catches opponents"
+        },
+        {
+            "query": "plant monster with sticky tar that is vulnerable to fire",
+            "variant": "plant beast with grappling tar that is weak to fire"
+        },
+        {
+            "query": "ambush predator that lives in forests and has double damage to structures",
+            "variant": "sneaky hunter in the woods with double damage to buildings"
+        },
+        {
+            "query": "huge tree-like monster that can restrain attackers and has high hit points",
+            "variant": "large tree creature that can hold back attackers and has a lot of health"
+        },
+        {
+            "query": "monster with natural armor that attacks with pinecones and sticky sap",
+            "variant": "creature with natural protection that strikes with pinecones and sticky sap"
+        }
+    ]
+}

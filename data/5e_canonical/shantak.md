@@ -1,6 +1,8 @@
 <MonsterName/>Shantak</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>123</HP>
 <summary>The Shantak is a formidable large monstrosity characterized by its lawful evil alignment. It boasts an impressive array of physical and magical capabilities that make it a significant threat in combat. With a strong Armor Class of 16 and a substantial Hit Points pool of 123, the Shantak can withstand considerable damage. Its ability to fly at 60 feet and walk at 10 feet grants it excellent mobility, allowing it to maneuver effectively during encounters. The Shantak's Challenge Rating of 5 suggests that it presents a moderate-to-high level of challenge to adventurers, depending on the party's composition and tactics. Notable strengths include its high Strength and Constitution scores, which enhance its combat effectiveness and durability, as well as a suite of special abilities that provide it with advantages in various situations. However, its lower Intelligence and Charisma scores indicate weaknesses in social and mental contests, making it less versatile outside of combat.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Shantak can perform a Multiattack, making two attacks p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shantak
 
 *Large* *Monstrosity* *lawful evil*
@@ -54,5 +57,6 @@ Source: 5e_artisinal_monsters
 - **Insane Tittering (Recharge 4-6):** The shantak emits a horrific screech. Each non-shantak creature within 60 feet of it that can hear it must succeed on a DC 15 Constitution saving throw or be frightened until the end of the shantak's next turn. The shantak can choose to include or exclude its rider when using this action.
 
 
+</statblock>
 
 

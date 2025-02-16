@@ -1,0 +1,54 @@
+{
+    "name": "Deep Troll",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 63,
+    "ac": 15,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 30 feet and burrowing speed of 20 feet",
+    "role": "Bruiser",
+    "tags": [
+        "regeneration",
+        "multiattack",
+        "slashing damage",
+        "acid damage"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "intimidating",
+        "oozing"
+    ],
+    "description": "The Deep Troll is a large, hulking giant known for its oozing flesh and regenerative capabilities. It has distinctive features such as a grotesque appearance with impressive strength, capable of overwhelming foes in combat.",
+    "memorable": "The Deep Troll can spawn oozing duplicates of itself, increasing the threat level during encounters.",
+    "goals": "To overwhelm and defeat adventurers through sheer strength and the creation of oozing allies.",
+    "relations": "Related to other trolls and oozes, it may be encountered in areas where these creatures coexist.",
+    "environment": "Typically found in underground or cavernous environments.",
+    "strengths": "Remarkable regenerative ability allowing it to recover health rapidly and the capacity to create independent allies from its own flesh.",
+    "weaknesses": "Vulnerable to fire damage, which temporarily disables its regeneration ability.",
+    "attacks": "Utilizes Multiattack to deliver a powerful bite and claw strikes, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Oozing Body, which allows it to create independent oozing allies when it takes substantial damage in combat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet, enhancing its ability to detect foes in dark environments.",
+    "skills": null,
+    "additional_information": [
+        "Can squeeze through small openings with Malleable Internal Structure.",
+        "Very low Intelligence, Wisdom, and Charisma scores.",
+        "Relies heavily on physical combat rather than cunning or social interactions.",
+        "The oozing duplicates it creates can persist for up to one week.",
+        "Extremely durable due to its high hit points and regenerative abilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant monster that can regenerate and create allies",
+        "bulky troll with acid attacks in caves",
+        "deep troll with oozing body ability",
+        "resilient giant that loves to overwhelm foes",
+        "chaotic evil troll with unique regeneration"
+    ]
+}

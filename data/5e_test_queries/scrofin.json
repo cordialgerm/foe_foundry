@@ -1,0 +1,25 @@
+{
+    "name": "Scrofin",
+    "queries": [
+        {
+            "query": "medium fey creature with grappling abilities and resilience in battle",
+            "variant": "fey creature medium size that grapples well and is resilient in combat"
+        },
+        {
+            "query": "playful monster that can restrain larger opponents and uses bludgeoning attacks",
+            "variant": "playful creature that restrains bigger monsters and attacks with bludgeoning damage"
+        },
+        {
+            "query": "lawful neutral fey with strong constitution and expertise in wrestling",
+            "variant": "fey of lawful neutral alignment with high constitution and wrestling skills"
+        },
+        {
+            "query": "monster with strong physical power who survives lethal damage and has low intelligence",
+            "variant": "creature with high physical strength that can take lethal damage and has low smarts"
+        },
+        {
+            "query": "durable fey that gains advantage when angry and performs multiple attacks",
+            "variant": "tough fey that gets benefits when angry and can make multiple attacks"
+        }
+    ]
+}

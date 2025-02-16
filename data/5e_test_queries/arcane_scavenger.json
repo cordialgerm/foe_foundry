@@ -1,0 +1,25 @@
+{
+    "name": "Arcane Scavenger",
+    "queries": [
+        {
+            "query": "large construct that can fly and has truesight",
+            "variant": "big construct that can fly and has true sight"
+        },
+        {
+            "query": "magic-resistant monster with high intelligence and bludgeoning damage immunity",
+            "variant": "magic resistant creature with high intellegence and immunity to bludgeoning damage"
+        },
+        {
+            "query": "resilient creature that doubles its speed when low on health",
+            "variant": "tough creature that increases its speed when health drops"
+        },
+        {
+            "query": "combat-worthy construct with spellcasting abilities and high dexterity",
+            "variant": "battle-ready construct that can cast spells and has high dexterity"
+        },
+        {
+            "query": "explosive creature that deals force damage upon destruction",
+            "variant": "explosive monster that does force damage when it dies"
+        }
+    ]
+}

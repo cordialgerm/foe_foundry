@@ -1,0 +1,25 @@
+{
+    "name": "Star Drake",
+    "queries": [
+        {
+            "query": "large dragon with high wisdom and magical attacks",
+            "variant": "big dragon with magical attacks and high wisdom"
+        },
+        {
+            "query": "dragon that can teleport and deals force damage",
+            "variant": "drake that deals force damage and can teleport"
+        },
+        {
+            "query": "neutral dragon that hates being blinded and uses special abilities",
+            "variant": "neutral dragon with a dislike for blindness and uses special powers"
+        },
+        {
+            "query": "dragon with damage immunities to cold and fire in combat",
+            "variant": "dragon immune to cold and fire damage in fights"
+        },
+        {
+            "query": "Star Drake abilities and magical resistances",
+            "variant": "abilities of Star Drake and its magical resistances"
+        }
+    ]
+}

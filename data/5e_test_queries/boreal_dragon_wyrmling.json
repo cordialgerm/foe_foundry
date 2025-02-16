@@ -1,0 +1,25 @@
+{
+    "name": "Boreal Dragon Wyrmling",
+    "queries": [
+        {
+            "query": "icy dragon that can breathe fire and flies",
+            "variant": "dragon that flies and breathes fire with an icy touch"
+        },
+        {
+            "query": "medium chaotic neutral dragon with fire breath and good strength",
+            "variant": "chaotic neutral medium dragon with great strength and fire breathing"
+        },
+        {
+            "query": "dragon with high armor class and icy breath ability",
+            "variant": "creature with icy breath and strong armor class"
+        },
+        {
+            "query": "Boreal Dragon Wyrmling combat tactics and abilities",
+            "variant": "combat abilities and tactics of the Boreal Dragon Wyrmling"
+        },
+        {
+            "query": "creature that resists cold damage and has good endurance",
+            "variant": "monster that endures well and is resistant to cold attacks"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Mi-Go",
+    "queries": [
+        {
+            "query": "creature with psychic abilities that can fly and releases poison spores",
+            "variant": "flying creature with psychic powers that releases spores and poisons"
+        },
+        {
+            "query": "intelligent monster that does not need air and has darkvision",
+            "variant": "smart monster that can see in darkness and doesn't require air"
+        },
+        {
+            "query": "plant creature with high intelligence and cold resistance",
+            "variant": "plant type monster with high INT and resistance to cold"
+        },
+        {
+            "query": "monster that grapples foes and has a claw attack",
+            "variant": "creature that can grapple enemies and uses claw attacks"
+        },
+        {
+            "query": "medium plant creature that attacks with poisonous spores",
+            "variant": "medium-sized plant monster that uses poison spores to attack"
+        }
+    ]
+}

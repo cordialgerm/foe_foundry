@@ -1,0 +1,25 @@
+{
+    "name": "Wormhearted Suffragan",
+    "queries": [
+        {
+            "query": "medium undead creature that controls lesser undead and inflicts diseases",
+            "variant": "undead medium creature that inflicts diseases and controls minions"
+        },
+        {
+            "query": "chaotic evil creature with necrotic damage and radiant vulnerabilities",
+            "variant": "creature that is chaotic evil with vulnerabilities to radiant damage and necrotic attacks"
+        },
+        {
+            "query": "creature immune to necrotic damage that raises the dead to fight for it",
+            "variant": "creature that raises dead and is immune to necrotic damage"
+        },
+        {
+            "query": "undead horror with high dexterity and constitution that uses disease in combat",
+            "variant": "undead creature that uses diseases in combat and has high dexterity and constitution"
+        },
+        {
+            "query": "Wormhearted Suffragan's abilities to animate the dead and resist magic",
+            "variant": "abilities of the Wormhearted Suffragan to resist magic and animate dead"
+        }
+    ]
+}

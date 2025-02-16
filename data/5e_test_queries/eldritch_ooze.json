@@ -1,0 +1,25 @@
+{
+    "name": "Eldritch Ooze",
+    "queries": [
+        {
+            "query": "large ooze with maddening psychic abilities and acid resistance",
+            "variant": "big ooze that has maddening psychic powers and is immune to acid"
+        },
+        {
+            "query": "slow-moving ooze that can climb walls and split on damage",
+            "variant": "sluggish ooze that is able to climb surfaces and divides when hit"
+        },
+        {
+            "query": "creature that deals psychic damage and reduces intelligence",
+            "variant": "monster that inflicts psychic harm and drops intelligence levels"
+        },
+        {
+            "query": "formidable ooze with high hit points and low armor class",
+            "variant": "strong ooze that has lots of hit points but a low AC"
+        },
+        {
+            "query": "blind ooze that is resistant to cold and lightning damage",
+            "variant": "sightless ooze immune to cold and lightning attacks"
+        }
+    ]
+}

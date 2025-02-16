@@ -1,0 +1,25 @@
+{
+    "name": "Thug",
+    "queries": [
+        {
+            "query": "brutal humanoid enforcer that works for crime lords",
+            "variant": "humanoid thug that works for crime lords and is brutal"
+        },
+        {
+            "query": "medium humanoid that excels in close combat and intimidation",
+            "variant": "humanoid with high melee skills and intimidation in close combat"
+        },
+        {
+            "query": "strong thug with a heavy crossbow that prefers melee",
+            "variant": "strong humanoid thug that has heavy crossbow and prefers fighting up close"
+        },
+        {
+            "query": "thug that operates in the underbelly of cities using brute strength",
+            "variant": "humanoid thug that uses strength and operates in city underbelly"
+        },
+        {
+            "query": "enforcer with pack tactics and a sucker punch ability",
+            "variant": "enforcer that has pack tactics and can use a sucker punch"
+        }
+    ]
+}

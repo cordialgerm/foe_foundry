@@ -1,0 +1,25 @@
+{
+    "name": "Lava Keeper",
+    "queries": [
+        {
+            "query": "Huge fire elemental that controls volcanic landscapes",
+            "variant": "huge fire elemental who controls volcano landscapes"
+        },
+        {
+            "query": "creature with immunity to fire and poison in a volcanic environment",
+            "variant": "being with fire and poison immunity in volcanic habitat"
+        },
+        {
+            "query": "giant elemental that uses environmental tactics and has strong melee attacks",
+            "variant": "giant elemental using environmental strategies and powerful melee attacks"
+        },
+        {
+            "query": "powerful lava guardian with innate spellcasting abilities",
+            "variant": "strong lava guardian who has innate spell-casting powers"
+        },
+        {
+            "query": "elemental guardian that punishes close-range attackers with fire damage",
+            "variant": "guardian elemental that punishes close attackers with fire"
+        }
+    ]
+}

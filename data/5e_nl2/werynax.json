@@ -1,0 +1,53 @@
+{
+    "name": "Werynax",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "magical",
+        "area damage",
+        "resilient",
+        "stealthy"
+    ],
+    "adjectives": [
+        "formidable",
+        "strategically versatile",
+        "durable"
+    ],
+    "description": "Werynax is a large, formidable monstrosity with exceptional physical prowess and a striking presence, characterized by its natural armor, wings, and potent magical abilities.",
+    "memorable": "Werynax can unleash devastating area attacks while also maintaining good defenses against magical assaults.",
+    "goals": "Werynax seeks to control the battlefield, utilizing its mobility and unique abilities to overpower foes.",
+    "relations": "Often encountered with other magical creatures or as a guardian of specific locations due to its nature.",
+    "environment": "Typically found in magical or ancient environments where it can utilize its natural and arcane abilities.",
+    "strengths": "Good defenses against spells, powerful area control through Arcane Bombardment, and the ability to heal itself make it a notable opponent.",
+    "weaknesses": "Inability to communicate may limit its tactical capabilities in social or negotiation scenarios.",
+    "attacks": "Werynax can perform a multiattack consisting of one bite and two claw attacks, alongside a powerful area-effect attack.",
+    "most_powerful_ability": "Arcane Bombardment, which can stun multiple foes while dealing significant force damage.",
+    "equipment": null,
+    "senses": "Werynax has darkvision, allowing it to see in darkness as if it were dim light.",
+    "skills": "Skilled in athletics, stealth, and perception, enabling it to navigate various situations effectively.",
+    "additional_information": [
+        "Resistance to force damage provides an edge against certain magic.",
+        "Magic Resistance grants advantage on saving throws against spells and magical effects.",
+        "The Pounce ability enhances its effectiveness in melee combat.",
+        "Nature\u2019s Healing ability adds to its durability and survivability.",
+        "Has a high passive perception allowing it to notice hidden creatures easily."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster with magical abilities",
+        "creature that can stun multiple foes",
+        "resilient monster with healing powers",
+        "flying creature with powerful area attack",
+        "large beast that dominates the battlefield"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Gorgon</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>19 (natural armor)</AC>
+<HP/>114</HP>
 <summary>The Gorgon is a large, bull-like creature with metallic scales and horns, known for its ability to petrify its prey with a cloud of toxic, petrifying gas. Its body is covered in gleaming iron-like plates, providing it with natural armor that makes it nearly impervious to most attacks. Gorgons are aggressive and territorial, often charging at any intruders with their powerful horns. When threatened, they exhale a cloud of green gas that can instantly turn flesh to stone. These creatures are often found in remote forests or mountain valleys, guarding their territory fiercely.</summary>
 
 <summary>The Gorgon is a formidable and large monstrosity known for its brute strength and petrifying abilities. With a solid Armor Class of 19 and a substantial pool of 110 hit points, the Gorgon is quite durable in combat, making it a challenging foe for adventurers. Its challenge rating of 6 indicates that it poses a significant threat to parties of mid-level adventurers, rewarding them with 2,300 experience points upon defeat. The Gorgon excels in melee combat, utilizing its powerful Gore and Hooves attacks to inflict considerable damage. However, its intelligence is low, limiting its strategic capabilities. The Gorgon can also utilize its petrifying breath to immobilize and potentially eliminate foes, making it vital to manage position and distance during encounters.</summary>
@@ -49,6 +51,7 @@ Overall, the gorgon is a tough adversary that combines brute strength with a pot
 
 Source: 5e_srd
 
+<statblock>
 ## Gorgon
 
 *Large monstrosity, unaligned*
@@ -81,7 +84,8 @@ Source: 5e_srd
 
 ***Hooves***. *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (2d10+5) bludgeoning damage.
 
-***Petrifying Breath (Recharge 5-6)***. The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the *greater restoration* spell or other magic.
+***Petrifying Breath (Recharge 5-6)***. The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the *greater restoration* spell or other magic.</statblock>
+
 
 
 
@@ -89,6 +93,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gorgon
 
 *Large* *Monstrosity*
@@ -119,6 +124,7 @@ Source: 5e_artisinal_monsters
 - **Trample Underfoot:** The gorgon attacks a prone creature with its hooves.
 
 
+</statblock>
 
 
 
@@ -127,6 +133,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gorgon
 
 *Large monstrosity*
@@ -162,5 +169,6 @@ Source: 5e_artisinal_monsters
 
 - **Poisonous Retort.** When the gorgon is hit by an attack from a creature it can see within 10 feet of it, the gorgon can snort angrily, releasing a puff of poisonous gas at the creature. The attacker must succeed on a DC 16 CON save or be poisoned until the end of its next turn.
 
+</statblock>
 
 

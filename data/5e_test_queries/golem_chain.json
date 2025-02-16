@@ -1,0 +1,25 @@
+{
+    "name": "Golem, Chain",
+    "queries": [
+        {
+            "query": "large mechanical monster that grapples enemies and inflicts diseases",
+            "variant": "big machine creature that can restrain foes and spreads diseases"
+        },
+        {
+            "query": "durable construct that is immune to multiple conditions and has magical weapon attacks",
+            "variant": "tough golem that resists many effects and uses magic for its attacks"
+        },
+        {
+            "query": "iron chain monster with high hit points that can create prisons around enemies",
+            "variant": "metal linked creature that has a lot of health and can trap foes"
+        },
+        {
+            "query": "golem with Infernal Tetanus ability living in combat scenarios",
+            "variant": "mechanical being that uses Infernal Tetanus in battle situations"
+        },
+        {
+            "query": "unintelligent large construct that knows Infernal but cannot speak",
+            "variant": "dull big machine that understands Infernal language yet can't talk"
+        }
+    ]
+}

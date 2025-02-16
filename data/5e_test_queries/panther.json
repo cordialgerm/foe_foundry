@@ -1,0 +1,25 @@
+{
+    "name": "Panther",
+    "queries": [
+        {
+            "query": "stealthy black big cat that ambushes in the jungle",
+            "variant": "stealthy big black cat that ambushes in the jungle"
+        },
+        {
+            "query": "agile creature with keen smell that prefers forests",
+            "variant": "agile beast with enhanced smell that likes forest environments"
+        },
+        {
+            "query": "medium-sized predator known for its speed and slashing attacks",
+            "variant": "medium predator known for quickness and clawing attacks"
+        },
+        {
+            "query": "black furred cat known for its lethal hunting prowess and stealthy tactics",
+            "variant": "cat with black fur known for deadly hunting skills and stealth tactics"
+        },
+        {
+            "query": "predator that climbs well and uses ambush tactics in combat",
+            "variant": "predatory creature that climbs effectively and employs ambush strategies in battle"
+        }
+    ]
+}

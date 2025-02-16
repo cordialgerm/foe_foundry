@@ -1,0 +1,51 @@
+{
+    "name": "Pech Stonemaster",
+    "creature_type": "Elemental",
+    "alignment": "neutral good",
+    "size": "Small",
+    "hp": 65,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "20 ft. walking, 10 ft. climbing",
+    "role": "Bruiser",
+    "tags": [
+        "elemental",
+        "stone",
+        "spellcaster",
+        "combat"
+    ],
+    "adjectives": [
+        "rocky",
+        "powerful",
+        "stunning"
+    ],
+    "description": "The Pech Stonemaster is a small, rocky elemental creature with a robust physique and carries a pick and a hammer, representing its affinity for stone.",
+    "memorable": "Its ability to stun enemies with a melee attack and powerful spellcasting makes it a formidable combatant.",
+    "goals": "Engaging in combat and using its abilities to protect and assist allies.",
+    "relations": "Often found in the company of other earth elementals or druids and could serve as a guardian of stone.",
+    "environment": "Usually found in rocky terrains, caverns, and areas rich in stone.",
+    "strengths": "Resilient with powerful melee attacks and innate spellcasting, capable of controlling the battlefield.",
+    "weaknesses": "Light sensitivity imposes disadvantage in brightly lit conditions.",
+    "attacks": "Multiattack options with a pick and a hammer, capable of stunning foes if both attacks hit.",
+    "most_powerful_ability": "The ability to stun an opponent with its multiattack if both strikes are successful.",
+    "equipment": "Pick and hammer.",
+    "senses": "Passive perception of 15, allowing it to notice hidden threats effectively.",
+    "skills": "Proficient in athletics and perception, enhancing its physical capabilities and awareness.",
+    "additional_information": [
+        "Resistance to piercing and slashing damage while in contact with stone.",
+        "Innate spellcaster capable of casting 'Thunderwave' at will and 'Shatter' three times daily.",
+        "Average intelligence, suggesting a reliance on instinct and primal abilities.",
+        "Condition immunity to common detrimental effects like exhaustion and paralysis.",
+        "Durable combatant with a strong Constitution."
+    ],
+    "damage_types": [],
+    "spellcasting": "Innate spellcasting using Wisdom, with abilities including 'Thunderwave' at will and 'Shatter' three times per day.",
+    "test_queries": [
+        "small stone elemental with stunning attack",
+        "earth creature that can control thunder",
+        "Pech Stonemaster's melee abilities and spells",
+        "rocky elemental with spellcasting powers",
+        "elemental known for its stone resilience"
+    ]
+}

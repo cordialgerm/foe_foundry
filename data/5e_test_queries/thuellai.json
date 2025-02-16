@@ -1,0 +1,25 @@
+{
+    "name": "Thuellai",
+    "queries": [
+        {
+            "query": "huge elemental creature that inflicts cold damage",
+            "variant": "huge elemental being that deals cold damage"
+        },
+        {
+            "query": "threatening elemental monster with chilling presence",
+            "variant": "dangerous elemental creature that has a chilling aura"
+        },
+        {
+            "query": "fast cold-based monster with immunity to poisons",
+            "variant": "quick cold-themed creature immune to poisons"
+        },
+        {
+            "query": "elemental being that extinguishes flames and freezes water",
+            "variant": "elemental creature that can put out flames and freeze water"
+        },
+        {
+            "query": "chaotic neutral elemental that can see through snow",
+            "variant": "chaotic neutral being that sees well in snowy conditions"
+        }
+    ]
+}

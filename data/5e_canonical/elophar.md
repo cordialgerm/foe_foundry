@@ -1,6 +1,8 @@
 <MonsterName/>Elophar</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>4</CR>
+<AC/>8</AC>
+<HP/>126</HP>
 <summary>The Elophar is a large undead creature rooted in chaotic evil, combining elements of terror and unpredictability. With its relatively low armor class of 8 and substantial hit points totaling 126, the Elophar can endure considerable damage, making it a formidable opponent at Challenge Rating 4. However, its strengths lie in its unique abilities and access to spells, which enable it to be a dynamic presence in combat. It harnesses chaotic energies, allowing it to unpredictably alternate between various personalities that dictate its behavior during encounters. Despite its high Constitution score of 20, which grants it an exceptional ability to resist damage, its low Dexterity score of 6 renders it somewhat sluggish and vulnerable to ranged attacks. Additionally, its damage and condition immunities to poison allow it to withstand specific types of attacks effectively.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ The Elophar can also perform a melee attack with its Slam action, using a +6 mod
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Elophar
 
 *Large* *Undead* *chaotic evil*
@@ -68,5 +71,6 @@ At will: acid splash, chill touch, poison spray
 - **Slam:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
 
 
+</statblock>
 
 

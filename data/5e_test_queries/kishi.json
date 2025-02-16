@@ -1,0 +1,25 @@
+{
+    "name": "Kishi",
+    "queries": [
+        {
+            "query": "fiend with two heads that casts spells",
+            "variant": "fiend that has two heads and can cast spells"
+        },
+        {
+            "query": "cold damage dealing chaotic evil monster",
+            "variant": "chaotic evil creature that deals cold damage"
+        },
+        {
+            "query": "medium sized fiend immune to poison",
+            "variant": "medium fiend that is immune to poison"
+        },
+        {
+            "query": "resilient monster with high armor class and deception skills",
+            "variant": "monster with high AC and good deception abilities"
+        },
+        {
+            "query": "Kishi's abilities against magical attacks and charm effects",
+            "variant": "abilities of Kishi related to magic and charm resistance"
+        }
+    ]
+}

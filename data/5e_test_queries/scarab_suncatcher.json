@@ -1,0 +1,25 @@
+{
+    "name": "Suncatcher Scarab",
+    "queries": [
+        {
+            "query": "gargantuan beast with environmental control and powerful bite attacks",
+            "variant": "huge beast that controls environment and has strong bite attacks"
+        },
+        {
+            "query": "monster that can silence spellcasting and burrows underground",
+            "variant": "creature that silences spells and digs underground"
+        },
+        {
+            "query": "agile creature that flies and deals double damage to structures",
+            "variant": "swift creature that can fly and causes double damage to buildings"
+        },
+        {
+            "query": "durable beast immune to charm and poison with strong physical attacks",
+            "variant": "tough monster resistant to charm and poison with powerful melee attacks"
+        },
+        {
+            "query": "beast that causes difficult terrain and has a low intelligence score",
+            "variant": "monster that creates hard ground to traverse and has very low intelligence"
+        }
+    ]
+}

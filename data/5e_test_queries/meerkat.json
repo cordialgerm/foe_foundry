@@ -1,0 +1,25 @@
+{
+    "name": "Meerkat",
+    "queries": [
+        {
+            "query": "small nimble creature with keen sight that can burrow",
+            "variant": "nimble small creature that burrows and has keen sight"
+        },
+        {
+            "query": "tiny beast with low hit points and poison resistance",
+            "variant": "beast that is tiny with low hp and resistance to poison"
+        },
+        {
+            "query": "cute desert animal that plays a minor role in gameplay",
+            "variant": "adorable animal in the desert that has a minor role in game"
+        },
+        {
+            "query": "meek creature that is easily defeated but has good perception",
+            "variant": "weak creature that can be easily defeated yet has decent perception"
+        },
+        {
+            "query": "melee creature with minimal combat capabilities and burrowing speed",
+            "variant": "creature that attacks in melee and has low combat skills plus burrowing ability"
+        }
+    ]
+}

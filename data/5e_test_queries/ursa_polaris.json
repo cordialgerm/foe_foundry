@@ -1,0 +1,25 @@
+{
+    "name": "Ursa Polaris",
+    "queries": [
+        {
+            "query": "large furry monster with cold attacks and snow camouflage",
+            "variant": "big furry creature that uses cold powers and has snow hiding skills"
+        },
+        {
+            "query": "monstrosity that is vulnerable to fire and has a strong bite attack",
+            "variant": "creature weak to fire with a powerful biting attack"
+        },
+        {
+            "query": "Ursa Polaris abilities including cold breath and hypnotic array",
+            "variant": "abilities of Ursa Polaris like freezing breath and mesmerizing light"
+        },
+        {
+            "query": "fierce ice monster that can swim and walk quickly",
+            "variant": "ferocious frozen creature able to swim and walk fast"
+        },
+        {
+            "query": "creature with keen smell and high hit points living in snowy areas",
+            "variant": "being with excellent smell and large health existing in snowy places"
+        }
+    ]
+}

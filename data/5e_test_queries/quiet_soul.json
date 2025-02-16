@@ -1,0 +1,25 @@
+{
+    "name": "Quiet Soul",
+    "queries": [
+        {
+            "query": "undead creature with a melancholic aura that can incapacitate enemies",
+            "variant": "creature that is undead and has a sad aura capable of making foes unconscious"
+        },
+        {
+            "query": "medium undead that blends in with corpses and causes unconsciousness",
+            "variant": "undead of medium size that looks like a corpse and can knock out opponents"
+        },
+        {
+            "query": "monster that relies on wisdom and has a psychic attack",
+            "variant": "creature using wisdom with a ranged psychic ability"
+        },
+        {
+            "query": "neutral evil undead with blindsight and cold immunity",
+            "variant": "undead that is neutral evil and can see without sight, immune to cold"
+        },
+        {
+            "query": "Quiet Soul abilities involving crowd control and perception",
+            "variant": "abilities of the Quiet Soul related to controlling groups and noticing threats"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Dust Grazer",
+    "creature_type": "Aberration",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 105,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 30 feet, grounded",
+    "role": null,
+    "tags": [
+        "poison",
+        "disease",
+        "grappling"
+    ],
+    "adjectives": [
+        "grotesque",
+        "mobile",
+        "dangerous"
+    ],
+    "description": "A large, grotesque aberration, the Dust Grazer is known for its tendrils and a unique ability called Death Spores. It has a very poor Dexterity and a remarkably high Constitution.",
+    "memorable": "It can potentially turn adversaries into Dust Grazers through its Death Spores ability upon death.",
+    "goals": "To inflict poison damage and incapacitate its foes.",
+    "relations": "Related to other aberrations or dangerous creatures that utilize poison or diseases.",
+    "environment": "Typically found in desolate or contaminated areas.",
+    "strengths": "High hit points, immunity to poison, and an ability to inflict ongoing damage through Death Spores.",
+    "weaknesses": "Very low Dexterity makes it vulnerable to ranged attacks.",
+    "attacks": "Uses a long-reaching Tendril attack for bludgeoning and acid damage, alongside the ability to absorb creatures.",
+    "most_powerful_ability": "Death Spores, which harms nearby creatures upon its death and can lead to their transformation into a Dust Grazer.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to navigate without sight.",
+    "skills": "Has a poor passive perception, limiting its awareness of hidden threats.",
+    "additional_information": [
+        "Immune to poisoned condition",
+        "Grapples and restrains creatures with tendrils",
+        "Absorbs creatures, dealing acid damage over time",
+        "Can expel absorbed creatures if it takes enough damage",
+        "Turns slain foes into new Dust Grazers after two days"
+    ],
+    "damage_types": [
+        "poison",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large poison-inflicting aberration",
+        "creature that uses deadly spores",
+        "monster with grappling tendrils",
+        "grotesque monster that can absorb foes",
+        "flying aberration with high hit points"
+    ]
+}

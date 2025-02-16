@@ -1,0 +1,25 @@
+{
+    "name": "Young Amethyst Dragon",
+    "queries": [
+        {
+            "query": "large dragon with psionic powers that can fly",
+            "variant": "big dragon that can fly and has psychic abilities"
+        },
+        {
+            "query": "dragon that can see through telepathy and has high intelligence",
+            "variant": "a dragon with high Intellect that can see via telepathy"
+        },
+        {
+            "query": "Young Amethyst Dragon strong in charm and persuasion skills",
+            "variant": "Amethyst Dragon proficient in persuasion and charm"
+        },
+        {
+            "query": "dragon immune to fatigue and resistant to psychic damage",
+            "variant": "fatigue immune dragon resistant to psychic attacks"
+        },
+        {
+            "query": "dragon with a concussive breath attack and strong physical abilities",
+            "variant": "powerful dragon with concussive breath and great physical strength"
+        }
+    ]
+}

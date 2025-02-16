@@ -1,0 +1,53 @@
+{
+    "name": "Incubus",
+    "creature_type": "fiend",
+    "creature_subtype": "shapechanger",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 66,
+    "ac": 15,
+    "srd": true,
+    "cr": "4",
+    "movement": "30 ft., fly 60 ft.",
+    "role": "null",
+    "tags": [
+        "fiend",
+        "shapechanger",
+        "seducer",
+        "manipulator"
+    ],
+    "adjectives": [
+        "deceptive",
+        "seductive",
+        "chaotic",
+        "manipulative"
+    ],
+    "description": "An Incubus can shapeshift into an irresistibly attractive humanoid form, often using charm and illusion magic to seduce mortals.",
+    "memorable": "They drain the life force of mortals and create chaos by turning them against each other.",
+    "goals": "To seduce and manipulate mortals, feeding off their emotions and vitality.",
+    "relations": "Typically works with others of its kind or other evil aligned fiends.",
+    "environment": "Often found in dark, seductive environments or places of temptation.",
+    "strengths": "Excels at deception and charm, making them skilled manipulators.",
+    "weaknesses": "Vulnerable to nonmagical attacks and reliant on their charm ability.",
+    "attacks": "Uses a draining kiss to inflict psychic damage and reduce the target's hit point maximum.",
+    "most_powerful_ability": "Draining Kiss that causes significant psychic damage and reduces hit point maximum.",
+    "equipment": null,
+    "senses": "Has passive Perception of 15, making it perceptive in social situations.",
+    "skills": "Proficient in Deception and Persuasion, allowing for masterful manipulation and seduction.",
+    "additional_information": [
+        "Can communicate telepathically with charmed creatures regardless of distance.",
+        "Has the ability to enter and exit the Ethereal Plane.",
+        "Resistant to cold, fire, lightning, and poison damage."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "seductive demon that drains life force",
+        "shapechanging fiend that manipulates mortals",
+        "chaotic incubus that uses charm magic",
+        "male counterpart to succubus feeding on emotions",
+        "demonic creature that exists in both planes"
+    ]
+}

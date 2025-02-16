@@ -1,0 +1,25 @@
+{
+    "name": "Empyrean",
+    "queries": [
+        {
+            "query": "gargantuan celestial being with high Charisma and strong spells",
+            "variant": "gigantic celestial creature with exceptional Charisma and powerful magic"
+        },
+        {
+            "query": "divine creature that can fly and has innate spellcasting abilities",
+            "variant": "heavenly creature capable of flying and possessing natural spellcasting skills"
+        },
+        {
+            "query": "high hit points celestial that deals radiant damage and uses lightning spells",
+            "variant": "celestial with significant hit points that inflicts radiant damage and casts lightning spells"
+        },
+        {
+            "query": "Empyrean actions include maul and hold monster spells",
+            "variant": "Empyrean's actions consist of maul attack and hold monster spells"
+        },
+        {
+            "query": "celestial immune to radiant damage and having truesight ability",
+            "variant": "celestial that resists radiant damage and possesses the truesight power"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Dire Pangolin</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>4</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>82</HP>
 <summary>The Dire Pangolin is a large beast that serves as a formidable defender in its environment. With an Armor Class of 16 due to its natural armor, this creature displays significant durability with 82 hit points, making it a tough opponent to take down. Its role in combat centers around dealing damage while leveraging its special abilities for both offense and defense. With a Challenge Rating of 4, it possesses a mix of strong melee attacks, resilient defenses, and unique abilities that make it a noteworthy adversary for adventurers. However, it has low Dexterity and Intelligence, which creates vulnerabilities that can be exploited by savvy players.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ The Tuck In action allows the Dire Pangolin to curl into a protective ball, gran
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dire Pangolin
 
 *Large* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Tuck In:** Curls its entire body forming an armored ball. While an armored ball it moves by rolling has resistance to B/P/S damage is immune to the prone condition and it can’t make Claw or Tail Slap attacks or climb. The dire pangolin can uncurl its body as a bonus action.
 
 
+</statblock>
 
 

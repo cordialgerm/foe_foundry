@@ -1,6 +1,8 @@
 <MonsterName/>Sasquatch</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Sasquatch is a large, unaligned beast with a significant presence in combat. With a Challenge Rating of 5, this creature poses a moderate threat to adventurers, capable of dealing substantial damage while also exhibiting exceptional durability due to its innate abilities. The Sasquatch has impressive physical attributes, particularly in Strength and Constitution, allowing it to deliver powerful melee attacks and sustain itself in battle. However, it has low Intelligence and Charisma, indicating limited ability to interact socially or outsmart opponents. Its notable abilities like Keen Hearing and Smell enhance its tracking and stealth capabilities, making it a formidable predator in natural environments.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ In combat, the Sasquatch can use its Multiattack to perform three separate attac
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sasquatch
 
 *Large* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Vanishing Tantrum (Recharge 5-6):** The sasquatch roars and stomps, kicking up debris and leaving deep footprints in the ground. Each creature within 20 feet of it must make a DC 14 Dexterity saving throw, taking 14 (4d6) thunder damage on a failed save, or half as much damage on a successful one. The sasquatch can then move up to half its speed without provoking opportunity attacks and take the Hide action as a bonus action.
 
 
+</statblock>
 
 

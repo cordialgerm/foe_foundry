@@ -1,6 +1,8 @@
 <MonsterName/>Bouda</MonsterName>
 <CreatureType/>Fiend</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Bouda is a medium-sized fiend characterized by its neutral evil alignment. This creature excels in combat due to its impressive physical attributes and abilities. With a high Armor Class of 15, substantial hit points totaling 93, and a formidable challenge rating of 5, the Bouda is a resilient opponent. Its superior Strength score of 19 grants it very good melee attack capabilities. However, it has weaknesses against magic and silvered weapons, which can bypass its resistances. With its diverse skills and innate powers, the Bouda stands as a cunning adversary proficient in ambush tactics, making it a potent foe in any encounter.</summary>
 
 <detail>
@@ -46,6 +48,7 @@ Overall, the Bouda presents a multifaceted challenge with its physical prowess, 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Bouda
 
 *Medium* *Fiend* *Neutral Evil*
@@ -84,5 +87,6 @@ Source: 5e_artisinal_monsters
 
 - **Change Shape:** The bouda transforms into a human, a hyena, or back into its true form, which is a hyena-human hybrid. Its statistics, other than its speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies, then crumbles to dust moments later.
 - **Defiling Smear (1/Day):** The bouda secretes a disgusting whitish-yellow substance with the viscosity of tar and smears the substance on an object, unoccupied space, or creature within 5 feet of it. An unwilling creature must succeed on a DC 15 Dexterity saving throw to avoid the smear. Each creature, other than a bouda or hyena, that starts its turn within 30 feet of the smeared target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to that source of Defiling Smear for the next 24 hours. The stench of a smear remains potent for 7 days or until removed by the greater restoration spell or similar magic.
+</statblock>
 
 

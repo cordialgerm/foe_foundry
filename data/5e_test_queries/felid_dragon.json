@@ -1,0 +1,25 @@
+{
+    "name": "Felid Dragon",
+    "queries": [
+        {
+            "query": "huge dragon with exceptional speed and agility that dwells in the air",
+            "variant": "huge dragon that has amazing speed and agility and lives in the sky"
+        },
+        {
+            "query": "dragon immune to poison that can deafen its enemies with a roar",
+            "variant": "dragon that can't be harmed by poison and can deafen foes with its roar"
+        },
+        {
+            "query": "stealthy dragon with keen senses that hunts from the skies",
+            "variant": "sneaky dragon with sharp senses that preys from above"
+        },
+        {
+            "query": "felid dragon with magical resistance and pounce ability",
+            "variant": "dragon with magic resistance and the ability to pounce on enemies"
+        },
+        {
+            "query": "agile dragon that strikes with claws and bites while flying",
+            "variant": "swift dragon that attacks with its claws and bite while in the air"
+        }
+    ]
+}

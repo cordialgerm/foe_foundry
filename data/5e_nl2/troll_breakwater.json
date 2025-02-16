@@ -1,0 +1,52 @@
+{
+    "name": "Troll, Breakwater",
+    "creature_type": "Giant",
+    "alignment": "chaotic neutral",
+    "size": "Large",
+    "hp": 105,
+    "ac": 15,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 feet walk and swim",
+    "role": "Bruiser",
+    "tags": [
+        "troll",
+        "giant",
+        "aquatic",
+        "regeneration"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "chaotic",
+        "amphibious"
+    ],
+    "description": "The Breakwater Troll has a strong presence with its large stature, combined with a robust build and chaotic nature. Its skin is often slimy, and it can be found lurking in both water and on land, ready to strike at any moment.",
+    "memorable": "It possesses incredible regeneration abilities, allowing it to heal rapidly, making it a challenging opponent in combat.",
+    "goals": "Typically, it seeks to dominate its aquatic territory and confront any threats that intrude.",
+    "relations": "Often found in coastal areas, it may interact with other aquatic creatures, potentially leading or serving aquatic beasts.",
+    "environment": "Coastal regions, rivers, and swamps; thrives in both aquatic and terrestrial environments.",
+    "strengths": "High hit points and resistance to many damage types, making it exceedingly tough in battle.",
+    "weaknesses": "Vulnerable to lightning and force damage which can disrupt its regeneration ability.",
+    "attacks": "Can perform multiattack with powerful Slam and Water Blast, effectively dealing bludgeoning and cold damage.",
+    "most_powerful_ability": "The Surge ability, which pushes enemies back while dealing extensive damage in a wide line.",
+    "equipment": null,
+    "senses": null,
+    "skills": "It has a +2 modifier in perception, allowing it to be reasonably aware of its surroundings.",
+    "additional_information": [
+        "Can breathe both air and water.",
+        "Immune to paralyzed, petrified, poisoned, and prone conditions.",
+        "Uses environment advantageously, especially in aquatic combat."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aquatic troll with regeneration",
+        "tough giant creature from coastal areas",
+        "monster that can breathe underwater and regenerate",
+        "breakwater troll attacks using water blasts",
+        "formidable giant with bludgeoning and cold abilities"
+    ]
+}

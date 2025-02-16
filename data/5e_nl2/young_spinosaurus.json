@@ -1,0 +1,50 @@
+{
+    "name": "Young Spinosaurus",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Huge",
+    "hp": 105,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dinosaur",
+        "beast",
+        "predator"
+    ],
+    "adjectives": [
+        "formidable",
+        "robust",
+        "powerful"
+    ],
+    "description": "The Young Spinosaurus is a colossal reptilian creature with exceptional physical prowess and distinctive features, including a powerful bite and menacing claws.",
+    "memorable": "It can hold its breath for an hour and avoids attacking reptilian humanoids, making it unique among predators.",
+    "goals": "Typically, it aims to hunt smaller animals, but can bond with potential companions.",
+    "relations": "May avoid conflict with reptilian humanoids like lizardfolk and dragonborn.",
+    "environment": "Commonly found in wilds and jungles.",
+    "strengths": "Impressive strength and durability, with a multiattack that includes both biting and clawing.",
+    "weaknesses": "Limited mobility with a walk speed of only 30 feet.",
+    "attacks": "Multiattack with a powerful bite dealing piercing damage and a claw attack that inflicts slashing damage.",
+    "most_powerful_ability": "The ability to grapple medium or smaller foes with its Bite attack.",
+    "equipment": null,
+    "senses": "It has a passive perception score of 13.",
+    "skills": "Proficient in Perception, demonstrating average instinct and awareness.",
+    "additional_information": [
+        "Has a very high strength score of 21.",
+        "Possesses exceptional resilience with a constitution of 19.",
+        "Not driven by intelligence; has an intelligence score of 2.",
+        "Grappling allows control over smaller opponents.",
+        "Can be managed by a rider or tamer despite its instincts."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "formidable dinosaur with grappling ability",
+        "huge creature that avoids reptilian humanoids",
+        "predator with powerful bite and claws",
+        "strong beast that can hold breath underwater",
+        "massive creature found in wilds or jungles"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Skeletal Tyrannosaurus Rex",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 126,
+    "ac": 13,
+    "srd": false,
+    "cr": "8",
+    "movement": "50 feet walking speed, able to close distance quickly",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "dinosaur",
+        "skeletal"
+    ],
+    "adjectives": [
+        "massive",
+        "terrifying",
+        "powerful"
+    ],
+    "description": "A gigantic skeletal dinosaur, imposing and horrifying, with a ferocious bite and tail.",
+    "memorable": "Immune to poison, fearsome physical power, and grappling capacity.",
+    "goals": "To dominate the battlefield and instill fear in its enemies.",
+    "relations": "Might be encountered alongside other undead creatures; could be a servant of a necromancer.",
+    "environment": "Often found in graveyards, ancient battlefields, or places of dark magic.",
+    "strengths": "High hit points and physical damage output, can grapple for advantage on follow-up attacks.",
+    "weaknesses": "Vulnerable to bludgeoning damage, which can be exploited effectively.",
+    "attacks": "Multiattack option includes a powerful bite that can grapple and a strong tail strike.",
+    "most_powerful_ability": "Multiattack allows it to attack twice in one turn, increasing damage output significantly.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet, enhancing its ability to navigate in low light.",
+    "skills": null,
+    "additional_information": [
+        "Undead Nature prevents needing air, food, or sleep.",
+        "Low Dexterity makes it less agile in combat.",
+        "High Constitution ensures it can withstand significant damage.",
+        "Grappling allows for increased effectiveness against single targets.",
+        "Bone structure gives it immunity to poison damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "huge undead dinosaur that grapples",
+        "powerful skeletal creature with piercing bite",
+        "massive dinosaur-like skeleton immune to poison",
+        "terrifying undead with strength in battle",
+        "monster that avoids air and sustenance"
+    ]
+}

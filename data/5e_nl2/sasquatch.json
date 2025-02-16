@@ -1,0 +1,49 @@
+{
+    "name": "Sasquatch",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 119,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "climb 40 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "predator",
+        "stealth",
+        "forest"
+    ],
+    "adjectives": [
+        "large",
+        "powerful",
+        "tenacious"
+    ],
+    "description": "The Sasquatch is a large beast characterized by its significant physical presence, with notable strength and durability. It has a shaggy coat, and its massive frame is well-suited for both climbing and walking through dense forest environments.",
+    "memorable": "The Sasquatch's ability to vanish and reposition itself in combat makes it a formidable and elusive foe.",
+    "goals": "Typically hunts within its natural habitat, relying on stealth and strength to overpower prey.",
+    "relations": "Related to other large predators and often found in remote wooded areas with similar stealthy creatures.",
+    "environment": "Primarily inhabits forested and overgrown terrains, where it can utilize its stealth abilities.",
+    "strengths": "Impressive physical strength and durability, combined with keen senses and stealth capabilities.",
+    "weaknesses": "Low Intelligence and Charisma limits its strategic thinking and social interaction.",
+    "attacks": "Utilizes powerful melee attacks with its bites and fists, and can also strike from a distance by throwing large rocks.",
+    "most_powerful_ability": "The Vanishing Tantrum allows it to deal thunder damage to nearby enemies while escaping or hiding afterward.",
+    "equipment": null,
+    "senses": "Has keen hearing and smell, granting advantage on perception checks related to these senses.",
+    "skills": "Proficient in Stealth and Perception, allowing it to effectively hide and notice hidden threats.",
+    "additional_information": [
+        "Has Plant Camouflage, improving its stealth in natural settings.",
+        "Relentless ability allows it to survive fatal blows.",
+        "Strong melee capabilities with multiple attacks each turn.",
+        "Can impose fear with its fierce roar during combat."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large elusive forest creature",
+        "powerful stealthy beast in the woods",
+        "Sasquatch abilities in combat",
+        "stealthy predator with keen senses",
+        "tenacious beast that can escape easily"
+    ]
+}

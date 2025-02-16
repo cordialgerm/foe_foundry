@@ -1,0 +1,25 @@
+{
+    "name": "Voidling",
+    "queries": [
+        {
+            "query": "large aberration with necrotic powers that thrives in darkness",
+            "variant": "large monster known for necrotic abilities that loves dark places"
+        },
+        {
+            "query": "creature with high Dexterity that can regenerate in dim light",
+            "variant": "monster with exceptional Dexterity that heals in low light"
+        },
+        {
+            "query": "chaotic evil creature immune to necrotic damage and able to use telepathy",
+            "variant": "chaotic evil monster immune to necrotic attacks that can communicate through telepathy"
+        },
+        {
+            "query": "Voidling abilities to deal necrotic damage and fear opponents",
+            "variant": "abilities of the Voidling that inflict necrotic damage and frighten foes"
+        },
+        {
+            "query": "shadow tendril attack with a reach of 10 feet and magical resistance",
+            "variant": "shadow tendril abilities with 10-foot reach and resistance to magic"
+        }
+    ]
+}

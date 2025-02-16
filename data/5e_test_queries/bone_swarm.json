@@ -1,0 +1,25 @@
+{
+    "name": "Bone Swarm",
+    "queries": [
+        {
+            "query": "large undead swarm of bones that can fly and quickly attack enemies",
+            "variant": "big swarm that is a undead bone creature, flies and attacks fast"
+        },
+        {
+            "query": "chaotic evil creature that grapples and restrains its foes",
+            "variant": "evil chaotic being that can restrain and grapple its opponents"
+        },
+        {
+            "query": "resistant undead monster that can occupy other creature spaces",
+            "variant": "undead creature that occupies spaces of other monsters and has resistance"
+        },
+        {
+            "query": "Bone Swarm's multiattack ability and bludgeoning damage",
+            "variant": "multiattack ability of the Bone Swarm and its bludgeoning attack damage"
+        },
+        {
+            "query": "undead swarm that speaks Void Speech and has high Charisma",
+            "variant": "swarm of undead that can talk in Void Speech and has great Charisma"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Djinni (Genie)",
+    "queries": [
+        {
+            "query": "blue-skinned air elemental that can summon wind and fly",
+            "variant": "air elemental with blue skin that flies and summons wind"
+        },
+        {
+            "query": "powerful genie from the Elemental Plane of Air with charm and wit",
+            "variant": "genie with charm and wit that comes from the Elemental Plane of Air"
+        },
+        {
+            "query": "tall muscular creature that rules over lesser air elementals",
+            "variant": "muscular tall creature that rules lesser air elementals"
+        },
+        {
+            "query": "creature that can create whirlwinds and shapeshift into cloud form",
+            "variant": "monster able to create whirlwinds and transform into a cloud"
+        },
+        {
+            "query": "Djinni that can cast spells and manipulate lightning damage",
+            "variant": "genie that manipulates lightning and casts spells"
+        }
+    ]
+}

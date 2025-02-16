@@ -1,0 +1,52 @@
+{
+    "name": "Copper Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "chaotic good",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 16,
+    "srd": true,
+    "cr": "1",
+    "movement": "30 ft. walk, 30 ft. climb, 60 ft. fly",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "wyrmling",
+        "metallic"
+    ],
+    "adjectives": [
+        "agile",
+        "cunning",
+        "metallic"
+    ],
+    "description": "The Copper Dragon Wyrmling is a medium-sized dragon with agility and a cunning demeanor, exhibiting a vibrant copper sheen across its scaled body.",
+    "memorable": "This dragon is not just formidable in combat but is also incredibly stealthy in mountainous terrain, making it a deadly ambusher.",
+    "goals": "Typically seeks to hunt down prey or defend its territory while enjoying the thrill of cunning maneuvers in battles.",
+    "relations": "May be encountered with other dragon types or as a young ally to adventurers seeking wisdom and assistance.",
+    "environment": "Commonly found in mountainous regions and caves, where it can utilize its stealth and mobility.",
+    "strengths": "Possesses damage immunity to acid and has superior maneuverability through climbing and flying.",
+    "weaknesses": "Average health and dependence on positioning limit its durability in extended confrontations.",
+    "attacks": "Uses a combination of bite attacks dealing piercing damage and claw attacks, alongside powerful breath weapons.",
+    "most_powerful_ability": "Its Acid Breath can affect multiple targets at once, dealing significant area damage.",
+    "equipment": null,
+    "senses": "Has blindsight with a range of 10 feet and darkvision that extends to 60 feet, enhancing its ability to navigate in darkness.",
+    "skills": "Skilled in stealth with a +3 modifier, making it capable of quietly approaching enemies.",
+    "additional_information": [
+        "Can use stealth advantage in mountainous regions due to 'Flow Within the Mountain'.",
+        "Features a special ability called 'Pounce' allowing it to knock enemies prone.",
+        "Can utilize two types of breath attacks: Acid Breath and Slowing Breath.",
+        "Possesses an average Dexterity score allowing for competent acrobatics in flight.",
+        "Typical for dragons, it communicates using Draconic."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "cunning mountain dragon with breath attacks",
+        "metallic dragon known for stealth and agility",
+        "fast dragon that uses acid breath",
+        "medium dragon able to climb and fly easily",
+        "dragon with special ability to ambush"
+    ]
+}

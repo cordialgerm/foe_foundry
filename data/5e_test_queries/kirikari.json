@@ -1,0 +1,25 @@
+{
+    "name": "Kirikari",
+    "queries": [
+        {
+            "query": "large mist-producing monster with acid attacks",
+            "variant": "large monster that produces mist and uses acid attacks"
+        },
+        {
+            "query": "agile creature with grappling ability and low intelligence",
+            "variant": "creature that is agile and can grapple but has low intelligence"
+        },
+        {
+            "query": "huge monstrosity immune to poison that creates fog",
+            "variant": "monstrosity that is huge, fog-creating and immune to poison"
+        },
+        {
+            "query": "monster that attacks with bludgeoning and acid damage in combat",
+            "variant": "creature that deals bludgeoning damage and acid damage when attacking"
+        },
+        {
+            "query": "stealthy creature with high perception and acid immunity",
+            "variant": "creature that is stealthy, has high perception and is immune to acid"
+        }
+    ]
+}

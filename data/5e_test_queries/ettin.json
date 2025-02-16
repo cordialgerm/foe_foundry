@@ -1,0 +1,25 @@
+{
+    "name": "Ettin",
+    "queries": [
+        {
+            "query": "two-headed giant that lives in caves",
+            "variant": "giant with two heads that resides in caves"
+        },
+        {
+            "query": "massive creature that uses clubs as weapons",
+            "variant": "large creature wielding clubs as weaponry"
+        },
+        {
+            "query": "brutish giant with high strength and low agility",
+            "variant": "violent giant with great strength but poor speed"
+        },
+        {
+            "query": "large aggressive giant with dual heads and territorial nature",
+            "variant": "fierce giant with two heads known for its territorial behavior"
+        },
+        {
+            "query": "Ettin abilities and combat tactics",
+            "variant": "combat tactics and abilities of the Ettin"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Abomination",
+    "queries": [
+        {
+            "query": "large mechanical monster with explosive death",
+            "variant": "big mechanical creature that explodes when killed"
+        },
+        {
+            "query": "construct that uses fire breath and has high strength",
+            "variant": "creature with strong melee attacks and fire breath ability"
+        },
+        {
+            "query": "robotic creature immune to transformation and resistant to damage",
+            "variant": "construct that can't be transformed and has damage resistances"
+        },
+        {
+            "query": "tough monster that can traverse difficult terrain and does not need sleep",
+            "variant": "durable creature that moves easily through tough ground and doesn\u2019t require rest"
+        },
+        {
+            "query": "lawful evil construct with high AC and multiattack ability",
+            "variant": "lawful evil mechanical creature that has great armor and can attack multiple times"
+        }
+    ]
+}

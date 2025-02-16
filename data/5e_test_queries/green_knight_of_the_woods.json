@@ -1,0 +1,25 @@
+{
+    "name": "Green Knight of the Woods",
+    "queries": [
+        {
+            "query": "fey creature enforcing order in the woods",
+            "variant": "woods fey creature that enforces order"
+        },
+        {
+            "query": "tough knight with magical resistance protecting nature",
+            "variant": "strong knight that protects nature and has magic resistance"
+        },
+        {
+            "query": "lawful neutral knight that grapples with shield bash",
+            "variant": "neutral lawful knight that uses shield bash to grapple"
+        },
+        {
+            "query": "Green Knight with high armor class and special abilities",
+            "variant": "knight with high AC and unique abilities"
+        },
+        {
+            "query": "creature communicating with beasts and plants in forest",
+            "variant": "monster that talks to beasts and plants in woods"
+        }
+    ]
+}

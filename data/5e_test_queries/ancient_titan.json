@@ -1,0 +1,25 @@
+{
+    "name": "Ancient Titan",
+    "queries": [
+        {
+            "query": "gargantuan celestial creature with powerful voice and high durability",
+            "variant": "gargantuan celestial being with a strong voice and excellent durability"
+        },
+        {
+            "query": "creature that can breathe air and water and has a stunning ability",
+            "variant": "monster that can breathe both air and water and possesses a stunning power"
+        },
+        {
+            "query": "titan with magical resistance and devastating slashing attacks",
+            "variant": "titan creature with magic resistance and powerful slashing attacks"
+        },
+        {
+            "query": "Ancient Titan's Reality-Altering Words ability and high Constitution score",
+            "variant": "Reality-Altering Words skill of Ancient Titan and impressive Constitution value"
+        },
+        {
+            "query": "strong creature with disadvantage causing attacks and average movement speed",
+            "variant": "powerful creature that inflicts disadvantage on attacks and has a standard movement rate"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Shadow</MonsterName>
 <CreatureType/>Undead</CreatureType>
-
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>16</HP>
 <summary>A Shadow is an undead entity formed from the darkness and negative energy, often the remnant of a corrupted soul. Shadows are insubstantial creatures that lurk in dark places, attacking living creatures to drain their strength and vitality. They are difficult to fight, as normal weapons pass through their shadowy forms with little effect. Shadows can slip through cracks and hide in the darkness, waiting for the right moment to strike. They are cold, malevolent beings driven by a need to consume the living, and their touch saps the life from those they attack.</summary>
 
 <summary>The Shadow is a Medium Undead creature known for its stealth and ability to instill fear in its foes. With a Challenge Rating of 1, it presents a moderate threat to adventurers and relies on its agility and the element of surprise to inflict damage. The Shadow has a moderate Armor Class of 12, making it reasonably difficult to hit, and it possesses a modest pool of Hit Points totaling 18. Its primary strength lies in its agility, as indicated by a Dexterity score of 14, giving it a good modifier of +2 that enhances its stealth capabilities. The creature is vulnerable to radiant damage but is immune to necrotic and poison damage, offering a solid defense against many types of attacks. While the Shadow can be effective in combat, it has a significant downside in the presence of sunlight, which hampers its abilities considerably.</summary>
@@ -66,6 +68,7 @@ Overall, the Shadow is a cunning adversary that thrives in low-light conditions,
 
 Source: 5e_srd
 
+<statblock>
 ## Shadow
 
 *Medium undead, chaotic evil*
@@ -106,7 +109,8 @@ Source: 5e_srd
 
 ***Strength Drain***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 9 (2d6+2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.
 
-If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.
+If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.</statblock>
+
 
 
 
@@ -114,6 +118,7 @@ If a non-evil humanoid dies from this attack, a new shadow rises from the corpse
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow
 
 *Medium* *Undead*
@@ -151,6 +156,7 @@ Source: 5e_artisinal_monsters
 - **Shadow Sneak:** The shadow takes the Hide action even if obscured only by dim light or darkness.
 
 
+</statblock>
 
 
 
@@ -159,6 +165,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Shadow
 
 *Medium undead*
@@ -195,5 +202,6 @@ Source: 5e_artisinal_monsters
 - **Shadow Bond.** One creature the shadow can see within 5 feet of it must succeed on a DC 12 WIS save or the shadow bonds with the target’s shadow for 1 minute. While bonded with the target’s shadow, the shadow can use this bonus action to teleport to an unoccupied space within 5 feet of that creature, provided the creature is within 120 feet of the shadow.
 - **Shadow Stealth.** The shadow takes the Hide action. It can use this bonus action only while in dim light or darkness.
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Gypsosphinx",
+    "queries": [
+        {
+            "query": "large creature that can fly and cast spells",
+            "variant": "large flying beast that casts spells"
+        },
+        {
+            "query": "monstrosity with death sense and magical attacks",
+            "variant": "creature that has death sense and uses magical attacks"
+        },
+        {
+            "query": "tough monster with high hit points and psychic immunity",
+            "variant": "strong monster with tons of hit points and immunity to psychic damage"
+        },
+        {
+            "query": "strategic creature that senses wounded opponents",
+            "variant": "smart creature that can sense injured foes"
+        },
+        {
+            "query": "tough magical beast with claw attacks and spellcasting abilities",
+            "variant": "resilient magical creature that uses claws and spells"
+        }
+    ]
+}

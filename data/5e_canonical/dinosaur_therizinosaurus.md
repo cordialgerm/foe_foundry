@@ -1,6 +1,8 @@
 <MonsterName/>Dinosaur, Therizinosaurus</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>95</HP>
 <summary>The Therizinosaurus is a huge, powerful beast categorized as unaligned, known for its impressive physicality and resilience on the battlefield. With an Armor Class of 13, it benefits from natural armor, providing it a decent level of defense for its size. It has 95 hit points, reflecting a robust constitution that makes it a formidable opponent. This dinosaur boasts a Challenge Rating of 5, indicating that it presents a moderate challenge for a party of adventurers. One of its standout attributes is a very high Strength score of 21, granting it exceptional offensive capabilities, while its Dexterity is relatively low at 9, resulting in a bad modifier. It moves with a speed of 40 feet, allowing it to traverse the battlefield effectively.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Therizinosaurus can make multiple attacks in a turn thanks to its
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Dinosaur, Therizinosaurus
 
 *Huge* *Beast* *unaligned*
@@ -45,5 +48,6 @@ Source: 5e_artisinal_monsters
 - **Claw:** Melee Weapon Attack: +8 to hit, 15 ft., one target, 18 (3d8+5) slashing damage and the target must make DC 16 Str save or be knocked prone.
 
 
+</statblock>
 
 

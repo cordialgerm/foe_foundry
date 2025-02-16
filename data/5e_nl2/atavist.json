@@ -1,0 +1,54 @@
+{
+    "name": "Atavist",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 16,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "combatant",
+        "tactician"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "dangerous",
+        "tactical"
+    ],
+    "description": "The Atavist is a medium humanoid with a formidable physical presence, showcasing unique adaptations that enhance its combat capabilities. It has bony features and mutable physiology.",
+    "memorable": "Its ability to adapt its physiology at the start of its turn, gaining various tactical advantages, makes it unpredictable and dangerous in combat.",
+    "goals": "Engages in physical confrontations and is likely to dominate encounters using its adaptability.",
+    "relations": "Can be encountered with other humanoids or as a foe in a lawful evil context.",
+    "environment": "Typically found in settings that favor combat and physical prowess.",
+    "strengths": "Resistance to necrotic and poison damage, high strength, and solid constitution for melee damage and durability.",
+    "weaknesses": "Low wisdom and charisma represent vulnerabilities in perception and social interactions.",
+    "attacks": "Utilizes a Multiattack with a Keratin Blade for slashing damage and Bone Shard for ranged piercing attacks, potentially dealing additional piercing damage through bone shards.",
+    "most_powerful_ability": "Malleable Physiology allows for significant tactical flexibility, including gaining movement speeds and sensory advantages.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Poor perception skills with a score of -2, indicating difficulty in noticing subtle changes.",
+    "additional_information": [
+        "Adapts its form for combat advantages at the start of its turn.",
+        "Can deliver significant melee damage output.",
+        "Possesses a high armor class making it tough to take down.",
+        "Has a variety of tactical options due to Malleable Physiology.",
+        "Notable lack of effectiveness in wisdom and charisma-related challenges."
+    ],
+    "damage_types": [
+        "necrotic",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid with tactical adaptability",
+        "cunning combat creature",
+        "physical powerhouse humanoid",
+        "lawful evil warrior",
+        "monster with mutable physiology"
+    ]
+}

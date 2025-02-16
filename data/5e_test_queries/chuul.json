@@ -1,0 +1,25 @@
+{
+    "name": "Chuul",
+    "queries": [
+        {
+            "query": "grotesque amphibious creature with crushing pincers",
+            "variant": "grotesque water monster with bone-crushing pincers"
+        },
+        {
+            "query": "large crustacean that paralyzes its prey",
+            "variant": "big crustacean creature that can paralyze its victims"
+        },
+        {
+            "query": "monster that lurks in swamps and can detect magic",
+            "variant": "creature that hides in swamps and senses magic"
+        },
+        {
+            "query": "ancient being with darkvision and powerful grappling attacks",
+            "variant": "old creature that can see in darkness and has strong grappling abilities"
+        },
+        {
+            "query": "water-dwelling creature that uses tentacles to paralyze",
+            "variant": "aquatic monster that paralyzes foes with its tentacles"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Faux-Garou",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 93,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "walks at 30 feet",
+    "role": null,
+    "tags": [
+        "construct",
+        "shapechanger",
+        "necrotic",
+        "undead"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "adaptive"
+    ],
+    "description": "The Faux-Garou is a medium-sized construct mimicking lycanthropic forms, retaining its constructed appearance despite transformations.",
+    "memorable": "Exhibits remarkable resilience and the ability to frighten enemies with its gaze.",
+    "goals": "Hunts specific targets identified by its creator, using advanced tracking abilities.",
+    "relations": "Often associated with its creator, it may be encountered alongside other constructs or creatures of similar purpose.",
+    "environment": "Typically found in locations tied to its creator or in regions where it may hunt its targets.",
+    "strengths": "Immunity to many conditions and spells, exceptional durability due to high Constitution and magical weapon augmentation.",
+    "weaknesses": "Limited intelligence and charisma restrict its tactical abilities and social interactions.",
+    "attacks": "Employs a Frightening Gaze followed by two deadly claw attacks, dealing slashing and necrotic damage.",
+    "most_powerful_ability": "Druidic Vengeance, which grants advantage on attacks against specific foes and enhances tracking.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive perception score of 14.",
+    "skills": "Has a perception bonus of +1, aiding in locating hidden enemies or tracking targets.",
+    "additional_information": [
+        "Does not require air, food, drink, or sleep.",
+        "Can change shape into a large or smaller beast matching a lycanthrope's type.",
+        "Retains its claws and constructed appearance in any form.",
+        "Weapon attacks are magical, adding extra necrotic damage.",
+        "Immune to effects that would alter its physical form."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "construct that hunts specific targets",
+        "shapechanging creature with necrotic claws",
+        "monster with a frightening gaze ability",
+        "durable construct immune to conditions",
+        "creature that transforms into beast form"
+    ]
+}

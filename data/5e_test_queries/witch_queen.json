@@ -1,0 +1,25 @@
+{
+    "name": "Witch Queen",
+    "queries": [
+        {
+            "query": "small humanoid spellcaster with magical resistance and sunlight sensitivity",
+            "variant": "humanoid spellcaster that is small and has sunlight sensitivity and magical resistance"
+        },
+        {
+            "query": "chaotic evil creature that excels in stealth and arcana skills",
+            "variant": "creature that is chaotic evil and proficient in stealth and arcana"
+        },
+        {
+            "query": "Witch Queen abilities including heightening spells and darkness vision",
+            "variant": "abilities of the Witch Queen like heightened spells and darkvision"
+        },
+        {
+            "query": "magical humanoid with high Dexterity and Charisma living in dark environments",
+            "variant": "humanoid with high Dexterity and Charisma that thrives in dark places"
+        },
+        {
+            "query": "Witch Queen attack style involving Maddening Scimitar and spellcasting",
+            "variant": "attack methods of the Witch Queen using Maddening Scimitar and her spells"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Noth-norren",
+    "creature_type": "Elemental",
+    "alignment": "chaotic evil",
+    "size": "gargantuan",
+    "hp": 203,
+    "ac": 14,
+    "srd": false,
+    "cr": "13",
+    "movement": "hover and fly with no walking speed",
+    "role": "Controller",
+    "tags": [
+        "elemental",
+        "chaotic",
+        "large creature"
+    ],
+    "adjectives": [
+        "gargantuan",
+        "chaotic",
+        "evil",
+        "formidable"
+    ],
+    "description": "The Noth-norren is a gargantuan elemental that embodies chaos, showcasing exceptional strength and dexterity. Its body is surrounded by swirling winds and jagged teeth, emphasizing its chaotic nature.",
+    "memorable": "The creature can control flying foes and manipulate its environment, creating air turbulence that threatens their stability.",
+    "goals": "To dominate the battlefield by controlling flying creatures and inflicting chaos on opponents.",
+    "relations": "Elemental creatures or chaotic beings that align with its nature.",
+    "environment": "Often found in areas of turbulent air or chaos, such as stormy locales or elemental planes.",
+    "strengths": "Resistant to various damage types and immune to many conditions, enhancing its durability in battle.",
+    "weaknesses": "Susceptible to certain magical effects.",
+    "attacks": "Utilizes powerful melee attacks with slam and ranged attacks by throwing debris, along with the ability to fling victims.",
+    "most_powerful_ability": "Vortex, which pulls creatures into a dangerous swirling mass, dealing slashing damage each turn.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Air Turbulence forces flying creatures to land or risk falling.",
+        "Magic Weapons allows its attacks to bypass resistances.",
+        "Can throw creatures in a vortex of jagged teeth."
+    ],
+    "damage_types": [
+        "poison",
+        "thunder",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic gargantuan elemental with air powers",
+        "elemental creature that controls flying enemies",
+        "Noth-norren abilities and combat tactics",
+        "vortex monster with swirling winds and teeth",
+        "powerful elemental that resists damage and chaos"
+    ]
+}

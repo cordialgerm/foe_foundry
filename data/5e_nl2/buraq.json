@@ -1,0 +1,54 @@
+{
+    "name": "Buraq",
+    "creature_type": "Celestial",
+    "alignment": "Lawful Good",
+    "size": "Medium",
+    "hp": 152,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "walk 90 ft., fly 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "celestial",
+        "protector",
+        "mount",
+        "radiant"
+    ],
+    "adjectives": [
+        "formidable",
+        "graceful",
+        "powerful",
+        "agile"
+    ],
+    "description": "The Buraq is a celestial creature, notable for its grace and power, resembling a majestic steed with radiant energy emanating from its form.",
+    "memorable": "The Buraq has magical attacks that deal additional radiant damage, and it possesses the ability to teleport and perceive nonmagical darkness.",
+    "goals": "To serve as a protector and ally to champions of good.",
+    "relations": "Often encountered with paladins or good-aligned adventurers.",
+    "environment": "Typically found outdoors, particularly in areas where its natural abilities can be best utilized at night.",
+    "strengths": "High Dexterity and Charisma, magical resistance, and immunity to certain conditions make it a versatile ally in combat.",
+    "weaknesses": "None notably highlighted; strong resistances to many common threats.",
+    "attacks": "Strikes with hooves delivering bludgeoning and radiant damage, making it a formidable attacker.",
+    "most_powerful_ability": "Night Journey allows the Buraq to teleport frequently while in darkness, enhancing its strategic options.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 120 feet, allowing it to see through magical darkness and perceive hidden threats.",
+    "skills": "Excels in History and Religion, reflecting its celestial nature and knowledge.",
+    "additional_information": [
+        "Angelic Weapons enhance its attacks with extra radiant damage.",
+        "The Buraq can cast various utility and protective spells.",
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can carry a rider as a Large creature for the purpose of carrying capacity.",
+        "Immunity to charmed, exhaustion, and frightened conditions."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast various spells at will, including defensive and mobility-enhancing spells.",
+    "test_queries": [
+        "celestial protector with teleport ability",
+        "graceful flying mount with radiant powers",
+        "magical steed immune to charming effects",
+        "night journey teleporting celestial creature",
+        "Buraq abilities and characteristics"
+    ]
+}

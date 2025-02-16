@@ -1,0 +1,25 @@
+{
+    "name": "Vesiculosa",
+    "queries": [
+        {
+            "query": "gargantuan plant monster that mimics an oasis",
+            "variant": "gargantuuan plant creature mimicking an oasis"
+        },
+        {
+            "query": "sweet smelling plant monster that can charm creatures",
+            "variant": "plant creature with sweet smell that charms foes"
+        },
+        {
+            "query": "monstrous plant that puts attackers to sleep with water",
+            "variant": "plant monster that uses water to make enemies sleep"
+        },
+        {
+            "query": "dangerous plant creature with high hit points and grappling roots",
+            "variant": "high HP plant creature with grappling roots and danger"
+        },
+        {
+            "query": "plant monster that restrains opponents and has a weakness to mobility",
+            "variant": "plant creature that restrains foes but is not very mobile"
+        }
+    ]
+}

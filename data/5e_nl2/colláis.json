@@ -1,0 +1,50 @@
+{
+    "name": "Coll\u00e1is",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 150,
+    "ac": 16,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "forest",
+        "fear"
+    ],
+    "adjectives": [
+        "imposing",
+        "durable",
+        "ferocious"
+    ],
+    "description": "The Coll\u00e1is is a large monstrosity that embodies a fierce and imposing presence, with formidable melee attacks and magical resilience.",
+    "memorable": "Its ability to throw enemies away with Impale and Toss can disrupt enemy formations and strategies.",
+    "goals": "Dominate foes and control the battlefield.",
+    "relations": "May be encountered with other forest creatures, especially beasts.",
+    "environment": "Typically found in forests.",
+    "strengths": "Impressive melee combat capabilities and magical resistance.",
+    "weaknesses": "Limited defenses against magic attacks.",
+    "attacks": "Can perform a multiattack that includes a powerful gore attack and two devastating hooves attacks.",
+    "most_powerful_ability": "The Cry of the Forest frightens nearby creatures, negatively impacting their combat effectiveness.",
+    "equipment": null,
+    "senses": "Blindsight up to 120 feet and a notably high passive perception of 17 makes it very aware of its surroundings.",
+    "skills": "Very high intimidation and perception skills, making it a terrifying presence both in and out of combat.",
+    "additional_information": [
+        "Immune to being charmed or frightened.",
+        "Magic Resistance allows it to roll twice against spells.",
+        "Can reposition targets dramatically during combat with Impale and Toss.",
+        "Creates chaos in enemy ranks with its psychological Cry of the Forest.",
+        "Has exceptional strength for melee combat with a Strength score of 19."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large monstrosity that frightens other creatures",
+        "forest creature with powerful melee attacks",
+        "monstrous beast with magical resistance",
+        "creature that can toss enemies away",
+        "imposing being that dominates the battlefield"
+    ]
+}

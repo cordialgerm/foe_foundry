@@ -1,6 +1,8 @@
 <MonsterName/>Swamp Lily</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Swamp Lily is a medium-sized plant creature that occupies an unaligned status, serving primarily as a deceptive and manipulative force in swamp environments. With an Armor Class of 15 and a total of 136 hit points, it demonstrates a decent level of resilience in combat. It operates effectively within the Challenge Rating of 7, making it a noteworthy opponent for adventurers. The Swamp Lily excels at manipulation through its unique abilities, particularly its capacity to charm and incapacitate foes, while sustaining itself with good defensive capabilities such as damage immunities and condition immunities. However, its movement speed is limited to 15 feet, which can be considered a significant weakness in terms of mobility.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Fake Feast action creates an illusory banquet within 5 feet of the Swamp Lil
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Swamp Lily
 
 *Medium* *Plant* *unaligned*
@@ -50,5 +53,6 @@ Source: 5e_artisinal_monsters
 - **Fake Feast:** The swamp lily magically creates the image of a banquet within 5 feet of itself that compels creatures to eat from it. Each creature within 60 feet of the banquet that can see the banquet must succeed on a DC 15 Wisdom saving throw or be charmed by the lily. The lily must take a bonus action on its subsequent turns to maintain the illusion. The illusion ends if the lily is incapacitated.<br><br>While charmed by the lily, a target is incapacitated and ignores the banquets of other lilies. If the charmed target is more than 5 feet away from the lily’s banquet, the target must move on its turn toward the banquet by the most direct route, trying to get within 5 feet. It doesn’t avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the lily, the target can repeat the saving throw. A charmed target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it. A target that successfully saves is immune to this swamp lily’s Fake Feast for the next 24 hours.<br><br>If the charmed target starts its turn within 5 feet of the banquet, it eats the feast and must make a DC 15 Constitution saving throw. On a failure, the creature takes 21 (6d6) poison damage and is poisoned for 1 minute. On a success, the creature takes half the damage and isn’t poisoned.
 
 
+</statblock>
 
 

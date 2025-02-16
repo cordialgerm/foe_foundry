@@ -1,0 +1,56 @@
+{
+    "name": "Coven Sea Hag",
+    "creature_type": "Fey",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft. swim 40 ft.",
+    "role": "Controller",
+    "tags": [
+        "hag",
+        "fey",
+        "cursed",
+        "amphibious",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable",
+        "terrifying",
+        "magical"
+    ],
+    "description": "The Coven Sea Hag is a Medium-sized fey with a formidable presence, possessing a mix of magical capabilities and combat effectiveness. Its claws are formidable weapons, and it can manipulate the environment through powerful spellcasting.",
+    "memorable": "The Coven Sea Hag's ability to curse its victims who bargain with it makes it a particularly dangerous foe, as those under the curse are at a severe disadvantage against its spells.",
+    "goals": "To ensnare others through cunning deals and maintain power using curses and magical control.",
+    "relations": "Typically encountered near bodies of water, often accompanied by sea creatures or other fey.",
+    "environment": "Coastal areas, swamps, and other watery environments.",
+    "strengths": "Possesses powerful spells that can manipulate others and turn the environment to its advantage.",
+    "weaknesses": "Vulnerable to being silenced or incapacitated, which can disrupt its reliance on spellcasting.",
+    "attacks": "Uses claws for melee attacks dealing slashing damage and can implement a terrifying glare that can incapacitate its foes.",
+    "most_powerful_ability": "The ability to unleash a Lightning Blast, capable of damaging multiple foes at once and asserting control over the battlefield.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in deception, making it an expert at tricking others, alongside decent skills in arcana and insight.",
+    "additional_information": [
+        "Amphibious nature allows for breathing in both air and water.",
+        "The Curse ability adversely affects any creature making a bargain with it for 30 days.",
+        "Innate spellcasting includes spells for illusion and manipulation.",
+        "Horrific Transformation can frighten multiple nearby creatures.",
+        "Relies on a mix of magical abilities and melee attacks in combat."
+    ],
+    "damage_types": [
+        "lightning",
+        "psychic"
+    ],
+    "spellcasting": "Innate spellcasting allows for at-will access to minor spells like dancing lights and disguise self, and powerful spells like control weather and geas once per day.",
+    "test_queries": [
+        "magical creature with a terrifying gaze",
+        "cunning water hag that curses enemies",
+        "amphibious fey that attacks with lightning",
+        "hag that manipulates deals and spells",
+        "sea hag with powerful spellcasting abilities"
+    ]
+}

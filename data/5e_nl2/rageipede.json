@@ -1,0 +1,53 @@
+{
+    "name": "Rageipede",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 55,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "beast",
+        "stealth",
+        "rage",
+        "poison"
+    ],
+    "adjectives": [
+        "small",
+        "beastly",
+        "camouflaging",
+        "chaotic"
+    ],
+    "description": "The Rageipede is a small, beastly creature that blends effectively into forested environments and tall grasslands, with notable physical features that include a sturdy body and a vibrant coloration for camouflage.",
+    "memorable": "It can induce a state of rage in its victims, causing them to attack indiscriminately.",
+    "goals": "To surprise and overwhelm its targets through stealth and confusion.",
+    "relations": "Could be found alongside other forest creatures or as a solitary predatory beast.",
+    "environment": "Forested areas and tall grasslands.",
+    "strengths": "Natural camouflage grants it advantage on stealth checks, making it difficult to spot.",
+    "weaknesses": "Very low intelligence, wisdom, and charisma scores limit strategic interactions.",
+    "attacks": "It uses a Multiattack option, delivering a bite that inflicts both piercing and poison damage, followed by claw strikes.",
+    "most_powerful_ability": "The Surprise Bite ability can significantly alter combat dynamics by inducing rage in its target.",
+    "senses": "It has blindsight out to 30 feet, which helps it navigate effectively in its environment.",
+    "skills": "Proficient in stealth, making it capable of remaining hidden from prey.",
+    "additional_information": [
+        "Low mental stats indicate a lack of complex thought.",
+        "Can create chaos in combat due to its rage-inducing bite.",
+        "Surprise attacks are key to its combat strategy.",
+        "It must attack the nearest creature while in a fit of rage.",
+        "Can stalk off randomly if it has no targets to attack."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small beast that induces rage",
+        "forest creature with surprise attack",
+        "camouflaging monster that uses poison",
+        "chaotic monster in tall grasslands",
+        "beastly rage-inducing attacks"
+    ]
+}

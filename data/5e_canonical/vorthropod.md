@@ -1,6 +1,8 @@
 <MonsterName/>Vorthropod</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural)</AC>
+<HP/>127</HP>
 <summary>The Vorthropod is a medium-sized monstrosity characterized by its affinity for magma and lava environments. It possesses a distinctive ability to thrive in extreme heat, making it a formidable opponent in volcanic terrain. With a robust armor class of 15 and a significant pool of hit points totaling 127, this creature can endure a fair amount of damage. Its strengths lie in both natural defenses, such as damage immunities to fire and poison, and offensive capabilities with its claw attacks and fiery retaliatory strikes. However, its low intelligence and charisma scores suggest that it lacks cognitive and social capabilities, presenting a potential weakness when confronted with more cunning adversaries. The Vorthropod's challenge rating of 5 indicates that it poses a moderate threat to adventurers, granting them 1,800 experience points upon defeat.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ In terms of actions, the Vorthropod can perform the following:
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Vorthropod
 
 *Medium* *Monstrosity* *unaligned*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Molten Tail Slap (Recharge 4–6):** Unfurls its tail and slaps it down showering area with searing sparks and superheated rock. Each creature within 15 ft. of it: 28 (8d6) fire (DC 14 Dex half).
 
 
+</statblock>
 
 

@@ -1,6 +1,8 @@
 <MonsterName/>Lamia</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>4</CR>
+<AC/>13 (natural armor)</AC>
+<HP/>97</HP>
 <summary>A Lamia is a cruel and decadent creature with the upper body of a beautiful humanoid woman and the lower body of a lion or serpentine form. Lamias are known for their cunning and sadistic nature, using illusions and charm spells to deceive and manipulate their victims. They dwell in deserts or ancient ruins, where they lure travelers into traps and drain them of their life force. Lamias often serve dark gods or demonic powers, delighting in causing suffering and chaos. They are skilled in both magic and physical combat, using their beauty and intellect to their advantage.</summary>
 
 <summary>The Lamia is a large monstrosity characterized by its chaotic and evil nature, serving as a formidable foe in combat. It possesses a strong combination of physical and magical abilities, with a total of 85 hit points, making it quite durable for a challenge rating of 4. Its various skills, such as Deception and Stealth, enhance its cunning, while its innate spellcasting allows it to manipulate and control others effectively. However, while its Armor Class is decent at 13, any armor or defensive bonuses are limited, making it somewhat vulnerable to sustained attacks.</summary>
@@ -37,6 +39,7 @@ In addition to its main actions, the Lamia can use a bonus action for "Intoxicat
 
 Source: 5e_srd
 
+<statblock>
 ## Lamia
 
 *Large monstrosity, chaotic evil*
@@ -75,7 +78,8 @@ At will: *disguise self* (any humanoid form), *major image*
 
 ***Dagger***. *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (1d4+3) piercing damage.
 
-***Intoxicating Touch***. *Melee Spell Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.
+***Intoxicating Touch***. *Melee Spell Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.</statblock>
+
 
 
 
@@ -83,6 +87,7 @@ At will: *disguise self* (any humanoid form), *major image*
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lamia
 
 *Large* *Monstrosity*
@@ -118,6 +123,7 @@ Source: 5e_artisinal_monsters
 - **Misty Step (2nd-Level; V):** The lamia teleports to an unoccupied space it can see within 30 feet. The lamia can't cast this spell and a 1st-level or higher spell on the same turn.
 
 
+</statblock>
 
 
 
@@ -126,6 +132,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Lamia
 
 *Large monstrosity*
@@ -165,5 +172,6 @@ Source: 5e_artisinal_monsters
 
 - **Intoxicating Gaze.** The lamia gazes at one creature it can see within 30 feet of it. The target must succeed on a DC 13 CHA save or be charmed until the end of its next turn and cursed for 1 hour. While cursed, the target has disadvantage on WIS saves and on all ability checks.
 
+</statblock>
 
 

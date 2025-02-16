@@ -1,0 +1,57 @@
+{
+    "name": "Tarrasque",
+    "creature_type": "Monstrosity",
+    "creature_subtype": "titan",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 676,
+    "ac": 25,
+    "srd": true,
+    "cr": "30",
+    "movement": "40 ft. walking speed, burrow 30 ft.",
+    "role": null,
+    "tags": [
+        "monstrous",
+        "titan",
+        "destructive",
+        "fearsome"
+    ],
+    "adjectives": [
+        "towering",
+        "unstoppable",
+        "armored",
+        "devastating",
+        "ferocious"
+    ],
+    "description": "The Tarrasque is a towering monstrosity, standing over 50 feet tall with a massive, armored body, claws capable of tearing through stone, and a maw large enough to swallow buildings whole. Its appearance is imposing and destructive, leaving devastation in its wake.",
+    "memorable": "Considered one of the most powerful creatures, it regenerates health and is nearly impossible to kill, making it a true behemoth of destruction.",
+    "goals": "Wreaking havoc on the landscape and opposing any adventurers who dare confront it.",
+    "relations": "Might be related to other titanic creatures or ancient entities, often feared and avoided by adventurers.",
+    "environment": "Spends most of its time in slumber beneath the earth, rarely active but ready to unleash chaos when disturbed.",
+    "strengths": "Incredibly high Armor Class and hit points, significant regeneration, immunity to various damage types and conditions, devastating physical attacks.",
+    "weaknesses": "Limited intelligence and social interaction capabilities, can only be temporarily suppressed by specific magic spells.",
+    "attacks": "Multiattack capability includes a bite, claws, horns, and tail, each dealing devastating damage; has the option to swallow and incapacitate foes.",
+    "most_powerful_ability": "Radiant Breath: Exhales radiant energy in a 90-foot cone, causing massive damage to those caught within.",
+    "equipment": null,
+    "senses": "Possesses blindsight with a range of 120 feet, which allows for easy detection of hidden opponents.",
+    "skills": null,
+    "additional_information": [
+        "Astounding Leap allows jumping abilities equal to its speed.",
+        "Legendary Resistance allows it to succeed on failed saving throws.",
+        "Magic Resistance grants advantage on saving throws against magical effects.",
+        "Reflective Carapace may reflect spells back at their caster.",
+        "Siege Monster ability deals double damage to structures."
+    ],
+    "damage_types": [
+        "fire",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "towering monstrosity of destruction",
+        "giant creature with massive regeneration",
+        "unstoppable titan that swallows buildings",
+        "massive creature that inflicts double damage",
+        "fearsome behemoth with radiant breath"
+    ]
+}

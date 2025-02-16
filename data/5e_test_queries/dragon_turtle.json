@@ -1,0 +1,25 @@
+{
+    "name": "Dragon Turtle",
+    "queries": [
+        {
+            "query": "gargantuan turtle creature that breathes scalding steam",
+            "variant": "gargantuan creature turtle that breathes scalding steam"
+        },
+        {
+            "query": "massive sea dragon with an armored shell",
+            "variant": "huge dragon sea creature with an armor shell"
+        },
+        {
+            "query": "intelligent dragon turtle that demands tribute from sailors",
+            "variant": "smart dragon turtle that asks for tribute from sailors"
+        },
+        {
+            "query": "colossal dragon monster that lives in coastal waters",
+            "variant": "colossal dragon creature that inhabits coastal waters"
+        },
+        {
+            "query": "amphibious turtle-like dragon with powerful melee attacks",
+            "variant": "amphibious dragon turtle with strong melee attacks"
+        }
+    ]
+}

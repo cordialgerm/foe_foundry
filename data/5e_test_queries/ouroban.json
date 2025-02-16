@@ -1,0 +1,25 @@
+{
+    "name": "Ouroban",
+    "queries": [
+        {
+            "query": "humanoid creature with fire immunity and necrotic damage attack",
+            "variant": "humanoid fire-resistant creature with necrotic damage ability"
+        },
+        {
+            "query": "medium neutral evil humanoid with high hit points and spellcasting",
+            "variant": "medium evil humanoid with high hit points and spell abilities"
+        },
+        {
+            "query": "creature that uses greatsword and can heal from fire damage",
+            "variant": "monster that uses a greatsword and heals from fire attacks"
+        },
+        {
+            "query": "Ouroban battle tactics involving fire breath and Abyssal Fires",
+            "variant": "Ouroban combat strategies using fire breath and Abyssal Fires"
+        },
+        {
+            "query": "intimidating humanoid skilled in athletics and fire abilities",
+            "variant": "intimidating humanoid with athletics expertise and fire powers"
+        }
+    ]
+}

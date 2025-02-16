@@ -1,0 +1,54 @@
+{
+    "name": "Kelp Eel",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 157,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 10 ft., swim 50 ft.",
+    "role": null,
+    "tags": [
+        "eel",
+        "plant",
+        "ambush",
+        "grappling"
+    ],
+    "adjectives": [
+        "huge",
+        "defensive",
+        "plant-like",
+        "aquatic"
+    ],
+    "description": "A huge plant creature resembling kelp, capable of grappling and controlling movement in its vicinity.",
+    "memorable": "Its ability to dissolve into kelp and reform after being destroyed is unique and can create difficult terrain.",
+    "goals": "To ambush unsuspecting creatures and control the battlefield through grappling.",
+    "relations": "Related to aquatic plants and creatures that inhabit underwater environments.",
+    "environment": "Usually found in aquatic environments or kelp forests.",
+    "strengths": "Exceptional hit points and damage resistance to acid, bludgeoning, and piercing.",
+    "weaknesses": "Low intelligence limits its combat tactics; vulnerable to removal of its kelp components.",
+    "attacks": "Multiattack with kelp tendrils that can grapple from a distance and inflict suffocation damage.",
+    "most_powerful_ability": "The ability to disperse into kelp when reduced to 0 hit points, creating difficult terrain.",
+    "equipment": null,
+    "senses": "Has blindsight 90 ft., allowing it to detect creatures without relying on sight.",
+    "skills": null,
+    "additional_information": [
+        "Can pull grappled creatures toward itself with the Reel action.",
+        "Indistinguishable from ordinary kelp when motionless, enhancing its ambush capabilities.",
+        "Ability to reform with half its hit points if less than half its kelp is removed after dispersing."
+    ],
+    "damage_types": [
+        "acid",
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge plant creature that ambushes",
+        "kelp-like monster with grappling ability",
+        "aquatic creature that dissolves into kelp",
+        "monster that makes difficult terrain",
+        "plant creature with high hit points"
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Giant Leech</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>1</CR>
+<AC/>13</AC>
+<HP/>7</HP>
 <summary>The Giant Leech is a Small beast that operates in aquatic environments, known primarily for its stealth and blood-draining capabilities. With a moderate Armor Class of 13 and low Hit Points totaling 7, it can be considered somewhat fragile, making it susceptible to damage. However, its strengths lie in its Dexterity of 16, which provides a good modifier of +3 to its attacks and defenses, allowing it to effectively evade threats and perform stealthy actions. Its Challenge Rating of 1/4 classifies it as a minor foe, providing 50 Experience Points upon defeat. The Giant Leech has the unique benefit of being amphibious, enabling it to thrive both in water and on land, which enhances its versatility in combat scenarios. While it lacks offensive intelligence or charisma, it compensates with its formidable ability to latch onto prey and drain life steadily.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Giant Leech has a Bite attack that functions as a melee
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Leech
 
 *Small* *Beast* *unaligned*
@@ -53,5 +56,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the leech attaches to the target. While attached, the leech doesn’t attack. Instead, at the start of each of the leech’s turns, the target loses 5 (1d4 + 3) hp due to blood loss.<br><br>The leech can detach itself by spending 5 feet of its movement. It does so after it drains 15 hp of blood from the target or the target dies. A creature, including the target, can use its action to detach the leech.
 
 
+</statblock>
 
 

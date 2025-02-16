@@ -1,0 +1,25 @@
+{
+    "name": "Vampire Spawn",
+    "queries": [
+        {
+            "query": "undead creature that can climb walls and has a dangerous bite attack",
+            "variant": "creature that clmbs and has a deadly bite, undead"
+        },
+        {
+            "query": "servant of a vampire that can regenerate and is harmed by sunlight",
+            "variant": "vampires servant weak to sunlight and has regeneration"
+        },
+        {
+            "query": "loyal minion of a vampire with high strength and necrotic abilities",
+            "variant": "powerful minion of vampire, strong and has necrotic powers"
+        },
+        {
+            "query": "medium undead that uses stealth and grapples its prey",
+            "variant": "medium undead creature stealthy that grapples prey"
+        },
+        {
+            "query": "vulnerable to radiant damage and masters of stealth",
+            "variant": "weak to radiant attacks and stealthy creatures"
+        }
+    ]
+}

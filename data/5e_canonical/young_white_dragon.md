@@ -1,6 +1,8 @@
 <MonsterName/>Young White Dragon (Chromatic)</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>133</HP>
 <summary>A Young White Dragon is a savage and territorial creature, already displaying the brutal instincts of its kind. Its frosty white scales blend perfectly with the icy tundras and snow-covered mountains it calls home. Its breath weapon is a freezing blast of cold that can encase its enemies in ice. Unlike the more intelligent metallic dragons, Young White Dragons are driven by primal instincts, focusing on survival and hoarding food and treasure. They are solitary hunters, relying on their keen senses and brute strength to dominate their frozen territory. Their aggressiveness and territorial nature make them dangerous adversaries.</summary>
 
 <summary>The Young White Dragon is a formidable creature that represents the powerful and often feared nature of dragonkind. This large dragon features a high Armor Class of 17 and boasts an impressive pool of Hit Points totaling 152. With a Challenge Rating of 9, it is suitable for mid-level adventurers who may find themselves in peril when facing this icy predator. Its strengths lie primarily in its robust Constitution and strong attack capabilities, while it can easily navigate through icy environments due to its special abilities. However, its average Dexterity and low Intelligence may leave it susceptible to certain tactics from clever opponents. The dragon is proficient in various skills such as perception and history, and its immunities to cold damage make it an exceptionally resilient foe in wintry conditions.</summary>
@@ -35,6 +37,7 @@ One of the dragon's most formidable abilities is its Cold Breath, which has a re
 
 Source: 5e_srd
 
+<statblock>
 # Young White Dragon (Chromatic)
 
 *Large dragon, chaotic evil*
@@ -71,7 +74,8 @@ Source: 5e_srd
 
 ***Claw***. *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (2d6+4) slashing damage.
 
-***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.
+***Cold Breath (Recharge 5-6)***. The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -79,6 +83,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young White Dragon
 
 *Large* *Dragon*
@@ -112,6 +117,7 @@ Source: 5e_artisinal_monsters
 - **Cold Breath (Recharge 5-6):** The dragon exhales a 30-foot cone of frost. Each creature in that area makes a DC 15 Constitution saving throw  taking 35 (10d6) cold damage on a failed save or half damage on a success.
 
 
+</statblock>
 
 
 
@@ -120,6 +126,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Young White Dragon
 
 *Large dragon*
@@ -151,5 +158,6 @@ Source: 5e_artisinal_monsters
 - **Claw.** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.
 - **Cold Breath (Recharge 5–6).** The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 15 CON save, taking 31 (7d8) cold damage on a failed save, or half as much damage on a successful one.
 
+</statblock>
 
 

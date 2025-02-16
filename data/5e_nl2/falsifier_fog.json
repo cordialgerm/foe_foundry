@@ -1,0 +1,55 @@
+{
+    "name": "Falsifier Fog",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 52,
+    "ac": 13,
+    "srd": false,
+    "cr": "4",
+    "movement": "hovers and flies at 60 feet, walk 0 feet",
+    "role": "Controller",
+    "tags": [
+        "undead",
+        "fog",
+        "fear",
+        "illusions",
+        "psychic"
+    ],
+    "adjectives": [
+        "chaotic",
+        "potent",
+        "terrifying",
+        "phantasmal",
+        "indistinguishable"
+    ],
+    "description": "A Huge mass of swirling fog with chilling cold emanating from it, capable of instilling fear and confusion. It appears as indistinguishable fog when motionless.",
+    "memorable": "Its abilities to create horrific illusions and manipulate the battlefield while providing cover make it a formidable force.",
+    "goals": "To instill fear and manipulate opponents through its intimidating presence and psychic attacks.",
+    "relations": "Other undead creatures or foes that thrive in confusion and fear may accompany it.",
+    "environment": "Typically found in dark, misty areas where it can blend in with natural fog or smoke.",
+    "strengths": "Immunity to poison damage and conditions like exhaustion, paralysis, plus resistance to elemental damage and nonmagical attacks.",
+    "weaknesses": "Weak Strength score makes it ineffective in direct physical confrontations.",
+    "attacks": "Utilizes chill attacks that deal cold damage and psychic damage through horrific illusions, affecting the minds of those nearby.",
+    "most_powerful_ability": "Horrific Illusions, which causes creatures to become frightened and potentially suffer short-term madness.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to sense creatures in its vicinity without sight.",
+    "skills": null,
+    "additional_information": [
+        "Can occupy the same space as other creatures, offering three-quarters cover.",
+        "Limited Telepathy allows for strategic communication with trapped foes.",
+        "Can appear indistinguishable from regular fog while motionless."
+    ],
+    "damage_types": [
+        "cold",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge undead fog creature instilling fear",
+        "cunning fog that creates horrific illusions",
+        "mass of fog that causes short-term madness",
+        "chaotic evil fog creature with telepathy",
+        "flying creature resembling ordinary fog"
+    ]
+}

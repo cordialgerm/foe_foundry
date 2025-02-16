@@ -1,0 +1,52 @@
+{
+    "name": "Star Spawn of Cthulhu",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Large",
+    "hp": 212,
+    "ac": 17,
+    "srd": false,
+    "cr": "15",
+    "movement": "walk 50 ft., fly 30 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fiend",
+        "chaotic",
+        "psychic"
+    ],
+    "adjectives": [
+        "formidable",
+        "powerful",
+        "chaotic",
+        "evil"
+    ],
+    "description": "The Star Spawn of Cthulhu is a Large Fiend characterized by its chaotic evil nature, featuring a terrifying appearance and a blend of physical and necrotic attacks.",
+    "memorable": "It regenerates from psychic damage and possesses devastating abilities like Disintegrating Gaze.",
+    "goals": "To dominate and instill fear in its enemies, often utilizing psychic powers to incapacitate foes.",
+    "relations": "May be encountered alongside other fiends or creatures aligned with chaos.",
+    "environment": "Typically found in dark, chaotic regions or places of psychic disturbance.",
+    "strengths": "Immune to multiple damage types, psychic absorption abilities, and high mobility through teleportation.",
+    "weaknesses": "Vulnerable to radiant and force damage, which can exploit its defenses.",
+    "attacks": "Utilizes Crushing Claws for physical bludgeoning and necrotic damage and can unleash devastating Void Bolts from a distance.",
+    "most_powerful_ability": "Disintegrating Gaze can severely incapacitate enemies, making them misty clouds and subjecting them to additional necrotic damage.",
+    "senses": "Possesses a passive perception of 24, allowing it to detect hidden foes easily.",
+    "skills": "Proficient in Arcana, showcasing high magical knowledge and Perception for sensory acuity.",
+    "additional_information": [
+        "Regenerates from psychic damage through Psychic Absorption.",
+        "Can teleport using Interdimensional Step, leaving visual distortions behind.",
+        "Immune to exhaustion, frightened, paralyzed, petrified, and poisoned.",
+        "Does not require air, food, drink, or sleep with Void Traveler ability.",
+        "Utilizes a mix of melee and ranged attacks, making it versatile in combat."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large psychic fiend with teleportation powers",
+        "chaotic evil monster that absorbs psychic damage",
+        "formidable monster with disintegrating gaze ability",
+        "necrotic damage dealer with high mobility",
+        "fiend with powerful claws and teleportation"
+    ]
+}

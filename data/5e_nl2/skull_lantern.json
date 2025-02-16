@@ -1,0 +1,50 @@
+{
+    "name": "Skull Lantern",
+    "creature_type": "Undead",
+    "alignment": "unaligned",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "fly 30 ft., hover",
+    "role": "Support",
+    "tags": [
+        "undead",
+        "light",
+        "fire"
+    ],
+    "adjectives": [
+        "eerie",
+        "tiny",
+        "supportive"
+    ],
+    "description": "The Skull Lantern is a tiny undead creature notable for its eerie glow and frail appearance. It hovers in the air, radiating light, and is equipped with a mouth for its Bite attack.",
+    "memorable": "Its unique ability to dispel magical darkness and regenerate makes it a compelling addition to encounters.",
+    "goals": "To illuminate areas and disrupt magical darkness while providing support in combat.",
+    "relations": "Associated with other undead creatures, it may be found in places of magical darkness or near necromancers.",
+    "environment": "Commonly found in dark, magical locations or crypts.",
+    "strengths": "Immunity to poison, resistance to many conditions, and the ability to dispel darkness.",
+    "weaknesses": "Incredibly low physical attributes and sensitive to radiant damage.",
+    "attacks": "Bites with sharp teeth for piercing damage and fires a searing beam of light.",
+    "most_powerful_ability": "The Flare ability, which dispels magical darkness in a large radius.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to conditions like frightened and unconscious.",
+        "Can potentially regenerate after being made inert.",
+        "Provides persistent illumination in its vicinity."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny undead creature with eerie glow",
+        "support creature that dispels magical darkness",
+        "creature that emits blinding light",
+        "fire-using undead hovering light source",
+        "tiny monster that illuminates dark areas"
+    ]
+}

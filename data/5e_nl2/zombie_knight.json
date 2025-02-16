@@ -1,0 +1,50 @@
+{
+    "name": "Zombie Knight",
+    "creature_type": "Undead",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 52,
+    "ac": 16,
+    "srd": false,
+    "cr": "3",
+    "movement": "slow movement, walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "fighter",
+        "brawler"
+    ],
+    "adjectives": [
+        "fearsome",
+        "relentless",
+        "decayed"
+    ],
+    "description": "The Zombie Knight is a medium undead creature with a solid armor class and a fearsome appearance, making it a formidable antagonist. It wields a greatsword and has a skeletal or rotting visage, reflecting its undead nature.",
+    "memorable": "Its ability to withstand lethal damage using Undead Fortitude keeps it dangerous even when it appears to be defeated.",
+    "goals": "To engage in battle and disrupt enemies with relentless attacks.",
+    "relations": "Often found in the company of other undead or possibly serving a necromancer.",
+    "environment": "Graveyards, battlefields, or anywhere associated with death.",
+    "strengths": "Immune to poison and fatigue, can fight effectively even when severely damaged.",
+    "weaknesses": "Low Dexterity affects its defenses and speed, making it vulnerable to ranged attacks.",
+    "attacks": "Uses a greatsword for slashing attacks, can grapple enemies, and regain health through its bite.",
+    "most_powerful_ability": "Undead Fortitude allows it to drop to 1 hit point instead of 0, dramatically increasing its survivability.",
+    "equipment": "Greatsword",
+    "senses": "Has darkvision up to 60 ft., enhancing its ability to fight in darkness.",
+    "skills": "Lacks proficiency in skills due to very low Intelligence and Dexterity scores.",
+    "additional_information": [
+        "Can make two melee attacks in one turn with Multiattack.",
+        "Regains hit points through its Bite attack.",
+        "Does not require air, food, or sleep, allowing it to operate continuously in combat.",
+        "Low passive perception of 9 makes it less aware of its surroundings.",
+        "Effective frontline combatant with decent hit points for its CR."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead knight that grapples enemies",
+        "strong melee undead that regains health",
+        "zombie knight with greatsword attacks",
+        "relentless brawler that can't be easily defeated",
+        "slow undead with unique fortitude ability"
+    ]
+}

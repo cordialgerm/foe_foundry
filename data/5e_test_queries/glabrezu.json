@@ -1,0 +1,25 @@
+{
+    "name": "Glabrezu",
+    "queries": [
+        {
+            "query": "large demon with four arms that manipulates mortals",
+            "variant": "big demon with for arms that controls mortals"
+        },
+        {
+            "query": "fiendish creature known for its cunning and pincers",
+            "variant": "devilish being famous for its cleverness and pincers"
+        },
+        {
+            "query": "darkness summoning demon that grapples with pincers",
+            "variant": "shadow-summoning demon that holds with pincers"
+        },
+        {
+            "query": "chaotic evil fiend that uses spells to confuse enemies",
+            "variant": "chaotic wicked fiend that uses spells for confusing foes"
+        },
+        {
+            "query": "towering demon with magical resistance and high hit points",
+            "variant": "tall demon with spell resistance and high health points"
+        }
+    ]
+}

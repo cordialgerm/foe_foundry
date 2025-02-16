@@ -1,0 +1,25 @@
+{
+    "name": "Half-Red Dragon Veteran",
+    "queries": [
+        {
+            "query": "humanoid warrior with fire breath ability and strong melee attacks",
+            "variant": "humanoid fighter that has fire breath powers and strong melee capabilities"
+        },
+        {
+            "query": "half-dragon veteran that resists fire and performs tactical movements",
+            "variant": "dragon-half veteran that has fire resistance and uses tactical movements"
+        },
+        {
+            "query": "creature with high strength and damaging fire breath attack",
+            "variant": "monster with strong strength and a damaging fire breath ability"
+        },
+        {
+            "query": "combat expert with fire resistance and ability to counter melee attacks",
+            "variant": "battle expert with resistance to fire and the capacity to counter melee assaults"
+        },
+        {
+            "query": "medium-sized fighter with slashing and piercing weapon attacks",
+            "variant": "medium combatant that uses slashing and piercing weapons in attacks"
+        }
+    ]
+}

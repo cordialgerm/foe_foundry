@@ -1,0 +1,55 @@
+{
+    "name": "Dead Mans Fingers",
+    "creature_type": "Plant",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 190,
+    "ac": 15,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 0 ft.",
+    "role": null,
+    "tags": [
+        "Ethereal",
+        "Poisonous",
+        "Necrotic",
+        "Manipulative"
+    ],
+    "adjectives": [
+        "formidable",
+        "ethereal",
+        "flammable",
+        "unique",
+        "dangerous"
+    ],
+    "description": "Dead Man's Fingers is a medium-sized plant creature that exists simultaneously on the Ethereal and Material Planes, making it a formidable opponent. It has a distinct appearance with tendril-like limbs and a ghostly form when viewed from the Material Plane.",
+    "memorable": "The ability to transport creatures to the Ethereal Plane upon contact is a unique and formidable aspect, along with its capacity to spawn new entities from fallen foes.",
+    "goals": "Survive encounters, dominate the battlefield, and propagate by creating new Dead Man's Fingers from defeated enemies.",
+    "relations": "Often encountered with other ethereal or plant-based creatures, potentially serving or being served by them in ethereal ecosystems.",
+    "environment": "Typically found in areas where the Ethereal and Material Planes intersect, such as shadowy forests or haunted locations.",
+    "strengths": "Immunities to many conditions make it hard to control; powerful physical capabilities; ability to inflict damage through poison and necrotic effects.",
+    "weaknesses": "Flammable, vulnerable to fire damage which can cause ongoing damage.",
+    "attacks": "It uses tendril attacks that deal both bludgeoning and poison damage, and can manipulate foes with telekinetic abilities.",
+    "most_powerful_ability": "The Ethereal Shift ability allows it to magically transport creatures to the Ethereal Plane, controlling the battlefield significantly.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 90 feet, allowing it to perceive its surroundings even while blinded within that range.",
+    "skills": null,
+    "additional_information": [
+        "Immune to being blinded, charmed, deafened, fatigued, frightened, prone, restrained, and stunned.",
+        "Creates new Dead Man's Fingers from corpses that linger in the Ethereal Plane.",
+        "Advantageous in ethereal environments where it can use its unique abilities to gain supremacy."
+    ],
+    "damage_types": [
+        "poison",
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "plant monster that travels between planes",
+        "flame-sensitive ethereal plant creature",
+        "dangerous ethereal being with tendril attacks",
+        "multi-dimension plant that shifts other creatures",
+        "poisonous plant that spawns new creatures"
+    ]
+}

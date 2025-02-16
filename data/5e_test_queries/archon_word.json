@@ -1,0 +1,25 @@
+{
+    "name": "Archon, Word",
+    "queries": [
+        {
+            "query": "small celestial creature that assists allies",
+            "variant": "tiny celestial being that helps companions"
+        },
+        {
+            "query": "beneficial flying monster immune to poison",
+            "variant": "helpful flying creature that cannot be poisoned"
+        },
+        {
+            "query": "creature with radiant damage abilities and spellcasting",
+            "variant": "being with spellcasting and abilities related to radiant damage"
+        },
+        {
+            "query": "lawful good being that supports allies in combat",
+            "variant": "good-aligned entity that aids its companions during battles"
+        },
+        {
+            "query": "tiny celestial that communicates telepathically and has keen sight",
+            "variant": "small celestial creature able to use telepathy and has enhanced vision"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Dwarven Ringmage",
+    "queries": [
+        {
+            "query": "intelligent spellcasting dwarf with poison resistance",
+            "variant": "intelligant dwarf spellcaster that resists poison"
+        },
+        {
+            "query": "magic manipulator in medium armor who can fly",
+            "variant": "medium armored magic user that has flying abilities"
+        },
+        {
+            "query": "tactical dwarf adept at creating magical circles",
+            "variant": "strategic dwarven mage skilled in magic circles"
+        },
+        {
+            "query": "dwarf with darkvision and skills in Arcana and History",
+            "variant": "dwarven creature possessing darkvision and proficiency in Arcana and History"
+        },
+        {
+            "query": "ring staff wielder with high intelligence and low charisma",
+            "variant": "intelligent ring staff user that has below-average charisma"
+        }
+    ]
+}

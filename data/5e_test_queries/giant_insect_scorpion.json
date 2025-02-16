@@ -1,0 +1,25 @@
+{
+    "name": "Giant Scorpion",
+    "queries": [
+        {
+            "query": "large beast with deadly sting and grappling claws",
+            "variant": "big beast that has deadly claws and a poisonous sting"
+        },
+        {
+            "query": "monster that inflicts poison damage and has moderate challenge rating",
+            "variant": "creature that does poison damage and has a CR of 3"
+        },
+        {
+            "query": "giant insect with multiattack abilities and strong presence",
+            "variant": "huge insect that uses multiattack attacks and has a formidable presence"
+        },
+        {
+            "query": "scorpion that can burrow and has a high armor class",
+            "variant": "scorpion able to dig and has a good AC"
+        },
+        {
+            "query": "poisonous giant scorpion known for ambushing prey",
+            "variant": "big poisonous scorpion famous for ambushing its victims"
+        }
+    ]
+}

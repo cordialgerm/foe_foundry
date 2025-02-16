@@ -1,0 +1,25 @@
+{
+    "name": "Valkruung",
+    "queries": [
+        {
+            "query": "chaotic neutral tiny monster with prehensile tendrils",
+            "variant": "tiny chaotic neutral monster that has prehensile tendrils"
+        },
+        {
+            "query": "quirky monstrosity that can poison and disarm enemies",
+            "variant": "monstrosity that disarms and poisons its foes with quirky abilities"
+        },
+        {
+            "query": "small creature with high dexterity and weak intelligence",
+            "variant": "small creature that has a weak intelligence but high dexterity"
+        },
+        {
+            "query": "Valkruung's unique anatomy and evasion skills",
+            "variant": "unique anatomy and evasion capabilities of the Valkruung"
+        },
+        {
+            "query": "monster that is whimsical and uses claws to attack",
+            "variant": "whimsical monster that attacks with its claws"
+        }
+    ]
+}

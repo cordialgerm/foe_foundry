@@ -1,0 +1,25 @@
+{
+    "name": "Necrotech Bonecage Constrictor",
+    "queries": [
+        {
+            "query": "huge undead monster with necromantic abilities and battlefield control",
+            "variant": "large undead creature that controls the battlefield with necromancy and strength"
+        },
+        {
+            "query": "monster that restrains foes while dealing necrotic damage",
+            "variant": "creature that cages opponents and inflicts necrotic harm"
+        },
+        {
+            "query": "undead creature with strong Constitution and bludgeoning vulnerability",
+            "variant": "undead monster with high Constitution score that is weak to bludgeoning"
+        },
+        {
+            "query": "intimidating creature that stabilizes restrained foes and has high hit points",
+            "variant": "fearsome being that keeps captured foes stabilized and boasts large hit points"
+        },
+        {
+            "query": "necromantic monster created from technology that can crush its victims",
+            "variant": "creature merging tech and necromancy capable of crushing opponents"
+        }
+    ]
+}

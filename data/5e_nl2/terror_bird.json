@@ -1,0 +1,53 @@
+{
+    "name": "Terror Bird",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 65,
+    "ac": 12,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "beast",
+        "predator",
+        "Pack Tactics",
+        "savage"
+    ],
+    "adjectives": [
+        "large",
+        "fierce",
+        "simple-minded",
+        "aggressive"
+    ],
+    "description": "The Terror Bird is a large, fierce beast with a serrated beak, notable for its aggressive charging attacks and combat prowess.",
+    "memorable": "Known for its Pack Tactics ability, the Terror Bird excels in group combat by gaining advantage on attack rolls when allies are nearby.",
+    "goals": "Typically engages in hunting and aggressive territorial behavior.",
+    "relations": "May be found in groups and can work in tandem with other beasts.",
+    "environment": "Often inhabits open areas where it can sprint and hunt.",
+    "strengths": "Exceptional strength for powerful physical attacks and advantage on attacks in a pack.",
+    "weaknesses": "Very low intelligence limits complex strategies and tactics.",
+    "attacks": "Utilizes its Serrated Beak for melee attacks, inflicting significant slashing damage with potential lingering effects.",
+    "most_powerful_ability": "Pack Tactics allows the Terror Bird to quickly overwhelm its foes by working together with allies.",
+    "equipment": null,
+    "senses": "Possesses darkvision that allows it to see in dim light as if it were bright light.",
+    "skills": "Excels in Athletics and has a decent perception ability.",
+    "additional_information": [
+        "Moves quickly at 50 feet and can deliver strong physical attacks.",
+        "Has a relatively good Constitution score, providing decent resilience.",
+        "Can inflict additional slashing damage if the initial attack succeeds.",
+        "Simple-minded behavior may lead to predictable combat patterns."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large aggressive predatory bird",
+        "fierce bird with serrated beak",
+        "bird that attacks with Pack Tactics",
+        "Terror Bird charging attack",
+        "simple-minded bird beast"
+    ]
+}

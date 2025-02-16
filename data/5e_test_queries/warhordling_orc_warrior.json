@@ -1,0 +1,25 @@
+{
+    "name": "Warhordling Orc Warrior",
+    "queries": [
+        {
+            "query": "humanoid creature with a greataxe and aggressive charge ability",
+            "variant": "creature that is humanoid and has an aggressive charge ability with a greataxe"
+        },
+        {
+            "query": "orc warrior type with moderate hit points and average intelligence",
+            "variant": "type of orc warrior that has average intelligence and moderate hit points"
+        },
+        {
+            "query": "medium-sized orc with athletic skills and good perception",
+            "variant": "orc warrior that is medium-sized with good perception and athletic skills"
+        },
+        {
+            "query": "orc warrior in battle with a decent armor class and survival skills",
+            "variant": "warrior orc in combat with decent armor class and skills in survival"
+        },
+        {
+            "query": "combat-ready humanoid with skills in stealth and survival",
+            "variant": "humanoid skilled in stealth and survival who is ready for combat"
+        }
+    ]
+}

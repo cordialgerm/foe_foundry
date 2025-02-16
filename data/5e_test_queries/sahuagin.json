@@ -1,0 +1,25 @@
+{
+    "name": "Sahuagin",
+    "queries": [
+        {
+            "query": "fish-like humanoid monster that lives in the ocean and has sharp claws",
+            "variant": "humanoid monster that is fish-like and has sharp claws, living in the ocean"
+        },
+        {
+            "query": "aquatic creature with telepathic abilities to control sharks and that breathes both air and water",
+            "variant": "creature that can breathe air and water, controlling sharks with telepathy"
+        },
+        {
+            "query": "aggressive sea monster known for raiding coastal settlements and having raspy teeth",
+            "variant": "sea monster that raids coastal areas and is known for its sharp teeth and aggression"
+        },
+        {
+            "query": "humanoid creature with a Blood Frenzy ability that hunts weakened foes in aquatic environments",
+            "variant": "humanoid monster that uses Blood Frenzy to hunt injured foes in water"
+        },
+        {
+            "query": "territorial underwater being that fights merfolk and has a unique claw attack",
+            "variant": "underwater creature known for its claw attack that is territorial and fights merfolk"
+        }
+    ]
+}

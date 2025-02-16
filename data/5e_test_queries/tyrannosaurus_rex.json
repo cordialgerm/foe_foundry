@@ -1,0 +1,25 @@
+{
+    "name": "Tyrannosaurus Rex",
+    "queries": [
+        {
+            "query": "huge carnivorous dinosaur with powerful jaws and tail",
+            "variant": "large meat-eating dino with strong jaws and tail"
+        },
+        {
+            "query": "massive predator that dominates its territory and grapples prey",
+            "variant": "massive hunting creature that controls its area and grabs prey"
+        },
+        {
+            "query": "agile dinosaur that can deliver devastating bite attacks",
+            "variant": "fast dino capable of causing major damage with bite attacks"
+        },
+        {
+            "query": "monster with high Strength score and low Dexterity lurking in prehistoric environments",
+            "variant": "creature with strong strength and weak dexterity hiding in ancient areas"
+        },
+        {
+            "query": "prehistoric beast with challenging combat abilities and multiattack actions",
+            "variant": "ancient creature equipped with tough fighting skills and multiple attack moves"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Eater of Dust",
+    "creature_type": "Aberration",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 114,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "aberration",
+        "necrotic",
+        "teleportation"
+    ],
+    "adjectives": [
+        "menacing",
+        "regenerative",
+        "piercing"
+    ],
+    "description": "The Eater of Dust is a Medium aberration with a formidable presence, featuring a Maw-Arm capable of the lethal combination of piercing and necrotic damage.",
+    "memorable": "Its unique ability to diminish opponents' maximum hit points makes it a fearsome opponent, as it can potentially lead to quick defeats for unprepared adventurers.",
+    "goals": "To drain the vitality of its opponents and dominate its territory, using its regeneration to outlast foes.",
+    "relations": "It may be found in the company of other aberrations or dark creatures that thrive in desolate landscapes.",
+    "environment": "Typically encountered in arid or desolate regions, where its abilities can thrive.",
+    "strengths": "Possesses strong melee attacks, a high armor class, and significant regenerative capabilities.",
+    "weaknesses": "Vulnerable to fire damage, which temporarily negates its regenerative abilities.",
+    "attacks": "Can deliver powerful Maw-Arm strikes that deal piercing and additional necrotic damage, along with necrotic blasts.",
+    "most_powerful_ability": "The ability to reduce an opponent's hit point maximum with its Maw-Arm attack while healing itself.",
+    "equipment": null,
+    "senses": "Has blindsight up to 120 feet, allowing it to perceive its surroundings despite being blind beyond that range.",
+    "skills": "Proficient in Athletics, Intimidation, and Perception, indicating strong physical prowess and a chilling presence.",
+    "additional_information": [
+        "Regeneration of health each turn unless affected by fire damage.",
+        "Can teleport to unoccupied spaces near creatures.",
+        "Immune to lightning and poison damage.",
+        "Resistant to acid and cold damage.",
+        "Cannot die until starting its turn with 0 hit points and failing to regenerate."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "monster with necrotic attacks and regeneration",
+        "creature that drains hit points in battle",
+        "aberration that teleports and deals necrotic damage",
+        "resilient monster with a Maw-Arm",
+        "Eater of Dust abilities and traits"
+    ]
+}

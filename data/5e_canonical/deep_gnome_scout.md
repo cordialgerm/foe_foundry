@@ -1,6 +1,8 @@
 <MonsterName/>Deep Gnome Scout</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>1</CR>
+<AC/>15</AC>
+<HP/>19</HP>
 <summary>The Deep Gnome Scout is a Medium humanoid creature known for its agility and stealth. It excels in explorative roles, using its keen senses and camouflage abilities to navigate rocky terrain and gather information effectively. With an Armor Class of 15, it can take a moderate amount of damage before being taken down, as it has 19 hit points, which may be considered low but sufficient for its challenge rating of 1/2. The scout boasts an impressive Dexterity score of 16, granting it an exceptional modifier of +3 and contributing to its stealth, making it difficult to detect. Its main weaknesses include lower physical strength and average magical abilities, but its resistance to magic makes it resilient in magical confrontations.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ For actions, the scout can make a melee weapon attack with its War Pick, which h
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Deep Gnome Scout
 
 *Medium* *Humanoid*
@@ -57,5 +60,6 @@ Source: 5e_artisinal_monsters
 - **Blindness (2nd-Level; V):** A creature within 30 feet makes a DC 10 Constitution saving throw. On a failure  the target is blinded for 1 minute. It repeats the saving throw at the end of each of its turns  ending the effect on a success.
 
 
+</statblock>
 
 

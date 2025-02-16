@@ -1,0 +1,56 @@
+{
+    "name": "Hinn",
+    "creature_type": "Elemental",
+    "creature_subtype": "outsider",
+    "alignment": null,
+    "size": "Large",
+    "hp": 199,
+    "ac": 17,
+    "srd": false,
+    "cr": "11",
+    "movement": "30 ft., burrow 30 ft., fly 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "elemental",
+        "outsider",
+        "burrower",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "magical",
+        "stealthy",
+        "resilient"
+    ],
+    "description": "The Hinn is a large elemental creature with the ability to change into a cloud of dust and manipulate the earth around it. It possesses a Gem-Studded Mace and Lob Stones for combat.",
+    "memorable": "Its unique abilities to burrow through the earth without detection and transform into a cloud make it a versatile and unpredictable opponent.",
+    "goals": "To control the battlefield and use its elemental powers against its foes.",
+    "relations": "It may summon earth elementals as allies, showcasing its command over earth-based creatures.",
+    "environment": "Can be found in varied environments with access to earth and stone.",
+    "strengths": "Strong defensive capabilities and powerful spellcasting, particularly in controlling the battlefield.",
+    "weaknesses": "Limited direct ranged attacks and reliance on close to mid-range combat.",
+    "attacks": "Utilizes Multiattack with a Gem-Studded Mace and Lob Stone to deal significant damage and potentially stun targets.",
+    "most_powerful_ability": "Earth Glide allows it to move through earth and stone undetected, enabling surprise attacks.",
+    "equipment": "Gem-Studded Mace, Lob Stone.",
+    "senses": "High perception score of 17 grants it the ability to notice hidden creatures or objects effectively.",
+    "skills": "Possesses good Stealth proficiency, especially in cloud form.",
+    "additional_information": [
+        "Can create an earth elemental as an ally once per day.",
+        "Transforms seamlessly between bipedal and cloud forms.",
+        "Churned Earth ability causes area disruption and damage.",
+        "Stealthy in cloud form, with enhanced abilities.",
+        "Can travel between planes of existence."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large elemental that manipulates earth",
+        "cloud dust creature with powerful melee attacks",
+        "elemental that can burrow and transform",
+        "monster with stunning mace attacks",
+        "stealthy creature that controls the battlefield"
+    ]
+}

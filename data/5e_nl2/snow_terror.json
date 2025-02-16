@@ -1,0 +1,52 @@
+{
+    "name": "Snow Terror",
+    "creature_type": "Fiend",
+    "alignment": "chaotic evil",
+    "size": "Large",
+    "hp": 127,
+    "ac": 16,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "fiend",
+        "fear",
+        "shapechanger"
+    ],
+    "adjectives": [
+        "fearsome",
+        "chaotic",
+        "stealthy"
+    ],
+    "description": "The Snow Terror resembles a chilling snow creature, capable of instilling fear and chaos in its wake. It can blend in with ordinary snow beings to ambush unsuspecting foes.",
+    "memorable": "This creature's shapechanging ability allows it to mimic those it has killed, turning fallen enemies into tools of terror.",
+    "goals": "To instill fear and chaos among its foes, often using deception and surprise tactics.",
+    "relations": "It may be related to other fiendish creatures or serve under more powerful evil beings.",
+    "environment": "Typically found in cold, snowy regions where it can blend in with the environment.",
+    "strengths": "Immunities to acid, cold, poison damage, and nonmagical attacks, combined with high Dexterity, enhance its evasion and combat effectiveness.",
+    "weaknesses": "Vulnerable to fire damage, which can significantly harm this creature.",
+    "attacks": "Its Bite delivers piercing and acid damage, with a chance to swallow smaller foes, causing ongoing acid damage.",
+    "most_powerful_ability": "Horrifying Visage can frighten multiple creatures, establishing a psychological edge in combat.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Excels in Deception and Stealth, allowing it to effectively ambush and mislead its targets.",
+    "additional_information": [
+        "Shapechanger ability allows it to polymorph into a likeness of recently killed creatures.",
+        "False Appearance enables it to hide among snow beings if motionless.",
+        "Immune to the frightened condition, making it audacious in battle.",
+        "Strategically uses Horrifying Visage to control the battlefield.",
+        "Can only swallow one creature at a time."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "shapechanging fiend with snow disguise",
+        "large winter monster that creates fear",
+        "snow creature that mimics its victims",
+        "fearsome creature with biting attacks",
+        "chaotic evil fiend in snowy regions"
+    ]
+}

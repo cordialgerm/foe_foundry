@@ -1,0 +1,25 @@
+{
+    "name": "Hverhuldra",
+    "queries": [
+        {
+            "query": "small fey creature with magical abilities that lives in water",
+            "variant": "small fey with magic powers living in water"
+        },
+        {
+            "query": "creature that can purify water and has fire immunity",
+            "variant": "being that can cleanse water and is immune to fire"
+        },
+        {
+            "query": "monster with aquatic abilities and powerful spells",
+            "variant": "creature possessing water skills and strong spells"
+        },
+        {
+            "query": "fey being that breathes water and has a steam attack",
+            "variant": "fey creature that can breathe underwater and has a steam ability"
+        },
+        {
+            "query": "Hverhuldra abilities for combat and healing allies",
+            "variant": "abilities of Hverhuldra in battle and for aiding friends"
+        }
+    ]
+}

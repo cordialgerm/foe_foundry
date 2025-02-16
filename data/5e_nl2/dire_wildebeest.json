@@ -1,0 +1,52 @@
+{
+    "name": "Dire Wildebeest",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 150,
+    "ac": 14,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 50 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "stampede",
+        "intimidating"
+    ],
+    "adjectives": [
+        "powerful",
+        "formidable",
+        "fast"
+    ],
+    "description": "A large, powerful beast with an impressive build and natural armor. Its fierce appearance is complemented by its muscular frame and aggressive stance.",
+    "memorable": "Combines physical strength with abilities to instill fear and facilitate stampedes.",
+    "goals": "To charge at enemies and dominate the battlefield through intimidation and brute force.",
+    "relations": "Might be found alongside other beasts or in herds, as it operates independently.",
+    "environment": "Open grasslands or savanna-like areas.",
+    "strengths": "High physical damage output with abilities to knock opponents prone and summon stampedes.",
+    "weaknesses": "Low mental capabilities make it vulnerable to effects targeting intelligence, wisdom, or charisma.",
+    "attacks": "Gore attack inflicting significant piercing damage, followed by bludgeoning damage from its hooves.",
+    "most_powerful_ability": "Incite Stampede, enabling deadly charges with additional creatures joining the fray.",
+    "equipment": null,
+    "senses": "Passive perception of 13, indicating average awareness of its surroundings.",
+    "skills": "Lacks notable skill proficiency and has a very low perception.",
+    "additional_information": [
+        "Can inflict fear with Intimidating Glare.",
+        "Has Noxious Breath attack that deals poison damage.",
+        "Trampling Charge ability allows for tactical advantage.",
+        "Condition immune to frightened and poisoned.",
+        "Pouring forth long-lasting chaos on the battlefield."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large beast that causes stampedes",
+        "powerful creature with fear-inducing glare",
+        "beast with poisonous breath attack",
+        "wild animal known for charging",
+        "fast monster that knocks foes prone"
+    ]
+}

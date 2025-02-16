@@ -1,0 +1,52 @@
+{
+    "name": "Warrior",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/8",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "combatant",
+        "melee",
+        "ranged"
+    ],
+    "adjectives": [
+        "versatile",
+        "capable",
+        "agile",
+        "observant"
+    ],
+    "description": "The Warrior is a medium humanoid characterized by its combat abilities and basic survival skills. It is equipped with a spear for melee and ranged attacks.",
+    "memorable": "Its versatility in combat and good perception skills make it a capable opponent despite its low hit points.",
+    "goals": "Engage enemies in combat, either up close or at a distance, using tactical decision-making.",
+    "relations": null,
+    "environment": null,
+    "strengths": "The Warrior excels in both melee and ranged combat with decent awareness of its surroundings.",
+    "weaknesses": "Relatively low hit points and basic attributes make it less effective in prolonged encounters.",
+    "attacks": "Uses a spear that allows for melee and ranged attacks with a good chance to hit, dealing 4 piercing damage.",
+    "most_powerful_ability": "Good perception adds to its awareness, allowing it to notice hidden threats.",
+    "equipment": "spear",
+    "senses": "Possesses a passive perception of 14, indicating strong awareness of its surroundings.",
+    "skills": "Excels in athletics, stealth, and survival skills, indicating good capability in physical contests.",
+    "additional_information": [
+        "Challenge rating of 1/8 makes it suitable for low-level encounters.",
+        "Average physical and mental attributes reflect a basic fighter.",
+        "Basic survival skills contribute to navigating through environments.",
+        "Can attack at a distance of up to 60 feet with disadvantage.",
+        "Not particularly resilient, making it vulnerable in extended battles."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid combatant with a spear",
+        "medium warrior skilled in athletics and stealth",
+        "capable melee and ranged fighter",
+        "observant humanoid with survival skills",
+        "warrior with average resilience and perception"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Dvarapala",
+    "creature_type": "Giant",
+    "alignment": "any alignment (as its patron deity)",
+    "size": "Huge",
+    "hp": 136,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "guardian",
+        "giant",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "divine",
+        "powerful"
+    ],
+    "description": "The Dvarapala is a Huge Giant that embodies the will of its patron deity, characterized by its exceptional strength, robust defenses, and divine qualities.",
+    "memorable": "It has strong magical resistance, keen senses, and the ability to attack when foes come close.",
+    "goals": "To serve as a guardian and protector for its deity, using its strength and abilities to deter intruders.",
+    "relations": "May be encountered alongside other divine creatures or guardians in service to similar deities.",
+    "environment": "Commonly found in areas of significance to its deity or in places requiring protection.",
+    "strengths": "Possesses magic resistance, keen senses that enhance perception checks, and a powerful melee attack with a reach.",
+    "weaknesses": "Has average Intelligence and very low Charisma, which may hinder social interaction.",
+    "attacks": "It wields a gada for powerful melee attacks and can hurl javelins for ranged attacks.",
+    "most_powerful_ability": "Sweeping Strike enables it to target multiple creatures with a strong area effect attack, pushing foes away.",
+    "equipment": "Gada, a melee weapon for close combat, and javelins for ranged attacks.",
+    "senses": "Possesses keen senses with advantage on Perception checks that rely on sight, hearing, or smell.",
+    "skills": "Skilled in Perception and has knowledge of Religion, enhancing its role as a guardian.",
+    "additional_information": [
+        "Immune to charmed, exhaustion, and frightened conditions.",
+        "Divine Words ability lets it communicate in a language associated with its deity.",
+        "Can innately cast spells like sacred flame and thunderwave.",
+        "Uses Magic Resistance to resist spells and magical effects.",
+        "Possesses a unique opportunity attack capability with You Shall Not Pass."
+    ],
+    "damage_types": [
+        "radiant",
+        "thunder"
+    ],
+    "spellcasting": "Innate spellcaster with spells such as sacred flame (at will) and thunderwave (three times a day).",
+    "test_queries": [
+        "giant guardian with powerful melee attacks",
+        "huge divine giant with magical resistance",
+        "tough giant that commands thunder and wind",
+        "dvarapala abilities and strengths",
+        "strong giant with keen senses and spells"
+    ]
+}

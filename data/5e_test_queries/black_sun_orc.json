@@ -1,0 +1,25 @@
+{
+    "name": "Black Sun Orc",
+    "queries": [
+        {
+            "query": "medium-sized humanoid orc that thrives in rocky terrains and avoids bright light",
+            "variant": "medium humanoid orc that does well in rocky areas and dislikes bright light"
+        },
+        {
+            "query": "orc with darkvision that is aggressive and excels in stealth",
+            "variant": "orc that has darkvision and is good at being aggressive and sneaky"
+        },
+        {
+            "query": "chaotic evil orc that uses hide armor and has a strong melee attack",
+            "variant": "evil chaotic orc that wears hide armor and can hit hard in melee"
+        },
+        {
+            "query": "Black Sun Orc traits like light sensitivity and stone camouflage",
+            "variant": "traits of Black Sun Orc including stone camouflage and disadvantage in bright light"
+        },
+        {
+            "query": "orc that can communicate in Common and Orc languages and excels in survival skills",
+            "variant": "orc known for speaking Common and Orc and is great at survival"
+        }
+    ]
+}

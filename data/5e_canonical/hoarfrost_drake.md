@@ -1,6 +1,8 @@
 <MonsterName/>Hoarfrost Drake</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>2</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>52</HP>
 <summary>The Hoarfrost Drake is a medium-sized dragon characterized by its chaotic evil nature. This formidable foe serves as a menace in icy locales, embodying the dangers of the cold with its frigid breath and sharp claws. With a challenge rating of 2, it poses a moderate threat to adventurers, capable of dealing notable damage while being relatively sturdy thanks to its hit points and natural armor. However, the drake is vulnerable to fire damage and possesses average physical strength. Its tactical advantages make it a more challenging opponent in its preferred terrain, and it features abilities that allow it to maneuver and fight effectively, especially on icy surfaces.</summary>
 
 <detail>
@@ -23,6 +25,7 @@ Finally, the Hoarfrost Drake possesses a reaction called Retaliatory Slip. When 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Hoarfrost Drake
 
 *Medium* *Dragon* *chaotic evil*
@@ -61,5 +64,6 @@ Source: 5e_artisinal_monsters
 - **Retaliatory Slip:** When a creature grapples the drake, the drake can immediately attempt to escape. If it succeeds, it can make a bite attack against the creature that grappled it.
 
 
+</statblock>
 
 

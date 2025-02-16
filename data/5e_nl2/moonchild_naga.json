@@ -1,0 +1,54 @@
+{
+    "name": "Moonchild Naga",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 75,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 40 ft.",
+    "role": null,
+    "tags": [
+        "naga",
+        "magical",
+        "manipulative",
+        "serpent"
+    ],
+    "adjectives": [
+        "serpentine",
+        "eldritch",
+        "powerful",
+        "deceptive"
+    ],
+    "description": "The Moonchild Naga is a large serpent-like creature with a graceful form embodying a blend of serpentine grace and eldritch power.",
+    "memorable": "Its ability to return to life through Rejuvenation adds a unique tactical challenge in combat.",
+    "goals": "Typically seeks to manipulate and control others, using its spells to deceive.",
+    "relations": "May have allegiances with other evil creatures or cultists.",
+    "environment": "Often found in dark, secluded areas or magical locales where it can harness its powers.",
+    "strengths": "Immune to poison damage and charmed conditions, enhancing its survivability in battles.",
+    "weaknesses": null,
+    "attacks": "Attacks include a venomous bite and constricting grapple, while it also possesses a gaze attack that can stun.",
+    "most_powerful_ability": "Rejuvenation allows it to revive after death if not prevented by a wish spell.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Proficient in Deception and Persuasion, making it an effective manipulator.",
+    "additional_information": [
+        "Can cast spells innately without needing components.",
+        "Possesses a high Charisma score, aiding in spellcasting.",
+        "Has spells that control or deceive, like charm person and dominate beast.",
+        "Includes a damaging bite attack that deals both piercing and poison damage.",
+        "Starry Gaze can stun a target, adding complexity to combat encounters."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": "Innate spellcasting based on Charisma with spells for manipulation and control.",
+    "test_queries": [
+        "serpent creature with powerful gaze attack",
+        "naga that can return to life",
+        "deceptive monster with poison abilities",
+        "large magical creature using spells",
+        "moonchild naga stunning gaze attacks"
+    ]
+}

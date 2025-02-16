@@ -1,0 +1,25 @@
+{
+    "name": "Gear Spider",
+    "queries": [
+        {
+            "query": "tiny mechanical spider that can climb and has stealth abilities",
+            "variant": "tiny spider made of gears specializing in climbing and stealth"
+        },
+        {
+            "query": "construct creature with photographic abilities that is immune to disease",
+            "variant": "creature made of machinery that can take photos and is disease-proof"
+        },
+        {
+            "query": "gear creature that records images and is weak in combat",
+            "variant": "mechanical creature that can store images but has low offensive power"
+        },
+        {
+            "query": "spider that can avoid conditions and has a low armor class",
+            "variant": "gear spider able to dodge effects and has weak armor"
+        },
+        {
+            "query": "small construct that lacks understanding but is durable",
+            "variant": "tiny mechanical being that has no intelligence yet is resilient"
+        }
+    ]
+}

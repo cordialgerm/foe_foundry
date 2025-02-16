@@ -1,0 +1,53 @@
+{
+    "name": "Bilwis",
+    "creature_type": "Elemental",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 49,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "fly 40 ft., hover, walk 0 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "chaotic",
+        "elemental",
+        "flying",
+        "disruption"
+    ],
+    "adjectives": [
+        "chaotic",
+        "unpredictable",
+        "destructive"
+    ],
+    "description": "The bilwis embodies the chaotic forces of nature, characterized by its ability to fly and maneuver through tight spaces. This creature showcases a volatile presence, marked by a swift and fluid form.",
+    "memorable": "Its unique Air Form ability allows it to pass through other creatures without hindrance, making it a difficult opponent to pin down.",
+    "goals": "To embody chaos and disrupt the natural order, often engaging in destructive behavior.",
+    "relations": "Associated with other chaotic elementals and potentially serves or opposes spirits of nature.",
+    "environment": "Found in stormy areas or chaotic environments where elemental forces are rife.",
+    "strengths": "High mobility allows for evasive maneuvers and strategic positioning in battle.",
+    "weaknesses": "Less durable with an average Constitution, making it vulnerable to sustained physical damage.",
+    "attacks": "Can perform a melee Slam attack dealing 12 bludgeoning damage, and utilizes the Whirlwind special action to disrupt and damage multiple foes.",
+    "most_powerful_ability": "Whirlwind ability, which can knock enemies prone and deal significant area damage.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Immune to poison damage and several debilitating conditions.",
+        "Resistant to lightning and thunder damage.",
+        "Possesses good Dexterity and Charisma attributes.",
+        "Can disrupt enemy formations effectively with Whirlwind.",
+        "Ability to hover makes it versatile in different terrains."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic elemental creature",
+        "flying chaos monster",
+        "disruptive wind spirit",
+        "elemental with air form",
+        "nature's wrath elemental"
+    ]
+}

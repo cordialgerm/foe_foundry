@@ -1,0 +1,25 @@
+{
+    "name": "Herald of Slaughter",
+    "queries": [
+        {
+            "query": "large chaotic evil fiend with high hit points and powerful melee attacks",
+            "variant": "chaotic evil large fiend with high hit points and strong melee attacks"
+        },
+        {
+            "query": "fiend that uses shapechanging and has a corrupting aura",
+            "variant": "shapechanging fiend with a corrupting aura ability"
+        },
+        {
+            "query": "monster with magical weapons that creates hostility in nearby creatures",
+            "variant": "creature with magic weapons that makes nearby creatures hostile"
+        },
+        {
+            "query": "Herald of Slaughter abilities that inflict chaos and destruction",
+            "variant": "abilities of the Herald of Slaughter that create chaos and destruction"
+        },
+        {
+            "query": "creature immune to poison and necrotic damage with strong saving throws",
+            "variant": "monster immune to necrotic and poison damage with high saving throw bonuses"
+        }
+    ]
+}

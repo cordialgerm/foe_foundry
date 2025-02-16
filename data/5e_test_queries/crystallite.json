@@ -1,0 +1,25 @@
+{
+    "name": "Crystallite",
+    "queries": [
+        {
+            "query": "large crystal monster that absorbs life and changes form upon death",
+            "variant": "large monster made of crystal that absorbs lifeforce and transforms when it dies"
+        },
+        {
+            "query": "giant creature with poison immunity that grapples and deals necrotic damage",
+            "variant": "giant with poison immunity that can grapple and inflict necrotic damage"
+        },
+        {
+            "query": "tough giant with strong melee attacks and high armor class",
+            "variant": "durable giant with powerful melee strikes and elevated armor class"
+        },
+        {
+            "query": "lawful neutral giant with final form that becomes a crystal object",
+            "variant": "lawful neutral creature that transforms into a crystal object when it dies"
+        },
+        {
+            "query": "creature with cold and fire resistance that uses grappling and life-draining abilities",
+            "variant": "monster that resists cold and fire while using grappling and lifeforce draining attacks"
+        }
+    ]
+}

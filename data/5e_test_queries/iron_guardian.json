@@ -1,0 +1,25 @@
+{
+    "name": "Iron Guardian",
+    "queries": [
+        {
+            "query": "large construct immune to fire attacks and slashing damage",
+            "variant": "huge construct that is fire immune and resistant to slashing damage"
+        },
+        {
+            "query": "tough combat robot that can regenerate from fire damage and has a poison breath attack",
+            "variant": "durable combat automaton that regains health from fire damage and breathes poison"
+        },
+        {
+            "query": "powerful mechanical guardian that excels in melee and absorbs fire damage",
+            "variant": "strong mechanical protector that is skilled in close combat and absorbs fire attacks"
+        },
+        {
+            "query": "intelligent but combat-focused construct with magic resistance abilities",
+            "variant": "low intelligence but battle-oriented construct with abilities to resist magic"
+        },
+        {
+            "query": "guardian that doesn't need food or sleep and has high hit points",
+            "variant": "defender that requires no sleep or food and possesses a large number of hit points"
+        }
+    ]
+}

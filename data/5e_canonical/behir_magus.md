@@ -1,6 +1,8 @@
 <MonsterName/>Behir Magus</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>12</CR>
+<AC/>16</AC>
+<HP/>168</HP>
 <summary>The Behir Magus is a formidable Huge monstrosity, presenting a significant threat in combat due to its high hit points and strong abilities. It possesses an impressive Armor Class of 16, allowing it to withstand attacks effectively. With a total of 168 hit points derived from 16d12 plus 64, it can endure a considerable amount of damage before falling in battle. Its speed is also notable, with the ability to walk at 60 feet, climb at 40 feet, and swim at 40 feet, providing it with excellent mobility in various environments. The Behir Magus is rated as a Challenge Rating of 12, indicating its suitability for high-level adventurers, and it can grant 8,400 experience points upon defeat. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Additionally, the Behir Magus has various reactive abilities. Vengeful Breath ca
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Behir Magus
 
 *Huge* *Monstrosity*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Drain Charge (1/Day):** When subjected to lightning damage, the behir takes no damage, and the attacker or caster takes necrotic damage equal to the lightning damage dealt.
 
 
+</statblock>
 
 

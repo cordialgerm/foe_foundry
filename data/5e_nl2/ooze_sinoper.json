@@ -1,0 +1,56 @@
+{
+    "name": "Sinoper Ooze",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 170,
+    "ac": 7,
+    "srd": false,
+    "cr": "9",
+    "movement": "20 ft. walk, 20 ft. climb",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "acid",
+        "cold",
+        "fire"
+    ],
+    "adjectives": [
+        "durable",
+        "colorful",
+        "amorphous",
+        "unpredictable"
+    ],
+    "description": "The Sinoper Ooze is a medium-sized ooze that has an amorphous body, allowing it to move through tight spaces. It can blend into its surroundings while motionless and is coated in vibrant magical paint that can be warm or cool in color.",
+    "memorable": "Its ability to coat targets in paint that can have powerful magical effects makes it a unique opponent.",
+    "goals": "It seeks to ambush foes and disrupt combat dynamics using its paint-based abilities.",
+    "relations": "Closely tied to other creatures that utilize paint or colors, potentially serving as a guardian of a vivid area.",
+    "environment": "Typically found in colorful or magical locations where oozes might dwell.",
+    "strengths": "Highly resistant to acid, cold, fire, and poison, making it durable in combat.",
+    "weaknesses": "Low mobility due to a poor Dexterity score.",
+    "attacks": "Utilizes Paint Splash to inflict acid damage and cover targets in magical paint.",
+    "most_powerful_ability": "Foment Pigment, which unleashes latent magic to deal significant damage to affected targets.",
+    "equipment": null,
+    "senses": "Blindsight up to 60 feet, allowing it to perceive its surroundings without relying on sight.",
+    "skills": "Possesses a moderate level of Perception with a +2 modifier.",
+    "additional_information": [
+        "Does not require sleep due to its ooze nature.",
+        "Can traverse difficult surfaces, including ceilings, due to Spider Climb.",
+        "False Appearance allows it to camoflage with art or its surroundings.",
+        "Effective in combat dynamics due to ability to coat targets in paint, impacting their actions.",
+        "Unique mix of resilience and adaptability in various combat scenarios."
+    ],
+    "damage_types": [
+        "acid",
+        "cold",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium ooze with magical paint attacks",
+        "colorful ooze that can ambush foes",
+        "durable ooze immune to many damage types",
+        "creature that blends in with surroundings",
+        "ooze with powerful paint abilities"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Dragon Eel",
+    "queries": [
+        {
+            "query": "huge aquatic dragon with lightning abilities",
+            "variant": "massive water dragon that uses lightning powers"
+        },
+        {
+            "query": "powerful eel-like creature that can fly in storms",
+            "variant": "strong eel-shaped monster that flies during storms"
+        },
+        {
+            "query": "dragon with electric attacks that requires water",
+            "variant": "electricity-breathing dragon that needs to be in water"
+        },
+        {
+            "query": "lightning-breathing fish dragon that can paralyze",
+            "variant": "fish-like dragon that breathes lightning and can cause paralysis"
+        },
+        {
+            "query": "creature with high armor class and lightning immunity",
+            "variant": "monster that has a strong armor and is immune to lightning damage"
+        }
+    ]
+}

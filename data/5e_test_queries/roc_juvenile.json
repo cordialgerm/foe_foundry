@@ -1,0 +1,25 @@
+{
+    "name": "Roc Juvenile",
+    "queries": [
+        {
+            "query": "massive flying beast with keen sight and high strength",
+            "variant": "huge flying monster that has keen vision and great strength"
+        },
+        {
+            "query": "creature that can fly quickly and has a powerful beak attack",
+            "variant": "monster that can fly fast and has a strong beak attack"
+        },
+        {
+            "query": "predatory beast with high hit points and physical attacks",
+            "variant": "hunting creature with large hit points and strong physical strikes"
+        },
+        {
+            "query": "huge monster that grapples its prey and retaliates when attacked",
+            "variant": "large creature that can grapple its food and strikes back when hit"
+        },
+        {
+            "query": "dangerous aerial predator known for its multiattack and strength",
+            "variant": "threatening flying predator recognized for its multiple attacks and power"
+        }
+    ]
+}

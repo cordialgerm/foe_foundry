@@ -1,0 +1,25 @@
+{
+    "name": "Clockwork Beetle Swarm",
+    "queries": [
+        {
+            "query": "mechanical swarm of beetles that can fly and has high damage potential",
+            "variant": "flying mechanical beetle swarm with high damage potential"
+        },
+        {
+            "query": "large swarm creature that is immune to poison and psychic damage",
+            "variant": "big beetle swarm creature immune to poison and psychic"
+        },
+        {
+            "query": "construct that doesn't need sleep and occupies the same space as enemies",
+            "variant": "creature that can share space with enemies and doesn't require sustenance"
+        },
+        {
+            "query": "agile swarm that attacks in close quarters and can withstand magical attacks",
+            "variant": "quick swarm that fights up close and is resistant to magic"
+        },
+        {
+            "query": "swarm of beetles with high agility that can evade most conditions",
+            "variant": "beetle swarm with strong mobility that avoids common conditions"
+        }
+    ]
+}

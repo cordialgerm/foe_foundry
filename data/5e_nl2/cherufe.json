@@ -1,0 +1,52 @@
+{
+    "name": "Cherufe",
+    "creature_type": "Elemental",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 161,
+    "ac": 19,
+    "srd": false,
+    "cr": "14",
+    "movement": "walk 40 ft., burrow 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "Elemental",
+        "Fire",
+        "Magma"
+    ],
+    "adjectives": [
+        "massive",
+        "formidable",
+        "chaotic"
+    ],
+    "description": "The Cherufe is a large elemental creature, embodying the raw power of magma with a chaotic design that radiates a fierce, fiery presence.",
+    "memorable": "Its ability to create fissures and trigger ground quakes makes the Cherufe a unique and terrifying opponent in battle.",
+    "goals": "The Cherufe typically seeks to engage in destructive combat and utilize its magma-related abilities to dominate battlefield situations.",
+    "relations": "Cherufes may be encountered alongside other fire elementals or creatures that thrive in volcanic environments.",
+    "environment": "Often found in volcanic areas and regions with abundant magma.",
+    "strengths": "Immunities to fire and poison, and resistance to nonmagical physical damage make it very durable in combat.",
+    "weaknesses": "Low Dexterity and Intelligence scores hinder its agility and cunning.",
+    "attacks": "Can unleash multiple powerful slam attacks or hurl magma balls from a distance, combining bludgeoning and fire damage.",
+    "most_powerful_ability": "The Quake ability creates tremors around it, dealing massive damage and knocking enemies prone.",
+    "senses": "The Cherufe has tremorsense up to 120 feet, allowing it to detect creatures even while underground.",
+    "skills": "It has proficient perception skills with a +7 bonus, providing good awareness during encounters.",
+    "additional_information": [
+        "Utilizes the Firewalker ability to double speed when hit by fire damage.",
+        "Internal Flame ability deters melee combat by punishing attackers with fire damage.",
+        "Creates fissures that can trap enemies and destabilize structures.",
+        "Can use its surroundings to control the battlefield effectively.",
+        "High Strength and Constitution make it a powerful melee combatant."
+    ],
+    "damage_types": [
+        "fire",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive magma elemental with quake ability",
+        "elemental that creates fissures in the ground",
+        "fire-resistant creature that triggers tremors",
+        "chaotic evil elemental using magma attacks",
+        "Cherufe abilities and combat tactics"
+    ]
+}

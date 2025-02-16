@@ -1,0 +1,51 @@
+{
+    "name": "Ochre Jelly",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 45,
+    "ac": 8,
+    "srd": true,
+    "cr": "2",
+    "movement": "10 feet walking and climbing",
+    "role": null,
+    "tags": [
+        "ooze",
+        "amorphous",
+        "corrosive"
+    ],
+    "adjectives": [
+        "amorphous",
+        "corrosive",
+        "slow-moving"
+    ],
+    "description": "A large, amorphous ooze that can dissolve flesh, wood, and metal with ease.",
+    "memorable": "Its ability to split into smaller jellies upon being hit makes it a challenging foe.",
+    "goals": "Often lurks in dark places, driven by a hunger for flesh.",
+    "relations": "May be found in the same environments as other oozes or in underground settings.",
+    "environment": "Caves, dungeons, or dark, damp areas.",
+    "strengths": "Can pass through narrow spaces effortlessly and is immune to various conditions.",
+    "weaknesses": "Disadvantaged in sunlight.",
+    "attacks": "Attacks by engulfing its prey and secreting corrosive acid; can grapple foes.",
+    "most_powerful_ability": "Can split into two smaller oozes when hit by lightning or slashing damage.",
+    "senses": "Has blindsight up to 60 feet, effectively sensing its environment.",
+    "skills": null,
+    "additional_information": [
+        "Immunities to acid, lightning, and slashing damage.",
+        "Can climb difficult surfaces and ceilings without difficulty.",
+        "Does not require air or sleep due to ooze nature.",
+        "Possesses overwhelming stench that can poison nearby creatures.",
+        "Grapples targets and deals ongoing acid damage."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large amorphous ooze with corrosive abilities",
+        "slow-moving monster that dissolves materials",
+        "jelly creature that can split in combat",
+        "pseudopod attack of acid jelly monster",
+        "monster that thrives in dark, damp environments"
+    ]
+}

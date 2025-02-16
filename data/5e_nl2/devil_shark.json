@@ -1,0 +1,54 @@
+{
+    "name": "Devil Shark",
+    "creature_type": "Monstrosity",
+    "alignment": "neutral evil",
+    "size": "Gargantuan",
+    "hp": 198,
+    "ac": 16,
+    "srd": false,
+    "cr": "13",
+    "movement": "swim 60 ft., walk 0 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "shark",
+        "aquatic",
+        "predator",
+        "evil"
+    ],
+    "adjectives": [
+        "formidable",
+        "terrifying",
+        "powerful",
+        "gargantuan"
+    ],
+    "description": "The Devil Shark is a monstrous, gargantuan creature characterized by its formidable size and menacing demeanor. It possesses a robust body adapted for aquatic life, featuring sharp teeth and a streamlined form that enhances its predatory capabilities.",
+    "memorable": "Its unique abilities like Blood Frenzy, Magic Resistance, and the ability to swallow prey make the Devil Shark a terrifying foe in water.",
+    "goals": "Typically hunts for weaker prey, dominating its underwater territory and ambushing adventurers.",
+    "relations": "Can command other sharks using Shark Telepathy, creating a potential hunting pack.",
+    "environment": "Primarily found in deep ocean waters, thriving in aquatic environments.",
+    "strengths": "Exceptional strength and constitution, high hit points, unique abilities that enhance combat effectiveness.",
+    "weaknesses": "Lacks movement on land, making it vulnerable outside of water.",
+    "attacks": "Uses powerful Bite attacks, grappling foes and has the ability to Swallow them, dealing additional acid damage while restrained.",
+    "most_powerful_ability": "Freezing Breath, a cone attack that can potentially deal massive cold damage and control the battlefield.",
+    "senses": "Possesses blindsight up to 60 feet and a high passive perception of 20, allowing it to detect creatures without needing sight.",
+    "skills": "Shows proficiency in Intimidation and high Perception, demonstrating abilities to instill fear and remain aware of its surroundings.",
+    "additional_information": [
+        "Immune to cold damage and resistant to fire damage.",
+        "Can only breathe underwater, limiting its versatility.",
+        "Gains advantage on melee attacks against weakened foes with Blood Frenzy.",
+        "Telepaths with other sharks for coordination in hunting.",
+        "Capable of swallowing multiple creatures at once, incapacitating them."
+    ],
+    "damage_types": [
+        "cold",
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan predatory shark with freezing breath",
+        "devil shark that swallows creatures whole",
+        "aquatic monster with keen smell and magic resistance",
+        "formidable predator found in deep ocean",
+        "monster that commands other sharks telepathically"
+    ]
+}

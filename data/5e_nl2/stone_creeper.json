@@ -1,0 +1,50 @@
+{
+    "name": "Stone Creeper",
+    "creature_type": "Plant",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 30,
+    "ac": 12,
+    "srd": false,
+    "cr": "1",
+    "movement": "walk 30 ft., climb 20 ft.",
+    "role": "Ambusher",
+    "tags": [
+        "plant",
+        "ambush",
+        "predator"
+    ],
+    "adjectives": [
+        "cunning",
+        "deceptive",
+        "versatile"
+    ],
+    "description": "A plant creature resembling a vine that can remain motionless and blend into its surroundings. It can climb surfaces easily and navigate narrow spaces.",
+    "memorable": "Its ability to disguise itself as a common vine and its acid-injecting attacks make it a tricky foe.",
+    "goals": "To ambush unsuspecting creatures and navigate its environment stealthily.",
+    "relations": "May be found in conjunction with other ambush predators or plant creatures.",
+    "environment": "Commonly found in forested or overgrown areas.",
+    "strengths": "Immunity to acid and poison damage, resistant to bludgeoning damage.",
+    "weaknesses": "Lower intelligence, wisdom, and charisma scores, limiting its tactical options.",
+    "attacks": "Utilizes thorned vines for melee attacks and acid-coated thorns for ranged attacks, applying both piercing and acid damage.",
+    "most_powerful_ability": "Weaken Stone - can collapse structures and entrap creatures beneath rubble.",
+    "equipment": null,
+    "senses": "Has tremorsense within a 60-foot radius but is blind beyond that range.",
+    "skills": null,
+    "additional_information": [
+        "Can move through very narrow spaces without squeezing.",
+        "Can climb difficult surfaces, including ceilings, without checks.",
+        "Indistinguishable from ordinary vines when motionless."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator that resembles a vine",
+        "plant creature that climbs and hides",
+        "cunning ambusher with acid attacks",
+        "creature immune to poison and acid damage",
+        "stone-destroying vine monster"
+    ]
+}

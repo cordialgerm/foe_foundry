@@ -1,0 +1,25 @@
+{
+    "name": "Offal Walker",
+    "queries": [
+        {
+            "query": "grotesque undead creature that uses gut lassos to restrain opponents",
+            "variant": "undead creature that is grotesque and uses gut lasso attacks to bind foes"
+        },
+        {
+            "query": "medium-sized monster that grapples and controls in combat",
+            "variant": "medium monster that is used for grappling and controlling in battles"
+        },
+        {
+            "query": "undead with high Constitution and low intelligence living without air",
+            "variant": "undead creature that has a high con score and very low intelligence and can survive without air"
+        },
+        {
+            "query": "creature that has blindsight and is immune to poison attacks",
+            "variant": "monster with blindsight 60' and immunity to poison damage"
+        },
+        {
+            "query": "necromantic horror that can produce gut lassos and is neutral evil",
+            "variant": "horrific undead that produces gut lassos and aligns as neutral evil"
+        }
+    ]
+}

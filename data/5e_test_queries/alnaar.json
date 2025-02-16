@@ -1,0 +1,25 @@
+{
+    "name": "Alnaar",
+    "queries": [
+        {
+            "query": "large chaotic evil fiend with fiery attacks and high hit points",
+            "variant": "large fiend that is chaotic evil and has fiery damage with a lot of hit points"
+        },
+        {
+            "query": "fast creature immune to fire that reduces armor class when starving",
+            "variant": "quick monster that is immune to fire and has a lower armor class when it is starving"
+        },
+        {
+            "query": "fiend with darkvision that causes fire damage to nearby creatures",
+            "variant": "fiend that has darkvision and deals fire damage to creatures around it"
+        },
+        {
+            "query": "Alnaar's fiery aura and devastating multiattack in combat",
+            "variant": "fiery aura of the Alnaar and its powerful multiattack during battle"
+        },
+        {
+            "query": "creature that speaks Abyssal and uses special abilities to attack",
+            "variant": "monster that can talk in Abyssal and uses unique abilities for attacking"
+        }
+    ]
+}

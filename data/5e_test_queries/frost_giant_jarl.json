@@ -1,0 +1,25 @@
+{
+    "name": "Frost Giant Jarl",
+    "queries": [
+        {
+            "query": "huge giant that can throw rocks and has cold immunity",
+            "variant": "huge giant throwing rocks and immune to cold"
+        },
+        {
+            "query": "frost giant with fire vulnerability and battleaxe attacks",
+            "variant": "frost giant that is vulnerable to fire and uses a battleaxe"
+        },
+        {
+            "query": "giant creature with strong melee attacks and grappling abilities",
+            "variant": "creature giant with grappling skills and powerful melee attacks"
+        },
+        {
+            "query": "intimidating giant who becomes rattled by fire damage",
+            "variant": "intimidating giant that gets rattled from fire damage"
+        },
+        {
+            "query": "colossal giant with high hit points and special icy gaze",
+            "variant": "colossal giant with a lot of hit points and icy gaze ability"
+        }
+    ]
+}

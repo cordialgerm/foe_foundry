@@ -1,0 +1,25 @@
+{
+    "name": "Sand Wyrmling",
+    "queries": [
+        {
+            "query": "medium dragon with sandy camouflage and fire immunity",
+            "variant": "medium-sized dragon that has sandy camouflage and is immune to fire"
+        },
+        {
+            "query": "arid desert dragon that can blind foes with sand",
+            "variant": "desert dragon in arid regions that can blind enemies using sand"
+        },
+        {
+            "query": "neutral evil dragon that lives in sandy terrain and attacks with superheated sand",
+            "variant": "dragon of neutral evil alignment that inhabits sandy areas and uses superheated sand in attacks"
+        },
+        {
+            "query": "dragon with physical durability and stinging sand ability",
+            "variant": "dragon that has high physical durability and the ability called stinging sand"
+        },
+        {
+            "query": "dragon that requires less food and can detect hidden creatures easily",
+            "variant": "dragon that needs less food and has the ability to easily spot hidden creatures"
+        }
+    ]
+}

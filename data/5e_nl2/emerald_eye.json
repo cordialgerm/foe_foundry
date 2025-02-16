@@ -1,0 +1,52 @@
+{
+    "name": "Emerald Eye",
+    "creature_type": "Construct",
+    "alignment": "Neutral",
+    "size": "Tiny",
+    "hp": 54,
+    "ac": 14,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "psychic",
+        "manipulation",
+        "intelligent"
+    ],
+    "adjectives": [
+        "tiny",
+        "magical",
+        "cunning",
+        "psychic"
+    ],
+    "description": "The Emerald Eye is a tiny construct with psychic powers and a vibrant appearance, utilizing its intellect and charm to manipulate foes and allies alike.",
+    "memorable": "It thrives on psychic connections, losing health when unbound from its host, making it a strategic creature in combat.",
+    "goals": "To bind and manipulate creatures while maintaining safety from direct combat.",
+    "relations": "Can be encountered with other constructs or entities reliant on psychic energies.",
+    "environment": "Often found in locations rich in magic or psychic energy, such as wizard towers or enchanted forests.",
+    "strengths": "High intelligence, charm, and powerful psychic abilities enhance its manipulation and support role.",
+    "weaknesses": "Extremely low strength, vulnerable in direct melee combat, and reliant on being psychically bound to another creature.",
+    "attacks": "Uses Phrenic Burst for psychic damage, Bind to connect with a host, and Compel to control movement of enemies.",
+    "most_powerful_ability": "Psychically Bound ability, requiring it to maintain a link to another creature or suffer health loss.",
+    "senses": "Possesses blindsight up to 120 feet but is considered blind beyond that range.",
+    "skills": "Proficient in Arcana, Deception, History, Persuasion, and Religion, allowing for strong social and intellectual engagement.",
+    "additional_information": [
+        "Immune to poison and psychic damage.",
+        "Resistant to cold, fire, and piercing damage.",
+        "No need for air, food, drink, or sleep.",
+        "Immutable Form protects its appearance from alteration.",
+        "Weakens if separated from its host."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny construct that manipulates others",
+        "psychic creature with binding abilities",
+        "magical eye that influences enemies",
+        "emotional manipulator in magical form",
+        "magic user that cannot be seen"
+    ]
+}

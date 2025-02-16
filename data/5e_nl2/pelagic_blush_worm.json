@@ -1,0 +1,53 @@
+{
+    "name": "Pelagic Blush Worm",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Gargantuan",
+    "hp": 188,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "swimming at 50 feet, immobile on land",
+    "role": "Bruiser",
+    "tags": [
+        "aquatic",
+        "monstrosity",
+        "siege monster",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "immense",
+        "aquatic",
+        "devastating"
+    ],
+    "description": "The Pelagic Blush Worm is a gargantuan aquatic monstrosity that showcases immense strength with a powerful bite and tail fin strike. Its natural armor affords it significant resilience, while its gargantuan size allows it to dominate underwater. It is characterized by its ability to breathe underwater and navigate through the water using echolocation.",
+    "memorable": "Its ability to swallow creatures whole and deal double damage to structures makes the Pelagic Blush Worm a terrifying presence in aquatic encounters.",
+    "goals": "The Pelagic Blush Worm thrives in aquatic environments, using its strength and abilities to hunt and eliminate threats.",
+    "relations": "Typically encountered in underwater settings and may share its habitat with other aquatic monsters.",
+    "environment": "Primarily found in aquatic locations, such as oceans, lakes, or rivers.",
+    "strengths": "Strong melee attacker with significant durability and the ability to deal acid damage.",
+    "weaknesses": "Immobile on land, making it vulnerable to ranged attacks outside of water.",
+    "attacks": "Multiattack includes a bite that can swallow creatures and a tail fin strike that deals both slashing and bludgeoning damage.",
+    "most_powerful_ability": "Red Acid Spume, which unleashes a damaging breath attack in the form of acid in water or as a line above water.",
+    "senses": "Blindsight that extends up to 120 feet, allowing it to sense its surroundings without relying on sight.",
+    "skills": "Has skill in perception, enabling it to notice its surroundings with average effectiveness.",
+    "additional_information": [
+        "Can breathe only underwater, limiting its mobility on land.",
+        "Double damage to objects makes it a powerful siege option.",
+        "Immunities to acid and cold provide resilience in aquatic environments.",
+        "Swallowed creatures are blinded and restrained, creating potential for tactical advantage.",
+        "Can echolocate as long as it is not deafened."
+    ],
+    "damage_types": [
+        "acid",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan aquatic monster with devastating bite",
+        "creature that swallows enemies whole underwater",
+        "monster that breathes acid and is immobile on land",
+        "siege monster that deals double damage to structures",
+        "aquatic monstrosity with blindsight and echolocation"
+    ]
+}

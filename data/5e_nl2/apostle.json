@@ -1,0 +1,54 @@
+{
+    "name": "Apostle",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 117,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "healer",
+        "spellcaster",
+        "support",
+        "undead hunter"
+    ],
+    "adjectives": [
+        "divine",
+        "powerful",
+        "supportive"
+    ],
+    "description": "The Apostle is a powerful humanoid creature emphasizing faith and healing, equipped with a breastplate and capable of utilizing both weapons and spells effectively in combat.",
+    "memorable": "The Apostle stands out for its dual damage capabilities with necrotic and radiant damage, enabling it to effectively combat undead foes and provide strong support to allies through its Blessing and healing abilities.",
+    "goals": "Typically aims to heal and support allies while combating undead threats, serving as a divine agent of their faith.",
+    "relations": "May be encountered alongside other divine agents or clerics, particularly in battles against undead creatures.",
+    "environment": "Often found in places of worship or areas infested with undead creatures.",
+    "strengths": "Exceptional Wisdom and Charisma enhance its spellcasting and support capabilities, with additional damage potential from its Divine Weapons ability.",
+    "weaknesses": "Average physical attributes lead to vulnerability in melee, especially without support.",
+    "attacks": "Can make multiple melee attacks with a mace or unleash ranged attacks with Divine Bolt, dealing significant damage with additional effects.",
+    "most_powerful_ability": "Destroy Undead ability allows it to inflict heavy radiant damage to undead creatures in a radius, emphasizing its role as a hunter of the undead.",
+    "equipment": "Breastplate armor and a mace are its main tools of combat.",
+    "senses": null,
+    "skills": "Possesses a perception score that allows for a good awareness of hidden enemies or traps.",
+    "additional_information": [
+        "Can cast a variety of spells, including healing and utility spells.",
+        "Gains health from healing others, enhancing its role as a healer.",
+        "Can adapt its damage output based on the foes encountered, especially effective against undead.",
+        "Has significant saving throw bonuses for Wisdom and Charisma.",
+        "Utilizes a divine combat style, merging weapon strikes with spellcasting effectively."
+    ],
+    "damage_types": [
+        "necrotic",
+        "radiant"
+    ],
+    "spellcasting": "Can cast ranged and at-will spells, including guidance and cure wounds, with a focus on healing and support.",
+    "test_queries": [
+        "divine spellcaster",
+        "humanoid healer",
+        "undead hunter",
+        "supportive spell wielder",
+        "faith-based creature"
+    ]
+}

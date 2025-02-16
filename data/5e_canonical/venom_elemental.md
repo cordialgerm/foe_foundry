@@ -1,6 +1,8 @@
 <MonsterName/>Venom Elemental</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>4</CR>
+<AC/>14 (natural armor)</AC>
+<HP/>93</HP>
 <summary>The Venom Elemental is a large, neutral elemental creature characterized by its ability to inflict poison damage and evade attacks through its unique abilities and resistances. With anArmor Class of 14, it possesses good defenses, while its 93 hit points grant it relatively high survivability in combat. This creature swims swiftly at a speed of 50 feet and can walk at 40 feet, making it very mobile both in water and on land. As a challenge rating of 4, the Venom Elemental poses a moderate threat, granting 1,100 experience points upon defeat. Notable strengths include its immunity to poison damage and various conditions, alongside an effective multiattack option that can incapacitate adversaries through poison effects. However, it has lower-than-average intelligence, making it less nuanced in combat strategy, and its ability to understand Primordial without being able to speak limits its communication with other creatures.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In terms of actions, the Venom Elemental can perform a "Multiattack," allowing i
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Venom Elemental
 
 *Large* *Elemental* *neutral*
@@ -49,5 +52,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage, and the creature must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn.
 
 
+</statblock>
 
 

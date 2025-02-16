@@ -1,0 +1,53 @@
+{
+    "name": "Phoenixborn Sorcerer",
+    "creature_type": "Humanoid",
+    "alignment": "any",
+    "size": "Medium",
+    "hp": 60,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft., fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "fire",
+        "sorcerer",
+        "magic",
+        "phoenix"
+    ],
+    "adjectives": [
+        "fiery",
+        "magical",
+        "resilient"
+    ],
+    "description": "The Phoenixborn Sorcerer embodies the essence of phoenixes, characterized by its fiery appearance and vibrant energy.",
+    "memorable": "Its ability to regenerate hit points and fly, combined with powerful fire-based attacks, make it a notable opponent.",
+    "goals": "To manipulate situations to its advantage using spellcasting and to survive through its rejuvenation ability.",
+    "relations": "May command fire elementals or work alongside other magical creatures.",
+    "environment": "Often found in volcanic regions or areas infused with magical fire.",
+    "strengths": "High Dexterity and Charisma improve its combat effectiveness and spellcasting abilities; capable of dealing significant fire damage.",
+    "weaknesses": "Average resilience makes it vulnerable to strategic attacks; reliance on magical energy can be its downfall.",
+    "attacks": "Utilizes Talon melee attacks and Hurl Flame ranged spells, dealing significant slashing and fire damage.",
+    "most_powerful_ability": "Fire Jet, a powerful fire attack that can damage multiple enemies in a line.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Average perception skills limit its ability to notice hidden threats.",
+    "additional_information": [
+        "Can use Fiery Feathers and Rebirth to recover hit points.",
+        "Versatile spellcaster with a variety of spells.",
+        "Multiattack feature enhances its combat options.",
+        "Possesses resistances typical of Phoenixborn creatures.",
+        "Capable of managing both melee and ranged attacks effectively."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": "Spellcasting ability is Charisma; can cast a variety of spells including utility and damage options.",
+    "test_queries": [
+        "fiery humanoid spellcaster",
+        "magical creature that can fly",
+        "Phoenixborn with regenerating abilities",
+        "fire-based sorcerer with melee attacks",
+        "artillery spellcaster of fire"
+    ]
+}

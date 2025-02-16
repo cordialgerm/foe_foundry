@@ -1,0 +1,25 @@
+{
+    "name": "Chelicerae",
+    "queries": [
+        {
+            "query": "large aberration with magical abilities that uses clever tactics",
+            "variant": "large magic-using aberration that employs cunning strategies"
+        },
+        {
+            "query": "monster with poison attacks and high intelligence living in dark areas",
+            "variant": "creature that uses poison and has high intellect in dark environments"
+        },
+        {
+            "query": "stealthy creature that can climb surfaces and drains magic",
+            "variant": "sneaky being that can ascend walls and absorbs magic"
+        },
+        {
+            "query": "combat monster with bite and claw attacks and magic resistance",
+            "variant": "battle creature using biting and clawing and resistant to magic"
+        },
+        {
+            "query": "intelligent monster that can cast spells and has darkvision",
+            "variant": "smart creature capable of spellcasting with dark vision"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Giant Grick",
+    "queries": [
+        {
+            "query": "large creature with tentacles that can climb walls and ambush from rocky terrain",
+            "variant": "big monster with tentacles able to climb surfaces and surprise from rocky areas"
+        },
+        {
+            "query": "strong melee combatant that grapples foes and has low intelligence",
+            "variant": "powerful melee fighter that can grapple enemies and has poor intelligence"
+        },
+        {
+            "query": "monster that hides in rocky environments and has a beak attack",
+            "variant": "creature that lurks in rocky areas and uses a beak for attacking"
+        },
+        {
+            "query": "mobile monstrosity with high strength and stealthy camouflage",
+            "variant": " agile monster with significant strength and stealthy disguise"
+        },
+        {
+            "query": "Giant Grick appearance and special climbing abilities",
+            "variant": "Giant Grick looks and unique climbing capabilities"
+        }
+    ]
+}

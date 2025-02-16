@@ -1,0 +1,25 @@
+{
+    "name": "Floe Hag",
+    "queries": [
+        {
+            "query": "cold-dwelling fey creature that can breathe underwater and move on ice",
+            "variant": "fey creature that dwells in the cold, can breathe both in water and air, and moves effortlessly on ice"
+        },
+        {
+            "query": "manipulative hag known for its spells and cold damage immunity",
+            "variant": "spellcasting hag that uses manipulation and has immunity to cold damage"
+        },
+        {
+            "query": "medium fey with high strength and ice walking ability",
+            "variant": "fey that is medium-sized, has a strong strength score, and can walk on ice"
+        },
+        {
+            "query": "cunning hag that uses psychic attacks and can grapple opponents",
+            "variant": "devious hag that employs psychic abilities and can capture enemies by grappling"
+        },
+        {
+            "query": "merchant of ice who traps creatures in her parka and inflicts cold damage",
+            "variant": "ice-themed hag that stores creatures in her parka and deals cold damage to her foes"
+        }
+    ]
+}

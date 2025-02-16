@@ -1,0 +1,25 @@
+{
+    "name": "Oathrot Wraith",
+    "queries": [
+        {
+            "query": "undead creature that curses oaths and drains life",
+            "variant": "undead monster that drains life and curses oaths"
+        },
+        {
+            "query": "flying wraith vulnerable to radiant damage",
+            "variant": "wrait that flies and is vunerable to radiant damage"
+        },
+        {
+            "query": "creature with disadvantage in sunlight and can fly",
+            "variant": "monster that can fly and has disadvantage in sunlight"
+        },
+        {
+            "query": "medium undead with powerful aura abilities in combat",
+            "variant": "medium undead with strong aura powers during battle"
+        },
+        {
+            "query": "creature that affects concentration and enjoys dark places",
+            "variant": "monster that impacts concentration and prefers darkness"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Hodag",
+    "queries": [
+        {
+            "query": "large beast with high physical strength and charging ability",
+            "variant": "big animal with strong melee attacks and charging capabilities"
+        },
+        {
+            "query": "natural armor creature found in combat with significant melee damage",
+            "variant": "beast with natural protection that excels in melee and does high damage"
+        },
+        {
+            "query": "Hodag characteristics including agility and darkvision",
+            "variant": "features of Hodag like quickness and ability to see in the dark"
+        },
+        {
+            "query": "ferocious large creature immune to charm with strong senses",
+            "variant": "fierce big beast that can't be charmed and has sharp senses"
+        },
+        {
+            "query": "monster with a horn attack and prone-knocking ability",
+            "variant": "creature that can hit with its horns and knock down foes"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Undead Phoenix",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 142,
+    "ac": 17,
+    "srd": false,
+    "cr": "12",
+    "movement": "fly 90 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "fiery",
+        "chaotic",
+        "menacing"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "destructive",
+        "chaotic"
+    ],
+    "description": "The Undead Phoenix is a huge, imposing creature displaying a corpse-like visage, with ashes and embers flickering through its feathers, radiating a sense of decay and danger.",
+    "memorable": "With its ability to resurrect 24 hours after being killed unless slain by radiant damage, it presents a constant threat to adventurers.",
+    "goals": "To spread decay and destruction while ensuring its survival through resurrection.",
+    "relations": "Often encountered alongside other undead creatures and may serve powerful necromancers.",
+    "environment": "Typically found in desolate landscapes, ruins, or areas tainted by death.",
+    "strengths": "Immunities to necrotic, fire, and poison damage, along with a high passive perception makes it a formidable opponent.",
+    "weaknesses": "Vulnerable to radiant damage, which can permanently destroy its ability to return.",
+    "attacks": "The Undead Phoenix utilizes powerful claw strikes and a decaying bite that inflicts both piercing and necrotic damage, alongside a curse.",
+    "most_powerful_ability": "Eternal Unlife: resurrects within 24 hours after death unless slain with radiant damage.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet and a passive perception of 17, enabling it to detect hidden threats.",
+    "skills": "Skilled in perception, allowing it to be highly aware of its surroundings.",
+    "additional_information": [
+        "Bilious Aura prevents nearby living creatures from healing.",
+        "Has extremely high Strength for powerful physical attacks.",
+        "Strong saving throws, especially in Strength, Constitution, and Wisdom.",
+        "Resilient to being incapacitated or controlled due to its features.",
+        "Significant threat level indicated by its challenge rating of 12."
+    ],
+    "damage_types": [
+        "necrotic",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead giant that curses and decays",
+        "phoenix monster with extraordinary resurrection abilities",
+        "huge fiery undead with a bilious aura",
+        "deadly phoenix that prevents healing",
+        "chaotic evil creature of decay and destruction"
+    ]
+}

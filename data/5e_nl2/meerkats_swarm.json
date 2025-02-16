@@ -1,0 +1,50 @@
+{
+    "name": "Meerkats, Swarm",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walking 20 ft. and burrowing 10 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "swarm",
+        "beast",
+        "melee"
+    ],
+    "adjectives": [
+        "quirky",
+        "formidable",
+        "nimble"
+    ],
+    "description": "A swarm of medium-sized meerkats that can occupy the space of other creatures, striking in overwhelming numbers.",
+    "memorable": "This swarm can restrict movement through its 'Corral' ability and is immune to many conditions.",
+    "goals": "Overwhelm opponents and restrict movement while evading threats.",
+    "relations": "Can be found with other animal swarms or in burrowing habitats.",
+    "environment": "Typically found in open terrains or burrow systems.",
+    "strengths": "Can occupy other creatures' spaces and effectively swarm, making it difficult for foes to escape.",
+    "weaknesses": "Subpar strength making it weak in direct confrontations.",
+    "attacks": "Utilizes a bite attack that deals significant piercing damage to its targets.",
+    "most_powerful_ability": "The 'Corral' ability restricts creature movement and requires a saving throw to escape.",
+    "equipment": null,
+    "senses": "Possesses keen sight, granting advantage on sight-related perception checks.",
+    "skills": "Average perception abilities that allow the swarm to be attentive to its surroundings.",
+    "additional_information": [
+        "Immunities to charmed, frightened, and several grapple-related conditions.",
+        "Ability to move through tight openings suitable for tiny creatures.",
+        "Can adapt to environments with poisonous threats due to 'Snake Hunter' ability."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium-sized swarm of meerkats",
+        "nimble swarm that restricts movement",
+        "quirky beast swarm with keen sight",
+        "animal swarm that specializes in overwhelming foes",
+        "meerkat swarm biting and maneuvering tactics"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Remorhaz Spawn",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Large",
+    "hp": 95,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "30 feet on land, 20 feet burrowing",
+    "role": "Bruiser",
+    "tags": [
+        "fire",
+        "melee",
+        "monstrosity",
+        "grappler"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "fiery"
+    ],
+    "description": "The Remorhaz Spawn is a large, formidable creature with impressive strength and a fiery body. Its skin radiates heat, deterring attackers.",
+    "memorable": "It inflicts both piercing and fire damage and is immune to both cold and fire damage.",
+    "goals": "Usually hunts for prey using its powerful physical attacks and melee combat.",
+    "relations": null,
+    "environment": "Often found in cold environments where it can use its fire abilities effectively.",
+    "strengths": "Immunity to cold and fire damage enhances its resilience and melee combat effectiveness.",
+    "weaknesses": "Limited intelligence and social skills make it predictable in non-combat scenarios.",
+    "attacks": "Utilizes a Multiattack with a bite that deals piercing and fire damage followed by a constrict attack that grapples and restrains.",
+    "most_powerful_ability": "Heated Body trait deals fire damage to creatures that start their turn grappled or make melee attacks against it.",
+    "senses": "Possesses tremorsense to detect vibrations in the ground within 60 feet, allowing it to sense its surroundings even in darkness.",
+    "skills": "Has a passive perception score of 11, indicating it has basic awareness of its surroundings.",
+    "additional_information": [
+        "Movement includes burrowing for tactical positioning.",
+        "Can grapple and restrain opponents, impacting combat dynamics.",
+        "Relies on brute force rather than cunning or strategy."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large fiery grappling monster",
+        "creature that inflicts fire damage and grapples",
+        "predatory large monster with fire immunity",
+        "monstrosity that burrows and has heated body",
+        "damaging melee beast with piercing attacks"
+    ]
+}

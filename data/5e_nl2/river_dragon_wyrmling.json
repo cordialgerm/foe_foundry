@@ -1,0 +1,50 @@
+{
+    "name": "River Dragon Wyrmling",
+    "creature_type": "Dragon",
+    "alignment": "Unaligned",
+    "size": "Medium",
+    "hp": 44,
+    "ac": 16,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 50 ft., fly 60 ft., swim 60 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "dragon",
+        "water",
+        "aquatic"
+    ],
+    "adjectives": [
+        "medium-sized",
+        "aquatic",
+        "nimble"
+    ],
+    "description": "A medium-sized dragon with a unique affinity for water, showcasing agility both in the air and aquatic environments.",
+    "memorable": "Its ability to breathe underwater and move fluidly through water makes it a formidable foe in aquatic settings.",
+    "goals": "To protect its territory, especially aquatic landmarks, and hunt for food.",
+    "relations": "Might be encountered alongside other water-associated creatures or dragons.",
+    "environment": "Often found in rivers, lakes, or near bodies of water.",
+    "strengths": "Exceptional mobility with access to flying, swimming, and walking, enhanced by special abilities like Flowing Grace.",
+    "weaknesses": "Vulnerable to magical attacks as it has damage resistance only against nonmagical weapons.",
+    "attacks": "Bites with its powerful jaws, dealing significant piercing damage, and uses a unique water breath attack for area control.",
+    "most_powerful_ability": "Torrential Breath, which unleashes a line of bludgeoning water damage, affecting multiple foes.",
+    "equipment": null,
+    "senses": "Possesses tremorsense in water, allowing it to detect vibrations within 90 feet.",
+    "skills": "Proficient in acrobatics and stealth, enhancing its evasion and agility in combat.",
+    "additional_information": [
+        "Can breathe both air and water due to its Amphibious ability.",
+        "Linked to a specific area which suffers effects if the dragon dies.",
+        "Resistance to fatigue makes it tireless in its pursuits."
+    ],
+    "damage_types": [
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "swimming dragon with water breath attack",
+        "dragon that can breathe underwater and fly",
+        "medium-sized dragon in rivers and lakes",
+        "aquatic dragon with special mobility abilities",
+        "water-linked dragon who can evade attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Keyhole Dragonette",
+    "queries": [
+        {
+            "query": "tiny dragon that can squeeze through tight spaces and has a soporific breath",
+            "variant": "small dragon that can fit through narrow areas and has a sleep-inducing breath"
+        },
+        {
+            "query": "agile dragon with good stealth skills and the ability to pick locks",
+            "variant": "nippy dragonette with excellent sneaking abilities and lock-picking skills"
+        },
+        {
+            "query": "dragon with high dexterity that excels in scouting and ambushing",
+            "variant": "dragonette known for its quick reflexes that is great for scouting and ambush tactics"
+        },
+        {
+            "query": "small dragon that can jump high and has unique abilities for infiltrating",
+            "variant": "little dragon that can leap high and has special skills for sneaking in"
+        },
+        {
+            "query": "Keyhole Dragonette's combat abilities and special moves against swarms",
+            "variant": "Keyhole Dragonette's fighting skills and unique actions against groups of enemies"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Ancient Earth Dragon</MonsterName>
 <CreatureType/>Dragon</CreatureType>
-
+<CR/>24</CR>
+<AC/>22</AC>
+<HP/>425</HP>
 <summary>The Ancient Earth Dragon is a gargantuan creature that embodies the primal forces of the earth and stone. With its impressive armor class of 22 and a staggering total of 425 hit points, this dragon is a formidable opponent that presents a significant challenge, rated at a Challenge Rating of 24, granting 62,000 experience points upon defeat. The creature possesses exceptional strength and constitution, both at +8, making it very good in combat situations. It is moderately agile with a Dexterity of +2 and has a respectable intelligence and wisdom at +3 and +6, respectively. The dragon can engage in various forms of attack, including melee and spellcasting, empowering it with both brute force and magical prowess. Its mobility is impressive as well, allowing it to walk at a speed of 40 feet, fly at 40 feet, and burrow at a speed of 60 feet. However, its reliance on its linked area for long rests can be seen as a notable weakness. </summary>
 
 <detail>
@@ -25,6 +27,7 @@ Finally, the dragon's legendary actions allow it to shape the terrain with Shake
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ancient Earth Dragon
 
 *Gargantuan* *Dragon*
@@ -70,5 +73,6 @@ Source: 5e_artisinal_monsters
 - **Shake the Foundation:** The dragon causes the ground to roil, creating a permanent, 40-foot-radius area of difficult terrain centered on a point the dragon can see. If the dragon is bloodied, creatures in the area make a DC 23 Dexterity saving throw. On a failure, the creature takes 21 (6d6) slashing damage and falls prone. On a success, the creature takes half damage.
 - **Slam Attack (Costs 2 Actions):** The dragon makes a slam attack.
 - **Entomb (While Bloodied:** The dragon targets a creature on the ground within 60 feet, forcing it to make a DC 17 Dexterity saving throw. On a failure, the creature is magically entombed 5 feet under the earth. While entombed, the target is blinded, restrained, and can't breathe. A creature can use an action to make a DC 17 Strength check, freeing an entombed creature on a success.
+</statblock>
 
 

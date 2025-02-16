@@ -1,0 +1,25 @@
+{
+    "name": "Skullbloom",
+    "queries": [
+        {
+            "query": "plant creature with hearing-based perception and fungal infection attack",
+            "variant": "plant monster that has perception based on hearing and can infect with fungus"
+        },
+        {
+            "query": "medium plant that can chase down prey and has poison damage",
+            "variant": "medium-sized plant that can pursue its prey and deals poison damage"
+        },
+        {
+            "query": "creature resistant to exhaustion that strikes with bite and slam attacks",
+            "variant": "monster that is resistant to fatigue and attacks with bite and slam"
+        },
+        {
+            "query": "Skullbloom attributes with natural armor and low intelligence",
+            "variant": "attributes of Skullbloom with natural defense and poor mental abilities"
+        },
+        {
+            "query": "plant creature with resilience and ability to infect humanoids",
+            "variant": "plant monster that has resistance and can infect human-like targets"
+        }
+    ]
+}

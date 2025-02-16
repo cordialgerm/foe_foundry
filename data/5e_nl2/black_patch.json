@@ -1,0 +1,52 @@
+{
+    "name": "Black Patch",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 153,
+    "ac": 7,
+    "srd": false,
+    "cr": "6",
+    "movement": "swimming speed of 40 feet, immobile on land",
+    "role": null,
+    "tags": [
+        "amorphous",
+        "aquatic",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "evasive",
+        "acidic"
+    ],
+    "description": "The Black Patch is a large, amorphous ooze that can easily traverse through water, having a viscous, dark appearance typical of an ooze.",
+    "memorable": "Its ability to mesmerize foes and the danger posed by its Viscid Suffocation attack make it a unique threat in battle.",
+    "goals": "To engage and ensnare creatures in aquatic settings, draining them of life with its acid.",
+    "relations": "It may share environments with other aquatic creatures and typically functions alone.",
+    "environment": "Usually found in aquatic environments, capable of ambushing unsuspecting creatures in water.",
+    "strengths": "Resilient to damage with high hit points, it can mesmerize and control adversaries, making it a formidable opponent.",
+    "weaknesses": "Low Dexterity makes it vulnerable to attacks, and its passive perception is below average.",
+    "attacks": "Uses pseudopods to attack, dealing both bludgeoning and acid damage, with the potential to attach to and suffocate opponents.",
+    "most_powerful_ability": "Eldritch Luminance, which can mesmerize foes, forcing them to move toward it.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 120 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Has a passive perception score of 8, indicating its average sensing capabilities.",
+    "additional_information": [
+        "Can breathe air and water due to its Amphibious ability.",
+        "Capable of entering spaces occupied by hostile creatures, giving it strategic positioning.",
+        "Does not require sleep, remaining active constantly.",
+        "Immunity to several conditions including being blinded, charmed, and poisoned.",
+        "Adventure parties may be tempted to engage it, unaware of its mesmerizing abilities."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "amorphous aquatic ooze",
+        "creature with bloating acid attacks",
+        "dangerous mesmerizing ooze",
+        "large black water monster",
+        "engulfing acid creature"
+    ]
+}

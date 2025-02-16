@@ -1,6 +1,8 @@
 <MonsterName/>Giant Ant Queen</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>5</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>119</HP>
 <summary>The Giant Ant Queen is a large beast that plays a crucial role in its ecosystem, representing the apex of ant colonies. With an Armor Class of 15, it boasts decent protection from physical attacks due to its natural armor. Its formidable Hit Points of 119 allow it to endure substantial damage in combat, making it a resilient opponent. The queen has a movement speed of 40 feet, enabling her to maneuver effectively during encounters. As a Challenge Rating 5 creature, facing the Giant Ant Queen presents a moderate challenge, yielding 1,800 experience points upon defeat. </summary>
 
 <detail>
@@ -19,6 +21,7 @@ The Sting is another powerful melee weapon attack with the same +6 hit bonus and
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Giant Ant Queen
 
 *Large* *Beast* *Unaligned*
@@ -47,5 +50,6 @@ Source: 5e_artisinal_monsters
 - **Multiattack:** The giant ant queen makes two Bite attacks and one Sting attack.
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the giant ant queen can’t Bite a different target.
 - **Sting:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage. The target must make a DC 13 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.
+</statblock>
 
 

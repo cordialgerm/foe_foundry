@@ -1,6 +1,8 @@
 <MonsterName/>Caltrop Golem</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>6</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>75</HP>
 <summary>The Caltrop Golem is a medium-sized construct that serves as a unique defensive and offensive entity in combat. With its ability to ambush unsuspecting foes, the golem can quickly become a formidable adversary. Its strengths lie in its high Dexterity score, granting it exceptional stealth and a good Armor Class of 16, making it difficult to hit. It also possesses a significant pool of hit points totaling 75, allowing it to endure considerable damage before being defeated. However, the Caltrop Golem's weaknesses include the inability to take actions while scattered and vulnerability to adamantine weapons, which can bypass its damage resistances. Overall, the golem excels at controlling the battlefield by immobilizing opponents while delivering solid melee and ranged attacks.</summary>
 
 <detail>
@@ -25,6 +27,7 @@ In terms of actions, the Caltrop Golem can make two slam attacks or utilize its 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Caltrop Golem
 
 *Medium* *Construct* *unaligned*
@@ -64,5 +67,6 @@ Source: 5e_artisinal_monsters
 - **Scattershot (Recharge 5-6):** The golem’s body explodes. Each creature within 15 feet of the golem must make a DC 15 Dexterity saving throw. On a failure, a creature takes 36 (8d8) piercing damage and is knocked prone. On a success, a creature takes half the damage and isn’t knocked prone. The golem immediately scatters.
 
 
+</statblock>
 
 

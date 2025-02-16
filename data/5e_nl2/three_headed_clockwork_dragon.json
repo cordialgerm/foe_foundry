@@ -1,0 +1,54 @@
+{
+    "name": "Three-Headed Clockwork Dragon",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Huge",
+    "hp": 275,
+    "ac": 18,
+    "srd": false,
+    "cr": "14",
+    "movement": "fly 60 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "construct",
+        "mechanical",
+        "fiery"
+    ],
+    "adjectives": [
+        "three-headed",
+        "formidable",
+        "durable",
+        "devastating"
+    ],
+    "description": "A massive dragon-like construct with three heads, showcasing complex clockwork mechanisms and a fierce metallic body capable of flight and fierce melee attacks.",
+    "memorable": "Its unique Bond ability lets circlet-wearers experience its sensory perceptions, leading to potential exhaustion if connections are not maintained.",
+    "goals": "To protect its circlet-wearers and dominate foes when not connected to them.",
+    "relations": "Might work with or be controlled by spellcasters or engineers who created it.",
+    "environment": "Often found in technologically advanced locations or ancient ruins.",
+    "strengths": "Highly resilient to poison and psychic damage, resistant to magical effects, and capable of dealing devastating damage to structures.",
+    "weaknesses": "Extremely low Charisma, making it ineffective in social contexts.",
+    "attacks": "Multiattack with devastating bite and fist attacks, a fearsome fire breath that can engulf multiple foes, and an oil spray that creates vulnerabilities.",
+    "most_powerful_ability": "Fire Breath allows for a powerful area attack that deals high fire damage in multiple cones, posing a threat to groups of enemies.",
+    "equipment": null,
+    "senses": "Possesses heightened passive Perception of 20.",
+    "skills": "Proficient in athletics, excelling in physical contests.",
+    "additional_information": [
+        "Immune to alterations in its form through Immutable Form.",
+        "Can deal double damage to structures as a Siege Monster.",
+        "Telepathic connection allows for sensory sharing with circlet-wearers within a mile.",
+        "Exhaustion mechanics for circlet-wearers if connected.",
+        "Advantage on saving throws against spells due to Magic Resistance."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "mechanical three-headed dragon with fire breath",
+        "construct dragon immune to poison and psychic",
+        "massive dragon using telepathy with circlets",
+        "dragon with devastating fire breath and multiattack",
+        "three-headed dragon in technologically advanced ruins"
+    ]
+}

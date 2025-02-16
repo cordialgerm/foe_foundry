@@ -1,0 +1,50 @@
+{
+    "name": "Mineral Ooze",
+    "creature_type": "Ooze",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 76,
+    "ac": 9,
+    "srd": false,
+    "cr": "3",
+    "movement": "slow movement speed of 20 feet",
+    "role": "Ambusher",
+    "tags": [
+        "ooze",
+        "ambush",
+        "grappling",
+        "acid"
+    ],
+    "adjectives": [
+        "deceptive",
+        "hardening",
+        "blindsight"
+    ],
+    "description": "A large, amorphous ooze that resembles an oily pool or wet rock, capable of gripping and ensnaring its victims.",
+    "memorable": "Utilizes grappling and encasing abilities to control enemies, making it a formidable opponent in tight spaces.",
+    "goals": "To ambush and encapsulate prey, rendering them helpless.",
+    "relations": "Can be encountered alongside other oozes or in damp environments where ambush tactics thrive.",
+    "environment": "Dark, damp areas such as caves or underground tunnels.",
+    "strengths": "Resilient with high hit points and resistance to acid, cold, and fire damage.",
+    "weaknesses": "Slow movement and poor dexterity make it vulnerable to ranged attacks.",
+    "attacks": "Multiattack allowing two slam attacks, with the potential for grappling and an acid-infused Pseudopod attack.",
+    "most_powerful_ability": "Encase ability traps and blinds its victims while dealing acid damage over time.",
+    "senses": "Blindsight up to 60 feet allows it to detect creatures in darkness.",
+    "skills": null,
+    "additional_information": [
+        "Can move through narrow openings due to Amorphous trait.",
+        "False Appearance allows for effective ambush tactics.",
+        "Mineralize ability grants temporary resistance to common physical damage types."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large ambushing ooze with acid attacks",
+        "deceptive mineral ooze that grapples foes",
+        "ooze that blends in as wet rock",
+        "slow-moving ooze with powerful encasing ability",
+        "mineral ooze ambush tactics in dark caves"
+    ]
+}

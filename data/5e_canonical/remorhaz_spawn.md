@@ -1,6 +1,8 @@
 <MonsterName/>Remorhaz Spawn</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>5</CR>
+<AC/>14</AC>
+<HP/>95</HP>
 <summary>The Remorhaz Spawn is a formidable large monstrosity primarily known for its ability to inflict significant damage through both physical and fiery attacks. With a challenge rating of 5, this creature has substantial hit points, making it a resilient opponent in combat. It possesses impressive strength and constitution scores, enabling it to deal heavy damage and withstand considerable punishment. While its intelligence, charisma, and dexterity scores are average at best, the Remorhaz Spawn compensates for these weaknesses with its powerful melee attacks and the heated body trait, which can deter attackers who engage it in close combat. Its dual immunities to cold and fire damage further emphasize its resilience, making it a challenging foe for adventurers.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In terms of actions, the Remorhaz Spawn can perform a Multiattack, where it make
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Remorhaz Spawn
 
 *Large* *Monstrosity*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Constrict:** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage  and the target is subjected to the remorhazs Heated Body trait. The target is grappled (escape DC 15) and restrained while grappled. Until this grapple ends  the remorhaz can't grapple another creature.
 
 
+</statblock>
 
 

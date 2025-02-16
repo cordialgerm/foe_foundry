@@ -1,0 +1,53 @@
+{
+    "name": "Thin Giant",
+    "creature_type": "Giant",
+    "alignment": "chaotic evil",
+    "size": "Huge",
+    "hp": 168,
+    "ac": 16,
+    "srd": false,
+    "cr": "9",
+    "movement": "40 feet walk",
+    "role": null,
+    "tags": [
+        "giant",
+        "chaotic evil",
+        "contortionist",
+        "melee"
+    ],
+    "adjectives": [
+        "thin",
+        "formidable",
+        "deadly"
+    ],
+    "description": "The Thin Giant is a massive creature with the ability to contort its body into unnatural positions to navigate narrow spaces. It possesses powerful limbs, delivering crushing blow and life-draining attacks.",
+    "memorable": "This giant's ability to siphon health from its enemies while dealing high damage makes it a significant threat.",
+    "goals": "The Thin Giant seeks to dominate its foes and drain their life force.",
+    "relations": "It may be encountered alongside other chaotic evil creatures or monstrous beings.",
+    "environment": "Typically found in remote, desolate areas where it can stalk its prey.",
+    "strengths": "High Strength and Dexterity provide strong melee attacks and evasive capabilities.",
+    "weaknesses": "Low Charisma affects its ability to interact socially.",
+    "attacks": "Can make three powerful melee attacks per turn, including a damaging bite that siphons health.",
+    "most_powerful_ability": "Consuming Bite deals substantial piercing and necrotic damage while healing the giant for the necrotic damage dealt.",
+    "equipment": null,
+    "senses": "It has darkvision up to 60 feet and a passive Perception of 15.",
+    "skills": "Proficient in stealth and perception, allowing it to move quietly and detect hidden foes.",
+    "additional_information": [
+        "Resistant to bludgeoning and necrotic damage.",
+        "Immunity to exhaustion.",
+        "Can squeeze through small openings.",
+        "High Constitution enhances its resilience.",
+        "Strong offensive capabilities due to high Strength."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "huge creature that drains health",
+        "chaotic evil giant with contortion ability",
+        "thin giant that moves through tight spaces",
+        "formidable melee giant that siphons life",
+        "deadly giant with piercing and necrotic attacks"
+    ]
+}

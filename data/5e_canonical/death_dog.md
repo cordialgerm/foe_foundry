@@ -1,6 +1,9 @@
 <MonsterName/>Death Dog</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<Subtype/>animal</Subtype>
+<CR/>1</CR>
+<AC/>12</AC>
+<HP/>39</HP>
 <summary>The Death Dog is a two-headed, monstrous canine with matted fur and glowing, bloodshot eyes. These creatures are bred for their ferocity and are often found guarding tombs, ruins, or serving dark masters. Death Dogs are highly aggressive and territorial, and their bite carries a deadly, infectious disease that weakens and eventually kills their victims. Their two heads make them extremely difficult to surprise, as one head is always alert to danger while the other rests. Death Dogs are relentless hunters, often chasing their prey for miles until it collapses from exhaustion.</summary>
 
 <summary>The Death Dog is a medium monstrosity known for its formidable dual-headed appearance and its role as a threatening combatant. With an armor class of 12 and a decent amount of hit points totaling 32, it presents a moderate challenge to adventurers. The creature excels in both agility and strength, sporting a Strength score of 14 (+2), Dexterity of 14 (+2), and Constitution of 14 (+2), which indicates it can hold its own in physical confrontations. Its dual heads grant it unique advantages in combat, making it a dangerous foe capable of inflicting disease on its victims. However, its Intelligence score is very low at 2 (-4), rendering it poor in cognitive tasks. Overall, the Death Dog possesses good offensive capabilities but can be vulnerable if not taken seriously.</summary>
@@ -33,6 +36,7 @@ Overall, the Death Dog is a formidable opponent with not only offensive capabili
 
 Source: 5e_srd
 
+<statblock>
 ### Death Dog
 
 *Medium monstrosity, neutral evil*
@@ -63,7 +67,8 @@ Source: 5e_srd
 
 ***Bite***. *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (1d6+2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
 
-A **death dog** is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.
+A **death dog** is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.</statblock>
+
 
 
 
@@ -71,6 +76,7 @@ A **death dog** is an ugly two-headed hound that roams plains, and deserts. Hate
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Dog
 
 *Medium* *Monstrosity*
@@ -99,6 +105,7 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage. If the target is a creature  it makes a DC 12 Constitution saving throw. On a failure  it becomes infected with a disease. Until this disease is cured  the target is poisoned. While diseased  the target makes a DC 12 Constitution saving throw every 24 hours  reducing its hit point maximum by 5 (1d10) on a failure and ending the disease on a success. This hit point maximum reduction lasts until the disease is cured. The target dies if its hit point maximum is reduced to 0.
 
 
+</statblock>
 
 
 
@@ -107,6 +114,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Death Dog
 
 *Medium monstrosity (animal)*
@@ -140,5 +148,6 @@ Source: 5e_artisinal_monsters
 
 - **Dual Bark.** The death dog’s two heads bark at creatures in two 15-foot cones. Each creature in the area of a cone must succeed on a DC 12 CON save or be deafened until the end of its next turn. If the cones overlap each other, each creature in overlapping cones must make only one save with disadvantage rather than one save for each cone.
 
+</statblock>
 
 

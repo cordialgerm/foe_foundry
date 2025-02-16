@@ -1,0 +1,25 @@
+{
+    "name": "Gaunt One",
+    "queries": [
+        {
+            "query": "aberration monster that extracts hearts in combat",
+            "variant": "monster that extracts hearts in combat and is an aberration"
+        },
+        {
+            "query": "medium neutral evil creature with keen hearing and grappling ability",
+            "variant": "medium creature with grappling abilities that has keen hearing and is neutral evil"
+        },
+        {
+            "query": "strong claw-wielding monster with high strength in stealthy ambushes",
+            "variant": "stealthy monster with strong claws and high strength for ambushes"
+        },
+        {
+            "query": "medium monster with natural armor and significant hit points",
+            "variant": "monster with significant hit points and medium natural armor"
+        },
+        {
+            "query": "creature with darkvision that can deal damage with a heart extraction move",
+            "variant": "creature that deals damage through heart extraction and has darkvision"
+        }
+    ]
+}

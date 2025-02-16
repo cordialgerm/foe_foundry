@@ -1,0 +1,50 @@
+{
+    "name": "Alke",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 114,
+    "ac": 14,
+    "srd": false,
+    "cr": "5",
+    "movement": "walking speed of 50 feet and climbing speed of 30 feet",
+    "role": null,
+    "tags": [
+        "large",
+        "monstrosity",
+        "agile",
+        "combatant"
+    ],
+    "adjectives": [
+        "formidable",
+        "swift",
+        "strong",
+        "durable"
+    ],
+    "description": "The Alke is a large and imposing monstrosity, notable for its sharp back spikes and strong limbs. With robust physical features, it navigates various terrains with agility.",
+    "memorable": "Possesses lethal back spikes and can knock opponents prone with a powerful pounce while launching itself at foes.",
+    "goals": "Primarily seeks to engage in combat, taking down threats or securing its territory.",
+    "relations": "Can be encountered alongside other monstrous creatures in wild areas.",
+    "environment": "Typically found in forests or mountainous regions where it can utilize its climbing ability.",
+    "strengths": "Exceptional Strength and Constitution scores, making it a formidable opponent in battle.",
+    "weaknesses": "Low Intelligence limits tactical capabilities and strategic interactions.",
+    "attacks": "Can perform a Multiattack that consists of a beak attack and two claws attacks, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Piercing Roll allows it to propel itself at foes with spikes, dealing substantial damage and potentially knocking them prone.",
+    "equipment": null,
+    "senses": "Possesses darkvision out to 60 feet and has a passive perception score of 16, indicating good vigilance.",
+    "skills": "Has proficiency in perception, which enhances its ability to detect threats.",
+    "additional_information": [
+        "Immune to the petrified condition.",
+        "Advantage on Wisdom (Perception) checks that rely on sight.",
+        "Can improve its AC in response to attacks with Repelling Spikes."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large combat monster",
+        "agile beast with spikes",
+        "strong clawing creature",
+        "pouncing monstrosity",
+        "formidable forest predator"
+    ]
+}

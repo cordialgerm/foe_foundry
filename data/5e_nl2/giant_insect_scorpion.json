@@ -1,0 +1,50 @@
+{
+    "name": "Giant Scorpion",
+    "creature_type": "Beast",
+    "alignment": "Unaligned",
+    "size": "Large",
+    "hp": 76,
+    "ac": 15,
+    "srd": true,
+    "cr": "3",
+    "movement": "40 ft., burrow 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "beast",
+        "poison",
+        "grappling",
+        "melee"
+    ],
+    "adjectives": [
+        "large",
+        "deadly",
+        "poisonous"
+    ],
+    "description": "The giant scorpion is a large, formidable creature with a tough exoskeleton and a long, curved tail armed with a venomous sting. Its pincers are powerful and capable of grappling opponents.",
+    "memorable": "It has a potent poison sting and can grapple multiple foes while dealing damage.",
+    "goals": "Hunts prey and defends its territory.",
+    "relations": "Could be found in swarms with other giant insects.",
+    "environment": "Typically found in deserts or arid regions.",
+    "strengths": "Capable of multiattacks, including grappling and applying poison damage.",
+    "weaknesses": "Low intelligence and charisma renders it ineffective in complex interactions.",
+    "attacks": "Performs multiattacks with two claw strikes and a venomous sting.",
+    "most_powerful_ability": "Poison sting that can incapacitate foes if they fail a saving throw.",
+    "senses": "Has keen senses with a detection range of 60 ft.",
+    "skills": "Skilled in stealth, allowing it to ambush prey effectively.",
+    "additional_information": [
+        "Reaction attack with Reflexive Sting against nearby attackers.",
+        "Can burrow underground to travel unseen.",
+        "Resistance to nonmagical damage due to its tough exoskeleton."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large poisonous scorpion with nasty sting",
+        "creature with venomous sting and grappling claws",
+        "giant beast that burrows and ambushes its prey",
+        "dangerous desert monster with multiattack abilities",
+        "aggressive insect with deadly claws and tail"
+    ]
+}

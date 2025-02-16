@@ -1,0 +1,25 @@
+{
+    "name": "Crab, Samurai",
+    "queries": [
+        {
+            "query": "aquatic crab monster that can grapple opponents",
+            "variant": "aquatic crab creature capable of grappling foes"
+        },
+        {
+            "query": "medium-sized beast with high defense and melee attacks",
+            "variant": "medium beast that has high defense and melee combat abilities"
+        },
+        {
+            "query": "Crab Samurai with amphibious abilities and hard shell stance",
+            "variant": "Crab Samurai featuring amphibious traits and a hard shell stance"
+        },
+        {
+            "query": "strong crab creature skilled in melee combat and grappling",
+            "variant": "powerful crab monster proficient in melee attacks and grappling"
+        },
+        {
+            "query": "Crab Samurai that uses a sword and has damage resistance",
+            "variant": "Crab Samurai wielding a sword and possessing damage resistances"
+        }
+    ]
+}

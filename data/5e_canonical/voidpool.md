@@ -1,6 +1,8 @@
 <MonsterName/>Voidpool</MonsterName>
 <CreatureType/>Ooze</CreatureType>
-
+<CR/>5</CR>
+<AC/>8</AC>
+<HP/>112</HP>
 <summary>The Voidpool is a large ooze creature that embodies a dark, formless essence tied to the Void. With a challenge rating of 5, it presents a considerable threat through its unique abilities and substantial durability, boasting 112 hit points. While it has a low armor class of 8, its ability to avoid certain damage types makes it resilient in specific encounters. The Voidpool’s notable weaknesses lie in its vulnerability to radiant damage, and it lacks intelligence, making it less capable of strategic thinking. This creature serves a role as both a grappler in combat and a means of transporting characters to the Void, adding a layer of complexity to engagements. Its combination of abilities allows it to manipulate opponents while maintaining a persistent threat through its physical attacks.</summary>
 
 <detail>
@@ -31,6 +33,7 @@ Overall, the Voidpool combines formidable physical grappling power with unique p
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Voidpool
 
 *Large* *Ooze* *unaligned*
@@ -65,5 +68,6 @@ Source: 5e_artisinal_monsters
 - **Pseudopod:** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 7 (2d6) necrotic damage. The target is grappled (escape DC 13) if it is a Medium or smaller creature and the voidpool doesn’t have two other creatures grappled. Until this grapple ends, the target is restrained, and it risks being pulled into the Void (see the Planar Portal trait).
 
 
+</statblock>
 
 

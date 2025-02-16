@@ -1,0 +1,55 @@
+{
+    "name": "Deva",
+    "creature_type": "Celestial",
+    "creature_subtype": "angel",
+    "alignment": "lawful good",
+    "size": "Medium",
+    "hp": 136,
+    "ac": 17,
+    "srd": true,
+    "cr": "10",
+    "movement": "30 ft. walking, 90 ft. flying",
+    "role": "null",
+    "tags": [
+        "celestial",
+        "angel",
+        "healer",
+        "magic user"
+    ],
+    "adjectives": [
+        "powerful",
+        "radiant",
+        "divine",
+        "graceful"
+    ],
+    "description": "A radiant being with luminous wings and glowing skin, showcasing beauty and divine grace.",
+    "memorable": "Exceptional resilience with resistance to radiant damage and the ability to heal and revive others.",
+    "goals": "To guide, protect, or defend worthy mortals while battling evil forces.",
+    "relations": "Often associated with other celestial beings and deities.",
+    "environment": "Can be found in realms associated with goodness and divine beings.",
+    "strengths": "High magical resistance and powerful healing abilities, alongside formidable combat skills.",
+    "weaknesses": "Vulnerable to foes with strong resistance or immunity to magical damage.",
+    "attacks": "Utilizes the Celestial Hammer for melee attacks and Divine Blast for ranged offense, dealing both bludgeoning and radiant damage.",
+    "most_powerful_ability": "Healing Touch allows the restoration of significant hit points and removes various conditions.",
+    "equipment": null,
+    "senses": "Possesses truesight up to 30 feet, enhancing its ability to perceive hidden or invisible creatures.",
+    "skills": "Excels in Insight, Perception, and Religion, indicating deep wisdom and awareness.",
+    "additional_information": [
+        "Magic Resistance offers advantage on saving throws against spells.",
+        "Can transform into a beast or humanoid form.",
+        "Immortal Nature means it does not require food, drink, or sleep.",
+        "Celestial Dissolution causes its body to dissolve into light upon death.",
+        "Reviving Prayer can return a creature to life within 24 hours."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can innately cast spells like 'detect evil and good' at will and 'commune' and 'raise dead' once per day.",
+    "test_queries": [
+        "angelic being with radiant wings and healing powers",
+        "powerful celestial creature known for divine grace",
+        "healer that uses radiant powers in combat",
+        "beautiful celestial that protects good souls",
+        "mighty angel that transforms into other forms"
+    ]
+}

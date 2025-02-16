@@ -1,0 +1,25 @@
+{
+    "name": "Brown Bear",
+    "queries": [
+        {
+            "query": "large shaggy predator with powerful claws",
+            "variant": "large predator with shaggy fur and strong claws"
+        },
+        {
+            "query": "brown bear that swims and climbs well",
+            "variant": "bear that is good at climbing and swimming"
+        },
+        {
+            "query": "massive creature that hunts in the wilderness",
+            "variant": "huge creature that stalks its prey in the wild"
+        },
+        {
+            "query": "bear known for its keen sense of smell and strength",
+            "variant": "bear famous for its powerful smell and strength"
+        },
+        {
+            "query": "predator that grapples and attacks with bite and claws",
+            "variant": "creature that grapples its prey and uses claws and bite to attack"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Piercer",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Small",
+    "hp": 9,
+    "ac": 17,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "no movement, effectively immobile while ambushing",
+    "role": "Ambusher",
+    "tags": [
+        "monstrosity",
+        "ambush",
+        "stalactite"
+    ],
+    "adjectives": [
+        "deceptive",
+        "unthinking",
+        "instinctual"
+    ],
+    "description": "The Piercer resembles a stalactite when motionless, making it difficult to detect. It is a small monstrosity with a slightly durable build.",
+    "memorable": "The Piercer's False Appearance ability makes it a unique ambush predator, blending in with its surroundings.",
+    "goals": "To ambush unsuspecting creatures that venture beneath it.",
+    "relations": "Related to other ambush predators in cave environments.",
+    "environment": "Typically found in cave systems or rocky areas where stalactites are prevalent.",
+    "strengths": "High armor class for a small creature and deceptive ambush capabilities.",
+    "weaknesses": "Very low health and relies on maintaining its deceptive appearance for attacks.",
+    "attacks": "Piercing attack that deals substantial damage for its small size, but risks death on a miss.",
+    "most_powerful_ability": "False Appearance allows it to remain undetected, increasing surprise potential.",
+    "equipment": null,
+    "senses": "Possesses blindsight within a 30-foot radius, allowing it to detect creatures without sight.",
+    "skills": "Has very low perception with a passive score of 8, making it ineffective at noticing threats.",
+    "additional_information": [
+        "Instinct-driven creature with low intelligence and wisdom.",
+        "Can die instantly if its attack misses.",
+        "Blends into its environment to surprise adventurers below.",
+        "Has an ambush tactic that can deal significant damage if not noticed."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "ambush predator resembling a stalactite",
+        "small creature that blends in with caves",
+        "monster with high armor class and low health",
+        "deceptive ambusher in rocky environments",
+        "creature that dies on a missed attack"
+    ]
+}

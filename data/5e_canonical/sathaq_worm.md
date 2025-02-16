@@ -1,6 +1,8 @@
 <MonsterName/>Sathaq Worm</MonsterName>
 <CreatureType/>Elemental</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>149</HP>
 <summary>The Sathaq Worm is a massive elemental creature characterized by its neutrality and evil nature. This huge worm boasts impressive power with a strong constitution and a formidable array of abilities that make it a dangerous opponent in combat. Its strengths lie in its high hit points, strong melee attacks, and special abilities that can debilitate foes while it remains largely impervious to common forms of damage. However, it suffers from low dexterity, making it less agile compared to other foes, and its intelligence is also quite low, hindering its tactical capabilities. The Sathaq Worm is particularly effective in terrain it can camouflage into, using its ability to move through earth and stone to ambush unsuspecting adventurers. </summary>
 
 <detail>
@@ -21,6 +23,7 @@ In combat, the Sathaq Worm uses the **Multiattack** action to perform a combinat
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Sathaq Worm
 
 *Huge* *Elemental* *Neutral Evil*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Bite:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 24 (4d8 + 6) piercing damage, and the target is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the sathaq worm can’t Bite another target.
 - **Slam:** Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.
 - **Swallow:** The sathaq worm makes one Bite attack against a Large or smaller creature it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the worm (including the worm’s Agonizing Aura), and takes 10 (3d6) piercing damage and 10 (3d6) acid damage at the start of each of the sathaq worm’s turns. The sathaq worm can have only one creature swallowed at a time.
+</statblock>
 
 

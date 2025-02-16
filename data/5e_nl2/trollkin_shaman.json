@@ -1,0 +1,50 @@
+{
+    "name": "Trollkin Shaman",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "humanoid",
+        "shaman",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "resilient",
+        "supportive",
+        "versatile"
+    ],
+    "description": "The Trollkin Shaman has thick hide, enhancing its defenses, and is known for robust spellcasting abilities alongside solid melee proficiency, using a staff in combat.",
+    "memorable": "It has a regeneration ability that allows it to recover health each turn, making it difficult to defeat in battle unless it takes acid or fire damage.",
+    "goals": "Typically serves as a support and leader for other trollkin, enhancing their abilities in combat.",
+    "relations": "Often found alongside other trollkin, serving as a strategist and magic user within their ranks.",
+    "environment": "Commonly found in wooded or marshy areas where trollkin typically dwell.",
+    "strengths": "High proficiency in spellcasting with strong support capabilities, effective regeneration, and good perception skills.",
+    "weaknesses": "Vulnerable to fire and acid damage, significantly hindering its regenerative abilities.",
+    "attacks": "Utilizes a staff to make multiattacks, dealing moderate bludgeoning damage.",
+    "most_powerful_ability": "Inspire Ferocity grants allies advantage on attacks and saving throws and temporary hit points, enhancing their combat effectiveness.",
+    "equipment": "Staff",
+    "senses": "Has a passive Perception of 15, making it adept at noticing hidden threats.",
+    "skills": "Skilled in perception and maintains average ability in arcana and nature.",
+    "additional_information": [
+        "Spellcasting ability tied to Wisdom, enhancing its spell effectiveness.",
+        "Regeneration allows it to recover 5 hp each turn under normal conditions.",
+        "Thick hide provides an additional boost to its Armor Class.",
+        "Access to various druid spells bolstered by its spellcasting level.",
+        "Can cast several high-impact spells including Dispel Magic and Sleet Storm."
+    ],
+    "damage_types": [],
+    "spellcasting": "An 8th-level spellcaster with access to a variety of druid spells, focusing on healing, area control, and enhancing allies.",
+    "test_queries": [
+        "trollkin healer with regenerative powers",
+        "humanoid shaman casting druid spells",
+        "trollkin spellcaster that boosts allies",
+        "resilient trollkin with thick skin",
+        "forest dwellers with healing abilities"
+    ]
+}

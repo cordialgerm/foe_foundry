@@ -1,6 +1,8 @@
 <MonsterName/>Mahoru</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>3</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>105</HP>
 <summary>Mahoru is a formidable large monstrosity with an unaligned nature, characterized by its impressive physical abilities and unique combat tactics. With an armor class of 15 derived from its natural armor and a substantial hit point pool of 105, the mahoru is quite resilient in battle. It possesses a movement speed of 60 feet, allowing it to navigate the battlefield swiftly. Although its challenge rating is 3, suggesting it can be a moderate threat to adventurers, its advantages in combat, particularly through its abilities, can make it a significant adversary. The mahuru excels in melee combat with strong attack rolls and devastating damage potential. Its notable weaknesses include low intelligence and charisma scores, which may restrict its ability to engage in complex interactions outside of physical confrontations.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the mahuru is a vicious predator best encountered with caution, armed w
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Mahoru
 
 *Large* *Monstrosity* *Unaligned*
@@ -48,5 +51,6 @@ Source: 5e_artisinal_monsters
 
 - **Bite:** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) slashing damage. If the mahoru scores a critical hit, the target must succeed on a DC 14 Strength saving throw or the mahoru bites off one of the target’s limbs. A creature is immune to this effect if it is immune to slashing damage.
 - **Roar:** The mahoru roars while above water or emits a loud, low thrum while underwater. Each creature within 30 feet of the mahoru that can hear the roar or thrum must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that fails the saving throw by 5 or more is also paralyzed until the end of its next turn. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the Roar of all mahoru for the next 24 hours.
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Adult Black Dragon Lich",
+    "queries": [
+        {
+            "query": "undead dragon that uses dark magic and has high hit points",
+            "variant": "high hit point dark magic dragon that is undead"
+        },
+        {
+            "query": "large black dragon lich that can swim and fly",
+            "variant": "big black dragon lich that flies and swims"
+        },
+        {
+            "query": "tactical creature with acid breath and legendary actions",
+            "variant": "creature with legendary actions and a tactical acid breath"
+        },
+        {
+            "query": "dragon with high armor class and immunity to acid",
+            "variant": "creature with immunity to acid and a high armor class"
+        },
+        {
+            "query": "stealthy undead dragon that communicates in Draconic and Common",
+            "variant": "undead dragon that speaks Common and Draconic and is stealthy"
+        }
+    ]
+}

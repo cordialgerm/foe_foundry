@@ -1,0 +1,25 @@
+{
+    "name": "Pelagic Blush Worm",
+    "queries": [
+        {
+            "query": "gargantuan aquatic monster that breathes underwater and has devastating bite attacks",
+            "variant": "gargatuan water monster that can breath underwater and has deadly bite attacks"
+        },
+        {
+            "query": "monster with acid immunity that attacks with a tail fin in aquatic environments",
+            "variant": "creature immune to acid that uses its tail fin to attack in water"
+        },
+        {
+            "query": "large underwater creature that has high hit points and strong melee attacks",
+            "variant": "big water creature with lots of hit points and powerful melee attacks"
+        },
+        {
+            "query": "being that deals double damage to structures and has echolocation abilities",
+            "variant": "creature that does double damage to objects and can echolocate"
+        },
+        {
+            "query": "hulking monster that is vulnerable on land and performs area damage with acid breath",
+            "variant": "massive monster that lacks mobility on land and has area damage from acid breath"
+        }
+    ]
+}

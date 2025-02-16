@@ -1,0 +1,52 @@
+{
+    "name": "Karakura",
+    "creature_type": "Fiend",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 76,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 40 ft., walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "charming",
+        "shadow"
+    ],
+    "adjectives": [
+        "deceptive",
+        "manipulative",
+        "elusive"
+    ],
+    "description": "The Karakura is a Medium-sized fiend known for its exceptional charm and manipulative abilities, characterized by its high charisma and deceptive appearance.",
+    "memorable": "The Karakura can shift between forms and ensnare foes in darkness, making it a cunning and slippery adversary.",
+    "goals": "To charm and manipulate foes, often using deception to further its own ends.",
+    "relations": "Typically acts independently but may ally with other fiends or sinister creatures.",
+    "environment": "Often found in dark areas or underground, primarily active at night.",
+    "strengths": "Possesses high Charisma, flight capability, and strong illusion abilities.",
+    "weaknesses": "Vulnerable to radiant damage, making it susceptible to certain classes and spells.",
+    "attacks": "Utilizes claw attacks and abilities like Charm to control enemies, as well as Shroud in Darkness to transport foes to the Plane of Shadow.",
+    "most_powerful_ability": "Shroud in Darkness, which can trap enemies in the Plane of Shadow and induce short-term madness.",
+    "equipment": null,
+    "senses": "Has darkvision up to 60 feet and a passive perception of 14, enabling it to perceive hidden threats in darkness.",
+    "skills": "Excels in deception, persuasion, stealth, showcasing its expertise in manipulation and scouting efforts.",
+    "additional_information": [
+        "Shapechanging ability allows it to become a Small or Medium humanoid.",
+        "Night Walkers ability restricts its presence on the Material Plane to nighttime or underground.",
+        "Telepathic Bond enables communication with charmed targets across any distance.",
+        "Immunity to poison and completely resistant to the poisoned condition.",
+        "Can only maintain one charmed target at a time."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that manipulates shadows and darkness",
+        "charming fiend with flying capabilities",
+        "shadow-based creature that traps enemies",
+        "creature that can change shape and charm foes",
+        "night-dwelling fiend with telepathic powers"
+    ]
+}

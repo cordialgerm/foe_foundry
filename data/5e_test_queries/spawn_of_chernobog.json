@@ -1,0 +1,25 @@
+{
+    "name": "Spawn of Chernobog",
+    "queries": [
+        {
+            "query": "large dark fiend that infects with disease",
+            "variant": "large fiend of darkness that can infect with a disease"
+        },
+        {
+            "query": "creature vulnerable to radiant damage found in dark places",
+            "variant": "monster weak to radiant attacks that lives in dark environments"
+        },
+        {
+            "query": "chaotic evil fiend with transforming infection abilities",
+            "variant": "chaotic evil creature that can transform its victims through infection"
+        },
+        {
+            "query": "monster with multiattack and sunlight sensitivity",
+            "variant": "creature that has multiattack and is sensitive to sunlight"
+        },
+        {
+            "query": "Spawn of Chernobog's bite causing horrifying changes",
+            "variant": "bite of the Spawn of Chernobog leading to terrifying transformations"
+        }
+    ]
+}

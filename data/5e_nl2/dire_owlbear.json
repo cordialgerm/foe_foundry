@@ -1,0 +1,48 @@
+{
+    "name": "Dire Owlbear",
+    "creature_type": "Monstrosity",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 102,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 35 ft., burrow 10 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "monstrosity",
+        "owlbear",
+        "wild"
+    ],
+    "adjectives": [
+        "large",
+        "menacing",
+        "ferocious"
+    ],
+    "description": "The Dire Owlbear is a large creature that combines the traits of both an owl and a bear, possessing a beak and deadly claws. It has powerful limbs and a muscular frame, showcasing its brute strength.",
+    "memorable": "It has a blood frenzy ability that allows it to attack more effectively against weakened foes.",
+    "goals": "The Dire Owlbear typically hunts for prey in its territory, relying on its physical prowess to dominate encounters.",
+    "relations": "It may be encountered in the company of other wild creatures or beasts in the wilderness.",
+    "environment": "Commonly found in dense forests and wild areas, where it can ambush prey.",
+    "strengths": "Exceptional Strength and resilience with a high Constitution, making it durable in combat.",
+    "weaknesses": "Low Dexterity and Charisma can limit its evasive abilities and social interactions.",
+    "attacks": "Multiattack consisting of a beak and claw attack, dealing significant piercing and slashing damage.",
+    "most_powerful_ability": "Blood Frenzy enhances its attack rolls against injured targets, making it a fearsome opponent.",
+    "equipment": null,
+    "senses": "Possesses keen sight and smell, granting it advantage on perception checks that rely on these senses.",
+    "skills": "Has a modest proficiency in perception, allowing it to notice hidden threats adequately.",
+    "additional_information": [
+        "Immune to blinded and frightened conditions.",
+        "Darkvision enables it to see in darkness.",
+        "Tremorsense helps detect nearby creatures, even when they are hidden."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "large monster with primal instincts",
+        "menacing beast with keen senses",
+        "strong creature that hunts in forests",
+        "owl and bear mix with deadly claws",
+        "ferocious creature with a blood frenzy attack"
+    ]
+}

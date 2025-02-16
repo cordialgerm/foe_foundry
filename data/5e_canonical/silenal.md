@@ -1,6 +1,8 @@
 <MonsterName/>Silenal</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>7</CR>
+<AC/>14</AC>
+<HP/>117</HP>
 <summary>The Silenal is a small fey creature with a chaotic neutral alignment, embodying mischief and charm. It has an Armor Class of 14 and possesses 117 hit points, making it reasonably durable although not overly robust. The creature has a walking speed of 25 feet and a Challenge Rating of 7, meaning it poses a moderate threat to a party of adventurers. With a dexterous nature, a high Charisma, and several unique abilities, the Silenal excels in social encounters and combat scenarios, particularly by utilizing its spells and skills effectively. However, it does have limitations in physical strength and resilience against powerful attacks. Notably, the Silenal's abilities revolve around intoxication, charming effects, and combat manipulation, making it a whimsical yet formidable presence in any game.</summary>
 
 <detail>
@@ -17,6 +19,7 @@ In combat, the Silenal can make three attacks through its "Multiattack" action. 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Silenal
 
 *Small* *Fey* *chaotic neutral*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Cause Row (1/Day):** The silenal magically stirs humanoids it can see within 60 feet of it into a frenzy. The frenzied patrons use the statistics of 4d4 commoners or 1 bar brawl. The frenzied patrons don’t attack the silenal. The patrons remain frenzied for 10 minutes, until the silenal dies, or until the silenal calms and disperses the mass as a bonus action.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Mimic",
+    "queries": [
+        {
+            "query": "cunning shape-shifting creature that disguises as furniture and ambushes adventurers",
+            "variant": "crafty creature that can shapeshift into furniture and surprises adventurers"
+        },
+        {
+            "query": "monster that uses sticky appendages to trap and swallow its prey",
+            "variant": "creature that traps and swallows its prey using adhesive limbs"
+        },
+        {
+            "query": "deceptive object that can transform into a monster and lurks in dungeons",
+            "variant": "tricky item that transforms into a monster and hides in dungeons"
+        },
+        {
+            "query": "intelligent monster that can shapeshift and is vulnerable to water",
+            "variant": "smart creature that changes shape and can be defeated with water"
+        },
+        {
+            "query": "ambush predator that pretends to be inanimate and attacks with grappling abilities",
+            "variant": "sneaky predator that fakes being an object and has grappling skills"
+        }
+    ]
+}

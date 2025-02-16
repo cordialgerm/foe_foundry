@@ -1,0 +1,50 @@
+{
+    "name": "Foxin",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Small",
+    "hp": 16,
+    "ac": 14,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "charming",
+        "stealthy"
+    ],
+    "adjectives": [
+        "cunning",
+        "elusive",
+        "nimble"
+    ],
+    "description": "The Foxin is a small fey creature characterized by its charm and agility, with a sleek appearance and natural armor.",
+    "memorable": "The Foxin's unique Illusory Calm ability can neutralize threats temporarily, altering battlefield dynamics.",
+    "goals": "The Foxin often seeks to infiltrate areas unnoticed and manipulate situations to its advantage.",
+    "relations": "It may serve more powerful fey or act independently, often alongside other stealthy creatures.",
+    "environment": "Typically found in forests or enchanted areas, blending into their surroundings.",
+    "strengths": "High Dexterity and Charisma scores, excellent at stealth and persuasion with heightened perception.",
+    "weaknesses": "Modest Constitution and Intelligence scores leave it vulnerable to certain attacks and mental challenges.",
+    "attacks": "Performs a Bite attack dealing piercing damage and can knock targets prone.",
+    "most_powerful_ability": "Illusory Calm can charm multiple creatures, effectively removing them from combat for a duration.",
+    "equipment": null,
+    "senses": "Possesses Keen Senses, granting advantage on Perception checks related to sight, hearing, or smell.",
+    "skills": "Has proficiency in Perception, allowing for keen detection of hidden threats.",
+    "additional_information": [
+        "Immune to being charmed, offering resilience in social encounters.",
+        "Exudes Neutral Presence, creating a sense of normalcy in its vicinity.",
+        "Can knock opponents prone with its Bite attack, gaining tactical advantage.",
+        "Highly agile, with a movement speed of 40 feet.",
+        "Relatively low-level threat with a Challenge Rating of 1/2."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "small charming fey with keen senses",
+        "nimble creature that can charm others",
+        "elusive fey that excels in stealth",
+        "fox-like creature that knocks enemies prone",
+        "fey with illusion-based abilities"
+    ]
+}

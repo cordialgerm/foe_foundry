@@ -1,0 +1,52 @@
+{
+    "name": "Yakirian",
+    "creature_type": "Humanoid",
+    "alignment": "lawful neutral",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 13,
+    "srd": false,
+    "cr": "2",
+    "movement": "40 feet walking speed",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "combat",
+        "psychological resistance"
+    ],
+    "adjectives": [
+        "strong",
+        "resilient",
+        "intelligent",
+        "durable"
+    ],
+    "description": "The Yakirian is a medium humanoid creature known for its notable physical strength, resilience, and average agility, supported by chain shirt armor.",
+    "memorable": "Its ability, Resilient Soul, grants it extraordinary mental fortitude, making it resistant to charm, fear, and confusion.",
+    "goals": "The Yakirian is known to assimilate knowledge and enhance its combat capabilities, primarily through its unique action, Consume Heart.",
+    "relations": "It may encounter other humanoid or giant creatures, particularly those it can consume.",
+    "environment": "Typically found in settings where it can engage in combat and absorb knowledge from fallen foes.",
+    "strengths": "Possesses physical strength and resilience, along with enhanced advantage against psychological effects in combat.",
+    "weaknesses": "Low charisma suggests difficulties in social interactions.",
+    "attacks": "Utilizes a Multiattack with a gore and a ritual knife, dealing piercing damage.",
+    "most_powerful_ability": "Consume Heart allows significant temporary boosts in abilities and knowledge absorption from recently deceased enemies.",
+    "equipment": "Chain shirt provides average armor class.",
+    "senses": null,
+    "skills": "Has proficiency in arcana, providing good magical knowledge.",
+    "additional_information": [
+        "Resistance to cold damage increases its durability against elemental attacks.",
+        "Passive perception score is average, reflecting general awareness.",
+        "Can absorb knowledge from dead humanoids or giants for tactical advantage.",
+        "Enhanced hit points and attack rolls for one hour after using Consume Heart."
+    ],
+    "damage_types": [
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "strong humanoid with psychological resistance",
+        "creature that consumes hearts for power",
+        "Yakirian combat abilities and tactics",
+        "cold-resistant creature with high strength",
+        "lawful neutral humanoid that absorbs knowledge"
+    ]
+}

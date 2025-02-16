@@ -1,0 +1,25 @@
+{
+    "name": "Destroyer",
+    "queries": [
+        {
+            "query": "humanoid creature that commands undead and has strong melee attacks",
+            "variant": "humanoid monster that commands the undead and has powerful melee capabilities"
+        },
+        {
+            "query": "medium neutral evil humanoid with necrotic attacks and good resilience",
+            "variant": "medium neutral evil creature with necrotic damage and decent resilience in combat"
+        },
+        {
+            "query": "monster with 60 hit points that excels in physical combat and resists necrotic damage",
+            "variant": "creature with 60 hit points that is great in physical fights and resistant to necrotic damage"
+        },
+        {
+            "query": "destroyer creature with powerful claw and greataxe attacks plus undead commanding ability",
+            "variant": "destroyer monster that has strong claw and greataxe strikes plus the ability to command undead"
+        },
+        {
+            "query": "creature with advantage on perception checks and resistance to being charmed or frightened",
+            "variant": "monster that has an edge on perception checks and resists charm and fear effects"
+        }
+    ]
+}

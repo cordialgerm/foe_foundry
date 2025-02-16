@@ -1,0 +1,50 @@
+{
+    "name": "Marsh Dire",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 142,
+    "ac": 15,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 30 ft. and swim 30 ft.",
+    "role": null,
+    "tags": [
+        "undead",
+        "poisonous",
+        "grappling"
+    ],
+    "adjectives": [
+        "powerful",
+        "formidable",
+        "resilient"
+    ],
+    "description": "The Marsh Dire is a powerful Medium undead creature with a foul presence, manifesting with exceptional strength and constitution, making it a dangerous melee combatant.",
+    "memorable": "The Marsh Dire's Cloying Stench ability can poison nearby foes, disrupting their tactics.",
+    "goals": "To ambush and restrain foes while inflicting damage with its poison and melee attacks.",
+    "relations": "Related to other undead creatures, possibly found alongside swamp-dwelling monsters.",
+    "environment": "Usually found in marshes or swamps.",
+    "strengths": "High durability due to substantial hit points and resistance to fire and necrotic damage.",
+    "weaknesses": "Low intelligence and charisma, limiting its strategic and social capabilities.",
+    "attacks": "Utilizes claws for slashing damage and a strangling vine for bludgeoning and necrotic damage, capable of grappling multiple targets.",
+    "most_powerful_ability": "Cloying Stench, which poisons nearby creatures, forcing them to make saving throws each turn.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Possesses average perception skills, allowing it to notice hidden creatures or objects reasonably well.",
+    "additional_information": [
+        "Immune to poison damage and several conditions.",
+        "Can grapple multiple targets simultaneously.",
+        "Slashing and necrotic damage infliction makes it versatile in combat."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "powerful undead with poisonous stench",
+        "swamp monster that grapples foes",
+        "undead creature with multiple attacking vines",
+        "strong melee undead with high hit points",
+        "medium undead that can poison nearby creatures"
+    ]
+}

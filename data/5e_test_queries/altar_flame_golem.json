@@ -1,0 +1,25 @@
+{
+    "name": "Altar Flame Golem",
+    "queries": [
+        {
+            "query": "large fire monster that can absorb fire damage",
+            "variant": "huge flame creature that absorbs fire damage"
+        },
+        {
+            "query": "construct that serves as a guardian in sacred sites",
+            "variant": "golem that guards important places"
+        },
+        {
+            "query": "flame golem with low Dexterity and weak against cold",
+            "variant": "fire golem weak against cold damage and has low agility"
+        },
+        {
+            "query": "stone creature that resembles an altar and has fire breath",
+            "variant": "altar-like construct that can breathe fire"
+        },
+        {
+            "query": "creature immune to poison and fire with a death burst ability",
+            "variant": "monster that has fire immunity and a death explosion attack"
+        }
+    ]
+}

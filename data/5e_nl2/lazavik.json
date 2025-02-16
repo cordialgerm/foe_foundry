@@ -1,0 +1,52 @@
+{
+    "name": "Lazavik",
+    "creature_type": "Fey",
+    "alignment": "neutral good",
+    "size": "Tiny",
+    "hp": 36,
+    "ac": 14,
+    "srd": false,
+    "cr": "3",
+    "movement": "swim 30 ft., walk 30 ft.",
+    "role": "Support",
+    "tags": [
+        "fey",
+        "swamp",
+        "support"
+    ],
+    "adjectives": [
+        "tiny",
+        "agile",
+        "perceptive"
+    ],
+    "description": "Lazavik is a small fey creature with a single brilliant golden eye and an affinity for swampy environments, excelling in mobility and survival.",
+    "memorable": "It has unique abilities enhancing allies' movement and can communicate with beasts.",
+    "goals": "Assist allies in navigating difficult terrain and achieve harmony with swamp creatures.",
+    "relations": "May interact with other fey and swamp-dwelling creatures.",
+    "environment": "Primarily found in swamps and marshes.",
+    "strengths": "Exceptional Dexterity provides agility and stealth capability.",
+    "weaknesses": "Limited offensive damage output compared to larger foes.",
+    "attacks": "Uses a Reed Whip for slashing attacks and can unleash a blinding Eye Flare.",
+    "most_powerful_ability": "Eye Flare, which deals radiant damage and can blind foes.",
+    "equipment": null,
+    "senses": "Has passive perception of 17, making it highly perceptive.",
+    "skills": "Skilled in stealth and perception, allowing it to navigate and evade effectively.",
+    "additional_information": [
+        "Resistant to poison damage.",
+        "Immune to frightened and poisoned conditions.",
+        "Can hold its breath for 30 minutes.",
+        "Illuminates an area to assist allies with its Glowing Eye ability.",
+        "Moves freely through marshy terrain with Swamp Stride."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny swamp fey with glowing eye",
+        "agile creature that communicates with beasts",
+        "supportive fey that helps in marshes",
+        "creature with blinding radiant flare ability",
+        "fey with impressive stealth and perception skills"
+    ]
+}

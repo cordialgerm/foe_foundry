@@ -1,0 +1,25 @@
+{
+    "name": "Guardian",
+    "queries": [
+        {
+            "query": "large humanoid protector in darkness with piercing damage attacks",
+            "variant": "humanoid guardian that is large and protects in the dark using piercing damage"
+        },
+        {
+            "query": "neutral evil creature with charm immunity and sunlight sensitivity",
+            "variant": "creature that is neutral evil, immune to charms, but weak against sunlight"
+        },
+        {
+            "query": "monster with high strength and strong melee capabilities that vanishes in shadows",
+            "variant": "creature that is strong in melee and can disappear into shadowy areas"
+        },
+        {
+            "query": "combatant with 110 hit points and ability to impose disadvantage on attacks against allies",
+            "variant": "guardian with 110 hp capable of creating disadvantage for attackers targeting allies"
+        },
+        {
+            "query": "humanoid creature with darkvision that thrives in ambush scenarios",
+            "variant": "humanoid monster who has darkvision and prefers ambush tactics"
+        }
+    ]
+}

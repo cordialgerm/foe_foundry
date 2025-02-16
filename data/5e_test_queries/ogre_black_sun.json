@@ -1,0 +1,25 @@
+{
+    "name": "Ogre, Black Sun",
+    "queries": [
+        {
+            "query": "large giant with infernal tattoos that deals necrotic damage",
+            "variant": "big giant with tattoos from hell that inflicts necrotic damage"
+        },
+        {
+            "query": "lawful evil ogre that uses magic and has darkvision",
+            "variant": "evil lawful ogre that employs magic and possesses darkvision"
+        },
+        {
+            "query": "Black Sun Ogre with high strength and deadly blade attacks",
+            "variant": "Ogre from Black Sun with great strength and lethal blade strikes"
+        },
+        {
+            "query": "giant creature with special abilities to knock down enemies",
+            "variant": "giant monster that can knock foes prone with unique powers"
+        },
+        {
+            "query": "Ogre that speaks Giant and can use necrotic spells",
+            "variant": "Ogre that communicates in Giant and can cast necrotic magic"
+        }
+    ]
+}

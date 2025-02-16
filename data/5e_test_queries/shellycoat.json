@@ -1,0 +1,25 @@
+{
+    "name": "Shellycoat",
+    "queries": [
+        {
+            "query": "water-loving fey creature that can regenerate",
+            "variant": "fey creature that loves water and has regeneration"
+        },
+        {
+            "query": "Medium-sized monster that can breathe both air and water",
+            "variant": "creature that is Medium and breathes air and water"
+        },
+        {
+            "query": "creature with sunlight weakness and good stealth skills",
+            "variant": "monster that has a weakness to sunlight and excels in stealth"
+        },
+        {
+            "query": "neutral evil fey that becomes petrified in sunlight",
+            "variant": "fey monster that is neutral evil and turns to stone in sunlight"
+        },
+        {
+            "query": "stealthy creature found in water with combat abilities",
+            "variant": "combat-capable creature that is stealthy and lives in water"
+        }
+    ]
+}

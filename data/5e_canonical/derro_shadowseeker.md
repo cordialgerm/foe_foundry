@@ -1,6 +1,8 @@
 <MonsterName/>Derro Shadowseeker</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (studded leather)</AC>
+<HP/>112</HP>
 <summary>The Derro Shadowseeker is a small humanoid creature that embodies chaotic evil, adept in stealth and unpredictable movements. With a notable armor class of 17, it is quite resilient in combat, boasting a substantial pool of hit points totaling 112. This creature can be a formidable opponent due to its dexterous nature, featuring an exceptional Dexterity score of 20 which translates to a +5 modifier. Shadowseekers excel in agility and evasion, making them challenging targets in battle, but they are weakened by exposure to sunlight, suffering from disadvantage on attacks and Wisdom checks that require sight. Their ability to use the environment to their advantage, along with a potent sneak attack feature, makes them excellent ambushers and skirmishers on the battlefield.</summary>
 
 <detail>
@@ -32,6 +34,7 @@ Overall, the Derro Shadowseeker is a well-rounded adversary in combat, thriving 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Derro Shadowseeker
 
 *Small* *Humanoid* *chaotic evil*
@@ -67,5 +70,6 @@ Source: 5e_artisinal_monsters
 - **Maddening Convulsions (Recharge 5-6):** The shadowseeker’s body contorts and spasms in bizarre ways, confounding other creatures. Each non-derro creature within 5 feet of the shadowseeker that can see it must succeed on a DC 15 Wisdom saving throw or be affected as if by a confusion spell for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the shadowseeker’s Maddening Convulsions for the next 24 hours.
 
 
+</statblock>
 
 

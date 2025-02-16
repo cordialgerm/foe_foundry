@@ -1,0 +1,25 @@
+{
+    "name": "Vines of Nemthyr",
+    "queries": [
+        {
+            "query": "large plant creature that uses poison and grapples enemies",
+            "variant": "big plant monster that grapples foes and uses poison"
+        },
+        {
+            "query": "monster that can separate into vines and looks like a normal plant",
+            "variant": "creature that can split into vines and appears as a common plant"
+        },
+        {
+            "query": "melee-focused plant that has high strength and can burrow",
+            "variant": "strong plant creature that can dig and fights in melee"
+        },
+        {
+            "query": "creature that ambushes using false appearance and has a thorny lash",
+            "variant": "monster that hides as a regular plant and attacks with thorny whip"
+        },
+        {
+            "query": "plant monster with magic resistance and poison damage immunity",
+            "variant": "plant creature resistant to magic and immune to poison damage"
+        }
+    ]
+}

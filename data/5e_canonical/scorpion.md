@@ -1,6 +1,8 @@
 <MonsterName/>Scorpion</MonsterName>
 <CreatureType/>Beast</CreatureType>
-
+<CR/>0</CR>
+<AC/>11 (natural armor)</AC>
+<HP/>1</HP>
 <summary>A Scorpion is a small, predatory arachnid known for its pincers and venomous stinger. Found in deserts and arid environments, scorpions are stealthy hunters, using their pincers to capture prey and their stinger to inject venom. While individually not dangerous to most adventurers, their venom can be deadly to small creatures, and their ability to blend into their surroundings makes them difficult to spot. Larger versions of scorpions, such as Giant Scorpions, pose significant threats to anyone entering their territory, capable of delivering powerful, venomous strikes.</summary>
 
 <summary>The Scorpion is a tiny beast that presents a minor but intriguing presence in the game. With its low armor class and hit points, it is not a formidable opponent. Instead, its role leans towards a nuisance, potentially swarming players or serving as a low-risk challenge for inexperienced adventurers. The creature has strengths in its ability to apply poison damage, but its overall combat effectiveness is limited due to poor physical attributes and low hit points. Notably, the Scorpion can deliver a sting that inflicts not only piercing damage but also a potential poison effect that can hinder foes.</summary>
@@ -19,6 +21,7 @@ For actions, the Scorpion has a singular attack option called "Sting." This is a
 
 Source: 5e_srd
 
+<statblock>
 ### Scorpion
 
 *Tiny beast, unaligned*
@@ -41,7 +44,8 @@ Source: 5e_srd
 
 ###### Actions
 
-***Sting***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.
+***Sting***. *Melee Weapon Attack:* +2 to hit, reach 5 ft., one creature. *Hit:* 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.</statblock>
+
 
 
 
@@ -49,6 +53,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Scorpion
 
 *Tiny* *Beast*
@@ -72,5 +77,6 @@ Source: 5e_artisinal_monsters
 - **Sting:** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage and the target makes a DC 9 Constitution save  taking 4 (1d8) poison damage on a failure or half damage on a success.
 
 
+</statblock>
 
 

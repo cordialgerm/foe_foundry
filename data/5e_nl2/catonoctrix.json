@@ -1,0 +1,54 @@
+{
+    "name": "Catonoctrix",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Large",
+    "hp": 168,
+    "ac": 18,
+    "srd": false,
+    "cr": "10",
+    "movement": "40 ft. walking speed and 80 ft. flying speed",
+    "role": "Bruiser",
+    "tags": [
+        "psychic",
+        "aberration",
+        "mind manipulator",
+        "flying"
+    ],
+    "adjectives": [
+        "formidable",
+        "deceptive",
+        "powerful",
+        "quick"
+    ],
+    "description": "The Catonoctrix is a Large aberration with formidable mobility, sporting natural armor and capable of both flying and walking at impressive speeds. It has notable fit features such as an acute sense of danger and the ability to manipulate minds.",
+    "memorable": "Psychic immunity and the ability to stun foes with powerful psychic attacks make it a unique and formidable opponent.",
+    "goals": "To extract secrets and manipulate the minds of creatures it encounters.",
+    "relations": "It may interact with other aberrations or serve as a master to lesser creatures in its domain.",
+    "environment": "Typically found in dark, secluded areas where it can use its psychic abilities to dominate its surroundings.",
+    "strengths": "High mobility, psychic immunity, and capabilities for mind manipulation.",
+    "weaknesses": "Average perceptive skills, making it vulnerable to clever traps and ambushes.",
+    "attacks": "Strong melee attacks through bite and claw, alongside versatile psychic bolt ranged attacks.",
+    "most_powerful_ability": "Mind Ravage unleashes devastating psychic damage and stuns affected creatures in a wide radius.",
+    "equipment": null,
+    "senses": "It has darkvision up to 120 feet and truesight up to 30 feet, enabling it to see through illusions and darkness.",
+    "skills": "Has proficiency in Constitution and Charisma saving throws, showcasing its resilience against mental and physical attacks.",
+    "additional_information": [
+        "Can communicate through telepathy within 120 feet.",
+        "Uses 'Pierce the Veil' to learn secrets from stunned creatures.",
+        "Possesses a reaction ability, 'Precognitive Dodge', to enhance its defenses.",
+        "Employs a combination of physical and psychic attacks to overpower foes.",
+        "Able to cast psionic spells without the need for components."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": "Can cast 'Detect Thoughts' at will, and once per day spells like 'Confusion', 'Scrying', and 'Suggestion'.",
+    "test_queries": [
+        "large flying psychic monster with high mobility",
+        "aberration that manipulates minds and extracts secrets",
+        "psychic damage dealer with stunning abilities",
+        "formidable creature with both physical and psychic attacks",
+        "quick evil monster that communicates through telepathy"
+    ]
+}

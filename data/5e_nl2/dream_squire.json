@@ -1,0 +1,53 @@
+{
+    "name": "Dream Squire",
+    "creature_type": "Fey",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 15,
+    "srd": false,
+    "cr": "2",
+    "movement": "walk 30 ft.",
+    "role": "Defender",
+    "tags": [
+        "fey",
+        "protector",
+        "servant",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "loyal",
+        "devoted",
+        "psychic"
+    ],
+    "description": "The Dream Squire is a humanoid fey creature clad in a chain shirt, reflecting its role as a defender. It appears with a protective demeanor and exhibits physical prowess.",
+    "memorable": "The squire's ability to teleport and absorb damage for its master makes it a formidable protector in combat.",
+    "goals": "The Dream Squire serves to protect and obey its master, following commands diligently.",
+    "relations": "It may serve powerful fey creatures or be bound to adventurers seeking defense.",
+    "environment": "Often found in fey realms or amidst magical backdrops.",
+    "strengths": "Advantage on saving throws against being charmed or frightened, and special abilities enhancing defensive capabilities.",
+    "weaknesses": "A low Charisma score affects social interactions, and its bond can be disrupted by magical effects.",
+    "attacks": "Utilizes a mace for melee attacks and a light crossbow for ranged attacks, dealing bludgeoning and psychic damage.",
+    "most_powerful_ability": "For the Master allows it to teleport and shield its master from attacks, absorbing damage.",
+    "equipment": null,
+    "senses": "Equipped with darkvision that allows it to see in darkness up to 60 feet.",
+    "skills": "Proficient in athletics and perception, making it adept at physical feats and noticing details in its environment.",
+    "additional_information": [
+        "Immune to exhaustion.",
+        "Has a telepathic link with its master.",
+        "Can repeat saving throws against harmful actions towards its master.",
+        "Disadvantage on attack rolls against its master reflects its devoted nature.",
+        "Can revert to a different form if its bond is broken."
+    ],
+    "damage_types": [
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fey creature devoted to protection",
+        "monster that can teleport to master",
+        "creature with psychic damage abilities",
+        "servant creature with strong defense",
+        "defender that absorbs damage for others"
+    ]
+}

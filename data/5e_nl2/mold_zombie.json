@@ -1,0 +1,53 @@
+{
+    "name": "Mold Zombie",
+    "creature_type": "Undead",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 75,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 20 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "undead",
+        "disease",
+        "bludgeoning",
+        "necrotic"
+    ],
+    "adjectives": [
+        "decaying",
+        "disease-spreading",
+        "chaotic"
+    ],
+    "description": "The Mold Zombie is a decaying figure draped in fungal growths, exuding a foul odor. Its skin is rotting, and it is often surrounded by clouds of spores.",
+    "memorable": "Its ability to explode in spores upon death and spread disease makes it particularly terrifying.",
+    "goals": "To spread disease and chaos, utilizing its necrotic energy to weaken foes.",
+    "relations": "Often found alongside other undead creatures or in places of decay and rot.",
+    "environment": "Grim environments, particularly places plagued by death or disease.",
+    "strengths": "Immunities to necrotic and poison damage; strong Constitution enhances survivability.",
+    "weaknesses": "Very low Dexterity makes it slow and vulnerable to ranged attacks.",
+    "attacks": "It can deliver two slam attacks dealing both bludgeoning and necrotic damage, alongside a powerful area effect with its Plague Breath.",
+    "most_powerful_ability": "Spore Death - explodes in a cloud of spores upon being reduced to 0 hit points, potentially damaging and infecting nearby creatures.",
+    "senses": "Has darkvision up to 60 feet.",
+    "skills": "No noteworthy skill proficiencies.",
+    "additional_information": [
+        "Resistant to exhaustion and poisoned conditions.",
+        "Uses Bludgeoning and Necrotic damage in attacks.",
+        "Can become even more threatening by spreading iumenta pox disease.",
+        "Undead Fortitude allows it to potentially survive lethal damage.",
+        "Chaotic evil intentions drive its aggressive behavior."
+    ],
+    "damage_types": [
+        "necrotic",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "decaying zombie that spreads disease",
+        "undead creature with spore death ability",
+        "chaotic evil mold-covered zombie",
+        "zombie that explodes and infects nearby foes",
+        "slow but resilient undead in grim places"
+    ]
+}

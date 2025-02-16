@@ -1,0 +1,25 @@
+{
+    "name": "Chameleon Hydra",
+    "queries": [
+        {
+            "query": "large mult-headed monster that can regenerate and camouflage itself",
+            "variant": "big multiple head monster that can hide and regrow heads"
+        },
+        {
+            "query": "massive hydra creature known for stealth and fire vulnerability",
+            "variant": "huge hydra beast famous for camouflage and weakness to fire"
+        },
+        {
+            "query": "monster with sticky tongue and multiple heads that lives in forests",
+            "variant": "creature with a grasping tongue and several heads that dwells in woods"
+        },
+        {
+            "query": "hydra with five heads that can ambush enemies and has high hit points",
+            "variant": "five-headed hydra that can surprise foes and has a lot of health"
+        },
+        {
+            "query": "dangerous hydra that fights with bite attacks and can regenerate",
+            "variant": "scary hydra that attacks with its bites and is capable of regrowth"
+        }
+    ]
+}

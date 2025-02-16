@@ -1,0 +1,52 @@
+{
+    "name": "Fire Elemental",
+    "creature_type": "Elemental",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 102,
+    "ac": 13,
+    "srd": true,
+    "cr": "5",
+    "movement": "50 ft. movement allows fast approach to enemies",
+    "role": null,
+    "tags": [
+        "fire",
+        "elemental",
+        "chaotic"
+    ],
+    "adjectives": [
+        "fiery",
+        "destructive",
+        "mobile"
+    ],
+    "description": "A living, ever-burning mass of flame, constantly flickering and shifting in form. Its body is composed entirely of fire and can move through spaces as narrow as one inch without squeezing.",
+    "memorable": "Ignites everything it touches and can continuously damage foes nearby with its Fiery Aura.",
+    "goals": "To wreak havoc and destruction, often summoned by powerful spellcasters.",
+    "relations": "Commonly summoned by powerful sorcerers or mages.",
+    "environment": "Typically found in hot environments or as summoned creatures from the Elemental Plane of Fire.",
+    "strengths": "Immune to fire and poison damage; possesses high mobility and area damage abilities.",
+    "weaknesses": "Vulnerable to cold damage; takes damage if submerged in water.",
+    "attacks": "Multiattack with two slam attacks that deal fire damage and can ignite targets; also has powerful ranged fire attacks.",
+    "most_powerful_ability": "Fiery Aura that damages nearby creatures and causes ongoing fire damage to those it ignites.",
+    "equipment": null,
+    "senses": null,
+    "skills": null,
+    "additional_information": [
+        "Elemental Nature allows it to exist without air, food, or sleep.",
+        "Elements of stealth with Fire Camouflage in large flames.",
+        "Can shed bright light in a 30-foot radius.",
+        "Fast-moving entity with potential for surprise attacks.",
+        "Can navigate through enemy spaces without provoking attacks."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "living mass of flames",
+        "mobile creature that ignites foes",
+        "summoned fire monster with aura",
+        "dangerous fire elemental with vulnerabilities",
+        "destructive entity from Elemental Plane of Fire"
+    ]
+}

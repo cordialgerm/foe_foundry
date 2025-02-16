@@ -1,0 +1,55 @@
+{
+    "name": "Cave Troll",
+    "creature_type": "Giant",
+    "alignment": "null",
+    "size": "Large",
+    "hp": 84,
+    "ac": 18,
+    "srd": false,
+    "cr": "6",
+    "movement": "walks at 40 feet speed",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "troll",
+        "cavern",
+        "ambush"
+    ],
+    "adjectives": [
+        "formidable",
+        "resilient",
+        "strong"
+    ],
+    "description": "The Cave Troll is a large, hulking giant known for its immense strength and resilience. It has a solid build, with an appearance characteristic of trolls: greenish skin and a brutish physique.",
+    "memorable": "Cave Trolls can regenerate health and control their severed limbs, making them persistent threats even when injured.",
+    "goals": "The Cave Troll typically seeks to dominate its territory and ambush unsuspecting adventurers.",
+    "relations": "Cave Trolls may be encountered alongside other cave-dwelling creatures or as guardians of underground lairs.",
+    "environment": "Cave Trolls are often found in dark, damp caves or subterranean environments.",
+    "strengths": "High Constitution grants exceptional resilience; possesses the ability to regenerate health.",
+    "weaknesses": "Weakness to radiant damage and sunlight disables its regeneration.",
+    "attacks": "The troll uses powerful melee attacks with its bite and claws and can hurl rocks effectively.",
+    "most_powerful_ability": "Regeneration allows it to recover 10 hit points at the start of its turn, unless affected by radiant damage.",
+    "equipment": "null",
+    "senses": "The Cave Troll has blindsight within 120 feet, enabling it to sense creatures without sight.",
+    "skills": "The troll is skilled in Stealth, making it effective for ambush tactics.",
+    "additional_information": [
+        "Keen Smell grants advantage on Perception checks based on smell.",
+        "Severed Limbs ability allows it to control lost body parts in combat.",
+        "Average Dexterity allows it some ability to dodge attacks.",
+        "Possesses heavy melee damage output with multiple attack options.",
+        "Low Intelligence and Charisma reduce its effectiveness in social situations."
+    ],
+    "damage_types": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large troll that regenerates health",
+        "cavern creature with severed limbs ability",
+        "strong giant known for ambush tactics",
+        "brutish green giant with keen smell",
+        "troll that can control severed arms"
+    ]
+}

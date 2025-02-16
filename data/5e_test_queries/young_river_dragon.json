@@ -1,0 +1,25 @@
+{
+    "name": "Young River Dragon",
+    "queries": [
+        {
+            "query": "large dragon that breathes in water and air",
+            "variant": "big dragon that can breathe water and air"
+        },
+        {
+            "query": "aquatic dragon that uses water attacks",
+            "variant": "water dragon that attacks using water"
+        },
+        {
+            "query": "dragon with good agility that lives near rivers",
+            "variant": "dragon living by rivers with great agility"
+        },
+        {
+            "query": "dragon that has essence link and can cast spells",
+            "variant": "dragon that can cast spells and has a link to its essence"
+        },
+        {
+            "query": "mobile dragon that resists nonmagical damage and thrives in water",
+            "variant": "agile dragon resistant to nonmagical damage and loves water"
+        }
+    ]
+}

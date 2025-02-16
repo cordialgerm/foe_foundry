@@ -1,0 +1,25 @@
+{
+    "name": "Killer Whale",
+    "queries": [
+        {
+            "query": "massive black-and-white ocean predator that can hold its breath",
+            "variant": "huge black and white sea predator that can hold its breath"
+        },
+        {
+            "query": "intelligent aquatic creature that hunts in pods and uses echolocation",
+            "variant": "smart ocean creature that hunts in groups and can use echolocation"
+        },
+        {
+            "query": "powerful bite attack from a marine beast that grapples prey",
+            "variant": "strong biting attack from a sea beast that can grapple targets"
+        },
+        {
+            "query": "social creature found in oceans with keen hearing abilities",
+            "variant": "sociable species found in the sea with heightened hearing skills"
+        },
+        {
+            "query": "Huge sea creature with natural armor and significant hit points",
+            "variant": "large ocean animal with natural defense and high health points"
+        }
+    ]
+}

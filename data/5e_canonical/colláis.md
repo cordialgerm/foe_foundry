@@ -1,6 +1,8 @@
 <MonsterName/>Colláis</MonsterName>
 <CreatureType/>Monstrosity</CreatureType>
-
+<CR/>10</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>150</HP>
 <summary>The Colláis is a large monstrosity that embodies a fierce and imposing presence in any encounter. It possesses a good Armor Class of 16 due to its natural armor, and with 150 hit points, it can sustain a fair amount of damage in battle, making it a durable opponent. Its challenge rating of 10 reflects the considerable power it wields, posing a serious threat to adventurers who might underestimate it. The creature is neutral in alignment and utilizes a combination of brute strength and magical resilience to dominate its foes. The Colláis's strengths lie in its formidable melee attacks and its ability to control the battlefield, while its weaknesses include a limited range of defenses against magic. Notably, it can throw enemies away with its Impale and Toss ability, which can disrupt enemy formations and strategies.</summary>
 
 <detail>
@@ -21,6 +23,7 @@ In summary, the Colláis is a powerful monstrosity that leverages its physical s
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Colláis
 
 *Large* *Monstrosity* *neutral*
@@ -55,5 +58,6 @@ Source: 5e_artisinal_monsters
 - **Cry of the Forest:** The colláis sounds a dreadful and reverberating call. Each creature within 100 feet of the colláis that can hear the cry must succeed on a DC 16 Charisma saving throw or be frightened until the end of its next turn. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the colláis’s Cry of the Forest for the next 24 hours. Forest-dwelling beasts and monstrosities with an Intelligence of 4 or lower automatically succeed or fail on this saving throw, the colláis’s choice.
 
 
+</statblock>
 
 

@@ -1,0 +1,49 @@
+{
+    "name": "Astral Snapper",
+    "creature_type": "Aberration",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 12,
+    "srd": false,
+    "cr": "3",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "aberration",
+        "evil",
+        "host invader"
+    ],
+    "adjectives": [
+        "menacing",
+        "deceptive",
+        "voracious"
+    ],
+    "description": "The Astral Snapper is a Medium Aberration known for invading the bodies of other creatures. It features a unique appearance reminiscent of a grotesque fusion of otherworldly traits, capable of menacing combat with sharp claws.",
+    "memorable": "Its ability to consume and reduce the host's Constitution score, potentially causing death, makes the Astral Snapper a terrifying adversary.",
+    "goals": "To invade hosts and gain power from them while posing a threat in combat.",
+    "relations": "It may be related to other aberrant creatures that have similar body invasion abilities.",
+    "environment": "Typically found in areas where the boundary between the material and astral planes is thin.",
+    "strengths": "High Dexterity and Wisdom scores make it agile and perceptive in combat.",
+    "weaknesses": "Low Charisma indicates it may struggle in social interactions and persuasion.",
+    "attacks": "Uses claw strikes for melee attacks, with a risk of creating rifts to the Astral Plane.",
+    "most_powerful_ability": "Astral Devour allows it to consume part of a host's internal organs, potentially leading to the host's death.",
+    "senses": "Possesses darkvision and has a passive perception score of 15, indicating keen awareness.",
+    "skills": "Proficient in arcana, perception, stealth, and Constitution saving throws; however, it has low effectiveness in deception.",
+    "additional_information": [
+        "Resistant to bludgeoning and slashing damage from nonmagical attacks.",
+        "Multiattack capability allows it to strike twice, increasing its threat level.",
+        "When it devours a host, it dramatically exits through the abdomen, creating a shocking visual.",
+        "It can be seen in the Astral Plane while it is inside the host.",
+        "Stunned state when invading a host until it takes damage."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "body invading monster",
+        "voracious aberration",
+        "creature that reduces host health",
+        "Astral Plane rift monster",
+        "horror creature with claws"
+    ]
+}

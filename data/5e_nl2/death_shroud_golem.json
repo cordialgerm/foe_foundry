@@ -1,0 +1,53 @@
+{
+    "name": "Death Shroud Golem",
+    "creature_type": "Construct",
+    "alignment": "unaligned",
+    "size": "Large",
+    "hp": 95,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "fly 40 ft., walk 10 ft.",
+    "role": null,
+    "tags": [
+        "golem",
+        "construct",
+        "magical threats"
+    ],
+    "adjectives": [
+        "formidable",
+        "grappling",
+        "stealthy"
+    ],
+    "description": "A large golem that resembles a piece of fabric, often indistinguishable from a shroud, designed for grappling and restraining foes.",
+    "memorable": "Its ability to camouflage itself as fabric and grapple opponents makes it a unique threat on the battlefield.",
+    "goals": "To ambush and restrain enemies, using its grappling abilities to manipulate them in combat.",
+    "relations": "May be created by powerful spellcasters or ancient beings.",
+    "environment": "Typically found in abandoned ruins or areas of magical significance.",
+    "strengths": "Immunities to various conditions and damage types make it difficult to defeat with conventional attacks.",
+    "weaknesses": "Vulnerable to magical effects that can bypass its defenses.",
+    "attacks": "Uses a 'Smothering Slam' to grapple and restrain opponents, delivering bludgeoning damage while incapacitating them.",
+    "most_powerful_ability": "Its 'False Appearance' allows it to disguise itself, setting up ambushes against unsuspecting foes.",
+    "equipment": null,
+    "senses": "The golem has darkvision up to 60 feet, allowing it to see in dim light as if it were bright light.",
+    "skills": "Proficient in stealth, allowing it to remain hidden until it attacks.",
+    "additional_information": [
+        "Can manipulate grappled creatures to attack their allies.",
+        "Has advantage on saving throws against spells due to magic resistance.",
+        "Immunity to spells that alter its form due to immutable form."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic",
+        "cold",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "golem that disguises as fabric and grapples",
+        "large construct with magical attacks and stealth",
+        "Death Shroud Golem flying and ambushing",
+        "grappling golem with various immunities",
+        "creature that manipulates enemies using magic weapons"
+    ]
+}

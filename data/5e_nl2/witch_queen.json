@@ -1,0 +1,50 @@
+{
+    "name": "Witch Queen",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Small",
+    "hp": 77,
+    "ac": 15,
+    "srd": false,
+    "cr": "5",
+    "movement": "walk 30 ft.",
+    "role": "null",
+    "tags": [
+        "spellcaster",
+        "deceiver",
+        "chaotic"
+    ],
+    "adjectives": [
+        "small",
+        "cunning",
+        "chaotic"
+    ],
+    "description": "The Witch Queen is a small humanoid embodying chaotic evil, armed with a maddening scimitar and clad in studded leather armor.",
+    "memorable": "She manipulates her foes through her spells and has a clever, devious combat style.",
+    "goals": "To dominate through magic and cunning, instilling fear and controlling others.",
+    "relations": "May serve dark entities or be involved with other chaotic beings.",
+    "environment": "Typically found in dark, secluded areas, away from sunlight.",
+    "strengths": "High Dexterity and Charisma enhance her agility and spellcasting capabilities.",
+    "weaknesses": "Low Strength and Wisdom limit her physical prowess and perception.",
+    "attacks": "Maddening Scimitar that can manipulate foes into attacking each other.",
+    "most_powerful_ability": "Heightened Spell, allowing her to gain advantage on spellcasting.",
+    "equipment": "studded leather armor, maddening scimitar",
+    "senses": "Darkvision up to 120 feet, but has low passive perception.",
+    "skills": "Proficient in arcana and stealth, showcasing her magical knowledge and elusiveness.",
+    "additional_information": [
+        "Has sunlight sensitivity, affecting combat in bright light.",
+        "Capable of casting a variety of spells to control and harm enemies.",
+        "Can impose disadvantage on foes to enhance her spells' effectiveness.",
+        "Resistant to magical attacks due to magic resistance.",
+        "Her spells allow for crowd control and area damage."
+    ],
+    "damage_types": [],
+    "spellcasting": "8th-level spellcaster; spells include blight, lightning bolt, and invisibility.",
+    "test_queries": [
+        "small cunning spellcaster with dark vision",
+        "chaotic evil magic user with sunlight weakness",
+        "Witch Queen's maddening scimitar abilities",
+        "spellcasting combatant with high Dexterity",
+        "manipulative witch queen using spells and deception"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Infernal Knight",
+    "creature_type": "Fiend",
+    "alignment": "lawful evil",
+    "size": "Medium",
+    "hp": 247,
+    "ac": 18,
+    "srd": false,
+    "cr": "16",
+    "movement": "fly 60 ft., walk 30 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "fiend",
+        "lawful evil",
+        "knight",
+        "soul-capturing"
+    ],
+    "adjectives": [
+        "formidable",
+        "relentless",
+        "magical"
+    ],
+    "description": "The Infernal Knight is a tall fiend clad in dark plate armor, wielding a greatsword adorned with runes that hint at its necrotic powers. Its presence exudes an aura of chaos and menace on the battlefield.",
+    "memorable": "The ability to capture souls and regenerate health makes it a substantial threat, allowing it to weaken foes and prolong its life in combat.",
+    "goals": "To hunt down its quarry, serve its lord, and dominate the battlefield through fear and power.",
+    "relations": "Likely serves other powerful fiends or dark lords, and may encounter other fiends or adventurers drawn to its malicious nature.",
+    "environment": "Often found in dark, infernal realms or on battlefields where evil forces clash.",
+    "strengths": "High hit points, magical attacks, regeneration, and strong resistance to various damage types.",
+    "weaknesses": "Average Dexterity, which may hinder its mobility or evade attacks.",
+    "attacks": "Utilizes a magical greatsword that deals slashing and necrotic damage, as well as a ranged Hellfire Bolt attack combining fire and necrotic damage.",
+    "most_powerful_ability": "The Reave Soul ability allows it to execute foes with 0 hit points and capture their souls for healing and power.",
+    "equipment": "Greatsword with necrotic power.",
+    "senses": "Possesses truesight out to 60 feet and a passive perception of 20, allowing it to detect hidden or invisible foes.",
+    "skills": "Skilled in Athletics, Insight, and Perception, providing it with advantages in physical challenges and awareness.",
+    "additional_information": [
+        "Immune to fire, necrotic, and poison damage.",
+        "Resistant to cold and non-magical physical damage.",
+        "Can regenerate health at the start of each turn.",
+        "Has advantage on saving throws against spells due to Magic Resistance.",
+        "Can create a portal to other planes with Planar Rift ability."
+    ],
+    "damage_types": [
+        "fire",
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "fiend that captures souls and regenerates",
+        "formidable knight with magic powers",
+        "dark knight with necrotic abilities",
+        "relentless fiend that flies and hunts",
+        "lawful evil fiend from other planes"
+    ]
+}

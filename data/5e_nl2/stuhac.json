@@ -1,0 +1,53 @@
+{
+    "name": "Stuhac",
+    "creature_type": "Fiend",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 209,
+    "ac": 18,
+    "srd": false,
+    "cr": "13",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "combat",
+        "deception"
+    ],
+    "adjectives": [
+        "formidable",
+        "stealthy",
+        "manipulative"
+    ],
+    "description": "The Stuhac is a medium-sized fiend with a natural armor that allows it to effectively protect itself in combat. It has impressive physical attributes, particularly strength and constitution, showcasing its capabilities as a tough opponent.",
+    "memorable": "The Stuhac can disguise itself and manipulate opponents telekinetically, making it a strategic threat.",
+    "goals": "It seeks to deceive, manipulate, and outmaneuver its foes in battle.",
+    "relations": "It may be encountered alongside other fiends or as a subordinate to more powerful fiendish beings.",
+    "environment": "Rocky terrains or areas where it can blend in with surroundings.",
+    "strengths": "Strong combat abilities with high damage output and several immunities to cold and poison.",
+    "weaknesses": "Vulnerable to magical attacks that deal nonmagical bludgeoning or piercing damage.",
+    "attacks": "Multiattack includes a bite attack dealing piercing damage and two claw attacks dealing slashing damage.",
+    "most_powerful_ability": "The Hobble action allows it to inflict force damage and impair target movement effectively.",
+    "equipment": null,
+    "senses": null,
+    "skills": "Skilled in deception, making it adept in manipulation and trickery.",
+    "additional_information": [
+        "Immunities to cold, poison, and the poisoned condition.",
+        "Can move easily across rocky surfaces due to Mountain Walk ability.",
+        "Standing Leap ability enhances its mobility in a variety of terrains.",
+        "Has strong saving throw proficiencies across multiple attributes.",
+        "Can communicate telepathically within a range of 120 feet."
+    ],
+    "damage_types": [
+        "cold",
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "medium fiend with strong deception skills",
+        "combat monster that manipulates its foes",
+        "stealthy fiend that moves easily over rocks",
+        "fiend with telekinetic abilities and deadly attacks",
+        "strong monster with resistances and immunities"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Flame Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Chaotic Evil",
+    "size": "Gargantuan",
+    "hp": 518,
+    "ac": 22,
+    "srd": false,
+    "cr": "23",
+    "movement": "walk 80 ft., fly 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "dragon",
+        "fire",
+        "gargantuan"
+    ],
+    "adjectives": [
+        "formidable",
+        "chaotic",
+        "tenacious"
+    ],
+    "description": "The Ancient Flame Dragon is a colossal beast with imposing size and fiery characteristics, showcasing scales that shimmer with the heat of fire. It exudes an aura of chaos and power, marked by sharp claws and a menacing presence.",
+    "memorable": "This dragon commands fear through its devastating fire breath and ability to instill terror with its frightening presence, while its fire immunity and unique abilities make it an exceptionally durable foe.",
+    "goals": "To dominate its territory and instill fear in all who dare to approach, using its fire-based powers to wreak havoc.",
+    "relations": "Often associated with other dragons or fire elemental creatures, and may serve as a master to lesser flame creatures.",
+    "environment": "Commonly found in volcanic regions, mountainous areas, or lairs infused with elemental fire.",
+    "strengths": "Immunity to fire damage, high Constitution and Charisma scores enhancing its durability and presence.",
+    "weaknesses": "Its size may impede agility in certain environments, making it vulnerable to clever tactics.",
+    "attacks": "Can perform devastating multiattacks with its bite, claw, and tail, along with a frightful presence that terrifies foes.",
+    "most_powerful_ability": "Fire Breath allows the dragon to unleash a massive fire cone that deals significant damage and can cause rampaging behavior in affected creatures.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and an impressive passive perception score of 27.",
+    "skills": "Proficient in Deception, Perception, Persuasion, and Stealth, enabling effective manipulation of encounters.",
+    "additional_information": [
+        "Fire Incarnate ability negates resistance against its fire attacks.",
+        "Heated Body inflicts fire damage on melee attackers.",
+        "Legendary Resistance allows it to automatically succeed on failed saving throws.",
+        "Can transform into a fire-based elemental with Shifting Flames.",
+        "Utilizes legendary actions to enhance combat versatility."
+    ],
+    "damage_types": [
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan dragon",
+        "fire-breathing dragon",
+        "ancient fire dragon",
+        "chaotic evil dragon",
+        "fire elemental dragon"
+    ]
+}

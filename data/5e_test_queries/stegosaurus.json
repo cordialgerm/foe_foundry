@@ -1,0 +1,25 @@
+{
+    "name": "Stegosaurus",
+    "queries": [
+        {
+            "query": "huge dinosaur with a powerful tail attack and good defense",
+            "variant": "dinosaur-like huge creature with strong tail attack and good armor"
+        },
+        {
+            "query": "massive beast that can knock down larger creatures and has high strength",
+            "variant": "big beast that knocks down Large creatures and has strong melee attacks"
+        },
+        {
+            "query": "tough dinosaur that struggles with intelligence and charisma in combat conditions",
+            "variant": "strong dinosaur that is not smart or charismatic during fights"
+        },
+        {
+            "query": "beast with 63 hit points and an armor class of 16 that walks 30 feet",
+            "variant": "creature with 63 HP and AC 16 that has a movement speed of 30 feet"
+        },
+        {
+            "query": "creature known for its durability and significant size but poor social skills",
+            "variant": "animal recognized for being durable and large but bad at social interaction"
+        }
+    ]
+}

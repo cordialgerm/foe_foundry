@@ -1,0 +1,52 @@
+{
+    "name": "Alabaster Tree",
+    "creature_type": "Celestial",
+    "alignment": "neutral good",
+    "size": "Huge",
+    "hp": 105,
+    "ac": 18,
+    "srd": false,
+    "cr": "7",
+    "movement": "walk 10 ft., can move faster with abilities",
+    "role": "Defender",
+    "tags": [
+        "guardian",
+        "nature",
+        "celestial"
+    ],
+    "adjectives": [
+        "formidable",
+        "protective",
+        "powerful"
+    ],
+    "description": "The Alabaster Tree is a large, celestial creature with an impressive presence, resembling a tree with razor-sharp leaves, embodying the essence of good and nature.",
+    "memorable": "Its ability to move quickly while leaving difficult terrain and its unique abilities to protect allies and hinder foes makes it a powerful battlefield presence.",
+    "goals": "To serve as a guardian of nature and protect those who are good-aligned.",
+    "relations": "It may ally with druids, fey creatures, or other celestial beings.",
+    "environment": "Typically found in lush forests or areas of great natural beauty.",
+    "strengths": "High Armor Class, exceptional physical strength, can bolster allies, and has multiple environmental control abilities.",
+    "weaknesses": "Vulnerable to magical damage, with no resistances against it.",
+    "attacks": "Utilizes powerful slam attacks that deal both bludgeoning and radiant damage, with abilities to grapple and throw opponents.",
+    "most_powerful_ability": "Churning Advance allows it to move rapidly while creating difficult terrain that disrupts enemy movement.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures without relying on sight.",
+    "skills": "Has proficient perception skills, allowing it to effectively sense threats.",
+    "additional_information": [
+        "Immunities to radiant damage and the stunned condition.",
+        "Can enhance the survivability of good-aligned creatures nearby.",
+        "Ability to identify creature alignments within range.",
+        "Unique forms allowing different abilities such as Cloud of Needles and Serrated Squeeze.",
+        "Supports allies by ensuring they regain the benefits of a long rest."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "celestial tree guardian",
+        "nature protector celestial",
+        "powerful forest creature",
+        "defender with radiant abilities",
+        "huge tree-like celestial being"
+    ]
+}

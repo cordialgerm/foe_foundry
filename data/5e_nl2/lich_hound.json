@@ -1,0 +1,50 @@
+{
+    "name": "Lich Hound",
+    "creature_type": "Undead",
+    "alignment": "Neutral Evil",
+    "size": "Medium",
+    "hp": 85,
+    "ac": 14,
+    "srd": false,
+    "cr": "4",
+    "movement": "walking speed of 50 feet and flying speed of 30 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "aberration",
+        "horror"
+    ],
+    "adjectives": [
+        "fast",
+        "tactical",
+        "relentless",
+        "frightening"
+    ],
+    "description": "The Lich Hound is a medium-sized undead creature embodying the essence of fear and death, with a menacing aura and formidable presence.",
+    "memorable": "Its ability to instill fear and track living creatures make it a terrifying predator on the battlefield.",
+    "goals": "To hunt down living creatures and spread terror among its enemies.",
+    "relations": "It might be allied with other undead creatures or serve a powerful lich.",
+    "environment": "Commonly found in graveyards, ruins, or areas infused with necrotic energy.",
+    "strengths": "High Dexterity and Constitution scores enhance its agility and endurance in combat.",
+    "weaknesses": "Very low Intelligence, which may limit its tactical options in certain scenarios.",
+    "attacks": "Uses a Multiattack to unleash an Eerie Howl followed by vicious Bite attacks, which can knock foes prone.",
+    "most_powerful_ability": "The Eerie Howl can frighten multiple creatures, significantly disrupting their actions.",
+    "senses": "Has blindsight up to 60 feet, enhancing its ability to detect hidden prey.",
+    "skills": "Excels in Acrobatics and has a good Perception score, making it difficult to sneak past.",
+    "additional_information": [
+        "Immune to poison and exhausted conditions.",
+        "Resistant to slashing and piercing damage from nonmagical sources.",
+        "Does not require air, food, drink, or sleep due to its undead nature.",
+        "Can pinpoint the location of living creatures using Blood Sense.",
+        "Can shift between the Material Plane and the Ethereal Plane."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "undead monster that tracks living beings",
+        "creature that frightens with eerie howls",
+        "swift predator of the undead variety",
+        "monster that can shift to the ethereal plane",
+        "fast hound that embodies fear and death"
+    ]
+}

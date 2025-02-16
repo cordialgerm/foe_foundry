@@ -1,0 +1,52 @@
+{
+    "name": "Young Cave Dragon",
+    "creature_type": "Dragon",
+    "alignment": "Neutral Evil",
+    "size": "Large",
+    "hp": 189,
+    "ac": 17,
+    "srd": false,
+    "cr": "9",
+    "movement": "walk 20 ft., fly 20 ft., burrow 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "dragon",
+        "cave",
+        "poison"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "predatory"
+    ],
+    "description": "The Young Cave Dragon has a robust build with spikes along its body, embodying the classic traits of dragonkind with a connection to subterranean landscapes.",
+    "memorable": "Its ability to envelop the area in darkness and unleash a cone of poisonous gas makes it a significant threat.",
+    "goals": "To guard its lair and eliminate adventurers who invade its territory.",
+    "relations": "Might serve or be served by other creatures of the dark, such as kobolds or other evil dragons.",
+    "environment": "Typically found in caves or underground lairs.",
+    "strengths": "Significant hit points and strong physical attacks, alongside its unique abilities like creating darkness and burrowing.",
+    "weaknesses": "Lower Dexterity and Intelligence scores compared to other dragons.",
+    "attacks": "Multiattack to deliver a powerful Bite and multiple Claw strikes with additional poisonous damage.",
+    "most_powerful_ability": "Poison Breath, a devastating area attack that can poison enemies and severely impact their capabilities.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 30 feet and tremorsense up to 90 feet, allowing it to detect vibrations and movement in its environment.",
+    "skills": "Has high Perception, making it adept at noticing hidden threats.",
+    "additional_information": [
+        "Darkness Shroud ability to create nonmagical darkness.",
+        "Can burrow through earth and stone without causing disturbance.",
+        "Exceptional climbing ability with Spiked Climb.",
+        "Ruff Spikes can deter nearby enemies trying to enter its space.",
+        "Immune to poison damage."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "dragon that creates darkness and poison gas",
+        "subterranean dragon with burrowing abilities",
+        "large dragon with spikes and poison breath",
+        "cave dragon that intimidates nearby creatures",
+        "formidable dragon with high hit points"
+    ]
+}

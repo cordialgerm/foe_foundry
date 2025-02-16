@@ -1,0 +1,25 @@
+{
+    "name": "Qorgeth",
+    "queries": [
+        {
+            "query": "gargantuan fiend that can burrow and swallow creatures",
+            "variant": "gargantuan fiend that burrows and swallows creatures"
+        },
+        {
+            "query": "chaotic evil monster with spellcasting and damage immunities",
+            "variant": "chaotic evil creature with spellcasting and damage immunity"
+        },
+        {
+            "query": "fiend that has legendary resistances and can restrain enemies",
+            "variant": "fiend with legendary resistance that restrains enemies"
+        },
+        {
+            "query": "multiattack fiend that uses necrotic damage and poison",
+            "variant": "fiend with multiattack that deals necrotic and poison damage"
+        },
+        {
+            "query": "Qorgeth combat tactics and abilities against magical attacks",
+            "variant": "combat tactics and abilities of Qorgeth vs magical attacks"
+        }
+    ]
+}

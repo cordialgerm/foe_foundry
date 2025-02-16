@@ -1,0 +1,53 @@
+{
+    "name": "Swampgas Bubble",
+    "creature_type": "Ooze",
+    "alignment": "unaligned",
+    "size": "Medium",
+    "hp": 59,
+    "ac": 8,
+    "srd": false,
+    "cr": "2",
+    "movement": "fly 30 ft., hover, walk 20 ft.",
+    "role": null,
+    "tags": [
+        "ooze",
+        "swamp",
+        "poison"
+    ],
+    "adjectives": [
+        "poisonous",
+        "explosive",
+        "bludgeoning-resistant"
+    ],
+    "description": "A Medium ooze with a gelatinous appearance, capable of flying and hovering in the air. Its mass is filled with toxic gas, making it a threat in swampy environments.",
+    "memorable": "Its explosive demise when injured creates a dangerous area effect, making it a threat even in its final moments.",
+    "goals": "To suffocate and poison creatures that come too close.",
+    "relations": "Can be found in swamps, often alone, but may be encountered alongside other forms of ooze.",
+    "environment": "Swampy areas and wetlands.",
+    "strengths": "Highly resilient to bludgeoning damage, can reposition quickly in battle with 'Bludgeoning Bounce'.",
+    "weaknesses": "Vulnerable to fire damage, leading to an explosive reaction when injured.",
+    "attacks": "Utilizes a 'Pseudopod' attack dealing bludgeoning and poison damage, and a 'Suffocating Grasp' that attaches to victims, blinding and poisoning them.",
+    "most_powerful_ability": "Fiery Death, which causes an explosive reaction that damages nearby creatures when it takes fire damage while severely injured.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to effectively navigate and hunt despite its blind nature.",
+    "skills": null,
+    "additional_information": [
+        "Immunity to bludgeoning and poison damage",
+        "Detaches itself to avoid damage",
+        "Can blind smaller creatures it attaches to",
+        "Explosive reaction causes area damage",
+        "Notable for its significantly high Constitution"
+    ],
+    "damage_types": [
+        "poison",
+        "fire"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "explosive swamp creature with poison attacks",
+        "flying ooze that suffocates victims",
+        "bubble-like monster found in swamps",
+        "bludgeoning-resistant ooze with explosive death",
+        "medium-sized poisonous ooze in wetlands"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Nkosi",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 27,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 50 ft.",
+    "role": null,
+    "tags": [
+        "shapechanger",
+        "lion",
+        "humanoid"
+    ],
+    "adjectives": [
+        "versatile",
+        "agile",
+        "strong"
+    ],
+    "description": "The Nkosi is a Medium humanoid shapechanger that can transform into a large lion, characterized by its solid physical attributes, particularly high dexterity and strength.",
+    "memorable": "Notable for its ability to pounce and knock down enemies, it excels at tracking with its keen sense of smell.",
+    "goals": "Typically seeks to engage in combat and utilize its shapechanging abilities for tactical advantages.",
+    "relations": "It may be encountered alongside other shapechangers or wild creatures, especially in natural environments.",
+    "environment": "Preferably found in wilderness or areas where it can exploit its tracking and survival skills.",
+    "strengths": "High dexterity and strength make it effective in melee confrontations, while its keen sense of smell enhances perception.",
+    "weaknesses": "Low charisma limits its interactions and effectiveness in social situations.",
+    "attacks": "Can perform a Bite attack and Mambele attack, both dealing piercing damage, with the potential to knock targets prone.",
+    "most_powerful_ability": "Pounce ability that allows it to knock targets prone and make a bonus action Bite attack.",
+    "equipment": null,
+    "senses": "Possesses keen smell for tracking, granting it advantage on Perception checks that rely on smell.",
+    "skills": "Trained in Survival, allowing it to navigate wilderness scenarios competently.",
+    "additional_information": [
+        "Transforms between humanoid and large lion form.",
+        "Armor class in humanoid form is 15 due to studded leather.",
+        "Reverts to humanoid form upon dying.",
+        "Can\u2019t speak in lion form, limiting communication.",
+        "Retains physical attributes in both forms."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "shapechanging humanoid with a keen sense of smell",
+        "lion form creature that can pounce",
+        "medium humanoid that turns into a lion",
+        "creature with a strong bite attack and tracking skills",
+        "agile monster that knocks targets prone"
+    ]
+}

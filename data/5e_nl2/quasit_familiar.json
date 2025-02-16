@@ -1,0 +1,54 @@
+{
+    "name": "Quasit Familiar",
+    "creature_type": "Fiend",
+    "alignment": "Chaotic Evil",
+    "size": "Tiny",
+    "hp": 14,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 40 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "fiend",
+        "familiar",
+        "stealth",
+        "magic resistance"
+    ],
+    "adjectives": [
+        "tiny",
+        "chaotic",
+        "evil",
+        "stealthy"
+    ],
+    "description": "A tiny fiend with dark features, exceptional agility, and the ability to shift into various forms such as a bat or toad.",
+    "memorable": "Its magic resistance and telepathic bond with its master significantly enhance its utility as a familiar.",
+    "goals": "To serve spellcasters and carry out subtle tasks that require stealth and magical assistance.",
+    "relations": "Often found serving spellcasters or other creatures possessing dark magic.",
+    "environment": "Dark and secluded areas, often accompanying its master on magical endeavors.",
+    "strengths": "Excellent stealth capabilities, magic resistance, and usefulness as a familiar.",
+    "weaknesses": "Very low physical strength, making it ineffective in direct combat.",
+    "attacks": "Uses sharp claws to deal piercing damage and can poison foes, or instill fear in nearby creatures.",
+    "most_powerful_ability": "Magic Resistance grants it advantage on saving throws against spells.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 120 feet, allowing it to navigate easily in darkness.",
+    "skills": "Skilled in stealth with a bonus of +5, enabling it to evade detection effectively.",
+    "additional_information": [
+        "Can communicate telepathically with its master up to 1 mile away.",
+        "Can become invisible for stealthy maneuvers.",
+        "Immunity to the poisoned condition.",
+        "Resistant to cold, fire, and lightning damage.",
+        "Can shapeshift into small creatures without changing its statistics."
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "tiny stealthy fiend that serves spellcasters",
+        "invisible familiar with magic resistance abilities",
+        "chaotic evil creature with shapeshifting powers",
+        "cute tiny monster that can poison enemies",
+        "stealthy fiend that communicates telepathically"
+    ]
+}

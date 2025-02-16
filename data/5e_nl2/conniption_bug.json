@@ -1,0 +1,53 @@
+{
+    "name": "Conniption Bug",
+    "creature_type": "Beast",
+    "alignment": "unaligned",
+    "size": "Small",
+    "hp": 55,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 feet walking and swimming",
+    "role": "Skirmisher",
+    "tags": [
+        "grappling",
+        "amphibious",
+        "pack tactics"
+    ],
+    "adjectives": [
+        "small",
+        "dangerous",
+        "versatile",
+        "agile"
+    ],
+    "description": "A small beast with barbed mandibles and claws, capable of grappling foes and leaping significant distances.",
+    "memorable": "Its ability to restrain enemies even after death makes it a grave threat.",
+    "goals": "To ambush smaller creatures and work cooperatively in packs.",
+    "relations": "Often found with other Conniption Bugs or in similar habitats.",
+    "environment": "Commonly inhabits areas near water, such as swamps or marshlands.",
+    "strengths": "Excels in grappling and has pack tactics for enhanced attack rolls.",
+    "weaknesses": "Relatively fragile compared to stronger monsters despite decent hit points.",
+    "attacks": "Utilizes barbed mandibles for grappling and barbed claws for dealing damage.",
+    "most_powerful_ability": "Death Trap allows it to deal damage even after being defeated.",
+    "equipment": null,
+    "senses": "Possesses tremorsense up to 30 feet, allowing it to detect nearby creatures.",
+    "skills": "Has an average perception skill, indicating it can detect its surroundings adequately.",
+    "additional_information": [
+        "Can only breathe air or water if submerged periodically.",
+        "Standing Leap ability enhances its movement capabilities.",
+        "Scores critical hits on rolls of 19 or 20 with melee attacks.",
+        "It can grapple multiple targets effectively with its Death Trap ability.",
+        "Strategically dangerous when working in pairs or groups."
+    ],
+    "damage_types": [
+        "piercing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small amphibious grappling creature",
+        "bug that grapples and deals damage after death",
+        "creature with barbed claws and mandibles",
+        "pack tactics bug in marshlands",
+        "versatile small beast with tremorsense"
+    ]
+}

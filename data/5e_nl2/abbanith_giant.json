@@ -1,0 +1,48 @@
+{
+    "name": "Abbanith Giant",
+    "creature_type": "Giant",
+    "alignment": "neutral",
+    "size": "Large",
+    "hp": 76,
+    "ac": 13,
+    "srd": false,
+    "cr": "3",
+    "movement": "burrow 30 ft., walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "earth",
+        "construct slayer"
+    ],
+    "adjectives": [
+        "formidable",
+        "destructive",
+        "robust"
+    ],
+    "description": "The Abbanith Giant is a Large, powerful creature known for its connection to the earth. It possesses natural armor and has a stocky, robust build, capable of moving swiftly across rugged terrain.",
+    "memorable": "Known for its 'Siege Monster' ability, the Abbanith Giant can deal massive damage to structures, especially those made of earth or stone, making it a terrifying presence on any battlefield.",
+    "goals": "Typically aimed at protecting its territory, the Abbanith Giant is also known for its destructive capabilities, often seeking to dismantle structures or barriers that impede its movement.",
+    "relations": "It may be encountered alongside other earth-elemental creatures or as a guardian of ancient stone ruins.",
+    "environment": "Commonly found in mountainous areas, rocky terrain, or caverns where it can utilize its burrowing abilities.",
+    "strengths": "With exceptional Strength and durability, the Abbanith Giant poses a significant threat in melee combat, complemented by its powerful abilities against constructs and elementals.",
+    "weaknesses": "Its below-average Dexterity makes it vulnerable to ranged attacks and agile opponents.",
+    "attacks": "The Abbanith Giant can perform two 'Thumb Claw' attacks, each capable of dealing substantial piercing damage with significant reach.",
+    "most_powerful_ability": "The 'Siege Monster' ability allows it to inflict extreme damage to structures, doubling or tripling damage depending on the material.",
+    "equipment": null,
+    "senses": "Possesses tremorsense out to 120 feet, allowing it to detect vibrations in the ground.",
+    "skills": null,
+    "additional_information": [
+        "Gains advantage on attack rolls against earth or stone constructs.",
+        "Can\u2019t be surprised by opponents that are in contact with the ground.",
+        "Uses 'Earth Counter' to thwart specific spells related to earth or stone without needing a spellcasting check."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "terrestrial giant",
+        "fortress demolisher",
+        "earth element giant",
+        "giant with tremorsense",
+        "natural armor giant"
+    ]
+}

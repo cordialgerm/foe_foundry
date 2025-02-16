@@ -1,0 +1,53 @@
+{
+    "name": "Flayed Wraith",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 67,
+    "ac": 12,
+    "srd": false,
+    "cr": "5",
+    "movement": "hovers and flies at 60 feet",
+    "role": "Skirmisher",
+    "tags": [
+        "undead",
+        "fear",
+        "psychic damage"
+    ],
+    "adjectives": [
+        "tormented",
+        "psychological",
+        "wraith"
+    ],
+    "description": "The Flayed Wraith is a tormented spirit embodying both psychological and physical torment, it hovers and has claw-like appendages that deal both slashing and necrotic damage.",
+    "memorable": "It incapacitates enemies instead of killing them, allowing it to manipulate the battlefield and instill fear.",
+    "goals": "To inflict fear and incapacitate foes rather than simply kill them.",
+    "relations": "Could be related to other undead creatures or spirits tormenting the living.",
+    "environment": "Typically found in dark and haunted locations, where suffering and torment dwell.",
+    "strengths": "Immunities to necrotic and poison damage and resistance to cold damage as well as nonmagical physical damage.",
+    "weaknesses": "Sunlight sensitivity, causing disadvantage on attack rolls and perception checks in sunlight.",
+    "attacks": "Utilizes Howl of Agony to cause incapacitation followed by claw attacks for slashing and necrotic damage.",
+    "most_powerful_ability": "Howl of Agony, incapacitating a target while dealing psychic damage.",
+    "equipment": null,
+    "senses": "Has a low passive perception of 9, reflecting its weakness in detecting hidden threats.",
+    "skills": null,
+    "additional_information": [
+        "Releases a terrifying scream that affects the mind of its targets.",
+        "Can hover and is not bound by ground movement.",
+        "Cunning and strategic in taking down enemies without outright killing them.",
+        "Relies heavily on psychic damage to debilitate foes.",
+        "Can create tension on the battlefield by incapacitating strong enemies."
+    ],
+    "damage_types": [
+        "necrotic",
+        "psychic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that incapacitates enemies",
+        "tormented spirit dealing psychic damage",
+        "wraith with claw attacks and fear abilities",
+        "ghostly figure that leaves victims unconscious",
+        "creature that thrives in dark environments"
+    ]
+}

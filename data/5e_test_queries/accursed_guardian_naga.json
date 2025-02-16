@@ -1,0 +1,25 @@
+{
+    "name": "Accursed Guardian Naga",
+    "queries": [
+        {
+            "query": "powerful snake monster that can speak and cast spells",
+            "variant": "strong serpent creature that speaks and uses magic"
+        },
+        {
+            "query": "amphibious naga with high poison damage abilities",
+            "variant": "naga that can live in water and deals heavy poison damage"
+        },
+        {
+            "query": "guardian naga with magic resistance and lair effects",
+            "variant": "protector naga that has resistance to magic and lair abilities"
+        },
+        {
+            "query": "large monster that deals radiant damage in its lair",
+            "variant": "big creature that inflicts radiant damage in its home turf"
+        },
+        {
+            "query": "intelligent creature with paralyzing spells and shapeshifting",
+            "variant": "smart entity that can paralyze foes and change shape"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Ley Wanderer</MonsterName>
 <CreatureType/>Aberration</CreatureType>
-
+<CR/>7</CR>
+<AC/>15 (natural armor)</AC>
+<HP/>136</HP>
 <summary>The Ley Wanderer is a huge aberration known for its mastery over magic and psychic abilities. This creature melds physical presence with extraordinary magical capabilities, making it a formidable opponent in combat. It boasts a high number of hit points at 136, allowing it to absorb damage effectively, while its mixed-use attack options and unique abilities enable it to disrupt magic, dealing significant psychic damage. However, it has average dexterity, making its physical defenses somewhat lacking. Its strength lies in its ability to sense magic and manipulate it, reflecting its role as a magical predator in the D&D universe.</summary>
 
 <detail>
@@ -27,6 +29,7 @@ In response to enemy spells, it can use the Absorb Spell reaction. When it detec
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Ley Wanderer
 
 *Huge* *Aberration* *neutral*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Absorb Spell:** When a creature wanderer can see within 30' of it casts spell wanderer can absorb spell’s energy countering it. Works like counterspell except wanderer must always make spellcasting ability check no matter spell’s level. Its ability check for this is +7. If it successfully counters the spell it gains 5 temp hp/spell level.
 
 
+</statblock>
 
 

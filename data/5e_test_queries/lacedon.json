@@ -1,0 +1,25 @@
+{
+    "name": "Lacedon",
+    "queries": [
+        {
+            "query": "undead creature that lurks in dark waters and can paralyze foes",
+            "variant": "creature that is undead, swims in dark waters and has paralyzing attacks"
+        },
+        {
+            "query": "Medium monster resistant to necrotic damage found in decaying environments",
+            "variant": "Medium-sized undead monster that resists necrotic damage and is located in decayed areas"
+        },
+        {
+            "query": "zombie-like creature with the ability to swim and attacks that paralyze",
+            "variant": "swimming undead creature that can paralyze with its attacks"
+        },
+        {
+            "query": "undead with low intelligence that can swim and is vulnerable to radiant damage",
+            "variant": "low intelligence undead that swims and has weakness against radiant attacks"
+        },
+        {
+            "query": "monster with paralyzing claws that lives in murky water",
+            "variant": "creature with claws that cause paralysis, dwelling in muddy waters"
+        }
+    ]
+}

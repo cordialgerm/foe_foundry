@@ -1,0 +1,54 @@
+{
+    "name": "Ortifex",
+    "creature_type": "Undead",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 78,
+    "ac": 12,
+    "srd": false,
+    "cr": "4",
+    "movement": "fly 30 ft, hover; cannot walk",
+    "role": "null",
+    "tags": [
+        "undead",
+        "flying",
+        "hypnotic",
+        "blood-related"
+    ],
+    "adjectives": [
+        "undead",
+        "creepy",
+        "charismatic",
+        "dangerous"
+    ],
+    "description": "The Ortifex is a medium-sized undead creature that cannot walk but can fly and hover. It has the resilience of a significant hit point pool and natural armor.",
+    "memorable": "Unique abilities like Blood Siphon and Hypnotic Heartbeat make the Ortifex a formidable and controlling presence on the battlefield.",
+    "goals": "Typically serves as a blood source for nearby creatures like vampires and acts strategically in combat.",
+    "relations": "Often found with undead allies, particularly bloodsucking creatures such as vampires.",
+    "environment": "Commonly found in dark, abandoned places or where blood-sucking creatures reside.",
+    "strengths": "Immune to multiple conditions and possesses blindsight, which grants it excellent tracking and combat capabilities.",
+    "weaknesses": "Very poor intelligence and average dexterity make it less effective in complex situations.",
+    "attacks": "Can deliver a melee slam attack causing both bludgeoning and necrotic damage, and has the ability to drain blood from nearby foes.",
+    "most_powerful_ability": "Hypnotic Heartbeat can incapacitate and charm foes, making them move directly towards the Ortifex.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet, allowing it to detect creatures in its vicinity even while blind.",
+    "skills": null,
+    "additional_information": [
+        "Resists poison damage.",
+        "Can drain blood to heal creatures like vampires.",
+        "Can sense blood and locate nearby living creatures.",
+        "DC 13 Wisdom save needed to resist being charmed.",
+        "Temporary hit points enhance its durability."
+    ],
+    "damage_types": [
+        "necrotic"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "undead creature that flies and drains blood",
+        "medium undead with hypnotic heartbeat ability",
+        "blood-sucking monster immune to many conditions",
+        "creature that incapacitates enemies with heartbeat",
+        "flying undead with blood sense and siphon"
+    ]
+}

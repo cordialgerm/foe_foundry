@@ -1,0 +1,25 @@
+{
+    "name": "Fractal Golem",
+    "queries": [
+        {
+            "query": "large construct with the ability to create duplicates upon destruction",
+            "variant": "big golem that can make copies when destroyed"
+        },
+        {
+            "query": "golem that explodes and creates smaller versions of itself",
+            "variant": "creature that blows up and makes tiny duplicates"
+        },
+        {
+            "query": "resilient monster with high armor class and low hit points",
+            "variant": "tough creature having a high AC but few hit points"
+        },
+        {
+            "query": "construct immune to poison and magic attacks",
+            "variant": "golem that cannot be affected by poison or magic damage"
+        },
+        {
+            "query": "Fractal Golem special abilities and combat tactics",
+            "variant": "Fractal Golem's unique powers and fighting strategies"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "Titanic Kraken",
+    "creature_type": "Monstrosity",
+    "alignment": null,
+    "size": "Gargantuan",
+    "hp": 888,
+    "ac": 20,
+    "srd": false,
+    "cr": "25",
+    "movement": "walk 20 ft., swim 60 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "ocean",
+        "monstrosity",
+        "giant",
+        "kraken",
+        "beast"
+    ],
+    "adjectives": [
+        "immense",
+        "menacing",
+        "powerful",
+        "aquatic"
+    ],
+    "description": "A gigantic kraken known for its size and intensity, with tentacles that can grapple multiple targets and an enormous body covered in black ichor.",
+    "memorable": "The Titanic Kraken's ability to swallow whole creatures and unleash storms makes it unforgettable in any encounter.",
+    "goals": "To dominate the oceans and snatch up passing ships or intruders.",
+    "relations": "Often associated with sea monsters, other krakens, or aquatic creatures.",
+    "environment": "Deep ocean waters, often in turbulent or stormy conditions.",
+    "strengths": "Immune to lightning damage and damage from nonmagical weapons; can summon storms and create ink clouds.",
+    "weaknesses": "Requires a significant strategy to defeat, particularly in large bodies of water.",
+    "attacks": "Devastating bite attack, powerful tentacle grapples, and can fling creatures with tremendous force.",
+    "most_powerful_ability": "The ability to summon a storm that affects a large area and control the battlefield with ink clouds.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet, allowing it to detect hidden foes.",
+    "skills": null,
+    "additional_information": [
+        "Immortal nature: does not require air, food, or sleep.",
+        "Legendary Resistance: can succeed on failed saves.",
+        "Magic Resistance: advantage on saves against magic.",
+        "Siphons a heavy amount of acid damage when swallowed.",
+        "Spreads black ichor that lightly obscures its surroundings while bloodied."
+    ],
+    "damage_types": [
+        "acid",
+        "poison",
+        "lightning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "giant ocean monster with tentacles",
+        "kraken that can summon storms",
+        "massive underwater creature with ink attacks",
+        "menacing sea beast with legendary powers",
+        "immortal monster roaming the depths"
+    ]
+}

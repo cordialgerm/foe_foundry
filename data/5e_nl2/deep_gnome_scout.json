@@ -1,0 +1,50 @@
+{
+    "name": "Deep Gnome Scout",
+    "creature_type": "Humanoid",
+    "alignment": "neutral",
+    "size": "Medium",
+    "hp": 19,
+    "ac": 15,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "walk 30 ft.",
+    "role": "Skirmisher",
+    "tags": [
+        "stealthy",
+        "scout",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "agile",
+        "resilient",
+        "perceptive"
+    ],
+    "description": "The Deep Gnome Scout is a Medium humanoid known for its agility and stealth, featuring a keen sense of perception and camouflage abilities. It navigates rocky terrain with ease and is equipped with a War Pick.",
+    "memorable": "Its ability to blend into rocky environments and enhance its stealth makes it formidable for scouting tasks.",
+    "goals": "To gather information and navigate safely through rocky terrains.",
+    "relations": "May be encountered alongside other deep gnomes or in service to gnome communities.",
+    "environment": "Typically found in rocky or subterranean terrains.",
+    "strengths": "Exceptional Dexterity enhances stealth and agility, while magic resistance offers resilience against spells.",
+    "weaknesses": "Average physical strength and limited combat versatility due to low hit points.",
+    "attacks": "Attacks with a War Pick, delivering piercing damage, and can inflict blindness with a spell.",
+    "most_powerful_ability": "Its ability to cast Blindness, creating significant tactical advantages in combat.",
+    "equipment": "War Pick",
+    "senses": "Possesses a passive Perception of 16, enhanced by keen hearing and sight.",
+    "skills": "Proficient in stealth, survival, and perception, making it adept at exploration and reconnaissance.",
+    "additional_information": [
+        "Has advantage on Stealth checks in rocky terrain.",
+        "Can cast spells like disguise self and nondetection.",
+        "Advantage on saving throws against magic.",
+        "Utilizes keen perception for scouting.",
+        "Can easily evade detection with stealth tactics."
+    ],
+    "damage_types": [],
+    "spellcasting": "Able to cast blindness/deafness, disguise self, and nondetection once per long rest.",
+    "test_queries": [
+        "agile creature that blends into rocky terrain",
+        "stealthy scout with magic resistance",
+        "Deep Gnome capable of casting blindness",
+        "medium humanoid known for its agility",
+        "perceptive creature that excels in stealth"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Cueyatl Warchief",
+    "creature_type": "Humanoid",
+    "alignment": "lawful evil",
+    "size": "Small",
+    "hp": 117,
+    "ac": 16,
+    "srd": false,
+    "cr": "7",
+    "movement": "30 ft. walk, 20 ft. climb, 30 ft. swim",
+    "role": "Skirmisher",
+    "tags": [
+        "humanoid",
+        "warchief",
+        "amphibious",
+        "jungle"
+    ],
+    "adjectives": [
+        "cunning",
+        "formidable"
+    ],
+    "description": "A small humanoid clad in studded leather armor with a shield, displaying a cunning and formidable presence.",
+    "memorable": "Wields a lance and is adept at ambushing with strong mobility and tactical abilities.",
+    "goals": "To lead and command allies in battle, utilizing its amphibious and jungle abilities.",
+    "relations": "Can communicate with insectoid creatures and may lead other jungle inhabitants.",
+    "environment": "Primarily found in jungle terrains, where it utilizes camouflage.",
+    "strengths": "High strength and impressive mobility with climbing and swimming capabilities.",
+    "weaknesses": "As a humanoid, it may be vulnerable to area attacks and magic targeting its intelligence.",
+    "attacks": "Makes two lance attacks dealing piercing and poison damage, capable of commanding a mount to attack as well.",
+    "most_powerful_ability": "Spirited Charge allows it to deal additional damage while mounted and command its mount to attack.",
+    "equipment": "Studded leather armor and a shield, mounted combat gear.",
+    "senses": "Possesses darkvision allowing it to see in dim light.",
+    "skills": "Proficient in perception, aiding in ambush tactics.",
+    "additional_information": [
+        "Amphibious, can breathe underwater",
+        "Advantage on Dexterity (Stealth) checks in jungle terrain",
+        "Slippery, has advantage to escape grapples",
+        "Locked Saddle protects mounted position",
+        "Can communicate with insects"
+    ],
+    "damage_types": [
+        "poison"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "humanoid warchief living in jungles",
+        "small evil creature with amphibious abilities",
+        "cunning jungle warrior skilled in stealth",
+        "warchief that commands insect allies",
+        "formidable mounted warrior with poison attack"
+    ]
+}

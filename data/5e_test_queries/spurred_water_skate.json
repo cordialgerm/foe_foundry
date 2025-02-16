@@ -1,0 +1,25 @@
+{
+    "name": "Spurred Water Skate",
+    "queries": [
+        {
+            "query": "large aquatic creature with grappling abilities",
+            "variant": "big water beast that can grapple opponents"
+        },
+        {
+            "query": "monster that swims effortlessly and has strong forelimbs",
+            "variant": "creature that glides easily in water and has powerful limbs"
+        },
+        {
+            "query": "agile water beast that inflicts piercing damage",
+            "variant": "swift water creature that deals sharp damage"
+        },
+        {
+            "query": "beast that can move on water like solid ground and ambushes",
+            "variant": "creature that walks on water as if it were solid and surprises foes"
+        },
+        {
+            "query": "dangerous water monster with low intelligence and high dexterity",
+            "variant": "threatening aquatic beast with bad smarts and exceptional agility"
+        }
+    ]
+}

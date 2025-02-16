@@ -1,0 +1,25 @@
+{
+    "name": "Cave Drake",
+    "queries": [
+        {
+            "query": "large dragon with climbing ability that lives in caves",
+            "variant": "big drake that can climb and resides in underground"
+        },
+        {
+            "query": "stealthy drake that attacks with bite and claws",
+            "variant": "sneaky dragon that uses claws and a bite for attacks"
+        },
+        {
+            "query": "subterranean monster with poison immunity and blinding spit",
+            "variant": "underground creature immune to poison and has blinding spit attack"
+        },
+        {
+            "query": "Cave Drake's ambusher ability and keen smell advantage",
+            "variant": "the ambush ability of Cave Drake and keen smell feature"
+        },
+        {
+            "query": "Cave Drake habitat and physical attack strength",
+            "variant": "where Cave Drake lives and its melee attack power"
+        }
+    ]
+}

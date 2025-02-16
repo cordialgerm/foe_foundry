@@ -1,0 +1,25 @@
+{
+    "name": "Mindrot Thrall",
+    "queries": [
+        {
+            "query": "plant monster that infects with mindrot disease",
+            "variant": "monster plant that spreads mindrot infection"
+        },
+        {
+            "query": "creature with acidic spores and strong Constitution",
+            "variant": "monster with acid breath and high Constitution"
+        },
+        {
+            "query": "medium-sized plant that causes migraines and weakness",
+            "variant": "medium plant monster that gives migraines and muscle weakness"
+        },
+        {
+            "query": "tough fungal enemy with an aura that affects nearby creatures",
+            "variant": "strong fungal creature with an aura affecting nearby enemies"
+        },
+        {
+            "query": "Mindrot Thrall combat tactics and abilities",
+            "variant": "combat abilities and tactics of Mindrot Thrall"
+        }
+    ]
+}

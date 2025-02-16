@@ -1,0 +1,54 @@
+{
+    "name": "Prismatic Adult Dragon",
+    "creature_type": "Dragon",
+    "alignment": "neutral",
+    "size": "Huge",
+    "hp": 212,
+    "ac": 18,
+    "srd": false,
+    "cr": "16",
+    "movement": "walk 50 ft., climb 30 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "magical",
+        "fear-inducing",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "majestic",
+        "formidable",
+        "powerful",
+        "colorful"
+    ],
+    "description": "This massive dragon exhibits a breathtaking array of colors and a formidable presence, combining physical strength with a range of magical abilities.",
+    "memorable": "It can unleash devastating radiant breath weapons and instill fear with its Frightful Presence while being remarkably resistant due to its Legendary Resistance.",
+    "goals": "The dragon may seek to safeguard its territory, acquire treasure, or engage in combat for amusement.",
+    "relations": "Can be encountered alongside other dragons or as a protector of magic-rich locales.",
+    "environment": "Usually found in mountainous areas, ancient ruins, or places of great magic.",
+    "strengths": "Possesses a variety of powerful breath weapons, high damage output, and significant magical capabilities.",
+    "weaknesses": "Reliant on spellcasting, making it vulnerable to counter-spells or enemies that can resist its magic.",
+    "attacks": "Utilizes a mix of bite, claw, and tail attacks, complemented by a fear-inducing aura and powerful breath weapons.",
+    "most_powerful_ability": "Breath Weapon, dealing heavy damage in a wide area and splitting it among various damage types.",
+    "equipment": null,
+    "senses": "Has blindsight out to 60 feet and a high passive perception of 22, ensuring it is always aware of its surroundings.",
+    "skills": "Noteworthy perception skill, although it has only a modest bonus.",
+    "additional_information": [
+        "Legendary Resistance makes it hard to overcome its defenses.",
+        "Can cast spells at will, offering battlefield control.",
+        "Associated with radiant damage immunity and can inflict radiant damage.",
+        "Instills fear with its Frightful Presence, affecting multiple creatures.",
+        "Can unleash shimmering wings attack causing additional damage and blindness."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": "Can cast spells at will, including charm person and color spray, and use prismatic spray and prismatic wall multiple times a day.",
+    "test_queries": [
+        "huge multicolored dragon with radiant powers",
+        "flying dragon that instills fear and casts spells",
+        "powerful dragon with light-based breath weapon",
+        "majestic dragon dwelling in magical mountainous areas",
+        "dragon that uses prismatic attacks and frightens opponents"
+    ]
+}

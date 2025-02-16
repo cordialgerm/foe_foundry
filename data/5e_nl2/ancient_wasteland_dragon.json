@@ -1,0 +1,52 @@
+{
+    "name": "Ancient Wasteland Dragon",
+    "creature_type": "Dragon",
+    "alignment": "chaotic evil",
+    "size": "Gargantuan",
+    "hp": 333,
+    "ac": 22,
+    "srd": false,
+    "cr": "23",
+    "movement": "burrow 30 ft., climb 40 ft., fly 80 ft., walk 40 ft.",
+    "role": null,
+    "tags": [
+        "dragon",
+        "chaotic evil",
+        "legendary creature"
+    ],
+    "adjectives": [
+        "formidable",
+        "gargantuan",
+        "fearsome"
+    ],
+    "description": "The Ancient Wasteland Dragon is a massive dragon with a blend of chaotic evil qualities, characterized by its powerful frame and a fearsome presence in battle.",
+    "memorable": "Its imposing size and devastating Warped Energy Breath make it a daunting opponent, along with its ability to instill fear through its Frightful Presence.",
+    "goals": "To dominate its territory and instill fear among those who challenge it.",
+    "relations": "Related to other dragons, potentially serving as a master to lesser draconic creatures or evil beings.",
+    "environment": "Typically found in desolate wastelands or ruined landscapes.",
+    "strengths": "High Constitution and Charisma, powerful melee and breath attacks, and Legendary Resistance enhancing its survivability.",
+    "weaknesses": "A low Dexterity score making it somewhat sluggish compared to more agile opponents.",
+    "attacks": "Utilizes multiattack options, including a bite, two claw strikes, and a powerful tail swipe that can knock enemies prone.",
+    "most_powerful_ability": "Warped Energy Breath deals massive area force damage in a 90-foot line, capable of significantly altering the tide of battle.",
+    "equipment": null,
+    "senses": "It has blindsight up to 60 feet and a passive Perception score of 19, making it highly aware of its surroundings.",
+    "skills": "Proficient in Perception and Stealth, with a notably high passive Perception score.",
+    "additional_information": [
+        "Immune to force damage, adding to its resilience.",
+        "Can instill fear in creatures within a large radius through Frightful Presence.",
+        "Possesses powerful melee attacks with significant damage outputs.",
+        "Able to utilize legendary actions for tactical advantages in combat.",
+        "Counts as an extremely high-level threat designed for experienced parties."
+    ],
+    "damage_types": [
+        "force"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "gargantuan dragon breath weapon",
+        "chaotic evil dragon",
+        "legendary dragon with fear abilities",
+        "massive dragon in wasteland",
+        "dragon capable of area attacks"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Scorpion Cultist",
+    "queries": [
+        {
+            "query": "poison using humanoid cultist that excels in stealth",
+            "variant": "humanoid cultist that uses poison and is stealthy"
+        },
+        {
+            "query": "medium humanoid with scimitar that has poison attacks",
+            "variant": "medium-sized humanoid with a scimitar and poison damage"
+        },
+        {
+            "query": "cultist who worships dark powers and is resistant to poison",
+            "variant": "poison-resistant cultist that worships dark forces"
+        },
+        {
+            "query": "sneaky humanoid that delivers poison damage in combat",
+            "variant": "sneaky humanoid that deals poison damage during fights"
+        },
+        {
+            "query": "cult member proficient in deception with good perception skills",
+            "variant": "cultist skilled in perception and deception abilities"
+        }
+    ]
+}

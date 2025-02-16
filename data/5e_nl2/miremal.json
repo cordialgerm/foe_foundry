@@ -1,0 +1,50 @@
+{
+    "name": "Miremal",
+    "creature_type": "Fey",
+    "alignment": "Chaotic Evil",
+    "size": "Small",
+    "hp": 22,
+    "ac": 12,
+    "srd": false,
+    "cr": "1/2",
+    "movement": "30 feet walking speed",
+    "role": "Skirmisher",
+    "tags": [
+        "fey",
+        "swamp",
+        "stealth"
+    ],
+    "adjectives": [
+        "chaotic",
+        "evasive",
+        "stealthy"
+    ],
+    "description": "The Miremal is a small, chaotic evil fey creature adept at ambushing in swampy terrains. It has agile features that allow it to blend into its environment and is characterized by its dark skin, reminiscent of wet mud, which aids in camouflage.",
+    "memorable": "The Miremal's unique ability to blend into swamp terrain and escape death by transforming into a puddle is both intriguing and treacherous.",
+    "goals": "To disrupt and ambush unsuspecting creatures in its swampy habitat.",
+    "relations": "Often encountered with other swamp creatures or fey, relying on hit-and-run tactics.",
+    "environment": "Typically found in swampy areas.",
+    "strengths": "Notably skilled in stealth and able to evade danger with Muddled Escape; it can control the battlefield with its Bog Spew ability.",
+    "weaknesses": "Limited combat resilience with low hit points and Challenge Rating.",
+    "attacks": "Multiattack option includes a bite that deals piercing damage and a claw attack that inflicts slashing damage.",
+    "most_powerful_ability": "Bog Spew, which can inflict acid damage and blind targets, significantly affecting enemy tactics.",
+    "equipment": null,
+    "senses": "Possesses darkvision up to 60 feet and a passive perception of 13, allowing it to detect hidden threats skillfully.",
+    "skills": "Skilled in Stealth with a +6 modifier, making it a highly deceptive opponent.",
+    "additional_information": [
+        "Amphibious, can breathe in both air and water.",
+        "Swamp Camouflage grants advantage on Dexterity (Stealth) checks in swampy terrain.",
+        "Can escape death by turning into a puddle when reduced to 0 hit points."
+    ],
+    "damage_types": [
+        "acid"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "chaotic swamp creature that blends in",
+        "small fey that escapes by turning into water",
+        "creature that uses bog acid attack",
+        "stealthy swamp monster with evasive tactics",
+        "ambush-loving fey in marshy environments"
+    ]
+}

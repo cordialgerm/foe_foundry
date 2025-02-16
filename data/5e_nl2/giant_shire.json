@@ -1,0 +1,53 @@
+{
+    "name": "Giant, Shire",
+    "creature_type": "Giant",
+    "alignment": "lawful evil",
+    "size": "Huge",
+    "hp": 138,
+    "ac": 14,
+    "srd": false,
+    "cr": "8",
+    "movement": "walk 40 ft.",
+    "role": "Bruiser",
+    "tags": [
+        "giant",
+        "melee",
+        "brutal"
+    ],
+    "adjectives": [
+        "menacing",
+        "formidable",
+        "powerful"
+    ],
+    "description": "The Giant, Shire is a huge creature characterized by its imposing size and strength, armed with a deadly pitchfork. Its tough constitution allows it to withstand significant damage in combat.",
+    "memorable": "Its grab and throw capability can devastate opponents, especially in crowded combat scenarios.",
+    "goals": "Typically engages in brutal melee combat, overpowering foes and controlling the battlefield.",
+    "relations": "Might be found in the company of other giants or as a servant of a more powerful evil creature.",
+    "environment": "Usually found in hilly terrains or lands that provide ample space for its large frame.",
+    "strengths": "High strength and constitution make it exceptionally tough and effective in melee engagements.",
+    "weaknesses": "Low dexterity limits its speed and agility, making it predictable in movement.",
+    "attacks": "Can make multiple pitchfork attacks or combine them with grappling to throw opponents.",
+    "most_powerful_ability": "The grab and throw attack allows it to incapacitate and harm smaller foes.",
+    "equipment": "pitchfork",
+    "senses": "Has a passive perception of 10, allowing it to notice threats, but not exceptionally well.",
+    "skills": "Possesses basic perception skills, but its understanding in tactical situations is limited.",
+    "additional_information": [
+        "Exceptional constitution providing high durability.",
+        "Can deal substantial damage with thrown objects.",
+        "Grappling mechanics add a layer of control in combat.",
+        "A formidable opponent for adventuring parties lacking in crowd control.",
+        "Possesses high strength, making it a significant threat in close encounters."
+    ],
+    "damage_types": [
+        "piercing",
+        "bludgeoning"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "massive giant with pitchfork",
+        "menacing creature that throws enemies",
+        "strong giant in hilly terrain",
+        "lawful evil giant attacking adventurers",
+        "brutal giant with high strength and constitution"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Muraenid",
+    "queries": [
+        {
+            "query": "large aquatic monster with charm abilities",
+            "variant": "big water creature with enchanting powers"
+        },
+        {
+            "query": "neutral evil monstrosity that can swim and telekinetically control creatures",
+            "variant": "evil monster that swims and controls creatures with telekinesis"
+        },
+        {
+            "query": "powerful underwater monster that uses Pack Tactics in combat",
+            "variant": "strong aquatic creature that employs Pack Tactics during fights"
+        },
+        {
+            "query": "monster with natural armor and water breathing abilities",
+            "variant": "creature with natural defenses and the ability to breathe underwater"
+        },
+        {
+            "query": "Muraenid's ability to speak with aquatic creatures",
+            "variant": "Muraenid's power to communicate with sea creatures"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Liosalfar",
+    "creature_type": "Elemental",
+    "alignment": "Neutral",
+    "size": "Large",
+    "hp": 132,
+    "ac": 17,
+    "srd": false,
+    "cr": "10",
+    "movement": "walk 60 ft.",
+    "role": null,
+    "tags": [
+        "elemental",
+        "radiant",
+        "charming"
+    ],
+    "adjectives": [
+        "large",
+        "agile",
+        "formidable",
+        "elusive"
+    ],
+    "description": "The Liosalfar is a large elemental creature emanating bright light, known for its agility and ability to mesmerize opponents with radiant displays.",
+    "memorable": "Its unique ability to charm and incapacitate foes with mesmerizing radiance makes the Liosalfar a challenging adversary.",
+    "goals": "Typically seeks to dominate the battlefield and incapacitate foes through radiant powers.",
+    "relations": "May be encountered alongside other elemental creatures or in arcane settings.",
+    "environment": "Likely found in areas of strong elemental energy or places of light.",
+    "strengths": "Immunity to psychic and radiant damage, resistant to nonmagical physical attacks, and possesses truesight.",
+    "weaknesses": "Vulnerable to magical darkness, which causes it necrotic damage and limits its effectiveness.",
+    "attacks": "Employs Radiant Touch, dealing significant radiant damage, and utilizes Ray of Light to blind opponents.",
+    "most_powerful_ability": "Mesmerizing Radiance, which charms and incapacitates multiple opponents with dazzling light.",
+    "equipment": null,
+    "senses": "Has truesight up to 120 feet, allowing it to see through illusions and invisibility.",
+    "skills": "Proficient in Arcana, Insight, and Perception, which enhances its ability to understand magical phenomena and sense intentions.",
+    "additional_information": [
+        "Can navigate through small spaces without difficulty.",
+        "Shares traits with other radiant elemental beings.",
+        "Can adjust the radius of emitted light as a bonus action.",
+        "Begins its turn in magical darkness and suffers penalties.",
+        "Has disadvantage imposed on it for Insight checks."
+    ],
+    "damage_types": [
+        "radiant"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "large elemental that charms opponents",
+        "agile creature with radiant powers",
+        "elemental immune to divination effects",
+        "radiant damage dealing light monster",
+        "monster that mesmerizes with light display"
+    ]
+}

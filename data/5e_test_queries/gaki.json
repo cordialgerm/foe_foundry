@@ -1,0 +1,25 @@
+{
+    "name": "Gaki",
+    "queries": [
+        {
+            "query": "grotesque undead specter that drains life",
+            "variant": "grotesque unddead spectre that drains life"
+        },
+        {
+            "query": "chaotic undead creature with a gluttonous attraction ability",
+            "variant": "chaotic undead monster with gluttonous attraction ability"
+        },
+        {
+            "query": "undead with incorporeal movement that attacks with acid",
+            "variant": "undead with incorporel movement that attacks with acid"
+        },
+        {
+            "query": "medium undead with aura of famine and necrotic damage",
+            "variant": "medium undead with aura of famin and necrotic damage"
+        },
+        {
+            "query": "creature that moves through objects and has advantage against wounded foes",
+            "variant": "creature that moves through objects and has advatage against wounded foes"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Kogukhpak",
+    "queries": [
+        {
+            "query": "massive fire demon with cold immunity and sunlight weakness",
+            "variant": "huge fire demon that is immune to cold and sensitive to sunlight"
+        },
+        {
+            "query": "Kogukhpak demon with high hit points and devastating leap ability",
+            "variant": "demon Kogukhpak known for its large hit points and ability to leap powerfully"
+        },
+        {
+            "query": "chaotic evil fiend that can swim and attack with fire breath",
+            "variant": "fiend of chaotic evil nature that swims and uses fire breath to attack"
+        },
+        {
+            "query": "demon with strength score of 30 and resistance to non-magical damage",
+            "variant": "30 strength demon that resists damage from non-magical attacks"
+        },
+        {
+            "query": "huge fiend with magical resistance and powerful melee attacks",
+            "variant": "large fiend that has magical resistance and strong melee capabilities"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Catterball",
+    "creature_type": "Fey",
+    "alignment": "chaotic neutral",
+    "size": "Small",
+    "hp": 44,
+    "ac": 13,
+    "srd": false,
+    "cr": "1",
+    "movement": "30 ft. walking speed",
+    "role": null,
+    "tags": [
+        "Fey",
+        "chaotic",
+        "agile"
+    ],
+    "adjectives": [
+        "small",
+        "elusive",
+        "chaotic"
+    ],
+    "description": "The Catterball is a small, agile creature resembling a rubbery ball, possessing impressive dexterity and charm. Its notable features include its ability to squeeze through tight spaces and perform incredible leaps.",
+    "memorable": "Its unique ability to morph and extend its body makes it incredibly difficult to pin down in combat.",
+    "goals": "Usually seeks to confuse and disrupt its foes with erratic movements.",
+    "relations": "Often found in the company of other fey creatures.",
+    "environment": "Typically inhabits enchanted forests or magical glades.",
+    "strengths": "Excellent mobility, can dodge attacks effectively and escape grapples.",
+    "weaknesses": "Low Strength and Intelligence makes it poor in physical confrontations.",
+    "attacks": "Slam attack causing bludgeoning damage and a 'Snap Back' thunder damage ability that affects creatures nearby.",
+    "most_powerful_ability": "Standing Leap allows it to cover impressive distances in a single jump.",
+    "equipment": null,
+    "senses": "Blindsight out to 30 feet, allowing it to perceive its surroundings without sight.",
+    "skills": "Possesses passive Perception which helps it notice its environment.",
+    "additional_information": [
+        "Immunity to form-altering spells or effects",
+        "Advantage on checks to escape grapples",
+        "Can roll into a ball for increased reach",
+        "Can be deafened by its own thunder attack",
+        "Damages creatures in its radius when returning to true form"
+    ],
+    "damage_types": [
+        "thunder"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "small elusive fey with impressive leaps",
+        "chaotic rubbery fey capable of jumps",
+        "monster that can squeeze through tight spaces",
+        "confusing small creature with thunder attacks",
+        "fey that can change form and evade grapples"
+    ]
+}

@@ -1,6 +1,10 @@
 <MonsterName/>Knight</MonsterName>
 <CreatureType/>Humanoid</CreatureType>
-
+<Subtype/>any race</Subtype>
+<Subtype/>any lineage</Subtype>
+<CR/>3</CR>
+<AC/>18 (plate)</AC>
+<HP/>52</HP>
 <summary>A Knight is a heavily armored warrior, typically sworn to a code of chivalry or loyalty to a noble lord. Clad in plate armor and wielding a sword, lance, or shield, Knights are trained from a young age in combat, riding, and leadership. They often serve as commanders in armies or protectors of the realm, upholding justice and honor. Knights are disciplined and skilled in both mounted and foot combat, and they fight with a sense of duty and purpose. Though noble in their ideals, some Knights may be driven by personal ambition or the demands of their lords.</summary>
 
 <summary>The Knight is a Medium humanoid known for their combat prowess and leadership on the battlefield. With a formidable armor class of 18 and a solid pool of hit points totaling 52, the Knight excels in melee combat, capable of delivering significant damage with their greatsword or lance while also offering support to allies. Their challenge rating of 3 makes them a strong opponent for mid-level adventurers. Notably, the Knight possesses the special ability "Brave," allowing them to stand firm against fear effects. However, while their Dexterity is average, they are primarily built to engage directly in combat with strength and tactical thinking, which makes them quite effective in their role as a frontline warrior.</summary>
@@ -65,6 +69,7 @@ Overall, the Knight is a well-rounded combatant capable of delivering significan
 
 Source: 5e_srd
 
+<statblock>
 ### Knight
 
 *Medium humanoid (any race), any alignment*
@@ -103,7 +108,8 @@ Source: 5e_srd
 
 ***Parry***. The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.
 
-**Knights** are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.
+**Knights** are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.</statblock>
+
 
 
 
@@ -111,6 +117,7 @@ Source: 5e_srd
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight
 
 *Medium* *Humanoid*
@@ -143,6 +150,7 @@ Source: 5e_artisinal_monsters
 - **Knightly Inspiration (1/Day):** The knight inspires creatures of their choice within 30 feet that can hear and understand them. For the next minute inspired creatures gain an expertise die (1d4) on attack rolls and saving throws. A creature can benefit from only one Knightly Inspiration at a time and the knight cannot target themselves.
 
 
+</statblock>
 
 
 
@@ -151,6 +159,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Knight
 
 *Medium humanoid (any lineage)*
@@ -184,5 +193,6 @@ Source: 5e_artisinal_monsters
 
 - **Champion’s Challenge.** The knight challenges one creature it can see within 30 feet of it. The target must succeed on a DC 13 CHA save or have disadvantage on attack rolls against creatures that aren’t the knight until the end of its next turn.
 
+</statblock>
 
 

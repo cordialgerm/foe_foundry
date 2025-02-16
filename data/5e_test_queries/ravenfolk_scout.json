@@ -1,0 +1,25 @@
+{
+    "name": "Ravenfolk Scout",
+    "queries": [
+        {
+            "query": "stealthy bird-like humanoid that can mimic sounds and thrives in darkness",
+            "variant": "humanoid that mimics animal sounds and is good in the dark"
+        },
+        {
+            "query": "medium neutral creature with good perception that wears studded leather",
+            "variant": "medium-sized humanoid in studded leather armor with high perception"
+        },
+        {
+            "query": "Ravenfolk Scout abilities and tactics in combat involving mimicry and blinding",
+            "variant": "tactics of Ravenfolk Scout using mimicry to confuse enemies and blind them"
+        },
+        {
+            "query": "humanoid expert in stealth and deception with darkvision and ghost wings",
+            "variant": "stealthy humanoid with darkvision and the ability to create ghostly wings"
+        },
+        {
+            "query": "character that uses ranged attacks and can blind foes with its wings",
+            "variant": "ranged attack capable creature that can blind enemies with phantom wings"
+        }
+    ]
+}

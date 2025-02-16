@@ -1,6 +1,8 @@
 <MonsterName/>Naizu-Ha</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>6</CR>
+<AC/>17 (natural armor)</AC>
+<HP/>117</HP>
 <summary>The Naizu-Ha is a small fey creature with a neutral evil alignment, making it a cunning and treacherous opponent in the world of Dungeons & Dragons. Its notable strengths lie in its defensive capabilities, featuring a high Armor Class of 17 due to natural armor, and a significant pool of Hit Points totaling 117, which allows it to withstand considerable damage in combat. The Naizu-Ha excels at stealth, reflected in its +5 modifier, and possesses powerful attack options, allowing it to deliver substantial damage with multiple attack actions. However, it has average Wisdom and Intelligence scores, which may limit its effectiveness in certain cognitive tasks. Overall, the Naizu-Ha is a formidable foe that can manipulate combat situations to its advantage, while its special abilities can hinder opponents significantly.</summary>
 
 <detail>
@@ -35,6 +37,7 @@ In combat, the Naizu-Ha's abilities create a unique combination of offense and d
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Naizu-Ha
 
 *Small* *Fey* *neutral evil*
@@ -69,5 +72,6 @@ Source: 5e_artisinal_monsters
 - **Dagger Legs:** Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) piercing damage.
 
 
+</statblock>
 
 

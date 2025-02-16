@@ -1,6 +1,8 @@
 <MonsterName/>Gremlin, Bilge Bosun</MonsterName>
 <CreatureType/>Fey</CreatureType>
-
+<CR/>2</CR>
+<AC/>15 (natural)</AC>
+<HP/>60</HP>
 <summary>The Bilge Bosun Gremlin is a cunning and malevolent small fey creature known for creating chaos and misfortune wherever it goes. Its role in combat is primarily disruptive, utilizing its unique abilities to hinder the effectiveness of opponents and their equipment. With a challenge rating of 2, it poses a moderate threat to adventurers, particularly due to its ability to affect nonmagical devices and its cunning multiattack capabilities. The gremlin has good Dexterity and Intelligence, which allow for nimble movements and clever strategies, but its average physical strength and wisdom make it weaker in direct confrontations. It excels in environments where moisture is present, and takes advantage of its amphibious nature to navigate both aquatic and terrestrial landscapes effectively.</summary>
 
 <detail>
@@ -19,6 +21,7 @@ Overall, the Bilge Bosun Gremlin thrives on confusion and disruption, utilizing 
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Gremlin, Bilge Bosun
 
 *Small* *Fey* *neutral evil*
@@ -52,5 +55,6 @@ Source: 5e_artisinal_monsters
 - **Makeshift Weapon:** Melee or Ranged Weapon Attack: +6 to hit 5 ft. or range 20/60' one target 6 (1d6+3) bludgeoning damage P or S.
 
 
+</statblock>
 
 

@@ -1,0 +1,25 @@
+{
+    "name": "Young Blue Dragon Zombie",
+    "queries": [
+        {
+            "query": "large undead dragon that can resurrect humanoids as zombies",
+            "variant": "big zombie dragon that can bring back humanoids as zombies"
+        },
+        {
+            "query": "creature with necrotic breath attack and high Constitution",
+            "variant": "monster that has necrotic breath and very high Constitution score"
+        },
+        {
+            "query": "undead dragon with lightning immunity and poor Dexterity",
+            "variant": "zombie dragon immune to lightning with low Dexterity scores"
+        },
+        {
+            "query": "creature that has Undead Fortitude and multiattack capabilities",
+            "variant": "monster with ability to withstand death and make multiple attacks"
+        },
+        {
+            "query": "zombie dragon with darkvision and rotting breath ability",
+            "variant": "dragon zombie that can see in the dark and has rotting breath attack"
+        }
+    ]
+}

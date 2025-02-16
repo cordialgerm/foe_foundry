@@ -1,0 +1,25 @@
+{
+    "name": "Worg",
+    "queries": [
+        {
+            "query": "large wolf-like creature that hunts and devours prey in forests",
+            "variant": "large creature like a wolf that hunts and eats prey in woods"
+        },
+        {
+            "query": "cunning predatory monster that can speak and is allied with goblins",
+            "variant": "sly monster that can talk and partners with goblins"
+        },
+        {
+            "query": "malevolent creature that uses ambush tactics and has keen senses",
+            "variant": "evil creature using surprise attacks with sharp senses"
+        },
+        {
+            "query": "fierce predator known for intimidation and vicious bite attacks",
+            "variant": "fierce beast known for its intimidating presence and vicious bites"
+        },
+        {
+            "query": "forest-dwelling creature that frightens enemies with a howling ability",
+            "variant": "creature from the woods that scares foes with a howling power"
+        }
+    ]
+}

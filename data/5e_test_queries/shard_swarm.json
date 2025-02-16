@@ -1,0 +1,25 @@
+{
+    "name": "Shard Swarm",
+    "queries": [
+        {
+            "query": "construct swarm of sharp shards that can fly and conceal itself",
+            "variant": "shards flying construct that can hide and swarm"
+        },
+        {
+            "query": "medium-sized creature that restrains foes and is vulnerable to antimagic",
+            "variant": "medium creature that can restrain and is weak to antimagic"
+        },
+        {
+            "query": "tactical swarm monster that deals slashing damage and uses disguises",
+            "variant": "disguise using swarm that inflicts slashing damage and is tactical"
+        },
+        {
+            "query": "shard swarm that can envelop creatures and evade attacks",
+            "variant": "enveloping shard swarm that can evade attacks"
+        },
+        {
+            "query": "aggressive flying construct that controls the battlefield through swarming",
+            "variant": "flying offensive construct that uses swarming tactics to control the field"
+        }
+    ]
+}

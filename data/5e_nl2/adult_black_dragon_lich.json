@@ -1,0 +1,55 @@
+{
+    "name": "Adult Black Dragon Lich",
+    "creature_type": "Undead",
+    "alignment": "null",
+    "size": "Huge",
+    "hp": 253,
+    "ac": 19,
+    "srd": false,
+    "cr": "17",
+    "movement": "walk 40 ft., fly 80 ft., swim 40 ft.",
+    "role": "Artillery",
+    "tags": [
+        "undead",
+        "dragon",
+        "lich",
+        "spellcaster"
+    ],
+    "adjectives": [
+        "formidable",
+        "menacing",
+        "tactical",
+        "powerful"
+    ],
+    "description": "The Adult Black Dragon Lich combines the menacing presence of a dragon with the dark magic of undeath. Its body is an amalgamation of draconic grandeur and the eerie essence of a lich, featuring scales that shimmer with an ominous shade of black.",
+    "memorable": "It is a tactical presence on the battlefield with the capability to manipulate its surroundings using spells and its unique abilities.",
+    "goals": "To exert control over the battlefield, potentially seeking revenge or power through its undead existence.",
+    "relations": "Might be encountered alongside other undead creatures or as a servant to dark and powerful entities.",
+    "environment": "Typically found in ancient ruins, dark lairs, or hidden water bodies that cater to its Ambusher ability.",
+    "strengths": "High damage immunities to acid, necrotic, and poison, alongside strong saving throws, make it a resilient foe.",
+    "weaknesses": "Susceptibility to radiant damage common among undead.",
+    "attacks": "Employs a mix of physical damage from its bites and claws, alongside powerful acid damage from its spit and breath.",
+    "most_powerful_ability": "Acid Breath attack causing significant area damage alongside a blinding effect, amplifying its lethal threat.",
+    "equipment": null,
+    "senses": "Possesses blindsight up to 60 feet and a remarkable passive Perception score of 20, making it difficult to evade.",
+    "skills": "Well-versed in stealth, history, and perception, enhancing its versatility in various scenarios.",
+    "additional_information": [
+        "Can create a sphere of magical darkness that normal vision cannot penetrate.",
+        "Utilizes terrifying roars to frighten its enemies.",
+        "Has an advantage on Stealth checks while submerged in water.",
+        "Ability to cast spells innately without material components like animate dead and fog cloud.",
+        "Grapples targets while dealing damage with its bite attack."
+    ],
+    "damage_types": [
+        "acid",
+        "necrotic"
+    ],
+    "spellcasting": "Innate spellcasting with access to spells such as animate dead and fog cloud, using Charisma as its spellcasting ability.",
+    "test_queries": [
+        "undead dragon with dark magic",
+        "powerful lich dragon",
+        "formidable black dragon lich",
+        "dragon with acid attacks",
+        "tactical undead dragon"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Ravenfolk Warrior",
+    "queries": [
+        {
+            "query": "humanoid creature that can mimic sounds and uses magical weapons",
+            "variant": "humanoid that mimics sounds and wields magical weapons"
+        },
+        {
+            "query": "medium-sized fighter with a focus on stealth and agility in combat",
+            "variant": "medium fighter focused on agility and stealth during combat"
+        },
+        {
+            "query": "raven-like warrior known for its radiant damage and dexterity skills",
+            "variant": "raven warrior famous for dexterity skills and dealing radiant damage"
+        },
+        {
+            "query": "stealthy humanoid that can blind enemies with its wings and deal radiant damage",
+            "variant": "humanoid that blinds foes with wings while dealing radiant damage"
+        },
+        {
+            "query": "creature that thrives in combat with a mix of melee and magical attacks",
+            "variant": "combat creature using both magical and melee attacks effectively"
+        }
+    ]
+}

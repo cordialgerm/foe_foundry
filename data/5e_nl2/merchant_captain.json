@@ -1,0 +1,53 @@
+{
+    "name": "Merchant Captain",
+    "creature_type": "Humanoid",
+    "alignment": "any alignment",
+    "size": "Medium",
+    "hp": 104,
+    "ac": 15,
+    "srd": false,
+    "cr": "6",
+    "movement": "walk 30 ft.",
+    "role": "Leader",
+    "tags": [
+        "negotiator",
+        "spellcaster",
+        "support"
+    ],
+    "adjectives": [
+        "skilled",
+        "resourceful",
+        "charismatic"
+    ],
+    "description": "The Merchant Captain is a charismatic humanoid skilled in negotiation, with a sharp tongue and quick wits. They wield a rapier and use clever quips to inflict psychic damage.",
+    "memorable": "The ability to confound foes with Fast Talk and inspire allies demonstrates strategic mastery.",
+    "goals": "To lead, support allies, and manipulate situations for advantageous outcomes.",
+    "relations": "May interact with merchants, sailors, and adventurers; often leads a crew or party.",
+    "environment": "Commonly found in bustling marketplaces, aboard ships, or in social gathering spots.",
+    "strengths": "Exceptional Charisma allows for effective spellcasting and high persuasion; strong agility.",
+    "weaknesses": "Low Strength may make them vulnerable in direct physical combats.",
+    "attacks": "Employs a rapier for close combat and uses psychic damage from verbal quips.",
+    "most_powerful_ability": "Fast Talk, which can severely hinder opponents' effectiveness in battle.",
+    "equipment": "Carries a rapier and wears studded leather armor for better agility.",
+    "senses": "Passive Perception of 14 reflects attentiveness to surroundings.",
+    "skills": "Possesses proficiency in Dexterity saving throws and strong Charisma saving throws.",
+    "additional_information": [
+        "Can use Inspiration to aid allies' rolls.",
+        "Has a variety of useful spells for versatility.",
+        "Capable of manipulating the battlefield using charm and tactics.",
+        "Excels in both combat and social interactions.",
+        "Has a Multiattack feature combining physical and spell attacks."
+    ],
+    "damage_types": [
+        "poison",
+        "psychic"
+    ],
+    "spellcasting": "Utilizes Charisma for spellcasting, including support and utility spells.",
+    "test_queries": [
+        "charismatic leader with spellcasting abilities",
+        "merchant captain skilled in negotiation and combat",
+        "humanoid that uses psychic quips in battle",
+        "cunning negotiator with multiattack options",
+        "merchant captain able to inspire allies"
+    ]
+}

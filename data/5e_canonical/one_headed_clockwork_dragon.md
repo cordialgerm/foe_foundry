@@ -1,6 +1,8 @@
 <MonsterName/>One-Headed Clockwork Dragon</MonsterName>
 <CreatureType/>Construct</CreatureType>
-
+<CR/>8</CR>
+<AC/>16 (natural armor)</AC>
+<HP/>178</HP>
 <summary>The One-Headed Clockwork Dragon is a Large Construct that embodies advanced mechanical design and formidable combat capabilities. With an Armor Class of 16 and a significant pool of 178 hit points, this creature possesses good defensive and offensive traits, making it a challenging opponent in battle. With a Challenge Rating of 8, it is suitable for parties of mid-level adventurers. This dragon is unaligned, which means it does not adhere to moral guidelines, and thus can pose a serious threat to adventurers without any reason to hold back. Its strengths lie in its ability to deal substantial damage, high durability, magical resistances, and unique abilities tied to circlets that allow telepathic communication and shared experiences with its wearers. However, if those circlet wearers are not present, the dragon becomes hostile, viewing all creatures as enemies. </summary>
 
 <detail>
@@ -23,6 +25,7 @@ Overall, the One-Headed Clockwork Dragon is a highly tactical and powerful adver
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # One-Headed Clockwork Dragon
 
 *Large* *Construct* *unaligned*
@@ -65,5 +68,6 @@ Each circlet is a magic item that must be attuned.
 - **Tail Sweep:** The dragon swings its bladed tail. Each creature within 10 feet of the dragon must make a DC 17 Dexterity saving throw, taking 15 (2d8 + 6) slashing damage on a failed save, or half as much damage on a successful one.
 
 
+</statblock>
 
 

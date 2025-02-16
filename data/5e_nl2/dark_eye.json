@@ -1,0 +1,55 @@
+{
+    "name": "Dark Eye",
+    "creature_type": "Humanoid",
+    "alignment": "neutral evil",
+    "size": "Medium",
+    "hp": 71,
+    "ac": 16,
+    "srd": false,
+    "ac_description": "breastplate",
+    "cr": "3",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "humanoid",
+        "psychic",
+        "darkness",
+        "stealth"
+    ],
+    "adjectives": [
+        "sinister",
+        "manipulative",
+        "resilient"
+    ],
+    "description": "The Dark Eye is a humanoid creature known for its manipulative and sinister nature, wearing a breastplate that enhances its defense.",
+    "memorable": "Excels at dealing psychic damage and incapacitating foes, creating tension in combat with its Gaze of Shadows ability.",
+    "goals": "To control and dominate opponents using manipulation and combat prowess.",
+    "relations": "Related to other shadowy humanoids or creatures that thrive in darkness.",
+    "environment": "Typically found in dark or shadowy locations, avoiding sunlight.",
+    "strengths": "Possesses blindsight for perception and can avoid crowd control effects with Dark Devotion.",
+    "weaknesses": "Has disadvantage on attack rolls and Perception checks in sunlight, making it vulnerable during the day.",
+    "attacks": "Makes two dagger attacks, dealing piercing damage combined with cold damage.",
+    "most_powerful_ability": "Gaze of Shadows allows it to incapacitate creatures, creating a psychological effect in combat.",
+    "equipment": "Wields daggers for melee and ranged combat.",
+    "senses": "Possesses blindsight up to 60 feet, allowing it to perceive without relying on sight.",
+    "skills": "Has proficiency in Perception, reflecting its keen awareness.",
+    "additional_information": [
+        "Has advantage on saving throws against being charmed or frightened.",
+        "Can choose to avert its gaze to avoid its own abilities.",
+        "Effective at controlling the battlefield with psychic damage.",
+        "Relies on darkness and stealth for tactical advantage.",
+        "Moderate threat level, presenting opportunities for strategic encounters."
+    ],
+    "damage_types": [
+        "psychic",
+        "cold"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "creature with psychic damage abilities",
+        "humanoid that thrives in darkness and shadows",
+        "manipulative monster with gaze attack effects",
+        "psychic attacker that is weak in sunlight",
+        "dark creature with powerful incapacitating ability"
+    ]
+}

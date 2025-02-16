@@ -1,0 +1,25 @@
+{
+    "name": "Warhorse Skeleton",
+    "queries": [
+        {
+            "query": "large undead horse created by necromancy that serves undead riders",
+            "variant": "undead large horse made by necromancy serving riders who are undead"
+        },
+        {
+            "query": "skeleton steed that charges into battle without hesitation",
+            "variant": "charging skeleton horse that enters battle without holding back"
+        },
+        {
+            "query": "resilient skeletal horse with bludgeoning vulnerability",
+            "variant": "skeleton horse that is tough but vulnerable to bludgeoning damage"
+        },
+        {
+            "query": "horse-like undead found in ancient tombs and battlefields",
+            "variant": "undead horse-like creature located in old tombs and battlefields"
+        },
+        {
+            "query": "animated warhorse remains that lack flesh but are strong in battle",
+            "variant": "remains of a warhorse animated for battle that has no flesh"
+        }
+    ]
+}

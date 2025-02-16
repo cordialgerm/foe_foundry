@@ -1,0 +1,53 @@
+{
+    "name": "Warhordling Orc Warrior",
+    "creature_type": "Humanoid",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 11,
+    "ac": 13,
+    "srd": false,
+    "cr": "1/4",
+    "movement": "walk 30 ft.",
+    "role": null,
+    "tags": [
+        "orc",
+        "warrior",
+        "humanoid",
+        "combat"
+    ],
+    "adjectives": [
+        "brutish",
+        "tenacious",
+        "aggressive"
+    ],
+    "description": "The Warhordling Orc Warrior embodies brute strength with a rugged appearance, reflecting typical orc characteristics.",
+    "memorable": "Its aggressive charge ability allows for rapid engagement in combat, making it a formidable opponent despite low HP.",
+    "goals": "To engage enemies aggressively and assert dominance in battle.",
+    "relations": "Orcs and other humanoid warriors may be encountered alongside it.",
+    "environment": "Typically found in combat scenarios, possibly in warbands or tribal settings.",
+    "strengths": "Good athletic and survival skills, capable of navigating various terrains.",
+    "weaknesses": "Average intelligence and charisma, limiting tactical options and social interactions.",
+    "attacks": "Greataxe melee attack deals significant slashing damage with a good chance to hit.",
+    "most_powerful_ability": "Aggressive Charge allows it to quickly close the distance to engage enemies.",
+    "equipment": null,
+    "senses": "It has passive Perception of 14, reflecting sharp awareness of its surroundings.",
+    "skills": "Proficient in athletics, stealth, perception, and survival, showcasing its physical abilities.",
+    "additional_information": [
+        "Blend of combat and survival skills.",
+        "Average intelligence and charisma, emphasizing brute strength.",
+        "Moderate HP allows it to withstand several attacks.",
+        "Reach of 5 feet with its melee weapon attack.",
+        "Possesses minimal communication skills through limited language."
+    ],
+    "damage_types": [
+        "slashing"
+    ],
+    "spellcasting": null,
+    "test_queries": [
+        "brutish warrior with a greataxe",
+        "orc warrior with aggressive charge ability",
+        "medium humanoid with athletic skills",
+        "orc fighter with strong survival instincts",
+        "aggressive charging orc in battle"
+    ]
+}

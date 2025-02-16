@@ -1,0 +1,52 @@
+{
+    "name": "Black Sun Orc",
+    "creature_type": "Humanoid",
+    "alignment": "chaotic evil",
+    "size": "Medium",
+    "hp": 65,
+    "ac": 14,
+    "srd": false,
+    "cr": "2",
+    "movement": "30 ft. walking, 20 ft. climbing",
+    "role": null,
+    "tags": [
+        "orc",
+        "chaotic",
+        "predator",
+        "stealthy"
+    ],
+    "adjectives": [
+        "formidable",
+        "cunning",
+        "stealthy",
+        "aggressive"
+    ],
+    "description": "The Black Sun Orc is a medium humanoid with notable physical strength and agility, often clad in hide armor, making it a dangerous foe in both melee and ranged combat. Its dark skin helps it blend into rocky environments.",
+    "memorable": "The Black Sun Orc possesses unique abilities that allow it to thrive in low-visibility conditions and rocky terrains, whilst being notably hindered in bright light.",
+    "goals": "Typically seeks to dominate and conquer, demonstrating aggression towards adventurers and securing territory.",
+    "relations": "May be found alongside other chaotic evil creatures or orc tribes, representing a common threat in wilderness regions.",
+    "environment": "Commonly found in rocky terrains or wilderness areas, particularly in dimly lit or dark environments.",
+    "strengths": "High physical strength and the ability to camouflage effectively in rocky terrains; can enhance movement towards targets.",
+    "weaknesses": "Disadvantaged in bright light situations, affecting combat effectiveness and perception.",
+    "attacks": "Utilizes a Multiattack action, striking with either a heavy greatclub for melee combat or a sling for ranged assaults.",
+    "most_powerful_ability": "Aggressive allows it to rapidly close distance to engage opponents, increasing its threat on the battlefield.",
+    "equipment": "Carries a greatclub and a sling as its primary weapons.",
+    "senses": "Possesses darkvision, allowing it to see in darkness as if it were dim light and can see through magical darkness.",
+    "skills": "Proficient in Stealth, allowing it to ambush effectively, and has good capabilities in Perception and Survival.",
+    "additional_information": [
+        "Boasts high Strength and Dexterity, facilitating effective physical attacks.",
+        "Black Sun Sight enables it to see in magical darkness, providing an edge in stealth.",
+        "Stone Camouflage provides a strategic advantage in rocky environments.",
+        "Has a low Intelligence and Charisma, limiting social interactions.",
+        "Typically engages in combat to assert dominance or protect its territory."
+    ],
+    "damage_types": [],
+    "spellcasting": null,
+    "test_queries": [
+        "rocky terrain predator",
+        "stealthy orc fighter",
+        "darkvision combatant",
+        "aggressive orc ambusher",
+        "chaotic orc monster"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Miremal",
+    "queries": [
+        {
+            "query": "small fey creature that thrives in swampy environments",
+            "variant": "little fey monster that loves wet swamps"
+        },
+        {
+            "query": "chaotic evil creature skilled in stealth and amphibious",
+            "variant": "evil fey that is agile and can breathe underwater"
+        },
+        {
+            "query": "monster with swamp camouflage that uses hit-and-run tactics",
+            "variant": "creature with blending ability that attacks quickly"
+        },
+        {
+            "query": "deceptive fey with abilities to blind enemies and escape",
+            "variant": "tricky fey that can make foes blind and vanish"
+        },
+        {
+            "query": "Swamp monster with acid attack and strong stealth skills",
+            "variant": "swamp creature with corrosive ability and high sneaking"
+        }
+    ]
+}

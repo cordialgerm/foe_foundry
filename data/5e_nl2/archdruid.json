@@ -1,0 +1,59 @@
+{
+    "name": "Archdruid",
+    "creature_type": "Humanoid",
+    "creature_subtype": "any lineage",
+    "alignment": null,
+    "size": "Medium",
+    "hp": 210,
+    "ac": 17,
+    "srd": false,
+    "ac_description": "Nature\u2019s Champion",
+    "cr": "12",
+    "movement": "30 ft.",
+    "role": "Controller",
+    "tags": [
+        "nature",
+        "spellcaster",
+        "shapeshifter"
+    ],
+    "adjectives": [
+        "powerful",
+        "versatile",
+        "durable",
+        "elemental"
+    ],
+    "description": "The Archdruid is a powerful medium humanoid figure emanating the forces of nature. It possesses a remarkable Wisdom and has a high armor class, making it formidable in combat. Its ability to deal additional elemental damage and transform into a beast makes it unpredictable.",
+    "memorable": "The Archdruid's ability to change shape and its vast elemental damage output create uniquely dynamic combat scenarios.",
+    "goals": "Utilize the forces of nature to protect its domain and overwhelm enemies with a blend of magic and physical prowess.",
+    "relations": "Can be encountered alongside other druids and nature-affiliated creatures; may be a mentor to other spellcasters.",
+    "environment": "Usually found in natural environments such as forests, mountains, or deserts.",
+    "strengths": "High Wisdom boosts its spellcasting and perception, while resistance to multiple damage types enhances its durability.",
+    "weaknesses": "Lower Constitution and Charisma scores limit certain physical and social interactions.",
+    "attacks": "Utilizes powerful multiattacks, combining piercing and elemental damage in both melee and ranged forms.",
+    "most_powerful_ability": "Nature's Weapons allows the Archdruid's attacks to deal an extra 4d8 elemental damage, making its strikes particularly devastating.",
+    "equipment": "Thorned Staff, a melee weapon used in combat.",
+    "senses": "Perception score of 19 enables effective threat detection.",
+    "skills": "Proficient in Stealth but with an average score, making it somewhat effective at avoiding detection.",
+    "additional_information": [
+        "Can cast a variety of spells to control the battlefield and manipulate nature.",
+        "Capable of transforming into any beast with a challenge rating no higher than its own.",
+        "Has a spell save DC of 17, showcasing its strong Magical potency.",
+        "Access to numerous utility spells enhances its role as a controller.",
+        "Possesses strong elemental damage resistance."
+    ],
+    "damage_types": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        "thunder"
+    ],
+    "spellcasting": "Can cast a variety of druid spells, including utility and battlefield control abilities, with a focus on nature.",
+    "test_queries": [
+        "nature magic humanoid",
+        "shapeshifting druid",
+        "powerful archdruid characteristics",
+        "elemental damage spellcaster",
+        "rugged humanoid guardian of nature"
+    ]
+}

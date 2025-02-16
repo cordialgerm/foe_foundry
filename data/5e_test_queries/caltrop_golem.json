@@ -1,0 +1,25 @@
+{
+    "name": "Caltrop Golem",
+    "queries": [
+        {
+            "query": "medium-sized construct that ambushes enemies with caltrops",
+            "variant": "construct that is medium-sized and ambushes foes using caltrops"
+        },
+        {
+            "query": "golem with high dexterity and decent hit points",
+            "variant": "high dexterity golem that has decent hit points"
+        },
+        {
+            "query": "defensive monster that can scatter and reform",
+            "variant": "monster that can scatter and then reform for defense"
+        },
+        {
+            "query": "Caltrop Golem abilities in combat with magic resistance",
+            "variant": "combat abilities of Caltrop Golem with resistance to magic"
+        },
+        {
+            "query": "creature that immobilizes foes and attacks with steel shots",
+            "variant": "creature that can immobilize opponents and attack using steel shots"
+        }
+    ]
+}

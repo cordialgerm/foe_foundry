@@ -1,0 +1,25 @@
+{
+    "name": "Rakshasa",
+    "queries": [
+        {
+            "query": "fiendish creature that can shapeshift and uses illusions",
+            "variant": "fiend that can change shape and casts illusions"
+        },
+        {
+            "query": "tiger-headed fiend known for deception and manipulation",
+            "variant": "fiend with a tiger head famous for trickery and manipulation"
+        },
+        {
+            "query": "magic-using humanoid with reversed hands and charm abilities",
+            "variant": "humanoid with reversed hands that uses magic and has charm powers"
+        },
+        {
+            "query": "intelligent monster that flies and charms its victims",
+            "variant": "smart creature that can fly and charms its prey"
+        },
+        {
+            "query": "cunning fiend that prefers to manipulate from the shadows",
+            "variant": "sly fiend that likes to control from behind the scenes"
+        }
+    ]
+}

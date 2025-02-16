@@ -1,0 +1,25 @@
+{
+    "name": "Peryton",
+    "queries": [
+        {
+            "query": "large flying monster with avian and deer features",
+            "variant": "big flying creature that has avian and deer characteristics"
+        },
+        {
+            "query": "monster with sharp claws that can fly and is a medium challenge",
+            "variant": "creature with talons that is capable of flight and poses a moderate threat"
+        },
+        {
+            "query": "brutal combat creature found in the wild with keen senses",
+            "variant": "ferocious fighting beast located in nature known for sharp senses"
+        },
+        {
+            "query": "monster with special keen sight and smell abilities that can attack multiple times",
+            "variant": "creature possessing keen sight and smell that can do multiple attacks"
+        },
+        {
+            "query": "Peryton's gore attack and its ability to rip out hearts",
+            "variant": "Peryton's heart removal ability and its gore attack"
+        }
+    ]
+}

@@ -1,6 +1,8 @@
 <MonsterName/>Awakened Shrub</MonsterName>
 <CreatureType/>Plant</CreatureType>
-
+<CR/>0</CR>
+<AC/>9</AC>
+<HP/>10</HP>
 <summary>The Awakened Shrub is a small, animated plant brought to life by magic. It typically resembles an ordinary shrub or bush, though its leaves and branches twitch and move with surprising speed. Although it lacks intelligence and physical power, the Awakened Shrub can move about and follow simple commands. These creatures are often created by druids or wizards to serve as sentinels or guardians in gardens and forests. Though not aggressive, they will defend their territory if threatened, using their small branches to swipe at intruders.</summary>
 
 <summary>The Awakened Shrub is a small plant creature that serves as a surprising and deceptive combatant due to its unique ability to blend into its surroundings. With an Armor Class of 9, it is exceptionally easy to hit, but it compensates with a relatively low challenge rating of 0, making it a minor threat in encounters. This creature has minimal strength and dexterity, with values of 2 and 8, respectively, making combat effectiveness quite poor. While it has few hit points (7, calculated as 2d6), it can be a nuisance with its special abilities. The Awakened Shrub has vulnerabilities to fire damage, which can be particularly devastating to it, while it resists both bludgeoning and piercing damage, allowing for greater survivability against non-fire attacks. It has the ability to communicate in one language known by its creator, providing potential interaction opportunities with those who understand the language.</summary>
@@ -35,6 +37,7 @@ Overall, the Awakened Shrub represents a quirky and non-threatening presence in 
 
 Source: 5e_srd
 
+<statblock>
 ### Awakened Shrub
 
 *Small plant, unaligned*
@@ -65,7 +68,8 @@ Source: 5e_srd
 
 ***Rake***. *Melee Weapon Attack:* +1 to hit, reach 5 ft., one target. *Hit:* 1 (1d4-1) slashing damage.
 
-An **awakened shrub** is an ordinary shrub given sentience and mobility by the *awaken* spell or similar magic.
+An **awakened shrub** is an ordinary shrub given sentience and mobility by the *awaken* spell or similar magic.</statblock>
+
 
 
 
@@ -73,6 +77,7 @@ An **awakened shrub** is an ordinary shrub given sentience and mobility by the *
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Shrub
 
 *Small* *Plant*
@@ -102,6 +107,7 @@ Source: 5e_artisinal_monsters
 - **Rake:** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 slashing damage.
 
 
+</statblock>
 
 
 
@@ -110,6 +116,7 @@ Source: 5e_artisinal_monsters
 
 Source: 5e_artisinal_monsters
 
+<statblock>
 # Awakened Shrub
 
 *Small plant*
@@ -139,5 +146,6 @@ Source: 5e_artisinal_monsters
 - **Rake.** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage.
 - **Thorn.** Ranged Weapon Attack: +2 to hit, range 15/30 ft., one target. Hit: 2 (1d4) piercing damage.
 
+</statblock>
 
 

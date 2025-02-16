@@ -1,0 +1,25 @@
+{
+    "name": "Wind Witch",
+    "queries": [
+        {
+            "query": "plant creature that can fly and uses fire attacks",
+            "variant": "plant monster that flies and utilizes fire-based attacks"
+        },
+        {
+            "query": "chaotic evil flying plant that regenerates after being defeated",
+            "variant": "flying chaotic evil plant that regenerates upon defeat"
+        },
+        {
+            "query": "large plant that traps creatures and burns with fire damage",
+            "variant": "big plant that ensnares creatures and inflicts fire damage"
+        },
+        {
+            "query": "agile creature with low strength and fire-based powers",
+            "variant": "nimble monster possessing low physical strength and fire powers"
+        },
+        {
+            "query": "Wind Witch environmental preferences for flight and fire",
+            "variant": "Wind Witch liked environments that support flying and fire"
+        }
+    ]
+}
