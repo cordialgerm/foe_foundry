@@ -1,5 +1,3 @@
-from typing import List
-
 from ..damage import AttackType, DamageType
 from ..die import Die
 from .template import AttackTemplate
@@ -162,6 +160,20 @@ class _Crossbow(AttackTemplate):
         )
 
 
+class _Pistol(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Pistol",
+            attack_type=AttackType.RangedWeapon,
+            damage_type=DamageType.Piercing,
+            split_secondary_damage=True,
+            die=Die.d10,
+            die_count=1,
+            range=30,
+            range_max=90,
+        )
+
+
 class _Traps(AttackTemplate):
     def __init__(self):
         super().__init__(
@@ -242,6 +254,7 @@ Polearm: AttackTemplate = _Polearm()
 RapierAndShield: AttackTemplate = _RapierAndShield()
 Shortbow: AttackTemplate = _Shortbow()
 Shortswords: AttackTemplate = _Shortswords()
+Pistol: AttackTemplate = _Pistol()
 SpearAndShield: AttackTemplate = _SpearAndShield()
 SwordAndShield: AttackTemplate = _SwordAndShield()
 Staff: AttackTemplate = _Staff()

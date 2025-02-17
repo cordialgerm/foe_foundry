@@ -100,7 +100,9 @@ class _JustAScratch(PhysicallyTough):
     They can then take their turn normally."""
 
     def __init__(self):
-        super().__init__(name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(0.5 * stats.hp.average)
@@ -134,13 +136,13 @@ class _MagicResistance(MagicallyTough):
 class _LimitedMagicImmunity(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Limited Magic Immunity", source="SRD5.1 Rakshasa", power_level=HIGH_POWER
+            name="Limited Magic Immunity",
+            source="SRD5.1 Rakshasa",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        level = (
-            f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
-        )
+        level = f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
 
         feature = Feature(
             name="Limited Magic Immunity",
@@ -165,8 +167,8 @@ class _EliteRecovery(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Elite Recovery",
-            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw \
-                         against any effect on them that can be ended by a successful saving throw",
+            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw or ability check \
+                         against any effect on them that can be ended by a successful saving throw or ability check, no action required. On a success, the effect ends.",
             action=ActionType.Feature,
         )
         return [feature]

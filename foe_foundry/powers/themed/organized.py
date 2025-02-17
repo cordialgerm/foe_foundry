@@ -1,8 +1,5 @@
 from datetime import datetime
-from math import ceil, floor
-from typing import List, Tuple
-
-import numpy as np
+from typing import List
 
 from ...attributes import Stats
 from ...creature_types import CreatureType
@@ -48,7 +45,9 @@ class OrganizedPower(PowerWithStandardScoring):
 class _FanaticFollowers(OrganizedPower):
     def __init__(self):
         super().__init__(
-            name="Fanatic Followers", source="A5E SRD Crime Boss", power_level=HIGH_POWER
+            name="Fanatic Followers",
+            source="A5E SRD Crime Boss",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -73,7 +72,7 @@ class _InspiringCommander(OrganizedPower):
             name="Inspiring Commander",
             action=ActionType.Action,
             uses=1,
-            replaces_multiattack=2,
+            replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} inspires other creatures of its choice within 30 feet that can hear and understand it. \
                 For the next minute, inspired creatures gain a +{stats.attributes.proficiency} bonus to attack rolls and saving throws.",
         )

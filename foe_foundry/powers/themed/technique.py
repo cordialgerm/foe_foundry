@@ -105,7 +105,9 @@ class _BleedingAttack(Technique):
 
         if save_needed:
             dc = stats.difficulty_class
-            condition = f"must make a DC {dc} Constitution saving throw or gain {bleeding}"
+            condition = (
+                f"must make a DC {dc} Constitution saving throw or gain {bleeding}"
+            )
         else:
             condition = f"gains {bleeding}"
 
@@ -126,7 +128,9 @@ class _DazingAttack(Technique):
             require_roles={MonsterRole.Controller},
             attack_names=[natural.Tail, natural.Slam, weapon.Staff],
         )
-        super().__init__(name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dazed = conditions.Dazed()
@@ -191,7 +195,9 @@ class _ProneAttack(Technique):
             condition = "is knocked **Prone**"
         else:
             dc = stats.difficulty_class
-            condition = f"must make a DC {dc} Strength saving throw or be knocked **Prone**"
+            condition = (
+                f"must make a DC {dc} Strength saving throw or be knocked **Prone**"
+            )
 
         feature = Feature(
             name="Prone Attack",
@@ -216,6 +222,7 @@ class _SlowingAttack(Technique):
                 weapon.Whip,
                 weapon.Longbow,
                 weapon.Shortbow,
+                weapon.Pistol,
             ],
         )
         super().__init__(name="Slowing Attack", score_args=score_args)
@@ -226,7 +233,7 @@ class _SlowingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target's movement speed is reduced by a cumulative 10 feet until the end of its next turn",
+            description="On a hit, the target's movement speed is reduced by a cumulative 10 feet until the end of its next turn",
         )
         return [feature]
 
@@ -285,9 +292,7 @@ class _GrapplingAttack(Technique):
             condition = f"is **Grappled** (escape DC {dc})"
         else:
             dc = stats.difficulty_class
-            condition = (
-                f"must make a DC {dc} Strength saving throw or be **Grappled** (escape DC {dc})"
-            )
+            condition = f"must make a DC {dc} Strength saving throw or be **Grappled** (escape DC {dc})"
 
         feature = Feature(
             name="Grappling Attack",
@@ -329,7 +334,11 @@ class _BlindingAttack(Technique):
 class _FrighteningAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Leader,
+                MonsterRole.Ambusher,
+            },
             bonus_damage={DamageType.Psychic, DamageType.Necrotic},
             attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
@@ -341,7 +350,7 @@ class _FrighteningAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target is **Frightened** until the end of its next turn",
+            description="On a hit, the target is **Frightened** until the end of its next turn",
         )
         return [feature]
 
@@ -375,7 +384,9 @@ class _FreezingAttack(Technique):
             require_damage_exact_match=True,
             attack_names=[spell.Frostbolt],
         )
-        super().__init__(name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -400,7 +411,9 @@ class _ShockingAttack(Technique):
             require_damage_exact_match=True,
             attack_names=[spell.Shock, spell.Thundrousblast],
         )
-        super().__init__(name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -486,7 +499,7 @@ class _SappingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target has disadvantage on its next attack roll until the end of its next turn",
+            description="On a hit, the target has disadvantage on its next attack roll until the end of its next turn",
         )
         return [feature]
 
@@ -495,7 +508,13 @@ class _VexingAttack(Technique):
     def __init__(self):
         score_args = dict(
             bonus_roles={MonsterRole.Ambusher, MonsterRole.Leader},
-            attack_names=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
+            attack_names=[
+                "-",
+                weapon.Shortbow,
+                weapon.Shortswords,
+                weapon.RapierAndShield,
+                weapon.Pistol,
+            ],
         )
         super().__init__(name="Vexing Attack", score_args=score_args)
 
@@ -524,7 +543,9 @@ class _WeakeningAttack(Technique):
                 spell.Gaze,
             ],
         )
-        super().__init__(name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -724,7 +745,9 @@ class _Interception(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        distance = easy_multiple_of_five(stats.speed.fastest_speed / 2.0, min_val=5, max_val=30)
+        distance = easy_multiple_of_five(
+            stats.speed.fastest_speed / 2.0, min_val=5, max_val=30
+        )
         feature = Feature(
             name="Interception",
             action=ActionType.Reaction,
@@ -944,6 +967,7 @@ class _Sharpshooter(PowerWithStandardScoring):
                     weapon.Longbow,
                     weapon.Shortbow,
                     weapon.Crossbow,
+                    weapon.Pistol,
                 },
             ),
         )

@@ -5,7 +5,7 @@ from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
-from ..powers import MEDIUM_POWER, RIBBON_POWER, Power, select_powers
+from ..powers import Power, select_powers
 from ..powers.themed.warrior import PackTactics
 from ..role_types import MonsterRole
 from ..size import Size
@@ -59,9 +59,8 @@ def generate_tough(
 ) -> StatsBeingGenerated:
     # STATS
     stats = base_stats(
-        name=variant.name,
+        name=name,
         cr=cr,
-        reference_hps=[(32, 2), (82, 4)],
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
             Stats.DEX.scaler(StatScaling.Medium, 0.5),
@@ -95,10 +94,12 @@ def generate_tough(
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
     # ROLES
-    if variant is BossVariant:
-        stats = stats.copy(role=MonsterRole.Leader)
-    else:
-        stats = stats.copy(role=MonsterRole.Bruiser)
+    stats = stats.set_roles(
+        primary_role=MonsterRole.Leader
+        if variant is BossVariant
+        else MonsterRole.Bruiser,
+        additional_roles=[MonsterRole.Bruiser],
+    )
 
     # SKILLS
     stats = stats.copy(
@@ -141,28 +142,7 @@ def generate_tough(
         )
 
     # SPECIES CUSTOMIZATIONS
-    if species is DwarfSpecies:
-        stats = stats.copy(name=f"Dwarf {name}")
-        stats = stats.grant_resistance_or_immunity(resistances={DamageType.Poison})
-        stats = stats.apply_monster_dials(
-            MonsterDials(hp_multiplier=1.1, recommended_powers_modifier=-RIBBON_POWER)
-        )
-        stats = stats.copy(creature_subtype="Dwarf")
-    elif species is OrcSpecies:
-        stats = stats.copy(name=f"Orc {name}")
-        stats = stats.apply_monster_dials(
-            MonsterDials(
-                ac_modifier=-1,
-                recommended_powers_modifier=-RIBBON_POWER,
-                attack_damage_multiplier=1.1,
-            )
-        )
-        stats = stats.copy(creature_subtype="Orc")
-    elif species is HumanSpecies:
-        stats = stats.copy(name=name, creature_subtype="Human")
-        stats = stats.apply_monster_dials(
-            MonsterDials(recommended_powers_modifier=MEDIUM_POWER)
-        )
+    stats = species.alter_base_stats(stats)
 
     # ADDITIONAL POWERS
     def custom_filter(power: Power) -> bool:

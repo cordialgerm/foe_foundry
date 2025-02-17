@@ -44,6 +44,9 @@ class CreatureSpecies:
     name: str
     description: str
 
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats
+
 
 @dataclass
 class CreatureTemplate:

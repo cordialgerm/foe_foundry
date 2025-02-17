@@ -5,16 +5,16 @@ import numpy as np
 import pytest
 
 from foe_foundry import templates
-from foe_foundry.creatures import tough
+from foe_foundry.creatures import bandit
 
 
 def _ids(args: dict) -> str:
     return f"{args['name']}-{args['species_name']}"
 
 
-@pytest.mark.parametrize("args", tough.ToughTemplate.generate_options(), ids=_ids)
-def test_tough_statblocks(args: dict):
-    examples_dir = Path(__file__).parent.parent.parent / "examples" / "toughs"
+@pytest.mark.parametrize("args", bandit.BanditTemplate.generate_options(), ids=_ids)
+def test_bandit_statblocks(args: dict):
+    examples_dir = Path(__file__).parent.parent.parent / "examples" / "bandits"
     examples_dir.mkdir(exist_ok=True, parents=True)
 
     hash_key = _ids(args)
@@ -24,5 +24,5 @@ def test_tough_statblocks(args: dict):
         random_state = int.from_bytes(bytes, byteorder="little")
         return np.random.default_rng(seed=random_state)
 
-    stats = tough.ToughTemplate.generate(**args, rng_factory=rng_factory).finalize()
+    stats = bandit.BanditTemplate.generate(**args, rng_factory=rng_factory).finalize()
     templates.render_html_inline_page_to_path(stats, examples_dir / f"{stats.key}.html")

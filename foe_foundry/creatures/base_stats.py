@@ -21,7 +21,6 @@ loader = _Loader()
 def base_stats(
     name: str,
     cr: float,
-    reference_hps: tuple[float, float] | list[tuple[float, float]],
     stats: list[StatScaler],
 ) -> BaseStatblock:
     benchmark = loader.benchmark

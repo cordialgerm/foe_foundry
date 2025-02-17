@@ -39,7 +39,9 @@ class LeaderPower(PowerWithStandardScoring):
 class _CommandTheAttack(LeaderPower):
     def __init__(self):
         super().__init__(
-            name="Command the Attack", source="A5E SRD Knight Captain", power_level=HIGH_POWER
+            name="Command the Attack",
+            source="A5E SRD Knight Captain",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -48,7 +50,7 @@ class _CommandTheAttack(LeaderPower):
             description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
                           Creatures who can see or hear {stats.roleref} can use their reaction to make a single weapon attack with advantage.",
             action=ActionType.Action,
-            replaces_multiattack=2,
+            replaces_multiattack=1,
             recharge=5,
         )
         return [feature]
@@ -83,7 +85,9 @@ class _Encouragement(LeaderPower):
 
 class _Intimidate(LeaderPower):
     def __init__(self):
-        super().__init__(name="Intimidate", source="Foe Foundry", require_stats=Stats.CHA)
+        super().__init__(
+            name="Intimidate", source="Foe Foundry", require_stats=Stats.CHA
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -115,6 +119,7 @@ class _StayInFormation(LeaderPower):
             name="Stay in Formation",
             action=ActionType.Action,
             recharge=5,
+            replaces_multiattack=1,
             description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
                 Creatures who can see or hear {stats.roleref} can use their reaction to move up to half their speed without provoking opportunity attacks.",
         )

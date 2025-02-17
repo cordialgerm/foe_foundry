@@ -2,7 +2,6 @@ from numpy.random import Generator
 
 from ..damage import Attack, AttackType, Damage, DamageType
 from ..die import Die, DieFormula
-from ..size import Size
 from ..statblocks.base import BaseStatblock
 from .fix import adjust_attack
 
@@ -71,6 +70,27 @@ class AttackTemplate:
 
         return stats.copy(attack=primary_attack)
 
+    def add_as_secondary_attack(
+        self,
+        stats: BaseStatblock,
+        scalar: float = 1.0,
+        **attack_args,
+    ) -> BaseStatblock:
+        return stats.add_attack(
+            name=self.attack_name,
+            scalar=scalar,
+            replaces_multiattack=1,
+            is_equivalent_to_primary_attack=True,
+            attack_type=self.attack_type,
+            damage_type=self.damage_type,
+            die=self.die,
+            range=self.range,
+            range_max=self.range_max,
+            reach=self.reach,
+            die_count=self.die_count,
+            **attack_args,
+        )
+
     def finalize_attacks(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         # repair the to-hit and damage formulas of the primary attack
         primary_attack = adjust_attack(
@@ -84,7 +104,10 @@ class AttackTemplate:
         # repair the to-hit and damage formulas of the secondary attacks
         additional_attacks = [
             adjust_attack(
-                stats=stats, attack=a, die=a.damage.formula.primary_die_type, adjust_to_hit=True
+                stats=stats,
+                attack=a,
+                die=a.damage.formula.primary_die_type,
+                adjust_to_hit=True,
             )
             for a in stats.additional_attacks
         ]
@@ -127,7 +150,8 @@ class AttackTemplate:
             mod=current_mod, die_vals={current_die: min_dice_count}
         )
         new_damage = Damage(
-            formula=primary_damage_formula, damage_type=primary_attack.damage.damage_type
+            formula=primary_damage_formula,
+            damage_type=primary_attack.damage.damage_type,
         )
 
         secondary_damage_formula = DieFormula.target_value(target=available_damage)

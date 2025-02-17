@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
 
 from ..ac import ArmorClassTemplate
-from ..attributes import Attributes
+from ..attributes import Attributes, Skills
 from ..creature_types import CreatureType
 from ..damage import Attack, AttackType, Condition, Damage, DamageType
 from ..die import Die, DieFormula
@@ -87,15 +87,17 @@ class BaseStatblock:
 
     @property
     def selfref(self) -> str:
-        if self.creature_subtype is not None:
-            return f"the {self.creature_subtype}"
+        if self.creature_class is not None:
+            return f"the {self.creature_class.lower()}"
+        elif self.creature_subtype is not None:
+            return f"the {self.creature_subtype.lower()}"
         else:
             return f"the {self.creature_type.value.lower()}"
 
     @property
     def roleref(self) -> str:
         if self.creature_class is not None:
-            return f"the {self.creature_class}"
+            return f"the {self.creature_class.lower()}"
         else:
             return f"the {self.role.value.lower()}"
 
@@ -312,6 +314,14 @@ class BaseStatblock:
             nonmagical_resistance=new_nonmagical_resistance,
         )
 
+    def grant_proficiency_or_expertise(self, *skills: Skills) -> BaseStatblock:
+        attributes = self.attributes.grant_proficiency_or_expertise(*skills)
+        return self.copy(attributes=attributes)
+
+    def grant_save_proficiency(self, *saves: Stats) -> BaseStatblock:
+        attributes = self.attributes.grant_save_proficiency(*saves)
+        return self.copy(attributes=attributes)
+
     def add_attack(
         self,
         *,
@@ -377,6 +387,14 @@ class BaseStatblock:
 
         scaled_target = self.attack.average_damage * target * adjustment
         return DieFormula.target_value(target=scaled_target, **args)
+
+    def set_roles(
+        self, primary_role: MonsterRole, additional_roles: list[MonsterRole]
+    ) -> BaseStatblock:
+        new_additional_roles = set(
+            self.additional_roles.copy() + additional_roles + list(self.role)
+        )
+        return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:

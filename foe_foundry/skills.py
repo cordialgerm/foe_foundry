@@ -47,7 +47,7 @@ class Stats(StrEnum):
 
     def Boost(self, mod: int) -> Callable:
         def f(stats: Any) -> int:
-            return stats.attributes.stat(self) + mod
+            return min(stats.attributes.stat(self) + mod, stats.primary_attribute_score)
 
         return f
 
