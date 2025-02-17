@@ -6,13 +6,12 @@ from typing import Set
 import numpy as np
 from pydantic.dataclasses import dataclass
 
-from .skills import Skills, Stats
+from ..skills import Skills, Stats
 
 
-@dataclass
+@dataclass(kw_only=True)
 class Attributes:
     proficiency: int
-    primary_attribute: Stats
 
     STR: int
     DEX: int
@@ -24,6 +23,14 @@ class Attributes:
     proficient_saves: Set[Stats] = field(default_factory=set)
     proficient_skills: Set[Skills] = field(default_factory=set)
     expertise_skills: Set[Skills] = field(default_factory=set)
+
+    @property
+    def primary_attribute(self) -> Stats:
+        stats = [Stats.STR, Stats.DEX, Stats.INT, Stats.WIS, Stats.CHA]
+        scores = [self.stat(s) for s in stats]
+        i = np.argmax(scores)
+        primary_attribute = stats[i]
+        return primary_attribute
 
     @property
     def primary_attribute_score(self) -> int:
@@ -68,7 +75,9 @@ class Attributes:
         else:
             return None
 
-    def skill_mod(self, skill: Skills, even_if_not_proficient: bool = False) -> int | None:
+    def skill_mod(
+        self, skill: Skills, even_if_not_proficient: bool = False
+    ) -> int | None:
         if skill in self.expertise_skills:
             return self.stat_mod(skill.stat) + 2 * self.proficiency
         elif skill in self.proficient_skills:
@@ -107,7 +116,10 @@ class Attributes:
         return self.copy(proficient_saves=new_saves)
 
     def change_primary(self, primary: Stats) -> Attributes:
-        args = {"primary_attribute": primary, primary.value: self.primary_attribute_score}
+        args = {
+            "primary_attribute": primary,
+            primary.value: self.primary_attribute_score,
+        }
         return self.copy(**args)
 
     def boost(self, stat: Stats, value: int, limit: bool = True) -> Attributes:

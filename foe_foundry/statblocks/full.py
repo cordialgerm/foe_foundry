@@ -9,13 +9,14 @@ import numpy as np
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..ac_templates import Unarmored
 from ..attributes import Stats
-from ..damage import Attack
-from ..die import Die, DieFormula
+from ..die import DieFormula
 from ..features import Feature
 from .base import BaseStatblock
 
 
-def resolve_ac(templates: List[ArmorClassTemplate], stats: BaseStatblock) -> ResolvedArmorClass:
+def resolve_ac(
+    templates: List[ArmorClassTemplate], stats: BaseStatblock
+) -> ResolvedArmorClass:
     if Unarmored not in templates:
         templates.append(Unarmored)
 

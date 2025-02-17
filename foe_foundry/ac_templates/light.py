@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -21,7 +19,7 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
         ac = (
-            10
+            12
             + min(stats.attributes.stat_mod(Stats.DEX), 5)
             + quality_level
             + (2 if uses_shield else 0)
@@ -32,7 +30,9 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
-            score=ac + 0.2 - (1000 if not stats.creature_type.could_wear_light_armor else 0),
+            score=ac
+            + 0.2
+            - (1000 if not stats.creature_type.could_wear_light_armor else 0),
         )
 
 

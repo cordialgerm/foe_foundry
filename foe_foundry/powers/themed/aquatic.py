@@ -9,12 +9,20 @@ from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 class _Aquatic(PowerWithStandardScoring):
     def __init__(self):
-        def not_already_special_movement(c: BaseStatblock) -> bool:
-            return not (c.speed.fly or 0) and not (c.speed.climb or 0)
+        def not_already_humanoid_or_special_movement(c: BaseStatblock) -> bool:
+            return (
+                not (c.speed.fly or 0)
+                and not (c.speed.climb or 0)
+                and c.creature_subtype is None
+            )
 
         score_args = dict(
-            require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Humanoid],
-            require_callback=not_already_special_movement,
+            require_types=[
+                CreatureType.Beast,
+                CreatureType.Monstrosity,
+                CreatureType.Humanoid,
+            ],
+            require_callback=not_already_humanoid_or_special_movement,
             bonus_swimming=True,
             score_multiplier=0.5,
         )

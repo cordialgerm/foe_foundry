@@ -55,11 +55,111 @@ class Stats(StrEnum):
     def Scale(base: int, cr_multiplier: float) -> Callable:
         def f(stats: Any) -> int:
             new_stat = min(
-                int(round(base + cr_multiplier * stats.cr)), stats.primary_attribute_score
+                int(round(base + cr_multiplier * stats.cr)),
+                stats.primary_attribute_score,
             )
             return new_stat
 
         return f
+
+    def scaler(self, scaling: StatScaling, mod: float = 0) -> StatScaler:
+        return StatScaler(self, scaling, mod)
+
+
+class StatScaler:
+    def __init__(self, stat: Stats, scaling: StatScaling, mod: float):
+        self.stat = stat
+        self.scaling = scaling
+        self.mod = mod
+
+    def scale(self, cr: float) -> float:
+        if self.scaling == StatScaling.Primary:
+            if cr <= 1 / 8:
+                return 12 + self.mod
+            elif cr <= 1 / 2:
+                return 14 + self.mod
+            elif cr <= 1:
+                return 14.5 + self.mod
+            elif cr <= 2:
+                return 16 + self.mod
+            elif cr <= 4:
+                return 18 + self.mod
+            elif cr <= 7:
+                return 18.5 + self.mod
+            elif cr <= 11:
+                return 20 + self.mod
+            elif cr <= 15:
+                return 22 + self.mod
+            else:
+                return 23 + self.mod
+        elif self.scaling == StatScaling.Low:
+            if cr <= 1 / 8:
+                return 7.5 + self.mod
+            elif cr <= 1 / 2:
+                return 8 + self.mod
+            elif cr <= 1:
+                return 8 + self.mod
+            elif cr <= 2:
+                return 9 + self.mod
+            elif cr <= 4:
+                return 9 + self.mod
+            elif cr <= 7:
+                return 9.5 + self.mod
+            elif cr <= 11:
+                return 10 + self.mod
+            elif cr <= 15:
+                return 11 + self.mod
+            else:
+                return 12 + self.mod
+        elif self.scaling == StatScaling.Medium:
+            if cr <= 1 / 8:
+                return 10 + self.mod
+            elif cr <= 1 / 2:
+                return 10.5 + self.mod
+            elif cr <= 1:
+                return 11 + self.mod
+            elif cr <= 2:
+                return 11.5 + self.mod
+            elif cr <= 4:
+                return 12 + self.mod
+            elif cr <= 7:
+                return 12.5 + self.mod
+            elif cr <= 11:
+                return 13 + self.mod
+            elif cr <= 15:
+                return 13.5 + self.mod
+            else:
+                return 14 + self.mod
+        elif self.scaling == StatScaling.Constitution:
+            if cr <= 1 / 8:
+                return 10 + self.mod
+            elif cr <= 1 / 2:
+                return 12 + self.mod
+            elif cr <= 2:
+                return 14 + self.mod
+            elif cr <= 4:
+                return 14 + self.mod
+            elif cr <= 7:
+                return 14 + self.mod
+            elif cr <= 11:
+                return 16 + self.mod
+            elif cr <= 15:
+                return 18 + self.mod
+            else:
+                return 20 + self.mod
+        else:
+            if cr <= 4:
+                return 10 + self.mod
+            else:
+                return 12 + self.mod
+
+
+class StatScaling(StrEnum):
+    Low = "Low"
+    Medium = "Medium"
+    Default = "Default"
+    Primary = "Primary"
+    Constitution = "Constitution"
 
 
 class Skills(StrEnum):

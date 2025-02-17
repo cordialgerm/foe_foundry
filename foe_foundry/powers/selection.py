@@ -6,11 +6,9 @@ from typing import Callable, List, Set, Tuple, TypeAlias
 import numpy as np
 from numpy.random import Generator
 
-from ..creature_types import CreatureType
 from ..features import ActionType, Feature
-from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
-from ..utils.rng import RngFactory
+from ..utils.rng import RngFactory, rng_instance
 from .creatures import CreaturePowers
 from .power import MEDIUM_POWER, Power, PowerType
 from .roles import RolePowers
@@ -130,9 +128,13 @@ class PowerSelection:
         attack_modifiers_over_target = (
             self.selected_attack_modifiers - target.attack_modifier_target
         )
-        attack_modifiers_over_max = self.selected_attack_modifiers - target.attack_modifier_max
+        attack_modifiers_over_max = (
+            self.selected_attack_modifiers - target.attack_modifier_max
+        )
 
-        limited_uses_over_target = self.selected_limited_uses - target.limited_uses_target
+        limited_uses_over_target = (
+            self.selected_limited_uses - target.limited_uses_target
+        )
         limited_uses_over_max = self.selected_limited_uses - target.limited_uses_max
 
         above_targets = np.array(
@@ -197,11 +199,18 @@ class PowerSelection:
 
 
 class _PowerSelector:
-    def __init__(self, targets: SelectionTargets, rng: Generator, stats: BaseStatblock):
+    def __init__(
+        self,
+        targets: SelectionTargets,
+        rng: Generator,
+        stats: BaseStatblock,
+        custom_filter: Callable[[Power], bool] | None = None,
+    ):
         self.selection = PowerSelection()
         self.targets = targets
         self.rng = rng
         self.iteration = 0
+        self.custom_filter = custom_filter
         self.stats = stats.copy()
 
     @property
@@ -258,8 +267,12 @@ class _PowerSelector:
         if power in self.selection.selected_powers:
             return False
 
+        if self.custom_filter is not None and not self.custom_filter(power):
+            return False
+
         if any(
-            not self.filter_feature_against_max(f) for f in power.generate_features(self.stats)
+            not self.filter_feature_against_max(f)
+            for f in power.generate_features(self.stats)
         ):
             return False
 
@@ -276,7 +289,9 @@ class _PowerSelector:
 
         # if the creature doesn't yet have any Creature powers then make them more attractive
         if power.power_type == PowerType.Creature and not any(
-            p for p in self.selection.selected_powers if p.power_type == PowerType.Creature
+            p
+            for p in self.selection.selected_powers
+            if p.power_type == PowerType.Creature
         ):
             multiplier += 0.75
 
@@ -330,8 +345,14 @@ class _PowerSelector:
 
 
 def select_powers(
-    stats: BaseStatblock, rng: RngFactory, power_level: float, retries: int = 3
+    stats: BaseStatblock,
+    rng: RngFactory | Generator,
+    power_level: float,
+    retries: int = 3,
+    custom_filter: Callable[[Power], bool] | None = None,
 ) -> Tuple[BaseStatblock, List[Feature]]:
+    rng = rng_instance(rng)
+
     targets = SelectionTargets(
         power_level_target=power_level, power_level_max=power_level + 0.5
     )
@@ -342,7 +363,9 @@ def select_powers(
 
     # try a couple of times and choose the best result
     for _ in range(retries):
-        selector = _PowerSelector(targets=targets, rng=rng(), stats=stats)
+        selector = _PowerSelector(
+            targets=targets, rng=rng, stats=stats, custom_filter=custom_filter
+        )
         selector.select_powers()
         all_results.append(selector.stats)
         all_scores.append(selector.score.score)

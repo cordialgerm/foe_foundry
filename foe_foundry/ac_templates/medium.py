@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -28,11 +26,13 @@ class _MediumArmorClassTemplate(ArmorClassTemplate):
         )
         return ResolvedArmorClass(
             value=ac,
-            armor_type="Light Armor" if not uses_shield else "Light Armor, Shield",
+            armor_type="Medium Armor" if not uses_shield else "Medium Armor, Shield",
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
-            score=ac + 0.3 - (1000 if not stats.creature_type.could_wear_heavy_armor else 0),
+            score=ac
+            + 0.3
+            - (1000 if not stats.creature_type.could_wear_heavy_armor else 0),
         )
 
 

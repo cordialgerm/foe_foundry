@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import math
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
@@ -57,6 +56,7 @@ class BaseStatblock:
     creature_class: str | None = None
     damage_modifier: float = 1.0
     base_attack_damage: float
+    additional_roles: list[MonsterRole] = field(default_factory=list)
 
     def __post_init__(self):
         mod = (
@@ -73,7 +73,9 @@ class BaseStatblock:
 
         self.xp = xp_by_cr(self.cr)
 
-        self.attack = self.attack.with_attack_type(self.attack_type, self.primary_damage_type)
+        self.attack = self.attack.with_attack_type(
+            self.attack_type, self.primary_damage_type
+        )
 
     @property
     def key(self) -> str:
@@ -160,7 +162,9 @@ class BaseStatblock:
         # resolve hp
         if dials.hp_multiplier != 1:
             args.update(
-                hp=scale_hp_formula(self.hp, target=self.hp.average * dials.hp_multiplier)
+                hp=scale_hp_formula(
+                    self.hp, target=self.hp.average * dials.hp_multiplier
+                )
             )
 
         # resolve ac
@@ -217,7 +221,7 @@ class BaseStatblock:
 
         for stat, val in stats.items():
             if isinstance(val, int):
-                new_vals[stat] = val
+                new_vals[stat] = self.attributes.stat(stat) + val
             elif callable(val):
                 is_primary = getattr(val, "is_primary", False)
                 if is_primary:
@@ -250,7 +254,9 @@ class BaseStatblock:
         new_ac_boost = self.ac_boost + ac_modifier
         return self.copy(ac_templates=new_templates, ac_boost=new_ac_boost)
 
-    def remove_ac_templates(self, ac_templates: List[ArmorClassTemplate]) -> BaseStatblock:
+    def remove_ac_templates(
+        self, ac_templates: List[ArmorClassTemplate]
+    ) -> BaseStatblock:
         new_templates = [ac for ac in self.ac_templates if ac not in ac_templates]
         return self.copy(ac_templates=new_templates)
 
@@ -268,7 +274,10 @@ class BaseStatblock:
 
         if resistances is not None:
             for damage in resistances:
-                if damage in new_resistances and upgrade_resistance_to_immunity_if_present:
+                if (
+                    damage in new_resistances
+                    and upgrade_resistance_to_immunity_if_present
+                ):
                     new_resistances.remove(damage)
                     new_immunities.add(damage)
                 else:

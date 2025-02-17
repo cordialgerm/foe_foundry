@@ -5,7 +5,7 @@ from typing import List
 from ...attack_template import natural, weapon
 from ...attributes import Stats
 from ...damage import AttackType
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -58,7 +58,7 @@ class RecklessPower(PowerWithStandardScoring):
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.scale({Stats.WIS: -3})
+        return stats.scale({Stats.WIS: -1})
 
 
 class _Charger(RecklessPower):

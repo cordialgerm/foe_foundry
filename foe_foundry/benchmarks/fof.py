@@ -33,6 +33,27 @@ class FoFBenchmark:
         df["cr_float"] = df["CR"].map(_cr_to_float)
         df["ability_bonus_int"] = df["Proficient Ability Bonus"].map(_bonus_to_int)
         self.df = df
+        self.lookup = {v: i for i, v in enumerate(self.df["cr_float"])}
+
+    def benchmark_hp(self, cr: float) -> int:
+        i = self.lookup[cr]
+        expected_hp = self.df.iloc[i]["Hit Point Average"]
+        return expected_hp
+
+    def benchmark_attacks(self, cr: float) -> int:
+        i = self.lookup[cr]
+        expected_attacks = self.df.iloc[i]["Number of Attacks"]
+        return expected_attacks
+
+    def benchmark_attack_damage(self, cr: float) -> int:
+        i = self.lookup[cr]
+        expected_damage = self.df.iloc[i]["Damage Per Attack"]
+        return expected_damage
+
+    def benchmark_hit(self, cr: float) -> int:
+        i = self.lookup[cr]
+        expected_hit = self.df.iloc[i]["ability_bonus_int"]
+        return expected_hit
 
     def benchmark(self, stats: BaseStatblock) -> Benchmark:
         hp = stats.hp.static
@@ -41,8 +62,7 @@ class FoFBenchmark:
         dpr = stats.attack.average_damage * n_attack
         hit = stats.attack.hit
 
-        lookup = {v: i for i, v in enumerate(self.df["cr_float"])}
-        i = lookup[stats.cr]
+        i = self.lookup[stats.cr]
         expected_ac = self.df.iloc[i]["AC/DC"]
         expected_hp = self.df.iloc[i]["Hit Point Average"]
         expected_dpr = self.df.iloc[i]["Damage Per Round"]
