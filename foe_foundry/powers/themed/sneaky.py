@@ -20,6 +20,10 @@ from ..power import (
 )
 
 
+def no_unique_movement(stats: BaseStatblock) -> bool:
+    return not stats.has_unique_movement_manipulation
+
+
 class SneakyPower(PowerWithStandardScoring):
     def __init__(
         self,
@@ -60,7 +64,9 @@ class _SneakyStrike(SneakyPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6)
+        dmg = DieFormula.target_value(
+            max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6
+        )
 
         feature = Feature(
             name="Sneaky Strike",
@@ -95,7 +101,9 @@ class _FalseAppearance(SneakyPower):
 
 class _Vanish(SneakyPower):
     def __init__(self):
-        super().__init__(name="Vanish", source="SRD5.1 Ranger")
+        super().__init__(
+            name="Vanish", source="SRD5.1 Ranger", require_callback=no_unique_movement
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -107,7 +115,7 @@ class _Vanish(SneakyPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
-        stats = stats.copy(attributes=new_attrs)
+        stats = stats.copy(attributes=new_attrs, has_unique_movement_manipulation=True)
         return stats
 
 

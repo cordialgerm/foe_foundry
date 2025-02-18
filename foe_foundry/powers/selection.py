@@ -205,12 +205,14 @@ class _PowerSelector:
         rng: Generator,
         stats: BaseStatblock,
         custom_filter: Callable[[Power], bool] | None = None,
+        custom_weights: Callable[[Power], float] | None = None,
     ):
         self.selection = PowerSelection()
         self.targets = targets
         self.rng = rng
         self.iteration = 0
         self.custom_filter = custom_filter
+        self.custom_weights = custom_weights
         self.stats = stats.copy()
 
     @property
@@ -279,7 +281,10 @@ class _PowerSelector:
         return True
 
     def score_multiplier(self, power: Power) -> float:
-        multiplier = 1.0
+        if self.custom_weights is not None:
+            multiplier = self.custom_weights(power)
+        else:
+            multiplier = 1.0
 
         # if the creature doesn't have any high power abilities then make high power more attractive
         if power.power_level > MEDIUM_POWER and not any(
@@ -350,6 +355,7 @@ def select_powers(
     power_level: float,
     retries: int = 3,
     custom_filter: Callable[[Power], bool] | None = None,
+    custom_weights: Callable[[Power], float] | None = None,
 ) -> Tuple[BaseStatblock, List[Feature]]:
     rng = rng_instance(rng)
 
