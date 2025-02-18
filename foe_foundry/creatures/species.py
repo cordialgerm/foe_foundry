@@ -66,3 +66,5 @@ class _HumanSpecies(CreatureSpecies):
 DwarfSpecies: CreatureSpecies = _DwarfSpecies()
 OrcSpecies: CreatureSpecies = _OrcSpecies()
 HumanSpecies: CreatureSpecies = _HumanSpecies()
+
+AllSpecies = [DwarfSpecies, HumanSpecies, OrcSpecies]

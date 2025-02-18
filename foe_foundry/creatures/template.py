@@ -30,6 +30,7 @@ class SuggestedCr:
     name: str
     cr: float
     srd_creatures: list[str] | None = None
+    other_creatures: dict[str, str] | None = None
 
 
 @dataclass
@@ -66,11 +67,15 @@ class CreatureTemplate:
         self._species_map = {s.name: s for s in self.species}
 
         srd_creatures = set()
+        other_creatures = set()
         for v in self.variants:
             for s in v.suggested_crs:
                 if s.srd_creatures is not None:
                     srd_creatures.update(s.srd_creatures)
+                if s.other_creatures is not None:
+                    other_creatures.update(s.other_creatures.keys())
         self.srd_ceatures = sorted(list(srd_creatures))
+        self.other_creatures = sorted(list(other_creatures))
 
     def generate(
         self,

@@ -165,3 +165,6 @@ node_modules/
 examples/
 
 foe_foundry_site/routes/whoosh/index/
+
+# Mac stuff
+.DS_STORE

@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Tuple
+from typing import List
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
@@ -41,6 +41,7 @@ class PoisonPower(PowerWithStandardScoring):
                     weapon.Shortswords,
                     weapon.RapierAndShield,
                     weapon.Crossbow,
+                    weapon.HandCrossbow,
                     weapon.Longbow,
                     weapon.Shortbow,
                     natural.Bite,

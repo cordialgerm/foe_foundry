@@ -159,6 +159,19 @@ class _Crossbow(AttackTemplate):
             range_max=400,
         )
 
+class _HandCrossbow(AttackTemplate):
+    def __init__(self):
+        super().__init__(
+            attack_name="Hand Crossbow",
+            attack_type=AttackType.RangedWeapon,
+            damage_type=DamageType.Piercing,
+            split_secondary_damage=True,
+            die=Die.d6,
+            die_count=1,
+            range=30,
+            range_max=120,
+        )
+
 
 class _Pistol(AttackTemplate):
     def __init__(self):
@@ -241,7 +254,7 @@ class _Shortswords(AttackTemplate):
             allows_shield=False,
         )
 
-
+HandCrossbow: AttackTemplate = _HandCrossbow()
 Crossbow: AttackTemplate = _Crossbow()
 Daggers: AttackTemplate = _Daggers()
 Greatsword: AttackTemplate = _Greatsword()

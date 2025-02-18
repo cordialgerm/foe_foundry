@@ -7,6 +7,10 @@ from ...statblocks import BaseStatblock
 from ..power import PowerType, PowerWithStandardScoring
 
 
+def custom_filter(stats: BaseStatblock) -> bool:
+    return not stats.has_unique_movement_manipulation
+
+
 def NimbleEscape(role: MonsterRole):
     class _NimbleEscape(PowerWithStandardScoring):
         def __init__(self):
@@ -14,7 +18,7 @@ def NimbleEscape(role: MonsterRole):
                 name=f"Nimble Escape - {role.name}",
                 source="SRD5.1 Goblin",
                 power_type=PowerType.Role,
-                score_args=dict(require_roles=role),
+                score_args=dict(require_roles=role, require_callback=custom_filter),
                 theme=role.name.capitalize(),
             )
 
@@ -25,6 +29,9 @@ def NimbleEscape(role: MonsterRole):
                 description=f"{stats.roleref.capitalize()} uses Disengage or Hide.",
             )
             return [feature]
+
+        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+            return stats.copy(has_unique_movement_manipulation=True)
 
     return _NimbleEscape()
 
@@ -37,7 +44,7 @@ def CunningAction(role: MonsterRole):
                 source="SRD5.1 Spy",
                 power_type=PowerType.Role,
                 theme=role.name.capitalize(),
-                score_args=dict(require_roles=role),
+                score_args=dict(require_roles=role, require_callback=custom_filter),
             )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -47,5 +54,8 @@ def CunningAction(role: MonsterRole):
                 action=ActionType.BonusAction,
             )
             return [feature]
+
+        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+            return stats.copy(has_unique_movement_manipulation=True)
 
     return _CunningAction()

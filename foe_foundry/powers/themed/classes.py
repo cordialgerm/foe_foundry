@@ -31,7 +31,11 @@ class _DeathKnight(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Undead, CreatureType.Humanoid],
-                require_roles=[MonsterRole.Leader, MonsterRole.Default, MonsterRole.Bruiser],
+                require_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Default,
+                    MonsterRole.Bruiser,
+                ],
                 require_stats=[Stats.CHA, Stats.STR],
                 bonus_damage=DamageType.Necrotic,
                 attack_names=[
@@ -167,7 +171,12 @@ class _Artificer(PowerWithStandardScoring):
                 require_types=CreatureType.Humanoid,
                 require_stats=Stats.INT,
                 require_cr=3,
-                attack_names=["-", weapon.MaceAndShield, weapon.SwordAndShield, natural.Slam],
+                attack_names=[
+                    "-",
+                    weapon.MaceAndShield,
+                    weapon.SwordAndShield,
+                    natural.Slam,
+                ],
             ),
         )
 
@@ -286,7 +295,9 @@ class _Bard(PowerWithStandardScoring):
         return [feature1, feature2]
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Psychic, creature_class="Bard")
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Psychic, creature_class="Bard"
+        )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
         return stats
 
@@ -331,7 +342,9 @@ class _WarPriest(PowerWithStandardScoring):
         return feature1 + [feature2]
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Cleric")
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
+        )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         stats = holy.MassCureWounds.modify_stats(stats)
         return stats
@@ -363,6 +376,7 @@ class _Ranger(PowerWithStandardScoring):
                     weapon.Daggers,
                     weapon.JavelinAndShield,
                     weapon.Crossbow,
+                    weapon.HandCrossbow,
                 ],
             ),
         )
@@ -399,7 +413,13 @@ def _ArcaneArchers() -> List[Power]:
                         MonsterRole.Skirmisher,
                     ],
                     require_cr=3,
-                    attack_names=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+                    attack_names=[
+                        "-",
+                        weapon.Longbow,
+                        weapon.Shortbow,
+                        weapon.Crossbow,
+                        weapon.HandCrossbow,
+                    ],
                     # reduce odds of each individual occurance because there are 3 arcane archer options
                     score_multiplier=0.75,
                 ),
@@ -601,7 +621,9 @@ def _RuneKnights() -> List[Power]:
             stats = self.rune.modify_stats(stats)
             return stats
 
-    return [_RuneKnight(rune) for rune in [giant.FireRune, giant.FrostRune, giant.StormRune]]
+    return [
+        _RuneKnight(rune) for rune in [giant.FireRune, giant.FrostRune, giant.StormRune]
+    ]
 
 
 class _Samurai(PowerWithStandardScoring):
@@ -657,7 +679,11 @@ class _Monk(PowerWithStandardScoring):
             theme="class",
             power_level=HIGH_POWER,
             score_args=dict(
-                require_roles=[MonsterRole.Skirmisher, MonsterRole.Leader, MonsterRole.Bruiser],
+                require_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Leader,
+                    MonsterRole.Bruiser,
+                ],
                 require_stats=Stats.DEX,
                 require_types=CreatureType.Humanoid,
                 require_no_creature_class=True,
@@ -709,7 +735,9 @@ class _Paladin(PowerWithStandardScoring):
         return feature1 + feature2
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Paladin")
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Paladin"
+        )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
         stats = organized.InspiringCommander.modify_stats(stats)
         stats = holy.DivineSmite.modify_stats(stats)
@@ -753,7 +781,9 @@ class _Cleric(PowerWithStandardScoring):
         return [feature1] + feature2
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Cleric")
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
+        )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         stats = holy.WordOfRadiance.modify_stats(stats)
         return stats
@@ -769,7 +799,11 @@ class _Druid(PowerWithStandardScoring):
             theme="class",
             score_args=dict(
                 require_no_creature_class=True,
-                require_types=[CreatureType.Humanoid, CreatureType.Fey, CreatureType.Giant],
+                require_types=[
+                    CreatureType.Humanoid,
+                    CreatureType.Fey,
+                    CreatureType.Giant,
+                ],
                 bonus_roles=[
                     MonsterRole.Leader,
                     MonsterRole.Controller,
@@ -790,7 +824,9 @@ class _Druid(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        healing = stats.target_value(0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS)
+        healing = stats.target_value(
+            0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
+        )
         uses = stats.attributes.stat_mod(Stats.WIS)
 
         feature = Feature(

@@ -78,7 +78,8 @@ class AttackTemplate:
     ) -> BaseStatblock:
         return stats.add_attack(
             name=self.attack_name,
-            scalar=scalar,
+            scalar=scalar
+            / stats.damage_modifier,  # divide by damage modifier now because it gets added in later
             replaces_multiattack=1,
             is_equivalent_to_primary_attack=True,
             attack_type=self.attack_type,
@@ -91,32 +92,56 @@ class AttackTemplate:
             **attack_args,
         )
 
-    def finalize_attacks(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
-        # repair the to-hit and damage formulas of the primary attack
-        primary_attack = adjust_attack(
+    def finalize_attacks(
+        self,
+        stats: BaseStatblock,
+        rng: Generator,
+        repair_all: bool = True,
+    ) -> BaseStatblock:
+        if stats.attack.name == self.attack_name:
+            attack_to_finalize = stats.attack
+            is_primary = True
+        else:
+            attack_to_finalize = next(
+                a for a in stats.additional_attacks if a.name == self.attack_name
+            )
+            is_primary = False
+
+        # repair the to-hit and damage formulas of the attack
+        adjusted_attack = adjust_attack(
             stats=stats,
-            attack=stats.attack,
+            attack=attack_to_finalize,
             adjust_to_hit=True,
             adjust_average_damage=True,
             **self.attack_adjustment_args(stats),
         )
 
-        # repair the to-hit and damage formulas of the secondary attacks
-        additional_attacks = [
-            adjust_attack(
-                stats=stats,
-                attack=a,
-                die=a.damage.formula.primary_die_type,
-                adjust_to_hit=True,
-            )
-            for a in stats.additional_attacks
-        ]
-
-        # split damage type on the primary attack
+        # split damage type on the attack
         if self.split_secondary_damage:
-            primary_attack = self.split_primary_attack_damage(primary_attack, stats)
+            adjusted_attack = self.split_primary_attack_damage(adjusted_attack, stats)
 
-        return stats.copy(attack=primary_attack, additional_attacks=additional_attacks)
+        # go through secondary attacks and repair to-hit and damage formulas, if appropriate
+        additional_attacks = []
+        for secondary_attack in stats.additional_attacks:
+            if secondary_attack is attack_to_finalize:
+                additional_attacks.append(adjusted_attack)
+            elif repair_all:
+                new_attack = adjust_attack(
+                    stats=stats,
+                    attack=secondary_attack,
+                    die=secondary_attack.damage.formula.primary_die_type,
+                    adjust_to_hit=True,
+                )
+                additional_attacks.append(new_attack)
+            else:
+                additional_attacks.append(secondary_attack)
+
+        if is_primary:
+            return stats.copy(
+                attack=adjusted_attack, additional_attacks=additional_attacks
+            )
+        else:
+            return stats.copy(additional_attacks=additional_attacks)
 
     def split_primary_attack_damage(
         self, primary_attack: Attack, stats: BaseStatblock

@@ -57,6 +57,7 @@ class BaseStatblock:
     damage_modifier: float = 1.0
     base_attack_damage: float
     additional_roles: list[MonsterRole] = field(default_factory=list)
+    has_unique_movement_manipulation: bool = False
 
     def __post_init__(self):
         mod = (
@@ -150,6 +151,8 @@ class BaseStatblock:
             creature_subtype=self.creature_subtype,
             damage_modifier=self.damage_modifier,
             base_attack_damage=self.base_attack_damage,
+            additional_roles=self.additional_roles.copy(),
+            has_unique_movement_manipulation=self.has_unique_movement_manipulation,
         )
         return args
 

@@ -3,12 +3,14 @@ import numpy as np
 from ..ac_templates import LightArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
+from ..damage import DamageType
 from ..powers import select_powers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ..statblocks import MonsterDials
 from .base_stats import base_stats
-from .species import DwarfSpecies, HumanSpecies, OrcSpecies
+from .species import AllSpecies
 from .template import (
     CreatureSpecies,
     CreatureTemplate,
@@ -19,7 +21,7 @@ from .template import (
 
 BanditVariant = CreatureVariant(
     name="Bandit",
-    description="Bandits are inexperienced ne’er-do-wells who typically follow the orders of higher-ranking bandits.",
+    description="Bandits are inexperienced ne'er-do-wells who typically follow the orders of higher-ranking bandits.",
     suggested_crs=[
         SuggestedCr(name="Bandit", cr=1 / 8, srd_creatures=["Bandit"]),
         SuggestedCr(name="Bandit Veteran", cr=1),
@@ -30,7 +32,11 @@ BanditCaptainVariant = CreatureVariant(
     description="Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.",
     suggested_crs=[
         SuggestedCr(name="Bandit Captain", cr=2, srd_creatures=["Bandit Captain"]),
-        SuggestedCr(name="Bandit Crime Lord", cr=11),
+        SuggestedCr(
+            name="Bandit Crime Lord",
+            cr=11,
+            other_creatures={"Bandit Crime Lord": "mm25"},
+        ),
     ],
 )
 
@@ -72,6 +78,26 @@ def generate_bandit(
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
+    # High CR criminals use poison as their secondary damage type
+    # This means we want fewer overall attacks but more damage dice that include poison
+    if cr >= 6:
+        stats = stats.copy(secondary_damage_type=DamageType.Poison)
+        stats = stats.apply_monster_dials(
+            MonsterDials(
+                multiattack_modifier=-1,
+                attack_damage_multiplier=stats.multiattack / (stats.multiattack - 1),
+            )
+        )
+
+    # Bandits with a Pistol also have Shortswords as a secondary attack
+    # Bandits with Shortswords also have a Crossbow as a secondary attack
+    if attack is weapon.Pistol:
+        secondary_attack = weapon.Shortswords
+    else:
+        secondary_attack = weapon.Crossbow
+
+    stats = secondary_attack.add_as_secondary_attack(stats)
+
     # ROLES
     stats = stats.set_roles(
         primary_role=MonsterRole.Leader
@@ -106,13 +132,6 @@ def generate_bandit(
     # POWERS
     features = []
 
-    # Bandits with a Pistol also have Shortswords as a secondary attack
-    # Bandits with Shortswords also have a Crossbow as a secondary attack
-    if attack is weapon.Pistol:
-        stats = weapon.Shortswords.add_as_secondary_attack(stats)
-    elif attack is weapon.Shortswords:
-        stats = weapon.Crossbow.add_as_secondary_attack(stats)
-
     # SPECIES CUSTOMIZATIONS
     stats = species.alter_base_stats(stats)
 
@@ -125,7 +144,8 @@ def generate_bandit(
     features += power_features
 
     # FINALIZE
-    stats = attack.finalize_attacks(stats, rng)
+    stats = attack.finalize_attacks(stats, rng, repair_all=False)
+    stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
     return StatsBeingGenerated(stats=stats, attack=attack, features=features)
 
 
@@ -136,6 +156,6 @@ BanditTemplate: CreatureTemplate = CreatureTemplate(
     environments=["Urban"],
     treasure=["Any"],
     variants=[BanditVariant, BanditCaptainVariant],
-    species=[HumanSpecies, OrcSpecies, DwarfSpecies],
+    species=AllSpecies,
     callback=generate_bandit,
 )

@@ -12,7 +12,7 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import base_stats
-from .species import DwarfSpecies, HumanSpecies, OrcSpecies
+from .species import AllSpecies
 from .template import (
     CreatureSpecies,
     CreatureTemplate,
@@ -43,7 +43,7 @@ BossVariant = CreatureVariant(
     name="Boss",
     description="Thug bosses leverage their street smarts, brawling prowess, and reputation to compel others to follow their demands.",
     suggested_crs=[
-        SuggestedCr(name="Thug Underboss", cr=2, srd_creatures=["Tough Boss"]),
+        SuggestedCr(name="Thug Boss", cr=2, other_creatures={"Tough Boss": "mm25"}),
         SuggestedCr(name="Thug Overboss", cr=4),
         SuggestedCr(name="Thug Legend", cr=8),
     ],
@@ -168,6 +168,6 @@ ToughTemplate: CreatureTemplate = CreatureTemplate(
     environments=["Urban"],
     treasure=["Armaments"],
     variants=[ThugVariant, BrawlerVariant, BossVariant],
-    species=[HumanSpecies, OrcSpecies, DwarfSpecies],
+    species=AllSpecies,
     callback=generate_tough,
 )

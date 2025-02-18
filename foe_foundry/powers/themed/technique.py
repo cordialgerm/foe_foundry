@@ -967,6 +967,7 @@ class _Sharpshooter(PowerWithStandardScoring):
                     weapon.Longbow,
                     weapon.Shortbow,
                     weapon.Crossbow,
+                    weapon.HandCrossbow,
                     weapon.Pistol,
                 },
             ),

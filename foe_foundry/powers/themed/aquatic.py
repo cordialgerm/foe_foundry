@@ -14,6 +14,7 @@ class _Aquatic(PowerWithStandardScoring):
                 not (c.speed.fly or 0)
                 and not (c.speed.climb or 0)
                 and c.creature_subtype is None
+                and not c.has_unique_movement_manipulation
             )
 
         score_args = dict(
@@ -39,7 +40,9 @@ class _Aquatic(PowerWithStandardScoring):
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         new_speed = stats.speed.copy(swim=stats.speed.walk)
         new_senses = stats.senses.copy(darkvision=60)
-        stats = stats.copy(speed=new_speed, senses=new_senses)
+        stats = stats.copy(
+            speed=new_speed, senses=new_senses, has_unique_movement_manipulation=True
+        )
         return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
