@@ -1,6 +1,6 @@
 from ..attributes import Stats
 from ..damage import DamageType
-from ..powers import MEDIUM_POWER, RIBBON_POWER
+from ..powers import LOW_POWER, MEDIUM_POWER, RIBBON_POWER
 from ..statblocks import BaseStatblock, MonsterDials
 from .template import CreatureSpecies
 
@@ -51,8 +51,13 @@ class _HumanSpecies(CreatureSpecies):
         )
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        if stats.cr <= 1:
+            modifier = LOW_POWER
+        else:
+            modifier = MEDIUM_POWER
+
         stats = stats.apply_monster_dials(
-            MonsterDials(recommended_powers_modifier=MEDIUM_POWER)
+            MonsterDials(recommended_powers_modifier=modifier)
         )
         stats = stats.copy(creature_subtype="Human")
         return stats

@@ -782,7 +782,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             name="Bait and Switch",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet. \
+            description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet, without triggering attacks of Opportunity. \
                 Until the end of its next turn, the friendly creature gains a +{bonus} bonus to its AC.",
         )
         return [feature]

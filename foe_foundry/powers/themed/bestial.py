@@ -4,7 +4,6 @@ from typing import List
 from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -22,7 +21,11 @@ class BestialPower(PowerWithStandardScoring):
         **score_args,
     ):
         standard_score_args = dict(
-            require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
+            require_types=[
+                CreatureType.Monstrosity,
+                CreatureType.Beast,
+                CreatureType.Dragon,
+            ],
             bonus_roles=MonsterRole.Bruiser,
             bonus_size=Size.Large,
             **score_args,

@@ -39,7 +39,9 @@ class DefenderPower(PowerWithStandardScoring):
 
 class _Protection(DefenderPower):
     def __init__(self):
-        super().__init__(name="Protection", source="A5E SRD Protection", power_level=LOW_POWER)
+        super().__init__(
+            name="Protection", source="A5E SRD Protection", power_level=LOW_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -57,7 +59,7 @@ class _Taunt(DefenderPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Taunt",
-            description=f"On a hit, the target has disadvantage on attack rolls against any other creature until the end of its next turn.",
+            description="On a hit, the target has disadvantage on attack rolls against any other creature until the end of its next turn.",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
@@ -67,10 +69,14 @@ class _Taunt(DefenderPower):
 
 class _ZoneOfControl(DefenderPower):
     def __init__(self):
-        super().__init__(name="Zone Of Control", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Zone Of Control", source="Foe Foundry", power_level=LOW_POWER
+        )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attributes = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
+        new_attributes = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Athletics
+        )
         stats = stats.copy(attributes=new_attributes)
         return stats
 

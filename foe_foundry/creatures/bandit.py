@@ -77,7 +77,11 @@ def generate_bandit(
         primary_role=MonsterRole.Leader
         if variant is BanditCaptainVariant
         else MonsterRole.Ambusher,
-        additional_roles=[MonsterRole.Skirmisher, MonsterRole.Ambusher],
+        additional_roles=[
+            MonsterRole.Skirmisher,
+            MonsterRole.Ambusher,
+            MonsterRole.Artillery,
+        ],
     )
 
     # SKILLS

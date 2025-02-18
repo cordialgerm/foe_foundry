@@ -1,4 +1,4 @@
-from typing import Callable, Dict, List, Set, TypeAlias, TypeVar
+from typing import Callable, List, Set, TypeAlias, TypeVar
 
 from ..attack_template import AttackTemplate
 from ..attributes import Skills, Stats
@@ -35,16 +35,19 @@ class _RequirementTracker:
         self.require_misses = 0
         self.bonus_hits = 0
         self.bonus_misses = 0
+        self.weight = 1.0
 
-    def required(self, result: bool):
+    def required(self, result: bool, weight: float = 1.0):
         if result:
             self.require_hits += 1
+            self.weight *= weight
         else:
             self.require_misses += 1
 
-    def bonus(self, result: bool):
+    def bonus(self, result: bool, weight: float = 1.0):
         if result:
             self.bonus_hits += 1
+            self.weight *= weight
         else:
             self.bonus_misses += 1
 
@@ -61,7 +64,7 @@ class _RequirementTracker:
     def require_val(self, v: T | None) -> T | None:
         if v is not None and v is not False:
             self.require_constraints += 1
-        return v
+        return v  # type: ignore
 
     def optional_val(self, v: T | None, default: T | None) -> T | None:
         if v is not None:
@@ -124,7 +127,9 @@ class _RequirementTracker:
         # get a score boost for bonus checks
         bonus_boost = 0.125 * self.bonus_hits
 
-        final_score = min(2.0, score + strict_requirement_boost + bonus_boost)
+        final_score = self.weight * min(
+            2.0, score + strict_requirement_boost + bonus_boost
+        )
         return final_score
 
 
@@ -201,7 +206,16 @@ def score(
 
     # checks against required conditions
     if require_roles:
-        t.required(candidate.role in require_roles)
+        has_main_role = candidate.role in require_roles
+        has_additional_role = any(
+            c in require_roles for c in candidate.additional_roles
+        )
+        if has_main_role:
+            t.required(True)
+        elif has_additional_role:
+            t.required(True, weight=0.75)  # additional roles are less important
+        else:
+            t.required(False)
 
     if require_types:
         t.required(candidate.creature_type in require_types)
@@ -210,7 +224,9 @@ def score(
         t.required(any(candidate_damage_types.intersection(require_damage)))
 
     if require_stats:
-        t.required(all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats))
+        t.required(
+            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats)
+        )
 
     if require_size:
         t.required(candidate.size >= require_size)
@@ -229,7 +245,10 @@ def score(
 
     if require_skills:
         t.required(
-            any(candidate.attributes.has_proficiency_or_expertise(s) for s in require_skills)
+            any(
+                candidate.attributes.has_proficiency_or_expertise(s)
+                for s in require_skills
+            )
         )
 
     if require_no_creature_class:
@@ -265,20 +284,36 @@ def score(
         t.bonus(candidate.creature_type in bonus_types)
 
     if bonus_roles:
-        t.bonus(candidate.role in bonus_roles)
+        has_main_role = candidate.role in bonus_roles
+        has_additional_role = any(c in bonus_roles for c in candidate.additional_roles)
+
+        if has_main_role:
+            t.bonus(True)
+        elif has_additional_role:
+            t.bonus(True, weight=0.75)  # additional roles are less important
+        else:
+            t.bonus(False)
 
     if bonus_damage:
         t.bonus(any(candidate_damage_types.intersection(bonus_damage)))
 
     if bonus_skills:
-        t.bonus(any(candidate.attributes.has_proficiency_or_expertise(s) for s in bonus_skills))
+        t.bonus(
+            any(
+                candidate.attributes.has_proficiency_or_expertise(s)
+                for s in bonus_skills
+            )
+        )
 
     if bonus_attack_types:
         t.bonus(candidate.attack_type in bonus_attack_types)
 
     if bonus_stats:
         t.bonus(
-            any(candidate.attributes.stat(stat) >= stat_threshold + 2 for stat in bonus_stats)
+            any(
+                candidate.attributes.stat(stat) >= stat_threshold + 2
+                for stat in bonus_stats
+            )
         )
 
     if bonus_size:
