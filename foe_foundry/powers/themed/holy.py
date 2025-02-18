@@ -1,8 +1,6 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
@@ -32,7 +30,7 @@ class HolyPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=dict(
-                require_stats=Stats.WIS,
+                require_stats=[Stats.WIS, Stats.CHA],
                 require_types=CreatureType.Humanoid,
                 require_damage=DamageType.Radiant,
                 bonus_roles=MonsterRole.Leader,
@@ -46,7 +44,11 @@ class _DivineSmite(HolyPower):
         super().__init__(
             name="Divine Smite",
             source="Foe Foundry",
-            attack_names=[weapon.MaceAndShield, weapon.Greatsword, weapon.SwordAndShield],
+            attack_names=[
+                weapon.MaceAndShield,
+                weapon.Greatsword,
+                weapon.SwordAndShield,
+            ],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

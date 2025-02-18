@@ -148,7 +148,9 @@ def _EldritchKnights() -> List[Power]:
         def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(secondary_damage_type=self.element)
             stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
-            stats = stats.copy(creature_class="Eldritch Knight")
+            stats = stats.copy(
+                creature_class="Eldritch Knight", has_unique_movement_manipulation=True
+            )
             return stats
 
     return [

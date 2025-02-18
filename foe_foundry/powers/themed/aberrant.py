@@ -22,12 +22,15 @@ class AberrantPower(PowerWithStandardScoring):
         def is_aberrant_creature(c: BaseStatblock) -> bool:
             if (
                 c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}
-                and c.attack_type.is_spell()
+                and any(t.is_spell() for t in c.attack_types)
                 and c.secondary_damage_type == DamageType.Psychic
             ):
                 return True
             else:
-                return c.creature_type in {CreatureType.Aberration, CreatureType.Monstrosity}
+                return c.creature_type in {
+                    CreatureType.Aberration,
+                    CreatureType.Monstrosity,
+                }
 
         standard_score_args = (
             dict(

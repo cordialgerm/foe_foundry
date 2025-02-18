@@ -10,7 +10,6 @@ class SpellPower(PowerWithStandardScoring):
     def __init__(
         self,
         spell: StatblockSpell,
-        power_type: PowerType,
         theme: str,
         score_args: dict,
         **kwargs,
@@ -28,7 +27,7 @@ class SpellPower(PowerWithStandardScoring):
             kwargs.update(source="SRD 5.1")
 
         super().__init__(
-            power_type=power_type,
+            power_type=PowerType.Spellcasting,
             theme=theme,
             score_args=score_args,
             power_level=power_level,

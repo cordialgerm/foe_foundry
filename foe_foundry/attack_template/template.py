@@ -54,8 +54,6 @@ class AttackTemplate:
 
     def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
         args: dict = dict(uses_shield=self.allows_shield)
-        if self.attack_type is not None:
-            args.update(attack_type=self.attack_type)
         if self.damage_type is not None:
             args.update(primary_damage_type=self.damage_type)
         if self.secondary_damage_type is not None:
@@ -149,7 +147,7 @@ class AttackTemplate:
         # only split if there is secondary damage
         if (
             stats.secondary_damage_type is None
-            or stats.primary_damage_type == stats.secondary_damage_type
+            or self.damage_type == stats.secondary_damage_type
         ):
             return primary_attack.copy()
 

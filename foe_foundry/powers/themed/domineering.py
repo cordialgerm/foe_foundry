@@ -36,7 +36,10 @@ class DomineeringPower(PowerWithStandardScoring):
                 return True
 
             # psychic humanoids
-            if c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Psychic:
+            if (
+                any(t.is_spell() for t in c.attack_types)
+                and c.secondary_damage_type == DamageType.Psychic
+            ):
                 return True
 
             return False
@@ -59,9 +62,9 @@ class DomineeringPower(PowerWithStandardScoring):
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attributes = stats.attributes.boost(Stats.CHA, 4).grant_proficiency_or_expertise(
-            Skills.Persuasion
-        )
+        new_attributes = stats.attributes.boost(
+            Stats.CHA, 4
+        ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
         return stats
 

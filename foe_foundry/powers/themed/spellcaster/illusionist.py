@@ -32,6 +32,7 @@ class _IllusionistWizard(_Spellcaster):
                 creature_class="Illusionist",
                 theme="illusion",
                 score_args=dict(
+                    require_no_creature_class=True,
                     require_types=[
                         CreatureType.Humanoid,
                         CreatureType.Fey,

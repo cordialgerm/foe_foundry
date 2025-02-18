@@ -40,7 +40,6 @@ class BaseStatblock:
     languages: List[str] = field(default_factory=list)
     senses: Senses = field(default_factory=Senses)
     role: MonsterRole = MonsterRole.Default
-    attack_type: AttackType = AttackType.MeleeWeapon
     damage_resistances: Set[DamageType] = field(default_factory=set)
     damage_immunities: Set[DamageType] = field(default_factory=set)
     condition_immunities: Set[Condition] = field(default_factory=set)
@@ -74,10 +73,6 @@ class BaseStatblock:
 
         self.xp = xp_by_cr(self.cr)
 
-        self.attack = self.attack.with_attack_type(
-            self.attack_type, self.primary_damage_type
-        )
-
     @property
     def key(self) -> str:
         return self.name.lower().replace(" ", "_")
@@ -85,6 +80,13 @@ class BaseStatblock:
     @property
     def primary_attribute(self) -> Stats:
         return self.attributes.primary_attribute
+
+    @property
+    def attack_types(self) -> Set[AttackType]:
+        return {
+            self.attack.attack_type,
+            *(a.attack_type for a in self.additional_attacks),
+        }
 
     @property
     def selfref(self) -> str:
@@ -139,7 +141,6 @@ class BaseStatblock:
             languages=deepcopy(self.languages),
             senses=deepcopy(self.senses),
             role=self.role,
-            attack_type=self.attack_type,
             damage_resistances=deepcopy(self.damage_resistances),
             damage_immunities=deepcopy(self.damage_immunities),
             condition_immunities=deepcopy(self.condition_immunities),

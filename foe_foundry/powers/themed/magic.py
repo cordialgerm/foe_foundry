@@ -1,22 +1,18 @@
 from datetime import datetime
 from typing import List
 
-from ...attack_template import weapon
-from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
-from ...die import Die
-from ...features import ActionType, Feature
+from ...damage import DamageType
 from ...role_types import MonsterRole
 from ...spells import StatblockSpell, abjuration, evocation, necromancy, transmutation
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power
 from ..spell import SpellPower
 
 
 def humanoid_is_spellcaster(c: BaseStatblock) -> bool:
     if c.creature_type == CreatureType.Humanoid:
-        return c.attack_type in AttackType.AllSpell()
+        return any(t.is_spell() for t in c.attack_types)
     else:
         return True
 
@@ -25,10 +21,9 @@ class _MagicPower(SpellPower):
     def __init__(self, spell: StatblockSpell, **kwargs):
         super().__init__(
             spell=spell,
-            power_type=PowerType.Theme,
             theme="magic",
             create_date=datetime(2023, 12, 10),
-            **kwargs
+            **kwargs,
         )
 
 

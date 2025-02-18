@@ -1,5 +1,4 @@
 from datetime import datetime
-from math import ceil
 from typing import List
 
 from foe_foundry.statblocks import BaseStatblock
@@ -21,6 +20,7 @@ class PsychicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        power_type: PowerType = PowerType.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -28,7 +28,7 @@ class PsychicPower(PowerWithStandardScoring):
         def is_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
                 return (
-                    candidate.attack_type.is_spell()
+                    any(t.is_spell() for t in candidate.attack_types)
                     and candidate.secondary_damage_type == DamageType.Psychic
                 )
             else:
@@ -40,7 +40,7 @@ class PsychicPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="psychic",
-            power_type=PowerType.Theme,
+            power_type=power_type,
             score_args=dict(
                 require_types={CreatureType.Aberration, CreatureType.Humanoid},
                 require_callback=is_spellcaster,
@@ -58,7 +58,11 @@ class PsychicPower(PowerWithStandardScoring):
 
 class _Telekinetic(PsychicPower):
     def __init__(self):
-        super().__init__(name="Telekinesis", source="5.1SRD Telekinesis")
+        super().__init__(
+            name="Telekinesis",
+            source="5.1SRD Telekinesis",
+            power_type=PowerType.Spellcasting,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -76,7 +80,8 @@ class _PsychicInfestation(PsychicPower):
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
         burning = Burning(
-            damage=DieFormula.from_dice(d6=dmg.n_die // 2), damage_type=DamageType.Psychic
+            damage=DieFormula.from_dice(d6=dmg.n_die // 2),
+            damage_type=DamageType.Psychic,
         )
 
         feature = Feature(
@@ -115,7 +120,9 @@ class _DissonantWhispers(PsychicPower):
 
 class _PsionicBlast(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5

@@ -136,6 +136,7 @@ class _RequirementTracker:
 def score(
     *,
     candidate: BaseStatblock,
+    relaxed_mode: bool = False,
     require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     require_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
@@ -218,21 +219,21 @@ def score(
             t.required(False)
 
     if require_types:
-        t.required(candidate.creature_type in require_types)
+        t.required(candidate.creature_type in require_types or relaxed_mode)
 
     if require_damage:
-        t.required(any(candidate_damage_types.intersection(require_damage)))
+        t.required(any(candidate_damage_types.intersection(require_damage)) or relaxed_mode)
 
     if require_stats:
         t.required(
-            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats)
+            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats) or relaxed_mode
         )
 
     if require_size:
-        t.required(candidate.size >= require_size)
+        t.required(candidate.size >= require_size or relaxed_mode)
 
     if require_speed:
-        t.required(candidate.speed.fastest_speed >= require_speed)
+        t.required(candidate.speed.fastest_speed >= require_speed or relaxed_mode)
 
     if require_flying:
         t.required((candidate.speed.fly or 0) > 0)
@@ -241,7 +242,10 @@ def score(
         t.required((candidate.speed.swim or 0) > 0)
 
     if require_attack_types:
-        t.required(candidate.attack_type in require_attack_types)
+        has_required_attack_type = (
+            len(candidate.attack_types.intersection(require_attack_types)) > 0
+        )
+        t.required(has_required_attack_type)
 
     if require_skills:
         t.required(
@@ -252,7 +256,7 @@ def score(
         )
 
     if require_no_creature_class:
-        t.required(candidate.creature_class is None)
+        t.required(candidate.creature_class is None or relaxed_mode)
 
     if require_cr:
         t.required(candidate.cr >= require_cr)
@@ -264,13 +268,14 @@ def score(
         t.required(candidate.uses_shield)
 
     if require_callback is not None:
-        t.required(require_callback(candidate))
+        t.required(require_callback(candidate) or relaxed_mode)
 
     if require_damage_exact_match:
         resolved_damage_types = require_damage | bonus_damage
         t.required(
             candidate.primary_damage_type in resolved_damage_types
             or candidate.secondary_damage_type in resolved_damage_types
+            or relaxed_mode
         )
 
     if require_secondary_damage_type:
@@ -306,7 +311,10 @@ def score(
         )
 
     if bonus_attack_types:
-        t.bonus(candidate.attack_type in bonus_attack_types)
+        has_required_attack_type = (
+            len(candidate.attack_types.intersection(bonus_attack_types)) > 0
+        )
+        t.bonus(has_required_attack_type)
 
     if bonus_stats:
         t.bonus(

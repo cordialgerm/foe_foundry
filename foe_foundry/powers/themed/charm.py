@@ -1,8 +1,5 @@
-import math
 from datetime import datetime
 from typing import List
-
-from num2words import num2words
 
 from foe_foundry.statblocks import BaseStatblock
 
@@ -30,7 +27,7 @@ class CharmingPower(PowerWithStandardScoring):
         def humanoid_is_psychic_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
                 return (
-                    candidate.attack_type.is_spell()
+                    any(t.is_spell() for t in candidate.attack_types)
                     and candidate.secondary_damage_type == DamageType.Psychic
                 )
             return True
@@ -74,8 +71,7 @@ class _MentalSummons(CharmingPower):
         dc = stats.difficulty_class
         feature = Feature(
             name="Mental Summons",
-            action=ActionType.Action,
-            replaces_multiattack=1,
+            action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} targets a creature with an Intelligence score greater than 3 within 120 feet. \
                 The target makes a DC {dc} Wisdom saving throw. On a failure, it uses its reaction to move up to its speed towards {stats.selfref} \
                 by the shortest route possible, avoiding hazards but not opportunity attacks. This is a magical charm effect.",
@@ -108,7 +104,9 @@ class _SweetPromises(CharmingPower):
 class _WardingCharm(CharmingPower):
     def __init__(self):
         super().__init__(
-            name="Warding Charm", source="A5E SRD Vampire", create_date=datetime(2023, 11, 23)
+            name="Warding Charm",
+            source="A5E SRD Vampire",
+            create_date=datetime(2023, 11, 23),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

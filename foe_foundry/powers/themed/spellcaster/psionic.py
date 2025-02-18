@@ -17,7 +17,9 @@ _expert = [enchantment.Feeblemind]
 PsionicAdeptSpells = spell_list(_adept, uses=1)
 PsionicMasterSpells = spell_list(_adept, uses=1) + spell_list(_master, uses=1)
 PsionicExpertSpells = (
-    spell_list(_adept, uses=1) + spell_list(_master, uses=1) + spell_list(_expert, uses=1)
+    spell_list(_adept, uses=1)
+    + spell_list(_master, uses=1)
+    + spell_list(_expert, uses=1)
 )
 
 
@@ -28,6 +30,7 @@ class _PsionicCaster(_Spellcaster):
                 theme="psionic",
                 creature_class="Psion",
                 score_args=dict(
+                    require_no_creature_class=True,
                     require_damage=DamageType.Psychic,
                     require_damage_exact_match=True,
                     bonus_types=CreatureType.Aberration,

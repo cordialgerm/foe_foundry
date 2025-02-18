@@ -119,16 +119,25 @@ class _SuppressingFire(ArtilleryPower):
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
-            description=f"On a hit, the target's speed is reduced by half until the end of its next turn",
+            description="On a hit, the target's speed is reduced by half until the end of its next turn",
             hidden=True,
             modifies_attack=True,
         )
         return [feature]
 
 
+def not_gaze(stats: BaseStatblock) -> bool:
+    return "gaze" not in stats.attack.name.lower()
+
+
 class _IndirectFire(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Indirect Fire", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Indirect Fire",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            require_callback=not_gaze,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

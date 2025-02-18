@@ -1,8 +1,6 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
-from typing import Any, Dict, List, Tuple
-
-import numpy as np
+from typing import Any, Dict, List
 
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
@@ -64,7 +62,7 @@ class Power(ABC):
         return Power.name_to_key(self.name)
 
     @abstractmethod
-    def score(self, candidate: BaseStatblock) -> float:
+    def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
         pass
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -78,7 +76,10 @@ class Power(ABC):
         return f"{self.name} ({self.power_type})"
 
     def __hash__(self) -> int:
-        return hash(type(self))
+        return hash(self.key)
+
+    def __eq__(self, other: Any) -> bool:
+        return isinstance(other, Power) and self.key == other.key
 
     @staticmethod
     def name_to_key(name: str) -> str:
@@ -138,32 +139,7 @@ class PowerWithStandardScoring(Power):
 
         self.score_args = score_args
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return standard_score(candidate=candidate, **self.score_args or {})
-
-
-class PowerBackport(Power):
-    def __init__(
-        self,
-        name: str,
-        power_type: PowerType,
-        source: str | None = None,
-        power_level: float = MEDIUM_POWER,
-    ):
-        super().__init__(
-            name=name, power_type=power_type, source=source, power_level=power_level
+    def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
+        return standard_score(
+            candidate=candidate, relaxed_mode=relaxed_mode, **self.score_args or {}
         )
-
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_stats, _ = self.apply(stats, np.random.default_rng(20210518))
-        return new_stats
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        _, features = self.apply(stats, np.random.default_rng(20210518))
-        return Feature.merge(features)
-
-    @abstractmethod
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        pass

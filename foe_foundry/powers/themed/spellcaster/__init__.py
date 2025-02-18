@@ -5,6 +5,7 @@ from . import (
     abjurer,
     celestial,
     conjurer,
+    cult,
     divination,
     elementalist,
     enchanter,
@@ -19,6 +20,7 @@ SpellcasterPowers: List[Power] = (
     abjurer.AbjurationWizards()
     + celestial.CelestialCasters()
     + conjurer.ConjurationWizards()
+    + cult.CultCasters()
     + divination.DivinationWizards()
     + elementalist.ElementalistWizards()
     + enchanter.EnchanterWizards()

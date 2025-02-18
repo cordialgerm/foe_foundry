@@ -34,6 +34,9 @@ class SelectionTargets:
     limited_uses_target: int = 1
     limited_uses_max: int = 2
 
+    spellcasting_powers_target: int = 1
+    spellcasting_powers_max: int = 1
+
     power_level_target: float
     power_level_max: float
 
@@ -66,6 +69,9 @@ class SelectionScore:
     limited_uses_over_target: int
     limited_uses_over_max: int
 
+    spellcasting_over_target: int
+    spellcasting_over_max: int
+
 
 @dataclass(kw_only=True)
 class PowerSelection:
@@ -76,6 +82,7 @@ class PowerSelection:
     selected_recharges: int = 0
     selected_limited_uses: int = 0
     selected_attack_modifiers: int = 0
+    selected_spellcasting_powers: int = 0
 
     def with_new_power(self, stats: BaseStatblock, power: Power) -> PowerSelection:
         recharges = self.selected_recharges
@@ -84,6 +91,9 @@ class PowerSelection:
         attack_modifiers = self.selected_attack_modifiers
         power_level = self.selected_power_level
         limited_uses = self.selected_limited_uses
+        spellcasting_powers = self.selected_spellcasting_powers + (
+            1 if power.power_type == PowerType.Spellcasting else 0
+        )
 
         new_features = power.generate_features(stats)
         for feature in new_features:
@@ -110,6 +120,7 @@ class PowerSelection:
             selected_recharges=recharges,
             selected_attack_modifiers=attack_modifiers,
             selected_limited_uses=limited_uses,
+            selected_spellcasting_powers=spellcasting_powers,
         )
 
     def score(self, target: SelectionTargets) -> SelectionScore:
@@ -137,6 +148,13 @@ class PowerSelection:
         )
         limited_uses_over_max = self.selected_limited_uses - target.limited_uses_max
 
+        spellcasting_over_target = (
+            self.selected_spellcasting_powers - target.spellcasting_powers_target
+        )
+        spellcasting_over_max = (
+            self.selected_spellcasting_powers - target.spellcasting_powers_max
+        )
+
         above_targets = np.array(
             [
                 self.selected_bonus_actions > target.bonus_action_target,
@@ -144,6 +162,7 @@ class PowerSelection:
                 self.selected_recharges > target.recharge_target,
                 self.selected_attack_modifiers > target.attack_modifier_target,
                 self.selected_limited_uses > target.limited_uses_target,
+                self.selected_spellcasting_powers > target.spellcasting_powers_target,
             ]
         )
         below_targets = np.array(
@@ -153,6 +172,7 @@ class PowerSelection:
                 self.selected_recharges < target.recharge_target,
                 self.selected_attack_modifiers < target.attack_modifier_target,
                 self.selected_limited_uses < target.limited_uses_target,
+                self.selected_spellcasting_powers < target.spellcasting_powers_target,
             ]
         )
 
@@ -171,6 +191,7 @@ class PowerSelection:
         penalties += 1 * max(reactions_over_max, 0)
         penalties += 2 * max(recharges_over_max, 0)
         penalties += 2 * max(limited_uses_over_max, 0)
+        penalties += 2 * max(spellcasting_over_max, 0)
         penalties += 3 * max(
             attack_modifiers_over_max, 0
         )  # high bc statblock becomes confusing
@@ -195,6 +216,8 @@ class PowerSelection:
             attack_modifiers_over_target=attack_modifiers_over_target,
             attack_modifiers_over_max=attack_modifiers_over_max,
             remaining_power=target.power_level_target - self.selected_power_level,
+            spellcasting_over_target=spellcasting_over_target,
+            spellcasting_over_max=spellcasting_over_max,
         )
 
 
@@ -232,6 +255,16 @@ class _PowerSelector:
             self.stats = power.modify_stats(self.stats)
             self.iteration += 1
 
+    def filter_power_against_max(self, power: Power) -> bool:
+        score = self.score
+        if (
+            power.power_type == PowerType.Spellcasting
+            and score.spellcasting_over_max >= 0
+        ):
+            return False
+
+        return True
+
     def filter_feature_against_max(self, feature: Feature) -> bool:
         score = self.score
         if feature.action == ActionType.BonusAction and score.bonus_over_max >= 0:
@@ -244,6 +277,17 @@ class _PowerSelector:
             return False
         if feature.uses and score.limited_uses_over_max >= 0:
             return False
+
+        return True
+
+    def filter_power_against_target(self, power: Power) -> bool:
+        score = self.score
+        if (
+            power.power_type == PowerType.Spellcasting
+            and score.spellcasting_over_target >= 0
+        ):
+            return False
+
         return True
 
     def filter_feature_against_target(self, feature: Feature) -> bool:
@@ -272,7 +316,7 @@ class _PowerSelector:
         if self.custom_filter is not None and not self.custom_filter(power):
             return False
 
-        if any(
+        if not self.filter_power_against_max(power) or any(
             not self.filter_feature_against_max(f)
             for f in power.generate_features(self.stats)
         ):
@@ -281,10 +325,7 @@ class _PowerSelector:
         return True
 
     def score_multiplier(self, power: Power) -> float:
-        if self.custom_weights is not None:
-            multiplier = self.custom_weights(power)
-        else:
-            multiplier = 1.0
+        multiplier = 1.0
 
         # if the creature doesn't have any high power abilities then make high power more attractive
         if power.power_level > MEDIUM_POWER and not any(
@@ -308,7 +349,7 @@ class _PowerSelector:
 
         # if feature would cause us to go above target then make it less attractive
         # don't eliminate it entirely because it might lead to total infeasibility
-        if any(
+        if not self.filter_power_against_target(power) or any(
             not self.filter_feature_against_target(f)
             for f in power.generate_features(self.stats)
         ):
@@ -320,10 +361,10 @@ class _PowerSelector:
         candidates, scores = self.get_candidates()
 
         weights = np.copy(scores)
-        if (weights == 0).all():
+        if (weights == 0).all() or len(weights) == 0:
             return None
 
-        p = np.exp(weights)
+        p = np.exp(2 * weights)
         p = p / np.sum(p)
         indx = self.rng.choice(a=len(candidates), size=None, p=p)
         return candidates[indx]
@@ -331,11 +372,15 @@ class _PowerSelector:
     def get_candidates(self) -> Tuple[List[Power], np.ndarray]:
         all_powers: List[Power] = CreaturePowers + RolePowers + ThemedPowers
 
-        candidates = []
+        candidates: List[Power] = []
         scores = []
 
         for power in all_powers:
-            score = power.score(self.stats)
+            custom_score = self.custom_weights(power) if self.custom_weights else 1.0
+            score = (
+                power.score(self.stats, relaxed_mode=custom_score > 1.0) * custom_score
+            )
+
             if score <= 0 or not self.filter(power):
                 continue
 
@@ -346,6 +391,12 @@ class _PowerSelector:
             scores.append(modifier_score)
 
         scores = np.array(scores, dtype=float)
+        candidates = np.array(candidates, dtype=object)  # type: ignore
+
+        indexes = scores > 0
+        scores = scores[indexes]
+        candidates = candidates[indexes].tolist()  # type: ignore
+
         return candidates, scores
 
 
@@ -370,7 +421,11 @@ def select_powers(
     # try a couple of times and choose the best result
     for _ in range(retries):
         selector = _PowerSelector(
-            targets=targets, rng=rng, stats=stats, custom_filter=custom_filter
+            targets=targets,
+            rng=rng,
+            stats=stats,
+            custom_filter=custom_filter,
+            custom_weights=custom_weights,
         )
         selector.select_powers()
         all_results.append(selector.stats)

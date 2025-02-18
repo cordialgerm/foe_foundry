@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -21,7 +20,10 @@ class Tricky(PowerWithStandardScoring):
     ):
         def humanoid_is_magical(c: BaseStatblock) -> bool:
             if c.creature_type == CreatureType.Humanoid:
-                return c.attack_type.is_spell() and c.attributes.spellcasting_mod >= 3
+                return (
+                    any(t.is_spell() for t in c.attack_types)
+                    and c.attributes.spellcasting_mod >= 3
+                )
             else:
                 return True
 
@@ -48,9 +50,9 @@ class Tricky(PowerWithStandardScoring):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         # this creature should be tricky
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Deception).boost(
-            Stats.CHA, 2
-        )
+        new_attrs = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Deception
+        ).boost(Stats.CHA, 2)
         changes: dict = dict(attributes=new_attrs)
         return stats.copy(**changes)
 

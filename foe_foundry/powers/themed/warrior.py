@@ -98,7 +98,7 @@ class _ActionSurge(Warrior):
             source="SRD5.1 Action Surge",
             power_level=HIGH_POWER,
             require_callback=is_organized,
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Defender, MonsterRole.Leader},
+            bonus_roles=MonsterRole.Bruiser,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

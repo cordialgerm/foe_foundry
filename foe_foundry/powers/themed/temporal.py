@@ -4,7 +4,7 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
@@ -24,7 +24,8 @@ class TemporalPower(PowerWithStandardScoring):
         def is_magical_human(c: BaseStatblock) -> bool:
             if c.creature_type == CreatureType.Humanoid:
                 return (
-                    c.attack_type.is_spell() and c.secondary_damage_type != DamageType.Radiant
+                    any(t.is_spell() for t in c.attack_types)
+                    and c.secondary_damage_type != DamageType.Radiant
                 )
             else:
                 return True
@@ -184,7 +185,9 @@ class _WallOfTime(TemporalPower):
 
 class _Reset(TemporalPower):
     def __init__(self):
-        super().__init__(name="Reset", source="Deep Magic: Time Magic - Reset", require_cr=5)
+        super().__init__(
+            name="Reset", source="Deep Magic: Time Magic - Reset", require_cr=5
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

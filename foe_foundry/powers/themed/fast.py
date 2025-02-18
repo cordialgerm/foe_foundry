@@ -57,8 +57,9 @@ class _NimbleReaction(FastPower):
     def __init__(self):
         super().__init__(name="Nimble Reaction", source="Foe Foundry")
 
-    def score(self, candidate: BaseStatblock) -> float:
+    def score(self, candidate: BaseStatblock, relaxed_mode: bool) -> float:
         return score(
+            relaxed_mode=relaxed_mode,
             candidate=candidate,
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],

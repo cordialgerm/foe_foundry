@@ -33,8 +33,17 @@ class DeathlyPower(PowerWithStandardScoring):
                 return True
             else:
                 return (
-                    c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Necrotic
+                    any(t.is_spell() for t in c.attack_types)
+                    and c.secondary_damage_type == DamageType.Necrotic
                 )
+
+        callback = score_args.pop("require_callback", None)
+
+        def required_callback(c: BaseStatblock) -> bool:
+            if callback is None:
+                return undead_or_necromancer(c)
+            else:
+                return undead_or_necromancer(c) and callback(c)
 
         super().__init__(
             name=name,
@@ -44,8 +53,12 @@ class DeathlyPower(PowerWithStandardScoring):
             theme="death",
             power_level=power_level,
             score_args=dict(
-                require_types={CreatureType.Undead, CreatureType.Fiend, CreatureType.Humanoid},
-                require_callback=undead_or_necromancer,
+                require_types={
+                    CreatureType.Undead,
+                    CreatureType.Fiend,
+                    CreatureType.Humanoid,
+                },
+                require_callback=required_callback,
                 bonus_damage=DamageType.Necrotic,
                 bonus_types=CreatureType.Undead,
                 **score_args,
@@ -72,12 +85,17 @@ class _EndlessServitude(DeathlyPower):
         return [feature]
 
 
+def _has_no_other_attacks(stats: BaseStatblock) -> bool:
+    return len(stats.additional_attacks) == 0
+
+
 class _WitheringBlow(DeathlyPower):
     def __init__(self):
         super().__init__(
             name="Withering Blow",
             source="Foe Foundry",
             require_attack_types=AttackType.AllMelee(),
+            require_callback=_has_no_other_attacks,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -95,9 +113,13 @@ class _WitheringBlow(DeathlyPower):
                 if a.additional_damage
                 else DieFormula.from_expression("1d6")
             )
-            bleeding = Bleeding(damage=bleeding_dmg, damage_type=DamageType.Necrotic, dc=dc)
+            bleeding = Bleeding(
+                damage=bleeding_dmg, damage_type=DamageType.Necrotic, dc=dc
+            )
 
-            return a.copy(additional_description=f"On a hit, the target gains {bleeding}.")
+            return a.copy(
+                additional_description=f"On a hit, the target gains {bleeding}."
+            )
 
         stats = stats.add_attack(
             scalar=1.4,
@@ -123,9 +145,18 @@ class _DrainingBlow(DeathlyPower):
         return [feature]
 
 
+def no_unique_movement(stats: BaseStatblock) -> bool:
+    return not stats.has_unique_movement_manipulation
+
+
 class _ShadowWalk(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Shadow Walk", source="A5E SRD Adept", power_level=LOW_POWER)
+        super().__init__(
+            name="Shadow Walk",
+            source="A5E SRD Adept",
+            power_level=LOW_POWER,
+            require_callback=no_unique_movement,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -135,10 +166,15 @@ class _ShadowWalk(DeathlyPower):
         )
         return [feature]
 
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.copy(has_unique_movement_manipulation=True)
+
 
 class _FleshPuppets(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Flesh Puppets", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Flesh Puppets", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         cr = int(ceil(stats.cr / 3))
@@ -157,7 +193,9 @@ class _FleshPuppets(DeathlyPower):
 
 class _DevourSoul(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Devour Soul", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Devour Soul", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, force_die=Die.d6)

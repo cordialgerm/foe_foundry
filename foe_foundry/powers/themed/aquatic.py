@@ -14,6 +14,7 @@ class _Aquatic(PowerWithStandardScoring):
                 not (c.speed.fly or 0)
                 and not (c.speed.climb or 0)
                 and c.creature_subtype is None
+                and c.creature_class is None
                 and not c.has_unique_movement_manipulation
             )
 

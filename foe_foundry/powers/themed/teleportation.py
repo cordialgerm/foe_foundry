@@ -21,7 +21,7 @@ class TeleportationPower(PowerWithStandardScoring):
     ):
         def humanoid_is_caster(c: BaseStatblock) -> bool:
             if c.creature_type == CreatureType.Humanoid:
-                return c.attack_type.is_spell()
+                return any(t.is_spell() for t in c.attack_types)
             else:
                 return True
 
@@ -40,6 +40,7 @@ class TeleportationPower(PowerWithStandardScoring):
                     CreatureType.Aberration,
                     CreatureType.Humanoid,
                 },
+                require_cr=1,
                 bonus_attack_types=AttackType.AllSpell(),
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             )
@@ -60,9 +61,18 @@ class _BendSpace(TeleportationPower):
         return [feature]
 
 
+def no_unique_movement(stats: BaseStatblock) -> bool:
+    return not stats.has_unique_movement_manipulation
+
+
 class _MistyStep(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Misty Step", source="SRD5.1 Misty Step", power_level=LOW_POWER)
+        super().__init__(
+            name="Misty Step",
+            source="SRD5.1 Misty Step",
+            power_level=LOW_POWER,
+            require_callback=no_unique_movement,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
@@ -76,6 +86,9 @@ class _MistyStep(TeleportationPower):
         )
 
         return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.copy(has_unique_movement_manipulation=True)
 
 
 class _Scatter(TeleportationPower):

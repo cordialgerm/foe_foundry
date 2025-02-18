@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List, Set
+from typing import List
 
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
@@ -33,7 +33,7 @@ class _Spellcaster(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerType.Spellcasting,
             source="FoeFoundry",
             theme=theme,
             power_level=power_level,
@@ -48,6 +48,7 @@ class _Spellcaster(PowerWithStandardScoring):
         return []
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(creature_class=self.creature_class)
+        if self.creature_class is not None and stats.creature_class is None:
+            stats = stats.copy(creature_class=self.creature_class)
         sorted_spells = sorted(self.spells, key=lambda s: s.name)
         return stats.add_spells(sorted_spells)
