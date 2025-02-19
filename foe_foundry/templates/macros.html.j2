@@ -33,10 +33,10 @@
 {% endfor %}
 {% endmacro %}
 
-{% macro attack_block(attack_name, attack_text) -%}
+{% macro attack_block(display_name, attack_text) -%}
 
 <property-block>
-    <h4>{{attack_name | fix_punctuation}}</h4>
+    <h4>{{display_name | fix_punctuation}}</h4>
     {% markdown %}
     {{attack_text | fix_punctuation}}
     {% endmarkdown %}

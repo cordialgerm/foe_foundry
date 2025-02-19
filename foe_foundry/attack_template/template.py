@@ -48,6 +48,7 @@ class AttackTemplate:
     def attack_adjustment_args(self, stats: BaseStatblock) -> dict:
         return dict(
             attack_name=self.attack_name,
+            attack_display_name=self.display_name,
             attack_type=self.attack_type,
             primary_damage_type=self.damage_type,
             reach=self.reach,

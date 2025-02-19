@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import List
 
 from ....attack_template import spell
@@ -6,7 +5,14 @@ from ....creature_types import CreatureType
 from ....damage import DamageType
 from ....features import ActionType, Feature
 from ....role_types import MonsterRole
-from ....spells import conjuration, divination, enchantment, evocation, illusion, transmutation
+from ....spells import (
+    conjuration,
+    divination,
+    enchantment,
+    evocation,
+    illusion,
+    transmutation,
+)
 from ....statblocks import BaseStatblock
 from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER
 from .base import _Spellcaster
@@ -55,7 +61,7 @@ class _DivinationWizard(_Spellcaster):
                     bonus_roles=MonsterRole.Controller,
                     attack_names=[
                         spell.Gaze,
-                        spell.EdlritchBlast,
+                        spell.EldritchBlast,
                         spell.ArcaneBurst,
                     ],  # bonus, not required
                 ),

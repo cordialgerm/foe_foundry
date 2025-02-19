@@ -202,7 +202,8 @@ class BaseStatblock:
             args.update(attributes=new_attributes)
 
         if dials.attack_damage_multiplier != 1.0:
-            args.update(damage_modifier=dials.attack_damage_multiplier)
+            existing = self.damage_modifier
+            args.update(damage_modifier=existing * dials.attack_damage_multiplier)
 
         # resolve difficulty class
         if dials.difficulty_class_modifier:

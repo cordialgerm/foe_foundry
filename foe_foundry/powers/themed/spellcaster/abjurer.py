@@ -47,7 +47,7 @@ class _AbjurationWizard(_Spellcaster):
                     ],
                     bonus_roles=[MonsterRole.Controller, MonsterRole.Defender],
                     attack_names=[
-                        spell.EdlritchBlast,
+                        spell.EldritchBlast,
                         spell.ArcaneBurst,
                     ],  # bonus, not required
                 ),

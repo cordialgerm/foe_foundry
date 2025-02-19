@@ -32,7 +32,8 @@ def render_html_inline(
 ) -> str:
     template = env.get_template("inlined_template.html.j2")
     data = MonsterTemplateData.from_statblock(stats, benchmarks)
-    html_raw = template.render(data.to_dict())
+    template_data = data.to_dict()
+    html_raw = template.render(template_data)
     return html_raw
 
 

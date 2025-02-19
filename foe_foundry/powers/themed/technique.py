@@ -248,7 +248,7 @@ class _PushingAttack(Technique):
                 natural.Tail,
                 natural.Slam,
                 spell.ArcaneBurst,
-                spell.EdlritchBlast,
+                spell.EldritchBlast,
                 spell.Thundrousblast,
                 weapon.Crossbow,
                 weapon.Maul,

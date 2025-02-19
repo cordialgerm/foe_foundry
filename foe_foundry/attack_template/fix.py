@@ -10,6 +10,7 @@ def adjust_attack(
     stats: BaseStatblock,
     attack: Attack,
     attack_name: str | None = None,
+    attack_display_name: str | None = None,
     attack_type: AttackType | None = None,
     primary_damage_type: DamageType | None = None,
     die: Die,
@@ -26,6 +27,9 @@ def adjust_attack(
 
     if attack_name is not None:
         args.update(name=attack_name)
+
+    if attack_display_name is not None:
+        args.update(display_name=attack_display_name)
 
     # update attack type
     if attack_type is not None:
@@ -92,7 +96,9 @@ def adjust_attack(
             )
 
     damage_type = (
-        primary_damage_type if primary_damage_type is not None else attack.damage.damage_type
+        primary_damage_type
+        if primary_damage_type is not None
+        else attack.damage.damage_type
     )
     repaired_damage = Damage(formula=repaired_formula, damage_type=damage_type)
     args.update(damage=repaired_damage)
