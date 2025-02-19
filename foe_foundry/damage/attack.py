@@ -40,9 +40,10 @@ class Damage:
         return Damage(**args)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class Attack:
     name: str
+    display_name: str = field(default=None)  # type: ignore
     hit: int
     damage: Damage
     additional_damage: Damage | None = None
@@ -62,6 +63,9 @@ class Attack:
             AttackType.MeleeNatural,
             AttackType.MeleeWeapon,
         }
+
+        if self.display_name is None:
+            self.display_name = self.name
 
         if self.is_melee:
             self.range = None
@@ -107,6 +111,7 @@ class Attack:
     def copy(self, **overrides) -> Attack:
         args: dict = dict(
             name=self.name,
+            display_name=self.display_name,
             hit=self.hit,
             damage=self.damage.copy(),
             additional_damage=self.additional_damage.copy()
@@ -294,3 +299,6 @@ class Attack:
 
     def __repr__(self) -> str:
         return self.description
+
+    def __eq__(self, value: object) -> bool:
+        return isinstance(value, Attack) and self.name == value.name

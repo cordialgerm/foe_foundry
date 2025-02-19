@@ -8,18 +8,6 @@ from .features import ActionType, Feature  # noqa
 from .hp import scale_hp_formula  # noqa
 from .movement import Movement  # noqa
 from .role_types import MonsterRole
-from .roles import (
-    AllRoles,
-    Ambusher,
-    Artillery,
-    Bruiser,
-    Controller,
-    Defender,
-    Leader,
-    RoleTemplate,
-    Skirmisher,
-    get_role,
-)
 from .senses import Senses
 from .size import Size  # noqa
 from .skills import Skills  # noqa

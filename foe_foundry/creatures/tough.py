@@ -6,6 +6,7 @@ from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
 from ..powers import Power, select_powers
+from ..powers.legendary import make_legendary
 from ..powers.themed.warrior import PackTactics
 from ..role_types import MonsterRole
 from ..size import Size
@@ -94,7 +95,7 @@ def generate_tough(
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
     # ROLES
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=MonsterRole.Leader
         if variant is BossVariant
         else MonsterRole.Bruiser,
@@ -102,20 +103,17 @@ def generate_tough(
     )
 
     # SKILLS
-    stats = stats.copy(
-        attributes=stats.attributes.grant_proficiency_or_expertise(Skills.Intimidation)
-    )
+    stats = stats.grant_proficiency_or_expertise(Skills.Intimidation)
+
+    if stats.cr >= 8:
+        stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
 
     # SAVES
     if cr >= 2:
-        stats = stats.copy(
-            attributes=stats.attributes.grant_save_proficiency(Stats.STR)
-        )
+        stats = stats.grant_save_proficiency(Stats.STR)
 
     if cr >= 4:
-        stats = stats.copy(
-            attributes=stats.attributes.grant_save_proficiency(Stats.CON, Stats.CHA)
-        )
+        stats = stats.grant_save_proficiency(Stats.CON, Stats.CHA)
 
     # POWERS
     features = []
@@ -130,7 +128,7 @@ def generate_tough(
     )
 
     # Toughs with a Mace also have a heavy crossbow
-    if attack is weapon.Maul:
+    if attack == weapon.Maul:
         stats = stats.add_attack(
             name="Heavy Crossbow",
             scalar=0.7 * min(stats.multiattack, 2),
@@ -158,6 +156,11 @@ def generate_tough(
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
+
+    # LEGENDARY
+    if variant is BossVariant and cr >= 8:
+        stats, features = make_legendary(stats, features, has_lair=False)
+
     return StatsBeingGenerated(stats=stats, attack=attack, features=features)
 
 

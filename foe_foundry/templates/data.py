@@ -48,6 +48,7 @@ class MonsterTemplateData:
     reactions: List[Feature]
     attacks: List[Attack]
     attack_modifiers: List[Feature]
+    legendary_actions: List[Feature]
 
     multiattack: str
     attack: Attack
@@ -107,7 +108,13 @@ class MonsterTemplateData:
         )
         cr = f"{cr_fraction} ({stats.xp:,.0f} XP)"
 
-        passives, actions, bonus_actions, reactions = [], [], [], []
+        passives, actions, bonus_actions, reactions, legendary_actions = (
+            [],
+            [],
+            [],
+            [],
+            [],
+        )
         for feature in stats.features:
             if feature.hidden:
                 continue
@@ -119,6 +126,8 @@ class MonsterTemplateData:
                 bonus_actions.append(feature)
             elif feature.action == ActionType.Reaction:
                 reactions.append(feature)
+            elif feature.action == ActionType.Legendary:
+                legendary_actions.append(feature)
 
         spellcasting = stats.spellcasting_md
 
@@ -135,9 +144,11 @@ class MonsterTemplateData:
                 a for a in stats.additional_attacks if a.is_equivalent_to_primary_attack
             ]
             if len(primary_attacks) == 1:
-                attack_name = f"{stats.attack.name} attacks"
+                attack_name = f"{stats.attack.display_name} attacks"
             else:
-                attack_name = " or ".join(a.name for a in primary_attacks) + " attacks"
+                attack_name = (
+                    " or ".join(a.display_name for a in primary_attacks) + " attacks"
+                )
 
         if stats.multiattack <= 1:
             multiattack = ""
@@ -147,7 +158,7 @@ class MonsterTemplateData:
             replacements = []
             replacements += [
                 (
-                    a.name,
+                    a.display_name,
                     max(1, a.replaces_multiattack),
                 )  # assume all additional attacks can be swapped out as part of multiattack
                 for a in stats.additional_attacks
@@ -208,6 +219,7 @@ class MonsterTemplateData:
             actions=actions,
             bonus_actions=bonus_actions,
             reactions=reactions,
+            legendary_actions=legendary_actions,
             attack_modifiers=attack_modifiers,
             multiattack=multiattack,
             attack=stats.attack,

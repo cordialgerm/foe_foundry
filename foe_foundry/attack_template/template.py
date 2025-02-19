@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
+
 from numpy.random import Generator
 
 from ..damage import Attack, AttackType, Damage, DamageType
@@ -6,37 +10,40 @@ from ..statblocks.base import BaseStatblock
 from .fix import adjust_attack
 
 
+@dataclass(kw_only=True)
 class AttackTemplate:
-    def __init__(
-        self,
-        *,
-        attack_name: str,
-        die: Die,
-        die_count: int | None = None,
-        attack_type: AttackType | None = None,
-        damage_type: DamageType | None = None,
-        secondary_damage_type: DamageType | None = None,
-        allows_shield: bool = False,
-        split_secondary_damage: bool = False,
-        reach: int | None = None,
-        range: int | None = None,
-        range_max: int | None = None,
-        reach_bonus_for_huge: bool = False,
-        range_bonus_for_high_cr: bool = False,
-    ):
-        self.attack_name = attack_name
-        self.attack_type = attack_type
-        self.damage_type = damage_type
-        self.secondary_damage_type = secondary_damage_type
-        self.die = die
-        self.die_count = die_count
-        self.allows_shield = allows_shield
-        self.split_secondary_damage = split_secondary_damage
-        self.reach = reach
-        self.range = range
-        self.range_max = range_max
-        self.reach_bonus_for_huge = reach_bonus_for_huge
-        self.range_bonus_for_high_cr = range_bonus_for_high_cr
+    attack_name: str
+    display_name: str | None = None
+    die: Die
+    die_count: int | None = None
+    attack_type: AttackType | None = None
+    damage_type: DamageType | None = None
+    secondary_damage_type: DamageType | None = None
+    allows_shield: bool = False
+    split_secondary_damage: bool = False
+    reach: int | None = None
+    range: int | None = None
+    range_max: int | None = None
+    reach_bonus_for_huge: bool = False
+    range_bonus_for_high_cr: bool = False
+
+    def __post_init__(self):
+        if self.display_name is None:
+            self.display_name = self.attack_name
+
+    def __eq__(self, value: object) -> bool:
+        return (
+            isinstance(value, AttackTemplate) and value.attack_name == self.attack_name
+        )
+
+    def __hash__(self) -> int:
+        return hash(self.attack_name)
+
+    def copy(self, **args) -> AttackTemplate:
+        return replace(self, **args)
+
+    def with_display_name(self, display_name: str) -> AttackTemplate:
+        return self.copy(display_name=display_name)
 
     def attack_adjustment_args(self, stats: BaseStatblock) -> dict:
         return dict(
@@ -76,6 +83,7 @@ class AttackTemplate:
     ) -> BaseStatblock:
         return stats.add_attack(
             name=self.attack_name,
+            display_name=self.display_name,
             scalar=scalar
             / stats.damage_modifier,  # divide by damage modifier now because it gets added in later
             replaces_multiattack=1,

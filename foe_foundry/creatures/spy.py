@@ -105,7 +105,7 @@ def generate_spy(
     stats = secondary_attack.add_as_secondary_attack(stats)
 
     # ROLES
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=MonsterRole.Ambusher,
         additional_roles=[
             MonsterRole.Skirmisher,
@@ -121,11 +121,14 @@ def generate_spy(
         Skills.Perception,
         Skills.SleightOfHand,
         Skills.Stealth,
+        Skills.Initiative,
     )
 
     # EXPERTISE
     if cr >= 6:
-        stats = stats.grant_proficiency_or_expertise(Skills.Stealth, Skills.Perception)
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Stealth, Skills.Perception, Skills.Initiative
+        )
 
     # SAVES
     if cr >= 6:

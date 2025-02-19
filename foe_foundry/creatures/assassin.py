@@ -111,17 +111,17 @@ def generate_assassin(
     )
 
     # Spies use poisoned Daggers as their primary attack
-    attack = weapon.Daggers
+    attack = weapon.Daggers.with_display_name("Poisoned Dagger")
     stats = attack.alter_base_stats(stats, rng)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
     # Spies also have a Hand Crossbow as a secondary attack
-    secondary_attack = weapon.HandCrossbow
+    secondary_attack = weapon.HandCrossbow.with_display_name("Poisoned Hand Crossbow")
     stats = secondary_attack.add_as_secondary_attack(stats)
 
     # ROLES
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=MonsterRole.Ambusher,
         additional_roles=[
             MonsterRole.Skirmisher,
@@ -131,12 +131,14 @@ def generate_assassin(
 
     # SKILLS
     stats = stats.grant_proficiency_or_expertise(
-        Skills.Acrobatics, Skills.Perception, Skills.Stealth
+        Skills.Acrobatics, Skills.Perception, Skills.Stealth, Skills.Initiative
     )
 
     # EXPERTISE
     if cr >= 6:
-        stats = stats.grant_proficiency_or_expertise(Skills.Stealth, Skills.Perception)
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Stealth, Skills.Perception, Skills.Initiative
+        )
 
     # SAVES
     if cr >= 6:

@@ -57,6 +57,10 @@ class BaseStatblock:
     base_attack_damage: float
     additional_roles: list[MonsterRole] = field(default_factory=list)
     has_unique_movement_manipulation: bool = False
+    is_legendary: bool = False
+    has_lair: bool = False
+    legendary_actions: int = 0
+    legendary_resistances: int = 0
 
     def __post_init__(self):
         mod = (
@@ -330,6 +334,7 @@ class BaseStatblock:
         self,
         *,
         name: str,
+        display_name: str | None = None,
         scalar: float,
         attack_type: AttackType | None = None,
         damage_type: DamageType | None = None,
@@ -345,7 +350,7 @@ class BaseStatblock:
         )
         damage = Damage(dmg_formula, damage_type or self.primary_damage_type)
 
-        copy_args: dict = dict(name=name, damage=damage)
+        copy_args: dict = dict(name=name, damage=damage, display_name=display_name)
         if attack_type:
             copy_args.update(attack_type=attack_type)
         copy_args.update(attack_args)
@@ -392,13 +397,23 @@ class BaseStatblock:
         scaled_target = self.attack.average_damage * target * adjustment
         return DieFormula.target_value(target=scaled_target, **args)
 
-    def set_roles(
+    def with_roles(
         self, primary_role: MonsterRole, additional_roles: list[MonsterRole]
     ) -> BaseStatblock:
         new_additional_roles = set(
             self.additional_roles.copy() + additional_roles + list(self.role)
         )
         return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
+
+    def as_legendary(
+        self, *, actions: int = 3, resistances: int = 3, has_lair: bool = False
+    ) -> BaseStatblock:
+        return self.copy(
+            is_legendary=True,
+            legendary_actions=actions,
+            legendary_resistances=resistances,
+            has_lair=has_lair,
+        )
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:

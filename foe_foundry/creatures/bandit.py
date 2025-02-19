@@ -91,15 +91,15 @@ def generate_bandit(
 
     # Bandits with a Pistol also have Shortswords as a secondary attack
     # Bandits with Shortswords also have a Crossbow as a secondary attack
-    if attack is weapon.Pistol:
+    if attack == weapon.Pistol:
         secondary_attack = weapon.Shortswords
     else:
-        secondary_attack = weapon.Crossbow
+        secondary_attack = weapon.Crossbow.with_display_name("Light Crossbow")
 
     stats = secondary_attack.add_as_secondary_attack(stats)
 
     # ROLES
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=MonsterRole.Leader
         if variant is BanditCaptainVariant
         else MonsterRole.Ambusher,
@@ -115,12 +115,14 @@ def generate_bandit(
     if variant is BanditCaptainVariant:
         skills += [Skills.Deception, Skills.Athletics]
     if cr >= 6:
-        skills += [Skills.Perception]
+        skills += [Skills.Perception, Skills.Initiative]
     stats = stats.grant_proficiency_or_expertise(*skills)
 
     # EXPERTISE
     if cr >= 6:
         stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
+    if cr >= 11:
+        stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
 
     # SAVES
     if cr >= 2:

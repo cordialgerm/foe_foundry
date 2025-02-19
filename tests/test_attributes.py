@@ -47,15 +47,26 @@ def test_attributes_generate_skills():
         CHA=8,
         INT=10,
         proficiency=2,
-        proficient_skills={Skills.Perception, Skills.Religion, Skills.Persuasion},
+        proficient_skills={
+            Skills.Perception,
+            Skills.Religion,
+            Skills.Persuasion,
+            Skills.Initiative,
+        },
     )
 
     assert a.skill_mod(Skills.Perception) == 7
     assert a.skill_mod(Skills.Religion) == 2
     assert a.skill_mod(Skills.Persuasion) == 1
     assert a.skill_mod(Skills.Deception) is None
+    assert a.skill_mod(Skills.Initiative) == 3
 
-    assert {Skills.Perception: 7, Skills.Religion: 2, Skills.Persuasion: 1} == a.skills
+    assert {
+        Skills.Perception: 7,
+        Skills.Religion: 2,
+        Skills.Persuasion: 1,
+        Skills.Initiative: 3,
+    } == a.skills
 
 
 def test_attributes_infers_primary():

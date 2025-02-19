@@ -181,6 +181,7 @@ class Skills(StrEnum):
     Intimidation = "Intimidation"
     Performance = "Performance"
     Persuasion = "Persuasion"
+    Initiative = "Initiative"
 
     @property
     def stat(self) -> Stats:
@@ -188,6 +189,7 @@ class Skills(StrEnum):
             Skills.Athletics: Stats.STR,
             Skills.Acrobatics: Stats.DEX,
             Skills.SleightOfHand: Stats.DEX,
+            Skills.Initiative: Stats.DEX,
             Skills.Stealth: Stats.DEX,
             Skills.Arcana: Stats.INT,
             Skills.History: Stats.INT,

@@ -111,7 +111,7 @@ def generate_berserker(
         stats = stats.copy(secondary_damage_type=elemental_damage_type)
 
     # ROLES
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=MonsterRole.Bruiser,
         additional_roles=[MonsterRole.Leader] if variant is CommanderVariant else [],
     )
@@ -120,6 +120,8 @@ def generate_berserker(
     stats = stats.grant_proficiency_or_expertise(Skills.Athletics)
     if cr >= 4:
         stats = stats.grant_proficiency_or_expertise(Skills.Perception)
+    if cr >= 8:
+        stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
 
     # SAVES
     if cr >= 4:

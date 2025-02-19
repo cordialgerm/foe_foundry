@@ -170,29 +170,29 @@ def generate_cultist(
     # ATTACKS
     if variant is CultistVariant:
         if cr <= 1:
-            attack = weapon.Daggers
+            attack = weapon.Daggers.with_display_name("Ritual Dagger")
             primary_damage_type = DamageType.Piercing
             secondary_attack = None
             secondary_damage_type = DamageType.Necrotic
         else:
             attack = spell.Deathbolt
             primary_damage_type = DamageType.Necrotic
-            secondary_attack = weapon.Daggers
+            secondary_attack = weapon.Daggers.with_display_name("Ritual Dagger")
             secondary_damage_type = DamageType.Necrotic
     elif variant is AberrantVariant:
-        attack = spell.Gaze
+        attack = spell.Gaze.with_display_name("Mind Rot")
         primary_damage_type = DamageType.Psychic
-        secondary_attack = natural.Tentacle
+        secondary_attack = natural.Tentacle.with_display_name("Aberrant Tentacle")
         secondary_damage_type = DamageType.Psychic
     elif variant is NecroVariant:
-        attack = spell.Deathbolt
+        attack = spell.Deathbolt.with_display_name("Deathly Ray")
         primary_damage_type = DamageType.Necrotic
         secondary_damage_type = DamageType.Necrotic
         secondary_attack = None
     elif variant is FiendVariant:
-        attack = weapon.Greataxe
+        attack = weapon.Greataxe.with_display_name("Infernal Axe")
         primary_damage_type = DamageType.Slashing
-        secondary_attack = spell.Firebolt
+        secondary_attack = spell.Firebolt.with_display_name("Scorching Ray")
         secondary_damage_type = DamageType.Fire
 
     stats = attack.alter_base_stats(stats, rng)
@@ -216,7 +216,7 @@ def generate_cultist(
         primary_role = MonsterRole.Bruiser
         additional_roles.append(MonsterRole.Controller)
 
-    stats = stats.set_roles(
+    stats = stats.with_roles(
         primary_role=primary_role,
         additional_roles=additional_roles,
     )
@@ -225,6 +225,8 @@ def generate_cultist(
     stats = stats.grant_proficiency_or_expertise(Skills.Deception, Skills.Religion)
     if cr >= 2:
         stats = stats.grant_proficiency_or_expertise(Skills.Persuasion)
+    if cr >= 8:
+        stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
 
     # SAVES
     if cr >= 2:
