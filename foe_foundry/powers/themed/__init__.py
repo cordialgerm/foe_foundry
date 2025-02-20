@@ -28,6 +28,7 @@ from . import (
     poison,
     psychic,
     reckless,
+    skeletal,
     sneaky,
     species,
     spellcaster,
@@ -68,6 +69,7 @@ ThemedPowers: List[Power] = (
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
+    + skeletal.SkeletalPowers
     + sneaky.SneakyPowers
     + species.DwarfPowers
     + species.OrcPowers

@@ -40,6 +40,7 @@ class BaseStatblock:
     languages: List[str] = field(default_factory=list)
     senses: Senses = field(default_factory=Senses)
     role: MonsterRole = MonsterRole.Default
+    damage_vulnerabilities: Set[DamageType] = field(default_factory=set)
     damage_resistances: Set[DamageType] = field(default_factory=set)
     damage_immunities: Set[DamageType] = field(default_factory=set)
     condition_immunities: Set[Condition] = field(default_factory=set)
@@ -145,6 +146,7 @@ class BaseStatblock:
             languages=deepcopy(self.languages),
             senses=deepcopy(self.senses),
             role=self.role,
+            damage_vulnerabilities=deepcopy(self.damage_vulnerabilities),
             damage_resistances=deepcopy(self.damage_resistances),
             damage_immunities=deepcopy(self.damage_immunities),
             condition_immunities=deepcopy(self.condition_immunities),
@@ -275,6 +277,7 @@ class BaseStatblock:
         self,
         resistances: Set[DamageType] | None = None,
         immunities: Set[DamageType] | None = None,
+        vulnerabilities: Set[DamageType] | None = None,
         conditions: Set[Condition] | None = None,
         nonmagical_resistance: bool | None = None,
         nonmagical_immunity: bool | None = None,
@@ -282,6 +285,7 @@ class BaseStatblock:
     ) -> BaseStatblock:
         new_resistances = self.damage_resistances.copy()
         new_immunities = self.damage_immunities.copy()
+        new_vulnerabilities = self.damage_vulnerabilities.copy()
 
         if resistances is not None:
             for damage in resistances:
@@ -299,6 +303,10 @@ class BaseStatblock:
                 new_immunities.add(damage)
                 if damage in new_resistances:
                     new_resistances.remove(damage)
+
+        if vulnerabilities is not None:
+            for damage in vulnerabilities:
+                new_vulnerabilities.add(damage)
 
         new_nonmagical_immunity = nonmagical_immunity or self.nonmagical_immunity
         new_nonmagical_resistance = nonmagical_resistance or self.nonmagical_resistance
@@ -318,6 +326,7 @@ class BaseStatblock:
         return self.copy(
             damage_resistances=new_resistances,
             damage_immunities=new_immunities,
+            damage_vulnerabilities=new_vulnerabilities,
             condition_immunities=new_conditions,
             nonmagical_immunity=new_nonmagical_immunity,
             nonmagical_resistance=new_nonmagical_resistance,

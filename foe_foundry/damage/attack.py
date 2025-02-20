@@ -43,7 +43,7 @@ class Damage:
 @dataclass(kw_only=True)
 class Attack:
     name: str
-    display_name: str = field(default=None)  # type: ignore
+    display_name: str = ""
     hit: int
     damage: Damage
     additional_damage: Damage | None = None
@@ -64,7 +64,7 @@ class Attack:
             AttackType.MeleeWeapon,
         }
 
-        if self.display_name is None:
+        if self.display_name is None or self.display_name == "":
             self.display_name = self.name
 
         if self.is_melee:
@@ -109,6 +109,9 @@ class Attack:
         self.description = description
 
     def copy(self, **overrides) -> Attack:
+        if "display_name" in overrides and overrides["display_name"] is None:
+            overrides["display_name"] = ""
+
         args: dict = dict(
             name=self.name,
             display_name=self.display_name,
