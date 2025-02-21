@@ -45,7 +45,7 @@ class _UndeadFortitude(UndeadPower):
         feature = Feature(
             name="Undead Resilience",
             action=ActionType.Reaction,
-            description=f"When damage reduces {stats.selfref} to 0 hit points, it must make a Constitution saving throw with a DC of 2 + the damage taken, \
+            description=f"When damage reduces {stats.selfref} to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, \
                 unless the damage is radiant or from a critical hit. On a success, {stats.selfref} instead drops to 1 hit point.",
         )
         return [feature]

@@ -10,7 +10,7 @@ from ..statblocks import BaseStatblock, Statblock
 from ..utils.rng import RngFactory
 
 
-@dataclass
+@dataclass(kw_only=True)
 class StatsBeingGenerated:
     stats: BaseStatblock
     attack: AttackTemplate
@@ -25,22 +25,23 @@ class StatsBeingGenerated:
 GenerateCallback: TypeAlias = Callable[..., StatsBeingGenerated]
 
 
-@dataclass
+@dataclass(kw_only=True)
 class SuggestedCr:
     name: str
     cr: float
+    is_legendary: bool = False
     srd_creatures: list[str] | None = None
     other_creatures: dict[str, str] | None = None
 
 
-@dataclass
+@dataclass(kw_only=True)
 class CreatureVariant:
     name: str
     description: str
     suggested_crs: list[SuggestedCr]
 
 
-@dataclass
+@dataclass(kw_only=True)
 class CreatureSpecies:
     name: str
     description: str
@@ -49,7 +50,7 @@ class CreatureSpecies:
         return stats
 
 
-@dataclass
+@dataclass(kw_only=True)
 class CreatureTemplate:
     name: str
     tag_line: str

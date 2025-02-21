@@ -69,9 +69,11 @@ NecroVariant = CreatureVariant(
     name="Death Cultist",
     description="Death cultists revel in nihilistic forces, embracing them as paths to undeath, multiversal purity, or entropic inevitability. These cultists serve powerful undead beings, apocalyptic prophecies, or immortals with power over death",
     suggested_crs=[
-        SuggestedCr("Death Cultist Initiate", cr=4),
-        SuggestedCr("Death Cultist", cr=8, other_creatures={"Death Cultist": "mm25"}),
-        SuggestedCr("Death Cultist Grand Master", cr=14),
+        SuggestedCr(name="Death Cultist Initiate", cr=4),
+        SuggestedCr(
+            name="Death Cultist", cr=8, other_creatures={"Death Cultist": "mm25"}
+        ),
+        SuggestedCr(name="Death Cultist Grand Master", cr=14),
     ],
 )
 
@@ -79,9 +81,11 @@ FiendVariant = CreatureVariant(
     name="Fiendish Cultist",
     description="Fiend cultists worship fiends or evil deities. They often work to bring ruin to innocents or to summon their sinister patron into the world. Fiend cultists might serve infamous powers such as archdevils and demon lords, or foul immortals",
     suggested_crs=[
-        SuggestedCr("Fiend Cultist Initiate", cr=4),
-        SuggestedCr("Fiend Cultist", cr=8, other_creatures={"Fiend Cultist": "mm25"}),
-        SuggestedCr("Fiend Cultist Grand Master", cr=14),
+        SuggestedCr(name="Fiend Cultist Initiate", cr=4),
+        SuggestedCr(
+            name="Fiend Cultist", cr=8, other_creatures={"Fiend Cultist": "mm25"}
+        ),
+        SuggestedCr(name="Fiend Cultist Grand Master", cr=14),
     ],
 )
 

@@ -408,8 +408,13 @@ class BaseStatblock:
         return DieFormula.target_value(target=scaled_target, **args)
 
     def with_roles(
-        self, primary_role: MonsterRole, additional_roles: list[MonsterRole]
+        self,
+        primary_role: MonsterRole,
+        additional_roles: list[MonsterRole] | None = None,
     ) -> BaseStatblock:
+        if additional_roles is None:
+            additional_roles = []
+
         new_additional_roles = set(
             self.additional_roles.copy() + additional_roles + list(self.role)
         )

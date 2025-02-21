@@ -144,13 +144,13 @@ def generate_skeleton(
         stats = stats.grant_save_proficiency(Stats.CON)
 
     # IMMUNITIES
-    stats.grant_resistance_or_immunity(
+    stats = stats.grant_resistance_or_immunity(
         immunities={DamageType.Poison},
         conditions={Condition.Poisoned},
         vulnerabilities={DamageType.Bludgeoning},
     )
     if secondary_damage_type is not None:
-        stats.grant_resistance_or_immunity(immunities={secondary_damage_type})
+        stats = stats.grant_resistance_or_immunity(immunities={secondary_damage_type})
 
     # POWERS
     features = []

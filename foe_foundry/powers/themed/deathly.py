@@ -156,6 +156,7 @@ class _ShadowWalk(DeathlyPower):
             source="A5E SRD Adept",
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
+            require_speed=30,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

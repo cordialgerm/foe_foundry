@@ -46,7 +46,7 @@ BossVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Thug Boss", cr=2, other_creatures={"Tough Boss": "mm25"}),
         SuggestedCr(name="Thug Overboss", cr=4),
-        SuggestedCr(name="Thug Legend", cr=8),
+        SuggestedCr(name="Thug Legend", cr=8, is_legendary=True),
     ],
 )
 

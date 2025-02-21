@@ -153,27 +153,6 @@ class _LimitedMagicImmunity(MagicallyTough):
         return [feature]
 
 
-class _EliteRecovery(PowerWithStandardScoring):
-    def __init__(self):
-        super().__init__(
-            name="Elite Recovery",
-            power_type=PowerType.Theme,
-            source="A5E SRD",
-            theme="tough",
-            power_level=LOW_POWER,
-            score_args=dict(require_cr=7),
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Elite Recovery",
-            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw or ability check \
-                         against any effect on them that can be ended by a successful saving throw or ability check, no action required. On a success, the effect ends.",
-            action=ActionType.Feature,
-        )
-        return [feature]
-
-
 class _Regeneration(PhysicallyTough):
     def __init__(self):
         super().__init__(
@@ -222,7 +201,6 @@ class _Stoneskin(PhysicallyTough):
         return [feature]
 
 
-EliteRecovery: Power = _EliteRecovery()
 JustAScratch: Power = _JustAScratch()
 LimitedMagicImmunity: Power = _LimitedMagicImmunity()
 MagicResistance: Power = _MagicResistance()
@@ -230,7 +208,6 @@ Regeneration: Power = _Regeneration()
 Stoneskin: Power = _Stoneskin()
 
 ToughPowers: List[Power] = [
-    EliteRecovery,
     JustAScratch,
     LimitedMagicImmunity,
     MagicResistance,
