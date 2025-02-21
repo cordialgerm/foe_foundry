@@ -98,6 +98,9 @@ def generate_zombie(
     if variant is ZombieVariant:
         stats = stats.copy(speed=stats.speed.delta(-10))
 
+    # Zombies don't use special movement so set this flag
+    stats = stats.copy(has_unique_movement_manipulation=True)
+
     # ARMOR CLASS
     stats = stats.add_ac_template(Unarmored)
 
@@ -116,17 +119,8 @@ def generate_zombie(
     )
 
     ## ATTACK DAMAGE
-    # zombies should only have 2 attacks at most, but the attacks should hit hard!
-    if stats.multiattack >= 2:
-        new_attacks = min(stats.multiattack - 1, 2)
-        new_target_multiplier = stats.multiattack * stats.damage_modifier / new_attacks
-        attack_modifier = new_attacks - stats.multiattack
-        stats = stats.apply_monster_dials(
-            MonsterDials(
-                attack_damage_multiplier=new_target_multiplier,
-                multiattack_modifier=attack_modifier,
-            )
-        )
+    # zombies should have fewer attacks, but the attacks should hit hard!
+    stats = stats.with_reduced_attacks(reduce_by=1 if stats.cr <= 8 else 2)
 
     # ROLES
     stats = stats.with_roles(

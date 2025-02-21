@@ -5,6 +5,7 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import select_powers
+from ..powers.legendary import make_legendary
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -36,6 +37,7 @@ BanditCaptainVariant = CreatureVariant(
             name="Bandit Crime Lord",
             cr=11,
             other_creatures={"Bandit Crime Lord": "mm25"},
+            is_legendary=True,
         ),
     ],
 )
@@ -148,6 +150,11 @@ def generate_bandit(
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+
+    # LEGENDARY
+    if variant is BanditCaptainVariant and stats.cr >= 11:
+        stats, features = make_legendary(stats, features, has_lair=False)
+
     return StatsBeingGenerated(stats=stats, attack=attack, features=features)
 
 

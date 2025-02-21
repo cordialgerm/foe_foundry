@@ -93,7 +93,9 @@ class _DeflectMissile(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        reduction = easy_multiple_of_five(stats.attributes.DEX + 2 * stats.cr)
+        reduction = easy_multiple_of_five(
+            stats.attributes.stat_mod(Stats.DEX) + 2 * stats.attributes.proficiency
+        )
         feature = Feature(
             name="Deflect Missile",
             action=ActionType.Reaction,

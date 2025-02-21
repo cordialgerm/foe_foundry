@@ -3,7 +3,7 @@ from typing import List
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -218,13 +218,12 @@ class _TiringAttack(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        fatigue = conditions.Fatigue()
         feature = Feature(
             name="Tiring Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw. \
-                On a failure, the target's bones begin to turn to dust and it gains a level of {fatigue.caption}. {fatigue.description_3rd}",
+                On a failure, the target's bones begin to turn to dust and it gains a level of **Exhaustion**.",
         )
         return [feature]
 

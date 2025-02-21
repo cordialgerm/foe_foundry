@@ -5,6 +5,7 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import select_powers
+from ..powers.legendary import make_legendary
 from ..powers.roles.skirmisher import CunningAction
 from ..role_types import MonsterRole
 from ..size import Size
@@ -33,7 +34,12 @@ SpyMasterVariant = CreatureVariant(
     name="Spy Master",
     description="Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.",
     suggested_crs=[
-        SuggestedCr(name="Spy Master", cr=10, other_creatures={"Spy Master": "mm25"}),
+        SuggestedCr(
+            name="Spy Master",
+            cr=10,
+            other_creatures={"Spy Master": "mm25"},
+            is_legendary=True,
+        ),
     ],
 )
 
@@ -84,24 +90,16 @@ def generate_spy(
     stats = stats.copy(
         secondary_damage_type=DamageType.Poison,
     )
-
-    new_attack_count = stats.multiattack // 2
-    attack_damage_modifier = stats.multiattack / new_attack_count
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            multiattack_modifier=new_attack_count - stats.multiattack,
-            attack_damage_multiplier=attack_damage_modifier,
-        )
-    )
+    stats = stats.with_reduced_attacks(reduce_by=1 if stats.cr <= 8 else 2)
 
     # Spies use poisoned Daggers as their primary attack
-    attack = weapon.Daggers
+    attack = weapon.Daggers.with_display_name("Covert Blade")
     stats = attack.alter_base_stats(stats, rng)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
     # Spies also have a Hand Crossbow as a secondary attack
-    secondary_attack = weapon.HandCrossbow
+    secondary_attack = weapon.HandCrossbow.with_display_name("Concealed Crossbow")
     stats = secondary_attack.add_as_secondary_attack(stats)
 
     # ROLES
@@ -164,6 +162,11 @@ def generate_spy(
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+
+    # LEGENDARY
+    if variant == SpyMasterVariant:
+        stats, features = make_legendary(stats, features, has_lair=False)
+
     return StatsBeingGenerated(stats=stats, attack=attack, features=features)
 
 

@@ -82,7 +82,6 @@ class _DisfiguringCurse(CursedPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(1.2, force_die=Die.d6)
-        fatigue = conditions.Fatigue()
 
         feature = Feature(
             name="Disfiguring Curse",
@@ -91,8 +90,7 @@ class _DisfiguringCurse(CursedPower):
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to magically spread its curse to a target that it can see within 60 feet. \
                 The target must make a DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with horrible deformities. \
-                While deformed, the gains two levels of {fatigue.caption} that do not go away when taking a long rest. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success. \
-                {fatigue.description_3rd}",
+                While deformed, the target gains a level of **Exhaustion** that does not go away when taking a long rest. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
         )
         return [feature]
 
@@ -116,7 +114,9 @@ class _CursedWound(CursedPower):
 
 class _RejectDivinity(CursedPower):
     def __init__(self):
-        super().__init__(name="Reject Divinity", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Reject Divinity", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(3, ceil(1.5 * stats.cr)), force_die=Die.d6)
@@ -153,7 +153,9 @@ class _BestowCurse(CursedPower):
 
 class _RayOfEnfeeblement(CursedPower):
     def __init__(self):
-        super().__init__(name="Ray of Enfeeblement", source="SRD5.1 Ray of Enfeeblement")
+        super().__init__(
+            name="Ray of Enfeeblement", source="SRD5.1 Ray of Enfeeblement"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, force_die=Die.d6)
@@ -176,13 +178,12 @@ class _VoidSiphon(CursedPower):
         super().__init__(name="Void Siphon", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        fatigue = conditions.Fatigue()
         distance = 10 if stats.cr <= 7 else 20
 
         feature = Feature(
             name="Void Siphon",
             action=ActionType.Feature,
-            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of {fatigue}",
+            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of **Exhaustion**",
         )
         return [feature]
 

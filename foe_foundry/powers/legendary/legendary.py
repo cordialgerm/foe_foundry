@@ -1,5 +1,5 @@
 from ...attributes import Skills, Stats
-from ...features import Feature
+from ...features import ActionType, Feature
 from ...powers import LOW_POWER
 from ...statblocks import BaseStatblock, MonsterDials
 from ...utils.rounding import easy_multiple_of_five
@@ -15,6 +15,8 @@ def make_legendary(
         n = 2
     else:
         n = 3
+
+    original_dpr = stats.dpr
 
     # HP and LR Adjustments
 
@@ -37,6 +39,15 @@ def make_legendary(
     )
     new_hp_multiplier = 1.0 + 0.5 * legendary_resistance_damage * n / stats.hp.average
 
+    features.append(
+        Feature(
+            name="Legendary Prowess",
+            action=ActionType.Feature,
+            uses=n,
+            description=f"The {stats.name} can choose to succeed on a saving throw or ability check instead of failing. When it does so, it takes {legendary_resistance_damage} force damage",
+        )
+    )
+
     # AC Adjustments
     if stats.cr <= 8:
         ac_increase = 1
@@ -53,32 +64,18 @@ def make_legendary(
 
     # The legendary creature will have an Attack legendary action, so its total damage output will go up dramatically
     # we need to adjust the creature's total damage output to account for this
-
-    overall_damage_target = (
-        1.3 * stats.damage_modifier * stats.base_attack_damage * stats.multiattack
-    )
-
     # we also want to reduce the total number of attacks the creature can make in a turn to not make it take too long
-
-    n_attacks_adjusted = min(max(2, round(0.75 * stats.multiattack)), 3)
-    new_multiattack_modifier = n_attacks_adjusted - stats.multiattack
-    new_damage_modifier = (
-        overall_damage_target
-        / (n_attacks_adjusted + 0.75 * n)  # not all legendary actions will be attacks
-        / stats.base_attack_damage
-    )
+    stats = stats.with_reduced_attacks(reduce_by=1)
 
     # Power Adjustments
     # legendary creature will have some more powers
     recommended_powers_modifier = LOW_POWER
 
-    # Apply HP, AC, and Damage adjustments
+    # Apply HP, AC, and power adjustments
     stats = stats.apply_monster_dials(
         MonsterDials(
             hp_multiplier=new_hp_multiplier,
             ac_modifier=ac_increase,
-            multiattack_modifier=new_multiattack_modifier,
-            attack_damage_multiplier=new_damage_modifier,
             recommended_powers_modifier=recommended_powers_modifier,
         )
     )
@@ -105,6 +102,14 @@ def make_legendary(
 
     # Legendary Action Adjustments
     stats = stats.as_legendary(actions=n, resistances=n, has_lair=has_lair)
+
+    # Rescale Attack Damage
+    target_dpr = 1.3 * original_dpr
+    new_dpr = stats.dpr
+    new_multiplier = target_dpr / new_dpr
+    stats = stats.apply_monster_dials(
+        MonsterDials(attack_damage_multiplier=new_multiplier)
+    )
 
     # Legendary Actions
     legendary_actions = get_legendary_actions(stats, features)

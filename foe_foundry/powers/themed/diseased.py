@@ -5,7 +5,7 @@ from typing import List
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -152,12 +152,11 @@ Chronotaenia = conditions.CustomCondition(
     description_3rd="The creature's movements become sluggish. The creature has disadvantage on initiative rolls and starts each combat **Dazed** until the start of its next turn.",
 )
 
-fatigue = conditions.Fatigue()
 FatiguesEmbrace = conditions.CustomCondition(
     name="Fatigue's Embrace",
     caption="**Fatigue's Embrace**",
-    description=f"Your body is wracked with fatigue. You gain a level of {fatigue.caption} each time you take a long rest. You cannot remove {fatigue.caption} during a long rest. {fatigue.description}",
-    description_3rd=f"The creature's body is wracked with fatigue. The creature gains a level of {fatigue.caption} each time it takes a long rest. The creature cannot remove {fatigue.caption} during a long rest. {fatigue.description_3rd}",
+    description="Your body is wracked with fatigue. You gain a level of **Exhaustion** each time you take a long rest. You cannot remove **Exhaustion** during a long rest.",
+    description_3rd="The creature's body is wracked with fatigue. The creature gains a level of **Exhaustion** each time it takes a long rest. The creature cannot remove **Exhaustion** during a long rest.",
 )
 
 Diseases: List[conditions.CustomCondition] = [

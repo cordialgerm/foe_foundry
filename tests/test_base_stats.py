@@ -8,7 +8,6 @@ def test_all_stats():
         base_stat = base_stats(
             name=f"sample_{common.cr}",
             cr=common.cr,
-            reference_hps=[(common.hp.average, common.cr)],
             stats=[
                 Stats.STR.scaler(StatScaling.Primary),
                 Stats.DEX.scaler(StatScaling.Medium),

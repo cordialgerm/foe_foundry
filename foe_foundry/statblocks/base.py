@@ -31,6 +31,7 @@ class BaseStatblock:
     attributes: Attributes
     attack: Attack
     multiattack: int = 1
+    multiattack_benchmark: int = 1
     primary_damage_type: DamageType = DamageType.Bludgeoning
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
@@ -124,6 +125,14 @@ class BaseStatblock:
 
         return spellcasting
 
+    @property
+    def dpr(self) -> float:
+        return (
+            self.damage_modifier
+            * self.base_attack_damage
+            * (self.multiattack + 0.66 * self.legendary_actions)
+        )
+
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
@@ -137,6 +146,7 @@ class BaseStatblock:
             attributes=deepcopy(self.attributes),
             attack=deepcopy(self.attack),
             multiattack=self.multiattack,
+            multiattack_benchmark=self.multiattack_benchmark,
             primary_damage_type=self.primary_damage_type,
             secondary_damage_type=self.secondary_damage_type,
             difficulty_class_modifier=self.difficulty_class_modifier,
@@ -160,6 +170,9 @@ class BaseStatblock:
             base_attack_damage=self.base_attack_damage,
             additional_roles=self.additional_roles.copy(),
             has_unique_movement_manipulation=self.has_unique_movement_manipulation,
+            legendary_actions=self.legendary_actions,
+            legendary_resistances=self.legendary_resistances,
+            has_lair=self.has_lair,
         )
         return args
 
@@ -428,6 +441,31 @@ class BaseStatblock:
             legendary_actions=actions,
             legendary_resistances=resistances,
             has_lair=has_lair,
+        )
+
+    def with_reduced_attacks(self, reduce_by: int) -> BaseStatblock:
+        if reduce_by <= 0:
+            raise ValueError("reduce_by must be greater than 0")
+        if reduce_by >= 3:
+            raise ValueError("reduce_by must be less than 3")
+
+        if self.multiattack == 1:
+            return self.copy()
+        elif self.multiattack - reduce_by <= 0:
+            return self.with_reduced_attacks(1)
+
+        # monster already had attacks reduced
+        if self.multiattack <= self.multiattack_benchmark - reduce_by:
+            return self.copy()
+
+        new_attacks = self.multiattack_benchmark - reduce_by
+        new_target_multiplier = self.multiattack * self.damage_modifier / new_attacks
+        attack_modifier = new_attacks - self.multiattack
+        return self.apply_monster_dials(
+            MonsterDials(
+                attack_damage_multiplier=new_target_multiplier,
+                multiattack_modifier=attack_modifier,
+            )
         )
 
 

@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, Fatigue, Frozen
+from ...damage import DamageType, Frozen
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -108,7 +108,7 @@ class _Frostbite(UndeadPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5 * max(stats.multiattack, 2), force_die=Die.d8)
+        dmg = stats.target_value(1.5 * min(stats.multiattack, 2), force_die=Die.d8)
         frozen = Frozen(dc=dc)
 
         feature = Feature(
@@ -132,7 +132,6 @@ class _SoulChill(UndeadPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        fatigue = Fatigue()
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 10, min_val=15, max_val=60)
 
@@ -140,7 +139,7 @@ class _SoulChill(UndeadPower):
             name="Soul Chill",
             action=ActionType.Reaction,
             description=f"Whenever a creature within {distance} feet that {stats.selfref} can see fails a saving throw, {stats.selfref} can attempt to leech away a portion of its spirit. \
-                The creature must succeed on a DC {dc} Charisma saving throw. On a failure, it gains one level of {fatigue}.",
+                The creature must succeed on a DC {dc} Charisma saving throw. On a failure, it gains one level of **Exhaustion**.",
         )
         return [feature]
 

@@ -118,7 +118,7 @@ class _BoneSpear(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(0.7 * max(stats.multiattack, 2))
+        damage = stats.target_value(0.7 * min(stats.multiattack, 2))
 
         feature = Feature(
             name="Bone Harpoon",
@@ -142,7 +142,7 @@ class _BoneStorm(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(1.2 * max(stats.multiattack, 2))
+        damage = stats.target_value(1.2 * min(stats.multiattack, 2))
 
         feature = Feature(
             name="Bone Storm",
@@ -167,7 +167,7 @@ class _BoneWall(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(0.5 * max(stats.multiattack, 2))
+        damage = stats.target_value(0.5 * min(stats.multiattack, 2))
 
         feature = Feature(
             name="Bone Wall",

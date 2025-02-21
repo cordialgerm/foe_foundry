@@ -1,6 +1,6 @@
 from .ac import ResolvedArmorClass
 from .attributes import Attributes, Skills, Stats  # noqa
-from .benchmarks import Benchmark, benchmark  # noqa
+from .benchmarks import Benchmark  # noqa
 from .creature_types import CreatureType
 from .damage import Attack, AttackType, Condition, Damage, DamageType  # noqa
 from .die import Die, DieFormula  # noqa

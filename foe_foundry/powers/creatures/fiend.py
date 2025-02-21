@@ -233,14 +233,13 @@ class _TemptingOffer(FiendishPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        fatigue = conditions.Fatigue()
         feature = Feature(
             name="Tempting Offer",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} makes a tempting offer to a creature that can hear it within 60 feet. \
-                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {fatigue}. \
-                The creature may instead accept the offer. In doing so, it loses all levels of fatigue gained in this way but is contractually bound to the offer",
+                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of **Exhaustion**. \
+                The creature may instead accept the offer. In doing so, it loses all levels of exhaustion gained in this way but is contractually bound to the offer",
         )
         return [feature]
 

@@ -1,4 +1,4 @@
-from ..attributes import Attributes, Stats
+from ..attributes import Attributes
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
@@ -20,6 +20,7 @@ Minion = BaseStatblock(
         CHA=10,
     ),
     multiattack=1,
+    multiattack_benchmark=1,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
         name="Attack",
@@ -45,6 +46,7 @@ Soldier = BaseStatblock(
         CHA=10,
     ),
     multiattack=1,
+    multiattack_benchmark=1,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",
@@ -70,6 +72,7 @@ Brute = BaseStatblock(
         CHA=8,
     ),
     multiattack=2,
+    multiattack_benchmark=2,
     primary_damage_type=DamageType.Bludgeoning,
     attack=Attack(
         name="Attack",
@@ -95,6 +98,7 @@ Specialist = BaseStatblock(
         CHA=12,
     ),
     multiattack=2,
+    multiattack_benchmark=2,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
         name="Attack",
@@ -120,6 +124,7 @@ Myrmidon = BaseStatblock(
         CHA=10,
     ),
     multiattack=3,
+    multiattack_benchmark=3,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",
@@ -146,6 +151,7 @@ Sentinel = BaseStatblock(
         CHA=10,
     ),
     multiattack=4,
+    multiattack_benchmark=4,
     primary_damage_type=DamageType.Bludgeoning,
     attack=Attack(
         name="Attack",
@@ -172,6 +178,7 @@ Champion = BaseStatblock(
         CHA=22,
     ),
     multiattack=4,
+    multiattack_benchmark=4,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",

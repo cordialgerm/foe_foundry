@@ -8,6 +8,7 @@ from ..powers import LOW_POWER, Power, select_powers
 from ..powers.creatures.aberration import AberrationPowers
 from ..powers.creatures.fiend import FiendishPowers
 from ..powers.creatures.undead import UndeadPowers
+from ..powers.legendary import make_legendary
 from ..powers.roles.defender import Protection
 from ..powers.themed.cruel import CruelPowers
 from ..powers.themed.cursed import (
@@ -50,6 +51,7 @@ CultistVariant = CreatureVariant(
             cr=10,
             other_creatures={"Cultist Hierophant": "mm25"},
         ),
+        SuggestedCr(name="Cultist Exarch", cr=18, is_legendary=True),
     ],
 )
 
@@ -169,7 +171,7 @@ def generate_cultist(
     elif variant is FiendVariant:
         stats = stats.add_ac_template(HeavyArmor, ac_modifier=2)
     else:
-        stats = stats.add_ac_template(UnholyArmor, ac_modifier=2)
+        stats = stats.add_ac_template(UnholyArmor)
 
     # ATTACKS
     if variant is CultistVariant:
@@ -264,6 +266,11 @@ def generate_cultist(
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     if secondary_attack is not None:
         stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+
+    # LEGENDARY
+    if variant is CultistVariant and cr >= 18:
+        stats, features = make_legendary(stats, features, has_lair=False)
+
     return StatsBeingGenerated(stats=stats, attack=attack, features=features)
 
 

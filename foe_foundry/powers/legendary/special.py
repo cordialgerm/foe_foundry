@@ -1,11 +1,8 @@
 from typing import Iterable
 
-import numpy as np
-
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils.rounding import easy_multiple_of_five
-from ..spell import StatblockSpell
 from .score import LegendaryActionScore, LegendaryActionType
 
 
@@ -14,26 +11,10 @@ def special(
 ) -> Iterable[LegendaryActionScore]:
     # Spellcasting
     if len(stats.spells):
-        spells = np.array(stats.spells, dtype=object)
-        uses = np.array([s.uses or -1 for s in stats.spells])
-        min_uses = np.min(uses)
-        min_use_indexes = uses == min_uses
-
-        candidates = spells[min_use_indexes]
-        legendary_spells: list[StatblockSpell]
-        if len(candidates > 1):
-            lowest_level = np.min([s.level for s in candidates])
-            lowest_level_indexes = [s.level == lowest_level for s in candidates]
-            legendary_spells = candidates[lowest_level_indexes].tolist()  # type: ignore
-        else:
-            legendary_spells = candidates.tolist()  # type: ignore
-
-        spell_names = " or ".join(s.name for s in legendary_spells)
-
         yield LegendaryActionScore(
             feature=Feature(
                 name="Spellcasting",
-                description=f"{stats.selfref.title()} uses Spellcasting to cast {spell_names}. It can't take this action again until the start of its next turn.",
+                description=f"{stats.selfref.title()} uses Spellcasting. It can't take this action again until the start of its next turn.",
                 action=ActionType.Legendary,
             ),
             types={LegendaryActionType.special},

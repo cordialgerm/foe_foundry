@@ -101,14 +101,7 @@ def generate_assassin(
         secondary_damage_type=DamageType.Poison,
     )
 
-    new_attack_count = stats.multiattack // 2
-    attack_damage_modifier = stats.multiattack / new_attack_count
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            multiattack_modifier=new_attack_count - stats.multiattack,
-            attack_damage_multiplier=attack_damage_modifier,
-        )
-    )
+    stats = stats.with_reduced_attacks(reduce_by=1 if stats.cr <= 8 else 2)
 
     # Spies use poisoned Daggers as their primary attack
     attack = weapon.Daggers.with_display_name("Poisoned Dagger")

@@ -51,6 +51,7 @@ def base_stats(
         primary_attribute_score=attributes.primary_attribute_score,
         attributes=attributes,
         multiattack=expected_attacks,
+        multiattack_benchmark=expected_attacks,
         attack=Attack(
             name="Attack",
             hit=expected_hit,
