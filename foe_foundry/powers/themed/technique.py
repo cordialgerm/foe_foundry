@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List
+from typing import List, cast
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
@@ -92,7 +92,7 @@ class _BleedingAttack(Technique):
         damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
-            damage_type = stats.secondary_damage_type
+            damage_type = cast(DamageType, stats.secondary_damage_type)
         else:
             damage_type = DamageType.Piercing
 

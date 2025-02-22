@@ -156,7 +156,7 @@ def generate_assassin(
     def power_filter(p):
         return p is not CunningAction
 
-    stats, power_features = select_powers(
+    stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
@@ -167,7 +167,7 @@ def generate_assassin(
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-    return StatsBeingGenerated(stats=stats, attack=attack, features=features)
+    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
 AssassinTemplate: CreatureTemplate = CreatureTemplate(

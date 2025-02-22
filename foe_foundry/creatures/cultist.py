@@ -130,12 +130,12 @@ class _CustomWeights:
             highly_desirable_powers += FiendishCasters()
 
         if p in highly_desirable_powers:
-            return 3.0
+            return 2.0
         elif p in powers:
-            return 1.0
+            return 1.5
         else:
             # downvote powers not in the list because we have a lot of options above
-            return 0.1
+            return 0.5
 
 
 def generate_cultist(
@@ -254,7 +254,7 @@ def generate_cultist(
             MonsterDials(recommended_powers_modifier=LOW_POWER)
         )
 
-    stats, power_features = select_powers(
+    stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
@@ -271,7 +271,7 @@ def generate_cultist(
     if variant is CultistVariant and cr >= 18:
         stats, features = make_legendary(stats, features, has_lair=False)
 
-    return StatsBeingGenerated(stats=stats, attack=attack, features=features)
+    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
 CultistTemplate: CreatureTemplate = CreatureTemplate(
