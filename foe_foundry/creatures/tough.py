@@ -146,7 +146,7 @@ def generate_tough(
     def custom_filter(power: Power) -> bool:
         return power is not PackTactics
 
-    stats, power_features = select_powers(
+    stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
@@ -161,7 +161,7 @@ def generate_tough(
     if variant is BossVariant and cr >= 8:
         stats, features = make_legendary(stats, features, has_lair=False)
 
-    return StatsBeingGenerated(stats=stats, attack=attack, features=features)
+    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
 ToughTemplate: CreatureTemplate = CreatureTemplate(

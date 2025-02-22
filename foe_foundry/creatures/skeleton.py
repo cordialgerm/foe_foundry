@@ -162,7 +162,7 @@ def generate_skeleton(
     )
 
     # ADDITIONAL POWERS
-    stats, power_features = select_powers(
+    stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
@@ -174,7 +174,7 @@ def generate_skeleton(
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     if secondary_attack is not None:
         stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-    return StatsBeingGenerated(stats=stats, attack=attack, features=features)
+    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
 SkeletonTemplate: CreatureTemplate = CreatureTemplate(

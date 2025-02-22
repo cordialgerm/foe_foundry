@@ -4,8 +4,8 @@ from typing import Callable, Iterable, TypeAlias, cast
 
 import numpy as np
 
-from ..attack_template import AttackTemplate
 from ..features import Feature
+from ..powers.selection import PowerSelector
 from ..statblocks import BaseStatblock, Statblock
 from ..utils.rng import RngFactory
 
@@ -13,8 +13,8 @@ from ..utils.rng import RngFactory
 @dataclass(kw_only=True)
 class StatsBeingGenerated:
     stats: BaseStatblock
-    attack: AttackTemplate
     features: list[Feature]
+    powers: PowerSelector
 
     def finalize(self) -> Statblock:
         return Statblock.from_base_stats(

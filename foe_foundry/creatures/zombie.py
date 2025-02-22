@@ -160,7 +160,7 @@ def generate_zombie(
     )
 
     # ADDITIONAL POWERS
-    stats, power_features = select_powers(
+    stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
@@ -175,7 +175,7 @@ def generate_zombie(
     if variant is ZombieOgreVariant and stats.cr >= 16:
         stats, features = make_legendary(stats, features, has_lair=False)
 
-    return StatsBeingGenerated(stats=stats, attack=attack, features=features)
+    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
 ZombieTemplate: CreatureTemplate = CreatureTemplate(
