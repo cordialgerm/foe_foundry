@@ -122,14 +122,12 @@ class _RequirementTracker:
 
         # if there are many required checks and you pass them all then you should get a score boost
         # this is because narrowly defined powers are unique and interesting, so if a candidate qualifies they should have a boosted chance
-        strict_requirement_boost = 0.25 * max(0, self.require_hits - 2)
+        strict_requirement_boost = 0.1 * min(max(0, self.require_hits - 2), 3)
 
         # get a score boost for bonus checks
-        bonus_boost = 0.125 * self.bonus_hits
+        bonus_boost = 0.1 * min(self.bonus_hits, 3)
 
-        final_score = self.weight * min(
-            2.0, score + strict_requirement_boost + bonus_boost
-        )
+        final_score = self.weight * (score + strict_requirement_boost + bonus_boost)
         return final_score
 
 
@@ -222,11 +220,14 @@ def score(
         t.required(candidate.creature_type in require_types or relaxed_mode)
 
     if require_damage:
-        t.required(any(candidate_damage_types.intersection(require_damage)) or relaxed_mode)
+        t.required(
+            any(candidate_damage_types.intersection(require_damage)) or relaxed_mode
+        )
 
     if require_stats:
         t.required(
-            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats) or relaxed_mode
+            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats)
+            or relaxed_mode
         )
 
     if require_size:

@@ -64,11 +64,14 @@ class PowerSelector:
         self.probabilities_weighted = np.array(self.probabilities_weighted)
         self.probabilities_raw = np.array(self.probabilities_raw)
 
-    def select_next(self) -> Power:
+    def select_next(self) -> Power | None:
         p_raw, p_weighted, p_adjusted = self.get_candidate_probabilities()
         self.probabilities_raw.append(p_raw)  # type: ignore
         self.probabilities_weighted.append(p_weighted)  # type: ignore
         self.probabilities_adjusted.append(p_adjusted)  # type: ignore
+
+        if np.sum(p_adjusted) == 0:
+            return None
 
         indx = self.rng.choice(a=len(self.all_powers), size=None, p=p_adjusted)
         return self.all_powers[indx]
@@ -96,19 +99,18 @@ class PowerSelector:
             )
 
             raw_score = power.score(self.stats, relaxed_mode=custom_multiplier > 1.0)
-            if raw_score < 0:
+            if raw_score <= 0:
                 raw_score = -20
+                weighted_score = -20
+                adjusted_score = -20
+            else:
+                weighted_score = custom_multiplier * raw_score
 
-            weighted_score = custom_multiplier * raw_score
-
-            if raw_score > 0:
                 feasibility_multiplier = self.feasibility_multiplier(power)
                 if feasibility_multiplier <= 0:
                     adjusted_score = -20
                 else:
                     adjusted_score = feasibility_multiplier * weighted_score
-            else:
-                adjusted_score = -20
 
             raw_scores.append(raw_score)
             weighted_scores.append(weighted_score)
@@ -231,10 +233,18 @@ class PowerSelector:
 def _probabilities(
     scores: np.ndarray,
     temperature: float = 1.0,
+    top_k: int = 50,
 ) -> np.ndarray:
+    if np.all(scores < 0):
+        return np.zeros_like(scores)
+
     p = np.exp(scores / temperature)
     p = p / np.sum(p)
-    return p
+
+    new_p = np.copy(p)
+    # new_p[np.argsort(p)[:-top_k]] = 0
+    # new_p = new_p / np.sum(new_p)
+    return new_p
 
 
 def select_powers(

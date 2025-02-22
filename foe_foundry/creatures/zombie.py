@@ -51,11 +51,11 @@ class _CustomWeights:
 
     def __call__(self, p: Power):
         if p in ZombiePowers:
-            return 3
+            return 2.5
         elif p in DiseasedPowers:
-            return 2
+            return 1.5
         else:
-            return 1
+            return 0.5
 
 
 def generate_zombie(
@@ -160,10 +160,14 @@ def generate_zombie(
     )
 
     # ADDITIONAL POWERS
+    def custom_filter(power: Power) -> bool:
+        return power not in default_powers
+
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
+        custom_filter=custom_filter,
         custom_weights=_CustomWeights(stats, variant),
     )
     features += power_features

@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -48,7 +47,9 @@ class GadgetPower(PowerWithStandardScoring):
 class _PotionOfHealing(GadgetPower):
     def __init__(self):
         super().__init__(
-            name="Potion of Healing", source="SRD5.1 Healing Potion", power_level=LOW_POWER
+            name="Potion of Healing",
+            source="SRD5.1 Healing Potion",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -132,7 +133,13 @@ def _NetPowers() -> List[Power]:
 
     class _Net(GadgetPower):
         def __init__(
-            self, name: str, ac: int, hp: int, min_cr: int, max_cr: int | None, additional: str
+            self,
+            name: str,
+            ac: int,
+            hp: int,
+            min_cr: int,
+            max_cr: int | None,
+            additional: str,
         ):
             def within_cr_range(c: BaseStatblock) -> bool:
                 return (min_cr <= c.cr) and (c.cr <= (max_cr or 100))
