@@ -4,7 +4,7 @@ from typing import List
 
 from ...attack_template import natural, weapon
 from ...attributes import Stats
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -194,11 +194,37 @@ class _Toss(RecklessPower):
         return [feature]
 
 
+class _Strangle(RecklessPower):
+    def __init__(self):
+        super().__init__(
+            name="Strangle",
+            source="A5E SRD - Bugbear",
+            create_date=datetime(2023, 11, 23),
+            attack_names=["-", weapon.Whip, natural.Slam, natural.Tentacle],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        dc = stats.difficulty_class_easy
+        return stats.add_attack(
+            name="Strangle",
+            scalar=0.8,
+            damage_type=DamageType.Bludgeoning,
+            replaces_multiattack=1,
+            additional_description=f"On a hit, the target is **Grappled** (escape DC {dc}) and is pulled 5 feet toward {stats.selfref}. \
+                Until this grapple ends, {stats.selfref} automatically hits with its Strangle attack and the target can't breathe. \
+                If the target attempts to cast a spell with a verbal component, it must succeed on a DC {dc} Constitution saving throw or the spell fails.",
+        )
+
+
 BloodiedRage: Power = _BloodiedRage()
 Charger: Power = _Charger()
 RecklessFlurry: Power = _RecklessFlurry()
 Reckless: Power = _Reckless()
 RelentlessEndurance: Power = _RelentlessEndurance()
+Strangle: Power = _Strangle()
 Toss: Power = _Toss()
 WildCleave: Power = _WildCleave()
 
@@ -209,6 +235,7 @@ RecklessPowers: List[Power] = [
     RecklessFlurry,
     Reckless,
     RelentlessEndurance,
+    Strangle,
     Toss,
     WildCleave,
 ]

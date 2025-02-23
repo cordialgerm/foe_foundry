@@ -4,7 +4,7 @@ from ..ac_templates import MediumArmor, Unarmored, UnholyArmor
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
-from ..powers import LOW_POWER, MEDIUM_POWER, Power, select_powers
+from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
 from ..powers.creatures.undead import UndeadFortitude
 from ..powers.themed.skeletal import SkeletalPowers
 from ..role_types import MonsterRole
@@ -55,15 +55,15 @@ class _CustomWeights:
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power):
+    def __call__(self, p: Power) -> CustomPowerWeight:
         powers = SkeletalPowers
         suppress_powers = [UndeadFortitude]
         if p in suppress_powers:
-            return 0  # skeletons are not zombies
+            return CustomPowerWeight(0)  # skeletons are not zombies
         elif p in powers:
-            return 2
+            return CustomPowerWeight(2, ignore_usual_requirements=True)
         else:
-            return 1
+            return CustomPowerWeight(1)
 
 
 def generate_skeleton(

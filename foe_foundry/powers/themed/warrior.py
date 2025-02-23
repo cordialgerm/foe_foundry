@@ -1,20 +1,23 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
-from ...attack_template import natural, weapon
-from ...attributes import Skills
+from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Dazed
+from ...damage import AttackType
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ...utils import easy_multiple_of_five
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 from .organized import score_could_be_organized
 
 
@@ -36,11 +39,11 @@ class Warrior(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerType.Theme,
+            power_type=PowerType.Creature,
             theme="warrior",
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),
-                bonus_roles=MonsterRole.Bruiser,
+                bonus_roles={MonsterRole.Bruiser, MonsterRole.Defender},
                 bonus_skills=Skills.Athletics,
             )
             | score_args,
@@ -52,7 +55,11 @@ class _PackTactics(Warrior):
         super().__init__(
             name="Pack Tactics",
             source="SRD5.1 Wolf",
-            require_types={CreatureType.Beast, CreatureType.Humanoid, CreatureType.Monstrosity},
+            require_types={
+                CreatureType.Beast,
+                CreatureType.Humanoid,
+                CreatureType.Monstrosity,
+            },
             bonus_roles={
                 MonsterRole.Leader,
                 MonsterRole.Bruiser,
@@ -120,8 +127,10 @@ class _Leap(Warrior):
             name="Mighty Leap",
             source="A5E SRD Bulette",
             create_date=datetime(2023, 11, 23),
+            require_stats=Stats.STR,
             bonus_size=Size.Large,
             require_callback=is_ground,
+            stat_threshold=14,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -142,61 +151,129 @@ class _Leap(Warrior):
         return [feature]
 
 
-class _Strangle(Warrior):
+class _BreakMagic(Warrior):
     def __init__(self):
         super().__init__(
-            name="Strangle",
-            source="A5E SRD - Bugbear",
-            create_date=datetime(2023, 11, 23),
-            attack_names=["-", weapon.Whip, natural.Slam, natural.Tentacle],
+            name="Break Magic",
+            source="A5E SRD Dread Knight",
+            power_level=MEDIUM_POWER,
+            require_callback=is_organized,
+            require_cr=8,
+            bonus_roles=MonsterRole.Bruiser,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        return []
-
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        dc = stats.difficulty_class_easy
-        return stats.add_attack(
-            name="Strangle",
-            scalar=0.8,
-            damage_type=DamageType.Bludgeoning,
+        feature = Feature(
+            name="Break Magic",
+            action=ActionType.Action,
             replaces_multiattack=1,
-            additional_description=f"On a hit, the target is **Grappled** (escape DC {dc}) and is pulled 5 feet toward {stats.selfref}. \
-                Until this grapple ends, {stats.selfref} automatically hits with its Strangle attack and the target can't breathe. \
-                If the target attempts to cast a spell with a verbal component, it must succeed on a DC {dc} Constitution saving throw or the spell fails.",
+            uses=1,
+            description=f"{stats.selfref.capitalize()} ends all spell effects created by a 5th-level or lower spell slot on a creature, object, or point it can see within 30 feet.",
+        )
+        return [feature]
+
+
+class _Lunge(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Lunge",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            create_date=datetime(2025, 2, 23),
         )
 
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Lunge",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} takes the Dash action and can make its next attack with advantage and an additional 5 feet of reach",
+        )
+        return [feature]
 
-# TODO A5E SRD - Horned Devil
-# Pin (1/Day). When a creature misses the
-# devil with a melee attack, the devil makes
-# a fork attack against that creature. On a
-# hit, the target is impaled by the fork and
-# grappled (escape DC 17). Until this
-# grapple ends, the devil can’t make fork
-# attacks or use Inferno, but the target
-# takes 7 (2d6) piercing damage plus 3
-# A5E System Reference Document
-# (1d6) fire damage at the beginning of
-# each of its turns.
 
-# TODO A5E SRD - Dread Knight
-# Break Magic. The dread knight ends all
-# spell effects created by a 5th-level or
-# lower spell slot on a creature, object, or
-# point it can see within 30 feet.
+class _CommandTheTroops(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Command the Troops",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            create_date=datetime(2025, 2, 23),
+            require_roles={MonsterRole.Leader},
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Command the Troops",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} commands a willing creature within 30 feet to use its reaction and make an attack at advantage",
+        )
+
+        return [feature]
+
+
+class _RallyTheTroops(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Rally the Troops",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            create_date=datetime(2025, 2, 23),
+            require_roles={MonsterRole.Leader},
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hp = easy_multiple_of_five(stats.target_value(0.5).average, min_val=5)
+
+        feature = Feature(
+            name="Rally the Troops",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} rallies all friendly creatures within 60 feet, granting them {hp} temporary hit points.",
+        )
+
+        return [feature]
+
+
+class _PreciseStrike(Warrior):
+    def __init__(self):
+        super().__init__(
+            name="Precise Strike",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            create_date=datetime(2025, 2, 23),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Precise Strike",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref.capitalize()} misses with an attack, it may turn that miss into a hit.",
+        )
+        return [feature]
 
 
 ActionSurge: Power = _ActionSurge()
+BreakMagic: Power = _BreakMagic()
+CommandTheTroops: Power = _CommandTheTroops()
 Disciplined: Power = _Disciplined()
+Lunge: Power = _Lunge()
 MightyLeap: Power = _Leap()
 PackTactics: Power = _PackTactics()
-Strangle: Power = _Strangle()
+PreciseStrike: Power = _PreciseStrike()
+RallyTheTroops: Power = _RallyTheTroops()
 
 WarriorPowers: List[Power] = [
     ActionSurge,
+    BreakMagic,
+    CommandTheTroops,
     Disciplined,
+    Lunge,
     MightyLeap,
     PackTactics,
-    Strangle,
+    PreciseStrike,
+    RallyTheTroops,
 ]

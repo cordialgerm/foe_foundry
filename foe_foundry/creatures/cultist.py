@@ -4,7 +4,7 @@ from ..ac_templates import HeavyArmor, LightArmor, UnholyArmor
 from ..attack_template import natural, spell, weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import LOW_POWER, Power, select_powers
+from ..powers import LOW_POWER, CustomPowerWeight, Power, select_powers
 from ..powers.creatures.aberration import AberrationPowers
 from ..powers.creatures.fiend import FiendishPowers
 from ..powers.creatures.undead import UndeadPowers
@@ -97,16 +97,17 @@ class _CustomWeights:
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power):
+    def __call__(self, p: Power) -> CustomPowerWeight:
         powers = []
         highly_desirable_powers = []
 
         suppress_powers = GadgetPowers + TrapPowers
         if p in suppress_powers:
-            return 0  # Cultists shouldn't really be "high tech"
+            return CustomPowerWeight(0)  # Cultists shouldn't really be "high tech"
 
         if p is Protection:
-            return 0  # Protection is always available
+            # Protection is always available to minion cultists
+            return CustomPowerWeight(0)
 
         if self.stats.cr >= 2:
             powers += [RejectDivinity, RayOfEnfeeblement, UnholyAura, BestowCurse]
@@ -130,12 +131,12 @@ class _CustomWeights:
             highly_desirable_powers += FiendishCasters()
 
         if p in highly_desirable_powers:
-            return 2.0
+            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
         elif p in powers:
-            return 1.5
+            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
         else:
             # downvote powers not in the list because we have a lot of options above
-            return 0.5
+            return CustomPowerWeight(0.5)
 
 
 def generate_cultist(

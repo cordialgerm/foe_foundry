@@ -4,7 +4,7 @@ from ..ac_templates import Unarmored
 from ..attack_template import natural
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
-from ..powers import Power, select_powers
+from ..powers import CustomPowerWeight, Power, select_powers
 from ..powers.creatures.undead import UndeadFortitude
 from ..powers.legendary import make_legendary
 from ..powers.themed.diseased import DiseasedPowers
@@ -49,13 +49,13 @@ class _CustomWeights:
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power):
+    def __call__(self, p: Power) -> CustomPowerWeight:
         if p in ZombiePowers:
-            return 2.5
+            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
         elif p in DiseasedPowers:
-            return 1.5
+            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
         else:
-            return 0.5
+            return CustomPowerWeight(weight=0.5)
 
 
 def generate_zombie(

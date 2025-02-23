@@ -422,11 +422,14 @@ class BaseStatblock:
 
     def with_roles(
         self,
-        primary_role: MonsterRole,
+        primary_role: MonsterRole | None = None,
         additional_roles: list[MonsterRole] | None = None,
     ) -> BaseStatblock:
         if additional_roles is None:
             additional_roles = []
+
+        if primary_role is None:
+            primary_role = self.role
 
         new_additional_roles = set(
             self.additional_roles.copy() + additional_roles + list(self.role)
