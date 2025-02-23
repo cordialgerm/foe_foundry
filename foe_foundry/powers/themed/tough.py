@@ -186,7 +186,7 @@ class _Regeneration(PhysicallyTough):
         return [feature]
 
 
-class _Stoneskin(PhysicallyTough):
+class _Stoneskin(MagicallyTough):
     def __init__(self):
         super().__init__(name="Stoneskin", source="SRD5.1 Stoneskin")
 

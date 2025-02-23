@@ -4,7 +4,7 @@ from ..ac_templates import LightArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import select_powers
+from ..powers import CustomPowerWeight, Power, select_powers
 from ..powers.roles.skirmisher import CunningAction
 from ..powers.themed.anti_magic import SealOfSilence
 from ..powers.themed.anti_ranged import HardToPinDown
@@ -29,7 +29,7 @@ from .template import (
 )
 
 
-def custom_power_weights(p) -> float:
+def custom_power_weights(p: Power) -> CustomPowerWeight:
     custom_powers = [
         BrutalCritical,
         IdentifyWeaknes,
@@ -41,9 +41,9 @@ def custom_power_weights(p) -> float:
         PoisonedAttack,
     ] + GrenadePowers
     if p in custom_powers:
-        return 2.0
+        return CustomPowerWeight(2.0, ignore_usual_requirements=True)
     else:
-        return 1.0
+        return CustomPowerWeight(1.0, ignore_usual_requirements=False)
 
 
 AssassinVariant = CreatureVariant(

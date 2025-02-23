@@ -3,7 +3,6 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -41,7 +40,9 @@ class AmbusherPower(PowerWithStandardScoring):
 class _StealthySneak(AmbusherPower):
     def __init__(self):
         super().__init__(
-            name="Stealthy Sneak", source="A5E SRD Bugbear", create_date=datetime(2023, 11, 22)
+            name="Stealthy Sneak",
+            source="A5E SRD Bugbear",
+            create_date=datetime(2023, 11, 22),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -61,12 +62,16 @@ class _DeadlyAmbusher(AmbusherPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Deadly Ambusher",
-            description=f"{stats.selfref.capitalize()} has advantage on initiative rolls. \
-                On the first turn of combat, it has advantage on any attack rolls against targets with lower initiative than it, \
+            description=f"On the first turn of combat, {stats.selfref} has advantage on any attack rolls against targets with lower initiative than it, \
                 and it scores a critical hit on a score of 19 or 20.",
             action=ActionType.Feature,
         )
         return [feature]
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.grant_proficiency_or_expertise(
+            Skills.Initiative
+        ).grant_proficiency_or_expertise(Skills.Initiative)
 
 
 CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
@@ -74,4 +79,9 @@ NimbleEscape: Power = _NimbleEscape(MonsterRole.Ambusher)
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 StealthySneak: Power = _StealthySneak()
 
-AmbusherPowers: List[Power] = [CunningAction, DeadlyAmbusher, NimbleEscape, StealthySneak]
+AmbusherPowers: List[Power] = [
+    CunningAction,
+    DeadlyAmbusher,
+    NimbleEscape,
+    StealthySneak,
+]

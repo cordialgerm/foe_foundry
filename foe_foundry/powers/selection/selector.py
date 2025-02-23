@@ -13,6 +13,7 @@ from foe_foundry.powers.themed import ThemedPowers
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
+from .custom_weights import CustomWeightCallback
 from .score import SelectionScore
 from .selection import PowerSelection
 from .targets import SelectionTargets
@@ -27,7 +28,7 @@ class PowerSelector:
         rng: Generator,
         stats: BaseStatblock,
         custom_filter: Callable[[Power], bool] | None = None,
-        custom_weights: Callable[[Power], float] | None = None,
+        custom_weights: CustomWeightCallback | None = None,
     ):
         self.selection = PowerSelection()
         self.targets = targets
@@ -94,11 +95,19 @@ class PowerSelector:
         # 3. feasibility multipliers based on constraints are applied to the weighted scores
 
         for power in self.all_powers:
-            custom_multiplier = (
-                self.custom_weights(power) if self.custom_weights else 1.0
-            )
+            if self.custom_weights is None:
+                custom_multiplier = 1.0
+                relaxed_mode = False
+            else:
+                custom_weight = self.custom_weights(power)
+                if isinstance(custom_weight, float):
+                    custom_multiplier = custom_weight
+                    relaxed_mode = False
+                else:
+                    custom_multiplier = custom_weight.weight
+                    relaxed_mode = custom_weight.ignore_usual_requirements
 
-            raw_score = power.score(self.stats, relaxed_mode=custom_multiplier > 1.0)
+            raw_score = power.score(self.stats, relaxed_mode=relaxed_mode)
             if raw_score <= 0:
                 raw_score = -20
                 weighted_score = -20
@@ -127,58 +136,65 @@ class PowerSelector:
         )
 
     def feasibility_multiplier(self, power: Power) -> float:
-        score = self.score
+        try:
+            score = self.score
 
-        # check if power level is too high for remaining power budget
-        if power.power_level > score.remaining_power:
+            # check if power level is too high for remaining power budget
+            if power.power_level > score.remaining_power:
+                return -10
+
+            # check if power is already selected
+            if power in self.selection.selected_powers:
+                return -10
+
+            # check if a custom filter excludes the power
+            if self.custom_filter is not None and not self.custom_filter(power):
+                return -10
+
+            # check if the power/feature violates any max constraints
+            if not self._power_follows_max_constraints(power) or any(
+                not self._feature_follows_max_constraints(f)
+                for f in power.generate_features(self.stats)
+            ):
+                return -10
+
+            multiplier = 1.0
+
+            # if the creature doesn't have any high power abilities then make high power more attractive
+            if power.power_level > MEDIUM_POWER and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_level > MEDIUM_POWER
+            ):
+                multiplier *= 1.25
+
+            # if the creature doesn't yet have any Creature powers then make them more attractive
+            if power.power_type == PowerType.Creature and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Creature
+            ):
+                multiplier *= 1.25
+
+            # if the creature doesn't yet have any Theme powers then make them more attractive
+            if power.power_type == PowerType.Role and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Role
+            ):
+                multiplier *= 1.25
+
+            # if feature would cause us to go above target then make it less attractive
+            # don't eliminate it entirely because it might lead to total infeasibility
+            if not self._power_follows_target_goals(power) or any(
+                not self._feature_follows_target_goals(f)
+                for f in power.generate_features(self.stats)
+            ):
+                multiplier *= 0.1
+
+            return multiplier
+        except ValueError:
             return -10
-
-        # check if power is already selected
-        if power in self.selection.selected_powers:
-            return -10
-
-        # check if a custom filter excludes the power
-        if self.custom_filter is not None and not self.custom_filter(power):
-            return -10
-
-        # check if the power/feature violates any max constraints
-        if not self._power_follows_max_constraints(power) or any(
-            not self._feature_follows_max_constraints(f)
-            for f in power.generate_features(self.stats)
-        ):
-            return -10
-
-        multiplier = 1.0
-
-        # if the creature doesn't have any high power abilities then make high power more attractive
-        if power.power_level > MEDIUM_POWER and not any(
-            p for p in self.selection.selected_powers if p.power_level > MEDIUM_POWER
-        ):
-            multiplier *= 1.25
-
-        # if the creature doesn't yet have any Creature powers then make them more attractive
-        if power.power_type == PowerType.Creature and not any(
-            p
-            for p in self.selection.selected_powers
-            if p.power_type == PowerType.Creature
-        ):
-            multiplier *= 1.25
-
-        # if the creature doesn't yet have any Theme powers then make them more attractive
-        if power.power_type == PowerType.Role and not any(
-            p for p in self.selection.selected_powers if p.power_type == PowerType.Role
-        ):
-            multiplier *= 1.25
-
-        # if feature would cause us to go above target then make it less attractive
-        # don't eliminate it entirely because it might lead to total infeasibility
-        if not self._power_follows_target_goals(power) or any(
-            not self._feature_follows_target_goals(f)
-            for f in power.generate_features(self.stats)
-        ):
-            multiplier *= 0.1
-
-        return multiplier
 
     def _power_follows_max_constraints(self, power: Power) -> bool:
         score = self.score
@@ -253,7 +269,7 @@ def select_powers(
     power_level: float,
     retries: int = 3,
     custom_filter: Callable[[Power], bool] | None = None,
-    custom_weights: Callable[[Power], float] | None = None,
+    custom_weights: CustomWeightCallback | None = None,
 ) -> Tuple[BaseStatblock, List[Feature], PowerSelector]:
     rng = rng_instance(rng)
 

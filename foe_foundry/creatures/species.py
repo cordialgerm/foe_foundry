@@ -1,6 +1,7 @@
 from ..attributes import Stats
 from ..damage import DamageType
 from ..powers import LOW_POWER, MEDIUM_POWER, RIBBON_POWER
+from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock, MonsterDials
 from .template import CreatureSpecies
 
@@ -19,6 +20,7 @@ class _DwarfSpecies(CreatureSpecies):
         stats = stats.apply_monster_dials(
             MonsterDials(hp_multiplier=1.1, recommended_powers_modifier=-RIBBON_POWER)
         )
+        stats = stats.with_roles(additional_roles=[MonsterRole.Defender])
         stats = stats.copy(name=f"Dwarf {stats.name}", creature_subtype="Dwarf")
         return stats
 
@@ -39,7 +41,8 @@ class _OrcSpecies(CreatureSpecies):
             )
         )
         stats = stats.copy(name=f"Orc {stats.name}", creature_subtype="Orc")
-        stats.scale({Stats.STR: Stats.STR.Boost(2)})
+        stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
+        stats = stats.with_roles(additional_roles=[MonsterRole.Bruiser])
         return stats
 
 
