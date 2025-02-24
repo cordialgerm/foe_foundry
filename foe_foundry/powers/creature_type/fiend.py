@@ -34,7 +34,7 @@ class FiendishPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
             theme="Fiend",

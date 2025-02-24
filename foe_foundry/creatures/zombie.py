@@ -9,7 +9,7 @@ from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.legendary import make_legendary
 from ..powers.themed.diseased import DiseasedPowers
 from ..powers.themed.technique import GrapplingAttack
-from ..powers.themed.zombie import ZombiePowers
+from ..powers.creature.zombie import ZombiePowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling

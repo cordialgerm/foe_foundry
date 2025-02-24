@@ -6,7 +6,7 @@ from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
 from ..powers.creature_type.undead import UndeadFortitude
-from ..powers.themed.skeletal import SkeletalPowers
+from ..powers.creature.skeletal import SkeletalPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling

@@ -7,7 +7,7 @@ from ..damage import AttackType, DamageType
 from ..die import Die
 from ..powers import Power, select_powers
 from ..powers.legendary import make_legendary
-from ..powers.themed.warrior import PackTactics
+from ..powers.creature.warrior import PackTactics
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling

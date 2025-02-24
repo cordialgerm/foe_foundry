@@ -8,6 +8,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
+    Power,
     PowerType,
     PowerWithStandardScoring,
 )
@@ -27,7 +28,7 @@ class SkeletalPower(PowerWithStandardScoring):
             source=source,
             theme="skeletal",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             create_date=create_date,
             score_args=dict(
                 require_types=[CreatureType.Undead],
@@ -187,7 +188,7 @@ BoneSpear: SkeletalPower = _BoneSpear()
 BoneStorm: SkeletalPower = _BoneStorm()
 BoneWall: SkeletalPower = _BoneWall()
 
-SkeletalPowers: List[SkeletalPower] = [
+SkeletalPowers: List[Power] = [
     BoneShards,
     BoneSpear,
     BoneStorm,

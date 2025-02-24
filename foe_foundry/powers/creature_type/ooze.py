@@ -3,14 +3,13 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
-    LOW_POWER,
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
@@ -31,7 +30,7 @@ class OozePower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Ooze, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
@@ -113,7 +112,9 @@ class _Split(OozePower):
 class _Transparent(OozePower):
     def __init__(self):
         super().__init__(
-            name="Transparent", source="SRD5.1 Gelatinous Cube", power_level=RIBBON_POWER
+            name="Transparent",
+            source="SRD5.1 Gelatinous Cube",
+            power_level=RIBBON_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,7 +155,9 @@ class _LeechingGrasp(OozePower):
 
 class _SlimeSpray(OozePower):
     def __init__(self):
-        super().__init__(name="Slime Spray", source="Foe Foundry", bonus_damage=DamageType.Acid)
+        super().__init__(
+            name="Slime Spray", source="Foe Foundry", bonus_damage=DamageType.Acid
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, suggested_die=Die.d6)

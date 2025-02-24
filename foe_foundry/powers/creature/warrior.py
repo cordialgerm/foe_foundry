@@ -18,7 +18,7 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from .organized import score_could_be_organized
+from ..themed.organized import score_could_be_organized
 
 
 def is_organized(c: BaseStatblock) -> bool:
@@ -39,7 +39,7 @@ class Warrior(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             theme="warrior",
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),

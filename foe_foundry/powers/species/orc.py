@@ -1,20 +1,20 @@
 from datetime import datetime
 from typing import List
 
-from ....creature_types import CreatureType
-from ....damage import AttackType
-from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....statblocks import BaseStatblock
-from ...power import (
+from ...creature_types import CreatureType
+from ...damage import AttackType
+from ...features import ActionType, Feature
+from ...role_types import MonsterRole
+from ...statblocks import BaseStatblock
+from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
 )
-from ...roles.bruiser import StunningBlow
-from ..reckless import RelentlessEndurance
+from ..roles.bruiser import StunningBlow
+from ..themed.reckless import RelentlessEndurance
 
 
 class OrcPower(PowerWithStandardScoring):
@@ -39,7 +39,7 @@ class OrcPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerType.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,

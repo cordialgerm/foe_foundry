@@ -22,7 +22,7 @@ class UndeadPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Undead, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,

@@ -23,7 +23,9 @@ from ..power import (
 
 class ElementalPower(PowerWithStandardScoring):
     def has_elemental_damage(self, b: BaseStatblock):
-        return b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
+        return (
+            b.secondary_damage_type is not None and b.secondary_damage_type.is_elemental
+        )
 
     def __init__(
         self,
@@ -40,7 +42,7 @@ class ElementalPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             source=source,
             create_date=create_date,
@@ -90,7 +92,8 @@ def elemental_affinity_power(damage_type: DamageType) -> Power:
         def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
             if stats.cr <= 8:
                 stats = stats.grant_resistance_or_immunity(
-                    resistances={damage_type}, upgrade_resistance_to_immunity_if_present=True
+                    resistances={damage_type},
+                    upgrade_resistance_to_immunity_if_present=True,
                 )
             else:
                 stats = stats.grant_resistance_or_immunity(immunities={damage_type})
@@ -362,7 +365,10 @@ def elemental_smite_power(dmg_type: DamageType) -> Power:
             description = f"Immediately after hitting with an attack, {stats.selfref} deals an additional {dmg.description} {dmg_type} damage to the target {condition}"
 
             feature = Feature(
-                name=name, action=ActionType.BonusAction, description=description, recharge=5
+                name=name,
+                action=ActionType.BonusAction,
+                description=description,
+                recharge=5,
             )
             return [feature]
 
@@ -383,7 +389,9 @@ class _ElementalReplication(ElementalPower):
         # TODO - remove randomness
         rng = np.random.default_rng(20210518)
         _, _, description = summoning.determine_summon_formula(
-            summoner=stats.secondary_damage_type, summon_cr_target=stats.cr / 4.0, rng=rng
+            summoner=stats.secondary_damage_type,
+            summon_cr_target=stats.cr / 4.0,
+            rng=rng,
         )
 
         feature = Feature(
@@ -413,9 +421,12 @@ damage_aura_data = {
 }
 
 DamagingAuraPowers = [
-    damaging_aura_power(name, damage_type) for damage_type, name in damage_aura_data.items()
+    damaging_aura_power(name, damage_type)
+    for damage_type, name in damage_aura_data.items()
 ]
-ElementalAffinityPowers = [elemental_affinity_power(dt) for dt in DamageType.Elemental()]
+ElementalAffinityPowers = [
+    elemental_affinity_power(dt) for dt in DamageType.Elemental()
+]
 ElementalSmitePowers = [elemental_smite_power(dt) for dt in DamageType.Elemental()]
 ElementalBurstPowers = [elemental_burst_power(dt) for dt in DamageType.Elemental()]
 

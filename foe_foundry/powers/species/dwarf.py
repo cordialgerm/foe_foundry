@@ -1,19 +1,19 @@
 from datetime import datetime
 from typing import List
 
-from ....creature_types import CreatureType
-from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....statblocks import BaseStatblock
-from ...power import (
+from ...creature_types import CreatureType
+from ...features import ActionType, Feature
+from ...role_types import MonsterRole
+from ...statblocks import BaseStatblock
+from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
 )
-from ...roles.defender import Taunt
-from ..reckless import BloodiedRage
+from ..roles.defender import Taunt
+from ..themed.reckless import BloodiedRage
 
 
 class DwarvenPower(PowerWithStandardScoring):
@@ -38,7 +38,7 @@ class DwarvenPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerType.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,

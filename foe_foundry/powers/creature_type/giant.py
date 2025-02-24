@@ -29,7 +29,7 @@ class GiantPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             source=source,
             create_date=create_date,
@@ -77,7 +77,9 @@ class _Boulder(GiantPower):
 
 class _CloudRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Cloud Rune", source="Foe Foundry", bonus_skills=Skills.Deception)
+        super().__init__(
+            name="Cloud Rune", source="Foe Foundry", bonus_skills=Skills.Deception
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -93,10 +95,13 @@ class _CloudRune(GiantPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Lightning},
+            upgrade_resistance_to_immunity_if_present=True,
         )
 
-        new_attributes = stats.attributes.grant_proficiency_or_expertise(Skills.Deception)
+        new_attributes = stats.attributes.grant_proficiency_or_expertise(
+            Skills.Deception
+        )
         stats = stats.copy(
             secondary_damage_type=DamageType.Lightning, attributes=new_attributes
         )
@@ -132,7 +137,8 @@ class _FireRune(GiantPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Fire}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Fire},
+            upgrade_resistance_to_immunity_if_present=True,
         )
         stats = stats.copy(secondary_damage_type=DamageType.Fire)
         return stats
@@ -165,7 +171,8 @@ class _FrostRune(GiantPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Cold}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Cold},
+            upgrade_resistance_to_immunity_if_present=True,
         )
         stats = stats.copy(secondary_damage_type=DamageType.Cold)
         return stats
@@ -203,7 +210,8 @@ class _HillRune(GiantPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Poison}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Poison},
+            upgrade_resistance_to_immunity_if_present=True,
         )
         return stats
 
@@ -229,7 +237,8 @@ class _StormRune(GiantPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
-            resistances={DamageType.Lightning}, upgrade_resistance_to_immunity_if_present=True
+            resistances={DamageType.Lightning},
+            upgrade_resistance_to_immunity_if_present=True,
         )
         stats = stats.copy(secondary_damage_type=DamageType.Lightning)
         return stats
@@ -237,11 +246,17 @@ class _StormRune(GiantPower):
 
 class _Earthshaker(GiantPower):
     def __init__(self):
-        super().__init__(name="Earthshaker", source="Foe Foundry", attack_names=natural.Slam)
+        super().__init__(
+            name="Earthshaker", source="Foe Foundry", attack_names=natural.Slam
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        size = stats.size.decrement().decrement() if stats.size >= Size.Huge else Size.Medium
+        size = (
+            stats.size.decrement().decrement()
+            if stats.size >= Size.Huge
+            else Size.Medium
+        )
         distance1 = easy_multiple_of_five(1.5 * stats.cr, min_val=10, max_val=30)
 
         sizes = {Size.Gargantuan: 60, Size.Huge: 45, Size.Large: 30}

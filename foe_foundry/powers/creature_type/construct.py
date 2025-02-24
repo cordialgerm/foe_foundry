@@ -7,7 +7,7 @@ from num2words import num2words
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -35,7 +35,7 @@ class ConstructPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Construct) | score_args
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             power_level=power_level,
             create_date=create_date,
@@ -88,7 +88,9 @@ class _ProtectivePlating(ConstructPower):
 class _ImmutableForm(ConstructPower):
     def __init__(self):
         super().__init__(
-            name="Immutable Form", source="SRD 5.1 Stone Golem", power_level=RIBBON_POWER
+            name="Immutable Form",
+            source="SRD 5.1 Stone Golem",
+            power_level=RIBBON_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

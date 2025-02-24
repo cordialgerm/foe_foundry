@@ -8,7 +8,7 @@ from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import NetPowers
 from ..powers.themed.organized import OrganizedPowers
 from ..powers.themed.technique import TechniquePowers
-from ..powers.themed.warrior import MightyLeap, WarriorPowers
+from ..powers.creature.warrior import MightyLeap, WarriorPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling

@@ -27,7 +27,7 @@ class PlantPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Plant, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
@@ -175,4 +175,10 @@ SpikeGrowth: Power = _SpikeGrowth()
 VineWhip: Power = _VineWhip()
 
 
-PlantPowers: List[Power] = [ChokingVine, Entangle, HypnoticSpores, SpikeGrowth, VineWhip]
+PlantPowers: List[Power] = [
+    ChokingVine,
+    Entangle,
+    HypnoticSpores,
+    SpikeGrowth,
+    VineWhip,
+]
