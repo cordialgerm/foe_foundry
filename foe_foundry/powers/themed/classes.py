@@ -14,7 +14,7 @@ from ...spells import transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
-from ..creatures import giant
+from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..roles import artillery, bruiser
 from ..themed import fast, holy, organized, reckless, tough

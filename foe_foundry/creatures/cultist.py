@@ -5,9 +5,9 @@ from ..attack_template import natural, spell, weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import LOW_POWER, CustomPowerWeight, Power, select_powers
-from ..powers.creatures.aberration import AberrationPowers
-from ..powers.creatures.fiend import FiendishPowers
-from ..powers.creatures.undead import UndeadPowers
+from ..powers.creature_type.aberration import AberrationPowers
+from ..powers.creature_type.fiend import FiendishPowers
+from ..powers.creature_type.undead import UndeadPowers
 from ..powers.legendary import make_legendary
 from ..powers.roles.defender import Protection
 from ..powers.themed.cruel import CruelPowers

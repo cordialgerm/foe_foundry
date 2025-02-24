@@ -5,7 +5,7 @@ from ..attack_template import natural
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..powers import CustomPowerWeight, Power, select_powers
-from ..powers.creatures.undead import UndeadFortitude
+from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.legendary import make_legendary
 from ..powers.themed.diseased import DiseasedPowers
 from ..powers.themed.technique import GrapplingAttack

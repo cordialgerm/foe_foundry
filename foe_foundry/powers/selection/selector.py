@@ -7,7 +7,7 @@ from numpy.random import Generator
 
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import MEDIUM_POWER, Power, PowerType
-from foe_foundry.powers.creatures import CreaturePowers
+from foe_foundry.powers.creature_type import CreaturePowers
 from foe_foundry.powers.roles import RolePowers
 from foe_foundry.powers.themed import ThemedPowers
 from foe_foundry.statblocks import BaseStatblock
