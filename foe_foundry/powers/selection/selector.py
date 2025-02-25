@@ -7,9 +7,7 @@ from numpy.random import Generator
 
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import MEDIUM_POWER, Power, PowerType
-from foe_foundry.powers.creature_type import CreatureTypePowers
-from foe_foundry.powers.roles import RolePowers
-from foe_foundry.powers.themed import ThemedPowers
+from foe_foundry.powers.all import AllPowers
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
@@ -38,7 +36,7 @@ class PowerSelector:
         self.custom_weights = custom_weights
         self.stats = stats.copy()
 
-        self.all_powers: List[Power] = CreatureTypePowers + RolePowers + ThemedPowers
+        self.all_powers: List[Power] = AllPowers.copy()
         self.probabilities_raw: np.ndarray = []  # type: ignore
         self.probabilities_weighted: np.ndarray = []  # type: ignore
         self.probabilities_adjusted: np.ndarray = []  # type: ignore

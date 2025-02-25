@@ -3,7 +3,6 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -18,11 +17,6 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from ..themed.organized import score_could_be_organized
-
-
-def is_organized(c: BaseStatblock) -> bool:
-    return score_could_be_organized(c, requires_intelligence=True) > 0
 
 
 class Warrior(PowerWithStandardScoring):
@@ -34,6 +28,13 @@ class Warrior(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
+        existing_callback = score_args.pop("require_callback", None)
+
+        def require_callback(s: BaseStatblock) -> bool:
+            return s.creature_subtype == "Warrior" and (
+                existing_callback(s) if existing_callback else True
+            )
+
         super().__init__(
             name=name,
             source=source,
@@ -42,7 +43,7 @@ class Warrior(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             theme="warrior",
             score_args=dict(
-                require_attack_types=AttackType.AllMelee(),
+                require_callback=require_callback,
                 bonus_roles={MonsterRole.Bruiser, MonsterRole.Defender},
                 bonus_skills=Skills.Athletics,
             )
@@ -80,13 +81,9 @@ class _PackTactics(Warrior):
 
 class _Disciplined(Warrior):
     def __init__(self):
-        def fights_in_formation(c: BaseStatblock) -> bool:
-            return is_organized(c) and c.size <= Size.Large
-
         super().__init__(
             name="Disciplined",
             source="Foe Foundry",
-            require_callback=fights_in_formation,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -104,7 +101,6 @@ class _ActionSurge(Warrior):
             name="Action Surge",
             source="SRD5.1 Action Surge",
             power_level=HIGH_POWER,
-            require_callback=is_organized,
             bonus_roles=MonsterRole.Bruiser,
         )
 
@@ -157,7 +153,6 @@ class _BreakMagic(Warrior):
             name="Break Magic",
             source="A5E SRD Dread Knight",
             power_level=MEDIUM_POWER,
-            require_callback=is_organized,
             require_cr=8,
             bonus_roles=MonsterRole.Bruiser,
         )
@@ -199,7 +194,8 @@ class _CommandTheTroops(Warrior):
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
-            require_roles={MonsterRole.Leader},
+            require_cr=3,
+            bonus_roles={MonsterRole.Leader},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -220,7 +216,8 @@ class _RallyTheTroops(Warrior):
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
-            require_roles={MonsterRole.Leader},
+            require_cr=3,
+            bonus_roles={MonsterRole.Leader},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

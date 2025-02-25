@@ -16,6 +16,12 @@ class ZombiePower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
+        def require_callback(s: BaseStatblock) -> bool:
+            existing_callback = score_args.get("require_callback")
+            return s.creature_subtype == "Zombie" and (
+                existing_callback(s) if existing_callback else True
+            )
+
         super().__init__(
             name=name,
             source=source,
@@ -24,6 +30,7 @@ class ZombiePower(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             create_date=create_date,
             score_args=dict(
+                require_callback=require_callback,
                 require_types=[CreatureType.Undead],
             )
             | score_args,

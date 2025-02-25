@@ -1,12 +1,12 @@
 import numpy as np
 
-from ..ac_templates import MediumArmor, Unarmored, UnholyArmor
+from ..ac_templates import Breastplate, Unarmored, UnholyArmor
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
-from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.creature.skeletal import SkeletalPowers
+from ..powers.creature_type.undead import UndeadFortitude
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
@@ -97,7 +97,7 @@ def generate_skeleton(
     # ARMOR CLASS
     if variant is SkeletonVariant:
         if stats.cr >= 4:
-            stats = stats.add_ac_template(MediumArmor)
+            stats = stats.add_ac_template(Breastplate)
         else:
             stats = stats.add_ac_template(Unarmored)
     else:

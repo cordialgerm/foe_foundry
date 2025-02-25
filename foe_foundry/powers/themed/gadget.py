@@ -188,7 +188,7 @@ def _GrenadePowers() -> List[Power]:
             )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-            dmg = stats.target_value(1.25, suggested_die=Die.d6)
+            dmg = stats.target_value(1.75, suggested_die=Die.d6)
             radius = 15
             distance = 30
             dc = stats.difficulty_class_easy

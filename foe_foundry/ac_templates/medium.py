@@ -3,10 +3,25 @@ from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
 
 
-class _MediumArmorClassTemplate(ArmorClassTemplate):
+def _medium_armor_ac(stats: BaseStatblock, baseline_ac: int, uses_shield: bool) -> int:
+    quality_level = stats.ac_boost
+    ac = (
+        baseline_ac
+        + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
+        + quality_level
+        + (2 if uses_shield else 0)
+    )
+    return ac
+
+
+class _MediumArmor(ArmorClassTemplate):
+    def __init__(self, name: str, baseline_ac: int):
+        self._name = name
+        self._baseline_ac = baseline_ac
+
     @property
     def name(self) -> str:
-        return "Medium Armor"
+        return self._name
 
     @property
     def is_armored(self) -> bool:
@@ -17,55 +32,24 @@ class _MediumArmorClassTemplate(ArmorClassTemplate):
         return False
 
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
-        quality_level = stats.ac_boost
-        ac = (
-            13
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-            + quality_level
-            + (2 if uses_shield else 0)
-        )
+        ac = _medium_armor_ac(stats, self._baseline_ac, uses_shield)
+
+        quality_level = max(stats.ac_boost, 0)
+        if quality_level > 0:
+            text = f"{self._name} +{quality_level}"
+        else:
+            text = self._name
+
         return ResolvedArmorClass(
             value=ac,
-            armor_type="Medium Armor" if not uses_shield else "Medium Armor, Shield",
+            armor_type=text,
             has_shield=uses_shield,
             is_armored=True,
-            quality_level=quality_level,
-            score=ac
-            + 0.3
-            - (1000 if not stats.creature_type.could_wear_heavy_armor else 0),
-        )
-
-
-class _ChainShirt(ArmorClassTemplate):
-    @property
-    def name(self) -> str:
-        return "Chain Shirt"
-
-    @property
-    def is_armored(self) -> bool:
-        return True
-
-    @property
-    def is_heavily_armored(self) -> bool:
-        return False
-
-    def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
-        quality_level = stats.ac_boost
-        ac = (
-            13
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-            + quality_level
-            + (2 if uses_shield else 0)
-        )
-        return ResolvedArmorClass(
-            value=ac,
-            armor_type="Chain Shirt",
-            has_shield=uses_shield,
-            is_armored=True,
-            quality_level=quality_level,
+            quality_level=stats.ac_boost,
             score=ac + 0.3,
         )
 
 
-MediumArmor: ArmorClassTemplate = _MediumArmorClassTemplate()
-ChainShirt: ArmorClassTemplate = _ChainShirt()
+HideArmor: ArmorClassTemplate = _MediumArmor("Hide Armor", 12)
+ChainShirt: ArmorClassTemplate = _MediumArmor("Chain Shirt", 13)
+Breastplate: ArmorClassTemplate = _MediumArmor("Breastplate", 14)

@@ -23,6 +23,13 @@ class SkeletalPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
+        existing_callback = score_args.pop("require_callback", None)
+
+        def require_callback(s: BaseStatblock) -> bool:
+            return s.creature_subtype == "Skeletal" and (
+                existing_callback(s) if existing_callback else True
+            )
+
         super().__init__(
             name=name,
             source=source,
@@ -31,6 +38,7 @@ class SkeletalPower(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             create_date=create_date,
             score_args=dict(
+                require_callback=require_callback,
                 require_types=[CreatureType.Undead],
             )
             | score_args,
