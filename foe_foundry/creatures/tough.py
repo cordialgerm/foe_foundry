@@ -1,13 +1,13 @@
 import numpy as np
 
-from ..ac_templates import LightArmor, MediumArmor
+from ..ac_templates import LeatherArmor, SplintArmor
 from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
 from ..powers import Power, select_powers
+from ..powers.creature.warrior import PackTactics
 from ..powers.legendary import make_legendary
-from ..powers.themed.warrior import PackTactics
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -80,9 +80,9 @@ def generate_tough(
 
     # ARMOR CLASS
     if variant is BossVariant:
-        stats = stats.add_ac_template(MediumArmor, ac_modifier=1 if cr >= 4 else 0)
+        stats = stats.add_ac_template(SplintArmor, ac_modifier=1 if cr >= 4 else 0)
     else:
-        stats = stats.add_ac_template(LightArmor, ac_modifier=1 if cr >= 4 else 0)
+        stats = stats.add_ac_template(LeatherArmor, ac_modifier=1 if cr >= 4 else 0)
 
     # ATTACKS
     if variant is BrawlerVariant:

@@ -26,7 +26,7 @@ class DraconicPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Dragon, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             power_level=power_level,
             create_date=create_date,
@@ -271,7 +271,9 @@ def _DragonsBreathPowers() -> List[Power]:
             )
         )
 
-    def on_inferno_breath_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+    def on_inferno_breath_failure(
+        stats: BaseStatblock, breath_damage: DieFormula
+    ) -> str:
         burning_dmg = DieFormula.target_value(
             breath_damage.average / 2, force_die=breath_damage.primary_die_type
         )
@@ -286,22 +288,43 @@ def _DragonsBreathPowers() -> List[Power]:
         weakened = conditions.Weakened(save_end_of_turn=False)
         return f"<br/><br/>Additionally, creatures that fail by 5 or more are {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description_3rd}"
 
-    def on_arc_lightning_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
+    def on_arc_lightning_failure(
+        stats: BaseStatblock, breath_damage: DieFormula
+    ) -> str:
         shocked = conditions.Shocked()
         return f"<br/><br/>Additionally, creatures that fail by 5 or more are {shocked.caption} for 1 minute (save ends at end of turn). {shocked.description_3rd}"
 
-    def on_flesh_melting_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
-        burning_dmg = DieFormula.target_value(breath_damage.average / 4, force_die=Die.d4)
+    def on_flesh_melting_failure(
+        stats: BaseStatblock, breath_damage: DieFormula
+    ) -> str:
+        burning_dmg = DieFormula.target_value(
+            breath_damage.average / 4, force_die=Die.d4
+        )
         burning = conditions.Burning(burning_dmg, DamageType.Acid)
         return f"<br/><br/>Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also **Poisoned**. \
             {burning.description_3rd}"
 
     debilitating_breaths = [
         ("Inferno Breath", DamageType.Fire, "Dexterity", on_inferno_breath_failure),
-        ("Flash Freeze Breath", DamageType.Cold, "Constitution", on_flash_freeze_failure),
+        (
+            "Flash Freeze Breath",
+            DamageType.Cold,
+            "Constitution",
+            on_flash_freeze_failure,
+        ),
         ("Nerve Gas Breath", DamageType.Poison, "Constitution", on_nerve_gas_failure),
-        ("Arc-Lightning Breath", DamageType.Lightning, "Dexterity", on_arc_lightning_failure),
-        ("Flesh Melting Breath", DamageType.Acid, "Dexterity", on_flesh_melting_failure),
+        (
+            "Arc-Lightning Breath",
+            DamageType.Lightning,
+            "Dexterity",
+            on_arc_lightning_failure,
+        ),
+        (
+            "Flesh Melting Breath",
+            DamageType.Acid,
+            "Dexterity",
+            on_flesh_melting_failure,
+        ),
     ]
 
     for name, breath_type, save, on_failure in debilitating_breaths:

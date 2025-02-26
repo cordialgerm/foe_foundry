@@ -28,7 +28,7 @@ class AberrationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
             score_args=standard_score_args,
@@ -141,7 +141,9 @@ class _NullificationMaw(AberrationPower):
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
             damage=DieFormula.target_value(5 + stats.cr, force_die=Die.d4),
-            regurgitate_dc=easy_multiple_of_five(threshold * 0.75, min_val=15, max_val=25),
+            regurgitate_dc=easy_multiple_of_five(
+                threshold * 0.75, min_val=15, max_val=25
+            ),
             regurgitate_damage_threshold=threshold,
         )
         stats = stats.add_attack(

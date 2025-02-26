@@ -119,17 +119,17 @@ class StatScaler:
             elif cr <= 1:
                 return 11 + self.mod
             elif cr <= 2:
-                return 11.5 + self.mod
-            elif cr <= 4:
                 return 12 + self.mod
-            elif cr <= 7:
+            elif cr <= 4:
                 return 12.5 + self.mod
-            elif cr <= 11:
-                return 13 + self.mod
-            elif cr <= 15:
+            elif cr <= 7:
                 return 13.5 + self.mod
+            elif cr <= 11:
+                return 14.5 + self.mod
+            elif cr <= 15:
+                return 15.5 + self.mod
             else:
-                return 14 + self.mod
+                return 16.5 + self.mod
         elif self.scaling == StatScaling.Constitution:
             if cr <= 1 / 8:
                 return 10 + self.mod

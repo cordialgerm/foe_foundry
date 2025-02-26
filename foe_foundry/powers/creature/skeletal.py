@@ -8,6 +8,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
+    Power,
     PowerType,
     PowerWithStandardScoring,
 )
@@ -22,14 +23,22 @@ class SkeletalPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
+        existing_callback = score_args.pop("require_callback", None)
+
+        def require_callback(s: BaseStatblock) -> bool:
+            return s.creature_subtype == "Skeletal" and (
+                existing_callback(s) if existing_callback else True
+            )
+
         super().__init__(
             name=name,
             source=source,
             theme="skeletal",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             create_date=create_date,
             score_args=dict(
+                require_callback=require_callback,
                 require_types=[CreatureType.Undead],
             )
             | score_args,
@@ -187,7 +196,7 @@ BoneSpear: SkeletalPower = _BoneSpear()
 BoneStorm: SkeletalPower = _BoneStorm()
 BoneWall: SkeletalPower = _BoneWall()
 
-SkeletalPowers: List[SkeletalPower] = [
+SkeletalPowers: List[Power] = [
     BoneShards,
     BoneSpear,
     BoneStorm,

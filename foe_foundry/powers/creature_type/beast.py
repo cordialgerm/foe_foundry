@@ -7,7 +7,6 @@ from ...attack_template import natural as natural_attacks
 from ...attributes import Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType
-from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import summoning
@@ -35,7 +34,7 @@ class BeastPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
@@ -98,7 +97,9 @@ class _BestialRampage(BeastPower):
 class _Gore(BeastPower):
     def __init__(self):
         super().__init__(
-            name="Gore", source="SRD 5.1 Minotaur", attack_names=["-", natural_attacks.Horns]
+            name="Gore",
+            source="SRD 5.1 Minotaur",
+            attack_names=["-", natural_attacks.Horns],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -229,4 +230,11 @@ Packlord: Power = _Packlord()
 Web: Power = _Web()
 WildInstinct: Power = _WildInstinct()
 
-BeastPowers: List[Power] = [BestialRampage, FeedingFrenzy, Gore, Packlord, Web, WildInstinct]
+BeastPowers: List[Power] = [
+    BestialRampage,
+    FeedingFrenzy,
+    Gore,
+    Packlord,
+    Web,
+    WildInstinct,
+]

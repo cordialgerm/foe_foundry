@@ -1,13 +1,13 @@
 import numpy as np
 
-from ..ac_templates import HeavyArmor, LightArmor, UnholyArmor
+from ..ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
 from ..attack_template import natural, spell, weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import LOW_POWER, CustomPowerWeight, Power, select_powers
-from ..powers.creatures.aberration import AberrationPowers
-from ..powers.creatures.fiend import FiendishPowers
-from ..powers.creatures.undead import UndeadPowers
+from ..powers.creature_type.aberration import AberrationPowers
+from ..powers.creature_type.fiend import FiendishPowers
+from ..powers.creature_type.undead import UndeadPowers
 from ..powers.legendary import make_legendary
 from ..powers.roles.defender import Protection
 from ..powers.themed.cruel import CruelPowers
@@ -168,9 +168,9 @@ def generate_cultist(
 
     # ARMOR CLASS
     if stats.cr <= 2:
-        stats = stats.add_ac_template(LightArmor)
+        stats = stats.add_ac_template(StuddedLeatherArmor)
     elif variant is FiendVariant:
-        stats = stats.add_ac_template(HeavyArmor, ac_modifier=2)
+        stats = stats.add_ac_template(PlateArmor, ac_modifier=2)
     else:
         stats = stats.add_ac_template(UnholyArmor)
 

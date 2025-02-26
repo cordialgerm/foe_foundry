@@ -45,7 +45,7 @@ class FeyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
             score_args=standard_score_args,

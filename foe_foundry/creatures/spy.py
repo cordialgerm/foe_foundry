@@ -1,6 +1,6 @@
 import numpy as np
 
-from ..ac_templates import LightArmor
+from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
@@ -81,7 +81,7 @@ def generate_spy(
     # based off Spy and Spy Master stats
     ac_modifier = int(interpolate_by_cr(cr, {1: 0, 4: 1, 10: 2, 15: 3}))
     if cr >= 4:
-        stats = stats.add_ac_template(LightArmor, ac_modifier=ac_modifier)
+        stats = stats.add_ac_template(StuddedLeatherArmor, ac_modifier=ac_modifier)
 
     # ATTACKS
 

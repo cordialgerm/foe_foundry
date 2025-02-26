@@ -1,5 +1,6 @@
 from typing import List
 
+from ..creature import skeletal, warrior, zombie
 from ..power import Power
 from . import (
     aberrant,
@@ -28,9 +29,7 @@ from . import (
     poison,
     psychic,
     reckless,
-    skeletal,
     sneaky,
-    species,
     spellcaster,
     storm,
     technique,
@@ -39,8 +38,6 @@ from . import (
     tough,
     trap,
     tricky,
-    warrior,
-    zombie,
 )
 
 ThemedPowers: List[Power] = (
@@ -72,8 +69,6 @@ ThemedPowers: List[Power] = (
     + reckless.RecklessPowers
     + skeletal.SkeletalPowers
     + sneaky.SneakyPowers
-    + species.DwarfPowers
-    + species.OrcPowers
     + spellcaster.SpellcasterPowers
     + storm.StormPowers
     + technique.TechniquePowers

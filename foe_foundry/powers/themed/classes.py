@@ -2,7 +2,7 @@ from typing import List
 
 import numpy as np
 
-from ...ac_templates import HeavyArmor
+from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -14,7 +14,7 @@ from ...spells import transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
-from ..creatures import giant
+from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..roles import artillery, bruiser
 from ..themed import fast, holy, organized, reckless, tough
@@ -198,7 +198,7 @@ class _Artificer(PowerWithStandardScoring):
         return [feature]
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.add_ac_template(HeavyArmor)
+        stats = stats.add_ac_template(PlateArmor)
         stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
         stats = stats.copy(creature_class="Artificer")
         stats = stats.copy(secondary_damage_type=DamageType.Force)
@@ -619,7 +619,7 @@ def _RuneKnights() -> List[Power]:
 
         def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(creature_class="Rune Knight")
-            stats = stats.add_ac_template(HeavyArmor, ac_modifier=1)
+            stats = stats.add_ac_template(PlateArmor, ac_modifier=1)
             stats = self.rune.modify_stats(stats)
             return stats
 

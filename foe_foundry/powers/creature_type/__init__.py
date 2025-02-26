@@ -16,7 +16,7 @@ from . import (
     undead,
 )
 
-CreaturePowers: List[Power] = (
+CreatureTypePowers: List[Power] = (
     aberration.AberrationPowers
     + beast.BeastPowers
     + celestial.CelestialPowers

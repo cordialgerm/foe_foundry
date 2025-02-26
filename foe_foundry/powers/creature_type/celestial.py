@@ -4,7 +4,7 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, Dazed
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -31,7 +31,7 @@ class CelestialPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
             source=source,
@@ -107,7 +107,10 @@ class _RighteousJudgement(CelestialPower):
 class _DivineLaw(CelestialPower):
     def __init__(self):
         super().__init__(
-            name="Divine Law", source="Foe Foundry", power_level=HIGH_POWER, require_cr=7
+            name="Divine Law",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+            require_cr=7,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

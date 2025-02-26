@@ -3,10 +3,14 @@ from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
 
 
-class _LightArmorClassTemplate(ArmorClassTemplate):
+class _LightArmor(ArmorClassTemplate):
+    def __init__(self, name: str, baseline_ac: int):
+        self._name = name
+        self._baseline_ac = baseline_ac
+
     @property
     def name(self) -> str:
-        return "Light Armor"
+        return self._name
 
     @property
     def is_armored(self) -> bool:
@@ -19,14 +23,20 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
         ac = (
-            12
+            self._baseline_ac
             + min(stats.attributes.stat_mod(Stats.DEX), 5)
             + quality_level
             + (2 if uses_shield else 0)
         )
+
+        if quality_level > 0:
+            text = f"{self._name} +{quality_level}"
+        else:
+            text = self._name
+
         return ResolvedArmorClass(
             value=ac,
-            armor_type="Light Armor" if not uses_shield else "Light Armor, Shield",
+            armor_type=text,
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
@@ -36,4 +46,5 @@ class _LightArmorClassTemplate(ArmorClassTemplate):
         )
 
 
-LightArmor: ArmorClassTemplate = _LightArmorClassTemplate()
+LeatherArmor: ArmorClassTemplate = _LightArmor("Leather Armor", 11)
+StuddedLeatherArmor: ArmorClassTemplate = _LightArmor("Studded Leather Armor", 12)

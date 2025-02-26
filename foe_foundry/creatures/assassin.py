@@ -1,6 +1,6 @@
 import numpy as np
 
-from ..ac_templates import LightArmor
+from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
@@ -91,7 +91,7 @@ def generate_assassin(
     stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=0.85))
 
     # ARMOR CLASS
-    stats = stats.add_ac_template(LightArmor, ac_modifier=1 if cr >= 10 else 0)
+    stats = stats.add_ac_template(StuddedLeatherArmor, ac_modifier=1 if cr >= 10 else 0)
 
     # ATTACKS
 

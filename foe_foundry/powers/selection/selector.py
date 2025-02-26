@@ -7,9 +7,7 @@ from numpy.random import Generator
 
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import MEDIUM_POWER, Power, PowerType
-from foe_foundry.powers.creatures import CreaturePowers
-from foe_foundry.powers.roles import RolePowers
-from foe_foundry.powers.themed import ThemedPowers
+from foe_foundry.powers.all import AllPowers
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
@@ -38,7 +36,7 @@ class PowerSelector:
         self.custom_weights = custom_weights
         self.stats = stats.copy()
 
-        self.all_powers: List[Power] = CreaturePowers + RolePowers + ThemedPowers
+        self.all_powers: List[Power] = AllPowers.copy()
         self.probabilities_raw: np.ndarray = []  # type: ignore
         self.probabilities_weighted: np.ndarray = []  # type: ignore
         self.probabilities_adjusted: np.ndarray = []  # type: ignore
@@ -169,10 +167,10 @@ class PowerSelector:
                 multiplier *= 1.25
 
             # if the creature doesn't yet have any Creature powers then make them more attractive
-            if power.power_type == PowerType.Creature and not any(
+            if power.power_type == PowerType.CreatureType and not any(
                 p
                 for p in self.selection.selected_powers
-                if p.power_type == PowerType.Creature
+                if p.power_type == PowerType.CreatureType
             ):
                 multiplier *= 1.25
 
