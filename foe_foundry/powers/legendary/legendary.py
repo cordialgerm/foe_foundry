@@ -26,7 +26,7 @@ def make_legendary(
     # the legendary action shouldn't feel like a waste, so it needs to do something on the order of 1/16th of the creature's HP
     # so we'll increase the creature's HP by half the amount of damage that each legendary resistance inflicts to help compensate
 
-    turns_to_die = 4
+    turns_to_die = 3
     assumed_pcs = 4
     hits_to_die = turns_to_die * assumed_pcs
     average_damage_per_hit = stats.hp.average / hits_to_die
@@ -37,7 +37,9 @@ def make_legendary(
     legendary_resistance_damage = easy_multiple_of_five(
         lr_damage_effectiveness * average_damage_per_hit, min_val=5
     )
-    new_hp_multiplier = 1.0 + 0.5 * legendary_resistance_damage * n / stats.hp.average
+    new_hp_multiplier = 1.3 * (
+        1.0 + (0.75 * legendary_resistance_damage * n / stats.hp.average)
+    )
 
     features.append(
         Feature(
