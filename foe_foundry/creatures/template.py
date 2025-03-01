@@ -10,7 +10,7 @@ from ..statblocks import BaseStatblock, Statblock
 from ..utils.rng import RngFactory
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class StatsBeingGenerated:
     stats: BaseStatblock
     features: list[Feature]
@@ -25,7 +25,7 @@ class StatsBeingGenerated:
 GenerateCallback: TypeAlias = Callable[..., StatsBeingGenerated]
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class SuggestedCr:
     name: str
     cr: float
@@ -33,21 +33,30 @@ class SuggestedCr:
     srd_creatures: list[str] | None = None
     other_creatures: dict[str, str] | None = None
 
+    def __hash__(self) -> int:
+        return hash(self.name)
 
-@dataclass(kw_only=True)
+
+@dataclass(kw_only=True, frozen=True)
 class CreatureVariant:
     name: str
     description: str
     suggested_crs: list[SuggestedCr]
 
+    def __hash__(self) -> int:
+        return hash(self.name)
 
-@dataclass(kw_only=True)
+
+@dataclass(kw_only=True, frozen=True)
 class CreatureSpecies:
     name: str
     description: str
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         return stats
+
+    def __hash__(self) -> int:
+        return hash(self.name)
 
 
 @dataclass(kw_only=True)
@@ -77,6 +86,9 @@ class CreatureTemplate:
                     other_creatures.update(s.other_creatures.keys())
         self.srd_ceatures = sorted(list(srd_creatures))
         self.other_creatures = sorted(list(other_creatures))
+
+    def __hash__(self) -> int:
+        return hash(self.name)
 
     def generate(
         self,

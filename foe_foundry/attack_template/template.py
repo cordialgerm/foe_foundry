@@ -21,6 +21,7 @@ class AttackTemplate:
     secondary_damage_type: DamageType | None = None
     allows_shield: bool = False
     split_secondary_damage: bool = False
+    split_secondary_damage_ratio: float = 0.5
     reach: int | None = None
     range: int | None = None
     range_max: int | None = None
@@ -173,26 +174,32 @@ class AttackTemplate:
         if current_dice_count <= min_dice_count:
             return primary_attack.copy()
 
-        # now we need to find out how much room there is to do additional damage
-        available_damage = (
-            (current_dice_count - min_dice_count) * (1 + current_die.as_numeric()) / 2.0
-        )
+        if current_dice_count > 2:
+            primary_dice_count = max(
+                min_dice_count,
+                round(current_dice_count * (1.0 - self.split_secondary_damage_ratio)),
+            )
+        else:
+            primary_dice_count = min_dice_count
 
         primary_damage_formula = DieFormula.from_dict(
-            mod=current_mod, die_vals={current_die: min_dice_count}
+            mod=current_mod, die_vals={current_die: primary_dice_count}
         )
-        new_damage = Damage(
+        new_primary_damage = Damage(
             formula=primary_damage_formula,
             damage_type=primary_attack.damage.damage_type,
         )
 
+        # now we need to find out how much room there is to do additional damage
+        secondary_dice_count = current_dice_count - primary_dice_count
+        available_damage = secondary_dice_count * (1 + current_die.as_numeric()) / 2.0
         secondary_damage_formula = DieFormula.target_value(target=available_damage)
         new_additional_damage = Damage(
             formula=secondary_damage_formula, damage_type=stats.secondary_damage_type
         )
 
         new_attack = primary_attack.copy(
-            damage=new_damage, additional_damage=new_additional_damage
+            damage=new_primary_damage, additional_damage=new_additional_damage
         )
         return new_attack
 

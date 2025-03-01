@@ -20,9 +20,9 @@ class _NaturalArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
         max_dex = 2
-        if stats.size >= Size.Huge:
+        if stats.size >= Size.Huge or stats.cr >= 10:
             max_con = 5
-        elif stats.size >= Size.Large:
+        elif stats.size >= Size.Large or stats.cr >= 5:
             max_con = 4
         else:
             max_con = 3
@@ -49,4 +49,46 @@ class _NaturalArmorClassTemplate(ArmorClassTemplate):
         )
 
 
+class _NaturalPlating(ArmorClassTemplate):
+    @property
+    def name(self) -> str:
+        return "Natural Plating"
+
+    @property
+    def is_armored(self) -> bool:
+        return False
+
+    @property
+    def is_heavily_armored(self) -> bool:
+        return False
+
+    def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
+        quality_level = stats.ac_boost
+
+        if stats.size >= Size.Huge or stats.cr >= 10:
+            max_con = 5
+            base_ac = 14
+        elif stats.size >= Size.Large or stats.cr >= 5:
+            max_con = 4
+            base_ac = 13
+        else:
+            max_con = 3
+            base_ac = 12
+
+        # natural armor takes CON and DEX into account
+        ac = (
+            base_ac + min(stats.attributes.stat_mod(Stats.CON), max_con)
+        ) + quality_level
+
+        return ResolvedArmorClass(
+            value=ac,
+            armor_type="Natural Plating",
+            has_shield=uses_shield,
+            is_armored=False,
+            quality_level=quality_level,
+            score=ac + 0.1,
+        )
+
+
 NaturalArmor: ArmorClassTemplate = _NaturalArmorClassTemplate()
+NaturalPlating: ArmorClassTemplate = _NaturalPlating()
