@@ -95,15 +95,19 @@ class _CustomWeights:
     def __call__(self, p: Power) -> CustomPowerWeight:
         # powers that any Golem can have
         boost_powers = [
-            GrapplingAttack,
-            SappingAttack,
-            PushingAttack,
             construct.ConstructedGuardian,
             construct.ProtectivePlating,
             construct.ExplosiveCore,
             defender.Protection,
             defender.ZoneOfControl,
             defender.SpellReflection,
+        ]
+
+        # attack powers any golem can have
+        attack_powers = [
+            GrapplingAttack,
+            SappingAttack,
+            PushingAttack,
         ]
 
         suppress_powers = [construct.Smother, construct.Retrieval]
@@ -135,6 +139,8 @@ class _CustomWeights:
         if p in suppress_powers:
             return CustomPowerWeight(-1, ignore_usual_requirements=True)
         elif p in variant_powers:
+            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
+        elif p in attack_powers:
             return CustomPowerWeight(2.5, ignore_usual_requirements=True)
         elif p in boost_powers:
             return CustomPowerWeight(1.5, ignore_usual_requirements=True)
