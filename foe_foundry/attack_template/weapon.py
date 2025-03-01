@@ -10,6 +10,7 @@ SwordAndShield = AttackTemplate(
     die=Die.d8,
     die_count=1,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 SpearAndShield = AttackTemplate(
@@ -21,6 +22,7 @@ SpearAndShield = AttackTemplate(
     die_count=1,
     reach=10,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 MaceAndShield = AttackTemplate(
@@ -31,6 +33,7 @@ MaceAndShield = AttackTemplate(
     die=Die.d8,
     die_count=1,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 RapierAndShield = AttackTemplate(
@@ -41,6 +44,7 @@ RapierAndShield = AttackTemplate(
     die=Die.d8,
     die_count=1,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 Maul = AttackTemplate(
@@ -88,6 +92,7 @@ Daggers = AttackTemplate(
     die=Die.d4,
     die_count=2,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 Longbow = AttackTemplate(
@@ -99,6 +104,7 @@ Longbow = AttackTemplate(
     range=150,
     range_max=600,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 Shortbow = AttackTemplate(
@@ -110,6 +116,7 @@ Shortbow = AttackTemplate(
     range=80,
     range_max=320,
     split_secondary_damage=True,
+    split_secondary_damage_ratio=0.75,
 )
 
 Crossbow = AttackTemplate(
@@ -121,6 +128,7 @@ Crossbow = AttackTemplate(
     die_count=1,
     range=100,
     range_max=400,
+    split_secondary_damage_ratio=0.75,
 )
 
 HandCrossbow = AttackTemplate(
@@ -132,6 +140,7 @@ HandCrossbow = AttackTemplate(
     die_count=1,
     range=30,
     range_max=120,
+    split_secondary_damage_ratio=0.75,
 )
 
 Pistol = AttackTemplate(

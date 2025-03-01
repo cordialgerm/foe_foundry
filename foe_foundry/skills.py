@@ -147,11 +147,15 @@ class StatScaler:
                 return 18 + self.mod
             else:
                 return 20 + self.mod
-        else:
+        elif self.scaling == StatScaling.Default:
             if cr <= 4:
                 return 10 + self.mod
             else:
                 return 12 + self.mod
+        elif self.scaling == StatScaling.NoScaling:
+            return 10 + self.mod
+
+        raise ValueError(f"Invalid scaling: {self.scaling}")
 
 
 class StatScaling(StrEnum):
@@ -160,6 +164,7 @@ class StatScaling(StrEnum):
     Default = "Default"
     Primary = "Primary"
     Constitution = "Constitution"
+    NoScaling = "NoScaling"
 
 
 class Skills(StrEnum):

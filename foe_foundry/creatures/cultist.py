@@ -170,7 +170,7 @@ def generate_cultist(
     if stats.cr <= 2:
         stats = stats.add_ac_template(StuddedLeatherArmor)
     elif variant is FiendVariant:
-        stats = stats.add_ac_template(PlateArmor, ac_modifier=2)
+        stats = stats.add_ac_template(PlateArmor)
     else:
         stats = stats.add_ac_template(UnholyArmor)
 

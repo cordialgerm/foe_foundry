@@ -8,6 +8,7 @@ from . import (
     anti_ranged,
     aquatic,
     bestial,
+    breath,
     chaotic,
     charm,
     classes,
@@ -46,6 +47,7 @@ ThemedPowers: List[Power] = (
     + anti_ranged.AntiRangedPowers
     + aquatic.AquaticPowers
     + bestial.BestialPowers
+    + breath.BreathPowers
     + chaotic.ChaoticPowers
     + charm.CharmPowers
     + classes.ClassPowers

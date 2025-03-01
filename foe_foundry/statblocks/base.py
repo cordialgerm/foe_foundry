@@ -446,16 +446,20 @@ class BaseStatblock:
             has_lair=has_lair,
         )
 
-    def with_reduced_attacks(self, reduce_by: int) -> BaseStatblock:
+    def with_reduced_attacks(
+        self, reduce_by: int, min_attacks: int = 1
+    ) -> BaseStatblock:
         if reduce_by <= 0:
             raise ValueError("reduce_by must be greater than 0")
         if reduce_by >= 3:
             raise ValueError("reduce_by must be less than 3")
 
-        if self.multiattack == 1:
+        if self.multiattack <= min_attacks:
             return self.copy()
-        elif self.multiattack - reduce_by <= 0:
-            return self.with_reduced_attacks(1)
+        elif self.multiattack - reduce_by < min_attacks:
+            return self.with_reduced_attacks(
+                reduce_by=reduce_by - 1, min_attacks=min_attacks
+            )
 
         # monster already had attacks reduced
         if self.multiattack <= self.multiattack_benchmark - reduce_by:

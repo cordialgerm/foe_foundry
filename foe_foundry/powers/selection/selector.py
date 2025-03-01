@@ -111,13 +111,16 @@ class PowerSelector:
                 weighted_score = -20
                 adjusted_score = -20
             else:
-                weighted_score = custom_multiplier * raw_score
-
-                feasibility_multiplier = self.feasibility_multiplier(power)
-                if feasibility_multiplier <= 0:
+                if custom_multiplier <= 0:
+                    weighted_score = -20
                     adjusted_score = -20
                 else:
-                    adjusted_score = feasibility_multiplier * weighted_score
+                    weighted_score = custom_multiplier * raw_score
+                    feasibility_multiplier = self.feasibility_multiplier(power)
+                    if feasibility_multiplier <= 0:
+                        adjusted_score = -20
+                    else:
+                        adjusted_score = feasibility_multiplier * weighted_score
 
             raw_scores.append(raw_score)
             weighted_scores.append(weighted_score)
