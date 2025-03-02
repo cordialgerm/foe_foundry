@@ -33,7 +33,7 @@ class _DeathKnight(PowerWithStandardScoring):
                 require_types=[CreatureType.Undead, CreatureType.Humanoid],
                 require_roles=[
                     MonsterRole.Leader,
-                    MonsterRole.Default,
+                    MonsterRole.Soldier,
                     MonsterRole.Bruiser,
                 ],
                 require_stats=[Stats.CHA, Stats.STR],
@@ -100,7 +100,7 @@ def _EldritchKnights() -> List[Power]:
                 score_args=dict(
                     require_no_creature_class=True,
                     require_types=[CreatureType.Humanoid, CreatureType.Fey],
-                    bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Bruiser],
+                    bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Soldier],
                     require_stats=[Stats.INT, Stats.STR],
                     bonus_damage=element,
                     require_damage_exact_match=True,
@@ -169,7 +169,11 @@ class _Artificer(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             score_args=dict(
                 require_no_creature_class=True,
-                bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Support,
+                ],
                 require_types=CreatureType.Humanoid,
                 require_stats=Stats.INT,
                 require_cr=3,
@@ -260,7 +264,7 @@ class _Bard(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid, CreatureType.Fey],
-                bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+                bonus_roles=[MonsterRole.Controller, MonsterRole.Support],
                 require_stats=Stats.CHA,
                 require_cr=3,
                 attack_names=[
@@ -316,7 +320,12 @@ class _WarPriest(PowerWithStandardScoring):
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
                 require_stats=Stats.WIS,
-                bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Support,
+                ],
                 require_cr=3,
                 attack_names=[
                     "-",
@@ -481,7 +490,11 @@ class _PsiWarrior(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid],
-                bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Leader,
+                    MonsterRole.Soldier,
+                ],
                 require_stats=Stats.INT,
                 bonus_stats=Stats.WIS,
                 bonus_damage=DamageType.Psychic,
@@ -538,7 +551,7 @@ class _Cavalier(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
-                bonus_roles=MonsterRole.Leader,
+                bonus_roles={MonsterRole.Leader, MonsterRole.Soldier},
                 require_cr=3,
                 attack_names=["-", weapon.Greatsword, weapon.Greataxe],
             ),
@@ -587,7 +600,7 @@ def _RuneKnights() -> List[Power]:
                 score_args=dict(
                     require_no_creature_class=True,
                     require_types=[CreatureType.Humanoid, CreatureType.Giant],
-                    bonus_roles=[MonsterRole.Bruiser, MonsterRole.Leader],
+                    bonus_roles=[MonsterRole.Soldier, MonsterRole.Leader],
                     bonus_damage=rune.damage_types,
                     require_stats=Stats.STR,
                     require_cr=3,
@@ -639,7 +652,11 @@ class _Samurai(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
-                bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                ],
                 require_stats=Stats.STR,
                 require_cr=3,
                 attack_names=[
@@ -683,8 +700,7 @@ class _Monk(PowerWithStandardScoring):
             score_args=dict(
                 require_roles=[
                     MonsterRole.Skirmisher,
-                    MonsterRole.Leader,
-                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
                 ],
                 require_stats=Stats.DEX,
                 require_types=CreatureType.Humanoid,

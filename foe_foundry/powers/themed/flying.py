@@ -13,7 +13,9 @@ class _Flyer(PowerWithStandardScoring):
     def __init__(self):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
-                not (c.speed.fly or 0) and not (c.speed.climb or 0) and not (c.speed.swim or 0)
+                not (c.speed.fly or 0)
+                and not (c.speed.climb or 0)
+                and not (c.speed.swim or 0)
             )
 
         super().__init__(
@@ -86,7 +88,7 @@ class _WingedCharge(PowerWithStandardScoring):
             score_args=dict(
                 require_flying=True,
                 require_types=CreatureType.all_but(CreatureType.Aberration),
-                bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
+                bonus_roles={MonsterRole.Soldier, MonsterRole.Skirmisher},
                 require_attack_types=AttackType.AllMelee(),
             ),
         )

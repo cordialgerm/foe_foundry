@@ -1,14 +1,14 @@
 from typing import List
 
 from ....damage import AttackType
-from ....spells import enchantment, evocation, necromancy
+from ....spells import abjuration, enchantment, evocation, necromancy
 from ....statblocks import BaseStatblock
 from ...power import HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 
 _adept = [enchantment.Command, enchantment.HoldPerson]
-_master = [evocation.MassCureWounds, evocation.FlameStrike]
+_master = [abjuration.MassCureWounds, evocation.FlameStrike]
 _expert = [enchantment.MassSuggestion, necromancy.FingerOfDeath]
 
 CultAdeptSpells = spell_list(_adept, uses=1)

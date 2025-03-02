@@ -81,7 +81,11 @@ class _Bloodrage(OrcPower):
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 17),
             require_attack_types=AttackType.AllMelee(),
-            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Ambusher],
+            bonus_roles=[
+                MonsterRole.Bruiser,
+                MonsterRole.Soldier,
+                MonsterRole.Ambusher,
+            ],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -123,14 +127,19 @@ BloodrageBlow: Power = OrcPowerWrapper(
     wrapped_power=StunningBlow,
     create_date=datetime(2025, 2, 17),
     require_attack_types=AttackType.AllMelee(),
-    bonus_roles=[MonsterRole.Bruiser],
+    bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
 )
 BloodrageEndurance: Power = OrcPowerWrapper(
     name="Bloodrage Endurance",
     source="Foe Foundry",
     wrapped_power=RelentlessEndurance,
     create_date=datetime(2025, 2, 17),
-    bonus_roles=[MonsterRole.Defender, MonsterRole.Bruiser, MonsterRole.Leader],
+    bonus_roles=[
+        MonsterRole.Defender,
+        MonsterRole.Soldier,
+        MonsterRole.Bruiser,
+        MonsterRole.Leader,
+    ],
 )
 
 OrcPowers: List[Power] = [

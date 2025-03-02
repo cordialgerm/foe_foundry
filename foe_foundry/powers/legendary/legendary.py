@@ -51,16 +51,12 @@ def make_legendary(
     )
 
     # AC Adjustments
-    if stats.cr <= 8:
-        ac_increase = 1
-    elif stats.cr <= 12:
-        ac_increase = 2
-    elif stats.cr <= 17:
+    if stats.cr >= 22:
         ac_increase = 3
-    elif stats.cr <= 23:
-        ac_increase = 4
+    elif stats.cr >= 16:
+        ac_increase = 2
     else:
-        ac_increase = 5
+        ac_increase = 1
 
     # Damage Adjustments
 

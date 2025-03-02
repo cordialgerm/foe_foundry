@@ -7,7 +7,6 @@ from ...attributes import Skills, Stats
 from ...damage import Attack, AttackType, Bleeding, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -42,7 +41,9 @@ class BruiserPower(PowerWithStandardScoring):
 class _GrapplingStrike(BruiserPower):
     def __init__(self):
         super().__init__(
-            name="Grappler", source="A5E SRD Grappler", attack_names={natural_attacks.Slam}
+            name="Grappler",
+            source="A5E SRD Grappler",
+            attack_names={natural_attacks.Slam},
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:

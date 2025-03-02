@@ -3,7 +3,7 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -19,9 +19,17 @@ class TeleportationPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
+        existing_callback = score_args.pop("require_callback", None)
+
         def humanoid_is_caster(c: BaseStatblock) -> bool:
+            if existing_callback is not None and not existing_callback(c):
+                return False
+
             if c.creature_type == CreatureType.Humanoid:
-                return any(t.is_spell() for t in c.attack_types)
+                return (
+                    any(t.is_spell() for t in c.attack_types)
+                    and c.secondary_damage_type != DamageType.Radiant
+                )
             else:
                 return True
 

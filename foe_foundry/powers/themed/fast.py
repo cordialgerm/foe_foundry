@@ -26,9 +26,9 @@ class FastPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             theme="fast",
             score_args=dict(
-                require_stats=Stats.DEX,
+                bonus_stats=Stats.DEX,
                 stat_threshold=16,
-                bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+                require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
             )
             | score_args,
         )

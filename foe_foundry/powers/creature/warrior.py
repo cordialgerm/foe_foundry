@@ -44,7 +44,11 @@ class Warrior(PowerWithStandardScoring):
             theme="warrior",
             score_args=dict(
                 require_callback=require_callback,
-                bonus_roles={MonsterRole.Bruiser, MonsterRole.Defender},
+                bonus_roles={
+                    MonsterRole.Bruiser,
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                },
                 bonus_skills=Skills.Athletics,
             )
             | score_args,
@@ -62,10 +66,8 @@ class _PackTactics(Warrior):
                 CreatureType.Monstrosity,
             },
             bonus_roles={
-                MonsterRole.Leader,
+                MonsterRole.Soldier,
                 MonsterRole.Bruiser,
-                MonsterRole.Ambusher,
-                MonsterRole.Skirmisher,
             },
             power_level=HIGH_POWER,
         )
@@ -82,8 +84,7 @@ class _PackTactics(Warrior):
 class _Disciplined(Warrior):
     def __init__(self):
         super().__init__(
-            name="Disciplined",
-            source="Foe Foundry",
+            name="Disciplined", source="Foe Foundry", require_roles=MonsterRole.Soldier
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -101,7 +102,7 @@ class _ActionSurge(Warrior):
             name="Action Surge",
             source="SRD5.1 Action Surge",
             power_level=HIGH_POWER,
-            bonus_roles=MonsterRole.Bruiser,
+            bonus_roles={MonsterRole.Soldier},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,7 +155,7 @@ class _BreakMagic(Warrior):
             source="A5E SRD Dread Knight",
             power_level=MEDIUM_POWER,
             require_cr=8,
-            bonus_roles=MonsterRole.Bruiser,
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Soldier},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

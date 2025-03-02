@@ -116,7 +116,9 @@ def generate_berserker(
     # ROLES
     stats = stats.with_roles(
         primary_role=MonsterRole.Bruiser,
-        additional_roles=[MonsterRole.Leader] if variant is CommanderVariant else [],
+        additional_roles=[MonsterRole.Leader]
+        if variant is CommanderVariant
+        else [MonsterRole.Soldier],
     )
 
     # SKILLS

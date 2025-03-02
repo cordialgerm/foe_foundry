@@ -12,3 +12,5 @@ class MonsterRole(StrEnum):
     Defender = auto()
     Leader = auto()
     Skirmisher = auto()
+    Support = auto()
+    Soldier = auto()

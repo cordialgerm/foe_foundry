@@ -9,7 +9,7 @@ from ....spells import abjuration, conjuration, evocation, necromancy
 from ....statblocks import BaseStatblock
 from ....utils.summoning import determine_summon_formula
 from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Spellcaster
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [conjuration.Grease, conjuration.Web, conjuration.FogCloud]
@@ -21,13 +21,15 @@ ConjurationMasterSpells = spell_list(
     _adept, uses=2, exclude={abjuration.LesserRestoration}
 ) + spell_list(_master, uses=1)
 ConjurationExpertSpells = (
-    spell_list(_adept, uses=3, exclude={abjuration.LesserRestoration, necromancy.RaiseDead})
+    spell_list(
+        _adept, uses=3, exclude={abjuration.LesserRestoration, necromancy.RaiseDead}
+    )
     + spell_list(_master, uses=2)
     + spell_list(_expert, uses=1)
 )
 
 
-class _ConjurationWizard(_Spellcaster):
+class _ConjurationWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(

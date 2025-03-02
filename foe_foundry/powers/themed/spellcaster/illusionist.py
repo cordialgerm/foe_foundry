@@ -5,9 +5,9 @@ from ....features import Feature
 from ....role_types import MonsterRole
 from ....spells import illusion
 from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, LOW_POWER, MEDIUM_POWER
+from ...power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power
 from ..tricky import Projection
-from .base import _Spellcaster
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [illusion.Invisibility, illusion.SilentImage, illusion.DisguiseSelf]
@@ -25,7 +25,7 @@ IllusionistExpertSpells = (
 )
 
 
-class _IllusionistWizard(_Spellcaster):
+class _IllusionistWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
@@ -49,7 +49,7 @@ class _IllusionistWizard(_Spellcaster):
         return Projection.generate_features(stats)
 
 
-def IllusionistWizards() -> List[_Spellcaster]:
+def IllusionistWizards() -> List[Power]:
     return [
         _IllusionistWizard(
             name="Illusionist Adept",

@@ -5,11 +5,11 @@ from ..attack_template import natural
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers.creature.zombie import ZombiePowers
 from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.legendary import make_legendary
 from ..powers.themed.diseased import DiseasedPowers
 from ..powers.themed.technique import GrapplingAttack
-from ..powers.creature.zombie import ZombiePowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
@@ -124,7 +124,7 @@ def generate_zombie(
 
     # ROLES
     stats = stats.with_roles(
-        primary_role=MonsterRole.Bruiser,
+        primary_role=MonsterRole.Bruiser, additional_roles=MonsterRole.Soldier
     )
 
     # SAVES

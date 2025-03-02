@@ -24,9 +24,9 @@ class _HeavyArmor(ArmorClassTemplate):
         ac = self._base_ac + (2 if uses_shield else 0) + quality_level
 
         if quality_level > 0:
-            text = f"Plate Armor +{quality_level}"
+            text = f"{self.name} +{quality_level}"
         else:
-            text = "Plate Armor"
+            text = self.name
 
         return ResolvedArmorClass(
             value=ac,

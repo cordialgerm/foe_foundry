@@ -7,8 +7,8 @@ from ....features import ActionType, Feature
 from ....role_types import MonsterRole
 from ....spells import enchantment, illusion
 from ....statblocks import BaseStatblock
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER
-from .base import _Spellcaster
+from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [
@@ -29,13 +29,15 @@ EnchanterMasterSpells = spell_list(
     spells=_adept, uses=2, exclude={illusion.Invisibility}, mark_schools={"enchantment"}
 ) + spell_list(spells=_master, uses=1, mark_schools={"enchantment"})
 EnchanterExpertSpells = (
-    spell_list(_adept, uses=3, exclude={illusion.Invisibility}, mark_schools={"enchantment"})
+    spell_list(
+        _adept, uses=3, exclude={illusion.Invisibility}, mark_schools={"enchantment"}
+    )
     + spell_list(_master, uses=2, mark_schools={"enchantment"})
     + spell_list(_expert, uses=1, mark_schools={"enchantment"})
 )
 
 
-class _EnchanterWizard(_Spellcaster):
+class _EnchanterWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
@@ -69,7 +71,7 @@ class _EnchanterWizard(_Spellcaster):
         return [feature]
 
 
-def EnchanterWizards() -> List[_Spellcaster]:
+def EnchanterWizards() -> List[Power]:
     return [
         _EnchanterWizard(
             name="Enchantment Adept",

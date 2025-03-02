@@ -151,6 +151,29 @@ class AttackTemplate:
         else:
             return stats.copy(additional_attacks=additional_attacks)
 
+    def add_secondary_damage(
+        self, primary_attack: Attack, stats: BaseStatblock
+    ) -> Attack:
+        if (
+            stats.secondary_damage_type is None
+            or primary_attack.damage.damage_type == stats.secondary_damage_type
+        ):
+            return primary_attack.copy()
+
+        current_damage = primary_attack.average_damage
+        target_damage = stats.base_attack_damage * stats.damage_modifier
+        gap = target_damage - current_damage
+        if gap <= 1.5:
+            return primary_attack.copy()
+
+        additional_damage = DieFormula.target_value(target=gap, force_die=Die.d4)
+        new_additional_damage = Damage(
+            formula=additional_damage, damage_type=stats.secondary_damage_type
+        )
+
+        new_attack = primary_attack.copy(additional_damage=new_additional_damage)
+        return new_attack
+
     def split_primary_attack_damage(
         self, primary_attack: Attack, stats: BaseStatblock
     ) -> Attack:
@@ -167,12 +190,14 @@ class AttackTemplate:
 
         # for example, a giant's greatsword should do at least 3d6 slashing
         # so we don't want to split additional secondary damage if it's only doing 3d6 right now
+
+        # in that case, we can try to add additional damage type on top of the minimum damage dice
         min_dice_count = self.die_count or 0
         current_dice_count = primary_attack.damage.formula.n_die
         current_die = primary_attack.damage.formula.primary_die_type
         current_mod = primary_attack.damage.formula.mod or 0
         if current_dice_count <= min_dice_count:
-            return primary_attack.copy()
+            return self.add_secondary_damage(primary_attack, stats)
 
         if current_dice_count > 2:
             primary_dice_count = max(

@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -23,10 +22,18 @@ class CruelPower(PowerWithStandardScoring):
     ):
         standard_score_args = dict(
             require_attack_types=AttackType.AllMelee(),
-            bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
+            bonus_types=[
+                CreatureType.Fiend,
+                CreatureType.Monstrosity,
+                CreatureType.Humanoid,
+            ],
             bonus_skills=Skills.Intimidation,
             bonus_stats=Stats.CHA,
-            bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
+            require_roles={
+                MonsterRole.Ambusher,
+                MonsterRole.Bruiser,
+                MonsterRole.Soldier,
+            },
             **score_args,
         )
         super().__init__(
@@ -64,7 +71,9 @@ class _BloodiedFrenzy(CruelPower):
 class _BrutalCritical(CruelPower):
     def __init__(self):
         super().__init__(
-            name="Brutal Critical", source="SRD5.1 Champion, Barbarian", power_level=HIGH_POWER
+            name="Brutal Critical",
+            source="SRD5.1 Champion, Barbarian",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

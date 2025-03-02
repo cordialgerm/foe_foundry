@@ -3,6 +3,7 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
+from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -23,6 +24,7 @@ class Tricky(PowerWithStandardScoring):
                 return (
                     any(t.is_spell() for t in c.attack_types)
                     and c.attributes.spellcasting_mod >= 3
+                    and c.secondary_damage_type != DamageType.Radiant
                 )
             else:
                 return True

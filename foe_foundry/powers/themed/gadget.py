@@ -26,6 +26,7 @@ class GadgetPower(PowerWithStandardScoring):
                 require_types=CreatureType.Humanoid,
                 bonus_roles=[
                     MonsterRole.Leader,
+                    MonsterRole.Soldier,
                     MonsterRole.Controller,
                     MonsterRole.Ambusher,
                     MonsterRole.Defender,

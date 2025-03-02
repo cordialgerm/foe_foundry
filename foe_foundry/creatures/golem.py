@@ -242,7 +242,7 @@ def generate_golem(
 
     # ROLES
     stats = stats.with_roles(
-        primary_role=MonsterRole.Defender, additional_roles=[MonsterRole.Bruiser]
+        primary_role=MonsterRole.Defender, additional_roles=[MonsterRole.Soldier]
     )
 
     # IMMUNITIES

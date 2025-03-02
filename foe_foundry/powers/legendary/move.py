@@ -18,7 +18,9 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
     melee_attack = next((a for a in attacks if a.attack_type.is_melee()), None)
 
     if melee_attack is not None and (
-        MonsterRole.Bruiser in stats.additional_roles or stats.size >= Size.Huge
+        MonsterRole.Bruiser in stats.additional_roles
+        or MonsterRole.Soldier in stats.additional_roles
+        or stats.size >= Size.Huge
     ):
         yield LegendaryActionScore(
             feature=Feature(

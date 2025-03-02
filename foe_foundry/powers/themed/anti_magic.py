@@ -6,7 +6,6 @@ from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
@@ -22,7 +21,11 @@ class _ArcaneHunt(PowerWithStandardScoring):
                 CreatureType.Fiend,
             ],
             require_attack_types=AttackType.MeleeNatural,
-            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Ambusher],
+            bonus_roles=[
+                MonsterRole.Bruiser,
+                MonsterRole.Ambusher,
+                MonsterRole.Soldier,
+            ],
         )
 
         super().__init__(
@@ -80,7 +83,7 @@ class _Spellbreaker(PowerWithStandardScoring):
         score_args = dict(
             require_attack_types=AttackType.MeleeWeapon,
             require_callback=is_organized,
-            bonus_roles=MonsterRole.Bruiser,
+            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
             attack_names=[
                 weapon.SwordAndShield,
                 weapon.Greataxe,
@@ -120,7 +123,11 @@ class _RedirectTeleport(PowerWithStandardScoring):
                 CreatureType.Monstrosity,
             ],
             require_attack_types=AttackType.AllMelee(),
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Leader,
+                MonsterRole.Support,
+            ],
         )
 
         super().__init__(
@@ -145,10 +152,19 @@ class _RedirectTeleport(PowerWithStandardScoring):
 class _SpellEater(PowerWithStandardScoring):
     def __init__(self):
         score_args = dict(
-            require_types=[CreatureType.Aberration, CreatureType.Fey, CreatureType.Monstrosity],
+            require_types=[
+                CreatureType.Aberration,
+                CreatureType.Fey,
+                CreatureType.Monstrosity,
+            ],
             require_attack_types=AttackType.AllNatural(),
             require_cr=5,
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Bruiser],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Bruiser,
+                MonsterRole.Soldier,
+                MonsterRole.Support,
+            ],
         )
         super().__init__(
             name="Spell Eater",
@@ -162,7 +178,7 @@ class _SpellEater(PowerWithStandardScoring):
         def additional_description(a: Attack) -> Attack:
             return a.split_damage(DamageType.Force, split_ratio=0.75).copy(
                 custom_target="one target that can cast a spell",
-                additional_description=f"On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is **Stunned** until the end of its next turn.",
+                additional_description="On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is **Stunned** until the end of its next turn.",
             )
 
         stats = stats.add_attack(
@@ -197,7 +213,12 @@ class _SpellStealer(PowerWithStandardScoring):
                 CreatureType.Aberration,
                 CreatureType.Monstrosity,
             ],
-            require_roles=[MonsterRole.Controller, MonsterRole.Ambusher, MonsterRole.Leader],
+            require_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Ambusher,
+                MonsterRole.Leader,
+                MonsterRole.Support,
+            ],
             require_callback=humanoid_is_arcane_trickster,
         )
 
@@ -275,7 +296,12 @@ class _SealOfSilence(PowerWithStandardScoring):
                 CreatureType.Fiend,
                 CreatureType.Celestial,
             ],
-            require_roles=[MonsterRole.Defender, MonsterRole.Leader, MonsterRole.Controller],
+            require_roles=[
+                MonsterRole.Defender,
+                MonsterRole.Leader,
+                MonsterRole.Controller,
+                MonsterRole.Support,
+            ],
             require_cr=7,
         )
         super().__init__(

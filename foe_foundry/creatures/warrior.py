@@ -4,11 +4,11 @@ from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers.creature.warrior import MightyLeap, WarriorPowers
 from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import NetPowers
 from ..powers.themed.organized import OrganizedPowers
 from ..powers.themed.technique import TechniquePowers
-from ..powers.creature.warrior import MightyLeap, WarriorPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -153,14 +153,14 @@ def generate_warrior(
 
     # ROLES
     if variant is CommanderVariant:
-        primary_role = MonsterRole.Bruiser
+        primary_role = MonsterRole.Soldier
         additional_roles = [MonsterRole.Leader]
     elif variant is ShockInfantryVariant:
-        primary_role = MonsterRole.Bruiser
-        additional_roles = None
+        primary_role = MonsterRole.Soldier
+        additional_roles = [MonsterRole.Bruiser]
     else:
-        primary_role = MonsterRole.Defender
-        additional_roles = None
+        primary_role = MonsterRole.Soldier
+        additional_roles = [MonsterRole.Defender]
 
     stats = stats.with_roles(
         primary_role=primary_role,

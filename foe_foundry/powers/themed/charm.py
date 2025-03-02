@@ -1,8 +1,6 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -12,7 +10,6 @@ from ...role_types import MonsterRole
 from ...spells import enchantment
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..power_type import PowerType
 
 
 class CharmingPower(PowerWithStandardScoring):
@@ -40,7 +37,11 @@ class CharmingPower(PowerWithStandardScoring):
             ],
             require_stats=Stats.CHA,
             require_callback=humanoid_is_psychic_spellcaster,
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Leader,
+                MonsterRole.Support,
+            ],
             bonus_skills=[Skills.Deception, Skills.Persuasion],
             attack_names=spell.Gaze,
             bonus_damage=DamageType.Psychic,

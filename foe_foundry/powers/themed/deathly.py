@@ -14,7 +14,6 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
     PowerWithStandardScoring,
 )
 

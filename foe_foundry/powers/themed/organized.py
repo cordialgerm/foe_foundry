@@ -36,7 +36,11 @@ class OrganizedPower(PowerWithStandardScoring):
             score_args=dict(
                 bonus_types={c for c in CreatureType if c.could_be_organized},
                 require_stats=Stats.INT,
-                require_roles=MonsterRole.Leader,
+                require_roles=[
+                    MonsterRole.Support,
+                    MonsterRole.Soldier,
+                    MonsterRole.Leader,
+                ],
             )
             | score_args,
         )

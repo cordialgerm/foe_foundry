@@ -20,6 +20,7 @@ from ..powers.themed.cursed import (
 )
 from ..powers.themed.deathly import DeathlyPowers
 from ..powers.themed.domineering import DomineeringPowers
+from ..powers.themed.fast import Evasion
 from ..powers.themed.gadget import GadgetPowers
 from ..powers.themed.psychic import PsychicPowers
 from ..powers.themed.spellcaster.cult import CultCasters
@@ -101,7 +102,7 @@ class _CustomWeights:
         powers = []
         highly_desirable_powers = []
 
-        suppress_powers = GadgetPowers + TrapPowers
+        suppress_powers = GadgetPowers + TrapPowers + [Evasion]
         if p in suppress_powers:
             return CustomPowerWeight(0)  # Cultists shouldn't really be "high tech"
 

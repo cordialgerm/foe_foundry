@@ -52,3 +52,27 @@ class _Spellcaster(PowerWithStandardScoring):
             stats = stats.copy(creature_class=self.creature_class)
         sorted_spells = sorted(self.spells, key=lambda s: s.name)
         return stats.add_spells(sorted_spells)
+
+
+class _Wizard(_Spellcaster):
+    def __init__(self, **kwargs):
+        additional_score_args = kwargs.pop("score_args", {})
+        existing_callback = additional_score_args.pop("require_callback", None)
+
+        def is_wizard(c: BaseStatblock) -> bool:
+            if existing_callback is not None and not existing_callback(c):
+                return False
+
+            return c.creature_class == "Wizard"
+
+        args: dict = (
+            dict(
+                score_args=dict(
+                    require_callback=is_wizard,
+                )
+                | additional_score_args
+            )
+            | kwargs
+        )
+
+        super().__init__(**args)

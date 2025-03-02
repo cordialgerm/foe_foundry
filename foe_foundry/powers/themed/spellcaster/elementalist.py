@@ -5,15 +5,14 @@ from ....creature_types import CreatureType
 from ....damage import AttackType, DamageType, conditions
 from ....die import Die
 from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....spells import conjuration, enchantment, evocation, illusion, necromancy
+from ....spells import conjuration, evocation, necromancy
 from ....statblocks import BaseStatblock
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Spellcaster
+from ...power import HIGH_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 
-class Pyromancer(_Spellcaster):
+class Pyromancer(_Wizard):
     def __init__(self):
         super().__init__(
             name="Pyromancer",
@@ -47,7 +46,7 @@ class Pyromancer(_Spellcaster):
         return [feature]
 
 
-class Cryomancer(_Spellcaster):
+class Cryomancer(_Wizard):
     def __init__(self):
         super().__init__(
             name="Cryomancer",
@@ -82,13 +81,14 @@ class Cryomancer(_Spellcaster):
         return [feature]
 
 
-class Electromancer(_Spellcaster):
+class Electromancer(_Wizard):
     def __init__(self):
         super().__init__(
             name="Electromancer",
             min_cr=4,
             spells=spell_list(
-                [evocation.GustOfWind, evocation.LightningBolt, evocation.Thunderwave], uses=1
+                [evocation.GustOfWind, evocation.LightningBolt, evocation.Thunderwave],
+                uses=1,
             ),
             theme="elementalist",
             creature_class="Electromancer",
@@ -115,13 +115,14 @@ class Electromancer(_Spellcaster):
         return [feature]
 
 
-class Toximancer(_Spellcaster):
+class Toximancer(_Wizard):
     def __init__(self):
         super().__init__(
             name="Toximancer",
             min_cr=4,
             spells=spell_list(
-                [conjuration.Cloudkill, necromancy.Contagion, evocation.AcidArrow], uses=1
+                [conjuration.Cloudkill, necromancy.Contagion, evocation.AcidArrow],
+                uses=1,
             ),
             theme="elementalist",
             creature_class="Toximancer",

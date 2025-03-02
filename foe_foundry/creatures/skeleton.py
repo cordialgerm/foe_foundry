@@ -7,6 +7,7 @@ from ..damage import Condition, DamageType
 from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
 from ..powers.creature.skeletal import SkeletalPowers
 from ..powers.creature_type.undead import UndeadFortitude
+from ..powers.themed.reckless import RecklessPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
@@ -57,7 +58,7 @@ class _CustomWeights:
 
     def __call__(self, p: Power) -> CustomPowerWeight:
         powers = SkeletalPowers
-        suppress_powers = [UndeadFortitude]
+        suppress_powers = [UndeadFortitude] + RecklessPowers
         if p in suppress_powers:
             return CustomPowerWeight(0)  # skeletons are not zombies
         elif p in powers:
@@ -131,7 +132,7 @@ def generate_skeleton(
         primary_role = MonsterRole.Defender
         additional_roles = []
     else:
-        primary_role = MonsterRole.Bruiser
+        primary_role = MonsterRole.Soldier
         additional_roles = [MonsterRole.Artillery]
 
     stats = stats.with_roles(

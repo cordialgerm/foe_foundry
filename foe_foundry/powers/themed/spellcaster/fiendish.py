@@ -5,12 +5,10 @@ from ....damage import AttackType
 from ....role_types import MonsterRole
 from ....spells import (
     abjuration,
-    divination,
     enchantment,
     evocation,
     illusion,
     necromancy,
-    transmutation,
 )
 from ...power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster

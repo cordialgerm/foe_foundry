@@ -128,10 +128,14 @@ def generate_guard(
     # ROLES
     if variant is CommanderVariant:
         primary_role = MonsterRole.Leader
-        additional_roles = [MonsterRole.Defender, MonsterRole.Artillery]
+        additional_roles = [
+            MonsterRole.Defender,
+            MonsterRole.Artillery,
+            MonsterRole.Soldier,
+        ]
     else:
         primary_role = MonsterRole.Defender
-        additional_roles = [MonsterRole.Artillery]
+        additional_roles = [MonsterRole.Artillery, MonsterRole.Soldier]
 
     stats = stats.with_roles(
         primary_role=primary_role,

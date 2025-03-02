@@ -223,18 +223,7 @@ LightningBolt: Spell = Spell(
     range="Self (100-foot line)",
 )
 
-MassCureWounds: Spell = Spell(
-    name="Mass Cure Wounds",
-    level=5,
-    school="evocation",
-    source="SRD 5.1",
-    upcast=False,
-    concentration=False,
-    action_type=ActionType.Action,
-    save=None,
-    description="""A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
-    range="60 feet",
-)
+
 
 Thunderwave: Spell = Spell(
     name="Thunderwave",
