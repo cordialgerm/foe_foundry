@@ -49,11 +49,9 @@ def render_html_multiple_inline(name: str, stats: List[Statblock]) -> str:
     return html_raw
 
 
-def render_html_fragment(
-    stats: Statblock, benchmarks: List[Benchmark] | None = None
-) -> str:
+def render_html_fragment(stats: Statblock) -> str:
     template = env.get_template("creature_template.html.j2")
-    data = MonsterTemplateData.from_statblock(stats, benchmarks)
+    data = MonsterTemplateData.from_statblock(stats)
     html_raw = template.render(data.to_dict())
     return html_raw
 

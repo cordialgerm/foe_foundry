@@ -4,7 +4,7 @@ from ..ac_templates import Unarmored
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.legendary import make_legendary
 from ..powers.themed.anti_magic import Spellbreaker
 from ..powers.themed.anti_ranged import DeflectMissile
@@ -29,20 +29,21 @@ from .template import (
 )
 
 
-def custom_weights(p: Power) -> CustomPowerWeight:
-    powers = [
-        Spellbreaker,
-        DeflectMissile,
-        RetributiveStrike,
-        Barbarian,
-        BrutalCritical,
-        BloodiedFrenzy,
-        FearsomeRoar,
-    ] + RecklessPowers
-    if p in powers:
-        return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
-    else:
-        return CustomPowerWeight(weight=1.0)
+class _CustomPowers(CustomPowerSelection):
+    def custom_weight(self, power: Power) -> CustomPowerWeight:
+        powers = [
+            Spellbreaker,
+            DeflectMissile,
+            RetributiveStrike,
+            Barbarian,
+            BrutalCritical,
+            BloodiedFrenzy,
+            FearsomeRoar,
+        ] + RecklessPowers
+        if power in powers:
+            return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(weight=1.0)
 
 
 BerserkerVariant = CreatureVariant(
@@ -150,7 +151,7 @@ def generate_berserker(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_weights=custom_weights,
+        custom=_CustomPowers(),
     )
     features += power_features
 

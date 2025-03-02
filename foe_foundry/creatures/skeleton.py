@@ -4,7 +4,14 @@ from ..ac_templates import Breastplate, Unarmored, UnholyArmor
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
-from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    select_powers,
+)
 from ..powers.creature.skeletal import SkeletalPowers
 from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.themed.reckless import RecklessPowers
@@ -51,12 +58,12 @@ FreezingSkeletonVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         powers = SkeletalPowers
         suppress_powers = [UndeadFortitude] + RecklessPowers
         if p in suppress_powers:
@@ -167,7 +174,7 @@ def generate_skeleton(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

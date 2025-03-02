@@ -5,7 +5,7 @@ from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import PackTactics
 from ..powers.legendary import make_legendary
 from ..powers.roles import leader
@@ -13,7 +13,7 @@ from ..powers.themed import cruel, reckless, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock, MonsterDials
+from ..statblocks import BaseStatblock
 from .base_stats import base_stats
 from .species import AllSpecies
 from .template import (
@@ -53,12 +53,12 @@ BossVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         powers = [
             leader.Intimidate,
             cruel.BrutalCritical,
@@ -74,6 +74,9 @@ class _CustomWeights:
             return CustomPowerWeight(1.5, ignore_usual_requirements=True)
         else:
             return CustomPowerWeight(0.75)
+
+    def force_powers(self) -> list[Power]:
+        return [PackTactics]
 
 
 def generate_tough(
@@ -119,6 +122,18 @@ def generate_tough(
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 
+    # Toughs with a Mace also have a heavy crossbow
+    if attack == weapon.Maul:
+        stats = stats.add_attack(
+            name="Heavy Crossbow",
+            scalar=0.7 * min(stats.multiattack, 2),
+            attack_type=AttackType.RangedWeapon,
+            range=100,
+            damage_type=DamageType.Piercing,
+            die=Die.d10,
+            replaces_multiattack=2,
+        )
+
     # ROLES
     stats = stats.with_roles(
         primary_role=MonsterRole.Leader
@@ -143,40 +158,15 @@ def generate_tough(
     # POWERS
     features = []
 
-    # Toughs always have Pack Tactics power
-    features += PackTactics.generate_features(stats)
-    stats = PackTactics.modify_stats(stats)
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=-PackTactics.power_level / 2
-        )  # discount Pack Tactics cost somewhat to account for it being mandatory
-    )
-
-    # Toughs with a Mace also have a heavy crossbow
-    if attack == weapon.Maul:
-        stats = stats.add_attack(
-            name="Heavy Crossbow",
-            scalar=0.7 * min(stats.multiattack, 2),
-            attack_type=AttackType.RangedWeapon,
-            range=100,
-            damage_type=DamageType.Piercing,
-            die=Die.d10,
-            replaces_multiattack=2,
-        )
-
     # SPECIES CUSTOMIZATIONS
     stats = species.alter_base_stats(stats)
 
     # ADDITIONAL POWERS
-    def custom_filter(power: Power) -> bool:
-        return power is not PackTactics
-
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_filter=custom_filter,
-        custom_weights=_CustomWeights(stats, variant),
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

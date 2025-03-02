@@ -1,10 +1,12 @@
 import numpy as np
 
+from foe_foundry.powers.power import Power
+
 from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import select_powers
+from ..powers import CustomPowerSelection, select_powers
 from ..powers.legendary import make_legendary
 from ..powers.roles.skirmisher import CunningAction
 from ..role_types import MonsterRole
@@ -42,6 +44,11 @@ SpyMasterVariant = CreatureVariant(
         ),
     ],
 )
+
+
+class _CustomPowers(CustomPowerSelection):
+    def force_powers(self) -> list[Power]:
+        return [CunningAction]
 
 
 def generate_spy(
@@ -135,27 +142,15 @@ def generate_spy(
     # POWERS
     features = []
 
-    # Spies always have Cunning Action power
-    features += CunningAction.generate_features(stats)
-    stats = CunningAction.modify_stats(stats)
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=-CunningAction.power_level / 2
-        )  # discount Cunning Action cost somewhat to account for it being mandatory
-    )
-
     # SPECIES CUSTOMIZATIONS
     stats = species.alter_base_stats(stats)
 
     # ADDITIONAL POWERS
-    def power_filter(p):
-        return p is not CunningAction
-
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_filter=power_filter,
+        custom=_CustomPowers(),
     )
     features += power_features
 

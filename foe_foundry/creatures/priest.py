@@ -4,7 +4,14 @@ from ..ac_templates import ChainmailArmor, ChainShirt, PlateArmor
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    select_powers,
+)
 from ..powers.creature_type import celestial
 from ..powers.legendary import make_legendary
 from ..powers.roles import SupportPowers
@@ -40,12 +47,12 @@ PriestVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         holy_powers = set(holy.HolyPowers)
         holy_powers.discard(holy.MassCureWounds)
 
@@ -184,7 +191,7 @@ def generate_priest(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

@@ -3,7 +3,7 @@ import numpy as np
 from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import MightyLeap, WarriorPowers
 from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import NetPowers
@@ -25,12 +25,12 @@ from .template import (
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         if p is MightyLeap and self.stats.cr <= 7:
             return CustomPowerWeight(
                 weight=0
@@ -193,7 +193,7 @@ def generate_warrior(
         stats=stats,
         rng=rng,
         power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 
