@@ -54,8 +54,8 @@ def Burning(
     return CustomCondition(
         name="Burning",
         caption=f"**Burning** [{damage} {damage_type}]",
-        description=f"At the start of each of your turns, you take {damage} {damage_type} damage. You or another creature within 5 feet of you can spend an action to end the condition.",
-        description_3rd=f"A burning creature suffers {damage} ongoing {damage_type} damage at the start of each of its turns. A creature may use an action to end the condition.",
+        description=f"At the end of each of your turns, you take {damage} {damage_type} damage. You or another creature within 5 feet of you can spend an action to end the condition.",
+        description_3rd=f"A burning creature suffers {damage} ongoing {damage_type} damage at the end of each of its turns. A creature may use an action to end the condition.",
     )
 
 

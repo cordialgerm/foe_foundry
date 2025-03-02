@@ -423,7 +423,10 @@ class BaseStatblock:
     def with_roles(
         self,
         primary_role: MonsterRole | None = None,
-        additional_roles: list[MonsterRole] | None = None,
+        additional_roles: MonsterRole
+        | set[MonsterRole]
+        | list[MonsterRole]
+        | None = None,
     ) -> BaseStatblock:
         if additional_roles is None:
             additional_roles = []
@@ -431,9 +434,16 @@ class BaseStatblock:
         if primary_role is None:
             primary_role = self.role
 
+        if isinstance(additional_roles, MonsterRole):
+            additional_roles = [additional_roles]
+        elif isinstance(additional_roles, set):
+            additional_roles = list(additional_roles)
+
         new_additional_roles = set(
-            self.additional_roles.copy() + additional_roles + list(self.role)
+            self.additional_roles.copy() + additional_roles + [self.role]
         )
+        new_additional_roles.discard(MonsterRole.Default)
+
         return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
 
     def as_legendary(

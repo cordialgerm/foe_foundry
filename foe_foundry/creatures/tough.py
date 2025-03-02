@@ -5,13 +5,15 @@ from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
-from ..powers import Power, select_powers
+from ..powers import CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import PackTactics
 from ..powers.legendary import make_legendary
+from ..powers.roles import leader
+from ..powers.themed import cruel, reckless, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from ..statblocks import MonsterDials
+from ..statblocks import BaseStatblock, MonsterDials
 from .base_stats import base_stats
 from .species import AllSpecies
 from .template import (
@@ -49,6 +51,29 @@ BossVariant = CreatureVariant(
         SuggestedCr(name="Thug Legend", cr=8, is_legendary=True),
     ],
 )
+
+
+class _CustomWeights:
+    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+        self.stats = stats
+        self.variant = variant
+
+    def __call__(self, p: Power) -> CustomPowerWeight:
+        powers = [
+            leader.Intimidate,
+            cruel.BrutalCritical,
+            technique.PushingAttack,
+            technique.DisarmingAttack,
+            reckless.Charger,
+            reckless.Reckless,
+            reckless.BloodiedRage,
+            reckless.Toss,
+            reckless.RelentlessEndurance,
+        ]
+        if p in powers:
+            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(0.75)
 
 
 def generate_tough(
@@ -151,6 +176,7 @@ def generate_tough(
         rng=rng,
         power_level=stats.recommended_powers,
         custom_filter=custom_filter,
+        custom_weights=_CustomWeights(stats, variant),
     )
     features += power_features
 

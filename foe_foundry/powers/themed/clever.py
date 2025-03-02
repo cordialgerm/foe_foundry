@@ -7,7 +7,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...spells import evocation
 from ...statblocks import BaseStatblock
@@ -44,7 +43,9 @@ class CleverPower(PowerWithStandardScoring):
 
 class _IdentifyWeakness(CleverPower):
     def __init__(self):
-        super().__init__(name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

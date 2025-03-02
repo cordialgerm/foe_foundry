@@ -8,6 +8,7 @@ from .controller import ControllerPowers
 from .defender import DefenderPowers
 from .leader import LeaderPowers
 from .skirmisher import SkirmisherPowers
+from .support import SupportPowers
 
 RolePowers: List[Power] = (
     AmbusherPowers
@@ -17,4 +18,5 @@ RolePowers: List[Power] = (
     + DefenderPowers
     + LeaderPowers
     + SkirmisherPowers
+    + SupportPowers
 )

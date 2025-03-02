@@ -8,8 +8,8 @@ from ....role_types import MonsterRole
 from ....spells import conjuration, illusion, necromancy
 from ....statblocks import BaseStatblock
 from ....utils import easy_multiple_of_five
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER
-from .base import _Spellcaster
+from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [
@@ -25,13 +25,17 @@ _master = [
 _expert = [necromancy.Eyebite, necromancy.FingerOfDeath]
 
 NecromancerAdeptSpells = spell_list(spells=_adept, uses=1)
-NecromancerMasterSpells = spell_list(spells=_adept, uses=2) + spell_list(spells=_master, uses=1)
+NecromancerMasterSpells = spell_list(spells=_adept, uses=2) + spell_list(
+    spells=_master, uses=1
+)
 NecromancerExpertSpells = (
-    spell_list(_adept, uses=3) + spell_list(_master, uses=2) + spell_list(_expert, uses=1)
+    spell_list(_adept, uses=3)
+    + spell_list(_master, uses=2)
+    + spell_list(_expert, uses=1)
 )
 
 
-class _NecromancerWizard(_Spellcaster):
+class _NecromancerWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
@@ -72,7 +76,7 @@ class _NecromancerWizard(_Spellcaster):
         return [feature]
 
 
-def NecromancerWizards() -> List[_Spellcaster]:
+def NecromancerWizards() -> List[Power]:
     return [
         _NecromancerWizard(
             name="Necromancer Adept",

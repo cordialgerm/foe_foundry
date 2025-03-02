@@ -1,6 +1,7 @@
 from datetime import datetime
 from typing import List, cast
 
+from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
@@ -72,7 +73,11 @@ class _PoisonedAttack(Technique):
 class _BleedingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Skirmisher,
+                MonsterRole.Soldier,
+            },
             attack_names=[
                 "-",
                 natural.Claw,
@@ -148,7 +153,7 @@ class _DazingAttack(Technique):
 class _BurningAttack(Technique):
     def __init__(self):
         score_args = dict(
-            require_roles={MonsterRole.Artillery},
+            bonus_roles={MonsterRole.Artillery, MonsterRole.Support},
             require_damage={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
             attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
@@ -172,7 +177,12 @@ class _BurningAttack(Technique):
 class _ProneAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Defender,
+                MonsterRole.Soldier,
+            },
             bonus_size=Size.Large,
             attack_names=[
                 "-",
@@ -212,7 +222,12 @@ class _ProneAttack(Technique):
 class _SlowingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Artillery,
+                MonsterRole.Soldier,
+                MonsterRole.Skirmisher,
+            },
             bonus_damage=DamageType.Cold,
             attack_names=[
                 "-",
@@ -241,12 +256,18 @@ class _SlowingAttack(Technique):
 class _PushingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Defender,
+            },
             bonus_size=Size.Large,
             attack_names=[
                 "-",
                 natural.Tail,
                 natural.Slam,
+                natural.Claw,
                 spell.ArcaneBurst,
                 spell.EldritchBlast,
                 spell.Thundrousblast,
@@ -278,9 +299,20 @@ class _PushingAttack(Technique):
 class _GrapplingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Defender,
+            },
             bonus_size=Size.Large,
-            attack_names=["-", natural.Slam, natural.Tentacle, weapon.Whip],
+            attack_names=[
+                "-",
+                natural.Slam,
+                natural.Tentacle,
+                weapon.Whip,
+                natural.Claw,
+            ],
         )
 
         super().__init__(name="Grappling Attack", score_args=score_args)
@@ -307,7 +339,11 @@ class _GrapplingAttack(Technique):
 class _BlindingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Leader},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Support,
+                MonsterRole.Leader,
+            },
             bonus_damage={DamageType.Radiant, DamageType.Acid},
             attack_names=[
                 "-",
@@ -431,7 +467,7 @@ class _ShockingAttack(Technique):
 class _GrazingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Skirmisher},
+            bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
             attack_names=[
                 "-",
                 weapon.Greatsword,
@@ -459,7 +495,7 @@ class _CleavingAttack(Technique):
     def __init__(self):
         score_args = dict(
             bonus_size=Size.Large,
-            bonus_roles={MonsterRole.Bruiser},
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Soldier},
             attack_names=["-", weapon.Greataxe, natural.Tail, weapon.Polearm],
         )
         super().__init__(name="Cleaving Attack", score_args=score_args)
@@ -482,7 +518,12 @@ class _CleavingAttack(Technique):
 class _SappingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Skirmisher,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Bruiser,
+            },
             attack_names=[
                 "-",
                 weapon.SpearAndShield,
@@ -507,7 +548,12 @@ class _SappingAttack(Technique):
 class _VexingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Ambusher, MonsterRole.Leader},
+            bonus_roles={
+                MonsterRole.Ambusher,
+                MonsterRole.Leader,
+                MonsterRole.Soldier,
+                MonsterRole.Controller,
+            },
             attack_names=[
                 "-",
                 weapon.Shortbow,
@@ -563,7 +609,12 @@ class _WeakeningAttack(Technique):
 class _DisarmingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Artillery],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Artillery,
+                MonsterRole.Soldier,
+                MonsterRole.Bruiser,
+            ],
             attack_names=[
                 "-",
                 weapon.SwordAndShield,
@@ -600,7 +651,7 @@ class _ParryAndRiposte(Technique):
         super().__init__(
             name="Parry and Riposte",
             score_args=dict(
-                bonus_roles=MonsterRole.Defender,
+                bonus_roles=[MonsterRole.Defender, MonsterRole.Soldier],
                 attack_names=[
                     "-",
                     weapon.SwordAndShield,
@@ -629,6 +680,12 @@ class _PommelStrike(Technique):
         super().__init__(
             name="Pommel Strike",
             score_args=dict(
+                bonus_roles=[
+                    MonsterRole.Soldier,
+                    MonsterRole.Bruiser,
+                    MonsterRole.Defender,
+                    MonsterRole.Leader,
+                ],
                 attack_names=[
                     "-",
                     weapon.SwordAndShield,
@@ -666,7 +723,10 @@ class _Dueling(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
-                bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Soldier,
+                ],
                 attack_names=[
                     "-",
                     weapon.MaceAndShield,
@@ -696,7 +756,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Giant],
-                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
+                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
                 attack_names={"-", natural.Slam},
             ),
         )
@@ -740,7 +800,7 @@ class _Interception(PowerWithStandardScoring):
                     weapon.RapierAndShield,
                     weapon.Shortswords,
                 },
-                require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
+                require_roles=[MonsterRole.Defender, MonsterRole.Soldier],
             ),
         )
 
@@ -770,8 +830,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
                 require_roles=[
                     MonsterRole.Defender,
                     MonsterRole.Skirmisher,
-                    MonsterRole.Leader,
-                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
                 ],
             ),
         )
@@ -796,6 +855,7 @@ class _QuickToss(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
+                bonus_roles={MonsterRole.Skirmisher, MonsterRole.Soldier},
                 attack_names={
                     "-",
                     weapon.JavelinAndShield,
@@ -820,7 +880,7 @@ class _ArmorMaster(PowerWithStandardScoring):
         def is_heavily_armored(b: BaseStatblock) -> bool:
             for c in b.ac_templates:
                 if c.is_heavily_armored and c.resolve(b, uses_shield=False).score > 0:
-                    return True
+                    return PlateArmor.resolve(b, uses_shield=False).score > 0
 
             return False
 
@@ -828,7 +888,11 @@ class _ArmorMaster(PowerWithStandardScoring):
             name="Armor Master",
             source="A5E SRD Heavy Armor Expertise",
             power_type=PowerType.Theme,
-            score_args=dict(require_callback=is_heavily_armored),
+            score_args=dict(
+                require_callback=is_heavily_armored,
+                require_cr=3,
+                require_roles={MonsterRole.Defender, MonsterRole.Soldier},
+            ),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -840,6 +904,9 @@ class _ArmorMaster(PowerWithStandardScoring):
         )
         return [feature]
 
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.add_ac_template(PlateArmor)
+
 
 class _ShieldMaster(PowerWithStandardScoring):
     def __init__(self):
@@ -849,7 +916,10 @@ class _ShieldMaster(PowerWithStandardScoring):
             theme="technique",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
-            score_args=dict(require_shield=True),
+            score_args=dict(
+                require_shield=True,
+                bonus_roles={MonsterRole.Defender, MonsterRole.Soldier},
+            ),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -870,7 +940,12 @@ class _PolearmMaster(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
-                attack_names={"-", weapon.Polearm}, bonus_roles=MonsterRole.Defender
+                bonus_roles={
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Bruiser,
+                },
+                attack_names={"-", weapon.Polearm},
             ),
         )
 
@@ -892,13 +967,14 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
+                bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
                 attack_names={
                     "-",
                     weapon.Polearm,
                     weapon.Greataxe,
                     weapon.Greatsword,
                     weapon.Maul,
-                }
+                },
             ),
         )
 
@@ -925,11 +1001,12 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
+                bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
                 attack_names={
                     "-",
                     weapon.Daggers,
                     weapon.Shortswords,
-                }
+                },
             ),
         )
 

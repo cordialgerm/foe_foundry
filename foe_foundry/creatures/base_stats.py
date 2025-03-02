@@ -26,7 +26,8 @@ def base_stats(
     benchmark = loader.benchmark
     expected_hp = benchmark.benchmark_hp(cr)
     expected_attacks = benchmark.benchmark_attacks(cr)
-    expected_attack_damage = benchmark.benchmark_attack_damage(cr)
+    expected_attack_damage_int = benchmark.benchmark_attack_damage(cr)
+    expected_attack_damage = expected_attack_damage_int + 0.5
     expected_hit = benchmark.benchmark_hit(cr)
     proficiency = proficiency_bonus_for_cr(cr)
 
@@ -56,7 +57,7 @@ def base_stats(
             name="Attack",
             hit=expected_hit,
             damage=Damage.from_expression(
-                f"{expected_attack_damage}", damage_type=DamageType.Bludgeoning
+                f"{expected_attack_damage_int}", damage_type=DamageType.Bludgeoning
             ),
         ),
         base_attack_damage=expected_attack_damage,

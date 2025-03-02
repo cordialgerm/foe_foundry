@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -44,7 +43,6 @@ class SneakyPower(PowerWithStandardScoring):
                 require_roles=[
                     MonsterRole.Ambusher,
                     MonsterRole.Skirmisher,
-                    MonsterRole.Leader,
                 ],
                 require_stats=Stats.DEX,
                 bonus_skills=Skills.Stealth,

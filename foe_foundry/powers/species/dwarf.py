@@ -79,7 +79,7 @@ class _HardDrink(DwarvenPower):
             source="Foe Foundry",
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 17),
-            bonus_roles=[MonsterRole.Bruiser],
+            bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

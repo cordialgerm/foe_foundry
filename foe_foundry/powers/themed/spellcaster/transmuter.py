@@ -1,15 +1,12 @@
 from typing import List
 
-import numpy as np
-
 from ....creature_types import CreatureType
 from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....spells import abjuration, conjuration, evocation, necromancy, transmutation
+from ....spells import evocation, transmutation
 from ....statblocks import BaseStatblock
-from ....utils.summoning import determine_summon_formula
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Spellcaster
+from ...attack import DamageType
+from ...power import EXTRA_HIGH_POWER, HIGH_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [transmutation.Slow, evocation.Fireball, transmutation.EnlargeReduce]
@@ -18,22 +15,31 @@ _expert = [transmutation.TimeStop, transmutation.ReverseGravity]
 
 TransmutationAdeptSpells = spell_list(_adept, uses=1)
 TransmutationMasterSpells = spell_list(
-    _adept, uses=2, exclude={abjuration.LesserRestoration}
+    _adept,
+    uses=2,
 ) + spell_list(_master, uses=1)
 TransmutationExpertSpells = (
-    spell_list(_adept, uses=3, exclude={abjuration.LesserRestoration, necromancy.RaiseDead})
+    spell_list(_adept, uses=3)
     + spell_list(_master, uses=2)
     + spell_list(_expert, uses=1)
 )
 
 
-class _TransmutationWizard(_Spellcaster):
+def is_transmuter(c: BaseStatblock) -> bool:
+    return (
+        c.creature_type == CreatureType.Humanoid
+        and c.secondary_damage_type != DamageType.Radiant
+    )
+
+
+class _TransmutationWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
                 theme="transmutation",
                 creature_class="Transmuter",
                 score_args=dict(
+                    require_callback=is_transmuter,
                     require_types=[CreatureType.Humanoid],
                 ),
             )

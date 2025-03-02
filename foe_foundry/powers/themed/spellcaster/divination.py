@@ -14,8 +14,8 @@ from ....spells import (
     transmutation,
 )
 from ....statblocks import BaseStatblock
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER
-from .base import _Spellcaster
+from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [
@@ -44,7 +44,7 @@ DivinationExpertSpells = (
 )
 
 
-class _DivinationWizard(_Spellcaster):
+class _DivinationWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
@@ -81,7 +81,7 @@ class _DivinationWizard(_Spellcaster):
         return [feature]
 
 
-def DivinationWizards() -> List[_Spellcaster]:
+def DivinationWizards() -> List[Power]:
     return [
         _DivinationWizard(
             name="Diviniation Adept",

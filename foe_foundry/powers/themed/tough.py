@@ -7,7 +7,6 @@ from num2words import num2words
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -33,7 +32,11 @@ class PhysicallyTough(PowerWithStandardScoring):
     ):
         def humanoid_is_fighter(c: BaseStatblock) -> bool:
             if c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}:
-                return c.role in {MonsterRole.Bruiser, MonsterRole.Defender}
+                return c.role in {
+                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
+                    MonsterRole.Defender,
+                }
             else:
                 return True
 
@@ -54,7 +57,11 @@ class PhysicallyTough(PowerWithStandardScoring):
                     CreatureType.Giant,
                     CreatureType.Fey,
                 ],
-                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
+                    MonsterRole.Defender,
+                ],
                 require_stats=Stats.STR,
                 bonus_size=Size.Large,
                 bonus_skills=Skills.Athletics,
@@ -87,7 +94,11 @@ class MagicallyTough(PowerWithStandardScoring):
                     CreatureType.Celestial,
                     CreatureType.Construct,
                 ],
-                bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Leader,
+                ],
                 require_cr=5,
             )
             | score_args,

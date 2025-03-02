@@ -1,12 +1,10 @@
 from datetime import datetime
-from math import ceil
 from typing import List
 
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
-from ...utils.rounding import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -56,33 +54,6 @@ class _CommandTheAttack(LeaderPower):
         return [feature]
 
 
-class _Encouragement(LeaderPower):
-    def __init__(self):
-        super().__init__(name="Encouragement", source="Foe Foundry")
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        hp = easy_multiple_of_five(
-            int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
-        )
-
-        feature = Feature(
-            name="Encouragement",
-            description=f"{stats.roleref.capitalize()} encourages another creature within 60 feet. \
-                The chosen creature gains {hp} temporary hitpoints and may repeat a saving throw against any negative condition affecting them, ending that condition on a success.",
-            action=ActionType.BonusAction,
-            uses=3,
-        )
-
-        return [feature]
-
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attributes = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Medicine, Skills.Insight
-        )
-        stats = stats.copy(attributes=new_attributes)
-        return stats
-
-
 class _Intimidate(LeaderPower):
     def __init__(self):
         super().__init__(
@@ -127,13 +98,11 @@ class _StayInFormation(LeaderPower):
 
 
 CommandTheAttack: Power = _CommandTheAttack()
-Encouragement: Power = _Encouragement()
 Intimidate: Power = _Intimidate()
 StayInFormation: Power = _StayInFormation()
 
 LeaderPowers: List[Power] = [
     CommandTheAttack,
-    Encouragement,
     Intimidate,
     StayInFormation,
 ]

@@ -1,37 +1,55 @@
 from typing import List
 
 from ....creature_types import CreatureType
-from ....damage import AttackType
+from ....damage import AttackType, DamageType
 from ....role_types import MonsterRole
-from ....spells import abjuration, divination, evocation, necromancy, transmutation
+from ....spells import abjuration, divination, evocation, necromancy
+from ....statblocks import BaseStatblock
 from ...power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 
 _adept = [
     divination.DetectEvilAndGood,
-    divination.Commune,
+    abjuration.CureWounds,
     abjuration.LesserRestoration,
-    necromancy.RaiseDead,
+    abjuration.DispelMagic,
 ]
 _master = [
-    abjuration.DispelMagic,
     abjuration.GreaterRestoration,
     abjuration.DispelEvilAndGood,
-    evocation.FlameStrike,
-    evocation.MassCureWounds,
+    abjuration.MassCureWounds,
 ]
-_expert = [evocation.BladeBarrier, necromancy.Resurrection, transmutation.ControlWeather]
+_expert = [
+    evocation.FlameStrike,
+    abjuration.Heal,
+    necromancy.Resurrection,
+]
 
-CelestialAdeptSpells = spell_list(_adept, uses=1)
+CelestialAdeptSpells = spell_list(_adept, uses=1, exclude={abjuration.CureWounds})
 CelestialMasterSpells = spell_list(
     _adept, uses=2, exclude={abjuration.LesserRestoration}
-) + spell_list(_master, uses=1)
+) + spell_list(_master, uses=1, exclude={divination.DetectEvilAndGood})
 CelestialExpertSpells = (
-    spell_list(_adept, uses=3, exclude={abjuration.LesserRestoration, necromancy.RaiseDead})
+    spell_list(
+        _adept,
+        uses=3,
+        exclude={
+            abjuration.LesserRestoration,
+            divination.DetectEvilAndGood,
+            necromancy.RaiseDead,
+        },
+    )
     + spell_list(_master, uses=2)
     + spell_list(_expert, uses=1)
 )
+
+
+def is_celestial_caster(stats: BaseStatblock) -> bool:
+    return stats.creature_type == CreatureType.Celestial or (
+        stats.creature_type == CreatureType.Humanoid
+        and stats.secondary_damage_type == DamageType.Radiant
+    )
 
 
 class _CelestialCaster(_Spellcaster):
@@ -40,12 +58,16 @@ class _CelestialCaster(_Spellcaster):
             dict(
                 theme="celestial",
                 score_args=dict(
-                    require_types=[
-                        CreatureType.Celestial,
-                    ],
+                    require_callback=is_celestial_caster,
+                    require_types=[CreatureType.Celestial, CreatureType.Humanoid],
                     require_attack_types=None,  # overwrite requirement in base class
                     bonus_attack_types=AttackType.AllSpell(),
-                    bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                    bonus_roles=[
+                        MonsterRole.Defender,
+                        MonsterRole.Leader,
+                        MonsterRole.Soldier,
+                        MonsterRole.Support,
+                    ],
                 ),
             )
             | kwargs

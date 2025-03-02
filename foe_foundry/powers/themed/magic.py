@@ -44,6 +44,7 @@ class _DispelMagic(_MagicPower):
                     MonsterRole.Defender,
                     MonsterRole.Leader,
                     MonsterRole.Controller,
+                    MonsterRole.Support,
                 ],
             ),
         )

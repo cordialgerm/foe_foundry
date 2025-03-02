@@ -41,7 +41,7 @@ class StatblockModel:
     creature_class: Optional[str]
     languages: List[str]
     senses: Senses
-    role: MonsterRole = MonsterRole.Default
+    role: MonsterRole = MonsterRole.Soldier
     attack_type: AttackType = AttackType.MeleeWeapon
     damage_resistances: Set[DamageType]
     damage_immunities: Set[DamageType]

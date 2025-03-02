@@ -93,3 +93,55 @@ LesserRestoration = Spell(
     save=None,
     description="You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
 )
+
+MassCureWounds: Spell = Spell(
+    name="Mass Cure Wounds",
+    level=5,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="60 feet",
+)
+
+CureWounds: Spell = Spell(
+    name="Cure Wounds",
+    level=1,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="Touch",
+)
+
+HealingWord: Spell = Spell(
+    name="Healing Word",
+    level=1,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.BonusAction,
+    save=None,
+    description="""A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="60 feet",
+)
+
+Heal: Spell = Spell(
+    name="Heal",
+    level=6,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A surge of positive energy washes through a creature of your choice that you can see within range. The target regains all its hit points, and it ends all effects making it blinded or deafened. This spell also ends any effects of diseases or poisons affecting the target.""",
+    range="60 feet",
+)

@@ -4,11 +4,18 @@ from ....attack_template import spell
 from ....creature_types import CreatureType
 from ....features import ActionType, Feature
 from ....role_types import MonsterRole
-from ....spells import abjuration, conjuration, enchantment, evocation, illusion, transmutation
+from ....spells import (
+    abjuration,
+    conjuration,
+    enchantment,
+    evocation,
+    illusion,
+    transmutation,
+)
 from ....statblocks import BaseStatblock
 from ....utils import easy_multiple_of_five
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER
-from .base import _Spellcaster
+from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from .base import _Wizard
 from .utils import spell_list
 
 _adept = [
@@ -35,7 +42,7 @@ AbjurationExpertSpells = (
 )
 
 
-class _AbjurationWizard(_Spellcaster):
+class _AbjurationWizard(_Wizard):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
@@ -70,7 +77,7 @@ class _AbjurationWizard(_Spellcaster):
         return [feature]
 
 
-def AbjurationWizards() -> List[_Spellcaster]:
+def AbjurationWizards() -> List[Power]:
     return [
         _AbjurationWizard(
             name="Abjuration Adept",

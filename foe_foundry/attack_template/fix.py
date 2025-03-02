@@ -63,9 +63,8 @@ def adjust_attack(
 
     # adjust the average damage based on the primary stat mod
     if adjust_average_damage:
-        average_damage = attack.damage.formula.average
         repaired_formula = DieFormula.target_value(
-            target=average_damage * stats.damage_modifier,
+            target=stats.base_attack_damage * stats.damage_modifier,
             flat_mod=stats.attributes.primary_mod,
             force_die=die,
             min_die_count=min_die_count,
@@ -75,19 +74,23 @@ def adjust_attack(
 
     if stats.cr <= 2:
         low_cr_average_damage = {
-            1 / 8: 4.5,
-            1 / 4: 5.5,
-            1 / 2: 4.5 * 2,  # two multiattacks
-            1: 6.5 * 2,  # two multiattacks
+            1 / 8: 5.5,
+            1 / 4: 6.5,
+            1 / 2: 5.5 * 2,  # two multiattacks
+            1: 7.5 * 2,  # two multiattacks
             2: 9 * 2,  # two multiattacks
         }
         average_damage_output = repaired_formula.average * stats.multiattack
         target_damage_output = low_cr_average_damage[stats.cr]
 
+        LOW_CR_DAMAGE_THRESHOLD = 1.3
+
         # if this is a low-CR creature and our damage is still too big then we should reduce it
         # this happens a lot with CR 1/2 or CR2 creatures that have big damage-die weapons
-        if average_damage_output >= 1.1 * target_damage_output:
-            new_target = target_damage_output / stats.multiattack
+        if average_damage_output >= LOW_CR_DAMAGE_THRESHOLD * target_damage_output:
+            new_target = (
+                LOW_CR_DAMAGE_THRESHOLD * target_damage_output / stats.multiattack
+            )
             repaired_formula = DieFormula.target_value(
                 target=new_target,
                 flat_mod=stats.attributes.primary_mod,
