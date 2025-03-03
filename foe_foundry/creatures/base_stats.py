@@ -22,6 +22,8 @@ def base_stats(
     name: str,
     cr: float,
     stats: list[StatScaler],
+    hp_multiplier: float = 1.0,
+    damage_multiplier: float = 1.0,
 ) -> BaseStatblock:
     benchmark = loader.benchmark
     expected_hp = benchmark.benchmark_hp(cr)
@@ -40,9 +42,12 @@ def base_stats(
 
     attributes = Attributes(proficiency=proficiency, **stat_vals)  # type: ignore
     hp = DieFormula.target_value(
-        target=expected_hp,
+        target=hp_multiplier * expected_hp,
         per_die_mod=attributes.stat_mod(Stats.CON),
     )
+
+    attack_damage = damage_multiplier * expected_attack_damage
+    attack_damage_int = int(attack_damage)
 
     return BaseStatblock(
         name=name,
@@ -57,8 +62,8 @@ def base_stats(
             name="Attack",
             hit=expected_hit,
             damage=Damage.from_expression(
-                f"{expected_attack_damage_int}", damage_type=DamageType.Bludgeoning
+                f"{attack_damage_int}", damage_type=DamageType.Bludgeoning
             ),
         ),
-        base_attack_damage=expected_attack_damage,
+        base_attack_damage=attack_damage,
     )

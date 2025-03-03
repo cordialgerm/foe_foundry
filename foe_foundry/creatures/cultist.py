@@ -168,6 +168,8 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Medium, mod=1),
             Stats.CHA.scaler(StatScaling.Primary),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(

@@ -99,6 +99,8 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Default),
             Stats.CHA.scaler(StatScaling.Medium),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(

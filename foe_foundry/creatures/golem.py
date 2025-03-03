@@ -182,7 +182,13 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
         ]
 
-    stats = base_stats(name=name, cr=cr, stats=attrs)
+    stats = base_stats(
+        name=name,
+        cr=cr,
+        stats=attrs,
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
+    )
 
     stats = stats.copy(
         creature_type=CreatureType.Construct,

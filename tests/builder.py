@@ -32,6 +32,24 @@ def display_stat_builder() -> DisplayHandle | None:
         readout=True,
         readout_format=".1f",
     )
+    hp_slider = widgets.FloatSlider(
+        value=1.0,
+        min=0.5,
+        max=2.0,
+        step=0.1,
+        description="HP",
+        readout=True,
+        readout_format=".2%",
+    )
+    damage_slider = widgets.FloatSlider(
+        value=1.0,
+        min=0.5,
+        max=2.0,
+        step=0.1,
+        description="Damage",
+        readout=True,
+        readout_format=".2%",
+    )
     output = widgets.Output()
 
     def update_variant_select():
@@ -72,6 +90,8 @@ def display_stat_builder() -> DisplayHandle | None:
         name = suggested_cr.name
         cr = suggested_cr.cr
         temperature = temperature_slider.value
+        hp_multiplier = hp_slider.value
+        damage_multiplier = damage_slider.value
 
         stats = template.generate(
             GenerationSettings(
@@ -81,6 +101,8 @@ def display_stat_builder() -> DisplayHandle | None:
                 species=species,
                 selection_settings=SelectionSettings(temperature=temperature),
                 rng=rng_factory(),
+                hp_multiplier=hp_multiplier,
+                damage_multiplier=damage_multiplier,
             )
         ).finalize()
         html = render_html_inline(stats)
@@ -109,6 +131,8 @@ def display_stat_builder() -> DisplayHandle | None:
         species_select,
         variant_select,
         cr_select,
+        hp_slider,
+        damage_slider,
         temperature_slider,
         render_button,
         output,

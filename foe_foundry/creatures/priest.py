@@ -108,6 +108,8 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Primary),
             Stats.CHA.scaler(StatScaling.Default),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(
