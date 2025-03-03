@@ -24,7 +24,9 @@ class PowerSelection:
     selected_attack_modifiers: int = 0
     selected_spellcasting_powers: int = 0
 
-    def with_new_power(self, stats: BaseStatblock, power: Power) -> PowerSelection:
+    def with_new_power(
+        self, stats: BaseStatblock, power: Power, power_level_multiplier: float = 1.0
+    ) -> PowerSelection:
         recharges = self.selected_recharges
         bonus_actions = self.selected_bonus_actions
         reactions = self.selected_reactions
@@ -50,7 +52,9 @@ class PowerSelection:
 
         new_powers = self.selected_powers.copy()
         new_powers.add(power)
-        power_level = self.selected_power_level + power.power_level
+        power_level = (
+            self.selected_power_level + power_level_multiplier * power.power_level
+        )
 
         return PowerSelection(
             selected_powers=new_powers,

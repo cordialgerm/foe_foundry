@@ -8,7 +8,7 @@ from numpy.random import Generator
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import MEDIUM_POWER, Power, PowerType
 from foe_foundry.powers.all import AllPowers
-from foe_foundry.statblocks import BaseStatblock, MonsterDials
+from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
 from .custom import CustomPowerSelection
@@ -53,18 +53,13 @@ class PowerSelector:
 
     def select_powers(self):
         if self.custom:
-            refund_power_level = 0
             for power in self.custom.force_powers():
-                self.selection = self.selection.with_new_power(self.stats, power)
+                # discount pre-built powers by 50% of their cost
+                # their cost is already partially included in the power level of the statblock template
+                self.selection = self.selection.with_new_power(
+                    self.stats, power, power_level_multiplier=0.25
+                )
                 self.stats = power.modify_stats(self.stats)
-                refund_power_level += power.power_level
-
-            # refund 75% of the power level of the forced powers
-            # their cost is already partially included in the power level of the statblock template
-            refund_power_level *= 0.75
-            self.stats = self.stats.apply_monster_dials(
-                MonsterDials(recommended_powers_modifier=refund_power_level)
-            )
 
         while not self.is_done:
             power = self.select_next()
@@ -263,6 +258,14 @@ class PowerSelector:
     ) -> np.ndarray:
         if np.all(scores < 0):
             return np.zeros_like(scores)
+
+        if self.settings.temperature == 0:
+            p = np.zeros_like(scores)
+            max_score = np.max(scores)
+            max_indices = scores == max_score
+            p[max_indices] = 1
+            p = p / np.sum(p)
+            return p
 
         p = np.exp(scores / self.settings.temperature)
         p = p / np.sum(p)

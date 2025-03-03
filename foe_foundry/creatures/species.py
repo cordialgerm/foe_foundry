@@ -1,4 +1,4 @@
-from ..attributes import Stats
+from ..attributes import Skills, Stats
 from ..damage import DamageType
 from ..powers import LOW_POWER, MEDIUM_POWER, RIBBON_POWER
 from ..role_types import MonsterRole
@@ -20,7 +20,7 @@ class _DwarfSpecies(CreatureSpecies):
         stats = stats.apply_monster_dials(
             MonsterDials(hp_multiplier=1.1, recommended_powers_modifier=-RIBBON_POWER)
         )
-        stats = stats.with_roles(additional_roles=[MonsterRole.Defender])
+        stats = stats.with_roles(additional_roles=[MonsterRole.Soldier])
         stats = stats.copy(name=f"Dwarf {stats.name}", creature_subtype="Dwarf")
         return stats
 
@@ -66,8 +66,50 @@ class _HumanSpecies(CreatureSpecies):
         return stats
 
 
+class _HalflingSpecies(CreatureSpecies):
+    def __init__(self):
+        super().__init__(
+            name="Halfling",
+            description="Halflings are a small, nimble species known for their luck and stealth",
+        )
+
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.apply_monster_dials(
+            MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
+        )
+        stats = stats.copy(name=f"Halfling {stats.name}", creature_subtype="Halfling")
+        stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
+        stats = stats.scale(
+            {Stats.DEX: Stats.DEX.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
+        )
+        stats = stats.with_roles(additional_roles=[MonsterRole.Skirmisher])
+        return stats
+
+
+class _GnomeSpecies(CreatureSpecies):
+    def __init__(self):
+        super().__init__(
+            name="Gnome",
+            description="Gnomes are a small, clever species known for their intelligence and curiosity",
+        )
+
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.apply_monster_dials(
+            MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
+        )
+        stats = stats.copy(name=f"Gnome {stats.name}", creature_subtype="Gnome")
+        stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
+        stats = stats.scale(
+            {Stats.INT: Stats.INT.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
+        )
+        stats = stats.with_roles(additional_roles=[MonsterRole.Controller])
+        return stats
+
+
 DwarfSpecies: CreatureSpecies = _DwarfSpecies()
 OrcSpecies: CreatureSpecies = _OrcSpecies()
 HumanSpecies: CreatureSpecies = _HumanSpecies()
+HalflingSpecies: CreatureSpecies = _HalflingSpecies()
+GnomeSpecies: CreatureSpecies = _GnomeSpecies()
 
-AllSpecies = [DwarfSpecies, HumanSpecies, OrcSpecies]
+AllSpecies = [DwarfSpecies, HumanSpecies, OrcSpecies, GnomeSpecies, HalflingSpecies]

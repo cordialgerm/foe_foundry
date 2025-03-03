@@ -62,14 +62,18 @@ class _CustomWeights(CustomPowerSelection):
             cruel.BrutalCritical,
             technique.PushingAttack,
             technique.DisarmingAttack,
+            technique.ProneAttack,
             reckless.Charger,
             reckless.Reckless,
             reckless.BloodiedRage,
             reckless.Toss,
             reckless.RelentlessEndurance,
         ]
+
+        if self.variant is BrawlerVariant and p == technique.ExpertBrawler:
+            return CustomPowerWeight(4.0, ignore_usual_requirements=True)
         if p in powers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
+            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
         else:
             return CustomPowerWeight(0.75)
 

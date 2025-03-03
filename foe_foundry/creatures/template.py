@@ -60,7 +60,7 @@ class GenerationSettings:
     creature_name: str
     cr: float
     variant: CreatureVariant
-    species: CreatureSpecies | None
+    species: CreatureSpecies | None = None
     rng: np.random.Generator
 
     selection_settings: SelectionSettings = field(default_factory=SelectionSettings)

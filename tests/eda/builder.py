@@ -4,7 +4,12 @@ import ipywidgets as widgets
 import numpy as np
 from IPython.display import DisplayHandle, display, display_html
 
-from foe_foundry.creatures import AllTemplates, CreatureTemplate, GenerationSettings
+from foe_foundry.creatures import (
+    AllTemplates,
+    CreatureTemplate,
+    GenerationSettings,
+    SelectionSettings,
+)
 from foe_foundry.templates import render_html_inline
 
 
@@ -18,6 +23,15 @@ def display_stat_builder() -> DisplayHandle | None:
     cr_select = widgets.Dropdown(description="CR:")
     species_select = widgets.Dropdown(description="Species:")
     render_button = widgets.Button(description="Render")
+    temperature_slider = widgets.FloatSlider(
+        value=1.0,
+        min=0,
+        max=5,
+        step=0.1,
+        description="Temperature",
+        readout=True,
+        readout_format=".1f",
+    )
     output = widgets.Output()
 
     def update_variant_select():
@@ -57,6 +71,7 @@ def display_stat_builder() -> DisplayHandle | None:
         )
         name = suggested_cr.name
         cr = suggested_cr.cr
+        temperature = temperature_slider.value
 
         stats = template.generate(
             GenerationSettings(
@@ -64,6 +79,7 @@ def display_stat_builder() -> DisplayHandle | None:
                 variant=variant,
                 cr=cr,
                 species=species,
+                selection_settings=SelectionSettings(temperature=temperature),
                 rng=rng_factory(),
             )
         ).finalize()
@@ -93,6 +109,7 @@ def display_stat_builder() -> DisplayHandle | None:
         species_select,
         variant_select,
         cr_select,
+        temperature_slider,
         render_button,
         output,
     )

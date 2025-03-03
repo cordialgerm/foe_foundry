@@ -10,3 +10,4 @@ from .template import (
 from ._all import AllTemplates  # noqa
 from .species import AllSpecies  # noqa
 from .species import HumanSpecies, OrcSpecies, DwarfSpecies  # noqa
+from ..powers.selection import SelectionSettings  # noqa

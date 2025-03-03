@@ -1,4 +1,5 @@
 from foe_foundry.powers.power import Power
+from foe_foundry.powers.selection.custom import CustomPowerWeight
 
 from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
@@ -6,7 +7,14 @@ from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, select_powers
 from ..powers.legendary import make_legendary
+from ..powers.roles.ambusher import DeadlyAmbusher, StealthySneak
+from ..powers.roles.artillery import QuickDraw
 from ..powers.roles.skirmisher import CunningAction
+from ..powers.themed.charm import CharmingWords
+from ..powers.themed.fast import NimbleReaction
+from ..powers.themed.gadget import GadgetPowers, PotionOfHealing, SmokeBomb
+from ..powers.themed.poison import PoisonDart, WeakeningPoison
+from ..powers.themed.technique import PoisonedAttack
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -47,6 +55,31 @@ SpyMasterVariant = CreatureVariant(
 class _CustomPowers(CustomPowerSelection):
     def force_powers(self) -> list[Power]:
         return [CunningAction]
+
+    def custom_weight(self, power: Power) -> CustomPowerWeight:
+        suppress_powers = set(GadgetPowers)
+        suppress_powers.discard(SmokeBomb)
+        suppress_powers.discard(PotionOfHealing)
+
+        desirable_powers = [
+            StealthySneak,
+            DeadlyAmbusher,
+            PoisonDart,
+            PoisonedAttack,
+            CharmingWords,
+            QuickDraw,
+            NimbleReaction,
+            SmokeBomb,
+            PotionOfHealing,
+            WeakeningPoison,
+        ]
+
+        if power in suppress_powers:
+            return CustomPowerWeight(weight=-1)
+        elif power in desirable_powers:
+            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
 
 def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:

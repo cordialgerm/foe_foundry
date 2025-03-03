@@ -178,8 +178,14 @@ class _Toss(RecklessPower):
         super().__init__(name="Toss", source="Foe Foundry", bonus_size=Size.Large)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        size = stats.size.decrement()
-        dmg = stats.target_value(0.7, force_die=Die.d6)
+        if stats.size <= Size.Medium:
+            size = stats.size
+        else:
+            size = stats.size.decrement()
+
+        dmg = stats.target_value(
+            1.5 if stats.multiattack >= 2 else 0.75, force_die=Die.d6
+        )
         distance = easy_multiple_of_five(3 * stats.cr, min_val=10, max_val=30)
         dc = stats.difficulty_class
 

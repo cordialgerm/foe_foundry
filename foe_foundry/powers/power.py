@@ -13,8 +13,8 @@ from .scoring import score as standard_score
 RIBBON_POWER = 0.25
 LOW_POWER = 0.5
 MEDIUM_POWER = 1
-HIGH_POWER = 1.5
-EXTRA_HIGH_POWER = 2
+HIGH_POWER = 1.25
+EXTRA_HIGH_POWER = 1.5
 
 
 class Power(ABC):
