@@ -4,7 +4,7 @@ import ipywidgets as widgets
 import numpy as np
 from IPython.display import DisplayHandle, display, display_html
 
-from foe_foundry.creatures import AllTemplates, CreatureTemplate
+from foe_foundry.creatures import AllTemplates, CreatureTemplate, GenerationSettings
 from foe_foundry.templates import render_html_inline
 
 
@@ -59,11 +59,13 @@ def display_stat_builder() -> DisplayHandle | None:
         cr = suggested_cr.cr
 
         stats = template.generate(
-            name=name,
-            variant_name=variant.name,
-            cr=cr,
-            species_name=species.name if species else None,
-            rng_factory=rng_factory,
+            GenerationSettings(
+                creature_name=name,
+                variant=variant,
+                cr=cr,
+                species=species,
+                rng=rng_factory(),
+            )
         ).finalize()
         html = render_html_inline(stats)
 
@@ -84,6 +86,7 @@ def display_stat_builder() -> DisplayHandle | None:
     update_variant_select()
     update_species_select()
     update_cr_select()
+    output.clear_output()
 
     return display(
         template_select,

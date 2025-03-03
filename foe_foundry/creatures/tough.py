@@ -1,5 +1,3 @@
-import numpy as np
-
 from ..ac_templates import LeatherArmor, SplintArmor
 from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
@@ -15,11 +13,11 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
 from .base_stats import base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -79,13 +77,13 @@ class _CustomWeights(CustomPowerSelection):
         return [PackTactics]
 
 
-def generate_tough(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=name,
@@ -165,7 +163,7 @@ def generate_tough(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
+        settings=settings.selection_settings,
         custom=_CustomWeights(stats, variant),
     )
     features += power_features

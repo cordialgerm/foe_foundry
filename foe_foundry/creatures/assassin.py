@@ -1,5 +1,3 @@
-import numpy as np
-
 from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
@@ -19,11 +17,11 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -61,13 +59,13 @@ AssassinVariant = CreatureVariant(
 )
 
 
-def generate_assassin(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=variant.name,
@@ -150,7 +148,7 @@ def generate_assassin(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
+        settings=settings.selection_settings,
         custom=_CustomPowers(),
     )
     features += power_features

@@ -1,5 +1,3 @@
-import numpy as np
-
 from foe_foundry.powers.power import Power
 
 from ..ac_templates import StuddedLeatherArmor
@@ -15,11 +13,11 @@ from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from ..utils.interpolate import interpolate_by_cr
 from .base_stats import base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -51,13 +49,13 @@ class _CustomPowers(CustomPowerSelection):
         return [CunningAction]
 
 
-def generate_spy(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=variant.name,
@@ -149,7 +147,7 @@ def generate_spy(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
+        settings=settings.selection_settings,
         custom=_CustomPowers(),
     )
     features += power_features

@@ -14,6 +14,7 @@ from foe_foundry.utils.rng import RngFactory, rng_instance
 from .custom import CustomPowerSelection
 from .score import SelectionScore
 from .selection import PowerSelection
+from .settings import SelectionSettings
 from .targets import SelectionTargets
 
 Filter: TypeAlias = Callable[[Feature], bool]
@@ -26,10 +27,12 @@ class PowerSelector:
         rng: Generator,
         stats: BaseStatblock,
         custom: CustomPowerSelection | None = None,
+        settings: SelectionSettings | None = None,
     ):
         self.selection = PowerSelection()
         self.targets = targets
         self.rng = rng
+        self.settings = settings or SelectionSettings()
         self.iteration = 0
         self.custom = custom
         self.stats = stats.copy()
@@ -139,9 +142,9 @@ class PowerSelector:
         adjusted_scores = np.array(adjusted_scores)
 
         return (
-            _probabilities(raw_scores),
-            _probabilities(weighted_scores),
-            _probabilities(adjusted_scores),
+            self._probabilities(raw_scores),
+            self._probabilities(weighted_scores),
+            self._probabilities(adjusted_scores),
         )
 
     def feasibility_multiplier(self, power: Power) -> float:
@@ -254,35 +257,43 @@ class PowerSelector:
             return False
         return True
 
+    def _probabilities(
+        self,
+        scores: np.ndarray,
+    ) -> np.ndarray:
+        if np.all(scores < 0):
+            return np.zeros_like(scores)
 
-def _probabilities(
-    scores: np.ndarray,
-    temperature: float = 1.0,
-    top_k: int = 50,
-) -> np.ndarray:
-    if np.all(scores < 0):
-        return np.zeros_like(scores)
+        p = np.exp(scores / self.settings.temperature)
+        p = p / np.sum(p)
 
-    p = np.exp(scores / temperature)
-    p = p / np.sum(p)
+        sorted_indexes = np.argsort(scores)[::-1]
+        top_k = min(self.settings.top_k, len(scores))
+        keep_indexes = sorted_indexes[:top_k]
 
-    new_p = np.copy(p)
-    # new_p[np.argsort(p)[:-top_k]] = 0
-    # new_p = new_p / np.sum(new_p)
-    return new_p
+        new_p = np.zeros_like(p)
+        new_p[keep_indexes] = p[keep_indexes]
+        new_p = new_p / np.sum(new_p)
+
+        return new_p
 
 
 def select_powers(
     stats: BaseStatblock,
     rng: RngFactory | Generator,
-    power_level: float,
-    retries: int = 3,
+    settings: SelectionSettings | None = None,
     custom: CustomPowerSelection | None = None,
 ) -> Tuple[BaseStatblock, List[Feature], PowerSelector]:
+    if settings is None:
+        settings = SelectionSettings()
+
     rng = rng_instance(rng)
 
+    power_level_target = settings.power_multiplier * stats.recommended_powers
+    power_level_max = power_level_target + 0.5
+
     targets = SelectionTargets(
-        power_level_target=power_level, power_level_max=power_level + 0.5
+        power_level_target=power_level_target, power_level_max=power_level_max
     )
 
     all_results: List[BaseStatblock] = []
@@ -291,8 +302,10 @@ def select_powers(
     selectors = []
 
     # try a couple of times and choose the best result
-    for _ in range(retries):
-        selector = PowerSelector(targets=targets, rng=rng, stats=stats, custom=custom)
+    for _ in range(settings.retries):
+        selector = PowerSelector(
+            targets=targets, rng=rng, stats=stats, custom=custom, settings=settings
+        )
         selector.select_powers()
         selectors.append(selector)
         all_results.append(selector.stats)

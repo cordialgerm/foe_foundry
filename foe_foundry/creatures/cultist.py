@@ -1,5 +1,3 @@
-import numpy as np
-
 from ..ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
 from ..attack_template import natural, spell, weapon
 from ..creature_types import CreatureType
@@ -40,9 +38,9 @@ from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -153,13 +151,12 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(0.5)
 
 
-def generate_cultist(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    rng: np.random.Generator,
-    species: CreatureSpecies | None = None,
-) -> StatsBeingGenerated:
+def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=name,
@@ -267,7 +264,7 @@ def generate_cultist(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
+        settings=settings.selection_settings,
         custom=_CustomWeights(stats, variant),
     )
     features += power_features

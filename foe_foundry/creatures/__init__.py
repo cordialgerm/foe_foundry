@@ -5,6 +5,7 @@ from .template import (
     CreatureSpecies,  # noqa
     CreatureVariant,  # noqa
     SuggestedCr,  # noqa
+    GenerationSettings,  # noqa
 )  # noqa
 from ._all import AllTemplates  # noqa
 from .species import AllSpecies  # noqa

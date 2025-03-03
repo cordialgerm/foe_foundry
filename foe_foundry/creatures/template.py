@@ -1,13 +1,12 @@
 import hashlib
-from dataclasses import dataclass
-from typing import Callable, Iterable, TypeAlias, cast
+from dataclasses import dataclass, field
+from typing import Callable, Iterable, TypeAlias
 
 import numpy as np
 
 from ..features import Feature
-from ..powers.selection import PowerSelector
+from ..powers.selection import PowerSelector, SelectionSettings
 from ..statblocks import BaseStatblock, Statblock
-from ..utils.rng import RngFactory
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -20,9 +19,6 @@ class StatsBeingGenerated:
         return Statblock.from_base_stats(
             name=self.stats.name, stats=self.stats, features=self.features
         )
-
-
-GenerateCallback: TypeAlias = Callable[..., StatsBeingGenerated]
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -59,6 +55,31 @@ class CreatureSpecies:
         return hash(self.name)
 
 
+@dataclass(kw_only=True, frozen=True)
+class GenerationSettings:
+    creature_name: str
+    cr: float
+    variant: CreatureVariant
+    species: CreatureSpecies | None
+    rng: np.random.Generator
+
+    selection_settings: SelectionSettings = field(default_factory=SelectionSettings)
+    hp_multiplier: float = 1.0
+    damage_multiplier: float = 1.0
+
+    @property
+    def id(self) -> str:
+        if self.species is not None:
+            n = f"{self.creature_name}-{self.species.name}"
+        else:
+            n = self.creature_name
+
+        return n.lower().replace(" ", "-")
+
+
+GenerateCallback: TypeAlias = Callable[[GenerationSettings], StatsBeingGenerated]
+
+
 @dataclass(kw_only=True)
 class CreatureTemplate:
     name: str
@@ -90,30 +111,15 @@ class CreatureTemplate:
     def __hash__(self) -> int:
         return hash(self.name)
 
-    def generate(
-        self,
-        name: str,
-        cr: float,
-        rng_factory: RngFactory,
-        variant_name: str | None = None,
-        species_name: str | None = None,
-    ) -> StatsBeingGenerated:
-        rng = rng_factory()
+    def generate(self, settings: GenerationSettings) -> StatsBeingGenerated:
+        return self.callback(settings)
 
-        if variant_name is None:
-            variant_name = cast(str, rng.choice(list(self._variant_map.keys())))
+    def generate_all(self, **kwargs) -> Iterable[StatsBeingGenerated]:
+        for settings in self.generate_settings(**kwargs):
+            yield self.generate(settings)
 
-        if species_name is None and self.n_species > 0:
-            species_name = cast(str, rng.choice(list(self._species_map.keys())))
-
-        variant = self._variant_map[variant_name]
-        species = self._species_map[species_name] if species_name else None
-
-        return self.callback(
-            name=name, variant=variant, species=species, rng=rng, cr=cr
-        )
-
-    def generate_all(self) -> Iterable[StatsBeingGenerated]:
+    def generate_settings(self, **kwargs) -> list[GenerationSettings]:
+        options = []
         for variant in self.variants:
             for suggested_cr in variant.suggested_crs:
                 for species in self.species if self.n_species > 0 else [None]:
@@ -128,25 +134,17 @@ class CreatureTemplate:
                         random_state = int.from_bytes(bytes, byteorder="little")
                         return np.random.default_rng(seed=random_state)
 
-                    yield self.generate(
-                        name=suggested_cr.name,
-                        cr=suggested_cr.cr,
-                        rng_factory=rng_factory,
-                        variant_name=variant.name,
-                        species_name=species.name if species is not None else None,
+                    args: dict = (
+                        dict(
+                            creature_name=suggested_cr.name,
+                            cr=suggested_cr.cr,
+                            variant=variant,
+                            species=species,
+                            selection_settings=SelectionSettings(),
+                            rng=rng_factory(),
+                        )
+                        | kwargs
                     )
 
-    def generate_options(self) -> list[dict]:
-        options = []
-        for variant in self.variants:
-            for suggested_cr in variant.suggested_crs:
-                for species in self.species if self.n_species > 0 else [None]:
-                    options.append(
-                        dict(
-                            name=suggested_cr.name,
-                            cr=suggested_cr.cr,
-                            variant_name=variant.name,
-                            species_name=species.name if species else None,
-                        )
-                    )
+                    options.append(GenerationSettings(**args))
         return options
