@@ -39,9 +39,9 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
         elif p in SneakyPowers:
             # guards aren't usually sneaky, so downrank
-            return CustomPowerWeight(weight=0.5, ignore_usual_requirements=False)
+            return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
         else:
-            return CustomPowerWeight(weight=1, ignore_usual_requirements=False)
+            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
 
 GuardVariant = CreatureVariant(

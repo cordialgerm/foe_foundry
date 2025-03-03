@@ -113,11 +113,11 @@ class _PoisonDart(PoisonPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.75 if stats.multiattack > 2 else 1.1)
         dc = stats.difficulty_class
-        weakened = conditions.Weakened()
+        weakened = conditions.Weakened(save_end_of_turn=False)
 
         feature = Feature(
             name="Poison Darts",
-            description=f"{stats.selfref} throws poisoned darts at a target within 30 feet. The target must make a DC {dc} Dexterity save. On a failure, the target takes {dmg.description} poison damage and is **Poisoned** (save ends). While poisoned in this way, the target is {weakened.caption}. {weakened.description_3rd}",
+            description=f"{stats.selfref.capitalize()} throws poisoned darts at a target within 30 feet. The target must make a DC {dc} Dexterity save. On a failure, the target takes {dmg.description} poison damage and is **Poisoned** (save ends). While poisoned in this way, the target is {weakened.caption}. {weakened.description_3rd}",
             action=ActionType.Action,
             recharge=5,
             replaces_multiattack=2,

@@ -133,7 +133,7 @@ class _BoneSpear(SkeletalPower):
             name="Bone Harpoon",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.title()} hurls a bone spear at a target within 60 feet. The target must make a DC {stats.difficulty_class_easy} Dexterity saving throw. On a failure, the target takes {damage} piercing damage and is pushed up to 10 feet away.",
+            description=f"{stats.selfref.title()} hurls a bone spear at a target within 60 feet. The target must make a DC {stats.difficulty_class_easy} Dexterity saving throw. On a failure, the target takes {damage.description} piercing damage and is pushed up to 10 feet away.",
         )
 
         return [feature]
@@ -158,7 +158,7 @@ class _BoneStorm(SkeletalPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
-            description=f"{stats.selfref.title()} creates a storm of razor-sharp bone shards in a 15-foot cone. Each creature in the area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage} piercing damage on a failed save, or half as much damage on a successful one.",
+            description=f"{stats.selfref.title()} creates a storm of razor-sharp bone shards in a 15-foot cone. Each creature in the area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage.description} piercing damage on a failed save, or half as much damage on a successful one.",
         )
 
         return [feature]

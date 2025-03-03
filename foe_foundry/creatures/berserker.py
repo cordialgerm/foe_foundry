@@ -7,7 +7,6 @@ from ..powers.legendary import make_legendary
 from ..powers.themed.anti_magic import Spellbreaker
 from ..powers.themed.anti_ranged import DeflectMissile
 from ..powers.themed.bestial import RetributiveStrike
-from ..powers.themed.classes import Barbarian
 from ..powers.themed.cruel import BloodiedFrenzy, BrutalCritical
 from ..powers.themed.fearsome import FearsomeRoar
 from ..powers.themed.reckless import RecklessPowers
@@ -33,7 +32,6 @@ class _CustomPowers(CustomPowerSelection):
             Spellbreaker,
             DeflectMissile,
             RetributiveStrike,
-            Barbarian,
             BrutalCritical,
             BloodiedFrenzy,
             FearsomeRoar,

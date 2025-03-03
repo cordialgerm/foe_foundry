@@ -20,7 +20,7 @@ class _HeavyArmor(ArmorClassTemplate):
         return True
 
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
-        quality_level = max(stats.ac_boost, 0)
+        quality_level = min(max(stats.ac_boost, 0), 3)
         ac = self._base_ac + (2 if uses_shield else 0) + quality_level
 
         if quality_level > 0:
