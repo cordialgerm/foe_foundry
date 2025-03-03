@@ -7,6 +7,7 @@ from ..damage import AttackType, DamageType
 from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
+from ..utils import name_to_key
 from .power_type import PowerType
 from .scoring import score as standard_score
 
@@ -59,7 +60,11 @@ class Power(ABC):
 
     @property
     def key(self) -> str:
-        return Power.name_to_key(self.name)
+        return name_to_key(self.name)
+
+    @property
+    def theme_key(self) -> str | None:
+        return name_to_key(self.theme) if self.theme is not None else None
 
     @abstractmethod
     def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
@@ -80,10 +85,6 @@ class Power(ABC):
 
     def __eq__(self, other: Any) -> bool:
         return isinstance(other, Power) and self.key == other.key
-
-    @staticmethod
-    def name_to_key(name: str) -> str:
-        return name.lower().replace(" ", "-")
 
 
 class PowerWithStandardScoring(Power):

@@ -111,7 +111,16 @@ class PowerSelector:
                 custom_multiplier = custom_weight.weight
                 relaxed_mode = custom_weight.ignore_usual_requirements
 
+            boost = self.settings.get_boost(power)
+
             raw_score = power.score(self.stats, relaxed_mode=relaxed_mode)
+            if raw_score <= 0 and boost > 0:
+                raw_score = boost
+            elif raw_score > 0 and boost < 0:
+                raw_score = boost
+            elif raw_score > 0 and boost > 0:
+                raw_score = raw_score + boost
+
             if raw_score <= 0:
                 raw_score = -20
                 weighted_score = -20

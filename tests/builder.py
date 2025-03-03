@@ -7,8 +7,10 @@ from IPython.display import DisplayHandle, display, display_html
 from foe_foundry.creatures import (
     AllTemplates,
     CreatureTemplate,
+    CreatureVariant,
     GenerationSettings,
     SelectionSettings,
+    SuggestedCr,
 )
 from foe_foundry.templates import render_html_inline
 
@@ -20,7 +22,6 @@ def display_stat_builder() -> DisplayHandle | None:
         description="Template:",
     )
     variant_select = widgets.Dropdown(description="Variants:")
-    cr_select = widgets.Dropdown(description="CR:")
     species_select = widgets.Dropdown(description="Species:")
     render_button = widgets.Button(description="Render")
     temperature_slider = widgets.FloatSlider(
@@ -52,10 +53,20 @@ def display_stat_builder() -> DisplayHandle | None:
     )
     output = widgets.Output()
 
+    variant_lookup: dict[str, tuple[CreatureVariant, SuggestedCr]] = {}
+    variant_options: list[tuple[str, str]] = []
+
     def update_variant_select():
         template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
-        variants = template.variants
-        variant_select.options = [v.name for v in variants]
+        variant_lookup.clear()
+        variant_options.clear()
+        for v in template.variants:
+            for cr in v.suggested_crs:
+                key = f"{v.key}-{cr.key}"
+                variant_lookup[key] = (v, cr)
+                variant_options.append((f"{cr.name} (CR {cr.cr})", key))
+
+        variant_select.options = variant_options
         variant_select.index = 0
 
     def update_species_select():
@@ -63,14 +74,6 @@ def display_stat_builder() -> DisplayHandle | None:
         species_select.options = [s.name for s in template.species]
         if len(species_select.options):
             species_select.index = 0
-
-    def update_cr_select():
-        template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
-        variant = template.variants[cast(int, variant_select.index)]
-        cr_select.options = [
-            (f"{cr.name} (CR {cr.cr})", cr.name) for cr in variant.suggested_crs
-        ]
-        cr_select.index = 0
 
     def rng_factory():
         return np.random.default_rng()
@@ -80,8 +83,11 @@ def display_stat_builder() -> DisplayHandle | None:
 
         template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
 
-        variant = template.variants[cast(int, variant_select.index)]
-        suggested_cr = variant.suggested_crs[cast(int, cr_select.index)]
+        template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
+        variant_index = cast(int, variant_select.index)
+        _, variant_key = variant_options[variant_index]
+        variant, suggested_cr = variant_lookup[variant_key]
+
         species = (
             template.species[cast(int, species_select.index)]
             if len(template.species)
@@ -114,23 +120,17 @@ def display_stat_builder() -> DisplayHandle | None:
         update_variant_select()
         update_species_select()
 
-    def on_variant_changed(change):
-        update_cr_select()
-
     render_button.on_click(on_button_clicked)
     template_select.observe(on_template_changed, names="value")
-    variant_select.observe(on_variant_changed, names="value")
 
     update_variant_select()
     update_species_select()
-    update_cr_select()
     output.clear_output()
 
     return display(
         template_select,
         species_select,
         variant_select,
-        cr_select,
         hp_slider,
         damage_slider,
         temperature_slider,

@@ -7,6 +7,7 @@ import numpy as np
 from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
 from ..statblocks import BaseStatblock, Statblock
+from ..utils import name_to_key
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -32,6 +33,10 @@ class SuggestedCr:
     def __hash__(self) -> int:
         return hash(self.name)
 
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
+
 
 @dataclass(kw_only=True, frozen=True)
 class CreatureVariant:
@@ -41,6 +46,10 @@ class CreatureVariant:
 
     def __hash__(self) -> int:
         return hash(self.name)
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -71,13 +80,17 @@ class GenerationSettings:
     theme_boosts: dict[str, float] = field(default_factory=dict)
 
     @property
-    def id(self) -> str:
+    def key(self) -> str:
         if self.species is not None:
             n = f"{self.creature_name}-{self.species.name}"
         else:
             n = self.creature_name
 
         return n.lower().replace(" ", "-")
+
+    @property
+    def id(self) -> str:
+        return self.key
 
 
 GenerateCallback: TypeAlias = Callable[[GenerationSettings], StatsBeingGenerated]
@@ -110,6 +123,10 @@ class CreatureTemplate:
                     other_creatures.update(s.other_creatures.keys())
         self.srd_ceatures = sorted(list(srd_creatures))
         self.other_creatures = sorted(list(other_creatures))
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
 
     def __hash__(self) -> int:
         return hash(self.name)

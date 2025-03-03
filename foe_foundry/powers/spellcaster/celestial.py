@@ -56,7 +56,7 @@ class _CelestialCaster(_Spellcaster):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
-                theme="celestial",
+                theme="Celestial",
                 score_args=dict(
                     require_callback=is_celestial_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],
