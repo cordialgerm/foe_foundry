@@ -1,10 +1,8 @@
-import numpy as np
-
 from ..ac_templates import NaturalPlating, Unarmored
 from ..attack_template import natural, spell
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature_type import construct
 from ..powers.creature_type.construct import ImmutableForm
 from ..powers.roles import defender
@@ -18,9 +16,9 @@ from ..skills import Stats, StatScaling
 from ..statblocks import BaseStatblock, MonsterDials
 from .base_stats import base_stats
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -87,12 +85,12 @@ ShieldGuardianVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         # powers that any Golem can have
         boost_powers = [
             construct.ConstructedGuardian,
@@ -147,14 +145,22 @@ class _CustomWeights:
         else:
             return CustomPowerWeight(0.25, ignore_usual_requirements=False)
 
+    def force_powers(self) -> list[Power]:
+        default_powers = [ImmutableForm, MagicResistance]
+        if self.variant is ShieldGuardianVariant:
+            default_powers += [construct.BoundProtector]
+        elif self.variant in {FleshVariant, ClayVariant}:
+            default_powers += [BloodiedRage]
 
-def generate_golem(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    rng: np.random.Generator,
-    species: CreatureSpecies | None = None,
-) -> StatsBeingGenerated:
+        return default_powers
+
+
+def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    rng = settings.rng
+
     # STATS
 
     if variant is not FleshVariant:
@@ -270,35 +276,12 @@ def generate_golem(
     # POWERS
     features = []
 
-    # construct.BoundProtector,
-    default_powers = [ImmutableForm, MagicResistance]
-    if variant is ShieldGuardianVariant:
-        default_powers += [construct.BoundProtector]
-    elif variant in {FleshVariant, ClayVariant}:
-        default_powers += [BloodiedRage]
-
-    for power in default_powers:
-        stats = power.modify_stats(stats)
-        features += power.generate_features(stats)
-
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=-1
-            / 4
-            * sum(p.power_level for p in default_powers)
-        )
-    )
-
-    def custom_filter(p: Power) -> bool:
-        return p not in default_powers
-
     # ADDITIONAL POWERS
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
-        custom_filter=custom_filter,
+        settings=settings.selection_settings,
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

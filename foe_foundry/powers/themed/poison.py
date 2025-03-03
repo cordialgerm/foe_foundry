@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -30,11 +29,13 @@ class PoisonPower(PowerWithStandardScoring):
             theme="poison",
             score_args=dict(
                 require_types=[
+                    CreatureType.Humanoid,
+                    CreatureType.Beast,
                     CreatureType.Plant,
                     CreatureType.Aberration,
                     CreatureType.Monstrosity,
                 ],
-                bonus_damage=DamageType.Poison,
+                require_damage=DamageType.Poison,
                 attack_names=[
                     "-",
                     weapon.Daggers,
@@ -100,7 +101,55 @@ class _ToxicPoison(PoisonPower):
         return [feature1]
 
 
+class _PoisonDart(PoisonPower):
+    def __init__(self):
+        super().__init__(
+            name="Poison Dart",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 2),
+            require_types=[CreatureType.Humanoid, CreatureType.Fey],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dmg = stats.target_value(1.75 if stats.multiattack > 2 else 1.1)
+        dc = stats.difficulty_class
+        weakened = conditions.Weakened(save_end_of_turn=False)
+
+        feature = Feature(
+            name="Poison Darts",
+            description=f"{stats.selfref.capitalize()} throws poisoned darts at a target within 30 feet. The target must make a DC {dc} Dexterity save. On a failure, the target takes {dmg.description} poison damage and is **Poisoned** (save ends). While poisoned in this way, the target is {weakened.caption}. {weakened.description_3rd}",
+            action=ActionType.Action,
+            recharge=5,
+            replaces_multiattack=2,
+        )
+
+        return [feature]
+
+
+class _WeakeningPoison(PoisonPower):
+    def __init__(self):
+        super().__init__(
+            name="Weakening Poison",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 2),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        weakened = conditions.Weakened(save_end_of_turn=False)
+        feature = Feature(
+            name="Weakeneing Poison",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {weakened.caption} until the end of its next turn. {weakened.description_3rd}",
+        )
+        return [feature]
+
+
 PoisonousBurst: Power = _PoisonousBurst()
 ToxicPoison: Power = _ToxicPoison()
+PoisonDart: Power = _PoisonDart()
+WeakeningPoison: Power = _WeakeningPoison()
 
-PoisonPowers: List[Power] = [PoisonousBurst, ToxicPoison]
+PoisonPowers: List[Power] = [PoisonousBurst, ToxicPoison, PoisonDart, WeakeningPoison]

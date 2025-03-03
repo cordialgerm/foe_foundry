@@ -1,10 +1,8 @@
-import numpy as np
-
 from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.roles.skirmisher import CunningAction
 from ..powers.themed.anti_magic import SealOfSilence
 from ..powers.themed.anti_ranged import HardToPinDown
@@ -19,31 +17,35 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
 
 
-def custom_power_weights(p: Power) -> CustomPowerWeight:
-    custom_powers = [
-        BrutalCritical,
-        IdentifyWeaknes,
-        SealOfSilence,
-        HardToPinDown,
-        Evasion,
-        NimbleReaction,
-        DreadGaze,
-        PoisonedAttack,
-    ] + GrenadePowers
-    if p in custom_powers:
-        return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-    else:
-        return CustomPowerWeight(1.0, ignore_usual_requirements=False)
+class _CustomPowers(CustomPowerSelection):
+    def custom_weight(self, power: Power) -> CustomPowerWeight:
+        custom_powers = [
+            BrutalCritical,
+            IdentifyWeaknes,
+            SealOfSilence,
+            HardToPinDown,
+            Evasion,
+            NimbleReaction,
+            DreadGaze,
+            PoisonedAttack,
+        ] + GrenadePowers
+        if power in custom_powers:
+            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(1.0, ignore_usual_requirements=False)
+
+    def force_powers(self) -> list[Power]:
+        return [CunningAction]
 
 
 AssassinVariant = CreatureVariant(
@@ -57,13 +59,13 @@ AssassinVariant = CreatureVariant(
 )
 
 
-def generate_assassin(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=variant.name,
@@ -140,27 +142,14 @@ def generate_assassin(
     # POWERS
     features = []
 
-    # Assassins always have Cunning Action power
-    features += CunningAction.generate_features(stats)
-    stats = CunningAction.modify_stats(stats)
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=-CunningAction.power_level / 2
-        )  # discount Cunning Action cost somewhat to account for it being mandatory
-    )
-
     # SPECIES CUSTOMIZATIONS
     stats = species.alter_base_stats(stats)
-
-    # ADDITIONAL POWERS
-    def power_filter(p):
-        return p is not CunningAction
 
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_filter=power_filter,
+        settings=settings.selection_settings,
+        custom=_CustomPowers(),
     )
     features += power_features
 

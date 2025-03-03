@@ -1,21 +1,24 @@
-import numpy as np
+from foe_foundry.powers.power import Power
+from foe_foundry.powers.selection.custom import CustomPowerWeight
 
 from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import select_powers
+from ..powers import CustomPowerSelection, select_powers
 from ..powers.legendary import make_legendary
+from ..powers.roles import artillery, leader
+from ..powers.themed import gadget, organized, sneaky, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
-from .base_stats import base_stats
-from .species import AllSpecies
+from .base_stats import BaseStatblock, base_stats
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -43,13 +46,51 @@ BanditCaptainVariant = CreatureVariant(
 )
 
 
-def generate_bandit(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+class _CustomPowers(CustomPowerSelection):
+    def __init__(self, variant: CreatureVariant, stats: BaseStatblock):
+        self.variant = variant
+        self.stats = stats
+
+    def custom_weight(self, power: Power) -> CustomPowerWeight:
+        captain_powers = [
+            leader.CommandTheAttack,
+            organized.FanaticFollowers,
+            leader.StayInFormation,
+        ]
+
+        high_cr_powers = [leader.Intimidate]
+
+        standard_powers = [
+            sneaky.CheapShot,
+            artillery.SuppresingFire,
+            technique.VexingAttack,
+            technique.Sharpshooter,
+            sneaky.ExploitAdvantage,
+            artillery.Overwatch,
+            artillery.FocusShot,
+            gadget.SmokeBomb,
+        ]
+
+        powers = []
+        powers += standard_powers
+        if self.stats.cr >= 1:
+            powers += high_cr_powers
+        if self.variant is BanditCaptainVariant:
+            powers += captain_powers
+
+        if power in powers:
+            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
+
+
+def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=variant.name,
@@ -104,12 +145,8 @@ def generate_bandit(
     stats = stats.with_roles(
         primary_role=MonsterRole.Leader
         if variant is BanditCaptainVariant
-        else MonsterRole.Ambusher,
-        additional_roles=[
-            MonsterRole.Skirmisher,
-            MonsterRole.Ambusher,
-            MonsterRole.Artillery,
-        ],
+        else MonsterRole.Artillery,
+        additional_roles=[MonsterRole.Ambusher, MonsterRole.Artillery],
     )
 
     # SKILLS
@@ -143,7 +180,8 @@ def generate_bandit(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
+        settings=settings.selection_settings,
+        custom=_CustomPowers(variant, stats),
     )
     features += power_features
 

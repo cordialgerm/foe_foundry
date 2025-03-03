@@ -1,15 +1,12 @@
-import numpy as np
-
 from ..ac_templates import Unarmored
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.legendary import make_legendary
 from ..powers.themed.anti_magic import Spellbreaker
 from ..powers.themed.anti_ranged import DeflectMissile
 from ..powers.themed.bestial import RetributiveStrike
-from ..powers.themed.classes import Barbarian
 from ..powers.themed.cruel import BloodiedFrenzy, BrutalCritical
 from ..powers.themed.fearsome import FearsomeRoar
 from ..powers.themed.reckless import RecklessPowers
@@ -19,30 +16,30 @@ from ..skills import Skills, Stats, StatScaling
 from ..utils.interpolate import interpolate_by_cr
 from ..utils.rng import choose_enum
 from .base_stats import base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
 
 
-def custom_weights(p: Power) -> CustomPowerWeight:
-    powers = [
-        Spellbreaker,
-        DeflectMissile,
-        RetributiveStrike,
-        Barbarian,
-        BrutalCritical,
-        BloodiedFrenzy,
-        FearsomeRoar,
-    ] + RecklessPowers
-    if p in powers:
-        return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
-    else:
-        return CustomPowerWeight(weight=1.0)
+class _CustomPowers(CustomPowerSelection):
+    def custom_weight(self, power: Power) -> CustomPowerWeight:
+        powers = [
+            Spellbreaker,
+            DeflectMissile,
+            RetributiveStrike,
+            BrutalCritical,
+            BloodiedFrenzy,
+            FearsomeRoar,
+        ] + RecklessPowers
+        if power in powers:
+            return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
+        else:
+            return CustomPowerWeight(weight=1.0)
 
 
 BerserkerVariant = CreatureVariant(
@@ -67,13 +64,13 @@ CommanderVariant = CreatureVariant(
 )
 
 
-def generate_berserker(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
-) -> StatsBeingGenerated:
+def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=name,
@@ -149,8 +146,8 @@ def generate_berserker(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_weights=custom_weights,
+        settings=settings.selection_settings,
+        custom=_CustomPowers(),
     )
     features += power_features
 

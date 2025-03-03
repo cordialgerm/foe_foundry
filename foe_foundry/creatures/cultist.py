@@ -1,10 +1,14 @@
-import numpy as np
-
 from ..ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
 from ..attack_template import natural, spell, weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import LOW_POWER, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    LOW_POWER,
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    select_powers,
+)
 from ..powers.creature_type.aberration import AberrationPowers
 from ..powers.creature_type.fiend import FiendishPowers
 from ..powers.creature_type.undead import UndeadPowers
@@ -34,9 +38,9 @@ from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -93,12 +97,19 @@ FiendVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def force_powers(self) -> list[Power]:
+        # Low-CR Cultists always have Protection
+        if self.stats.cr <= 1:
+            return [Protection]
+        else:
+            return []
+
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         powers = []
         highly_desirable_powers = []
 
@@ -140,13 +151,12 @@ class _CustomWeights:
             return CustomPowerWeight(0.5)
 
 
-def generate_cultist(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    rng: np.random.Generator,
-    species: CreatureSpecies | None = None,
-) -> StatsBeingGenerated:
+def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=name,
@@ -243,11 +253,6 @@ def generate_cultist(
     # POWERS
     features = []
 
-    # Low-CR Cultists always have Protection
-    if cr <= 1:
-        features += Protection.generate_features(stats)
-        stats = Protection.modify_stats(stats)
-
     # ADDITIONAL POWERS
 
     # Cultists can use more power at higher CRs to keep them interesting
@@ -259,8 +264,8 @@ def generate_cultist(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
+        settings=settings.selection_settings,
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

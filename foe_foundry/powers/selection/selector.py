@@ -11,9 +11,10 @@ from foe_foundry.powers.all import AllPowers
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
-from .custom_weights import CustomWeightCallback
+from .custom import CustomPowerSelection
 from .score import SelectionScore
 from .selection import PowerSelection
+from .settings import SelectionSettings
 from .targets import SelectionTargets
 
 Filter: TypeAlias = Callable[[Feature], bool]
@@ -25,15 +26,15 @@ class PowerSelector:
         targets: SelectionTargets,
         rng: Generator,
         stats: BaseStatblock,
-        custom_filter: Callable[[Power], bool] | None = None,
-        custom_weights: CustomWeightCallback | None = None,
+        custom: CustomPowerSelection | None = None,
+        settings: SelectionSettings | None = None,
     ):
         self.selection = PowerSelection()
         self.targets = targets
         self.rng = rng
+        self.settings = settings or SelectionSettings()
         self.iteration = 0
-        self.custom_filter = custom_filter
-        self.custom_weights = custom_weights
+        self.custom = custom
         self.stats = stats.copy()
 
         self.all_powers: List[Power] = AllPowers.copy()
@@ -51,6 +52,15 @@ class PowerSelector:
         return self.selection.score(self.targets)
 
     def select_powers(self):
+        if self.custom:
+            for power in self.custom.force_powers():
+                # discount pre-built powers by 50% of their cost
+                # their cost is already partially included in the power level of the statblock template
+                self.selection = self.selection.with_new_power(
+                    self.stats, power, power_level_multiplier=0.25
+                )
+                self.stats = power.modify_stats(self.stats)
+
         while not self.is_done:
             power = self.select_next()
             if power is None:
@@ -93,17 +103,13 @@ class PowerSelector:
         # 3. feasibility multipliers based on constraints are applied to the weighted scores
 
         for power in self.all_powers:
-            if self.custom_weights is None:
+            if self.custom is None:
                 custom_multiplier = 1.0
                 relaxed_mode = False
             else:
-                custom_weight = self.custom_weights(power)
-                if isinstance(custom_weight, float):
-                    custom_multiplier = custom_weight
-                    relaxed_mode = False
-                else:
-                    custom_multiplier = custom_weight.weight
-                    relaxed_mode = custom_weight.ignore_usual_requirements
+                custom_weight = self.custom.custom_weight(power)
+                custom_multiplier = custom_weight.weight
+                relaxed_mode = custom_weight.ignore_usual_requirements
 
             raw_score = power.score(self.stats, relaxed_mode=relaxed_mode)
             if raw_score <= 0:
@@ -131,9 +137,9 @@ class PowerSelector:
         adjusted_scores = np.array(adjusted_scores)
 
         return (
-            _probabilities(raw_scores),
-            _probabilities(weighted_scores),
-            _probabilities(adjusted_scores),
+            self._probabilities(raw_scores),
+            self._probabilities(weighted_scores),
+            self._probabilities(adjusted_scores),
         )
 
     def feasibility_multiplier(self, power: Power) -> float:
@@ -149,7 +155,7 @@ class PowerSelector:
                 return -10
 
             # check if a custom filter excludes the power
-            if self.custom_filter is not None and not self.custom_filter(power):
+            if self.custom is not None and not self.custom.filter_power(power):
                 return -10
 
             # check if the power/feature violates any max constraints
@@ -246,36 +252,51 @@ class PowerSelector:
             return False
         return True
 
+    def _probabilities(
+        self,
+        scores: np.ndarray,
+    ) -> np.ndarray:
+        if np.all(scores < 0):
+            return np.zeros_like(scores)
 
-def _probabilities(
-    scores: np.ndarray,
-    temperature: float = 1.0,
-    top_k: int = 50,
-) -> np.ndarray:
-    if np.all(scores < 0):
-        return np.zeros_like(scores)
+        if self.settings.temperature == 0:
+            p = np.zeros_like(scores)
+            max_score = np.max(scores)
+            max_indices = scores == max_score
+            p[max_indices] = 1
+            p = p / np.sum(p)
+            return p
 
-    p = np.exp(scores / temperature)
-    p = p / np.sum(p)
+        p = np.exp(scores / self.settings.temperature)
+        p = p / np.sum(p)
 
-    new_p = np.copy(p)
-    # new_p[np.argsort(p)[:-top_k]] = 0
-    # new_p = new_p / np.sum(new_p)
-    return new_p
+        sorted_indexes = np.argsort(scores)[::-1]
+        top_k = min(self.settings.top_k, len(scores))
+        keep_indexes = sorted_indexes[:top_k]
+
+        new_p = np.zeros_like(p)
+        new_p[keep_indexes] = p[keep_indexes]
+        new_p = new_p / np.sum(new_p)
+
+        return new_p
 
 
 def select_powers(
     stats: BaseStatblock,
     rng: RngFactory | Generator,
-    power_level: float,
-    retries: int = 3,
-    custom_filter: Callable[[Power], bool] | None = None,
-    custom_weights: CustomWeightCallback | None = None,
+    settings: SelectionSettings | None = None,
+    custom: CustomPowerSelection | None = None,
 ) -> Tuple[BaseStatblock, List[Feature], PowerSelector]:
+    if settings is None:
+        settings = SelectionSettings()
+
     rng = rng_instance(rng)
 
+    power_level_target = settings.power_multiplier * stats.recommended_powers
+    power_level_max = power_level_target + 0.5
+
     targets = SelectionTargets(
-        power_level_target=power_level, power_level_max=power_level + 0.5
+        power_level_target=power_level_target, power_level_max=power_level_max
     )
 
     all_results: List[BaseStatblock] = []
@@ -284,13 +305,9 @@ def select_powers(
     selectors = []
 
     # try a couple of times and choose the best result
-    for _ in range(retries):
+    for _ in range(settings.retries):
         selector = PowerSelector(
-            targets=targets,
-            rng=rng,
-            stats=stats,
-            custom_filter=custom_filter,
-            custom_weights=custom_weights,
+            targets=targets, rng=rng, stats=stats, custom=custom, settings=settings
         )
         selector.select_powers()
         selectors.append(selector)

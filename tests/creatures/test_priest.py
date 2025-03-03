@@ -1,28 +1,20 @@
-import hashlib
 from pathlib import Path
 
-import numpy as np
 import pytest
 
 from foe_foundry import templates
-from foe_foundry.creatures import priest
+from foe_foundry.creatures import GenerationSettings, priest
 
 
-def _ids(args: dict) -> str:
-    return f"{args['name']}-{args['species_name']}"
+def _ids(settings: GenerationSettings) -> str:
+    return settings.id
 
 
-@pytest.mark.parametrize("args", priest.PriestTemplate.generate_options(), ids=_ids)
-def test_priest_statblocks(args: dict):
+@pytest.mark.parametrize(
+    "settings", priest.PriestTemplate.generate_settings(), ids=_ids
+)
+def test_priest_statblocks(settings: GenerationSettings):
     examples_dir = Path(__file__).parent.parent.parent / "examples" / "priests"
     examples_dir.mkdir(exist_ok=True, parents=True)
-
-    hash_key = _ids(args)
-
-    def rng_factory() -> np.random.Generator:
-        bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
-        random_state = int.from_bytes(bytes, byteorder="little")
-        return np.random.default_rng(seed=random_state)
-
-    stats = priest.PriestTemplate.generate(**args, rng_factory=rng_factory).finalize()
+    stats = priest.PriestTemplate.generate(settings).finalize()
     templates.render_html_inline_page_to_path(stats, examples_dir / f"{stats.key}.html")

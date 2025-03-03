@@ -1,10 +1,8 @@
-import numpy as np
-
 from ..ac_templates import Unarmored
 from ..attack_template import natural
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.zombie import ZombiePowers
 from ..powers.creature_type.undead import UndeadFortitude
 from ..powers.legendary import make_legendary
@@ -16,9 +14,9 @@ from ..skills import Stats, StatScaling
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
@@ -44,12 +42,12 @@ ZombieOgreVariant = CreatureVariant(
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         if p in ZombiePowers:
             return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
         elif p in DiseasedPowers:
@@ -57,14 +55,17 @@ class _CustomWeights:
         else:
             return CustomPowerWeight(weight=0.5)
 
+    def force_powers(self) -> list[Power]:
+        # All zombies have Undead Fortitude and a Grappling Attack
+        return [UndeadFortitude, GrapplingAttack]
 
-def generate_zombie(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    rng: np.random.Generator,
-    species: CreatureSpecies | None = None,
-) -> StatsBeingGenerated:
+
+def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    rng = settings.rng
+
     # STATS
     stats = base_stats(
         name=name,
@@ -146,29 +147,11 @@ def generate_zombie(
     # POWERS
     features = []
 
-    # All zombies have Undead Fortitude and a Grappling Attack
-    default_powers = [UndeadFortitude, GrapplingAttack]
-    for feature in default_powers:
-        stats = feature.modify_stats(stats)
-        new_features = feature.generate_features(stats)
-        features += new_features
-
-    # subtract from the power budget
-    power_tax = sum([p.power_level for p in default_powers]) / 8.0
-    stats = stats.apply_monster_dials(
-        MonsterDials(recommended_powers_modifier=-1 * power_tax)
-    )
-
-    # ADDITIONAL POWERS
-    def custom_filter(power: Power) -> bool:
-        return power not in default_powers
-
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_filter=custom_filter,
-        custom_weights=_CustomWeights(stats, variant),
+        settings=settings.selection_settings,
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 

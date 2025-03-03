@@ -1,9 +1,7 @@
-import numpy as np
-
 from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
-from ..powers import CustomPowerWeight, Power, select_powers
+from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.guard import GuardPowers
 from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import GrenadePowers, NetPowers
@@ -14,22 +12,22 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies
+from .species import AllSpecies, HumanSpecies
 from .template import (
-    CreatureSpecies,
     CreatureTemplate,
     CreatureVariant,
+    GenerationSettings,
     StatsBeingGenerated,
     SuggestedCr,
 )
 
 
-class _CustomWeights:
+class _CustomWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
 
-    def __call__(self, p: Power) -> CustomPowerWeight:
+    def custom_weight(self, p: Power) -> CustomPowerWeight:
         if p in GuardPowers:
             return CustomPowerWeight(weight=2, ignore_usual_requirements=True)
         elif p in OrganizedPowers:
@@ -41,9 +39,9 @@ class _CustomWeights:
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
         elif p in SneakyPowers:
             # guards aren't usually sneaky, so downrank
-            return CustomPowerWeight(weight=0.5, ignore_usual_requirements=False)
+            return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
         else:
-            return CustomPowerWeight(weight=1, ignore_usual_requirements=False)
+            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
 
 GuardVariant = CreatureVariant(
@@ -73,12 +71,14 @@ CommanderVariant = CreatureVariant(
 
 
 def generate_guard(
-    name: str,
-    cr: float,
-    variant: CreatureVariant,
-    species: CreatureSpecies,
-    rng: np.random.Generator,
+    settings: GenerationSettings,
 ) -> StatsBeingGenerated:
+    name = settings.creature_name
+    cr = settings.cr
+    variant = settings.variant
+    species = settings.species if settings.species else HumanSpecies
+    rng = settings.rng
+
     # STATS
 
     if variant is CommanderVariant:
@@ -165,8 +165,8 @@ def generate_guard(
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        power_level=stats.recommended_powers,
-        custom_weights=_CustomWeights(stats, variant),
+        settings=settings.selection_settings,
+        custom=_CustomWeights(stats, variant),
     )
     features += power_features
 
