@@ -1,12 +1,12 @@
 from typing import List
 
-from ....creature_types import CreatureType
-from ....damage import DamageType, conditions
-from ....die import Die
-from ....features import ActionType, Feature
-from ....spells import enchantment, illusion, transmutation
-from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, MEDIUM_POWER, Power
+from ...creature_types import CreatureType
+from ...damage import DamageType, conditions
+from ...die import Die
+from ...features import ActionType, Feature
+from ...spells import enchantment, illusion, transmutation
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 

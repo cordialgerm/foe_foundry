@@ -14,6 +14,10 @@ from ..powers.creature_type.fiend import FiendishPowers
 from ..powers.creature_type.undead import UndeadPowers
 from ..powers.legendary import make_legendary
 from ..powers.roles.defender import Protection
+from ..powers.spellcaster.cult import CultCasters
+from ..powers.spellcaster.fiendish import FiendishCasters
+from ..powers.spellcaster.necromancer import NecromancerWizards
+from ..powers.spellcaster.psionic import PsionicCasters
 from ..powers.themed.cruel import CruelPowers
 from ..powers.themed.cursed import (
     BestowCurse,
@@ -27,10 +31,6 @@ from ..powers.themed.domineering import DomineeringPowers
 from ..powers.themed.fast import Evasion
 from ..powers.themed.gadget import GadgetPowers
 from ..powers.themed.psychic import PsychicPowers
-from ..powers.themed.spellcaster.cult import CultCasters
-from ..powers.themed.spellcaster.fiendish import FiendishCasters
-from ..powers.themed.spellcaster.necromancer import NecromancerWizards
-from ..powers.themed.spellcaster.psionic import PsionicCasters
 from ..powers.themed.trap import TrapPowers
 from ..role_types import MonsterRole
 from ..size import Size

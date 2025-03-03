@@ -1,9 +1,9 @@
 from typing import List
 
-from ....damage import AttackType
-from ....spells import abjuration, enchantment, evocation, necromancy
-from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, MEDIUM_POWER, Power
+from ...damage import AttackType
+from ...spells import abjuration, enchantment, evocation, necromancy
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 

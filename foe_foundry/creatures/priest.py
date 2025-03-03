@@ -13,8 +13,8 @@ from ..powers import (
 from ..powers.creature_type import celestial
 from ..powers.legendary import make_legendary
 from ..powers.roles import SupportPowers
+from ..powers.spellcaster.celestial import CelestialCasters
 from ..powers.themed import holy, technique
-from ..powers.themed.spellcaster.celestial import CelestialCasters
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling

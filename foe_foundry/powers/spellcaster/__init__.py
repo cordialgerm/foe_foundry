@@ -1,6 +1,6 @@
 from typing import List
 
-from ...power import Power
+from ..power import Power
 from . import (
     abjurer,
     celestial,

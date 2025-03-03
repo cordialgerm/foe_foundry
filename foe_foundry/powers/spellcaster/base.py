@@ -4,9 +4,9 @@ from typing import List
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ....damage import AttackType
-from ....spells import StatblockSpell
-from ...power import HIGH_POWER, PowerType, PowerWithStandardScoring
+from ...damage import AttackType
+from ...spells import StatblockSpell
+from ..power import HIGH_POWER, PowerType, PowerWithStandardScoring
 
 
 class _Spellcaster(PowerWithStandardScoring):

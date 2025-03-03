@@ -2,13 +2,13 @@ from typing import List
 
 import numpy as np
 
-from ....creature_types import CreatureType
-from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....spells import abjuration, conjuration, evocation, necromancy
-from ....statblocks import BaseStatblock
-from ....utils.summoning import determine_summon_formula
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ...creature_types import CreatureType
+from ...features import ActionType, Feature
+from ...role_types import MonsterRole
+from ...spells import abjuration, conjuration, evocation, necromancy
+from ...statblocks import BaseStatblock
+from ...utils.summoning import determine_summon_formula
+from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
 

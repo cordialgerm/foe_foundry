@@ -1,6 +1,6 @@
 from typing import List, Set
 
-from ....spells import Spell, StatblockSpell
+from ...spells import Spell, StatblockSpell
 
 
 def spell_list(

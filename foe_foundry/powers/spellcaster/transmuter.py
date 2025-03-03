@@ -1,11 +1,11 @@
 from typing import List
 
-from ....creature_types import CreatureType
-from ....features import ActionType, Feature
-from ....spells import evocation, transmutation
-from ....statblocks import BaseStatblock
-from ...attack import DamageType
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, Power
+from ...creature_types import CreatureType
+from ...features import ActionType, Feature
+from ...spells import evocation, transmutation
+from ...statblocks import BaseStatblock
+from ..attack import DamageType
+from ..power import EXTRA_HIGH_POWER, HIGH_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
 
