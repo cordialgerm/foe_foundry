@@ -12,7 +12,22 @@ from foe_foundry.creatures import (
     SelectionSettings,
     SuggestedCr,
 )
+from foe_foundry.powers import AllPowers
 from foe_foundry.templates import render_html_inline
+from foe_foundry.utils import name_to_key
+
+
+def get_all_power_keys() -> list[str]:
+    k = [p.key for p in AllPowers]
+    unique_k = set(k)
+    if len(k) != len(unique_k):
+        raise ValueError("Duplicate keys found")
+
+    return sorted(unique_k)
+
+
+def get_all_power_themes() -> list[str]:
+    return sorted({p.theme_key for p in AllPowers if p.theme_key is not None})
 
 
 def display_stat_builder() -> DisplayHandle | None:
@@ -23,7 +38,6 @@ def display_stat_builder() -> DisplayHandle | None:
     )
     variant_select = widgets.Dropdown(description="Variants:")
     species_select = widgets.Dropdown(description="Species:")
-    render_button = widgets.Button(description="Render")
     temperature_slider = widgets.FloatSlider(
         value=1.0,
         min=0,
@@ -51,6 +65,13 @@ def display_stat_builder() -> DisplayHandle | None:
         readout=True,
         readout_format=".2%",
     )
+    theme_boost = widgets.SelectMultiple(
+        options=get_all_power_themes(), value=[], description="Theme", rows=20
+    )
+    power_boost = widgets.Text(description="Power")
+    render_button = widgets.Button(description="Render")
+    random_theme_button = widgets.Button(description="Render with Random Theme")
+
     output = widgets.Output()
 
     variant_lookup: dict[str, tuple[CreatureVariant, SuggestedCr]] = {}
@@ -78,7 +99,22 @@ def display_stat_builder() -> DisplayHandle | None:
     def rng_factory():
         return np.random.default_rng()
 
+    def on_template_changed(change):
+        update_variant_select()
+        update_species_select()
+
     def on_button_clicked(b):
+        generate_stats()
+
+    def on_random_theme_button_clicked(b):
+        themes = get_all_power_themes()
+        rng = np.random.default_rng()
+        i = rng.choice(len(themes))
+        theme_boost.value = [themes[i]]
+
+        generate_stats()
+
+    def generate_stats():
         output.clear_output()
 
         template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
@@ -87,6 +123,13 @@ def display_stat_builder() -> DisplayHandle | None:
         variant_index = cast(int, variant_select.index)
         _, variant_key = variant_options[variant_index]
         variant, suggested_cr = variant_lookup[variant_key]
+
+        if power_boost.value:
+            power_boosts = {name_to_key(p): 10 for p in power_boost.value.split(",")}
+        else:
+            power_boosts = {}
+
+        theme_boosts = {str(v): 2.5 for v in theme_boost.value}
 
         species = (
             template.species[cast(int, species_select.index)]
@@ -105,7 +148,11 @@ def display_stat_builder() -> DisplayHandle | None:
                 variant=variant,
                 cr=cr,
                 species=species,
-                selection_settings=SelectionSettings(temperature=temperature),
+                selection_settings=SelectionSettings(
+                    temperature=temperature,
+                    boost_themes=theme_boosts,
+                    boost_powers=power_boosts,
+                ),
                 rng=rng_factory(),
                 hp_multiplier=hp_multiplier,
                 damage_multiplier=damage_multiplier,
@@ -116,11 +163,8 @@ def display_stat_builder() -> DisplayHandle | None:
         with output:
             display_html(html, raw=True)
 
-    def on_template_changed(change):
-        update_variant_select()
-        update_species_select()
-
     render_button.on_click(on_button_clicked)
+    random_theme_button.on_click(on_random_theme_button_clicked)
     template_select.observe(on_template_changed, names="value")
 
     update_variant_select()
@@ -134,6 +178,9 @@ def display_stat_builder() -> DisplayHandle | None:
         hp_slider,
         damage_slider,
         temperature_slider,
+        power_boost,
+        theme_boost,
         render_button,
+        random_theme_button,
         output,
     )

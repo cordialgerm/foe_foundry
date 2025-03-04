@@ -8,7 +8,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
@@ -19,17 +18,6 @@ from ..power import (
     PowerType,
     PowerWithStandardScoring,
 )
-from ..scoring import score
-
-
-def score_chaotic(candidate: BaseStatblock, min_cr: float | None = None, **args) -> float:
-    return score(
-        candidate=candidate,
-        require_types=[CreatureType.Fey, CreatureType.Aberration, CreatureType.Monstrosity],
-        bonus_attack_types=AttackType.AllSpell(),
-        require_cr=min_cr,
-        **args,
-    )
 
 
 class ChaoticPower(PowerWithStandardScoring):
@@ -42,7 +30,11 @@ class ChaoticPower(PowerWithStandardScoring):
         **score_args,
     ):
         standard_score_args = dict(
-            require_types=[CreatureType.Fey, CreatureType.Aberration, CreatureType.Monstrosity],
+            require_types=[
+                CreatureType.Fey,
+                CreatureType.Aberration,
+                CreatureType.Monstrosity,
+            ],
             bonus_attack_types=AttackType.AllSpell(),
             **score_args,
         )
@@ -55,6 +47,10 @@ class ChaoticPower(PowerWithStandardScoring):
             power_level=power_level,
             score_args=standard_score_args,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        return stats.grant_spellcasting()
 
 
 class _ChaoticSpace(ChaoticPower):
@@ -99,12 +95,12 @@ class _EldritchBeacon(ChaoticPower):
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:
-            summon_cr_target = stats.cr / 5
+            summon_cr_target = max(stats.cr / 5, 1)
             _, _, description = summoning.determine_summon_formula(
                 summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
             )
             return description
-        except:
+        except Exception:
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

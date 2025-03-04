@@ -30,7 +30,7 @@ def NimbleEscape(role: MonsterRole):
             )
             return [feature]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             return stats.copy(has_unique_movement_manipulation=True)
 
     return _NimbleEscape()
@@ -55,7 +55,7 @@ def CunningAction(role: MonsterRole):
             )
             return [feature]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             return stats.copy(has_unique_movement_manipulation=True)
 
     return _CunningAction()

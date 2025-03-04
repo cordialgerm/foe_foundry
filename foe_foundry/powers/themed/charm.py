@@ -58,6 +58,15 @@ class CharmingPower(PowerWithStandardScoring):
             score_args=standard_score_args,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(Stats.CHA)
+
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+
+        return stats
+
 
 class _MentalSummons(CharmingPower):
     def __init__(self):
@@ -116,7 +125,7 @@ class _WardingCharm(CharmingPower):
             name="Warding Charm",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When a creature the {stats.selfref} can see targets it with a melee attack but before the attack is made, \
+            description=f"When a creature {stats.selfref} can see targets it with a melee attack but before the attack is made, \
                 {stats.selfref} casts *Charm Person* with a DC of {dc} on that target.",
         )
         return [feature]
@@ -131,7 +140,8 @@ class _CharmingWords(CharmingPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_spellcasting()
         spell = enchantment.CharmPerson.for_statblock()
         return stats.add_spell(spell)
 

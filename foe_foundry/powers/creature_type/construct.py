@@ -156,7 +156,7 @@ class _Smother(ConstructPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         def set_on_hit(attack: Attack) -> Attack:

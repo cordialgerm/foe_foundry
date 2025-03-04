@@ -6,7 +6,6 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -49,6 +48,11 @@ class TemporalPower(PowerWithStandardScoring):
             )
             | score_args,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting()
+        return stats
 
 
 class _CurseOfTheAges(TemporalPower):

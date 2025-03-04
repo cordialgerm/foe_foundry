@@ -30,6 +30,14 @@ class _BreathPower(PowerWithStandardScoring):
         self.save = save
         self.on_failure = on_failure
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
+        if stats.secondary_damage_type is None:
+            return stats.copy(secondary_damage_type=self.breath)
+        else:
+            return stats
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = breath(self.name, self.breath, stats, self.save, self.on_failure)
         return [feature]

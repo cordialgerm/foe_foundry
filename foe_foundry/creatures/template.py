@@ -1,5 +1,7 @@
+from __future__ import annotations
+
 import hashlib
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from typing import Callable, Iterable, TypeAlias
 
 import numpy as np
@@ -91,6 +93,9 @@ class GenerationSettings:
     @property
     def id(self) -> str:
         return self.key
+
+    def copy(self, **args) -> GenerationSettings:
+        return replace(self, **args)
 
 
 GenerateCallback: TypeAlias = Callable[[GenerationSettings], StatsBeingGenerated]

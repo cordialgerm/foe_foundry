@@ -30,7 +30,7 @@ class UndeadPower(PowerWithStandardScoring):
             score_args=standard_score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         bonus_damage = self.score_args.get("bonus_damage") if self.score_args else None
         if bonus_damage is not None and stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=bonus_damage)

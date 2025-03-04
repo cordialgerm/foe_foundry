@@ -8,6 +8,7 @@ from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from ..utils import name_to_key
+from .flags import theme_flag
 from .power_type import PowerType
 from .scoring import score as standard_score
 
@@ -23,6 +24,7 @@ class Power(ABC):
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         roles: List[MonsterRole] | None = None,
@@ -31,7 +33,6 @@ class Power(ABC):
         attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
-        theme: str | None = None,
     ):
         self.name = name
         self.power_type = power_type
@@ -71,6 +72,10 @@ class Power(ABC):
         pass
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = self.modify_stats_inner(stats)
+        return stats.with_flags(theme_flag(self.theme))
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats
 
     @abstractmethod
@@ -92,10 +97,10 @@ class PowerWithStandardScoring(Power):
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
-        theme: str | None = None,
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:

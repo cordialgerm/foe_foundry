@@ -56,7 +56,7 @@ class PoisonPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
         return stats

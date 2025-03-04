@@ -40,6 +40,12 @@ class HolyPower(PowerWithStandardScoring):
             | score_args,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Radiant)
+        return stats
+
 
 class _DivineSmite(HolyPower):
     def __init__(self):
@@ -73,7 +79,9 @@ class _MassCureWounds(HolyPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(Stats.WIS)
         spell = abjuration.MassCureWounds.for_statblock()
         return stats.add_spell(spell)
 

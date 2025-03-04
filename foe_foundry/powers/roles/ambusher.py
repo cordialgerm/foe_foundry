@@ -68,7 +68,7 @@ class _DeadlyAmbusher(AmbusherPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.grant_proficiency_or_expertise(
             Skills.Initiative
         ).grant_proficiency_or_expertise(Skills.Initiative)

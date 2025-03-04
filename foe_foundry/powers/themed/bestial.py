@@ -52,7 +52,7 @@ class _RetributiveStrike(BestialPower):
 
         feature = Feature(
             name="Retributive Strike",
-            description=f"When a creature {stats.selfref} can see hits it with a melee weapon attack, {stats.selfref} can make an attack against its attacker. \
+            description=f"When a creature {stats.selfref} can see hits it with a melee attack, {stats.selfref} can make an attack against its attacker. \
                 If {stats.selfref} is below {hp} hp then the attack is made with advantage.",
             action=ActionType.Reaction,
         )
@@ -71,7 +71,7 @@ class _OpportuneBite(BestialPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Opportune Bite",
-            description=f"{stats.selfref} makes a Bite attack against a prone creature.",
+            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
             action=ActionType.BonusAction,
         )
         return [feature]
@@ -89,7 +89,7 @@ class _Trample(BestialPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Trample",
-            description=f"{stats.selfref} makes a Stomp attack against a prone creature.",
+            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
             action=ActionType.BonusAction,
         )
         return [feature]
@@ -108,12 +108,17 @@ class _BurrowingAmbush(BestialPower):
             require_callback=can_burrow,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        new_speed = stats.speed.grant_burrow()
+        return stats.copy(speed=new_speed)
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Burrowing Ambush",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref} can burrow up to its burrowing speed without provoking opportunity attacks, and then resurface. \
+            description=f"{stats.selfref.capitalize()} can burrow up to its burrowing speed without provoking opportunity attacks, and then resurface. \
                 If within melee range of an enemy, it makes an attack with advantage.",
         )
         return [feature]

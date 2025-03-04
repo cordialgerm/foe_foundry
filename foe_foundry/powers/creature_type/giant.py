@@ -93,7 +93,7 @@ class _CloudRune(GiantPower):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
             resistances={DamageType.Lightning},
             upgrade_resistance_to_immunity_if_present=True,
@@ -135,7 +135,7 @@ class _FireRune(GiantPower):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
             resistances={DamageType.Fire},
             upgrade_resistance_to_immunity_if_present=True,
@@ -169,7 +169,7 @@ class _FrostRune(GiantPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
             resistances={DamageType.Cold},
             upgrade_resistance_to_immunity_if_present=True,
@@ -208,7 +208,7 @@ class _HillRune(GiantPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
             resistances={DamageType.Poison},
             upgrade_resistance_to_immunity_if_present=True,
@@ -235,7 +235,7 @@ class _StormRune(GiantPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_resistance_or_immunity(
             resistances={DamageType.Lightning},
             upgrade_resistance_to_immunity_if_present=True,

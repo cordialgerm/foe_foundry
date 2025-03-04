@@ -55,6 +55,10 @@ class TeleportationPower(PowerWithStandardScoring):
             | score_args,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        return stats
+
 
 class _BendSpace(TeleportationPower):
     def __init__(self):
@@ -95,7 +99,8 @@ class _MistyStep(TeleportationPower):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
         return stats.copy(has_unique_movement_manipulation=True)
 
 

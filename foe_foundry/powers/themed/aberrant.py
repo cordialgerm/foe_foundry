@@ -55,6 +55,12 @@ class AberrantPower(PowerWithStandardScoring):
             score_args=standard_score_args,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        if stats.secondary_damage_type is None:
+            return stats.copy(secondary_damage_type=DamageType.Psychic)
+        else:
+            return stats.copy()
+
 
 class _ModifyMemory(AberrantPower):
     def __init__(self):

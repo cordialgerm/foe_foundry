@@ -63,6 +63,7 @@ class BaseStatblock:
     has_lair: bool = False
     legendary_actions: int = 0
     legendary_resistances: int = 0
+    flags: set[str] = field(default_factory=set)
 
     def __post_init__(self):
         mod = (
@@ -259,6 +260,21 @@ class BaseStatblock:
 
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
+
+    def grant_spellcasting(
+        self, spellcasting_stat: Stats | None = None
+    ) -> BaseStatblock:
+        if spellcasting_stat is None:
+            spellcasting_stat = self.attributes.spellcasting_stat
+
+        gap = self.attributes.primary_mod - self.attributes.stat_mod(spellcasting_stat)
+        if gap > 1:
+            boost = 2 * (gap - 1)  # don't boost spellcasting stat beyond primary stat
+            new_attributes = self.attributes.boost(spellcasting_stat, boost)
+            return self.copy(attributes=new_attributes)
+        else:
+            # already a spellcaster
+            return self.copy()
 
     def add_ac_template(
         self,
@@ -484,6 +500,11 @@ class BaseStatblock:
                 multiattack_modifier=attack_modifier,
             )
         )
+
+    def with_flags(self, *flags: str) -> BaseStatblock:
+        new_flags = self.flags.copy()
+        new_flags.update(flags)
+        return self.copy(flags=new_flags)
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:

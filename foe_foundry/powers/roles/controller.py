@@ -57,7 +57,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.add_attack(
             name="Pacifying Touch",
             scalar=0.25,

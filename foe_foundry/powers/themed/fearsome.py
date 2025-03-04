@@ -5,7 +5,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -146,7 +145,9 @@ class _DreadGaze(HorrifyingPower):
 class _MindShatteringScream(HorrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Mind-Shattering Scream", source="SRD5.1 Banshee", power_level=HIGH_POWER
+            name="Mind-Shattering Scream",
+            source="SRD5.1 Banshee",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

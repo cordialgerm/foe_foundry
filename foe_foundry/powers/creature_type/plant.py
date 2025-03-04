@@ -43,7 +43,7 @@ class _VineWhip(PlantPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         def customize(a: Attack) -> Attack:
@@ -95,7 +95,7 @@ class _Entangle(PlantPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         spell = conjuration.Entangle.for_statblock(uses=3, notes="no concentration")
         return stats.add_spell(spell=spell)
 
@@ -111,7 +111,7 @@ class _ChokingVine(PlantPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         stats = stats.add_attack(

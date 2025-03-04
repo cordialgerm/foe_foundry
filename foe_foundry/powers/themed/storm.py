@@ -3,7 +3,7 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, Shocked
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...statblocks import BaseStatblock
@@ -38,7 +38,7 @@ class StormPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type != DamageType.Lightning:
             stats = stats.copy(secondary_damage_type=DamageType.Lightning)
 

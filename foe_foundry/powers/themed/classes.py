@@ -49,7 +49,7 @@ class _DeathKnight(PowerWithStandardScoring):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type != DamageType.Necrotic:
             stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
 
@@ -145,7 +145,7 @@ def _EldritchKnights() -> List[Power]:
 
             return [feature1, feature2]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(secondary_damage_type=self.element)
             stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
             stats = stats.copy(
@@ -201,7 +201,7 @@ class _Artificer(PowerWithStandardScoring):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.add_ac_template(PlateArmor)
         stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
         stats = stats.copy(creature_class="Artificer")
@@ -246,10 +246,10 @@ class _Barbarian(PowerWithStandardScoring):
 
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Barbarian")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
-        stats = reckless.Toss.modify_stats(stats)
+        stats = reckless.Toss.modify_stats_inner(stats)
         return stats
 
 
@@ -300,7 +300,7 @@ class _Bard(PowerWithStandardScoring):
 
         return [feature1, feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Psychic, creature_class="Bard"
         )
@@ -352,12 +352,12 @@ class _WarPriest(PowerWithStandardScoring):
 
         return feature1 + [feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
         )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
-        stats = holy.MassCureWounds.modify_stats(stats)
+        stats = holy.MassCureWounds.modify_stats_inner(stats)
         return stats
 
 
@@ -395,11 +395,11 @@ class _Ranger(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return artillery.FocusShot.generate_features(stats)
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Perception)
-        stats = stats.copy(creature_class="Ranger", attributes=new_attrs)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_proficiency_or_expertise(Skills.Perception)
+        stats = stats.copy(creature_class="Ranger")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
-        stats = artillery.FocusShot.modify_stats(stats)
+        stats = artillery.FocusShot.modify_stats_inner(stats)
         stats = stats.add_spell(transmutation.SpikeGrowth.for_statblock())
         return stats
 
@@ -472,7 +472,7 @@ def _ArcaneArchers() -> List[Power]:
 
             return [feature]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(creature_class="Arcane Archer")
             return stats
 
@@ -528,12 +528,12 @@ class _PsiWarrior(PowerWithStandardScoring):
 
         return [feature1, feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Psychic,
             creature_class="Psi Warrior",
         )
-        stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+        stats = stats.grant_spellcasting(Stats.INT)
 
         stats = stats.add_spell(transmutation.Telekinesis.for_statblock())
 
@@ -582,7 +582,7 @@ class _Cavalier(PowerWithStandardScoring):
 
         return [feature1, feature2, feature3]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Cavalier")
         return stats
 
@@ -630,10 +630,10 @@ def _RuneKnights() -> List[Power]:
 
             return [feature1] + feature2
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(creature_class="Rune Knight")
             stats = stats.add_ac_template(PlateArmor, ac_modifier=1)
-            stats = self.rune.modify_stats(stats)
+            stats = self.rune.modify_stats_inner(stats)
             return stats
 
     return [
@@ -682,10 +682,10 @@ class _Samurai(PowerWithStandardScoring):
 
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Samurai")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
-        stats = tough.JustAScratch.modify_stats(stats)
+        stats = tough.JustAScratch.modify_stats_inner(stats)
         return stats
 
 
@@ -715,11 +715,11 @@ class _Monk(PowerWithStandardScoring):
         feature2 = fast.Evasion.generate_features(stats)
         return feature1 + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Monk")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
-        stats = bruiser.StunningBlow.modify_stats(stats)
-        stats = fast.Evasion.modify_stats(stats)
+        stats = bruiser.StunningBlow.modify_stats_inner(stats)
+        stats = fast.Evasion.modify_stats_inner(stats)
         return stats
 
 
@@ -752,13 +752,13 @@ class _Paladin(PowerWithStandardScoring):
         feature2 = holy.DivineSmite.generate_features(stats)
         return feature1 + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Radiant, creature_class="Paladin"
         )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
-        stats = organized.InspiringCommander.modify_stats(stats)
-        stats = holy.DivineSmite.modify_stats(stats)
+        stats = organized.InspiringCommander.modify_stats_inner(stats)
+        stats = holy.DivineSmite.modify_stats_inner(stats)
         return stats
 
 
@@ -798,12 +798,12 @@ class _Cleric(PowerWithStandardScoring):
         feature2 = holy.WordOfRadiance.generate_features(stats)
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
         )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
-        stats = holy.WordOfRadiance.modify_stats(stats)
+        stats = holy.WordOfRadiance.modify_stats_inner(stats)
         return stats
 
 
@@ -857,7 +857,7 @@ class _Druid(PowerWithStandardScoring):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)

@@ -136,7 +136,7 @@ class _NullificationMaw(AberrationPower):
             attack_names={"-", natural.Bite},
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(

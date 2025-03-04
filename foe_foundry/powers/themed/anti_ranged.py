@@ -2,14 +2,11 @@ import math
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
+from ...attack_template import spell
 from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -148,7 +145,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 score_args=score_args,
             )
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             if stats.secondary_damage_type is None:
                 stats = stats.copy(secondary_damage_type=self.damage_type)
             return stats
@@ -188,6 +185,14 @@ class _Overchannel(PowerWithStandardScoring):
             ),
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        if not stats.attack_types.intersection(AttackType.AllSpell()):
+            stats = stats.grant_spellcasting()
+            stats = spell.Firebolt.add_as_secondary_attack(stats)
+            return stats
+        else:
+            return stats
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overchannel",
@@ -215,4 +220,3 @@ AntiRangedPowers: List[Power] = [
 
 
 # Drawn to Combat - monstrosity, beast - DC X stealth check at the end of the turn or summon another one of these creatures
-# Over-channeled Spells - creature gains advantage on attack rolls and attacks deal an additional X damage if there's no hostile enemy within 10 feet

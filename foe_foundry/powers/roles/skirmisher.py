@@ -110,7 +110,7 @@ class _Speedy(SkirmisherPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = (
             stats.attributes.boost(Stats.DEX, 2)
             .grant_proficiency_or_expertise(Skills.Acrobatics)

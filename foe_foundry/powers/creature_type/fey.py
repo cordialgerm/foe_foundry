@@ -80,7 +80,7 @@ class _FaePresence(FeyPower):
             create_date=datetime(2023, 11, 21),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -103,7 +103,7 @@ class _BloodContract(FeyPower):
             bonus_damage=DamageType.Necrotic,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_cursed_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -132,7 +132,7 @@ class _FaeCounterspell(FeyPower):
             bonus_damage=DamageType.Psychic,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -182,7 +182,7 @@ class _FaeBargain(FeyPower):
             require_cr=4,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

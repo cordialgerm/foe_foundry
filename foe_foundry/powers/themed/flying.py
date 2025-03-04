@@ -9,8 +9,10 @@ from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-class _Flyer(PowerWithStandardScoring):
-    def __init__(self):
+class FlyingPower(PowerWithStandardScoring):
+    def __init__(
+        self, name: str, source: str, power_level: float = LOW_POWER, **score_args
+    ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
                 not (c.speed.fly or 0)
@@ -19,10 +21,10 @@ class _Flyer(PowerWithStandardScoring):
             )
 
         super().__init__(
-            name="Flyer",
-            source="Foe Foundry",
+            name=name,
+            source=source,
             theme="flying",
-            power_level=LOW_POWER,
+            power_level=power_level,
             power_type=PowerType.Theme,
             score_args=dict(
                 require_types={
@@ -36,15 +38,23 @@ class _Flyer(PowerWithStandardScoring):
                     CreatureType.Fey,
                 },
                 require_callback=not_already_special_movement,
-            ),
+            )
+            | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
-        new_speed = stats.speed.delta(speed_change=speed_change)
-        new_speed = new_speed.copy(fly=new_speed.walk)
-        stats = stats.copy(speed=new_speed)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        speed = stats.speed.grant_flying()
+        stats = stats.copy(speed=speed)
         return stats
+
+
+class _Flyer(FlyingPower):
+    def __init__(self):
+        super().__init__(
+            name="Flyer",
+            source="Foe Foundry",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
@@ -57,15 +67,12 @@ class _Flyer(PowerWithStandardScoring):
         return [feature]
 
 
-class _Flyby(PowerWithStandardScoring):
+class _Flyby(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Flyby",
             source="A5E SRD Owl",
-            theme="flying",
-            power_type=PowerType.Theme,
-            power_level=LOW_POWER,
-            score_args=dict(require_flying=True),
+            require_flying=True,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -77,20 +84,15 @@ class _Flyby(PowerWithStandardScoring):
         return [feature]
 
 
-class _WingedCharge(PowerWithStandardScoring):
+class _WingedCharge(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Winged Charge",
             source="A5E SRD Chimera",
-            theme="flying",
-            power_type=PowerType.Theme,
-            power_level=LOW_POWER,
-            score_args=dict(
-                require_flying=True,
-                require_types=CreatureType.all_but(CreatureType.Aberration),
-                bonus_roles={MonsterRole.Soldier, MonsterRole.Skirmisher},
-                require_attack_types=AttackType.AllMelee(),
-            ),
+            require_flying=True,
+            require_types=CreatureType.all_but(CreatureType.Aberration),
+            bonus_roles={MonsterRole.Soldier, MonsterRole.Skirmisher},
+            require_attack_types=AttackType.AllMelee(),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -104,17 +106,13 @@ class _WingedCharge(PowerWithStandardScoring):
         return [feature]
 
 
-class _WingedRetreat(PowerWithStandardScoring):
+class _WingedRetreat(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Winged Retreat",
             source="A5E SRD Vulture",
-            theme="flying",
-            power_type=PowerType.Theme,
-            score_args=dict(
-                require_flying=True,
-                require_roles={MonsterRole.Skirmisher},
-            ),
+            require_flying=True,
+            require_roles={MonsterRole.Skirmisher},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

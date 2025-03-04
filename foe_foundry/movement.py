@@ -17,7 +17,9 @@ class Movement:
 
     @property
     def fastest_speed(self) -> int:
-        return max(self.walk, self.fly or 0, self.climb or 0, self.swim or 0, self.burrow or 0)
+        return max(
+            self.walk, self.fly or 0, self.climb or 0, self.swim or 0, self.burrow or 0
+        )
 
     def delta(self, speed_change: int) -> Movement:
         args = {}
@@ -42,6 +44,12 @@ class Movement:
             return self.copy()
         else:
             return self.copy(climb=self.walk)
+
+    def grant_burrow(self) -> Movement:
+        if self.burrow:
+            return self.copy()
+        else:
+            return self.copy(burrow=self.walk)
 
     def grant_swim(self) -> Movement:
         if self.swim:

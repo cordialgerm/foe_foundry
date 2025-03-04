@@ -46,7 +46,7 @@ class _GrapplingStrike(BruiserPower):
             attack_names={natural_attacks.Slam},
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs)
 
@@ -123,7 +123,7 @@ class _Rend(BruiserPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         attack_type = (
             AttackType.MeleeWeapon

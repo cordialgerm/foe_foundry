@@ -50,11 +50,12 @@ class Tricky(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         # this creature should be tricky
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Deception
         ).boost(Stats.CHA, 2)
+        stats = stats.grant_spellcasting(Stats.CHA)
         changes: dict = dict(attributes=new_attrs)
         return stats.copy(**changes)
 

@@ -174,7 +174,7 @@ class _SpellEater(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         def additional_description(a: Attack) -> Attack:
             return a.split_damage(DamageType.Force, split_ratio=0.75).copy(
                 custom_target="one target that can cast a spell",
@@ -265,7 +265,7 @@ class _TwistedMind(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
 

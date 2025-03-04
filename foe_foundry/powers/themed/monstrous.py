@@ -7,7 +7,6 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -38,7 +37,9 @@ class MonstrousPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             create_date=create_date,
-            score_args=dict(require_types={CreatureType.Monstrosity, CreatureType.Beast})
+            score_args=dict(
+                require_types={CreatureType.Monstrosity, CreatureType.Beast}
+            )
             | score_args,
         )
 
@@ -73,19 +74,25 @@ class _Swallow(MonstrousPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             require_size=Size.Large,
-            require_types={CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Ooze},
+            require_types={
+                CreatureType.Monstrosity,
+                CreatureType.Beast,
+                CreatureType.Ooze,
+            },
             attack_names={"-", natural.Bite},
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
         threshold = easy_multiple_of_five(3 * stats.cr, min_val=5, max_val=40)
         swallowed = Swallowed(
             damage=DieFormula.target_value(6 + stats.cr, force_die=Die.d4),
-            regurgitate_dc=easy_multiple_of_five(threshold * 0.85, min_val=15, max_val=25),
+            regurgitate_dc=easy_multiple_of_five(
+                threshold * 0.85, min_val=15, max_val=25
+            ),
             regurgitate_damage_threshold=threshold,
         )
 
@@ -128,7 +135,7 @@ class _Corrosive(MonstrousPower):
             bonus_damage=DamageType.Acid,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Acid)
         return stats

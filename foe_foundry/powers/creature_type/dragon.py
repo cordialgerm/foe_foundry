@@ -68,7 +68,7 @@ class _TailSwipe(DraconicPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.attack.name == natural_attacks.Tail.attack_name:
             return stats
 
