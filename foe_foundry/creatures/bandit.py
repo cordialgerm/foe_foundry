@@ -102,6 +102,8 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Default),
             Stats.CHA.scaler(StatScaling.Medium, mod=-0.5),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(

@@ -61,11 +61,12 @@ class DomineeringPower(PowerWithStandardScoring):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attributes = stats.attributes.boost(
             Stats.CHA, 4
         ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
+        stats = stats.grant_spellcasting(Stats.CHA)
         return stats
 
 

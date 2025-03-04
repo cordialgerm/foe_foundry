@@ -57,7 +57,7 @@ class RecklessPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.scale({Stats.WIS: -1})
 
 
@@ -212,7 +212,7 @@ class _Strangle(RecklessPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
         return stats.add_attack(
             name="Strangle",

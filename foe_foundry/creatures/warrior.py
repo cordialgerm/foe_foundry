@@ -108,7 +108,13 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.CHA.scaler(StatScaling.Default, mod=-2),
         ]
 
-    stats = base_stats(name=name, cr=cr, stats=stat_scaling)
+    stats = base_stats(
+        name=name,
+        cr=cr,
+        stats=stat_scaling,
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
+    )
 
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,

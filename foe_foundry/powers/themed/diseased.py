@@ -44,12 +44,15 @@ class DiseasePower(PowerWithStandardScoring):
                     natural.Spit,
                     spell.Poisonbolt,
                 ],
-                # there's a score multiplier because each of these powers has N different variants (one for each disease)
-                # so we want to reduce the overall likelyhood of any individual disease power being selected
-                score_multiplier=0.75,
                 **score_args,
             ),
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Poison)
+        return stats
 
 
 def _RottenGrasp(disease: conditions.CustomCondition) -> Power:

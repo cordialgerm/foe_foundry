@@ -1,11 +1,11 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from typing import Annotated
 
 import numpy as np
 from fastapi import APIRouter, HTTPException, Query
 
 from foe_foundry import CreatureType, MonsterRole
-from foe_foundry.powers import Power
+from foe_foundry.utils import name_to_key
 
 from ..data.power import PowerModel
 from . import whoosh
@@ -16,7 +16,7 @@ router = APIRouter(prefix="/api/v1/powers")
 
 @router.get("/power/{power_name}")
 def get_power(*, power_name: str) -> PowerModel:
-    key = Power.name_to_key(power_name)
+    key = name_to_key(power_name)
     power = whoosh.PowerLookup.get(key)
     if power is None:
         raise HTTPException(status_code=404, detail="Power not found")
@@ -25,7 +25,10 @@ def get_power(*, power_name: str) -> PowerModel:
 
 @router.get("/random")
 def random(
-    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+    *,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=20)
+    ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
     rng = np.random.default_rng()
@@ -37,7 +40,10 @@ def random(
 
 @router.get("/new")
 def new(
-    *, limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=20)] = 10
+    *,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=20)
+    ] = 10,
 ) -> list[PowerModel]:
     limit = limit or 10
     now = datetime.now()
@@ -64,8 +70,12 @@ def search_powers(
     role: Annotated[
         MonsterRole | None, Query(title="filter results to a specific role")
     ] = None,
-    theme: Annotated[str | None, Query(title="filter results to a specific theme")] = None,
-    limit: Annotated[int | None, Query(title="maximum response size", ge=1, le=40)] = 20,
+    theme: Annotated[
+        str | None, Query(title="filter results to a specific theme")
+    ] = None,
+    limit: Annotated[
+        int | None, Query(title="maximum response size", ge=1, le=40)
+    ] = 20,
 ) -> list[PowerModel]:
     limit = limit or 10
 

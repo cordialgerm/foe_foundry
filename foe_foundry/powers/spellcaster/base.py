@@ -4,9 +4,9 @@ from typing import List
 from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
-from ....damage import AttackType
-from ....spells import StatblockSpell
-from ...power import HIGH_POWER, PowerType, PowerWithStandardScoring
+from ...damage import AttackType
+from ...spells import StatblockSpell
+from ..power import HIGH_POWER, PowerType, PowerWithStandardScoring
 
 
 class _Spellcaster(PowerWithStandardScoring):
@@ -47,7 +47,8 @@ class _Spellcaster(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_spellcasting()
         if self.creature_class is not None and stats.creature_class is None:
             stats = stats.copy(creature_class=self.creature_class)
         sorted_spells = sorted(self.spells, key=lambda s: s.name)

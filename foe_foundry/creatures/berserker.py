@@ -83,6 +83,8 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Default),
             Stats.CHA.scaler(StatScaling.Default, mod=-1),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(

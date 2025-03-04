@@ -57,7 +57,7 @@ class _Encouragement(SupportPower):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attributes = stats.attributes.grant_proficiency_or_expertise(
             Skills.Medicine, Skills.Insight
         )

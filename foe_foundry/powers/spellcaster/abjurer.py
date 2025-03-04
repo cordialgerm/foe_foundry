@@ -1,10 +1,10 @@
 from typing import List
 
-from ....attack_template import spell
-from ....creature_types import CreatureType
-from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....spells import (
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...features import ActionType, Feature
+from ...role_types import MonsterRole
+from ...spells import (
     abjuration,
     conjuration,
     enchantment,
@@ -12,9 +12,9 @@ from ....spells import (
     illusion,
     transmutation,
 )
-from ....statblocks import BaseStatblock
-from ....utils import easy_multiple_of_five
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ...statblocks import BaseStatblock
+from ...utils import easy_multiple_of_five
+from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
 

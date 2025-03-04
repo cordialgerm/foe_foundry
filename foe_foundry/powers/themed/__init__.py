@@ -31,7 +31,6 @@ from . import (
     psychic,
     reckless,
     sneaky,
-    spellcaster,
     storm,
     technique,
     teleportation,
@@ -71,7 +70,6 @@ ThemedPowers: List[Power] = (
     + reckless.RecklessPowers
     + skeletal.SkeletalPowers
     + sneaky.SneakyPowers
-    + spellcaster.SpellcasterPowers
     + storm.StormPowers
     + technique.TechniquePowers
     + teleportation.TeleportationPowers

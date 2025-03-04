@@ -82,7 +82,10 @@ class PowerModel:
 
         creature_template = get_creature_template(creature_type)
         stats = creature_template.create(
-            base_stats=stats, rng_factory=rng, role_template=role, skip_power_selection=True
+            base_stats=stats,
+            rng_factory=rng,
+            role_template=role,
+            skip_power_selection=True,
         )
 
         features = power.generate_features(stats)

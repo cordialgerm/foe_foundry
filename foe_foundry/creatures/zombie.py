@@ -78,6 +78,8 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Default, mod=-4),
             Stats.CHA.scaler(StatScaling.Default, mod=-5),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
 
     stats = stats.copy(

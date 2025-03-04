@@ -7,6 +7,8 @@ from ..damage import AttackType, DamageType
 from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
+from ..utils import name_to_key
+from .flags import theme_flag
 from .power_type import PowerType
 from .scoring import score as standard_score
 
@@ -22,6 +24,7 @@ class Power(ABC):
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         roles: List[MonsterRole] | None = None,
@@ -30,7 +33,6 @@ class Power(ABC):
         attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
-        theme: str | None = None,
     ):
         self.name = name
         self.power_type = power_type
@@ -59,13 +61,21 @@ class Power(ABC):
 
     @property
     def key(self) -> str:
-        return Power.name_to_key(self.name)
+        return name_to_key(self.name)
+
+    @property
+    def theme_key(self) -> str | None:
+        return name_to_key(self.theme) if self.theme is not None else None
 
     @abstractmethod
     def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
         pass
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = self.modify_stats_inner(stats)
+        return stats.with_flags(theme_flag(self.theme))
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats
 
     @abstractmethod
@@ -81,20 +91,16 @@ class Power(ABC):
     def __eq__(self, other: Any) -> bool:
         return isinstance(other, Power) and self.key == other.key
 
-    @staticmethod
-    def name_to_key(name: str) -> str:
-        return name.lower().replace(" ", "-")
-
 
 class PowerWithStandardScoring(Power):
     def __init__(
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
-        theme: str | None = None,
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:

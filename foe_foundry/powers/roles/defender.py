@@ -73,7 +73,7 @@ class _ZoneOfControl(DefenderPower):
             name="Zone Of Control", source="Foe Foundry", power_level=LOW_POWER
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attributes = stats.attributes.grant_proficiency_or_expertise(
             Skills.Athletics
         )

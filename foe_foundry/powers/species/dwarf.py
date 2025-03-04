@@ -68,8 +68,8 @@ class DwarvenPowerWrapper(DwarvenPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return self.wrapped_power.generate_features(stats)
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        return self.wrapped_power.modify_stats(stats)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return self.wrapped_power.modify_stats_inner(stats)
 
 
 class _HardDrink(DwarvenPower):

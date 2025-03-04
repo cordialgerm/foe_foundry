@@ -1,27 +1,34 @@
 from typing import List
 
-from ....creature_types import CreatureType
-from ....damage import AttackType
-from ....role_types import MonsterRole
-from ....spells import (
+from ...creature_types import CreatureType
+from ...damage import AttackType
+from ...role_types import MonsterRole
+from ...spells import (
     abjuration,
     enchantment,
     evocation,
     illusion,
     necromancy,
 )
-from ...power import HIGH_POWER, LOW_POWER, Power
+from ..power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 
-_adept = [abjuration.DispelMagic, evocation.Darkness, illusion.Fear, enchantment.Suggestion]
+_adept = [
+    abjuration.DispelMagic,
+    evocation.Darkness,
+    illusion.Fear,
+    enchantment.Suggestion,
+]
 _master = [evocation.WallOfFire, evocation.Fireball]
 _expert = [necromancy.FingerOfDeath, necromancy.CircleOfDeath]
 
 FiendishAdeptSpells = spell_list(_adept, uses=1)
 FiendishMasterSpells = spell_list(_adept, uses=2) + spell_list(_master, uses=1)
 FiendishExpertSpells = (
-    spell_list(_adept, uses=3) + spell_list(_master, uses=2) + spell_list(_expert, uses=1)
+    spell_list(_adept, uses=3)
+    + spell_list(_master, uses=2)
+    + spell_list(_expert, uses=1)
 )
 
 

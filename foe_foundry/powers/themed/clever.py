@@ -56,7 +56,9 @@ class _IdentifyWeakness(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
         new_attrs = (
             stats.attributes.boost(Stats.CHA, 2)
             .boost(Stats.INT, 2)
@@ -88,7 +90,9 @@ class _ArcaneMark(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(Stats.INT)
         return stats.add_spell(evocation.FaerieFire.for_statblock())
 
 

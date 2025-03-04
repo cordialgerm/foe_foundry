@@ -75,6 +75,11 @@ class _EndlessServitude(DeathlyPower):
             bonus_roles=MonsterRole.Leader,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting()
+        return stats
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Endless Servitude",
@@ -100,7 +105,7 @@ class _WitheringBlow(DeathlyPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
 
         def customize(a: Attack) -> Attack:
@@ -166,7 +171,7 @@ class _ShadowWalk(DeathlyPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.copy(has_unique_movement_manipulation=True)
 
 
@@ -175,6 +180,11 @@ class _FleshPuppets(DeathlyPower):
         super().__init__(
             name="Flesh Puppets", source="Foe Foundry", power_level=HIGH_POWER
         )
+
+    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats(stats)
+        stats = stats.grant_spellcasting()
+        return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         cr = int(ceil(stats.cr / 3))

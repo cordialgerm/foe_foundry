@@ -89,7 +89,7 @@ def elemental_affinity_power(damage_type: DamageType) -> Power:
                 require_damage=damage_type,
             )
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             if stats.cr <= 8:
                 stats = stats.grant_resistance_or_immunity(
                     resistances={damage_type},

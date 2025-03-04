@@ -141,7 +141,7 @@ class PowerSelection:
         )  # high bc statblock becomes confusing
 
         # lose points if you're above target in some areas and below target in others
-        if np.any(above_targets) and np.any(below_targets):
+        if np.any(above_targets) or np.any(below_targets):
             c = np.sum(above_targets) + np.sum(below_targets)
             penalties += 0.25 * c
 

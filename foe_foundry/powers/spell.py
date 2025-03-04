@@ -21,7 +21,7 @@ class SpellPower(PowerWithStandardScoring):
             score_args.update(require_cr=spell.recommended_min_cr)
 
         if "name" not in kwargs:
-            kwargs.update(name=f"Spellcasting - {spell.name}")
+            kwargs.update(name=f"Spellcasting-{spell.name}")
 
         if "source" not in kwargs:
             kwargs.update(source="SRD 5.1")
@@ -38,5 +38,6 @@ class SpellPower(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_spellcasting()
         return stats.add_spell(spell=self.spell.copy())

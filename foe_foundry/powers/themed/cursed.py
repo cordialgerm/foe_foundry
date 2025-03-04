@@ -39,7 +39,7 @@ class CursedPower(PowerWithStandardScoring):
             score_args=standard_score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type != DamageType.Necrotic:
             stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
 
@@ -197,7 +197,7 @@ class _ReplaceShadow(CursedPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
         return stats

@@ -1,13 +1,13 @@
 from typing import List
 
-from ....attack_template import spell
-from ....creature_types import CreatureType
-from ....damage import DamageType
-from ....features import ActionType, Feature
-from ....role_types import MonsterRole
-from ....spells import enchantment, illusion
-from ....statblocks import BaseStatblock
-from ...power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...features import ActionType, Feature
+from ...role_types import MonsterRole
+from ...spells import enchantment, illusion
+from ...statblocks import BaseStatblock
+from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
 

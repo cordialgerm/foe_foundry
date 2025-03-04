@@ -109,7 +109,8 @@ class _FiendishCackle(FiendishPower):
 
         return [feature1]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_spellcasting()
         spell = enchantment.Bane.for_statblock(
             uses=1, concentration=False, notes="no concentration"
         )
@@ -153,7 +154,7 @@ class _WallOfFire(FiendishPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.cr <= 7:
             uses = 1
             notes = None
@@ -166,6 +167,7 @@ class _WallOfFire(FiendishPower):
 
         spell = evocation.WallOfFire.for_statblock(uses=uses, notes=notes)
 
+        stats = stats.grant_spellcasting()
         return stats.add_spell(spell)
 
 
@@ -181,7 +183,7 @@ class _FiendishBite(FiendishPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
         def customize(a: Attack) -> Attack:

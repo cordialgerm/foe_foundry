@@ -111,7 +111,7 @@ class _Vanish(SneakyPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs, has_unique_movement_manipulation=True)
         return stats

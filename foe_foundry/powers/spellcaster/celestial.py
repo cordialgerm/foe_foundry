@@ -1,11 +1,11 @@
 from typing import List
 
-from ....creature_types import CreatureType
-from ....damage import AttackType, DamageType
-from ....role_types import MonsterRole
-from ....spells import abjuration, divination, evocation, necromancy
-from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, LOW_POWER, Power
+from ...creature_types import CreatureType
+from ...damage import AttackType, DamageType
+from ...role_types import MonsterRole
+from ...spells import abjuration, divination, evocation, necromancy
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 
@@ -56,7 +56,7 @@ class _CelestialCaster(_Spellcaster):
     def __init__(self, **kwargs):
         args: dict = (
             dict(
-                theme="celestial",
+                theme="Celestial",
                 score_args=dict(
                     require_callback=is_celestial_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],

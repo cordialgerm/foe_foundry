@@ -1,9 +1,8 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.statblocks import BaseStatblock
-
 from ...attack_template import natural as natural_attacks
+from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, DamageType, Dazed
 from ...die import Die, DieFormula
@@ -50,7 +49,7 @@ class PsychicPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
         return stats
@@ -67,7 +66,8 @@ class _Telekinetic(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_spellcasting(Stats.CHA)
         return stats.add_spell(transmutation.Telekinesis.for_statblock())
 
 
@@ -179,7 +179,7 @@ class _EatBrain(PsychicPower):
             },
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.add_attack(
             scalar=3.5,
             damage_type=DamageType.Piercing,

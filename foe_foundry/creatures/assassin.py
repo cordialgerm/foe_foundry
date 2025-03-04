@@ -77,6 +77,8 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Medium, mod=1),
             Stats.CHA.scaler(StatScaling.Medium, mod=1),
         ],
+        hp_multiplier=settings.hp_multiplier,
+        damage_multiplier=settings.damage_multiplier,
     )
     stats = stats.copy(
         name=name,

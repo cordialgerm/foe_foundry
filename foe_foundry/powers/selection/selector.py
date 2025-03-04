@@ -6,7 +6,7 @@ import numpy as np
 from numpy.random import Generator
 
 from foe_foundry.features import ActionType, Feature
-from foe_foundry.powers import MEDIUM_POWER, Power, PowerType
+from foe_foundry.powers import MEDIUM_POWER, Power, PowerType, flags
 from foe_foundry.powers.all import AllPowers
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
@@ -103,15 +103,18 @@ class PowerSelector:
         # 3. feasibility multipliers based on constraints are applied to the weighted scores
 
         for power in self.all_powers:
+            boost = self.settings.get_boost(power)
+
             if self.custom is None:
-                custom_multiplier = 1.0
+                custom_multiplier = 1.0 + boost
                 relaxed_mode = False
             else:
                 custom_weight = self.custom.custom_weight(power)
-                custom_multiplier = custom_weight.weight
-                relaxed_mode = custom_weight.ignore_usual_requirements
+                custom_multiplier = max(custom_weight.weight, boost)
+                relaxed_mode = custom_weight.ignore_usual_requirements or boost > 0
 
             raw_score = power.score(self.stats, relaxed_mode=relaxed_mode)
+
             if raw_score <= 0:
                 raw_score = -20
                 weighted_score = -20
@@ -122,7 +125,9 @@ class PowerSelector:
                     adjusted_score = -20
                 else:
                     weighted_score = custom_multiplier * raw_score
-                    feasibility_multiplier = self.feasibility_multiplier(power)
+                    feasibility_multiplier = self.feasibility_multiplier(
+                        power, check_targets=boost <= 0
+                    )
                     if feasibility_multiplier <= 0:
                         adjusted_score = -20
                     else:
@@ -142,7 +147,7 @@ class PowerSelector:
             self._probabilities(adjusted_scores),
         )
 
-    def feasibility_multiplier(self, power: Power) -> float:
+    def feasibility_multiplier(self, power: Power, check_targets: bool = True) -> float:
         try:
             score = self.score
 
@@ -191,11 +196,18 @@ class PowerSelector:
             ):
                 multiplier *= 1.25
 
+            # if the creature already has a power of this theme then make it less attractive
+            if flags.theme_flag(power.theme) in self.stats.flags:
+                multiplier *= 0.5
+
             # if feature would cause us to go above target then make it less attractive
             # don't eliminate it entirely because it might lead to total infeasibility
-            if not self._power_follows_target_goals(power) or any(
-                not self._feature_follows_target_goals(f)
-                for f in power.generate_features(self.stats)
+            if check_targets and (
+                not self._power_follows_target_goals(power)
+                or any(
+                    not self._feature_follows_target_goals(f)
+                    for f in power.generate_features(self.stats)
+                )
             ):
                 multiplier *= 0.1
 

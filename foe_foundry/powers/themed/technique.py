@@ -694,7 +694,7 @@ class _PommelStrike(Technique):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy
 
@@ -888,6 +888,7 @@ class _ArmorMaster(PowerWithStandardScoring):
             name="Armor Master",
             source="A5E SRD Heavy Armor Expertise",
             power_type=PowerType.Theme,
+            theme="technique",
             score_args=dict(
                 require_callback=is_heavily_armored,
                 require_cr=3,
@@ -904,7 +905,7 @@ class _ArmorMaster(PowerWithStandardScoring):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.add_ac_template(PlateArmor)
 
 

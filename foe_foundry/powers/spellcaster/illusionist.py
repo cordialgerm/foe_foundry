@@ -1,12 +1,12 @@
 from typing import List
 
-from ....creature_types import CreatureType
-from ....features import Feature
-from ....role_types import MonsterRole
-from ....spells import illusion
-from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power
-from ..tricky import Projection
+from ...creature_types import CreatureType
+from ...features import Feature
+from ...role_types import MonsterRole
+from ...spells import illusion
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power
+from ..themed.tricky import Projection
 from .base import _Wizard
 from .utils import spell_list
 

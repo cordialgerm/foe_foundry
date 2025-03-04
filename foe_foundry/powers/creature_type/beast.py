@@ -61,7 +61,7 @@ class _FeedingFrenzy(BeastPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.copy(attributes=new_attrs)
         return stats
@@ -88,7 +88,7 @@ class _BestialRampage(BeastPower):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Survival)
         stats = stats.copy(attributes=new_attrs)
         return stats
@@ -111,7 +111,7 @@ class _Gore(BeastPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
         bleeding_damage = stats.target_value(0.5)
@@ -168,7 +168,7 @@ class _Web(BeastPower):
 
         return [feature1, feature2, feature3]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_speed = stats.speed.copy(climb=stats.speed.walk)
         stats = stats.copy(speed=new_speed)
         return stats

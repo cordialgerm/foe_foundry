@@ -1,13 +1,13 @@
 from typing import List
 
-from ....attack_template import spell
-from ....creature_types import CreatureType
-from ....damage import AttackType, DamageType, conditions
-from ....die import Die
-from ....features import ActionType, Feature
-from ....spells import conjuration, evocation, necromancy
-from ....statblocks import BaseStatblock
-from ...power import HIGH_POWER, Power
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...damage import AttackType, DamageType, conditions
+from ...die import Die
+from ...features import ActionType, Feature
+from ...spells import conjuration, evocation, necromancy
+from ...statblocks import BaseStatblock
+from ..power import HIGH_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
 

@@ -7,44 +7,42 @@ from ...statblocks import BaseStatblock
 from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 
-class _Aquatic(PowerWithStandardScoring):
-    def __init__(self):
-        def not_already_humanoid_or_special_movement(c: BaseStatblock) -> bool:
-            return (
-                not (c.speed.fly or 0)
-                and not (c.speed.climb or 0)
-                and c.creature_subtype is None
-                and c.creature_class is None
-                and not c.has_unique_movement_manipulation
-            )
+class AquaticBase(PowerWithStandardScoring):
+    def __init__(
+        self, name: str, source: str, power_level: float = RIBBON_POWER, **args
+    ):
+        def not_already_special_movement(c: BaseStatblock) -> bool:
+            return not c.has_unique_movement_manipulation
 
-        score_args = dict(
-            require_types=[
-                CreatureType.Beast,
-                CreatureType.Monstrosity,
-                CreatureType.Humanoid,
-            ],
-            require_callback=not_already_humanoid_or_special_movement,
-            bonus_swimming=True,
-            score_multiplier=0.5,
+        score_args = (
+            dict(
+                require_callback=not_already_special_movement,
+                require_swimming=True,
+            )
+            | args
         )
 
         super().__init__(
-            name="Aquatic",
+            name=name,
             power_type=PowerType.Theme,
-            source="SRD5.1 Merfolk",
             theme="Aquatic",
-            power_level=RIBBON_POWER,
+            source=source,
+            power_level=power_level,
             score_args=score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_speed = stats.speed.copy(swim=stats.speed.walk)
         new_senses = stats.senses.copy(darkvision=60)
         stats = stats.copy(
             speed=new_speed, senses=new_senses, has_unique_movement_manipulation=True
         )
         return stats
+
+
+class _Aquatic(AquaticBase):
+    def __init__(self):
+        super().__init__(name="Aquatic", source="SRD5.1 Merfolk")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -55,17 +53,12 @@ class _Aquatic(PowerWithStandardScoring):
         return [feature]
 
 
-class _InkCloud(PowerWithStandardScoring):
+class _InkCloud(AquaticBase):
     def __init__(self):
-        score_args = dict(require_swimming=True)
-
         super().__init__(
             name="Ink Cloud",
-            power_type=PowerType.Theme,
             source="SRD5.1 Octopus",
-            theme="Aquatic",
             power_level=RIBBON_POWER,
-            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -78,21 +71,14 @@ class _InkCloud(PowerWithStandardScoring):
         return [feature]
 
 
-class _SlimyCloud(PowerWithStandardScoring):
+class _SlimyCloud(AquaticBase):
     def __init__(self):
-        score_args = dict(
-            require_swimming=True,
+        super().__init__(
+            name="Slimy Cloud",
+            source="SRD5.1 Aboleth",
             require_types=[CreatureType.Aberration, CreatureType.Monstrosity],
             bonus_damage=DamageType.Poison,
             require_cr=3,
-        )
-
-        super().__init__(
-            name="Slimy Cloud",
-            power_type=PowerType.Theme,
-            source="SRD5.1 Aboleth",
-            theme="Aquatic",
-            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

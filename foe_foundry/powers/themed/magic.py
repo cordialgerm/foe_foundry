@@ -65,6 +65,12 @@ class _Disintigrate(_MagicPower):
             ),
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Force)
+        return stats
+
 
 class _FingerOfDeath(_MagicPower):
     def __init__(self):
@@ -78,6 +84,12 @@ class _FingerOfDeath(_MagicPower):
                 require_cr=8,
             ),
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
+        return stats
 
 
 class _ChainLightning(_MagicPower):
@@ -96,6 +108,12 @@ class _ChainLightning(_MagicPower):
                 require_cr=7,
             ),
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Lightning)
+        return stats
 
 
 class _Banishment(_MagicPower):
@@ -132,6 +150,12 @@ class _Fireball(_MagicPower):
             ),
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Fire)
+        return stats
+
 
 class _LightningBolt(_MagicPower):
     def __init__(self):
@@ -149,6 +173,12 @@ class _LightningBolt(_MagicPower):
                 require_cr=5,
             ),
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Lightning)
+        return stats
 
 
 Banishment: Power = _Banishment()
