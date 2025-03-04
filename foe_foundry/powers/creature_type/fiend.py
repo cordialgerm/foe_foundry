@@ -117,13 +117,18 @@ class _FiendishCackle(FiendishPower):
         return stats.add_spell(spell)
 
 
-class _FiendishTeleporation(FiendishPower):
+class _FieryTeleporation(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Teleportation",
+            name="Fiery Teleportation",
             source="Foe Foundry",
             bonus_damage=DamageType.Fire,
+            require_no_flags="fiend_teleportation",
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        return stats.with_flags("fiend_teleportation")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
@@ -131,13 +136,34 @@ class _FiendishTeleporation(FiendishPower):
         distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=90)
         dc = stats.difficulty_class_easy
         feature = Feature(
-            name="Fiendish Teleportation",
+            name="Fiery Teleportation",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} disappears and reappears in a burst of flame. It teleports up to {distance} feet to an unoccupied location it can see. \
                 {stats.selfref.capitalize()} may choose to bring one friendly creature within 5 feet or a creature it has grappled with it. \
                 Each other creature that did not teleport within 10 feet of {stats.selfref} either before or after it teleports must make a DC {dc} Dexterity saving throw. \
                 On a failure, it takes {dmg.description} fire damage.",
+        )
+        return [feature]
+
+
+class _FiendishTeleporation(FiendishPower):
+    def __init__(self):
+        super().__init__(
+            name="Fiendish Teleportation",
+            source="Foe Foundry",
+            require_no_flags="fiend_teleportation",
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        return stats.with_flags("fiend_teleportation")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Fiendish Teleportation",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} teleports itself or a friendly creature within 10 feet to an unoccupied space it can see within 60 feet.",
         )
         return [feature]
 
@@ -274,13 +300,36 @@ class _DevilsSight(FiendishPower):
         return [devils_sight, darkness]
 
 
+class _FlameWhip(FiendishPower):
+    def __init__(self):
+        super().__init__(
+            name="Flame Whip", source="Foe Foundry", create_date=datetime(2025, 3, 3)
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dmg = stats.target_value(1.3 if stats.multiattack >= 2 else 0.8)
+        dc = stats.difficulty_class
+
+        feature = Feature(
+            name="Flame Whip",
+            action=ActionType.Action,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} wraps a fiery whip around a creature within 30 feet. It must make a DC {dc} Dexterity save. \
+                On a failure, it takes {dmg.description} fire damage and is pulled up to 30 feet closer to {stats.selfref} and is knocked **Prone**. On a success, it takes half damage instead.",
+        )
+
+        return [feature]
+
+
 CallOfTheStyx: Power = _CallOfTheStyx()
 DevilsSight: Power = _DevilsSight()
 FeastOfSouls: Power = _FeastOfSouls()
 FiendishBite: Power = _FiendishBite()
 FiendishCackle: Power = _FiendishCackle()
 FiendishSummons: Power = _FiendishSummons()
+FieryTeleportation: Power = _FieryTeleporation()
 FiendishTeleportation: Power = _FiendishTeleporation()
+FlameWhip: Power = _FlameWhip()
 TemptingOffer: Power = _TemptingOffer()
 WallOfFire: Power = _WallOfFire()
 
@@ -292,6 +341,8 @@ FiendishPowers = [
     FiendishCackle,
     FiendishSummons,
     FiendishTeleportation,
+    FieryTeleportation,
+    FlameWhip,
     TemptingOffer,
     WallOfFire,
 ]

@@ -18,7 +18,7 @@ Fire: SummoningList = {
 }
 
 Cold: SummoningList = {
-    ("*Steam Elemental*", 1 / 4),
+    ("*Steam Mephit*", 1 / 4),
     ("*Winter Wolf*", 3),
     ("*Young White Dragon*", 6),
 }
@@ -36,7 +36,11 @@ Air: SummoningList = {
     ("*Dust Devil*", 5),
 }
 
-Poison: SummoningList = {("*Gray Ooze*", 1 / 2), ("*Ochre Jelly*", 2), ("*Black Pudding*", 4)}
+Poison: SummoningList = {
+    ("*Gray Ooze*", 1 / 2),
+    ("*Ochre Jelly*", 2),
+    ("*Black Pudding*", 4),
+}
 
 Elementals: SummoningList = {
     ("*Smoke Mephit*", 1 / 4),
@@ -50,7 +54,12 @@ Elementals: SummoningList = {
     ("*Dust Devil*", 5),
 }
 
-Undead: SummonerInfo = {("*Skeleton*", 1 / 4), ("*Ghoul*", 1), ("*Mummy*", 3), ("*Ghost*", 4)}
+Undead: SummonerInfo = {
+    ("*Skeleton*", 1 / 4),
+    ("*Ghoul*", 1),
+    ("*Mummy*", 3),
+    ("*Ghost*", 4),
+}
 
 Celestials: SummonerInfo = {
     ("*Giant Eagle*", 1),
@@ -224,13 +233,13 @@ def determine_summon_formula(
             # summoning 1 or 2 entities is ideal, so boost the weight
             quantity = int(round(target_val))
             formula = DieFormula.from_expression(str(quantity))
-            weight = 2
+            weight = 1.5
         else:
             # if there are 3 or more minions being summoned then use a d4 dice formula
             # if there are going to be many summons, then prefer not to use that option
             if target_val > max_quantity:
                 target_val = max_quantity
-                weight = 0.5
+                weight = 0.75
             else:
                 weight = 1
 
@@ -248,8 +257,10 @@ def determine_summon_formula(
     creature = names[index]
     formula = formulas[index]
 
-    description = f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \
+    description = (
+        f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \
         On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
         They then act normally on subsequent turns."
+    )
 
     return creature, formula, description

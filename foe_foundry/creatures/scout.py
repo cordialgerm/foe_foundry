@@ -2,7 +2,6 @@ from ..ac_templates import LeatherArmor, StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.legendary import make_legendary
 from ..powers.roles.artillery import FocusShot
 from ..powers.roles.skirmisher import HarassingRetreat
 from ..powers.themed.clever import IdentifyWeaknes
@@ -143,6 +142,10 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 7:
         stats = stats.grant_save_proficiency(Stats.WIS)
 
+    # LEGENDARY
+    if variant is CommanderVariant and stats.cr >= 7:
+        stats = stats.as_legendary()
+
     # POWERS
     features = []
 
@@ -160,10 +163,6 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
-
-    # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 7:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

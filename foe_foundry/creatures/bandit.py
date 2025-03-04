@@ -6,7 +6,6 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, select_powers
-from ..powers.legendary import make_legendary
 from ..powers.roles import artillery, leader
 from ..powers.themed import gadget, organized, sneaky, technique
 from ..role_types import MonsterRole
@@ -172,6 +171,10 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 4:
         stats = stats.grant_save_proficiency(Stats.STR, Stats.DEX, Stats.CON)
 
+    # LEGENDARY
+    if variant is BanditCaptainVariant and stats.cr >= 11:
+        stats = stats.as_legendary()
+
     # POWERS
     features = []
 
@@ -190,10 +193,6 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-
-    # LEGENDARY
-    if variant is BanditCaptainVariant and stats.cr >= 11:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

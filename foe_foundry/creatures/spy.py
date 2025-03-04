@@ -6,7 +6,6 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, select_powers
-from ..powers.legendary import make_legendary
 from ..powers.roles.ambusher import DeadlyAmbusher, StealthySneak
 from ..powers.roles.artillery import QuickDraw
 from ..powers.roles.skirmisher import CunningAction
@@ -172,6 +171,10 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 6:
         stats = stats.grant_save_proficiency(Stats.DEX, Stats.CON, Stats.INT, Stats.WIS)
 
+    # LEGENDARY
+    if variant == SpyMasterVariant:
+        stats = stats.as_legendary()
+
     # POWERS
     features = []
 
@@ -190,10 +193,6 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-
-    # LEGENDARY
-    if variant == SpyMasterVariant:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

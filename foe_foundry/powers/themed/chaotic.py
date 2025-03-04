@@ -95,7 +95,7 @@ class _EldritchBeacon(ChaoticPower):
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:
-            summon_cr_target = max(stats.cr / 5, 1)
+            summon_cr_target = max(stats.cr / 4, 1)
             _, _, description = summoning.determine_summon_formula(
                 summoner=stats.creature_type, summon_cr_target=summon_cr_target, rng=rng
             )
@@ -104,7 +104,7 @@ class _EldritchBeacon(ChaoticPower):
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        hp = easy_multiple_of_five(stats.cr * 5, min_val=5, max_val=30)
+        hp = easy_multiple_of_five(stats.cr * 3, min_val=5, max_val=50)
         ac = 10
         duration = DieFormula.from_expression("1d4 + 1")
         description = self._summon_formula(stats, np.random.default_rng(20210518))

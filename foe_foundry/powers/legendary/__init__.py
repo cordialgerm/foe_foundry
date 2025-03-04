@@ -1,1 +1,1 @@
-from .legendary import make_legendary  # noqa
+from .features import get_legendary_actions  # noqa

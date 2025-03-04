@@ -1,4 +1,5 @@
 from .assassin import AssassinTemplate
+from .balor import BalorTemplate
 from .bandit import BanditTemplate
 from .berserker import BerserkerTemplate
 from .cultist import CultistTemplate
@@ -15,6 +16,7 @@ from .zombie import ZombieTemplate
 
 AllTemplates: list[CreatureTemplate] = [
     AssassinTemplate,
+    BalorTemplate,
     BanditTemplate,
     BerserkerTemplate,
     CultistTemplate,

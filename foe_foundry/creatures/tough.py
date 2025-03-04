@@ -5,7 +5,6 @@ from ..damage import AttackType, DamageType
 from ..die import Die
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import PackTactics
-from ..powers.legendary import make_legendary
 from ..powers.roles import leader
 from ..powers.themed import cruel, reckless, technique
 from ..role_types import MonsterRole
@@ -159,6 +158,10 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 4:
         stats = stats.grant_save_proficiency(Stats.CON, Stats.CHA)
 
+    # LEGENDARY
+    if variant is BossVariant and cr >= 8:
+        stats = stats.as_legendary()
+
     # POWERS
     features = []
 
@@ -176,10 +179,6 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
-
-    # LEGENDARY
-    if variant is BossVariant and cr >= 8:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

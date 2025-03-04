@@ -3,7 +3,6 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import MightyLeap, WarriorPowers
-from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import NetPowers
 from ..powers.themed.organized import OrganizedPowers
 from ..powers.themed.technique import TechniquePowers
@@ -186,6 +185,10 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 8:
         stats = stats.grant_save_proficiency(Stats.WIS, Stats.DEX, Stats.CON)
 
+    # LEGENDARY
+    if variant is CommanderVariant and stats.cr >= 16:
+        stats = stats.as_legendary()
+
     # POWERS
     features = []
 
@@ -203,10 +206,6 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
-
-    # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 16:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

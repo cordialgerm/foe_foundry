@@ -16,6 +16,7 @@ from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
 from ..spells import StatblockSpell
+from ..utils import easy_multiple_of_five
 from ..xp import xp_by_cr
 from .dials import MonsterDials
 from .suggested_powers import recommended_powers_for_cr
@@ -63,6 +64,7 @@ class BaseStatblock:
     has_lair: bool = False
     legendary_actions: int = 0
     legendary_resistances: int = 0
+    legendary_resistance_damage_taken: int = 0
     flags: set[str] = field(default_factory=set)
 
     def __post_init__(self):
@@ -174,6 +176,8 @@ class BaseStatblock:
             legendary_actions=self.legendary_actions,
             legendary_resistances=self.legendary_resistances,
             has_lair=self.has_lair,
+            is_legendary=self.is_legendary,
+            legendary_resistance_damage_taken=self.legendary_resistance_damage_taken,
         )
         return args
 
@@ -426,14 +430,9 @@ class BaseStatblock:
         if target > self.multiattack:
             adjustment *= 0.8
 
-        # if the monster is high CR then we can afford to scale it up a bit
-        if self.cr >= 7:
-            adjustment *= 1.1
-
-        if self.cr >= 15:
-            adjustment *= 1.1
-
-        scaled_target = self.attack.average_damage * target * adjustment
+        scaled_target = (
+            self.base_attack_damage * self.damage_modifier * target * adjustment
+        )
         return DieFormula.target_value(target=scaled_target, **args)
 
     def with_roles(
@@ -465,20 +464,131 @@ class BaseStatblock:
     def as_legendary(
         self, *, actions: int = 3, resistances: int = 3, has_lair: bool = False
     ) -> BaseStatblock:
-        return self.copy(
+        stats = self.copy()
+        if stats.is_legendary:
+            return stats
+
+        original_dpr = stats.dpr
+
+        # HP and LR Adjustments
+
+        # each legendary resistance will cost the monster some HP
+        # so we'll want to increase the creature's HP to accomodate
+        # we want bosses to die in about 4 turns so with a 4 person party that's 16 hits
+        # the legendary action shouldn't feel like a waste, so it needs to do something on the order of 1/16th of the creature's HP
+        # so we'll increase the creature's HP by half the amount of damage that each legendary resistance inflicts to help compensate
+
+        turns_to_die = 3
+        assumed_pcs = 4
+        hits_to_die = turns_to_die * assumed_pcs
+        average_damage_per_hit = stats.hp.average / hits_to_die
+        lr_damage_effectiveness = (
+            0.75  # it can't be 1.0 because then draining the LR would be too good
+        )
+
+        legendary_resistance_damage_taken = easy_multiple_of_five(
+            lr_damage_effectiveness * average_damage_per_hit, min_val=5
+        )
+        new_hp_multiplier = 1.15 * (
+            1.0
+            + (
+                0.75
+                * legendary_resistance_damage_taken
+                * resistances
+                / stats.hp.average
+            )
+        )
+
+        stats = stats.copy(
             is_legendary=True,
             legendary_actions=actions,
             legendary_resistances=resistances,
+            legendary_resistance_damage_taken=legendary_resistance_damage_taken,
             has_lair=has_lair,
         )
+
+        # AC Adjustments
+        if stats.cr >= 22:
+            ac_increase = 3
+        elif stats.cr >= 16:
+            ac_increase = 2
+        else:
+            ac_increase = 1
+
+        # Damage Adjustments
+
+        # The legendary creature will have an Attack legendary action, so its total damage output will go up dramatically
+        # we need to adjust the creature's total damage output to account for this
+        # we also want to reduce the total number of attacks the creature can make in a turn to not make it take too long
+        if stats.multiattack >= 4:
+            stats = stats.with_set_attacks(3)
+        elif stats.multiattack >= 3:
+            stats = stats.with_set_attacks(2)
+
+        # Power Adjustments
+        # legendary creature will have some more powers
+        recommended_powers_modifier = 0.25
+
+        # Apply HP, AC, and power adjustments
+        stats = stats.apply_monster_dials(
+            MonsterDials(
+                hp_multiplier=new_hp_multiplier,
+                ac_modifier=ac_increase,
+                recommended_powers_modifier=recommended_powers_modifier,
+            )
+        )
+
+        # Stat Adjustments
+        stats = stats.scale({Stats.CON: 2})
+
+        # Skill Adjustments
+        # Initiative
+
+        if stats.cr >= 8 and not stats.attributes.has_proficiency_or_expertise(
+            Skills.Initiative
+        ):
+            stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
+
+        if (
+            stats.cr >= 16
+            and Skills.Initiative not in stats.attributes.expertise_skills
+        ):
+            stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
+
+        # Save Adjustments
+        stats = stats.grant_save_proficiency(stats.primary_attribute, Stats.CON)
+
+        if stats.cr >= 8:
+            stats = stats.grant_save_proficiency(Stats.WIS)
+
+        # Rescale Attack Damage
+        target_dpr = 1.15 * original_dpr
+        new_dpr = stats.dpr
+        new_multiplier = target_dpr / new_dpr
+        stats = stats.apply_monster_dials(
+            MonsterDials(attack_damage_multiplier=new_multiplier)
+        )
+
+        return stats
+
+    def with_set_attacks(self, multiattack: int) -> BaseStatblock:
+        reduce_by = self.multiattack - multiattack
+        if reduce_by < 0:
+            raise ValueError(
+                "multiattack must be less than or equal to the current value"
+            )
+        elif reduce_by == 0:
+            return self.copy()
+        else:
+            return self.with_reduced_attacks(reduce_by=reduce_by)
 
     def with_reduced_attacks(
         self, reduce_by: int, min_attacks: int = 1
     ) -> BaseStatblock:
         if reduce_by <= 0:
             raise ValueError("reduce_by must be greater than 0")
-        if reduce_by >= 3:
-            raise ValueError("reduce_by must be less than 3")
+        if reduce_by >= 4:
+            raise ValueError("reduce_by must be less than 4")
 
         if self.multiattack <= min_attacks:
             return self.copy()
@@ -487,19 +597,15 @@ class BaseStatblock:
                 reduce_by=reduce_by - 1, min_attacks=min_attacks
             )
 
-        # monster already had attacks reduced
-        if self.multiattack <= self.multiattack_benchmark - reduce_by:
-            return self.copy()
+        target_dpr = self.dpr
+        stats = self.apply_monster_dials(MonsterDials(multiattack_modifier=-reduce_by))
+        new_dpr = stats.dpr
+        new_multiplier = target_dpr / new_dpr
 
-        new_attacks = self.multiattack_benchmark - reduce_by
-        new_target_multiplier = self.multiattack * self.damage_modifier / new_attacks
-        attack_modifier = new_attacks - self.multiattack
-        return self.apply_monster_dials(
-            MonsterDials(
-                attack_damage_multiplier=new_target_multiplier,
-                multiattack_modifier=attack_modifier,
-            )
+        stats = stats.apply_monster_dials(
+            MonsterDials(attack_damage_multiplier=new_multiplier)
         )
+        return stats
 
     def with_flags(self, *flags: str) -> BaseStatblock:
         new_flags = self.flags.copy()

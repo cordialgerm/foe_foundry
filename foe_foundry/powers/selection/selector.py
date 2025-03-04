@@ -8,6 +8,7 @@ from numpy.random import Generator
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import MEDIUM_POWER, Power, PowerType, flags
 from foe_foundry.powers.all import AllPowers
+from foe_foundry.powers.legendary import get_legendary_actions
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils.rng import RngFactory, rng_instance
 
@@ -335,5 +336,9 @@ def select_powers(
     features = set()
     for power in powers:
         features.update(power.generate_features(new_stats))
+
+    if new_stats.is_legendary:
+        legendary_actions = get_legendary_actions(new_stats, list(features))
+        features.update(legendary_actions)
 
     return new_stats, list(features), selector

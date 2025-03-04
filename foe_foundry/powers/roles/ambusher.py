@@ -5,6 +5,7 @@ from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from .shared import CunningAction as _CunningAction
 from .shared import NimbleEscape as _NimbleEscape
@@ -57,7 +58,11 @@ class _StealthySneak(AmbusherPower):
 
 class _DeadlyAmbusher(AmbusherPower):
     def __init__(self):
-        super().__init__(name="Deadly Ambusher", source="SRD5.1 Assasin")
+        super().__init__(
+            name="Deadly Ambusher",
+            source="SRD5.1 Assasin",
+            require_no_flags=flags.MODIFIES_CRITICAL,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -69,9 +74,11 @@ class _DeadlyAmbusher(AmbusherPower):
         return [feature]
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.grant_proficiency_or_expertise(
-            Skills.Initiative
-        ).grant_proficiency_or_expertise(Skills.Initiative)
+        return (
+            stats.grant_proficiency_or_expertise(Skills.Initiative)
+            .grant_proficiency_or_expertise(Skills.Initiative)
+            .with_flags(flags.MODIFIES_CRITICAL)
+        )
 
 
 CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
