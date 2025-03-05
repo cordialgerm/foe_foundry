@@ -102,6 +102,10 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if variant is BossVariant and cr >= 8:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
         size=Size.Medium,
@@ -157,10 +161,6 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
 
     if cr >= 4:
         stats = stats.grant_save_proficiency(Stats.CON, Stats.CHA)
-
-    # LEGENDARY
-    if variant is BossVariant and cr >= 8:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

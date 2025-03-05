@@ -102,6 +102,11 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
         hp_multiplier=settings.hp_multiplier,
         damage_multiplier=settings.damage_multiplier,
     )
+
+    # LEGENDARY
+    if variant == SpyMasterVariant:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         name=name,
         creature_type=CreatureType.Humanoid,
@@ -170,10 +175,6 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 6:
         stats = stats.grant_save_proficiency(Stats.DEX, Stats.CON, Stats.INT, Stats.WIS)
-
-    # LEGENDARY
-    if variant == SpyMasterVariant:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

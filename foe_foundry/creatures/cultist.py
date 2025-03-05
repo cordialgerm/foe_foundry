@@ -186,6 +186,10 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     else:
         stats = stats.add_ac_template(UnholyArmor)
 
+    # LEGENDARY
+    if variant is CultistVariant and cr >= 18:
+        stats = stats.as_legendary()
+
     # ATTACKS
     if variant is CultistVariant:
         if cr <= 1:
@@ -250,10 +254,6 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 2:
         stats = stats.grant_save_proficiency(Stats.WIS)
-
-    # LEGENDARY
-    if variant is CultistVariant and cr >= 18:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

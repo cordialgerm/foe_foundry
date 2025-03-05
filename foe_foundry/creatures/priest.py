@@ -111,6 +111,10 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if cr >= 18:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
         size=Size.Medium,
@@ -170,10 +174,6 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 8:
         stats = stats.grant_save_proficiency(Stats.STR, Stats.CON, Stats.INT, Stats.WIS)
-
-    # LEGENDARY
-    if cr >= 18:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

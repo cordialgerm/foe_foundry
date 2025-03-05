@@ -178,7 +178,10 @@ class _ShadowWalk(DeathlyPower):
 class _FleshPuppets(DeathlyPower):
     def __init__(self):
         super().__init__(
-            name="Flesh Puppets", source="Foe Foundry", power_level=HIGH_POWER
+            name="Flesh Puppets",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+            require_cr=3,
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -195,7 +198,7 @@ class _FleshPuppets(DeathlyPower):
             recharge=4,
             description=f"{stats.selfref.capitalize()} uses dark necromancy to resurrect the corpse of a nearby creature of CR {cr} or less. \
                 The creature acts in initiative immediately after {stats.selfref} and obeys the commands of {stats.selfref} (no action required). \
-                The flesh puppet has the same statistics as when the creature was living except it is now Undead, or uses the statistics of a **Skeleton**, **Zombie**, or **Ghoul**. \
+                The flesh puppet has the same statistics as when the creature was living except it is now Undead, or uses the statistics of a *Skeleton*, *Zombie*, or *Ghoul*. \
                 When the flesh puppet dies, the corpse is mangled beyond repair and is turned into a pile of viscera.",
         )
         return [feature]

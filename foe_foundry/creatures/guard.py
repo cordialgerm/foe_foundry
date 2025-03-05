@@ -105,6 +105,10 @@ def generate_guard(
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if variant is CommanderVariant and stats.cr >= 8:
+        stats = stats.as_legendary(actions=2, resistances=2)
+
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
         size=Size.Medium,
@@ -159,10 +163,6 @@ def generate_guard(
         stats = stats.grant_save_proficiency(Stats.STR)
     if cr >= 8:
         stats = stats.grant_save_proficiency(Stats.WIS, Stats.DEX, Stats.CON)
-
-    # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 8:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

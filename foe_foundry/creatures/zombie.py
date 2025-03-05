@@ -81,6 +81,10 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if variant is ZombieOgreVariant and stats.cr >= 16:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         creature_type=CreatureType.Undead,
         languages=["Understands Common but can't speak"],
@@ -144,10 +148,6 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     ## HP
     hp_multiplier = 1.3 if stats.cr <= 1 else 1.5
     stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=hp_multiplier))
-
-    # LEGENDARY
-    if variant is ZombieOgreVariant and stats.cr >= 16:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

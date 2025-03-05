@@ -92,7 +92,7 @@ class _SeveredLimb(ZombiePower):
         feature = Feature(
             name="Severed Limb",
             action=ActionType.Reaction,
-            uses=1,
+            uses=stats.attributes.proficiency // 2,
             description=f"When {stats.selfref} takes damage, one of its decaying limbs sloughs off and attempts to grapple the source of the damage if it is within 5 feet of {stats.selfref}. The target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}) and **Restrained** by the limb.",
         )
         return [feature]

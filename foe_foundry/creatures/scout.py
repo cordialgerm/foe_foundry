@@ -89,6 +89,10 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if variant is CommanderVariant and stats.cr >= 7:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
         size=Size.Medium,
@@ -141,10 +145,6 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
         stats = stats.grant_save_proficiency(Stats.DEX, Stats.INT)
     if cr >= 7:
         stats = stats.grant_save_proficiency(Stats.WIS)
-
-    # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 7:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []

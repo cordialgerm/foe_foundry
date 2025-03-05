@@ -142,7 +142,7 @@ class _CharmingWords(CharmingPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_spellcasting()
-        spell = enchantment.CharmPerson.for_statblock()
+        spell = enchantment.CharmPerson.copy(upcast=False).for_statblock()
         return stats.add_spell(spell)
 
 

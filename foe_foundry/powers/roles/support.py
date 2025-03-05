@@ -105,7 +105,7 @@ class _WardingBond(SupportPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        boost = max(1, stats.attributes.proficiency / 2)
+        boost = max(1, stats.attributes.proficiency // 3)
         feature = Feature(
             name="Warding Bond",
             description=f"{stats.selfref.capitalize()} forms a bond with a willing creature within 30 feet. \

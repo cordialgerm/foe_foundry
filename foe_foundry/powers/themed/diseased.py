@@ -91,7 +91,9 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
-            dmg = stats.target_value(target=1.8, force_die=Die.d6)
+            dmg = stats.target_value(
+                target=1.7 if stats.multiattack > 1 else 1.0, force_die=Die.d6
+            )
 
             feature1 = _disease_as_feature(disease)
 

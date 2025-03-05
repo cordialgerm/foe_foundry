@@ -116,6 +116,10 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     # ARMOR CLASS
     stats = stats.add_ac_template(StuddedLeatherArmor, ac_modifier=1 if cr >= 4 else 0)
 
+    # LEGENDARY
+    if variant is BanditCaptainVariant and stats.cr >= 11:
+        stats = stats.as_legendary()
+
     # ATTACKS
     attack = weapon.Pistol if cr >= 1 else weapon.Shortswords
     stats = attack.alter_base_stats(stats, rng)
@@ -170,10 +174,6 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
 
     if cr >= 4:
         stats = stats.grant_save_proficiency(Stats.STR, Stats.DEX, Stats.CON)
-
-    # LEGENDARY
-    if variant is BanditCaptainVariant and stats.cr >= 11:
-        stats = stats.as_legendary()
 
     # POWERS
     features = []
