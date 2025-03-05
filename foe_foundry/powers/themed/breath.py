@@ -64,7 +64,7 @@ def breath(
     template = f"{distance} ft cone"
 
     dmg = stats.target_value(
-        max(1.25, 0.75 * stats.multiattack),
+        max(1.25, 0.7 * stats.multiattack),
         suggested_die=Die.d8,
     )
 
@@ -94,77 +94,78 @@ def on_inferno_breath_failure(stats: BaseStatblock, breath_damage: DieFormula) -
         breath_damage.average / 2, force_die=breath_damage.primary_die_type
     )
     burning = conditions.Burning(burning_dmg, DamageType.Fire)
-    return f"<br/><br/>Additionally, creatures that fail by 5 or more are {burning.caption}. {burning.description_3rd}"
+    return f"Additionally, creatures that fail by 5 or more are {burning.caption}. {burning.description_3rd}"
 
 
 def on_flash_freeze_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
     frozen = conditions.Frozen(dc=stats.difficulty_class)
-    return f"<br/><br/>Additionally, creatures that fail by 5 or more are {frozen.caption}. {frozen.description_3rd}"
+    return f"Additionally, creatures that fail by 5 or more are {frozen.caption}. {frozen.description_3rd}"
 
 
 def on_nerve_gas_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
     weakened = conditions.Weakened(save_end_of_turn=False)
-    return f"<br/><br/>Additionally, creatures that fail by 5 or more are {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description_3rd}"
+    return f"Additionally, creatures that fail by 5 or more are {weakened.caption} for 1 minute (save ends at end of turn). {weakened.description_3rd}"
 
 
 def on_arc_lightning_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
     shocked = conditions.Shocked()
-    return f"<br/><br/>Additionally, creatures that fail by 5 or more are {shocked.caption} for 1 minute (save ends at end of turn). {shocked.description_3rd}"
+    return f"Additionally, creatures that fail by 5 or more are {shocked.caption} for 1 minute (save ends at end of turn). {shocked.description_3rd}"
 
 
 def on_flesh_melting_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
     burning_dmg = DieFormula.target_value(breath_damage.average / 4, force_die=Die.d4)
     burning = conditions.Burning(burning_dmg, DamageType.Acid)
     return (
-        f"<br/><br/>Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also **Poisoned**. \
+        f"Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also **Poisoned**. \
         {burning.description_3rd}"
     )
 
 
-def on_susceptible_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
-    damage_type = stats.secondary_damage_type
-    if damage_type is None:
-        raise ValueError("Secondary damage type must be set to use this function")
+class _Susceptible:
+    def __init__(self, damage_type: DamageType):
+        self.damage_type = damage_type
 
-    susceptible = conditions.Susceptible(damage_type)
-    on_failure = f"<br/><br/>Additionally, creatures that fail the save by 5 or more are {susceptible.caption} \
-            for 1 minute (save ends at end of turn). {susceptible.description_3rd}"
-    return on_failure
+    def on_susceptible_failure(
+        self, stats: BaseStatblock, breath_damage: DieFormula
+    ) -> str:
+        susceptible = conditions.Susceptible(self.damage_type)
+        on_failure = f"Additionally, creatures that fail the save by 5 or more are **Susceptible** to their next source of {self.damage_type} damage in the next minute. {susceptible.description_3rd}"
+        return on_failure
 
 
 FireBreath: Power = _BreathPower(
     name="Fire Breath",
     breath=DamageType.Fire,
     save="Dexterity",
-    on_failure=on_susceptible_failure,
+    on_failure=_Susceptible(DamageType.Fire).on_susceptible_failure,
 )
 
 ColdBreath: Power = _BreathPower(
     name="Cold Breath",
     breath=DamageType.Cold,
     save="Constitution",
-    on_failure=on_susceptible_failure,
+    on_failure=_Susceptible(DamageType.Cold).on_susceptible_failure,
 )
 
 PoisonBreath: Power = _BreathPower(
     name="Poison Breath",
     breath=DamageType.Poison,
     save="Constitution",
-    on_failure=on_susceptible_failure,
+    on_failure=_Susceptible(DamageType.Poison).on_susceptible_failure,
 )
 
 LightningBreath: Power = _BreathPower(
     name="Lightning Breath",
     breath=DamageType.Lightning,
     save="Dexterity",
-    on_failure=on_susceptible_failure,
+    on_failure=_Susceptible(DamageType.Lightning).on_susceptible_failure,
 )
 
 AcidBreath: Power = _BreathPower(
     name="Acid Breath",
     breath=DamageType.Acid,
     save="Dexterity",
-    on_failure=on_susceptible_failure,
+    on_failure=_Susceptible(DamageType.Acid).on_susceptible_failure,
 )
 
 InfernoBreath: Power = _BreathPower(

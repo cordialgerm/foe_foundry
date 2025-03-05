@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...powers import flags
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -74,7 +75,13 @@ class _BrutalCritical(CruelPower):
             name="Brutal Critical",
             source="SRD5.1 Champion, Barbarian",
             power_level=HIGH_POWER,
+            require_no_flags=flags.MODIFIES_CRITICAL,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.with_flags(flags.MODIFIES_CRITICAL)
+        return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         crit_lower = 19 if stats.cr <= 7 else 18

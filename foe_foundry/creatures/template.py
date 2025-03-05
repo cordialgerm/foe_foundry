@@ -19,8 +19,23 @@ class StatsBeingGenerated:
     powers: PowerSelector
 
     def finalize(self) -> Statblock:
+        # sort features by action type
+        # then sort by whether they are limited use
+        # then sort by whether they have recharge
+
+        def sort_key(f: Feature):
+            return (
+                f.action,
+                0
+                if f.uses is None and f.recharge is None
+                else (f.uses or 0) + (f.recharge or 0),
+                f.name,
+            )
+
+        features = sorted(self.features, key=sort_key)
+
         return Statblock.from_base_stats(
-            name=self.stats.name, stats=self.stats, features=self.features
+            name=self.stats.name, stats=self.stats, features=features
         )
 
 

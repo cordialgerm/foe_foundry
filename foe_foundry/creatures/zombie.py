@@ -5,7 +5,6 @@ from ..damage import Condition, DamageType
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.zombie import ZombiePowers
 from ..powers.creature_type.undead import UndeadFortitude
-from ..powers.legendary import make_legendary
 from ..powers.themed.diseased import DiseasedPowers
 from ..powers.themed.technique import GrapplingAttack
 from ..role_types import MonsterRole
@@ -81,6 +80,10 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
         hp_multiplier=settings.hp_multiplier,
         damage_multiplier=settings.damage_multiplier,
     )
+
+    # LEGENDARY
+    if variant is ZombieOgreVariant and stats.cr >= 16:
+        stats = stats.as_legendary()
 
     stats = stats.copy(
         creature_type=CreatureType.Undead,
@@ -159,10 +162,6 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
-
-    # LEGENDARY
-    if variant is ZombieOgreVariant and stats.cr >= 16:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

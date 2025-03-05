@@ -117,9 +117,9 @@ class _Heroism(HolyPower):
         feature = Feature(
             name="Heroism",
             action=ActionType.BonusAction,
-            uses=1,
+            uses=stats.attributes.proficiency // 2,
             description=f"{stats.roleref.capitalize()} inspires another friendly creature within 60 ft, granting it {temp_hp} temporary hit points. \
-                While those temporary hitpoints are active, the creatuere has advantage on saving throws and is immune to being frightened or charmed.",
+                While those temporary hitpoints are active, the creature has advantage on saving throws and is immune to being frightened or charmed.",
         )
 
         return [feature]

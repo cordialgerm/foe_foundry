@@ -11,7 +11,6 @@ from ..powers import (
     select_powers,
 )
 from ..powers.creature_type import celestial
-from ..powers.legendary import make_legendary
 from ..powers.roles import SupportPowers
 from ..powers.spellcaster.celestial import CelestialCasters
 from ..powers.themed import holy, technique
@@ -112,6 +111,10 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         damage_multiplier=settings.damage_multiplier,
     )
 
+    # LEGENDARY
+    if cr >= 18:
+        stats = stats.as_legendary()
+
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
         size=Size.Medium,
@@ -199,10 +202,6 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     if secondary_attack is not None:
         stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-
-    # LEGENDARY
-    if cr >= 18:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

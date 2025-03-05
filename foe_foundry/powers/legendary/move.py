@@ -25,7 +25,7 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
         yield LegendaryActionScore(
             feature=Feature(
                 name="Charge",
-                description=f"{stats.selfref.title()} moves up to half its speed and makes an {melee_attack.name} attack.",
+                description=f"{stats.selfref.title()} moves up to half its speed and makes an {melee_attack.display_name} attack.",
                 action=ActionType.Legendary,
             ),
             types={LegendaryActionType.move, LegendaryActionType.attack},

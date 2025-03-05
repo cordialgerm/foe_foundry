@@ -54,7 +54,7 @@ AssassinVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Contract Killer", cr=4),
         SuggestedCr(name="Assassin", cr=8, srd_creatures=["Assassin"]),
-        SuggestedCr(name="Assassin Legend", cr=15),
+        SuggestedCr(name="Assassin Legend", cr=15, is_legendary=True),
     ],
 )
 
@@ -90,6 +90,9 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
         primary_damage_type=DamageType.Piercing,
     )
 
+    if stats.cr >= 15:
+        stats = stats.as_legendary()
+
     ## HP
     # Assassins have lower HP than average
     stats = stats.apply_monster_dials(MonsterDials(hp_multiplier=0.85))
@@ -105,7 +108,10 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_damage_type=DamageType.Poison,
     )
 
-    stats = stats.with_reduced_attacks(reduce_by=1 if stats.cr <= 8 else 2)
+    if stats.cr <= 4:
+        stats = stats.with_set_attacks(1)
+    elif stats.multiattack > 2:
+        stats = stats.with_set_attacks(2)
 
     # Spies use poisoned Daggers as their primary attack
     attack = weapon.Daggers.with_display_name("Poisoned Dagger")

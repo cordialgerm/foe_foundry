@@ -1,6 +1,6 @@
 import numpy as np
 
-from ...features import Feature
+from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from .attack import attack
 from .move import move
@@ -45,4 +45,14 @@ def get_legendary_actions(
         options.append(a)
 
     actions = _resolve(options)
-    return [a.feature for a in actions]
+    features = [a.feature for a in actions]
+    features.append(
+        Feature(
+            name="Legendary Prowess",
+            action=ActionType.Feature,
+            uses=stats.legendary_resistances,
+            description=f"{stats.selfref.capitalize()} can choose to succeed on a saving throw or ability check instead of failing. When it does so, it takes {stats.legendary_resistance_damage_taken} force damage",
+        )
+    )
+
+    return features

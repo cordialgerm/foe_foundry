@@ -64,7 +64,7 @@ def adjust_attack(
     # adjust the average damage based on the primary stat mod
     if adjust_average_damage:
         repaired_formula = DieFormula.target_value(
-            target=stats.base_attack_damage * stats.damage_modifier,
+            target=stats.dpr / (stats.multiattack + stats.legendary_actions),
             flat_mod=stats.attributes.primary_mod,
             force_die=die,
             min_die_count=min_die_count,

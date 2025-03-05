@@ -3,14 +3,12 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import MightyLeap, WarriorPowers
-from ..powers.legendary import make_legendary
 from ..powers.themed.gadget import NetPowers
 from ..powers.themed.organized import OrganizedPowers
 from ..powers.themed.technique import TechniquePowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from ..utils.interpolate import interpolate_by_cr
 from ..utils.rng import choose_options
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
@@ -123,14 +121,17 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
         creature_class="Warrior",
     )
 
+    # LEGENDARY
+    if variant is CommanderVariant and stats.cr >= 16:
+        stats = stats.as_legendary()
+
     # ARMOR CLASS
-    quality = int(interpolate_by_cr(cr, {8: 0, 10: 1, 15: 2, 20: 3}))
     if stats.cr >= 5:
-        stats = stats.add_ac_template(PlateArmor, ac_modifier=quality)
+        stats = stats.add_ac_template(PlateArmor)
     elif stats.cr >= 3:
-        stats = stats.add_ac_template(SplintArmor, ac_modifier=quality)
+        stats = stats.add_ac_template(SplintArmor)
     else:
-        stats = stats.add_ac_template(ChainShirt, ac_modifier=quality)
+        stats = stats.add_ac_template(ChainShirt)
 
     # ATTACKS
     if variant is ShockInfantryVariant:
@@ -203,10 +204,6 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
-
-    # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 16:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

@@ -12,7 +12,6 @@ from ..powers import (
 from ..powers.creature_type.aberration import AberrationPowers
 from ..powers.creature_type.fiend import FiendishPowers
 from ..powers.creature_type.undead import UndeadPowers
-from ..powers.legendary import make_legendary
 from ..powers.roles.defender import Protection
 from ..powers.spellcaster.cult import CultCasters
 from ..powers.spellcaster.fiendish import FiendishCasters
@@ -187,6 +186,10 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     else:
         stats = stats.add_ac_template(UnholyArmor)
 
+    # LEGENDARY
+    if variant is CultistVariant and cr >= 18:
+        stats = stats.as_legendary()
+
     # ATTACKS
     if variant is CultistVariant:
         if cr <= 1:
@@ -275,10 +278,6 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
     if secondary_attack is not None:
         stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-
-    # LEGENDARY
-    if variant is CultistVariant and cr >= 18:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

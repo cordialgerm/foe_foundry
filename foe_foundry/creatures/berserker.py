@@ -1,9 +1,8 @@
-from ..ac_templates import Unarmored
+from ..ac_templates import BerserkersDefense
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.legendary import make_legendary
 from ..powers.themed.anti_magic import Spellbreaker
 from ..powers.themed.anti_ranged import DeflectMissile
 from ..powers.themed.bestial import RetributiveStrike
@@ -13,7 +12,6 @@ from ..powers.themed.reckless import RecklessPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from ..utils.interpolate import interpolate_by_cr
 from ..utils.rng import choose_enum
 from .base_stats import base_stats
 from .species import AllSpecies, HumanSpecies
@@ -94,11 +92,12 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
         creature_class="Berserker",
     )
 
+    # LEGENDARY
+    if variant is CommanderVariant:
+        stats = stats.as_legendary()
+
     # ARMOR CLASS
-    ac_modifier = int(
-        interpolate_by_cr(cr, {2: 2, 8: 3, 15: 4})
-    )  # based on Berserker and Berserker Commander ACs
-    stats = stats.add_ac_template(Unarmored, ac_modifier=ac_modifier)
+    stats = stats.add_ac_template(BerserkersDefense)
 
     # ATTACKS
     attack = weapon.Greataxe
@@ -155,10 +154,6 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng)
-
-    # LEGENDARY
-    if variant is CommanderVariant:
-        stats, features = make_legendary(stats, features, has_lair=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

@@ -49,6 +49,7 @@ class MonsterTemplateData:
     attacks: List[Attack]
     attack_modifiers: List[Feature]
     legendary_actions: List[Feature]
+    legendary_action_header: str
 
     multiattack: str
     attack: Attack
@@ -220,6 +221,7 @@ class MonsterTemplateData:
             bonus_actions=bonus_actions,
             reactions=reactions,
             legendary_actions=legendary_actions,
+            legendary_action_header=f"Legendary Actions ({stats.legendary_actions})",
             attack_modifiers=attack_modifiers,
             multiattack=multiattack,
             attack=stats.attack,
