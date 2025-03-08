@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...spells import enchantment, illusion, transmutation
+from ...spells import CasterType, enchantment, illusion, transmutation
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power
 from .base import _Spellcaster
@@ -29,6 +29,7 @@ class _PsionicCaster(_Spellcaster):
             dict(
                 theme="psionic",
                 creature_class="Psion",
+                caster_type=CasterType.Psionic,
                 score_args=dict(
                     require_no_creature_class=True,
                     require_damage=DamageType.Psychic,

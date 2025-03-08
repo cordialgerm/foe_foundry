@@ -3,9 +3,10 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -28,7 +29,8 @@ class TeleportationPower(PowerWithStandardScoring):
             if c.creature_type == CreatureType.Humanoid:
                 return (
                     any(t.is_spell() for t in c.attack_types)
-                    and c.secondary_damage_type != DamageType.Radiant
+                    and c.caster_type is not None
+                    and c.caster_type not in {CasterType.Divine, CasterType.Primal}
                 )
             else:
                 return True

@@ -7,7 +7,7 @@ from ...role_types import MonsterRole
 from ...spells import StatblockSpell, abjuration, evocation, necromancy, transmutation
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power
-from ..spell import SpellPower
+from ..spell import CasterType, SpellPower
 
 
 def humanoid_is_spellcaster(c: BaseStatblock) -> bool:
@@ -22,6 +22,7 @@ class _MagicPower(SpellPower):
         super().__init__(
             spell=spell,
             theme="magic",
+            caster_type=CasterType.Innate,
             create_date=datetime(2023, 12, 10),
             **kwargs,
         )

@@ -8,10 +8,17 @@ from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import abjuration
+from ...spells import CasterType, abjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+
+
+def is_holy(c: BaseStatblock) -> bool:
+    return (
+        c.secondary_damage_type == DamageType.Radiant
+        or c.caster_type == CasterType.Divine
+    )
 
 
 class HolyPower(PowerWithStandardScoring):
@@ -36,6 +43,7 @@ class HolyPower(PowerWithStandardScoring):
                 require_damage=DamageType.Radiant,
                 bonus_roles=MonsterRole.Support,
                 bonus_skills=Skills.Religion,
+                bonus_callback=is_holy,
             )
             | score_args,
         )
@@ -44,6 +52,7 @@ class HolyPower(PowerWithStandardScoring):
         stats = super().modify_stats_inner(stats)
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Radiant)
+        stats = stats.grant_spellcasting(CasterType.Divine)
         return stats
 
 
@@ -81,7 +90,6 @@ class _MassCureWounds(HolyPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting(Stats.WIS)
         spell = abjuration.MassCureWounds.for_statblock()
         return stats.add_spell(spell)
 

@@ -11,6 +11,8 @@ from . import (
     enchanter,
     fiendish,
     illusionist,
+    magic,
+    metamagic,
     necromancer,
     psionic,
     transmuter,
@@ -26,6 +28,8 @@ SpellcasterPowers: List[Power] = (
     + enchanter.EnchanterWizards()
     + fiendish.FiendishCasters()
     + illusionist.IllusionistWizards()
+    + magic.MagicPowers
+    + metamagic.MetamagicPowers
     + necromancer.NecromancerWizards()
     + psionic.PsionicCasters()
     + transmuter.TransmutationWizards()

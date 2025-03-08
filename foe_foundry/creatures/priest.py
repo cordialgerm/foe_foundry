@@ -17,6 +17,7 @@ from ..powers.themed import holy, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ..spells import CasterType
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
@@ -120,6 +121,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         size=Size.Medium,
         languages=["Common"],
         creature_class="Priest",
+        caster_type=CasterType.Divine,
     )
 
     # ARMOR CLASS

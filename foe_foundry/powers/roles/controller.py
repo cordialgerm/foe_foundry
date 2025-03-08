@@ -8,6 +8,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import (
+    CasterType,
     conjuration,
     enchantment,
     evocation,
@@ -31,7 +32,10 @@ class _PacifyingTouch(PowerWithStandardScoring):
     def __init__(self):
         def humanoid_is_divine(c: BaseStatblock):
             if c.creature_type == CreatureType.Humanoid:
-                return c.secondary_damage_type == DamageType.Radiant
+                return (
+                    c.secondary_damage_type == DamageType.Radiant
+                    or c.caster_type == CasterType.Divine
+                )
             else:
                 return True
 
@@ -67,6 +71,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
             additional_description="On a hit, the target must make a DC {dc} Wisdom saving throw. \
                 On a failed save, the target is **Incapacitated** for 1 minute (save ends at end of turn).",
         )
+        stats = stats.grant_spellcasting(CasterType.Divine)
         return stats
 
 
@@ -105,6 +110,7 @@ class _Eyebite(SpellPower):
             name="Eyebite",
             spell=necromancy.Eyebite.for_statblock(uses=1),
             create_date=datetime(2023, 11, 29),
+            caster_type=CasterType.Innate,
             theme="controller",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -241,6 +247,7 @@ class _ControllingSpellPower(SpellPower):
             spell=spell,
             create_date=datetime(2023, 12, 10),
             theme="controller",
+            caster_type=CasterType.Innate,
             score_args=score_args,
             **args,
         )

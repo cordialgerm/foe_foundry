@@ -9,6 +9,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -66,7 +67,7 @@ class DomineeringPower(PowerWithStandardScoring):
             Stats.CHA, 4
         ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
-        stats = stats.grant_spellcasting(Stats.CHA)
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
 

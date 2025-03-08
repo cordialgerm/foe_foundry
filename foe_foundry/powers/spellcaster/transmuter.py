@@ -2,9 +2,8 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...spells import evocation, transmutation
+from ...spells import CasterType, evocation, transmutation
 from ...statblocks import BaseStatblock
-from ..attack import DamageType
 from ..power import EXTRA_HIGH_POWER, HIGH_POWER, Power
 from .base import _Wizard
 from .utils import spell_list
@@ -27,8 +26,7 @@ TransmutationExpertSpells = (
 
 def is_transmuter(c: BaseStatblock) -> bool:
     return (
-        c.creature_type == CreatureType.Humanoid
-        and c.secondary_damage_type != DamageType.Radiant
+        c.creature_type == CreatureType.Humanoid and c.caster_type == CasterType.Arcane
     )
 
 

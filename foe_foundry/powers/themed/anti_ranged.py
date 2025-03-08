@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
@@ -187,7 +188,7 @@ class _Overchannel(PowerWithStandardScoring):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if not stats.attack_types.intersection(AttackType.AllSpell()):
-            stats = stats.grant_spellcasting()
+            stats = stats.grant_spellcasting(CasterType.Innate)
             stats = spell.Firebolt.add_as_secondary_attack(stats)
             return stats
         else:

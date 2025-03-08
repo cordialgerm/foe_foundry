@@ -8,7 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...spells import enchantment, evocation
+from ...spells import CasterType, enchantment, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
@@ -110,7 +110,7 @@ class _FiendishCackle(FiendishPower):
         return [feature1]
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         spell = enchantment.Bane.for_statblock(
             uses=1, concentration=False, notes="no concentration"
         )
@@ -193,7 +193,7 @@ class _WallOfFire(FiendishPower):
 
         spell = evocation.WallOfFire.for_statblock(uses=uses, notes=notes)
 
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats.add_spell(spell)
 
 

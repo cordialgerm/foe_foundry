@@ -4,6 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...role_types import MonsterRole
 from ...spells import (
+    CasterType,
     abjuration,
     enchantment,
     evocation,
@@ -37,6 +38,7 @@ class _FiendishCaster(_Spellcaster):
         args: dict = (
             dict(
                 theme="fiend",
+                caster_type=CasterType.Innate,
                 score_args=dict(
                     require_types=[
                         CreatureType.Fiend,

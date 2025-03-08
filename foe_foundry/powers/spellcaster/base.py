@@ -5,7 +5,7 @@ from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
 from ...damage import AttackType
-from ...spells import StatblockSpell
+from ...spells import CasterType, StatblockSpell
 from ..power import HIGH_POWER, PowerType, PowerWithStandardScoring
 
 
@@ -14,6 +14,7 @@ class _Spellcaster(PowerWithStandardScoring):
         self,
         name: str,
         spells: List[StatblockSpell],
+        caster_type: CasterType,
         theme: str,
         score_args: dict,
         min_cr: int = 1,
@@ -43,12 +44,13 @@ class _Spellcaster(PowerWithStandardScoring):
 
         self.spells = spells
         self.creature_class = creature_class
+        self.caster_type = caster_type
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(self.caster_type)
         if self.creature_class is not None and stats.creature_class is None:
             stats = stats.copy(creature_class=self.creature_class)
         sorted_spells = sorted(self.spells, key=lambda s: s.name)
@@ -64,14 +66,15 @@ class _Wizard(_Spellcaster):
             if existing_callback is not None and not existing_callback(c):
                 return False
 
-            return c.creature_class == "Wizard"
+            return c.creature_class == "Wizard" and c.caster_type == CasterType.Arcane
 
         args: dict = (
             dict(
+                caster_type=CasterType.Arcane,
                 score_args=dict(
                     require_callback=is_wizard,
                 )
-                | additional_score_args
+                | additional_score_args,
             )
             | kwargs
         )

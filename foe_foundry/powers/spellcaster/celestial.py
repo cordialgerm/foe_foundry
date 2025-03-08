@@ -3,7 +3,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...role_types import MonsterRole
-from ...spells import abjuration, divination, evocation, necromancy
+from ...spells import CasterType, abjuration, divination, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
@@ -48,7 +48,10 @@ CelestialExpertSpells = (
 def is_celestial_caster(stats: BaseStatblock) -> bool:
     return stats.creature_type == CreatureType.Celestial or (
         stats.creature_type == CreatureType.Humanoid
-        and stats.secondary_damage_type == DamageType.Radiant
+        and (
+            stats.secondary_damage_type == DamageType.Radiant
+            or stats.caster_type == CasterType.Divine
+        )
     )
 
 
@@ -69,6 +72,7 @@ class _CelestialCaster(_Spellcaster):
                         MonsterRole.Support,
                     ],
                 ),
+                caster_type=CasterType.Divine,
             )
             | kwargs
         )

@@ -10,7 +10,7 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
@@ -533,7 +533,7 @@ class _PsiWarrior(PowerWithStandardScoring):
             secondary_damage_type=DamageType.Psychic,
             creature_class="Psi Warrior",
         )
-        stats = stats.grant_spellcasting(Stats.INT)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
 
         stats = stats.add_spell(transmutation.Telekinesis.for_statblock())
 

@@ -3,6 +3,7 @@ from ...attributes import Skills, Stats
 from ...damage import AttackType
 from ...powers import RIBBON_POWER
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock, MonsterDials
 from .species import CreatureSpecies
 
@@ -20,7 +21,7 @@ class _HighElfSpecies(CreatureSpecies):
         )
         stats = stats.copy(name=f"High Elf {stats.name}", creature_subtype="Elf")
         stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
-        stats = stats.grant_spellcasting(Stats.INT)
+        stats = stats.grant_spellcasting(CasterType.Arcane, Stats.INT)
         stats = stats.with_roles(additional_roles=[MonsterRole.Artillery])
 
         if not stats.attack_types.intersection(AttackType.AllSpell()):

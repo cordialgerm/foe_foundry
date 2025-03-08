@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
@@ -50,7 +51,7 @@ class ChaoticPower(PowerWithStandardScoring):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        return stats.grant_spellcasting()
+        return stats.grant_spellcasting(CasterType.Innate)
 
 
 class _ChaoticSpace(ChaoticPower):

@@ -34,6 +34,7 @@ from ..powers.themed.trap import TrapPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ..spells import CasterType
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .template import (
@@ -176,6 +177,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         size=Size.Medium,
         languages=["Common"],
         creature_class="Cultist",
+        caster_type=CasterType.Pact,
     )
 
     # ARMOR CLASS

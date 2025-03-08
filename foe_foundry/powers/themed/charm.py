@@ -7,7 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import enchantment
+from ...spells import CasterType, enchantment
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -23,9 +23,9 @@ class CharmingPower(PowerWithStandardScoring):
     ):
         def humanoid_is_psychic_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
-                return (
-                    any(t.is_spell() for t in candidate.attack_types)
-                    and candidate.secondary_damage_type == DamageType.Psychic
+                return any(t.is_spell() for t in candidate.attack_types) and (
+                    candidate.secondary_damage_type == DamageType.Psychic
+                    or candidate.caster_type == CasterType.Psionic
                 )
             return True
 
@@ -60,7 +60,7 @@ class CharmingPower(PowerWithStandardScoring):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting(Stats.CHA)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
 
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
@@ -141,7 +141,7 @@ class _CharmingWords(CharmingPower):
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Psionic)
         spell = enchantment.CharmPerson.copy(upcast=False).for_statblock()
         return stats.add_spell(spell)
 

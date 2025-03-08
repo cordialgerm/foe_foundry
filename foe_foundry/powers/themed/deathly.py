@@ -8,6 +8,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -77,7 +78,7 @@ class _EndlessServitude(DeathlyPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -186,7 +187,7 @@ class _FleshPuppets(DeathlyPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

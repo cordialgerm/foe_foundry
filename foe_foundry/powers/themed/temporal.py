@@ -7,6 +7,7 @@ from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -25,6 +26,7 @@ class TemporalPower(PowerWithStandardScoring):
                 return (
                     any(t.is_spell() for t in c.attack_types)
                     and c.secondary_damage_type != DamageType.Radiant
+                    and c.caster_type != CasterType.Divine
                 )
             else:
                 return True
@@ -51,7 +53,7 @@ class TemporalPower(PowerWithStandardScoring):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Arcane)
         return stats
 
 
