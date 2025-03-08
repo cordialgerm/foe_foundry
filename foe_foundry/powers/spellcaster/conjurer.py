@@ -3,25 +3,28 @@ from typing import List
 import numpy as np
 
 from ...features import ActionType, Feature
-from ...spells import abjuration, conjuration, evocation, necromancy
+from ...spells import conjuration, evocation
 from ...statblocks import BaseStatblock
 from ...utils.summoning import determine_summon_formula
-from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ..power import Power
 from .base import WizardPower
 from .utils import spell_list
 
 _adept = [conjuration.Grease, conjuration.Web, conjuration.FogCloud]
-_master = [conjuration.Cloudkill, conjuration.SleetStorm, evocation.Fireball]
+_master = [
+    conjuration.Cloudkill,
+    conjuration.SleetStorm,
+    evocation.Fireball,
+    conjuration.Web.copy(concentration=False),
+]
 _expert = [conjuration.Gate, evocation.Forcecage]
 
 ConjurationAdeptSpells = spell_list(_adept, uses=1)
 ConjurationMasterSpells = spell_list(
-    _adept, uses=2, exclude={abjuration.LesserRestoration}
+    _adept, uses=2, exclude={conjuration.Web}
 ) + spell_list(_master, uses=1)
 ConjurationExpertSpells = (
-    spell_list(
-        _adept, uses=3, exclude={abjuration.LesserRestoration, necromancy.RaiseDead}
-    )
+    spell_list(_adept, uses=3, exclude={conjuration.Web})
     + spell_list(_master, uses=2)
     + spell_list(_expert, uses=1)
 )

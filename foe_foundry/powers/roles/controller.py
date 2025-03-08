@@ -303,7 +303,7 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
-            spell=transmutation.Levitate.for_statblock(),
+            spell=transmutation.Levitate.for_statblock(concentration=False),
             power_level=LOW_POWER,
             score_args=dict(
                 require_types=[CreatureType.Elemental, CreatureType.Humanoid]

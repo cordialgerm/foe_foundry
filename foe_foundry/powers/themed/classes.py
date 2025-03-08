@@ -128,7 +128,7 @@ def _EldritchKnights() -> List[Power]:
             feature1 = Feature(
                 name="Misty Step",
                 action=ActionType.BonusAction,
-                uses=3,
+                uses=max(stats.attributes.proficiency // 2, 1),
                 description=f"{stats.roleref.capitalize()} teleports up to 30 feet to an unoccupied space it can see",
             )
 

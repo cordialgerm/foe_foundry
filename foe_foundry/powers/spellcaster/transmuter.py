@@ -7,8 +7,16 @@ from ..power import Power
 from .base import WizardPower
 from .utils import spell_list
 
-_adept = [transmutation.Slow, evocation.Fireball, transmutation.EnlargeReduce]
-_master = [evocation.ArcaneHand, transmutation.FleshToStone, transmutation.Disintegrate]
+_adept = [
+    transmutation.Slow,
+    evocation.Fireball,
+    transmutation.EnlargeReduce.copy(concentration=False),
+]
+_master = [
+    evocation.ArcaneHand,
+    transmutation.FleshToStone.copy(concentration=False),
+    transmutation.Disintegrate,
+]
 _expert = [transmutation.TimeStop, transmutation.ReverseGravity]
 
 TransmutationAdeptSpells = spell_list(_adept, uses=1)

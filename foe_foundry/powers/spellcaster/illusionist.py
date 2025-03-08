@@ -3,14 +3,25 @@ from typing import List
 from ...features import Feature
 from ...spells import illusion
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power
+from ..power import Power
 from ..themed.tricky import Projection
 from .base import WizardPower
 from .utils import spell_list
 
-_adept = [illusion.Invisibility, illusion.SilentImage, illusion.DisguiseSelf]
-_master = [illusion.GreaterInvisibility, illusion.Fear, illusion.MajorImage]
-_expert = [illusion.PhantasmalKiller, illusion.ProgrammedIllusion]
+_adept = [
+    illusion.Invisibility,
+    illusion.SilentImage.copy(concentration=False),
+    illusion.DisguiseSelf,
+]
+_master = [
+    illusion.GreaterInvisibility.copy(concentration=False),
+    illusion.Fear,
+    illusion.MajorImage.copy(concentration=False),
+]
+_expert = [
+    illusion.PhantasmalKiller,
+    illusion.ProgrammedIllusion.copy(concentration=False),
+]
 
 IllusionistAdeptSpells = spell_list(_adept, uses=1)
 IllusionistMasterSpells = spell_list(

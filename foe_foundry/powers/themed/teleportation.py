@@ -90,7 +90,7 @@ class _MistyStep(TeleportationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
-        uses = int(min(3, ceil(stats.cr / 3)))
+        uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
 
         feature = Feature(
             name="Misty Step",

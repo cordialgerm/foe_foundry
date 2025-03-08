@@ -8,6 +8,7 @@ def spell_list(
     uses: int,
     exclude: Set[Spell] | None = None,
     mark_schools: Set[str] | None = None,
+    **args,
 ) -> List[StatblockSpell]:
     exclude = exclude if exclude is not None else set()
     mark_schools = mark_schools if mark_schools is not None else set()
@@ -17,6 +18,6 @@ def spell_list(
         if s in exclude:
             continue
         symbols = "*" if s.school in mark_schools else None
-        unsorted.append(s.for_statblock(uses=uses, symbols=symbols))
+        unsorted.append(s.for_statblock(uses=uses, symbols=symbols, **args))
 
     return sorted(unsorted, key=lambda s: s.name)

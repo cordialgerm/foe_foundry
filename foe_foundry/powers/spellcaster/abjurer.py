@@ -22,7 +22,12 @@ _adept = [
     transmutation.Fly,
     conjuration.Web,
 ]
-_master = [evocation.WallOfForce, abjuration.Banishment, evocation.LightningBolt]
+_master = [
+    evocation.WallOfForce,
+    abjuration.Banishment,
+    evocation.LightningBolt,
+    conjuration.Web.copy(concentration=False),
+]
 _expert = [
     evocation.Forcecage,
     abjuration.GlobeOfInvulnerability,
@@ -30,10 +35,10 @@ _expert = [
 
 AbjurationAdeptSpells = spell_list(_adept, uses=1)
 AbjurationMasterSpells = spell_list(
-    _adept, uses=2, exclude={illusion.Invisibility}
+    _adept, uses=2, exclude={illusion.Invisibility, conjuration.Web}
 ) + spell_list(_master, uses=1)
 AbjurationExpertSpells = (
-    spell_list(_adept, uses=3, exclude={illusion.Invisibility})
+    spell_list(_adept, uses=3, exclude={illusion.Invisibility, conjuration.Web})
     + spell_list(_master, uses=2)
     + spell_list(_expert, uses=1)
 )

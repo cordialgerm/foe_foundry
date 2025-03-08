@@ -5,7 +5,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...spells import conjuration, evocation, necromancy
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power
+from ..power import Power
 from .base import WizardPower
 from .utils import spell_list
 
@@ -16,7 +16,12 @@ class Pyromancer(WizardPower):
             name="Pyromancer",
             min_cr=4,
             spells=spell_list(
-                [evocation.HeatMetal, evocation.Fireball, evocation.WallOfFire], uses=1
+                [
+                    evocation.HeatMetal.copy(concentration=False),
+                    evocation.Fireball,
+                    evocation.WallOfFire,
+                ],
+                uses=1,
             ),
             creature_name="Pyromancer",
         )
@@ -42,7 +47,12 @@ class Cryomancer(WizardPower):
             creature_name="Cryomancer",
             min_cr=6,
             spells=spell_list(
-                [conjuration.FogCloud, evocation.ConeOfCold, evocation.IceStorm], uses=1
+                [
+                    conjuration.FogCloud.copy(concentration=False),
+                    evocation.ConeOfCold,
+                    evocation.IceStorm,
+                ],
+                uses=1,
             ),
         )
 
@@ -68,7 +78,11 @@ class Electromancer(WizardPower):
             creature_name="Electromancer",
             min_cr=6,
             spells=spell_list(
-                [evocation.GustOfWind, evocation.LightningBolt, evocation.Thunderwave],
+                [
+                    evocation.GustOfWind.copy(concentration=False),
+                    evocation.LightningBolt,
+                    evocation.Thunderwave,
+                ],
                 uses=1,
             ),
         )

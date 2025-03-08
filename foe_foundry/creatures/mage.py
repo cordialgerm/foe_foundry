@@ -150,7 +150,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-2),
-            Stats.DEX.scaler(StatScaling.Default, mod=4),
+            Stats.DEX.scaler(StatScaling.Default, mod=2),
             Stats.INT.scaler(StatScaling.Primary),
             Stats.WIS.scaler(StatScaling.Medium),
             Stats.CHA.scaler(StatScaling.Default),

@@ -1,4 +1,5 @@
 from datetime import datetime
+from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
@@ -65,11 +66,13 @@ class _ProtectiveMagic(MagePower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
+
         feature = Feature(
             name="Protective Magic",
             action=ActionType.Reaction,
-            uses=3,
-            description=f"{stats.selfref.capitalize()} casts *Shield* or *Counterspell* in response to being being attack or being targeted by a spell",
+            uses=uses,
+            description=f"{stats.selfref.capitalize()} casts *Shield* or *Counterspell* in response to being attacked or being targeted by a spell",
         )
         return [feature]
 

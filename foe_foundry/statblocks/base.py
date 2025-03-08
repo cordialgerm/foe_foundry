@@ -428,8 +428,11 @@ class BaseStatblock:
         return self.copy(additional_attacks=additional_attacks)
 
     def add_spells(self, spells: List[StatblockSpell]) -> BaseStatblock:
-        new_spells = [s.copy() for s in self.spells]
-        new_spells.extend([s.scale_for_cr(self.cr) for s in spells])
+        existing_spells = [s.copy() for s in self.spells]
+        added_spells = [
+            s.scale_for_cr(self.cr) for s in spells if s not in existing_spells
+        ]
+        new_spells = existing_spells + added_spells
         return self.copy(spells=new_spells)
 
     def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
@@ -634,13 +637,16 @@ class BaseStatblock:
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
-    spells = [s.caption_md for s in all_spells if s.uses == uses]
+    spells = [s for s in all_spells if s.uses == uses]
     if len(spells) == 0:
         return None
+
+    spells.sort(key=lambda s: (s.level_resolved, s.name))
+    sorted_spell_names = [s.caption_md for s in spells]
 
     if uses is None:
         line_prefix = "At will: "
     else:
         line_prefix = f"{uses}/day each: "
 
-    return line_prefix + ", ".join(spells)
+    return line_prefix + ", ".join(sorted_spell_names)

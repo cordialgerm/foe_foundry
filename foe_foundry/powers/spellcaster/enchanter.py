@@ -3,30 +3,37 @@ from typing import List
 from ...features import ActionType, Feature
 from ...spells import enchantment, illusion
 from ...statblocks import BaseStatblock
-from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ..power import Power
 from .base import WizardPower
 from .utils import spell_list
 
 _adept = [
-    enchantment.CharmPerson,
+    enchantment.CharmPerson.copy(upcast=False),
     enchantment.Suggestion,
-    enchantment.Command,
+    enchantment.Command.copy(upcast=False),
     illusion.Invisibility,
 ]
 _master = [
     illusion.HypnoticPattern,
     illusion.Fear,
+    enchantment.Suggestion.copy(concentration=False),
     enchantment.HoldPerson,
 ]
 _expert = [enchantment.Feeblemind, enchantment.DominateMonster]
 
 EnchanterAdeptSpells = spell_list(spells=_adept, uses=1, mark_schools={"enchantment"})
 EnchanterMasterSpells = spell_list(
-    spells=_adept, uses=2, exclude={illusion.Invisibility}, mark_schools={"enchantment"}
+    spells=_adept,
+    uses=2,
+    exclude={illusion.Invisibility, enchantment.Suggestion},
+    mark_schools={"enchantment"},
 ) + spell_list(spells=_master, uses=1, mark_schools={"enchantment"})
 EnchanterExpertSpells = (
     spell_list(
-        _adept, uses=3, exclude={illusion.Invisibility}, mark_schools={"enchantment"}
+        _adept,
+        uses=3,
+        exclude={illusion.Invisibility},
+        mark_schools={"enchantment"},
     )
     + spell_list(_master, uses=2, mark_schools={"enchantment"})
     + spell_list(_expert, uses=1, mark_schools={"enchantment"})

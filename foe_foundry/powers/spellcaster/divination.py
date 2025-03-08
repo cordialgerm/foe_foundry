@@ -10,13 +10,13 @@ from ...spells import (
     transmutation,
 )
 from ...statblocks import BaseStatblock
-from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
+from ..power import Power
 from .base import WizardPower
 from .utils import spell_list
 
 _adept = [
     divination.DetectMagic,
-    divination.DetectThoughts,
+    divination.DetectThoughts.copy(concentration=False),
     divination.ArcaneEye,
     illusion.Invisibility,
     enchantment.HoldPerson,
@@ -49,7 +49,7 @@ class _DivinationWizard(WizardPower):
             name="Portent of Weal and Woe",
             action=ActionType.Reaction,
             uses=2,
-            description=f"When another creature the {stats.roleref} can see within 60 feet makes a d20 test, {stats.roleref} can replace the result of the roll with a 5 or a 15.",
+            description=f"When another creature {stats.roleref} can see within 60 feet makes a d20 test, {stats.roleref} can replace the result of the roll with a 5 or a 15.",
         )
         return [feature]
 
