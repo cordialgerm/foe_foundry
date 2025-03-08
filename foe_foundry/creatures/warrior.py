@@ -75,7 +75,7 @@ CommanderVariant = CreatureVariant(
             cr=10,
             other_creatures={"Warrior Commander": "mm25"},
         ),
-        SuggestedCr(name="Legendary Warrior", cr=16, is_legendary=True),
+        SuggestedCr(name="Legendary Warrior", cr=14, is_legendary=True),
     ],
 )
 
@@ -86,6 +86,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
 
@@ -122,7 +123,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 16:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ARMOR CLASS

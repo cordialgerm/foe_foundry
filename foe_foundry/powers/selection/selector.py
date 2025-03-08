@@ -308,9 +308,12 @@ def select_powers(
     power_level_target = settings.power_multiplier * stats.recommended_powers
     power_level_max = power_level_target + 0.5
 
-    targets = SelectionTargets(
-        power_level_target=power_level_target, power_level_max=power_level_max
+    selection_args: dict = (
+        dict(power_level_target=power_level_target, power_level_max=power_level_max)
+        | stats.selection_target_args
     )
+
+    targets = SelectionTargets(**selection_args)
 
     all_results: List[BaseStatblock] = []
     all_scores: List[float] = []

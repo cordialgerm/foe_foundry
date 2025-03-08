@@ -67,6 +67,7 @@ class BaseStatblock:
     legendary_resistance_damage_taken: int = 0
     flags: set[str] = field(default_factory=set)
     caster_type: CasterType | None = None
+    selection_target_args: dict = field(default_factory=dict)
 
     def __post_init__(self):
         mod = (
@@ -180,6 +181,7 @@ class BaseStatblock:
             is_legendary=self.is_legendary,
             legendary_resistance_damage_taken=self.legendary_resistance_damage_taken,
             caster_type=self.caster_type,
+            selection_target_args=self.selection_target_args,
         )
         return args
 
@@ -281,8 +283,6 @@ class BaseStatblock:
             elif caster_type == CasterType.Primal:
                 spellcasting_stat = Stats.WIS
             elif caster_type == CasterType.Psionic:
-                spellcasting_stat = Stats.INT
-            elif caster_type == CasterType.Technomagic:
                 spellcasting_stat = Stats.INT
             elif caster_type == CasterType.Innate:
                 spellcasting_stat = Stats.CHA

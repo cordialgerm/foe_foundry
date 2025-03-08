@@ -17,6 +17,7 @@ from . import (
     psionic,
     transmuter,
 )
+from .base import WizardPower  # noqa
 
 SpellcasterPowers: List[Power] = (
     abjurer.AbjurationWizards()

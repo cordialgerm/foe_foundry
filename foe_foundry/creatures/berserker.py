@@ -57,7 +57,7 @@ CommanderVariant = CreatureVariant(
             cr=8,
             other_creatures={"Berserker Commander": "mm25"},
         ),
-        SuggestedCr(name="Berserker Legend", cr=14, is_legendary=True),
+        SuggestedCr(name="Berserker Legend", cr=12, is_legendary=True),
     ],
 )
 
@@ -68,6 +68,7 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -93,7 +94,7 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant is CommanderVariant:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ARMOR CLASS

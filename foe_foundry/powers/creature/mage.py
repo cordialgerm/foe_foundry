@@ -1,0 +1,182 @@
+from datetime import datetime
+from typing import List
+
+from ...creature_types import CreatureType
+from ...features import ActionType, Feature
+from ...spells import (
+    CasterType,
+    abjuration,
+    conjuration,
+    evocation,
+    illusion,
+    transmutation,
+)
+from ...statblocks import BaseStatblock
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    RIBBON_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
+
+
+class MagePower(PowerWithStandardScoring):
+    def __init__(
+        self,
+        name: str,
+        source: str,
+        power_level: float = MEDIUM_POWER,
+        **score_args,
+    ):
+        existing_callback = score_args.pop("require_callback", None)
+
+        def require_callback(s: BaseStatblock) -> bool:
+            return s.creature_subtype == "Mage" and (
+                existing_callback(s) if existing_callback else True
+            )
+
+        super().__init__(
+            name=name,
+            source=source,
+            theme="mage",
+            power_level=power_level,
+            power_type=PowerType.Creature,
+            create_date=datetime(2025, 3, 7),
+            score_args=dict(
+                require_callback=require_callback,
+                require_types=[CreatureType.Humanoid],
+            )
+            | score_args,
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        return stats.grant_spellcasting(CasterType.Arcane)
+
+
+class _ProtectiveMagic(MagePower):
+    def __init__(self):
+        super().__init__(
+            name="Protective Magic",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Protective Magic",
+            action=ActionType.Reaction,
+            uses=3,
+            description=f"{stats.selfref.capitalize()} casts *Shield* or *Counterspell* in response to being being attack or being targeted by a spell",
+        )
+        return [feature]
+
+
+class _ApprenticeMage(MagePower):
+    def __init__(self):
+        super().__init__(
+            name="Apprentice Mage",
+            source="Foe Foundry",
+            power_level=RIBBON_POWER,
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.add_spells(
+            [
+                evocation.BurningHands.for_statblock(),
+                evocation.IceKnife.for_statblock(),
+                evocation.Thunderwave.for_statblock(),
+            ]
+        )
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+
+class _AdeptMage(MagePower):
+    def __init__(self):
+        super().__init__(
+            name="Adept Mage",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.add_spells(
+            [
+                illusion.Invisibility.for_statblock(),
+                conjuration.Web.for_statblock(),
+                evocation.Shatter.for_statblock(),
+            ]
+        )
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+
+class _Mage(MagePower):
+    def __init__(self):
+        super().__init__(
+            name="Mage",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.add_spells(
+            [
+                illusion.GreaterInvisibility.for_statblock(),
+                transmutation.Fly.for_statblock(),
+                evocation.WallOfForce.for_statblock(),
+            ]
+        )
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+
+class _Archmage(MagePower):
+    def __init__(self):
+        super().__init__(
+            name="Mage",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+        )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.add_spells(
+            [
+                illusion.GreaterInvisibility.for_statblock(),
+                evocation.WallOfForce.for_statblock(),
+                abjuration.GlobeOfInvulnerability.for_statblock(),
+                conjuration.Teleport.for_statblock(),
+            ]
+        )
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+
+ProtectiveMagic = _ProtectiveMagic()
+ApprenticeMage = _ApprenticeMage()
+AdeptMage = _AdeptMage()
+Mage = _Mage()
+Archmage = _Archmage()
+
+MagePowers: list[Power] = [
+    ProtectiveMagic,
+    ApprenticeMage,
+    AdeptMage,
+    Mage,
+    Archmage,
+]

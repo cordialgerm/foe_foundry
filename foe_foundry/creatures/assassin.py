@@ -54,7 +54,7 @@ AssassinVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Contract Killer", cr=4),
         SuggestedCr(name="Assassin", cr=8, srd_creatures=["Assassin"]),
-        SuggestedCr(name="Assassin Legend", cr=15, is_legendary=True),
+        SuggestedCr(name="Assassin Legend", cr=12, is_legendary=True),
     ],
 )
 
@@ -65,6 +65,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -90,7 +91,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
         primary_damage_type=DamageType.Piercing,
     )
 
-    if stats.cr >= 15:
+    if is_legendary:
         stats = stats.as_legendary()
 
     ## HP

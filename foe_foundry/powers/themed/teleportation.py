@@ -50,7 +50,7 @@ class TeleportationPower(PowerWithStandardScoring):
                     CreatureType.Aberration,
                     CreatureType.Humanoid,
                 },
-                require_cr=1,
+                require_cr=3,
                 bonus_attack_types=AttackType.AllSpell(),
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             )

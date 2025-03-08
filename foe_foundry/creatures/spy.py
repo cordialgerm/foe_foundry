@@ -87,6 +87,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -104,7 +105,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant == SpyMasterVariant:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(

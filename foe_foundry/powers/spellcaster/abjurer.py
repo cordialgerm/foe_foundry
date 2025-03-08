@@ -1,9 +1,6 @@
 from typing import List
 
-from ...attack_template import spell
-from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...role_types import MonsterRole
 from ...spells import (
     abjuration,
     conjuration,
@@ -14,8 +11,8 @@ from ...spells import (
 )
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Wizard
+from ..power import Power
+from .base import WizardPower
 from .utils import spell_list
 
 _adept = [
@@ -42,27 +39,9 @@ AbjurationExpertSpells = (
 )
 
 
-class _AbjurationWizard(_Wizard):
+class _AbjurationWizard(WizardPower):
     def __init__(self, **kwargs):
-        args: dict = (
-            dict(
-                creature_class="Abjurer",
-                theme="abjuration",
-                score_args=dict(
-                    require_types=[
-                        CreatureType.Humanoid,
-                    ],
-                    bonus_roles=[MonsterRole.Controller, MonsterRole.Defender],
-                    attack_names=[
-                        spell.EldritchBlast,
-                        spell.ArcaneBurst,
-                    ],  # bonus, not required
-                ),
-            )
-            | kwargs
-        )
-
-        super().__init__(**args)
+        super().__init__(creature_name="Abjurer", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         protection = easy_multiple_of_five(stats.hp.average / 5)
@@ -81,23 +60,20 @@ def AbjurationWizards() -> List[Power]:
     return [
         _AbjurationWizard(
             name="Abjuration Adept",
-            min_cr=2,
-            max_cr=4,
+            min_cr=4,
+            max_cr=5,
             spells=AbjurationAdeptSpells,
-            power_level=MEDIUM_POWER,
         ),
         _AbjurationWizard(
             name="Abjuration Master",
-            min_cr=5,
-            max_cr=10,
+            min_cr=6,
+            max_cr=11,
             spells=AbjurationMasterSpells,
-            power_level=HIGH_POWER,
         ),
         _AbjurationWizard(
             name="Abjuration Expert",
-            min_cr=11,
+            min_cr=12,
             max_cr=40,
             spells=AbjurationExpertSpells,
-            power_level=EXTRA_HIGH_POWER,
         ),
     ]

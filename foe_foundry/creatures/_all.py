@@ -5,6 +5,7 @@ from .berserker import BerserkerTemplate
 from .cultist import CultistTemplate
 from .golem import GolemTemplate
 from .guard import GuardTemplate
+from .mage import MageTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .skeleton import SkeletonTemplate
@@ -22,6 +23,7 @@ AllTemplates: list[CreatureTemplate] = [
     CultistTemplate,
     GolemTemplate,
     GuardTemplate,
+    MageTemplate,
     PriestTemplate,
     ScoutTemplate,
     SkeletonTemplate,

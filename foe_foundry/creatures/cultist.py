@@ -56,7 +56,7 @@ CultistVariant = CreatureVariant(
             cr=10,
             other_creatures={"Cultist Hierophant": "mm25"},
         ),
-        SuggestedCr(name="Cultist Exarch", cr=18, is_legendary=True),
+        SuggestedCr(name="Cultist Exarch", cr=14, is_legendary=True),
     ],
 )
 
@@ -156,6 +156,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     cr = settings.cr
     variant = settings.variant
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -189,7 +190,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         stats = stats.add_ac_template(UnholyArmor)
 
     # LEGENDARY
-    if variant is CultistVariant and cr >= 18:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ATTACKS

@@ -1,10 +1,6 @@
 from typing import List
 
-from ...attack_template import spell
-from ...creature_types import CreatureType
-from ...damage import DamageType
 from ...features import ActionType, Feature
-from ...role_types import MonsterRole
 from ...spells import (
     conjuration,
     divination,
@@ -15,7 +11,7 @@ from ...spells import (
 )
 from ...statblocks import BaseStatblock
 from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Wizard
+from .base import WizardPower
 from .utils import spell_list
 
 _adept = [
@@ -44,32 +40,9 @@ DivinationExpertSpells = (
 )
 
 
-class _DivinationWizard(_Wizard):
+class _DivinationWizard(WizardPower):
     def __init__(self, **kwargs):
-        args: dict = (
-            dict(
-                creature_class="Diviner",
-                theme="divination",
-                score_args=dict(
-                    require_types=[
-                        CreatureType.Humanoid,
-                        CreatureType.Fey,
-                        CreatureType.Celestial,
-                        CreatureType.Aberration,
-                    ],
-                    bonus_damage=DamageType.Psychic,
-                    bonus_roles=MonsterRole.Controller,
-                    attack_names=[
-                        spell.Gaze,
-                        spell.EldritchBlast,
-                        spell.ArcaneBurst,
-                    ],  # bonus, not required
-                ),
-            )
-            | kwargs
-        )
-
-        super().__init__(**args)
+        super().__init__(creature_name="Diviner", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -85,23 +58,20 @@ def DivinationWizards() -> List[Power]:
     return [
         _DivinationWizard(
             name="Diviniation Adept",
-            min_cr=2,
-            max_cr=4,
+            min_cr=4,
+            max_cr=5,
             spells=DivinationAdeptSpells,
-            power_level=MEDIUM_POWER,
         ),
         _DivinationWizard(
             name="Divination Master",
-            min_cr=5,
-            max_cr=10,
+            min_cr=6,
+            max_cr=11,
             spells=DivinationMasterSpells,
-            power_level=HIGH_POWER,
         ),
         _DivinationWizard(
             name="Diviniation Expert",
-            min_cr=11,
+            min_cr=12,
             max_cr=40,
             spells=DivinationExpertSpells,
-            power_level=EXTRA_HIGH_POWER,
         ),
     ]

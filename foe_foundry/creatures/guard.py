@@ -77,6 +77,7 @@ def generate_guard(
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
 
@@ -106,7 +107,7 @@ def generate_guard(
     )
 
     # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 8:
+    if is_legendary:
         stats = stats.as_legendary(actions=2, resistances=2)
 
     stats = stats.copy(

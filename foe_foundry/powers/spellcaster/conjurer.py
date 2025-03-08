@@ -2,14 +2,12 @@ from typing import List
 
 import numpy as np
 
-from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...role_types import MonsterRole
 from ...spells import abjuration, conjuration, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ...utils.summoning import determine_summon_formula
 from ..power import EXTRA_HIGH_POWER, HIGH_POWER, MEDIUM_POWER, Power
-from .base import _Wizard
+from .base import WizardPower
 from .utils import spell_list
 
 _adept = [conjuration.Grease, conjuration.Web, conjuration.FogCloud]
@@ -29,21 +27,9 @@ ConjurationExpertSpells = (
 )
 
 
-class _ConjurationWizard(_Wizard):
+class _ConjurationWizard(WizardPower):
     def __init__(self, **kwargs):
-        args: dict = (
-            dict(
-                theme="conjuration",
-                creature_class="Conjurer",
-                score_args=dict(
-                    require_types=[CreatureType.Humanoid, CreatureType.Fiend],
-                    bonus_roles=[MonsterRole.Artillery, MonsterRole.Leader],
-                ),
-            )
-            | kwargs
-        )
-
-        super().__init__(**args)
+        super().__init__(creature_name="Conjurer", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         creature, _, description = determine_summon_formula(
@@ -70,23 +56,20 @@ def ConjurationWizards() -> List[Power]:
     return [
         _ConjurationWizard(
             name="Conjuration Adept",
-            min_cr=2,
-            max_cr=4,
+            min_cr=4,
+            max_cr=5,
             spells=ConjurationAdeptSpells,
-            power_level=MEDIUM_POWER,
         ),
         _ConjurationWizard(
             name="Conjuration Master",
-            min_cr=5,
-            max_cr=10,
+            min_cr=6,
+            max_cr=11,
             spells=ConjurationMasterSpells,
-            power_level=HIGH_POWER,
         ),
         _ConjurationWizard(
             name="Conjuration Expert",
-            min_cr=11,
+            min_cr=12,
             max_cr=40,
             spells=ConjurationExpertSpells,
-            power_level=EXTRA_HIGH_POWER,
         ),
     ]

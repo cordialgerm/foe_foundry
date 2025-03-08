@@ -10,6 +10,7 @@ from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
 from ..statblocks import BaseStatblock, Statblock
 from ..utils import name_to_key
+from .species import CreatureSpecies
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -73,6 +74,7 @@ class CreatureVariant:
 class GenerationSettings:
     creature_name: str
     cr: float
+    is_legendary: bool
     variant: CreatureVariant
     species: CreatureSpecies | None = None
     rng: np.random.Generator
@@ -166,6 +168,7 @@ class CreatureTemplate:
                         dict(
                             creature_name=suggested_cr.name,
                             cr=suggested_cr.cr,
+                            is_legendary=suggested_cr.is_legendary,
                             variant=variant,
                             species=species,
                             selection_settings=SelectionSettings(),

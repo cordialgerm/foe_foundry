@@ -40,7 +40,7 @@ class Warrior(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerType.CreatureType,
+            power_type=PowerType.Creature,
             theme="warrior",
             score_args=dict(
                 require_callback=require_callback,

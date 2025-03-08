@@ -1,18 +1,16 @@
 from typing import List
 
-from ...attack_template import spell
-from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...spells import conjuration, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power
-from .base import _Wizard
+from .base import WizardPower
 from .utils import spell_list
 
 
-class Pyromancer(_Wizard):
+class Pyromancer(WizardPower):
     def __init__(self):
         super().__init__(
             name="Pyromancer",
@@ -20,16 +18,7 @@ class Pyromancer(_Wizard):
             spells=spell_list(
                 [evocation.HeatMetal, evocation.Fireball, evocation.WallOfFire], uses=1
             ),
-            theme="elementalist",
-            creature_class="Pyromancer",
-            power_level=HIGH_POWER,
-            score_args=dict(
-                require_attack_types=AttackType.AllSpell(),
-                require_damage=DamageType.Fire,
-                require_damage_exact_match=True,
-                attack_names={spell.Firebolt},  # not required
-                bonus_types=[CreatureType.Elemental, CreatureType.Humanoid],
-            ),
+            creature_name="Pyromancer",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -46,23 +35,14 @@ class Pyromancer(_Wizard):
         return [feature]
 
 
-class Cryomancer(_Wizard):
+class Cryomancer(WizardPower):
     def __init__(self):
         super().__init__(
             name="Cryomancer",
-            min_cr=4,
+            creature_name="Cryomancer",
+            min_cr=6,
             spells=spell_list(
                 [conjuration.FogCloud, evocation.ConeOfCold, evocation.IceStorm], uses=1
-            ),
-            theme="elementalist",
-            creature_class="Cryomancer",
-            power_level=HIGH_POWER,
-            score_args=dict(
-                require_attack_types=AttackType.AllSpell(),
-                require_damage=DamageType.Cold,
-                require_damage_exact_match=True,
-                attack_names={spell.Frostbolt},  # not required
-                bonus_types=[CreatureType.Elemental, CreatureType.Humanoid],
             ),
         )
 
@@ -81,24 +61,15 @@ class Cryomancer(_Wizard):
         return [feature]
 
 
-class Electromancer(_Wizard):
+class Electromancer(WizardPower):
     def __init__(self):
         super().__init__(
             name="Electromancer",
-            min_cr=4,
+            creature_name="Electromancer",
+            min_cr=6,
             spells=spell_list(
                 [evocation.GustOfWind, evocation.LightningBolt, evocation.Thunderwave],
                 uses=1,
-            ),
-            theme="elementalist",
-            creature_class="Electromancer",
-            power_level=HIGH_POWER,
-            score_args=dict(
-                require_attack_types=AttackType.AllSpell(),
-                require_damage=DamageType.Lightning,
-                require_damage_exact_match=True,
-                attack_names={spell.Shock},  # not required
-                bonus_types=[CreatureType.Elemental, CreatureType.Humanoid],
             ),
         )
 
@@ -115,24 +86,15 @@ class Electromancer(_Wizard):
         return [feature]
 
 
-class Toximancer(_Wizard):
+class Toximancer(WizardPower):
     def __init__(self):
         super().__init__(
             name="Toximancer",
-            min_cr=4,
+            creature_name="Toximancer",
+            min_cr=6,
             spells=spell_list(
                 [conjuration.Cloudkill, necromancy.Contagion, evocation.AcidArrow],
                 uses=1,
-            ),
-            theme="elementalist",
-            creature_class="Toximancer",
-            power_level=HIGH_POWER,
-            score_args=dict(
-                require_attack_types=AttackType.AllSpell(),
-                require_damage=DamageType.Poison,
-                require_damage_exact_match=True,
-                attack_names={spell.Poisonbolt},  # not required
-                bonus_types=[CreatureType.Elemental, CreatureType.Humanoid],
             ),
         )
 

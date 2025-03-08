@@ -27,7 +27,7 @@ class ZombiePower(PowerWithStandardScoring):
             source=source,
             theme="zombie",
             power_level=power_level,
-            power_type=PowerType.CreatureType,
+            power_type=PowerType.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,

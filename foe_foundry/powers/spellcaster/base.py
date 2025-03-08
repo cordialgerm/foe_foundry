@@ -6,6 +6,7 @@ from foe_foundry.statblocks import BaseStatblock
 
 from ...damage import AttackType
 from ...spells import CasterType, StatblockSpell
+from .. import flags
 from ..power import HIGH_POWER, PowerType, PowerWithStandardScoring
 
 
@@ -57,8 +58,8 @@ class _Spellcaster(PowerWithStandardScoring):
         return stats.add_spells(sorted_spells)
 
 
-class _Wizard(_Spellcaster):
-    def __init__(self, **kwargs):
+class WizardPower(_Spellcaster):
+    def __init__(self, creature_name: str, **kwargs):
         additional_score_args = kwargs.pop("score_args", {})
         existing_callback = additional_score_args.pop("require_callback", None)
 
@@ -73,10 +74,18 @@ class _Wizard(_Spellcaster):
                 caster_type=CasterType.Arcane,
                 score_args=dict(
                     require_callback=is_wizard,
+                    require_no_flags=[flags.WIZARD],
                 )
                 | additional_score_args,
             )
             | kwargs
         )
 
-        super().__init__(**args)
+        super().__init__(theme=creature_name.lower(), **args)
+        self.creature_name = creature_name
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(CasterType.Arcane)
+        stats = stats.with_flags(flags.WIZARD)
+        return stats

@@ -68,55 +68,113 @@ class PowerSelection:
         )
 
     def score(self, target: SelectionTargets) -> SelectionScore:
-        score_over_target = self.selected_power_level - target.power_level_target
-        score_over_max = self.selected_power_level - target.power_level_max
+        score_over_target = (
+            (self.selected_power_level - target.power_level_target)
+            if target.power_level_target >= 0
+            else -1
+        )
+        score_over_max = (
+            (self.selected_power_level - target.power_level_max)
+            if target.power_level_max >= 0
+            else -1
+        )
 
-        bonus_over_target = self.selected_bonus_actions - target.bonus_action_target
-        bonus_over_max = self.selected_bonus_actions - target.bonus_action_max
+        bonus_over_target = (
+            (self.selected_bonus_actions - target.bonus_action_target)
+            if target.bonus_action_target >= 0
+            else -1
+        )
+        bonus_over_max = (
+            (self.selected_bonus_actions - target.bonus_action_max)
+            if target.bonus_action_max >= 0
+            else -1
+        )
 
-        reactions_over_target = self.selected_reactions - target.reaction_target
-        reactions_over_max = self.selected_reactions - target.reaction_max
+        reactions_over_target = (
+            (self.selected_reactions - target.reaction_target)
+            if target.reaction_target >= 0
+            else -1
+        )
+        reactions_over_max = (
+            (self.selected_reactions - target.reaction_max)
+            if target.reaction_max >= 0
+            else -1
+        )
 
-        recharges_over_target = self.selected_recharges - target.recharge_target
-        recharges_over_max = self.selected_recharges - target.recharge_max
+        recharges_over_target = (
+            (self.selected_recharges - target.recharge_target)
+            if target.recharge_target >= 0
+            else -1
+        )
+        recharges_over_max = (
+            (self.selected_recharges - target.recharge_max)
+            if target.recharge_max >= 0
+            else -1
+        )
 
         attack_modifiers_over_target = (
-            self.selected_attack_modifiers - target.attack_modifier_target
+            (self.selected_attack_modifiers - target.attack_modifier_target)
+            if target.attack_modifier_target >= 0
+            else -1
         )
         attack_modifiers_over_max = (
-            self.selected_attack_modifiers - target.attack_modifier_max
+            (self.selected_attack_modifiers - target.attack_modifier_max)
+            if target.attack_modifier_max >= 0
+            else -1
         )
 
         limited_uses_over_target = (
-            self.selected_limited_uses - target.limited_uses_target
+            (self.selected_limited_uses - target.limited_uses_target)
+            if target.limited_uses_target >= 0
+            else -1
         )
-        limited_uses_over_max = self.selected_limited_uses - target.limited_uses_max
+        limited_uses_over_max = (
+            (self.selected_limited_uses - target.limited_uses_max)
+            if target.limited_uses_target >= 0
+            else -1
+        )
 
         spellcasting_over_target = (
-            self.selected_spellcasting_powers - target.spellcasting_powers_target
+            (self.selected_spellcasting_powers - target.spellcasting_powers_target)
+            if target.spellcasting_powers_target >= 0
+            else -1
         )
         spellcasting_over_max = (
-            self.selected_spellcasting_powers - target.spellcasting_powers_max
+            (self.selected_spellcasting_powers - target.spellcasting_powers_max)
+            if target.spellcasting_powers_max >= 0
+            else -1
         )
 
         above_targets = np.array(
             [
-                self.selected_bonus_actions > target.bonus_action_target,
-                self.selected_reactions > target.reaction_target,
-                self.selected_recharges > target.recharge_target,
-                self.selected_attack_modifiers > target.attack_modifier_target,
-                self.selected_limited_uses > target.limited_uses_target,
-                self.selected_spellcasting_powers > target.spellcasting_powers_target,
+                self.selected_bonus_actions > target.bonus_action_target
+                and target.bonus_action_target >= 0,
+                self.selected_reactions > target.reaction_target
+                and target.reaction_target >= 0,
+                self.selected_recharges > target.recharge_target
+                and target.recharge_target >= 0,
+                self.selected_attack_modifiers > target.attack_modifier_target
+                and target.attack_modifier_target >= 0,
+                self.selected_limited_uses > target.limited_uses_target
+                and target.limited_uses_target >= 0,
+                self.selected_spellcasting_powers > target.spellcasting_powers_target
+                and target.spellcasting_powers_target >= 0,
             ]
         )
         below_targets = np.array(
             [
-                self.selected_bonus_actions < target.bonus_action_target,
-                self.selected_reactions < target.reaction_target,
-                self.selected_recharges < target.recharge_target,
-                self.selected_attack_modifiers < target.attack_modifier_target,
-                self.selected_limited_uses < target.limited_uses_target,
-                self.selected_spellcasting_powers < target.spellcasting_powers_target,
+                self.selected_bonus_actions < target.bonus_action_target
+                and target.bonus_action_target >= 0,
+                self.selected_reactions < target.reaction_target
+                and target.reaction_target >= 0,
+                self.selected_recharges < target.recharge_target
+                and target.recharge_target >= 0,
+                self.selected_attack_modifiers < target.attack_modifier_target
+                and target.attack_modifier_target >= 0,
+                self.selected_limited_uses < target.limited_uses_target
+                and target.limited_uses_target >= 0,
+                self.selected_spellcasting_powers < target.spellcasting_powers_target
+                and target.spellcasting_powers_target >= 0,
             ]
         )
 

@@ -224,7 +224,6 @@ LightningBolt: Spell = Spell(
 )
 
 
-
 Thunderwave: Spell = Spell(
     name="Thunderwave",
     level=1,
@@ -238,6 +237,50 @@ Thunderwave: Spell = Spell(
 In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.""",
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
     range="Self (15-foot cube)",
+)
+
+IceKnife: Spell = Spell(
+    name="Ice Knife",
+    level=1,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.""",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.",
+    range="60 feet",
+)
+
+BurningHands: Spell = Spell(
+    name="Burning Hands",
+    level=1,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
+The fire ignites any flammable objects in the area that aren't being worn or carried.""",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+    range="Self (15-foot cone)",
+)
+
+Shatter: Spell = Spell(
+    name="Shatter",
+    level=2,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.CON,
+    description="""A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.""",
+    upcast_description="When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+    range="60 feet",
 )
 
 

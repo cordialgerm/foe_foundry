@@ -89,6 +89,7 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -117,7 +118,7 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = stats.add_ac_template(StuddedLeatherArmor, ac_modifier=1 if cr >= 4 else 0)
 
     # LEGENDARY
-    if variant is BanditCaptainVariant and stats.cr >= 11:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ATTACKS
