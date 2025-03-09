@@ -140,7 +140,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     attack = weapon.Greatsword.with_display_name("Lightning Blade").copy(
         damage_type=DamageType.Lightning, split_secondary_damage=False
     )
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=DamageType.Fire,

@@ -160,7 +160,7 @@ class _InnateMagic(_CasterTypePower):
         feature = Feature(
             name="Innate Magic",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref} casts a spell as a bonus action.",
+            description=f"{stats.selfref.capitalize()} casts a spell as a bonus action.",
             uses=1,
         )
         return [feature]

@@ -16,7 +16,6 @@ _adept = [
 _master = [
     illusion.HypnoticPattern,
     illusion.Fear,
-    enchantment.Suggestion.copy(concentration=False),
     enchantment.HoldPerson,
 ]
 _expert = [enchantment.Feeblemind, enchantment.DominateMonster]
@@ -26,13 +25,15 @@ EnchanterMasterSpells = spell_list(
     spells=_adept,
     uses=2,
     exclude={illusion.Invisibility, enchantment.Suggestion},
+    add={enchantment.Suggestion.copy(concentration=False)},
     mark_schools={"enchantment"},
 ) + spell_list(spells=_master, uses=1, mark_schools={"enchantment"})
 EnchanterExpertSpells = (
     spell_list(
         _adept,
         uses=3,
-        exclude={illusion.Invisibility},
+        exclude={illusion.Invisibility, enchantment.Suggestion},
+        add={enchantment.Suggestion.copy(concentration=False)},
         mark_schools={"enchantment"},
     )
     + spell_list(_master, uses=2, mark_schools={"enchantment"})
@@ -49,7 +50,7 @@ class _EnchanterWizard(WizardPower):
             name="Protective Charm",
             uses=1,
             action=ActionType.Reaction,
-            description=f"Whenever a visible creature within 30 feet of {stats.selfref} targets it with an ability, spell, or attack roll, {stats.selfref} may use its reaction to cast an Enchantment spell (indicated with a \\*) from its *Spellcasting* trait against that creature.",
+            description=f"Whenever a visible creature within 30 feet of {stats.selfref} targets it with an ability, spell, or attack roll, {stats.selfref} may use its reaction to cast an Enchantment spell (indicated with a \\*) from its *Spellcasting* trait targeting that creature.",
         )
 
         return [feature]

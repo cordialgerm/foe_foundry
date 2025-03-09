@@ -230,7 +230,7 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_attack = spell.ArcaneBurst.with_display_name("Core Eruption")
         secondary_damage_type = DamageType.Force
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,

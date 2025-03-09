@@ -102,7 +102,7 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # ATTACKS
     attack = weapon.Greataxe
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 

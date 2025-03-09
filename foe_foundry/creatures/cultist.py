@@ -221,7 +221,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_attack = spell.Firebolt.with_display_name("Scorching Ray")
         secondary_damage_type = DamageType.Fire
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         primary_damage_type=primary_damage_type,

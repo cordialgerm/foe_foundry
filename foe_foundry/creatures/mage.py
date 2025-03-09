@@ -2,6 +2,7 @@ from ..ac_templates import ArcaneArmor
 from ..attack_template import spell
 from ..creature_types import CreatureType
 from ..powers import (
+    LOW_POWER,
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
@@ -14,7 +15,7 @@ from ..powers.creature.mage import (
     Mage,
     ProtectiveMagic,
 )
-from ..powers.roles import artillery
+from ..powers.roles import artillery, controller
 from ..powers.spellcaster import (
     WizardPower,
     abjurer,
@@ -33,7 +34,8 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
-from .base_stats import BaseStatblock, base_stats
+from ..statblocks import BaseStatblock, MonsterDials
+from .base_stats import base_stats
 from .template import (
     CreatureTemplate,
     CreatureVariant,
@@ -87,7 +89,7 @@ class _CustomWeights(CustomPowerSelection):
             abjurer.AbjurationWizards()
             + divination.DivinationWizards()
             + conjurer.ConjurationWizards()
-            + elementalist.ElementalistWizards()
+            + elementalist.ElementalistWizards
             + enchanter.EnchanterWizards()
             + illusionist.IllusionistWizards()
             + transmuter.TransmutationWizards()
@@ -107,10 +109,12 @@ class _CustomWeights(CustomPowerSelection):
             temporal.TemporalPowers,
         ]
 
+        self.suppress = controller.ControllingSpells
+
     def custom_weight(self, p: Power) -> CustomPowerWeight:
         wizards = [p2 for p2 in self.wizards if power_matches_cr(p2, self.stats.cr)]
 
-        if p in self.force_powers():
+        if p in self.force_powers() or p in self.suppress:
             return CustomPowerWeight(0, ignore_usual_requirements=False)
         elif p in wizards:
             return CustomPowerWeight(4, ignore_usual_requirements=False)
@@ -119,7 +123,7 @@ class _CustomWeights(CustomPowerSelection):
         elif p in self.esoteric_mage_powers:
             return CustomPowerWeight(1.5, ignore_usual_requirements=False)
         else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
+            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
 
     def force_powers(self) -> list[Power]:
         if self.stats.cr >= 12:
@@ -155,7 +159,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.WIS.scaler(StatScaling.Medium),
             Stats.CHA.scaler(StatScaling.Default),
         ],
-        hp_multiplier=0.9 * settings.hp_multiplier,
+        hp_multiplier=0.85 * settings.hp_multiplier,
         damage_multiplier=1.2 * settings.damage_multiplier,
     )
 
@@ -174,9 +178,11 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
             limited_uses_target=-1,
             limited_uses_max=-1,
             reaction_target=-1,
-            reaction_max=-1,
+            reaction_max=2,
             spellcasting_powers_target=-1,
             spellcasting_powers_max=-1,
+            bonus_action_target=-1,
+            bonus_action_max=2,
         ),
     )
 
@@ -185,7 +191,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # ATTACKS
     attack = spell.ArcaneBurst
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
 
     # ROLES
@@ -203,6 +209,13 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 6:
         stats = stats.grant_save_proficiency(Stats.WIS, Stats.INT)
+
+    # ADDITIONAL POWERS
+
+    # grant mages a bit of extra powers because they have a lot of hard-coded powers already
+    stats = stats.apply_monster_dials(
+        MonsterDials(recommended_powers_modifier=LOW_POWER)
+    )
 
     # POWERS
     features = []

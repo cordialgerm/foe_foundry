@@ -83,9 +83,6 @@ class GenerationSettings:
     hp_multiplier: float = 1.0
     damage_multiplier: float = 1.0
 
-    power_boosts: dict[str, float] = field(default_factory=dict)
-    theme_boosts: dict[str, float] = field(default_factory=dict)
-
     @property
     def key(self) -> str:
         if self.species is not None:

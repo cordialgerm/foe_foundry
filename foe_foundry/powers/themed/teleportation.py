@@ -111,7 +111,7 @@ class _Scatter(TeleportationPower):
         super().__init__(name="Scatter", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        distance = 20 if stats.cr <= 7 else 30
+        distance = 30 if stats.cr <= 6 else 60
         dc = stats.difficulty_class
         count = int(max(2, ceil(stats.cr / 3)))
 

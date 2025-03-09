@@ -25,7 +25,7 @@ SpellcasterPowers: List[Power] = (
     + conjurer.ConjurationWizards()
     + cult.CultCasters()
     + divination.DivinationWizards()
-    + elementalist.ElementalistWizards()
+    + elementalist.ElementalistWizards
     + enchanter.EnchanterWizards()
     + fiendish.FiendishCasters()
     + illusionist.IllusionistWizards()

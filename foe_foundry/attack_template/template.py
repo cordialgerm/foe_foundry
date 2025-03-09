@@ -61,7 +61,7 @@ class AttackTemplate:
             min_die_count=self.die_count or 1,
         )
 
-    def alter_base_stats(self, stats: BaseStatblock, rng: Generator) -> BaseStatblock:
+    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
         args: dict = dict(uses_shield=self.allows_shield)
         if self.damage_type is not None:
             args.update(primary_damage_type=self.damage_type)

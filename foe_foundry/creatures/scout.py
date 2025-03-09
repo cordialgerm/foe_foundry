@@ -111,7 +111,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     attack = weapon.Longbow
     secondary_attack = weapon.Shortswords
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
     stats = secondary_attack.add_as_secondary_attack(stats)

@@ -152,7 +152,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
 
     secondary_attack = weapon.Shortbow if cr <= 1 else weapon.Crossbow
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
     stats = secondary_attack.add_as_secondary_attack(stats)

@@ -116,7 +116,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # Spies use poisoned Daggers as their primary attack
     attack = weapon.Daggers.with_display_name("Poisoned Dagger")
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 

@@ -119,7 +119,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     )
     secondary_damage_type = DamageType.Poison
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,
