@@ -39,7 +39,7 @@ class _TransmutationWizard(WizardPower):
         feature = Feature(
             name="Spell Transmutation",
             action=ActionType.Feature,
-            description=f"{stats.roleref.capitalize()} may choose to change the damage type of any spell they cast or spell attack to either acid, cold, fire, lightning, or thunder.",
+            description=f"{stats.roleref.capitalize()} may change the damage of any spell or spell attack to acid, cold, fire, lightning, or thunder.",
         )
         return [feature]
 

@@ -182,6 +182,7 @@ class BaseStatblock:
             legendary_resistance_damage_taken=self.legendary_resistance_damage_taken,
             caster_type=self.caster_type,
             selection_target_args=self.selection_target_args,
+            flags=self.flags.copy(),
         )
         return args
 

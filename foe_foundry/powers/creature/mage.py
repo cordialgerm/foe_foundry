@@ -112,9 +112,9 @@ class _AdeptMage(MagePower):
         stats = super().modify_stats_inner(stats)
         stats = stats.add_spells(
             [
-                illusion.Invisibility.for_statblock(),
-                conjuration.Web.for_statblock(),
-                evocation.Shatter.for_statblock(),
+                illusion.Invisibility.for_statblock(uses=1),
+                conjuration.Web.for_statblock(uses=1),
+                evocation.Shatter.for_statblock(uses=1),
             ]
         )
         return stats
@@ -135,9 +135,9 @@ class _Mage(MagePower):
         stats = super().modify_stats_inner(stats)
         stats = stats.add_spells(
             [
-                illusion.GreaterInvisibility.for_statblock(),
-                transmutation.Fly.for_statblock(),
-                evocation.WallOfForce.for_statblock(),
+                illusion.GreaterInvisibility.for_statblock(uses=1),
+                transmutation.Fly.for_statblock(uses=1),
+                evocation.WallOfForce.for_statblock(uses=1),
             ]
         )
         return stats
@@ -158,10 +158,10 @@ class _Archmage(MagePower):
         stats = super().modify_stats_inner(stats)
         stats = stats.add_spells(
             [
-                illusion.GreaterInvisibility.for_statblock(),
-                evocation.WallOfForce.for_statblock(),
-                abjuration.GlobeOfInvulnerability.for_statblock(),
-                conjuration.Teleport.for_statblock(),
+                illusion.GreaterInvisibility.for_statblock(uses=1),
+                evocation.WallOfForce.for_statblock(uses=1),
+                abjuration.GlobeOfInvulnerability.for_statblock(uses=1),
+                conjuration.Teleport.for_statblock(uses=1),
             ]
         )
         return stats

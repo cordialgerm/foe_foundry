@@ -198,8 +198,7 @@ class _Overchannel(PowerWithStandardScoring):
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,
-            description=f"If {stats.selfref} begins its turn with no hostile creatures within 10 feet of it, it can use its bonus action to channel vast amounts of power into its next spell. \
-                The next spell attack it makes this turn that hits a target deals maximum damage.",
+            description=f"The {stats.selfref} begins to channel vast amounts of power into its next spell. If it begins its next turn with no creature next to it, then the next spell attack it makes that turn that hits a target deals maximum damage.",
         )
         return [feature]
 

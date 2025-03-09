@@ -239,7 +239,7 @@ def determine_summon_formula(
             # if there are going to be many summons, then prefer not to use that option
             if target_val > max_quantity:
                 target_val = max_quantity
-                weight = 0.75
+                weight = 0.1
             else:
                 weight = 1
 

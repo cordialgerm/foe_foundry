@@ -9,7 +9,14 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    EXTRA_HIGH_POWER,
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class TemporalPower(PowerWithStandardScoring):
@@ -62,8 +69,8 @@ class _CurseOfTheAges(TemporalPower):
         super().__init__(
             name="Curse of the Ages",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
-            require_cr=7,
+            power_level=EXTRA_HIGH_POWER,
+            require_cr=10,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

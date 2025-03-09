@@ -16,7 +16,7 @@ from ..power import (
 )
 
 
-class _CasterTypePower(PowerWithStandardScoring):
+class _MetamagicPower(PowerWithStandardScoring):
     def __init__(
         self,
         *,
@@ -26,11 +26,7 @@ class _CasterTypePower(PowerWithStandardScoring):
         **kwargs,
     ):
         def is_correct_spellcaster(c: BaseStatblock) -> bool:
-            existing = kwargs.get("require_callback")
-            if existing and not existing(c):
-                return False
-
-            return c.caster_type == caster_type
+            return c.caster_type == caster_type and len(c.spells) > 0
 
         score_args = (
             dict(require_callback=is_correct_spellcaster, require_cr=4) | kwargs
@@ -48,7 +44,7 @@ class _CasterTypePower(PowerWithStandardScoring):
         self.caster_type = caster_type
 
 
-class _ArcaneMastery(_CasterTypePower):
+class _ArcaneMastery(_MetamagicPower):
     def __init__(self):
         super().__init__(name="Arcane Mastery", caster_type=CasterType.Arcane)
 
@@ -62,7 +58,7 @@ class _ArcaneMastery(_CasterTypePower):
         return [feature]
 
 
-class _PrimalMastery(_CasterTypePower):
+class _PrimalMastery(_MetamagicPower):
     def __init__(self):
         super().__init__(name="Primal Mastery", caster_type=CasterType.Primal)
 
@@ -79,7 +75,7 @@ class _PrimalMastery(_CasterTypePower):
         return [feature]
 
 
-class _DivineIntervention(_CasterTypePower):
+class _DivineIntervention(_MetamagicPower):
     def __init__(self):
         super().__init__(
             name="Divine Intervention",
@@ -110,7 +106,7 @@ class _DivineIntervention(_CasterTypePower):
         return [feature]
 
 
-class _SubtleMind(_CasterTypePower):
+class _SubtleMind(_MetamagicPower):
     def __init__(self):
         super().__init__(
             name="Subtle Mind", caster_type=CasterType.Psionic, power_level=RIBBON_POWER
@@ -125,7 +121,7 @@ class _SubtleMind(_CasterTypePower):
         return [feature]
 
 
-class _PactBoon(_CasterTypePower):
+class _PactBoon(_MetamagicPower):
     def __init__(self):
         super().__init__(
             name="Pact Boon", caster_type=CasterType.Pact, power_level=MEDIUM_POWER
@@ -144,16 +140,12 @@ class _PactBoon(_CasterTypePower):
         return [feature]
 
 
-class _InnateMagic(_CasterTypePower):
+class _InnateMagic(_MetamagicPower):
     def __init__(self):
-        def has_spells(c: BaseStatblock) -> bool:
-            return len(c.spells) > 0
-
         super().__init__(
             name="Innate Magic",
             caster_type=CasterType.Innate,
             power_level=HIGH_POWER,
-            require_callback=has_spells,
         )
 
     def generate_features(self, stats: BaseStatblock):

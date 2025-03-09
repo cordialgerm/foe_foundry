@@ -72,7 +72,7 @@ class _ChaoticSpace(ChaoticPower):
             name="Chaotic Space",
             action=ActionType.Action,
             uses=1,
-            replaces_multiattack=1,
+            replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} creates a region of chaotic space in a {radius} foot sphere centered at a point it can see within {distance} feet. \
                 Whenever another creature casts a spell within this space, it must make a DC {dc} Charisma saving throw or trigger a *Wild Magic Surge*. \
                 Whenever another creature ends its turn within the space, it teleports 30 (1d10 x 5) feet in a random direction.",
