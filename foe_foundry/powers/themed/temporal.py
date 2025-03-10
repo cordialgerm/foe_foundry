@@ -3,7 +3,7 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import Condition, DamageType, conditions
+from ...damage import Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -28,16 +28,6 @@ class TemporalPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
-        def is_magical_human(c: BaseStatblock) -> bool:
-            if c.creature_type == CreatureType.Humanoid:
-                return (
-                    any(t.is_spell() for t in c.attack_types)
-                    and c.secondary_damage_type != DamageType.Radiant
-                    and c.caster_type != CasterType.Divine
-                )
-            else:
-                return True
-
         super().__init__(
             name=name,
             source=source,
@@ -50,10 +40,8 @@ class TemporalPower(PowerWithStandardScoring):
                     CreatureType.Fey,
                     CreatureType.Fiend,
                     CreatureType.Aberration,
-                    CreatureType.Humanoid,
                 },
-                require_callback=is_magical_human,
-                bonus_roles=MonsterRole.Controller,
+                require_roles=MonsterRole.Controller,
             )
             | score_args,
         )

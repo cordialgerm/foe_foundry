@@ -384,7 +384,7 @@ class _FrighteningAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description="On a hit, the target is {Condition.Frightened.caption} until the end of its next turn",
+            description=f"On a hit, the target is {Condition.Frightened.caption} until the end of its next turn",
         )
         return [feature]
 

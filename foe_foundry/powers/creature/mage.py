@@ -170,11 +170,12 @@ class _Archmage(MagePower):
         return []
 
 
-ProtectiveMagic = _ProtectiveMagic()
-ApprenticeMage = _ApprenticeMage()
-AdeptMage = _AdeptMage()
-Mage = _Mage()
-Archmage = _Archmage()
+ProtectiveMagic: Power = _ProtectiveMagic()
+ApprenticeMage: Power = _ApprenticeMage()
+AdeptMage: Power = _AdeptMage()
+Mage: Power = _Mage()
+Archmage: Power = _Archmage()
+
 
 MagePowers: list[Power] = [
     ProtectiveMagic,

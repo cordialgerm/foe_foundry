@@ -25,6 +25,7 @@ from ..powers.spellcaster import (
     elementalist,
     enchanter,
     illusionist,
+    magic,
     metamagic,
     necromancer,
     transmuter,
@@ -37,6 +38,8 @@ from ..powers.themed import (
     deathly,
     diseased,
     domineering,
+    emanation,
+    gadget,
     poison,
     storm,
     technique,
@@ -223,7 +226,7 @@ class _MageWeights(CustomPowerSelection):
             force.append(
                 next(p for p in abjurer.AbjurationWizards() if power_matches_cr(p, cr))
             )
-            esoteric.append(temporal.TemporalPowers)
+            esoteric += [emanation.RunicWards]
             techniques.append(anti_magic.SpellStealer)
         elif variant is ConjurerVariant:
             force.append(
@@ -235,6 +238,7 @@ class _MageWeights(CustomPowerSelection):
                 anti_magic.RedirectTeleport,
                 teleportation.Scatter,
                 teleportation.BendSpace,
+                emanation.SummonersRift,
             ]
         elif variant is DivinerVariant:
             force.append(
@@ -243,6 +247,7 @@ class _MageWeights(CustomPowerSelection):
                 )
             )
             esoteric += temporal.TemporalPowers
+            esoteric += [emanation.TimeRift]
         elif variant is EnchanterVariant:
             force.append(
                 next(p for p in enchanter.EnchanterWizards() if power_matches_cr(p, cr))
@@ -250,6 +255,7 @@ class _MageWeights(CustomPowerSelection):
             esoteric += domineering.DomineeringPowers
             esoteric += charm.CharmPowers
             esoteric.remove(charm.WardingCharm)
+            esoteric += [emanation.HypnoticLure]
             techniques = [
                 technique.CharmingAttack,
                 technique.VexingAttack,
@@ -264,6 +270,7 @@ class _MageWeights(CustomPowerSelection):
                 )
             )
             esoteric += tricky.TrickyPowers
+            esoteric += [emanation.IllusoryReality]
             techniques = [
                 technique.VexingAttack,
                 technique.SappingAttack,
@@ -281,6 +288,7 @@ class _MageWeights(CustomPowerSelection):
             esoteric += undead.UndeadPowers
             esoteric.remove(undead.UndeadFortitude)
             esoteric.remove(deathly.ShadowWalk)
+            esoteric += [emanation.ShadowRift]
             techniques = [technique.FrighteningAttack, technique.NoHealingAttack]
         elif variant is TransmuterVariant:
             force.append(
@@ -294,16 +302,20 @@ class _MageWeights(CustomPowerSelection):
                 chaotic.ChaoticSpace,
                 teleportation.BendSpace,
                 teleportation.Scatter,
+                emanation.RecombinationMatrix,
             ]
         elif variant is PyromancerVariant:
             force.append(elementalist.Pyromancer)
             techniques = [technique.BlindingAttack]
+            esoteric += [emanation.RagingFlame]
         elif variant is CryomancerVariant:
             force.append(elementalist.Cryomancer)
             techniques = [technique.SlowingAttack, technique.FreezingAttack]
+            esoteric += [emanation.BitingFrost]
         elif variant is ElectromancerVariant:
             force.append(elementalist.Electromancer)
             esoteric += storm.StormPowers
+            esoteric += [emanation.LashingWinds]
             techniques = [
                 technique.SappingAttack,
                 technique.VexingAttack,
@@ -313,6 +325,7 @@ class _MageWeights(CustomPowerSelection):
             force.append(elementalist.Toximancer)
             esoteric += poison.PoisonPowers
             esoteric += diseased.DiseasedPowers
+            esoteric += [emanation.FetidMiasma]
             techniques = [technique.PoisonedAttack]
 
         # Hard-Coded Powers
@@ -338,34 +351,37 @@ class _MageWeights(CustomPowerSelection):
             force += [ApprenticeMage]
 
         # general purpose mage powers
-        general = (
-            metamagic.MetamagicPowers
-            + [
-                anti_ranged.Overchannel,
-            ]
-            + artillery.ArtilleryPowers
-        )
+        general = [
+            metamagic.ArcaneMastery,
+            anti_ranged.Overchannel,
+            artillery.TwinSpell,
+            artillery.SuppresingFire,
+        ]
 
         # the Controlling spells don't really fit with the themes of the mages
-        ignore = controller.ControllingSpells + [tricky.HypnoticPatern]
-
         # supress indirect fire because it comes up so much and we want variety
-        suppress = [artillery.IndirectFire]
+        # suppress Magic Powers because these mages already have spell lists
+        ignore = (
+            controller.ControllingSpells
+            + [
+                tricky.HypnoticPatern,
+                artillery.IndirectFire,
+                gadget.PotionOfHealing,
+            ]
+            + magic.MagicPowers
+        )
 
         self.force = force
         self.general = general
         self.techniques = techniques
         self.esoteric = esoteric
-        self.suppress = suppress
         self.ignore = ignore
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
         if p in self.force or p in self.ignore:
             return CustomPowerWeight(0, ignore_usual_requirements=False)
-        elif p in self.suppress:
-            return CustomPowerWeight(0.1, ignore_usual_requirements=False)
         elif p in self.general:
-            return CustomPowerWeight(2, ignore_usual_requirements=False)
+            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
         elif p in self.techniques:
             return CustomPowerWeight(2, ignore_usual_requirements=True)
         elif p in self.esoteric:
@@ -414,13 +430,13 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
             limited_uses_target=-1,
             limited_uses_max=3 if cr <= 11 else 4,
             reaction_target=-1,
-            reaction_max=2 if cr <= 11 else 3,
+            reaction_max=2,
             spellcasting_powers_target=-1,
             spellcasting_powers_max=-1,
             bonus_action_target=-1,
             bonus_action_max=2,
-            recharge_target=-1,
-            recharge_max=2,
+            recharge_target=1,
+            recharge_max=1,
         ),
     )
 

@@ -9,4 +9,4 @@ class Token:
 
     @property
     def caption(self) -> str:
-        return f"<span class='token'>{self.name} Token (AC/DC {self.dc}, {self.charges} Charges)</span>"
+        return f"<span class='token'>{self.name} Token</span> (AC/DC {self.dc}, {self.charges} Charges)"

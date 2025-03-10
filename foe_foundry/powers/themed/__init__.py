@@ -19,6 +19,7 @@ from . import (
     diseased,
     domineering,
     earthy,
+    emanation,
     fast,
     fearsome,
     flying,
@@ -56,6 +57,7 @@ ThemedPowers: List[Power] = (
     + diseased.DiseasedPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
+    + emanation.EmanationPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
     + flying.FlyingPowers

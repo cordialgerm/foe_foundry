@@ -36,7 +36,7 @@ class _Pyromancer(_Elementalist):
         feature = Feature(
             name="Ignite",
             action=ActionType.BonusAction,
-            recharge=5,
+            uses=max(stats.attributes.proficiency // 2, 1),
             description=f"Immediately after dealing fire damage to a target that {stats.selfref} can see within 60 feet, it causes that target to ignite and gain {burning.caption}. {burning.description_3rd}",
         )
 
@@ -64,7 +64,7 @@ class _Cryomancer(_Elementalist):
         feature = Feature(
             name="Flash Freeze",
             action=ActionType.BonusAction,
-            recharge=5,
+            uses=max(stats.attributes.proficiency // 2, 1),
             description=f"Immediately after dealing cold damage to a target that {stats.selfref} can see within 60 feet, it causes that target to make a DC {dc} Constitution saving throw. \
                 On a failed save, the target gains {frozen.caption}. {frozen.description_3rd}",
         )
@@ -92,7 +92,7 @@ class _Electromancer(_Elementalist):
         feature = Feature(
             name="Dazing Shock",
             action=ActionType.BonusAction,
-            recharge=5,
+            uses=max(stats.attributes.proficiency // 2, 1),
             description=f"Immediately after dealing lightning damage to a target that {stats.selfref} can see within 60 feet, it causes that target to make a DC {dc} Constitution saving throw. \
                 On a failed save, the target gains {shocked.caption} until the end of its next turn. {shocked.description_3rd}",
         )
@@ -115,7 +115,7 @@ class _Toximancer(_Elementalist):
         feature = Feature(
             name="Sapping Poison",
             action=ActionType.BonusAction,
-            recharge=5,
+            uses=max(stats.attributes.proficiency // 2, 1),
             description=f"Immediately after dealing poison damage to a target that {stats.selfref} can see within 60 feet, it causes that target to make a DC {dc} Constitution saving throw. \
                 On a failed save, the target gains {weakened.caption} until the end of its next turn. {weakened.description_3rd}",
         )
