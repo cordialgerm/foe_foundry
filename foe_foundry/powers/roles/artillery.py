@@ -6,7 +6,6 @@ from ...attributes import Skills, Stats
 from ...damage import AttackType, conditions
 from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (

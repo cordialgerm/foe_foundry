@@ -9,12 +9,15 @@ from foe_foundry.creatures import (
     CreatureVariant,
     GenerationSettings,
     SelectionSettings,
+    SuggestedCr,
 )
 
 
 def plot_simulation(
+    *,
     template: CreatureTemplate,
     variant: CreatureVariant,
+    suggested_cr: SuggestedCr | None = None,
     n: int,
     temperature: float = 1.0,
     full_plot: bool = False,
@@ -22,12 +25,15 @@ def plot_simulation(
     counts = {}
     for i in range(n):
         rng = np.random.default_rng(20240711 + i)
-        suggested_cr = variant.suggested_crs[-1]
+
+        if suggested_cr is None:
+            suggested_cr = variant.suggested_crs[-1]
 
         settings = GenerationSettings(
             rng=rng,
             creature_name=suggested_cr.name,
             cr=suggested_cr.cr,
+            is_legendary=suggested_cr.is_legendary,
             variant=variant,
             selection_settings=SelectionSettings(temperature=temperature),
         )

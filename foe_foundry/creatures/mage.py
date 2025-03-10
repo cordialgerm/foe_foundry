@@ -2,6 +2,8 @@ from ..ac_templates import ArcaneArmor
 from ..attack_template import spell
 from ..creature_types import CreatureType
 from ..powers import (
+    LOW_POWER,
+    MEDIUM_POWER,
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
@@ -37,6 +39,7 @@ from ..powers.themed import (
     domineering,
     poison,
     storm,
+    technique,
     teleportation,
     temporal,
     tough,
@@ -46,7 +49,7 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
-from ..statblocks import BaseStatblock
+from ..statblocks import BaseStatblock, MonsterDials
 from .base_stats import base_stats
 from .template import (
     CreatureTemplate,
@@ -107,17 +110,6 @@ DivinerVariant = CreatureVariant(
     ],
 )
 
-ElementalistVariant = CreatureVariant(
-    name="Elementalist",
-    description="Elementalists are mages who specialize in controlling the elements. They can harness the power of earth, air, fire, and water to create powerful spells and magical effects.",
-    suggested_crs=[
-        SuggestedCr(name="Pyromancer", cr=6),
-        SuggestedCr(name="Cryomancer", cr=6),
-        SuggestedCr(name="Electromancer", cr=6),
-        SuggestedCr(name="Toximancer", cr=6),
-    ],
-)
-
 EnchanterVariant = CreatureVariant(
     name="Enchanter",
     description="Enchanters are mages who specialize in manipulating the minds of others. They can charm, beguile, or dominate other creatures, or they could use their powers to create magical items or artifacts.",
@@ -166,6 +158,38 @@ TransmuterVariant = CreatureVariant(
     ],
 )
 
+PyromancerVariant = CreatureVariant(
+    name="Pyromancer",
+    description="Pyromancers are mages who specialize in controlling fire. They can create walls of flame, summon fiery meteors, or unleash devastating fireballs to incinerate their enemies",
+    suggested_crs=[
+        SuggestedCr(name="Pyromancer", cr=6, srd_creatures=["Mage"]),
+    ],
+)
+
+CryomancerVariant = CreatureVariant(
+    name="Cryomancer",
+    description="Cryomancers are mages who specialize in controlling ice and cold. They can create blizzards, freeze their enemies in place, or summon icy shards to pierce their foes.",
+    suggested_crs=[
+        SuggestedCr(name="Cryomancer", cr=6, srd_creatures=["Mage"]),
+    ],
+)
+
+ElectromancerVariant = CreatureVariant(
+    name="Electromancer",
+    description="Electromancers are mages who specialize in controlling electricity and lightning. They can summon bolts of lightning, create electrical storms, or electrify their enemies with powerful shocks.",
+    suggested_crs=[
+        SuggestedCr(name="Electromancer", cr=6, srd_creatures=["Mage"]),
+    ],
+)
+
+ToximancerVariant = CreatureVariant(
+    name="Toximancer",
+    description="Toximancers are mages who specialize in controlling poisons and diseases. They can create clouds of toxic gas, infect their enemies with deadly diseases, or summon swarms of poisonous creatures to attack their foes.",
+    suggested_crs=[
+        SuggestedCr(name="Toximancer", cr=6, srd_creatures=["Mage"]),
+    ],
+)
+
 
 def power_matches_cr(p: Power, cr: float) -> bool:
     score_args: dict = p.score_args  # type: ignore
@@ -183,14 +207,24 @@ class _MageWeights(CustomPowerSelection):
 
         force = []
         esoteric = []
+        techniques = [
+            technique.SappingAttack,
+            technique.PushingAttack,
+            technique.ProneAttack,
+            technique.SlowingAttack,
+            technique.DazingAttacks,
+        ]
 
         if variant is ApprenticeVariant:
             force.append(ApprenticeMage)
+            techniques.remove(technique.DazingAttacks)
+            techniques.remove(technique.SappingAttack)
         elif variant is AbjurerVariant:
             force.append(
                 next(p for p in abjurer.AbjurationWizards() if power_matches_cr(p, cr))
             )
-            esoteric.append(anti_magic.SpellStealer)
+            esoteric.append(temporal.TemporalPowers)
+            techniques.append(anti_magic.SpellStealer)
         elif variant is ConjurerVariant:
             force.append(
                 next(
@@ -216,6 +250,11 @@ class _MageWeights(CustomPowerSelection):
             esoteric += domineering.DomineeringPowers
             esoteric += charm.CharmPowers
             esoteric.remove(charm.WardingCharm)
+            techniques = [
+                technique.CharmingAttack,
+                technique.VexingAttack,
+                technique.SappingAttack,
+            ]
         elif variant is IllusionistVariant:
             force.append(
                 next(
@@ -225,6 +264,11 @@ class _MageWeights(CustomPowerSelection):
                 )
             )
             esoteric += tricky.TrickyPowers
+            techniques = [
+                technique.VexingAttack,
+                technique.SappingAttack,
+                technique.FrighteningAttack,
+            ]
         elif variant is NecromancerVariant:
             force.append(
                 next(
@@ -237,6 +281,7 @@ class _MageWeights(CustomPowerSelection):
             esoteric += undead.UndeadPowers
             esoteric.remove(undead.UndeadFortitude)
             esoteric.remove(deathly.ShadowWalk)
+            techniques = [technique.FrighteningAttack, technique.NoHealingAttack]
         elif variant is TransmuterVariant:
             force.append(
                 next(
@@ -250,20 +295,35 @@ class _MageWeights(CustomPowerSelection):
                 teleportation.BendSpace,
                 teleportation.Scatter,
             ]
-        elif variant is ElementalistVariant:
-            if name == "Pyromancer":
-                force.append(elementalist.Pyromancer)
-            elif name == "Cryomancer":
-                force.append(elementalist.Cryomancer)
-            elif name == "Electromancer":
-                force.append(elementalist.Electromancer)
-                esoteric += storm.StormPowers
-            elif name == "Toximancer":
-                force.append(elementalist.Toximancer)
-                esoteric += poison.PoisonPowers
-                esoteric += diseased.DiseasedPowers
+        elif variant is PyromancerVariant:
+            force.append(elementalist.Pyromancer)
+            techniques = [technique.BlindingAttack]
+        elif variant is CryomancerVariant:
+            force.append(elementalist.Cryomancer)
+            techniques = [technique.SlowingAttack, technique.FreezingAttack]
+        elif variant is ElectromancerVariant:
+            force.append(elementalist.Electromancer)
+            esoteric += storm.StormPowers
+            techniques = [
+                technique.SappingAttack,
+                technique.VexingAttack,
+                technique.ShockingAttack,
+            ]
+        elif variant is ToximancerVariant:
+            force.append(elementalist.Toximancer)
+            esoteric += poison.PoisonPowers
+            esoteric += diseased.DiseasedPowers
+            techniques = [technique.PoisonedAttack]
 
-        if cr >= 12:
+        # Hard-Coded Powers
+        if cr >= 16:
+            force += [
+                tough.MagicResistance,
+                # don't include MistyStep because mage has a legendary teleport action
+                ProtectiveMagic,
+                Archmage,
+            ]
+        elif cr >= 12:
             force += [
                 tough.MagicResistance,
                 teleportation.MistyStep,
@@ -278,28 +338,40 @@ class _MageWeights(CustomPowerSelection):
             force += [ApprenticeMage]
 
         # general purpose mage powers
-        general = metamagic.MetamagicPowers + [
-            artillery.TwinSpell,
-            anti_ranged.Overchannel,
-        ]
+        general = (
+            metamagic.MetamagicPowers
+            + [
+                anti_ranged.Overchannel,
+            ]
+            + artillery.ArtilleryPowers
+        )
 
         # the Controlling spells don't really fit with the themes of the mages
-        suppress = controller.ControllingSpells + [tricky.HypnoticPatern]
+        ignore = controller.ControllingSpells + [tricky.HypnoticPatern]
+
+        # supress indirect fire because it comes up so much and we want variety
+        suppress = [artillery.IndirectFire]
 
         self.force = force
         self.general = general
+        self.techniques = techniques
         self.esoteric = esoteric
         self.suppress = suppress
+        self.ignore = ignore
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.force or p in self.suppress:
+        if p in self.force or p in self.ignore:
             return CustomPowerWeight(0, ignore_usual_requirements=False)
+        elif p in self.suppress:
+            return CustomPowerWeight(0.1, ignore_usual_requirements=False)
         elif p in self.general:
             return CustomPowerWeight(2, ignore_usual_requirements=False)
+        elif p in self.techniques:
+            return CustomPowerWeight(2, ignore_usual_requirements=True)
         elif p in self.esoteric:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
+            return CustomPowerWeight(2, ignore_usual_requirements=True)
         else:
-            return CustomPowerWeight(0.1, ignore_usual_requirements=False)
+            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
 
     def force_powers(self) -> list[Power]:
         return self.force
@@ -376,17 +448,6 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
         attack = spell.ArcaneBurst.with_display_name("Time Warp")
         primary_role = MonsterRole.Controller
         additional_roles = [MonsterRole.Artillery]
-    elif variant is ElementalistVariant:
-        primary_role = MonsterRole.Artillery
-        additional_roles = []
-        if name == "Pyromancer":
-            attack = spell.Firebolt
-        elif name == "Cryomancer":
-            attack = spell.Frostbolt
-        elif name == "Electromancer":
-            attack = spell.Shock
-        elif name == "Toximancer":
-            attack = spell.Poisonbolt
     elif variant is EnchanterVariant:
         primary_role = MonsterRole.Controller
         additional_roles = [MonsterRole.Artillery]
@@ -403,6 +464,22 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
         primary_role = MonsterRole.Controller
         additional_roles = [MonsterRole.Artillery]
         attack = spell.ArcaneBurst.with_display_name("Shred Matter")
+    elif variant is PyromancerVariant:
+        primary_role = MonsterRole.Artillery
+        additional_roles = [MonsterRole.Controller]
+        attack = spell.Firebolt
+    elif variant is CryomancerVariant:
+        primary_role = MonsterRole.Controller
+        additional_roles = [MonsterRole.Artillery]
+        attack = spell.Frostbolt
+    elif variant is ElectromancerVariant:
+        primary_role = MonsterRole.Artillery
+        additional_roles = [MonsterRole.Controller]
+        attack = spell.Shock
+    elif variant is ToximancerVariant:
+        primary_role = MonsterRole.Controller
+        additional_roles = [MonsterRole.Artillery]
+        attack = spell.Poisonbolt
     else:
         raise ValueError(f"Unknown variant {variant}")
 
@@ -425,13 +502,12 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 6:
         stats = stats.grant_save_proficiency(Stats.WIS, Stats.INT)
 
-    # # POWER MODIFIER
-    # # reduce number of powers generated because mages have a lot of hard-coded powers already
-    # stats = stats.apply_monster_dials(
-    #     MonsterDials(
-    #         recommended_powers_modifier=-1 * (MEDIUM_POWER if cr >= 4 else LOW_POWER)
-    #     )
-    # )
+    # POWER MODIFIER
+    stats = stats.apply_monster_dials(
+        MonsterDials(
+            recommended_powers_modifier=(MEDIUM_POWER if cr >= 6 else LOW_POWER)
+        )
+    )
 
     # POWERS
     features = []
@@ -462,11 +538,14 @@ MageTemplate: CreatureTemplate = CreatureTemplate(
         AbjurerVariant,
         ConjurerVariant,
         DivinerVariant,
-        ElementalistVariant,
         EnchanterVariant,
         IllusionistVariant,
         NecromancerVariant,
         TransmuterVariant,
+        CryomancerVariant,
+        PyromancerVariant,
+        ElectromancerVariant,
+        ToximancerVariant,
     ],
     species=[],
     callback=generate_mage,

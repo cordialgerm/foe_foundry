@@ -391,6 +391,26 @@ class _FrighteningAttack(Technique):
         return [feature]
 
 
+class _NoHealingAttack(Technique):
+    def __init__(self):
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Support},
+            require_damage={DamageType.Necrotic},
+            attack_names=["-", spell.Deathbolt],
+        )
+        super().__init__(name="No Healing Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="No Healing Attack",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description="On a hit, the target cannot regain hitpoints until the end of its next turn.",
+        )
+        return [feature]
+
+
 class _CharmingAttack(Technique):
     def __init__(self):
         score_args = dict(
@@ -1087,6 +1107,7 @@ DisarmingAttack: Power = _DisarmingAttack()
 BurningAttack: Power = _BurningAttack()
 DazingAttacks: Power = _DazingAttack()
 FrighteningAttack: Power = _FrighteningAttack()
+NoHealingAttack: Power = _NoHealingAttack()
 FreezingAttack: Power = _FreezingAttack()
 GrapplingAttack: Power = _GrapplingAttack()
 GrazingAttack: Power = _GrazingAttack()
@@ -1116,6 +1137,7 @@ TechniquePowers: List[Power] = [
     ExpertBrawler,
     FreezingAttack,
     FrighteningAttack,
+    NoHealingAttack,
     GrapplingAttack,
     GrazingAttack,
     Interception,
