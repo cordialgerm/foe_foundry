@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -68,12 +69,13 @@ class _PutridStench(ZombiePower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(1.0)
         dc = stats.difficulty_class_easy
+        poisoned = Condition.Poisoned
 
         feature = Feature(
             name="Putrid Stench",
             action=ActionType.Reaction,
             uses=1,
-            description=f"{stats.selfref.title()} releases a putrid stench when it takes damage. Each creature within 5 feet must make a DC {dc} Constitution save or take {damage.description} poison damage and be **Poisoned** until the end of their next turn.",
+            description=f"{stats.selfref.title()} releases a putrid stench when it takes damage. Each creature within 5 feet must make a DC {dc} Constitution save or take {damage.description} poison damage and be {poisoned.caption} until the end of their next turn.",
         )
         return [feature]
 
@@ -89,11 +91,13 @@ class _SeveredLimb(ZombiePower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
         feature = Feature(
             name="Severed Limb",
             action=ActionType.Reaction,
             uses=stats.attributes.proficiency // 2,
-            description=f"When {stats.selfref} takes damage, one of its decaying limbs sloughs off and attempts to grapple the source of the damage if it is within 5 feet of {stats.selfref}. The target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}) and **Restrained** by the limb.",
+            description=f"When {stats.selfref} takes damage, one of its decaying limbs sloughs off and attempts to grapple the source of the damage if it is within 5 feet of {stats.selfref}. The target must make a DC {dc} Strength save or be {grappled.caption} (escape DC {dc}) and {restrained.caption} by the limb.",
         )
         return [feature]
 
