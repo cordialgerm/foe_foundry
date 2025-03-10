@@ -1,9 +1,11 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import creature_ref
+
 from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -85,10 +87,11 @@ class _FaePresence(FeyPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        charmed = Condition.Charmed
         feature = Feature(
             name="Fae Presence",
             action=ActionType.Feature,
-            description=f"An enemy of {stats.selfref} that starts their turn within 25 feet of {stats.selfref} must succeed on a DC {dc} Wisdom saving throw or be **Charmed** by {stats.selfref} until the end of their turn.",
+            description=f"An enemy of {stats.selfref} that starts their turn within 25 feet of {stats.selfref} must succeed on a DC {dc} Wisdom saving throw or be {charmed.caption} by {stats.selfref} until the end of their turn.",
         )
         return [feature]
 
@@ -157,10 +160,10 @@ class _Awaken(FeyPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr >= 5:
-            creature = "**Awakened Tree**"
+            creature = creature_ref("Awakened Tree")
             formula = DieFormula.target_value(1 + stats.cr / 4, force_die=Die.d4)
         else:
-            creature = "**Awakened Shrub**"
+            creature = creature_ref("Awakened Shrub")
             formula = DieFormula.target_value(3 + 4 * stats.cr, force_die=Die.d4)
 
         feature = Feature(

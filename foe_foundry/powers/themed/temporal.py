@@ -3,7 +3,7 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -132,7 +132,7 @@ class _TemporalMastery(TemporalPower):
             action=ActionType.Action,
             uses=2,
             replaces_multiattack=2,
-            description=f"{stats.selfref} becomes **Invisible** until the start of its next turn. It may also adjust its initiative to any value it desires. \
+            description=f"{stats.selfref} becomes {Condition.Invisible.caption} until the start of its next turn. It may also adjust its initiative to any value it desires. \
                 This can allow {stats.selfref} to have a second turn this round.",
         )
         return [feature]

@@ -3,7 +3,7 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
@@ -92,7 +92,7 @@ class _SpectralDuplicate(Tricky):
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} creates a spectral duplicate of itself in an unoccupied space it can see within 60 feet. \
-                While the duplicate exists, {stats.selfref} is **Invisible** and **Unconscious**. The duplicate has the same statistics and knowledge as {stats.selfref} \
+                While the duplicate exists, {stats.selfref} is {Condition.Invisible.caption} and {Condition.Unconscious.caption}. The duplicate has the same statistics and knowledge as {stats.selfref} \
                 and acts immediately in initiative after {stats.selfref}. The duplicate disappears when {stats.selfref} drops to 0 hp.",
         )
         return [feature]

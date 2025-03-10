@@ -4,7 +4,7 @@ from typing import List
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, DamageType
+from ...damage import Attack, AttackType, Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -175,10 +175,12 @@ class _SpellEater(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stunned = Condition.Stunned
+
         def additional_description(a: Attack) -> Attack:
             return a.split_damage(DamageType.Force, split_ratio=0.75).copy(
                 custom_target="one target that can cast a spell",
-                additional_description="On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is **Stunned** until the end of its next turn.",
+                additional_description=f"On a hit, the target loses its highest level spell slot. If the target has no spell slots remaining, it is {stunned.caption} until the end of its next turn.",
             )
 
         stats = stats.add_attack(

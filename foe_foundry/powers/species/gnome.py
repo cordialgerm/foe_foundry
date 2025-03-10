@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import conditions
+from ...damage import Condition, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -92,9 +92,10 @@ class _GnomishInvisibility(GnomePower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        invisible = Condition.Invisible
         feature = Feature(
             name="Gnomish Invisibility",
-            description=f"{stats.selfref.capitalize()} becomes **Invisible** until the beginning of its next turn or until it attacks or casts a spell",
+            description=f"{stats.selfref.capitalize()} becomes {invisible.caption} until the beginning of its next turn or until it attacks or casts a spell",
             action=ActionType.Action,
             replaces_multiattack=1,
             uses=1,

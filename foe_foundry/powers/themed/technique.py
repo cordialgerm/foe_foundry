@@ -4,7 +4,7 @@ from typing import List, cast
 from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -65,7 +65,7 @@ class _PoisonedAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** until the end of its next turn.",
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {Condition.Poisoned.caption} until the end of its next turn.",
         )
         return [feature]
 
@@ -202,12 +202,10 @@ class _ProneAttack(Technique):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
-            condition = "is knocked **Prone**"
+            condition = "is knocked {Condition.Prone.caption}"
         else:
             dc = stats.difficulty_class
-            condition = (
-                f"must make a DC {dc} Strength saving throw or be knocked **Prone**"
-            )
+            condition = f"must make a DC {dc} Strength saving throw or be knocked {Condition.Prone.caption}"
 
         feature = Feature(
             name="Prone Attack",
@@ -321,10 +319,10 @@ class _GrapplingAttack(Technique):
         dc = stats.difficulty_class
 
         if stats.size >= Size.Huge or stats.attributes.STR >= 20:
-            condition = f"is **Grappled** (escape DC {dc})"
+            condition = f"is {Condition.Grappled.caption} (escape DC {dc})"
         else:
             dc = stats.difficulty_class
-            condition = f"must make a DC {dc} Strength saving throw or be **Grappled** (escape DC {dc})"
+            condition = f"must make a DC {dc} Strength saving throw or be {Condition.Grappled.caption} (escape DC {dc})"
 
         feature = Feature(
             name="Grappling Attack",
@@ -362,7 +360,7 @@ class _BlindingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be **Blinded** until the end of its next turn",
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be {Condition.Blinded.caption} until the end of its next turn",
         )
         return [feature]
 
@@ -386,7 +384,7 @@ class _FrighteningAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description="On a hit, the target is **Frightened** until the end of its next turn",
+            description="On a hit, the target is {Condition.Frightened.caption} until the end of its next turn",
         )
         return [feature]
 
@@ -427,7 +425,7 @@ class _CharmingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Wisdom save or be **Charmed** for 1 minute (save ends at end of turn or when it takes damage).",
+            description=f"On a hit, the target must make a DC {dc} Wisdom save or be {Condition.Charmed.caption} for 1 minute (save ends at end of turn or when it takes damage).",
         )
         return [feature]
 
@@ -789,13 +787,13 @@ class _ExpertBrawler(PowerWithStandardScoring):
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc})",
+            description=f"On a hit, the target is {Condition.Grappled.caption} (escape DC {dc})",
         )
 
         feature2 = Feature(
             name="Pin",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} pins a creature it is grappling. The creature is **Restrained** while grappled in this way \
+            description=f"{stats.selfref.capitalize()} pins a creature it is grappling. The creature is {Condition.Restrained.caption} while grappled in this way \
                 and suffers {dmg.description} ongoing bludgeoning damage at the end of each of its turns.",
         )
 
@@ -948,7 +946,7 @@ class _ShieldMaster(PowerWithStandardScoring):
         feature = Feature(
             name="Shield Slam",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall **Prone**.",
+            description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall {Condition.Prone.caption}.",
         )
         return [feature]
 
@@ -1009,7 +1007,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} makes an overpowering strike against a creature within 5 feet. The target must make a DC {dc} Strength saving throw. \
-                On a failure, it takes {dmg.description} {dmg_type} damage and is knocked **Prone**. On a success, it instead takes half damage.",
+                On a failure, it takes {dmg.description} {dmg_type} damage and is knocked {Condition.Prone.caption}. On a success, it instead takes half damage.",
         )
         return [feature]
 

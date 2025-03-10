@@ -4,9 +4,10 @@ from typing import List
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.references import Token
+
 from ...creature_types import CreatureType
 from ...damage import AttackType
-from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -105,19 +106,18 @@ class _EldritchBeacon(ChaoticPower):
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        hp = easy_multiple_of_five(stats.cr * 3, min_val=5, max_val=50)
-        ac = 10
-        duration = DieFormula.from_expression("1d4 + 1")
         description = self._summon_formula(stats, np.random.default_rng(20210518))
+        beacon = Token(
+            name="Eldritch Beacon", dc=stats.difficulty_class_easy - 1, charges=3
+        )
 
         feature = Feature(
             name="Eldritch Beacon",
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} magically creates an Eldritch Beacon (hp {hp}, AC {ac}) at an unoccupied space it can see within 30 feet. \
-                Each turn that the beacon is active, on initiative count 0, {description} \
-                After {duration.description} rounds the beacon is destroyed.",
+            description=f"{stats.selfref.capitalize()} magically creates a Medium {beacon.caption} at an unoccupied space it can see within 30 feet. \
+                Each turn that the beacon is active, on initiative count 0, {description}",
         )
         return [feature]
 

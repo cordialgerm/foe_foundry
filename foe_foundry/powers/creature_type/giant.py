@@ -5,10 +5,9 @@ from typing import List
 from ...attack_template import natural
 from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Dazed, conditions
+from ...damage import AttackType, Condition, DamageType, Dazed, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -123,13 +122,13 @@ class _FireRune(GiantPower):
         dmg = stats.target_value(target=0.33, suggested_die=Die.d6)
         burning = conditions.Burning(dmg)
         dc = stats.difficulty_class_easy
-
+        restrained = Condition.Restrained
         feature = Feature(
             name="Fire Rune",
             action=ActionType.BonusAction,
             uses=1,
             description=f"Immediately after hitting a creature with an attack, {stats.selfref} invokes the fire run. \
-                The target takes an extra {dmg.description} fire damage and must make a DC {dc} Strength save. On a failure, the creature is **Restrained** (save ends at end of turn). \
+                The target takes an extra {dmg.description} fire damage and must make a DC {dc} Strength save. On a failure, the creature is {restrained.caption} (save ends at end of turn). \
                 While restrained in this way, the creature is {burning.caption}. {burning.description_3rd}",
         )
 
@@ -184,13 +183,15 @@ class _StoneRune(GiantPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        charmed = Condition.Charmed
+        incapacitated = Condition.Incapacitated
         feature = Feature(
             name="Stone Rune",
             action=ActionType.Reaction,
             uses=1,
             description=f"When a creature ends its turn within 30 feet of {stats.selfref}, {stats.selfref} can activate the stone rune. \
-                The creature must make a DC {dc} Wisdom save. On a failure, the creature is **Charmed** for 1 minute (save ends at end of turn). \
-                While charmed in this way, the creature is **Incapacitated** in a dreamy stupor.",
+                The creature must make a DC {dc} Wisdom save. On a failure, the creature is {charmed.caption} for 1 minute (save ends at end of turn). \
+                While charmed in this way, the creature is {incapacitated.caption} in a dreamy stupor.",
         )
         return [feature]
 
@@ -263,12 +264,13 @@ class _Earthshaker(GiantPower):
         distance2 = sizes.get(stats.size, 15)
 
         dazed = Dazed()
+        prone = Condition.Prone
 
         feature1 = Feature(
             name="Earthshaker",
             action=ActionType.Feature,
             description=f"Whenever {stats.selfref} moves, all {size} or smaller creatures that are within {distance1} feet of {stats.selfref} \
-                must make a DC {dc} Strength check or fall **Prone**. A creature that falls prone in this way loses concentration.",
+                must make a DC {dc} Strength check or fall {prone.caption}. A creature that falls prone in this way loses concentration.",
         )
 
         dmg = stats.target_value(1.5, force_die=Die.d8)

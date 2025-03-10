@@ -4,7 +4,7 @@ from typing import List
 from ...attack_template import spell
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType, enchantment
@@ -100,13 +100,15 @@ class _SweetPromises(CharmingPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        charmed = Condition.Charmed
+        stunned = Condition.Stunned
         feature = Feature(
             name="Sweet Promises",
             action=ActionType.Action,
             replaces_multiattack=1,
             uses=1,
             description=f"{stats.selfref.capitalize()} targets a creature that can hear it within 60 feet, offering something the target covets. \
-                The target makes a DC {dc} Wisdom saving throw. On a failure, the target is **Charmed** until the end of its next turn, and **Stunned** while **Charmed** in this way.",
+                The target makes a DC {dc} Wisdom saving throw. On a failure, the target is {charmed.caption} until the end of its next turn, and {stunned.caption} while {charmed.caption} in this way.",
         )
         return [feature]
 

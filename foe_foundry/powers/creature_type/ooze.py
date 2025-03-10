@@ -2,10 +2,9 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -75,13 +74,15 @@ class _Quicksand(OozePower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        restrained = Condition.Restrained
+        grappled = Condition.Grappled
         feature1 = Feature(
             name="Quicksand",
             uses=3,
             action=ActionType.Action,
             description=f"{stats.selfref.capitalize()} creates a 10-foot square of quicksand centered on a point within 60 feet of it. \
-                The quicksand lasts for 1 minute. Any creature that enters the quicksand or starts its turn there must succeed on a DC {stats.difficulty_class} Strength saving throw or be **Grappled** (escape DC {dc}). \
-                While grappled in this way, the creature is **Restrained**.",
+                The quicksand lasts for 1 minute. Any creature that enters the quicksand or starts its turn there must succeed on a DC {stats.difficulty_class} Strength saving throw or be {grappled.caption} (escape DC {dc}). \
+                While grappled in this way, the creature is {restrained.caption}.",
         )
         feature2 = Feature(
             name="Quagmire Step",
@@ -141,12 +142,12 @@ class _LeechingGrasp(OozePower):
         dc = stats.difficulty_class
         dmg = stats.target_value(0.5, suggested_die=Die.d6)
         bleeding = conditions.Bleeding(damage=dmg, damage_type=DamageType.Necrotic)
-
+        grappled = Condition.Grappled
         feature = Feature(
             name="Leeching Grasp",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"One Medium or smaller creature that {stats.selfref} can see within 5 feet of it must succeed on a DC {dc} Dexterity saving throw or be **Grappled** (escape DC {dc}). \
+            description=f"One Medium or smaller creature that {stats.selfref} can see within 5 feet of it must succeed on a DC {dc} Dexterity saving throw or be {grappled.caption} (escape DC {dc}). \
                 Until this grapple ends, the target is {bleeding.caption}. {bleeding.description_3rd}. \
                 While grappling the target, {stats.selfref} takes only half of any damage dealt to it (rounded down), and the target takes the other half.",
         )
@@ -162,6 +163,7 @@ class _SlimeSpray(OozePower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
 
         feature = Feature(
             name="Slime Spray",
@@ -169,7 +171,7 @@ class _SlimeSpray(OozePower):
             replaces_multiattack=2,
             recharge=6,
             description=f"{stats.selfref.capitalize()} sprays slimy goo in a 30-foot cone. Each creature in that area must make a DC {dc} Dexterity saving throw. \
-                On a failure, the creature takes {dmg.description} acid damage and is **Grappled** (escape DC {dc}). On a success, the creature takes half as much damage instead.",
+                On a failure, the creature takes {dmg.description} acid damage and is {grappled.caption} (escape DC {dc}). On a success, the creature takes half as much damage instead.",
         )
         return [feature]
 

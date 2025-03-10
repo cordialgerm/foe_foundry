@@ -5,7 +5,7 @@ import numpy as np
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, DamageType, conditions
+from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...spells import CasterType, enchantment, evocation
@@ -211,6 +211,7 @@ class _FiendishBite(FiendishPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
+        poisoned = Condition.Poisoned
 
         def customize(a: Attack) -> Attack:
             return a.split_damage(DamageType.Poison, split_ratio=0.9)
@@ -221,7 +222,7 @@ class _FiendishBite(FiendishPower):
             name="Fiendish Bite",
             die=Die.d6,
             attack_type=AttackType.MeleeNatural,
-            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn).",
+            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {poisoned.caption} for 1 minute (save ends at end of turn).",
             callback=customize,
         )
 
@@ -261,12 +262,13 @@ class _TemptingOffer(FiendishPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        exhaustion = Condition.Exhaustion
         feature = Feature(
             name="Tempting Offer",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} makes a tempting offer to a creature that can hear it within 60 feet. \
-                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of **Exhaustion**. \
+                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {exhaustion.caption}. \
                 The creature may instead accept the offer. In doing so, it loses all levels of exhaustion gained in this way but is contractually bound to the offer",
         )
         return [feature]
@@ -309,13 +311,14 @@ class _FlameWhip(FiendishPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.3 if stats.multiattack >= 2 else 0.8)
         dc = stats.difficulty_class
+        prone = Condition.Prone
 
         feature = Feature(
             name="Flame Whip",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} wraps a fiery whip around a creature within 30 feet. It must make a DC {dc} Dexterity save. \
-                On a failure, it takes {dmg.description} fire damage and is pulled up to 30 feet closer to {stats.selfref} and is knocked **Prone**. On a success, it takes half damage instead.",
+                On a failure, it takes {dmg.description} fire damage and is pulled up to 30 feet closer to {stats.selfref} and is knocked {prone.caption}. On a success, it takes half damage instead.",
         )
 
         return [feature]

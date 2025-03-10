@@ -3,7 +3,7 @@ from typing import List
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import AttackType, Burning, DamageType, Dazed
+from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -195,13 +195,14 @@ class _EatBrain(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
+        grappled = Condition.Grappled
 
         stunning_tentacles = Feature(
             name="Stunning Tentancles",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc}) and must succeed \
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 

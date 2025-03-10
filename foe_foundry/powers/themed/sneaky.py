@@ -3,7 +3,7 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, Condition
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -129,12 +129,13 @@ class _CheapShot(SneakyPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         reach = stats.attack.reach or 5
+        prone = Condition.Prone
 
         feature = Feature(
             name="Cheap Shot",
             action=ActionType.BonusAction,
             description=f"{stats.selfref.capitalize()} attempts to strike a creature within {reach} ft with a cheap shot. The target must make a DC {dc} Strength or Dexterity save \
-                (target's choice). On a failure, the target's speed is reduced to zero until the end of its next turn. A creature that is **Prone** makes this save at disadvantage.",
+                (target's choice). On a failure, the target's speed is reduced to zero until the end of its next turn. A creature that is {prone.caption} makes this save at disadvantage.",
         )
         return [feature]
 

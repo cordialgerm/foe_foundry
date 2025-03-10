@@ -4,6 +4,7 @@ from typing import List
 
 from ...attributes import Skills
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -55,7 +56,7 @@ class _Snare(Trap):
                 When a creature moves within 15 feet of the snare, if it has a passive perception of {dc} or higher it becomes aware of the snare. \
                 The snares can also actively be detected by a creature within 30 feet using an action to make a DC {dc} Perception check. \
                 A creature that is unaware of an untriggered snare and moves within 5 feet of it must make a DC {dc} Dexterity saving throw. \
-                On a failure, it is lifted into the air and **Restrained** (escape DC {dc}).",
+                On a failure, it is lifted into the air and {Condition.Restrained.caption} (escape DC {dc}).",
         )
 
         return [feature]

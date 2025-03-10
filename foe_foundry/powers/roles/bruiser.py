@@ -4,7 +4,7 @@ from typing import List
 from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
 from ...attributes import Skills, Stats
-from ...damage import Attack, AttackType, Bleeding, DamageType
+from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -49,6 +49,8 @@ class _GrapplingStrike(BruiserPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Athletics)
         stats = stats.copy(attributes=new_attrs)
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
 
         dc = stats.difficulty_class
 
@@ -58,8 +60,8 @@ class _GrapplingStrike(BruiserPower):
             attack_type=AttackType.MeleeNatural,
             die=Die.d6,
             name="Grappling Strike",
-            additional_description=f"On a hit, the target must make a DC {dc} Strength save or be **Grappled** (escape DC {dc}). \
-                 While grappled in this way, the creature is also **Restrained**",
+            additional_description=f"On a hit, the target must make a DC {dc} Strength save or be {grappled.caption} (escape DC {dc}). \
+                 While grappled in this way, the creature is also {restrained.caption}",
         )
 
         return stats
@@ -97,11 +99,12 @@ class _StunningBlow(BruiserPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        stunned = Condition.Stunned
 
         feature = Feature(
             name="Stunning Blow",
             action=ActionType.BonusAction,
-            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be **Stunned** until the end of the {stats.selfref}'s next turn.",
+            description=f"Immediately after {stats.roleref} hits with a weapon attack, it may force the target to succeed on a DC {dc} Constitution save or be {stunned.caption} until the end of the {stats.selfref}'s next turn.",
             recharge=6,
         )
 

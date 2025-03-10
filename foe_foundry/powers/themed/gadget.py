@@ -3,7 +3,7 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -163,6 +163,8 @@ def _NetPowers() -> List[Power]:
             dmg = int(ceil(0.25 * stats.attack.average_damage))
             dmg_type = stats.secondary_damage_type or stats.primary_damage_type
             additional = self.additional.format(dmg=dmg, dmg_type=dmg_type, dc=dc)
+            grappled = Condition.Grappled
+            restrained = Condition.Restrained
 
             feature = Feature(
                 name=self.name,
@@ -170,7 +172,7 @@ def _NetPowers() -> List[Power]:
                 replaces_multiattack=1,
                 uses=1,
                 description=f"{stats.selfref.capitalize()} throws a net at a point they can see within 30 feet. Each creature within {distance} feet must make a DC {dc} Strength save. \
-                    On a failure, they are **Grappled** (escape DC {dc}) and **Restrained** while grappled in this way. The net has AC {self.ac} and {self.hp} hp.{additional}",
+                    On a failure, they are {grappled.caption} (escape DC {dc}) and {restrained.caption} while grappled in this way. The net has AC {self.ac} and {self.hp} hp.{additional}",
             )
             return [feature]
 

@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import creature_ref
+
 from ...creature_types import CreatureType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
@@ -119,13 +121,14 @@ class _CallReinforcements(GuardPower):
         target = DieFormula.target_value(
             target=8 * (0.25 + stats.cr / 2), force_die=Die.d4
         )
+        guard = creature_ref("Guard")
 
         feature = Feature(
             name="Call Reinforcements",
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=True,
-            description=f"{stats.selfref.capitalize()} summons {target.description} additional **Guard** that arrive in 1d4 rounds. This ability can only be used once per combat by any guard in the encounter.",
+            description=f"{stats.selfref.capitalize()} summons {target.description} additional {guard} that arrive in 1d4 rounds. This ability can only be used once per combat by any guard in the encounter.",
         )
         return [feature]
 

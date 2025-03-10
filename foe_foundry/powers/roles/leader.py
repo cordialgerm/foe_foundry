@@ -1,6 +1,7 @@
 from datetime import datetime
 from typing import List
 
+from ...damage import Condition
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
@@ -61,13 +62,14 @@ class _Intimidate(LeaderPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        frightened = Condition.Frightened
         feature = Feature(
             name="Intimidate",
             action=ActionType.BonusAction,
             recharge=5,
             description=f"{stats.roleref.capitalize()} chooses a target that can hear them within 60 ft. \
                 The target must make a contested Insight check against {stats.roleref}'s Intimidation. \
-                On a failure, the target is **Frightened** of {stats.roleref} for 1 minute (save ends at end of turn).\
+                On a failure, the target is {frightened.caption} of {stats.roleref} for 1 minute (save ends at end of turn).\
                 While Frightened in this way, attacks made against the target have advantage.",
         )
         return [feature]
