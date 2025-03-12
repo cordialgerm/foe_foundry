@@ -11,6 +11,7 @@ from ...features import ActionType, Feature
 from ...spells import CasterType, enchantment, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
+from .. import flags
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
@@ -128,7 +129,7 @@ class _FieryTeleporation(FiendishPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        return stats.with_flags("fiend_teleportation")
+        return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
@@ -157,7 +158,7 @@ class _FiendishTeleporation(FiendishPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        return stats.with_flags("fiend_teleportation")
+        return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

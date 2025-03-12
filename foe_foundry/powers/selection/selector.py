@@ -238,6 +238,10 @@ class PowerSelector:
             return False
         if feature.uses and score.limited_uses_over_max >= 0:
             return False
+        if feature.creates_token and score.limited_uses_over_max >= 0:
+            return False
+        if feature.replaces_multiattack and score.replaces_multiattack_over_max >= 0:
+            return False
 
         return True
 
@@ -262,6 +266,10 @@ class PowerSelector:
         if feature.modifies_attack and score.attack_modifiers_over_target >= 0:
             return False
         if feature.uses and score.limited_uses_over_target >= 0:
+            return False
+        if feature.creates_token and score.tokens_over_target >= 0:
+            return False
+        if feature.replaces_multiattack and score.replaces_multiattack_over_target >= 0:
             return False
         return True
 

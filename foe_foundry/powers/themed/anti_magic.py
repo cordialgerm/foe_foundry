@@ -233,7 +233,7 @@ class _SpellStealer(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
+        dc = stats.difficulty_class_easy
         feature = Feature(
             name="Spell Stealer",
             action=ActionType.Feature,

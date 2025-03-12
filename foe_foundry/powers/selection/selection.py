@@ -23,6 +23,8 @@ class PowerSelection:
     selected_limited_uses: int = 0
     selected_attack_modifiers: int = 0
     selected_spellcasting_powers: int = 0
+    selected_token_powers: int = 0
+    selected_replaces_multiattack_powers: int = 0
 
     def with_new_power(
         self, stats: BaseStatblock, power: Power, power_level_multiplier: float = 1.0
@@ -33,6 +35,8 @@ class PowerSelection:
         attack_modifiers = self.selected_attack_modifiers
         power_level = self.selected_power_level
         limited_uses = self.selected_limited_uses
+        token_powers = self.selected_token_powers
+        replaces_multiattack_powers = self.selected_replaces_multiattack_powers
         spellcasting_powers = self.selected_spellcasting_powers + (
             1 if power.power_type == PowerType.Spellcasting else 0
         )
@@ -49,6 +53,10 @@ class PowerSelection:
                 attack_modifiers += 1
             if feature.uses:
                 limited_uses += 1
+            if feature.creates_token:
+                token_powers += 1
+            if feature.replaces_multiattack:
+                replaces_multiattack_powers += 1
 
         new_powers = self.selected_powers.copy()
         new_powers.add(power)
@@ -65,6 +73,8 @@ class PowerSelection:
             selected_attack_modifiers=attack_modifiers,
             selected_limited_uses=limited_uses,
             selected_spellcasting_powers=spellcasting_powers,
+            selected_token_powers=token_powers,
+            selected_replaces_multiattack_powers=replaces_multiattack_powers,
         )
 
     def score(self, target: SelectionTargets) -> SelectionScore:
@@ -145,6 +155,36 @@ class PowerSelection:
             else -1
         )
 
+        tokens_over_target = (
+            (self.selected_token_powers - target.token_powers_target)
+            if target.token_powers_target >= 0
+            else -1
+        )
+
+        tokens_over_max = (
+            (self.selected_token_powers - target.token_powers_max)
+            if target.token_powers_max >= 0
+            else -1
+        )
+
+        replaces_multiattack_over_target = (
+            (
+                self.selected_replaces_multiattack_powers
+                - target.replaces_multiattack_target
+            )
+            if target.replaces_multiattack_target >= 0
+            else -1
+        )
+
+        replaces_multiattack_over_max = (
+            (
+                self.selected_replaces_multiattack_powers
+                - target.replaces_multiattack_max
+            )
+            if target.replaces_multiattack_max >= 0
+            else -1
+        )
+
         above_targets = np.array(
             [
                 self.selected_bonus_actions > target.bonus_action_target
@@ -159,6 +199,11 @@ class PowerSelection:
                 and target.limited_uses_target >= 0,
                 self.selected_spellcasting_powers > target.spellcasting_powers_target
                 and target.spellcasting_powers_target >= 0,
+                self.selected_token_powers > target.token_powers_target
+                and target.token_powers_target >= 0,
+                self.selected_replaces_multiattack_powers
+                > target.replaces_multiattack_target
+                and target.replaces_multiattack_target >= 0,
             ]
         )
         below_targets = np.array(
@@ -175,6 +220,11 @@ class PowerSelection:
                 and target.limited_uses_target >= 0,
                 self.selected_spellcasting_powers < target.spellcasting_powers_target
                 and target.spellcasting_powers_target >= 0,
+                self.selected_token_powers < target.token_powers_target
+                and target.token_powers_target >= 0,
+                self.selected_replaces_multiattack_powers
+                < target.replaces_multiattack_target
+                and target.replaces_multiattack_target >= 0,
             ]
         )
 
@@ -193,9 +243,13 @@ class PowerSelection:
         penalties += 1 * max(reactions_over_max, 0)
         penalties += 2 * max(recharges_over_max, 0)
         penalties += 2 * max(limited_uses_over_max, 0)
+        penalties += 2 * max(tokens_over_max, 0)
         penalties += 2 * max(spellcasting_over_max, 0)
         penalties += 3 * max(
             attack_modifiers_over_max, 0
+        )  # high bc statblock becomes confusing
+        penalties += 3 * max(
+            replaces_multiattack_over_max, 0
         )  # high bc statblock becomes confusing
 
         # lose points if you're above target in some areas and below target in others
@@ -220,4 +274,8 @@ class PowerSelection:
             remaining_power=target.power_level_target - self.selected_power_level,
             spellcasting_over_target=spellcasting_over_target,
             spellcasting_over_max=spellcasting_over_max,
+            tokens_over_target=tokens_over_target,
+            tokens_over_max=tokens_over_max,
+            replaces_multiattack_over_target=replaces_multiattack_over_target,
+            replaces_multiattack_over_max=replaces_multiattack_over_max,
         )

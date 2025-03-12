@@ -68,12 +68,13 @@ class _TimeRift(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(name="Time Rift", dc=stats.difficulty_class_easy - 2, charges=3)
+        token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(1.5, force_die=Die.d6)
         feature = Feature(
             name="Time Rift",
             action=ActionType.Action,
             replaces_multiattack=2,
+            creates_token=True,
             recharge=5,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} must repeat the same action it took on its previous turn. \
@@ -87,11 +88,12 @@ class _RunicWards(EmanationPower):
         super().__init__(name="Runic Wards", require_roles=MonsterRole.Defender)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(name="Runic Wards", dc=stats.difficulty_class_easy - 2, charges=3)
+        token = Token(name="Runic Wards", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Runic Wards",
             action=ActionType.Action,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Tiny {token.caption} in an unoccupied space within 30 feet. \
                 While the {token.name} is active, it grants immunity to all damage to all friendly creatures within 10 feet.",
         )
@@ -127,15 +129,14 @@ class _SummonersRift(EmanationPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, np.random.default_rng(20210518))
 
-        rift = Token(
-            name="Summoner's Rift", dc=stats.difficulty_class_easy - 2, charges=2
-        )
+        rift = Token(name="Summoner's Rift", dc=stats.difficulty_class_token, charges=2)
 
         feature = Feature(
             name="Summoner's Rift",
             action=ActionType.Action,
             recharge=6,
             replaces_multiattack=2,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} magically creates a Medium {rift.caption} at an unoccupied space it can see within 30 feet. \
                 Each turn that the rift is active, on initiative count 0, roll a d20. On a 1-5 a new {rift.name} is created at an unoccupied location within 30 feet of the original. \
                 Otherwise, {description}",
@@ -158,13 +159,14 @@ class _RecombinationMatrix(EmanationPower):
         ac = min(max(round(stats.cr / 3), 1), 5)
 
         token = Token(
-            name="Recombination Matrix", dc=stats.difficulty_class_easy - 2, charges=3
+            name="Recombination Matrix", dc=stats.difficulty_class_token, charges=3
         )
         feature = Feature(
             name="Recombination Matrix",
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Tiny {token.caption} in an unoccupied space within 30 feet. \
                 While the {token.name} is active, it creates difficult terrain in a 30 foot emanation and reduces the AC of all non-friendly creatures by {ac}.",
         )
@@ -181,14 +183,13 @@ class _HypnoticLure(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(
-            name="Hypnotic Lure", dc=stats.difficulty_class_easy - 2, charges=3
-        )
+        token = Token(name="Hypnotic Lure", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Hypnotic Lure",
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Tiny {token.caption} in an unoccupied space within 30 feet. \
                 While the {token.name} is active, all non-friendly creatures within 30 feet must use their movement and actions to attempt to attack the {token.name}.",
         )
@@ -208,7 +209,7 @@ class _IllusoryReality(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
-            name="Illusory Reality", dc=stats.difficulty_class_easy - 2, charges=3
+            name="Illusory Reality", dc=stats.difficulty_class_token, charges=3
         )
         charmed = Condition.Charmed
         feared = Condition.Frightened
@@ -218,6 +219,7 @@ class _IllusoryReality(EmanationPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Huge {token.caption} in an unoccupied space within 30 feet. \
                 While the {token.name} is active, it creates a 30 foot emanation. Any creature that starts its turn within the emanation must make a DC {token.dc} Intelligence save. \
                 On a failure, the creature rolls a d6 and suffers the following effects until the start of its next turn. \
@@ -248,13 +250,14 @@ class _ShadowRift(EmanationPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, np.random.default_rng(20210518))
 
-        rift = Token(name="Shadow Rift", dc=stats.difficulty_class_easy - 2, charges=2)
+        rift = Token(name="Shadow Rift", dc=stats.difficulty_class_token, charges=2)
 
         feature = Feature(
             name="Shadow Rift",
             action=ActionType.Action,
             recharge=5,
             replaces_multiattack=2,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} magically creates a Medium {rift.caption} at an unoccupied space it can see within 30 feet. \
                 Each turn that the rift is active, on initiative count 0, {description}",
         )
@@ -272,9 +275,7 @@ class _RagingFlames(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(
-            name="Raging Flames", dc=stats.difficulty_class_easy - 2, charges=3
-        )
+        token = Token(name="Raging Flames", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(0.25, force_die=Die.d10)
 
         feature = Feature(
@@ -282,6 +283,7 @@ class _RagingFlames(EmanationPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} fire damage.",
         )
@@ -300,9 +302,7 @@ class _BitingFrost(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(
-            name="Biting Frost", dc=stats.difficulty_class_easy - 2, charges=3
-        )
+        token = Token(name="Biting Frost", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(0.25, force_die=Die.d10)
 
         feature = Feature(
@@ -310,6 +310,7 @@ class _BitingFrost(EmanationPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} cold damage.",
         )
@@ -328,9 +329,7 @@ class _LashingWinds(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(
-            name="Lashing Winds", dc=stats.difficulty_class_easy - 2, charges=3
-        )
+        token = Token(name="Lashing Winds", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(0.25, force_die=Die.d10)
 
         feature = Feature(
@@ -338,6 +337,7 @@ class _LashingWinds(EmanationPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} lightning damage.",
         )
@@ -356,9 +356,7 @@ class _FetidMiasma(EmanationPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        token = Token(
-            name="Fetid Miasma", dc=stats.difficulty_class_easy - 2, charges=3
-        )
+        token = Token(name="Fetid Miasma", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(0.25, force_die=Die.d10)
 
         feature = Feature(
@@ -366,6 +364,7 @@ class _FetidMiasma(EmanationPower):
             action=ActionType.Action,
             replaces_multiattack=2,
             recharge=5,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} poison damage.",
         )

@@ -10,6 +10,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
+from .. import flags
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
@@ -63,6 +64,9 @@ class _FaerieStep(FeyPower):
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return super().modify_stats_inner(stats).with_flags(flags.HAS_TELEPORT)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = stats.speed.walk

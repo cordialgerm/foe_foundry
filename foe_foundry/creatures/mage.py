@@ -7,6 +7,7 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    flags,
     select_powers,
 )
 from ..powers.creature.mage import (
@@ -83,9 +84,8 @@ AbjurerVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Abjurer Mage Adept", cr=4),
         SuggestedCr(name="Abjurer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Abjurer Master Mage", cr=9),
         SuggestedCr(name="Abjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Abjurer Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Abjurer Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -95,9 +95,8 @@ ConjurerVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Conjurer Mage Adept", cr=4),
         SuggestedCr(name="Conjurer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Conjurer Master Mage", cr=9),
         SuggestedCr(name="Conjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Conjurer Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Conjurer Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -107,9 +106,8 @@ DivinerVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Diviner Mage Adept", cr=4),
         SuggestedCr(name="Diviner Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Diviner Master Mage", cr=9),
         SuggestedCr(name="Diviner Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Diviner Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Diviner Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -119,9 +117,8 @@ EnchanterVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Enchanter Mage Adept", cr=4),
         SuggestedCr(name="Enchanter Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Enchanter Master Mage", cr=9),
         SuggestedCr(name="Enchanter Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Enchanter Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Enchanter Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -131,9 +128,8 @@ IllusionistVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Illusionist Mage Adept", cr=4),
         SuggestedCr(name="Illusionist Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Illusionist Master Mage", cr=9),
         SuggestedCr(name="Illusionist Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Illusionist Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Illusionist Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -143,9 +139,8 @@ NecromancerVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Necromancer Mage Adept", cr=4),
         SuggestedCr(name="Necromancer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Necromancer Master Mage", cr=9),
         SuggestedCr(name="Necromancer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Necromancer Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Necromancer Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -155,9 +150,8 @@ TransmuterVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Transmuter Mage Adept", cr=4),
         SuggestedCr(name="Transmuter Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Transmuter Master Mage", cr=9),
         SuggestedCr(name="Transmuter Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Transmuter Archmagus Paramount", cr=16, is_legendary=True),
+        SuggestedCr(name="Transmuter Primagus", cr=16, is_legendary=True),
     ],
 )
 
@@ -386,6 +380,8 @@ class _MageWeights(CustomPowerSelection):
             return CustomPowerWeight(2, ignore_usual_requirements=True)
         elif p in self.esoteric:
             return CustomPowerWeight(2, ignore_usual_requirements=True)
+        elif p in metamagic.MetamagicPowers:
+            return CustomPowerWeight(1, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.5, ignore_usual_requirements=False)
 
@@ -418,6 +414,9 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     # LEGENDARY
     if is_legendary:
         stats = stats.as_legendary()
+        stats = stats.with_flags(
+            flags.HAS_TELEPORT
+        )  # archmage has teleport via legendary action
 
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
@@ -459,7 +458,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     elif variant is ConjurerVariant:
         attack = spell.ArcaneBurst.with_display_name("Conjured Blast")
         primary_role = MonsterRole.Controller
-        additional_roles = [MonsterRole.Artillery, MonsterRole.Support]
+        additional_roles = [MonsterRole.Artillery]
     elif variant is DivinerVariant:
         attack = spell.ArcaneBurst.with_display_name("Time Warp")
         primary_role = MonsterRole.Controller

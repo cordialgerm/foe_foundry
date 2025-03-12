@@ -14,6 +14,7 @@ from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
+from .. import flags
 from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..roles import artillery, bruiser
@@ -151,6 +152,7 @@ def _EldritchKnights() -> List[Power]:
             stats = stats.copy(
                 creature_class="Eldritch Knight", has_unique_movement_manipulation=True
             )
+            stats = stats.with_flags(flags.HAS_TELEPORT)
             return stats
 
     return [

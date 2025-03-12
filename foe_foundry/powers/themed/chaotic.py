@@ -108,7 +108,7 @@ class _EldritchBeacon(ChaoticPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, np.random.default_rng(20210518))
         beacon = Token(
-            name="Eldritch Beacon", dc=stats.difficulty_class_easy - 1, charges=3
+            name="Eldritch Beacon", dc=stats.difficulty_class_token, charges=3
         )
 
         feature = Feature(
@@ -116,6 +116,7 @@ class _EldritchBeacon(ChaoticPower):
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=2,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} magically creates a Medium {beacon.caption} at an unoccupied space it can see within 30 feet. \
                 Each turn that the beacon is active, on initiative count 0, {description}",
         )

@@ -77,6 +77,7 @@ class BaseStatblock:
         prof = self.attributes.proficiency
         self.difficulty_class = 8 + mod + prof
         self.difficulty_class_easy = self.difficulty_class - 2
+        self.difficulty_class_token = self.difficulty_class - 3
 
         self.recommended_powers = (
             recommended_powers_for_cr(self.cr) + self.recommended_powers_modifier

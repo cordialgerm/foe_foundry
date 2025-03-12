@@ -8,6 +8,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -86,6 +87,7 @@ class _MistyStep(TeleportationPower):
             source="SRD5.1 Misty Step",
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
+            require_no_flags=flags.HAS_TELEPORT,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
