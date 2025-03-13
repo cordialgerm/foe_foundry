@@ -10,10 +10,11 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
+from .. import flags
 from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from ..roles import artillery, bruiser
@@ -128,7 +129,7 @@ def _EldritchKnights() -> List[Power]:
             feature1 = Feature(
                 name="Misty Step",
                 action=ActionType.BonusAction,
-                uses=3,
+                uses=max(stats.attributes.proficiency // 2, 1),
                 description=f"{stats.roleref.capitalize()} teleports up to 30 feet to an unoccupied space it can see",
             )
 
@@ -151,6 +152,7 @@ def _EldritchKnights() -> List[Power]:
             stats = stats.copy(
                 creature_class="Eldritch Knight", has_unique_movement_manipulation=True
             )
+            stats = stats.with_flags(flags.HAS_TELEPORT)
             return stats
 
     return [
@@ -533,7 +535,7 @@ class _PsiWarrior(PowerWithStandardScoring):
             secondary_damage_type=DamageType.Psychic,
             creature_class="Psi Warrior",
         )
-        stats = stats.grant_spellcasting(Stats.INT)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
 
         stats = stats.add_spell(transmutation.Telekinesis.for_statblock())
 

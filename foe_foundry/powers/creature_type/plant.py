@@ -5,10 +5,9 @@ from typing import List, Tuple
 from numpy.random import Generator
 
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, Bleeding, DamageType
+from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...spells import conjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -113,6 +112,7 @@ class _ChokingVine(PlantPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
 
         stats = stats.add_attack(
             scalar=1.8,
@@ -121,7 +121,7 @@ class _ChokingVine(PlantPower):
             attack_type=AttackType.MeleeNatural,
             replaces_multiattack=2,
             name="Choking Vine",
-            additional_description=f"On a hit, the target must make a DC {dc} Strength save. On a failure, the creature is **Grappled** (escape DC {dc}). \
+            additional_description=f"On a hit, the target must make a DC {dc} Strength save. On a failure, the creature is {grappled.caption} (escape DC {dc}). \
                 While grappled in this way, it cannot speak, cannot breathe, begins choking, and cannot cast spells that require a verbal component.",
         )
 
@@ -138,14 +138,15 @@ class _HypnoticSpores(PlantPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         distance = 30 if stats.difficulty_class <= 7 else 45
-
+        incapacitated = Condition.Incapacitated
+        poisoned = Condition.Poisoned
         feature = Feature(
             name="Hypnotic Spores",
             action=ActionType.Action,
             uses=1,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} releases a cloud of hypnotic spores. Each non-plant creature within {distance} feet must make a DC {dc} Constitution save. \
-                On a failure, the creature is **Poisoned** for 1 minute (save ends at end of turn). While poisoned in this way, the target is **Incapacitated**",
+                On a failure, the creature is {poisoned.caption} for 1 minute (save ends at end of turn). While poisoned in this way, the target is {incapacitated.caption}",
         )
         return [feature]
 

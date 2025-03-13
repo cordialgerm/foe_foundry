@@ -3,12 +3,20 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    EXTRA_HIGH_POWER,
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class TemporalPower(PowerWithStandardScoring):
@@ -20,15 +28,6 @@ class TemporalPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
-        def is_magical_human(c: BaseStatblock) -> bool:
-            if c.creature_type == CreatureType.Humanoid:
-                return (
-                    any(t.is_spell() for t in c.attack_types)
-                    and c.secondary_damage_type != DamageType.Radiant
-                )
-            else:
-                return True
-
         super().__init__(
             name=name,
             source=source,
@@ -41,17 +40,15 @@ class TemporalPower(PowerWithStandardScoring):
                     CreatureType.Fey,
                     CreatureType.Fiend,
                     CreatureType.Aberration,
-                    CreatureType.Humanoid,
                 },
-                require_callback=is_magical_human,
-                bonus_roles=MonsterRole.Controller,
+                require_roles=MonsterRole.Controller,
             )
             | score_args,
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Arcane)
         return stats
 
 
@@ -60,8 +57,8 @@ class _CurseOfTheAges(TemporalPower):
         super().__init__(
             name="Curse of the Ages",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
-            require_cr=7,
+            power_level=EXTRA_HIGH_POWER,
+            require_cr=10,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -123,7 +120,7 @@ class _TemporalMastery(TemporalPower):
             action=ActionType.Action,
             uses=2,
             replaces_multiattack=2,
-            description=f"{stats.selfref} becomes **Invisible** until the start of its next turn. It may also adjust its initiative to any value it desires. \
+            description=f"{stats.selfref} becomes {Condition.Invisible.caption} until the start of its next turn. It may also adjust its initiative to any value it desires. \
                 This can allow {stats.selfref} to have a second turn this round.",
         )
         return [feature]

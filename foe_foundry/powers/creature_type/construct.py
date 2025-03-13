@@ -6,7 +6,7 @@ from num2words import num2words
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, DamageType
+from ...damage import Attack, AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -158,11 +158,14 @@ class _Smother(ConstructPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
+        blinded = Condition.Blinded
 
         def set_on_hit(attack: Attack) -> Attack:
             dmg = attack.damage.formula
-            additional_description = f"On a hit, {stats.selfref} begins to smother the target. The creature is **Grappled** (escape DC {dc}). \
-                While grappled this way, the creature is **Restrained**, **Blinded**, and suffers {dmg.description} ongoing bludgeoning damage at the start of each of its turns."
+            additional_description = f"On a hit, {stats.selfref} begins to smother the target. The creature is {grappled.caption} (escape DC {dc}). \
+                While grappled this way, the creature is {restrained.caption}, {blinded.caption}, and suffers {dmg.description} ongoing bludgeoning damage at the start of each of its turns."
             return attack.copy(additional_description=additional_description)
 
         stats = stats.add_attack(
@@ -190,6 +193,9 @@ class _Retrieval(ConstructPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        grappled = Condition.Grappled
+        paralyzed = Condition.Paralyzed
+        incapacitated = Condition.Incapacitated
 
         feature1 = Feature(
             name="Pursue Objective",
@@ -204,14 +210,14 @@ class _Retrieval(ConstructPower):
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets one object or creature it can see within 60 ft. The target must succeed on a DC {dc} Constitution saving throw. \
                 If the object is not being carried, it automatically fails this save. If the object is being carried, the creature carrying it makes the save. \
-                On a failure, the target is teleported onto {stats.selfref}'s back and is **Grappled** (escape DC {dc}) and **Paralyzed** for 1 minute (save ends at end of turn).",
+                On a failure, the target is teleported onto {stats.selfref}'s back and is {grappled.caption} (escape DC {dc}) and {paralyzed.caption} for 1 minute (save ends at end of turn).",
         )
 
         feature3 = Feature(
             name="Retrieve Objective",
             uses=1,
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} casts *Plane Shift* on itself and up to one **Incapacitated** or **Grappled** creature, which is considered willing.",
+            description=f"{stats.selfref.capitalize()} casts *Plane Shift* on itself and up to one {incapacitated.caption} or {grappled.caption} creature, which is considered willing.",
         )
 
         return [feature1, feature2, feature3]
@@ -275,6 +281,7 @@ class _Crush(ConstructPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(1.8, suggested_die=Die.d8)
+        prone = Condition.Prone
         feature = Feature(
             name="Crush",
             action=ActionType.Action,
@@ -282,7 +289,7 @@ class _Crush(ConstructPower):
             description=f"{stats.selfref.capitalize()} moves up to its Speed in a straight line. While doing so, it can attempt to enter Large or smaller creatures' spaces. \
                 Whenever {stats.selfref} attempts to enter a creature's space, the creature makes a DC {dc} Dexterity or Strength saving throw (the creature's choice). \
                 If the creature succeeds at a Strength saving throw, {stats.selfref}'s movement ends for the turn. If the creature succeeds at a Dexterity saving throw, the creature may use its reaction, if available, to move up to half its Speed without provoking opportunity attacks. \
-                The first time on {stats.selfref}'s turn that it enters a creature's space, the creature is knocked **Prone** and takes {dmg.description} bludgeoning damage. \
+                The first time on {stats.selfref}'s turn that it enters a creature's space, the creature is knocked {prone.caption} and takes {dmg.description} bludgeoning damage. \
                 A creature is prone while in {stats.selfref}'s space.",
         )
         return [feature]

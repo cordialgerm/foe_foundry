@@ -3,11 +3,12 @@ from typing import List
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import (
+    CasterType,
     conjuration,
     enchantment,
     evocation,
@@ -31,7 +32,10 @@ class _PacifyingTouch(PowerWithStandardScoring):
     def __init__(self):
         def humanoid_is_divine(c: BaseStatblock):
             if c.creature_type == CreatureType.Humanoid:
-                return c.secondary_damage_type == DamageType.Radiant
+                return (
+                    c.secondary_damage_type == DamageType.Radiant
+                    or c.caster_type == CasterType.Divine
+                )
             else:
                 return True
 
@@ -58,15 +62,18 @@ class _PacifyingTouch(PowerWithStandardScoring):
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        incapacitated = Condition.Incapacitated
+        dc = stats.difficulty_class_easy
         stats = stats.add_attack(
             name="Pacifying Touch",
             scalar=0.25,
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Psychic,
             replaces_multiattack=1,
-            additional_description="On a hit, the target must make a DC {dc} Wisdom saving throw. \
-                On a failed save, the target is **Incapacitated** for 1 minute (save ends at end of turn).",
+            additional_description=f"On a hit, the target must make a DC {dc} Wisdom saving throw. \
+                On a failed save, the target is {incapacitated.caption} for 1 minute (save ends at end of turn).",
         )
+        stats = stats.grant_spellcasting(CasterType.Divine)
         return stats
 
 
@@ -105,6 +112,7 @@ class _Eyebite(SpellPower):
             name="Eyebite",
             spell=necromancy.Eyebite.for_statblock(uses=1),
             create_date=datetime(2023, 11, 29),
+            caster_type=CasterType.Innate,
             theme="controller",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -188,13 +196,14 @@ class _Nervefire(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        poisoned = Condition.Poisoned
         dmg = stats.target_value(0.75, force_die=Die.d6)
         feature = Feature(
             name="Nervefire",
             action=ActionType.BonusAction,
             recharge=5,
             description=f"Immediately after hitting a creature with an attack, {stats.selfref} can force the target to make a DC {dc} Constitution saving throw. \
-                On a failure, the target is **Poisoned** (save ends at end of turn). While poisoned in this way, the target takes {dmg.description} psychic damage \
+                On a failure, the target is {poisoned.caption} (save ends at end of turn). While poisoned in this way, the target takes {dmg.description} psychic damage \
                 whenever it takes an action other than the Dodge action.",
         )
         return [feature]
@@ -218,12 +227,13 @@ class _TiringAttack(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        exhaustion = Condition.Exhaustion
         feature = Feature(
             name="Tiring Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw. \
-                On a failure, the target's bones begin to turn to dust and it gains a level of **Exhaustion**.",
+                On a failure, the target's bones begin to turn to dust and it gains a level of {exhaustion.caption}.",
         )
         return [feature]
 
@@ -241,6 +251,7 @@ class _ControllingSpellPower(SpellPower):
             spell=spell,
             create_date=datetime(2023, 12, 10),
             theme="controller",
+            caster_type=CasterType.Innate,
             score_args=score_args,
             **args,
         )
@@ -296,7 +307,7 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
-            spell=transmutation.Levitate.for_statblock(),
+            spell=transmutation.Levitate.for_statblock(concentration=False),
             power_level=LOW_POWER,
             score_args=dict(
                 require_types=[CreatureType.Elemental, CreatureType.Humanoid]

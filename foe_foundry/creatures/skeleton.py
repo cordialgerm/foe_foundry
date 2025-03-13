@@ -124,7 +124,7 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_damage_type = DamageType.Cold
         secondary_attack = spell.Frostbolt.with_display_name("Deathly Freeze")
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,

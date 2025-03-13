@@ -36,7 +36,7 @@ ZombieOgreVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Zombie Ogre", cr=2, srd_creatures=["Ogre Zombie"]),
         SuggestedCr(name="Zombie Giant", cr=8),
-        SuggestedCr(name="Zombie Titan", cr=16, is_legendary=True),
+        SuggestedCr(name="Zombie Titan", cr=12, is_legendary=True),
     ],
 )
 
@@ -64,6 +64,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     cr = settings.cr
     variant = settings.variant
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -82,7 +83,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant is ZombieOgreVariant and stats.cr >= 16:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(
@@ -118,7 +119,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     )
     secondary_damage_type = DamageType.Poison
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,

@@ -38,7 +38,7 @@ BalorVariant = CreatureVariant(
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames.",
     suggested_crs=[
         SuggestedCr(name="Balor", cr=19, srd_creatures=["Balor"]),
-        SuggestedCr(name="Balor Dreadlord", cr=24, is_legendary=True),
+        SuggestedCr(name="Balor Dreadlord", cr=23, is_legendary=True),
     ],
 )
 
@@ -102,6 +102,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     cr = settings.cr
     variant = settings.variant
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -129,7 +130,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if cr > 19:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ARMOR CLASS
@@ -139,7 +140,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     attack = weapon.Greatsword.with_display_name("Lightning Blade").copy(
         damage_type=DamageType.Lightning, split_secondary_damage=False
     )
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=DamageType.Fire,

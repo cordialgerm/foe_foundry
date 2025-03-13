@@ -6,9 +6,10 @@ from num2words import num2words
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -66,7 +67,7 @@ class DomineeringPower(PowerWithStandardScoring):
             Stats.CHA, 4
         ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
-        stats = stats.grant_spellcasting(Stats.CHA)
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
 
@@ -98,13 +99,14 @@ class _Dominate(DomineeringPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        charmed = Condition.Charmed
 
         feature = Feature(
             name="Dominate",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets one humanoid it can see within 30 feet of it. If the target can see {stats.selfref} \
-                then it must succeed on a DC {dc} Wisdom save against this magic or be **Charmed** by {stats.selfref}. \
+                then it must succeed on a DC {dc} Wisdom save against this magic or be {charmed.caption} by {stats.selfref}. \
                 While charmed in this way, the target treats {stats.selfref} as a trusted friend to be heeded and protected. \
                 It takes {stats.selfref}'s requests or actions in the most favorable way it can.  \
                 Each time the target takes damage, it may repeat the save to end the condition. \

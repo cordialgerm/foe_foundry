@@ -6,7 +6,7 @@ import numpy as np
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType
+from ...damage import AttackType, Bleeding, Condition, DamageType
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import summoning
@@ -143,6 +143,7 @@ class _Web(BeastPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        restrained = Condition.Restrained
 
         feature1 = Feature(
             name="Spider Climb",
@@ -162,7 +163,7 @@ class _Web(BeastPower):
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} shoots a sticky web at a point it can see within 60 feet. \
-                Each creature within a 20 foot cube centered at the point must make a DC {dc} Dexterity saving throw or become **Restrained** (save ends at end of turn). \
+                Each creature within a 20 foot cube centered at the point must make a DC {dc} Dexterity saving throw or become {restrained.caption} (save ends at end of turn). \
                 The area of the web is considered difficult terrain, and any creature that ends its turn in the area must repeat the save or become restrained.",
         )
 

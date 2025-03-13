@@ -87,6 +87,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -104,7 +105,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant == SpyMasterVariant:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(
@@ -138,7 +139,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # Spies use poisoned Daggers as their primary attack
     attack = weapon.Daggers.with_display_name("Covert Blade")
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 

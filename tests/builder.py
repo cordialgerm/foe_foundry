@@ -125,9 +125,9 @@ def display_stat_builder() -> DisplayHandle | None:
         variant, suggested_cr = variant_lookup[variant_key]
 
         if power_boost.value:
-            power_boosts = {name_to_key(p): 10 for p in power_boost.value.split(",")}
+            power_boosts = {name_to_key(p): 10.0 for p in power_boost.value.split(",")}
         else:
-            power_boosts = {}
+            power_boosts: dict[str, float] = {}
 
         theme_boosts = {str(v): 2.5 for v in theme_boost.value}
 
@@ -148,6 +148,7 @@ def display_stat_builder() -> DisplayHandle | None:
                 variant=variant,
                 cr=cr,
                 species=species,
+                is_legendary=suggested_cr.is_legendary,
                 selection_settings=SelectionSettings(
                     temperature=temperature,
                     boost_themes=theme_boosts,

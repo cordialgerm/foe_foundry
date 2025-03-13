@@ -2,13 +2,12 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import natural as natural_attacks
-from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import AttackType, Burning, DamageType, Dazed
+from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -26,9 +25,9 @@ class PsychicPower(PowerWithStandardScoring):
     ):
         def is_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
-                return (
-                    any(t.is_spell() for t in candidate.attack_types)
-                    and candidate.secondary_damage_type == DamageType.Psychic
+                return any(t.is_spell() for t in candidate.attack_types) and (
+                    candidate.secondary_damage_type == DamageType.Psychic
+                    or candidate.caster_type == CasterType.Psionic
                 )
             else:
                 return True
@@ -52,6 +51,7 @@ class PsychicPower(PowerWithStandardScoring):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
         return stats
 
 
@@ -67,7 +67,6 @@ class _Telekinetic(PsychicPower):
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.grant_spellcasting(Stats.CHA)
         return stats.add_spell(transmutation.Telekinesis.for_statblock())
 
 
@@ -196,13 +195,14 @@ class _EatBrain(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
+        grappled = Condition.Grappled
 
         stunning_tentacles = Feature(
             name="Stunning Tentancles",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc}) and must succeed \
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 

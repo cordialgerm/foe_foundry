@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Callable, List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, conditions
+from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -115,10 +115,9 @@ def on_arc_lightning_failure(stats: BaseStatblock, breath_damage: DieFormula) ->
 def on_flesh_melting_failure(stats: BaseStatblock, breath_damage: DieFormula) -> str:
     burning_dmg = DieFormula.target_value(breath_damage.average / 4, force_die=Die.d4)
     burning = conditions.Burning(burning_dmg, DamageType.Acid)
-    return (
-        f"Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also **Poisoned**. \
+    poisoned = Condition.Poisoned
+    return f"Additionally, creatures that fail by 5 or more are {burning.caption}. While burning this way, the creature is also {poisoned.caption}. \
         {burning.description_3rd}"
-    )
 
 
 class _Susceptible:
@@ -129,7 +128,7 @@ class _Susceptible:
         self, stats: BaseStatblock, breath_damage: DieFormula
     ) -> str:
         susceptible = conditions.Susceptible(self.damage_type)
-        on_failure = f"Additionally, creatures that fail the save by 5 or more are **Susceptible** to their next source of {self.damage_type} damage in the next minute. {susceptible.description_3rd}"
+        on_failure = f"Additionally, creatures that fail the save by 5 or more are {susceptible.caption} to their next source of {self.damage_type} damage in the next minute. {susceptible.description_3rd}"
         return on_failure
 
 

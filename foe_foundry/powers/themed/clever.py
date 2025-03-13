@@ -8,7 +8,7 @@ from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import evocation
+from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -92,7 +92,7 @@ class _ArcaneMark(CleverPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting(Stats.INT)
+        stats = stats.grant_spellcasting(CasterType.Arcane)
         return stats.add_spell(evocation.FaerieFire.for_statblock())
 
 

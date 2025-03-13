@@ -4,7 +4,7 @@ from typing import List
 
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, DamageType, Dazed, Swallowed
+from ...damage import AttackType, Bleeding, Condition, DamageType, Dazed, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -56,13 +56,15 @@ class _Constriction(MonstrousPower):
         reach = 5 if stats.size <= Size.Medium else 10
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(max(2, ceil(stats.cr)), force_die=Die.d4)
+        restrained = Condition.Restrained
+        grappled = Condition.Grappled
 
         feature = Feature(
             name="Constrict",
             action=ActionType.Action,
             replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become **Grappled** (escape DC {dc}). \
-                While grappled in this way, the target is also **Restrained** and takes {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
+            description=f"{stats.selfref.capitalize()} chooses a target it can see within {reach} feet. The target must make a DC {dc} Strength saving throw or become {grappled.caption} (escape DC {dc}). \
+                While grappled in this way, the target is also {restrained.caption} and takes {dmg.description} ongoing bludgeoning damage at the start of each of its turns.",
         )
         return [feature]
 
@@ -113,10 +115,11 @@ class _Pounce(MonstrousPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        prone = Condition.Prone
         feature = Feature(
             name="Pounce",
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked **Prone**. \
+            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked {prone.caption}. \
                 Then, {stats.selfref} makes an attack against the target.",
         )
         return [feature]
@@ -211,6 +214,7 @@ class _PetrifyingGaze(MonstrousPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
+        petrified = Condition.Petrified
 
         feature = Feature(
             name="Petrifying Gaze",
@@ -218,7 +222,7 @@ class _PetrifyingGaze(MonstrousPower):
             recharge=4,
             description=f"Whenever a creature within 60 feet looks at {stats.selfref}, it must make a DC {dc} Constitution saving throw. \
                 On a failed save, the creature magically begins to turn to stone and is {dazed.caption}. It must repeat the saving throw at the end of its next turn. \
-                On a success, the effect ends. On a failure, the creature is **Petrified** until it is freed by the *Greater Restoration* spell or other magic.",
+                On a success, the effect ends. On a failure, the creature is {petrified.caption} until it is freed by the *Greater Restoration* spell or other magic.",
         )
         return [feature]
 
@@ -235,12 +239,14 @@ class _JawClamp(MonstrousPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
         feature = Feature(
             name="Jaw Clamp",
             action=ActionType.Reaction,
             uses=1,
             description=f"When an attacker within 5 feet of {stats.selfref} misses it with a melee attack, {stats.selfref} makes a bite attack against the attacker. \
-                On a hit, the attacker is **Grappled** (escape DC {dc}). Until this grapple ends, the grappled creature is **Restrained**, and the only attack {stats.selfref} can make is a bite against the grappled creature.",
+                On a hit, the attacker is {grappled.caption} (escape DC {dc}). Until this grapple ends, the grappled creature is {restrained.caption}, and the only attack {stats.selfref} can make is a bite against the grappled creature.",
         )
         return [feature]
 
@@ -277,11 +283,12 @@ class _TearApart(MonstrousPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
         feature1 = Feature(
             name="Claw Grapple",
             action=ActionType.Feature,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc})",
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc})",
         )
 
         dmg = stats.target_value(0.8 * stats.multiattack, force_die=Die.d10)

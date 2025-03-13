@@ -3,10 +3,12 @@ from math import ceil
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -28,7 +30,8 @@ class TeleportationPower(PowerWithStandardScoring):
             if c.creature_type == CreatureType.Humanoid:
                 return (
                     any(t.is_spell() for t in c.attack_types)
-                    and c.secondary_damage_type != DamageType.Radiant
+                    and c.caster_type is not None
+                    and c.caster_type not in {CasterType.Divine, CasterType.Primal}
                 )
             else:
                 return True
@@ -48,7 +51,7 @@ class TeleportationPower(PowerWithStandardScoring):
                     CreatureType.Aberration,
                     CreatureType.Humanoid,
                 },
-                require_cr=1,
+                require_cr=3,
                 bonus_attack_types=AttackType.AllSpell(),
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             )
@@ -84,11 +87,12 @@ class _MistyStep(TeleportationPower):
             source="SRD5.1 Misty Step",
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
+            require_no_flags=flags.HAS_TELEPORT,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
-        uses = int(min(3, ceil(stats.cr / 3)))
+        uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
 
         feature = Feature(
             name="Misty Step",
@@ -109,7 +113,7 @@ class _Scatter(TeleportationPower):
         super().__init__(name="Scatter", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        distance = 20 if stats.cr <= 7 else 30
+        distance = 30 if stats.cr <= 6 else 60
         dc = stats.difficulty_class
         count = int(max(2, ceil(stats.cr / 3)))
 

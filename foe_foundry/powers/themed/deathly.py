@@ -2,12 +2,15 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
+from foe_foundry.references import creature_ref
+
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...powers import PowerType
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -77,7 +80,7 @@ class _EndlessServitude(DeathlyPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -186,7 +189,7 @@ class _FleshPuppets(DeathlyPower):
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats(stats)
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -213,6 +216,7 @@ class _DevourSoul(DeathlyPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.25, force_die=Die.d6)
         dc = stats.difficulty_class_easy
+        ghoul = creature_ref("Ghoul")
 
         feature = Feature(
             name="Devour Soul",
@@ -221,7 +225,7 @@ class _DevourSoul(DeathlyPower):
             recharge=5,
             description=f"{stats.selfref.capitalize()} targets one creature it can see within 30 feet of it that is not a Construct or an Undead. \
                 The creature must succeed on a DC {dc} Charisma saving throw or take {dmg.description} necrotic damage. \
-                If this damage reduces the target to 0 hit points, it dies and immediately rises as a **Ghoul** under {stats.selfref}'s control.",
+                If this damage reduces the target to 0 hit points, it dies and immediately rises as a {ghoul} under {stats.selfref}'s control.",
         )
         return [feature]
 

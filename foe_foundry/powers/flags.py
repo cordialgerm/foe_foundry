@@ -7,3 +7,5 @@ def theme_flag(theme: str) -> str:
 
 
 MODIFIES_CRITICAL = "modifies-critical"
+WIZARD = "wizard"
+HAS_TELEPORT = "has-teleport"

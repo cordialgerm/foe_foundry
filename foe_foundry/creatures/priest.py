@@ -17,6 +17,7 @@ from ..powers.themed import holy, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ..spells import CasterType
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
@@ -39,7 +40,7 @@ PriestVariant = CreatureVariant(
             cr=12,
             other_creatures={"Archpriest": "mm25"},
         ),
-        SuggestedCr(name="Archpriest Revered One", cr=18, is_legendary=True),
+        SuggestedCr(name="Archpriest Revered One", cr=16, is_legendary=True),
     ],
 )
 
@@ -95,6 +96,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -112,7 +114,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if cr >= 18:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(
@@ -120,6 +122,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         size=Size.Medium,
         languages=["Common"],
         creature_class="Priest",
+        caster_type=CasterType.Divine,
     )
 
     # ARMOR CLASS
@@ -140,7 +143,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_attack = None
         secondary_damage_type = DamageType.Radiant
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,

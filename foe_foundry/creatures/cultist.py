@@ -34,6 +34,7 @@ from ..powers.themed.trap import TrapPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ..spells import CasterType
 from ..statblocks import MonsterDials
 from .base_stats import BaseStatblock, base_stats
 from .template import (
@@ -55,7 +56,7 @@ CultistVariant = CreatureVariant(
             cr=10,
             other_creatures={"Cultist Hierophant": "mm25"},
         ),
-        SuggestedCr(name="Cultist Exarch", cr=18, is_legendary=True),
+        SuggestedCr(name="Cultist Exarch", cr=14, is_legendary=True),
     ],
 )
 
@@ -155,6 +156,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     cr = settings.cr
     variant = settings.variant
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -176,6 +178,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         size=Size.Medium,
         languages=["Common"],
         creature_class="Cultist",
+        caster_type=CasterType.Pact,
     )
 
     # ARMOR CLASS
@@ -187,7 +190,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         stats = stats.add_ac_template(UnholyArmor)
 
     # LEGENDARY
-    if variant is CultistVariant and cr >= 18:
+    if is_legendary:
         stats = stats.as_legendary()
 
     # ATTACKS
@@ -218,7 +221,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_attack = spell.Firebolt.with_display_name("Scorching Ray")
         secondary_damage_type = DamageType.Fire
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         primary_damage_type=primary_damage_type,

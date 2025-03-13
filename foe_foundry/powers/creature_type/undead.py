@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType, Frozen
+from ...damage import Condition, DamageType, Frozen
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -134,12 +134,13 @@ class _SoulChill(UndeadPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 10, min_val=15, max_val=60)
+        exhaustion = Condition.Exhaustion
 
         feature = Feature(
             name="Soul Chill",
             action=ActionType.Reaction,
             description=f"Whenever a creature within {distance} feet that {stats.selfref} can see fails a saving throw, {stats.selfref} can attempt to leech away a portion of its spirit. \
-                The creature must succeed on a DC {dc} Charisma saving throw. On a failure, it gains one level of **Exhaustion**.",
+                The creature must succeed on a DC {dc} Charisma saving throw. On a failure, it gains one level of {exhaustion.caption}.",
         )
         return [feature]
 

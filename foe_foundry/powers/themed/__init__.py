@@ -19,12 +19,12 @@ from . import (
     diseased,
     domineering,
     earthy,
+    emanation,
     fast,
     fearsome,
     flying,
     gadget,
     holy,
-    magic,
     monstrous,
     organized,
     poison,
@@ -57,12 +57,12 @@ ThemedPowers: List[Power] = (
     + diseased.DiseasedPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
+    + emanation.EmanationPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
     + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
-    + magic.MagicPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
     + poison.PoisonPowers

@@ -86,6 +86,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -103,7 +104,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant is BossVariant and cr >= 8:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(
@@ -125,7 +126,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     else:
         attack = weapon.Maul
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
 

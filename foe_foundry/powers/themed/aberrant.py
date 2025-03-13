@@ -3,7 +3,7 @@ from typing import List
 
 from ...attack_template import natural
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -103,11 +103,12 @@ class _Adhesive(AberrantPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        grappled = Condition.Grappled
         feature = Feature(
             name="Adhesive",
             action=ActionType.Feature,
             description=f"{stats.selfref.capitalize()} adheres to anything that touches it (including weapons). \
-                A Huge or smaller creature or object adhered to {stats.selfref} is also **Grappled** by it (escape DC {dc}). \
+                A Huge or smaller creature or object adhered to {stats.selfref} is also {grappled.caption} by it (escape DC {dc}). \
                 Ability checks made to escape this grapple have disadvantage.",
         )
         return [feature]

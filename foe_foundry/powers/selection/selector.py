@@ -238,6 +238,10 @@ class PowerSelector:
             return False
         if feature.uses and score.limited_uses_over_max >= 0:
             return False
+        if feature.creates_token and score.limited_uses_over_max >= 0:
+            return False
+        if feature.replaces_multiattack and score.replaces_multiattack_over_max >= 0:
+            return False
 
         return True
 
@@ -262,6 +266,10 @@ class PowerSelector:
         if feature.modifies_attack and score.attack_modifiers_over_target >= 0:
             return False
         if feature.uses and score.limited_uses_over_target >= 0:
+            return False
+        if feature.creates_token and score.tokens_over_target >= 0:
+            return False
+        if feature.replaces_multiattack and score.replaces_multiattack_over_target >= 0:
             return False
         return True
 
@@ -308,9 +316,12 @@ def select_powers(
     power_level_target = settings.power_multiplier * stats.recommended_powers
     power_level_max = power_level_target + 0.5
 
-    targets = SelectionTargets(
-        power_level_target=power_level_target, power_level_max=power_level_max
+    selection_args: dict = (
+        dict(power_level_target=power_level_target, power_level_max=power_level_max)
+        | stats.selection_target_args
     )
+
+    targets = SelectionTargets(**selection_args)
 
     all_results: List[BaseStatblock] = []
     all_scores: List[float] = []

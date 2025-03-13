@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -35,7 +36,7 @@ class SkeletalPower(PowerWithStandardScoring):
             source=source,
             theme="skeletal",
             power_level=power_level,
-            power_type=PowerType.CreatureType,
+            power_type=PowerType.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,
@@ -105,12 +106,13 @@ class _LoathsomeRattle(SkeletalPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        frightened = Condition.Frightened
 
         feature = Feature(
             name="Loathsome Rattle",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.title()} rattles its bones in a cacophony of sound, causing all who hear it to feel a chill of fear. Each non-undead within 30 feet must make a DC {dc} Wisdom saving throw or be **Frightened** until the end of the skeletal creature's next turn.",
+            description=f"{stats.selfref.title()} rattles its bones in a cacophony of sound, causing all who hear it to feel a chill of fear. Each non-undead within 30 feet must make a DC {dc} Wisdom saving throw or be {frightened.caption} until the end of the skeletal creature's next turn.",
         )
 
         return [feature]

@@ -5,7 +5,7 @@ from typing import List
 from num2words import num2words
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -58,6 +58,7 @@ class _AuraOfDespair(CursedPower):
         )
 
         dc = stats.difficulty_class
+        frightened = Condition.Frightened
 
         dreadful_scream = Feature(
             name="Dreadful Scream",
@@ -65,7 +66,7 @@ class _AuraOfDespair(CursedPower):
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} unleashes a dreadful scream laced with sorrow and despair. \
-                Each creature within 30 feet that can hear {stats.selfref} must make a DC {dc} Wisdom saving throw or be **Frightened** of {stats.selfref} for 1 minute (save ends at end of turn). \
+                Each creature within 30 feet that can hear {stats.selfref} must make a DC {dc} Wisdom saving throw or be {frightened.caption} of {stats.selfref} for 1 minute (save ends at end of turn). \
                 While frightened in this way, the creature loses any resistance or immunity to psychic and necrotic damage.",
         )
 
@@ -81,6 +82,7 @@ class _DisfiguringCurse(CursedPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(1.2, force_die=Die.d6)
+        exhaustion = Condition.Exhaustion
 
         feature = Feature(
             name="Disfiguring Curse",
@@ -89,7 +91,7 @@ class _DisfiguringCurse(CursedPower):
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} attempts to magically spread its curse to a target that it can see within 60 feet. \
                 The target must make a DC {dc} Charisma save. On a failure, the target takes {dmg.description} psychic damage and is cursed with horrible deformities. \
-                While deformed, the target gains a level of **Exhaustion** that does not go away when taking a long rest. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
+                While deformed, the target gains a level of {exhaustion.caption} that does not go away when taking a long rest. The cursed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.",
         )
         return [feature]
 
@@ -160,6 +162,7 @@ class _RayOfEnfeeblement(CursedPower):
         dmg = stats.target_value(1.5, force_die=Die.d6)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
+        poisoned = Condition.Poisoned
         feature = Feature(
             name="Ray of Enfeeblement",
             action=ActionType.Action,
@@ -167,7 +170,7 @@ class _RayOfEnfeeblement(CursedPower):
             recharge=5,
             description=f"{stats.selfref.capitalize()} shoots a black beam of energy toward a creature it can can see within 60 feet. \
                 That creature must succeed on a DC {dc} Constitution save or take {dmg.description} necrotic damage. On a success, the creature takes half damage. \
-                On a failure, the creature is also **Poisoned** for 1 minute (save ends at end of turn). While poisoned in this way, the creature is {weakened}.",
+                On a failure, the creature is also {poisoned.caption} for 1 minute (save ends at end of turn). While poisoned in this way, the creature is {weakened}.",
         )
         return [feature]
 
@@ -178,11 +181,12 @@ class _VoidSiphon(CursedPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 10 if stats.cr <= 7 else 20
+        exhaustion = Condition.Exhaustion
 
         feature = Feature(
             name="Void Siphon",
             action=ActionType.Feature,
-            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of **Exhaustion**",
+            description=f"When a creature within {distance} feet of {stats.roleref} receives magical healing, it also gains a level of {exhaustion.caption}",
         )
         return [feature]
 

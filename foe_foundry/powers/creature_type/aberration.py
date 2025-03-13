@@ -4,7 +4,7 @@ from typing import List
 
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, Swallowed, conditions
+from ...damage import AttackType, Condition, DamageType, Swallowed, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...size import Size
@@ -46,9 +46,11 @@ class _TentacleGrapple(AberrationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
         feature = Feature(
             name="Tentacle Grapple",
-            description=f"On a hit, the target is **Grappled** (escape DC {dc}). While grappled in this way, the target is **Restrained**.",
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc}). While grappled in this way, the target is {restrained.caption}.",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
@@ -70,14 +72,16 @@ class _GazeOfTheFarRealm(AberrationPower):
         dc = stats.difficulty_class
         dmg = stats.target_value(0.25, suggested_die=Die.d6)
         burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
+        frightened = Condition.Frightened
+        dazed = conditions.Dazed()
         feature = Feature(
             name="Gaze of the Far Realm",
             action=ActionType.Action,
             recharge=4,
             replaces_multiattack=1,
             description=f"One target that {stats.selfref} can see within 60 feet must succed on a DC {dc} Charisma saving throw. \
-                On a failure, roll a d6. On a 1-2, the creature is **Frightened** (save ends at end of turn). \
-                On a 3-4, the creature is **Dazed** (save ends at end of turn). \
+                On a failure, roll a d6. On a 1-2, the creature is {frightened.caption} (save ends at end of turn). \
+                On a 3-4, the creature is {dazed.caption} (save ends at end of turn). \
                 On a 5-6, the creature is {burning.caption}. {burning.description_3rd}.",
         )
         return [feature]
@@ -114,14 +118,15 @@ class _TentacleSlam(AberrationPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(0.5, suggested_die=Die.d6)
-
+        grappled = Condition.Grappled
+        stunned = Condition.Stunned
         feature = Feature(
             name="Tentacle Slam",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} makes an attack against a creature within its reach. If the attack hits, the target is **Grappled** (escape DC {dc}). \
+            description=f"{stats.selfref.capitalize()} makes an attack against a creature within its reach. If the attack hits, the target is {grappled.caption} (escape DC {dc}). \
                 Then, {stats.selfref} slams each creature grappled by it into each other or a solid surface. \
-                Each creature must succeed on a DC {dc} Constitution saving throw or take {dmg.description} bludgeoning damage and be **Stunned** until the end of {stats.selfref}'s next turn.",
+                Each creature must succeed on a DC {dc} Constitution saving throw or take {dmg.description} bludgeoning damage and be {stunned.caption} until the end of {stats.selfref}'s next turn.",
         )
         return [feature]
 

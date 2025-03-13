@@ -15,7 +15,7 @@ from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
 from ..skills import Stats
-from ..spells import StatblockSpell
+from ..spells import CasterType, StatblockSpell
 from ..utils import easy_multiple_of_five
 from ..xp import xp_by_cr
 from .dials import MonsterDials
@@ -66,6 +66,8 @@ class BaseStatblock:
     legendary_resistances: int = 0
     legendary_resistance_damage_taken: int = 0
     flags: set[str] = field(default_factory=set)
+    caster_type: CasterType | None = None
+    selection_target_args: dict = field(default_factory=dict)
 
     def __post_init__(self):
         mod = (
@@ -75,6 +77,7 @@ class BaseStatblock:
         prof = self.attributes.proficiency
         self.difficulty_class = 8 + mod + prof
         self.difficulty_class_easy = self.difficulty_class - 2
+        self.difficulty_class_token = self.difficulty_class - 3
 
         self.recommended_powers = (
             recommended_powers_for_cr(self.cr) + self.recommended_powers_modifier
@@ -178,6 +181,9 @@ class BaseStatblock:
             has_lair=self.has_lair,
             is_legendary=self.is_legendary,
             legendary_resistance_damage_taken=self.legendary_resistance_damage_taken,
+            caster_type=self.caster_type,
+            selection_target_args=self.selection_target_args,
+            flags=self.flags.copy(),
         )
         return args
 
@@ -266,19 +272,35 @@ class BaseStatblock:
         return self.copy(attributes=new_attributes)
 
     def grant_spellcasting(
-        self, spellcasting_stat: Stats | None = None
+        self, caster_type: CasterType, spellcasting_stat: Stats | None = None
     ) -> BaseStatblock:
+        if self.caster_type is not None:
+            return self.copy()
+
         if spellcasting_stat is None:
-            spellcasting_stat = self.attributes.spellcasting_stat
+            if caster_type == CasterType.Divine:
+                spellcasting_stat = Stats.WIS
+            elif caster_type == CasterType.Arcane:
+                spellcasting_stat = Stats.INT
+            elif caster_type == CasterType.Primal:
+                spellcasting_stat = Stats.WIS
+            elif caster_type == CasterType.Psionic:
+                spellcasting_stat = Stats.INT
+            elif caster_type == CasterType.Innate:
+                spellcasting_stat = Stats.CHA
+            elif caster_type == CasterType.Pact:
+                spellcasting_stat = Stats.CHA
+            else:
+                raise ValueError(f"Unknown caster type: {caster_type}")
 
         gap = self.attributes.primary_mod - self.attributes.stat_mod(spellcasting_stat)
         if gap > 1:
             boost = 2 * (gap - 1)  # don't boost spellcasting stat beyond primary stat
             new_attributes = self.attributes.boost(spellcasting_stat, boost)
-            return self.copy(attributes=new_attributes)
+            return self.copy(caster_type=caster_type, attributes=new_attributes)
         else:
             # already a spellcaster
-            return self.copy()
+            return self.copy(caster_type=caster_type)
 
     def add_ac_template(
         self,
@@ -408,8 +430,11 @@ class BaseStatblock:
         return self.copy(additional_attacks=additional_attacks)
 
     def add_spells(self, spells: List[StatblockSpell]) -> BaseStatblock:
-        new_spells = [s.copy() for s in self.spells]
-        new_spells.extend([s.scale_for_cr(self.cr) for s in spells])
+        existing_spells = [s.copy() for s in self.spells]
+        added_spells = [
+            s.scale_for_cr(self.cr) for s in spells if s not in existing_spells
+        ]
+        new_spells = existing_spells + added_spells
         return self.copy(spells=new_spells)
 
     def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
@@ -462,7 +487,12 @@ class BaseStatblock:
         return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
 
     def as_legendary(
-        self, *, actions: int = 3, resistances: int = 3, has_lair: bool = False
+        self,
+        *,
+        actions: int = 3,
+        resistances: int = 3,
+        has_lair: bool = False,
+        boost_powers: bool = True,
     ) -> BaseStatblock:
         stats = self.copy()
         if stats.is_legendary:
@@ -527,7 +557,7 @@ class BaseStatblock:
 
         # Power Adjustments
         # legendary creature will have some more powers
-        recommended_powers_modifier = 0.25
+        recommended_powers_modifier = 0.25 if boost_powers else 0
 
         # Apply HP, AC, and power adjustments
         stats = stats.apply_monster_dials(
@@ -614,13 +644,16 @@ class BaseStatblock:
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:
-    spells = [s.caption_md for s in all_spells if s.uses == uses]
+    spells = [s for s in all_spells if s.uses == uses]
     if len(spells) == 0:
         return None
+
+    spells.sort(key=lambda s: (s.level_resolved, s.name))
+    sorted_spell_names = [s.caption_md for s in spells]
 
     if uses is None:
         line_prefix = "At will: "
     else:
         line_prefix = f"{uses}/day each: "
 
-    return line_prefix + ", ".join(spells)
+    return line_prefix + ", ".join(sorted_spell_names)

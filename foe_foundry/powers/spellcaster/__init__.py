@@ -11,10 +11,13 @@ from . import (
     enchanter,
     fiendish,
     illusionist,
+    magic,
+    metamagic,
     necromancer,
     psionic,
     transmuter,
 )
+from .base import WizardPower  # noqa
 
 SpellcasterPowers: List[Power] = (
     abjurer.AbjurationWizards()
@@ -22,10 +25,12 @@ SpellcasterPowers: List[Power] = (
     + conjurer.ConjurationWizards()
     + cult.CultCasters()
     + divination.DivinationWizards()
-    + elementalist.ElementalistWizards()
+    + elementalist.ElementalistWizards
     + enchanter.EnchanterWizards()
     + fiendish.FiendishCasters()
     + illusionist.IllusionistWizards()
+    + magic.MagicPowers
+    + metamagic.MetamagicPowers
     + necromancer.NecromancerWizards()
     + psionic.PsionicCasters()
     + transmuter.TransmutationWizards()

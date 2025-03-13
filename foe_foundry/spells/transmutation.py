@@ -42,6 +42,7 @@ EnlargeReduce = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     upcast=False,
     save=Stats.CON,
     description="""You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
@@ -79,6 +80,7 @@ Fly = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     description="You touch a willing creature. \
         The target gains a flying speed of 60 feet for the duration. \
         When the spell ends, the target falls if it is still aloft, unless it can stop the fall.",

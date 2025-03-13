@@ -28,3 +28,9 @@ class SelectionScore:
 
     spellcasting_over_target: int
     spellcasting_over_max: int
+
+    tokens_over_target: int
+    tokens_over_max: int
+
+    replaces_multiattack_over_target: int
+    replaces_multiattack_over_max: int

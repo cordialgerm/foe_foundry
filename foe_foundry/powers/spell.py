@@ -1,7 +1,7 @@
 from typing import List
 
 from ..features import Feature
-from ..spells import StatblockSpell
+from ..spells import CasterType, StatblockSpell
 from ..statblocks import BaseStatblock
 from .power import MEDIUM_POWER, PowerType, PowerWithStandardScoring
 
@@ -10,6 +10,7 @@ class SpellPower(PowerWithStandardScoring):
     def __init__(
         self,
         spell: StatblockSpell,
+        caster_type: CasterType,
         theme: str,
         score_args: dict,
         **kwargs,
@@ -34,10 +35,11 @@ class SpellPower(PowerWithStandardScoring):
             **kwargs,
         )
         self.spell = spell
+        self.caster_type = caster_type
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.grant_spellcasting()
+        stats = stats.grant_spellcasting(self.caster_type)
         return stats.add_spell(spell=self.spell.copy())

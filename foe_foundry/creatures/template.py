@@ -10,6 +10,7 @@ from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
 from ..statblocks import BaseStatblock, Statblock
 from ..utils import name_to_key
+from .species import CreatureSpecies
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -70,21 +71,10 @@ class CreatureVariant:
 
 
 @dataclass(kw_only=True, frozen=True)
-class CreatureSpecies:
-    name: str
-    description: str
-
-    def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats
-
-    def __hash__(self) -> int:
-        return hash(self.name)
-
-
-@dataclass(kw_only=True, frozen=True)
 class GenerationSettings:
     creature_name: str
     cr: float
+    is_legendary: bool
     variant: CreatureVariant
     species: CreatureSpecies | None = None
     rng: np.random.Generator
@@ -92,9 +82,6 @@ class GenerationSettings:
     selection_settings: SelectionSettings = field(default_factory=SelectionSettings)
     hp_multiplier: float = 1.0
     damage_multiplier: float = 1.0
-
-    power_boosts: dict[str, float] = field(default_factory=dict)
-    theme_boosts: dict[str, float] = field(default_factory=dict)
 
     @property
     def key(self) -> str:
@@ -178,6 +165,7 @@ class CreatureTemplate:
                         dict(
                             creature_name=suggested_cr.name,
                             cr=suggested_cr.cr,
+                            is_legendary=suggested_cr.is_legendary,
                             variant=variant,
                             species=species,
                             selection_settings=SelectionSettings(),

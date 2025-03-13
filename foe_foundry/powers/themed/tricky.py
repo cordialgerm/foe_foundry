@@ -3,9 +3,10 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -25,6 +26,7 @@ class Tricky(PowerWithStandardScoring):
                     any(t.is_spell() for t in c.attack_types)
                     and c.attributes.spellcasting_mod >= 3
                     and c.secondary_damage_type != DamageType.Radiant
+                    and c.caster_type != CasterType.Divine
                 )
             else:
                 return True
@@ -55,7 +57,7 @@ class Tricky(PowerWithStandardScoring):
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Deception
         ).boost(Stats.CHA, 2)
-        stats = stats.grant_spellcasting(Stats.CHA)
+        stats = stats.grant_spellcasting(CasterType.Innate)
         changes: dict = dict(attributes=new_attrs)
         return stats.copy(**changes)
 
@@ -90,7 +92,7 @@ class _SpectralDuplicate(Tricky):
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} creates a spectral duplicate of itself in an unoccupied space it can see within 60 feet. \
-                While the duplicate exists, {stats.selfref} is **Invisible** and **Unconscious**. The duplicate has the same statistics and knowledge as {stats.selfref} \
+                While the duplicate exists, {stats.selfref} is {Condition.Invisible.caption} and {Condition.Unconscious.caption}. The duplicate has the same statistics and knowledge as {stats.selfref} \
                 and acts immediately in initiative after {stats.selfref}. The duplicate disappears when {stats.selfref} drops to 0 hp.",
         )
         return [feature]

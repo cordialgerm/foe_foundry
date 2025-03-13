@@ -41,6 +41,7 @@ DetectThoughts = Spell(
     school="divination",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     description="For the duration, you can read the thoughts of certain creatures. \
         When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. \
         If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected. \
@@ -60,6 +61,7 @@ ArcaneEye = Spell(
     school="divination",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     description="You create an invisible, magical eye within range that hovers in the air for the duration. \
 You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. \
 The eye can look in every direction. As an action, you can move the eye up to 30 feet in any direction. \
@@ -73,6 +75,7 @@ Scrying = Spell(
     school="divination",
     source="SRD 5.1",
     action_type=ActionType.Action,
+    concentration=True,
     description="You can see and hear a particular creature you choose that is on the same plane of existence as you. \
 The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. \
 If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed. \

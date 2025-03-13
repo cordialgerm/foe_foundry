@@ -239,7 +239,7 @@ def determine_summon_formula(
             # if there are going to be many summons, then prefer not to use that option
             if target_val > max_quantity:
                 target_val = max_quantity
-                weight = 0.75
+                weight = 0.1
             else:
                 weight = 1
 
@@ -256,6 +256,12 @@ def determine_summon_formula(
     index = rng.choice(len(names), p=weights)
     creature = names[index]
     formula = formulas[index]
+
+    # description = (
+    #     f"{formula.description} {creature_ref(creature)} arrive to aid the summoner and join combat at initiative count 0. \
+    #     On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
+    #     They then act normally on subsequent turns."
+    # )
 
     description = (
         f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \

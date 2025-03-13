@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
@@ -187,7 +188,7 @@ class _Overchannel(PowerWithStandardScoring):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if not stats.attack_types.intersection(AttackType.AllSpell()):
-            stats = stats.grant_spellcasting()
+            stats = stats.grant_spellcasting(CasterType.Innate)
             stats = spell.Firebolt.add_as_secondary_attack(stats)
             return stats
         else:
@@ -197,8 +198,7 @@ class _Overchannel(PowerWithStandardScoring):
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,
-            description=f"If {stats.selfref} begins its turn with no hostile creatures within 10 feet of it, it can use its bonus action to channel vast amounts of power into its next spell. \
-                The next spell attack it makes this turn that hits a target deals maximum damage.",
+            description=f"The {stats.selfref} begins to channel vast amounts of power into its next spell. If it begins its next turn with no creature next to it, then the next spell attack it makes that turn that hits a target deals maximum damage.",
         )
         return [feature]
 

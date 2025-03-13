@@ -1,18 +1,27 @@
 from typing import List
 
-from ...creature_types import CreatureType
 from ...features import Feature
-from ...role_types import MonsterRole
 from ...spells import illusion
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, LOW_POWER, MEDIUM_POWER, Power
+from ..power import Power
 from ..themed.tricky import Projection
-from .base import _Wizard
+from .base import WizardPower
 from .utils import spell_list
 
-_adept = [illusion.Invisibility, illusion.SilentImage, illusion.DisguiseSelf]
-_master = [illusion.GreaterInvisibility, illusion.Fear, illusion.MajorImage]
-_expert = [illusion.PhantasmalKiller, illusion.ProgrammedIllusion]
+_adept = [
+    illusion.Invisibility,
+    illusion.SilentImage.copy(concentration=False),
+    illusion.DisguiseSelf,
+]
+_master = [
+    illusion.GreaterInvisibility.copy(concentration=False),
+    illusion.Fear,
+    illusion.MajorImage.copy(concentration=False),
+]
+_expert = [
+    illusion.PhantasmalKiller,
+    illusion.ProgrammedIllusion.copy(concentration=False),
+]
 
 IllusionistAdeptSpells = spell_list(_adept, uses=1)
 IllusionistMasterSpells = spell_list(
@@ -25,25 +34,9 @@ IllusionistExpertSpells = (
 )
 
 
-class _IllusionistWizard(_Wizard):
+class _IllusionistWizard(WizardPower):
     def __init__(self, **kwargs):
-        args: dict = (
-            dict(
-                creature_class="Illusionist",
-                theme="illusion",
-                score_args=dict(
-                    require_no_creature_class=True,
-                    require_types=[
-                        CreatureType.Humanoid,
-                        CreatureType.Fey,
-                    ],
-                    bonus_roles=[MonsterRole.Controller, MonsterRole.Ambusher],
-                ),
-            )
-            | kwargs
-        )
-
-        super().__init__(**args)
+        super().__init__(creature_name="Illusionist", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return Projection.generate_features(stats)
@@ -53,23 +46,20 @@ def IllusionistWizards() -> List[Power]:
     return [
         _IllusionistWizard(
             name="Illusionist Adept",
-            min_cr=2,
-            max_cr=4,
+            min_cr=4,
+            max_cr=5,
             spells=IllusionistAdeptSpells,
-            power_level=LOW_POWER,
         ),
         _IllusionistWizard(
             name="Illusionist Master",
-            min_cr=5,
-            max_cr=10,
+            min_cr=6,
+            max_cr=11,
             spells=IllusionistMasterSpells,
-            power_level=MEDIUM_POWER,
         ),
         _IllusionistWizard(
             name="Illusionist Expert",
-            min_cr=11,
+            min_cr=12,
             max_cr=40,
             spells=IllusionistExpertSpells,
-            power_level=HIGH_POWER,
         ),
     ]

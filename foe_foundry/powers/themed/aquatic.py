@@ -1,7 +1,7 @@
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
@@ -84,13 +84,14 @@ class _SlimyCloud(AquaticBase):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(1.5)
+        poisoned = Condition.Poisoned
         feature = Feature(
             name="Slimy Cloud",
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} exudes a cloud of inky slime in a 30-ft radius sphere. \
                 Each other creature in the area when the cloud appears or that starts its turn in the cloud must make a DC {dc} Constitution saving throw. \
-                On a failure, it takes {dmg.description} poison damage and is **Poisoned** for 1 minute. \
+                On a failure, it takes {dmg.description} poison damage and is {poisoned.caption} for 1 minute. \
                 The slime extends around corners, and the area is heavily obscured for 1 minute or until a strong current dissipates the cloud.",
         )
         return [feature]

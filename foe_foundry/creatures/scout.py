@@ -70,6 +70,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
 
@@ -90,7 +91,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # LEGENDARY
-    if variant is CommanderVariant and stats.cr >= 7:
+    if is_legendary:
         stats = stats.as_legendary()
 
     stats = stats.copy(
@@ -110,7 +111,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     attack = weapon.Longbow
     secondary_attack = weapon.Shortswords
 
-    stats = attack.alter_base_stats(stats, rng)
+    stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
     stats = secondary_attack.add_as_secondary_attack(stats)

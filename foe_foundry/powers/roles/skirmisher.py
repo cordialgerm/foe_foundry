@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import AttackType
+from ...damage import AttackType, Condition
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -65,6 +65,8 @@ class _Skirmish(SkirmisherPower):
         dc = stats.difficulty_class_easy
         net_size = 10 if stats.cr <= 4 else 15
         net_range = 60 if stats.size >= Size.Large else 30
+        grappled = Condition.Grappled
+        restrained = Condition.Restrained
 
         feature = Feature(
             name="Skirmisher Nets",
@@ -72,7 +74,7 @@ class _Skirmish(SkirmisherPower):
             replaces_multiattack=1,
             action=ActionType.Action,
             description=f"{stats.roleref.capitalize()} throws a net in a {net_size} ft. cube at a point it can see within {net_range} ft. \
-                Each creature within the cube must succeed on a DC {dc} Strength save or be **Grappled** (escape DC {dc}) and **Restrained** while grappled in this way.",
+                Each creature within the cube must succeed on a DC {dc} Strength save or be {grappled.caption} (escape DC {dc}) and {restrained.caption} while grappled in this way.",
         )
         return [feature]
 

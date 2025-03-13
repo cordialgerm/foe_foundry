@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass, replace
 
 
 @dataclass(kw_only=True)
@@ -26,7 +26,11 @@ class SelectionTargets:
     power_level_target: float
     power_level_max: float
 
+    token_powers_target: int = -1
+    token_powers_max: int = 1
+
+    replaces_multiattack_target: int = -1
+    replaces_multiattack_max: int = 2
+
     def copy(self, **kwargs) -> SelectionTargets:
-        args = asdict(self)
-        args.update(kwargs)
-        return SelectionTargets(**args)
+        return replace(self, **kwargs)

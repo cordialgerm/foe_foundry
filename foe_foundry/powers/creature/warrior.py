@@ -3,6 +3,7 @@ from typing import List
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -40,7 +41,7 @@ class Warrior(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerType.CreatureType,
+            power_type=PowerType.Creature,
             theme="warrior",
             score_args=dict(
                 require_callback=require_callback,
@@ -133,6 +134,7 @@ class _Leap(Warrior):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(1.5, force_die=Die.d6)
         dc = stats.difficulty_class
+        prone = Condition.Prone
 
         feature = Feature(
             name="Mighty Leap",
@@ -141,7 +143,7 @@ class _Leap(Warrior):
             recharge=5,
             description=f"{stats.selfref.capitalize()} can use its action to jump up to half its speed horizontally and up to half its speed vertically \
                 without provoking opportunity attacks, and can land in a space containing one or more creatures. \
-                Each creature in its space when {stats.selfref} lands makes a DC {dc} Dexterity saving throw, taking {dmg.description} bludgeoning damage and being knocked **Prone** \
+                Each creature in its space when {stats.selfref} lands makes a DC {dc} Dexterity saving throw, taking {dmg.description} bludgeoning damage and being knocked {prone.caption} \
                 on a failure. On a success, the creature takes half damage and is pushed 5 feet to a space of its choice.",
         )
 

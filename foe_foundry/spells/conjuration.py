@@ -72,6 +72,18 @@ Grease: Spell = Spell(
     description="Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration. When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.",
     range="60 feet",
 )
+Teleport: Spell = Spell(
+    name="Teleport",
+    level=7,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.",
+    range="10 feet",
+)
 
 Maze: Spell = Spell(
     name="Maze",

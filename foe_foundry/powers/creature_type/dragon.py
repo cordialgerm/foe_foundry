@@ -5,7 +5,7 @@ import numpy as np
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType
+from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -41,12 +41,13 @@ class _FrightfulGaze(DraconicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = int(max(3, stats.cr / 2))
+        frightened = Condition.Frightened
 
         feature = Feature(
             name="Fearsome Gaze",
             action=ActionType.Reaction,
             uses=3,
-            description=f"Whenever a creature within 60 feet of {stats.selfref} looks at {stats.selfref}, it must make a DC {dc} Wisdom save or be **Frightened** of {stats.selfref} (save ends at end of turn). \
+            description=f"Whenever a creature within 60 feet of {stats.selfref} looks at {stats.selfref}, it must make a DC {dc} Wisdom save or be {frightened.caption} of {stats.selfref} (save ends at end of turn). \
                 While frightened in this way, each time the target takes damage, they take an additional {dmg} psychic damage.",
         )
         return [feature]
@@ -97,13 +98,13 @@ class _WingBuffet(DraconicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(0.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
-
+        prone = Condition.Prone
         feature = Feature(
             name="Wing Buffet",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} beats its wings. Each other creature within 10 feet must make a DC {dc} Strength saving throw. \
-                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked **Prone**. On a success, the creature takes half damage and is not knocked prone. \
+                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked {prone.caption}. On a success, the creature takes half damage and is not knocked prone. \
                 The dragon then flies up to half its movement speed. This movement does not trigger attacks of opportunity from prone targets.",
         )
 
@@ -116,12 +117,13 @@ class _DragonsGreed(DraconicPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        charmed = Condition.Charmed
         feature = Feature(
             name="Dragon's Greed",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets a creature it can see within 60 feet, preferring to target the creature in posession of the most valuable treasure or magical items. \
-                The creature must make a DC {dc} Charisma saving throw or be **Charmed** by {stats.selfref} (save ends at end of turn). While charmed in this way, the creature must use its movement and action \
+                The creature must make a DC {dc} Charisma saving throw or be {charmed.caption} by {stats.selfref} (save ends at end of turn). While charmed in this way, the creature must use its movement and action \
                 to approach {stats.selfref} and make it an offering of its most valuable treasure or magical item. The target uses its action to place the offering on the floor at its feet.",
         )
         return [feature]

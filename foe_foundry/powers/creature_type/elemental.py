@@ -5,10 +5,9 @@ from typing import List
 import numpy as np
 
 from ...creature_types import CreatureType
-from ...damage import AttackType, Burning, DamageType, Dazed, Frozen, Shocked
+from ...damage import AttackType, Burning, Condition, DamageType, Dazed, Frozen, Shocked
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import summoning
 from ..power import (
@@ -277,9 +276,10 @@ class _PoisonCloud(ElementalPower):
         dc = stats.difficulty_class
         dmg_type = DamageType.Poison
         duration = DieFormula.from_expression("1d4 + 2")
+        poisoned = Condition.Poisoned
         dmg = stats.target_value(1.6, force_die=Die.d6)
         description = f"{stats.selfref.capitalize()} creates a 20-ft radius cloud of toxic gas centered at a point it can see within 60 feet. Each creature that starts its turn in the cloud \
-            must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} damage and is **Poisoned** until the end of its next turn. On a success, a creature takes half as much damage and is not poisoned. \
+            must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} damage and is {poisoned.caption} until the end of its next turn. On a success, a creature takes half as much damage and is not poisoned. \
             The cloud lasts for {duration.description} and can be dispersed by a light breeze."
 
         feature = Feature(
@@ -306,8 +306,9 @@ class _Thunderwave(ElementalPower):
         dc = stats.difficulty_class
         dmg_type = DamageType.Thunder
         dmg = stats.target_value(1.6, force_die=Die.d10)
+        prone = Condition.Prone
         description = f"{stats.selfref.capitalize()} releases a burst of thundrous energy in a 15 ft. cube originating from {stats.selfref}. \
-            Each creature in the area must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} thunder damage and is knocked up to 10 feet away and lands **Prone**. \
+            Each creature in the area must make a DC {dc} Constitution saving throw. On a failure, a creature takes {dmg.description} {dmg_type} thunder damage and is knocked up to 10 feet away and lands {prone.caption}. \
             On a success, a creature takes half as much damage and is not knocked prone."
 
         feature = Feature(
@@ -335,6 +336,7 @@ def elemental_smite_power(dmg_type: DamageType) -> Power:
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
             dmg_target = 0.5
+            poisoned = Condition.Poisoned
 
             if dmg_type == DamageType.Fire:
                 burning = Burning(DieFormula.from_expression("1d10"))
@@ -354,7 +356,7 @@ def elemental_smite_power(dmg_type: DamageType) -> Power:
                 condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {shocked.caption} until the end of its next turn. {shocked.description_3rd}"
             elif dmg_type == DamageType.Poison:
                 dmg = stats.target_value(dmg_target, force_die=Die.d8)
-                condition = f"and forces the target to make a DC {dc} Constitution saving throw or become **Poisoned** for 1 minute (save ends at end of turn)."
+                condition = f"and forces the target to make a DC {dc} Constitution saving throw or become {poisoned.caption} for 1 minute (save ends at end of turn)."
             elif dmg_type == DamageType.Thunder:
                 dmg = stats.target_value(dmg_target, force_die=Die.d8)
                 dazed = Dazed()
