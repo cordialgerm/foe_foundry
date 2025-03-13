@@ -487,7 +487,12 @@ class BaseStatblock:
         return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
 
     def as_legendary(
-        self, *, actions: int = 3, resistances: int = 3, has_lair: bool = False
+        self,
+        *,
+        actions: int = 3,
+        resistances: int = 3,
+        has_lair: bool = False,
+        boost_powers: bool = True,
     ) -> BaseStatblock:
         stats = self.copy()
         if stats.is_legendary:
@@ -552,7 +557,7 @@ class BaseStatblock:
 
         # Power Adjustments
         # legendary creature will have some more powers
-        recommended_powers_modifier = 0.25
+        recommended_powers_modifier = 0.25 if boost_powers else 0
 
         # Apply HP, AC, and power adjustments
         stats = stats.apply_monster_dials(

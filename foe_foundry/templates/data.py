@@ -4,7 +4,10 @@ from dataclasses import asdict, dataclass, field
 from fractions import Fraction
 from typing import List, Set
 
+import numpy as np
 from num2words import num2words
+
+from foe_foundry.utils import comma_separated
 
 from ..benchmarks import Benchmark
 from ..damage import Attack, DamageType
@@ -177,14 +180,15 @@ class MonsterTemplateData:
             if spellcasting and stats.multiattack >= 3:
                 replacements.append(("Spellcasting", 2))
 
-            lines = []
-            for name, replacement in replacements:
-                replace_attacks = (
-                    f"{num2words(replacement)} attack{'s' if replacement > 1 else ''}"
+            if len(replacements) > 0:
+                replacement_amount = max(
+                    1, int(np.round(np.mean([r[1] for r in replacements])))
                 )
-                lines.append(f"{replace_attacks} with a use of its {name}")
-            if len(lines) > 0:
-                multiattack += " It may replace " + " or ".join(lines)
+                replacement_options = comma_separated(
+                    [r[0] for r in replacements], conjunction="or"
+                )
+                replacement_text = f" It may replace {num2words(replacement_amount)} attack{'s' if replacement_amount > 1 else ''} with a use of its {replacement_options}"
+                multiattack += replacement_text
 
         t = MonsterTemplateData(
             name=stats.name,

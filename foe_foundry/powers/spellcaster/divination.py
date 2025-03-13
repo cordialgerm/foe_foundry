@@ -47,7 +47,7 @@ class _DivinationWizard(WizardPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Portent of Weal and Woe",
-            action=ActionType.Reaction,
+            action=ActionType.Feature,
             uses=2,
             description=f"When another creature {stats.roleref} can see within 60 feet makes a d20 test, {stats.roleref} can replace the result of the roll with a 5 or a 15.",
         )

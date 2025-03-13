@@ -179,7 +179,7 @@ class _SpellEcho(_MetamagicPower):
             name="Spell Echo",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} casts a copy of the same spell it cast the previous turn.",
+            description=f"{stats.selfref.capitalize()} casts a copy of the same spell it cast the previous turn, without requiring a spell slot or concentration.",
             uses=1,
         )
         return [feature]
@@ -237,12 +237,12 @@ class _BloodMagic(_MetamagicPower):
 
     def generate_features(self, stats: BaseStatblock):
         harm = easy_multiple_of_five(stats.target_value(0.25).average, min_val=5)
-        bonus_damage = DieFormula.target_value(harm * 3, force_die=Die.d6)
+        bonus_damage = DieFormula.target_value(harm * 2.5, force_die=Die.d6)
 
         feature = Feature(
             name="Blood Magic",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} takes {harm} necrotic damage and the next spell or spell attack it makes deals an additional {bonus_damage} necrotic damage.",
+            description=f"{stats.selfref.capitalize()} takes {harm} necrotic damage and the next spell or spell attack it makes deals an additional {bonus_damage.description} necrotic damage.",
         )
         return [feature]
 

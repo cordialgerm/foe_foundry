@@ -2,8 +2,6 @@ from ..ac_templates import ArcaneArmor
 from ..attack_template import spell
 from ..creature_types import CreatureType
 from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
@@ -53,7 +51,7 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
-from ..statblocks import BaseStatblock, MonsterDials
+from ..statblocks import BaseStatblock
 from .base_stats import base_stats
 from .template import (
     CreatureTemplate,
@@ -304,7 +302,9 @@ class _MageWeights(CustomPowerSelection):
             esoteric += [emanation.RagingFlame]
         elif variant is CryomancerVariant:
             force.append(elementalist.Cryomancer)
-            techniques = [technique.SlowingAttack, technique.FreezingAttack]
+            techniques = [
+                technique.SlowingAttack
+            ]  # don't include freezing attack because Cryomancer already has Flash Freeze ability
             esoteric += [emanation.BitingFrost]
         elif variant is ElectromancerVariant:
             force.append(elementalist.Electromancer)
@@ -413,7 +413,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # LEGENDARY
     if is_legendary:
-        stats = stats.as_legendary()
+        stats = stats.as_legendary(boost_powers=False)
         stats = stats.with_flags(
             flags.HAS_TELEPORT
         )  # archmage has teleport via legendary action
@@ -516,13 +516,6 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 6:
         stats = stats.grant_save_proficiency(Stats.WIS, Stats.INT)
-
-    # POWER MODIFIER
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=(MEDIUM_POWER if cr >= 6 else LOW_POWER)
-        )
-    )
 
     # POWERS
     features = []

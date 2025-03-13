@@ -69,7 +69,7 @@ class _TimeRift(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(1.5, force_die=Die.d6)
+        dmg = stats.target_value(1, force_die=Die.d6)
         feature = Feature(
             name="Time Rift",
             action=ActionType.Action,
@@ -78,7 +78,7 @@ class _TimeRift(EmanationPower):
             recharge=5,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
                 Each creature that starts its turn within a 30 foot emanation of the {token.name} must repeat the same action it took on its previous turn. \
-                If it is unable to repeat the same action, it takes {dmg.description} force damage.",
+                If it chooses not to or is unable to repeat the same action, it takes {dmg.description} force damage.",
         )
         return [feature]
 
@@ -121,6 +121,7 @@ class _SummonersRift(EmanationPower):
                 summoner=CreatureType.Elemental,
                 summon_cr_target=summon_cr_target,
                 rng=rng,
+                max_quantity=4,
             )
             return description
         except Exception:

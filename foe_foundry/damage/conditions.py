@@ -119,7 +119,7 @@ def Shocked() -> CustomCondition:
         caption="<span class='condition condition-shocked'>Shocked</span>",
         immunity_clause="A creature that is immune to being <span class='condition condition-stunned'>Stunned</span> cannot be <span class='condition condition-shocked'>Shocked</span>",
         description="You are <span class='condition condition-dazed'>Dazed</span> and drop whatever you are carrying.",
-        description_3rd="A <span class='condition condition-shocked>Shocked</span> creature is <span class='condition condition-dazed'>Dazed</span> and drops whatever it is carrying.",
+        description_3rd="A <span class='condition condition-shocked'>Shocked</span> creature is <span class='condition condition-dazed'>Dazed</span> and drops whatever it is carrying.",
     )
 
 
