@@ -33,6 +33,7 @@ class BaseStatblock:
     attack: Attack
     multiattack: int = 1
     multiattack_benchmark: int = 1
+    multiattack_custom_text: str | None = None
     primary_damage_type: DamageType = DamageType.Bludgeoning
     secondary_damage_type: DamageType | None = None
     difficulty_class_modifier: int = 0
@@ -153,6 +154,7 @@ class BaseStatblock:
             attack=deepcopy(self.attack),
             multiattack=self.multiattack,
             multiattack_benchmark=self.multiattack_benchmark,
+            multiattack_custom_text=self.multiattack_custom_text,
             primary_damage_type=self.primary_damage_type,
             secondary_damage_type=self.secondary_damage_type,
             difficulty_class_modifier=self.difficulty_class_modifier,
@@ -440,24 +442,48 @@ class BaseStatblock:
     def add_spell(self, spell: StatblockSpell) -> BaseStatblock:
         return self.add_spells([spell])
 
-    def target_value(self, target: float = 1.0, **args) -> DieFormula:
-        adjustment = 1.0
+    def target_value(
+        self, target: float | None = None, dpr_proportion: float | None = None, **args
+    ) -> DieFormula:
+        if target is None and dpr_proportion is None:
+            raise ValueError("Either target or dpr_proportion must be provided")
+        if target is not None and dpr_proportion is not None:
+            raise ValueError("Only one of target or dpr_proportion can be provided")
+        if dpr_proportion is not None:
+            # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
+            if self.cr <= 2:
+                adjustment = 0.8
+            else:
+                adjustment = 1.0
 
-        # none of the monsters have 5 attacks, so raise an error if we try to scale more than 5 attacks
-        if target >= 5:
-            raise ValueError(f"Unexpected value for target: {target}")
+            scaled_target = (
+                self.base_attack_damage
+                * self.damage_modifier
+                * self.multiattack
+                * dpr_proportion
+                * adjustment
+            )
 
-        # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
-        if self.cr <= 2:
-            adjustment *= 0.8
+        else:
+            target = float(target)  # type: ignore
+            # none of the monsters have 5 attacks, so raise an error if we try to scale more than 5 attacks
+            if target >= 5:
+                raise ValueError(f"Unexpected value for target: {target}")
 
-        # if the multiplier is greater than the # of multiattacks then we also need to be careful
-        if target > self.multiattack:
-            adjustment *= 0.8
+            # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
+            if self.cr <= 2:
+                adjustment = 0.8
+            else:
+                adjustment = 1.0
 
-        scaled_target = (
-            self.base_attack_damage * self.damage_modifier * target * adjustment
-        )
+            # if the multiplier is greater than the # of multiattacks then we also need to be careful
+            if target > self.multiattack:
+                adjustment *= 0.8
+
+            scaled_target = (
+                self.base_attack_damage * self.damage_modifier * target * adjustment
+            )
+
         return DieFormula.target_value(target=scaled_target, **args)
 
     def with_roles(
@@ -602,15 +628,14 @@ class BaseStatblock:
         return stats
 
     def with_set_attacks(self, multiattack: int) -> BaseStatblock:
-        reduce_by = self.multiattack - multiattack
-        if reduce_by < 0:
-            raise ValueError(
-                "multiattack must be less than or equal to the current value"
-            )
-        elif reduce_by == 0:
-            return self.copy()
-        else:
-            return self.with_reduced_attacks(reduce_by=reduce_by)
+        target_dpr = self.dpr
+        stats = self.copy(multiattack=multiattack)
+        new_dpr = stats.dpr
+        new_multiplier = target_dpr / new_dpr
+        stats = stats.apply_monster_dials(
+            MonsterDials(attack_damage_multiplier=new_multiplier)
+        )
+        return stats
 
     def with_reduced_attacks(
         self, reduce_by: int, min_attacks: int = 1
@@ -626,16 +651,8 @@ class BaseStatblock:
             return self.with_reduced_attacks(
                 reduce_by=reduce_by - 1, min_attacks=min_attacks
             )
-
-        target_dpr = self.dpr
-        stats = self.apply_monster_dials(MonsterDials(multiattack_modifier=-reduce_by))
-        new_dpr = stats.dpr
-        new_multiplier = target_dpr / new_dpr
-
-        stats = stats.apply_monster_dials(
-            MonsterDials(attack_damage_multiplier=new_multiplier)
-        )
-        return stats
+        else:
+            return self.with_set_attacks(self.multiattack - reduce_by)
 
     def with_flags(self, *flags: str) -> BaseStatblock:
         new_flags = self.flags.copy()
