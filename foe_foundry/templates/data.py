@@ -157,7 +157,10 @@ class MonsterTemplateData:
         if stats.multiattack <= 1:
             multiattack = ""
         else:
-            multiattack = f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} {attack_name}."
+            if stats.multiattack_custom_text is None:
+                multiattack = f"{stats.selfref.capitalize()} makes {num2words(stats.multiattack)} {attack_name}."
+            else:
+                multiattack = stats.multiattack_custom_text
 
             replacements = []
             replacements += [

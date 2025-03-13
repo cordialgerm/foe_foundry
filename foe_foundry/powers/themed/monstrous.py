@@ -119,8 +119,8 @@ class _Pounce(MonstrousPower):
         feature = Feature(
             name="Pounce",
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked {prone.caption}. \
-                Then, {stats.selfref} makes an attack against the target.",
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} jumps 20 feet toward a creature it can see, attempting to knock it prone. The target must make a DC {dc} Strength save or be knocked {prone.caption}.",
         )
         return [feature]
 
@@ -288,10 +288,11 @@ class _TearApart(MonstrousPower):
             name="Claw Grapple",
             action=ActionType.Feature,
             modifies_attack=True,
+            hidden=True,
             description=f"On a hit, the target is {grappled.caption} (escape DC {dc})",
         )
 
-        dmg = stats.target_value(0.8 * stats.multiattack, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=0.8, force_die=Die.d10)
 
         feature2 = Feature(
             name="Tear Apart",
