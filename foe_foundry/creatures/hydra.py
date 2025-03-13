@@ -10,7 +10,15 @@ from ..powers import (
 )
 from ..powers.creature import hydra
 from ..powers.creature_type import beast
-from ..powers.themed import breath, cruel, diseased, fearsome, monstrous, reckless
+from ..powers.themed import (
+    aquatic,
+    breath,
+    cruel,
+    diseased,
+    fearsome,
+    monstrous,
+    reckless,
+)
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -52,7 +60,9 @@ class _HydraWeights(CustomPowerSelection):
             reckless.Toss,
         ]
         moderate_powers = diseased.DiseasedPowers
-        suppress = [reckless.RecklessFlurry]  # doesn't work well with variable attacks
+        suppress = [
+            reckless.RecklessFlurry  # don't work well with many attack
+        ] + aquatic.AquaticPowers  # not exciting
         if p in suppress:
             return CustomPowerWeight(-1)
         elif p == breath.FleshMeltingBreath:
