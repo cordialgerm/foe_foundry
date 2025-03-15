@@ -148,9 +148,35 @@ class _WeakeningPoison(PoisonPower):
         return [feature]
 
 
+class _PoisonousBlood(PoisonPower):
+    def __init__(self):
+        super().__init__(
+            name="Poisonous Blood",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 14),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        poisoned = Condition.Poisoned
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Poisonous Blood",
+            action=ActionType.Reaction,
+            description=f"When {stats.selfref} takes piercing or bludgeoning damage, each other creature in a 10 foot radius must make a DC {dc} Constitution save or be {poisoned.caption} (save ends at end of turn).",
+        )
+        return [feature]
+
+
 PoisonousBurst: Power = _PoisonousBurst()
 ToxicPoison: Power = _ToxicPoison()
 PoisonDart: Power = _PoisonDart()
+PoisonousBlood: Power = _PoisonousBlood()
 WeakeningPoison: Power = _WeakeningPoison()
 
-PoisonPowers: List[Power] = [PoisonousBurst, ToxicPoison, PoisonDart, WeakeningPoison]
+PoisonPowers: List[Power] = [
+    PoisonousBurst,
+    ToxicPoison,
+    PoisonDart,
+    PoisonousBlood,
+    WeakeningPoison,
+]
