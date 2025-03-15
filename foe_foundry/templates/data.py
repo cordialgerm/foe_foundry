@@ -48,7 +48,10 @@ class MonsterTemplateData:
     passives: List[Feature]
     actions: List[Feature]
     bonus_actions: List[Feature]
+
+    reaction_header: str
     reactions: List[Feature]
+
     attacks: List[Attack]
     attack_modifiers: List[Feature]
     legendary_actions: List[Feature]
@@ -111,6 +114,14 @@ class MonsterTemplateData:
             else f"{cr_fraction.numerator}/{cr_fraction.denominator}"
         )
         cr = f"{cr_fraction} ({stats.xp:,.0f} XP)"
+
+        if isinstance(stats.reaction_count, int):
+            if stats.reaction_count > 1:
+                reaction_header = f"Reactions ({stats.reaction_count}/turn)"
+            else:
+                reaction_header = "Reactions"
+        else:
+            reaction_header = f"Reactions ({stats.reaction_count})"
 
         passives, actions, bonus_actions, reactions, legendary_actions = (
             [],
@@ -226,6 +237,7 @@ class MonsterTemplateData:
             passives=passives,
             actions=actions,
             bonus_actions=bonus_actions,
+            reaction_header=reaction_header,
             reactions=reactions,
             legendary_actions=legendary_actions,
             legendary_action_header=f"Legendary Actions ({stats.legendary_actions})",

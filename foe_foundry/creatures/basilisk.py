@@ -1,3 +1,5 @@
+import numpy as np
+
 from ..ac_templates import NaturalPlating
 from ..attack_template import natural
 from ..creature_types import CreatureType
@@ -16,17 +18,21 @@ from ..powers.themed import (
     anti_ranged,
     bestial,
     breath,
+    diseased,
     flying,
     monstrous,
+    petrifying,
     poison,
     reckless,
+    serpentine,
     technique,
     tough,
 )
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
-from .base_stats import BaseStatblock, base_stats
+from ..statblocks import BaseStatblock
+from .base_stats import base_stats
 from .template import (
     CreatureTemplate,
     CreatureVariant,
@@ -46,18 +52,28 @@ BasiliskVariant = CreatureVariant(
 
 
 class _BasiliskWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(
+        self, stats: BaseStatblock, variant: CreatureVariant, rng: np.random.Generator
+    ):
         self.stats = stats
         self.variant = variant
+        self.rng = rng
+
+        petrifying_powers = petrifying.PetrifyingPowers
+        index = rng.choice(len(petrifying_powers))
+        self.petrifying_power = petrifying_powers[index]
 
     def force_powers(self) -> list[Power]:
+        force = [self.petrifying_power]
         if self.stats.cr >= 8:
-            return [basilisk.BasiliskGaze, basilisk.BasiliskBrood]
-        else:
-            return [basilisk.BasiliskGaze]
+            force += [basilisk.BasiliskBrood]
+
+        return force
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
         powers = [
+            basilisk.StoneMolt,
+            basilisk.StoneEater,
             anti_ranged.AdaptiveCamouflage,
             bestial.RetributiveStrike,
             beast.WildInstinct,
@@ -77,13 +93,17 @@ class _BasiliskWeights(CustomPowerSelection):
             technique.BleedingAttack,
             technique.ProneAttack,
             technique.PoisonedAttack,
+            serpentine.SerpentineHiss,
         ]
 
         suppress = (
-            flying.FlyingPowers + SpellcasterPowers + controller.ControllingSpells
+            flying.FlyingPowers
+            + SpellcasterPowers
+            + controller.ControllingSpells
+            + diseased.DiseasedPowers
         )
 
-        if p in suppress:
+        if p in suppress or p in petrifying.PetrifyingPowers:
             return CustomPowerWeight(0, ignore_usual_requirements=True)
         elif p in powers:
             return CustomPowerWeight(2, ignore_usual_requirements=True)
@@ -122,13 +142,12 @@ def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = stats.add_ac_template(NaturalPlating)
 
     # ATTACKS
-    attack = natural.Bite.with_display_name("Chomp Stone")
+    attack = natural.Bite.with_display_name("Venomous Bite")
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=DamageType.Poison,
     )
-    stats = stats.with_reduced_attacks(reduce_by=1)
     # ROLES
     stats = stats.with_roles(
         primary_role=MonsterRole.Bruiser, additional_roles=MonsterRole.Controller
@@ -146,7 +165,7 @@ def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BasiliskWeights(stats, variant),
+        custom=_BasiliskWeights(stats, variant, rng),
     )
     features += power_features
 

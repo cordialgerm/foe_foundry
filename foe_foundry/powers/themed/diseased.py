@@ -2,6 +2,8 @@ import math
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import feature_ref
+
 from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
@@ -74,7 +76,7 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
                 hidden=True,
                 modifies_attack=True,
                 description=f"On a hit, the target must make a DC {dc} Constitution saving throw. On a failure, the target loses {hit_die} hit die and rolls those die and takes that much poison damage. \
-                    If the target is out of hit die, it is diseased with {disease.caption} (see features).",
+                    If the target is out of hit die, it is diseased with {feature_ref(disease.name)}.",
             )
 
             return [feature1, feature2]
@@ -105,7 +107,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
                 replaces_multiattack=2,
                 description=f"{stats.selfref.capitalize()} exhales toxic gas in a 15-foot cone. Each creature in that area must make a DC {dc} Constitution saving throw. \
                     On a failure, the creature takes {dmg.description} poison damage and is {poisoned.caption} for 1 minute (save ends at end of turn). \
-                    If a creature fails this save three times, it becomes afflicted by {disease.caption} (see features).",
+                    If a creature fails this save three times, it becomes afflicted by {feature_ref(disease.caption)}.",
             )
 
             return [feature1, feature2]
