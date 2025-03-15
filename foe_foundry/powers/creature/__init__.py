@@ -4,6 +4,7 @@ from .zombie import ZombiePowers  # noqa
 from .guard import GuardPowers  # noqa
 from .mage import MagePowers  # noqa
 from .hydra import HydraPowers  # noqa
+from .basilisk import BasiliskPowers  # noqa
 
 CreaturePowers = (
     SkeletalPowers
@@ -12,4 +13,5 @@ CreaturePowers = (
     + GuardPowers
     + MagePowers
     + HydraPowers
+    + BasiliskPowers
 )

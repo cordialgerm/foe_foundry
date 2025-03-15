@@ -3,6 +3,8 @@ from typing import List, Set, Tuple, TypeAlias
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.references import creature_ref
+
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..die import Die, DieFormula
@@ -257,16 +259,16 @@ def determine_summon_formula(
     creature = names[index]
     formula = formulas[index]
 
-    # description = (
-    #     f"{formula.description} {creature_ref(creature)} arrive to aid the summoner and join combat at initiative count 0. \
-    #     On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
-    #     They then act normally on subsequent turns."
-    # )
-
-    description = (
-        f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \
-        On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
-        They then act normally on subsequent turns."
+    description = summon_description(
+        summoner = "the summoner",
+        summon = creature,
+        formula = formula
     )
 
     return creature, formula, description
+
+
+def summon_description(summoner: str, summon: str, formula: DieFormula) -> str:
+    return f"{formula.description} {creature_ref(summon)} arrive to aid {summoner} and join combat at initiative count 0. \
+        On their first turn, the {summon} use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of {summoner}. \
+        They then act normally on subsequent turns."
