@@ -51,7 +51,26 @@ class _SerpentineHiss(_SerpentinePower):
         return [feature]
 
 
+class _InterruptingHiss(_SerpentinePower):
+    def __init__(self):
+        super().__init__(
+            name="Interrupting Hiss",
+            power_level=LOW_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Interrupting Hiss",
+            action=ActionType.Reaction,
+            description=f"When a creature {stats.selfref} can see targets it with an attack, {stats.selfref} suddenly hisses at the attacker. The attacker must succeed on a DC {dc} Wisdom save or fail the attack roll.",
+        )
+
+        return [feature]
+
+
+InterruptingHiss: Power = _InterruptingHiss()
 SerpentineHiss: Power = _SerpentineHiss()
 
 
-SerpentinePowers: list[Power] = [SerpentineHiss]
+SerpentinePowers: list[Power] = [SerpentineHiss, InterruptingHiss]

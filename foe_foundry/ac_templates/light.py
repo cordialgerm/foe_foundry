@@ -40,9 +40,7 @@ class _LightArmor(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
-            score=ac
-            + 0.2
-            - (1000 if not stats.creature_type.could_wear_light_armor else 0),
+            score=ac + 0.2,
         )
 
 

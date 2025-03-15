@@ -46,8 +46,8 @@ def _petrification(stats: BaseStatblock) -> Feature:
     feature = Feature(
         name="Petrification",
         action=ActionType.Feature,
-        description=f"{stats.selfref.capitalize()}'s can turn creatures to stone. When affected, the creature must succeed on a DC {dc} Constitution saving throw or be {restrained.caption}. \
-                At the end of its next turn, the creature repeats the save. If it fails, it is {petrified.caption}. If {stats.selfref} sees its own reflection, it must also save against this effect.",
+        description=f"{stats.selfref.capitalize()} can turn creatures to stone. When affected, the creature must succeed on a DC {dc} Constitution saving throw or be {restrained.caption}. \
+                At the end of its next turn, the creature repeats the save. If it fails, it is {petrified.caption}.",
     )
     return feature
 
@@ -67,7 +67,7 @@ class _PetrifyingGaze(_PetrifyingPower):
             name="Petrifying Gaze",
             action=ActionType.BonusAction,
             recharge=4,
-            description=f"Each creature in a 30-foot cone is affected by the Basilisk's {feature_ref(petrification.name)}",
+            description=f"Each creature in a 30-foot cone is affected by the {stats.selfref}'s {feature_ref(petrification.name)}",
         )
 
         return [petrification, feature]

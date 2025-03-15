@@ -22,9 +22,14 @@ def special(
         )
 
     # Recharge Ability
-    recharge = [r for r in features if r.action == ActionType.Action and r.recharge]
+    recharge = [r for r in features if r.recharge]
 
     if len(recharge):
+        if [r for r in recharge if r.action == ActionType.Action]:
+            use_text = "uses or attempts to recharge"
+        else:
+            use_text = "attempts to recharge"
+
         recharge_text = (
             f"its {recharge[0].name} ability"
             if len(recharge) == 1
@@ -37,7 +42,7 @@ def special(
             feature=Feature(
                 name=name,
                 action=ActionType.Legendary,
-                description=f"{stats.selfref.title()} uses or attempts to recharge {recharge_text}. It can't take this action again until the start of its next turn.",
+                description=f"{stats.selfref.title()} {use_text} {recharge_text}. It can't take this action again until the start of its next turn.",
             ),
             types={LegendaryActionType.special},
             score=2,
@@ -64,6 +69,7 @@ def special(
 
     # Fallback
     temp = easy_multiple_of_five(0.75 * stats.cr, min_val=5)
+
     yield LegendaryActionScore(
         feature=Feature(
             name="Replenish",
