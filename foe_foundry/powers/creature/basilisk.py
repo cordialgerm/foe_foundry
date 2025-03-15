@@ -11,6 +11,8 @@ from ...statblocks import BaseStatblock
 from ..power import (
     EXTRA_HIGH_POWER,
     HIGH_POWER,
+    LOW_POWER,
+    RIBBON_POWER,
     Power,
     PowerType,
     PowerWithStandardScoring,
@@ -58,32 +60,36 @@ class _BasiliskBrood(_BasiliskPower):
         return [feature]
 
 
-class _BasiliskGaze(_BasiliskPower):
-    def __init__(
-        self,
-    ):
-        super().__init__(
-            name="Basilisk Gaze",
+class _StoneMolt(_BasiliskPower):
+    def __init__(self):
+        super().__init__(name="Stone Molt", power_level=LOW_POWER)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Stone Molt",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When hit by an attack, {stats.selfref} violently molts its stone scales. It gains resistance to a damage of its choice until the end of its turn and the molted scales create difficult terrain for other creatures in a 10 foot radius around {stats.selfref}",
         )
+        return [feature]
+
+
+class _StoneEater(_BasiliskPower):
+    def __init__(self):
+        super().__init__(name="Stone Eater", power_level=RIBBON_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         petrified = Condition.Petrified
-        restrained = Condition.Restrained
-        dc = stats.difficulty_class_easy
-
-        feature2 = Feature(
-            name="Petrifying Gaze",
-            action=ActionType.BonusAction,
-            recharge=4,
-            description=f"Each creature in a 30-foot cone must succeed on a DC {dc} Constitution saving throw. \
-                On a failed save, the creature is {restrained.caption} and repeats the save at the end of its next turn. \
-                If the creature is still {restrained.caption} at the end of its next turn, it is {petrified.caption}.",
+        feature = Feature(
+            name="Stone Eater",
+            action=ActionType.Feature,
+            description=f"If {stats.selfref} deals damage to a {petrified.caption} creature, it regains that many hitpoints.",
         )
-
-        return [feature2]
+        return [feature]
 
 
 BasiliskBrood: Power = _BasiliskBrood()
-BasiliskGaze: Power = _BasiliskGaze()
+StoneMolt: Power = _StoneMolt()
+StoneEater: Power = _StoneEater()
 
-BasiliskPowers: list[Power] = [BasiliskBrood, BasiliskGaze]
+BasiliskPowers: list[Power] = [BasiliskBrood, StoneMolt, StoneEater]

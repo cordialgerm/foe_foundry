@@ -18,6 +18,7 @@ from ..powers.themed import (
     fearsome,
     monstrous,
     reckless,
+    serpentine,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -58,6 +59,7 @@ class _HydraWeights(CustomPowerSelection):
             monstrous.TearApart,
             reckless.Charger,
             reckless.Toss,
+            serpentine.SerpentineHiss,
         ]
         moderate_powers = diseased.DiseasedPowers
         suppress = [
@@ -143,6 +145,9 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
             Condition.Unconscious,
         },
     )
+
+    # REACTIONS
+    stats = stats.copy(reaction_count="One Per Head")
 
     # POWERS
     features = []

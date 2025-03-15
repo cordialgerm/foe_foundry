@@ -27,9 +27,11 @@ from . import (
     holy,
     monstrous,
     organized,
+    petrifying,
     poison,
     psychic,
     reckless,
+    serpentine,
     sneaky,
     storm,
     technique,
@@ -65,9 +67,11 @@ ThemedPowers: List[Power] = (
     + holy.HolyPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
+    + petrifying.PetrifyingPowers
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
+    + serpentine.SerpentinePowers
     + skeletal.SkeletalPowers
     + sneaky.SneakyPowers
     + storm.StormPowers

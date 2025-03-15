@@ -167,10 +167,30 @@ class _PoisonousBlood(PoisonPower):
         return [feature]
 
 
+class _VenemousMiasma(PoisonPower):
+    def __init__(self):
+        super().__init__(
+            name="Venemous Miasma",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 14),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        poisoned = Condition.Poisoned
+        dmg = int(stats.target_value(dpr_proportion=0.2).average)
+        feature = Feature(
+            name="Venemous Miasma",
+            action=ActionType.Feature,
+            description=f"Any creature that ends its turn within 10 feet of {stats.selfref} takes {dmg} poison damage. If a creature has suffered this damage at least 3 times within an hour, it becomes {poisoned.caption} for the next hour.",
+        )
+        return [feature]
+
+
 PoisonousBurst: Power = _PoisonousBurst()
 ToxicPoison: Power = _ToxicPoison()
 PoisonDart: Power = _PoisonDart()
 PoisonousBlood: Power = _PoisonousBlood()
+VenemousMiasma: Power = _VenemousMiasma()
 WeakeningPoison: Power = _WeakeningPoison()
 
 PoisonPowers: List[Power] = [
@@ -178,5 +198,6 @@ PoisonPowers: List[Power] = [
     ToxicPoison,
     PoisonDart,
     PoisonousBlood,
+    VenemousMiasma,
     WeakeningPoison,
 ]

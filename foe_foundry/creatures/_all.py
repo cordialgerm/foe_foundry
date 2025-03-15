@@ -8,6 +8,7 @@ from .golem import GolemTemplate
 from .guard import GuardTemplate
 from .hydra import HydraTemplate
 from .mage import MageTemplate
+from .medusa import MedusaTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .skeleton import SkeletonTemplate
@@ -28,6 +29,7 @@ AllTemplates: list[CreatureTemplate] = [
     GuardTemplate,
     HydraTemplate,
     MageTemplate,
+    MedusaTemplate,
     PriestTemplate,
     ScoutTemplate,
     SkeletonTemplate,

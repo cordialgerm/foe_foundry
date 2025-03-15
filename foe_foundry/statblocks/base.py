@@ -69,6 +69,7 @@ class BaseStatblock:
     flags: set[str] = field(default_factory=set)
     caster_type: CasterType | None = None
     selection_target_args: dict = field(default_factory=dict)
+    reaction_count: int | str = 1
 
     def __post_init__(self):
         mod = (
@@ -186,6 +187,7 @@ class BaseStatblock:
             caster_type=self.caster_type,
             selection_target_args=self.selection_target_args,
             flags=self.flags.copy(),
+            reaction_count=self.reaction_count,
         )
         return args
 

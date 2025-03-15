@@ -158,7 +158,7 @@ class _LimitedMagicImmunity(MagicallyTough):
         feature = Feature(
             name="Limited Magic Immunity",
             action=ActionType.Reaction,
-            description=f"When {stats.selfref} is attacked by a spell, targeted by spell, or forced to make a saving throw by a {level} then {stats.selfref} can force the spell attack to miss or can choose to succeed on the saving throw.",
+            description=f"When {stats.selfref} is attacked by a spell, targeted by a spell, or forced to make a saving throw by a {level} then {stats.selfref} can force the spell attack to miss or can choose to succeed on the saving throw.",
         )
 
         return [feature]

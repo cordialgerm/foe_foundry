@@ -2,12 +2,11 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-from ...attack_template import natural, spell
+from ...attack_template import natural
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, Condition, DamageType, Dazed, Swallowed
+from ...damage import AttackType, Bleeding, Condition, DamageType, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -195,38 +194,6 @@ class _Rampage(MonstrousPower):
         return [feature]
 
 
-class _PetrifyingGaze(MonstrousPower):
-    def __init__(self):
-        super().__init__(
-            name="Petrifying Gaze",
-            source="SRD5.1 Basilisk",
-            power_level=HIGH_POWER,
-            require_types={
-                CreatureType.Monstrosity,
-                CreatureType.Celestial,
-                CreatureType.Undead,
-                CreatureType.Aberration,
-            },
-            bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
-            attack_names={"-", spell.Gaze},
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class_easy
-        dazed = Dazed()
-        petrified = Condition.Petrified
-
-        feature = Feature(
-            name="Petrifying Gaze",
-            action=ActionType.Reaction,
-            recharge=4,
-            description=f"Whenever a creature within 60 feet looks at {stats.selfref}, it must make a DC {dc} Constitution saving throw. \
-                On a failed save, the creature magically begins to turn to stone and is {dazed.caption}. It must repeat the saving throw at the end of its next turn. \
-                On a success, the effect ends. On a failure, the creature is {petrified.caption} until it is freed by the *Greater Restoration* spell or other magic.",
-        )
-        return [feature]
-
-
 class _JawClamp(MonstrousPower):
     def __init__(self):
         super().__init__(
@@ -309,7 +276,6 @@ Corrosive: Power = _Corrosive()
 Frenzy: Power = _Frenzy()
 JawClamp: Power = _JawClamp()
 LingeringWound: Power = _LingeringWound()
-PetrifyingGaze: Power = _PetrifyingGaze()
 Pounce: Power = _Pounce()
 Rampage: Power = _Rampage()
 Swallow: Power = _Swallow()
@@ -322,7 +288,6 @@ MonstrousPowers: List[Power] = [
     Frenzy,
     JawClamp,
     LingeringWound,
-    PetrifyingGaze,
     Pounce,
     Rampage,
     Swallow,
