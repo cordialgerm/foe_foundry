@@ -107,7 +107,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
                 replaces_multiattack=2,
                 description=f"{stats.selfref.capitalize()} exhales toxic gas in a 15-foot cone. Each creature in that area must make a DC {dc} Constitution saving throw. \
                     On a failure, the creature takes {dmg.description} poison damage and is {poisoned.caption} for 1 minute (save ends at end of turn). \
-                    If a creature fails this save three times, it becomes afflicted by {feature_ref(disease.caption)}.",
+                    If a creature fails this save three times, it becomes afflicted by {feature_ref(disease.name)}.",
             )
 
             return [feature1, feature2]
@@ -128,7 +128,7 @@ BlindingSickness = conditions.CustomCondition(
     name="Blinding Sickness",
     caption="<span class='condition condition-disease'>Blinding Sickness</span>",
     description="Pain grips your mind, and your eyes turn milky white. You have disadvantage on Wisdom checks and Wisdom saving throws and are <span class='condition condition-blinded>Blinded</span>.",
-    description_3rd="An infected creature's mind is gripped by pain and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is <span class='condition condition-blinded>Blinded</span>.",
+    description_3rd="An infected creature's mind is gripped by pain and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is <span class='condition condition-blinded'>Blinded</span>.",
 )
 
 _weakened = conditions.Weakened(save_end_of_turn=False)

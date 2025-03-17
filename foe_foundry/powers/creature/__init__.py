@@ -6,6 +6,7 @@ from .mage import MagePowers  # noqa
 from .hydra import HydraPowers  # noqa
 from .basilisk import BasiliskPowers  # noqa
 from .gorgon import GorgonPowers  #  noqa
+from .vrock import VrockPowers  # noqa
 
 CreaturePowers = (
     SkeletalPowers
@@ -16,4 +17,5 @@ CreaturePowers = (
     + HydraPowers
     + BasiliskPowers
     + GorgonPowers
+    + VrockPowers
 )
