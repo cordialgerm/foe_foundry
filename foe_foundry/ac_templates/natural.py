@@ -75,7 +75,7 @@ class _NaturalPlating(ArmorClassTemplate):
             max_con = 3
             base_ac = 12
 
-        # natural armor takes CON and DEX into account
+        # natural plating takes CON into account
         ac = (
             base_ac + min(stats.attributes.stat_mod(Stats.CON), max_con)
         ) + quality_level
