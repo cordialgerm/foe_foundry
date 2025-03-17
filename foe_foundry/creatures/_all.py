@@ -16,6 +16,7 @@ from .skeleton import SkeletonTemplate
 from .spy import SpyTemplate
 from .template import CreatureTemplate
 from .tough import ToughTemplate
+from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .zombie import ZombieTemplate
 
@@ -37,6 +38,7 @@ AllTemplates: list[CreatureTemplate] = [
     SkeletonTemplate,
     SpyTemplate,
     ToughTemplate,
+    VrockTemplate,
     WarriorTemplate,
     ZombieTemplate,
 ]

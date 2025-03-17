@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -27,7 +25,7 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
         ac = (
             10
             + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-            + min(stats.attributes.spellcasting_mod, 4)
+            + max(0, min(stats.attributes.spellcasting_mod, 4))
             + (2 if uses_shield else 0)
             + quality_level
         )
