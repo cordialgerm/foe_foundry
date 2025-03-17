@@ -6,7 +6,8 @@ import numpy as np
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills
 from ...creature_types import CreatureType
-from ...damage import AttackType, Bleeding, Condition, DamageType
+from ...damage import AttackType, Bleeding, Condition
+from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import summoning
@@ -103,29 +104,25 @@ class _Gore(BeastPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Gore",
-            description="This creature gets an additional Gore attack",
-            action=ActionType.Feature,
-            hidden=True,
-        )
-        return [feature]
-
-    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dc = stats.difficulty_class
 
-        bleeding_damage = stats.target_value(0.5)
+        bleeding_damage = stats.target_value(target=0.5, force_die=Die.d6)
         bleeding = Bleeding(damage=bleeding_damage)
+        prone = Condition.Prone
 
-        stats = stats.add_attack(
-            scalar=1.5,
-            damage_type=DamageType.Piercing,
-            attack_type=AttackType.MeleeNatural,
-            name="Gore",
-            replaces_multiattack=2,
-            additional_description=f"If {stats.selfref} moved at least 10 feet before making this attack, then the target must make a DC {dc} Dexterity saving throw. On a failure, the target is gored and gains {bleeding}.",
+        damage = stats.target_value(
+            target=1.5 if stats.multiattack > 1 else 0.75, force_die=Die.d6
         )
-        return stats
+
+        feature = Feature(
+            name="Gore",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=2,
+            description=f"{stats.selfref.capitalize()} moves up to half its movement speed in a straight line. Each creature in the path must make a DC {dc} Dexterity saving throw. \
+                On a failure, the target is {prone.caption}, takes {damage.description} piercing damage, and gains {bleeding.caption}. On a success, the target takes half damage instead. {bleeding.description_3rd}",
+        )
+        return [feature]
 
 
 class _Web(BeastPower):
