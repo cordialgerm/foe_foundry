@@ -2,9 +2,12 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field, replace
+from pathlib import Path
 from typing import Callable, Iterable, TypeAlias
 
 import numpy as np
+
+from foe_foundry.utils import find_image
 
 from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
@@ -73,6 +76,7 @@ class CreatureVariant:
 @dataclass(kw_only=True, frozen=True)
 class GenerationSettings:
     creature_name: str
+    creature_template: str
     cr: float
     is_legendary: bool
     variant: CreatureVariant
@@ -108,6 +112,7 @@ class CreatureTemplate:
     name: str
     tag_line: str
     description: str
+    image_urls: list[Path] | None = None
     environments: list[str]  # TODO - standardize
     treasure: list[str]
     variants: list[CreatureVariant]
@@ -130,6 +135,9 @@ class CreatureTemplate:
                     other_creatures.update(s.other_creatures.keys())
         self.srd_ceatures = sorted(list(srd_creatures))
         self.other_creatures = sorted(list(other_creatures))
+
+        if self.image_urls is None:
+            self.image_urls = find_image(self.name.lower())
 
     @property
     def key(self) -> str:
@@ -164,6 +172,7 @@ class CreatureTemplate:
                     args: dict = (
                         dict(
                             creature_name=suggested_cr.name,
+                            creature_template=self.name,
                             cr=suggested_cr.cr,
                             is_legendary=suggested_cr.is_legendary,
                             variant=variant,

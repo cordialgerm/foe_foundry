@@ -5,6 +5,7 @@ from ...features import ActionType, Feature
 from ...powers import flags
 from ...role_types import MonsterRole
 from ...size import Size
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from .score import LegendaryActionScore, LegendaryActionType
 
@@ -35,7 +36,7 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
         )
 
     could_teleport = (
-        len(stats.spells) > 0
+        (len(stats.spells) > 0 and stats.caster_type != CasterType.Divine)
         or (stats.creature_type in {CreatureType.Fey, CreatureType.Fiend})
         or (
             len(

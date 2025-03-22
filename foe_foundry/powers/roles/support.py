@@ -110,7 +110,7 @@ class _WardingBond(SupportPower):
             name="Warding Bond",
             description=f"{stats.selfref.capitalize()} forms a bond with a willing creature within 30 feet. \
                 Both {stats.selfref} and the target gain a +{boost} bonus to AC and resistance to all damage. \
-                Whenever the priest or target takes damage, the other takes the same amount of damage.",
+                Whenever {stats.selfref} or target takes damage, the other takes the same amount of damage.",
             action=ActionType.BonusAction,
             uses=1,
         )
