@@ -3,6 +3,7 @@ from typing import cast
 import ipywidgets as widgets
 import numpy as np
 from IPython.display import DisplayHandle, display, display_html
+from PIL import Image
 
 from foe_foundry.creatures import (
     AllTemplates,
@@ -28,6 +29,15 @@ def get_all_power_keys() -> list[str]:
 
 def get_all_power_themes() -> list[str]:
     return sorted({p.theme_key for p in AllPowers if p.theme_key is not None})
+
+
+def display_images(template: CreatureTemplate):
+    if template.image_urls is None:
+        return
+
+    for path in template.image_urls:
+        img = Image.open(path)
+        display(img)
 
 
 def display_stat_builder() -> DisplayHandle | None:
@@ -145,6 +155,7 @@ def display_stat_builder() -> DisplayHandle | None:
         stats = template.generate(
             GenerationSettings(
                 creature_name=name,
+                creature_template=template.name,
                 variant=variant,
                 cr=cr,
                 species=species,
@@ -163,6 +174,7 @@ def display_stat_builder() -> DisplayHandle | None:
 
         with output:
             display_html(html, raw=True)
+            display_images(template)
 
     render_button.on_click(on_button_clicked)
     random_theme_button.on_click(on_random_theme_button_clicked)

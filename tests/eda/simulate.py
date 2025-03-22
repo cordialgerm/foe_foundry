@@ -32,6 +32,7 @@ def plot_simulation(
         settings = GenerationSettings(
             rng=rng,
             creature_name=suggested_cr.name,
+            creature_template=template.name,
             cr=suggested_cr.cr,
             is_legendary=suggested_cr.is_legendary,
             variant=variant,

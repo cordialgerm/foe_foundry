@@ -14,6 +14,7 @@ from . import (
     magic,
     metamagic,
     necromancer,
+    oath,
     psionic,
     transmuter,
 )
@@ -31,6 +32,7 @@ SpellcasterPowers: List[Power] = (
     + illusionist.IllusionistWizards()
     + magic.MagicPowers
     + metamagic.MetamagicPowers
+    + oath.OathCasters()
     + necromancer.NecromancerWizards()
     + psionic.PsionicCasters()
     + transmuter.TransmutationWizards()

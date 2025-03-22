@@ -182,6 +182,66 @@ const artCredits = [
     ),
     url: "https://felipemuky.itch.io/dragon-stock-art-pack",
   },
+  {
+    title: "Publisher's Choice Quality Stock Art",
+    description: (
+      <>
+        Publisher's Choice Quality Stock Art by © Rick Hershey. <br />
+      </>
+    ),
+    url: "http://fatgoblingames.com"
+  },
+  {
+    title: "Art by Daniel Comerci",
+    description: (
+      <>
+        Art by Daniel Comerci used with permission. www.danielcomerci.com
+      </>
+    ),
+    url: "www.danielcomerci.com"
+  },
+  {
+    title: "Art by Diane Ramic",
+    description: (
+      <>
+        Art by Diane Ramic used with permission. https://dramic.wixsite.com/home
+      </>
+    ),
+    url: "https://dramic.wixsite.com/home"
+  },
+  {
+    title: "Art by Hounworks",
+    description: (
+      <>
+        Art by Hounworks used with permission. http://www.hounworks.it
+      </>
+    ),
+    url: "http://www.hounworks.it"
+  },
+  {
+    title: "Stock Art by Brett Neufeld",
+    description: (
+      <>
+        Stock Art by Brett Neufeld used with permission.
+      </>
+    ),
+  },
+  {
+    title: "Stock Art by Matt Morrow",
+    description: (
+      <>
+        Stock Art by Matt Morrow used with permission.
+      </>
+    ),
+  },
+  {
+    title: "Art by Adrian Arduini",
+    description: (
+      <>
+        Art by Adrian Arduini used with permission.
+      </>
+    ),
+  }
 ];
 
 const legalNotices = [

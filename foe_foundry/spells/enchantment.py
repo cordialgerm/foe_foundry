@@ -73,6 +73,20 @@ Feeblemind: Spell = Spell(
     At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.""",
 )
 
+Heroism: Spell = Spell(
+    name="Heroism",
+    level=1,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=True,
+    concentration=True,
+    description="A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns.",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+    range="Touch",
+)
+
 HideousLaughter: Spell = Spell(
     name="Hideous Laughter",
     level=1,
