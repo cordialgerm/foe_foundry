@@ -3,6 +3,8 @@ from typing import List
 
 import numpy as np
 
+from foe_foundry.references import action_ref
+
 from ...attack_template import natural as natural_attacks
 from ...attributes import Skills
 from ...creature_types import CreatureType
@@ -212,11 +214,12 @@ class _WildInstinct(BeastPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dash = action_ref("Dash")
         feature = Feature(
             name="Wild Instinct",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} identifies the creature with the lowest Strength score that it can see. It then Dashes towards that creature.",
+            description=f"{stats.selfref.capitalize()} identifies the creature with the lowest Strength score that it can see. It then uses {dash} towards that creature.",
         )
         return [feature]
 

@@ -24,6 +24,7 @@ class Condition(StrEnum):
     Restrained = auto()
     Stunned = auto()
     Unconscious = auto()
+    Bloodied = auto()
 
     @property
     def caption(self) -> str:

@@ -1,7 +1,8 @@
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import PowerType, PowerWithStandardScoring
@@ -23,10 +24,12 @@ def NimbleEscape(role: MonsterRole):
             )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+            hide = action_ref("Hide")
+            disengage = action_ref("Disengage")
             feature = Feature(
                 name="Nimble Escape",
                 action=ActionType.BonusAction,
-                description=f"{stats.roleref.capitalize()} uses Disengage or Hide.",
+                description=f"{stats.roleref.capitalize()} uses {disengage} or {hide}.",
             )
             return [feature]
 
@@ -48,9 +51,12 @@ def CunningAction(role: MonsterRole):
             )
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+            dash = action_ref("Dash")
+            disengage = action_ref("Disengage")
+            hide = action_ref("Hide")
             feature = Feature(
                 name="Cunning Action",
-                description=f"{stats.roleref.capitalize()} uses Dash, Disengage, or Hide.",
+                description=f"{stats.roleref.capitalize()} uses {dash}, {disengage}, or {hide}.",
                 action=ActionType.BonusAction,
             )
             return [feature]

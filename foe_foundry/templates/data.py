@@ -10,7 +10,7 @@ from num2words import num2words
 from foe_foundry.utils import comma_separated
 
 from ..benchmarks import Benchmark
-from ..damage import Attack, DamageType
+from ..damage import Attack, Condition, DamageType
 from ..features import ActionType, Feature
 from ..skills import Skills
 from ..statblocks import Statblock
@@ -95,6 +95,12 @@ class MonsterTemplateData:
         )
 
         creature_type_additions = []
+        if len(stats.additional_types) > 1:
+            additional_types = stats.additional_types.copy()
+            if stats.creature_type in additional_types:
+                additional_types.remove(stats.creature_type)
+            creature_type_additions.extend([f"{ct.name}*" for ct in additional_types])
+
         if stats.creature_subtype:
             creature_type_additions.append(stats.creature_subtype)
         if stats.creature_class:
@@ -227,7 +233,7 @@ class MonsterTemplateData:
             damage_immunities=_damage_list(
                 stats.damage_immunities, stats.nonmagical_immunity
             ),
-            condition_immunities=", ".join(c.name for c in stats.condition_immunities),
+            condition_immunities=_condition_list(stats.condition_immunities),
             senses=stats.senses.describe(
                 stats.attributes.passive_skill(Skills.Perception)
             ),
@@ -252,9 +258,16 @@ class MonsterTemplateData:
 
 
 def _damage_list(damage_types: Set[DamageType], nonmagical: bool) -> str:
+    sorted_damage_types = sorted(damage_types, key=lambda d: d.name)
+
     pieces = []
     if len(damage_types) > 0:
-        pieces.append(", ".join(d.name.capitalize() for d in damage_types))
+        pieces.append(", ".join(d.name.capitalize() for d in sorted_damage_types))
     if nonmagical:
         pieces.append("Bludgeoning, Piercing, and Slashing from Nonmagical Attacks")
     return "; ".join(pieces)
+
+
+def _condition_list(conditions: Set[Condition]) -> str:
+    sorted_conditions = sorted(conditions, key=lambda c: c.name)
+    return ", ".join(c.name for c in sorted_conditions)

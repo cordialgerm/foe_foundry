@@ -41,7 +41,7 @@ class _MetamagicPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_type=PowerType.Spellcasting,
-            source="FoeFoundry",
+            source="Foe Foundry",
             theme="Metamagic",
             power_level=power_level,
             create_date=datetime(2025, 3, 7),

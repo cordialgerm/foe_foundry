@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition
@@ -181,11 +183,12 @@ class _Lunge(Warrior):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dash = action_ref("Dash")
         feature = Feature(
             name="Lunge",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} takes the Dash action and can make its next attack with advantage and an additional 5 feet of reach",
+            description=f"{stats.selfref.capitalize()} uses {dash} and can make its next attack with advantage and an additional 5 feet of reach",
         )
         return [feature]
 

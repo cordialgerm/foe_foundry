@@ -1,4 +1,4 @@
-from typing import Callable, List, Set, TypeAlias, TypeVar
+from typing import Callable, List, Literal, Set, TypeAlias, TypeVar
 
 from ..attack_template import AttackTemplate
 from ..attributes import Skills, Stats
@@ -6,6 +6,7 @@ from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..role_types import MonsterRole
 from ..size import Size
+from ..spells import CasterType
 from ..statblocks import BaseStatblock
 from .attack import relevant_damage_types
 
@@ -156,6 +157,11 @@ def score(
     require_shield: bool = False,
     require_flags: str | set[str] | list[str] | None = None,
     require_no_flags: str | set[str] | list[str] | None = None,
+    require_spellcasting: CasterType
+    | list[CasterType]
+    | set[CasterType]
+    | Literal[True]
+    | None = None,
     require_callback: StatblockFilter | None = None,
     bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
@@ -197,6 +203,11 @@ def score(
     require_shield = t.require_flag(require_shield)
     require_flags = t.require_set(require_flags)
     require_no_flags = t.require_set(require_no_flags)
+
+    if isinstance(require_spellcasting, bool) and require_spellcasting:
+        require_spellcasting = CasterType.all()
+
+    require_spellcasting = t.require_set(require_spellcasting)
     require_callback = t.require_val(require_callback)
 
     bonus_roles = t.optional_set(bonus_roles, require_roles)
@@ -281,6 +292,9 @@ def score(
 
     if require_no_flags:
         t.required(all(r not in candidate.flags for r in require_no_flags))
+
+    if require_spellcasting:
+        t.required(candidate.caster_type in require_spellcasting)
 
     if require_callback is not None:
         t.required(require_callback(candidate))

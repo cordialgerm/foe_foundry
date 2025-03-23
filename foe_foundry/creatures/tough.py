@@ -6,7 +6,7 @@ from ..die import Die
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature.warrior import PackTactics
 from ..powers.roles import leader
-from ..powers.themed import cruel, reckless, technique
+from ..powers.themed import cruel, reckless, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -68,6 +68,9 @@ class _CustomWeights(CustomPowerSelection):
             reckless.Toss,
             reckless.RelentlessEndurance,
         ]
+
+        if self.variant is BossVariant:
+            powers += thuggish.ThuggishPowers
 
         if self.variant is BrawlerVariant and p == technique.ExpertBrawler:
             return CustomPowerWeight(4.0, ignore_usual_requirements=True)

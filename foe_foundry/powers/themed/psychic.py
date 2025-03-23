@@ -61,6 +61,7 @@ class _Telekinetic(PsychicPower):
             name="Telekinesis",
             source="5.1SRD Telekinesis",
             power_type=PowerType.Spellcasting,
+            require_cr=6,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

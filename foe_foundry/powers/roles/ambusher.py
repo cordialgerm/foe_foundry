@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -47,9 +49,10 @@ class _StealthySneak(AmbusherPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hide = action_ref("Hide")
         feature = Feature(
             name="Stealthy Sneak",
-            description=f"{stats.selfref.capitalize()} moves up to half its speed without provoking opportunity attacks. It can then attempt to hide.",
+            description=f"{stats.selfref.capitalize()} moves up to half its speed without provoking opportunity attacks. It can then attempt to {hide}.",
             action=ActionType.Action,
             replaces_multiattack=1,
         )

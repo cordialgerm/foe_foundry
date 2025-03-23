@@ -118,6 +118,7 @@ class CreatureTemplate:
     variants: list[CreatureVariant]
     species: list[CreatureSpecies]
     callback: GenerateCallback
+    is_sentient_species: bool = False
 
     def __post_init__(self):
         self.n_variant = len(self.variants)

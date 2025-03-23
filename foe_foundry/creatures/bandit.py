@@ -7,7 +7,7 @@ from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, select_powers
 from ..powers.roles import artillery, leader
-from ..powers.themed import gadget, organized, sneaky, technique
+from ..powers.themed import gadget, organized, sneaky, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -55,7 +55,7 @@ class _CustomPowers(CustomPowerSelection):
             leader.CommandTheAttack,
             organized.FanaticFollowers,
             leader.StayInFormation,
-        ]
+        ] + thuggish.ThuggishPowers
 
         high_cr_powers = [leader.Intimidate]
 

@@ -12,3 +12,8 @@ def creature_ref(creature_name: str) -> str:
 def feature_ref(feature_name: str) -> str:
     key = name_to_key(feature_name)
     return f"<span class='feature feature-{key}'>{feature_name}</span>"
+
+
+def action_ref(action_name: str) -> str:
+    key = name_to_key(action_name)
+    return f"<span class='action action-{key}'>{action_name}</span>"

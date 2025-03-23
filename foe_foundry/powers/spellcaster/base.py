@@ -36,7 +36,7 @@ class _Spellcaster(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_type=PowerType.Spellcasting,
-            source="FoeFoundry",
+            source="Foe Foundry",
             theme=theme,
             power_level=power_level,
             create_date=datetime(2023, 12, 14),
