@@ -4,6 +4,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -64,11 +65,15 @@ class _FlingFilth(GoblinPower):
 
 class _CacklingDetonation(GoblinPower):
     def __init__(self):
+        def require_callback(s: BaseStatblock) -> bool:
+            return MonsterRole.Leader not in s.additional_roles and s.cr < 1
+
         super().__init__(
             name="Cackling Detonation",
             source="Foe Foundry",
-            power_level=MEDIUM_POWER,
-            require_max_cr=1,
+            power_level=LOW_POWER,
+            require_max_cr=0.5,
+            require_callback=require_callback,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -122,14 +127,14 @@ class _BloodCurse(GoblinPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(dpr_proportion=0.8)
+        dmg = stats.target_value(dpr_proportion=0.5)
 
         feature = Feature(
             name="Blood Curse",
             action=ActionType.BonusAction,
             uses=1,
             description=f"{stats.selfref.capitalize()} takes {dmg.description} necrotic damage as it ceremonially cuts itself and curses the blood of a creature it can see within 60 feet. \
-                Whenever {stats.selfref} takes damage, the cursed creature takes half that damage (rounded down) as psychic damage.",
+                After this, whenever {stats.selfref} takes damage, the cursed creature takes half that damage (rounded down) as psychic damage.",
         )
 
         return [feature]

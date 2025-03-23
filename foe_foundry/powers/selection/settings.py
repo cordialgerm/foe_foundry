@@ -8,7 +8,7 @@ from ..power import Power
 class SelectionSettings:
     temperature: float = 1.0
     top_k: int = 40
-    retries: int = 3
+    retries: int = 5
     power_multiplier: float = 1.0
 
     boost_powers: dict[str, float] = field(default_factory=dict)

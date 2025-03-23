@@ -77,6 +77,11 @@ class PowerSelection:
             selected_replaces_multiattack_powers=replaces_multiattack_powers,
         )
 
+    @property
+    def selected_power_keys(self) -> str:
+        keys = sorted([p.key for p in self.selected_powers])
+        return ",".join(keys)
+
     def score(self, target: SelectionTargets) -> SelectionScore:
         score_over_target = (
             (self.selected_power_level - target.power_level_target)

@@ -7,6 +7,7 @@ from ..creature_types import CreatureType
 from ..powers import LOW_POWER, CustomPowerSelection, select_powers
 from ..powers.creature import goblin
 from ..powers.roles import ambusher, artillery, leader, skirmisher
+from ..powers.spellcaster import shaman
 from ..powers.themed import (
     cowardly,
     cursed,
@@ -101,9 +102,10 @@ GoblinShamanVariant = CreatureVariant(
 
 
 class _GoblinPowers(CustomPowerSelection):
-    def __init__(self, variant: CreatureVariant, stats: BaseStatblock):
+    def __init__(self, variant: CreatureVariant, stats: BaseStatblock, cr: float):
         self.variant = variant
         self.stats = stats
+        self.cr = cr
 
         self.lickspittels = [skirmisher.HarassingRetreat] + cowardly.CowardlyPowers
         self.warriors = [
@@ -135,6 +137,11 @@ class _GoblinPowers(CustomPowerSelection):
 
         if variant is GoblinBossVariant:
             self.force = [thuggish.KickTheLickspittle, skirmisher.NimbleEscape]
+        elif variant is GoblinShamanVariant:
+            if cr <= 1:
+                self.force = [shaman.ShamanAdeptPower]
+            else:
+                self.force = [shaman.ShamanPower]
         else:
             self.force = [skirmisher.NimbleEscape]
 
@@ -144,7 +151,9 @@ class _GoblinPowers(CustomPowerSelection):
         if power in self.suppress:
             return CustomPowerWeight(-1, ignore_usual_requirements=True)
         elif power in goblin.GoblinPowers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
+            return CustomPowerWeight(
+                2.0, ignore_usual_requirements=False
+            )  # check requirements
         elif self.variant is GoblinLickspittleVariant and power in self.lickspittels:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
         elif self.variant is GoblinWarriorVariant and power in self.warriors:
@@ -304,7 +313,7 @@ def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_GoblinPowers(variant, stats),
+        custom=_GoblinPowers(variant, stats, cr),
     )
     features += power_features
 

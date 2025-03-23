@@ -103,7 +103,7 @@ class _FaePresence(FeyPower):
 class _BloodContract(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Blood Curse",
+            name="Blood Contract",
             source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
@@ -119,7 +119,7 @@ class _BloodContract(FeyPower):
         dc = stats.difficulty_class
 
         feature = Feature(
-            name="Blood Curse",
+            name="Blood Contract",
             action=ActionType.Action,
             recharge=5,
             description=f"{stats.selfref.capitalize()} curses the blood of its opponents, siphoning their life to heal its its wounds. {stats.selfref.capitalize()} targets up to three creatures it can see within 60 feet of itself. \
