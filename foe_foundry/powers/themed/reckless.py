@@ -162,7 +162,7 @@ class _RecklessFlurry(RecklessPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         attacks = max(3, int(ceil(1.5 * stats.multiattack)))
-        attack_name = stats.attack.name
+        attack_name = stats.attack.display_name
 
         feature = Feature(
             name="Reckless Flurry",

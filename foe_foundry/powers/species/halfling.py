@@ -1,6 +1,9 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.damage import Condition
+from foe_foundry.references import action_ref
+
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -103,11 +106,14 @@ class _HalflingNimbleness(HalflingPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        disengage = action_ref("Disengage")
+        grappled = Condition.Grappled.caption
+        restrained = Condition.Restrained.caption
         feature = Feature(
             name="Halfling Nimbleness",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} takes the Disengage action and ends any Grapped or Restrained conditions on itself.",
+            description=f"{stats.selfref.capitalize()} uses {disengage} and ends any {grappled} or {restrained} conditions on itself.",
         )
         return [feature]
 

@@ -27,49 +27,70 @@ class BaseStatblock:
     name: str
     cr: float
     hp: DieFormula
-    speed: Movement
-    primary_attribute_score: int
-    attributes: Attributes
-    attack: Attack
-    multiattack: int = 1
-    multiattack_benchmark: int = 1
-    multiattack_custom_text: str | None = None
-    primary_damage_type: DamageType = DamageType.Bludgeoning
-    secondary_damage_type: DamageType | None = None
-    difficulty_class_modifier: int = 0
-    recommended_powers_modifier: float = 0
-    size: Size = Size.Medium
+
+    # Meta
     creature_type: CreatureType = CreatureType.Humanoid
-    languages: List[str] = field(default_factory=list)
-    senses: Senses = field(default_factory=Senses)
+    creature_subtype: str | None = None
+    creature_class: str | None = None
+    additional_types: list[CreatureType] = field(default_factory=list)
     role: MonsterRole = MonsterRole.Default
+    additional_roles: list[MonsterRole] = field(default_factory=list)
+
+    # Speed & Size
+    speed: Movement
+    has_unique_movement_manipulation: bool = False
+    size: Size = Size.Medium
+    senses: Senses = field(default_factory=Senses)
+    languages: List[str] = field(default_factory=list)
+
+    # AC
+    ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
+    ac_boost: int = 0
+    uses_shield: bool = False
+
+    # Immunities and Resistances
     damage_vulnerabilities: Set[DamageType] = field(default_factory=set)
     damage_resistances: Set[DamageType] = field(default_factory=set)
     damage_immunities: Set[DamageType] = field(default_factory=set)
     condition_immunities: Set[Condition] = field(default_factory=set)
     nonmagical_resistance: bool = False
     nonmagical_immunity: bool = False
+
+    # Attributes
+    primary_attribute_score: int
+    attributes: Attributes
+    difficulty_class_modifier: int = 0
     difficulty_class_easy: int = field(init=False)
+
+    # Damage
+    attack: Attack
     additional_attacks: List[Attack] = field(default_factory=list)
-    ac_boost: int = 0
-    uses_shield: bool = False
-    ac_templates: List[ArmorClassTemplate] = field(default_factory=list)
-    spells: List[StatblockSpell] = field(default_factory=list)
-    creature_subtype: str | None = None
-    creature_class: str | None = None
     damage_modifier: float = 1.0
     base_attack_damage: float
-    additional_roles: list[MonsterRole] = field(default_factory=list)
-    has_unique_movement_manipulation: bool = False
+    multiattack: int = 1
+    multiattack_benchmark: int = 1
+    multiattack_custom_text: str | None = None
+    primary_damage_type: DamageType = DamageType.Bludgeoning
+    secondary_damage_type: DamageType | None = None
+
+    # Reactions
+    reaction_count: int | str = 1
+
+    # Powers
+    recommended_powers_modifier: float = 0
+    selection_target_args: dict = field(default_factory=dict)
+    flags: set[str] = field(default_factory=set)
+
+    # Spellcasting
+    caster_type: CasterType | None = None
+    spells: List[StatblockSpell] = field(default_factory=list)
+
+    # Legendary
     is_legendary: bool = False
     has_lair: bool = False
     legendary_actions: int = 0
     legendary_resistances: int = 0
     legendary_resistance_damage_taken: int = 0
-    flags: set[str] = field(default_factory=set)
-    caster_type: CasterType | None = None
-    selection_target_args: dict = field(default_factory=dict)
-    reaction_count: int | str = 1
 
     def __post_init__(self):
         mod = (
@@ -188,6 +209,7 @@ class BaseStatblock:
             selection_target_args=self.selection_target_args,
             flags=self.flags.copy(),
             reaction_count=self.reaction_count,
+            additional_types=self.additional_types.copy(),
         )
         return args
 
@@ -512,7 +534,36 @@ class BaseStatblock:
         )
         new_additional_roles.discard(MonsterRole.Default)
 
-        return self.copy(role=primary_role, additional_roles=list(new_additional_roles))
+        return self.copy(
+            role=primary_role, additional_roles=list(sorted(new_additional_roles))
+        )
+
+    def with_types(
+        self,
+        primary_type: CreatureType | None = None,
+        additional_types: CreatureType
+        | set[CreatureType]
+        | list[CreatureType]
+        | None = None,
+    ) -> BaseStatblock:
+        if primary_type is None:
+            primary_type = self.creature_type
+
+        if additional_types is None:
+            additional_types = []
+        elif isinstance(additional_types, CreatureType):
+            additional_types = [additional_types]
+        elif isinstance(additional_types, set):
+            additional_types = list(additional_types)
+
+        new_additional_types = set(
+            self.additional_types.copy() + additional_types + [self.creature_type]
+        )
+
+        return self.copy(
+            creature_type=primary_type,
+            additional_types=list(sorted(new_additional_types)),
+        )
 
     def as_legendary(
         self,

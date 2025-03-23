@@ -1,8 +1,10 @@
+from io import BytesIO
 from typing import cast
 
 import ipywidgets as widgets
 import numpy as np
-from IPython.display import DisplayHandle, display, display_html
+from IPython.display import HTML, DisplayHandle, display
+from IPython.display import Image as IPythonImage
 from PIL import Image
 
 from foe_foundry.creatures import (
@@ -29,15 +31,6 @@ def get_all_power_keys() -> list[str]:
 
 def get_all_power_themes() -> list[str]:
     return sorted({p.theme_key for p in AllPowers if p.theme_key is not None})
-
-
-def display_images(template: CreatureTemplate):
-    if template.image_urls is None:
-        return
-
-    for path in template.image_urls:
-        img = Image.open(path)
-        display(img)
 
 
 def display_stat_builder() -> DisplayHandle | None:
@@ -125,10 +118,6 @@ def display_stat_builder() -> DisplayHandle | None:
         generate_stats()
 
     def generate_stats():
-        output.clear_output()
-
-        template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
-
         template: CreatureTemplate = AllTemplates[cast(int, template_select.index)]
         variant_index = cast(int, variant_select.index)
         _, variant_key = variant_options[variant_index]
@@ -172,9 +161,23 @@ def display_stat_builder() -> DisplayHandle | None:
         ).finalize()
         html = render_html_inline(stats)
 
-        with output:
-            display_html(html, raw=True)
-            display_images(template)
+        output.clear_output(wait=True)
+        output.append_display_data(HTML(data=html))
+        if template.image_urls is not None:
+            for path in template.image_urls:
+                img = Image.open(path)
+
+                if img.height >= img.width and img.height > 500:
+                    new_width = int(500.0 / img.height * img.width)
+                    img.thumbnail((new_width, 500))
+                elif img.width >= img.height and img.width > 500:
+                    new_height = int(500.0 / img.width * img.height)
+                    img.thumbnail((500, new_height))
+
+                io = BytesIO()
+                img.save(io, format="PNG")
+                io.seek(0)
+                output.append_display_data(IPythonImage(data=io.getbuffer()))
 
     render_button.on_click(on_button_clicked)
     random_theme_button.on_click(on_random_theme_button_clicked)
@@ -182,9 +185,8 @@ def display_stat_builder() -> DisplayHandle | None:
 
     update_variant_select()
     update_species_select()
-    output.clear_output()
 
-    return display(
+    display(
         template_select,
         species_select,
         variant_select,

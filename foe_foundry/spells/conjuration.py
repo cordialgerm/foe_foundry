@@ -121,3 +121,17 @@ Web: Spell = Spell(
     description="You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.",
     range="60 feet",
 )
+
+CallLightning: Spell = Spell(
+    name="Call Lightning",
+    level=3,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    upcast=True,
+    concentration=True,
+    description="A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).",
+    range="120 feet",
+    upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+)

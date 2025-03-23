@@ -116,7 +116,9 @@ class _MirrorImage(Tricky):
 
 class _HypnoticPattern(Tricky):
     def __init__(self):
-        super().__init__(name="Hypnotic Pattern", source="SRD5.1 Hypnotic Pattern")
+        super().__init__(
+            name="Hypnotic Pattern", source="SRD5.1 Hypnotic Pattern", require_cr=5
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

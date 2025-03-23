@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
@@ -89,9 +91,10 @@ class _Bloodrage(OrcPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dash = action_ref("Dash")
         feature = Feature(
             name="Bloodrage",
-            description="The orc takes the Dash action as a bonus action and moves directly towards an enemy. The next attack it makes this turn is made with advantage.",
+            description=f"The orc uses {dash} as a bonus action and moves directly towards an enemy. The next attack it makes this turn is made with advantage.",
             action=ActionType.BonusAction,
             uses=1,
         )

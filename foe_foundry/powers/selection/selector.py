@@ -179,27 +179,59 @@ class PowerSelector:
                 for p in self.selection.selected_powers
                 if p.power_level > MEDIUM_POWER
             ):
-                multiplier *= 1.25
+                multiplier *= 1.1
 
             # if the creature doesn't yet have any Creature powers then make them more attractive
+            if power.power_type == PowerType.Creature and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Creature
+            ):
+                multiplier *= 1.1
+
+            # if the creature doesn't yet have any Creature Type powers then make them more attractive
             if power.power_type == PowerType.CreatureType and not any(
                 p
                 for p in self.selection.selected_powers
                 if p.power_type == PowerType.CreatureType
             ):
-                multiplier *= 1.25
+                multiplier *= 1.1
 
             # if the creature doesn't yet have any Theme powers then make them more attractive
+            if power.power_type == PowerType.Theme and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Theme
+            ):
+                multiplier *= 1.1
+
+            # if the creature doesn't yet have any Role powers then make them more attractive
             if power.power_type == PowerType.Role and not any(
                 p
                 for p in self.selection.selected_powers
                 if p.power_type == PowerType.Role
             ):
-                multiplier *= 1.25
+                multiplier *= 1.1
+
+            # if the creature doesn't yet have any Species powers then make them more attractive
+            if power.power_type == PowerType.Species and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Species
+            ):
+                multiplier *= 1.1
+
+            # if the creature doesn't yet have any Spellcasting powers then make them more attractive
+            if power.power_type == PowerType.Spellcasting and not any(
+                p
+                for p in self.selection.selected_powers
+                if p.power_type == PowerType.Spellcasting
+            ):
+                multiplier *= 1.1
 
             # if the creature already has a power of this theme then make it less attractive
             if flags.theme_flag(power.theme) in self.stats.flags:
-                multiplier *= 0.5
+                multiplier *= 0.85
 
             # if feature would cause us to go above target then make it less attractive
             # don't eliminate it entirely because it might lead to total infeasibility
@@ -326,18 +358,28 @@ def select_powers(
     all_results: List[BaseStatblock] = []
     all_scores: List[float] = []
     all_powers: List[Set[Power]] = []
+    all_power_keys: Set[str] = set()
     selectors = []
 
     # try a couple of times and choose the best result
-    for _ in range(settings.retries):
+    for _ in range(100):
         selector = PowerSelector(
             targets=targets, rng=rng, stats=stats, custom=custom, settings=settings
         )
         selector.select_powers()
+
+        # if we've already seen this exact collection of powers then skip
+        selection_keys = selector.selection.selected_power_keys
+        if selection_keys in all_power_keys:
+            continue
+
         selectors.append(selector)
         all_results.append(selector.stats)
         all_scores.append(selector.score.score)
         all_powers.append(selector.selection.selected_powers)
+
+        if len(selectors) >= settings.retries:
+            break
 
     indx = np.argmax(all_scores)
     new_stats = all_results[indx]

@@ -4,6 +4,8 @@ from typing import List
 
 from num2words import num2words
 
+from foe_foundry.references import action_ref
+
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType
@@ -260,11 +262,12 @@ class _Overclock(ConstructPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dash = action_ref("Dash")
         feature = Feature(
             name="Overclock",
             recharge=5,
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} takes the Dash action.",
+            description=f"{stats.selfref.capitalize()} uses {dash}.",
         )
         return [feature]
 

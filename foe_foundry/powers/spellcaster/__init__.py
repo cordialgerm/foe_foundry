@@ -16,6 +16,7 @@ from . import (
     necromancer,
     oath,
     psionic,
+    shaman,
     transmuter,
 )
 from .base import WizardPower  # noqa
@@ -35,5 +36,6 @@ SpellcasterPowers: List[Power] = (
     + oath.OathCasters()
     + necromancer.NecromancerWizards()
     + psionic.PsionicCasters()
+    + shaman.ShamanPowers
     + transmuter.TransmutationWizards()
 )

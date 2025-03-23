@@ -1,5 +1,7 @@
 from typing import Iterable
 
+from foe_foundry.references import action_ref
+
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...powers import flags
@@ -63,10 +65,11 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
         )
 
     if len(sneaky_roles.intersection(stats.additional_roles)):
+        hide = action_ref("Hide")
         yield LegendaryActionScore(
             feature=Feature(
                 name="Sneak",
-                description=f"{stats.selfref.capitalize()} moves up to half its movement and hides.",
+                description=f"{stats.selfref.capitalize()} moves up to half its movement and uses {hide}.",
                 action=ActionType.Legendary,
             ),
             types={LegendaryActionType.move},

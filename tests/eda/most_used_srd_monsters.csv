@@ -1,0 +1,31 @@
+Name,Type,CR,Notes,Sources,In SRD,Implemented
+Goblin,Humanoid (goblinoid),0.25,Common low-level enemy,"LMoP, Icespire, HotDQ",True,False
+Skeleton,Undead,0.25,"Classic undead, dungeon filler","LMoP, CoS, OotA",True,True
+Zombie,Undead,0.25,"Classic undead, slow but tough","CoS, OotA, ToA",True,True
+Bandit,Humanoid (any race),0.125,Common humanoid threat,"LMoP, Icespire, CoS",True,True
+Wolf,Beast,0.25,Wilderness encounters,"LMoP, Icespire",True,False
+Kobold,Humanoid (kobold),0.125,"Traps, group tactics","LMoP, Icespire",True,True
+Orc,Humanoid (orc),0.5,Aggressive melee humanoid,"LMoP, HotDQ",True,False
+Giant Rat,Beast,0.125,Sewer/dungeon creature,"LMoP, OotA",True,False
+Giant Spider,Beast,1.0,Creepy ambusher,"LMoP, CoS",True,False
+Scout,Humanoid (any race),0.5,Ranged humanoid enemy,"HotDQ, Icespire",True,True
+Ogre,Giant,2.0,Strong melee brute,"LMoP, OotA, HotDQ",True,False
+Ghoul,Undead,1.0,Paralysis and fear,"CoS, OotA",True,False
+Wight,Undead,3.0,"Drains life, leads undead","CoS, OotA",True,False
+Mimic,Monstrosity,2.0,"Trap creature, classic twist","LMoP, CoS",True,False
+Troll,Giant,5.0,"Regeneration, mid-level boss","HotDQ, OotA",True,False
+Gelatinous Cube,Ooze,2.0,Transparent dungeon hazard,"OotA, Dungeon of the Mad Mage",True,False
+Giant Scorpion,Beast,3.0,High-damage beast,"ToA, OotA",True,False
+Quasit,Fiend (demon),1.0,Demonic familiar or spy,"CoS, OotA",True,False
+Shadow,Undead,0.5,"Strength drain, hard to kill","CoS, OotA",True,False
+Bugbear,Humanoid (goblinoid),1.0,"Stealthy, hard-hitting goblinoid","LMoP, Icespire",True,False
+Lich,Undead,21.0,Arcane undead boss,"OotA, Dungeon of the Mad Mage",True,False
+Young Red Dragon,Dragon,10.0,Mid-tier dragon boss,"HotDQ, Icespire",True,False
+Vampire Spawn,Undead,5.0,"Strahd’s minions, elite undead",CoS,True,False
+Air Elemental,Elemental,5.0,Fast and disruptive,"ToA, OotA",True,False
+Fire Elemental,Elemental,5.0,High fire damage,"ToA, OotA",True,False
+Giant Ape,Beast,7.0,"High-CR beast, polymorph target","ToA, CoS",True,False
+Wraith,Undead,5.0,Powerful incorporeal undead,"CoS, OotA",True,False
+Giant Crocodile,Beast,5.0,Aquatic brute,ToA,True,False
+Marilith,Fiend (demon),16.0,Iconic multi-armed demon,OotA,True,False
+Balor,Fiend (demon),20.0,Demonic final boss,OotA,True,True

@@ -44,7 +44,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 19),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=[
@@ -84,7 +84,7 @@ class _TongueTwister(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=CreatureType.Fey,
@@ -128,7 +128,7 @@ class _HeartTremors(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 attack_names=["-", weapon.Staff, natural.Slam, spell.Shock],
@@ -156,7 +156,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Psychic,
@@ -186,7 +186,7 @@ class _Nervefire(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Poison,
@@ -216,7 +216,7 @@ class _TiringAttack(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             score_args=dict(
                 require_roles=MonsterRole.Controller,

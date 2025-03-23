@@ -13,6 +13,7 @@ from . import (
     charm,
     classes,
     clever,
+    cowardly,
     cruel,
     cursed,
     deathly,
@@ -37,6 +38,7 @@ from . import (
     technique,
     teleportation,
     temporal,
+    thuggish,
     tough,
     trap,
     tricky,
@@ -55,6 +57,7 @@ ThemedPowers: List[Power] = (
     + clever.CleverPowers
     + cruel.CruelPowers
     + cursed.CursedPowers
+    + cowardly.CowardlyPowers
     + deathly.DeathlyPowers
     + diseased.DiseasedPowers
     + domineering.DomineeringPowers
@@ -78,6 +81,7 @@ ThemedPowers: List[Power] = (
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
+    + thuggish.ThuggishPowers
     + tough.ToughPowers
     + trap.TrapPowers
     + tricky.TrickyPowers

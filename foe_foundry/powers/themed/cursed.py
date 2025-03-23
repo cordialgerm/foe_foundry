@@ -4,6 +4,8 @@ from typing import List
 
 from num2words import num2words
 
+from foe_foundry.references import action_ref
+
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
@@ -208,11 +210,12 @@ class _ReplaceShadow(CursedPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        hide = action_ref("Hide")
 
         feature1 = Feature(
             name="Shadow Stealth",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} Hides, even if just lightly obscured by dim light or darkness",
+            description=f"{stats.selfref.capitalize()} uses {hide}, even if just lightly obscured by dim light or darkness",
         )
 
         feature2 = Feature(

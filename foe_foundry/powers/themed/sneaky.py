@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
@@ -104,9 +106,10 @@ class _Vanish(SneakyPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hide = action_ref("hide")
         feature = Feature(
             name="Vanish",
-            description=f"{stats.selfref.capitalize()} can use the Hide action as a bonus action even if only lightly obscured.",
+            description=f"{stats.selfref.capitalize()} can {hide} as a bonus action even if only lightly obscured.",
             action=ActionType.BonusAction,
         )
         return [feature]
