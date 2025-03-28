@@ -2,8 +2,6 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-import numpy as np
-
 from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, Condition, DamageType, Dazed, Frozen, Shocked
 from ...die import Die, DieFormula
@@ -388,8 +386,7 @@ class _ElementalReplication(ElementalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        # TODO - remove randomness
-        rng = np.random.default_rng(20210518)
+        rng = stats.create_rng("elemental replication")
         _, _, description = summoning.determine_summon_formula(
             summoner=stats.secondary_damage_type,
             summon_cr_target=stats.cr / 4.0,

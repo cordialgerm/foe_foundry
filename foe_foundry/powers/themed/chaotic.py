@@ -1,7 +1,6 @@
 from datetime import datetime
 from typing import List
 
-import numpy as np
 from numpy.random import Generator
 
 from foe_foundry.references import Token
@@ -93,7 +92,7 @@ class _EldritchBeacon(ChaoticPower):
         )
 
     def can_summon(self, c: BaseStatblock) -> bool:
-        return self._summon_formula(c, np.random.default_rng(20210518)) is not None
+        return self._summon_formula(c, c.create_rng("eldritch beacon")) is not None
 
     def _summon_formula(self, stats: BaseStatblock, rng: Generator) -> str | None:
         try:
@@ -106,7 +105,7 @@ class _EldritchBeacon(ChaoticPower):
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        description = self._summon_formula(stats, np.random.default_rng(20210518))
+        description = self._summon_formula(stats, stats.create_rng("eldritch beacon"))
         beacon = Token(
             name="Eldritch Beacon", dc=stats.difficulty_class_token, charges=3
         )
@@ -121,6 +120,12 @@ class _EldritchBeacon(ChaoticPower):
                 Each turn that the beacon is active, on initiative count 0, {description}",
         )
         return [feature]
+
+
+# TODO
+# Chaotic Power
+# Anarchic Pulse – Releases bursts of raw chaos energy that randomly alters ongoing magical effects or even the physical battlefield.
+# Sigil of Unmaking – Etches a symbol in the air or ground that causes structures to crumble, weapons to crack, or runes to burn away.
 
 
 ChaoticSpace: Power = _ChaoticSpace()

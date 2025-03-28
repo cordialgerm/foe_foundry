@@ -1,8 +1,6 @@
 from datetime import datetime
 from typing import List
 
-import numpy as np
-
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType
@@ -130,8 +128,7 @@ class _DragonsGreed(DraconicPower):
 
 
 def _draconic_minions(stats: BaseStatblock) -> str | None:
-    # TODO - remove the randomness here
-    rng = np.random.default_rng(20220518)
+    rng = stats.create_rng("draconic minions")
     desired_summon_cr = stats.cr / 2.5
     damage_type = stats.secondary_damage_type
     if damage_type is None:

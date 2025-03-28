@@ -1,7 +1,5 @@
 from typing import List
 
-import numpy as np
-
 from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
@@ -71,8 +69,7 @@ class _DeathKnight(PowerWithStandardScoring):
                 Each target must make a DC {dc} Charisma save or be affected as by the *Bane* spell (save ends at end of turn).",
         )
 
-        # TODO - remove rng
-        rng = np.random.default_rng(20210518)
+        rng = stats.create_rng("death knight summons")
         _, _, description = determine_summon_formula(
             summoner=CreatureType.Undead, summon_cr_target=cr_target, rng=rng
         )

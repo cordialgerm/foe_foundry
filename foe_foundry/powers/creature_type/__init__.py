@@ -6,6 +6,8 @@ from . import (
     beast,
     celestial,
     construct,
+    demon,
+    devil,
     dragon,
     elemental,
     fey,
@@ -29,4 +31,6 @@ CreatureTypePowers: List[Power] = (
     + ooze.OozePowers
     + plant.PlantPowers
     + undead.UndeadPowers
+    + devil.DevilPowers
+    + demon.DemonPowers
 )

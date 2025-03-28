@@ -44,6 +44,18 @@ Command: Spell = Spell(
     range="60 feet",
 )
 
+Confusion: Spell = Spell(
+    name="Confusion",
+    level=4,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=True,
+    concentration=True,
+    description="TODO",
+)
+
 DominateMonster: Spell = Spell(
     name="Dominate Monster",
     level=8,

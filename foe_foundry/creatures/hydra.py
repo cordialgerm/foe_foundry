@@ -3,17 +3,20 @@ from ..attack_template import natural
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..powers import (
+    LOW_POWER,
+    MEDIUM_POWER,
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
     select_powers,
 )
 from ..powers.creature import hydra
-from ..powers.creature_type import beast
+from ..powers.creature_type import beast, demon
 from ..powers.themed import (
     aquatic,
     breath,
     cruel,
+    cursed,
     diseased,
     fearsome,
     monstrous,
@@ -37,6 +40,11 @@ HydraVariant = CreatureVariant(
     description="Hydras are massive, multi-headed serpents that dwell in swamps and marshes. They are fearsome predators, capable of regenerating lost heads and limbs. Their blood is a potent poison, and their breath can melt flesh and bone.",
     suggested_crs=[SuggestedCr(name="Hydra", cr=8, srd_creatures=["Hydra"])],
 )
+HydraFoulbloodVariant = CreatureVariant(
+    name="Foulblood Hydra",
+    description="Foulblood Hydras are born of a fell curse that blends foul demonic blood with the hydra's own. Their blood is a viscous, black ichor that can corrupt the land around them.",
+    suggested_crs=[SuggestedCr(name="Foulblood Hydra", cr=12, is_legendary=True)],
+)
 
 
 class _HydraWeights(CustomPowerSelection):
@@ -45,7 +53,16 @@ class _HydraWeights(CustomPowerSelection):
         self.variant = variant
 
     def force_powers(self) -> list[Power]:
-        return [hydra.HydraHeads]
+        if self.variant is HydraFoulbloodVariant:
+            return [hydra.HydraHeads, demon.BlackBlood]
+        else:
+            return [hydra.HydraHeads]
+
+    def power_delta(self) -> float:
+        if self.variant is HydraFoulbloodVariant:
+            return -1 * demon.BlackBlood.power_level - MEDIUM_POWER
+        else:
+            return -1 * LOW_POWER
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
         powers = [
@@ -61,18 +78,27 @@ class _HydraWeights(CustomPowerSelection):
             reckless.Toss,
             serpentine.SerpentineHiss,
         ]
-        moderate_powers = diseased.DiseasedPowers
         suppress = [
             reckless.RecklessFlurry  # don't work well with many attack
         ] + aquatic.AquaticPowers  # not exciting
+
+        if self.variant is HydraFoulbloodVariant:
+            powers += [
+                cursed.VoidSiphon,
+                cursed.RejectDivinity,
+                cursed.CursedWound,
+                demon.EchoOfRage,
+                demon.FeastOfSouls,
+            ]
+
         if p in suppress:
             return CustomPowerWeight(-1)
         elif p == breath.FleshMeltingBreath:
             return CustomPowerWeight(3.5, ignore_usual_requirements=True)
         elif p in powers:
             return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in moderate_powers:
-            return CustomPowerWeight(1.1, ignore_usual_requirements=True)
+        elif p in diseased.DiseasedPowers:
+            return CustomPowerWeight(1.5, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.5, ignore_usual_requirements=False)
 
@@ -82,6 +108,8 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
     cr = settings.cr
     variant = settings.variant
     rng = settings.rng
+    is_legendary = settings.is_legendary
+
     # STATS
     stats = base_stats(
         name=name,
@@ -106,6 +134,10 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     stats = stats.copy(speed=stats.speed.delta(10).grant_swim())
+
+    # LEGENDARY
+    if is_legendary:
+        stats = stats.as_legendary()
 
     # ARMOR CLASS
     stats = stats.add_ac_template(NaturalArmor)
@@ -172,7 +204,7 @@ HydraTemplate: CreatureTemplate = CreatureTemplate(
     description="Hydras are massive, multi-headed serpents that dwell in swamps and marshes. They are fearsome predators, capable of regenerating lost heads and limbs. Their blood is a potent poison, and their breath can melt flesh and bone.",
     environments=["Coastal", "Swamp"],
     treasure=[],
-    variants=[HydraVariant],
+    variants=[HydraVariant, HydraFoulbloodVariant],
     species=[],
     callback=generate_hydra,
 )
