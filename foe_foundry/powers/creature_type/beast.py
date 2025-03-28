@@ -1,8 +1,6 @@
 from datetime import datetime
 from typing import List
 
-import numpy as np
-
 from foe_foundry.references import action_ref
 
 from ...attack_template import natural as natural_attacks
@@ -188,10 +186,8 @@ class _Packlord(BeastPower):
         else:
             options = summoning.LandBeasts
 
-        # TODO - replace randomness here
-        rng = np.random.default_rng(20210518)
         _, _, description = summoning.determine_summon_formula(
-            options, stats.cr / 3.5, rng, max_quantity=10
+            options, stats.cr / 3.5, stats.create_rng(), max_quantity=10
         )
 
         feature = Feature(

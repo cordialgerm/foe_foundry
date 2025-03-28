@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import hashlib
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Set
+
+import numpy as np
 
 from ..ac import ArmorClassTemplate
 from ..attributes import Attributes, Skills
@@ -711,6 +714,12 @@ class BaseStatblock:
         new_flags = self.flags.copy()
         new_flags.update(flags)
         return self.copy(flags=new_flags)
+
+    def create_rng(self, salt: str = "") -> np.random.Generator:
+        hash_key = self.name + salt
+        bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
+        random_state = int.from_bytes(bytes, byteorder="little")
+        return np.random.default_rng(seed=random_state)
 
 
 def _spell_list(all_spells: List[StatblockSpell], uses: int | None) -> str | None:

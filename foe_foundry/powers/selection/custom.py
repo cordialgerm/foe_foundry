@@ -21,3 +21,6 @@ class CustomPowerSelection:
 
     def force_powers(self) -> list[Power]:
         return []
+
+    def power_delta(self) -> float:
+        return 0.0

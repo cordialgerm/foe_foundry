@@ -1,7 +1,5 @@
 from typing import List
 
-import numpy as np
-
 from ...features import ActionType, Feature
 from ...spells import conjuration, evocation
 from ...statblocks import BaseStatblock
@@ -43,7 +41,7 @@ class _ConjurationWizard(WizardPower):
         creature, _, description = determine_summon_formula(
             summoner=Elementals,
             summon_cr_target=stats.cr / 2,
-            rng=np.random.default_rng(20210518),
+            rng=stats.create_rng("conjuration wizard"),
             allow_generic_summons=False,
             max_quantity=4,
         )

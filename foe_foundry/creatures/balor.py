@@ -4,7 +4,8 @@ from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
 from ..movement import Movement
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature_type import fiend
+from ..powers.creature import balor
+from ..powers.creature_type import demon, fiend
 from ..powers.roles import bruiser, leader
 from ..powers.themed import (
     anti_magic,
@@ -43,7 +44,7 @@ BalorVariant = CreatureVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _BalorWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -54,11 +55,10 @@ class _CustomWeights(CustomPowerSelection):
                 0, ignore_usual_requirements=True
             )  # already forced
 
-        powers = set(fiend.FiendishPowers)
+        powers = set(fiend.FiendishPowers) | set(demon.DemonPowers)
         powers.discard(fiend.FiendishTeleportation)  # forced
-        powers.discard(fiend.FiendishBite)
-        powers.discard(fiend.DevilsSight)
-        powers.discard(fiend.FieryTeleportation)
+        powers.discard(fiend.FieryTeleportation)  # already have teleportation
+        powers.discard(demon.DemonicBite)  # already have multiple different attacks
 
         powers.add(leader.Intimidate)
         powers.add(bruiser.CleavingBlows)
@@ -94,7 +94,7 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(0.5, ignore_usual_requirements=False)
 
     def force_powers(self) -> list[Power]:
-        return [fiend.FiendishTeleportation, tough.MagicResistance, fiend.FlameWhip]
+        return [fiend.FiendishTeleportation, tough.MagicResistance, balor.FlameWhip]
 
 
 def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -179,7 +179,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_BalorWeights(stats, variant),
     )
     features += power_features
 

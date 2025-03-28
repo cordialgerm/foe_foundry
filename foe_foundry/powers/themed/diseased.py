@@ -10,6 +10,7 @@ from ...damage import Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -34,8 +35,9 @@ class DiseasePower(PowerWithStandardScoring):
                     CreatureType.Undead,
                     CreatureType.Fiend,
                 ],
-                bonus_damage=DamageType.Poison,
+                bonus_damage=[DamageType.Poison, DamageType.Acid],
                 require_cr=2,
+                require_no_flags=flags.DISEASE,
                 attack_names=[
                     "-",
                     natural.Bite,
@@ -54,6 +56,7 @@ class DiseasePower(PowerWithStandardScoring):
         stats = super().modify_stats_inner(stats)
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)
+        stats = stats.with_flags(flags.DISEASE)
         return stats
 
 

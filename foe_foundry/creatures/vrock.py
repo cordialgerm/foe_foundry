@@ -5,7 +5,7 @@ from ..damage import Condition, DamageType
 from ..movement import Movement
 from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
 from ..powers.creature import vrock
-from ..powers.creature_type import fiend
+from ..powers.creature_type import demon
 from ..powers.roles import bruiser, skirmisher
 from ..powers.themed import (
     bestial,
@@ -61,18 +61,14 @@ class _VrockWeights(CustomPowerSelection):
             fearsome.NightmarishVisions,
             bruiser.Rend,
             skirmisher.HarassingRetreat,
-            fiend.FiendishSummons,
-            fiend.FeastOfSouls,
         ]
 
-        suppress = [fiend.TemptingOffer]
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif p in powers:
+        if p in powers:
             return CustomPowerWeight(3.0, ignore_usual_requirements=True)
         elif p in secondary_powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
+        elif p in demon.DemonPowers:
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.25, ignore_usual_requirements=False)
 

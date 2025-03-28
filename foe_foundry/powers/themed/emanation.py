@@ -128,7 +128,7 @@ class _SummonersRift(EmanationPower):
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        description = self._summon_formula(stats, np.random.default_rng(20210518))
+        description = self._summon_formula(stats, stats.create_rng("summoners rift"))
 
         rift = Token(name="Summoner's Rift", dc=stats.difficulty_class_token, charges=2)
 
@@ -249,7 +249,7 @@ class _ShadowRift(EmanationPower):
             return None
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        description = self._summon_formula(stats, np.random.default_rng(20210518))
+        description = self._summon_formula(stats, stats.create_rng("shadow rift"))
 
         rift = Token(name="Shadow Rift", dc=stats.difficulty_class_token, charges=2)
 

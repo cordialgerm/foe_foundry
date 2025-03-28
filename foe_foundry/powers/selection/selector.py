@@ -345,7 +345,11 @@ def select_powers(
 
     rng = rng_instance(rng)
 
-    power_level_target = settings.power_multiplier * stats.recommended_powers
+    power_delta = 0 if custom is None else custom.power_delta()
+
+    power_level_target = settings.power_multiplier * (
+        stats.recommended_powers + power_delta
+    )
     power_level_max = power_level_target + 0.5
 
     selection_args: dict = (

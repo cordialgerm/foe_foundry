@@ -1,20 +1,16 @@
 from datetime import datetime
 from typing import List
 
-import numpy as np
-
-from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, Condition, DamageType, conditions
+from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
-from ...spells import CasterType, enchantment, evocation
+from ...spells import CasterType, enchantment
 from ...statblocks import BaseStatblock
-from ...utils import easy_multiple_of_five, summoning
+from ...utils import easy_multiple_of_five
 from .. import flags
 from ..power import (
     HIGH_POWER,
-    LOW_POWER,
     MEDIUM_POWER,
     Power,
     PowerType,
@@ -68,25 +64,6 @@ class _CallOfTheStyx(FiendishPower):
                 If the creature fails by 5 or more, it is also {frozen.caption}. On a success, a creature takes half as much damage and suffers no other effects. {frozen.description_3rd}.",
         )
 
-        return [feature]
-
-
-class _FeastOfSouls(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Feast of Souls",
-            source="Foe Foundry",
-            create_date=datetime(2023, 11, 21),
-            power_level=LOW_POWER,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        temphp = easy_multiple_of_five(0.1 * stats.hp.average)
-        feature = Feature(
-            name="Feast of Souls",
-            action=ActionType.Reaction,
-            description=f"Whenever a creature dies within 120 feet of {stats.selfref} it may choose to gain {temphp} temporary hitpoints, recharge an ability, or regain an expended usage of an ability.",
-        )
         return [feature]
 
 
@@ -169,184 +146,14 @@ class _FiendishTeleporation(FiendishPower):
         return [feature]
 
 
-class _WallOfFire(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Wall of Fire",
-            source="SRD5.1 Wall of Fire",
-            require_cr=5,
-            bonus_damage=DamageType.Fire,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        return []
-
-    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        if stats.cr <= 7:
-            uses = 1
-            notes = None
-        elif stats.cr <= 11:
-            uses = 1
-            notes = "no concentration"
-        else:
-            uses = 3
-            notes = "no concentration"
-
-        spell = evocation.WallOfFire.for_statblock(uses=uses, notes=notes)
-
-        stats = stats.grant_spellcasting(CasterType.Innate)
-        return stats.add_spell(spell)
-
-
-class _FiendishBite(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Fiendish Bite",
-            source="Foe Foundry",
-            attack_names=natural_attacks.Bite,
-            bonus_damage=DamageType.Poison,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        return []
-
-    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        dc = stats.difficulty_class
-        poisoned = Condition.Poisoned
-
-        def customize(a: Attack) -> Attack:
-            return a.split_damage(DamageType.Poison, split_ratio=0.9)
-
-        stats = stats.add_attack(
-            scalar=1.4,
-            damage_type=DamageType.Piercing,
-            name="Fiendish Bite",
-            die=Die.d6,
-            attack_type=AttackType.MeleeNatural,
-            additional_description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {poisoned.caption} for 1 minute (save ends at end of turn).",
-            callback=customize,
-        )
-
-        return stats
-
-
-class _FiendishSummons(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Fiendish Summons",
-            source="Foe Foundry",
-            power_level=HIGH_POWER,
-            require_cr=3,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        # TODO - remove randomness
-        rng = np.random.default_rng(20210518)
-        _, _, description = summoning.determine_summon_formula(
-            summoner=summoning.Fiends, summon_cr_target=stats.cr / 2.5, rng=rng
-        )
-
-        feature = Feature(
-            name="Fiendish Summons",
-            action=ActionType.Action,
-            uses=1,
-            replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} summons forth additional fiendish allies. {description}",
-        )
-
-        return [feature]
-
-
-class _TemptingOffer(FiendishPower):
-    def __init__(self):
-        super().__init__(name="Tempting Offer", source="Foe Foundry", require_cr=3)
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
-        exhaustion = Condition.Exhaustion
-        feature = Feature(
-            name="Tempting Offer",
-            action=ActionType.Action,
-            replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} makes a tempting offer to a creature that can hear it within 60 feet. \
-                That creature must make a DC {dc} Wisdom saving throw. On a failure, the creature gains a level of {exhaustion.caption}. \
-                The creature may instead accept the offer. In doing so, it loses all levels of exhaustion gained in this way but is contractually bound to the offer",
-        )
-        return [feature]
-
-
-class _DevilsSight(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Devil's Sight", source="Foe Foundry", bonus_damage=DamageType.Fire
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        level = 2 if stats.cr <= 5 else 4
-
-        devils_sight = Feature(
-            name="Devil's Sight",
-            action=ActionType.Feature,
-            description=f"Magical darkness doesn't impede {stats.selfref}'s darkvision, and it can see through Hellish Darkness.",
-        )
-
-        darkness = Feature(
-            name="Hellish Darkness",
-            action=ActionType.BonusAction,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} causes shadowy black flames to fill a 15-foot radius sphere with obscuring darkness centered at a point within 60 feet that {stats.selfref} can see. \
-                The darkness spreads around corners. Creatures without Devil's Sight can't see through this darkness and nonmagical light can't illuminate it. \
-                If any of this spell's area overlaps with an area of light created by a spell of level {level} or lower, the spell that created the light is dispelled. \
-                Creatures of {stats.selfref}'s choice lose any resistance to fire damage while in the darkness, and immunity to fire damage is instead treated as resistance to fire damage.",
-        )
-
-        return [devils_sight, darkness]
-
-
-class _FlameWhip(FiendishPower):
-    def __init__(self):
-        super().__init__(
-            name="Flame Whip", source="Foe Foundry", create_date=datetime(2025, 3, 3)
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.3 if stats.multiattack >= 2 else 0.8)
-        dc = stats.difficulty_class
-        prone = Condition.Prone
-
-        feature = Feature(
-            name="Flame Whip",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} wraps a fiery whip around a creature within 30 feet. It must make a DC {dc} Dexterity save. \
-                On a failure, it takes {dmg.description} fire damage and is pulled up to 30 feet closer to {stats.selfref} and is knocked {prone.caption}. On a success, it takes half damage instead.",
-        )
-
-        return [feature]
-
-
 CallOfTheStyx: Power = _CallOfTheStyx()
-DevilsSight: Power = _DevilsSight()
-FeastOfSouls: Power = _FeastOfSouls()
-FiendishBite: Power = _FiendishBite()
 FiendishCackle: Power = _FiendishCackle()
-FiendishSummons: Power = _FiendishSummons()
 FieryTeleportation: Power = _FieryTeleporation()
 FiendishTeleportation: Power = _FiendishTeleporation()
-FlameWhip: Power = _FlameWhip()
-TemptingOffer: Power = _TemptingOffer()
-WallOfFire: Power = _WallOfFire()
 
 FiendishPowers = [
     CallOfTheStyx,
-    DevilsSight,
-    FeastOfSouls,
-    FiendishBite,
     FiendishCackle,
-    FiendishSummons,
     FiendishTeleportation,
     FieryTeleportation,
-    FlameWhip,
-    TemptingOffer,
-    WallOfFire,
 ]
