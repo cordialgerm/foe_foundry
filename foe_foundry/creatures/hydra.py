@@ -132,6 +132,9 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
         creature_class="Hydra",
         senses=stats.senses.copy(darkvision=60),
     )
+    stats = stats.with_types(
+        primary_type=CreatureType.Monstrosity, additional_types=CreatureType.Fiend
+    )
 
     stats = stats.copy(speed=stats.speed.delta(10).grant_swim())
 
