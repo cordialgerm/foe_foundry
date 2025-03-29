@@ -199,6 +199,7 @@ class _Desecration(DemonPower):
             name="Desecration",
             uses=max(1, round(stats.attributes.proficiency / 2)),
             action=ActionType.Action,
+            creates_token=True,
             description=f"{stats.selfref.capitalize()} desecrates the ground it stands upon, creating a {token.caption}. \
                 Within 30 feet of the Token, any creature that attempts to speak or use any spell or ability that requires a verbal component suffers {dmg.description} necrotic damage \
                 unless the creature speaks or incants in Abyssal. Additionally, creatures within the affected area cannot regain",

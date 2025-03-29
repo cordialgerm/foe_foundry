@@ -15,7 +15,7 @@ def attack(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
     yield LegendaryActionScore(
         feature=Feature(
             name="Attack",
-            description=f"{stats.selfref.title()} makes a {attack_names} attack.",
+            description=f"{stats.selfref.capitalize()} makes a {attack_names} attack.",
             action=ActionType.Legendary,
         ),
         types={LegendaryActionType.attack},

@@ -96,32 +96,6 @@ class _StygianBurst(UndeadPower):
         return [feature]
 
 
-class _Frostbite(UndeadPower):
-    def __init__(self):
-        super().__init__(
-            name="Frostbite",
-            source="Foe Foundry",
-            bonus_damage=DamageType.Cold,
-            require_callback=not_burning_undead,
-            require_cr=2,
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
-        dmg = stats.target_value(1.5 * min(stats.multiattack, 2), force_die=Die.d8)
-        frozen = Frozen(dc=dc)
-
-        feature = Feature(
-            name="Frostbite",
-            action=ActionType.Action,
-            replaces_multiattack=2,
-            recharge=5,
-            description=f"{stats.selfref.capitalize()} causes numbing frost to form on one creature within 60 feet. The target must make a DC {dc} Constitution saving throw. \
-                On a failure, it suffers {dmg.description} cold damage and is {frozen}. On a success, it suffers half damage instead.",
-        )
-        return [feature]
-
-
 class _SoulChill(UndeadPower):
     def __init__(self):
         super().__init__(
@@ -178,7 +152,6 @@ class _AntithesisOfLife(UndeadPower):
 
 
 AntithesisOfLife: Power = _AntithesisOfLife()
-Frostbite: Power = _Frostbite()
 SoulChill: Power = _SoulChill()
 SoulTether: Power = _SoulTether()
 StenchOfDeath: Power = _StenchOfDeath()
@@ -187,7 +160,6 @@ UndeadFortitude: Power = _UndeadFortitude()
 
 UndeadPowers: List[Power] = [
     AntithesisOfLife,
-    Frostbite,
     SoulChill,
     SoulTether,
     StenchOfDeath,
