@@ -24,7 +24,7 @@ class _WolfPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source="Foe Foundry",
-            theme="gowolfrgon",
+            theme="wolf",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 28),
