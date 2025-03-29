@@ -14,7 +14,7 @@ def special(
         yield LegendaryActionScore(
             feature=Feature(
                 name="Spellcasting",
-                description=f"{stats.selfref.title()} uses Spellcasting. It can't take this action again until the start of its next turn.",
+                description=f"{stats.selfref.capitalize()} uses Spellcasting. It can't take this action again until the start of its next turn.",
                 action=ActionType.Legendary,
             ),
             types={LegendaryActionType.special},
@@ -42,7 +42,7 @@ def special(
             feature=Feature(
                 name=name,
                 action=ActionType.Legendary,
-                description=f"{stats.selfref.title()} {use_text} {recharge_text}. It can't take this action again until the start of its next turn.",
+                description=f"{stats.selfref.capitalize()} {use_text} {recharge_text}. It can't take this action again until the start of its next turn.",
             ),
             types={LegendaryActionType.special},
             score=2,
@@ -52,9 +52,9 @@ def special(
     limited_uses = [f for f in features if f.action == ActionType.Action and f.uses]
     if len(limited_uses):
         limited_uses_text = (
-            f"{stats.selfref.title()} uses {limited_uses[0].name}"
+            f"{stats.selfref.capitalize()} uses {limited_uses[0].name}"
             if len(limited_uses) == 1
-            else f"{stats.selfref.title()} uses one of its limited use abilities"
+            else f"{stats.selfref.capitalize()} uses one of its limited use abilities"
         )
         name = "Limited Use" if len(limited_uses) > 1 else limited_uses[0].name
         yield LegendaryActionScore(
@@ -73,7 +73,7 @@ def special(
     yield LegendaryActionScore(
         feature=Feature(
             name="Replenish",
-            description=f"{stats.selfref.title()} gains {temp} temporary hitpoints. It can't take this action again until the start of its next turn.",
+            description=f"{stats.selfref.capitalize()} gains {temp} temporary hitpoints. It can't take this action again until the start of its next turn.",
             action=ActionType.Legendary,
         ),
         types={LegendaryActionType.special},

@@ -39,6 +39,7 @@ from ..powers.themed import (
     domineering,
     emanation,
     gadget,
+    icy,
     poison,
     storm,
     technique,
@@ -305,7 +306,7 @@ class _MageWeights(CustomPowerSelection):
             techniques = [
                 technique.SlowingAttack
             ]  # don't include freezing attack because Cryomancer already has Flash Freeze ability
-            esoteric += [emanation.BitingFrost]
+            esoteric += [emanation.BitingFrost] + icy.IcyPowers
         elif variant is ElectromancerVariant:
             force.append(elementalist.Electromancer)
             esoteric += storm.StormPowers

@@ -26,6 +26,7 @@ from . import (
     flying,
     gadget,
     holy,
+    icy,
     monstrous,
     organized,
     petrifying,
@@ -68,6 +69,7 @@ ThemedPowers: List[Power] = (
     + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
+    + icy.IcyPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
     + petrifying.PetrifyingPowers

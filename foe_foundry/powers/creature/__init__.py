@@ -1,14 +1,16 @@
-from .skeletal import SkeletalPowers  # noqa
-from .warrior import WarriorPowers  # noqa
-from .zombie import ZombiePowers  # noqa
-from .guard import GuardPowers  # noqa
-from .mage import MagePowers  # noqa
-from .hydra import HydraPowers  # noqa
-from .basilisk import BasiliskPowers  # noqa
-from .gorgon import GorgonPowers  #  noqa
-from .vrock import VrockPowers  # noqa
-from .goblin import GoblinPowers  # noqa
-from .balor import BalorPowers  # noqa
+from .balor import BalorPowers
+from .basilisk import BasiliskPowers
+from .goblin import GoblinPowers
+from .gorgon import GorgonPowers
+from .guard import GuardPowers
+from .hydra import HydraPowers
+from .mage import MagePowers
+from .skeletal import SkeletalPowers
+from .spider import SpiderPowers
+from .vrock import VrockPowers
+from .warrior import WarriorPowers
+from .wolf import WolfPowers
+from .zombie import ZombiePowers
 
 CreaturePowers = (
     SkeletalPowers
@@ -22,4 +24,6 @@ CreaturePowers = (
     + VrockPowers
     + GoblinPowers
     + BalorPowers
+    + SpiderPowers
+    + WolfPowers
 )

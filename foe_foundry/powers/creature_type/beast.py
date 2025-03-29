@@ -125,53 +125,6 @@ class _Gore(BeastPower):
         return [feature]
 
 
-class _Web(BeastPower):
-    def __init__(self):
-        super().__init__(
-            name="Web",
-            source="SRD 5.1 Giant Spider",
-            attack_names={
-                "-",
-                natural_attacks.Bite,
-                natural_attacks.Claw,
-                natural_attacks.Stinger,
-            },
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
-        restrained = Condition.Restrained
-
-        feature1 = Feature(
-            name="Spider Climb",
-            action=ActionType.Feature,
-            description=f"{stats.selfref} can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
-        )
-
-        feature2 = Feature(
-            name="Web Sense",
-            action=ActionType.Feature,
-            description=f"While in contact with a web, {stats.selfref} knows the exact location of any other creature in contact with the same web.",
-        )
-
-        feature3 = Feature(
-            name="Web",
-            action=ActionType.Action,
-            recharge=5,
-            replaces_multiattack=1,
-            description=f"{stats.selfref.capitalize()} shoots a sticky web at a point it can see within 60 feet. \
-                Each creature within a 20 foot cube centered at the point must make a DC {dc} Dexterity saving throw or become {restrained.caption} (save ends at end of turn). \
-                The area of the web is considered difficult terrain, and any creature that ends its turn in the area must repeat the save or become restrained.",
-        )
-
-        return [feature1, feature2, feature3]
-
-    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        new_speed = stats.speed.copy(climb=stats.speed.walk)
-        stats = stats.copy(speed=new_speed)
-        return stats
-
-
 class _Packlord(BeastPower):
     def __init__(self):
         super().__init__(
@@ -220,11 +173,30 @@ class _WildInstinct(BeastPower):
         return [feature]
 
 
+class _ScentOfWeakness(BeastPower):
+    def __init__(self):
+        super().__init__(
+            name="Scent of Weakness",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            require_attack_types=AttackType.MeleeNatural,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        bloodied = Condition.Bloodied.caption
+        feature = Feature(
+            name="Scent of Weakness",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} can smell blood. It has advantage on attacks against any {bloodied} creature and always knows the location of any {bloodied} creature within 60 feet of it.",
+        )
+        return [feature]
+
+
 BestialRampage: Power = _BestialRampage()
 FeedingFrenzy: Power = _FeedingFrenzy()
 Gore: Power = _Gore()
 Packlord: Power = _Packlord()
-Web: Power = _Web()
+ScentOfWeakness: Power = _ScentOfWeakness()
 WildInstinct: Power = _WildInstinct()
 
 BeastPowers: List[Power] = [
@@ -232,6 +204,6 @@ BeastPowers: List[Power] = [
     FeedingFrenzy,
     Gore,
     Packlord,
-    Web,
+    ScentOfWeakness,
     WildInstinct,
 ]

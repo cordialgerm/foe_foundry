@@ -90,7 +90,7 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
     yield LegendaryActionScore(
         feature=Feature(
             name="Move",
-            description=f"{stats.selfref.title()} moves up to its speed.",
+            description=f"{stats.selfref.capitalize()} moves up to its speed.",
             action=ActionType.Legendary,
         ),
         types={LegendaryActionType.move},

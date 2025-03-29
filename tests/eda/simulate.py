@@ -22,12 +22,12 @@ def plot_simulation(
     temperature: float = 1.0,
     full_plot: bool = False,
 ) -> Figure:
+    if suggested_cr is None:
+        suggested_cr = variant.suggested_crs[-1]
+
     counts = {}
     for i in range(n):
         rng = np.random.default_rng(20240711 + i)
-
-        if suggested_cr is None:
-            suggested_cr = variant.suggested_crs[-1]
 
         settings = GenerationSettings(
             rng=rng,
@@ -95,6 +95,6 @@ def plot_simulation(
         )
         sns.barplot(data=by_power_level, x=by_power_level.index, y="counts", ax=ax3)
 
-    fig.suptitle(f"{variant.name} - Temperature {temperature:.1f}")
+    fig.suptitle(f"{suggested_cr.name} - Temperature {temperature:.1f}")
     fig.tight_layout(h_pad=2)
     return fig

@@ -52,7 +52,7 @@ class _RottenFlesh(ZombiePower):
             name="Rotten Flesh",
             action=ActionType.Reaction,
             uses=1,
-            description=f"{stats.selfref.title()} ignores the first source of bludgeoning, piercing, or slashing damage it receives.",
+            description=f"{stats.selfref.capitalize()} ignores the first source of bludgeoning, piercing, or slashing damage it receives.",
         )
         return [feature]
 
@@ -75,7 +75,7 @@ class _PutridStench(ZombiePower):
             name="Putrid Stench",
             action=ActionType.Reaction,
             uses=1,
-            description=f"{stats.selfref.title()} releases a putrid stench when it takes damage. Each creature within 5 feet must make a DC {dc} Constitution save or take {damage.description} poison damage and be {poisoned.caption} until the end of their next turn.",
+            description=f"{stats.selfref.capitalize()} releases a putrid stench when it takes damage. Each creature within 5 feet must make a DC {dc} Constitution save or take {damage.description} poison damage and be {poisoned.caption} until the end of their next turn.",
         )
         return [feature]
 
