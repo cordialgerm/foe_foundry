@@ -272,9 +272,7 @@ class _MageWeights(CustomPowerSelection):
         elif variant is NecromancerVariant:
             force.append(
                 next(
-                    p
-                    for p in necromancer.NecromancerWizards()
-                    if power_matches_cr(p, cr)
+                    p for p in necromancer.NecromancerWizards if power_matches_cr(p, cr)
                 )
             )
             esoteric += deathly.DeathlyPowers

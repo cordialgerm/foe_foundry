@@ -134,7 +134,7 @@ class _CustomWeights(CustomPowerSelection):
         if self.variant is NecroVariant:
             powers += DeathlyPowers
             powers += UndeadPowers
-            highly_desirable_powers += NecromancerWizards()
+            highly_desirable_powers += NecromancerWizards
 
         if self.variant is FiendVariant:
             powers += CruelPowers

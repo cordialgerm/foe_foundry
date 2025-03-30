@@ -186,11 +186,36 @@ class _VenemousMiasma(PoisonPower):
         return [feature]
 
 
+class _VileVomit(PoisonPower):
+    def __init__(self):
+        super().__init__(
+            name="Vile Vomit",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 14),
+            require_types=[CreatureType.Undead, CreatureType.Monstrosity],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        poisoned = Condition.Poisoned
+        dmg = stats.target_value(dpr_proportion=1.2)
+        dc = stats.difficulty_class_easy
+        feature = Feature(
+            name="Vile Vomit",
+            action=ActionType.Action,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} vomits a vile substance in a 15 foot cone. Each creature in that area must make a DC {dc} Constitution saving throw. \
+                 On a failure, the creature takes {dmg.description} Poison damage and is {poisoned.caption} (save ends at end of turn). \
+                 On a success, the creature takes half damage instead.",
+        )
+        return [feature]
+
+
 PoisonousBurst: Power = _PoisonousBurst()
 ToxicPoison: Power = _ToxicPoison()
 PoisonDart: Power = _PoisonDart()
 PoisonousBlood: Power = _PoisonousBlood()
 VenemousMiasma: Power = _VenemousMiasma()
+VileVomit: Power = _VileVomit()
 WeakeningPoison: Power = _WeakeningPoison()
 
 PoisonPowers: List[Power] = [
@@ -199,5 +224,6 @@ PoisonPowers: List[Power] = [
     PoisonDart,
     PoisonousBlood,
     VenemousMiasma,
+    VileVomit,
     WeakeningPoison,
 ]

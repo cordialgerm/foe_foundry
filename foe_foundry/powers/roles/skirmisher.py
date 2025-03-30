@@ -85,16 +85,19 @@ class _HarrassingRetreat(SkirmisherPower):
             name="Harassing Retreat",
             source="Foe Foundry",
             requires_tactics=True,
-            require_attack_types=AttackType.AllRanged(),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        range = (
+            10 if len(stats.attack_types.intersection(AttackType.AllRanged())) else 5
+        )
+
         feature = Feature(
             name="Harassing Retreat",
             action=ActionType.Reaction,
             recharge=5,
-            description=f"When a hostile creature ends movement within 10 feet of {stats.roleref}, it may move up to half its movement. \
-                 As part of this reaction, it makes a ranged attack against the triggering creature.",
+            description=f"When a hostile creature ends movement within {range} feet of {stats.roleref}, it may move up to half its movement. \
+                 As part of this reaction, it may make an attack against the triggering creature.",
         )
         return [feature]
 

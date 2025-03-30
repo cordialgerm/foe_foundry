@@ -1,5 +1,5 @@
 Name,Type,CR,Notes,Sources,In SRD,Implemented
-Goblin,Humanoid (goblinoid),0.25,Common low-level enemy,"LMoP, Icespire, HotDQ",True,False
+Goblin,Humanoid (goblinoid),0.25,Common low-level enemy,"LMoP, Icespire, HotDQ",True,True
 Skeleton,Undead,0.25,"Classic undead, dungeon filler","LMoP, CoS, OotA",True,True
 Zombie,Undead,0.25,"Classic undead, slow but tough","CoS, OotA, ToA",True,True
 Bandit,Humanoid (any race),0.125,Common humanoid threat,"LMoP, Icespire, CoS",True,True

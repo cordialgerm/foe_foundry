@@ -202,7 +202,7 @@ class MonsterTemplateData:
 
             if len(replacements) > 0:
                 replacement_amount = max(
-                    1, int(np.round(np.mean([r[1] for r in replacements])))
+                    1, int(np.ceil(np.mean([r[1] for r in replacements])))
                 )
                 replacement_options = comma_separated(
                     [r[0] for r in replacements], conjunction="or"
