@@ -34,7 +34,7 @@ SpellcasterPowers: List[Power] = (
     + magic.MagicPowers
     + metamagic.MetamagicPowers
     + oath.OathCasters()
-    + necromancer.NecromancerWizards()
+    + necromancer.NecromancerWizards
     + psionic.PsionicCasters()
     + shaman.ShamanPowers
     + transmuter.TransmutationWizards()

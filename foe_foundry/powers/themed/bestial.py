@@ -144,14 +144,35 @@ class _TurboTrot(BestialPower):
         return [feature]
 
 
+class _MarkTheMeal(BestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Mark the Meal",
+            source="Foe Foundry",
+            create_date=datetime(2023, 11, 28),
+            attack_names=["-", natural.Bite],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Mark the Meal",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after {stats.selfref.capitalize()} hits a creature, it marks that creature as its meal. It has advantage on attack rolls against that creature as long as that creature has lost at least one hit point.",
+        )
+        return [feature]
+
+
 BurrowingAmbush: Power = _BurrowingAmbush()
-RetributiveStrike: Power = _RetributiveStrike()
+MarkTheMeal: Power = _MarkTheMeal()
 OpportuneBite: Power = _OpportuneBite()
+RetributiveStrike: Power = _RetributiveStrike()
 Trample: Power = _Trample()
 TurboTrot: Power = _TurboTrot()
 
 BestialPowers: List[Power] = [
     BurrowingAmbush,
+    MarkTheMeal,
     RetributiveStrike,
     OpportuneBite,
     Trample,

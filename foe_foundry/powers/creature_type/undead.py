@@ -57,10 +57,11 @@ class _StenchOfDeath(UndeadPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        poisoned = Condition.Poisoned
         feature = Feature(
             name="Stench of Death",
             action=ActionType.Feature,
-            description=f"Any creature that starts its turn within 10 feet of {stats.selfref} must make a DC {dc} Constitution saving throw or become poisoned until the start of their next turn. \
+            description=f"Any creature that starts its turn within 10 feet of {stats.selfref} must make a DC {dc} Constitution saving throw or become {poisoned.caption} until the start of their next turn. \
                 On a successful saving throw, the creature is immune to {stats.selfref}'s stench for 24 hours.",
         )
         return [feature]

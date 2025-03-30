@@ -47,24 +47,29 @@ class _NecromancerWizard(WizardPower):
         return [feature]
 
 
-def NecromancerWizards() -> List[Power]:
-    return [
-        _NecromancerWizard(
-            name="Necromancer Adept",
-            min_cr=4,
-            max_cr=5,
-            spells=NecromancerAdeptSpells,
-        ),
-        _NecromancerWizard(
-            name="Necromancer Master",
-            min_cr=6,
-            max_cr=11,
-            spells=NecromancerMasterSpells,
-        ),
-        _NecromancerWizard(
-            name="Necromancer Expert",
-            min_cr=12,
-            max_cr=40,
-            spells=NecromancerExpertSpells,
-        ),
-    ]
+NecromancerAdept: Power = _NecromancerWizard(
+    name="Necromancer Adept",
+    min_cr=4,
+    max_cr=5,
+    spells=NecromancerAdeptSpells,
+)
+
+NecromancerMaster: Power = _NecromancerWizard(
+    name="Necromancer Master",
+    min_cr=6,
+    max_cr=11,
+    spells=NecromancerMasterSpells,
+)
+
+NecromancerExpert: Power = _NecromancerWizard(
+    name="Necromancer Expert",
+    min_cr=12,
+    max_cr=40,
+    spells=NecromancerExpertSpells,
+)
+
+NecromancerWizards: list[Power] = [
+    NecromancerAdept,
+    NecromancerMaster,
+    NecromancerExpert,
+]

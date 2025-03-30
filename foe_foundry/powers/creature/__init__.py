@@ -1,5 +1,6 @@
 from .balor import BalorPowers
 from .basilisk import BasiliskPowers
+from .ghoul import GhoulPowers
 from .goblin import GoblinPowers
 from .gorgon import GorgonPowers
 from .guard import GuardPowers
@@ -13,17 +14,18 @@ from .wolf import WolfPowers
 from .zombie import ZombiePowers
 
 CreaturePowers = (
-    SkeletalPowers
-    + WarriorPowers
-    + ZombiePowers
-    + GuardPowers
-    + MagePowers
-    + HydraPowers
+    BalorPowers
     + BasiliskPowers
-    + GorgonPowers
-    + VrockPowers
+    + GhoulPowers
     + GoblinPowers
-    + BalorPowers
+    + GorgonPowers
+    + GuardPowers
+    + HydraPowers
+    + MagePowers
+    + SkeletalPowers
     + SpiderPowers
+    + VrockPowers
+    + WarriorPowers
     + WolfPowers
+    + ZombiePowers
 )

@@ -25,6 +25,10 @@ def no_unique_movement(stats: BaseStatblock) -> bool:
     return not stats.has_unique_movement_manipulation
 
 
+def not_caster(stats: BaseStatblock) -> bool:
+    return stats.caster_type is None
+
+
 class SneakyPower(PowerWithStandardScoring):
     def __init__(
         self,
@@ -127,6 +131,7 @@ class _CheapShot(SneakyPower):
             source="Foe Foundry",
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,
+            require_callback=not_caster,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

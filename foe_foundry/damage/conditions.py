@@ -51,6 +51,14 @@ class CustomCondition:
     def __repr__(self) -> str:
         return self.full_description
 
+    def __hash__(self) -> int:
+        return hash(self.name)
+
+    def __eq__(self, value: object) -> bool:
+        if not isinstance(value, CustomCondition):
+            return False
+        return self.name == value.name
+
 
 def Burning(
     damage: DieFormula | str, damage_type: DamageType = DamageType.Fire

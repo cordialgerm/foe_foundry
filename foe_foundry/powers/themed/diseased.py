@@ -66,6 +66,7 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
             super().__init__(
                 name=f"Rotten Grasp ({disease.name.title()})", power_level=HIGH_POWER
             )
+            self.disease = disease
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
@@ -93,6 +94,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
             super().__init__(
                 name=f"Toxic Breath ({disease.name.title()})", power_level=HIGH_POWER
             )
+            self.disease = disease
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
