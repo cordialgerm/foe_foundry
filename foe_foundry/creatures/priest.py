@@ -8,6 +8,7 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    flags,
     select_powers,
 )
 from ..powers.creature_type import celestial
@@ -177,6 +178,10 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     # SAVES
     if cr >= 8:
         stats = stats.grant_save_proficiency(Stats.STR, Stats.CON, Stats.INT, Stats.WIS)
+
+    # FLAGS
+    # priests don't need other healing powers
+    stats = stats.with_flags(flags.HAS_HEALING)
 
     # POWERS
     features = []

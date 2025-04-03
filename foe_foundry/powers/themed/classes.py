@@ -857,6 +857,8 @@ class _Druid(PowerWithStandardScoring):
         return [feature]
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.with_flags(flags.HAS_HEALING)
+
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)

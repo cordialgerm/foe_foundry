@@ -17,6 +17,25 @@ ControlWeather = Spell(
 When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.""",
 )
 
+PlantGrowth = Spell(
+    name="Plant Growth",
+    level=3,
+    school="transmutation",
+    source="SRD 5.1",
+    upcast=False,
+    action_type=ActionType.Action,
+    concentration=False,
+    description="""You enrich the land around you with abundant plant life. Choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. The area becomes difficult terrain for the duration.
+If you cast this spell using 8 hours of casting time, you enrich the land. The plants in a half-mile radius centered on that point become enriched for 1 year. The enriched area is difficult terrain for creatures other than you. If the area is used to grow food, it produces twice the normal amount of food when harvested.
+
+If you cast this spell using 1 minute of casting time, you can choose to have the spell affect only one of the following areas:
+- 20-foot radius centered on a point within range
+- 40-foot radius centered on a point within range
+- 100-foot radius centered on a point within range
+- 1 mile radius centered on a point within range
+The area becomes difficult terrain for the duration. If the area is used to grow food, it produces twice the normal amount of food when harvested.""",
+)
+
 
 Disintegrate = Spell(
     name="Disintegrate",

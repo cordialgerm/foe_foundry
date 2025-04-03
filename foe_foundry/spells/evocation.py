@@ -16,6 +16,22 @@ AcidArrow: Spell = Spell(
     range="90 feet",
 )
 
+Sunburst: Spell = Spell(
+    name="Sunburst",
+    level=8,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    description="""A brilliant sunlight flashes in a 60-foot radius sphere centered on a point you choose within range. Each creature in that area must make a Dexterity saving throw. A creature takes 12d6 radiant damage on a failed save, or half as much damage on a successful one. An affected nonmagical light source within the area is extinguished.
+If a creature is in dim light or darkness when it fails its saving throw, it is blinded until the end of your next turn. If a creature is in bright light when it fails its saving throw, it is blinded until the end of its next turn. The spell dispels any darkness in the area that was created by a spell of 8th level or lower.
+The light spreads around corners. It lasts for the duration, and the area is considered bright light. The spell's light is sunlight.
+A creature that has total cover from the point of origin is not affected by the spell. The spell's light is sunlight.
+A creature that has total cover from the point of origin is not affected by the spell.
+The spell's light is sunlight.""",
+)
 
 ArcaneHand = Spell(
     name="Arcane Hand",
@@ -112,6 +128,21 @@ FaerieFire: Spell = Spell(
     save=Stats.DEX,
     description="""Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.""",
+)
+
+Moonbeam: Spell = Spell(
+    name="Moonbeam",
+    level=2,
+    school="evocation",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=Stats.CON,
+    description="""A beam of light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain. It must make a Constitution saving throw. On a failed save, it takes 2d10 radiant damage, or half as much damage on a successful one.
+A shapechanger makes its saving throw with disadvantage. A creature that fails the saving throw also has its speed halved until the end of its next turn.
+On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction.
+The spell's area is a cylinder that is 5 feet wide and 40 feet high. The beam of light is 5 feet wide and 40 feet high, and it lasts for the duration.""",
 )
 
 Fireball: Spell = Spell(

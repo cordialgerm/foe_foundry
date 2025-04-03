@@ -40,6 +40,7 @@ from . import (
     teleportation,
     temporal,
     thuggish,
+    totemic,
     tough,
     trap,
     tricky,
@@ -83,6 +84,7 @@ ThemedPowers: List[Power] = (
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
+    + totemic.TotemicPowers
     + thuggish.ThuggishPowers
     + tough.ToughPowers
     + trap.TrapPowers

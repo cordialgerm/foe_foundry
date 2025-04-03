@@ -23,6 +23,7 @@ from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .wolf import WolfTemplate
 from .zombie import ZombieTemplate
+from .druid import DruidTemplate
 
 AllTemplates: list[CreatureTemplate] = [
     AssassinTemplate,
@@ -31,6 +32,7 @@ AllTemplates: list[CreatureTemplate] = [
     BasiliskTemplate,
     BerserkerTemplate,
     CultistTemplate,
+    DruidTemplate,
     GolemTemplate,
     GorgonTemplate,
     GuardTemplate,
