@@ -2,7 +2,13 @@ from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    PowerType,
+    select_powers,
+)
 from ..powers.roles.skirmisher import CunningAction
 from ..powers.themed.anti_magic import SealOfSilence
 from ..powers.themed.anti_ranged import HardToPinDown
@@ -27,7 +33,7 @@ from .template import (
 )
 
 
-class _CustomPowers(CustomPowerSelection):
+class _AssassinPowers(CustomPowerSelection):
     def custom_weight(self, power: Power) -> CustomPowerWeight:
         custom_powers = [
             BrutalCritical,
@@ -41,8 +47,11 @@ class _CustomPowers(CustomPowerSelection):
         ] + GrenadePowers
         if power in custom_powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
+        elif power.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
-            return CustomPowerWeight(1.0, ignore_usual_requirements=False)
+            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
 
     def force_powers(self) -> list[Power]:
         return [CunningAction]
@@ -158,7 +167,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomPowers(),
+        custom=_AssassinPowers(),
     )
     features += power_features
 

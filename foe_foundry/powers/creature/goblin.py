@@ -9,6 +9,10 @@ from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
+def is_goblin(s: BaseStatblock) -> bool:
+    return s.creature_class == "Goblin"
+
+
 class GoblinPower(PowerWithStandardScoring):
     def __init__(
         self,
@@ -18,12 +22,6 @@ class GoblinPower(PowerWithStandardScoring):
         create_date: datetime | None = datetime(2025, 3, 22),
         **score_args,
     ):
-        def require_callback(s: BaseStatblock) -> bool:
-            existing_callback = score_args.get("require_callback")
-            return s.creature_class == "Goblin" and (
-                existing_callback(s) if existing_callback else True
-            )
-
         super().__init__(
             name=name,
             source=source,
@@ -32,7 +30,7 @@ class GoblinPower(PowerWithStandardScoring):
             power_type=PowerType.Creature,
             create_date=create_date,
             score_args=dict(
-                require_callback=require_callback,
+                require_callback=is_goblin,
                 require_types=[CreatureType.Humanoid],
             )
             | score_args,
@@ -66,7 +64,11 @@ class _FlingFilth(GoblinPower):
 class _CacklingDetonation(GoblinPower):
     def __init__(self):
         def require_callback(s: BaseStatblock) -> bool:
-            return MonsterRole.Leader not in s.additional_roles and s.cr < 1
+            return (
+                is_goblin(s)
+                and MonsterRole.Leader not in s.additional_roles
+                and s.cr < 1
+            )
 
         super().__init__(
             name="Cackling Detonation",

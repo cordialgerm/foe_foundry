@@ -28,3 +28,4 @@ def test_all_statblocks(
 
     stats = template.generate(settings).finalize()
     templates.render_html_inline_page_to_path(stats, examples_dir / f"{stats.key}.html")
+    assert template.image_urls.get(settings.variant.key) is not None

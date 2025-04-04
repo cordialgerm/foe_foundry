@@ -137,7 +137,7 @@ def Enraged() -> CustomCondition:
         name="Enraged",
         caption="<span class='condition condition-enraged'>Enraged</span>",
         description="You are <span class='condition condition-enraged'>Enraged</span>. You have resistance to bludgeoning, piercing, and slashing damage. Attacks against you have advantage and your attacks have advantage.",
-        description_3rd="A <span class='condition condition-enraged'>Enraged</span> creature has resistance to bludgeoning, piercing, and slashing damage. Attacks against it have advantage and its attacks have advantage.",
+        description_3rd="An <span class='condition condition-enraged'>Enraged</span> creature has resistance to bludgeoning, piercing, and slashing damage. Attacks against it have advantage and its attacks have advantage.",
     )
 
 

@@ -274,12 +274,12 @@ def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats)
+        stats = secondary_attack.copy(damage_scalar=0.9).add_as_secondary_attack(stats)
 
     # SPELLS
     if variant is GoblinShamanVariant:
         stats = stats.grant_spellcasting(
-            caster_type=CasterType.Pact, spellcasting_stat=Stats.INT
+            caster_type=CasterType.Primal, spellcasting_stat=Stats.INT
         )
 
     # ROLES

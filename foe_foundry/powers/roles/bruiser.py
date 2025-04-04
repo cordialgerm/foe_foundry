@@ -94,6 +94,7 @@ class _StunningBlow(BruiserPower):
             name="Stunning Blow",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            require_cr=1,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
 

@@ -5,9 +5,9 @@ from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerSelection, select_powers
+from ..powers import CustomPowerSelection, PowerType, select_powers
 from ..powers.roles import artillery, leader
-from ..powers.themed import gadget, organized, sneaky, technique, thuggish
+from ..powers.themed import gadget, honorable, organized, sneaky, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -45,7 +45,7 @@ BanditCaptainVariant = CreatureVariant(
 )
 
 
-class _CustomPowers(CustomPowerSelection):
+class _BanditPowers(CustomPowerSelection):
     def __init__(self, variant: CreatureVariant, stats: BaseStatblock):
         self.variant = variant
         self.stats = stats
@@ -70,6 +70,8 @@ class _CustomPowers(CustomPowerSelection):
             gadget.SmokeBomb,
         ]
 
+        suppress = honorable.HonorablePowers
+
         powers = []
         powers += standard_powers
         if self.stats.cr >= 1:
@@ -77,8 +79,13 @@ class _CustomPowers(CustomPowerSelection):
         if self.variant is BanditCaptainVariant:
             powers += captain_powers
 
-        if power in powers:
+        if power in suppress:
+            return CustomPowerWeight(-1, ignore_usual_requirements=False)
+        elif power in powers:
             return CustomPowerWeight(2.5, ignore_usual_requirements=True)
+        elif power.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.75, ignore_usual_requirements=False)
 
@@ -187,7 +194,7 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomPowers(variant, stats),
+        custom=_BanditPowers(variant, stats),
     )
     features += power_features
 

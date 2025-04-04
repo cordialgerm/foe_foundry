@@ -25,7 +25,7 @@ class _HighElfSpecies(CreatureSpecies):
         stats = stats.with_roles(additional_roles=[MonsterRole.Artillery])
 
         if not stats.attack_types.intersection(AttackType.AllSpell()):
-            attack = spell.ArcaneBurst
+            attack = spell.ArcaneBurst.copy(damage_scalar=0.9)
             stats = attack.add_as_secondary_attack(stats)
 
         return stats

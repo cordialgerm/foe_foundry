@@ -163,21 +163,22 @@ def display_stat_builder() -> DisplayHandle | None:
 
         output.clear_output(wait=True)
         output.append_display_data(HTML(data=html))
-        if template.image_urls is not None:
-            for path in template.image_urls:
-                img = Image.open(path)
 
-                if img.height >= img.width and img.height > 500:
-                    new_width = int(500.0 / img.height * img.width)
-                    img.thumbnail((new_width, 500))
-                elif img.width >= img.height and img.width > 500:
-                    new_height = int(500.0 / img.width * img.height)
-                    img.thumbnail((500, new_height))
+        images = template.image_urls.get(variant.key, [])
+        for path in images:
+            img = Image.open(path)
 
-                io = BytesIO()
-                img.save(io, format="PNG")
-                io.seek(0)
-                output.append_display_data(IPythonImage(data=io.getbuffer()))
+            if img.height >= img.width and img.height > 500:
+                new_width = int(500.0 / img.height * img.width)
+                img.thumbnail((new_width, 500))
+            elif img.width >= img.height and img.width > 500:
+                new_height = int(500.0 / img.width * img.height)
+                img.thumbnail((500, new_height))
+
+            io = BytesIO()
+            img.save(io, format="PNG")
+            io.seek(0)
+            output.append_display_data(IPythonImage(data=io.getbuffer()))
 
     render_button.on_click(on_button_clicked)
     random_theme_button.on_click(on_random_theme_button_clicked)

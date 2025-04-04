@@ -1,7 +1,13 @@
 from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    PowerType,
+    select_powers,
+)
 from ..powers.creature.guard import GuardPowers
 from ..powers.themed.gadget import GrenadePowers, NetPowers
 from ..powers.themed.organized import OrganizedPowers
@@ -39,6 +45,9 @@ class _CustomWeights(CustomPowerSelection):
         elif p in SneakyPowers:
             # guards aren't usually sneaky, so downrank
             return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 

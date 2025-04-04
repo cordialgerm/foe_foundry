@@ -10,7 +10,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
 
 
 class TotemicPower(PowerWithStandardScoring):
@@ -18,7 +18,7 @@ class TotemicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
-        power_level: float = MEDIUM_POWER,
+        power_level: float = HIGH_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
         **score_args,
     ):
@@ -42,7 +42,6 @@ class _AncestralTotem(TotemicPower):
         super().__init__(
             name="Ancestral Totem",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
             require_roles=[MonsterRole.Support, MonsterRole.Leader],
             require_cr=1,
         )
@@ -65,7 +64,6 @@ class _EarthbindTotem(TotemicPower):
         super().__init__(
             name="Earthbind Totem",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
             require_roles=[MonsterRole.Controller, MonsterRole.Artillery],
             require_cr=1,
         )
@@ -90,7 +88,6 @@ class _WindfuryToten(TotemicPower):
         super().__init__(
             name="Windfury Totem",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
             require_roles=[
                 MonsterRole.Support,
                 MonsterRole.Leader,
@@ -118,7 +115,6 @@ class _GuardianTotem(TotemicPower):
         super().__init__(
             name="Guardian Totem",
             source="Foe Foundry",
-            power_level=MEDIUM_POWER,
             require_roles=[
                 MonsterRole.Defender,
                 MonsterRole.Support,
@@ -147,7 +143,6 @@ class _HealingTotem(TotemicPower):
         super().__init__(
             name="Healing Totem",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
             require_roles=[MonsterRole.Support, MonsterRole.Leader],
             require_cr=1,
         )
@@ -170,7 +165,6 @@ class _SpiritChainsTotem(TotemicPower):
         super().__init__(
             name="Spirit Chains Totem",
             source="Foe Foundry",
-            power_level=HIGH_POWER,
             require_roles=[
                 MonsterRole.Controller,
                 MonsterRole.Support,

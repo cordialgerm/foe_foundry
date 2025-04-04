@@ -1,7 +1,13 @@
 from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    PowerType,
+    select_powers,
+)
 from ..powers.creature.warrior import MightyLeap, WarriorPowers
 from ..powers.themed.gadget import NetPowers
 from ..powers.themed.organized import OrganizedPowers
@@ -21,7 +27,7 @@ from .template import (
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _WarriorWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -38,6 +44,9 @@ class _CustomWeights(CustomPowerSelection):
         elif p in TechniquePowers:
             # we want to boost techniques, but we can't skip requirements for them
             return CustomPowerWeight(weight=2.5, ignore_usual_requirements=False)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(weight=1.0, ignore_usual_requirements=False)
 
@@ -155,7 +164,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(primary_damage_type=attack.damage_type)
-    stats = secondary_attack.add_as_secondary_attack(stats)
+    stats = secondary_attack.copy(damage_scalar=0.9).add_as_secondary_attack(stats)
 
     # ROLES
     if variant is CommanderVariant:
@@ -199,7 +208,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_WarriorWeights(stats, variant),
     )
     features += power_features
 

@@ -9,6 +9,7 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    PowerType,
     flags,
     select_powers,
 )
@@ -93,6 +94,9 @@ class _DruidWeights(CustomPowerSelection):
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
         elif p in elemental_powers:
             # let the choice of secondary damage type influence the power selection
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
             return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.25, ignore_usual_requirements=False)

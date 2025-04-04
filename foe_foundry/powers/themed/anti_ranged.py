@@ -189,7 +189,9 @@ class _Overchannel(PowerWithStandardScoring):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if not stats.attack_types.intersection(AttackType.AllSpell()):
             stats = stats.grant_spellcasting(CasterType.Innate)
-            stats = spell.Firebolt.add_as_secondary_attack(stats)
+            stats = spell.Firebolt.copy(damage_scalar=0.9).add_as_secondary_attack(
+                stats
+            )
             return stats
         else:
             return stats

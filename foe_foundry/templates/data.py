@@ -101,10 +101,14 @@ class MonsterTemplateData:
                 additional_types.remove(stats.creature_type)
             creature_type_additions.extend([f"{ct.name}*" for ct in additional_types])
 
-        if stats.creature_subtype:
+        if (
+            stats.creature_subtype
+            and stats.creature_subtype not in creature_type_additions
+        ):
             creature_type_additions.append(stats.creature_subtype)
-        if stats.creature_class:
+        if stats.creature_class and stats.creature_class not in creature_type_additions:
             creature_type_additions.append(stats.creature_class)
+
         creature_type_additions = ", ".join(creature_type_additions)
 
         creature_type = (

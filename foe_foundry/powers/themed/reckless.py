@@ -2,6 +2,8 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attack_template import natural, weapon
 from ...attributes import Stats
 from ...damage import AttackType, Condition, DamageType
@@ -73,12 +75,13 @@ class _Charger(RecklessPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
+        dash = action_ref("Dash")
         feature = Feature(
             name="Charge",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} charges and moves up to its speed. Up to one creature that is within 5 ft of the path \
-                that the creature charges must make a DC {dc} Strength saving throw or be knocked {prone.caption}.",
+            description=f"{stats.selfref.capitalize()} uses {dash} and moves towards a hostile creature. Up to one creature that is within 5 ft of the path \
+                must make a DC {dc} Strength saving throw or be knocked {prone.caption}.",
         )
         return [feature]
 

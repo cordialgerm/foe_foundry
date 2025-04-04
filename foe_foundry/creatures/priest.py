@@ -8,6 +8,7 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    PowerType,
     flags,
     select_powers,
 )
@@ -46,7 +47,7 @@ PriestVariant = CreatureVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _PriestWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -87,6 +88,9 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(2.5, ignore_usual_requirements=False)
         elif p in techniques:
             return CustomPowerWeight(1.5, ignore_usual_requirements=True)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.75, ignore_usual_requirements=False)
 
@@ -202,7 +206,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_PriestWeights(stats, variant),
     )
     features += power_features
 

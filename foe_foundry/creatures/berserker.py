@@ -37,7 +37,7 @@ class _CustomPowers(CustomPowerSelection):
         if power in powers:
             return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
         else:
-            return CustomPowerWeight(weight=1.0)
+            return CustomPowerWeight(weight=0.5)
 
 
 BerserkerVariant = CreatureVariant(
