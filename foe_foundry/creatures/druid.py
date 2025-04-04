@@ -15,7 +15,16 @@ from ..powers import (
 from ..powers.creature import druid
 from ..powers.roles import support
 from ..powers.spellcaster import druidic, metamagic
-from ..powers.themed import gadget, icy, poison, storm, totemic, organized
+from ..powers.themed import (
+    gadget,
+    icy,
+    organized,
+    poison,
+    shamanic,
+    storm,
+    technique,
+    totemic,
+)
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -39,6 +48,7 @@ DruidVariant = CreatureVariant(
         SuggestedCr(
             name="Archdruid of Old Way", cr=12, other_creatures={"Archdruid": "mmotm"}
         ),
+        SuggestedCr(name="Archdruid of the First Grove", cr=16, is_legendary=True),
     ],
 )
 
@@ -64,6 +74,7 @@ class _DruidWeights(CustomPowerSelection):
         powers = (
             druid.DruidPowers
             + totemic.TotemicPowers
+            + shamanic.ShamanicPowers
             + [
                 metamagic.PrimalMastery,
                 support.Guidance,
@@ -72,7 +83,9 @@ class _DruidWeights(CustomPowerSelection):
 
         elemental_powers = icy.IcyPowers + storm.StormPowers + poison.PoisonPowers
 
-        suppress = gadget.GadgetPowers + organized.OrganizedPowers
+        suppress = (
+            gadget.GadgetPowers + organized.OrganizedPowers + technique.TechniquePowers
+        )
 
         if p in suppress:
             return CustomPowerWeight(-1, ignore_usual_requirements=True)
@@ -91,6 +104,7 @@ def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
     variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
+    is_legendary = settings.is_legendary
 
     # STATS
     stats = base_stats(
@@ -115,6 +129,10 @@ def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
         caster_type=CasterType.Primal,
         uses_shield=False,
     )
+
+    # LEGENDARY
+    if is_legendary:
+        stats = stats.as_legendary()
 
     # ARMOR CLASS
     stats = stats.add_ac_template(StuddedLeatherArmor)

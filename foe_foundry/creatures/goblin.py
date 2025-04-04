@@ -14,9 +14,11 @@ from ..powers.themed import (
     organized,
     poison,
     reckless,
+    shamanic,
     sneaky,
     technique,
     thuggish,
+    totemic,
     trap,
     tricky,
 )
@@ -123,12 +125,16 @@ class _GoblinPowers(CustomPowerSelection):
             technique.PushingAttack,
             technique.ProneAttack,
         ]
-        self.shamans = [
-            tricky.ReverseFortune,
-            tricky.SpectralDuplicate,
-            cursed.BestowCurse,
-            cursed.DisfiguringCurse,
-        ]
+        self.shamans = (
+            [
+                tricky.ReverseFortune,
+                tricky.SpectralDuplicate,
+                cursed.BestowCurse,
+                cursed.DisfiguringCurse,
+            ]
+            + totemic.TotemicPowers
+            + shamanic.ShamanicPowers
+        )
         self.leaders = [
             leader.CommandTheAttack,
             organized.FanaticFollowers,

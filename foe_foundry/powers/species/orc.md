@@ -1,17 +1,3 @@
-## Totems
-
-Totem of the Ancestors - 3 charges, each charge turns a failed d20 test into a success
-
-Earthbind Totem - 3 charges, each charge tries to restrain
-
-Windfury Totem - allies get an extra attack
-
-Magnetic Totem - next ranged weapon or spell attack or spell that targets a creature or area instead targets the totem. If the spell would target a creature it instead attempts to target the totem and fails.
-
-Healing Stream Totem - 3 charges, each charge heals an ally for X
-
-Spirit Chains Totem - spectral chains bind hostile creatures to the totem. Anyone who attempts to move more than 10 feet away takes {X} pyschic damage
-
 ## Blood Magic
 
 Sanguine Offering - deals damage to itself, next attack has advantage and deals additional damage
@@ -32,18 +18,6 @@ Challenge - choose a creature within 30 feet and challenge it to a duel. Anyone 
 Honorbound Duelist - fighting one on one gainst advantage on attacks and saves
 
 Mortal Vow - {X} has sworn a sacred vow. If the vow is threatened, can take an additional action
-
-## Shamanic
-
-Spirit Walk - becomes Invisible until end of its next turn. Can see hidden and invisible creatures. Gains temp hp
-
-Commune with the Ancestors - reaction - add +5 or -5 to a d20 roll
-
-Commune with Land - knocks down enemies, attempts to restrain them
-
-Commune with Air - thunder damage and attempts to blow back enemies
-
-Commune with Sea - cold and bludgeoning damage, attempts to freeze enemies
 
 
 ## Statblocks

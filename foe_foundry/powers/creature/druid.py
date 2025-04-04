@@ -36,9 +36,9 @@ class _BestialWrath(DruidPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        temp_hp = easy_multiple_of_five(5 * stats.cr, min_val=5, max_val=100)
+        temp_hp = easy_multiple_of_five(3 + 3 * stats.cr, min_val=5, max_val=100)
         dc = stats.difficulty_class
-        dmg = stats.target_value(dpr_proportion=1.2)
+        dmg = stats.target_value(dpr_proportion=1.15, force_die=Die.d6)
         feature = Feature(
             name="Bestial Fury",
             action=ActionType.Action,
