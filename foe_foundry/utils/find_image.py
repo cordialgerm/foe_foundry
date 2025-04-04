@@ -14,7 +14,6 @@ def find_image(name: str) -> list[Path]:
     paths = []
 
     for ext in extensions:
-        img_name = f"{name}{ext}"
-        paths.extend(img_dir.rglob(f"**/{img_name}"))
+        paths.extend(img_dir.rglob(f"**/{name}{ext}"))
 
     return paths

@@ -13,6 +13,7 @@ def adjust_attack(
     attack_display_name: str | None = None,
     attack_type: AttackType | None = None,
     primary_damage_type: DamageType | None = None,
+    damage_scalar: float = 1.0,
     die: Die,
     min_die_count: int = 0,
     adjust_to_hit: bool = False,
@@ -64,7 +65,9 @@ def adjust_attack(
     # adjust the average damage based on the primary stat mod
     if adjust_average_damage:
         repaired_formula = DieFormula.target_value(
-            target=stats.dpr / (stats.multiattack + stats.legendary_actions),
+            target=damage_scalar
+            * stats.dpr
+            / (stats.multiattack + stats.legendary_actions),
             flat_mod=stats.attributes.primary_mod,
             force_die=die,
             min_die_count=min_die_count,

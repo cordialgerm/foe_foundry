@@ -201,7 +201,9 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
     secondary_damage_type = DamageType.Poison
 
     if variant is GravelordVariant:
-        secondary_attack = spell.Deathbolt.with_display_name("Dread Bolt")
+        secondary_attack = spell.Deathbolt.copy(damage_scalar=0.9).with_display_name(
+            "Dread Bolt"
+        )
     else:
         secondary_attack = None
 
@@ -212,7 +214,7 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats, scalar=0.9)
+        stats = secondary_attack.add_as_secondary_attack(stats)
 
     ## SPELLCASTING
     if variant is GravelordVariant:

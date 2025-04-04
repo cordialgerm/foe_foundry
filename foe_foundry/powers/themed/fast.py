@@ -6,7 +6,6 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..scoring import score
 
 
 class FastPower(PowerWithStandardScoring):
@@ -55,12 +54,9 @@ class _Evasion(FastPower):
 
 class _NimbleReaction(FastPower):
     def __init__(self):
-        super().__init__(name="Nimble Reaction", source="Foe Foundry")
-
-    def score(self, candidate: BaseStatblock, relaxed_mode: bool) -> float:
-        return score(
-            relaxed_mode=relaxed_mode,
-            candidate=candidate,
+        super().__init__(
+            name="Nimble Reaction",
+            source="Foe Foundry",
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
         )

@@ -3,10 +3,16 @@ from ..attack_template import natural, weapon
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..die import Die
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    PowerType,
+    select_powers,
+)
 from ..powers.creature.warrior import PackTactics
 from ..powers.roles import leader
-from ..powers.themed import cruel, reckless, technique, thuggish
+from ..powers.themed import cruel, honorable, reckless, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -50,7 +56,7 @@ BossVariant = CreatureVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _ToughWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -69,13 +75,20 @@ class _CustomWeights(CustomPowerSelection):
             reckless.RelentlessEndurance,
         ]
 
+        suppress = honorable.HonorablePowers
+
         if self.variant is BossVariant:
             powers += thuggish.ThuggishPowers
 
-        if self.variant is BrawlerVariant and p == technique.ExpertBrawler:
+        if p in suppress:
+            return CustomPowerWeight(-1, ignore_usual_requirements=False)
+        elif self.variant is BrawlerVariant and p == technique.ExpertBrawler:
             return CustomPowerWeight(4.0, ignore_usual_requirements=True)
-        if p in powers:
+        elif p in powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.75)
 
@@ -177,7 +190,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_ToughWeights(stats, variant),
     )
     features += power_features
 

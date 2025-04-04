@@ -19,6 +19,7 @@ class AttackTemplate:
     attack_type: AttackType | None = None
     damage_type: DamageType | None = None
     secondary_damage_type: DamageType | None = None
+    damage_scalar: float = 1.0
     allows_shield: bool = False
     split_secondary_damage: bool = False
     split_secondary_damage_ratio: float = 0.5
@@ -80,13 +81,12 @@ class AttackTemplate:
     def add_as_secondary_attack(
         self,
         stats: BaseStatblock,
-        scalar: float = 1.0,
         **attack_args,
     ) -> BaseStatblock:
         return stats.add_attack(
             name=self.attack_name,
             display_name=self.display_name,
-            scalar=scalar
+            scalar=1.0
             / stats.damage_modifier,  # divide by damage modifier now because it gets added in later
             replaces_multiattack=1,
             is_equivalent_to_primary_attack=True,
@@ -121,6 +121,7 @@ class AttackTemplate:
             attack=attack_to_finalize,
             adjust_to_hit=True,
             adjust_average_damage=True,
+            damage_scalar=self.damage_scalar,
             **self.attack_adjustment_args(stats),
         )
 

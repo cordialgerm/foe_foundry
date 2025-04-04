@@ -9,6 +9,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
+from .. import flags
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
@@ -51,7 +52,11 @@ class _PotionOfHealing(GadgetPower):
             name="Potion of Healing",
             source="SRD5.1 Healing Potion",
             power_level=LOW_POWER,
+            require_no_flags=flags.HAS_HEALING,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return super().modify_stats_inner(stats).with_flags(flags.HAS_HEALING)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr <= 3:

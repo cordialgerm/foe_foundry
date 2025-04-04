@@ -6,11 +6,12 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    PowerType,
     select_powers,
 )
 from ..powers.roles import defender, leader
 from ..powers.spellcaster import celestial, oath
-from ..powers.themed import gadget, holy, organized, technique
+from ..powers.themed import gadget, holy, honorable, organized, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -79,10 +80,16 @@ class _KnightWeights(CustomPowerSelection):
             return CustomPowerWeight(-1)
         elif p in powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)
+        elif p in honorable.HonorablePowers:
+            # boost honorable powers substantially, but still follow existing requirements to avoid duplicates
+            return CustomPowerWeight(2.5, ignore_usual_requirements=False)
         elif p in spellcaster_powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=False)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
-            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
+            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
 
 
 def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -100,7 +107,7 @@ def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
             Stats.STR.scaler(StatScaling.Primary),
             Stats.DEX.scaler(StatScaling.Default),
             Stats.INT.scaler(StatScaling.Default),
-            Stats.WIS.scaler(StatScaling.Default),
+            Stats.WIS.scaler(StatScaling.Medium),
             Stats.CHA.scaler(StatScaling.Medium, mod=2),
         ],
         hp_multiplier=settings.hp_multiplier * (1.1 if cr >= 12 else 1.0),

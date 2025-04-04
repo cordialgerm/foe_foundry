@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import field
+from dataclasses import field, replace
 from typing import List
 
 from pydantic.dataclasses import dataclass
@@ -31,6 +31,9 @@ class Feature:
             self.title = f"{self.name} ({self.uses}/day)"
         else:
             self.title = self.name
+
+    def copy(self, **kwargs) -> Feature:
+        return replace(self, **kwargs)
 
     def __hash__(self) -> int:
         return self.name.__hash__()

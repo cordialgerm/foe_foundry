@@ -4,6 +4,7 @@ from .bandit import BanditTemplate
 from .basilisk import BasiliskTemplate
 from .berserker import BerserkerTemplate
 from .cultist import CultistTemplate
+from .druid import DruidTemplate
 from .ghoul import GhoulTemplate
 from .goblin import GoblinTemplate
 from .golem import GolemTemplate
@@ -13,6 +14,7 @@ from .hydra import HydraTemplate
 from .knight import KnightTemplate
 from .mage import MageTemplate
 from .medusa import MedusaTemplate
+from .orc import OrcTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .skeleton import SkeletonTemplate
@@ -31,6 +33,7 @@ AllTemplates: list[CreatureTemplate] = [
     BasiliskTemplate,
     BerserkerTemplate,
     CultistTemplate,
+    DruidTemplate,
     GolemTemplate,
     GorgonTemplate,
     GuardTemplate,
@@ -40,6 +43,7 @@ AllTemplates: list[CreatureTemplate] = [
     KnightTemplate,
     MageTemplate,
     MedusaTemplate,
+    OrcTemplate,
     PriestTemplate,
     ScoutTemplate,
     SkeletonTemplate,

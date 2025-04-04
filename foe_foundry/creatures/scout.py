@@ -1,7 +1,13 @@
 from ..ac_templates import LeatherArmor, StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
+from ..powers import (
+    CustomPowerSelection,
+    CustomPowerWeight,
+    Power,
+    PowerType,
+    select_powers,
+)
 from ..powers.roles.artillery import FocusShot
 from ..powers.roles.skirmisher import HarassingRetreat
 from ..powers.themed.clever import IdentifyWeaknes
@@ -22,7 +28,7 @@ from .template import (
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _ScoutWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -34,6 +40,9 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
         elif p in {SmokeBomb, PotionOfHealing}:
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(1.5, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
@@ -109,7 +118,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # ATTACKS
     attack = weapon.Longbow
-    secondary_attack = weapon.Shortswords
+    secondary_attack = weapon.Shortswords.copy(damage_scalar=0.9)
 
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
@@ -158,7 +167,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_ScoutWeights(stats, variant),
     )
     features += power_features
 

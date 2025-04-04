@@ -236,7 +236,7 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_damage_type=secondary_damage_type,
     )
     if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats)
+        stats = secondary_attack.copy(damage_scalar=0.9).add_as_secondary_attack(stats)
 
     # Golems have a slow attack speed, but attacks hit hard
     stats = stats.with_reduced_attacks(reduce_by=2, min_attacks=2)

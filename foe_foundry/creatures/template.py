@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field, replace
+from functools import cached_property
 from pathlib import Path
 from typing import Callable, Iterable, TypeAlias
 
@@ -112,7 +113,6 @@ class CreatureTemplate:
     name: str
     tag_line: str
     description: str
-    image_urls: list[Path] | None = None
     environments: list[str]  # TODO - standardize
     treasure: list[str]
     variants: list[CreatureVariant]
@@ -137,8 +137,15 @@ class CreatureTemplate:
         self.srd_ceatures = sorted(list(srd_creatures))
         self.other_creatures = sorted(list(other_creatures))
 
-        if self.image_urls is None:
-            self.image_urls = find_image(self.name.lower())
+    @cached_property
+    def image_urls(self) -> dict[str, list[Path]]:
+        urls = {}
+        for variant in self.variants:
+            image_urls = find_image(variant.key)
+            if len(image_urls) == 0:
+                image_urls = find_image(self.key)
+            urls[variant.key] = image_urls
+        return urls
 
     @property
     def key(self) -> str:

@@ -26,6 +26,7 @@ from . import (
     flying,
     gadget,
     holy,
+    honorable,
     icy,
     monstrous,
     organized,
@@ -40,6 +41,7 @@ from . import (
     teleportation,
     temporal,
     thuggish,
+    totemic,
     tough,
     trap,
     tricky,
@@ -69,6 +71,7 @@ ThemedPowers: List[Power] = (
     + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
+    + honorable.HonorablePowers
     + icy.IcyPowers
     + monstrous.MonstrousPowers
     + organized.OrganizedPowers
@@ -83,6 +86,7 @@ ThemedPowers: List[Power] = (
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
+    + totemic.TotemicPowers
     + thuggish.ThuggishPowers
     + tough.ToughPowers
     + trap.TrapPowers

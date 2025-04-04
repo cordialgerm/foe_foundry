@@ -8,6 +8,8 @@ from ..powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
+    PowerType,
+    flags,
     select_powers,
 )
 from ..powers.creature_type import celestial
@@ -45,7 +47,7 @@ PriestVariant = CreatureVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
+class _PriestWeights(CustomPowerSelection):
     def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
         self.stats = stats
         self.variant = variant
@@ -86,6 +88,9 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(2.5, ignore_usual_requirements=False)
         elif p in techniques:
             return CustomPowerWeight(1.5, ignore_usual_requirements=True)
+        elif p.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(0.75, ignore_usual_requirements=False)
 
@@ -178,6 +183,10 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     if cr >= 8:
         stats = stats.grant_save_proficiency(Stats.STR, Stats.CON, Stats.INT, Stats.WIS)
 
+    # FLAGS
+    # priests don't need other healing powers
+    stats = stats.with_flags(flags.HAS_HEALING)
+
     # POWERS
     features = []
 
@@ -197,7 +206,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_PriestWeights(stats, variant),
     )
     features += power_features
 

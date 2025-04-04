@@ -54,9 +54,16 @@ def move(stats: BaseStatblock) -> Iterable[LegendaryActionScore]:
     )
 
     if could_teleport and (flags.NO_TELEPORT not in stats.flags):
+        if stats.creature_type == CreatureType.Fey or stats.creature_subtype == "Elf":
+            teleport_name = "Misty Step"
+        elif stats.caster_type == CasterType.Primal:
+            teleport_name = "Primal Step"
+        else:
+            teleport_name = "Teleport"
+
         yield LegendaryActionScore(
             feature=Feature(
-                name="Teleport",
+                name=teleport_name,
                 description=f"{stats.selfref.capitalize()} teleports up to 60 feet to a location it can see.",
                 action=ActionType.Legendary,
             ),

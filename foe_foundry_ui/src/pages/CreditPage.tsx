@@ -241,6 +241,14 @@ const artCredits = [
         Art by Adrian Arduini used with permission.
       </>
     ),
+  },
+  {
+    title: "Stock Art by Rob Necronomicon",
+    description: (
+      <>
+        Art by <a href="https://www.instagram.com/robnecronomicon/?hl=en">Rob Necronomicon</a>
+      </>
+    )
   }
 ];
 

@@ -5,7 +5,7 @@ from ..ac_templates import StuddedLeatherArmor
 from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
-from ..powers import CustomPowerSelection, select_powers
+from ..powers import CustomPowerSelection, PowerType, select_powers
 from ..powers.roles.ambusher import DeadlyAmbusher, StealthySneak
 from ..powers.roles.artillery import QuickDraw
 from ..powers.roles.skirmisher import CunningAction
@@ -51,7 +51,7 @@ SpyMasterVariant = CreatureVariant(
 )
 
 
-class _CustomPowers(CustomPowerSelection):
+class _SpyPowers(CustomPowerSelection):
     def force_powers(self) -> list[Power]:
         return [CunningAction]
 
@@ -77,6 +77,9 @@ class _CustomPowers(CustomPowerSelection):
             return CustomPowerWeight(weight=-1)
         elif power in desirable_powers:
             return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
+        elif power.power_type == PowerType.Species:
+            # boost species powers but still respect requirements
+            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
         else:
             return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
@@ -188,7 +191,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomPowers(),
+        custom=_SpyPowers(),
     )
     features += power_features
 

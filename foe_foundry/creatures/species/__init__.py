@@ -6,8 +6,8 @@ from .orc import OrcSpecies
 from .species import CreatureSpecies
 
 AllSpecies: list[CreatureSpecies] = [
-    DwarfSpecies,
     HumanSpecies,
+    DwarfSpecies,
     OrcSpecies,
     GnomeSpecies,
     HalflingSpecies,
