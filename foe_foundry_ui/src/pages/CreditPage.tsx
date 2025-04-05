@@ -251,6 +251,14 @@ const artCredits = [
     )
   },
   {
+    title: "Stock Art by Bradley McKevit",
+    description: (
+      <>
+        Art by <a href="http://www.bradleykmcdevitt.net/">Bradley McKevit</a>
+      </>
+    ),
+  },
+  {
     title: "Stock Art Collection by Jeff Preston",
     description: (
       <>
