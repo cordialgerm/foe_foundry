@@ -18,6 +18,7 @@ from .nothic import HollowGazerTemplate
 from .orc import OrcTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
+from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
 from .spy import SpyTemplate
 from .template import CreatureTemplate, GenerationSettings
@@ -48,6 +49,7 @@ AllTemplates: list[CreatureTemplate] = [
     OrcTemplate,
     PriestTemplate,
     ScoutTemplate,
+    SimulacrumTemplate,
     SkeletonTemplate,
     SpyTemplate,
     ToughTemplate,
