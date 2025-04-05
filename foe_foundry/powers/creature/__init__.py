@@ -7,6 +7,7 @@ from .gorgon import GorgonPowers
 from .guard import GuardPowers
 from .hydra import HydraPowers
 from .mage import MagePowers
+from .nothic import NothicPowers
 from .skeletal import SkeletalPowers
 from .spider import SpiderPowers
 from .vrock import VrockPowers
@@ -24,6 +25,7 @@ CreaturePowers = (
     + GuardPowers
     + HydraPowers
     + MagePowers
+    + NothicPowers
     + SkeletalPowers
     + SpiderPowers
     + VrockPowers
