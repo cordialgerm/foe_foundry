@@ -29,7 +29,7 @@ class _Simulacrum(WizardPower):
         feature = Feature(
             name="Illusory Reality",
             action=ActionType.Feature,
-            description=f"Whenever {stats.selfref} is hit by an attack, it fades out of existance and re-appears in an unoccupied location up to 15 feet away.",
+            description=f"Whenever {stats.selfref} is hit by an attack, it fades out of existence and re-appears in an unoccupied location up to 15 feet away.",
         )
 
         return [feature]

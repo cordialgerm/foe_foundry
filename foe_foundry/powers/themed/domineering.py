@@ -110,7 +110,7 @@ class _Dominate(DomineeringPower):
                 While charmed in this way, the target treats {stats.selfref} as a trusted friend to be heeded and protected. \
                 It takes {stats.selfref}'s requests or actions in the most favorable way it can.  \
                 Each time the target takes damage, it may repeat the save to end the condition. \
-                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existance. \
+                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existence. \
                 A creature that saves is immune to this effect for 24 hours.",
         )
         return [feature]
