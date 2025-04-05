@@ -249,6 +249,36 @@ const artCredits = [
         Art by <a href="https://www.instagram.com/robnecronomicon/?hl=en">Rob Necronomicon</a>
       </>
     )
+  },
+  {
+    title: "Stock Art Collection by Jeff Preston",
+    description: (
+      <>
+        Jeff Preston Art is licensed under: This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+        Justin Nichol Art is licensed under: CC BY 4.0,. CC BY 3.0
+        Mariana Ruiz Villareal is licensed under: CC0
+        Max Brooks is licensed under: CC SA 3.0
+        Miko Arc is licensed under: CC BY 4.0 and must include: Colorful Monsters © 2020 by Mikoarc Studio is licensed under CC BY 4.0
+        Morgan Strauss is licensed under: CC0
+        Remi is licensed under: CC0
+        Ruskerdax is licensed under: CC0
+
+        To view a copy of these licenses, visit:
+        http://creativecommons.org/licenses/by/3.0/
+        https://creativecommons.org/licenses/by/4.0/
+        https://creativecommons.org/licenses/by/3.0/
+        https://creativecommons.org/share-your-work/public-domain/cc0/
+        http://creativecommons.org/licenses/by-sa/3.0/
+
+        or send a letter to:
+
+        Creative Commons
+        444 Castro Street
+        Suite 900
+        Mountain View, California, 94041, USA
+
+      </>
+    )
   }
 ];
 
