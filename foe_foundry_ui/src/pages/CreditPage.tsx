@@ -279,6 +279,14 @@ const artCredits = [
 
       </>
     )
+  },
+  {
+    title: "Art by William McAusland",
+    descrition: (
+      <>
+        Some artwork copyright William McAusland, used with permission.
+      </>
+    )
   }
 ];
 

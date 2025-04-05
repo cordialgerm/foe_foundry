@@ -8,6 +8,7 @@ from .guard import GuardPowers
 from .hydra import HydraPowers
 from .mage import MagePowers
 from .nothic import NothicPowers
+from .simulacrum import SimulacrumPowers
 from .skeletal import SkeletalPowers
 from .spider import SpiderPowers
 from .vrock import VrockPowers
@@ -28,6 +29,7 @@ CreaturePowers = (
     + NothicPowers
     + SkeletalPowers
     + SpiderPowers
+    + SimulacrumPowers
     + VrockPowers
     + WarriorPowers
     + WolfPowers
