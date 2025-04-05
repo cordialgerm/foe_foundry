@@ -259,8 +259,8 @@ const artCredits = [
         Mariana Ruiz Villareal is licensed under: CC0
         Max Brooks is licensed under: CC SA 3.0
         Miko Arc is licensed under: CC BY 4.0 and must include: Colorful Monsters © 2020 by Mikoarc Studio is licensed under CC BY 4.0
-        Morgan Strauss is lincensed under: CC0
-        Remi is lincesed under: CC0
+        Morgan Strauss is licensed under: CC0
+        Remi is licensed under: CC0
         Ruskerdax is licensed under: CC0
 
         To view a copy of this licenses, visit:
