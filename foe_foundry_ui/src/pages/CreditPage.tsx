@@ -263,7 +263,7 @@ const artCredits = [
         Remi is licensed under: CC0
         Ruskerdax is licensed under: CC0
 
-        To view a copy of this licenses, visit:
+        To view a copy of these licenses, visit:
         http://creativecommons.org/licenses/by/3.0/
         https://creativecommons.org/licenses/by/4.0/
         https://creativecommons.org/licenses/by/3.0/
