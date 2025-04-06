@@ -182,7 +182,7 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
 
 BugbearTemplate: CreatureTemplate = CreatureTemplate(
     name="Bugbear",
-    tag_line="Lurking abducters and ambushers",
+    tag_line="Lurking abductors and ambushers",
     description="Bugbears are large, hairy humanoids with a reputation for stealth and ambush tactics. They are often found in dark forests or caves, where they can use their natural camouflage to surprise their prey.",
     environments=["Forest", "Grassland", "Hill", "Feywild", "Underdark"],
     treasure=["Any"],
