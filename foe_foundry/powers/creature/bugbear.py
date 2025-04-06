@@ -85,7 +85,7 @@ class _SurpriseSnatch(BugbearPower):
         feature = Feature(
             name="Surprise Snatch",
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} attempts to drag away a creature that is unaware of it. \
+            description=f"{stats.selfref.capitalize()} attempts to drag away a creature that is unaware of it within 10 feet. \
                 The target must make a DC {dc} Strength saving throw. \
                 On a failure, the target takes {dmg.description} bludgeoning damage and is {grappled}. \
                 {stats.selfref.capitalize()} can then drag the target up to half its speed. \

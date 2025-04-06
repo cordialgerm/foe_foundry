@@ -143,7 +143,7 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = stats.add_ac_template(HideArmor)
 
     # ATTACKS
-    attack = natural.Slam.with_display_name("Skull Smash")
+    attack = natural.Slam.with_display_name("Skull Smash").copy(reach=10)
 
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
