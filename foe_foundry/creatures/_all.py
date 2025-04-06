@@ -3,6 +3,7 @@ from .balor import BalorTemplate
 from .bandit import BanditTemplate
 from .basilisk import BasiliskTemplate
 from .berserker import BerserkerTemplate
+from .bugbear import BugbearTemplate
 from .cultist import CultistTemplate
 from .dire_bunny import DireBunnyTemplate
 from .druid import DruidTemplate
@@ -35,6 +36,7 @@ AllTemplates: list[CreatureTemplate] = [
     BanditTemplate,
     BasiliskTemplate,
     BerserkerTemplate,
+    BugbearTemplate,
     CultistTemplate,
     DireBunnyTemplate,
     DruidTemplate,
