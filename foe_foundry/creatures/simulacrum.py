@@ -20,10 +20,10 @@ from ..powers.themed import (
     emanation,
     gadget,
     icy,
+    illusory,
     technique,
     teleportation,
     tough,
-    tricky,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -86,7 +86,7 @@ class _SimulacrumWeights(CustomPowerSelection):
         ignore = (
             controller.ControllingSpells
             + [
-                tricky.HypnoticPatern,
+                illusory.HypnoticPatern,
                 artillery.IndirectFire,
                 gadget.PotionOfHealing,
             ]

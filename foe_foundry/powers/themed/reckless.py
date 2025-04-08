@@ -86,6 +86,25 @@ class _Charger(RecklessPower):
         return [feature]
 
 
+class _Overrun(RecklessPower):
+    def __init__(self):
+        super().__init__(
+            name="Overrun",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            bonus_size=Size.Large,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Overrun",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after {stats.selfref} hits an enemy with an attack, it may move up to half its movement without triggering opportunity attacks. If it ends its movement next to another creature, it may make an attack against that creature.",
+        )
+        return [feature]
+
+
 class _Reckless(RecklessPower):
     def __init__(self):
         super().__init__(
@@ -233,6 +252,7 @@ class _Strangle(RecklessPower):
 
 BloodiedRage: Power = _BloodiedRage()
 Charger: Power = _Charger()
+Overrun: Power = _Overrun()
 RecklessFlurry: Power = _RecklessFlurry()
 Reckless: Power = _Reckless()
 RelentlessEndurance: Power = _RelentlessEndurance()
@@ -244,6 +264,7 @@ WildCleave: Power = _WildCleave()
 RecklessPowers: List[Power] = [
     BloodiedRage,
     Charger,
+    Overrun,
     RecklessFlurry,
     Reckless,
     RelentlessEndurance,

@@ -40,13 +40,13 @@ from ..powers.themed import (
     emanation,
     gadget,
     icy,
+    illusory,
     poison,
     storm,
     technique,
     teleportation,
     temporal,
     tough,
-    tricky,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -262,7 +262,7 @@ class _MageWeights(CustomPowerSelection):
                     if power_matches_cr(p, cr)
                 )
             )
-            esoteric += tricky.TrickyPowers
+            esoteric += illusory.IllusoryPowers
             esoteric += [emanation.IllusoryReality]
             techniques = [
                 technique.VexingAttack,
@@ -357,7 +357,7 @@ class _MageWeights(CustomPowerSelection):
         ignore = (
             controller.ControllingSpells
             + [
-                tricky.HypnoticPatern,
+                illusory.HypnoticPatern,
                 artillery.IndirectFire,
                 gadget.PotionOfHealing,
             ]

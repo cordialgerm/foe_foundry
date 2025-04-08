@@ -4,7 +4,7 @@ from ...features import Feature
 from ...spells import illusion
 from ...statblocks import BaseStatblock
 from ..power import Power
-from ..themed.tricky import Projection
+from ..themed.illusory import Projection
 from .base import WizardPower
 from .utils import spell_list
 

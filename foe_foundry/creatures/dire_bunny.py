@@ -20,9 +20,9 @@ from ..powers.themed import (
     diseased,
     earthy,
     flying,
+    illusory,
     monstrous,
     serpentine,
-    tricky,
     warrior,
 )
 from ..role_types import MonsterRole
@@ -94,7 +94,7 @@ class _DireBunnyWeights(CustomPowerSelection):
             + aberrant.AberrantPowers
             + serpentine.SerpentinePowers
             + self.hard_coded  # already chose from similar powers
-            + tricky.TrickyPowers
+            + illusory.IllusoryPowers
         )
 
         if p in suppress:
