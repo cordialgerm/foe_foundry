@@ -15,6 +15,7 @@ from ..powers.themed import (
     cruel,
     cursed,
     fearsome,
+    illusory,
     reckless,
     technique,
     thuggish,
@@ -106,9 +107,11 @@ class _OgrePowers(CustomPowerSelection):
                 technique.FrighteningAttack,
                 fearsome.FearsomeRoar,
                 cursed.RayOfEnfeeblement,
+                cursed.CurseOfVengeance,
                 clever.IdentifyWeaknes,
                 totemic.SpiritChainsTotem,
                 totemic.GuardianTotem,
+                illusory.PhantomMirage,
             ]
         else:
             general = [

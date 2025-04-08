@@ -28,6 +28,7 @@ from . import (
     holy,
     honorable,
     icy,
+    illusory,
     monstrous,
     organized,
     petrifying,
@@ -44,7 +45,6 @@ from . import (
     totemic,
     tough,
     trap,
-    tricky,
 )
 
 ThemedPowers: List[Power] = (
@@ -90,7 +90,7 @@ ThemedPowers: List[Power] = (
     + thuggish.ThuggishPowers
     + tough.ToughPowers
     + trap.TrapPowers
-    + tricky.TrickyPowers
+    + illusory.IllusoryPowers
     + warrior.WarriorPowers
     + zombie.ZombiePowers
 )

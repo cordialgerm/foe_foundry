@@ -11,6 +11,7 @@ from ..powers.spellcaster import shaman
 from ..powers.themed import (
     cowardly,
     cursed,
+    illusory,
     organized,
     poison,
     reckless,
@@ -20,7 +21,6 @@ from ..powers.themed import (
     thuggish,
     totemic,
     trap,
-    tricky,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -127,8 +127,8 @@ class _GoblinPowers(CustomPowerSelection):
         ]
         self.shamans = (
             [
-                tricky.ReverseFortune,
-                tricky.SpectralDuplicate,
+                illusory.ReverseFortune,
+                illusory.SpectralDuplicate,
                 cursed.BestowCurse,
                 cursed.DisfiguringCurse,
             ]

@@ -8,10 +8,17 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
-class Tricky(PowerWithStandardScoring):
+class Illusory(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
@@ -62,7 +69,7 @@ class Tricky(PowerWithStandardScoring):
         return stats.copy(**changes)
 
 
-class _Projection(Tricky):
+class _Projection(Illusory):
     def __init__(self):
         super().__init__(name="Projection", source="SRD5.1 Project Image")
 
@@ -80,7 +87,7 @@ class _Projection(Tricky):
         return [feature]
 
 
-class _SpectralDuplicate(Tricky):
+class _SpectralDuplicate(Illusory):
     def __init__(self):
         super().__init__(
             name="Spectral Duplicate", source="Foe Foundry", power_level=HIGH_POWER
@@ -98,7 +105,7 @@ class _SpectralDuplicate(Tricky):
         return [feature]
 
 
-class _MirrorImage(Tricky):
+class _MirrorImage(Illusory):
     def __init__(self):
         super().__init__(name="Mirror Image", source="SRD5.1 Mirror Image")
 
@@ -114,7 +121,7 @@ class _MirrorImage(Tricky):
         return [feature]
 
 
-class _HypnoticPattern(Tricky):
+class _HypnoticPattern(Illusory):
     def __init__(self):
         super().__init__(
             name="Hypnotic Pattern", source="SRD5.1 Hypnotic Pattern", require_cr=5
@@ -134,7 +141,7 @@ class _HypnoticPattern(Tricky):
         return [feature]
 
 
-class _ReverseFortune(Tricky):
+class _ReverseFortune(Illusory):
     def __init__(self):
         super().__init__(name="Reverse Fortune", source="Foe Foundry")
 
@@ -145,6 +152,25 @@ class _ReverseFortune(Tricky):
             recharge=4,
             description=f"When {stats.selfref} is hit by an attack, {stats.selfref} magically reverses the fortune of the attack and forces it to miss. \
                 Until the end of its next turn, {stats.selfref} gains advantage on the next attack it makes against the attacker.",
+        )
+        return [feature]
+
+
+class _PhantomMirage(Illusory):
+    def __init__(self):
+        super().__init__(
+            name="Phantom Mirage", source="Foe Foundry", power_level=LOW_POWER
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        bloodied = Condition.Bloodied.caption
+        feature = Feature(
+            name="Phantom Mirage",
+            action=ActionType.Reaction,
+            uses=1,
+            description=f"When {stats.selfref} becomes {bloodied}, it creates 4 illusory duplicates of itself in unoccupied spaces within 30 feet. \
+                The duplicates vanish at the end of {stats.selfref}'s next turn or when struck by an attack. \
+                When a creature makes an attack against {stats.selfref} that creature must roll a d6 for each duplicate. On a roll of 1, the attack hits a duplicate instead.",
         )
         return [feature]
 
@@ -178,13 +204,15 @@ class _ReverseFortune(Tricky):
 HypnoticPatern: Power = _HypnoticPattern()
 MirrorImage: Power = _MirrorImage()
 Projection: Power = _Projection()
+PhantomMirage: Power = _PhantomMirage()
 ReverseFortune: Power = _ReverseFortune()
 SpectralDuplicate: Power = _SpectralDuplicate()
 
-TrickyPowers: List[Power] = [
+IllusoryPowers: List[Power] = [
     HypnoticPatern,
     MirrorImage,
     Projection,
+    PhantomMirage,
     ReverseFortune,
     SpectralDuplicate,
 ]

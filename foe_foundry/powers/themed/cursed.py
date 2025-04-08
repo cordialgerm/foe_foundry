@@ -254,9 +254,34 @@ class _UnholyAura(CursedPower):
         return [feature]
 
 
+class _CurseOfVengeance(CursedPower):
+    def __init__(self):
+        super().__init__(
+            name="Curse of Vengeance",
+            source="Foe Foundry",
+            create_date=datetime(2025, 4, 8),
+            require_cr=3,
+            require_spellcasting=True,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        dmg = stats.attributes.proficiency
+        feature = Feature(
+            name="Curse of Vengeance",
+            action=ActionType.Feature,
+            description=f"Whenever a creature hits {stats.selfref} with an attack it must make a DC {dc} Charisma saving throw. \
+                On a failure, the creature becomes Cursed with a curse of vengeance. \
+                Whenever a cursed creature hits {stats.selfref} with an attack, it takes {dmg} necrotic damage for each creature suffering the curse.",
+        )
+
+        return [feature]
+
+
 AuraOfDespair: Power = _AuraOfDespair()
 BestowCurse: Power = _BestowCurse()
 CursedWound: Power = _CursedWound()
+CurseOfVengeance: Power = _CurseOfVengeance()
 DisfiguringCurse: Power = _DisfiguringCurse()
 RayOfEnfeeblement: Power = _RayOfEnfeeblement()
 RejectDivinity: Power = _RejectDivinity()
@@ -268,6 +293,7 @@ CursedPowers: List[Power] = [
     AuraOfDespair,
     BestowCurse,
     CursedWound,
+    CurseOfVengeance,
     DisfiguringCurse,
     RayOfEnfeeblement,
     RejectDivinity,
