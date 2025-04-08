@@ -1,3 +1,4 @@
+from .animated_armor import AnimatedArmorTemplate
 from .assassin import AssassinTemplate
 from .balor import BalorTemplate
 from .bandit import BanditTemplate
@@ -31,6 +32,7 @@ from .wolf import WolfTemplate
 from .zombie import ZombieTemplate
 
 AllTemplates: list[CreatureTemplate] = [
+    AnimatedArmorTemplate,
     AssassinTemplate,
     BalorTemplate,
     BanditTemplate,
