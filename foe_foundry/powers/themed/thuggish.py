@@ -73,7 +73,7 @@ class _KickTheLickspittle(ThuggishPower):
         feature = Feature(
             name="Kick the Lickspittle",
             action=ActionType.Reaction,
-            description=f"If {stats.selfref} fails a d20 test, they can use a reaction to blame a nearby ally within 5 feet. \
+            description=f"If {stats.selfref} fails a d20 test, they can use a reaction to blame a nearby ally within 5 feet. The ally must be a smaller size or lower CR than {stats.selfref}. \
                 The ally takes {dmg.description} bludgeoning damage and the {stats.selfref} adds this total to the attack or saving throw, potentially turning a failure or miss into a success.",
         )
         return [feature]

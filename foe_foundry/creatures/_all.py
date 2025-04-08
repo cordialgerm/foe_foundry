@@ -18,6 +18,7 @@ from .knight import KnightTemplate
 from .mage import MageTemplate
 from .medusa import MedusaTemplate
 from .nothic import HollowGazerTemplate
+from .ogre import OgreTemplate
 from .orc import OrcTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
@@ -52,6 +53,7 @@ AllTemplates: list[CreatureTemplate] = [
     KnightTemplate,
     MageTemplate,
     MedusaTemplate,
+    OgreTemplate,
     OrcTemplate,
     PriestTemplate,
     ScoutTemplate,

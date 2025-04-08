@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, Dazed, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -23,8 +24,8 @@ class GiantPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         **score_args,
     ):
-        standard_score_args = dict(
-            require_types=CreatureType.Giant, bonus_size=Size.Huge, **score_args
+        standard_score_args = (
+            dict(require_types=CreatureType.Giant, bonus_size=Size.Huge) | score_args
         )
         super().__init__(
             name=name,
@@ -307,12 +308,38 @@ class _BigWindup(GiantPower):
         return [feature]
 
 
+class _GrabAndGo(GiantPower):
+    def __init__(self):
+        super().__init__(
+            name="Grab and Go",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            bonus_size=Size.Huge,
+            bonus_roles=MonsterRole.Bruiser,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        prone = Condition.Prone.caption
+        dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d6)
+        dc = stats.difficulty_class
+        feature = Feature(
+            name="Grab and Go",
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} attempts to grab a creature within 5 feet. The target must succeed on a DC {dc} Strength saving throw or take {dmg.description} bludgeoning damage and be flung. \
+                {stats.selfref.capitalize()} whirls the creature wildly as a club, forcing each other creature within 10 feet to make a DC {dc} Dexterity saving throw, taking half the bludgeoning damage on a failure. \
+                A creature that fails either saving throw is also pushed 10 feet away and knocked {prone}.",
+        )
+        return [feature]
+
+
 BigWindup: Power = _BigWindup()
 Boulder: Power = _Boulder()
 CloudRune: Power = _CloudRune()
 Earthshaker: Power = _Earthshaker()
 FireRune: Power = _FireRune()
 FrostRune: Power = _FrostRune()
+GrabAndGo: Power = _GrabAndGo()
 HillRune: Power = _HillRune()
 StoneRune: Power = _StoneRune()
 StormRune: Power = _StormRune()
@@ -325,6 +352,7 @@ GiantPowers: List[Power] = [
     Earthshaker,
     FireRune,
     FrostRune,
+    GrabAndGo,
     HillRune,
     StoneRune,
     StormRune,

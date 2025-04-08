@@ -22,9 +22,12 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
 
+        dex_mod = max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
+        con_mod = max(0, min(stats.attributes.stat_mod(Stats.CON), 2))
+
         ac = (
             10
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
+            + max(dex_mod, con_mod)
             + max(0, min(stats.attributes.spellcasting_mod, 4))
             + (2 if uses_shield else 0)
             + quality_level

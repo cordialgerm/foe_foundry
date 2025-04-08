@@ -69,6 +69,7 @@ class _ToughWeights(CustomPowerSelection):
             technique.DisarmingAttack,
             technique.ProneAttack,
             reckless.Charger,
+            reckless.Overrun,
             reckless.Reckless,
             reckless.BloodiedRage,
             reckless.Toss,
