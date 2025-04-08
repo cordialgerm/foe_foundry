@@ -111,7 +111,7 @@ class _ChainCrack(OgrePower):
             name="Chaincrack",
             action=ActionType.Action,
             recharge=5,
-            description=f"{stats.selfref.capitalize()} swings its chain at up to three creatures within 30 feet. The targeted creatures must make a a DC {dc} Strength saving throw. \
+            description=f"{stats.selfref.capitalize()} swings its chain at up to three creatures within 30 feet. The targeted creatures must make a DC {dc} Strength saving throw. \
                 On a failure, a creatures takes {dmg.description} bludgeoning damage and is {dazed.caption} until the end of its next turn. On a success, a creatures takes half damage instead. {dazed.description_3rd}",
         )
         return [feature]
