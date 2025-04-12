@@ -1,10 +1,9 @@
-from typing import List
-
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...role_types import MonsterRole
 from ...spells import CasterType, abjuration, enchantment
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
@@ -56,20 +55,26 @@ class _OathCaster(_Spellcaster):
 
         super().__init__(**args)
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return super().modify_stats_inner(stats).with_flags(flags.HAS_HEALING)
 
-def OathCasters() -> List[Power]:
-    return [
-        _OathCaster(
-            name="Oath Adept",
-            min_cr=6,
-            max_cr=11,
-            spells=OathAdeptSpells,
-            power_level=LOW_POWER,
-        ),
-        _OathCaster(
-            name="Oath Master",
-            min_cr=12,
-            spells=OathMasterSpells,
-            power_level=HIGH_POWER,
-        ),
-    ]
+
+OathAdept: Power = _OathCaster(
+    name="Oath Adept",
+    min_cr=6,
+    max_cr=11,
+    spells=OathAdeptSpells,
+    power_level=LOW_POWER,
+)
+OathMaster: Power = _OathCaster(
+    name="Oath Master",
+    min_cr=12,
+    spells=OathMasterSpells,
+    power_level=HIGH_POWER,
+)
+
+
+OathCasters: list[Power] = [
+    OathAdept,
+    OathMaster,
+]

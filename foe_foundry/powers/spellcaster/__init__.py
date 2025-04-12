@@ -24,7 +24,7 @@ from .base import WizardPower  # noqa
 
 SpellcasterPowers: List[Power] = (
     abjurer.AbjurationWizards()
-    + celestial.CelestialCasters()
+    + celestial.CelestialCasters
     + conjurer.ConjurationWizards()
     + cult.CultCasters()
     + divination.DivinationWizards()
@@ -35,7 +35,7 @@ SpellcasterPowers: List[Power] = (
     + illusionist.IllusionistWizards()
     + magic.MagicPowers
     + metamagic.MetamagicPowers
-    + oath.OathCasters()
+    + oath.OathCasters
     + necromancer.NecromancerWizards
     + psionic.PsionicCasters()
     + shaman.ShamanPowers

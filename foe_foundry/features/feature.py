@@ -16,13 +16,16 @@ class Feature:
     recharge: int | None = None
     uses: int | None = None
     replaces_multiattack: int = 0
+    special_condition: str | None = None
     hidden: bool = False
     modifies_attack: bool = False
     creates_token: bool = False
     title: str = field(init=False)
 
     def __post_init__(self):
-        if self.recharge is not None:
+        if self.special_condition is not None:
+            self.title = f"{self.name} ({self.special_condition})"
+        elif self.recharge is not None:
             if self.recharge == 6:
                 self.title = f"{self.name} (Recharge {self.recharge})"
             else:

@@ -51,6 +51,8 @@ def breath(
     save: str,
     on_failure: str | Callable[[BaseStatblock, DieFormula], str] | None = None,
     verb: str = "breathes",
+    damage_multiplier=1.0,
+    **args,
 ) -> Feature:
     if stats.cr <= 3:
         distance = 15
@@ -64,7 +66,7 @@ def breath(
     template = f"{distance} ft cone"
 
     dmg = stats.target_value(
-        max(1.25, 0.7 * stats.multiattack),
+        dpr_proportion=0.7 * damage_multiplier,
         suggested_die=Die.d8,
     )
 
@@ -85,6 +87,7 @@ def breath(
             Each creature in the area must make a DC {dc} {save} save. \
             On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success. \
             {additional_description}",
+        **args,
     )
     return feature
 

@@ -972,7 +972,7 @@ class _PolearmMaster(PowerWithStandardScoring):
         feature = Feature(
             name="Polearm Master",
             action=ActionType.Reaction,
-            description=f"Whenever a hostile creature enters {stats.selfref.capitalize()}'s reach, it may make an attack of opportunity against that creature.",
+            description=f"Whenever a hostile creature enters {stats.selfref}'s reach, it may make an attack of opportunity against that creature.",
         )
         return [feature]
 
