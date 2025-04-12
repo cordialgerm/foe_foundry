@@ -80,27 +80,31 @@ class _CelestialCaster(_Spellcaster):
         super().__init__(**args)
 
 
-def CelestialCasters() -> List[Power]:
-    return [
-        _CelestialCaster(
+CelestialAdept: Power = _CelestialCaster(
             name="Celestial Adept",
             min_cr=2,
             max_cr=4,
             spells=CelestialAdeptSpells,
             power_level=LOW_POWER,
-        ),
-        _CelestialCaster(
-            name="Celestial Master",
-            min_cr=5,
-            max_cr=10,
-            spells=CelestialMasterSpells,
-            power_level=HIGH_POWER,
-        ),
-        _CelestialCaster(
-            name="Celestial Expert",
-            min_cr=11,
-            max_cr=40,
-            spells=CelestialExpertSpells,
-            power_level=HIGH_POWER,
-        ),
-    ]
+)
+CelestialMaster: Power =  _CelestialCaster(
+    name="Celestial Master",
+    min_cr=5,
+    max_cr=10,
+    spells=CelestialMasterSpells,
+    power_level=HIGH_POWER,
+)
+CelestialExpert: Power = _CelestialCaster(
+    name="Celestial Expert",
+    min_cr=11,
+    max_cr=40,
+    spells=CelestialExpertSpells,
+    power_level=HIGH_POWER,
+)
+
+
+CelestialCasters: list[Power] = [
+    CelestialAdept,
+    CelestialMaster,
+    CelestialExpert,
+]

@@ -70,11 +70,11 @@ class _KnightWeights(CustomPowerSelection):
             holy.Heroism,
         ]
 
-        suppress = celestial.CelestialCasters() + gadget.GadgetPowers
+        suppress = celestial.CelestialCasters + gadget.GadgetPowers
 
         spellcaster_powers = []
         if self.cr >= 6:
-            spellcaster_powers += oath.OathCasters()
+            spellcaster_powers += oath.OathCasters
 
         if p in suppress:
             return CustomPowerWeight(-1)

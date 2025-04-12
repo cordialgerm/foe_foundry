@@ -295,6 +295,22 @@ const artCredits = [
         Some artwork copyright William McAusland, used with permission.
       </>
     )
+  },
+  {
+    title: "Art by John Latta",
+    description: (
+      <>
+        Some artwork © 2025 John Latta, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Jacob E. Blackmon",
+    description: (
+      <>
+        Some artwork copyright Jacob E. Blackmon, used with permission. All rights reserved.
+      </>
+    )
   }
 ];
 
@@ -370,19 +386,7 @@ const legalNotices = [
         .
       </span>
     ),
-  },
-  {
-    title: "OGL1.0a Legal Notice",
-    description: (
-      <span>
-        This work includes material licensed under the OGL1.0a. See{" "}
-        <Link to="/ogl">OGL Page</Link> for details. <br />
-        <OglCopyrightNotice />
-      </span>
-    ),
-    url: "/ogl",
-    actionText: "View OGL1.0a Legal Notice",
-  },
+  }
 ];
 
 function Credit(credit: React.PropsWithChildren<CreditProps>) {

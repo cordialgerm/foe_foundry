@@ -76,7 +76,7 @@ class _PriestWeights(CustomPowerSelection):
                 holy.WordOfRadiance
             )  # more interesting powers available
 
-        caster_powers = CelestialCasters()
+        caster_powers = CelestialCasters
 
         techniques = [technique.BlindingAttack]
 

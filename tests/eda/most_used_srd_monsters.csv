@@ -4,7 +4,7 @@ Skeleton,Undead,0.25,"Classic undead, dungeon filler","LMoP, CoS, OotA",True,Tru
 Zombie,Undead,0.25,"Classic undead, slow but tough","CoS, OotA, ToA",True,True
 Bandit,Humanoid (any race),0.125,Common humanoid threat,"LMoP, Icespire, CoS",True,True
 Wolf,Beast,0.25,Wilderness encounters,"LMoP, Icespire",True,True
-Kobold,Humanoid (kobold),0.125,"Traps, group tactics","LMoP, Icespire",True,False
+Kobold,Humanoid (kobold),0.125,"Traps, group tactics","LMoP, Icespire",True,True
 Orc,Humanoid (orc),0.5,Aggressive melee humanoid,"LMoP, HotDQ",True,True
 Scout,Humanoid (any race),0.5,Ranged humanoid enemy,"HotDQ, Icespire",True,True
 Ogre,Giant,2.0,Strong melee brute,"LMoP, OotA, HotDQ",True,True
