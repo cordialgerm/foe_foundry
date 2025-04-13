@@ -19,7 +19,6 @@ from ..powers.spellcaster import druidic, metamagic
 from ..powers.themed import (
     gadget,
     icy,
-    organized,
     poison,
     shamanic,
     storm,
@@ -84,9 +83,7 @@ class _DruidWeights(CustomPowerSelection):
 
         elemental_powers = icy.IcyPowers + storm.StormPowers + poison.PoisonPowers
 
-        suppress = (
-            gadget.GadgetPowers + organized.OrganizedPowers + technique.TechniquePowers
-        )
+        suppress = gadget.GadgetPowers + technique.TechniquePowers
 
         if p in suppress:
             return CustomPowerWeight(-1, ignore_usual_requirements=True)

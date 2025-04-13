@@ -1,6 +1,5 @@
 from typing import List
 
-from ..creature import skeletal, warrior, zombie
 from ..power import Power
 from . import (
     aberrant,
@@ -30,7 +29,6 @@ from . import (
     icy,
     illusory,
     monstrous,
-    organized,
     petrifying,
     poison,
     psychic,
@@ -74,13 +72,11 @@ ThemedPowers: List[Power] = (
     + honorable.HonorablePowers
     + icy.IcyPowers
     + monstrous.MonstrousPowers
-    + organized.OrganizedPowers
     + petrifying.PetrifyingPowers
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
     + serpentine.SerpentinePowers
-    + skeletal.SkeletalPowers
     + sneaky.SneakyPowers
     + storm.StormPowers
     + technique.TechniquePowers
@@ -91,6 +87,4 @@ ThemedPowers: List[Power] = (
     + tough.ToughPowers
     + trap.TrapPowers
     + illusory.IllusoryPowers
-    + warrior.WarriorPowers
-    + zombie.ZombiePowers
 )

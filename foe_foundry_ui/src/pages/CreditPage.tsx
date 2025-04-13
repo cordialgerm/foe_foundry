@@ -311,6 +311,14 @@ const artCredits = [
         Some artwork copyright Jacob E. Blackmon, used with permission. All rights reserved.
       </>
     )
+  },
+  {
+    title: "Art by Marcum Curlee",
+    description: (
+      <>
+        Some artwork licensed with permission from Marcum Curlee
+      </>
+    )
   }
 ];
 

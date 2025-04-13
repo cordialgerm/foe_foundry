@@ -8,7 +8,7 @@ from typing import Callable, Iterable, TypeAlias
 
 import numpy as np
 
-from foe_foundry.utils import find_image
+from foe_foundry.utils import find_image, find_lore
 
 from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
@@ -146,6 +146,16 @@ class CreatureTemplate:
                 image_urls = find_image(self.key)
             urls[variant.key] = image_urls
         return urls
+
+    @cached_property
+    def lore_md(self) -> str:
+        markdown = ""
+        for lore_path in find_lore(self.key):
+            with lore_path.open("r") as f:
+                markdown += f.read()
+            markdown += "\n\n"
+
+        return markdown
 
     @property
     def key(self) -> str:

@@ -1,12 +1,26 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.utils import easy_multiple_of_five
+
+from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+
+
+def is_positive_leader(c: BaseStatblock) -> bool:
+    return c.creature_type in {
+        CreatureType.Humanoid,
+        CreatureType.Celestial,
+        CreatureType.Dragon,
+        CreatureType.Elemental,
+        CreatureType.Fey,
+        CreatureType.Giant,
+    }
 
 
 class LeaderPower(PowerWithStandardScoring):
@@ -46,7 +60,7 @@ class _CommandTheAttack(LeaderPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Command the Attack",
-            description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
+            description=f"{stats.roleref.capitalize()} issues a command to all allied creatures within 30 feet. \
                           Creatures who can see or hear {stats.roleref} can use their reaction to make a single weapon attack with advantage.",
             action=ActionType.Action,
             replaces_multiattack=1,
@@ -83,7 +97,7 @@ class _Intimidate(LeaderPower):
 class _StayInFormation(LeaderPower):
     def __init__(self):
         super().__init__(
-            name="Move Out",
+            name="Stay In Formation",
             source="A5E SRD Bugbear Chief",
         )
 
@@ -93,18 +107,109 @@ class _StayInFormation(LeaderPower):
             action=ActionType.Action,
             recharge=5,
             replaces_multiattack=1,
-            description=f"{stats.roleref.capitalize()} issues a command to all nonhostile creatures within 30 feet. \
+            description=f"{stats.roleref.capitalize()} issues a command to all allied creatures within 30 feet. \
                 Creatures who can see or hear {stats.roleref} can use their reaction to move up to half their speed without provoking opportunity attacks.",
         )
         return [feature]
 
 
+class _FanaticFollowers(LeaderPower):
+    def __init__(self):
+        super().__init__(
+            name="Fanatic Followers",
+            source="A5E SRD Crime Boss",
+            power_level=HIGH_POWER,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        temphp = easy_multiple_of_five(stats.cr, min_val=5)
+        feature = Feature(
+            name="Fanatic Followers",
+            action=ActionType.Reaction,
+            description=f"Whenever {stats.selfref} would be hit by an attack, they command an ally within 5 feet to use its reaction to switch places with {stats.selfref}. \
+                The ally is hit by the attack instead of the boss. If the ally is killed by this attack, then all allies of {stats.selfref} gains {temphp} temporary hp.",
+        )
+        return [feature]
+
+
+class _InspiringCommander(LeaderPower):
+    def __init__(self):
+        super().__init__(
+            name="Inspiring Commander",
+            source="A5E SRD Knight",
+            power_level=HIGH_POWER,
+            require_callback=is_positive_leader,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Inspiring Commander",
+            action=ActionType.Action,
+            uses=1,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} inspires other creatures of its choice within 30 feet that can hear and understand it. \
+                For the next minute, inspired creatures gain a +{stats.attributes.proficiency} bonus to attack rolls and saving throws.",
+        )
+        return [feature]
+
+
+class _CommandTheTroops(LeaderPower):
+    def __init__(self):
+        super().__init__(
+            name="Command the Troops",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            create_date=datetime(2025, 2, 23),
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Command the Troops",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} commands a willing creature within 30 feet to use its reaction and make an attack at advantage",
+        )
+
+        return [feature]
+
+
+class _RallyTheTroops(LeaderPower):
+    def __init__(self):
+        super().__init__(
+            name="Rally the Troops",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+            create_date=datetime(2025, 2, 23),
+            require_callback=is_positive_leader,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hp = easy_multiple_of_five(stats.target_value(0.5).average, min_val=5)
+
+        feature = Feature(
+            name="Rally the Troops",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} rallies all friendly creatures within 60 feet, granting them {hp} temporary hit points.",
+        )
+
+        return [feature]
+
+
+CommandTheTroops: Power = _CommandTheTroops()
 CommandTheAttack: Power = _CommandTheAttack()
+FanaticFollowers: Power = _FanaticFollowers()
+InspiringCommander: Power = _InspiringCommander()
 Intimidate: Power = _Intimidate()
+RallyTheTroops: Power = _RallyTheTroops()
 StayInFormation: Power = _StayInFormation()
 
 LeaderPowers: List[Power] = [
+    CommandTheTroops,
     CommandTheAttack,
+    FanaticFollowers,
     Intimidate,
+    RallyTheTroops,
     StayInFormation,
 ]

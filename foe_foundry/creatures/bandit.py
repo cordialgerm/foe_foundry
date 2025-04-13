@@ -7,7 +7,7 @@ from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, PowerType, select_powers
 from ..powers.roles import artillery, leader
-from ..powers.themed import gadget, honorable, organized, sneaky, technique, thuggish
+from ..powers.themed import gadget, honorable, sneaky, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -53,7 +53,7 @@ class _BanditPowers(CustomPowerSelection):
     def custom_weight(self, power: Power) -> CustomPowerWeight:
         captain_powers = [
             leader.CommandTheAttack,
-            organized.FanaticFollowers,
+            leader.FanaticFollowers,
             leader.StayInFormation,
         ] + thuggish.ThuggishPowers
 

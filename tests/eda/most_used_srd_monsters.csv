@@ -9,7 +9,7 @@ Orc,Humanoid (orc),0.5,Aggressive melee humanoid,"LMoP, HotDQ",True,True
 Scout,Humanoid (any race),0.5,Ranged humanoid enemy,"HotDQ, Icespire",True,True
 Ogre,Giant,2.0,Strong melee brute,"LMoP, OotA, HotDQ",True,True
 Ghoul,Undead,1.0,Paralysis and fear,"CoS, OotA",True,True
-Wight,Undead,3.0,"Drains life, leads undead","CoS, OotA",True,False
+Wight,Undead,3.0,"Drains life, leads undead","CoS, OotA",True,True
 Mimic,Monstrosity,2.0,"Trap creature, classic twist","LMoP, CoS",True,False
 Troll,Giant,5.0,"Regeneration, mid-level boss","HotDQ, OotA",True,False
 Gelatinous Cube,Ooze,2.0,Transparent dungeon hazard,"OotA, Dungeon of the Mad Mage",True,False

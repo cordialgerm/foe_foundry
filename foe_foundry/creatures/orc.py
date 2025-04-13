@@ -12,7 +12,7 @@ from ..powers import (
     Power,
     select_powers,
 )
-from ..powers.roles import defender, leader
+from ..powers.roles import defender, leader, soldier
 from ..powers.species import orc
 from ..powers.spellcaster import shaman
 from ..powers.themed import (
@@ -24,7 +24,6 @@ from ..powers.themed import (
     fearsome,
     gadget,
     honorable,
-    organized,
     reckless,
     shamanic,
     sneaky,
@@ -32,7 +31,6 @@ from ..powers.themed import (
     thuggish,
     totemic,
     tough,
-    warrior,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -158,7 +156,7 @@ def orc_powers(
             always=[],
             conditional=technique.TechniquePowers
             + reckless.RecklessPowers
-            + warrior.WarriorPowers,
+            + soldier.SoldierPowers,
             suppress=[],
             delta=LOW_POWER,
         )
@@ -207,7 +205,7 @@ def orc_powers(
                 technique.WhirlwindOfSteel,
                 tough.JustAScratch,
             ],
-            conditional=honorable.HonorablePowers + warrior.WarriorPowers,
+            conditional=honorable.HonorablePowers + soldier.SoldierPowers,
             suppress=[],
         )
     elif variant is OrcBloodletterVariant:
@@ -253,9 +251,12 @@ def orc_powers(
             force=force,
             always=[
                 leader.CommandTheAttack,
+                leader.CommandTheTroops,
                 leader.StayInFormation,
+                leader.FanaticFollowers,
+                leader.RallyTheTroops,
+                leader.Intimidate,
                 defender.Taunt,
-                organized.InspiringCommander,
                 technique.BaitAndSwitch,
                 technique.ArmorMaster,
                 technique.BleedingAttack,

@@ -17,7 +17,6 @@ from ..powers.themed import (
     domineering,
     fearsome,
     flying,
-    organized,
     reckless,
     technique,
     tough,
@@ -77,7 +76,7 @@ class _BalorWeights(CustomPowerSelection):
         powers.add(domineering.CommandingPresence)
         powers.add(fearsome.FearsomeRoar)
         powers.add(flying.WingedCharge)
-        powers.add(organized.FanaticFollowers)
+        powers.add(leader.FanaticFollowers)
         powers.add(tough.LimitedMagicImmunity)
         powers.add(reckless.WildCleave)
         powers.add(technique.DazingAttacks)

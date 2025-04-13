@@ -14,6 +14,7 @@ from ..powers import (
 )
 from ..powers.creature import dire_bunny
 from ..powers.creature_type import beast
+from ..powers.roles import soldier
 from ..powers.themed import (
     aberrant,
     bestial,
@@ -23,7 +24,6 @@ from ..powers.themed import (
     illusory,
     monstrous,
     serpentine,
-    warrior,
 )
 from ..role_types import MonsterRole
 from ..size import Size
@@ -66,7 +66,7 @@ class _DireBunnyWeights(CustomPowerSelection):
         )
         self.disease_power = disease_power
 
-        leap_powers = [warrior.MightyLeap, monstrous.Pounce, dire_bunny.ThumpOfDread]
+        leap_powers = [soldier.MightyLeap, monstrous.Pounce, dire_bunny.ThumpOfDread]
         leap_index = self.rng.choice(len(leap_powers))
         leap_power = leap_powers[leap_index]
         self.leap_power = leap_power

@@ -15,8 +15,8 @@ from ...utils.summoning import determine_summon_formula
 from .. import flags
 from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..roles import artillery, bruiser
-from ..themed import fast, holy, organized, reckless, tough
+from ..roles import artillery, bruiser, leader
+from ..themed import fast, holy, reckless, tough
 
 
 class _DeathKnight(PowerWithStandardScoring):
@@ -747,7 +747,7 @@ class _Paladin(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature1 = organized.InspiringCommander.generate_features(stats)
+        feature1 = leader.InspiringCommander.generate_features(stats)
         feature2 = holy.DivineSmite.generate_features(stats)
         return feature1 + feature2
 
@@ -756,7 +756,7 @@ class _Paladin(PowerWithStandardScoring):
             secondary_damage_type=DamageType.Radiant, creature_class="Paladin"
         )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
-        stats = organized.InspiringCommander.modify_stats_inner(stats)
+        stats = leader.InspiringCommander.modify_stats_inner(stats)
         stats = holy.DivineSmite.modify_stats_inner(stats)
         return stats
 

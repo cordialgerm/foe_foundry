@@ -10,8 +10,7 @@ from ..powers import (
     PowerType,
     select_powers,
 )
-from ..powers.creature.warrior import PackTactics
-from ..powers.roles import leader
+from ..powers.roles import leader, soldier
 from ..powers.themed import cruel, honorable, reckless, technique, thuggish
 from ..role_types import MonsterRole
 from ..size import Size
@@ -94,7 +93,7 @@ class _ToughWeights(CustomPowerSelection):
             return CustomPowerWeight(0.75)
 
     def force_powers(self) -> list[Power]:
-        return [PackTactics]
+        return [soldier.PackTactics]
 
 
 def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
