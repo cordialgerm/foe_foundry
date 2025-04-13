@@ -42,7 +42,7 @@ class CursedPower(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        if stats.secondary_damage_type != DamageType.Necrotic:
+        if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
 
         return stats
@@ -297,5 +297,7 @@ CursedPowers: List[Power] = [
     DisfiguringCurse,
     RayOfEnfeeblement,
     RejectDivinity,
+    ReplaceShadow,
+    UnholyAura,
     VoidSiphon,
 ]

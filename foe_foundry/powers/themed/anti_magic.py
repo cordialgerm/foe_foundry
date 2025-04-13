@@ -9,7 +9,6 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
-from .organized import score_could_be_organized
 
 
 class _ArcaneHunt(PowerWithStandardScoring):
@@ -77,12 +76,8 @@ class _FractalForm(PowerWithStandardScoring):
 
 class _Spellbreaker(PowerWithStandardScoring):
     def __init__(self):
-        def is_organized(c: BaseStatblock) -> bool:
-            return score_could_be_organized(c, requires_intelligence=True) > 0
-
         score_args = dict(
             require_attack_types=AttackType.MeleeWeapon,
-            require_callback=is_organized,
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
             attack_names=[
                 weapon.SwordAndShield,

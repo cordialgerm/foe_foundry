@@ -8,10 +8,8 @@ from ..powers import (
     PowerType,
     select_powers,
 )
-from ..powers.creature.warrior import MightyLeap, WarriorPowers
-from ..powers.themed.gadget import NetPowers
-from ..powers.themed.organized import OrganizedPowers
-from ..powers.themed.technique import TechniquePowers
+from ..powers.roles import soldier
+from ..powers.themed import gadget, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -33,15 +31,11 @@ class _WarriorWeights(CustomPowerSelection):
         self.variant = variant
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p is MightyLeap and self.stats.cr <= 7:
-            return CustomPowerWeight(
-                weight=0
-            )  # low-cr warriors don't have a mighty leap - they're too mundane
-        elif p in NetPowers:
+        if p in gadget.NetPowers:
             return CustomPowerWeight(weight=0)  # warriors don't fight with nets
-        elif p in OrganizedPowers or p in WarriorPowers:
+        elif p in soldier.SoldierPowers:
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p in TechniquePowers:
+        elif p in technique.TechniquePowers:
             # we want to boost techniques, but we can't skip requirements for them
             return CustomPowerWeight(weight=2.5, ignore_usual_requirements=False)
         elif p.power_type == PowerType.Species:

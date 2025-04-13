@@ -30,6 +30,7 @@ from .template import CreatureTemplate, GenerationSettings
 from .tough import ToughTemplate
 from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
+from .wight import WightTemplate
 from .wolf import WolfTemplate
 from .zombie import ZombieTemplate
 
@@ -65,6 +66,7 @@ AllTemplates: list[CreatureTemplate] = [
     ToughTemplate,
     VrockTemplate,
     WarriorTemplate,
+    WightTemplate,
     WolfTemplate,
     ZombieTemplate,
 ]

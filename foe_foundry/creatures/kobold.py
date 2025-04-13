@@ -7,7 +7,7 @@ from ..ac_templates import ChainShirt, HolyArmor, NaturalArmor, SplintArmor
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerSelection, select_powers
-from ..powers.creature import kobold, warrior
+from ..powers.creature import kobold
 from ..powers.creature_type import dragon
 from ..powers.roles import ambusher, artillery, leader, skirmisher, soldier, support
 from ..powers.spellcaster import oath
@@ -95,7 +95,7 @@ def _kobold_powers(
             cr=cr,
             force=[kobold.DraconicServants, soldier.Phalanx],
             powers=[
-                warrior.PackTactics,
+                soldier.PackTactics,
                 technique.BaitAndSwitch,
                 gadget.BasicNet,
                 gadget.SmokeBomb,
@@ -132,7 +132,7 @@ def _kobold_powers(
             cr=cr,
             force=[kobold.DraconicServants, kobold.DraconicStandard, soldier.Phalanx],
             powers=[
-                warrior.PackTactics,
+                soldier.PackTactics,
                 technique.GrazingAttack,
                 technique.PolearmMaster,
                 technique.CleavingAttack,

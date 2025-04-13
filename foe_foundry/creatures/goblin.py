@@ -12,7 +12,6 @@ from ..powers.themed import (
     cowardly,
     cursed,
     illusory,
-    organized,
     poison,
     reckless,
     shamanic,
@@ -137,7 +136,7 @@ class _GoblinPowers(CustomPowerSelection):
         )
         self.leaders = [
             leader.CommandTheAttack,
-            organized.FanaticFollowers,
+            leader.FanaticFollowers,
             leader.StayInFormation,
         ] + thuggish.ThuggishPowers
 

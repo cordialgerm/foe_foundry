@@ -8,11 +8,9 @@ from ..powers import (
     PowerType,
     select_powers,
 )
-from ..powers.creature.guard import GuardPowers
-from ..powers.themed.gadget import GrenadePowers, NetPowers
-from ..powers.themed.organized import OrganizedPowers
-from ..powers.themed.sneaky import SneakyPowers
-from ..powers.themed.technique import TechniquePowers
+from ..powers.creature import guard
+from ..powers.roles import leader
+from ..powers.themed import gadget, sneaky, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -33,16 +31,16 @@ class _CustomWeights(CustomPowerSelection):
         self.variant = variant
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in GuardPowers:
+        if p in guard.GuardPowers:
             return CustomPowerWeight(weight=2, ignore_usual_requirements=True)
-        elif p in OrganizedPowers:
-            return CustomPowerWeight(weight=1.25, ignore_usual_requirements=True)
-        elif p in TechniquePowers:
+        elif p in leader.LeaderPowers:
+            return CustomPowerWeight(weight=1.25, ignore_usual_requirements=False)
+        elif p in technique.TechniquePowers:
             # we want to boost techniques, but we can't skip requirements for them
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=False)
-        elif p in NetPowers or p in GrenadePowers:
+        elif p in gadget.NetPowers or p in gadget.GrenadePowers:
             return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p in SneakyPowers:
+        elif p in sneaky.SneakyPowers:
             # guards aren't usually sneaky, so downrank
             return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
         elif p.power_type == PowerType.Species:

@@ -13,7 +13,8 @@ from ..powers import (
 )
 from ..powers.creature import wolf
 from ..powers.creature_type import beast
-from ..powers.themed import bestial, breath, earthy, flying, icy, monstrous, warrior
+from ..powers.roles import soldier
+from ..powers.themed import bestial, breath, earthy, flying, icy, monstrous
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -52,11 +53,11 @@ class _WolfWeights(CustomPowerSelection):
 
     def force_powers(self) -> list[Power]:
         if self.variant is FrostwolfVariant:
-            return [warrior.PackTactics, wolf.SnappingJaws, breath.FlashFreezeBreath]
+            return [soldier.PackTactics, wolf.SnappingJaws, breath.FlashFreezeBreath]
         elif self.stats.cr >= 1:
-            return [warrior.PackTactics, wolf.SnappingJaws]
+            return [soldier.PackTactics, wolf.SnappingJaws]
         else:
-            return [warrior.PackTactics]
+            return [soldier.PackTactics]
 
     def power_delta(self) -> float:
         n = len(self.force_powers())

@@ -37,6 +37,7 @@ class MonsterTemplateData:
 
     saves: str
     skills: str
+    damage_vulnerabilities: str
     damage_resistances: str
     damage_immunities: str
     condition_immunities: str
@@ -231,6 +232,9 @@ class MonsterTemplateData:
             CHA=stats.attributes.CHA,
             saves=stats.attributes.describe_saves(),
             skills=stats.attributes.describe_skills(),
+            damage_vulnerabilities=_damage_list(
+                stats.damage_vulnerabilities, nonmagical=False
+            ),
             damage_resistances=_damage_list(
                 stats.damage_resistances, stats.nonmagical_resistance
             ),

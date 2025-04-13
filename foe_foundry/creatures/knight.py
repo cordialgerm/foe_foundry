@@ -11,7 +11,7 @@ from ..powers import (
 )
 from ..powers.roles import defender, leader
 from ..powers.spellcaster import celestial, oath
-from ..powers.themed import gadget, holy, honorable, organized, technique
+from ..powers.themed import gadget, holy, honorable, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
@@ -53,7 +53,11 @@ class _KnightWeights(CustomPowerSelection):
             leader.StayInFormation,
             defender.Taunt,
             defender.ZoneOfControl,
-            organized.InspiringCommander,
+            leader.InspiringCommander,
+            leader.RallyTheTroops,
+            leader.CommandTheTroops,
+            leader.CommandTheAttack,
+            leader.StayInFormation,
             technique.BaitAndSwitch,
             technique.ArmorMaster,
             technique.BleedingAttack,

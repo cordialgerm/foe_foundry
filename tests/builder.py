@@ -3,7 +3,7 @@ from typing import cast
 
 import ipywidgets as widgets
 import numpy as np
-from IPython.display import HTML, DisplayHandle, display
+from IPython.display import HTML, DisplayHandle, Markdown, display
 from IPython.display import Image as IPythonImage
 from PIL import Image
 
@@ -179,6 +179,8 @@ def display_stat_builder() -> DisplayHandle | None:
             img.save(io, format="PNG")
             io.seek(0)
             output.append_display_data(IPythonImage(data=io.getbuffer()))
+
+        output.append_display_data(Markdown(template.lore_md))
 
     render_button.on_click(on_button_clicked)
     random_theme_button.on_click(on_random_theme_button_clicked)

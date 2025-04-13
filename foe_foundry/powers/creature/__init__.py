@@ -16,7 +16,7 @@ from .simulacrum import SimulacrumPowers
 from .skeletal import SkeletalPowers
 from .spider import SpiderPowers
 from .vrock import VrockPowers
-from .warrior import WarriorPowers
+from .wight import WightPowers
 from .wolf import WolfPowers
 from .zombie import ZombiePowers
 
@@ -39,7 +39,7 @@ CreaturePowers = (
     + SpiderPowers
     + SimulacrumPowers
     + VrockPowers
-    + WarriorPowers
+    + WightPowers
     + WolfPowers
     + ZombiePowers
 )
