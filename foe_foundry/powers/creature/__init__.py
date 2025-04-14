@@ -10,6 +10,7 @@ from .guard import GuardPowers
 from .hydra import HydraPowers
 from .kobold import KoboldPowers
 from .mage import MagePowers
+from .mimic import MimicPowers
 from .nothic import NothicPowers
 from .ogre import OgrePowers
 from .simulacrum import SimulacrumPowers
@@ -33,6 +34,7 @@ CreaturePowers = (
     + HydraPowers
     + KoboldPowers
     + MagePowers
+    + MimicPowers
     + NothicPowers
     + OgrePowers
     + SkeletalPowers

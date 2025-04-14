@@ -158,7 +158,7 @@ class _MarkTheMeal(BestialPower):
             name="Mark the Meal",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"Immediately after {stats.selfref.capitalize()} hits a creature, it marks that creature as its meal. It has advantage on attack rolls against that creature as long as that creature has lost at least one hit point.",
+            description=f"Immediately after {stats.selfref} hits a creature, it marks that creature as its meal. It has advantage on attack rolls against that creature as long as that creature has lost at least one hit point.",
         )
         return [feature]
 

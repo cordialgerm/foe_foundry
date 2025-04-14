@@ -22,9 +22,16 @@ Wights are the dead and frozen corpses of wicked champions of bygone eras whose 
 
 ## Encounters
 
+- **Icy Ambush**: A **Wight** lays hidden underneath icy water, waiting to drag any unsuspecting victims to their frozen demise
+- **Sacrifical Patrol**: The PCs come across a patrol of **Skeleton**s led by a **Wight**. Among them, an important-looking prisoner is bound up with icy chains and is being led to a desecrated shrine for dark rituals.
+- **Grave-Barrows**: The PCs wander through ancient burial grounds thick with clamy mist. All around, ancient hands claw their way to freedom as a group of blue-eyed **Wight Fell Champion**s emerge
+- **Cursed Domain**: A **Wight Lord** is bound by an ancient curse to drain the life of all who enter its domain. The curse can only be broken by someone willingly offering their life to end the curse.
+
+## Adventures
+
 - **The Ruined Watchtower**: A crumbling watchtower in a cursed forest is the lair of a **Wight** who once served as a captain of the guard. His skeletal soldiers (**Skeleton**) still patrol the ruins.
-- **The Cursed Tomb**: A Wight-queen (**Wight-Lord**), betrayed by her lover, haunts her shattered palace beneath the earth. Explorers must contend with her rage and her spectral knights (**Wight**).
+- **The Cursed Tomb**: A Wight-queen (**Wight Lord**), betrayed by her lover, haunts her shattered palace beneath the earth. Explorers must contend with her rage and her spectral knights (**Wight**).
 - **Ghostly Siege**: In a remote village, farmers wake to find crops ruined by frost and dead relatives clawing at their doors (**Zombie**) — the work of a **Wight** seeking to raise an undead army for some grim purpose.
 - **Grim Assassin**: A **Wight** bound by an ancient pact still hunts down the descendants of those who betrayed its master, appearing by nightfall to claim the blood debt.
 - **Cursed Battlefield**: In cursed plains where ancient armies clashed, two competing **Wight Fell Champion** generals lead endless skirmishes between their undead armies.
-- **The Fell Court**: A foul **Lich** has assembled seven dread **Wight Fell Champions** who vie for their master’s favor, each roaming the land in search of a terrible secret lost to mortal memory...
+- **The Fell Court**: A foul **Lich** has assembled seven dread **Wight Fell Champion**s who vie for their master’s favor, each roaming the land in search of a terrible secret lost to mortal memory...

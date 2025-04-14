@@ -319,6 +319,17 @@ const artCredits = [
         Some artwork licensed with permission from Marcum Curlee
       </>
     )
+  },
+  {
+    title: "Art by Tara Quinn",
+    description: (
+      <>
+        This work is licensed under a Creative Commons Attribution 4.0 International License.
+        The license is available at https://creativecommons.org/licenses/by/4.0/
+
+        Where appropriate, please include a link to the following product URL in your attribution: https://www.drivethrurpg.com/en/product/494686/science-fiction-stock-art-illustrations-by-tara-quinn
+      </>
+    )
   }
 ];
 
