@@ -78,21 +78,8 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         image_paths.update(image)
 
     images = []
-    for path in image_paths:
-        img = Image.open(path)
-        if img.height >= img.width and img.height > 500:
-            new_width = int(500.0 / img.height * img.width)
-            img.thumbnail((new_width, 500))
-        elif img.width >= img.height and img.width > 500:
-            new_height = int(500.0 / img.width * img.height)
-            img.thumbnail((500, new_height))
-
-        io = BytesIO()
-        img.save(io, format="png")
-        io.seek(0)
-        bytes_data = io.read()
-        base64_bytes = base64.b64encode(bytes_data)
-        base64_str = base64_bytes.decode("utf-8")
+    for img_path in image_paths:
+        base64_str = _resize_image_as_base64_png(img_path)
         images.append(dict(image_ext="png", image_base64=base64_str))
 
     context.update(images=images)
@@ -125,3 +112,21 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         f.write(html_raw)
 
     return path
+
+
+def _resize_image_as_base64_png(path: Path, max_size: int = 300) -> str:
+    img = Image.open(path)
+    if img.height >= img.width and img.height > max_size:
+        new_width = int(1.0 * max_size / img.height * img.width)
+        img.thumbnail((new_width, max_size))
+    elif img.width >= img.height and img.width > max_size:
+        new_height = int(1.0 * max_size / img.width * img.height)
+        img.thumbnail((max_size, new_height))
+
+    io = BytesIO()
+    img.save(io, format="png")
+    io.seek(0)
+    bytes_data = io.read()
+    base64_bytes = base64.b64encode(bytes_data)
+    base64_str = base64_bytes.decode("utf-8")
+    return base64_str

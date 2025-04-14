@@ -64,6 +64,11 @@
             }
         }
     </script>
+    <style>
+        .main-content {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -354,17 +359,25 @@
             createCustomElement('property-block', templateElement.content);
         }</script>
 
-    <h1>{{ name }} </h1>
+    <div class="main-content">
 
-    {{ lore_html | safe }}
+        <h1>{{ name }} </h1>
 
-    {% for img in images -%}
-        <img src="data:image/{{img_ext}};base64, {{ img_64 }}" />
-    {%- endfor %}
+        {{ lore_html | safe }}
 
-    {% for statblock in statblocks -%}
-       {% include 'creature_template.html.j2' %}
-    {%- endfor %}
+        {% for img in images -%}
+            <img src="data:image/{{img.image_ext}};base64, {{ img.image_base64 }}" />
+        {%- endfor %}
+
+        <div>
+            {% for statblock in statblocks -%}
+                <div>
+                {% include 'creature_template.html.j2' %}
+                </div>
+            {%- endfor %}
+        </div>
+
+    <div>
 
 
 
