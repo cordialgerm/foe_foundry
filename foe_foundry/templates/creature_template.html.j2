@@ -4,46 +4,46 @@ attack_block, benchmark_block
 
 <stat-block class="stat-block">
     <creature-heading>
-        <h1>{{name}}</h1>
-        <h2>{{size}} {{creature_type}}</h2>
+        <h1>{{statblock.name}}</h1>
+        <h2>{{statblock.size}} {{statblock.creature_type}}</h2>
     </creature-heading>
 
     <top-stats>
-        {{property('Armor Class', ac) }}
-        {{property('Hit Points', hp)}}
-        {{property('Speed', movement)}}
+        {{property('Armor Class', statblock.ac) }}
+        {{property('Hit Points', statblock.hp)}}
+        {{property('Speed', statblock.movement)}}
 
-        <abilities-block data-cha="{{CHA}}" data-con="{{CON}}" data-int="{{INT}}" data-str="{{STR}}" data-wis="{{WIS}}"
-            data-dex="{{DEX}}"></abilities-block>
+        <abilities-block data-cha="{{statblock.CHA}}" data-con="{{statblock.CON}}" data-int="{{statblock.INT}}"
+            data-str="{{statblock.STR}}" data-wis="{{statblock.WIS}}" data-dex="{{statblock.DEX}}"></abilities-block>
 
-        {{property('Saving Throws', saves)}}
-        {{property('Skills', skills)}}
-        {{property('Damage Vulnerabilities', damage_vulnerabilities)}}
-        {{property('Damage Resistances', damage_resistances)}}
-        {{property('Damage Immunities', damage_immunities)}}
-        {{property('Condition Immunities', condition_immunities)}}
-        {{property('Senses', senses)}}
-        {{property('Languages', languages)}}
-        {{property('Challenge', challenge)}}
-        {{property('Proficiency Bonus', proficiency_bonus)}}
+        {{property('Saving Throws', statblock.saves)}}
+        {{property('Skills', statblock.skills)}}
+        {{property('Damage Vulnerabilities', statblock.damage_vulnerabilities)}}
+        {{property('Damage Resistances', statblock.damage_resistances)}}
+        {{property('Damage Immunities', statblock.damage_immunities)}}
+        {{property('Condition Immunities', statblock.condition_immunities)}}
+        {{property('Senses', statblock.senses)}}
+        {{property('Languages', statblock.languages)}}
+        {{property('Challenge', statblock.challenge)}}
+        {{property('Proficiency Bonus', statblock.proficiency_bonus)}}
     </top-stats>
 
-    {{features_block(passives)}}
+    {{features_block(statblock.passives)}}
 
     <h3>Actions</h3>
-    {{property_block('Multiattack', multiattack)}}
-    {{attack_block(attack.display_name, attack_text)}}
+    {{property_block('Multiattack', statblock.multiattack)}}
+    {{attack_block(statblock.attack.display_name, statblock.attack_text)}}
 
-    {{attack_blocks(attacks)}}
+    {{attack_blocks(statblock.attacks)}}
 
-    {{features_block(actions)}}
+    {{features_block(statblock.actions)}}
 
-    {{property_block_no_punctuation('Spellcasting', spellcasting)}}
+    {{property_block_no_punctuation('Spellcasting', statblock.spellcasting)}}
 
-    {{features_block(bonus_actions, 'Bonus Actions')}}
+    {{features_block(statblock.bonus_actions, 'Bonus Actions')}}
 
-    {{features_block(reactions, reaction_header)}}
+    {{features_block(statblock.reactions, statblock.reaction_header)}}
 
-    {{features_block(legendary_actions, legendary_action_header)}}
+    {{features_block(statblock.legendary_actions, statblock.legendary_action_header)}}
 
 </stat-block>

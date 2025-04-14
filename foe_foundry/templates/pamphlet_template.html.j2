@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>{{name }}</title>
+    <title>{{ name }}</title>
     <style>
         body {
             margin: 0;
@@ -20,6 +20,33 @@
             font-style: italic;
             text-decoration: underline;
         }
+
+        .condition {
+            font-style: italic;
+            text-decoration: underline dotted;
+        }
+
+        .creature {
+            font-style: italic;
+            text-decoration: underline dottted;
+        }
+
+        .token {
+            font-style: italic;
+            text-decoration: underline dotted;
+        }
+
+        .feature {
+            font-style: italic;
+        }
+
+
+        .action {
+            font-style: italic;
+            text-decoration: underline dotted;
+        }
+
+
     </style>
     <script>function createCustomElement(name, contentNode, elementClass = null) {
             if (elementClass === null) {
@@ -327,9 +354,19 @@
             createCustomElement('property-block', templateElement.content);
         }</script>
 
-    {% for statblock in statblocks %}
-        {% include 'creature_template.html.j2' %}
+    <h1>{{ name }} </h1>
+
+    {{ lore_html | safe }}
+
+    {% for img in images -%}
+        <img src="data:image/{{img_ext}};base64, {{ img_64 }}" />
     {%- endfor %}
+
+    {% for statblock in statblocks -%}
+       {% include 'creature_template.html.j2' %}
+    {%- endfor %}
+
+
 
 </body>
 

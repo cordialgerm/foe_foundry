@@ -1,7 +1,17 @@
+from io import BytesIO  # noqa
 from pathlib import Path
 from typing import List
+import base64
 
+import markdown
+import numpy as np
 from jinja2 import Environment, PackageLoader, select_autoescape
+from PIL import Image  # noqa
+
+from foe_foundry.creatures import (
+    CreatureTemplate,
+    GenerationSettings,
+)
 
 from ..benchmarks import Benchmark
 from ..statblocks import Statblock
@@ -19,7 +29,7 @@ env.filters["fix_punctuation"] = fix_punctuation
 def render_html_to_path(stats: Statblock, path: Path) -> Path:
     template = env.get_template("creature_template.html.j2")
     data = MonsterTemplateData.from_statblock(stats)
-    html_raw = template.render(data.to_dict())
+    html_raw = template.render(dict(statblock=data.to_dict()))
 
     with path.open("w") as f:
         f.write(html_raw)
@@ -32,27 +42,16 @@ def render_html_inline(
 ) -> str:
     template = env.get_template("inlined_template.html.j2")
     data = MonsterTemplateData.from_statblock(stats, benchmarks)
-    template_data = data.to_dict()
-    html_raw = template.render(template_data)
-    return html_raw
-
-
-def render_html_multiple_inline(name: str, stats: List[Statblock]) -> str:
-    template = env.get_template("multiple_template.html.j2")
-    data = {
-        "name": name,
-        "statblocks": [
-            MonsterTemplateData.from_statblock(stat).to_dict() for stat in stats
-        ],
-    }
-    html_raw = template.render(data)
-    return html_raw
-
-
-def render_html_fragment(stats: Statblock) -> str:
-    template = env.get_template("creature_template.html.j2")
-    data = MonsterTemplateData.from_statblock(stats)
     html_raw = template.render(data.to_dict())
+    return html_raw
+
+
+def render_html_fragment(
+    stats: Statblock, benchmarks: List[Benchmark] | None = None
+) -> str:
+    template = env.get_template("creature_template.html.j2")
+    data = MonsterTemplateData.from_statblock(stats, benchmarks)
+    html_raw = template.render(dict(statblock=data.to_dict()))
     return html_raw
 
 
@@ -67,8 +66,60 @@ def render_html_inline_page_to_path(
     return path
 
 
-def render_html_multiple_to_path(name: str, stats: List[Statblock], path: Path) -> Path:
-    html_raw = render_html_multiple_inline(name, stats)
+def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
+    lore_md = template.lore_md.strip()
+    if len(lore_md) == 0:
+        lore_md = f"# {template.name}\n\nNo Lore Available"
+
+    context: dict = dict(lore_html=markdown.markdown(lore_md))
+
+    image_paths: set[Path] = set()
+    for _, image in template.image_urls.items():
+        image_paths.update(image)
+
+    images = []
+    for path in image_paths:
+        img = Image.open(path)
+        if img.height >= img.width and img.height > 500:
+            new_width = int(500.0 / img.height * img.width)
+            img.thumbnail((new_width, 500))
+        elif img.width >= img.height and img.width > 500:
+            new_height = int(500.0 / img.width * img.height)
+            img.thumbnail((500, new_height))
+
+        io = BytesIO()
+        img.save(io, format="png")
+        io.seek(0)
+        bytes_data = io.read()
+        base64_bytes = base64.b64encode(bytes_data)
+        base64_str = base64_bytes.decode("utf-8")
+        images.append(dict(image_ext="png", image_base64=base64_str))
+
+    context.update(images=images)
+
+    def rng_factory():
+        return np.random.default_rng()
+
+    statblocks = []
+    for variant in template.variants:
+        for suggested_cr in variant.suggested_crs:
+            stats = template.generate(
+                GenerationSettings(
+                    creature_name=suggested_cr.name,
+                    creature_template=template.name,
+                    variant=variant,
+                    cr=suggested_cr.cr,
+                    species=None,
+                    is_legendary=suggested_cr.is_legendary,
+                    rng=rng_factory(),
+                )
+            ).finalize()
+            statblocks.append(MonsterTemplateData.from_statblock(stats))
+
+    context.update(statblocks=statblocks)
+
+    jinja_template = env.get_template("pamphlet_template.html.j2")
+    html_raw = jinja_template.render(context)
 
     with path.open("w") as f:
         f.write(html_raw)
