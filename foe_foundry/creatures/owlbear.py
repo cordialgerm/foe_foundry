@@ -75,11 +75,12 @@ class _OwlbearWeights(CustomPowerSelection):
         ]
 
         if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
+            return CustomPowerWeight(-1, ignore_usual_requirements=False)
         elif p in powers:
             return CustomPowerWeight(2, ignore_usual_requirements=True)
         else:
-            return CustomPowerWeight(0.1, ignore_usual_requirements=False)
+            # monstrosity powers can get a little weird
+            return CustomPowerWeight(-1, ignore_usual_requirements=False)
 
 
 def generate_owlbear(settings: GenerationSettings) -> StatsBeingGenerated:
