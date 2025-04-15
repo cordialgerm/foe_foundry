@@ -22,6 +22,7 @@ from .mimic import MimicTemplate
 from .nothic import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .orc import OrcTemplate
+from .owlbear import OwlbearTemplate
 from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
@@ -60,6 +61,7 @@ AllTemplates: list[CreatureTemplate] = [
     MedusaTemplate,
     OgreTemplate,
     OrcTemplate,
+    OwlbearTemplate,
     PriestTemplate,
     ScoutTemplate,
     SimulacrumTemplate,
