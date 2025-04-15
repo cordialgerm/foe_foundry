@@ -2,6 +2,7 @@ from io import BytesIO  # noqa
 from pathlib import Path
 from typing import List
 import base64
+import pdfkit
 
 import markdown
 import numpy as np
@@ -111,7 +112,15 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     with path.open("w") as f:
         f.write(html_raw)
 
+    # _render_pdf(path)
+
     return path
+
+
+def _render_pdf(path: Path) -> Path:
+    new_path = path.with_suffix(".pdf")
+    pdfkit.from_file(str(path), output_path=str(new_path))
+    return new_path
 
 
 def _resize_image_as_base64_png(path: Path, max_size: int = 300) -> str:
