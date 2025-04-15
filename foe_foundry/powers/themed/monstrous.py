@@ -265,7 +265,7 @@ class _TearApart(MonstrousPower):
             name="Tear Apart",
             action=ActionType.Action,
             description=f"{stats.selfref.capitalize()} rips at a target it is grappling, releasing the grapple. The creature must make a DC {dc} Strength saving throw, \
-                taking {dmg} slashing damage on a failure and half as much on a success. If this damage reduces a creature to 0 hit points, it dies and is torn in half.",
+                taking {dmg.description} slashing damage on a failure and half as much on a success. If this damage reduces a creature to 0 hit points, it dies and is torn in half.",
         )
 
         return [feature1, feature2]
