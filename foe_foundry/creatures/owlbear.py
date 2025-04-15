@@ -34,7 +34,7 @@ from .template import (
 
 OwlbearVariant = CreatureVariant(
     name="Owlbear",
-    description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
+    description="Owlbears are ferocious hybrid creatures, combining the strength and frame of a bear with the sharp beak and keen senses of an owl. They are known for their territorial nature and relentless aggression.",
     suggested_crs=[
         SuggestedCr(name="Owlbear Cub", cr=1 / 2),
         SuggestedCr(name="Owlbear", cr=3, srd_creatures=["Owlbear"]),
