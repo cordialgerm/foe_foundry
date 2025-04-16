@@ -17,6 +17,7 @@ from .hydra import HydraTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
 from .mage import MageTemplate
+from .manticore import ManticoreTemplate
 from .medusa import MedusaTemplate
 from .mimic import MimicTemplate
 from .nothic import HollowGazerTemplate
@@ -58,6 +59,7 @@ AllTemplates: list[CreatureTemplate] = [
     KoboldTemplate,
     MimicTemplate,
     MageTemplate,
+    ManticoreTemplate,
     MedusaTemplate,
     OgreTemplate,
     OrcTemplate,
