@@ -5,6 +5,7 @@ from .bandit import BanditTemplate
 from .basilisk import BasiliskTemplate
 from .berserker import BerserkerTemplate
 from .bugbear import BugbearTemplate
+from .chimera import ChimeraTemplate
 from .cultist import CultistTemplate
 from .dire_bunny import DireBunnyTemplate
 from .druid import DruidTemplate
@@ -45,6 +46,7 @@ AllTemplates: list[CreatureTemplate] = [
     BasiliskTemplate,
     BerserkerTemplate,
     BugbearTemplate,
+    ChimeraTemplate,
     CultistTemplate,
     DireBunnyTemplate,
     DruidTemplate,

@@ -1,6 +1,7 @@
 from .balor import BalorPowers
 from .basilisk import BasiliskPowers
 from .bugbear import BugbearPowers
+from .chimera import ChimeraPowers
 from .dire_bunny import DireBunnyPowers
 from .druid import DruidPowers
 from .ghoul import GhoulPowers
@@ -26,6 +27,7 @@ CreaturePowers = (
     BalorPowers
     + BasiliskPowers
     + BugbearPowers
+    + ChimeraPowers
     + DireBunnyPowers
     + DruidPowers
     + GhoulPowers

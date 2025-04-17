@@ -91,7 +91,11 @@ class _WingedCharge(FlyingPower):
             source="A5E SRD Chimera",
             require_flying=True,
             require_types=CreatureType.all_but(CreatureType.Aberration),
-            bonus_roles={MonsterRole.Soldier, MonsterRole.Skirmisher},
+            bonus_roles={
+                MonsterRole.Soldier,
+                MonsterRole.Skirmisher,
+                MonsterRole.Bruiser,
+            },
             require_attack_types=AttackType.AllMelee(),
         )
 
