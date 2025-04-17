@@ -79,16 +79,20 @@ def breath(
     else:
         additional_description = ""
 
-    feature = Feature(
-        name=name,
-        action=ActionType.Action,
-        recharge=5,
-        description=f"{stats.selfref.capitalize()} {verb} {damage_type} in a {template}. \
+    feature_args: dict = (
+        dict(
+            name=name,
+            action=ActionType.Action,
+            recharge=5,
+            description=f"{stats.selfref.capitalize()} {verb} {damage_type} in a {template}. \
             Each creature in the area must make a DC {dc} {save} save. \
             On a failure, the creature takes {dmg.description} {damage_type} damage or half as much on a success. \
             {additional_description}",
-        **args,
+        )
+        | args
     )
+
+    feature = Feature(**feature_args)
     return feature
 
 
