@@ -13,8 +13,8 @@ Wight,Undead,3.0,"Drains life, leads undead","CoS, OotA",True,True
 Mimic,Monstrosity,2.0,"Trap creature, classic twist","LMoP, CoS",True,True
 Gelatinous Cube,Ooze,2.0,Transparent dungeon hazard,"OotA, Dungeon of the Mad Mage",True,False
 Owlbear,Monstrosity,3.0,"Iconic monster, strong melee","LMoP, Icespire",True,True
-Chimera,Monstrosity,6.0,"Multi-headed beast, strong","OotA, Icespire",True,False
-Manticores,Monstrosity,3.0,"Flying beast, strong melee","OotA, Icespire",True,False
+Chimera,Monstrosity,6.0,"Multi-headed beast, strong","OotA, Icespire",True,True
+Manticores,Monstrosity,3.0,"Flying beast, strong melee","OotA, Icespire",True,True
 Ghost,Undead,4.0,"Incorporeal undead, fear","CoS, OotA",True,False
 Wraith,Undead,4.0,"Incorporeal undead, fear","CoS, OotA",True,False
 Shadow,Undead,0.5,"Strength drain, hard to kill","CoS, OotA",True,False
@@ -25,7 +25,6 @@ Young Red Dragon,Dragon,10.0,Mid-tier dragon boss,"HotDQ, Icespire",True,False
 Vampire Spawn,Undead,5.0,"Strahd’s minions, elite undead",CoS,True,False
 Air Elemental,Elemental,5.0,Fast and disruptive,"ToA, OotA",True,False
 Fire Elemental,Elemental,5.0,High fire damage,"ToA, OotA",True,False
-Wraith,Undead,5.0,Powerful incorporeal undead,"CoS, OotA",True,False
 Marilith,Fiend (demon),16.0,Iconic multi-armed demon,OotA,True,False
 Balor,Fiend (demon),20.0,Demonic final boss,OotA,True,True
 Troll,Giant,5.0,"Regeneration, mid-level boss","HotDQ, OotA",True,False
