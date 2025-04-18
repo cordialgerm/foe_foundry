@@ -4,6 +4,7 @@ from .bugbear import BugbearPowers
 from .chimera import ChimeraPowers
 from .dire_bunny import DireBunnyPowers
 from .druid import DruidPowers
+from .gelatinous_cube import GelatinousCubePowers
 from .ghoul import GhoulPowers
 from .goblin import GoblinPowers
 from .gorgon import GorgonPowers
@@ -30,6 +31,7 @@ CreaturePowers = (
     + ChimeraPowers
     + DireBunnyPowers
     + DruidPowers
+    + GelatinousCubePowers
     + GhoulPowers
     + GoblinPowers
     + GorgonPowers

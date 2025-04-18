@@ -9,6 +9,7 @@ from .chimera import ChimeraTemplate
 from .cultist import CultistTemplate
 from .dire_bunny import DireBunnyTemplate
 from .druid import DruidTemplate
+from .gelatinous_cube import GelatinousCubeTemplate
 from .ghoul import GhoulTemplate
 from .goblin import GoblinTemplate
 from .golem import GolemTemplate
@@ -50,6 +51,7 @@ AllTemplates: list[CreatureTemplate] = [
     CultistTemplate,
     DireBunnyTemplate,
     DruidTemplate,
+    GelatinousCubeTemplate,
     GolemTemplate,
     GorgonTemplate,
     GuardTemplate,

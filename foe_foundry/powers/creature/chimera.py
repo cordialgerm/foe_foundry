@@ -56,14 +56,14 @@ class _DragonsBreath(ChimeraPower):
 
 class _QuarellingHeads(ChimeraPower):
     def __init__(self):
-        super().__init__(name="Quarelling Heads")
+        super().__init__(name="Quarrelling Heads")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         dragons_breath = feature_ref("Dragon's Breath")
 
         feature = Feature(
-            name="Quarelling Heads",
+            name="Quarrelling Heads",
             action=ActionType.BonusAction,
             description=f"The three heads of {stats.selfref} quarrel incessantly. Roll a d6 to determine which head is in control: \
                 <ul> \

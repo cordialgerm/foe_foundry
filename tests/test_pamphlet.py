@@ -7,11 +7,12 @@ from foe_foundry.creatures import CreatureTemplate, all_templates_and_settings
 
 
 def templates_with_lore() -> list[CreatureTemplate]:
-    return [
+    templates = {
         template
         for template, settings in all_templates_and_settings()
         if template.lore_md.strip() != ""
-    ]
+    }
+    return list(templates)
 
 
 def _ids(t: CreatureTemplate) -> str:
