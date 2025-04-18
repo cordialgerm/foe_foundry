@@ -29,7 +29,7 @@ from .template import (
 
 GelatinousCubeVariant = CreatureVariant(
     name="Gelatinous Cube",
-    description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eeie purpose, as if some deeper instinct compels their mindless patrol.",
+    description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eerie purpose, as if some deeper instinct compels their mindless patrol.",
     suggested_crs=[
         SuggestedCr(name="Gelatinous Cube", cr=2, srd_creatures=["Gelatinous Cube"]),
         SuggestedCr(name="Ancient Gelatinous Cube", cr=6),
