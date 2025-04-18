@@ -11,7 +11,7 @@ Ogre,Giant,2.0,Strong melee brute,"LMoP, OotA, HotDQ",True,True
 Ghoul,Undead,1.0,Paralysis and fear,"CoS, OotA",True,True
 Wight,Undead,3.0,"Drains life, leads undead","CoS, OotA",True,True
 Mimic,Monstrosity,2.0,"Trap creature, classic twist","LMoP, CoS",True,True
-Gelatinous Cube,Ooze,2.0,Transparent dungeon hazard,"OotA, Dungeon of the Mad Mage",True,False
+Gelatinous Cube,Ooze,2.0,Transparent dungeon hazard,"OotA, Dungeon of the Mad Mage",True,True
 Owlbear,Monstrosity,3.0,"Iconic monster, strong melee","LMoP, Icespire",True,True
 Chimera,Monstrosity,6.0,"Multi-headed beast, strong","OotA, Icespire",True,True
 Manticores,Monstrosity,3.0,"Flying beast, strong melee","OotA, Icespire",True,True

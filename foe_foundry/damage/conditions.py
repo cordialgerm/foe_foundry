@@ -162,6 +162,24 @@ def Swallowed(
     )
 
 
+def Engulfed(
+    damage: DieFormula | str,
+    damage_type=DamageType.Acid,
+    escape_dc: int = 15,
+) -> CustomCondition:
+    if isinstance(damage, DieFormula):
+        damage = damage.description
+
+    return CustomCondition(
+        name="Engulfed",
+        caption="<span class='condition condition-engulfed'>Engulfed</span>",
+        description=f"You are <span class='condition condition-engulfed'>Engulfed</span>, <span class='condition condition-restrained'>Restrained</span>, <span class='condition condition-suffocating'>Suffocating</span>, and cannot cast spells with Verbal components. You take {damage} ongoing {damage_type} damage at the end of each of your turns. \
+        You can spend an Action to make a DC {escape_dc} Athletics check to escape the engulfing creature.",
+        description_3rd=f"A creature that is <span class='condition condition-engulfed'>Engulfed</span> is <span class='condition condition-restrained'>Restrained</span>, <span class='condition condition-suffocating'>Suffocating</span>, and cannot cast spells with Verbal components. It takes {damage} ongoing {damage_type} damage at the end of each of its turns. \
+        It can spend an Action to make a DC {escape_dc} Athletics check to escape the engulfing creature.",
+    )
+
+
 def Weakened(save_end_of_turn: bool = True) -> CustomCondition:
     return CustomCondition(
         name="Weakened",
