@@ -1,4 +1,4 @@
-# Owlbear
+# Owlbears
 
 *Unnaturally Territorial Predators*
 
@@ -14,6 +14,22 @@ While originally created through arcane experimentation, owlbears have long sinc
 - Owlbears are nocturnal hunters who will track prey over miles and rarely give up once they’ve locked on a target.
 - Some villages prepare offerings to an Owlbear in order to benefit from its territorial protection.
 - Albino Owlbears are extremely rare and are sought out by practitioners of the occult as particularly powerful sacrifices.
+
+## Owlbear
+
+<div id="statlbock-owlbear"></div>
+
+## Owlbear Cub
+
+Owlbears are fiercely protective of their cubs, despite their individualistic tendencies. Many a fool has perished attempting to capture and tame an **Owlbear Cub**.
+
+<div id="statblock-owlbear-cub"></div>
+
+## Savage Owlbear
+
+A **Savage Owlbear** has extended its territory sufficiently the only thing matching its massive size is its unbridled aggression.
+
+<div id="statblock-savage-owlbear"></div>
 
 ## Tactics
 

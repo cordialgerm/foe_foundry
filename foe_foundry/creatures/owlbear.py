@@ -36,11 +36,11 @@ OwlbearVariant = CreatureVariant(
     name="Owlbear",
     description="Owlbears are ferocious hybrid creatures, combining the strength and frame of a bear with the sharp beak and keen senses of an owl. They are known for their territorial nature and relentless aggression.",
     suggested_crs=[
-        SuggestedCr(name="Owlbear Cub", cr=1 / 2),
         SuggestedCr(name="Owlbear", cr=3, srd_creatures=["Owlbear"]),
         SuggestedCr(
             name="Savage Owlbear", cr=7, other_creatures={"Primeval Owlbear": "mm24"}
         ),
+        SuggestedCr(name="Owlbear Cub", cr=1 / 2),
     ],
 )
 

@@ -1,5 +1,5 @@
 
-# Wight
+# Wights
 
 *Deathly cold malignant warriors of old*
 
@@ -13,6 +13,23 @@ Wights are the dead and frozen corpses of wicked champions of bygone eras whose 
 - Ancient battlefields and fallen kingdoms often birth Wights when powerful warriors die with their souls twisted by rage or injustice.
 - Some Wights were once mighty champions, generals, or kings whose ambition or hubris led to their downfall — now cursed to serve darker masters.
 - Entire tombs, crypts, or cursed cities may be ruled by Wight-lords, gathering other undead to their banners in mockery of the living empires they once served.
+
+## Wight
+
+<div id="statblock-wight"></div>
+
+## Wight Fell Champion
+
+A **Wight Fell Champion** was once a mortal champion of great renown who fell into service to a dark power. Perhaps loyalty to their corrupted liege dragged them inexorably towards a ruinous path, or plain greed led to their downfall.
+
+<div id="statblock-wight-fell-champion"></div>
+
+## Wight Dread Lord
+
+A **Wight Dread Lord** was once a powerful ruler, thain, or champion whose pride and fear of death drove them to foul pacts with malevolant forces. In undeath, they command armies of lesser undead who mindlessly serve their twisted commands.
+
+<div id="statblock-wight-dread-lord"></div>
+
 
 ## Tactics
 
