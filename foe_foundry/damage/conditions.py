@@ -100,6 +100,15 @@ def Bleeding(
     )
 
 
+def Cursed() -> CustomCondition:
+    return CustomCondition(
+        name="Cursed",
+        caption="<span class='condition condition-cursed'>Cursed</span>",
+        description="",
+        description_3rd="",
+    )
+
+
 def Frozen(dc: int) -> CustomCondition:
     return CustomCondition(
         name="Frozen",

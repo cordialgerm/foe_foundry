@@ -119,63 +119,69 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 
 ## TEMP
 
+### Spirit Powers
 
-### Ghosts
+undead.StygianBurst
+undead.SoulChill
+undead.AntithesisOfLife
+anti_magic.ArcaneHunt
+anti_magic.TwistedMind
+anti_magic.SealOfSilence
+anti_magic.RuneDrinker
+anti_range.AdaptiveCamouflage
+chaotic.EldritchBeacon
+cursed.AuraOfDespair
+cursed.CursedWound
+cursed.RejectDivinity
+cursed.BestowCurse
+cursed.RayOfEnfeeblement
+cursed.VoidSiphon
+deathly.WitheringBlow
+deathly.DrainingBlow
+emanation.BitingFrost
+fearsome.HorrifyingPresence
+fearsome.HorrifyingVisage
+fearsome.DreadGaze
+fearsome.NightmarishVisions
 
-- Posession
-- Ageing
-- Cursing
+aberrant.ModifyMemory - Ghost
+fearsome.MindShatteringScream - Banshee
+cursed.ReplaceShadow - Shadow
+cursed.UnholyAura - Ghost, Wraith
+cursed.CurseOfVengeance - Revenant, Banshee
+deathly.EndlessServitude - Wraith, Revenant
+deathly.ShadowWalk - Shadow
+deathly.FleshPuppets - Revenant, Wraith
+deathly.DevourSoul - Wraith
+deathly.DrainStrength - Shadow
+emanation.TimeRift - Ghost
+emanation.SummonersRift - Wraith, Revenant
+emanation.IllusoryRealit - Ghost
+emanation.ShadowRift - Wraith, Banshee
 
-### Specters
+#### Spirit Strenghts
+
+- Flying
+- Resistance to Bludgeoning, Piercing, Slashing, Fire, Lightning, Acid, Thunder
+- Immune to Cold, Necrotic, Poison
+- Immune to Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+
+
+#### Spirit Weaknesses
+
+- Low AC
+- Lower HP
 
 ### Shadows
 
 - shadow teleportation
 - draining strength?
 
-Incorporeal Movement. The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.
 
-Sunlight Sensitivity. While in sunlight, the specter has Disadvantage on ability checks and attack rolls.
-
-Horrific Visage. Wisdom Saving Throw: DC 13, each creature in a 60-foot Cone that can see the ghost and isn’t an Undead. Failure: 10 (2d6 + 3) Psychic damage, and the target has the Frightened condition until the start of the ghost’s next turn. Success: The target is immune to this ghost’s Horrific Visage for 24 hours.
-
-Possession (Recharge 6). Charisma Saving Throw: DC 13, one Humanoid the ghost can see within 5 feet. Failure: The target is possessed by the ghost; the ghost disappears, and the target has the Incapacitated condition and loses control of its body. The ghost now controls the body, but the target retains awareness. The ghost can’t be targeted by any attack, spell, or other effect, except ones that specifically target Undead. The ghost’s game statistics are the same, except it uses the possessed target’s Speed, as well as the target’s Strength, Dexterity, and Constitution modifiers.
-
-The possession lasts until the body drops to 0 Hit Points or the ghost leaves as a Bonus Action. When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost’s Possession for 24 hours.
-
-Success: The target is immune to this ghost’s Possession for 24 hours.
-
-Shadows - weaken
 
 Cold + Necrotic Damage
 Grasping Freezing Hands
 
-### Spirit Strenghts
-
-- Flying
-- Resistance to Bludgeoning, Piercing, Slashing, Fire, Lightning, Acid, Thunder
-- Immune to Cold, Necrotic, Poison
-- Immune to Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
-- Incorporeal - can move through creatures and objects as if they were difficult terrain. Takes 1d10 force damage if it ends its turn inside an object. Can't be pushed back
-
-### Spirit Weaknesses
-
-- Low AC
-- Lower HP
-- Sunlight - can't recharge powers while in sunlight, lose resistance to Fire, Lightning, Acid, and Thunder damage while in sunlight
-
-### General Ghost Powers
-
-- Horrifying Gaze
-- Grasp of the Dead - Token that emenates freezing hands that can deal cold damage and Freeze
-- Ghost Step - move forward up to 30 feet in a straight line without taking opportunity attacks. Any creatue you pass through takes cold damage.
-- Withering Blow
-- Flicker - when hit, flickers out and reappears up to 10 feet away
-- Reject Divinity
-- Haunt - ghost binds itself to an object. It can spend 5 ft of movement to teleport into the object
-- Cursed powers
--  Dreadful Silence. While within 60 feet of the Banshee, any creature that speaks aloud takes 2d6 psychic damage. The damage increases by 1d6 for each additional sentence spoken in the same round. The Banshee is immune to this effect and may communicate telepathically with creatures it can see.
-- Name the Forgotten. If any creature speaks the Banshee’s true name aloud, the Banshee learns their location, regardless of distance or plane. For the next hour, the Banshee can use an action to teleport to within 60 feet of that creature, arriving under the effects of Invisibility (as the spell). The Banshee cannot use this ability again until it has taken a long rest.
 
 ### Banshees
 
@@ -202,11 +208,7 @@ Grasping Freezing Hands
 
 Shadows use a weakening touch.
 
-- Shadow Teleportation
-- Shadow Invisibility
-- Cast Darkness (no concentration) as a BA
-- Feed on Light - extinguishes non-magical light sources and gains temp hp
-- Cast into Darkness - on a hit, the creature is Blinded and emanates magical darkness in a 10 foot emanation. CHA save. Save ends
+
 
 ### Revenants
 

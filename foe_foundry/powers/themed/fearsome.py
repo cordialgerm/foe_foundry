@@ -164,7 +164,7 @@ class _MindShatteringScream(HorrifyingPower):
         feature = Feature(
             name="Mind-Shattering Scream",
             action=ActionType.Action,
-            recharge=6,
+            recharge=5,
             description=f"{stats.selfref.capitalize()} releases a mind-shattering scream. All other creatures within 30 ft that can hear {stats.selfref} \
                 must make a DC {dc} Intelligence saving throw. On a failure, a creature takes {dmg.description} psychic damage and is {stunned.caption} until the end of its next turn. \
                 On a success, a creature takes half damage and is not Stunned. Creatures that are {frightened.caption} have disadvantage on this save.",

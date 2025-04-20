@@ -63,16 +63,20 @@ class Spell:
         else:
             concentration_spell_level = self.concentration_spell_level
 
-        return StatblockSpell(
-            name=self.name,
-            level=self.level,
-            upcastable=self.upcast,
-            uses=uses,
-            notes=notes,
-            concentration_spell_level=concentration_spell_level,
-            concentration_overriden=concentration_overriden,
-            **kwargs,
+        args: dict = (
+            dict(
+                name=self.name,
+                level=self.level,
+                upcastable=self.upcast,
+                uses=uses,
+                notes=notes,
+                concentration_spell_level=concentration_spell_level,
+                concentration_overriden=concentration_overriden,
+            )
+            | kwargs
         )
+
+        return StatblockSpell(**args)
 
 
 @dataclass(frozen=True)

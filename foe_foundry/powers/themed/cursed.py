@@ -12,6 +12,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills
+from ...spells import necromancy
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -139,9 +140,13 @@ class _BestowCurse(CursedPower):
         super().__init__(name="Bestow Curse", source="SRD5.1 Bestow Curse")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        level = num2words(5 if stats.cr >= 7 else 3, ordinal=True)
+        level_number = 5 if stats.cr >= 7 else 3
+        level_text = num2words(level_number, ordinal=True)
         aside = "(duration 8 hours)" if stats.cr >= 7 else "(duration 1 minute)"
         dc = stats.difficulty_class_easy
+        bestow_curse = necromancy.BestowCurse.for_statblock(
+            level=level_number, concentration=False
+        ).caption_md
 
         feature = Feature(
             name="Bestow Curse",
@@ -149,7 +154,7 @@ class _BestowCurse(CursedPower):
             replaces_multiattack=1,
             recharge=5,
             description=f"{stats.selfref.capitalize()} magically curses a creature that can hear it within 30 feet. \
-                The creature must succeed on a DC {dc} Wisdom save or suffer the effects of the *Bestow Curse* spell as if it were cast at {level} level ({aside})",
+                The creature must succeed on a DC {dc} Wisdom save or suffer the effects of the {bestow_curse} spell as if it were cast at {level_text} level {aside}, no concentration required.",
         )
         return [feature]
 
@@ -222,7 +227,8 @@ class _ReplaceShadow(CursedPower):
             name="Replace Shadow",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} targets a humanoid within 5 feet that is in dim light and can't see {stats.selfref}. \
+            recharge=4,
+            description=f"{stats.selfref.capitalize()} targets a humanoid within 20 feet that is in dim light and can't see {stats.selfref}. \
                             The target must make a DC {dc} Charisma saving throw. On a success, the target is aware of {stats.selfref}. \
                             On a failure, the target is unaware of {stats.selfref}, the target no longer casts a natural shadow, and {stats.selfref} magically takes on the shape of the target's shadow. \
                             {stats.selfref.capitalize()} appears indistinguishable from a natural shadow, except when it attacks. <br /> <br > \

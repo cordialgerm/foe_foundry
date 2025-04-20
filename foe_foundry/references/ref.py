@@ -17,3 +17,8 @@ def feature_ref(feature_name: str) -> str:
 def action_ref(action_name: str) -> str:
     key = name_to_key(action_name)
     return f"<span class='action action-{key}'>{action_name}</span>"
+
+
+def spell_ref(spell_name: str) -> str:
+    key = name_to_key(spell_name)
+    return f"<span class='spell spell-{key}'>{spell_name}</span>"

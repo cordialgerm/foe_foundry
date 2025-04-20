@@ -69,7 +69,7 @@ class _TimeRift(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(1, force_die=Die.d6)
+        dmg = stats.target_value(0.7, force_die=Die.d6)
         feature = Feature(
             name="Time Rift",
             action=ActionType.Action,
