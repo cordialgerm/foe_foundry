@@ -72,7 +72,7 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     if len(lore_md) == 0:
         lore_md = f"# {template.name}\n\nNo Lore Available"
 
-    context: dict = dict(lore_html=markdown.markdown(lore_md))
+    context: dict = dict(lore_html=markdown.markdown(lore_md, extensions=["tables"]))
 
     image_paths: set[Path] = set()
     for _, image in template.image_urls.items():

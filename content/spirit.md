@@ -12,6 +12,7 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 | **Revenant** | Soul Burning with Vengeance            | Lucid, relentless hunter inhabiting a corpse                   | Unresolved injustice       |
 | **Ghost**    | Soul Bound by Memory and Regret        | Reenacting lost moments, fixated on people or places         | A memory too painful to release      |
 | **Wraith**   | Malignant Core of Condensed Evil       | Powerful shadow-form that enslaves or absorbs other spirits    | Hunger for power and dominion        |
+
 ## Shadows
 
 A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into death. While the rest of the spirit is swept down the Styx, the Shadow lingers behind like a stain - alive with jealousy, hunger, and spite. Shadows are drawn to extinguish warmth, light, and life, which they revile above all.
@@ -76,7 +77,7 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 
 ## Wraiths
 
-When a soul steeped in malice dies, it may resist the pull of the Styx. Caught in the cold eddies of that underworld current, its will festers. Twisting and swelling, it draws in the remnants of other damned spirits. Layer by layer, a powerful **Wraith** forms: a cursed vortex of souls too vile to cross over.
+When a soul steeped in malice dies, it may resist the pull of the Styx. Caught in the cold eddies of that underworld current, its will festers. Twisting and swelling, it draws in the remnants of other damned spirits. Layer by layer, a powerful **Wraith** forms: a cursed vortex of souls too vile to cross over. When the spirit of the wraith is particularly evil it can attract such a dense miasma of negative energy that a **Wraith Shadelord** forms.
 
 Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is cohesive and cunning. Its presence dims light, drains warmth, and enslaves lesser spirits to serve as extensions of its will.
 
@@ -87,6 +88,8 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 - **Wraiths** are drawn to places where evil lingers, especially where other spirits might be harvested
 
 <div id="statblock-wraith"></div>
+
+<div id="statblock-wraith-shadelord"></div>
 
 ## Encounters
 
@@ -101,7 +104,7 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 - A cracked mirror in a ruin shows a sobbing party member’s reflection. The **Ghost** inside demands that the PC remember the name of someone they failed, or it will trap them in the glass to join in its ghostly penance.
 - A **Ghost** blocks the only path forward, whispering “I must not be forgotten.” The spirit demands someone speak its name in order to pass.
 - The air grows thin and cold as the party enters a forgotten tomb. One of them stumbles, but their **Shadow** doesn’t get up, rising instead as the herald of the **Wraith** within. The herald demands a blood sacrifice for its master.
-- A crypt door swings open as if pushed from within. The **Wraith** within does not attack immediately. It offers the most ambitious PC power if they take their place beside it.
+- A crypt door swings open as if pushed from within. The **Wraith Shadelord** within does not attack immediately. It offers the most ambitious PC power if they take their place beside it.
 
 ## Adventures
 
@@ -110,106 +113,4 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 - For the last twelve full moons, a **Banshee** has let out a terrible, prophetic wail. And each morning, someone in the hamlet is discovered dead. The local village chief implores the party to put an end to her village's curse.
 - The party finds a hanged man swinging gently in the breeze on a gallows tree. It looks like an entire family was executed here. The hanged man calls out and begs the party the cut him down, for the **Revenant** has unfinished business with a powerful **Noble** who had his entire family executed
 - A wealthy merchant hires the party to clear a curse from an inherited estate that he needs to sell immediately to cover some debts. Each year, on the anniversary of her betrayal, a **Banshee** manifests and wails about her betrayal, forcing the **Ghost** of the lover who spurned her to beg forgiveness for hours on end. The anniversary is in three days...
-- Three hundred years ago, a merciless tyrant was betrayed by his underlings. The tyrants corpse, as well as all of his ill-gotten cursed treasure, was entombed within his palatial crypt in the center of a wealthy trading city. The spirit of the tyrant rises each century as a **Wraith** and wreaks havoc on the city. The mayor hires the party to put an end to the curse and promises them the tyrant's hoard, as well as a hefty payment for successful work.
-
-
----
-
-
-
-## TEMP
-
-### Spirit Powers
-
-undead.StygianBurst
-undead.SoulChill
-undead.AntithesisOfLife
-anti_magic.ArcaneHunt
-anti_magic.TwistedMind
-anti_magic.SealOfSilence
-anti_magic.RuneDrinker
-anti_range.AdaptiveCamouflage
-chaotic.EldritchBeacon
-cursed.AuraOfDespair
-cursed.CursedWound
-cursed.RejectDivinity
-cursed.BestowCurse
-cursed.RayOfEnfeeblement
-cursed.VoidSiphon
-deathly.WitheringBlow
-deathly.DrainingBlow
-emanation.BitingFrost
-fearsome.HorrifyingPresence
-fearsome.HorrifyingVisage
-fearsome.DreadGaze
-fearsome.NightmarishVisions
-
-aberrant.ModifyMemory - Ghost
-fearsome.MindShatteringScream - Banshee
-cursed.ReplaceShadow - Shadow
-cursed.UnholyAura - Ghost, Wraith
-cursed.CurseOfVengeance - Revenant, Banshee
-deathly.EndlessServitude - Wraith, Revenant
-deathly.ShadowWalk - Shadow
-deathly.FleshPuppets - Revenant, Wraith
-deathly.DevourSoul - Wraith
-deathly.DrainStrength - Shadow
-emanation.TimeRift - Ghost
-emanation.SummonersRift - Wraith, Revenant
-emanation.IllusoryRealit - Ghost
-emanation.ShadowRift - Wraith, Banshee
-
-#### Spirit Strenghts
-
-- Flying
-- Resistance to Bludgeoning, Piercing, Slashing, Fire, Lightning, Acid, Thunder
-- Immune to Cold, Necrotic, Poison
-- Immune to Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
-
-
-#### Spirit Weaknesses
-
-- Low AC
-- Lower HP
-
-### Shadows
-
-- shadow teleportation
-- draining strength?
-
-
-
-Cold + Necrotic Damage
-Grasping Freezing Hands
-
-
-### Banshees
-
-- Wail
-
-### Specters
-
-- Chill Grasp attack - deals necrotic and cold damage. If, after being hit, a creature is Bloodied, then it is also Frozen
-
-### Wraiths
-
-- Draining Grasp - deals necrotic and cold damage. Wraith heals for necrotic damage dealt. Exhausting on hit
-
-- shadow puppets
-- resurrection powers
-
-### Ghosts
-
-- Possession
-- Memory stealing - deals psychic damage, charisma save or lose a memory and ghost heals, deals additional damage
-- Confusion - deals psychic damage, on a failure the creature is affected by Enemies Abound
-
-### Shadows
-
-Shadows use a weakening touch.
-
-
-
-### Revenants
-
-TODO
+- Three hundred years ago, a merciless tyrant was betrayed by his underlings. The tyrants corpse, as well as all of his ill-gotten cursed treasure, was entombed within his palatial crypt in the center of a wealthy trading city. The spirit of the tyrant rises each century as a **Wraith Shadelord** and wreaks havoc on the city. The mayor hires the party to put an end to the curse and promises them the tyrant's hoard, as well as a hefty payment for successful work.
