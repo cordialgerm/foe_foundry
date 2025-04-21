@@ -1,36 +1,57 @@
+:root {
+    --bg-color: #1a1a1a;
+    --muted-color: #2a2a2a;
+    --fg-color: #f4f1e6;
+
+    --primary-color: #b31312;
+    --secondary-color: #5b22cf;
+    --tertiary-color: #c29a5b;
+    --box-shadow-color: #aaaaaa70;
+    --stylistic-font: "Uncial Antiqua";
+    --header-font: "Cinzel";
+    --primary-font: "Merriweather", serif;
+}
+
+body {
+    margin: 10px;
+    background: var(--muted-color);
+    color: var(--fg-color);
+}
+
 .stat-block-container {
     max-width: 900px;
 }
 
 .stat-block {
-    border: 1px solid #a7a3a0;
-    background-color: #fefcef;
+    background-color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--fg-color);
+    border: 1px solid var(--tertiary-color);
+    outline: 1px solid var(--tertiary-color);
+    outline-offset: -4px;
     padding: 10px;
     position: relative;
-    box-shadow: 0 5px 8px 0 #aaa;
-    background: #f6f3ee;
-    background-position: top;
-    background-repeat: no-repeat;
+    box-shadow: 0 5px 8px 0 var(--box-shadow-color);
     font-size: 16px;
     line-height: 20px;
     border-radius: 8px;
-    outline: 1px solid #a7a3a0;
-    outline-offset: -4px;
-    font-family: Roboto, Helvetica, sans-serif;
-    columns: 384px 2
+
+    font-family: var(--primary-font);
+    columns: 390px 2
 }
 
 .stat-block .monster-name {
 
-    color: rgb(188, 15, 15);
+    color: var(--primary-color);
+    font-family: var(--stylistic-font);
     display: inline;
     font-size: 22px;
-    font-family: "Uncial Antiqua";
     overflow-wrap: break-word;
 }
 
 .stat-block :not(.monster-name) :is(h2, h3, h4, h5) {
-    font-family: Roboto Condensed;
+    color: var(--primary-color);
+    font-family: var(--header-font);
     text-transform: uppercase;
     font-weight: 700;
     margin-right: 8px;
@@ -43,8 +64,24 @@
     width: 100%;
     margin: 2px auto 8px;
     height: 1px;
-    background: #7a3c2f;
+    background: var(--primary-color);
     column-span: all
+}
+
+.stat-block .monster-header {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+
+    font-family: var(--header-font);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .35px;
+
+    padding-top: 4px;
+}
+
+.stat-block .monster-header+p {
+    break-before: avoid
 }
 
 .stat-block p {
@@ -52,7 +89,7 @@
     font-size: 15px;
     line-height: 1.4;
     text-wrap: pretty;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     margin-top: 0;
 }
 
@@ -74,18 +111,7 @@
     break-inside: avoid
 }
 
-.stat-block .monster-header {
-    padding-top: 4px;
-    letter-spacing: .35px;
-    font-weight: 500;
-    color: #5b160c;
-    font-size: 18px;
-    border-bottom: 2px solid #7a3c2f
-}
 
-.stat-block .monster-header+p {
-    break-before: avoid
-}
 
 .stat-block .stats {
     display: flex;
