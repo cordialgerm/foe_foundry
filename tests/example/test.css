@@ -1,4 +1,8 @@
-.body-page .p-article-a .p-article-content .stat-block {
+.stat-block-container {
+    max-width: 900px;
+}
+
+.stat-block {
     border: 1px solid #a7a3a0;
     background-color: #fefcef;
     padding: 10px;
@@ -16,15 +20,16 @@
     columns: 384px 2
 }
 
-.body-page .p-article-a .p-article-content .stat-block .monster-name {
+.stat-block .monster-name {
 
     color: rgb(188, 15, 15);
     display: inline;
     font-size: 22px;
+    font-family: "Uncial Antiqua";
     overflow-wrap: break-word;
 }
 
-.body-page .p-article-a .p-article-content .stat-block :is(h2, h3, h4, h5) {
+.stat-block :not(.monster-name) :is(h2, h3, h4, h5) {
     font-family: Roboto Condensed;
     text-transform: uppercase;
     font-weight: 700;
@@ -32,7 +37,7 @@
     margin-block-end: 0
 }
 
-.body-page .p-article-a .p-article-content .stat-block :is(h2, h3, h4, h5):after {
+.stat-block :is(h2, h3, h4, h5):after {
     content: "";
     display: block;
     width: 100%;
@@ -42,61 +47,60 @@
     column-span: all
 }
 
-.body-page .p-article-a .p-article-content .stat-block p {
+.stat-block p {
     break-inside: avoid;
     font-size: 15px;
     line-height: 1.4;
     text-wrap: pretty;
-    margin-bottom: 9px;
+    margin-bottom: 6px;
     margin-top: 0;
 }
 
-.body-page .p-article-a .p-article-content .stat-block p.creature-type {
+.stat-block p.creature-type {
     margin-top: 0;
     font-style: italic;
     opacity: .8
 }
 
-.body-page .p-article-a .p-article-content .stat-block :is(ol, ul, dl) {
+.stat-block :is(ol, ul, dl) {
     margin-bottom: 0;
     padding-top: 0;
     font-size: 15px;
     line-height: 1.4
 }
 
-.body-page .p-article-a .p-article-content .stat-block :is(ol, ul, dl) li {
+.stat-block :is(ol, ul, dl) li {
     margin: 8px 0 0 6px;
     break-inside: avoid
 }
 
-.body-page .p-article-a .p-article-content .stat-block .monster-header {
+.stat-block .monster-header {
     padding-top: 4px;
     letter-spacing: .35px;
     font-weight: 500;
     color: #5b160c;
     font-size: 18px;
-    font-family: "Roboto Condensed", Helvetica, sans-serif;
     border-bottom: 2px solid #7a3c2f
 }
 
-.body-page .p-article-a .p-article-content .stat-block .monster-header+p {
+.stat-block .monster-header+p {
     break-before: avoid
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats {
+.stat-block .stats {
     display: flex;
     gap: 10px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats+p {
+.stat-block .stats+p {
     margin-top: 10px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats .table-overflow-wrapper {
+.stat-block .stats .table-overflow-wrapper {
     flex: 1 1 auto
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves {
+.stat-block .stats table.abilities-saves {
     flex: 1 1 auto;
     line-height: 24px;
     background: revert;
@@ -105,18 +109,18 @@
     break-inside: avoid
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead {
+.stat-block .stats table.abilities-saves thead {
     border: none;
     height: revert;
     min-height: 45px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead tr {
+.stat-block .stats table.abilities-saves thead tr {
     height: revert;
     min-height: 45px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead tr th {
+.stat-block .stats table.abilities-saves thead tr th {
     padding: 5px 2px 0 !important;
     background: inherit;
     color: inherit;
@@ -127,16 +131,16 @@
     font-size: 14px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody {
+.stat-block .stats table.abilities-saves tbody {
     border: none
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr {
+.stat-block .stats table.abilities-saves tbody tr {
     background-color: #fdfdfd;
     color: #222
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody th {
+.stat-block .stats table.abilities-saves tbody th {
     text-transform: uppercase;
     font-weight: 700;
     border: none;
@@ -144,22 +148,22 @@
     font-size: 16px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody td {
+.stat-block .stats table.abilities-saves tbody td {
     min-width: revert;
     padding: 5px 10px !important;
     border: none;
     font-size: 16px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tr :is(th, td) {
+.stat-block .stats table.abilities-saves tr :is(th, td) {
     transition: .3s
 }
 
-.body-page .p-article-a .p-article-content .stat-block p:nth-of-type(2) strong+strong {
+.stat-block p:nth-of-type(2) strong+strong {
     margin-left: 30px
 }
 
 
-.body-page .p-article-a .p-article-content *+.stat-block {
+*+.stat-block {
     margin-top: 24px
 }
