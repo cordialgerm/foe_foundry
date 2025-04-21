@@ -29,7 +29,7 @@ body::before {
     inset: 0;
     background-color: var(--muted-color);
     /* Layer 1 */
-    background-image: url('parchment-stained.png');
+    background-image: url('parchment-summoning.png');
     /* Layer 2 */
     background-repeat: repeat;
     background-size: cover;
