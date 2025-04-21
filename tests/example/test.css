@@ -3,23 +3,68 @@
     --muted-color: #2a2a2a;
     --fg-color: #f4f1e6;
 
-    --primary-color: #b31312;
+    --primary-color: #d51e1e;
     --secondary-color: #5b22cf;
     --tertiary-color: #c29a5b;
     --box-shadow-color: #aaaaaa70;
     --stylistic-font: "Uncial Antiqua";
     --header-font: "Cinzel";
     --primary-font: "Merriweather", serif;
+
+    --small-margin: 5px;
+    --big-margin: 10px;
+    --medium-margin: 8px;
 }
 
 body {
     margin: 10px;
     background: var(--muted-color);
     color: var(--fg-color);
+    font-family: var(--primary-font);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: var(--muted-color);
+    /* Layer 1 */
+    background-image: url('parchment-stained.png');
+    /* Layer 2 */
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .stat-block-container {
     max-width: 900px;
+}
+
+.stat-block-container ul {
+    list-style: none;
+    padding-left: 1.2em;
+}
+
+.stat-block-container li {
+    margin-top: 5px;
+}
+
+.stat-block-container ul li::before {
+    content: "⟁";
+    color: var(--tertiary-color);
+    margin-right: 0.5em;
+    font-size: 1em;
+}
+
+.stat-block-container :is(h1, h2, h3, h4, h5) {
+    color: var(--primary-color);
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin-top: var(--big-margin);
+    margin-bottom: var(--big-margin);
 }
 
 .stat-block {
@@ -29,15 +74,60 @@ body {
     border: 1px solid var(--tertiary-color);
     outline: 1px solid var(--tertiary-color);
     outline-offset: -4px;
-    padding: 10px;
+
     position: relative;
     box-shadow: 0 5px 8px 0 var(--box-shadow-color);
     font-size: 16px;
     line-height: 20px;
     border-radius: 8px;
+    padding: 12px;
+    margin: 20px;
+    margin-top: 30px;
 
     font-family: var(--primary-font);
     columns: 390px 2
+}
+
+/* Gylph Animation */
+@keyframes shimmer {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/* Top-left glyph */
+.stat-block::before {
+    content: "ᚠ";
+    font-size: 2em;
+    color: var(--tertiary-color);
+    opacity: 0.5;
+    position: absolute;
+    top: -0.5em;
+    left: -0.5em;
+    pointer-events: none;
+    animation: shimmer 12s infinite ease-in-out;
+}
+
+/* Bottom-right glyph */
+.stat-block::after {
+    content: "ᛃ";
+    font-size: 2em;
+    color: var(--tertiary-color);
+    opacity: 0.5;
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.5em;
+    pointer-events: none;
+    animation: shimmer 10s infinite ease-in-out;
+    animation-delay: 2s;
 }
 
 .stat-block .monster-name {
@@ -45,7 +135,7 @@ body {
     color: var(--primary-color);
     font-family: var(--stylistic-font);
     display: inline;
-    font-size: 22px;
+    font-size: 28px;
     overflow-wrap: break-word;
 }
 
@@ -73,7 +163,7 @@ body {
     border-bottom: 2px solid var(--primary-color);
 
     font-family: var(--header-font);
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     letter-spacing: .35px;
 
@@ -89,7 +179,7 @@ body {
     font-size: 15px;
     line-height: 1.4;
     text-wrap: pretty;
-    margin-bottom: 8px;
+    margin-bottom: var(--medium-margin);
     margin-top: 0;
 }
 
@@ -161,11 +251,6 @@ body {
     border: none
 }
 
-.stat-block .stats table.abilities-saves tbody tr {
-    background-color: #fdfdfd;
-    color: #222
-}
-
 .stat-block .stats table.abilities-saves tbody th {
     text-transform: uppercase;
     font-weight: 700;
@@ -187,9 +272,4 @@ body {
 
 .stat-block p:nth-of-type(2) strong+strong {
     margin-left: 30px
-}
-
-
-*+.stat-block {
-    margin-top: 24px
 }
