@@ -1,5 +1,4 @@
 .body-page .p-article-a .p-article-content .stat-block {
-    --compendium-p-bottom: 0;
     border: 1px solid #a7a3a0;
     background-color: #fefcef;
     padding: 10px;
@@ -9,7 +8,7 @@
     background-position: top;
     background-repeat: no-repeat;
     font-size: 16px;
-    line-height: 19.6px;
+    line-height: 20px;
     border-radius: 8px;
     outline: 1px solid #a7a3a0;
     outline-offset: -4px;
@@ -17,8 +16,15 @@
     columns: 384px 2
 }
 
+.body-page .p-article-a .p-article-content .stat-block .monster-name {
+
+    color: rgb(188, 15, 15);
+    display: inline;
+    font-size: 22px;
+    overflow-wrap: break-word;
+}
+
 .body-page .p-article-a .p-article-content .stat-block :is(h2, h3, h4, h5) {
-    --header-font-override: 22px;
     font-family: Roboto Condensed;
     text-transform: uppercase;
     font-weight: 700;
@@ -45,7 +51,7 @@
     margin-top: 0;
 }
 
-.body-page .p-article-a .p-article-content .stat-block>p:first-of-type {
+.body-page .p-article-a .p-article-content .stat-block p.creature-type {
     margin-top: 0;
     font-style: italic;
     opacity: .8
@@ -91,7 +97,6 @@
 }
 
 .body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves {
-    --theme-table-row-color: transparent;
     flex: 1 1 auto;
     line-height: 24px;
     background: revert;
@@ -154,41 +159,7 @@
     margin-left: 30px
 }
 
-.body-page .p-article-a .p-article-content .stat-block .legendary-actions {
-    color: #696665;
-    font-style: italic;
-    line-height: 1.3;
-    font-size: 15px;
-    font-weight: 500
-}
-
-.body-page .p-article-a .p-article-content .stat-block+.flexible-double-column {
-    margin-top: 36px
-}
 
 .body-page .p-article-a .p-article-content *+.stat-block {
     margin-top: 24px
-}
-
-.stat-block-background {
-    background-repeat: no-repeat;
-    -webkit-box-shadow: 0 5px 8px 0 #aaa;
-    -moz-box-shadow: 0 5px 8px 0 #aaa;
-    box-shadow: 0 5px 8px 0 #aaa;
-    background-position: top !important;
-    background-image: url(https://media.dndbeyond.com/compendium-images/tcoe/0gqawlEa2tjXGxpc/mm_statbg_sm.jpg) !important;
-    background-color: #fefcef
-}
-
-.stat-block-background:after,
-.stat-block-background:before {
-    background-image: url(https://media.dndbeyond.com/compendium-images/cm/c43LH2y2Gcaxb3V2/MMStatBar_lrg.png) !important
-}
-
-.stat-block-ability-scores-stat {
-    padding: 10px 0 !important
-}
-
-.stat-block-ability-scores-modifier {
-    margin-left: 2px
 }
