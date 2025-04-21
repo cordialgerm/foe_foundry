@@ -15,21 +15,23 @@ While originally created through arcane experimentation, owlbears have long sinc
 - Some villages prepare offerings to an Owlbear in order to benefit from its territorial protection.
 - Albino Owlbears are extremely rare and are sought out by practitioners of the occult as particularly powerful sacrifices.
 
+{{ render_images(images["owlbear"]) }}
+
 ## Owlbear
 
-<div id="statlbock-owlbear"></div>
+{{ render_statblock(statblocks["owlbear"]) }}
 
 ## Owlbear Cub
 
 Owlbears are fiercely protective of their cubs, despite their individualistic tendencies. Many a fool has perished attempting to capture and tame an **Owlbear Cub**.
 
-<div id="statblock-owlbear-cub"></div>
+{{ render_statblock(statblocks["owlbear-cub"]) }}
 
 ## Savage Owlbear
 
 A **Savage Owlbear** has extended its territory sufficiently the only thing matching its massive size is its unbridled aggression.
 
-<div id="statblock-savage-owlbear"></div>
+{{ render_statblock(statblocks["savage-owlbear"]) }}
 
 ## Tactics
 

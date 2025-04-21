@@ -23,7 +23,8 @@ A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into dea
 - The more light a creature brings into the world, the more their shadow twists in ways it should not.
 - In cursed places, one’s own shadow may rebel, tearing itself free to plot its former owner's downfall.
 
-<div id="statblock-shadow"></div>
+{{ render_images(images["shadow"]) }}
+{{ render_statblock(statblocks["shadow"]) }}
 
 ## Specters
 
@@ -35,7 +36,8 @@ A **Specter** is a soul fragment, splintered by violence or unendurable pain. La
 - Some say Specters are the result of improperly performed death rites, or when a soul is interrupted in its crossing.
 - Though easily dismissed alone, swarms of Specters can overwhelm the mind, drowning victims in secondhand terror.
 
-<div id="statblock-specter"></div>
+{{ render_images(images["specter"]) }}
+{{ render_statblock(statblocks["specter"]) }}
 
 ## Banshees
 
@@ -47,7 +49,8 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 - In some cultures, Banshees are seen not as monsters but as messengers that warn those fated to die.
 - A Banshee’s presence carries a dread silence that can be physically painful to break
 
-<div id="statblock-banshee"></div>
+{{ render_images(images["banshee"]) }}
+{{ render_statblock(statblocks["banshee"]) }}
 
 ## Revenants
 
@@ -59,7 +62,8 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 - A Revenant will not rest until the injustice that binds it to life has been righted by its own hands. Even if its killer has long since died, the Revenant will only rest when it has spilled the blood of the offender's descendants, disciples, or legacy
 - Some Revenants are given leave by divine forces, but others tear themselves out of the River of Death through raw will, dragging pieces of the underworld with them.
 
-<div id="statblock-revenant"></div>
+{{ render_images(images["revenant"]) }}
+{{ render_statblock(statblocks["revenant"]) }}
 
 ## Ghosts
 
@@ -73,11 +77,12 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 - They often fixate on objects, people, or places tied to their strongest memories: an heirloom locket, a family home, or the battlefield where they fell.
 - Their presence distorts time and perception, as their pain bleeds into the world. Dreams fray, names slip, and voices echo from forgotten places.
 
-<div id="statblock-ghost"></div>
+{{ render_images(images["ghost"]) }}
+{{ render_statblock(statblocks["ghost"]) }}
 
 ## Wraiths
 
-When a soul steeped in malice dies, it may resist the pull of the Styx. Caught in the cold eddies of that underworld current, its will festers. Twisting and swelling, it draws in the remnants of other damned spirits. Layer by layer, a powerful **Wraith** forms: a cursed vortex of souls too vile to cross over. When the spirit of the wraith is particularly evil it can attract such a dense miasma of negative energy that a **Wraith Shadelord** forms.
+When a soul steeped in malice dies, it may resist the pull of the Styx. Caught in the cold eddies of that underworld current, its will festers. Twisting and swelling, it draws in the remnants of other damned spirits. Layer by layer, a powerful **Wraith** forms: a cursed vortex of souls too vile to cross over.
 
 Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is cohesive and cunning. Its presence dims light, drains warmth, and enslaves lesser spirits to serve as extensions of its will.
 
@@ -87,9 +92,18 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 - Unlike **Ghosts**, who cling to memory, **Wraiths** cling to power
 - **Wraiths** are drawn to places where evil lingers, especially where other spirits might be harvested
 
-<div id="statblock-wraith"></div>
+{{ render_images(images["wraith"]) }}
 
-<div id="statblock-wraith-shadelord"></div>
+### Wraith
+
+{{ render_statblock(statblocks["wraith"]) }}
+
+### Wraith Shadelord
+
+When the spirit of the wraith is particularly evil it can attract such a dense miasma of negative energy that a **Wraith Shadelord** forms.
+
+{{ render_statblock(statblocks["wraith_shadelord"]) }}
+
 
 ## Encounters
 

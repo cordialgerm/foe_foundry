@@ -12,15 +12,18 @@ Unless it's recently dined, a gelatinous cube is nearly invisible. Many a would-
 - Once engulfed, escape is rare. The cube immediately begins digesting its prey
 - The contents of a cube often include more than bones: half-dissolved scrolls, rusted crowns, or the final relics of an unlucky party.
 
+{{ render_images(images["gelatinous_cube"]) }}
+
 ## Gelatinous Cube
 
-<div id="statblock-gelatinous-cube"></div>
+{{ render_statblock(statblocks["gelatinous_cube"]) }}
 
 ## Ancient Gelatinous Cube
 
-An **Ancient Gelatinous Cube** has absorbed so much organic material that it has swollen to tremendous size. Some are rumored to contain entire treasure hoards from the assortment of misfortunate adventureres they have absorbed over the decades.
+An **Ancient Gelatinous Cube** has absorbed so much organic material that it has swollen to tremendous size. Some are rumored to contain entire treasure hoards from the assortment of misfortunate adventurers they have absorbed over the decades.
 
-<div id="statblock-ancient-gelatinous-cube"></div>
+{{ render_statblock(statblocks["ancient_gelatinous_cube"]) }}
+
 
 ## Tactics
 

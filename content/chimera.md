@@ -12,16 +12,21 @@ Legends say that chimera are heralds of imminent divine wrath or impending disas
 - Ancient myths speak of a miracle: if a chimera is slain by selfless, noble and just heroes, then the disaster it heralds may yet be averted.
 - Some cultures have rituals around Chimera, treating the creature not as a foe, but as a final test of worth.
 
+{{ render_images(images["chimera"]) }}
+
+<div class="break-after">
 
 ## Chimera
 
-<div id="statblock-chimera">Chimera Placeholder</div>
+{{ render_statblock(statblocks["chimera"], break_after=False)}}
+
+</div>
 
 ## Chimera Sovereign
 
 A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
-<div id="statblock-chimera-sovereign">Chimera Sovereign Placeholder</div>
+{{ render_statblock(statblocks["chimera_sovereign"]) }}
 
 ## Tactics
 

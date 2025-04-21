@@ -13,15 +13,17 @@ Manticores swoop down on their prey from above, launching volleys of barbed tail
 - Manticores hurl iron-hard spikes from their tails like arrows, cackling as their victims fall.
 - Some form loose herds to hunt larger prey, but most are too selfish, arrogant, and ill-tempered to share the spotlight.
 
+{{ render_images(images["manticore"]) }}
+
 ## Manticore
 
-<div id="statblock-manticore"></div>
+{{ render_statblock(statblocks["manticore"]) }}
 
 ## Manticore Ravager
 
-A **Manticore Ravager** has bowbreaten enough of its fellows that it leads a loosely-subservient pack. Ravagers often hone their insults on their inferiors, and the lowest-ranked Manticore in the pack is mercilessly bullied.
+A **Manticore Ravager** has intimidated enough of its fellows that it leads a loosely-subservient pack. Ravagers often hone their insults on their inferiors, and the lowest-ranked Manticore in the pack is mercilessly bullied.
 
-<div id="statblock-manticore-ravager"></div>
+{{ render_statblock(statblocks["manticore-ravager"]) }}
 
 ## Tactics
 
