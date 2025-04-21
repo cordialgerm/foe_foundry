@@ -16,6 +16,8 @@ Wights are the dead and frozen corpses of wicked champions of bygone eras whose 
 
 {{ render_images(images["wight"]) }}
 
+<div class="break-after"></div>
+
 ## Wight
 
 {{ render_statblock(statblocks["wight"]) }}

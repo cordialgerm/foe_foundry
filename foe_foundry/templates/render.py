@@ -2,7 +2,6 @@ from io import BytesIO  # noqa
 from pathlib import Path
 from typing import List
 import base64
-import pdfkit
 from markdown import markdown
 from markupsafe import Markup
 from functools import partial
@@ -26,7 +25,7 @@ def render_statblock(env, statblock, break_after: bool = True):
     template = env.get_template("creature_template.html.j2")
     html = "<div>" + template.render(statblock=statblock) + "</div>"
     if break_after:
-        html += '\n<div class="break-before"></div>'
+        html += '\n<div class="break-after"></div>'
 
     return Markup(html)  # Mark as safe to avoid escaping
 
@@ -175,11 +174,10 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     for _, images in access_tracking_images.get_unused().items():
         unused_images.extend(images)
 
-    template_context: dict = dict(
-        lore_html=lore_html_raw,
-        unused_statblocks=unused_statblocks,
-        unused_images=unused_images,
-    )
+    if len(unused_statblocks) > 0 or len(unused_images) > 0:
+        raise ValueError("Unused statlbocks and/or images")
+
+    template_context: dict = dict(lore_html=lore_html_raw)
 
     jinja_template = env.get_template("pamphlet_template.html.j2")
     html_raw = jinja_template.render(template_context)
@@ -188,12 +186,6 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         f.write(html_raw)
 
     return path
-
-
-def _render_pdf(path: Path) -> Path:
-    new_path = path.with_suffix(".pdf")
-    pdfkit.from_file(str(path), output_path=str(new_path))
-    return new_path
 
 
 def _resize_image_as_base64_png(path: Path, max_size: int = 300) -> str:

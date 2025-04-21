@@ -15,6 +15,8 @@ Mimics disguise themselves as inanimate objects such as treasure chests, doors, 
 
 {{ render_images(images["mimic"]) }}
 
+<div class="break-after"></div>
+
 ## Mimic
 
 {{ render_statblock(statblocks["mimic"]) }}

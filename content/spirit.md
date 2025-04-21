@@ -13,6 +13,8 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 | **Ghost**    | Soul Bound by Memory and Regret        | Reenacting lost moments, fixated on people or places         | A memory too painful to release      |
 | **Wraith**   | Malignant Core of Condensed Evil       | Powerful shadow-form that enslaves or absorbs other spirits    | Hunger for power and dominion        |
 
+<div class="break-after"></div>
+
 ## Shadows
 
 A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into death. While the rest of the spirit is swept down the Styx, the Shadow lingers behind like a stain - alive with jealousy, hunger, and spite. Shadows are drawn to extinguish warmth, light, and life, which they revile above all.

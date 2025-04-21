@@ -14,13 +14,11 @@ Legends say that chimera are heralds of imminent divine wrath or impending disas
 
 {{ render_images(images["chimera"]) }}
 
-<div class="break-after">
+<div class="break-after"></div>
 
 ## Chimera
 
-{{ render_statblock(statblocks["chimera"], break_after=False)}}
-
-</div>
+{{ render_statblock(statblocks["chimera"])}}
 
 ## Chimera Sovereign
 

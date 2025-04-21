@@ -15,6 +15,8 @@ Manticores swoop down on their prey from above, launching volleys of barbed tail
 
 {{ render_images(images["manticore"]) }}
 
+<div class="break-after"></div>
+
 ## Manticore
 
 {{ render_statblock(statblocks["manticore"]) }}

@@ -17,6 +17,8 @@ While originally created through arcane experimentation, owlbears have long sinc
 
 {{ render_images(images["owlbear"]) }}
 
+<div class="break-after"></div>
+
 ## Owlbear
 
 {{ render_statblock(statblocks["owlbear"]) }}

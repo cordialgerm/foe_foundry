@@ -14,6 +14,8 @@ Unless it's recently dined, a gelatinous cube is nearly invisible. Many a would-
 
 {{ render_images(images["gelatinous_cube"]) }}
 
+<div class="break-after"></div>
+
 ## Gelatinous Cube
 
 {{ render_statblock(statblocks["gelatinous_cube"]) }}
@@ -23,7 +25,6 @@ Unless it's recently dined, a gelatinous cube is nearly invisible. Many a would-
 An **Ancient Gelatinous Cube** has absorbed so much organic material that it has swollen to tremendous size. Some are rumored to contain entire treasure hoards from the assortment of misfortunate adventurers they have absorbed over the decades.
 
 {{ render_statblock(statblocks["ancient_gelatinous_cube"]) }}
-
 
 ## Tactics
 
