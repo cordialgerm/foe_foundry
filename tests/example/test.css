@@ -1,0 +1,646 @@
+#content {
+    color: var(--theme-page-fg-color, #222) !important
+}
+
+@media(max-width: 1023px) {
+
+    body,
+    html body.responsive-enabled {
+        background: var(--theme-page-bg-image-base, var(--theme-page-bg-color)), var(--theme-page-bg-color, #f9f9f9) !important
+    }
+}
+
+@media(min-width: 1024px) {
+    body {
+        background: var(--theme-page-bg-image-1024, var(--theme-page-bg-image-base)) no-repeat center 114px, var(--theme-page-bg-image-base) var(--theme-page-bg-color, #f9f9f9)
+    }
+}
+
+@media(min-width: 1921px) {
+    body {
+        background: var(--theme-page-bg-image-1921, var(--theme-page-bg-image-base)) no-repeat center 114px, var(--theme-page-bg-image-base) var(--theme-page-bg-color, #f9f9f9)
+    }
+}
+
+@media(min-width: 2561px) {
+    body {
+        background: var(--theme-page-bg-image-2561, var(--theme-page-bg-image-base)) no-repeat center 114px, var(--theme-page-bg-image-base) var(--theme-page-bg-color, #f9f9f9)
+    }
+}
+
+.body-page .p-article-a .p-article-content table tbody tr:nth-child(odd),
+.p-article-a .section-changelog .p-article-content table tbody tr:nth-child(odd),
+.section-posts .p-article-a .p-article-content table tbody tr:nth-child(odd) {
+    background-color: unset
+}
+
+.body-page .p-article-a .p-article-content a:not(.ddb-lightbox-outer, h3>a):focus,
+.body-page .p-article-a .p-article-content a:not(.ddb-lightbox-outer, h3>a):hover {
+    text-decoration: underline
+}
+
+.body-page .p-article-a .p-article-content :is(ol, ul).list--bold li::marker {
+    font-weight: 700
+}
+
+.body-page .p-article-a .p-article-content :is(ol, ul).list--italic li::marker {
+    font-style: italic
+}
+
+.body-page .p-article-a .p-article-content :is(ol, ul):is(.list--hidden, .list--none) li::marker {
+    content: ""
+}
+
+.body-page .p-article-a .p-article-content :is(ol, ul):not(:is(.Basic-Text-Frame, .monster--stat-block, .stat-block) :is(dl, ol, ul)) {
+    margin: 0 0 0 19.5px;
+    line-height: 30px
+}
+
+.body-page .p-article-a .p-article-content :is(ol, ul)+:is(h2, h3, h4, h5) {
+    margin-top: 6.5px
+}
+
+.body-page .p-article-a .p-article-content p {
+    margin-bottom: var(--compendium-p-bottom, 12px);
+    margin-top: var(--compendium-p-top, 0)
+}
+
+hr.separator {
+    background-image: url(https://media.dndbeyond.com/compendium-images/components/dnd-sep.svg);
+    min-height: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 850px auto;
+    opacity: .07;
+    width: 100%;
+    max-width: 850px
+}
+
+
+
+.flexible-double-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 0 !important
+}
+
+.flexible-double-column>* {
+    flex-basis: 360px;
+    flex-grow: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 50px;
+    min-width: 50px
+}
+
+.flexible-double-column__column-width-45pct {
+    flex-basis: 324px;
+    flex-grow: 82
+}
+
+.flexible-double-column__column-width-40pct {
+    flex-basis: 289px;
+    flex-grow: 67
+}
+
+.flexible-double-column__column-width-35pct {
+    flex-basis: 252px;
+    flex-grow: 54
+}
+
+.flexible-double-column__column-width-30pct {
+    flex-basis: 217px;
+    flex-grow: 43
+}
+
+.flexible-double-column__column-width-25pct {
+    flex-basis: 183px;
+    flex-grow: 34
+}
+
+.flexible-double-column__column-width-20pct {
+    flex-basis: 144px;
+    flex-grow: 25
+}
+
+.flexible-double-column .Basic-Text-Frame-2,
+.flexible-double-column .Basic-Text-Frame-3 {
+    float: none !important;
+    margin-top: 10px !important;
+    width: auto !important
+}
+
+.flexible-double-column .Basic-Text-Frame,
+.flexible-double-column .monster--stat-block {
+    column-count: auto;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.flexible-double-column.flex-center {
+    align-items: center
+}
+
+.flexible-double-column.flex-bottom {
+    align-items: flex-end
+}
+
+.flexible-double-column .monster-with-metadata {
+    --monster-with-metadata-margin: 0
+}
+
+.flexible-double-column figure.compendium-art {
+    margin-top: 0
+}
+
+.double-columns {
+    max-width: 850px;
+    margin: 0 auto;
+    columns: 320px 2;
+    gap: 16px
+}
+
+.flexible-triple-column {
+    max-width: 850px;
+    margin: 0 auto;
+    columns: 270px 3;
+    gap: 10px
+}
+
+.flexible-quad-column {
+    max-width: 850px;
+    margin: 0 auto;
+    columns: 200px 4;
+    gap: 10px
+}
+
+.body-page .p-article-a .p-article-content .stat-block {
+    --compendium-p-bottom: 0;
+    border: 1px solid #a7a3a0;
+    background-color: #fefcef;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 5px 8px 0 var(--stat-block-shadow, #aaa);
+    background: var(--stat-block-bg-override, #f6f3ee);
+    background-position: top;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 19.6px;
+    border-radius: 8px;
+    outline: 1px solid #a7a3a0;
+    outline-offset: -4px;
+    font-family: var(--stat-block-font, Roboto, Helvetica, sans-serif);
+    columns: 384px 2
+}
+
+.body-page .p-article-a .p-article-content .stat-block :is(h2, h3, h4, h5) {
+    --header-font-override: 22px;
+    font-family: Roboto Condensed;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 8px;
+    margin-block-end: 0
+}
+
+.body-page .p-article-a .p-article-content .stat-block :is(h2, h3, h4, h5):after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 2px auto 8px;
+    height: 1px;
+    background: var(--monster-header-underline, #7a3c2f);
+    column-span: all
+}
+
+.body-page .p-article-a .p-article-content .stat-block p {
+    break-inside: avoid;
+    font-size: 15px;
+    line-height: 1.4;
+    text-wrap: pretty
+}
+
+.body-page .p-article-a .p-article-content .stat-block p+p {
+    --compendium-p-top: 10px
+}
+
+.body-page .p-article-a .p-article-content .stat-block>p:first-of-type {
+    margin-top: 0;
+    font-style: italic;
+    opacity: .8
+}
+
+.body-page .p-article-a .p-article-content .stat-block>p:first-of-type+p {
+    --compendium-p-top: 16px
+}
+
+.body-page .p-article-a .p-article-content .stat-block :is(ol, ul, dl) {
+    margin-bottom: 0;
+    padding-top: 0;
+    font-size: 15px;
+    line-height: 1.4
+}
+
+.body-page .p-article-a .p-article-content .stat-block :is(ol, ul, dl) li {
+    margin: 8px 0 0 6px;
+    break-inside: avoid
+}
+
+.body-page .p-article-a .p-article-content .stat-block .monster-header {
+    padding-top: 4px;
+    letter-spacing: .35px;
+    font-weight: 500;
+    color: var(--monster-header-color, #5b160c);
+    font-size: var(--monster-trait-header-size, 18px);
+    font-family: var(--monster-trait-header-font, "Roboto Condensed", Helvetica, sans-serif);
+    border-bottom: 2px solid var(--monster-header-underline, #7a3c2f)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .monster-header+p {
+    break-before: avoid
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats {
+    display: flex;
+    gap: 10px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats+p {
+    margin-top: 10px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats .table-overflow-wrapper {
+    flex: 1 1 auto
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves {
+    --theme-table-row-color: transparent;
+    flex: 1 1 auto;
+    line-height: 24px;
+    background: revert;
+    border: none;
+    font-size: 16px;
+    break-inside: avoid
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves.physical {
+    --stats-score: #ede6d9;
+    --stats-mods: #ded4cc;
+    --stats-score-hover: rgba(153, 127, 109, 0.49019607843137253);
+    --stats-mods-hover: rgba(153, 109, 114, 0.49019607843137253)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves.mental {
+    --stats-score: #d8dad1;
+    --stats-mods: #d0caca;
+    --stats-score-hover: rgba(109, 141, 153, 0.49019607843137253);
+    --stats-mods-hover: rgba(117, 109, 153, 0.49019607843137253)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead {
+    border: none;
+    height: revert;
+    min-height: 45px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead tr {
+    height: revert;
+    min-height: 45px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves thead tr th {
+    padding: 5px 2px 0 !important;
+    background: inherit;
+    color: inherit;
+    vertical-align: bottom;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody {
+    border: none
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr {
+    background-color: var(--theme-table-row-color, #fdfdfd);
+    color: var(--theme-table-header-fg-color, #222)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr:hover {
+    background-color: var(--stats-hover)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr:hover :nth-child(-n+3) {
+    background-color: var(--stats-score-hover)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr:hover :nth-child(n+3) {
+    background-color: var(--stats-mods-hover)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr :nth-child(-n+3) {
+    background-color: var(--stats-score)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody tr :nth-child(n+3) {
+    background-color: var(--stats-mods)
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody th {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding-left: 6px;
+    font-size: 16px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tbody td {
+    min-width: revert;
+    padding: 5px 10px !important;
+    border: none;
+    font-size: 16px
+}
+
+.body-page .p-article-a .p-article-content .stat-block .stats table.abilities-saves tr :is(th, td) {
+    transition: .3s
+}
+
+.body-page .p-article-a .p-article-content .stat-block p:nth-of-type(2) strong+strong {
+    margin-left: 30px
+}
+
+.body-page .p-article-a .p-article-content .stat-block figure {
+    position: static;
+    margin: 0 auto
+}
+
+.body-page .p-article-a .p-article-content .stat-block figure .artist-credit {
+    text-align: end;
+    right: 0;
+    left: 0;
+    bottom: -6px;
+    top: unset
+}
+
+.body-page .p-article-a .p-article-content .stat-block .legendary-actions {
+    color: var(--legendary-actions-color, #696665);
+    font-style: italic;
+    line-height: 1.3;
+    font-size: 15px;
+    font-weight: 500
+}
+
+.body-page .p-article-a .p-article-content .stat-block+.flexible-double-column {
+    margin-top: 36px
+}
+
+.body-page .p-article-a .p-article-content *+.stat-block {
+    margin-top: 24px
+}
+
+.monster--stat-block {
+    --compendium-p-bottom: 10px;
+    border: 1px solid #d4d0ce;
+    background-color: #fefcef;
+    padding: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 8px 0 #aaa;
+    background-position: top;
+    background: var(--stat-block-bg-override, url("https://media.dndbeyond.com/compendium-images/tcoe/0gqawlEa2tjXGxpc/mm_statbg_sm.jpg"));
+    font-size: 14px;
+    line-height: 19.6px;
+    font-family: var(--stat-block-font, Roboto, Helvetica, sans-serif);
+    columns: 384px 2
+}
+
+.monster--stat-block:after,
+.monster--stat-block:before {
+    content: "";
+    background-image: var(--stat-block-scrollbar, url("https://media.dndbeyond.com/compendium-images/cm/c43LH2y2Gcaxb3V2/MMStatBar_lrg.png")) !important;
+    background-size: 100% 100%;
+    background-position: 50%;
+    height: 4px;
+    display: inline-block;
+    position: absolute
+}
+
+.monster--stat-block:before {
+    left: -3px;
+    top: -3px;
+    right: -3px
+}
+
+.monster--stat-block:after {
+    left: -3px;
+    bottom: -3px;
+    right: -3px
+}
+
+@media(max-width: 767px) {
+    .monster--stat-block br {
+        display: none
+    }
+}
+
+.monster--stat-block p {
+    break-inside: avoid;
+    font-size: 14px;
+    line-height: 1.4
+}
+
+.monster--stat-block li {
+    break-inside: avoid
+}
+
+.body-page .p-article-a .p-article-content .monster--stat-block h2:after,
+.body-page .p-article-a .p-article-content .monster--stat-block h3:after {
+    content: none
+}
+
+.body-page .p-article-a .p-article-content .monster--stat-block h2,
+.body-page .p-article-a .p-article-content .monster--stat-block h3,
+.body-page .p-article-a .p-article-content .monster--stat-block h4,
+.body-page .p-article-a .p-article-content .monster--stat-block h5 {
+    font-size: var(--stat-block-header-size, 20px);
+    font-family: var(--stat-block-header-font, "Roboto Condensed", Helvetica, sans-serif);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: inline;
+    margin-right: 8px
+}
+
+.monster--stat-block>p:first-of-type {
+    font-style: italic;
+    border-bottom: 2px solid var(--stat-block-divider, #bc0f0f);
+    padding-bottom: 5px
+}
+
+.monster--stat-block dl,
+.monster--stat-block ol,
+.monster--stat-block ul {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important
+}
+
+.monster--stat-block dl li+li,
+.monster--stat-block ol li+li,
+.monster--stat-block ul li+li {
+    margin-top: 6px
+}
+
+.monster--stat-block .monster--stats {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    border-top: 2px solid var(--stat-block-divider, #bc0f0f);
+    border-bottom: 2px solid var(--stat-block-divider, #bc0f0f);
+    margin: 12px 0;
+    padding: 8px 0;
+    text-align: center;
+    align-items: center
+}
+
+.monster--stat-block .monster--stats p:nth-child(odd) {
+    margin-top: 12px !important
+}
+
+@media(max-width: 767px) {
+    .monster--stat-block .monster--stats {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "STR-a DEX-a CON-a" "STR-b DEX-b CON-b" "INT-a WIS-a CHA-a" "INT-b WIS-b CHA-b";
+        margin: 12px 6px 12px 0;
+        padding: 0 12px 8px 0
+    }
+
+    .monster--stat-block .monster--stats p:first-of-type {
+        grid-area: STR-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(3) {
+        grid-area: DEX-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(5) {
+        grid-area: CON-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(7) {
+        grid-area: INT-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(9) {
+        grid-area: WIS-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(11) {
+        grid-area: CHA-a
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(2) {
+        grid-area: STR-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(4) {
+        grid-area: DEX-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(6) {
+        grid-area: CON-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(8) {
+        grid-area: INT-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(10) {
+        grid-area: WIS-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-of-type(12) {
+        grid-area: CHA-b
+    }
+
+    .monster--stat-block .monster--stats p:nth-child(odd) {
+        margin-top: 12px !important
+    }
+}
+
+.body-page .p-article-a .p-article-content .monster--stat-block .monster--stats p {
+    font-size: 16px;
+    margin: 3px 0 5px
+}
+
+.monster--stat-block .monster--stats p:nth-child(odd) {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px !important
+}
+
+.monster--stat-block .monster--data-last:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--stat-block-divider, #bc0f0f);
+    padding: 0 0 8px
+}
+
+.monster--stat-block .monster--action-header {
+    font-size: var(--stat-block-action-header-size, 16px);
+    font-weight: 700;
+    font-family: var(--stat-block-action-header-font, "Roboto Condensed", Helvetica, sans-serif);
+    padding-top: 4px;
+    border-bottom: 1px solid var(--stat-block-divider, #bc0f0f)
+}
+
+.monster--stat-block .monster--action-header+p {
+    break-before: avoid
+}
+
+.monster--stat-block .monster--data-last strong+strong {
+    margin-left: 12px
+}
+
+.monster--stat-block figure {
+    position: static;
+    margin: 0 auto
+}
+
+.monster--stat-block figure .artist-credit {
+    text-align: end;
+    right: 0;
+    left: 0;
+    bottom: -6px;
+    top: unset
+}
+
+.stat-block-background {
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 5px 8px 0 #aaa;
+    -moz-box-shadow: 0 5px 8px 0 #aaa;
+    box-shadow: 0 5px 8px 0 #aaa;
+    background-position: top !important;
+    background-image: url(https://media.dndbeyond.com/compendium-images/tcoe/0gqawlEa2tjXGxpc/mm_statbg_sm.jpg) !important;
+    background-color: #fefcef
+}
+
+.stat-block-background:after,
+.stat-block-background:before {
+    background-image: url(https://media.dndbeyond.com/compendium-images/cm/c43LH2y2Gcaxb3V2/MMStatBar_lrg.png) !important
+}
+
+.stat-block-ability-scores-stat {
+    padding: 10px 0 !important
+}
+
+.stat-block-ability-scores-modifier {
+    margin-left: 2px
+}
