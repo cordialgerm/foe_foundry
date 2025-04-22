@@ -335,7 +335,7 @@ const artCredits = [
     title: "Art by Critical Hit",
     description: (
       <>
-        Art by www.critial-hit.biz
+        Art by www.critical-hit.biz
       </>
     )
   },
