@@ -1,0 +1,55 @@
+{% macro property_short(name,text, block = False) -%}
+{% if text|length > 0 and block %}
+<p>
+    <strong>{{name}}</strong>
+    {{text}}
+</p>
+{% elif text|length > 0 and not block%}
+<strong>{{name}}</strong>
+{{text}}
+{% endif %}
+{%- endmacro %}
+
+
+{% macro property(name,text, block = False) -%}
+{% if text|length > 0 and block %}
+<p>
+    <strong>{{name | fix_punctuation}}</strong>
+    {{text | fix_punctuation}}
+</p>
+{% elif text|length > 0 and not block %}
+<strong>{{name | fix_punctuation}}</strong>
+{{text | fix_punctuation}}
+{% endif %}
+{%- endmacro %}
+
+
+{% macro attack_blocks(attacks) %}
+{% for attack in attacks %}
+{{ attack_block(attack.display_name, attack.description)}}
+{% endfor %}
+{% endmacro %}
+
+{% macro attack_block(display_name, attack_text) -%}
+
+<p>
+    <strong>{{display_name | fix_punctuation}}</strong>
+    {{attack_text | fix_punctuation | markdown_no_wrapping_p}}
+</p>
+
+{%- endmacro %}
+
+{% macro features_block(features, heading='') -%}
+
+{% if heading|length > 0 and features|length > 0 %}
+<p class="monster-header">{{heading}}</p>
+{% endif %}
+
+{% for feature in features -%}
+<p>
+    <strong>{{feature.title}}.</strong>
+    {{feature.description | fix_punctuation | markdown_no_wrapping_p}}
+</p>
+{%- endfor %}
+
+{%- endmacro %}

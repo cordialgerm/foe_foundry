@@ -1,0 +1,18 @@
+:root {
+    --bg-color: #1a1a1a;
+    --muted-color: #2a2a2a;
+    --fg-color: #f4f1e6;
+
+    --primary-color: #d51e1e;
+    --secondary-color: #5b22cf;
+    --tertiary-color: #c29a5b;
+    --box-shadow-color: #aaaaaa70;
+    --box-shadow-strong-color: #aaaaaa30;
+    --stylistic-font: "Uncial Antiqua";
+    --header-font: "Cinzel";
+    --primary-font: "Merriweather", serif;
+
+    --small-margin: 5px;
+    --big-margin: 10px;
+    --medium-margin: 8px;
+}

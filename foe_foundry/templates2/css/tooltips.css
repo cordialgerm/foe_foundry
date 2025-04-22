@@ -1,0 +1,28 @@
+.spell {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.condition {
+    font-style: italic;
+    text-decoration: underline dotted;
+}
+
+.creature {
+    font-style: italic;
+    text-decoration: underline dottted;
+}
+
+.token {
+    font-style: italic;
+    text-decoration: underline dotted;
+}
+
+.feature {
+    font-style: italic;
+}
+
+.action {
+    font-style: italic;
+    text-decoration: underline dotted;
+}

@@ -1,0 +1,62 @@
+body {
+    margin: 10px;
+    background: var(--muted-color);
+    color: var(--fg-color);
+    font-family: var(--primary-font);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: var(--muted-color);
+    /* Layer 1 */
+    background-image: url('../img/parchment-stained.png');
+    /* Layer 2 */
+    background-repeat: repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.pamphlet-container {
+    max-width: 900px;
+}
+
+.pamphlet-container ul {
+    list-style: none;
+    padding-left: 1.2em;
+}
+
+.pamphlet-container li {
+    margin-top: 12px;
+}
+
+.pamphlet-container ul li::before {
+    content: "⟁";
+    color: var(--tertiary-color);
+    margin-right: 0.5em;
+    font-size: 1em;
+}
+
+.pamphlet-container :is(h1, h2, h3, h4, h5) {
+    color: var(--primary-color);
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin-top: var(--big-margin);
+    margin-bottom: var(--big-margin);
+}
+
+.pamphlet-container {
+    margin-left: 20px;
+}
+
+.break-before {
+    page-break-before: always;
+}
+
+.break-after {
+    page-break-after: always;
+}

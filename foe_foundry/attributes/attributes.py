@@ -154,9 +154,12 @@ class Attributes:
             pieces.append(f"{stat.name.upper()} {sign}{abs(mod)}")
         return ", ".join(pieces)
 
-    def describe_skills(self) -> str:
+    def describe_skills(self, skip: set[Skills] | None = None) -> str:
         pieces = []
         for skill, mod in self.skills.items():
+            if skip and skill in skip:
+                continue
+
             sign = "-" if mod < 0 else "+"
             pieces.append(f"{skill.name} {sign}{abs(mod)}")
         return ", ".join(pieces)

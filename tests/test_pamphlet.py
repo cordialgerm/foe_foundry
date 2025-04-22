@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from foe_foundry import templates
+from foe_foundry import templates2
 from foe_foundry.creatures import CreatureTemplate, all_templates_and_settings
 
 
@@ -26,4 +26,4 @@ def test_all_pamphlets(template: CreatureTemplate):
     pamphlets_dir = Path(__file__).parent.parent / "examples" / "pamphlets"
     pamphlets_dir.mkdir(exist_ok=True, parents=True)
     path = pamphlets_dir / f"{template.key}.html"
-    templates.render_pamphlet(template, path)
+    templates2.render_pamphlet(template, path)
