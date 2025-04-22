@@ -15,9 +15,13 @@ While originally created through arcane experimentation, owlbears have long sinc
 - Some villages prepare offerings to an Owlbear in order to benefit from its territorial protection.
 - Albino Owlbears are extremely rare and are sought out by practitioners of the occult as particularly powerful sacrifices.
 
+## Tactics
+
+Owlbears are fiercely territorial and will defend their cubs to the death. If a dangerous-looking foe enters their territory, they will first attempt to frighten the foe away before risking an engagement. However, if the foe appears frail or weak, an Owlbear will prepare a vicious ambush from elevated terrain, dense underbrush, or partially collapsed ruins. Owlbears retreat as soon as they have downed a potential meal or if they appear to be overwhelmed. However, many enter a vicious rage when injured and fight viciously to the death.
+
 {{ render_images(images["owlbear"]) }}
 
-<div class="break-after"></div>
+---
 
 ## Owlbear
 
@@ -34,10 +38,6 @@ Owlbears are fiercely protective of their cubs, despite their individualistic te
 A **Savage Owlbear** has extended its territory sufficiently the only thing matching its massive size is its unbridled aggression.
 
 {{ render_statblock(statblocks["savage-owlbear"]) }}
-
-## Tactics
-
-Owlbears are fiercely territorial and will defend their cubs to the death. If a dangerous-looking foe enters their territory, they will first attempt to frighten the foe away before risking an engagement. However, if the foe appears frail or weak, an Owlbear will prepare a vicious ambush from elevated terrain, dense underbrush, or partially collapsed ruins. Owlbears retreat as soon as they have downed a potential meal or if they appear to be overwhelmed. However, many enter a vicious rage when injured and fight viciously to the death.
 
 ## Encounters
 

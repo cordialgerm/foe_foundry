@@ -78,7 +78,7 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         statblocks=access_tracking_statblocks, images=access_tracking_images
     )
     lore_md_raw = lore_template.render(lore_context)
-    lore_html_raw = markdown(lore_md_raw, extensions=["tables"])
+    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables"])
 
     # check if all statblocks and images were used
     unused_statblocks = [v for _, v in access_tracking_statblocks.get_unused().items()]

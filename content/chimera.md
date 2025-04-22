@@ -12,9 +12,15 @@ Legends say that chimera are heralds of imminent divine wrath or impending disas
 - Ancient myths speak of a miracle: if a chimera is slain by selfless, noble and just heroes, then the disaster it heralds may yet be averted.
 - Some cultures have rituals around Chimera, treating the creature not as a foe, but as a final test of worth.
 
+## Tactics
+
+The three heads of the Chimera are in constant discord, leading to very unpredictable encounters. When the prideful lion head has the upper hand, the Chimera focuses on defeating the most physically powerful threat it faces. When the goat is in charge, the Chimera is intent on removing the weakest-looking foe. The spiteful dragon heads desires nothing more than to burn as many enemies to a crisp as possible.
+
+When running a Chimera encounter, start by using the *Quarreling Heads* ability to determine which head is in charge. This then determines the Chimera's tactics.
+
 {{ render_images(images["chimera"]) }}
 
-<div class="break-after"></div>
+---
 
 ## Chimera
 
@@ -25,12 +31,6 @@ Legends say that chimera are heralds of imminent divine wrath or impending disas
 A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
 {{ render_statblock(statblocks["chimera_sovereign"]) }}
-
-## Tactics
-
-The three heads of the Chimera are in constant discord, leading to very unpredictable encounters. When the prideful lion head has the upper hand, the Chimera focuses on defeating the most physically powerful threat it faces. When the goat is in charge, the Chimera is intent on removing the weakest-looking foe. The spiteful dragon heads desires nothing more than to burn as many enemies to a crisp as possible.
-
-When running a Chimera encounter, start by using the *Quarreling Heads* ability to determine which head is in charge. This then determines the Chimera's tactics.
 
 ## Encounters
 

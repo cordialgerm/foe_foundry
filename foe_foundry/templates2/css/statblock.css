@@ -148,7 +148,7 @@
 
 .stat-block .stats table.abilities-saves tbody td {
     min-width: revert;
-    padding: var(--smal-margin) var(--medium-margin) !important;
+    padding: var(--small-margin) var(--medium-margin) !important;
     border: none;
     font-size: var(--stats-font-size);
 }

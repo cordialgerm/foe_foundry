@@ -21,8 +21,18 @@ body::before {
     z-index: -1;
 }
 
-.pamphlet-container {
-    max-width: 900px;
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+    margin: var(--big-margin);
+    position: relative;
+}
+
+
+
+.pamphlet-container .stat-block {
+    max-width: calc(var(--column-size) * 2 + var(--big-margin) * 2);
 }
 
 .pamphlet-container ul {
@@ -45,10 +55,16 @@ body::before {
     font-weight: bold;
 }
 
-.pamphlet-container :is(h1, h2, h3, h4, h5) {
+.pamphlet-container h1 {
+    color: var(--primary-color);
+    font-family: var(--stylistic-font);
+    font-size: calc(1.25 * var(--stylistic-font-size));
+}
+
+.pamphlet-container :is(h2, h3, h4, h5) {
     color: var(--primary-color);
     font-family: var(--header-font);
-    font-weight: 700;
+    font-weight: bold;
     margin-top: var(--big-margin);
     margin-bottom: var(--big-margin);
 }
@@ -79,6 +95,10 @@ body::before {
 }
 
 .break-after {
+    page-break-after: always;
+}
+
+.pamphlet-container hr {
     page-break-after: always;
 }
 

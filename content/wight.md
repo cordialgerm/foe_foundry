@@ -14,9 +14,16 @@ Wights are the dead and frozen corpses of wicked champions of bygone eras whose 
 - Some Wights were once mighty champions, generals, or kings whose ambition or hubris led to their downfall — now cursed to serve darker masters.
 - Entire tombs, crypts, or cursed cities may be ruled by Wight-lords, gathering other undead to their banners in mockery of the living empires they once served.
 
+## Tactics
+
+- Wights command squads or even armies of lesser undead, which they use to harry and surround their prey before closing in on their victims
+- Wights are patient, cunning, and cruel. They show no mercy.
+- Wights are often drawn to the life-force of particularly powerful divine magic wielders
+
+
 {{ render_images(images["wight"]) }}
 
-<div class="break-after"></div>
+---
 
 ## Wight
 
@@ -33,13 +40,6 @@ A **Wight Fell Champion** was once a mortal champion of great renown who fell in
 A **Wight Dread Lord** was once a powerful ruler, thain, or champion whose pride and fear of death drove them to foul pacts with malevolent forces. In undeath, they command armies of lesser undead who mindlessly serve their twisted commands.
 
 {{ render_statblock(statblocks["wight-dread-lord"]) }}
-
-
-## Tactics
-
-- Wights command squads or even armies of lesser undead, which they use to harry and surround their prey before closing in on their victims
-- Wights are patient, cunning, and cruel. They show no mercy.
-- Wights are often drawn to the life-force of particularly powerful divine magic wielders
 
 ## Encounters
 

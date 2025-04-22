@@ -13,9 +13,16 @@ Mimics disguise themselves as inanimate objects such as treasure chests, doors, 
 - Mimics can understand languages, plan ambushes, and even coordinate rudimentarily with a form of Telepathy.
 - As mimics age, they acquire additional powers that make them more formidable
 
+## Tactics
+
+- Mimics are patient, waiting for precisely the right moment to strike
+- Mimics prioritize isolated or lightly armored creatures
+- After successfully swallowing prey, or if its ambush fails, a mimic will attempt to flee and blend in with its nearby surroundings
+- Larger, more powerful mimics are often able to inhabit entire rooms or structures
+
 {{ render_images(images["mimic"]) }}
 
-<div class="break-after"></div>
+---
 
 ## Mimic
 
@@ -32,13 +39,6 @@ When two mimics meet, they occasionally merge together to form into a **Greater 
 A **Vault Mimic** is ancient amongst its kind and has grown large enough that it can impersonate entire chambers, treasure vaults, or even floors of a building or dungeon.
 
 {{ render_statblock(statblocks["vault-mimic"]) }}
-
-## Tactics
-
-- Mimics are patient, waiting for precisely the right moment to strike
-- Mimics prioritize isolated or lightly armored creatures
-- After successfully swallowing prey, or if its ambush fails, a mimic will attempt to flee and blend in with its nearby surroundings
-- Larger, more powerful mimics are often able to inhabit entire rooms or structures
 
 ## Encounters
 

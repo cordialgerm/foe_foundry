@@ -13,7 +13,7 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 | **Ghost**    | Soul Bound by Memory and Regret        | Reenacting lost moments, fixated on people or places         | A memory too painful to release      |
 | **Wraith**   | Malignant Core of Condensed Evil       | Powerful shadow-form that enslaves or absorbs other spirits    | Hunger for power and dominion        |
 
-<div class="break-after"></div>
+---
 
 ## Shadows
 

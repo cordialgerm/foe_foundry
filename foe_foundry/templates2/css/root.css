@@ -29,3 +29,9 @@
     --big-margin: 12px;
     --medium-margin: 9px;
 }
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --column-size: 480px;
+    }
+}
