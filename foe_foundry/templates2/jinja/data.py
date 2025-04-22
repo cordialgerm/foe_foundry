@@ -11,7 +11,7 @@ from foe_foundry.utils import comma_separated
 
 from ...damage import Attack, Condition, DamageType
 from ...features import ActionType, Feature
-from ...skills import Skills
+from ...skills import Skills, Stats
 from ...statblocks import Statblock
 from .utilities import fix_punctuation
 
@@ -29,11 +29,23 @@ class MonsterTemplateData:
     movement: str
 
     STR: int
+    STR_MOD: int
+    STR_SAVE: int
     CON: int
+    CON_MOD: int
+    CON_SAVE: int
     DEX: int
+    DEX_MOD: int
+    DEX_SAVE: int
     WIS: int
+    WIS_MOD: int
+    WIS_SAVE: int
     INT: int
+    INT_MOD: int
+    INT_SAVE: int
     CHA: int
+    CHA_MOD: int
+    CHA_SAVE: int
 
     saves: str
     skills: str
@@ -231,6 +243,16 @@ class MonsterTemplateData:
                 replacement_text = f" It may replace {num2words(replacement_amount)} attack{'s' if replacement_amount > 1 else ''} with a use of its {replacement_options}"
                 multiattack += replacement_text
 
+        stat_args: dict = {}
+        for attr in Stats.All():
+            stat_args[f"{attr.name.upper()}"] = stats.attributes.stat(attr)
+            stat_args[f"{attr.name.upper()}_MOD"] = (
+                f"{stats.attributes.stat_mod(attr):+}"
+            )
+            stat_args[f"{attr.name.upper()}_SAVE"] = (
+                f"{stats.attributes.save_mod(attr) or stats.attributes.stat_mod(attr):+}"
+            )
+
         t = MonsterTemplateData(
             name=stats.name,
             selfref=stats.selfref,
@@ -241,12 +263,7 @@ class MonsterTemplateData:
             hp=hp,
             initiative=initiative,
             movement=stats.speed.describe(),
-            STR=stats.attributes.STR,
-            CON=stats.attributes.CON,
-            DEX=stats.attributes.DEX,
-            WIS=stats.attributes.WIS,
-            INT=stats.attributes.INT,
-            CHA=stats.attributes.CHA,
+            **stat_args,
             saves=stats.attributes.describe_saves(),
             skills=stats.attributes.describe_skills(skip={Skills.Initiative}),
             damage_vulnerabilities=_damage_list(

@@ -40,7 +40,7 @@ class _SpikeVolley(ManticorePower):
         super().__init__(name="Spike Volley")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(dpr_proportion=0.8, force_die=Die.d6)
+        dmg = stats.target_value(dpr_proportion=0.75, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         blinded = Condition.Blinded.caption
 

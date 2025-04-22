@@ -68,7 +68,7 @@ def render_images(images: list[dict]):
     pieces = []
     for img in images:
         pieces.append(
-            f"<img src='data:image/{img['image_ext']};base64, {img['image_base64']}' />"
+            f"<img class='monster-image' src='data:image/{img['image_ext']};base64, {img['image_base64']}' />"
         )
     html = "\n".join(pieces)
     return Markup(html)
