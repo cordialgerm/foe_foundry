@@ -30,8 +30,7 @@ A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
 The three heads of the Chimera are in constant discord, leading to very unpredictable encounters. When the prideful lion head has the upper hand, the Chimera focuses on defeating the most physically powerful threat it faces. When the goat is in charge, the Chimera is intent on removing the weakest-looking foe. The spiteful dragon heads desires nothing more than to burn as many enemies to a crisp as possible.
 
-When running a Chimera encounter, start by using the *Quarelling Heads* ability to determine which head is in charge. This then determines the Chimera's tactics.
-
+When running a Chimera encounter, start by using the *Quarreling Heads* ability to determine which head is in charge. This then determines the Chimera's tactics.
 ## Encounters
 
 - The PCs stumble across a **Chimera** in a charred clearing with two of its heads arguing about which will get the choice bits of the burned meal lying beside it
