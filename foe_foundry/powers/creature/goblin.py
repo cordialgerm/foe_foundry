@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...creature_types import CreatureType
-from ...damage import Condition
+from ...damage import Condition, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -103,7 +103,8 @@ class _CackleHex(GoblinPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
-        dmg = stats.target_value(dpr_proportion=0.8)
+        cursed = conditions.Cursed().caption
+        dmg = stats.target_value(dpr_proportion=0.7)
 
         feature = Feature(
             name="Cacklehex",
@@ -111,8 +112,8 @@ class _CackleHex(GoblinPower):
             replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} curses a creature it can see within 60 feet with a Cacklehex. \
-                The target must make a DC {dc} Wisdom saving throw. On a failure, it falls {prone.caption} and takes {dmg.description} psychic damage. \
-                It cannot stand up while affected in this way (save ends at end of turn).",
+                The target must make a DC {dc} Wisdom saving throw. On a failure, it takes {dmg.description} psychic damage and is {cursed} (save ends at end of turn). \
+                While cursed, it falls {prone.caption} and it cannot stand up.",
         )
 
         return [feature]

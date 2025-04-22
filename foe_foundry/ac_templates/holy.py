@@ -39,6 +39,7 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=False,
             quality_level=quality_level,
+            display_detail=True,
             score=ac + 0.6 - (1000 if not stats.attributes.is_sapient else 0),
         )
 

@@ -11,12 +11,15 @@ class ResolvedArmorClass:
     armor_type: str
     has_shield: bool
     is_armored: bool
+    display_detail: bool
     quality_level: int
     score: float
     description: str = field(init=False)
 
     def __post_init__(self):
-        if self.has_shield:
+        if not self.display_detail:
+            self.description = str(self.value)
+        elif self.has_shield:
             self.description = f"{self.value} ({self.armor_type}, Shield)"
         else:
             self.description = f"{self.value} ({self.armor_type})"

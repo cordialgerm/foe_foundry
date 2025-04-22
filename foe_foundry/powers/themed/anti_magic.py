@@ -4,7 +4,7 @@ from typing import List
 from ...attack_template import weapon
 from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import Attack, AttackType, Condition, DamageType
+from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -229,13 +229,14 @@ class _SpellStealer(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        cursed = conditions.Cursed().caption
         feature = Feature(
             name="Spell Stealer",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
             description=f"On a hit, if the target is a spellcaster, the spellcaster must make a DC {dc} Charisma saving throw. \
-                On a failure, the target is cursed and loses the ability to cast a spell of {stats.selfref}'s choice while cursed in this way. \
+                On a failure, the target is {cursed} and loses the ability to cast a spell of {stats.selfref}'s choice while cursed in this way. \
                 The curse can be removed with a *Remove Curse* spell or similar magic.",
         )
         return [feature]

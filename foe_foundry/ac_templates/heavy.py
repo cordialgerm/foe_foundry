@@ -34,6 +34,7 @@ class _HeavyArmor(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
+            display_detail=True,
             score=ac + 0.5 - (1000 if stats.attributes.STR < 15 else 0),
         )
 

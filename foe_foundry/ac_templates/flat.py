@@ -24,6 +24,7 @@ class _FlatAmorClassTemplate(ArmorClassTemplate):
             armor_type="Flat",
             has_shield=uses_shield,
             is_armored=True,
+            display_detail=False,
             quality_level=0,
             score=self.ac,
         )

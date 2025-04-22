@@ -44,6 +44,7 @@ class _NaturalArmorClassTemplate(ArmorClassTemplate):
             armor_type="Natural Armor",
             has_shield=uses_shield,
             is_armored=False,
+            display_detail=False,
             quality_level=quality_level,
             score=ac + 0.1,
         )
@@ -83,6 +84,7 @@ class _NaturalPlating(ArmorClassTemplate):
         return ResolvedArmorClass(
             value=ac,
             armor_type="Natural Plating",
+            display_detail=False,
             has_shield=uses_shield,
             is_armored=False,
             quality_level=quality_level,

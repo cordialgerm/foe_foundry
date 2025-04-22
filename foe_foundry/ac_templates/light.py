@@ -39,6 +39,7 @@ class _LightArmor(ArmorClassTemplate):
             armor_type=text,
             has_shield=uses_shield,
             is_armored=True,
+            display_detail=True,
             quality_level=quality_level,
             score=ac + 0.2,
         )

@@ -8,11 +8,24 @@
     --tertiary-color: #c29a5b;
     --box-shadow-color: #aaaaaa70;
     --box-shadow-strong-color: #aaaaaa30;
-    --stylistic-font: "Uncial Antiqua";
-    --header-font: "Cinzel";
-    --primary-font: "Merriweather", serif;
 
-    --small-margin: 5px;
-    --big-margin: 10px;
-    --medium-margin: 8px;
+    --stylistic-font: "Uncial Antiqua";
+    --stylistic-font-size: 26px;
+
+    --header-font: "Cinzel";
+    --header-font-size: 18px;
+
+    --primary-font: "Merriweather", serif;
+    --primary-font-size: 13px;
+    --primary-line-height: 1.4;
+
+    --stats-font-size: 16px;
+    --stats-line-height: 24px;
+    --stats-row-height: 45px;
+
+    --column-size: 390px;
+
+    --small-margin: 6px;
+    --big-margin: 12px;
+    --medium-margin: 9px;
 }

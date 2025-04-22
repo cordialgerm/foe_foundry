@@ -273,11 +273,12 @@ class _CurseOfVengeance(CursedPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.attributes.proficiency
+        cursed = conditions.Cursed().caption
         feature = Feature(
             name="Curse of Vengeance",
             action=ActionType.Feature,
             description=f"Whenever a creature hits {stats.selfref} with an attack it must make a DC {dc} Charisma saving throw. \
-                On a failure, the creature becomes Cursed with a curse of vengeance. \
+                On a failure, the creature becomes {cursed} with a curse of vengeance. \
                 Whenever a cursed creature hits {stats.selfref} with an attack, it takes {dmg} necrotic damage for each creature suffering the curse.",
         )
 

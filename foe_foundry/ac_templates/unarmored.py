@@ -25,6 +25,7 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
             value=ac,
             armor_type="Unarmored",
             has_shield=uses_shield,
+            display_detail=False,
             is_armored=False,
             quality_level=quality_level,
             score=ac,
@@ -55,6 +56,7 @@ class _BerserkersDefense(ArmorClassTemplate):
             armor_type=self.name,
             has_shield=uses_shield,
             is_armored=False,
+            display_detail=True,
             quality_level=0,
             score=ac,
         )
