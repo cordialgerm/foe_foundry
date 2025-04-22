@@ -1,4 +1,4 @@
-# Mimic
+# Mimics
 
 *Paranoia-Inducing Shapeshifting Ambusher*
 
@@ -12,6 +12,26 @@ Mimics disguise themselves as inanimate objects such as treasure chests, doors, 
 - Dousing a mimic with water breaks down its sticky excretions, often forcing it to reveal its true form
 - Mimics can understand languages, plan ambushes, and even coordinate rudimentarily with a form of Telepathy.
 - As mimics age, they acquire additional powers that make them more formidable
+
+{{ render_images(images["mimic"]) }}
+
+<div class="break-after"></div>
+
+## Mimic
+
+{{ render_statblock(statblocks["mimic"]) }}
+
+## Greater Mimic
+
+When two mimics meet, they occasionally merge together to form into a **Greater Mimic**. The process by which the two mates agree upon and merge is hotly debated by scholars.
+
+{{ render_statblock(statblocks["greater-mimic"]) }}
+
+## Vault Mimic
+
+A **Vault Mimic** is ancient amongst its kind and has grown large enough that it can impersonate entire chambers, treasure vaults, or even floors of a building or dungeon.
+
+{{ render_statblock(statblocks["vault-mimic"]) }}
 
 ## Tactics
 

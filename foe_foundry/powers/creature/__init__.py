@@ -19,6 +19,7 @@ from .ogre import OgrePowers
 from .simulacrum import SimulacrumPowers
 from .skeletal import SkeletalPowers
 from .spider import SpiderPowers
+from .spirit import SpiritPowers
 from .vrock import VrockPowers
 from .wight import WightPowers
 from .wolf import WolfPowers
@@ -45,6 +46,7 @@ CreaturePowers = (
     + OgrePowers
     + SkeletalPowers
     + SpiderPowers
+    + SpiritPowers
     + SimulacrumPowers
     + VrockPowers
     + WightPowers

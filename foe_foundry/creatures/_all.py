@@ -30,6 +30,7 @@ from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
+from .spirit import SpiritTemplate
 from .spy import SpyTemplate
 from .template import CreatureTemplate, GenerationSettings
 from .tough import ToughTemplate
@@ -72,6 +73,7 @@ AllTemplates: list[CreatureTemplate] = [
     ScoutTemplate,
     SimulacrumTemplate,
     SkeletonTemplate,
+    SpiritTemplate,
     SpyTemplate,
     ToughTemplate,
     VrockTemplate,

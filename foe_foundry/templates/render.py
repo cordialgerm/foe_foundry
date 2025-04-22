@@ -2,9 +2,10 @@ from io import BytesIO  # noqa
 from pathlib import Path
 from typing import List
 import base64
-import pdfkit
+from markdown import markdown
+from markupsafe import Markup
+from functools import partial
 
-import markdown
 import numpy as np
 from jinja2 import Environment, PackageLoader, select_autoescape
 from PIL import Image  # noqa
@@ -19,12 +20,34 @@ from ..statblocks import Statblock
 from .data import MonsterTemplateData
 from .utilities import fix_punctuation
 
+
+def render_statblock(env, statblock, break_after: bool = True):
+    template = env.get_template("creature_template.html.j2")
+    html = "<div>" + template.render(statblock=statblock) + "</div>"
+    if break_after:
+        html += '\n<div class="break-after"></div>'
+
+    return Markup(html)  # Mark as safe to avoid escaping
+
+
+def render_images(images):
+    pieces = []
+    for img in images:
+        pieces.append(
+            f"<img src='data:image/{img['image_ext']};base64, {img['image_base64']}' />"
+        )
+    html = "\n".join(pieces)
+    return Markup(html)
+
+
 env = Environment(
     loader=PackageLoader("foe_foundry"),
     autoescape=select_autoescape(),
     extensions=["jinja_markdown.MarkdownExtension"],
 )
 env.filters["fix_punctuation"] = fix_punctuation
+env.globals["render_statblock"] = partial(render_statblock, env)
+env.globals["render_images"] = render_images
 
 
 def render_html_to_path(stats: Statblock, path: Path) -> Path:
@@ -67,28 +90,42 @@ def render_html_inline_page_to_path(
     return path
 
 
+class AccessTrackingDict(dict):
+    """Keep track of which keys have been accessed so we know if statblocks have been used"""
+
+    def __init__(self, **kwargs):
+        new_kwargs = {k.replace("_", "-"): v for k, v in kwargs.items()}
+
+        super().__init__(**new_kwargs)
+        self.accessed_keys = set()
+
+    def __getitem__(self, key):
+        key = key.lower().replace("_", "-")
+        self.accessed_keys.add(key)
+        return super().__getitem__(key)
+
+    def __setitem__(self, key, value):
+        key = key.lower().replace("_", "-")
+        super().__setitem__(key, value)
+
+    def get_unused_keys(self):
+        return set(self.keys()) - self.accessed_keys
+
+    def get_unused(self) -> dict:
+        unused = {}
+        for unused_key in self.get_unused_keys():
+            unused[unused_key] = super().__getitem__(unused_key)
+        return unused
+
+
 def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
-    lore_md = template.lore_md.strip()
-    if len(lore_md) == 0:
-        lore_md = f"# {template.name}\n\nNo Lore Available"
-
-    context: dict = dict(lore_html=markdown.markdown(lore_md))
-
-    image_paths: set[Path] = set()
-    for _, image in template.image_urls.items():
-        image_paths.update(image)
-
-    images = []
-    for img_path in image_paths:
-        base64_str = _resize_image_as_base64_png(img_path)
-        images.append(dict(image_ext="png", image_base64=base64_str))
-
-    context.update(images=images)
+    """Renders a PDF-friendly pamphlet of lore, images, and statblocks"""
 
     def rng_factory():
         return np.random.default_rng()
 
-    statblocks = []
+    # render statblocks
+    statblocks: dict = {}
     for variant in template.variants:
         for suggested_cr in variant.suggested_crs:
             stats = template.generate(
@@ -102,25 +139,53 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
                     rng=rng_factory(),
                 )
             ).finalize()
-            statblocks.append(MonsterTemplateData.from_statblock(stats))
+            statblocks[stats.key] = MonsterTemplateData.from_statblock(stats)
 
-    context.update(statblocks=statblocks)
+    # track which statblocks get used by Jinja so we know if we need to render defaults
+    access_tracking_statblocks = AccessTrackingDict(**statblocks)
+
+    # load images for each statblock
+    images: dict[str, list[dict]] = {}
+    for variant_key, image_paths in template.image_urls.items():
+        variant_images = []
+        for image_path in image_paths:
+            base64_str = _resize_image_as_base64_png(image_path)
+            variant_images.append(dict(image_ext="png", image_base64=base64_str))
+        images[variant_key] = variant_images
+
+    access_tracking_images = AccessTrackingDict(**images)
+
+    # get lore template
+    lore_template_str = template.lore_md.strip()
+    if len(lore_template_str) == 0:
+        lore_template_str = f"# {template.name}\n\nNo Lore Available"
+
+    lore_template = env.from_string(lore_template_str)
+
+    lore_context: dict = dict(
+        statblocks=access_tracking_statblocks, images=access_tracking_images
+    )
+
+    lore_md_raw = lore_template.render(lore_context)
+    lore_html_raw = markdown(lore_md_raw, extensions=["tables"])
+
+    unused_statblocks = [v for _, v in access_tracking_statblocks.get_unused().items()]
+    unused_images = []
+    for _, images in access_tracking_images.get_unused().items():
+        unused_images.extend(images)
+
+    if len(unused_statblocks) > 0 or len(unused_images) > 0:
+        raise ValueError("Unused statlbocks and/or images")
+
+    template_context: dict = dict(lore_html=lore_html_raw)
 
     jinja_template = env.get_template("pamphlet_template.html.j2")
-    html_raw = jinja_template.render(context)
+    html_raw = jinja_template.render(template_context)
 
     with path.open("w") as f:
         f.write(html_raw)
 
-    # _render_pdf(path)
-
     return path
-
-
-def _render_pdf(path: Path) -> Path:
-    new_path = path.with_suffix(".pdf")
-    pdfkit.from_file(str(path), output_path=str(new_path))
-    return new_path
 
 
 def _resize_image_as_base64_png(path: Path, max_size: int = 300) -> str:

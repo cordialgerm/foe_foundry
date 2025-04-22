@@ -373,24 +373,7 @@
 
         {{ lore_html | safe }}
 
-        <div class="break-after">
-            {% for img in images -%}
-                <img src="data:image/{{img.image_ext}};base64, {{ img.image_base64 }}" />
-            {%- endfor %}
-        </div>
-
-        <div>
-            {% for statblock in statblocks -%}
-                <div class="break-after">
-                {% include 'creature_template.html.j2' %}
-                </div>
-            {%- endfor %}
-        </div>
-
     <div>
-
-
-
 </body>
 
 </html>

@@ -87,7 +87,7 @@ class _EndlessServitude(DeathlyPower):
         feature = Feature(
             name="Endless Servitude",
             action=ActionType.Feature,
-            description=f"When a non-zombie, non-skeleton ally who can see {stats.selfref} is reduced to 0 hp, that ally immediately becomes a *Zombie* or *Skeleton* under {stats.selfref}'s control, acting at initiative count 0.",
+            description=f"When a living ally who can see {stats.selfref} is reduced to 0 hp, that ally immediately becomes a *Zombie* or *Skeleton* under {stats.selfref}'s control, acting at initiative count 0.",
         )
         return [feature]
 

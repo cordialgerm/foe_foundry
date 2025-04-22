@@ -12,7 +12,9 @@ def templates_with_lore() -> list[CreatureTemplate]:
         for template, settings in all_templates_and_settings()
         if template.lore_md.strip() != ""
     }
-    return list(templates)
+    templates = list(templates)
+    templates.sort(key=lambda t: t.key)
+    return templates
 
 
 def _ids(t: CreatureTemplate) -> str:

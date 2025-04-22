@@ -1,4 +1,4 @@
-# Manticore
+# Manticores
 
 *Flying hunters with spiked tails and sharper tongues*
 
@@ -12,6 +12,20 @@ Manticores swoop down on their prey from above, launching volleys of barbed tail
 - Though they relish the taste of humanoid flesh, manticores are vain creatures who love to hear themselves talk.
 - Manticores hurl iron-hard spikes from their tails like arrows, cackling as their victims fall.
 - Some form loose herds to hunt larger prey, but most are too selfish, arrogant, and ill-tempered to share the spotlight.
+
+{{ render_images(images["manticore"]) }}
+
+<div class="break-after"></div>
+
+## Manticore
+
+{{ render_statblock(statblocks["manticore"]) }}
+
+## Manticore Ravager
+
+A **Manticore Ravager** has intimidated enough of its fellows that it leads a loosely-subservient pack. Ravagers often hone their insults on their inferiors, and the lowest-ranked Manticore in the pack is mercilessly bullied.
+
+{{ render_statblock(statblocks["manticore-ravager"]) }}
 
 ## Tactics
 

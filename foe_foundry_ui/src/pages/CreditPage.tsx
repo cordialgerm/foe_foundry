@@ -330,6 +330,22 @@ const artCredits = [
         Where appropriate, please include a link to the following product URL in your attribution: https://www.drivethrurpg.com/en/product/494686/science-fiction-stock-art-illustrations-by-tara-quinn
       </>
     )
+  },
+  {
+    title: "Art by Critical Hit",
+    description: (
+      <>
+        Art by www.critical-hit.biz
+      </>
+    )
+  },
+  {
+    title: "Art by Yuri Perkowski Domingos",
+    description: (
+      <>
+        Art by Yuri Perkowski Domingos used with permission.
+      </>
+    )
   }
 ];
 
