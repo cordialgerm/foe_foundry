@@ -7,6 +7,7 @@
     --secondary-color: #5b22cf;
     --tertiary-color: #c29a5b;
     --box-shadow-color: #aaaaaa70;
+    --box-shadow-strong-color: #aaaaaa30;
     --stylistic-font: "Uncial Antiqua";
     --header-font: "Cinzel";
     --primary-font: "Merriweather", serif;
@@ -37,6 +38,30 @@ body::before {
     opacity: 0.3;
     pointer-events: none;
     z-index: -1;
+}
+
+.burnt-parchment-button {
+    background-image: url('parchment-button.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+
+    border: none;
+    padding: 1.5em 1.5em;
+    margin: 0.75em;
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.burnt-parchment-button:hover {
+    text-shadow: 1px 1px 3px black;
 }
 
 .stat-block-container {
