@@ -15,7 +15,6 @@ from ...statblocks import Statblock
 from .data import MonsterTemplateData
 from .dict import AccessTrackingDict
 from .env import JinjaEnv
-from .utilities import resize_image_as_base64_png
 
 
 def render_statblock_fragment(stats: Statblock) -> str:
@@ -54,18 +53,6 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     # track which statblocks get used by Jinja so we know if we forgot to include anything
     access_tracking_statblocks = AccessTrackingDict(**statblocks)
 
-    # load images for each statblock
-    images: dict[str, list[dict]] = {}
-    for variant_key, image_paths in template.image_urls.items():
-        variant_images = []
-        for image_path in image_paths:
-            base64_str = resize_image_as_base64_png(image_path)
-            variant_images.append(dict(image_ext="png", image_base64=base64_str))
-        images[variant_key] = variant_images
-
-    # track which images get used by Jinja so we know if we forgot to include anything
-    access_tracking_images = AccessTrackingDict(**images)
-
     # get lore template
     lore_template_str = template.lore_md.strip()
     if len(lore_template_str) == 0:
@@ -74,19 +61,14 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     lore_template = JinjaEnv.from_string(lore_template_str)
 
     # render statblocks and images into lore template
-    lore_context: dict = dict(
-        statblocks=access_tracking_statblocks, images=access_tracking_images
-    )
+    lore_context: dict = dict(statblocks=access_tracking_statblocks)
     lore_md_raw = lore_template.render(lore_context)
-    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables"])
+    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables", "md_in_html"])
 
     # check if all statblocks and images were used
     unused_statblocks = [v for _, v in access_tracking_statblocks.get_unused().items()]
-    unused_images = []
-    for _, images in access_tracking_images.get_unused().items():
-        unused_images.extend(images)
-    if len(unused_statblocks) > 0 or len(unused_images) > 0:
-        raise ValueError("Unused statlbocks and/or images")
+    if len(unused_statblocks) > 0:
+        raise ValueError("Unused statblocks and/or images")
 
     # render the entire pamphlet
     pamphlet_context: dict = dict(lore_html=lore_html_raw)

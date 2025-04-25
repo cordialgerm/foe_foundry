@@ -18,6 +18,15 @@
     columns: var(--column-size) 2;
 }
 
+.stat-block .stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    position: relative;
+    column-span: all;
+}
+
 .stat-block .monster-name {
     display: inline;
     overflow-wrap: break-word;
@@ -25,31 +34,54 @@
     color: var(--primary-color);
     font-family: var(--stylistic-font);
     font-size: var(--stylistic-font-size);
+    column-span: all;
 }
 
-.stat-block :not(.monster-name) :is(h2, h3, h4, h5) {
-    display: inline;
-    color: var(--primary-color);
-    font-family: var(--header-font);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: var(--medium-margin);
-    margin-block-end: 0
-}
-
-.stat-block :is(h2, h3, h4, h5):after {
+.stat-block .monster-name:after {
     content: "";
     display: block;
     width: 100%;
     margin: 2px auto var(--medium-margin);
-    height: 1px;
+    height: var(--header-border-width);
     background: var(--primary-color);
     column-span: all
 }
 
+.stat-block .branding {
+    position: absolute;
+    right: var(--big-margin);
+    top: var(--big-margin);
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    font-style: italic;
+    color: var(--fg-color);
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+    .stat-block .branding {
+        display: none;
+    }
+}
+
+.stat-block .branding a {
+    color: var(--fg-color);
+    text-decoration: none;
+    font-size: var(--primary-font-size);
+}
+
+.stat-block .branding img {
+    height: 2.5em;
+    width: auto;
+}
+
 .stat-block .monster-header {
     color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: var(--header-border-width) solid var(--primary-color);
 
     font-family: var(--header-font);
     font-weight: bold;
@@ -57,6 +89,8 @@
     letter-spacing: .35px;
 
     padding-top: var(--small-margin);
+    margin-top: var(--small-margin);
+    margin-bottom: var(--small-margin);
 }
 
 .stat-block .monster-header+p {
@@ -110,17 +144,6 @@
     border: none;
     font-size: var(--stats-font-size);
     break-inside: avoid
-}
-
-.stat-block .stats table.abilities-saves thead {
-    border: none;
-    height: revert;
-    min-height: var(--stats-row-height);
-}
-
-.stat-block .stats table.abilities-saves thead tr {
-    height: revert;
-    min-height: var(--stats-row-height);
 }
 
 .stat-block .stats table.abilities-saves thead tr th {

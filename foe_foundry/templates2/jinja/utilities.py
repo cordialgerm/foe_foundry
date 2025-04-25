@@ -55,7 +55,7 @@ def resize_image_as_base64_png(path: Path, max_size: int = 300) -> str:
     return base64_str
 
 
-def render_statblock(env: Environment, statblock: dict, break_after: bool = True):
+def statblock(env: Environment, statblock: dict, break_after: bool = True) -> Markup:
     template = env.get_template("statblock.html.j2")
     html = "<div>" + template.render(statblock=statblock) + "</div>"
     if break_after:
@@ -64,18 +64,74 @@ def render_statblock(env: Environment, statblock: dict, break_after: bool = True
     return Markup(html)  # Mark as safe to avoid escaping
 
 
-def render_images(images: list[dict]):
-    pieces = []
-    for img in images:
-        pieces.append(
-            f"<img class='monster-image' src='data:image/{img['image_ext']};base64, {img['image_base64']}' />"
-        )
-    html = "\n".join(pieces)
-    return Markup(html)
+def image(name: str, alt: str, mode: str, **kwargs) -> Markup:
+    """
+    Returns an HTML image tag with the specified name and mode (foreground or background).
+    The image is resized to fit within a square of 300 pixels and converted to a base64-encoded PNG string.
+    """
+    monster_dir = (
+        Path(__file__).parent.parent.parent.parent
+        / "foe_foundry_ui"
+        / "public"
+        / "img"
+        / "monster2"
+    )
+    img_path = monster_dir / name
+    if not img_path.exists():
+        raise FileNotFoundError(f"Image not found: {img_path}")
+
+    base64_str = resize_image_as_base64_png(img_path)
+
+    if mode == "foreground":
+        img_class = "monster-image foreground"
+    elif mode == "background":
+        img_class = "monster-image background"
+    else:
+        raise ValueError(f"Invalid mode: {mode}")
+
+    if "class" in kwargs:
+        img_class = f"{img_class} {kwargs['class']}"
+        kwargs.pop("class")
+
+    attrs = element_attributes(
+        {
+            "class": img_class,
+            "alt": alt,
+            "src": f"data:image/png;base64, {base64_str}",
+        }
+        | kwargs
+    )
+
+    img_html = f"<img {attrs} />"
+    return Markup(img_html)
 
 
 def markdown_no_wrapping_p(md: str):
+    """
+    Converts markdown text to HTML without wrapping it in <p> tags.
+    """
     html = markdown(text=md, extensions=["tables"])
     if html.startswith("<p>") and html.endswith("</p>"):
         html = html[3:-4]
     return Markup(html)  # Mark as safe to avoid escaping
+
+
+def columns(start: bool = True) -> Markup:
+    """
+    Returns a div with two columns, one for the left and one for the right.
+    """
+    if start:
+        return Markup('<div class="column-container">')
+    else:
+        return Markup("</div>")
+
+
+def element_attributes(attributes: dict) -> str:
+    """
+    Converts a dictionary of attributes into a string of HTML attributes.
+    """
+    return (
+        " ".join([f'{key}="{value}"' for key, value in attributes.items()])
+        if attributes
+        else ""
+    )

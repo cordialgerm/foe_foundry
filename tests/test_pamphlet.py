@@ -23,7 +23,7 @@ def _ids(t: CreatureTemplate) -> str:
 
 @pytest.mark.parametrize("template", templates_with_lore(), ids=_ids)
 def test_all_pamphlets(template: CreatureTemplate):
-    pamphlets_dir = Path(__file__).parent.parent / "examples" / "pamphlets"
+    pamphlets_dir = Path(__file__).parent.parent / "examples" / "monsters"
     pamphlets_dir.mkdir(exist_ok=True, parents=True)
     path = pamphlets_dir / f"{template.key}.html"
     templates2.render_pamphlet(template, path)

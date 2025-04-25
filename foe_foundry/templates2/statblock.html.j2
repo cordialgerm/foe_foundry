@@ -3,9 +3,11 @@ attack_block, benchmark_block
 %}
 
 <div class="stat-block">
-    <h3 class="monster-name">
-        {{statblock.name}}
-    </h3>
+    <h3 class="monster-name">{{statblock.name}}</h3>
+    <div class="branding">
+        <a href="https://foefoundry.com">Summoned with Foe Foundry </a>
+        <img src="img/favicon.png" alt="Foe Foundry Skull Icon">
+    </div>
     <p class="creature-type">{{statblock.size}} {{statblock.creature_type}}</p>
     <p>
         {{property_short('AC', statblock.ac)}}
@@ -95,7 +97,7 @@ attack_block, benchmark_block
 
     {{features_block(statblock.passives, 'Traits')}}
 
-    <p class="monster-header">Actions</p>
+    <h4 class="monster-header">Actions</h4>
 
     {{property('Multiattack', statblock.multiattack, block=True)}}
     {{attack_block(statblock.attack.display_name, statblock.attack_text)}}
