@@ -1,10 +1,23 @@
-.branding a {
+.pamphlet-container .branding a {
+    color: var(--primary-color);
+    font-family: var(--stylistic-font);
+    text-decoration: underline;
+    font-size: var(--header-font-size);
+}
+
+.pamphlet-container .branding img {
+    height: 1.5em;
+    width: auto;
+}
+
+.stat-block .branding a {
     color: var(--fg-color);
     text-decoration: none;
     font-size: var(--primary-font-size);
+    font-family: var(--primary-font);
 }
 
-.branding img {
+.stat-block .branding img {
     height: 2.5em;
     width: auto;
 }

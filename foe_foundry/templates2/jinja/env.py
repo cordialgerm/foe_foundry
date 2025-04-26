@@ -1,9 +1,10 @@
 from functools import partial
 
-from jinja2 import Environment, PackageLoader, select_autoescape
+from jinja2 import Environment, PackageLoader, Template, select_autoescape
 
 from .monster_ref import TestMonsterRefResolver
 from .utilities import (
+    branding,
     columns,
     fix_punctuation,
     image,
@@ -25,3 +26,10 @@ JinjaEnv.globals["statblock"] = partial(statblock, JinjaEnv)
 JinjaEnv.globals["columns"] = columns
 JinjaEnv.globals["image"] = image
 JinjaEnv.globals["statblock_ref"] = partial(statblock_ref, JinjaEnv, ref_resolver)
+JinjaEnv.globals["branding"] = partial(branding, JinjaEnv)
+
+
+def load_template_from_markdown(md_template_str: str) -> Template:
+    """Loads a jinja template from a markdown content"""
+    template = JinjaEnv.from_string(md_template_str)
+    return template

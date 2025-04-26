@@ -10,7 +10,7 @@ Many serve as mindless thralls under a mortal or once-mortal master's control, s
 
 ## Using Undead in Your Campaign
 
-Each Foe Foundry {{branding(icon_only=True)}} monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
+Each {{branding(icon_only=False)}} monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
 
 ### Encounters
 
@@ -18,7 +18,7 @@ Foe Foundry helps Game Masters summon chilling undead encounters instantly, with
 
 Here are 10 unforgettable undead encounters ready for your next RPG session. Explore each monster’s unique abilities, lore, and tactics to bring your adventures to life!
 
-<!-- {{ encounter_sample() }} -->
+TODO ENCOUNTER SAMPLE
 
 ### Adventures
 
@@ -26,7 +26,7 @@ Foe Foundry makes it easy for GMs to unleash unforgettable undead adventure hook
 
 Here are 10 unforgettable undead adventure hooks designed to weave seamlessly into any RPG campaign — explore each monster’s lore, powers, and story seeds to inspire multi-session adventures packed with danger and discovery!
 
-<!-- {{ adventure_sample() }} -->
+TODO ADVENTURE SAMPLE
 
 ## Undead Lore and Origins
 

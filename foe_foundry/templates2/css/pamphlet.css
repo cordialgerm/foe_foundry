@@ -73,7 +73,7 @@ hr {
     font-size: calc(1.25 * var(--stylistic-font-size));
 }
 
-.pamphlet-container :not(.monster-header):is(h2, h3, h4, h5) {
+.pamphlet-container :not(.monster-name, .monster-header):is(h2, h3, h4, h5) {
     color: var(--primary-color);
     font-family: var(--header-font);
     font-weight: bold;

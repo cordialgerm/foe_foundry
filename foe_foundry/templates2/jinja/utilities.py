@@ -139,6 +139,17 @@ def element_attributes(attributes: dict) -> str:
     )
 
 
+def branding(
+    env: Environment,
+    icon_only: bool = False,
+) -> Markup:
+    """Returns the branding HTML markup."""
+    macro_template = env.get_template("macros.html.j2")
+    branding = macro_template.module.branding(icon_only=icon_only)  # type: ignore
+
+    return Markup(branding)  # Mark as safe to avoid escaping
+
+
 def statblock_ref(
     env: Environment, resolver: MonsterRefResolver, statblock: str
 ) -> Markup:
@@ -151,9 +162,8 @@ def statblock_ref(
     else:
         monster = str(ref)
 
-    macro_template = env.get_template("macros.html.j2")
-    branding = macro_template.module.branding(icon_only=True)  # type: ignore
+    brand = branding(env, icon_only=True)
 
     return Markup(
-        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{branding}</div>"
+        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{brand}</div>"
     )

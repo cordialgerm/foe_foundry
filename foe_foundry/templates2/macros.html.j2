@@ -54,16 +54,16 @@
 
 {%- endmacro %}
 
-{% macro branding(icon_only=False) -%}
+{% macro branding(icon_only=False, text="Foe Foundry") -%}
 
 {% if icon_only %}
 <span class="branding">
     <img src="img/favicon.png" alt="Foe Foundry Skull Icon">
 </span>
 {% else %}
-<div class="branding">
-    <a href="https://foefoundry.com">Summoned with Foe Foundry </a>
+<span class="branding">
+    <a href="https://foefoundry.com">{{ text }}</a>
     <img src="img/favicon.png" alt="Foe Foundry Skull Icon">
-</div>
+</span>
 {% endif %}
 {%- endmacro %}
