@@ -6,7 +6,7 @@ An Owlbear is a fearsome hybrid creature, combining the powerful frame of a bear
 
 While originally created through arcane experimentation, owlbears have long since spread across the wilderness, becoming dominant predators in forests, caves, and rocky mountain regions. Their senses are as sharp as their talons, and their aggression is legendary.
 
-Owlbears embody the wild fury of the frontier in Dungeons & Dragons, 5E, Pathfinder, and other fantasy RPGs â€” a fusion of feral bear strength and the primal instincts of a hunting owl.
+Owlbears embody the wild fury of the frontier in Dungeons & Dragons, 5E, Pathfinder, and other fantasy RPGs; a fusion of feral bear strength and the primal instincts of a hunting owl.
 
 ## Owlbear Lore
 
