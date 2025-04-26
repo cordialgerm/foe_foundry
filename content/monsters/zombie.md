@@ -59,12 +59,16 @@ An ambitious **Lich** or **Necromancer Archmage** will occasionally seek out and
 
 ## Encounters
 
+Zombies create dangerous, open-ended encounters perfect for adding dread and chaos to your sessions, from relentless hordes to cursed awakenings.
+
 - A horde of loosely dispersed **Zombies** (at least 30) drifts aimlessly across the landscape, blocking progress for the PCs
 - A loud noise or disruption, such as a shouted spell, a ringing bell, or a dropped item, awakens a hidden cluster of **Zombies** buried beneath the mud, snow, or rubble.
 - 20 (6d6) **Zombies** batter at a barricaded door where a wounded **Priest** and **Scout** make a desperate final stand, shouting for help as the dead break through.
 - A **Necromancer** and her 10 **Zombie** minions battle a group of 3 **Ogres**, seeking to slaughter and reanimate the brutes as stronger undead servants.
 
 ## Adventures
+
+Zombie-themed adventures offer haunting mysteries and grim challenges, from cursed graveyards to ancient burial mounds teeming with the restless dead.
 
 - A nearby lake contains a shrine guarding ancient artifacts maintained by **Knights** of a holy order. Once pristine, the lake now stinks of rot. Villagers and creatures buried nearby have begun to rise as reanimated dead **Zombies**
 - The village **Priest** begs the PCs to lift a curse haunting her temple. On the 13th day of the month, at 1:13am, the bell of the temple rings discordantly 13 times, and the bodies of the saints interred below begin to stir as **Zombies** risen by dark magic.

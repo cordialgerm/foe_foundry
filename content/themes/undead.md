@@ -60,7 +60,7 @@ Lesser undead creatures like **Skeletons** and **Zombies** are the most common r
 
 ### Skeletons
 
-**Skeletons** are fragments of a soul bound to bleached bones stripped of flesh that have limited autonomy.
+**Skeletons** are fragments of a soul bound to bleached bones stripped of flesh, given a grim mockery of life through necromantic power. They are among the most common of the Lesser Undead. Some **Skeletons** rise spontaneously near mass graves and blood-soaked fields. Others are deliberately summoned by mortal **Necromancers**, their battered souls shackled to ruined bodies to serve as tireless guardians, soldiers, or laborers.
 
 {{ statblock_ref("Skeleton") }}
 
