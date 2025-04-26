@@ -6,6 +6,8 @@
 
 Stripped of flesh and memory alike, **Skeletons** retain no true sentience. What remains is a hollow framework of instinct: flickers of old discipline, the echo of a soldier's drill, or the reflexive steps of a long-forgotten march. Skeletons can follow orders with mechanical obedience, and within narrow limits they show a chilling mimicry of intelligence, such as choosing a bridge to cross a river, or setting a trap to defend a tomb. Left unattended, they sometimes fall into ghostly pantomimes of past lives: polishing unseen armor, sweeping abandoned halls, or guarding empty gates against enemies who never come.
 
+Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs, animated by shattered soul fragments that echo the instincts of their former lives.
+
 ## Skeleton Lore
 
 - Skeletons are animated by shattered soul-fragments, stripped of emotion and memory, leaving only the faintest echoes of purpose.

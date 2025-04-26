@@ -5,6 +5,8 @@
 
 Wights are the dead and frozen corpses of wicked champions of bygone eras whose evil deeds persist into undeath. Their piercing blue eyes instill terror while their freezing blades of ice rend armor and flesh alike. They are Greater Undead who maintain the goals, memories, and ambitions that drove their wicked spirits. The bitter cold of the Styx surrounds them, and their chilling touch can freeze the hearts of even the bravest warriors. The souls of those slain by a Wight are cast deep into the freezing currents of the Styx while their bodies rise as undead servants of the wight.
 
+Wights are cunning, soul-hungry undead in Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs, commanding undead legions and freezing the living with Styx-born wrath.
+
 ## Wight Lore
 
 - Wights possess a malignant will and cunning far greater than lesser undead like skeletons or zombies

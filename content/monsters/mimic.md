@@ -4,6 +4,8 @@
 
 Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey. These cunning, shape-shifting predators lie in wait, perfectly still, until a curious adventurer draws near. Then, with terrifying speed, they lash out with adhesive pseudopods and gaping, toothy maws. Intelligent and adaptable, mimics can alter their forms to blend seamlessly into almost any environment. They understand language, show flashes of eerie cunning, and use their disguises both as camouflage and as bait for the unwary.
 
+Mimics are a classic ambush predator in Dungeons & Dragons, 5E, Pathfinder, and other fantasy RPGs, infamous for turning treasure, doors, and even entire rooms into deadly traps.
+
 ## Mimic Lore
 
 - Mimics can alter their color, texture, and dimensions to perfectly replicate nearby objects, from simple crates to elaborate statues.

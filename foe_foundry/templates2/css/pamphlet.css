@@ -147,6 +147,15 @@ hr {
     page-break-after: always;
 }
 
+footer,
+footer a {
+    margin-top: calc(2*var(--big-margin));
+    margin-bottom: var(--big-margin);
+    font-size: var(--primary-font-size);
+    color: var(--fg-color) !important;
+    text-align: center;
+}
+
 
 /* Tell the browser that I really do want my background colors and images! */
 @media print {

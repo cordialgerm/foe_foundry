@@ -13,6 +13,8 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 | **Ghost**    | Soul Bound by Memory and Regret        | Reenacting lost moments, fixated on people or places         | A memory too painful to release      |
 | **Wraith**   | Malignant Core of Condensed Evil       | Powerful shadow-form that enslaves or absorbs other spirits    | Hunger for power and dominion        |
 
+From Shadows and Specters to Banshees, Ghosts, Revenants, and Wraiths, spirits bring grief, vengeance, and corruption to life across Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs.
+
 {{ image("undead_spirits.jpg", alt="Undead spirits rising from the dark", mode="foreground", class="masked") }}
 
 ---

@@ -6,6 +6,8 @@ A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any o
 
 Unless it's recently dined, a gelatinous cube is nearly invisible. Many a would-be hero has walked directly into one, only to add their gear to the cube's collection. Over decades, cubes expand to fill available space, with some ancient cubes reaching tremendous sizes.
 
+From classic D&D dungeons to modern 5E campaigns, Gelatinous Cubes remain a deadly, near-invisible menace waiting to engulf unwary adventurers.
+
 ## Gelatinous Cube Lore
 
 - Gelatinous Cubes glide toward their prey without hesitation, as if guided by some deeper mysterious instinct

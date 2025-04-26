@@ -7,6 +7,8 @@
 
 Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast that is part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.
 
+Chimeras are a classic monster in D&D, 5E, and other fantasy TTRPGs — fearsome three-headed beasts that bring destruction and calamity wherever they appear.
+
 ## Chimera Lore
 
 - The three heads war constantly: the lion craves conquest, the goat thirsts for cruelty, and the dragon longs to burn all to ash

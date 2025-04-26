@@ -6,6 +6,8 @@ Manticores are bizarre amalgamations with the body of a lion, dragon-like wings,
 
 Manticores swoop down on their prey from above, launching volleys of barbed tail spikes while jeering and taunting their victims. Manticores often propose lopsided "deals" full of veiled threats and barbed wit to their victims.
 
+Manticores are classic flying predators in Dungeons & Dragons, 5E, Pathfinder, and other fantasy RPGs, feared for their cruel wit, deadly spiked tails, and relentless aerial assaults.
+
 ## Manticore Lore
 
 - Manticores lair in desolate cliffs, ruined towers, and harsh wilderness far from civilization, claiming vast hunting grounds.

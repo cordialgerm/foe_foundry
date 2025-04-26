@@ -6,6 +6,8 @@
 
 Where **Skeletons** are bare and brittle, **Zombies** lumber on with the stubborn momentum of the recently dead. Zombie flesh grants them a brutish resilience, but the soul fragment bound within is weak and broken, barely able to steer the ruin it inhabits. Slow, clumsy, and instinct-driven, zombies are little more than puppets twitching at the end of a necromancer’s thread. Given simple orders, they obey without thought or fear, lurching onward until their decaying frames collapse into ruin.
 
+Zombies stagger through Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs as relentless, decaying hordes, animated by shattered souls and the corrupting touch of the Styx.
+
 ## Zombie Lore
 
 - Splintered Souls: A zombie’s clumsy movements are caused by the shattered state of its soul fragment. It cannot adapt to complex tasks without direct command.
