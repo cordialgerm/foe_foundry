@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }}</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/pamphlet.css">
+    <link rel="stylesheet" href="css/tooltips.css">
+    <link rel="stylesheet" href="css/statblock.css">
+    <link rel="stylesheet" href="css/parchment.css">
+    <link rel="stylesheet" href="css/branding.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+
+    <div class="pamphlet-container">
+
+        <h1>{{ header }} </h1>
+
+        {% if toc %}
+        <details>
+            <summary>Table of Contents</summary>
+            <div class="burnt-parchment">
+                {{ toc | safe}}
+            </div>
+        </details>
+        {% endif %}
+
+        {{ html | safe }}
+
+    </div>
+
+</body>
+
+</html>

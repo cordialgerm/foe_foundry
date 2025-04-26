@@ -346,6 +346,38 @@ const artCredits = [
         Art by Yuri Perkowski Domingos used with permission.
       </>
     )
+  },
+  {
+    title: "Art by Dren Productions",
+    description: (
+      <>
+        Art by Dren Productions used with permission.
+      </>
+    )
+  },
+  {
+    title: "Art by Dean Spencer",
+    description: (
+      <>
+        Some artwork copyrighy Dean Spencer, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Bartek Blaszczec",
+    description: (
+      <>
+        Some artwork copyright Bartek Blaszczec, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Jeshields",
+    description: (
+      <>
+        Some artwork copyright Jeshields, used with permission. All rights reserved.
+      </>
+    )
   }
 ];
 

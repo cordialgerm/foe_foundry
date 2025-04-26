@@ -5,7 +5,7 @@ from foe_foundry.references import creature_ref
 
 from ...attributes import Stats
 from ...creature_types import CreatureType
-from ...damage import Condition, DamageType
+from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
@@ -199,6 +199,7 @@ class _FaeBargain(FeyPower):
         legendary = 80
         artifact = 160
         dc = stats.difficulty_class
+        cursed = conditions.Cursed().caption
 
         feature = Feature(
             name="Fae Bargain",
@@ -206,7 +207,7 @@ class _FaeBargain(FeyPower):
             uses=1,
             replaces_multiattack=3,
             description=f"{stats.selfref.capitalize()} magically bargains with a creature it can see within 60 feet. The creature must make a DC {dc} Charisma save. \
-                On a failure, the highest rarity magical item in that creature's possession becomes cursed and loses all magical powers and abilities and acts as a mundane item of the corresponding type. \
+                On a failure, the highest rarity magical item in that creature's possession becomes {cursed} and loses all magical powers and abilities and acts as a mundane item of the corresponding type. \
                 {stats.selfref.capitalize()} then gains temporary hitpoints based on the rarity of the magical item: {uncommon} for an uncommon item, {rare} for a rare item, {very_rare} for a very rare item, \
                 {legendary} for a legendary item and {artifact} for an artifact. This curse lasts until the fae verbally renounces the bargain, the fae is destroyed, or the curse is removed via *Remove Curse* or similar effect.",
         )

@@ -45,6 +45,7 @@ class _MediumArmor(ArmorClassTemplate):
             armor_type=text,
             has_shield=uses_shield,
             is_armored=True,
+            display_detail=True,
             quality_level=stats.ac_boost,
             score=ac + 0.3,
         )

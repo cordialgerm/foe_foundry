@@ -3,7 +3,7 @@ from typing import List
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, Condition, DamageType
+from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -93,13 +93,14 @@ class _TongueTwister(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        cursed = conditions.Cursed().caption
         feature = Feature(
             name="Tongue-Twister",
             action=ActionType.Action,
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} chooses a creature that can see and hear it within 60 feet. \
-                The target must make a DC {dc} Charisma saving throw. On a failure, it is magically cursed. While cursed, \
+                The target must make a DC {dc} Charisma saving throw. On a failure, it is magically {cursed}. While cursed, \
                 the target can only speak in Sylvan (but does not necessarily understand Sylvan). Whenever the target tries to cast a spell \
                 with a verbal component, the target must make a DC {dc} Performance check. On a failure, the spell fails.",
         )

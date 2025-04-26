@@ -5,7 +5,7 @@ from foe_foundry.features import ActionType, Feature
 
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
-from ...die import Die
+from ...die import Die, DieFormula
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -63,7 +63,9 @@ class _SoulChillingCommand(WightPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(0.5, force_die=Die.d6)
+        dmg = DieFormula.target_value(
+            target=2 * stats.attributes.proficiency, force_die=Die.d6
+        )
 
         feature = Feature(
             name="Soul-Chilling Command",

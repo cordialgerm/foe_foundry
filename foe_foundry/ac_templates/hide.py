@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -27,6 +25,7 @@ class _HideArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=True,
             quality_level=quality_level,
+            display_detail=True,
             score=ac + 0.2 - (1000 if not stats.creature_type.could_wear_armor else 0),
         )
 
