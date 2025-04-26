@@ -29,6 +29,11 @@ hr {
     position: relative;
 }
 
+.pamphlet-container {
+    margin-left: 20px;
+    scroll-behavior: smooth;
+}
+
 .pamphlet-container .column-container {
     columns: 2 var(--column-size);
 }
@@ -72,8 +77,32 @@ hr {
     margin-bottom: var(--big-margin);
 }
 
-.pamphlet-container {
-    margin-left: 20px;
+.pamphlet-container .toc {
+    padding: var(--big-margin);
+}
+
+.pamphlet-container .toc a {
+    color: var(--muted-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pamphlet-container .toc li {
+    margin: 0px;
+}
+
+.pamphlet-container .headerlink {
+    color: var(--fg-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    text-decoration: none;
+    margin-left: var(--medium-margin);
+}
+
+.pamphlet-container .statblock-ref-button {
+    margin-bottom: calc(3 * var(--big-margin)) !important
 }
 
 .monster-image.masked {
@@ -114,12 +143,6 @@ hr {
     page-break-after: always;
 }
 
-
-
-/* PRINT RELATED STYLES */
-.print-background {
-    display: none;
-}
 
 /* Tell the browser that I really do want my background colors and images! */
 @media print {

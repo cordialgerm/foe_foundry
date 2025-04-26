@@ -1,10 +1,9 @@
-from io import BytesIO  # noqa
-from pathlib import Path
-from markdown import markdown
 import shutil
+from pathlib import Path
 
 import numpy as np
-from PIL import Image  # noqa
+from bs4 import BeautifulSoup
+from markdown import Markdown
 
 from foe_foundry.creatures import (
     CreatureTemplate,
@@ -15,6 +14,7 @@ from ...statblocks import Statblock
 from .data import MonsterTemplateData
 from .dict import AccessTrackingDict
 from .env import JinjaEnv
+from .monster_ref import TestMonsterRefResolver
 
 
 def render_statblock_fragment(stats: Statblock) -> str:
@@ -41,10 +41,10 @@ def render_family_pamphlet(family: str, path: Path) -> Path:
     # render statblocks and images into lore template
     lore_context: dict = dict()
     lore_md_raw = lore_template.render(lore_context)
-    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables", "md_in_html"])
+    header, toc, html = _markdown_with_toc(lore_md_raw)
 
     # render the entire pamphlet
-    pamphlet_context: dict = dict(lore_html=lore_html_raw)
+    pamphlet_context: dict = dict(header=header, toc=toc, html=html)
     jinja_template = JinjaEnv.get_template("pamphlet.html.j2")
     html_raw = jinja_template.render(pamphlet_context)
 
@@ -100,7 +100,7 @@ def render_monster_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     # render statblocks and images into lore template
     lore_context: dict = dict(statblocks=access_tracking_statblocks)
     lore_md_raw = lore_template.render(lore_context)
-    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables", "md_in_html"])
+    header, toc, html = _markdown_with_toc(lore_md_raw)
 
     # check if all statblocks and images were used
     unused_statblocks = [v for _, v in access_tracking_statblocks.get_unused().items()]
@@ -108,7 +108,7 @@ def render_monster_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         raise ValueError("Unused statblocks and/or images")
 
     # render the entire pamphlet
-    pamphlet_context: dict = dict(lore_html=lore_html_raw)
+    pamphlet_context: dict = dict(header=header, toc=toc, html=html)
     jinja_template = JinjaEnv.get_template("pamphlet.html.j2")
     html_raw = jinja_template.render(pamphlet_context)
 
@@ -126,3 +126,47 @@ def render_monster_pamphlet(template: CreatureTemplate, path: Path) -> Path:
     shutil.copytree(src=img_dir_src, dst=img_dir_dst, dirs_exist_ok=True)
 
     return path
+
+
+def _markdown_with_toc(text: str, strip_header: bool = True) -> tuple[str, str, str]:
+    """Renders a markdown string into HTML and returns the header, toc, and html"""
+
+    # if text starts with an h1 header, remove that line
+    if text.startswith("# "):
+        lines = text.splitlines(keepends=True)
+        header_line = lines[0]
+        header = header_line[1:].strip()
+        if strip_header:
+            lines = lines[1:]
+        text = "".join(lines)
+    else:
+        header = ""
+
+    md = Markdown(
+        extensions=[
+            "toc",
+        ],
+        extension_configs={
+            "toc": {
+                "permalink": True  # adds a link symbol next to headers
+            }
+        },
+    )
+    html = md.convert(text)
+    toc = md.toc  # type: ignore
+
+    # Replace all monster references with links
+    soup = BeautifulSoup(html, "html.parser")
+    resolver = TestMonsterRefResolver()
+
+    for strong_tag in soup.find_all(["strong", "b"]):
+        monster_ref_markup = resolver.resolve_monster_ref(strong_tag.text)
+        if monster_ref_markup is None:
+            continue
+
+        monster_ref = BeautifulSoup(str(monster_ref_markup), "html.parser")
+        strong_tag.replace_with(monster_ref)
+
+    html = str(soup)
+
+    return header, toc, html

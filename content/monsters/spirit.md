@@ -67,6 +67,7 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 - Some Revenants are given leave by divine forces, but others tear themselves out of the River of Death through raw will, dragging pieces of the underworld with them.
 
 {{ image("revenant.png", alt="Revenants rise to correct a grave injustice", mode="foreground", class="masked") }}
+
 {{ statblock(statblocks["revenant"]) }}
 
 ## Ghosts

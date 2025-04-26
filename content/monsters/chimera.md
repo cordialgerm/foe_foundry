@@ -22,11 +22,13 @@ When running a Chimera encounter, start by using the *Quarreling Heads* ability 
 
 ---
 
-## Chimera
+## Statblocks
+
+### Chimera
 
 {{ statblock(statblocks["chimera"]) }}
 
-## Chimera Sovereign
+### Chimera Sovereign
 
 A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
@@ -35,8 +37,8 @@ A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 ## Encounters
 
 - The PCs stumble across a **Chimera** in a charred clearing with two of its heads arguing about which will get the choice bits of the burned meal lying beside it
-- A **Chimera** is hunting 1d4 **Giant Eagle**. One of the majestic eagles crashes to the ground near the PCs, who are caught in the middle of this airborne conflict
-- A **Death Cultist Initiate** and 3d6 **Cultist** are preparing to sacrifice captives on a fiery altar in an attempt to bind a **Chimera** to their dread purpose
+- A **Chimera** is hunting 1d4 **Giant Eagles**. One of the majestic eagles crashes to the ground near the PCs, who are caught in the middle of this airborne conflict
+- A **Death Cultist Initiate** and 3d6 **Cultists** are preparing to sacrifice captives on a fiery altar in an attempt to bind a **Chimera** to their dread purpose
 - A distant roar shakes the nearby trees. The PCs have entered the territory of a particularly foul-tempered **Chimera Sovereign**.
 
 ## Adventures

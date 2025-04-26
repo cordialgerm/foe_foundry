@@ -24,17 +24,19 @@ Mimics disguise themselves as inanimate objects such as treasure chests, doors, 
 
 ---
 
-## Mimic
+## Statblocks
+
+### Mimic
 
 {{ statblock(statblocks["mimic"]) }}
 
-## Greater Mimic
+### Greater Mimic
 
 When two mimics meet, they occasionally merge together to form into a **Greater Mimic**. The process by which the two mates agree upon and merge is hotly debated by scholars.
 
 {{ statblock(statblocks["greater-mimic"]) }}
 
-## Vault Mimic
+### Vault Mimic
 
 A **Vault Mimic** is ancient amongst its kind and has grown large enough that it can impersonate entire chambers, treasure vaults, or even floors of a building or dungeon.
 
@@ -50,7 +52,7 @@ A **Vault Mimic** is ancient amongst its kind and has grown large enough that it
 
 ## Adventures
 
-- **Vanishing Village**: A local lord tasks the PCs with uncovering what happened to a remote hamlet where all of the villagers have disappeared. Unfortunately, they were all eaten by a swarm of **Mimic**s that have now taken over all the buildings in the village.
-- **False Auction**: An unscrupulous merchant is selling cursed relics — actually **Mimic**s in disguise — to eliminate rivals. The PCs are hired by a suspicious rival to investigate.
+- **Vanishing Village**: A local lord tasks the PCs with uncovering what happened to a remote hamlet where all of the villagers have disappeared. Unfortunately, they were all eaten by a swarm of **Mimics** that have now taken over all the buildings in the village.
+- **False Auction**: An unscrupulous merchant is selling cursed relics — actually **Mimics** in disguise — to eliminate rivals. The PCs are hired by a suspicious rival to investigate.
 - **The Inheritance**: The PCs inherit an old manor from an obscure relative. Unfortunately, the manor is the lair of a starving **Greater Mimic** that is now eager to devour its new owners.
 - **The Waking Vault**: A recent earthquake has uncovered a legendary dungeon rumored to be overflowing with treasure. A collosal **Vault Mimic** has taken over all the best chambers of the dungeon and uses the treasure as a lure.

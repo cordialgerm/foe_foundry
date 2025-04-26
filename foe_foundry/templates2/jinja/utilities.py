@@ -8,6 +8,8 @@ from markdown import markdown
 from markupsafe import Markup
 from PIL import Image
 
+from .monster_ref import MonsterRefResolver
+
 
 def fix_punctuation(text: Any) -> Any:
     """
@@ -134,4 +136,24 @@ def element_attributes(attributes: dict) -> str:
         " ".join([f'{key}="{value}"' for key, value in attributes.items()])
         if attributes
         else ""
+    )
+
+
+def statblock_ref(
+    env: Environment, resolver: MonsterRefResolver, statblock: str
+) -> Markup:
+    """
+    Resolves a monster reference using the provided resolver and returns the HTML markup.
+    """
+    ref = resolver.resolve_monster_ref(statblock)
+    if ref is None:
+        monster = f"<strong>{statblock}</strong>"
+    else:
+        monster = str(ref)
+
+    macro_template = env.get_template("macros.html.j2")
+    branding = macro_template.module.branding(icon_only=True)  # type: ignore
+
+    return Markup(
+        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{branding}</div>"
     )

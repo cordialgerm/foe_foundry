@@ -12,18 +12,27 @@
     <link rel="stylesheet" href="css/pamphlet.css">
     <link rel="stylesheet" href="css/tooltips.css">
     <link rel="stylesheet" href="css/statblock.css">
+    <link rel="stylesheet" href="css/parchment.css">
+    <link rel="stylesheet" href="css/branding.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
 <body>
 
-    <div class="print-background"></div>
-
     <div class="pamphlet-container">
 
-        <h1>{{ name }} </h1>
+        <h1>{{ header }} </h1>
 
-        {{ lore_html | safe }}
+        {% if toc %}
+        <details>
+            <summary>Table of Contents</summary>
+            <div class="burnt-parchment">
+                {{ toc | safe}}
+            </div>
+        </details>
+        {% endif %}
+
+        {{ html | safe }}
 
     </div>
 

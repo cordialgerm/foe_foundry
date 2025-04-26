@@ -26,3 +26,7 @@
     font-style: italic;
     text-decoration: underline dotted;
 }
+
+.monster-link {
+    color: var(--fg-color);
+}

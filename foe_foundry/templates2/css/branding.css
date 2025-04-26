@@ -1,0 +1,10 @@
+.branding a {
+    color: var(--fg-color);
+    text-decoration: none;
+    font-size: var(--primary-font-size);
+}
+
+.branding img {
+    height: 2.5em;
+    width: auto;
+}

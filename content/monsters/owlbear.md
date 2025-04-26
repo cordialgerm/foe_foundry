@@ -23,17 +23,19 @@ Owlbears are fiercely territorial and will defend their cubs to the death. If a 
 
 ---
 
-## Owlbear
+## Statblocks
+
+### Owlbear
 
 {{ statblock(statblocks["owlbear"]) }}
 
-## Owlbear Cub
+### Owlbear Cub
 
 Owlbears are fiercely protective of their cubs, despite their individualistic tendencies. Many a fool has perished attempting to capture and tame an **Owlbear Cub**.
 
 {{ statblock(statblocks["owlbear-cub"]) }}
 
-## Savage Owlbear
+### Savage Owlbear
 
 A **Savage Owlbear** has extended its territory sufficiently the only thing matching its massive size is its unbridled aggression.
 
@@ -42,11 +44,11 @@ A **Savage Owlbear** has extended its territory sufficiently the only thing matc
 ## Encounters
 
 - A gigantic **Owlbear** feasts contentedly on a dead Giant Elk. The monstrosity is momentarily distracted by its kill.
-- The PCs stumble across a mother **Owlbear** guarding her young cubs (1d4 **Owlbear Cub**) as they learn how to fish. The river's current is swift and this is the nearest ford for miles.
-- A lone **Owlbear** is holding its own against a small pack of wolves (1d4 **Wolf** led by a **Dire Wolf**) that are howling for reinforcements from the pack
+- The PCs stumble across a mother **Owlbear** guarding her young cubs (1d4 **Owlbear Cubs**) as they learn how to fish. The river's current is swift and this is the nearest ford for miles.
+- A lone **Owlbear** is holding its own against a small pack of wolves (1d4 **Wolves** led by a **Dire Wolf**) that are howling for reinforcements from the pack
 - The PCs encounter a caravan led by a seedy merchant named Bortosh who has a chained **Owlbear** as a sort of trophy. The beast is clearly mistreated and angry.
 - The light of the full moon glimmers off countless shiny trinkets woven into the nest of a nearby **Savage Owlbear** atop a crumbled tower. Rhythmic hoots echo from within the crumbled tower...
-- The PCs stumble into a clearing whose trees are shredded with deep gouges, the designated combat arena of two rivals (2 **Savage Owlbear**). The two rivals mistake the party's approach as a challenge from the other.
+- The PCs stumble into a clearing whose trees are shredded with deep gouges, the designated combat arena of two rivals (2 **Savage Owlbears**). The two rivals mistake the party's approach as a challenge from the other.
 
 ## Adventures
 

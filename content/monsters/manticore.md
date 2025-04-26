@@ -23,11 +23,13 @@ Manticores swoop down on their prey from above, launching volleys of barbed tail
 
 ---
 
-## Manticore
+## Statblocks
+
+### Manticore
 
 {{ statblock(statblocks["manticore"]) }}
 
-## Manticore Ravager
+### Manticore Ravager
 
 A **Manticore Ravager** has intimidated enough of its fellows that it leads a loosely-subservient pack. Ravagers often hone their insults on their inferiors, and the lowest-ranked Manticore in the pack is mercilessly bullied.
 
@@ -38,7 +40,7 @@ A **Manticore Ravager** has intimidated enough of its fellows that it leads a lo
 
 - A lone **Manticore** is perched on a pile of corpses, carefully grinding its tail spikes on the rusted blades of fallen guards.
 - A **Manticore** swoops down, hidden by the blinding sun, and strafes the party with its tail spines. It then circles overhead, taunting and jeering at the party before preparing to strike again.
-- As the PCs journey on a mountain path, it hugs a sheer cliff, which is home to several squabbling manticores (1d4 + 1 **Manticore**). The Manticores argue amongst themselves - for now - and their roars and hurled insults echo off the cliff.
+- As the PCs journey on a mountain path, it hugs a sheer cliff, which is home to several (1d4 + 1) squabbling **Manticores**. The Manticores argue amongst themselves - for now - and their roars and hurled insults echo off the cliff.
 - A **Manticore Ravager** blocks a narrow mountain pass, demanding tribute. It wants choice cuts hacked from the party's juiciest limbs - or else.
 
 ## Adventures
@@ -46,4 +48,4 @@ A **Manticore Ravager** has intimidated enough of its fellows that it leads a lo
 - A **Manticore** is ravaging the local livestock, but witnesses say it intentionally ignores the juiciest livestock, only striking when herders are nearby. It seems oddly disappointed that it kills farmers instead of fighters. Why is it baiting a challenge?
 - A **Hag** has manipulated four **Manticore** into her service by playing to their egos. Now they test adventuring parties, devouring the weakest and bringing back the strongest in chains to serve the Hag. Locals beg the party to end the twisted trials.
 - A rich merchant once humiliated a flamboyant **Manticore Ravager** that styles itself the "Ravager of the Ravine" by outwitting it. Now, the proud creature has vowed its revenge. It attacks any and all caravans flying the merchant's banner, demanding she face him again. The party is hired by the merchant to end the troublesome threat.
-- A **Hobgoblin Captain** seeks to bind a local herd of manticores (2d6 **Manticore**) to his warband. If the monsters are recruited, the balance of power in the region will collapse.
+- A **Hobgoblin Captain** seeks to bind a local herd of 2d6 **Manticores** to his warband. If the monsters are recruited, the balance of power in the region will collapse.

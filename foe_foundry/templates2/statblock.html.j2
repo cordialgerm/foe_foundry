@@ -1,13 +1,10 @@
 {% from 'macros.html.j2' import property, property_short, features_block, attack_blocks,
-attack_block, benchmark_block
+attack_block, benchmark_block, branding
 %}
 
 <div class="stat-block">
     <h3 class="monster-name">{{statblock.name}}</h3>
-    <div class="branding">
-        <a href="https://foefoundry.com">Summoned with Foe Foundry </a>
-        <img src="img/favicon.png" alt="Foe Foundry Skull Icon">
-    </div>
+    {{branding()}}
     <p class="creature-type">{{statblock.size}} {{statblock.creature_type}}</p>
     <p>
         {{property_short('AC', statblock.ac)}}

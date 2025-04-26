@@ -175,7 +175,7 @@ def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
         unused_images.extend(images)
 
     if len(unused_statblocks) > 0 or len(unused_images) > 0:
-        raise ValueError("Unused statlbocks and/or images")
+        raise ValueError("Unused statblocks")
 
     template_context: dict = dict(lore_html=lore_html_raw)
 

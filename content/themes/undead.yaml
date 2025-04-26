@@ -13,3 +13,27 @@ hierarchy:
   - name: mage
     type: monster
     variant: necromancer
+seo:
+  title: “Undead Monsters and Adventure Hooks for RPG Campaigns | Foe Foundry
+  description: "Discover unforgettable undead monsters, chilling RPG encounters, and open-ended adventure hooks. Explore the lore of skeletons, zombies, wraiths, liches, and more with Foe Foundry."
+  keywords:
+    - undead creatures
+    - RPG undead
+    - undead encounters
+    - undead adventure hooks
+    - necromancer monsters
+    - fantasy RPG undead
+    - tabletop RPG monsters
+    - undead lore
+    - skeletons and zombies
+  og:
+    title: "Undead Creatures for RPG Campaigns | Lore, Encounters, and Adventure Hooks | Foe Foundry"
+    description: "Unleash unforgettable undead adventures with Foe Foundry. Chilling monsters, open-ended stories, and ready-to-play RPG encounters await."
+    image: "https://yourdomain.com/assets/undead_og_image.png" # <-- customize this
+    url: "https://yourdomain.com/monsters/family/undead"
+    type: "article"
+  twitter:
+    card: "summary_large_image"
+    title: "Unleash Unforgettable Undead Adventures | Foe Foundry"
+    description: "Bring chilling undead monsters and adventure hooks into your RPG campaigns instantly with Foe Foundry."
+    image: "https://yourdomain.com/assets/undead_og_image.png" # <-- reuse or specify a different image
