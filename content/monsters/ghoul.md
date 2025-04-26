@@ -8,8 +8,9 @@ Neither fully living nor fully dead, ghouls are cursed with an insatiable hunger
 
 Those wounded by a **Ghoul**'s claws often suffer more than blood loss. The touch of undeath carries a host of dread diseases — a cruel legacy of the River Styx’s corruption. Victims may be stricken with Filth Fever, Flesh Rot, Mindfire, or other wasting afflictions that weaken body, mind, and spirit. These ghoul-born plagues can cripple even seasoned adventurers, sowing madness, decay, and exhaustion until the victim falls — or worse, rises again under the thrall of undeath.
 
+{{ image("ghoul.tif", alt="Undead ghoul with decaying flesh and slavering jaws lunging from the shadows", class="masked") }}
 
-## Lore
+## Ghoul Lore and Origins
 
 - Ghouls are living bodies cursed with fragments of undead souls, created by dark rituals or the desperate sin of cannibalism.
 - Though they can feed on corpses, ghouls crave fresh, living flesh — and savor prey that struggles and screams.
@@ -17,7 +18,7 @@ Those wounded by a **Ghoul**'s claws often suffer more than blood loss. The touc
 - A ghoul's touch infects the living with swift, rotting diseases that fester almost instantly
 
 
-## Statblocks
+## Ghoul Statblocks
 
 ### Ghoul
 
@@ -37,10 +38,20 @@ A **Ghast Gravelord** is a ghoul who has ascended through blasphemous rites, gai
 
 {{ statblock(statblocks["ghast-gravelord"]) }}
 
-## Encounters
+## Ghoul Encounter Ideas
 
-TODO
+Ravenous, cunning, and cursed by the River Styx, ghouls are the perfect foes for brutal ambushes, grim hunts, and haunting adventures. Use these ghoul encounters and adventure seeds to unleash their hunger on your campaign.
 
-## Adventures
+- A trail of stripped and half-eaten corpses leads the party to hidden lair of **Ghouls** waiting to strike from shallow graves and crumbling cairns
+- A voracious pack of **Ghouls** (at least 1 per PC in Tier 1, 2 **Ghouls** per PC led by 1d4 **Ghasts** in Tier 2) stalk the party across the countryside, waiting to feast
+- The party stumbles on a pack of **Ghouls** mid-feast. Two competing **Ghasts** are squabbling over who gets to devour the last captive, a rich **Noble** who begs for the party to free her
+- A feverish victim of a ghouls stumbles forward, infected by a wasting disease. The adventurer promises the PCs half the loot if they can help him eliminate the **Ghouls** that attacked his camp three nights ago.
 
-- Rare ghouls who tame their hunger may conceal themselves among mortals, feeding in secret to maintain their crumbling sanity.
+## Ghoul Adventure Ideas
+
+These ghoul adventure seeds offer dark, open-ended storylines filled with ravenous hunger, ancient curses, and the chilling legacy of undeath. The adventure hooks are perfect for weaving multi-session horror into your campaign.
+
+- Fifty years ago, during a desperate winter, villagers resorted to cannibalism to survive. Their descendants became cursed and transform into **Ghasts** during the winter months. Someone important to the PCs has gone missing in this town, which has since become prosperous, despite its dark secret.
+- A hidden ghoul cult thrives in a major city. The **Death Cultist Initiate** and his loyal **Cultists** worship a **Ghoul Gravecaller** and kidnap victims to curry favor.
+- A **Ghast** approaches the PCs about teaming up to destroy the **Necromancer** that enslaved it. The cunning creature wishes to devour its former master and ascend to a **Ghast Gravelord**
+- A well-respected **Knight** carries a dark secret. In his last campaign, his company was besieged for months on end. Starving, they resorted to cannibalism and the survivors were all cursed as **Ghasts**. The knight begs the PCs to find an end to the curse that afflicts him and the veterans of his campaign.

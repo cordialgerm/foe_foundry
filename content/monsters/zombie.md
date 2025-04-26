@@ -6,7 +6,7 @@
 
 Where **Skeletons** are bare and brittle, **Zombies** lumber on with the stubborn momentum of the recently dead. Zombie flesh grants them a brutish resilience, but the soul fragment bound within is weak and broken, barely able to steer the ruin it inhabits. Slow, clumsy, and instinct-driven, zombies are little more than puppets twitching at the end of a necromancer’s thread. Given simple orders, they obey without thought or fear, lurching onward until their decaying frames collapse into ruin.
 
-## Lore
+## Zombie Lore
 
 - Splintered Souls: A zombie’s clumsy movements are caused by the shattered state of its soul fragment. It cannot adapt to complex tasks without direct command.
 - Rotting Resilience: Zombies are notoriously hard to kill because the necromantic energy lashing the soul to the flesh slows decay and numbs the body to pain.
@@ -15,11 +15,11 @@ Where **Skeletons** are bare and brittle, **Zombies** lumber on with the stubbor
 
 {{ image("zombie_horde.png", alt="A relentless horde of reanimated Zombies marches to serve their necromantic overlords", class="masked white-background") }}
 
-## Tactics
+## Zombie Tactics
 
 Zombies act mindlessly, following the commands given to them by their master. Unless directed otherwise, these reanimated corpses will lumber to the nearest foe and attempt to overwhelm them. Once a target has been brought down, the Zombies will attempt to feed upon its flesh.
 
-## Statblocks
+## Zombie Statblocks
 
 ### Zombie
 
@@ -57,7 +57,7 @@ An ambitious **Lich** or **Necromancer Archmage** will occasionally seek out and
 
 {{ statblock(statblocks["zombie-titan"]) }}
 
-## Encounters
+## Zombie Encounter Ideas
 
 Zombies create dangerous, open-ended encounters perfect for adding dread and chaos to your sessions, from relentless hordes to cursed awakenings.
 
@@ -66,7 +66,7 @@ Zombies create dangerous, open-ended encounters perfect for adding dread and cha
 - 20 (6d6) **Zombies** batter at a barricaded door where a wounded **Priest** and **Scout** make a desperate final stand, shouting for help as the dead break through.
 - A **Necromancer** and her 10 **Zombie** minions battle a group of 3 **Ogres**, seeking to slaughter and reanimate the brutes as stronger undead servants.
 
-## Adventures
+## Zombie Adventure Ideas
 
 Zombie-themed adventures offer haunting mysteries and grim challenges, from cursed graveyards to ancient burial mounds teeming with the restless dead.
 
