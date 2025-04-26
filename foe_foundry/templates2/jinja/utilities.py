@@ -64,7 +64,7 @@ def statblock(env: Environment, statblock: dict, break_after: bool = True) -> Ma
     return Markup(html)  # Mark as safe to avoid escaping
 
 
-def image(name: str, alt: str, mode: str, **kwargs) -> Markup:
+def image(name: str, alt: str, mode: str = "foreground", **kwargs) -> Markup:
     """
     Returns an HTML image tag with the specified name and mode (foreground or background).
     The image is resized to fit within a square of 300 pixels and converted to a base64-encoded PNG string.

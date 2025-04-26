@@ -1,1 +1,5 @@
-from .jinja import render_statblock_fragment, render_pamphlet  # noqa
+from .jinja import (
+    render_family_pamphlet,  # noqa
+    render_monster_pamphlet,  # noqa
+    render_statblock_fragment,  # noqa
+)

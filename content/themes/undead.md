@@ -2,6 +2,8 @@
 
 *Twisted Mockeries of Life*
 
+{{ image("skeleton_warband.png", alt="An army of undead Skeletons march forth") }}
+
 Undead are the echoes and remnants of life, cursed to linger in defiance of the natural order. They include both the reanimated dead (such as **Zombies**, **Skeletons**, and **Mummies**), as well as lingering spirits like **Ghosts** and **Wraiths**. Some were raised by fell mortal magic. Others clawed their way back to life battling the biting currents of the Styx, while some endure cursed existences.
 
 Many serve as mindless thralls under a mortal or once-mortal master's control, such as a **Necromancer**. Others arise spontaneously in places where the veil between life and death has thinned: fields soaked in blood, crypts of cursed kings, or battlefields steeped in sorrow. A rare few choose undeath, willingly binding themselves to deathless hunger or forgotten oaths.
@@ -18,6 +20,8 @@ The veil between Life and Death is not always firm. It thins near moments of rec
 
 ## Lesser Undead: Skeletons, Zombies, and Ghouls
 
+{{ image("zombie_horde.png", alt="A horde of zombies shambles forward, ever hungry", class="masked white-background") }}
+
 Lesser Undead are the dregs of death: fragments of souls, half-formed shadows, and shattered remnants of once-living minds. Most were frozen and fractured in the River Styx, then cast loose into the Mortal Realm through a tear in the veil, often near cursed ground or a site of recent slaughter. Others are summoned deliberately by mortal Necromancers, using dark heretical magic to bind the spirits to their control as tools, guards, or fodder. Lesser Undead lack true sentience. The soul that once animated them has been splintered or damaged beyond recognition. What remains is instinctual hunger, hatred, or a dim echo of old purpose.
 
 - **Zombies** - mindless fragments of a soul bound to shambling, rotting corpses
@@ -26,7 +30,9 @@ Lesser Undead are the dregs of death: fragments of souls, half-formed shadows, a
 
 ## Lesser Undead Spirits: Shadows, Specters, Ghosts, and Banshees
 
-Spirits are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self. Spirits are classified according to strength of will of the deceased and the forcefullness of the anguish that binds the soul to the mortal plane.
+{{ image("undead_spirits.jpg", alt="A specter is bound by a foul necromancer", class="masked") }}
+
+Spirits are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self. Spirits are classified according to strength of will of the deceased and the forcefulness of the anguish that binds the soul to the mortal plane.
 
 - **Shadow** - corrupted fragment of a dark soul that seeks to drown out the light
 - **Specter** - slivers of a soul shattered by trauma trapped in mindless broken loops
@@ -35,7 +41,9 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 
 ## Greater Undead
 
-Greater Undead are powerful spirits that refused to yield to the Styx. They have clawed their way back from the deepest recesses of the Shadowlands, twisted and corrupted by the warping and freezing currents. Many have consumed weaker souls in Death to strengthen their own essence, while others have become bound to dark and forgotten powers to sustain their hateful existance. Each one is a malignant spirit bound by ambition and hatred. Unlike their lesser kin, Greater Undead retain shards of identity. Their minds remain intact, though warped beyond mortal reasoning. They command dreadful power, plot with purpose, and often bend Lesser Undead to their service.
+{{ image("wight.png", alt="An ancient tyrant rises as a cold Wight", class="masked") }}
+
+Greater Undead are powerful spirits that refused to yield to the Styx. They have clawed their way back from the deepest recesses of the Shadowlands, twisted and corrupted by the warping and freezing currents. Many have consumed weaker souls in Death to strengthen their own essence, while others have become bound to dark and forgotten powers to sustain their hateful existence. Each one is a malignant spirit bound by ambition and hatred. Unlike their lesser kin, Greater Undead retain shards of identity. Their minds remain intact, though warped beyond mortal reasoning. They command dreadful power, plot with purpose, and often bend Lesser Undead to their service.
 
 - **Wights** - dead and frozen corpses of wicked champions and rulers of old who died in service to malignant powers
 - **Revenant** - vengeful souls burning with a ruthless need to hunt down those who wronged them in life
@@ -43,6 +51,8 @@ Greater Undead are powerful spirits that refused to yield to the Styx. They have
 - **Mummies** - spirits ritually bound into their own dried, desiccated remains as grim protectors or deathless tyrants
 
 ## Necromancers and Once-Mortal Masters
+
+{{ image("lich.tif", alt="An immortal Lich surveys its domain", class="masked") }}
 
 Many Undead are bound in service to mortal, or once-mortal masters.
 

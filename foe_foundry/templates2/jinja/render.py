@@ -27,8 +27,45 @@ def render_statblock_fragment(stats: Statblock) -> str:
     return html_raw
 
 
-def render_pamphlet(template: CreatureTemplate, path: Path) -> Path:
-    """Renders a PDF-friendly pamphlet of lore, images, and statblocks"""
+def render_family_pamphlet(family: str, path: Path) -> Path:
+    family_dir = Path(__file__).parent.parent.parent.parent / "content" / "themes"
+    family_path = family_dir / f"{family}.md"
+
+    # get lore template
+    lore_template_str = family_path.read_text().strip()
+    if len(lore_template_str) == 0:
+        lore_template_str = f"# {family}\n\nNo Lore Available"
+
+    lore_template = JinjaEnv.from_string(lore_template_str)
+
+    # render statblocks and images into lore template
+    lore_context: dict = dict()
+    lore_md_raw = lore_template.render(lore_context)
+    lore_html_raw = markdown(lore_md_raw, extensions=["toc", "tables", "md_in_html"])
+
+    # render the entire pamphlet
+    pamphlet_context: dict = dict(lore_html=lore_html_raw)
+    jinja_template = JinjaEnv.get_template("pamphlet.html.j2")
+    html_raw = jinja_template.render(pamphlet_context)
+
+    with path.open("w") as f:
+        f.write(html_raw)
+
+    css_dir_src = Path(__file__).parent.parent / "css"
+    css_dir_dst = path.parent / "css"
+    css_dir_dst.mkdir(exist_ok=True, parents=True)
+    shutil.copytree(src=css_dir_src, dst=css_dir_dst, dirs_exist_ok=True)
+
+    img_dir_src = Path(__file__).parent.parent / "img"
+    img_dir_dst = path.parent / "img"
+    img_dir_dst.mkdir(exist_ok=True, parents=True)
+    shutil.copytree(src=img_dir_src, dst=img_dir_dst, dirs_exist_ok=True)
+
+    return path
+
+
+def render_monster_pamphlet(template: CreatureTemplate, path: Path) -> Path:
+    """Renders a PDF-friendly pamphlet of lore, images, and statblocks for a creature template"""
 
     def rng_factory():
         return np.random.default_rng()

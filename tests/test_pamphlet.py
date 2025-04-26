@@ -17,13 +17,26 @@ def templates_with_lore() -> list[CreatureTemplate]:
     return templates
 
 
+def theme_templates() -> list[str]:
+    dir = Path(__file__).parent.parent / "content" / "themes"
+    return [f.stem for f in dir.glob("*.md")]
+
+
 def _ids(t: CreatureTemplate) -> str:
     return t.key
 
 
 @pytest.mark.parametrize("template", templates_with_lore(), ids=_ids)
-def test_all_pamphlets(template: CreatureTemplate):
+def test_all_monster_pamphlets(template: CreatureTemplate):
     pamphlets_dir = Path(__file__).parent.parent / "examples" / "monsters"
     pamphlets_dir.mkdir(exist_ok=True, parents=True)
     path = pamphlets_dir / f"{template.key}.html"
-    templates2.render_pamphlet(template, path)
+    templates2.render_monster_pamphlet(template, path)
+
+
+@pytest.mark.parametrize("theme", theme_templates())
+def test_all_theme_pamphlets(theme: str):
+    pamphlets_dir = Path(__file__).parent.parent / "examples" / "themes"
+    pamphlets_dir.mkdir(exist_ok=True, parents=True)
+    path = pamphlets_dir / f"{theme}.html"
+    templates2.render_family_pamphlet(theme, path)

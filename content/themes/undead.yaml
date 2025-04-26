@@ -1,0 +1,15 @@
+theme: Undead
+hierarchy:
+  - name: skeleton
+    type: monster
+  - name: zombie
+    type: monster
+  - name: ghoul
+    type: monster
+  - name: wight
+    type: monster
+  - name: spirit
+    type: monster
+  - name: mage
+    type: monster
+    variant: necromancer
