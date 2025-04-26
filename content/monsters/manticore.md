@@ -15,8 +15,7 @@ Manticores swoop down on their prey from above, launching volleys of barbed tail
 
 ## Tactics
 
-- Manticores enjoy softening up their prey with a spine volley while hurling insults and offeringn lopsided deals
-- If negotiations fail, the Manticore will harry the weakest-looking foe
+- Manticores enjoy softening up their prey with a spine volley while hurling insults and offering lopsided deals
 - It will retreat when wounded, hurling vile insults
 
 {{ image("manticore.png", alt="A manticore is a cantankerous flying hunter", mode="foreground", class="masked white-background") }}
