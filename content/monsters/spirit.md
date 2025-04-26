@@ -13,6 +13,8 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 | **Ghost**    | Soul Bound by Memory and Regret        | Reenacting lost moments, fixated on people or places         | A memory too painful to release      |
 | **Wraith**   | Malignant Core of Condensed Evil       | Powerful shadow-form that enslaves or absorbs other spirits    | Hunger for power and dominion        |
 
+From Shadows and Specters to Banshees, Ghosts, Revenants, and Wraiths, spirits bring grief, vengeance, and corruption to life across Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs.
+
 {{ image("undead_spirits.jpg", alt="Undead spirits rising from the dark", mode="foreground", class="masked") }}
 
 ---
@@ -21,7 +23,7 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 
 A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into death. While the rest of the spirit is swept down the Styx, the Shadow lingers behind like a stain - alive with jealousy, hunger, and spite. Shadows are drawn to extinguish warmth, light, and life, which they revile above all.
 
-### Lore
+### Shadow Lore
 
 - Shadows are drawn to those with strong convictions, pure hearts, or hopeful dreams—things they once lacked, and now despise.
 - The more light a creature brings into the world, the more their shadow twists in ways it should not.
@@ -34,39 +36,47 @@ A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into dea
 
 A **Specter** is a soul fragment, splintered by violence or unendurable pain. Lacking the memory of a **Ghost** or the malignant will of a **Wraith**, it drifts through the world in spasms of confusion and malice.
 
-### Lore
+### Specter Lore
 
 - Specters often haunt the place of their death, reenacting their final moments in endless, distorted loops.
 - Some say Specters are the result of improperly performed death rites, or when a soul is interrupted in its crossing.
 - Though easily dismissed alone, swarms of Specters can overwhelm the mind, drowning victims in secondhand terror.
 
 {{ image("specter.png", alt="Specters haunt the sites of their death aimlessly", mode="foreground", class="masked") }}
+
+### Specter Statblock
+
 {{ statblock(statblocks["specter"]) }}
 
 ## Banshees
 
 A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and betrayal. In life, the spirit loved too deeply and lost too dearly. Many Banshees are spirits of women who were betrayed by a loved one, though not exclusively. The mournful wail of a banshee is often enough to drag the souls of the weak-willed directly into death and chill the minds of even the strong-of-heart.
 
-### Lore
+### Banshee Lore
 
 - The keening of a Banshee is said to carry across the River of the Dead, heralding death before it arrives.
 - In some cultures, Banshees are seen not as monsters but as messengers that warn those fated to die.
 - A Banshee’s presence carries a dread silence that can be physically painful to break
 
 {{ image("banshee.tif", alt="The keening wail of a banshee can break the will of even the strongest of heart", mode="foreground", class="masked" ) }}
+
+### Banshee Statblock
+
 {{ statblock(statblocks["banshee"]) }}
 
 ## Revenants
 
 A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haunt the world, but to correct a single, searing injustice. It remembers how it died and who is to blame, and will not rest until vengeance is taken. Revenants are not mindless: they are deliberate, relentless, and terrifyingly lucid. If their quarry is powerful, Revenants are known to assemble a posse of lesser undead to support their relentless quest.
 
-### Lore
+### Revenant Lore
 
 - A Revenant rises in its original body—but if destroyed, it finds another, which slowly reshapes to resemble the first.
 - A Revenant will not rest until the injustice that binds it to life has been righted by its own hands. Even if its killer has long since died, the Revenant will only rest when it has spilled the blood of the offender's descendants, disciples, or legacy
 - Some Revenants are given leave by divine forces, but others tear themselves out of the River of Death through raw will, dragging pieces of the underworld with them.
 
 {{ image("revenant.png", alt="Revenants rise to correct a grave injustice", mode="foreground", class="masked") }}
+
+### Revenant Statblock
 
 {{ statblock(statblocks["revenant"]) }}
 
@@ -76,13 +86,16 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 
 Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trapped in an endless loop of remembrance. It relives its death again and again, clinging to names, moments, and gestures long lost. Some lash out when disturbed. Others seek comfort in the living, drawn to those who carry echoes of their own regret.
 
-### Lore
+### Ghost Lore
 
 - Ghosts are animated by memory, often reenacting scenes from their lives with eerie accuracy or speaking in riddles drawn from personal history.
 - They often fixate on objects, people, or places tied to their strongest memories: an heirloom locket, a family home, or the battlefield where they fell.
 - Their presence distorts time and perception, as their pain bleeds into the world. Dreams fray, names slip, and voices echo from forgotten places.
 
 {{ image("ghost.tif", alt="Ghosts are animated by memories too painful to pass", mode="foreground", class="masked") }}
+
+### Ghost Statblocks
+
 {{ statblock(statblocks["ghost"]) }}
 
 ## Wraiths
@@ -91,7 +104,7 @@ When a soul steeped in malice dies, it may resist the pull of the Styx. Caught i
 
 Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is cohesive and cunning. Its presence dims light, drains warmth, and enslaves lesser spirits to serve as extensions of its will.
 
-### Lore
+### Wraith Lore
 
 - Though formed of countless fragmented spirits, at the core of the Wraith is a singular evil spirit clinging to un-life
 - Unlike **Ghosts**, who cling to memory, **Wraiths** cling to power
@@ -99,18 +112,19 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 
 {{ image("wraith.png", alt="Wraiths are amalgamations of spirits drawn back to life by ambition and the desire for power", mode="foreground", class="masked") }}
 
-### Wraith
+### Wraith Statblocks
+
+#### Wraith
 
 {{ statblock(statblocks["wraith"]) }}
 
-### Wraith Shadelord
+#### Wraith Shadelord
 
 When the spirit of the wraith is particularly evil it can attract such a dense miasma of negative energy that a **Wraith Shadelord** forms.
 
 {{ statblock(statblocks["wraith_shadelord"]) }}
 
-
-## Encounters
+## Spirit and Ghost Encounters
 
 - A torch sputters in a narrow hallway as the party's shadows stretch and split. One or more of them peel off the wall as a **Shadow** and attack their sources.
 - A group of guards lie dead in a torchlit room, killed by unseen assailants. If the sputtering torch extinguishes, 1d4 **Shadow** take form and lunge from the darkness.
@@ -125,7 +139,7 @@ When the spirit of the wraith is particularly evil it can attract such a dense m
 - The air grows thin and cold as the party enters a forgotten tomb. One of them stumbles, but their **Shadow** doesn’t get up, rising instead as the herald of the **Wraith** within. The herald demands a blood sacrifice for its master.
 - A crypt door swings open as if pushed from within. The **Wraith Shadelord** within does not attack immediately. It offers the most ambitious PC power if they take their place beside it.
 
-## Adventures
+## Spirit and Ghost Adventures
 
 - The last monk of an ancient priestly order tasked with protecting a holy site asks the party for help. The holy site is a vault of powerful cursed relics protected by holy flames. The flames are about to fail, and when they do, waves of **Shadow**s will seize the cursed relics.
 - A collapsed mining town lies silent beneath a blanket of ash. At night, the wind carries faint cries and the dying breaths of trapped workers. The **Specter**s below won’t rest until they are named and buried, but the local baron insists the disaster never happened. The party is approached by the widows of the dead miners asking for help putting their slain kin to rest.

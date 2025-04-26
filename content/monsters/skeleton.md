@@ -6,7 +6,9 @@
 
 Stripped of flesh and memory alike, **Skeletons** retain no true sentience. What remains is a hollow framework of instinct: flickers of old discipline, the echo of a soldier's drill, or the reflexive steps of a long-forgotten march. Skeletons can follow orders with mechanical obedience, and within narrow limits they show a chilling mimicry of intelligence, such as choosing a bridge to cross a river, or setting a trap to defend a tomb. Left unattended, they sometimes fall into ghostly pantomimes of past lives: polishing unseen armor, sweeping abandoned halls, or guarding empty gates against enemies who never come.
 
-## Lore
+Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs, animated by shattered soul fragments that echo the instincts of their former lives.
+
+## Skeleton Lore
 
 - Skeletons are animated by shattered soul-fragments, stripped of emotion and memory, leaving only the faintest echoes of purpose.
 - They can follow orders and improvise within narrow bounds, but lack true creativity or self-preservation instincts.
@@ -15,7 +17,7 @@ Stripped of flesh and memory alike, **Skeletons** retain no true sentience. What
 
 {{ image("skeleton_warband.png", alt="An animated Skeleton guards an ancient tomb, bones clattering silently.", class="masked") }}
 
-## Statblocks
+## Skeleton Statblocks
 
 ### Skeleton
 
@@ -53,7 +55,7 @@ Freezing Skeletons are sheathed in Styx-born frost, their bones rimed with death
 
 {{ statblock(statblocks["freezing-skeletal-champion"]) }}
 
-## Encounters
+## Skeleton Encounter Ideas
 
 Drop these table-ready **Skeleton Encounters** into crypts, ruined fortresses, or cursed battlegrounds. From articulate Grave Guards to burning and freezing champions, each offers open-ended challenges that go beyond simple combat. Test your players' wits, caution, and nerve against the silent vigilance of the undead.
 
@@ -62,7 +64,7 @@ Drop these table-ready **Skeleton Encounters** into crypts, ruined fortresses, o
 - A narrow stone bridge over a vast chasm is guarded by a **Burning Skeletal Champion** and a **Freezing Skeletal Champion**. They demand the PCs answer ancient riddles of death and loyalty to pass.
 - A crypt's doors lie shattered. Inside, a **Skeletal Grave Guard** and a contingent of **Skeletons** stand motionless beside a dusty throne, upon which lies a resplendent golden crown. They only attack if the throne or crown is disturbed, otherwise they silently stand guard.
 
-## Adventures
+## Skeleton Adventure Ideas
 
 These multi-session **Skeleton Adventures** plunge players into cursed tombs, haunted fortresses, and ancient battlefields. Unravel undead tournaments, confront burning and freezing champions, and strike dark bargains with the forgotten dead. Featuring powerful undead like Burning Skeletal Champions, Freezing Skeletal Champions, and Skeletal Grave Guards, these story seeds are rich with cursed treasure, lost honor, and dark bargains waiting to be struck — or broken.
 
