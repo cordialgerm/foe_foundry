@@ -54,7 +54,7 @@ Lesser undead creatures like **Skeletons** and **Zombies** are the most common r
 
 ### Zombies
 
-**Zombies** are mindless fragments of a soul bound to shambling, rotting corpses.
+**Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or Greater Undead who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten the Styx's influence on the Mortal Realm.
 
 {{ statblock_ref("Zombie") }}
 

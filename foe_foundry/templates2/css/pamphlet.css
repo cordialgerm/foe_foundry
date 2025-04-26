@@ -43,6 +43,10 @@ hr {
     max-width: calc(var(--column-size) * 2 + var(--big-margin) * 2);
 }
 
+.pamphlet-container a {
+    color: var(--fg-color);
+}
+
 .pamphlet-container ul {
     list-style: none;
     padding-left: 1.2em;
