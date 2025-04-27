@@ -20,6 +20,18 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
     upcast_description="""When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.""",
 )
 
+Wish: Spell = Spell(
+    name="Wish",
+    level=9,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="You can duplicate any spell of 8th level or lower that you know or have prepared. You don't need to meet any requirements in that spell, including costly components. The spell simply takes effect as if you had cast the spell.",
+)
+
 
 Entangle: Spell = Spell(
     name="Entangle",

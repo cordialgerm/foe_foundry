@@ -30,6 +30,20 @@ CharmPerson: Spell = Spell(
     range="30 feet",
 )
 
+PowerWordKill: Spell = Spell(
+    name="Power Word Kill",
+    level=9,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="""You utter a word of power that can compel one creature you can see within range to die instantly. If the target has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.
+If the target is a construct or an undead, it is immune to this effect. If the target is a creature with legendary resistances, it can choose to succeed on its saving throw instead of dying.""",
+    range="60 feet",
+)
+
 
 Command: Spell = Spell(
     name="Command",
