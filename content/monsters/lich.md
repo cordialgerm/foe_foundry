@@ -33,7 +33,7 @@ If it does defeat its enemies, it will look for a way to enforce its will upon t
 
 ## Karklaz the Withered King
 
-Long ago, a prideful sorcerer-king named Karklaz was the first to discover a dark truth - that life beyond death was possible for those with the power and will to take it. He became the first **Necromancer**, mages who specialize in creating and binding undead spirits to their service.
+Long ago, a prideful sorcerer-king named Karklaz was the first to discover a dark truth - that life beyond death was possible for those with the power and will to take it. He became the first **Necromancer Archmage**, mages who specialize in creating and binding undead spirits to their service.
 
 Karklaz ruled the mageocracy of Narvothir, a thriving metropolis of arcane wonder and gleaming crystalline towers in the far north that he had helped construct and bring to splendor. As he grew older, he sought out the secret to immortality, hoping to grow the grandeur of his name and city. His methods became increasingly vile, and it is due to one of his failed experiments on his lieutenants that the dark blessing and curse of Vampirism was born.
 
@@ -86,6 +86,6 @@ Foe Foundry encounters are designed to be table-ready situations you can drop im
 Foe Foundry adventure seeds are crafted to spark thrilling, open-ended campaigns filled with danger, choice, and discovery. These **Lich**-centered adventures explore the dark ambitions of undead sorcerers, immortal necromancers, and deathless kings. We hope these ideas inspire open-ended stories where peril, ambition, and grim discovery intertwine.
 
 - An aging powerful ruler (**Legendary Warrior**) seeks immortality by performing horrible atrocities to curry favor with a dread **Lich**
-- Various **Nobles** keep turning into statues. It turns out these are the former loved ones (family, friends, ex-lovers) of an exiled **Necromancer Archmage** who must sacrifice their love in order to craft the soul anchor they require to become a **Lich**
+- Various **Nobles** keep turning into statues. It turns out these are the former loved ones (family, friends, ex-lovers) of an exiled **Necromancer Primagus** who must sacrifice their love in order to craft the soul anchor they require to become a **Lich**
 - Two competing **Liches** are engaged in a proxy war by hiring competing adventuring parties to acquire a long-lost relic
 - A spectral library appears once a century, in a catacomb deep beneath a ruined city infested with undead. It is said the **Lich** who crafted the library will grant one *Wish* to any mortal champion who can brave the horrors of the dungeon

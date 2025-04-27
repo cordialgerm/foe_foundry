@@ -35,7 +35,7 @@ Twisted by the curse of cannibalism, **Ghouls** are undead predators driven by a
 
 ### Ghast Gravelord
 
-A **Ghast Gravelord** is a ghoul who has ascended through blasphemous rites, gaining the power to command the dead and create other **Ghouls**. Some whisper that a **Ghast** that consumes the **Necromancer** who created it ascends into a **Ghast Gravelord**. These dread creatures spread corruption wherever their unholy touch reaches.
+A **Ghast Gravelord** is a ghoul who has ascended through blasphemous rites, gaining the power to command the dead and create other **Ghouls**. Some whisper that a **Ghast** that consumes the **Necromancer Mage** who created it ascends into a **Ghast Gravelord**. These dread creatures spread corruption wherever their unholy touch reaches.
 
 {{ statblock(statblocks["ghast-gravelord"]) }}
 
@@ -54,5 +54,5 @@ These ghoul adventure seeds offer dark, open-ended storylines filled with raveno
 
 - Fifty years ago, during a desperate winter, villagers resorted to cannibalism to survive. Their descendants became cursed and transform into **Ghasts** during the winter months. Someone important to the PCs has gone missing in this town, which has since become prosperous, despite its dark secret.
 - A hidden ghoul cult thrives in a major city. The **Death Cultist Initiate** and his loyal **Cultists** worship a **Ghoul Gravecaller** and kidnap victims to curry favor.
-- A **Ghast** approaches the PCs about teaming up to destroy the **Necromancer** that enslaved it. The cunning creature wishes to devour its former master and ascend to a **Ghast Gravelord**
+- A **Ghast** approaches the PCs about teaming up to destroy the **Necromancer Mage** that enslaved it. The cunning creature wishes to devour its former master and ascend to a **Ghast Gravelord**
 - A well-respected **Knight** carries a dark secret. In his last campaign, his company was besieged for months on end. Starving, they resorted to cannibalism and the survivors were all cursed as **Ghasts**. The knight begs the PCs to find an end to the curse that afflicts him and the veterans of his campaign.

@@ -6,7 +6,7 @@
 
 Undead creatures are the echoes and remnants of life, cursed to linger in defiance of the natural order. There are many types of Undead, including the reanimated dead (such as **Zombies**, **Skeletons**, and **Mummies**), as well as lingering spirits like **Ghosts** and **Wraiths**. Some were raised by fell mortal magic. Others clawed their way back to life battling the biting currents of the Styx, while some endure cursed existences.
 
-Many serve as mindless thralls under a mortal or once-mortal master's control, such as a **Necromancer**. Others arise spontaneously in places where the veil between life and death has thinned: fields soaked in blood, crypts of cursed kings, or battlefields steeped in sorrow. A rare few choose undeath, willingly binding themselves to deathless hunger or forgotten oaths.
+Many serve as mindless thralls under a mortal or once-mortal master's control, such as a **Necromancer Mage**. Others arise spontaneously in places where the veil between life and death has thinned: fields soaked in blood, crypts of cursed kings, or battlefields steeped in sorrow. A rare few choose undeath, willingly binding themselves to deathless hunger or forgotten oaths.
 
 ## Using Undead in Your Campaign
 
@@ -42,7 +42,7 @@ The veil between the Mortal Realms and the Shadowlands is not always firm. It th
 
 ### Origin of Necromancy
 
-Long ago, a prideful sorcerer-king named Karklaz was the first to discover a dark truth - that life beyond death was possible for those with the power and will to take it. He became the first **Necromancer**, mages who specialize in creating and binding undead spirits to their service. Eventually, he uncovered blasphemous magicks that allowed him to anchor his soul to the mortal plane at great cost, becoming the first **Lich**. To his lieutenants he gifted his immortal blood, and thus was born the dark blessing and curse of Vampirism. Those who embraced the blood-curse became vile predators, while those who resisted became little more than thralls to their hunger.
+Long ago, a prideful sorcerer-king named Karklaz was the first to discover a dark truth - that life beyond death was possible for those with the power and will to take it. He became the first **Necromancer Archmage**, mages who specialize in creating and binding undead spirits to their service. Eventually, he uncovered blasphemous magicks that allowed him to anchor his soul to the mortal plane at great cost, becoming the first **Lich**. To his lieutenants he gifted his immortal blood, and thus was born the dark blessing and curse of Vampirism. Those who embraced the blood-curse became vile predators, while those who resisted became little more than thralls to their hunger.
 
 ## Lesser Undead
 
