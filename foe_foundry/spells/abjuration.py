@@ -33,6 +33,20 @@ Break Enchantment. As your action, you touch a creature you can reach that is ch
 Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.""",
 )
 
+PrismaticWall = Spell(
+    name="Prismatic Wall",
+    level=9,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A shimmering, multicolored plane of light springs into existence in a 30-foot radius around you and remains for the duration. The wall is 1 foot thick and lasts for the duration. It is opaque and lasts until it is dispelled.
+The wall is a barrier to all creatures and objects except those you designate. The wall blocks line of sight, and any creature or object within the wall is blinded. The wall can be dispelled by dispel magic, but only if the caster is within 30 feet of the wall.
+The wall can be destroyed by a disintegrate spell or moved by a move earth spell, but only if the caster is within 30 feet of the wall.""",
+)
+
 DispelMagic = Spell(
     name="Dispel Magic",
     level=3,

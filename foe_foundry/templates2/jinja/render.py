@@ -169,9 +169,7 @@ def _markdown_with_toc(text: str, strip_header: bool = True) -> tuple[str, str, 
         header = ""
 
     md = Markdown(
-        extensions=[
-            "toc",
-        ],
+        extensions=["toc", "tables"],
         extension_configs={
             "toc": {
                 "permalink": True  # adds a link symbol next to headers
