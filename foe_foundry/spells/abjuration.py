@@ -43,11 +43,8 @@ PrismaticWall = Spell(
     action_type=ActionType.Action,
     save=None,
     description="""A shimmering, multicolored plane of light springs into existence in a 30-foot radius around you and remains for the duration. The wall is 1 foot thick and lasts for the duration. It is opaque and lasts until it is dispelled.
-The wall is a barrier to all creatures and objects except those you designate. The wall blocks line of sight, and any creature or object within the wall is blinded. The wall can be dispelled by dispel magic, but only if the caster is within 30 feet of the wall. The wall can be destroyed by a disintegrate spell, but only if the caster is within 30 feet of the wall.
-The wall can be moved by a move earth spell, but only if the caster is within 30 feet of the wall. The wall can be destroyed by a disintegrate spell, but only if the caster is within 30 feet of the wall. The wall can be moved by a move earth spell, but only if the caster is within 30 feet of the wall.
-The wall can be destroyed by a disintegrate spell, but only if the caster is within 30 feet of the wall. The wall can be moved by a move earth spell, but only if the caster is within 30 feet of the wall.
-The wall can be destroyed by a disintegrate spell, but only if the caster is within 30 feet of the wall. The wall can be moved by a move earth spell, but only if the caster is within 30 feet of the wall.
-""",
+The wall is a barrier to all creatures and objects except those you designate. The wall blocks line of sight, and any creature or object within the wall is blinded. The wall can be dispelled by dispel magic, but only if the caster is within 30 feet of the wall.
+The wall can be destroyed by a disintegrate spell or moved by a move earth spell, but only if the caster is within 30 feet of the wall.""",
 )
 
 DispelMagic = Spell(
