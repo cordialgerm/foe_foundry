@@ -19,3 +19,16 @@ def monster_link(ref: MonsterRef) -> Markup | None:
         return Markup(
             f"<a href='{href}' class='monster-link' data-monster-template='{ref.template.key}'><strong>{ref.original_monster_name}</strong></a>"
         )
+
+
+def monster_button(ref: MonsterRef) -> Markup | None:
+    """Generates a button to summon the monster template or variant."""
+    if ref is None:
+        return None
+    else:
+        monster = monster_link(ref)
+
+    brand = '<span class="branding"><img src="img/favicon.png" alt="Foe Foundry Skull Icon"></span>'
+    return Markup(
+        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{brand}</div>"
+    )

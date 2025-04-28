@@ -2,7 +2,7 @@ from foe_foundry.markdown import markdown
 
 
 def test_markdown():
-    text = "This is a **Wight** and these are [[Zombies]] and this is **NOTHING IMPORTANT**"
+    text = "This is a **Wight** and these are [[Zombies]] and this is a button ![[Lich]] and this is **NOTHING IMPORTANT**"
 
     result = markdown(text)
-    assert len(result.references) == 2
+    assert len(result.references) == 3
