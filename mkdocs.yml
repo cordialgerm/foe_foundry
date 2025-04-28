@@ -1,0 +1,5 @@
+site_name: Foe Foundry
+nav:
+  - About: index.md
+  - Credits: credits.md
+use_directory_urls: true
