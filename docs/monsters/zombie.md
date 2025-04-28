@@ -2,7 +2,7 @@
 
 *Shambling, Relentless Hordes*
 
-**Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or [**Greater Undead**](../themes/undead.md#greater-undead) who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten [the Styx's](../themes/undead.md#the-river-styx) influence on the Mortal Realm.
+**Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or [**Greater Undead**](../topics/undead.md#greater-undead) who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten [the Styx's](../topics/undead.md#the-river-styx) influence on the Mortal Realm.
 
 Where **Skeletons** are bare and brittle, **Zombies** lumber on with the stubborn momentum of the recently dead. Zombie flesh grants them a brutish resilience, but the soul fragment bound within is weak and broken, barely able to steer the ruin it inhabits. Slow, clumsy, and instinct-driven, zombies are little more than puppets twitching at the end of a necromancer’s thread. Given simple orders, they obey without thought or fear, lurching onward until their decaying frames collapse into ruin.
 
@@ -15,7 +15,7 @@ Zombies stagger through Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs as 
 - Tethered by Will: Destroying the necromancer or greater undead that commands a group of zombies may cause the mindless horde to collapse into inert corpses — though some linger in a frenzy of confused hunger.
 - The Styx’s Touch: In cursed places near a breach of the River Styx, corpses can sometimes rise as walking dead without any master’s command, driven only by broken instinct and the river’s foul memory.
 
-{{ image("zombie_horde.png", alt="A relentless horde of reanimated Zombies marches to serve their necromantic overlords", class="masked white-background") }}
+![A relentless horde of reanimated Zombies marches to serve their necromantic overlords](../img/zombie_horde.png){.monster-image .masked .white-background}
 
 ## Zombie Tactics
 

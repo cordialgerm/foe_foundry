@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+
+    {%- for path in config.extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+
+    <link rel="icon" type="image/x-icon" href="{{ base_url }}/img/favicon.ico">
+</head>
+
+<body>
+    <div class="pamphlet-container">
+        {{ page.content }}
+    </div>
+
+    {%- for script in config.extra_javascript %}
+    {{ script | script_tag }}
+    {%- endfor %}
+</body>
+
+</html>

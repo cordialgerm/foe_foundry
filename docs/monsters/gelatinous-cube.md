@@ -18,7 +18,7 @@ From classic D&D dungeons to modern 5E campaigns, Gelatinous Cubes remain a dead
 
 Gelatinous Cubes are mindless entities driven to absorb any organic matter in their path. The cube simple dashes towards the largest concentration of foes that it can sense.
 
-{{ image("gelatinous-cube.tif", alt="A gelatinous cube with a bleached skeleton", mode="foreground", class="masked") }}
+![A gelatinous cube with a bleached skeleton](../img/gelatinous-cube.tif){.monster-image .masked}
 
 ---
 

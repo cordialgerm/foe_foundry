@@ -2,4 +2,27 @@ site_name: Foe Foundry
 nav:
   - About: index.md
   - Credits: credits.md
+  - Monsters: monsters/index.md
+  - Topics: topics/index.md
 use_directory_urls: true
+plugins:
+  - gen-files:
+      scripts:
+        - gen_pages.py
+theme:
+  name: mkdocs
+  custom_dir: docs_theme/
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - foe_foundry.markdown
+extra_css:
+  - css/branding.css
+  - css/pamphlet.css
+  - css/parchment.css
+  - css/root.css
+  - css/statblock.css
+  - css/tooltips.css

@@ -7,14 +7,14 @@ Mages are wielders of forgotten arts and living vaults of hidden knowledge. Some
 ## Necromancers
 
 **Necromancers** are mortal mages who use dark and heretical magicks to bend
-[Undead Spirits](../themes/undead.md#necromancers-and-once-mortal-masters) to their will. They are masters of death magic and bind throngs of reanimated dead to their will. They can raise the dead to serve as their minions, drain the life force from their enemies, or create powerful curses and hexes to bring ruin to their foes.
+[Undead Spirits](../topics/undead.md#necromancers-and-once-mortal-masters) to their will. They are masters of death magic and bind throngs of reanimated dead to their will. They can raise the dead to serve as their minions, drain the life force from their enemies, or create powerful curses and hexes to bring ruin to their foes.
 
-{{ image("necromancer.tif", alt="Mortal necromancer channeling forbidden magic to raise the dead", class="masked") }}
+![Mortal necromancer channeling forbidden magic to raise the dead](../img/necromancer.tif){.monster-image .masked}
 
 ### Necromancer Lore
 
 - The first necromancer was [Karklaz, the Withered King](./lich.md#karklaz-the-withered-king), who went on to ascend as the first **Archlich**
-- As necromancers advance in power and skill, they attempt to bind increasingly more powerful [Undead](../themes/undead.md)
+- As necromancers advance in power and skill, they attempt to bind increasingly more powerful [Undead](../topics/undead.md)
 - Some overly-ambitious necromancers are slain by their horrendous creations
 - Many Necromancers seek out corpses of powerful monsters for their dark experiments
 
@@ -34,13 +34,13 @@ The **Necromancer Adept** has just begun their studies of the necromantic arts. 
 
 #### Necromancer Mage
 
-The **Necromancer Mage** is an accomplished practitioner of the dark arts. At this level, the necromancer has mastered many [Lesser Undead](../themes/undead.md#lesser-undead) and has begun drawing [Spirits](../monsters/spirit.md) such as **Specters** and **Shadows** under their control.
+The **Necromancer Mage** is an accomplished practitioner of the dark arts. At this level, the necromancer has mastered many [Lesser Undead](../topics/undead.md#lesser-undead) and has begun drawing [Spirits](../monsters/spirit.md) such as **Specters** and **Shadows** under their control.
 
 {{ statblock(statblocks["necromancer-mage"]) }}
 
 #### Necromancer Archmage
 
-The **Necromancer Archmage** is at the pinacle of the dark arts. These necromancers have become deeply steeped in death magic and command armies of the [Lesser Undead](../themes/undead.md#lesser-undead) as well as a handful of [Greater Undead](../themes/undead.md#greater-undead).
+The **Necromancer Archmage** is at the pinacle of the dark arts. These necromancers have become deeply steeped in death magic and command armies of the [Lesser Undead](../topics/undead.md#lesser-undead) as well as a handful of [Greater Undead](../topics/undead.md#greater-undead).
 
 {{ statblock(statblocks["necromancer-archmage"]) }}
 

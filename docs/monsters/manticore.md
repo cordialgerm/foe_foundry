@@ -20,7 +20,7 @@ Manticores are classic flying predators in Dungeons & Dragons, 5E, Pathfinder, a
 - Manticores enjoy softening up their prey with a spine volley while hurling insults and offering lopsided deals
 - It will retreat when wounded, hurling vile insults
 
-{{ image("manticore.png", alt="A manticore is a cantankerous flying hunter", mode="foreground", class="masked white-background") }}
+![A manticore is a cantankerous flying hunter](../img/manticore.png){.monster-image .masked .white-background}
 
 ---
 

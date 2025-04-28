@@ -21,7 +21,7 @@ Owlbears embody the wild fury of the frontier in Dungeons & Dragons, 5E, Pathfin
 
 Owlbears are fiercely territorial and will defend their cubs to the death. If a dangerous-looking foe enters their territory, they will first attempt to frighten the foe away before risking an engagement. However, if the foe appears frail or weak, an Owlbear will prepare a vicious ambush from elevated terrain, dense underbrush, or partially collapsed ruins. Owlbears retreat as soon as they have downed a potential meal or if they appear to be overwhelmed. However, many enter a vicious rage when injured and fight viciously to the death.
 
-{{ image("owlbear.tif", alt="An owlbear stands threateningly on its hind legs", mode="foreground", class="masked" ) }}
+![An owlbear stands threateningly on its hind legs](../img/owlbear.tif){.monster-image .masked}
 
 ---
 

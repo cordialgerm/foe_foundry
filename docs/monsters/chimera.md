@@ -3,7 +3,7 @@
 
 *Monstrous Messenger of Imminent Disaster*
 
-{{ image("chimera.tif", alt="Chimeras are three-headed heralds of disaster", mode="foreground", class="masked") }}
+![Chimeras are three-headed heralds of disaster](../img/chimera.tif){.monster-image .masked}
 
 Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast that is part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.
 

@@ -1,4 +1,3 @@
-
 # Wights
 
 *Deathly cold malignant warriors of old*
@@ -22,8 +21,7 @@ Wights are cunning, soul-hungry undead in Dungeons & Dragons, 5E, Pathfinder, an
 - Wights are patient, cunning, and cruel. They show no mercy.
 - Wights are often drawn to the life-force of particularly powerful divine magic wielders
 
-
-{{ image("wight.png", alt="Wights rise from their freezing grave barrows", mode="foreground", class="masked") }}
+![Wights rise from their freezing grave barrows](../img/wight.png){.monster-image .masked}
 
 ---
 

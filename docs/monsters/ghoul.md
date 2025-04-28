@@ -2,7 +2,7 @@
 
 *Ravenous Cannibals Possessed by Undeath*
 
-**Ghouls** are a ravenous abomination - a twisted combination of life and death. For in the heart of a Ghoul lies the twisted fragment of an Undead soul. Some **Ghouls** were once mortal humanoids who, in moments of unspeakable desperation or ritualistic depravity, consumed the flesh of their kin. In doing so, they opened themselves to the fractured currents of the [River Styx](../themes/undead.md#the-river-styx), allowing splinters of lost, tormented spirits to slip inside them. Others are the work of **Necromancers** and foul rites that forcibly bind undead souls to living bodies and birth these voracious predators.
+**Ghouls** are a ravenous abomination - a twisted combination of life and death. For in the heart of a Ghoul lies the twisted fragment of an Undead soul. Some **Ghouls** were once mortal humanoids who, in moments of unspeakable desperation or ritualistic depravity, consumed the flesh of their kin. In doing so, they opened themselves to the fractured currents of the [River Styx](../topics/undead.md#the-river-styx), allowing splinters of lost, tormented spirits to slip inside them. Others are the work of **Necromancers** and foul rites that forcibly bind undead souls to living bodies and birth these voracious predators.
 
 Neither fully living nor fully dead, ghouls are undead scavengers cursed with an insatiable hunger for mortal flesh. Their minds teeter on the brink of madness, driven by both the dim instincts of the soul shard within and the fading echoes of the mortal mind they once possessed.
 
@@ -10,7 +10,7 @@ Those wounded by a **Ghoul**'s claws often suffer more than blood loss. The touc
 
 Ghouls are a classic threat for fantasy tabletop RPGs, from grim dungeon crawls to desperate wilderness hunts. Whether you’re running a D&D 5E campaign, a Pathfinder adventure, or any fantasy TTRPG setting, their cursed hunger can challenge even seasoned heroes.
 
-{{ image("ghoul.tif", alt="Undead ghoul with decaying flesh and slavering jaws lunging from the shadows", class="masked") }}
+![Undead ghoul with decaying flesh and slavering jaws lunging from the shadows](../img/ghoul.tif){.monster-image .masked}
 
 ## Ghoul Lore and Origins
 

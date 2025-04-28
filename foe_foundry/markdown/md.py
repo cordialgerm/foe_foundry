@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 from markdown import Markdown
 
-from .monster_name import MonsterLinkExtension
+from .ext import MonsterLinkExtension
 from .monster_ref import MonsterRef
 
 

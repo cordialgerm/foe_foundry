@@ -22,7 +22,7 @@ Mimics are a classic ambush predator in Dungeons & Dragons, 5E, Pathfinder, and 
 - After successfully swallowing prey, or if its ambush fails, a mimic will attempt to flee and blend in with its nearby surroundings
 - Larger, more powerful mimics are often able to inhabit entire rooms or structures
 
-{{ image("mimic.png", alt="A book mimic surprises the PCs", mode="foreground", class="masked white-background") }}
+![A book mimic surprises the PCs](../img/mimic.png){.monster-image .masked .white-background}
 
 ---
 
