@@ -3,12 +3,10 @@ from io import BytesIO
 from pathlib import Path
 from typing import Any
 
-from jinja2 import Environment
+from jinja2 import Environment, PackageLoader, select_autoescape
 from markdown import markdown
 from markupsafe import Markup
 from PIL import Image
-
-from foe_foundry.markdown import MonsterRefResolver, monster_link
 
 
 def fix_punctuation(text: Any) -> Any:
@@ -150,20 +148,9 @@ def branding(
     return Markup(branding)  # Mark as safe to avoid escaping
 
 
-def statblock_ref(
-    env: Environment, resolver: MonsterRefResolver, statblock: str
-) -> Markup:
-    """
-    Resolves a monster reference using the provided resolver and returns the HTML markup.
-    """
-    ref = resolver.resolve_monster_ref(statblock)
-    if ref is None:
-        monster = f"<strong>{statblock}</strong>"
-    else:
-        monster = monster_link(ref)
-
-    brand = branding(env, icon_only=True)
-
-    return Markup(
-        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{brand}</div>"
+def jinja_env():
+    return Environment(
+        loader=PackageLoader("foe_foundry", package_path="templates2"),
+        autoescape=select_autoescape(),
+        extensions=["jinja_markdown.MarkdownExtension"],
     )
