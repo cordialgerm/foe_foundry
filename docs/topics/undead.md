@@ -10,7 +10,7 @@ Many serve as mindless thralls under a mortal or once-mortal master's control, s
 
 ## Using Undead in Your Campaign
 
-Each {{branding(icon_only=False)}} monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
+Each <span class="branding">[Foe Foundry](https://foefoundry.com)</span> monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
 
 ### Encounters
 
@@ -56,13 +56,13 @@ Lesser undead creatures like **Skeletons** and **Zombies** are the most common r
 
 **Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or Greater Undead who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten the Styx's influence on the Mortal Realm.
 
-![[Zombie]]
+$[[Zombie]]
 
 ### Skeletons
 
 **Skeletons** are fragments of a soul bound to bleached bones stripped of flesh, given a grim mockery of life through necromantic power. They are among the most common of the Lesser Undead. Some **Skeletons** rise spontaneously near mass graves and blood-soaked fields. Others are deliberately summoned by mortal **Necromancers**, their battered souls shackled to ruined bodies to serve as tireless guardians, soldiers, or laborers.
 
-![[Skeleton]]
+$[[Skeleton]]
 
 ### Ghouls
 
@@ -70,7 +70,7 @@ Lesser undead creatures like **Skeletons** and **Zombies** are the most common r
 
 Neither fully living nor fully dead, ghouls are undead scavengers cursed with an insatiable hunger for mortal flesh. Their minds teeter on the brink of madness, driven by both the dim instincts of the soul shard within and the fading echoes of the mortal mind they once possessed.
 
-![[Ghoul]]
+$[[Ghoul]]
 
 ## Lesser Undead Spirits
 
@@ -82,25 +82,25 @@ Spirits, or incorporeal undead, are the echoes and imprints of the deceased that
 
 A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into death. While the rest of the spirit is swept down the Styx, the Shadow lingers behind like a stain - alive with jealousy, hunger, and spite. Shadows are drawn to extinguish warmth, light, and life, which they revile above all.
 
-![[Shadow]]
+$[[Shadow]]
 
 ### Specters
 
 A **Specter** is a soul fragment, splintered by violence or unendurable pain. Lacking the memory of a **Ghost** or the malignant will of a **Wraith**, it drifts through the world in spasms of confusion and malice.
 
-![[Specter]]
+$[[Specter]]
 
 ### Ghosts
 
 **Ghosts** are spirits that died with memories too painful to release. They are not held by hatred or vengeance, but by the sorrowful weight of what they recall. Lives cut too short, loved ones left behind, and truths unsaid. These souls haunt the world not because they won’t move on, but because their memories won’t let them.
 
-![[Ghost]]
+$[[Ghost]]
 
 ### Banshees
 
 A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and betrayal. In life, the spirit loved too deeply and lost too dearly. Many Banshees are spirits of women who were betrayed by a loved one, though not exclusively. The mournful wail of a banshee is often enough to drag the souls of the weak-willed directly into death and chill the minds of even the strong-of-heart.
 
-![[Banshee]]
+$[[Banshee]]
 
 ## Greater Undead
 
@@ -112,13 +112,13 @@ Greater Undead are powerful spirits that refused to yield to the Styx. These pow
 
 Wights are the dead and frozen corpses of wicked champions of bygone eras whose evil deeds persist into undeath. Their piercing blue eyes instill terror while their freezing blades of ice rend armor and flesh alike. They are Greater Undead who maintain the goals, memories, and ambitions that drove their wicked spirits. The bitter cold of the Styx surrounds them, and their chilling touch can freeze the hearts of even the bravest warriors. The souls of those slain by a Wight are cast deep into the freezing currents of the Styx while their bodies rise as undead servants of the wight.
 
-![[Wight]]
+$[[Wight]]
 
 ### Revenants
 
 A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haunt the world, but to correct a single, searing injustice. It remembers how it died and who is to blame, and will not rest until vengeance is taken. Revenants are not mindless: they are deliberate, relentless, and terrifyingly lucid. If their quarry is powerful, Revenants are known to assemble a posse of lesser undead to support their relentless quest.
 
-![[Revenant]]
+$[[Revenant]]
 
 ### Wraiths
 
@@ -126,13 +126,13 @@ When a soul steeped in malice dies, it may resist the pull of the Styx. Caught i
 
 Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is cohesive and cunning. Its presence dims light, drains warmth, and enslaves lesser spirits to serve as extensions of its will.
 
-![[Wraith]]
+$[[Wraith]]
 
 ### Mummies
 
 **Mummies** are spirits ritually bound into their own dried, desiccated remains as grim protectors or deathless tyrants.
 
-![[Mummy]]
+$[[Mummy]]
 
 ## Necromancers and Once-Mortal Masters
 
@@ -144,7 +144,7 @@ Many Undead are bound in service to mortal, or once-mortal masters.
 
 **Necromancers** are mortal mages who use dark and heretical magicks to bind spirits to their will. They are masters of death magic and bind throngs of reanimated dead to their will.
 
-![[Necromancer Mage]]
+$[[Necromancer Mage]]
 
 ### Vampires
 
@@ -154,5 +154,5 @@ Many Undead are bound in service to mortal, or once-mortal masters.
 
 **Liches** are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.
 
-![[Lich]]
+$[[Lich]]
 

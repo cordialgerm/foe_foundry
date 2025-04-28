@@ -30,19 +30,19 @@ Mimics are a classic ambush predator in Dungeons & Dragons, 5E, Pathfinder, and 
 
 ### Mimic
 
-{{ statblock(statblocks["mimic"]) }}
+![[Mimic]]
 
 ### Greater Mimic
 
 When two mimics meet, they occasionally merge together to form into a **Greater Mimic**. The process by which the two mates agree upon and merge is hotly debated by scholars.
 
-{{ statblock(statblocks["greater-mimic"]) }}
+![[Greater Mimic]]
 
 ### Vault Mimic
 
 A **Vault Mimic** is ancient amongst its kind and has grown large enough that it can impersonate entire chambers, treasure vaults, or even floors of a building or dungeon.
 
-{{ statblock(statblocks["vault-mimic"]) }}
+![[Vault Mimic]]
 
 ## Mimic Encounters
 

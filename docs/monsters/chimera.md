@@ -28,13 +28,13 @@ When running a Chimera encounter, start by using the *Quarreling Heads* ability 
 
 ### Chimera
 
-{{ statblock(statblocks["chimera"]) }}
+![[Chimera]]
 
 ### Chimera Sovereign
 
 A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
-{{ statblock(statblocks["chimera_sovereign"]) }}
+![[Chimera Sovereign]]
 
 ## Chimera Encounter Ideas
 

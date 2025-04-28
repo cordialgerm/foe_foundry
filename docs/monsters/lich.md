@@ -17,7 +17,6 @@ Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken t
 - A lich cannot be truly destroyed while its soul anchor persists
 - Each soul anchor is intimately tied to the lich's former life and guarded by dire wards
 
-
 ![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.tif){.monster-image .masked}
 
 ## Lich Tactics
@@ -65,13 +64,13 @@ Unconcerned with the destruction he initiated, Karklaz arose as an **Archlich**.
 
 **Liches** are powerful undead sorcerers who have bound their souls to the Mortal Realm through dark rituals and soul anchors. These immortal necromancers command devastating magic and legions of undead, making them deadly threats to any world they haunt.
 
-{{ statblock(statblocks["lich"]) }}
+![[Lich]]
 
 ### Archlich
 
 **Archliches** are ancient undead spellcasters whose power and malice eclipse even that of lesser liches. These deathless kings of ruin are masters of entropy and command reality-warping magic. Some seek to conquer continents, ascend to godhood, or alter the very nature of reality.
 
-{{ statblock(statblocks["archlich"]) }}
+![[Archlich]]
 
 ## Lich Encounter Ideas
 

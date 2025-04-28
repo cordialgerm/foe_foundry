@@ -26,13 +26,13 @@ Gelatinous Cubes are mindless entities driven to absorb any organic matter in th
 
 ### Gelatinous Cube
 
-{{ statblock(statblocks["gelatinous_cube"]) }}
+![[Gelatinous Cube]]
 
 ### Ancient Gelatinous Cube
 
 An **Ancient Gelatinous Cube** has absorbed so much organic material that it has swollen to tremendous size. Some are rumored to contain entire treasure hoards from the assortment of misfortunate adventurers they have absorbed over the decades.
 
-{{ statblock(statblocks["ancient_gelatinous_cube"]) }}
+![[Ancient Gelatinous Cube]]
 
 ## Gelatinous Cube Encounter Ideas
 

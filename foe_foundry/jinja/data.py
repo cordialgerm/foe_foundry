@@ -9,10 +9,10 @@ from num2words import num2words
 
 from foe_foundry.utils import comma_separated
 
-from ...damage import Attack, Condition, DamageType
-from ...features import ActionType, Feature
-from ...skills import Skills, Stats
-from ...statblocks import Statblock
+from ..damage import Attack, Condition, DamageType
+from ..features import ActionType, Feature
+from ..skills import Skills, Stats
+from ..statblocks import Statblock
 from .utilities import fix_punctuation
 
 

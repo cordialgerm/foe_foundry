@@ -1,4 +1,10 @@
+import numpy as np
 from markupsafe import Markup
+
+from foe_foundry.creatures import (
+    GenerationSettings,
+)
+from foe_foundry.jinja import render_statblock_fragment
 
 from .monster_ref import MonsterRef
 
@@ -28,7 +34,34 @@ def monster_button(ref: MonsterRef) -> Markup | None:
     else:
         monster = monster_link(ref)
 
-    brand = '<span class="branding"><img src="img/favicon.png" alt="Foe Foundry Skull Icon"></span>'
     return Markup(
-        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button'>Summon your own {monster}{brand}</div>"
+        f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button branding'>Summon your own {monster}</div>"
     )
+
+
+def monster_statblock(ref: MonsterRef) -> Markup | None:
+    if ref is None:
+        return None
+
+    def rng_factory():
+        return np.random.default_rng()
+
+    template = ref.template
+    variant = ref.variant if ref.variant is not None else template.variants[0]
+    suggested_cr = (
+        ref.suggested_cr if ref.suggested_cr is not None else variant.suggested_crs[0]
+    )
+
+    stats = template.generate(
+        GenerationSettings(
+            creature_name=suggested_cr.name,
+            creature_template=template.name,
+            variant=variant,
+            cr=suggested_cr.cr,
+            species=None,
+            is_legendary=suggested_cr.is_legendary,
+            rng=rng_factory(),
+        )
+    ).finalize()
+    html = render_statblock_fragment(stats)
+    return Markup(html)

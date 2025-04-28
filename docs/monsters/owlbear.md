@@ -29,19 +29,19 @@ Owlbears are fiercely territorial and will defend their cubs to the death. If a 
 
 ### Owlbear
 
-{{ statblock(statblocks["owlbear"]) }}
+![[Owlbear]]
 
 ### Owlbear Cub
 
 Owlbears are fiercely protective of their cubs, despite their individualistic tendencies. Many a fool has perished attempting to capture and tame an **Owlbear Cub**.
 
-{{ statblock(statblocks["owlbear-cub"]) }}
+![[Owlbear Cub]]
 
 ### Savage Owlbear
 
 A **Savage Owlbear** has extended its territory sufficiently the only thing matching its massive size is its unbridled aggression.
 
-{{ statblock(statblocks["savage-owlbear"]) }}
+![[Savage Owlbear]]
 
 ## Owlbear Encounters
 

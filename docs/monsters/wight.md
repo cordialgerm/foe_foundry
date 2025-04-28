@@ -29,19 +29,19 @@ Wights are cunning, soul-hungry undead in Dungeons & Dragons, 5E, Pathfinder, an
 
 ### Wight
 
-{{ statblock(statblocks["wight"]) }}
+![[Wight]]
 
 ### Wight Fell Champion
 
 A **Wight Fell Champion** was once a mortal champion of great renown who fell into service to a dark power. Perhaps loyalty to their corrupted liege dragged them inexorably towards a ruinous path, or plain greed led to their downfall.
 
-{{ statblock(statblocks["wight-fell-champion"]) }}
+![[Wight Fell Champion]]
 
 ### Wight Dread Lord
 
 A **Wight Dread Lord** was once a powerful ruler, thain, or champion whose pride and fear of death drove them to foul pacts with malevolent forces. In undeath, they command armies of lesser undead who mindlessly serve their twisted commands.
 
-{{ statblock(statblocks["wight-dread-lord"]) }}
+![[Wight Dread Lord]]
 
 ## Wight Encounter Ideas
 
