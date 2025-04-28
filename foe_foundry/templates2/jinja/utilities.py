@@ -8,7 +8,7 @@ from markdown import markdown
 from markupsafe import Markup
 from PIL import Image
 
-from .monster_ref import MonsterRefResolver
+from foe_foundry.markdown import MonsterRefResolver, monster_link
 
 
 def fix_punctuation(text: Any) -> Any:
@@ -160,7 +160,7 @@ def statblock_ref(
     if ref is None:
         monster = f"<strong>{statblock}</strong>"
     else:
-        monster = str(ref)
+        monster = monster_link(ref)
 
     brand = branding(env, icon_only=True)
 

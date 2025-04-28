@@ -2,7 +2,8 @@ from functools import partial
 
 from jinja2 import Environment, PackageLoader, Template, select_autoescape
 
-from .monster_ref import TestMonsterRefResolver
+from foe_foundry.markdown import MonsterRefResolver
+
 from .utilities import (
     branding,
     columns,
@@ -13,7 +14,7 @@ from .utilities import (
     statblock_ref,
 )
 
-ref_resolver = TestMonsterRefResolver()
+ref_resolver = MonsterRefResolver()
 
 JinjaEnv = Environment(
     loader=PackageLoader("foe_foundry", package_path="templates2"),
