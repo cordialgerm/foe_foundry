@@ -1,5 +1,4 @@
 body {
-    margin: 10px;
     background: var(--muted-color);
     color: var(--fg-color);
     font-family: var(--primary-font);
@@ -30,50 +29,39 @@ hr {
 }
 
 .pamphlet-container {
-    margin-left: 20px;
     scroll-behavior: smooth;
 }
 
-.pamphlet-container .column-container {
+.pamphlet-main .column-container {
     columns: 2 var(--column-size);
 }
 
-
-.pamphlet-container .stat-block {
-    max-width: calc(var(--column-size) * 2 + var(--big-margin) * 2);
-}
-
-.pamphlet-container a {
+.pamphlet-main a {
     color: var(--fg-color);
 }
 
-.pamphlet-container ul {
+.pamphlet-main ul {
     list-style: none;
     padding-left: 1.2em;
 }
 
-.pamphlet-container ul {
-    list-style: disc;
-    padding-left: 1.5em;
-}
-
-.pamphlet-container li {
+.pamphlet-main li {
     margin-top: 12px;
 }
 
-.pamphlet-container li::marker {
+.pamphlet-main li::marker {
     content: "⟁ ";
     color: var(--tertiary-color);
     font-weight: bold;
 }
 
-.pamphlet-container h1 {
+.pamphlet-main h1 {
     color: var(--primary-color);
     font-family: var(--stylistic-font);
-    font-size: calc(1.25 * var(--stylistic-font-size));
+    font-size: calc(1.5 * var(--stylistic-font-size));
 }
 
-.pamphlet-container :not(.monster-name, .monster-header):is(h2, h3, h4, h5) {
+.pamphlet-main :not(.monster-name, .monster-header):is(h2, h3, h4, h5) {
     color: var(--primary-color);
     font-family: var(--header-font);
     font-weight: bold;
@@ -81,11 +69,7 @@ hr {
     margin-bottom: var(--big-margin);
 }
 
-.pamphlet-container .toc {
-    padding: var(--big-margin);
-}
-
-.pamphlet-container .toc a {
+.pamphlet-main .toc a {
     color: var(--muted-color);
     font-family: var(--primary-font);
     font-size: var(--primary-font-size);
@@ -97,7 +81,7 @@ hr {
     margin: 0px;
 }
 
-.pamphlet-container .headerlink {
+.pamphlet-main .headerlink {
     color: var(--fg-color);
     font-family: var(--primary-font);
     font-size: var(--primary-font-size);
@@ -105,7 +89,7 @@ hr {
     margin-left: var(--medium-margin);
 }
 
-.pamphlet-container .statblock-ref-button {
+.pamphlet-main .statblock-ref-button {
     margin-bottom: calc(3 * var(--big-margin)) !important
 }
 
@@ -143,7 +127,7 @@ hr {
     page-break-after: always;
 }
 
-.pamphlet-container hr {
+.pamphlet-main hr {
     page-break-after: always;
 }
 

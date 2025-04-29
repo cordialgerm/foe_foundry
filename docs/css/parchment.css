@@ -10,6 +10,19 @@
     margin: var(--small-margin);
 
     --tertiary-color: var(--muted-color);
+
+    color: var(--muted-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+}
+
+.burnt-parchment.y {
+    background-image: url('../img/parchment-burnt-y.png')
+}
+
+.burnt-parchment a {
+    color: var(--muted-color);
+    font-weight: bold;
 }
 
 .burnt-parchment-button {
@@ -18,13 +31,10 @@
     margin: var(--big-margin);
 }
 
-.burnt-parchment {
-    color: var(--muted-color);
-    font-family: var(--primary-font);
-    font-size: var(--primary-font-size);
+.container .burnt-parchment {
+    margin: 0px;
 }
 
-.burnt-parchment a {
-    color: var(--muted-color);
-    font-weight: bold;
+.toc.burnt-parchment {
+    background-color: none;
 }

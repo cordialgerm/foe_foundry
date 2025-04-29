@@ -1,3 +1,8 @@
+---
+title: Mage Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Find powerful mages with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+---
+
 # Mages
 
 *Master of Arcane Magicks*

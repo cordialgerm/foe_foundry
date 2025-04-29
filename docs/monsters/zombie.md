@@ -1,3 +1,8 @@
+---
+title: Zombie Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Amass shambling zombie hordes using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+---
+
 # Zombies
 
 *Shambling, Relentless Hordes*

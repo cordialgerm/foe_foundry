@@ -1,3 +1,8 @@
+---
+title: Ghoul Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Unleash ravenous ghouls with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your fantasy RPG campaigns.
+---
+
 # Ghoul
 
 *Ravenous Cannibals Possessed by Undeath*

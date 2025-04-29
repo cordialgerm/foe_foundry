@@ -1,3 +1,8 @@
+---
+title: Wight Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Entreat with powerful wights using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+---
+
 # Wights
 
 *Deathly cold malignant warriors of old*

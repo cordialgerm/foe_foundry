@@ -1,3 +1,8 @@
+---
+title: Skeleton Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Raise subservient skeletons with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+---
+
 # Skeletons
 
 *Fleshless Servants to Greater Undead*

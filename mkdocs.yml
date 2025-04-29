@@ -1,9 +1,10 @@
 site_name: Foe Foundry
 nav:
-  - About: index.md
-  - Credits: credits.md
   - Monsters: monsters/index.md
   - Topics: topics/index.md
+  - Blog: blog/index.md
+  - Credits: credits.md
+
 use_directory_urls: true
 plugins:
   - gen-files:

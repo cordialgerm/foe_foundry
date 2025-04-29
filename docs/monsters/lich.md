@@ -1,3 +1,8 @@
+---
+title: Lich Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+---
+
 # Liches
 
 *Immortal Masters of Undeath and Arcana*

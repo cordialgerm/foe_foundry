@@ -1,3 +1,8 @@
+---
+title: Undead Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
+---
+
 # Undead
 
 *Twisted Mockeries of Life*
