@@ -1,5 +1,6 @@
 ---
-title: Manticore Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Manticore Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Manticores
 description: Unleash quarrelsome manticores with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 ---
 

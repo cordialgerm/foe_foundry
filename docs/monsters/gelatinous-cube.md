@@ -1,5 +1,6 @@
 ---
-title: Gelatinous Cube Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Gelatinous Cube Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Gelatinous Cubes
 description: Encounter oozy gelatinous cubes with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks for your fantasy RPG campaigns.
 ---
 

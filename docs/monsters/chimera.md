@@ -1,5 +1,6 @@
 ---
-title: Chimera Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Chimera Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Chimeras
 description: Discover complete chimera statblocks, lore, tactics, encounters, and adventure hooks for your fantasy RPG sessions. Summon monstrous heralds of disaster with Foe Foundry.
 ---
 

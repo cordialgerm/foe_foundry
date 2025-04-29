@@ -1,5 +1,6 @@
 ---
-title: Zombie Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Zombie Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Zombies
 description: Amass shambling zombie hordes using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 ---
 
@@ -7,7 +8,7 @@ description: Amass shambling zombie hordes using Foe Foundry’s monster generat
 
 *Shambling, Relentless Hordes*
 
-**Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or [**Greater Undead**](../topics/undead.md#greater-undead) who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten [the Styx's](../topics/undead.md#the-river-styx) influence on the Mortal Realm.
+**Zombies** are lumbering, rotting corpses animated by the splintered fragments of undead souls. Common in cursed graveyards, battlefields, and the ruins of forgotten temples, these relentless horrors have escaped the pull of the Styx. Many are created by **Necromancers** or [**Greater Undead**](../families/undead.md#greater-undead) who lash subservient souls to rotting flesh with dark magic, while some Zombies rise when death and corruption heighten [the Styx's](../families/undead.md#the-river-styx) influence on the Mortal Realm.
 
 Where **Skeletons** are bare and brittle, **Zombies** lumber on with the stubborn momentum of the recently dead. Zombie flesh grants them a brutish resilience, but the soul fragment bound within is weak and broken, barely able to steer the ruin it inhabits. Slow, clumsy, and instinct-driven, zombies are little more than puppets twitching at the end of a necromancer’s thread. Given simple orders, they obey without thought or fear, lurching onward until their decaying frames collapse into ruin.
 

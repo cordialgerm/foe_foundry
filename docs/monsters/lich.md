@@ -1,5 +1,6 @@
 ---
-title: Lich Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Lich Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Liches
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 ---
 
@@ -9,7 +10,7 @@ description: Unleash powerful liches with Foe Foundry’s monster generator. Dis
 
 **Liches** are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.
 
-A lich's body is a hollow mockery of life, sustained only by necromantic power and the iron force of its own will. Its flesh rots and bones blacken while the cruel intellect and dread will of the newly formed **Lich** are honed to dreadful heights. If its body is ever destroyed, the soul of the cursed mage is cast into the [Styx](../topics/undead.md#the-river-styx), but the soul anchor prevents it from being dragged to oblivion. Using the anchor as a tether, the deathless mage pulls their way back into life.
+A lich's body is a hollow mockery of life, sustained only by necromantic power and the iron force of its own will. Its flesh rots and bones blacken while the cruel intellect and dread will of the newly formed **Lich** are honed to dreadful heights. If its body is ever destroyed, the soul of the cursed mage is cast into the [Styx](../families/undead.md#the-river-styx), but the soul anchor prevents it from being dragged to oblivion. Using the anchor as a tether, the deathless mage pulls their way back into life.
 
 This immortality comes at a steep price. The soul anchor must continually be fed fresh souls, lest the River Styx gnaw at the tether binding the lich to life. Though the undying wizard cannot be killed, the effects of the river still twist and warp the mind. Over time, even the mightiest liches lose their last traces of humanity, becoming cold engines of calculation, cruelty, and ambition.
 

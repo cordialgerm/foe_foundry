@@ -1,5 +1,6 @@
 ---
-title: Undead Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Undead Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Undead
 description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
 ---
 
@@ -71,7 +72,7 @@ $[[Skeleton]]
 
 ### Ghouls
 
-**Ghouls** are a ravenous abomination - a twisted combination of life and death. For in the heart of a Ghoul lies the twisted fragment of an Undead soul. Some **Ghouls** were once mortal humanoids who, in moments of unspeakable desperation or ritualistic depravity, consumed the flesh of their kin. In doing so, they opened themselves to the fractured currents of the [River Styx](../topics/undead.md#the-river-styx), allowing splinters of lost, tormented spirits to slip inside them. Others are the work of **Necromancers** and foul rites that forcibly bind undead souls to living bodies and birth these voracious predators.
+**Ghouls** are a ravenous abomination - a twisted combination of life and death. For in the heart of a Ghoul lies the twisted fragment of an Undead soul. Some **Ghouls** were once mortal humanoids who, in moments of unspeakable desperation or ritualistic depravity, consumed the flesh of their kin. In doing so, they opened themselves to the fractured currents of the [River Styx](../families/undead.md#the-river-styx), allowing splinters of lost, tormented spirits to slip inside them. Others are the work of **Necromancers** and foul rites that forcibly bind undead souls to living bodies and birth these voracious predators.
 
 Neither fully living nor fully dead, ghouls are undead scavengers cursed with an insatiable hunger for mortal flesh. Their minds teeter on the brink of madness, driven by both the dim instincts of the soul shard within and the fading echoes of the mortal mind they once possessed.
 

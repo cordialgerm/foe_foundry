@@ -1,5 +1,6 @@
 ---
-title: Skeleton Statblocks, Lore, and Adventures for RPGs – Summoned with Foe Foundry
+title: Skeleton Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+short_title: Skeletons
 description: Raise subservient skeletons with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 ---
 
@@ -7,7 +8,7 @@ description: Raise subservient skeletons with Foe Foundry’s monster generator.
 
 *Fleshless Servants to Greater Undead*
 
-**Skeletons** are fragments of a soul bound to bleached bones stripped of flesh, given a grim mockery of life through necromantic power. They are among the most common of the [Lesser Undead](../topics/undead.md#lesser-undead). Some **Skeletons** rise spontaneously near mass graves and blood-soaked fields. Others are deliberately summoned by mortal **Necromancers**, their battered souls shackled to ruined bodies to serve as tireless guardians, soldiers, or laborers.
+**Skeletons** are fragments of a soul bound to bleached bones stripped of flesh, given a grim mockery of life through necromantic power. They are among the most common of the [Lesser Undead](../families/undead.md#lesser-undead). Some **Skeletons** rise spontaneously near mass graves and blood-soaked fields. Others are deliberately summoned by mortal **Necromancers**, their battered souls shackled to ruined bodies to serve as tireless guardians, soldiers, or laborers.
 
 Stripped of flesh and memory alike, **Skeletons** retain no true sentience. What remains is a hollow framework of instinct: flickers of old discipline, the echo of a soldier's drill, or the reflexive steps of a long-forgotten march. Skeletons can follow orders with mechanical obedience, and within narrow limits they show a chilling mimicry of intelligence, such as choosing a bridge to cross a river, or setting a trap to defend a tomb. Left unattended, they sometimes fall into ghostly pantomimes of past lives: polishing unseen armor, sweeping abandoned halls, or guarding empty gates against enemies who never come.
 

@@ -1,5 +1,7 @@
 ---
 title: Frequently Asked Questions
+description: TODO
+short_title: FAQ
 ---
 
 # FAQ
