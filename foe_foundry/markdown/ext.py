@@ -1,3 +1,4 @@
+import os
 import re
 
 from markdown.extensions import Extension
@@ -12,11 +13,19 @@ class MonsterLinkExtension(Extension):
         self.config = {}
         self.ref_resolver = MonsterRefResolver()
         self.resolved_refences = []
+
+        base_url = kwargs.get("base_url", os.environ.get("SITE_URL"))
+        if base_url is None:
+            raise ValueError("base_url must be provided or set in the environment")
+        self.base_url = base_url
+
         super().__init__(**kwargs)
 
     def extendMarkdown(self, md):
         md.preprocessors.register(
-            MonsterLinkPreprocessor(md, self.ref_resolver, self.resolved_refences),
+            MonsterLinkPreprocessor(
+                md, self.base_url, self.ref_resolver, self.resolved_refences
+            ),
             "monster_link",
             175,
         )
@@ -27,8 +36,15 @@ class MonsterLinkPreprocessor(Preprocessor):
     MONSTER_BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
     MONSTER_STATBLOCK_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
 
-    def __init__(self, md, ref_resolver: MonsterRefResolver, resolved_refences: list):
+    def __init__(
+        self,
+        md,
+        base_url: str,
+        ref_resolver: MonsterRefResolver,
+        resolved_refences: list,
+    ):
         super().__init__(md)
+        self.base_url = base_url
         self.ref_resolver = ref_resolver
         self.resolved_references = resolved_refences
 
@@ -54,7 +70,7 @@ class MonsterLinkPreprocessor(Preprocessor):
             return f"<b>{monster_name}</b>"
 
         self.resolved_references.append(ref)
-        return str(monster_link(ref))
+        return str(monster_link(ref, self.base_url))
 
     def replace_button(self, match: re.Match):
         if match.group("name3"):
@@ -65,7 +81,7 @@ class MonsterLinkPreprocessor(Preprocessor):
         ref = self.ref_resolver.resolve_monster_ref(monster_name)
         if ref is not None:
             self.resolved_references.append(ref)
-            return str(monster_button(ref))
+            return str(monster_button(ref, self.base_url))
         else:
             return match.group(0)  # Return the original text if no match is found
 

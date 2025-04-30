@@ -9,14 +9,12 @@ from foe_foundry.jinja import render_statblock_fragment
 from .monster_ref import MonsterRef
 
 
-def monster_link(ref: MonsterRef) -> Markup | None:
+def monster_link(ref: MonsterRef, base_url: str) -> Markup | None:
     """Generates a link to the monster template or variant."""
     if ref is None:
         return None
     elif ref.suggested_cr is not None:
-        href = (
-            f"https://foefoundry.com/monsters/{ref.template.key}#{ref.suggested_cr.key}"
-        )
+        href = f"{base_url}/monsters/{ref.template.key}#{ref.suggested_cr.key}"
         return Markup(
             f"<a href='{href}' class='monster-link' data-monster-template='{ref.template.key}' data-monster='{ref.suggested_cr.key}'><strong>{ref.original_monster_name}</strong></a>"
         )
@@ -27,12 +25,12 @@ def monster_link(ref: MonsterRef) -> Markup | None:
         )
 
 
-def monster_button(ref: MonsterRef) -> Markup | None:
+def monster_button(ref: MonsterRef, base_url: str) -> Markup | None:
     """Generates a button to summon the monster template or variant."""
     if ref is None:
         return None
     else:
-        monster = monster_link(ref)
+        monster = monster_link(ref, base_url)
 
     return Markup(
         f"<div class='statblock-ref-button burnt-parchment burnt-parchment-button branding'>Summon your own {monster}</div>"
