@@ -194,7 +194,7 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 
 ## Necromancers and Once-Mortal Masters
 
-![An immortal Lich surveys its domain](../img/lich.tif){.monster-image .masked}
+![An immortal Lich surveys its domain](../img/lich.png){.monster-image .masked}
 
 Many Undead are bound in service to mortal, or once-mortal masters.
 

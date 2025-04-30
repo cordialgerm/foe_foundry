@@ -6,7 +6,6 @@ def find_image(name: str) -> list[Path]:
 
     extensions = [
         ".png",
-        ".tif",
         ".jpeg",
         ".gif",
     ]
