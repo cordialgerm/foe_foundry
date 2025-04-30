@@ -92,6 +92,6 @@ I can’t wait to see what you build with Foe Foundry — and I’d love your fe
 
 Thanks for reading, and thanks for playing.
 
-🧟 [Explore the Monster Library](./monsters/index.md)
+🧟 [Explore the Monster Library](../monsters/index.md)
 
 **– Cordialgerm**
