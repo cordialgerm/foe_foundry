@@ -33,6 +33,20 @@ Break Enchantment. As your action, you touch a creature you can reach that is ch
 Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.""",
 )
 
+PrismaticWall = Spell(
+    name="Prismatic Wall",
+    level=9,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=True,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A shimmering, multicolored plane of light springs into existence in a 30-foot radius around you and remains for the duration. The wall is 1 foot thick and lasts for the duration. It is opaque and lasts until it is dispelled.
+The wall is a barrier to all creatures and objects except those you designate. The wall blocks line of sight, and any creature or object within the wall is blinded. The wall can be dispelled by dispel magic, but only if the caster is within 30 feet of the wall.
+The wall can be destroyed by a disintegrate spell or moved by a move earth spell, but only if the caster is within 30 feet of the wall.""",
+)
+
 DispelMagic = Spell(
     name="Dispel Magic",
     level=3,
@@ -92,4 +106,56 @@ LesserRestoration = Spell(
     action_type=ActionType.Action,
     save=None,
     description="You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+)
+
+MassCureWounds: Spell = Spell(
+    name="Mass Cure Wounds",
+    level=5,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=False,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="60 feet",
+)
+
+CureWounds: Spell = Spell(
+    name="Cure Wounds",
+    level=1,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="Touch",
+)
+
+HealingWord: Spell = Spell(
+    name="Healing Word",
+    level=1,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.BonusAction,
+    save=None,
+    description="""A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.""",
+    range="60 feet",
+)
+
+Heal: Spell = Spell(
+    name="Heal",
+    level=6,
+    school="abjuration",
+    source="SRD 5.1",
+    upcast=True,
+    concentration=False,
+    action_type=ActionType.Action,
+    save=None,
+    description="""A surge of positive energy washes through a creature of your choice that you can see within range. The target regains all its hit points, and it ends all effects making it blinded or deafened. This spell also ends any effects of diseases or poisons affecting the target.""",
+    range="60 feet",
 )

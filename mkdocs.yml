@@ -1,0 +1,51 @@
+site_name: Foe Foundry
+site_description: Foe Foundry helps GMs instantly summon unforgettable monsters for 5E and other fantasy TTRPGs. Skip the statblock grind—get handcrafted powers, flavorful foes, and encounter-ready creations built by a GM, for GMs.
+
+nav:
+  - Monsters: monsters/index.md
+  - Families: families/index.md
+  - Blog: blog/index.md
+  - Topics: topics/index.md
+  - Credits: credits.md
+
+use_directory_urls: true
+
+site_url: !ENV [SITE_URL]
+
+hooks:
+  - docs_hooks/my_hooks.py
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - scripts/gen_pages.py
+  - blogging:
+      dirs:
+        - blog
+      features:
+        tags:
+          insert: bottom
+          index_page: blog/tags.md
+
+theme:
+  name: mkdocs
+  custom_dir: docs_theme/
+  analytics:
+    gtag: G-7R80G1C1K9
+
+extra_css:
+  - css/branding.css
+  - css/pamphlet.css
+  - css/parchment.css
+  - css/root.css
+  - css/statblock.css
+  - css/tooltips.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - foe_foundry.markdown

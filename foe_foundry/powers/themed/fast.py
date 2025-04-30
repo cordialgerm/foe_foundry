@@ -6,7 +6,6 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..scoring import score
 
 
 class FastPower(PowerWithStandardScoring):
@@ -28,7 +27,7 @@ class FastPower(PowerWithStandardScoring):
             score_args=dict(
                 require_stats=Stats.DEX,
                 stat_threshold=16,
-                bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+                require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
             )
             | score_args,
         )
@@ -55,11 +54,9 @@ class _Evasion(FastPower):
 
 class _NimbleReaction(FastPower):
     def __init__(self):
-        super().__init__(name="Nimble Reaction", source="Foe Foundry")
-
-    def score(self, candidate: BaseStatblock) -> float:
-        return score(
-            candidate=candidate,
+        super().__init__(
+            name="Nimble Reaction",
+            source="Foe Foundry",
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
         )
@@ -74,7 +71,7 @@ class _NimbleReaction(FastPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Acrobatics)
         stats = stats.copy(attributes=new_attrs)
         return stats

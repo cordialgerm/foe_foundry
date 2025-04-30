@@ -2,10 +2,12 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attack_template import natural, weapon
 from ...attributes import Stats
-from ...damage import AttackType
-from ...die import Die, DieFormula
+from ...damage import AttackType, Condition, DamageType
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -57,8 +59,8 @@ class RecklessPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.scale({Stats.WIS: -3})
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.scale({Stats.WIS: -1})
 
 
 class _Charger(RecklessPower):
@@ -72,12 +74,33 @@ class _Charger(RecklessPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        prone = Condition.Prone
+        dash = action_ref("Dash")
         feature = Feature(
             name="Charge",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} charges and moves up to its speed. Up to one creature that is within 5 ft of the path \
-                that the creature charges must make a DC {dc} Strength saving throw or be knocked **Prone**.",
+            description=f"{stats.selfref.capitalize()} uses {dash} and moves towards a hostile creature. Up to one creature that is within 5 ft of the path \
+                must make a DC {dc} Strength saving throw or be knocked {prone.caption}.",
+        )
+        return [feature]
+
+
+class _Overrun(RecklessPower):
+    def __init__(self):
+        super().__init__(
+            name="Overrun",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            bonus_size=Size.Large,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Overrun",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after {stats.selfref} hits an enemy with an attack, it may move up to half its movement without triggering opportunity attacks. If it ends its movement next to another creature, it may make an attack against that creature.",
         )
         return [feature]
 
@@ -161,7 +184,7 @@ class _RecklessFlurry(RecklessPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         attacks = max(3, int(ceil(1.5 * stats.multiattack)))
-        attack_name = stats.attack.name
+        attack_name = stats.attack.display_name
 
         feature = Feature(
             name="Reckless Flurry",
@@ -178,27 +201,62 @@ class _Toss(RecklessPower):
         super().__init__(name="Toss", source="Foe Foundry", bonus_size=Size.Large)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        size = stats.size.decrement()
-        dmg = stats.target_value(0.7, force_die=Die.d6)
+        if stats.size <= Size.Medium:
+            size = stats.size
+        else:
+            size = stats.size.decrement()
+
+        dmg = stats.target_value(
+            1.5 if stats.multiattack >= 2 else 0.75, force_die=Die.d6
+        )
         distance = easy_multiple_of_five(3 * stats.cr, min_val=10, max_val=30)
         dc = stats.difficulty_class
+        prone = Condition.Prone
 
         feature = Feature(
             name="Toss",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} attempts to toss a {size} or smaller creature within 5 feet. The creature must make a DC {dc} Strength saving throw. \
-                On a failure, it takes {dmg.description} bludgeoning damage and is thrown up to {distance} feet and falls **Prone**. If the thrown creature collides with another creature, then that other creature must make a DC {dc} Dexterity saving throw. \
+                On a failure, it takes {dmg.description} bludgeoning damage and is thrown up to {distance} feet and falls {prone.caption}. If the thrown creature collides with another creature, then that other creature must make a DC {dc} Dexterity saving throw. \
                 On a failure, the other creature takes half the damage.",
         )
         return [feature]
 
 
+class _Strangle(RecklessPower):
+    def __init__(self):
+        super().__init__(
+            name="Strangle",
+            source="A5E SRD - Bugbear",
+            create_date=datetime(2023, 11, 23),
+            attack_names=["-", weapon.Whip, natural.Slam, natural.Tentacle],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        return []
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        dc = stats.difficulty_class_easy
+        grappled = Condition.Grappled
+        return stats.add_attack(
+            name="Strangle",
+            scalar=0.8,
+            damage_type=DamageType.Bludgeoning,
+            replaces_multiattack=1,
+            additional_description=f"On a hit, the target is {grappled.caption} (escape DC {dc}) and is pulled 5 feet toward {stats.selfref}. \
+                Until this grapple ends, {stats.selfref} automatically hits with its Strangle attack and the target can't breathe. \
+                If the target attempts to cast a spell with a verbal component, it must succeed on a DC {dc} Constitution saving throw or the spell fails.",
+        )
+
+
 BloodiedRage: Power = _BloodiedRage()
 Charger: Power = _Charger()
+Overrun: Power = _Overrun()
 RecklessFlurry: Power = _RecklessFlurry()
 Reckless: Power = _Reckless()
 RelentlessEndurance: Power = _RelentlessEndurance()
+Strangle: Power = _Strangle()
 Toss: Power = _Toss()
 WildCleave: Power = _WildCleave()
 
@@ -206,9 +264,11 @@ WildCleave: Power = _WildCleave()
 RecklessPowers: List[Power] = [
     BloodiedRage,
     Charger,
+    Overrun,
     RecklessFlurry,
     Reckless,
     RelentlessEndurance,
+    Strangle,
     Toss,
     WildCleave,
 ]

@@ -1,0 +1,36 @@
+.branding a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.branding a::after,
+.navbar-brand::after {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url('../img/favicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand {
+    color: var(--fg-color);
+    font-family: var(--stylistic-font);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar.bg-primary {
+    color: var(--fg-color);
+    font-family: var(--header-font);
+    background-color: var(--primary-color) !important;
+    background-image: unset !important;
+}
+
+.navbar {
+
+    /* bootstrap specific overrides */
+    --bs-navbar-padding-y: 0.1rem;
+}

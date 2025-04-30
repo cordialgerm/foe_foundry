@@ -22,6 +22,18 @@ A remove curse spell ends this effect. At the DM's option, you may choose an alt
     upcast_description="""If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.""",
 )
 
+Blight: Spell = Spell(
+    name="Blight",
+    level=4,
+    school="necromancy",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    upcast=True,
+    save=Stats.CON,
+    description="""Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.""",
+    upcast_description="""When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.""",
+)
+
 
 BlindnessDeafness: Spell = Spell(
     name="Blindness/Deafness",

@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -35,10 +33,11 @@ class _ArcaneArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=False,
             quality_level=quality_level,
+            display_detail=True,
             score=ac
             + 0.7
             - (1000 if not stats.attributes.is_sapient else 0)
-            - (1000 if not stats.attack_type.is_spell() else 0),
+            - (1000 if not any(t.is_spell() for t in stats.attack_types) else 0),
         )
 
 

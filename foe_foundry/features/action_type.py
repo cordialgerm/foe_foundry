@@ -8,3 +8,4 @@ class ActionType(StrEnum):
     Action = auto()
     BonusAction = auto()
     Reaction = auto()
+    Legendary = auto()

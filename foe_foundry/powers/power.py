@@ -1,22 +1,22 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
-from typing import Any, Dict, List, Tuple
-
-import numpy as np
+from typing import Any, Dict, List
 
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..features import Feature
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
+from ..utils import name_to_key
+from .flags import theme_flag
 from .power_type import PowerType
 from .scoring import score as standard_score
 
 RIBBON_POWER = 0.25
 LOW_POWER = 0.5
 MEDIUM_POWER = 1
-HIGH_POWER = 1.5
-EXTRA_HIGH_POWER = 2
+HIGH_POWER = 1.25
+EXTRA_HIGH_POWER = 1.5
 
 
 class Power(ABC):
@@ -24,6 +24,7 @@ class Power(ABC):
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         roles: List[MonsterRole] | None = None,
@@ -32,7 +33,6 @@ class Power(ABC):
         attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
-        theme: str | None = None,
     ):
         self.name = name
         self.power_type = power_type
@@ -61,13 +61,21 @@ class Power(ABC):
 
     @property
     def key(self) -> str:
-        return Power.name_to_key(self.name)
+        return name_to_key(self.name)
+
+    @property
+    def theme_key(self) -> str | None:
+        return name_to_key(self.theme) if self.theme is not None else None
 
     @abstractmethod
-    def score(self, candidate: BaseStatblock) -> float:
+    def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
         pass
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = self.modify_stats_inner(stats)
+        return stats.with_flags(theme_flag(self.theme))
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats
 
     @abstractmethod
@@ -78,11 +86,10 @@ class Power(ABC):
         return f"{self.name} ({self.power_type})"
 
     def __hash__(self) -> int:
-        return hash(type(self))
+        return hash(self.key)
 
-    @staticmethod
-    def name_to_key(name: str) -> str:
-        return name.lower().replace(" ", "-")
+    def __eq__(self, other: Any) -> bool:
+        return isinstance(other, Power) and self.key == other.key
 
 
 class PowerWithStandardScoring(Power):
@@ -90,10 +97,10 @@ class PowerWithStandardScoring(Power):
         self,
         name: str,
         power_type: PowerType,
+        theme: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
-        theme: str | None = None,
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:
@@ -138,32 +145,7 @@ class PowerWithStandardScoring(Power):
 
         self.score_args = score_args
 
-    def score(self, candidate: BaseStatblock) -> float:
-        return standard_score(candidate=candidate, **self.score_args or {})
-
-
-class PowerBackport(Power):
-    def __init__(
-        self,
-        name: str,
-        power_type: PowerType,
-        source: str | None = None,
-        power_level: float = MEDIUM_POWER,
-    ):
-        super().__init__(
-            name=name, power_type=power_type, source=source, power_level=power_level
+    def score(self, candidate: BaseStatblock, relaxed_mode: bool = False) -> float:
+        return standard_score(
+            candidate=candidate, relaxed_mode=relaxed_mode, **self.score_args or {}
         )
-
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_stats, _ = self.apply(stats, np.random.default_rng(20210518))
-        return new_stats
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        _, features = self.apply(stats, np.random.default_rng(20210518))
-        return Feature.merge(features)
-
-    @abstractmethod
-    def apply(
-        self, stats: BaseStatblock, rng: np.random.Generator
-    ) -> Tuple[BaseStatblock, Feature | List[Feature] | None]:
-        pass

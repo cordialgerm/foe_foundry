@@ -4,7 +4,6 @@ from typing import List
 from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -22,7 +21,11 @@ class BestialPower(PowerWithStandardScoring):
         **score_args,
     ):
         standard_score_args = dict(
-            require_types=[CreatureType.Monstrosity, CreatureType.Beast, CreatureType.Dragon],
+            require_types=[
+                CreatureType.Monstrosity,
+                CreatureType.Beast,
+                CreatureType.Dragon,
+            ],
             bonus_roles=MonsterRole.Bruiser,
             bonus_size=Size.Large,
             **score_args,
@@ -49,7 +52,7 @@ class _RetributiveStrike(BestialPower):
 
         feature = Feature(
             name="Retributive Strike",
-            description=f"When a creature {stats.selfref} can see hits it with a melee weapon attack, {stats.selfref} can make an attack against its attacker. \
+            description=f"When a creature {stats.selfref} can see hits it with a melee attack, {stats.selfref} can make an attack against its attacker. \
                 If {stats.selfref} is below {hp} hp then the attack is made with advantage.",
             action=ActionType.Reaction,
         )
@@ -68,7 +71,7 @@ class _OpportuneBite(BestialPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Opportune Bite",
-            description=f"{stats.selfref} makes a Bite attack against a prone creature.",
+            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
             action=ActionType.BonusAction,
         )
         return [feature]
@@ -86,7 +89,7 @@ class _Trample(BestialPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Trample",
-            description=f"{stats.selfref} makes a Stomp attack against a prone creature.",
+            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
             action=ActionType.BonusAction,
         )
         return [feature]
@@ -105,12 +108,17 @@ class _BurrowingAmbush(BestialPower):
             require_callback=can_burrow,
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        new_speed = stats.speed.grant_burrow()
+        return stats.copy(speed=new_speed)
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Burrowing Ambush",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref} can burrow up to its burrowing speed without provoking opportunity attacks, and then resurface. \
+            description=f"{stats.selfref.capitalize()} can burrow up to its burrowing speed without provoking opportunity attacks, and then resurface. \
                 If within melee range of an enemy, it makes an attack with advantage.",
         )
         return [feature]
@@ -136,14 +144,35 @@ class _TurboTrot(BestialPower):
         return [feature]
 
 
+class _MarkTheMeal(BestialPower):
+    def __init__(self):
+        super().__init__(
+            name="Mark the Meal",
+            source="Foe Foundry",
+            create_date=datetime(2023, 11, 28),
+            attack_names=["-", natural.Bite],
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Mark the Meal",
+            action=ActionType.BonusAction,
+            uses=1,
+            description=f"Immediately after {stats.selfref} hits a creature, it marks that creature as its meal. It has advantage on attack rolls against that creature as long as that creature has lost at least one hit point.",
+        )
+        return [feature]
+
+
 BurrowingAmbush: Power = _BurrowingAmbush()
-RetributiveStrike: Power = _RetributiveStrike()
+MarkTheMeal: Power = _MarkTheMeal()
 OpportuneBite: Power = _OpportuneBite()
+RetributiveStrike: Power = _RetributiveStrike()
 Trample: Power = _Trample()
 TurboTrot: Power = _TurboTrot()
 
 BestialPowers: List[Power] = [
     BurrowingAmbush,
+    MarkTheMeal,
     RetributiveStrike,
     OpportuneBite,
     Trample,

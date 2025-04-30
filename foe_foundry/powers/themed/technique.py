@@ -1,9 +1,10 @@
 from datetime import datetime
-from typing import List
+from typing import List, cast
 
+from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
@@ -64,7 +65,7 @@ class _PoisonedAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become **Poisoned** until the end of its next turn.",
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or become {Condition.Poisoned.caption} until the end of its next turn.",
         )
         return [feature]
 
@@ -72,7 +73,11 @@ class _PoisonedAttack(Technique):
 class _BleedingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Skirmisher},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Skirmisher,
+                MonsterRole.Soldier,
+            },
             attack_names=[
                 "-",
                 natural.Claw,
@@ -92,7 +97,7 @@ class _BleedingAttack(Technique):
         damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
-            damage_type = stats.secondary_damage_type
+            damage_type = cast(DamageType, stats.secondary_damage_type)
         else:
             damage_type = DamageType.Piercing
 
@@ -105,7 +110,9 @@ class _BleedingAttack(Technique):
 
         if save_needed:
             dc = stats.difficulty_class
-            condition = f"must make a DC {dc} Constitution saving throw or gain {bleeding}"
+            condition = (
+                f"must make a DC {dc} Constitution saving throw or gain {bleeding}"
+            )
         else:
             condition = f"gains {bleeding}"
 
@@ -126,7 +133,9 @@ class _DazingAttack(Technique):
             require_roles={MonsterRole.Controller},
             attack_names=[natural.Tail, natural.Slam, weapon.Staff],
         )
-        super().__init__(name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dazed = conditions.Dazed()
@@ -144,7 +153,7 @@ class _DazingAttack(Technique):
 class _BurningAttack(Technique):
     def __init__(self):
         score_args = dict(
-            require_roles={MonsterRole.Artillery},
+            bonus_roles={MonsterRole.Artillery, MonsterRole.Support},
             require_damage={DamageType.Fire, DamageType.Radiant, DamageType.Acid},
             attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
@@ -168,7 +177,12 @@ class _BurningAttack(Technique):
 class _ProneAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Defender,
+                MonsterRole.Soldier,
+            },
             bonus_size=Size.Large,
             attack_names=[
                 "-",
@@ -188,10 +202,10 @@ class _ProneAttack(Technique):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
-            condition = "is knocked **Prone**"
+            condition = "is knocked {Condition.Prone.caption}"
         else:
             dc = stats.difficulty_class
-            condition = f"must make a DC {dc} Strength saving throw or be knocked **Prone**"
+            condition = f"must make a DC {dc} Strength saving throw or be knocked {Condition.Prone.caption}"
 
         feature = Feature(
             name="Prone Attack",
@@ -206,7 +220,12 @@ class _ProneAttack(Technique):
 class _SlowingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Artillery,
+                MonsterRole.Soldier,
+                MonsterRole.Skirmisher,
+            },
             bonus_damage=DamageType.Cold,
             attack_names=[
                 "-",
@@ -216,6 +235,7 @@ class _SlowingAttack(Technique):
                 weapon.Whip,
                 weapon.Longbow,
                 weapon.Shortbow,
+                weapon.Pistol,
             ],
         )
         super().__init__(name="Slowing Attack", score_args=score_args)
@@ -226,7 +246,7 @@ class _SlowingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target's movement speed is reduced by a cumulative 10 feet until the end of its next turn",
+            description="On a hit, the target's movement speed is reduced by a cumulative 10 feet until the end of its next turn",
         )
         return [feature]
 
@@ -234,14 +254,20 @@ class _SlowingAttack(Technique):
 class _PushingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Defender,
+            },
             bonus_size=Size.Large,
             attack_names=[
                 "-",
                 natural.Tail,
                 natural.Slam,
+                natural.Claw,
                 spell.ArcaneBurst,
-                spell.EdlritchBlast,
+                spell.EldritchBlast,
                 spell.Thundrousblast,
                 weapon.Crossbow,
                 weapon.Maul,
@@ -271,9 +297,20 @@ class _PushingAttack(Technique):
 class _GrapplingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Bruiser, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Bruiser,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Defender,
+            },
             bonus_size=Size.Large,
-            attack_names=["-", natural.Slam, natural.Tentacle, weapon.Whip],
+            attack_names=[
+                "-",
+                natural.Slam,
+                natural.Tentacle,
+                weapon.Whip,
+                natural.Claw,
+            ],
         )
 
         super().__init__(name="Grappling Attack", score_args=score_args)
@@ -282,12 +319,10 @@ class _GrapplingAttack(Technique):
         dc = stats.difficulty_class
 
         if stats.size >= Size.Huge or stats.attributes.STR >= 20:
-            condition = f"is **Grappled** (escape DC {dc})"
+            condition = f"is {Condition.Grappled.caption} (escape DC {dc})"
         else:
             dc = stats.difficulty_class
-            condition = (
-                f"must make a DC {dc} Strength saving throw or be **Grappled** (escape DC {dc})"
-            )
+            condition = f"must make a DC {dc} Strength saving throw or be {Condition.Grappled.caption} (escape DC {dc})"
 
         feature = Feature(
             name="Grappling Attack",
@@ -302,7 +337,11 @@ class _GrapplingAttack(Technique):
 class _BlindingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Leader},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Support,
+                MonsterRole.Leader,
+            },
             bonus_damage={DamageType.Radiant, DamageType.Acid},
             attack_names=[
                 "-",
@@ -321,7 +360,7 @@ class _BlindingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be **Blinded** until the end of its next turn",
+            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be {Condition.Blinded.caption} until the end of its next turn",
         )
         return [feature]
 
@@ -329,7 +368,11 @@ class _BlindingAttack(Technique):
 class _FrighteningAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Controller, MonsterRole.Leader, MonsterRole.Ambusher},
+            bonus_roles={
+                MonsterRole.Controller,
+                MonsterRole.Leader,
+                MonsterRole.Ambusher,
+            },
             bonus_damage={DamageType.Psychic, DamageType.Necrotic},
             attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
@@ -341,7 +384,27 @@ class _FrighteningAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target is **Frightened** until the end of its next turn",
+            description=f"On a hit, the target is {Condition.Frightened.caption} until the end of its next turn",
+        )
+        return [feature]
+
+
+class _NoHealingAttack(Technique):
+    def __init__(self):
+        score_args = dict(
+            bonus_roles={MonsterRole.Controller, MonsterRole.Support},
+            require_damage={DamageType.Necrotic},
+            attack_names=["-", spell.Deathbolt],
+        )
+        super().__init__(name="No Healing Attack", score_args=score_args)
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="No Healing Attack",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
+            description="On a hit, the target cannot regain hitpoints until the end of its next turn.",
         )
         return [feature]
 
@@ -362,7 +425,7 @@ class _CharmingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Wisdom save or be **Charmed** for 1 minute (save ends at end of turn or when it takes damage).",
+            description=f"On a hit, the target must make a DC {dc} Wisdom save or be {Condition.Charmed.caption} for 1 minute (save ends at end of turn or when it takes damage).",
         )
         return [feature]
 
@@ -375,7 +438,9 @@ class _FreezingAttack(Technique):
             require_damage_exact_match=True,
             attack_names=[spell.Frostbolt],
         )
-        super().__init__(name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -400,7 +465,9 @@ class _ShockingAttack(Technique):
             require_damage_exact_match=True,
             attack_names=[spell.Shock, spell.Thundrousblast],
         )
-        super().__init__(name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -418,7 +485,7 @@ class _ShockingAttack(Technique):
 class _GrazingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Skirmisher},
+            bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
             attack_names=[
                 "-",
                 weapon.Greatsword,
@@ -446,7 +513,7 @@ class _CleavingAttack(Technique):
     def __init__(self):
         score_args = dict(
             bonus_size=Size.Large,
-            bonus_roles={MonsterRole.Bruiser},
+            bonus_roles={MonsterRole.Bruiser, MonsterRole.Soldier},
             attack_names=["-", weapon.Greataxe, natural.Tail, weapon.Polearm],
         )
         super().__init__(name="Cleaving Attack", score_args=score_args)
@@ -469,7 +536,12 @@ class _CleavingAttack(Technique):
 class _SappingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Skirmisher, MonsterRole.Controller},
+            bonus_roles={
+                MonsterRole.Skirmisher,
+                MonsterRole.Controller,
+                MonsterRole.Soldier,
+                MonsterRole.Bruiser,
+            },
             attack_names=[
                 "-",
                 weapon.SpearAndShield,
@@ -486,7 +558,7 @@ class _SappingAttack(Technique):
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target has disadvantage on its next attack roll until the end of its next turn",
+            description="On a hit, the target has disadvantage on its next attack roll until the end of its next turn",
         )
         return [feature]
 
@@ -494,8 +566,19 @@ class _SappingAttack(Technique):
 class _VexingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles={MonsterRole.Ambusher, MonsterRole.Leader},
-            attack_names=["-", weapon.Shortbow, weapon.Shortswords, weapon.RapierAndShield],
+            bonus_roles={
+                MonsterRole.Ambusher,
+                MonsterRole.Leader,
+                MonsterRole.Soldier,
+                MonsterRole.Controller,
+            },
+            attack_names=[
+                "-",
+                weapon.Shortbow,
+                weapon.Shortswords,
+                weapon.RapierAndShield,
+                weapon.Pistol,
+            ],
         )
         super().__init__(name="Vexing Attack", score_args=score_args)
 
@@ -524,7 +607,9 @@ class _WeakeningAttack(Technique):
                 spell.Gaze,
             ],
         )
-        super().__init__(name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args)
+        super().__init__(
+            name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -542,7 +627,12 @@ class _WeakeningAttack(Technique):
 class _DisarmingAttack(Technique):
     def __init__(self):
         score_args = dict(
-            bonus_roles=[MonsterRole.Controller, MonsterRole.Artillery],
+            bonus_roles=[
+                MonsterRole.Controller,
+                MonsterRole.Artillery,
+                MonsterRole.Soldier,
+                MonsterRole.Bruiser,
+            ],
             attack_names=[
                 "-",
                 weapon.SwordAndShield,
@@ -579,7 +669,7 @@ class _ParryAndRiposte(Technique):
         super().__init__(
             name="Parry and Riposte",
             score_args=dict(
-                bonus_roles=MonsterRole.Defender,
+                bonus_roles=[MonsterRole.Defender, MonsterRole.Soldier],
                 attack_names=[
                     "-",
                     weapon.SwordAndShield,
@@ -608,6 +698,12 @@ class _PommelStrike(Technique):
         super().__init__(
             name="Pommel Strike",
             score_args=dict(
+                bonus_roles=[
+                    MonsterRole.Soldier,
+                    MonsterRole.Bruiser,
+                    MonsterRole.Defender,
+                    MonsterRole.Leader,
+                ],
                 attack_names=[
                     "-",
                     weapon.SwordAndShield,
@@ -616,7 +712,7 @@ class _PommelStrike(Technique):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy
 
@@ -645,7 +741,10 @@ class _Dueling(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
-                bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Soldier,
+                ],
                 attack_names=[
                     "-",
                     weapon.MaceAndShield,
@@ -675,7 +774,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Giant],
-                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Controller],
+                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
                 attack_names={"-", natural.Slam},
             ),
         )
@@ -688,13 +787,13 @@ class _ExpertBrawler(PowerWithStandardScoring):
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc})",
+            description=f"On a hit, the target is {Condition.Grappled.caption} (escape DC {dc})",
         )
 
         feature2 = Feature(
             name="Pin",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} pins a creature it is grappling. The creature is **Restrained** while grappled in this way \
+            description=f"{stats.selfref.capitalize()} pins a creature it is grappling. The creature is {Condition.Restrained.caption} while grappled in this way \
                 and suffers {dmg.description} ongoing bludgeoning damage at the end of each of its turns.",
         )
 
@@ -719,12 +818,14 @@ class _Interception(PowerWithStandardScoring):
                     weapon.RapierAndShield,
                     weapon.Shortswords,
                 },
-                require_roles=[MonsterRole.Defender, MonsterRole.Bruiser],
+                require_roles=[MonsterRole.Defender, MonsterRole.Soldier],
             ),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        distance = easy_multiple_of_five(stats.speed.fastest_speed / 2.0, min_val=5, max_val=30)
+        distance = easy_multiple_of_five(
+            stats.speed.fastest_speed / 2.0, min_val=5, max_val=30
+        )
         feature = Feature(
             name="Interception",
             action=ActionType.Reaction,
@@ -747,8 +848,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
                 require_roles=[
                     MonsterRole.Defender,
                     MonsterRole.Skirmisher,
-                    MonsterRole.Leader,
-                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
                 ],
             ),
         )
@@ -759,7 +859,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             name="Bait and Switch",
             action=ActionType.BonusAction,
             uses=1,
-            description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet. \
+            description=f"{stats.selfref.capitalize()} switches places with a friendly creature within 5 feet, without triggering attacks of Opportunity. \
                 Until the end of its next turn, the friendly creature gains a +{bonus} bonus to its AC.",
         )
         return [feature]
@@ -773,6 +873,7 @@ class _QuickToss(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
+                bonus_roles={MonsterRole.Skirmisher, MonsterRole.Soldier},
                 attack_names={
                     "-",
                     weapon.JavelinAndShield,
@@ -797,7 +898,7 @@ class _ArmorMaster(PowerWithStandardScoring):
         def is_heavily_armored(b: BaseStatblock) -> bool:
             for c in b.ac_templates:
                 if c.is_heavily_armored and c.resolve(b, uses_shield=False).score > 0:
-                    return True
+                    return PlateArmor.resolve(b, uses_shield=False).score > 0
 
             return False
 
@@ -805,7 +906,12 @@ class _ArmorMaster(PowerWithStandardScoring):
             name="Armor Master",
             source="A5E SRD Heavy Armor Expertise",
             power_type=PowerType.Theme,
-            score_args=dict(require_callback=is_heavily_armored),
+            theme="technique",
+            score_args=dict(
+                require_callback=is_heavily_armored,
+                require_cr=3,
+                require_roles={MonsterRole.Defender, MonsterRole.Soldier},
+            ),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -817,6 +923,9 @@ class _ArmorMaster(PowerWithStandardScoring):
         )
         return [feature]
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.add_ac_template(PlateArmor)
+
 
 class _ShieldMaster(PowerWithStandardScoring):
     def __init__(self):
@@ -826,7 +935,10 @@ class _ShieldMaster(PowerWithStandardScoring):
             theme="technique",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
-            score_args=dict(require_shield=True),
+            score_args=dict(
+                require_shield=True,
+                bonus_roles={MonsterRole.Defender, MonsterRole.Soldier},
+            ),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -834,7 +946,7 @@ class _ShieldMaster(PowerWithStandardScoring):
         feature = Feature(
             name="Shield Slam",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall **Prone**.",
+            description=f"{stats.selfref.capitalize()} shoves a creature within 5 feet. It must make a DC {dc} Strength save or be pushed up to 5 feet and fall {Condition.Prone.caption}.",
         )
         return [feature]
 
@@ -847,7 +959,12 @@ class _PolearmMaster(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
-                attack_names={"-", weapon.Polearm}, bonus_roles=MonsterRole.Defender
+                bonus_roles={
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Bruiser,
+                },
+                attack_names={"-", weapon.Polearm},
             ),
         )
 
@@ -855,7 +972,7 @@ class _PolearmMaster(PowerWithStandardScoring):
         feature = Feature(
             name="Polearm Master",
             action=ActionType.Reaction,
-            description=f"Whenever a hostile creature enters {stats.selfref.capitalize()}'s reach, it may make an attack of opportunity against that creature.",
+            description=f"Whenever a hostile creature enters {stats.selfref}'s reach, it may make an attack of opportunity against that creature.",
         )
         return [feature]
 
@@ -869,13 +986,14 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
+                bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
                 attack_names={
                     "-",
                     weapon.Polearm,
                     weapon.Greataxe,
                     weapon.Greatsword,
                     weapon.Maul,
-                }
+                },
             ),
         )
 
@@ -889,7 +1007,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} makes an overpowering strike against a creature within 5 feet. The target must make a DC {dc} Strength saving throw. \
-                On a failure, it takes {dmg.description} {dmg_type} damage and is knocked **Prone**. On a success, it instead takes half damage.",
+                On a failure, it takes {dmg.description} {dmg_type} damage and is knocked {Condition.Prone.caption}. On a success, it instead takes half damage.",
         )
         return [feature]
 
@@ -902,11 +1020,12 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             theme="technique",
             power_type=PowerType.Theme,
             score_args=dict(
+                bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
                 attack_names={
                     "-",
                     weapon.Daggers,
                     weapon.Shortswords,
-                }
+                },
             ),
         )
 
@@ -944,6 +1063,8 @@ class _Sharpshooter(PowerWithStandardScoring):
                     weapon.Longbow,
                     weapon.Shortbow,
                     weapon.Crossbow,
+                    weapon.HandCrossbow,
+                    weapon.Pistol,
                 },
             ),
         )
@@ -984,6 +1105,7 @@ DisarmingAttack: Power = _DisarmingAttack()
 BurningAttack: Power = _BurningAttack()
 DazingAttacks: Power = _DazingAttack()
 FrighteningAttack: Power = _FrighteningAttack()
+NoHealingAttack: Power = _NoHealingAttack()
 FreezingAttack: Power = _FreezingAttack()
 GrapplingAttack: Power = _GrapplingAttack()
 GrazingAttack: Power = _GrazingAttack()
@@ -1013,6 +1135,7 @@ TechniquePowers: List[Power] = [
     ExpertBrawler,
     FreezingAttack,
     FrighteningAttack,
+    NoHealingAttack,
     GrapplingAttack,
     GrazingAttack,
     Interception,

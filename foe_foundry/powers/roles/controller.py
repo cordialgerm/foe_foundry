@@ -3,11 +3,19 @@ from typing import List
 
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
-from ...damage import AttackType, DamageType, conditions
+from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import conjuration, enchantment, evocation, illusion, necromancy, transmutation
+from ...spells import (
+    CasterType,
+    conjuration,
+    enchantment,
+    evocation,
+    illusion,
+    necromancy,
+    transmutation,
+)
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -24,7 +32,10 @@ class _PacifyingTouch(PowerWithStandardScoring):
     def __init__(self):
         def humanoid_is_divine(c: BaseStatblock):
             if c.creature_type == CreatureType.Humanoid:
-                return c.secondary_damage_type == DamageType.Radiant
+                return (
+                    c.secondary_damage_type == DamageType.Radiant
+                    or c.caster_type == CasterType.Divine
+                )
             else:
                 return True
 
@@ -33,10 +44,14 @@ class _PacifyingTouch(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 19),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
-                require_types=[CreatureType.Celestial, CreatureType.Fey, CreatureType.Humanoid],
+                require_types=[
+                    CreatureType.Celestial,
+                    CreatureType.Fey,
+                    CreatureType.Humanoid,
+                ],
                 require_callback=humanoid_is_divine,
                 bonus_damage=DamageType.Radiant,
                 require_attack_types=AttackType.AllSpell(),
@@ -46,16 +61,19 @@ class _PacifyingTouch(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        incapacitated = Condition.Incapacitated
+        dc = stats.difficulty_class_easy
         stats = stats.add_attack(
             name="Pacifying Touch",
             scalar=0.25,
             attack_type=AttackType.MeleeWeapon,
             damage_type=DamageType.Psychic,
             replaces_multiattack=1,
-            additional_description="On a hit, the target must make a DC {dc} Wisdom saving throw. \
-                On a failed save, the target is **Incapacitated** for 1 minute (save ends at end of turn).",
+            additional_description=f"On a hit, the target must make a DC {dc} Wisdom saving throw. \
+                On a failed save, the target is {incapacitated.caption} for 1 minute (save ends at end of turn).",
         )
+        stats = stats.grant_spellcasting(CasterType.Divine)
         return stats
 
 
@@ -66,7 +84,7 @@ class _TongueTwister(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=CreatureType.Fey,
@@ -75,13 +93,14 @@ class _TongueTwister(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        cursed = conditions.Cursed().caption
         feature = Feature(
             name="Tongue-Twister",
             action=ActionType.Action,
             recharge=5,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} chooses a creature that can see and hear it within 60 feet. \
-                The target must make a DC {dc} Charisma saving throw. On a failure, it is magically cursed. While cursed, \
+                The target must make a DC {dc} Charisma saving throw. On a failure, it is magically {cursed}. While cursed, \
                 the target can only speak in Sylvan (but does not necessarily understand Sylvan). Whenever the target tries to cast a spell \
                 with a verbal component, the target must make a DC {dc} Performance check. On a failure, the spell fails.",
         )
@@ -93,8 +112,8 @@ class _Eyebite(SpellPower):
         super().__init__(
             name="Eyebite",
             spell=necromancy.Eyebite.for_statblock(uses=1),
-            power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
+            caster_type=CasterType.Innate,
             theme="controller",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -110,7 +129,7 @@ class _HeartTremors(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 attack_names=["-", weapon.Staff, natural.Slam, spell.Shock],
@@ -138,7 +157,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Psychic,
@@ -168,7 +187,7 @@ class _Nervefire(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Poison,
@@ -178,13 +197,14 @@ class _Nervefire(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+        poisoned = Condition.Poisoned
         dmg = stats.target_value(0.75, force_die=Die.d6)
         feature = Feature(
             name="Nervefire",
             action=ActionType.BonusAction,
             recharge=5,
             description=f"Immediately after hitting a creature with an attack, {stats.selfref} can force the target to make a DC {dc} Constitution saving throw. \
-                On a failure, the target is **Poisoned** (save ends at end of turn). While poisoned in this way, the target takes {dmg.description} psychic damage \
+                On a failure, the target is {poisoned.caption} (save ends at end of turn). While poisoned in this way, the target takes {dmg.description} psychic damage \
                 whenever it takes an action other than the Dodge action.",
         )
         return [feature]
@@ -197,7 +217,7 @@ class _TiringAttack(PowerWithStandardScoring):
             power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
-            source="FoeFoundry",
+            source="Foe Foundry",
             power_level=HIGH_POWER,
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -208,13 +228,13 @@ class _TiringAttack(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        fatigue = conditions.Fatigue()
+        exhaustion = Condition.Exhaustion
         feature = Feature(
             name="Tiring Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             description=f"On a hit, the target must make a DC {dc} Constitution saving throw. \
-                On a failure, the target's bones begin to turn to dust and it gains a level of {fatigue.caption}. {fatigue.description_3rd}",
+                On a failure, the target's bones begin to turn to dust and it gains a level of {exhaustion.caption}.",
         )
         return [feature]
 
@@ -222,15 +242,17 @@ class _TiringAttack(PowerWithStandardScoring):
 class _ControllingSpellPower(SpellPower):
     def __init__(self, spell: StatblockSpell, **kwargs):
         # all spells in this class are controller spells
-        score_args = dict(require_roles=MonsterRole.Controller) | kwargs.get("score_args", {})
+        score_args = dict(require_roles=MonsterRole.Controller) | kwargs.get(
+            "score_args", {}
+        )
         args = kwargs.copy()
         args.pop("score_args", None)
 
         super().__init__(
             spell=spell,
-            power_type=PowerType.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
+            caster_type=CasterType.Innate,
             score_args=score_args,
             **args,
         )
@@ -258,7 +280,11 @@ def _ControllingSpells() -> List[Power]:
         _ControllingSpellPower(
             spell=conjuration.Entangle.for_statblock(),
             score_args=dict(
-                require_types=[CreatureType.Plant, CreatureType.Fey, CreatureType.Humanoid]
+                require_types=[
+                    CreatureType.Plant,
+                    CreatureType.Fey,
+                    CreatureType.Humanoid,
+                ]
             ),
         ),
         _ControllingSpellPower(
@@ -282,9 +308,11 @@ def _ControllingSpells() -> List[Power]:
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
-            spell=transmutation.Levitate.for_statblock(),
+            spell=transmutation.Levitate.for_statblock(concentration=False),
             power_level=LOW_POWER,
-            score_args=dict(require_types=[CreatureType.Elemental, CreatureType.Humanoid]),
+            score_args=dict(
+                require_types=[CreatureType.Elemental, CreatureType.Humanoid]
+            ),
         ),
         _ControllingSpellPower(
             spell=conjuration.SleetStorm.for_statblock(),
@@ -303,12 +331,16 @@ def _ControllingSpells() -> List[Power]:
         _ControllingSpellPower(
             spell=conjuration.Web.for_statblock(),
             power_level=MEDIUM_POWER,
-            score_args=dict(require_types=[CreatureType.Monstrosity, CreatureType.Humanoid]),
+            score_args=dict(
+                require_types=[CreatureType.Monstrosity, CreatureType.Humanoid]
+            ),
         ),
         _ControllingSpellPower(
             spell=transmutation.Slow.for_statblock(),
             power_level=MEDIUM_POWER,
-            score_args=dict(require_types=[CreatureType.Humanoid, CreatureType.Construct]),
+            score_args=dict(
+                require_types=[CreatureType.Humanoid, CreatureType.Construct]
+            ),
         ),
         _ControllingSpellPower(
             spell=conjuration.FogCloud.for_statblock(),

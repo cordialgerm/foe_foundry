@@ -1,8 +1,15 @@
-## Credits
+---
+title: Credits
+description: Foe Foundry is built on a foundation of incredible RPG creators, artists, and open-source tools. Explore our full list of sources, licenses, and acknowledgments.
+image: img/favicon.png
+---
 
-Foe Foundry is inspired by a variety of sources, including:
+# Credits
 
-- 5E SRD 5.1
+## Acknowledgments
+
+<span class="branding">[Foe Foundry](https://foefoundry.com)</span> is inspired by a variety of sources:
+
 - [Forge of Foes](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea
 - [Level Up Advanced 5th Edition](https://www.levelup5e.com/)
 - [The Lazy GM's Resource Document](https://slyflourish.com/lazy_gm_resource_document.html)
@@ -11,26 +18,20 @@ Foe Foundry is inspired by a variety of sources, including:
 - [A reddit post to r/onednd about creative anti-magic monster design](https://www.reddit.com/r/onednd/comments/17gw8he/monster_design_a_way_to_balance_castersmartials/) by **u/Juls7243**
 - [Disease powers from CrunchyDM](https://www.patreon.com/crunchydm/posts)
 
-### Forge of Foes
+---
 
-[Forge of Foes](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) by Teos Abadia, Scott Fitzgerald Gray, and Michael Shea is a wonderful book to help GMs create quick and easy monsters and run challenging and fun encounters. It serves as inspiration for many of the powers and ideas in **Foe Foundry**. I highly encourage you to check it out!
-
-### A5E
-
-[Level Up Advanced 5th Edition](https://www.levelup5e.com/) has a wonderful **Monstrous Menagerie** that re-imagines many of the monsters in the 5E SRD. Foe Foundry takes inspiration from many of the monster designs.
-
-### DungeonDudes - Homebrewing New Conditions for D&D 5E
-
-Foe Foundry also utilizes some new conditions, including **Dazed**, **Burning**, **Shocked**, **Frozen**, and **Fatigued**. Inspiration for these conditions comes from this video - [**Dungeon Dudes: Homebrewing New Conditions for D&D 5e**](https://youtu.be/Bq2Dz-EETJs?si=x94Allggu79ECGy3)
-
-### Disease Powers from CrunchyDM
-
-Several of the disease powers are inspired by very vicious disease-laden spiders that [CrunchyDM](https://www.patreon.com/crunchydm/posts) threw against me and my fellow PCs in one of our games. They put the fear of Nurgle in our hearts and I thought other players would enjoy that experience as well.
+## Legal Notices
 
 ### SRD 5.1 Notice
 
 <blockquote>
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+</blockquote>
+
+### SRD 5.2 Notice
+
+<blockquote>
+This work includes material taken from the System Reference Document 5.2 (“SRD 5.2”) by Wizards of the Coast LLC and available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 </blockquote>
 
 ### A5ESRD Notice
@@ -46,3 +47,46 @@ This work includes material taken from the A5E System Reference Document (A5ESRD
 ### Lazy GM's Resource Document Notice
 
 <blockquote>This work includes material taken from the <a href="https://slyflourish.com/lazy_gm_resource_document.html">Lazy GM's Resource Document</a> by Michael E. Shea of <a href="https://slyflourish.com">SlyFlourish.com</a>, available under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</blockquote>
+
+---
+
+## Art Credits
+
+All art is licensed and used with permission.  
+
+This work features art by:  
+
+- **Icons from Game-Icons.net**
+- **[Watercolor Monster Pack](https://metalsnail.itch.io/watercolour-monster-pack)** by metalsnail
+- **[Chromatic Dragon Hatchlings Stock Art](https://ymia.itch.io/chromatic-dragon-hatchlings-stock-art)** by Ymia
+- **[Fantasy Creatures V1](https://erkmenartworks.itch.io/fantasy-creatures-v1)** by ErkmenArtworks
+- **[Dragons Stock Art Pack](https://felipemuky.itch.io/dragon-stock-art-pack)** by Felipe da Silva Faria. *Some artwork copyright Felipe da Silva Faria, used with permission*
+- **[Publisher's Choice Stock Art](http://fatgoblingames.com)** by Rick Hershey
+- **[Daniel Comerci](http://www.danielcomerci.com)** – used with permission
+- **[Diane Ramic](https://dramic.wixsite.com/home)** – used with permission
+- **[Hounworks](http://www.hounworks.it)** – used with permission
+- **Brett Neufeld** – used with permission
+- **Matt Morrow** – used with permission
+- **Adrian Arduini** – used with permission
+- **[Rob Necronomicon](https://www.instagram.com/robnecronomicon/?hl=en)** – used with permission
+- **[Bradley McKevit](http://www.bradleykmcdevitt.net/)** – used with permission
+- **Jeff Preston** – used under multiple Creative Commons licenses. CC BY 3.0 / CC BY 4.0 / CC0 / CC SA 3.0. See [Creative Commons Licenses](https://creativecommons.org/)
+- **William McAusland** – used with permission
+- **John Latta** – © 2025, used with permission
+- **Jacob E. Blackmon** – used with permission
+- **Marcum Curlee** – licensed with permission
+- **[Tara Quinn](https://www.drivethrurpg.com/en/product/494686/science-fiction-stock-art-illustrations-by-tara-quinn)**  Licensed under CC BY 4.0
+- **[Critical Hit](https://www.critical-hit.biz)** – used with permission
+- **Yuri Perkowski Domingos** – used with permission
+- **Dren Productions** – used with permission
+- **Dean Spencer** – used with permission
+- **Bartek Blaszczec** – used with permission
+- **Jeshields** – used with permission
+
+Monsters by GalefireRPG:  
+
+- [Fantasy Beasts](https://galefirerpg.itch.io/fantasy-beasts-monster-pack)
+- [Metal Monsters](https://galefirerpg.itch.io/metal-monsters-monster-pack)
+- [Cursed Kingdoms 2](https://galefirerpg.itch.io/cursed-kingdoms-monster-pack2)
+- [Cursed Kingdoms Boss Pack](https://galefirerpg.itch.io/cursed-kingdoms-boss-pack)
+- [Blood Suckers](https://galefirerpg.itch.io/blood-suckers-monster-pack)

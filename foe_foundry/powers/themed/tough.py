@@ -7,7 +7,6 @@ from num2words import num2words
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -33,7 +32,11 @@ class PhysicallyTough(PowerWithStandardScoring):
     ):
         def humanoid_is_fighter(c: BaseStatblock) -> bool:
             if c.creature_type in {CreatureType.Humanoid, CreatureType.Fey}:
-                return c.role in {MonsterRole.Bruiser, MonsterRole.Defender}
+                return c.role in {
+                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
+                    MonsterRole.Defender,
+                }
             else:
                 return True
 
@@ -54,7 +57,11 @@ class PhysicallyTough(PowerWithStandardScoring):
                     CreatureType.Giant,
                     CreatureType.Fey,
                 ],
-                bonus_roles=[MonsterRole.Bruiser, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Bruiser,
+                    MonsterRole.Soldier,
+                    MonsterRole.Defender,
+                ],
                 require_stats=Stats.STR,
                 bonus_size=Size.Large,
                 bonus_skills=Skills.Athletics,
@@ -87,7 +94,11 @@ class MagicallyTough(PowerWithStandardScoring):
                     CreatureType.Celestial,
                     CreatureType.Construct,
                 ],
-                bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Leader,
+                ],
                 require_cr=5,
             )
             | score_args,
@@ -100,7 +111,9 @@ class _JustAScratch(PhysicallyTough):
     They can then take their turn normally."""
 
     def __init__(self):
-        super().__init__(name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(0.5 * stats.hp.average)
@@ -134,41 +147,20 @@ class _MagicResistance(MagicallyTough):
 class _LimitedMagicImmunity(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Limited Magic Immunity", source="SRD5.1 Rakshasa", power_level=HIGH_POWER
+            name="Limited Magic Immunity",
+            source="SRD5.1 Rakshasa",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        level = (
-            f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
-        )
+        level = f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
 
         feature = Feature(
             name="Limited Magic Immunity",
             action=ActionType.Reaction,
-            description=f"When {stats.selfref} is attacked by a spell, targeted by spell, or forced to make a saving throw by a {level} then {stats.selfref} can force the spell attack to miss or can choose to succeed on the saving throw.",
+            description=f"When {stats.selfref} is attacked by a spell, targeted by a spell, or forced to make a saving throw by a {level} then {stats.selfref} can force the spell attack to miss or can choose to succeed on the saving throw.",
         )
 
-        return [feature]
-
-
-class _EliteRecovery(PowerWithStandardScoring):
-    def __init__(self):
-        super().__init__(
-            name="Elite Recovery",
-            power_type=PowerType.Theme,
-            source="A5E SRD",
-            theme="tough",
-            power_level=LOW_POWER,
-            score_args=dict(require_cr=7),
-        )
-
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature = Feature(
-            name="Elite Recovery",
-            description=f"At the start of {stats.selfref}'s turn, they can attempt a saving throw \
-                         against any effect on them that can be ended by a successful saving throw",
-            action=ActionType.Feature,
-        )
         return [feature]
 
 
@@ -205,7 +197,7 @@ class _Regeneration(PhysicallyTough):
         return [feature]
 
 
-class _Stoneskin(PhysicallyTough):
+class _Stoneskin(MagicallyTough):
     def __init__(self):
         super().__init__(name="Stoneskin", source="SRD5.1 Stoneskin")
 
@@ -220,7 +212,6 @@ class _Stoneskin(PhysicallyTough):
         return [feature]
 
 
-EliteRecovery: Power = _EliteRecovery()
 JustAScratch: Power = _JustAScratch()
 LimitedMagicImmunity: Power = _LimitedMagicImmunity()
 MagicResistance: Power = _MagicResistance()
@@ -228,7 +219,6 @@ Regeneration: Power = _Regeneration()
 Stoneskin: Power = _Stoneskin()
 
 ToughPowers: List[Power] = [
-    EliteRecovery,
     JustAScratch,
     LimitedMagicImmunity,
     MagicResistance,
