@@ -150,6 +150,26 @@ hr {
     text-decoration-line: none;
 }
 
+
+.modal-content {
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border-color: var(--fg-color);
+}
+
+.modal-content h3 a {
+    color: var(--primary-color);
+    font-family: var(--header-font);
+}
+
+.pamphlet-main .table td,
+.pamphlet-main .table th {
+    color: inherit;
+    border: none;
+    background: inherit;
+}
+
+
 footer,
 footer a {
     margin-top: calc(2*var(--big-margin));

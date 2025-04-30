@@ -157,6 +157,17 @@
     font-size: var(--stats-font-size);
 }
 
+.stat-block .stats table {
+    max-width: 300px;
+}
+
+.stat-block .table td,
+.stat-block .table th {
+    color: inherit;
+    border: none;
+    background: inherit;
+}
+
 .stat-block .stats table.abilities-saves tbody {
     border: none
 }
