@@ -9,6 +9,8 @@ nav:
 
 use_directory_urls: true
 
+site_url: https://foefoundry.com
+
 hooks:
   - docs_hooks/my_hooks.py
 
@@ -16,6 +18,13 @@ plugins:
   - gen-files:
       scripts:
         - scripts/gen_pages.py
+  - blogging:
+      dirs:
+        - blog
+      features:
+        tags:
+          insert: bottom
+          index_page: blog/tags.md
 
 theme:
   name: mkdocs

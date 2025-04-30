@@ -23,7 +23,15 @@ def generate_families_index():
     monster_list.sort()
 
     # Create the index content
-    lines = ["# All Monster Families\n", "Browse all monster families below:\n"]
+    lines = [
+        "---",
+        "title: Monster Families",
+        "hide:",
+        "   - toc",
+        "---",
+        "# All Monster Families\n",
+        "Browse all monster families below:\n",
+    ]
 
     for title, slug in monster_list:
         lines.append(f"- [{title}]({slug}/)")

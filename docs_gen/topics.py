@@ -22,7 +22,15 @@ def generate_topics_index():
     topics_list.sort()
 
     # Create the index content
-    lines = ["# All Topics\n", "Browse all topics below:\n"]
+    lines = [
+        "---",
+        "title: Topics",
+        "hide:",
+        "   - toc",
+        "---",
+        "# All Topics\n",
+        "Browse all topics below:\n",
+    ]
 
     for title, slug in topics_list:
         lines.append(f"- [{title}]({slug}/)")
