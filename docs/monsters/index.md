@@ -18,19 +18,19 @@ Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](
 - [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
 - [Liches](lich.md) - immortal masters of undeath and arcana
 
-![A skeleton warband advances menacingly](../img/skeleton_warband.png)
+![A skeleton warband advances menacingly](../img/skeleton_warband.png){.monster-image}
 
 ## Monstrosities
 
 Monstrosities defy nature. These aren’t animals gone wrong. They’re ancient experiments, magical amalgams, and living symbols of disaster.
 
-- [Mimics](mimic.md) - paranoia-jnducing shapeshifting ambusher
+- [Mimics](mimic.md) - paranoia-inducing shapeshifting ambusher
 - [Manticores](manticore.md) - flying hunters with spiked tails and sharper tongues
 - [Owlbears](owlbear.md) - unnaturally territorial predators
 - [Chimeras](chimera.md) - monstrous messenger of imminent disaster
 
 
-![A cantankerous Manticore prepares to strike](../img/manticore.png){.masked white-background}
+![A cantankerous Manticore prepares to strike](../img/manticore.png){.monster-image .masked .white-background}
 
 ## Humanoids
 
@@ -38,10 +38,10 @@ Not all threats crawl from crypts. Some wear robes and carry grimoires. These mo
 
 - [Mages](mage.md) - master of arcane magicks
 
-![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.masked white-background}
+![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
 
 ## Oozes
 
 Slimes, jellies, and cubes. Oozes are silent, shapeless, and strangely efficient.
 
-- [Gelatinous Cubes](gelatinous-cube.md) - acidic, bigh-invisible dungeon cleaner
+- [Gelatinous Cubes](gelatinous-cube.md) - acidic, nigh-invisible dungeon cleaner
