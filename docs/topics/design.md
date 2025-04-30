@@ -29,7 +29,7 @@ Foe Foundry also defines some new conditions, including **Dazed**, **Burning**, 
 
 ## Inspiration
 
-**Foe Foundry** is inspired by a variety of excellent monster design sources, including [**_Forge of Foes_**](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) and [Level Up Advanced 5th Edition](https://www.levelup5e.com/). See [Credits](credits.md) for more information.
+**Foe Foundry** is inspired by a variety of excellent monster design sources, including [**_Forge of Foes_**](https://slyflourish.com/build_a_quick_monster_with_forge_of_foes.html) and [Level Up Advanced 5th Edition](https://www.levelup5e.com/). See [Credits](../credits.md) for more information.
 
 ## Summary Paragraph
 
