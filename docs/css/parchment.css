@@ -1,0 +1,40 @@
+.burnt-parchment {
+    background-image: url('../img/parchment-burnt.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+
+    border: none;
+    padding: var(--large-margin);
+    margin: var(--small-margin);
+
+    --tertiary-color: var(--muted-color);
+
+    color: var(--muted-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+}
+
+.burnt-parchment.y {
+    background-image: url('../img/parchment-burnt-y.png')
+}
+
+.burnt-parchment a {
+    color: var(--muted-color);
+    font-weight: bold;
+}
+
+.burnt-parchment-button {
+    display: inline;
+    padding: var(--big-margin);
+    margin: var(--big-margin);
+}
+
+.container .burnt-parchment {
+    margin: 0px;
+}
+
+.toc.burnt-parchment {
+    background-color: none;
+}
