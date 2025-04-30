@@ -2,26 +2,42 @@
 <html lang="{{ config.theme.locale|default('en') }}" data-bs-theme="{{ config.theme.color_mode }}">
 
 <head>
-    {%- block site_meta %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page and page.is_homepage %}
-    <meta name="description" content="{{ config.site_description }}">{% endif %}
-    {% if config.site_author %}
-    <meta name="author" content="{{ config.site_author }}">{% endif %}
+
+
     {% if page and page.canonical_url %}
-    <link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+    <meta property="og:url" content="{{ page.canonical_url }}" />
+    {% endif %}
+
     {% if config.site_favicon %}
     <link rel="shortcut icon" href="{{ config.site_favicon|url }}">
     {% else %}
     <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">{% endif %}
-    {%- endblock %}
 
-    {%- block htmltitle %}
-    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}
-    </title>
-    {%- endblock %}
+    {% if page and page.title and not page.is_homepage %}
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}" />
+    {% else %}
+    <title>{{ config.site_name }}</title>
+    <meta property="og:title" content="{{ page.site_name }}" />
+    {% endif %}
+
+    {% if page and page.is_homepage %}
+    <meta name="description" content="{{ config.site_description }}">
+    <meta property="og:description" content="{{ config.site_description }}" />
+    {% elif page and page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}" />
+    {% endif %}
+
+    <meta property="og:type" content="website" />
+
+    {% if page and page.meta.image %}
+    <meta property="og:image" content="{{ config.site_url + page.meta.image | url }}" />
+    {% endif %}
 
     {%- block styles %}
     <link href="{{ 'css/bootstrap.min.css'|url }}" rel="stylesheet">
