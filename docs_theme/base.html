@@ -242,10 +242,14 @@
     {%- endif %}
 
     <div class="container pamphlet-container">
-        <div class="row">
+        <div class="row justify-content-center">
             {%- block content %}
+            {% if "toc" not in page.meta.hide %}
             <div class="col-lg-3">{% include "toc.html" %}</div>
             <div class="col-lg-9 pamphlet-main" role="main">{% include "content.html" %}</div>
+            {% else %}
+            <div class="col-lg-9 pamphlet-main" role="main">{% include "content.html" %}</div>
+            {% endif %}
             {%- endblock %}
         </div>
     </div>
