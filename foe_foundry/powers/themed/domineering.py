@@ -6,9 +6,10 @@ from num2words import num2words
 
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -36,7 +37,10 @@ class DomineeringPower(PowerWithStandardScoring):
                 return True
 
             # psychic humanoids
-            if c.attack_type.is_spell() and c.secondary_damage_type == DamageType.Psychic:
+            if (
+                any(t.is_spell() for t in c.attack_types)
+                and c.secondary_damage_type == DamageType.Psychic
+            ):
                 return True
 
             return False
@@ -58,11 +62,12 @@ class DomineeringPower(PowerWithStandardScoring):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attributes = stats.attributes.boost(Stats.CHA, 4).grant_proficiency_or_expertise(
-            Skills.Persuasion
-        )
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        new_attributes = stats.attributes.boost(
+            Stats.CHA, 4
+        ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
+        stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
 
@@ -94,17 +99,18 @@ class _Dominate(DomineeringPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
+        charmed = Condition.Charmed
 
         feature = Feature(
             name="Dominate",
             action=ActionType.Action,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} targets one humanoid it can see within 30 feet of it. If the target can see {stats.selfref} \
-                then it must succeed on a DC {dc} Wisdom save against this magic or be **Charmed** by {stats.selfref}. \
+                then it must succeed on a DC {dc} Wisdom save against this magic or be {charmed.caption} by {stats.selfref}. \
                 While charmed in this way, the target treats {stats.selfref} as a trusted friend to be heeded and protected. \
                 It takes {stats.selfref}'s requests or actions in the most favorable way it can.  \
                 Each time the target takes damage, it may repeat the save to end the condition. \
-                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existance. \
+                Otherwise, the effect lasts for 24 hours or until {stats.selfref} dies or is on anther plane of existence. \
                 A creature that saves is immune to this effect for 24 hours.",
         )
         return [feature]

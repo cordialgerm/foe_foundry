@@ -9,7 +9,7 @@ from ..features import ActionType
 from ..skills import Stats
 
 
-@dataclass(eq=True, frozen=True)
+@dataclass(frozen=True)
 class Spell:
     name: str
     level: int
@@ -23,11 +23,24 @@ class Spell:
     upcast_description: str | None = None
     range: str | None = None
     concentration_spell_level: int | None = None
+    concentration_overridden: bool = False
 
     def copy(self, **kwargs) -> Spell:
+        if "concentration" in kwargs:
+            kwargs.update(concentration_overridden=True)
+
         args = asdict(self)
         args.update(kwargs)
         return Spell(**args)
+
+    def __hash__(self) -> int:
+        return hash(self.name)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Spell):
+            return False
+        else:
+            return self.name == other.name
 
     def for_statblock(
         self,
@@ -39,25 +52,34 @@ class Spell:
         if concentration is None:
             concentration = self.concentration
 
+        concentration_overriden = (
+            self.concentration_overridden or concentration != self.concentration
+        )
+
         # some spells can be upcast to a higher level and remove their concentraiton requirement
-        # for example Bestow Curse loses concentratino at fifth level
+        # for example Bestow Curse loses concentration at fifth level
         if self.concentration_spell_level is None and concentration:
             concentration_spell_level = 10
         else:
             concentration_spell_level = self.concentration_spell_level
 
-        return StatblockSpell(
-            name=self.name,
-            level=self.level,
-            upcastable=self.upcast,
-            uses=uses,
-            notes=notes,
-            concentration_spell_level=concentration_spell_level,
-            **kwargs,
+        args: dict = (
+            dict(
+                name=self.name,
+                level=self.level,
+                upcastable=self.upcast,
+                uses=uses,
+                notes=notes,
+                concentration_spell_level=concentration_spell_level,
+                concentration_overriden=concentration_overriden,
+            )
+            | kwargs
         )
 
+        return StatblockSpell(**args)
 
-@dataclass(eq=True, frozen=True)
+
+@dataclass(frozen=True)
 class StatblockSpell:
     name: str
     level: int
@@ -67,6 +89,20 @@ class StatblockSpell:
     notes: str | None = None
     symbols: str | None = None
     concentration_spell_level: int | None = None
+    concentration_overriden: bool = False
+
+    def __hash__(self) -> int:
+        return hash(self.name)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, StatblockSpell):
+            return False
+        else:
+            return self.name == other.name
+
+    @property
+    def level_resolved(self) -> int:
+        return self.upcast_level or self.level
 
     @property
     def recommended_min_cr(self) -> float:
@@ -96,7 +132,9 @@ class StatblockSpell:
             upcast_level = self.upcast_level
         elif self.upcastable:
             proposed_upcast_level = min(5, math.ceil(cr / 2.5))
-            upcast_level = proposed_upcast_level if proposed_upcast_level > self.level else None
+            upcast_level = (
+                proposed_upcast_level if proposed_upcast_level > self.level else None
+            )
         else:
             upcast_level = None
 
@@ -117,6 +155,13 @@ class StatblockSpell:
 
         symbols = self.symbols if self.symbols is not None else ""
 
-        concentration = "<sup>c</sup>" if self.concentration else ""
+        if self.concentration_overriden and self.concentration:
+            concentration = "<sup><b>c</b></sup>"  # bolded C
+        elif self.concentration_overriden and not self.concentration:
+            concentration = "<sup>\u023b</sup>"  # crossed out C
+        elif self.concentration:
+            concentration = "<sup>c</sup>"  # regular C
+        else:
+            concentration = ""
 
         return f'<span class="spell"><i>{self.name}{concentration}{symbols}</i></span>{asides}'

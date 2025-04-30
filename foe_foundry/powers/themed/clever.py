@@ -7,9 +7,8 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
-from ...spells import evocation
+from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -44,7 +43,9 @@ class CleverPower(PowerWithStandardScoring):
 
 class _IdentifyWeakness(CleverPower):
     def __init__(self):
-        super().__init__(name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -55,7 +56,9 @@ class _IdentifyWeakness(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
         new_attrs = (
             stats.attributes.boost(Stats.CHA, 2)
             .boost(Stats.INT, 2)
@@ -87,7 +90,9 @@ class _ArcaneMark(CleverPower):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.grant_spellcasting(CasterType.Arcane)
         return stats.add_spell(evocation.FaerieFire.for_statblock())
 
 

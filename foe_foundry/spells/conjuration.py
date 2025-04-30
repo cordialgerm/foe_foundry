@@ -20,6 +20,18 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
     upcast_description="""When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.""",
 )
 
+Wish: Spell = Spell(
+    name="Wish",
+    level=9,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="You can duplicate any spell of 8th level or lower that you know or have prepared. You don't need to meet any requirements in that spell, including costly components. The spell simply takes effect as if you had cast the spell.",
+)
+
 
 Entangle: Spell = Spell(
     name="Entangle",
@@ -72,6 +84,18 @@ Grease: Spell = Spell(
     description="Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration. When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.",
     range="60 feet",
 )
+Teleport: Spell = Spell(
+    name="Teleport",
+    level=7,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.",
+    range="10 feet",
+)
 
 Maze: Spell = Spell(
     name="Maze",
@@ -108,4 +132,18 @@ Web: Spell = Spell(
     concentration=True,
     description="You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.",
     range="60 feet",
+)
+
+CallLightning: Spell = Spell(
+    name="Call Lightning",
+    level=3,
+    school="conjuration",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.DEX,
+    upcast=True,
+    concentration=True,
+    description="A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).",
+    range="120 feet",
+    upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
 )

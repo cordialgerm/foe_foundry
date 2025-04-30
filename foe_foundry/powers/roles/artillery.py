@@ -3,10 +3,9 @@ from math import ceil
 from typing import List
 
 from ...attributes import Skills, Stats
-from ...damage import AttackType, conditions
-from ...die import DieFormula
+from ...damage import AttackType, Condition, conditions
+from ...die import Die
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -59,7 +58,11 @@ class _FocusShot(ArtilleryPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        bleeding = conditions.Bleeding(damage=DieFormula.from_expression("1d6"))
+        bleeding = conditions.Bleeding(
+            damage=stats.target_value(0.25, force_die=Die.d6)
+        )
+        blinded = Condition.Blinded
+        prone = Condition.Prone
         dc = stats.difficulty_class
         feature = Feature(
             name="Focus Shot",
@@ -68,8 +71,8 @@ class _FocusShot(ArtilleryPower):
             description=f"If {stats.roleref} has not moved this turn, it gains advantage on the next attack roll it makes this turn. Its speed becomes 0 until the start of its next turn. \
                 If the attack hits, {stats.roleref} can choose one of the following options: \
                 <ul>\
-                    <li>**Aim for the Eyes**: the target must make a DC {dc} Dexterity saving throw or be **Blinded** for 1 minute (save ends at end of turn)</li> \
-                    <li>**Bring it Down**: the target must make a DC {dc} Strength saving throw or be knocked **Prone**</li> \
+                    <li>**Aim for the Eyes**: the target must make a DC {dc} Dexterity saving throw or be {blinded.caption} for 1 minute (save ends at end of turn)</li> \
+                    <li>**Bring it Down**: the target must make a DC {dc} Strength saving throw or be knocked {prone.caption}</li> \
                     <li>**Vein Slice**: the target must make a DC {dc} Constitution saving throw or gain {bleeding.caption}. {bleeding.description_3rd} \
                 </ul>",
         )
@@ -119,16 +122,25 @@ class _SuppressingFire(ArtilleryPower):
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
-            description=f"On a hit, the target's speed is reduced by half until the end of its next turn",
+            description="On a hit, the target's speed is reduced by half until the end of its next turn",
             hidden=True,
             modifies_attack=True,
         )
         return [feature]
 
 
+def not_gaze(stats: BaseStatblock) -> bool:
+    return "gaze" not in stats.attack.name.lower()
+
+
 class _IndirectFire(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Indirect Fire", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Indirect Fire",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            require_callback=not_gaze,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

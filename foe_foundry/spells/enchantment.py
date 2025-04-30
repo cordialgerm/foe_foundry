@@ -30,6 +30,20 @@ CharmPerson: Spell = Spell(
     range="30 feet",
 )
 
+PowerWordKill: Spell = Spell(
+    name="Power Word Kill",
+    level=9,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=None,
+    upcast=False,
+    concentration=False,
+    description="""You utter a word of power that can compel one creature you can see within range to die instantly. If the target has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.
+If the target is a construct or an undead, it is immune to this effect. If the target is a creature with legendary resistances, it can choose to succeed on its saving throw instead of dying.""",
+    range="60 feet",
+)
+
 
 Command: Spell = Spell(
     name="Command",
@@ -42,6 +56,18 @@ Command: Spell = Spell(
     description="You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it.",
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
     range="60 feet",
+)
+
+Confusion: Spell = Spell(
+    name="Confusion",
+    level=4,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=True,
+    concentration=True,
+    description="TODO",
 )
 
 DominateMonster: Spell = Spell(
@@ -71,6 +97,20 @@ Feeblemind: Spell = Spell(
     concentration=False,
     description="""You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw. On a failed save, the creature’s Intelligence and Charisma scores become 1. The creature can’t cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.
     At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.""",
+)
+
+Heroism: Spell = Spell(
+    name="Heroism",
+    level=1,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=True,
+    concentration=True,
+    description="A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns.",
+    upcast_description="When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+    range="Touch",
 )
 
 HideousLaughter: Spell = Spell(
@@ -111,4 +151,17 @@ Suggestion: Spell = Spell(
     concentration=True,
     description="You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
     range="30 feet",
+)
+
+MassSuggestion: Spell = Spell(
+    name="Mass Suggestion",
+    level=6,
+    school="enchantment",
+    source="SRD 5.1",
+    action_type=ActionType.Action,
+    save=Stats.WIS,
+    upcast=False,
+    concentration=False,
+    description="You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself or do some other obviously harmful act ends the spell.",
+    range="60 feet",
 )

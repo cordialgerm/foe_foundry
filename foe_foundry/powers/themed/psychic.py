@@ -1,16 +1,13 @@
 from datetime import datetime
-from math import ceil
 from typing import List
-
-from foe_foundry.statblocks import BaseStatblock
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
-from ...damage import AttackType, Burning, DamageType, Dazed
+from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -21,15 +18,16 @@ class PsychicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        power_type: PowerType = PowerType.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
         def is_spellcaster(candidate: BaseStatblock) -> bool:
             if candidate.creature_type == CreatureType.Humanoid:
-                return (
-                    candidate.attack_type.is_spell()
-                    and candidate.secondary_damage_type == DamageType.Psychic
+                return any(t.is_spell() for t in candidate.attack_types) and (
+                    candidate.secondary_damage_type == DamageType.Psychic
+                    or candidate.caster_type == CasterType.Psionic
                 )
             else:
                 return True
@@ -40,7 +38,7 @@ class PsychicPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="psychic",
-            power_type=PowerType.Theme,
+            power_type=power_type,
             score_args=dict(
                 require_types={CreatureType.Aberration, CreatureType.Humanoid},
                 require_callback=is_spellcaster,
@@ -50,20 +48,26 @@ class PsychicPower(PowerWithStandardScoring):
             | score_args,
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Psychic)
+        stats = stats.grant_spellcasting(CasterType.Psionic)
         return stats
 
 
 class _Telekinetic(PsychicPower):
     def __init__(self):
-        super().__init__(name="Telekinesis", source="5.1SRD Telekinesis")
+        super().__init__(
+            name="Telekinesis",
+            source="5.1SRD Telekinesis",
+            power_type=PowerType.Spellcasting,
+            require_cr=6,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats.add_spell(transmutation.Telekinesis.for_statblock())
 
 
@@ -76,7 +80,8 @@ class _PsychicInfestation(PsychicPower):
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
         burning = Burning(
-            damage=DieFormula.from_dice(d6=dmg.n_die // 2), damage_type=DamageType.Psychic
+            damage=DieFormula.from_dice(d6=dmg.n_die // 2),
+            damage_type=DamageType.Psychic,
         )
 
         feature = Feature(
@@ -115,7 +120,9 @@ class _DissonantWhispers(PsychicPower):
 
 class _PsionicBlast(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5
@@ -172,7 +179,7 @@ class _EatBrain(PsychicPower):
             },
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.add_attack(
             scalar=3.5,
             damage_type=DamageType.Piercing,
@@ -189,13 +196,14 @@ class _EatBrain(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
+        grappled = Condition.Grappled
 
         stunning_tentacles = Feature(
             name="Stunning Tentancles",
             action=ActionType.Feature,
             hidden=True,
             modifies_attack=True,
-            description=f"On a hit, the target is **Grappled** (escape DC {dc}) and must succeed \
+            description=f"On a hit, the target is {grappled.caption} (escape DC {dc}) and must succeed \
                 on a DC {dc} Intelligence save or be {dazed.caption} while grappled in this way. {dazed.description_3rd}",
         )
 

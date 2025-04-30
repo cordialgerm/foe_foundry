@@ -182,6 +182,203 @@ const artCredits = [
     ),
     url: "https://felipemuky.itch.io/dragon-stock-art-pack",
   },
+  {
+    title: "Publisher's Choice Quality Stock Art",
+    description: (
+      <>
+        Publisher's Choice Quality Stock Art by © Rick Hershey. <br />
+      </>
+    ),
+    url: "http://fatgoblingames.com"
+  },
+  {
+    title: "Art by Daniel Comerci",
+    description: (
+      <>
+        Art by Daniel Comerci used with permission. www.danielcomerci.com
+      </>
+    ),
+    url: "www.danielcomerci.com"
+  },
+  {
+    title: "Art by Diane Ramic",
+    description: (
+      <>
+        Art by Diane Ramic used with permission. https://dramic.wixsite.com/home
+      </>
+    ),
+    url: "https://dramic.wixsite.com/home"
+  },
+  {
+    title: "Art by Hounworks",
+    description: (
+      <>
+        Art by Hounworks used with permission. http://www.hounworks.it
+      </>
+    ),
+    url: "http://www.hounworks.it"
+  },
+  {
+    title: "Stock Art by Brett Neufeld",
+    description: (
+      <>
+        Stock Art by Brett Neufeld used with permission.
+      </>
+    ),
+  },
+  {
+    title: "Stock Art by Matt Morrow",
+    description: (
+      <>
+        Stock Art by Matt Morrow used with permission.
+      </>
+    ),
+  },
+  {
+    title: "Art by Adrian Arduini",
+    description: (
+      <>
+        Art by Adrian Arduini used with permission.
+      </>
+    ),
+  },
+  {
+    title: "Stock Art by Rob Necronomicon",
+    description: (
+      <>
+        Art by <a href="https://www.instagram.com/robnecronomicon/?hl=en">Rob Necronomicon</a>
+      </>
+    )
+  },
+  {
+    title: "Stock Art by Bradley McKevit",
+    description: (
+      <>
+        Art by <a href="http://www.bradleykmcdevitt.net/">Bradley McKevit</a>
+      </>
+    ),
+  },
+  {
+    title: "Stock Art Collection by Jeff Preston",
+    description: (
+      <>
+        Jeff Preston Art is licensed under: This work is licensed under the Creative Commons Attribution 3.0 Unported License.
+        Justin Nichol Art is licensed under: CC BY 4.0,. CC BY 3.0
+        Mariana Ruiz Villareal is licensed under: CC0
+        Max Brooks is licensed under: CC SA 3.0
+        Miko Arc is licensed under: CC BY 4.0 and must include: Colorful Monsters © 2020 by Mikoarc Studio is licensed under CC BY 4.0
+        Morgan Strauss is licensed under: CC0
+        Remi is licensed under: CC0
+        Ruskerdax is licensed under: CC0
+
+        To view a copy of these licenses, visit:
+        http://creativecommons.org/licenses/by/3.0/
+        https://creativecommons.org/licenses/by/4.0/
+        https://creativecommons.org/licenses/by/3.0/
+        https://creativecommons.org/share-your-work/public-domain/cc0/
+        http://creativecommons.org/licenses/by-sa/3.0/
+
+        or send a letter to:
+
+        Creative Commons
+        444 Castro Street
+        Suite 900
+        Mountain View, California, 94041, USA
+
+      </>
+    )
+  },
+  {
+    title: "Art by William McAusland",
+    description: (
+      <>
+        Some artwork copyright William McAusland, used with permission.
+      </>
+    )
+  },
+  {
+    title: "Art by John Latta",
+    description: (
+      <>
+        Some artwork © 2025 John Latta, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Jacob E. Blackmon",
+    description: (
+      <>
+        Some artwork copyright Jacob E. Blackmon, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Marcum Curlee",
+    description: (
+      <>
+        Some artwork licensed with permission from Marcum Curlee
+      </>
+    )
+  },
+  {
+    title: "Art by Tara Quinn",
+    description: (
+      <>
+        This work is licensed under a Creative Commons Attribution 4.0 International License.
+        The license is available at https://creativecommons.org/licenses/by/4.0/
+
+        Where appropriate, please include a link to the following product URL in your attribution: https://www.drivethrurpg.com/en/product/494686/science-fiction-stock-art-illustrations-by-tara-quinn
+      </>
+    )
+  },
+  {
+    title: "Art by Critical Hit",
+    description: (
+      <>
+        Art by www.critical-hit.biz
+      </>
+    )
+  },
+  {
+    title: "Art by Yuri Perkowski Domingos",
+    description: (
+      <>
+        Art by Yuri Perkowski Domingos used with permission.
+      </>
+    )
+  },
+  {
+    title: "Art by Dren Productions",
+    description: (
+      <>
+        Art by Dren Productions used with permission.
+      </>
+    )
+  },
+  {
+    title: "Art by Dean Spencer",
+    description: (
+      <>
+        Some artwork copyrighy Dean Spencer, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Bartek Blaszczec",
+    description: (
+      <>
+        Some artwork copyright Bartek Blaszczec, used with permission. All rights reserved.
+      </>
+    )
+  },
+  {
+    title: "Art by Jeshields",
+    description: (
+      <>
+        Some artwork copyright Jeshields, used with permission. All rights reserved.
+      </>
+    )
+  }
 ];
 
 const legalNotices = [
@@ -256,19 +453,7 @@ const legalNotices = [
         .
       </span>
     ),
-  },
-  {
-    title: "OGL1.0a Legal Notice",
-    description: (
-      <span>
-        This work includes material licensed under the OGL1.0a. See{" "}
-        <Link to="/ogl">OGL Page</Link> for details. <br />
-        <OglCopyrightNotice />
-      </span>
-    ),
-    url: "/ogl",
-    actionText: "View OGL1.0a Legal Notice",
-  },
+  }
 ];
 
 function Credit(credit: React.PropsWithChildren<CreditProps>) {

@@ -6,7 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
+from ...powers import flags
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -23,10 +23,18 @@ class CruelPower(PowerWithStandardScoring):
     ):
         standard_score_args = dict(
             require_attack_types=AttackType.AllMelee(),
-            bonus_types=[CreatureType.Fiend, CreatureType.Monstrosity, CreatureType.Humanoid],
+            bonus_types=[
+                CreatureType.Fiend,
+                CreatureType.Monstrosity,
+                CreatureType.Humanoid,
+            ],
             bonus_skills=Skills.Intimidation,
             bonus_stats=Stats.CHA,
-            bonus_roles={MonsterRole.Ambusher, MonsterRole.Bruiser, MonsterRole.Leader},
+            require_roles={
+                MonsterRole.Ambusher,
+                MonsterRole.Bruiser,
+                MonsterRole.Soldier,
+            },
             **score_args,
         )
         super().__init__(
@@ -64,8 +72,16 @@ class _BloodiedFrenzy(CruelPower):
 class _BrutalCritical(CruelPower):
     def __init__(self):
         super().__init__(
-            name="Brutal Critical", source="SRD5.1 Champion, Barbarian", power_level=HIGH_POWER
+            name="Brutal Critical",
+            source="SRD5.1 Champion, Barbarian",
+            power_level=HIGH_POWER,
+            require_no_flags=flags.MODIFIES_CRITICAL,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        stats = stats.with_flags(flags.MODIFIES_CRITICAL)
+        return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         crit_lower = 19 if stats.cr <= 7 else 18

@@ -28,7 +28,9 @@ class Damage:
         return self.description
 
     @staticmethod
-    def from_expression(expression: str, damage_type: DamageType = DamageType.Bludgeoning):
+    def from_expression(
+        expression: str, damage_type: DamageType = DamageType.Bludgeoning
+    ):
         formula = DieFormula.from_expression(expression)
         return Damage(formula=formula, damage_type=damage_type)
 
@@ -38,9 +40,10 @@ class Damage:
         return Damage(**args)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class Attack:
     name: str
+    display_name: str = ""
     hit: int
     damage: Damage
     additional_damage: Damage | None = None
@@ -51,11 +54,18 @@ class Attack:
     additional_description: str | None = None
     custom_target: str | None = None
     replaces_multiattack: int = 0
+    is_equivalent_to_primary_attack: bool = False
     is_melee: bool = field(init=False)
     description: str = field(init=False)
 
     def __post_init__(self):
-        self.is_melee = self.attack_type in {AttackType.MeleeNatural, AttackType.MeleeWeapon}
+        self.is_melee = self.attack_type in {
+            AttackType.MeleeNatural,
+            AttackType.MeleeWeapon,
+        }
+
+        if self.display_name is None or self.display_name == "":
+            self.display_name = self.name
 
         if self.is_melee:
             self.range = None
@@ -99,11 +109,17 @@ class Attack:
         self.description = description
 
     def copy(self, **overrides) -> Attack:
+        if "display_name" in overrides and overrides["display_name"] is None:
+            overrides["display_name"] = ""
+
         args: dict = dict(
             name=self.name,
+            display_name=self.display_name,
             hit=self.hit,
             damage=self.damage.copy(),
-            additional_damage=self.additional_damage.copy() if self.additional_damage else None,
+            additional_damage=self.additional_damage.copy()
+            if self.additional_damage
+            else None,
             attack_type=self.attack_type,
             reach=self.reach,
             range=self.range,
@@ -111,6 +127,7 @@ class Attack:
             custom_target=self.custom_target,
             additional_description=self.additional_description,
             replaces_multiattack=self.replaces_multiattack,
+            is_equivalent_to_primary_attack=self.is_equivalent_to_primary_attack,
         )
         args.update(overrides)
         return Attack(**args)
@@ -118,7 +135,9 @@ class Attack:
     @property
     def average_damage(self) -> float:
         return self.damage.formula.average + (
-            self.additional_damage.formula.average if self.additional_damage is not None else 0
+            self.additional_damage.formula.average
+            if self.additional_damage is not None
+            else 0
         )
 
     @property
@@ -128,7 +147,9 @@ class Attack:
 
         return rolled(self.damage) + rolled(self.additional_damage)
 
-    def delta(self, hit_delta: int = 0, dice_delta: int = 0, damage_delta: int = 0) -> Attack:
+    def delta(
+        self, hit_delta: int = 0, dice_delta: int = 0, damage_delta: int = 0
+    ) -> Attack:
         new_hit = self.hit + hit_delta
 
         new_formula = self.damage.formula.copy()
@@ -154,16 +175,24 @@ class Attack:
 
         return self.copy(hit=new_hit, damage=new_damage)
 
-    def with_attack_type(self, attack_type: AttackType, damage_type: DamageType) -> Attack:
+    def with_attack_type(
+        self, attack_type: AttackType, damage_type: DamageType
+    ) -> Attack:
         new_damage = self.damage.copy(damage_type=damage_type)
 
         if attack_type in {AttackType.MeleeNatural, AttackType.MeleeWeapon}:
             return self.copy(
-                attack_type=attack_type, reach=self.reach or 5, range=None, damage=new_damage
+                attack_type=attack_type,
+                reach=self.reach or 5,
+                range=None,
+                damage=new_damage,
             )
         else:
             return self.copy(
-                attack_type=attack_type, range=self.range or 60, reach=None, damage=new_damage
+                attack_type=attack_type,
+                range=self.range or 60,
+                reach=None,
+                damage=new_damage,
             )
 
     def split_damage(
@@ -206,15 +235,21 @@ class Attack:
             new_secondary_n_die = int(floor(n_die * split_ratio))
             new_primary_n_die = n_die - new_secondary_n_die
 
-        new_base_formula = DieFormula.from_dice(mod=mod, **{new_primary_die: new_primary_n_die})
-        new_secondary_formula = DieFormula.from_dice(**{new_secondary_die: new_secondary_n_die})
+        new_base_formula = DieFormula.from_dice(
+            mod=mod, **{new_primary_die: new_primary_n_die}
+        )
+        new_secondary_formula = DieFormula.from_dice(
+            **{new_secondary_die: new_secondary_n_die}
+        )
 
         new_damage = Damage(formula=new_base_formula, damage_type=primary_damage_type)
         new_secondary_damage = Damage(
             formula=new_secondary_formula, damage_type=secondary_damage_type
         )
 
-        new_attack = self.copy(damage=new_damage, additional_damage=new_secondary_damage)
+        new_attack = self.copy(
+            damage=new_damage, additional_damage=new_secondary_damage
+        )
         return new_attack
 
     def join(self) -> Attack:
@@ -267,3 +302,6 @@ class Attack:
 
     def __repr__(self) -> str:
         return self.description
+
+    def __eq__(self, value: object) -> bool:
+        return isinstance(value, Attack) and self.name == value.name

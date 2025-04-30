@@ -1,2 +1,4 @@
 *.safetensors filter=lfs diff=lfs merge=lfs -text
 rapg/model/model.safetensors filter=lfs diff=lfs merge=lfs -text
+purchases/*.zip filter=lfs diff=lfs merge=lfs -text
+foe_foundry_ui/public/img/Free_Monster_Fantasy_Stock_Art_Vol._1.zip filter=lfs diff=lfs merge=lfs -text

@@ -4,11 +4,16 @@ from typing import List
 from ...attributes import Skills
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    MEDIUM_POWER,
+    RIBBON_POWER,
+    Power,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class EarthPower(PowerWithStandardScoring):
@@ -28,7 +33,11 @@ class EarthPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             theme="earth",
             score_args=dict(
-                require_types=[CreatureType.Beast, CreatureType.Monstrosity, CreatureType.Ooze],
+                require_types=[
+                    CreatureType.Beast,
+                    CreatureType.Monstrosity,
+                    CreatureType.Ooze,
+                ],
             )
             | score_args,
         )
@@ -38,7 +47,9 @@ class _Burrower(EarthPower):
     def __init__(self):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
-                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+                not (c.speed.fly or 0)
+                and not (c.speed.swim or 0)
+                and not (c.speed.climb or 0)
             )
 
         super().__init__(
@@ -48,11 +59,15 @@ class _Burrower(EarthPower):
             require_callback=not_already_special_movement,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_speed = stats.speed.copy(burrow=stats.speed.walk)
         new_senses = stats.senses.copy(blindsight=60)
-        stats = stats.copy(speed=new_speed, senses=new_senses)
 
+        stats = super().modify_stats_inner(stats)
+        stats = stats.copy(speed=new_speed, senses=new_senses)
+        return stats
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         tunnel_width = 10 if stats.size >= Size.Huge else 5
 
         feature = Feature(
@@ -68,7 +83,9 @@ class _Climber(EarthPower):
     def __init__(self):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
-                not (c.speed.fly or 0) and not (c.speed.swim or 0) and not (c.speed.climb or 0)
+                not (c.speed.fly or 0)
+                and not (c.speed.swim or 0)
+                and not (c.speed.climb or 0)
             )
 
         super().__init__(
@@ -100,7 +117,7 @@ class _Climber(EarthPower):
             )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_speed = stats.speed.copy(climb=stats.speed.walk)
         new_attrs = stats.attributes.grant_proficiency_or_expertise(
             Skills.Athletics, Skills.Acrobatics

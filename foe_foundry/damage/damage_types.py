@@ -5,8 +5,6 @@ from typing import List, Set, cast
 
 from backports.strenum import StrEnum
 
-from ..die import Die
-
 
 class DamageType(StrEnum):
     Acid = auto()
@@ -37,9 +35,22 @@ class DamageType(StrEnum):
             DamageType.Poison,
         }
 
+    @staticmethod
+    def Primal() -> Set[DamageType]:
+        return {
+            DamageType.Fire,
+            DamageType.Cold,
+            DamageType.Lightning,
+            DamageType.Thunder,
+        }
+
     @property
     def is_physical(self) -> bool:
-        return self in {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
+        return self in {
+            DamageType.Bludgeoning,
+            DamageType.Piercing,
+            DamageType.Slashing,
+        }
 
     @property
     def is_elemental(self) -> bool:

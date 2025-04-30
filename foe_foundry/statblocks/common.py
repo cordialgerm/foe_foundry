@@ -1,4 +1,4 @@
-from ..attributes import Attributes, Stats
+from ..attributes import Attributes
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
@@ -12,7 +12,6 @@ Minion = BaseStatblock(
     primary_attribute_score=12,
     attributes=Attributes(
         proficiency=2,
-        primary_attribute=Stats.DEX,
         STR=10,
         DEX=12,
         CON=10,
@@ -21,6 +20,7 @@ Minion = BaseStatblock(
         CHA=10,
     ),
     multiattack=1,
+    multiattack_benchmark=1,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
         name="Attack",
@@ -38,7 +38,6 @@ Soldier = BaseStatblock(
     primary_attribute_score=14,
     attributes=Attributes(
         proficiency=2,
-        primary_attribute=Stats.STR,
         STR=14,
         DEX=12,
         CON=12,
@@ -47,6 +46,7 @@ Soldier = BaseStatblock(
         CHA=10,
     ),
     multiattack=1,
+    multiattack_benchmark=1,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",
@@ -64,7 +64,6 @@ Brute = BaseStatblock(
     primary_attribute_score=16,
     attributes=Attributes(
         proficiency=2,
-        primary_attribute=Stats.STR,
         STR=16,
         DEX=12,
         CON=14,
@@ -73,6 +72,7 @@ Brute = BaseStatblock(
         CHA=8,
     ),
     multiattack=2,
+    multiattack_benchmark=2,
     primary_damage_type=DamageType.Bludgeoning,
     attack=Attack(
         name="Attack",
@@ -90,7 +90,6 @@ Specialist = BaseStatblock(
     primary_attribute_score=18,
     attributes=Attributes(
         proficiency=2,
-        primary_attribute=Stats.DEX,
         STR=12,
         DEX=18,
         CON=14,
@@ -99,6 +98,7 @@ Specialist = BaseStatblock(
         CHA=12,
     ),
     multiattack=2,
+    multiattack_benchmark=2,
     primary_damage_type=DamageType.Piercing,
     attack=Attack(
         name="Attack",
@@ -116,7 +116,6 @@ Myrmidon = BaseStatblock(
     primary_attribute_score=18,
     attributes=Attributes(
         proficiency=3,
-        primary_attribute=Stats.INT,
         STR=10,
         DEX=14,
         CON=14,
@@ -125,6 +124,7 @@ Myrmidon = BaseStatblock(
         CHA=10,
     ),
     multiattack=3,
+    multiattack_benchmark=3,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",
@@ -143,7 +143,6 @@ Sentinel = BaseStatblock(
     primary_attribute_score=20,
     attributes=Attributes(
         proficiency=4,
-        primary_attribute=Stats.STR,
         STR=20,
         DEX=16,
         CON=16,
@@ -152,6 +151,7 @@ Sentinel = BaseStatblock(
         CHA=10,
     ),
     multiattack=4,
+    multiattack_benchmark=4,
     primary_damage_type=DamageType.Bludgeoning,
     attack=Attack(
         name="Attack",
@@ -170,7 +170,6 @@ Champion = BaseStatblock(
     primary_attribute_score=22,
     attributes=Attributes(
         proficiency=5,
-        primary_attribute=Stats.CHA,
         STR=10,
         DEX=12,
         CON=18,
@@ -179,6 +178,7 @@ Champion = BaseStatblock(
         CHA=22,
     ),
     multiattack=4,
+    multiattack_benchmark=4,
     primary_damage_type=DamageType.Slashing,
     attack=Attack(
         name="Attack",

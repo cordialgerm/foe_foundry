@@ -1,11 +1,13 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
+from .. import flags
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from .shared import CunningAction as _CunningAction
 from .shared import NimbleEscape as _NimbleEscape
@@ -41,13 +43,16 @@ class AmbusherPower(PowerWithStandardScoring):
 class _StealthySneak(AmbusherPower):
     def __init__(self):
         super().__init__(
-            name="Stealthy Sneak", source="A5E SRD Bugbear", create_date=datetime(2023, 11, 22)
+            name="Stealthy Sneak",
+            source="A5E SRD Bugbear",
+            create_date=datetime(2023, 11, 22),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hide = action_ref("Hide")
         feature = Feature(
             name="Stealthy Sneak",
-            description=f"{stats.selfref.capitalize()} moves up to half its speed without provoking opportunity attacks. It can then attempt to hide.",
+            description=f"{stats.selfref.capitalize()} moves up to half its speed without provoking opportunity attacks. It can then attempt to {hide}.",
             action=ActionType.Action,
             replaces_multiattack=1,
         )
@@ -56,17 +61,27 @@ class _StealthySneak(AmbusherPower):
 
 class _DeadlyAmbusher(AmbusherPower):
     def __init__(self):
-        super().__init__(name="Deadly Ambusher", source="SRD5.1 Assasin")
+        super().__init__(
+            name="Deadly Ambusher",
+            source="SRD5.1 Assasin",
+            require_no_flags=flags.MODIFIES_CRITICAL,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Deadly Ambusher",
-            description=f"{stats.selfref.capitalize()} has advantage on initiative rolls. \
-                On the first turn of combat, it has advantage on any attack rolls against targets with lower initiative than it, \
+            description=f"On the first turn of combat, {stats.selfref} has advantage on any attack rolls against targets with lower initiative than it, \
                 and it scores a critical hit on a score of 19 or 20.",
             action=ActionType.Feature,
         )
         return [feature]
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return (
+            stats.grant_proficiency_or_expertise(Skills.Initiative)
+            .grant_proficiency_or_expertise(Skills.Initiative)
+            .with_flags(flags.MODIFIES_CRITICAL)
+        )
 
 
 CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
@@ -74,4 +89,9 @@ NimbleEscape: Power = _NimbleEscape(MonsterRole.Ambusher)
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 StealthySneak: Power = _StealthySneak()
 
-AmbusherPowers: List[Power] = [CunningAction, DeadlyAmbusher, NimbleEscape, StealthySneak]
+AmbusherPowers: List[Power] = [
+    CunningAction,
+    DeadlyAmbusher,
+    NimbleEscape,
+    StealthySneak,
+]

@@ -2,15 +2,13 @@ import math
 from datetime import datetime
 from typing import List
 
-from foe_foundry.features import Feature
-from foe_foundry.statblocks import BaseStatblock
-
+from ...attack_template import spell
 from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
-from ...powers.power_type import PowerType
 from ...role_types import MonsterRole
+from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
@@ -93,7 +91,9 @@ class _DeflectMissile(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        reduction = easy_multiple_of_five(stats.attributes.DEX + 2 * stats.cr)
+        reduction = easy_multiple_of_five(
+            stats.attributes.stat_mod(Stats.DEX) + 2 * stats.attributes.proficiency
+        )
         feature = Feature(
             name="Deflect Missile",
             action=ActionType.Reaction,
@@ -146,7 +146,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 score_args=score_args,
             )
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             if stats.secondary_damage_type is None:
                 stats = stats.copy(secondary_damage_type=self.damage_type)
             return stats
@@ -186,12 +186,21 @@ class _Overchannel(PowerWithStandardScoring):
             ),
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        if not stats.attack_types.intersection(AttackType.AllSpell()):
+            stats = stats.grant_spellcasting(CasterType.Innate)
+            stats = spell.Firebolt.copy(damage_scalar=0.9).add_as_secondary_attack(
+                stats
+            )
+            return stats
+        else:
+            return stats
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,
-            description=f"If {stats.selfref} begins its turn with no hostile creatures within 10 feet of it, it can use its bonus action to channel vast amounts of power into its next spell. \
-                The next spell attack it makes this turn that hits a target deals maximum damage.",
+            description=f"The {stats.selfref} begins to channel vast amounts of power into its next spell. If it begins its next turn with no creature next to it, then the next spell attack it makes that turn that hits a target deals maximum damage.",
         )
         return [feature]
 
@@ -213,4 +222,3 @@ AntiRangedPowers: List[Power] = [
 
 
 # Drawn to Combat - monstrosity, beast - DC X stealth check at the end of the turn or summon another one of these creatures
-# Over-channeled Spells - creature gains advantage on attack rolls and attacks deal an additional X damage if there's no hostile enemy within 10 feet

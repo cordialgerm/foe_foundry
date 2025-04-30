@@ -3,6 +3,8 @@ from typing import List, Set, Tuple, TypeAlias
 import numpy as np
 from numpy.random import Generator
 
+from foe_foundry.references import creature_ref
+
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..die import Die, DieFormula
@@ -18,7 +20,7 @@ Fire: SummoningList = {
 }
 
 Cold: SummoningList = {
-    ("*Steam Elemental*", 1 / 4),
+    ("*Steam Mephit*", 1 / 4),
     ("*Winter Wolf*", 3),
     ("*Young White Dragon*", 6),
 }
@@ -36,7 +38,11 @@ Air: SummoningList = {
     ("*Dust Devil*", 5),
 }
 
-Poison: SummoningList = {("*Gray Ooze*", 1 / 2), ("*Ochre Jelly*", 2), ("*Black Pudding*", 4)}
+Poison: SummoningList = {
+    ("*Gray Ooze*", 1 / 2),
+    ("*Ochre Jelly*", 2),
+    ("*Black Pudding*", 4),
+}
 
 Elementals: SummoningList = {
     ("*Smoke Mephit*", 1 / 4),
@@ -50,22 +56,33 @@ Elementals: SummoningList = {
     ("*Dust Devil*", 5),
 }
 
-Undead: SummonerInfo = {("*Skeleton*", 1 / 4), ("*Ghoul*", 1), ("*Mummy*", 3), ("*Ghost*", 4)}
+Undead: SummoningList = {
+    ("*Skeleton*", 1 / 4),
+    ("*Ghoul*", 1),
+    ("*Mummy*", 3),
+    ("*Ghost*", 4),
+}
 
-Celestials: SummonerInfo = {
+Celestials: SummoningList = {
     ("*Giant Eagle*", 1),
     ("*Pegasus*", 2),
     ("*Couatl*", 5),  # CR 4 but they have a spell list so get fewer of them
 }
 
-Fiends: SummoningList = {
+Devils: SummoningList = {
     ("*Lemure*", 1 / 10),  # CR0 but don't want to divide 1/0
-    ("*Dretch*", 1 / 4),
-    ("*Imp*", 1),
+    ("*Imp*", 1 / 4),
+    ("*Bearded Devil*", 3.0),
+    ("*Barbed Devil*", 5.0),
+    ("*Bone Devil*", 9.0),
+}
+
+Demons: SummoningList = {
+    ("*Manes*", 1 / 8),
     ("*Quasit*", 1),
-    ("*Hell Hound*", 3.5),  # CR3 but pretty strong
-    ("*Incubus*", 4),
-    ("*Sucubus*", 4),
+    ("*Barlgura*", 4),
+    ("*Vrock*", 6),
+    ("*Glabrezu*", 9),
 }
 
 Fey: SummoningList = {
@@ -127,7 +144,7 @@ LandBeasts: SummoningList = {
 
 
 def summon_list_for_creature_type(creature_type: CreatureType) -> SummoningList:
-    default_list = Elementals | Fiends | Fey | Undead
+    default_list = Elementals | Demons | Devils | Fey | Undead
 
     if creature_type == CreatureType.Dragon:
         return DraconicMinions | DraconicWyrmlings
@@ -140,7 +157,7 @@ def summon_list_for_creature_type(creature_type: CreatureType) -> SummoningList:
     elif creature_type == CreatureType.Fey:
         return Fey
     elif creature_type == CreatureType.Fiend:
-        return Fiends
+        return Demons | Devils
     elif creature_type == CreatureType.Humanoid:
         return default_list
     elif creature_type == CreatureType.Monstrosity:
@@ -175,7 +192,7 @@ def summon_list_for_damage_type(damage_type: DamageType) -> SummoningList:
 def summon_list(
     summoner: SummonerInfo | List[SummonerInfo] | None, use_default: bool = False
 ) -> SummoningList:
-    default_list = Elementals | Fiends | Fey
+    default_list = Elementals | Demons | Devils | Fey | Undead
 
     if summoner is None and not use_default:
         raise ValueError("summoner is required if use_default=False")
@@ -224,13 +241,13 @@ def determine_summon_formula(
             # summoning 1 or 2 entities is ideal, so boost the weight
             quantity = int(round(target_val))
             formula = DieFormula.from_expression(str(quantity))
-            weight = 2
+            weight = 1.5
         else:
             # if there are 3 or more minions being summoned then use a d4 dice formula
             # if there are going to be many summons, then prefer not to use that option
             if target_val > max_quantity:
                 target_val = max_quantity
-                weight = 0.5
+                weight = 0.1
             else:
                 weight = 1
 
@@ -248,8 +265,14 @@ def determine_summon_formula(
     creature = names[index]
     formula = formulas[index]
 
-    description = f"{formula.description} {creature} arrive to aid the summoner and join combat at initiative count 0. \
-        On their first turn, the summons use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of the summoner. \
-        They then act normally on subsequent turns."
+    description = summon_description(
+        summoner="the summoner", summon=creature, formula=formula
+    )
 
     return creature, formula, description
+
+
+def summon_description(summoner: str, summon: str, formula: DieFormula) -> str:
+    return f"{formula.description} {creature_ref(summon)} arrive to aid {summoner} and join combat at initiative count 0. \
+        On their first turn, the {summon} use their movement and action to arrive on the battlefield in unoccupied spaces within 30 feet of {summoner}. \
+        They then act normally on subsequent turns."

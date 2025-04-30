@@ -144,15 +144,25 @@ class DieFormula:
             suggested_die = Die.d6
 
         if force_die is not None:
-            candidates = _candidate(target, force_die, per_die_mod, flat_mod, min_die_count)
+            candidates = _candidate(
+                target, force_die, per_die_mod, flat_mod, min_die_count
+            )
         else:
             candidates = (
                 _candidate(target, suggested_die, per_die_mod, flat_mod, min_die_count)
                 + _candidate(
-                    target, suggested_die.decrease(), per_die_mod, flat_mod, min_die_count
+                    target,
+                    suggested_die.decrease(),
+                    per_die_mod,
+                    flat_mod,
+                    min_die_count,
                 )
                 + _candidate(
-                    target, suggested_die.increase(), per_die_mod, flat_mod, min_die_count
+                    target,
+                    suggested_die.increase(),
+                    per_die_mod,
+                    flat_mod,
+                    min_die_count,
                 )
             )
 
@@ -203,4 +213,8 @@ def _candidate(
     args1 = {str(die): n1, "mod": n1 * per_die_mod + flat_mod}
     args2 = {str(die): n2, "mod": n2 * per_die_mod + flat_mod}
 
-    return [DieFormula(**args1), DieFormula(**args2)]
+    # require at least 1 damage die
+    if n2 >= 1:
+        return [DieFormula(**args1), DieFormula(**args2)]
+    else:
+        return [DieFormula(**args1)]

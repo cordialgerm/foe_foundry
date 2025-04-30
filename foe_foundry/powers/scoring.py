@@ -1,4 +1,4 @@
-from typing import Callable, Dict, List, Set, TypeAlias, TypeVar
+from typing import Callable, List, Literal, Set, TypeAlias, TypeVar
 
 from ..attack_template import AttackTemplate
 from ..attributes import Skills, Stats
@@ -6,6 +6,7 @@ from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..role_types import MonsterRole
 from ..size import Size
+from ..spells import CasterType
 from ..statblocks import BaseStatblock
 from .attack import relevant_damage_types
 
@@ -35,16 +36,19 @@ class _RequirementTracker:
         self.require_misses = 0
         self.bonus_hits = 0
         self.bonus_misses = 0
+        self.weight = 1.0
 
-    def required(self, result: bool):
+    def required(self, result: bool, weight: float = 1.0):
         if result:
             self.require_hits += 1
+            self.weight *= weight
         else:
             self.require_misses += 1
 
-    def bonus(self, result: bool):
+    def bonus(self, result: bool, weight: float = 1.0):
         if result:
             self.bonus_hits += 1
+            self.weight *= weight
         else:
             self.bonus_misses += 1
 
@@ -61,7 +65,7 @@ class _RequirementTracker:
     def require_val(self, v: T | None) -> T | None:
         if v is not None and v is not False:
             self.require_constraints += 1
-        return v
+        return v  # type: ignore
 
     def optional_val(self, v: T | None, default: T | None) -> T | None:
         if v is not None:
@@ -112,25 +116,29 @@ class _RequirementTracker:
 
     @property
     def score(self) -> float:
-        if self.require_misses > 0:
+        return self.calc_score(relaxed_mode=False)
+
+    def calc_score(self, relaxed_mode: bool) -> float:
+        if not relaxed_mode and self.require_misses > 0:
             return -1
 
         score = 1 if self.require_hits >= 1 else 0.5
 
         # if there are many required checks and you pass them all then you should get a score boost
         # this is because narrowly defined powers are unique and interesting, so if a candidate qualifies they should have a boosted chance
-        strict_requirement_boost = 0.25 * max(0, self.require_hits - 2)
+        strict_requirement_boost = 0.1 * min(max(0, self.require_hits - 2), 3)
 
         # get a score boost for bonus checks
-        bonus_boost = 0.125 * self.bonus_hits
+        bonus_boost = 0.1 * min(self.bonus_hits, 3)
 
-        final_score = min(2.0, score + strict_requirement_boost + bonus_boost)
+        final_score = self.weight * (score + strict_requirement_boost + bonus_boost)
         return final_score
 
 
 def score(
     *,
     candidate: BaseStatblock,
+    relaxed_mode: bool = False,
     require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     require_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
@@ -147,6 +155,13 @@ def score(
     require_cr: float | None = None,
     require_max_cr: float | None = None,
     require_shield: bool = False,
+    require_flags: str | set[str] | list[str] | None = None,
+    require_no_flags: str | set[str] | list[str] | None = None,
+    require_spellcasting: CasterType
+    | list[CasterType]
+    | set[CasterType]
+    | Literal[True]
+    | None = None,
     require_callback: StatblockFilter | None = None,
     bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
@@ -161,6 +176,8 @@ def score(
     bonus_cr: float | None = None,
     bonus_max_cr: float | None = None,
     bonus_shield: bool = False,
+    bonus_flags: str | set[str] | list[str] | None = None,
+    bonus_no_flags: str | set[str] | list[str] | None = None,
     bonus_callback: StatblockFilter | None = None,
     attack_names: AttackNames = None,
     stat_threshold: int = 12,
@@ -184,6 +201,13 @@ def score(
     require_cr = t.require_val(require_cr)
     require_max_cr = t.require_val(require_max_cr)
     require_shield = t.require_flag(require_shield)
+    require_flags = t.require_set(require_flags)
+    require_no_flags = t.require_set(require_no_flags)
+
+    if isinstance(require_spellcasting, bool) and require_spellcasting:
+        require_spellcasting = CasterType.all()
+
+    require_spellcasting = t.require_set(require_spellcasting)
     require_callback = t.require_val(require_callback)
 
     bonus_roles = t.optional_set(bonus_roles, require_roles)
@@ -197,11 +221,22 @@ def score(
     bonus_cr = t.optional_val(bonus_cr, require_cr)
     bonus_max_cr = t.optional_val(bonus_max_cr, require_max_cr)
     bonus_shield = t.optional_flag(require_shield)
+    bonus_flags = t.optional_set(bonus_flags, require_flags)
+    bonus_no_flags = t.optional_set(bonus_no_flags, require_no_flags)
     bonus_callback = t.optional_val(bonus_callback, require_callback)
 
     # checks against required conditions
     if require_roles:
-        t.required(candidate.role in require_roles)
+        has_main_role = candidate.role in require_roles
+        has_additional_role = any(
+            c in require_roles for c in candidate.additional_roles
+        )
+        if has_main_role:
+            t.required(True)
+        elif has_additional_role:
+            t.required(True, weight=0.75)  # additional roles are less important
+        else:
+            t.required(False)
 
     if require_types:
         t.required(candidate.creature_type in require_types)
@@ -210,7 +245,9 @@ def score(
         t.required(any(candidate_damage_types.intersection(require_damage)))
 
     if require_stats:
-        t.required(all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats))
+        t.required(
+            all(candidate.attributes.stat(s) >= stat_threshold for s in require_stats)
+        )
 
     if require_size:
         t.required(candidate.size >= require_size)
@@ -225,11 +262,17 @@ def score(
         t.required((candidate.speed.swim or 0) > 0)
 
     if require_attack_types:
-        t.required(candidate.attack_type in require_attack_types)
+        has_required_attack_type = (
+            len(candidate.attack_types.intersection(require_attack_types)) > 0
+        )
+        t.required(has_required_attack_type)
 
     if require_skills:
         t.required(
-            any(candidate.attributes.has_proficiency_or_expertise(s) for s in require_skills)
+            any(
+                candidate.attributes.has_proficiency_or_expertise(s)
+                for s in require_skills
+            )
         )
 
     if require_no_creature_class:
@@ -243,6 +286,15 @@ def score(
 
     if require_shield:
         t.required(candidate.uses_shield)
+
+    if require_flags:
+        t.required(all(r in candidate.flags for r in require_flags))
+
+    if require_no_flags:
+        t.required(all(r not in candidate.flags for r in require_no_flags))
+
+    if require_spellcasting:
+        t.required(candidate.caster_type in require_spellcasting)
 
     if require_callback is not None:
         t.required(require_callback(candidate))
@@ -265,20 +317,39 @@ def score(
         t.bonus(candidate.creature_type in bonus_types)
 
     if bonus_roles:
-        t.bonus(candidate.role in bonus_roles)
+        has_main_role = candidate.role in bonus_roles
+        has_additional_role = any(c in bonus_roles for c in candidate.additional_roles)
+
+        if has_main_role:
+            t.bonus(True)
+        elif has_additional_role:
+            t.bonus(True, weight=0.75)  # additional roles are less important
+        else:
+            t.bonus(False)
 
     if bonus_damage:
         t.bonus(any(candidate_damage_types.intersection(bonus_damage)))
 
     if bonus_skills:
-        t.bonus(any(candidate.attributes.has_proficiency_or_expertise(s) for s in bonus_skills))
+        t.bonus(
+            any(
+                candidate.attributes.has_proficiency_or_expertise(s)
+                for s in bonus_skills
+            )
+        )
 
     if bonus_attack_types:
-        t.bonus(candidate.attack_type in bonus_attack_types)
+        has_required_attack_type = (
+            len(candidate.attack_types.intersection(bonus_attack_types)) > 0
+        )
+        t.bonus(has_required_attack_type)
 
     if bonus_stats:
         t.bonus(
-            any(candidate.attributes.stat(stat) >= stat_threshold + 2 for stat in bonus_stats)
+            any(
+                candidate.attributes.stat(stat) >= stat_threshold + 2
+                for stat in bonus_stats
+            )
         )
 
     if bonus_size:
@@ -302,7 +373,13 @@ def score(
     if bonus_shield:
         t.bonus(candidate.uses_shield)
 
+    if bonus_flags:
+        t.bonus(all(r in candidate.flags for r in bonus_flags))
+
+    if bonus_no_flags:
+        t.bonus(all(r not in candidate.flags for r in bonus_no_flags))
+
     if bonus_callback:
         t.bonus(bonus_callback(candidate))
 
-    return t.score * score_multiplier
+    return t.calc_score(relaxed_mode) * score_multiplier

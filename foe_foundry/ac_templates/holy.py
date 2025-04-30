@@ -1,5 +1,3 @@
-from typing import Any
-
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..attributes import Stats
 from ..statblocks.base import BaseStatblock
@@ -24,10 +22,13 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
 
+        dex_mod = max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
+        con_mod = max(0, min(stats.attributes.stat_mod(Stats.CON), 2))
+
         ac = (
             10
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-            + min(stats.attributes.spellcasting_mod, 4)
+            + max(dex_mod, con_mod)
+            + max(0, min(stats.attributes.spellcasting_mod, 4))
             + (2 if uses_shield else 0)
             + quality_level
         )
@@ -38,6 +39,7 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
             has_shield=uses_shield,
             is_armored=False,
             quality_level=quality_level,
+            display_detail=True,
             score=ac + 0.6 - (1000 if not stats.attributes.is_sapient else 0),
         )
 

@@ -1,0 +1,114 @@
+{% from 'macros.html.j2' import property, property_short, features_block, attack_blocks,
+attack_block, benchmark_block, branding
+%}
+
+<div class="stat-block">
+    <h3 class="monster-name">{{statblock.name}}</h3>
+    {{ branding(text="Summoned with Foe Foundry") }}
+    <p class="creature-type">{{statblock.size}} {{statblock.creature_type}}</p>
+    <p>
+        {{property_short('AC', statblock.ac)}}
+        {{property_short('Initiative', statblock.initiative)}}
+    </p>
+    <p>
+        {{property_short('HP', statblock.hp)}}
+    </p>
+    <p>
+        {{property_short('Speed', statblock.movement)}}
+    </p>
+
+    <div class="stats">
+        <div class="table-overflow-wrapper">
+            <table class="physical abilities-saves">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Mod</th>
+                        <th>Save</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Str</th>
+                        <td>{{statblock.STR}}</td>
+                        <td>{{statblock.STR_MOD}}</td>
+                        <td>{{statblock.STR_SAVE}}</td>
+                    </tr>
+                    <tr>
+                        <th>Dex</th>
+                        <td>{{statblock.DEX}}</td>
+                        <td>{{statblock.DEX_MOD}}</td>
+                        <td>{{statblock.DEX_SAVE}}</td>
+                    </tr>
+                    <tr>
+                        <th>Con</th>
+                        <td>{{statblock.CON}}</td>
+                        <td>{{statblock.CON_MOD}}</td>
+                        <td>{{statblock.CON_SAVE}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-overflow-wrapper">
+            <table class="mental abilities-saves">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Mod</th>
+                        <th>Save</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Int</th>
+                        <td>{{statblock.INT}}</td>
+                        <td>{{statblock.INT_MOD}}</td>
+                        <td>{{statblock.INT_SAVE}}</td>
+                    </tr>
+                    <tr>
+                        <th>Wis</th>
+                        <td>{{statblock.WIS}}</td>
+                        <td>{{statblock.WIS_MOD}}</td>
+                        <td>{{statblock.WIS_SAVE}}</td>
+                    </tr>
+                    <tr>
+                        <th>Cha</th>
+                        <td>{{statblock.CHA}}</td>
+                        <td>{{statblock.CHA_MOD}}</td>
+                        <td>{{statblock.CHA_SAVE}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {{property_short('Skills', statblock.skills, block=True)}}
+    {{property_short('Vulnerabilities', statblock.damage_vulnerabilities, block=True)}}
+    {{property_short('Resistances', statblock.damage_resistances, block=True)}}
+    {{property_short('Immunities', statblock.immunities_combined, block=True)}}
+    {{property_short('Senses', statblock.senses, block=True)}}
+    {{property_short('Languages', statblock.languages, block=True)}}
+    {{property_short('CR', statblock.challenge_pb_combined, block=True)}}
+
+    {{features_block(statblock.passives, 'Traits')}}
+
+    <h4 class="monster-header">Actions</h4>
+
+    {{property('Multiattack', statblock.multiattack, block=True)}}
+    {{attack_block(statblock.attack.display_name, statblock.attack_text)}}
+
+    {{attack_blocks(statblock.attacks)}}
+
+    {{features_block(statblock.actions)}}
+
+    {{property('Spellcasting', statblock.spellcasting, block=True)}}
+
+    {{features_block(statblock.bonus_actions, 'Bonus Actions')}}
+
+    {{features_block(statblock.reactions, statblock.reaction_header)}}
+
+    {{features_block(statblock.legendary_actions, statblock.legendary_action_header)}}
+
+</div>

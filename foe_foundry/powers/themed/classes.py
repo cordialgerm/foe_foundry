@@ -1,8 +1,6 @@
 from typing import List
 
-import numpy as np
-
-from ...ac_templates import HeavyArmor
+from ...ac_templates import PlateArmor
 from ...attack_template import natural, spell, weapon
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
@@ -10,14 +8,15 @@ from ...damage import AttackType, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import transmutation
+from ...spells import CasterType, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ...utils.summoning import determine_summon_formula
-from ..creatures import giant
+from .. import flags
+from ..creature_type import giant
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from ..roles import artillery, bruiser
-from ..themed import fast, holy, organized, reckless, tough
+from ..roles import artillery, bruiser, leader
+from ..themed import fast, holy, reckless, tough
 
 
 class _DeathKnight(PowerWithStandardScoring):
@@ -31,7 +30,11 @@ class _DeathKnight(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Undead, CreatureType.Humanoid],
-                require_roles=[MonsterRole.Leader, MonsterRole.Default, MonsterRole.Bruiser],
+                require_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Soldier,
+                    MonsterRole.Bruiser,
+                ],
                 require_stats=[Stats.CHA, Stats.STR],
                 bonus_damage=DamageType.Necrotic,
                 attack_names=[
@@ -45,7 +48,7 @@ class _DeathKnight(PowerWithStandardScoring):
             ),
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.secondary_damage_type != DamageType.Necrotic:
             stats = stats.copy(secondary_damage_type=DamageType.Necrotic)
 
@@ -66,8 +69,7 @@ class _DeathKnight(PowerWithStandardScoring):
                 Each target must make a DC {dc} Charisma save or be affected as by the *Bane* spell (save ends at end of turn).",
         )
 
-        # TODO - remove rng
-        rng = np.random.default_rng(20210518)
+        rng = stats.create_rng("death knight summons")
         _, _, description = determine_summon_formula(
             summoner=CreatureType.Undead, summon_cr_target=cr_target, rng=rng
         )
@@ -96,7 +98,7 @@ def _EldritchKnights() -> List[Power]:
                 score_args=dict(
                     require_no_creature_class=True,
                     require_types=[CreatureType.Humanoid, CreatureType.Fey],
-                    bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Bruiser],
+                    bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Soldier],
                     require_stats=[Stats.INT, Stats.STR],
                     bonus_damage=element,
                     require_damage_exact_match=True,
@@ -124,7 +126,7 @@ def _EldritchKnights() -> List[Power]:
             feature1 = Feature(
                 name="Misty Step",
                 action=ActionType.BonusAction,
-                uses=3,
+                uses=max(stats.attributes.proficiency // 2, 1),
                 description=f"{stats.roleref.capitalize()} teleports up to 30 feet to an unoccupied space it can see",
             )
 
@@ -141,10 +143,13 @@ def _EldritchKnights() -> List[Power]:
 
             return [feature1, feature2]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(secondary_damage_type=self.element)
             stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
-            stats = stats.copy(creature_class="Eldritch Knight")
+            stats = stats.copy(
+                creature_class="Eldritch Knight", has_unique_movement_manipulation=True
+            )
+            stats = stats.with_flags(flags.HAS_TELEPORT)
             return stats
 
     return [
@@ -163,11 +168,20 @@ class _Artificer(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             score_args=dict(
                 require_no_creature_class=True,
-                bonus_roles=[MonsterRole.Defender, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Support,
+                ],
                 require_types=CreatureType.Humanoid,
                 require_stats=Stats.INT,
                 require_cr=3,
-                attack_names=["-", weapon.MaceAndShield, weapon.SwordAndShield, natural.Slam],
+                attack_names=[
+                    "-",
+                    weapon.MaceAndShield,
+                    weapon.SwordAndShield,
+                    natural.Slam,
+                ],
             ),
         )
 
@@ -186,8 +200,8 @@ class _Artificer(PowerWithStandardScoring):
         )
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.add_ac_template(HeavyArmor)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.add_ac_template(PlateArmor)
         stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
         stats = stats.copy(creature_class="Artificer")
         stats = stats.copy(secondary_damage_type=DamageType.Force)
@@ -231,10 +245,10 @@ class _Barbarian(PowerWithStandardScoring):
 
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Barbarian")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
-        stats = reckless.Toss.modify_stats(stats)
+        stats = reckless.Toss.modify_stats_inner(stats)
         return stats
 
 
@@ -249,7 +263,7 @@ class _Bard(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid, CreatureType.Fey],
-                bonus_roles=[MonsterRole.Controller, MonsterRole.Leader],
+                bonus_roles=[MonsterRole.Controller, MonsterRole.Support],
                 require_stats=Stats.CHA,
                 require_cr=3,
                 attack_names=[
@@ -285,8 +299,10 @@ class _Bard(PowerWithStandardScoring):
 
         return [feature1, feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Psychic, creature_class="Bard")
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Psychic, creature_class="Bard"
+        )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
         return stats
 
@@ -303,7 +319,12 @@ class _WarPriest(PowerWithStandardScoring):
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
                 require_stats=Stats.WIS,
-                bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                    MonsterRole.Support,
+                ],
                 require_cr=3,
                 attack_names=[
                     "-",
@@ -330,10 +351,12 @@ class _WarPriest(PowerWithStandardScoring):
 
         return feature1 + [feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Cleric")
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
+        )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
-        stats = holy.MassCureWounds.modify_stats(stats)
+        stats = holy.MassCureWounds.modify_stats_inner(stats)
         return stats
 
 
@@ -363,6 +386,7 @@ class _Ranger(PowerWithStandardScoring):
                     weapon.Daggers,
                     weapon.JavelinAndShield,
                     weapon.Crossbow,
+                    weapon.HandCrossbow,
                 ],
             ),
         )
@@ -370,11 +394,11 @@ class _Ranger(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return artillery.FocusShot.generate_features(stats)
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(Skills.Perception)
-        stats = stats.copy(creature_class="Ranger", attributes=new_attrs)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.grant_proficiency_or_expertise(Skills.Perception)
+        stats = stats.copy(creature_class="Ranger")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
-        stats = artillery.FocusShot.modify_stats(stats)
+        stats = artillery.FocusShot.modify_stats_inner(stats)
         stats = stats.add_spell(transmutation.SpikeGrowth.for_statblock())
         return stats
 
@@ -399,7 +423,13 @@ def _ArcaneArchers() -> List[Power]:
                         MonsterRole.Skirmisher,
                     ],
                     require_cr=3,
-                    attack_names=["-", weapon.Longbow, weapon.Shortbow, weapon.Crossbow],
+                    attack_names=[
+                        "-",
+                        weapon.Longbow,
+                        weapon.Shortbow,
+                        weapon.Crossbow,
+                        weapon.HandCrossbow,
+                    ],
                     # reduce odds of each individual occurance because there are 3 arcane archer options
                     score_multiplier=0.75,
                 ),
@@ -441,7 +471,7 @@ def _ArcaneArchers() -> List[Power]:
 
             return [feature]
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(creature_class="Arcane Archer")
             return stats
 
@@ -459,7 +489,11 @@ class _PsiWarrior(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid],
-                bonus_roles=[MonsterRole.Skirmisher, MonsterRole.Leader],
+                bonus_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Leader,
+                    MonsterRole.Soldier,
+                ],
                 require_stats=Stats.INT,
                 bonus_stats=Stats.WIS,
                 bonus_damage=DamageType.Psychic,
@@ -493,12 +527,12 @@ class _PsiWarrior(PowerWithStandardScoring):
 
         return [feature1, feature2]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(
             secondary_damage_type=DamageType.Psychic,
             creature_class="Psi Warrior",
         )
-        stats = stats.scale({Stats.INT: Stats.INT.Boost(2)})
+        stats = stats.grant_spellcasting(CasterType.Psionic)
 
         stats = stats.add_spell(transmutation.Telekinesis.for_statblock())
 
@@ -516,7 +550,7 @@ class _Cavalier(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
-                bonus_roles=MonsterRole.Leader,
+                bonus_roles={MonsterRole.Leader, MonsterRole.Soldier},
                 require_cr=3,
                 attack_names=["-", weapon.Greatsword, weapon.Greataxe],
             ),
@@ -547,7 +581,7 @@ class _Cavalier(PowerWithStandardScoring):
 
         return [feature1, feature2, feature3]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Cavalier")
         return stats
 
@@ -565,7 +599,7 @@ def _RuneKnights() -> List[Power]:
                 score_args=dict(
                     require_no_creature_class=True,
                     require_types=[CreatureType.Humanoid, CreatureType.Giant],
-                    bonus_roles=[MonsterRole.Bruiser, MonsterRole.Leader],
+                    bonus_roles=[MonsterRole.Soldier, MonsterRole.Leader],
                     bonus_damage=rune.damage_types,
                     require_stats=Stats.STR,
                     require_cr=3,
@@ -595,13 +629,15 @@ def _RuneKnights() -> List[Power]:
 
             return [feature1] + feature2
 
-        def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
             stats = stats.copy(creature_class="Rune Knight")
-            stats = stats.add_ac_template(HeavyArmor, ac_modifier=1)
-            stats = self.rune.modify_stats(stats)
+            stats = stats.add_ac_template(PlateArmor, ac_modifier=1)
+            stats = self.rune.modify_stats_inner(stats)
             return stats
 
-    return [_RuneKnight(rune) for rune in [giant.FireRune, giant.FrostRune, giant.StormRune]]
+    return [
+        _RuneKnight(rune) for rune in [giant.FireRune, giant.FrostRune, giant.StormRune]
+    ]
 
 
 class _Samurai(PowerWithStandardScoring):
@@ -615,7 +651,11 @@ class _Samurai(PowerWithStandardScoring):
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
-                bonus_roles=[MonsterRole.Leader, MonsterRole.Defender],
+                bonus_roles=[
+                    MonsterRole.Leader,
+                    MonsterRole.Defender,
+                    MonsterRole.Soldier,
+                ],
                 require_stats=Stats.STR,
                 require_cr=3,
                 attack_names=[
@@ -641,10 +681,10 @@ class _Samurai(PowerWithStandardScoring):
 
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Samurai")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
-        stats = tough.JustAScratch.modify_stats(stats)
+        stats = tough.JustAScratch.modify_stats_inner(stats)
         return stats
 
 
@@ -657,7 +697,10 @@ class _Monk(PowerWithStandardScoring):
             theme="class",
             power_level=HIGH_POWER,
             score_args=dict(
-                require_roles=[MonsterRole.Skirmisher, MonsterRole.Leader, MonsterRole.Bruiser],
+                require_roles=[
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Soldier,
+                ],
                 require_stats=Stats.DEX,
                 require_types=CreatureType.Humanoid,
                 require_no_creature_class=True,
@@ -671,11 +714,11 @@ class _Monk(PowerWithStandardScoring):
         feature2 = fast.Evasion.generate_features(stats)
         return feature1 + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.copy(creature_class="Monk")
         stats = stats.scale({Stats.DEX: Stats.DEX.Boost(2)})
-        stats = bruiser.StunningBlow.modify_stats(stats)
-        stats = fast.Evasion.modify_stats(stats)
+        stats = bruiser.StunningBlow.modify_stats_inner(stats)
+        stats = fast.Evasion.modify_stats_inner(stats)
         return stats
 
 
@@ -704,15 +747,17 @@ class _Paladin(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        feature1 = organized.InspiringCommander.generate_features(stats)
+        feature1 = leader.InspiringCommander.generate_features(stats)
         feature2 = holy.DivineSmite.generate_features(stats)
         return feature1 + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Paladin")
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Paladin"
+        )
         stats = stats.scale({Stats.CHA: Stats.CHA.Boost(2)})
-        stats = organized.InspiringCommander.modify_stats(stats)
-        stats = holy.DivineSmite.modify_stats(stats)
+        stats = leader.InspiringCommander.modify_stats_inner(stats)
+        stats = holy.DivineSmite.modify_stats_inner(stats)
         return stats
 
 
@@ -752,10 +797,12 @@ class _Cleric(PowerWithStandardScoring):
         feature2 = holy.WordOfRadiance.generate_features(stats)
         return [feature1] + feature2
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = stats.copy(secondary_damage_type=DamageType.Radiant, creature_class="Cleric")
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Radiant, creature_class="Cleric"
+        )
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
-        stats = holy.WordOfRadiance.modify_stats(stats)
+        stats = holy.WordOfRadiance.modify_stats_inner(stats)
         return stats
 
 
@@ -769,7 +816,11 @@ class _Druid(PowerWithStandardScoring):
             theme="class",
             score_args=dict(
                 require_no_creature_class=True,
-                require_types=[CreatureType.Humanoid, CreatureType.Fey, CreatureType.Giant],
+                require_types=[
+                    CreatureType.Humanoid,
+                    CreatureType.Fey,
+                    CreatureType.Giant,
+                ],
                 bonus_roles=[
                     MonsterRole.Leader,
                     MonsterRole.Controller,
@@ -790,7 +841,9 @@ class _Druid(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        healing = stats.target_value(0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS)
+        healing = stats.target_value(
+            0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
+        )
         uses = stats.attributes.stat_mod(Stats.WIS)
 
         feature = Feature(
@@ -803,7 +856,9 @@ class _Druid(PowerWithStandardScoring):
 
         return [feature]
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = stats.with_flags(flags.HAS_HEALING)
+
         stats = stats.scale({Stats.WIS: Stats.WIS.Boost(2)})
         if stats.secondary_damage_type is None:
             stats = stats.copy(secondary_damage_type=DamageType.Poison)

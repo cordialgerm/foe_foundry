@@ -7,37 +7,42 @@ from . import (
     anti_ranged,
     aquatic,
     bestial,
+    breath,
     chaotic,
     charm,
     classes,
     clever,
+    cowardly,
     cruel,
     cursed,
     deathly,
     diseased,
     domineering,
     earthy,
+    emanation,
     fast,
     fearsome,
     flying,
     gadget,
     holy,
-    magic,
+    honorable,
+    icy,
+    illusory,
     monstrous,
-    organized,
+    petrifying,
     poison,
     psychic,
     reckless,
+    serpentine,
     sneaky,
-    spellcaster,
     storm,
     technique,
     teleportation,
     temporal,
+    thuggish,
+    totemic,
     tough,
     trap,
-    tricky,
-    warrior,
 )
 
 ThemedPowers: List[Power] = (
@@ -46,35 +51,40 @@ ThemedPowers: List[Power] = (
     + anti_ranged.AntiRangedPowers
     + aquatic.AquaticPowers
     + bestial.BestialPowers
+    + breath.BreathPowers
     + chaotic.ChaoticPowers
     + charm.CharmPowers
     + classes.ClassPowers
     + clever.CleverPowers
     + cruel.CruelPowers
     + cursed.CursedPowers
+    + cowardly.CowardlyPowers
     + deathly.DeathlyPowers
     + diseased.DiseasedPowers
     + domineering.DomineeringPowers
     + earthy.EarthyPowers
+    + emanation.EmanationPowers
     + fast.FastPowers
     + fearsome.FearsomePowers
     + flying.FlyingPowers
     + gadget.GadgetPowers
     + holy.HolyPowers
-    + magic.MagicPowers
+    + honorable.HonorablePowers
+    + icy.IcyPowers
     + monstrous.MonstrousPowers
-    + organized.OrganizedPowers
+    + petrifying.PetrifyingPowers
     + poison.PoisonPowers
     + psychic.PsychicPowers
     + reckless.RecklessPowers
+    + serpentine.SerpentinePowers
     + sneaky.SneakyPowers
-    + spellcaster.SpellcasterPowers
     + storm.StormPowers
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
+    + totemic.TotemicPowers
+    + thuggish.ThuggishPowers
     + tough.ToughPowers
     + trap.TrapPowers
-    + tricky.TrickyPowers
-    + warrior.WarriorPowers
+    + illusory.IllusoryPowers
 )

@@ -92,3 +92,12 @@ def resolve_rng(rng: int | RngFactory | None) -> RngFactory:
         return factory
     else:
         return rng
+
+
+def rng_instance(
+    rng: int | RngFactory | np.random.Generator | None,
+) -> np.random.Generator:
+    if isinstance(rng, np.random.Generator):
+        return rng
+    else:
+        return resolve_rng(rng)()
