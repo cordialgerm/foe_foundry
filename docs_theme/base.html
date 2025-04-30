@@ -28,9 +28,9 @@
     {% if page and page.is_homepage %}
     <meta name="description" content="{{ config.site_description }}">
     <meta property="og:description" content="{{ config.site_description }}" />
-    {% elif page and page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}" />
+    {% elif page and page.meta.description %}
+    <meta name="description" content="{{ page.meta.description }}">
+    <meta property="og:description" content="{{ page.meta.description }}" />
     {% endif %}
 
     <meta property="og:type" content="website" />
