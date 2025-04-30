@@ -36,7 +36,7 @@
     <meta property="og:type" content="website" />
 
     {% if page and page.meta.image %}
-    <meta property="og:image" content="{{ config.site_url + page.meta.image | url }}" />
+    <meta property="og:image" content="{{ config.site_url + page.meta.image}}" />
     {% endif %}
 
     {%- block styles %}
