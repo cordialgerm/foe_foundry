@@ -64,7 +64,7 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 - In some cultures, Banshees are seen not as monsters but as messengers that warn those fated to die.
 - A Banshee’s presence carries a dread silence that can be physically painful to break
 
-![The keening wail of a banshee can break the will of even the strongest of heart](../img/bandit.tif){.monster-image .masked}
+![The keening wail of a banshee can break the will of even the strongest of heart](../img/banshee.png){.monster-image .masked}
 
 ### Banshee Statblock
 
@@ -98,7 +98,7 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 - They often fixate on objects, people, or places tied to their strongest memories: an heirloom locket, a family home, or the battlefield where they fell.
 - Their presence distorts time and perception, as their pain bleeds into the world. Dreams fray, names slip, and voices echo from forgotten places.
 
-![Ghosts are animated by memories too painful to pass](../img/ghost.tif){.monster-image .masked}
+![Ghosts are animated by memories too painful to pass](../img/ghost-0.png){.monster-image .masked}
 
 ### Ghost Statblocks
 

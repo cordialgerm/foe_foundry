@@ -16,7 +16,7 @@ Mages are wielders of forgotten arts and living vaults of hidden knowledge. Some
 **Necromancers** are mortal mages who use dark and heretical magicks to bend
 [Undead Spirits](../families/undead.md#necromancers-and-once-mortal-masters) to their will. They are masters of death magic and bind throngs of reanimated dead to their will. They can raise the dead to serve as their minions, drain the life force from their enemies, or create powerful curses and hexes to bring ruin to their foes.
 
-![Mortal necromancer channeling forbidden magic to raise the dead](../img/necromancer.tif){.monster-image .masked}
+![Mortal necromancer channeling forbidden magic to raise the dead](../img/necromancer.png){.monster-image .masked}
 
 ### Necromancer Lore
 

@@ -2,6 +2,7 @@
 title: Lich Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Liches
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+image: img/lich.png
 ---
 
 # Liches
@@ -23,7 +24,7 @@ Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken t
 - A lich cannot be truly destroyed while its soul anchor persists
 - Each soul anchor is intimately tied to the lich's former life and guarded by dire wards
 
-![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.tif){.monster-image .masked}
+![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.png){.monster-image .masked}
 
 ## Lich Tactics
 
