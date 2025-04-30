@@ -3,6 +3,7 @@ title: Foe Foundry
 description: Foe Foundry helps GMs instantly summon unforgettable monsters for 5E and other fantasy TTRPGs. Skip the statblock grind—get handcrafted powers, flavorful foes, and encounter-ready creations built by a GM, for GMs.
 hide:
   - toc
+image: ./img/favicon.png
 ---
 
 # Foe Foundry

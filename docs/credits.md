@@ -1,6 +1,12 @@
+---
+title: Credits
+description: Foe Foundry is built on a foundation of incredible RPG creators, artists, and open-source tools. Explore our full list of sources, licenses, and acknowledgments.
+image: ./img/favicon.png
+---
+
 # Credits
 
-## Inspirations
+## Acknowledgments
 
 <span class="branding">[Foe Foundry](https://foefoundry.com)</span> is inspired by a variety of sources:
 
