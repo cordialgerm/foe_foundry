@@ -33,37 +33,37 @@ Zombies act mindlessly, following the commands given to them by their master. Un
 
 The classic shambling undead, **Zombies** are rotting corpses animated by splintered souls, driven by instinct and dark magic. Tough, tireless, and unthinking, they overwhelm the living through sheer persistence.
 
-![[Zombie]]
+[[!Zombie]]
 
 ### Zombie Brute
 
 A hulking variant of the standard Zombie, the **Zombie Brute** is stitched together from larger bodies or masses of dead flesh. Stronger and more resilient, it serves as a blunt instrument for necromancers and greater undead.
 
-![[Zombie Brute]]
+[[!Zombie Brute]]
 
 ### Zombie Gravewalker
 
 A **Zombie Gravewalker** forms when death and corruption pool to a breaking point and the deathly influence of the Styx begins to leak into the Mortal Realm. This often occurs in ancient graveyards.
 
-![[Zombie Gravecaller]]
+[[!Zombie Gravecaller]]
 
 ### Zombie Ogre
 
 A massive, muscle-bound horror, the **Zombie Ogre** combines the brute strength of ogres with the unyielding stamina of undeath. These creatures are often unleashed as living siege weapons against settlements and strongholds.
 
-![[Zombie Ogre]]
+[[!Zombie Ogre]]
 
 ### Zombie Giant
 
 The **Zombie Giant** is a towering nightmare, a fallen giant lashed back into motion by necromantic rituals. Its immense size and decaying strength make it a catastrophic force on the battlefield.
 
-![[Zombie Giant]]
+[[!Zombie Giant]]
 
 ### Zombie Titan
 
 An ambitious **Lich** or **Necromancer Archmage** will occasionally seek out and slay an ancient titan and raise its body as a **Zombie Titan**. These behemoths of rotting flesh and splintered spirit cause whole armies to tremble upon their approach.
 
-![[Zombie Titan]]
+[[!Zombie Titan]]
 
 ## Zombie Encounter Ideas
 

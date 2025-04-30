@@ -24,8 +24,8 @@ class MonsterLinkExtension(Extension):
 
 class MonsterLinkPreprocessor(Preprocessor):
     MONSTER_LINK_RE = re.compile(r"\[\[(?P<name1>.+?)\]\]|\*\*(?P<name2>.+?)\*\*")
-    MONSTER_BUTTON_RE = re.compile(r"\$\[\[(?P<name3>.+?)\]\]")
-    MONSTER_STATBLOCK_RE = re.compile(r"!\[\[(?P<name4>.+?)\]\]")
+    MONSTER_BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
+    MONSTER_STATBLOCK_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
 
     def __init__(self, md, ref_resolver: MonsterRefResolver, resolved_refences: list):
         super().__init__(md)

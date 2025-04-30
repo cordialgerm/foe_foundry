@@ -33,13 +33,13 @@ When running a Chimera encounter, start by using the *Quarreling Heads* ability 
 
 ### Chimera
 
-![[Chimera]]
+[[!Chimera]]
 
 ### Chimera Sovereign
 
 A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
-![[Chimera Sovereign]]
+[[!Chimera Sovereign]]
 
 ## Chimera Encounter Ideas
 

@@ -70,13 +70,13 @@ Unconcerned with the destruction he initiated, Karklaz arose as an **Archlich**.
 
 **Liches** are powerful undead sorcerers who have bound their souls to the Mortal Realm through dark rituals and soul anchors. These immortal necromancers command devastating magic and legions of undead, making them deadly threats to any world they haunt.
 
-![[Lich]]
+[[!Lich]]
 
 ### Archlich
 
 **Archliches** are ancient undead spellcasters whose power and malice eclipse even that of lesser liches. These deathless kings of ruin are masters of entropy and command reality-warping magic. Some seek to conquer continents, ascend to godhood, or alter the very nature of reality.
 
-![[Archlich]]
+[[!Archlich]]
 
 ## Lich Encounter Ideas
 

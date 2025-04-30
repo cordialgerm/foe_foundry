@@ -29,37 +29,37 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 
 **Skeletons** are classic undead monsters — reanimated humanoid bones armed with the weapons and armor they bore in life. Though devoid of true thought, Skeletons possess greater agility and basic problem-solving instincts compared to more mindless shambling dead.
 
-![[Skeleton]]
+[[!Skeleton]]
 
 ### Skeletal Grave Guard
 
 **Skeletal Grave Guards** are elite undead warriors, animated from the bones of **Knights** and hardened **Warriors**. Powerful **Necromancers**, **Vampires**, and **Liches** will often create these guardians from the bodies of heroes they have vanquished, forcing them to serve their foul agendas.
 
-![[Skeletal Grave Guard]]
+[[!Skeletal Grave Guard]]
 
 ### Burning Skeleton
 
 **Burning Skeletons** blaze with wild necromantic flame, their scorched bones granting them fiery attacks and enhanced awareness. These flaming undead often serve as commanders among lesser skeletal hordes.
 
-![[Burning Skeleton]]
+[[!Burning Skeleton]]
 
 ### Burning Skeletal Champion
 
 **Burning Skeletal Champions** are fearsome undead commanders, their bones ablaze with necromantic fire. Driven by remnants of martial pride and cruel will, they lead flaming legions into battle, searing both flesh and spirit with each strike.
 
-![[Burning Skeletal Champion]]
+[[!Burning Skeletal Champion]]
 
 ### Freezing Skeleton
 
 Freezing Skeletons are sheathed in Styx-born frost, their bones rimed with deathly ice. They move with eerie calm, their chilling aura slowing and sapping the life of any living creature that dares to approach.
 
-![[Freezing Skeleton]]
+[[!Freezing Skeleton]]
 
 ### Freezing Skeletal Champion
 
 **Freezing Skeletal Champions** embody the chill of death, armored in ice and shadow. Wielding weapons rimed with Styx-born frost, they command undead forces in silence, their very presence draining warmth and hope from the living.
 
-![[Freezing Skeletal Champion]]
+[[!Freezing Skeletal Champion]]
 
 ## Skeleton Encounter Ideas
 

@@ -52,5 +52,8 @@
     //VS Code should uise cmd for debugging, tests, and other tasks
     "terminal.integrated.automationProfile.windows": {
         "path": "C:/windows/system32/cmd.exe"
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
     }
 }

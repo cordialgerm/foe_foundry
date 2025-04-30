@@ -31,19 +31,19 @@ Ghouls are a classic threat for fantasy tabletop RPGs, from grim dungeon crawls 
 
 Twisted by the curse of cannibalism, **Ghouls** are undead predators driven by an endless hunger for living flesh. They roam in howling packs, haunting graveyards, catacombs, and battlefields.
 
-![[Ghoul]]
+[[!Ghoul]]
 
 ### Ghast
 
 **Ghasts** are bloated, corpse-ridden horrors — **Ghouls** swollen with dark power and the stench of undeath. They crave not only flesh but the decadent vices they once reveled in life.
 
-![[Ghast]]
+[[!Ghast]]
 
 ### Ghast Gravelord
 
 A **Ghast Gravelord** is a ghoul who has ascended through blasphemous rites, gaining the power to command the dead and create other **Ghouls**. Some whisper that a **Ghast** that consumes the **Necromancer Mage** who created it ascends into a **Ghast Gravelord**. These dread creatures spread corruption wherever their unholy touch reaches.
 
-![[Ghast Gravelord]]
+[[!Ghast Gravelord]]
 
 ## Ghoul Encounter Ideas
 

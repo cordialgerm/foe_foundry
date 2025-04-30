@@ -51,7 +51,7 @@ A **Specter** is a soul fragment, splintered by violence or unendurable pain. La
 
 ### Specter Statblock
 
-![[Specter]]
+[[!Specter]]
 
 ## Banshees
 
@@ -67,7 +67,7 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 
 ### Banshee Statblock
 
-![[Banshee]]
+[[!Banshee]]
 
 ## Revenants
 
@@ -83,7 +83,7 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 
 ### Revenant Statblock
 
-![[Revenant]]
+[[!Revenant]]
 
 ## Ghosts
 
@@ -101,7 +101,7 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 
 ### Ghost Statblocks
 
-![[Ghost]]
+[[!Ghost]]
 
 ## Wraiths
 
@@ -121,13 +121,13 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 
 #### Wraith
 
-![[Wraith]]
+[[!Wraith]]
 
 #### Wraith Shadelord
 
 When the spirit of the wraith is particularly evil it can attract such a dense miasma of negative energy that a **Wraith Shadelord** forms.
 
-![[Wraith Shadelord]]
+[[!Wraith Shadelord]]
 
 ## Spirit and Ghost Encounters
 
