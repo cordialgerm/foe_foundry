@@ -114,6 +114,9 @@ hr {
 .monster-image {
     max-height: 400px;
     background-color: transparent;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .monster-image.foreground {
@@ -148,6 +151,23 @@ hr {
     border-color: var(--box-shadow-color);
     box-shadow: 0 0 1 var(--box-shadow-strong-color);
     text-decoration-line: none;
+}
+
+.nav-link.patreon::after,
+a.patreon::after {
+    content: " ";
+    background-image: url('../img/patreon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 0.25em;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+.patreon.big-link {
+    font-size: 1.5em;
 }
 
 
