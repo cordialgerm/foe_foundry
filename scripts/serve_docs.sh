@@ -4,8 +4,14 @@
 # Stop on first error
 set -e
 
-# Move to the script's directory (optional but good for robustness)
+# Move back to the root of the repository
 cd "$(dirname "$0")/.."
 
+# Make sure the venv is in sync with the lock file
+poetry install --sync
+
+# Set PYTHONPATH so that mkdocs can find the package in this repo
+export PYTHONPATH=.
+
 # Set the correct PYTHONPATH
-PYTHONPATH=. mkdocs serve
+poetry run mkdocs serve
