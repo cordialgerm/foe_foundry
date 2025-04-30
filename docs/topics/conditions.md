@@ -32,7 +32,7 @@ A <span class='condition condition-frozen'>Frozen</span> creature is partially e
 ### Shocked
 
 !!! info
-    The Shocked condition can create interesting situtations where players are forced to drop important weapons or quest items. Consider creating scenarios where enemies are trying to steal a particular weapon or item from the PCs and utilize shocking to try to force the PCs to drop the item.
+    The Shocked condition can create interesting situations where players are forced to drop important weapons or quest items. Consider creating scenarios where enemies are trying to steal a particular weapon or item from the PCs and utilize shocking to try to force the PCs to drop the item.
 
 A <span class='condition condition-shocked'>Shocked</span> creature is <span class='condition condition-dazed'>Dazed</span> and drops whatever it is carrying.
 
