@@ -26,7 +26,7 @@ No, all statblocks and monsters are handcrafted by me. There is an algorithm tha
 
 ## Does Foe Foundry use GenAI monster art?
 
-No, all monster art is [commercially licensed and used with permission](../credits.md#art)
+No, all monster art is [commercially licensed and used with permission](../credits.md#art-credits)
 
 ## Can I use Foe Foundry monsters in my home campaign?
 
