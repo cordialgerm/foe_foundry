@@ -4,6 +4,7 @@
 }
 
 .branding a::after,
+a.branding::after,
 .navbar-brand::after {
     content: " ";
     display: inline-block;
