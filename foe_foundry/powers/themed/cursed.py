@@ -23,6 +23,7 @@ class CursedPower(PowerWithStandardScoring):
         name: str,
         source: str,
         create_date: datetime | None = None,
+        reference_statblock: str = "Ghost",
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
@@ -37,6 +38,7 @@ class CursedPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="cursed",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,

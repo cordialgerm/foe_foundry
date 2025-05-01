@@ -25,6 +25,7 @@ class _WolfPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="wolf",
+            reference_statblock="Dire Wolf",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 28),

@@ -32,6 +32,7 @@ class GelatinousCubePower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="gelatinous_cube",
+            reference_statblock="Gelatinous Cube",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

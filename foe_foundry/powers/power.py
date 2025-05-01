@@ -25,6 +25,7 @@ class Power(ABC):
         name: str,
         power_type: PowerType,
         theme: str,
+        reference_statblock: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         roles: List[MonsterRole] | None = None,
@@ -45,6 +46,7 @@ class Power(ABC):
         self.suggested_cr = suggested_cr
         self.create_date = create_date
         self.theme = theme
+        self.reference_statblock = reference_statblock
 
         if self.power_level == EXTRA_HIGH_POWER:
             self.power_level_text = "Extra High Power"
@@ -98,6 +100,7 @@ class PowerWithStandardScoring(Power):
         name: str,
         power_type: PowerType,
         theme: str,
+        reference_statblock: str,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
@@ -136,6 +139,7 @@ class PowerWithStandardScoring(Power):
             power_level=power_level,
             create_date=create_date,
             theme=theme,
+            reference_statblock=reference_statblock,
             roles=roles,
             creature_types=creature_types,
             damage_types=damage_types,

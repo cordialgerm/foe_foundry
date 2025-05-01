@@ -47,6 +47,7 @@ class HonorablePower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             theme="honorable",
+            reference_statblock="Knight",
             create_date=create_date,
             score_args=dict(
                 require_callback=could_be_honorable,

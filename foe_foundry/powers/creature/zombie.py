@@ -27,6 +27,7 @@ class ZombiePower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="zombie",
+            reference_statblock="Zombie",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

@@ -28,6 +28,7 @@ class _BasiliskPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="basilisk",
+            reference_statblock="Basilisk",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 14),

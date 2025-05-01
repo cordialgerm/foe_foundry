@@ -53,6 +53,7 @@ class FeyPower(PowerWithStandardScoring):
             create_date=create_date,
             score_args=standard_score_args,
             theme="Fey",
+            reference_statblock="Green Hag",
         )
 
 

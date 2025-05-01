@@ -37,6 +37,7 @@ class RecklessPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             theme="reckless",
+            reference_statblock="Berserker",
             power_type=PowerType.Theme,
             create_date=create_date,
             score_args=dict(

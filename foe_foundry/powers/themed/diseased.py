@@ -19,6 +19,7 @@ class DiseasePower(PowerWithStandardScoring):
         self,
         name: str,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Ghoul",
         **score_args,
     ):
         super().__init__(
@@ -27,6 +28,7 @@ class DiseasePower(PowerWithStandardScoring):
             source="Foe Foundry",
             create_date=datetime(2023, 11, 20),
             theme="disease",
+            reference_statblock=reference_statblock,
             power_level=power_level,
             score_args=dict(
                 require_types=[

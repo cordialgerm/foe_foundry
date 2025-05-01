@@ -40,6 +40,7 @@ class TeleportationPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="teleportation",
+            reference_statblock="Transmuter Mage",
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=create_date,

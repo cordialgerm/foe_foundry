@@ -37,6 +37,7 @@ class GuardPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="guard",
+            reference_statblock="Guard",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

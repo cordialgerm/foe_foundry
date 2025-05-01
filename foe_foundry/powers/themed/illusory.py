@@ -45,6 +45,7 @@ class Illusory(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             theme="tricky",
+            reference_statblock="Adult Green Dragon",
             score_args=dict(
                 require_types={
                     CreatureType.Fey,

@@ -25,6 +25,7 @@ class ArtilleryPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Scout",
         **score_args,
     ):
         standard_score_args = (
@@ -43,6 +44,7 @@ class ArtilleryPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Artillery",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 

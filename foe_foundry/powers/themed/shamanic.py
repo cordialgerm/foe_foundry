@@ -32,6 +32,7 @@ class ShamanicPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             theme="shamanic",
+            reference_statblock="Druid",
             create_date=create_date,
             score_args=dict(
                 require_types=CreatureType.Humanoid,

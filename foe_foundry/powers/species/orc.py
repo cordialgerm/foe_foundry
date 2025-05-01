@@ -53,6 +53,7 @@ class OrcPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Orc",
+            reference_statblock="Orc",
             score_args=standard_score_args,
         )
 

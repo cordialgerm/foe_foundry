@@ -48,6 +48,7 @@ class SkirmisherPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Skirmisher",
+            reference_statblock="Goblin",
             score_args=standard_score_args,
         )
 

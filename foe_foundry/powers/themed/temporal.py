@@ -32,6 +32,7 @@ class TemporalPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="temporal",
+            reference_statblock="Divination Mage",
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=create_date,

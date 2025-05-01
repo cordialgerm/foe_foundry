@@ -32,7 +32,8 @@ class WightPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            theme="skeletal",
+            theme="Wight",
+            reference_statblock="Wight",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

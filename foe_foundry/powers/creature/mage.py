@@ -42,6 +42,7 @@ class MagePower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="mage",
+            reference_statblock="Mage",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 7),

@@ -34,6 +34,7 @@ class OozePower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Ooze",
+            reference_statblock="Gelatinous Cube",
             score_args=standard_score_args,
         )
 

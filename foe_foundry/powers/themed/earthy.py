@@ -23,6 +23,7 @@ class EarthPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Earth Elemental",
         **score_args,
     ):
         super().__init__(
@@ -32,6 +33,7 @@ class EarthPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Theme,
             theme="earth",
+            reference_statblock=reference_statblock,
             score_args=dict(
                 require_types=[
                     CreatureType.Beast,

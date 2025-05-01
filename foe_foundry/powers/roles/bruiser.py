@@ -19,6 +19,7 @@ class BruiserPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Ogre",
         **score_args,
     ):
         standard_score_args = dict(
@@ -34,6 +35,7 @@ class BruiserPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Bruiser",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 

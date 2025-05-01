@@ -189,6 +189,28 @@ a.patreon::after {
     background: inherit;
 }
 
+.list-with-columns,
+.list-with-columns+ul {
+    column-count: 1;
+    column-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+    .list-with-columns,
+    .list-with-columns+ul {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .list-with-columns,
+    .list-with-columns+ul {
+        column-count: 3;
+    }
+}
+
 
 footer,
 footer a {

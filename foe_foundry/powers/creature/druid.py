@@ -21,6 +21,7 @@ class DruidPower(PowerWithStandardScoring):
             power_level=power_level,
             source="Foe Foundry",
             theme="druid",
+            reference_statblock="Druid",
             score_args=dict(
                 require_callback=is_druid,
                 require_types=CreatureType.Humanoid,

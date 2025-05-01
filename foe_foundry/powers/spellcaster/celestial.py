@@ -1,5 +1,3 @@
-from typing import List
-
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...role_types import MonsterRole
@@ -60,6 +58,7 @@ class _CelestialCaster(_Spellcaster):
         args: dict = (
             dict(
                 theme="Celestial",
+                reference_statblock="Deva",
                 score_args=dict(
                     require_callback=is_celestial_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],
@@ -81,13 +80,13 @@ class _CelestialCaster(_Spellcaster):
 
 
 CelestialAdept: Power = _CelestialCaster(
-            name="Celestial Adept",
-            min_cr=2,
-            max_cr=4,
-            spells=CelestialAdeptSpells,
-            power_level=LOW_POWER,
+    name="Celestial Adept",
+    min_cr=2,
+    max_cr=4,
+    spells=CelestialAdeptSpells,
+    power_level=LOW_POWER,
 )
-CelestialMaster: Power =  _CelestialCaster(
+CelestialMaster: Power = _CelestialCaster(
     name="Celestial Master",
     min_cr=5,
     max_cr=10,

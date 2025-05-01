@@ -31,6 +31,7 @@ class PlantPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Plant",
+            reference_statblock="Shambling Mound",
             score_args=standard_score_args,
         )
 

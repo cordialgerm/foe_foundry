@@ -17,7 +17,13 @@ from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
 
 class EmanationPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER, **kwargs):
+    def __init__(
+        self,
+        name: str,
+        power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Mage",
+        **kwargs,
+    ):
         new_callback = kwargs.pop("require_callback", None)
 
         def callback(stats: BaseStatblock) -> bool:
@@ -48,6 +54,7 @@ class EmanationPower(PowerWithStandardScoring):
             source="Foe Foundry",
             power_type=PowerType.Theme,
             theme="emanation",
+            reference_statblock=reference_statblock,
             create_date=datetime(2025, 3, 9),
             power_level=power_level,
             score_args=score_args,

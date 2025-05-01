@@ -44,8 +44,15 @@ class ElementalPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Elemental",
+            reference_statblock="Fire Elemental",
             score_args=standard_score_args,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Fire)
+        return stats
 
 
 def damaging_aura_power(name: str, damage_type: DamageType) -> Power:

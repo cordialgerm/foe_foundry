@@ -26,6 +26,7 @@ class GoblinPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="goblin",
+            reference_statblock="Goblin",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

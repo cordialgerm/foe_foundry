@@ -4,6 +4,7 @@ site_description: Foe Foundry helps GMs instantly summon unforgettable monsters 
 nav:
   - Monsters: monsters/index.md
   - Families: families/index.md
+  - Powers: powers/all.md
   - Blog: blog/index.md
   - Topics: topics/index.md
   - Credits: credits.md

@@ -33,6 +33,7 @@ class GnomePower(PowerWithStandardScoring):
             power_type=PowerType.Species,
             power_level=power_level,
             source="Foe Foundry",
+            reference_statblock="Spy",
             create_date=datetime(2025, 3, 2),
             theme="Gnome",
             score_args=standard_score_args,
