@@ -31,7 +31,9 @@ def generate_all_powers():
                 continue
 
             lines.append(f"- [{theme.title()} Powers ({len(powers)})]({theme}.md)\n")
-            generate_theme_file(theme, powers)
+
+    for theme, powers in Powers.PowersByTheme.items():
+        generate_theme_file(theme, powers)
 
     # Write it into the virtual MkDocs build
     with mkdocs_gen_files.open("powers/all.md", "w") as f:
