@@ -37,6 +37,7 @@ class DevilPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="Devil",
+            reference_statblock="Pit Fiend",
             score_args=standard_score_args,
         )
 

@@ -34,6 +34,7 @@ class OgrePower(PowerWithStandardScoring):
             create_date=create_date,
             power_type=PowerType.Creature,
             theme="ogre",
+            reference_statblock="Ogre",
             score_args=dict(require_callback=is_ogre, require_types=CreatureType.Giant)
             | score_args,
         )

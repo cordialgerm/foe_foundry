@@ -23,6 +23,7 @@ class StormPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="storm",
+            reference_statblock="Storm Giant",
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=create_date,

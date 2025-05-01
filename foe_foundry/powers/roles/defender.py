@@ -17,6 +17,7 @@ class DefenderPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Shield Guardian",
         **score_args,
     ):
         standard_score_args = dict(
@@ -33,6 +34,7 @@ class DefenderPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Defender",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 

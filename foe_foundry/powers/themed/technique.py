@@ -34,6 +34,7 @@ class Technique(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_level=power_level,
             create_date=create_date,
             score_args=score_args,
@@ -739,6 +740,7 @@ class _Dueling(PowerWithStandardScoring):
             name="Dueling",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
                 bonus_roles=[
@@ -771,6 +773,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             name="Expert Brawler",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Giant],
@@ -807,6 +810,7 @@ class _Interception(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="SRD5.1 Interception",
             theme="technique",
+            reference_statblock="Warrior",
             score_args=dict(
                 attack_names={
                     "-",
@@ -841,6 +845,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             name="Bait and Switch",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
             score_args=dict(
@@ -871,6 +876,7 @@ class _QuickToss(PowerWithStandardScoring):
             name="Quick Toss",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
                 bonus_roles={MonsterRole.Skirmisher, MonsterRole.Soldier},
@@ -905,6 +911,7 @@ class _ArmorMaster(PowerWithStandardScoring):
         super().__init__(
             name="Armor Master",
             source="A5E SRD Heavy Armor Expertise",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             theme="technique",
             score_args=dict(
@@ -933,6 +940,7 @@ class _ShieldMaster(PowerWithStandardScoring):
             name="Shield Master",
             source="A5E SRD Shield Focus",
             theme="technique",
+            reference_statblock="Warrior",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
             score_args=dict(
@@ -957,6 +965,7 @@ class _PolearmMaster(PowerWithStandardScoring):
             name="Polearm Master",
             source="A5E SRD Polearm Savant",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
                 bonus_roles={
@@ -983,6 +992,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             name="Great Weapon Fighting",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
@@ -1018,6 +1028,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             name="Whirlwind of Steel",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
                 bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
@@ -1054,6 +1065,7 @@ class _Sharpshooter(PowerWithStandardScoring):
             name="Sharpshooter's Shot",
             source="Foe Foundry",
             theme="technique",
+            reference_statblock="Scout",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(

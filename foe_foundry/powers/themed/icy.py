@@ -27,6 +27,7 @@ class IcyPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="icy",
+            reference_statblock="Cryomancer Mage",
             score_args=dict(
                 require_types=[
                     CreatureType.Humanoid,

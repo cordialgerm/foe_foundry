@@ -31,6 +31,7 @@ class ConstructPower(PowerWithStandardScoring):
         name: str,
         source: str,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Stone Golem",
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -42,6 +43,7 @@ class ConstructPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="Construct",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 
@@ -51,6 +53,7 @@ class _ConstructedGuardian(ConstructPower):
         super().__init__(
             name="Constructed Guardian",
             source="Foe Foundry",
+            reference_statblock="Shield Guardian",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
@@ -108,6 +111,7 @@ class _BoundProtector(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Bound Protector",
+            reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
         )
 
@@ -146,6 +150,7 @@ class _Smother(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Smother",
+            reference_statblock="Rug of Smothering",
             source="SRD 5.1 Rug of Smothering",
             attack_names={"-", natural_attacks.Slam},
         )
@@ -227,7 +232,11 @@ class _Retrieval(ConstructPower):
 
 class _SpellStoring(ConstructPower):
     def __init__(self):
-        super().__init__(name="Spell Storing", source="SRD 5.1 Shield Guardian")
+        super().__init__(
+            name="Spell Storing",
+            reference_statblock="Shield Guardian",
+            source="SRD 5.1 Shield Guardian",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

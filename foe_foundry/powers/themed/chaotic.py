@@ -28,6 +28,7 @@ class ChaoticPower(PowerWithStandardScoring):
         source: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        reference_statblock: str = "Cultist",
         **score_args,
     ):
         standard_score_args = dict(
@@ -44,6 +45,7 @@ class ChaoticPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="Chaotic",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,

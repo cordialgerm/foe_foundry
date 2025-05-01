@@ -14,6 +14,7 @@ class FastPower(PowerWithStandardScoring):
         name: str,
         source: str,
         create_date: datetime | None = None,
+        reference_statblock: str = "Goblin",
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
@@ -23,6 +24,7 @@ class FastPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             power_type=PowerType.Theme,
+            reference_statblock=reference_statblock,
             theme="fast",
             score_args=dict(
                 require_stats=Stats.DEX,

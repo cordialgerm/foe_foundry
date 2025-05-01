@@ -38,6 +38,7 @@ class PsychicPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="psychic",
+            reference_statblock="Aboleth",
             power_type=power_type,
             score_args=dict(
                 require_types={CreatureType.Aberration, CreatureType.Humanoid},

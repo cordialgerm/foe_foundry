@@ -40,6 +40,7 @@ class GadgetPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="gadget",
+            reference_statblock="Thug",
             power_type=PowerType.Theme,
             power_level=power_level,
             score_args=standard_score_args,

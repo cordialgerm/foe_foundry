@@ -32,6 +32,7 @@ class SupportPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Support",
+            reference_statblock="Priest",
             score_args=standard_score_args,
         )
 

@@ -20,6 +20,7 @@ class AmbusherPower(PowerWithStandardScoring):
         source: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        reference_statblock: str = "Assassin",
         **score_args,
     ):
         standard_score_args = dict(
@@ -36,6 +37,7 @@ class AmbusherPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="Ambusher",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 

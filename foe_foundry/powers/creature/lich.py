@@ -43,6 +43,7 @@ class LichPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="lich",
+            reference_statblock="Lich",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 27),

@@ -35,6 +35,7 @@ class _NothicPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="hollow_gazer",
+            reference_statblock="Hollow Gazer",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 4),

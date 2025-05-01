@@ -28,6 +28,7 @@ class DeathlyPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Zombie",
         **score_args,
     ):
         def undead_or_necromancer(c: BaseStatblock) -> bool:
@@ -53,6 +54,7 @@ class DeathlyPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="death",
+            reference_statblock=reference_statblock,
             power_level=power_level,
             score_args=dict(
                 require_types={

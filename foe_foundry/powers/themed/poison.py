@@ -27,6 +27,7 @@ class PoisonPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="poison",
+            reference_statblock="Hydra",
             score_args=dict(
                 require_types=[
                     CreatureType.Humanoid,

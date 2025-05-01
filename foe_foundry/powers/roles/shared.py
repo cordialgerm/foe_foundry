@@ -18,6 +18,7 @@ def NimbleEscape(role: MonsterRole):
             super().__init__(
                 name=f"Nimble Escape - {role.name}",
                 source="SRD5.1 Goblin",
+                reference_statblock="Goblin",
                 power_type=PowerType.Role,
                 score_args=dict(require_roles=role, require_callback=custom_filter),
                 theme=role.name.capitalize(),
@@ -45,6 +46,7 @@ def CunningAction(role: MonsterRole):
             super().__init__(
                 name=f"Cunning Action - {role.name}",
                 source="SRD5.1 Spy",
+                reference_statblock="Spy",
                 power_type=PowerType.Role,
                 theme=role.name.capitalize(),
                 score_args=dict(require_roles=role, require_callback=custom_filter),

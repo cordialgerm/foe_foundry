@@ -24,6 +24,7 @@ class _VrockPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="vrock",
+            reference_statblock="Vrock",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 16),

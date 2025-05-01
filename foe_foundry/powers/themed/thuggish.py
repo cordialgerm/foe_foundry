@@ -38,6 +38,7 @@ class ThuggishPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="thuggish",
+            reference_statblock="Thug",
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,

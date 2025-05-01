@@ -39,6 +39,7 @@ class HalflingPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Halfling",
+            reference_statblock="Spy",
             score_args=standard_score_args,
         )
 

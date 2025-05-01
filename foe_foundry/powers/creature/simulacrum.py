@@ -23,7 +23,12 @@ SimulacrumSpells = spell_list(spells=_spells, uses=1)
 
 class _Simulacrum(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Simulacrum", **kwargs)
+        super().__init__(
+            creature_name="Simulacrum",
+            theme="simulacrum",
+            reference_statblock="Simulacrum",
+            **kwargs,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

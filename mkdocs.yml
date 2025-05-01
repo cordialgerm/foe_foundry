@@ -4,6 +4,7 @@ site_description: Foe Foundry helps GMs instantly summon unforgettable monsters 
 nav:
   - Monsters: monsters/index.md
   - Families: families/index.md
+  - Powers: powers/all.md
   - Blog: blog/index.md
   - Topics: topics/index.md
   - Credits: credits.md
@@ -13,7 +14,7 @@ use_directory_urls: true
 site_url: !ENV [SITE_URL]
 
 hooks:
-  - docs_hooks/my_hooks.py
+  - docs_gen/my_hooks.py
 
 plugins:
   - search

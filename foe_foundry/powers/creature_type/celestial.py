@@ -36,6 +36,7 @@ class CelestialPower(PowerWithStandardScoring):
             create_date=create_date,
             source=source,
             theme="Celestial",
+            reference_statblock="Deva",
             score_args=standard_score_args,
         )
 

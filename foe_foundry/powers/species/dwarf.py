@@ -42,6 +42,7 @@ class DwarvenPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            reference_statblock="Warrior",
             theme="Dwarf",
             score_args=standard_score_args,
         )

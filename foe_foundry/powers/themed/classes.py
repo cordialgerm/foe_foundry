@@ -27,6 +27,7 @@ class _DeathKnight(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Warrior",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Undead, CreatureType.Humanoid],
@@ -94,6 +95,7 @@ def _EldritchKnights() -> List[Power]:
                 power_type=PowerType.Theme,
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
+                reference_statblock="Warrior",
                 theme="class",
                 score_args=dict(
                     require_no_creature_class=True,
@@ -164,6 +166,7 @@ class _Artificer(PowerWithStandardScoring):
             name="Artificer",
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Spy",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
@@ -214,6 +217,7 @@ class _Barbarian(PowerWithStandardScoring):
             name="Barbarian",
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Berserker",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
@@ -258,6 +262,7 @@ class _Bard(PowerWithStandardScoring):
             name="Bardic",
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Performer",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
@@ -313,6 +318,7 @@ class _WarPriest(PowerWithStandardScoring):
             name="War Priest",
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Priest",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
@@ -368,6 +374,7 @@ class _Ranger(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Scout",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid, CreatureType.Fey],
@@ -413,6 +420,7 @@ def _ArcaneArchers() -> List[Power]:
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 theme="class",
+                reference_statblock="Scout",
                 score_args=dict(
                     require_no_creature_class=True,
                     require_types=[CreatureType.Humanoid, CreatureType.Fey],
@@ -486,6 +494,7 @@ class _PsiWarrior(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Warrior",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[CreatureType.Humanoid],
@@ -547,6 +556,7 @@ class _Cavalier(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Knight",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
@@ -594,6 +604,7 @@ def _RuneKnights() -> List[Power]:
                 name=f"Rune Knight {rune.name}",
                 power_type=PowerType.Theme,
                 theme="class",
+                reference_statblock="Warrior",
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 score_args=dict(
@@ -647,6 +658,7 @@ class _Samurai(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             theme="class",
             source="Foe Foundry",
+            reference_statblock="Warrior",
             power_level=HIGH_POWER,
             score_args=dict(
                 require_no_creature_class=True,
@@ -695,6 +707,7 @@ class _Monk(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Warrior",
             power_level=HIGH_POWER,
             score_args=dict(
                 require_roles=[
@@ -729,6 +742,7 @@ class _Paladin(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Knight",
             power_level=HIGH_POWER,
             score_args=dict(
                 require_no_creature_class=True,
@@ -769,6 +783,7 @@ class _Cleric(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Priest",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=CreatureType.Humanoid,
@@ -814,6 +829,7 @@ class _Druid(PowerWithStandardScoring):
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
             theme="class",
+            reference_statblock="Druid",
             score_args=dict(
                 require_no_creature_class=True,
                 require_types=[

@@ -35,6 +35,7 @@ class SpiderPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Spider",
+            reference_statblock="Giant Spider",
             score_args=standard_score_args,
         )
 

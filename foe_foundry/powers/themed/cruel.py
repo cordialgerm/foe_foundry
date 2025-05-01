@@ -19,6 +19,7 @@ class CruelPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Berserker",
         **score_args,
     ):
         standard_score_args = dict(
@@ -42,6 +43,7 @@ class CruelPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="cruel",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,

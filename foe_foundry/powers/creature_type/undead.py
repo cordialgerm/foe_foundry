@@ -16,6 +16,7 @@ class UndeadPower(PowerWithStandardScoring):
         name: str,
         source: str,
         create_date: datetime | None = None,
+        reference_statblock: str = "Wight",
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
@@ -27,6 +28,7 @@ class UndeadPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Undead",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 
@@ -39,7 +41,11 @@ class UndeadPower(PowerWithStandardScoring):
 
 class _UndeadFortitude(UndeadPower):
     def __init__(self):
-        super().__init__(name="Undead Fortitude", source="SRD5.1 Zombie")
+        super().__init__(
+            name="Undead Fortitude",
+            reference_statblock="Zombie",
+            source="SRD5.1 Zombie",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -53,7 +59,9 @@ class _UndeadFortitude(UndeadPower):
 
 class _StenchOfDeath(UndeadPower):
     def __init__(self):
-        super().__init__(name="Stench of Death", source="SRD5.1 Hezrou")
+        super().__init__(
+            name="Stench of Death", reference_statblock="Ghast", source="SRD5.1 Hezrou"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -122,7 +130,12 @@ class _SoulChill(UndeadPower):
 
 class _SoulTether(UndeadPower):
     def __init__(self):
-        super().__init__(name="Soul Tether", source="SRD5.1 Lich", require_cr=6)
+        super().__init__(
+            name="Soul Tether",
+            reference_statblock="Lich",
+            source="SRD5.1 Lich",
+            require_cr=6,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -139,7 +152,12 @@ class _SoulTether(UndeadPower):
 
 class _AntithesisOfLife(UndeadPower):
     def __init__(self):
-        super().__init__(name="Antithesis of Life", source="Foe Foundry", require_cr=4)
+        super().__init__(
+            name="Antithesis of Life",
+            reference_statblock="Lich",
+            source="Foe Foundry",
+            require_cr=4,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

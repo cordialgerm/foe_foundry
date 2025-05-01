@@ -32,6 +32,7 @@ class _ArcaneHunt(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=LOW_POWER,
             source="Foe Foundry",
+            reference_statblock="Death Dog",
             theme="Anti-Magic",
             score_args=score_args,
         )
@@ -61,6 +62,7 @@ class _FractalForm(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="Anti-Magic",
+            reference_statblock="Deva",
             score_args=score_args,
         )
 
@@ -94,6 +96,7 @@ class _Spellbreaker(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="A5E SRD Spellbreaker",
             theme="Anti-Magic",
+            reference_statblock="Berserker",
             score_args=score_args,
         )
 
@@ -129,6 +132,7 @@ class _RedirectTeleport(PowerWithStandardScoring):
             name="Redirect Teleport",
             source="Foe Foundry",
             theme="Anti-Magic",
+            reference_statblock="Aboleth",
             power_type=PowerType.Theme,
             score_args=score_args,
         )
@@ -165,6 +169,7 @@ class _SpellEater(PowerWithStandardScoring):
             name="Spell Eater",
             source="Foe Foundry",
             theme="Anti-Magic",
+            reference_statblock="Chuul",
             power_type=PowerType.Theme,
             score_args=score_args,
         )
@@ -223,6 +228,7 @@ class _SpellStealer(PowerWithStandardScoring):
             name="Spell Stealer",
             source="Foe Foundry",
             theme="Anti-Magic",
+            reference_statblock="Spy",
             power_type=PowerType.Theme,
             score_args=score_args,
         )
@@ -259,6 +265,7 @@ class _TwistedMind(PowerWithStandardScoring):
             name="Tiwsted Mind",
             source="Foe Foundry",
             theme="Anti-Magic",
+            reference_statblock="Aboleth",
             power_type=PowerType.Theme,
             score_args=score_args,
         )
@@ -306,6 +313,7 @@ class _SealOfSilence(PowerWithStandardScoring):
             name="Seal of Silence",
             source="A5E SRD Dread Knight Champion",
             theme="Anti-Magic",
+            reference_statblock="Wight",
             create_date=datetime(2023, 11, 22),
             power_type=PowerType.Theme,
             score_args=score_args,
@@ -327,6 +335,7 @@ class _RuneDrinker(PowerWithStandardScoring):
             name="Rune Drinker",
             source="A5E SRD Chuul",
             theme="Anti-Magic",
+            reference_statblock="Chuul",
             create_date=datetime(2023, 11, 28),
             power_type=PowerType.Theme,
             score_args=dict(

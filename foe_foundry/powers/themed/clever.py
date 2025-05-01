@@ -21,6 +21,7 @@ class CleverPower(PowerWithStandardScoring):
         source: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        reference_statblock: str = "Spy",
         **score_args,
     ):
         standard_score_args = dict(
@@ -36,6 +37,7 @@ class CleverPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="clever",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=standard_score_args,
         )

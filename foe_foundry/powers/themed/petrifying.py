@@ -23,6 +23,7 @@ class _PetrifyingPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="petrifying",
+            reference_statblock="Gorgon",
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=datetime(2025, 3, 14),

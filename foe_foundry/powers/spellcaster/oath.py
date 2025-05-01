@@ -36,6 +36,7 @@ class _OathCaster(_Spellcaster):
         args: dict = (
             dict(
                 theme="Oath",
+                reference_statblock="Questing Knight",
                 score_args=dict(
                     require_callback=is_oath_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],

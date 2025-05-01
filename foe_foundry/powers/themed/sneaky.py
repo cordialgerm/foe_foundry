@@ -42,6 +42,7 @@ class SneakyPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="sneaky",
+            reference_statblock="Spy",
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=create_date,
