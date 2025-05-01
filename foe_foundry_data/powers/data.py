@@ -4,13 +4,11 @@ from dataclasses import field
 from datetime import datetime
 from typing import List, Set
 
-import numpy as np
 from pydantic.dataclasses import dataclass
 
-from foe_foundry import AttackType, CreatureType, MonsterRole
-from foe_foundry.creature_templates import get_creature_template
+from foe_foundry import AttackType, CreatureType
+from foe_foundry.creatures import default_statblock_for_creature_type
 from foe_foundry.powers import Power
-from foe_foundry.statblocks.common import get_common_stats
 
 
 @dataclass(kw_only=True)
@@ -61,17 +59,13 @@ class PowerModel:
         else:
             secondary_damage_type = None
 
-        if power.roles:
-            role = power.roles[0]
-        else:
-            role = MonsterRole.Bruiser
-
-        def rng() -> np.random.Generator:
-            return np.random.default_rng(seed=20210518)
-
         # If the power has a suggested CR, then use that as our baseline
         # Otherwise, use the Specialist (CR 4) as our baseline for reasonable power descriptions
-        stats = get_common_stats(power.suggested_cr or 4).copy()
+        stats = default_statblock_for_creature_type(
+            creature_type=creature_type, requested_cr=power.suggested_cr or 3
+        )
+
+        existing_attacks = {a.display_name for a in stats.additional_attacks}
 
         # if the power has a secondary damage type, apply that
         if secondary_damage_type:
@@ -79,14 +73,6 @@ class PowerModel:
 
         # if the power has any preconditions, be sure to apply those
         stats = power.modify_stats(stats)
-
-        creature_template = get_creature_template(creature_type)
-        stats = creature_template.create(
-            base_stats=stats,
-            rng_factory=rng,
-            role_template=role,
-            skip_power_selection=True,
-        )
 
         features = power.generate_features(stats)
         feature_models = []
@@ -109,6 +95,10 @@ class PowerModel:
             feature_models.append(feature_model)
 
         for attack in stats.additional_attacks:
+            if attack.display_name in existing_attacks:
+                # this attack was already in the statblock before the power, so we don't need to add it again
+                continue
+
             feature_models.append(
                 FeatureModel(
                     name=attack.name,

@@ -7,7 +7,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
-from ...statblocks import BaseStatblock, MonsterDials
+from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 from .shared import CunningAction as _CunningAction
 from .shared import NimbleEscape as _NimbleEscape
@@ -116,14 +116,10 @@ class _Speedy(SkirmisherPower):
         return [feature]
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        new_attrs = (
-            stats.attributes.boost(Stats.DEX, 2)
-            .grant_proficiency_or_expertise(Skills.Acrobatics)
-            .grant_save_proficiency(Stats.DEX)
-        )
-        stats = stats.copy(attributes=new_attrs).apply_monster_dials(
-            MonsterDials(speed_modifier=10)
-        )
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Acrobatics
+        ).grant_save_proficiency(Stats.DEX)
+        stats = stats.copy(speed=stats.speed.delta(10))
         return stats
 
 
