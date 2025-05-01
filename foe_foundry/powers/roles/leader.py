@@ -45,6 +45,7 @@ class LeaderPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Leader",
+            reference_statblock="Knight",
             score_args=standard_score_args,
         )
 

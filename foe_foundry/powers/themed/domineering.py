@@ -21,6 +21,7 @@ class DomineeringPower(PowerWithStandardScoring):
         source: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Vampire",
         **score_args,
     ):
         magical_creatures = {
@@ -50,6 +51,7 @@ class DomineeringPower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Theme,
             theme="domineering",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=dict(

@@ -29,6 +29,7 @@ class _PsionicCaster(_Spellcaster):
             dict(
                 theme="psionic",
                 creature_class="Psion",
+                reference_statblock="Psionic Warrior",
                 caster_type=CasterType.Psionic,
                 score_args=dict(
                     require_no_creature_class=True,

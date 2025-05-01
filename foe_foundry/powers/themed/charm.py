@@ -17,6 +17,7 @@ class CharmingPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        reference_statblock: str = "Enchanter Mage",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -51,6 +52,7 @@ class CharmingPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             theme="Charm",
+            reference_statblock=reference_statblock,
             source=source,
             power_level=power_level,
             power_type=PowerType.Theme,

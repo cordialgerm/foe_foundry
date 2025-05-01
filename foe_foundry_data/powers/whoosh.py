@@ -5,20 +5,17 @@ from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
 
-from foe_foundry.powers.all import AllPowers
+from .all import Powers
+from .data import PowerModel
 
-from ...data.power import PowerModel
-
-INDEX_DIR = Path(__file__).parent / "index"
-
-PowerLookup = {power.key: PowerModel.from_power(power) for power in AllPowers}
-Themes = {power.theme.lower() for power in AllPowers if power.theme}
+INDEX_DIR = Path(__file__).parent.parent.parent / "site" / "whoosh_indx"
 
 
 def index_powers():
     schema = Schema(
         name=TEXT(sortable=True),
         key=ID(stored=True),
+        power_type=KEYWORD,
         creature_types=KEYWORD,
         roles=KEYWORD,
         theme=KEYWORD,
@@ -27,11 +24,11 @@ def index_powers():
         description=TEXT,
     )
 
-    INDEX_DIR.mkdir(exist_ok=True)
+    INDEX_DIR.mkdir(exist_ok=True, parents=True)
     ix = create_in(str(INDEX_DIR), schema)
     writer = ix.writer()
 
-    for key, power in PowerLookup.items():
+    for key, power in Powers.PowerLookup.items():
         creature_types = " ".join(c for c in power.creature_types)
         roles = " ".join(r for r in power.roles)
         damage_types = " ".join(d for d in power.damage_types)
@@ -43,6 +40,7 @@ def index_powers():
         writer.add_document(
             name=power.name,
             key=key,
+            power_type=power.power_type,
             creature_types=creature_types,
             roles=roles,
             theme=power.theme,
@@ -54,21 +52,22 @@ def index_powers():
     writer.commit()
 
 
-def load_index():
+def load_power_index():
+    INDEX_DIR.mkdir(exist_ok=True, parents=True)
     ix = open_dir(str(INDEX_DIR))
     return ix
 
 
-def clean_index():
+def clean_power_index():
     shutil.rmtree(INDEX_DIR, ignore_errors=True)
 
 
-def search(search_term: str, limit: int) -> list[PowerModel]:
+def search_powers(search_term: str, limit: int) -> list[PowerModel]:
     try:
-        ix = load_index()
-    except:
+        ix = load_power_index()
+    except Exception:
         index_powers()
-        ix = load_index()
+        ix = load_power_index()
 
     with ix.searcher() as searcher:
         query = QueryParser("description", ix.schema).parse(search_term)
@@ -76,7 +75,7 @@ def search(search_term: str, limit: int) -> list[PowerModel]:
         powers = []
         for result in results:
             key = result["key"]
-            power = PowerLookup.get(key)
+            power = Powers.PowerLookup.get(key)
             if power:
                 powers.append(power)
 

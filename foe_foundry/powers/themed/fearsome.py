@@ -23,6 +23,7 @@ class FearsomePower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Theme,
             theme="fearsome",
+            reference_statblock="Chimera",
             create_date=create_date,
             power_level=power_level,
             score_args=dict(
@@ -53,6 +54,7 @@ class HorrifyingPower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Theme,
             theme="fearsome",
+            reference_statblock="Banshee",
             create_date=create_date,
             power_level=power_level,
             score_args=dict(

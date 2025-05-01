@@ -24,6 +24,7 @@ class _GorgonPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="gorgon",
+            reference_statblock="Gorgon",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 14),

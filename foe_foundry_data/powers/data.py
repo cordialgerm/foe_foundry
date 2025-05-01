@@ -7,10 +7,77 @@ from typing import List, Set
 import numpy as np
 from pydantic.dataclasses import dataclass
 
-from foe_foundry import AttackType, CreatureType, MonsterRole
-from foe_foundry.creature_templates import get_creature_template
+from foe_foundry import AttackType
+from foe_foundry.creatures import GenerationSettings, SelectionSettings, warrior
+from foe_foundry.markdown import MonsterRef, MonsterRefResolver
 from foe_foundry.powers import Power
-from foe_foundry.statblocks.common import get_common_stats
+from foe_foundry.statblocks import Statblock
+
+MonsterReferences = MonsterRefResolver()
+
+
+def _get_best_statblock(
+    requested_statblock: str,
+    requested_cr: float | None,
+) -> Statblock:
+    monster_ref = MonsterReferences.resolve_monster_ref(requested_statblock)
+
+    rng = np.random.default_rng(20240711)
+
+    # it's possible that we don't yet have a statblock for the requested monster
+    # in that case, just fall back to the Warrior
+    update_name_to = None
+    if monster_ref is None:
+        monster_ref = MonsterRef(
+            original_monster_name=requested_statblock,
+            template=warrior.WarriorTemplate,
+            variant=None,
+            suggested_cr=None,
+        )
+        update_name_to = requested_statblock
+
+    selection_settings = SelectionSettings(
+        retries=1
+    )  # don't spend a lot of time trying to generate a good monster here
+
+    if monster_ref.suggested_cr is not None and monster_ref.variant is not None:
+        if requested_cr is None:
+            requested_cr = monster_ref.suggested_cr.cr
+        else:
+            requested_cr = 4.0
+
+        setting = GenerationSettings(
+            creature_name=monster_ref.suggested_cr.name
+            if update_name_to is None
+            else update_name_to,
+            creature_template=monster_ref.template.name,
+            cr=requested_cr,
+            is_legendary=False,
+            variant=monster_ref.variant,
+            rng=rng,
+            selection_settings=selection_settings,
+        )
+    else:
+        # if we don't have a specific statblock to generate, find the one with the closest CR match
+        crs = []
+        settings = []
+        for setting in monster_ref.template.generate_settings(
+            selection_settings=selection_settings
+        ):
+            settings.append(setting)
+            crs.append(setting.cr)
+
+        crs = np.array(crs)
+        err = np.pow(crs - (requested_cr or 4.0), 2)
+        min_index = np.argmin(err)
+        setting = settings[min_index]
+
+    stats = monster_ref.template.generate(setting).finalize()
+
+    if update_name_to is not None:
+        stats = stats.copy(name=update_name_to, creature_class=update_name_to)
+
+    return stats
 
 
 @dataclass(kw_only=True)
@@ -48,47 +115,26 @@ class PowerModel:
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
-        # To give a user-friendly description of the power, we need a stablock as a base reference
-        # this code will create a reasonable base creature using some metadata about the power
-        # that way, the descriptive text will be reasonable instead of generic
-        if power.creature_types:
-            creature_type = power.creature_types[0]
-        else:
-            creature_type = CreatureType.Humanoid
-
-        if power.damage_types:
-            secondary_damage_type = power.damage_types[0]
-        else:
-            secondary_damage_type = None
-
-        if power.roles:
-            role = power.roles[0]
-        else:
-            role = MonsterRole.Bruiser
-
-        def rng() -> np.random.Generator:
-            return np.random.default_rng(seed=20210518)
-
         # If the power has a suggested CR, then use that as our baseline
         # Otherwise, use the Specialist (CR 4) as our baseline for reasonable power descriptions
-        stats = get_common_stats(power.suggested_cr or 4).copy()
+        stats = _get_best_statblock(
+            requested_statblock=power.reference_statblock,
+            requested_cr=power.suggested_cr,
+        )
+
+        existing_attacks = {a.display_name for a in stats.additional_attacks}
 
         # if the power has a secondary damage type, apply that
-        if secondary_damage_type:
+        if power.damage_types:
+            secondary_damage_type = power.damage_types[0]
             stats = stats.copy(secondary_damage_type=secondary_damage_type)
 
         # if the power has any preconditions, be sure to apply those
         stats = power.modify_stats(stats)
 
-        creature_template = get_creature_template(creature_type)
-        stats = creature_template.create(
-            base_stats=stats,
-            rng_factory=rng,
-            role_template=role,
-            skip_power_selection=True,
-        )
-
+        # generate the features of the power
         features = power.generate_features(stats)
+
         feature_models = []
         for feature in features:
             # normally we would skip displaying hidden features (in the statblock itself)
@@ -109,6 +155,10 @@ class PowerModel:
             feature_models.append(feature_model)
 
         for attack in stats.additional_attacks:
+            if attack.display_name in existing_attacks:
+                # this attack was already in the statblock before the power, so we don't need to add it again
+                continue
+
             feature_models.append(
                 FeatureModel(
                     name=attack.name,

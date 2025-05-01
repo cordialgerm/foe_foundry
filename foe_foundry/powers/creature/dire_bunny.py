@@ -25,6 +25,7 @@ class _DireBunnyPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="dire_bunny",
+            reference_statblock="Dire Bunny",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 5),

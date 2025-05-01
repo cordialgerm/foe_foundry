@@ -32,6 +32,7 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            reference_statblock="Basilisk",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
         )
@@ -59,6 +60,7 @@ class _ArrowWard(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            reference_statblock="Shield Guardian",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
         )
@@ -86,6 +88,7 @@ class _DeflectMissile(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="SRD5.1 Monk",
             theme="Anti-Ranged",
+            reference_statblock="Warrior",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
         )
@@ -109,6 +112,7 @@ class _HardToPinDown(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            reference_statblock="Spy",
             create_date=datetime(2023, 11, 28),
             score_args=dict(
                 require_roles=MonsterRole.Skirmisher,
@@ -142,6 +146,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 theme="Anti-Ranged",
+                reference_statblock="Fire Elemental",
                 create_date=datetime(2023, 11, 28),
                 score_args=score_args,
             )
@@ -179,6 +184,7 @@ class _Overchannel(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
+            reference_statblock="Mage",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 28),
             score_args=dict(

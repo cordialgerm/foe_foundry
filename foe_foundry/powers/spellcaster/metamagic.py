@@ -43,6 +43,7 @@ class _MetamagicPower(PowerWithStandardScoring):
             power_type=PowerType.Spellcasting,
             source="Foe Foundry",
             theme="Metamagic",
+            reference_statblock="Mage",
             power_level=power_level,
             create_date=datetime(2025, 3, 7),
             score_args=score_args,

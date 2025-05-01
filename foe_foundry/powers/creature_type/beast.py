@@ -28,6 +28,7 @@ class BeastPower(PowerWithStandardScoring):
         name: str,
         source: str,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Dire Wolf",
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -40,6 +41,7 @@ class BeastPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Beast",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 
@@ -100,6 +102,7 @@ class _Gore(BeastPower):
         super().__init__(
             name="Gore",
             source="SRD 5.1 Minotaur",
+            reference_statblock="Giant Boar",
             attack_names=["-", natural_attacks.Horns],
         )
 

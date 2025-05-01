@@ -17,6 +17,7 @@ class BestialPower(PowerWithStandardScoring):
         name: str,
         source: str,
         create_date: datetime | None = None,
+        reference_statblock: str = "Dire Wolf",
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
@@ -34,6 +35,7 @@ class BestialPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="Bestial",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             power_type=PowerType.Theme,
             power_level=power_level,
@@ -82,6 +84,7 @@ class _Trample(BestialPower):
         super().__init__(
             name="Trample",
             source="A5E SRD Mammoth",
+            reference_statblock="Mammoth",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", natural.Stomp],
         )
@@ -103,6 +106,7 @@ class _BurrowingAmbush(BestialPower):
         super().__init__(
             name="Burrowing Ambush",
             source="A5E SRD Ankheg Queen",
+            reference_statblock="Ankheg",
             create_date=datetime(2023, 11, 22),
             attack_names=natural.Claw,
             require_callback=can_burrow,
@@ -129,6 +133,7 @@ class _TurboTrot(BestialPower):
         super().__init__(
             name="Turbo Trot",
             source="A5E SRD Centaur",
+            reference_statblock="Mammoth",
             create_date=datetime(2023, 11, 28),
             attack_names=["-", natural.Stomp],
         )

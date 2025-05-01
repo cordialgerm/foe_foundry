@@ -52,6 +52,7 @@ class AberrantPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Aberrant",
+            reference_statblock="Aboleth",
             score_args=standard_score_args,
         )
 

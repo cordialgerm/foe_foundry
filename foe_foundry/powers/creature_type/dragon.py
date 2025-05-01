@@ -28,6 +28,7 @@ class DraconicPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="Dragon",
+            reference_statblock="Adult Red Dragon",
             score_args=standard_score_args,
         )
 
@@ -159,6 +160,12 @@ class _DraconicMinions(DraconicPower):
             require_cr=7,
             require_callback=_check_draconic_minions,
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        if stats.secondary_damage_type is None:
+            stats = stats.copy(secondary_damage_type=DamageType.Fire)
+        return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type

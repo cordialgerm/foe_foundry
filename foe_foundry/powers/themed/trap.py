@@ -28,6 +28,7 @@ class Trap(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="trap",
+            reference_statblock="Scout",
             score_args=dict(
                 require_types={c for c in CreatureType if c.could_use_equipment},
                 require_roles={

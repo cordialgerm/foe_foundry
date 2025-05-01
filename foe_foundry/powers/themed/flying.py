@@ -24,6 +24,7 @@ class FlyingPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="flying",
+            reference_statblock="Giant Eagle",
             power_level=power_level,
             power_type=PowerType.Theme,
             score_args=dict(

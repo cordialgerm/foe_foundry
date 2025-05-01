@@ -39,6 +39,7 @@ class _FiendishCaster(_Spellcaster):
             dict(
                 theme="fiend",
                 caster_type=CasterType.Innate,
+                reference_statblock="Cambion",
                 score_args=dict(
                     require_types=[
                         CreatureType.Fiend,

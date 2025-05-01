@@ -24,6 +24,7 @@ class _BreathPower(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 28),
             theme="Breath",
+            reference_statblock="Adult Red Dragon",
             score_args=dict(require_damage=breath, require_types={CreatureType.Dragon}),
         )
         self.breath = breath

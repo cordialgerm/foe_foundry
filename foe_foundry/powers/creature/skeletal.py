@@ -34,7 +34,8 @@ class SkeletalPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            theme="skeletal",
+            theme="skeleton",
+            reference_statblock="Skeleton",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

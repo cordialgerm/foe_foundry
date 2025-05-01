@@ -37,6 +37,7 @@ class BalorPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="Balor",
+            reference_statblock="Balor",
             score_args=standard_score_args,
         )
 

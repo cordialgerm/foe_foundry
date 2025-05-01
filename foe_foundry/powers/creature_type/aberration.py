@@ -33,6 +33,7 @@ class AberrationPower(PowerWithStandardScoring):
             create_date=create_date,
             score_args=standard_score_args,
             theme="Aberration",
+            reference_statblock="Aboleth",
         )
 
 

@@ -37,6 +37,7 @@ class HolyPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             create_date=create_date,
             power_level=power_level,
+            reference_statblock="Priest",
             score_args=dict(
                 require_stats=[Stats.WIS, Stats.CHA],
                 require_types=CreatureType.Humanoid,

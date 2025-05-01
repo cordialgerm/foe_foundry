@@ -33,6 +33,7 @@ class MonstrousPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="monstrous",
+            reference_statblock="Manticore",
             power_type=PowerType.Theme,
             power_level=power_level,
             create_date=create_date,

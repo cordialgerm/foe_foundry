@@ -32,6 +32,7 @@ class GhoulPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="ghoul",
+            reference_statblock="Ghoul",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

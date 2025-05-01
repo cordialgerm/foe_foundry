@@ -26,6 +26,7 @@ class AquaticBase(PowerWithStandardScoring):
             name=name,
             power_type=PowerType.Theme,
             theme="Aquatic",
+            reference_statblock="Merfolk",
             source=source,
             power_level=power_level,
             score_args=score_args,

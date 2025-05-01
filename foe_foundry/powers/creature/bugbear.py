@@ -29,6 +29,7 @@ class BugbearPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="bugbear",
+            reference_statblock="Bugbear",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

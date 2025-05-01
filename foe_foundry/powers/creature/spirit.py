@@ -27,6 +27,7 @@ class SpiritPower(PowerWithStandardScoring):
         self,
         name: str,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Ghost",
         create_date: datetime | None = datetime(2025, 4, 20),
         **score_args,
     ):
@@ -34,6 +35,7 @@ class SpiritPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="spirit",
+            reference_statblock=reference_statblock,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,
@@ -175,7 +177,9 @@ class _GraspOfTheDead(SpiritPower):
 
 class _FeedOnLight(SpiritPower):
     def __init__(self):
-        super().__init__(name="Feed on Light", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Feed on Light", reference_statblock="Shadow", power_level=MEDIUM_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(stats.hp.average * 0.15)
@@ -192,7 +196,11 @@ class _FeedOnLight(SpiritPower):
 
 class _ShadowInvisibility(SpiritPower):
     def __init__(self):
-        super().__init__(name="Shadow Invisibility", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Shadow Invisibility",
+            reference_statblock="Shadow",
+            power_level=MEDIUM_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         invisibility = spell_ref("Invisibility")
@@ -207,7 +215,11 @@ class _ShadowInvisibility(SpiritPower):
 
 class _DreadfulSilence(SpiritPower):
     def __init__(self):
-        super().__init__(name="Dreadful Silence", power_level=LOW_POWER)
+        super().__init__(
+            name="Dreadful Silence",
+            reference_statblock="Banshee",
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.2, force_die=Die.d6)

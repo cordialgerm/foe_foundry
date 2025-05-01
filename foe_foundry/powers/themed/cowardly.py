@@ -41,6 +41,7 @@ class CowardlyPower(PowerWithStandardScoring):
         name: str,
         source: str,
         power_level: float = MEDIUM_POWER,
+        reference_statblock: str = "Goblin",
         create_date: datetime | None = datetime(2025, 3, 22),
         **score_args,
     ):
@@ -50,6 +51,7 @@ class CowardlyPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             theme="cowardly",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=dict(
                 require_callback=could_be_cowardly,

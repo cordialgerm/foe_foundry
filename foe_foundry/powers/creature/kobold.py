@@ -31,6 +31,7 @@ class KoboldPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="kobold",
+            reference_statblock="Kobold",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,
