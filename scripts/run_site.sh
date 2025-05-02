@@ -12,7 +12,8 @@ poetry install --sync
 
 # Set PYTHONPATH so that mkdocs can find the package in this repo
 export PYTHONPATH=.
+export PORT=8000
 export SITE_URL=http://127.0.0.1:8000/
 
-# Build the site
-poetry run mkdocs build --clean
+# Run the site itself
+poetry run python -m foe_foundry_site
