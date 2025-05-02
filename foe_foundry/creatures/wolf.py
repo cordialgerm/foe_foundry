@@ -121,6 +121,8 @@ def generate_wolf(settings: GenerationSettings) -> StatsBeingGenerated:
     hp_multiplier = 1.3 if cr < 1 else 1.0
     stats = base_stats(
         name=name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=stats,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,

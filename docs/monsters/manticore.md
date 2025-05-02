@@ -37,11 +37,15 @@ Manticores are classic flying predators in Dungeons & Dragons, 5E, Pathfinder, a
 
 [[!Manticore]]
 
+[[$Manticore]]
+
 ### Manticore Ravager
 
 A **Manticore Ravager** has intimidated enough of its fellows that it leads a loosely-subservient pack. Ravagers often hone their insults on their inferiors, and the lowest-ranked Manticore in the pack is mercilessly bullied.
 
 [[!Manticore Ravager]]
+
+[[$Manticore Ravager]]
 
 ## Manticore Encounter Ideas
 

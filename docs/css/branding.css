@@ -35,3 +35,30 @@ a.branding::after,
     /* bootstrap specific overrides */
     --bs-navbar-padding-y: 0.1rem;
 }
+
+
+
+.alpha-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--muted-color);
+    color: #eee;
+    padding: 0.75em 1em;
+    border-bottom: 1px solid #444;
+    font-family: var(--primary-font);
+    color: var(--fg-color);
+}
+
+.alpha-banner a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.alpha-banner button {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

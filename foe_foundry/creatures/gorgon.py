@@ -87,6 +87,8 @@ def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
     # STATS
     stats = base_stats(
         name=name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary, mod=2),

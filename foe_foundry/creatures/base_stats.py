@@ -20,6 +20,8 @@ loader = _Loader()
 
 def base_stats(
     name: str,
+    template_key: str,
+    variant_key: str,
     cr: float,
     stats: list[StatScaler],
     hp_multiplier: float = 1.0,
@@ -51,6 +53,8 @@ def base_stats(
 
     return BaseStatblock(
         name=name,
+        template_key=template_key,
+        variant_key=variant_key,
         cr=cr,
         hp=hp,
         speed=Movement(walk=30),

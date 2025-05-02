@@ -32,11 +32,15 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 
 [[!Skeleton]]
 
+[[$Skeleton]]
+
 ### Skeletal Grave Guard
 
 **Skeletal Grave Guards** are elite undead warriors, animated from the bones of **Knights** and hardened **Warriors**. Powerful **Necromancers**, **Vampires**, and **Liches** will often create these guardians from the bodies of heroes they have vanquished, forcing them to serve their foul agendas.
 
 [[!Skeletal Grave Guard]]
+
+[[$Skeletal Grave Guard]]
 
 ### Burning Skeleton
 
@@ -44,11 +48,15 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 
 [[!Burning Skeleton]]
 
+[[$Burning Skeleton]]
+
 ### Burning Skeletal Champion
 
 **Burning Skeletal Champions** are fearsome undead commanders, their bones ablaze with necromantic fire. Driven by remnants of martial pride and cruel will, they lead flaming legions into battle, searing both flesh and spirit with each strike.
 
 [[!Burning Skeletal Champion]]
+
+[[$Burning Skeletal Champion]]
 
 ### Freezing Skeleton
 
@@ -56,11 +64,15 @@ Freezing Skeletons are sheathed in Styx-born frost, their bones rimed with death
 
 [[!Freezing Skeleton]]
 
+[[$Freezing Skeleton]]
+
 ### Freezing Skeletal Champion
 
 **Freezing Skeletal Champions** embody the chill of death, armored in ice and shadow. Wielding weapons rimed with Styx-born frost, they command undead forces in silence, their very presence draining warmth and hope from the living.
 
 [[!Freezing Skeletal Champion]]
+
+[[$Freezing Skeletal Champion]]
 
 ## Skeleton Encounter Ideas
 

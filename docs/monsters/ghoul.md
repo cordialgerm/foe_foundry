@@ -34,11 +34,15 @@ Twisted by the curse of cannibalism, **Ghouls** are undead predators driven by a
 
 [[!Ghoul]]
 
+[[$Ghoul]]
+
 ### Ghast
 
 **Ghasts** are bloated, corpse-ridden horrors — **Ghouls** swollen with dark power and the stench of undeath. They crave not only flesh but the decadent vices they once reveled in life.
 
 [[!Ghast]]
+
+[[$Ghast]]
 
 ### Ghast Gravelord
 

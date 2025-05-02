@@ -6,6 +6,7 @@
     background: var(--bg-color);
 
     padding: var(--big-margin);
+    margin-bottom: calc(2 *var(--big-margin));
 
     border: 1px solid var(--tertiary-color);
     border-radius: var(--medium-margin);

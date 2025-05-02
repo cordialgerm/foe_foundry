@@ -15,6 +15,4 @@ from .statblocks import (
     BaseStatblock,
     MonsterDials,
     Statblock,  # noqa
-    general_use_stats,
-    get_common_stats,
 )
