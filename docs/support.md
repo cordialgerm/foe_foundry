@@ -8,15 +8,13 @@ hidden:
 
 # Support Foe Foundry on Patreon
 
-
-
 Hey there, fellow GM!
 
 <a alt="Foe Foundry Skull" href="index.md" class="branding">Foe Foundry</a> is a free, ever-growing toolkit designed to help you create unforgettable monsters, thrilling encounters, and flavorful adventures for your 5E TTRPGs. If you’ve found something here that inspired your campaign or saved you prep time, please consider becoming a patron and helping the project grow.  
 
 Your support keeps the gears turning. 
 
-[👉 Support Foe Foundry on Patreon](https://www.patreon.com/cordialgerm){.patreon .big-link}
+[👉 Support Foe Foundry on Patreon](https://patreon.com/foefoundry?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink){.patreon .big-link}
 
 ---
 
@@ -49,7 +47,7 @@ By becoming a patron, you're not just helping out — you're helping *shape* the
 
 Whether you chip in for a month or stick around for the long haul, it makes a huge difference. Thanks for helping make monster design more fun, more flavorful, and more ferocious.
 
-[👉 Support Foe Foundry on Patreon](https://www.patreon.com/cordialgerm){.patreon .big-link}
+[👉 Support Foe Foundry on Patreon](https://patreon.com/foefoundry?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink){.patreon .big-link}
 
 ---
 

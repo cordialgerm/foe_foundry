@@ -107,6 +107,8 @@ def generate_guard(
 
     stats = base_stats(
         name=name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=stat_scaling,
         hp_multiplier=settings.hp_multiplier,

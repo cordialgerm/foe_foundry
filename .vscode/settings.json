@@ -32,7 +32,7 @@
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     //javascript
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     //terminal
     "terminal.integrated.profiles.windows": {

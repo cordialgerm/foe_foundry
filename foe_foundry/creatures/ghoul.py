@@ -177,6 +177,8 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
 
     stats = base_stats(
         name=name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=stats,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,

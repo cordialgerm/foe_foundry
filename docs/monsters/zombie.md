@@ -36,11 +36,15 @@ The classic shambling undead, **Zombies** are rotting corpses animated by splint
 
 [[!Zombie]]
 
+[[$Zombie]]
+
 ### Zombie Brute
 
 A hulking variant of the standard Zombie, the **Zombie Brute** is stitched together from larger bodies or masses of dead flesh. Stronger and more resilient, it serves as a blunt instrument for necromancers and greater undead.
 
 [[!Zombie Brute]]
+
+[[$Zombie Brute]]
 
 ### Zombie Gravewalker
 
@@ -48,11 +52,15 @@ A **Zombie Gravewalker** forms when death and corruption pool to a breaking poin
 
 [[!Zombie Gravecaller]]
 
+[[$Zombie Gravecaller]]
+
 ### Zombie Ogre
 
 A massive, muscle-bound horror, the **Zombie Ogre** combines the brute strength of ogres with the unyielding stamina of undeath. These creatures are often unleashed as living siege weapons against settlements and strongholds.
 
 [[!Zombie Ogre]]
+
+[[$Zombie Ogre]]
 
 ### Zombie Giant
 
@@ -60,11 +68,15 @@ The **Zombie Giant** is a towering nightmare, a fallen giant lashed back into mo
 
 [[!Zombie Giant]]
 
+[[$Zombie Giant]]
+
 ### Zombie Titan
 
 An ambitious **Lich** or **Necromancer Archmage** will occasionally seek out and slay an ancient titan and raise its body as a **Zombie Titan**. These behemoths of rotting flesh and splintered spirit cause whole armies to tremble upon their approach.
 
 [[!Zombie Titan]]
+
+[[$Zombie Titan]]
 
 ## Zombie Encounter Ideas
 

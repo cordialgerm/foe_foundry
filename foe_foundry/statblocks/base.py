@@ -28,6 +28,8 @@ from .suggested_powers import recommended_powers_for_cr
 @dataclass(kw_only=True)
 class BaseStatblock:
     name: str
+    template_key: str
+    variant_key: str
     cr: float
     hp: DieFormula
 
@@ -168,6 +170,8 @@ class BaseStatblock:
     def __copy_args__(self) -> dict:
         args: dict = dict(
             name=self.name,
+            template_key=self.template_key,
+            variant_key=self.variant_key,
             cr=self.cr,
             ac_boost=self.ac_boost,
             ac_templates=self.ac_templates.copy(),

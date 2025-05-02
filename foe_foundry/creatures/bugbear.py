@@ -122,6 +122,8 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
 
     stats = base_stats(
         name=variant.name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=attrs,
         hp_multiplier=settings.hp_multiplier,

@@ -64,7 +64,7 @@ Here’s a side-by-side look at how our monster design toolkit improves the GM e
 
 ## Monster Statistic Baselines
 
-Foe Foundry uses monster baselines that are then increased or decreased by each template. The baselines are based on work in the [Lazy 5E Monser Building Resource Document](https://slyflourish.com/lazy_5e_monster_building_resource_document.html). See [Credits](../credits.md) for more information on this work.
+Foe Foundry uses monster baselines that are then increased or decreased by each template. The baselines are based on work in the [Lazy 5E Monser Building Resource Document](https://slyflourish.com/lazy_5e_monster_building_resource_document.html). See [Credits](credits.md) for more information on this work.
 
 
 <table>
