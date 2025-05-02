@@ -19,6 +19,8 @@ from .utilities import fix_punctuation
 @dataclass
 class MonsterTemplateData:
     name: str
+    template: str
+    variant: str
     selfref: str
     roleref: str
     size: str
@@ -255,6 +257,8 @@ class MonsterTemplateData:
 
         t = MonsterTemplateData(
             name=stats.name,
+            template=stats.template_key.lower(),
+            variant=stats.variant_key.lower(),
             selfref=stats.selfref,
             roleref=stats.roleref,
             size=stats.size.name,

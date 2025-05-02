@@ -39,11 +39,15 @@ The **Necromancer Adept** has just begun their studies of the necromantic arts. 
 
 [[!Necromancer Adept]]
 
+[[$Necromancer Adept]]
+
 #### Necromancer Mage
 
 The **Necromancer Mage** is an accomplished practitioner of the dark arts. At this level, the necromancer has mastered many [Lesser Undead](../families/undead.md#lesser-undead) and has begun drawing [Spirits](../monsters/spirit.md) such as **Specters** and **Shadows** under their control.
 
 [[!Necromancer Mage]]
+
+[[$Necromancer Mage]]
 
 #### Necromancer Archmage
 
@@ -51,11 +55,15 @@ The **Necromancer Archmage** is at the pinacle of the dark arts. These necromanc
 
 [[!Necromancer Archmage]]
 
+[[$Necromancer Archmage]]
+
 #### Necromancer Primagus
 
 The **Necromancer Primagus** has mastered the dark arts to the maximum extend that the limits of mortal flesh allows. These powerful mages are legendary figures who often wish to mimic the example set by [Karklaz, the Withered King](./lich.md#karklaz-the-withered-king) and ascend to become a dreaded **Lich**.
 
 [[!Necromancer Primagus]]
+
+[[$Necromancer Primagus]]
 
 ### Necromancer Encounter Ideas
 

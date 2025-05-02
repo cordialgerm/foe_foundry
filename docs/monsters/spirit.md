@@ -38,6 +38,12 @@ A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into dea
 
 ![Shadows are evil spirits made of dark shadow-stuff](../img/shadow.png){.monster-image .masked}
 
+### Shadow Statblock
+
+[[!Shadow]]
+
+[[$Shadow]]
+
 ## Specters
 
 A **Specter** is a soul fragment, splintered by violence or unendurable pain. Lacking the memory of a **Ghost** or the malignant will of a **Wraith**, it drifts through the world in spasms of confusion and malice.
@@ -53,6 +59,8 @@ A **Specter** is a soul fragment, splintered by violence or unendurable pain. La
 ### Specter Statblock
 
 [[!Specter]]
+
+[[$Specter]]
 
 ## Banshees
 
@@ -70,6 +78,8 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 
 [[!Banshee]]
 
+[[$Banshee]]
+
 ## Revenants
 
 A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haunt the world, but to correct a single, searing injustice. It remembers how it died and who is to blame, and will not rest until vengeance is taken. Revenants are not mindless: they are deliberate, relentless, and terrifyingly lucid. If their quarry is powerful, Revenants are known to assemble a posse of lesser undead to support their relentless quest.
@@ -85,6 +95,8 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 ### Revenant Statblock
 
 [[!Revenant]]
+
+[[$Revenant]]
 
 ## Ghosts
 
@@ -103,6 +115,8 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 ### Ghost Statblocks
 
 [[!Ghost]]
+
+[[$Ghost]]
 
 ## Wraiths
 
@@ -123,6 +137,8 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 #### Wraith
 
 [[!Wraith]]
+
+[[$Wraith]]
 
 #### Wraith Shadelord
 

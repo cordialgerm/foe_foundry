@@ -95,6 +95,8 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     # STATS
     stats = base_stats(
         name=variant.name,
+        variant_key=settings.variant.key,
+        template_key=settings.creature_template,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default),

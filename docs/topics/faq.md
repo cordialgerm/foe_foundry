@@ -26,7 +26,7 @@ No, all statblocks and monsters are handcrafted by me. There is an algorithm tha
 
 ## Does Foe Foundry use GenAI monster art?
 
-No, all monster art is [commercially licensed and used with permission](../credits.md#art-credits)
+No, all monster art is [commercially licensed and used with permission](credits.md#art-credits)
 
 ## Can I use Foe Foundry monsters in my home campaign?
 
@@ -34,7 +34,7 @@ Yes, definitely! It's what it's here for.
 
 ## Can I use Foe Foundry monsters in my own published campaign?
 
-Reach out on [Cordialgerm's Patreon](https://patreon.com/cordialgerm) if you're interested in a commercial license.
+Reach out on [Cordialgerm's Patreon](https://patreon.com/foefoundry) if you're interested in a commercial license.
 
 ## How will Foe Foundry be monetized?
 
@@ -44,11 +44,11 @@ After the initial set of monsters is implemented, optional premium features such
 
 ## How can I support you?
 
-You can support [Cordialgerm's Patreon](https://patreon.com/cordialgerm) if you love Foe Foundry!
+You can support [Cordialgerm's Patreon](https://patreon.com/foefoundry) if you love Foe Foundry!
 
 ## Can I request a new monster or template?
 
-Reach out on [Cordialgerm's Patreon](https://patreon.com/cordialgerm) where I will have periodic polls.
+Reach out on [Cordialgerm's Patreon](https://patreon.com/foefoundry) where I will have periodic polls.
 
 ## Who are you?
 
