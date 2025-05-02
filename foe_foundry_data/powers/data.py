@@ -37,7 +37,7 @@ def _get_best_statblock(
         update_name_to = requested_statblock
 
     selection_settings = SelectionSettings(
-        retries=1
+        power_multiplier=0, retries=1
     )  # don't spend a lot of time trying to generate a good monster here
 
     if monster_ref.suggested_cr is not None and monster_ref.variant is not None:
