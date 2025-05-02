@@ -1,4 +1,4 @@
-# build_docs.sh
+# run_site.sh
 #!/bin/bash
 
 # Make sure we stop on any error
@@ -12,8 +12,11 @@ poetry install --sync
 
 # Set PYTHONPATH so that mkdocs can find the package in this repo
 export PYTHONPATH=.
-export PORT=8000
-export SITE_URL=http://127.0.0.1:8000/
+
+export HOST=${HOST:-127.0.0.1}
+export PORT=${PORT:-8000}
+export SITE_URL=${SITE_URL:-http://$HOST:$PORT/}
 
 # Run the site itself
-poetry run python -m foe_foundry_site
+echo "Starting Foe Foundry site at $SITE_URL"
+poetry run uvicorn --host=$HOST --port=$PORT --proxy-headers foe_foundry_site.app:app

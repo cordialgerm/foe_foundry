@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -7,19 +8,22 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from foe_foundry_data.powers import clean_power_index, index_powers
+from foe_foundry_data.powers import load_power_index, search_powers
 
+from .logconfig import setup_logging
 from .routes import powers
+
+setup_logging()
+log = logging.getLogger(__name__)
 
 
 @asynccontextmanager
 async def lifespan(app):
-    # re-index powers
-    clean_power_index()
-    index_powers()
+    log.info("Initializing FastAPI app...")
+    load_power_index()
+    log.info("Running simple query to prime the index...")
+    search_powers("Pack Tactics", limit=1)
     yield
-    # cleanup on shutdown
-    clean_power_index()
 
 
 app = FastAPI(lifespan=lifespan)
