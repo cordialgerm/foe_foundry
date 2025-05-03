@@ -3,9 +3,10 @@ import shutil
 from functools import cached_property
 from pathlib import Path
 
+from whoosh.analysis import StemmingAnalyzer
 from whoosh.fields import ID, KEYWORD, TEXT, Schema
 from whoosh.index import FileIndex, create_in, open_dir
-from whoosh.qparser import QueryParser
+from whoosh.qparser import MultifieldParser
 
 from .all import Powers
 from .data import PowerModel
@@ -25,7 +26,7 @@ cache = _IndexCache()
 
 def index_powers():
     schema = Schema(
-        name=TEXT(sortable=True),
+        name=TEXT(sortable=True, analyzer=StemmingAnalyzer()),
         key=ID(stored=True),
         power_type=KEYWORD,
         creature_types=KEYWORD,
@@ -33,7 +34,7 @@ def index_powers():
         theme=KEYWORD,
         damage_types=KEYWORD,
         tags=KEYWORD,
-        description=TEXT,
+        description=TEXT(analyzer=StemmingAnalyzer()),
     )
 
     INDEX_DIR.mkdir(exist_ok=True, parents=True)
@@ -46,8 +47,8 @@ def index_powers():
         roles = " ".join(r for r in power.roles)
         damage_types = " ".join(d for d in power.damage_types)
         tags = " ".join(t for t in power.tags)
-        fulldescription = (
-            f"{power.name} \n {tags} \n {power.key} \n\n {power.feature_descriptions}"
+        searchblob = " ".join(
+            [power.name, power.feature_descriptions, tags, roles, damage_types]
         )
 
         writer.add_document(
@@ -59,7 +60,7 @@ def index_powers():
             theme=power.theme,
             damage_types=damage_types,
             tags=tags,
-            description=fulldescription,
+            description=searchblob,
         )
 
     writer.commit()
@@ -87,8 +88,29 @@ def search_powers(search_term: str, limit: int) -> list[PowerModel]:
         ix = load_power_index()
 
     with ix.searcher() as searcher:
-        query = QueryParser("description", ix.schema).parse(search_term)
-        results = searcher.search(query, limit=limit, sortedby="name")
+        # Define which fields to search and boost
+        fields = [
+            "name",
+            "description",
+            "tags",
+            "roles",
+            "creature_types",
+            "damage_types",
+        ]
+        fieldboosts = {
+            "name": 3.0,  # Power name is highly important
+            "tags": 2.0,  # Tags are usually thematic and relevant
+            "roles": 1.5,  # Moderate importance
+            "description": 1.0,  # Default
+            "creature_types": 1.2,  # Slight boost for thematic matching
+            "damage_types": 1.2,  # Useful for keyword like "fire"
+        }
+
+        parser = MultifieldParser(fields, schema=ix.schema, fieldboosts=fieldboosts)
+        query = parser.parse(search_term)
+
+        # Perform the search
+        results = searcher.search(query, limit=limit)
         powers = []
         for result in results:
             key = result["key"]

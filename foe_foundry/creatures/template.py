@@ -122,9 +122,8 @@ class CreatureTemplate:
 
     def __post_init__(self):
         self.n_variant = len(self.variants)
-        self._variant_map = {v.name: v for v in self.variants}
+        self._variant_map = {v.key: v for v in self.variants}
         self.n_species = len(self.species)
-        self._species_map = {s.name: s for s in self.species}
 
         srd_creatures = set()
         other_creatures = set()
@@ -156,6 +155,16 @@ class CreatureTemplate:
             markdown += "\n\n"
 
         return markdown
+
+    def get_images(self, variant: str) -> list[Path]:
+        if variant not in self._variant_map:
+            raise ValueError(f"Variant {variant} not found in template {self.name}")
+
+        variant_images = self.image_urls.get(variant, [])
+        if len(variant_images) == 0:
+            return self.image_urls.get(self.key, [])
+        else:
+            return variant_images
 
     @property
     def key(self) -> str:
