@@ -44,9 +44,20 @@ class MonsterRefResolver:
 
         original_monster_name = monster_name
 
+        ref = self._resolve_monster_ref_inner(original_monster_name, monster_name)
+        if ref is not None:
+            return ref
+
         singular = p.singular_noun(monster_name)  # type: ignore
         if singular:
             monster_name = singular
+
+        return self._resolve_monster_ref_inner(original_monster_name, monster_name)
+
+    def _resolve_monster_ref_inner(
+        self, original_monster_name: str, monster_name: str
+    ) -> MonsterRef | None:
+        """Resolves a monster name to a template, variant, and suggested CR."""
 
         key = name_to_key(monster_name)
         monster_info = self.lookup.get(key)

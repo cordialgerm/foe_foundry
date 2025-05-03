@@ -20,7 +20,8 @@
     background-image: url('../img/parchment-burnt-y.png')
 }
 
-.burnt-parchment a {
+.burnt-parchment a,
+a.burnt-parchment {
     color: var(--muted-color);
     font-weight: bold;
 }
