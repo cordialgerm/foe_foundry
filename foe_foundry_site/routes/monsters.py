@@ -1,16 +1,15 @@
 from __future__ import annotations
 
 import os
-from pathlib import Path
 from typing import Annotated
 
 import numpy as np
 from backports.strenum import StrEnum
 from fastapi import APIRouter, Query, Response
+from fastapi.responses import HTMLResponse, JSONResponse
 
 from foe_foundry.creatures import random_template_and_settings
-from foe_foundry.jinja import render_statblock_fragment
-from foe_foundry.markdown import markdown
+from foe_foundry_data.monsters import MonsterModel
 
 router = APIRouter(prefix="/api/v1/monsters")
 
@@ -45,31 +44,31 @@ def random_monster(
     if output is None:
         output = MonsterFormat.html
 
-    lore_md = template.lore_md
-    images = template.get_images(settings.variant.key)
-    if len(images):
-        image_index = rng.choice(len(images))
-        image = images[image_index]
-        rel_path = image.relative_to(Path.cwd() / "docs").as_posix()
-        img_src = os.environ.get("BASE_URL", "") + rel_path
-    else:
-        img_src = None
-
-    statblock_html = render_statblock_fragment(stats)
-    lore_html = markdown(lore_md).html
-    image_html = (
-        (f'<img class="monster-image masked" src="{img_src}" alt="{stats.name}" />')
-        if img_src
-        else ""
+    base_url = os.environ.get("SITE_URL")
+    if base_url is None:
+        raise ValueError("SITE_URL environment variable is not set")
+    monster_model = MonsterModel.from_monster(
+        stats=stats, template=template, base_url=base_url
     )
 
+    statblock_html = monster_model.statblock_html
+    lore_html = monster_model.template_html
+
+    if len(monster_model.images) == 0:
+        img_src = None
+        image_html = None
+    else:
+        image_index = rng.choice(len(monster_model.images))
+        img_src = monster_model.images[image_index]
+        image_html = f'<img class="masked monster-image" src="{img_src}" alt="{monster_model.name} image" />'
+
     if output == MonsterFormat.html:
-        html = f'<div class="statblock-container">{statblock_html}\n{lore_html}\n{image_html}</div>'
-        return Response(content=html, media_type="text/html")
+        html = f'<div class="statblock-container">{statblock_html}\n{lore_html or ""}\n{image_html or ""}</div>'
+        return HTMLResponse(content=html)
     elif output == MonsterFormat.monster_only:
-        return Response(content=statblock_html, media_type="text/html")
+        return HTMLResponse(content=statblock_html)
     else:
         json_data = dict(
             statblock_html=statblock_html, lore_html=lore_html, image=img_src
         )
-        return Response(content=json_data, media_type="application/json")
+        return JSONResponse(content=json_data)

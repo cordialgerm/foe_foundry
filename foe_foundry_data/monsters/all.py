@@ -10,9 +10,9 @@ class MonsterLookupCache:
     """Caches power lookups for faster access because it can require creating a new statblock, which is expensive"""
 
     def __init__(self):
-        base_url = os.environ.get("BASE_URL")
+        base_url = os.environ.get("SITE_URL")
         if base_url is None:
-            raise ValueError("BASE_URL environment variable is not set")
+            raise ValueError("SITE_URL environment variable is not set")
         self.base_url = base_url
 
     @cached_property
@@ -21,6 +21,3 @@ class MonsterLookupCache:
             template.key: CreatureTemplateModel.from_template(template, self.base_url)
             for template in AllTemplates
         }
-
-
-Monsters = MonsterLookupCache()

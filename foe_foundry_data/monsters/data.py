@@ -9,28 +9,36 @@ from pydantic.dataclasses import dataclass
 from foe_foundry.creatures import CreatureTemplate
 from foe_foundry.jinja import render_statblock_fragment
 from foe_foundry.statblocks import Statblock
-from foe_foundry.utils.html import remove_h2_sections
+from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 
 
-def _load_monster_html(template_key: str) -> str:
-    html_path = Path.cwd() / "site" / "monsters" / f"{template_key}.html"
+def _load_monster_html(template_key: str, base_url: str) -> str | None:
+    html_path = Path.cwd() / "site" / "monsters" / template_key / "index.html"
+    if not html_path.exists():
+        return None
     bs4 = BeautifulSoup(html_path.read_text(), "html.parser")
-    monster_html = str(bs4.find(".pamphlet-main"))
+    monster_html = str(bs4.find("div", class_="pamphlet-main"))
+
     h2_ids_to_remove = [f"{template_key}-statblocks"]
-    return remove_h2_sections(monster_html, h2_ids_to_remove)
+    cleaned_html = remove_h2_sections(monster_html, h2_ids_to_remove)
+    cleaned_html = fix_relative_paths(cleaned_html, base_url)
+    return cleaned_html
 
 
 @dataclass(kw_only=True)
 class CreatureTemplateModel:
     template_key: str
     name: str
-    template_html: str
+    template_html: str | None
     images: list[str]
 
     @staticmethod
     def from_template(
         template: CreatureTemplate, base_url: str
     ) -> CreatureTemplateModel:
+        if not base_url.endswith("/"):
+            base_url += "/"
+
         all_images = []
         for _, images in template.image_urls.items():
             for image in images:
@@ -38,7 +46,7 @@ class CreatureTemplateModel:
                 abs_image = urljoin(base_url, relative_image)
                 all_images.append(abs_image)
 
-        monster_html = _load_monster_html(template.key)
+        monster_html = _load_monster_html(template.key, base_url)
         return CreatureTemplateModel(
             template_key=template.key,
             name=template.name,
@@ -55,7 +63,7 @@ class MonsterModel:
     variant_key: str
 
     statblock_html: str
-    template_html: str
+    template_html: str | None
     images: list[str]
 
     @staticmethod
@@ -68,7 +76,7 @@ class MonsterModel:
             abs_image = urljoin(base_url, relative_image)
             all_images.append(abs_image)
 
-        template_html = _load_monster_html(template.key)
+        template_html = _load_monster_html(template.key, base_url)
 
         statblock_html = render_statblock_fragment(stats)
 
