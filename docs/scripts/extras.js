@@ -76,6 +76,15 @@ document.addEventListener("click", (event) => {
 
   if (!variantKey || !statblock) return;
 
+  // Trigger the animation
+  button.classList.add("rolling");
+  button.disabled = true;
+  // Remove class after animation ends
+  setTimeout(() => {
+    button.classList.remove("rolling");
+    button.disabled = false;
+  }, 600); // match the animation duration
+
   rerollMonster(variantKey, statblock);
 });
 

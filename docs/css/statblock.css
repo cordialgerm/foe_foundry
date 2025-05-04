@@ -247,6 +247,10 @@
     border: none;
 }
 
+.reroll-button:disabled {
+    color: inherit;
+}
+
 .statblock-wrapper {
     position: relative;
 }
@@ -256,23 +260,30 @@
         transform: rotate(0deg) scale(1);
     }
 
-    25% {
-        transform: rotate(15deg) scale(1.2);
-    }
-
     50% {
-        transform: rotate(-15deg) scale(1.2);
+        transform: rotate(720deg) scale(1.2);
+        /* 2 full spins */
     }
 
-    75% {
-        transform: rotate(10deg) scale(1.1);
+    70% {
+        transform: rotate(720deg) scale(0.95);
+        /* squish bounce */
+    }
+
+    85% {
+        transform: rotate(720deg) scale(1.05) translateX(-2px);
+    }
+
+    95% {
+        transform: rotate(720deg) scale(1.02) translateX(2px);
     }
 
     100% {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(720deg) scale(1) translateX(0);
     }
 }
 
 .reroll-button.rolling {
-    animation: roll-dice 0.6s ease;
+    animation: roll-dice 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    /* default Material Design easing */
 }
