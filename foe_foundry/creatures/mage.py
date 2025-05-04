@@ -53,136 +53,136 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-ApprenticeVariant = CreatureVariant(
+ApprenticeVariant = MonsterVariant(
     name="Apprentice",
     description="Apprentices are young mages who are still learning the ways of magic. They are eager to prove themselves and are often sent on quests or missions to gain experience and knowledge.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Mage Neophyte",
             cr=1 / 4,
             other_creatures={"Apprentice Wizard": "motm"},
         ),
-        SuggestedCr(
+        Monster(
             name="Mage Apprentice", cr=2, other_creatures={"Mage Apprentice": "mm25"}
         ),
     ],
 )
 
-AbjurerVariant = CreatureVariant(
+AbjurerVariant = MonsterVariant(
     name="Abjurer",
     description="Abjurers are mages who specialize in protective spells. They are skilled at creating magical barriers, wards, and other defenses to protect themselves and their allies from harm.",
-    suggested_crs=[
-        SuggestedCr(name="Abjurer Mage Adept", cr=4),
-        SuggestedCr(name="Abjurer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Abjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Abjurer Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Abjurer Mage Adept", cr=4),
+        Monster(name="Abjurer Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Abjurer Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Abjurer Primagus", cr=16, is_legendary=True),
     ],
 )
 
-ConjurerVariant = CreatureVariant(
+ConjurerVariant = MonsterVariant(
     name="Conjurer",
     description="Conjurers are mages who specialize in summoning creatures and objects from other planes of existence. They can create temporary allies to fight alongside them, or they could use their powers to create magical traps or barriers.",
-    suggested_crs=[
-        SuggestedCr(name="Conjurer Mage Adept", cr=4),
-        SuggestedCr(name="Conjurer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Conjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Conjurer Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Conjurer Mage Adept", cr=4),
+        Monster(name="Conjurer Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Conjurer Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Conjurer Primagus", cr=16, is_legendary=True),
     ],
 )
 
-DivinerVariant = CreatureVariant(
+DivinerVariant = MonsterVariant(
     name="Diviner",
     description="Diviners are mages who specialize in seeing the future and uncovering hidden truths. They can use their powers to predict the actions of their enemies, or they could use their insights to uncover secrets and solve mysteries.",
-    suggested_crs=[
-        SuggestedCr(name="Diviner Mage Adept", cr=4),
-        SuggestedCr(name="Diviner Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Diviner Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Diviner Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Diviner Mage Adept", cr=4),
+        Monster(name="Diviner Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Diviner Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Diviner Primagus", cr=16, is_legendary=True),
     ],
 )
 
-EnchanterVariant = CreatureVariant(
+EnchanterVariant = MonsterVariant(
     name="Enchanter",
     description="Enchanters are mages who specialize in manipulating the minds of others. They can charm, beguile, or dominate other creatures, or they could use their powers to create magical items or artifacts.",
-    suggested_crs=[
-        SuggestedCr(name="Enchanter Mage Adept", cr=4),
-        SuggestedCr(name="Enchanter Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Enchanter Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Enchanter Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Enchanter Mage Adept", cr=4),
+        Monster(name="Enchanter Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Enchanter Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Enchanter Primagus", cr=16, is_legendary=True),
     ],
 )
 
-IllusionistVariant = CreatureVariant(
+IllusionistVariant = MonsterVariant(
     name="Illusionist",
     description="Illusionists are mages who specialize in creating illusions and phantasms. They can create lifelike images, sounds, and other sensory effects to deceive or distract their enemies, or they could use their powers to create magical traps or barriers.",
-    suggested_crs=[
-        SuggestedCr(name="Illusionist Mage Adept", cr=4),
-        SuggestedCr(name="Illusionist Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Illusionist Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Illusionist Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Illusionist Mage Adept", cr=4),
+        Monster(name="Illusionist Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Illusionist Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Illusionist Primagus", cr=16, is_legendary=True),
     ],
 )
 
-NecromancerVariant = CreatureVariant(
+NecromancerVariant = MonsterVariant(
     name="Necromancer",
     description="Necromancers are mages who specialize in death magic. They can raise the dead to serve as their minions, drain the life force from their enemies, or create powerful curses and hexes to bring ruin to their foes.",
-    suggested_crs=[
-        SuggestedCr(name="Necromancer Adept", cr=4),
-        SuggestedCr(name="Necromancer Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Necromancer Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Necromancer Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Necromancer Adept", cr=4),
+        Monster(name="Necromancer Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Necromancer Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Necromancer Primagus", cr=16, is_legendary=True),
     ],
 )
 
-TransmuterVariant = CreatureVariant(
+TransmuterVariant = MonsterVariant(
     name="Transmuter",
     description="Transmuters are mages who specialize in changing the properties of objects and creatures. They can turn lead into gold, transform their enemies into harmless creatures, or create powerful elixirs and potions to enhance their own abilities.",
-    suggested_crs=[
-        SuggestedCr(name="Transmuter Mage Adept", cr=4),
-        SuggestedCr(name="Transmuter Mage", cr=6, srd_creatures=["Mage"]),
-        SuggestedCr(name="Transmuter Archmage", cr=12, srd_creatures=["Archmage"]),
-        SuggestedCr(name="Transmuter Primagus", cr=16, is_legendary=True),
+    monsters=[
+        Monster(name="Transmuter Mage Adept", cr=4),
+        Monster(name="Transmuter Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(name="Transmuter Archmage", cr=12, srd_creatures=["Archmage"]),
+        Monster(name="Transmuter Primagus", cr=16, is_legendary=True),
     ],
 )
 
-PyromancerVariant = CreatureVariant(
+PyromancerVariant = MonsterVariant(
     name="Pyromancer",
     description="Pyromancers are mages who specialize in controlling fire. They can create walls of flame, summon fiery meteors, or unleash devastating fireballs to incinerate their enemies",
-    suggested_crs=[
-        SuggestedCr(name="Pyromancer", cr=6, srd_creatures=["Mage"]),
+    monsters=[
+        Monster(name="Pyromancer", cr=6, srd_creatures=["Mage"]),
     ],
 )
 
-CryomancerVariant = CreatureVariant(
+CryomancerVariant = MonsterVariant(
     name="Cryomancer",
     description="Cryomancers are mages who specialize in controlling ice and cold. They can create blizzards, freeze their enemies in place, or summon icy shards to pierce their foes.",
-    suggested_crs=[
-        SuggestedCr(name="Cryomancer", cr=6, srd_creatures=["Mage"]),
+    monsters=[
+        Monster(name="Cryomancer", cr=6, srd_creatures=["Mage"]),
     ],
 )
 
-ElectromancerVariant = CreatureVariant(
+ElectromancerVariant = MonsterVariant(
     name="Electromancer",
     description="Electromancers are mages who specialize in controlling electricity and lightning. They can summon bolts of lightning, create electrical storms, or electrify their enemies with powerful shocks.",
-    suggested_crs=[
-        SuggestedCr(name="Electromancer", cr=6, srd_creatures=["Mage"]),
+    monsters=[
+        Monster(name="Electromancer", cr=6, srd_creatures=["Mage"]),
     ],
 )
 
-ToximancerVariant = CreatureVariant(
+ToximancerVariant = MonsterVariant(
     name="Toximancer",
     description="Toximancers are mages who specialize in controlling poisons and diseases. They can create clouds of toxic gas, infect their enemies with deadly diseases, or summon swarms of poisonous creatures to attack their foes.",
-    suggested_crs=[
-        SuggestedCr(name="Toximancer", cr=6, srd_creatures=["Mage"]),
+    monsters=[
+        Monster(name="Toximancer", cr=6, srd_creatures=["Mage"]),
     ],
 )
 
@@ -196,7 +196,7 @@ def power_matches_cr(p: Power, cr: float) -> bool:
 
 class _MageWeights(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, name: str, cr: float, variant: CreatureVariant
+        self, stats: BaseStatblock, name: str, cr: float, variant: MonsterVariant
     ):
         self.stats = stats
         self.variant = variant
@@ -399,7 +399,8 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-2),
@@ -536,7 +537,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-MageTemplate: CreatureTemplate = CreatureTemplate(
+MageTemplate: MonsterTemplate = MonsterTemplate(
     name="Mage",
     tag_line="Magical Scholars and Spellcasters",
     description="Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.",

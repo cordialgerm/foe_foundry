@@ -10,22 +10,22 @@ from ..powers.creature_type import elemental, undead
 from ..powers.themed import anti_magic, anti_ranged, cursed, deathly, fearsome, tough
 from ..role_types import MonsterRole
 from ..skills import Stats, StatScaling
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-WightVariant = CreatureVariant(
+WightVariant = MonsterVariant(
     name="Wight",
     description="Wights are the dead and frozen corpses of wicked champions of bygone eras whose evil deeds persist into undeath.",
-    suggested_crs=[
-        SuggestedCr(name="Wight", cr=3, srd_creatures=["Wight"]),
-        SuggestedCr(name="Wight Fell Champion", cr=6),
-        SuggestedCr(name="Wight Dread Lord", cr=9, is_legendary=True),
+    monsters=[
+        Monster(name="Wight", cr=3, srd_creatures=["Wight"]),
+        Monster(name="Wight Fell Champion", cr=6),
+        Monster(name="Wight Dread Lord", cr=9, is_legendary=True),
     ],
 )
 
@@ -88,7 +88,8 @@ def generate_wight(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -158,7 +159,7 @@ def generate_wight(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-WightTemplate: CreatureTemplate = CreatureTemplate(
+WightTemplate: MonsterTemplate = MonsterTemplate(
     name="Wight",
     tag_line="Deathly cold malignant warriors of old",
     description="Wights are the dead and frozen corpses of wicked champions of bygone eras whose evil deeds persist into undeath.",

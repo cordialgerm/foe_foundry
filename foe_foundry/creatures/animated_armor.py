@@ -19,20 +19,20 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-AnimatedArmorVariant = CreatureVariant(
+AnimatedArmorVariant = MonsterVariant(
     name="Animated Armor",
     description="Animated Armor are constructed suits of armor that have been magically animated to serve as a guardian or protector. It is typically made of metal and has a humanoid shape.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Animated Armor",
             cr=1,
             srd_creatures=["Animated Armor"],
@@ -40,11 +40,11 @@ AnimatedArmorVariant = CreatureVariant(
     ],
 )
 
-RunicSpellplateVariant = CreatureVariant(
+RunicSpellplateVariant = MonsterVariant(
     name="Animated Runeplate",
     description="An Animated Runeplate is a suit of rune-etched armor that has been magically animated to serve as a powerful warrior. The runes grant it powerful magical protections and the ability to fly, chasing down arcane foes with deadly precision.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Animated Runeplate", cr=4, other_creatures={"Helmed Horror": "mm24"}
         )
     ],
@@ -53,7 +53,7 @@ RunicSpellplateVariant = CreatureVariant(
 
 class _AnimatedArmorPowers(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, variant: CreatureVariant, rng: np.random.Generator
+        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
     ):
         self.stats = stats
         self.variant = variant
@@ -152,7 +152,8 @@ def generate_animated_armor(settings: GenerationSettings) -> StatsBeingGenerated
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -227,7 +228,7 @@ def generate_animated_armor(settings: GenerationSettings) -> StatsBeingGenerated
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-AnimatedArmorTemplate: CreatureTemplate = CreatureTemplate(
+AnimatedArmorTemplate: MonsterTemplate = MonsterTemplate(
     name="Animated Armor",
     tag_line="Mage-Wrought Animated Guardians",
     description="Animated Armor are constructed suits of armor that have been magically animated to serve as a guardian or protector. It is typically made of metal and has a humanoid shape.",

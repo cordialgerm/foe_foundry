@@ -23,24 +23,24 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-OwlbearVariant = CreatureVariant(
+OwlbearVariant = MonsterVariant(
     name="Owlbear",
     description="Owlbears are ferocious hybrid creatures, combining the strength and frame of a bear with the sharp beak and keen senses of an owl. They are known for their territorial nature and relentless aggression.",
-    suggested_crs=[
-        SuggestedCr(name="Owlbear", cr=3, srd_creatures=["Owlbear"]),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Owlbear", cr=3, srd_creatures=["Owlbear"]),
+        Monster(
             name="Savage Owlbear", cr=7, other_creatures={"Primeval Owlbear": "mm24"}
         ),
-        SuggestedCr(name="Owlbear Cub", cr=1 / 2),
+        Monster(name="Owlbear Cub", cr=1 / 2),
     ],
 )
 
@@ -95,7 +95,8 @@ def generate_owlbear(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary, mod=4 if cr >= 6 else 2),
@@ -160,7 +161,7 @@ def generate_owlbear(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-OwlbearTemplate: CreatureTemplate = CreatureTemplate(
+OwlbearTemplate: MonsterTemplate = MonsterTemplate(
     name="Owlbear",
     tag_line="Unnaturally Territorial Predators",
     description="An Owlbear is a fearsome hybrid creature, combining the powerful frame of a bear with the hooked beak, feathers, and piercing eyes of a giant owl.",

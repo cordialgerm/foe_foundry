@@ -26,29 +26,29 @@ from ..powers.themed import (
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-HydraVariant = CreatureVariant(
+HydraVariant = MonsterVariant(
     name="Hydra",
     description="Hydras are massive, multi-headed serpents that dwell in swamps and marshes. They are fearsome predators, capable of regenerating lost heads and limbs. Their blood is a potent poison, and their breath can melt flesh and bone.",
-    suggested_crs=[SuggestedCr(name="Hydra", cr=8, srd_creatures=["Hydra"])],
+    monsters=[Monster(name="Hydra", cr=8, srd_creatures=["Hydra"])],
 )
-HydraFoulbloodVariant = CreatureVariant(
+HydraFoulbloodVariant = MonsterVariant(
     name="Foulblood Hydra",
     description="Foulblood Hydras are born of a fell curse that blends foul demonic blood with the hydra's own. Their blood is a viscous, black ichor that can corrupt the land around them.",
-    suggested_crs=[SuggestedCr(name="Foulblood Hydra", cr=12, is_legendary=True)],
+    monsters=[Monster(name="Foulblood Hydra", cr=12, is_legendary=True)],
 )
 
 
 class _HydraWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -114,7 +114,8 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -203,7 +204,7 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-HydraTemplate: CreatureTemplate = CreatureTemplate(
+HydraTemplate: MonsterTemplate = MonsterTemplate(
     name="Hydra",
     tag_line="Multiheaded serpent of legend",
     description="Hydras are massive, multi-headed serpents that dwell in swamps and marshes. They are fearsome predators, capable of regenerating lost heads and limbs. Their blood is a potent poison, and their breath can melt flesh and bone.",

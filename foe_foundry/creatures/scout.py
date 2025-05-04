@@ -17,19 +17,19 @@ from ..powers.themed.trap import TrapPowers
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
 
 class _ScoutWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -47,28 +47,28 @@ class _ScoutWeights(CustomPowerSelection):
             return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
 
-ScoutVariant = CreatureVariant(
+ScoutVariant = MonsterVariant(
     name="Scout",
     description="Guards are perceptive, but most have little martial training. They might be bouncers, lookouts, members of a city watch, or other keen-eyed warriors.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Scout",
             cr=1 / 2,
             srd_creatures=["Scout"],
         ),
-        SuggestedCr(name="Ranger", cr=5),
+        Monster(name="Ranger", cr=5),
     ],
 )
-CommanderVariant = CreatureVariant(
+CommanderVariant = MonsterVariant(
     name="Scout Captain",
     description="Scout captains are experienced explorers and sharpshooters. They might lead bands of other scouts or disappear into the wilds alone for months at a time.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Scout Captain",
             cr=3,
             other_creatures={"Scout Captain": "mm25"},
         ),
-        SuggestedCr(name="First Scout", cr=7, is_legendary=True),
+        Monster(name="First Scout", cr=7, is_legendary=True),
     ],
 )
 
@@ -94,7 +94,8 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stat_scaling,
         hp_multiplier=settings.hp_multiplier,
@@ -179,7 +180,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-ScoutTemplate: CreatureTemplate = CreatureTemplate(
+ScoutTemplate: MonsterTemplate = MonsterTemplate(
     name="Scout",
     tag_line="Watchers and Wanderers",
     description="Scouts are warriors of the wilderness, trained in hunting and tracking. They might be explorers or trappers, or they could perform more martial roles as archers, bounty hunters, or outriders.",

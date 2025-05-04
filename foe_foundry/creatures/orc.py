@@ -36,40 +36,40 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-OrcSoldierVariant = CreatureVariant(
+OrcSoldierVariant = MonsterVariant(
     name="Orc Soldier",
     description="Orc Soldiers are the backbone of any orc warband. They are strong and tough, and they fight with a ferocity that is unmatched.",
-    suggested_crs=[SuggestedCr(name="Orc Soldier", cr=1 / 2, srd_creatures=["Orc"])],
+    monsters=[Monster(name="Orc Soldier", cr=1 / 2, srd_creatures=["Orc"])],
 )
 
-OrcReaverVariant = CreatureVariant(
+OrcReaverVariant = MonsterVariant(
     name="Orc Reaver",
     description="Orc Reavers are the most aggressive and bloodthirsty warriors in the warband. They charge into battle with reckless abandon, seeking to kill and maim as many foes as possible.",
-    suggested_crs=[SuggestedCr(name="Orc Reaver", cr=1)],
+    monsters=[Monster(name="Orc Reaver", cr=1)],
 )
 
-OrcHardenedOneVariant = CreatureVariant(
+OrcHardenedOneVariant = MonsterVariant(
     name="Orc Hardened One",
     description="Orc Hardened Ones are the elite warriors of the orc warband. They are tough and resilient, and they fight with a brutal efficiency. They are often the elite bodyguard of the warchief.",
-    suggested_crs=[
-        SuggestedCr(name="Orc Hardened One", cr=2, other_creatures={"Orog": "mm14"}),
+    monsters=[
+        Monster(name="Orc Hardened One", cr=2, other_creatures={"Orog": "mm14"}),
     ],
 )
 
-OrcBloodriteShamanVariant = CreatureVariant(
+OrcBloodriteShamanVariant = MonsterVariant(
     name="Orc Bloodrite Shaman",
     description="Orc Bloodrite Shamans are the spiritual leaders of the orc warband. They are powerful spellcasters who can call upon the spirits of their ancestors to aid them in battle. They often create powerful totems to protect their allies and curse their enemies.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Orc Bloodrite Shaman",
             cr=2,
             other_creatures={
@@ -78,15 +78,15 @@ OrcBloodriteShamanVariant = CreatureVariant(
                 "Orc Eye of Gruumsh": "vgtm",
             },
         ),
-        SuggestedCr(name="Orc Bloodrite Elder Shaman", cr=5),
+        Monster(name="Orc Bloodrite Elder Shaman", cr=5),
     ],
 )
 
-OrcBloodletterVariant = CreatureVariant(
+OrcBloodletterVariant = MonsterVariant(
     name="Orc Bloodletter",
     description="Orc Bloodletters are the most feared and deadly warriors in the orc warband. They are skilled in the art of assassination and can strike from the shadows with deadly precision.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Orc Bloodletter",
             cr=4,
             other_creatures={"Orc Blade of Ilneval": "vgtm"},
@@ -94,14 +94,12 @@ OrcBloodletterVariant = CreatureVariant(
     ],
 )
 
-OrcWarchiefVariant = CreatureVariant(
+OrcWarchiefVariant = MonsterVariant(
     name="Orc Warchief",
     description="Orc Warchiefs are the leaders of the orc warband. They are powerful warriors and skilled tacticians who can rally their allies to victory. They are often accompanied by a retinue of elite warriors. The most powerful warchiefs die their tusks red in the blood of their foes.",
-    suggested_crs=[
-        SuggestedCr(
-            name="Orc Warchief", cr=4, other_creatures={"Orc War Chief": "mm14"}
-        ),
-        SuggestedCr(name="Orc Warchief of the Bloody Fang", cr=7, is_legendary=True),
+    monsters=[
+        Monster(name="Orc Warchief", cr=4, other_creatures={"Orc War Chief": "mm14"}),
+        Monster(name="Orc Warchief of the Bloody Fang", cr=7, is_legendary=True),
     ],
 )
 
@@ -148,7 +146,7 @@ class _OrcPowers(CustomPowerSelection):
 
 
 def orc_powers(
-    variant: CreatureVariant, rng: np.random.Generator, cr: float
+    variant: MonsterVariant, rng: np.random.Generator, cr: float
 ) -> CustomPowerSelection:
     if variant is OrcSoldierVariant:
         return _OrcPowers(
@@ -338,7 +336,8 @@ def generate_orc(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=settings.hp_multiplier,
@@ -464,7 +463,7 @@ def generate_orc(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-OrcTemplate: CreatureTemplate = CreatureTemplate(
+OrcTemplate: MonsterTemplate = MonsterTemplate(
     name="Orc",
     tag_line="Bloodrage-Fueled Ancestral Warriors",
     description="Orcs are savage and aggressive humanoids known for their brute strength and ferocity in battle. They are gifted with a powerful bloodrage that enhances their physical abilities and makes them formidable foes. Orcs are often found in warbands, led by a powerful warchief, and they are known for their brutal tactics and willingness to fight to the death.",

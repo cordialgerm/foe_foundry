@@ -1,3 +1,4 @@
+from ._data import GenerationSettings, MonsterTemplate
 from .animated_armor import AnimatedArmorTemplate
 from .assassin import AssassinTemplate
 from .balor import BalorTemplate
@@ -33,7 +34,6 @@ from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
 from .spirit import SpiritTemplate
 from .spy import SpyTemplate
-from .template import CreatureTemplate, GenerationSettings
 from .tough import ToughTemplate
 from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
@@ -41,7 +41,7 @@ from .wight import WightTemplate
 from .wolf import WolfTemplate
 from .zombie import ZombieTemplate
 
-AllTemplates: list[CreatureTemplate] = [
+AllTemplates: list[MonsterTemplate] = [
     AnimatedArmorTemplate,
     AssassinTemplate,
     BalorTemplate,
@@ -87,7 +87,7 @@ AllTemplates: list[CreatureTemplate] = [
 
 
 def all_templates_and_settings() -> list[
-    tuple[CreatureTemplate, list[GenerationSettings]]
+    tuple[MonsterTemplate, list[GenerationSettings]]
 ]:
     results = []
     for template in AllTemplates:

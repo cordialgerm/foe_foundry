@@ -45,7 +45,7 @@ class StatsBeingGenerated:
 
 
 @dataclass(kw_only=True, frozen=True)
-class SuggestedCr:
+class Monster:
     name: str
     cr: float
     is_legendary: bool = False
@@ -61,10 +61,10 @@ class SuggestedCr:
 
 
 @dataclass(kw_only=True, frozen=True)
-class CreatureVariant:
+class MonsterVariant:
     name: str
     description: str
-    suggested_crs: list[SuggestedCr]
+    monsters: list[Monster]
 
     def __hash__(self) -> int:
         return hash(self.name)
@@ -77,10 +77,11 @@ class CreatureVariant:
 @dataclass(kw_only=True, frozen=True)
 class GenerationSettings:
     creature_name: str
-    creature_template: str
+    monster_template: str
+    monster_key: str
     cr: float
     is_legendary: bool
-    variant: CreatureVariant
+    variant: MonsterVariant
     species: CreatureSpecies | None = None
     rng: np.random.Generator
 
@@ -109,13 +110,13 @@ GenerateCallback: TypeAlias = Callable[[GenerationSettings], StatsBeingGenerated
 
 
 @dataclass(kw_only=True)
-class CreatureTemplate:
+class MonsterTemplate:
     name: str
     tag_line: str
     description: str
     environments: list[str]  # TODO - standardize
     treasure: list[str]
-    variants: list[CreatureVariant]
+    variants: list[MonsterVariant]
     species: list[CreatureSpecies]
     callback: GenerateCallback
     is_sentient_species: bool = False
@@ -128,7 +129,7 @@ class CreatureTemplate:
         srd_creatures = set()
         other_creatures = set()
         for v in self.variants:
-            for s in v.suggested_crs:
+            for s in v.monsters:
                 if s.srd_creatures is not None:
                     srd_creatures.update(s.srd_creatures)
                 if s.other_creatures is not None:
@@ -179,8 +180,8 @@ class CreatureTemplate:
 
     def generate_suggested_cr(
         self,
-        variant: CreatureVariant,
-        suggested_cr: SuggestedCr,
+        variant: MonsterVariant,
+        suggested_cr: Monster,
         species: CreatureSpecies | None = None,
         **kwargs,
     ) -> StatsBeingGenerated:
@@ -189,7 +190,7 @@ class CreatureTemplate:
         args: dict = (
             dict(
                 creature_name=suggested_cr.name,
-                creature_template=self.name,
+                monster_template=self.name,
                 cr=suggested_cr.cr,
                 is_legendary=suggested_cr.is_legendary,
                 variant=variant,
@@ -212,18 +213,19 @@ class CreatureTemplate:
         """Generates all possible settings for this template"""
         options = []
         for variant in self.variants:
-            for suggested_cr in variant.suggested_crs:
+            for monster in variant.monsters:
                 for species in self.species if self.n_species > 0 else [None]:
                     args: dict = (
                         dict(
-                            creature_name=suggested_cr.name,
-                            creature_template=self.name,
-                            cr=suggested_cr.cr,
-                            is_legendary=suggested_cr.is_legendary,
+                            creature_name=monster.name,
+                            monster_template=self.name,
+                            monster_key=monster.key,
+                            cr=monster.cr,
+                            is_legendary=monster.is_legendary,
                             variant=variant,
                             species=species,
                             selection_settings=SelectionSettings(),
-                            rng=rng_factory(suggested_cr, species),
+                            rng=rng_factory(monster, species),
                         )
                         | kwargs
                     )
@@ -232,7 +234,7 @@ class CreatureTemplate:
         return options
 
 
-def rng_factory(suggested_cr: SuggestedCr, species: CreatureSpecies | None):
+def rng_factory(suggested_cr: Monster, species: CreatureSpecies | None):
     hash_key = (
         f"{suggested_cr.name}-{species.name}"
         if species is not None

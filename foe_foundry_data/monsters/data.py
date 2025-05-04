@@ -6,7 +6,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from pydantic.dataclasses import dataclass
 
-from foe_foundry.creatures import CreatureTemplate
+from foe_foundry.creatures import MonsterTemplate
 from foe_foundry.jinja import render_statblock_fragment
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
@@ -34,7 +34,7 @@ class CreatureTemplateModel:
 
     @staticmethod
     def from_template(
-        template: CreatureTemplate, base_url: str
+        template: MonsterTemplate, base_url: str
     ) -> CreatureTemplateModel:
         if not base_url.endswith("/"):
             base_url += "/"
@@ -68,7 +68,7 @@ class MonsterModel:
 
     @staticmethod
     def from_monster(
-        stats: Statblock, template: CreatureTemplate, base_url: str
+        stats: Statblock, template: MonsterTemplate, base_url: str
     ) -> MonsterModel:
         all_images = []
         for image in template.image_urls.get(stats.variant_key, []):

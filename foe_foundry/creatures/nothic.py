@@ -19,21 +19,21 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-HollowGazerVariant = CreatureVariant(
+HollowGazerVariant = MonsterVariant(
     name="Hollow Gazer",
     description="Hollow Gazers are seekers of dark and forbidden knowledge that have been driven insane by cursed knowledge best left unknown.",
-    suggested_crs=[
-        SuggestedCr(name="Hollow Gazer", cr=2, other_creatures={"Nothic": "mm24"}),
-        SuggestedCr(name="Hollow Gazer of Ruin", cr=6),
+    monsters=[
+        Monster(name="Hollow Gazer", cr=2, other_creatures={"Nothic": "mm24"}),
+        Monster(name="Hollow Gazer of Ruin", cr=6),
     ],
 )
 
@@ -85,7 +85,8 @@ def generate_hollow_gazer(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-2),
@@ -153,7 +154,7 @@ def generate_hollow_gazer(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-HollowGazerTemplate: CreatureTemplate = CreatureTemplate(
+HollowGazerTemplate: MonsterTemplate = MonsterTemplate(
     name="Hollow Gazer",
     tag_line="Insane Seekers of Twisted Knowledge",
     description="Hollow Gazers are seekers of dark and forbidden knowledge that have been driven insane by cursed knowledge best left unknown.",

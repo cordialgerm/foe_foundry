@@ -17,47 +17,47 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import MonsterDials
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-SkeletonVariant = CreatureVariant(
+SkeletonVariant = MonsterVariant(
     name="Skeleton",
     description="Skeletons are reanimated Humanoid bones bearing the equipment they had in life. They have rudimentary faculties and greater agility than zombies and similar shambling corpses. While they aren't capable of creating plans of their own, they avoid obvious barriers and self-destructive situations.",
-    suggested_crs=[
-        SuggestedCr(name="Skeleton", cr=1 / 4, srd_creatures=["Skeleton"]),
-        SuggestedCr(name="Skeletal Grave Guard", cr=4),
+    monsters=[
+        Monster(name="Skeleton", cr=1 / 4, srd_creatures=["Skeleton"]),
+        Monster(name="Skeletal Grave Guard", cr=4),
     ],
 )
 
-BurningSkeletonVariant = CreatureVariant(
+BurningSkeletonVariant = MonsterVariant(
     name="Burning Skeleton",
     description="Flaming skeletons burn with unbridled necromantic energy. This magic grants them blazing attacks and greater awareness, which they use to command lesser Undead.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Burning Skeleton", cr=3, other_creatures={"Flaming Skeleton": "mm25"}
         ),
-        SuggestedCr(name="Burning Skeletal Champion", cr=6),
+        Monster(name="Burning Skeletal Champion", cr=6),
     ],
 )
 
-FreezingSkeletonVariant = CreatureVariant(
+FreezingSkeletonVariant = MonsterVariant(
     name="Freezing Skeleton",
     description="Freezing skeletons are wreathed in the icy cold of the deathly river Styx.",
-    suggested_crs=[
-        SuggestedCr(name="Freezing Skeleton", cr=3),
-        SuggestedCr(name="Freezing Skeletal Champion", cr=6),
+    monsters=[
+        Monster(name="Freezing Skeleton", cr=3),
+        Monster(name="Freezing Skeletal Champion", cr=6),
     ],
 )
 
 
 class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -82,7 +82,8 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default),
@@ -186,7 +187,7 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-SkeletonTemplate: CreatureTemplate = CreatureTemplate(
+SkeletonTemplate: MonsterTemplate = MonsterTemplate(
     name="Skeleton",
     tag_line="Ossified Evil",
     description="Skeletons rise at the summons of necromancers and foul spirits. Whether they’re the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers.",

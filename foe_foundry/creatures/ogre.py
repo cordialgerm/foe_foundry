@@ -25,20 +25,20 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..spells import CasterType
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-OgreVariant = CreatureVariant(
+OgreVariant = MonsterVariant(
     name="Ogre",
     description="Ogres are massive and brutish ravagers. Their hunger and anger is matched only by their strength and stupidity.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ogre",
             cr=2,
             srd_creatures=["Ogre"],
@@ -46,11 +46,11 @@ OgreVariant = CreatureVariant(
     ],
 )
 
-OgreWallsmashaVariant = CreatureVariant(
+OgreWallsmashaVariant = MonsterVariant(
     name="Ogre Wallsmasha",
     description="Ogres occasionally uproot whole trees and fashion them into crude battering rams that can smash through walls and anything else dumb enough to get in the way.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ogre Wallsmasha",
             cr=4,
             other_creatures={"Ogre Battering Ram": "motm"},
@@ -58,22 +58,22 @@ OgreWallsmashaVariant = CreatureVariant(
     ],
 )
 
-OgreBurnbelchaVariant = CreatureVariant(
+OgreBurnbelchaVariant = MonsterVariant(
     name="Ogre Burnbelcha",
     description="Some ogres ritually imbibe a horrendous and highly flammable concoction that they belch on unsuspecting foes.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ogre Burnbelcha",
             cr=4,
         )
     ],
 )
 
-OgreChaincrakkaVariant = CreatureVariant(
+OgreChaincrakkaVariant = MonsterVariant(
     name="Ogre Chaincrakka",
     description="Chaincrakka ogres wield deadly whips and vicious barbed nets to capture prey for the cooking pots.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ogre Chaincrakka",
             cr=4,
             other_creatures={"Ogre Chain Brute": "motm"},
@@ -81,11 +81,11 @@ OgreChaincrakkaVariant = CreatureVariant(
     ],
 )
 
-OgreBigBrainzVariant = CreatureVariant(
+OgreBigBrainzVariant = MonsterVariant(
     name="Ogre Big Brainz",
     description="Ogre magi are rare freaks among their brutish kin, born with wicked cunning and gifted with dark, unnatural powers.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ogre Big Brainz",
             cr=7,
             srd_creatures=["Oni"],
@@ -95,7 +95,7 @@ OgreBigBrainzVariant = CreatureVariant(
 
 
 class _OgrePowers(CustomPowerSelection):
-    def __init__(self, variant: CreatureVariant):
+    def __init__(self, variant: MonsterVariant):
         self.variant = variant
 
         suppress = (
@@ -202,7 +202,8 @@ def generate_ogre(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stats,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -289,7 +290,7 @@ def generate_ogre(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-OgreTemplate: CreatureTemplate = CreatureTemplate(
+OgreTemplate: MonsterTemplate = MonsterTemplate(
     name="Ogre",
     tag_line="Hungry hulking brutes and oafs",
     description="Ogres are massive and brutish ravagers that are constantly hungry and angry.",

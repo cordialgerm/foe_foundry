@@ -29,32 +29,32 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-DruidVariant = CreatureVariant(
+DruidVariant = MonsterVariant(
     name="Druid",
     description="Druids use primal magic to protect the natural world and its inhabitants. They are often found in the wilds, where they can commune with nature and draw upon its power.",
-    suggested_crs=[
-        SuggestedCr(name="Druid", cr=2, srd_creatures=["Druid"]),
-        SuggestedCr(name="Druid Greenwarden", cr=6),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Druid", cr=2, srd_creatures=["Druid"]),
+        Monster(name="Druid Greenwarden", cr=6),
+        Monster(
             name="Archdruid of Old Way", cr=12, other_creatures={"Archdruid": "mmotm"}
         ),
-        SuggestedCr(name="Archdruid of the First Grove", cr=16, is_legendary=True),
+        Monster(name="Archdruid of the First Grove", cr=16, is_legendary=True),
     ],
 )
 
 
 class _DruidWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -111,7 +111,8 @@ def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default),
@@ -189,7 +190,7 @@ def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-DruidTemplate: CreatureTemplate = CreatureTemplate(
+DruidTemplate: MonsterTemplate = MonsterTemplate(
     name="Druid",
     tag_line="Stewards and Sages of Nature",
     description="Druids use primal magic to protect the natural world and its inhabitants. They are often found in the wilds, where they can commune with nature and draw upon its power.",

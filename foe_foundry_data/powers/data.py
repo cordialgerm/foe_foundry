@@ -32,7 +32,7 @@ def _get_best_statblock(
             original_monster_name=requested_statblock,
             template=warrior.WarriorTemplate,
             variant=None,
-            suggested_cr=None,
+            monster=None,
         )
         update_name_to = requested_statblock
 
@@ -40,17 +40,18 @@ def _get_best_statblock(
         power_multiplier=0, retries=1
     )  # don't spend a lot of time trying to generate a good monster here
 
-    if monster_ref.suggested_cr is not None and monster_ref.variant is not None:
+    if monster_ref.monster is not None and monster_ref.variant is not None:
         if requested_cr is None:
-            requested_cr = monster_ref.suggested_cr.cr
+            requested_cr = monster_ref.monster.cr
         else:
             requested_cr = 4.0
 
         setting = GenerationSettings(
-            creature_name=monster_ref.suggested_cr.name
+            creature_name=monster_ref.monster.name
             if update_name_to is None
             else update_name_to,
-            creature_template=monster_ref.template.name,
+            monster_template=monster_ref.template.name,
+            monster_key=monster_ref.monster.key,
             cr=requested_cr,
             is_legendary=False,
             variant=monster_ref.variant,

@@ -30,6 +30,7 @@ class BaseStatblock:
     name: str
     template_key: str
     variant_key: str
+    monster_key: str
     cr: float
     hp: DieFormula
 
@@ -172,6 +173,7 @@ class BaseStatblock:
             name=self.name,
             template_key=self.template_key,
             variant_key=self.variant_key,
+            monster_key=self.monster_key,
             cr=self.cr,
             ac_boost=self.ac_boost,
             ac_templates=self.ac_templates.copy(),

@@ -10,9 +10,9 @@ from .monster_ref import MonsterRef
 
 
 def _link(ref: MonsterRef, url: str) -> Markup | None:
-    if ref.suggested_cr is not None:
+    if ref.monster is not None:
         return Markup(
-            f"<a href='{url}' class='monster-link' data-monster-template='{ref.template.key}' data-monster='{ref.suggested_cr.key}'><strong>{ref.original_monster_name}</strong></a>"
+            f"<a href='{url}' class='monster-link' data-monster='{ref.monster.key}'><strong>{ref.original_monster_name}</strong></a>"
         )
     else:
         return Markup(
@@ -28,8 +28,8 @@ def monster_link(ref: MonsterRef, base_url: str) -> Markup | None:
 
     if ref is None:
         return None
-    elif ref.suggested_cr is not None:
-        href = f"{base_url}/monsters/{ref.template.key}#{ref.suggested_cr.key}"
+    elif ref.monster is not None:
+        href = f"{base_url}/monsters/{ref.template.key}#{ref.monster.key}"
         return _link(ref, href)
     else:
         href = f"https://foefoundry.com/monsters/{ref.template.key}"
@@ -46,8 +46,8 @@ def monster_button(ref: MonsterRef, base_url: str) -> Markup | None:
         return None
     else:
         url = f"{base_url}/generate/?template={ref.template.key}"
-        if ref.suggested_cr is not None:
-            url += f"&variant={ref.suggested_cr.key}"
+        if ref.monster is not None:
+            url += f"&variant={ref.monster.key}"
 
         monster = _link(ref, url)
 
@@ -65,18 +65,17 @@ def monster_statblock(ref: MonsterRef) -> Markup | None:
 
     template = ref.template
     variant = ref.variant if ref.variant is not None else template.variants[0]
-    suggested_cr = (
-        ref.suggested_cr if ref.suggested_cr is not None else variant.suggested_crs[0]
-    )
+    monster = ref.monster if ref.monster is not None else variant.monsters[0]
 
     stats = template.generate(
         GenerationSettings(
-            creature_name=suggested_cr.name,
-            creature_template=template.name,
+            creature_name=monster.name,
+            monster_template=template.name,
+            monster_key=monster.key,
             variant=variant,
-            cr=suggested_cr.cr,
+            cr=monster.cr,
             species=None,
-            is_legendary=suggested_cr.is_legendary,
+            is_legendary=monster.is_legendary,
             rng=rng_factory(),
         )
     ).finalize()

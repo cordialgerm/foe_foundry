@@ -1,9 +1,9 @@
 from .base_stats import base_stats  # noqa
-from .template import (
+from ._data import (
     StatsBeingGenerated,  # noqa
-    CreatureTemplate,  # noqa
-    CreatureVariant,  # noqa
-    SuggestedCr,  # noqa
+    MonsterTemplate,  # noqa
+    MonsterVariant,  # noqa
+    Monster,  # noqa
     GenerationSettings,  # noqa
 )  # noqa
 from ._all import AllTemplates, all_templates_and_settings  # noqa
@@ -15,6 +15,6 @@ from ._random import (
     random_template_and_settings,  # noqa
     SpeciesFilter,  # noqa
     VariantFilter,  # noqa
-    SuggestedCrFilter,  # noqa
+    MonsterFilter,  # noqa
     TemplateFilter,  # noqa
 )  # noqa

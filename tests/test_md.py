@@ -22,3 +22,10 @@ def test_cultist_fanatic():
     text = "This is a **Cultist Fanatic** and this is [[$Cultist-Fanatic]] and [[!Cultist_Fanatic]]"
     result = markdown(text)
     assert len(result.references) == 3
+
+
+def test_aliases():
+    dotenv.load_dotenv()
+    text = "This is a **Cult Fanatic** and these are **Cult Fanatics**"
+    result = markdown(text)
+    assert len(result.references) == 2

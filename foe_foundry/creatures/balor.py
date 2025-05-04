@@ -24,27 +24,27 @@ from ..powers.themed import (
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-BalorVariant = CreatureVariant(
+BalorVariant = MonsterVariant(
     name="Balor",
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames.",
-    suggested_crs=[
-        SuggestedCr(name="Balor", cr=19, srd_creatures=["Balor"]),
-        SuggestedCr(name="Balor Dreadlord", cr=23, is_legendary=True),
+    monsters=[
+        Monster(name="Balor", cr=19, srd_creatures=["Balor"]),
+        Monster(name="Balor Dreadlord", cr=23, is_legendary=True),
     ],
 )
 
 
 class _BalorWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -107,7 +107,8 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -190,7 +191,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-BalorTemplate: CreatureTemplate = CreatureTemplate(
+BalorTemplate: MonsterTemplate = MonsterTemplate(
     name="Balor",
     tag_line="Demon of Overwhelming Rage",
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames. Demon lords and evil gods harness balors' rage by making balors commanders of armies or guardians of grave secrets.",

@@ -14,19 +14,19 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..utils.rng import choose_options
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
 
 class _WarriorWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -45,40 +45,40 @@ class _WarriorWeights(CustomPowerSelection):
             return CustomPowerWeight(weight=1.0, ignore_usual_requirements=False)
 
 
-ShockInfantryVariant = CreatureVariant(
+ShockInfantryVariant = MonsterVariant(
     name="Shock Infantry",
     description="Shock infantry are trainees or rank-and-file troops. They are skilled at contending with commonplace, nonmagical threats head on.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Shock Infantry",
             cr=1 / 8,
             other_creatures={"Warrior Infantry": "mm25"},
         ),
-        SuggestedCr(name="Shock Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
+        Monster(name="Shock Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
     ],
 )
-LineInfantryVariant = CreatureVariant(
+LineInfantryVariant = MonsterVariant(
     name="Line Infantry",
     description="Line infantry are rank-and-file troops that hold the line against commonplace, nonmagical threats.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Line Infantry",
             cr=1 / 8,
             other_creatures={"Warrior Infantry": "mm25"},
         ),
-        SuggestedCr(name="Line Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
+        Monster(name="Line Infantry Veteran", cr=3, srd_creatures=["Veteran"]),
     ],
 )
-CommanderVariant = CreatureVariant(
+CommanderVariant = MonsterVariant(
     name="Warrior Commander",
     description="Skilled in both combat and leadership, warrior commanders overcome challenges through a combination of martial skill and clever tactics.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Warrior Commander",
             cr=10,
             other_creatures={"Warrior Commander": "mm25"},
         ),
-        SuggestedCr(name="Legendary Warrior", cr=14, is_legendary=True),
+        Monster(name="Legendary Warrior", cr=14, is_legendary=True),
     ],
 )
 
@@ -113,7 +113,8 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stat_scaling,
         hp_multiplier=settings.hp_multiplier,
@@ -214,7 +215,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-WarriorTemplate: CreatureTemplate = CreatureTemplate(
+WarriorTemplate: MonsterTemplate = MonsterTemplate(
     name="Warrior",
     tag_line="Offensive and Defensive Infantry",
     description="Warriors are professionals who make a living through their prowess in battle. They might be skilled in using a variety of tactics or trained to take advantage of unusual battlefields. Warriors often work together, whether in armies or in teams with deliberate goals.",

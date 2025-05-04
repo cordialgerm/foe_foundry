@@ -16,21 +16,21 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-ManticoreVariant = CreatureVariant(
+ManticoreVariant = MonsterVariant(
     name="Manticore",
     description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
-    suggested_crs=[
-        SuggestedCr(name="Manticore", cr=3, srd_creatures=["Manticore"]),
-        SuggestedCr(name="Manticore Ravager", cr=6),
+    monsters=[
+        Monster(name="Manticore", cr=3, srd_creatures=["Manticore"]),
+        Monster(name="Manticore Ravager", cr=6),
     ],
 )
 
@@ -78,7 +78,8 @@ def generate_manticore(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -143,7 +144,7 @@ def generate_manticore(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-ManticoreTemplate: CreatureTemplate = CreatureTemplate(
+ManticoreTemplate: MonsterTemplate = MonsterTemplate(
     name="Manticore",
     tag_line="Flying hunters with spiked tails and sharper tongues",
     description="Manticores are bizarre amalgamations with the body of a lion, dragon-like wings, a bristling tail of barbed spines, and the leering face of a voracious human. They are known for their cruel appetites and even crueler wit.",

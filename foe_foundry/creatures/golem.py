@@ -14,69 +14,69 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import BaseStatblock, MonsterDials
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-StoneVariant = CreatureVariant(
+StoneVariant = MonsterVariant(
     name="Stone Golem",
     description="Stone golems take varied forms, such as weathered carvings of ancient deities, lifelike sculptures of heroes, or any other shape their makers imagine. No matter their design or the rock from which they’re crafted, these golems are strengthened by the magic that animates them, allowing them to follow their creators' orders for centuries.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Stone Golem",
             cr=10,
             srd_creatures=["Stone Golem"],
         )
     ],
 )
-ClayVariant = CreatureVariant(
+ClayVariant = MonsterVariant(
     name="Clay Golem",
     description="TODO",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Clay Golem",
             cr=9,
             srd_creatures=["Clay Golem"],
         )
     ],
 )
-IronVariant = CreatureVariant(
+IronVariant = MonsterVariant(
     name="Iron Golem",
     description="Their magical cores protected by mighty armor, iron golems defend important sites and objects. These golems are forged in bipedal forms, the details of which are decided by their creators. Many resemble armored guardians or legendary heroes. Iron golems confront their foes with a combination of overwhelming physical force and eruptions from their magical core. These magical blasts take the form of fiery bolts and poisonous emissions.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Iron Golem",
             cr=16,
             srd_creatures=["Iron Golem"],
         )
     ],
 )
-FleshVariant = CreatureVariant(
+FleshVariant = MonsterVariant(
     name="Flesh Golem",
     description="Flesh golems are roughly human-shaped collections of body parts bound together by misused magic or strange science. They serve their reckless creators, but many possess disjointed memories and instincts from their component parts. If wounded, these golems might go berserk and vent their confusion on anything in their sight, including their creators.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Flesh Golem",
             cr=5,
             srd_creatures=["Flesh Golem"],
         )
     ],
 )
-IceVariant = CreatureVariant(
+IceVariant = MonsterVariant(
     name="Ice Golem",
     description="Ice golems are crafted from magically frozen cores specially prepared by their creators. These golems are often used to guard remote locations or to serve as sentinels in icy realms. Their bodies are sculpted from ice and snow, and their creators can imbue them with a variety of powers, such as the ability to freeze foes or to create blizzards.",
-    suggested_crs=[SuggestedCr(name="Ice Golem", cr=7)],
+    monsters=[Monster(name="Ice Golem", cr=7)],
 )
-ShieldGuardianVariant = CreatureVariant(
+ShieldGuardianVariant = MonsterVariant(
     name="Shield Guardian",
     description="A shield guardian's primary goal is to protect its master. It escorts whoever bears its command amulet and intercedes between the bearer and any threat. Although it isn’t mindless, a shield guardian has no sense of self preservation and will sacrifice itself to protect its master.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Shield Guardian",
             cr=7,
             srd_creatures=["Shield Guardian"],
@@ -86,7 +86,7 @@ ShieldGuardianVariant = CreatureVariant(
 
 
 class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -185,7 +185,8 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=settings.hp_multiplier,
@@ -300,7 +301,7 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GolemTemplate: CreatureTemplate = CreatureTemplate(
+GolemTemplate: MonsterTemplate = MonsterTemplate(
     name="Golem",
     tag_line="Constructed Servants",
     description="Golems are magically animated constructs of great strength and durability. They are typically created to serve as guardians, servants, or protectors.",

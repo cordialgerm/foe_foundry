@@ -3,27 +3,27 @@ from typing import Callable, TypeAlias
 import numpy as np
 
 from ._all import AllTemplates
-from .template import (
+from ._data import (
     CreatureSpecies,
-    CreatureTemplate,
-    CreatureVariant,
     GenerationSettings,
-    SuggestedCr,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
 )
 
-TemplateFilter: TypeAlias = Callable[[CreatureTemplate], bool]
-VariantFilter: TypeAlias = Callable[[CreatureVariant], bool]
+TemplateFilter: TypeAlias = Callable[[MonsterTemplate], bool]
+VariantFilter: TypeAlias = Callable[[MonsterVariant], bool]
 SpeciesFilter: TypeAlias = Callable[[CreatureSpecies], bool]
-SuggestedCrFilter: TypeAlias = Callable[[SuggestedCr], bool]
+MonsterFilter: TypeAlias = Callable[[Monster], bool]
 
 
 def random_template_and_settings(
     rng: np.random.Generator,
     filter_templates: TemplateFilter | None = None,
     filter_variants: VariantFilter | None = None,
-    filter_suggested_crs: SuggestedCrFilter | None = None,
+    filter_monsters: MonsterFilter | None = None,
     species_filter: SpeciesFilter | None = None,
-) -> tuple[CreatureTemplate, GenerationSettings]:
+) -> tuple[MonsterTemplate, GenerationSettings]:
     """Returns a random template and its settings"""
 
     if filter_templates is None:
@@ -52,18 +52,19 @@ def random_template_and_settings(
     species_index = rng.choice(len(species_options))
     species = species_options[species_index]
 
-    if filter_suggested_crs is None:
-        suggested_crs = variant.suggested_crs
+    if filter_monsters is None:
+        monsters = variant.monsters
     else:
-        suggested_crs = [cr for cr in variant.suggested_crs if filter_suggested_crs(cr)]
-    suggested_cr_index = rng.choice(len(suggested_crs))
-    suggested_cr = suggested_crs[suggested_cr_index]
+        monsters = [cr for cr in variant.monsters if filter_monsters(cr)]
+    monster_index = rng.choice(len(monsters))
+    monster = monsters[monster_index]
 
     settings = GenerationSettings(
-        creature_name=suggested_cr.name,
-        creature_template=template.name,
-        cr=suggested_cr.cr,
-        is_legendary=suggested_cr.is_legendary,
+        creature_name=monster.name,
+        monster_template=template.name,
+        monster_key=monster.key,
+        cr=monster.cr,
+        is_legendary=monster.is_legendary,
         variant=variant,
         species=species,
         rng=rng,

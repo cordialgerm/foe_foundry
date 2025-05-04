@@ -11,38 +11,38 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import MonsterDials
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-ZombieVariant = CreatureVariant(
+ZombieVariant = MonsterVariant(
     name="Zombie",
     description="Humanoid zombies usually serve as guardians, servants, or soldiers for evil magic-users. In rare cases, foul magic might result in widespread reanimation of the dead, unleashing hordes of zombies to terrorize the living.",
-    suggested_crs=[
-        SuggestedCr(name="Zombie", cr=1 / 4, srd_creatures=["Zombie"]),
-        SuggestedCr(name="Zombie Brute", cr=1),
-        SuggestedCr(name="Zombie Gravewalker", cr=3),
+    monsters=[
+        Monster(name="Zombie", cr=1 / 4, srd_creatures=["Zombie"]),
+        Monster(name="Zombie Brute", cr=1),
+        Monster(name="Zombie Gravewalker", cr=3),
     ],
 )
 
-ZombieOgreVariant = CreatureVariant(
+ZombieOgreVariant = MonsterVariant(
     name="Zombie Ogre",
     description="Ogre zombies serve as tireless labor and undying weapons of war. These massive zombies possess the size and strength to break through barriers that repel smaller zombies.",
-    suggested_crs=[
-        SuggestedCr(name="Zombie Ogre", cr=2, srd_creatures=["Ogre Zombie"]),
-        SuggestedCr(name="Zombie Giant", cr=8),
-        SuggestedCr(name="Zombie Titan", cr=12, is_legendary=True),
+    monsters=[
+        Monster(name="Zombie Ogre", cr=2, srd_creatures=["Ogre Zombie"]),
+        Monster(name="Zombie Giant", cr=8),
+        Monster(name="Zombie Titan", cr=12, is_legendary=True),
     ],
 )
 
 
 class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -70,7 +70,8 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -169,7 +170,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-ZombieTemplate: CreatureTemplate = CreatureTemplate(
+ZombieTemplate: MonsterTemplate = MonsterTemplate(
     name="Zombie",
     tag_line="Relentless Reanimated Corpses",
     description="Zombies are unthinking, reanimated corpses, often gruesomely marred by decay and lethal traumas. They serve whatever supernatural force animates them—typically evil necromancers or fiendish spirits. Zombies are relentless, merciless, and resilient, and their dead flesh can carry on even after suffering grievous wounds.",

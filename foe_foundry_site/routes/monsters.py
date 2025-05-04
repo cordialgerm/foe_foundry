@@ -9,8 +9,8 @@ from fastapi import APIRouter, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
 
 from foe_foundry.creatures import (
-    CreatureVariant,
-    SuggestedCr,
+    Monster,
+    MonsterVariant,
     random_template_and_settings,
 )
 from foe_foundry.markdown import MonsterRefResolver
@@ -71,10 +71,10 @@ def get_monster(
     if ref is None:
         raise HTTPException(status_code=404, detail="Monster not found")
 
-    if ref.suggested_cr is None:
+    if ref.monster is None:
         options = []
         for variant in ref.template.variants:
-            for suggested_cr in variant.suggested_crs:
+            for suggested_cr in variant.monsters:
                 options.append((variant, suggested_cr))
 
         index = rng.choice(len(options))
@@ -83,8 +83,8 @@ def get_monster(
 
     # we know these values aren't None because we checked above
     template = ref.template
-    variant: CreatureVariant = ref.variant  # type: ignore
-    suggested_cr: SuggestedCr = ref.suggested_cr  # type: ignore
+    variant: MonsterVariant = ref.variant  # type: ignore
+    suggested_cr: Monster = ref.monster  # type: ignore
 
     stats = template.generate_suggested_cr(
         variant=variant, suggested_cr=suggested_cr, rng=rng

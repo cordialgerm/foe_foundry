@@ -30,27 +30,27 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import BaseStatblock, MonsterDials
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-SimulacrumVariant = CreatureVariant(
+SimulacrumVariant = MonsterVariant(
     name="Simulacrum",
     description="Simulacrums are illusions created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
-    suggested_crs=[
-        SuggestedCr(name="Simulacrum", cr=9),
+    monsters=[
+        Monster(name="Simulacrum", cr=9),
     ],
 )
 
 
 class _SimulacrumWeights(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, name: str, cr: float, variant: CreatureVariant
+        self, stats: BaseStatblock, name: str, cr: float, variant: MonsterVariant
     ):
         self.stats = stats
         self.variant = variant
@@ -122,7 +122,8 @@ def generate_simulacrum(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-6),
@@ -216,7 +217,7 @@ def generate_simulacrum(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-SimulacrumTemplate: CreatureTemplate = CreatureTemplate(
+SimulacrumTemplate: MonsterTemplate = MonsterTemplate(
     name="Simulacrum",
     tag_line="Wizard's Illusory Duplicate",
     description="Simulacrums are illusions created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
