@@ -141,15 +141,18 @@ function rerollMonster(variantKey) {
       // Replace the old statblock in the wrapper
       oldStatblockElement.replaceWith(newStatblockElement);
       newStatblockElement.classList.add("pop-in");
-      newStatblockElement.addEventListener("animationend", () => {
+
+      // Wait .2s for the pop-in animation to finish before removing the class
+      // Then start summon effect and remove it after 1.4s
+      setTimeout(() => {
         newStatblockElement.classList.remove("pop-in");
 
         // Initiate the summon effect
         newStatblockElement.classList.add("summon-effect");
 
         // Remove effect after it's done so it can replay on next reroll
-        setTimeout(() => newStatblockElement.classList.remove("summon-effect"), 1000);
-      });
+        setTimeout(() => newStatblockElement.classList.remove("summon-effect"), 1400);
+      }, 200);
     })
     .catch(err => console.error("Failed to reroll monster:", err));
 }

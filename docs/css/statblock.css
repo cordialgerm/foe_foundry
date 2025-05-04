@@ -275,34 +275,48 @@
 
 @keyframes summon-flash {
     0% {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    25% {
+        box-shadow: 0 0 6px 2px var(--primary-color);
     }
 
     50% {
-        box-shadow: 0 0 30px 10px var(--primary-color);
+        box-shadow: 0 0 18px 8px var(--primary-color);
+    }
+
+    75% {
+        box-shadow: 0 0 6px 2px var(--primary-color);
     }
 
     100% {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
 }
 
-@keyframes glow-pulse {
+@keyframes scale-throb {
     0% {
-        filter: drop-shadow(0 0 0px var(--primary-color));
+        transform: scale(1);
     }
 
-    50% {
-        filter: drop-shadow(0 0 12px var(--primary-color));
+    40% {
+        transform: scale(1.025);
+    }
+
+    60% {
+        transform: scale(1.015);
     }
 
     100% {
-        filter: drop-shadow(0 0 0px var(--primary-color));
+        transform: scale(1);
     }
 }
 
 .stat-block.summon-effect {
-    animation: summon-flash 0.4s ease-out, glow-pulse 1s ease-in-out;
+    animation:
+        summon-flash 0.8s cubic-bezier(0.42, 0, 0.58, 1),
+        scale-throb 0.6s ease-in-out;
 }
 
 
