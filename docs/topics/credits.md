@@ -82,6 +82,7 @@ This work features art by:
 - **Dean Spencer** – used with permission
 - **Bartek Blaszczec** – used with permission
 - **Jeshields** – used with permission
+- Some artwork © 2022 Joao Mileski, used with permission. All rights reserved.
 
 Monsters by GalefireRPG:  
 
