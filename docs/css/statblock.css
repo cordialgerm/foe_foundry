@@ -238,6 +238,40 @@
     animation-delay: 2s;
 }
 
+/* Styles for Pop Out / In when rerolling */
+
+
+@keyframes pop-out {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.stat-block.pop-out {
+    animation: pop-out 0.2s forwards;
+}
+
+.stat-block.pop-in {
+    animation: pop-in 0.2s forwards;
+}
 
 
 /* Begin Styles for Reroll Button */
@@ -247,6 +281,7 @@
     position: relative;
 }
 
+/* Large screens: float to the right */
 .reroll-button {
     position: absolute;
     top: -0.5rem;
@@ -262,6 +297,23 @@
     height: 3rem;
     fill: var(--fg-color);
 }
+
+/* On small screens: stack below */
+@media (max-width: 600px) {
+    .reroll-button {
+        position: static;
+        display: block;
+        margin: 1rem auto 0 auto;
+    }
+
+    .statblock-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 .reroll-button:disabled {
     color: inherit;

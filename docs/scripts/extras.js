@@ -125,6 +125,8 @@ async function createRerollButton(statblock) {
 function rerollMonster(variantKey) {
 
   const url = `/api/v1/monsters/${variantKey}?output=monster_only`;
+  const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${variantKey}"]`);
+  oldStatblockElement.classList.add("pop-out");
 
   fetch(url)
     .then(res => res.text())
@@ -135,11 +137,14 @@ function rerollMonster(variantKey) {
 
       const newStatblockElement = doc.querySelector('.stat-block');
       newStatblockElement.setAttribute('data-statblock-id', ++statblockId);
-      const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${variantKey}"]`);
       console.log("Replacing old statblock:", oldStatblockElement, "with new statblock:", newStatblockElement);
 
       // Replace the old statblock in the wrapper
       oldStatblockElement.replaceWith(newStatblockElement);
+      newStatblockElement.classList.add("pop-in");
+      newStatblockElement.addEventListener("animationend", () => {
+        newStatblockElement.classList.remove("pop-in");
+      });
     })
     .catch(err => console.error("Failed to reroll monster:", err));
 }
