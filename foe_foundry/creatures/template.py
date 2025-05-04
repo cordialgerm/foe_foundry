@@ -174,28 +174,46 @@ class CreatureTemplate:
         return hash(self.name)
 
     def generate(self, settings: GenerationSettings) -> StatsBeingGenerated:
+        """Creates a statblock for the given generation settings"""
         return self.callback(settings)
 
+    def generate_suggested_cr(
+        self,
+        variant: CreatureVariant,
+        suggested_cr: SuggestedCr,
+        species: CreatureSpecies | None = None,
+        **kwargs,
+    ) -> StatsBeingGenerated:
+        """Creates a statblock for the given suggested CR"""
+
+        args: dict = (
+            dict(
+                creature_name=suggested_cr.name,
+                creature_template=self.name,
+                cr=suggested_cr.cr,
+                is_legendary=suggested_cr.is_legendary,
+                variant=variant,
+                species=species,
+                selection_settings=SelectionSettings(),
+                rng=rng_factory(suggested_cr, species),
+            )
+            | kwargs
+        )
+
+        settings = GenerationSettings(**args)
+        return self.generate(settings)
+
     def generate_all(self, **kwargs) -> Iterable[StatsBeingGenerated]:
+        """Generate one instance of a statblock for each variant and suggested CR in this template"""
         for settings in self.generate_settings(**kwargs):
             yield self.generate(settings)
 
     def generate_settings(self, **kwargs) -> list[GenerationSettings]:
+        """Generates all possible settings for this template"""
         options = []
         for variant in self.variants:
             for suggested_cr in variant.suggested_crs:
                 for species in self.species if self.n_species > 0 else [None]:
-                    hash_key = (
-                        f"{suggested_cr.name}-{species.name}"
-                        if species is not None
-                        else suggested_cr.name
-                    )
-
-                    def rng_factory() -> np.random.Generator:
-                        bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
-                        random_state = int.from_bytes(bytes, byteorder="little")
-                        return np.random.default_rng(seed=random_state)
-
                     args: dict = (
                         dict(
                             creature_name=suggested_cr.name,
@@ -205,10 +223,21 @@ class CreatureTemplate:
                             variant=variant,
                             species=species,
                             selection_settings=SelectionSettings(),
-                            rng=rng_factory(),
+                            rng=rng_factory(suggested_cr, species),
                         )
                         | kwargs
                     )
 
                     options.append(GenerationSettings(**args))
         return options
+
+
+def rng_factory(suggested_cr: SuggestedCr, species: CreatureSpecies | None):
+    hash_key = (
+        f"{suggested_cr.name}-{species.name}"
+        if species is not None
+        else suggested_cr.name
+    )
+    bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
+    random_state = int.from_bytes(bytes, byteorder="little")
+    return np.random.default_rng(seed=random_state)

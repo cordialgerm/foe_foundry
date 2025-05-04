@@ -42,14 +42,14 @@ def fix_relative_paths(html: str, base_path: str) -> str:
 
     for tag, attr in tag_attr_map.items():
         for el in soup.find_all(tag):
-            val = el.get(attr)
+            val: str = el.get(attr)  # type: ignore
             if val and not val.startswith(("/", "http", "https", "#", "data:")):
                 new_val = urljoin(base_path + "/", val)
-                el[attr] = new_val
+                el[attr] = new_val  # type: ignore
 
     # Handle srcset manually (used in <img> or <source> tags)
     for el in soup.find_all(["img", "source"]):
-        srcset = el.get("srcset")
+        srcset: str = el.get("srcset")  # type: ignore
         if srcset:
             new_srcset = []
             for part in srcset.split(","):
@@ -57,6 +57,6 @@ def fix_relative_paths(html: str, base_path: str) -> str:
                 if not url.startswith(("/", "http", "https", "data:")):
                     url = urljoin(base_path + "/", url)
                 new_srcset.append(" ".join([url] + descriptor))
-            el["srcset"] = ", ".join(new_srcset)
+            el["srcset"] = ", ".join(new_srcset)  # type: ignore
 
     return str(soup)

@@ -1,4 +1,6 @@
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
 
 import inflect
 
@@ -13,7 +15,7 @@ from foe_foundry.utils import name_to_key
 p = inflect.engine()
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class MonsterRef:
     """A reference to a monster template or variant."""
 
@@ -21,6 +23,10 @@ class MonsterRef:
     template: CreatureTemplate
     variant: CreatureVariant | None = None
     suggested_cr: SuggestedCr | None = None
+
+    def copy(self, **args) -> MonsterRef:
+        """Creates a copy of the monster reference with updated values."""
+        return replace(self, **args)
 
 
 class MonsterRefResolver:
