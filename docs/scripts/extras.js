@@ -122,37 +122,44 @@ async function createRerollButton(statblock) {
   return button;
 }
 
-function rerollMonster(variantKey) {
-
+async function rerollMonster(variantKey) {
   const url = `/api/v1/monsters/${variantKey}?output=monster_only`;
+
   const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${variantKey}"]`);
   oldStatblockElement.classList.add("pop-out");
 
-  fetch(url)
-    .then(res => res.text())
-    .then(html => {
-      // Parse the new statblock HTML into a DOM element
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
+  try {
+    const res = await fetch(url);
+    const html = await res.text();
 
-      const newStatblockElement = doc.querySelector('.stat-block');
-      newStatblockElement.setAttribute('data-statblock-id', ++statblockId);
+    // Parse the new statblock HTML into a DOM element
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const newStatblockElement = doc.querySelector('.stat-block');
+    newStatblockElement.setAttribute('data-statblock-id', ++statblockId);
 
-      // Replace the old statblock in the wrapper
-      oldStatblockElement.replaceWith(newStatblockElement);
-      newStatblockElement.classList.add("pop-in");
+    // Replace old with new
+    oldStatblockElement.replaceWith(newStatblockElement);
+    newStatblockElement.classList.add("pop-in");
 
-      // Wait .2s for the pop-in animation to finish before removing the class
-      // Then start summon effect and remove it after 1.4s
-      setTimeout(() => {
-        newStatblockElement.classList.remove("pop-in");
+    // Wait for pop-in animation, then trigger summon effect
+    await sleep(200);
+    newStatblockElement.classList.remove("pop-in");
 
-        // Initiate the summon effect
-        newStatblockElement.classList.add("summon-effect");
+    // wait a little bit before starting summon effect
+    await sleep(200);
+    newStatblockElement.classList.add("summon-effect");
 
-        // Remove effect after it's done so it can replay on next reroll
-        setTimeout(() => newStatblockElement.classList.remove("summon-effect"), 1400);
-      }, 200);
-    })
-    .catch(err => console.error("Failed to reroll monster:", err));
+    // Remove summon-effect after it's done
+    await sleep(400);
+    newStatblockElement.classList.remove("summon-effect");
+
+  } catch (err) {
+    console.error("Failed to reroll monster:", err);
+  }
+}
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
