@@ -137,13 +137,18 @@ function rerollMonster(variantKey) {
 
       const newStatblockElement = doc.querySelector('.stat-block');
       newStatblockElement.setAttribute('data-statblock-id', ++statblockId);
-      console.log("Replacing old statblock:", oldStatblockElement, "with new statblock:", newStatblockElement);
 
       // Replace the old statblock in the wrapper
       oldStatblockElement.replaceWith(newStatblockElement);
       newStatblockElement.classList.add("pop-in");
       newStatblockElement.addEventListener("animationend", () => {
         newStatblockElement.classList.remove("pop-in");
+
+        // Initiate the summon effect
+        newStatblockElement.classList.add("summon-effect");
+
+        // Remove effect after it's done so it can replay on next reroll
+        setTimeout(() => newStatblockElement.classList.remove("summon-effect"), 1000);
       });
     })
     .catch(err => console.error("Failed to reroll monster:", err));
