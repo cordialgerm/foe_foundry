@@ -37,10 +37,7 @@ class _WightWeights(CustomPowerSelection):
         self.rng = rng
 
         self.suppress = tough.ToughPowers
-        self.auras = [
-            cursed.UnholyAura,
-            elemental.damaging_aura_power("Arctic Chill", damage_type=DamageType.Cold),
-        ]
+        self.auras = [cursed.UnholyAura, elemental.ArcticChillAura]
         aura_index = rng.choice(len(self.auras))
         self.aura = self.auras[aura_index]
 

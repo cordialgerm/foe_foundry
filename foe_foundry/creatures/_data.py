@@ -178,10 +178,10 @@ class MonsterTemplate:
         """Creates a statblock for the given generation settings"""
         return self.callback(settings)
 
-    def generate_suggested_cr(
+    def generate_monster(
         self,
         variant: MonsterVariant,
-        suggested_cr: Monster,
+        monster: Monster,
         species: CreatureSpecies | None = None,
         **kwargs,
     ) -> StatsBeingGenerated:
@@ -189,14 +189,15 @@ class MonsterTemplate:
 
         args: dict = (
             dict(
-                creature_name=suggested_cr.name,
+                creature_name=monster.name,
                 monster_template=self.name,
-                cr=suggested_cr.cr,
-                is_legendary=suggested_cr.is_legendary,
+                monster_key=monster.key,
+                cr=monster.cr,
+                is_legendary=monster.is_legendary,
                 variant=variant,
                 species=species,
                 selection_settings=SelectionSettings(),
-                rng=rng_factory(suggested_cr, species),
+                rng=rng_factory(monster, species),
             )
             | kwargs
         )
@@ -234,12 +235,8 @@ class MonsterTemplate:
         return options
 
 
-def rng_factory(suggested_cr: Monster, species: CreatureSpecies | None):
-    hash_key = (
-        f"{suggested_cr.name}-{species.name}"
-        if species is not None
-        else suggested_cr.name
-    )
+def rng_factory(monster: Monster, species: CreatureSpecies | None):
+    hash_key = f"{monster.name}-{species.name}" if species is not None else monster.name
     bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
     random_state = int.from_bytes(bytes, byteorder="little")
     return np.random.default_rng(seed=random_state)

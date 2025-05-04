@@ -86,20 +86,20 @@ class MonsterRefResolver:
 
         key = name_to_key(monster_name)
         if (monster_info := self.lookup.get(key)) is not None:
-            template, variant, suggested_cr = monster_info
+            template, variant, monster = monster_info
             return MonsterRef(
                 original_monster_name=original_monster_name,
                 template=template,
                 variant=variant,
-                monster=suggested_cr,
+                monster=monster,
             )
         elif (monster_info := self.aliases.get(key)) is not None:
-            template, variant, suggested_cr = monster_info
+            template, variant, monster = monster_info
             return MonsterRef(
                 original_monster_name=original_monster_name,
                 template=template,
                 variant=variant,
-                monster=suggested_cr,
+                monster=monster,
             )
         else:
             return None

@@ -70,11 +70,11 @@ document.addEventListener("click", (event) => {
   const wrapper = button.parentElement;
   if (!wrapper) return;
 
-  const variantKey = button.dataset.monster;
+  const monsterKey = button.dataset.monster;
   const statblock = wrapper.querySelector(".stat-block");
-  console.log("Reroll button clicked:", variantKey, statblock);
+  console.log("Reroll button clicked:", monsterKey, statblock);
 
-  if (!variantKey || !statblock) return;
+  if (!monsterKey || !statblock) return;
 
   // Trigger the animation
   button.classList.add("rolling");
@@ -85,7 +85,7 @@ document.addEventListener("click", (event) => {
     button.disabled = false;
   }, 600); // match the animation duration
 
-  rerollMonster(variantKey, statblock);
+  rerollMonster(monsterKey, statblock);
 });
 
 
@@ -122,10 +122,10 @@ async function createRerollButton(statblock) {
   return button;
 }
 
-async function rerollMonster(variantKey) {
-  const url = `/api/v1/monsters/${variantKey}?output=monster_only`;
+async function rerollMonster(monsterKey) {
+  const url = `/api/v1/monsters/${monsterKey}?output=monster_only`;
 
-  const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${variantKey}"]`);
+  const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${monsterKey}"]`);
   oldStatblockElement.classList.add("pop-out");
 
   try {

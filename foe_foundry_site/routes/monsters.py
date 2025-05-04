@@ -41,7 +41,7 @@ def random_monster(
         rng=rng,
         filter_templates=None,
         filter_variants=None,
-        filter_suggested_crs=None,
+        filter_monsters=None,
         species_filter=None,
     )
 
@@ -74,20 +74,20 @@ def get_monster(
     if ref.monster is None:
         options = []
         for variant in ref.template.variants:
-            for suggested_cr in variant.monsters:
-                options.append((variant, suggested_cr))
+            for monster in variant.monsters:
+                options.append((variant, monster))
 
         index = rng.choice(len(options))
-        variant, suggested_cr = options[index]
-        ref = ref.copy(variant=variant, suggested_cr=suggested_cr)
+        variant, monster = options[index]
+        ref = ref.copy(variant=variant, monster=monster)
 
     # we know these values aren't None because we checked above
     template = ref.template
     variant: MonsterVariant = ref.variant  # type: ignore
-    suggested_cr: Monster = ref.monster  # type: ignore
+    monster: Monster = ref.monster  # type: ignore
 
-    stats = template.generate_suggested_cr(
-        variant=variant, suggested_cr=suggested_cr, rng=rng
+    stats = template.generate_monster(
+        variant=variant, monster=monster, rng=rng
     ).finalize()
     base_url = os.environ.get("SITE_URL")
     if base_url is None:

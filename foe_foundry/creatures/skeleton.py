@@ -1,4 +1,6 @@
-from ..ac_templates import Breastplate, Unarmored, UnholyArmor
+import numpy as np
+
+from ..ac_templates import Breastplate, Unarmored
 from ..attack_template import spell, weapon
 from ..creature_types import CreatureType
 from ..damage import Condition, DamageType
@@ -10,13 +12,21 @@ from ..powers import (
     Power,
     select_powers,
 )
-from ..powers.creature.skeletal import SkeletalPowers
-from ..powers.creature_type.undead import UndeadFortitude
-from ..powers.themed.reckless import RecklessPowers
+from ..powers.creature import skeletal
+from ..powers.creature_type import elemental, undead
+from ..powers.roles import defender, leader, soldier
+from ..powers.themed import (
+    anti_ranged,
+    cursed,
+    deathly,
+    fearsome,
+    honorable,
+    icy,
+    technique,
+)
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
-from ..statblocks import MonsterDials
 from ._data import (
     GenerationSettings,
     Monster,
@@ -31,6 +41,13 @@ SkeletonVariant = MonsterVariant(
     description="Skeletons are reanimated Humanoid bones bearing the equipment they had in life. They have rudimentary faculties and greater agility than zombies and similar shambling corpses. While they aren't capable of creating plans of their own, they avoid obvious barriers and self-destructive situations.",
     monsters=[
         Monster(name="Skeleton", cr=1 / 4, srd_creatures=["Skeleton"]),
+    ],
+)
+
+GraveGuardVariant = MonsterVariant(
+    name="Skeletal Grave Guard",
+    description="Grave guards are skeletal warriors that have been reanimated with a greater degree of intelligence and purpose. They are often used as guardians for tombs or other sacred sites.",
+    monsters=[
         Monster(name="Skeletal Grave Guard", cr=4),
     ],
 )
@@ -56,20 +73,94 @@ FreezingSkeletonVariant = MonsterVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
+class _SkeletonWeights(CustomPowerSelection):
+    def __init__(
+        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
+    ):
         self.stats = stats
         self.variant = variant
+        self.cr = stats.cr
+        self.rng = rng
+
+        general_powers = skeletal.SkeletalPowers + soldier.SoldierPowers
+
+        force = []
+        techniques = [
+            technique.VexingAttack,
+            technique.GrazingAttack,
+            technique.Dueling,
+            technique.PommelStrike,
+            technique.BaitAndSwitch,
+            technique.ParryAndRiposte,
+        ]
+
+        if self.cr >= 3:
+            force = []
+            general_powers += [
+                cursed.CursedWound,
+                deathly.WitheringBlow,
+                deathly.DrainingBlow,
+                fearsome.DreadGaze,
+                leader.CommandTheAttack,
+                leader.CommandTheTroops,
+            ]
+
+        if self.variant is GraveGuardVariant:
+            force = [defender.Protection]
+            techniques = [
+                technique.ArmorMaster,
+                technique.DisarmingAttack,
+                technique.Interception,
+                technique.ShieldMaster,
+            ]
+            general_powers += [
+                anti_ranged.DeflectMissile,
+                honorable.Challenge,
+            ] + defender.DefenderPowers
+
+        if self.variant is BurningSkeletonVariant:
+            force = [technique.BurningAttack]
+            general_powers += [
+                elemental.ElementalFireball,
+                elemental.FireBurst,
+                elemental.FireElementalAffinity,
+                elemental.FireSmite,
+                elemental.SuperheatedAura,
+            ]
+
+        if self.variant is FreezingSkeletonVariant:
+            force = [technique.FreezingAttack]
+            general_powers += [
+                undead.SoulChill,
+                undead.StygianBurst,
+                elemental.IceBurst,
+                elemental.IceElementalAffinity,
+                elemental.ConeOfCold,
+                elemental.IceSmite,
+                elemental.ArcticChillAura,
+            ] + icy.IcyPowers
+
+        technique_index = self.rng.choice(len(techniques))
+        chosen_technique: Power = techniques[technique_index]
+
+        self.force = force + [chosen_technique]
+        self.general_powers = general_powers
+        self.techniques = techniques
 
     def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = SkeletalPowers
-        suppress_powers = [UndeadFortitude] + RecklessPowers
-        if p in suppress_powers:
-            return CustomPowerWeight(0)  # skeletons are not zombies
-        elif p in powers:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
+        # use a very flat power weight to try to make them all more or less likely to see
+        if p in self.general_powers:
+            return CustomPowerWeight(weight=0.1, ignore_usual_requirements=True)
         else:
-            return CustomPowerWeight(1)
+            return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
+
+    def force_powers(self) -> list[Power]:
+        return self.force
+
+    def power_delta(self) -> float:
+        return (LOW_POWER if self.cr <= 2 else MEDIUM_POWER) - 0.2 * sum(
+            p.power_level for p in self.force
+        )
 
 
 def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -105,27 +196,34 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # ARMOR CLASS
-    if variant is SkeletonVariant:
-        if stats.cr >= 4:
-            stats = stats.add_ac_template(Breastplate)
-        else:
-            stats = stats.add_ac_template(Unarmored)
+    if stats.cr >= 3:
+        stats = stats.add_ac_template(Breastplate)
     else:
-        stats = stats.add_ac_template(UnholyArmor)
+        stats = stats.add_ac_template(Unarmored)
 
     # ATTACKS
     if variant is SkeletonVariant:
+        attack = weapon.Daggers.with_display_name("Bone Blades").copy(
+            damage_scalar=0.75
+        )  # dual wielding too scary at low CR
+        secondary_damage_type = None
+        secondary_attack = weapon.Shortbow.with_display_name("Bone Bow")
+    elif variant is GraveGuardVariant:
         attack = weapon.SpearAndShield.with_display_name("Bone Spear")
-        secondary_damage_type = DamageType.Necrotic if stats.cr >= 4 else None
+        secondary_damage_type = DamageType.Piercing
         secondary_attack = weapon.Shortbow.with_display_name("Bone Bow")
     elif variant is BurningSkeletonVariant:
-        attack = weapon.SwordAndShield.with_display_name("Burning Blade")
+        attack = weapon.Greatsword.with_display_name("Burning Blade")
         secondary_damage_type = DamageType.Fire
-        secondary_attack = spell.Firebolt.with_display_name("Hurl Flames")
+        secondary_attack = spell.Firebolt.with_display_name("Hurl Flames").copy(
+            damage_scalar=0.9
+        )
     elif variant is FreezingSkeletonVariant:
-        attack = weapon.SwordAndShield.with_display_name("Freezing Blade")
+        attack = weapon.Greatsword.with_display_name("Freezing Blade")
         secondary_damage_type = DamageType.Cold
-        secondary_attack = spell.Frostbolt.with_display_name("Deathly Freeze")
+        secondary_attack = spell.Frostbolt.with_display_name("Deathly Freeze").copy(
+            damage_scalar=0.9
+        )
 
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
@@ -137,12 +235,12 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
         stats = secondary_attack.add_as_secondary_attack(stats)
 
     # ROLES
-    if variant is SkeletonVariant:
-        primary_role = MonsterRole.Defender
-        additional_roles = []
+    if variant is GraveGuardVariant:
+        primary_role = MonsterRole.Soldier
+        additional_roles = [MonsterRole.Defender]
     else:
         primary_role = MonsterRole.Soldier
-        additional_roles = [MonsterRole.Artillery]
+        additional_roles = []
 
     stats = stats.with_roles(
         primary_role=primary_role,
@@ -150,7 +248,7 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
     )
 
     # SAVES
-    if cr >= 4:
+    if cr >= 3:
         stats = stats.grant_save_proficiency(Stats.CON)
 
     # IMMUNITIES
@@ -165,18 +263,12 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
     # POWERS
     features = []
 
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=LOW_POWER if stats.cr <= 2 else MEDIUM_POWER
-        )
-    )
-
     # ADDITIONAL POWERS
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_SkeletonWeights(stats, variant, rng),
     )
     features += power_features
 
@@ -193,7 +285,12 @@ SkeletonTemplate: MonsterTemplate = MonsterTemplate(
     description="Skeletons rise at the summons of necromancers and foul spirits. Whether they’re the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers.",
     environments=["Planar (Shadowfel)", "Underdark", "Urban"],
     treasure=[],
-    variants=[SkeletonVariant, BurningSkeletonVariant, FreezingSkeletonVariant],
+    variants=[
+        SkeletonVariant,
+        GraveGuardVariant,
+        BurningSkeletonVariant,
+        FreezingSkeletonVariant,
+    ],
     species=[],
     callback=generate_skeleton,
 )
