@@ -237,3 +237,42 @@
     animation: shimmer 10s infinite ease-in-out;
     animation-delay: 2s;
 }
+
+.reroll-button {
+    position: absolute;
+    top: -0.5rem;
+    right: -4rem;
+    font-size: 3rem;
+    background-color: unset;
+    border: none;
+}
+
+.statblock-wrapper {
+    position: relative;
+}
+
+@keyframes roll-dice {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(15deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(-15deg) scale(1.2);
+    }
+
+    75% {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.reroll-button.rolling {
+    animation: roll-dice 0.6s ease;
+}

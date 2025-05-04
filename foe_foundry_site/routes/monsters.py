@@ -87,7 +87,7 @@ def get_monster(
     suggested_cr: SuggestedCr = ref.suggested_cr  # type: ignore
 
     stats = template.generate_suggested_cr(
-        variant=variant, suggested_cr=suggested_cr
+        variant=variant, suggested_cr=suggested_cr, rng=rng
     ).finalize()
     base_url = os.environ.get("SITE_URL")
     if base_url is None:
