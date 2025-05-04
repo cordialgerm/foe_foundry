@@ -46,7 +46,7 @@ let statblockId = 0;
 document.addEventListener("DOMContentLoaded", () => {
   const statblocks = document.querySelectorAll('.stat-block');
 
-  statblocks.forEach(statblock => {
+  statblocks.forEach(async statblock => {
 
     // tag the statblock with an id for tracking
     statblock.setAttribute('data-statblock-id', ++statblockId);
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.appendChild(statblock);
 
     // create the reroll button
-    const button = createRerollButton(statblock, wrapper);
+    const button = await createRerollButton(statblock, wrapper);
     wrapper.appendChild(button);
   });
 });
@@ -97,13 +97,28 @@ function wrapStatblock(statblock) {
   return wrapper;
 }
 
-function createRerollButton(statblock) {
-  const button = document.createElement('button');
-  button.className = 'reroll-button';
-  button.setAttribute('aria-label', 'Reroll this monster');
-  button.setAttribute('title', 'Reroll this monster');
+async function createRerollButton(statblock) {
+
+  const button = document.createElement("button");
+  button.classList.add("reroll-button");
+  button.setAttribute("aria-label", "Reroll this monster");
+  button.setAttribute("title", "Reroll this monster");
   button.setAttribute('data-monster', statblock.dataset.monster);
-  button.innerText = '🎲';
+
+  const response = await fetch('/img/d20.svg');
+  const svgText = await response.text();
+
+  const parser = new DOMParser();
+  const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+  const svgElement = svgDoc.documentElement;
+
+  svgElement.classList.add("d20-icon");
+  svgElement.removeAttribute("width");
+  svgElement.removeAttribute("height");
+  svgElement.removeAttribute("style");
+
+  button.appendChild(svgElement);
+
   return button;
 }
 
