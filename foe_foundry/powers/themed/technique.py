@@ -684,12 +684,20 @@ class _ParryAndRiposte(Technique):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        if stats.cr < 1:
+            recharge = None
+            uses = 1
+        else:
+            recharge = 5
+            uses = None
+
         feature = Feature(
             name="Parry and Riposte",
             description=f"{stats.selfref.capitalize()} adds +3 to their Armor Class against one melee attack that would hit them.\
                          If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
             action=ActionType.Reaction,
-            recharge=6,
+            recharge=recharge,
+            uses=uses,
         )
         return [feature]
 

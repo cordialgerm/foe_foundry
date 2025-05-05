@@ -413,6 +413,8 @@ class BaseStatblock:
 
         new_conditions = self.condition_immunities.copy() | (conditions or set())
 
+        new_resistances = new_resistances - new_immunities
+
         return self.copy(
             damage_resistances=new_resistances,
             damage_immunities=new_immunities,

@@ -160,11 +160,19 @@ class _Leap(SoldierPower):
         dc = stats.difficulty_class
         prone = Condition.Prone
 
+        if stats.cr < 1:
+            uses = 1
+            recharge = None
+        else:
+            uses = None
+            recharge = 5
+
         feature = Feature(
             name="Mighty Leap",
             action=ActionType.Action,
             replaces_multiattack=2,
-            recharge=5,
+            recharge=recharge,
+            uses=uses,
             description=f"{stats.selfref.capitalize()} can use its action to jump up to half its speed horizontally and up to half its speed vertically \
                 without provoking opportunity attacks, and can land in a space containing one or more creatures. \
                 Each creature in its space when {stats.selfref} lands makes a DC {dc} Dexterity saving throw, taking {dmg.description} bludgeoning damage and being knocked {prone.caption} \
