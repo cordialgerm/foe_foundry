@@ -13,8 +13,8 @@ from foe_foundry.creatures import (
     MonsterVariant,
     random_template_and_settings,
 )
-from foe_foundry_data.markdown import MonsterRefResolver
 from foe_foundry_data.monsters import MonsterModel
+from foe_foundry_data.refs import MonsterRefResolver
 
 router = APIRouter(prefix="/api/v1/monsters")
 ref_resolver = MonsterRefResolver()
