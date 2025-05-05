@@ -1,8 +1,7 @@
 from .md import RenderedMarkdown, markdown  # noqa
-from .monster_ref import MonsterRef, MonsterRefResolver  # noqa
 from .monster_link import monster_link, monster_button  # noqa
-from .ext import MonsterLinkExtension  # noqa
+from .ext import FoeFoundryMdExtension  # noqa
 
 
 def makeExtension(**kwargs):
-    return MonsterLinkExtension(**kwargs)
+    return FoeFoundryMdExtension(**kwargs)

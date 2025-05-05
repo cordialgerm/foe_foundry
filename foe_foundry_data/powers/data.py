@@ -12,7 +12,7 @@ from foe_foundry.creatures import GenerationSettings, SelectionSettings, warrior
 from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
 
-from ..markdown import MonsterRef, MonsterRefResolver
+from ..refs import MonsterRef, MonsterRefResolver
 
 MonsterReferences = MonsterRefResolver()
 

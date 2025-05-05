@@ -1,6 +1,5 @@
+from foe_foundry.powers import AllPowers, Power
 from foe_foundry.utils import name_to_key
-
-from ..powers import AllPowers, Power
 
 _powers = {power.key: power for power in AllPowers}
 

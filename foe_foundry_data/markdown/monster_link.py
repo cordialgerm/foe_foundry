@@ -6,7 +6,7 @@ from foe_foundry.creatures import (
 )
 
 from ..jinja import render_statblock_fragment
-from .monster_ref import MonsterRef
+from ..refs import MonsterRef
 
 
 def _link(ref: MonsterRef, url: str) -> Markup | None:

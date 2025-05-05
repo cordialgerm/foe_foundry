@@ -4,11 +4,14 @@ import re
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
+from ..jinja import render_power_fragment
+from ..powers.all import Powers
+from ..refs import MonsterRefResolver, resolve_power_ref
 from .monster_link import monster_button, monster_link, monster_statblock
-from .monster_ref import MonsterRefResolver
+from .power_link import power_link
 
 
-class MonsterLinkExtension(Extension):
+class FoeFoundryMdExtension(Extension):
     def __init__(self, **kwargs):
         self.config = {}
         self.ref_resolver = MonsterRefResolver()
@@ -25,7 +28,7 @@ class MonsterLinkExtension(Extension):
 
     def extendMarkdown(self, md):
         md.preprocessors.register(
-            MonsterLinkPreprocessor(
+            LinkPreprocessor(
                 md, self.base_url, self.ref_resolver, self.resolved_refences
             ),
             "monster_link",
@@ -33,10 +36,10 @@ class MonsterLinkExtension(Extension):
         )
 
 
-class MonsterLinkPreprocessor(Preprocessor):
-    MONSTER_LINK_RE = re.compile(r"\[\[(?P<name1>.+?)\]\]|\*\*(?P<name2>.+?)\*\*")
-    MONSTER_BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
-    MONSTER_STATBLOCK_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
+class LinkPreprocessor(Preprocessor):
+    LINK_RE = re.compile(r"\[\[(?P<name1>.+?)\]\]|\*\*(?P<name2>.+?)\*\*")
+    BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
+    EMBED_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
 
     def __init__(
         self,
@@ -53,26 +56,31 @@ class MonsterLinkPreprocessor(Preprocessor):
     def run(self, lines):
         new_lines = []
         for line in lines:
-            new_line = self.MONSTER_STATBLOCK_RE.sub(self.replace_statblock, line)
-            new_line = self.MONSTER_BUTTON_RE.sub(self.replace_button, new_line)
-            new_line = self.MONSTER_LINK_RE.sub(self.replace_link, new_line)
+            new_line = self.EMBED_RE.sub(self.replace_embed, line)
+            new_line = self.BUTTON_RE.sub(self.replace_button, new_line)
+            new_line = self.LINK_RE.sub(self.replace_link, new_line)
             new_lines.append(new_line)
         return new_lines
 
     def replace_link(self, match: re.Match):
         if match.group("name1"):
-            monster_name = match.group("name1")
+            entity_name = match.group("name1")
         elif match.group("name2"):
-            monster_name = match.group("name2")
+            entity_name = match.group("name2")
         else:
             raise ValueError("No monster name found in match")
 
-        ref = self.ref_resolver.resolve_monster_ref(monster_name)
-        if ref is None:
-            return f"<b>{monster_name}</b>"
+        monster_ref = self.ref_resolver.resolve_monster_ref(entity_name)
+        if monster_ref is not None:
+            self.resolved_references.append(monster_ref)
+            return str(monster_link(monster_ref, self.base_url))
 
-        self.resolved_references.append(ref)
-        return str(monster_link(ref, self.base_url))
+        power = resolve_power_ref(entity_name)
+        if power is not None:
+            self.resolved_references.append(power)
+            return str(power_link(power, self.base_url))
+
+        return f"<b>{entity_name}</b>"
 
     def replace_button(self, match: re.Match):
         if match.group("name3"):
@@ -87,15 +95,21 @@ class MonsterLinkPreprocessor(Preprocessor):
         else:
             return match.group(0)  # Return the original text if no match is found
 
-    def replace_statblock(self, match: re.Match):
+    def replace_embed(self, match: re.Match):
         if match.group("name4"):
-            monster_name = match.group("name4")
+            entity_name = match.group("name4")
         else:
             raise ValueError("No monster name found in match")
 
-        ref = self.ref_resolver.resolve_monster_ref(monster_name)
-        if ref is not None:
-            self.resolved_references.append(ref)
-            return str(monster_statblock(ref))
-        else:
-            return match.group(0)
+        monster_ref = self.ref_resolver.resolve_monster_ref(entity_name)
+        if monster_ref is not None:
+            self.resolved_references.append(monster_ref)
+            return str(monster_statblock(monster_ref))
+
+        power = resolve_power_ref(entity_name)
+        if power is not None:
+            self.resolved_references.append(power)
+            power_model = Powers.PowerLookup.get(power.key)
+            return render_power_fragment(power_model)
+
+        return match.group(0)
