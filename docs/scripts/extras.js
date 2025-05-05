@@ -39,3 +39,127 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("hideAlphaBanner", "true");
   });
 });
+
+let statblockId = 0;
+
+// Add a Re-Roll button to statblocks
+document.addEventListener("DOMContentLoaded", () => {
+  const statblocks = document.querySelectorAll('.stat-block');
+
+  statblocks.forEach(async statblock => {
+
+    // tag the statblock with an id for tracking
+    statblock.setAttribute('data-statblock-id', ++statblockId);
+
+    // wrap the statblock in a parent div so we can position the button relative to it
+    const wrapper = wrapStatblock(statblock);
+    statblock.parentNode.insertBefore(wrapper, statblock);
+    wrapper.appendChild(statblock);
+
+    // create the reroll button
+    const button = await createRerollButton(statblock, wrapper);
+    wrapper.appendChild(button);
+  });
+});
+
+// Add an event listener for any reroll button clicks
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".reroll-button");
+  if (!button) return;
+
+  const wrapper = button.parentElement;
+  if (!wrapper) return;
+
+  const monsterKey = button.dataset.monster;
+  const statblock = wrapper.querySelector(".stat-block");
+  console.log("Reroll button clicked:", monsterKey, statblock);
+
+  if (!monsterKey || !statblock) return;
+
+  // Trigger the animation
+  button.classList.add("rolling");
+  button.disabled = true;
+  // Remove class after animation ends
+  setTimeout(() => {
+    button.classList.remove("rolling");
+    button.disabled = false;
+  }, 600); // match the animation duration
+
+  rerollMonster(monsterKey, statblock);
+});
+
+
+function wrapStatblock(statblock) {
+  // Wrap statblock in a container to position the button relative to it
+  const wrapper = document.createElement('div');
+  wrapper.className = 'statblock-wrapper';
+  wrapper.setAttribute('data-monster', statblock.dataset.monster);
+  return wrapper;
+}
+
+async function createRerollButton(statblock) {
+
+  const button = document.createElement("button");
+  button.classList.add("reroll-button");
+  button.setAttribute("aria-label", "Reroll this monster");
+  button.setAttribute("title", "Reroll this monster");
+  button.setAttribute('data-monster', statblock.dataset.monster);
+
+  const response = await fetch('/img/d20.svg');
+  const svgText = await response.text();
+
+  const parser = new DOMParser();
+  const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+  const svgElement = svgDoc.documentElement;
+
+  svgElement.classList.add("d20-icon");
+  svgElement.removeAttribute("width");
+  svgElement.removeAttribute("height");
+  svgElement.removeAttribute("style");
+
+  button.appendChild(svgElement);
+
+  return button;
+}
+
+async function rerollMonster(monsterKey) {
+  const url = `/api/v1/monsters/${monsterKey}?output=monster_only`;
+
+  const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${monsterKey}"]`);
+  oldStatblockElement.classList.add("pop-out");
+
+  try {
+    const res = await fetch(url);
+    const html = await res.text();
+
+    // Parse the new statblock HTML into a DOM element
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const newStatblockElement = doc.querySelector('.stat-block');
+    newStatblockElement.setAttribute('data-statblock-id', ++statblockId);
+
+    // Replace old with new
+    oldStatblockElement.replaceWith(newStatblockElement);
+    newStatblockElement.classList.add("pop-in");
+
+    // Wait for pop-in animation, then trigger summon effect
+    await sleep(200);
+    newStatblockElement.classList.remove("pop-in");
+
+    // wait a little bit before starting summon effect
+    await sleep(200);
+    newStatblockElement.classList.add("summon-effect");
+
+    // Remove summon-effect after it's done
+    await sleep(400);
+    newStatblockElement.classList.remove("summon-effect");
+
+  } catch (err) {
+    console.error("Failed to reroll monster:", err);
+  }
+}
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

@@ -16,7 +16,9 @@ class MonsterLinkExtension(Extension):
 
         base_url = kwargs.get("base_url", os.environ.get("SITE_URL"))
         if base_url is None:
-            raise ValueError("base_url must be provided or set in the environment")
+            raise ValueError(
+                "base_url must be provided or set in the environment as SITE_URL"
+            )
         self.base_url = base_url
 
         super().__init__(**kwargs)

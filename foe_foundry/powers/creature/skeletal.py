@@ -156,11 +156,19 @@ class _BoneStorm(SkeletalPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(1.2 * min(stats.multiattack, 2))
 
+        if stats.cr < 1:
+            recharge = None
+            uses = 1
+        else:
+            recharge = 5
+            uses = None
+
         feature = Feature(
             name="Bone Storm",
             action=ActionType.Action,
             replaces_multiattack=2,
-            recharge=5,
+            recharge=recharge,
+            uses=uses,
             description=f"{stats.selfref.capitalize()} creates a storm of razor-sharp bone shards in a 15-foot cone. Each creature in the area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage.description} piercing damage on a failed save, or half as much damage on a successful one.",
         )
 
@@ -181,11 +189,19 @@ class _BoneWall(SkeletalPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(0.5 * min(stats.multiattack, 2))
 
+        if stats.cr < 1:
+            uses = 1
+            recharge = None
+        else:
+            uses = None
+            recharge = 5
+
         feature = Feature(
             name="Bone Wall",
             action=ActionType.Action,
             replaces_multiattack=2,
-            recharge=5,
+            recharge=recharge,
+            uses=uses,
             description=f"{stats.selfref.capitalize()} creates a wall of spike bone growths in a 20 foot line within 60 feet. Each creature in its area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage} piercing damage on a failed save, or half as much damage on a successful one. The wall counts as difficult terrain and a creature that enters its space or ends its turn there takes {damage} piercing damage.",
         )
 

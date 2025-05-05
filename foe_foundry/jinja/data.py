@@ -21,6 +21,7 @@ class MonsterTemplateData:
     name: str
     template: str
     variant: str
+    monster: str
     selfref: str
     roleref: str
     size: str
@@ -259,6 +260,7 @@ class MonsterTemplateData:
             name=stats.name,
             template=stats.template_key.lower(),
             variant=stats.variant_key.lower(),
+            monster=stats.monster_key.lower(),
             selfref=stats.selfref,
             roleref=stats.roleref,
             size=stats.size.name,

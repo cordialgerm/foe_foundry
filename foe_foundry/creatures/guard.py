@@ -14,19 +14,19 @@ from ..powers.themed import gadget, sneaky, technique
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
 
 class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -50,28 +50,28 @@ class _CustomWeights(CustomPowerSelection):
             return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
 
 
-GuardVariant = CreatureVariant(
+GuardVariant = MonsterVariant(
     name="Guard",
     description="Guards are perceptive, but most have little martial training. They might be bouncers, lookouts, members of a city watch, or other keen-eyed warriors.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Watchman",
             cr=1 / 8,
             srd_creatures=["Guard"],
         ),
-        SuggestedCr(name="Sergeant of the Watch", cr=1),
+        Monster(name="Sergeant of the Watch", cr=1),
     ],
 )
-CommanderVariant = CreatureVariant(
+CommanderVariant = MonsterVariant(
     name="Captain of the Watch",
     description="Guard captains often have ample professional experience. They might be accomplished bodyguards, protectors of magic treasures, veteran watch members, or similar wardens.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Guard Captain",
             cr=4,
             other_creatures={"Guard Captain": "mm25"},
         ),
-        SuggestedCr(name="Lord of the Watch", cr=8, is_legendary=True),
+        Monster(name="Lord of the Watch", cr=8, is_legendary=True),
     ],
 )
 
@@ -108,7 +108,8 @@ def generate_guard(
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stat_scaling,
         hp_multiplier=settings.hp_multiplier,
@@ -195,7 +196,7 @@ def generate_guard(
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GuardTemplate: CreatureTemplate = CreatureTemplate(
+GuardTemplate: MonsterTemplate = MonsterTemplate(
     name="Guard",
     tag_line="Sentries and Watch Members",
     description="Guards protect people, places, and things, either for pay or from a sense of duty. They might perform their duties vigilantly or distractedly. Some raise alarms at the first sign of danger and defend their charges with their lives. Others flee outright if their compensation doesn't match the danger they face.",

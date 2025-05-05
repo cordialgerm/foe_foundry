@@ -29,28 +29,28 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-DireBunnyVariant = CreatureVariant(
+DireBunnyVariant = MonsterVariant(
     name="Dire Bunny",
     description="Dire bunnies are large, aggressive rabbits with sharp teeth and claws. They are often infected with a rabies-like disease that makes them more aggressive.",
-    suggested_crs=[
-        SuggestedCr(name="Dire Bunny", cr=1),
-        SuggestedCr(name="Dire Bunny Matriarch", cr=3),
+    monsters=[
+        Monster(name="Dire Bunny", cr=1),
+        Monster(name="Dire Bunny Matriarch", cr=3),
     ],
 )
 
 
 class _DireBunnyWeights(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, variant: CreatureVariant, rng: np.random.Generator
+        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
     ):
         self.stats = stats
         self.variant = variant
@@ -127,7 +127,8 @@ def generate_dire_bunny(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stats,
         hp_multiplier=0.8 * settings.hp_multiplier,
@@ -183,7 +184,7 @@ def generate_dire_bunny(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-DireBunnyTemplate: CreatureTemplate = CreatureTemplate(
+DireBunnyTemplate: MonsterTemplate = MonsterTemplate(
     name="Dire Bunny",
     tag_line="Surprisingly vicious and quick.",
     description="Dire bunnies are large, aggressive rabbits with sharp teeth and claws. They are often infected with a rabies-like disease that makes them more aggressive.",

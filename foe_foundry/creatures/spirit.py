@@ -29,68 +29,68 @@ from ..powers.themed import (
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaler, StatScaling
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-ShadowVariant = CreatureVariant(
+ShadowVariant = MonsterVariant(
     name="Shadow",
     description="A Shadow is the cast-off remnant of a soul too vile to pass cleanly into death. While the rest of the spirit is swept down the Styx, the Shadow lingers behind like a stain - alive with jealousy, hunger, and spite. Shadows are drawn to extinguish warmth, light, and life, which they revile above all.",
-    suggested_crs=[
-        SuggestedCr(name="Shadow", cr=1 / 2, srd_creatures=["Shadow"]),
+    monsters=[
+        Monster(name="Shadow", cr=1 / 2, srd_creatures=["Shadow"]),
     ],
 )
 
-SpecterVariant = CreatureVariant(
+SpecterVariant = MonsterVariant(
     name="Specter",
     description="A Specter is a soul fragment, splintered by violence or unendurable pain. Lacking the memory of a Ghost or the malignant will of a Wraith, it drifts through the world in spasms of confusion and malice.",
-    suggested_crs=[
-        SuggestedCr(name="Specter", cr=1, srd_creatures=["Specter"]),
+    monsters=[
+        Monster(name="Specter", cr=1, srd_creatures=["Specter"]),
     ],
 )
 
-BansheeVariant = CreatureVariant(
+BansheeVariant = MonsterVariant(
     name="Banshee",
     description="A Banshee is a mournful spirit borne of overwhelming tragedy, sorrow, and betrayal. In life, the spirit loved too deeply and lost too dearly. Many Banshees are spirits of women who were betrayed by a loved one, though not exclusively. The mournful wail of a banshee is often enough to drag the souls of the weak-willed directly into death and chill the minds of even the strong-of-heart",
-    suggested_crs=[
-        SuggestedCr(name="Banshee", cr=4, srd_creatures=["Banshee"]),
+    monsters=[
+        Monster(name="Banshee", cr=4, srd_creatures=["Banshee"]),
     ],
 )
 
-GhostVariant = CreatureVariant(
+GhostVariant = MonsterVariant(
     name="Ghost",
     description="Ghosts are spirits that died with memories too painful to release. They are not held by hatred or vengeance, but by the sorrowful weight of what they recall. Lives cut too short, loved ones left behind, and truths unsaid. These souls haunt the world not because they won't move on, but because their memories won't let them.",
-    suggested_crs=[
-        SuggestedCr(name="Ghost", cr=4, srd_creatures=["Ghost"]),
+    monsters=[
+        Monster(name="Ghost", cr=4, srd_creatures=["Ghost"]),
     ],
 )
 
-RevenantVariant = CreatureVariant(
+RevenantVariant = MonsterVariant(
     name="Revenant",
     description="A Revenant is a soul fueled not by sorrow, but by rage. It rises not to haunt the world, but to correct a single, searing injustice. It remembers how it died and who is to blame, and will not rest until vengeance is taken. Revenants are not mindless: they are deliberate, relentless, and terrifyingly lucid. If their quarry is powerful, Revenants are known to assemble a posse of lesser undead to support their relentless quest.",
-    suggested_crs=[
-        SuggestedCr(name="Revenant", cr=5, srd_creatures=["Revenant"]),
+    monsters=[
+        Monster(name="Revenant", cr=5, srd_creatures=["Revenant"]),
     ],
 )
 
-WraithVariant = CreatureVariant(
+WraithVariant = MonsterVariant(
     name="Wraith",
     description="When a soul steeped in malice dies, it may resist the pull of the Styx. Caught in the cold eddies of that underworld current, its will festers. Twisting and swelling, it draws in the remnants of other damned spirits. Layer by layer, a powerful Wraith forms: a cursed vortex of souls too vile to cross over.",
-    suggested_crs=[
-        SuggestedCr(name="Wraith", cr=5, srd_creatures=["Wraith"]),
-        SuggestedCr(name="Wraith Shadelord", cr=8, is_legendary=True),
+    monsters=[
+        Monster(name="Wraith", cr=5, srd_creatures=["Wraith"]),
+        Monster(name="Wraith Shadelord", cr=8, is_legendary=True),
     ],
 )
 
 
 class _SpiritWeights(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, variant: CreatureVariant, rng: np.random.Generator
+        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
     ):
         self.variant = variant
         general_powers = [
@@ -326,7 +326,8 @@ def generate_spirit(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -475,7 +476,7 @@ def generate_spirit(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-SpiritTemplate: CreatureTemplate = CreatureTemplate(
+SpiritTemplate: MonsterTemplate = MonsterTemplate(
     name="Spirit",
     tag_line="Echoes of Rage and Regret",
     description="Spirits are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self",

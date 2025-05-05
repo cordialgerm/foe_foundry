@@ -20,20 +20,20 @@ from ..powers.themed import (
 from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-VrockVariant = CreatureVariant(
+VrockVariant = MonsterVariant(
     name="Vrock",
     description="Vrocks are screeching vulture-like harbringers of chaos and destruction that carry disease and pestilance from the lower planes.",
-    suggested_crs=[
-        SuggestedCr(name="Vrock", cr=6, srd_creatures=["Vrock"]),
+    monsters=[
+        Monster(name="Vrock", cr=6, srd_creatures=["Vrock"]),
     ],
 )
 
@@ -85,7 +85,8 @@ def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -156,7 +157,7 @@ def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-VrockTemplate: CreatureTemplate = CreatureTemplate(
+VrockTemplate: MonsterTemplate = MonsterTemplate(
     name="Vrock",
     tag_line="Demon of Carnage and Ruin",
     description="Vrocks are screeching vulture-like harbringers of chaos and destruction that carry disease and pestilance from the lower planes.",

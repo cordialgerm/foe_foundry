@@ -36,6 +36,7 @@ mkdocs-simple-blog = "^0.2.0"
 mkdocs-gen-files = "^0.5.0"
 python-frontmatter = "^1.1.0"
 mkdocs-blogging-plugin = "^2.2.11"
+gunicorn = "^23.0.0"
 
 [tool.poetry.scripts]
 foe_foundry_nl = "foe_foundry_nl.__main__:cli"

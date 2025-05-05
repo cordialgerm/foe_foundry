@@ -21,21 +21,21 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-MedusaVariant = CreatureVariant(
+MedusaVariant = MonsterVariant(
     name="Medusa",
     description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
-    suggested_crs=[
-        SuggestedCr(name="Medusa", cr=6, srd_creatures=["Medusa"]),
-        SuggestedCr(name="Medusa Queen", cr=10, is_legendary=True),
+    monsters=[
+        Monster(name="Medusa", cr=6, srd_creatures=["Medusa"]),
+        Monster(name="Medusa Queen", cr=10, is_legendary=True),
     ],
 )
 
@@ -100,7 +100,8 @@ def generate_medusa(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-2),
@@ -178,7 +179,7 @@ def generate_medusa(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-MedusaTemplate: CreatureTemplate = CreatureTemplate(
+MedusaTemplate: MonsterTemplate = MonsterTemplate(
     name="Medusa",
     tag_line="Snake-haired recluse with a petrifying gaze",
     description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",

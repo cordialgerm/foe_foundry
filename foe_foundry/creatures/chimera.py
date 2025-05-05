@@ -16,21 +16,21 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-ChimeraVariant = CreatureVariant(
+ChimeraVariant = MonsterVariant(
     name="Chimera",
     description="Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast, part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.",
-    suggested_crs=[
-        SuggestedCr(name="Chimera", cr=6, srd_creatures=["Chimera"]),
-        SuggestedCr(name="Chimera Sovereign", cr=10),
+    monsters=[
+        Monster(name="Chimera", cr=6, srd_creatures=["Chimera"]),
+        Monster(name="Chimera Sovereign", cr=10),
     ],
 )
 
@@ -76,7 +76,8 @@ def generate_chimera(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -142,7 +143,7 @@ def generate_chimera(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-ChimeraTemplate: CreatureTemplate = CreatureTemplate(
+ChimeraTemplate: MonsterTemplate = MonsterTemplate(
     name="Chimera",
     tag_line="Monstrous Messenger of Imminent Disaster",
     description="Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast, part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.",

@@ -18,21 +18,21 @@ from ..senses import Senses
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-GelatinousCubeVariant = CreatureVariant(
+GelatinousCubeVariant = MonsterVariant(
     name="Gelatinous Cube",
     description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eerie purpose, as if some deeper instinct compels their mindless patrol.",
-    suggested_crs=[
-        SuggestedCr(name="Gelatinous Cube", cr=2, srd_creatures=["Gelatinous Cube"]),
-        SuggestedCr(name="Ancient Gelatinous Cube", cr=6),
+    monsters=[
+        Monster(name="Gelatinous Cube", cr=2, srd_creatures=["Gelatinous Cube"]),
+        Monster(name="Ancient Gelatinous Cube", cr=6),
     ],
 )
 
@@ -75,7 +75,8 @@ def generate_gelatinous_cube(settings: GenerationSettings) -> StatsBeingGenerate
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary, mod=-2),
@@ -144,7 +145,7 @@ def generate_gelatinous_cube(settings: GenerationSettings) -> StatsBeingGenerate
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GelatinousCubeTemplate: CreatureTemplate = CreatureTemplate(
+GelatinousCubeTemplate: MonsterTemplate = MonsterTemplate(
     name="Gelatinous Cube",
     tag_line="Acidic, Nigh-Invisible Dungeon Cleaner",
     description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eeie purpose, as if some deeper instinct compels their mindless patrol.",

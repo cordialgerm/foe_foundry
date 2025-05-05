@@ -28,26 +28,26 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-MimicVariant = CreatureVariant(
+MimicVariant = MonsterVariant(
     name="Mimic",
     description="Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey",
-    suggested_crs=[
-        SuggestedCr(name="Mimic", cr=2, srd_creatures=["Mimic"]),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Mimic", cr=2, srd_creatures=["Mimic"]),
+        Monster(
             name="Greater Mimic",
             cr=4,
             other_creatures={"Giant Mimic": "Waterdeep: Dragon Heist"},
         ),
-        SuggestedCr(
+        Monster(
             name="Vault Mimic",
             cr=8,
             other_creatures={"Hoard Mimic": "Fizzban's Treasury of Dragons"},
@@ -123,7 +123,8 @@ def generate_mimic(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary, mod=1),
@@ -196,7 +197,7 @@ def generate_mimic(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-MimicTemplate: CreatureTemplate = CreatureTemplate(
+MimicTemplate: MonsterTemplate = MonsterTemplate(
     name="Mimic",
     tag_line="Paranoia-Inducing Shapeshifting Ambusher",
     description="Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey",

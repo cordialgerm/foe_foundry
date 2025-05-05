@@ -1,25 +1,29 @@
 from __future__ import annotations
 
+import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 
-from .routes import powers, stats
+from foe_foundry_data.powers import load_power_index, search_powers
+
+from .logconfig import setup_logging
+from .routes import monsters, powers
+
+setup_logging()
+log = logging.getLogger(__name__)
 
 
 @asynccontextmanager
 async def lifespan(app):
-    # re-index powers
-    powers.whoosh.clean_index()
-    powers.whoosh.index_powers()
+    log.info("Initializing FastAPI app...")
+    load_power_index()
+    log.info("Running simple query to prime the index...")
+    search_powers("Pack Tactics", limit=1)
     yield
-    # cleanup on shutdown
-    powers.whoosh.clean_index()
 
 
 app = FastAPI(lifespan=lifespan)
@@ -29,7 +33,6 @@ origins = [
     "http://localhost:8080",
     "http://localhost:3000",
     "http://localhost:3001",
-    "https://cordialgerm87.pythonanywhere.com",
 ]
 
 app.add_middleware(
@@ -41,22 +44,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(stats.router)
 app.include_router(powers.router)
+app.include_router(monsters.router)
 
-build_dir = Path(__file__).parent.parent / "foe_foundry_ui" / "build"
+site_dir = Path(__file__).parent.parent / "site"
 
-# Sets the templates directory to the `build` folder from `npm run build`
-# this is where you'll find the index.html file.
-templates = Jinja2Templates(directory=build_dir)
-
-# Mounts the `static` folder within the `build` folder to the `/static` route.
-app.mount("/static", StaticFiles(directory=f"{build_dir}/static"), "static")
-app.mount("/img", StaticFiles(directory=f"{build_dir}/img"), "img")
-
-
-# Defines a route handler for `/*` essentially.
-# NOTE: this needs to be the last route defined b/c it's a catch all route
-@app.get("/{rest_of_path:path}")
-async def react_app(req: Request, rest_of_path: str):
-    return templates.TemplateResponse("index.html", {"request": req})
+# Mounts the static site folder create by mkdocs
+app.mount("/", StaticFiles(directory=site_dir, html=True), name="site")

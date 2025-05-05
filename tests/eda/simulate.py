@@ -5,25 +5,25 @@ import seaborn as sns
 from matplotlib.figure import Figure
 
 from foe_foundry.creatures import (
-    CreatureTemplate,
-    CreatureVariant,
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     SelectionSettings,
-    SuggestedCr,
 )
 
 
 def plot_simulation(
     *,
-    template: CreatureTemplate,
-    variant: CreatureVariant,
-    suggested_cr: SuggestedCr | None = None,
+    template: MonsterTemplate,
+    variant: MonsterVariant,
+    monster: Monster | None = None,
     n: int,
     temperature: float = 1.0,
     full_plot: bool = False,
 ) -> Figure:
-    if suggested_cr is None:
-        suggested_cr = variant.suggested_crs[-1]
+    if monster is None:
+        monster = variant.monsters[-1]
 
     counts = {}
     for i in range(n):
@@ -31,10 +31,11 @@ def plot_simulation(
 
         settings = GenerationSettings(
             rng=rng,
-            creature_name=suggested_cr.name,
-            creature_template=template.name,
-            cr=suggested_cr.cr,
-            is_legendary=suggested_cr.is_legendary,
+            creature_name=monster.name,
+            monster_template=template.name,
+            monster_key=monster.key,
+            cr=monster.cr,
+            is_legendary=monster.is_legendary,
             variant=variant,
             selection_settings=SelectionSettings(temperature=temperature),
         )
@@ -95,6 +96,6 @@ def plot_simulation(
         )
         sns.barplot(data=by_power_level, x=by_power_level.index, y="counts", ax=ax3)
 
-    fig.suptitle(f"{suggested_cr.name} - Temperature {temperature:.1f}")
+    fig.suptitle(f"{monster.name} - Temperature {temperature:.1f}")
     fig.tight_layout(h_pad=2)
     return fig

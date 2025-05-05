@@ -45,7 +45,7 @@ class StatsBeingGenerated:
 
 
 @dataclass(kw_only=True, frozen=True)
-class SuggestedCr:
+class Monster:
     name: str
     cr: float
     is_legendary: bool = False
@@ -61,10 +61,10 @@ class SuggestedCr:
 
 
 @dataclass(kw_only=True, frozen=True)
-class CreatureVariant:
+class MonsterVariant:
     name: str
     description: str
-    suggested_crs: list[SuggestedCr]
+    monsters: list[Monster]
 
     def __hash__(self) -> int:
         return hash(self.name)
@@ -77,10 +77,11 @@ class CreatureVariant:
 @dataclass(kw_only=True, frozen=True)
 class GenerationSettings:
     creature_name: str
-    creature_template: str
+    monster_template: str
+    monster_key: str
     cr: float
     is_legendary: bool
-    variant: CreatureVariant
+    variant: MonsterVariant
     species: CreatureSpecies | None = None
     rng: np.random.Generator
 
@@ -109,27 +110,26 @@ GenerateCallback: TypeAlias = Callable[[GenerationSettings], StatsBeingGenerated
 
 
 @dataclass(kw_only=True)
-class CreatureTemplate:
+class MonsterTemplate:
     name: str
     tag_line: str
     description: str
     environments: list[str]  # TODO - standardize
     treasure: list[str]
-    variants: list[CreatureVariant]
+    variants: list[MonsterVariant]
     species: list[CreatureSpecies]
     callback: GenerateCallback
     is_sentient_species: bool = False
 
     def __post_init__(self):
         self.n_variant = len(self.variants)
-        self._variant_map = {v.name: v for v in self.variants}
+        self._variant_map = {v.key: v for v in self.variants}
         self.n_species = len(self.species)
-        self._species_map = {s.name: s for s in self.species}
 
         srd_creatures = set()
         other_creatures = set()
         for v in self.variants:
-            for s in v.suggested_crs:
+            for s in v.monsters:
                 if s.srd_creatures is not None:
                     srd_creatures.update(s.srd_creatures)
                 if s.other_creatures is not None:
@@ -157,6 +157,16 @@ class CreatureTemplate:
 
         return markdown
 
+    def get_images(self, variant: str) -> list[Path]:
+        if variant not in self._variant_map:
+            raise ValueError(f"Variant {variant} not found in template {self.name}")
+
+        variant_images = self.image_urls.get(variant, [])
+        if len(variant_images) == 0:
+            return self.image_urls.get(self.key, [])
+        else:
+            return variant_images
+
     @property
     def key(self) -> str:
         return name_to_key(self.name)
@@ -165,41 +175,68 @@ class CreatureTemplate:
         return hash(self.name)
 
     def generate(self, settings: GenerationSettings) -> StatsBeingGenerated:
+        """Creates a statblock for the given generation settings"""
         return self.callback(settings)
 
+    def generate_monster(
+        self,
+        variant: MonsterVariant,
+        monster: Monster,
+        species: CreatureSpecies | None = None,
+        **kwargs,
+    ) -> StatsBeingGenerated:
+        """Creates a statblock for the given suggested CR"""
+
+        args: dict = (
+            dict(
+                creature_name=monster.name,
+                monster_template=self.name,
+                monster_key=monster.key,
+                cr=monster.cr,
+                is_legendary=monster.is_legendary,
+                variant=variant,
+                species=species,
+                selection_settings=SelectionSettings(),
+                rng=rng_factory(monster, species),
+            )
+            | kwargs
+        )
+
+        settings = GenerationSettings(**args)
+        return self.generate(settings)
+
     def generate_all(self, **kwargs) -> Iterable[StatsBeingGenerated]:
+        """Generate one instance of a statblock for each variant and suggested CR in this template"""
         for settings in self.generate_settings(**kwargs):
             yield self.generate(settings)
 
     def generate_settings(self, **kwargs) -> list[GenerationSettings]:
+        """Generates all possible settings for this template"""
         options = []
         for variant in self.variants:
-            for suggested_cr in variant.suggested_crs:
+            for monster in variant.monsters:
                 for species in self.species if self.n_species > 0 else [None]:
-                    hash_key = (
-                        f"{suggested_cr.name}-{species.name}"
-                        if species is not None
-                        else suggested_cr.name
-                    )
-
-                    def rng_factory() -> np.random.Generator:
-                        bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
-                        random_state = int.from_bytes(bytes, byteorder="little")
-                        return np.random.default_rng(seed=random_state)
-
                     args: dict = (
                         dict(
-                            creature_name=suggested_cr.name,
-                            creature_template=self.name,
-                            cr=suggested_cr.cr,
-                            is_legendary=suggested_cr.is_legendary,
+                            creature_name=monster.name,
+                            monster_template=self.name,
+                            monster_key=monster.key,
+                            cr=monster.cr,
+                            is_legendary=monster.is_legendary,
                             variant=variant,
                             species=species,
                             selection_settings=SelectionSettings(),
-                            rng=rng_factory(),
+                            rng=rng_factory(monster, species),
                         )
                         | kwargs
                     )
 
                     options.append(GenerationSettings(**args))
         return options
+
+
+def rng_factory(monster: Monster, species: CreatureSpecies | None):
+    hash_key = f"{monster.name}-{species.name}" if species is not None else monster.name
+    bytes = hashlib.sha256(hash_key.encode("utf-8")).digest()
+    random_state = int.from_bytes(bytes, byteorder="little")
+    return np.random.default_rng(seed=random_state)

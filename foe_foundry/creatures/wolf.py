@@ -19,35 +19,35 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-WolfVariant = CreatureVariant(
+WolfVariant = MonsterVariant(
     name="Wolf",
     description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
-    suggested_crs=[
-        SuggestedCr(name="Wolf", cr=1 / 8, srd_creatures=["Wolf"]),
-        SuggestedCr(name="Dire Wolf", cr=1, srd_creatures=["Dire Wolf"]),
+    monsters=[
+        Monster(name="Wolf", cr=1 / 8, srd_creatures=["Wolf"]),
+        Monster(name="Dire Wolf", cr=1, srd_creatures=["Dire Wolf"]),
     ],
 )
-FrostwolfVariant = CreatureVariant(
+FrostwolfVariant = MonsterVariant(
     name="Winter Wolf",
     description="Winter wolves are large, intelligent wolves with white fur and a breath weapon that can freeze their foes.",
-    suggested_crs=[
-        SuggestedCr(name="Winter Wolf", cr=3, srd_creatures=["Winter Wolf"]),
-        SuggestedCr(name="Fellwinter Packlord", cr=6, is_legendary=True),
+    monsters=[
+        Monster(name="Winter Wolf", cr=3, srd_creatures=["Winter Wolf"]),
+        Monster(name="Fellwinter Packlord", cr=6, is_legendary=True),
     ],
 )
 
 
 class _WolfWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -122,7 +122,8 @@ def generate_wolf(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stats,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -187,7 +188,7 @@ def generate_wolf(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-WolfTemplate: CreatureTemplate = CreatureTemplate(
+WolfTemplate: MonsterTemplate = MonsterTemplate(
     name="Wolf",
     tag_line="Bestial Pack Hunters",
     description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",

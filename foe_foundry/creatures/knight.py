@@ -16,28 +16,28 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-KnightVariant = CreatureVariant(
+KnightVariant = MonsterVariant(
     name="Knight",
     description="Knights are heavily armored warriors who lead troops in combat and dominate the field of battle.",
-    suggested_crs=[
-        SuggestedCr(name="Knight", cr=3, srd_creatures=["Knight"]),
-        SuggestedCr(name="Knight of the Realm", cr=6),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Knight", cr=3, srd_creatures=["Knight"]),
+        Monster(name="Knight of the Realm", cr=6),
+        Monster(
             name="Questing Knight",
             cr=12,
             other_creatures={"Questing Knight": "mm25"},
         ),
-        SuggestedCr(name="Paragon Knight", cr=16, is_legendary=True),
+        Monster(name="Paragon Knight", cr=16, is_legendary=True),
     ],
 )
 
@@ -107,7 +107,8 @@ def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -198,7 +199,7 @@ def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-KnightTemplate: CreatureTemplate = CreatureTemplate(
+KnightTemplate: MonsterTemplate = MonsterTemplate(
     name="Knight",
     tag_line="Battle Masters and Heroic Wanderers",
     description="Knights are skilled warriors trained for war and tested in battle. Many serve the rulers of a realm, a faith, or an order devoted to a cause.",

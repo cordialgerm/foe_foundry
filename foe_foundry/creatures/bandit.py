@@ -12,30 +12,30 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-BanditVariant = CreatureVariant(
+BanditVariant = MonsterVariant(
     name="Bandit",
     description="Bandits are inexperienced ne'er-do-wells who typically follow the orders of higher-ranking bandits.",
-    suggested_crs=[
-        SuggestedCr(name="Bandit", cr=1 / 8, srd_creatures=["Bandit"]),
-        SuggestedCr(name="Bandit Veteran", cr=1),
+    monsters=[
+        Monster(name="Bandit", cr=1 / 8, srd_creatures=["Bandit"]),
+        Monster(name="Bandit Veteran", cr=1),
     ],
 )
-BanditCaptainVariant = CreatureVariant(
+BanditCaptainVariant = MonsterVariant(
     name="Bandit Captain",
     description="Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.",
-    suggested_crs=[
-        SuggestedCr(name="Bandit Captain", cr=2, srd_creatures=["Bandit Captain"]),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Bandit Captain", cr=2, srd_creatures=["Bandit Captain"]),
+        Monster(
             name="Bandit Crime Lord",
             cr=11,
             other_creatures={"Bandit Crime Lord": "mm25"},
@@ -46,7 +46,7 @@ BanditCaptainVariant = CreatureVariant(
 
 
 class _BanditPowers(CustomPowerSelection):
-    def __init__(self, variant: CreatureVariant, stats: BaseStatblock):
+    def __init__(self, variant: MonsterVariant, stats: BaseStatblock):
         self.variant = variant
         self.stats = stats
 
@@ -102,7 +102,8 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Medium, mod=0.5),
@@ -207,7 +208,7 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-BanditTemplate: CreatureTemplate = CreatureTemplate(
+BanditTemplate: MonsterTemplate = MonsterTemplate(
     name="Bandit",
     tag_line="Criminals and Scoundrels",
     description="Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.",

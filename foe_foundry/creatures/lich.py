@@ -30,21 +30,21 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-LichVariant = CreatureVariant(
+LichVariant = MonsterVariant(
     name="Lich",
     description="Liches are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.",
-    suggested_crs=[
-        SuggestedCr(name="Lich", cr=21, srd_creatures=["Lich"], is_legendary=True),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Lich", cr=21, srd_creatures=["Lich"], is_legendary=True),
+        Monster(
             name="Archlich",
             cr=26,
             other_creatures={"Vecna": "Vecna: Eve of Ruin"},
@@ -60,7 +60,7 @@ class _LichWeights(CustomPowerSelection):
         stats: BaseStatblock,
         name: str,
         cr: float,
-        variant: CreatureVariant,
+        variant: MonsterVariant,
         rng: np.random.Generator,
     ):
         self.stats = stats
@@ -156,7 +156,8 @@ def generate_lich(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=-2),
@@ -251,7 +252,7 @@ def generate_lich(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-LichTemplate: CreatureTemplate = CreatureTemplate(
+LichTemplate: MonsterTemplate = MonsterTemplate(
     name="Lich",
     tag_line="Immortal Masters of Undeath and Arcana",
     description="Liches are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.",

@@ -13,15 +13,15 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..utils.rng import choose_enum
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
 
 class _CustomPowers(CustomPowerSelection):
@@ -40,24 +40,24 @@ class _CustomPowers(CustomPowerSelection):
             return CustomPowerWeight(weight=0.5)
 
 
-BerserkerVariant = CreatureVariant(
+BerserkerVariant = MonsterVariant(
     name="Berserker",
     description="Berserkers might fight for personal glory or form motivated forces or howling hordes.",
-    suggested_crs=[
-        SuggestedCr(name="Berserker", cr=2, srd_creatures=["Berserker"]),
-        SuggestedCr(name="Berserker Veteran", cr=4),
+    monsters=[
+        Monster(name="Berserker", cr=2, srd_creatures=["Berserker"]),
+        Monster(name="Berserker Veteran", cr=4),
     ],
 )
-CommanderVariant = CreatureVariant(
+CommanderVariant = MonsterVariant(
     name="Berserker Commander",
     description="Berserker commanders bear the scars of battle and drive their followers to match their deadly zeal. These commanders tap into a primal magic to enhance their might.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Berserker Commander",
             cr=8,
             other_creatures={"Berserker Commander": "mm25"},
         ),
-        SuggestedCr(name="Berserker Legend", cr=12, is_legendary=True),
+        Monster(name="Berserker Legend", cr=12, is_legendary=True),
     ],
 )
 
@@ -74,7 +74,8 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -161,7 +162,7 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-BerserkerTemplate: CreatureTemplate = CreatureTemplate(
+BerserkerTemplate: MonsterTemplate = MonsterTemplate(
     name="Berserker",
     tag_line="Raging Invaders and Impassioned Warriors",
     description="Gripped by the adrenaline of battle, berserkers are reckless invaders, pit fighters, and other ferocious warriors.",

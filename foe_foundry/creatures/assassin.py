@@ -22,15 +22,15 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
 
 class _AssassinPowers(CustomPowerSelection):
@@ -57,13 +57,13 @@ class _AssassinPowers(CustomPowerSelection):
         return [CunningAction]
 
 
-AssassinVariant = CreatureVariant(
+AssassinVariant = MonsterVariant(
     name="Assassin",
     description="Assassins are professional killers skilled at stealthily approaching their victims and striking unseen. Most assassins kill for a reason, perhaps hiring themselves out to wealthy patrons or slaying for an unscrupulous cause. They use poisons and other deadly tools, and they might carry equipment to help them break into secure areas or avoid capture.",
-    suggested_crs=[
-        SuggestedCr(name="Contract Killer", cr=4),
-        SuggestedCr(name="Assassin", cr=8, srd_creatures=["Assassin"]),
-        SuggestedCr(name="Assassin Legend", cr=12, is_legendary=True),
+    monsters=[
+        Monster(name="Contract Killer", cr=4),
+        Monster(name="Assassin", cr=8, srd_creatures=["Assassin"]),
+        Monster(name="Assassin Legend", cr=12, is_legendary=True),
     ],
 )
 
@@ -80,7 +80,8 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default),
@@ -179,7 +180,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-AssassinTemplate: CreatureTemplate = CreatureTemplate(
+AssassinTemplate: MonsterTemplate = MonsterTemplate(
     name="Assassin",
     tag_line="Contract Killers",
     description="Assassins are professional killers skilled at stealthily approaching their victims and striking unseen. Most assassins kill for a reason, perhaps hiring themselves out to wealthy patrons or slaying for an unscrupulous cause. They use poisons and other deadly tools, and they might carry equipment to help them break into secure areas or avoid capture.",
