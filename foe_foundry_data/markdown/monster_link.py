@@ -4,8 +4,8 @@ from markupsafe import Markup
 from foe_foundry.creatures import (
     GenerationSettings,
 )
-from foe_foundry.jinja import render_statblock_fragment
 
+from ..jinja import render_statblock_fragment
 from .monster_ref import MonsterRef
 
 
