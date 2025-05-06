@@ -36,12 +36,7 @@ theme:
     gtag: !ENV [GTAG]
 
 extra_css:
-  - css/branding.css
-  - css/pamphlet.css
-  - css/parchment.css
-  - css/root.css
-  - css/statblock.css
-  - css/tooltips.css
+  - css/site.css
 
 extra_javascript:
   - scripts/extras.js

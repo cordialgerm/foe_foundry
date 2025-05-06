@@ -6,7 +6,7 @@ tags:
   - announcement
 author: Cordialgerm
 date: 2025-04-29
-image: img/favicon.png
+image: img/favicon.webp
 json_ld: true
 ---
 
