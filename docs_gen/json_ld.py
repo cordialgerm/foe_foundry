@@ -1,5 +1,7 @@
+import json
 import logging
 import os
+from datetime import datetime
 
 from mkdocs.structure.pages import Page
 from mkdocs_blogging_plugin.util import Util as BloggingUtil
@@ -35,13 +37,23 @@ def set_json_ld_on_page(page: Page):
     description = meta.get("description", "")
     image = image_url(meta.get("image", ""))
 
+    modified_time = page.meta.get("modified_time_localized")
+    if modified_time is None:
+        git_timestamp = util.get_git_commit_timestamp(
+            page.file.abs_src_path, is_first_commit=False
+        )
+        modified_time = datetime.fromtimestamp(git_timestamp)
+        modified_time_localized = modified_time.isoformat()
+        page.meta["modified_time_localized"] = modified_time_localized
+
     published_time = page.meta.get("published_time_localized")
     if published_time is None:
         git_timestamp = util.get_git_commit_timestamp(
             page.file.abs_src_path, is_first_commit=True
         )
-        published_time = util.get_localized_date(git_timestamp, day_only=False)
-        page.meta["published_time_localized"] = published_time
+        published_time = datetime.fromtimestamp(git_timestamp)
+        published_time_localized = published_time.isoformat()
+        page.meta["published_time_localized"] = published_time_localized
 
     json_ld = {
         "@context": "https://schema.org",
@@ -58,10 +70,11 @@ def set_json_ld_on_page(page: Page):
                 "url": image_url(),
             },
         },
-        "datePublished": published_time,
+        "datePublished": published_time_localized,
+        "dateModified": modified_time_localized,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": f"{base_url}/{page.url}",
         },
     }
-    page.meta["json_ld"] = json_ld
+    page.meta["json_ld"] = json.dumps(json_ld, indent=2)

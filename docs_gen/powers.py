@@ -46,7 +46,6 @@ def generate_theme_file(theme: str, powers: list[PowerModel]):
         f"title: {theme.title()} Powers | Foe Foundry",
         f"description: Discover {len(powers)} {theme.lower()}-themed free powers for your next 5E or TTRPG monster.\n",
         "image: img/favicon.png",
-        "json_ld: true",
         "---\n",
         f"# {theme.title()} Powers ({len(powers)})\n",
         f"Explore a collection of **{theme.title()} Powers**: flavorful, ready-to-use monster abilities perfect for adding depth, danger, and thematic flair to your next encounter. These handcrafted powers are designed to fit monsters of any level and are fully compatible with 5E. Use them to customize creatures, surprise your players, and bring your world to life. Foe Foundry uses these Powers to procedurally generate monsters that are both flavorful and mechanically sharp. Powers are selected based on theme, role, and CR to ensure every creature feels distinct and balanced. Whether you're building a custom boss or filling out an encounter, Powers are the core of what makes Foe Foundry monsters unforgettable.  \n"
