@@ -7,6 +7,7 @@ tags:
 author: Cordialgerm
 date: 2025-04-29
 image: img/favicon.png
+json_ld: true
 ---
 
 # Announcing Foe Foundry

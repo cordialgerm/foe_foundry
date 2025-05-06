@@ -73,7 +73,7 @@
     {%- endif %}
     {%- endblock %}
 
-    {% if page and page.meta and page.meta.title and page.meta.description %}
+    {% if page and page.meta and page.meta.json_ld %}
     <script type="application/ld+json">
         {{ page.meta["json_ld"] }}
     </script>

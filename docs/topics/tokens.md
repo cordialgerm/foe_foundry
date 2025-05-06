@@ -4,6 +4,7 @@ description: Dynamic battlefield Tokens make your TTRPG combat unforgettable. Le
 image: img/trap.jpg
 footer:
   - Art by Carlos Castilho. Used with permission.
+json_ld: true
 ---
 
 # Dynamic TTRPG Encounters with Tokens

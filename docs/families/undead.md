@@ -3,6 +3,7 @@ title: Undead Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foun
 short_title: Undead
 description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
 image: img/skeleton_warband.png
+json_ld: true
 ---
 
 # Undead

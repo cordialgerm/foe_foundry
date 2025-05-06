@@ -1,7 +1,11 @@
+import logging
 import os
 from datetime import datetime
 
+from mkdocs.structure.pages import Page
 from mkdocs_blogging_plugin.util import Util as BloggingUtil
+
+log = logging.getLogger("mkdocs")
 
 
 def on_config(config, **kwargs):
@@ -10,7 +14,7 @@ def on_config(config, **kwargs):
     )
 
 
-def on_page_context(context, page, config, nav):
+def on_page_context(context, page: Page, config, nav):
     base_url = os.environ.get("SITE_URL")
     if base_url is None:
         raise ValueError("SITE_URL environment variable is not set.")
@@ -29,6 +33,10 @@ def on_page_context(context, page, config, nav):
     util = BloggingUtil()
 
     meta = page.meta
+
+    # only attach the json_ld metadata to posts that opt in
+    if not meta.get("json_ld", False):
+        return
 
     headline = meta.get("short_title", meta.get("title", ""))
     description = meta.get("description", "")
