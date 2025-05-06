@@ -22,6 +22,8 @@ Many serve as mindless thralls under a mortal or once-mortal master's control, s
 
 Each <span class="branding">[Foe Foundry](https://foefoundry.com)</span> monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
 
+If you're looking for other monsters, browse our catalog of [Foe Foundry Monsters](../monsters/index.md) to find the perfect monster for your game tonight.
+
 ### Encounters
 
 Foe Foundry helps Game Masters summon chilling undead encounters instantly, with flavorful creatures like wraiths, banshees, and skeletal champions — all scaled to your party’s level and ready to haunt your RPG sessions without hours of prep. Each encounter is a fun, table-ready situation packed with open-ended choices, designed for low-prep RPG sessions, keeping your players engaged and your story moving.

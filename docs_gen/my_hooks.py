@@ -1,9 +1,10 @@
 import logging
-import os
 from datetime import datetime
 
 from mkdocs.structure.pages import Page
-from mkdocs_blogging_plugin.util import Util as BloggingUtil
+
+from docs_gen.json_ld import set_json_ld_on_page
+from docs_gen.related_monsters import set_related_monsters_on_page
 
 log = logging.getLogger("mkdocs")
 
@@ -15,60 +16,8 @@ def on_config(config, **kwargs):
 
 
 def on_page_context(context, page: Page, config, nav):
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set.")
-    if base_url.endswith("/"):
-        base_url = base_url[:-1]
+    set_json_ld_on_page(page)
 
-    def image_url(path: str = "") -> str:
-        if path is None or path == "":
-            return image_url("img/favicon.png")
 
-        if path.startswith("/"):
-            path = path[1:]
-
-        return f"{base_url}/{path}"
-
-    util = BloggingUtil()
-
-    meta = page.meta
-
-    # only attach the json_ld metadata to posts that opt in
-    if not meta.get("json_ld", False):
-        return
-
-    headline = meta.get("short_title", meta.get("title", ""))
-    description = meta.get("description", "")
-    image = image_url(meta.get("image", ""))
-
-    published_time = page.meta.get("published_time_localized")
-    if published_time is None:
-        git_timestamp = util.get_git_commit_timestamp(
-            page.file.abs_src_path, is_first_commit=True
-        )
-        published_time = util.get_localized_date(git_timestamp, day_only=False)
-        page.meta["published_time_localized"] = published_time
-
-    json_ld = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": headline,
-        "description": description,
-        "image": image,
-        "author": {"@type": "Person", "name": "Evan Rash"},
-        "publisher": {
-            "@type": "Organization",
-            "name": "Foe Foundry",
-            "logo": {
-                "@type": "ImageObject",
-                "url": image_url(),
-            },
-        },
-        "datePublished": published_time,
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": f"{base_url}/{page.url}",
-        },
-    }
-    page.meta["json_ld"] = json_ld
+def on_page_markdown(markdown: str, page: Page, config, files):
+    set_related_monsters_on_page(page, markdown)

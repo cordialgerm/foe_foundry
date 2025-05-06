@@ -16,13 +16,15 @@ With tiered [villainous threats](#villains-foes-and-threats), [themed monsters](
 
 ![An epic villain strides forth ready to conquery the world](../img/darklord.jpg){.masked .blog-image-large}
 
-Looking for the perfect legendary monster to serve your villain? Summon a handcrafted foe in seconds with the Foe Foundry monster generator. Here are three examples of legendary villains for your D&D, 5E, and TTRPG campaigns:
+Here are three examples of legendary villains for your D&D, 5E, and TTRPG campaigns:
 
 [[$Archlich]]
 
 [[$Necromancer Primagus]]
 
 [[$Foulblood Hydra]]
+
+Looking for the perfect legendary monster statblock to serve your villain? Browse our [Monster Catalog](../monsters/index.md) or [Summon a Handcrafted foe](../generate.md) in seconds with the Foe Foundry monster generator.
 
 ## Using These Tables
 

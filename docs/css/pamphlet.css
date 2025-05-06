@@ -51,7 +51,11 @@ hr {
 }
 
 .pamphlet-main li {
-    margin-top: 12px;
+    margin-top: var(--big-margin);
+}
+
+.pamphlet-main .related-monsters li {
+    margin-top: var(--small-margin);
 }
 
 .pamphlet-main li::marker {
@@ -73,6 +77,12 @@ hr {
     margin-top: var(--big-margin);
     margin-bottom: var(--big-margin);
     padding-top: var(--big-margin);
+}
+
+
+.toc .nav-link:focus,
+.toc .nav-link:hover {
+    color: var(--primary-color);
 }
 
 .pamphlet-main .toc a {
