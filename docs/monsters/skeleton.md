@@ -2,7 +2,7 @@
 title: Skeleton Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Skeletons
 description: Raise subservient skeletons with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/skeleton_warband.png
+image: img/skeleton_warband.webp
 json_ld: true
 ---
 
@@ -23,7 +23,7 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 - When left without commands, a Skeleton might unconsciously reenact fragments of its former life, such as patrolling, training, or maintaining ancient equipment.
 - Unlike **Zombies**, Skeletons are often eerily quiet in motion — the soft clatter of bone against stone the only warning of their approach.
 
-![An animated Skeleton guards an ancient tomb, bones clattering silently](../img/skeleton_warband.png){.monster-image}
+![An animated Skeleton guards an ancient tomb, bones clattering silently](../img/skeleton_warband.webp){.monster-image}
 
 ## Skeleton Statblocks
 

@@ -9,7 +9,7 @@ def generate_all_powers():
         "---",
         "title: All Powers",
         "description: Browse 600+ handcrafted monster powers for tabletop RPGs. Find unique abilities and build the perfect monster for your encounters.",
-        "image: img/favicon.png",
+        "image: img/favicon.webp",
         "---",
         "# All Monster Powers\n",
         "Monster Powers are the beating heart of Foe Foundry. Powers are flavorful, handcrafted abilities that make every 5E monster feel unique, dangerous, and ready for the table. Whether it's a venomous strike, a cursed aura, or a spell-laced scream, each Power is designed to challenge players and inspire GMs. Powers are organized by theme to help you discover exactly the right vibe for your next encounter, and they scale cleanly with CR so you can drop them into any campaign.  \n",
@@ -45,7 +45,7 @@ def generate_theme_file(theme: str, powers: list[PowerModel]):
         "---",
         f"title: {theme.title()} Powers | Foe Foundry",
         f"description: Discover {len(powers)} {theme.lower()}-themed free powers for your next 5E or TTRPG monster.\n",
-        "image: img/favicon.png",
+        "image: img/favicon.webp",
         "---\n",
         f"# {theme.title()} Powers ({len(powers)})\n",
         f"Explore a collection of **{theme.title()} Powers**: flavorful, ready-to-use monster abilities perfect for adding depth, danger, and thematic flair to your next encounter. These handcrafted powers are designed to fit monsters of any level and are fully compatible with 5E. Use them to customize creatures, surprise your players, and bring your world to life. Foe Foundry uses these Powers to procedurally generate monsters that are both flavorful and mechanically sharp. Powers are selected based on theme, role, and CR to ensure every creature feels distinct and balanced. Whether you're building a custom boss or filling out an encounter, Powers are the core of what makes Foe Foundry monsters unforgettable.  \n"

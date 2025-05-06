@@ -17,7 +17,7 @@ Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](
 - [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
 - [Liches](lich.md) - immortal masters of undeath and arcana
 
-![A skeleton warband advances menacingly](../img/skeleton_warband.png){.monster-image}
+![A skeleton warband advances menacingly](../img/skeleton_warband.webp){.monster-image}
 
 ## Monstrosities
 
