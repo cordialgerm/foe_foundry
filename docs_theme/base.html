@@ -196,8 +196,15 @@
     <footer class="col-md-12">
         {%- block footer %}
         <hr>
+
         {%- if config.copyright %}
         <p>{{ config.copyright }}</p>
+        {%- endif %}
+
+        {%- if page and page.meta and page.meta.footer %}
+        {% for item in page.meta.footer %}
+        <p>{{ item }}</p>
+        {% endfor %}
         {%- endif %}
 
         <p>See <a href="{{ base_url}}topics/credits">Credits</a> for information on licensed content.</p>
