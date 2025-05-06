@@ -2,6 +2,8 @@
 title: Dynamic TTRPG Encounters with Tokens | Foe Foundry
 description: Dynamic battlefield Tokens make your TTRPG combat unforgettable. Learn how to use traps, spells, and magical hazards with Foe Foundry to shape the flow of battle.
 image: img/trap.jpg
+footer:
+  - Art by Carlos Castilho. Used with permission.
 ---
 
 # Dynamic TTRPG Encounters with Tokens
