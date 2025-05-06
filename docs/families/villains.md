@@ -1,5 +1,6 @@
 ---
 title: Creating Awesome Villains | Foe Foundry
+short_title: Creating Awesome Villains
 description: Build unforgettable D&D villains with this all-in-one guide. Packed with threat tables, themed monsters, evil goals, quirks, sidekicks, and more for 5E and fantasy TTRPGs.
 image: img/darklord.jpg
 ---
