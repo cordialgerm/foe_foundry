@@ -1,3 +1,4 @@
+import hashlib
 from typing import Any, Callable, Dict, List, TypeAlias, TypeVar, overload
 
 import numpy as np
@@ -101,3 +102,9 @@ def rng_instance(
         return rng
     else:
         return resolve_rng(rng)()
+
+
+def rng_from_key(key: str) -> np.random.Generator:
+    bytes = hashlib.sha256(key.encode("utf-8")).digest()
+    random_state = int.from_bytes(bytes, byteorder="little")
+    return np.random.default_rng(seed=random_state)

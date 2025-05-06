@@ -73,6 +73,12 @@
     {%- endif %}
     {%- endblock %}
 
+    {% if page and page.meta and page.meta.json_ld %}
+    <script type="application/ld+json">
+        {{ page.meta["json_ld"] }}
+    </script>
+    {% endif %}
+
     {%- block analytics %}
     {%- if config.theme.analytics.gtag %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.theme.analytics.gtag }}"></script>

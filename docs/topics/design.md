@@ -2,6 +2,7 @@
 title: Foe Foundry Design Philosophy | Create Better 5E Monsters
 description: Learn the core monster design philosophy behind Foe Foundry - a GM toolset for creating flavorful, powerful, and easy-to-run D&D 5E monsters using 200+ unique powers and procedurally generated abilities.
 image: img/foe_foundry_icon.png
+json_ld: true
 ---
 
 # Foe Foundry Design Philosophy

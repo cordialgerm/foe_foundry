@@ -7,6 +7,7 @@ tags:
   - tips
 footer:
   - Art by Carlos Castilho. Used with permission.
+json_ld: true
 ---
 
 # Avoiding Stale 5E Combat with Tokens

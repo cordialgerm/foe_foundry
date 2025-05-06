@@ -3,6 +3,7 @@ title: Undead Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foun
 short_title: Undead
 description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
 image: img/skeleton_warband.png
+json_ld: true
 ---
 
 # Undead
@@ -20,6 +21,8 @@ Many serve as mindless thralls under a mortal or once-mortal master's control, s
 ## Using Undead in Your Campaign
 
 Each <span class="branding">[Foe Foundry](https://foefoundry.com)</span> monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
+
+If you're looking for other monsters, browse our catalog of [Foe Foundry Monsters](../monsters/index.md) to find the perfect monster for your game tonight.
 
 ### Encounters
 

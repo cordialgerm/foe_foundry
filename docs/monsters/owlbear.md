@@ -3,6 +3,7 @@ title: Owlbear Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Fou
 short_title: Owlbears
 description: Release territorial Owlbears with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: /img/owlbear-0.png
+json_ld: true
 ---
 
 # Owlbears

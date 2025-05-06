@@ -1,4 +1,6 @@
-from dataclasses import dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass, replace
 
 import inflect
 
@@ -21,6 +23,14 @@ class MonsterRef:
     template: CreatureTemplate
     variant: CreatureVariant | None = None
     suggested_cr: SuggestedCr | None = None
+
+    def resolve(self) -> MonsterRef:
+        if self.variant is not None:
+            return self
+
+        variant = self.template.variants[0]
+        suggested_cr = variant.suggested_crs[0]
+        return replace(self, variant=variant, suggested_cr=suggested_cr)
 
 
 class MonsterRefResolver:
