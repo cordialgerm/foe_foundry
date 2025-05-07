@@ -73,6 +73,12 @@
     {%- endif %}
     {%- endblock %}
 
+    {% if page and page.meta and page.meta.json_ld %}
+    <script type="application/ld+json">
+        {{ page.meta["json_ld"] }}
+    </script>
+    {% endif %}
+
     {%- block analytics %}
     {%- if config.theme.analytics.gtag %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.theme.analytics.gtag }}"></script>
@@ -196,8 +202,15 @@
     <footer class="col-md-12">
         {%- block footer %}
         <hr>
+
         {%- if config.copyright %}
         <p>{{ config.copyright }}</p>
+        {%- endif %}
+
+        {%- if page and page.meta and page.meta.footer %}
+        {% for item in page.meta.footer %}
+        <p>{{ item }}</p>
+        {% endfor %}
         {%- endif %}
 
         <p>See <a href="{{ base_url}}topics/credits">Credits</a> for information on licensed content.</p>

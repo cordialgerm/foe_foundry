@@ -18,11 +18,17 @@
         {%- endif %}
         {%- endmacro %}
 
-        <div id="toc-collapse" class="navbar-collapse collapse card toc burnt-parchment y">
+        <div id="toc-collapse" class="navbar-collapse collapse card toc burnt-parchment y p-2">
             <ul class="nav flex-column">
                 {%- for item in page.toc %}
                 {{ toc_item(item) }}
                 {%- endfor %}
+
+                {% if page.meta and page.meta.related_monsters | length %}
+                <li class="nav-item" data-bs-level="1">
+                    <a href="#referenced-monsters" class="nav-link">Referenced Monsters</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
 
