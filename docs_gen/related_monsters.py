@@ -29,7 +29,7 @@ def set_related_monsters_on_page(page: Page, markdown: str):
 
     for monster_ref in rendered_markdown.references:
         resolved_ref = monster_ref.resolve()
-        name = resolved_ref.suggested_cr.key  # type: ignore  - known to be non null
+        name = resolved_ref.monster.key  # type: ignore  - known to be non null
         link = monster_link(resolved_ref, base_url)
         if link is None:
             continue

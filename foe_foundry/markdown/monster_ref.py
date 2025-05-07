@@ -36,8 +36,8 @@ class MonsterRef:
             return self
 
         variant = self.template.variants[0]
-        suggested_cr = variant.suggested_crs[0]
-        return replace(self, variant=variant, suggested_cr=suggested_cr)
+        monster = variant.monsters[0]
+        return replace(self, variant=variant, monster=monster)
 
 
 class MonsterRefResolver:

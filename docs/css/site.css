@@ -408,6 +408,10 @@ a.burnt-parchment {
     background-color: none;
 }
 
+#referenced-monsters {
+    color: var(--muted-color);
+}
+
 .stat-block {
     position: relative;
 
