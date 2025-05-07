@@ -39,6 +39,14 @@ class MonsterRef:
         monster = variant.monsters[0]
         return replace(self, variant=variant, monster=monster)
 
+    def resolve(self) -> MonsterRef:
+        if self.variant is not None:
+            return self
+
+        variant = self.template.variants[0]
+        suggested_cr = variant.suggested_crs[0]
+        return replace(self, variant=variant, suggested_cr=suggested_cr)
+
 
 class MonsterRefResolver:
     """Resolves a monster name to a template, variant, and suggested CR."""

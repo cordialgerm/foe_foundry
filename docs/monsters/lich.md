@@ -20,10 +20,12 @@ Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken t
 
 ## Lich Lore
 
+- Unlike the still-mortal **Necromancer Mage**, a **Lich** has traded their connection to mortality for eternity
 - Every lich crafts their soul anchor through a unique, perilous ritual
 - Many aspiring liches seek bargains with dark powers to discover the secret to lichdom
 - A lich cannot be truly destroyed while its soul anchor persists
 - Each soul anchor is intimately tied to the lich's former life and guarded by dire wards
+- Liches are powerful masters of undeath and command vast armies of **Skeletons**, **Zombies**, **Ghouls**, **Specters**, **Wights**, **Wraiths**, and even the occasional apprentice **Necromancer Mage**
 
 ![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.png){.monster-image .masked}
 

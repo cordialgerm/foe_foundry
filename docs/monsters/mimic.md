@@ -22,6 +22,7 @@ Mimics are a classic ambush predator in Dungeons & Dragons, 5E, Pathfinder, and 
 - Dousing a mimic with water breaks down its sticky excretions, often forcing it to reveal its true form
 - Mimics can understand languages, plan ambushes, and even coordinate rudimentarily with a form of Telepathy.
 - As mimics age, they acquire additional powers that make them more formidable
+- Some research, considered heretical, claims that **Mimics** are a result of misguided experiments by a long-dead **Transmuter Primagus** to awaken sentience in primordial oozes like the **Gelatinous Cube**
 
 ## Mimic Tactics
 

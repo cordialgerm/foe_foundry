@@ -22,6 +22,8 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 - They can follow orders and improvise within narrow bounds, but lack true creativity or self-preservation instincts.
 - When left without commands, a Skeleton might unconsciously reenact fragments of its former life, such as patrolling, training, or maintaining ancient equipment.
 - Unlike **Zombies**, Skeletons are often eerily quiet in motion — the soft clatter of bone against stone the only warning of their approach.
+- Some skeletons arise naturally when the [Styx](../families/undead.md#the-river-styx) overlaps with the mortal realm
+- Most are bound servants to a **Necromancer Mage** or other [Greater Undead](../families/undead.md#greater-undead) such as a **Wight** or **Wraith**
 
 ![An animated Skeleton guards an ancient tomb, bones clattering silently](../img/skeleton_warband.webp){.monster-image}
 
