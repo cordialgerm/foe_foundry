@@ -3,6 +3,7 @@ title: Spirit Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foun
 short_title: Spirits
 description: Bind sorrowful spirits with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/undead_spirits.jpg
+json_ld: true
 ---
 
 # Spirits

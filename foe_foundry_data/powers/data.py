@@ -126,6 +126,9 @@ class PowerModel:
 
         existing_attacks = {a.display_name for a in stats.additional_attacks}
 
+        # remove existing spells from the statblock so it doesn't seem like the power added previously existing spells
+        stats = stats.copy(spells=[])
+
         # if the power has a secondary damage type, apply that
         if power.damage_types:
             secondary_damage_type = power.damage_types[0]

@@ -25,6 +25,7 @@ def generate_topics_index():
     lines = [
         "---",
         "title: Topics",
+        "description: Learn more about Foe Foundry including design philosophy, custom creature power, and custom conditions used to support over 600+ unique monster powers and dozens of custom monster templates.",
         "hide:",
         "   - toc",
         "---",

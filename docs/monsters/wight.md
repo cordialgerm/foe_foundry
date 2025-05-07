@@ -3,6 +3,7 @@ title: Wight Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Found
 short_title: Wights
 description: Entreat with powerful wights using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/wight.png
+json_ld: true
 ---
 
 # Wights

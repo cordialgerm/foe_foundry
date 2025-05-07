@@ -6,12 +6,13 @@ tags:
   - announcement
 author: Cordialgerm
 date: 2025-04-29
-image: img/favicon.png
+image: img/favicon.webp
+json_ld: true
 ---
 
 # Announcing Foe Foundry
 
-After nearly two years of off-and-on development, I’m thrilled to finally unveil <a href="../index.md" class="branding">Foe Foundry</a>, a free toolkit for Game Masters who want to create monsters that are **powerful, flavorful, and easy to run**. If you’ve ever struggled with the limitations of the *Monster Manual* or D&D Beyond, this project was made for you.
+After nearly two years of off-and-on development, I’m thrilled to finally unveil <a href="../index.md" class="branding">Foe Foundry</a>, a free toolkit for Game Masters who want to create [monsters](../monsters/index.md) that are **powerful, flavorful, and easy to run**. If you’ve ever struggled with the limitations of the *Monster Manual* or D&D Beyond, this project was made for you.
 
 ## Why I Built Foe Foundry
 
@@ -23,9 +24,9 @@ Foe Foundry is my **love letter to DMs** who crave more from their monsters — 
 
 **Foe Foundry** is a 5E monster builder that gives you the tools to create dynamic, unique monsters that scale automatically to your party’s level. Instead of drowning in fiddly mechanics or weak reflavorings, you’ll be building deadly, flavorful creatures that come to life with just the right amount of crunch.
 
-Each monster is assembled from over **400+ handcrafted powers** and slotted into [**detailed monster templates**](../monsters/index.md) with variants for different CRs and combat roles. The generator assigns powers and everything from damage to DCs and HP scales instantly.
+Each monster is assembled from over [**600+ handcrafted powers**](../powers/all.md) and slotted into [**detailed monster templates**](../monsters/index.md) with variants for different CRs and combat roles. The generator assigns powers and everything from damage to DCs and HP scales instantly.
 
-Every template and power is handcrafted and balanced with care — **no AI slop or random junk**.
+Every template and power is handcrafted and balanced with care - **no AI slop or random junk**.
 
 ## What can Foe Foundry Do?
 

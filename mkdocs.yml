@@ -33,15 +33,10 @@ theme:
   name: mkdocs
   custom_dir: docs_theme/
   analytics:
-    gtag: G-7R80G1C1K9
+    gtag: !ENV [GTAG]
 
 extra_css:
-  - css/branding.css
-  - css/pamphlet.css
-  - css/parchment.css
-  - css/root.css
-  - css/statblock.css
-  - css/tooltips.css
+  - css/site.css
 
 extra_javascript:
   - scripts/extras.js

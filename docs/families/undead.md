@@ -2,14 +2,15 @@
 title: Undead Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Undead
 description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
-image: img/skeleton_warband.png
+image: img/skeleton_warband.webp
+json_ld: true
 ---
 
 # Undead
 
 *Twisted Mockeries of Life*
 
-![An army of undead Skeletons march forth](../img/skeleton_warband.png){.monster-image}
+![An army of undead Skeletons march forth](../img/skeleton_warband.webp){.monster-image}
 
 Undead creatures are the echoes and remnants of life, cursed to linger in defiance of the natural order. There are many types of Undead, including the reanimated dead (such as **Zombies**, **Skeletons**, and **Mummies**), as well as lingering spirits like **Ghosts** and **Wraiths**. Some were raised by fell mortal magic. Others clawed their way back to life battling the biting currents of the Styx, while some endure cursed existences.
 
@@ -20,6 +21,8 @@ Many serve as mindless thralls under a mortal or once-mortal master's control, s
 ## Using Undead in Your Campaign
 
 Each <span class="branding">[Foe Foundry](https://foefoundry.com)</span> monster has **Lore**, **Tactics**, **Encounters**, and **Adventures** so that you can drop them right into your campaign!
+
+If you're looking for other monsters, browse our catalog of [Foe Foundry Monsters](../monsters/index.md) to find the perfect monster for your game tonight.
 
 ### Encounters
 

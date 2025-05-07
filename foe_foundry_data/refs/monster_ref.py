@@ -31,6 +31,14 @@ class MonsterRef:
         """Creates a copy of the monster reference with updated values."""
         return replace(self, **args)
 
+    def resolve(self) -> MonsterRef:
+        if self.variant is not None:
+            return self
+
+        variant = self.template.variants[0]
+        monster = variant.monsters[0]
+        return replace(self, variant=variant, monster=monster)
+
 
 class MonsterRefResolver:
     """Resolves a monster name to a template, variant, and suggested CR."""
