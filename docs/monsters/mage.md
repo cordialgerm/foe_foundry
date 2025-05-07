@@ -25,7 +25,7 @@ Mages are wielders of forgotten arts and living vaults of hidden knowledge. Some
 - As necromancers advance in power and skill, they attempt to bind increasingly more powerful [Undead](../families/undead.md)
 - Some overly-ambitious necromancers are slain by their horrendous creations
 - Many Necromancers seek out corpses of powerful monsters for their dark experiments
-- Many necromancer's ultimate ambition is to ascend to a **Lich**
+- Many necromancers' ultimate ambition is to ascend to a **Lich**
 
 ### Necromancer Tactics
 
