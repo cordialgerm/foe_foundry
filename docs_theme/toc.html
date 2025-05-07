@@ -23,6 +23,12 @@
                 {%- for item in page.toc %}
                 {{ toc_item(item) }}
                 {%- endfor %}
+
+                {% if page.meta and page.meta.related_monsters | length %}
+                <li class="nav-item" data-bs-level="1">
+                    <a href="#referenced-monsters" class="nav-link">Referenced Monsters</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
 

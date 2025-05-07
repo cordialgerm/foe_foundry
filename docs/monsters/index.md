@@ -1,5 +1,5 @@
 ---
-title: Monsters
+title: Monsters | Foe Foundry
 description: Discover unique, handcrafted monsters for your next 5E or fantasy TTRPG session. From undead horrors to mythic monstrosities, Foe Foundry offers unforgettable foes ready to challenge your players.
 ---
 
@@ -9,7 +9,6 @@ description: Discover unique, handcrafted monsters for your next 5E or fantasy T
 
 Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](../families/undead.md) of Foe Foundry are more than cannon fodder — they’re cursed echoes of mortal lives, each with their own twisted flavor.
 
-
 - [Skeletons](skeleton.md) - fragments of a soul bound to bleached bones
 - [Zombies](zombie.md) - shambling relentless hordes
 - [Ghouls](ghoul.md) - ravenous cannibals possessed by undeath
@@ -18,7 +17,7 @@ Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](
 - [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
 - [Liches](lich.md) - immortal masters of undeath and arcana
 
-![A skeleton warband advances menacingly](../img/skeleton_warband.png){.monster-image}
+![A skeleton warband advances menacingly](../img/skeleton_warband.webp){.monster-image}
 
 ## Monstrosities
 

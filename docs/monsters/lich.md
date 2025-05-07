@@ -3,6 +3,7 @@ title: Lich Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundr
 short_title: Liches
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/lich.png
+json_ld: true
 ---
 
 # Liches

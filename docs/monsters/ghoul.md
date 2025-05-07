@@ -3,6 +3,7 @@ title: Ghoul Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Found
 short_title: Ghouls
 description: Unleash ravenous ghouls with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your fantasy RPG campaigns.
 image: img/ghoul-0.png
+json_ld: true
 ---
 
 # Ghoul
