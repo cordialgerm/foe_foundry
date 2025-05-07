@@ -22,6 +22,8 @@ Chimeras are a classic monster in D&D, 5E, and other fantasy TTRPGs — fearsome
 - Chimera embody the sins of pride, rage, and greed given monstrous form
 - Ancient myths speak of a miracle: if a chimera is slain by selfless, noble and just heroes, then the disaster it heralds may yet be averted.
 - Some cultures have rituals around Chimera, treating the creature not as a foe, but as a final test of worth.
+- Some scholars believe that **Griffons** and **Manticores** are distant relations, though the presence of a griffon is said to be a good omen
+- Some **Chimeras** will attract flocks of weaker **Manticores** and wreak unprecedented havoc on civilized lands
 
 ## Chimera Tactics
 

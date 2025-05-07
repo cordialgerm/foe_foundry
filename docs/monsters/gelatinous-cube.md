@@ -21,6 +21,7 @@ From classic D&D dungeons to modern 5E campaigns, Gelatinous Cubes remain a dead
 - Gelatinous Cubes glide toward their prey without hesitation, as if guided by some deeper mysterious instinct
 - Once engulfed, escape is rare. The cube immediately begins digesting its prey
 - The contents of a cube often include more than bones: half-dissolved scrolls, rusted crowns, or the final relics of an unlucky party.
+- **Gelatinous Cubes** are often classified as distant relations to **Ochre Jellies** and **Black Puddings** by adventurers due to their similar ooze-like consistency, but many scholars believe these specimens to only have superficial similarities
 
 ## Gelatinous Cube Tactics
 
