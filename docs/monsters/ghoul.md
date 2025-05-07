@@ -26,6 +26,7 @@ Ghouls are a classic threat for fantasy tabletop RPGs, from grim dungeon crawls 
 - Though they can feed on corpses, ghouls crave fresh, living flesh — and savor prey that struggles and screams.
 - Ghouls retain a flicker of mortal cunning, hunting in packs, ambushing stragglers, and overwhelming the weak.
 - A ghoul's touch infects the living with swift, rotting diseases that fester almost instantly
+- Feral ghouls often congregate in ravenous packs, while many ghouls are pressed into the service of more powerful [Greater Undead](../families/undead.md#greater-undead) such as **Wraiths** and **Liches**
 
 ## Ghoul Statblocks
 

@@ -12,9 +12,9 @@ json_ld: true
 
 Manticores are bizarre amalgamations with the body of a lion, dragon-like wings, a bristling tail of barbed spines, and the leering face of a voracious human. They are known for their cruel appetites and even crueler wit.
 
-Manticores swoop down on their prey from above, launching volleys of barbed tail spikes while jeering and taunting their victims. Manticores often propose lopsided "deals" full of veiled threats and barbed wit to their victims.
+Manticores swoop down on their prey from above, launching volleys of barbed tail spikes while jeering and taunting their victims. Manticores often propose lopsided "deals" full of veiled threats and barbed wit to their victims.  
 
-Manticores are classic flying predators in Dungeons & Dragons, 5E, Pathfinder, and other fantasy RPGs, feared for their cruel wit, deadly spiked tails, and relentless aerial assaults.
+Manticores are classic flying predators in D&D, 5E variants, and other fantasy RPGs because they offer a nice potential for open-ended social encounters that have the potential to escalate quickly into conflict. At low levels, their cruel wit, deadly spiked tails, and relentless aerial assaults are sure to offer a challenge.
 
 ## Manticore Lore
 
@@ -22,6 +22,8 @@ Manticores are classic flying predators in Dungeons & Dragons, 5E, Pathfinder, a
 - Though they relish the taste of humanoid flesh, manticores are vain creatures who love to hear themselves talk.
 - Manticores hurl iron-hard spikes from their tails like arrows, cackling as their victims fall.
 - Some form loose herds to hunt larger prey, but most are too selfish, arrogant, and ill-tempered to share the spotlight.
+- Unlike the **Chimera**, which is a divine omen of catacylsm, a Manticore is a simpler brute
+
 
 ## Manticore Tactics
 
