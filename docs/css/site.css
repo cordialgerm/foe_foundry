@@ -81,7 +81,7 @@ a.branding::after,
 }
 
 .navbar .dropdown-menu {
-    color: var (--fg-color);
+    color: var(--fg-color);
     background-color: var(--primary-color);
     border: none;
 }
