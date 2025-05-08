@@ -1,17 +1,21 @@
 site_name: Foe Foundry
 site_description: Foe Foundry helps GMs instantly summon unforgettable monsters for 5E and other fantasy TTRPGs. Skip the statblock grind—get handcrafted powers, flavorful foes, and encounter-ready creations built by a GM, for GMs.
+site_url: !ENV [SITE_URL]
+site_author: Evan Rash
 
 nav:
-  - Monsters: monsters/index.md
-  - Families: families/index.md
-  - Generator: generate.md
+  - Generate: generate.md
+  - Monsters:
+      - All Monsters: monsters/index.md
+      - Undead: families/undead.md
+      - Villains: families/villains.md
   - Powers: powers/all.md
-  - Blog: blog/index.md
-  - Topics: topics/index.md
+  - Learn:
+      - Blog: blog/index.md
+      - Topics: topics/index.md
+      - RSS: rss.xml
 
 use_directory_urls: true
-
-site_url: !ENV [SITE_URL]
 
 hooks:
   - docs_gen/my_hooks.py
@@ -28,6 +32,18 @@ plugins:
         tags:
           insert: bottom
           index_page: blog/tags.md
+  - rss:
+      image: image/icons/favicon.png
+      feed_description: The latest monsters, features, and blog posts from Foe Foundry - a monster generator that helps you summon unforgettable foes instantly. Built by a GM, for GMs.
+      length: 100
+      feeds_filenames:
+        json_created: feed.json
+        json_updated: feed_updated.json
+        rss_created: rss.xml
+        rss_updated: rss_updated.xml
+      match_path: ^blog/(?!index\.md$|tags\.md$).+
+      url_parameters:
+        utm_source: "rss"
 
 theme:
   name: mkdocs

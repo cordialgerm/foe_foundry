@@ -6,4 +6,6 @@ hide:
   - toc
 ---
 
+# Foe Foundry Blog
+
 {{ blog_content }}
