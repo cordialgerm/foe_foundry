@@ -7,7 +7,7 @@ def generate_all_powers():
     # Create the index content
     lines = [
         "---",
-        "title: All Powers",
+        "title: All Powers | Foe Foundry",
         "description: Browse 600+ handcrafted monster powers for tabletop RPGs. Find unique abilities and build the perfect monster for your encounters.",
         "image: img/icons/favicon.webp",
         "---",

@@ -35,6 +35,7 @@ class MonsterLinkPreprocessor(Preprocessor):
     MONSTER_LINK_RE = re.compile(r"\[\[(?P<name1>.+?)\]\]|\*\*(?P<name2>.+?)\*\*")
     MONSTER_BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
     MONSTER_STATBLOCK_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
+    NEWSLETTER_RE = re.compile(r"\[\[\@(?P<text>.+?)\]\]")
 
     def __init__(
         self,
@@ -53,6 +54,7 @@ class MonsterLinkPreprocessor(Preprocessor):
         for line in lines:
             new_line = self.MONSTER_STATBLOCK_RE.sub(self.replace_statblock, line)
             new_line = self.MONSTER_BUTTON_RE.sub(self.replace_button, new_line)
+            new_line = self.NEWSLETTER_RE.sub(self.replace_newsletter, new_line)
             new_line = self.MONSTER_LINK_RE.sub(self.replace_link, new_line)
             new_lines.append(new_line)
         return new_lines
@@ -97,3 +99,28 @@ class MonsterLinkPreprocessor(Preprocessor):
             return str(monster_statblock(ref))
         else:
             return match.group(0)
+
+    def replace_newsletter(self, match: re.Match):
+        if match.group("text"):
+            text = match.group("text")
+        else:
+            raise ValueError("No text found in match")
+
+        return f"""<div class="email-subscribe burnt-parchment m-3">
+        <div class="m-3 p-3">
+            <h2>{text}</h2>
+            <p>Get the latest updates on new features, monsters, powers, and GM tips - all for free!</p>
+            <form action="https://buttondown.com/api/emails/embed-subscribe/cordialgerm" method="post" target="popupwindow"
+                onsubmit="window.open('https://buttondown.com/cordialgerm', 'popupwindow')" class="embeddable-buttondown-form">
+                <div class="form-group row">
+                <label for="bd-email" class="col-sm-3 col-form-label">Enter your email</label>
+                <div class="col-sm-6">
+                    <input type="email" name="email" id="bd-email" class="form-control" />
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                </div>
+                </div>
+            </form>
+        </div>
+        </div>"""

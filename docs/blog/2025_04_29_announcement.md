@@ -10,6 +10,10 @@ image: img/icons/favicon.webp
 json_ld: true
 ---
 
+[[@Subscribe to the Newsletter]]
+
+---
+
 # Announcing Foe Foundry
 
 After nearly two years of off-and-on development, I’m thrilled to finally unveil <a href="../index.md" class="branding">Foe Foundry</a>, a free toolkit for Game Masters who want to create [monsters](../monsters/index.md) that are **powerful, flavorful, and easy to run**. If you’ve ever struggled with the limitations of the *Monster Manual* or D&D Beyond, this project was made for you.
@@ -96,3 +100,7 @@ Thanks for reading, and thanks for playing.
 🧟 [Explore the Monster Library](../monsters/index.md)
 
 **– Cordialgerm**
+
+---
+
+[[@Subscribe to the Newsletter]]

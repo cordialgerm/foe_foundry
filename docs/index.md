@@ -20,6 +20,10 @@ image: img/icons/favicon.webp
 
 ---
 
+[[@Subscribe to the Newsletter]]
+
+---
+
 ## Try it out!
 
 Here's a [[Lich]]. Roll the die to generate a new one!  
@@ -59,3 +63,9 @@ With a growing [library of 600+ of handcrafted monster powers](./powers/all.md) 
 - **Human Designed, Procedurally Generated**. All Foe Foundry monsters are created from unique [handcrafted powers](./powers/all.md) that are intelligently combined to create the perfect monster. No AI art. No AI slop. Just monsters your players will love to hate!
 - **Monsters should be threatening AND fun**. Foe Foundry monsters are guaranteed to pack a punch and still have narrative and mechanically interesting abilities
 - **Built by a GM for GMs** to make your life easier and to be fun to run. No more bland "Bite, Claw, Claw" monsters.
+
+---
+
+[[@Subscribe to the Newsletter]]
+
+---
