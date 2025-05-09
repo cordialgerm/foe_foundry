@@ -150,6 +150,19 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="families/rivals/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/rivals.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+
 .navbar a[href$="blog/" i]::before {
     content: " ";
     display: inline-block;
@@ -428,14 +441,21 @@ a.patreon::after {
     font-family: var(--header-font);
 }
 
+.pamphlet-main table>:not(caption)>*>* {
+    padding: 0.5rem;
+}
+
 .pamphlet-main .table td,
-.pamphlet-main .table th {
+.pamphlet-main .table th,
+.pamphlet-main table td,
+.pamphlet-main table th {
     color: inherit;
     border: none;
     background: inherit;
 }
 
-.pamphlet-main .table tr:nth-child(even) {
+.pamphlet-main .table tr:nth-child(even),
+.pamphlet-main table tr:nth-child(even) {
     background-color: rgba(245, 245, 245, 0.10);
 }
 
