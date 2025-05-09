@@ -338,6 +338,8 @@ hr {
     -webkit-mask-position: center;
 }
 
+
+
 .monster-image,
 .blog-image {
     max-height: 400px;
@@ -345,6 +347,14 @@ hr {
     max-width: 100%;
     height: auto;
 
+}
+
+.monster-image-small,
+.blog-image-small {
+    max-height: 200px;
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
 }
 
 .blog-image-large {
@@ -758,6 +768,25 @@ a.burnt-parchment {
     pointer-events: none;
     animation: shimmer 10s infinite ease-in-out;
     animation-delay: 2s;
+}
+
+.email-subscribe {
+    font-size: var(--primary-font-size);
+    font: var(--primary-font);
+    color: var(--muted-color);
+}
+
+.email-subscribe h2,
+.pamphlet-main .burnt-parchment h2 {
+    color: var(--muted-color) !important;
+}
+
+.email-subscribe .btn.btn-primary {
+    background-color: var(--primary-color);
+    background-image: none;
+    border: var(--muted-color);
+    color: var(--fg-color);
+    font: var(--primary-font);
 }
 
 .spell {

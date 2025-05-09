@@ -25,9 +25,12 @@ def generate_families_index():
     # Create the index content
     lines = [
         "---",
-        "title: Monster Families",
+        "title: Monster Families | Foe Foundry",
+        "description: Explore 5E monster families and their unique abilities. Discover how to use them in your game and find the perfect monster for your next encounter.",
         "hide:",
         "   - toc",
+        "---",
+        "[[@Subscribe to the Newsletter]]\n",
         "---",
         "# All Monster Families\n",
         "Browse all monster families below:\n",

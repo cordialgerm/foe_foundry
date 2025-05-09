@@ -6,6 +6,10 @@ hide:
   - toc
 ---
 
+[[@Subscribe to the Newsletter]]
+
+---
+
 # Tags
 
 {{ tag_content }}

@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     container.innerHTML = `
         <div class="template-callout burnt-parchment p-5">
           <h2>Want to Summon a ${monsterName}?</h2>
-          <p>The Monster Generator isn't live yet—but it's coming soon. When it launches, you'll be able to customize your own version of the <strong>${template}</strong>, complete with flavorful powers, thematic variants, and level scaling.</p>
-          <p>Until then, check out the core <a style="font-size: 1.5rem;" href="/monsters/${template}#${variant}"><b>${monsterName}</b> statblock</a> to see what you're working with.</p>
+          <p>The Monster Generator isn't live yet - but it's coming soon. When it launches, you'll be able to customize your own version of the <strong>${template}</strong>, complete with flavorful powers, thematic variants, and level scaling.</p>
+          <p>Until then, check out the core <a style="font-size: 1.25rem;" href="/monsters/${template}#${variant}"><b>${monsterName}</b> statblock</a> to see what you're working with.</p>
         </div>
       `;
   }
