@@ -1,18 +1,18 @@
 ---
-title: How to Build a Rival Adventuring Party in D&D 5E (With Examples)
-short_title: How to Build a Rival Adventuring Party
+title: The Ultimate Guide to Rival Adventuring Parties in D&D 5E | Foe Foundry
+short_title: The Ultimate Guide to Rival Adventuring Parties
 description: Add memorable rival adventuring parties to your 5E campaign. Use Foe Foundry’s guide for rival party statblocks, hooks, encounters, and dynamic storytelling.
 image: img/rival.webp
 json_ld: true
 ---
 
-# How to Build a Rival Adventuring Party
+# The Ultimate Guide to Rival Adventuring Parties
 
 Looking to spice up your game? Introducing a group of **Rivals** is a fun and player-agency-positive way to add unique and interesting characters and story possibilities.  
 
 What you'll find inside:
 
-- Pre-made [Rival Parties](#rival-adventuring-party-statblocks-for-dd-5e) with easy-to-use [Rival Introductions](#d6-rival-introductions)
+- Pre-made [Rival Parties](#rival-adventuring-party-statblocks-for-dd-5e) with easy-to-use [Rival Introductions](#how-to-introduce-rivals-to-your-campaign)
 - [Rival Adventure Hooks](#adventure-hooks-for-rival-adventuring-parties-in-dd-5e) ranging from wagers to team-ups to integrate rivals directly into your campaign
 - Ways to [Link Rivals](#linking-rival-npc-parties-with-your-campaign-villains) to your campaign's [Villains](villains.md)
 - [Rival Party Statblocks](#rival-adventuring-party-statblocks-for-dd-5e) that you can fully customize with the [Foe Foundry Generator](../generate.md)
