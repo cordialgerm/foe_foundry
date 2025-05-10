@@ -2,7 +2,7 @@ from pathlib import Path
 
 import mkdocs_gen_files
 
-from foe_foundry.creatures import AllTemplates, CreatureTemplate
+from foe_foundry.creatures import AllTemplates, MonsterTemplate
 
 
 def generate_monsters_with_no_lore():
@@ -14,10 +14,10 @@ def generate_monsters_with_no_lore():
         generate_monster_file(template)
 
 
-def generate_monster_file(creature: CreatureTemplate):
-    img_dir = Path.cwd() / "docs" / "img"
+def generate_monster_file(creature: MonsterTemplate):
+    docs_dir = Path(__file__).parent.parent / "docs"
     img_url = (
-        str(creature.primary_image_url.relative_to(img_dir))
+        str(creature.primary_image_url.relative_to(docs_dir))
         if creature.primary_image_url
         else "img/icons/favicon.webp"
     )
@@ -36,7 +36,7 @@ def generate_monster_file(creature: CreatureTemplate):
     ]
 
     for variant in creature.variants:
-        for monster in variant.suggested_crs:
+        for monster in variant.monsters:
             lines.append(f"### {monster.name}\n")
             lines.append(f"[[!{monster.name}]]\n")
             lines.append(f"[[${monster.name}]]\n")
@@ -44,5 +44,4 @@ def generate_monster_file(creature: CreatureTemplate):
 
     # Write it into the virtual MkDocs build
     with mkdocs_gen_files.open(f"monsters/{creature.key}.md", "w") as f:
-        print(f"Writing {f}")
         f.write("\n".join(lines))
