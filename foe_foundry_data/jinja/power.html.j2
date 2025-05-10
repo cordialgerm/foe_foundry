@@ -1,0 +1,9 @@
+<div class="power" data-power="{{power.key}}">
+
+    <h2>{{ power.name }}</h2>
+
+    {% for feature in power.features %}
+    <b><i>{{feature.name}}</i></b>: {{feature.description_md | fix_punctuation | markdown_no_wrapping_p}}
+    {% endfor %}
+
+</div>

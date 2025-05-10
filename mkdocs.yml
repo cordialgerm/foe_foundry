@@ -64,4 +64,4 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: true
-  - foe_foundry.markdown
+  - foe_foundry_data.markdown

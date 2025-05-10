@@ -7,9 +7,10 @@ from bs4 import BeautifulSoup
 from pydantic.dataclasses import dataclass
 
 from foe_foundry.creatures import MonsterTemplate
-from foe_foundry.jinja import render_statblock_fragment
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
+
+from ..jinja import render_statblock_fragment
 
 
 def _load_monster_html(template_key: str, base_url: str) -> str | None:
