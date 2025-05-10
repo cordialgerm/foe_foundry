@@ -7,7 +7,7 @@ description: Discover unique, handcrafted monsters for your next 5E or fantasy T
 
 ## Undead
 
-Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](../families/undead.md) of Foe Foundry are more than cannon fodder — they’re cursed echoes of mortal lives, each with their own twisted flavor.
+Bleached bones. Rotting flesh. Soul fragments clawing their way back to life from the River Styx. The [Undead](../families/undead.md) of Foe Foundry aren't just cannon fodder. They're cursed echoes of mortal lives, each with their own twisted flavor.
 
 - [Skeletons](skeleton.md) - fragments of a soul bound to bleached bones
 - [Zombies](zombie.md) - shambling relentless hordes
@@ -21,7 +21,7 @@ Bleached bones. Rotting flesh. Soul fragments from the River Styx. The [Undead](
 
 ## Monstrosities
 
-Monstrosities defy nature. These aren’t animals gone wrong. They’re ancient experiments, magical amalgams, and living symbols of disaster.
+Monstrosities defy nature: ancient experiments, magical amalgams, and living symbols of disaster.
 
 - [Mimics](mimic.md) - paranoia-inducing shapeshifting ambusher
 - [Manticores](manticore.md) - flying hunters with spiked tails and sharper tongues
@@ -41,6 +41,6 @@ Not all threats crawl from crypts. Some wear robes and carry grimoires. These mo
 
 ## Oozes
 
-Slimes, jellies, and cubes. Oozes are silent, shapeless, and strangely efficient.
+Slimes, jellies, and cubes. Silent, shapeless, and strangely efficient.
 
 - [Gelatinous Cubes](gelatinous-cube.md) - acidic, nigh-invisible dungeon cleaner

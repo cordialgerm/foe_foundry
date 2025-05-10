@@ -9,6 +9,7 @@ nav:
       - All Monsters: monsters/index.md
       - Undead: families/undead.md
       - Villains: families/villains.md
+      - Rivals: families/rivals.md
   - Powers: powers/all.md
   - Learn:
       - Blog: blog/index.md

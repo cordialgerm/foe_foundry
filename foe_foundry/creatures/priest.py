@@ -37,6 +37,7 @@ PriestVariant = CreatureVariant(
     suggested_crs=[
         SuggestedCr(name="Acolyte", cr=1 / 4, srd_creatures=["Acolyte"]),
         SuggestedCr(name="Priest", cr=2, srd_creatures=["Priest"]),
+        SuggestedCr(name="Priest Anointed One", cr=5),
         SuggestedCr(
             name="Archpriest",
             cr=12,

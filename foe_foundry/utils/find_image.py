@@ -19,7 +19,7 @@ def find_image(name: str) -> list[Path]:
 
 
 def find_lore(name: str) -> list[Path]:
-    lore_dir = Path(__file__).parent.parent.parent / "content" / "monsters"
+    lore_dir = Path(__file__).parent.parent.parent / "docs" / "monsters"
 
     paths = []
 
