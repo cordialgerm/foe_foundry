@@ -1,6 +1,6 @@
 import dotenv
 
-from foe_foundry.markdown import markdown
+from foe_foundry_data.markdown import markdown
 
 
 def test_markdown():
@@ -29,3 +29,16 @@ def test_aliases():
     text = "This is a **Cult Fanatic** and these are **Cult Fanatics**"
     result = markdown(text)
     assert len(result.references) == 2
+
+
+def test_reference_power():
+    dotenv.load_dotenv()
+    text = "This is [[Pack Tactics]] and this is [[!Pack Tactics]]"
+    result = markdown(text)
+    assert len(result.references) == 2
+
+def test_embed_power():
+    dotenv.load_dotenv()
+    text = "This is [[!Pack Tactics]]"
+    result = markdown(text)
+    assert len(result.references) == 1

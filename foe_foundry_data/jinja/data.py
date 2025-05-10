@@ -7,12 +7,12 @@ from typing import List, Set
 import numpy as np
 from num2words import num2words
 
+from foe_foundry.damage import Attack, Condition, DamageType
+from foe_foundry.features import ActionType, Feature
+from foe_foundry.skills import Skills, Stats
+from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import comma_separated
 
-from ..damage import Attack, Condition, DamageType
-from ..features import ActionType, Feature
-from ..skills import Skills, Stats
-from ..statblocks import Statblock
 from .utilities import fix_punctuation
 
 

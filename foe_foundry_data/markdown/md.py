@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 
 from markdown import Markdown
 
-from .ext import MonsterLinkExtension
-from .monster_ref import MonsterRef
+from ..refs import MonsterRef, Power
+from .ext import FoeFoundryMdExtension
 
 
 @dataclass(kw_only=True)
@@ -11,7 +11,7 @@ class RenderedMarkdown:
     html: str
     toc: str | None
     header: str
-    references: list[MonsterRef] = field(default_factory=list)
+    references: list[MonsterRef | Power] = field(default_factory=list)
 
 
 def markdown(text: str, strip_header: bool = True) -> RenderedMarkdown:
@@ -28,7 +28,7 @@ def markdown(text: str, strip_header: bool = True) -> RenderedMarkdown:
     else:
         header = ""
 
-    ext = MonsterLinkExtension()
+    ext = FoeFoundryMdExtension()
     md = Markdown(
         extensions=["toc", "tables", "attr_list", "md_in_html", "admonition", ext],
         extension_configs={
