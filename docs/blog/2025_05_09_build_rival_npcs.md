@@ -25,7 +25,7 @@ I built [**The Ultimate Guide to Rival Adventuring Parties**](../families/rivals
 
 - Pre-made [Rival Parties](../families/rivals.md#rival-adventuring-party-statblocks-for-dd-5e) with easy-to-use [Rival Introductions](../families/rivals.md#how-to-introduce-rivals-to-your-campaign)
 - [Rival Adventure Hooks](../families/rivals.md#adventure-hooks-for-rival-adventuring-parties-in-dd-5e) ranging from wagers to team-ups to integrate rivals directly into your campaign
-- Ways to [Link Rivals](../families/rivals.md#linking-rival-npc-parties-with-your-campaign-villains) to your campaign's [Villains](villains.md)
+- Ways to [Link Rivals](../families/rivals.md#linking-rival-npc-parties-with-your-campaign-villains) to your campaign's [Villains](../families/villains.md)
 - [Rival Party Statblocks](../families/rivals.md#rival-adventuring-party-statblocks-for-dd-5e) that you can fully customize with the [Foe Foundry Generator](../generate.md)
 
 Whether you're running a sandbox, prepping for a one-shot, or building a campaign arc around a single enemy, these tables make it easy and fun to summon your own rival adventurers.

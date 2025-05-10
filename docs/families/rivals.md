@@ -19,6 +19,8 @@ What you'll find inside:
 
 Whether you're building your campaign from scratch, scrambling to prep for a game tonight, or running a pre-written module, <a href="https://foefoundry.com" class="branding">Foe Foundry</a> gives you everything you need to create a unique rival adventuring party to interact with your PCs.  
 
+Check out the [Rivals Blog Post](../blog/2025_05_09_build_rival_npcs.md) to see these tables in action!
+
 ![D&D Rival Adventuring Party in a Tavern Standoff](../img/rival.webp){.monster-image}
 
 ## Build a Rival Party Your Players Will Love To Hate

@@ -22,6 +22,10 @@ def _link(ref: MonsterRef, url: str) -> Markup | None:
 
 def monster_link(ref: MonsterRef, base_url: str) -> Markup | None:
     """Generates a link to the monster template or variant."""
+
+    if base_url.endswith("/"):
+        base_url = base_url[:-1]
+
     if ref is None:
         return None
     elif ref.suggested_cr is not None:
