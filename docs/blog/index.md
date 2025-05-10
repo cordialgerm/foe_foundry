@@ -6,4 +6,8 @@ hide:
   - toc
 ---
 
+[[@Subscribe to the Newsletter]]
+
+# Foe Foundry Blog
+
 {{ blog_content }}

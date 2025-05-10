@@ -37,6 +37,8 @@ Looking for the perfect legendary monster statblock to serve your villain? Brows
 - Use the [Spicy Twists](#spicy-twists) table to introduce unique twists on the threats and villains presented here
 - Use the [Villain Names](#d20-villainous-names), [Villain Titles](#d20-villain-titles), and [Villain Sidekicks](#villain-sidekicks) tables to introduce the threat, foreshadow the villain, and make them memorable
 
+Check out the [Villain's Blog Post](../blog/2025_05_03_villains.md) to see these tables in action!
+
 ## Villains, Foes, and Threats
 
 Use this table to generate D&D villains, factions, and major threats across all tiers of play. From petty outlaws and undead cults to apocalyptic horrors and ancient dragons.

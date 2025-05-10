@@ -37,6 +37,7 @@ PriestVariant = MonsterVariant(
     monsters=[
         Monster(name="Acolyte", cr=1 / 4, srd_creatures=["Acolyte"]),
         Monster(name="Priest", cr=2, srd_creatures=["Priest"]),
+        Monster(name="Priest Anointed One", cr=5),
         Monster(
             name="Archpriest",
             cr=12,

@@ -1,7 +1,7 @@
 ---
 title: Credits
 description: Foe Foundry is built on a foundation of incredible RPG creators, artists, and open-source tools. Explore our full list of sources, licenses, and acknowledgments.
-image: img/favicon.webp
+image: img/icons/favicon.webp
 ---
 
 # Credits
@@ -56,7 +56,7 @@ All art is licensed and used with permission.
 
 This work features art by:  
 
-- **Icons from Game-Icons.net**
+- **Icons from Game-Icons.net** used under Creative COmmons license CC BY 3.0
 - **[Watercolor Monster Pack](https://metalsnail.itch.io/watercolour-monster-pack)** by metalsnail
 - **[Chromatic Dragon Hatchlings Stock Art](https://ymia.itch.io/chromatic-dragon-hatchlings-stock-art)** by Ymia
 - **[Fantasy Creatures V1](https://erkmenartworks.itch.io/fantasy-creatures-v1)** by ErkmenArtworks

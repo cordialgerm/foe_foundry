@@ -10,9 +10,13 @@ image: img/blacksmith.png
 
 *The anvil is hot, the sparks are flying, and we're hammering the code into shape.*
 
-![Monster Generator is Under Development](./img/blacksmith.png){.monster-image .masked}
+![Monster Generator is Under Development](./img/blacksmith.png){.monster-image-small .masked}
 
 <div id="template-callout"></div>
+
+---
+
+[[@Get Notified When The Generator Launches!]]
 
 ## A Monster Generator for 5E and Fantasy TTRPGs
 

@@ -43,13 +43,13 @@
 
 .branding a::after,
 a.branding::after,
-.navbar-brand::after {
+.navbar-brand::before {
     content: " ";
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
-    background-image: url('/img/favicon.webp');
+    background-image: url('/img/icons/favicon.webp');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -72,6 +72,131 @@ a.branding::after,
 
     /* bootstrap specific overrides */
     --bs-navbar-padding-y: 0.1rem;
+    --bs-dropdown-link-color: var(--fg-color);
+}
+
+.navbar .dropdown-item {
+    color: var(--fg-color);
+    background-color: var(--primary-color);
+}
+
+.navbar .dropdown-menu {
+    color: var(--fg-color);
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.navbar-collapse .dropdown-menu {
+    padding: 0px;
+}
+
+.navbar a[href$="rss.xml" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/rss.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="generate/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/anvil.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="monsters/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/daemon-skull.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="undead/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/shambling-zombie.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="villains/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/evil-tower.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="rivals/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/rivals.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+
+.navbar a[href$="blog/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/scroll-quill.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="topics/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/bookmarklet.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
+.navbar a[href$="powers/all/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/skills.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
 }
 
 
@@ -113,7 +238,7 @@ body::before {
     inset: 0;
     background-color: var(--muted-color);
     /* Layer 1 */
-    background-image: url('/img/parchment-stained.webp');
+    background-image: url('/img/backgrounds/parchment-stained.webp');
     /* Layer 2 */
     background-repeat: repeat;
     background-size: cover;
@@ -215,16 +340,18 @@ hr {
 
 .masked {
 
-    mask-image: url('/img/watercolor-mask.webp');
+    mask-image: url('/img/backgrounds/watercolor-mask.webp');
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
     mask-position: center;
 
-    -webkit-mask-image: url('/img/watercolor-mask.webp');
+    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
     -webkit-mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
 }
+
+
 
 .monster-image,
 .blog-image {
@@ -233,6 +360,14 @@ hr {
     max-width: 100%;
     height: auto;
 
+}
+
+.monster-image-small,
+.blog-image-small {
+    max-height: 200px;
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
 }
 
 .blog-image-large {
@@ -280,7 +415,7 @@ hr {
 .nav-link.patreon::after,
 a.patreon::after {
     content: " ";
-    background-image: url('/img/patreon.png');
+    background-image: url('/img/icons/patreon.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -306,14 +441,21 @@ a.patreon::after {
     font-family: var(--header-font);
 }
 
+.pamphlet-main table>:not(caption)>*>* {
+    padding: 0.5rem;
+}
+
 .pamphlet-main .table td,
-.pamphlet-main .table th {
+.pamphlet-main .table th,
+.pamphlet-main table td,
+.pamphlet-main table th {
     color: inherit;
     border: none;
     background: inherit;
 }
 
-.pamphlet-main .table tr:nth-child(even) {
+.pamphlet-main .table tr:nth-child(even),
+.pamphlet-main table tr:nth-child(even) {
     background-color: rgba(245, 245, 245, 0.10);
 }
 
@@ -367,7 +509,7 @@ footer a {
 }
 
 .burnt-parchment {
-    background-image: url('/img/parchment-burnt.webp');
+    background-image: url('/img/backgrounds/parchment-burnt.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -385,7 +527,7 @@ footer a {
 }
 
 .burnt-parchment.y {
-    background-image: url('/img/parchment-burnt-y.webp')
+    background-image: url('/img/backgrounds/parchment-burnt-y.webp')
 }
 
 .burnt-parchment a,
@@ -650,6 +792,25 @@ a.burnt-parchment {
     pointer-events: none;
     animation: shimmer 10s infinite ease-in-out;
     animation-delay: 2s;
+}
+
+.email-subscribe {
+    font-size: var(--primary-font-size);
+    font: var(--primary-font);
+    color: var(--muted-color);
+}
+
+.email-subscribe h2,
+.pamphlet-main .burnt-parchment h2 {
+    color: var(--muted-color) !important;
+}
+
+.email-subscribe .btn.btn-primary {
+    background-color: var(--primary-color);
+    background-image: none;
+    border: 1px solid var(--muted-color);
+    color: var(--fg-color);
+    font: var(--primary-font);
 }
 
 .spell {

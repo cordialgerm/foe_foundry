@@ -148,6 +148,14 @@ class MonsterTemplate:
         return urls
 
     @cached_property
+    def primary_image_url(self) -> Path | None:
+        urls = self.image_urls.get(self.key)
+        if urls is None:
+            return None
+
+        return urls[0] if len(urls) else None
+
+    @cached_property
     def lore_md(self) -> str:
         markdown = ""
         for lore_path in find_lore(self.key):

@@ -10,6 +10,10 @@ footer:
 json_ld: true
 ---
 
+[[@Subscribe to the Newsletter]]
+
+---
+
 # Avoiding Stale 5E Combat with Tokens
 
 If you've ran TTRPGs for a while, you'll start to notice that combats can eventually become routine. The players kick down the door, focus fire the first enemy until they're dead, move on to the next, and rinse and repeat.  
@@ -79,3 +83,5 @@ You can:
 - read through the full breakdown of [How Tokens Work](../topics/tokens.md) 
 - <a href="https://foefoundry.com/generate" class="branding">Summon your own monsters with Foe Foundry</a>
 - [Browse a list of token powers](../powers/emanation.md)
+
+[[@Subscribe to the Newsletter]]
