@@ -29,10 +29,10 @@ def monster_link(ref: MonsterRef, base_url: str) -> Markup | None:
     if ref is None:
         return None
     elif ref.monster is not None:
-        href = f"{base_url}/monsters/{ref.template.key}#{ref.monster.key}"
+        href = f"{base_url}/monsters/{ref.template.key}/#{ref.monster.key}"
         return _link(ref, href)
     else:
-        href = f"https://foefoundry.com/monsters/{ref.template.key}"
+        href = f"https://foefoundry.com/monsters/{ref.template.key}/"
         return _link(ref, href)
 
 

@@ -1,2 +1,1 @@
-from .data import MonsterModel, CreatureTemplateModel  # noqa
-from .all import MonsterLookupCache  # noqa
+from .data import MonsterModel, MonsterTemplate  # noqa

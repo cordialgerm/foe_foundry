@@ -13,7 +13,13 @@ from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 
 
 def _load_monster_html(template_key: str, base_url: str) -> str | None:
-    html_path = Path.cwd() / "site" / "monsters" / template_key / "index.html"
+    html_path = (
+        Path(__file__).parent.parent.parent
+        / "site"
+        / "monsters"
+        / template_key
+        / "index.html"
+    )
     if not html_path.exists():
         return None
     bs4 = BeautifulSoup(html_path.read_text(), "html.parser")
@@ -23,36 +29,6 @@ def _load_monster_html(template_key: str, base_url: str) -> str | None:
     cleaned_html = remove_h2_sections(monster_html, h2_ids_to_remove)
     cleaned_html = fix_relative_paths(cleaned_html, base_url)
     return cleaned_html
-
-
-@dataclass(kw_only=True)
-class CreatureTemplateModel:
-    template_key: str
-    name: str
-    template_html: str | None
-    images: list[str]
-
-    @staticmethod
-    def from_template(
-        template: MonsterTemplate, base_url: str
-    ) -> CreatureTemplateModel:
-        if not base_url.endswith("/"):
-            base_url += "/"
-
-        all_images = []
-        for _, images in template.image_urls.items():
-            for image in images:
-                relative_image = image.relative_to(Path.cwd() / "docs").as_posix()
-                abs_image = urljoin(base_url, relative_image)
-                all_images.append(abs_image)
-
-        monster_html = _load_monster_html(template.key, base_url)
-        return CreatureTemplateModel(
-            template_key=template.key,
-            name=template.name,
-            template_html=monster_html,
-            images=all_images,
-        )
 
 
 @dataclass(kw_only=True)
@@ -70,13 +46,19 @@ class MonsterModel:
     def from_monster(
         stats: Statblock, template: MonsterTemplate, base_url: str
     ) -> MonsterModel:
+        if base_url.endswith("/"):
+            base_url = base_url[:-1]
+
         all_images = []
         for image in template.image_urls.get(stats.variant_key, []):
             relative_image = image.relative_to(Path.cwd() / "docs").as_posix()
             abs_image = urljoin(base_url, relative_image)
             all_images.append(abs_image)
 
-        template_html = _load_monster_html(template.key, base_url)
+        if len(template.lore_md):
+            template_html = _load_monster_html(template.key, base_url)
+        else:
+            template_html = None
 
         statblock_html = render_statblock_fragment(stats)
 
