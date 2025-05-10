@@ -36,3 +36,9 @@ def test_reference_power():
     text = "This is [[Pack Tactics]] and this is [[!Pack Tactics]]"
     result = markdown(text)
     assert len(result.references) == 2
+
+def test_embed_power():
+    dotenv.load_dotenv()
+    text = "This is [[!Pack Tactics]]"
+    result = markdown(text)
+    assert len(result.references) == 1

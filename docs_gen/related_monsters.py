@@ -4,9 +4,10 @@ import os
 import numpy as np
 from mkdocs.structure.pages import Page
 
-from foe_foundry.markdown import markdown as render_markdown
-from foe_foundry.markdown.monster_link import monster_link
 from foe_foundry.utils.rng import rng_from_key
+from foe_foundry_data.markdown import markdown as render_markdown
+from foe_foundry_data.markdown import monster_link
+from foe_foundry_data.refs import MonsterRef
 
 log = logging.getLogger("mkdocs")
 
@@ -22,12 +23,16 @@ def set_related_monsters_on_page(page: Page, markdown: str):
     if base_url.endswith("/"):
         base_url = base_url[:-1]
 
-    if len(rendered_markdown.references) == 0:
+    monster_refs = [
+        r for r in rendered_markdown.references if isinstance(r, MonsterRef)
+    ]
+
+    if len(monster_refs) == 0:
         return
 
     links_dict: dict[str, str] = {}
 
-    for monster_ref in rendered_markdown.references:
+    for monster_ref in monster_refs:
         resolved_ref = monster_ref.resolve()
         name = resolved_ref.monster.key  # type: ignore  - known to be non null
         link = monster_link(resolved_ref, base_url)

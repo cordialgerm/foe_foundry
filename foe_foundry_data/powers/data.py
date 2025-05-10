@@ -85,12 +85,19 @@ def _get_best_statblock(
 @dataclass(kw_only=True)
 class FeatureModel:
     name: str
+    title: str
     action: str
     recharge: int | None = None
     uses: int | None = None
     replaces_multiattack: int = 0
     modifies_attack: bool = False
     description_md: str
+    is_spellcasting: bool = False
+    is_attack: bool = False
+
+    @property
+    def description(self) -> str:
+        return self.description_md
 
 
 @dataclass(kw_only=True)
@@ -113,6 +120,12 @@ class PowerModel:
     def feature_descriptions(self) -> str:
         return "\n\n".join(
             feature.name + ": " + feature.description_md for feature in self.features
+        )
+
+    @property
+    def columns_suggested(self) -> bool:
+        return len(self.feature_descriptions) > 300 and all(
+            not f.is_attack and not f.is_spellcasting for f in self.features
         )
 
     @staticmethod
@@ -150,6 +163,7 @@ class PowerModel:
                 continue
             feature_model = FeatureModel(
                 name=feature.name,
+                title=feature.title,
                 action=feature.action.name,
                 recharge=feature.recharge,
                 uses=feature.uses,
@@ -167,9 +181,11 @@ class PowerModel:
             feature_models.append(
                 FeatureModel(
                     name=attack.name,
+                    title=attack.name,
                     action="Attack",
                     replaces_multiattack=attack.replaces_multiattack,
                     description_md=attack.description,
+                    is_attack=True,
                 )
             )
 
@@ -178,9 +194,11 @@ class PowerModel:
             feature_models.append(
                 FeatureModel(
                     name="Spellcasting",
+                    title="Spellcasting",
                     action="Action",
                     replaces_multiattack=2,
                     description_md=spellcasting_md,
+                    is_spellcasting=True,
                 )
             )
 
