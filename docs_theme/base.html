@@ -15,7 +15,7 @@
     {% if config.site_favicon %}
     <link rel="shortcut icon" href="{{ config.site_favicon|url }}">
     {% else %}
-    <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">{% endif %}
+    <link rel="shortcut icon" href="{{ 'img/icons/favicon.ico'|url }}">{% endif %}
 
     {% if page and page.title and not page.is_homepage %}
     <title>{{ page.title }}</title>
@@ -34,6 +34,8 @@
     {% endif %}
 
     <meta property="og:type" content="website" />
+
+    <link rel=alternate title="Blog Posts" type=application/rss+xml href="{{ 'rss.xml' | url }}">
 
     {% if page and page.meta.image %}
     <meta property="og:image" content="{{ config.site_url + page.meta.image}}" />
@@ -135,7 +137,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle{% if nav_item.active %} active"
                             aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">{{ nav_item.title }}</a>
+                            data-nav="{{ nav_item.title}}" aria-expanded="false">{{ nav_item.title }}</a>
                         <ul class="dropdown-menu">
                             {%- for nav_item in nav_item.children %}
                             {% include "nav-sub.html" %}

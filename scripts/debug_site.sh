@@ -12,8 +12,5 @@ export PYTHONPATH=.
 export PORT=${PORT:-8000}
 export SITE_URL=${SITE_URL:-http://127.0.0.1:8000/}
 
-# Build the static content
-poetry run mkdocs build --dirty
-
-# Prepare the search index
-poetry run python -m foe_foundry_site
+# Set the correct PYTHONPATH
+poetry run mkdocs serve --dirty

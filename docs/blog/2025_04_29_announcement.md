@@ -5,9 +5,12 @@ description: "Announcing Foe Foundry: A free, powerful 5E monster builder for Ga
 tags:
   - announcement
 author: Cordialgerm
-date: 2025-04-29
-image: img/favicon.webp
+image: img/icons/favicon.webp
 json_ld: true
+---
+
+[[@Subscribe to the Newsletter]]
+
 ---
 
 # Announcing Foe Foundry
@@ -96,3 +99,7 @@ Thanks for reading, and thanks for playing.
 🧟 [Explore the Monster Library](../monsters/index.md)
 
 **– Cordialgerm**
+
+---
+
+[[@Subscribe to the Newsletter]]

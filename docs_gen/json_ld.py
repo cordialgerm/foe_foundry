@@ -18,7 +18,7 @@ def set_json_ld_on_page(page: Page):
 
     def image_url(path: str = "") -> str:
         if path is None or path == "":
-            return image_url("img/favicon.webp")
+            return image_url("img/icons/favicon.webp")
 
         if path.startswith("/"):
             path = path[1:]
