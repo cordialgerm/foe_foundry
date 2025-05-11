@@ -216,7 +216,7 @@ class _DevourSoul(DeathlyPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.25, force_die=Die.d6)
+        dmg = stats.target_value(target=1.25, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         ghoul = creature_ref("Ghoul")
 
@@ -239,7 +239,7 @@ class _DrainStrength(DeathlyPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
-        dmg = stats.target_value(1.5, force_die=Die.d6)
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
         weakened = Weakened(save_end_of_turn=True)
 
         feature = Feature(

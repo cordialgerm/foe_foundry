@@ -57,7 +57,9 @@ class _Frostbite(IcyPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5 * min(stats.multiattack, 2), force_die=Die.d8)
+        dmg = stats.target_value(
+            target=1.5 * min(stats.multiattack, 2), force_die=Die.d8
+        )
         frozen = conditions.Frozen(dc=dc)
 
         feature = Feature(

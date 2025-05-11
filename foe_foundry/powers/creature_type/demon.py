@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 
-from foe_foundry.references import Token, creature_ref
+from foe_foundry.references import Token, creature_ref, spell_ref
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
@@ -147,15 +147,15 @@ class _WhispersOfTheAbyss(DemonPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(dpr_proportion=0.8)
-        confusion = enchantment.Confusion
+        dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d6)
+        confusion = spell_ref(enchantment.Confusion.name)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Whispers of the Abyss",
             action=ActionType.Action,
             recharge=5,
             description=f"{stats.selfref.capitalize()} whispers maddening secrets in a tongue that unravels sanity. Non-demon creatures within 30 feet that hear it must make a DC {dc} Wisdom save. \
-                On a failure, they take {dmg.description} Psychic damage and are affected as by the {confusion.description} spell (save ends at end of turn). On a success, a creature takes half damage instead.",
+                On a failure, they take {dmg.description} Psychic damage and are affected as by the {confusion} spell (save ends at end of turn). On a success, a creature takes half damage instead.",
         )
         return [feature]
 

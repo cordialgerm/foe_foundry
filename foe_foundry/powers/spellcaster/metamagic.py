@@ -70,7 +70,7 @@ class _PrimalMastery(_MetamagicPower):
         super().__init__(name="Primal Mastery", caster_types=CasterType.Primal)
 
     def generate_features(self, stats: BaseStatblock):
-        dmg = stats.target_value(0.5)
+        dmg = stats.target_value(target=0.5)
 
         feature = Feature(
             name="Primal Mastery",
@@ -137,7 +137,7 @@ class _PactBoon(_MetamagicPower):
         )
 
     def generate_features(self, stats: BaseStatblock):
-        self_damage = stats.target_value(0.25, force_die=Die.d6)
+        self_damage = stats.target_value(target=0.25, force_die=Die.d6)
         dmg = DieFormula.from_dice(d6=2 * self_damage.n_die)
 
         feature = Feature(
@@ -237,7 +237,7 @@ class _BloodMagic(_MetamagicPower):
         )
 
     def generate_features(self, stats: BaseStatblock):
-        harm = easy_multiple_of_five(stats.target_value(0.25).average, min_val=5)
+        harm = easy_multiple_of_five(stats.target_value(target=0.25).average, min_val=5)
         bonus_damage = DieFormula.target_value(harm * 2.5, force_die=Die.d6)
 
         feature = Feature(
@@ -283,7 +283,7 @@ class _Runeburst(_MetamagicPower):
         )
 
     def generate_features(self, stats: BaseStatblock):
-        dmg = stats.target_value(0.5, force_die=Die.d10)
+        dmg = stats.target_value(target=0.5, force_die=Die.d10)
 
         feature = Feature(
             name="Runeburst",

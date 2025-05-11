@@ -30,7 +30,7 @@ class _Pyromancer(_Elementalist):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(0.4, force_die=Die.d10)
+        damage = stats.target_value(target=0.4, force_die=Die.d10)
         burning = conditions.Burning(damage)
 
         feature = Feature(

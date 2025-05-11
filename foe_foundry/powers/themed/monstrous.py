@@ -170,7 +170,7 @@ class _LingeringWound(MonstrousPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = max(10, min(15, stats.difficulty_class_easy))
-        dmg = stats.target_value(0.75, force_die=Die.d6)
+        dmg = stats.target_value(target=0.75, force_die=Die.d6)
         bleeding = Bleeding(damage=dmg, dc=dc)
         feature = Feature(
             name="Lingering Wound",

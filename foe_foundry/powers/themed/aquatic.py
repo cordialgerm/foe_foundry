@@ -84,7 +84,7 @@ class _SlimyCloud(AquaticBase):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5)
+        dmg = stats.target_value(target=1.5)
         poisoned = Condition.Poisoned
         feature = Feature(
             name="Slimy Cloud",

@@ -86,7 +86,7 @@ class _DisfiguringCurse(CursedPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(1.2, force_die=Die.d6)
+        dmg = stats.target_value(target=1.2, force_die=Die.d6)
         exhaustion = Condition.Exhaustion
 
         feature = Feature(
@@ -168,7 +168,7 @@ class _RayOfEnfeeblement(CursedPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.5, force_die=Die.d6)
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
         poisoned = Condition.Poisoned

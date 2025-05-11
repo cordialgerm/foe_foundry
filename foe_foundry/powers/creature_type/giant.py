@@ -50,7 +50,7 @@ class _Boulder(GiantPower):
         else:
             target = 1.25
 
-        dmg = stats.target_value(target, suggested_die=stats.size.hit_die())
+        dmg = stats.target_value(target=target, suggested_die=stats.size.hit_die())
 
         if stats.cr >= 12:
             distance = 60
@@ -275,7 +275,7 @@ class _Earthshaker(GiantPower):
                 must make a DC {dc} Strength check or fall {prone.caption}. A creature that falls prone in this way loses concentration.",
         )
 
-        dmg = stats.target_value(1.5, force_die=Die.d8)
+        dmg = stats.target_value(target=1.5, force_die=Die.d8)
 
         feature2 = Feature(
             name="Earthshaker Stomp",

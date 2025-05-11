@@ -115,7 +115,7 @@ class _BloodContract(FeyPower):
         return as_cursed_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.5, suggested_die=Die.d8)
+        dmg = stats.target_value(target=1.5, suggested_die=Die.d8)
         healing = easy_multiple_of_five(dmg.average, min_val=5, max_val=45)
         dc = stats.difficulty_class
 
@@ -144,7 +144,7 @@ class _FaeCounterspell(FeyPower):
         return as_psychic_fey(stats)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(0.75, suggested_die=Die.d6)
+        dmg = stats.target_value(target=0.75, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Fae Counterspell",

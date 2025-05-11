@@ -68,7 +68,7 @@ class _PutridStench(ZombiePower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(1.0)
+        damage = stats.target_value(target=1.0)
         dc = stats.difficulty_class_easy
         poisoned = Condition.Poisoned
 

@@ -208,7 +208,7 @@ class _Toss(RecklessPower):
             size = stats.size.decrement()
 
         dmg = stats.target_value(
-            1.5 if stats.multiattack >= 2 else 0.75, force_die=Die.d6
+            target=1.5 if stats.multiattack >= 2 else 0.75, force_die=Die.d6
         )
         distance = easy_multiple_of_five(3 * stats.cr, min_val=10, max_val=30)
         dc = stats.difficulty_class

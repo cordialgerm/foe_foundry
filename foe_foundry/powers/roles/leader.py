@@ -185,7 +185,7 @@ class _RallyTheTroops(LeaderPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        hp = easy_multiple_of_five(stats.target_value(0.5).average, min_val=5)
+        hp = easy_multiple_of_five(stats.target_value(target=0.5).average, min_val=5)
 
         feature = Feature(
             name="Rally the Troops",
