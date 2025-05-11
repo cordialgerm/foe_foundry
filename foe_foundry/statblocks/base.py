@@ -487,9 +487,10 @@ class BaseStatblock:
         if dpr_proportion is not None:
             # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
             # legendary monsters also need to be careful because they can already do a lot of damage with legendary attacks
+            # very high-CR monsters also need a slight adjustment because if they unload all their attacks on one target it's a lot of damage
             if self.cr <= 2:
                 adjustment = 0.8
-            elif self.is_legendary:
+            elif (self.is_legendary or self.cr >= 19) and dpr_proportion > 0.5:
                 adjustment = 0.9
             else:
                 adjustment = 1.0
