@@ -76,7 +76,7 @@ class _TimeRift(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(0.7, force_die=Die.d6)
+        dmg = stats.target_value(target=0.7, force_die=Die.d6)
         feature = Feature(
             name="Time Rift",
             action=ActionType.Action,
@@ -284,7 +284,7 @@ class _RagingFlames(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Raging Flames", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(0.25, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
         feature = Feature(
             name="Raging Flames",
@@ -311,7 +311,7 @@ class _BitingFrost(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Biting Frost", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(0.25, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
         feature = Feature(
             name="Biting Frost",
@@ -338,7 +338,7 @@ class _LashingWinds(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Lashing Winds", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(0.25, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
         feature = Feature(
             name="Lashing Winds",
@@ -365,7 +365,8 @@ class _FetidMiasma(EmanationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Fetid Miasma", dc=stats.difficulty_class_token, charges=3)
-        dmg = stats.target_value(0.25, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
+        poisoned = Condition.Poisoned.caption
 
         feature = Feature(
             name="Fetid Miasma",
@@ -374,7 +375,7 @@ class _FetidMiasma(EmanationPower):
             recharge=5,
             creates_token=True,
             description=f"{stats.selfref.capitalize()} creates a Medium {token.caption} in an unoccupied space within 30 feet. \
-                Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} poison damage.",
+                Each creature that starts its turn within a 30 foot emanation of the {token.name} takes {dmg.description} poison damage and is {poisoned} until the start of its next turn.",
         )
 
         return [feature]

@@ -112,7 +112,7 @@ class _PoisonDart(PoisonPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.75 if stats.multiattack > 2 else 1.1)
+        dmg = stats.target_value(target=1.75 if stats.multiattack > 2 else 1.1)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
         poisoned = Condition.Poisoned

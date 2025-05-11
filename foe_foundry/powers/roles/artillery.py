@@ -61,7 +61,7 @@ class _FocusShot(ArtilleryPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         bleeding = conditions.Bleeding(
-            damage=stats.target_value(0.25, force_die=Die.d6)
+            damage=stats.target_value(target=0.25, force_die=Die.d6)
         )
         blinded = Condition.Blinded
         prone = Condition.Prone

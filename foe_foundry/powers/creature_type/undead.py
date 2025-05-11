@@ -90,7 +90,7 @@ class _StygianBurst(UndeadPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5, force_die=Die.d8)
+        dmg = stats.target_value(target=1.5, force_die=Die.d8)
         frozen = Frozen(dc=dc)
         hp = easy_multiple_of_five(stats.hp.average / 2)
         distance = easy_multiple_of_five(2.5 * stats.cr, min_val=10, max_val=40)

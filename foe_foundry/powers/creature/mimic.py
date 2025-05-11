@@ -75,7 +75,7 @@ class _InhabitArmor(MimicPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(0.25, force_die=Die.d4)
+        dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d4)
 
         grappled = conditions.Condition.Grappled.caption
         swallowed = conditions.Swallowed(

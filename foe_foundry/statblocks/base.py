@@ -478,7 +478,11 @@ class BaseStatblock:
         return self.add_spells([spell])
 
     def target_value(
-        self, target: float | None = None, dpr_proportion: float | None = None, **args
+        self,
+        *,
+        target: float | None = None,
+        dpr_proportion: float | None = None,
+        **args,
     ) -> DieFormula:
         if target is None and dpr_proportion is None:
             raise ValueError("Either target or dpr_proportion must be provided")

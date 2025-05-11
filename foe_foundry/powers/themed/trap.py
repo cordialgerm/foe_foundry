@@ -71,7 +71,7 @@ class _SpikePit(Trap):
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
         fall_damage = DieFormula.from_expression("2d6")
-        spike_damage = stats.target_value(0.5, force_die=Die.d6)
+        spike_damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         feature = Feature(
             name="Spike Traps",

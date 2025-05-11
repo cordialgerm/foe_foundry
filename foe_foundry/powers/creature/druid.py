@@ -60,7 +60,7 @@ class _PrimalEncouragement(DruidPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         healing = stats.target_value(
-            0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
+            target=0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
         )
         uses = stats.attributes.stat_mod(Stats.WIS)
 

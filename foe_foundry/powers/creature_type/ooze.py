@@ -51,7 +51,7 @@ class _EngulfInSlime(OozePower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         swallowed = conditions.Swallowed(
-            damage=stats.target_value(0.75, force_die=Die.d6),
+            damage=stats.target_value(target=0.75, force_die=Die.d6),
             damage_type=DamageType.Acid,
         )
         feature = Feature(
@@ -141,7 +141,7 @@ class _LeechingGrasp(OozePower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(0.5, suggested_die=Die.d6)
+        dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         bleeding = conditions.Bleeding(damage=dmg, damage_type=DamageType.Necrotic)
         grappled = Condition.Grappled
         feature = Feature(
@@ -162,7 +162,7 @@ class _SlimeSpray(OozePower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.5, suggested_die=Die.d6)
+        dmg = stats.target_value(target=1.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
 

@@ -123,7 +123,7 @@ def _EldritchKnights() -> List[Power]:
 
         def generate_features(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class_easy
-            dmg = stats.target_value(1.5)
+            dmg = stats.target_value(target=1.5)
 
             feature1 = Feature(
                 name="Misty Step",
@@ -191,7 +191,7 @@ class _Artificer(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dazed = conditions.Dazed()
-        dmg = stats.target_value(1.5, force_die=Die.d10)
+        dmg = stats.target_value(target=1.5, force_die=Die.d10)
         feature = Feature(
             name="Artificer's Cannon",
             action=ActionType.Action,
@@ -283,7 +283,7 @@ class _Bard(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(0.5, force_die=Die.d4)
+        dmg = stats.target_value(target=0.5, force_die=Die.d4)
         dazed = conditions.Dazed()
 
         feature1 = Feature(
@@ -343,7 +343,7 @@ class _WarPriest(PowerWithStandardScoring):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(0.75, force_die=Die.d6)
+        dmg = stats.target_value(target=0.75, force_die=Die.d6)
 
         feature1 = holy.MassCureWounds.generate_features(stats)
 
@@ -447,7 +447,7 @@ def _ArcaneArchers() -> List[Power]:
             dazed = conditions.Dazed()
             weakened = conditions.Weakened()
             dc = stats.difficulty_class
-            dmg = stats.target_value(0.6, force_die=Die.d10)
+            dmg = stats.target_value(target=0.6, force_die=Die.d10)
 
             feature1 = Feature(
                 name="Dazing Arrow",
@@ -858,7 +858,7 @@ class _Druid(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         healing = stats.target_value(
-            0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
+            target=0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
         )
         uses = stats.attributes.stat_mod(Stats.WIS)
 

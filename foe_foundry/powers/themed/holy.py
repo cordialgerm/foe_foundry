@@ -71,7 +71,7 @@ class _DivineSmite(HolyPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(0.7, force_die=Die.d10)
+        dmg = stats.target_value(target=0.7, force_die=Die.d10)
         burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
         feature = Feature(
             name="Divine Smite",
@@ -101,7 +101,7 @@ class _WordOfRadiance(HolyPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         target_damage = 1.5 if stats.multiattack >= 2 else 1.0
-        damage = stats.target_value(target_damage, suggested_die=Die.d6)
+        damage = stats.target_value(target=target_damage, suggested_die=Die.d6)
         dc = stats.difficulty_class
 
         feature = Feature(

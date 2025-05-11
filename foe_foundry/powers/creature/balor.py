@@ -49,7 +49,7 @@ class _FlameWhip(BalorPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(1.3 if stats.multiattack >= 2 else 0.8)
+        dmg = stats.target_value(target=1.3 if stats.multiattack >= 2 else 0.8)
         dc = stats.difficulty_class
         prone = Condition.Prone
 

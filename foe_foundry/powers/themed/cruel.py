@@ -87,7 +87,7 @@ class _BrutalCritical(CruelPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         crit_lower = 19 if stats.cr <= 7 else 18
-        dmg = stats.target_value(1.0, force_die=Die.d6)
+        dmg = stats.target_value(target=1.0, force_die=Die.d6)
         dmg_type = stats.secondary_damage_type or stats.primary_damage_type
         feature = Feature(
             name="Brutal Critical",
