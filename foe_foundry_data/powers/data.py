@@ -9,9 +9,10 @@ from pydantic.dataclasses import dataclass
 
 from foe_foundry import AttackType
 from foe_foundry.creatures import GenerationSettings, SelectionSettings, warrior
-from foe_foundry.markdown import MonsterRef, MonsterRefResolver
 from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
+
+from ..refs import MonsterRef, MonsterRefResolver
 
 MonsterReferences = MonsterRefResolver()
 
@@ -32,25 +33,26 @@ def _get_best_statblock(
             original_monster_name=requested_statblock,
             template=warrior.WarriorTemplate,
             variant=None,
-            suggested_cr=None,
+            monster=None,
         )
         update_name_to = requested_statblock
 
     selection_settings = SelectionSettings(
-        retries=1
+        power_multiplier=0, retries=1
     )  # don't spend a lot of time trying to generate a good monster here
 
-    if monster_ref.suggested_cr is not None and monster_ref.variant is not None:
+    if monster_ref.monster is not None and monster_ref.variant is not None:
         if requested_cr is None:
-            requested_cr = monster_ref.suggested_cr.cr
+            requested_cr = monster_ref.monster.cr
         else:
             requested_cr = 4.0
 
         setting = GenerationSettings(
-            creature_name=monster_ref.suggested_cr.name
+            creature_name=monster_ref.monster.name
             if update_name_to is None
             else update_name_to,
-            creature_template=monster_ref.template.name,
+            monster_template=monster_ref.template.name,
+            monster_key=monster_ref.monster.key,
             cr=requested_cr,
             is_legendary=False,
             variant=monster_ref.variant,
@@ -83,12 +85,19 @@ def _get_best_statblock(
 @dataclass(kw_only=True)
 class FeatureModel:
     name: str
+    title: str
     action: str
     recharge: int | None = None
     uses: int | None = None
     replaces_multiattack: int = 0
     modifies_attack: bool = False
     description_md: str
+    is_spellcasting: bool = False
+    is_attack: bool = False
+
+    @property
+    def description(self) -> str:
+        return self.description_md
 
 
 @dataclass(kw_only=True)
@@ -111,6 +120,12 @@ class PowerModel:
     def feature_descriptions(self) -> str:
         return "\n\n".join(
             feature.name + ": " + feature.description_md for feature in self.features
+        )
+
+    @property
+    def columns_suggested(self) -> bool:
+        return len(self.feature_descriptions) > 300 and all(
+            not f.is_attack and not f.is_spellcasting for f in self.features
         )
 
     @staticmethod
@@ -148,6 +163,7 @@ class PowerModel:
                 continue
             feature_model = FeatureModel(
                 name=feature.name,
+                title=feature.title,
                 action=feature.action.name,
                 recharge=feature.recharge,
                 uses=feature.uses,
@@ -165,9 +181,11 @@ class PowerModel:
             feature_models.append(
                 FeatureModel(
                     name=attack.name,
+                    title=attack.name,
                     action="Attack",
                     replaces_multiattack=attack.replaces_multiattack,
                     description_md=attack.description,
+                    is_attack=True,
                 )
             )
 
@@ -176,9 +194,11 @@ class PowerModel:
             feature_models.append(
                 FeatureModel(
                     name="Spellcasting",
+                    title="Spellcasting",
                     action="Action",
                     replaces_multiattack=2,
                     description_md=spellcasting_md,
+                    is_spellcasting=True,
                 )
             )
 

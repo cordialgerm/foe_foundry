@@ -14,30 +14,30 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-BugbearVariant = CreatureVariant(
+BugbearVariant = MonsterVariant(
     name="Bugbear",
     description="Bugbears are large, hairy humanoids with a reputation for stealth and ambush tactics. They are often found in dark forests or caves, where they can use their natural camouflage to surprise their prey.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Bugbear",
             cr=1,
             srd_creatures=["Bugbear"],
         ),
-        SuggestedCr(
+        Monster(
             name="Bugbear Brute",
             cr=3,
             other_creatures={"Bugbear Stalker": "mm25"},
         ),
-        SuggestedCr(
+        Monster(
             name="Bugbear Shadowstalker",
             cr=5,
         ),
@@ -48,7 +48,7 @@ BugbearVariant = CreatureVariant(
 class _BugbearPowers(CustomPowerSelection):
     def __init__(
         self,
-        variant: CreatureVariant,
+        variant: MonsterVariant,
         stats: BaseStatblock,
         cr: float,
         rng: np.random.Generator,
@@ -123,7 +123,8 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=settings.hp_multiplier,
@@ -182,7 +183,7 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-BugbearTemplate: CreatureTemplate = CreatureTemplate(
+BugbearTemplate: MonsterTemplate = MonsterTemplate(
     name="Bugbear",
     tag_line="Lurking abductors and ambushers",
     description="Bugbears are large, hairy humanoids with a reputation for stealth and ambush tactics. They are often found in dark forests or caves, where they can use their natural camouflage to surprise their prey.",

@@ -7,12 +7,12 @@ from typing import List, Set
 import numpy as np
 from num2words import num2words
 
+from foe_foundry.damage import Attack, Condition, DamageType
+from foe_foundry.features import ActionType, Feature
+from foe_foundry.skills import Skills, Stats
+from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import comma_separated
 
-from ..damage import Attack, Condition, DamageType
-from ..features import ActionType, Feature
-from ..skills import Skills, Stats
-from ..statblocks import Statblock
 from .utilities import fix_punctuation
 
 
@@ -21,6 +21,7 @@ class MonsterTemplateData:
     name: str
     template: str
     variant: str
+    monster: str
     selfref: str
     roleref: str
     size: str
@@ -259,6 +260,7 @@ class MonsterTemplateData:
             name=stats.name,
             template=stats.template_key.lower(),
             variant=stats.variant_key.lower(),
+            monster=stats.monster_key.lower(),
             selfref=stats.selfref,
             roleref=stats.roleref,
             size=stats.size.name,

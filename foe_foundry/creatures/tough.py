@@ -16,47 +16,47 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-ThugVariant = CreatureVariant(
+ThugVariant = MonsterVariant(
     name="Thug",
     description="Thugs might work in groups at the direction of a leader, or individual toughs might bully weaker folk into doing what they say.",
-    suggested_crs=[
-        SuggestedCr(name="Thug", cr=0.5, srd_creatures=["Thug", "Tough"]),
-        SuggestedCr(name="Veteran Thug", cr=2),
-        SuggestedCr(name="Elite Thug", cr=4),
+    monsters=[
+        Monster(name="Thug", cr=0.5, srd_creatures=["Thug", "Tough"]),
+        Monster(name="Veteran Thug", cr=2),
+        Monster(name="Elite Thug", cr=4),
     ],
 )
-BrawlerVariant = CreatureVariant(
+BrawlerVariant = MonsterVariant(
     name="Brawler",
     description="Brawlers rely on their physical strength and intimidation to get what they want. They might be bouncers, enforcers, or just rowdy tavern goers.",
-    suggested_crs=[
-        SuggestedCr(name="Brawler", cr=0.5),
-        SuggestedCr(name="Veteran Brawler", cr=2),
-        SuggestedCr(name="Elite Brawler", cr=4),
+    monsters=[
+        Monster(name="Brawler", cr=0.5),
+        Monster(name="Veteran Brawler", cr=2),
+        Monster(name="Elite Brawler", cr=4),
     ],
 )
-BossVariant = CreatureVariant(
+BossVariant = MonsterVariant(
     name="Boss",
     description="Thug bosses leverage their street smarts, brawling prowess, and reputation to compel others to follow their demands.",
-    suggested_crs=[
-        SuggestedCr(name="Thug Boss", cr=2, other_creatures={"Tough Boss": "mm25"}),
-        SuggestedCr(name="Thug Overboss", cr=4),
-        SuggestedCr(name="Thug Legend", cr=8, is_legendary=True),
+    monsters=[
+        Monster(name="Thug Boss", cr=2, other_creatures={"Tough Boss": "mm25"}),
+        Monster(name="Thug Overboss", cr=4),
+        Monster(name="Thug Legend", cr=8, is_legendary=True),
     ],
 )
 
 
 class _ToughWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -108,7 +108,8 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -202,7 +203,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-ToughTemplate: CreatureTemplate = CreatureTemplate(
+ToughTemplate: MonsterTemplate = MonsterTemplate(
     name="Tough",
     tag_line="Brawlers and Bullies",
     description="Bodyguards, belligerents, and laborers, toughs rely on their physical strength to intimidate foes. They might be brawny criminals, rowdy tavern goers, seasoned workers, or anyone who uses their muscle to get what they want.",

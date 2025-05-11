@@ -32,28 +32,28 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Stats, StatScaling
 from ..statblocks import BaseStatblock
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-BasiliskVariant = CreatureVariant(
+BasiliskVariant = MonsterVariant(
     name="Basilisk",
     description="Basilisks are large, reptilian creatures with the ability to turn flesh to stone with their gaze. They are often found in rocky areas and caves, where they use their petrifying gaze to protect their territory.",
-    suggested_crs=[
-        SuggestedCr(name="Basilisk", cr=3, srd_creatures=["Basilisk"]),
-        SuggestedCr(name="Basilisk Broodmother", cr=8),
+    monsters=[
+        Monster(name="Basilisk", cr=3, srd_creatures=["Basilisk"]),
+        Monster(name="Basilisk Broodmother", cr=8),
     ],
 )
 
 
 class _BasiliskWeights(CustomPowerSelection):
     def __init__(
-        self, stats: BaseStatblock, variant: CreatureVariant, rng: np.random.Generator
+        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
     ):
         self.stats = stats
         self.variant = variant
@@ -120,7 +120,8 @@ def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),
@@ -176,7 +177,7 @@ def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-BasiliskTemplate: CreatureTemplate = CreatureTemplate(
+BasiliskTemplate: MonsterTemplate = MonsterTemplate(
     name="Basilisk",
     tag_line="Reptilian guardian with a petrifying gaze",
     description="Basilisks are large, reptilian creatures with the ability to turn flesh to stone with their gaze. They are often found in rocky areas and caves, where they use their petrifying gaze to protect their territory.",

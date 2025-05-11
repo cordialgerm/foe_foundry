@@ -19,20 +19,20 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import BaseStatblock, MonsterDials
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-GorgonVariant = CreatureVariant(
+GorgonVariant = MonsterVariant(
     name="Gorgon",
     description="Gorgon are iron bulls that exhale a toxic petrifying breath",
-    suggested_crs=[
-        SuggestedCr(name="Gorgon", cr=5, srd_creatures=["Gorgon"]),
+    monsters=[
+        Monster(name="Gorgon", cr=5, srd_creatures=["Gorgon"]),
     ],
 )
 
@@ -88,7 +88,8 @@ def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary, mod=2),
@@ -161,7 +162,7 @@ def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GorgonTemplate: CreatureTemplate = CreatureTemplate(
+GorgonTemplate: MonsterTemplate = MonsterTemplate(
     name="Gorgon",
     tag_line="Bull-Like Constructs with Petrifying Breath",
     description="Gorgons are ferocious bull-like constructs with with iron plates and a toxic, petrifying breath",

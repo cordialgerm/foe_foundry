@@ -26,31 +26,31 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import BaseStatblock, MonsterDials
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-GoblinLickspittleVariant = CreatureVariant(
+GoblinLickspittleVariant = MonsterVariant(
     name="Goblin Lickspittle",
     description="Goblin Lickspittles are the weakest of their kind, often serving as minions to more powerful goblins or as scouts and foragers",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Goblin Lickspittle",
             cr=1 / 8,
             other_creatures={"Goblin Minion": "mm25"},
         )
     ],
 )
-GoblinWarriorVariant = CreatureVariant(
+GoblinWarriorVariant = MonsterVariant(
     name="Goblin",
     description="Goblin warriors attack with overwhelming numbers and withdraw before their enemies can retaliate. They're also fond of setting ambushes.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Goblin",
             cr=1 / 4,
             srd_creatures=["Goblin"],
@@ -58,35 +58,35 @@ GoblinWarriorVariant = CreatureVariant(
         ),
     ],
 )
-GoblinBruteVariant = CreatureVariant(
+GoblinBruteVariant = MonsterVariant(
     name="Goblin Brute",
     description="Goblin Brutes are larger and stronger than their kin, and they wield heavy weapons to crush their foes.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Goblin Brute",
             cr=1 / 2,
             other_creatures={"Goblin Spinecleaver": "FleeMortals"},
         )
     ],
 )
-GoblinBossVariant = CreatureVariant(
+GoblinBossVariant = MonsterVariant(
     name="Goblin Boss",
     description="Goblin Bosses are larger and stronger than their kin, and they have a knack for inspiring their fellows to fight harder.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Goblin Boss",
             cr=1,
             srd_creatures=["Goblin Boss"],
             other_creatures={"Goblin Underboss": "FleeMortals"},
         ),
-        SuggestedCr(name="Goblin Warchief", cr=4),
+        Monster(name="Goblin Warchief", cr=4),
     ],
 )
-GoblinShamanVariant = CreatureVariant(
+GoblinShamanVariant = MonsterVariant(
     name="Goblin Shaman",
     description="Goblin Shamans are spellcasters who wield the power of the mischievous gods and spirits that goblins often worship.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Goblin Foulhex",
             cr=1,
             other_creatures={
@@ -95,15 +95,13 @@ GoblinShamanVariant = CreatureVariant(
                 "Goblin Warlock": "MonstrousMenagerie",
             },
         ),
-        SuggestedCr(
-            name="Goblin Shaman", cr=2, other_creatures={"Goblin Hexer": "mm25"}
-        ),
+        Monster(name="Goblin Shaman", cr=2, other_creatures={"Goblin Hexer": "mm25"}),
     ],
 )
 
 
 class _GoblinPowers(CustomPowerSelection):
-    def __init__(self, variant: CreatureVariant, stats: BaseStatblock, cr: float):
+    def __init__(self, variant: MonsterVariant, stats: BaseStatblock, cr: float):
         self.variant = variant
         self.stats = stats
         self.cr = cr
@@ -229,7 +227,8 @@ def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -333,7 +332,7 @@ def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GoblinTemplate: CreatureTemplate = CreatureTemplate(
+GoblinTemplate: MonsterTemplate = MonsterTemplate(
     name="Goblin",
     tag_line="Wild tricksters and troublemakers",
     description="Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.",

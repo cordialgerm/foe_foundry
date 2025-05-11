@@ -73,7 +73,7 @@ def branding(
 
 def jinja_env():
     return Environment(
-        loader=PackageLoader("foe_foundry", package_path="jinja"),
+        loader=PackageLoader("foe_foundry_data", package_path="jinja"),
         autoescape=select_autoescape(),
         extensions=["jinja_markdown.MarkdownExtension"],
     )

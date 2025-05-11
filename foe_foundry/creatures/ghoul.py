@@ -27,36 +27,36 @@ from ..powers.themed import (
 from ..role_types import MonsterRole
 from ..skills import Stats, StatScaling
 from ..spells import CasterType
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-GhoulVariant = CreatureVariant(
+GhoulVariant = MonsterVariant(
     name="Ghoul",
     description="Ghouls rise from the bodies of cannibals and villains with depraved hungers. They form packs out of shared voracity.",
-    suggested_crs=[
-        SuggestedCr(name="Ghoul", cr=1, srd_creatures=["Ghoul"]),
+    monsters=[
+        Monster(name="Ghoul", cr=1, srd_creatures=["Ghoul"]),
     ],
 )
 
-GhastVariant = CreatureVariant(
+GhastVariant = MonsterVariant(
     name="Ghast",
     description="Ghasts are reeking, undying corpses closely related to ghouls. They hunger for the vices they enjoyed in life as much as they do for rotting flesh.",
-    suggested_crs=[
-        SuggestedCr(name="Ghast", cr=2, srd_creatures=["Ghast"]),
+    monsters=[
+        Monster(name="Ghast", cr=2, srd_creatures=["Ghast"]),
     ],
 )
 
-GravelordVariant = CreatureVariant(
+GravelordVariant = MonsterVariant(
     name="Gravelord",
     description="Gravelords are ghouls that have been blessed by a dark power, granting them the ability to raise the dead.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Ghast Gravelord", cr=6, other_creatures={"Ghast Dreadcaller": "mm25"}
         )
     ],
@@ -64,7 +64,7 @@ GravelordVariant = CreatureVariant(
 
 
 class _GhoulWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -178,7 +178,8 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=stats,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -263,7 +264,7 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-GhoulTemplate: CreatureTemplate = CreatureTemplate(
+GhoulTemplate: MonsterTemplate = MonsterTemplate(
     name="Ghoul",
     tag_line="Undead cannibals",
     description="Ghouls are horrid creatures that feast on the flesh of the living and the dead.",

@@ -30,6 +30,7 @@ class BaseStatblock:
     name: str
     template_key: str
     variant_key: str
+    monster_key: str
     cr: float
     hp: DieFormula
 
@@ -172,6 +173,7 @@ class BaseStatblock:
             name=self.name,
             template_key=self.template_key,
             variant_key=self.variant_key,
+            monster_key=self.monster_key,
             cr=self.cr,
             ac_boost=self.ac_boost,
             ac_templates=self.ac_templates.copy(),
@@ -410,6 +412,8 @@ class BaseStatblock:
             new_nonmagical_resistance = False
 
         new_conditions = self.condition_immunities.copy() | (conditions or set())
+
+        new_resistances = new_resistances - new_immunities
 
         return self.copy(
             damage_resistances=new_resistances,

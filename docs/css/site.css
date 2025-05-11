@@ -298,7 +298,7 @@ hr {
     font-size: 3rem;
 }
 
-.pamphlet-main :not(.monster-name, .monster-header):is(h2, h3, h4, h5) {
+.pamphlet-main :not(.monster-name, .block-header):is(h2, h3, h4, h5) {
     color: var(--primary-color);
     font-family: var(--header-font);
     font-weight: bold;
@@ -506,6 +506,10 @@ footer a {
     .stat-block>* {
         page-break-inside: avoid;
     }
+
+    .power-block>* {
+        page-break-inside: avoid;
+    }
 }
 
 .burnt-parchment {
@@ -550,7 +554,12 @@ a.burnt-parchment {
     background-color: none;
 }
 
-.stat-block {
+#referenced-monsters {
+    color: var(--muted-color);
+}
+
+.stat-block,
+.power-block {
     position: relative;
 
     color: var(--fg-color);
@@ -571,7 +580,12 @@ a.burnt-parchment {
     columns: var(--column-size) 2;
 }
 
-.stat-block .stat-header {
+.power-block.power-block-no-columns {
+    columns: 1;
+}
+
+.stat-block .stat-header,
+.power-block .power-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -616,23 +630,28 @@ a.burnt-parchment {
 }
 
 @media screen and (max-width: 500px) {
-    .stat-block .branding {
+
+    .stat-block .branding,
+    .power-block .branding {
         display: none;
     }
 }
 
-.stat-block .branding a {
+.stat-block .branding a,
+.power-block .branding a {
     color: var(--fg-color);
     text-decoration: none;
     font-size: var(--primary-font-size);
 }
 
-.stat-block .branding img {
+.stat-block .branding img,
+.power-block .branding img {
     height: 2.5em;
     width: auto;
 }
 
-.stat-block .monster-header {
+.stat-block .block-header,
+.power-block .block-header {
     color: var(--primary-color);
     border-bottom: var(--header-border-width) solid var(--primary-color);
 
@@ -646,11 +665,13 @@ a.burnt-parchment {
     margin-bottom: var(--small-margin);
 }
 
-.stat-block .monster-header+p {
+.stat-block .block-header+p,
+.power-block .block-header+p {
     break-before: avoid
 }
 
-.stat-block p {
+.stat-block p,
+.power-block p {
     break-inside: avoid;
     font-size: var(--primary-font-size);
     line-height: var(--primary-line-height);
@@ -665,14 +686,16 @@ a.burnt-parchment {
     opacity: .8
 }
 
-.stat-block :is(ol, ul, dl) {
+.stat-block :is(ol, ul, dl),
+.power-block :is(ol, ul, dl) {
     margin-bottom: 0;
     padding-top: 0;
     font-size: var(--primary-font-size);
     line-height: var(--primary-line-height);
 }
 
-.stat-block :is(ol, ul, dl) li {
+.stat-block :is(ol, ul, dl) li,
+.power-block :is(ol, ul, dl) li {
     margin: 8px 0 0 6px;
     break-inside: avoid
 }
@@ -764,7 +787,8 @@ a.burnt-parchment {
 }
 
 /* Top-left glyph */
-.stat-block::before {
+.stat-block::before,
+.power-block::before {
     content: "ᚠ";
     font-size: 2em;
     color: var(--tertiary-color);
@@ -777,7 +801,8 @@ a.burnt-parchment {
 }
 
 /* Bottom-right glyph */
-.stat-block::after {
+.stat-block::after,
+.power-block::after {
     content: "ᛃ";
     font-size: 2em;
     color: var(--tertiary-color);
@@ -840,4 +865,215 @@ a.burnt-parchment {
 
 .monster-link {
     color: var(--fg-color);
+}
+
+/* Styles for Pop Out / In when rerolling */
+
+
+@keyframes pop-out {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.stat-block.pop-out {
+    animation: pop-out 0.2s forwards;
+}
+
+.stat-block.pop-in {
+    animation: pop-in 0.2s forwards;
+}
+
+@keyframes summon-flash {
+    0% {
+        box-shadow: 0 0 0 0 var(--primary-color);
+    }
+
+    10% {
+        box-shadow: 0 0 4px 1px var(--primary-color);
+    }
+
+    30% {
+        box-shadow: 0 0 8px 3px var(--primary-color);
+    }
+
+    50% {
+        box-shadow: 0 0 12px 6px var(--primary-color);
+    }
+
+    70% {
+        box-shadow: 0 0 8px 3px var(--primary-color);
+    }
+
+    90% {
+        box-shadow: 0 0 4px 1px var(--primary-color);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 var(--primary-color);
+    }
+}
+
+@keyframes scale-throb {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.025);
+    }
+
+    60% {
+        transform: scale(1.015);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes summon-fade {
+
+    0%,
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        filter: brightness(1.3);
+    }
+}
+
+.stat-block.summon-effect {
+    animation:
+        summon-flash 0.4s ease,
+        scale-throb 0.4s ease,
+        summon-fade 0.4s ease;
+}
+
+
+/* Begin Styles for Reroll Button */
+
+
+.statblock-wrapper {
+    position: relative;
+}
+
+/* Large screens: float to the right */
+.reroll-button {
+    position: absolute;
+    top: -0.5rem;
+    right: -4rem;
+    font-size: 3rem;
+    background-color: unset;
+    border: none;
+    color: var(--fg-color);
+}
+
+.d20-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--fg-color);
+}
+
+/* On small screens: stack below */
+@media (max-width: 600px) {
+    .reroll-button {
+        position: static;
+        display: block;
+        margin: 1rem auto 0 auto;
+    }
+
+    .statblock-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.reroll-button:disabled {
+    color: inherit;
+}
+
+.reroll-button.rolling {
+    animation: roll-dice 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+    /* default Material Design easing */
+}
+
+@keyframes roll-dice {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(720deg) scale(1.2);
+        /* 2 full spins */
+    }
+
+    70% {
+        transform: rotate(720deg) scale(0.95);
+        /* squish bounce */
+    }
+
+    85% {
+        transform: rotate(720deg) scale(1.05) translateX(-2px);
+    }
+
+    95% {
+        transform: rotate(720deg) scale(1.02) translateX(2px);
+    }
+
+    100% {
+        transform: rotate(720deg) scale(1) translateX(0);
+    }
+}
+
+/* Hover effect: glow + gentle jiggle */
+.reroll-button:hover .d20-icon {
+    filter: drop-shadow(0 0 5px var(--box-shadow-color));
+    animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+
+    25% {
+        transform: rotate(1.5deg) translateX(1px);
+    }
+
+    50% {
+        transform: rotate(0deg) translateX(0);
+    }
+
+    75% {
+        transform: rotate(-1.5deg) translateX(-1px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
 }

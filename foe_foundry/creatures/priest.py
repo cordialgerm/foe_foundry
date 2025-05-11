@@ -21,35 +21,35 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import MonsterDials
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import BaseStatblock, base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-PriestVariant = CreatureVariant(
+PriestVariant = MonsterVariant(
     name="Priest",
     description="Priests draw on their beliefs to heal the needful and smite their foes. They can channel their faith as spells and empower their weapons with divine might.",
-    suggested_crs=[
-        SuggestedCr(name="Acolyte", cr=1 / 4, srd_creatures=["Acolyte"]),
-        SuggestedCr(name="Priest", cr=2, srd_creatures=["Priest"]),
-        SuggestedCr(name="Priest Anointed One", cr=5),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Acolyte", cr=1 / 4, srd_creatures=["Acolyte"]),
+        Monster(name="Priest", cr=2, srd_creatures=["Priest"]),
+        Monster(name="Priest Anointed One", cr=5),
+        Monster(
             name="Archpriest",
             cr=12,
             other_creatures={"Archpriest": "mm25"},
         ),
-        SuggestedCr(name="Archpriest Revered One", cr=16, is_legendary=True),
+        Monster(name="Archpriest Revered One", cr=16, is_legendary=True),
     ],
 )
 
 
 class _PriestWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -108,7 +108,8 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Medium, mod=2),
@@ -221,7 +222,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-PriestTemplate: CreatureTemplate = CreatureTemplate(
+PriestTemplate: MonsterTemplate = MonsterTemplate(
     name="Priest",
     tag_line="Arbiters of the Mortal and the Divine",
     description="Priests harness the power of faith to work miracles. These religious adherents are as diverse as the faiths they follow. Some obey gods and their servants, while others live by age-old creeds. Belief guides priests’ actions and their magic, which they use to shape the world in line with their ideologies.",

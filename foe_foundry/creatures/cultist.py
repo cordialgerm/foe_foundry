@@ -36,69 +36,65 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
 from ..statblocks import MonsterDials
-from .base_stats import BaseStatblock, base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import BaseStatblock, base_stats
 
-CultistVariant = CreatureVariant(
+CultistVariant = MonsterVariant(
     name="Cultist",
     description="Cultists devote themselves to their faith's leaders and otherworldly masters. While this zeal grants cultists no magical powers, it gives them remarkable resolve in the face of threats. Cultists perform much of a cult's mundane work, which might include evangelism, criminal acts, or serving as sacrifices.",
-    suggested_crs=[
-        SuggestedCr(name="Cultist", cr=1 / 8, srd_creatures=["Cultist"]),
-        SuggestedCr(name="Cultist Fanatic", cr=2, srd_creatures=["Cult Fanatic"]),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Cultist", cr=1 / 8, srd_creatures=["Cultist"]),
+        Monster(name="Cultist Fanatic", cr=2, srd_creatures=["Cult Fanatic"]),
+        Monster(
             name="Cultist Grand Master",
             cr=10,
             other_creatures={"Cultist Hierophant": "mm25"},
         ),
-        SuggestedCr(name="Cultist Exarch", cr=14, is_legendary=True),
+        Monster(name="Cultist Exarch", cr=14, is_legendary=True),
     ],
 )
 
-AberrantVariant = CreatureVariant(
+AberrantVariant = MonsterVariant(
     name="Aberrant Cultist",
     description="Aberrant cultists pursue mind-bending powers from alien forces.",
-    suggested_crs=[
-        SuggestedCr(name="Aberrant Cultist Initiate", cr=4),
-        SuggestedCr(
+    monsters=[
+        Monster(name="Aberrant Cultist Initiate", cr=4),
+        Monster(
             name="Aberrant Cultist", cr=8, other_creatures={"Aberrant Cultist": "mm25"}
         ),
-        SuggestedCr(name="Aberrant Cultist Grand Master", cr=14),
+        Monster(name="Aberrant Cultist Grand Master", cr=14),
     ],
 )
 
-NecroVariant = CreatureVariant(
+NecroVariant = MonsterVariant(
     name="Death Cultist",
     description="Death cultists revel in nihilistic forces, embracing them as paths to undeath, multiversal purity, or entropic inevitability. These cultists serve powerful undead beings, apocalyptic prophecies, or immortals with power over death",
-    suggested_crs=[
-        SuggestedCr(name="Death Cultist Initiate", cr=4),
-        SuggestedCr(
-            name="Death Cultist", cr=8, other_creatures={"Death Cultist": "mm25"}
-        ),
-        SuggestedCr(name="Death Cultist Grand Master", cr=14),
+    monsters=[
+        Monster(name="Death Cultist Initiate", cr=4),
+        Monster(name="Death Cultist", cr=8, other_creatures={"Death Cultist": "mm25"}),
+        Monster(name="Death Cultist Grand Master", cr=14),
     ],
 )
 
-FiendVariant = CreatureVariant(
+FiendVariant = MonsterVariant(
     name="Fiendish Cultist",
     description="Fiend cultists worship fiends or evil deities. They often work to bring ruin to innocents or to summon their sinister patron into the world. Fiend cultists might serve infamous powers such as archdevils and demon lords, or foul immortals",
-    suggested_crs=[
-        SuggestedCr(name="Fiend Cultist Initiate", cr=4),
-        SuggestedCr(
-            name="Fiend Cultist", cr=8, other_creatures={"Fiend Cultist": "mm25"}
-        ),
-        SuggestedCr(name="Fiend Cultist Grand Master", cr=14),
+    monsters=[
+        Monster(name="Fiend Cultist Initiate", cr=4),
+        Monster(name="Fiend Cultist", cr=8, other_creatures={"Fiend Cultist": "mm25"}),
+        Monster(name="Fiend Cultist Grand Master", cr=14),
     ],
 )
 
 
 class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: CreatureVariant):
+    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
         self.stats = stats
         self.variant = variant
 
@@ -162,7 +158,8 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default, mod=1),
@@ -287,7 +284,7 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-CultistTemplate: CreatureTemplate = CreatureTemplate(
+CultistTemplate: MonsterTemplate = MonsterTemplate(
     name="Cultist",
     tag_line="Doomsayers and Fanatics",
     description="Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces",

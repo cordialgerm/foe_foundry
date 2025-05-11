@@ -19,29 +19,29 @@ from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..statblocks import MonsterDials
 from ..utils.interpolate import interpolate_by_cr
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+    StatsBeingGenerated,
+)
 from .base_stats import base_stats
 from .species import AllSpecies, HumanSpecies
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
-    GenerationSettings,
-    StatsBeingGenerated,
-    SuggestedCr,
-)
 
-SpyVariant = CreatureVariant(
+SpyVariant = MonsterVariant(
     name="Spy",
     description="Bandits are inexperienced ne’er-do-wells who typically follow the orders of higher-ranking bandits.",
-    suggested_crs=[
-        SuggestedCr(name="Spy", cr=1, srd_creatures=["Spy"]),
-        SuggestedCr(name="Elite Spy", cr=4),
+    monsters=[
+        Monster(name="Spy", cr=1, srd_creatures=["Spy"]),
+        Monster(name="Elite Spy", cr=4),
     ],
 )
-SpyMasterVariant = CreatureVariant(
+SpyMasterVariant = MonsterVariant(
     name="Spy Master",
     description="Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Spy Master",
             cr=10,
             other_creatures={"Spy Master": "mm25"},
@@ -96,7 +96,8 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Default),
@@ -204,7 +205,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-SpyTemplate: CreatureTemplate = CreatureTemplate(
+SpyTemplate: MonsterTemplate = MonsterTemplate(
     name="Spy",
     tag_line="Infiltrators and Informants",
     description="Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity.",

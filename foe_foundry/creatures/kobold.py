@@ -16,20 +16,20 @@ from ..role_types import MonsterRole
 from ..size import Size
 from ..skills import Skills, Stats, StatScaling
 from ..spells import CasterType
-from .base_stats import base_stats
-from .template import (
-    CreatureTemplate,
-    CreatureVariant,
+from ._data import (
     GenerationSettings,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
     StatsBeingGenerated,
-    SuggestedCr,
 )
+from .base_stats import base_stats
 
-KoboldWarrenguardVariant = CreatureVariant(
+KoboldWarrenguardVariant = MonsterVariant(
     name="Kobold Warrenguard",
     description="Warrenguards are proud nest defenders. They are known to work in disciplined formations, using their superior numbers to overwhelm their foes and protect their territory.",
-    suggested_crs=[
-        SuggestedCr(
+    monsters=[
+        Monster(
             name="Kobold Warrenguard",
             cr=1 / 8,
             srd_creatures=["Kobold"],
@@ -38,22 +38,22 @@ KoboldWarrenguardVariant = CreatureVariant(
     ],
 )
 
-KoboldSharpsnoutVariant = CreatureVariant(
+KoboldSharpsnoutVariant = MonsterVariant(
     name="Kobold Sharpsnout",
     description="Sharpsnouts have honed their devious instincts to a craft. Their cunning traps and devious ambushes have laid low many an unprepared intruder.",
-    suggested_crs=[SuggestedCr(name="Kobold Sharpsnout", cr=1 / 2)],
+    monsters=[Monster(name="Kobold Sharpsnout", cr=1 / 2)],
 )
 
-KoboldAspirantVariant = CreatureVariant(
+KoboldAspirantVariant = MonsterVariant(
     name="Kobold Aspirant",
     description="Aspirants are fanatical zealots to their True Dragon overlords. They carry a sacred Draconic Standard imbued with the power of the collective will of their tribe.",
-    suggested_crs=[SuggestedCr(name="Kobold Ascendant", cr=1)],
+    monsters=[Monster(name="Kobold Ascendant", cr=1)],
 )
 
-KoboldWyrmcallerVariant = CreatureVariant(
+KoboldWyrmcallerVariant = MonsterVariant(
     name="Kobold Wyrmcaller",
     description="Wyrmcallers are wizened shamans who have learned to commune with the spirits of True Dragons. They are capable of guiding the souls of brave Kobold martyrs to reincarnate as a True Dragon",
-    suggested_crs=[SuggestedCr(name="Kobold Wyrmcaller", cr=2)],
+    monsters=[Monster(name="Kobold Wyrmcaller", cr=2)],
 )
 
 
@@ -85,7 +85,7 @@ class _KoboldPowers(CustomPowerSelection):
 
 
 def _kobold_powers(
-    variant: CreatureVariant, rng: np.random.Generator, cr: float
+    variant: MonsterVariant, rng: np.random.Generator, cr: float
 ) -> CustomPowerSelection:
     suppress = [] + dragon.DragonPowers + cowardly.CowardlyPowers
     suppress.remove(cowardly.ScurryAndScatter)
@@ -213,7 +213,8 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = base_stats(
         name=variant.name,
         variant_key=settings.variant.key,
-        template_key=settings.creature_template,
+        template_key=settings.monster_template,
+        monster_key=settings.monster_key,
         cr=cr,
         stats=attrs,
         hp_multiplier=hp_multiplier * settings.hp_multiplier,
@@ -307,7 +308,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 
 
-KoboldTemplate: CreatureTemplate = CreatureTemplate(
+KoboldTemplate: MonsterTemplate = MonsterTemplate(
     name="Kobold",
     tag_line="Proud Zealots of True Dragons",
     description="Kobolds are small reptilian guardians of True Dragon lairs. They are known for their zealous dedication to their True Dragon overlords and their cunning defense of the lairs they protect.",
