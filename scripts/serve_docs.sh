@@ -13,4 +13,4 @@ export PORT=${PORT:-8080}
 export SITE_URL=${SITE_URL:-http://127.0.0.1:8080/}
 
 # Set the correct PYTHONPATH
-poetry run mkdocs serve --dirty
+poetry run mkdocs serve --dirty -a 127.0.0.1:8080

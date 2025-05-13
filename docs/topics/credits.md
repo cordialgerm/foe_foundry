@@ -84,6 +84,7 @@ This work features art by:
 - **Jeshields** – used with permission
 - Some artwork © 2022 Joao Mileski, used with permission. All rights reserved.
 - [d20 Icons by Delapouite](https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html) under CC BY 3.0
+- Artwork by © anaislalovi, used with permission. All rights reserved
 
 Monsters by GalefireRPG:  
 

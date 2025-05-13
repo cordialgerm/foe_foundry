@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from foe_foundry.utils import name_to_key
+
 from ...statblocks import BaseStatblock
 
 
@@ -13,3 +15,7 @@ class CreatureSpecies:
 
     def __hash__(self) -> int:
         return hash(self.name)
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)

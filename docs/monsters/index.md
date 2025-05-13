@@ -5,6 +5,15 @@ description: Discover unique, handcrafted monsters for your next 5E or fantasy T
 
 # Foe Foundry Monsters
 
+## Humanoids
+
+Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
+
+- [Orcs](orc.md) - bloodrage-fueled ancestral warriors
+- [Mages](mage.md) - master of arcane magicks
+
+![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
+
 ## Undead
 
 Bleached bones. Rotting flesh. Soul fragments clawing their way back to life from the River Styx. The [Undead](../families/undead.md) of Foe Foundry aren't just cannon fodder. They're cursed echoes of mortal lives, each with their own twisted flavor.
@@ -28,16 +37,7 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 - [Owlbears](owlbear.md) - unnaturally territorial predators
 - [Chimeras](chimera.md) - monstrous messenger of imminent disaster
 
-
 ![A cantankerous Manticore prepares to strike](../img/manticore.png){.monster-image .masked .white-background}
-
-## Humanoids
-
-Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
-
-- [Mages](mage.md) - master of arcane magicks
-
-![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
 
 ## Oozes
 
