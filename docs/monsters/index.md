@@ -10,6 +10,7 @@ description: Discover unique, handcrafted monsters for your next 5E or fantasy T
 Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
 
 - [Orcs](orc.md) - bloodrage-fueled ancestral warriors
+- [Goblins](goblin.md) - little balls of mischief and mayhem
 - [Mages](mage.md) - master of arcane magicks
 
 ![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
