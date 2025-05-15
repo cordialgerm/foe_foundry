@@ -138,6 +138,18 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="orcs_and_goblinoids/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/orc-head.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
 .navbar a[href$="villains/" i]::before {
     content: " ";
     display: inline-block;

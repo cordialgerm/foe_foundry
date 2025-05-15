@@ -11,7 +11,7 @@ from foe_foundry.damage import Attack, Condition, DamageType
 from foe_foundry.features import ActionType, Feature
 from foe_foundry.skills import Skills, Stats
 from foe_foundry.statblocks import Statblock
-from foe_foundry.utils import comma_separated
+from foe_foundry.utils import comma_separated, name_to_key
 
 from .utilities import fix_punctuation
 
@@ -22,6 +22,7 @@ class MonsterTemplateData:
     template: str
     variant: str
     monster: str
+    species: str | None
     selfref: str
     roleref: str
     size: str
@@ -78,12 +79,14 @@ class MonsterTemplateData:
 
     spellcasting: str
 
+    key: str = field(init=False)
     attack_modifier_text: str = field(init=False)
     attack_text: str = field(init=False)
     immunities_combined: str = field(init=False)
     challenge_pb_combined: str = field(init=False)
 
     def __post_init__(self):
+        self.key = name_to_key(self.name)
         self.attack_modifier_text = (
             " ".join([fix_punctuation(f.description) for f in self.attack_modifiers])
             if len(self.attack_modifiers) > 0
@@ -261,6 +264,7 @@ class MonsterTemplateData:
             template=stats.template_key.lower(),
             variant=stats.variant_key.lower(),
             monster=stats.monster_key.lower(),
+            species=stats.creature_subtype.lower() if stats.creature_subtype else None,
             selfref=stats.selfref,
             roleref=stats.roleref,
             size=stats.size.name,

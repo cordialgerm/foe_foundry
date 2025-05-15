@@ -29,6 +29,14 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "FastAPI: Uvicorn",
+            "type": "python",
+            "request": "launch",
+            "module": "foe_foundry_site",
+            "jinja": true,
+            "justMyCode": true
         }
     ]
 }

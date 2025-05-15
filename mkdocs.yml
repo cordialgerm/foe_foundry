@@ -7,6 +7,7 @@ nav:
   - Generate: generate.md
   - Monsters:
       - All Monsters: monsters/index.md
+      - Orcs & Goblins: families/orcs_and_goblinoids.md
       - Undead: families/undead.md
       - Villains: families/villains.md
       - Rivals: families/rivals.md

@@ -113,6 +113,8 @@ class LinkPreprocessor(Preprocessor):
         if power is not None:
             self.resolved_references.append(power)
             power_model = Powers.PowerLookup.get(power.key)
+            if power_model is None:
+                raise ValueError(f"Power {power.key} not found in PowerLookup")
             return render_power_fragment(power_model)
 
         return match.group(0)

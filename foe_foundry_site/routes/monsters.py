@@ -69,7 +69,9 @@ def get_monster(
     rng = np.random.default_rng()
     ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
     if ref is None:
-        raise HTTPException(status_code=404, detail="Monster not found")
+        raise HTTPException(
+            status_code=404, detail=f"Monster not found: {template_or_variant_key}"
+        )
 
     if ref.monster is None:
         options = []
@@ -85,9 +87,13 @@ def get_monster(
     template = ref.template
     variant: MonsterVariant = ref.variant  # type: ignore
     monster: Monster = ref.monster  # type: ignore
+    species = ref.species
 
     stats = template.generate_monster(
-        variant=variant, monster=monster, rng=rng
+        variant=variant,
+        monster=monster,
+        species=species,
+        rng=rng,
     ).finalize()
     base_url = os.environ.get("SITE_URL")
     if base_url is None:

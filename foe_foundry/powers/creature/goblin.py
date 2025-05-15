@@ -41,7 +41,7 @@ class GoblinPower(PowerWithStandardScoring):
 class _FlingFilth(GoblinPower):
     def __init__(self):
         super().__init__(
-            name="Filth Flinger",
+            name="Fling Filth",
             source="Foe Foundry",
             power_level=LOW_POWER,
             require_max_cr=1,
