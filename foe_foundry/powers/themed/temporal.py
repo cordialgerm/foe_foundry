@@ -64,7 +64,7 @@ class _CurseOfTheAges(TemporalPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(2.5, force_die=Die.d12)
+        dmg = stats.target_value(target=2.5, force_die=Die.d12)
         weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Curse of the Ages",

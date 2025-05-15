@@ -83,7 +83,7 @@ class _BoneShards(SkeletalPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        damage = stats.target_value(0.75)
+        damage = stats.target_value(target=0.75)
 
         feature = Feature(
             name="Bone Shards",
@@ -130,7 +130,7 @@ class _BoneSpear(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(0.7 * min(stats.multiattack, 2))
+        damage = stats.target_value(target=0.7 * min(stats.multiattack, 2))
 
         feature = Feature(
             name="Bone Harpoon",
@@ -154,7 +154,7 @@ class _BoneStorm(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(1.2 * min(stats.multiattack, 2))
+        damage = stats.target_value(target=1.2 * min(stats.multiattack, 2))
 
         if stats.cr < 1:
             recharge = None
@@ -187,7 +187,7 @@ class _BoneWall(SkeletalPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        damage = stats.target_value(0.5 * min(stats.multiattack, 2))
+        damage = stats.target_value(target=0.5 * min(stats.multiattack, 2))
 
         if stats.cr < 1:
             uses = 1

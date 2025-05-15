@@ -142,7 +142,7 @@ class _HeartTremors(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(2.5, force_die=Die.d10)
+        dmg = stats.target_value(dpr_proportion=1.5, force_die=Die.d10)
         feature = Feature(
             name="Heart Tremors",
             action=ActionType.BonusAction,
@@ -204,7 +204,7 @@ class _Nervefire(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         poisoned = Condition.Poisoned
-        dmg = stats.target_value(0.75, force_die=Die.d6)
+        dmg = stats.target_value(target=0.75, force_die=Die.d6)
         feature = Feature(
             name="Nervefire",
             action=ActionType.BonusAction,

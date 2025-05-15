@@ -163,7 +163,7 @@ class _BurningAttack(Technique):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type or DamageType.Fire
-        damage = stats.target_value(0.33, force_die=Die.d10)
+        damage = stats.target_value(target=0.33, force_die=Die.d10)
         burning = conditions.Burning(damage, damage_type)
         feature = Feature(
             name="Burning Attack",
@@ -792,7 +792,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(0.2, force_die=Die.d4)
+        dmg = stats.target_value(target=0.2, force_die=Die.d4)
         feature1 = Feature(
             name="Expert Brawler Hit",
             action=ActionType.Feature,
@@ -1017,7 +1017,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.7, force_die=Die.d12)
+        dmg = stats.target_value(target=1.7, force_die=Die.d12)
         dmg_type = stats.attack.damage.damage_type
         feature = Feature(
             name="Overpowering Strike",
@@ -1051,7 +1051,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
-        dmg = stats.target_value(1.0, force_die=Die.d6, force_even=True)
+        dmg = stats.target_value(target=1.0, force_die=Die.d6, force_even=True)
         bleed_dmg = DieFormula.from_dice(d6=dmg.n_die // 2)
         bleeding = conditions.Bleeding(damage=bleed_dmg)
 
@@ -1092,7 +1092,7 @@ class _Sharpshooter(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = stats.attack.range_max or stats.attack.range
-        dmg = stats.target_value(1.5)
+        dmg = stats.target_value(target=1.5)
         dmg_type = stats.attack.damage.damage_type
         dazed = conditions.Dazed()
         feature = Feature(

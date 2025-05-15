@@ -96,7 +96,7 @@ OrcBloodletterVariant = MonsterVariant(
 
 OrcWarchiefVariant = MonsterVariant(
     name="Orc Warchief",
-    description="Orc Warchiefs are the leaders of the orc warband. They are powerful warriors and skilled tacticians who can rally their allies to victory. They are often accompanied by a retinue of elite warriors. The most powerful warchiefs die their tusks red in the blood of their foes.",
+    description="Orc Warchiefs are the leaders of the orc warband. They are powerful warriors and skilled tacticians who can rally their allies to victory. They are often accompanied by a retinue of elite warriors. The most powerful warchiefs dye their tusks red in the blood of their foes.",
     monsters=[
         Monster(name="Orc Warchief", cr=4, other_creatures={"Orc War Chief": "mm14"}),
         Monster(name="Orc Warchief of the Bloody Fang", cr=7, is_legendary=True),

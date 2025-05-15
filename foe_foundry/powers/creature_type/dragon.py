@@ -95,7 +95,7 @@ class _WingBuffet(DraconicPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(0.5, suggested_die=Die.d6)
+        dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         prone = Condition.Prone
         feature = Feature(

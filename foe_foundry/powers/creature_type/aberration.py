@@ -71,7 +71,7 @@ class _GazeOfTheFarRealm(AberrationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(0.25, suggested_die=Die.d6)
+        dmg = stats.target_value(target=0.25, suggested_die=Die.d6)
         burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
         frightened = Condition.Frightened
         dazed = conditions.Dazed()
@@ -118,7 +118,7 @@ class _TentacleSlam(AberrationPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(0.5, suggested_die=Die.d6)
+        dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         grappled = Condition.Grappled
         stunned = Condition.Stunned
         feature = Feature(

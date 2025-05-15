@@ -105,7 +105,7 @@ class _DissonantWhispers(PsychicPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
-        dmg = stats.target_value(1.5, force_die=Die.d6)
+        dmg = stats.target_value(target=1.5, force_die=Die.d6)
 
         feature = Feature(
             name="Dissonant Whispers",

@@ -137,25 +137,25 @@ class _ElementalSmite(ElementalPower):
 
         if dmg_type == DamageType.Fire:
             burning = Burning(DieFormula.from_expression("1d10"))
-            dmg = stats.target_value(dmg_target, force_die=Die.d10)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d10)
             condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
         elif dmg_type == DamageType.Acid:
-            dmg = stats.target_value(dmg_target, force_die=Die.d4)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d4)
             burning = Burning(DieFormula.from_expression("2d4"), DamageType.Acid)
             condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {burning.caption}. {burning.description_3rd}"
         elif dmg_type == DamageType.Cold:
-            dmg = stats.target_value(dmg_target, force_die=Die.d8)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d8)
             frozen = Frozen(dc=dc)
             condition = f"and forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {frozen.caption}. {frozen.description_3rd}"
         elif dmg_type == DamageType.Lightning:
-            dmg = stats.target_value(dmg_target, force_die=Die.d6)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d6)
             shocked = Shocked()
             condition = f"and forces the target to make a DC {dc} Dexterity saving throw. On a failure, the target is {shocked.caption} until the end of its next turn. {shocked.description_3rd}"
         elif dmg_type == DamageType.Poison:
-            dmg = stats.target_value(dmg_target, force_die=Die.d8)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d8)
             condition = f"and forces the target to make a DC {dc} Constitution saving throw or become {poisoned.caption} for 1 minute (save ends at end of turn)."
         elif dmg_type == DamageType.Thunder:
-            dmg = stats.target_value(dmg_target, force_die=Die.d8)
+            dmg = stats.target_value(target=dmg_target, force_die=Die.d8)
             dazed = Dazed()
             condition = f"and force the target to make a DC {dc} Constitution saving throw. On a failure, the target is {dazed.caption} until the end of its next turn. {dazed.description_3rd}"
         else:
@@ -184,7 +184,7 @@ class _ElementalBurst(ElementalPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = int(ceil(stats.cr / 5))
-        dmg = stats.target_value(0.75)
+        dmg = stats.target_value(target=0.75)
         damage_type = self.damage_type
         distance = 5 if stats.cr <= 7 else 10
         dc = stats.difficulty_class
@@ -243,7 +243,7 @@ class _AcidicBlast(ElementalPower):
 
         # acid damage is always done in d4s and should be an even number
         # this is because the ongoing damage should be half that amount
-        dmg = stats.target_value(1.0, force_die=Die.d4, force_even=True)
+        dmg = stats.target_value(target=1.0, force_die=Die.d4, force_even=True)
         ongoing = DieFormula.from_dice(**{Die.d4: dmg.n_die // 2})
         burning = Burning(damage=ongoing, damage_type=DamageType.Acid)
 

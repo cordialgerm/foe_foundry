@@ -1,3 +1,5 @@
+from foe_foundry.creatures.priest import PriestTemplate, PriestVariant
+from foe_foundry.creatures.species import OrcSpecies
 from foe_foundry.creatures.wight import WightTemplate
 from foe_foundry_data.monsters import MonsterModel
 
@@ -11,3 +13,11 @@ def test_monster_model():
         )
         assert len(model.images) > 0
         assert model.template_html is not None
+
+
+def test_monster_model_with_species():
+    stats = PriestTemplate.generate_monster(
+        variant=PriestVariant, monster=PriestVariant.monsters[0], species=OrcSpecies
+    ).finalize()
+
+    assert stats.name == f"Orc {PriestVariant.monsters[0].name}"

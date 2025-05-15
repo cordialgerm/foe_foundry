@@ -478,7 +478,11 @@ class BaseStatblock:
         return self.add_spells([spell])
 
     def target_value(
-        self, target: float | None = None, dpr_proportion: float | None = None, **args
+        self,
+        *,
+        target: float | None = None,
+        dpr_proportion: float | None = None,
+        **args,
     ) -> DieFormula:
         if target is None and dpr_proportion is None:
             raise ValueError("Either target or dpr_proportion must be provided")
@@ -487,9 +491,10 @@ class BaseStatblock:
         if dpr_proportion is not None:
             # low-CR monsters need to be careful with how much damage they pump out from non-attack abilities
             # legendary monsters also need to be careful because they can already do a lot of damage with legendary attacks
+            # very high-CR monsters also need a slight adjustment because if they unload all their attacks on one target it's a lot of damage
             if self.cr <= 2:
                 adjustment = 0.8
-            elif self.is_legendary:
+            elif (self.is_legendary or self.cr >= 19) and dpr_proportion > 0.5:
                 adjustment = 0.9
             else:
                 adjustment = 1.0
