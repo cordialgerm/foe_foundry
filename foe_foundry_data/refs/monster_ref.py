@@ -97,11 +97,11 @@ class MonsterRefResolver:
     ) -> tuple[CreatureSpecies | None, str | None]:
         """Check if the monster name starts with a species name, like an Orc Berserker"""
 
-        seperators = [" ", "-", "_"]
-        if not any(sep in monster_name for sep in seperators):
+        separators = [" ", "-", "_"]
+        if not any(sep in monster_name for sep in separators):
             return None, None
 
-        for sep in seperators:
+        for sep in separators:
             if sep not in monster_name:
                 continue
 
