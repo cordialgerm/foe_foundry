@@ -1685,6 +1685,23 @@ termcolor = "*"
 test = ["mkdocs-d2-plugin", "mkdocs-include-markdown-plugin", "mkdocs-macros-test", "mkdocs-material (>=6.2)", "mkdocs-test"]
 
 [[package]]
+name = "mkdocs-open-in-new-tab"
+version = "1.0.8"
+description = "MkDocs plugin to open outgoing links and PDFs in new tab."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mkdocs_open_in_new_tab-1.0.8-py3-none-any.whl", hash = "sha256:051d767a4467b12d89827e1fea0ec660b05b027c726317fe4fceee5456e36ad2"},
+    {file = "mkdocs_open_in_new_tab-1.0.8.tar.gz", hash = "sha256:3e0dad08cc9938b0b13097be8e0aa435919de1eeb2d1a648e66b5dee8d57e048"},
+]
+
+[package.dependencies]
+mkdocs = "*"
+
+[package.extras]
+dev = ["build (>=1.2.2,<1.3.0)", "mkdocs-git-revision-date-localized-plugin (>=1.2.6,<1.3.0)", "mkdocs-glightbox (>=0.4.0,<0.5.0)", "mkdocs-material (>=9.5.27,<9.6.0)", "setuptools (>=70.0.0,<70.1.0)", "twine (>=5.1.1,<5.2.0)"]
+
+[[package]]
 name = "mkdocs-rss-plugin"
 version = "1.17.1"
 description = "MkDocs plugin which generates a static RSS feed using git log and page.meta."
@@ -3741,4 +3758,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.10.15"
-content-hash = "6c571aa4998e5001579ec6ac05cb739ce3b3d543421831dfcc529f6ea3980c85"
+content-hash = "51c85965f76fa90e2285960f3b4a6c309becd283e39b2be14278d2a4afc4b12f"
