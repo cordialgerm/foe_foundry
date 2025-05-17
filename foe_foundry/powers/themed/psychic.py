@@ -7,7 +7,7 @@ from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
-from ...spells import CasterType, transmutation
+from ...spells import CasterType, divination, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
@@ -211,12 +211,36 @@ class _EatBrain(PsychicPower):
         return [stunning_tentacles]
 
 
+class _ReadThoughts(PsychicPower):
+    def __init__(self):
+        super().__init__(
+            name="Read Thoughts",
+            source="SRD 5.1",
+            power_level=MEDIUM_POWER,
+            require_cr=1,
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dc = stats.difficulty_class
+        dmg = stats.target_value(target=0.25, force_die=Die.d4)
+        detect_thoughts = divination.DetectThoughts.for_statblock().caption_md
+        feature = Feature(
+            name="Read Thoughts",
+            action=ActionType.BonusAction,
+            description=f"{stats.selfref.capitalize()} magically probes the mind of a creature it can see within 30 feet. That creature must make a DC {dc} Wisdom saving throw. \
+                On a failure, {stats.selfref} can read the target's thoughts as per the {detect_thoughts} spell. Additionally, when {stats.selfref} hits the target with an attack, \
+                it deals an additional {dmg.description} psychic damage.",
+        )
+        return [feature]
+
+
 DissonantWhispers: Power = _DissonantWhispers()
 EatBrain: Power = _EatBrain()
 PsionicBlast: Power = _PsionicBlast()
 PsychicInfestation: Power = _PsychicInfestation()
 MirroredPain: Power = _MirroredPain()
 Telekinetic: Power = _Telekinetic()
+ReadThoughts: Power = _ReadThoughts()
 
 PsychicPowers: List[Power] = [
     DissonantWhispers,
@@ -224,5 +248,6 @@ PsychicPowers: List[Power] = [
     MirroredPain,
     PsionicBlast,
     PsychicInfestation,
+    ReadThoughts,
     Telekinetic,
 ]

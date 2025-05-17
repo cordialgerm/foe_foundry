@@ -105,7 +105,7 @@ async function createRerollButton(statblock) {
   button.setAttribute("title", "Reroll this monster");
   button.setAttribute('data-monster', statblock.dataset.monster);
 
-  const response = await fetch('/img/d20.svg');
+  const response = await fetch('/img/icons/d20.svg');
   const svgText = await response.text();
 
   const parser = new DOMParser();

@@ -363,6 +363,29 @@ hr {
     -webkit-mask-position: center;
 }
 
+/* Special handling for .masked.padded */
+p:has(> img.masked.padded) {
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: content-box;
+
+    mask-image: url('/img/backgrounds/watercolor-mask.webp');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+/* Disable masking on inner img for .masked .padded */
+p:has(> img.masked.padded)>img.masked.padded {
+    mask: none;
+    -webkit-mask: none;
+}
+
 
 
 .monster-image,
