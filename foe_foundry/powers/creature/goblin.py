@@ -18,6 +18,7 @@ class GoblinPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 22),
         **score_args,
@@ -26,6 +27,7 @@ class GoblinPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="goblin",
+            icon=icon,
             reference_statblock="Goblin",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -43,6 +45,7 @@ class _FlingFilth(GoblinPower):
         super().__init__(
             name="Fling Filth",
             source="Foe Foundry",
+            icon="throwing-ball",
             power_level=LOW_POWER,
             require_max_cr=1,
         )
@@ -74,6 +77,7 @@ class _CacklingDetonation(GoblinPower):
         super().__init__(
             name="Cackling Detonation",
             source="Foe Foundry",
+            icon="dynamite",
             power_level=LOW_POWER,
             require_max_cr=0.5,
             require_callback=require_callback,
@@ -97,6 +101,7 @@ class _CackleHex(GoblinPower):
         super().__init__(
             name="Cacklehex",
             source="Foe Foundry",
+            icon="imp-laugh",
             require_cr=1,
             require_spellcasting=True,
         )
@@ -125,6 +130,7 @@ class _BloodCurse(GoblinPower):
         super().__init__(
             name="Blood Curse",
             source="Foe Foundry",
+            icon="blood",
             power_level=LOW_POWER,
             require_cr=1,
             require_spellcasting=True,

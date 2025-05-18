@@ -28,6 +28,7 @@ class MagePower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
@@ -43,6 +44,7 @@ class MagePower(PowerWithStandardScoring):
             source=source,
             theme="mage",
             reference_statblock="Mage",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 3, 7),
@@ -63,6 +65,7 @@ class _ProtectiveMagic(MagePower):
         super().__init__(
             name="Protective Magic",
             source="Foe Foundry",
+            icon="shield-reflect",
             power_level=MEDIUM_POWER,
         )
 
@@ -83,6 +86,7 @@ class _ApprenticeMage(MagePower):
         super().__init__(
             name="Apprentice Mage",
             source="Foe Foundry",
+            icon="spellbook",
             power_level=RIBBON_POWER,
         )
 
@@ -106,6 +110,7 @@ class _AdeptMage(MagePower):
         super().__init__(
             name="Adept Mage",
             source="Foe Foundry",
+            icon="spellbook",
             power_level=LOW_POWER,
         )
 
@@ -129,6 +134,7 @@ class _Mage(MagePower):
         super().__init__(
             name="Mage",
             source="Foe Foundry",
+            icon="spellbook",
             power_level=MEDIUM_POWER,
         )
 
@@ -152,6 +158,7 @@ class _Archmage(MagePower):
         super().__init__(
             name="Mage",
             source="Foe Foundry",
+            icon="spellbook",
             power_level=MEDIUM_POWER,
         )
 

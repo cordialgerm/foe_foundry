@@ -16,7 +16,7 @@ from ..power import (
 
 
 class _GorgonPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER):
+    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         def require_callback(s: BaseStatblock) -> bool:
             return s.creature_subtype == "Gorgon"
 
@@ -24,6 +24,7 @@ class _GorgonPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="gorgon",
+            icon=icon,
             reference_statblock="Gorgon",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -38,7 +39,9 @@ class _GorgonPower(PowerWithStandardScoring):
 
 class _PetrifyingBreath(_GorgonPower):
     def __init__(self):
-        super().__init__(name="Petrifying Breath", power_level=HIGH_POWER)
+        super().__init__(
+            name="Petrifying Breath", icon="cloud-ring", power_level=HIGH_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         restrained = Condition.Restrained

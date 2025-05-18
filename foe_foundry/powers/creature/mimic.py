@@ -34,6 +34,7 @@ class MimicPower(PowerWithStandardScoring):
             source="Foe Foundry",
             theme="mimic",
             reference_statblock="Mimic",
+            icon="mimic-chest",
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

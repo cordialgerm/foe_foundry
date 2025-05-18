@@ -22,6 +22,7 @@ class BugbearPower(PowerWithStandardScoring):
         self,
         name: str,
         power_level: float = MEDIUM_POWER,
+        icon: str | None = None,
         create_date: datetime | None = datetime(2025, 4, 6),
         **score_args,
     ):
@@ -31,6 +32,7 @@ class BugbearPower(PowerWithStandardScoring):
             theme="bugbear",
             reference_statblock="Bugbear",
             power_level=power_level,
+            icon=icon,
             power_type=PowerType.Creature,
             create_date=create_date,
             score_args=dict(
@@ -45,6 +47,7 @@ class _SnatchAndGrab(BugbearPower):
     def __init__(self):
         super().__init__(
             name="Vice-Like Grip",
+            icon="grab",
         )
 
     def generate_features(self, stats: BaseStatblock) -> list[Feature]:
@@ -60,7 +63,9 @@ class _SnatchAndGrab(BugbearPower):
 
 class _FreakishlySkinny(BugbearPower):
     def __init__(self):
-        super().__init__(name="Freakishly Skinny", power_level=RIBBON_POWER)
+        super().__init__(
+            name="Freakishly Skinny", icon="dungeon-gate", power_level=RIBBON_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> list[Feature]:
         feature = Feature(
@@ -100,6 +105,7 @@ class _SurpriseStrangle(BugbearPower):
     def __init__(self):
         super().__init__(
             name="Surprise Strangle",
+            icon="slipknot",
             power_level=MEDIUM_POWER,
         )
 
@@ -122,6 +128,7 @@ class _Skulk(BugbearPower):
     def __init__(self):
         super().__init__(
             name="Skulk",
+            icon="hidden",
             power_level=RIBBON_POWER,
         )
 

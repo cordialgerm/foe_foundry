@@ -24,6 +24,7 @@ class GhoulPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -49,6 +50,7 @@ class _Cannibal(GhoulPower):
         super().__init__(
             name="Cannibal",
             source="Foe Foundry",
+            icon="eating",
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 20),
         )
