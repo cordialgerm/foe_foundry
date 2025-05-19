@@ -7,6 +7,7 @@ tags:
   - tips
 image: img/angel.webp
 json_ld: true
+date: 2025-05-10
 ---
 
 [[@Join the Foe Foundry Newsletter]]

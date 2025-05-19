@@ -13,6 +13,12 @@ log = logging.getLogger("mkdocs")
 
 
 def set_related_monsters_on_page(page: Page, markdown: str):
+    # allow pages to opt out of this feature
+
+    hidden = page.meta.get("hide", [])
+    if isinstance(hidden, list) and "related_monsters" in hidden:
+        return
+
     # do another rendering pass on the markdown just to find referenced monsters
     # we're going to discard the actual rendered markdown, we just want to see the references
     rendered_markdown = render_markdown(markdown)

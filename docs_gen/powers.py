@@ -54,10 +54,7 @@ def generate_theme_file(theme: str, powers: list[PowerModel]):
     ]
 
     for power in powers:
-        lines.append(f"## {power.name}\n")
-        for feature in power.features:
-            lines.append(f"***{feature.name}***: {feature.description_md}")
-            lines.append("\n")
+        lines.append(f"[[!{power.name}]]")
         lines.append("---\n")
 
     # Write it into the virtual MkDocs build

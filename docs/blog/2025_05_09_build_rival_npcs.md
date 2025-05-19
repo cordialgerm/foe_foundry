@@ -7,6 +7,7 @@ tags:
   - tips
 image: img/rival.webp
 json_ld: true
+date: 2025-05-09
 ---
 
 [[@Subscribe to the Newsletter]]

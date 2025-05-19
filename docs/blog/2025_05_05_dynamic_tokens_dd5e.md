@@ -8,6 +8,7 @@ tags:
 footer:
   - Art by Carlos Castilho. Used with permission.
 json_ld: true
+date: 2025-05-03
 ---
 
 [[@Subscribe to the Newsletter]]
