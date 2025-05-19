@@ -1,17 +1,32 @@
-# build_docs.sh
 #!/bin/bash
 
-# Make sure we stop on any error
+# Stop on any error
 set -e
 
 # Move back to the root of the repository
 cd "$(dirname "$0")/.."
 
-# if the repository is shallow, fetch the rest of the history
-# this is needed for the blogging plugin, which relies on git history
+# Check if Git is available
+command -v git >/dev/null 2>&1 || {
+  echo "❌ Error: git is not installed or not in PATH." >&2
+  exit 1
+}
+
+# If the repository is shallow, fetch the rest of the history
+# This is needed for the blogging plugin, which relies on git history
 if git rev-parse --is-shallow-repository; then
-  echo "Fetching the rest of the git history..."
-  git fetch --unshallow
+  echo "Repository is shallow. Attempting to fetch full git history..."
+  echo "📈 Commit count before fetch: $(git rev-list --count HEAD)"
+
+  if git fetch --unshallow --progress; then
+    echo "✅ Successfully fetched full history."
+    echo "📈 Commit count after fetch: $(git rev-list --count HEAD)"
+  else
+    echo "❌ git fetch --unshallow failed!" >&2
+    exit 1
+  fi
+else
+  echo "👍 Repository is already a full clone. No fetch needed."
 fi
 
 # Make sure the venv is in sync with the lock file
