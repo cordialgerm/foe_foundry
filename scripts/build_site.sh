@@ -14,6 +14,12 @@ poetry install --sync
 export PYTHONPATH=.
 export SITE_URL=${SITE_URL:-http://127.0.0.1:8080/}
 
+# if the repository is shallow, fetch the rest of the history
+# this is needed for the blogging plugin, which relies on git history
+if git rev-parse --is-shallow-repository; then
+  git fetch --unshallow
+fi
+
 # Build the static content
 poetry run mkdocs build --clean
 
