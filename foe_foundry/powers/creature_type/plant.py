@@ -38,7 +38,7 @@ class PlantPower(PowerWithStandardScoring):
 
 class _VineWhip(PlantPower):
     def __init__(self):
-        super().__init__(name="Vine Whip", source="Foe Foundry")
+        super().__init__(name="Vine Whip", source="Foe Foundry", icon="vine-whip")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -90,7 +90,7 @@ class _VineWhip(PlantPower):
 
 class _Entangle(PlantPower):
     def __init__(self):
-        super().__init__(name="Entangle", source="SRD5.1 Entangle")
+        super().__init__(name="Entangle", source="SRD5.1 Entangle", icon="root-tip")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -105,6 +105,7 @@ class _ChokingVine(PlantPower):
         super().__init__(
             name="Choking Vine",
             source="Foe Foundry",
+            icon="curling-vines",
             require_attack_types=AttackType.AllMelee(),
         )
 
@@ -134,6 +135,7 @@ class _HypnoticSpores(PlantPower):
         super().__init__(
             name="Hypnotic Spores",
             source="SRD5.1 Hypnotic Pattern",
+            icon="pollen-dust",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,7 +156,9 @@ class _HypnoticSpores(PlantPower):
 
 class _SpikeGrowth(PlantPower):
     def __init__(self):
-        super().__init__(name="Spike Growth", source="SRD5.1 Spike Growth")
+        super().__init__(
+            name="Spike Growth", icon="spikes-full", source="SRD5.1 Spike Growth"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = min(3, ceil(stats.cr / 5))

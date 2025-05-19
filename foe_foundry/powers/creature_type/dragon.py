@@ -16,6 +16,7 @@ class DraconicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -29,13 +30,14 @@ class DraconicPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="Dragon",
             reference_statblock="Adult Red Dragon",
+            icon=icon,
             score_args=standard_score_args,
         )
 
 
 class _FrightfulGaze(DraconicPower):
     def __init__(self):
-        super().__init__(name="Frightful Gaze", source="Foe Foundry")
+        super().__init__(name="Frightful Gaze", source="Foe Foundry", icon="dread")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -57,6 +59,7 @@ class _TailSwipe(DraconicPower):
         super().__init__(
             name="Tail Swipe",
             source="A5E SRD Ancient Red Dragon",
+            icon="reptile-tail",
             attack_names=natural_attacks.Tail,
         )
 
@@ -90,6 +93,7 @@ class _WingBuffet(DraconicPower):
         super().__init__(
             name="Wing Buffet",
             source="5.1 SRD Ancient Red Dragon",
+            icon="wyvern",
             bonus_cr=7,
             require_flying=True,
         )
@@ -112,7 +116,7 @@ class _WingBuffet(DraconicPower):
 
 class _DragonsGreed(DraconicPower):
     def __init__(self):
-        super().__init__(name="Dragon's Greed", source="Foe Foundry")
+        super().__init__(name="Dragon's Greed", source="Foe Foundry", icon="coins-pile")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -156,6 +160,7 @@ class _DraconicMinions(DraconicPower):
         super().__init__(
             name="Draconic Minions",
             source="Foe Foundry",
+            icon="minions",
             power_level=HIGH_POWER,
             require_cr=7,
             require_callback=_check_draconic_minions,
@@ -191,6 +196,7 @@ class _VengefulBreath(DraconicPower):
         super().__init__(
             name="Vengeful Breath",
             source="A5E SRD Behir",
+            icon="dragon-head",
             create_date=datetime(2023, 11, 22),
         )
 

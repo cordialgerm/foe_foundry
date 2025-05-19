@@ -22,6 +22,7 @@ class SpiderPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime = datetime(2025, 3, 28),
         **score_args,
@@ -35,6 +36,7 @@ class SpiderPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Spider",
+            icon=icon,
             reference_statblock="Giant Spider",
             score_args=standard_score_args,
         )
@@ -45,6 +47,7 @@ class _Web(SpiderPower):
         super().__init__(
             name="Web",
             source="SRD 5.1 Giant Spider",
+            icon="spider-web",
             attack_names={
                 "-",
                 natural_attacks.Bite,

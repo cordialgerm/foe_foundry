@@ -25,6 +25,7 @@ class DevilPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -36,6 +37,7 @@ class DevilPower(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="Devil",
             reference_statblock="Pit Fiend",
             score_args=standard_score_args,
@@ -47,6 +49,7 @@ class _WallOfFire(DevilPower):
         super().__init__(
             name="Wall of Fire",
             source="SRD5.1 Wall of Fire",
+            icon="fire-wave",
             require_cr=5,
             bonus_damage=DamageType.Fire,
         )
@@ -76,6 +79,7 @@ class _DevilishMinions(DevilPower):
         super().__init__(
             name="Devilish Minions",
             source="Foe Foundry",
+            icon="minions",
             power_level=HIGH_POWER,
             require_cr=3,
         )
@@ -100,7 +104,9 @@ class _DevilishMinions(DevilPower):
 
 class _TemptingOffer(DevilPower):
     def __init__(self):
-        super().__init__(name="Tempting Offer", source="Foe Foundry", require_cr=3)
+        super().__init__(
+            name="Tempting Offer", source="Foe Foundry", icon="cash", require_cr=3
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -119,7 +125,10 @@ class _TemptingOffer(DevilPower):
 class _DevilsSight(DevilPower):
     def __init__(self):
         super().__init__(
-            name="Devil's Sight", source="Foe Foundry", bonus_damage=DamageType.Fire
+            name="Devil's Sight",
+            source="Foe Foundry",
+            icon="night-vision",
+            bonus_damage=DamageType.Fire,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

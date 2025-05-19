@@ -24,6 +24,7 @@ class WightPower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str,
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 4, 12),
@@ -58,6 +59,7 @@ class _SoulChillingCommand(WightPower):
     def __init__(self):
         super().__init__(
             name="Soul Chilling Command",
+            icon="overlord-helm",
             power_level=MEDIUM_POWER,
             require_roles=MonsterRole.Leader,
             bonus_damage=DamageType.Cold,
@@ -84,6 +86,7 @@ class _HeartFreezingGrasp(WightPower):
     def __init__(self):
         super().__init__(
             name="Heart Freezing Grasp",
+            icon="ice-spell-cast",
             power_level=MEDIUM_POWER,
             bonus_damage=DamageType.Cold,
         )
