@@ -6,6 +6,7 @@ tags:
   - tips
 image: img/icons/favicon.webp
 json_ld: true
+date: 2025-05-16
 ---
 
 # 5 Tips for Homebrewing Monsters
