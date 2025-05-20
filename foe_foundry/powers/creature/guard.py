@@ -22,6 +22,7 @@ class GuardPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -37,6 +38,7 @@ class GuardPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="guard",
+            icon=icon,
             reference_statblock="Guard",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -54,6 +56,7 @@ class _ProtectTheTarget(GuardPower):
         super().__init__(
             name="Protect the Target",
             source="Foe Foundry",
+            icon="shield-bounces",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
         )
@@ -72,6 +75,7 @@ class _SoundTheAlarm(GuardPower):
         super().__init__(
             name="Sound the Alarm",
             source="Foe Foundry",
+            icon="whistle",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
         )
@@ -96,6 +100,7 @@ class _DefensiveFormation(GuardPower):
         super().__init__(
             name="Defensive Formation",
             source="Foe Foundry",
+            icon="shield-echoes",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
         )
@@ -114,6 +119,7 @@ class _CallReinforcements(GuardPower):
         super().__init__(
             name="Call Reinforcements",
             source="Foe Foundry",
+            icon="megaphone",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 23),
         )

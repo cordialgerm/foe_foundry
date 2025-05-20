@@ -30,6 +30,7 @@ class SoldierPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -46,6 +47,7 @@ class SoldierPower(PowerWithStandardScoring):
             power_type=PowerType.Role,
             power_level=power_level,
             source=source,
+            icon=icon,
             create_date=create_date,
             theme="soldier",
             reference_statblock="Warrior",
@@ -55,7 +57,12 @@ class SoldierPower(PowerWithStandardScoring):
 
 class _Phalanx(SoldierPower):
     def __init__(self):
-        super().__init__(name="Phalanx", source="Foe Foundry", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Phalanx",
+            icon="spears",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -69,7 +76,10 @@ class _Phalanx(SoldierPower):
 class _CoordinatedStrike(SoldierPower):
     def __init__(self):
         super().__init__(
-            name="Coordinated Strike", source="Foe Foundry", power_level=MEDIUM_POWER
+            name="Coordinated Strike",
+            icon="switch-weapons",
+            source="Foe Foundry",
+            power_level=MEDIUM_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -87,6 +97,7 @@ class _PackTactics(SoldierPower):
         super().__init__(
             name="Pack Tactics",
             source="SRD5.1 Wolf",
+            icon="wolf-head",
             require_types={
                 CreatureType.Beast,
                 CreatureType.Humanoid,
@@ -111,7 +122,10 @@ class _PackTactics(SoldierPower):
 class _Disciplined(SoldierPower):
     def __init__(self):
         super().__init__(
-            name="Disciplined", source="Foe Foundry", require_roles=MonsterRole.Soldier
+            name="Disciplined",
+            icon="spartan",
+            source="Foe Foundry",
+            require_roles=MonsterRole.Soldier,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -127,6 +141,7 @@ class _ActionSurge(SoldierPower):
     def __init__(self):
         super().__init__(
             name="Action Surge",
+            icon="attack-gauge",
             source="SRD5.1 Action Surge",
             power_level=HIGH_POWER,
             require_cr=3,
@@ -147,6 +162,7 @@ class _Leap(SoldierPower):
         super().__init__(
             name="Mighty Leap",
             source="A5E SRD Bulette",
+            icon="jump-across",
             create_date=datetime(2023, 11, 23),
             require_stats=Stats.STR,
             bonus_size=Size.Large,
@@ -187,6 +203,7 @@ class _BreakMagic(SoldierPower):
         super().__init__(
             name="Break Magic",
             source="A5E SRD Dread Knight",
+            icon="stop-sign",
             power_level=MEDIUM_POWER,
             require_cr=8,
         )
@@ -206,6 +223,7 @@ class _Lunge(SoldierPower):
     def __init__(self):
         super().__init__(
             name="Lunge",
+            icon="knife-thrust",
             source="Foe Foundry",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 23),
@@ -227,6 +245,7 @@ class _PreciseStrike(SoldierPower):
         super().__init__(
             name="Precise Strike",
             source="Foe Foundry",
+            icon="bullseye",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
         )

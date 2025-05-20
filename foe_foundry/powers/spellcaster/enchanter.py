@@ -43,7 +43,7 @@ EnchanterExpertSpells = (
 
 class _EnchanterWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Enchanter", **kwargs)
+        super().__init__(creature_name="Enchanter", icon="charm", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

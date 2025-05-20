@@ -23,6 +23,7 @@ class FiendishPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -36,6 +37,7 @@ class FiendishPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="Fiend",
             reference_statblock="Balor",
+            icon=icon,
             score_args=standard_score_args,
         )
 
@@ -45,6 +47,7 @@ class _CallOfTheStyx(FiendishPower):
         super().__init__(
             name="Call of the Styx",
             source="Foe Foundry",
+            icon="river",
             create_date=datetime(2023, 11, 21),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Cold,
@@ -71,7 +74,10 @@ class _CallOfTheStyx(FiendishPower):
 class _FiendishCackle(FiendishPower):
     def __init__(self):
         super().__init__(
-            name="Fiendish Cackle", source="Foe Foundry", bonus_damage=DamageType.Fire
+            name="Fiendish Cackle",
+            source="Foe Foundry",
+            icon="imp-laugh",
+            bonus_damage=DamageType.Fire,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -101,6 +107,7 @@ class _FieryTeleporation(FiendishPower):
         super().__init__(
             name="Fiery Teleportation",
             source="Foe Foundry",
+            icon="fire-dash",
             bonus_damage=DamageType.Fire,
             require_no_flags="fiend_teleportation",
         )
@@ -131,6 +138,7 @@ class _FiendishTeleporation(FiendishPower):
         super().__init__(
             name="Fiendish Teleportation",
             source="Foe Foundry",
+            icon="body-swapping",
             require_no_flags="fiend_teleportation",
         )
 

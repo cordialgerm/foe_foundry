@@ -34,6 +34,7 @@ class SneakyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -41,6 +42,7 @@ class SneakyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             theme="sneaky",
             reference_statblock="Spy",
             power_level=power_level,
@@ -64,6 +66,7 @@ class _SneakyStrike(SneakyPower):
         super().__init__(
             name="Sneaky Strike",
             source="Foe Foundry",
+            icon="backstab",
             power_level=HIGH_POWER,
             require_attack_types=AttackType.AllWeapon(),
         )
@@ -87,6 +90,7 @@ class _FalseAppearance(SneakyPower):
         super().__init__(
             name="False Appearance",
             source="SRD5.1 Animated Armor",
+            icon="domino-mask",
             power_level=RIBBON_POWER,
             require_types=[
                 CreatureType.Plant,
@@ -107,7 +111,10 @@ class _FalseAppearance(SneakyPower):
 class _Vanish(SneakyPower):
     def __init__(self):
         super().__init__(
-            name="Vanish", source="SRD5.1 Ranger", require_callback=no_unique_movement
+            name="Vanish",
+            icon="invisible",
+            source="SRD5.1 Ranger",
+            require_callback=no_unique_movement,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -130,6 +137,7 @@ class _CheapShot(SneakyPower):
         super().__init__(
             name="Cheap Shot",
             source="Foe Foundry",
+            icon="tripwire",
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,
             require_callback=not_caster,
@@ -154,6 +162,7 @@ class _ExploitAdvantage(SneakyPower):
         super().__init__(
             name="Deadeye Shot",
             source="A5E SRD Deadeye Shot",
+            icon="target-laser",
             require_attack_types=AttackType.AllRanged(),
         )
 

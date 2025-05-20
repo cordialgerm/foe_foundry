@@ -31,6 +31,7 @@ class HydraPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="hydra",
+            icon="hydra",
             reference_statblock="Hydra",
             power_level=power_level,
             power_type=PowerType.Creature,

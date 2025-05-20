@@ -17,6 +17,7 @@ class TeleportationPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -40,6 +41,7 @@ class TeleportationPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="teleportation",
+            icon=icon,
             reference_statblock="Transmuter Mage",
             power_level=power_level,
             power_type=PowerType.Theme,
@@ -66,7 +68,7 @@ class TeleportationPower(PowerWithStandardScoring):
 
 class _BendSpace(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Bend Space", source="Foe Foundry")
+        super().__init__(name="Bend Space", icon="thrust-bend", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -86,6 +88,7 @@ class _MistyStep(TeleportationPower):
         super().__init__(
             name="Misty Step",
             source="SRD5.1 Misty Step",
+            icon="journey",
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
             require_no_flags={flags.HAS_TELEPORT, flags.NO_TELEPORT},
@@ -111,7 +114,7 @@ class _MistyStep(TeleportationPower):
 
 class _Scatter(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Scatter", source="Foe Foundry")
+        super().__init__(name="Scatter", icon="misdirection", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 6 else 60

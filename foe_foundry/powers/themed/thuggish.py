@@ -16,6 +16,7 @@ class ThuggishPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = datetime(2025, 3, 22),
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -38,6 +39,7 @@ class ThuggishPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="thuggish",
+            icon=icon,
             reference_statblock="Thug",
             create_date=create_date,
             power_level=power_level,
@@ -49,6 +51,7 @@ class _MobBoss(ThuggishPower):
     def __init__(self):
         super().__init__(
             name="Mob Boss",
+            icon="minions",
             source="Foe Foundry",
         )
 
@@ -66,6 +69,7 @@ class _KickTheLickspittle(ThuggishPower):
     def __init__(self):
         super().__init__(
             name="Kick the Lickspittle",
+            icon="boot-kick",
             source="Foe Foundry",
         )
 
@@ -83,8 +87,7 @@ class _KickTheLickspittle(ThuggishPower):
 class _ExploitTheChaos(ThuggishPower):
     def __init__(self):
         super().__init__(
-            name="Exploit the Chaos",
-            source="Foe Foundry",
+            name="Exploit the Chaos", source="Foe Foundry", icon="target-dummy"
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

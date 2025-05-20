@@ -15,6 +15,7 @@ class _BreathPower(PowerWithStandardScoring):
         name: str,
         breath: DamageType,
         save: str,
+        icon: str = "dragon-breath",
         on_failure: str | Callable[[BaseStatblock, DieFormula], str] | None = None,
     ):
         super().__init__(
@@ -24,6 +25,7 @@ class _BreathPower(PowerWithStandardScoring):
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 28),
             theme="Breath",
+            icon=icon,
             reference_statblock="Adult Red Dragon",
             score_args=dict(require_damage=breath, require_types={CreatureType.Dragon}),
         )

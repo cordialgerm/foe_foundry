@@ -22,6 +22,7 @@ class OozePower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -31,6 +32,7 @@ class OozePower(PowerWithStandardScoring):
             name=name,
             power_type=PowerType.CreatureType,
             source=source,
+            icon=icon,
             create_date=create_date,
             power_level=power_level,
             theme="Ooze",
@@ -44,6 +46,7 @@ class _EngulfInSlime(OozePower):
         super().__init__(
             name="Engulf in Slime",
             source="Foe Foundry",
+            icon="slime",
             create_date=datetime(2023, 11, 23),
             require_size=Size.Large,
             bonus_damage=DamageType.Acid,
@@ -69,6 +72,7 @@ class _Quicksand(OozePower):
         super().__init__(
             name="Quicksand",
             source="Foe Foundry",
+            icon="quicksand",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
         )
@@ -97,6 +101,7 @@ class _Split(OozePower):
     def __init__(self):
         super().__init__(
             name="Split",
+            icon="transparent-slime",
             source="SRD 5.1 Ochre Jelly",
             power_level=HIGH_POWER,
             require_size=Size.Medium,
@@ -115,6 +120,7 @@ class _Transparent(OozePower):
     def __init__(self):
         super().__init__(
             name="Transparent",
+            icon="invisible",
             source="SRD5.1 Gelatinous Cube",
             power_level=RIBBON_POWER,
         )
@@ -134,6 +140,7 @@ class _LeechingGrasp(OozePower):
         super().__init__(
             name="Leeching Grasp",
             source="Foe Foundry",
+            icon="leeching-worm",
             create_date=datetime(2023, 11, 22),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Necrotic,
@@ -158,7 +165,10 @@ class _LeechingGrasp(OozePower):
 class _SlimeSpray(OozePower):
     def __init__(self):
         super().__init__(
-            name="Slime Spray", source="Foe Foundry", bonus_damage=DamageType.Acid
+            name="Slime Spray",
+            source="Foe Foundry",
+            icon="spray",
+            bonus_damage=DamageType.Acid,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

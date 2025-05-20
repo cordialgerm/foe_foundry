@@ -10,7 +10,6 @@ from . import (
     breath,
     chaotic,
     charm,
-    classes,
     clever,
     cowardly,
     cruel,
@@ -54,7 +53,6 @@ ThemedPowers: List[Power] = (
     + breath.BreathPowers
     + chaotic.ChaoticPowers
     + charm.CharmPowers
-    + classes.ClassPowers
     + clever.CleverPowers
     + cruel.CruelPowers
     + cursed.CursedPowers

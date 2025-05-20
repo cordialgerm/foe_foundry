@@ -40,6 +40,7 @@ class CowardlyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Goblin",
         create_date: datetime | None = datetime(2025, 3, 22),
@@ -51,6 +52,7 @@ class CowardlyPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             theme="cowardly",
+            icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=dict(
@@ -67,6 +69,7 @@ class _ScurryAndScatter(CowardlyPower):
         super().__init__(
             name="Scurry and Scatter",
             source="Foe Foundry",
+            icon="misdirection",
             power_level=LOW_POWER,
         )
 
@@ -85,6 +88,7 @@ class _GrovelAndBeg(CowardlyPower):
         super().__init__(
             name="Grovel and Beg",
             source="Foe Foundry",
+            icon="kneeling",
             power_level=LOW_POWER,
         )
 
@@ -111,6 +115,7 @@ class _FeignDeath(CowardlyPower):
         super().__init__(
             name="Feign Death",
             source="Foe Foundry",
+            icon="dead-head",
             power_level=LOW_POWER,
         )
 

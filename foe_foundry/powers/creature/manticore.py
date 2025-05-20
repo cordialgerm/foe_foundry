@@ -19,12 +19,13 @@ def is_manticore(s: BaseStatblock) -> bool:
 
 
 class ManticorePower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER):
+    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
             source="Foe Foundry",
             theme="manticore",
             reference_statblock="Manticore",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 15),
@@ -38,7 +39,7 @@ class ManticorePower(PowerWithStandardScoring):
 
 class _SpikeVolley(ManticorePower):
     def __init__(self):
-        super().__init__(name="Spike Volley")
+        super().__init__(name="Spike Volley", icon="spiked-tail")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.75, force_die=Die.d6)
@@ -59,7 +60,7 @@ class _SpikeVolley(ManticorePower):
 
 class _CruelJeer(ManticorePower):
     def __init__(self):
-        super().__init__(name="Cruel Jeer")
+        super().__init__(name="Cruel Jeer", icon="morbid-humour")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

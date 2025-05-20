@@ -16,6 +16,7 @@ class BestialPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         reference_statblock: str = "Dire Wolf",
         power_level: float = MEDIUM_POWER,
@@ -34,6 +35,7 @@ class BestialPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             theme="Bestial",
             reference_statblock=reference_statblock,
             create_date=create_date,
@@ -46,7 +48,10 @@ class BestialPower(PowerWithStandardScoring):
 class _RetributiveStrike(BestialPower):
     def __init__(self):
         super().__init__(
-            name="Retributive Strike", source="A5E SRD Roc", power_level=HIGH_POWER
+            name="Retributive Strike",
+            source="A5E SRD Roc",
+            icon="wind-slap",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -66,6 +71,7 @@ class _OpportuneBite(BestialPower):
         super().__init__(
             name="Opportune Bite",
             source="A5E SRD Lion",
+            icon="sharp-lips",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", natural.Bite],
         )
@@ -85,6 +91,7 @@ class _Trample(BestialPower):
             name="Trample",
             source="A5E SRD Mammoth",
             reference_statblock="Mammoth",
+            icon="hoof",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", natural.Stomp],
         )
@@ -107,6 +114,7 @@ class _BurrowingAmbush(BestialPower):
             name="Burrowing Ambush",
             source="A5E SRD Ankheg Queen",
             reference_statblock="Ankheg",
+            icon="mole",
             create_date=datetime(2023, 11, 22),
             attack_names=natural.Claw,
             require_callback=can_burrow,
@@ -134,6 +142,7 @@ class _TurboTrot(BestialPower):
             name="Turbo Trot",
             source="A5E SRD Centaur",
             reference_statblock="Mammoth",
+            icon="hoof",
             create_date=datetime(2023, 11, 28),
             attack_names=["-", natural.Stomp],
         )
@@ -154,6 +163,7 @@ class _MarkTheMeal(BestialPower):
         super().__init__(
             name="Mark the Meal",
             source="Foe Foundry",
+            icon="caveman",
             create_date=datetime(2023, 11, 28),
             attack_names=["-", natural.Bite],
         )

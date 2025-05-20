@@ -30,6 +30,7 @@ class _PsionicCaster(_Spellcaster):
                 theme="psionic",
                 creature_class="Psion",
                 reference_statblock="Psionic Warrior",
+                icon="psychic-waves",
                 caster_type=CasterType.Psionic,
                 score_args=dict(
                     require_no_creature_class=True,

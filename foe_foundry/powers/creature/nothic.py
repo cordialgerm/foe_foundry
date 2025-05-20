@@ -30,12 +30,15 @@ def is_nothic(s: BaseStatblock) -> bool:
 
 
 class _NothicPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = LOW_POWER):
+    def __init__(
+        self, name: str, icon: str = "cursed-star", power_level: float = LOW_POWER
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
             theme="hollow_gazer",
             reference_statblock="Hollow Gazer",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 4),
@@ -94,7 +97,9 @@ class _MindShatteringPrediction(_NothicPower):
 
 class _WarpingMadness(_NothicPower):
     def __init__(self):
-        super().__init__(name="Warping Madness", power_level=RIBBON_POWER)
+        super().__init__(
+            name="Warping Madness", icon="mad-scientist", power_level=RIBBON_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         gibbering_mouther = creature_ref("Gibbering Mouther")

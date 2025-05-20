@@ -15,6 +15,7 @@ class SupportPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -30,6 +31,7 @@ class SupportPower(PowerWithStandardScoring):
             power_type=PowerType.Role,
             power_level=power_level,
             source=source,
+            icon=icon,
             create_date=create_date,
             theme="Support",
             reference_statblock="Priest",
@@ -40,7 +42,10 @@ class SupportPower(PowerWithStandardScoring):
 class _Encouragement(SupportPower):
     def __init__(self):
         super().__init__(
-            name="Encouragement", source="Foe Foundry", create_date=datetime(2025, 3, 1)
+            name="Encouragement",
+            icon="talk",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 1),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -69,7 +74,10 @@ class _Encouragement(SupportPower):
 class _Guidance(SupportPower):
     def __init__(self):
         super().__init__(
-            name="Guidance", source="Foe Foundry", create_date=datetime(2025, 3, 1)
+            name="Guidance",
+            icon="three-friends",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 1),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -86,7 +94,10 @@ class _Guidance(SupportPower):
 class _Sanctuary(SupportPower):
     def __init__(self):
         super().__init__(
-            name="Sanctuary", source="Foe Foundry", create_date=datetime(2025, 3, 1)
+            name="Sanctuary",
+            icon="church",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 1),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -102,7 +113,10 @@ class _Sanctuary(SupportPower):
 class _WardingBond(SupportPower):
     def __init__(self):
         super().__init__(
-            name="Warding Bond", source="Foe Foundry", create_date=datetime(2025, 3, 1)
+            name="Warding Bond",
+            icon="chained-heart",
+            source="Foe Foundry",
+            create_date=datetime(2025, 3, 1),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

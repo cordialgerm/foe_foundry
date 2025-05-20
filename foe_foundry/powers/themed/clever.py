@@ -19,6 +19,7 @@ class CleverPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Spy",
@@ -36,6 +37,7 @@ class CleverPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Theme,
             source=source,
+            icon=icon,
             theme="clever",
             reference_statblock=reference_statblock,
             create_date=create_date,
@@ -46,7 +48,10 @@ class CleverPower(PowerWithStandardScoring):
 class _IdentifyWeakness(CleverPower):
     def __init__(self):
         super().__init__(
-            name="Identify Weakness", source="Foe Foundry", power_level=LOW_POWER
+            name="Identify Weakness",
+            icon="magnifying-glass",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -77,6 +82,7 @@ class _ArcaneMark(CleverPower):
         super().__init__(
             name="Arcane Mark",
             source="SRD5.1 Faerie Fire",
+            icon="abstract-013",
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.RangedSpell,
             bonus_types=CreatureType.Fey,
@@ -100,7 +106,9 @@ class _ArcaneMark(CleverPower):
 
 class _UnsettlingWords(CleverPower):
     def __init__(self):
-        super().__init__(name="Unsettling Words", source="Foe Foundry")
+        super().__init__(
+            name="Unsettling Words", icon="nailed-head", source="Foe Foundry"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 7)

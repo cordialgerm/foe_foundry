@@ -15,6 +15,7 @@ class AberrantPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -51,6 +52,7 @@ class AberrantPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Aberrant",
             reference_statblock="Aboleth",
             score_args=standard_score_args,
@@ -65,7 +67,9 @@ class AberrantPower(PowerWithStandardScoring):
 
 class _ModifyMemory(AberrantPower):
     def __init__(self):
-        super().__init__(name="Modify Memory", source="SRD5.1 Modify Memory")
+        super().__init__(
+            name="Modify Memory", icon="misdirection", source="SRD5.1 Modify Memory"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -81,7 +85,7 @@ class _ModifyMemory(AberrantPower):
 
 class _WarpReality(AberrantPower):
     def __init__(self):
-        super().__init__(name="Warp Reality", source="Foe Foundry")
+        super().__init__(name="Warp Reality", icon="abstract-119", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -100,7 +104,7 @@ class _WarpReality(AberrantPower):
 
 class _Adhesive(AberrantPower):
     def __init__(self):
-        super().__init__(name="Adhesive", source="SRD5.1 Mimic")
+        super().__init__(name="Adhesive", icon="sticky-boot", source="SRD5.1 Mimic")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -120,6 +124,7 @@ class _Incubation(AberrantPower):
         super().__init__(
             name="Incubation",
             source="Foe Foundry",
+            icon="alien-egg",
             power_level=HIGH_POWER,
             attack_names=["-", natural.Claw],
         )

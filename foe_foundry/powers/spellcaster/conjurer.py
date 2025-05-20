@@ -35,7 +35,7 @@ ConjurationExpertSpells = (
 
 class _ConjurationWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Conjurer", **kwargs)
+        super().__init__(creature_name="Conjurer", icon="pentacle", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         creature, _, description = determine_summon_formula(

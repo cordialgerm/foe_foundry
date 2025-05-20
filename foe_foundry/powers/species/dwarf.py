@@ -21,6 +21,7 @@ class DwarvenPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -42,6 +43,7 @@ class DwarvenPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             reference_statblock="Warrior",
             theme="Dwarf",
             score_args=standard_score_args,
@@ -54,6 +56,7 @@ class DwarvenPowerWrapper(DwarvenPower):
         name: str,
         source: str,
         wrapped_power: Power,
+        icon: str | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -61,6 +64,7 @@ class DwarvenPowerWrapper(DwarvenPower):
             name=name,
             source=source,
             create_date=create_date,
+            icon=icon or wrapped_power.icon or "dwarf-face",
             power_level=wrapped_power.power_level,
             **score_args,
         )
@@ -78,6 +82,7 @@ class _HardDrink(DwarvenPower):
         super().__init__(
             name="Hard Drink",
             source="Foe Foundry",
+            icon="beer-stein",
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 17),
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
@@ -98,6 +103,7 @@ class _DwarvenResilience(DwarvenPower):
         super().__init__(
             name="Dwarven Resilience",
             source="Foe Foundry",
+            icon="dwarf-face",
             power_level=RIBBON_POWER,
             bonus_roles=[MonsterRole.Defender],
         )

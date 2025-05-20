@@ -59,6 +59,7 @@ class _CelestialCaster(_Spellcaster):
             dict(
                 theme="Celestial",
                 reference_statblock="Deva",
+                icon="angel-wings",
                 score_args=dict(
                     require_callback=is_celestial_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],

@@ -9,7 +9,12 @@ from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
 
 class AquaticBase(PowerWithStandardScoring):
     def __init__(
-        self, name: str, source: str, power_level: float = RIBBON_POWER, **args
+        self,
+        name: str,
+        source: str,
+        icon: str,
+        power_level: float = RIBBON_POWER,
+        **args,
     ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return not c.has_unique_movement_manipulation
@@ -27,6 +32,7 @@ class AquaticBase(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             theme="Aquatic",
             reference_statblock="Merfolk",
+            icon=icon,
             source=source,
             power_level=power_level,
             score_args=score_args,
@@ -43,7 +49,7 @@ class AquaticBase(PowerWithStandardScoring):
 
 class _Aquatic(AquaticBase):
     def __init__(self):
-        super().__init__(name="Aquatic", source="SRD5.1 Merfolk")
+        super().__init__(name="Aquatic", source="SRD5.1 Merfolk", icon="triton-head")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -58,6 +64,7 @@ class _InkCloud(AquaticBase):
     def __init__(self):
         super().__init__(
             name="Ink Cloud",
+            icon="octopus",
             source="SRD5.1 Octopus",
             power_level=RIBBON_POWER,
         )
@@ -77,6 +84,7 @@ class _SlimyCloud(AquaticBase):
         super().__init__(
             name="Slimy Cloud",
             source="SRD5.1 Aboleth",
+            icon="transparent-slime",
             require_types=[CreatureType.Aberration, CreatureType.Monstrosity],
             bonus_damage=DamageType.Poison,
             require_cr=3,

@@ -1,5 +1,6 @@
 from foe_foundry.features import ActionType
 
+from ..icons import inline_icon
 from ..powers import PowerModel
 from .env import JinjaEnv
 
@@ -19,8 +20,14 @@ def render_power_fragment(power: PowerModel) -> str:
     spellcasting = [f for f in power.features if f.is_spellcasting]
     attack = [f for f in power.features if f.is_attack]
 
+    if power.icon is not None:
+        icon = inline_icon(power.icon)
+    else:
+        icon = None
+
     context = dict(
         power=power,
+        icon=icon,
         passives=passives,
         actions=actions,
         bonuses=bonus_actions,

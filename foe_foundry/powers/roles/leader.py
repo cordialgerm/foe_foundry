@@ -28,6 +28,7 @@ class LeaderPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -45,6 +46,7 @@ class LeaderPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Leader",
+            icon=icon,
             reference_statblock="Knight",
             score_args=standard_score_args,
         )
@@ -54,6 +56,7 @@ class _CommandTheAttack(LeaderPower):
     def __init__(self):
         super().__init__(
             name="Command the Attack",
+            icon="spears",
             source="A5E SRD Knight Captain",
             power_level=HIGH_POWER,
         )
@@ -73,7 +76,10 @@ class _CommandTheAttack(LeaderPower):
 class _Intimidate(LeaderPower):
     def __init__(self):
         super().__init__(
-            name="Intimidate", source="Foe Foundry", require_stats=Stats.CHA
+            name="Intimidate",
+            source="Foe Foundry",
+            require_stats=Stats.CHA,
+            icon="terror",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -99,6 +105,7 @@ class _StayInFormation(LeaderPower):
     def __init__(self):
         super().__init__(
             name="Stay In Formation",
+            icon="roman-shield",
             source="A5E SRD Bugbear Chief",
         )
 
@@ -118,6 +125,7 @@ class _FanaticFollowers(LeaderPower):
     def __init__(self):
         super().__init__(
             name="Fanatic Followers",
+            icon="minions",
             source="A5E SRD Crime Boss",
             power_level=HIGH_POWER,
         )
@@ -138,6 +146,7 @@ class _InspiringCommander(LeaderPower):
         super().__init__(
             name="Inspiring Commander",
             source="A5E SRD Knight",
+            icon="ceasar",
             power_level=HIGH_POWER,
             require_callback=is_positive_leader,
         )
@@ -159,6 +168,7 @@ class _CommandTheTroops(LeaderPower):
         super().__init__(
             name="Command the Troops",
             source="Foe Foundry",
+            icon="rank-3",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
         )
@@ -178,6 +188,7 @@ class _RallyTheTroops(LeaderPower):
     def __init__(self):
         super().__init__(
             name="Rally the Troops",
+            icon="rally-the-troops",
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),

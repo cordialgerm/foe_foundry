@@ -18,6 +18,7 @@ class AmbusherPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Assassin",
@@ -36,6 +37,7 @@ class AmbusherPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="Ambusher",
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
@@ -47,6 +49,7 @@ class _StealthySneak(AmbusherPower):
         super().__init__(
             name="Stealthy Sneak",
             source="A5E SRD Bugbear",
+            icon="cultist",
             create_date=datetime(2023, 11, 22),
         )
 
@@ -66,6 +69,7 @@ class _DeadlyAmbusher(AmbusherPower):
         super().__init__(
             name="Deadly Ambusher",
             source="SRD5.1 Assasin",
+            icon="surprised",
             require_no_flags=flags.MODIFIES_CRITICAL,
         )
 

@@ -35,6 +35,7 @@ class LichPower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str,
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -44,6 +45,7 @@ class LichPower(PowerWithStandardScoring):
             source=source,
             theme="lich",
             reference_statblock="Lich",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 27),
@@ -64,6 +66,7 @@ class _LichSpellcasting(LichPower):
     def __init__(self):
         super().__init__(
             name="Lich Spellcasting",
+            icon="spell-book",
             power_level=HIGH_POWER,
         )
 
@@ -116,6 +119,7 @@ class _SoulHarvest(LichPower):
     def __init__(self):
         super().__init__(
             name="Soul Harvest",
+            icon="soul",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -131,9 +135,7 @@ class _SoulHarvest(LichPower):
 
 class _EverlastingImmortality(LichPower):
     def __init__(self):
-        super().__init__(
-            name="Everlasting Immortality",
-        )
+        super().__init__(name="Everlasting Immortality", icon="crowned-skull")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
@@ -153,6 +155,7 @@ class _UndyingServants(LichPower):
     def __init__(self):
         super().__init__(
             name="Undying Servants",
+            icon="dark-squad",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

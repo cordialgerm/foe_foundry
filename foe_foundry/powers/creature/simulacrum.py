@@ -26,6 +26,7 @@ class _Simulacrum(WizardPower):
         super().__init__(
             creature_name="Simulacrum",
             theme="simulacrum",
+            icon="relationship-bounds",
             reference_statblock="Simulacrum",
             **kwargs,
         )

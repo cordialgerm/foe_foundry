@@ -71,3 +71,9 @@ def test_monster_key_works_for_npcs():
     result = markdown(text)
     assert len(result.references) == 1
     assert "orc-berserker" in result.html
+
+
+def test_embed_icon():
+    text = "This is the [[!grapple.svg]] Grapple icon"
+    result = markdown(text)
+    assert len(result.html) > 100

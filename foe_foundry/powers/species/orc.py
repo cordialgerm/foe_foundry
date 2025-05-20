@@ -35,6 +35,7 @@ class OrcPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -52,6 +53,7 @@ class OrcPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Orc",
             reference_statblock="Orc",
             score_args=standard_score_args,
@@ -72,6 +74,7 @@ class OrcPowerWrapper(OrcPower):
             source=source,
             create_date=create_date,
             power_level=wrapped_power.power_level,
+            icon=wrapped_power.icon or "orc-head",
             **score_args,
         )
         self.wrapped_power = wrapped_power
@@ -93,6 +96,7 @@ class _BloodrageDash(OrcPower):
         super().__init__(
             name="Bloodrage Dash",
             source="Foe Foundry",
+            icon="sprint",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 17),
             require_attack_types=AttackType.AllMelee(),
@@ -119,6 +123,7 @@ class _BloodrageBarrage(OrcPower):
         super().__init__(
             name="Bloodrage Barrage",
             source="Foe Foundry",
+            icon="striking-arrows",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 17),
             require_attack_types=AttackType.AllRanged(),
@@ -140,6 +145,7 @@ class _SavageMomentum(OrcPower):
         super().__init__(
             name="Savage Momentum",
             source="Foe Foundry",
+            icon="fast-forward-button",
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllMelee(),
@@ -161,6 +167,7 @@ class _Bloodfury(OrcPower):
         super().__init__(
             name="Bloodfury",
             source="Foe Foundry",
+            icon="enrage",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllMelee(),
@@ -186,6 +193,7 @@ class _AncestralGuidance(OrcPower):
         super().__init__(
             name="Ancestral Guidance",
             source="Foe Foundry",
+            icon="totem-mask",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 3, 31),
             require_cr=1,
@@ -212,6 +220,7 @@ class _BloodburnTattoo(OrcPower):
         super().__init__(
             name="Bloodburn Tattoo",
             source="Foe Foundry",
+            icon="heart-burn",
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllMelee(),
@@ -237,6 +246,7 @@ class _ThunderwrathTatoo(OrcPower):
         super().__init__(
             name="Thunderwrath Tattoo",
             source="Foe Foundry",
+            icon="thunder-struck",
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllRanged(),
@@ -261,6 +271,7 @@ class _SpiritSneakTatoo(OrcPower):
         super().__init__(
             name="Spirit Sneak Tattoo",
             source="Foe Foundry",
+            icon="snake-totem",
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
@@ -282,6 +293,7 @@ class _EmpoweringTatoo(OrcPower):
         super().__init__(
             name="Empowering Tattoo",
             source="Foe Foundry",
+            icon="strong",
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_cr=1,
@@ -308,6 +320,7 @@ class _SanguineOffering(OrcPower):
         super().__init__(
             name="Sanguine Offering",
             source="Foe Foundry",
+            icon="cut-palm",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 3, 31),
             require_cr=1,
@@ -353,6 +366,7 @@ class _BloodkinBond(OrcPower):
         super().__init__(
             name="Bloodkin Bond",
             source="Foe Foundry",
+            icon="lovers",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 3, 31),
             require_callback=is_valid,
@@ -380,6 +394,7 @@ class _WarCryOfTheBloodiedFang(OrcPower):
         super().__init__(
             name="War-Cry of the Bloodied Fang",
             source="Foe Foundry",
+            icon="shouting",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 3, 31),
             require_cr=4,
@@ -404,6 +419,7 @@ class _WarCryOfTheChillheart(OrcPower):
         super().__init__(
             name="War-Cry of the Chillheart",
             source="Foe Foundry",
+            icon="shouting",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 3, 31),
             require_cr=4,

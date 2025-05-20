@@ -26,6 +26,7 @@ class DeathlyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Zombie",
@@ -54,6 +55,7 @@ class DeathlyPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="death",
+            icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
             score_args=dict(
@@ -75,6 +77,7 @@ class _EndlessServitude(DeathlyPower):
         super().__init__(
             name="Endless Servitude",
             source="Foe Foundry",
+            icon="raise-zombie",
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles=MonsterRole.Leader,
@@ -103,6 +106,7 @@ class _WitheringBlow(DeathlyPower):
         super().__init__(
             name="Withering Blow",
             source="Foe Foundry",
+            icon="mummy-head",
             require_attack_types=AttackType.AllMelee(),
             require_callback=_has_no_other_attacks,
         )
@@ -143,7 +147,7 @@ class _WitheringBlow(DeathlyPower):
 
 class _DrainingBlow(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Draining Blow", source="Foe Foundry")
+        super().__init__(name="Draining Blow", icon="neck-bite", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -163,6 +167,7 @@ class _ShadowWalk(DeathlyPower):
         super().__init__(
             name="Shadow Walk",
             source="A5E SRD Adept",
+            icon="shadow-follower",
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
             require_speed=30,
@@ -185,6 +190,7 @@ class _FleshPuppets(DeathlyPower):
         super().__init__(
             name="Flesh Puppets",
             source="Foe Foundry",
+            icon="puppet",
             power_level=HIGH_POWER,
             require_cr=3,
         )
@@ -212,7 +218,10 @@ class _FleshPuppets(DeathlyPower):
 class _DevourSoul(DeathlyPower):
     def __init__(self):
         super().__init__(
-            name="Devour Soul", source="Foe Foundry", power_level=HIGH_POWER
+            name="Devour Soul",
+            icon="soul",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -234,7 +243,9 @@ class _DevourSoul(DeathlyPower):
 
 class _DrainStrength(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Drain Strength", source="SRD5.1 Shadow")
+        super().__init__(
+            name="Drain Strength", icon="oppression", source="SRD5.1 Shadow"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

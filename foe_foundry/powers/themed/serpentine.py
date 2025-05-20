@@ -16,11 +16,12 @@ from ..power import (
 
 
 class _SerpentinePower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER):
+    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
             source="Foe Foundry",
             theme="serpentine",
+            icon=icon,
             reference_statblock="Giant Snake",
             power_level=power_level,
             power_type=PowerType.Theme,
@@ -36,6 +37,7 @@ class _SerpentineHiss(_SerpentinePower):
     def __init__(self):
         super().__init__(
             name="Serpentine Hiss",
+            icon="snake-tongue",
             power_level=LOW_POWER,
         )
 
@@ -56,6 +58,7 @@ class _InterruptingHiss(_SerpentinePower):
     def __init__(self):
         super().__init__(
             name="Interrupting Hiss",
+            icon="snake-jar",
             power_level=LOW_POWER,
         )
 

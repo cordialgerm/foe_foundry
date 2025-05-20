@@ -14,12 +14,13 @@ def is_druid(c: BaseStatblock) -> bool:
 
 
 class DruidPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER):
+    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
             power_type=PowerType.Species,
             power_level=power_level,
             source="Foe Foundry",
+            icon=icon,
             theme="druid",
             reference_statblock="Druid",
             score_args=dict(
@@ -33,6 +34,7 @@ class _BestialWrath(DruidPower):
     def __init__(self):
         super().__init__(
             name="Bestial Wrath",
+            icon="angry-eyes",
             power_level=MEDIUM_POWER,
         )
 
@@ -55,6 +57,7 @@ class _PrimalEncouragement(DruidPower):
     def __init__(self):
         super().__init__(
             name="Primal Encouragement",
+            icon="ecology",
             power_level=MEDIUM_POWER,
         )
 

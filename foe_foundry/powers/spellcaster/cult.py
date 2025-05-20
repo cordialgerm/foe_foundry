@@ -30,6 +30,7 @@ class _CultCaster(_Spellcaster):
             dict(
                 theme="cult",
                 caster_type=CasterType.Pact,
+                icon="cultist",
                 reference_statblock="Cultist Fanatic",
                 score_args=dict(
                     require_attack_types=AttackType.AllSpell(),

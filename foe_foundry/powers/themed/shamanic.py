@@ -22,6 +22,7 @@ class ShamanicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
         **score_args,
@@ -31,6 +32,7 @@ class ShamanicPower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Theme,
             power_level=power_level,
+            icon=icon,
             theme="shamanic",
             reference_statblock="Druid",
             create_date=create_date,
@@ -52,6 +54,7 @@ class _SpiritWalk(ShamanicPower):
         super().__init__(
             name="Spirit Walk",
             source="Foe Foundry",
+            icon="ifrit",
             power_level=HIGH_POWER,
             require_cr=5,
         )
@@ -77,6 +80,7 @@ class _CommuneWithTheAncestors(ShamanicPower):
         super().__init__(
             name="Commune with the Ancestors",
             source="Foe Foundry",
+            icon="satellite-communication",
             power_level=MEDIUM_POWER,
             require_cr=5,
         )
@@ -97,6 +101,7 @@ class _CommuneWithLand(ShamanicPower):
         super().__init__(
             name="Commune with Land",
             source="Foe Foundry",
+            icon="fuji",
             power_level=HIGH_POWER,
             require_cr=5,
         )
@@ -123,6 +128,7 @@ class _CommuneWithAir(ShamanicPower):
         super().__init__(
             name="Commune with Air",
             source="Foe Foundry",
+            icon="windy-stripes",
             power_level=HIGH_POWER,
             require_cr=5,
         )

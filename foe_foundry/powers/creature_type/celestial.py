@@ -23,6 +23,7 @@ class CelestialPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -37,6 +38,7 @@ class CelestialPower(PowerWithStandardScoring):
             source=source,
             theme="Celestial",
             reference_statblock="Deva",
+            icon=icon,
             score_args=standard_score_args,
         )
 
@@ -46,6 +48,7 @@ class _AbsoluteConviction(CelestialPower):
         super().__init__(
             name="Absolute Conviction",
             source="Foe Foundry",
+            icon="prayer",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -64,7 +67,7 @@ class _AbsoluteConviction(CelestialPower):
 
 class _HealingTouch(CelestialPower):
     def __init__(self):
-        super().__init__(name="Healing Touch", source="SRD5.1 Deva")
+        super().__init__(name="Healing Touch", icon="healing", source="SRD5.1 Deva")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(int(ceil(max(5, 2 * stats.cr))))
@@ -85,6 +88,7 @@ class _RighteousJudgement(CelestialPower):
         super().__init__(
             name="Righteous Judgement",
             source="Foe Foundry",
+            icon="tribunal-jury",
             bonus_damage=DamageType.Radiant,
         )
 
@@ -111,6 +115,7 @@ class _DivineLaw(CelestialPower):
         super().__init__(
             name="Divine Law",
             source="Foe Foundry",
+            icon="hand-of-god",
             power_level=HIGH_POWER,
             require_cr=7,
         )
@@ -149,6 +154,7 @@ class _DivineMercy(CelestialPower):
         super().__init__(
             name="Divine Mercy",
             source="Foe Foundry",
+            icon="templar-heart",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -176,6 +182,7 @@ class _WordsOfRighteousness(CelestialPower):
         super().__init__(
             name="Words of Righteousness",
             source="Foe Foundry",
+            icon="tied-scroll",
             bonus_damage=DamageType.Radiant,
         )
 
@@ -202,6 +209,7 @@ class _AweInspiringGaze(CelestialPower):
         super().__init__(
             name="Awe-Inspiring Gaze",
             source="A5E SRD Planetar",
+            icon="bolt-eye",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 22),
             require_cr=7,

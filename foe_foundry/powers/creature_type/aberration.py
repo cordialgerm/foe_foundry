@@ -18,6 +18,7 @@ class AberrationPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -32,6 +33,7 @@ class AberrationPower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             score_args=standard_score_args,
+            icon=icon,
             theme="Aberration",
             reference_statblock="Aboleth",
         )
@@ -42,6 +44,7 @@ class _TentacleGrapple(AberrationPower):
         super().__init__(
             name="Tentacle Grapple",
             source="Foe Foundry",
+            icon="tentacle-strike",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -64,6 +67,7 @@ class _GazeOfTheFarRealm(AberrationPower):
         super().__init__(
             name="Gaze of the Far Realm",
             source="Foe Foundry",
+            icon="gaze",
             create_date=datetime(2023, 11, 21),
             attack_names=spell.Gaze,
             bonus_damage=DamageType.Psychic,
@@ -92,6 +96,7 @@ class _MaddeningWhispers(AberrationPower):
     def __init__(self):
         super().__init__(
             name="Maddening Whispers",
+            icon="sonic-shout",
             source="5.1 SRD (Gibbering Mouther)",
         )
 
@@ -113,6 +118,7 @@ class _TentacleSlam(AberrationPower):
         super().__init__(
             name="Tentacle Slam",
             source="Foe Foundry",
+            icon="tentacles-barrier",
             attack_names={"-", natural.Tentacle},
         )
 
@@ -137,6 +143,7 @@ class _NullificationMaw(AberrationPower):
         super().__init__(
             name="Nullification Maw",
             source="Foe Foundry",
+            icon="worm-mouth",
             power_level=HIGH_POWER,
             require_size=Size.Large,
             attack_names={"-", natural.Bite},
