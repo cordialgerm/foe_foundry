@@ -40,6 +40,7 @@ class _FiendishCaster(_Spellcaster):
                 theme="fiend",
                 caster_type=CasterType.Innate,
                 reference_statblock="Cambion",
+                icon="evil-fork",
                 score_args=dict(
                     require_types=[
                         CreatureType.Fiend,

@@ -17,6 +17,7 @@ class HalflingPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = RIBBON_POWER,
         **score_args,
@@ -38,6 +39,7 @@ class HalflingPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Halfling",
             reference_statblock="Spy",
             score_args=standard_score_args,
@@ -56,6 +58,7 @@ class _HalflingLuck(HalflingPower):
         super().__init__(
             name="Halfling Luck",
             source="Foe Foundry",
+            icon="clover",
             bonus_roles=[
                 MonsterRole.Ambusher,
                 MonsterRole.Support,
@@ -78,6 +81,7 @@ class _HalflingBravery(HalflingPower):
         super().__init__(
             name="Halfling Bravery",
             source="Foe Foundry",
+            icon="achievement",
             bonus_roles=[
                 MonsterRole.Soldier,
                 MonsterRole.Defender,
@@ -103,6 +107,7 @@ class _HalflingNimbleness(HalflingPower):
         super().__init__(
             name="Halfling Nimbleness",
             source="Foe Foundry",
+            icon="tightrope",
             bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
         )
 

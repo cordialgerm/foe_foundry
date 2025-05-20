@@ -47,6 +47,7 @@ class _Shaman(_Spellcaster):
             caster_type=CasterType.Primal,
             theme="shaman",
             reference_statblock="Druid",
+            icon="totem",
             min_cr=min_cr,
             max_cr=max_cr,
             score_args=dict(require_types=[CreatureType.Humanoid]),

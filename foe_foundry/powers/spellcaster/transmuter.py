@@ -33,7 +33,7 @@ TransmutationExpertSpells = (
 
 class _TransmutationWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Transmuter", **kwargs)
+        super().__init__(creature_name="Transmuter", icon="crystalize", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

@@ -21,6 +21,7 @@ class EarthPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Earth Elemental",
@@ -33,6 +34,7 @@ class EarthPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Theme,
             theme="earth",
+            icon=icon,
             reference_statblock=reference_statblock,
             score_args=dict(
                 require_types=[
@@ -57,6 +59,7 @@ class _Burrower(EarthPower):
         super().__init__(
             name="Burrower",
             source="SRD5.1 Purple Worm",
+            icon="dig-hole",
             power_level=RIBBON_POWER,
             require_callback=not_already_special_movement,
         )
@@ -93,6 +96,7 @@ class _Climber(EarthPower):
         super().__init__(
             name="Climber",
             source="SRD5.1 Giant Spider",
+            icon="mountain-climbing",
             power_level=RIBBON_POWER,
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher],
             require_callback=not_already_special_movement,

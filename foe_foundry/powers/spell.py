@@ -13,6 +13,7 @@ class SpellPower(PowerWithStandardScoring):
         caster_type: CasterType,
         theme: str,
         score_args: dict,
+        icon: str,
         **kwargs,
     ):
         power_level = kwargs.get("power_level", MEDIUM_POWER)
@@ -32,6 +33,7 @@ class SpellPower(PowerWithStandardScoring):
             theme=theme,
             score_args=score_args,
             power_level=power_level,
+            icon=icon,
             **kwargs,
         )
         self.spell = spell

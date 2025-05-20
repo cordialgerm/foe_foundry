@@ -19,6 +19,7 @@ class DomineeringPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Vampire",
@@ -54,6 +55,7 @@ class DomineeringPower(PowerWithStandardScoring):
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
+            icon=icon,
             score_args=dict(
                 require_types=required_creatures,
                 require_callback=is_magical,
@@ -76,7 +78,10 @@ class DomineeringPower(PowerWithStandardScoring):
 class _CommandingPresence(DomineeringPower):
     def __init__(self):
         super().__init__(
-            name="Commanding Presence", source="Foe Foundry", power_level=HIGH_POWER
+            name="Commanding Presence",
+            source="Foe Foundry",
+            icon="overlord-helm",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -96,7 +101,11 @@ class _CommandingPresence(DomineeringPower):
 class _Dominate(DomineeringPower):
     def __init__(self):
         super().__init__(
-            name="Charm", source="Foe Foundry", power_level=HIGH_POWER, require_cr=7
+            name="Charm",
+            source="Foe Foundry",
+            icon="smitten",
+            power_level=HIGH_POWER,
+            require_cr=7,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

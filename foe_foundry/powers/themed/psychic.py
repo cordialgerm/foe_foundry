@@ -18,6 +18,7 @@ class PsychicPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_type: PowerType = PowerType.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
@@ -37,6 +38,7 @@ class PsychicPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            icon=icon,
             theme="psychic",
             reference_statblock="Aboleth",
             power_type=power_type,
@@ -62,6 +64,7 @@ class _Telekinetic(PsychicPower):
             name="Telekinesis",
             source="5.1SRD Telekinesis",
             power_type=PowerType.Spellcasting,
+            icon="psychic-waves",
             require_cr=6,
         )
 
@@ -74,7 +77,9 @@ class _Telekinetic(PsychicPower):
 
 class _PsychicInfestation(PsychicPower):
     def __init__(self):
-        super().__init__(name="Psychic Infestation", source="Foe Foundry")
+        super().__init__(
+            name="Psychic Infestation", icon="unstable-orb", source="Foe Foundry"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
@@ -100,7 +105,11 @@ class _PsychicInfestation(PsychicPower):
 
 class _DissonantWhispers(PsychicPower):
     def __init__(self):
-        super().__init__(name="Dissonant Whispers", source="SRD5.1 Dissonant Whispers")
+        super().__init__(
+            name="Dissonant Whispers",
+            icon="convince",
+            source="SRD5.1 Dissonant Whispers",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
@@ -122,7 +131,10 @@ class _DissonantWhispers(PsychicPower):
 class _PsionicBlast(PsychicPower):
     def __init__(self):
         super().__init__(
-            name="Psionic Blast", source="Foe Foundry", power_level=HIGH_POWER
+            name="Psionic Blast",
+            icon="explosive-materials",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,7 +166,7 @@ class _PsionicBlast(PsychicPower):
 
 class _MirroredPain(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mirrored Pain", source="Foe Foundry")
+        super().__init__(name="Mirrored Pain", icon="telepathy", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -171,6 +183,7 @@ class _EatBrain(PsychicPower):
         super().__init__(
             name="Eat Brain",
             source="Foe Foundry",
+            icon="brain",
             power_level=HIGH_POWER,
             require_types=CreatureType.Aberration,
             require_cr=7,
@@ -215,6 +228,7 @@ class _ReadThoughts(PsychicPower):
     def __init__(self):
         super().__init__(
             name="Read Thoughts",
+            icon="open-book",
             source="SRD 5.1",
             power_level=MEDIUM_POWER,
             require_cr=1,

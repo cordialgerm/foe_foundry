@@ -25,6 +25,7 @@ class MonstrousPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -34,6 +35,7 @@ class MonstrousPower(PowerWithStandardScoring):
             source=source,
             theme="monstrous",
             reference_statblock="Manticore",
+            icon=icon,
             power_type=PowerType.Theme,
             power_level=power_level,
             create_date=create_date,
@@ -48,6 +50,7 @@ class _Constriction(MonstrousPower):
     def __init__(self):
         super().__init__(
             name="Constriction",
+            icon="snake-spiral",
             source="SRD5.1 Giant Constrictor Snake",
             attack_names=["-", natural.Slam, natural.Tail],
         )
@@ -74,6 +77,7 @@ class _Swallow(MonstrousPower):
         super().__init__(
             name="Swallow",
             source="Foe Foundry",
+            icon="swallow",
             power_level=HIGH_POWER,
             require_size=Size.Large,
             require_types={
@@ -111,7 +115,9 @@ class _Swallow(MonstrousPower):
 
 class _Pounce(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Pounce", source="SRD5.1 Panther", power_level=LOW_POWER)
+        super().__init__(
+            name="Pounce", icon="pounce", source="SRD5.1 Panther", power_level=LOW_POWER
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -130,6 +136,7 @@ class _Corrosive(MonstrousPower):
         super().__init__(
             name="Corrosive",
             source="SRD5.1 Rust Monster",
+            icon="acid",
             power_level=HIGH_POWER,
             attack_names={
                 "-",
@@ -165,6 +172,7 @@ class _LingeringWound(MonstrousPower):
         super().__init__(
             name="Lingering Wound",
             source="Foe Foundry",
+            icon="bleeding-wound",
             attack_names=[natural.Bite, natural.Claw, natural.Horns],
         )
 
@@ -184,7 +192,7 @@ class _LingeringWound(MonstrousPower):
 
 class _Rampage(MonstrousPower):
     def __init__(self):
-        super().__init__(name="Rampage", source="SRD5.1 Gnoll")
+        super().__init__(name="Rampage", icon="shattered-glass", source="SRD5.1 Gnoll")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -200,6 +208,7 @@ class _JawClamp(MonstrousPower):
         super().__init__(
             name="Jaw Clamp",
             source="A5E SRD Bulette",
+            icon="front-teeth",
             power_level=LOW_POWER,
             create_date=datetime(2023, 11, 24),
             attack_names=["-", natural.Bite],
@@ -224,6 +233,7 @@ class _Frenzy(MonstrousPower):
         super().__init__(
             name="Frenzy",
             source="A5E SRD Cockatrice",
+            icon="sharp-smile",
             power_level=LOW_POWER,
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
@@ -244,6 +254,7 @@ class _TearApart(MonstrousPower):
         super().__init__(
             name="Tear Apart",
             source="A5E SRD Glabrezu",
+            icon="tearing",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 24),
             attack_names=["-", natural.Claw],

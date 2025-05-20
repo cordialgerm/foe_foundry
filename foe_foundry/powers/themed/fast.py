@@ -13,6 +13,7 @@ class FastPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         reference_statblock: str = "Goblin",
         power_level: float = MEDIUM_POWER,
@@ -24,6 +25,7 @@ class FastPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             power_type=PowerType.Theme,
+            icon=icon,
             reference_statblock=reference_statblock,
             theme="fast",
             score_args=dict(
@@ -39,6 +41,7 @@ class _Evasion(FastPower):
     def __init__(self):
         super().__init__(
             name="Evasion",
+            icon="dodging",
             source="SRD5.1 Assassin",
             power_level=LOW_POWER,
         )
@@ -59,6 +62,7 @@ class _NimbleReaction(FastPower):
         super().__init__(
             name="Nimble Reaction",
             source="Foe Foundry",
+            icon="running-ninja",
             bonus_speed=40,
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
         )

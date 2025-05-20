@@ -42,7 +42,7 @@ DivinationExpertSpells = (
 
 class _DivinationWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Diviner", **kwargs)
+        super().__init__(creature_name="Diviner", icon="crystal-ball", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

@@ -15,6 +15,7 @@ class DefenderPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Shield Guardian",
@@ -32,6 +33,7 @@ class DefenderPower(PowerWithStandardScoring):
             power_type=PowerType.Role,
             power_level=power_level,
             source=source,
+            icon=icon,
             create_date=create_date,
             theme="Defender",
             reference_statblock=reference_statblock,
@@ -42,7 +44,10 @@ class DefenderPower(PowerWithStandardScoring):
 class _Protection(DefenderPower):
     def __init__(self):
         super().__init__(
-            name="Protection", source="A5E SRD Protection", power_level=LOW_POWER
+            name="Protection",
+            source="A5E SRD Protection",
+            icon="armor-vest",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -56,7 +61,11 @@ class _Protection(DefenderPower):
 
 class _Taunt(DefenderPower):
     def __init__(self):
-        super().__init__(name="Taunt", source="A5E SRD Taunting Smite")
+        super().__init__(
+            name="Taunt",
+            source="A5E SRD Taunting Smite",
+            icon="shouting",
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -72,7 +81,10 @@ class _Taunt(DefenderPower):
 class _ZoneOfControl(DefenderPower):
     def __init__(self):
         super().__init__(
-            name="Zone Of Control", source="Foe Foundry", power_level=LOW_POWER
+            name="Zone Of Control",
+            icon="nested-hexagons",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -97,6 +109,7 @@ class _SpellReflection(DefenderPower):
         super().__init__(
             name="Spell Reflection",
             source="A5E SRD Demilich Mastermind",
+            icon="divert",
             bonus_types={
                 CreatureType.Aberration,
                 CreatureType.Dragon,

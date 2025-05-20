@@ -18,12 +18,15 @@ from ..power import (
 
 
 class _PetrifyingPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = HIGH_POWER, **score_args):
+    def __init__(
+        self, name: str, icon: str, power_level: float = HIGH_POWER, **score_args
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
             theme="petrifying",
             reference_statblock="Gorgon",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=datetime(2025, 3, 14),
@@ -57,9 +60,7 @@ class _PetrifyingGaze(_PetrifyingPower):
     def __init__(
         self,
     ):
-        super().__init__(
-            name="Petrifying Gaze",
-        )
+        super().__init__(name="Petrifying Gaze", icon="medusa-head")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         petrification = _petrification(stats)
@@ -76,7 +77,7 @@ class _PetrifyingGaze(_PetrifyingPower):
 
 class _PetrifyingGlance(_PetrifyingPower):
     def __init__(self):
-        super().__init__(name="Petrifying Glance")
+        super().__init__(name="Petrifying Glance", icon="medusa-head")
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats(stats)
@@ -99,7 +100,9 @@ class _PetrifyingGlance(_PetrifyingPower):
 
 class _PetrifyingBite(_PetrifyingPower):
     def __init__(self):
-        super().__init__(name="Petrifying Bite", attack_names={"-", natural.Bite})
+        super().__init__(
+            name="Petrifying Bite", icon="sharp-lips", attack_names={"-", natural.Bite}
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         petrification = _petrification(stats)

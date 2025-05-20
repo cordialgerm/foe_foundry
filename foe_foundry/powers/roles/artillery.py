@@ -23,6 +23,7 @@ class ArtilleryPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Scout",
@@ -43,6 +44,7 @@ class ArtilleryPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Artillery",
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
@@ -54,6 +56,7 @@ class _FocusShot(ArtilleryPower):
         super().__init__(
             name="Focus Shot",
             source="A5E SRD Focus Shot",
+            icon="archery-target",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedWeapon,
@@ -86,6 +89,7 @@ class _TwinSpell(ArtilleryPower):
         super().__init__(
             name="Twin Spell",
             source="5.1SRD Twin Spell",
+            icon="double-shot",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedSpell,
@@ -103,7 +107,12 @@ class _TwinSpell(ArtilleryPower):
 
 class _QuickDraw(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Quick Draw", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Quick Draw",
+            source="Foe Foundry",
+            icon="fast-arrow",
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 5)
@@ -118,7 +127,9 @@ class _QuickDraw(ArtilleryPower):
 
 class _SuppressingFire(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Suppressing Fire", source="Foe Foundry")
+        super().__init__(
+            name="Suppressing Fire", icon="oppression", source="Foe Foundry"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -140,6 +151,7 @@ class _IndirectFire(ArtilleryPower):
         super().__init__(
             name="Indirect Fire",
             source="Foe Foundry",
+            icon="arcing-bolt",
             power_level=LOW_POWER,
             require_callback=not_gaze,
         )
@@ -157,14 +169,21 @@ class _IndirectFire(ArtilleryPower):
 
 class _Overwatch(ArtilleryPower):
     def __init__(self):
-        super().__init__(name="Overwatch", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Overwatch",
+            source="Foe Foundry",
+            icon="watchtower",
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        range = stats.attack.range or 60
+
         feature = Feature(
             name="Overwatch",
             action=ActionType.Reaction,
             recharge=4,
-            description=f"When a hostile creature within 60 feet of {stats.roleref} moves and {stats.roleref} can see that movement, it can make a ranged attack against the target.",
+            description=f"When a hostile creature within {range} feet of {stats.roleref} moves and {stats.roleref} can see that movement, it can make a ranged attack against the target.",
         )
         return [feature]
 

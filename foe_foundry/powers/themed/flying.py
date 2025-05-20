@@ -11,7 +11,12 @@ from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
 
 class FlyingPower(PowerWithStandardScoring):
     def __init__(
-        self, name: str, source: str, power_level: float = LOW_POWER, **score_args
+        self,
+        name: str,
+        source: str,
+        icon: str,
+        power_level: float = LOW_POWER,
+        **score_args,
     ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
             return (
@@ -25,6 +30,7 @@ class FlyingPower(PowerWithStandardScoring):
             source=source,
             theme="flying",
             reference_statblock="Giant Eagle",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Theme,
             score_args=dict(
@@ -54,6 +60,7 @@ class _Flyer(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Flyer",
+            icon="swallow",
             source="Foe Foundry",
         )
 
@@ -72,6 +79,7 @@ class _Flyby(FlyingPower):
     def __init__(self):
         super().__init__(
             name="Flyby",
+            icon="crow-dive",
             source="A5E SRD Owl",
             require_flying=True,
         )
@@ -90,6 +98,7 @@ class _WingedCharge(FlyingPower):
         super().__init__(
             name="Winged Charge",
             source="A5E SRD Chimera",
+            icon="griffin",
             require_flying=True,
             require_types=CreatureType.all_but(CreatureType.Aberration),
             bonus_roles={
@@ -116,6 +125,7 @@ class _WingedRetreat(FlyingPower):
         super().__init__(
             name="Winged Retreat",
             source="A5E SRD Vulture",
+            icon="dove",
             require_flying=True,
             require_roles={MonsterRole.Skirmisher},
         )

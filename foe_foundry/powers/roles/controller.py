@@ -46,6 +46,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
             theme="controller",
             reference_statblock="Priest",
             source="Foe Foundry",
+            icon="sleepy",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=[
@@ -87,6 +88,7 @@ class _TongueTwister(PowerWithStandardScoring):
             theme="controller",
             reference_statblock="Dryad",
             source="Foe Foundry",
+            icon="silenced",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=CreatureType.Fey,
@@ -117,6 +119,7 @@ class _Eyebite(SpellPower):
             create_date=datetime(2023, 11, 29),
             caster_type=CasterType.Innate,
             theme="controller",
+            icon="voodoo-doll",
             reference_statblock="Green Hag",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -133,6 +136,7 @@ class _HeartTremors(PowerWithStandardScoring):
             create_date=datetime(2023, 11, 29),
             theme="controller",
             source="Foe Foundry",
+            icon="monk-face",
             reference_statblock="Warrior",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -162,6 +166,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
+            icon="paranoia",
             reference_statblock="Ghost",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -193,6 +198,7 @@ class _Nervefire(PowerWithStandardScoring):
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
+            icon="poison-bottle",
             reference_statblock="Assassin",
             score_args=dict(
                 require_roles=MonsterRole.Controller,
@@ -224,6 +230,7 @@ class _TiringAttack(PowerWithStandardScoring):
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
+            icon="despair",
             reference_statblock="Necromancer Mage",
             power_level=HIGH_POWER,
             score_args=dict(
@@ -259,6 +266,7 @@ class _ControllingSpellPower(SpellPower):
             spell=spell,
             create_date=datetime(2023, 12, 10),
             theme="controller",
+            icon="magic-swirl",
             reference_statblock="Mage",
             caster_type=CasterType.Innate,
             score_args=score_args,

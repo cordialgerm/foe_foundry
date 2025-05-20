@@ -28,6 +28,7 @@ class RecklessPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -38,6 +39,7 @@ class RecklessPower(PowerWithStandardScoring):
             power_level=power_level,
             theme="reckless",
             reference_statblock="Berserker",
+            icon=icon,
             power_type=PowerType.Theme,
             create_date=create_date,
             score_args=dict(
@@ -69,6 +71,7 @@ class _Charger(RecklessPower):
         super().__init__(
             name="Charger",
             source="Foe Foundry",
+            icon="fast-forward",
             power_level=LOW_POWER,
             bonus_size=Size.Large,
         )
@@ -92,6 +95,7 @@ class _Overrun(RecklessPower):
         super().__init__(
             name="Overrun",
             source="Foe Foundry",
+            icon="axe-swing",
             power_level=LOW_POWER,
             bonus_size=Size.Large,
         )
@@ -109,7 +113,10 @@ class _Overrun(RecklessPower):
 class _Reckless(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Reckless", source="SRD5.1 Reckless", require_roles=MonsterRole.Bruiser
+            name="Reckless",
+            icon="saber-slash",
+            source="SRD5.1 Reckless",
+            require_roles=MonsterRole.Bruiser,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -126,6 +133,7 @@ class _BloodiedRage(RecklessPower):
         super().__init__(
             name="Bloodied Rage",
             source="Foe Foundry",
+            icon="enrage",
             power_level=HIGH_POWER,
             require_cr=1,
         )
@@ -143,7 +151,10 @@ class _BloodiedRage(RecklessPower):
 class _RelentlessEndurance(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Relentless Endurance", source="SRD5.1 Half-Orc", power_level=LOW_POWER
+            name="Relentless Endurance",
+            icon="strong",
+            source="SRD5.1 Half-Orc",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -158,7 +169,10 @@ class _RelentlessEndurance(RecklessPower):
 class _WildCleave(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Wild Cleave", source="Foe Foundry", require_roles=MonsterRole.Bruiser
+            name="Wild Cleave",
+            icon="axe-swing",
+            source="Foe Foundry",
+            require_roles=MonsterRole.Bruiser,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -180,6 +194,7 @@ class _RecklessFlurry(RecklessPower):
         super().__init__(
             name="Reckless Flurry",
             source="Foe Foundry",
+            icon="wind-hole",
             require_roles=MonsterRole.Bruiser,
         )
 
@@ -199,7 +214,9 @@ class _RecklessFlurry(RecklessPower):
 
 class _Toss(RecklessPower):
     def __init__(self):
-        super().__init__(name="Toss", source="Foe Foundry", bonus_size=Size.Large)
+        super().__init__(
+            name="Toss", source="Foe Foundry", icon="arrow-dunk", bonus_size=Size.Large
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size <= Size.Medium:
@@ -230,6 +247,7 @@ class _Strangle(RecklessPower):
         super().__init__(
             name="Strangle",
             source="A5E SRD - Bugbear",
+            icon="slipknot",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", weapon.Whip, natural.Slam, natural.Tentacle],
         )

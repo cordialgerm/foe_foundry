@@ -36,6 +36,7 @@ class HonorablePower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str,
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 22),
@@ -46,6 +47,7 @@ class HonorablePower(PowerWithStandardScoring):
             source=source,
             power_type=PowerType.Theme,
             power_level=power_level,
+            icon=icon,
             theme="honorable",
             reference_statblock="Knight",
             create_date=create_date,
@@ -66,6 +68,7 @@ class _Challenge(HonorablePower):
     def __init__(self):
         super().__init__(
             name="Challenge",
+            icon="face-to-face",
             power_level=MEDIUM_POWER,
             require_no_flags=flags.HAS_DUEL,
         )
@@ -89,6 +92,7 @@ class _HonorboundDuelist(HonorablePower):
     def __init__(self):
         super().__init__(
             name="Honorbound Duelist",
+            icon="cavalry",
             power_level=MEDIUM_POWER,
             require_no_flags=flags.HAS_DUEL,
         )
@@ -109,6 +113,7 @@ class _MortalVow(HonorablePower):
     def __init__(self):
         super().__init__(
             name="Mortal Vow",
+            icon="book-aura",
             power_level=MEDIUM_POWER,
         )
 

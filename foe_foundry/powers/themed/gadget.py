@@ -18,6 +18,7 @@ class GadgetPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -39,6 +40,7 @@ class GadgetPower(PowerWithStandardScoring):
             name=name,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="gadget",
             reference_statblock="Thug",
             power_type=PowerType.Theme,
@@ -51,6 +53,7 @@ class _PotionOfHealing(GadgetPower):
     def __init__(self):
         super().__init__(
             name="Potion of Healing",
+            icon="round-potion",
             source="SRD5.1 Healing Potion",
             power_level=LOW_POWER,
             require_no_flags=flags.HAS_HEALING,
@@ -90,6 +93,7 @@ class _SmokeBomb(GadgetPower):
         super().__init__(
             name="Smoke Bomb",
             source="Foe Foundry",
+            icon="smoke-bomb",
             power_level=LOW_POWER,
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
         )
@@ -124,6 +128,7 @@ class _Net(GadgetPower):
         super().__init__(
             name=name,
             source="Foe Foundry",
+            icon="fishing-net",
             power_level=LOW_POWER,
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_cr=min_cr,
@@ -159,6 +164,7 @@ class _Grenade(GadgetPower):
         super().__init__(
             name=f"{self.dmg_type.adj.capitalize()} Grenade",
             source="Foe Foundry",
+            icon="bundle-grenade",
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_damage=dmg_type,
         )

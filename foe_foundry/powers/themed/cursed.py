@@ -22,6 +22,7 @@ class CursedPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         reference_statblock: str = "Ghost",
         power_level: float = MEDIUM_POWER,
@@ -38,6 +39,7 @@ class CursedPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="cursed",
+            icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
@@ -53,7 +55,7 @@ class CursedPower(PowerWithStandardScoring):
 
 class _AuraOfDespair(CursedPower):
     def __init__(self):
-        super().__init__(name="Aura of Despair", source="Foe Foundry")
+        super().__init__(name="Aura of Despair", icon="despair", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         weight_of_sorrow = Feature(
@@ -81,7 +83,10 @@ class _AuraOfDespair(CursedPower):
 class _DisfiguringCurse(CursedPower):
     def __init__(self):
         return super().__init__(
-            name="Disfiguring Curse", source="Foe Foundry", power_level=HIGH_POWER
+            name="Disfiguring Curse",
+            icon="witch-face",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -103,7 +108,9 @@ class _DisfiguringCurse(CursedPower):
 
 class _CursedWound(CursedPower):
     def __init__(self):
-        return super().__init__(name="Cursed Wound", source="SRD5.1 Wight")
+        return super().__init__(
+            name="Cursed Wound", icon="death-juice", source="SRD5.1 Wight"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -121,7 +128,10 @@ class _CursedWound(CursedPower):
 class _RejectDivinity(CursedPower):
     def __init__(self):
         super().__init__(
-            name="Reject Divinity", source="Foe Foundry", power_level=HIGH_POWER
+            name="Reject Divinity",
+            source="Foe Foundry",
+            icon="cancel",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -139,7 +149,9 @@ class _RejectDivinity(CursedPower):
 
 class _BestowCurse(CursedPower):
     def __init__(self):
-        super().__init__(name="Bestow Curse", source="SRD5.1 Bestow Curse")
+        super().__init__(
+            name="Bestow Curse", icon="dripping-star", source="SRD5.1 Bestow Curse"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         level_number = 5 if stats.cr >= 7 else 3
@@ -164,7 +176,9 @@ class _BestowCurse(CursedPower):
 class _RayOfEnfeeblement(CursedPower):
     def __init__(self):
         super().__init__(
-            name="Ray of Enfeeblement", source="SRD5.1 Ray of Enfeeblement"
+            name="Ray of Enfeeblement",
+            icon="vomiting",
+            source="SRD5.1 Ray of Enfeeblement",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -186,7 +200,7 @@ class _RayOfEnfeeblement(CursedPower):
 
 class _VoidSiphon(CursedPower):
     def __init__(self):
-        super().__init__(name="Void Siphon", source="Foe Foundry")
+        super().__init__(name="Void Siphon", icon="marrow-drain", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 10 if stats.cr <= 7 else 20
@@ -203,9 +217,10 @@ class _VoidSiphon(CursedPower):
 class _ReplaceShadow(CursedPower):
     def __init__(self):
         super().__init__(
-            name="Shadow Stealth",
+            name="Replace Shadow",
             source="A5E SRD Shadow Demon",
             power_level=HIGH_POWER,
+            icon="shadow-follower",
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
         )
@@ -246,6 +261,7 @@ class _UnholyAura(CursedPower):
     def __init__(self):
         super().__init__(
             name="Unholy Aura",
+            icon="icicles-aura",
             source="A5E SRD Dread Knight",
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
@@ -267,6 +283,7 @@ class _CurseOfVengeance(CursedPower):
         super().__init__(
             name="Curse of Vengeance",
             source="Foe Foundry",
+            icon="wax-seal",
             create_date=datetime(2025, 4, 8),
             require_cr=3,
             require_spellcasting=True,

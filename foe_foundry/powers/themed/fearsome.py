@@ -14,6 +14,7 @@ class FearsomePower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -22,6 +23,7 @@ class FearsomePower(PowerWithStandardScoring):
             name=name,
             source=source,
             power_type=PowerType.Theme,
+            icon=icon,
             theme="fearsome",
             reference_statblock="Chimera",
             create_date=create_date,
@@ -45,6 +47,7 @@ class HorrifyingPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -52,6 +55,7 @@ class HorrifyingPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             power_type=PowerType.Theme,
             theme="fearsome",
             reference_statblock="Banshee",
@@ -70,7 +74,7 @@ class HorrifyingPower(PowerWithStandardScoring):
 
 class _FearsomeRoar(FearsomePower):
     def __init__(self):
-        super().__init__(name="Fearsome Roar", source="Foe Foundry")
+        super().__init__(name="Fearsome Roar", icon="lion", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -89,7 +93,7 @@ class _FearsomeRoar(FearsomePower):
 
 class _HorrifyingPresence(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Horrifying Presence", source="Foe Foundry")
+        super().__init__(name="Horrifying Presence", icon="dread", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -108,7 +112,7 @@ class _HorrifyingPresence(HorrifyingPower):
 
 class _HorrifyingVisage(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Horrifying Visage", source="SRD5.1 Ghost")
+        super().__init__(name="Horrifying Visage", icon="terror", source="SRD5.1 Ghost")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
@@ -129,7 +133,7 @@ class _HorrifyingVisage(HorrifyingPower):
 
 class _DreadGaze(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Dread Gaze", source="SRD5.1 Mummy")
+        super().__init__(name="Dread Gaze", icon="overlord-helm", source="SRD5.1 Mummy")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -153,6 +157,7 @@ class _MindShatteringScream(HorrifyingPower):
     def __init__(self):
         super().__init__(
             name="Mind-Shattering Scream",
+            icon="screaming",
             source="SRD5.1 Banshee",
             power_level=HIGH_POWER,
         )
@@ -176,7 +181,9 @@ class _MindShatteringScream(HorrifyingPower):
 
 class _NightmarishVisions(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Nightmarish Visions", source="Foe Foundry")
+        super().__init__(
+            name="Nightmarish Visions", icon="dread-skull", source="Foe Foundry"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)

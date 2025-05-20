@@ -11,14 +11,17 @@ from .utils import spell_list
 
 
 class _Elementalist(WizardPower):
-    def __init__(self, name: str, spells: List[StatblockSpell]):
-        super().__init__(name=name, creature_name=name, min_cr=4, spells=spells)
+    def __init__(self, name: str, spells: List[StatblockSpell], icon: str):
+        super().__init__(
+            name=name, creature_name=name, min_cr=4, spells=spells, icon=icon
+        )
 
 
 class _Pyromancer(_Elementalist):
     def __init__(self):
         super().__init__(
             name="Pyromancer",
+            icon="fire-ray",
             spells=spell_list(
                 [
                     evocation.HeatMetal.copy(concentration=False),
@@ -47,6 +50,7 @@ class _Cryomancer(_Elementalist):
     def __init__(self):
         super().__init__(
             name="Cryomancer",
+            icon="frozen-orb",
             spells=spell_list(
                 [
                     conjuration.FogCloud.copy(concentration=False),
@@ -76,6 +80,7 @@ class _Electromancer(_Elementalist):
     def __init__(self):
         super().__init__(
             name="Electromancer",
+            icon="bolt-spell-cast",
             spells=spell_list(
                 [
                     evocation.GustOfWind.copy(concentration=False),
@@ -103,6 +108,7 @@ class _Toximancer(_Elementalist):
     def __init__(self):
         super().__init__(
             name="Toximancer",
+            icon="poison-gas",
             spells=spell_list(
                 [conjuration.Cloudkill, necromancy.Contagion, evocation.AcidArrow],
                 uses=1,
