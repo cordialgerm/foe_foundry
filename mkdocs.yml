@@ -48,7 +48,13 @@ plugins:
         utm_source: "rss"
   - open-in-new-tab:
       add_icon: True
-
+  - minify:
+      cache_safe: true
+      minify_css: true
+      css_files:
+        - css/site.css
+      js_files:
+        - scripts/extras.js
 theme:
   name: mkdocs
   custom_dir: docs_theme/
