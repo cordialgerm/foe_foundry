@@ -112,7 +112,7 @@ class _Speedy(SkirmisherPower):
         super().__init__(
             name="Speedy",
             source="Foe Foundry",
-            icon="fast-forward",
+            icon="fast-forward-button",
             power_level=LOW_POWER,
         )
 

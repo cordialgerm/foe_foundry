@@ -71,7 +71,7 @@ class _Charger(RecklessPower):
         super().__init__(
             name="Charger",
             source="Foe Foundry",
-            icon="fast-forward",
+            icon="fast-forward-button",
             power_level=LOW_POWER,
             bonus_size=Size.Large,
         )

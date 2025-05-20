@@ -35,6 +35,7 @@ class WightPower(PowerWithStandardScoring):
             source=source,
             theme="Wight",
             reference_statblock="Wight",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,

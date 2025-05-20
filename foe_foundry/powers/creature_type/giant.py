@@ -156,7 +156,7 @@ class _FrostRune(GiantPower):
         super().__init__(
             name="Frost Rune",
             source="Foe Foundry",
-            icon="snowflake",
+            icon="snowflake-1",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Cold,
             require_damage_exact_match=True,

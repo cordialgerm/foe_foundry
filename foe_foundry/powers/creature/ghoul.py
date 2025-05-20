@@ -37,6 +37,7 @@ class GhoulPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,
+            icon=icon,
             score_args=dict(
                 require_callback=is_ghoul,
                 require_types=CreatureType.Undead,

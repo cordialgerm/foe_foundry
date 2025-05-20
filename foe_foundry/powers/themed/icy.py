@@ -107,7 +107,7 @@ class _FrostNova(IcyPower):
         super().__init__(
             name="Frost Nova",
             source="Foe Foundry",
-            icon="snowflake",
+            icon="snowflake-2",
             power_level=MEDIUM_POWER,
             require_cr=4,
         )

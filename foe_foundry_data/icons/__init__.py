@@ -1,1 +1,1 @@
-from .icons import inline_icon  # noqa
+from .icons import inline_icon, icon_path  # noqa

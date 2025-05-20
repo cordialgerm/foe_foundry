@@ -81,6 +81,7 @@ class _SurpriseSnatch(BugbearPower):
     def __init__(self):
         super().__init__(
             name="Surprise Snatch",
+            icon="surprised",
             power_level=MEDIUM_POWER,
         )
 

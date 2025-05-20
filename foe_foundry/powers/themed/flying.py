@@ -98,7 +98,7 @@ class _WingedCharge(FlyingPower):
         super().__init__(
             name="Winged Charge",
             source="A5E SRD Chimera",
-            icon="griffin",
+            icon="griffin-symbol",
             require_flying=True,
             require_types=CreatureType.all_but(CreatureType.Aberration),
             bonus_roles={

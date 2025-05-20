@@ -90,7 +90,7 @@ class _ToxicPoison(PoisonPower):
             name="Toxic Poison",
             source="Foe Foundry",
             power_level=HIGH_POWER,
-            icon="toxic-poison",
+            icon="poison-bottle",
             create_date=datetime(2023, 11, 24),
         )
 

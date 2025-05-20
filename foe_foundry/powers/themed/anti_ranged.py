@@ -115,7 +115,7 @@ class _HardToPinDown(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
-            icon="fast-forward",
+            icon="fast-forward-button",
             reference_statblock="Spy",
             create_date=datetime(2023, 11, 28),
             score_args=dict(

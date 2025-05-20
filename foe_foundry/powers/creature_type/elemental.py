@@ -447,7 +447,7 @@ SuperheatedAura = _DamagingAura(
     name="Superheated", damage_type=DamageType.Fire, icon="thermometer-hot"
 )
 DisintegratingAura = _DamagingAura(
-    name="Disintegrating Presence", damage_type=DamageType.Force, icon="disintirate"
+    name="Disintegrating Presence", damage_type=DamageType.Force, icon="disintegrate"
 )
 ArcingElectricityAura = _DamagingAura(
     name="Arcing Electricity", damage_type=DamageType.Lightning, icon="electric-whip"

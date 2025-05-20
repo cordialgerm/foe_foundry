@@ -210,7 +210,7 @@ class _ProneAttack(Technique):
                 spell.Thundrousblast,
             ],
         )
-        super().__init__(name="Prone Attack", icon="trip-attack", score_args=score_args)
+        super().__init__(name="Prone Attack", icon="tripwire", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
@@ -288,9 +288,7 @@ class _PushingAttack(Technique):
             ],
         )
 
-        super().__init__(
-            name="Pushing Attack", icon="pushing-attack", score_args=score_args
-        )
+        super().__init__(name="Pushing Attack", icon="push", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge and stats.attributes.STR >= 20:

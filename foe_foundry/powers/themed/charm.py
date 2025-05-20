@@ -123,7 +123,7 @@ class _WardingCharm(CharmingPower):
     def __init__(self):
         super().__init__(
             name="Warding Charm",
-            icon="hearth-shield",
+            icon="heart-shield",
             source="A5E SRD Vampire",
             create_date=datetime(2023, 11, 23),
         )

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import field
 from datetime import datetime
+from pathlib import Path
 from typing import List, Set
 
 import numpy as np
@@ -12,6 +13,7 @@ from foe_foundry.creatures import GenerationSettings, SelectionSettings, warrior
 from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
 
+from ..icons import icon_path
 from ..refs import MonsterRef, MonsterRefResolver
 
 MonsterReferences = MonsterRefResolver()
@@ -128,6 +130,15 @@ class PowerModel:
         return len(self.feature_descriptions) > 300 and all(
             not f.is_attack and not f.is_spellcasting for f in self.features
         )
+
+    @property
+    def icon_path(self) -> str | None:
+        if self.icon is None:
+            return None
+
+        docs_dir = Path(__file__).parent.parent.parent / "docs"
+        path = icon_path(self.icon)
+        return str(path.relative_to(docs_dir)) if path else None
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
