@@ -108,6 +108,7 @@ class PowerModel:
     source: str
     theme: str
     power_level: str
+    icon: str | None
     create_date: datetime | None
     features: List[FeatureModel]
     creature_types: List[str] = field(default_factory=list)
@@ -238,6 +239,7 @@ class PowerModel:
             create_date=power.create_date,
             theme=power.theme or "UNKNOWN",
             power_type=power.power_type.name,
+            icon=power.icon,
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,
             features=feature_models,

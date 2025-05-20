@@ -212,6 +212,20 @@ a.branding::after,
 }
 
 
+.inline-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+.inline-icon svg {
+    width: 100%;
+    height: 100%;
+
+    /* allows color to inherit from surrounding text */
+    fill: currentColor;
+}
+
 
 .alpha-banner {
     display: flex;
