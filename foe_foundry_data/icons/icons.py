@@ -41,4 +41,4 @@ def inline_icon(icon: str) -> str | None:
     # Remove all `fill="..."` and `fill='...'` attributes so we can style the icon wtih CSS
     svg_cleaned = re.sub(r'\s*fill=["\'][^"\']*["\']', "", svg_raw)
 
-    return Markup(f'<span class="inline-icon">{svg_cleaned}</span>')
+    return Markup(f'<span class="inline-icon" aria-hidden="true">{svg_cleaned}</span>')
