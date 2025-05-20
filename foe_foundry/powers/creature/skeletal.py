@@ -20,6 +20,7 @@ class SkeletalPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -35,6 +36,7 @@ class SkeletalPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="skeleton",
+            icon=icon,
             reference_statblock="Skeleton",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -56,6 +58,7 @@ class _SkeletalReconstruction(SkeletalPower):
         super().__init__(
             name="Skeletal Reconstruction",
             power_level=HIGH_POWER,
+            icon="raise-skeleton",
             source="Foe Foundry",
             create_date=datetime(2025, 2, 19),
             require_callback=is_minion,
@@ -77,6 +80,7 @@ class _BoneShards(SkeletalPower):
         super().__init__(
             name="Bone Shards",
             power_level=MEDIUM_POWER,
+            icon="edge-crack",
             source="Foe Foundry",
             create_date=datetime(2025, 2, 19),
         )
@@ -101,6 +105,7 @@ class _LoathsomeRattle(SkeletalPower):
             name="Loathsome Rattle",
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
+            icon="rattlesnake",
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Controller, MonsterRole.Skirmisher],
         )
@@ -125,6 +130,7 @@ class _BoneSpear(SkeletalPower):
             name="Bone Spear",
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
+            icon="spine-arrow",
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
         )
@@ -148,6 +154,7 @@ class _BoneStorm(SkeletalPower):
             name="Bone Storm",
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
+            icon="striking-splinter",
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
             require_cr=4,
@@ -181,6 +188,7 @@ class _BoneWall(SkeletalPower):
             name="Bone Wall",
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
+            icon="stakes-fence",
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Defender, MonsterRole.Controller],
             require_cr=4,

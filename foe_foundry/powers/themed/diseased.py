@@ -18,6 +18,7 @@ class DiseasePower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str = "biohazard",
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Ghoul",
         **score_args,
@@ -29,6 +30,7 @@ class DiseasePower(PowerWithStandardScoring):
             create_date=datetime(2023, 11, 20),
             theme="disease",
             reference_statblock=reference_statblock,
+            icon=icon,
             power_level=power_level,
             score_args=dict(
                 require_types=[

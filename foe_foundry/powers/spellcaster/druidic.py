@@ -32,6 +32,7 @@ class _Druidic(_Spellcaster):
             caster_type=CasterType.Primal,
             theme="druidic",
             reference_statblock="Druid",
+            icon="sickle",
             min_cr=min_cr,
             max_cr=max_cr,
             score_args=dict(require_types=[CreatureType.Humanoid]),

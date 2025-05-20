@@ -26,6 +26,7 @@ class PhysicallyTough(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -44,6 +45,7 @@ class PhysicallyTough(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="tough",
+            icon=icon,
             reference_statblock="Berserker",
             power_level=power_level,
             power_type=PowerType.Theme,
@@ -77,6 +79,7 @@ class MagicallyTough(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -85,6 +88,7 @@ class MagicallyTough(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="tough",
+            icon=icon,
             reference_statblock="Iron Golem",
             power_level=power_level,
             power_type=PowerType.Theme,
@@ -114,7 +118,10 @@ class _JustAScratch(PhysicallyTough):
 
     def __init__(self):
         super().__init__(
-            name="Just A Scratch", source="Foe Foundry", power_level=HIGH_POWER
+            name="Just A Scratch",
+            icon="strong-man",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -134,7 +141,10 @@ class _JustAScratch(PhysicallyTough):
 class _MagicResistance(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Magic Resistance", source="SRD5.1 Stone Golem", power_level=LOW_POWER
+            name="Magic Resistance",
+            icon="surrounded-shield",
+            source="SRD5.1 Stone Golem",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -151,6 +161,7 @@ class _LimitedMagicImmunity(MagicallyTough):
         super().__init__(
             name="Limited Magic Immunity",
             source="SRD5.1 Rakshasa",
+            icon="cancel",
             power_level=HIGH_POWER,
         )
 
@@ -171,6 +182,7 @@ class _Regeneration(PhysicallyTough):
         super().__init__(
             name="Regeneration",
             source="SRD5.1 Shield Guardian",
+            icon="regeneration",
             require_types=[
                 CreatureType.Construct,
                 CreatureType.Undead,
@@ -201,7 +213,9 @@ class _Regeneration(PhysicallyTough):
 
 class _Stoneskin(MagicallyTough):
     def __init__(self):
-        super().__init__(name="Stoneskin", source="SRD5.1 Stoneskin")
+        super().__init__(
+            name="Stoneskin", icon="crenulated-shield", source="SRD5.1 Stoneskin"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

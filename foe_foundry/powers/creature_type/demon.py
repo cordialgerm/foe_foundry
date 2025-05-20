@@ -31,6 +31,7 @@ class DemonPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -45,6 +46,7 @@ class DemonPower(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="Demon",
             reference_statblock="Balor",
             score_args=standard_score_args,
@@ -56,6 +58,7 @@ class _FeastOfSouls(DemonPower):
         super().__init__(
             name="Feast of Souls",
             source="Foe Foundry",
+            icon="grim-reaper",
             create_date=datetime(2025, 3, 28),
             power_level=LOW_POWER,
             bonus_roles={
@@ -80,6 +83,7 @@ class _DemonicBite(DemonPower):
         super().__init__(
             name="Demonic Bite",
             source="Foe Foundry",
+            icon="fangs",
             attack_names=natural_attacks.Bite,
             bonus_damage=DamageType.Poison,
         )
@@ -112,6 +116,7 @@ class _DemonicSummons(DemonPower):
         super().__init__(
             name="Demonic Summons",
             source="Foe Foundry",
+            icon="pentacle",
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles=MonsterRole.Leader,
@@ -141,6 +146,7 @@ class _WhispersOfTheAbyss(DemonPower):
         super().__init__(
             name="Whispers of the Abyss",
             source="Foe Foundry",
+            icon="daemon-pull",
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
@@ -165,6 +171,7 @@ class _BlackBlood(DemonPower):
         super().__init__(
             name="Black Blood",
             source="Foe Foundry",
+            icon="blood",
             power_level=LOW_POWER,
             require_cr=3,
         )
@@ -186,6 +193,7 @@ class _Desecration(DemonPower):
         super().__init__(
             name="Desecration",
             source="Foe Foundry",
+            icon="pentagram-rose",
             power_level=LOW_POWER,
             require_cr=3,
         )
@@ -213,6 +221,7 @@ class _EchoOfRage(DemonPower):
         super().__init__(
             name="Echo of Rage",
             source="Foe Foundry",
+            icon="enrage",
             power_level=MEDIUM_POWER,
             require_cr=3,
         )
@@ -236,6 +245,7 @@ class _NightmareSpawn(DemonPower):
         super().__init__(
             name="Nightmare Spawn",
             source="Foe Foundry",
+            icon="elysium-shade",
             power_level=HIGH_POWER,
             require_cr=9,
         )

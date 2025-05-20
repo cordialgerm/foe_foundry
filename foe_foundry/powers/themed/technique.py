@@ -25,6 +25,7 @@ class Technique(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str,
         score_args: dict,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
@@ -34,6 +35,7 @@ class Technique(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="Foe Foundry",
             theme="technique",
+            icon=icon,
             reference_statblock="Warrior",
             power_level=power_level,
             create_date=create_date,
@@ -57,7 +59,9 @@ class _PoisonedAttack(Technique):
                 weapon.Shortswords,
             ],
         )
-        super().__init__(name="Poisoned Attack", score_args=score_args)
+        super().__init__(
+            name="Poisoned Attack", icon="poison-bottle", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -92,7 +96,9 @@ class _BleedingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Bleeding Attack", score_args=score_args)
+        super().__init__(
+            name="Bleeding Attack", icon="bleeding-wound", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5, force_die=Die.d6)
@@ -135,7 +141,10 @@ class _DazingAttack(Technique):
             attack_names=[natural.Tail, natural.Slam, weapon.Staff],
         )
         super().__init__(
-            name="Dazing Attack", power_level=HIGH_POWER, score_args=score_args
+            name="Dazing Attack",
+            icon="star-swirl",
+            power_level=HIGH_POWER,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -159,7 +168,9 @@ class _BurningAttack(Technique):
             attack_names=["-", spell.HolyBolt, spell.Firebolt, spell.Acidsplash],
         )
 
-        super().__init__(name="Burning Attack", score_args=score_args)
+        super().__init__(
+            name="Burning Attack", icon="flaming-sheet", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type or DamageType.Fire
@@ -199,7 +210,7 @@ class _ProneAttack(Technique):
                 spell.Thundrousblast,
             ],
         )
-        super().__init__(name="Prone Attack", score_args=score_args)
+        super().__init__(name="Prone Attack", icon="tripwire", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
@@ -239,7 +250,9 @@ class _SlowingAttack(Technique):
                 weapon.Pistol,
             ],
         )
-        super().__init__(name="Slowing Attack", score_args=score_args)
+        super().__init__(
+            name="Slowing Attack", icon="sticky-boot", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -275,7 +288,7 @@ class _PushingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Pushing Attack", score_args=score_args)
+        super().__init__(name="Pushing Attack", icon="push", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge and stats.attributes.STR >= 20:
@@ -314,7 +327,7 @@ class _GrapplingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Grappling Attack", score_args=score_args)
+        super().__init__(name="Grappling Attack", icon="grab", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -352,7 +365,9 @@ class _BlindingAttack(Technique):
                 spell.Firebolt,
             ],
         )
-        super().__init__(name="Blinding Attack", score_args=score_args)
+        super().__init__(
+            name="Blinding Attack", icon="sight-disabled", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -377,7 +392,9 @@ class _FrighteningAttack(Technique):
             bonus_damage={DamageType.Psychic, DamageType.Necrotic},
             attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
-        super().__init__(name="Frightening Attack", score_args=score_args)
+        super().__init__(
+            name="Frightening Attack", icon="terror", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -397,7 +414,9 @@ class _NoHealingAttack(Technique):
             require_damage={DamageType.Necrotic},
             attack_names=["-", spell.Deathbolt],
         )
-        super().__init__(name="No Healing Attack", score_args=score_args)
+        super().__init__(
+            name="No Healing Attack", icon="health-decrease", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -417,7 +436,7 @@ class _CharmingAttack(Technique):
             bonus_damage=DamageType.Psychic,
             attack_names=["-", spell.Gaze],
         )
-        super().__init__(name="Charming Attack", score_args=score_args)
+        super().__init__(name="Charming Attack", icon="charm", score_args=score_args)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -440,7 +459,10 @@ class _FreezingAttack(Technique):
             attack_names=[spell.Frostbolt],
         )
         super().__init__(
-            name="Freezing Attack", power_level=HIGH_POWER, score_args=score_args
+            name="Freezing Attack",
+            icon="frozen-block",
+            power_level=HIGH_POWER,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -467,7 +489,10 @@ class _ShockingAttack(Technique):
             attack_names=[spell.Shock, spell.Thundrousblast],
         )
         super().__init__(
-            name="Shocking Attack", power_level=HIGH_POWER, score_args=score_args
+            name="Shocking Attack",
+            icon="laser-sparks",
+            power_level=HIGH_POWER,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -494,7 +519,9 @@ class _GrazingAttack(Technique):
                 natural.Claw,
             ],
         )
-        super().__init__(name="Grazing Attack", score_args=score_args)
+        super().__init__(
+            name="Grazing Attack", icon="claw-slashes", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
@@ -517,7 +544,9 @@ class _CleavingAttack(Technique):
             bonus_roles={MonsterRole.Bruiser, MonsterRole.Soldier},
             attack_names=["-", weapon.Greataxe, natural.Tail, weapon.Polearm],
         )
-        super().__init__(name="Cleaving Attack", score_args=score_args)
+        super().__init__(
+            name="Cleaving Attack", icon="meat-cleaver", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
@@ -551,7 +580,9 @@ class _SappingAttack(Technique):
                 natural.Stinger,
             ],
         )
-        super().__init__(name="Sapping Attack", score_args=score_args)
+        super().__init__(
+            name="Sapping Attack", icon="wasp-sting", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -581,7 +612,9 @@ class _VexingAttack(Technique):
                 weapon.Pistol,
             ],
         )
-        super().__init__(name="Vexing Attack", score_args=score_args)
+        super().__init__(
+            name="Vexing Attack", icon="saber-and-pistol", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -609,7 +642,10 @@ class _WeakeningAttack(Technique):
             ],
         )
         super().__init__(
-            name="Weakening Attack", power_level=HIGH_POWER, score_args=score_args
+            name="Weakening Attack",
+            icon="tired-eye",
+            power_level=HIGH_POWER,
+            score_args=score_args,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -651,7 +687,9 @@ class _DisarmingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Disarming Attack", score_args=score_args)
+        super().__init__(
+            name="Disarming Attack", icon="drop-weapon", score_args=score_args
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -669,6 +707,7 @@ class _ParryAndRiposte(Technique):
     def __init__(self):
         super().__init__(
             name="Parry and Riposte",
+            icon="sword-clash",
             score_args=dict(
                 bonus_roles=[MonsterRole.Defender, MonsterRole.Soldier],
                 attack_names=[
@@ -706,6 +745,7 @@ class _PommelStrike(Technique):
     def __init__(self):
         super().__init__(
             name="Pommel Strike",
+            icon="sword-hilt",
             score_args=dict(
                 bonus_roles=[
                     MonsterRole.Soldier,
@@ -748,6 +788,7 @@ class _Dueling(PowerWithStandardScoring):
             name="Dueling",
             source="Foe Foundry",
             theme="technique",
+            icon="sabers-choc",
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -781,6 +822,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             name="Expert Brawler",
             source="Foe Foundry",
             theme="technique",
+            icon="punch",
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -818,6 +860,7 @@ class _Interception(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source="SRD5.1 Interception",
             theme="technique",
+            icon="run",
             reference_statblock="Warrior",
             score_args=dict(
                 attack_names={
@@ -853,6 +896,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             name="Bait and Switch",
             source="Foe Foundry",
             theme="technique",
+            icon="card-exchange",
             reference_statblock="Warrior",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
@@ -884,6 +928,7 @@ class _QuickToss(PowerWithStandardScoring):
             name="Quick Toss",
             source="Foe Foundry",
             theme="technique",
+            icon="thrown-daggers",
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -922,6 +967,7 @@ class _ArmorMaster(PowerWithStandardScoring):
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             theme="technique",
+            icon="plastron",
             score_args=dict(
                 require_callback=is_heavily_armored,
                 require_cr=3,
@@ -948,6 +994,7 @@ class _ShieldMaster(PowerWithStandardScoring):
             name="Shield Master",
             source="A5E SRD Shield Focus",
             theme="technique",
+            icon="viking-shield",
             reference_statblock="Warrior",
             power_level=LOW_POWER,
             power_type=PowerType.Theme,
@@ -974,6 +1021,7 @@ class _PolearmMaster(PowerWithStandardScoring):
             source="A5E SRD Polearm Savant",
             theme="technique",
             reference_statblock="Warrior",
+            icon="halberd",
             power_type=PowerType.Theme,
             score_args=dict(
                 bonus_roles={
@@ -1000,6 +1048,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             name="Great Weapon Fighting",
             source="Foe Foundry",
             theme="technique",
+            icon="wave-strike",
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,
@@ -1036,6 +1085,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             name="Whirlwind of Steel",
             source="Foe Foundry",
             theme="technique",
+            icon="whirlwind",
             reference_statblock="Warrior",
             power_type=PowerType.Theme,
             score_args=dict(
@@ -1073,6 +1123,7 @@ class _Sharpshooter(PowerWithStandardScoring):
             name="Sharpshooter's Shot",
             source="Foe Foundry",
             theme="technique",
+            icon="headshot",
             reference_statblock="Scout",
             power_type=PowerType.Theme,
             power_level=HIGH_POWER,

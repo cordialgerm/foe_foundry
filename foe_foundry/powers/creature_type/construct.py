@@ -30,6 +30,7 @@ class ConstructPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Stone Golem",
         create_date: datetime | None = None,
@@ -42,6 +43,7 @@ class ConstructPower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="Construct",
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
@@ -54,6 +56,7 @@ class _ConstructedGuardian(ConstructPower):
             name="Constructed Guardian",
             source="Foe Foundry",
             reference_statblock="Shield Guardian",
+            icon="guarded-tower",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
@@ -73,6 +76,7 @@ class _ProtectivePlating(ConstructPower):
         super().__init__(
             name="Protective Plating",
             source="Foe Foundry",
+            icon="guarded-tower",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -94,6 +98,7 @@ class _ImmutableForm(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Immutable Form",
+            icon="locked-box",
             source="SRD 5.1 Stone Golem",
             power_level=RIBBON_POWER,
         )
@@ -111,6 +116,7 @@ class _BoundProtector(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Bound Protector",
+            icon="static-guard",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
         )
@@ -128,7 +134,10 @@ class _BoundProtector(ConstructPower):
 class _ExplosiveCore(ConstructPower):
     def __init__(self):
         super().__init__(
-            name="Explosive Core", source="Foe Foundry", bonus_damage=DamageType.Fire
+            name="Explosive Core",
+            source="Foe Foundry",
+            icon="planet-core",
+            bonus_damage=DamageType.Fire,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -151,6 +160,7 @@ class _Smother(ConstructPower):
         super().__init__(
             name="Smother",
             reference_statblock="Rug of Smothering",
+            icon="blanket",
             source="SRD 5.1 Rug of Smothering",
             attack_names={"-", natural_attacks.Slam},
         )
@@ -193,6 +203,7 @@ class _Retrieval(ConstructPower):
             name="Retrieval",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            icon="bug-net",
             create_date=datetime(2023, 11, 21),
             require_cr=7,
             attack_names=["-", natural_attacks.Slam],
@@ -234,6 +245,7 @@ class _SpellStoring(ConstructPower):
     def __init__(self):
         super().__init__(
             name="Spell Storing",
+            icon="energy-tank",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
         )
@@ -266,6 +278,7 @@ class _Overclock(ConstructPower):
         super().__init__(
             name="Overclock",
             source="A5E SRD Clockwork Sentinel",
+            icon="clockwork",
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.AllMelee(),
         )
@@ -286,6 +299,7 @@ class _Crush(ConstructPower):
         super().__init__(
             name="Crush",
             source="A5E SRD Crusher",
+            icon="crush",
             create_date=datetime(2023, 11, 21),
             require_size=Size.Huge,
         )

@@ -40,6 +40,7 @@ class FeyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -51,6 +52,7 @@ class FeyPower(PowerWithStandardScoring):
             power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             score_args=standard_score_args,
             theme="Fey",
             reference_statblock="Green Hag",
@@ -62,6 +64,7 @@ class _FaerieStep(FeyPower):
         super().__init__(
             name="Faerie Step",
             source="A5ESRD Fey Noble",
+            icon="teleport",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -84,6 +87,7 @@ class _FaePresence(FeyPower):
         super().__init__(
             name="Fae Presence",
             source="Foe Foundry",
+            icon="unicorn",
             create_date=datetime(2023, 11, 21),
         )
 
@@ -106,6 +110,7 @@ class _BloodContract(FeyPower):
         super().__init__(
             name="Blood Contract",
             source="Foe Foundry",
+            icon="scroll-quill",
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
             bonus_damage=DamageType.Necrotic,
@@ -135,6 +140,7 @@ class _FaeCounterspell(FeyPower):
         super().__init__(
             name="Fae Counterspell",
             source="Foe Foundry",
+            icon="halt",
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
             bonus_damage=DamageType.Psychic,
@@ -160,7 +166,11 @@ class _FaeCounterspell(FeyPower):
 class _Awaken(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Awaken", source="Foe Foundry", power_level=HIGH_POWER, require_cr=4
+            name="Awaken",
+            source="Foe Foundry",
+            icon="deku-tree",
+            power_level=HIGH_POWER,
+            require_cr=4,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -186,6 +196,7 @@ class _FaeBargain(FeyPower):
         super().__init__(
             name="Fae Bargain",
             source="Foe Foundry",
+            icon="trade",
             power_level=HIGH_POWER,
             require_cr=4,
         )
@@ -220,6 +231,7 @@ class _DanceTune(FeyPower):
         super().__init__(
             name="Dance Tune",
             source="A5ESRD Satyr",
+            icon="ballerina-shoes",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -240,7 +252,10 @@ class _DanceTune(FeyPower):
 class _ShadowyDoppelganger(FeyPower):
     def __init__(self):
         super().__init__(
-            name="Shadowy Doppelganger", source="Foe Foundry", power_level=HIGH_POWER
+            name="Shadowy Doppelganger",
+            source="Foe Foundry",
+            icon="shadow-follower",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

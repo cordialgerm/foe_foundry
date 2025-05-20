@@ -4,6 +4,7 @@ import re
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
+from ..icons import inline_icon
 from ..jinja import render_power_fragment
 from ..powers.all import Powers
 from ..refs import MonsterRefResolver, resolve_power_ref
@@ -116,6 +117,10 @@ class LinkPreprocessor(Preprocessor):
             if power_model is None:
                 raise ValueError(f"Power {power.key} not found in PowerLookup")
             return render_power_fragment(power_model)
+
+        icon = inline_icon(entity_name)
+        if icon is not None:
+            return str(icon)
 
         return match.group(0)
 

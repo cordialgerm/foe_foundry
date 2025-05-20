@@ -1,7 +1,6 @@
-# build_docs.sh
 #!/bin/bash
 
-# Make sure we stop on any error
+# Stop on any error
 set -e
 
 # Move back to the root of the repository

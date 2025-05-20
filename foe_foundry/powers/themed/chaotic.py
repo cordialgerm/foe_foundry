@@ -26,6 +26,7 @@ class ChaoticPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Cultist",
@@ -45,6 +46,7 @@ class ChaoticPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="Chaotic",
+            icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
@@ -61,6 +63,7 @@ class _ChaoticSpace(ChaoticPower):
         super().__init__(
             name="Chaotic Space",
             source="Foe Foundry",
+            icon="misdirection",
             power_level=LOW_POWER,
             require_cr=5,
         )
@@ -88,6 +91,7 @@ class _EldritchBeacon(ChaoticPower):
         super().__init__(
             name="Eldritch Beacon",
             source="Foe Foundry",
+            icon="pentacle",
             power_level=HIGH_POWER,
             require_cr=5,
             require_callback=self.can_summon,

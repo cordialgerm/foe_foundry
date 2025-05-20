@@ -23,6 +23,7 @@ class OgrePower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str = "ogre",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -33,6 +34,7 @@ class OgrePower(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             power_type=PowerType.Creature,
+            icon=icon,
             theme="ogre",
             reference_statblock="Ogre",
             score_args=dict(require_callback=is_ogre, require_types=CreatureType.Giant)
@@ -45,6 +47,7 @@ class _Wallsmash(OgrePower):
         super().__init__(
             name="Wallsmasha",
             source="Foe Foundry",
+            icon="broken-wall",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 4, 7),
         )
@@ -75,6 +78,7 @@ class _BurnBelch(OgrePower):
         super().__init__(
             name="Burnbelch",
             source="Foe Foundry",
+            icon="gas-stove",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 4, 7),
         )
@@ -100,6 +104,7 @@ class _ChainCrack(OgrePower):
         super().__init__(
             name="Chaincrack",
             source="Foe Foundry",
+            icon="andromeda-chain",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 4, 7),
         )

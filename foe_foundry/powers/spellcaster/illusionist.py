@@ -36,7 +36,7 @@ IllusionistExpertSpells = (
 
 class _IllusionistWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Illusionist", **kwargs)
+        super().__init__(creature_name="Illusionist", icon="magic-trick", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return Projection.generate_features(stats)

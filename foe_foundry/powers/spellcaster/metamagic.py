@@ -25,6 +25,7 @@ class _MetamagicPower(PowerWithStandardScoring):
         *,
         name: str,
         caster_types: CasterType | set[CasterType],
+        icon: str = "magic-swirl",
         power_level: float = MEDIUM_POWER,
         **kwargs,
     ):
@@ -44,6 +45,7 @@ class _MetamagicPower(PowerWithStandardScoring):
             source="Foe Foundry",
             theme="Metamagic",
             reference_statblock="Mage",
+            icon=icon,
             power_level=power_level,
             create_date=datetime(2025, 3, 7),
             score_args=score_args,

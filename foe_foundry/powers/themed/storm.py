@@ -15,6 +15,7 @@ class StormPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -23,6 +24,7 @@ class StormPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="storm",
+            icon=icon,
             reference_statblock="Storm Giant",
             power_level=power_level,
             power_type=PowerType.Theme,
@@ -51,6 +53,7 @@ class _TempestSurge(StormPower):
         super().__init__(
             name="Tempest Surge",
             source="Foe Foundry",
+            icon="lightning-storm",
             power_level=HIGH_POWER,
             require_cr=3,
         )
@@ -75,7 +78,10 @@ class _TempestSurge(StormPower):
 class _StormcallersFury(StormPower):
     def __init__(self):
         super().__init__(
-            name="Stormcaller's Fury", source="SRD5.1 Call Lightning", require_cr=3
+            name="Stormcaller's Fury",
+            icon="lightning-dissipation",
+            source="SRD5.1 Call Lightning",
+            require_cr=3,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

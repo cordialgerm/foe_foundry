@@ -17,6 +17,7 @@ class CharmingPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         reference_statblock: str = "Enchanter Mage",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
@@ -54,6 +55,7 @@ class CharmingPower(PowerWithStandardScoring):
             theme="Charm",
             reference_statblock=reference_statblock,
             source=source,
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Theme,
             create_date=create_date,
@@ -74,6 +76,7 @@ class _MentalSummons(CharmingPower):
     def __init__(self):
         super().__init__(
             name="Mental Summons",
+            icon="telepathy",
             source="A5E SRD Murmuring Worm",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
@@ -96,6 +99,7 @@ class _SweetPromises(CharmingPower):
         super().__init__(
             name="Sweet Promises",
             source="A5E SRD Rakshasa",
+            icon="smitten",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
         )
@@ -119,6 +123,7 @@ class _WardingCharm(CharmingPower):
     def __init__(self):
         super().__init__(
             name="Warding Charm",
+            icon="heart-shield",
             source="A5E SRD Vampire",
             create_date=datetime(2023, 11, 23),
         )
@@ -138,7 +143,10 @@ class _WardingCharm(CharmingPower):
 class _CharmingWords(CharmingPower):
     def __init__(self):
         super().__init__(
-            name="Charming Words", source="SRD5.1 Charm Person", power_level=LOW_POWER
+            name="Charming Words",
+            source="SRD5.1 Charm Person",
+            icon="convince",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

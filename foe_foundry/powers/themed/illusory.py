@@ -23,6 +23,7 @@ class Illusory(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -44,7 +45,8 @@ class Illusory(PowerWithStandardScoring):
             create_date=create_date,
             power_type=PowerType.Theme,
             power_level=power_level,
-            theme="tricky",
+            theme="illusory",
+            icon=icon,
             reference_statblock="Adult Green Dragon",
             score_args=dict(
                 require_types={
@@ -72,7 +74,9 @@ class Illusory(PowerWithStandardScoring):
 
 class _Projection(Illusory):
     def __init__(self):
-        super().__init__(name="Projection", source="SRD5.1 Project Image")
+        super().__init__(
+            name="Projection", icon="invisible", source="SRD5.1 Project Image"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -91,7 +95,10 @@ class _Projection(Illusory):
 class _SpectralDuplicate(Illusory):
     def __init__(self):
         super().__init__(
-            name="Spectral Duplicate", source="Foe Foundry", power_level=HIGH_POWER
+            name="Spectral Duplicate",
+            icon="backup",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -108,7 +115,9 @@ class _SpectralDuplicate(Illusory):
 
 class _MirrorImage(Illusory):
     def __init__(self):
-        super().__init__(name="Mirror Image", source="SRD5.1 Mirror Image")
+        super().__init__(
+            name="Mirror Image", icon="backup", source="SRD5.1 Mirror Image"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         ac = 10 + stats.attributes.stat_mod(Stats.DEX)
@@ -125,7 +134,10 @@ class _MirrorImage(Illusory):
 class _HypnoticPattern(Illusory):
     def __init__(self):
         super().__init__(
-            name="Hypnotic Pattern", source="SRD5.1 Hypnotic Pattern", require_cr=5
+            name="Hypnotic Pattern",
+            icon="star-swirl",
+            source="SRD5.1 Hypnotic Pattern",
+            require_cr=5,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -144,7 +156,7 @@ class _HypnoticPattern(Illusory):
 
 class _ReverseFortune(Illusory):
     def __init__(self):
-        super().__init__(name="Reverse Fortune", source="Foe Foundry")
+        super().__init__(name="Reverse Fortune", icon="dice-fire", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -160,7 +172,10 @@ class _ReverseFortune(Illusory):
 class _PhantomMirage(Illusory):
     def __init__(self):
         super().__init__(
-            name="Phantom Mirage", source="Foe Foundry", power_level=LOW_POWER
+            name="Phantom Mirage",
+            icon="heat-haze",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

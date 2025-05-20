@@ -24,6 +24,7 @@ class TemporalPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -31,6 +32,7 @@ class TemporalPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             theme="temporal",
             reference_statblock="Divination Mage",
             power_level=power_level,
@@ -58,6 +60,7 @@ class _CurseOfTheAges(TemporalPower):
         super().__init__(
             name="Curse of the Ages",
             source="Foe Foundry",
+            icon="time-trap",
             power_level=EXTRA_HIGH_POWER,
             require_cr=10,
         )
@@ -82,7 +85,12 @@ class _CurseOfTheAges(TemporalPower):
 
 class _TemporalLoop(TemporalPower):
     def __init__(self):
-        super().__init__(name="Temporal Loop", source="Foe Foundry", require_cr=3)
+        super().__init__(
+            name="Temporal Loop",
+            icon="backward-time",
+            source="Foe Foundry",
+            require_cr=3,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30
@@ -111,6 +119,7 @@ class _TemporalMastery(TemporalPower):
         super().__init__(
             name="Temporal Mastery",
             source="Foe Foundry",
+            icon="pocket-watch",
             power_level=HIGH_POWER,
             require_cr=7,
         )
@@ -132,6 +141,7 @@ class _Accelerate(TemporalPower):
         super().__init__(
             name="Accelerate Time",
             source="Foe Foundry",
+            icon="extra-time",
             power_level=HIGH_POWER,
             require_cr=4,
         )
@@ -150,7 +160,9 @@ class _Accelerate(TemporalPower):
 
 class _AlterFate(TemporalPower):
     def __init__(self):
-        super().__init__(name="Alter Fate", source="Alter Fate", require_cr=4)
+        super().__init__(
+            name="Alter Fate", icon="card-random", source="Alter Fate", require_cr=4
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -167,6 +179,7 @@ class _WallOfTime(TemporalPower):
     def __init__(self):
         super().__init__(
             name="Wall of Time",
+            icon="time-trap",
             source="Deep Magic: Time Magic - Wall of Time",
             require_cr=5,
         )
@@ -188,7 +201,10 @@ class _WallOfTime(TemporalPower):
 class _Reset(TemporalPower):
     def __init__(self):
         super().__init__(
-            name="Reset", source="Deep Magic: Time Magic - Reset", require_cr=5
+            name="Reset",
+            icon="recycle",
+            source="Deep Magic: Time Magic - Reset",
+            require_cr=5,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

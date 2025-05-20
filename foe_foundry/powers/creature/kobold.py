@@ -23,6 +23,7 @@ class KoboldPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 4, 9),
         **score_args,
@@ -31,6 +32,7 @@ class KoboldPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="kobold",
+            icon=icon,
             reference_statblock="Kobold",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -48,6 +50,7 @@ class _DraconicServants(KoboldPower):
         super().__init__(
             name="Draconic Servants",
             source="Foe Foundry",
+            icon="kneeling",
             power_level=LOW_POWER,
         )
 
@@ -66,6 +69,7 @@ class _DraconicStandard(KoboldPower):
         super().__init__(
             name="Draconic Standard",
             source="Foe Foundry",
+            icon="knight-banner",
             power_level=MEDIUM_POWER,
         )
 
@@ -101,6 +105,7 @@ class _DraconicAscension(KoboldPower):
         super().__init__(
             name="Draconic Ascension",
             source="Foe Foundry",
+            icon="dragon-head",
             power_level=MEDIUM_POWER,
         )
 
@@ -125,6 +130,7 @@ class _ScurryingFormation(KoboldPower):
         super().__init__(
             name="Scurrying Formation",
             source="Foe Foundry",
+            icon="shield-impact",
             power_level=LOW_POWER,
             require_roles=MonsterRole.Soldier,
         )
@@ -143,6 +149,7 @@ class _FalseRetreat(KoboldPower):
         super().__init__(
             name="False Retreat",
             source="Foe Foundry",
+            icon="run",
             power_level=LOW_POWER,
             require_roles=MonsterRole.Soldier,
         )

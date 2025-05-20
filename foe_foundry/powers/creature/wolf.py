@@ -17,7 +17,9 @@ from ..power import (
 
 
 class _WolfPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self, name: str, icon: str, power_level: float = MEDIUM_POWER, **score_args
+    ):
         def require_callback(s: BaseStatblock) -> bool:
             return s.creature_subtype == "Wolf"
 
@@ -25,6 +27,7 @@ class _WolfPower(PowerWithStandardScoring):
             name=name,
             source="Foe Foundry",
             theme="wolf",
+            icon=icon,
             reference_statblock="Dire Wolf",
             power_level=power_level,
             power_type=PowerType.Creature,
@@ -39,7 +42,7 @@ class _WolfPower(PowerWithStandardScoring):
 
 class _SnappingJaws(_WolfPower):
     def __init__(self):
-        super().__init__(name="Snapping Jaws", power_level=MEDIUM_POWER)
+        super().__init__(name="Snapping Jaws", icon="jawbone", power_level=MEDIUM_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         grappled = Condition.Grappled.caption
@@ -62,7 +65,9 @@ class _SnappingJaws(_WolfPower):
 
 class _Howl(_WolfPower):
     def __init__(self):
-        super().__init__(name="Howl", power_level=MEDIUM_POWER, require_cr=1)
+        super().__init__(
+            name="Howl", icon="wolf-howl", power_level=MEDIUM_POWER, require_cr=1
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(number=stats.cr * 3, min_val=5, max_val=50)

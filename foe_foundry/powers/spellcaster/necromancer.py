@@ -33,7 +33,7 @@ NecromancerExpertSpells = (
 
 class _NecromancerWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Necromancer", **kwargs)
+        super().__init__(creature_name="Necromancer", icon="skull-staff", **kwargs)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(stats.hp.average / 2.5)

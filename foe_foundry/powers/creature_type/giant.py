@@ -20,6 +20,7 @@ class GiantPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -31,6 +32,7 @@ class GiantPower(PowerWithStandardScoring):
             name=name,
             power_type=PowerType.CreatureType,
             power_level=power_level,
+            icon=icon,
             source=source,
             create_date=create_date,
             theme="Giant",
@@ -41,7 +43,7 @@ class GiantPower(PowerWithStandardScoring):
 
 class _Boulder(GiantPower):
     def __init__(self):
-        super().__init__(name="Boulder", source="SRD 5.1 Hill Giant")
+        super().__init__(name="Boulder", source="SRD 5.1 Hill Giant", icon="rock")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -79,7 +81,10 @@ class _Boulder(GiantPower):
 class _CloudRune(GiantPower):
     def __init__(self):
         super().__init__(
-            name="Cloud Rune", source="Foe Foundry", bonus_skills=Skills.Deception
+            name="Cloud Rune",
+            source="Foe Foundry",
+            bonus_skills=Skills.Deception,
+            icon="sun-cloud",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -115,6 +120,7 @@ class _FireRune(GiantPower):
         super().__init__(
             name="Fire Rune",
             source="Foe Foundry",
+            icon="fire",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Fire,
             require_damage_exact_match=True,
@@ -150,6 +156,7 @@ class _FrostRune(GiantPower):
         super().__init__(
             name="Frost Rune",
             source="Foe Foundry",
+            icon="snowflake-1",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Cold,
             require_damage_exact_match=True,
@@ -181,7 +188,12 @@ class _FrostRune(GiantPower):
 
 class _StoneRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Stone Rune", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Stone Rune",
+            source="Foe Foundry",
+            icon="lightning-storm",
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -200,7 +212,7 @@ class _StoneRune(GiantPower):
 
 class _HillRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Hill Rune", source="Foe Foundry")
+        super().__init__(name="Hill Rune", icon="hills", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -224,6 +236,7 @@ class _StormRune(GiantPower):
         super().__init__(
             name="Storm Rune",
             source="Foe Foundry",
+            icon="lightning-helix",
             power_level=LOW_POWER,
             bonus_damage=DamageType.Lightning,
             require_damage_exact_match=True,
@@ -250,7 +263,10 @@ class _StormRune(GiantPower):
 class _Earthshaker(GiantPower):
     def __init__(self):
         super().__init__(
-            name="Earthshaker", source="Foe Foundry", attack_names=natural.Slam
+            name="Earthshaker",
+            icon="earth-spit",
+            source="Foe Foundry",
+            attack_names=natural.Slam,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -294,6 +310,7 @@ class _BigWindup(GiantPower):
         super().__init__(
             name="Big Windup",
             source="A5E SRD Cyclops",
+            icon="time-bomb",
             create_date=datetime(2023, 11, 22),
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,
@@ -314,6 +331,7 @@ class _GrabAndGo(GiantPower):
         super().__init__(
             name="Grab and Go",
             source="Foe Foundry",
+            icon="grab",
             power_level=MEDIUM_POWER,
             bonus_size=Size.Huge,
             bonus_roles=MonsterRole.Bruiser,

@@ -21,13 +21,19 @@ def is_chimera(s: BaseStatblock) -> bool:
 
 
 class ChimeraPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
             theme="chimera",
             reference_statblock="Chimera",
             power_level=power_level,
+            icon=icon,
             power_type=PowerType.Creature,
             create_date=datetime(2025, 4, 16),
             score_args=dict(
@@ -40,7 +46,7 @@ class ChimeraPower(PowerWithStandardScoring):
 
 class _DragonsBreath(ChimeraPower):
     def __init__(self):
-        super().__init__(name="Dragon's Breath")
+        super().__init__(name="Dragon's Breath", icon="dragon-breath")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = breath(
@@ -57,7 +63,7 @@ class _DragonsBreath(ChimeraPower):
 
 class _QuarellingHeads(ChimeraPower):
     def __init__(self):
-        super().__init__(name="Quarrelling Heads")
+        super().__init__(name="Quarrelling Heads", icon="hydra")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption

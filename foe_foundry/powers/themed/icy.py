@@ -16,6 +16,7 @@ class IcyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -26,6 +27,7 @@ class IcyPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="icy",
             reference_statblock="Cryomancer Mage",
             score_args=dict(
@@ -52,6 +54,7 @@ class _Frostbite(IcyPower):
         super().__init__(
             name="Frostbite",
             source="Foe Foundry",
+            icon="person-in-blizzard",
             require_cr=2,
         )
 
@@ -77,6 +80,7 @@ class _IcyTomb(IcyPower):
     def __init__(self):
         super().__init__(
             name="Icy Tomb",
+            icon="icebergs",
             source="Foe Foundry",
             power_level=HIGH_POWER,
             require_cr=3,
@@ -103,6 +107,7 @@ class _FrostNova(IcyPower):
         super().__init__(
             name="Frost Nova",
             source="Foe Foundry",
+            icon="snowflake-2",
             power_level=MEDIUM_POWER,
             require_cr=4,
         )
@@ -126,7 +131,12 @@ class _FrostNova(IcyPower):
 
 class _Hoarfrost(IcyPower):
     def __init__(self):
-        super().__init__(name="Hoarfrost", source="Foe Foundry", power_level=HIGH_POWER)
+        super().__init__(
+            name="Hoarfrost",
+            icon="frozen-orb",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -143,7 +153,10 @@ class _Hoarfrost(IcyPower):
 class _IcyShield(IcyPower):
     def __init__(self):
         super().__init__(
-            name="Icy Shield", source="Foe Foundry", require_spellcasting=True
+            name="Icy Shield",
+            icon="ice-shield",
+            source="Foe Foundry",
+            require_spellcasting=True,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -161,7 +174,11 @@ class _IcyShield(IcyPower):
 class _Blizzard(IcyPower):
     def __init__(self):
         super().__init__(
-            name="Blizzard", source="Foe Foundry", power_level=HIGH_POWER, require_cr=6
+            name="Blizzard",
+            icon="snowing",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+            require_cr=6,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

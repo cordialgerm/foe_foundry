@@ -13,6 +13,7 @@ class ZombiePower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -28,6 +29,7 @@ class ZombiePower(PowerWithStandardScoring):
             source=source,
             theme="zombie",
             reference_statblock="Zombie",
+            icon=icon,
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,
@@ -44,6 +46,7 @@ class _RottenFlesh(ZombiePower):
         super().__init__(
             name="Rotten Flesh",
             source="Foe Foundry",
+            icon="shambling-zombie",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 20),
         )
@@ -63,6 +66,7 @@ class _PutridStench(ZombiePower):
         super().__init__(
             name="Putrid Stench",
             source="Foe Foundry",
+            icon="carrion",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 20),
         )
@@ -85,6 +89,7 @@ class _SeveredLimb(ZombiePower):
     def __init__(self):
         super().__init__(
             name="Severed Limb",
+            icon="severed-hand",
             source="Foe Foundry",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 20),

@@ -27,6 +27,7 @@ class BeastPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Dire Wolf",
         create_date: datetime | None = None,
@@ -41,6 +42,7 @@ class BeastPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             theme="Beast",
+            icon=icon,
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
@@ -51,6 +53,7 @@ class _FeedingFrenzy(BeastPower):
         super().__init__(
             name="Feeding Frenzy",
             source="Foe Foundry",
+            icon="gluttony",
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.MeleeNatural,
         )
@@ -75,6 +78,7 @@ class _BestialRampage(BeastPower):
         super().__init__(
             name="Bestial Rampage",
             source="Foe Foundry",
+            icon="wolverine-claws",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             require_attack_types=AttackType.MeleeNatural,
@@ -102,6 +106,7 @@ class _Gore(BeastPower):
         super().__init__(
             name="Gore",
             source="SRD 5.1 Minotaur",
+            icon="charging-bull",
             reference_statblock="Giant Boar",
             attack_names=["-", natural_attacks.Horns],
         )
@@ -131,7 +136,11 @@ class _Gore(BeastPower):
 class _Packlord(BeastPower):
     def __init__(self):
         super().__init__(
-            name="Packlord", source="Foe Foundry", power_level=HIGH_POWER, require_cr=3
+            name="Packlord",
+            icon="wolf-head",
+            source="Foe Foundry",
+            power_level=HIGH_POWER,
+            require_cr=3,
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -162,6 +171,7 @@ class _WildInstinct(BeastPower):
         super().__init__(
             name="Wild Instinct",
             source="Foe Foundry",
+            icon="shark-bite",
             power_level=RIBBON_POWER,
         )
 
@@ -181,6 +191,7 @@ class _ScentOfWeakness(BeastPower):
         super().__init__(
             name="Scent of Weakness",
             source="Foe Foundry",
+            icon="sniffing-dog",
             power_level=LOW_POWER,
             require_attack_types=AttackType.MeleeNatural,
         )

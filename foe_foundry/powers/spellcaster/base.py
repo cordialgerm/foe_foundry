@@ -17,6 +17,7 @@ class _Spellcaster(PowerWithStandardScoring):
         spells: List[StatblockSpell],
         caster_type: CasterType,
         theme: str,
+        icon: str,
         reference_statblock: str,
         score_args: dict,
         min_cr: int = 1,
@@ -39,6 +40,7 @@ class _Spellcaster(PowerWithStandardScoring):
             power_type=PowerType.Spellcasting,
             source="Foe Foundry",
             theme=theme,
+            icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
             create_date=datetime(2023, 12, 14),
@@ -61,7 +63,13 @@ class _Spellcaster(PowerWithStandardScoring):
 
 
 class WizardPower(_Spellcaster):
-    def __init__(self, creature_name: str, reference_statblock="Mage", **kwargs):
+    def __init__(
+        self,
+        creature_name: str,
+        icon: str = "wizard-face",
+        reference_statblock="Mage",
+        **kwargs,
+    ):
         additional_score_args = kwargs.pop("score_args", {})
         existing_callback = additional_score_args.pop("require_callback", None)
 
@@ -76,6 +84,7 @@ class WizardPower(_Spellcaster):
                 theme=creature_name.lower(),
                 reference_statblock=reference_statblock,
                 caster_type=CasterType.Arcane,
+                icon=icon,
                 score_args=dict(
                     require_callback=is_wizard,
                     require_no_flags=[flags.WIZARD],

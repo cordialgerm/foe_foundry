@@ -14,6 +14,7 @@ class GnomePower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str,
         power_level: float = RIBBON_POWER,
         **score_args,
     ):
@@ -32,6 +33,7 @@ class GnomePower(PowerWithStandardScoring):
             name=name,
             power_type=PowerType.Species,
             power_level=power_level,
+            icon=icon,
             source="Foe Foundry",
             reference_statblock="Spy",
             create_date=datetime(2025, 3, 2),
@@ -44,6 +46,7 @@ class _GnomeCunning(GnomePower):
     def __init__(self):
         super().__init__(
             name="Gnome Cunning",
+            icon="fox",
             bonus_roles={
                 MonsterRole.Artillery,
                 MonsterRole.Controller,
@@ -66,6 +69,7 @@ class _GnomeIngenuity(GnomePower):
     def __init__(self):
         super().__init__(
             name="Gnome Ingenuity",
+            icon="gears",
             bonus_roles={
                 MonsterRole.Support,
                 MonsterRole.Leader,
@@ -89,6 +93,7 @@ class _GnomishInvisibility(GnomePower):
     def __init__(self):
         super().__init__(
             name="Gnomish Invisibility",
+            icon="invisible",
             bonus_roles={MonsterRole.Skirmisher, MonsterRole.Ambusher},
         )
 

@@ -26,6 +26,7 @@ class HolyPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -38,6 +39,7 @@ class HolyPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             reference_statblock="Priest",
+            icon=icon,
             score_args=dict(
                 require_stats=[Stats.WIS, Stats.CHA],
                 require_types=CreatureType.Humanoid,
@@ -62,6 +64,7 @@ class _DivineSmite(HolyPower):
         super().__init__(
             name="Divine Smite",
             source="Foe Foundry",
+            icon="sun-radiations",
             attack_names=[
                 weapon.MaceAndShield,
                 weapon.Greatsword,
@@ -84,7 +87,9 @@ class _DivineSmite(HolyPower):
 
 class _MassCureWounds(HolyPower):
     def __init__(self):
-        super().__init__(name="Mass Cure Wounds", source="SRD5.1 Mass Cure Wounds")
+        super().__init__(
+            name="Mass Cure Wounds", icon="healing", source="SRD5.1 Mass Cure Wounds"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -97,7 +102,9 @@ class _MassCureWounds(HolyPower):
 
 class _WordOfRadiance(HolyPower):
     def __init__(self):
-        super().__init__(name="Word of Radiance", source="SRD 5.1 Word of Radiance")
+        super().__init__(
+            name="Word of Radiance", icon="fireflake", source="SRD 5.1 Word of Radiance"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         target_damage = 1.5 if stats.multiattack >= 2 else 1.0
@@ -116,7 +123,7 @@ class _WordOfRadiance(HolyPower):
 
 class _Heroism(HolyPower):
     def __init__(self):
-        super().__init__(name="Heroism", source="SRD 5.1 Heroism")
+        super().__init__(name="Heroism", icon="medal", source="SRD 5.1 Heroism")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
@@ -136,7 +143,9 @@ class _Heroism(HolyPower):
 
 class _DeathWard(HolyPower):
     def __init__(self):
-        super().__init__(name="Death Ward", source="SRD 5.1 Death Ward")
+        super().__init__(
+            name="Death Ward", icon="heart-shield", source="SRD 5.1 Death Ward"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         new_hp = easy_multiple_of_five(

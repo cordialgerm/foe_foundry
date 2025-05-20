@@ -23,6 +23,7 @@ class _MagicPower(SpellPower):
             spell=spell,
             theme="magic",
             reference_statblock="Mage",
+            icon="magic-swirl",
             caster_type=CasterType.Innate,
             create_date=datetime(2023, 12, 10),
             **kwargs,

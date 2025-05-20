@@ -22,6 +22,7 @@ class BalorPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str = "horned-skull",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -33,6 +34,7 @@ class BalorPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
+            icon=icon,
             power_type=PowerType.CreatureType,
             power_level=power_level,
             create_date=create_date,
@@ -45,7 +47,10 @@ class BalorPower(PowerWithStandardScoring):
 class _FlameWhip(BalorPower):
     def __init__(self):
         super().__init__(
-            name="Flame Whip", source="Foe Foundry", create_date=datetime(2025, 3, 3)
+            name="Flame Whip",
+            source="Foe Foundry",
+            icon="whip",
+            create_date=datetime(2025, 3, 3),
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:

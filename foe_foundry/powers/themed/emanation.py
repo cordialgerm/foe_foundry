@@ -20,6 +20,7 @@ class EmanationPower(PowerWithStandardScoring):
     def __init__(
         self,
         name: str,
+        icon: str = "hexes",
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Mage",
         **kwargs,
@@ -54,6 +55,7 @@ class EmanationPower(PowerWithStandardScoring):
             source="Foe Foundry",
             power_type=PowerType.Theme,
             theme="emanation",
+            icon=icon,
             reference_statblock=reference_statblock,
             create_date=datetime(2025, 3, 9),
             power_level=power_level,

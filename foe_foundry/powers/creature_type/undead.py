@@ -15,6 +15,7 @@ class UndeadPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         reference_statblock: str = "Wight",
         power_level: float = MEDIUM_POWER,
@@ -27,6 +28,7 @@ class UndeadPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            icon=icon,
             theme="Undead",
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
@@ -43,6 +45,7 @@ class _UndeadFortitude(UndeadPower):
     def __init__(self):
         super().__init__(
             name="Undead Fortitude",
+            icon="raise-zombie",
             reference_statblock="Zombie",
             source="SRD5.1 Zombie",
         )
@@ -60,7 +63,10 @@ class _UndeadFortitude(UndeadPower):
 class _StenchOfDeath(UndeadPower):
     def __init__(self):
         super().__init__(
-            name="Stench of Death", reference_statblock="Ghast", source="SRD5.1 Hezrou"
+            name="Stench of Death",
+            icon="carrion",
+            reference_statblock="Ghast",
+            source="SRD5.1 Hezrou",
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
@@ -84,6 +90,7 @@ class _StygianBurst(UndeadPower):
         super().__init__(
             name="Stygian Burst",
             source="Foe Foundry",
+            icon="icicles-aura",
             bonus_damage=DamageType.Cold,
             require_callback=not_burning_undead,
         )
@@ -110,6 +117,7 @@ class _SoulChill(UndeadPower):
         super().__init__(
             name="Soul Chill",
             source="Foe Foundry",
+            icon="brain-freeze",
             bonus_damage=DamageType.Cold,
             require_callback=not_burning_undead,
         )
@@ -134,6 +142,7 @@ class _SoulTether(UndeadPower):
             name="Soul Tether",
             reference_statblock="Lich",
             source="SRD5.1 Lich",
+            icon="elysium-shade",
             require_cr=6,
         )
 
@@ -156,6 +165,7 @@ class _AntithesisOfLife(UndeadPower):
             name="Antithesis of Life",
             reference_statblock="Lich",
             source="Foe Foundry",
+            icon="grim-reaper",
             require_cr=4,
         )
 

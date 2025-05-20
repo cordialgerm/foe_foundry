@@ -18,6 +18,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         requires_tactics: bool = True,
@@ -47,6 +48,7 @@ class SkirmisherPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Skirmisher",
             reference_statblock="Goblin",
             score_args=standard_score_args,
@@ -58,6 +60,7 @@ class _Skirmish(SkirmisherPower):
         super().__init__(
             name="Skirmish",
             source="Foe Foundry",
+            icon="fishing-net",
             requires_tactics=True,
             require_types=CreatureType.Humanoid,
         )
@@ -85,6 +88,7 @@ class _HarrassingRetreat(SkirmisherPower):
         super().__init__(
             name="Harassing Retreat",
             source="Foe Foundry",
+            icon="arrowed",
             requires_tactics=True,
         )
 
@@ -105,7 +109,12 @@ class _HarrassingRetreat(SkirmisherPower):
 
 class _Speedy(SkirmisherPower):
     def __init__(self):
-        super().__init__(name="Speedy", source="Foe Foundry", power_level=LOW_POWER)
+        super().__init__(
+            name="Speedy",
+            source="Foe Foundry",
+            icon="fast-forward-button",
+            power_level=LOW_POWER,
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

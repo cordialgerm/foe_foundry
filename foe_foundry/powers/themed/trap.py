@@ -17,6 +17,7 @@ class Trap(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -28,6 +29,7 @@ class Trap(PowerWithStandardScoring):
             power_level=power_level,
             create_date=create_date,
             theme="trap",
+            icon=icon,
             reference_statblock="Scout",
             score_args=dict(
                 require_types={c for c in CreatureType if c.could_use_equipment},
@@ -44,7 +46,7 @@ class Trap(PowerWithStandardScoring):
 
 class _Snare(Trap):
     def __init__(self):
-        super().__init__(name="Snare", source="Foe Foundry")
+        super().__init__(name="Snare", icon="box-trap", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -65,7 +67,7 @@ class _Snare(Trap):
 
 class _SpikePit(Trap):
     def __init__(self):
-        super().__init__(name="Spike Pit", source="Foe Foundry")
+        super().__init__(name="Spike Pit", icon="spiky-pit", source="Foe Foundry")
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

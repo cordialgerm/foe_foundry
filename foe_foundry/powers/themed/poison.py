@@ -16,6 +16,7 @@ class PoisonPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -26,6 +27,7 @@ class PoisonPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             power_level=power_level,
             create_date=create_date,
+            icon=icon,
             theme="poison",
             reference_statblock="Hydra",
             score_args=dict(
@@ -65,7 +67,9 @@ class PoisonPower(PowerWithStandardScoring):
 
 class _PoisonousBurst(PoisonPower):
     def __init__(self):
-        super().__init__(name="Poisonous Burst", source="SRD5.1 Ice Mephit")
+        super().__init__(
+            name="Poisonous Burst", icon="carrion", source="SRD5.1 Ice Mephit"
+        )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
@@ -86,6 +90,7 @@ class _ToxicPoison(PoisonPower):
             name="Toxic Poison",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            icon="poison-bottle",
             create_date=datetime(2023, 11, 24),
         )
 
@@ -107,6 +112,7 @@ class _PoisonDart(PoisonPower):
         super().__init__(
             name="Poison Dart",
             source="Foe Foundry",
+            icon="dart",
             create_date=datetime(2025, 3, 2),
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
         )
@@ -133,6 +139,7 @@ class _WeakeningPoison(PoisonPower):
         super().__init__(
             name="Weakening Poison",
             source="Foe Foundry",
+            icon="potion-of-madness",
             create_date=datetime(2025, 3, 2),
         )
 
@@ -154,6 +161,7 @@ class _PoisonousBlood(PoisonPower):
         super().__init__(
             name="Poisonous Blood",
             source="Foe Foundry",
+            icon="foamy-disc",
             create_date=datetime(2025, 3, 14),
         )
 
@@ -173,6 +181,7 @@ class _VenemousMiasma(PoisonPower):
         super().__init__(
             name="Venemous Miasma",
             source="Foe Foundry",
+            icon="poison-gas",
             create_date=datetime(2025, 3, 14),
         )
 
@@ -192,6 +201,7 @@ class _VileVomit(PoisonPower):
         super().__init__(
             name="Vile Vomit",
             source="Foe Foundry",
+            icon="foamy-disc",
             create_date=datetime(2025, 3, 14),
             require_types=[CreatureType.Undead, CreatureType.Monstrosity],
         )

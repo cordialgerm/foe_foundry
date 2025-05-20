@@ -17,6 +17,7 @@ class BruiserPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Ogre",
@@ -34,6 +35,7 @@ class BruiserPower(PowerWithStandardScoring):
             power_level=power_level,
             source=source,
             create_date=create_date,
+            icon=icon,
             theme="Bruiser",
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
@@ -45,6 +47,7 @@ class _GrapplingStrike(BruiserPower):
         super().__init__(
             name="Grappler",
             source="A5E SRD Grappler",
+            icon="grab",
             attack_names={natural_attacks.Slam},
         )
 
@@ -77,6 +80,7 @@ class _CleavingBlows(BruiserPower):
         super().__init__(
             name="Cleaving Blows",
             source="Foe Foundry",
+            icon="meat-cleaver",
             attack_names={weapon.Greataxe, natural_attacks.Claw},
         )
 
@@ -95,6 +99,7 @@ class _StunningBlow(BruiserPower):
         super().__init__(
             name="Stunning Blow",
             source="Foe Foundry",
+            icon="wood-club",
             power_level=HIGH_POWER,
             require_cr=1,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
@@ -119,6 +124,7 @@ class _Rend(BruiserPower):
         super().__init__(
             name="Rend",
             source="Foe Foundry",
+            icon="tearing",
             attack_names={
                 natural_attacks.Bite,
                 natural_attacks.Horns,

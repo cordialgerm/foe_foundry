@@ -24,6 +24,7 @@ class GhoulPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -36,6 +37,7 @@ class GhoulPower(PowerWithStandardScoring):
             power_level=power_level,
             power_type=PowerType.Creature,
             create_date=create_date,
+            icon=icon,
             score_args=dict(
                 require_callback=is_ghoul,
                 require_types=CreatureType.Undead,
@@ -49,6 +51,7 @@ class _Cannibal(GhoulPower):
         super().__init__(
             name="Cannibal",
             source="Foe Foundry",
+            icon="eating",
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 20),
         )

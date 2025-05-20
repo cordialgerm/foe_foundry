@@ -27,6 +27,7 @@ class ElementalPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         **score_args,
@@ -44,6 +45,7 @@ class ElementalPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="Elemental",
             reference_statblock="Fire Elemental",
+            icon=icon,
             score_args=standard_score_args,
         )
 
@@ -55,12 +57,13 @@ class ElementalPower(PowerWithStandardScoring):
 
 
 class _DamagingAura(ElementalPower):
-    def __init__(self, name: str, damage_type: DamageType):
+    def __init__(self, name: str, damage_type: DamageType, icon: str):
         super().__init__(
             name=name,
             power_level=HIGH_POWER,
             source="Foe Foundry",
             require_damage=damage_type,
+            icon=icon,
         )
         self.name = name
         self.damage_type = damage_type
@@ -80,12 +83,13 @@ class _DamagingAura(ElementalPower):
 class _ElementalAffinity(ElementalPower):
     """This creature is aligned to a particular element"""
 
-    def __init__(self, damage_type: DamageType):
+    def __init__(self, damage_type: DamageType, icon: str):
         super().__init__(
             name=f"{damage_type.name.capitalize()} Affinity",
             source="Foe Foundry",
             power_level=LOW_POWER,
             require_damage=damage_type,
+            icon=icon,
         )
         self.damage_type = damage_type
 
@@ -125,6 +129,7 @@ class _ElementalSmite(ElementalPower):
             name=name,
             source="Foe Foundry",
             require_damage=dmg_type,
+            icon="saber-slash",
             require_attack_types=AttackType.AllMelee(),
         )
         self.dmg_type = dmg_type
@@ -173,11 +178,12 @@ class _ElementalSmite(ElementalPower):
 
 
 class _ElementalBurst(ElementalPower):
-    def __init__(self, damage_type: DamageType):
+    def __init__(self, damage_type: DamageType, icon: str = "bright-explosion"):
         name = damage_type.adj.capitalize() + " Burst"
         super().__init__(
             name=name,
             source="Foe Foundry",
+            icon=icon,
             require_damage=damage_type,
         )
         self.damage_type = damage_type
@@ -204,6 +210,7 @@ class _ElementalFireball(ElementalPower):
         super().__init__(
             name="Elemental Fireball",
             source="Foe Foundry",
+            icon="fireball",
             require_damage=DamageType.Fire,
             power_level=HIGH_POWER,
         )
@@ -231,6 +238,7 @@ class _AcidicBlast(ElementalPower):
         super().__init__(
             name="Acidic Blast",
             source="Foe Foundry",
+            icon="acid",
             require_damage=DamageType.Acid,
             power_level=HIGH_POWER,
         )
@@ -265,6 +273,7 @@ class _ConeOfCold(ElementalPower):
         super().__init__(
             name="Cone of Cold",
             source="Foe Foundry",
+            icon="icicles-fence",
             require_damage=DamageType.Cold,
             power_level=HIGH_POWER,
         )
@@ -292,6 +301,7 @@ class _LightningBolt(ElementalPower):
         super().__init__(
             name="Lightning Bolt",
             source="Foe Foundry",
+            icon="lightning-branches",
             require_damage=DamageType.Lightning,
             power_level=HIGH_POWER,
         )
@@ -319,6 +329,7 @@ class _PoisonCloud(ElementalPower):
         super().__init__(
             name="Poison Cloud",
             source="Foe Foundry",
+            icon="poison-gas",
             require_damage=DamageType.Poison,
             power_level=HIGH_POWER,
         )
@@ -349,6 +360,7 @@ class _Thunderwave(ElementalPower):
         super().__init__(
             name="Thunderwave",
             source="Foe Foundry",
+            icon="rolling-energy",
             require_damage=DamageType.Thunder,
             power_level=HIGH_POWER,
         )
@@ -378,6 +390,7 @@ class _ElementalReplication(ElementalPower):
         super().__init__(
             name="Elemental Replication",
             source="Foe Foundry",
+            icon="backup",
             power_level=HIGH_POWER,
             require_secondary_damage_type=True,
             require_cr=4.0,
@@ -402,15 +415,17 @@ class _ElementalReplication(ElementalPower):
         return [feature]
 
 
-FireElementalAffinity = _ElementalAffinity(DamageType.Fire)
-IceElementalAffinity = _ElementalAffinity(DamageType.Cold)
-AcidElementalAffinity = _ElementalAffinity(DamageType.Acid)
-LightningElementalAffinity = _ElementalAffinity(DamageType.Lightning)
-PoisonElementalAffinity = _ElementalAffinity(DamageType.Poison)
+FireElementalAffinity = _ElementalAffinity(DamageType.Fire, icon="wildfires")
+IceElementalAffinity = _ElementalAffinity(DamageType.Cold, icon="snowing")
+AcidElementalAffinity = _ElementalAffinity(DamageType.Acid, icon="acid-blob")
+LightningElementalAffinity = _ElementalAffinity(
+    DamageType.Lightning, icon="lightning-storm"
+)
+PoisonElementalAffinity = _ElementalAffinity(DamageType.Poison, icon="mushrooms")
 
-FireBurst = _ElementalBurst(DamageType.Fire)
-IceBurst = _ElementalBurst(DamageType.Cold)
-AcidBurst = _ElementalBurst(DamageType.Acid)
+FireBurst = _ElementalBurst(DamageType.Fire, icon="fire-ray")
+IceBurst = _ElementalBurst(DamageType.Cold, icon="ice-spear")
+AcidBurst = _ElementalBurst(DamageType.Acid, icon="chemical-bolt")
 LightningBurst = _ElementalBurst(DamageType.Lightning)
 PoisonBurst = _ElementalBurst(DamageType.Poison)
 
@@ -422,19 +437,27 @@ LightningSmite = _ElementalSmite(DamageType.Lightning)
 PoisonSmite = _ElementalSmite(DamageType.Poison)
 
 
-CorrosiveFumesAura = _DamagingAura(name="Corrosive Fumes", damage_type=DamageType.Acid)
-ArcticChillAura = _DamagingAura(name="Arctic Chill", damage_type=DamageType.Cold)
-SuperheatedAura = _DamagingAura(name="Superheated", damage_type=DamageType.Fire)
+CorrosiveFumesAura = _DamagingAura(
+    name="Corrosive Fumes", damage_type=DamageType.Acid, icon="bottle-vapors"
+)
+ArcticChillAura = _DamagingAura(
+    name="Arctic Chill", damage_type=DamageType.Cold, icon="thermometer-cold"
+)
+SuperheatedAura = _DamagingAura(
+    name="Superheated", damage_type=DamageType.Fire, icon="thermometer-hot"
+)
 DisintegratingAura = _DamagingAura(
-    name="Disintegrating Presence", damage_type=DamageType.Force
+    name="Disintegrating Presence", damage_type=DamageType.Force, icon="disintegrate"
 )
 ArcingElectricityAura = _DamagingAura(
-    name="Arcing Electricity", damage_type=DamageType.Lightning
+    name="Arcing Electricity", damage_type=DamageType.Lightning, icon="electric-whip"
 )
 DeathlyPresenceAura = _DamagingAura(
-    name="Deathly Presence", damage_type=DamageType.Necrotic
+    name="Deathly Presence", damage_type=DamageType.Necrotic, icon="death-zone"
 )
-ToxicPresenceAura = _DamagingAura(name="Toxic Presence", damage_type=DamageType.Poison)
+ToxicPresenceAura = _DamagingAura(
+    name="Toxic Presence", damage_type=DamageType.Poison, icon="poison-gas"
+)
 ElementalFireball = _ElementalFireball()
 AcidicBlast = _AcidicBlast()
 ConeOfCold = _ConeOfCold()

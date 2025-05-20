@@ -17,6 +17,7 @@ class CruelPower(PowerWithStandardScoring):
         self,
         name: str,
         source: str,
+        icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Berserker",
@@ -43,6 +44,7 @@ class CruelPower(PowerWithStandardScoring):
             power_type=PowerType.Theme,
             source=source,
             theme="cruel",
+            icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
@@ -55,6 +57,7 @@ class _BloodiedFrenzy(CruelPower):
         super().__init__(
             name="Bloodied Frenzy",
             source="Foe Foundry",
+            icon="enrage",
             require_cr=3,
         )
 
@@ -76,6 +79,7 @@ class _BrutalCritical(CruelPower):
         super().__init__(
             name="Brutal Critical",
             source="SRD5.1 Champion, Barbarian",
+            icon="decapitation",
             power_level=HIGH_POWER,
             require_no_flags=flags.MODIFIES_CRITICAL,
         )
