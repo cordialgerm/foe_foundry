@@ -137,7 +137,12 @@ NecromancerVariant = MonsterVariant(
     description="Necromancers are mages who specialize in death magic. They can raise the dead to serve as their minions, drain the life force from their enemies, or create powerful curses and hexes to bring ruin to their foes.",
     monsters=[
         Monster(name="Necromancer Adept", cr=4),
-        Monster(name="Necromancer Mage", cr=6, srd_creatures=["Mage"]),
+        Monster(
+            name="Necromancer Mage",
+            cr=6,
+            srd_creatures=["Mage"],
+            other_creatures={"Necromancer": "alias"},
+        ),
         Monster(name="Necromancer Archmage", cr=12, srd_creatures=["Archmage"]),
         Monster(name="Necromancer Primagus", cr=16, is_legendary=True),
     ],

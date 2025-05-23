@@ -26,18 +26,18 @@ SpellcasterPowers: List[Power] = (
     abjurer.AbjurationWizards()
     + celestial.CelestialCasters
     + conjurer.ConjurationWizards()
-    + cult.CultCasters()
+    + cult.CultCasters
     + divination.DivinationWizards()
     + druidic.DruidicPowers
     + elementalist.ElementalistWizards
     + enchanter.EnchanterWizards()
-    + fiendish.FiendishCasters()
+    + fiendish.FiendishSpellcasters
     + illusionist.IllusionistWizards()
     + magic.MagicPowers
     + metamagic.MetamagicPowers
     + oath.OathCasters
     + necromancer.NecromancerWizards
-    + psionic.PsionicCasters()
+    + psionic.PsionicSpellcasters
     + shaman.ShamanPowers
     + transmuter.TransmutationWizards()
 )

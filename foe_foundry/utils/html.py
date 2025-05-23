@@ -7,8 +7,11 @@ def remove_h2_sections(html: str, h2_ids_to_remove: list[str]) -> str:
     soup = BeautifulSoup(html, "html.parser")
     h2_tags = soup.find_all("h2")
 
+    if h2_tags is None or len(h2_tags) == 0:
+        return html
+
     for h2 in h2_tags:
-        if h2.get("id") in h2_ids_to_remove:  # type: ignore
+        if h2 is not None and h2.attrs is not None and h2.get("id") in h2_ids_to_remove:  # type: ignore
             current = h2
             while True:
                 next_sibling = current.find_next_sibling()

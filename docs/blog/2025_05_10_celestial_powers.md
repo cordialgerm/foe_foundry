@@ -34,7 +34,7 @@ With [[Awe Inspiring Gaze]], you can really lean into the otherworldy grace and 
 
 [[!Absolute Conviction]]
 
-[[Absolute Conviction]] is a great way to flavorfully show how dedicated your [[Knight]], [[Priest]], or [[Angel]] is. Be sure to voice a flavorful quote like "My faith will never falter!" when activating the ability.
+[[Absolute Conviction]] is a great way to flavorfully show how dedicated your [[Knight]], [[Priest]], or **Angel** is. Be sure to voice a flavorful quote like "My faith will never falter!" when activating the ability.
 
 [[!Divine Mercy]]
 
@@ -50,7 +50,7 @@ With [[Awe Inspiring Gaze]], you can really lean into the otherworldy grace and 
 
 [[!Death Ward]]
 
-[[Death Ward]] is a fun and interesting holy magic ability. The [[Angel]] or [[Priest]] doesn't even have to use it on its own allies. It can use it to offer mercy to one of the PCs.
+[[Death Ward]] is a fun and interesting holy magic ability. The **Angel** or [[Priest]] doesn't even have to use it on its own allies. It can use it to offer mercy to one of the PCs.
 
 [[!Guidance]]
 

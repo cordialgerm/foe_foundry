@@ -13,10 +13,7 @@ from ..powers.creature_type.aberration import AberrationPowers
 from ..powers.creature_type.fiend import FiendishPowers
 from ..powers.creature_type.undead import UndeadPowers
 from ..powers.roles.defender import Protection
-from ..powers.spellcaster.cult import CultCasters
-from ..powers.spellcaster.fiendish import FiendishCasters
-from ..powers.spellcaster.necromancer import NecromancerWizards
-from ..powers.spellcaster.psionic import PsionicCasters
+from ..powers.spellcaster import cult, fiendish, necromancer, psionic
 from ..powers.themed.cruel import CruelPowers
 from ..powers.themed.cursed import (
     BestowCurse,
@@ -54,9 +51,17 @@ CultistVariant = MonsterVariant(
         Monster(
             name="Cultist Grand Master",
             cr=10,
-            other_creatures={"Cultist Hierophant": "mm25"},
+            other_creatures={
+                "Cultist Hierophant": "mm25",
+                "Cult Grand Master": "alias",
+            },
         ),
-        Monster(name="Cultist Exarch", cr=14, is_legendary=True),
+        Monster(
+            name="Cultist Exarch",
+            cr=14,
+            is_legendary=True,
+            other_creatures={"Cult Exarch": "alias"},
+        ),
     ],
 )
 
@@ -64,11 +69,19 @@ AberrantVariant = MonsterVariant(
     name="Aberrant Cultist",
     description="Aberrant cultists pursue mind-bending powers from alien forces.",
     monsters=[
-        Monster(name="Aberrant Cultist Initiate", cr=4),
+        Monster(
+            name="Aberrant Cultist Initiate",
+            cr=4,
+            other_creatures={"Aberrant Cult Initiate": "alias"},
+        ),
         Monster(
             name="Aberrant Cultist", cr=8, other_creatures={"Aberrant Cultist": "mm25"}
         ),
-        Monster(name="Aberrant Cultist Grand Master", cr=14),
+        Monster(
+            name="Aberrant Cultist Grand Master",
+            cr=14,
+            other_creatures={"Aberrant Cult Grand Master": "alias"},
+        ),
     ],
 )
 
@@ -76,9 +89,17 @@ NecroVariant = MonsterVariant(
     name="Death Cultist",
     description="Death cultists revel in nihilistic forces, embracing them as paths to undeath, multiversal purity, or entropic inevitability. These cultists serve powerful undead beings, apocalyptic prophecies, or immortals with power over death",
     monsters=[
-        Monster(name="Death Cultist Initiate", cr=4),
+        Monster(
+            name="Death Cultist Initiate",
+            cr=4,
+            other_creatures={"Death Cult Initiate": "alias"},
+        ),
         Monster(name="Death Cultist", cr=8, other_creatures={"Death Cultist": "mm25"}),
-        Monster(name="Death Cultist Grand Master", cr=14),
+        Monster(
+            name="Death Cultist Grand Master",
+            cr=14,
+            other_creatures={"Death Cult Grand Master": "alias"},
+        ),
     ],
 )
 
@@ -120,23 +141,33 @@ class _CustomWeights(CustomPowerSelection):
         if self.stats.cr >= 2:
             powers += [RejectDivinity, RayOfEnfeeblement, UnholyAura, BestowCurse]
             powers += DomineeringPowers
-            highly_desirable_powers += CultCasters()
+
+            spellcasting = cult.spellcaster_for_cr(self.stats.cr)
+            if spellcasting is not None:
+                highly_desirable_powers += [spellcasting]
 
         if self.variant is AberrantVariant:
             powers += AberrationPowers
             powers += PsychicPowers
-            highly_desirable_powers += PsionicCasters()
+            spellcasting = psionic.spellcaster_for_cr(self.stats.cr)
+            if spellcasting is not None:
+                highly_desirable_powers += [spellcasting]
 
         if self.variant is NecroVariant:
             powers += DeathlyPowers
             powers += UndeadPowers
-            highly_desirable_powers += NecromancerWizards
+            spellcasting = necromancer.spellcaster_for_cr(self.stats.cr)
+            if spellcasting is not None:
+                highly_desirable_powers += [spellcasting]
 
         if self.variant is FiendVariant:
             powers += CruelPowers
             powers += CursedPowers
             powers += FiendishPowers
-            highly_desirable_powers += FiendishCasters()
+
+            spellcasting = fiendish.spellcaster_for_cr(self.stats.cr)
+            if spellcasting is not None:
+                highly_desirable_powers += [spellcasting]
 
         if p in highly_desirable_powers:
             return CustomPowerWeight(2.0, ignore_usual_requirements=True)

@@ -63,7 +63,7 @@ Get started with these example statblocks. Don't worry, there's a lot more where
 
 | d8 | Adventure Hook |
 |----|----------------|
-| 1 | A mighty [[Warchief of the Bloody Fang]] is gathering all the orcs in the surrounding region under his Crimson Banner. So far, he has gathered 1d4 of the 5 clans under his sway. The chieftain must be dealt with somehow before the warbands unify, or it spells certain doom for the surrounding region. |
+| 1 | A mighty [[Orc Warchief of the Bloody Fang]] is gathering all the orcs in the surrounding region under his Crimson Banner. So far, he has gathered 1d4 of the 5 clans under his sway. The chieftain must be dealt with somehow before the warbands unify, or it spells certain doom for the surrounding region. |
 | 2 | An orc warband, led by an [[Orc Bloodrite Shaman]], are making a pilgrimage to an ancient site of significance to their ancestral spirits. Though the orcs are peaceful, the locals are suspicious and want the party to "deal with them". |
 | 3 | A well-respected [[Orc Warchief of the Bloody Fang]] is dying and insists on a ritual trial to choose between two rival successors ([[Orc Warchiefs]]). The chief has invited the PCs, who are known for their great strength, to serve as judges to adjudicate. One candidate seeks aggressive expansion of the clan, while the other wishes to focus on internal matters. |
 | 4 | A grizzled [[Orc Bloodrite Elder Shaman]] has had a vision and believes that the curse of the bloodrage on his clan can be broken, if only the [[Balor]] who the ancestors made a pact with can be forced into breaking the pact. The shaman has located a relic that can be used to summon the foul demon and asks the party for help, offering ancient armaments under his care as a reward. |

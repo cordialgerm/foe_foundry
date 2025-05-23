@@ -58,9 +58,9 @@ As an example, if a player chooses to use *Blindness/Deafness* to blind a **Floa
 
 ## Example Combat: Using a **Runic Wards token**
 
-Let's walk through an example combat with an [[Abjurer Archmage]] who will be using the **Runic Wards token** power.
+Let's walk through an example combat with an [[Abjurer Archmage]] who will be using the **Runic Wards** token power.
 
-[[!Runic Wards token]]
+[[!Runic Wards]]
 
 [[!Abjurer Archmage]]
 
@@ -99,7 +99,7 @@ In this example above, we can see how the token served two purposes:
 - Tokens should have a noticeable and immediate impact, otherwise there is no motivation for the players to interact with the token
 - If a token imposes an effect, it's usually simpler to have that effect happen at the start or end of the turn of any character within the effect range of the token
 - However, if the token needs to take its own turn, simply have the token join initiative count 0
-- You can use Tokens to telegraph powerful abilities. For example, a powerful [[Evoker Primagus]] could place a **Meteor Swarm Beckoning token** on the map that calls down a *Meteor Swarm* at the end of its second turn
+- You can use Tokens to telegraph powerful abilities. For example, a powerful [[Conjurer Primagus]] could place a **Meteor Swarm Beckoning token** on the map that calls down a *Meteor Swarm* at the end of its second turn
 - If a monster creates a Token, be sure this is either as a bonus action or a replacement effect of one of its multiattacks so that the monster's action economy isn't harmed too much by creating the token
 
 ## Why Don't Tokens have HP?

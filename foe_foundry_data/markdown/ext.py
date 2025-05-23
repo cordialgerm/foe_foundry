@@ -38,7 +38,8 @@ class FoeFoundryMdExtension(Extension):
 
 
 class LinkPreprocessor(Preprocessor):
-    LINK_RE = re.compile(r"\[\[(?P<name1>.+?)\]\]|\*\*(?P<name2>.+?)\*\*")
+    LINK_BOLD_RE = re.compile(r"\*\*(?P<name>.+?)\*\*")
+    LINK_SPECIAL_RE = re.compile(r"\[\[(?P<name>.+?)\]\]")
     BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
     EMBED_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
     NEWSLETTER_RE = re.compile(r"\[\[\@(?P<text>.+?)\]\]")
@@ -61,20 +62,20 @@ class LinkPreprocessor(Preprocessor):
             new_line = self.EMBED_RE.sub(self.replace_embed, line)
             new_line = self.NEWSLETTER_RE.sub(self.replace_newsletter, new_line)
             new_line = self.BUTTON_RE.sub(self.replace_button, new_line)
-            new_line = self.LINK_RE.sub(self.replace_link, new_line)
+            new_line = self.LINK_BOLD_RE.sub(self.replace_link, new_line)
+            new_line = self.LINK_SPECIAL_RE.sub(self.replace_link_required, new_line)
 
             new_lines.append(new_line)
         return new_lines
 
-    def replace_link(self, match: re.Match):
-        if match.group("name1"):
-            entity_name = match.group("name1")
-        elif match.group("name2"):
-            entity_name = match.group("name2")
+    def _replace_link(self, match: re.Match, require_match: bool = False):
+        if match.group("name"):
+            entity_name = match.group("name")
         else:
-            raise ValueError("No monster name found in match")
+            raise ValueError("No entity name found in match")
 
         monster_ref = self.ref_resolver.resolve_monster_ref(entity_name)
+
         if monster_ref is not None:
             self.resolved_references.append(monster_ref)
             return str(monster_link(monster_ref, self.base_url))
@@ -84,7 +85,19 @@ class LinkPreprocessor(Preprocessor):
             self.resolved_references.append(power)
             return str(power_link(power, self.base_url))
 
+        if require_match and (monster_ref is None and power is None):
+            raise ValueError(
+                f"Could not resolve reference for {entity_name}. "
+                "Ensure the name is correct and the reference exists."
+            )
+
         return f"<b>{entity_name}</b>"
+
+    def replace_link(self, match: re.Match):
+        return self._replace_link(match)
+
+    def replace_link_required(self, match: re.Match):
+        return self._replace_link(match, require_match=True)
 
     def replace_button(self, match: re.Match):
         if match.group("name3"):

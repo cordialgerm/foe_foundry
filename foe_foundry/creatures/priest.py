@@ -43,7 +43,7 @@ PriestVariant = MonsterVariant(
             cr=12,
             other_creatures={"Archpriest": "mm25"},
         ),
-        Monster(name="Archpriest Revered One", cr=16, is_legendary=True),
+        Monster(name="Archpriest Living Saint", cr=16, is_legendary=True),
     ],
 )
 
