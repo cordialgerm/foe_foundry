@@ -1,46 +1,28 @@
-from ..ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
-from ..attack_template import natural, spell, weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature_type.aberration import AberrationPowers
-from ..powers.creature_type.fiend import FiendishPowers
-from ..powers.creature_type.undead import UndeadPowers
-from ..powers.roles.defender import Protection
-from ..powers.spellcaster import cult, fiendish, necromancer, psionic
-from ..powers.themed.cruel import CruelPowers
-from ..powers.themed.cursed import (
-    BestowCurse,
-    CursedPowers,
-    RayOfEnfeeblement,
-    RejectDivinity,
-    UnholyAura,
-)
-from ..powers.themed.deathly import DeathlyPowers
-from ..powers.themed.domineering import DomineeringPowers
-from ..powers.themed.fast import Evasion
-from ..powers.themed.gadget import GadgetPowers
-from ..powers.themed.psychic import PsychicPowers
-from ..powers.themed.trap import TrapPowers
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import MonsterDials
-from ._data import (
+import numpy as np
+
+from ...ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
+from ...attack_template import natural, spell, weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from .powers import (
+    LoadoutCultExarch,
+    LoadoutCultFanatic,
+    LoadoutCultGrandMaster,
+    LoadoutCultist,
+)
 
 CultistVariant = MonsterVariant(
     name="Cultist",
@@ -114,68 +96,17 @@ FiendVariant = MonsterVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def force_powers(self) -> list[Power]:
-        # Low-CR Cultists always have Protection
-        if self.stats.cr <= 1:
-            return [Protection]
-        else:
-            return []
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = []
-        highly_desirable_powers = []
-
-        suppress_powers = GadgetPowers + TrapPowers + [Evasion]
-        if p in suppress_powers:
-            return CustomPowerWeight(0)  # Cultists shouldn't really be "high tech"
-
-        if p is Protection:
-            # Protection is always available to minion cultists
-            return CustomPowerWeight(0)
-
-        if self.stats.cr >= 2:
-            powers += [RejectDivinity, RayOfEnfeeblement, UnholyAura, BestowCurse]
-            powers += DomineeringPowers
-
-            spellcasting = cult.spellcaster_for_cr(self.stats.cr)
-            if spellcasting is not None:
-                highly_desirable_powers += [spellcasting]
-
-        if self.variant is AberrantVariant:
-            powers += AberrationPowers
-            powers += PsychicPowers
-            spellcasting = psionic.spellcaster_for_cr(self.stats.cr)
-            if spellcasting is not None:
-                highly_desirable_powers += [spellcasting]
-
-        if self.variant is NecroVariant:
-            powers += DeathlyPowers
-            powers += UndeadPowers
-            spellcasting = necromancer.spellcaster_for_cr(self.stats.cr)
-            if spellcasting is not None:
-                highly_desirable_powers += [spellcasting]
-
-        if self.variant is FiendVariant:
-            powers += CruelPowers
-            powers += CursedPowers
-            powers += FiendishPowers
-
-            spellcasting = fiendish.spellcaster_for_cr(self.stats.cr)
-            if spellcasting is not None:
-                highly_desirable_powers += [spellcasting]
-
-        if p in highly_desirable_powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        else:
-            # downvote powers not in the list because we have a lot of options above
-            return CustomPowerWeight(0.5)
+def _choose_powers(
+    variant: MonsterVariant, cr: float, rng: np.random.Generator
+) -> NewPowerSelection:
+    if cr < 1:
+        return NewPowerSelection(LoadoutCultist, rng=rng)
+    elif cr <= 4:
+        return NewPowerSelection(LoadoutCultFanatic, rng=rng)
+    elif cr <= 10:
+        return NewPowerSelection(LoadoutCultGrandMaster, rng=rng)
+    else:
+        return NewPowerSelection(LoadoutCultExarch, rng=rng)
 
 
 def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -293,17 +224,11 @@ def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # ADDITIONAL POWERS
 
-    # Cultists can use more power at higher CRs to keep them interesting
-    if variant == CultistVariant and stats.cr >= 2:
-        stats = stats.apply_monster_dials(
-            MonsterDials(recommended_powers_modifier=LOW_POWER)
-        )
-
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_choose_powers(variant, cr, rng),
     )
     features += power_features
 
