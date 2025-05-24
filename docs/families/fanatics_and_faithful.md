@@ -1,17 +1,19 @@
 ---
 title: Fanatics & the Faithful | Foe Foundry
 short_title: Fanatics & the Faithful
-description: TODO
+description: Explore the sacred and the heretical in your TTRPG campaign with Foe Foundry's priests and cultists. Discover flavorful statblocks, divine lore, and dark devotion for unforgettable encounters.
 image: img/priest.webp
 json_ld: true
 ---
+
+# Fanatics and Faithful
 
 > **Need tips for how to run religion and faith in your RPG?** The default lore of Foe Foundry is a [**Low Magic Setting**](../topics/faith.md) where divine beings do not directly communicate with mortals. If you run a setting where the gods are known to exist and actively intervene in the Mortal Realms then you can easily modify the lore to include direct involvement by the Gods. But it is much more difficult to remove the Gods from the Machine, so the lore is presented here with the least assumptions being made about your setting.
 
 | Statblock Type | Description | Examples |
 |----------------|-------------|----------|
 | [Priests](../monsters/priest.md) | *Faithful Instruments of the Divine* | [[Acolyte]], [[Priest]], [[Archpriest]] |
-| [Cultists](../monsters/cultists.md) | *Worshippers of the Occult and Forbidden*| [[Cultist]], [[Cultist Fanatic]], [[Death Cult Grand Master]] |
+| [Cultists](../monsters/cultist.md) | *Worshippers of the Occult and Forbidden*| [[Cultist]], [[Cultist Fanatic]], [[Death Cult Grand Master]] |
 
 ## Priests
 
@@ -25,7 +27,7 @@ What they do know is that their *belief* has power. The devout whispers, prayers
 
 There is no single road to becoming a conduit to the divine. Priests may be solitary mystics, village healers, war-chaplains, or archpriests leading massive temples. Some being their journeys with visions, and others with tremendous grief. For some Priests, the divine can be found through meditation, while others find it in compassionate or selfless service.
 
-[Read more about Priests](../monsters/priest.md) or check out an example priest statblock, the [[Archpriest]].
+[Explore priest statblocks and divine lore](../monsters/priest.md) or check out an example priest statblock, the [[Archpriest]].
 
 [[!Archpriest]]
 
@@ -45,7 +47,7 @@ Many cultists are driven by ambition. They offer blood, loyalty, or sanity in ex
 
 Cultists often claim their patrons are no more dangerous than the so-called “saints” of old. They ask: if a priest draws miracles from a silent god, and a cultist draws power from a whispering one, who is the true blasphemer? When power flows, and the gods remain silent, does it matter what name you cry out in the dark?
 
-[Check out more Cultists lore and statblocks](../monsters/cultists.md) or take a look at this example [[Death Cultist]]:
+[Check out more Cultists lore and statblocks](../monsters/cultist.md) or take a look at this example [[Death Cultist]]:
 
 [[!Death Cultist]]
 

@@ -60,15 +60,14 @@ class _WallOfFire(DevilPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         if stats.cr <= 7:
             uses = 1
-            notes = None
-        elif stats.cr <= 11:
-            uses = 1
-            notes = "no concentration"
+            concentration = True
         else:
-            uses = 3
-            notes = "no concentration"
+            uses = 1
+            concentration = False
 
-        spell = evocation.WallOfFire.for_statblock(uses=uses, notes=notes)
+        spell = evocation.WallOfFire.for_statblock(
+            uses=uses, concentration=concentration
+        )
 
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats.add_spell(spell)

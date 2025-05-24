@@ -92,7 +92,7 @@ A [[Death Cultist]] is fully inducted into the ranks once they have shepharded a
 
 ### Death Cultist Grand Master
 
-The [[Death Cultist Grand Master]] is in direct service to a [Greater Undead](../families/undead.md#greater-undead), perhaps hoping to learn the secrets to [Lichdom](../monsters/lich.md).s
+The [[Death Cultist Grand Master]] is in direct service to a [Greater Undead](../families/undead.md#greater-undead), perhaps hoping to learn the secrets to [Lichdom](../monsters/lich.md).
 
 [[!Death Cultist Grand Master]]
 

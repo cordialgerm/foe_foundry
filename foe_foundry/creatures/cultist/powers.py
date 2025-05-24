@@ -2,16 +2,20 @@ from ...powers import (
     PowerLoadout,
 )
 from ...powers.creature import cultist
+from ...powers.creature_type import aberration, demon, devil, elemental, fiend, undead
 from ...powers.roles import defender, leader
 from ...powers.spellcaster import cult
 from ...powers.themed import (
+    aberrant,
     anti_magic,
     charm,
     cowardly,
     cursed,
     deathly,
     domineering,
+    emanation,
     fearsome,
+    psychic,
     technique,
     tough,
 )
@@ -50,6 +54,53 @@ PerksCharismatic = [
     charm.MentalSummons,
 ]
 
+PerksAberrantBoons = [
+    psychic.DissonantWhispers,
+    psychic.MirroredPain,
+    psychic.ReadThoughts,
+    technique.GrapplingAttack,
+    aberration.MadenningWhispers,
+    aberration.TentacleGrapple,
+    aberration.TentacleSlam,
+]
+PerksAberrantBlessings = [
+    psychic.Telekinetic,
+    psychic.PsionicBlast,
+    aberration.GazeOfTheFarRealm,
+    aberrant.WarpReality,
+]
+
+PerksFiendishBoons = [
+    fiend.FiendishCackle,
+    demon.BlackBlood,
+    technique.BurningAttack,
+    technique.GrazingAttack,
+    technique.CleavingAttack,
+]
+PerksFiendishBlessings = PerksFiendishBoons + [
+    fiend.FieryTeleportation,
+    devil.WallOfFire,
+    devil.DevlishMinions,
+]
+
+PerksDeathlyBoons = [
+    deathly.WitheringBlow,
+    deathly.ShadowWalk,
+    deathly.DrainStrength,
+    undead.SoulChill,
+    undead.SoulTether,
+    undead.StenchOfDeath,
+    technique.FrighteningAttack,
+    technique.NoHealingAttack,
+]
+PerksDeathlyBlessings = PerksDeathlyBoons + [
+    deathly.DevourSoul,
+    deathly.EndlessServitude,
+    deathly.FleshPuppets,
+    emanation.ShadowRift,
+]
+
+# CULTISTS
 LoadoutCultist = [
     PowerLoadout(
         name="Disposable Pawn",
@@ -109,5 +160,190 @@ LoadoutCultExarch = [
         name="Charismatic",
         flavor_text="Others listen and obey.",
         powers=PerksCharismatic,
+    ),
+]
+
+# ABERRANT CULTISTS
+LoadoutAberrantInitiate = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingAdpet],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBoons,
+    ),
+    PowerLoadout(
+        name="Aberrant Boon",
+        flavor_text="A gift from beyond the stars.",
+        powers=PerksAberrantBoons,
+    ),
+]
+LoadoutAberrantCultist = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingMaster],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBlessings,
+    ),
+    PowerLoadout(
+        name="Aberrant Boon",
+        flavor_text="A gift from beyond the stars.",
+        powers=PerksAberrantBlessings,
+    ),
+]
+LoadoutAberrantGrandMaster = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingExpert],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBlessings,
+    ),
+    PowerLoadout(
+        name="Aberrant Boon",
+        flavor_text="A gift from beyond the stars.",
+        powers=PerksAberrantBlessings,
+    ),
+    PowerLoadout(
+        name="Cult Leader",
+        flavor_text="A leader of the cult, with many followers.",
+        powers=PerksCultLeader,
+    ),
+]
+
+# DEATH CULTISTS
+LoadoutDeathCultInitiate = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingAdpet],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBoons,
+    ),
+    PowerLoadout(
+        name="Deathly Boon",
+        flavor_text="A gift from the grave.",
+        powers=PerksDeathlyBoons,
+    ),
+]
+LoadoutDeathCultist = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingMaster],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBlessings,
+    ),
+    PowerLoadout(
+        name="Deathly Boon",
+        flavor_text="A gift from the grave.",
+        powers=PerksDeathlyBlessings,
+    ),
+]
+LoadoutDeathCultGrandMaster = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingExpert],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBlessings,
+    ),
+    PowerLoadout(
+        name="Deathly Boon",
+        flavor_text="A gift from the grave.",
+        powers=PerksDeathlyBlessings,
+    ),
+    PowerLoadout(
+        name="Cult Leader",
+        flavor_text="A leader of the cult, with many followers.",
+        powers=PerksCultLeader,
+    ),
+]
+
+# FIENDISH CULTISTS
+LoadoutFiendishInitiate = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingAdpet],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBoons,
+    ),
+    PowerLoadout(
+        name="Fiendish Boon",
+        flavor_text="A gift from the hells or abyss.",
+        powers=PerksFiendishBoons,
+    ),
+]
+
+LoadoutFiendishCultist = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingMaster],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Boon",
+        flavor_text="A dark boon from the cult.",
+        powers=PerksDarkBoons,
+    ),
+    PowerLoadout(
+        name="Fiendish Mark",
+        flavor_text="A mark from the hells or abyss.",
+        powers=PerksFiendishBoons,
+    ),
+]
+
+LoadoutFiendishGrandMaster = [
+    PowerLoadout(
+        name="Fanatical Belief",
+        flavor_text="Fanaticism is a powerful weapon.",
+        powers=[cult.CultSpellcastingExpert],
+        locked=True,
+    ),
+    PowerLoadout(
+        name="Dark Blessing",
+        flavor_text="A dark blessing from the cult.",
+        powers=PerksDarkBlessings,
+    ),
+    PowerLoadout(
+        name="Fiendish Mark",
+        flavor_text="A mark from the hells or abyss.",
+        powers=PerksFiendishBlessings,
+    ),
+    PowerLoadout(
+        name="Cult Leader",
+        flavor_text="A leader of the cult, with many followers.",
+        powers=PerksCultLeader,
     ),
 ]

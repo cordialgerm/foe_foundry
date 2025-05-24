@@ -63,4 +63,4 @@ class NewPowerSelection(CustomPowerSelection):
         return self.powers
 
     def power_delta(self) -> float:
-        return 0.5 * sum(p.power_level for p in self.powers)
+        return sum(p.power_level for p in self.powers)

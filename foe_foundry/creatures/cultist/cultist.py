@@ -17,12 +17,7 @@ from .._data import (
     StatsBeingGenerated,
 )
 from ..base_stats import base_stats
-from .powers import (
-    LoadoutCultExarch,
-    LoadoutCultFanatic,
-    LoadoutCultGrandMaster,
-    LoadoutCultist,
-)
+from . import powers
 
 CultistVariant = MonsterVariant(
     name="Cultist",
@@ -99,14 +94,38 @@ FiendVariant = MonsterVariant(
 def _choose_powers(
     variant: MonsterVariant, cr: float, rng: np.random.Generator
 ) -> NewPowerSelection:
-    if cr < 1:
-        return NewPowerSelection(LoadoutCultist, rng=rng)
-    elif cr <= 4:
-        return NewPowerSelection(LoadoutCultFanatic, rng=rng)
-    elif cr <= 10:
-        return NewPowerSelection(LoadoutCultGrandMaster, rng=rng)
+    if variant is CultistVariant:
+        if cr < 1:
+            return NewPowerSelection(powers.LoadoutCultist, rng=rng)
+        elif cr <= 4:
+            return NewPowerSelection(powers.LoadoutCultFanatic, rng=rng)
+        elif cr <= 10:
+            return NewPowerSelection(powers.LoadoutCultGrandMaster, rng=rng)
+        else:
+            return NewPowerSelection(powers.LoadoutCultExarch, rng=rng)
+    elif variant is AberrantVariant:
+        if cr <= 4:
+            return NewPowerSelection(powers.LoadoutAberrantInitiate, rng=rng)
+        if cr <= 8:
+            return NewPowerSelection(powers.LoadoutAberrantCultist, rng=rng)
+        else:
+            return NewPowerSelection(powers.LoadoutAberrantGrandMaster, rng=rng)
+    elif variant is NecroVariant:
+        if cr <= 4:
+            return NewPowerSelection(powers.LoadoutDeathCultInitiate, rng=rng)
+        elif cr <= 8:
+            return NewPowerSelection(powers.LoadoutDeathCultist, rng=rng)
+        else:
+            return NewPowerSelection(powers.LoadoutDeathCultGrandMaster, rng=rng)
+    elif variant is FiendVariant:
+        if cr <= 4:
+            return NewPowerSelection(powers.LoadoutFiendishInitiate, rng=rng)
+        elif cr <= 8:
+            return NewPowerSelection(powers.LoadoutFiendishCultist, rng=rng)
+        else:
+            return NewPowerSelection(powers.LoadoutFiendishGrandMaster, rng=rng)
     else:
-        return NewPowerSelection(LoadoutCultExarch, rng=rng)
+        raise ValueError(f"Unknown variant: {variant}")
 
 
 def generate_cultist(settings: GenerationSettings) -> StatsBeingGenerated:

@@ -9,6 +9,7 @@ nav:
       - All Monsters: monsters/index.md
       - Orcs & Goblins: families/orcs_and_goblinoids.md
       - Undead: families/undead.md
+      - Fanatics & Faithful: families/fanatics_and_faithful.md
       - Villains: families/villains.md
       - Rivals: families/rivals.md
   - Powers: powers/all.md
