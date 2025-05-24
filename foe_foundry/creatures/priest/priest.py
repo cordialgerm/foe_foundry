@@ -1,35 +1,24 @@
-from ..ac_templates import ChainmailArmor, ChainShirt, PlateArmor
-from ..attack_template import spell, weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    flags,
-    select_powers,
-)
-from ..powers.creature_type import celestial
-from ..powers.roles import SupportPowers
-from ..powers.spellcaster.celestial import CelestialCasters
-from ..powers.themed import holy, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import MonsterDials
-from ._data import (
+import numpy as np
+
+from ...ac_templates import ChainShirt, PlateArmor
+from ...attack_template import spell, weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, flags, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import BaseStatblock, base_stats
+from ..species import AllSpecies, CreatureSpecies, HumanSpecies
+from . import powers as priest_powers
 
 PriestVariant = MonsterVariant(
     name="Priest",
@@ -48,52 +37,22 @@ PriestVariant = MonsterVariant(
 )
 
 
-class _PriestWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        holy_powers = set(holy.HolyPowers)
-        holy_powers.discard(holy.MassCureWounds)
-
-        powers = (
-            SupportPowers
-            + [
-                celestial.DivineLaw,
-                celestial.WordsOfRighteousness,
-                celestial.DivineLaw,
-                celestial.RighteousJudgement,
-                celestial.AbsoluteConviction,
-                celestial.WordsOfRighteousness,
-            ]
-            + list(holy_powers)
-        )
-
-        suppress_powers = [holy.MassCureWounds]  # already in spellcasting
-
-        if self.stats.cr > 2:
-            suppress_powers.append(
-                holy.WordOfRadiance
-            )  # more interesting powers available
-
-        caster_powers = CelestialCasters
-
-        techniques = [technique.BlindingAttack]
-
-        if p in suppress_powers:
-            return CustomPowerWeight(0, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
-        elif p in caster_powers:
-            return CustomPowerWeight(2.5, ignore_usual_requirements=False)
-        elif p in techniques:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
+def _choose_powers(
+    stats: BaseStatblock,
+    variant: MonsterVariant,
+    species: CreatureSpecies,
+    rng: np.random.Generator,
+) -> NewPowerSelection:
+    if stats.cr < 1:
+        return NewPowerSelection(priest_powers.LoadoutAcolyte, rng)
+    elif stats.cr <= 2:
+        return NewPowerSelection(priest_powers.LoadoutPriest, rng)
+    elif stats.cr <= 5:
+        return NewPowerSelection(priest_powers.LoadoutAnointedOne, rng)
+    elif stats.cr <= 12:
+        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng)
+    else:
+        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng)
 
 
 def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -124,7 +83,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # LEGENDARY
     if is_legendary:
-        stats = stats.as_legendary()
+        stats = stats.as_legendary(boost_ac=False)  # already very tanky
 
     stats = stats.copy(
         creature_type=CreatureType.Humanoid,
@@ -137,39 +96,28 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     # ARMOR CLASS
     if stats.cr <= 6:
         stats = stats.add_ac_template(ChainShirt)
-    elif stats.cr <= 12:
-        stats = stats.add_ac_template(ChainmailArmor)
     else:
         stats = stats.add_ac_template(PlateArmor)
 
     # ATTACKS
     if stats.cr <= 2:
         attack = weapon.MaceAndShield
-        secondary_attack = spell.HolyBolt.with_display_name("Radiant Flame")
+        uses_shield = True
         secondary_damage_type = DamageType.Radiant
     else:
         attack = spell.HolyBolt.with_display_name("Radiant Flame")
-        secondary_attack = None
+        uses_shield = False
         secondary_damage_type = DamageType.Radiant
 
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
         secondary_damage_type=secondary_damage_type,
-        uses_shield=False,
+        uses_shield=uses_shield,
     )
-
-    if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats)
 
     # Priests are spellcasters and should have fewer attacks
     stats = stats.with_reduced_attacks(reduce_by=1, min_attacks=2)
-
-    # Damage Scaling
-    if stats.cr <= 1 / 2:
-        stats = stats.apply_monster_dials(
-            MonsterDials(attack_damage_multiplier=1.3)
-        )  # low CR damage is too low
 
     # ROLES
     stats = stats.with_roles(
@@ -194,30 +142,17 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
     # POWERS
     features = []
 
-    # SPECIES CUSTOMIZATIONS
-    stats = species.alter_base_stats(stats)
-
     # ADDITIONAL POWERS
-
-    # Priests can use more power at higher CRs to keep them interesting
-    stats = stats.apply_monster_dials(
-        MonsterDials(
-            recommended_powers_modifier=LOW_POWER if stats.cr < 2 else MEDIUM_POWER
-        )
-    )
-
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_PriestWeights(stats, variant),
+        custom=_choose_powers(stats, variant, species, rng),
     )
     features += power_features
 
     # FINALIZE
     stats = attack.finalize_attacks(stats, rng, repair_all=False)
-    if secondary_attack is not None:
-        stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
 
     return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
 

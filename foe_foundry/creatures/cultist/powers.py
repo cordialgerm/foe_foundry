@@ -2,7 +2,7 @@ from ...powers import (
     PowerLoadout,
 )
 from ...powers.creature import cultist
-from ...powers.creature_type import aberration, demon, devil, elemental, fiend, undead
+from ...powers.creature_type import aberration, demon, devil, fiend, undead
 from ...powers.roles import defender, leader
 from ...powers.spellcaster import cult
 from ...powers.themed import (
@@ -106,6 +106,8 @@ LoadoutCultist = [
         name="Disposable Pawn",
         flavor_text="A lowly cultist, serving their master.",
         powers=PerksDisposableMinions,
+        selection_count=2,
+        replace_with_species_powers=True,
     )
 ]
 LoadoutCultFanatic = [
@@ -119,6 +121,8 @@ LoadoutCultFanatic = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBoons,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
 ]
 LoadoutCultGrandMaster = [
@@ -132,6 +136,8 @@ LoadoutCultGrandMaster = [
         name="Dark Blessing",
         flavor_text="A dark blessing from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Cult Leader",
@@ -150,6 +156,8 @@ LoadoutCultExarch = [
         name="Dark Blessing",
         flavor_text="A dark blessing from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Cult Leader",
@@ -175,6 +183,8 @@ LoadoutAberrantInitiate = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBoons,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Aberrant Boon",
@@ -193,6 +203,8 @@ LoadoutAberrantCultist = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Aberrant Boon",
@@ -211,6 +223,8 @@ LoadoutAberrantGrandMaster = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Aberrant Boon",
@@ -236,6 +250,8 @@ LoadoutDeathCultInitiate = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBoons,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Deathly Boon",
@@ -254,6 +270,8 @@ LoadoutDeathCultist = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Deathly Boon",
@@ -272,6 +290,8 @@ LoadoutDeathCultGrandMaster = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Deathly Boon",
@@ -297,6 +317,8 @@ LoadoutFiendishInitiate = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBoons,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Fiendish Boon",
@@ -316,6 +338,8 @@ LoadoutFiendishCultist = [
         name="Dark Boon",
         flavor_text="A dark boon from the cult.",
         powers=PerksDarkBoons,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Fiendish Mark",
@@ -335,6 +359,8 @@ LoadoutFiendishGrandMaster = [
         name="Dark Blessing",
         flavor_text="A dark blessing from the cult.",
         powers=PerksDarkBlessings,
+        selection_count=2,
+        replace_with_species_powers=True,
     ),
     PowerLoadout(
         name="Fiendish Mark",

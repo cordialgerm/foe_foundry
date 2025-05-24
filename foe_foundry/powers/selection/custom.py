@@ -35,6 +35,7 @@ class PowerLoadout:
     powers: list[Power]
     selection_count: int = 1
     locked: bool = False
+    replace_with_species_powers: bool = False
 
 
 class NewPowerSelection(CustomPowerSelection):

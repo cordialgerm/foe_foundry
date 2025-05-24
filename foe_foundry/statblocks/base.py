@@ -591,6 +591,7 @@ class BaseStatblock:
         resistances: int = 3,
         has_lair: bool = False,
         boost_powers: bool = True,
+        boost_ac: bool = True,
     ) -> BaseStatblock:
         stats = self.copy()
         if stats.is_legendary:
@@ -636,12 +637,14 @@ class BaseStatblock:
         )
 
         # AC Adjustments
-        if stats.cr >= 22:
+        if boost_ac and stats.cr >= 22:
             ac_increase = 3
-        elif stats.cr >= 16:
+        elif boost_ac and stats.cr >= 16:
             ac_increase = 2
-        else:
+        elif boost_ac:
             ac_increase = 1
+        else:
+            ac_increase = 0
 
         # Damage Adjustments
 
