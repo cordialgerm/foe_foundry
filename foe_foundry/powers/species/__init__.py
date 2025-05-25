@@ -1,7 +1,9 @@
 from .dwarf import DwarfPowers  # noqa
 from .orc import OrcPowers  # noqa
 from .halfling import HalflingPowers  # noqa
-from ..power import Power
-from .gnome import GnomePowers
+from .gnome import GnomePowers  # noqa
 
-SpeciesPowers: list[Power] = DwarfPowers + OrcPowers + HalflingPowers + GnomePowers
+from ..power import Power  # noqa
+
+from .utils import powers_for_role  # noqa
+from ._all import SpeciesPowers  # noqa

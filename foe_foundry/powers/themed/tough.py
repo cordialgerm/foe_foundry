@@ -112,10 +112,6 @@ class MagicallyTough(PowerWithStandardScoring):
 
 
 class _JustAScratch(PhysicallyTough):
-    """When this creature is reduced to 0 hit points, they drop prone and are indistinguishable from a dead creature.
-    At the start of their next turn, this creature stands up without using any movement and has 2x CR hit points.
-    They can then take their turn normally."""
-
     def __init__(self):
         super().__init__(
             name="Just A Scratch",

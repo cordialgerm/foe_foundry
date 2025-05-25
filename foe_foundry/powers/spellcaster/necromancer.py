@@ -73,3 +73,17 @@ NecromancerWizards: list[Power] = [
     NecromancerMaster,
     NecromancerExpert,
 ]
+
+
+def spellcaster_for_cr(cr: float) -> Power | None:
+    """
+    Returns the appropriate spellcaster for a given CR.
+    """
+    if cr < 4:
+        return None
+    elif cr <= 5:
+        return NecromancerAdept
+    elif cr <= 11:
+        return NecromancerMaster
+    else:
+        return NecromancerExpert

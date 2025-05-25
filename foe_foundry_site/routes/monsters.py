@@ -9,10 +9,9 @@ from fastapi import APIRouter, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
 
 from foe_foundry.creatures import (
-    Monster,
-    MonsterVariant,
     random_template_and_settings,
 )
+from foe_foundry_data.generate import generate_monster
 from foe_foundry_data.monsters import MonsterModel
 from foe_foundry_data.refs import MonsterRefResolver
 
@@ -67,41 +66,20 @@ def get_monster(
     ] = None,
 ):
     rng = np.random.default_rng()
-    ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
-    if ref is None:
+    ref, stats = generate_monster(
+        template_or_variant_key, ref_resolver=ref_resolver, rng=rng
+    )
+    if stats is None or ref is None:
         raise HTTPException(
             status_code=404, detail=f"Monster not found: {template_or_variant_key}"
         )
-
-    if ref.monster is None:
-        options = []
-        for variant in ref.template.variants:
-            for monster in variant.monsters:
-                options.append((variant, monster))
-
-        index = rng.choice(len(options))
-        variant, monster = options[index]
-        ref = ref.copy(variant=variant, monster=monster)
-
-    # we know these values aren't None because we checked above
-    template = ref.template
-    variant: MonsterVariant = ref.variant  # type: ignore
-    monster: Monster = ref.monster  # type: ignore
-    species = ref.species
-
-    stats = template.generate_monster(
-        variant=variant,
-        monster=monster,
-        species=species,
-        rng=rng,
-    ).finalize()
     base_url = os.environ.get("SITE_URL")
     if base_url is None:
         raise ValueError("SITE_URL environment variable is not set")
 
     return _format_monster(
         monster_model=MonsterModel.from_monster(
-            stats=stats, template=template, base_url=base_url
+            stats=stats, template=ref.template, base_url=base_url
         ),
         rng=rng,
         output=output,

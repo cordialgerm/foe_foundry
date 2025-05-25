@@ -31,6 +31,7 @@ class BaseStatblock:
     template_key: str
     variant_key: str
     monster_key: str
+    species_key: str | None = None
     cr: float
     hp: DieFormula
 
@@ -116,7 +117,10 @@ class BaseStatblock:
 
     @property
     def key(self) -> str:
-        return self.name.lower().replace(" ", "_")
+        if self.species_key is None or self.species_key == "human":
+            return self.monster_key
+        else:
+            return f"{self.species_key}-{self.monster_key}"
 
     @property
     def primary_attribute(self) -> Stats:
@@ -174,6 +178,7 @@ class BaseStatblock:
             template_key=self.template_key,
             variant_key=self.variant_key,
             monster_key=self.monster_key,
+            species_key=self.species_key,
             cr=self.cr,
             ac_boost=self.ac_boost,
             ac_templates=self.ac_templates.copy(),
@@ -591,6 +596,7 @@ class BaseStatblock:
         resistances: int = 3,
         has_lair: bool = False,
         boost_powers: bool = True,
+        boost_ac: bool = True,
     ) -> BaseStatblock:
         stats = self.copy()
         if stats.is_legendary:
@@ -636,12 +642,14 @@ class BaseStatblock:
         )
 
         # AC Adjustments
-        if stats.cr >= 22:
+        if boost_ac and stats.cr >= 22:
             ac_increase = 3
-        elif stats.cr >= 16:
+        elif boost_ac and stats.cr >= 16:
             ac_increase = 2
-        else:
+        elif boost_ac:
             ac_increase = 1
+        else:
+            ac_increase = 0
 
         # Damage Adjustments
 

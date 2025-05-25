@@ -46,7 +46,7 @@ An <span class='condition condition-enraged'>Enraged</span> creature has resista
 ## Swallowed
 
 !!! info
-    The Swallowed condition just codifies some abilities and behavior that various SRD monsters have had, such as the [[Purple Worm]]
+    The Swallowed condition just codifies some abilities and behavior that various SRD monsters have had, such as the **Purple Worm**
 
 A swallowed creature is <span class='condition condition-blinded'>Blinded</span>, <span class='condition condition-restrained'>Restrained</span>, and has total cover against attacks and effects from the outside. It takes `damage` ongoing Acid damage at the start of each of its turns. If the swallowing creature takes`regurgitate_damage_threshold` damage or more on a single turn from a creature inside it, it must make a DC `regurgitate_dc` Constitution saving throw at the end of that turn or regurgitate all swallowed creatures which fall <span class='condition condition-prone'>Prone</span> in a space within 10 feet of it. If the swallowing creature dies, the swallowed creature is no longer restrained by it and can escape by using 15 feet of movement, exiting prone.
 

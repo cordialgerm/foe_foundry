@@ -1,4 +1,4 @@
-from foe_foundry.creatures.priest import PriestTemplate, PriestVariant
+from foe_foundry.creatures.priest.priest import PriestTemplate, PriestVariant
 from foe_foundry.creatures.species import OrcSpecies
 from foe_foundry.creatures.wight import WightTemplate
 from foe_foundry_data.monsters import MonsterModel

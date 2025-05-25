@@ -1,5 +1,3 @@
-from typing import List
-
 from ...damage import AttackType
 from ...spells import CasterType, abjuration, enchantment, evocation, necromancy
 from ...statblocks import BaseStatblock
@@ -43,27 +41,44 @@ class _CultCaster(_Spellcaster):
         super().__init__(**args)
 
 
-def CultCasters() -> List[Power]:
-    return [
-        _CultCaster(
-            name="Cult Spellcasting Adept",
-            min_cr=2,
-            max_cr=4,
-            spells=CultAdeptSpells,
-            power_level=MEDIUM_POWER,
-        ),
-        _CultCaster(
-            name="Cult Spellcasting Master",
-            min_cr=5,
-            max_cr=10,
-            spells=CultMasterSpells,
-            power_level=HIGH_POWER,
-        ),
-        _CultCaster(
-            name="Cult Spellcasting Expert",
-            min_cr=11,
-            max_cr=40,
-            spells=CultExpertSpells,
-            power_level=HIGH_POWER,
-        ),
-    ]
+def spellcaster_for_cr(cr: float) -> Power | None:
+    """
+    Returns the appropriate spellcaster for a given CR.
+    """
+    if cr < 2:
+        return None
+    elif cr <= 4:
+        return CultSpellcastingAdpet
+    elif cr <= 10:
+        return CultSpellcastingMaster
+    else:
+        return CultSpellcastingExpert
+
+
+CultSpellcastingAdpet = _CultCaster(
+    name="Cult Spellcasting Adept",
+    min_cr=2,
+    max_cr=4,
+    spells=CultAdeptSpells,
+    power_level=MEDIUM_POWER,
+)
+CultSpellcastingMaster = _CultCaster(
+    name="Cult Spellcasting Master",
+    min_cr=5,
+    max_cr=10,
+    spells=CultMasterSpells,
+    power_level=HIGH_POWER,
+)
+CultSpellcastingExpert = _CultCaster(
+    name="Cult Spellcasting Expert",
+    min_cr=11,
+    max_cr=40,
+    spells=CultExpertSpells,
+    power_level=HIGH_POWER,
+)
+
+CultCasters: list[Power] = [
+    CultSpellcastingAdpet,
+    CultSpellcastingMaster,
+    CultSpellcastingExpert,
+]

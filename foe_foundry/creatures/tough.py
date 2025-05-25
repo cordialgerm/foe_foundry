@@ -110,6 +110,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
         variant_key=settings.variant.key,
         template_key=settings.monster_template,
         monster_key=settings.monster_key,
+        species_key=species.key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Primary),

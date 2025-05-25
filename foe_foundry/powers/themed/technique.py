@@ -103,7 +103,11 @@ class _BleedingAttack(Technique):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5, force_die=Die.d6)
 
-        if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
+        if stats.secondary_damage_type in {
+            DamageType.Acid,
+            DamageType.Poison,
+            DamageType.Necrotic,
+        }:
             damage_type = cast(DamageType, stats.secondary_damage_type)
         else:
             damage_type = DamageType.Piercing
@@ -371,12 +375,18 @@ class _BlindingAttack(Technique):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
+
+        if stats.cr < 1:
+            description = f"On a hit, if the target has been hit by this attack before in the last hour, it is {Condition.Blinded.caption} until the end of its next turn"
+        else:
+            description = f"On a hit, the target must make a DC {dc} Constitution saving throw or be {Condition.Blinded.caption} until the end of its next turn"
+
         feature = Feature(
             name="Blinding Attack",
             action=ActionType.Feature,
             modifies_attack=True,
             hidden=True,
-            description=f"On a hit, the target must make a DC {dc} Constitution saving throw or be {Condition.Blinded.caption} until the end of its next turn",
+            description=description,
         )
         return [feature]
 
@@ -1003,6 +1013,14 @@ class _ShieldMaster(PowerWithStandardScoring):
                 bonus_roles={MonsterRole.Defender, MonsterRole.Soldier},
             ),
         )
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
+        if not stats.uses_shield:
+            stats = stats.copy(uses_shield=True)
+
+        return stats
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

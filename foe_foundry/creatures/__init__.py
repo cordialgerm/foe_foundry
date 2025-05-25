@@ -5,6 +5,7 @@ from ._data import (
     MonsterVariant,  # noqa
     Monster,  # noqa
     GenerationSettings,  # noqa
+    Statblock,  # noqa
 )  # noqa
 from ._all import AllTemplates, all_templates_and_settings  # noqa
 from .species import AllSpecies, CreatureSpecies  # noqa

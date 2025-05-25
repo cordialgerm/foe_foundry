@@ -96,6 +96,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
         variant_key=settings.variant.key,
         template_key=settings.monster_template,
         monster_key=settings.monster_key,
+        species_key=species.key,
         cr=cr,
         stats=stat_scaling,
         hp_multiplier=settings.hp_multiplier,

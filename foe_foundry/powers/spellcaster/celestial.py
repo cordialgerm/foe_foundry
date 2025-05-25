@@ -7,6 +7,7 @@ from ..power import HIGH_POWER, LOW_POWER, Power
 from .base import _Spellcaster
 from .utils import spell_list
 
+_initiate = [abjuration.CureWounds]
 _adept = [
     divination.DetectEvilAndGood,
     abjuration.CureWounds,
@@ -24,21 +25,28 @@ _expert = [
     necromancy.Resurrection,
 ]
 
-CelestialAdeptSpells = spell_list(_adept, uses=1, exclude={abjuration.CureWounds})
+CelestialInitiateSpells = spell_list(_initiate, uses=1)
+CelestialAdeptSpells = spell_list(_adept, uses=1)
 CelestialMasterSpells = spell_list(
-    _adept, uses=2, exclude={abjuration.LesserRestoration}
-) + spell_list(_master, uses=1, exclude={divination.DetectEvilAndGood})
+    _adept,
+    uses=1,
+    exclude={
+        abjuration.LesserRestoration,
+        abjuration.CureWounds,
+        divination.DetectEvilAndGood,
+    },
+) + spell_list(_master, uses=1)
 CelestialExpertSpells = (
     spell_list(
         _adept,
-        uses=3,
+        uses=1,
         exclude={
             abjuration.LesserRestoration,
+            abjuration.CureWounds,
             divination.DetectEvilAndGood,
-            necromancy.RaiseDead,
         },
     )
-    + spell_list(_master, uses=2)
+    + spell_list(_master, uses=1)
     + spell_list(_expert, uses=1)
 )
 
@@ -80,6 +88,13 @@ class _CelestialCaster(_Spellcaster):
         super().__init__(**args)
 
 
+CelestialInitiate: Power = _CelestialCaster(
+    name="Celestial Initiate",
+    min_cr=0,
+    max_cr=1,
+    spells=CelestialInitiateSpells,
+    power_level=LOW_POWER,
+)
 CelestialAdept: Power = _CelestialCaster(
     name="Celestial Adept",
     min_cr=2,
