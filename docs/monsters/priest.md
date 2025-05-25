@@ -12,7 +12,7 @@ json_ld: true
 
 > **Need tips for how to run religion and faith in your RPG?** The default lore of Foe Foundry is a [**Low Magic Setting**](../topics/faith.md) where divine beings do not directly communicate with mortals. If you run a setting where the gods are known to exist and actively intervene in the Mortal Realms then you can easily modify the lore to include direct involvement by the Gods. But it is much more difficult to remove the Gods from the Machine, so the lore is presented here with the least assumptions being made about your setting.
 
-Priests are those rare mortals who find themselves as conduits to the Divine; through faith, perserverence, belief, or unusual circumstances. 
+Priests are those rare mortals who find themselves as conduits to the Divine; through faith, perseverance, belief, or unusual circumstances. 
 
 The [Distant Gods are silent and unknowable](../topics/faith.md#distant-gods). Miracles are rare and mysterious. No priest can say for certain the true source of their power. Does it flow from a God, a Saint, or something more mysterious or sinister still?  
 
