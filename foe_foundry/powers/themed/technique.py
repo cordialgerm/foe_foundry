@@ -103,7 +103,11 @@ class _BleedingAttack(Technique):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5, force_die=Die.d6)
 
-        if stats.secondary_damage_type in {DamageType.Acid, DamageType.Poison}:
+        if stats.secondary_damage_type in {
+            DamageType.Acid,
+            DamageType.Poison,
+            DamageType.Necrotic,
+        }:
             damage_type = cast(DamageType, stats.secondary_damage_type)
         else:
             damage_type = DamageType.Piercing

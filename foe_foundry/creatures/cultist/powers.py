@@ -40,7 +40,6 @@ PerksDarkBlessings = PerksDarkBoons + [
     cursed.UnholyAura,
     cursed.RejectDivinity,
     deathly.DrainingBlow,
-    cursed.CursedWound,
     cursed.VoidSiphon,
     cursed.UnholyAura,
     cursed.CurseOfVengeance,
@@ -84,7 +83,6 @@ PerksFiendishBlessings = PerksFiendishBoons + [
 ]
 
 PerksDeathlyBoons = [
-    deathly.WitheringBlow,
     deathly.ShadowWalk,
     deathly.DrainStrength,
     undead.SoulChill,
@@ -92,6 +90,7 @@ PerksDeathlyBoons = [
     undead.StenchOfDeath,
     technique.FrighteningAttack,
     technique.NoHealingAttack,
+    technique.BleedingAttack,
 ]
 PerksDeathlyBlessings = PerksDeathlyBoons + [
     deathly.DevourSoul,
