@@ -2,7 +2,7 @@
 title: The Ultimate Guide to Rival Adventuring Parties in D&D 5E | Foe Foundry
 short_title: The Ultimate Guide to Rival Adventuring Parties
 description: Add memorable rival adventuring parties to your 5E campaign. Use Foe Foundry’s guide for rival party statblocks, hooks, encounters, and dynamic storytelling.
-image: img/rival.webp
+image: img/monsters/rival.webp
 json_ld: true
 ---
 
@@ -21,7 +21,7 @@ Whether you're building your campaign from scratch, scrambling to prep for a gam
 
 Check out the [Rivals Blog Post](../blog/2025_05_09_build_rival_npcs.md) to see these tables in action!
 
-![D&D Rival Adventuring Party in a Tavern Standoff](../img/rival.webp){.monster-image}
+![D&D Rival Adventuring Party in a Tavern Standoff](../img/monsters/rival.webp){.monster-image}
 
 ## Build a Rival Party Your Players Will Love To Hate
 

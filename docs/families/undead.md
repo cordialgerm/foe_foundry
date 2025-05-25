@@ -2,7 +2,7 @@
 title: Undead Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Undead
 description: Raise chilling undead like skeletons, specters, and liches with Foe Foundry’s monster generator. Discover rich lore, encounters, and adventures to haunt your next fantasy RPG session.
-image: img/skeleton_warband.webp
+image: img/monsters/skeleton_warband.webp
 json_ld: true
 ---
 
@@ -10,7 +10,7 @@ json_ld: true
 
 *Twisted Mockeries of Life*
 
-![An army of undead Skeletons march forth](../img/skeleton_warband.webp){.monster-image}
+![An army of undead Skeletons march forth](../img/monsters/skeleton_warband.webp){.monster-image}
 
 Undead creatures are the echoes and remnants of life, cursed to linger in defiance of the natural order. There are many types of Undead, including the reanimated dead (such as **Zombies**, **Skeletons**, and **Mummies**), as well as lingering spirits like **Ghosts** and **Wraiths**. Some were raised by fell mortal magic. Others clawed their way back to life battling the biting currents of the Styx, while some endure cursed existences.
 
@@ -103,7 +103,7 @@ Long ago, a prideful sorcerer-king named Karklaz was the first to discover a dar
 
 ## Lesser Undead
 
-![A horde of zombies shambles forward, ever hungry](../img/zombie_horde.png){.monster-image .masked .white-background}
+![A horde of zombies shambles forward, ever hungry](../img/monsters/zombie_horde.webp){.monster-image .masked .white-background}
 
 Lesser Undead are the dregs of death: fragments of souls, half-formed shadows, and shattered remnants of once-living minds. Most were frozen and fractured in the River Styx, then cast loose into the Mortal Realm through a tear in the veil, often near cursed ground or a site of recent slaughter. Others are summoned deliberately by mortal Necromancers, using dark heretical magic to bind the spirits to their control as tools, guards, or fodder. Lesser Undead lack true sentience. The soul that once animated them has been splintered or damaged beyond recognition. What remains is instinctual hunger, hatred, or a dim echo of old purpose.
 
@@ -133,7 +133,7 @@ Neither fully living nor fully dead, ghouls are undead scavengers cursed with an
 
 ## Lesser Undead Spirits
 
-![A specter is bound by a foul necromancer](../img/wraith.png){.monster-image .masked .white-background}
+![A specter is bound by a foul necromancer](../img/monsters/wraith.webp){.monster-image .masked .white-background}
 
 Spirits, or incorporeal undead, are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self. Spirits are classified according to strength of will of the deceased and the forcefulness of the anguish that binds the soul to the mortal plane.
 
@@ -165,7 +165,7 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 
 ## Greater Undead
 
-![An ancient tyrant rises as a cold Wight](../img/wight.png){.monster-image .masked}
+![An ancient tyrant rises as a cold Wight](../img/monsters/wight.webp){.monster-image .masked}
 
 Greater Undead are powerful spirits that refused to yield to the Styx. These powerful undead creatures have clawed their way back from the deepest recesses of the Shadowlands, twisted and corrupted by the warping and freezing currents. Many have consumed weaker souls to strengthen their own essence, while others have become bound to dark and forgotten powers to sustain their hateful existence. Each one is a malignant spirit bound by ambition and hatred. Unlike their lesser kin, Greater Undead retain shards of identity. Their minds remain intact, though warped beyond mortal reasoning. They command dreadful power, plot with purpose, and often bend Lesser Undead to their service.
 
@@ -197,7 +197,7 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 
 ## Necromancers and Once-Mortal Masters
 
-![An immortal Lich surveys its domain](../img/lich.png){.monster-image .masked}
+![An immortal Lich surveys its domain](../img/monsters/lich.webp){.monster-image .masked}
 
 Many Undead are bound in service to mortal, or once-mortal masters.
 

@@ -2,7 +2,7 @@
 title: Spirit Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Spirits
 description: Bind sorrowful spirits with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/undead_spirits.jpg
+image: img/monsters/undead_spirits.webp
 json_ld: true
 ---
 
@@ -23,7 +23,7 @@ Spirits are the echoes and imprints of the deceased that refuse to pass due to u
 
 From Shadows and Specters to Banshees, Ghosts, Revenants, and Wraiths, spirits bring grief, vengeance, and corruption to life across Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs.
 
-![Undead spirits rising from the dark](../img/undead_spirits.jpg){.monster-image .masked}
+![Undead spirits rising from the dark](../img/monsters/undead_spirits.webp){.monster-image .masked}
 
 ---
 
@@ -37,7 +37,7 @@ A **Shadow** is the cast-off remnant of a soul too vile to pass cleanly into dea
 - The more light a creature brings into the world, the more their shadow twists in ways it should not.
 - In cursed places, one’s own shadow may rebel, tearing itself free to plot its former owner's downfall.
 
-![Shadows are evil spirits made of dark shadow-stuff](../img/shadow.png){.monster-image .masked}
+![Shadows are evil spirits made of dark shadow-stuff](../img/monsters/shadow.webp){.monster-image .masked}
 
 ### Shadow Statblock
 
@@ -55,7 +55,7 @@ A **Specter** is a soul fragment, splintered by violence or unendurable pain. La
 - Some say Specters are the result of improperly performed death rites, or when a soul is interrupted in its crossing.
 - Though easily dismissed alone, swarms of Specters can overwhelm the mind, drowning victims in secondhand terror.
 
-![Specters haunt the sites of their death aimlessly](../img/specter.png){.monster-image .masked}
+![Specters haunt the sites of their death aimlessly](../img/monsters/specter.webp){.monster-image .masked}
 
 ### Specter Statblock
 
@@ -73,7 +73,7 @@ A **Banshee** is a mournful spirit borne of overwhelming tragedy, sorrow, and be
 - In some cultures, Banshees are seen not as monsters but as messengers that warn those fated to die.
 - A Banshee’s presence carries a dread silence that can be physically painful to break
 
-![The keening wail of a banshee can break the will of even the strongest of heart](../img/banshee.png){.monster-image .masked}
+![The keening wail of a banshee can break the will of even the strongest of heart](../img/monsters/banshee.webp){.monster-image .masked}
 
 ### Banshee Statblock
 
@@ -91,7 +91,7 @@ A **Revenant** is a soul fueled not by sorrow, but by rage. It rises not to haun
 - A Revenant will not rest until the injustice that binds it to life has been righted by its own hands. Even if its killer has long since died, the Revenant will only rest when it has spilled the blood of the offender's descendants, disciples, or legacy
 - Some Revenants are given leave by divine forces, but others tear themselves out of the River of Death through raw will, dragging pieces of the underworld with them.
 
-![Revenants rise to correct a grave injustice](../img/revenant.png){.monster-image .masked}
+![Revenants rise to correct a grave injustice](../img/monsters/revenant.webp){.monster-image .masked}
 
 ### Revenant Statblock
 
@@ -111,7 +111,7 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 - They often fixate on objects, people, or places tied to their strongest memories: an heirloom locket, a family home, or the battlefield where they fell.
 - Their presence distorts time and perception, as their pain bleeds into the world. Dreams fray, names slip, and voices echo from forgotten places.
 
-![Ghosts are animated by memories too painful to pass](../img/ghost-0.png){.monster-image .masked}
+![Ghosts are animated by memories too painful to pass](../img/monsters/ghost.webp){.monster-image .masked}
 
 ### Ghost Statblocks
 
@@ -131,7 +131,7 @@ Unlike the scattered fragments of a **Specter** or **Shadow**, a **Wraith** is c
 - Unlike **Ghosts**, who cling to memory, **Wraiths** cling to power
 - **Wraiths** are drawn to places where evil lingers, especially where other spirits might be harvested
 
-![Wraiths are amalgamations of spirits drawn back to life by ambition and the desire for power](../img/wraith.png){.monster-image .masked}
+![Wraiths are amalgamations of spirits drawn back to life by ambition and the desire for power](../img/monsters/wraith.webp){.monster-image .masked}
 
 ### Wraith Statblocks
 

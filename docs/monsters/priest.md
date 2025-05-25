@@ -2,7 +2,7 @@
 title: Priest Statblocks, Lore, and Divine Adventure Hooks for TTRPGs | Foe Foundry
 short_title: Priests
 description: Explore priest statblocks, divine lore, and heretical encounter ideas for your next tabletop RPG session. Summon low-magic miracles, create religious tension, and discover dark twists of faith using Foe Foundry.
-image: img/priest.webp
+image: img/monsters/priest.webp
 json_ld: true
 ---
 
@@ -27,7 +27,7 @@ There is no single road to becoming a conduit to the divine. Priests may be soli
 - Many worship Saints, former devout mortals who accomplished great deeds in life
 - The divine power of a priest manifests through raw belief structured and reinforced through doctrine, ritual, or ideology
 
-![Devout priest preparing a ritual in a sacred temple](../img/priest.webp){.masked .monster-image}
+![Devout priest preparing a ritual in a sacred temple](../img/monsters/priest.webp){.masked .monster-image}
 
 ## Priest Statblocks
 

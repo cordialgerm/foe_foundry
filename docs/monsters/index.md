@@ -15,7 +15,7 @@ Not all threats crawl from crypts. Some wear robes and carry grimoires. These mo
 - [Cultists](cultist.md) - worshippers of the occult and forbidden
 - [Priests](priest.md) - faithful instruments of the divine
 
-![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
+![A Cryomancer prepares an icy blast](../img/monsters/cryomancer2.webp){.monster-image .masked .white-background}
 
 ## Undead
 
@@ -29,7 +29,7 @@ Bleached bones. Rotting flesh. Soul fragments clawing their way back to life fro
 - [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
 - [Liches](lich.md) - immortal masters of undeath and arcana
 
-![A skeleton warband advances menacingly](../img/skeleton_warband.webp){.monster-image}
+![A skeleton warband advances menacingly](../img/monsters/skeleton_warband.webp){.monster-image}
 
 ## Monstrosities
 
@@ -40,7 +40,7 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 - [Owlbears](owlbear.md) - unnaturally territorial predators
 - [Chimeras](chimera.md) - monstrous messenger of imminent disaster
 
-![A cantankerous Manticore prepares to strike](../img/manticore.png){.monster-image .masked .white-background}
+![A cantankerous Manticore prepares to strike](../img/monsters/manticore.webp){.monster-image .masked .white-background}
 
 ## Oozes
 

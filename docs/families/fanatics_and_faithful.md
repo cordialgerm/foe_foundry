@@ -2,7 +2,7 @@
 title: Fanatics & the Faithful | Foe Foundry
 short_title: Fanatics & the Faithful
 description: Explore the sacred and the heretical in your TTRPG campaign with Foe Foundry's priests and cultists. Discover flavorful statblocks, divine lore, and dark devotion for unforgettable encounters.
-image: img/priest.webp
+image: img/monsters/priest.webp
 json_ld: true
 ---
 

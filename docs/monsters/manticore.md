@@ -2,7 +2,7 @@
 title: Manticore Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Manticores
 description: Unleash quarrelsome manticores with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/manticore.png
+image: img/monsters/manticore.webp
 json_ld: true
 ---
 
@@ -30,7 +30,7 @@ Manticores are classic flying predators in D&D, 5E variants, and other fantasy R
 - Manticores enjoy softening up their prey with a spine volley while hurling insults and offering lopsided deals
 - It will retreat when wounded, hurling vile insults
 
-![A manticore is a cantankerous flying hunter](../img/manticore.png){.monster-image .masked .white-background}
+![A manticore is a cantankerous flying hunter](../img/monsters/manticore.webp){.monster-image .masked .white-background}
 
 ---
 

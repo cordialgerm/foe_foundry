@@ -2,7 +2,7 @@
 title: "Goblins for 5E: Statblocks, Lore, Encounters, and Tactics | Foe Foundry"
 short_title: "Goblins for 5E: Statblocks, Lore, Encounters, and Tactics"
 description: Discover goblin statblocks, lore, tactics, and chaotic encounter ideas for 5E. Add flavorful and fun goblins to your next TTRPG session.
-image: img/goblin.png
+image: img/monsters/goblin.webp
 json_ld: true
 ---
 
@@ -18,7 +18,7 @@ Though goblins are cunning and inventive, they are also notorious cowards. They 
 
 Goblin warrens are often found in forgotten ruins, winding cave complexes, and anywhere decent folk would rather avoid. When not being kicked into line by the loudest and most reckless leaders, goblins often fall under the sway of more powerful orc or hobgoblin warlords, where they are treated as expendable cannon fodder. This has led some scholars to incorrectly lump goblins as relatives of [Orcs](./orc.md).
 
-![A chaotic Goblin for 5E](../img/goblin.png)
+![A chaotic Goblin for 5E](../img/monsters/goblin.webp)
 
 ## Goblin Lore
 

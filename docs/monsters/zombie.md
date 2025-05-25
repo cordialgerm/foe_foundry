@@ -2,7 +2,7 @@
 title: Zombie Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Zombies
 description: Amass shambling zombie hordes using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/zombie_horde.png
+image: img/monsters/zombie_horde.webp
 json_ld: true
 ---
 
@@ -23,7 +23,7 @@ Zombies stagger through Dungeons & Dragons, 5E, Pathfinder, and fantasy RPGs as 
 - Tethered by Will: Destroying the necromancer or greater undead that commands a group of zombies may cause the mindless horde to collapse into inert corpses — though some linger in a frenzy of confused hunger.
 - The Styx’s Touch: In cursed places near a breach of the River Styx, corpses can sometimes rise as walking dead without any master’s command, driven only by broken instinct and the river’s foul memory.
 
-![A relentless horde of reanimated Zombies marches to serve their necromantic overlords](../img/zombie_horde.png){.monster-image .masked .white-background}
+![A relentless horde of reanimated Zombies marches to serve their necromantic overlords](../img/monsters/zombie_horde.webp){.monster-image .masked .white-background}
 
 ## Zombie Tactics
 

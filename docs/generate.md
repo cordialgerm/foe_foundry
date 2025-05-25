@@ -3,14 +3,14 @@ title: Generate
 description: Foe Foundry’s Monster Generator is coming soon! Create custom monsters with flavorful abilities, scalable statblocks, and thematic powers for 5E and fantasy RPGs.
 hide:
   - toc
-image: img/blacksmith.png
+image: img/monsters/blacksmith.webp
 ---
 
 # Monster Generator
 
 *The anvil is hot, the sparks are flying, and we're hammering the code into shape.*
 
-![Monster Generator is Under Development](./img/blacksmith.png){.monster-image-small .masked}
+![Monster Generator is Under Development](./img/monsters/blacksmith.webp){.monster-image-small .masked}
 
 <div id="template-callout"></div>
 
