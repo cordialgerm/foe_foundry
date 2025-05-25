@@ -2,7 +2,7 @@
 title: Ghoul Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Ghouls
 description: Unleash ravenous ghouls with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your fantasy RPG campaigns.
-image: img/ghoul-0.png
+image: img/ghoul.png
 json_ld: true
 ---
 
@@ -18,7 +18,7 @@ Those wounded by a **Ghoul**'s claws often suffer more than blood loss. The touc
 
 Ghouls are a classic threat for fantasy tabletop RPGs, from grim dungeon crawls to desperate wilderness hunts. Whether you’re running a D&D 5E campaign, a Pathfinder adventure, or any fantasy TTRPG setting, their cursed hunger can challenge even seasoned heroes.
 
-![Undead ghoul with decaying flesh and slavering jaws lunging from the shadows](../img/ghoul-0.png){.monster-image .masked}
+![Undead ghoul with decaying flesh and slavering jaws lunging from the shadows](../img/ghoul.png){.monster-image .masked}
 
 ## Ghoul Lore and Origins
 

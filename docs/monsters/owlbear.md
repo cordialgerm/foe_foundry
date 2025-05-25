@@ -2,7 +2,7 @@
 title: Owlbear Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Owlbears
 description: Release territorial Owlbears with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: /img/owlbear-0.webp
+image: /img/monsters/owlbear.webp
 json_ld: true
 ---
 
@@ -29,7 +29,7 @@ Owlbears embody the wild fury of the frontier in Dungeons & Dragons, 5E, Pathfin
 
 Owlbears are fiercely territorial and will defend their cubs to the death. If a dangerous-looking foe enters their territory, they will first attempt to frighten the foe away before risking an engagement. However, if the foe appears frail or weak, an Owlbear will prepare a vicious ambush from elevated terrain, dense underbrush, or partially collapsed ruins. Owlbears retreat as soon as they have downed a potential meal or if they appear to be outmatched. However, unlike natural predators like the **Dire Wolf**, many Owlbears enter a frenzied rage when injured and fight viciously to the death.
 
-![An owlbear stands threateningly on its hind legs](../img/owlbear-0.webp){.monster-image .masked}
+![An owlbear stands threateningly on its hind legs](../img/monsters/owlbear.webp){.monster-image .masked}
 
 ---
 

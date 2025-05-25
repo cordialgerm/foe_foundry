@@ -2,7 +2,7 @@
 title: Gelatinous Cube Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Gelatinous Cubes
 description: Encounter oozy gelatinous cubes with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks for your fantasy RPG campaigns.
-image: img/gelatinous-cube-0.png
+image: img/gelatinous-cube.png
 json_ld: true
 ---
 
@@ -27,7 +27,7 @@ From classic D&D dungeons to modern 5E campaigns, Gelatinous Cubes remain a dead
 
 Gelatinous Cubes are mindless entities driven to absorb any organic matter in their path. The cube simple dashes towards the largest concentration of foes that it can sense.
 
-![A gelatinous cube with a bleached skeleton](../img/gelatinous-cube-0.png){.monster-image .masked}
+![A gelatinous cube with a bleached skeleton](../img/gelatinous-cube.png){.monster-image .masked}
 
 ---
 

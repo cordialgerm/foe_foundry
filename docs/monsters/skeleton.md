@@ -2,7 +2,7 @@
 title: Skeleton Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Skeletons
 description: Raise subservient skeletons with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/skeleton_warband.webp
+image: img/monsters/skeleton_warband.webp
 json_ld: true
 ---
 
@@ -25,7 +25,7 @@ Skeletons are a chilling staple of Dungeons & Dragons, 5E, Pathfinder, and fanta
 - Some skeletons arise naturally when the [Styx](../families/undead.md#the-river-styx) overlaps with the mortal realm
 - Most are bound servants to a **Necromancer Mage** or other [Greater Undead](../families/undead.md#greater-undead) such as a **Wight** or **Wraith**
 
-![An animated Skeleton guards an ancient tomb, bones clattering silently](../img/skeleton_warband.webp){.monster-image}
+![An animated Skeleton guards an ancient tomb, bones clattering silently](../img/monsters/skeleton_warband.webp){.monster-image}
 
 ## Skeleton Statblocks
 

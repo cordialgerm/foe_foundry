@@ -111,7 +111,7 @@ Unlike the shattered fragments of a **Specter**, a **Ghost** is whole - but trap
 - They often fixate on objects, people, or places tied to their strongest memories: an heirloom locket, a family home, or the battlefield where they fell.
 - Their presence distorts time and perception, as their pain bleeds into the world. Dreams fray, names slip, and voices echo from forgotten places.
 
-![Ghosts are animated by memories too painful to pass](../img/ghost-0.png){.monster-image .masked}
+![Ghosts are animated by memories too painful to pass](../img/ghost.png){.monster-image .masked}
 
 ### Ghost Statblocks
 

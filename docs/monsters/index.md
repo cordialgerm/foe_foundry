@@ -29,7 +29,7 @@ Bleached bones. Rotting flesh. Soul fragments clawing their way back to life fro
 - [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
 - [Liches](lich.md) - immortal masters of undeath and arcana
 
-![A skeleton warband advances menacingly](../img/skeleton_warband.webp){.monster-image}
+![A skeleton warband advances menacingly](../img/monsters/skeleton_warband.webp){.monster-image}
 
 ## Monstrosities
 

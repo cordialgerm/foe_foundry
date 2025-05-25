@@ -1,7 +1,7 @@
 ---
 title: Dynamic TTRPG Encounters with Tokens | Foe Foundry
 description: Dynamic battlefield Tokens make your TTRPG combat unforgettable. Learn how to use traps, spells, and magical hazards with Foe Foundry to shape the flow of battle.
-image: img/blog/trap.webp
+image: img/blogs/trap.webp
 footer:
   - Art by Carlos Castilho. Used with permission.
 json_ld: true
@@ -22,7 +22,7 @@ A **Token** is a great way to achieve this effect and can represent things as di
 
 Tokens are created by [Foe Foundry Monster Powers](../powers/emanation.md), but you can also use these mechanics to handle situations where players want to set up their own objects or interact with other objects or effects in your encounter.
 
-![Tokens are a great way to add interactive combat elements like traps!](../img/blog/trap.webp){.masked .blog-image-large}
+![Tokens are a great way to add interactive combat elements like traps!](../img/blogs/trap.webp){.masked .blog-image-large}
 
 ## Defining a Token
 

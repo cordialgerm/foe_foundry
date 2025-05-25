@@ -1,7 +1,7 @@
 ---
 title: Avoiding Stale 5E Combat with Tokens from Foe Foundry
 description: Tired of static 5e encounters? Learn how Tokens from Foe Foundry add dynamic terrain, magical effects, and creative problem-solving to your combat.
-image: img/blog/trap.webp
+image: img/blogs/trap.webp
 tags:
   - resources
   - tips
@@ -40,7 +40,7 @@ In this article, we're going to talk about a new tool called [**Tokens**](../top
 
 Some examples include a **Shadow Rift token** that keeps summoning [[Shadows]] until the players find a way to seal it or a **Runic Wards token** that gives that pesky [[Abjurer Mage]] immunity to all damage while it's active.
 
-![Tokens are a great way to add interactive combat elements like traps!](../img/blog/trap.webp){.masked .blog-image-large}
+![Tokens are a great way to add interactive combat elements like traps!](../img/blogs/trap.webp){.masked .blog-image-large}
 
 
 ## Example Combat: Using a **Runic Wards token**

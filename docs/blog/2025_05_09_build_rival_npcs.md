@@ -5,7 +5,7 @@ description: Create fun and memorable Rival NPCs for your D&D 5E campaigns with 
 tags:
   - resources
   - tips
-image: img/rival.webp
+image: img/monsters/rival.webp
 json_ld: true
 date: 2025-05-09
 ---
@@ -31,7 +31,7 @@ I built [**The Ultimate Guide to Rival Adventuring Parties**](../families/rivals
 
 Whether you're running a sandbox, prepping for a one-shot, or building a campaign arc around a single enemy, these tables make it easy and fun to summon your own rival adventurers.
 
-![D&D Rival Adventuring Party in a Tavern Standoff](../img/rival.webp){.monster-image}
+![D&D Rival Adventuring Party in a Tavern Standoff](../img/monsters/rival.webp){.monster-image}
 
 [Summon your own **Rival NPC Adventurers**](../families/rivals.md){.burnt-parchment .burnt-parchment-button .branding}
 
