@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import List
+from typing import List, cast
 
 from foe_foundry.references import action_ref
 from foe_foundry.utils import easy_multiple_of_five
@@ -40,6 +40,7 @@ class OrcPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
+        self.species = "orc"
         standard_score_args = (
             dict(
                 require_types=CreatureType.Humanoid,
@@ -488,3 +489,20 @@ OrcPowers: List[Power] = [
     WarCryOfTheBloodiedFang,
     WarCryOfTheChillheart,
 ]
+
+
+def orc_powers_for_role(role: MonsterRole) -> List[Power]:
+    """Returns a list of orc powers that are suitable for the given role."""
+    powers = []
+    for p in OrcPowers:
+        p = cast(PowerWithStandardScoring, p)
+
+        score_args = p.score_args or {}
+        roles = score_args.get("require_roles", set()) | score_args.get(
+            "bonus_roles", set()
+        )
+
+        if role in roles:
+            powers.append(p)
+
+    return powers

@@ -92,7 +92,7 @@ class GenerationSettings:
     @property
     def key(self) -> str:
         if self.species is not None:
-            n = f"{self.creature_name}-{self.species.name}"
+            n = f"{self.species.key}-{self.monster_key}"
         else:
             n = self.creature_name
 
@@ -195,9 +195,14 @@ class MonsterTemplate:
     ) -> StatsBeingGenerated:
         """Creates a statblock for the given suggested CR"""
 
+        if species is None or species.key == "human":
+            creature_name = monster.name
+        else:
+            creature_name = f"{species.name} {monster.name}"
+
         args: dict = (
             dict(
-                creature_name=monster.name,
+                creature_name=creature_name,
                 monster_template=self.name,
                 monster_key=monster.key,
                 cr=monster.cr,

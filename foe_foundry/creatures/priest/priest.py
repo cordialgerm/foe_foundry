@@ -4,7 +4,8 @@ from ...ac_templates import ChainShirt, PlateArmor
 from ...attack_template import spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import NewPowerSelection, PowerLoadout, flags, select_powers
+from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -43,16 +44,29 @@ def _choose_powers(
     species: CreatureSpecies,
     rng: np.random.Generator,
 ) -> NewPowerSelection:
-    if stats.cr < 1:
-        return NewPowerSelection(priest_powers.LoadoutAcolyte, rng)
-    elif stats.cr <= 2:
-        return NewPowerSelection(priest_powers.LoadoutPriest, rng)
-    elif stats.cr <= 5:
-        return NewPowerSelection(priest_powers.LoadoutAnointedOne, rng)
-    elif stats.cr <= 12:
-        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng)
+    if species is not HumanSpecies:
+        species_loadoout = PowerLoadout(
+            name=f"{species.name} Species Powers",
+            flavor_text=f"{species.name} priestly powers",
+            powers=powers_for_role(
+                species=species.name.lower(), role=MonsterRole.Support
+            ),
+        )
     else:
-        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng)
+        species_loadoout = None
+
+    if stats.cr < 1:
+        return NewPowerSelection(priest_powers.LoadoutAcolyte, rng, species_loadoout)
+    elif stats.cr <= 2:
+        return NewPowerSelection(priest_powers.LoadoutPriest, rng, species_loadoout)
+    elif stats.cr <= 5:
+        return NewPowerSelection(
+            priest_powers.LoadoutAnointedOne, rng, species_loadoout
+        )
+    elif stats.cr <= 12:
+        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng, species_loadoout)
+    else:
+        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng, species_loadoout)
 
 
 def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -69,6 +83,7 @@ def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:
         variant_key=settings.variant.key,
         template_key=settings.monster_template,
         monster_key=settings.monster_key,
+        species_key=species.key,
         cr=cr,
         stats=[
             Stats.STR.scaler(StatScaling.Medium, mod=2),

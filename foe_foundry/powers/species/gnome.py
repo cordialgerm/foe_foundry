@@ -18,6 +18,8 @@ class GnomePower(PowerWithStandardScoring):
         power_level: float = RIBBON_POWER,
         **score_args,
     ):
+        self.species = "gnome"
+
         def is_gnome(stats: BaseStatblock) -> bool:
             return (
                 stats.creature_subtype is not None

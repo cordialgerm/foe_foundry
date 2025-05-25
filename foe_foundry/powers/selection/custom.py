@@ -39,7 +39,12 @@ class PowerLoadout:
 
 
 class NewPowerSelection(CustomPowerSelection):
-    def __init__(self, loadouts: list[PowerLoadout], rng: np.random.Generator):
+    def __init__(
+        self,
+        loadouts: list[PowerLoadout],
+        rng: np.random.Generator,
+        species_loadout: PowerLoadout | None = None,
+    ):
         self.loadouts = loadouts
         self.rng = rng
 
@@ -47,13 +52,20 @@ class NewPowerSelection(CustomPowerSelection):
         for loadout in loadouts:
             if loadout.selection_count == 0:
                 continue
-            elif loadout.selection_count == len(loadout.powers):
-                powers.extend(loadout.powers)
+
+            if species_loadout is not None and loadout.replace_with_species_powers:
+                loadout = species_loadout
+
+            options = loadout.powers
+
+            if loadout.selection_count >= len(options):
+                powers.extend(options)
+
             else:
                 selection_indexes = self.rng.choice(
-                    len(loadout.powers), size=loadout.selection_count, replace=False
+                    len(options), size=loadout.selection_count, replace=False
                 )
-                powers.extend([loadout.powers[i] for i in selection_indexes])
+                powers.extend([options[i] for i in selection_indexes])
 
         self.powers = powers
 
