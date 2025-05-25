@@ -31,7 +31,9 @@ def convert_images_to_webp():
         img.load()  # Ensure full load before copying
 
         # Check if image has transparency
-        has_alpha = img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info)
+        has_alpha = img.mode in ("RGBA", "LA") or (
+            img.mode == "P" and "transparency" in img.info
+        )
 
         if has_alpha:
             clean_img = Image.new("RGBA", img.size)
@@ -49,20 +51,21 @@ def convert_images_to_webp():
     return converted
 
 
-# Step 2: Update markdown references
+# Step 2: Update Markdown files with new image paths
 def update_markdown_files(conversion_map):
-    pattern = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+    markdown_img_pattern = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+    frontmatter_img_pattern = re.compile(r"^(image:\s+)(img/[^\s]+)", re.MULTILINE)
+
     for md_file in markdown_dir.rglob("**/*.md"):
         text = md_file.read_text(encoding="utf-8")
         new_text = text
 
-        for match in pattern.finditer(text):
+        # Handle Markdown inline image references
+        for match in markdown_img_pattern.finditer(text):
             alt_text, path = match.groups()
-
             filename = os.path.basename(path)
-
             new_url = conversion_map.get(filename)
-            if new_url is None:
+            if not new_url:
                 continue
 
             if path.startswith("img/"):
@@ -75,6 +78,17 @@ def update_markdown_files(conversion_map):
                 continue
 
             new_text = new_text.replace(f"]({path})", f"]({new_path})")
+
+        # Handle frontmatter image tag
+        def frontmatter_replacer(match):
+            prefix, old_path = match.groups()
+            filename = os.path.basename(old_path)
+            new_url = conversion_map.get(filename)
+            if not new_url:
+                return match.group(0)
+            return f"{prefix}img/{new_url}"
+
+        new_text = frontmatter_img_pattern.sub(frontmatter_replacer, new_text)
 
         if new_text != text:
             md_file.write_text(new_text, encoding="utf-8")
