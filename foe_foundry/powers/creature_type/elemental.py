@@ -224,11 +224,7 @@ class _ElementalFireball(ElementalPower):
             All creatures within the space must make a DC {dc} Dexterity saving throw, taking {dmg.description} {dmg_type} damage on a failure and half as much on a success."
 
         feature = Feature(
-            name=name,
-            action=ActionType.Action,
-            description=description,
-            recharge=5,
-            replaces_multiattack=2,
+            name=name, action=ActionType.Action, description=description, recharge=5
         )
         return [feature]
 

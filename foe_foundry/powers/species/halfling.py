@@ -22,6 +22,8 @@ class HalflingPower(PowerWithStandardScoring):
         power_level: float = RIBBON_POWER,
         **score_args,
     ):
+        self.species = "halfling"
+
         def is_halfling(stats: BaseStatblock) -> bool:
             return (
                 stats.creature_subtype is not None

@@ -12,6 +12,8 @@ Not all threats crawl from crypts. Some wear robes and carry grimoires. These mo
 - [Orcs](orc.md) - bloodrage-fueled ancestral warriors
 - [Goblins](goblin.md) - little balls of mischief and mayhem
 - [Mages](mage.md) - master of arcane magicks
+- [Cultists](cultist.md) - worshippers of the occult and forbidden
+- [Priests](priest.md) - faithful instruments of the divine
 
 ![A Cryomancer prepares an icy blast](../img/cryomancer2.png){.monster-image .masked .white-background}
 

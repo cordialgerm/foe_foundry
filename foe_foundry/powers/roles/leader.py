@@ -134,7 +134,7 @@ class _FanaticFollowers(LeaderPower):
         temphp = easy_multiple_of_five(3 + 1.5 * stats.cr, min_val=5)
         feature = Feature(
             name="Fanatic Followers",
-            action=ActionType.Reaction,
+            action=ActionType.Feature,
             description=f"Whenever {stats.selfref} would be hit by an attack, they command an ally within 5 feet to use its reaction to switch places with {stats.selfref}. \
                 The ally is hit by the attack instead. If the ally is killed by this attack, then {stats.selfref} gains {temphp} temporary hp.",
         )

@@ -19,10 +19,12 @@ loader = _Loader()
 
 
 def base_stats(
+    *,
     name: str,
     template_key: str,
     variant_key: str,
     monster_key: str,
+    species_key: str | None = None,
     cr: float,
     stats: list[StatScaler],
     hp_multiplier: float = 1.0,
@@ -57,6 +59,7 @@ def base_stats(
         template_key=template_key,
         variant_key=variant_key,
         monster_key=monster_key,
+        species_key=species_key,
         cr=cr,
         hp=hp,
         speed=Movement(walk=30),

@@ -37,13 +37,13 @@ The [Foe Foundry](./index.md){.branding} statblock has several improvements:
 
 Foe Foundry monsters often have bonus actions or powerful actions that can replace attacks in the multiattack. This way, your monster will always do something interesting on its turn and still be able to threaten players with damage output.
 
-Let's look at the 2014 [[Doppelganger]] from the [SRD](https://open5e.com/monsters/doppelganger):
+Let's look at the 2014 **Doppelganger** from the [SRD](https://open5e.com/monsters/doppelganger):
 
 ![2014 Doppelganger that Foe Foundry can improve](../img/blogs/doppelganger_2014.png){.masked .padded .blog-image-large}
 
 **The Problem**: the features that make a Doppelganger unique and interesting are its ability to shapeshift and read minds. But, with this statblock these require the Doppelganger to use up its action. So, in order to do something fun and interesting, this monster has to give up doing any damage. Also, its damage output is pitiful. So why would anyone ever run this monster as-is?
 
-**The Solution**: *Read Thoughts* and *Shapechanger* are flavor abilities, and they shouldn't waste the monster's action economy. They should be Bonus Actions or something that triggers automatically without requiring an Action. Also, *Read Thoughts* should provide some additional mechanical benefit to the [[Doppelganger]].
+**The Solution**: *Read Thoughts* and *Shapechanger* are flavor abilities, and they shouldn't waste the monster's action economy. They should be Bonus Actions or something that triggers automatically without requiring an Action. Also, *Read Thoughts* should provide some additional mechanical benefit to the **Doppelganger**.
 
 Let's fix [[Read Thoughts]]
 
@@ -55,13 +55,13 @@ By making this ability a *Bonus Action* it no longer competes with the monster's
 
 No more boring french-vanilla "Bite Claw Claw" monsters. These sorts of attacks waste space on the statblock and make it appear like there is more going on in the statblock than there actually is.
 
-Let's look at the 2014 [[Barbed Devil]] from the [SRD](https://open5e.com/monsters/barbed-devil):
+Let's look at the 2014 **Barbed Devil** from the [SRD](https://open5e.com/monsters/barbed-devil):
 
 ![Foe Foundry can fix the 2014 Barbed Devil](../img/blogs/barbed_devil_2014.png){.masked .padded .blog-image-large}
 
 **The Problem**: This monster has 3 attacks, which take up the majority of the statblocks. The attacks don't actually do anything besides slightly different amounts of damage, but you have to roll different numbers of dice and use different damage and attack modifiers for each. Why? It's a complete distraction.
 
-**The Solution**: Monsters in Foe Foundry have a single default attack that will often get attack modifiers added in (such as [[Weakening Attack]] or [[Fearsome Attack]]). Secondary attacks are only added if they actually add something interesting, like the unique mechanic in [[Nullification Maw]].
+**The Solution**: Monsters in Foe Foundry have a default attack that will often get attack modifiers added in (such as [[Weakening Attack]] or [[Frightening Attack]]). Secondary attacks are only added if they actually add something interesting, like the unique mechanic in [[Nullification Maw]].
 
 [[!Nullification Maw]]
 

@@ -51,9 +51,9 @@ A hulking variant of the standard Zombie, the **Zombie Brute** is stitched toget
 
 A **Zombie Gravewalker** forms when death and corruption pool to a breaking point and the deathly influence of the Styx begins to leak into the Mortal Realm. This often occurs in ancient graveyards.
 
-[[!Zombie Gravecaller]]
+[[!Zombie Gravewalker]]
 
-[[$Zombie Gravecaller]]
+[[$Zombie Gravewalker]]
 
 ### Zombie Ogre
 

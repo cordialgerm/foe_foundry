@@ -6,7 +6,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...spells import CasterType, enchantment, illusion, transmutation
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power
+from ..power import HIGH_POWER, MEDIUM_POWER
 from .base import _Spellcaster
 from .utils import spell_list
 
@@ -61,27 +61,44 @@ class _PsionicCaster(_Spellcaster):
         return [feature]
 
 
-def PsionicCasters() -> List[Power]:
-    return [
-        _PsionicCaster(
-            name="Psionic Adept",
-            min_cr=2,
-            max_cr=4,
-            spells=PsionicAdeptSpells,
-            power_level=MEDIUM_POWER,
-        ),
-        _PsionicCaster(
-            name="Psionic Master",
-            min_cr=5,
-            max_cr=10,
-            spells=PsionicMasterSpells,
-            power_level=HIGH_POWER,
-        ),
-        _PsionicCaster(
-            name="Psionic Expert",
-            min_cr=11,
-            max_cr=40,
-            spells=PsionicExpertSpells,
-            power_level=HIGH_POWER,
-        ),
-    ]
+PsionicAdept = _PsionicCaster(
+    name="Psionic Adept",
+    min_cr=2,
+    max_cr=4,
+    spells=PsionicAdeptSpells,
+    power_level=MEDIUM_POWER,
+)
+PsionicMaster = _PsionicCaster(
+    name="Psionic Master",
+    min_cr=5,
+    max_cr=10,
+    spells=PsionicMasterSpells,
+    power_level=HIGH_POWER,
+)
+PsionicExpert = _PsionicCaster(
+    name="Psionic Expert",
+    min_cr=11,
+    max_cr=40,
+    spells=PsionicExpertSpells,
+    power_level=HIGH_POWER,
+)
+
+PsionicSpellcasters = [
+    PsionicAdept,
+    PsionicMaster,
+    PsionicExpert,
+]
+
+
+def spellcaster_for_cr(cr: float) -> _PsionicCaster | None:
+    """
+    Returns the appropriate spellcaster for a given CR.
+    """
+    if cr < 2:
+        return None
+    elif cr <= 4:
+        return PsionicAdept
+    elif cr <= 10:
+        return PsionicMaster
+    else:
+        return PsionicExpert

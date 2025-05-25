@@ -45,9 +45,9 @@ Some examples include a **Shadow Rift token** that keeps summoning [[Shadows]] u
 
 ## Example Combat: Using a **Runic Wards token**
 
-Let's walk through an example combat with an [[Abjurer Archmage]] who will be using **Runic Wards token**.
+Let's walk through an example combat with an [[Abjurer Archmage]] who will be using **Runic Wards** to create a token.
 
-[[!Runic Wards token]]
+[[!Runic Wards]]
 
 [[!Abjurer Archmage]]
 

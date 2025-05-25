@@ -26,6 +26,8 @@ class DwarvenPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         **score_args,
     ):
+        self.species = "dwarf"
+
         def is_dwarf(stats: BaseStatblock) -> bool:
             return (
                 stats.creature_subtype is not None

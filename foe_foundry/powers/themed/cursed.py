@@ -290,7 +290,7 @@ class _CurseOfVengeance(CursedPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dc = stats.difficulty_class
+        dc = stats.difficulty_class_easy
         dmg = stats.attributes.proficiency
         cursed = conditions.Cursed().caption
         feature = Feature(

@@ -28,7 +28,7 @@ from .nothic import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .orc import OrcTemplate
 from .owlbear import OwlbearTemplate
-from .priest import PriestTemplate
+from .priest.priest import PriestTemplate
 from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
