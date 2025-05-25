@@ -19,7 +19,7 @@ json_ld: true
 
 *Faithful Instruments of the Divine*
 
-Priests are those rare mortals who find themselves as conduits to the Divine; through faith, perserverence, belief, or unusual circumstances. 
+Priests are those rare mortals who find themselves as conduits to the Divine; through faith, perseverance, belief, or unusual circumstances. 
 
 The [Distant Gods are silent and unknowable](../topics/faith.md#distant-gods). Miracles are rare and mysterious. No priest can say for certain the true source of their power. Does it flow from a God, a Saint, or something more mysterious or sinister still?  
 
