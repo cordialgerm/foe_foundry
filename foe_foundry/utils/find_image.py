@@ -8,6 +8,7 @@ def find_image(name: str) -> list[Path]:
         ".png",
         ".jpeg",
         ".gif",
+        ".webp",
     ]
 
     paths = []

@@ -2,7 +2,7 @@
 title: Lich Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Liches
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/lich.png
+image: img/monsters/lich.webp
 json_ld: true
 ---
 
@@ -27,7 +27,7 @@ Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken t
 - Each soul anchor is intimately tied to the lich's former life and guarded by dire wards
 - Liches are powerful masters of undeath and command vast armies of **Skeletons**, **Zombies**, **Ghouls**, **Specters**, **Wights**, **Wraiths**, and even the occasional apprentice **Necromancer Mage**
 
-![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.png){.monster-image .masked}
+![Rotting undead lich with blackened bones, channeling forbidden magic](../img/monsters/lich.webp){.monster-image .masked}
 
 ## Lich Tactics
 

@@ -2,7 +2,7 @@
 title: Chimera Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Chimeras
 description: Discover complete chimera statblocks, lore, tactics, encounters, and adventure hooks for your fantasy RPG sessions. Summon monstrous heralds of disaster with Foe Foundry.
-image: img/chimera.png
+image: img/monsters/chimera.webp
 json_ld: true
 ---
 
@@ -10,7 +10,7 @@ json_ld: true
 
 *Monstrous Messenger of Imminent Disaster*
 
-![Chimeras are three-headed heralds of disaster](../img/chimera.png){.monster-image .masked}
+![Chimeras are three-headed heralds of disaster](../img/monsters/chimera.webp){.monster-image .masked}
 
 Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast that is part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.
 

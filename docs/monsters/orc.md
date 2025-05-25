@@ -2,7 +2,7 @@
 title: "Bloodrage and Battle: Orc statblocks, adventure hooks, and lore for 5E"
 short_title: "Bloodrage and Battle: Orcs"
 description: Need orcs that are more than axe fodder? Discover bloodrage-driven statblocks, rituals, and flavorful encounter ideas for your next 5E session.
-image: img/orc.png
+image: img/monsters/orc.webp
 json_ld: true
 ---
 
@@ -84,7 +84,7 @@ These bespoke orc statblocks are built to hit hard and ooze flavor. From soldier
 
 [[$Orc Soldier]]
 
-![An armored orc soldier engaged in combat. Ideal for a frontline orc statblock in 5E](../img/orc-soldier.png){.masked .monster-image}
+![An armored orc soldier engaged in combat. Ideal for a frontline orc statblock in 5E](../img/monsters/orc-soldier.webp){.masked .monster-image}
 
 ### Orc Reaver
 
@@ -110,7 +110,7 @@ These bespoke orc statblocks are built to hit hard and ooze flavor. From soldier
 
 [[$Orc Bloodrite Shaman]]
 
-![An Orc shaman cloaked in ritual bones and charms, channeling spiritual magic. Perfect for a spellcasting orc support](../img/orc-bloodrite-shaman.png){.masked .monster-image}
+![An Orc shaman cloaked in ritual bones and charms, channeling spiritual magic. Perfect for a spellcasting orc support](../img/monsters/orc-bloodrite-shaman.webp){.masked .monster-image}
 
 ### Orc Bloodrite Elder Shaman
 
@@ -136,7 +136,7 @@ The [[Orc Bloodrite Elder Shaman]] has gained sufficient skill and wisdom to com
 
 [[$Orc Warchief]]
 
-![A proud and commanding orc warchief. A powerful orc boss monster or warband leader](../img/orc.png){.masked .monster-image}
+![A proud and commanding orc warchief. A powerful orc boss monster or warband leader](../img/monsters/orc.webp){.masked .monster-image}
 
 ### Orc Warchief of the Bloody Fang
 

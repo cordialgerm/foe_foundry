@@ -2,7 +2,7 @@
 title: Creating Awesome Villains | Foe Foundry
 short_title: Creating Awesome Villains
 description: Build unforgettable D&D villains with this all-in-one guide. Packed with threat tables, themed monsters, evil goals, quirks, sidekicks, and more for 5E and fantasy TTRPGs.
-image: img/darklord.jpg
+image: img/monsters/darklord.webp
 json_ld: true
 ---
 
@@ -14,7 +14,7 @@ Whether you’re building a campaign from scratch or scrambling to prep for game
 
 With tiered [villainous threats](#villains-foes-and-threats), [themed monsters](#themed-monsters), [villain methods and schemes](#villain-plots-and-methods), and dozens of mix-and-match prompts, <a href="https://foefoundry.com" class="branding">Foe Foundry</a> makes villain design fast, flexible, and fun - even when the 2024 *Dungeon Master's Guide* falls short.
 
-![An epic villain strides forth ready to conquery the world](../img/darklord.jpg){.masked .blog-image-large}
+![An epic villain strides forth ready to conquery the world](../img/monsters/darklord.webp){.masked .blog-image-large}
 
 Here are three examples of legendary villains for your D&D, 5E, and TTRPG campaigns:
 
