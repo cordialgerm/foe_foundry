@@ -33,6 +33,6 @@ Nope. We're not officially partnered with [Foundry VTT](https://foundryvtt.com) 
 
 ## Related Tools and Resources
 
-- [What Is Foe Foundry?](../about.md) – Learn more about our monster generator.
+- [What Is the Foe Foundry generator?](../generate.md) – Learn more about our monster generator.
 - [5E Monsters](../monsters/index.md) – Browse all statblocks.
 - [600+ Unique Monster Powers](../powers/all.md) - Browse over 600 unique monster powers

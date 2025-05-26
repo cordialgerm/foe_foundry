@@ -127,7 +127,7 @@ The Foe Foundry [[Lich]] is designed to be a deadly, challenging, and ruthless f
 
 The Lich's Soul Anchor is a blasphemous magical object that binds the Lich's soul to the Mortal Realm. The process to create an anchor, as well as the anchor itself, is unique to each Lich. There are two common trends though: the ritual always involves some unspeakably evil act, and the anchor itself is always tied directly to the lich in a deeply personal and emotional way.  
 
-In terms of game mechanics, the Soul Anchor enables the lich's body to reform if it is every destroyed.
+In terms of game mechanics, the Soul Anchor enables the lich's body to reform if it is ever destroyed.
 
 [[!Lich Spellcasting]]
 
@@ -145,5 +145,6 @@ Here are a couple possible encounters for a [[Lich]]:
 
 - 4 level 13 PCs or 5 level 11 PCs can face off against a solo [[Lich]] if the PCs are reasonably well geared & optimized, but this is likely to be a deadly battle with a very high probability of at least one PC dying and a reasonably high chance of TPK. This is a good chance to introduce the lich to the party with a "test encounter", especially if there is a reason that the Lich needs to leave the party alive or can't stay long enough to fully finish them off.
 - A more realistic encounter would involve 4-5 level 15 PCs facing off against a [[Lich]] with suitable minions, including armies of [[Skeletons]] and [[Zombies]] as well as several moderate-CR threats such as [[Zombie Giants]], [[Wraiths]], and [[Ghosts]].
-- For higher-level parties, the [[Lich]] can be replaced with the [[Archlich]] and the minions can include an undead **Young Red Dragon** mount with the [[Defender]] trait (on top of the army of undead mentioned above)
+- For higher-level parties, the [[Lich]] can be replaced with the [[Archlich]] and the minions can include an undead **Young Red Dragon** mount with the [[Protection]] trait (on top of the army of undead mentioned above)
 
+---
