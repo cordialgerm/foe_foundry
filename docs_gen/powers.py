@@ -10,6 +10,8 @@ def generate_all_powers():
         "title: All Powers | Foe Foundry",
         "description: Browse 600+ handcrafted monster powers for tabletop RPGs. Find unique abilities and build the perfect monster for your encounters.",
         "image: img/icons/favicon.webp",
+        "hide:",
+        "   - backlinks",
         "---",
         "# All Monster Powers\n",
         "Monster Powers are the beating heart of Foe Foundry. Powers are flavorful, handcrafted abilities that make every 5E monster feel unique, dangerous, and ready for the table. Whether it's a venomous strike, a cursed aura, or a spell-laced scream, each Power is designed to challenge players and inspire GMs. Powers are organized by theme to help you discover exactly the right vibe for your next encounter, and they scale cleanly with CR so you can drop them into any campaign.  \n",

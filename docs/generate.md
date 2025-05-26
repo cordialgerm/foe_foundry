@@ -3,6 +3,8 @@ title: Generate
 description: Foe Foundry’s Monster Generator is coming soon! Create custom monsters with flavorful abilities, scalable statblocks, and thematic powers for 5E and fantasy RPGs.
 hide:
   - toc
+  - backlinks
+  - related_monsters
 image: img/monsters/blacksmith.webp
 ---
 

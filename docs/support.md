@@ -4,6 +4,7 @@ description: Support Foe Foundry and help power a growing library of custom 5E m
 image: img/icons/favicon.webp
 hidden:
     - toc
+    - backlinks
 ---
 
 # Support Foe Foundry on Patreon

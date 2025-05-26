@@ -29,6 +29,7 @@ def generate_families_index():
         "description: Explore 5E monster families and their unique abilities. Discover how to use them in your game and find the perfect monster for your next encounter.",
         "hide:",
         "   - toc",
+        "   - backlinks",
         "---",
         "[[@Subscribe to the Newsletter]]\n",
         "---",
