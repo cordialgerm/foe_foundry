@@ -1,6 +1,8 @@
 ---
 title: Monsters | Foe Foundry
 description: Discover unique, handcrafted monsters for your next 5E or fantasy TTRPG session. From undead horrors to mythic monstrosities, Foe Foundry offers unforgettable foes ready to challenge your players.
+hidden:
+    - backlinks
 ---
 
 # Foe Foundry Monsters

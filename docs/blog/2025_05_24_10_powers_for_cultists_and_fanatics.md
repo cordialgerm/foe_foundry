@@ -12,7 +12,7 @@ hide:
 
 # 10 Powers for Cultists, Fanatics, & False Prophets
 
-Looking to add some unholy flair to your next TTRPG encounter? Whether you’re running a hidden death cult, a heretical preacher, or a zealot-filled dungeon, these 10 cultist powers bring fear, flavor, and fanaticism to the table. Besides the powers, there are also [Cultist Encounters](../monsters/cultist.md#encounter-ideas) to inspire your next dark ritual encounter.
+Looking to add some unholy flair to your next TTRPG encounter? Whether you’re running a hidden death cult, a heretical preacher, or a zealot-filled dungeon, these 10 cultist powers bring fear, flavor, and fanaticism to the table. Besides the powers, there are also [Cultist Encounters](../monsters/cultist.md#encounter-ideas) to inspire your next dark ritual encounter. Also, explore [Fanatics and Faithful](../families/fanatics_and_faithful.md) to see how [[Cultists]] and [[Priests]] are two sides of the same coin.
 
 [[!Pyramid Scheme]]
 
