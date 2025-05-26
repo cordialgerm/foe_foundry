@@ -53,3 +53,7 @@ Reach out on [Cordialgerm's Patreon](https://patreon.com/foefoundry) where I wil
 ## Who are you?
 
 I'm a passionate D&D DM and player who loves creating monsters and generators!
+
+## Are You Affiliated with Foundry VTT or The Forge?
+
+Nope. We're not officially partnered with [Foundry VTT](https://foundryvtt.com) or [The Forge](https://forge-vtt.com) (the hosting service for Foundry VTT). But we're fans. But we're building [FoundryVTT Monster Export](../topics/foundry_vtt.md) so you can seamlessly export your monsters into Foundry.

@@ -108,7 +108,7 @@ class _LichSpellcasting(LichPower):
             description="The lich can change the damage type of any of its spells, abilities, attacks to fire, cold, lightning, poison, or necrotic damage.",
         )
         feature2 = Feature(
-            name="Spirit Anchor",
+            name="Soul Anchor",
             action=ActionType.Feature,
             description="If the lich is destroyed, and its soul anchor is intact, it returns to life in 1d10 days.",
         )

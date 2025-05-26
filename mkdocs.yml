@@ -17,6 +17,7 @@ nav:
       - Blog: blog/index.md
       - Topics: topics/index.md
       - RSS: rss.xml
+      - FAQ: topics/faq.md
 
 use_directory_urls: true
 
