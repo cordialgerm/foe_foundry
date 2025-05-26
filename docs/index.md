@@ -4,6 +4,7 @@ description: Foe Foundry helps GMs instantly summon unforgettable monsters for 5
 hide:
   - toc
   - related_monsters
+  - backlinks
 image: img/icons/favicon.webp
 ---
 

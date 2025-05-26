@@ -2,7 +2,7 @@
 title: Cultist Statblocks, Lore, and Adventure Hooks for TTRPGs | Foe Foundry
 short_title: Cultists
 description: Discover cultist statblocks, forbidden lore, and encounter ideas for your next fantasy TTRPG session. From aberrant rituals to fiendish pacts, summon dark forces with ready-to-run cult encounters and heretical NPCs.
-image: img/cultist.webp
+image: img/monsters/cultist.webp
 json_ld: true
 ---
 
@@ -20,7 +20,7 @@ Many cultists are driven by ambition. They offer blood, loyalty, or sanity in ex
 
 Cultists often claim their patrons are no more dangerous than the so-called “saints” of old. They ask: if a priest draws miracles from a silent god, and a cultist draws power from a whispering one, who is the true blasphemer? When power flows, and the gods remain silent, does it matter what name you cry out in the dark?
 
-![Cultists are the perfect foes for a dark fantasy TTRPG campaign](../img/cultist.webp){.masked .monster-image}
+![Cultists are the perfect foes for a dark fantasy TTRPG campaign](../img/monsters/cultist.webp){.masked .monster-image}
 
 ## Cult Archetypes
 

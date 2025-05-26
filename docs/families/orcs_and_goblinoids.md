@@ -2,7 +2,7 @@
 title: Orcs and Goblinoids - Statblocks, Lore, and Encounters Ideas for 5E | Foe Foundry
 short_title: Orcs and Goblinoids - Statblocks, Lore, and Encounters
 description: Explore orc and goblinoid lore, statblocks, and unforgettable 5E encounter ideas. Fuel your fantasy RPG with ancestral fury, goblin mischief, and warband mayhem.
-image: img/orc-soldier.png
+image: img/monsters/orc-soldier.webp
 json_ld: true
 ---
 
@@ -14,7 +14,7 @@ Orcs are bloodrage-driven warriors descended from exiles who bargained with demo
 
 Though culturally distinct, orcs and goblins are often found in the same warbands. Mostly, this is because orcs are big enough to make it so. Goblin tribes, when left to their own devices, squabble, scatter, and accidentally set things on fire. But when a strong orc [[Orc Warchief]] arrives, goblins often fall in line (or get kicked into it). Orcs see goblins as disposable scouts, trap-makers, and distractions. Goblins see orcs as terrifying meat walls who keep angry adventurers occupied. It's a dysfunctional alliance, but an effective one.
 
-![Orcs and Goblins pillage and raid together](../img/orc-soldier.png){.masked .monster-image}
+![Orcs and Goblins pillage and raid together](../img/monsters/orc-soldier.webp){.masked .monster-image}
 
 ---
 

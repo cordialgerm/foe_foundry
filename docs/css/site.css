@@ -597,7 +597,8 @@ footer a {
 }
 
 .burnt-parchment a,
-a.burnt-parchment {
+a.burnt-parchment,
+.burnt-parchment span.nav-link {
     color: var(--muted-color);
     font-weight: bold;
 }
@@ -618,6 +619,12 @@ a.burnt-parchment {
 
 #referenced-monsters {
     color: var(--muted-color);
+}
+
+.burnt-parchment hr {
+    border: none;
+    height: 10px;
+    background: url('/img/misc/squiggle.webp') center/contain no-repeat;
 }
 
 .stat-block,

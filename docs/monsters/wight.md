@@ -2,7 +2,7 @@
 title: Wight Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Wights
 description: Entreat with powerful wights using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/wight.png
+image: img/monsters/wight.webp
 json_ld: true
 ---
 
@@ -29,7 +29,7 @@ Wights are cunning, soul-hungry undead in Dungeons & Dragons, 5E, Pathfinder, an
 - Wights are patient, cunning, and cruel. They show no mercy.
 - Wights are often drawn to the life-force of particularly powerful divine magic wielders
 
-![Wights rise from their freezing grave barrows](../img/wight.png){.monster-image .masked}
+![Wights rise from their freezing grave barrows](../img/monsters/wight.webp){.monster-image .masked}
 
 ---
 

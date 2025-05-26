@@ -24,7 +24,24 @@
                 {{ toc_item(item) }}
                 {%- endfor %}
 
+                {% if page.meta and page.meta.backlinks | length %}
+                <hr />
+
+                <li class="nav-item" data-bs-level="1">
+                    <span class="nav-link">Backlinks</span>
+                    <ul class="nav flex-column">
+                        {%- for item in page.meta.backlinks %}
+                        <li class="nav-item" data-bs-level="2">
+                            <a href="{{item.src_url | url}}" class="nav-link">{{item.src_title}}</a>
+                        </li>
+                        {%- endfor %}
+                    </ul>
+                </li>
+
+                {% endif %}
+
                 {% if page.meta and page.meta.related_monsters | length %}
+                <hr />
                 <li class="nav-item" data-bs-level="1">
                     <a href="#referenced-monsters" class="nav-link">Referenced Monsters</a>
                 </li>

@@ -5,7 +5,7 @@ description: Discover 10 radiant Celestial Powers perfect for 5E monsters. Add d
 tags:
   - resources
   - tips
-image: img/angel.webp
+image: img/monsters/angel.webp
 json_ld: true
 date: 2025-05-10
 ---
@@ -20,7 +20,7 @@ The stock angels in the 2014 and 2024 Monster Manual are relatively uninspired. 
 
 So, let's take a look at 10 interesting celestial powers that will strike the fear of the gods into your party, should they dare oppose the will of the heavens. These angelic abilities will transcend the traditional divine smite and elevate your holy-themed encounters.
 
-![An angelic being casting radiant magic – an example of celestial power](../img/angel.webp){.blog-image-large}
+![An angelic being casting radiant magic – an example of celestial power](../img/monsters/angel.webp){.blog-image-large}
 
 ---
 

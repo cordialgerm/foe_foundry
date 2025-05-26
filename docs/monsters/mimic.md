@@ -2,7 +2,7 @@
 title: Mimic Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
 short_title: Mimics
 description: Ambush your unsuspecting party with mimics using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/mimic.png
+image: img/monsters/mimic.webp
 json_ld: true
 ---
 
@@ -31,7 +31,7 @@ Mimics are a classic ambush predator in Dungeons & Dragons, 5E, Pathfinder, and 
 - After successfully swallowing prey, or if its ambush fails, a mimic will attempt to flee and blend in with its nearby surroundings
 - Larger, more powerful mimics are often able to inhabit entire rooms or structures
 
-![A book mimic surprises the PCs](../img/mimic.png){.monster-image .masked .white-background}
+![A book mimic surprises the PCs](../img/monsters/mimic.webp){.monster-image .masked .white-background}
 
 ---
 

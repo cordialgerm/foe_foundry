@@ -1,8 +1,8 @@
 ---
-title: Lich Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
-short_title: Liches
+title: Lich Statblocks and Lore for 5E | Foe Foundry
+short_title: Lich Statblocks and Lore
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
-image: img/lich.png
+image: img/monsters/lich.webp
 json_ld: true
 ---
 
@@ -27,7 +27,7 @@ Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken t
 - Each soul anchor is intimately tied to the lich's former life and guarded by dire wards
 - Liches are powerful masters of undeath and command vast armies of **Skeletons**, **Zombies**, **Ghouls**, **Specters**, **Wights**, **Wraiths**, and even the occasional apprentice **Necromancer Mage**
 
-![Rotting undead lich with blackened bones, channeling forbidden magic](../img/lich.png){.monster-image .masked}
+![Rotting undead lich with blackened bones, channeling forbidden magic](../img/monsters/lich.webp){.monster-image .masked}
 
 ## Lich Tactics
 
@@ -103,3 +103,48 @@ Foe Foundry adventure seeds are crafted to spark thrilling, open-ended campaigns
 - Various **Nobles** keep turning into statues. It turns out these are the former loved ones (family, friends, ex-lovers) of an exiled **Necromancer Primagus** who must sacrifice their love in order to craft the soul anchor they require to become a **Lich**
 - Two competing **Liches** are engaged in a proxy war by hiring competing adventuring parties to acquire a long-lost relic
 - A spectral library appears once a century, in a catacomb deep beneath a ruined city infested with undead. It is said the **Lich** who crafted the library will grant one *Wish* to any mortal champion who can brave the horrors of the dungeon
+
+---
+
+## FAQ
+
+### What is a Lich in 5E?
+
+A lich is a powerful undead spellcaster in Dungeons & Dragons 5e who achieves immortality by binding their soul to Soul Anchor. Some seek to conquer kingdoms or ascend to godhood. Others retreat into sunken tombs, dreaming in silence as the world decays around them. [Discover more twisted Lich lore](#lich-lore), [powerful Lich statblocks](#lich-statblocks), [table-ready Lich encounter ideas](#lich-encounter-ideas), and [Lich adventure hooks](#lich-adventure-ideas).
+
+### How does the Foe Foundry Lich compare to the standard 5E Lich?
+
+The Foe Foundry [[Lich]] is designed to be a deadly, challenging, and ruthless foe for your party to face. The statblock is intended to deliver the appropriate threat for this iconic foe. The Foe Foundry Lich can deliver its threat simply by multiattacking, though of course the fight will be a lot more interesting if you use its unique abilities and powers, compared to the 2014 Lich where you have to carefully select which spells to utilize to have a chance at delivering the appropriate threat.
+
+| Lich Statblock       | AC  | HP   | Damage Per Round                 | Example Damage Source                             |
+|----------------------|-----|------|----------------------------------|-------------------------------------------|
+| [Lich (2014)](https://open5e.com/monsters/lich)          | 17  | 135  | ~90 DPR                          | Spells (Fireball), Cantrip Legendary Actions |
+| Lich (2024)          | 20  | 315  | ~140 DPR                         | Multiattack and Legendary Actions     |
+| Foe Foundry [[Lich]] | 18  | 375  | ~180 DPR                         | Multiattack and Legendary Actions |
+
+
+### How does a Lich's Soul Anchor work?
+
+The Lich's Soul Anchor is a blasphemous magical object that binds the Lich's soul to the Mortal Realm. The process to create an anchor, as well as the anchor itself, is unique to each Lich. There are two common trends though: the ritual always involves some unspeakably evil act, and the anchor itself is always tied directly to the lich in a deeply personal and emotional way.  
+
+In terms of game mechanics, the Soul Anchor enables the lich's body to reform if it is ever destroyed.
+
+[[!Lich Spellcasting]]
+
+## How do you destroy a Lich's Soul Anchor?
+
+The Soul Anchor is a dangerous magical artifact that is almost always guarded with powerful protective magics, wards, and guardians. The anchor is often tied to some deeply personal, traumatic, or painful moment in the Lich's past mortal life, and for this reason many Liches prefer not to be near their Soul Anchor, often leaving it where it was first created and crafting a dark citadel or powerful wards around the location to protect it.
+
+## How do you permanently kill a Lich in D&D?
+
+First, the Lich's Soul Anchor must be destroyed. Only then is the lich truly vulnerable. But, even with the anchor destroyed, the [[Lich]] maintains all of its magical might and cruel intellect, so aspiring lich-slayers beware!
+
+## What level should a party be to fight a lich?
+
+Here are a couple possible encounters for a [[Lich]]:
+
+- 4 level 13 PCs or 5 level 11 PCs can face off against a solo [[Lich]] if the PCs are reasonably well geared & optimized, but this is likely to be a deadly battle with a very high probability of at least one PC dying and a reasonably high chance of TPK. This is a good chance to introduce the lich to the party with a "test encounter", especially if there is a reason that the Lich needs to leave the party alive or can't stay long enough to fully finish them off.
+- A more realistic encounter would involve 4-5 level 15 PCs facing off against a [[Lich]] with suitable minions, including armies of [[Skeletons]] and [[Zombies]] as well as several moderate-CR threats such as [[Zombie Giants]], [[Wraiths]], and [[Ghosts]].
+- For higher-level parties, the [[Lich]] can be replaced with the [[Archlich]] and the minions can include an undead **Young Red Dragon** mount with the [[Protection]] trait (on top of the army of undead mentioned above)
+
+---
