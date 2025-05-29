@@ -255,7 +255,7 @@ class _PreciseStrike(SoldierPower):
             name="Precise Strike",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When {stats.selfref.capitalize()} misses with an attack, it may turn that miss into a hit.",
+            description=f"When {stats.selfref} misses with an attack, it may turn that miss into a hit.",
         )
         return [feature]
 
