@@ -1,32 +1,27 @@
 import numpy as np
 
-from ..ac_templates import PlateArmor
-from ..attack_template import natural, weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..movement import Movement
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import PlateArmor
+from ...attack_template import natural, weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...movement import Movement
+from ...powers import (
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature_type import construct
-from ..powers.roles import bruiser, defender
-from ..powers.themed import anti_magic, anti_ranged, gadget, reckless, technique, tough
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from ...statblocks import BaseStatblock
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 AnimatedArmorVariant = MonsterVariant(
     name="Animated Armor",
@@ -51,72 +46,15 @@ RunicSpellplateVariant = MonsterVariant(
 )
 
 
-class _AnimatedArmorPowers(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-    ):
-        self.stats = stats
-        self.variant = variant
-
-        general_powers = [
-            construct.ProtectivePlating,
-            construct.ExplosiveCore,
-            construct.Overclock,
-            defender.Protection,
-            defender.Taunt,
-            defender.ZoneOfControl,
-            anti_magic.RuneDrinker,
-            anti_magic.SealOfSilence,
-            anti_ranged.ArrowWard,
-            anti_ranged.DeflectMissile,
-        ]
-
-        if variant is AnimatedArmorVariant:
-            techniques = [
-                technique.ProneAttack,
-                technique.PushingAttack,
-                technique.GrapplingAttack,
-            ]
-            force_powers = [construct.ImmutableForm]
-            additional_powers = [
-                bruiser.StunningBlow,
-                reckless.WildCleave,
-                reckless.Toss,
-            ] + gadget.NetPowers
-        elif variant is RunicSpellplateVariant:
-            techniques = [
-                technique.CleavingAttack,
-            ]
-            force_powers = [
-                construct.ImmutableForm,
-                defender.SpellReflection,
-            ]
-            additional_powers = [anti_magic.ArcaneHunt]
-        else:
-            raise ValueError("Unrecognized variant")
-
-        technique_index = rng.choice(len(techniques))
-        technique_power = techniques[technique_index]
-        force_powers.append(technique_power)
-
-        self.general = general_powers
-        self.powers = general_powers + additional_powers
-        self.force = force_powers
-        self.suppress = techniques + [tough.Regeneration, reckless.RelentlessEndurance]
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.suppress:
-            return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
-        elif p in self.general:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return LOW_POWER - 0.2 * sum(p.power_level for p in self.force_powers())
+def _custom_powers(
+    stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
+) -> NewPowerSelection:
+    if variant is AnimatedArmorVariant:
+        return NewPowerSelection(powers.LoadoutAnimatedArmor, rng=rng)
+    elif variant is RunicSpellplateVariant:
+        return NewPowerSelection(powers.LoadoutRunicSpellplate, rng)
+    else:
+        raise ValueError(f"Unknown variant: {variant}")
 
 
 def generate_animated_armor(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -219,7 +157,7 @@ def generate_animated_armor(settings: GenerationSettings) -> StatsBeingGenerated
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_AnimatedArmorPowers(stats, variant, rng),
+        custom=_custom_powers(stats, variant, rng),
     )
     features += power_features
 

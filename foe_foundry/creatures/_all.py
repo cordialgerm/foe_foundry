@@ -28,7 +28,7 @@ from .nothic import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .orc import OrcTemplate
 from .owlbear import OwlbearTemplate
-from .priest.priest import PriestTemplate
+from .priest import PriestTemplate
 from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
@@ -39,7 +39,7 @@ from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate
 from .wolf import WolfTemplate
-from .zombie.zombie import ZombieTemplate
+from .zombie import ZombieTemplate
 
 AllTemplates: list[MonsterTemplate] = [
     AnimatedArmorTemplate,
