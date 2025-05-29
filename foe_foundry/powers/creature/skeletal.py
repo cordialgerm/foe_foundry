@@ -93,7 +93,7 @@ class _BoneShards(SkeletalPower):
             name="Bone Shards",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When hit by a melee attack, the skeletal creature explodes in a shower of sharp fragments. Each creature within 5 feet of it must make a DC {dc} Dexterity saving throw, taking {damage} piercing damage on a failed save, or half as much damage on a successful one.",
+            description=f"When hit by a melee attack, the skeletal creature explodes in a shower of sharp fragments. Each creature within 5 feet of it must make a DC {dc} Dexterity saving throw, taking {damage.description} piercing damage on a failed save, or half as much damage on a successful one.",
         )
 
         return [feature]
@@ -210,7 +210,7 @@ class _BoneWall(SkeletalPower):
             replaces_multiattack=2,
             recharge=recharge,
             uses=uses,
-            description=f"{stats.selfref.capitalize()} creates a wall of spike bone growths in a 20 foot line within 60 feet. Each creature in its area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage} piercing damage on a failed save, or half as much damage on a successful one. The wall counts as difficult terrain and a creature that enters its space or ends its turn there takes {damage} piercing damage.",
+            description=f"{stats.selfref.capitalize()} creates a wall of spike bone growths in a 20 foot line within 60 feet. Each creature in its area must make a DC {stats.difficulty_class_easy} Dexterity saving throw, taking {damage.description} piercing damage on a failed save, or half as much damage on a successful one. The wall counts as difficult terrain and a creature that enters its space or ends its turn there takes {damage} piercing damage.",
         )
 
         return [feature]

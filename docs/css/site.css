@@ -444,7 +444,8 @@ p:has(> img.masked.padded)>img.masked.padded {
     display: inline;
 }
 
-.monster-image.white-background {
+.monster-image.white-background,
+.blog-image.white-background {
     background-color: var(--fg-color) !important;
 }
 

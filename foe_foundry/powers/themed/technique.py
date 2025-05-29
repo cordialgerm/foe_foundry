@@ -218,7 +218,7 @@ class _ProneAttack(Technique):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
-            condition = "is knocked {Condition.Prone.caption}"
+            condition = f"is knocked {Condition.Prone.caption}"
         else:
             dc = stats.difficulty_class
             condition = f"must make a DC {dc} Strength saving throw or be knocked {Condition.Prone.caption}"
