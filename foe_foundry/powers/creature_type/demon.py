@@ -202,7 +202,7 @@ class _Desecration(DemonPower):
         token = Token(
             name="Desecrated Ground", dc=stats.difficulty_class_token, charges=3
         )
-        dmg = stats.target_value(dpr_proportion=0.5)
+        dmg = stats.target_value(dpr_proportion=0.25)
 
         feature = Feature(
             name="Desecration",
@@ -211,7 +211,7 @@ class _Desecration(DemonPower):
             creates_token=True,
             description=f"{stats.selfref.capitalize()} desecrates the ground it stands upon, creating a {token.caption}. \
                 Within 30 feet of the Token, any creature that attempts to speak or use any spell or ability that requires a verbal component suffers {dmg.description} necrotic damage \
-                unless the creature speaks or incants in Abyssal. Additionally, creatures within the affected area cannot regain",
+                unless the creature speaks or incants in Abyssal. Additionally, creatures within the affected area cannot regain hit points.",
         )
         return [feature]
 
@@ -252,7 +252,7 @@ class _NightmareSpawn(DemonPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         nightmare = creature_ref("Nightmare")
-        dmg = stats.target_value(dpr_proportion=0.7)
+        dmg = stats.target_value(dpr_proportion=0.5)
 
         feature = Feature(
             name="Nightmare Spawn",
@@ -282,6 +282,9 @@ WhispersOfTheAbyss: Power = _WhispersOfTheAbyss()
 DemonPowers: list[Power] = [
     DemonicBite,
     DemonicSummons,
+    Desecration,
+    EchoOfRage,
     FeastOfSouls,
+    NightmareSpawn,
     WhispersOfTheAbyss,
 ]
