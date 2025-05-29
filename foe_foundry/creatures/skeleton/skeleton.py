@@ -1,38 +1,22 @@
 import numpy as np
 
-from ..ac_templates import Breastplate, Unarmored
-from ..attack_template import spell, weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import skeletal
-from ..powers.creature_type import elemental, undead
-from ..powers.roles import defender, leader, soldier
-from ..powers.themed import (
-    anti_ranged,
-    cursed,
-    deathly,
-    fearsome,
-    honorable,
-    icy,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ._data import (
+from ...ac_templates import Breastplate, Unarmored
+from ...attack_template import spell, weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import BaseStatblock, base_stats
+from . import powers
 
 SkeletonVariant = MonsterVariant(
     name="Skeleton",
@@ -71,126 +55,21 @@ FreezingSkeletonVariant = MonsterVariant(
 )
 
 
-class _BasicSkeletonWeights(CustomPowerSelection):
-    def __init__(self, rng: np.random.Generator):
-        skeletal_powers = skeletal.SkeletalPowers
-
-        martial_powers = [
-            soldier.Phalanx,
-            soldier.CoordinatedStrike,
-            soldier.Disciplined,
-            soldier.Lunge,
-            soldier.PreciseStrike,
-            technique.VexingAttack,
-            technique.GrazingAttack,
-            technique.Dueling,
-            technique.PommelStrike,
-            technique.BaitAndSwitch,
-            technique.ParryAndRiposte,
-        ]
-
-        skeletal_power_index = rng.choice(len(skeletal_powers))
-        chosen_skeletal_power: Power = skeletal_powers[skeletal_power_index]
-        martial_power_index = rng.choice(len(martial_powers))
-        chosen_martial_power: Power = martial_powers[martial_power_index]
-        self.force = [chosen_skeletal_power, chosen_martial_power]
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        # everything through force_powers
-        return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
-
-
-class _AdvancedSkeletonWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-    ):
-        self.stats = stats
-        self.variant = variant
-        self.cr = stats.cr
-        self.rng = rng
-
-        skeletal_powers = skeletal.SkeletalPowers + [
-            cursed.CursedWound,
-            deathly.WitheringBlow,
-            deathly.DrainingBlow,
-            fearsome.DreadGaze,
-        ]
-        special_powers = []
-        required_powers = []
-
-        leader_powers = [
-            leader.CommandTheAttack,
-            leader.CommandTheTroops,
-            leader.FanaticFollowers,
-        ]
-
-        if self.variant is GraveGuardVariant:
-            required_powers = [defender.Protection]
-            special_powers = (
-                [
-                    technique.ArmorMaster,
-                    technique.DisarmingAttack,
-                    technique.Interception,
-                    technique.ShieldMaster,
-                    anti_ranged.DeflectMissile,
-                    honorable.Challenge,
-                ]
-                + defender.DefenderPowers
-                + leader_powers
-            )
-            skeletal_powers.remove(skeletal.BoneSpear)
-        elif self.variant is BurningSkeletonVariant:
-            required_powers = [technique.BurningAttack]
-            skeletal_powers.remove(cursed.CursedWound)  # not fire themed
-            special_powers += [
-                elemental.ElementalFireball,
-                elemental.FireBurst,
-                elemental.FireElementalAffinity,
-                elemental.FireSmite,
-                elemental.SuperheatedAura,
-            ]
-        elif self.variant is FreezingSkeletonVariant:
-            required_powers = [technique.FreezingAttack]
-            skeletal_powers.remove(cursed.CursedWound)  # not cold themed
-            special_powers += [
-                undead.SoulChill,
-                undead.StygianBurst,
-                elemental.IceBurst,
-                elemental.IceElementalAffinity,
-                elemental.ConeOfCold,
-                elemental.IceSmite,
-                elemental.ArcticChillAura,
-            ] + icy.IcyPowers
-
-        # choose 1 skeletal and 1 special power
-        skeletal_power_index = self.rng.choice(len(skeletal_powers))
-        chosen_skeletal_power: Power = skeletal_powers[skeletal_power_index]
-
-        special_power_index = self.rng.choice(len(special_powers))
-        chosen_special_power: Power = special_powers[special_power_index]
-
-        # if CR 6 or higher, add a leader power as well
-        selected_leader_powers = []
-        if self.cr >= 6:
-            leader_power_index = self.rng.choice(len(leader_powers))
-            chosen_leader_power: Power = leader_powers[leader_power_index]
-            selected_leader_powers.append(chosen_leader_power)
-
-        self.force = (
-            required_powers
-            + [chosen_skeletal_power, chosen_special_power]
-            + selected_leader_powers
-        )
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        # everything through force_powers
-        return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
+def _choose_powers(
+    stats: BaseStatblock,
+    variant: MonsterVariant,
+    rng: np.random.Generator,
+) -> NewPowerSelection:
+    if variant is SkeletonVariant:
+        return NewPowerSelection(loadouts=powers.LoadoutSkeleton, rng=rng)
+    elif variant is GraveGuardVariant:
+        return NewPowerSelection(loadouts=powers.LoadoutGraveGuard, rng=rng)
+    elif variant is BurningSkeletonVariant:
+        return NewPowerSelection(loadouts=powers.LoadoutBurningSkeleton, rng=rng)
+    elif variant is FreezingSkeletonVariant:
+        return NewPowerSelection(loadouts=powers.LoadoutFreezingSkeleton, rng=rng)
+    else:
+        raise ValueError(f"Unrecognized variant: {variant.name}")
 
 
 def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -241,21 +120,23 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
         n_attack = 1
     elif variant is GraveGuardVariant:
         attack = weapon.SpearAndShield.with_display_name("Bone Spear")
-        secondary_damage_type = DamageType.Piercing
-        secondary_attack = weapon.Shortbow.with_display_name("Bone Bow")
+        secondary_damage_type = DamageType.Necrotic
+        secondary_attack = weapon.Shortbow.with_display_name("Bone Bow").copy(
+            damage_scalar=0.8
+        )
         n_attack = 2
     elif variant is BurningSkeletonVariant:
         attack = weapon.Greatsword.with_display_name("Burning Blade")
         secondary_damage_type = DamageType.Fire
         secondary_attack = spell.Firebolt.with_display_name("Hurl Flames").copy(
-            damage_scalar=0.9
+            damage_scalar=0.8
         )
         n_attack = 2
     elif variant is FreezingSkeletonVariant:
         attack = weapon.Greatsword.with_display_name("Freezing Blade")
         secondary_damage_type = DamageType.Cold
         secondary_attack = spell.Frostbolt.with_display_name("Deathly Freeze").copy(
-            damage_scalar=0.9
+            damage_scalar=0.8
         )
         n_attack = 2
 
@@ -306,9 +187,7 @@ def generate_skeleton(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BasicSkeletonWeights(rng)
-        if variant is SkeletonVariant
-        else _AdvancedSkeletonWeights(stats, variant, rng),
+        custom=_choose_powers(stats, variant, rng),
     )
     features += power_features
 

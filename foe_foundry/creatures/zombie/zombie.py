@@ -1,24 +1,23 @@
-from ..ac_templates import Unarmored
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature.zombie import ZombiePowers
-from ..powers.creature_type.undead import UndeadFortitude
-from ..powers.themed.diseased import DiseasedPowers
-from ..powers.themed.technique import GrapplingAttack
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..statblocks import MonsterDials
-from ._data import (
+import numpy as np
+
+from ...ac_templates import Unarmored
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 ZombieVariant = MonsterVariant(
     name="Zombie",
@@ -41,22 +40,21 @@ ZombieOgreVariant = MonsterVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in ZombiePowers:
-            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
-        elif p in DiseasedPowers:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
+def _custom_powers(
+    variant: MonsterVariant, cr: float, rng: np.random.Generator
+) -> NewPowerSelection:
+    if variant is ZombieVariant:
+        if cr < 1:
+            return NewPowerSelection(loadouts=powers.LoadoutZombie, rng=rng)
         else:
-            return CustomPowerWeight(weight=0.5)
-
-    def force_powers(self) -> list[Power]:
-        # All zombies have Undead Fortitude and a Grappling Attack
-        return [UndeadFortitude, GrapplingAttack]
+            return NewPowerSelection(loadouts=powers.LoadoutZombieBrute, rng=rng)
+    elif variant is ZombieOgreVariant:
+        if cr <= 2:
+            return NewPowerSelection(loadouts=powers.LoadoutZombieOgre, rng=rng)
+        else:
+            return NewPowerSelection(loadouts=powers.LoadoutZombieGiant, rng=rng)
+    else:
+        raise ValueError(f"Unknown zombie variant: {variant.name}")
 
 
 def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -160,7 +158,7 @@ def generate_zombie(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_custom_powers(variant, cr, rng),
     )
     features += power_features
 

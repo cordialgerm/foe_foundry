@@ -39,7 +39,7 @@ from .vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate
 from .wolf import WolfTemplate
-from .zombie import ZombieTemplate
+from .zombie.zombie import ZombieTemplate
 
 AllTemplates: list[MonsterTemplate] = [
     AnimatedArmorTemplate,

@@ -1,6 +1,6 @@
 ---
-title: Lich Statblocks and Lore for 5E | Foe Foundry
-short_title: Lich Statblocks and Lore
+title: Lich Statblocks and Encounters for 5E | Foe Foundry
+short_title: Lich Statblocks and Encounters
 description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/monsters/lich.webp
 json_ld: true
@@ -9,6 +9,10 @@ json_ld: true
 # Liches
 
 *Immortal Masters of Undeath and Arcana*
+
+- [Jump to Lich Statblocks](#lich-statblocks)
+- [Jump to Lich Encounters](#lich-encounter-ideas)
+- [Jump to Lich Adventures](#lich-adventure-ideas)
 
 **Liches** are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.
 
@@ -146,5 +150,3 @@ Here are a couple possible encounters for a [[Lich]]:
 - 4 level 13 PCs or 5 level 11 PCs can face off against a solo [[Lich]] if the PCs are reasonably well geared & optimized, but this is likely to be a deadly battle with a very high probability of at least one PC dying and a reasonably high chance of TPK. This is a good chance to introduce the lich to the party with a "test encounter", especially if there is a reason that the Lich needs to leave the party alive or can't stay long enough to fully finish them off.
 - A more realistic encounter would involve 4-5 level 15 PCs facing off against a [[Lich]] with suitable minions, including armies of [[Skeletons]] and [[Zombies]] as well as several moderate-CR threats such as [[Zombie Giants]], [[Wraiths]], and [[Ghosts]].
 - For higher-level parties, the [[Lich]] can be replaced with the [[Archlich]] and the minions can include an undead **Young Red Dragon** mount with the [[Protection]] trait (on top of the army of undead mentioned above)
-
----
