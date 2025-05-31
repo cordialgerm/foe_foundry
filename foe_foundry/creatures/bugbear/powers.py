@@ -3,7 +3,7 @@ from ...powers.creature import bugbear
 from ...powers.roles import ambusher, skirmisher
 from ...powers.themed import deathly, gadget, reckless, sneaky, technique
 
-PerksFreakeshlySkinny = [bugbear.FreakishlySkinny]
+PerksFreakishlySkinny = [bugbear.FreakishlySkinny]
 
 PerksStrangle = [
     reckless.Strangle,
