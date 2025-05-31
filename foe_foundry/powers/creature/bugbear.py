@@ -117,9 +117,8 @@ class _SurpriseStrangle(BugbearPower):
         feature = Feature(
             name="Surprise Strangle",
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} attempts to strangle a creature it has {grappled}. \
-                The target must make a DC {dc} Strength saving throw. \
-                On a failure, the target takes {dmg.description} bludgeoning damage and cannot speak or cast spells with verbal components until the end of its next turn.",
+            description=f"Immediately after hitting a creature, or if it has {grappled} a creature, {stats.selfref} attempts to strangle that creature. \
+                The target must make a DC {dc} Strength saving throw. On a failure, the target is {grappled}, takes {dmg.description} bludgeoning damage, and cannot speak or cast spells with verbal components until the end of its next turn.",
         )
 
         return [feature]
