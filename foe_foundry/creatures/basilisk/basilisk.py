@@ -1,45 +1,23 @@
-import numpy as np
-
-from ..ac_templates import NaturalPlating
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import NaturalPlating
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import (
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature import basilisk
-from ..powers.creature_type import beast
-from ..powers.roles import controller
-from ..powers.spellcaster import SpellcasterPowers
-from ..powers.themed import (
-    anti_ranged,
-    bestial,
-    breath,
-    diseased,
-    flying,
-    monstrous,
-    petrifying,
-    poison,
-    reckless,
-    serpentine,
-    technique,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 BasiliskVariant = MonsterVariant(
     name="Basilisk",
@@ -51,64 +29,17 @@ BasiliskVariant = MonsterVariant(
 )
 
 
-class _BasiliskWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-    ):
-        self.stats = stats
-        self.variant = variant
-        self.rng = rng
-
-        petrifying_powers = petrifying.PetrifyingPowers
-        index = rng.choice(len(petrifying_powers))
-        self.petrifying_power = petrifying_powers[index]
-
-    def force_powers(self) -> list[Power]:
-        force = [self.petrifying_power]
-        if self.stats.cr >= 8:
-            force += [basilisk.BasiliskBrood]
-
-        return force
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            basilisk.StoneMolt,
-            basilisk.StoneEater,
-            anti_ranged.AdaptiveCamouflage,
-            bestial.RetributiveStrike,
-            beast.WildInstinct,
-            beast.FeedingFrenzy,
-            bestial.BurrowingAmbush,
-            beast.BestialRampage,
-            monstrous.Rampage,
-            monstrous.TearApart,
-            monstrous.JawClamp,
-            monstrous.Frenzy,
-            poison.PoisonousBlood,
-            reckless.Charger,
-            tough.MagicResistance,
-            tough.LimitedMagicImmunity,
-            breath.PoisonBreath,
-            breath.NerveGasBreath,
-            technique.BleedingAttack,
-            technique.ProneAttack,
-            technique.PoisonedAttack,
-            serpentine.SerpentineHiss,
-        ]
-
-        suppress = (
-            flying.FlyingPowers
-            + SpellcasterPowers
-            + controller.ControllingSpells
-            + diseased.DiseasedPowers
+def _choose_powers(
+    settings: GenerationSettings,
+) -> NewPowerSelection:
+    if settings.monster_key == "basilisk":
+        return NewPowerSelection(loadouts=powers.LoadoutBasilisk, rng=settings.rng)
+    elif settings.monster_key == "basilisk-broodmother":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBasiliskBroodmother, rng=settings.rng
         )
-
-        if p in suppress or p in petrifying.PetrifyingPowers:
-            return CustomPowerWeight(0, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
+    else:
+        raise ValueError(f"Unknown basilisk variant: {settings.monster_key}")
 
 
 def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -168,7 +99,7 @@ def generate_basilisk(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BasiliskWeights(stats, variant, rng),
+        custom=_choose_powers(settings),
     )
     features += power_features
 
