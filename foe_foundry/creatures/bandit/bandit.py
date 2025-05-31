@@ -50,7 +50,7 @@ def _custom_powers(
     species: CreatureSpecies,
     rng: np.random.Generator,
 ) -> NewPowerSelection:
-    if variant is not HumanSpecies:
+    if species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{species.name.title()} Bandit Powers",
             flavor_text=f"{species.name.title()} Bandit Powers",
