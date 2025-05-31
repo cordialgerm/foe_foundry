@@ -1,99 +1,50 @@
-from ..ac_templates import UnholyArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..movement import Movement
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature import balor
-from ..powers.creature_type import demon, fiend
-from ..powers.roles import bruiser, leader
-from ..powers.themed import (
-    anti_magic,
-    breath,
-    chaotic,
-    cruel,
-    cursed,
-    deathly,
-    domineering,
-    fearsome,
-    flying,
-    reckless,
-    technique,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ._data import (
+import numpy as np
+
+from ...ac_templates import UnholyArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import BaseStatblock, base_stats
+from . import powers
 
 BalorVariant = MonsterVariant(
     name="Balor",
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames.",
     monsters=[
         Monster(name="Balor", cr=19, srd_creatures=["Balor"]),
+    ],
+)
+
+BalorGeneralVariant = MonsterVariant(
+    name="Balor General",
+    description="A balor general is a balor that has been granted the title of general by a demon lord. It is a powerful and respected leader among demons, commanding legions of lesser demons in the name of its master.",
+    monsters=[
         Monster(name="Balor Dreadlord", cr=23, is_legendary=True),
     ],
 )
 
 
-class _BalorWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.force_powers():
-            return CustomPowerWeight(
-                0, ignore_usual_requirements=True
-            )  # already forced
-
-        powers = set(fiend.FiendishPowers) | set(demon.DemonPowers)
-        powers.discard(fiend.FiendishTeleportation)  # forced
-        powers.discard(fiend.FieryTeleportation)  # already have teleportation
-        powers.discard(demon.DemonicBite)  # already have multiple different attacks
-
-        powers.add(leader.Intimidate)
-        powers.add(bruiser.CleavingBlows)
-        powers.add(bruiser.StunningBlow)
-        powers.add(anti_magic.SpellEater)
-        powers.add(anti_magic.SpellStealer)
-        powers.add(anti_magic.TwistedMind)
-        powers.add(anti_magic.RuneDrinker)
-        powers.add(breath.InfernoBreath)
-        powers.add(breath.LightningBreath)
-        powers.add(chaotic.EldritchBeacon)
-        powers.update(cruel.CruelPowers)
-        powers.add(cursed.RejectDivinity)
-        powers.add(cursed.VoidSiphon)
-        powers.add(deathly.DevourSoul)
-        powers.add(domineering.CommandingPresence)
-        powers.add(fearsome.FearsomeRoar)
-        powers.add(flying.WingedCharge)
-        powers.add(leader.FanaticFollowers)
-        powers.add(tough.LimitedMagicImmunity)
-        powers.add(reckless.WildCleave)
-        powers.add(technique.DazingAttacks)
-        powers.add(technique.BurningAttack)
-        powers.add(technique.ProneAttack)
-        powers.add(technique.GrapplingAttack)
-        powers.add(technique.FrighteningAttack)
-        powers.add(technique.ShockingAttack)
-        powers.add(technique.OverpoweringStrike)
-
-        if p in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return [fiend.FiendishTeleportation, tough.MagicResistance, balor.FlameWhip]
+def _custom_powers(
+    stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
+) -> NewPowerSelection:
+    if variant is BalorVariant:
+        return NewPowerSelection(powers.LoadoutBalor, rng=rng)
+    elif variant is BalorGeneralVariant:
+        return NewPowerSelection(powers.LoadoutBalorGeneral, rng=rng)
+    else:
+        raise ValueError(f"Unknown variant: {variant.name}")
 
 
 def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -181,7 +132,7 @@ def generate_balor(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BalorWeights(stats, variant),
+        custom=_custom_powers(stats, variant, rng),
     )
     features += power_features
 
@@ -197,7 +148,7 @@ BalorTemplate: MonsterTemplate = MonsterTemplate(
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames. Demon lords and evil gods harness balors' rage by making balors commanders of armies or guardians of grave secrets.",
     environments=["Planar (Abyss)"],
     treasure=[],
-    variants=[BalorVariant],
+    variants=[BalorVariant, BalorGeneralVariant],
     species=[],
     callback=generate_balor,
 )
