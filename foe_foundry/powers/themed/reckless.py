@@ -205,8 +205,9 @@ class _RecklessFlurry(RecklessPower):
         feature = Feature(
             name="Reckless Flurry",
             action=ActionType.Action,
-            recharge=5,
+            recharge=6,
             description=f"{stats.selfref.capitalize()} makes a reckless flurry of {attacks} {attack_name} attacks. \
+                It may not hit the same target more than twice with this flurry. \
                 Attacks against {stats.selfref} have advantage until the end of {stats.selfref}'s next turn.",
         )
         return [feature]
