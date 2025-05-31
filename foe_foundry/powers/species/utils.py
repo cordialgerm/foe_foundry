@@ -9,8 +9,16 @@ from ..power import (
 from ._all import SpeciesPowers
 
 
-def powers_for_role(species: str, role: MonsterRole) -> List[Power]:
+def powers_for_role(
+    species: str, role: MonsterRole | list[MonsterRole] | set[MonsterRole]
+) -> List[Power]:
     """Filters powers to those that are suitable for the given role."""
+
+    if isinstance(role, (list, set)):
+        desired_roles = set(role)
+    else:
+        desired_roles = {role}
+
     filtered_powers = [
         p for p in SpeciesPowers if getattr(p, "species", None) == species
     ]
@@ -24,7 +32,7 @@ def powers_for_role(species: str, role: MonsterRole) -> List[Power]:
             score_args.get("bonus_roles", set())
         )
 
-        if role in roles:
+        if any(desired_roles.union(roles)):
             powers.append(p)
 
     return powers
