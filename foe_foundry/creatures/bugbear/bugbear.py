@@ -1,27 +1,19 @@
-import numpy as np
-
-from foe_foundry.powers.power import Power
-from foe_foundry.powers.selection.custom import CustomPowerWeight
-
-from ..ac_templates import HideArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..powers import LOW_POWER, CustomPowerSelection, select_powers
-from ..powers.creature import bugbear
-from ..powers.roles import ambusher, bruiser, skirmisher
-from ..powers.themed import deathly, gadget, reckless, sneaky, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import HideArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 BugbearVariant = MonsterVariant(
     name="Bugbear",
@@ -45,64 +37,15 @@ BugbearVariant = MonsterVariant(
 )
 
 
-class _BugbearPowers(CustomPowerSelection):
-    def __init__(
-        self,
-        variant: MonsterVariant,
-        stats: BaseStatblock,
-        cr: float,
-        rng: np.random.Generator,
-    ):
-        self.variant = variant
-        self.stats = stats
-        self.cr = cr
-        self.rng = rng
-
-        strangle_powers = [
-            reckless.Strangle,
-            bugbear.Strangle,
-            bugbear.SurpriseSnatch,
-            technique.ExpertBrawler,
-        ]
-        strangle_power_index = self.rng.choice(len(strangle_powers))
-        self.strangle_powers = strangle_powers
-        self.strangle_power = strangle_powers[strangle_power_index]
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        suppress = self.strangle_powers
-
-        powers = [
-            sneaky.CheapShot,
-            sneaky.ExploitAdvantage,
-            sneaky.SneakyStrike,
-            sneaky.Vanish,
-            technique.GrapplingAttack,
-            bruiser.CleavingBlows,
-            ambusher.DeadlyAmbusher,
-            ambusher.StealthySneak,
-            skirmisher.HarassingRetreat,
-            bugbear.SnatchAndGrab,
-        ]
-
-        additional_powers = gadget.NetPowers + [gadget.SmokeBomb]
-
-        if power in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-        elif power in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif power in additional_powers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        force = [bugbear.FreakishlySkinny, self.strangle_power]
-        if self.cr >= 5:
-            force.append(deathly.ShadowWalk)
-        return force
-
-    def power_delta(self) -> float:
-        return LOW_POWER - 0.25 * sum(p.power_level for p in self.force_powers())
+def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "bugbear":
+        return NewPowerSelection(powers.LoadoutBugbear, settings.rng)
+    elif settings.monster_key == "bugbear-brute":
+        return NewPowerSelection(powers.LoadoutBugbearBrute, settings.rng)
+    elif settings.monster_key == "bugbear-shadowstalker":
+        return NewPowerSelection(powers.LoadoutBugbearShadowstalker, settings.rng)
+    else:
+        raise ValueError(f"Unknown bugbear variant: {settings.monster_key}")
 
 
 def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -173,7 +116,7 @@ def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BugbearPowers(variant, stats, cr, rng),
+        custom=_choose_powers(settings),
     )
     features += power_features
 
