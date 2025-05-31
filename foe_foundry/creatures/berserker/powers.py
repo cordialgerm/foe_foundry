@@ -46,7 +46,7 @@ LoadoutBerserker = [
         locked=True,
     ),
     PowerLoadout(
-        name="Unstoppable Offsense",
+        name="Unstoppable Offense",
         flavor_text="Nothing can stop the berserker's charge",
         powers=PerksUnstoppableOffense,
         replace_with_species_powers=True,
