@@ -32,7 +32,7 @@ def powers_for_role(
             score_args.get("bonus_roles", set())
         )
 
-        if any(desired_roles.union(roles)):
+        if desired_roles & roles:
             powers.append(p)
 
     return powers
