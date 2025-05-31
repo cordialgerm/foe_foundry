@@ -1161,13 +1161,12 @@ class _Sharpshooter(PowerWithStandardScoring):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = stats.attack.range_max or stats.attack.range
-        dmg = stats.target_value(target=1.5)
+        dmg = stats.target_value(dpr_proportion=0.8)
         dmg_type = stats.attack.damage.damage_type
         dazed = conditions.Dazed()
         feature = Feature(
             name="Sharpshooter's Shot",
             action=ActionType.Action,
-            replaces_multiattack=2,
             recharge=5,
             description=f"{stats.selfref.capitalize()} fires a deadly shot at a creature it can see within {distance} ft. The target must make a DC {dc} Dexterity saving throw. \
                 On a failure, it takes {dmg.description} {dmg_type} damage and is {dazed.caption} until the end of its next turn. {dazed.description_3rd}",

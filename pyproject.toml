@@ -45,8 +45,7 @@ mkdocs-minify-plugin = "^0.8.0"
 mkdocs-backlinks = "^0.9.1"
 
 [tool.poetry.scripts]
-foe_foundry_nl = "foe_foundry_nl.__main__:cli"
-ffnl = "foe_foundry_nl.__main__:cli"
+foe_foundry_site = "foe_foundry_site.__main__:main"
 
 
 [tool.poetry.group.dev.dependencies]

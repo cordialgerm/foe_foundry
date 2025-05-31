@@ -1,26 +1,25 @@
-from foe_foundry.powers.power import Power
-from foe_foundry.powers.selection.custom import CustomPowerWeight
+import numpy as np
 
-from ..ac_templates import StuddedLeatherArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import CustomPowerSelection, PowerType, select_powers
-from ..powers.roles import artillery, leader
-from ..powers.themed import gadget, honorable, sneaky, technique, thuggish
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import MonsterDials
-from ._data import (
+from ...ac_templates import StuddedLeatherArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import BaseStatblock, base_stats
+from ..species import AllSpecies, CreatureSpecies, HumanSpecies
+from . import powers
 
 BanditVariant = MonsterVariant(
     name="Bandit",
@@ -45,49 +44,47 @@ BanditCaptainVariant = MonsterVariant(
 )
 
 
-class _BanditPowers(CustomPowerSelection):
-    def __init__(self, variant: MonsterVariant, stats: BaseStatblock):
-        self.variant = variant
-        self.stats = stats
+def _custom_powers(
+    stats: BaseStatblock,
+    variant: MonsterVariant,
+    species: CreatureSpecies,
+    rng: np.random.Generator,
+) -> NewPowerSelection:
+    if species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{species.name.title()} Bandit Powers",
+            flavor_text=f"{species.name.title()} Bandit Powers",
+            powers=powers_for_role(species=species.key, role=MonsterRole.Artillery),
+        )
+    else:
+        species_loadout = None
 
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        captain_powers = [
-            leader.CommandTheAttack,
-            leader.FanaticFollowers,
-            leader.StayInFormation,
-        ] + thuggish.ThuggishPowers
-
-        high_cr_powers = [leader.Intimidate]
-
-        standard_powers = [
-            sneaky.CheapShot,
-            artillery.SuppresingFire,
-            technique.VexingAttack,
-            technique.Sharpshooter,
-            sneaky.ExploitAdvantage,
-            artillery.Overwatch,
-            artillery.FocusShot,
-            gadget.SmokeBomb,
-        ]
-
-        suppress = honorable.HonorablePowers
-
-        powers = []
-        powers += standard_powers
-        if self.stats.cr >= 1:
-            powers += high_cr_powers
-        if self.variant is BanditCaptainVariant:
-            powers += captain_powers
-
-        if power in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif power in powers:
-            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
-        elif power.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
+    if variant is BanditVariant and stats.cr < 1:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBandit,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    elif variant is BanditVariant and stats.cr >= 1:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBanditVeteran,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    elif variant is BanditCaptainVariant and stats.cr <= 2:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBanditCaptain,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    elif variant is BanditCaptainVariant and stats.cr > 2:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBanditLegend,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    else:
+        raise ValueError(f"Unknown bandit variant: {variant}")
 
 
 def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -198,7 +195,7 @@ def generate_bandit(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_BanditPowers(variant, stats),
+        custom=_custom_powers(stats, variant, species, rng),
     )
     features += power_features
 

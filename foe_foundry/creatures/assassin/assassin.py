@@ -1,60 +1,68 @@
-from ..ac_templates import StuddedLeatherArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
+import numpy as np
+
+from ...ac_templates import StuddedLeatherArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import (
+    NewPowerSelection,
+    PowerLoadout,
     select_powers,
 )
-from ..powers.roles.skirmisher import CunningAction
-from ..powers.themed.anti_magic import SealOfSilence
-from ..powers.themed.anti_ranged import HardToPinDown
-from ..powers.themed.clever import IdentifyWeaknes
-from ..powers.themed.cruel import BrutalCritical
-from ..powers.themed.fast import Evasion, NimbleReaction
-from ..powers.themed.fearsome import DreadGaze
-from ..powers.themed.gadget import GrenadePowers
-from ..powers.themed.technique import PoisonedAttack
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import MonsterDials
-from ._data import (
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...statblocks import BaseStatblock, MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import base_stats
+from ..species import AllSpecies, CreatureSpecies, HumanSpecies
+from . import powers
 
 
-class _AssassinPowers(CustomPowerSelection):
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        custom_powers = [
-            BrutalCritical,
-            IdentifyWeaknes,
-            SealOfSilence,
-            HardToPinDown,
-            Evasion,
-            NimbleReaction,
-            DreadGaze,
-            PoisonedAttack,
-        ] + GrenadePowers
-        if power in custom_powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif power.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.75, ignore_usual_requirements=False)
+def _choose_powers(
+    stats: BaseStatblock,
+    variant: MonsterVariant,
+    species: CreatureSpecies,
+    rng: np.random.Generator,
+) -> NewPowerSelection:
+    cr = stats.cr
+    if species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{species.name} Species Powers",
+            flavor_text=f"{species.name} assassin powers",
+            powers=powers_for_role(
+                species=species.name.lower(),
+                role={MonsterRole.Ambusher, MonsterRole.Skirmisher},
+            ),
+        )
+    else:
+        species_loadout = None
 
-    def force_powers(self) -> list[Power]:
-        return [CunningAction]
+    if cr <= 4:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutContractKiller,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    elif cr <= 8:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutAssassin,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
+    else:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutLegendaryAssassin,
+            rng=rng,
+            species_loadout=species_loadout,
+        )
 
 
 AssassinVariant = MonsterVariant(
@@ -171,7 +179,7 @@ def generate_assassin(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_AssassinPowers(),
+        custom=_choose_powers(stats, variant, species, rng),
     )
     features += power_features
 
