@@ -1,40 +1,23 @@
-from ..ac_templates import Unarmored, UnholyArmor
-from ..attack_template import natural, spell
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import Unarmored, UnholyArmor
+from ...attack_template import natural, spell
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import (
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature import ghoul
-from ..powers.creature_type import undead
-from ..powers.roles import bruiser, skirmisher
-from ..powers.spellcaster import necromancer
-from ..powers.themed import (
-    cruel,
-    cursed,
-    deathly,
-    diseased,
-    fearsome,
-    poison,
-    reckless,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..skills import Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...role_types import MonsterRole
+from ...skills import Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 GhoulVariant = MonsterVariant(
     name="Ghoul",
@@ -63,88 +46,15 @@ GravelordVariant = MonsterVariant(
 )
 
 
-class _GhoulWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [undead.StenchOfDeath, poison.VileVomit, poison.PoisonousBurst]
-
-        # ghouls can spread physical diseases
-        desired_diseases = {
-            diseased.FilthFever,
-            diseased.FleshRot,
-            diseased.BlindingSickness,
-        }
-        disease_powers = [
-            p
-            for p in diseased.ToxicBreathPowers
-            if p.disease in desired_diseases  # type: ignore
-        ]
-
-        suppress = [
-            undead.UndeadFortitude,
-            fearsome.MindShatteringScream,
-            fearsome.HorrifyingVisage,
-        ]
-
-        if self.variant is GravelordVariant:
-            powers += [
-                deathly.EndlessServitude,
-                deathly.FleshPuppets,
-                undead.StygianBurst,
-                cursed.AuraOfDespair,
-                cursed.BestowCurse,
-                cursed.RejectDivinity,
-                cursed.UnholyAura,
-                cursed.VoidSiphon,
-            ]
-            secondary_powers = []
-            suppress += diseased.DiseasedPowers
-        else:
-            powers += [
-                bruiser.Rend,
-                cruel.BloodiedFrenzy,
-                reckless.BloodiedRage,
-                reckless.Charger,
-                reckless.RecklessFlurry,
-                skirmisher.HarassingRetreat,
-            ]
-            secondary_powers = disease_powers
-
-        if self.variant is GravelordVariant:
-            suppress += [deathly.WitheringBlow]
-
-        if p in suppress:
-            return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
-        elif p in powers:
-            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
-        elif p in secondary_powers:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(weight=0.25)
-
-    def force_powers(self) -> list[Power]:
-        if self.variant is GhoulVariant:
-            return [technique.WeakeningAttack, ghoul.Cannibal]
-        elif self.variant is GhastVariant:
-            return [technique.WeakeningAttack, ghoul.Cannibal, undead.StenchOfDeath]
-        elif self.variant is GravelordVariant:
-            return [
-                technique.WeakeningAttack,
-                ghoul.Cannibal,
-                undead.StenchOfDeath,
-                necromancer.NecromancerMaster,
-            ]
-        else:
-            raise ValueError(f"Unknown ghoul variant: {self.variant}")
-
-    def power_delta(self) -> float:
-        if self.variant is GravelordVariant:
-            return 0.0  # gravelord is spellcaster with lots of stuff already
-        else:
-            return MEDIUM_POWER if self.stats.cr <= 1 else LOW_POWER
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "ghoul":
+        return NewPowerSelection(powers.LoadoutGhoul, settings.rng)
+    elif settings.monster_key == "ghast":
+        return NewPowerSelection(powers.LoadoutGhast, settings.rng)
+    elif settings.monster_key == "ghast-gravelord":
+        return NewPowerSelection(powers.LoadoutGhastGravelord, settings.rng)
+    else:
+        raise ValueError(f"Unknown ghoul variant: {settings.monster_key}")
 
 
 def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -251,7 +161,7 @@ def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_GhoulWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 
