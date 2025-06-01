@@ -5,7 +5,7 @@ from .balor import BalorTemplate
 from .bandit import BanditTemplate
 from .basilisk import BasiliskTemplate
 from .berserker import BerserkerTemplate
-from .bugbear.bugbear import BugbearTemplate
+from .bugbear import BugbearTemplate
 from .chimera import ChimeraTemplate
 from .cultist import CultistTemplate
 from .dire_bunny import DireBunnyTemplate
