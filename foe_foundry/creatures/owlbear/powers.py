@@ -51,7 +51,7 @@ LoadoutOwlbear = LoadoutOwlbearCub + [
         powers=PerksTerritorial,
     ),
     PowerLoadout(
-        name="Stubbon and Enraged",
+        name="Stubborn and Enraged",
         flavor_text="Enraged when wounded, striking back ferociously",
         powers=PerksEnrage,
     ),
