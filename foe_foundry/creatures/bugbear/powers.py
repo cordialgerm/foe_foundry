@@ -37,7 +37,7 @@ LoadoutBugbear = [
     PowerLoadout(
         name="Freakishly Skinny",
         flavor_text="Freakishly skinny yet surprisingly strong",
-        powers=PerksFreakeshlySkinny,
+        powers=PerksFreakishlySkinny,
     ),
     PowerLoadout(
         name="Snatch 'n Grab",
