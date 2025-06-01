@@ -1,29 +1,20 @@
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..movement import Movement
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    flags,
-    select_powers,
-)
-from ..powers.creature import manticore
-from ..powers.creature_type import beast
-from ..powers.themed import bestial, clever, flying, monstrous
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...movement import Movement
+from ...powers import NewPowerSelection, flags, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 ManticoreVariant = MonsterVariant(
     name="Manticore",
@@ -35,38 +26,13 @@ ManticoreVariant = MonsterVariant(
 )
 
 
-class _ManticoreWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, cr: float):
-        self.stats = stats
-        self.cr = cr
-
-        self.powers = [
-            beast.FeedingFrenzy,
-            beast.BestialRampage,
-            beast.WildInstinct,
-            flying.WingedRetreat,
-            flying.WingedCharge,
-            flying.Flyby,
-            bestial.MarkTheMeal,
-            clever.IdentifyWeaknes,
-            monstrous.Frenzy,
-            monstrous.LingeringWound,
-            monstrous.Pounce,
-        ]
-        self.force = [manticore.SpikeVolley, manticore.CruelJeer]
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return -0.25 * sum(p.power_level for p in self.force)
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.powers:
-            return CustomPowerWeight(1.0, ignore_usual_requirements=True)
-        else:
-            # monstrosity power selection is not very good - use the hard-coded ones
-            return CustomPowerWeight(-1)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "manticore":
+        return NewPowerSelection(powers.LoadoutManticore, settings.rng)
+    elif settings.monster_key == "manticore-ravager":
+        return NewPowerSelection(powers.LoadoutManticoreRavager, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_manticore(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -135,7 +101,7 @@ def generate_manticore(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_ManticoreWeights(stats, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 

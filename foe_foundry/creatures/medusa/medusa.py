@@ -1,34 +1,24 @@
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural, spell
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural, weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import (
+    NewPowerSelection,
     flags,
     select_powers,
 )
-from ..powers.roles import ambusher, artillery, controller, skirmisher
-from ..powers.themed import (
-    cursed,
-    petrifying,
-    poison,
-    serpentine,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 MedusaVariant = MonsterVariant(
     name="Medusa",
@@ -40,54 +30,13 @@ MedusaVariant = MonsterVariant(
 )
 
 
-class _MedusaWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, is_legendary: bool):
-        self.stats = stats
-        self.is_legendary = is_legendary
-
-    def force_powers(self) -> list[Power]:
-        if self.is_legendary:
-            return [
-                petrifying.PetrifyingGaze
-            ]  # no need for  nimble escape because of legendary actions
-        else:
-            return [petrifying.PetrifyingGaze, skirmisher.NimbleEscape]
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            technique.PoisonedAttack,
-            technique.WeakeningAttack,
-            technique.SlowingAttack,
-            serpentine.SerpentineHiss,
-            serpentine.InterruptingHiss,
-            skirmisher.HarassingRetreat,
-            ambusher.StealthySneak,
-            poison.ToxicPoison,
-            poison.WeakeningPoison,
-            poison.PoisonousBlood,
-            poison.VenemousMiasma,
-            artillery.IndirectFire,
-        ]
-
-        tier2_powers = [
-            artillery.FocusShot,
-            artillery.Overwatch,
-            artillery.SuppresingFire,
-            controller.Eyebite,
-            controller.TongueTwister,
-            cursed.DisfiguringCurse,
-            cursed.RejectDivinity,
-        ]
-
-        if p in powers:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in tier2_powers:
-            # ironically we want to boost these powers more because their default weights are low
-            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
-        else:
-            # Medusa as a Monstrosity ends up getting a bunch of weird default powers
-            # Just use the ones assigned above
-            return CustomPowerWeight(0, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "medusa":
+        return NewPowerSelection(powers.LoadoutMedusa, settings.rng)
+    elif settings.monster_key == "medusa-queen":
+        return NewPowerSelection(powers.LoadoutMedusaQueen, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_medusa(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -129,7 +78,7 @@ def generate_medusa(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = stats.add_ac_template(NaturalArmor)
 
     # ATTACKS
-    attack = spell.Poisonbolt.with_display_name("Poison Ray")
+    attack = weapon.Longbow.with_display_name("Poisoned Arrows")
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
@@ -168,7 +117,7 @@ def generate_medusa(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_MedusaWeights(stats, is_legendary),
+        custom=choose_powers(settings),
     )
     features += power_features
 
