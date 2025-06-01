@@ -49,7 +49,7 @@ LoadoutMedusa = [
     ),
     PowerLoadout(
         name="Nimble Escape",
-        flavor_text="Slithering swifltly to safety",
+        flavor_text="Slithering swiftly to safety",
         powers=PerksNimble,
     ),
     PowerLoadout(
