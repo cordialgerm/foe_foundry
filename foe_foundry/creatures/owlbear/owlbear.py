@@ -1,36 +1,24 @@
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..movement import Movement
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...movement import Movement
+from ...powers import (
+    NewPowerSelection,
     flags,
     select_powers,
 )
-from ..powers.roles import bruiser
-from ..powers.themed import (
-    bestial,
-    cruel,
-    diseased,
-    fearsome,
-    monstrous,
-    reckless,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 OwlbearVariant = MonsterVariant(
     name="Owlbear",
@@ -45,42 +33,15 @@ OwlbearVariant = MonsterVariant(
 )
 
 
-class _OwlbearWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock):
-        self.stats = stats
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        suppress = diseased.DiseasedPowers
-
-        powers = [
-            bruiser.Rend,
-            bruiser.CleavingBlows,
-            bestial.OpportuneBite,
-            bestial.RetributiveStrike,
-            cruel.BloodiedFrenzy,
-            cruel.BrutalCritical,
-            fearsome.FearsomeRoar,
-            monstrous.Pounce,
-            monstrous.LingeringWound,
-            monstrous.Rampage,
-            monstrous.Frenzy,
-            monstrous.TearApart,
-            reckless.Charger,
-            reckless.Overrun,
-            reckless.BloodiedRage,
-            technique.BleedingAttack,
-            technique.ProneAttack,
-            technique.PushingAttack,
-            technique.GrazingAttack,
-        ]
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif p in powers:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        else:
-            # monstrosity powers can get a little weird
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "owlbear-cub":
+        return NewPowerSelection(powers.LoadoutOwlbearCub, settings.rng)
+    elif settings.monster_key == "owlbear":
+        return NewPowerSelection(powers.LoadoutOwlbear, settings.rng)
+    elif settings.monster_key == "savage-owlbear":
+        return NewPowerSelection(powers.LoadoutSavageOwlbear, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}. ")
 
 
 def generate_owlbear(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -151,7 +112,7 @@ def generate_owlbear(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_OwlbearWeights(stats),
+        custom=choose_powers(settings),
     )
     features += power_features
 

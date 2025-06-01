@@ -1,32 +1,25 @@
-import numpy as np
-
-from ..ac_templates import NaturalPlating
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import Condition
-from ..powers import (
+from ...ac_templates import NaturalPlating
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import Condition
+from ...powers import (
     MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature import gorgon
-from ..powers.creature_type import beast, construct
-from ..powers.roles import bruiser, defender
-from ..powers.themed import bestial, cruel, monstrous, reckless, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock, MonsterDials
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 GorgonVariant = MonsterVariant(
     name="Gorgon",
@@ -37,46 +30,11 @@ GorgonVariant = MonsterVariant(
 )
 
 
-class _GorgonWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, rng: np.random.Generator):
-        self.stats = stats
-        self.rng = rng
-
-        techniques = [technique.ProneAttack, technique.PushingAttack]
-        i = rng.choice(len(techniques))
-        self.technique = techniques[i]
-
-    def force_powers(self) -> list[Power]:
-        return gorgon.GorgonPowers + [
-            beast.Gore,
-            self.technique,
-            construct.ImmutableForm,
-        ]
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            bestial.Trample,
-            construct.ConstructedGuardian,
-            construct.ExplosiveCore,
-            construct.ProtectivePlating,
-            construct.SpellStoring,
-            bruiser.CleavingBlows,
-            bruiser.StunningBlow,
-            defender.SpellReflection,
-            defender.ZoneOfControl,
-            monstrous.Frenzy,
-            monstrous.Rampage,
-            cruel.BrutalCritical,
-            reckless.Charger,
-            reckless.RelentlessEndurance,
-            reckless.Toss,
-            reckless.WildCleave,
-        ]
-
-        if p in powers:
-            return CustomPowerWeight(3, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "gorgon":
+        return NewPowerSelection(powers.LoadoutGorgon, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}. ")
 
 
 def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -121,6 +79,9 @@ def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
 
+    # fewer, more powerful attacks
+    stats = stats.with_set_attacks(2)
+
     # ROLES
     stats = stats.with_roles(
         primary_role=MonsterRole.Bruiser,
@@ -153,7 +114,7 @@ def generate_gorgon(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_GorgonWeights(stats, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 

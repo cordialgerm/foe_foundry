@@ -14,7 +14,7 @@ from .gelatinous_cube import GelatinousCubeTemplate
 from .ghoul import GhoulTemplate
 from .goblin import GoblinTemplate
 from .golem import GolemTemplate
-from .gorgon import GorgonTemplate
+from .gorgon.gorgon import GorgonTemplate
 from .guard import GuardTemplate
 from .hydra import HydraTemplate
 from .knight import KnightTemplate
