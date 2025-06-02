@@ -1086,11 +1086,20 @@ class _OverpoweringStrike(PowerWithStandardScoring):
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.7, force_die=Die.d12)
         dmg_type = stats.attack.damage.damage_type
+
+        if stats.cr < 1:
+            recharge = None
+            uses = 1
+        else:
+            recharge = 5
+            uses = None
+
         feature = Feature(
             name="Overpowering Strike",
             action=ActionType.Action,
             replaces_multiattack=2,
-            recharge=5,
+            recharge=recharge,
+            uses=uses,
             description=f"{stats.selfref.capitalize()} makes an overpowering strike against a creature within 5 feet. The target must make a DC {dc} Strength saving throw. \
                 On a failure, it takes {dmg.description} {dmg_type} damage and is knocked {Condition.Prone.caption}. On a success, it instead takes half damage.",
         )

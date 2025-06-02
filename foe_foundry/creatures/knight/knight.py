@@ -2,10 +2,8 @@ from ...ac_templates import PlateArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import (
-    NewPowerSelection,
-    select_powers,
-)
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -38,14 +36,32 @@ KnightVariant = MonsterVariant(
 
 
 def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(
+                species=settings.species.name,
+                role={MonsterRole.Defender, MonsterRole.Soldier, MonsterRole.Bruiser},
+            ),
+        )
+    else:
+        species_loadout = None
+
     if settings.monster_key == "knight":
-        return NewPowerSelection(powers.LoadoutKnight, settings.rng)
+        return NewPowerSelection(powers.LoadoutKnight, settings.rng, species_loadout)
     elif settings.monster_key == "knight-of-the-realm":
-        return NewPowerSelection(powers.LoadoutKnightOfTheRealm, settings.rng)
+        return NewPowerSelection(
+            powers.LoadoutKnightOfTheRealm, settings.rng, species_loadout
+        )
     elif settings.monster_key == "questing-knight":
-        return NewPowerSelection(powers.LoadoutQuestingKnight, settings.rng)
+        return NewPowerSelection(
+            powers.LoadoutQuestingKnight, settings.rng, species_loadout
+        )
     elif settings.monster_key == "paragon-knight":
-        return NewPowerSelection(powers.LoadoutParagonKnight, settings.rng)
+        return NewPowerSelection(
+            powers.LoadoutParagonKnight, settings.rng, species_loadout
+        )
     else:
         raise ValueError(f"Unknown knight variant: {settings.monster_key}")
 
