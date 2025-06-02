@@ -179,10 +179,18 @@ class _Overwatch(ArtilleryPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         range = stats.attack.range or 60
 
+        if stats.cr < 1:
+            recharge = None
+            uses = 1
+        else:
+            recharge = 4
+            uses = None
+
         feature = Feature(
             name="Overwatch",
             action=ActionType.Reaction,
-            recharge=4,
+            recharge=recharge,
+            uses=uses,
             description=f"When a hostile creature within {range} feet of {stats.roleref} moves and {stats.roleref} can see that movement, it can make a ranged attack against the target.",
         )
         return [feature]

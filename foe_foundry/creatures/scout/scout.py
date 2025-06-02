@@ -1,51 +1,25 @@
-from ..ac_templates import LeatherArmor, StuddedLeatherArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
+from ...ac_templates import LeatherArmor, StuddedLeatherArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...powers import (
+    NewPowerSelection,
+    PowerLoadout,
     select_powers,
 )
-from ..powers.roles.artillery import FocusShot
-from ..powers.roles.skirmisher import HarassingRetreat
-from ..powers.themed.clever import IdentifyWeaknes
-from ..powers.themed.gadget import PotionOfHealing, SmokeBomb
-from ..powers.themed.sneaky import Vanish
-from ..powers.themed.trap import TrapPowers
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ._data import (
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
-
-
-class _ScoutWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in {HarassingRetreat, Vanish, FocusShot, IdentifyWeaknes}:
-            return CustomPowerWeight(weight=2, ignore_usual_requirements=True)
-        elif p in TrapPowers:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p in {SmokeBomb, PotionOfHealing}:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(1.5, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
-
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 ScoutVariant = MonsterVariant(
     name="Scout",
@@ -71,6 +45,51 @@ CommanderVariant = MonsterVariant(
         Monster(name="First Scout", cr=7, is_legendary=True),
     ],
 )
+
+
+def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(
+                species=settings.species.name,
+                role={
+                    MonsterRole.Ambusher,
+                    MonsterRole.Skirmisher,
+                    MonsterRole.Artillery,
+                },
+            ),
+        )
+    else:
+        species_loadout = None
+
+    if settings.monster_key == "scout":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutScout,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "ranger":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutRanger,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "scout-captain":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutScoutCaptain,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "first-scout":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutFirstScout,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -171,7 +190,7 @@ def generate_scout(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_ScoutWeights(stats, variant),
+        custom=_choose_powers(settings),
     )
     features += power_features
 
