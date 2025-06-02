@@ -126,7 +126,7 @@ class _CallReinforcements(GuardPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         target = DieFormula.target_value(
-            target=8 * (0.25 + stats.cr / 2), force_die=Die.d4
+            target=8 * (0.25 + stats.cr / 3), force_die=Die.d4
         )
         guard = creature_ref("Guard")
 
