@@ -30,7 +30,7 @@ Merrow believe that once enough victims have been dragged beneath the surface an
 
 ### Merrow
 
-[[Merrow]] are aquatic brutes that hunt coastal settlements and shipping lanes, looking for prey to capture. A great low-level threat for underwater enocunters or abyssal cult campaigns.
+[[Merrow]] are aquatic brutes that hunt coastal settlements and shipping lanes, looking for prey to capture. A great low-level threat for underwater encounters or abyssal cult campaigns.
 
 [[!Merrow]]
 
