@@ -125,7 +125,10 @@ class MonsterTemplateData:
             else ""
         )
 
-        iniative_mod = stats.attributes.skill_mod(Skills.Initiative) or 0
+        iniative_mod = (
+            stats.attributes.skill_mod(Skills.Initiative, even_if_not_proficient=True)
+            or 0
+        )
         static_initiative = 10 + iniative_mod
         initiative = f"{iniative_mod:+} ({static_initiative})"
 

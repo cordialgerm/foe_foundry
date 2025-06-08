@@ -60,6 +60,19 @@ class _Aquatic(AquaticBase):
         return [feature]
 
 
+class _Amphibious(AquaticBase):
+    def __init__(self):
+        super().__init__(name="Amphibious", source="SRD5.1 Merfolk", icon="triton-head")
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        feature = Feature(
+            name="Amphibious",
+            action=ActionType.Feature,
+            description=f"{stats.selfref.capitalize()} can breathe air and underwater.",
+        )
+        return [feature]
+
+
 class _InkCloud(AquaticBase):
     def __init__(self):
         super().__init__(
@@ -106,8 +119,9 @@ class _SlimyCloud(AquaticBase):
         return [feature]
 
 
+Amphibious: Power = _Amphibious()
 Aquatic: Power = _Aquatic()
 InkCloud: Power = _InkCloud()
 SlimyCloud: Power = _SlimyCloud()
 
-AquaticPowers: List[Power] = [Aquatic, InkCloud, SlimyCloud]
+AquaticPowers: List[Power] = [Amphibious, Aquatic, InkCloud, SlimyCloud]
