@@ -48,7 +48,7 @@ The [[Merrow Storm-Blessed]] harnesses the elemental wrath of the sea for the me
 
 ### Merrow Abyssal Lord
 
-The [[Merrow Abyssal Lord]] is the perfect underwater legendary boss monster for 5E, suitable for epic aquatic battles and abyssal sacrifices. This legendary merrow statblock can represent *Thalassant, the Lord of Sacrifice* - the original Merrow and prophet of the Abyss.
+The [[Merrow Abyssal Lord]] is the perfect underwater legendary boss monster for 5E, suitable for epic aquatic battles and abyssal sacrifices. This legendary merrow statblock can represent [*Thalassant, the Lord of Sacrifice*](#thallassant-the-lord-of-sacrifice) - the original Merrow and prophet of the Abyss.
 
 [[!Merrow Abyssal Lord]]
 
