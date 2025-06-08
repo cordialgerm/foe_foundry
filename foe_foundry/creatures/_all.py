@@ -23,6 +23,7 @@ from .lich import LichTemplate
 from .mage import MageTemplate
 from .manticore import ManticoreTemplate
 from .medusa import MedusaTemplate
+from .merrow import MerrowTemplate
 from .mimic import MimicTemplate
 from .nothic import HollowGazerTemplate
 from .ogre import OgreTemplate
@@ -64,10 +65,11 @@ AllTemplates: list[MonsterTemplate] = [
     KnightTemplate,
     KoboldTemplate,
     LichTemplate,
-    MimicTemplate,
     MageTemplate,
     ManticoreTemplate,
     MedusaTemplate,
+    MerrowTemplate,
+    MimicTemplate,
     OgreTemplate,
     OrcTemplate,
     OwlbearTemplate,

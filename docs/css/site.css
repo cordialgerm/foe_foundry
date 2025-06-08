@@ -699,7 +699,7 @@ a.burnt-parchment,
     white-space: nowrap;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .stat-block .branding,
     .power-block .branding {

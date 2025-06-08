@@ -5,7 +5,6 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, Shocked
 from ...die import Die
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
 
@@ -94,7 +93,7 @@ class _StormcallersFury(StormPower):
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} calls down lightning on a point it can see within 120 feet. \
                 Each creature within 5 feet of the point must make a DC {dc} Dexterity saving throw, taking {dmg.description} \
-                lightning damage on a failure and half damage on a success. If the outdoors are in stormy conditions then this save is made with disadvantage.",
+                lightning damage on a failure and half damage on a success. If stormy conditions are present then this save is made with disadvantage.",
         )
 
         return [feature]

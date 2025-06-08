@@ -15,6 +15,7 @@ from .kobold import KoboldPowers
 from .lich import LichPowers
 from .mage import MagePowers
 from .manticore import ManticorePowers
+from .merrow import MerrowPowers
 from .mimic import MimicPowers
 from .nothic import NothicPowers
 from .ogre import OgrePowers
@@ -45,6 +46,7 @@ CreaturePowers = (
     + LichPowers
     + MagePowers
     + ManticorePowers
+    + MerrowPowers
     + MimicPowers
     + NothicPowers
     + OgrePowers

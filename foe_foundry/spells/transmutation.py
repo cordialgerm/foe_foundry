@@ -17,6 +17,17 @@ ControlWeather = Spell(
 When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.""",
 )
 
+ControlWater = Spell(
+    name="Control Water",
+    level=4,
+    school="transmutation",
+    source="SRD 5.1",
+    upcast=False,
+    action_type=ActionType.Action,
+    concentration=True,
+    description="""You manipulate water in the area around you. Choose one of the following effects when you cast the spell. You can change the effect as an action on your turn.""",
+)
+
 PlantGrowth = Spell(
     name="Plant Growth",
     level=3,
