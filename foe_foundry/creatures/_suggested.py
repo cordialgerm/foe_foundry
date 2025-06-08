@@ -4,7 +4,7 @@ from ..creature_types import CreatureType
 from ..creatures import SelectionSettings
 from ..statblocks import Statblock
 from .balor.balor import BalorTemplate
-from .chimera import ChimeraTemplate
+from .chimera.chimera import ChimeraTemplate
 from .druid import DruidTemplate
 from .gelatinous_cube import GelatinousCubeTemplate
 from .golem import GolemTemplate

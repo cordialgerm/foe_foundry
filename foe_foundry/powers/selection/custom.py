@@ -37,6 +37,11 @@ class PowerLoadout:
     locked: bool = False
     replace_with_species_powers: bool = False
 
+    def __eq__(self, value: object) -> bool:
+        if not isinstance(value, PowerLoadout):
+            return False
+        return self.name == value.name
+
 
 class NewPowerSelection(CustomPowerSelection):
     def __init__(

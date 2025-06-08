@@ -471,6 +471,30 @@ class BaseStatblock:
 
         return self.copy(additional_attacks=additional_attacks)
 
+    def modify_additional_attack(
+        self, name_or_display_name: str, **modifications
+    ) -> BaseStatblock:
+        """Modify an existing additional attack by name or display name."""
+
+        attack = next(
+            (
+                a
+                for a in self.additional_attacks
+                if a.display_name == name_or_display_name
+                or a.name == name_or_display_name
+            ),
+            None,
+        )
+        if attack is None:
+            raise ValueError(
+                f"Attack with name or display name '{name_or_display_name}' not found in additional attacks."
+            )
+
+        new_attack = attack.copy(**modifications)
+        new_attacks = [a for a in self.additional_attacks if a != attack]
+        new_attacks.append(new_attack)
+        return self.copy(additional_attacks=new_attacks)
+
     def add_spells(self, spells: List[StatblockSpell]) -> BaseStatblock:
         existing_spells = [s.copy() for s in self.spells]
         added_spells = [

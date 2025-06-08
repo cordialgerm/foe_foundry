@@ -218,11 +218,12 @@ class _JawClamp(MonstrousPower):
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
         restrained = Condition.Restrained
+        bite = stats.attack.display_name
         feature = Feature(
             name="Jaw Clamp",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When an attacker within 5 feet of {stats.selfref} misses it with a melee attack, {stats.selfref} makes a bite attack against the attacker. \
+            description=f"When an attacker within 5 feet of {stats.selfref} misses it with a melee attack, {stats.selfref} makes a {bite} attack against the attacker. \
                 On a hit, the attacker is {grappled.caption} (escape DC {dc}). Until this grapple ends, the grappled creature is {restrained.caption}, and the only attack {stats.selfref} can make is a bite against the grappled creature.",
         )
         return [feature]

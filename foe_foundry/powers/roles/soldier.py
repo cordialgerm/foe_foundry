@@ -172,7 +172,7 @@ class _Leap(SoldierPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = stats.target_value(target=1.5, force_die=Die.d6)
+        dmg = stats.target_value(target=1.1, force_die=Die.d6)
         dc = stats.difficulty_class
         prone = Condition.Prone
 

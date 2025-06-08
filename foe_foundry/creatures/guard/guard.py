@@ -1,63 +1,31 @@
-from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    select_powers,
-)
-from ..powers.creature import guard
-from ..powers.roles import leader
-from ..powers.themed import gadget, sneaky, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ._data import (
+from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
-
-
-class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in guard.GuardPowers:
-            return CustomPowerWeight(weight=2, ignore_usual_requirements=True)
-        elif p in leader.LeaderPowers:
-            return CustomPowerWeight(weight=1.25, ignore_usual_requirements=False)
-        elif p in technique.TechniquePowers:
-            # we want to boost techniques, but we can't skip requirements for them
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=False)
-        elif p in gadget.NetPowers or p in gadget.GrenadePowers:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p in sneaky.SneakyPowers:
-            # guards aren't usually sneaky, so downrank
-            return CustomPowerWeight(weight=0.25, ignore_usual_requirements=False)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
-
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 GuardVariant = MonsterVariant(
     name="Guard",
     description="Guards are perceptive, but most have little martial training. They might be bouncers, lookouts, members of a city watch, or other keen-eyed warriors.",
     monsters=[
         Monster(
-            name="Watchman",
+            name="Guard",
             cr=1 / 8,
             srd_creatures=["Guard"],
+            other_creatures={"Watchman": "alias"},
         ),
         Monster(name="Sergeant of the Watch", cr=1),
     ],
@@ -74,6 +42,39 @@ CommanderVariant = MonsterVariant(
         Monster(name="Lord of the Watch", cr=8, is_legendary=True),
     ],
 )
+
+
+def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(
+                species=settings.species.name,
+                role={MonsterRole.Defender, MonsterRole.Soldier, MonsterRole.Artillery},
+            ),
+        )
+    else:
+        species_loadout = None
+
+    if settings.monster_key == "guard":
+        return NewPowerSelection(
+            powers.LoadoutGuard, settings.rng, species_loadout=species_loadout
+        )
+    elif settings.monster_key == "sergeant-of-the-watch":
+        return NewPowerSelection(
+            powers.LoadoutSeargant, settings.rng, species_loadout=species_loadout
+        )
+    elif settings.monster_key == "guard-captain":
+        return NewPowerSelection(
+            powers.LoadoutCaptain, settings.rng, species_loadout=species_loadout
+        )
+    elif settings.monster_key == "lord-of-the-watch":
+        return NewPowerSelection(
+            powers.LoadoutLord, settings.rng, species_loadout=species_loadout
+        )
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_guard(
@@ -187,7 +188,7 @@ def generate_guard(
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=_choose_powers(settings),
     )
     features += power_features
 

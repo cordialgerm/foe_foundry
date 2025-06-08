@@ -97,10 +97,18 @@ class _HarrassingRetreat(SkirmisherPower):
             10 if len(stats.attack_types.intersection(AttackType.AllRanged())) else 5
         )
 
+        if stats.cr < 1:
+            recharge = None
+            uses = 1
+        else:
+            recharge = 5
+            uses = None
+
         feature = Feature(
             name="Harassing Retreat",
             action=ActionType.Reaction,
-            recharge=5,
+            recharge=recharge,
+            uses=uses,
             description=f"When a hostile creature ends movement within {range} feet of {stats.roleref}, it may move up to half its movement. \
                  As part of this reaction, it may make an attack against the triggering creature.",
         )

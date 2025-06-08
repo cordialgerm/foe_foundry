@@ -1,39 +1,20 @@
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import hydra
-from ..powers.creature_type import beast, demon
-from ..powers.themed import (
-    aquatic,
-    breath,
-    cruel,
-    cursed,
-    diseased,
-    fearsome,
-    monstrous,
-    reckless,
-    serpentine,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ._data import (
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 HydraVariant = MonsterVariant(
     name="Hydra",
@@ -47,60 +28,13 @@ HydraFoulbloodVariant = MonsterVariant(
 )
 
 
-class _HydraWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def force_powers(self) -> list[Power]:
-        if self.variant is HydraFoulbloodVariant:
-            return [hydra.HydraHeads, demon.BlackBlood]
-        else:
-            return [hydra.HydraHeads]
-
-    def power_delta(self) -> float:
-        if self.variant is HydraFoulbloodVariant:
-            return -1 * demon.BlackBlood.power_level - MEDIUM_POWER
-        else:
-            return -1 * LOW_POWER
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            beast.WildInstinct,
-            beast.FeedingFrenzy,
-            beast.BestialRampage,
-            breath.FleshMeltingBreath,
-            cruel.BloodiedFrenzy,
-            fearsome.FearsomeRoar,
-            monstrous.Rampage,
-            monstrous.TearApart,
-            reckless.Charger,
-            reckless.Toss,
-            serpentine.SerpentineHiss,
-        ]
-        suppress = [
-            reckless.RecklessFlurry  # don't work well with many attack
-        ] + aquatic.AquaticPowers  # not exciting
-
-        if self.variant is HydraFoulbloodVariant:
-            powers += [
-                cursed.VoidSiphon,
-                cursed.RejectDivinity,
-                cursed.CursedWound,
-                demon.EchoOfRage,
-                demon.FeastOfSouls,
-            ]
-
-        if p in suppress:
-            return CustomPowerWeight(-1)
-        elif p == breath.FleshMeltingBreath:
-            return CustomPowerWeight(3.5, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in diseased.DiseasedPowers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "hydra":
+        return NewPowerSelection(powers.LoadoutHydra, settings.rng)
+    elif settings.monster_key == "foulblood-hydra":
+        return NewPowerSelection(powers.LoadoutHydraFoulblooded, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -149,7 +83,7 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
     stats = stats.add_ac_template(NaturalArmor)
 
     # ATTACKS
-    attack = natural.Bite.with_display_name("Flesh-Disolving Bites")
+    attack = natural.Bite.with_display_name("Flesh-Dissolving Bites")
     stats = attack.alter_base_stats(stats)
     stats = attack.initialize_attack(stats)
     stats = stats.copy(
@@ -195,7 +129,7 @@ def generate_hydra(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_HydraWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

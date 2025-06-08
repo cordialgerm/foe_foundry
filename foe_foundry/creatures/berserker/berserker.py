@@ -1,44 +1,23 @@
-from ..ac_templates import BerserkersDefense
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.themed.anti_magic import Spellbreaker
-from ..powers.themed.anti_ranged import DeflectMissile
-from ..powers.themed.bestial import RetributiveStrike
-from ..powers.themed.cruel import BloodiedFrenzy, BrutalCritical
-from ..powers.themed.fearsome import FearsomeRoar
-from ..powers.themed.reckless import RecklessPowers
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..utils.rng import choose_enum
-from ._data import (
+from ...ac_templates import BerserkersDefense
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...utils.rng import choose_enum
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
-from .species import AllSpecies, HumanSpecies
-
-
-class _CustomPowers(CustomPowerSelection):
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        powers = [
-            Spellbreaker,
-            DeflectMissile,
-            RetributiveStrike,
-            BrutalCritical,
-            BloodiedFrenzy,
-            FearsomeRoar,
-        ] + RecklessPowers
-        if power in powers:
-            return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(weight=0.5)
-
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 BerserkerVariant = MonsterVariant(
     name="Berserker",
@@ -60,6 +39,36 @@ CommanderVariant = MonsterVariant(
         Monster(name="Berserker Legend", cr=12, is_legendary=True),
     ],
 )
+
+
+def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(settings.species.name, MonsterRole.Bruiser),
+        )
+    else:
+        species_loadout = None
+
+    if settings.monster_key == "berserker":
+        return NewPowerSelection(powers.LoadoutBerserker, settings.rng, species_loadout)
+    elif settings.monster_key == "berserker-veteran":
+        return NewPowerSelection(
+            powers.LoadoutBerserkerVeteran, settings.rng, species_loadout
+        )
+    elif settings.monster_key == "berserker-commander":
+        return NewPowerSelection(
+            powers.LoadoutBerserkerCommander, settings.rng, species_loadout
+        )
+    elif settings.monster_key == "berserker-legend":
+        return NewPowerSelection(
+            powers.LoadoutBerserkerLegend, settings.rng, species_loadout
+        )
+    else:
+        raise ValueError(
+            f"Unknown monster key '{settings.monster_key}' for Berserker generation."
+        )
 
 
 def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -153,7 +162,7 @@ def generate_berserker(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomPowers(),
+        custom=_choose_powers(settings),
     )
     features += power_features
 

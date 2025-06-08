@@ -1,30 +1,23 @@
-from ..ac_templates import PlateArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    select_powers,
-)
-from ..powers.roles import defender, leader
-from ..powers.spellcaster import celestial, oath
-from ..powers.themed import gadget, holy, honorable, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...ac_templates import PlateArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 KnightVariant = MonsterVariant(
     name="Knight",
@@ -42,58 +35,35 @@ KnightVariant = MonsterVariant(
 )
 
 
-class _KnightWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, cr: float):
-        self.stats = stats
-        self.cr = cr
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(
+                species=settings.species.name,
+                role={MonsterRole.Defender, MonsterRole.Soldier, MonsterRole.Bruiser},
+            ),
+        )
+    else:
+        species_loadout = None
 
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            leader.CommandTheAttack,
-            leader.StayInFormation,
-            defender.Taunt,
-            defender.ZoneOfControl,
-            leader.InspiringCommander,
-            leader.RallyTheTroops,
-            leader.CommandTheTroops,
-            leader.CommandTheAttack,
-            leader.StayInFormation,
-            technique.BaitAndSwitch,
-            technique.ArmorMaster,
-            technique.BleedingAttack,
-            technique.CleavingAttack,
-            technique.DazingAttacks,
-            technique.DisarmingAttack,
-            technique.GrazingAttack,
-            technique.OverpoweringStrike,
-            technique.Interception,
-            technique.ParryAndRiposte,
-            technique.PommelStrike,
-            technique.WhirlwindOfSteel,
-            holy.DivineSmite,
-            holy.Heroism,
-        ]
-
-        suppress = celestial.CelestialCasters + gadget.GadgetPowers
-
-        spellcaster_powers = []
-        if self.cr >= 6:
-            spellcaster_powers += oath.OathCasters
-
-        if p in suppress:
-            return CustomPowerWeight(-1)
-        elif p in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif p in honorable.HonorablePowers:
-            # boost honorable powers substantially, but still follow existing requirements to avoid duplicates
-            return CustomPowerWeight(2.5, ignore_usual_requirements=False)
-        elif p in spellcaster_powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
+    if settings.monster_key == "knight":
+        return NewPowerSelection(powers.LoadoutKnight, settings.rng, species_loadout)
+    elif settings.monster_key == "knight-of-the-realm":
+        return NewPowerSelection(
+            powers.LoadoutKnightOfTheRealm, settings.rng, species_loadout
+        )
+    elif settings.monster_key == "questing-knight":
+        return NewPowerSelection(
+            powers.LoadoutQuestingKnight, settings.rng, species_loadout
+        )
+    elif settings.monster_key == "paragon-knight":
+        return NewPowerSelection(
+            powers.LoadoutParagonKnight, settings.rng, species_loadout
+        )
+    else:
+        raise ValueError(f"Unknown knight variant: {settings.monster_key}")
 
 
 def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -191,7 +161,7 @@ def generate_knight(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_KnightWeights(stats, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 

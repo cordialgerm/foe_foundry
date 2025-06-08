@@ -1,49 +1,22 @@
-from ..ac_templates import ChainShirt, PlateArmor, SplintArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    select_powers,
-)
-from ..powers.roles import soldier
-from ..powers.themed import gadget, technique
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..utils.rng import choose_options
-from ._data import (
+from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...utils.rng import choose_options
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
-
-
-class _WarriorWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in gadget.NetPowers:
-            return CustomPowerWeight(weight=0)  # warriors don't fight with nets
-        elif p in soldier.SoldierPowers:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif p in technique.TechniquePowers:
-            # we want to boost techniques, but we can't skip requirements for them
-            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=False)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(weight=1.0, ignore_usual_requirements=False)
-
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 ShockInfantryVariant = MonsterVariant(
     name="Shock Infantry",
@@ -81,6 +54,59 @@ CommanderVariant = MonsterVariant(
         Monster(name="Legendary Warrior", cr=14, is_legendary=True),
     ],
 )
+
+
+def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None and settings.species is not HumanSpecies:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} powers",
+            powers=powers_for_role(
+                species=settings.species.name,
+                role={MonsterRole.Defender, MonsterRole.Soldier},
+            ),
+        )
+    else:
+        species_loadout = None
+
+    if settings.monster_key == "shock-infantry":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutShockInfantry,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "line-infantry":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutLineInfantry,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "shock-infantry-veteran":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutShockInfantryVeteran,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "line-infantry-veteran":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutLineInfantryVeteran,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "warrior-commander":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutCommander,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    elif settings.monster_key == "legendary-warrior":
+        return NewPowerSelection(
+            loadouts=powers.LoadoutLegendaryWarrior,
+            rng=settings.rng,
+            species_loadout=species_loadout,
+        )
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -150,7 +176,6 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
             [
                 weapon.Polearm,
                 weapon.SpearAndShield,
-                weapon.SwordAndShield,
             ],
         )
     else:
@@ -206,7 +231,7 @@ def generate_warrior(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_WarriorWeights(stats, variant),
+        custom=_choose_powers(settings),
     )
     features += power_features
 

@@ -76,10 +76,11 @@ class _DivineSmite(HolyPower):
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.7, force_die=Die.d10)
         burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
+        uses = max(1, stats.attributes.proficiency // 2)
         feature = Feature(
             name="Divine Smite",
+            uses=uses,
             action=ActionType.BonusAction,
-            recharge=5,
             description=f"Immediately after hitting a target, {stats.roleref} forces the target to make a DC {dc} Constitution saving throw. On a failure, the target is {burning}",
         )
         return [feature]
