@@ -187,6 +187,18 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="monstrosities/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/hydra.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
 
 .navbar a[href$="blog/" i]::before {
     content: " ";

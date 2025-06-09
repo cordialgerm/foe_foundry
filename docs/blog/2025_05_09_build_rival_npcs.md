@@ -5,6 +5,7 @@ description: Create fun and memorable Rival NPCs for your D&D 5E campaigns with 
 tags:
   - resources
   - tips
+  - monsters
 image: img/monsters/rival.webp
 json_ld: true
 date: 2025-05-09

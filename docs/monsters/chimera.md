@@ -58,7 +58,7 @@ A **Chimera Sovereign** is a herald of a particularly vicious disaster.
 
 ## Chimera Adventure Ideas
 
-- A well-regarded **Priest** of a local template has foretold that the PCs are the destined heros who will destroy the **Chimera** and prevent an imminent calamity to the local region
+- A well-regarded **Priest** of a local temple has foretold that the PCs are the destined heros who will destroy the **Chimera** and prevent an imminent calamity to the local region
 - Someone important to the PCs has joined a new adventuring party that seeks to prove their mettle against a **Chimera** that has taken over a remote mining outpost. The PCs are certain the new adventurers are doomed to fail.
 - A powerful **Noble** offers her son or daughter's hand in marriage to any brave adventurer that can rid their domain of a **Chimera** that plagues the land. The ruler fears the local populace see the appearance of the creature as a sign that bloody revolt is necessary to avoid certain calamity.
 - A tribal commune led by a **Berserker** will grant the PCs what they seek (primal knowledge, access to a secret path, etc.) if they can prove their worth against the **Chimera Sovereign** that rules over the badlands

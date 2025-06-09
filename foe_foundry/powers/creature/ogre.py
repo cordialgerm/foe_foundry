@@ -66,8 +66,8 @@ class _Wallsmash(OgrePower):
             name="SMAAASH!",
             action=ActionType.Action,
             recharge=6,
-            description=f"{stats.selfref.capitalize()} swings its club at a point it can see within 15 feet. Each other creature or object within 10 feet must make a DC {dc} Dexterity saving throw. \
-                On a failure, creatures take {dmg.description} bludgeoning damage and are knocked {prone}. On a success, they take half damage instead. If {stats.selfref} destroys an object with this ability, it recharges the ability automatically.",
+            description=f"{stats.selfref.capitalize()} swings its club at a point it can see within 10 feet. Each other creature or object within 10 feet must make a DC {dc} Dexterity saving throw. \
+                On a failure, creatures take {dmg.description} bludgeoning damage and are knocked {prone}. On a success, they take half damage instead. If {stats.selfref} destroys a medium-sized or larger object with this ability, it recharges this ability immediately.",
         )
 
         return [feature1, feature2]
@@ -118,7 +118,7 @@ class _ChainCrack(OgrePower):
             action=ActionType.Action,
             recharge=5,
             description=f"{stats.selfref.capitalize()} swings its chain at up to three creatures within 30 feet. The targeted creatures must make a DC {dc} Strength saving throw. \
-                On a failure, a creatures takes {dmg.description} bludgeoning damage and is {dazed.caption} until the end of its next turn. On a success, a creatures takes half damage instead. {dazed.description_3rd}",
+                On a failure, a creature takes {dmg.description} bludgeoning damage and is {dazed.caption} until the end of its next turn. On a success, a creatures takes half damage instead. {dazed.description_3rd}",
         )
         return [feature]
 
