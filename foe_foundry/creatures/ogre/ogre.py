@@ -1,38 +1,25 @@
-from foe_foundry.powers.selection.custom import CustomPowerWeight
-
-from ..ac_templates import HideArmor, UnholyArmor
-from ..attack_template import natural, spell, weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..movement import Movement
-from ..powers import LOW_POWER, CustomPowerSelection, Power, select_powers
-from ..powers.creature import ogre
-from ..powers.creature_type import giant
-from ..powers.roles import bruiser
-from ..powers.spellcaster import shaman
-from ..powers.themed import (
-    clever,
-    cruel,
-    cursed,
-    fearsome,
-    illusory,
-    reckless,
-    technique,
-    thuggish,
-    totemic,
+from ...ac_templates import HideArmor, UnholyArmor
+from ...attack_template import natural, spell, weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...movement import Movement
+from ...powers import (
+    NewPowerSelection,
+    select_powers,
 )
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 OgreVariant = MonsterVariant(
     name="Ogre",
@@ -94,78 +81,19 @@ OgreBigBrainzVariant = MonsterVariant(
 )
 
 
-class _OgrePowers(CustomPowerSelection):
-    def __init__(self, variant: MonsterVariant):
-        self.variant = variant
-
-        suppress = (
-            ogre.OgrePowers + giant.GiantPowers + [cruel.BloodiedFrenzy]
-        )  # these will be hard coded via force
-
-        if variant is OgreBigBrainzVariant:
-            general = [
-                technique.FrighteningAttack,
-                fearsome.FearsomeRoar,
-                cursed.RayOfEnfeeblement,
-                cursed.CurseOfVengeance,
-                clever.IdentifyWeaknes,
-                totemic.SpiritChainsTotem,
-                totemic.GuardianTotem,
-                illusory.PhantomMirage,
-            ]
-        else:
-            general = [
-                giant.BigWindup,
-                giant.GrabAndGo,
-                bruiser.CleavingBlows,
-                bruiser.StunningBlow,
-                technique.ProneAttack,
-                technique.PushingAttack,
-                technique.CleavingAttack,
-                technique.GrazingAttack,
-                technique.DazingAttacks,
-                reckless.Toss,
-                reckless.Charger,
-                reckless.Overrun,
-                fearsome.FearsomeRoar,
-                reckless.Reckless,
-                reckless.WildCleave,
-                reckless.RecklessFlurry,
-                thuggish.KickTheLickspittle,
-                cruel.BrutalCritical,
-            ]
-
-        self.general = general
-
-        suppress = set(suppress) - set(general)
-        self.suppress = suppress
-
-        if variant is OgreWallsmashaVariant:
-            force = [ogre.Wallsmash]
-        elif variant is OgreBurnbelchaVariant:
-            force = [ogre.Burnbelch]
-        elif variant is OgreChaincrakkaVariant:
-            force = [ogre.ChainCrack]
-        elif variant is OgreBigBrainzVariant:
-            force = [shaman.OniTrickster]
-        else:
-            force = []
-
-        self.force = force
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        if power in self.suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-        elif power in self.general:
-            return CustomPowerWeight(1.75, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return LOW_POWER - 0.2 * sum(p.power_level for p in self.force_powers())
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.variant is OgreVariant:
+        return NewPowerSelection(powers.LoadoutOgreBase, settings.rng)
+    elif settings.variant is OgreBigBrainzVariant:
+        return NewPowerSelection(powers.LoadoutTrickster, settings.rng)
+    elif settings.variant is OgreWallsmashaVariant:
+        return NewPowerSelection(powers.LoadoutSmasha, settings.rng)
+    elif settings.variant is OgreBurnbelchaVariant:
+        return NewPowerSelection(powers.LoadoutBelcha, settings.rng)
+    elif settings.variant is OgreChaincrakkaVariant:
+        return NewPowerSelection(powers.LoadoutChainCrakka, settings.rng)
+    else:
+        raise ValueError(f"Unknown ogre variant: {settings.variant}")
 
 
 def generate_ogre(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -278,7 +206,7 @@ def generate_ogre(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_OgrePowers(variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

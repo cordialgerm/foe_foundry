@@ -320,7 +320,7 @@ class _BigWindup(GiantPower):
         feature = Feature(
             name="Big Windup",
             action=ActionType.Reaction,
-            description=f"Whenever a creature hits {stats.selfref} with a melee attack, {stats.selfref} readies a powerful strike against its attacker. \
+            description=f"Whenever a creature hits {stats.selfref} with a melee attack, {stats.selfref.capitalize()} readies a powerful strike against its attacker. \
                 {stats.selfref} has advantage on the next attack it makes against the attacker before the end of its next turn.",
         )
         return [feature]
