@@ -44,8 +44,8 @@ KoboldSharpsnoutVariant = MonsterVariant(
     monsters=[Monster(name="Kobold Sharpsnout", cr=1 / 2)],
 )
 
-KoboldAspirantVariant = MonsterVariant(
-    name="Kobold Aspirant",
+KoboldAscendant = MonsterVariant(
+    name="Kobold Ascendant",
     description="Aspirants are fanatical zealots to their True Dragon overlords. They carry a sacred Draconic Standard imbued with the power of the collective will of their tribe.",
     monsters=[Monster(name="Kobold Ascendant", cr=1)],
 )
@@ -127,7 +127,7 @@ def _kobold_powers(
             ],
             suppress=suppress + trap.TrapPowers,
         )
-    elif variant is KoboldAspirantVariant:
+    elif variant is KoboldAscendant:
         return _KoboldPowers(
             cr=cr,
             force=[kobold.DraconicServants, kobold.DraconicStandard, soldier.Phalanx],
@@ -174,7 +174,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
     rng = settings.rng
 
     # STATS
-    if variant is KoboldWarrenguardVariant or variant is KoboldAspirantVariant:
+    if variant is KoboldWarrenguardVariant or variant is KoboldAscendant:
         hp_multiplier = 0.8
         damage_multiplier = 1.1
         attrs = [
@@ -238,7 +238,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
         stats = stats.add_ac_template(ChainShirt)
     elif variant is KoboldSharpsnoutVariant:
         stats = stats.add_ac_template(NaturalArmor)
-    elif variant is KoboldAspirantVariant:
+    elif variant is KoboldAscendant:
         stats = stats.add_ac_template(SplintArmor)
     elif variant is KoboldWyrmcallerVariant:
         stats = stats.add_ac_template(HolyArmor)
@@ -248,7 +248,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
         attack = weapon.SpearAndShield.with_display_name("Spear Formation")
     elif variant is KoboldSharpsnoutVariant:
         attack = weapon.Shortbow.with_display_name("Crafty Shots")
-    elif variant is KoboldAspirantVariant:
+    elif variant is KoboldAscendant:
         attack = weapon.Polearm.with_display_name("Dragonfang Halberd")
     elif variant is KoboldWyrmcallerVariant:
         attack = spell.HolyBolt.with_display_name("Draconic Invocation")
@@ -269,7 +269,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
     elif variant is KoboldSharpsnoutVariant:
         primary_role = MonsterRole.Ambusher
         secondary_roles = {MonsterRole.Skirmisher, MonsterRole.Artillery}
-    elif variant is KoboldAspirantVariant:
+    elif variant is KoboldAscendant:
         primary_role = MonsterRole.Soldier
         secondary_roles = {MonsterRole.Leader}
     elif variant is KoboldWyrmcallerVariant:
@@ -317,7 +317,7 @@ KoboldTemplate: MonsterTemplate = MonsterTemplate(
     variants=[
         KoboldWarrenguardVariant,
         KoboldSharpsnoutVariant,
-        KoboldAspirantVariant,
+        KoboldAscendant,
         KoboldWyrmcallerVariant,
     ],
     species=[],
