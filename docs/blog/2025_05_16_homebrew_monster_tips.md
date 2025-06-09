@@ -4,6 +4,7 @@ short_title: 5 Tips For Homebrewed Monsters in 5E
 description: Want to build better monsters in 5E? Learn 5 practical tips for homebrewing monsters that hit harder, act smarter, and keep combat fast and fun. Ditch filler abilities and design unforgettable foes.
 tags:
   - tips
+  - monsters
 image: img/icons/favicon.webp
 json_ld: true
 date: 2025-05-16

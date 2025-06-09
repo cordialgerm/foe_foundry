@@ -5,6 +5,7 @@ description: Discover 10 radiant Celestial Powers perfect for 5E monsters. Add d
 tags:
   - resources
   - tips
+  - powers
 image: img/monsters/angel.webp
 json_ld: true
 date: 2025-05-10

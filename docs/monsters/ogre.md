@@ -1,46 +1,72 @@
-
-- Selfish, brutish, hulking
-- Strength and destruction is everything - standing is based on the biggest thing the ogre has smashed
-- They rely on sheer strength and crude tools—clubs, rocks, and fists—eschewing fine craftsmanship.
-- Spitefully destroy anything that isn't immediately useful as food or that they don't consider shineyz - especially art and books
-- Born from fallen giants who lost connection to their primordial magic and instead got an overwhelming hunger for destruction
-- Impulsive, dim witted -easily tricked and bribed
-
-
-
-
-
+---
+title: Ogre Statlbocks, Encounters, and Lore for 5E | Foe Foundry
+short_title: Ogres
+description: Smash expectations with this collection of 5E ogre lore, unique statblocks, encounter seeds, and multi-session adventures for your next campaign.
+image: img/monsters/ogre.webp
+json_ld: true
 ---
 
+# Ogres
 
-Ogres are selfish raiders and hulking gluttons spawned of hateful supernatural forces. From dismal ruins and bleak hinterlands, they raid vulnerable communities and ambush travelers. Ogres covet food and treasure, and they spitefully destroy art, books, clockwork devices, and other delicate or lovingly made things. Occasionally they kidnap victims to eat later or, more rarely, performers who catch their interest.
+*Ravenous and Destructive Hulks*
 
-Ogres trace their origins to wrathful deities such as Erythnul, Takhisis, and Vaprak. They magically emerge from the earth of lands corrupted by evil gods, sinister magic, or ancient curses. Some bear evidence of the places that spawned them, sporting rocky calluses, mossy growths, or frozen scars.
+[[Ogres]] covet three things: grubz, shineyz, and smaaaashing. They are ravenous, brutish, and hulking. Strength and destruction is everything to a group of ogres. Standing within the clan is based on the biggest thing the ogre has smashed. They rely on sheer strength and utilize crude clubs hewn from upended saplings or thick chains ripped from walled settlements.  
 
-Ogres are 10-foot-tall brutes that overwhelm their foes and take what spoils they please. Ogre raiders ally with other evil forces in return for food, riches, and promises of battle.
+After a raid, ogres will wantonly destroy anything that isn't immediately useful, and take a special glee in destroying art, books, and other fine things, which they consider useless.
 
-Oni are elusive entities that inhabit dark forests and other wildernesses. By shape-shifting into the form of an innocent or moving invisibly, oni encroach on communities and lonely roads. They frequently harass people of faith, testing the limits of their piousness, or torment selfish people, punishing them for their wickedness. Wise communities often have guardian statues, annual rituals, or local superstitions meant to keep oni at bay. In rare cases, an oni might gradually befriend such communities and protect them from other threats for generations.
+![5E Ogre monster illustration — hulking brute wielding a massive club](../img/monsters/ogre.webp){.masked .monster-image}
 
-Oni torment villages that don’t pay them or other supernatural forces respect. Roll on or choose a result from the Oni Troubles table to inspire how an oni menaces such communities.
+## Ogre Lore
 
-DC 10 Though smaller than their giant ancestors, ogres stand nearly twice as tall as most humanoids. They can see in the dark.
+- Ogres love to smash anything that isn't immediately edible, usable as a weapon, or sparkly
+- Ogres are impulsive, dim witted, and easily tricked or bribed
+- Ogres were born from fallen giants who lost the mystical connection to their primordial magic
+- Very rarely, a hyper-intelligent ogre is born. These ogres inevitably trick their kin into subservience become known as [[Ogre Big Brainz]]
 
-DC 15 Ogres are formidable melee combatants. Their powerful blows force all but the strongest warriors to give ground.
+## Ogre Statblocks
 
-DC 20 In ages past, some ogres learned magic to better serve their giant overlords. Though rare, ogre mages still exist today, selling their services to evil creatures such as devils, vampires, and hags.
+### Ogre
 
-Standing some 10 feet tall and weighing nearly 1,000 pounds, ogres look like massive, barrel-chested humanoids with wide, fanged jaws. 
+Ogres are massive and brutish ravagers. Their hunger and anger is matched only by their strength and stupidity.
 
-Lost Greatness. Ogres are the descendants of giants forced out of their elementally-infused homes. Frost giants exiled from the frozen tundra, or fire giants driven from their volcanic lairs, may give birth to ogres. Though now far removed from their giant ancestors, ogre tribes still remember the calamitous fall of the giants’ empire, and their stories warn against venturing too much or building too high. 
+[[!Ogre]]
 
-Subsistence and Service. Ogres do not boast great craftspeople amongst them: they do not need to, since trees and rocks make serviceable weapons, and their skin is as tough as armor. However, promises of wealth and luxury can coax an ogre into service. For enough gold, an ogre will fight for a master far smaller or weaker than itself. A well-equipped ogre can be a terrifying engine of destruction on the battlefield.
+### Ogre Wallsmasha
 
-Massive and bull-necked with bulging muscle and flesh, most ogres indulge their every impulse because few can stop them. Though small for giants, ogres still outweigh and tower over humanoids. Most live in the wild where they can create their own rules and ways of life.
+Ogres occasionally uproot whole trees and fashion them into crude battering rams that can smash through walls and anything else dumb enough to get in the way.
 
-Extreme Emotions. Most ogres experience emotions at their extremes. Rarely are they simply bemused or cross; you’re more likely to find an ogre leaping with ecstatic joy over a trivial victory or screaming with murderous rage over everyday frustrations. These heightened feelings drive many ogres down selfish paths, and some take whatever they want from anyone too weak to protest. Other ogres can be manipulated into working for evil creatures who promise to meet their heart’s desire, be it food, riches, or friendship.
+[[!Ogre Wallsmasha]]
 
-Ogres who embrace good often dedicate themselves to inspiring causes, letting their emotions fuel their passion and dedication for protecting their chosen people or place.
+### Ogre Burnbelcha
 
-Savory Stories. Some ogres speak of a time when they shared vast wealth and riches, great homes made of hewn stone, and sumptuous feasts. These stories end tragically, each with a different villain—from deceptive mages to talking cats—swindling the ogres of what is rightfully theirs. The truth of such legends remains unknown, but many cruel ogres use them as an excuse for their selfish indulgences.
+Some ogres ritually imbibe a horrendous and highly flammable concoction that they belch on unsuspecting foes.
 
-Aristocracy of Bullies. When wicked ogres gather more food than they can stomach or riches than they can spend, they use the excess to tempt their kin into working for them. These petty rulers make other ogres grovel at their feet for table scraps, then send them out into the world to steal more. Many ogre communities form around these arrogant aristocrats—but few such leaders die of old age, as the ambition and emotions of their subjects bring about violent ends.
+[[!Ogre Burnbelcha]]
+
+### Ogre Chaincrakka
+
+Chaincrakka ogres wield deadly chain whips and vicious barbed nets to capture prey for the cooking pots.
+
+[[!Ogre Chaincrakka]]
+
+### Ogre Big Brainz
+
+Ogre Big Brainz are rare freaks among their brutish kin, born with wicked cunning and gifted with dark, unnatural powers. They inevitably trick and manipulate their dim kin into subservience and often lead a pack of ogres.
+
+[[!Ogre Big Brainz]]
+
+![ Ogre Big Brainz - cunning ogre sorcerer manipulating dim-witted Ogres](../img/monsters/ogre-big-brainz.webp){.masked .monster-image}
+
+## Ogre Encounter Ideas
+
+- Three Ogres (an [[Ogre Burnbelcha]], [[Ogre Chaincrakka]], and [[Ogre Wallsmasha]]) have set up camp overlooking the only road through a treacherous pass. They argue over who gets the first bite of a stew they plan to make of a group of tied up dwarves.
+- A large, crude signpost warns travelers of a toll ahead. There are multiple mangled humanoid bodies nailed to the sign. Those who don't pay enough get added to the post. The [[Ogre]] tollkeeper waiting nearby is convinced it owns this entire road and everything on it.
+- The party stumbles into a sunken glade where an [[Ogre Burnbelcha]] sleeps under a mound of hides, with one meaty arm splayed out over the corpse of a crushed traveler. The corpse still clutches a valuable scroll or magic item.
+- The players find a ruined campsite littered with barrels and bones. An [[Ogre]], seated in a massive mudhole, slurps ale and chews sheep bones. Drunk and bloated, it challenges the PCs to a drinking contest. Refusal would be unwise.
+
+## Ogre Adventure Ideas
+
+- A mining town reports strange tremors below and vanishing workers, kidnapped by a hungre [[Ogre]] that has recently made the mines its den.
+- The PCs have been hired to protect a trade caravan on a once-safe route where many caravans have gone missing of late. The culprit is a band of [[Ogres]] driven out of their hinterland caves by a fearsome [[Hydra]]. The ogres want help restoring their den in return for leaving the trade route alone.
+- A [[Priest]] hires the party to investigate what happened to all the villagers of nearby hamlet who haven't been seen since the last feast day. Unfortunately, an [[Ogre]] crashed the feast, ate all the food, and the townsfolk as well.
+- An [[Orc Warchief]] has sent emissaries to all the scattered [[Ogre]] clans in the hinterland hills to recruit them to his cause, promising vast spoils of war. The PCs must win over the ogres or prevent their recruitment lest the entire kingdom be overrun. A particularly cunning [[Ogre Big Brainz]] seeks to play both sides against each other for his benefit.

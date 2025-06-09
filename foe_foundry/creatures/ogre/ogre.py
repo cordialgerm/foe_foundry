@@ -193,11 +193,6 @@ def generate_ogre(settings: GenerationSettings) -> StatsBeingGenerated:
     elif variant is OgreBigBrainzVariant:
         stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS, Stats.CHA)
 
-    # DC
-    stats = stats.copy(
-        difficulty_class_modifier=-1
-    )  # ogres have high primary stat so don't want DCs to be too high
-
     # POWERS
     features = []
 

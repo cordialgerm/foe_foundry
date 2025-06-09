@@ -13,7 +13,7 @@ Explore curated collections of thematically linked monsters, complete with lore,
 
 - [Undead](../families/undead.md) — Cursed beings animated by death and undeath
 - [Monstrosities](../families/monstrosities.md) — Creatures twisted by magic, curse, or chaos
-- [Fanatics and Faithful](../families/fiends.md) — Faithful instruments of the divine or worshippers of the occult and forbidden
+- [Fanatics and Faithful](../families/fanatics_and_faithful.md) — Faithful instruments of the divine or worshippers of the occult and forbidden
 - [Orcs and Goblinoids](../families/orcs_and_goblinoids.md) - Bloodrage-fueled ancestral warriors or 
 chaotic tricksters, pillagers, and endless nuisances
 - [Rivals](../families/rivals.md) - The ultimate guide to rival adventuring parties
@@ -68,8 +68,18 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 
 ![A cantankerous Manticore prepares to strike](../img/monsters/manticore.webp){.monster-image .masked .white-background}
 
+## Giants
+
+Giants are primordial creatures, living walking bones of the earth.
+
+- [Ogres](ogre.md) - ravenous and destructive hulks
+
+![5E Ogre monster illustration — hulking brute wielding a massive club](../img/monsters/ogre.webp){.masked .monster-image}
+
 ## Oozes
 
 Slimes, jellies, and cubes. Silent, shapeless, and strangely efficient.
 
 - [Gelatinous Cubes](gelatinous-cube.md) - acidic, nigh-invisible dungeon cleaner
+
+![A gelatinous cube with a bleached skeleton](../img/monsters/gelatinous-cube.webp){.masked .monster-image}

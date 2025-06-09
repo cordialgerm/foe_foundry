@@ -4,6 +4,7 @@ short_title: 10 Powers for Cultists, Fanatics, and False Prophets
 description: Bring dark rituals and deadly devotion to your table with these 10 flavorful cultist powers, complete with encounter tips and roleplay hooks.
 tags:
   - tips
+  - monsters
   - powers
 image: img/monsters/cultist.webp
 json_ld: true
