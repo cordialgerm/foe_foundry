@@ -28,6 +28,24 @@
     --small-margin: 6px;
     --big-margin: 12px;
     --medium-margin: 9px;
+
+
+    /* Set Boostrap Variables to match theme */
+    --bs-primary-text-emphasis: var(--fg-color);
+    --bs-primary-bg-subtle: var(--muted-color);
+    --bs-primary-border-subtle: var(--primary-color);
+
+    --bs-info-text-emphasis: var(--fg-color);
+    --bs-info-bg-subtle: var(--muted-color);
+    --bs-info-border-subtle: var(--primary-color);
+
+    --bs-warning-text-emphasis: var(--fg-color);
+    --bs-warning-bg-subtle: var(--muted-color);
+    --bs-warning-border-subtle: var(--primary-color);
+
+    --bs-danger-text-emphasis: var(--fg-color);
+    --bs-danger-bg-subtle: var(--muted-color);
+    --bs-danger-border-subtle: var(--primary-color);
 }
 
 @media screen and (min-width: 1200px) {
