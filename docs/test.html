@@ -34,12 +34,6 @@
             text-align: center;
         }
 
-        .card img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 0.5em;
-        }
-
         .btn {
             margin-top: 1em;
             display: inline-block;
@@ -52,6 +46,27 @@
             cursor: pointer;
         }
 
+        /* Full-page parallax logo background */
+        .parallax-logo-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/icons/favicon.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* Use 'cover' if you want it to fill the whole screen */
+            background-position: center center;
+            background-attachment: fixed;
+            /* Creates parallax effect */
+            opacity: 0.08;
+            /* Very subtle so it doesn’t overwhelm the content */
+            pointer-events: none;
+            /* So it doesn’t block buttons or links */
+            z-index: -1;
+        }
+
         .swiper-wrapper {
             justify-content: center;
             display: flex;
@@ -59,14 +74,11 @@
         }
 
         .swiper-container {
+            position: relative;
             max-width: 100%;
             overflow: hidden;
             padding: 1em 0;
         }
-
-        /* .swiper-slide {
-            width: clamp(200px, 33%, 320px);
-        } */
 
         /* Default slide style for smallest screens (mobile-first) */
         .swiper-slide {
@@ -104,10 +116,100 @@
                 max-width: 25%;
             }
         }
+
+        .swiper-slide.card {
+            position: relative;
+            aspect-ratio: 4 / 3;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Overlay content */
+        .card-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 1em;
+
+            background: rgba(0, 0, 0, 0.4);
+            /* semi-transparent black overlay for readability */
+            color: #f2e6d9;
+        }
+
+        .masked {
+
+            mask-image: url('img/backgrounds/watercolor-mask.webp');
+            mask-size: 100% 100%;
+            mask-repeat: no-repeat;
+            mask-position: center;
+
+            -webkit-mask-image: url('img/backgrounds/watercolor-mask.webp');
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+
+        .masked-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 0;
+
+
+            mask-image: url('img/backgrounds/watercolor-mask.webp');
+            mask-size: 100% 100%;
+            mask-repeat: no-repeat;
+            mask-position: center;
+
+            -webkit-mask-image: url('img/backgrounds/watercolor-mask.webp');
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+        }
+
+        .masked-container {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+
+            mask-image: url('img/backgrounds/watercolor-mask.webp');
+            -webkit-mask-image: url('img/backgrounds/watercolor-mask.webp');
+            mask-size: 100% 100%;
+            -webkit-mask-size: 100% 100%;
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-position: center;
+        }
+
+        .masked-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
+
+    <div id="parallax-logo-bg" class="parallax-logo-bg"></div>
 
     <div class="container">
         <header>
@@ -118,7 +220,7 @@
             <h2>Discover</h2>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-container">
+                    <div class="swiper-discover swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card">
                                 <img src="monster.png" alt="Monster Icon">
@@ -138,8 +240,8 @@
                                 <div><a href="#" class="btn">Read Post</a></div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-discover-prev"></div>
+                        <div class="swiper-button-next swiper-discover-next"></div>
                     </div>
                 </div>
             </div>
@@ -150,22 +252,34 @@
             <h2>Featured Monsters</h2>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-container">
+                    <div class="swiper-monsters swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide card"><strong>Lich</strong><br>A manticore cursed to devour lies
+                            <div class="swiper-slide card masked">
+                                <div class="masked-container">
+                                    <img src="img/monsters/lich.webp" alt="Lich" />
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">Lich</h3>
+                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide card"><strong>Mimic</strong><br>A manticore cursed to devour lies
+                            <div class="swiper-slide card masked"
+                                style="background-image: url('img/monsters/lich.webp')">
+                                <div class="card-content">
+                                    <h3 class="card-title">Lich 2</h3>
+                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide card"><strong>Ogre</strong><br>A manticore cursed to devour lies
-                            </div>
-                            <div class="swiper-slide card"><strong>Manticore</strong><br>Embermaal, Scourge of
-                                Shieldhome</div>
-                            <div class="swiper-slide card"><strong>Zombie</strong><br>Dark Shepherd of the Void</div>
-                            <div class="swiper-slide card"><strong>Skeleton</strong><br>Stormspeaker of the Black Tide
+                            <div class="swiper-slide card masked"
+                                style="background-image: url('img/monsters/lich.webp')">
+                                <div class="card-content">
+                                    <h3 class="card-title">Lich 3</h3>
+                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-monsters-prev"></div>
+                        <div class="swiper-button-next swiper-monsters-next"></div>
                     </div>
                 </div>
             </div>
@@ -176,7 +290,7 @@
             <h2>Powers You Can Use Tonight</h2>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-container">
+                    <div class="swiper-powers swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card"><strong>Empathic Link</strong><br>Let you feel another
                                 creature's
@@ -192,8 +306,8 @@
                             <div class="swiper-slide card"><strong>Malediction</strong><br>Place a curse upon a foe
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-powers-prev"></div>
+                        <div class="swiper-button-next swiper-powers-next"></div>
                     </div>
                 </div>
             </div>
@@ -205,7 +319,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-container">
+                    <div class="swiper-tips swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card"><strong>How to Build Rivals & Archvillains</strong><br>April
                                 23,
@@ -216,8 +330,8 @@
                             <div class="swiper-slide card"><strong>Make D&D Monsters More Distinct</strong><br>April 1,
                                 2024<br>Customize them with flair</div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-tips-prev"></div>
+                        <div class="swiper-button-next swiper-tips-next"></div>
                     </div>
                 </div>
             </div>
@@ -228,16 +342,43 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        document.querySelectorAll('.swiper-container').forEach(container => {
-            new Swiper(container, {
+
+        const swipers = [];
+
+        [
+            { id: 'discover' },
+            { id: 'monsters' },
+            { id: 'powers' },
+            { id: 'tips' }
+        ].forEach(({ id }) => {
+
+            const swiperContainer = document.querySelector(`.swiper-${id}`);
+            const nextEl = swiperContainer.querySelector('.swiper-button-next');
+            const prevEl = swiperContainer.querySelector('.swiper-button-prev');
+
+            const navigation = {
+                nextEl: nextEl,
+                prevEl: prevEl
+            }
+            console.log(navigation);
+
+            const swiper = new Swiper(swiperContainer, {
                 slidesPerView: 'auto',
                 spaceBetween: 16,
-                loop: true,
                 navigation: {
-                    nextEl: container.querySelector('.swiper-button-next'),
-                    prevEl: container.querySelector('.swiper-button-prev'),
+                    nextEl: nextEl,
+                    prevEl: prevEl
                 }
             });
+
+            swipers.push(swiper);
+        });
+
+
+        // Recalculate layout on window resize
+        window.addEventListener('resize', () => {
+            console.log('updating swipers...');
+            swipers.forEach(swiper => swiper.update());
         });
     </script>
 </body>
