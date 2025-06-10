@@ -125,6 +125,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
+
         /* The actual image that fills the card */
         .card-image {
             position: absolute;
@@ -147,16 +148,27 @@
             flex-direction: column;
             justify-content: center;
 
-            /* 🔮 Core blur effect */
-            background: rgba(0, 0, 0, 0.3);
-            /* Dark translucent background */
-            backdrop-filter: blur(6px);
-            /* Blur the image underneath */
-            -webkit-backdrop-filter: blur(6px);
-            /* Safari support */
+            /* Ensure layering works */
+            pointer-events: none;
+            isolation: isolate;
+        }
 
-            border-radius: 0.5rem;
-            box-sizing: border-box;
+        /* 🔳 Painted gray label with watercolor edges */
+        .masked-label {
+            background-color: rgba(80, 80, 80, 0.40);
+            /* nice opaque gray */
+            display: inline-block;
+            padding: 0.25rem;
+
+            /* Apply watercolor mask */
+            mask-image: url('img/backgrounds/watercolor-mask2.webp');
+            -webkit-mask-image: url('img/backgrounds/watercolor-mask2.webp');
+            mask-size: 100% 100%;
+            -webkit-mask-size: 100% 100%;
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-position: center;
+            -webkit-mask-position: center;
         }
 
         /* Optional styling */
@@ -239,14 +251,16 @@
                             <div class="swiper-slide card masked">
                                 <img class="card-image" src="img/monsters/lich.webp" alt="Lich" />
                                 <div class="card-content">
-                                    <h3 class="card-title">Lich</h3>
-                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                    <div class="masked-label">
+                                        <h3 class="card-title">Lich</h3>
+                                        <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide card masked"
-                                style="background-image: url('img/monsters/lich.webp')">
+                            <div class="swiper-slide card masked">
+                                <img class="card-image" src="img/monsters/lich.webp" alt="Lich" />
                                 <div class="card-content">
-                                    <h3 class="card-title">Lich 2</h3>
+                                    <h3 class="card-title">Lich</h3>
                                     <p class="card-tagline">Soulbound Tyrant of the Dead</p>
                                 </div>
                             </div>
