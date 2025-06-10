@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foe Foundry</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f2e6d9;
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #e63946;
+            margin-top: 2em;
+            text-align: center;
+        }
+
+        .section {
+            padding: 2em;
+        }
+
+        .card {
+            background: #3b2f2f;
+            padding: 1em;
+            border-radius: 8px;
+            color: #f2e6d9;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 0.5em;
+        }
+
+        .btn {
+            margin-top: 1em;
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #e63946;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .swiper-wrapper {
+            justify-content: center;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .swiper-container {
+            max-width: 100%;
+            overflow: hidden;
+            padding: 1em 0;
+        }
+
+        /* .swiper-slide {
+            width: clamp(200px, 33%, 320px);
+        } */
+
+        /* Default slide style for smallest screens (mobile-first) */
+        .swiper-slide {
+            flex: 0 0 auto;
+            /* Prevent shrinking; keep slide width fixed */
+            width: 100%;
+            /* Full width on very small screens (1 card per row) */
+            max-width: 100%;
+        }
+
+        /* Small screens (≥576px) — show 2 cards per row */
+        @media (min-width: 576px) {
+            .swiper-slide {
+                width: clamp(240px, 48%, 300px);
+                /* Let cards grow naturally between 240–300px */
+                max-width: 48%;
+                /* Prevent more than 2 cards fitting tightly */
+            }
+        }
+
+        /* Medium screens (≥768px) — aim for 3 cards per row */
+        @media (min-width: 768px) {
+            .swiper-slide {
+                width: clamp(240px, 32%, 300px);
+                /* Smoother spacing for 3-up layout */
+                max-width: 32%;
+            }
+        }
+
+        /* Large screens (≥1200px) — up to 4 cards per row */
+        @media (min-width: 1200px) {
+            .swiper-slide {
+                width: clamp(240px, 25%, 320px);
+                /* Cap at 320px but allow flexibility */
+                max-width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Summon unforgettable monsters, instantly</h1>
+        </header>
+
+        <section>
+            <h2>Discover</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card">
+                                <img src="monster.png" alt="Monster Icon">
+                                <strong>Lich, Sovereign of Ashes</strong><br>
+                                Soulbound tyrant of the dead
+                                <div><a href="#" class="btn">View Monster</a></div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <img src="fire.png" alt="Fire Icon">
+                                <strong>Soulfire Surge</strong><br>
+                                Detonating the caster in radiant flame
+                                <div><a href="#" class="btn">View Power</a></div>
+                            </div>
+                            <div class="swiper-slide card">
+                                <img src="scroll.png" alt="Scroll Icon">
+                                <strong>5 Tips for Smarter Monsters</strong>
+                                <div><a href="#" class="btn">Read Post</a></div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Featured Monsters</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card"><strong>Lich</strong><br>A manticore cursed to devour lies
+                            </div>
+                            <div class="swiper-slide card"><strong>Mimic</strong><br>A manticore cursed to devour lies
+                            </div>
+                            <div class="swiper-slide card"><strong>Ogre</strong><br>A manticore cursed to devour lies
+                            </div>
+                            <div class="swiper-slide card"><strong>Manticore</strong><br>Embermaal, Scourge of
+                                Shieldhome</div>
+                            <div class="swiper-slide card"><strong>Zombie</strong><br>Dark Shepherd of the Void</div>
+                            <div class="swiper-slide card"><strong>Skeleton</strong><br>Stormspeaker of the Black Tide
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Powers You Can Use Tonight</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card"><strong>Empathic Link</strong><br>Let you feel another
+                                creature's
+                                pain
+                            </div>
+                            <div class="swiper-slide card"><strong>Tidal Smash</strong><br>Create a wave that knocks
+                                away foes
+                            </div>
+                            <div class="swiper-slide card"><strong>Bite the Lightning</strong><br>Strikes a distant
+                                enemy with
+                                us
+                            </div>
+                            <div class="swiper-slide card"><strong>Malediction</strong><br>Place a curse upon a foe
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Tips & Resources for GMs</h2>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card"><strong>How to Build Rivals & Archvillains</strong><br>April
+                                23,
+                                2024<br>How to create compelling enemies</div>
+                            <div class="swiper-slide card"><strong>D&D Monsters Without Spellcaster</strong><br>April
+                                18,
+                                2024<br>Ten powers for powers for a variety</div>
+                            <div class="swiper-slide card"><strong>Make D&D Monsters More Distinct</strong><br>April 1,
+                                2024<br>Customize them with flair</div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.swiper-container').forEach(container => {
+            new Swiper(container, {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                loop: true,
+                navigation: {
+                    nextEl: container.querySelector('.swiper-button-next'),
+                    prevEl: container.querySelector('.swiper-button-prev'),
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
