@@ -120,31 +120,58 @@
         .swiper-slide.card {
             position: relative;
             aspect-ratio: 4 / 3;
-            width: 100%;
             overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
-        /* Overlay content */
-        .card-content {
+        /* The actual image that fills the card */
+        .card-image {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
 
+        /* Overlay text content */
+        .card-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 1rem;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
 
-            text-align: center;
-            padding: 1em;
+            /* 🔮 Core blur effect */
+            background: rgba(0, 0, 0, 0.3);
+            /* Dark translucent background */
+            backdrop-filter: blur(6px);
+            /* Blur the image underneath */
+            -webkit-backdrop-filter: blur(6px);
+            /* Safari support */
 
-            background: rgba(0, 0, 0, 0.4);
-            /* semi-transparent black overlay for readability */
-            color: #f2e6d9;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        /* Optional styling */
+        .card-title {
+            font-size: 2rem;
+            color: #e63946;
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-tagline {
+            font-size: 1.5rem;
+            color: #e63946;
+            margin-top: 0.25rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .masked {
@@ -158,51 +185,6 @@
             -webkit-mask-size: 100% 100%;
             -webkit-mask-repeat: no-repeat;
             -webkit-mask-position: center;
-        }
-
-        .masked-img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            z-index: 0;
-
-
-            mask-image: url('img/backgrounds/watercolor-mask.webp');
-            mask-size: 100% 100%;
-            mask-repeat: no-repeat;
-            mask-position: center;
-
-            -webkit-mask-image: url('img/backgrounds/watercolor-mask.webp');
-            -webkit-mask-size: 100% 100%;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-position: center;
-        }
-
-        .masked-container {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 0;
-
-            mask-image: url('img/backgrounds/watercolor-mask.webp');
-            -webkit-mask-image: url('img/backgrounds/watercolor-mask.webp');
-            mask-size: 100% 100%;
-            -webkit-mask-size: 100% 100%;
-            mask-repeat: no-repeat;
-            -webkit-mask-repeat: no-repeat;
-            mask-position: center;
-            -webkit-mask-position: center;
-        }
-
-        .masked-container img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            display: block;
         }
     </style>
 </head>
@@ -255,9 +237,7 @@
                     <div class="swiper-monsters swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card masked">
-                                <div class="masked-container">
-                                    <img src="img/monsters/lich.webp" alt="Lich" />
-                                </div>
+                                <img class="card-image" src="img/monsters/lich.webp" alt="Lich" />
                                 <div class="card-content">
                                     <h3 class="card-title">Lich</h3>
                                     <p class="card-tagline">Soulbound Tyrant of the Dead</p>
