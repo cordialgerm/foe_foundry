@@ -7,18 +7,72 @@
     <title>Foe Foundry</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
     <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --muted-color: #2a2a2a;
+            --fg-color: #f4f1e6;
+
+            --primary-color: #ff3737;
+            --secondary-color: #5b22cf;
+            --tertiary-color: #c29a5b;
+            --box-shadow-color: #aaaaaa70;
+            --box-shadow-strong-color: #aaaaaa30;
+
+            --stylistic-font: "Uncial Antiqua";
+            --stylistic-font-size: 26px;
+
+            --header-font: "Cinzel";
+            --header-font-size: 16px;
+            --header-border-width: 2px;
+
+            --primary-font: "Merriweather", serif;
+            --primary-font-size: 13px;
+            --primary-line-height: 1.4;
+
+            --stats-font-size: 14px;
+            --stats-line-height: 1.25em;
+
+            --column-size: 390px;
+
+            --small-margin: 6px;
+            --big-margin: 12px;
+            --medium-margin: 9px;
+        }
+
         body {
-            background-color: #1a1a1a;
-            color: #f2e6d9;
-            font-family: Georgia, serif;
+            background-color: var(--muted-color);
+            color: var(--fg-color);
+            font-family: var(--primary-font);
             margin: 0;
             padding: 0;
         }
 
+        h1 {
+            font-family: var(--stylistic-font);
+            color: var(--primary-color);
+            text-align: center;
+        }
+
         h2 {
-            color: #e63946;
-            margin-top: 2em;
+            font-family: var(--header-font);
+            color: var(--fg-color);
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+            margin: var(--big-margin);
+            position: relative;
+        }
+
+        p {
+            color: var(--fg-color);
             text-align: center;
         }
 
@@ -81,50 +135,49 @@
         }
 
         /* Default slide style for smallest screens (mobile-first) */
-        .swiper-slide {
+        /* .swiper-slide {
             flex: 0 0 auto;
-            /* Prevent shrinking; keep slide width fixed */
             width: 100%;
-            /* Full width on very small screens (1 card per row) */
             max-width: 100%;
-        }
+        } */
 
         /* Small screens (≥576px) — show 2 cards per row */
-        @media (min-width: 576px) {
+        /* @media (min-width: 576px) {
             .swiper-slide {
                 width: clamp(240px, 48%, 300px);
-                /* Let cards grow naturally between 240–300px */
                 max-width: 48%;
-                /* Prevent more than 2 cards fitting tightly */
             }
-        }
+        } */
 
         /* Medium screens (≥768px) — aim for 3 cards per row */
-        @media (min-width: 768px) {
+        /* @media (min-width: 768px) {
             .swiper-slide {
                 width: clamp(240px, 32%, 300px);
-                /* Smoother spacing for 3-up layout */
                 max-width: 32%;
             }
-        }
+        } */
 
         /* Large screens (≥1200px) — up to 4 cards per row */
-        @media (min-width: 1200px) {
+        /* @media (min-width: 1200px) {
             .swiper-slide {
                 width: clamp(240px, 25%, 320px);
-                /* Cap at 320px but allow flexibility */
                 max-width: 25%;
             }
-        }
+        } */
 
         .swiper-slide.card {
             position: relative;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 4/3;
+            width: 200px;
             overflow: hidden;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
+        .swiper-slide.card.tall {
+            height: 400px;
+            width: 300px;
+        }
 
         /* The actual image that fills the card */
         .card-image {
@@ -155,10 +208,10 @@
 
         /* 🔳 Painted gray label with watercolor edges */
         .masked-label {
-            background-color: rgba(80, 80, 80, 0.40);
+            background-color: rgba(80, 80, 80, 0.60);
             /* nice opaque gray */
             display: inline-block;
-            padding: 0.25rem;
+            padding: 0.5rem;
 
             /* Apply watercolor mask */
             mask-image: url('img/backgrounds/watercolor-mask2.webp');
@@ -173,17 +226,14 @@
 
         /* Optional styling */
         .card-title {
-            font-size: 2rem;
-            color: #e63946;
-            margin: 0;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            color: var(--fg-color);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
         }
 
         .card-tagline {
-            font-size: 1.5rem;
-            color: #e63946;
+            color: var(--fg-color);
             margin-top: 0.25rem;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
         }
 
         .masked {
@@ -207,11 +257,12 @@
 
     <div class="container">
         <header>
-            <h1>Summon unforgettable monsters, instantly</h1>
+            <h1>Summon Unforgettable Monsters, Instantly</h1>
         </header>
+        <hr />
 
         <section>
-            <h2>Discover</h2>
+            <h2>Discover Monsters, Powers, and GM Tips</h2>
             <div class="row">
                 <div class="col-12">
                     <div class="swiper-discover swiper-container">
@@ -240,43 +291,61 @@
                 </div>
             </div>
 
+            <hr />
+
         </section>
 
         <section>
             <h2>Featured Monsters</h2>
+            <p class="lead">
+                <strong>No More Boring Monsters!</strong>
+            </p>
+            <p class="lead">
+                Say goodbye to bland statblocks.
+                Our monsters are forged from 100s of handcrafted powers.
+            </p>
             <div class="row">
                 <div class="col-12">
                     <div class="swiper-monsters swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide card masked">
+                            <div class="swiper-slide card tall masked">
                                 <img class="card-image" src="img/monsters/lich.webp" alt="Lich" />
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Lich</h3>
-                                        <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                        <p class="card-tagline">Immortal Masters of Undeath and Arcana</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide card masked">
-                                <img class="card-image" src="img/monsters/lich.webp" alt="Lich" />
-                                <div class="card-content">
-                                    <h3 class="card-title">Lich</h3>
-                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide card tall masked">
+                                    <img class="card-image" src="img/monsters/owlbear.webp" alt="Owlbear" />
+                                    <div class="card-content">
+                                        <div class="masked-label">
+                                            <h3 class="card-title">Owlbear</h3>
+                                            <p class="card-tagline">Unnaturally Territorial Predators</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide card masked"
-                                style="background-image: url('img/monsters/lich.webp')">
-                                <div class="card-content">
-                                    <h3 class="card-title">Lich 3</h3>
-                                    <p class="card-tagline">Soulbound Tyrant of the Dead</p>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide card tall masked">
+                                        <img class="card-image" src="img/monsters/goblin.webp" alt="Goblin" />
+                                        <div class="card-content">
+                                            <div class="masked-label">
+                                                <h3 class="card-title">Goblin</h3>
+                                                <p class="card-tagline">Chaotic tricksters, pillagers, and endless
+                                                    nuisances</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="swiper-button-prev swiper-monsters-prev"></div>
+                                <div class="swiper-button-next swiper-monsters-next"></div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev swiper-monsters-prev"></div>
-                        <div class="swiper-button-next swiper-monsters-next"></div>
                     </div>
-                </div>
-            </div>
+
+                    <hr />
 
         </section>
 
@@ -306,6 +375,8 @@
                 </div>
             </div>
 
+            <hr />
+
         </section>
 
         <section>
@@ -329,6 +400,8 @@
                     </div>
                 </div>
             </div>
+
+            <hr />
         </section>
     </div>
 
