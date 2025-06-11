@@ -17,10 +17,13 @@
             --fg-color: #f4f1e6;
 
             --primary-color: #ff3737;
-            --secondary-color: #5b22cf;
+            --primary-faded-color: #3b2f2f4a;
             --tertiary-color: #c29a5b;
             --box-shadow-color: #aaaaaa70;
             --box-shadow-strong-color: #aaaaaa30;
+
+            --card-bg-color: white;
+            --card-text-color: black;
 
             --stylistic-font: "Uncial Antiqua";
             --stylistic-font-size: 26px;
@@ -63,6 +66,13 @@
             text-align: center;
         }
 
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a {
+            color: var(--fg-color);
+        }
+
         hr {
             border: none;
             height: 3px;
@@ -76,29 +86,6 @@
             text-align: center;
         }
 
-        .section {
-            padding: 2em;
-        }
-
-        .card {
-            background: #3b2f2f;
-            padding: 1em;
-            border-radius: 8px;
-            color: #f2e6d9;
-            text-align: center;
-        }
-
-        .btn {
-            margin-top: 1em;
-            display: inline-block;
-            padding: 0.5em 1em;
-            background-color: #e63946;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            cursor: pointer;
-        }
 
         /* Full-page parallax logo background */
         .parallax-logo-bg {
@@ -121,49 +108,18 @@
             z-index: -1;
         }
 
-        .swiper-wrapper {
-            justify-content: center;
-            display: flex;
-            flex-wrap: nowrap;
+        .card {
+            background: var(--card-bg-color);
+            padding: 1em;
+            border-radius: var(--medium-margin);
+            text-align: center;
         }
 
         .swiper-container {
             position: relative;
             max-width: 100%;
             overflow: hidden;
-            padding: 1em 0;
         }
-
-        /* Default slide style for smallest screens (mobile-first) */
-        /* .swiper-slide {
-            flex: 0 0 auto;
-            width: 100%;
-            max-width: 100%;
-        } */
-
-        /* Small screens (≥576px) — show 2 cards per row */
-        /* @media (min-width: 576px) {
-            .swiper-slide {
-                width: clamp(240px, 48%, 300px);
-                max-width: 48%;
-            }
-        } */
-
-        /* Medium screens (≥768px) — aim for 3 cards per row */
-        /* @media (min-width: 768px) {
-            .swiper-slide {
-                width: clamp(240px, 32%, 300px);
-                max-width: 32%;
-            }
-        } */
-
-        /* Large screens (≥1200px) — up to 4 cards per row */
-        /* @media (min-width: 1200px) {
-            .swiper-slide {
-                width: clamp(240px, 25%, 320px);
-                max-width: 25%;
-            }
-        } */
 
         .swiper-slide.card {
             position: relative;
@@ -179,7 +135,6 @@
             width: 300px;
         }
 
-        /* The actual image that fills the card */
         .card-image {
             position: absolute;
             inset: 0;
@@ -190,7 +145,17 @@
             z-index: 0;
         }
 
-        /* Overlay text content */
+        .card-icon {
+            color: var(--primary-faded-color);
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            z-index: -1;
+        }
+
         .card-content {
             position: relative;
             z-index: 1;
@@ -206,7 +171,6 @@
             isolation: isolate;
         }
 
-        /* 🔳 Painted gray label with watercolor edges */
         .masked-label {
             background-color: rgba(80, 80, 80, 0.60);
             /* nice opaque gray */
@@ -224,16 +188,30 @@
             -webkit-mask-position: center;
         }
 
-        /* Optional styling */
         .card-title {
+            color: var(--card-text-color);
+        }
+
+        .masked-label .card-title {
             color: var(--fg-color);
             text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
         }
 
         .card-tagline {
-            color: var(--fg-color);
+            color: var(--card-text-color);
             margin-top: 0.25rem;
+
+        }
+
+        .masked-label .card-tagline {
+            color: var(--fg-color);
             text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        }
+
+        .card-details {
+            color: var(--card-text-color);
+            margin-top: 0.25rem;
+            font-size: 0.9rem;
         }
 
         .masked {
@@ -256,53 +234,17 @@
     <div id="parallax-logo-bg" class="parallax-logo-bg"></div>
 
     <div class="container">
+
         <header>
-            <h1>Summon Unforgettable Monsters, Instantly</h1>
-        </header>
-        <hr />
-
-        <section>
-            <h2>Discover Monsters, Powers, and GM Tips</h2>
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-discover swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide card">
-                                <img src="monster.png" alt="Monster Icon">
-                                <strong>Lich, Sovereign of Ashes</strong><br>
-                                Soulbound tyrant of the dead
-                                <div><a href="#" class="btn">View Monster</a></div>
-                            </div>
-                            <div class="swiper-slide card">
-                                <img src="fire.png" alt="Fire Icon">
-                                <strong>Soulfire Surge</strong><br>
-                                Detonating the caster in radiant flame
-                                <div><a href="#" class="btn">View Power</a></div>
-                            </div>
-                            <div class="swiper-slide card">
-                                <img src="scroll.png" alt="Scroll Icon">
-                                <strong>5 Tips for Smarter Monsters</strong>
-                                <div><a href="#" class="btn">Read Post</a></div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev swiper-discover-prev"></div>
-                        <div class="swiper-button-next swiper-discover-next"></div>
-                    </div>
-                </div>
-            </div>
-
+            <h1 class="branding">Foe Foundry</h1>
             <hr />
-
-        </section>
+        </header>
 
         <section>
-            <h2>Featured Monsters</h2>
+            <h2><a href="https://foefoundry.com/monsters">Summon Unforgettable Monsters, Instantly</a></h2>
             <p class="lead">
-                <strong>No More Boring Monsters!</strong>
-            </p>
-            <p class="lead">
-                Say goodbye to bland statblocks.
-                Our monsters are forged from 100s of handcrafted powers.
+                Discover monsters by theme, vibe, environment, or adventure hook.
+                Even when you don't know exactly what you're looking for!
             </p>
             <div class="row">
                 <div class="col-12">
@@ -317,60 +259,44 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide card tall masked">
-                                    <img class="card-image" src="img/monsters/owlbear.webp" alt="Owlbear" />
-                                    <div class="card-content">
-                                        <div class="masked-label">
-                                            <h3 class="card-title">Owlbear</h3>
-                                            <p class="card-tagline">Unnaturally Territorial Predators</p>
-                                        </div>
+                            <div class="swiper-slide card tall masked">
+                                <img class="card-image" src="img/monsters/owlbear.webp" alt="Owlbear" />
+                                <div class="card-content">
+                                    <div class="masked-label">
+                                        <h3 class="card-title">Owlbear</h3>
+                                        <p class="card-tagline">Unnaturally Territorial Predators</p>
                                     </div>
                                 </div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide card tall masked">
-                                        <img class="card-image" src="img/monsters/goblin.webp" alt="Goblin" />
-                                        <div class="card-content">
-                                            <div class="masked-label">
-                                                <h3 class="card-title">Goblin</h3>
-                                                <p class="card-tagline">Chaotic tricksters, pillagers, and endless
-                                                    nuisances</p>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="swiper-slide card tall masked">
+                                <img class="card-image" src="img/monsters/goblin.webp" alt="Goblin" />
+                                <div class="card-content">
+                                    <div class="masked-label">
+                                        <h3 class="card-title">Goblin</h3>
+                                        <p class="card-tagline">Chaotic tricksters, pillagers, and endless
+                                            nuisances</p>
                                     </div>
                                 </div>
-                                <div class="swiper-button-prev swiper-monsters-prev"></div>
-                                <div class="swiper-button-next swiper-monsters-next"></div>
+                            </div>
+                            <div class="swiper-slide card tall masked">
+                                <img class="card-image" src="img/monsters/chimera.webp" alt="Chimera" />
+                                <div class="card-content">
+                                    <div class="masked-label">
+                                        <h3 class="card-title">Chimera</h3>
+                                        <p class="card-tagline">Monstrous Messenger of Imminent Disaster</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card tall masked">
+                                <img class="card-image" src="img/monsters/priest.webp" alt="Priest" />
+                                <div class="card-content">
+                                    <div class="masked-label">
+                                        <h3 class="card-title">Priest</h3>
+                                        <p class="card-tagline">Faithful Instruments of the Divine</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <hr />
-
-        </section>
-
-        <section>
-            <h2>Powers You Can Use Tonight</h2>
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-powers swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide card"><strong>Empathic Link</strong><br>Let you feel another
-                                creature's
-                                pain
-                            </div>
-                            <div class="swiper-slide card"><strong>Tidal Smash</strong><br>Create a wave that knocks
-                                away foes
-                            </div>
-                            <div class="swiper-slide card"><strong>Bite the Lightning</strong><br>Strikes a distant
-                                enemy with
-                                us
-                            </div>
-                            <div class="swiper-slide card"><strong>Malediction</strong><br>Place a curse upon a foe
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev swiper-powers-prev"></div>
-                        <div class="swiper-button-next swiper-powers-next"></div>
                     </div>
                 </div>
             </div>
@@ -380,27 +306,94 @@
         </section>
 
         <section>
-            <h2>Tips & Resources for GMs</h2>
-
+            <h2><a href="https://foefoundry.com/powers/all">Unique Monsters with Handcrafted Powers</a></h2>
+            <p class="lead">
+                No More Boring Monsters! Say goodbye to bland statblocks.
+                Our monsters are forged from 100s of handcrafted powers.
+            </p>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-tips swiper-container">
+                    <div class="swiper-powers swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide card"><strong>How to Build Rivals & Archvillains</strong><br>April
-                                23,
-                                2024<br>How to create compelling enemies</div>
-                            <div class="swiper-slide card"><strong>D&D Monsters Without Spellcaster</strong><br>April
-                                18,
-                                2024<br>Ten powers for powers for a variety</div>
-                            <div class="swiper-slide card"><strong>Make D&D Monsters More Distinct</strong><br>April 1,
-                                2024<br>Customize them with flair</div>
+                            <div class="swiper-slide card masked">
+                                <div class="card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M18 18v133.4c37.93-48.8 88.7-72.27 129.6-69.77-6.8-20.08-9.1-41.72-9.9-63.63H18zm121.3 82.3c-37 1.9-87.64 28.6-121.24 84.1 25.2 56.8 58.7 115.7 94.74 155.3 30.9-10.9 72.8-30.8 113.1-54.4-19.7-45.8-15.8-92.2 1.6-128.9-13 .2-24.3-1.3-35.4-5.6-13.9 13.2-27.4 29.1-31.2 47.3l-18.3-3.5c5.7-21.3 16.5-39.9 32.2-53.4-6-4.3-11.6-9.4-16.7-15.1-19.9 9.1-40.2 31.4-43.3 50.2l-18.44-3.1c4.44-26.4 25.84-50 49.94-62.1-2.4-3.5-4.7-7.1-7-10.8zm185.3 2.9c-12.1-.1-23.9 3.7-36.3 11-44.5 26.6-76.6 99.1-42.7 169.6l7.2 7.2-10.2 6.2c-46.5 27.9-95.1 51-130.8 62.5l12.4 17.9c29.3-10.8 61.6-25.2 94.4-41.9 63 30.1 49.1 114.6-6.5 159.3h29.3c9.4-17 15.1-43.4 36.4-50 8.2-2.5 5 30 9.3 50h45.7c-2.5-13.4-2.2-34.6 3.5-35.1 10.6-1 18.9 21.3 27 35.1h50.2c-103.1-112.3-95.8-156.5-75.7-228.1 28.1-18.3 54.5-37 77.2-55.1-13.4-54.6-34.9-85.3-57.1-99-11.7-6.4-22.6-9.5-33.3-9.6zm-4.6 175c-8.7 21.9-17.5 49.6-24.2 48.5-14.6-2.5-19.6-10.9-23.2-20.1 16-9.2 31.9-18.7 47.4-28.4zm-60.1 35.5c6.1 19.6 14.5 46.1 9.1 50-7.4 5.4-19.5-22.6-30.4-38.4 7.1-3.8 14.2-7.6 21.3-11.6zm49.2 21c4.7-.5 19.9 68.6 37.3 101.6 10.4 19.7-25 14.3-28.9 3.4-12.5-35-14.3-104.4-8.4-105zM288 352c9.1 0 9.1 22.9 5.9 35.9-3.5 14.1-7.7 37.2-11.2 34.3-11.8-9.8-3.8-70.2 5.3-70.2zm9.8 78.4c3.8.3 8.9 12.5 9.9 19.6 1.2 8.2-1.5 24.1-5 24.4-5 .5-7-17.5-7.6-26.7-.4-5.8-3.8-16.5 2.3-17.3h.4z" />
+                                    </svg>
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <h3 class="card-title">Adhesive</h3>
+                                        <p class="card-details"> The aboleth adheres to anything that touches it
+                                            (including weapons). A Huge or smaller creature or object adhered to the
+                                            aboleth is also Grappled by it (escape DC 14). Ability checks made to escape
+                                            this grapple have disadvantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card masked">
+                                <div class="card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="m257.313 15.688-50.375 87.53 28.156-8.53 22.28-38.72 22.407 38.782 28.126 8.47-50.594-87.532zm-138.938 77.75 18.5 99.28 14.156-22.093L141.595 120l48.97 17.313 23.124-10.157-95.313-33.72zm278.72 0-95.314 33.718 23.876 10.5L375.562 120l-9.812 52.688 12.844 20.03 18.5-99.28zm-139.72 2.03-9.344 2.844v104.47l9.69 11.343 9-10.5V98.28l-9.345-2.81zm81.22 52.032-54.345 63.688.344.28-14.563 17 12.033 14.063 71.093-83.343-4.75-7.375-9.812-4.312zm-161.25.53-8.595 3.782-5.47 8.532 255.5 299.469L433 447.688l-8.094-9.47 22.688-10.03 11.47-5.063-8.158-9.53-44.125-51.783-2.31-2.718-3.564-.47-49.562-6.655-174-203.94zm56.06 123.22-62.218 72.688-.125-.094-6.625 7.75-49.718 6.687-3.564.47-2.312 2.72-44.28 51.936-8.158 9.563 11.5 5.06 22.75 10.064-8.187 9.594 14.218 12.156L245.594 285.28l-12.188-14.03zm24.376 28.125-9.75 11.28v178.75h18.69v-15.092l24.874 7.437 12.03 3.594v-87l-2.374-2.656-34.53-38.47v-47.5l-8.94-10.343zm-111.5 73.5-42.936 50.375L86.906 416l33.844-39.688 25.53-3.437zm223.22.375 25.406 3.438 33.656 39.468-16.312 7.22-42.75-50.126zm-140.03 4.375-16.064 18.094-2.344 2.655v87.031l12.063-3.656 6.344-1.906v-102.22zm37.25 7.563 18.217 20.312v54.75l-18.218-5.438v-69.625zm-87.75 5.406-64.564 74.687 3.5 5.44 6.813 10.592 8.155-9.593 44.28-51.94 2.314-2.686-.064-3.563-.437-22.936zm157.905.156-.438 22.97-.093 3.53 2.312 2.72 44.125 51.75 8.19 9.592 6.78-10.625 3.53-5.5-64.405-74.437z" />
+                                    </svg>
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <h3 class="card-title">Modify Memory</h3>
+                                        <p class="card-details">Immediately after hitting with an attack, the aboleth
+                                            attempts to reshape that creature's memories. The creature must succeed on a
+                                            DC 12 Intelligence saving throw or be affected as if by the Modify Memory
+                                            spell. A creature that succeeds on the save is immune to this effect for 24
+                                            hours.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card masked">
+                                <div class="card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M256 32c-64 48-128 64-224 96 0 128 160 320 224 368 64-48 224-240 224-368-96-32-160-48-224-96zm0 34.75 5.4 4.05c49.7 37.3 99.6 49.9 176.7 75.6l6.2 2v6.5c0 55-33.1 119.7-72 176.4-38.9 56.8-83.6 105-110.9 125.5l-5.4 4.1-5.4-4.1c-27.3-20.5-72-68.7-110.9-125.5-38.9-56.7-72-121.4-72-176.4v-6.5l6.15-2C150.9 120.7 200.9 108 250.6 70.8l5.4-4.05zm0 22.18c-49.4 35.37-99.8 49.17-170.05 72.37 2.58 46.7 32.35 107 68.65 159.9 35.3 51.5 76.6 96.3 101.4 116.8 24.8-20.5 66.1-65.3 101.4-116.8 36.3-52.9 66.1-113.2 68.6-159.9-70.3-23.2-120.6-37-170-72.37zm-45.5 54.97c19.7.5 38.1 14.4 45.5 48.1 18-86.3 110-42.5 110 22.5-1 63.9-92 107.7-110 162.1-19-54.4-108-98.2-110-162.1 0-39.6 33.8-71.3 64.5-70.6z" />
+                                    </svg>
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <h3 class="card-title">Death Ward</h3>
+                                        <p class="card-details">When a creature within 30 feet of the priest takes
+                                            damage that would reduce it to zero hit points, the priest can use its
+                                            reaction to instead set that creature's hit points to 10.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card masked">
+                                <div class="card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M140.5 19.156V192.28l21.813 28.532h15.53V19.156H140.5zm56.03 0v201.656h122.064V19.156H196.53zm140.75 0v201.656h12.345l22.094-28.53V19.155h-34.44zM173.94 239.5v18.125h164.09V239.5H173.94zm30.78 36.813 8.032 10.53c-25.262 12.014-45.128 33.46-55.094 59.813l65.03 47.47 5.47 3.968-2.094 6.437-17.312 53.69 45.656-33.064 5.5-3.97 5.47 3.97 62.468 45.22c24.872-19.957 40.78-50.6 40.78-85.063 0-6.494-.573-12.854-1.655-19.032l-58.845 42.94-11-15.095L361.688 347c-10.683-28.55-32.932-51.392-61.125-62.78l6.125-7.908h-38.813l-25.5 78-17.75-5.812 23.594-72.188h-43.5zm-52.374 89.625a110.094 110.094 0 0 0-1.72 19.375c0 32.163 13.84 61.008 35.907 80.937l19.69-61.03-53.876-39.283zm107.562 78.343-51.53 37.314c15.266 8.124 32.707 12.72 51.25 12.72 18.673-.002 36.218-4.676 51.562-12.908l-51.282-37.125z" />
+                                    </svg>
+                                </div>
+                                <div class="card-content">
+                                    <div>
+                                        <h3 class="card-title">Heroism</h3>
+                                        <p class="card-tagline">The priest inspires another friendly creature within 60
+                                            ft, granting it 10 temporary hit points. While those temporary hitpoints are
+                                            active, the creature has advantage on saving throws and is immune to being
+                                            frightened or charmed.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-button-prev swiper-tips-prev"></div>
-                        <div class="swiper-button-next swiper-tips-next"></div>
                     </div>
                 </div>
             </div>
 
+            <hr />
+        </section>
+
+        <section>
+            <h2>Tips & Resources for GMs</h2>
+            TODO
             <hr />
         </section>
     </div>
@@ -410,42 +403,56 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
 
-        const swipers = [];
-
         [
-            { id: 'discover' },
             { id: 'monsters' },
             { id: 'powers' },
-            { id: 'tips' }
         ].forEach(({ id }) => {
 
             const swiperContainer = document.querySelector(`.swiper-${id}`);
-            const nextEl = swiperContainer.querySelector('.swiper-button-next');
-            const prevEl = swiperContainer.querySelector('.swiper-button-prev');
 
-            const navigation = {
-                nextEl: nextEl,
-                prevEl: prevEl
-            }
-            console.log(navigation);
+            // Add some random noise to the delay (e.g., ±2000ms)
+            const baseDelay = 6000;
+            const delayNoise = Math.floor(Math.random() * 2000); // 0–1999ms
+            const randomizedDelay = baseDelay + delayNoise;
 
             const swiper = new Swiper(swiperContainer, {
-                slidesPerView: 'auto',
-                spaceBetween: 16,
-                navigation: {
-                    nextEl: nextEl,
-                    prevEl: prevEl
-                }
+                autoplay: {
+                    delay: randomizedDelay,
+                    disableOnInteraction: true
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 16
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 16
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 16
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 32
+                    },
+                    1400: {
+                        slidesPerView: 3,
+                        spaceBetween: 48
+                    },
+                },
+                initialSlide: 1,
+                centeredSlides: true,
+                createElements: true,
+                grabCursor: true,
+                keyboard: true,
+                navigation: true,
+                parallax: true,
             });
 
-            swipers.push(swiper);
-        });
-
-
-        // Recalculate layout on window resize
-        window.addEventListener('resize', () => {
-            console.log('updating swipers...');
-            swipers.forEach(swiper => swiper.update());
+            swiper.autoplay.stop();
+            setTimeout(() => swiper.autoplay.start(), 6000 + Math.random() * 3000); // Start autoplay after 6–9s
         });
     </script>
 </body>
