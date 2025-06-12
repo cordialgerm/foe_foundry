@@ -17,7 +17,8 @@
             --fg-color: #f4f1e6;
 
             --primary-color: #ff3737;
-            --primary-faded-color: #3b2f2f4a;
+            --primary-faded-color: #ff37374a;
+            --primary-muted-color: #a53939;
             --tertiary-color: #c29a5b;
             --box-shadow-color: #aaaaaa70;
             --box-shadow-strong-color: #aaaaaa30;
@@ -44,6 +45,8 @@
             --small-margin: 6px;
             --big-margin: 12px;
             --medium-margin: 9px;
+
+            --swiper-navigation-color: var(--primary-muted-color);
         }
 
         body {
@@ -52,6 +55,10 @@
             font-family: var(--primary-font);
             margin: 0;
             padding: 0;
+        }
+
+        section {
+            margin-top: 2rem;
         }
 
         h1 {
@@ -151,9 +158,17 @@
             inset: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain;
-            object-position: center;
             z-index: -1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-icon svg {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
         }
 
         .card-content {
