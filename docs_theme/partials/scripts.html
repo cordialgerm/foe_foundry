@@ -1,0 +1,13 @@
+{%- block scripts %}
+<script src="{{ 'js/bootstrap.bundle.min.js'|url }}"></script>
+<script>
+    var base_url = {{ base_url| tojson }},
+    shortcuts = {{ config.theme.shortcuts | tojson }};
+</script>
+<script src="{{ 'js/base.js'|url }}"></script>
+
+{%- for script in config.extra_javascript %}
+{{ script|script_tag }}
+{%- endfor %}
+
+{%- endblock %}
