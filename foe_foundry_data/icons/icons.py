@@ -30,7 +30,7 @@ def icon_path(icon: str) -> Path | None:
     return icon_path
 
 
-def inline_icon(icon: str) -> str | None:
+def inline_icon(icon: str) -> Markup | None:
     """Returns the icon as an inline SVG."""
     path = icon_path(icon)
     if path is None:
