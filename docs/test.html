@@ -25,6 +25,7 @@
 
             --card-bg-color: white;
             --card-text-color: black;
+            --card-text-shadow: 1px 1px rgba(255, 255, 255, 0.20);
 
             --stylistic-font: "Uncial Antiqua";
             --stylistic-font-size: 26px;
@@ -97,6 +98,11 @@
             font-size: 1.0em;
         }
 
+        p a {
+            color: var(--fg-color);
+            font-weight: bold;
+        }
+
 
         /* Full-page parallax logo background */
         .parallax-logo-bg {
@@ -137,25 +143,67 @@
             font-size: var(--primary-font-size);
         }
 
-        .burnt-parchment.v2 {
-            background-image: url('img/backgrounds/parchment-burnt-2.webp');
+        .bg-object {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: unset;
+
+            border: none;
+            padding: var(--large-margin);
+            margin: var(--small-margin);
+
+            text-shadow: var(--card-text-shadow);
         }
 
-        .burnt-parchment.v3 {
-            background-image: url('img/backgrounds/parchment-burnt-3.webp');
+        .bg-object.v1,
+        .bg-object.gold {
+            --card-text-color: #1d160a;
+            background-image: url('img/backgrounds/objects/gold.webp');
         }
 
-        .burnt-parchment.v4 {
-            background-image: url('img/backgrounds/parchment-burnt-4.webp');
+        .bg-object.v2,
+        .bg-object.iron {
+            --card-text-color: #EAE1CA;
+            --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+            background-image: url('img/backgrounds/objects/iron.webp');
         }
 
-        .burnt-parchment.v5 {
-            background-image: url('img/backgrounds/scroll.webp');
+        .bg-object.v3,
+        .bg-object.papyrus {
+            background-image: url('img/backgrounds/objects/papyrus.webp');
         }
 
-        .burnt-parchment.v6 {
-            background-image: url('img/backgrounds/papyrus.webp');
+        .bg-object.v4,
+        .bg-object.stone {
+            background-image: url('img/backgrounds/objects/stone.webp');
         }
+
+        .bg-object.v5,
+        .bg-object.parchment {
+            background-image: url('img/backgrounds/objects/parchment.webp');
+        }
+
+
+        .bg-object.v6,
+        .bg-object.wood {
+            --card-text-color: #EAE1CA;
+            --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+            background-image: url('img/backgrounds/objects/wood.webp');
+        }
+
+        .bg-object.v7,
+        .bg-object.scroll {
+            background-image: url('img/backgrounds/objects/scroll.webp');
+        }
+
+        .bg-object.v8,
+        .bg-object.wax {
+            --card-text-color: #EAE1CA;
+            --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+            background-image: url('img/backgrounds/objects/wax.webp');
+        }
+
 
         .d20-icon {
             width: 3rem;
@@ -241,16 +289,21 @@
         }
 
         .swiper-slide.card {
-            padding: 1em;
-            text-align: center;
-            position: relative;
+            padding: 1.25em;
             aspect-ratio: 4/3;
             width: 200px;
             overflow: hidden;
             font-size: var(--primary-font-size);
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
         }
 
-        .swiper-slide.card:not(.burnt-parchment) {
+        .swiper-slide.card:not(.burnt-parchment, .bg-object) {
             background: var(--card-bg-color);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             border-radius: var(--medium-margin);
@@ -269,6 +322,15 @@
             object-fit: cover;
             object-position: center;
             z-index: 0;
+        }
+
+        .card-image.contain {
+            object-fit: contain;
+            padding: 0.25rem;
+        }
+
+        .card-image.faded {
+            opacity: 0.5;
         }
 
         .card-icon {
@@ -327,7 +389,14 @@
             color: var(--card-text-color);
         }
 
-        .masked-label .card-title {
+        @media (max-width: 900px) {
+            .card-title {
+                font-size: 1.0rem;
+            }
+        }
+
+        .masked-label .card-title,
+        .card-title.highlight {
             font-size: 1.3rem;
             color: var(--fg-color);
             text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
@@ -347,11 +416,35 @@
         .card-details {
             color: var(--card-text-color);
             margin-top: 0.2rem;
+
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            line-clamp: 3;
+            -webkit-line-clamp: 3
         }
 
         .card-details.big {
             font-size: 1.2em;
             line-height: 1.2em;
+        }
+
+        @media (max-width: 430px) {
+            .card-details.hide-on-sm {
+                display: none;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .card-details.big {
+                font-size: 1.0em;
+                line-height: 1.0em;
+            }
         }
 
         .masked {
@@ -375,6 +468,7 @@
 
     <div class="container">
 
+
         <header>
             <h1 class="branding">Foe Foundry</h1>
             <hr />
@@ -383,7 +477,8 @@
         <section>
             <h2><a href="https://foefoundry.com/monsters">Summon Unforgettable Monsters, Instantly</a></h2>
             <p class="lead">
-                Build the perfect monster for your campaign in seconds. Use our pre-built monster templates and
+                Build the perfect monster for your campaign in seconds. Use our pre-built <a
+                    href="https://foefoundry.com/monsters/">Monster Templates</a> and
                 customize from over 500 unique powers.
             </p>
             <div class="row">
@@ -395,7 +490,7 @@
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Lich</h3>
-                                        <p class="card-tagline">Immortal Masters of Undeath and Arcana</p>
+                                        <p class="card-tagline p-3">Immortal Masters of Undeath and Arcana</p>
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +499,7 @@
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Owlbear</h3>
-                                        <p class="card-tagline">Unnaturally Territorial Predators</p>
+                                        <p class="card-tagline p-3">Unnaturally Territorial Predators</p>
                                     </div>
                                 </div>
                             </div>
@@ -413,7 +508,7 @@
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Goblin</h3>
-                                        <p class="card-tagline">Chaotic tricksters, pillagers, and endless
+                                        <p class="card-tagline p-3">Chaotic tricksters, pillagers, and endless
                                             nuisances</p>
                                     </div>
                                 </div>
@@ -423,7 +518,7 @@
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Chimera</h3>
-                                        <p class="card-tagline">Monstrous Messenger of Imminent Disaster</p>
+                                        <p class="card-taglin p-3">Monstrous Messenger of Imminent Disaster</p>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +527,7 @@
                                 <div class="card-content">
                                     <div class="masked-label">
                                         <h3 class="card-title">Priest</h3>
-                                        <p class="card-tagline">Faithful Instruments of the Divine</p>
+                                        <p class="card-tagline p-3">Faithful Instruments of the Divine</p>
                                     </div>
                                 </div>
                             </div>
@@ -451,7 +546,7 @@
                 Summon foes packed with flavorful abilities, scale them instantly to your party's level, and get back to
                 what matters - having fun and thrilling your players.</p>
             <div>
-                <button class="reroll-button burnt-parchment v3 p-3 d-block mx-auto">
+                <button class="reroll-button bg-object parchment p-4 d-block mx-auto">
                     <span>Summon Your First Monster</span>
                     <svg class="d20-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M0 0h512v512H0z" fill="#ffffff" fill-opacity="0"></path>
@@ -472,62 +567,67 @@
                 <div class="col-12">
                     <div class="swiper-value-props swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide card burnt-parchment">
+                            <div class="swiper-slide card bg-object v1">
                                 <div class="p-2">
                                     <h3 class="card-title">No More Boring Monsters</h3>
-                                    <p class="card-details big">Say goodbye to bland statblocks. Foe Foundry monsters
+                                    <p class="card-details big hide-on-sm">Say goodbye to bland statblocks. Foe Foundry
+                                        monsters
                                         are forged from hundreds of handcrafted powers</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v2">
+                            <div class="swiper-slide card bg-object v2">
                                 <div class="p-2">
                                     <h3 class="card-title">Built by a GM, for GMs, to make your life easier</h3>
-                                    <p class="card-details big">Monsters should be fun and easy to run. No more bland
+                                    <p class="card-details big hide-on-sm">Monsters should be fun and easy to run. No
+                                        more
+                                        bland
                                         "Bite, Claw, Claw" monsters</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v3">
+                            <div class="swiper-slide card bg-object v3">
                                 <div class="p-2">
                                     <h3 class="card-title">Human Designed, Procedurally Generated</h3>
-                                    <p class="card-details big">Monsters are created from unique handcrafted
+                                    <p class="card-details big hide-on-sm">Monsters are created from unique handcrafted
                                         powers that are intelligently combined to create the perfect foe. </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v4">
+                            <div class="swiper-slide card bg-object v4">
                                 <div class="p-2">
                                     <h3 class="card-title">No AI Slop</h3>
-                                    <p class="card-details big">No AI Monsters. No AI Art. Monsters are created from
-                                        human-designe powers and templates.
+                                    <p class="card-details big hide-on-sm">No AI Monsters. No AI Art. Monsters are
+                                        created
+                                        from human-designed powers and templates by rolling on random tables.
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v5">
+                            <div class="swiper-slide card bg-object v5">
                                 <div class="p-2">
                                     <h3 class="card-title">Monsters should be threatening & fun.</h3>
-                                    <p class="card-details big">Foe Foundry monsters are guaranteed to pack a punch
-                                        and still have narrative and mechanically interesting abilities.</p>
+                                    <p class="card-details big hide-on-sm">Foe Foundry monsters are guaranteed to pack a
+                                        punch and still have narrative and mechanically interesting abilities.</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v6">
+                            <div class="swiper-slide card bg-object v6">
                                 <div class="p-2">
                                     <h3 class="card-title">Flavor & Firepower.</h3>
-                                    <p class="card-details big">Our monster library is full of challenging foes that hit
-                                        hard and ooze flavor. Only some are <i>actually</i> oozes!</p>
+                                    <p class="card-details big hide-on-sm">Our monster library is full of challenging
+                                        foes
+                                        that hit hard and ooze flavor. Only some are <i>actually</i> oozes!</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v3">
+                            <div class="swiper-slide card bg-object v7">
                                 <div class="p-2 d-flex flex-column align-items-center text-center">
-                                    <h3 class="card-title">Find Exactly What You Need</h3>
-                                    <p class="card-details big"><i>(Coming Soon)</i>. Discovery monsters by theme, vibe,
-                                        environment, or adventure hook - even when you don't know exactly what you're
-                                        looking for.</p>
+                                    <h3 class="card-title">Find What You Need</h3>
+                                    <p class="card-details big hide-on-sm"><i>(Coming Soon)</i>. Discover monsters by
+                                        theme, environment, or adventure hook - even when you don't know exactly what
+                                        you're looking for.</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide card burnt-parchment v2">
+                            <div class="swiper-slide card bg-object v8">
                                 <div class="p-2">
                                     <h3 class="card-title">Create the Perfect Encounter</h3>
-                                    <p class="card-details big"><i>(Coming Soon)</i>. Instantly generate balanced
-                                        encounters based on terrain, themes, and adventure prompts</p>
+                                    <p class="card-details big hide-on-sm"><i>(Coming Soon)</i>. Instantly generate
+                                        balanced encounters based on terrain, themes, and adventure prompts</p>
                                 </div>
                             </div>
                         </div>
@@ -624,7 +724,41 @@
 
         <section>
             <h2>Tips & Resources for GMs</h2>
-            TODO
+            <p class="lead">Check out the <a href="https://foefoundry.com/blog">Blog</a> for new monsters and tips.</p>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-blog swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card bg-object v3">
+                                <img class="card-image contain faded" src="img/icons/favicon.webp" />
+                                <div class="card-content p-2">
+                                    <h3 class="card-title highlight">Dev Diary #3</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card bg-object v4">
+                                <img class="card-image contain faded" src="img/monsters/ogre.webp" />
+                                <div class="card-content p-2">
+                                    <h3 class="card-title highlight">Meaner and Funnier Ogres</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide card bg-object v5">
+                                <img class="card-image contain faded" src="img/icons/favicon.webp" />
+                                <div class="card-content p-2">
+                                    <h3 class="card-title highlight">Makking Merrow Interesting and Deadly to Run</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card bg-object v6">
+                                <img class="card-image contain faded" src="img/icons/favicon.webp" />
+                                <div class="card-content p-2">
+                                    <h3 class="card-title highlight">Dev Diary #2</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr />
         </section>
     </div>
@@ -656,10 +790,40 @@
                 spaceBetween: 48
             },
         };
-        const breakpointsWide = {
+        const breakpointsFew = {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 16
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 32,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 16
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 32
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 32
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 48
+            },
+        };
+        const breakpointsFitMany = {
+            200: {
+                slidesPerView: 1,
+                spaceBetween: 8
+            },
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 8
             },
             576: {
                 slidesPerView: 2,
@@ -681,8 +845,9 @@
 
         [
             { id: 'monsters', breakpoints: breakpoints },
-            { id: 'powers', breakpoints: breakpoints },
-            { id: 'value-props', breakpoints: breakpointsWide },
+            { id: 'powers', breakpoints: breakpointsFew },
+            { id: 'value-props', breakpoints: breakpointsFitMany },
+            { id: 'blog', breakpoints: breakpointsFitMany }
         ].forEach(({ id, breakpoints }) => {
 
             const swiperContainer = document.querySelector(`.swiper-${id}`);
