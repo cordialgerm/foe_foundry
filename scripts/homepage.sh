@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Configuration
-PORT=8080
-START_PAGE="docs/test.html"
+PORT=8000
+
+# Create home page
+echo "Creating home page..."
+python3 -m docs_gen.homepage
+
 
 # Launch Python HTTP server
 echo "Starting local server on http://localhost:$PORT..."
@@ -15,7 +19,7 @@ SERVER_PID=$!
 sleep 1
 
 # Open in default browser
-open "http://localhost:$PORT/$START_PAGE"
+open "http://localhost:$PORT/site/index.html"
 
 # Wait for user to end script manually (Ctrl+C)
 trap "echo 'Stopping server...'; kill $SERVER_PID; exit" INT

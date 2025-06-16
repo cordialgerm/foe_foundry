@@ -8,7 +8,7 @@ from foe_foundry.creatures import AllTemplates, MonsterTemplate
 def generate_monsters_with_no_lore():
     for template in AllTemplates:
         # if the template already has lore then skip it
-        if len(template.lore_md):
+        if template.lore_md is not None and len(template.lore_md):
             continue
 
         generate_monster_file(template)

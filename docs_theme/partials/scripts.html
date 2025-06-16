@@ -1,10 +1,7 @@
 {%- block scripts %}
 <script src="{{ 'js/bootstrap.bundle.min.js'|url }}"></script>
-<script>
-    var base_url = {{ base_url| tojson }},
-    shortcuts = {{ config.theme.shortcuts | tojson }};
-</script>
 <script src="{{ 'js/base.js'|url }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 {%- for script in config.extra_javascript %}
 {{ script|script_tag }}
