@@ -9,6 +9,7 @@ from mkdocs.structure.pages import Page
 from docs_gen.backlinks import BlogBacklinks
 from docs_gen.json_ld import set_json_ld_on_page
 from docs_gen.related_monsters import set_related_monsters_on_page
+from foe_foundry_data.homepage import load_homepage_data
 
 log = logging.getLogger("mkdocs")
 backlinks = BlogBacklinks(log)
@@ -27,6 +28,9 @@ def on_files(files: Files, *, config: MkDocsConfig) -> Optional[Files]:
 def on_page_context(context, page: Page, config, nav):
     set_json_ld_on_page(page)
     backlinks.on_page_context(context, page, config, nav)
+
+    if page.is_homepage:
+        context["homepage_data"] = load_homepage_data()
 
 
 def on_page_markdown(markdown: str, page: Page, config, files):

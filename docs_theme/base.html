@@ -62,6 +62,12 @@
 
     {% include "partials/alpha_banner.html" %}
 
+
+    {% if page and page.is_homepage %}
+    <div class="container pamphlet-container">
+        {% include "homepage.j2.html" %}
+    </div>
+    {% else %}
     <div class="container pamphlet-container">
         <div class="row justify-content-center">
             {%- block content %}
@@ -74,6 +80,7 @@
             {%- endblock %}
         </div>
     </div>
+    {% endif %}
 
     {% include "partials/footer.html" %}
 

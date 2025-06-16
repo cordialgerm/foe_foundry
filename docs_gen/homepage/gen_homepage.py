@@ -34,18 +34,30 @@ def _script_tag_filter(extra_script: ExtraScriptValue) -> str:
 
 
 def _find_minified_version(
-    source_name: str, source_ext: str, search_dir: Path
-) -> Path | None:
-    # Pattern like: site.<hash>.min.css or site.min.css
+    source_name: str, source_ext: str, search_dir: Path, relative_to: Path
+) -> str:
+    # Match files like:
+    # - site.css
+    # - site.min.css
+    # - site.123abc.css
+    # - site.123abc.min.css
     pattern = re.compile(
-        rf"^{re.escape(source_name)}(\.[\w\d]+)?\.min{re.escape(source_ext)}$"
+        rf"^{re.escape(source_name)}(?:\.[\w\d]+)?(?:\.min)?{re.escape(source_ext)}$"
     )
 
-    for path in search_dir.rglob(f"{source_name}*.min{source_ext}"):
+    matches = []
+    for path in Path(search_dir).rglob(f"{source_name}*{source_ext}"):
         if pattern.match(path.name):
-            return path
+            matches.append(path)
 
-    return None
+    if len(matches) == 0:
+        raise FileNotFoundError(
+            f"No minified version of {source_name} found in {search_dir}"
+        )
+
+    match = matches[0]
+    rel_path = match.relative_to(relative_to)
+    return str(rel_path)
 
 
 def generate_homepage(output_path: Path):
@@ -71,10 +83,14 @@ def generate_homepage(output_path: Path):
 
     # minification plugin messes things up
     config.extra_css = [
-        _find_minified_version("site", ".css", Path.cwd() / "site" / "css")
+        _find_minified_version(
+            "site", ".css", Path.cwd() / "site" / "css", Path.cwd() / "site"
+        )
     ]
     config.extra_javascript = [  # type: ignore
-        _find_minified_version("extras", ".js", Path.cwd() / "site" / "scripts")
+        _find_minified_version(
+            "extras", ".js", Path.cwd() / "site" / "scripts", Path.cwd() / "site"
+        )
     ]
 
     page = {
