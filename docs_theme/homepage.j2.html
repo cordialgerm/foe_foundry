@@ -16,8 +16,8 @@
                     <div class="swiper-monsters swiper-container">
                         {% for monster in homepage_data.monsters %}
                         <div class="swiper-slide card tall masked" data-url="{{monster.url | url}}">
-                            <img class="card-image contain blend" src="{{monster.image | url}}"
-                                alt="{{monster.name}}" />
+                            <img class="card-image contain blend" src="{{monster.image | url}}" alt="{{monster.name}}"
+                                loading="{% if loop.index <= 5 %}eager{% else %}lazy{% endif %}" />
                             <div class="card-content">
                                 <div class="masked-label">
                                     <h3 class="card-title"><a href="{{monster.url | url}}">{{monster.name}}</a></h3>
