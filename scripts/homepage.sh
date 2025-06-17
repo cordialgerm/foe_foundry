@@ -5,7 +5,7 @@ PORT=8000
 
 # Create home page
 echo "Creating home page..."
-python3 -m docs_gen.homepage
+poetry run python -m docs_gen.homepage
 
 
 # Launch Python HTTP server

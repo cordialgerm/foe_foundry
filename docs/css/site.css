@@ -4,10 +4,15 @@
     --fg-color: #f4f1e6;
 
     --primary-color: #ff3737;
-    --secondary-color: #5b22cf;
+    --primary-faded-color: #ff37373b;
+    --primary-muted-color: #a53939;
     --tertiary-color: #c29a5b;
     --box-shadow-color: #aaaaaa70;
     --box-shadow-strong-color: #aaaaaa30;
+
+    --card-bg-color: white;
+    --card-text-color: black;
+    --card-text-shadow: 1px 1px rgba(255, 255, 255, 0.20);
 
     --stylistic-font: "Uncial Antiqua";
     --stylistic-font-size: 26px;
@@ -28,6 +33,9 @@
     --small-margin: 6px;
     --big-margin: 12px;
     --medium-margin: 9px;
+
+    /* Set Swiper CSS Variables */
+    --swiper-navigation-color: var(--primary-muted-color);
 
 
     /* Set Boostrap Variables to match theme */
@@ -1111,8 +1119,6 @@ a.burnt-parchment,
     }
 }
 
-
-
 .reroll-button:disabled {
     color: inherit;
 }
@@ -1175,5 +1181,257 @@ a.burnt-parchment,
 
     100% {
         transform: rotate(0deg) translateX(0);
+    }
+}
+
+/* Background Object Styles */
+
+.bg-object {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+
+    border: none;
+    padding: var(--large-margin);
+    margin: var(--small-margin);
+
+    text-shadow: var(--card-text-shadow);
+}
+
+.bg-object.v1,
+.bg-object.gold {
+    --card-text-color: #1d160a;
+    background-image: url('img/backgrounds/objects/gold.webp');
+}
+
+.bg-object.v2,
+.bg-object.iron {
+    --card-text-color: #EAE1CA;
+    --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    background-image: url('img/backgrounds/objects/iron.webp');
+}
+
+.bg-object.v3,
+.bg-object.papyrus {
+    background-image: url('img/backgrounds/objects/papyrus.webp');
+}
+
+.bg-object.v4,
+.bg-object.stone {
+    background-image: url('img/backgrounds/objects/stone.webp');
+}
+
+.bg-object.v5,
+.bg-object.parchment {
+    background-image: url('img/backgrounds/objects/parchment.webp');
+}
+
+
+.bg-object.v6,
+.bg-object.wood {
+    --card-text-color: #EAE1CA;
+    --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    background-image: url('img/backgrounds/objects/wood.webp');
+}
+
+.bg-object.v7,
+.bg-object.scroll {
+    background-image: url('img/backgrounds/objects/scroll.webp');
+}
+
+.bg-object.v8,
+.bg-object.wax {
+    --card-text-color: #EAE1CA;
+    --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    background-image: url('img/backgrounds/objects/wax.webp');
+}
+
+/* Homepage Styles */
+
+/* Full-page parallax logo background */
+.parallax-logo-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/icons/favicon.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Use 'cover' if you want it to fill the whole screen */
+    background-position: center center;
+    background-attachment: fixed;
+    /* Creates parallax effect */
+    opacity: 0.08;
+    /* Very subtle so it doesn’t overwhelm the content */
+    pointer-events: none;
+    /* So it doesn’t block buttons or links */
+    z-index: -1;
+}
+
+/* Swiper Styles */
+.swiper-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide.card {
+    padding: 1.25em;
+    aspect-ratio: 4/3;
+    width: 200px;
+    overflow: hidden;
+    font-size: var(--primary-font-size);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.swiper-slide.card:not(.burnt-parchment, .bg-object) {
+    background: var(--card-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: var(--medium-margin);
+}
+
+.swiper-slide.card.tall {
+    height: 300px;
+    width: 225px;
+}
+
+.card-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+.card-image.contain {
+    object-fit: contain;
+    padding: 0.25rem;
+}
+
+.card-image.faded {
+    opacity: 0.5;
+}
+
+.card-icon {
+    color: var(--primary-faded-color);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Ensure layering works */
+    pointer-events: none;
+    isolation: isolate;
+}
+
+.masked-label {
+    background-color: rgba(80, 80, 80, 0.60);
+    /* nice opaque gray */
+    display: inline-block;
+    padding: 0.5rem;
+
+    /* Apply watercolor mask */
+    mask-image: url('img/backgrounds/watercolor-mask2.webp');
+    -webkit-mask-image: url('img/backgrounds/watercolor-mask2.webp');
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--card-text-color);
+}
+
+@media (max-width: 900px) {
+    .card-title {
+        font-size: 1.0rem;
+    }
+}
+
+.masked-label .card-title,
+.card-title.highlight {
+    font-size: 1.3rem;
+    color: var(--fg-color);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
+}
+
+.card-tagline {
+    color: var(--card-text-color);
+    margin-top: 0.25rem;
+
+}
+
+.masked-label .card-tagline {
+    color: var(--fg-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.card-details {
+    color: var(--card-text-color);
+    margin-top: 0.2rem;
+
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-clamp: 3;
+    -webkit-line-clamp: 3
+}
+
+.card-details.big {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+@media (max-width: 430px) {
+    .card-details.hide-on-sm {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .card-details.big {
+        font-size: 1.0em;
+        line-height: 1.0em;
     }
 }
