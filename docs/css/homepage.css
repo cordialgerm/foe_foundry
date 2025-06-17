@@ -219,7 +219,8 @@ p a {
     --primary-color: var(--card-text-color);
 }
 
-.card-details {
+.card-details,
+.card-details p {
     color: var(--card-text-color);
     margin-top: 0.2rem;
 

@@ -12,6 +12,7 @@ from pydantic.dataclasses import dataclass
 from foe_foundry import AttackType
 from foe_foundry.creatures import GenerationSettings, SelectionSettings
 from foe_foundry.creatures.warrior import warrior
+from foe_foundry.features import ActionType
 from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
 
@@ -123,9 +124,22 @@ class PowerModel:
 
     @cached_property
     def feature_descriptions(self) -> str:
-        return "\n\n".join(
-            feature.name + ": " + feature.description_md for feature in self.features
-        )
+        features = []
+        for feature in self.features:
+            if feature.action == "Attack":
+                action_desc = ""  # attacks are obvious
+            else:
+                action = ActionType(feature.action.lower())
+                if action == ActionType.Feature:
+                    action_desc = ""  # traits are obvious
+                else:
+                    action_desc = f" ({action.caption})"
+
+            features.append(
+                f"***{feature.name}***{action_desc}: {feature.description_md}  "
+            )
+
+        return "\n\n".join(features)
 
     @property
     def columns_suggested(self) -> bool:

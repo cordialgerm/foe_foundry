@@ -77,7 +77,7 @@ def _monster(monster: MonsterTemplate) -> HomepageMonster:
 def _power(power: PowerModel) -> HomepagePower:
     feature_descriptions_html = markdown(power.feature_descriptions)
 
-    icon = inline_icon(power.icon or "favicon")
+    icon = inline_icon(power.icon or "favicon", fill="currentColor", wrap=False)
     if icon is None:
         raise ValueError(f"Power {power.name} has no icon")
 
