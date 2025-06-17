@@ -15,6 +15,7 @@ class HomepagePower:
     name: str
     url: str
     icon_svg: str
+    icon_url: str
     details_html: str
 
 

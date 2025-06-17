@@ -85,7 +85,8 @@ def _power(power: PowerModel) -> HomepagePower:
 
     return HomepagePower(
         name=power.name,
-        url=f"powers/{power.key}",
+        url=f"powers/{power.theme.lower()}#{power.key}",
         icon_svg=str(icon),
+        icon_url=f"img/icons/{power.icon}.svg",
         details_html=feature_descriptions_html,
     )

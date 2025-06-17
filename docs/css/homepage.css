@@ -35,6 +35,10 @@ h5 a {
     color: var(--fg-color);
 }
 
+.glowing-header {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
 p {
     color: var(--fg-color);
     text-align: center;

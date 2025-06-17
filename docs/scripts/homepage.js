@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     initSwipers();
+    initLazyIcons();
 });
 
 
@@ -123,3 +124,53 @@ function onSwiperClick(swiper, event) {
         window.location.href = clickedSlide.dataset.url;
     }
 }
+
+
+function cleanAndInjectSVGFromURL(url, targetElement, fillValue = 'currentColor') {
+    fetch(url)
+        .then(res => res.text()) // get the raw SVG text
+        .then(svgText => {
+            // Strip out any fill="..." attributes
+            const cleaned = svgText.replace(/\s*fill=(['"])[^'"]*\1/g, '');
+
+            // Convert SVG string into a DOM element
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(cleaned, 'image/svg+xml');
+            const svgEl = doc.documentElement;
+
+            // Optionally apply a uniform fill
+            if (fillValue !== null) {
+                svgEl.setAttribute('fill', fillValue);
+            }
+
+            // Replace the contents of the target <div>
+            targetElement.innerHTML = '';
+            targetElement.appendChild(svgEl);
+            targetElement.classList.remove('lazy-icon-placeholder');
+        })
+        .catch(err => {
+            console.warn('Error loading SVG icon:', url, err);
+        });
+}
+
+function initLazyIcons() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const url = el.dataset.iconUrl;
+
+                if (url) {
+                    cleanAndInjectSVGFromURL(url, el);
+                    observer.unobserve(el); // Stop watching once loaded
+                }
+            }
+        });
+    }, {
+        rootMargin: '1000px',   // Start loading 200px before it enters the view
+        threshold: 0.01         // Trigger when 10% of the element is visible
+    });
+
+    document.querySelectorAll('.lazy-icon-placeholder').forEach(el => observer.observe(el));
+}
+

@@ -5,7 +5,7 @@
     <div>
 
         <section>
-            <h2><a href="{{ 'monsters' | url}}">Summon Unforgettable Monsters, Instantly</a></h2>
+            <h2 class="glowing-header"><a href="{{ 'monsters' | url}}">Summon Unforgettable Monsters, Instantly</a></h2>
             <p class="lead">
                 Build the perfect monster for your campaign in seconds. Use our pre-built <a
                     href="{{ 'monsters' | url}}">Monster Templates</a> and
@@ -17,7 +17,7 @@
                         {% for monster in homepage_data.monsters %}
                         <div class="swiper-slide card tall masked" data-url="{{monster.url | url}}">
                             <img class="card-image contain blend" src="{{monster.image | url}}" alt="{{monster.name}}"
-                                loading="{% if loop.index <= 5 %}eager{% else %}lazy{% endif %}" />
+                                loading="{{ 'eager' if loop.index <= 5 else 'lazy'}}" />
                             <div class="card-content">
                                 <div class="masked-label">
                                     <h3 class="card-title"><a href="{{monster.url | url}}">{{monster.name}}</a></h3>
@@ -35,7 +35,7 @@
         </section>
 
         <section>
-            <h2>Try It Out</h2>
+            <h2 class="glowing-header">Try It Out</h2>
             <p class="lead">Foe Foundry gives GMs the tools to create exciting, unique monsters without the grind.
                 Summon foes packed with flavorful abilities, scale them instantly to your party's level, and get back to
                 what matters - having fun and thrilling your players.</p>
@@ -58,7 +58,7 @@
         </section>
 
         <section>
-            <h2>Why GMs Love Foe Foundry</h2>
+            <h2 class="glowing-header">Why GMs Love Foe Foundry</h2>
             <div class="row">
                 <div class="col-12">
                     <div class="swiper-value-props swiper-container">
@@ -142,7 +142,8 @@
         </section>
 
         <section>
-            <h2><a href="{{ 'powers/all' | url}}">Unique Monsters with Handcrafted Powers</a></h2>
+            <h2 class="glowing-header"><a href="{{ 'powers/all' | url}}">Unique Monsters with Handcrafted Powers</a>
+            </h2>
             <p class="lead">
                 Every monster draws from a vault of 500+ handcrafted powers. Here are a few examples:
             </p>
@@ -154,57 +155,61 @@
                             {% for power in homepage_data.powers %}
                             <div class="swiper-slide card masked" data-url="{{power.url | url}}">
                                 <div class="card-icon">
-                                    {{power.icon_svg | safe}}
+                                    {% if loop.index <= 5 %} {{power.icon_svg | safe}} {% else %} <div
+                                        class="lazy-icon-placeholder" data-icon-url="{{power.icon_url | url}}">
                                 </div>
-                                <div class="card-content">
-                                    <div>
-                                        <h3 class="card-title"><a href="{{power.url | url}}">{{power.name}}</a></h3>
-                                        <span class="card-details">{{power.details_html | safe}}</span>
-                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="card-content">
+                                <div>
+                                    <h3 class="card-title"><a href="{{power.url | url}}">{{power.name}}</a></h3>
+                                    <span class="card-details">{{power.details_html | safe}}</span>
                                 </div>
                             </div>
-                            {% endfor %}
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-
-            <hr />
-        </section>
-
-        <section>
-            <h2>Tips & Resources for GMs</h2>
-            <p class="lead">Check out the <a href="{{ 'blog' | url}}">Blog</a> for new monsters and tips.</p>
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper-blog swiper-container">
-                        <div class="swiper-wrapper">
-                            {% for post in homepage_data.blogs %}
-
-                            {% if post.use_bg_image %}
-                            <div class="swiper-slide card bg-object {{post.bg_object_css_class}}"
-                                data-url="{{post.url | url}}">
-                                <img class="card-image faded contain blend" src="{{post.image | url}}"
-                                    alt="{{post.name}}" />
-                                <div class="card-content p-2">
-                                    <h3 class="card-title highlight"><a href="{{post.url | url}}">{{post.name}}</a></h3>
-                                </div>
-                            </div>
-                            {% else %}
-                            <div class="swiper-slide card masked" data-url="{{post.url | url}}">
-                                <img class="card-image cover p-0" src="{{post.image | url}}" alt="{{post.name}}" />
-                                <div class="card-content p-2">
-                                    <h3 class="card-title highlight"><a href="{{post.url | url}}">{{post.name}}</a></h3>
-                                </div>
-                            </div>
-                            {% endif %}
-
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
+
+    <hr />
+    </section>
+
+    <section>
+        <h2 class="glowing-header">Tips & Resources for GMs</h2>
+        <p class="lead">Check out the <a href="{{ 'blog' | url}}">Blog</a> for new monsters and tips.</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-blog swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for post in homepage_data.blogs %}
+
+                        {% if post.use_bg_image %}
+                        <div class="swiper-slide card bg-object {{post.bg_object_css_class}}"
+                            data-url="{{post.url | url}}">
+                            <img class="card-image faded contain blend" src="{{post.image | url}}" alt="{{post.name}}"
+                                loading="{{ 'eager' if loop.index <= 5 else 'lazy'}}" />
+                            <div class="card-content p-2">
+                                <h3 class="card-title highlight"><a href="{{post.url | url}}">{{post.name}}</a></h3>
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="swiper-slide card masked" data-url="{{post.url | url}}">
+                            <img class="card-image cover p-0" src="{{post.image | url}}" alt="{{post.name}}"
+                                loading="{{ 'eager' if loop.index <= 5 else 'lazy'}}" />
+                            <div class="card-content p-2">
+                                <h3 class="card-title highlight"><a href="{{post.url | url}}">{{post.name}}</a></h3>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 </div>
