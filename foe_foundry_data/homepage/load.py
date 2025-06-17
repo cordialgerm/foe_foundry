@@ -50,6 +50,7 @@ def _blog(blog: BlogPost, rng: np.random.Generator) -> HomepageBlog:
 
     return HomepageBlog(
         name=blog.title,
+        url=blog.url,
         image=blog.image,
         grayscale=blog.image_is_grayscaleish,
         transparent_edges=blog.image_has_transparent_edges,
@@ -68,6 +69,7 @@ def _monster(monster: MonsterTemplate) -> HomepageMonster:
 
     return HomepageMonster(
         name=monster.name,
+        url=f"monsters/{monster.key}",
         image=image,
         tagline=monster.tag_line,
         transparent_edges=transparent,
@@ -82,5 +84,8 @@ def _power(power: PowerModel) -> HomepagePower:
         raise ValueError(f"Power {power.name} has no icon")
 
     return HomepagePower(
-        name=power.name, icon_svg=str(icon), details_html=feature_descriptions_html
+        name=power.name,
+        url=f"powers/{power.key}",
+        icon_svg=str(icon),
+        details_html=feature_descriptions_html,
     )

@@ -10,8 +10,10 @@
     --box-shadow-color: #aaaaaa70;
     --box-shadow-strong-color: #aaaaaa30;
 
-    --card-bg-color: white;
-    --card-text-color: black;
+    --card-bg-color: rgb(255, 240, 240);
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
     --card-text-shadow: 1px 1px rgba(255, 255, 255, 0.20);
 
     --stylistic-font: "Uncial Antiqua";
@@ -1204,46 +1206,65 @@ a.burnt-parchment,
 
 .bg-object.v1,
 .bg-object.gold {
-    --card-text-color: #1d160a;
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/gold.webp');
 }
 
 .bg-object.v2,
 .bg-object.iron {
-    --card-text-color: #EAE1CA;
-    --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/iron.webp');
 }
 
 .bg-object.v3,
 .bg-object.papyrus {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/papyrus.webp');
 }
 
 .bg-object.v4,
 .bg-object.stone {
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/stone.webp');
 }
 
 .bg-object.v5,
 .bg-object.parchment {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/parchment.webp');
 }
 
 
 .bg-object.v6,
 .bg-object.wood {
-    --card-text-color: #EAE1CA;
-    --card-text-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/wood.webp');
 }
 
 .bg-object.v7,
 .bg-object.scroll {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/scroll.webp');
 }
 
 .bg-object.v8,
 .bg-object.wax {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/wax.webp');
 }

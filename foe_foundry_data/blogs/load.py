@@ -24,7 +24,9 @@ class _Loader:
                 frontmatter = extract_yaml_frontmatter(content)
                 title = frontmatter.get("short_title", frontmatter["title"])
                 description = frontmatter.get("description", title)
-                url = file.relative_to(root_dir).as_posix()
+
+                file2 = file.parent / file.stem  # change from {file}.md to /{file}/
+                url = file2.relative_to(root_dir).as_posix()
                 image = frontmatter.get("image", "img/icons/favicon.webp")
                 date = frontmatter["date"]
 

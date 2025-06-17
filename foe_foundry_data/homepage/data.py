@@ -4,6 +4,7 @@ from dataclasses import dataclass
 @dataclass(kw_only=True)
 class HomepageMonster:
     name: str
+    url: str
     image: str
     tagline: str
     transparent_edges: bool
@@ -12,6 +13,7 @@ class HomepageMonster:
 @dataclass(kw_only=True)
 class HomepagePower:
     name: str
+    url: str
     icon_svg: str
     details_html: str
 
@@ -20,6 +22,7 @@ class HomepagePower:
 class HomepageBlog:
     name: str
     image: str
+    url: str
     transparent_edges: bool
     grayscale: bool
     bg_object_css_class: str

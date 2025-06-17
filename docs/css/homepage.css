@@ -78,6 +78,10 @@ p a {
     overflow: hidden;
 }
 
+.swiper-slide[data-url] {
+    cursor: pointer;
+}
+
 .swiper-slide.card {
     padding: 1.25em;
     aspect-ratio: 4/3;
@@ -185,9 +189,10 @@ p a {
     -webkit-mask-position: center;
 }
 
-.card-title {
+.card-title:not(.highlight),
+.card-title:not(.highlight) a {
     font-size: 1.2rem;
-    color: var(--card-text-color);
+    color: var(--card-title-color);
 }
 
 @media (max-width: 900px) {
@@ -197,26 +202,27 @@ p a {
 }
 
 .masked-label .card-title,
-.card-title.highlight {
+.card-title.highlight,
+.card-title.highlight a {
     font-size: 1.3rem;
     font-weight: bold;
-    color: var(--fg-color);
+    color: var(--card-title-highlight-color);
     text-shadow: 0 3px 4px rgba(0, 0, 0, 1);
 }
 
 .card-tagline {
-    color: var(--card-text-color);
+    color: var(--card-title-highlight-color);
     margin-top: 0.25rem;
 
 }
 
 .masked-label .card-tagline {
-    color: var(--fg-color);
+    color: var(--card-title-highlight-color);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
 
 .card hr {
-    --primary-color: var(--card-text-color);
+    --primary-color: var(--card-title-color);
 }
 
 .card-details,

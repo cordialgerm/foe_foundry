@@ -106,9 +106,20 @@ function initSwipers() {
             keyboard: true,
             navigation: true,
             parallax: true,
+            simulateTouch: true
         });
 
         swiper.autoplay.stop();
         setTimeout(() => swiper.autoplay.start(), 8000 + Math.random() * 3000); // Start autoplay after 6–9s
+
+        swiper.on('click', onSwiperClick);
+        swiper.on('tap', onSwiperClick);
     });
+}
+
+function onSwiperClick(swiper, event) {
+    const clickedSlide = swiper.clickedSlide;
+    if (clickedSlide && clickedSlide.dataset.url) {
+        window.location.href = clickedSlide.dataset.url;
+    }
 }
