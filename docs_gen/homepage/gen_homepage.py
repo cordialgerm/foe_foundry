@@ -12,7 +12,7 @@ from mkdocs.utils import normalize_url
 
 from foe_foundry_data.homepage import load_homepage_data
 
-BASE_URL = "http://localhost:8000/site/"
+BASE_URL = "http://localhost:8000/"
 
 
 def _url_filter(path: str) -> str:

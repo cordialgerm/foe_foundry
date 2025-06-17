@@ -8,3 +8,8 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+{% if page and page.is_homepage %}
+<link href="{{ 'css/homepage.css'|url }}" rel="stylesheet">
+</script>
+{% endif %}

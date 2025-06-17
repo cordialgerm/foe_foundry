@@ -7,4 +7,11 @@
 {{ script|script_tag }}
 {%- endfor %}
 
+{% if page and page.is_homepage %}
+<script src="{{ 'scripts/homepage.js'|url }}"></script>
+{% endif %}
+
+{% if page and page.meta and page.meta.custom_script %}
+{% endif %}
+
 {%- endblock %}
