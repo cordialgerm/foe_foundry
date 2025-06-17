@@ -1,7 +1,7 @@
 from functools import cached_property
 from pathlib import Path
 
-from foe_foundry.utils.image import has_transparent_edges
+from foe_foundry.utils.image import has_transparent_edges, is_grayscaleish
 from foe_foundry.utils.monster_content import extract_yaml_frontmatter
 
 from .data import BlogPost
@@ -29,6 +29,7 @@ class _Loader:
                 date = frontmatter["date"]
 
                 transparent = has_transparent_edges(Path.cwd() / "docs" / image)
+                grayscale = is_grayscaleish(Path.cwd() / "docs" / image)
 
                 posts.append(
                     BlogPost(
@@ -38,6 +39,7 @@ class _Loader:
                         image=image,
                         date=date,
                         image_has_transparent_edges=transparent,
+                        image_is_grayscaleish=grayscale,
                     )
                 )
             except Exception as e:

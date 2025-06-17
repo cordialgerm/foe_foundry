@@ -178,13 +178,23 @@
                     <div class="swiper-blog swiper-container">
                         <div class="swiper-wrapper">
                             {% for post in homepage_data.blogs %}
+
+                            {% if post.use_bg_image %}
                             <div class="swiper-slide card bg-object {{post.bg_object_css_class}}">
-                                <img class="card-image faded contain {{ 'blend masked' if not post.transparent_edges else ''}}"
-                                    src="{{post.image}}" />
+                                <img class="card-image faded contain blend" src="{{post.image}}" alt="{{post.name}}" />
                                 <div class="card-content p-2">
                                     <h3 class="card-title highlight">{{post.name}}</h3>
                                 </div>
                             </div>
+                            {% else %}
+                            <div class="swiper-slide card masked">
+                                <img class="card-image cover p-0" src="{{post.image}}" alt="{{post.name}}" />
+                                <div class="card-content p-2">
+                                    <h3 class="card-title highlight">{{post.name}}</h3>
+                                </div>
+                            </div>
+                            {% endif %}
+
                             {% endfor %}
                         </div>
                     </div>

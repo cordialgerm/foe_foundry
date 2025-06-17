@@ -117,13 +117,13 @@ p a {
 .card-image.contain {
     object-fit: contain;
     object-position: center;
-    padding: 15px
+    padding: 20px
 }
 
 .card-image.cover {
     object-fit: cover;
     object-position: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .card-image.blend {

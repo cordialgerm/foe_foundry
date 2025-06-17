@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import field
 from datetime import datetime
+from functools import cached_property
 from pathlib import Path
 from typing import List, Set
 
@@ -120,7 +121,7 @@ class PowerModel:
     attack_types: List[str] = field(default_factory=list)
     tags: List[str] = field(default_factory=list)
 
-    @property
+    @cached_property
     def feature_descriptions(self) -> str:
         return "\n\n".join(
             feature.name + ": " + feature.description_md for feature in self.features

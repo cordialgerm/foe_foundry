@@ -10,3 +10,4 @@ class BlogPost:
     image: str
     date: datetime
     image_has_transparent_edges: bool
+    image_is_grayscaleish: bool

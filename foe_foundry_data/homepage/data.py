@@ -21,7 +21,12 @@ class HomepageBlog:
     name: str
     image: str
     transparent_edges: bool
+    grayscale: bool
     bg_object_css_class: str
+
+    @property
+    def use_bg_image(self) -> bool:
+        return self.transparent_edges or self.grayscale
 
 
 @dataclass(kw_only=True)

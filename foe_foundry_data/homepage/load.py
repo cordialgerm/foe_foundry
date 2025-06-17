@@ -22,7 +22,11 @@ def load_homepage_data() -> HomepageData:
 
     rng = np.random.default_rng(20240711)
 
-    powers = [_power(p) for _, p in Powers.PowerLookup.items()]
+    powers = [
+        _power(p)
+        for _, p in Powers.PowerLookup.items()
+        if len(p.feature_descriptions) <= 400
+    ]
     monsters = [_monster(m) for m in AllTemplates if m.lore_md is not None]
     blogs = load_blog_posts()
 
@@ -47,6 +51,7 @@ def _blog(blog: BlogPost, rng: np.random.Generator) -> HomepageBlog:
     return HomepageBlog(
         name=blog.title,
         image=blog.image,
+        grayscale=blog.image_is_grayscaleish,
         transparent_edges=blog.image_has_transparent_edges,
         bg_object_css_class=css_class,
     )
