@@ -1,3 +1,4 @@
+from foe_foundry.creatures.orc import OrcTemplate
 from foe_foundry.creatures.priest.priest import PriestTemplate, PriestVariant
 from foe_foundry.creatures.species import OrcSpecies
 from foe_foundry.creatures.wight import WightTemplate
@@ -21,3 +22,7 @@ def test_monster_model_with_species():
     ).finalize()
 
     assert stats.name == f"Orc {PriestVariant.monsters[0].name}"
+
+
+def test_orc_has_image():
+    assert OrcTemplate.primary_image_url is not None

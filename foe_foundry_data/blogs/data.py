@@ -9,3 +9,4 @@ class BlogPost:
     url: str
     image: str
     date: datetime
+    image_has_transparent_edges: bool

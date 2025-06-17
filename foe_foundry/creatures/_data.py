@@ -153,6 +153,7 @@ class MonsterTemplate:
     @cached_property
     def image_urls(self) -> dict[str, list[Path]]:
         urls = {}
+        urls[self.key] = find_image(self.key)
         for variant in self.variants:
             image_urls = find_image(variant.key)
             if len(image_urls) == 0:

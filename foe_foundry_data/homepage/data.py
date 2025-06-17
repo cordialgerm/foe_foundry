@@ -6,6 +6,7 @@ class HomepageMonster:
     name: str
     image: str
     tagline: str
+    transparent_edges: bool
 
 
 @dataclass(kw_only=True)
@@ -19,6 +20,8 @@ class HomepagePower:
 class HomepageBlog:
     name: str
     image: str
+    transparent_edges: bool
+    bg_object_css_class: str
 
 
 @dataclass(kw_only=True)

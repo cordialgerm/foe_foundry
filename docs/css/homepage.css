@@ -109,18 +109,29 @@ p a {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
     z-index: 0;
+    object-fit: contain;
+    object-position: center;
 }
 
 .card-image.contain {
     object-fit: contain;
-    padding: 0.25rem;
+    object-position: center;
+    padding: 15px
+}
+
+.card-image.cover {
+    object-fit: cover;
+    object-position: center;
+    padding: 15px;
+}
+
+.card-image.blend {
+    mix-blend-mode: multiply;
 }
 
 .card-image.faded {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .card-icon {
@@ -188,8 +199,9 @@ p a {
 .masked-label .card-title,
 .card-title.highlight {
     font-size: 1.3rem;
+    font-weight: bold;
     color: var(--fg-color);
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 1);
 }
 
 .card-tagline {
