@@ -15,7 +15,7 @@
                 <div class="col-12">
                     <div class="swiper-monsters swiper-container">
                         {% for monster in homepage_data.monsters %}
-                        <div class="swiper-slide card tall masked" data-url="{{monster.url | url}}">
+                        <div class="swiper-slide card tall {{monster.mask_css}}" data-url="{{monster.url | url}}">
                             <img class="card-image contain blend" src="{{monster.image | url}}" alt="{{monster.name}}"
                                 loading="{{ 'eager' if loop.index <= 5 else 'lazy'}}" />
                             <div class="card-content">
@@ -153,7 +153,7 @@
                         <div class="swiper-wrapper"
                             style="--card-title-color: var(--bg-color); --card-text-color: var(--bg-color);">
                             {% for power in homepage_data.powers %}
-                            <div class="swiper-slide card masked" data-url="{{power.url | url}}">
+                            <div class="swiper-slide card {{power.mask_css}}" data-url="{{power.url | url}}">
                                 <div class="card-icon">
                                     {% if loop.index <= 5 %} {{power.icon_svg | safe}} {% else %} <div
                                         class="lazy-icon-placeholder" data-icon-url="{{power.icon_url | url}}">

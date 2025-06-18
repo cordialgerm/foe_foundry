@@ -417,19 +417,6 @@ hr {
     display: inline-block;
 }
 
-.masked {
-
-    mask-image: url('/img/backgrounds/watercolor-mask.webp');
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-}
-
 /* Special handling for .masked.padded */
 p:has(> img.masked.padded) {
     padding-left: 5px;
@@ -1187,6 +1174,68 @@ a.burnt-parchment,
     100% {
         transform: rotate(0deg) translateX(0);
     }
+}
+
+/* Mask Styles */
+.masked {
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.masked:not(.v1):not(.v2):not(.v3):not(.v4):not(.v5):not(.v6) {
+    mask-image: url('/img/backgrounds/watercolor-mask.webp');
+    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
+}
+
+.masked.v1,
+.masked.watercolor1 {
+    mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+}
+
+.masked.v2,
+.masked.watercolor2 {
+    mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v3,
+.masked.paper {
+    mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v4,
+.masked.charcoal {
+    mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v5,
+.masked.charcoal2 {
+    mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v6,
+.masked.paper2 {
+    mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
 }
 
 /* Background Object Styles */

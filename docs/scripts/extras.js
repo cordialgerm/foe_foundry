@@ -88,6 +88,11 @@ document.addEventListener("click", (event) => {
   rerollMonster(monsterKey, statblock);
 });
 
+// Randomize masks on page load
+document.addEventListener("DOMContentLoaded", () => {
+  randomizeMasks();
+});
+
 
 function wrapStatblock(statblock) {
   // Wrap statblock in a container to position the button relative to it
@@ -157,6 +162,19 @@ async function rerollMonster(monsterKey) {
   } catch (err) {
     console.error("Failed to reroll monster:", err);
   }
+}
+
+function randomizeMasks() {
+  const variants = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'];
+
+  document.querySelectorAll('.masked').forEach(el => {
+    const hasVariant = variants.some(variant => el.classList.contains(variant));
+
+    if (!hasVariant) {
+      const random = variants[Math.floor(Math.random() * variants.length)];
+      el.classList.add(random);
+    }
+  });
 }
 
 

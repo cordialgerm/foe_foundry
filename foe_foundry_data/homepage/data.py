@@ -8,6 +8,7 @@ class HomepageMonster:
     image: str
     tagline: str
     transparent_edges: bool
+    mask_css: str
 
 
 @dataclass(kw_only=True)
@@ -17,6 +18,7 @@ class HomepagePower:
     icon_svg: str
     icon_url: str
     details_html: str
+    mask_css: str
 
 
 @dataclass
@@ -27,6 +29,7 @@ class HomepageBlog:
     transparent_edges: bool
     grayscale: bool
     bg_object_css_class: str
+    mask_css: str
 
     @property
     def use_bg_image(self) -> bool:

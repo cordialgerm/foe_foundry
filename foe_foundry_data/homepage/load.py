@@ -12,6 +12,24 @@ from foe_foundry_data.powers import PowerModel, Powers
 from .data import HomepageBlog, HomepageData, HomepageMonster, HomepagePower
 
 
+class _RandomMask:
+    """
+    A class to handle random mask selection for homepage elements.
+    """
+
+    def __init__(self, mask_count: int):
+        self.mask_count = mask_count
+        self.last_index = -1
+        self.rng = np.random.default_rng()
+
+    def random_mask_css(self) -> str:
+        n = self.rng.choice(self.mask_count) + 1
+        if n == self.last_index:
+            n = (n + 1) % self.mask_count
+        self.last_index = n
+        return f"masked v{n}"
+
+
 def load_homepage_data() -> HomepageData:
     """
     Load the homepage data from the data module.
@@ -22,12 +40,22 @@ def load_homepage_data() -> HomepageData:
 
     rng = np.random.default_rng(20240711)
 
+    mask_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "masks"
+
+    # check for webp or png
+    mask_count = len(list(mask_dir.glob("*.webp"))) + len(list(mask_dir.glob("*.png")))
+    random_mask = _RandomMask(mask_count)
+
     powers = [
-        _power(p)
+        _power(p, random_mask.random_mask_css())
         for _, p in Powers.PowerLookup.items()
         if len(p.feature_descriptions) <= 400
     ]
-    monsters = [_monster(m) for m in AllTemplates if m.lore_md is not None]
+    monsters = [
+        _monster(m, random_mask.random_mask_css())
+        for m in AllTemplates
+        if m.lore_md is not None
+    ]
     blogs = load_blog_posts()
 
     rng.shuffle(powers)  # type: ignore
@@ -36,11 +64,11 @@ def load_homepage_data() -> HomepageData:
     return HomepageData(
         monsters=monsters,
         powers=powers,
-        blogs=[_blog(b, rng) for b in blogs],
+        blogs=[_blog(b, rng, random_mask.random_mask_css()) for b in blogs],
     )
 
 
-def _blog(blog: BlogPost, rng: np.random.Generator) -> HomepageBlog:
+def _blog(blog: BlogPost, rng: np.random.Generator, mask_css: str) -> HomepageBlog:
     bg_objects_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "objects"
     bg_objects = [f for f in bg_objects_dir.glob("*.webp")]
 
@@ -55,10 +83,11 @@ def _blog(blog: BlogPost, rng: np.random.Generator) -> HomepageBlog:
         grayscale=blog.image_is_grayscaleish,
         transparent_edges=blog.image_has_transparent_edges,
         bg_object_css_class=css_class,
+        mask_css=mask_css,
     )
 
 
-def _monster(monster: MonsterTemplate) -> HomepageMonster:
+def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
     if monster.primary_image_url is None:
         image = "img/icons/favicon.webp"
         transparent = True
@@ -73,10 +102,11 @@ def _monster(monster: MonsterTemplate) -> HomepageMonster:
         image=image,
         tagline=monster.tag_line,
         transparent_edges=transparent,
+        mask_css=mask_css,
     )
 
 
-def _power(power: PowerModel) -> HomepagePower:
+def _power(power: PowerModel, mask_css: str) -> HomepagePower:
     feature_descriptions_html = markdown(power.feature_descriptions)
 
     icon = inline_icon(power.icon or "favicon", fill="currentColor", wrap=False)
@@ -89,4 +119,5 @@ def _power(power: PowerModel) -> HomepagePower:
         icon_svg=str(icon),
         icon_url=f"img/icons/{power.icon}.svg",
         details_html=feature_descriptions_html,
+        mask_css=mask_css,
     )
