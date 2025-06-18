@@ -104,5 +104,7 @@ def generate_homepage(output_path: Path):
         "meta": {"image": "img/icons/favicon.webp"},
     }
 
-    rendered = template.render(homepage_data=data, config=config, page=page, nav=nav)
+    rendered = template.render(
+        base_url=BASE_URL, homepage_data=data, config=config, page=page, nav=nav
+    )
     output_path.write_text(rendered)

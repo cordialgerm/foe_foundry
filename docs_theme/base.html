@@ -55,6 +55,10 @@
 
     {% include "partials/analytics.html" %}
 
+    <script>
+        var base_url = {{ base_url| tojson }}, shortcuts = {};
+    </script>
+
 </head>
 
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
@@ -85,6 +89,7 @@
     {% include "partials/footer.html" %}
 
     {% include "partials/scripts.html" %}
+
 
     {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}
