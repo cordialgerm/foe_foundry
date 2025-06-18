@@ -912,7 +912,8 @@ a.burnt-parchment,
     animation-delay: 2s;
 }
 
-.email-subscribe {
+.email-subscribe,
+.email-subscribe p {
     font-size: var(--primary-font-size);
     font: var(--primary-font);
     color: var(--muted-color);

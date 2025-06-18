@@ -11,6 +11,7 @@ from mkdocs.structure.nav import get_navigation
 from mkdocs.utils import normalize_url
 
 from foe_foundry_data.homepage import load_homepage_data
+from foe_foundry_data.markdown import create_newsletter
 
 BASE_URL = "http://localhost:8000/"
 
@@ -73,6 +74,7 @@ def generate_homepage(output_path: Path):
     # Register the filter
     env.filters["url"] = _url_filter
     env.filters["script_tag"] = _script_tag_filter
+    env.globals["render_newsletter"] = create_newsletter
 
     # Now render as normal
     template = env.get_template("base.html")
