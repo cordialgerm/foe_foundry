@@ -1,5 +1,6 @@
 ---
 title: Avoiding Stale 5E Combat with Tokens from Foe Foundry
+short_title: Avoiding Stale Combat with Tokens
 description: Tired of static 5e encounters? Learn how Tokens from Foe Foundry add dynamic terrain, magical effects, and creative problem-solving to your combat.
 image: img/blogs/trap.webp
 tags:
@@ -8,7 +9,7 @@ tags:
 footer:
   - Art by Carlos Castilho. Used with permission.
 json_ld: true
-date: 2025-05-03
+date: 2025-05-05
 ---
 
 [[@Subscribe to the Newsletter]]

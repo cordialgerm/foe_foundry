@@ -2,6 +2,7 @@ import re
 from functools import cached_property
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 from markupsafe import Markup
 
 
@@ -30,15 +31,28 @@ def icon_path(icon: str) -> Path | None:
     return icon_path
 
 
-def inline_icon(icon: str) -> str | None:
-    """Returns the icon as an inline SVG."""
+def inline_icon(icon: str, fill="", wrap: bool = True) -> Markup | None:
+    """Returns the icon as an inline SVG with optional fill override."""
     path = icon_path(icon)
     if path is None:
         return None
 
     svg_raw = path.read_text(encoding="utf-8")
 
-    # Remove all `fill="..."` and `fill='...'` attributes so we can style the icon wtih CSS
+    # Remove all `fill="..."` or `fill='...'` attributes
     svg_cleaned = re.sub(r'\s*fill=["\'][^"\']*["\']', "", svg_raw)
 
-    return Markup(f'<span class="inline-icon" aria-hidden="true">{svg_cleaned}</span>')
+    # If a fill color is specified, parse and modify the SVG
+    if fill:
+        soup = BeautifulSoup(svg_cleaned, "xml")
+        svg_tag = soup.find("svg")
+        if svg_tag:
+            svg_tag["fill"] = fill  # type: ignore
+            svg_cleaned = str(svg_tag)
+
+    if wrap:
+        return Markup(
+            f'<span class="inline-icon" aria-hidden="true">{svg_cleaned}</span>'
+        )
+    else:
+        return Markup(svg_cleaned)

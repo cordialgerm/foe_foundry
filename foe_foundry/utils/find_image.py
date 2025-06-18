@@ -19,7 +19,7 @@ def find_image(name: str) -> list[Path]:
     return paths
 
 
-def find_lore(name: str) -> list[Path]:
+def find_lore(name: str) -> Path | None:
     lore_dir = Path(__file__).parent.parent.parent / "docs" / "monsters"
 
     paths = []
@@ -27,4 +27,9 @@ def find_lore(name: str) -> list[Path]:
     for path in lore_dir.rglob(f"**/{name}.md"):
         paths.append(path)
 
-    return paths
+    if len(paths) > 1:
+        raise ValueError(f"Multiple lore files found for {name}: {paths}")
+    elif len(paths) == 0:
+        return None
+
+    return paths[0]

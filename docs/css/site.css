@@ -4,10 +4,17 @@
     --fg-color: #f4f1e6;
 
     --primary-color: #ff3737;
-    --secondary-color: #5b22cf;
+    --primary-faded-color: #ff373728;
+    --primary-muted-color: #a53939;
     --tertiary-color: #c29a5b;
     --box-shadow-color: #aaaaaa70;
     --box-shadow-strong-color: #aaaaaa30;
+
+    --card-bg-color: rgb(255, 240, 240);
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
+    --card-text-shadow: 1px 1px rgba(255, 255, 255, 0.20);
 
     --stylistic-font: "Uncial Antiqua";
     --stylistic-font-size: 26px;
@@ -28,6 +35,9 @@
     --small-margin: 6px;
     --big-margin: 12px;
     --medium-margin: 9px;
+
+    /* Set Swiper CSS Variables */
+    --swiper-navigation-color: var(--primary-muted-color);
 
 
     /* Set Boostrap Variables to match theme */
@@ -405,19 +415,6 @@ hr {
 .pamphlet-main .statblock-ref-button {
     margin-bottom: var(--big-margin) !important;
     display: inline-block;
-}
-
-.masked {
-
-    mask-image: url('/img/backgrounds/watercolor-mask.webp');
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
 }
 
 /* Special handling for .masked.padded */
@@ -915,7 +912,8 @@ a.burnt-parchment,
     animation-delay: 2s;
 }
 
-.email-subscribe {
+.email-subscribe,
+.email-subscribe p {
     font-size: var(--primary-font-size);
     font: var(--primary-font);
     color: var(--muted-color);
@@ -1081,13 +1079,16 @@ a.burnt-parchment,
 
 /* Large screens: float to the right */
 .reroll-button {
-    position: absolute;
-    top: -0.5rem;
-    right: -4rem;
     font-size: 3rem;
     background-color: unset;
     border: none;
     color: var(--fg-color);
+}
+
+.reroll-button:not(.relative) {
+    position: absolute;
+    top: -0.5rem;
+    right: -4rem;
 }
 
 .d20-icon {
@@ -1110,8 +1111,6 @@ a.burnt-parchment,
         align-items: center;
     }
 }
-
-
 
 .reroll-button:disabled {
     color: inherit;
@@ -1176,4 +1175,146 @@ a.burnt-parchment,
     100% {
         transform: rotate(0deg) translateX(0);
     }
+}
+
+/* Mask Styles */
+.masked {
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.masked:not(.v1):not(.v2):not(.v3):not(.v4):not(.v5):not(.v6) {
+    mask-image: url('/img/backgrounds/watercolor-mask.webp');
+    -webkit-mask-image: url('/img/backgrounds/watercolor-mask.webp');
+}
+
+.masked.v1,
+.masked.watercolor1 {
+    mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor.webp');
+}
+
+.masked.v2,
+.masked.watercolor2 {
+    mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-watercolor2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v3,
+.masked.paper {
+    mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-paper.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v4,
+.masked.charcoal {
+    mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v5,
+.masked.charcoal2 {
+    mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-charcoal2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+.masked.v6,
+.masked.paper2 {
+    mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+    -webkit-mask-image: url('/img/backgrounds/masks/mask-paper2.webp');
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
+
+/* Background Object Styles */
+
+.bg-object {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+
+    border: none;
+    padding: var(--large-margin);
+    margin: var(--small-margin);
+
+    text-shadow: var(--card-text-shadow);
+}
+
+.bg-object.v1,
+.bg-object.gold {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/gold.webp');
+}
+
+.bg-object.v2,
+.bg-object.iron {
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/iron.webp');
+}
+
+.bg-object.v3,
+.bg-object.papyrus {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/papyrus.webp');
+}
+
+.bg-object.v4,
+.bg-object.stone {
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/stone.webp');
+}
+
+.bg-object.v5,
+.bg-object.parchment {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/parchment.webp');
+}
+
+
+.bg-object.v6,
+.bg-object.wood {
+    --card-text-color: var(--fg-color);
+    --card-title-color: var(--fg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/wood.webp');
+}
+
+.bg-object.v7,
+.bg-object.scroll {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/scroll.webp');
+}
+
+.bg-object.v8,
+.bg-object.wax {
+    --card-text-color: var(--bg-color);
+    --card-title-color: var(--bg-color);
+    --card-title-highlight-color: var(--fg-color);
+    background-image: url('/img/backgrounds/objects/wax.webp');
 }
