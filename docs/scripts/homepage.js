@@ -174,3 +174,37 @@ function initLazyIcons() {
     document.querySelectorAll('.lazy-icon-placeholder').forEach(el => observer.observe(el));
 }
 
+// Add an event listener for any reroll button clicks
+document.addEventListener("click", async (event) => {
+    const button = event.target.closest("#summon-your-first-monster .reroll-button");
+    if (!button) return;
+
+    // Trigger the animation
+    button.classList.add("rolling");
+    button.disabled = true;
+    // Remove class after animation ends
+    setTimeout(() => {
+        button.classList.remove("rolling");
+        button.disabled = false;
+    }, 600); // match the animation duration
+
+    const url = `/api/v1/monsters/random?output=monster_only`;
+    const res = await fetch(url);
+    const html = await res.text();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const newStatblockElement = doc.querySelector('.stat-block');
+
+    // find #statblock-placeholder and replace its content with the new statblock
+    const statblockPlaceholder = document.querySelector('#statblock-placeholder');
+    if (statblockPlaceholder) {
+        statblockPlaceholder.innerHTML = '';
+        statblockPlaceholder.appendChild(newStatblockElement);
+    }
+});
+
+// Randomize masks on page load
+document.addEventListener("DOMContentLoaded", () => {
+    randomizeMasks();
+});

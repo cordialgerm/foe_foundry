@@ -72,9 +72,10 @@ document.addEventListener("click", (event) => {
 
   const monsterKey = button.dataset.monster;
   const statblock = wrapper.querySelector(".stat-block");
-  console.log("Reroll button clicked:", monsterKey, statblock);
 
   if (!monsterKey || !statblock) return;
+
+  console.log("Reroll button clicked:", monsterKey, statblock);
 
   // Trigger the animation
   button.classList.add("rolling");

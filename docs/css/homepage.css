@@ -4,34 +4,34 @@ section {
     margin-top: 2rem;
 }
 
-h1 {
+section h1 {
     font-family: var(--stylistic-font);
     color: var(--primary-color);
     text-align: center;
 }
 
-h2 {
+section h2 {
     font-family: var(--header-font);
     color: var(--primary-color);
     text-align: center;
 }
 
-h2 a {
+section h2 a {
     color: var(--primary-color);
 }
 
-h3,
-h4,
-h5 {
+section h3,
+section h4,
+section h5 {
     font-family: var(--header-font);
     color: var(--fg-color);
     text-align: center;
 }
 
 
-h3 a,
-h4 a,
-h5 a {
+section h3 a,
+section h4 a,
+section h5 a {
     color: var(--fg-color);
 }
 
@@ -39,16 +39,16 @@ h5 a {
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
-p {
+section p {
     color: var(--fg-color);
     text-align: center;
 }
 
-p.lead {
+section p.lead {
     font-size: 1.0em;
 }
 
-p a {
+section p a {
     color: var(--fg-color);
     font-weight: bold;
 }
