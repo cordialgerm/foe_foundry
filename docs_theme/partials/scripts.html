@@ -1,17 +1,14 @@
 {%- block scripts %}
-<script src="{{ 'js/bootstrap.bundle.min.js'|url }}"></script>
-<script src="{{ 'js/base.js'|url }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="{{ 'js/bootstrap.bundle.min.js'|url }}" defer></script>
+<script src="{{ 'js/base.js'|url }}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
 {%- for script in config.extra_javascript %}
 {{ script|script_tag }}
 {%- endfor %}
 
 {% if page and page.is_homepage %}
-<script src="{{ 'scripts/homepage.js'|url }}"></script>
-{% endif %}
-
-{% if page and page.meta and page.meta.custom_script %}
+<script src="{{ 'scripts/homepage.js'|url }}" defer></script>
 {% endif %}
 
 {%- endblock %}

@@ -311,7 +311,7 @@ body {
     font-family: var(--primary-font);
 }
 
-body::before {
+body:not(.homepage)::before {
     content: "";
     position: fixed;
     inset: 0;

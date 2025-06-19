@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     initSwipers();
+    initBackgroundLogo();
     initLazyIcons();
+    randomizeMasks();
 });
 
 
@@ -107,7 +109,13 @@ function initSwipers() {
             keyboard: true,
             navigation: true,
             parallax: true,
-            simulateTouch: true
+            simulateTouch: true,
+            on: {
+                init: function () {
+                    //remove preload class which is designed to help deal with layout shift
+                    this.el.classList.remove('preload');
+                }
+            }
         });
 
         swiper.autoplay.stop();
@@ -117,6 +125,19 @@ function initSwipers() {
         swiper.on('tap', onSwiperClick);
     });
 }
+
+function initBackgroundLogo() {
+
+    const setClass = () => {
+        document.getElementById("parallax-logo-bg")?.classList.add("parallax-logo-bg");
+    };
+
+    requestIdleCallback?.(setClass) || setTimeout(setClass, 200);
+}
+
+window.addEventListener("load", () => {
+
+});
 
 function onSwiperClick(swiper, event) {
     const clickedSlide = swiper.clickedSlide;
@@ -202,9 +223,4 @@ document.addEventListener("click", async (event) => {
         statblockPlaceholder.innerHTML = '';
         statblockPlaceholder.appendChild(newStatblockElement);
     }
-});
-
-// Randomize masks on page load
-document.addEventListener("DOMContentLoaded", () => {
-    randomizeMasks();
 });

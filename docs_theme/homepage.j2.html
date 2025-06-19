@@ -1,6 +1,6 @@
 <div>
 
-    <div id="parallax-logo-bg" class="parallax-logo-bg"></div>
+    <div id="parallax-logo-bg"></div>
 
     <div>
 
@@ -13,7 +13,7 @@
             </p>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-monsters swiper-container">
+                    <div class="swiper-monsters swiper-container preload tall">
                         {% for monster in homepage_data.monsters %}
                         <div class="swiper-slide card tall {{monster.mask_css}}" data-url="{{monster.url | url}}">
                             <img class="card-image contain blend" src="{{monster.image | url}}" alt="{{monster.name}}"
@@ -69,7 +69,7 @@
             <h2 class="glowing-header">Why GMs Love Foe Foundry</h2>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-value-props swiper-container">
+                    <div class="swiper-value-props swiper-container preload">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide card bg-object v1">
                                 <div class="p-2">
@@ -166,7 +166,7 @@
             </p>
             <div class="row">
                 <div class="col-12">
-                    <div class="swiper-powers swiper-container">
+                    <div class="swiper-powers swiper-container preload">
                         <div class="swiper-wrapper"
                             style="--card-title-color: var(--bg-color); --card-text-color: var(--bg-color);">
                             {% for power in homepage_data.powers %}
@@ -198,7 +198,7 @@
         <p class="lead">Check out the <a href="{{ 'blog' | url}}">Blog</a> for new monsters and tips.</p>
         <div class="row">
             <div class="col-12">
-                <div class="swiper-blog swiper-container">
+                <div class="swiper-blog swiper-container preload">
                     <div class="swiper-wrapper">
                         {% for post in homepage_data.blogs %}
 

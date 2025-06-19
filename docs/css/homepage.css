@@ -82,6 +82,19 @@ section p a {
     overflow: hidden;
 }
 
+.swiper-container.preload {
+    min-height: 267px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.swiper-container.preload.tall {
+    min-height: 300px;
+
+}
+
 .swiper-slide[data-url] {
     cursor: pointer;
 }
