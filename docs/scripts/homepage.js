@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     initSwipers();
+    initBackgroundLogo();
     initLazyIcons();
+    randomizeMasks();
 });
 
 
@@ -124,6 +126,19 @@ function initSwipers() {
     });
 }
 
+function initBackgroundLogo() {
+
+    const setClass = () => {
+        document.getElementById("parallax-logo-bg")?.classList.add("parallax-logo-bg");
+    };
+
+    requestIdleCallback?.(setClass) || setTimeout(setClass, 200);
+}
+
+window.addEventListener("load", () => {
+
+});
+
 function onSwiperClick(swiper, event) {
     const clickedSlide = swiper.clickedSlide;
     if (clickedSlide && clickedSlide.dataset.url) {
@@ -208,9 +223,4 @@ document.addEventListener("click", async (event) => {
         statblockPlaceholder.innerHTML = '';
         statblockPlaceholder.appendChild(newStatblockElement);
     }
-});
-
-// Randomize masks on page load
-document.addEventListener("DOMContentLoaded", () => {
-    randomizeMasks();
 });
