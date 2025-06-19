@@ -107,7 +107,13 @@ function initSwipers() {
             keyboard: true,
             navigation: true,
             parallax: true,
-            simulateTouch: true
+            simulateTouch: true,
+            on: {
+                init: function () {
+                    //remove preload class which is designed to help deal with layout shift
+                    this.el.classList.remove('preload');
+                }
+            }
         });
 
         swiper.autoplay.stop();
