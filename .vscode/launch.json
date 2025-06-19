@@ -12,6 +12,13 @@
             "justMyCode": true
         },
         {
+            "name": "Foe Foundry Homepage",
+            "type": "python",
+            "request": "launch",
+            "module": "docs_gen.homepage", // <-- replace this
+            "justMyCode": false
+        }
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",

@@ -1,0 +1,27 @@
+<link href="{{ 'css/bootstrap.min.css'|url }}" rel="stylesheet">
+<link href="{{ 'css/base.css'|url }}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+{%- for path in config.extra_css %}
+<link href="{{ path|url }}" rel="stylesheet">
+{%- endfor %}
+
+{% if page and page.is_homepage %}
+<link href="{{ 'css/homepage.css'|url }}" rel="stylesheet">
+</script>
+{% endif %}
+
+<link href="{{ 'css/fontawesome.min.css'|url }}" media="print" onload="this.media='all'">
+<link href="{{ 'css/brands.min.css'|url }}" media="print" onload="this.media='all'">
+<link href="{{ 'css/solid.min.css'|url }}" media="print" onload="this.media='all'">
+<link href="{{ 'css/v4-font-face.min.css'|url }}" media="print" onload="this.media='all'">
+<noscript>
+    <link rel="stylesheet" href="{{ 'css/fontawesome.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'css/brands.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'css/solid.min.css'|url }}">
+    <link rel="stylesheet" href="{{ 'css/v4-font-face.min.css'|url }}">
+</noscript>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Uncial+Antiqua&display=swap"
+    rel="stylesheet">

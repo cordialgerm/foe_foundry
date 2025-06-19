@@ -9,6 +9,7 @@ from typing import Callable, Iterable, TypeAlias
 import numpy as np
 
 from foe_foundry.utils import find_image, find_lore
+from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
 
 from ..features import Feature
 from ..powers.selection import PowerSelector, SelectionSettings
@@ -120,6 +121,7 @@ class MonsterTemplate:
     species: list[CreatureSpecies]
     callback: GenerateCallback
     is_sentient_species: bool = False
+    lore_md: str | None = field(init=False)
 
     def __post_init__(self):
         self.n_variant = len(self.variants)
@@ -137,9 +139,21 @@ class MonsterTemplate:
         self.srd_ceatures = sorted(list(srd_creatures))
         self.other_creatures = sorted(list(other_creatures))
 
+        # update tag line from lore, if available
+        lore_path = find_lore(self.key)
+        if lore_path is not None:
+            lore_md = strip_yaml_frontmatter(lore_path.read_text(encoding="utf-8"))
+            tagline = extract_tagline(lore_md)
+            if tagline is not None:
+                self.tag_line = tagline.strip()
+            self.lore_md = lore_md
+        else:
+            self.lore_md = None
+
     @cached_property
     def image_urls(self) -> dict[str, list[Path]]:
         urls = {}
+        urls[self.key] = find_image(self.key)
         for variant in self.variants:
             image_urls = find_image(variant.key)
             if len(image_urls) == 0:
@@ -154,16 +168,6 @@ class MonsterTemplate:
             return None
 
         return urls[0] if len(urls) else None
-
-    @cached_property
-    def lore_md(self) -> str:
-        markdown = ""
-        for lore_path in find_lore(self.key):
-            with lore_path.open("r") as f:
-                markdown += f.read()
-            markdown += "\n\n"
-
-        return markdown
 
     def get_images(self, variant: str) -> list[Path]:
         if variant not in self._variant_map:

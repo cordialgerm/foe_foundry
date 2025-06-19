@@ -72,9 +72,10 @@ document.addEventListener("click", (event) => {
 
   const monsterKey = button.dataset.monster;
   const statblock = wrapper.querySelector(".stat-block");
-  console.log("Reroll button clicked:", monsterKey, statblock);
 
   if (!monsterKey || !statblock) return;
+
+  console.log("Reroll button clicked:", monsterKey, statblock);
 
   // Trigger the animation
   button.classList.add("rolling");
@@ -86,6 +87,11 @@ document.addEventListener("click", (event) => {
   }, 600); // match the animation duration
 
   rerollMonster(monsterKey, statblock);
+});
+
+// Randomize masks on page load
+document.addEventListener("DOMContentLoaded", () => {
+  randomizeMasks();
 });
 
 
@@ -157,6 +163,19 @@ async function rerollMonster(monsterKey) {
   } catch (err) {
     console.error("Failed to reroll monster:", err);
   }
+}
+
+function randomizeMasks() {
+  const variants = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'];
+
+  document.querySelectorAll('.masked').forEach(el => {
+    const hasVariant = variants.some(variant => el.classList.contains(variant));
+
+    if (!hasVariant) {
+      const random = variants[Math.floor(Math.random() * variants.length)];
+      el.classList.add(random);
+    }
+  });
 }
 
 
