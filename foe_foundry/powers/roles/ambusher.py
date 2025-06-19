@@ -9,8 +9,6 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from .. import flags
 from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from .shared import CunningAction as _CunningAction
-from .shared import NimbleEscape as _NimbleEscape
 
 
 class AmbusherPower(PowerWithStandardScoring):
@@ -42,6 +40,30 @@ class AmbusherPower(PowerWithStandardScoring):
             reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
+
+
+class _CunningAction(AmbusherPower):
+    def __init__(self):
+        super().__init__(
+            name="Cunning Action",
+            source="SRD5.1 Spy",
+            reference_statblock="Spy",
+            icon="running-ninja",
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        dash = action_ref("Dash")
+        disengage = action_ref("Disengage")
+        hide = action_ref("Hide")
+        feature = Feature(
+            name="Cunning Action",
+            description=f"{stats.roleref.capitalize()} uses {dash}, {disengage}, or {hide}.",
+            action=ActionType.BonusAction,
+        )
+        return [feature]
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.copy(has_unique_movement_manipulation=True)
 
 
 class _StealthySneak(AmbusherPower):
@@ -90,14 +112,12 @@ class _DeadlyAmbusher(AmbusherPower):
         )
 
 
-CunningAction: Power = _CunningAction(MonsterRole.Ambusher)
-NimbleEscape: Power = _NimbleEscape(MonsterRole.Ambusher)
+CunningAction: Power = _CunningAction()
 DeadlyAmbusher: Power = _DeadlyAmbusher()
 StealthySneak: Power = _StealthySneak()
 
 AmbusherPowers: List[Power] = [
     CunningAction,
     DeadlyAmbusher,
-    NimbleEscape,
     StealthySneak,
 ]

@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import action_ref
+
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...features import ActionType, Feature
@@ -9,8 +11,6 @@ from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
-from .shared import CunningAction as _CunningAction
-from .shared import NimbleEscape as _NimbleEscape
 
 
 class SkirmisherPower(PowerWithStandardScoring):
@@ -22,6 +22,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         requires_tactics: bool = True,
+        reference_statblock: str = "Goblin",
         **score_args,
     ):
         def ideal_skirmisher(c: BaseStatblock) -> bool:
@@ -50,7 +51,7 @@ class SkirmisherPower(PowerWithStandardScoring):
             create_date=create_date,
             icon=icon,
             theme="Skirmisher",
-            reference_statblock="Goblin",
+            reference_statblock=reference_statblock,
             score_args=standard_score_args,
         )
 
@@ -141,15 +142,36 @@ class _Speedy(SkirmisherPower):
         return stats
 
 
-CunningAction: Power = _CunningAction(MonsterRole.Skirmisher)
-NimbleEscape: Power = _NimbleEscape(MonsterRole.Skirmisher)
+class _NimbleEscape(SkirmisherPower):
+    def __init__(self):
+        super().__init__(
+            name="Nimble Escape",
+            source="SRD5.1 Goblin",
+            reference_statblock="Goblin",
+            icon="exit-door",
+        )
+
+    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        hide = action_ref("Hide")
+        disengage = action_ref("Disengage")
+        feature = Feature(
+            name="Nimble Escape",
+            action=ActionType.BonusAction,
+            description=f"{stats.roleref.capitalize()} uses {disengage} or {hide}.",
+        )
+        return [feature]
+
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        return stats.copy(has_unique_movement_manipulation=True)
+
+
+NimbleEscape: Power = _NimbleEscape()
 HarassingRetreat: Power = _HarrassingRetreat()
 Skirmish: Power = _Skirmish()
 Speedy: Power = _Speedy()
 
 
 SkirmisherPowers: List[Power] = [
-    CunningAction,
     NimbleEscape,
     HarassingRetreat,
     Skirmish,

@@ -1,5 +1,5 @@
 from foe_foundry.powers import PowerLoadout
-from foe_foundry.powers.roles import ambusher, artillery, skirmisher
+from foe_foundry.powers.roles import ambusher, artillery
 from foe_foundry.powers.themed import (
     anti_ranged,
     clever,
@@ -12,7 +12,7 @@ from foe_foundry.powers.themed import (
 )
 
 # Cunning Action
-PerksCunning = [skirmisher.CunningAction]
+PerksCunning = [ambusher.CunningAction]
 
 # Deadly Poison
 PerksDeadlyPoisons = [
