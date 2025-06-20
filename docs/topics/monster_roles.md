@@ -142,7 +142,7 @@ Many defenders have abilities that allow them to protect other creatures, such a
 
 **When to Use Them**. Soldiers should be the bread and butter of encounters with organized, intelligent foes. They make for a great front line to protect artillery and controllers, and are also great to combine with leaders and support to create a "combat squad".
 
-**Placement and Tactics**. Soldiers should be placed on the front line of combat. Their goal should be to prevent enemies from breaking through the front line, to capture important objectives and locations, and to flank or surround oponents. Soldiers operate in groups, are highly trained, and follow reasonable tactics. When in the presence of a leader, soldiers should follow the leader's commands.
+**Placement and Tactics**. Soldiers should be placed on the front line of combat. Their goal should be to prevent enemies from breaking through the front line, to capture important objectives and locations, and to flank or surround opponents. Soldiers operate in groups, are highly trained, and follow reasonable tactics. When in the presence of a leader, soldiers should follow the leader's commands.
 
 **Example Soldiers**. [[Veteran]], [[Knight]], [[Kobold]]
 
