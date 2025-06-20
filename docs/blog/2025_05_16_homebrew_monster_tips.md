@@ -12,6 +12,9 @@ date: 2025-05-16
 
 # 5 Tips for Homebrewing Monsters
 
+!!! info "Opinionated Advice"
+    This article shares my opinionated advice on how I go about designing and creating homebrew monsters. 5E is an open system and there's room for many different styles of monster design. I encourage you to pick and choose what works best for you and your games!
+
 Tired of vanilla monsters that feel like soggy cardboard in combat? Homebrewing monsters in 5E can turn forgettable encounters into memorable moments, if done right. This guide walks you through five practical tips to design custom monsters that hit hard, act smart, and keep players on their toes. Whether you're building from scratch or tweaking existing statblocks, these ideas will help you create monsters that actually matter.
 
 ## A Monster's Primary Threat Is Its Damage
@@ -90,6 +93,12 @@ If you build a statblock by hand, you have to worry about fiddling with statbloc
 Need a monster for tonight? Get started and summon unforgettable foes instantly, like this [[Diviner Mage]].
 
 [[$Diviner Mage]]
+
+---
+
+## Part 2
+
+[Four More Tips for Homebrewing](./2025_06_19_more_homebrew_monster_tips.md) continues the series with more tips and tricks for homebrewing monsters.
 
 ---
 
