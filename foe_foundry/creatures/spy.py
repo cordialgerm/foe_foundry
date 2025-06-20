@@ -6,9 +6,8 @@ from ..attack_template import weapon
 from ..creature_types import CreatureType
 from ..damage import DamageType
 from ..powers import CustomPowerSelection, PowerType, select_powers
-from ..powers.roles.ambusher import DeadlyAmbusher, StealthySneak
+from ..powers.roles.ambusher import CunningAction, DeadlyAmbusher, StealthySneak
 from ..powers.roles.artillery import QuickDraw
-from ..powers.roles.skirmisher import CunningAction
 from ..powers.themed.charm import CharmingWords
 from ..powers.themed.fast import NimbleReaction
 from ..powers.themed.gadget import GadgetPowers, PotionOfHealing, SmokeBomb

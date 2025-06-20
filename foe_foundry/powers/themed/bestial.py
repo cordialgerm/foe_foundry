@@ -3,6 +3,7 @@ from typing import List
 
 from ...attack_template import natural
 from ...creature_types import CreatureType
+from ...damage import Condition
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...size import Size
@@ -77,9 +78,12 @@ class _OpportuneBite(BestialPower):
         )
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        prone = Condition.Prone.caption
+        grappled = Condition.Grappled.caption
+        restrained = Condition.Restrained.caption
         feature = Feature(
             name="Opportune Bite",
-            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
+            description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a {prone}, {grappled}, or {restrained} creature.",
             action=ActionType.BonusAction,
         )
         return [feature]
