@@ -5,12 +5,14 @@ description: Learn four advanced tips for homebrewing monsters in 5E - from choo
 tags:
   - tips
   - monsters
-image: img/icons/favicon.webp
+image: img/monsters/sahuagin.png
 json_ld: true
 date: 2025-06-19
 ---
 
-# Are You Homebrewing Backwards? 4 Tips for Homebrewing Monsters
+# Four More Tips for Homebrewing Monsters
+
+## Are You Homebrewing Backwards? 
 
 Wondering if your monster is balanced? You might be building it backwards.  
 
@@ -57,7 +59,11 @@ Using the [Monster Stats by CR](../topics/design.md#monster-statistic-baselines)
 - There's far fewer ways we can make a major mistake
 - Our monster's challenge will have internal consistency, because we chose it based on the challenge of other well-understood threats 
 
+![Sahuagin](../img/monsters/sahuagin.png){.monster-image .masked}
+
 ---
+
+<div class="break-after"></div>
 
 ## Choose Powers That Reinforce the Fantasy
 
@@ -134,6 +140,8 @@ Let's also make the attack impose an interesting condition. We could either go w
 [[!Grappling Attack]]
 
 ---
+
+<div class="break-before"></div>
 
 ## Summary
 

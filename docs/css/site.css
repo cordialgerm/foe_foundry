@@ -476,18 +476,6 @@ p:has(> img.masked.padded)>img.masked.padded {
     background-color: var(--fg-color) !important;
 }
 
-.break-before {
-    page-break-before: always;
-}
-
-.break-after {
-    page-break-after: always;
-}
-
-.pamphlet-main hr {
-    page-break-after: always;
-}
-
 .pamphlet-main a.blogging-tag {
     text-decoration-line: none;
     text-decoration-color: none;
@@ -579,27 +567,6 @@ footer a {
     font-size: var(--primary-font-size);
     color: var(--fg-color) !important;
     text-align: center;
-}
-
-
-/* Tell the browser that I really do want my background colors and images! */
-@media print {
-    * {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-
-    .pamphlet-container {
-        margin-left: initial;
-    }
-
-    .stat-block>* {
-        page-break-inside: avoid;
-    }
-
-    .power-block>* {
-        page-break-inside: avoid;
-    }
 }
 
 .burnt-parchment {
@@ -1317,4 +1284,108 @@ a.burnt-parchment,
     --card-title-color: var(--bg-color);
     --card-title-highlight-color: var(--fg-color);
     background-image: url('/img/backgrounds/objects/wax.webp');
+}
+
+/* Print Styles */
+
+.break-before {
+    page-break-before: always;
+}
+
+.break-after {
+    page-break-after: always;
+}
+
+.pamphlet-main hr {
+    page-break-after: auto
+}
+
+@media print {
+
+    h1,
+    h2,
+    h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Tell the browser that I really do want my background colors and images! */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+    #toc-collapse {
+        display: none !important;
+    }
+
+    .stat-block>*,
+    .power-block {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .blogging-tags-grid,
+    .email-subscribe,
+    footer {
+        display: none !important;
+    }
+
+    .print-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--primary-color);
+        padding-left: 130px;
+        font-family: var(--stylistic-font);
+        font-size: 1.5rem;
+        color: var(--fg-color);
+        background: var(--primary-color);
+        position: relative;
+    }
+
+    .print-header::before {
+        content: "";
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url('/img/icons/favicon.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+    }
+
+    .print-header::after {
+        content: "Foe Foundry";
+        font-weight: bold;
+        color: var(--fg-color);
+    }
+
+    .stat-block,
+    .power-block {
+        box-shadow: unset;
+    }
+
+    .stat-block::before,
+    .stat-block::after,
+    .power-block::before,
+    .power-block::after {
+        content: unset;
+    }
 }
