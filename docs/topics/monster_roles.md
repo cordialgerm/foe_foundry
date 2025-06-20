@@ -11,8 +11,8 @@ Monsters in [Foe Foundry](../index.md){.branding} are designed with specific bat
 
 Whether you're homebrewing your own monsters or assembling an encounter from existing ones, understanding these roles can help you build more dynamic, tactical, and memorable battles. Each role comes with suggestions for how to use it effectively, how to place the creature in an encounter, and what kinds of powers bring that role to life.
 
-!!! info "Lazy 5E Monser Building Resource Document"
-    Many of these roles are based on work in the [Lazy 5E Monser Building Resource Document](https://slyflourish.com/lazy_5e_monster_building_resource_document.html). See [Credits](credits.md) for more information on this work.  
+!!! info "Lazy 5E Monster Building Resource Document"
+    Many of these roles are based on work in the [Lazy 5E Monster Building Resource Document](https://slyflourish.com/lazy_5e_monster_building_resource_document.html). See [Credits](credits.md) for more information on this work.  
 
     Foe Foundry also defines distinct **Soldier** and **Support** roles. 
 
