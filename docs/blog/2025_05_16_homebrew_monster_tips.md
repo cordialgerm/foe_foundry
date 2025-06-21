@@ -23,7 +23,7 @@ If you just multiattack with the monster, it should present a challenge in its r
 
 A classic example of this is the 2014 [[Mage]]:
 
-![Mage](../img/blogs/mage_2014.png){.masked .padded .blog-image-large}
+![Mage](../img/blogs/mage_2014.webp){.masked .padded .blog-image-large}
 
 **The Problem**: It has a completely pointless dagger attack that wastes space and detracts from the quality of the statblock. All of the monster's damage and threat is locked into spells, and you have to know which spell to use because there are a bunch of filler spells on the spell list.
 
@@ -43,7 +43,7 @@ Foe Foundry monsters often have bonus actions or powerful actions that can repla
 
 Let's look at the 2014 **Doppelganger** from the [SRD](https://open5e.com/monsters/doppelganger):
 
-![2014 Doppelganger that Foe Foundry can improve](../img/blogs/doppelganger_2014.png){.masked .padded .blog-image-large}
+![2014 Doppelganger that Foe Foundry can improve](../img/blogs/doppelganger_2014.webp){.masked .padded .blog-image-large}
 
 **The Problem**: the features that make a Doppelganger unique and interesting are its ability to shapeshift and read minds. But, with this statblock these require the Doppelganger to use up its action. So, in order to do something fun and interesting, this monster has to give up doing any damage. Also, its damage output is pitiful. So why would anyone ever run this monster as-is?
 
@@ -61,7 +61,7 @@ No more boring french-vanilla "Bite Claw Claw" monsters. These sorts of attacks 
 
 Let's look at the 2014 **Barbed Devil** from the [SRD](https://open5e.com/monsters/barbed-devil):
 
-![Foe Foundry can fix the 2014 Barbed Devil](../img/blogs/barbed_devil_2014.png){.masked .padded .blog-image-large}
+![Foe Foundry can fix the 2014 Barbed Devil](../img/blogs/barbed_devil_2014.webp){.masked .padded .blog-image-large}
 
 **The Problem**: This monster has 3 attacks, which take up the majority of the statblocks. The attacks don't actually do anything besides slightly different amounts of damage, but you have to roll different numbers of dice and use different damage and attack modifiers for each. Why? It's a complete distraction.
 

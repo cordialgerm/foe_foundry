@@ -16,7 +16,7 @@ date: 2025-04-09
 
 # Announcing Foe Foundry
 
-After nearly two years of off-and-on development, I’m thrilled to finally unveil <a href="../index.md" class="branding">Foe Foundry</a>, a free toolkit for Game Masters who want to create [monsters](../monsters/index.md) that are **powerful, flavorful, and easy to run**. If you’ve ever struggled with the limitations of the *Monster Manual* or D&D Beyond, this project was made for you.
+After nearly two years of off-and-on development, I'm thrilled to finally unveil [Foe Foundry](../index.md){.branding} a free toolkit for Game Masters who want to create [monsters](../monsters/index.md) that are **powerful, flavorful, and easy to run**. If you’ve ever struggled with the limitations of the *Monster Manual* or D&D Beyond, this project was made for you.
 
 ## Why I Built Foe Foundry
 

@@ -1,11 +1,11 @@
 ---
-title: Are You Homebrewing Backwards? 4 More Tips for Homebrewing Monsters in 5E | Foe Foundry
-short_title: Are You Homebrewing Backwards? 4 More Tips for Homebrewing Monsters in 5E 
+title: Are You Building Monsters Backwards? 4 Tips for 5E Monsters
+short_title: Are You Building Monsters Backwards? 4 Tips for 5E Monsters
 description: Learn four advanced tips for homebrewing monsters in 5E - from choosing CR the right way to designing powers that reinforce flavor and threat. Includes examples, stat scaling advice, and free tools from Foe Foundry.
 tags:
   - tips
   - monsters
-image: img/monsters/sahuagin.png
+image: img/monsters/sahuagin.webp
 json_ld: true
 date: 2025-06-19
 ---
@@ -59,7 +59,7 @@ Using the [Monster Stats by CR](../topics/design.md#monster-statistic-baselines)
 - There's far fewer ways we can make a major mistake
 - Our monster's challenge will have internal consistency, because we chose it based on the challenge of other well-understood threats 
 
-![Sahuagin](../img/monsters/sahuagin.png){.monster-image .masked}
+![Sahuagin](../img/monsters/sahuagin.webp){.monster-image .masked}
 
 ---
 

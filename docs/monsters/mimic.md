@@ -1,5 +1,5 @@
 ---
-title: Mimic Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+title: Mimic Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Mimics
 description: Ambush your unsuspecting party with mimics using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/monsters/mimic.webp
