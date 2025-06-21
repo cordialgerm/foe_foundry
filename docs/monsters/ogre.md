@@ -1,5 +1,5 @@
 ---
-title: Ogre Statlbocks, Encounters, and Lore for 5E | Foe Foundry
+title: Ogre Statblocks, Encounters, and Lore for 5E | Foe Foundry
 short_title: Ogres
 description: Smash expectations with this collection of 5E ogre lore, unique statblocks, encounter seeds, and multi-session adventures for your next campaign.
 image: img/monsters/ogre.webp

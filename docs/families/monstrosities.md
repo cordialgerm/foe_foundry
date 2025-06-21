@@ -26,6 +26,7 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 
 | Creature | CR Range | Tagline                                    | Variants |
 |----------|----|--------------------------------------------------|----------|
+| [Basilisks](../monsters/basilisk.md)  | 3-8 | reptilian predators with petrifying gaze and venomous bite | [[Basilisk]], [[Basilisk Broodmother]]      |
 | [Chimeras](../monsters/chimera.md)     | 6-10 | monstrous messenger of imminent disaster         | [[Chimera]], [[Chimera Sovereign]]  |
 | [Manticores](../monsters/manticore.md) | 3-6 | flying hunters with spiked tails and sharper tongues| [[Manticore]], [[Manticore Ravager]]      |
 | [Merrow](../monsters/merrow.md)        | 2-12 | demonically twisted merfolk                      | [[Merrow]], [[Merrow Blood-Blessed]], [[Merrow Storm-Blessed]], [[Merrow Abyssal Lord]]      |
