@@ -53,5 +53,5 @@ As the matron of a pack, the [[Basilisk Broodmother]] is frequently surrounded b
 
 - A [[Bandit Crime Lord]] has put out a bounty for any who can retrieve a priceless ruby that a [[Basilisk Broodmother]] has mistaken for one of her eggs
 - A secretive [[Druid]] hires the PCs to steal [[Basilisk]] eggs. She secretly wishes to raise a clutch of basilisks as protectors of a nearby wood that is being heavily hunted by the villagers
-- An important NPC connected to the PCs has gone missing, turned to stone by an unforunate encounter with a [[Basilisk]]
+- An important NPC connected to the PCs has gone missing, turned to stone by an unfortunate encounter with a [[Basilisk]]
 - A [[Hydra]] encroaches on the territory of a clutch of [[Basilisks]], enraging them. The conflict wreaks such havoc that the [[Priest]] of a nearby village begs the party to put an end to the wanton destruction. He can't offer much, but he does have a holy relic of a saint he is willing to offer.
