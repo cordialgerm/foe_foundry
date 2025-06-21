@@ -40,7 +40,8 @@ See also these curated **Humanoid Family Pages** for curated collections of rela
 
 ## Undead
 
-> See also [Undead](../families/undead.md) for detailed lore, encounters, and statblock
+!!! info "More Undead"
+    See also [Undead](../families/undead.md) for detailed lore, encounters, and statblocks
 
 Bleached bones. Rotting flesh. Soul fragments clawing their way back to life from the River Styx. The [Undead](../families/undead.md) of Foe Foundry aren't just cannon fodder. They're cursed echoes of mortal lives, each with their own twisted flavor.
 
@@ -56,10 +57,12 @@ Bleached bones. Rotting flesh. Soul fragments clawing their way back to life fro
 
 ## Monstrosities
 
-> See also [Monstrosities](../families/monstrosities.md) for detailed lore, encounters, and statblocks
+!!! info "More Monstrosities"
+    See also [Monstrosities](../families/monstrosities.md) for detailed lore, encounters, and statblocks
 
 Monstrosities defy nature: ancient experiments, magical amalgams, and living symbols of disaster.
 
+- [Basilisks](basilisk.md) - reptilian predators with petrifying gaze and venomous bite
 - [Chimeras](chimera.md) - monstrous messenger of imminent disaster
 - [Manticores](manticore.md) - flying hunters with spiked tails and sharper tongues
 - [Merrow](merrow.md) - demonically twisted merfolk

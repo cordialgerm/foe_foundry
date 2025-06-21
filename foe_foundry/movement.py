@@ -68,6 +68,7 @@ class Movement:
         add("climb", self.climb)
         add("fly", self.fly, "hover" if self.hover else None)
         add("swim", self.swim)
+        add("burrow", self.burrow)
 
         return ", ".join(pieces)
 
