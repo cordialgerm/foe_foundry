@@ -1,5 +1,5 @@
 ---
-title: Priest Statblocks, Lore, and Divine Adventure Hooks for TTRPGs | Foe Foundry
+title: Priest Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Priests
 description: Explore priest statblocks, divine lore, and heretical encounter ideas for your next tabletop RPG session. Summon low-magic miracles, create religious tension, and discover dark twists of faith using Foe Foundry.
 image: img/monsters/priest.webp

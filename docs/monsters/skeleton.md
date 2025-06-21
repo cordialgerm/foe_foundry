@@ -1,5 +1,5 @@
 ---
-title: Skeleton Statblocks, Lore, and Adventures for RPGs - Summoned with Foe Foundry
+title: Skeleton Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Skeletons
 description: Raise subservient skeletons with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
 image: img/monsters/skeleton_warband.webp

@@ -1,6 +1,6 @@
 ---
-title: "Goblins for 5E: Statblocks, Lore, Encounters, and Tactics | Foe Foundry"
-short_title: "Goblins for 5E: Statblocks, Lore, Encounters, and Tactics"
+title: Goblins Statblocks, Lore, and Encounters for 5E | Foe Foundry
+short_title: Goblins
 description: Discover goblin statblocks, lore, tactics, and chaotic encounter ideas for 5E. Add flavorful and fun goblins to your next TTRPG session.
 image: img/monsters/goblin.webp
 json_ld: true
