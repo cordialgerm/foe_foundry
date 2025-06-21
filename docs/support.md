@@ -11,7 +11,7 @@ hidden:
 
 Hey there, fellow GM!
 
-<a alt="Foe Foundry Skull" href="index.md" class="branding">Foe Foundry</a> is a free, ever-growing toolkit designed to help you create unforgettable monsters, thrilling encounters, and flavorful adventures for your 5E TTRPGs. If you’ve found something here that inspired your campaign or saved you prep time, please consider becoming a patron and helping the project grow.  
+[Foe Foundry](../index.md){.branding} is a free, ever-growing toolkit designed to help you create unforgettable monsters, thrilling encounters, and flavorful adventures for your 5E TTRPGs. If you’ve found something here that inspired your campaign or saved you prep time, please consider becoming a patron and helping the project grow.  
 
 Your support keeps the gears turning. 
 
@@ -37,7 +37,7 @@ By becoming a patron, you're not just helping out — you're helping *shape* the
 
 - **Show your support** and keep the project alive (and slightly haunted).
 - Vote in **prioritization polls** to steer what monsters or tools come next.
-- **Request new monsters and templates** — your nightmare is my blueprint.
+- **Request new monsters and templates** - your PC's nightmare is my blueprint.
 
 ## Upcoming Patron Perks
 
@@ -46,7 +46,7 @@ By becoming a patron, you're not just helping out — you're helping *shape* the
 - **Chatbot Monster Generation** *(higher tiers)*: describe a monster and get a fully generated statblock and lore in seconds.
 - **Foundry VTT Export** *(higher tiers)*: Bring your creations straight into your favorite virtual tabletop.
 
-Whether you chip in for a month or stick around for the long haul, it makes a huge difference. Thanks for helping make monster design more fun, more flavorful, and more ferocious.
+Whether you chip in for a month or stick around for the long haul, it makes a huge difference. Thanks for helping make monster design more fun and flavorful.
 
 [👉 Support Foe Foundry on Patreon](https://patreon.com/foefoundry?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink){.patreon .big-link}
 

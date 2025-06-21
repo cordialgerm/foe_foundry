@@ -33,7 +33,7 @@ There is no single road to becoming a conduit to the divine. Priests may be soli
 
 [[$Archpriest]]
 
-# Cultists
+## Cultists
 
 *Worshippers of the Occult and Forbidden*
 

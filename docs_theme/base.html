@@ -12,20 +12,17 @@
     <meta property="og:url" content="{{ page.canonical_url }}" />
     {% endif %}
 
-    {% if config.site_favicon %}
-    <link rel="shortcut icon" href="{{ config.site_favicon|url }}">
-    {% else %}
-    <link rel="shortcut icon" href="{{ 'img/icons/favicon.ico'|url }}">{% endif %}
+    <link rel="shortcut icon" href="{{ 'img/icons/favicon.ico'|url }}">
 
-    {% if page and page.title and not page.is_homepage %}
-    <title>{{ page.title }}</title>
-    <meta property="og:title" content="{{ page.title }}" />
+    {% if page and not page.is_homepage %}
+    <title>{{ page.meta.title }}</title>
+    <meta property="og:title" content="{{ page.meta.title }}" />
     {% else %}
     <title>{{ config.site_name }}</title>
-    <meta property="og:title" content="{{ page.site_name }}" />
+    <meta property="og:title" content="{{ config.site_name }}" />
     {% endif %}
 
-    {% if page and page.is_homepage %}
+    {% if page and not page.is_homepage %}
     <meta name="description" content="{{ config.site_description }}">
     <meta property="og:description" content="{{ config.site_description }}" />
     {% elif page and page.meta.description %}

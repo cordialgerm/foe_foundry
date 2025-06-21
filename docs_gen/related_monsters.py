@@ -59,7 +59,7 @@ def set_related_monsters_on_page(page: Page, markdown: str):
     options = [
         "**Need more inspiration?** [Browse Foe Foundry's full monster library]({base_url}/monsters/) and summon something unforgettable.",
         "**Looking for your next villain?** [Explore hundreds of handcrafted monsters]({base_url}/monsters/) built to surprise and challenge your players.",
-        "**Want more like this?** [Dive into the full monster index]({base_url}/monsters/index.md) and discover your next favorite foe.",
+        "**Want more like this?** [Dive into the full monster index]({base_url}/monsters/) and discover your next favorite foe.",
         "**Don't stop here.** [Check out the rest of our monsters]({base_url}/monsters/) and find something wicked for your world.",
         "**Prepare for anything.** [Browse all monsters by theme, tier, or environment]({base_url}/monsters/) and stay one step ahead of your players.",
         "**Short on time?** [Summon the perfect monster in seconds]({base_url}/monsters/) from our growing collection of free statblocks.",
