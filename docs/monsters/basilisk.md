@@ -12,7 +12,7 @@ json_ld: true
 
 Basilisks are eight-legged reptilian monsters whose deadly gaze turns their victims to stone. They consider the petrified flesh of humanoids a particular delicacy. Newly hatched basilisks are often born amid fields of stone - their eggs laid among petrified victims to ensure a ready feast.
 
-As a basilisk matures, minerals drawn from consumed petrified flesh crystallize along its spine and form jagged crystalline growths. These crystals glow warm when interacting with latent magical energy. For this reason, basilisks are particularly fond of regions with strong natural magical energies, and are known to be stubbornly territorial of their nesting grounds. Wizened hags and mad mages ocassionaly employ basilisk guardians for this very reason.  
+As a basilisk matures, minerals drawn from consumed petrified flesh crystallize along its spine and form jagged crystalline growths. These crystals glow warm when interacting with latent magical energy. For this reason, basilisks are particularly fond of regions with strong natural magical energies, and are known to be stubbornly territorial of their nesting grounds. Wizened hags and mad mages occasionally employ basilisk guardians for this very reason.  
 
 A basilisk's bite delivers a potent venom that is lethal to the living; but paradoxically, it softens stone flesh, allowing the creature to devour its petrified prey. A skilled alchemist can transform the venom into an elixir that can reverse the petrification process. 
 
