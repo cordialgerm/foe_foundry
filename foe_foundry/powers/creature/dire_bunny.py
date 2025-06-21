@@ -58,14 +58,14 @@ class _ThumpOfDread(_DireBunnyPower):
         return [feature]
 
 
-class _BurrowingAmbush(_DireBunnyPower):
+class _BurrowingDisguise(_DireBunnyPower):
     def __init__(self):
-        super().__init__(name="Burrowing Ambush", power_level=MEDIUM_POWER)
+        super().__init__(name="Burrowing Disguise", power_level=MEDIUM_POWER)
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         feature = Feature(
-            name="Burrowing Ambush",
+            name="Burrowing Disguise",
             action=ActionType.Action,
             replaces_multiattack=1,
             description=f"{stats.selfref.capitalize()} burrows into the earth and uses {hide}",
@@ -89,11 +89,11 @@ class _CursedCuteness(_DireBunnyPower):
 
 
 ThumpOfDread: Power = _ThumpOfDread()
-BurrowingAmbush: Power = _BurrowingAmbush()
+BurrowingDisguise: Power = _BurrowingDisguise()
 CursedCuteness: Power = _CursedCuteness()
 
 DireBunnyPowers = [
     ThumpOfDread,
-    BurrowingAmbush,
+    BurrowingDisguise,
     CursedCuteness,
 ]
