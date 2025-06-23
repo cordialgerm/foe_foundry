@@ -20,7 +20,7 @@ PerksAttackModifications = [
 LoadoutBase = [
     PowerLoadout(
         name="Constructed Nature",
-        flavor_text="The golem is an artifically created creature",
+        flavor_text="The golem is an artificially created creature",
         powers=PerksConstructedNature,
         locked=True,
         selection_count=2,
