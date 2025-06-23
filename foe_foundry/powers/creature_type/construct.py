@@ -5,6 +5,7 @@ from typing import List
 from num2words import num2words
 
 from foe_foundry.references import action_ref
+from foe_foundry.utils import easy_multiple_of_five
 
 from ...attack_template import natural as natural_attacks
 from ...creature_types import CreatureType
@@ -266,7 +267,8 @@ class _SpellStoring(ConstructPower):
         feature = Feature(
             name="Spell Storing",
             action=ActionType.Action,
-            description=f"{stats.selfref.capitalize()} stores a single spell of {level_text} level or lower. {stats.selfref} may cast the spell using a spell save DC of {dc}. \
+            replaces_multiattack=1,
+            description=f"{stats.selfref.capitalize()} stores a single spell of {level_text} level or lower. {stats.selfref.capitalize()} may cast the spell using a spell save DC of {dc}. \
                 When the spell is cast or a new spell is stored, any previously stored spell is lost. Some example spells include {examples}.",
         )
 
@@ -285,11 +287,12 @@ class _Overclock(ConstructPower):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
+        temphp = easy_multiple_of_five(5 + 2 * stats.cr)
         feature = Feature(
             name="Overclock",
             recharge=5,
             action=ActionType.BonusAction,
-            description=f"{stats.selfref.capitalize()} uses {dash}.",
+            description=f"{stats.selfref.capitalize()} uses {dash} and gains {temphp} temporary hit points.",
         )
         return [feature]
 
@@ -307,16 +310,15 @@ class _Crush(ConstructPower):
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.8, suggested_die=Die.d8)
-        prone = Condition.Prone
+        prone = Condition.Prone.caption
         feature = Feature(
             name="Crush",
             action=ActionType.Action,
             replaces_multiattack=2,
-            description=f"{stats.selfref.capitalize()} moves up to its Speed in a straight line. While doing so, it can attempt to enter Large or smaller creatures' spaces. \
-                Whenever {stats.selfref} attempts to enter a creature's space, the creature makes a DC {dc} Dexterity or Strength saving throw (the creature's choice). \
+            description=f"{stats.selfref.capitalize()} moves up to its speed in a straight line. While doing so, it can attempt to enter Large or smaller creatures' spaces. \
+                Right before {stats.selfref} attempts to enter a creature's space, that creature makes a DC {dc} Dexterity or Strength saving throw (the creature's choice). \
                 If the creature succeeds at a Strength saving throw, {stats.selfref}'s movement ends for the turn. If the creature succeeds at a Dexterity saving throw, the creature may use its reaction, if available, to move up to half its Speed without provoking opportunity attacks. \
-                The first time on {stats.selfref}'s turn that it enters a creature's space, the creature is knocked {prone.caption} and takes {dmg.description} bludgeoning damage. \
-                A creature is prone while in {stats.selfref}'s space.",
+                The first time on {stats.selfref}'s turn that it enters a creature's space, that creature is knocked {prone} and takes {dmg.description} bludgeoning damage.",
         )
         return [feature]
 
