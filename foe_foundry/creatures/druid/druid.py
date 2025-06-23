@@ -1,43 +1,25 @@
 from foe_foundry.utils import choose_enum
 
-from ..ac_templates import StuddedLeatherArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    flags,
-    select_powers,
-)
-from ..powers.creature import druid
-from ..powers.roles import support
-from ..powers.spellcaster import druidic, metamagic
-from ..powers.themed import (
-    gadget,
-    icy,
-    poison,
-    shamanic,
-    storm,
-    technique,
-    totemic,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...ac_templates import StuddedLeatherArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, PowerLoadout, flags, select_powers
+from ...powers.species import powers_for_role
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 DruidVariant = MonsterVariant(
     name="Druid",
@@ -46,63 +28,45 @@ DruidVariant = MonsterVariant(
         Monster(name="Druid", cr=2, srd_creatures=["Druid"]),
         Monster(name="Druid Greenwarden", cr=6),
         Monster(
-            name="Archdruid of Old Way", cr=12, other_creatures={"Archdruid": "mmotm"}
+            name="Archdruid of the Old Way",
+            cr=12,
+            other_creatures={"Archdruid": "mmotm"},
         ),
         Monster(name="Archdruid of the First Grove", cr=16, is_legendary=True),
     ],
 )
 
 
-class _DruidWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def force_powers(self) -> list[Power]:
-        if self.stats.cr >= 12:
-            return [druidic.DruidicExpertPower]
-        elif self.stats.cr >= 6:
-            return [druidic.DruidicMasterPower]
-        else:
-            return [druidic.DruidicAdeptPower]
-
-    def power_delta(self) -> float:
-        offset = -0.25 * sum(p.power_level for p in self.force_powers())
-        return offset + LOW_POWER
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = (
-            druid.DruidPowers
-            + totemic.TotemicPowers
-            + shamanic.ShamanicPowers
-            + [
-                metamagic.PrimalMastery,
-                support.Guidance,
-            ]
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.species is not None:
+        species_loadout = PowerLoadout(
+            name=f"{settings.species.name} Powers",
+            flavor_text=f"{settings.species.name} Powers",
+            powers=powers_for_role(
+                species=settings.species.key,
+                role=[MonsterRole.Support],
+            ),
         )
+    else:
+        species_loadout = None
 
-        elemental_powers = icy.IcyPowers + storm.StormPowers + poison.PoisonPowers
-
-        suppress = gadget.GadgetPowers + technique.TechniquePowers
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif p in elemental_powers:
-            # let the choice of secondary damage type influence the power selection
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
+    if settings.monster_key == "druid":
+        return NewPowerSelection(powers.LoadoutDruid, settings.rng, species_loadout)
+    elif settings.monster_key == "druid-greenwarden":
+        return NewPowerSelection(
+            powers.LoadoutGreenwarden, settings.rng, species_loadout
+        )
+    elif settings.monster_key == "archdruid-of-the-old-way":
+        return NewPowerSelection(powers.LoadoutArchdruid, settings.rng, species_loadout)
+    elif settings.monster_key == "archdruid-of-the-first-grove":
+        return NewPowerSelection(powers.LoadoutArchdruid, settings.rng, species_loadout)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
     name = settings.creature_name
     cr = settings.cr
-    variant = settings.variant
     species = settings.species if settings.species else HumanSpecies
     rng = settings.rng
     is_legendary = settings.is_legendary
@@ -182,7 +146,7 @@ def generate_druid(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_DruidWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 
