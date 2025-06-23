@@ -34,8 +34,8 @@ PerksShieldGuardianAttack = PerksAttackModifications.copy() + [technique.Sapping
 
 LoadoutShieldGuardian = LoadoutBase + [
     PowerLoadout(
-        name="Chasis",
-        flavor_text="The golem's chasis has been optimized for specific use-cases",
+        name="Chassis",
+        flavor_text="The golem's chassis has been optimized for specific use-cases",
         powers=PerksShieldGuardianBase,
     ),
     PowerLoadout(
