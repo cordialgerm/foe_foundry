@@ -7,7 +7,7 @@ from .balor.balor import BalorTemplate
 from .chimera.chimera import ChimeraTemplate
 from .druid import DruidTemplate
 from .gelatinous_cube import GelatinousCubeTemplate
-from .golem import GolemTemplate
+from .golem.golem import GolemTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
 from .nothic import HollowGazerTemplate
