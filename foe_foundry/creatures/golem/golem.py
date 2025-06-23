@@ -1,27 +1,24 @@
-from ..ac_templates import NaturalPlating, Unarmored
-from ..attack_template import natural, spell
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature_type import construct
-from ..powers.creature_type.construct import ImmutableForm
-from ..powers.roles import defender
-from ..powers.themed import breath
-from ..powers.themed.reckless import BloodiedRage
-from ..powers.themed.technique import GrapplingAttack, PushingAttack, SappingAttack
-from ..powers.themed.tough import MagicResistance
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..statblocks import BaseStatblock, MonsterDials
-from ._data import (
+from ...ac_templates import NaturalPlating, Unarmored
+from ...attack_template import natural, spell
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import (
+    NewPowerSelection,
+    select_powers,
+)
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 StoneVariant = MonsterVariant(
     name="Stone Golem",
@@ -85,74 +82,21 @@ ShieldGuardianVariant = MonsterVariant(
 )
 
 
-class _CustomWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        # powers that any Golem can have
-        boost_powers = [
-            construct.ConstructedGuardian,
-            construct.ProtectivePlating,
-            construct.ExplosiveCore,
-            defender.Protection,
-            defender.ZoneOfControl,
-            defender.SpellReflection,
-        ]
-
-        # attack powers any golem can have
-        attack_powers = [
-            GrapplingAttack,
-            SappingAttack,
-            PushingAttack,
-        ]
-
-        suppress_powers = [construct.Smother, construct.Retrieval]
-
-        # variant-specific powers
-        variant_powers = []
-
-        if self.variant is ShieldGuardianVariant:
-            suppress_powers.append(construct.ConstructedGuardian)
-            suppress_powers.append(construct.ProtectivePlating)
-            variant_powers.append(defender.Protection)
-
-        if self.variant is FleshVariant:
-            suppress_powers += [
-                construct.ConstructedGuardian,
-                construct.ProtectivePlating,
-                construct.ExplosiveCore,
-            ]
-
-        if self.variant in {StoneVariant, ShieldGuardianVariant}:
-            variant_powers += [construct.SpellStoring]
-
-        if self.variant is IronVariant:
-            variant_powers += [breath.NerveGasBreath]
-
-        if self.variant is IceVariant:
-            variant_powers += [breath.FlashFreezeBreath]
-
-        if p in suppress_powers:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-        elif p in variant_powers:
-            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
-        elif p in attack_powers:
-            return CustomPowerWeight(2.5, ignore_usual_requirements=True)
-        elif p in boost_powers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        default_powers = [ImmutableForm, MagicResistance]
-        if self.variant is ShieldGuardianVariant:
-            default_powers += [construct.BoundProtector]
-        elif self.variant in {FleshVariant, ClayVariant}:
-            default_powers += [BloodiedRage]
-
-        return default_powers
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.variant is ShieldGuardianVariant:
+        return NewPowerSelection(powers.LoadoutShieldGuardian, settings.rng)
+    elif settings.variant is StoneVariant:
+        return NewPowerSelection(powers.LoadoutStoneGolem, settings.rng)
+    elif settings.variant is ClayVariant:
+        return NewPowerSelection(powers.LoadoutClayGolem, settings.rng)
+    elif settings.variant is FleshVariant:
+        return NewPowerSelection(powers.LoadoutFleshGolem, settings.rng)
+    elif settings.variant is IronVariant:
+        return NewPowerSelection(powers.LoadoutIronGolem, settings.rng)
+    elif settings.variant is IceVariant:
+        return NewPowerSelection(powers.LoadoutIceGolem, settings.rng)
+    else:
+        raise ValueError(f"Unknown golem variant: {settings.variant.key}")
 
 
 def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -210,7 +154,9 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
     # ATTACKS
     if variant is IceVariant:
         attack = natural.Slam.with_display_name("Frozen Fist")
-        secondary_attack = spell.Frostbolt.with_display_name("Ice Shards")
+        secondary_attack = spell.Frostbolt.with_display_name("Ice Shards").copy(
+            damage_scalar=0.85
+        )
         secondary_damage_type = DamageType.Cold
     elif variant is ShieldGuardianVariant:
         attack = natural.Slam.with_display_name("Protective Fist")
@@ -222,7 +168,9 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_damage_type = DamageType.Lightning
     elif variant is IronVariant:
         attack = natural.Slam.with_display_name("Iron Fist")
-        secondary_attack = spell.Firebolt.with_display_name("Fiery Beams")
+        secondary_attack = spell.Firebolt.with_display_name("Fiery Beams").copy(
+            damage_scalar=0.9
+        )
         secondary_damage_type = DamageType.Fire
     elif variant is ClayVariant:
         attack = natural.Slam.with_display_name("Dissolving Fist")
@@ -230,7 +178,9 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
         secondary_damage_type = DamageType.Acid
     elif variant is StoneVariant:
         attack = natural.Slam
-        secondary_attack = spell.ArcaneBurst.with_display_name("Core Eruption")
+        secondary_attack = spell.ArcaneBurst.with_display_name("Core Eruption").copy(
+            damage_scalar=0.85
+        )
         secondary_damage_type = DamageType.Force
 
     stats = attack.alter_base_stats(stats)
@@ -290,7 +240,7 @@ def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_CustomWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

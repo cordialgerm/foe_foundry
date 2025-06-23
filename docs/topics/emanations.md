@@ -1,6 +1,6 @@
 ---
-title: What Is a 30 ft Emanation in 5E? (And How to Use It Right)
-description: Learn what a 10 ft and 30 ft emanation is in D&D 5E, how it differs from cones and spheres, and how to use emanation powers effectively as a player or DM.
+title: What Is an Emanation in 5E? (10 ft, 30 ft, and More Explained)
+description: What is an emanation in D&D 5E? Learn how 5-foot, 10-foot, 30-foot, and 60-foot emanations work, how they’re different from cones and auras, and how to use them as a player or DM.
 image: img/misc/emanations.webp
 tags:
   - rules
@@ -8,21 +8,11 @@ tags:
 json_ld: true
 ---
 
-# What Is an Emanation in 5E?  
+# What Is an Emanation in 5E (And How Does It Work)?
 
-!!! info "Want monsters with built-in emanations?"
-    Try out our free & powerful [[Lich]] to see what emanations are capable of
+An **emanation** is a circular area of effect that extends outward from the creature in all directions - usually 10, 15, or 30 feet - and affects anything in that radius. It’s like an aura, but triggered by an ability.
 
-!!! info "Want to add emanations to your monsters?"
-    Check out our free [**Emanation Powers**](../powers/emanation.md) for inspiration.
-
-If you’ve stumbled across powers or abilities that create a "10 foot emanation" or a "30 foot emanation" you might wonder: what exactly does that mean? How is it different from a cone, burst, or aura?
-
-An **emanation** is an area of effect that **radiates outward from the creature** (typically the caster or monster) in all directions, forming a **perfect circle**. It's often used for magical auras, divine pulses, or environmental effects like shrieks or miasmas.
-
-![A 10 foot emanation in D&D 5E](../img/misc/emanations.webp){.masked .blog-image}
-
-It’s essentially a **circular aura** that sweeps out from the creature. It's useful for waves of cold, pulses of necrotic energy, or divine light.
+![A diagram of a 10-foot emanation in D&D 5E](../img/misc/emanations.webp){.masked .blog-image}
 
 !!! info "What It Used to Be Called"
     In the original 2014 edition of 5E, these effects were often described in long-form:  
@@ -31,9 +21,7 @@ It’s essentially a **circular aura** that sweeps out from the creature. It's u
      
     Starting in 2024-era rules (and [Foe Foundry](../index.md){.branding}), the keyword **emanation** is used instead. It's just a shorthand to make rules clearer and faster to parse.
 
----
-
-## Common Emanation Sizes
+## How Big Are Emanations in D&D 5E?
 
 | Radius | Area Size | Use Case |
 |--------|-----------|----------|
@@ -44,7 +32,24 @@ It’s essentially a **circular aura** that sweeps out from the creature. It's u
 
 ---
 
+## Player Tips: How to use Emanation Abilities
+
+Use emanations when you want to:
+
+- Affect enemies around you without needing to aim
+- Trigger effects when creatures enter your range
+- Combo with positioning (e.g. charge into the middle of enemies, then release)
+- Protect allies with supportive auras like healing or damage reduction
+
+---
+
 ## DM Tips: Make Emanations Matter
+
+!!! info "Want monsters with built-in emanations?"
+    Try out our free & powerful [[Lich]] to see what emanations are capable of
+
+!!! info "Want to add emanations to your monsters?"
+    Check out our free [**Emanation Powers**](../powers/emanation.md) for inspiration.
 
 Emanations shine when they **change how players move**. Use them for:
 
@@ -67,10 +72,24 @@ Here are two emanation examples - [[Raging Flames]] and [[Draconic Standard]]
 
 [[$Kobold Ascendant]]
 
----
-
 [[@Subscribe to the Foe Foundry Newsletter]]
 
+---
 
+## Frequently Asked Questions
 
+### What is a 30-foot emanation?
 
+A 30-foot emanation is a circular effect centered on the caster or creature, affecting everything within 30 feet.
+
+### Is an emanation the same as an aura?
+
+Essentially, yes. An **emanation** is the specific rules keyword that describes aura-like effects in 5E.
+
+### How big is a 10-foot emanation?
+
+It covers a 20-foot diameter circle centered on the caster, or a 5x5 square on a grid.
+
+---
+
+Whether you’re building terrifying undead or protecting allies with divine light, emanations give you powerful tools for battlefield control. Explore [more powers](../powers/all.md) or [summon your own monster](../generate.md) to put them to work.
