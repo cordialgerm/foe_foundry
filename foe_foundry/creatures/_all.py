@@ -10,7 +10,7 @@ from .chimera import ChimeraTemplate
 from .cultist import CultistTemplate
 from .dire_bunny import DireBunnyTemplate
 from .druid import DruidTemplate
-from .gelatinous_cube import GelatinousCubeTemplate
+from .gelatinous_cube.gelatinous_cube import GelatinousCubeTemplate
 from .ghoul import GhoulTemplate
 from .goblin import GoblinTemplate
 from .golem import GolemTemplate

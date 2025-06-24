@@ -6,7 +6,7 @@ from ..statblocks import Statblock
 from .balor.balor import BalorTemplate
 from .chimera.chimera import ChimeraTemplate
 from .druid.druid import DruidTemplate
-from .gelatinous_cube import GelatinousCubeTemplate
+from .gelatinous_cube.gelatinous_cube import GelatinousCubeTemplate
 from .golem.golem import GolemTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
