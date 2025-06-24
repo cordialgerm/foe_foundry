@@ -1,43 +1,22 @@
-from ..ac_templates import ArcaneArmor
-from ..attack_template import spell
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import simulacrum
-from ..powers.creature.mage import (
-    ProtectiveMagic,
-)
-from ..powers.roles import artillery, controller
-from ..powers.spellcaster import magic, metamagic
-from ..powers.themed import (
-    anti_ranged,
-    emanation,
-    gadget,
-    icy,
-    illusory,
-    technique,
-    teleportation,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import BaseStatblock, MonsterDials
-from ._data import (
+from ...ac_templates import ArcaneArmor
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 SimulacrumVariant = MonsterVariant(
     name="Simulacrum",
@@ -48,68 +27,8 @@ SimulacrumVariant = MonsterVariant(
 )
 
 
-class _SimulacrumWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, name: str, cr: float, variant: MonsterVariant
-    ):
-        self.stats = stats
-        self.variant = variant
-
-        force = [
-            teleportation.MistyStep,
-            tough.MagicResistance,
-            ProtectiveMagic,
-            simulacrum.SimulacrumSpellcasting,
-        ]
-
-        powers = [
-            technique.FreezingAttack,
-            technique.SlowingAttack,
-            metamagic.ArcaneMastery,
-            anti_ranged.Overchannel,
-            artillery.TwinSpell,
-            artillery.SuppresingFire,
-            emanation.IllusoryReality,
-            emanation.RunicWards,
-            teleportation.BendSpace,
-            teleportation.Scatter,
-            emanation.TimeRift,
-            emanation.SummonersRift,
-            emanation.HypnoticLure,
-            emanation.RecombinationMatrix,
-            emanation.BitingFrost,
-        ] + icy.IcyPowers
-
-        # the Controlling spells don't really fit with the themes of the mages
-        # supress indirect fire because it comes up so much and we want variety
-        # suppress Magic Powers because these mages already have spell lists
-        ignore = (
-            controller.ControllingSpells
-            + [
-                illusory.HypnoticPatern,
-                artillery.IndirectFire,
-                gadget.PotionOfHealing,
-            ]
-            + magic.MagicPowers
-        )
-
-        self.force = force
-        self.powers = powers
-        self.ignore = ignore
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.force or p in self.ignore:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif p in self.powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return -1 * LOW_POWER
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    return NewPowerSelection(powers.LoadoutSimulacrum, settings.rng)
 
 
 def generate_simulacrum(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -207,7 +126,7 @@ def generate_simulacrum(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_SimulacrumWeights(stats, name, cr, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 
