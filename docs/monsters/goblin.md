@@ -18,7 +18,7 @@ Though goblins are cunning and inventive, they are also notorious cowards. They 
 
 Goblin warrens are often found in forgotten ruins, winding cave complexes, and anywhere decent folk would rather avoid. When not being kicked into line by the loudest and most reckless leaders, goblins often fall under the sway of more powerful orc or hobgoblin warlords, where they are treated as expendable cannon fodder. This has led some scholars to incorrectly lump goblins as relatives of [Orcs](./orc.md).
 
-![A chaotic Goblin for 5E](../img/monsters/goblin.webp)
+![A chaotic Goblin for 5E](../img/monsters/goblin.webp){.monster-image .masked}
 
 ## Goblin Lore
 

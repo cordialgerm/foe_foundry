@@ -1,39 +1,21 @@
-from foe_foundry.powers.power import Power
-from foe_foundry.powers.selection.custom import CustomPowerWeight
-
-from ..ac_templates import Breastplate, ChainShirt, StuddedLeatherArmor
-from ..attack_template import spell, weapon
-from ..creature_types import CreatureType
-from ..powers import LOW_POWER, CustomPowerSelection, select_powers
-from ..powers.creature import goblin
-from ..powers.roles import ambusher, artillery, leader, skirmisher
-from ..powers.spellcaster import shaman
-from ..powers.themed import (
-    cowardly,
-    cursed,
-    illusory,
-    poison,
-    reckless,
-    shamanic,
-    sneaky,
-    technique,
-    thuggish,
-    totemic,
-    trap,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import BaseStatblock, MonsterDials
-from ._data import (
+from ...ac_templates import Breastplate, ChainShirt, StuddedLeatherArmor
+from ...attack_template import spell, weapon
+from ...creature_types import CreatureType
+from ...powers import LOW_POWER, NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from ...statblocks import MonsterDials
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 GoblinLickspittleVariant = MonsterVariant(
     name="Goblin Lickspittle",
@@ -100,78 +82,47 @@ GoblinShamanVariant = MonsterVariant(
 )
 
 
-class _GoblinPowers(CustomPowerSelection):
-    def __init__(self, variant: MonsterVariant, stats: BaseStatblock, cr: float):
-        self.variant = variant
-        self.stats = stats
-        self.cr = cr
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    """Selects the powers for the goblin based on its variant."""
+    variant = settings.variant
 
-        self.lickspittels = [skirmisher.HarassingRetreat] + cowardly.CowardlyPowers
-        self.warriors = [
-            sneaky.CheapShot,
-            technique.VexingAttack,
-            sneaky.ExploitAdvantage,
-            ambusher.StealthySneak,
-            skirmisher.HarassingRetreat,
-        ] + trap.TrapPowers
-        self.brutes = [
-            reckless.BloodiedRage,
-            reckless.Charger,
-            reckless.RecklessFlurry,
-            technique.CleavingAttack,
-            technique.PushingAttack,
-            technique.ProneAttack,
-        ]
-        self.shamans = (
-            [
-                illusory.ReverseFortune,
-                illusory.SpectralDuplicate,
-                cursed.BestowCurse,
-                cursed.DisfiguringCurse,
-            ]
-            + totemic.TotemicPowers
-            + shamanic.ShamanicPowers
+    if variant is GoblinLickspittleVariant:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutLickspittle,
+            rng=settings.rng,
         )
-        self.leaders = [
-            leader.CommandTheAttack,
-            leader.FanaticFollowers,
-            leader.StayInFormation,
-        ] + thuggish.ThuggishPowers
-
-        if variant is GoblinBossVariant:
-            self.force = [thuggish.KickTheLickspittle, skirmisher.NimbleEscape]
-        elif variant is GoblinShamanVariant:
-            if cr <= 1:
-                self.force = [shaman.ShamanAdeptPower]
-            else:
-                self.force = [shaman.ShamanPower]
+    elif variant is GoblinWarriorVariant:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutWarrior,
+            rng=settings.rng,
+        )
+    elif variant is GoblinBruteVariant:
+        return NewPowerSelection(
+            loadouts=powers.LoadoutBrute,
+            rng=settings.rng,
+        )
+    elif variant is GoblinShamanVariant:
+        if settings.monster_key == "goblin-foulhex":
+            return NewPowerSelection(
+                loadouts=powers.LoadoutShaman,
+                rng=settings.rng,
+            )
+        elif settings.monster_key == "goblin-shaman":
+            return NewPowerSelection(
+                loadouts=powers.LoadoutShamanAdept,
+                rng=settings.rng,
+            )
         else:
-            self.force = [skirmisher.NimbleEscape]
-
-        self.suppress = [artillery.IndirectFire] + poison.PoisonPowers
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        if power in self.suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-        elif power in goblin.GoblinPowers:
-            return CustomPowerWeight(
-                2.0, ignore_usual_requirements=False
-            )  # check requirements
-        elif self.variant is GoblinLickspittleVariant and power in self.lickspittels:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif self.variant is GoblinWarriorVariant and power in self.warriors:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif self.variant is GoblinBruteVariant and power in self.brutes:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif self.variant is GoblinShamanVariant and power in self.shamans:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif self.variant is GoblinBossVariant and power in self.leaders:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-
-        return CustomPowerWeight(0.1, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
+            raise ValueError(f"Unknown goblin shaman key: {settings.monster_key}")
+    elif variant is GoblinBossVariant:
+        if settings.monster_key == "goblin-boss":
+            return NewPowerSelection(loadouts=powers.LoadoutBoss, rng=settings.rng)
+        elif settings.monster_key == "goblin-warchief":
+            return NewPowerSelection(loadouts=powers.LoadoutWarchief, rng=settings.rng)
+        else:
+            raise ValueError(f"Unknown goblin boss key: {settings.monster_key}")
+    else:
+        raise ValueError(f"Unknown goblin variant: {variant}")
 
 
 def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -319,7 +270,7 @@ def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_GoblinPowers(variant, stats, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 
