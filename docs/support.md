@@ -11,7 +11,7 @@ hidden:
 
 Hey there, fellow GM!
 
-[Foe Foundry](../index.md){.branding} is a free, ever-growing toolkit designed to help you create unforgettable monsters, thrilling encounters, and flavorful adventures for your 5E TTRPGs. If you’ve found something here that inspired your campaign or saved you prep time, please consider becoming a patron and helping the project grow.  
+[Foe Foundry](./index.md){.branding} is a free, ever-growing toolkit designed to help you create unforgettable monsters, thrilling encounters, and flavorful adventures for your 5E TTRPGs. If you’ve found something here that inspired your campaign or saved you prep time, please consider becoming a patron and helping the project grow.  
 
 Your support keeps the gears turning. 
 
