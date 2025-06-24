@@ -4,29 +4,29 @@ from ...powers.creature_type import aberration
 from ...powers.roles import controller
 from ...powers.themed import anti_magic, chaotic, cursed, temporal
 
-PerksWarpingMaddness = [nothic.WarpingMadness]
+PerksWarpingMadness = [nothic.WarpingMadness]
 
-PerksMaddness = [
+PerksMadness = [
     aberration.GazeOfTheFarRealm,
-    aberration.MadenningWhispers,
+    aberration.MaddeningWhispers,
     controller.Eyebite,
     cursed.DisfiguringCurse,
     temporal.AlterFate,
     anti_magic.SpellEater,
 ] + nothic.NothicPowers
-PerksMaddness.remove(nothic.WarpingMadness)
+PerksMadness.remove(nothic.WarpingMadness)
 
 PerksEldritchBeacon = [chaotic.EldritchBeacon]
 
 
 LoadoutHollowGazer = [
     PowerLoadout(
-        name="Warping Maddness",
+        name="Warping Madness",
         flavor_text="The maddening gaze of the Hollow Gazer warps reality around it.",
         powers=PerksWarpingMaddness,
     ),
     PowerLoadout(
-        name="Maddness",
+        name="Madness",
         flavor_text="A gaze that drives creatures to the brink of insanity.",
         powers=PerksMaddness,
     ),
