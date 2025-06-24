@@ -8,7 +8,7 @@ PerksWarpingMadness = [nothic.WarpingMadness]
 
 PerksMadness = [
     aberration.GazeOfTheFarRealm,
-    aberration.MaddeningWhispers,
+    aberration.MadenningWhispers,
     controller.Eyebite,
     cursed.DisfiguringCurse,
     temporal.AlterFate,
@@ -23,12 +23,12 @@ LoadoutHollowGazer = [
     PowerLoadout(
         name="Warping Madness",
         flavor_text="The maddening gaze of the Hollow Gazer warps reality around it.",
-        powers=PerksWarpingMaddness,
+        powers=PerksWarpingMadness,
     ),
     PowerLoadout(
         name="Madness",
         flavor_text="A gaze that drives creatures to the brink of insanity.",
-        powers=PerksMaddness,
+        powers=PerksMadness,
     ),
 ]
 
