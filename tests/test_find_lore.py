@@ -1,5 +1,5 @@
 from foe_foundry.creatures.mage import MageTemplate
-from foe_foundry.creatures.vrock import VrockTemplate
+from foe_foundry.creatures.vrock.vrock import VrockTemplate
 
 
 def test_template_lore_md():

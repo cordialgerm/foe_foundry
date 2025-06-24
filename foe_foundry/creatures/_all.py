@@ -36,7 +36,7 @@ from .skeleton import SkeletonTemplate
 from .spirit import SpiritTemplate
 from .spy import SpyTemplate
 from .tough import ToughTemplate
-from .vrock import VrockTemplate
+from .vrock.vrock import VrockTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate
 from .wolf import WolfTemplate
