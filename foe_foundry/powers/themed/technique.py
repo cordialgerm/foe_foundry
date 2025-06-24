@@ -1084,7 +1084,11 @@ class _OverpoweringStrike(PowerWithStandardScoring):
 
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(target=1.7, force_die=Die.d12)
+
+        if stats.cr <= 1:
+            dmg = DieFormula.from_dice(d6=2, mod=stats.attributes.primary_mod)
+        else:
+            dmg = stats.target_value(target=1.7, force_die=Die.d12)
         dmg_type = stats.attack.damage.damage_type
 
         if stats.cr < 1:

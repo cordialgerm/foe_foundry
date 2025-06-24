@@ -1,29 +1,20 @@
-import numpy as np
-
-from foe_foundry.powers.power import Power
-from foe_foundry.powers.selection.custom import CustomPowerWeight
-
-from ..ac_templates import ChainShirt, HolyArmor, NaturalArmor, SplintArmor
-from ..attack_template import spell, weapon
-from ..creature_types import CreatureType
-from ..powers import LOW_POWER, MEDIUM_POWER, CustomPowerSelection, select_powers
-from ..powers.creature import kobold
-from ..powers.creature_type import dragon
-from ..powers.roles import ambusher, artillery, leader, skirmisher, soldier, support
-from ..powers.spellcaster import oath
-from ..powers.themed import cowardly, gadget, holy, technique, trap
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...ac_templates import ChainShirt, HolyArmor, NaturalArmor, SplintArmor
+from ...attack_template import spell, weapon
+from ...creature_types import CreatureType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 KoboldWarrenguardVariant = MonsterVariant(
     name="Kobold Warrenguard",
@@ -57,114 +48,19 @@ KoboldWyrmcallerVariant = MonsterVariant(
 )
 
 
-class _KoboldPowers(CustomPowerSelection):
-    def __init__(
-        self, cr: float, force: list[Power], powers: list[Power], suppress: list[Power]
-    ):
-        self.cr = cr
-        self.force = force
-        self.powers = powers
-        self.suppress = suppress
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        if power in self.suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif power in self.powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        delta = MEDIUM_POWER - 0.2 * sum(p.power_level for p in self.force_powers())
-        if self.cr >= 1:
-            delta += LOW_POWER
-        return delta
-
-
-def _kobold_powers(
-    variant: MonsterVariant, rng: np.random.Generator, cr: float
-) -> CustomPowerSelection:
-    suppress = [] + dragon.DragonPowers + cowardly.CowardlyPowers
-    suppress.remove(cowardly.ScurryAndScatter)
-
-    if variant is KoboldWarrenguardVariant:
-        return _KoboldPowers(
-            cr=cr,
-            force=[kobold.DraconicServants, soldier.Phalanx],
-            powers=[
-                soldier.PackTactics,
-                technique.BaitAndSwitch,
-                gadget.BasicNet,
-                gadget.SmokeBomb,
-                cowardly.ScurryAndScatter,
-                soldier.CoordinatedStrike,
-                soldier.Phalanx,
-                kobold.FalseRetreat,
-            ],
-            suppress=suppress,
-        )
-    elif variant is KoboldSharpsnoutVariant:
-        trap_index = rng.choice(len(trap.TrapPowers))
-        trap_power = trap.TrapPowers[trap_index]
-
-        return _KoboldPowers(
-            cr=cr,
-            force=[kobold.DraconicServants, trap_power],
-            powers=[
-                artillery.SuppresingFire,
-                artillery.Overwatch,
-                ambusher.DeadlyAmbusher,
-                technique.Sharpshooter,
-                skirmisher.HarassingRetreat,
-                technique.VexingAttack,
-                technique.SlowingAttack,
-                technique.DazingAttacks,
-                cowardly.ScurryAndScatter,
-                kobold.FalseRetreat,
-            ],
-            suppress=suppress + trap.TrapPowers,
-        )
-    elif variant is KoboldAscendant:
-        return _KoboldPowers(
-            cr=cr,
-            force=[kobold.DraconicServants, kobold.DraconicStandard, soldier.Phalanx],
-            powers=[
-                soldier.PackTactics,
-                technique.GrazingAttack,
-                technique.PolearmMaster,
-                technique.CleavingAttack,
-                gadget.FireGrenade,
-                gadget.InfusedNet,
-                leader.CommandTheAttack,
-                technique.OverpoweringStrike,
-                technique.WhirlwindOfSteel,
-                soldier.CoordinatedStrike,
-            ],
-            suppress=suppress + gadget.GadgetPowers + [cowardly.ScurryAndScatter],
-        )
-    elif variant is KoboldWyrmcallerVariant:
-        return _KoboldPowers(
-            cr=cr,
-            force=[
-                kobold.DraconicServants,
-                kobold.DraconicAscension,
-                oath.OathAdept,
-            ],
-            powers=[
-                holy.Heroism,
-                holy.WordOfRadiance,
-                support.Encouragement,
-                support.Guidance,
-                technique.BlindingAttack,
-                technique.BurningAttack,
-            ],
-            suppress=suppress + [cowardly.ScurryAndScatter],
-        )
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "kobold-warrenguard":
+        return NewPowerSelection(powers.LoadoutWarrenguard, settings.rng)
+    elif settings.monster_key == "kobold-sharpsnout":
+        return NewPowerSelection(powers.LoadoutSharpsnout, settings.rng)
+    elif settings.monster_key == "kobold-ascendant":
+        return NewPowerSelection(powers.LoadoutAscendant, settings.rng)
+    elif settings.monster_key == "kobold-wyrmcaller":
+        return NewPowerSelection(powers.LoadoutWyrmcaller, settings.rng)
     else:
-        raise ValueError(f"Unknown kobold variant: {variant}")
+        raise ValueError(
+            f"Unexpected monster key {settings.monster_key} for Kobold generation."
+        )
 
 
 def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -298,7 +194,7 @@ def generate_kobold(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_kobold_powers(variant, rng, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 

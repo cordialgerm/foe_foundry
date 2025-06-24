@@ -1,31 +1,22 @@
-from ..ac_templates import Unarmored
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..movement import Movement
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import gelatinous_cube
-from ..powers.creature_type import ooze
-from ..powers.roles import ambusher
-from ..role_types import MonsterRole
-from ..senses import Senses
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import Unarmored
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...senses import Senses
+from ...size import Size
+from ...skills import Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 GelatinousCubeVariant = MonsterVariant(
     name="Gelatinous Cube",
@@ -37,34 +28,13 @@ GelatinousCubeVariant = MonsterVariant(
 )
 
 
-class _GelatinousCubeWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, cr: float):
-        self.stats = stats
-        self.cr = cr
-
-    def force_powers(self) -> list[Power]:
-        powers = [gelatinous_cube.EngulfInOoze, ooze.Transparent]
-        if self.cr >= 5:
-            powers.append(ooze.SlimeSpray)
-        return powers
-
-    def power_delta(self) -> float:
-        return LOW_POWER - 0.3 * sum(p.power_level for p in self.force_powers())
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            gelatinous_cube.MetabolicSurge,
-            gelatinous_cube.PerfectlyTransparent,
-            ambusher.StealthySneak,
-            ambusher.DeadlyAmbusher,
-        ]
-
-        if p in powers:
-            # lower weight to smooth out power selection to be more even
-            return CustomPowerWeight(0.1, ignore_usual_requirements=True)
-        else:
-            # don't select random powers as most won't fit the ooze very well
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "gelatinous-cube":
+        return NewPowerSelection(powers.LoadoutGelatinousCube, settings.rng)
+    elif settings.monster_key == "ancient-gelatinous-cube":
+        return NewPowerSelection(powers.LoadoutAncientCube, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_gelatinous_cube(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -136,7 +106,7 @@ def generate_gelatinous_cube(settings: GenerationSettings) -> StatsBeingGenerate
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_GelatinousCubeWeights(stats, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 
