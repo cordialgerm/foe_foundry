@@ -5,7 +5,7 @@ from ..creatures import SelectionSettings
 from ..statblocks import Statblock
 from .balor.balor import BalorTemplate
 from .chimera.chimera import ChimeraTemplate
-from .druid import DruidTemplate
+from .druid.druid import DruidTemplate
 from .gelatinous_cube import GelatinousCubeTemplate
 from .golem.golem import GolemTemplate
 from .knight import KnightTemplate
