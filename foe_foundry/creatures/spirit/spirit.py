@@ -1,42 +1,24 @@
-import numpy as np
-
-from ..ac_templates import Unarmored, flat
-from ..attack_template import natural, spell, weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..movement import Movement
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import Unarmored, flat
+from ...attack_template import natural, spell, weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...movement import Movement
+from ...powers import (
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature import spirit
-from ..powers.creature_type import undead
-from ..powers.roles import leader
-from ..powers.themed import (
-    aberrant,
-    anti_magic,
-    anti_ranged,
-    chaotic,
-    cursed,
-    deathly,
-    emanation,
-    fearsome,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaler, StatScaling
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaler, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 ShadowVariant = MonsterVariant(
     name="Shadow",
@@ -88,132 +70,21 @@ WraithVariant = MonsterVariant(
 )
 
 
-class _SpiritWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-    ):
-        self.variant = variant
-        general_powers = [
-            spirit.Haunt,
-            spirit.SpiritStep,
-            spirit.SpiritFlicker,
-            spirit.GraspOfTheDead,
-            undead.StygianBurst,
-            undead.SoulChill,
-            undead.AntithesisOfLife,
-            anti_magic.ArcaneHunt,
-            anti_magic.TwistedMind,
-            anti_magic.SealOfSilence,
-            anti_magic.RuneDrinker,
-            anti_ranged.AdaptiveCamouflage,
-            chaotic.EldritchBeacon,
-            cursed.AuraOfDespair,
-            cursed.CursedWound,
-            cursed.RejectDivinity,
-            cursed.BestowCurse,
-            cursed.RayOfEnfeeblement,
-            cursed.VoidSiphon,
-            deathly.WitheringBlow,
-            deathly.DrainingBlow,
-            emanation.BitingFrost,
-            fearsome.HorrifyingPresence,
-            fearsome.HorrifyingVisage,
-            fearsome.DreadGaze,
-            fearsome.NightmarishVisions,
-        ]
-
-        if variant is ShadowVariant:
-            suppress = []
-            force_options = [
-                spirit.ShadowInvisibility,
-                spirit.FeedOnLight,
-                deathly.ShadowWalk,
-                cursed.ReplaceShadow,
-            ]
-            force = [deathly.DrainStrength]
-
-        elif variant is RevenantVariant:
-            suppress = [
-                spirit.Haunt,
-                spirit.SpiritFlicker,
-                spirit.SpiritStep,
-                anti_ranged.AdaptiveCamouflage,
-                cursed.AuraOfDespair,
-            ]
-            force_options = [
-                deathly.EndlessServitude,
-                deathly.FleshPuppets,
-                emanation.ShadowRift,
-                fearsome.DreadGaze,
-                leader.CommandTheAttack,
-            ]
-            force = [cursed.CurseOfVengeance]
-        elif variant is BansheeVariant:
-            suppress = []
-            force_options = [
-                spirit.DreadfulSilence,
-                cursed.CurseOfVengeance,
-            ]
-            force = [fearsome.MindShatteringScream, technique.FrighteningAttack]
-        elif variant is WraithVariant:
-            suppress = []
-            force_options = [
-                spirit.FeedOnLight,
-                deathly.ShadowWalk,
-                cursed.UnholyAura,
-                deathly.EndlessServitude,
-                deathly.FleshPuppets,
-                deathly.DevourSoul,
-                emanation.ShadowRift,
-            ]
-            force = []
-        elif variant is SpecterVariant:
-            suppress = []
-            force_options = [
-                spirit.SpiritStep,
-                spirit.SpiritFlicker,
-            ]
-            force = []
-        elif variant is GhostVariant:
-            suppress = []
-            force_options = [
-                aberrant.ModifyMemory,
-                spirit.Possession,
-                spirit.NameTheForgotten,
-                spirit.GraspOfTheDead,
-                cursed.UnholyAura,
-                emanation.TimeRift,
-                emanation.IllusoryReality,
-            ]
-            force = []
-        else:
-            raise ValueError(f"Unknown variant: {variant}")
-
-        if len(force_options) > 0:
-            force_item_index = rng.choice(len(force_options))
-            force.append(force_options[force_item_index])
-
-        if variant is not RevenantVariant:
-            force.insert(0, spirit.SpiritBeing)
-
-        self.suppress = suppress
-        self.forced = force
-        self.powers = general_powers + force
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.suppress:
-            return CustomPowerWeight(weight=-1, ignore_usual_requirements=True)
-        elif p in self.powers:
-            # use a low multiplier to smooth out power selection as much as possible
-            return CustomPowerWeight(weight=0.1, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(weight=-1)
-
-    def force_powers(self) -> list[Power]:
-        return self.forced
-
-    def power_delta(self) -> float:
-        return LOW_POWER - 0.2 * sum(p.power_level for p in self.forced)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "shadow":
+        return NewPowerSelection(powers.LoadoutShadow, settings.rng)
+    elif settings.monster_key == "specter":
+        return NewPowerSelection(powers.LoadoutSpecter, settings.rng)
+    elif settings.monster_key == "banshee":
+        return NewPowerSelection(powers.LoadoutBanshee, settings.rng)
+    elif settings.monster_key == "revenant":
+        return NewPowerSelection(powers.LoadoutRevenant, settings.rng)
+    elif settings.monster_key == "ghost":
+        return NewPowerSelection(powers.LoadoutGhost, settings.rng)
+    elif settings.monster_key in {"wraith", "wraith-shadelord"}:
+        return NewPowerSelection(powers.LoadoutWraith, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def _banshee_stats() -> list[StatScaler]:
@@ -467,7 +338,7 @@ def generate_spirit(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_SpiritWeights(stats, variant, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 
