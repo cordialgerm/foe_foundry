@@ -1,23 +1,23 @@
-from ..ac_templates import ArcaneArmor
-from ..attack_template import spell
-from ..creature_types import CreatureType
-from ..powers import (
+from ...ac_templates import ArcaneArmor
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...powers import (
     CustomPowerSelection,
     CustomPowerWeight,
     Power,
     flags,
     select_powers,
 )
-from ..powers.creature.mage import (
+from ...powers.creature.mage import (
     AdeptMage,
     ApprenticeMage,
     Archmage,
     Mage,
     ProtectiveMagic,
 )
-from ..powers.creature_type import undead
-from ..powers.roles import artillery, controller
-from ..powers.spellcaster import (
+from ...powers.creature_type import undead
+from ...powers.roles import artillery, controller
+from ...powers.spellcaster import (
     abjurer,
     conjurer,
     divination,
@@ -29,7 +29,7 @@ from ..powers.spellcaster import (
     necromancer,
     transmuter,
 )
-from ..powers.themed import (
+from ...powers.themed import (
     anti_magic,
     anti_ranged,
     chaotic,
@@ -48,19 +48,19 @@ from ..powers.themed import (
     temporal,
     tough,
 )
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from ...statblocks import BaseStatblock
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
 
 ApprenticeVariant = MonsterVariant(
     name="Apprentice",
