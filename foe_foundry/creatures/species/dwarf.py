@@ -18,7 +18,7 @@ class _DwarfSpecies(CreatureSpecies):
             MonsterDials(hp_multiplier=1.1, recommended_powers_modifier=-RIBBON_POWER)
         )
         stats = stats.with_roles(additional_roles=[MonsterRole.Soldier])
-        stats = stats.copy(name=f"Dwarf {stats.name}", creature_subtype="Dwarf")
+        stats = stats.copy(creature_subtype="Dwarf")
         return stats
 
 

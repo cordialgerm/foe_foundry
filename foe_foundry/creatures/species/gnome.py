@@ -17,9 +17,7 @@ class _GnomeSpecies(CreatureSpecies):
         stats = stats.apply_monster_dials(
             MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
         )
-        stats = stats.copy(
-            name=f"Gnome {stats.name}", creature_subtype="Gnome", size=Size.Small
-        )
+        stats = stats.copy(creature_subtype="Gnome", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
         stats = stats.scale(
             {Stats.INT: Stats.INT.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
