@@ -1,32 +1,21 @@
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..movement import Movement
-from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import wolf
-from ..powers.creature_type import beast
-from ..powers.roles import soldier
-from ..powers.themed import bestial, breath, earthy, flying, icy, monstrous
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 WolfVariant = MonsterVariant(
     name="Wolf",
@@ -46,49 +35,17 @@ FrostwolfVariant = MonsterVariant(
 )
 
 
-class _WolfWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def force_powers(self) -> list[Power]:
-        if self.variant is FrostwolfVariant:
-            return [soldier.PackTactics, wolf.SnappingJaws, breath.FlashFreezeBreath]
-        elif self.stats.cr >= 1:
-            return [soldier.PackTactics, wolf.SnappingJaws]
-        else:
-            return [soldier.PackTactics]
-
-    def power_delta(self) -> float:
-        n = len(self.force_powers())
-        if self.stats.cr == 1:
-            return LOW_POWER
-        elif self.stats.cr <= 3:
-            return LOW_POWER - n * MEDIUM_POWER * 0.2
-        else:
-            return LOW_POWER - n * MEDIUM_POWER * 0.3
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            monstrous.Pounce,
-            bestial.OpportuneBite,
-            bestial.RetributiveStrike,
-            beast.FeedingFrenzy,
-            beast.ScentOfWeakness,
-            beast.WildInstinct,
-        ] + wolf.WolfPowers
-
-        suppress = earthy.EarthyPowers + flying.FlyingPowers
-
-        if self.variant is FrostwolfVariant:
-            powers += [icy.Blizzard, icy.IcyTomb, icy.Hoarfrost, icy.Frostbite]
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif p in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "wolf":
+        return NewPowerSelection(powers.LoadoutWolf, settings.rng)
+    elif settings.monster_key == "dire-wolf":
+        return NewPowerSelection(powers.LoadoutDireWolf, settings.rng)
+    elif settings.monster_key == "winter-wolf":
+        return NewPowerSelection(powers.LoadoutFrostWolf, settings.rng)
+    elif settings.monster_key == "fellwinter-packlord":
+        return NewPowerSelection(powers.LoadoutPacklord, settings.rng)
+    else:
+        raise ValueError(f"Unknown wolf monster key: {settings.monster_key}")
 
 
 def generate_wolf(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -179,7 +136,7 @@ def generate_wolf(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_WolfWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

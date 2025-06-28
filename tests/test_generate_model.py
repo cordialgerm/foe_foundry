@@ -38,3 +38,12 @@ def test_generate_halfling():
     assert ref is not None
     assert stats is not None
     assert stats.name == "Halfling Thug"
+
+
+def test_generate_legendary():
+    ref_resolver = MonsterRefResolver()
+    rng = np.random.default_rng()
+    ref, stats = generate_monster("lich", ref_resolver=ref_resolver, rng=rng)
+
+    recharge_count = sum(1 if f.recharge is not None else 0 for f in stats.features)
+    assert recharge_count <= 1
