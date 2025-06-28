@@ -1,9 +1,6 @@
-from ...powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerLoadout
-)
+from foe_foundry.utils.combine import combine_items
+
+from ...powers import Power, PowerLoadout
 from ...powers.creature import mage
 from ...powers.creature_type import undead
 from ...powers.roles import artillery
@@ -36,10 +33,7 @@ from ...powers.themed import (
     temporal,
     tough,
 )
-from ...statblocks import BaseStatblock
-from .._data import (
-    MonsterVariant,
-)
+
 
 def power_matches_cr(p: Power, cr: float) -> bool:
     score_args: dict = p.score_args  # type: ignore
@@ -48,8 +42,7 @@ def power_matches_cr(p: Power, cr: float) -> bool:
     return min_cr <= cr <= max_cr
 
 
-
-Attacks =  [
+Attacks = [
     technique.SappingAttack,
     technique.PushingAttack,
     technique.ProneAttack,
@@ -60,22 +53,44 @@ AdeptSpellcasting = [mage.AdeptMage]
 MageSpellcasting = [mage.Mage]
 ArchmageSpellcasting = [mage.Archmage]
 
-Mistystep = [
-    teleportation.MistyStep,
-]
-Protective = [mage.ProtectiveMagic]
-MagicResistance = [tough.MagicResistance]
+Mistystep = PowerLoadout(
+    name="Evasive Magic",
+    flavor_text="A good mage keeps their enemies at a distance",
+    powers=[
+        teleportation.MistyStep,
+    ],
+)
+Protective = PowerLoadout(
+    name="Defensive Magic",
+    flavor_text="A simple spell, but quite effective",
+    powers=[mage.ProtectiveMagic],
+)
+MagicResistance = PowerLoadout(
+    name="Magic Resistance",
+    flavor_text="Archmages have studied how to resist inimical magic",
+    powers=[tough.MagicResistance],
+)
 
-Metamagic = [
-    metamagic.ArcaneMastery,
-    metamagic.SubtleMind,
-    metamagic.SpellEcho,
-    metamagic.ManaSurge,
-    metamagic.Mindshackle,
-    metamagic.Runeburst,
-    anti_ranged.Overchannel,
-    artillery.TwinSpell,
-]
+# MageGeneralPurpose = [
+#     anti_ranged.Overchannel,
+#     artillery.TwinSpell,
+#     artillery.SuppresingFire,
+# ]
+
+ArcaneStudy = PowerLoadout(
+    name="Arcane Study",
+    flavor_text="Advanced arcane techniques and training",
+    powers=[
+        metamagic.ArcaneMastery,
+        metamagic.SubtleMind,
+        metamagic.SpellEcho,
+        metamagic.ManaSurge,
+        metamagic.Mindshackle,
+        metamagic.Runeburst,
+        anti_ranged.Overchannel,
+        artillery.TwinSpell,
+    ],
+)
 
 ### Apprentice
 PerksApprenticeSpellcasting = [mage.ApprenticeMage]
@@ -86,194 +101,450 @@ PerksApprenticeTechniques = [
 ]
 LoadoutApprentice = [
     PowerLoadout(
-        name = "Apprentice Mage",
-        flavor_text = "A novice spellcaster with basic magical abilities.",
-        powers = PerksApprenticeSpellcasting
+        name="Apprentice Mage",
+        flavor_text="A novice spellcaster with basic magical abilities.",
+        powers=PerksApprenticeSpellcasting,
     ),
     PowerLoadout(
-        name = "Minor Offensive Techniques",
-        flavor_text = "Basic techniques to enhance physical attacks.",
-        powers = PerksApprenticeTechniques
-    )
+        name="Minor Offensive Techniques",
+        flavor_text="Basic techniques to enhance physical attacks.",
+        powers=PerksApprenticeTechniques,
+    ),
 ]
 
 ### Abjurer
-AbjurerAdept = [p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 4)]
-AbjurerMage = [p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 6)]
-AbjurerArchmage = [p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 12)]
-AbjurerAttacks = Attacks + [anti_magic.SpellStealer]
-AbjurerEsotera = [emanation.RunicWards]
+AbjurerAdept = PowerLoadout(
+    name="Abjuration",
+    flavor_text="Magic that protects and wards against threats",
+    powers=[p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 4)],
+    locked=True,
+)
+AbjurerMage = PowerLoadout(
+    name="Abjuration",
+    flavor_text="Magic that protects and wards against threats",
+    powers=[p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 6)],
+    locked=True,
+)
+AbjurerArchmage = PowerLoadout(
+    name="Abjuration",
+    flavor_text="Magic that protects and wards against threats",
+    powers=[p for p in abjurer.AbjurationWizards() if power_matches_cr(p, 12)],
+    locked=True,
+)
+AbjurerAttacks = PowerLoadout(
+    name="Runic Offense",
+    flavor_text="Sometimes, a good offense is a good defense",
+    powers=Attacks + [anti_magic.SpellStealer],
+)
+AbjurerEsotera = PowerLoadout(
+    name="Abjuration Esotera",
+    flavor_text="Advanced abjuration techniques and wards",
+    powers=[emanation.RunicWards],
+)
 
+LoadoutAbjurerAdept = [AbjurerAdept, AbjurerAttacks, Mistystep]
+LoadoutAbjurerMage = [AbjurerMage, AbjurerAttacks, ArcaneStudy, Mistystep, Protective]
+LoadoutAbjurerArchmage = [
+    AbjurerArchmage,
+    AbjurerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    AbjurerEsotera,
+    Protective,
+]
 
-class _MageWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, name: str, cr: float, variant: MonsterVariant
-    ):
-        self.stats = stats
-        self.variant = variant
+### Conjurer
+ConjurerAdept = PowerLoadout(
+    name="Conjuration",
+    flavor_text="Magic that summons and manipulates creatures and objects",
+    powers=[p for p in conjurer.ConjurationWizards() if power_matches_cr(p, 4)],
+)
+ConjurerMage = PowerLoadout(
+    name="Conjuration",
+    flavor_text="Magic that summons and manipulates creatures and objects",
+    powers=[p for p in conjurer.ConjurationWizards() if power_matches_cr(p, 6)],
+)
+ConjurerArchmage = PowerLoadout(
+    name="Conjuration",
+    flavor_text="Magic that summons and manipulates creatures and objects",
+    powers=[p for p in conjurer.ConjurationWizards() if power_matches_cr(p, 12)],
+)
+ConjurerAttacks = PowerLoadout(
+    name="Conjured Offense",
+    flavor_text="Conjuration excells at offense",
+    powers=Attacks.copy(),
+)
+ConjurerEsotera = PowerLoadout(
+    name="Conjuration Esotera",
+    flavor_text="Advanced conjuration techniques and spells",
+    powers=[
+        anti_magic.RedirectTeleport,
+        teleportation.Scatter,
+        teleportation.BendSpace,
+        emanation.SummonersRift,
+    ],
+)
 
-        force = []
-        esoteric = []
-        techniques = [
-            technique.SappingAttack,
-            technique.PushingAttack,
-            technique.ProneAttack,
-            technique.SlowingAttack,
-            technique.DazingAttacks,
-        ]
+LoadoutConjurerAdept = [ConjurerAdept, ConjurerAttacks, Mistystep]
+LoadoutConjurerMage = [
+    ConjurerMage,
+    ConjurerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutConjurerArchmage = [
+    ConjurerArchmage,
+    ConjurerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    ConjurerEsotera,
+]
 
+### Diviner
+DivinerAdept = PowerLoadout(
+    name="Divination",
+    flavor_text="Magic that foretells the future",
+    powers=[p for p in divination.DivinationWizards() if power_matches_cr(p, 4)],
+)
+DivinerMage = PowerLoadout(
+    name="Divination",
+    flavor_text="Magic that foretells the future",
+    powers=[p for p in divination.DivinationWizards() if power_matches_cr(p, 6)],
+)
+DivinerArchmage = PowerLoadout(
+    name="Divination",
+    flavor_text="Magic that foretells the future",
+    powers=[p for p in divination.DivinationWizards() if power_matches_cr(p, 12)],
+)
+DivinerAttacks = PowerLoadout(
+    name="Divination",
+    flavor_text="Knowing your enemy's next move is half the battle",
+    powers=Attacks.copy(),
+)
+DivinerEsotera = PowerLoadout(
+    name="Divination Esotera",
+    flavor_text="Advanced divination techniques and spells",
+    powers=temporal.TemporalPowers + [emanation.TimeRift],
+)
+LoadoutDivinerAdept = [DivinerAdept, DivinerAttacks, Mistystep]
+LoadoutDivinerMage = [
+    DivinerMage,
+    DivinerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutDivinerArchmage = [
+    DivinerArchmage,
+    DivinerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    DivinerEsotera,
+]
 
-        elif variant is AbjurerVariant:
+### Enchanter
+EnchanterAdept = PowerLoadout(
+    name="Enchantment",
+    flavor_text="Magic that charms and manipulates the mind",
+    powers=[p for p in enchanter.EnchanterWizards() if power_matches_cr(p, 4)],
+)
+EnchanterMage = PowerLoadout(
+    name="Enchantment",
+    flavor_text="Magic that charms and manipulates the mind",
+    powers=[p for p in enchanter.EnchanterWizards() if power_matches_cr(p, 6)],
+)
+EnchanterArchmage = PowerLoadout(
+    name="Enchantment",
+    flavor_text="Magic that charms and manipulates the mind",
+    powers=[p for p in enchanter.EnchanterWizards() if power_matches_cr(p, 12)],
+)
+EnchanterAttacks = PowerLoadout(
+    name="Charm Offensive",
+    flavor_text="Keep your enemies off balance with mind-affecting attacks",
+    powers=[
+        technique.CharmingAttack,
+        technique.VexingAttack,
+        technique.SappingAttack,
+    ],
+)
+EnchanterEsotera = PowerLoadout(
+    name="Enchantment Esotera",
+    flavor_text="Advanced enchantment techniques and spells",
+    powers=combine_items(
+        domineering.DomineeringPowers,
+        charm.CharmPowers,
+        emanation.HypnoticLure,
+        exclude=charm.WardingCharm,
+    ),
+)
 
-        elif variant is ConjurerVariant:
-            force.append(
-                next(
-                    p for p in conjurer.ConjurationWizards() if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += [
-                anti_magic.RedirectTeleport,
-                teleportation.Scatter,
-                teleportation.BendSpace,
-                emanation.SummonersRift,
-            ]
-        elif variant is DivinerVariant:
-            force.append(
-                next(
-                    p for p in divination.DivinationWizards() if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += temporal.TemporalPowers
-            esoteric += [emanation.TimeRift]
-        elif variant is EnchanterVariant:
-            force.append(
-                next(p for p in enchanter.EnchanterWizards() if power_matches_cr(p, cr))
-            )
-            esoteric += domineering.DomineeringPowers
-            esoteric += charm.CharmPowers
-            esoteric.remove(charm.WardingCharm)
-            esoteric += [emanation.HypnoticLure]
-            techniques = [
-                technique.CharmingAttack,
-                technique.VexingAttack,
-                technique.SappingAttack,
-            ]
-        elif variant is IllusionistVariant:
-            force.append(
-                next(
-                    p
-                    for p in illusionist.IllusionistWizards()
-                    if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += illusory.IllusoryPowers
-            esoteric += [emanation.IllusoryReality]
-            techniques = [
-                technique.VexingAttack,
-                technique.SappingAttack,
-                technique.FrighteningAttack,
-            ]
-        elif variant is NecromancerVariant:
-            force.append(
-                next(
-                    p for p in necromancer.NecromancerWizards if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += deathly.DeathlyPowers
-            esoteric += undead.UndeadPowers
-            esoteric.remove(undead.UndeadFortitude)
-            esoteric.remove(deathly.ShadowWalk)
-            esoteric += [emanation.ShadowRift]
-            techniques = [technique.FrighteningAttack, technique.NoHealingAttack]
-        elif variant is TransmuterVariant:
-            force.append(
-                next(
-                    p
-                    for p in transmuter.TransmutationWizards()
-                    if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += [
-                chaotic.ChaoticSpace,
-                teleportation.BendSpace,
-                teleportation.Scatter,
-                emanation.RecombinationMatrix,
-            ]
-        elif variant is PyromancerVariant:
-            force.append(elementalist.Pyromancer)
-            techniques = [technique.BlindingAttack]
-            esoteric += [emanation.RagingFlame]
-        elif variant is CryomancerVariant:
-            force.append(elementalist.Cryomancer)
-            techniques = [
-                technique.SlowingAttack
-            ]  # don't include freezing attack because Cryomancer already has Flash Freeze ability
-            esoteric += [emanation.BitingFrost] + icy.IcyPowers
-        elif variant is ElectromancerVariant:
-            force.append(elementalist.Electromancer)
-            esoteric += storm.StormPowers
-            esoteric += [emanation.LashingWinds]
-            techniques = [
-                technique.SappingAttack,
-                technique.VexingAttack,
-                technique.ShockingAttack,
-            ]
-        elif variant is ToximancerVariant:
-            force.append(elementalist.Toximancer)
-            esoteric += poison.PoisonPowers
-            esoteric += diseased.DiseasedPowers
-            esoteric += [emanation.FetidMiasma]
-            techniques = [technique.PoisonedAttack]
+LoadoutEnchanterAdept = [EnchanterAdept, EnchanterAttacks, Mistystep]
+LoadoutEnchanterMage = [
+    EnchanterMage,
+    EnchanterAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutEnchanterArchmage = [
+    EnchanterArchmage,
+    EnchanterAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    EnchanterEsotera,
+]
 
-        # Hard-Coded Powers
-        if cr >= 16:
-            force += [
-                tough.MagicResistance,
-                # don't include MistyStep because mage has a legendary teleport action
-                ProtectiveMagic,
-                Archmage,
-            ]
-        elif cr >= 12:
-            force += [
-                tough.MagicResistance,
-                teleportation.MistyStep,
-                ProtectiveMagic,
-                Archmage,
-            ]
-        elif cr >= 6:
-            force += [teleportation.MistyStep, ProtectiveMagic, Mage]
-        elif cr >= 4:
-            force += [ProtectiveMagic, AdeptMage]
-        else:
-            force += [ApprenticeMage]
+### Illusionist
+IllusionistAdept = PowerLoadout(
+    name="Illusionist",
+    flavor_text="Magic that deceives the mind",
+    powers=[p for p in illusionist.IllusionistWizards() if power_matches_cr(p, 4)],
+)
+IllusionistMage = PowerLoadout(
+    name="Illusionist",
+    flavor_text="Magic that deceives the mind",
+    powers=[p for p in illusionist.IllusionistWizards() if power_matches_cr(p, 6)],
+)
+IllusionistArchmage = PowerLoadout(
+    name="Illusionist",
+    flavor_text="Magic that deceives the mind",
+    powers=[p for p in illusionist.IllusionistWizards() if power_matches_cr(p, 12)],
+)
+IllusionistAttacks = PowerLoadout(
+    name="Illusionist Attacks",
+    flavor_text="Attacks that deceive the mind",
+    powers=[
+        technique.VexingAttack,
+        technique.SappingAttack,
+        technique.FrighteningAttack,
+    ],
+)
+IllusionistEsotera = PowerLoadout(
+    name="Illusionist Esotera",
+    flavor_text="Advanced illusionist techniques and spells",
+    powers=illusory.IllusoryPowers + [emanation.IllusoryReality],
+)
 
-        # general purpose mage powers
-        general = [
-            metamagic.ArcaneMastery,
-            anti_ranged.Overchannel,
-            artillery.TwinSpell,
-            artillery.SuppresingFire,
-        ]
+LoadoutIllusionistAdept = [IllusionistAdept, IllusionistAttacks, Mistystep]
+LoadoutIllusionistMage = [
+    IllusionistMage,
+    IllusionistAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutIllusionistArchmage = [
+    IllusionistArchmage,
+    IllusionistAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    IllusionistEsotera,
+]
 
-        self.force = force
-        self.general = general
-        self.techniques = techniques
-        self.esoteric = esoteric
-        self.ignore = ignore
+### Necromancer
+NecromancerAdept = PowerLoadout(
+    name="Necromancy",
+    flavor_text="Magic that manipulates life and death",
+    powers=[p for p in necromancer.NecromancerWizards if power_matches_cr(p, 4)],
+)
+NecromancerMage = PowerLoadout(
+    name="Necromancy",
+    flavor_text="Magic that manipulates life and death",
+    powers=[p for p in necromancer.NecromancerWizards if power_matches_cr(p, 6)],
+)
+NecromancerArchmage = PowerLoadout(
+    name="Necromancy",
+    flavor_text="Magic that manipulates life and death",
+    powers=[p for p in necromancer.NecromancerWizards if power_matches_cr(p, 12)],
+)
+NecromancerAttacks = PowerLoadout(
+    name="Necromancy Attacks",
+    flavor_text="Attacks that manipulate life and death",
+    powers=[technique.FrighteningAttack, technique.NoHealingAttack],
+)
+NecromancerEsotera = PowerLoadout(
+    name="Necromancy Esotera",
+    flavor_text="Advanced necromancy techniques and spells",
+    powers=combine_items(
+        deathly.DeathlyPowers,
+        undead.UndeadPowers,
+        emanation.ShadowRift,
+        exclude={undead.UndeadFortitude, deathly.ShadowWalk},
+    ),
+)
 
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.force or p in self.ignore:
-            return CustomPowerWeight(0, ignore_usual_requirements=False)
-        elif p in self.general:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        elif p in self.techniques:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in self.esoteric:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in metamagic.MetamagicPowers:
-            return CustomPowerWeight(1, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
+LoadoutNecromancerAdept = [NecromancerAdept, NecromancerAttacks, Mistystep]
+LoadoutNecromancerMage = [
+    NecromancerMage,
+    NecromancerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutNecromancerArchmage = [
+    NecromancerArchmage,
+    NecromancerAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    NecromancerEsotera,
+]
 
-    def force_powers(self) -> list[Power]:
-        return self.force
+### Transmuter
+TransmuterAdept = PowerLoadout(
+    name="Transmuter",
+    flavor_text="Magic that transforms matter",
+    powers=[p for p in transmuter.TransmutationWizards() if power_matches_cr(p, 4)],
+)
+TransmuterMage = PowerLoadout(
+    name="Transmuter",
+    flavor_text="Magic that transforms matter",
+    powers=[p for p in transmuter.TransmutationWizards() if power_matches_cr(p, 6)],
+)
+TransmuterArchmage = PowerLoadout(
+    name="Transmuter",
+    flavor_text="Magic that transforms matter",
+    powers=[p for p in transmuter.TransmutationWizards() if power_matches_cr(p, 12)],
+)
+TransmuterAttacks = PowerLoadout(
+    name="Transmuter Attacks",
+    flavor_text="Attacks that transform matter",
+    powers=Attacks.copy(),
+)
+TransmuterEsotera = PowerLoadout(
+    name="Transmuter Esotera",
+    flavor_text="Advanced transmutation techniques and spells",
+    powers=[
+        chaotic.ChaoticSpace,
+        teleportation.BendSpace,
+        teleportation.Scatter,
+        emanation.RecombinationMatrix,
+    ],
+)
+
+LoadoutTransmuterAdept   = [TransmuterAdept, TransmuterAttacks, Mistystep]
+LoadoutTransmuterMage = [
+    TransmuterMage,
+    TransmuterAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+]
+LoadoutTransmuterArchmage = [
+    TransmuterArchmage,
+    TransmuterAttacks,
+    ArcaneStudy,
+    Mistystep,
+    Protective,
+    TransmuterEsotera,
+]
+
+### Pyromancer
+Pyromancer = [elementalist.Pyromancer]
+PyromancerAttacks = [technique.BlindingAttack]
+PyromancerEsotera = [emanation.RagingFlame]
+
+PyromancerLoadout = [
+    PowerLoadout(
+        name="Pyromancer",
+        flavor_text="A master of fire magic, capable of unleashing devastating flames.",
+        powers=Pyromancer,
+    ),
+    PowerLoadout(
+        name="Fire Attacks",
+        flavor_text="Attacks that burn and blind enemies with fire.",
+        powers=PyromancerAttacks,
+    ),
+    PowerLoadout(
+        name="Fire Esotera",
+        flavor_text="Advanced fire techniques and spells.",
+        powers=PyromancerEsotera,
+    ),
+]
+
+### Cryomancer
+Cryomancer = [elementalist.Cryomancer]
+CryomancerAttacks = [
+    technique.SlowingAttack
+]  # don't include freezing attack because Cryomancer already has Flash Freeze ability
+CryomancerEsotera = [emanation.BitingFrost] + icy.IcyPowers
+CryomancerEsotera.remove(icy.IcyShield)
+
+CryomancerLoadout = [
+    PowerLoadout(
+        name="Cryomancer",
+        flavor_text="A master of ice magic, capable of freezing enemies in their tracks.",
+        powers=Cryomancer,
+    ),
+    PowerLoadout(
+        name="Ice Attacks",
+        flavor_text="Attacks that slow and freeze enemies with ice.",
+        powers=CryomancerAttacks,
+    ),
+    PowerLoadout(
+        name="Ice Esotera",
+        flavor_text="Advanced ice techniques and spells.",
+        powers=CryomancerEsotera,
+    ),
+]
+
+### Electromancer
+Electromancer = [elementalist.Electromancer]
+ElectromancerAttacks = [
+    technique.SappingAttack,
+    technique.VexingAttack,
+    technique.ShockingAttack,
+]
+ElectromancerEsotera = storm.StormPowers + [emanation.LashingWinds]
+
+ElectromancerLoadout = [
+    PowerLoadout(
+        name="Electromancer",
+        flavor_text="A master of lightning magic, capable of unleashing devastating electrical storms.",
+        powers=Electromancer,
+    ),
+    PowerLoadout(
+        name="Lightning Attacks",
+        flavor_text="Attacks that shock and disrupt enemies with lightning.",
+        powers=ElectromancerAttacks,
+    ),
+    PowerLoadout(
+        name="Lightning Esotera",
+        flavor_text="Advanced lightning techniques and spells.",
+        powers=ElectromancerEsotera,
+    ),
+]
+
+### Toximancer
+Toximancer = [elementalist.Toximancer]
+ToximancerAttacks = [technique.PoisonedAttack]
+ToximancerEsotera = combine_items(
+    poison.PoisonPowers,
+    diseased.DiseasedPowers,
+    emanation.FetidMiasma,
+    exclude={poison.PoisonDart},
+)
+
+ToximancerLoadout = [
+    PowerLoadout(
+        name="Toximancer",
+        flavor_text="A master of poison magic, capable of debilitating enemies with toxic effects.",
+        powers=Toximancer,
+    ),
+    PowerLoadout(
+        name="Poison Attacks",
+        flavor_text="Attacks that poison and weaken enemies with toxins.",
+        powers=ToximancerAttacks,
+    ),
+    PowerLoadout(
+        name="Poison Esotera",
+        flavor_text="Advanced poison techniques and spells.",
+        powers=ToximancerEsotera,
+    ),
+]
