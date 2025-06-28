@@ -1,23 +1,19 @@
-import numpy as np
-
-from ..ac_templates import Breastplate
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature import wight
-from ..powers.creature_type import elemental, undead
-from ..powers.themed import anti_magic, anti_ranged, cursed, deathly, fearsome, tough
-from ..role_types import MonsterRole
-from ..skills import Stats, StatScaling
-from ._data import (
+from ...ac_templates import Breastplate
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...skills import Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 WightVariant = MonsterVariant(
     name="Wight",
@@ -30,48 +26,15 @@ WightVariant = MonsterVariant(
 )
 
 
-class _WightWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, cr: float, rng: np.random.Generator):
-        self.stats = stats
-        self.cr = cr
-        self.rng = rng
-
-        self.suppress = tough.ToughPowers
-        self.auras = [cursed.UnholyAura, elemental.ArcticChillAura]
-        aura_index = rng.choice(len(self.auras))
-        self.aura = self.auras[aura_index]
-
-        self.powers = [
-            undead.SoulChill,
-            undead.StygianBurst,
-            undead.AntithesisOfLife,
-            cursed.RejectDivinity,
-            cursed.BestowCurse,
-            cursed.VoidSiphon,
-            anti_magic.Spellbreaker,
-            anti_magic.RuneDrinker,
-            anti_ranged.ArrowWard,
-            deathly.EndlessServitude,
-            deathly.FleshPuppets,
-            fearsome.DreadGaze,
-            wight.SoulChillingCommand,
-        ]
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.suppress:
-            return CustomPowerWeight(-1)
-        elif p in self.force_powers():
-            return CustomPowerWeight(-1)
-        elif p in self.powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        if self.cr <= 3:
-            return [wight.HeartFreezingGrasp, self.aura]
-        else:
-            return [wight.HeartFreezingGrasp, wight.SoulChillingCommand, self.aura]
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "wight":
+        return NewPowerSelection(powers.LoadoutWight, settings.rng)
+    elif settings.monster_key == "wight-fell-champion":
+        return NewPowerSelection(powers.LoadoutChampion, settings.rng)
+    elif settings.monster_key == "wight-dread-lord":
+        return NewPowerSelection(powers.LoadoutLegendary, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_wight(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -146,7 +109,7 @@ def generate_wight(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_WightWeights(stats, cr, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 
