@@ -19,7 +19,7 @@ from .guard import GuardTemplate
 from .hydra import HydraTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
-from .lich import LichTemplate
+from .lich.lich import LichTemplate
 from .mage import MageTemplate
 from .manticore import ManticoreTemplate
 from .medusa import MedusaTemplate
