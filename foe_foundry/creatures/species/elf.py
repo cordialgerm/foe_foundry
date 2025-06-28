@@ -19,7 +19,7 @@ class _HighElfSpecies(CreatureSpecies):
         stats = stats.apply_monster_dials(
             MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
         )
-        stats = stats.copy(name=f"High Elf {stats.name}", creature_subtype="Elf")
+        stats = stats.copy(creature_subtype="Elf")
         stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
         stats = stats.grant_spellcasting(CasterType.Arcane, Stats.INT)
         stats = stats.with_roles(additional_roles=[MonsterRole.Artillery])

@@ -10,7 +10,7 @@ from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..ac_templates import Unarmored
 from ..attributes import Stats
 from ..die import DieFormula
-from ..features import Feature
+from ..features import Feature, resolve_conflicting_recharge
 from .base import BaseStatblock
 
 
@@ -47,10 +47,13 @@ class Statblock(BaseStatblock):
         stats: BaseStatblock,
         features: List[Feature],
     ) -> Statblock:
+        # resolve armor class
         ac = resolve_ac(stats.ac_templates, stats=stats)
 
+        new_features = resolve_conflicting_recharge(features)
+
         args = stats.__copy_args__()
-        args.update(name=name, ac=ac, features=features)
+        args.update(name=name, ac=ac, features=new_features)
 
         # repair HP based on CON modifier
         clean_hp = DieFormula.target_value(

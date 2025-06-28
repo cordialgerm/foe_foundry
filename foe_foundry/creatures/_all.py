@@ -18,7 +18,7 @@ from .gorgon import GorgonTemplate
 from .guard import GuardTemplate
 from .hydra import HydraTemplate
 from .knight import KnightTemplate
-from .kobold.kobold import KoboldTemplate
+from .kobold import KoboldTemplate
 from .lich import LichTemplate
 from .mage import MageTemplate
 from .manticore import ManticoreTemplate
@@ -34,7 +34,7 @@ from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
 from .spirit import SpiritTemplate
-from .spy import SpyTemplate
+from .spy.spy import SpyTemplate
 from .tough import ToughTemplate
 from .vrock.vrock import VrockTemplate
 from .warrior import WarriorTemplate

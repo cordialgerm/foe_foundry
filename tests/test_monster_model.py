@@ -1,4 +1,4 @@
-from foe_foundry.creatures.orc import OrcTemplate
+from foe_foundry.creatures.orc.orc import OrcTemplate
 from foe_foundry.creatures.priest.priest import PriestTemplate, PriestVariant
 from foe_foundry.creatures.species import OrcSpecies
 from foe_foundry.creatures.wight import WightTemplate
@@ -21,6 +21,7 @@ def test_monster_model_with_species():
         variant=PriestVariant, monster=PriestVariant.monsters[0], species=OrcSpecies
     ).finalize()
 
+    assert stats.name == "Orc Acolyte"
     assert stats.name == f"Orc {PriestVariant.monsters[0].name}"
 
 

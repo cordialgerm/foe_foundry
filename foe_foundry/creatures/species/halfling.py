@@ -17,9 +17,7 @@ class _HalflingSpecies(CreatureSpecies):
         stats = stats.apply_monster_dials(
             MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
         )
-        stats = stats.copy(
-            name=f"Halfling {stats.name}", creature_subtype="Halfling", size=Size.Small
-        )
+        stats = stats.copy(creature_subtype="Halfling", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.scale(
             {Stats.DEX: Stats.DEX.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
