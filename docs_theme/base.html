@@ -22,7 +22,7 @@
     <meta property="og:title" content="{{ config.site_name }}" />
     {% endif %}
 
-    {% if page and not page.is_homepage %}
+    {% if page and page.is_homepage %}
     <meta name="description" content="{{ config.site_description }}">
     <meta property="og:description" content="{{ config.site_description }}" />
     {% elif page and page.meta.description %}
