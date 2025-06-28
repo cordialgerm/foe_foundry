@@ -1,66 +1,20 @@
-from ..ac_templates import ArcaneArmor
-from ..attack_template import spell
-from ..creature_types import CreatureType
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    flags,
-    select_powers,
-)
-from ..powers.creature.mage import (
-    AdeptMage,
-    ApprenticeMage,
-    Archmage,
-    Mage,
-    ProtectiveMagic,
-)
-from ..powers.creature_type import undead
-from ..powers.roles import artillery, controller
-from ..powers.spellcaster import (
-    abjurer,
-    conjurer,
-    divination,
-    elementalist,
-    enchanter,
-    illusionist,
-    magic,
-    metamagic,
-    necromancer,
-    transmuter,
-)
-from ..powers.themed import (
-    anti_magic,
-    anti_ranged,
-    chaotic,
-    charm,
-    deathly,
-    diseased,
-    domineering,
-    emanation,
-    gadget,
-    icy,
-    illusory,
-    poison,
-    storm,
-    technique,
-    teleportation,
-    temporal,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import ArcaneArmor
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...powers import NewPowerSelection, flags, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 ApprenticeVariant = MonsterVariant(
     name="Apprentice",
@@ -192,205 +146,77 @@ ToximancerVariant = MonsterVariant(
 )
 
 
-def power_matches_cr(p: Power, cr: float) -> bool:
-    score_args: dict = p.score_args  # type: ignore
-    min_cr = score_args.get("require_cr", 0)
-    max_cr = score_args.get("require_max_cr", 100)
-    return min_cr <= cr <= max_cr
-
-
-class _MageWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, name: str, cr: float, variant: MonsterVariant
-    ):
-        self.stats = stats
-        self.variant = variant
-
-        force = []
-        esoteric = []
-        techniques = [
-            technique.SappingAttack,
-            technique.PushingAttack,
-            technique.ProneAttack,
-            technique.SlowingAttack,
-            technique.DazingAttacks,
-        ]
-
-        if variant is ApprenticeVariant:
-            force.append(ApprenticeMage)
-            techniques.remove(technique.DazingAttacks)
-            techniques.remove(technique.SappingAttack)
-        elif variant is AbjurerVariant:
-            force.append(
-                next(p for p in abjurer.AbjurationWizards() if power_matches_cr(p, cr))
-            )
-            esoteric += [emanation.RunicWards]
-            techniques.append(anti_magic.SpellStealer)
-        elif variant is ConjurerVariant:
-            force.append(
-                next(
-                    p for p in conjurer.ConjurationWizards() if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += [
-                anti_magic.RedirectTeleport,
-                teleportation.Scatter,
-                teleportation.BendSpace,
-                emanation.SummonersRift,
-            ]
-        elif variant is DivinerVariant:
-            force.append(
-                next(
-                    p for p in divination.DivinationWizards() if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += temporal.TemporalPowers
-            esoteric += [emanation.TimeRift]
-        elif variant is EnchanterVariant:
-            force.append(
-                next(p for p in enchanter.EnchanterWizards() if power_matches_cr(p, cr))
-            )
-            esoteric += domineering.DomineeringPowers
-            esoteric += charm.CharmPowers
-            esoteric.remove(charm.WardingCharm)
-            esoteric += [emanation.HypnoticLure]
-            techniques = [
-                technique.CharmingAttack,
-                technique.VexingAttack,
-                technique.SappingAttack,
-            ]
-        elif variant is IllusionistVariant:
-            force.append(
-                next(
-                    p
-                    for p in illusionist.IllusionistWizards()
-                    if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += illusory.IllusoryPowers
-            esoteric += [emanation.IllusoryReality]
-            techniques = [
-                technique.VexingAttack,
-                technique.SappingAttack,
-                technique.FrighteningAttack,
-            ]
-        elif variant is NecromancerVariant:
-            force.append(
-                next(
-                    p for p in necromancer.NecromancerWizards if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += deathly.DeathlyPowers
-            esoteric += undead.UndeadPowers
-            esoteric.remove(undead.UndeadFortitude)
-            esoteric.remove(deathly.ShadowWalk)
-            esoteric += [emanation.ShadowRift]
-            techniques = [technique.FrighteningAttack, technique.NoHealingAttack]
-        elif variant is TransmuterVariant:
-            force.append(
-                next(
-                    p
-                    for p in transmuter.TransmutationWizards()
-                    if power_matches_cr(p, cr)
-                )
-            )
-            esoteric += [
-                chaotic.ChaoticSpace,
-                teleportation.BendSpace,
-                teleportation.Scatter,
-                emanation.RecombinationMatrix,
-            ]
-        elif variant is PyromancerVariant:
-            force.append(elementalist.Pyromancer)
-            techniques = [technique.BlindingAttack]
-            esoteric += [emanation.RagingFlame]
-        elif variant is CryomancerVariant:
-            force.append(elementalist.Cryomancer)
-            techniques = [
-                technique.SlowingAttack
-            ]  # don't include freezing attack because Cryomancer already has Flash Freeze ability
-            esoteric += [emanation.BitingFrost] + icy.IcyPowers
-        elif variant is ElectromancerVariant:
-            force.append(elementalist.Electromancer)
-            esoteric += storm.StormPowers
-            esoteric += [emanation.LashingWinds]
-            techniques = [
-                technique.SappingAttack,
-                technique.VexingAttack,
-                technique.ShockingAttack,
-            ]
-        elif variant is ToximancerVariant:
-            force.append(elementalist.Toximancer)
-            esoteric += poison.PoisonPowers
-            esoteric += diseased.DiseasedPowers
-            esoteric += [emanation.FetidMiasma]
-            techniques = [technique.PoisonedAttack]
-
-        # Hard-Coded Powers
-        if cr >= 16:
-            force += [
-                tough.MagicResistance,
-                # don't include MistyStep because mage has a legendary teleport action
-                ProtectiveMagic,
-                Archmage,
-            ]
-        elif cr >= 12:
-            force += [
-                tough.MagicResistance,
-                teleportation.MistyStep,
-                ProtectiveMagic,
-                Archmage,
-            ]
-        elif cr >= 6:
-            force += [teleportation.MistyStep, ProtectiveMagic, Mage]
-        elif cr >= 4:
-            force += [ProtectiveMagic, AdeptMage]
-        else:
-            force += [ApprenticeMage]
-
-        # general purpose mage powers
-        general = [
-            metamagic.ArcaneMastery,
-            anti_ranged.Overchannel,
-            artillery.TwinSpell,
-            artillery.SuppresingFire,
-        ]
-
-        # the Controlling spells don't really fit with the themes of the mages
-        # supress indirect fire because it comes up so much and we want variety
-        # suppress Magic Powers because these mages already have spell lists
-        ignore = (
-            controller.ControllingSpells
-            + [
-                illusory.HypnoticPatern,
-                artillery.IndirectFire,
-                gadget.PotionOfHealing,
-            ]
-            + magic.MagicPowers
-        )
-
-        self.force = force
-        self.general = general
-        self.techniques = techniques
-        self.esoteric = esoteric
-        self.ignore = ignore
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.force or p in self.ignore:
-            return CustomPowerWeight(0, ignore_usual_requirements=False)
-        elif p in self.general:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        elif p in self.techniques:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in self.esoteric:
-            return CustomPowerWeight(2, ignore_usual_requirements=True)
-        elif p in metamagic.MetamagicPowers:
-            return CustomPowerWeight(1, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "mage-neophyte":
+        return NewPowerSelection(powers.LoadoutApprentice, settings.rng)
+    elif settings.monster_key == "mage-apprentice":
+        return NewPowerSelection(powers.LoadoutApprentice, settings.rng)
+    elif settings.monster_key == "abjurer-mage-adept":
+        return NewPowerSelection(powers.LoadoutAbjurerAdept, settings.rng)
+    elif settings.monster_key == "abjurer-mage":
+        return NewPowerSelection(powers.LoadoutAbjurerMage, settings.rng)
+    elif settings.monster_key == "abjurer-archmage":
+        return NewPowerSelection(powers.LoadoutAbjurerArchmage, settings.rng)
+    elif settings.monster_key == "abjurer-primagus":
+        return NewPowerSelection(powers.LoadoutAbjurerArchmage, settings.rng)
+    elif settings.monster_key == "conjurer-mage-adept":
+        return NewPowerSelection(powers.LoadoutConjurerAdept, settings.rng)
+    elif settings.monster_key == "conjurer-mage":
+        return NewPowerSelection(powers.LoadoutConjurerMage, settings.rng)
+    elif settings.monster_key == "conjurer-archmage":
+        return NewPowerSelection(powers.LoadoutConjurerArchmage, settings.rng)
+    elif settings.monster_key == "conjurer-primagus":
+        return NewPowerSelection(powers.LoadoutConjurerArchmage, settings.rng)
+    elif settings.monster_key == "diviner-mage-adept":
+        return NewPowerSelection(powers.LoadoutDivinerAdept, settings.rng)
+    elif settings.monster_key == "diviner-mage":
+        return NewPowerSelection(powers.LoadoutDivinerMage, settings.rng)
+    elif settings.monster_key == "diviner-archmage":
+        return NewPowerSelection(powers.LoadoutDivinerArchmage, settings.rng)
+    elif settings.monster_key == "diviner-primagus":
+        return NewPowerSelection(powers.LoadoutDivinerArchmage, settings.rng)
+    elif settings.monster_key == "enchanter-mage-adept":
+        return NewPowerSelection(powers.LoadoutEnchanterAdept, settings.rng)
+    elif settings.monster_key == "enchanter-mage":
+        return NewPowerSelection(powers.LoadoutEnchanterMage, settings.rng)
+    elif settings.monster_key == "enchanter-archmage":
+        return NewPowerSelection(powers.LoadoutEnchanterArchmage, settings.rng)
+    elif settings.monster_key == "enchanter-primagus":
+        return NewPowerSelection(powers.LoadoutEnchanterArchmage, settings.rng)
+    elif settings.monster_key == "illusionist-mage-adept":
+        return NewPowerSelection(powers.LoadoutIllusionistAdept, settings.rng)
+    elif settings.monster_key == "illusionist-mage":
+        return NewPowerSelection(powers.LoadoutIllusionistMage, settings.rng)
+    elif settings.monster_key == "illusionist-archmage":
+        return NewPowerSelection(powers.LoadoutIllusionistArchmage, settings.rng)
+    elif settings.monster_key == "illusionist-primagus":
+        return NewPowerSelection(powers.LoadoutIllusionistArchmage, settings.rng)
+    elif settings.monster_key == "necromancer-adept":
+        return NewPowerSelection(powers.LoadoutNecromancerAdept, settings.rng)
+    elif settings.monster_key == "necromancer-mage":
+        return NewPowerSelection(powers.LoadoutNecromancerMage, settings.rng)
+    elif settings.monster_key == "necromancer-archmage":
+        return NewPowerSelection(powers.LoadoutNecromancerArchmage, settings.rng)
+    elif settings.monster_key == "necromancer-primagus":
+        return NewPowerSelection(powers.LoadoutNecromancerArchmage, settings.rng)
+    elif settings.monster_key == "transmuter-mage-adept":
+        return NewPowerSelection(powers.LoadoutTransmuterAdept, settings.rng)
+    elif settings.monster_key == "transmuter-mage":
+        return NewPowerSelection(powers.LoadoutTransmuterMage, settings.rng)
+    elif settings.monster_key == "transmuter-archmage":
+        return NewPowerSelection(powers.LoadoutTransmuterArchmage, settings.rng)
+    elif settings.monster_key == "transmuter-primagus":
+        return NewPowerSelection(powers.LoadoutTransmuterArchmage, settings.rng)
+    elif settings.monster_key == "pyromancer":
+        return NewPowerSelection(powers.PyromancerLoadout, settings.rng)
+    elif settings.monster_key == "cryomancer":
+        return NewPowerSelection(powers.CryomancerLoadout, settings.rng)
+    elif settings.monster_key == "electromancer":
+        return NewPowerSelection(powers.ElectromancerLoadout, settings.rng)
+    elif settings.monster_key == "toximancer":
+        return NewPowerSelection(powers.ToximancerLoadout, settings.rng)
+    else:
+        raise ValueError(f"Unknown mage monster key: {settings.monster_key}")
 
 
 def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -532,7 +358,7 @@ def generate_mage(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_MageWeights(stats, name, cr, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

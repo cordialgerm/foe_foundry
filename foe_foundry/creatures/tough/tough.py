@@ -1,30 +1,22 @@
-from ..ac_templates import LeatherArmor, SplintArmor
-from ..attack_template import natural, weapon
-from ..creature_types import CreatureType
-from ..damage import AttackType, DamageType
-from ..die import Die
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    PowerType,
-    select_powers,
-)
-from ..powers.roles import leader, soldier
-from ..powers.themed import cruel, honorable, reckless, technique, thuggish
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import LeatherArmor, SplintArmor
+from ...attack_template import natural, weapon
+from ...creature_types import CreatureType
+from ...damage import AttackType, DamageType
+from ...die import Die
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 ThugVariant = MonsterVariant(
     name="Thug",
@@ -39,9 +31,7 @@ BrawlerVariant = MonsterVariant(
     name="Brawler",
     description="Brawlers rely on their physical strength and intimidation to get what they want. They might be bouncers, enforcers, or just rowdy tavern goers.",
     monsters=[
-        Monster(name="Brawler", cr=0.5),
-        Monster(name="Veteran Brawler", cr=2),
-        Monster(name="Elite Brawler", cr=4),
+        Monster(name="Brawler", cr=1),
     ],
 )
 BossVariant = MonsterVariant(
@@ -55,45 +45,23 @@ BossVariant = MonsterVariant(
 )
 
 
-class _ToughWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, variant: MonsterVariant):
-        self.stats = stats
-        self.variant = variant
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            leader.Intimidate,
-            cruel.BrutalCritical,
-            technique.PushingAttack,
-            technique.DisarmingAttack,
-            technique.ProneAttack,
-            reckless.Charger,
-            reckless.Overrun,
-            reckless.Reckless,
-            reckless.BloodiedRage,
-            reckless.Toss,
-            reckless.RelentlessEndurance,
-        ]
-
-        suppress = honorable.HonorablePowers
-
-        if self.variant is BossVariant:
-            powers += thuggish.ThuggishPowers
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif self.variant is BrawlerVariant and p == technique.ExpertBrawler:
-            return CustomPowerWeight(4.0, ignore_usual_requirements=True)
-        elif p in powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif p.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.75)
-
-    def force_powers(self) -> list[Power]:
-        return [soldier.PackTactics]
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "thug":
+        return NewPowerSelection(powers.LoadoutThug, settings.rng)
+    elif settings.monster_key == "veteran-thug":
+        return NewPowerSelection(powers.LoadoutVeteranThug, settings.rng)
+    elif settings.monster_key == "elite-thug":
+        return NewPowerSelection(powers.LoadoutEliteThug, settings.rng)
+    elif settings.monster_key == "brawler":
+        return NewPowerSelection(powers.LoadoutBrawler, settings.rng)
+    elif settings.monster_key == "thug-boss":
+        return NewPowerSelection(powers.LoadoutThugBoss, settings.rng)
+    elif settings.monster_key == "thug-overboss":
+        return NewPowerSelection(powers.LoadoutThugOverboss, settings.rng)
+    elif settings.monster_key == "thug-legend":
+        return NewPowerSelection(powers.LoadoutThugLegend, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -194,7 +162,7 @@ def generate_tough(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_ToughWeights(stats, variant),
+        custom=choose_powers(settings),
     )
     features += power_features
 

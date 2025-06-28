@@ -20,7 +20,7 @@ class _OrcSpecies(CreatureSpecies):
                 attack_damage_multiplier=1.1,
             )
         )
-        stats = stats.copy(name=f"Orc {stats.name}", creature_subtype="Orc")
+        stats = stats.copy(creature_subtype="Orc")
         stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
         stats = stats.with_roles(additional_roles=[MonsterRole.Bruiser])
         return stats

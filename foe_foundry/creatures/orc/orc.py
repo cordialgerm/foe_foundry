@@ -1,49 +1,21 @@
-import numpy as np
-
-from ..ac_templates import ArcaneArmor, HideArmor, PlateArmor, StuddedLeatherArmor
-from ..attack_template import spell, weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import (
-    LOW_POWER,
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.roles import defender, leader, soldier
-from ..powers.species import orc
-from ..powers.spellcaster import shaman
-from ..powers.themed import (
-    anti_ranged,
-    bestial,
-    cowardly,
-    cruel,
-    fast,
-    fearsome,
-    gadget,
-    honorable,
-    reckless,
-    shamanic,
-    sneaky,
-    technique,
-    thuggish,
-    totemic,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ._data import (
+from ...ac_templates import ArcaneArmor, HideArmor, PlateArmor, StuddedLeatherArmor
+from ...attack_template import spell, weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 OrcSoldierVariant = MonsterVariant(
     name="Orc Soldier",
@@ -104,174 +76,25 @@ OrcWarchiefVariant = MonsterVariant(
 )
 
 
-class _OrcPowers(CustomPowerSelection):
-    def __init__(
-        self,
-        force: list[Power],
-        always: list[Power],
-        conditional: list[Power],
-        suppress: list[Power],
-        delta: float = 0.0,
-    ):
-        self.force = force
-        self.suppress = (
-            gadget.GadgetPowers
-            + cowardly.CowardlyPowers
-            + thuggish.ThuggishPowers
-            + [technique.BaitAndSwitch, technique.PommelStrike, technique.ArmorMaster]
-            + suppress
-        )
-        self.always = always
-        self.orc = orc.OrcPowers
-        self.conditional = conditional
-        self.delta = delta
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        if power in self.suppress:
-            return CustomPowerWeight(weight=-1)
-        elif power in self.orc:
-            return CustomPowerWeight(weight=2.0, ignore_usual_requirements=False)
-        elif power in self.always:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=True)
-        elif power in self.conditional:
-            return CustomPowerWeight(weight=1.5, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(weight=0.5, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return self.delta - 0.1 * sum(p.power_level for p in self.force)
-
-
-def orc_powers(
-    variant: MonsterVariant, rng: np.random.Generator, cr: float
-) -> CustomPowerSelection:
-    if variant is OrcSoldierVariant:
-        return _OrcPowers(
-            force=[],
-            always=[],
-            conditional=technique.TechniquePowers
-            + reckless.RecklessPowers
-            + soldier.SoldierPowers,
-            suppress=[],
-            delta=LOW_POWER,
-        )
-    elif variant is OrcReaverVariant:
-        return _OrcPowers(
-            force=[orc.Bloodfury],
-            always=[
-                anti_ranged.DeflectMissile,
-                bestial.RetributiveStrike,
-                cruel.BrutalCritical,
-                cruel.BloodiedFrenzy,
-                fearsome.FearsomeRoar,
-            ]
-            + reckless.RecklessPowers,
-            conditional=[
-                technique.BleedingAttack,
-                technique.CleavingAttack,
-                technique.DisarmingAttack,
-                technique.OverpoweringStrike,
-                technique.PushingAttack,
-                technique.ProneAttack,
-                technique.WhirlwindOfSteel,
-            ],
-            suppress=[orc.BloodrageBarrage],
-            delta=LOW_POWER,
-        )
-    elif variant is OrcHardenedOneVariant:
-        honorable_index = rng.choice(len(honorable.HonorablePowers))
-        honorable_power = honorable.HonorablePowers[honorable_index]
-
-        return _OrcPowers(
-            force=[defender.Protection, honorable_power],
-            always=[
-                defender.Taunt,
-                defender.ZoneOfControl,
-                technique.BaitAndSwitch,
-                technique.ArmorMaster,
-                technique.BleedingAttack,
-                technique.CleavingAttack,
-                technique.DazingAttacks,
-                technique.DisarmingAttack,
-                technique.GrazingAttack,
-                technique.OverpoweringStrike,
-                technique.Interception,
-                technique.ParryAndRiposte,
-                technique.WhirlwindOfSteel,
-                tough.JustAScratch,
-            ],
-            conditional=honorable.HonorablePowers + soldier.SoldierPowers,
-            suppress=[],
-        )
-    elif variant is OrcBloodletterVariant:
-        return _OrcPowers(
-            force=[sneaky.Vanish],
-            always=[
-                cruel.BrutalCritical,
-                anti_ranged.HardToPinDown,
-                fast.Evasion,
-                fast.NimbleReaction,
-                fearsome.DreadGaze,
-                technique.PoisonedAttack,
-            ],
-            conditional=sneaky.SneakyPowers,
-            suppress=[sneaky.FalseAppearance],
-        )
-    elif variant is OrcBloodriteShamanVariant:
-        totemic_power_index = rng.choice(len(totemic.TotemicPowers))
-        totemic_power = totemic.TotemicPowers[totemic_power_index]
-        force = [
-            shaman.ShamanAdeptPower if cr <= 2 else shaman.ShamanPower,
-            totemic_power,
-        ]
-
-        return _OrcPowers(
-            force=force,
-            always=shamanic.ShamanicPowers,
-            conditional=[],
-            suppress=[orc.BloodrageEndurance],
-            delta=LOW_POWER if cr <= 2 else MEDIUM_POWER,
-        )
-    elif variant is OrcWarchiefVariant:
-        warcries = [orc.WarCryOfTheBloodiedFang, orc.WarCryOfTheChillheart]
-        orders = [leader.CommandTheAttack, leader.StayInFormation]
-        warcry_index = rng.choice(len(warcries))
-        order_index = rng.choice(len(orders))
-        force = [warcries[warcry_index], orders[order_index]]
-
-        if cr >= 7:
-            force.append(orc.Bloodfury)
-
-        return _OrcPowers(
-            force=force,
-            always=[
-                leader.CommandTheAttack,
-                leader.CommandTheTroops,
-                leader.StayInFormation,
-                leader.FanaticFollowers,
-                leader.RallyTheTroops,
-                leader.Intimidate,
-                defender.Taunt,
-                technique.BaitAndSwitch,
-                technique.ArmorMaster,
-                technique.BleedingAttack,
-                technique.CleavingAttack,
-                technique.DazingAttacks,
-                technique.DisarmingAttack,
-                technique.GrazingAttack,
-                technique.OverpoweringStrike,
-                technique.ParryAndRiposte,
-                technique.WhirlwindOfSteel,
-            ],
-            conditional=[],
-            suppress=[technique.Interception] + warcries + orders,
-        )
-
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "orc-soldier":
+        return NewPowerSelection(powers.LoadoutSoldier, settings.rng)
+    elif settings.monster_key == "orc-reaver":
+        return NewPowerSelection(powers.LoadoutReaver, settings.rng)
+    elif settings.monster_key == "orc-hardened-one":
+        return NewPowerSelection(powers.LoadoutHardenedOne, settings.rng)
+    elif settings.monster_key == "orc-bloodrite-shaman":
+        return NewPowerSelection(powers.LoadoutShamanAdept, settings.rng)
+    elif settings.monster_key == "orc-bloodrite-elder-shaman":
+        return NewPowerSelection(powers.LoadoutShaman, settings.rng)
+    elif settings.monster_key == "orc-bloodletter":
+        return NewPowerSelection(powers.LoadoutBloodletter, settings.rng)
+    elif settings.monster_key == "orc-warchief":
+        return NewPowerSelection(powers.LoadoutWarchief, settings.rng)
+    elif settings.monster_key == "orc-warchief-of-the-bloody-fang":
+        return NewPowerSelection(powers.LoadoutWarchiefLegendary, settings.rng)
     else:
-        raise ValueError(f"Unknown orc variant: {variant}")
+        raise ValueError(f"Unknown orc monster key: {settings.monster_key}")
 
 
 def generate_orc(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -450,7 +273,7 @@ def generate_orc(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=orc_powers(variant, rng, cr),
+        custom=choose_powers(settings),
     )
     features += power_features
 

@@ -1,43 +1,21 @@
-import numpy as np
-
-from ..ac_templates import ArcaneArmor
-from ..attack_template import spell
-from ..creature_types import CreatureType
-from ..movement import Movement
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    flags,
-    select_powers,
-)
-from ..powers.creature import lich, mage
-from ..powers.creature_type import undead
-from ..powers.roles import artillery
-from ..powers.spellcaster import (
-    metamagic,
-)
-from ..powers.themed import (
-    anti_ranged,
-    cursed,
-    deathly,
-    emanation,
-    icy,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..spells import CasterType
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import ArcaneArmor
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...movement import Movement
+from ...powers import NewPowerSelection, flags, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...spells import CasterType
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 LichVariant = MonsterVariant(
     name="Lich",
@@ -54,94 +32,14 @@ LichVariant = MonsterVariant(
 )
 
 
-class _LichWeights(CustomPowerSelection):
-    def __init__(
-        self,
-        stats: BaseStatblock,
-        name: str,
-        cr: float,
-        variant: MonsterVariant,
-        rng: np.random.Generator,
-    ):
-        self.stats = stats
-        self.variant = variant
-        self.rng = rng
-
-        force = [mage.ProtectiveMagic, lich.LichSpellcasting]
-        techniques = [
-            technique.SappingAttack,
-            technique.PushingAttack,
-            technique.ProneAttack,
-            technique.SlowingAttack,
-            technique.DazingAttacks,
-            technique.FrighteningAttack,
-            technique.NoHealingAttack,
-        ]
-
-        # general purpose lich powers
-        powers = [
-            metamagic.ArcaneMastery,
-            anti_ranged.Overchannel,
-            artillery.TwinSpell,
-            artillery.SuppresingFire,
-            cursed.DisfiguringCurse,
-            cursed.RejectDivinity,
-            cursed.VoidSiphon,
-            deathly.EndlessServitude,
-            deathly.FleshPuppets,
-            deathly.DrainingBlow,
-            undead.SoulTether,
-            undead.SoulChill,
-            undead.StygianBurst,
-            undead.AntithesisOfLife,
-            icy.Hoarfrost,
-            icy.IcyTomb,
-            icy.Frostbite,
-            icy.FrostNova,
-        ]
-
-        emanations = [
-            emanation.TimeRift,
-            emanation.RunicWards if cr <= 21 else lich.EverlastingImmortality,
-            emanation.RagingFlame,
-            emanation.BitingFrost,
-            emanation.FetidMiasma,
-            emanation.IllusoryReality,
-            emanation.LashingWinds,
-            icy.Blizzard,
-        ]
-
-        # Lich will always have 1 attack technique and 1 emanation
-        emanation_index = self.rng.choice(len(emanations))
-        technique_index = self.rng.choice(len(techniques))
-
-        # Lich will always have 1 of these specific lich powers
-        lich_powers = [lich.SoulHarvest, lich.UndyingServants]
-        lich_power_index = self.rng.choice(len(lich_powers))
-
-        force += [
-            emanations[emanation_index],
-            techniques[technique_index],
-            lich_powers[lich_power_index],
-        ]
-
-        self.force = force
-        self.powers = powers
-        self.techniques = techniques
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        if p in self.powers:
-            # smooth out weighting so that powers are more evenly selected from the list of available options
-            return CustomPowerWeight(0.1, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(-1, ignore_usual_requirements=True)
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return -0.2 * sum(
-            p.power_level for p in self.force_powers() if p in self.powers
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "lich":
+        return NewPowerSelection(powers.LoadoutLich, settings.rng)
+    elif settings.monster_key == "archlich":
+        return NewPowerSelection(powers.LoadoutArchlich, settings.rng)
+    else:
+        raise ValueError(
+            f"Unknown lich variant: {settings.monster_key}. Expected 'lich' or 'archlich'."
         )
 
 
@@ -242,7 +140,7 @@ def generate_lich(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_LichWeights(stats, name, cr, variant, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 

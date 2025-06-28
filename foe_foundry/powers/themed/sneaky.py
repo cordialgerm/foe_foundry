@@ -6,7 +6,7 @@ from foe_foundry.references import action_ref
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
-from ...die import Die, DieFormula
+from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -71,15 +71,22 @@ class _SneakyStrike(SneakyPower):
             require_attack_types=AttackType.AllWeapon(),
         )
 
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+        # note: reduce overall damage because we're going to boost damage substantially if it's made with advantage
+        stats = stats.copy(damage_modifier=0.9 * stats.damage_modifier)
+        return stats
+
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
-        dmg = DieFormula.target_value(
-            max(1.5 * stats.cr, 2 + stats.cr), force_die=Die.d6
-        )
+        dmg = stats.target_value(target=0.5, force_die=Die.d6)
+        damage_type = stats.attack.damage.damage_type
 
         feature = Feature(
             name="Sneaky Strike",
-            description=f"{stats.roleref.capitalize()} deals an additional {dmg.description} damage immediately after hitting a target if the attack was made with advantage.",
-            action=ActionType.BonusAction,
+            description=f"If the attack was made with advantage, it deals an additional {dmg.description} {damage_type} damage.",
+            action=ActionType.Feature,
+            modifies_attack=True,
+            hidden=True,
         )
 
         return [feature]

@@ -15,3 +15,12 @@ def test_keys_resolve():
     for key in keys:
         ref = resolver.resolve_monster_ref(key)
         assert ref is not None, f"Failed to resolve key: {key}"
+
+
+def test_resolve_orc_key():
+    resolver = MonsterRefResolver()
+    key = "orc-druid"
+    ref = resolver.resolve_monster_ref(key)
+    assert ref is not None
+    assert ref.monster is not None
+    assert ref.monster.name == "Druid"

@@ -1,36 +1,27 @@
-from foe_foundry.powers.power import Power
-from foe_foundry.powers.selection.custom import CustomPowerWeight
-
-from ..ac_templates import StuddedLeatherArmor
-from ..attack_template import weapon
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..powers import CustomPowerSelection, PowerType, select_powers
-from ..powers.roles.ambusher import CunningAction, DeadlyAmbusher, StealthySneak
-from ..powers.roles.artillery import QuickDraw
-from ..powers.themed.charm import CharmingWords
-from ..powers.themed.fast import NimbleReaction
-from ..powers.themed.gadget import GadgetPowers, PotionOfHealing, SmokeBomb
-from ..powers.themed.poison import PoisonDart, WeakeningPoison
-from ..powers.themed.technique import PoisonedAttack
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import MonsterDials
-from ..utils.interpolate import interpolate_by_cr
-from ._data import (
+from ...ac_templates import StuddedLeatherArmor
+from ...attack_template import weapon
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from ...statblocks import MonsterDials
+from ...utils.interpolate import interpolate_by_cr
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
-from .species import AllSpecies, HumanSpecies
+from ..base_stats import base_stats
+from ..species import AllSpecies, HumanSpecies
+from . import powers
 
 SpyVariant = MonsterVariant(
     name="Spy",
-    description="Bandits are inexperienced ne’er-do-wells who typically follow the orders of higher-ranking bandits.",
+    description="Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity.",
     monsters=[
         Monster(name="Spy", cr=1, srd_creatures=["Spy"]),
         Monster(name="Elite Spy", cr=4),
@@ -38,7 +29,7 @@ SpyVariant = MonsterVariant(
 )
 SpyMasterVariant = MonsterVariant(
     name="Spy Master",
-    description="Bandit captains command gangs of scoundrels and conduct straightforward heists. Others serve as guards and muscle for more influential criminals.",
+    description="Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity.",
     monsters=[
         Monster(
             name="Spy Master",
@@ -50,37 +41,15 @@ SpyMasterVariant = MonsterVariant(
 )
 
 
-class _SpyPowers(CustomPowerSelection):
-    def force_powers(self) -> list[Power]:
-        return [CunningAction]
-
-    def custom_weight(self, power: Power) -> CustomPowerWeight:
-        suppress_powers = set(GadgetPowers)
-        suppress_powers.discard(SmokeBomb)
-        suppress_powers.discard(PotionOfHealing)
-
-        desirable_powers = [
-            StealthySneak,
-            DeadlyAmbusher,
-            PoisonDart,
-            PoisonedAttack,
-            CharmingWords,
-            QuickDraw,
-            NimbleReaction,
-            SmokeBomb,
-            PotionOfHealing,
-            WeakeningPoison,
-        ]
-
-        if power in suppress_powers:
-            return CustomPowerWeight(weight=-1)
-        elif power in desirable_powers:
-            return CustomPowerWeight(weight=2.5, ignore_usual_requirements=True)
-        elif power.power_type == PowerType.Species:
-            # boost species powers but still respect requirements
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(weight=0.75, ignore_usual_requirements=False)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "spy":
+        return NewPowerSelection(powers.LoadoutSpy, settings.rng)
+    elif settings.monster_key == "elite-spy":
+        return NewPowerSelection(powers.LoadoutEliteSpy, settings.rng)
+    elif settings.monster_key == "spy-master":
+        return NewPowerSelection(powers.LoadoutSpyMaster, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -194,7 +163,7 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_SpyPowers(),
+        custom=choose_powers(settings),
     )
     features += power_features
 

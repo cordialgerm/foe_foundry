@@ -51,8 +51,7 @@ class _Evasion(FastPower):
             name="Evasion",
             action=ActionType.Feature,
             description=f"If {stats.roleref} is subjected to an effect that allows it to make a Dexterity saving throw \
-            to take only half damage, {stats.roleref} instead only takes half damage if it succeeds on the saving throw, \
-            and only half damage if it fails.",
+            to take only half damage, {stats.roleref} instead takes no damage if it succeeds and half damage if it fails.",
         )
         return [feature]
 
