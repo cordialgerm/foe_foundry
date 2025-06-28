@@ -34,7 +34,7 @@ from .scout import ScoutTemplate
 from .simulacrum import SimulacrumTemplate
 from .skeleton import SkeletonTemplate
 from .spirit import SpiritTemplate
-from .spy import SpyTemplate
+from .spy.spy import SpyTemplate
 from .tough import ToughTemplate
 from .vrock.vrock import VrockTemplate
 from .warrior import WarriorTemplate
