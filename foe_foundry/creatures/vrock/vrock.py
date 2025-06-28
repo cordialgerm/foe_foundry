@@ -1,33 +1,21 @@
-from ..ac_templates import UnholyArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..movement import Movement
-from ..powers import CustomPowerSelection, CustomPowerWeight, Power, select_powers
-from ..powers.creature import vrock
-from ..powers.creature_type import demon
-from ..powers.roles import bruiser, skirmisher
-from ..powers.themed import (
-    bestial,
-    cruel,
-    diseased,
-    fearsome,
-    flying,
-    monstrous,
-    poison,
-    tough,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Stats, StatScaling
-from ._data import (
+from ...ac_templates import UnholyArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import BaseStatblock, base_stats
+from ..base_stats import base_stats
+from . import powers
 
 VrockVariant = MonsterVariant(
     name="Vrock",
@@ -38,42 +26,8 @@ VrockVariant = MonsterVariant(
 )
 
 
-class _VrockWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock):
-        self.stats = stats
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        poison_powers = poison.PoisonPowers.copy()
-        poison_powers.remove(poison.PoisonDart)
-        disease_powers = diseased.DiseasedPowers
-
-        powers = poison_powers + disease_powers
-
-        secondary_powers = [
-            monstrous.Frenzy,
-            monstrous.Rampage,
-            monstrous.LingeringWound,
-            monstrous.TearApart,
-            bestial.RetributiveStrike,
-            cruel.BloodiedFrenzy,
-            cruel.BrutalCritical,
-            flying.Flyby,
-            fearsome.NightmarishVisions,
-            bruiser.Rend,
-            skirmisher.HarassingRetreat,
-        ]
-
-        if p in powers:
-            return CustomPowerWeight(3.0, ignore_usual_requirements=True)
-        elif p in secondary_powers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=True)
-        elif p in demon.DemonPowers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
-
-    def force_powers(self) -> list[Power]:
-        return [tough.MagicResistance, vrock.StunningScreech]
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    return NewPowerSelection(loadouts=powers.LoadoutVrock, rng=settings.rng)
 
 
 def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -126,8 +80,8 @@ def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:
 
     # ROLES
     stats = stats.with_roles(
-        primary_role=MonsterRole.Bruiser,
-        additional_roles=[MonsterRole.Skirmisher, MonsterRole.Controller],
+        primary_role=MonsterRole.Skirmisher,
+        additional_roles=[MonsterRole.Controller],
     )
 
     # SAVES
@@ -147,7 +101,7 @@ def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_VrockWeights(stats),
+        custom=choose_powers(settings),
     )
     features += power_features
 

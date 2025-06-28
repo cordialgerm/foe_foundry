@@ -1,5 +1,5 @@
 site_name: Foe Foundry
-site_description: Foe Foundry helps GMs instantly summon unforgettable monsters for 5E and other fantasy TTRPGs. Skip the statblock grind—get handcrafted powers, flavorful foes, and encounter-ready creations built by a GM, for GMs.
+site_description: Tired of bland statblocks? Foe Foundry helps GMs summon flavorful 5E monsters for free. Create infinite monsters using handcrafted powers.
 site_url: !ENV [SITE_URL]
 site_author: Evan Rash
 

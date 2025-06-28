@@ -1,32 +1,23 @@
-import numpy as np
-
-from ..ac_templates import UnholyArmor
-from ..attack_template import spell
-from ..creature_types import CreatureType
-from ..damage import Condition, DamageType
-from ..powers import (
-    LOW_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
+from ...ac_templates import UnholyArmor
+from ...attack_template import spell
+from ...creature_types import CreatureType
+from ...damage import Condition, DamageType
+from ...powers import (
+    NewPowerSelection,
     select_powers,
 )
-from ..powers.creature import nothic
-from ..powers.creature_type import aberration
-from ..powers.roles import controller
-from ..powers.themed import anti_magic, chaotic, cursed, flying, temporal
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 HollowGazerVariant = MonsterVariant(
     name="Hollow Gazer",
@@ -38,42 +29,15 @@ HollowGazerVariant = MonsterVariant(
 )
 
 
-class _HollowGazerWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, rng: np.random.Generator):
-        self.stats = stats
-        self.rng = rng
-
-    def force_powers(self) -> list[Power]:
-        other_powers = nothic.NothicPowers.copy()
-        other_powers.remove(nothic.WarpingMadness)
-
-        power_index = self.rng.choice(len(other_powers))
-        return [nothic.WarpingMadness, other_powers[power_index]]
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            aberration.GazeOfTheFarRealm,
-            aberration.MadenningWhispers,
-            controller.Eyebite,
-            cursed.DisfiguringCurse,
-            temporal.AlterFate,
-            anti_magic.SpellEater,
-        ] + nothic.NothicPowers
-
-        if self.stats.cr >= 6:
-            powers += [chaotic.EldritchBeacon]
-
-        suppress = flying.FlyingPowers + controller.ControllerPowers
-
-        if p in suppress:
-            return CustomPowerWeight(weight=-1, ignore_usual_requirements=False)
-        elif p in powers:
-            return CustomPowerWeight(weight=2.0, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(weight=0.5, ignore_usual_requirements=False)
-
-    def power_delta(self) -> float:
-        return LOW_POWER
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "hollow-gazer":
+        return NewPowerSelection(powers.LoadoutHollowGazer, settings.rng)
+    elif settings.monster_key == "hollow-gazer-of-ruin":
+        return NewPowerSelection(powers.LoadoutHollowGazerOfRuin, settings.rng)
+    else:
+        raise ValueError(
+            f"Unexpected monster key {settings.monster_key} for Hollow Gazer generation."
+        )
 
 
 def generate_hollow_gazer(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -144,7 +108,7 @@ def generate_hollow_gazer(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_HollowGazerWeights(stats, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 

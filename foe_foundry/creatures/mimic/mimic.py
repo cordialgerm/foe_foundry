@@ -1,41 +1,21 @@
-import numpy as np
-
-from ..ac_templates import flat
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..movement import Movement
-from ..powers import (
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    flags,
-    select_powers,
-)
-from ..powers.creature import mimic
-from ..powers.creature_type import ooze
-from ..powers.roles import ambusher
-from ..powers.themed import (
-    aberrant,
-    anti_magic,
-    bestial,
-    breath,
-    illusory,
-    monstrous,
-    technique,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import flat
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, flags, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 MimicVariant = MonsterVariant(
     name="Mimic",
@@ -56,62 +36,15 @@ MimicVariant = MonsterVariant(
 )
 
 
-class _MimicWeights(CustomPowerSelection):
-    def __init__(self, stats: BaseStatblock, cr: float, rng: np.random.Generator):
-        self.stats = stats
-        self.cr = cr
-        self.rng = rng
-
-        flavor_powers = [
-            mimic.ComfortingFamiliarty,
-            bestial.MarkTheMeal,
-            mimic.MagneticAttraction,
-        ]
-        general_powers = [
-            ooze.LeechingGrasp,
-            ambusher.DeadlyAmbusher,
-            anti_magic.RedirectTeleport,
-            mimic.InhabitArmor,
-            mimic.SplinterStep,
-        ]
-        elite_powers = [
-            ooze.SlimeSpray,
-            breath.FleshMeltingBreath,
-            illusory.PhantomMirage,
-            mimic.HollowHome,
-        ]
-
-        if cr >= 8:
-            n_flavor = 1
-            n_regular = 1
-            regular_powers = general_powers + elite_powers
-        elif cr >= 4:
-            n_flavor = 1
-            n_regular = 1
-            regular_powers = general_powers
-        else:
-            regular_powers = general_powers
-            n_flavor = 1
-            n_regular = 0
-
-        force = [aberrant.Adhesive, monstrous.Swallow, technique.GrapplingAttack]
-
-        flavor_indexes = rng.choice(len(flavor_powers), size=n_flavor, replace=False)
-        force += [flavor_powers[i] for i in flavor_indexes]
-
-        regular_indexes = rng.choice(len(regular_powers), size=n_regular, replace=False)
-        force += [regular_powers[i] for i in regular_indexes]
-
-        self.force = force
-
-    def force_powers(self) -> list[Power]:
-        return self.force
-
-    def power_delta(self) -> float:
-        return -100
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        return CustomPowerWeight(-1)
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "mimic":
+        return NewPowerSelection(powers.LoadoutMimic, settings.rng)
+    elif settings.monster_key == "greater-mimic":
+        return NewPowerSelection(powers.LoadoutGreaterMimic, settings.rng)
+    elif settings.monster_key == "vault-mimic":
+        return NewPowerSelection(powers.LoadoutVaultMimic, settings.rng)
+    else:
+        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def generate_mimic(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -190,7 +123,7 @@ def generate_mimic(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_MimicWeights(stats, cr, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 

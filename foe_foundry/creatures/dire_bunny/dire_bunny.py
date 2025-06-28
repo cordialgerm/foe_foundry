@@ -1,42 +1,21 @@
-import numpy as np
-
-from ..ac_templates import NaturalArmor
-from ..attack_template import natural
-from ..creature_types import CreatureType
-from ..damage import DamageType
-from ..movement import Movement
-from ..powers import (
-    MEDIUM_POWER,
-    CustomPowerSelection,
-    CustomPowerWeight,
-    Power,
-    select_powers,
-)
-from ..powers.creature import dire_bunny
-from ..powers.creature_type import beast
-from ..powers.roles import soldier
-from ..powers.themed import (
-    aberrant,
-    bestial,
-    diseased,
-    earthy,
-    flying,
-    illusory,
-    monstrous,
-    serpentine,
-)
-from ..role_types import MonsterRole
-from ..size import Size
-from ..skills import Skills, Stats, StatScaling
-from ..statblocks import BaseStatblock
-from ._data import (
+from ...ac_templates import NaturalArmor
+from ...attack_template import natural
+from ...creature_types import CreatureType
+from ...damage import DamageType
+from ...movement import Movement
+from ...powers import NewPowerSelection, select_powers
+from ...role_types import MonsterRole
+from ...size import Size
+from ...skills import Skills, Stats, StatScaling
+from .._data import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
     StatsBeingGenerated,
 )
-from .base_stats import base_stats
+from ..base_stats import base_stats
+from . import powers
 
 DireBunnyVariant = MonsterVariant(
     name="Dire Bunny",
@@ -48,63 +27,15 @@ DireBunnyVariant = MonsterVariant(
 )
 
 
-class _DireBunnyWeights(CustomPowerSelection):
-    def __init__(
-        self, stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-    ):
-        self.stats = stats
-        self.variant = variant
-        self.rng = rng
-
-        diseases = [diseased.FilthFever, diseased.BlindingSickness, diseased.Mindfire]
-        disease_index = self.rng.choice(len(diseases))
-        disease = diseases[disease_index]
-        disease_power = next(
-            p
-            for p in diseased.RottenGraspPowers
-            if p.disease == disease  # type: ignore
+def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+    if settings.monster_key == "dire-bunny":
+        return NewPowerSelection(powers.LoadoutDireBunny, settings.rng)
+    elif settings.monster_key == "dire-bunny-matriarch":
+        return NewPowerSelection(powers.LoadoutMatriarch, settings.rng)
+    else:
+        raise ValueError(
+            f"Unexpected monster key {settings.monster_key} for Dire Bunny generation."
         )
-        self.disease_power = disease_power
-
-        leap_powers = [soldier.MightyLeap, monstrous.Pounce, dire_bunny.ThumpOfDread]
-        leap_index = self.rng.choice(len(leap_powers))
-        leap_power = leap_powers[leap_index]
-        self.leap_power = leap_power
-
-        self.hard_coded = diseased.RottenGraspPowers + leap_powers
-
-    def force_powers(self) -> list[Power]:
-        return [self.disease_power, self.leap_power]
-
-    def power_delta(self) -> float:
-        return MEDIUM_POWER - 0.25 * sum(p.power_level for p in self.force_powers())
-
-    def custom_weight(self, p: Power) -> CustomPowerWeight:
-        powers = [
-            bestial.OpportuneBite,
-            bestial.RetributiveStrike,
-            beast.FeedingFrenzy,
-            beast.ScentOfWeakness,
-            beast.WildInstinct,
-        ]
-
-        suppress = (
-            earthy.EarthyPowers
-            + flying.FlyingPowers
-            + aberrant.AberrantPowers
-            + serpentine.SerpentinePowers
-            + self.hard_coded  # already chose from similar powers
-            + illusory.IllusoryPowers
-        )
-
-        if p in suppress:
-            return CustomPowerWeight(-1, ignore_usual_requirements=False)
-        elif p in dire_bunny.DireBunnyPowers:
-            return CustomPowerWeight(2.0, ignore_usual_requirements=False)
-        elif p in powers:
-            return CustomPowerWeight(1.5, ignore_usual_requirements=True)
-        else:
-            return CustomPowerWeight(0.25, ignore_usual_requirements=False)
 
 
 def generate_dire_bunny(settings: GenerationSettings) -> StatsBeingGenerated:
@@ -175,7 +106,7 @@ def generate_dire_bunny(settings: GenerationSettings) -> StatsBeingGenerated:
         stats=stats,
         rng=rng,
         settings=settings.selection_settings,
-        custom=_DireBunnyWeights(stats, variant, rng),
+        custom=choose_powers(settings),
     )
     features += power_features
 
