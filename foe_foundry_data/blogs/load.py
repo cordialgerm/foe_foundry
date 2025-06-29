@@ -26,7 +26,7 @@ class _Loader:
                 description = frontmatter.get("description", title)
 
                 file2 = file.parent / file.stem  # change from {file}.md to /{file}/
-                url = file2.relative_to(root_dir).as_posix()
+                url = file2.relative_to(root_dir).as_posix() + "/"
                 image = frontmatter.get("image", "img/icons/favicon.webp")
                 date = frontmatter["date"]
 
