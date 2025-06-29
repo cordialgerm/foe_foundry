@@ -92,7 +92,7 @@ class _PetrifyingGlance(_PetrifyingPower):
         feature = Feature(
             name="Petrifying Glance",
             action=ActionType.Reaction,
-            description=f"If a creature within 60 feet that {stats.selfref} can see hits it with an attack, {stats.selfref} uses {feature_ref(petrification.name)} on the attacker.",
+            description=f"If a creature within 60 feet looks at {stats.selfref} (such as to make an attack or target it with a spell or ability), then {stats.selfref} uses {feature_ref(petrification.name)} on that creature.",
         )
 
         return [petrification, feature]

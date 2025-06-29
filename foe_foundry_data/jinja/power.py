@@ -34,6 +34,7 @@ def render_power_fragment(power: PowerModel) -> str:
         reactions=reactions,
         attacks=attack,
         spellcasting=spellcasting,
+        reaction_header=power.reaction_header,
     )
     html_raw = template.render(context)
     return html_raw
