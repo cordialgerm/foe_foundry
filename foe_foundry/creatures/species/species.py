@@ -11,6 +11,9 @@ class CreatureSpecies:
     description: str
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        if not stats.name.startswith(self.name):
+            stats = stats.copy(name=f"{self.name} {stats.name}")
+
         return stats
 
     def __hash__(self) -> int:

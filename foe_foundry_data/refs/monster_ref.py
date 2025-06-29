@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, replace
+from functools import cached_property
 from typing import TypeAlias
 
 import inflect
 import numpy as np
+import yaml
 
 from foe_foundry.creatures import (
     AllSpecies,
@@ -30,6 +32,14 @@ class MonsterRef:
     variant: MonsterVariant | None = None
     monster: Monster | None = None
     species: CreatureSpecies | None = None
+    args_str: str | None = None
+
+    @cached_property
+    def args(self) -> dict | None:
+        """Returns the arguments as a dictionary, or None if args_str is not set."""
+        if self.args_str is None:
+            return None
+        return yaml.safe_load(self.args_str)
 
     def copy(self, **args) -> MonsterRef:
         """Creates a copy of the monster reference with updated values."""
@@ -51,6 +61,7 @@ class MonsterRef:
                 self.variant.key if self.variant else None,
                 self.monster.key if self.monster else None,
                 self.species.key if self.species else None,
+                self.args_str,
             )
         )
 
@@ -60,9 +71,13 @@ class MonsterRef:
         return (
             self.original_monster_name == other.original_monster_name
             and self.template.key == other.template.key
-            and (self.variant.key if self.variant else None) == (other.variant.key if other.variant else None)
-            and (self.monster.key if self.monster else None) == (other.monster.key if other.monster else None)
-            and (self.species.key if self.species else None) == (other.species.key if other.species else None)
+            and (self.variant.key if self.variant else None)
+            == (other.variant.key if other.variant else None)
+            and (self.monster.key if self.monster else None)
+            == (other.monster.key if other.monster else None)
+            and (self.species.key if self.species else None)
+            == (other.species.key if other.species else None)
+            and self.args_str == other.args_str
         )
 
 
@@ -125,6 +140,24 @@ class MonsterRefResolver:
             monster_name=monster_name,
             rng=rng,
         )
+
+    def resolve_monster_spec(
+        self, yaml_str: str, rng: np.random.Generator | None = None
+    ) -> MonsterRef | None:
+        """Resolves a YAML object string into a MonsterRef, with additional arguments in the YAML string passed along."""
+        yaml_object = yaml.safe_load(yaml_str)
+        if not isinstance(yaml_object, dict):
+            return None
+
+        monster_name = yaml_object.get("monster_name")
+        if not monster_name:
+            return None
+
+        ref = self.resolve_monster_ref(monster_name=monster_name, rng=rng)
+        if ref is None:
+            return None
+        ref2 = ref.copy(args_str=yaml_str)
+        return ref2
 
     def _resolve_species_from_monster_name(
         self, monster_name: str

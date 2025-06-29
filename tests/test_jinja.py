@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 from foe_foundry.powers.creature_type import celestial, demon
-from foe_foundry.powers.roles import skirmisher
+from foe_foundry.powers.roles import ambusher
 from foe_foundry.powers.spellcaster import necromancer
 from foe_foundry.powers.themed import bestial, breath, tough
 from foe_foundry_data.jinja import render_power_fragment
@@ -24,7 +24,7 @@ def _check_header(html: str, header: str):
 
 
 def test_bonus_action_rendering():
-    power = PowerModel.from_power(skirmisher.CunningAction)
+    power = PowerModel.from_power(ambusher.CunningAction)
     fragment = render_power_fragment(power)
     _check_header(fragment, "Bonus Actions")
 
