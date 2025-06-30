@@ -17,7 +17,7 @@ class FoeFoundryMdExtension(Extension):
     def __init__(self, **kwargs):
         self.config = {}
         self.ref_resolver = MonsterRefResolver()
-        self.resolved_refences = []
+        self.resolved_references = []
 
         base_url = kwargs.get("base_url", os.environ.get("SITE_URL"))
         if base_url is None:
@@ -30,8 +30,15 @@ class FoeFoundryMdExtension(Extension):
 
     def extendMarkdown(self, md):
         md.preprocessors.register(
+            MonsterSpecPreprocessor(
+                md, self.base_url, self.ref_resolver, self.resolved_references
+            ),
+            "monster_spec",
+            150,
+        )
+        md.preprocessors.register(
             LinkPreprocessor(
-                md, self.base_url, self.ref_resolver, self.resolved_refences
+                md, self.base_url, self.ref_resolver, self.resolved_references
             ),
             "monster_link",
             175,
@@ -50,12 +57,12 @@ class LinkPreprocessor(Preprocessor):
         md,
         base_url: str,
         ref_resolver: MonsterRefResolver,
-        resolved_refences: list,
+        resolved_references: list,
     ):
         super().__init__(md)
         self.base_url = base_url
         self.ref_resolver = ref_resolver
-        self.resolved_references = resolved_refences
+        self.resolved_references = resolved_references
 
     def run(self, lines):
         new_lines = []
@@ -65,7 +72,6 @@ class LinkPreprocessor(Preprocessor):
             new_line = self.BUTTON_RE.sub(self.replace_button, new_line)
             new_line = self.LINK_BOLD_RE.sub(self.replace_link, new_line)
             new_line = self.LINK_SPECIAL_RE.sub(self.replace_link_required, new_line)
-
             new_lines.append(new_line)
         return new_lines
 
@@ -145,3 +151,34 @@ class LinkPreprocessor(Preprocessor):
             raise ValueError("No text found in match")
 
         return create_newsletter(text)
+
+
+class MonsterSpecPreprocessor(Preprocessor):
+    MONSTER_SPEC_RE = re.compile(r"```yaml\s*\n(?P<yaml>[\s\S]*?)```", re.MULTILINE)
+
+    def __init__(
+        self,
+        md,
+        base_url: str,
+        ref_resolver: MonsterRefResolver,
+        resolved_references: list,
+    ):
+        super().__init__(md)
+        self.base_url = base_url
+        self.ref_resolver = ref_resolver
+        self.resolved_references = resolved_references
+
+    def run(self, lines):
+        # Reconstruct full markdown text
+        text = "\n".join(lines)
+        new_text = self.MONSTER_SPEC_RE.sub(self.replace_yaml_block, text)
+        return new_text.splitlines(keepends=False)
+
+    def replace_yaml_block(self, match: re.Match):
+        if match.group("yaml"):
+            monster_ref = self.ref_resolver.resolve_monster_spec(match.group("yaml"))
+            if monster_ref is not None:
+                self.resolved_references.append(monster_ref)
+                return str(monster_statblock(monster_ref))
+
+        return match.group(0)  # Return the original text if no match is found

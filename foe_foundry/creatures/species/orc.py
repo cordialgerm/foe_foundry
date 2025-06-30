@@ -13,6 +13,7 @@ class _OrcSpecies(CreatureSpecies):
         )
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().alter_base_stats(stats)
         stats = stats.apply_monster_dials(
             MonsterDials(
                 ac_modifier=-1,
