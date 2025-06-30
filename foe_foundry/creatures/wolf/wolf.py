@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -35,15 +35,15 @@ FrostwolfVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "wolf":
-        return NewPowerSelection(powers.LoadoutWolf, settings.rng)
+        return PowerSelection(powers.LoadoutWolf)
     elif settings.monster_key == "dire-wolf":
-        return NewPowerSelection(powers.LoadoutDireWolf, settings.rng)
+        return PowerSelection(powers.LoadoutDireWolf)
     elif settings.monster_key == "winter-wolf":
-        return NewPowerSelection(powers.LoadoutFrostWolf, settings.rng)
+        return PowerSelection(powers.LoadoutFrostWolf)
     elif settings.monster_key == "fellwinter-packlord":
-        return NewPowerSelection(powers.LoadoutPacklord, settings.rng)
+        return PowerSelection(powers.LoadoutPacklord)
     else:
         raise ValueError(f"Unknown wolf monster key: {settings.monster_key}")
 

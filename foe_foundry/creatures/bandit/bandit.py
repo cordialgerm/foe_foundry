@@ -4,7 +4,7 @@ from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers import PowerLoadout, PowerSelection, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -49,7 +49,7 @@ def _custom_powers(
     variant: MonsterVariant,
     species: CreatureSpecies,
     rng: np.random.Generator,
-) -> NewPowerSelection:
+) -> PowerSelection:
     if species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{species.name.title()} Bandit Powers",
@@ -60,27 +60,23 @@ def _custom_powers(
         species_loadout = None
 
     if variant is BanditVariant and stats.cr < 1:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutBandit,
-            rng=rng,
             species_loadout=species_loadout,
         )
     elif variant is BanditVariant and stats.cr >= 1:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutBanditVeteran,
-            rng=rng,
             species_loadout=species_loadout,
         )
     elif variant is BanditCaptainVariant and stats.cr <= 2:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutBanditCaptain,
-            rng=rng,
             species_loadout=species_loadout,
         )
     elif variant is BanditCaptainVariant and stats.cr > 2:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutBanditLegend,
-            rng=rng,
             species_loadout=species_loadout,
         )
     else:

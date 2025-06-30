@@ -3,7 +3,7 @@ from ...attack_template import natural, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     flags,
     select_powers,
 )
@@ -30,11 +30,11 @@ MedusaVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "medusa":
-        return NewPowerSelection(powers.LoadoutMedusa, settings.rng)
+        return PowerSelection(powers.LoadoutMedusa)
     elif settings.monster_key == "medusa-queen":
-        return NewPowerSelection(powers.LoadoutMedusaQueen, settings.rng)
+        return PowerSelection(powers.LoadoutMedusaQueen)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

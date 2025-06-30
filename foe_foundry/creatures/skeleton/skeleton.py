@@ -4,7 +4,7 @@ from ...ac_templates import Breastplate, Unarmored
 from ...attack_template import spell, weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Stats, StatScaling
@@ -59,15 +59,15 @@ def _choose_powers(
     stats: BaseStatblock,
     variant: MonsterVariant,
     rng: np.random.Generator,
-) -> NewPowerSelection:
+) -> PowerSelection:
     if variant is SkeletonVariant:
-        return NewPowerSelection(loadouts=powers.LoadoutSkeleton, rng=rng)
+        return PowerSelection(loadouts=powers.LoadoutSkeleton)
     elif variant is GraveGuardVariant:
-        return NewPowerSelection(loadouts=powers.LoadoutGraveGuard, rng=rng)
+        return PowerSelection(loadouts=powers.LoadoutGraveGuard)
     elif variant is BurningSkeletonVariant:
-        return NewPowerSelection(loadouts=powers.LoadoutBurningSkeleton, rng=rng)
+        return PowerSelection(loadouts=powers.LoadoutBurningSkeleton)
     elif variant is FreezingSkeletonVariant:
-        return NewPowerSelection(loadouts=powers.LoadoutFreezingSkeleton, rng=rng)
+        return PowerSelection(loadouts=powers.LoadoutFreezingSkeleton)
     else:
         raise ValueError(f"Unrecognized variant: {variant.name}")
 

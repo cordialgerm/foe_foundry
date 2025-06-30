@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import PowerSelection, flags, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -36,13 +36,13 @@ MimicVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "mimic":
-        return NewPowerSelection(powers.LoadoutMimic, settings.rng)
+        return PowerSelection(powers.LoadoutMimic)
     elif settings.monster_key == "greater-mimic":
-        return NewPowerSelection(powers.LoadoutGreaterMimic, settings.rng)
+        return PowerSelection(powers.LoadoutGreaterMimic)
     elif settings.monster_key == "vault-mimic":
-        return NewPowerSelection(powers.LoadoutVaultMimic, settings.rng)
+        return PowerSelection(powers.LoadoutVaultMimic)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

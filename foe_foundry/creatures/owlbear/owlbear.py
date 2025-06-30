@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     flags,
     select_powers,
 )
@@ -33,13 +33,13 @@ OwlbearVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "owlbear-cub":
-        return NewPowerSelection(powers.LoadoutOwlbearCub, settings.rng)
+        return PowerSelection(powers.LoadoutOwlbearCub)
     elif settings.monster_key == "owlbear":
-        return NewPowerSelection(powers.LoadoutOwlbear, settings.rng)
+        return PowerSelection(powers.LoadoutOwlbear)
     elif settings.monster_key == "savage-owlbear":
-        return NewPowerSelection(powers.LoadoutSavageOwlbear, settings.rng)
+        return PowerSelection(powers.LoadoutSavageOwlbear)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}. ")
 

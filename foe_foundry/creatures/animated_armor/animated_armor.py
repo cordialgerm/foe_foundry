@@ -6,7 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -48,11 +48,11 @@ RunicSpellplateVariant = MonsterVariant(
 
 def _custom_powers(
     stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-) -> NewPowerSelection:
+) -> PowerSelection:
     if variant is AnimatedArmorVariant:
-        return NewPowerSelection(powers.LoadoutAnimatedArmor, rng=rng)
+        return PowerSelection(powers.LoadoutAnimatedArmor)
     elif variant is RunicSpellplateVariant:
-        return NewPowerSelection(powers.LoadoutRunicSpellplate, rng)
+        return PowerSelection(powers.LoadoutRunicSpellplate)
     else:
         raise ValueError(f"Unknown variant: {variant}")
 

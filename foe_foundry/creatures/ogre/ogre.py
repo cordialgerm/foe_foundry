@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -81,17 +81,17 @@ OgreBigBrainzVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.variant is OgreVariant:
-        return NewPowerSelection(powers.LoadoutOgreBase, settings.rng)
+        return PowerSelection(powers.LoadoutOgreBase)
     elif settings.variant is OgreBigBrainzVariant:
-        return NewPowerSelection(powers.LoadoutTrickster, settings.rng)
+        return PowerSelection(powers.LoadoutTrickster)
     elif settings.variant is OgreWallsmashaVariant:
-        return NewPowerSelection(powers.LoadoutSmasha, settings.rng)
+        return PowerSelection(powers.LoadoutSmasha)
     elif settings.variant is OgreBurnbelchaVariant:
-        return NewPowerSelection(powers.LoadoutBelcha, settings.rng)
+        return PowerSelection(powers.LoadoutBelcha)
     elif settings.variant is OgreChaincrakkaVariant:
-        return NewPowerSelection(powers.LoadoutChainCrakka, settings.rng)
+        return PowerSelection(powers.LoadoutChainCrakka)
     else:
         raise ValueError(f"Unknown ogre variant: {settings.variant}")
 

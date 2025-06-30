@@ -2,7 +2,7 @@ from ...ac_templates import NaturalArmor
 from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...movement import Movement
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import PowerSelection, flags, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -26,11 +26,11 @@ ManticoreVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "manticore":
-        return NewPowerSelection(powers.LoadoutManticore, settings.rng)
+        return PowerSelection(powers.LoadoutManticore)
     elif settings.monster_key == "manticore-ravager":
-        return NewPowerSelection(powers.LoadoutManticoreRavager, settings.rng)
+        return PowerSelection(powers.LoadoutManticoreRavager)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

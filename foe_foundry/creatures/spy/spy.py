@@ -2,7 +2,7 @@ from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -41,13 +41,13 @@ SpyMasterVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "spy":
-        return NewPowerSelection(powers.LoadoutSpy, settings.rng)
+        return PowerSelection(powers.LoadoutSpy)
     elif settings.monster_key == "elite-spy":
-        return NewPowerSelection(powers.LoadoutEliteSpy, settings.rng)
+        return PowerSelection(powers.LoadoutEliteSpy)
     elif settings.monster_key == "spy-master":
-        return NewPowerSelection(powers.LoadoutSpyMaster, settings.rng)
+        return PowerSelection(powers.LoadoutSpyMaster)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
@@ -162,7 +162,6 @@ def generate_spy(settings: GenerationSettings) -> StatsBeingGenerated:
     stats, power_features, power_selection = select_powers(
         stats=stats,
         rng=rng,
-        settings=settings.selection_settings,
         custom=choose_powers(settings),
     )
     features += power_features

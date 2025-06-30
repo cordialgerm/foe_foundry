@@ -2,7 +2,7 @@ from ...ac_templates import Breastplate
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...skills import Stats, StatScaling
 from .._data import (
@@ -26,13 +26,13 @@ WightVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "wight":
-        return NewPowerSelection(powers.LoadoutWight, settings.rng)
+        return PowerSelection(powers.LoadoutWight)
     elif settings.monster_key == "wight-fell-champion":
-        return NewPowerSelection(powers.LoadoutChampion, settings.rng)
+        return PowerSelection(powers.LoadoutChampion)
     elif settings.monster_key == "wight-dread-lord":
-        return NewPowerSelection(powers.LoadoutLegendary, settings.rng)
+        return PowerSelection(powers.LoadoutLegendary)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

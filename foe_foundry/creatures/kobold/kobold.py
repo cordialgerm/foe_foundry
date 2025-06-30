@@ -1,7 +1,7 @@
 from ...ac_templates import ChainShirt, HolyArmor, NaturalArmor, SplintArmor
 from ...attack_template import spell, weapon
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -48,15 +48,15 @@ KoboldWyrmcallerVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "kobold-warrenguard":
-        return NewPowerSelection(powers.LoadoutWarrenguard, settings.rng)
+        return PowerSelection(powers.LoadoutWarrenguard)
     elif settings.monster_key == "kobold-sharpsnout":
-        return NewPowerSelection(powers.LoadoutSharpsnout, settings.rng)
+        return PowerSelection(powers.LoadoutSharpsnout)
     elif settings.monster_key == "kobold-ascendant":
-        return NewPowerSelection(powers.LoadoutAscendant, settings.rng)
+        return PowerSelection(powers.LoadoutAscendant)
     elif settings.monster_key == "kobold-wyrmcaller":
-        return NewPowerSelection(powers.LoadoutWyrmcaller, settings.rng)
+        return PowerSelection(powers.LoadoutWyrmcaller)
     else:
         raise ValueError(
             f"Unexpected monster key {settings.monster_key} for Kobold generation."

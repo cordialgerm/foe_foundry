@@ -1,7 +1,7 @@
 from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers import PowerLoadout, PowerSelection, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -44,7 +44,7 @@ CommanderVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def _choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.species is not None and settings.species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{settings.species.name} Powers",
@@ -58,21 +58,13 @@ def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
         species_loadout = None
 
     if settings.monster_key == "guard":
-        return NewPowerSelection(
-            powers.LoadoutGuard, settings.rng, species_loadout=species_loadout
-        )
+        return PowerSelection(powers.LoadoutGuard, species_loadout=species_loadout)
     elif settings.monster_key == "sergeant-of-the-watch":
-        return NewPowerSelection(
-            powers.LoadoutSeargant, settings.rng, species_loadout=species_loadout
-        )
+        return PowerSelection(powers.LoadoutSeargant, species_loadout=species_loadout)
     elif settings.monster_key == "guard-captain":
-        return NewPowerSelection(
-            powers.LoadoutCaptain, settings.rng, species_loadout=species_loadout
-        )
+        return PowerSelection(powers.LoadoutCaptain, species_loadout=species_loadout)
     elif settings.monster_key == "lord-of-the-watch":
-        return NewPowerSelection(
-            powers.LoadoutLord, settings.rng, species_loadout=species_loadout
-        )
+        return PowerSelection(powers.LoadoutLord, species_loadout=species_loadout)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

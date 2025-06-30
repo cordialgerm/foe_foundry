@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     flags,
     select_powers,
 )
@@ -30,11 +30,11 @@ ChimeraVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "chimera":
-        return NewPowerSelection(powers.LoadoutChimera, settings.rng)
+        return PowerSelection(powers.LoadoutChimera)
     elif settings.monster_key == "chimera-sovereign":
-        return NewPowerSelection(powers.LoadoutChimeraSovereign, settings.rng)
+        return PowerSelection(powers.LoadoutChimeraSovereign)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

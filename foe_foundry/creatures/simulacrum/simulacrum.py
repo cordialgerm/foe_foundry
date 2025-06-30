@@ -2,7 +2,7 @@ from ...ac_templates import ArcaneArmor
 from ...attack_template import spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -27,8 +27,8 @@ SimulacrumVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
-    return NewPowerSelection(powers.LoadoutSimulacrum, settings.rng)
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
+    return PowerSelection(powers.LoadoutSimulacrum)
 
 
 def generate_simulacrum(settings: GenerationSettings) -> StatsBeingGenerated:

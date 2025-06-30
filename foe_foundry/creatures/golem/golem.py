@@ -3,7 +3,7 @@ from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -82,19 +82,19 @@ ShieldGuardianVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.variant is ShieldGuardianVariant:
-        return NewPowerSelection(powers.LoadoutShieldGuardian, settings.rng)
+        return PowerSelection(powers.LoadoutShieldGuardian)
     elif settings.variant is StoneVariant:
-        return NewPowerSelection(powers.LoadoutStoneGolem, settings.rng)
+        return PowerSelection(powers.LoadoutStoneGolem)
     elif settings.variant is ClayVariant:
-        return NewPowerSelection(powers.LoadoutClayGolem, settings.rng)
+        return PowerSelection(powers.LoadoutClayGolem)
     elif settings.variant is FleshVariant:
-        return NewPowerSelection(powers.LoadoutFleshGolem, settings.rng)
+        return PowerSelection(powers.LoadoutFleshGolem)
     elif settings.variant is IronVariant:
-        return NewPowerSelection(powers.LoadoutIronGolem, settings.rng)
+        return PowerSelection(powers.LoadoutIronGolem)
     elif settings.variant is IceVariant:
-        return NewPowerSelection(powers.LoadoutIceGolem, settings.rng)
+        return PowerSelection(powers.LoadoutIceGolem)
     else:
         raise ValueError(f"Unknown golem variant: {settings.variant.key}")
 

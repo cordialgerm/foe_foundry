@@ -4,7 +4,7 @@ from ...ac_templates import ChainShirt, PlateArmor
 from ...attack_template import spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, PowerLoadout, flags, select_powers
+from ...powers import PowerLoadout, PowerSelection, flags, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -43,7 +43,7 @@ def _choose_powers(
     variant: MonsterVariant,
     species: CreatureSpecies,
     rng: np.random.Generator,
-) -> NewPowerSelection:
+) -> PowerSelection:
     if species is not HumanSpecies:
         species_loadoout = PowerLoadout(
             name=f"{species.name} Species Powers",
@@ -56,17 +56,15 @@ def _choose_powers(
         species_loadoout = None
 
     if stats.cr < 1:
-        return NewPowerSelection(priest_powers.LoadoutAcolyte, rng, species_loadoout)
+        return PowerSelection(priest_powers.LoadoutAcolyte, species_loadoout)
     elif stats.cr <= 2:
-        return NewPowerSelection(priest_powers.LoadoutPriest, rng, species_loadoout)
+        return PowerSelection(priest_powers.LoadoutPriest, species_loadoout)
     elif stats.cr <= 5:
-        return NewPowerSelection(
-            priest_powers.LoadoutAnointedOne, rng, species_loadoout
-        )
+        return PowerSelection(priest_powers.LoadoutAnointedOne, species_loadoout)
     elif stats.cr <= 12:
-        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng, species_loadoout)
+        return PowerSelection(priest_powers.LoadoutArchpriest, species_loadoout)
     else:
-        return NewPowerSelection(priest_powers.LoadoutArchpriest, rng, species_loadoout)
+        return PowerSelection(priest_powers.LoadoutArchpriest, species_loadoout)
 
 
 def generate_priest(settings: GenerationSettings) -> StatsBeingGenerated:

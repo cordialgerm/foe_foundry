@@ -2,7 +2,7 @@ from ...ac_templates import ArcaneArmor, HideArmor, PlateArmor, StuddedLeatherAr
 from ...attack_template import spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -76,23 +76,23 @@ OrcWarchiefVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "orc-soldier":
-        return NewPowerSelection(powers.LoadoutSoldier, settings.rng)
+        return PowerSelection(powers.LoadoutSoldier)
     elif settings.monster_key == "orc-reaver":
-        return NewPowerSelection(powers.LoadoutReaver, settings.rng)
+        return PowerSelection(powers.LoadoutReaver)
     elif settings.monster_key == "orc-hardened-one":
-        return NewPowerSelection(powers.LoadoutHardenedOne, settings.rng)
+        return PowerSelection(powers.LoadoutHardenedOne)
     elif settings.monster_key == "orc-bloodrite-shaman":
-        return NewPowerSelection(powers.LoadoutShamanAdept, settings.rng)
+        return PowerSelection(powers.LoadoutShamanAdept)
     elif settings.monster_key == "orc-bloodrite-elder-shaman":
-        return NewPowerSelection(powers.LoadoutShaman, settings.rng)
+        return PowerSelection(powers.LoadoutShaman)
     elif settings.monster_key == "orc-bloodletter":
-        return NewPowerSelection(powers.LoadoutBloodletter, settings.rng)
+        return PowerSelection(powers.LoadoutBloodletter)
     elif settings.monster_key == "orc-warchief":
-        return NewPowerSelection(powers.LoadoutWarchief, settings.rng)
+        return PowerSelection(powers.LoadoutWarchief)
     elif settings.monster_key == "orc-warchief-of-the-bloody-fang":
-        return NewPowerSelection(powers.LoadoutWarchiefLegendary, settings.rng)
+        return PowerSelection(powers.LoadoutWarchiefLegendary)
     else:
         raise ValueError(f"Unknown orc monster key: {settings.monster_key}")
 

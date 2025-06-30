@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -70,19 +70,19 @@ WraithVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "shadow":
-        return NewPowerSelection(powers.LoadoutShadow, settings.rng)
+        return PowerSelection(powers.LoadoutShadow)
     elif settings.monster_key == "specter":
-        return NewPowerSelection(powers.LoadoutSpecter, settings.rng)
+        return PowerSelection(powers.LoadoutSpecter)
     elif settings.monster_key == "banshee":
-        return NewPowerSelection(powers.LoadoutBanshee, settings.rng)
+        return PowerSelection(powers.LoadoutBanshee)
     elif settings.monster_key == "revenant":
-        return NewPowerSelection(powers.LoadoutRevenant, settings.rng)
+        return PowerSelection(powers.LoadoutRevenant)
     elif settings.monster_key == "ghost":
-        return NewPowerSelection(powers.LoadoutGhost, settings.rng)
+        return PowerSelection(powers.LoadoutGhost)
     elif settings.monster_key in {"wraith", "wraith-shadelord"}:
-        return NewPowerSelection(powers.LoadoutWraith, settings.rng)
+        return PowerSelection(powers.LoadoutWraith)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

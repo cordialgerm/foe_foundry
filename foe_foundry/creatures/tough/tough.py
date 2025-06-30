@@ -3,7 +3,7 @@ from ...attack_template import natural, weapon
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -45,21 +45,21 @@ BossVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "thug":
-        return NewPowerSelection(powers.LoadoutThug, settings.rng)
+        return PowerSelection(powers.LoadoutThug)
     elif settings.monster_key == "veteran-thug":
-        return NewPowerSelection(powers.LoadoutVeteranThug, settings.rng)
+        return PowerSelection(powers.LoadoutVeteranThug)
     elif settings.monster_key == "elite-thug":
-        return NewPowerSelection(powers.LoadoutEliteThug, settings.rng)
+        return PowerSelection(powers.LoadoutEliteThug)
     elif settings.monster_key == "brawler":
-        return NewPowerSelection(powers.LoadoutBrawler, settings.rng)
+        return PowerSelection(powers.LoadoutBrawler)
     elif settings.monster_key == "thug-boss":
-        return NewPowerSelection(powers.LoadoutThugBoss, settings.rng)
+        return PowerSelection(powers.LoadoutThugBoss)
     elif settings.monster_key == "thug-overboss":
-        return NewPowerSelection(powers.LoadoutThugOverboss, settings.rng)
+        return PowerSelection(powers.LoadoutThugOverboss)
     elif settings.monster_key == "thug-legend":
-        return NewPowerSelection(powers.LoadoutThugLegend, settings.rng)
+        return PowerSelection(powers.LoadoutThugLegend)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

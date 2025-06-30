@@ -3,7 +3,7 @@ from ...attack_template import natural, spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -46,13 +46,13 @@ GravelordVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "ghoul":
-        return NewPowerSelection(powers.LoadoutGhoul, settings.rng)
+        return PowerSelection(powers.LoadoutGhoul)
     elif settings.monster_key == "ghast":
-        return NewPowerSelection(powers.LoadoutGhast, settings.rng)
+        return PowerSelection(powers.LoadoutGhast)
     elif settings.monster_key == "ghast-gravelord":
-        return NewPowerSelection(powers.LoadoutGhastGravelord, settings.rng)
+        return PowerSelection(powers.LoadoutGhastGravelord)
     else:
         raise ValueError(f"Unknown ghoul variant: {settings.monster_key}")
 

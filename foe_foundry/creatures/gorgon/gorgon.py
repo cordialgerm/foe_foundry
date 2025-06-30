@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition
 from ...powers import (
     MEDIUM_POWER,
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -30,9 +30,9 @@ GorgonVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "gorgon":
-        return NewPowerSelection(powers.LoadoutGorgon, settings.rng)
+        return PowerSelection(powers.LoadoutGorgon)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}. ")
 

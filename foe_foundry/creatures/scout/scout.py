@@ -2,8 +2,8 @@ from ...ac_templates import LeatherArmor, StuddedLeatherArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...powers import (
-    NewPowerSelection,
     PowerLoadout,
+    PowerSelection,
     select_powers,
 )
 from ...powers.species import powers_for_role
@@ -47,7 +47,7 @@ CommanderVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def _choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.species is not None and settings.species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{settings.species.name} Powers",
@@ -65,27 +65,23 @@ def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
         species_loadout = None
 
     if settings.monster_key == "scout":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutScout,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "ranger":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutRanger,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "scout-captain":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutScoutCaptain,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "first-scout":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutFirstScout,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     else:

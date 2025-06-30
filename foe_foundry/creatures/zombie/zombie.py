@@ -4,7 +4,7 @@ from ...ac_templates import Unarmored
 from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Stats, StatScaling
@@ -42,17 +42,17 @@ ZombieOgreVariant = MonsterVariant(
 
 def _custom_powers(
     variant: MonsterVariant, cr: float, rng: np.random.Generator
-) -> NewPowerSelection:
+) -> PowerSelection:
     if variant is ZombieVariant:
         if cr < 1:
-            return NewPowerSelection(loadouts=powers.LoadoutZombie, rng=rng)
+            return PowerSelection(loadouts=powers.LoadoutZombie)
         else:
-            return NewPowerSelection(loadouts=powers.LoadoutZombieBrute, rng=rng)
+            return PowerSelection(loadouts=powers.LoadoutZombieBrute)
     elif variant is ZombieOgreVariant:
         if cr <= 2:
-            return NewPowerSelection(loadouts=powers.LoadoutZombieOgre, rng=rng)
+            return PowerSelection(loadouts=powers.LoadoutZombieOgre)
         else:
-            return NewPowerSelection(loadouts=powers.LoadoutZombieGiant, rng=rng)
+            return PowerSelection(loadouts=powers.LoadoutZombieGiant)
     else:
         raise ValueError(f"Unknown zombie variant: {variant.name}")
 

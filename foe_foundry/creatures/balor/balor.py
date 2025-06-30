@@ -5,7 +5,7 @@ from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -38,11 +38,11 @@ BalorGeneralVariant = MonsterVariant(
 
 def _custom_powers(
     stats: BaseStatblock, variant: MonsterVariant, rng: np.random.Generator
-) -> NewPowerSelection:
+) -> PowerSelection:
     if variant is BalorVariant:
-        return NewPowerSelection(powers.LoadoutBalor, rng=rng)
+        return PowerSelection(powers.LoadoutBalor)
     elif variant is BalorGeneralVariant:
-        return NewPowerSelection(powers.LoadoutBalorGeneral, rng=rng)
+        return PowerSelection(powers.LoadoutBalorGeneral)
     else:
         raise ValueError(f"Unknown variant: {variant.name}")
 

@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -27,11 +27,11 @@ DireBunnyVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "dire-bunny":
-        return NewPowerSelection(powers.LoadoutDireBunny, settings.rng)
+        return PowerSelection(powers.LoadoutDireBunny)
     elif settings.monster_key == "dire-bunny-matriarch":
-        return NewPowerSelection(powers.LoadoutMatriarch, settings.rng)
+        return PowerSelection(powers.LoadoutMatriarch)
     else:
         raise ValueError(
             f"Unexpected monster key {settings.monster_key} for Dire Bunny generation."

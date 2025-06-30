@@ -5,8 +5,8 @@ from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...powers import (
-    NewPowerSelection,
     PowerLoadout,
+    PowerSelection,
     select_powers,
 )
 from ...powers.species import powers_for_role
@@ -31,7 +31,7 @@ def _choose_powers(
     variant: MonsterVariant,
     species: CreatureSpecies,
     rng: np.random.Generator,
-) -> NewPowerSelection:
+) -> PowerSelection:
     cr = stats.cr
     if species is not HumanSpecies:
         species_loadout = PowerLoadout(
@@ -46,21 +46,18 @@ def _choose_powers(
         species_loadout = None
 
     if cr <= 4:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutContractKiller,
-            rng=rng,
             species_loadout=species_loadout,
         )
     elif cr <= 8:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutAssassin,
-            rng=rng,
             species_loadout=species_loadout,
         )
     else:
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutLegendaryAssassin,
-            rng=rng,
             species_loadout=species_loadout,
         )
 

@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -48,21 +48,15 @@ MerrowAbyssalLord = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.variant is MerrowVariant:
-        return NewPowerSelection(loadouts=powers.MerrowLoadout, rng=settings.rng)
+        return PowerSelection(loadouts=powers.MerrowLoadout)
     elif settings.variant is MerrowBloodBlessed:
-        return NewPowerSelection(
-            loadouts=powers.MerrowBloodBlessedLoadout, rng=settings.rng
-        )
+        return PowerSelection(loadouts=powers.MerrowBloodBlessedLoadout)
     elif settings.variant is MerrowStormblessed:
-        return NewPowerSelection(
-            loadouts=powers.MerrowStormblessedLoadout, rng=settings.rng
-        )
+        return PowerSelection(loadouts=powers.MerrowStormblessedLoadout)
     elif settings.variant is MerrowAbyssalLord:
-        return NewPowerSelection(
-            loadouts=powers.MerrowAbyssalLordLoadout, rng=settings.rng
-        )
+        return PowerSelection(loadouts=powers.MerrowAbyssalLordLoadout)
     else:
         raise ValueError(f"Variant '{settings.variant.key}' is not recognized")
 

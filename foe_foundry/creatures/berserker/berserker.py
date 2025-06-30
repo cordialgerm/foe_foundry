@@ -2,7 +2,7 @@ from ...ac_templates import BerserkersDefense
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers import PowerLoadout, PowerSelection, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -41,7 +41,7 @@ CommanderVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def _choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.species is not None and settings.species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{settings.species.name} Powers",
@@ -52,19 +52,13 @@ def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
         species_loadout = None
 
     if settings.monster_key == "berserker":
-        return NewPowerSelection(powers.LoadoutBerserker, settings.rng, species_loadout)
+        return PowerSelection(powers.LoadoutBerserker, species_loadout)
     elif settings.monster_key == "berserker-veteran":
-        return NewPowerSelection(
-            powers.LoadoutBerserkerVeteran, settings.rng, species_loadout
-        )
+        return PowerSelection(powers.LoadoutBerserkerVeteran, species_loadout)
     elif settings.monster_key == "berserker-commander":
-        return NewPowerSelection(
-            powers.LoadoutBerserkerCommander, settings.rng, species_loadout
-        )
+        return PowerSelection(powers.LoadoutBerserkerCommander, species_loadout)
     elif settings.monster_key == "berserker-legend":
-        return NewPowerSelection(
-            powers.LoadoutBerserkerLegend, settings.rng, species_loadout
-        )
+        return PowerSelection(powers.LoadoutBerserkerLegend, species_loadout)
     else:
         raise ValueError(
             f"Unknown monster key '{settings.monster_key}' for Berserker generation."

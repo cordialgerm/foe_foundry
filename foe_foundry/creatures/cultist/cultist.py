@@ -4,7 +4,7 @@ from ...ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
 from ...attack_template import natural, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -93,37 +93,37 @@ FiendVariant = MonsterVariant(
 
 def _choose_powers(
     variant: MonsterVariant, cr: float, rng: np.random.Generator
-) -> NewPowerSelection:
+) -> PowerSelection:
     if variant is CultistVariant:
         if cr < 1:
-            return NewPowerSelection(powers.LoadoutCultist, rng=rng)
+            return PowerSelection(powers.LoadoutCultist)
         elif cr <= 4:
-            return NewPowerSelection(powers.LoadoutCultFanatic, rng=rng)
+            return PowerSelection(powers.LoadoutCultFanatic)
         elif cr <= 10:
-            return NewPowerSelection(powers.LoadoutCultGrandMaster, rng=rng)
+            return PowerSelection(powers.LoadoutCultGrandMaster)
         else:
-            return NewPowerSelection(powers.LoadoutCultExarch, rng=rng)
+            return PowerSelection(powers.LoadoutCultExarch)
     elif variant is AberrantVariant:
         if cr <= 4:
-            return NewPowerSelection(powers.LoadoutAberrantInitiate, rng=rng)
+            return PowerSelection(powers.LoadoutAberrantInitiate)
         if cr <= 8:
-            return NewPowerSelection(powers.LoadoutAberrantCultist, rng=rng)
+            return PowerSelection(powers.LoadoutAberrantCultist)
         else:
-            return NewPowerSelection(powers.LoadoutAberrantGrandMaster, rng=rng)
+            return PowerSelection(powers.LoadoutAberrantGrandMaster)
     elif variant is NecroVariant:
         if cr <= 4:
-            return NewPowerSelection(powers.LoadoutDeathCultInitiate, rng=rng)
+            return PowerSelection(powers.LoadoutDeathCultInitiate)
         elif cr <= 8:
-            return NewPowerSelection(powers.LoadoutDeathCultist, rng=rng)
+            return PowerSelection(powers.LoadoutDeathCultist)
         else:
-            return NewPowerSelection(powers.LoadoutDeathCultGrandMaster, rng=rng)
+            return PowerSelection(powers.LoadoutDeathCultGrandMaster)
     elif variant is FiendVariant:
         if cr <= 4:
-            return NewPowerSelection(powers.LoadoutFiendishInitiate, rng=rng)
+            return PowerSelection(powers.LoadoutFiendishInitiate)
         elif cr <= 8:
-            return NewPowerSelection(powers.LoadoutFiendishCultist, rng=rng)
+            return PowerSelection(powers.LoadoutFiendishCultist)
         else:
-            return NewPowerSelection(powers.LoadoutFiendishGrandMaster, rng=rng)
+            return PowerSelection(powers.LoadoutFiendishGrandMaster)
     else:
         raise ValueError(f"Unknown variant: {variant}")
 

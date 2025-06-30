@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...senses import Senses
 from ...size import Size
@@ -28,11 +28,11 @@ GelatinousCubeVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "gelatinous-cube":
-        return NewPowerSelection(powers.LoadoutGelatinousCube, settings.rng)
+        return PowerSelection(powers.LoadoutGelatinousCube)
     elif settings.monster_key == "ancient-gelatinous-cube":
-        return NewPowerSelection(powers.LoadoutAncientCube, settings.rng)
+        return PowerSelection(powers.LoadoutAncientCube)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

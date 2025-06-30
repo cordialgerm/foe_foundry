@@ -1,7 +1,7 @@
 from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, PowerLoadout, select_powers
+from ...powers import PowerLoadout, PowerSelection, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -56,7 +56,7 @@ CommanderVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def _choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.species is not None and settings.species is not HumanSpecies:
         species_loadout = PowerLoadout(
             name=f"{settings.species.name} Powers",
@@ -70,39 +70,33 @@ def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
         species_loadout = None
 
     if settings.monster_key == "shock-infantry":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutShockInfantry,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "line-infantry":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutLineInfantry,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "shock-infantry-veteran":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutShockInfantryVeteran,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "line-infantry-veteran":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutLineInfantryVeteran,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "warrior-commander":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutCommander,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     elif settings.monster_key == "legendary-warrior":
-        return NewPowerSelection(
+        return PowerSelection(
             loadouts=powers.LoadoutLegendaryWarrior,
-            rng=settings.rng,
             species_loadout=species_loadout,
         )
     else:

@@ -1,7 +1,7 @@
 from ...ac_templates import HideArmor
 from ...attack_template import natural
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -37,13 +37,13 @@ BugbearVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def _choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "bugbear":
-        return NewPowerSelection(powers.LoadoutBugbear, settings.rng)
+        return PowerSelection(powers.LoadoutBugbear)
     elif settings.monster_key == "bugbear-brute":
-        return NewPowerSelection(powers.LoadoutBugbearBrute, settings.rng)
+        return PowerSelection(powers.LoadoutBugbearBrute)
     elif settings.monster_key == "bugbear-shadowstalker":
-        return NewPowerSelection(powers.LoadoutBugbearShadowstalker, settings.rng)
+        return PowerSelection(powers.LoadoutBugbearShadowstalker)
     else:
         raise ValueError(f"Unknown bugbear variant: {settings.monster_key}")
 

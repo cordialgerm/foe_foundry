@@ -2,7 +2,7 @@ from ...ac_templates import NaturalArmor
 from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -28,11 +28,11 @@ HydraFoulbloodVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "hydra":
-        return NewPowerSelection(powers.LoadoutHydra, settings.rng)
+        return PowerSelection(powers.LoadoutHydra)
     elif settings.monster_key == "foulblood-hydra":
-        return NewPowerSelection(powers.LoadoutHydraFoulblooded, settings.rng)
+        return PowerSelection(powers.LoadoutHydraFoulblooded)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

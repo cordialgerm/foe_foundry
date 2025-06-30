@@ -4,7 +4,7 @@ from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import NewPowerSelection, PowerLoadout, flags, select_powers
+from ...powers import PowerLoadout, PowerSelection, flags, select_powers
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
@@ -37,7 +37,7 @@ DruidVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.species is not None:
         species_loadout = PowerLoadout(
             name=f"{settings.species.name} Powers",
@@ -51,15 +51,13 @@ def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
         species_loadout = None
 
     if settings.monster_key == "druid":
-        return NewPowerSelection(powers.LoadoutDruid, settings.rng, species_loadout)
+        return PowerSelection(powers.LoadoutDruid, species_loadout)
     elif settings.monster_key == "druid-greenwarden":
-        return NewPowerSelection(
-            powers.LoadoutGreenwarden, settings.rng, species_loadout
-        )
+        return PowerSelection(powers.LoadoutGreenwarden, species_loadout)
     elif settings.monster_key == "archdruid-of-the-old-way":
-        return NewPowerSelection(powers.LoadoutArchdruid, settings.rng, species_loadout)
+        return PowerSelection(powers.LoadoutArchdruid, species_loadout)
     elif settings.monster_key == "archdruid-of-the-first-grove":
-        return NewPowerSelection(powers.LoadoutArchdruid, settings.rng, species_loadout)
+        return PowerSelection(powers.LoadoutArchdruid, species_loadout)
     else:
         raise ValueError(f"Unknown monster key: {settings.monster_key}")
 

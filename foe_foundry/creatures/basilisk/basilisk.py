@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -31,13 +31,11 @@ BasiliskVariant = MonsterVariant(
 
 def _choose_powers(
     settings: GenerationSettings,
-) -> NewPowerSelection:
+) -> PowerSelection:
     if settings.monster_key == "basilisk":
-        return NewPowerSelection(loadouts=powers.LoadoutBasilisk, rng=settings.rng)
+        return PowerSelection(loadouts=powers.LoadoutBasilisk)
     elif settings.monster_key == "basilisk-broodmother":
-        return NewPowerSelection(
-            loadouts=powers.LoadoutBasiliskBroodmother, rng=settings.rng
-        )
+        return PowerSelection(loadouts=powers.LoadoutBasiliskBroodmother)
     else:
         raise ValueError(f"Unknown basilisk variant: {settings.monster_key}")
 

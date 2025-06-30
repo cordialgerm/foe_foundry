@@ -3,7 +3,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Stats, StatScaling
@@ -26,8 +26,8 @@ VrockVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
-    return NewPowerSelection(loadouts=powers.LoadoutVrock, rng=settings.rng)
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
+    return PowerSelection(loadouts=powers.LoadoutVrock)
 
 
 def generate_vrock(settings: GenerationSettings) -> StatsBeingGenerated:

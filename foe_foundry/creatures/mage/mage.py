@@ -1,7 +1,7 @@
 from ...ac_templates import ArcaneArmor
 from ...attack_template import spell
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import PowerSelection, flags, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -146,75 +146,75 @@ ToximancerVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "mage-neophyte":
-        return NewPowerSelection(powers.LoadoutApprentice, settings.rng)
+        return PowerSelection(powers.LoadoutApprentice)
     elif settings.monster_key == "mage-apprentice":
-        return NewPowerSelection(powers.LoadoutApprentice, settings.rng)
+        return PowerSelection(powers.LoadoutApprentice)
     elif settings.monster_key == "abjurer-mage-adept":
-        return NewPowerSelection(powers.LoadoutAbjurerAdept, settings.rng)
+        return PowerSelection(powers.LoadoutAbjurerAdept)
     elif settings.monster_key == "abjurer-mage":
-        return NewPowerSelection(powers.LoadoutAbjurerMage, settings.rng)
+        return PowerSelection(powers.LoadoutAbjurerMage)
     elif settings.monster_key == "abjurer-archmage":
-        return NewPowerSelection(powers.LoadoutAbjurerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutAbjurerArchmage)
     elif settings.monster_key == "abjurer-primagus":
-        return NewPowerSelection(powers.LoadoutAbjurerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutAbjurerArchmage)
     elif settings.monster_key == "conjurer-mage-adept":
-        return NewPowerSelection(powers.LoadoutConjurerAdept, settings.rng)
+        return PowerSelection(powers.LoadoutConjurerAdept)
     elif settings.monster_key == "conjurer-mage":
-        return NewPowerSelection(powers.LoadoutConjurerMage, settings.rng)
+        return PowerSelection(powers.LoadoutConjurerMage)
     elif settings.monster_key == "conjurer-archmage":
-        return NewPowerSelection(powers.LoadoutConjurerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutConjurerArchmage)
     elif settings.monster_key == "conjurer-primagus":
-        return NewPowerSelection(powers.LoadoutConjurerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutConjurerArchmage)
     elif settings.monster_key == "diviner-mage-adept":
-        return NewPowerSelection(powers.LoadoutDivinerAdept, settings.rng)
+        return PowerSelection(powers.LoadoutDivinerAdept)
     elif settings.monster_key == "diviner-mage":
-        return NewPowerSelection(powers.LoadoutDivinerMage, settings.rng)
+        return PowerSelection(powers.LoadoutDivinerMage)
     elif settings.monster_key == "diviner-archmage":
-        return NewPowerSelection(powers.LoadoutDivinerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutDivinerArchmage)
     elif settings.monster_key == "diviner-primagus":
-        return NewPowerSelection(powers.LoadoutDivinerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutDivinerArchmage)
     elif settings.monster_key == "enchanter-mage-adept":
-        return NewPowerSelection(powers.LoadoutEnchanterAdept, settings.rng)
+        return PowerSelection(powers.LoadoutEnchanterAdept)
     elif settings.monster_key == "enchanter-mage":
-        return NewPowerSelection(powers.LoadoutEnchanterMage, settings.rng)
+        return PowerSelection(powers.LoadoutEnchanterMage)
     elif settings.monster_key == "enchanter-archmage":
-        return NewPowerSelection(powers.LoadoutEnchanterArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutEnchanterArchmage)
     elif settings.monster_key == "enchanter-primagus":
-        return NewPowerSelection(powers.LoadoutEnchanterArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutEnchanterArchmage)
     elif settings.monster_key == "illusionist-mage-adept":
-        return NewPowerSelection(powers.LoadoutIllusionistAdept, settings.rng)
+        return PowerSelection(powers.LoadoutIllusionistAdept)
     elif settings.monster_key == "illusionist-mage":
-        return NewPowerSelection(powers.LoadoutIllusionistMage, settings.rng)
+        return PowerSelection(powers.LoadoutIllusionistMage)
     elif settings.monster_key == "illusionist-archmage":
-        return NewPowerSelection(powers.LoadoutIllusionistArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutIllusionistArchmage)
     elif settings.monster_key == "illusionist-primagus":
-        return NewPowerSelection(powers.LoadoutIllusionistArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutIllusionistArchmage)
     elif settings.monster_key == "necromancer-adept":
-        return NewPowerSelection(powers.LoadoutNecromancerAdept, settings.rng)
+        return PowerSelection(powers.LoadoutNecromancerAdept)
     elif settings.monster_key == "necromancer-mage":
-        return NewPowerSelection(powers.LoadoutNecromancerMage, settings.rng)
+        return PowerSelection(powers.LoadoutNecromancerMage)
     elif settings.monster_key == "necromancer-archmage":
-        return NewPowerSelection(powers.LoadoutNecromancerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutNecromancerArchmage)
     elif settings.monster_key == "necromancer-primagus":
-        return NewPowerSelection(powers.LoadoutNecromancerArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutNecromancerArchmage)
     elif settings.monster_key == "transmuter-mage-adept":
-        return NewPowerSelection(powers.LoadoutTransmuterAdept, settings.rng)
+        return PowerSelection(powers.LoadoutTransmuterAdept)
     elif settings.monster_key == "transmuter-mage":
-        return NewPowerSelection(powers.LoadoutTransmuterMage, settings.rng)
+        return PowerSelection(powers.LoadoutTransmuterMage)
     elif settings.monster_key == "transmuter-archmage":
-        return NewPowerSelection(powers.LoadoutTransmuterArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutTransmuterArchmage)
     elif settings.monster_key == "transmuter-primagus":
-        return NewPowerSelection(powers.LoadoutTransmuterArchmage, settings.rng)
+        return PowerSelection(powers.LoadoutTransmuterArchmage)
     elif settings.monster_key == "pyromancer":
-        return NewPowerSelection(powers.PyromancerLoadout, settings.rng)
+        return PowerSelection(powers.PyromancerLoadout)
     elif settings.monster_key == "cryomancer":
-        return NewPowerSelection(powers.CryomancerLoadout, settings.rng)
+        return PowerSelection(powers.CryomancerLoadout)
     elif settings.monster_key == "electromancer":
-        return NewPowerSelection(powers.ElectromancerLoadout, settings.rng)
+        return PowerSelection(powers.ElectromancerLoadout)
     elif settings.monster_key == "toximancer":
-        return NewPowerSelection(powers.ToximancerLoadout, settings.rng)
+        return PowerSelection(powers.ToximancerLoadout)
     else:
         raise ValueError(f"Unknown mage monster key: {settings.monster_key}")
 

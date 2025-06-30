@@ -3,7 +3,7 @@ from ...attack_template import spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import (
-    NewPowerSelection,
+    PowerSelection,
     select_powers,
 )
 from ...role_types import MonsterRole
@@ -29,11 +29,11 @@ HollowGazerVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "hollow-gazer":
-        return NewPowerSelection(powers.LoadoutHollowGazer, settings.rng)
+        return PowerSelection(powers.LoadoutHollowGazer)
     elif settings.monster_key == "hollow-gazer-of-ruin":
-        return NewPowerSelection(powers.LoadoutHollowGazerOfRuin, settings.rng)
+        return PowerSelection(powers.LoadoutHollowGazerOfRuin)
     else:
         raise ValueError(
             f"Unexpected monster key {settings.monster_key} for Hollow Gazer generation."

@@ -2,7 +2,7 @@ from ...ac_templates import ArcaneArmor
 from ...attack_template import spell
 from ...creature_types import CreatureType
 from ...movement import Movement
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import PowerSelection, flags, select_powers
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
@@ -32,11 +32,11 @@ LichVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
+def choose_powers(settings: GenerationSettings) -> PowerSelection:
     if settings.monster_key == "lich":
-        return NewPowerSelection(powers.LoadoutLich, settings.rng)
+        return PowerSelection(powers.LoadoutLich)
     elif settings.monster_key == "archlich":
-        return NewPowerSelection(powers.LoadoutArchlich, settings.rng)
+        return PowerSelection(powers.LoadoutArchlich)
     else:
         raise ValueError(
             f"Unknown lich variant: {settings.monster_key}. Expected 'lich' or 'archlich'."
