@@ -1,20 +1,20 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import Unarmored, UnholyArmor
-from ...attack_template import natural, spell
+from ...attack_template import AttackTemplate, natural, spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import (
     PowerSelection,
-    select_powers,
 )
 from ...role_types import MonsterRole
 from ...skills import Stats, StatScaling
 from ...spells import CasterType
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -46,135 +46,116 @@ GravelordVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> PowerSelection:
-    if settings.monster_key == "ghoul":
-        return PowerSelection(powers.LoadoutGhoul)
-    elif settings.monster_key == "ghast":
-        return PowerSelection(powers.LoadoutGhast)
-    elif settings.monster_key == "ghast-gravelord":
-        return PowerSelection(powers.LoadoutGhastGravelord)
-    else:
-        raise ValueError(f"Unknown ghoul variant: {settings.monster_key}")
+class _GhoulTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.monster_key == "ghoul":
+            return PowerSelection(powers.LoadoutGhoul)
+        elif settings.monster_key == "ghast":
+            return PowerSelection(powers.LoadoutGhast)
+        elif settings.monster_key == "ghast-gravelord":
+            return PowerSelection(powers.LoadoutGhastGravelord)
+        else:
+            raise ValueError(f"Unknown ghoul variant: {settings.monster_key}")
 
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
 
-def generate_ghoul(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
+        # STATS
+        hp_multiplier = 0.825
 
-    # STATS
-    hp_multiplier = 0.825
+        if variant is GravelordVariant:
+            stats = [
+                Stats.STR.scaler(StatScaling.Medium, mod=-1),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
+                Stats.INT.scaler(StatScaling.Primary),
+                Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
+                Stats.CHA.scaler(StatScaling.Medium),
+            ]
+        else:
+            stats = [
+                Stats.STR.scaler(StatScaling.Medium, mod=2),
+                Stats.DEX.scaler(StatScaling.Primary),
+                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
+                Stats.INT.scaler(StatScaling.Default, mod=-3),
+                Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
+                Stats.CHA.scaler(StatScaling.Default, mod=-4),
+            ]
 
-    if variant is GravelordVariant:
-        stats = [
-            Stats.STR.scaler(StatScaling.Medium, mod=-1),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-            Stats.INT.scaler(StatScaling.Primary),
-            Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
-            Stats.CHA.scaler(StatScaling.Medium),
-        ]
-    else:
-        stats = [
-            Stats.STR.scaler(StatScaling.Medium, mod=2),
-            Stats.DEX.scaler(StatScaling.Primary),
-            Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-            Stats.INT.scaler(StatScaling.Default, mod=-3),
-            Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
-            Stats.CHA.scaler(StatScaling.Default, mod=-4),
-        ]
-
-    stats = base_stats(
-        name=name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=stats,
-        hp_multiplier=hp_multiplier * settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        creature_type=CreatureType.Undead,
-        languages=["Common"],
-        creature_class="Ghoul",
-        senses=stats.senses.copy(darkvision=60),
-    )
-
-    # ARMOR CLASS
-    if variant is GravelordVariant:
-        stats = stats.add_ac_template(UnholyArmor)
-    else:
-        stats = stats.add_ac_template(Unarmored)
-
-    # ATTACKS
-    attack = natural.Claw.with_display_name("Paralytic Claw")
-    secondary_damage_type = DamageType.Poison
-
-    if variant is GravelordVariant:
-        secondary_attack = spell.Deathbolt.copy(damage_scalar=0.9).with_display_name(
-            "Dread Bolt"
-        )
-    else:
-        secondary_attack = None
-
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    stats = stats.copy(
-        secondary_damage_type=secondary_damage_type,
-    )
-
-    if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats)
-
-    ## SPELLCASTING
-    if variant is GravelordVariant:
-        stats = stats.grant_spellcasting(caster_type=CasterType.Arcane)
-
-    # ROLES
-    if variant is GravelordVariant:
-        stats = stats.with_roles(
-            primary_role=MonsterRole.Leader, additional_roles=MonsterRole.Skirmisher
-        )
-    else:
-        stats = stats.with_roles(
-            primary_role=MonsterRole.Bruiser, additional_roles=MonsterRole.Skirmisher
+        stats = base_stats(
+            name=name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=stats,
+            hp_multiplier=hp_multiplier * settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
         )
 
-    # SAVES
-    if stats.cr >= 2:
-        stats = stats.grant_save_proficiency(Stats.WIS)
+        stats = stats.copy(
+            creature_type=CreatureType.Undead,
+            languages=["Common"],
+            creature_class="Ghoul",
+            senses=stats.senses.copy(darkvision=60),
+        )
 
-    # IMMUNITIES
-    stats = stats.grant_resistance_or_immunity(
-        immunities={DamageType.Poison},
-        resistances={DamageType.Necrotic} if stats.cr >= 2 else set(),
-        conditions={Condition.Poisoned, Condition.Charmed, Condition.Poisoned},
-    )
+        # ARMOR CLASS
+        if variant is GravelordVariant:
+            stats = stats.add_ac_template(UnholyArmor)
+        else:
+            stats = stats.add_ac_template(Unarmored)
 
-    # POWERS
-    features = []
+        # ATTACKS
+        attack = natural.Claw.with_display_name("Paralytic Claw")
+        secondary_damage_type = DamageType.Poison
 
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
+        if variant is GravelordVariant:
+            secondary_attack = spell.Deathbolt.copy(
+                damage_scalar=0.9
+            ).with_display_name("Dread Bolt")
+        else:
+            secondary_attack = None
 
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
+        stats = stats.copy(
+            secondary_damage_type=secondary_damage_type,
+        )
 
-    if secondary_attack is not None:
-        secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+        ## SPELLCASTING
+        if variant is GravelordVariant:
+            stats = stats.grant_spellcasting(caster_type=CasterType.Arcane)
 
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        # ROLES
+        if variant is GravelordVariant:
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Leader, additional_roles=MonsterRole.Skirmisher
+            )
+        else:
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Bruiser,
+                additional_roles=MonsterRole.Skirmisher,
+            )
+
+        # SAVES
+        if stats.cr >= 2:
+            stats = stats.grant_save_proficiency(Stats.WIS)
+
+        # IMMUNITIES
+        stats = stats.grant_resistance_or_immunity(
+            immunities={DamageType.Poison},
+            resistances={DamageType.Necrotic} if stats.cr >= 2 else set(),
+            conditions={Condition.Poisoned, Condition.Charmed, Condition.Poisoned},
+        )
+
+        return stats, [attack, secondary_attack] if secondary_attack else [attack]
 
 
-GhoulTemplate: MonsterTemplate = MonsterTemplate(
+GhoulTemplate: MonsterTemplate = _GhoulTemplate(
     name="Ghoul",
     tag_line="Undead cannibals",
     description="Ghouls are horrid creatures that feast on the flesh of the living and the dead.",
@@ -182,5 +163,4 @@ GhoulTemplate: MonsterTemplate = MonsterTemplate(
     treasure=[],
     variants=[GhoulVariant, GhastVariant, GravelordVariant],
     species=[],
-    callback=generate_ghoul,
 )

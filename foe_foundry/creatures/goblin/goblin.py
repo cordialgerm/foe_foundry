@@ -1,18 +1,18 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import Breastplate, ChainShirt, StuddedLeatherArmor
-from ...attack_template import spell, weapon
+from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
-from ...powers import LOW_POWER, PowerSelection, select_powers
+from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
 from ...spells import CasterType
-from ...statblocks import MonsterDials
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -82,203 +82,183 @@ GoblinShamanVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> PowerSelection:
-    """Selects the powers for the goblin based on its variant."""
-    variant = settings.variant
+class _GoblinTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        """Selects the powers for the goblin based on its variant."""
+        variant = settings.variant
 
-    if variant is GoblinLickspittleVariant:
-        return PowerSelection(
-            loadouts=powers.LoadoutLickspittle,
-        )
-    elif variant is GoblinWarriorVariant:
-        return PowerSelection(
-            loadouts=powers.LoadoutWarrior,
-        )
-    elif variant is GoblinBruteVariant:
-        return PowerSelection(
-            loadouts=powers.LoadoutBrute,
-        )
-    elif variant is GoblinShamanVariant:
-        if settings.monster_key == "goblin-foulhex":
+        if variant is GoblinLickspittleVariant:
             return PowerSelection(
-                loadouts=powers.LoadoutShaman,
+                loadouts=powers.LoadoutLickspittle,
             )
-        elif settings.monster_key == "goblin-shaman":
+        elif variant is GoblinWarriorVariant:
             return PowerSelection(
-                loadouts=powers.LoadoutShamanAdept,
+                loadouts=powers.LoadoutWarrior,
             )
+        elif variant is GoblinBruteVariant:
+            return PowerSelection(
+                loadouts=powers.LoadoutBrute,
+            )
+        elif variant is GoblinShamanVariant:
+            if settings.monster_key == "goblin-foulhex":
+                return PowerSelection(
+                    loadouts=powers.LoadoutShaman,
+                )
+            elif settings.monster_key == "goblin-shaman":
+                return PowerSelection(
+                    loadouts=powers.LoadoutShamanAdept,
+                )
+            else:
+                raise ValueError(f"Unknown goblin shaman key: {settings.monster_key}")
+        elif variant is GoblinBossVariant:
+            if settings.monster_key == "goblin-boss":
+                return PowerSelection(loadouts=powers.LoadoutBoss)
+            elif settings.monster_key == "goblin-warchief":
+                return PowerSelection(loadouts=powers.LoadoutWarchief)
+            else:
+                raise ValueError(f"Unknown goblin boss key: {settings.monster_key}")
         else:
-            raise ValueError(f"Unknown goblin shaman key: {settings.monster_key}")
-    elif variant is GoblinBossVariant:
-        if settings.monster_key == "goblin-boss":
-            return PowerSelection(loadouts=powers.LoadoutBoss)
-        elif settings.monster_key == "goblin-warchief":
-            return PowerSelection(loadouts=powers.LoadoutWarchief)
+            raise ValueError(f"Unknown goblin variant: {variant}")
+
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
+
+        # STATS
+        if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
+            hp_multiplier = 0.7 if cr < 0.5 else 0.8
+            damage_multiplier = 1.0 if cr < 0.5 else 1.1
+            attrs = [
+                Stats.STR.scaler(StatScaling.Default, mod=-3),
+                Stats.DEX.scaler(StatScaling.Primary, mod=2 if cr <= 1 else 0),
+                Stats.INT.scaler(StatScaling.Default, mod=-1),
+                Stats.WIS.scaler(StatScaling.Default, mod=-2),
+                Stats.CHA.scaler(StatScaling.Default, mod=-2),
+            ]
+        elif variant is GoblinBruteVariant:
+            hp_multiplier = 1.0
+            damage_multiplier = 1.0
+            attrs = [
+                Stats.STR.scaler(StatScaling.Primary),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.INT.scaler(StatScaling.Default, mod=-1),
+                Stats.WIS.scaler(StatScaling.Default, mod=-2),
+                Stats.CHA.scaler(StatScaling.Default, mod=-2),
+            ]
+        elif variant is GoblinShamanVariant:
+            hp_multiplier = 0.8
+            damage_multiplier = 1.1
+            attrs = [
+                Stats.STR.scaler(StatScaling.Default),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.INT.scaler(StatScaling.Primary),
+                Stats.WIS.scaler(StatScaling.Default),
+                Stats.CHA.scaler(StatScaling.Default),
+            ]
+        elif variant is GoblinBossVariant:
+            hp_multiplier = 1.0
+            damage_multiplier = 1.0
+            attrs = [
+                Stats.STR.scaler(StatScaling.Default),
+                Stats.DEX.scaler(StatScaling.Primary),
+                Stats.INT.scaler(StatScaling.Default),
+                Stats.WIS.scaler(StatScaling.Default),
+                Stats.CHA.scaler(StatScaling.Default),
+            ]
         else:
-            raise ValueError(f"Unknown goblin boss key: {settings.monster_key}")
-    else:
-        raise ValueError(f"Unknown goblin variant: {variant}")
+            raise ValueError(f"Unknown goblin variant: {variant}")
 
-
-def generate_goblin(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
-
-    # STATS
-    if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
-        hp_multiplier = 0.7 if cr < 0.5 else 0.8
-        damage_multiplier = 1.0 if cr < 0.5 else 1.1
-        attrs = [
-            Stats.STR.scaler(StatScaling.Default, mod=-3),
-            Stats.DEX.scaler(StatScaling.Primary, mod=2 if cr <= 1 else 0),
-            Stats.INT.scaler(StatScaling.Default, mod=-1),
-            Stats.WIS.scaler(StatScaling.Default, mod=-2),
-            Stats.CHA.scaler(StatScaling.Default, mod=-2),
-        ]
-    elif variant is GoblinBruteVariant:
-        hp_multiplier = 1.0
-        damage_multiplier = 1.0
-        attrs = [
-            Stats.STR.scaler(StatScaling.Primary),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.INT.scaler(StatScaling.Default, mod=-1),
-            Stats.WIS.scaler(StatScaling.Default, mod=-2),
-            Stats.CHA.scaler(StatScaling.Default, mod=-2),
-        ]
-    elif variant is GoblinShamanVariant:
-        hp_multiplier = 0.8
-        damage_multiplier = 1.1
-        attrs = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.INT.scaler(StatScaling.Primary),
-            Stats.WIS.scaler(StatScaling.Default),
-            Stats.CHA.scaler(StatScaling.Default),
-        ]
-    elif variant is GoblinBossVariant:
-        hp_multiplier = 1.0
-        damage_multiplier = 1.0
-        attrs = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Primary),
-            Stats.INT.scaler(StatScaling.Default),
-            Stats.WIS.scaler(StatScaling.Default),
-            Stats.CHA.scaler(StatScaling.Default),
-        ]
-    else:
-        raise ValueError(f"Unknown goblin variant: {variant}")
-
-    stats = base_stats(
-        name=variant.name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=attrs,
-        hp_multiplier=hp_multiplier * settings.hp_multiplier,
-        damage_multiplier=damage_multiplier * settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        name=name,
-        size=Size.Small,
-        languages=["Common", "Goblin"],
-        creature_class="Goblin",
-        creature_subtype="Goblinoid",
-    ).with_types(primary_type=CreatureType.Humanoid, additional_types=CreatureType.Fey)
-
-    # SENSES
-    stats = stats.copy(senses=stats.senses.copy(darkvision=60))
-
-    # ARMOR CLASS
-    if variant is GoblinBossVariant or variant is GoblinBruteVariant:
-        if stats.cr >= 3:
-            stats = stats.add_ac_template(Breastplate)
-        else:
-            stats = stats.add_ac_template(ChainShirt)
-    elif variant is GoblinWarriorVariant or variant is GoblinLickspittleVariant:
-        stats = stats.add_ac_template(StuddedLeatherArmor)
-
-    # ATTACKS
-    if variant is GoblinWarriorVariant or variant is GoblinLickspittleVariant:
-        attack = weapon.Daggers.with_display_name("Stick'Em").copy(die_count=1)
-        secondary_attack = weapon.Shortbow.with_display_name("Shoot'Em")
-    elif variant is GoblinBruteVariant:
-        attack = weapon.Maul.with_display_name("Smash'Em")
-        secondary_attack = None
-    elif variant is GoblinBossVariant:
-        attack = weapon.Maul.with_display_name("Smash'Em")
-        secondary_attack = weapon.Shortbow.with_display_name("Shoot'Em")
-    elif variant is GoblinShamanVariant:
-        attack = spell.Gaze.with_display_name("Hex'Em")
-        secondary_attack = None
-    else:
-        raise ValueError(f"Unknown goblin variant: {variant}")
-
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    if secondary_attack is not None:
-        stats = secondary_attack.copy(damage_scalar=0.9).add_as_secondary_attack(stats)
-
-    # SPELLS
-    if variant is GoblinShamanVariant:
-        stats = stats.grant_spellcasting(
-            caster_type=CasterType.Primal, spellcasting_stat=Stats.INT
+        stats = base_stats(
+            name=variant.name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=attrs,
+            hp_multiplier=hp_multiplier * settings.hp_multiplier,
+            damage_multiplier=damage_multiplier * settings.damage_multiplier,
         )
 
-    # ROLES
-    if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
-        primary_role = MonsterRole.Skirmisher
-        secondary_roles = {MonsterRole.Artillery, MonsterRole.Ambusher}
-    elif variant is GoblinBruteVariant:
-        primary_role = MonsterRole.Soldier
-        secondary_roles = {MonsterRole.Skirmisher, MonsterRole.Bruiser}
-    elif variant is GoblinBossVariant:
-        primary_role = MonsterRole.Leader
-        secondary_roles = {MonsterRole.Soldier}
-    elif variant is GoblinShamanVariant:
-        primary_role = MonsterRole.Controller
-        secondary_roles = MonsterRole.Artillery
+        stats = stats.copy(
+            name=name,
+            size=Size.Small,
+            languages=["Common", "Goblin"],
+            creature_class="Goblin",
+            creature_subtype="Goblinoid",
+        ).with_types(
+            primary_type=CreatureType.Humanoid, additional_types=CreatureType.Fey
+        )
 
-    stats = stats.with_roles(
-        primary_role=primary_role, additional_roles=secondary_roles
-    )
+        # SENSES
+        stats = stats.copy(senses=stats.senses.copy(darkvision=60))
 
-    # SKILLS
-    stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
+        # ARMOR CLASS
+        if variant is GoblinBossVariant or variant is GoblinBruteVariant:
+            if stats.cr >= 3:
+                stats = stats.add_ac_template(Breastplate)
+            else:
+                stats = stats.add_ac_template(ChainShirt)
+        elif variant is GoblinWarriorVariant or variant is GoblinLickspittleVariant:
+            stats = stats.add_ac_template(StuddedLeatherArmor)
 
-    # SAVES
-    if cr >= 3:
-        stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+        # ATTACKS
+        if variant is GoblinWarriorVariant or variant is GoblinLickspittleVariant:
+            attack = weapon.Daggers.with_display_name("Stick'Em").copy(die_count=1)
+            secondary_attack = weapon.Shortbow.with_display_name("Shoot'Em")
+        elif variant is GoblinBruteVariant:
+            attack = weapon.Maul.with_display_name("Smash'Em")
+            secondary_attack = None
+        elif variant is GoblinBossVariant:
+            attack = weapon.Maul.with_display_name("Smash'Em")
+            secondary_attack = weapon.Shortbow.with_display_name("Shoot'Em")
+        elif variant is GoblinShamanVariant:
+            attack = spell.Gaze.with_display_name("Hex'Em")
+            secondary_attack = None
+        else:
+            raise ValueError(f"Unknown goblin variant: {variant}")
 
-    # POWERS
-    stats = stats.apply_monster_dials(
-        dials=MonsterDials(recommended_powers_modifier=LOW_POWER)
-    )
+        if secondary_attack is not None:
+            secondary_attack = secondary_attack.copy(damage_scalar=0.9)
 
-    features = []
+        # SPELLS
+        if variant is GoblinShamanVariant:
+            stats = stats.grant_spellcasting(
+                caster_type=CasterType.Primal, spellcasting_stat=Stats.INT
+            )
 
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
+        # ROLES
+        if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
+            primary_role = MonsterRole.Skirmisher
+            secondary_roles = {MonsterRole.Artillery, MonsterRole.Ambusher}
+        elif variant is GoblinBruteVariant:
+            primary_role = MonsterRole.Soldier
+            secondary_roles = {MonsterRole.Skirmisher, MonsterRole.Bruiser}
+        elif variant is GoblinBossVariant:
+            primary_role = MonsterRole.Leader
+            secondary_roles = {MonsterRole.Soldier}
+        elif variant is GoblinShamanVariant:
+            primary_role = MonsterRole.Controller
+            secondary_roles = MonsterRole.Artillery
 
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
+        stats = stats.with_roles(
+            primary_role=primary_role, additional_roles=secondary_roles
+        )
 
-    if secondary_attack is not None:
-        stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+        # SKILLS
+        stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
 
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        # SAVES
+        if cr >= 3:
+            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+
+        return stats, [attack, secondary_attack] if secondary_attack else [attack]
 
 
-GoblinTemplate: MonsterTemplate = MonsterTemplate(
+GoblinTemplate: MonsterTemplate = _GoblinTemplate(
     name="Goblin",
     tag_line="Wild tricksters and troublemakers",
     description="Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.",
@@ -292,6 +272,5 @@ GoblinTemplate: MonsterTemplate = MonsterTemplate(
         GoblinBossVariant,
     ],
     species=[],
-    callback=generate_goblin,
     is_sentient_species=True,
 )
