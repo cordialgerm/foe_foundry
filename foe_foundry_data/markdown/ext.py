@@ -57,12 +57,12 @@ class LinkPreprocessor(Preprocessor):
         md,
         base_url: str,
         ref_resolver: MonsterRefResolver,
-        resolved_refences: list,
+        resolved_references: list,
     ):
         super().__init__(md)
         self.base_url = base_url
         self.ref_resolver = ref_resolver
-        self.resolved_references = resolved_refences
+        self.resolved_references = resolved_references
 
     def run(self, lines):
         new_lines = []
@@ -161,12 +161,12 @@ class MonsterSpecPreprocessor(Preprocessor):
         md,
         base_url: str,
         ref_resolver: MonsterRefResolver,
-        resolved_refences: list,
+        resolved_references: list,
     ):
         super().__init__(md)
         self.base_url = base_url
         self.ref_resolver = ref_resolver
-        self.resolved_references = resolved_refences
+        self.resolved_references = resolved_references
 
     def run(self, lines):
         # Reconstruct full markdown text
