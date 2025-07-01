@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Iterable
 
 from foe_foundry.attack_template import AttackTemplate
-from foe_foundry.powers import PowerSelection
 from foe_foundry.features import Feature
+from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
 from foe_foundry.utils import find_image, find_lore
 from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
@@ -115,7 +115,7 @@ class MonsterTemplate:
 
         # POWERS
         power_selection = self.choose_powers(settings)
-        powers = power_selection.choose_powers(settings.rng)
+        powers = power_selection.choose_powers(settings.selection_settings)
 
         # SPECIES CUSTOMIZATION
         if settings.species is not None:
