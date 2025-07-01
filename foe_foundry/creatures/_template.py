@@ -102,6 +102,16 @@ class MonsterTemplate:
         """Creates a statblock for the given generation settings"""
 
         stats, attacks = self.generate_stats(settings)
+
+        # INITIALIZE ATTACKS
+        primary_attack = attacks[0]
+        stats = primary_attack.alter_base_stats(stats)
+        stats = primary_attack.initialize_attack(stats)
+        if len(attacks) > 1:
+            for secondary_attack in attacks[1:]:
+                stats = secondary_attack.add_as_secondary_attack(stats)
+
+        # POWERS
         power_selection = self.choose_powers(settings)
         powers = power_selection.choose_powers(settings.rng)
 

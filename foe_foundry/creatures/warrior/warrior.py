@@ -182,9 +182,9 @@ class _WarriorTemplate(MonsterTemplate):
             attack = weapon.Greatsword
 
         secondary_attack = weapon.Shortbow if cr <= 1 else weapon.Crossbow
+        secondary_attack = secondary_attack.copy(damage_scalar=0.9)
 
         stats = stats.copy(primary_damage_type=attack.damage_type)
-        stats = secondary_attack.copy(damage_scalar=0.9)
 
         # ROLES
         if variant is CommanderVariant:
