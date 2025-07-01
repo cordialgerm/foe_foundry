@@ -8,6 +8,8 @@ from typing import Iterable
 
 from foe_foundry.attack_template import AttackTemplate
 from foe_foundry.powers import PowerSelection
+from foe_foundry.features import Feature
+from foe_foundry.powers.legendary import get_legendary_actions
 from foe_foundry.utils import find_image, find_lore
 from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
 
@@ -120,7 +122,7 @@ class MonsterTemplate:
             stats = settings.species.alter_base_stats(stats)
 
         # POWERS
-        features = []
+        features: list[Feature] = []
         for power in powers:
             stats = power.modify_stats(stats)
             features += power.generate_features(stats)
@@ -128,6 +130,11 @@ class MonsterTemplate:
         # ATTACKS
         for attack in attacks:
             stats = attack.finalize_attacks(stats, settings.rng, repair_all=False)
+
+        # LEGENDARY ATTACKS
+        if stats.is_legendary:
+            legendary_features = get_legendary_actions(stats, features)
+            features += legendary_features
 
         return StatsBeingGenerated(stats=stats, features=features, powers=powers)
 
