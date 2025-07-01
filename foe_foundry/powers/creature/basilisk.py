@@ -57,7 +57,7 @@ class _BasiliskBrood(_BasiliskPower):
         )
 
         feature = Feature(
-            name="Summon Brood",
+            name="Basilisk Brood",
             action=ActionType.Action,
             uses=1,
             description=f"{stats.selfref.capitalize()} lets out a piercing cry for aid. {description}",
