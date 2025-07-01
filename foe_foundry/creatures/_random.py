@@ -3,7 +3,7 @@ from typing import Callable, TypeAlias
 import numpy as np
 
 from ._all import AllTemplates
-from ._data import (
+from ._template import (
     CreatureSpecies,
     GenerationSettings,
     Monster,

@@ -1,18 +1,19 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import flat
-from ...attack_template import natural
+from ...attack_template import AttackTemplate, natural
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
-from ...powers import NewPowerSelection, flags, select_powers
+from ...powers import PowerSelection, flags
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -36,101 +37,89 @@ MimicVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
-    if settings.monster_key == "mimic":
-        return NewPowerSelection(powers.LoadoutMimic, settings.rng)
-    elif settings.monster_key == "greater-mimic":
-        return NewPowerSelection(powers.LoadoutGreaterMimic, settings.rng)
-    elif settings.monster_key == "vault-mimic":
-        return NewPowerSelection(powers.LoadoutVaultMimic, settings.rng)
-    else:
-        raise ValueError(f"Unknown monster key: {settings.monster_key}")
+class _MimicTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.monster_key == "mimic":
+            return PowerSelection(powers.LoadoutMimic)
+        elif settings.monster_key == "greater-mimic":
+            return PowerSelection(powers.LoadoutGreaterMimic)
+        elif settings.monster_key == "vault-mimic":
+            return PowerSelection(powers.LoadoutVaultMimic)
+        else:
+            raise ValueError(f"Unknown monster key: {settings.monster_key}")
+
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        rng = settings.rng
+
+        # STATS
+        stats = base_stats(
+            name=name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=[
+                Stats.STR.scaler(StatScaling.Primary, mod=1),
+                Stats.DEX.scaler(StatScaling.Default, mod=2),
+                Stats.INT.scaler(StatScaling.Default, mod=-5),
+                Stats.WIS.scaler(StatScaling.Medium, mod=2),
+                Stats.CHA.scaler(StatScaling.Default, mod=-2),
+            ],
+            hp_multiplier=1.25 * settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
+        )
+
+        stats = stats.copy(
+            creature_type=CreatureType.Monstrosity,
+            creature_class="Mimic",
+            senses=stats.senses.copy(darkvision=60),
+        )
+
+        # SIZE
+        if cr >= 8:
+            size = Size.Huge
+        elif cr >= 4:
+            size = Size.Large
+        else:
+            size = Size.Medium
+
+        stats = stats.copy(size=size)
+
+        # ARMOR CLASS
+        stats = stats.add_ac_template(flat(12))
+
+        # ATTACKS
+        attack = natural.Slam.with_display_name("Sticky Pseudopod")
+        stats = stats.copy(
+            secondary_damage_type=DamageType.Acid,
+        )
+
+        # ROLES
+        stats = stats.with_roles(primary_role=MonsterRole.Ambusher)
+
+        # MOVEMENT
+        stats = stats.with_flags(flags.NO_TELEPORT)
+        stats = stats.copy(speed=Movement(walk=20, climb=20))
+
+        # SKILLS
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Stealth
+        ).grant_proficiency_or_expertise(Skills.Stealth)  # expertise
+
+        # SAVES
+        if cr >= 4:
+            stats = stats.grant_save_proficiency(Stats.CON)
+        if cr >= 8:
+            stats = stats.grant_save_proficiency(Stats.WIS)
+
+        return stats, [attack]
 
 
-def generate_mimic(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    rng = settings.rng
-
-    # STATS
-    stats = base_stats(
-        name=name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=[
-            Stats.STR.scaler(StatScaling.Primary, mod=1),
-            Stats.DEX.scaler(StatScaling.Default, mod=2),
-            Stats.INT.scaler(StatScaling.Default, mod=-5),
-            Stats.WIS.scaler(StatScaling.Medium, mod=2),
-            Stats.CHA.scaler(StatScaling.Default, mod=-2),
-        ],
-        hp_multiplier=1.25 * settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        creature_type=CreatureType.Monstrosity,
-        creature_class="Mimic",
-        senses=stats.senses.copy(darkvision=60),
-    )
-
-    # SIZE
-    if cr >= 8:
-        size = Size.Huge
-    elif cr >= 4:
-        size = Size.Large
-    else:
-        size = Size.Medium
-
-    stats = stats.copy(size=size)
-
-    # ARMOR CLASS
-    stats = stats.add_ac_template(flat(12))
-
-    # ATTACKS
-    attack = natural.Slam.with_display_name("Sticky Pseudopod")
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    stats = stats.copy(
-        secondary_damage_type=DamageType.Acid,
-    )
-
-    # ROLES
-    stats = stats.with_roles(primary_role=MonsterRole.Ambusher)
-
-    # MOVEMENT
-    stats = stats.with_flags(flags.NO_TELEPORT)
-    stats = stats.copy(speed=Movement(walk=20, climb=20))
-
-    # SKILLS
-    stats = stats.grant_proficiency_or_expertise(
-        Skills.Stealth
-    ).grant_proficiency_or_expertise(Skills.Stealth)  # expertise
-
-    # SAVES
-    if cr >= 4:
-        stats = stats.grant_save_proficiency(Stats.CON)
-    if cr >= 8:
-        stats = stats.grant_save_proficiency(Stats.WIS)
-
-    # POWERS
-    features = []
-
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
-
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
-
-
-MimicTemplate: MonsterTemplate = MonsterTemplate(
+MimicTemplate: MonsterTemplate = _MimicTemplate(
     name="Mimic",
     tag_line="Paranoia-Inducing Shapeshifting Ambusher",
     description="Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey",
@@ -138,5 +127,4 @@ MimicTemplate: MonsterTemplate = MonsterTemplate(
     treasure=[],
     variants=[MimicVariant],
     species=[],
-    callback=generate_mimic,
 )

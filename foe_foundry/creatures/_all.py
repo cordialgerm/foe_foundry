@@ -1,4 +1,5 @@
-from ._data import GenerationSettings, MonsterTemplate
+from ._data import GenerationSettings
+from ._template import MonsterTemplate
 from .animated_armor import AnimatedArmorTemplate
 from .assassin import AssassinTemplate
 from .balor import BalorTemplate

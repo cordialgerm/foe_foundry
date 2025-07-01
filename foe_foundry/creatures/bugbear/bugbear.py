@@ -1,16 +1,17 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import HideArmor
-from ...attack_template import natural
+from ...attack_template import AttackTemplate, natural
 from ...creature_types import CreatureType
-from ...powers import NewPowerSelection, select_powers
+from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -37,96 +38,82 @@ BugbearVariant = MonsterVariant(
 )
 
 
-def _choose_powers(settings: GenerationSettings) -> NewPowerSelection:
-    if settings.monster_key == "bugbear":
-        return NewPowerSelection(powers.LoadoutBugbear, settings.rng)
-    elif settings.monster_key == "bugbear-brute":
-        return NewPowerSelection(powers.LoadoutBugbearBrute, settings.rng)
-    elif settings.monster_key == "bugbear-shadowstalker":
-        return NewPowerSelection(powers.LoadoutBugbearShadowstalker, settings.rng)
-    else:
-        raise ValueError(f"Unknown bugbear variant: {settings.monster_key}")
+class _BugbearTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.monster_key == "bugbear":
+            return PowerSelection(powers.LoadoutBugbear)
+        elif settings.monster_key == "bugbear-brute":
+            return PowerSelection(powers.LoadoutBugbearBrute)
+        elif settings.monster_key == "bugbear-shadowstalker":
+            return PowerSelection(powers.LoadoutBugbearShadowstalker)
+        else:
+            raise ValueError(f"Unknown bugbear variant: {settings.monster_key}")
+
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
+
+        # STATS
+        attrs = [
+            Stats.STR.scaler(StatScaling.Primary, mod=0.5),
+            Stats.DEX.scaler(StatScaling.Medium, mod=3),
+            Stats.INT.scaler(StatScaling.Medium, mod=-4),
+            Stats.WIS.scaler(StatScaling.Default, mod=2),
+            Stats.CHA.scaler(StatScaling.Medium, mod=-3),
+        ]
+
+        stats = base_stats(
+            name=variant.name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=attrs,
+            hp_multiplier=settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
+        )
+
+        stats = stats.copy(
+            name=name,
+            size=Size.Medium,
+            languages=["Common", "Goblin"],
+            creature_class="Bugbear",
+            creature_subtype="Goblinoid",
+        ).with_types(
+            primary_type=CreatureType.Humanoid, additional_types=CreatureType.Fey
+        )
+
+        # SENSES
+        stats = stats.copy(senses=stats.senses.copy(darkvision=60))
+
+        # ARMOR CLASS
+        stats = stats.add_ac_template(HideArmor)
+
+        # ATTACKS
+        attack = natural.Slam.with_display_name("Skull Smash").copy(reach=10)
+
+        # ROLES
+        stats = stats.with_roles(
+            primary_role=MonsterRole.Ambusher, additional_roles=MonsterRole.Bruiser
+        )
+
+        # SKILLS
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Stealth
+        ).grant_proficiency_or_expertise(Skills.Stealth)
+
+        # SAVES
+        if cr >= 3:
+            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+
+        return stats, [attack]
 
 
-def generate_bugbear(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
-
-    # STATS
-    attrs = [
-        Stats.STR.scaler(StatScaling.Primary, mod=0.5),
-        Stats.DEX.scaler(StatScaling.Medium, mod=3),
-        Stats.INT.scaler(StatScaling.Medium, mod=-4),
-        Stats.WIS.scaler(StatScaling.Default, mod=2),
-        Stats.CHA.scaler(StatScaling.Medium, mod=-3),
-    ]
-
-    stats = base_stats(
-        name=variant.name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=attrs,
-        hp_multiplier=settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        name=name,
-        size=Size.Medium,
-        languages=["Common", "Goblin"],
-        creature_class="Bugbear",
-        creature_subtype="Goblinoid",
-    ).with_types(primary_type=CreatureType.Humanoid, additional_types=CreatureType.Fey)
-
-    # SENSES
-    stats = stats.copy(senses=stats.senses.copy(darkvision=60))
-
-    # ARMOR CLASS
-    stats = stats.add_ac_template(HideArmor)
-
-    # ATTACKS
-    attack = natural.Slam.with_display_name("Skull Smash").copy(reach=10)
-
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-
-    # ROLES
-    stats = stats.with_roles(
-        primary_role=MonsterRole.Ambusher, additional_roles=MonsterRole.Bruiser
-    )
-
-    # SKILLS
-    stats = stats.grant_proficiency_or_expertise(
-        Skills.Stealth
-    ).grant_proficiency_or_expertise(Skills.Stealth)
-
-    # SAVES
-    if cr >= 3:
-        stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
-
-    # POWERS
-    features = []
-
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=_choose_powers(settings),
-    )
-    features += power_features
-
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
-
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
-
-
-BugbearTemplate: MonsterTemplate = MonsterTemplate(
+BugbearTemplate: MonsterTemplate = _BugbearTemplate(
     name="Bugbear",
     tag_line="Lurking abductors and ambushers",
     description="Bugbears are large, hairy humanoids with a reputation for stealth and ambush tactics. They are often found in dark forests or caves, where they can use their natural camouflage to surprise their prey.",
@@ -134,6 +121,5 @@ BugbearTemplate: MonsterTemplate = MonsterTemplate(
     treasure=["Any"],
     variants=[BugbearVariant],
     species=[],
-    callback=generate_bugbear,
     is_sentient_species=True,
 )
