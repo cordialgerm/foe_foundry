@@ -11,7 +11,7 @@ from foe_foundry.powers import PowerSelection
 from foe_foundry.utils import find_image, find_lore
 from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
 
-from ..statblocks import BaseStatblock
+from ..statblocks import BaseStatblock, Statblock  # noqa
 from ..utils import name_to_key
 from ._data import (
     GenerationSettings,

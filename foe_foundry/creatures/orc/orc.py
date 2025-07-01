@@ -1,18 +1,19 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import ArcaneArmor, HideArmor, PlateArmor, StuddedLeatherArmor
-from ...attack_template import spell, weapon
+from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
-from ...powers import PowerSelection, select_powers
+from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
 from ...spells import CasterType
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -76,217 +77,198 @@ OrcWarchiefVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> PowerSelection:
-    if settings.monster_key == "orc-soldier":
-        return PowerSelection(powers.LoadoutSoldier)
-    elif settings.monster_key == "orc-reaver":
-        return PowerSelection(powers.LoadoutReaver)
-    elif settings.monster_key == "orc-hardened-one":
-        return PowerSelection(powers.LoadoutHardenedOne)
-    elif settings.monster_key == "orc-bloodrite-shaman":
-        return PowerSelection(powers.LoadoutShamanAdept)
-    elif settings.monster_key == "orc-bloodrite-elder-shaman":
-        return PowerSelection(powers.LoadoutShaman)
-    elif settings.monster_key == "orc-bloodletter":
-        return PowerSelection(powers.LoadoutBloodletter)
-    elif settings.monster_key == "orc-warchief":
-        return PowerSelection(powers.LoadoutWarchief)
-    elif settings.monster_key == "orc-warchief-of-the-bloody-fang":
-        return PowerSelection(powers.LoadoutWarchiefLegendary)
-    else:
-        raise ValueError(f"Unknown orc monster key: {settings.monster_key}")
+class _OrcTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.monster_key == "orc-soldier":
+            return PowerSelection(powers.LoadoutSoldier)
+        elif settings.monster_key == "orc-reaver":
+            return PowerSelection(powers.LoadoutReaver)
+        elif settings.monster_key == "orc-hardened-one":
+            return PowerSelection(powers.LoadoutHardenedOne)
+        elif settings.monster_key == "orc-bloodrite-shaman":
+            return PowerSelection(powers.LoadoutShamanAdept)
+        elif settings.monster_key == "orc-bloodrite-elder-shaman":
+            return PowerSelection(powers.LoadoutShaman)
+        elif settings.monster_key == "orc-bloodletter":
+            return PowerSelection(powers.LoadoutBloodletter)
+        elif settings.monster_key == "orc-warchief":
+            return PowerSelection(powers.LoadoutWarchief)
+        elif settings.monster_key == "orc-warchief-of-the-bloody-fang":
+            return PowerSelection(powers.LoadoutWarchiefLegendary)
+        else:
+            raise ValueError(f"Unknown orc monster key: {settings.monster_key}")
 
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
+        is_legendary = settings.is_legendary
 
-def generate_orc(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
-    is_legendary = settings.is_legendary
+        # STATS
+        if (
+            variant is OrcSoldierVariant
+            or variant is OrcReaverVariant
+            or variant is OrcHardenedOneVariant
+        ):
+            attrs = [
+                Stats.STR.scaler(StatScaling.Primary, mod=2),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.CON.scaler(StatScaling.Constitution, mod=2),
+                Stats.INT.scaler(
+                    StatScaling.Default,
+                    mod=-3 if variant is not OrcHardenedOneVariant else 2,
+                ),
+                Stats.WIS.scaler(
+                    StatScaling.Default,
+                    mod=1 if variant is not OrcReaverVariant else -1,
+                ),
+                Stats.CHA.scaler(
+                    StatScaling.Default,
+                    mod=0 if variant is not OrcHardenedOneVariant else 2,
+                ),
+            ]
+        elif variant is OrcBloodletterVariant:
+            attrs = [
+                Stats.STR.scaler(StatScaling.Default),
+                Stats.DEX.scaler(StatScaling.Primary),
+                Stats.INT.scaler(StatScaling.Medium, mod=0.5),
+                Stats.WIS.scaler(StatScaling.Medium, mod=1),
+                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+            ]
+        elif variant is OrcBloodriteShamanVariant:
+            attrs = [
+                Stats.STR.scaler(StatScaling.Default),
+                Stats.DEX.scaler(StatScaling.Medium, mod=1),
+                Stats.INT.scaler(StatScaling.Medium, mod=2),
+                Stats.WIS.scaler(StatScaling.Primary),
+                Stats.CHA.scaler(StatScaling.Default),
+            ]
+        elif variant is OrcWarchiefVariant:
+            attrs = [
+                Stats.STR.scaler(
+                    StatScaling.Primary,
+                ),
+                Stats.DEX.scaler(StatScaling.Medium),
+                Stats.CON.scaler(StatScaling.Constitution, mod=2),
+                Stats.INT.scaler(StatScaling.Default, mod=1),
+                Stats.WIS.scaler(StatScaling.Default, mod=2),
+                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+            ]
+        else:
+            raise ValueError(f"Unknown orc variant: {variant}")
 
-    # STATS
-    if (
-        variant is OrcSoldierVariant
-        or variant is OrcReaverVariant
-        or variant is OrcHardenedOneVariant
-    ):
-        attrs = [
-            Stats.STR.scaler(StatScaling.Primary, mod=2),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.CON.scaler(StatScaling.Constitution, mod=2),
-            Stats.INT.scaler(
-                StatScaling.Default,
-                mod=-3 if variant is not OrcHardenedOneVariant else 2,
-            ),
-            Stats.WIS.scaler(
-                StatScaling.Default, mod=1 if variant is not OrcReaverVariant else -1
-            ),
-            Stats.CHA.scaler(
-                StatScaling.Default,
-                mod=0 if variant is not OrcHardenedOneVariant else 2,
-            ),
-        ]
-    elif variant is OrcBloodletterVariant:
-        attrs = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Primary),
-            Stats.INT.scaler(StatScaling.Medium, mod=0.5),
-            Stats.WIS.scaler(StatScaling.Medium, mod=1),
-            Stats.CHA.scaler(StatScaling.Medium, mod=1),
-        ]
-    elif variant is OrcBloodriteShamanVariant:
-        attrs = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Medium, mod=1),
-            Stats.INT.scaler(StatScaling.Medium, mod=2),
-            Stats.WIS.scaler(StatScaling.Primary),
-            Stats.CHA.scaler(StatScaling.Default),
-        ]
-    elif variant is OrcWarchiefVariant:
-        attrs = [
-            Stats.STR.scaler(
-                StatScaling.Primary,
-            ),
-            Stats.DEX.scaler(StatScaling.Medium),
-            Stats.CON.scaler(StatScaling.Constitution, mod=2),
-            Stats.INT.scaler(StatScaling.Default, mod=1),
-            Stats.WIS.scaler(StatScaling.Default, mod=2),
-            Stats.CHA.scaler(StatScaling.Medium, mod=1),
-        ]
-    else:
-        raise ValueError(f"Unknown orc variant: {variant}")
-
-    stats = base_stats(
-        name=variant.name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=attrs,
-        hp_multiplier=settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        name=name,
-        size=Size.Small,
-        languages=["Common", "Orc"],
-        creature_class="Orc",
-        creature_subtype="Orc",
-    ).with_types(primary_type=CreatureType.Humanoid)
-
-    # LEGENDARY
-    if is_legendary:
-        stats = stats.as_legendary()
-
-    # SENSES
-    stats = stats.copy(senses=stats.senses.copy(darkvision=60))
-
-    # ARMOR CLASS
-    if variant is OrcSoldierVariant or variant is OrcReaverVariant:
-        stats = stats.add_ac_template(HideArmor)
-    elif variant is OrcHardenedOneVariant or variant is OrcWarchiefVariant:
-        stats = stats.add_ac_template(PlateArmor)
-    elif variant is OrcBloodletterVariant:
-        stats = stats.add_ac_template(StuddedLeatherArmor)
-    elif variant is OrcBloodriteShamanVariant:
-        stats = stats.add_ac_template(ArcaneArmor)
-
-    # ATTACKS
-    if variant is OrcBloodletterVariant:
-        attack = weapon.Daggers.with_display_name("Black Blades").copy(die_count=1)
-        secondary_attack = weapon.Shortbow.with_display_name("Black Bow").copy(
-            damage_scalar=0.9
-        )
-        secondary_damage_type = DamageType.Poison
-    elif variant is OrcBloodriteShamanVariant:
-        attack = spell.Shock.with_display_name("Thunder Shock")
-        secondary_attack = None
-        secondary_damage_type = None
-    else:
-        attack = weapon.Greataxe.with_display_name("Wicked Greataxe")
-        secondary_attack = weapon.JavelinAndShield.with_display_name("Javelin").copy(
-            damage_scalar=0.9
-        )
-        secondary_damage_type = None
-
-    if variant is OrcSoldierVariant:
-        # CR 1/2 Orc Soldier uses a greataxe and shouldn't have 2 attacks
-        stats = stats.with_set_attacks(multiattack=1)
-
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    stats = stats.copy(secondary_damage_type=secondary_damage_type)
-    if secondary_attack is not None:
-        stats = secondary_attack.add_as_secondary_attack(stats)
-
-    # SPELLS
-    if variant is OrcBloodriteShamanVariant:
-        stats = stats.grant_spellcasting(
-            caster_type=CasterType.Primal, spellcasting_stat=Stats.WIS
+        stats = base_stats(
+            name=variant.name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=attrs,
+            hp_multiplier=settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
         )
 
-    # ROLES
-    if variant is OrcSoldierVariant:
-        primary_role = MonsterRole.Soldier
-        secondary_roles: set[MonsterRole] = set()
-    elif variant is OrcHardenedOneVariant:
-        primary_role = MonsterRole.Soldier
-        secondary_roles = {MonsterRole.Defender}
-    elif variant is OrcReaverVariant:
-        primary_role = MonsterRole.Bruiser
-        secondary_roles = {MonsterRole.Soldier}
-    elif variant is OrcBloodletterVariant:
-        primary_role = MonsterRole.Ambusher
-        secondary_roles = {MonsterRole.Skirmisher}
-    elif variant is OrcBloodriteShamanVariant:
-        primary_role = MonsterRole.Support
-        secondary_roles = {MonsterRole.Artillery}
-    elif variant is OrcWarchiefVariant:
-        primary_role = MonsterRole.Soldier
-        secondary_roles = {MonsterRole.Leader, MonsterRole.Bruiser}
-    else:
-        raise ValueError(f"Unknown orc variant: {variant}")
+        stats = stats.copy(
+            name=name,
+            size=Size.Small,
+            languages=["Common", "Orc"],
+            creature_class="Orc",
+            creature_subtype="Orc",
+        ).with_types(primary_type=CreatureType.Humanoid)
 
-    stats = stats.with_roles(
-        primary_role=primary_role, additional_roles=secondary_roles
-    )
+        # LEGENDARY
+        if is_legendary:
+            stats = stats.as_legendary()
 
-    # SKILLS
-    stats = stats.grant_proficiency_or_expertise(Skills.Intimidation)
+        # SENSES
+        stats = stats.copy(senses=stats.senses.copy(darkvision=60))
 
-    if variant is OrcWarchiefVariant:
-        stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
+        # ARMOR CLASS
+        if variant is OrcSoldierVariant or variant is OrcReaverVariant:
+            stats = stats.add_ac_template(HideArmor)
+        elif variant is OrcHardenedOneVariant or variant is OrcWarchiefVariant:
+            stats = stats.add_ac_template(PlateArmor)
+        elif variant is OrcBloodletterVariant:
+            stats = stats.add_ac_template(StuddedLeatherArmor)
+        elif variant is OrcBloodriteShamanVariant:
+            stats = stats.add_ac_template(ArcaneArmor)
 
-    # SAVES
-    if variant is OrcBloodriteShamanVariant:
-        stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+        # ATTACKS
+        if variant is OrcBloodletterVariant:
+            attack = weapon.Daggers.with_display_name("Black Blades").copy(die_count=1)
+            secondary_attack = weapon.Shortbow.with_display_name("Black Bow").copy(
+                damage_scalar=0.9
+            )
+            secondary_damage_type = DamageType.Poison
+        elif variant is OrcBloodriteShamanVariant:
+            attack = spell.Shock.with_display_name("Thunder Shock")
+            secondary_attack = None
+            secondary_damage_type = None
+        else:
+            attack = weapon.Greataxe.with_display_name("Wicked Greataxe")
+            secondary_attack = weapon.JavelinAndShield.with_display_name(
+                "Javelin"
+            ).copy(damage_scalar=0.9)
+            secondary_damage_type = None
 
-    if variant is OrcWarchiefVariant:
-        stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS, Stats.STR)
+        if variant is OrcSoldierVariant:
+            # CR 1/2 Orc Soldier uses a greataxe and shouldn't have 2 attacks
+            stats = stats.with_set_attacks(multiattack=1)
 
-    # POWERS
-    features = []
+        stats = stats.copy(secondary_damage_type=secondary_damage_type)
 
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
+        # SPELLS
+        if variant is OrcBloodriteShamanVariant:
+            stats = stats.grant_spellcasting(
+                caster_type=CasterType.Primal, spellcasting_stat=Stats.WIS
+            )
 
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
+        # ROLES
+        if variant is OrcSoldierVariant:
+            primary_role = MonsterRole.Soldier
+            secondary_roles: set[MonsterRole] = set()
+        elif variant is OrcHardenedOneVariant:
+            primary_role = MonsterRole.Soldier
+            secondary_roles = {MonsterRole.Defender}
+        elif variant is OrcReaverVariant:
+            primary_role = MonsterRole.Bruiser
+            secondary_roles = {MonsterRole.Soldier}
+        elif variant is OrcBloodletterVariant:
+            primary_role = MonsterRole.Ambusher
+            secondary_roles = {MonsterRole.Skirmisher}
+        elif variant is OrcBloodriteShamanVariant:
+            primary_role = MonsterRole.Support
+            secondary_roles = {MonsterRole.Artillery}
+        elif variant is OrcWarchiefVariant:
+            primary_role = MonsterRole.Soldier
+            secondary_roles = {MonsterRole.Leader, MonsterRole.Bruiser}
+        else:
+            raise ValueError(f"Unknown orc variant: {variant}")
 
-    if secondary_attack is not None:
-        stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
+        stats = stats.with_roles(
+            primary_role=primary_role, additional_roles=secondary_roles
+        )
 
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        # SKILLS
+        stats = stats.grant_proficiency_or_expertise(Skills.Intimidation)
+
+        if variant is OrcWarchiefVariant:
+            stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
+
+        # SAVES
+        if variant is OrcBloodriteShamanVariant:
+            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+
+        if variant is OrcWarchiefVariant:
+            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS, Stats.STR)
+
+        return stats, [attack, secondary_attack] if secondary_attack else [attack]
 
 
-OrcTemplate: MonsterTemplate = MonsterTemplate(
+OrcTemplate: MonsterTemplate = _OrcTemplate(
     name="Orc",
     tag_line="Bloodrage-Fueled Ancestral Warriors",
     description="Orcs are savage and aggressive humanoids known for their brute strength and ferocity in battle. They are gifted with a powerful bloodrage that enhances their physical abilities and makes them formidable foes. Orcs are often found in warbands, led by a powerful warchief, and they are known for their brutal tactics and willingness to fight to the death.",
@@ -301,6 +283,5 @@ OrcTemplate: MonsterTemplate = MonsterTemplate(
         OrcWarchiefVariant,
     ],
     species=[],
-    callback=generate_orc,
     is_sentient_species=True,
 )

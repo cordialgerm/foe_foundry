@@ -1,21 +1,21 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import NaturalArmor
-from ...attack_template import natural, spell, weapon
+from ...attack_template import AttackTemplate, natural, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...movement import Movement
 from ...powers import (
     PowerSelection,
-    select_powers,
 )
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaling
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -48,141 +48,120 @@ MerrowAbyssalLord = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> PowerSelection:
-    if settings.variant is MerrowVariant:
-        return PowerSelection(loadouts=powers.MerrowLoadout)
-    elif settings.variant is MerrowBloodBlessed:
-        return PowerSelection(loadouts=powers.MerrowBloodBlessedLoadout)
-    elif settings.variant is MerrowStormblessed:
-        return PowerSelection(loadouts=powers.MerrowStormblessedLoadout)
-    elif settings.variant is MerrowAbyssalLord:
-        return PowerSelection(loadouts=powers.MerrowAbyssalLordLoadout)
-    else:
-        raise ValueError(f"Variant '{settings.variant.key}' is not recognized")
+class _MerrowTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.variant is MerrowVariant:
+            return PowerSelection(loadouts=powers.MerrowLoadout)
+        elif settings.variant is MerrowBloodBlessed:
+            return PowerSelection(loadouts=powers.MerrowBloodBlessedLoadout)
+        elif settings.variant is MerrowStormblessed:
+            return PowerSelection(loadouts=powers.MerrowStormblessedLoadout)
+        elif settings.variant is MerrowAbyssalLord:
+            return PowerSelection(loadouts=powers.MerrowAbyssalLordLoadout)
+        else:
+            raise ValueError(f"Variant '{settings.variant.key}' is not recognized")
 
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        if settings.variant is MerrowStormblessed:
+            attributes = [
+                Stats.STR.scaler(StatScaling.Default, mod=2),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.INT.scaler(StatScaling.Default, mod=3),
+                Stats.WIS.scaler(StatScaling.Primary),
+                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+            ]
+        elif settings.variant is MerrowAbyssalLord:
+            attributes = [
+                Stats.STR.scaler(StatScaling.Primary),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.INT.scaler(StatScaling.Default),
+                Stats.WIS.scaler(StatScaling.Medium, mod=-1),
+                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+            ]
+        else:
+            attributes = [
+                Stats.STR.scaler(StatScaling.Primary),
+                Stats.DEX.scaler(StatScaling.Medium, mod=2),
+                Stats.INT.scaler(StatScaling.Default, mod=-2),
+                Stats.WIS.scaler(StatScaling.Default),
+                Stats.CHA.scaler(StatScaling.Medium, mod=-1),
+            ]
 
-def generate_merrow(settings: GenerationSettings) -> StatsBeingGenerated:
-    if settings.variant is MerrowStormblessed:
-        attributes = [
-            Stats.STR.scaler(StatScaling.Default, mod=2),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.INT.scaler(StatScaling.Default, mod=3),
-            Stats.WIS.scaler(StatScaling.Primary),
-            Stats.CHA.scaler(StatScaling.Medium, mod=1),
-        ]
-    elif settings.variant is MerrowAbyssalLord:
-        attributes = [
-            Stats.STR.scaler(StatScaling.Primary),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.INT.scaler(StatScaling.Default),
-            Stats.WIS.scaler(StatScaling.Medium, mod=-1),
-            Stats.CHA.scaler(StatScaling.Medium, mod=1),
-        ]
-    else:
-        attributes = [
-            Stats.STR.scaler(StatScaling.Primary),
-            Stats.DEX.scaler(StatScaling.Medium, mod=2),
-            Stats.INT.scaler(StatScaling.Default, mod=-2),
-            Stats.WIS.scaler(StatScaling.Default),
-            Stats.CHA.scaler(StatScaling.Medium, mod=-1),
-        ]
+        # STATS
+        stats = base_stats(
+            name=settings.creature_name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=settings.cr,
+            stats=attributes,
+            hp_multiplier=settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
+        )
 
-    # STATS
-    stats = base_stats(
-        name=settings.creature_name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=settings.cr,
-        stats=attributes,
-        hp_multiplier=settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        creature_type=CreatureType.Monstrosity,
-        size=Size.Large,
-        creature_class="Merrow",
-        languages=["Abyssal", "Aquan"],
-        senses=stats.senses.copy(darkvision=60),
-    )
-
-    # LEGENDARY
-    if settings.is_legendary:
-        stats = stats.as_legendary()
-
-    # MOVEMENT
-    stats = stats.copy(speed=Movement(walk=10, swim=40))
-
-    # ARMOR CLASS
-    stats = stats.add_ac_template(NaturalArmor).copy(uses_shield=False)
-
-    # ATTACKS
-    if settings.variant is MerrowStormblessed:
-        attack = spell.Shock.with_display_name("Stormcaller's Strike")
-        secondary_attack = None
-
-        stats = attack.alter_base_stats(stats)
-        stats = attack.initialize_attack(stats)
         stats = stats.copy(
-            secondary_damage_type=DamageType.Lightning,
+            creature_type=CreatureType.Monstrosity,
+            size=Size.Large,
+            creature_class="Merrow",
+            languages=["Abyssal", "Aquan"],
+            senses=stats.senses.copy(darkvision=60),
         )
 
-        # ROLES
-        stats = stats.with_roles(
-            primary_role=MonsterRole.Support,
-        )
+        # LEGENDARY
+        if settings.is_legendary:
+            stats = stats.as_legendary()
 
-    else:
-        attack = natural.Bite.with_display_name("Envenomed Maw")
+        # MOVEMENT
+        stats = stats.copy(speed=Movement(walk=10, swim=40))
 
-        stats = attack.alter_base_stats(stats)
-        stats = attack.initialize_attack(stats)
-        stats = stats.copy(
-            secondary_damage_type=DamageType.Poison,
-        )
+        # ARMOR CLASS
+        stats = stats.add_ac_template(NaturalArmor).copy(uses_shield=False)
 
-        secondary_attack = weapon.JavelinAndShield.with_display_name(
-            "Sharktooth Harpoon"
-        ).copy(damage_scalar=0.9)
-        stats = secondary_attack.add_as_secondary_attack(stats)
+        # ATTACKS
+        if settings.variant is MerrowStormblessed:
+            attack = spell.Shock.with_display_name("Stormcaller's Strike")
+            secondary_attack = None
 
-        # ROLES
-        stats = stats.with_roles(
-            primary_role=MonsterRole.Ambusher,
-            additional_roles={
-                MonsterRole.Bruiser,
-            },
-        )
+            stats = stats.copy(
+                secondary_damage_type=DamageType.Lightning,
+            )
 
-    # SKILLS
-    stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
+            # ROLES
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Support,
+            )
 
-    # SAVES
-    if stats.cr >= 4:
-        stats = stats.grant_save_proficiency(Stats.WIS)
+        else:
+            attack = natural.Bite.with_display_name("Envenomed Maw")
+            stats = stats.copy(
+                secondary_damage_type=DamageType.Poison,
+            )
 
-    # POWERS
-    features = []
+            secondary_attack = weapon.JavelinAndShield.with_display_name(
+                "Sharktooth Harpoon"
+            ).copy(damage_scalar=0.9)
 
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=settings.rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
+            # ROLES
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Ambusher,
+                additional_roles={
+                    MonsterRole.Bruiser,
+                },
+            )
 
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, settings.rng, repair_all=False)
-    if secondary_attack is not None:
-        stats = secondary_attack.finalize_attacks(stats, settings.rng, repair_all=False)
+        # SKILLS
+        stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
 
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        # SAVES
+        if stats.cr >= 4:
+            stats = stats.grant_save_proficiency(Stats.WIS)
+
+        return stats, [attack, secondary_attack] if secondary_attack else [attack]
 
 
-MerrowTemplate: MonsterTemplate = MonsterTemplate(
+MerrowTemplate: MonsterTemplate = _MerrowTemplate(
     name="Merrow",
     tag_line="Aquatic Monstrosity",
     description="Merrows are aquatic monstrosities that dwell in the depths of the sea. They are known for their brute strength and cunning tactics.",
@@ -195,5 +174,4 @@ MerrowTemplate: MonsterTemplate = MonsterTemplate(
         MerrowAbyssalLord,
     ],
     species=[],
-    callback=generate_merrow,
 )

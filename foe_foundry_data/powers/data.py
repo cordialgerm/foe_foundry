@@ -10,7 +10,7 @@ import numpy as np
 from pydantic.dataclasses import dataclass
 
 from foe_foundry import AttackType
-from foe_foundry.creatures import GenerationSettings, SelectionSettings
+from foe_foundry.creatures import GenerationSettings
 from foe_foundry.creatures.warrior import warrior
 from foe_foundry.features import ActionType
 from foe_foundry.powers import Power
@@ -42,10 +42,6 @@ def _get_best_statblock(
         )
         update_name_to = requested_statblock
 
-    selection_settings = SelectionSettings(
-        power_multiplier=0, retries=1
-    )  # don't spend a lot of time trying to generate a good monster here
-
     if monster_ref.monster is not None and monster_ref.variant is not None:
         if requested_cr is None:
             requested_cr = monster_ref.monster.cr
@@ -62,15 +58,12 @@ def _get_best_statblock(
             is_legendary=False,
             variant=monster_ref.variant,
             rng=rng,
-            selection_settings=selection_settings,
         )
     else:
         # if we don't have a specific statblock to generate, find the one with the closest CR match
         crs = []
         settings = []
-        for setting in monster_ref.template.generate_settings(
-            selection_settings=selection_settings
-        ):
+        for setting in monster_ref.template.generate_settings():
             settings.append(setting)
             crs.append(setting.cr)
 

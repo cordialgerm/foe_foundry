@@ -1,5 +1,5 @@
 from .base_stats import base_stats  # noqa
-from ._data import (
+from ._template import (
     StatsBeingGenerated,  # noqa
     MonsterTemplate,  # noqa
     MonsterVariant,  # noqa

@@ -1,21 +1,21 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import Unarmored, flat
-from ...attack_template import natural, spell, weapon
+from ...attack_template import AttackTemplate, natural, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...movement import Movement
 from ...powers import (
     PowerSelection,
-    select_powers,
 )
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats, StatScaler, StatScaling
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -68,23 +68,6 @@ WraithVariant = MonsterVariant(
         Monster(name="Wraith Shadelord", cr=8, is_legendary=True),
     ],
 )
-
-
-def choose_powers(settings: GenerationSettings) -> PowerSelection:
-    if settings.monster_key == "shadow":
-        return PowerSelection(powers.LoadoutShadow)
-    elif settings.monster_key == "specter":
-        return PowerSelection(powers.LoadoutSpecter)
-    elif settings.monster_key == "banshee":
-        return PowerSelection(powers.LoadoutBanshee)
-    elif settings.monster_key == "revenant":
-        return PowerSelection(powers.LoadoutRevenant)
-    elif settings.monster_key == "ghost":
-        return PowerSelection(powers.LoadoutGhost)
-    elif settings.monster_key in {"wraith", "wraith-shadelord"}:
-        return PowerSelection(powers.LoadoutWraith)
-    else:
-        raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
 
 def _banshee_stats() -> list[StatScaler]:
@@ -153,201 +136,211 @@ def _shadow_stats() -> list[StatScaler]:
     ]
 
 
-def generate_spirit(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
-    is_legendary = settings.is_legendary
+class _SpiritTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.monster_key == "shadow":
+            return PowerSelection(powers.LoadoutShadow)
+        elif settings.monster_key == "specter":
+            return PowerSelection(powers.LoadoutSpecter)
+        elif settings.monster_key == "banshee":
+            return PowerSelection(powers.LoadoutBanshee)
+        elif settings.monster_key == "revenant":
+            return PowerSelection(powers.LoadoutRevenant)
+        elif settings.monster_key == "ghost":
+            return PowerSelection(powers.LoadoutGhost)
+        elif settings.monster_key in {"wraith", "wraith-shadelord"}:
+            return PowerSelection(powers.LoadoutWraith)
+        else:
+            raise ValueError(f"Unknown monster key: {settings.monster_key}")
 
-    # STATS
-    if variant is ShadowVariant:
-        hp_multiplier = 1.25
-        damage_multiplier = 1.0
-        creature_class = "Shadow"
-        attrs = _shadow_stats()
-    elif variant is SpecterVariant:
-        hp_multiplier = 0.63
-        damage_multiplier = 1.0
-        creature_class = "Specter"
-        attrs = _specter_stats()
-    elif variant is BansheeVariant:
-        hp_multiplier = 1.0
-        damage_multiplier = 1.0
-        creature_class = "Banshee"
-        attrs = _banshee_stats()
-    elif variant is RevenantVariant:
-        hp_multiplier = 1.25
-        damage_multiplier = 1.0
-        creature_class = "Revenant"
-        attrs = _revenant_stats()
-    elif variant is GhostVariant:
-        hp_multiplier = 0.6
-        damage_multiplier = 1.1
-        creature_class = "Ghost"
-        attrs = _ghost_stats()
-    elif variant is WraithVariant:
-        hp_multiplier = 0.7
-        damage_multiplier = 1.0
-        creature_class = "Wraith"
-        attrs = _wraith_stats()
-    else:
-        raise ValueError(f"Unknown variant: {variant}")
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
+        is_legendary = settings.is_legendary
 
-    stats = base_stats(
-        name=name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=attrs,
-        hp_multiplier=hp_multiplier * settings.hp_multiplier,
-        damage_multiplier=damage_multiplier * settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        creature_type=CreatureType.Undead,
-        size=Size.Medium,
-        languages=["Telepathy 60 ft."],
-        creature_class=creature_class,
-        creature_subtype="Spirit",
-        senses=stats.senses.copy(darkvision=60),
-    )
-
-    # LEGENDARY
-    if is_legendary:
-        stats = stats.as_legendary()
-
-    # SPEED
-    if variant is not RevenantVariant and variant is not ShadowVariant:
-        if variant is SpecterVariant:
-            fly = 50
-        elif variant is WraithVariant:
-            fly = 60
-        elif variant is GhostVariant:
-            fly = 40
+        # STATS
+        if variant is ShadowVariant:
+            hp_multiplier = 1.25
+            damage_multiplier = 1.0
+            creature_class = "Shadow"
+            attrs = _shadow_stats()
+        elif variant is SpecterVariant:
+            hp_multiplier = 0.63
+            damage_multiplier = 1.0
+            creature_class = "Specter"
+            attrs = _specter_stats()
         elif variant is BansheeVariant:
-            fly = 40
-        stats = stats.copy(speed=Movement(walk=5, fly=fly, hover=True))
+            hp_multiplier = 1.0
+            damage_multiplier = 1.0
+            creature_class = "Banshee"
+            attrs = _banshee_stats()
+        elif variant is RevenantVariant:
+            hp_multiplier = 1.25
+            damage_multiplier = 1.0
+            creature_class = "Revenant"
+            attrs = _revenant_stats()
+        elif variant is GhostVariant:
+            hp_multiplier = 0.6
+            damage_multiplier = 1.1
+            creature_class = "Ghost"
+            attrs = _ghost_stats()
+        elif variant is WraithVariant:
+            hp_multiplier = 0.7
+            damage_multiplier = 1.0
+            creature_class = "Wraith"
+            attrs = _wraith_stats()
+        else:
+            raise ValueError(f"Unknown variant: {variant}")
 
-    # ARMOR CLASS
-    if variant is RevenantVariant or variant is WraithVariant:
-        stats = stats.add_ac_template(flat(ac=13))
-    else:
-        stats = stats.add_ac_template(Unarmored)
-
-    # ATTACKS
-    if variant is ShadowVariant:
-        attack = natural.Slam.with_display_name("Shadow's Touch").copy(
-            damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+        stats = base_stats(
+            name=name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=attrs,
+            hp_multiplier=hp_multiplier * settings.hp_multiplier,
+            damage_multiplier=damage_multiplier * settings.damage_multiplier,
         )
-        primary_role = MonsterRole.Ambusher
-        secondary_roles = set()
-    elif variant is SpecterVariant:
-        attack = natural.Slam.with_display_name("Spectral Touch").copy(
-            damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+
+        stats = stats.copy(
+            creature_type=CreatureType.Undead,
+            size=Size.Medium,
+            languages=["Telepathy 60 ft."],
+            creature_class=creature_class,
+            creature_subtype="Spirit",
+            senses=stats.senses.copy(darkvision=60),
         )
-        primary_role = MonsterRole.Bruiser
-        secondary_roles = set()
-    elif variant is BansheeVariant:
-        attack = spell.Gaze.with_display_name("Horrifying Lament").copy(
-            damage_type=DamageType.Psychic, secondary_damage_type=DamageType.Necrotic
+
+        # LEGENDARY
+        if is_legendary:
+            stats = stats.as_legendary()
+
+        # SPEED
+        if variant is not RevenantVariant and variant is not ShadowVariant:
+            if variant is SpecterVariant:
+                fly = 50
+            elif variant is WraithVariant:
+                fly = 60
+            elif variant is GhostVariant:
+                fly = 40
+            elif variant is BansheeVariant:
+                fly = 40
+            stats = stats.copy(speed=Movement(walk=5, fly=fly, hover=True))
+
+        # ARMOR CLASS
+        if variant is RevenantVariant or variant is WraithVariant:
+            stats = stats.add_ac_template(flat(ac=13))
+        else:
+            stats = stats.add_ac_template(Unarmored)
+
+        # ATTACKS
+        if variant is ShadowVariant:
+            attack = natural.Slam.with_display_name("Shadow's Touch").copy(
+                damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+            )
+            primary_role = MonsterRole.Ambusher
+            secondary_roles = set()
+        elif variant is SpecterVariant:
+            attack = natural.Slam.with_display_name("Spectral Touch").copy(
+                damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+            )
+            primary_role = MonsterRole.Bruiser
+            secondary_roles = set()
+        elif variant is BansheeVariant:
+            attack = spell.Gaze.with_display_name("Horrifying Lament").copy(
+                damage_type=DamageType.Psychic,
+                secondary_damage_type=DamageType.Necrotic,
+            )
+            primary_role = MonsterRole.Controller
+            secondary_roles = {MonsterRole.Artillery}
+        elif variant is RevenantVariant:
+            attack = weapon.Greatsword.with_display_name("Vengeful Strike").copy(
+                damage_type=DamageType.Slashing, secondary_damage_type=DamageType.Cold
+            )
+            primary_role = MonsterRole.Soldier
+            secondary_roles = {MonsterRole.Leader}
+        elif variant is GhostVariant:
+            attack = natural.Slam.with_display_name("Ghostly Touch").copy(
+                damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+            )
+            primary_role = MonsterRole.Controller
+            secondary_roles = set()
+        elif variant is WraithVariant:
+            attack = natural.Slam.with_display_name("Splinter Soul").copy(
+                damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+            )
+            primary_role = MonsterRole.Controller
+            secondary_roles = {MonsterRole.Leader}
+        else:
+            raise ValueError(f"Unknown variant: {variant.name}")
+
+        stats = stats.with_reduced_attacks(reduce_by=1)  # spirits use fewer attacks
+        stats = stats.copy(
+            primary_damage_type=attack.damage_type,
+            secondary_damage_type=attack.secondary_damage_type,
         )
-        primary_role = MonsterRole.Controller
-        secondary_roles = {MonsterRole.Artillery}
-    elif variant is RevenantVariant:
-        attack = weapon.Greatsword.with_display_name("Vengeful Strike").copy(
-            damage_type=DamageType.Slashing, secondary_damage_type=DamageType.Cold
+
+        # ROLES
+        stats = stats.with_roles(
+            primary_role=primary_role,
+            additional_roles=secondary_roles,
         )
-        primary_role = MonsterRole.Soldier
-        secondary_roles = {MonsterRole.Leader}
-    elif variant is GhostVariant:
-        attack = natural.Slam.with_display_name("Ghostly Touch").copy(
-            damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
+
+        # SKILLS
+        if variant is ShadowVariant:
+            stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
+
+        # SAVES
+        if cr >= 4:
+            stats = stats.grant_save_proficiency(Stats.CON)
+
+        # IMMUNITIES
+        if variant is ShadowVariant:
+            vulnerabilities = {DamageType.Radiant}
+        else:
+            vulnerabilities = set()
+
+        if cr >= 1 and variant is not RevenantVariant:
+            resistances = {
+                DamageType.Bludgeoning,
+                DamageType.Piercing,
+                DamageType.Slashing,
+            }
+        else:
+            resistances = set()
+
+        stats = stats.grant_resistance_or_immunity(
+            immunities={DamageType.Necrotic, DamageType.Poison, DamageType.Cold},
+            resistances=resistances
+            | {
+                DamageType.Acid,
+                DamageType.Fire,
+                DamageType.Lightning,
+                DamageType.Thunder,
+            },
+            conditions={
+                Condition.Poisoned,
+                Condition.Exhaustion,
+                Condition.Frightened,
+                Condition.Grappled,
+                Condition.Paralyzed,
+                Condition.Petrified,
+                Condition.Prone,
+                Condition.Restrained,
+                Condition.Unconscious,
+            },
+            vulnerabilities=vulnerabilities,
         )
-        primary_role = MonsterRole.Controller
-        secondary_roles = set()
-    elif variant is WraithVariant:
-        attack = natural.Slam.with_display_name("Splinter Soul").copy(
-            damage_type=DamageType.Necrotic, secondary_damage_type=DamageType.Cold
-        )
-        primary_role = MonsterRole.Controller
-        secondary_roles = {MonsterRole.Leader}
 
-    stats = stats.with_reduced_attacks(reduce_by=1)  # spirits use fewer attacks
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    stats = stats.copy(
-        primary_damage_type=attack.damage_type,
-        secondary_damage_type=attack.secondary_damage_type,
-    )
-
-    # ROLES
-    stats = stats.with_roles(
-        primary_role=primary_role,
-        additional_roles=secondary_roles,
-    )
-
-    # SKILLS
-    if variant is ShadowVariant:
-        stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
-
-    # SAVES
-    if cr >= 4:
-        stats = stats.grant_save_proficiency(Stats.CON)
-
-    # IMMUNITIES
-    if variant is ShadowVariant:
-        vulnerabilities = {DamageType.Radiant}
-    else:
-        vulnerabilities = set()
-
-    if cr >= 1 and variant is not RevenantVariant:
-        resistances = {DamageType.Bludgeoning, DamageType.Piercing, DamageType.Slashing}
-    else:
-        resistances = set()
-
-    stats = stats.grant_resistance_or_immunity(
-        immunities={DamageType.Necrotic, DamageType.Poison, DamageType.Cold},
-        resistances=resistances
-        | {
-            DamageType.Acid,
-            DamageType.Fire,
-            DamageType.Lightning,
-            DamageType.Thunder,
-        },
-        conditions={
-            Condition.Poisoned,
-            Condition.Exhaustion,
-            Condition.Frightened,
-            Condition.Grappled,
-            Condition.Paralyzed,
-            Condition.Petrified,
-            Condition.Prone,
-            Condition.Restrained,
-            Condition.Unconscious,
-        },
-        vulnerabilities=vulnerabilities,
-    )
-
-    # POWERS
-    features = []
-
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
-
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        return stats, [attack]
 
 
-SpiritTemplate: MonsterTemplate = MonsterTemplate(
+SpiritTemplate: MonsterTemplate = _SpiritTemplate(
     name="Spirit",
     tag_line="Echoes of Rage and Regret",
     description="Spirits are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self",
@@ -362,5 +355,4 @@ SpiritTemplate: MonsterTemplate = MonsterTemplate(
         WraithVariant,
     ],
     species=[],
-    callback=generate_spirit,
 )
