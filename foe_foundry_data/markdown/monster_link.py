@@ -67,6 +67,11 @@ def monster_statblock(ref: MonsterRef) -> Markup | None:
     variant = ref.variant if ref.variant is not None else template.variants[0]
     monster = ref.monster if ref.monster is not None else variant.monsters[0]
 
+    if ref.args is None:
+        power_weights = {}
+    else:
+        power_weights = ref.args.get("power_weights", {})
+
     stats = template.generate(
         GenerationSettings(
             creature_name=monster.name,
@@ -77,6 +82,7 @@ def monster_statblock(ref: MonsterRef) -> Markup | None:
             species=ref.species,
             is_legendary=monster.is_legendary,
             rng=rng_factory(),
+            power_weights=power_weights,
         )
     ).finalize()
     html = render_statblock_fragment(stats)
