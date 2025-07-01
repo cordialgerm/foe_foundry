@@ -1388,4 +1388,12 @@ a.burnt-parchment,
     .power-block::after {
         content: unset;
     }
+
+    .stat-block {
+        column-count: 2 !important;
+        column-gap: 2em !important;
+        column-width: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }

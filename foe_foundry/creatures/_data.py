@@ -101,7 +101,8 @@ class GenerationSettings:
 
     @property
     def selection_settings(self) -> SelectionSettings:
-        return SelectionSettings(rng=self.rng, power_weights=self.power_weights)
+        power_weights = {name_to_key(p): w for p, w in self.power_weights.items()}
+        return SelectionSettings(rng=self.rng, power_weights=power_weights)
 
     def copy(self, **args) -> GenerationSettings:
         return replace(self, **args)

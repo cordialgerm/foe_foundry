@@ -77,7 +77,7 @@ class _StoneMolt(_BasiliskPower):
             name="Stone Molt",
             action=ActionType.Reaction,
             uses=1,
-            description=f"When hit by an attack, {stats.selfref} violently molts its stone scales. It gains resistance to a damage of its choice until the end of its turn and the molted scales create difficult terrain for other creatures in a 10 foot radius around {stats.selfref}",
+            description=f"When hit by an attack, {stats.selfref} violently molts its stone scales. It gains resistance to a damage type of its choice until the end of its next turn and the molted scales create difficult terrain for other creatures in a 10 foot radius around {stats.selfref}",
         )
         return [feature]
 
