@@ -1,6 +1,7 @@
 from typing import List
 
 from foe_foundry.role_types import MonsterRole
+from foe_foundry.utils import name_to_key
 
 from ..power import (
     Power,
@@ -20,7 +21,7 @@ def powers_for_role(
         desired_roles = {role}
 
     filtered_powers = [
-        p for p in SpeciesPowers if getattr(p, "species", None) == species
+        p for p in SpeciesPowers if getattr(p, "species", None) == name_to_key(species)
     ]
     powers = []
     for p in filtered_powers:

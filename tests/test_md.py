@@ -86,8 +86,11 @@ def test_monster_spec():
 This is some example text that contains a YAML monster block
 
 ```yaml
-monster_name: Orc Berserker
+monster_name: Orc Berserker Veteran
 color: blue
+power_weights:
+  just-a-scratch: 1
+  pushing-attack: 0.75
 ```
 
 This is some more text after the YAML block.
@@ -107,9 +110,10 @@ foo: bar
     ref = result.references[0]
     assert isinstance(ref, MonsterRef)
     assert ref.monster is not None
-    assert ref.monster.key == "berserker"
+    assert ref.monster.key == "berserker-veteran"
     assert ref.species is not None
     assert ref.species.key == "orc"
     assert ref.args_str is not None
     assert ref.args is not None
     assert ref.args["color"] == "blue"
+    assert "Just A Scratch" in result.html

@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 import hashlib
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 
 import numpy as np
 
-from foe_foundry.powers import Power
+from foe_foundry.powers import Power, SelectionSettings
 
 from ..features import Feature
 from ..statblocks import BaseStatblock, Statblock
@@ -84,6 +84,8 @@ class GenerationSettings:
     hp_multiplier: float = 1.0
     damage_multiplier: float = 1.0
 
+    power_weights: dict[str, float] = field(default_factory=dict)
+
     @property
     def key(self) -> str:
         if self.species is not None:
@@ -96,6 +98,10 @@ class GenerationSettings:
     @property
     def id(self) -> str:
         return self.key
+
+    @property
+    def selection_settings(self) -> SelectionSettings:
+        return SelectionSettings(rng=self.rng, power_weights=self.power_weights)
 
     def copy(self, **args) -> GenerationSettings:
         return replace(self, **args)
