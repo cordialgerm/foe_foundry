@@ -25,7 +25,11 @@ class PowerSelection:
             if loadout.selection_count == 0:
                 continue
 
-            if self.species_loadout is not None and loadout.replace_with_species_powers:
+            if (
+                self.species_loadout is not None
+                and len(self.species_loadout.powers)
+                and loadout.replace_with_species_powers
+            ):
                 loadout = self.species_loadout
 
             options = loadout.powers
@@ -47,13 +51,19 @@ class PowerSelection:
                 # we will treat the exact value of -1 as a power that is never selected
                 if np.any(weights == 1.0):
                     selection_indexes = np.where(weights == 1.0)[0]
+
+                    if len(selection_indexes) > loadout.selection_count:
+                        raise ValueError(
+                            "More powers with weight 1.0 than selection count"
+                        )
+
                 elif np.all(weights == 0.0):
                     # if all weights are 0, we just select uniformly
                     selection_indexes = settings.rng.choice(
                         len(options), size=loadout.selection_count, replace=False
                     )
                 else:
-                    # we're going to use tan function to scale values between -1 and 1 to a probability distributio
+                    # we're going to use tan function to scale values between -1 and 1 to a probability distribution
                     # we then perform softmax to ensure the probabilities sum to 1
                     # note - we use 0.9 here to avoid asymptotic behavior while still allowing for a wide range of weights
                     p = np.tan(0.9 * np.pi / 2 * weights)
