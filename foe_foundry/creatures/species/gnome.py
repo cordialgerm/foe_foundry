@@ -14,6 +14,7 @@ class _GnomeSpecies(CreatureSpecies):
         )
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().alter_base_stats(stats)
         stats = stats.apply_monster_dials(
             MonsterDials(recommended_powers_modifier=-RIBBON_POWER)
         )

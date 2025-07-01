@@ -1,7 +1,6 @@
 import numpy as np
 
 from ..creature_types import CreatureType
-from ..creatures import SelectionSettings
 from ..statblocks import Statblock
 from .balor import BalorTemplate
 from .chimera import ChimeraTemplate
@@ -69,9 +68,7 @@ class _DefaultStatblockCache:
 
         crs = []
         settings = []
-        for setting in template.generate_settings(
-            selection_settings=SelectionSettings(retries=1)
-        ):
+        for setting in template.generate_settings():
             settings.append(setting)
             crs.append(setting.cr)
 
