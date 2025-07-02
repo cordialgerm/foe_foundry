@@ -451,6 +451,15 @@ p:has(> img.masked.padded)>img.masked.padded {
 
 }
 
+.monster-image-medium,
+.blog-image-medium {
+    max-height: 300px;
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
+
+}
+
 .monster-image-small,
 .blog-image-small {
     max-height: 200px;
@@ -459,6 +468,7 @@ p:has(> img.masked.padded)>img.masked.padded {
     height: auto;
 }
 
+.monster-image-large,
 .blog-image-large {
     max-height: 600px;
     background-color: transparent;
@@ -1307,6 +1317,7 @@ a.burnt-parchment,
 
 @media print {
 
+
     body {
         margin: 0;
         padding: 0;
@@ -1336,6 +1347,10 @@ a.burnt-parchment,
         max-width: 100% !important;
     }
 
+    .pamphlet-main h1 {
+        font-size: 2.5rem;
+    }
+
     h1,
     h2,
     h3 {
@@ -1343,6 +1358,11 @@ a.burnt-parchment,
         page-break-after: avoid;
         orphans: 3;
         widows: 3;
+    }
+
+    .page-break-after+h2,
+    .page-break-after+h3 {
+        margin-top: 2em;
     }
 
     p {
@@ -1428,6 +1448,10 @@ a.burnt-parchment,
     }
 
     .reroll-button {
+        display: none !important;
+    }
+
+    .admonition {
         display: none !important;
     }
 }
