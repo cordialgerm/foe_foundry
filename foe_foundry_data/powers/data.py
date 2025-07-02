@@ -109,6 +109,7 @@ class PowerModel:
     icon: str | None
     create_date: datetime | None
     features: List[FeatureModel]
+    reaction_count: int | str = 1
     creature_types: List[str] = field(default_factory=list)
     roles: List[str] = field(default_factory=list)
     damage_types: List[str] = field(default_factory=list)
@@ -148,6 +149,18 @@ class PowerModel:
         docs_dir = Path(__file__).parent.parent.parent / "docs"
         path = icon_path(self.icon)
         return str(path.relative_to(docs_dir)) if path else None
+
+    @property
+    def reaction_header(self) -> str:
+        if isinstance(self.reaction_count, int):
+            if self.reaction_count > 1:
+                reaction_header = f"Reactions ({self.reaction_count}/turn)"
+            else:
+                reaction_header = "Reactions"
+        else:
+            reaction_header = f"Reactions ({self.reaction_count})"
+
+        return reaction_header
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
@@ -263,6 +276,7 @@ class PowerModel:
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,
             features=feature_models,
+            reaction_count=stats.reaction_count,
             creature_types=to_str(power.creature_types),
             damage_types=to_str(power.damage_types),
             roles=to_str(power.roles),

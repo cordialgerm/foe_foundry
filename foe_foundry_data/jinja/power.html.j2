@@ -1,9 +1,9 @@
 {% from 'macros.html.j2' import features_block, property %}
 
 {% if icon %}
-<h2 class="power-name">{{icon}} {{ power.name }}</h2>
+<{{header_tag}} class="power-name">{{icon}} {{ power.name }}</{{header_tag}}>
 {% else %}
-<h2 class="power-name">{{ power.name }}</h2>
+<{{header_tag}} class="power-name">{{ power.name }}</{{header_tag}}>
 {% endif %}
 
 <div class="power-block {{ '' if power.columns_suggested else 'power-block-no-columns'}}" data-power="{{power.key}}">
@@ -12,5 +12,5 @@
     {{features_block(attacks, 'Attacks')}}
     {{features_block(spellcasting, 'Spellcasting')}}
     {{features_block(bonuses, 'Bonus Actions')}}
-    {{features_block(reactions, 'Reactions')}}
+    {{features_block(reactions, reaction_header)}}
 </div>

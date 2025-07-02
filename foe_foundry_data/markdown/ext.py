@@ -51,6 +51,7 @@ class LinkPreprocessor(Preprocessor):
     BUTTON_RE = re.compile(r"\[\[\$(?P<name3>.+?)\]\]")
     EMBED_RE = re.compile(r"\[\[!(?P<name4>.+?)\]\]")
     NEWSLETTER_RE = re.compile(r"\[\[\@(?P<text>.+?)\]\]")
+    HEADER_RE = re.compile(r"^(?P<hashes>#{1,6})\s+(?P<text>.+)")
 
     def __init__(
         self,
@@ -63,10 +64,16 @@ class LinkPreprocessor(Preprocessor):
         self.base_url = base_url
         self.ref_resolver = ref_resolver
         self.resolved_references = resolved_references
+        self.current_heading_level = 1
 
     def run(self, lines):
         new_lines = []
         for line in lines:
+            # Check if this line is a markdown header
+            header_match = self.HEADER_RE.match(line)
+            if header_match:
+                self.current_heading_level = len(header_match.group("hashes"))
+
             new_line = self.EMBED_RE.sub(self.replace_embed, line)
             new_line = self.NEWSLETTER_RE.sub(self.replace_newsletter, new_line)
             new_line = self.BUTTON_RE.sub(self.replace_button, new_line)
@@ -136,7 +143,9 @@ class LinkPreprocessor(Preprocessor):
             power_model = Powers.PowerLookup.get(power.key)
             if power_model is None:
                 raise ValueError(f"Power {power.key} not found in PowerLookup")
-            return render_power_fragment(power_model)
+
+            header_tag = f"h{self.current_heading_level + 1}"
+            return render_power_fragment(power_model, header_tag=header_tag)
 
         icon = inline_icon(entity_name)
         if icon is not None:

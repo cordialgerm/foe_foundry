@@ -451,6 +451,15 @@ p:has(> img.masked.padded)>img.masked.padded {
 
 }
 
+.monster-image-medium,
+.blog-image-medium {
+    max-height: 300px;
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
+
+}
+
 .monster-image-small,
 .blog-image-small {
     max-height: 200px;
@@ -459,6 +468,7 @@ p:has(> img.masked.padded)>img.masked.padded {
     height: auto;
 }
 
+.monster-image-large,
 .blog-image-large {
     max-height: 600px;
     background-color: transparent;
@@ -1300,7 +1310,46 @@ a.burnt-parchment,
     page-break-after: auto
 }
 
+@page {
+    size: A4 portrait;
+    margin: 15px;
+}
+
 @media print {
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pamphlet-main {
+        margin: 0 auto;
+        padding: 5mm 18mm;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container,
+    .row {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .stat-block {
+        column-count: 2 !important;
+        column-gap: 2em !important;
+        column-width: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .pamphlet-main h1 {
+        font-size: 2.5rem;
+    }
 
     h1,
     h2,
@@ -1309,6 +1358,11 @@ a.burnt-parchment,
         page-break-after: avoid;
         orphans: 3;
         widows: 3;
+    }
+
+    .page-break-after+h2,
+    .page-break-after+h3 {
+        margin-top: 2em;
     }
 
     p {
@@ -1351,7 +1405,7 @@ a.burnt-parchment,
         margin-top: 0px;
         margin-bottom: 1rem;
         border-bottom: 2px solid var(--primary-color);
-        padding-left: 130px;
+        padding-left: 5mm;
         font-family: var(--stylistic-font);
         font-size: 1.5rem;
         color: var(--fg-color);
@@ -1387,5 +1441,17 @@ a.burnt-parchment,
     .power-block::before,
     .power-block::after {
         content: unset;
+    }
+
+    .statblock-ref-button {
+        display: none !important;
+    }
+
+    .reroll-button {
+        display: none !important;
+    }
+
+    .admonition {
+        display: none !important;
     }
 }

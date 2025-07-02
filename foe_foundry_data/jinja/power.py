@@ -5,7 +5,7 @@ from ..powers import PowerModel
 from .env import JinjaEnv
 
 
-def render_power_fragment(power: PowerModel) -> str:
+def render_power_fragment(power: PowerModel, header_tag: str = "h2") -> str:
     """Renders a power HTML fragment for a single power"""
 
     template = JinjaEnv.get_template("power.html.j2")
@@ -27,6 +27,7 @@ def render_power_fragment(power: PowerModel) -> str:
 
     context = dict(
         power=power,
+        header_tag=header_tag,
         icon=icon,
         passives=passives,
         actions=actions,
@@ -34,6 +35,7 @@ def render_power_fragment(power: PowerModel) -> str:
         reactions=reactions,
         attacks=attack,
         spellcasting=spellcasting,
+        reaction_header=power.reaction_header,
     )
     html_raw = template.render(context)
     return html_raw
