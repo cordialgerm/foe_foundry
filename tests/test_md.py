@@ -1,4 +1,5 @@
 from foe_foundry_data.markdown import markdown
+from foe_foundry_data.refs import MonsterRef
 
 
 def test_markdown():
@@ -47,6 +48,7 @@ def test_embed_statblock_with_species():
     text = "This is [[!Orc Berserker]]"
     result = markdown(text)
     assert len(result.references) == 1
+    assert "Orc Orc Berserker" not in result.html
     assert "Orc Berserker" in result.html
     assert 'data-monster="orc-berserker"' in result.html
     assert 'data-species="orc"' in result.html
@@ -77,3 +79,41 @@ def test_embed_icon():
     text = "This is the [[!grapple.svg]] Grapple icon"
     result = markdown(text)
     assert len(result.html) > 100
+
+
+def test_monster_spec():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Orc Berserker Veteran
+color: blue
+power_weights:
+  just-a-scratch: 1
+  pushing-attack: 0.75
+```
+
+This is some more text after the YAML block.
+
+There's also some other unrelated yaml in here
+
+```yaml
+hello: world
+foo: bar
+```
+
+"""
+
+    result = markdown(text)
+    assert len(result.references) == 1
+
+    ref = result.references[0]
+    assert isinstance(ref, MonsterRef)
+    assert ref.monster is not None
+    assert ref.monster.key == "berserker-veteran"
+    assert ref.species is not None
+    assert ref.species.key == "orc"
+    assert ref.args_str is not None
+    assert ref.args is not None
+    assert ref.args["color"] == "blue"
+    assert "Just A Scratch" in result.html

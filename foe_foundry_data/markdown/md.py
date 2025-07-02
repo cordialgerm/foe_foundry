@@ -41,5 +41,5 @@ def markdown(text: str, strip_header: bool = True) -> RenderedMarkdown:
     toc = md.toc  # type: ignore
 
     return RenderedMarkdown(
-        html=html, toc=toc, header=header, references=ext.resolved_refences
+        html=html, toc=toc, header=header, references=ext.resolved_references
     )

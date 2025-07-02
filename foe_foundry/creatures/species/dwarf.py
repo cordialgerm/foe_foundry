@@ -13,6 +13,7 @@ class _DwarfSpecies(CreatureSpecies):
         )
 
     def alter_base_stats(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().alter_base_stats(stats)
         stats = stats.grant_resistance_or_immunity(resistances={DamageType.Poison})
         stats = stats.apply_monster_dials(
             MonsterDials(hp_multiplier=1.1, recommended_powers_modifier=-RIBBON_POWER)

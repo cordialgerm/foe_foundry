@@ -1,0 +1,208 @@
+from __future__ import annotations
+
+from abc import abstractmethod
+from dataclasses import dataclass, field
+from functools import cached_property
+from pathlib import Path
+from typing import Iterable
+
+from foe_foundry.attack_template import AttackTemplate
+from foe_foundry.features import Feature
+from foe_foundry.powers import PowerSelection
+from foe_foundry.powers.legendary import get_legendary_actions
+from foe_foundry.utils import find_image, find_lore
+from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
+
+from ..statblocks import BaseStatblock, Statblock  # noqa
+from ..utils import name_to_key
+from ._data import (
+    GenerationSettings,
+    Monster,
+    MonsterVariant,
+    StatsBeingGenerated,
+    rng_factory,
+)
+from .species import CreatureSpecies
+
+
+@dataclass(kw_only=True)
+class MonsterTemplate:
+    name: str
+    tag_line: str
+    description: str
+    environments: list[str]  # TODO - standardize
+    treasure: list[str]
+    variants: list[MonsterVariant]
+    species: list[CreatureSpecies]
+    is_sentient_species: bool = False
+    lore_md: str | None = field(init=False)
+
+    def __post_init__(self):
+        self.n_variant = len(self.variants)
+        self._variant_map = {v.key: v for v in self.variants}
+        self.n_species = len(self.species)
+
+        srd_creatures = set()
+        other_creatures = set()
+        for v in self.variants:
+            for s in v.monsters:
+                if s.srd_creatures is not None:
+                    srd_creatures.update(s.srd_creatures)
+                if s.other_creatures is not None:
+                    other_creatures.update(s.other_creatures.keys())
+        self.srd_ceatures = sorted(list(srd_creatures))
+        self.other_creatures = sorted(list(other_creatures))
+
+        # update tag line from lore, if available
+        lore_path = find_lore(self.key)
+        if lore_path is not None:
+            lore_md = strip_yaml_frontmatter(lore_path.read_text(encoding="utf-8"))
+            tagline = extract_tagline(lore_md)
+            if tagline is not None:
+                self.tag_line = tagline.strip()
+            self.lore_md = lore_md
+        else:
+            self.lore_md = None
+
+    @cached_property
+    def image_urls(self) -> dict[str, list[Path]]:
+        urls = {}
+        urls[self.key] = find_image(self.key)
+        for variant in self.variants:
+            image_urls = find_image(variant.key)
+            if len(image_urls) == 0:
+                image_urls = find_image(self.key)
+            urls[variant.key] = image_urls
+        return urls
+
+    @cached_property
+    def primary_image_url(self) -> Path | None:
+        urls = self.image_urls.get(self.key)
+        if urls is None:
+            return None
+
+        return urls[0] if len(urls) else None
+
+    def get_images(self, variant: str) -> list[Path]:
+        if variant not in self._variant_map:
+            raise ValueError(f"Variant {variant} not found in template {self.name}")
+
+        variant_images = self.image_urls.get(variant, [])
+        if len(variant_images) == 0:
+            return self.image_urls.get(self.key, [])
+        else:
+            return variant_images
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
+
+    def __hash__(self) -> int:
+        return hash(self.name)
+
+    def generate(self, settings: GenerationSettings) -> StatsBeingGenerated:
+        """Creates a statblock for the given generation settings"""
+
+        stats, attacks = self.generate_stats(settings)
+
+        # INITIALIZE ATTACKS
+        primary_attack = attacks[0]
+        stats = primary_attack.alter_base_stats(stats)
+        stats = primary_attack.initialize_attack(stats)
+        if len(attacks) > 1:
+            for secondary_attack in attacks[1:]:
+                stats = secondary_attack.add_as_secondary_attack(stats)
+
+        # POWERS
+        power_selection = self.choose_powers(settings)
+        powers = power_selection.choose_powers(settings.selection_settings)
+
+        # SPECIES CUSTOMIZATION
+        if settings.species is not None:
+            stats = settings.species.alter_base_stats(stats)
+
+        # POWERS
+        features: list[Feature] = []
+        for power in powers:
+            stats = power.modify_stats(stats)
+            features += power.generate_features(stats)
+
+        # ATTACKS
+        for attack in attacks:
+            stats = attack.finalize_attacks(stats, settings.rng, repair_all=False)
+
+        # LEGENDARY ATTACKS
+        if stats.is_legendary:
+            legendary_features = get_legendary_actions(stats, features)
+            features += legendary_features
+
+        return StatsBeingGenerated(stats=stats, features=features, powers=powers)
+
+    def generate_monster(
+        self,
+        variant: MonsterVariant,
+        monster: Monster,
+        species: CreatureSpecies | None = None,
+        **kwargs,
+    ) -> StatsBeingGenerated:
+        """Creates a statblock for the given suggested CR"""
+
+        if species is None or species.key == "human":
+            creature_name = monster.name
+        else:
+            creature_name = f"{species.name} {monster.name}"
+
+        args: dict = (
+            dict(
+                creature_name=creature_name,
+                monster_template=self.name,
+                monster_key=monster.key,
+                cr=monster.cr,
+                is_legendary=monster.is_legendary,
+                variant=variant,
+                species=species,
+                rng=rng_factory(monster, species),
+            )
+            | kwargs
+        )
+
+        settings = GenerationSettings(**args)
+        return self.generate(settings)
+
+    def generate_all(self, **kwargs) -> Iterable[StatsBeingGenerated]:
+        """Generate one instance of a statblock for each variant and suggested CR in this template"""
+        for settings in self.generate_settings(**kwargs):
+            yield self.generate(settings)
+
+    def generate_settings(self, **kwargs) -> list[GenerationSettings]:
+        """Generates all possible settings for this template"""
+        options = []
+        for variant in self.variants:
+            for monster in variant.monsters:
+                for species in self.species if self.n_species > 0 else [None]:
+                    args: dict = (
+                        dict(
+                            creature_name=monster.name,
+                            monster_template=self.name,
+                            monster_key=monster.key,
+                            cr=monster.cr,
+                            is_legendary=monster.is_legendary,
+                            variant=variant,
+                            species=species,
+                            rng=rng_factory(monster, species),
+                        )
+                        | kwargs
+                    )
+
+                    options.append(GenerationSettings(**args))
+        return options
+
+    @abstractmethod
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        pass
+
+    @abstractmethod
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        pass

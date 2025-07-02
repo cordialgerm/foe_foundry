@@ -1,3 +1,3 @@
-from .selector import PowerSelector, select_powers  # noqa
-from .custom import CustomPowerWeight, CustomPowerSelection, NewPowerSelection, PowerLoadout  # noqa
+from .loadout import PowerLoadout  # noqa
+from .selection import PowerSelection  # noqa
 from .settings import SelectionSettings  # noqa

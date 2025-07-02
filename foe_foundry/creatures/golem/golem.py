@@ -1,21 +1,21 @@
+from foe_foundry.statblocks import BaseStatblock
+
 from ...ac_templates import NaturalPlating, Unarmored
-from ...attack_template import natural, spell
+from ...attack_template import AttackTemplate, natural, spell
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import (
-    NewPowerSelection,
-    select_powers,
+    PowerSelection,
 )
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Stats, StatScaling
 from ...statblocks import MonsterDials
-from .._data import (
+from .._template import (
     GenerationSettings,
     Monster,
     MonsterTemplate,
     MonsterVariant,
-    StatsBeingGenerated,
 )
 from ..base_stats import base_stats
 from . import powers
@@ -82,176 +82,162 @@ ShieldGuardianVariant = MonsterVariant(
 )
 
 
-def choose_powers(settings: GenerationSettings) -> NewPowerSelection:
-    if settings.variant is ShieldGuardianVariant:
-        return NewPowerSelection(powers.LoadoutShieldGuardian, settings.rng)
-    elif settings.variant is StoneVariant:
-        return NewPowerSelection(powers.LoadoutStoneGolem, settings.rng)
-    elif settings.variant is ClayVariant:
-        return NewPowerSelection(powers.LoadoutClayGolem, settings.rng)
-    elif settings.variant is FleshVariant:
-        return NewPowerSelection(powers.LoadoutFleshGolem, settings.rng)
-    elif settings.variant is IronVariant:
-        return NewPowerSelection(powers.LoadoutIronGolem, settings.rng)
-    elif settings.variant is IceVariant:
-        return NewPowerSelection(powers.LoadoutIceGolem, settings.rng)
-    else:
-        raise ValueError(f"Unknown golem variant: {settings.variant.key}")
+class _GolemTemplate(MonsterTemplate):
+    def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
+        if settings.variant is ShieldGuardianVariant:
+            return PowerSelection(powers.LoadoutShieldGuardian)
+        elif settings.variant is StoneVariant:
+            return PowerSelection(powers.LoadoutStoneGolem)
+        elif settings.variant is ClayVariant:
+            return PowerSelection(powers.LoadoutClayGolem)
+        elif settings.variant is FleshVariant:
+            return PowerSelection(powers.LoadoutFleshGolem)
+        elif settings.variant is IronVariant:
+            return PowerSelection(powers.LoadoutIronGolem)
+        elif settings.variant is IceVariant:
+            return PowerSelection(powers.LoadoutIceGolem)
+        else:
+            raise ValueError(f"Unknown golem variant: {settings.variant.key}")
 
+    def generate_stats(
+        self, settings: GenerationSettings
+    ) -> tuple[BaseStatblock, list[AttackTemplate]]:
+        name = settings.creature_name
+        cr = settings.cr
+        variant = settings.variant
+        rng = settings.rng
 
-def generate_golem(settings: GenerationSettings) -> StatsBeingGenerated:
-    name = settings.creature_name
-    cr = settings.cr
-    variant = settings.variant
-    rng = settings.rng
+        # STATS
 
-    # STATS
+        if variant is not FleshVariant:
+            attrs = [
+                Stats.STR.scaler(StatScaling.Primary),
+                Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
+                Stats.CON.scaler(StatScaling.Constitution, mod=2),
+                Stats.INT.scaler(StatScaling.NoScaling, mod=-7),
+                Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
+                Stats.CHA.scaler(StatScaling.NoScaling, mod=-9),
+            ]
+        else:
+            attrs = [
+                Stats.STR.scaler(StatScaling.Primary),
+                Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
+                Stats.CON.scaler(StatScaling.Constitution, mod=2),
+                Stats.INT.scaler(StatScaling.NoScaling, mod=-3),
+                Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
+                Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
+            ]
 
-    if variant is not FleshVariant:
-        attrs = [
-            Stats.STR.scaler(StatScaling.Primary),
-            Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
-            Stats.CON.scaler(StatScaling.Constitution, mod=2),
-            Stats.INT.scaler(StatScaling.NoScaling, mod=-7),
-            Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
-            Stats.CHA.scaler(StatScaling.NoScaling, mod=-9),
-        ]
-    else:
-        attrs = [
-            Stats.STR.scaler(StatScaling.Primary),
-            Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
-            Stats.CON.scaler(StatScaling.Constitution, mod=2),
-            Stats.INT.scaler(StatScaling.NoScaling, mod=-3),
-            Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
-            Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
-        ]
-
-    stats = base_stats(
-        name=name,
-        variant_key=settings.variant.key,
-        template_key=settings.monster_template,
-        monster_key=settings.monster_key,
-        cr=cr,
-        stats=attrs,
-        hp_multiplier=settings.hp_multiplier,
-        damage_multiplier=settings.damage_multiplier,
-    )
-
-    stats = stats.copy(
-        creature_type=CreatureType.Construct,
-        size=Size.Large,
-        languages=["Understands commands given in any language but can't speak"],
-        creature_class="Golem",
-        senses=stats.senses.copy(darkvision=120),
-    )
-
-    # ARMOR CLASS
-    if variant is FleshVariant:
-        stats = stats.add_ac_template(Unarmored)
-    else:
-        stats = stats.add_ac_template(NaturalPlating)
-
-    # ATTACKS
-    if variant is IceVariant:
-        attack = natural.Slam.with_display_name("Frozen Fist")
-        secondary_attack = spell.Frostbolt.with_display_name("Ice Shards").copy(
-            damage_scalar=0.85
-        )
-        secondary_damage_type = DamageType.Cold
-    elif variant is ShieldGuardianVariant:
-        attack = natural.Slam.with_display_name("Protective Fist")
-        secondary_attack = None
-        secondary_damage_type = DamageType.Force
-    elif variant is FleshVariant:
-        attack = natural.Slam.with_display_name("Mutilated Fist")
-        secondary_attack = None
-        secondary_damage_type = DamageType.Lightning
-    elif variant is IronVariant:
-        attack = natural.Slam.with_display_name("Iron Fist")
-        secondary_attack = spell.Firebolt.with_display_name("Fiery Beams").copy(
-            damage_scalar=0.9
-        )
-        secondary_damage_type = DamageType.Fire
-    elif variant is ClayVariant:
-        attack = natural.Slam.with_display_name("Dissolving Fist")
-        secondary_attack = None
-        secondary_damage_type = DamageType.Acid
-    elif variant is StoneVariant:
-        attack = natural.Slam
-        secondary_attack = spell.ArcaneBurst.with_display_name("Core Eruption").copy(
-            damage_scalar=0.85
-        )
-        secondary_damage_type = DamageType.Force
-
-    stats = attack.alter_base_stats(stats)
-    stats = attack.initialize_attack(stats)
-    stats = stats.copy(
-        secondary_damage_type=secondary_damage_type,
-    )
-    if secondary_attack is not None:
-        stats = secondary_attack.copy(damage_scalar=0.9).add_as_secondary_attack(stats)
-
-    # Golems have a slow attack speed, but attacks hit hard
-    stats = stats.with_reduced_attacks(reduce_by=2, min_attacks=2)
-
-    # Golems have high HP and AC and lower damage
-    # Flesh Golems are a bit more aggressive since they're unarmored
-    if variant is FleshVariant:
-        stats = stats.apply_monster_dials(
-            MonsterDials(hp_multiplier=1.4, attack_damage_multiplier=0.9)
-        )
-    else:
-        stats = stats.apply_monster_dials(
-            MonsterDials(hp_multiplier=1.25, attack_damage_multiplier=0.8)
+        stats = base_stats(
+            name=name,
+            variant_key=settings.variant.key,
+            template_key=settings.monster_template,
+            monster_key=settings.monster_key,
+            cr=cr,
+            stats=attrs,
+            hp_multiplier=settings.hp_multiplier,
+            damage_multiplier=settings.damage_multiplier,
         )
 
-    # ROLES
-    stats = stats.with_roles(
-        primary_role=MonsterRole.Defender, additional_roles=[MonsterRole.Soldier]
-    )
+        stats = stats.copy(
+            creature_type=CreatureType.Construct,
+            size=Size.Large,
+            languages=["Understands commands given in any language but can't speak"],
+            creature_class="Golem",
+            senses=stats.senses.copy(darkvision=120),
+        )
 
-    # IMMUNITIES
-    stats = stats.grant_resistance_or_immunity(
-        immunities={DamageType.Poison, DamageType.Psychic}
-        if variant is not FleshVariant
-        else {DamageType.Poison},
-        conditions={
-            Condition.Poisoned,
-            Condition.Charmed,
-            Condition.Exhaustion,
-            Condition.Frightened,
-            Condition.Paralyzed,
-            Condition.Petrified,
-        },
-    )
-    if secondary_damage_type is not None and variant in {
-        IceVariant,
-        IronVariant,
-        FleshVariant,
-        ClayVariant,
-    }:
-        stats = stats.grant_resistance_or_immunity(immunities={secondary_damage_type})
+        # ARMOR CLASS
+        if variant is FleshVariant:
+            stats = stats.add_ac_template(Unarmored)
+        else:
+            stats = stats.add_ac_template(NaturalPlating)
 
-    # POWERS
-    features = []
+        # ATTACKS
+        if variant is IceVariant:
+            attack = natural.Slam.with_display_name("Frozen Fist")
+            secondary_attack = spell.Frostbolt.with_display_name("Ice Shards").copy(
+                damage_scalar=0.85
+            )
+            secondary_damage_type = DamageType.Cold
+        elif variant is ShieldGuardianVariant:
+            attack = natural.Slam.with_display_name("Protective Fist")
+            secondary_attack = None
+            secondary_damage_type = DamageType.Force
+        elif variant is FleshVariant:
+            attack = natural.Slam.with_display_name("Mutilated Fist")
+            secondary_attack = None
+            secondary_damage_type = DamageType.Lightning
+        elif variant is IronVariant:
+            attack = natural.Slam.with_display_name("Iron Fist")
+            secondary_attack = spell.Firebolt.with_display_name("Fiery Beams").copy(
+                damage_scalar=0.9
+            )
+            secondary_damage_type = DamageType.Fire
+        elif variant is ClayVariant:
+            attack = natural.Slam.with_display_name("Dissolving Fist")
+            secondary_attack = None
+            secondary_damage_type = DamageType.Acid
+        elif variant is StoneVariant:
+            attack = natural.Slam
+            secondary_attack = spell.ArcaneBurst.with_display_name(
+                "Core Eruption"
+            ).copy(damage_scalar=0.85)
+            secondary_damage_type = DamageType.Force
 
-    # ADDITIONAL POWERS
-    stats, power_features, power_selection = select_powers(
-        stats=stats,
-        rng=rng,
-        settings=settings.selection_settings,
-        custom=choose_powers(settings),
-    )
-    features += power_features
+        stats = stats.copy(
+            secondary_damage_type=secondary_damage_type,
+        )
+        if secondary_attack is not None:
+            secondary_attack = secondary_attack.copy(damage_scalar=0.9)
 
-    # FINALIZE
-    stats = attack.finalize_attacks(stats, rng, repair_all=False)
-    if secondary_attack is not None:
-        stats = secondary_attack.finalize_attacks(stats, rng, repair_all=False)
-    return StatsBeingGenerated(stats=stats, features=features, powers=power_selection)
+        # Golems have a slow attack speed, but attacks hit hard
+        stats = stats.with_reduced_attacks(reduce_by=2, min_attacks=2)
+
+        # Golems have high HP and AC and lower damage
+        # Flesh Golems are a bit more aggressive since they're unarmored
+        if variant is FleshVariant:
+            stats = stats.apply_monster_dials(
+                MonsterDials(hp_multiplier=1.4, attack_damage_multiplier=0.9)
+            )
+        else:
+            stats = stats.apply_monster_dials(
+                MonsterDials(hp_multiplier=1.25, attack_damage_multiplier=0.8)
+            )
+
+        # ROLES
+        stats = stats.with_roles(
+            primary_role=MonsterRole.Defender, additional_roles=[MonsterRole.Soldier]
+        )
+
+        # IMMUNITIES
+        stats = stats.grant_resistance_or_immunity(
+            immunities={DamageType.Poison, DamageType.Psychic}
+            if variant is not FleshVariant
+            else {DamageType.Poison},
+            conditions={
+                Condition.Poisoned,
+                Condition.Charmed,
+                Condition.Exhaustion,
+                Condition.Frightened,
+                Condition.Paralyzed,
+                Condition.Petrified,
+            },
+        )
+        if secondary_damage_type is not None and variant in {
+            IceVariant,
+            IronVariant,
+            FleshVariant,
+            ClayVariant,
+        }:
+            stats = stats.grant_resistance_or_immunity(
+                immunities={secondary_damage_type}
+            )
+
+        return stats, [attack, secondary_attack] if secondary_attack else [attack]
 
 
-GolemTemplate: MonsterTemplate = MonsterTemplate(
+GolemTemplate: MonsterTemplate = _GolemTemplate(
     name="Golem",
     tag_line="Constructed Servants",
     description="Golems are magically animated constructs of great strength and durability. They are typically created to serve as guardians, servants, or protectors.",
@@ -266,5 +252,4 @@ GolemTemplate: MonsterTemplate = MonsterTemplate(
         ShieldGuardianVariant,
     ],
     species=[],
-    callback=generate_golem,
 )

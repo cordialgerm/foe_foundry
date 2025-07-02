@@ -74,6 +74,11 @@ Monstrosities in 5E make for unforgettable encounters, especially in mid-tier ca
 
 ---
 
+## Related Articles
+
+- [Making Merrow Fun, Deadly, and Worth Running](../blog/2025_06_08_merrow.md)
+- [Building a Better Basilisk](../blog/2025_06_29_basilisk.md)
+
 ## FAQ
 
 ### What makes a creature a monstrosity in 5E?
