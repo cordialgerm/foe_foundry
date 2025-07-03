@@ -1,6 +1,6 @@
 from foe_foundry.powers import PowerLoadout
 from foe_foundry.powers.roles import bruiser, leader, soldier
-from foe_foundry.powers.themed import fearsome, reckless, technique, tough
+from foe_foundry.powers.themed import fearsome, honorable, reckless, technique, tough
 
 # Berserk
 PerksBerserk = [reckless.Reckless]
@@ -22,6 +22,7 @@ PerksBattleHardened = [
     technique.PushingAttack,
     bruiser.CleavingBlows,
     bruiser.Rend,
+    honorable.Challenge,
 ]
 
 # Shrug it Off
@@ -32,7 +33,11 @@ PerksShrugItOff = [
 ]
 
 # Lead the Charge
-PerksLeadTheCharge = [fearsome.FearsomeRoar, leader.CommandTheAttack]
+PerksLeadTheCharge = [
+    fearsome.FearsomeRoar,
+    leader.CommandTheAttack,
+    honorable.MortalVow,
+]
 
 # Legendary
 PerksLegendary = [soldier.ActionSurge]
