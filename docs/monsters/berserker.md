@@ -97,7 +97,7 @@ Yes. A berserker might serve as a bodyguard, rival, or tragic companion — espe
 Berserkers often hail from tribal warbands, remote frontiers, or warrior cults. They're common in harsh climates, contested borderlands, or anywhere honor and battle are sacred.
 
 **How do Berserkers interact with fear, charm, or mind control?**  
-All [Foe Foundry](../index.md){.branding} [[Berserkers]] are immune to being *Frightened*. The [[Berserker Legend]] is also immune to being *Charmed*. This is due their sheer ferocity overpowering any foreign mental influence.
+All [Foe Foundry](../index.md){.branding} [[Berserkers]] are immune to being *Frightened*. The [[Berserker Legend]] is also immune to being *Charmed*. This is due to their sheer ferocity overpowering any foreign mental influence.
 
 **What’s the best level for a Berserker encounter?**  
 A single berserker (CR 2) with 4 [[Shock Infantry]] fits well against a level 4 party. Veterans and Legends are suitable for mid to high-tier play and can be used as solo minibosses or elite skirmishers.
