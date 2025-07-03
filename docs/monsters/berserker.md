@@ -40,6 +40,8 @@ Berserkers are the classic [5E Bruiser](../topics/monster_roles.md#bruiser). The
 - Berserkers stay in the fight longer than expected, leveraging [[Bloodied Rage]] or [[Just a Scratch]] to push through wounds.
 - They often call out the party’s fiercest warrior to a duel, using abilities like [[Challenge]], forcing high-stakes 1v1s to test their might.
 
+---
+
 ## Berserker Statblocks
 
 ### Berserker
@@ -60,7 +62,11 @@ Wherever they walk, battle follows. The [[Berserker Legend]] is myth made flesh,
 
 [[!Berserker Legend]]
 
+---
+
 ## Berserker Encounters
+
+Looking for berserker encounter ideas for 5E? These dynamic combat scenes drop your players into duels, last stands, and blood-soaked challenges against furious warriors.
 
 - The PCs stumble across the corpse of a great monster (such as a [[Chimera]]) freshly killed and surrounded by the bodies of fallen [[Berserkers]]. A single warrior clings to life, waiting to pass on the saga of the fallen
 - A dwindling band of [[Berserkers]] makes a heroic last stand against an overwhelming squad of **Hobgoblins**. Despite being outnumbered, they refuse to break.
@@ -68,6 +74,8 @@ Wherever they walk, battle follows. The [[Berserker Legend]] is myth made flesh,
 - The only bridge over a dangerous chasm is guarded by a [[Berserker Legend]] who will only let worthy combatants pass. She took a vow to never let a coward pass.
 
 ## Berserker Adventures
+
+These berserker-themed 5E adventure hooks add emotional depth, deadly rivalries, and mythic stakes to your next sessions and are perfect for one-shots or ongoing campaigns.
 
 - A [[Berserker Veteran]] has been exiled for the one crime their kind cannot forgive - cowardice in battle. In truth, another warrior fled the field and cast blame to preserve their own honor, and now sings songs of false victory. Hunted and disgraced, the veteran seeks the party's help to lure the traitor into a formal duel to reclaim their honor.
 - A beautiful but desperate woman hires the party to free her former lover, a captured warrior now forced to fight as a [[Berserker]] in brutal gladiatorial matches. Once a proud soldier, he's become a blood-soaked spectacle and is convinced she betrayed him. In truth, she tried to ransom him after his capture, but her payment was intercepted by a rival **Noble** who intends to see him die in the pit.
