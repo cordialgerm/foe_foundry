@@ -10,7 +10,7 @@ json_ld: true
 
 *Acidic, Nigh-Invisible Dungeon Cleaner*
 
-A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eeie purpose, as if some deeper instinct compels their mindless patrol.
+A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eerie purpose, as if some deeper instinct compels their mindless patrol.
 
 Unless it's recently dined, a gelatinous cube is nearly invisible. Many a would-be hero has walked directly into one, only to add their gear to the cube's collection. Over decades, cubes expand to fill available space, with some ancient cubes reaching tremendous sizes.
 
