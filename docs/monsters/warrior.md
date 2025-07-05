@@ -41,6 +41,9 @@ Warriors are classic [5E Soldiers](../topics/monster_roles.md#soldier), focused 
 
 ## Warrior Statblocks
 
+!!! info "More Martial NPC Statblocks"
+    See [Soldiers and Fighters](../families/soldiers_and_fighters.md) for more martial NPC statblocks.
+
 If you’re running a military or war-themed 5E campaign, these military NPCs cover every rank: from fresh recruits to legendary commanders. They're the perfect martial NPCs for nonmagical encounters.
 
 ### 5E Statblocks for Veterans, Soldiers, and Martial NPCs

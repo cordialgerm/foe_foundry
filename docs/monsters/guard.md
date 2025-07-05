@@ -64,6 +64,9 @@ Guards are quintessential [5E Defenders](../topics/monster_roles.md#defender). T
 
 ## Guard Statblocks
 
+!!! info "More Martial NPC Statblocks"
+    See [Soldiers and Fighters](../families/soldiers_and_fighters.md) for more martial NPC statblocks.
+
 ### 5E Statblocks for Watchmen, Wardens, and Urban NPCs
 
 These guard-themed NPCs are designed for 5E adventures inlcuding urban conflict, merchant escorts, and castle infiltrations. Whether you're running a stealthy heist, a political intrigue, or a tense city standoff, these statblocks give you scalable guard NPCs with flavorful powers.

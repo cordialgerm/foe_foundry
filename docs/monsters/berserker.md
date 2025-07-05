@@ -44,6 +44,9 @@ Berserkers are the classic [5E Bruiser](../topics/monster_roles.md#bruiser). The
 
 ## Berserker Statblocks
 
+!!! info "More Martial NPC Statblocks"
+    See [Soldiers and Fighters](../families/soldiers_and_fighters.md) for more martial NPC statblocks.
+
 ### Berserker
 
 A [[Berserker]] is a frenzied warrior who charges headlong into danger, wielding brute strength and wild fury with no regard for defense.
