@@ -146,7 +146,7 @@ class _InspiringCommander(LeaderPower):
         super().__init__(
             name="Inspiring Commander",
             source="A5E SRD Knight",
-            icon="ceasar",
+            icon="caesar",
             power_level=HIGH_POWER,
             require_callback=is_positive_leader,
         )
@@ -221,6 +221,7 @@ LeaderPowers: List[Power] = [
     CommandTheTroops,
     CommandTheAttack,
     FanaticFollowers,
+    InspiringCommander,
     Intimidate,
     RallyTheTroops,
     StayInFormation,
