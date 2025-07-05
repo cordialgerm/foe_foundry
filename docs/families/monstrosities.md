@@ -54,7 +54,8 @@ Monstrosities in 5E make for unforgettable encounters, especially in mid-tier ca
 
 ### Monstrous Encounter Ideas
 
-*Note: See individual monster pages for additional encounter ideas*
+!!! info "More Encounter Ideas"
+    See individual monster pages for additional encounter ideas
 
 - The PCs stumble across a **Chimera** in a charred clearing with two of its heads arguing about which will get the choice bits of the burned meal lying beside it
 - As the PCs journey on a mountain path, it hugs a sheer cliff, which is home to several (1d4 + 1) squabbling **Manticores**. The Manticores argue amongst themselves - for now - and their roars and hurled insults echo off the cliff.
@@ -64,7 +65,8 @@ Monstrosities in 5E make for unforgettable encounters, especially in mid-tier ca
 
 ### Monstrous Adventure Ideas
 
-*Note: See individual monster pages for additional adventure ideas*
+!!! info "More Adventure Ideas"
+    See individual monster pages for additional adventure ideas
 
 - A well-regarded **Priest** of a local temple has foretold that the PCs are the destined heros who will destroy the **Chimera** and prevent an imminent calamity to the local region
 - A **Hag** has manipulated four **Manticore** into her service by playing to their egos. Now they test adventuring parties, devouring the weakest and bringing back the strongest in chains to serve the Hag. Locals beg the party to end the twisted trials.
@@ -78,6 +80,8 @@ Monstrosities in 5E make for unforgettable encounters, especially in mid-tier ca
 
 - [Making Merrow Fun, Deadly, and Worth Running](../blog/2025_06_08_merrow.md)
 - [Building a Better Basilisk](../blog/2025_06_29_basilisk.md)
+
+---
 
 ## FAQ
 

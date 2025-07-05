@@ -11,8 +11,8 @@ json_ld: true
 *Disciplined Soldiers of Steel and Strategy*
 
 - [Jump to Warrior Statblocks](#warrior-statblocks)
-- [Jump to Warrior Encounters](#warrior-encounters)
-- [Jump to Warrior Adventures](#warrior-adventures)
+- [Jump to Warrior Encounters](#warrior-encounter-ideas)
+- [Jump to Warrior Adventures](#warrior-adventure-ideas)
 
 When war breaks out, it's not dragons or owlbears who hold the line - it's warriors. These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
 
