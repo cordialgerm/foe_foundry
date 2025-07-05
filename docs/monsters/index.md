@@ -23,17 +23,21 @@ chaotic tricksters, pillagers, and endless nuisances
 
 Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
 
+- [Berserkers](../monsters/berserker.md) - battle-frenzied warriors of blood and glory
 - [Cultists](cultist.md) - worshippers of the occult and forbidden
 - [Goblins](goblin.md) - little balls of mischief and mayhem
+- [Guards](guard.md) - watchful sentries and keepers of the peace
 - [Mages](mage.md) - master of arcane magicks
 - [Orcs](orc.md) - bloodrage-fueled ancestral warriors
 - [Priests](priest.md) - faithful instruments of the divine
+- [Warriors](warrior.md) - disciplined soldiers of steel and strategy
 
 See also these curated **Humanoid Family Pages** for curated collections of related monsters:
 
 - [Fanatics and Faithful](../families/fanatics_and_faithful.md)
 - [Orcs and Goblinoids](../families/orcs_and_goblinoids.md)
 - [Rivals](../families/rivals.md)
+- [Soldiers and Fighters](../families/soldiers_and_fighters.md)
 - [Villains](../families/villains.md)
 
 ![A Cryomancer prepares an icy blast](../img/monsters/cryomancer2.webp){.monster-image .masked .white-background}

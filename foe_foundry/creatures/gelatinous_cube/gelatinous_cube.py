@@ -105,7 +105,7 @@ class _CubeTemplate(MonsterTemplate):
 GelatinousCubeTemplate: MonsterTemplate = _CubeTemplate(
     name="Gelatinous Cube",
     tag_line="Acidic, Nigh-Invisible Dungeon Cleaner",
-    description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eeie purpose, as if some deeper instinct compels their mindless patrol.",
+    description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eerie purpose, as if some deeper instinct compels their mindless patrol.",
     environments=["Underdark"],
     treasure=[],
     variants=[GelatinousCubeVariant],

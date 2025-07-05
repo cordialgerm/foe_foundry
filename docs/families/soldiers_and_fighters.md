@@ -31,7 +31,7 @@ Use these statblocks to bring martial realism and grounded combat drama to your 
 
 *Disciplined Soldiers of Steel and Strategy*
 
-When war breaks out, it's not dragons or owlbears who hold the line - it's warriors. These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
+When war breaks out, it's not dragons or owlbears who hold the line - it's [Warriors](../monsters/warrior.md). These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
 
 They are the backbone of armies, mercenary bands, and noble retinues. Some serve their liege proudly, while others sell their blades to the highest bidder. From shield-bearing infantry to field commanders, warriors exemplify martial discipline honed by battle.
 
@@ -49,7 +49,7 @@ They are the backbone of armies, mercenary bands, and noble retinues. Some serve
 
 *Battle-Frenzied Warriors of Blood and Glory*
 
-Berserkers are warriors gripped by a primal fury. Blood-soaked and unrelenting, a berserker is consumed by an adrenaline-fueled recklessness that drives them head-first into the fray.
+[Berserkers](../monsters/berserker.md) are warriors gripped by a primal fury. Blood-soaked and unrelenting, a berserker is consumed by an adrenaline-fueled recklessness that drives them head-first into the fray.
 
 Unlike disciplined soldier NPCs such as [[Warriors]] or [[Guards]], [[Berserkers]] don't march or form ranks. They crash into battle as howling shock troops, disrupting formations and challenging the strongest enemy they can find. Their armor is light, their weapons heavy, and their bravado is absolute. 
 
@@ -71,11 +71,19 @@ To a berserker, a good death is the only kind worth having. To fall in battle, w
 
 *Watchful Sentries and Keepers of the Peace*
 
-Guards protect people, places, and posessions. Sometimes for coin, sometimes out of duty, and sometimes because it’s the only job in town. They're not elite warriors, but they are trained to be observant and to act quickly when trouble starts.  
+[Guards](../monsters/guard.md) protect people, places, and posessions. Sometimes for coin, sometimes out of duty, and sometimes because it’s the only job in town. They're not elite warriors, but they are trained to be observant and to act quickly when trouble starts.  
 
 Guards serve in many positions, including lookouts, bouncers, caravan escorts, or the city watch. What they lack in elite training, they often make up for in numbers and authority. In corrupt cities, a badge is just a license to shake people down. In just ones, guards are the thread that holds society together.  
 
 Whether manning a city gate or shadowing a suspicious group of mercenaries, guards are omnipresent in the lives of adventurers, and often the first line of defense when plans go sideways.  
+
+[Explore the Guard NPC statblocks](../monsters/guard.md) or take a look at this example [[Sergeant of the Watch]]:
+
+[[!Sergeant of the Watch]]
+
+[[$Sergeant of the Watch]]
+
+![A 5E guard NPC stands guard](../img/monsters/guard.webp){.monster-image .masked}
 
 ---
 
