@@ -3,7 +3,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...ac_templates import BerserkersDefense
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
-from ...damage import DamageType
+from ...damage import Condition, DamageType
 from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
@@ -144,6 +144,12 @@ class _BerserkerTemplate(MonsterTemplate):
             stats = stats.copy(
                 attributes=stats.attributes.grant_save_proficiency(Stats.CON, Stats.STR)
             )
+
+        # IMMUNITIES
+        stats = stats.grant_resistance_or_immunity(conditions={Condition.Frightened})
+
+        if settings.is_legendary:
+            stats = stats.grant_resistance_or_immunity(conditions={Condition.Charmed})
 
         return stats, [attack]
 
