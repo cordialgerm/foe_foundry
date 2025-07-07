@@ -1,7 +1,7 @@
 ---
 title: Berserker Statblocks and Encounters for 5E | Foe Foundry
 short_title: Berserkers
-description: Unleash the fury of battle with berserker statblocks, lore, and encounter ideas for 5E. Discover new berserker variants and unforgettable adventures packed with blood, glory, and primal rage.
+description: Unleash the fury of battle with berserker and encounters. Discover new variants packed with blood, glory, and primal rage for your 5E games.
 image: img/monsters/berserker.webp
 json_ld: true
 ---

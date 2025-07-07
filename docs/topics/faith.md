@@ -1,7 +1,7 @@
 ---
 title: Faith and Belief in a Low Magic Setting | Foe Foundry
 short_title: Faith & Belief
-description: Explore how to run a low-magic setting in your 5E fantasy TTRPG. Use distant or ambiguous gods, saintly miracles, and heresy to create a grittier dark fantasy feel.
+description: Explore how to run a low-magic setting in your 5E game. Use distant or ambiguous gods, saintly miracles, and heresy to create a grittier dark fantasy feel.
 image: img/monsters/priest.webp
 json_ld: true
 ---

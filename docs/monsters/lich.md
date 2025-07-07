@@ -1,7 +1,7 @@
 ---
 title: Lich Statblocks and Encounters for 5E | Foe Foundry
 short_title: Lich Statblocks and Encounters
-description: Unleash powerful liches with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Unleash powerful liches with Foe Foundry. Unlock custom statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/lich.webp
 json_ld: true
 ---

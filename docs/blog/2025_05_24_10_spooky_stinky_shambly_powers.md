@@ -1,7 +1,7 @@
 ---
 title: 10 Unique 5E Powers for Skeletons and Zombies | Foe Foundry
 short_title: 10 Unique 5E Powers for Skeletons and Zombies
-description: Discover 10 unique powers for 5E skeletons and zombies in your next undead encounter. Perfect for Dungeon Masters looking to add horror, disease, and dread to their tabletop RPG battles.
+description: Discover 10 unique powers for 5E skeletons and zombie encounters. Perfect for DMs looking to add horror, disease, and dread to their 5E battles.
 tags:
   - tips
   - monsters

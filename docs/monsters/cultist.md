@@ -1,7 +1,7 @@
 ---
 title: Cultist Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Cultists
-description: Discover cultist statblocks, forbidden lore, and encounter ideas for your next fantasy TTRPG session. From aberrant rituals to fiendish pacts, summon dark forces with ready-to-run cult encounters and heretical NPCs.
+description: Discover cultist statblock and encounter ideas for your next 5E game. From aberrant rituals to fiendish pacts, summon forbidden lore and heretical NPCs.
 image: img/monsters/cultist.webp
 json_ld: true
 ---

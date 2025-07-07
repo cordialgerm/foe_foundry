@@ -1,6 +1,6 @@
 ---
 title: Support Foe Foundry
-description: Support Foe Foundry and help power a growing library of custom 5E monsters, flavorful powers, and encounter-building tools. Get access to polls, requests, and premium features by becoming a patron.
+description: Support Foe Foundry and power a growing library of custom 5E monsters, flavorful powers, and encounter-building tools. Patrons get access to premium features.
 image: img/icons/favicon.webp
 hidden:
     - toc

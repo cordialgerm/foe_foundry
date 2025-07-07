@@ -1,7 +1,7 @@
 ---
 title: Spirit Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Spirits
-description: Bind sorrowful spirits with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Bind sorrowful spirits with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/undead_spirits.webp
 json_ld: true
 ---

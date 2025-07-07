@@ -76,5 +76,5 @@ markdown_extensions:
   - tables
   - attr_list
   - toc:
-      permalink: true
+      permalink: false
   - foe_foundry_data.markdown

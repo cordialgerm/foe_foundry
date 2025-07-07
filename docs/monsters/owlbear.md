@@ -1,7 +1,7 @@
 ---
 title: Owlbear Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Owlbears
-description: Release territorial Owlbears with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Release territorial Owlbears with Foe Foundry. Discover unique Owlbear statblocks, interesting powers, and exciting lore for your 5E campaign.
 image: /img/monsters/owlbear.webp
 json_ld: true
 ---

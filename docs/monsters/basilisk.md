@@ -1,7 +1,7 @@
 ---
 title: Basilisk Statblocks, Encounters, and Lore for 5E | Foe Foundry
 short_title: Basilisks
-description: Uncover the deadly world of basilisks—venomous reptilian predators with a petrifying gaze. Includes rich lore, unique statblocks, encounter hooks, and adventure ideas to bring your next session to life.
+description: Uncover the deadly world of basilisks with Foe Foundry. Rich lore, unique statblocks, and fun encounter hooks for your next 5E session.
 image: img/monsters/basilisk.webp
 json_ld: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Build Memorable Rival NPCs for D&D 5E Campaigns (With Sample Statblocks)
 short_title: Build Memorable Rivals
-description: Create fun and memorable Rival NPCs for your D&D 5E campaigns with statblocks, hooks, and full party examples. Build a rival group from scratch with Foe Foundry!
+description: Create fun and memorable Rival NPCs for your D&D 5E campaigns with statblocks, hooks, and full examples. Build a rival group from scratch with Foe Foundry!
 tags:
   - resources
   - tips

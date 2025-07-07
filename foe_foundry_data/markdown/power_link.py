@@ -14,7 +14,7 @@ def power_link(power: Power, base_url: str) -> Markup | None:
     if power is None:
         return None
 
-    href = f"{base_url}/powers/{power.theme.lower()}#{power.key}"
+    href = f"{base_url}/powers/{power.theme.lower()}/#{power.key}"
 
     icon = inline_icon(power.icon) if power.icon else None
     if icon is None:
