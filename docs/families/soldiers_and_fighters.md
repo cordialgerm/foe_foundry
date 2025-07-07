@@ -13,9 +13,11 @@ json_ld: true
 
 | Statblock      | Description | Examples |
 |----------------|-------------|----------|
-| [Warriors](../monsters/warrior.md) | *Disciplined Soldiers of Steel and Strategy* | [[Shock Infantry]] (CR 1/8), [[Line Infantry]] (CR 1/8), [[Shock Infantry Veteran]] (CR 3), [[Line Infantry Veteran]] (CR 3), [[Warrior Commander]] (CR 10), [[Legendary Warrior]] (CR 14) |
 | [Berserkers](../monsters/berserker.md) | *Battle-Frenzied Warriors of Blood and Glory*| [[Berserker]] (CR 2), [[Berserker Veteran]] (CR 4), [[Berserker Legend]] (CR 12) |
 | [Guards](../monsters/guard.md) | *Watchful Sentries and Keepers of the Peace*| [[Guard]] (CR 1/8), [[Sergeant of the Watch]] (CR 1), [[Guard Captain]] (CR 4), [[Lord of the Watch]] (CR 8) |
+| [Knights](../monsters/knight.md) | *Champions Bound by Armor and Oaths* | [[Knight]] (CR 3), [[Knight of the Realm]] (CR 6), [[Questing Knight]] (CR 12), [[Paragon Knight]] (CR 16) |
+| [Warriors](../monsters/warrior.md) | *Disciplined Soldiers of Steel and Strategy* | [[Shock Infantry]] (CR 1/8), [[Line Infantry]] (CR 1/8), [[Shock Infantry Veteran]] (CR 3), [[Line Infantry Veteran]] (CR 3), [[Warrior Commander]] (CR 10), [[Legendary Warrior]] (CR 14) |
+
 
 ## What are Soldiers and Fighter Statblocks?
 
@@ -24,24 +26,6 @@ Soldiers and fighters are martial NPCs who rely on steel, strategy, and resolve 
 Whether you need elite infantry for a war campaign, blood-mad berserkers to storm the gates, or guards to complicate a stealth mission, these statblocks offer flexible martial foes for every tier of play. Unlike monsters or mages, these foes think like warriors - fighting in formation, holding chokepoints, and executing tactical orders under pressure.
 
 Use these statblocks to bring martial realism and grounded combat drama to your 5E adventures.
-
----
-
-## Warriors
-
-*Disciplined Soldiers of Steel and Strategy*
-
-When war breaks out, it's not dragons or owlbears who hold the line - it's [Warriors](../monsters/warrior.md). These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
-
-They are the backbone of armies, mercenary bands, and noble retinues. Some serve their liege proudly, while others sell their blades to the highest bidder. From shield-bearing infantry to field commanders, warriors exemplify martial discipline honed by battle.
-
-[Explore warrior statblocks and tactics](../monsters/warrior.md) or check out an example warrior statblock, the [[Shock Infantry Veteran]].
-
-[[!Shock Infantry Veteran]]
-
-[[$Shock Infantry Veteran]]
-
-![A battlefield commander raises their sword as soldiers form ranks behind them—ideal for 5E war-themed NPCs and martial encounters.](../img/monsters/warrior.webp){.monster-image .masked}
 
 ---
 
@@ -84,6 +68,41 @@ Whether manning a city gate or shadowing a suspicious group of mercenaries, guar
 [[$Sergeant of the Watch]]
 
 ![A 5E guard NPC stands guard](../img/monsters/guard.webp){.monster-image .masked}
+
+---
+
+## Knights
+
+*Champions Bound by Armor and Oaths*
+
+[Knights](../monsters/knight.md) are elite warriors sworn to serve a cause greater than themselves. Many serve monarchs, faiths, or noble houses, while others pursue their own ideals. They are trained from youth in the arts of war, steeped in honor, and armored for battle. Whether rallying troops, dueling for glory, or riding into battle under sacred banners, knights blend martial skill with purpose.
+
+Most are cavalry soldiers, but not all knights ride **Warhorses**. Some fight on foot or from the backs of exotic beasts such as a **Griffon**. A knight may command soldiers, uphold ancient codes, or seek redemption on a perilous quest. At higher ranks, knights swear divine oaths that grant them miraculous powers fueled by faith, conviction, or zeal.
+
+[Discover knight statblocks and tactics](../monsters/knight.md) or check out an example knight statblock, the [[Knight of the Realm]].
+
+[[!Knight of the Realm]]
+
+[[$Knight of the Realm]]
+
+![A knight clad in plate mail stands ready to uphold their sacred oath - for 5E paladins, martial NPCs, and oathbound foes](../img/monsters/knight.webp){.masked .monster-image}
+
+
+## Warriors
+
+*Disciplined Soldiers of Steel and Strategy*
+
+When war breaks out, it's not dragons or owlbears who hold the line - it's [Warriors](../monsters/warrior.md). These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
+
+They are the backbone of armies, mercenary bands, and noble retinues. Some serve their liege proudly, while others sell their blades to the highest bidder. From shield-bearing infantry to field commanders, warriors exemplify martial discipline honed by battle.
+
+[Explore warrior statblocks and tactics](../monsters/warrior.md) or check out an example warrior statblock, the [[Shock Infantry Veteran]].
+
+[[!Shock Infantry Veteran]]
+
+[[$Shock Infantry Veteran]]
+
+![A battlefield commander raises their sword as soldiers form ranks behind them—ideal for 5E war-themed NPCs and martial encounters.](../img/monsters/warrior.webp){.monster-image .masked}
 
 ---
 

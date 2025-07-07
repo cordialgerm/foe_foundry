@@ -88,6 +88,13 @@ These knightly adventure hooks feature chivalric quests, sacred oaths, and noble
 
 ---
 
+## Related Statblocks
+
+- [Soldiers and Fighters](../families/soldiers_and_fighters.md) - [[Cultists]] and [[Priests]]
+- [Fanatics and Faithful](../families/fanatics_and_faithful.md) - [[Veterans]], [[Guards]], and [[Berserkers]]
+
+---
+
 ## FAQ: Knights in 5E
 
 **How do I build a knight NPC in 5E?**  

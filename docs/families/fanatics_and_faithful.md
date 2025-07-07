@@ -15,6 +15,7 @@ json_ld: true
 |----------------|-------------|----------|
 | [Priests](../monsters/priest.md) | *Faithful Instruments of the Divine* | [[Acolyte]], [[Priest]], [[Archpriest]] |
 | [Cultists](../monsters/cultist.md) | *Worshippers of the Occult and Forbidden*| [[Cultist]], [[Cultist Fanatic]], [[Death Cult Grand Master]] |
+| [Knights](../monsters/knight.md) | *Champions Bound by Armor and Oaths* | [[Knight]], [[Knight of the Realm]], [[Questing Knight]], [[Paragon Knight]] |
 
 ## Priests
 
@@ -33,6 +34,10 @@ There is no single road to becoming a conduit to the divine. Priests may be soli
 [[!Archpriest]]
 
 [[$Archpriest]]
+
+![Devout priest preparing a ritual in a sacred temple](../img/monsters/priest.webp){.masked .monster-image}
+
+---
 
 ## Cultists
 
@@ -53,3 +58,24 @@ Cultists often claim their patrons are no more dangerous than the so-called “s
 [[!Death Cultist]]
 
 [[$Death Cultist]]
+
+![Cultists are the perfect foes for a dark fantasy TTRPG campaign](../img/monsters/cultist.webp){.masked .monster-image}
+
+---
+
+## Knights
+
+*Champions Bound by Armor and Oaths*
+
+[Knights](../monsters/knight.md) are elite warriors sworn to serve a cause greater than themselves. Many serve monarchs, faiths, or noble houses, while others pursue their own ideals. They are trained from youth in the arts of war, steeped in honor, and armored for battle. Whether rallying troops, dueling for glory, or riding into battle under sacred banners, knights blend martial skill with purpose.
+
+Most are cavalry soldiers, but not all knights ride **Warhorses**. Some fight on foot or from the backs of exotic beasts such as a **Griffon**. A knight may command soldiers, uphold ancient codes, or seek redemption on a perilous quest. At higher ranks, knights swear divine oaths that grant them miraculous powers fueled by faith, conviction, or zeal.
+
+[Discover knight statblocks and tactics](../monsters/knight.md) or check out an example knight statblock, the [[Knight of the Realm]].
+
+[[!Knight of the Realm]]
+
+[[$Knight of the Realm]]
+
+![A knight clad in plate mail stands ready to uphold their sacred oath - for 5E paladins, martial NPCs, and oathbound foes](../img/monsters/knight.webp){.masked .monster-image}
+
