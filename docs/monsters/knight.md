@@ -85,3 +85,35 @@ These knightly adventure hooks feature chivalric quests, sacred oaths, and noble
 - A knightly tournament is being held to choose the next royal heir. The PCs have been hired by one of the heirs (of questionable suitability to rule) to face off against the other claimant's [[Knight of the Realm]] champions.
 - A [[Questing Knight]] has sworn an oath to defeat the same villain the PCs are currently dealing with by the next holy day. The knight believes the PCs are amateurs and demands they stay out of her way.
 - An honorable [[Paragon Knight]] has been misled by one of the villains into believeing the PCs are a threat to the stability of the realm. The knight tracks down the party for their alleged transgressions.
+
+---
+
+## FAQ: Knights in 5E
+
+**How do I build a knight NPC in 5E?**  
+
+You can use [Foe Foundry](../index.md){.branding} to generate a [[Knight]] and customize it with thematic powers like [[Heroism]], [[Disciplined]], [[Mounted Warrior]], and [[Taunt]].
+
+**What is the CR of a knight in 5E?**  
+Most knight NPCs fall between CR 3–9. A basic [[Knight]] is CR 3. [Foe Foundry](../index.md){.branding} also has more powerful [[Knight of the Realm]] (CR 6), [[Questing Knight]] (CR 12), and [[Paragon Knight]] (CR 16, legendary).
+
+**What tactics do knight NPCs use in 5E?**  
+Knights rely on battlefield control, mounted mobility, and tactical leadership. They often open with mounted charges or use powers like [[Rally the Troops]], [[Interception]], and [[Zone of Control]]. Their fighting style is precise and purpose-driven.
+
+**Can a knight fight mounted in 5E?**  
+Yes. Knights are iconic cavalry warriors. Mounted knights use powers like [[Mounted Warrior]] and benefit from reach and mobility. Terrain matters: open plains or castle courtyards are ideal for cavalry charges.
+
+**What weapons and armor should a knight have?**  
+Knights typically wear plate armor and wield longswords, lances, or greatswords. Shields and warhorses are common, as are banners or heraldry signifying their allegiance.
+
+**What is a Questing Knight in 5E?**  
+A [[Questing Knight]] is an oath-bound NPC on a divine or moral mission. They often feature in adventure hooks involving sacred relics, personal redemption, or ancient prophecies. These knights may have powers like [[Divine Smite]] or [[Oath Adept]] to reinforce the divine power of their oath.
+
+**How do I use a Paragon Knight in an encounter?**  
+A [[Paragon Knight]] is a high-CR, legendary NPC who embodies heroic ideals. Use them as final guardians, test-of-honor opponents, or divine champions. Their presence should feel mythic. These encounters are perfect for climactic duels or moments of moral reckoning.
+
+**What’s a good knight-themed 5E encounter idea?**  
+Try a knightly tournament with rival claimants, a mounted patrol testing the party’s honor, or a disgraced knight seeking redemption by joining the PCs. These scenarios mix battlefield tension with social stakes. See [Knight Encounter Ideas](#knight-encounter-ideas) for more examples.
+
+**Can I use knights in political or moral adventures?**  
+Absolutely. Knights make excellent agents of noble houses, religious orders, or doomed causes. Their strict codes and oaths create rich tension when loyalties clash or ethics are tested.See [Knight Adventure Ideas](#knight-adventure-ideas) for more examples.
