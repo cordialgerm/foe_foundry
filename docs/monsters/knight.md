@@ -84,7 +84,7 @@ These knightly adventure hooks feature chivalric quests, sacred oaths, and noble
 - A [[Knight]] who swore an oath to recover a legendary artifact wishes to join the PCs on their next quest, believing that the artifact will be uncovered. The knight swore to never lie, retreat, or abandon the cause. 
 - A knightly tournament is being held to choose the next royal heir. The PCs have been hired by one of the heirs (of questionable suitability to rule) to face off against the other claimant's [[Knight of the Realm]] champions.
 - A [[Questing Knight]] has sworn an oath to defeat the same villain the PCs are currently dealing with by the next holy day. The knight believes the PCs are amateurs and demands they stay out of her way.
-- An honorable [[Paragon Knight]] has been misled by one of the villains into believeing the PCs are a threat to the stability of the realm. The knight tracks down the party for their alleged transgressions.
+- An honorable [[Paragon Knight]] has been misled by one of the villains into believing the PCs are a threat to the stability of the realm. The knight tracks down the party for their alleged transgressions.
 
 ---
 
