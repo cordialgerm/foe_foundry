@@ -1,7 +1,7 @@
 ---
 title: Wight Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Wights
-description: Challenge powerful wights using Foe Foundry. Discover unique statlbocks, powers, and encounters for your 5E games that will freeze your player's hearts.
+description: Challenge powerful wights using Foe Foundry. Discover unique statblocks, powers, and encounters for your 5E games that will freeze your player's hearts.
 image: img/monsters/wight.webp
 json_ld: true
 ---
