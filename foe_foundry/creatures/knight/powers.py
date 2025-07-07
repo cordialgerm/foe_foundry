@@ -1,4 +1,5 @@
 from ...powers import PowerLoadout
+from ...powers.creature import knight
 from ...powers.roles import defender, leader, soldier
 from ...powers.spellcaster import oath
 from ...powers.themed import holy, technique
@@ -38,7 +39,7 @@ LoadoutKnight = [
     PowerLoadout(
         name="Defensive Training",
         flavor_text="Sworn to protect",
-        powers=PerksDefensiveTraining,
+        powers=PerksDefensiveTraining + [knight.MountedWarrior],
         replace_with_species_powers=True,
     ),
     PowerLoadout(
@@ -70,4 +71,12 @@ LoadoutQuestingKnight = LoadoutKnight + [
         locked=True,
     ),
 ]
-LoadoutParagonKnight = LoadoutQuestingKnight
+LoadoutParagonKnight = LoadoutQuestingKnight + [
+    PowerLoadout(
+        name="Griffin Knight",
+        flavor_text="Bonded with a griffon",
+        powers=[knight.GriffinKnight],
+        selection_count=1,
+        locked=True,
+    )
+]

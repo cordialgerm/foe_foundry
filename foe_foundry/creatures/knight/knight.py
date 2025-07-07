@@ -145,6 +145,7 @@ class _KnightTemplate(MonsterTemplate):
             stats = stats.grant_save_proficiency(Stats.STR, Stats.WIS, Stats.CHA)
 
         # IMMUNITIES
+        stats = stats.grant_resistance_or_immunity(conditions={Condition.Frightened})
         if cr >= 6:
             stats = stats.grant_resistance_or_immunity(
                 conditions={Condition.Charmed, Condition.Frightened}
