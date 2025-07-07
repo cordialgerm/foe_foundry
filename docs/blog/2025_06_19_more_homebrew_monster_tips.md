@@ -1,7 +1,7 @@
 ---
 title: Are You Building Monsters Backwards? 4 Tips for 5E Monsters
 short_title: Are You Building Monsters Backwards? 4 Tips for 5E Monsters
-description: Learn four advanced tips for homebrewing monsters in 5E - from choosing CR the right way to designing powers that reinforce flavor and threat. Includes examples, stat scaling advice, and free tools from Foe Foundry.
+description: Learn four advanced tips for homebrewing monsters in 5E - from choosing CR the right way to designing powers that reinforce flavor and threat.
 tags:
   - tips
   - monsters

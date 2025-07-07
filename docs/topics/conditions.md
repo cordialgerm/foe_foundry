@@ -1,7 +1,7 @@
 ---
 title: Custom Conditions for 5E Monsters | FoeFoundry
 short_title: Conditions
-description: Explore Foe Foundry's unique custom conditions for 5E monsters. Interactive status effects like Frozen, Bleeding, and Swallowed that add tactical depth without removing player agency.
+description: Explore Foe Foundry's custom conditions for 5E monsters. Interactive effects like Frozen, Bleeding, and Swallowed add tactical depth without removing agency.
 image: img/icons/favicon.webp
 json_ld: true
 ---

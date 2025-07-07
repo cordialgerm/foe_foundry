@@ -1,7 +1,7 @@
 ---
 title: Ghoul Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Ghouls
-description: Unleash ravenous ghouls with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your fantasy RPG campaigns.
+description: Summon ravenous Ghouls with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your 5E sessions.
 image: img/monsters/ghoul.webp
 json_ld: true
 ---

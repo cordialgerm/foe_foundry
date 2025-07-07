@@ -1,7 +1,7 @@
 ---
 title: Merrow Statblocks, Encounters, and Adventures for 5E | Foe Foundry
 short_title: Merrow
-description: Discover ready-to-use Merrow encounters and adventure ideas for your 5E campaign. From ambushes at sea to abyssal cults and drowned relics, these coastal horrors are perfect for one-shots or full arcs.
+description: Discover Merrow encounters and adventures. From ambushes at sea to abyssal cults, these coastal horrors are perfect for your 5E games.
 image: img/icons/favicon.webp
 json_ld: true
 ---

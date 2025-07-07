@@ -1,7 +1,7 @@
 ---
 title: Manticore Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Manticores
-description: Unleash quarrelsome manticores with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Generate quarrelsome manticores with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/manticore.webp
 json_ld: true
 ---

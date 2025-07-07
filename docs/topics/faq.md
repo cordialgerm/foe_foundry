@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
-description: Get answers to common questions about Foe Foundry, the 5E monster design tool that helps you create scalable, flavorful, and easy-to-run monsters without AI. Learn how it works, how monsters scale, and what makes it different from the Monster Manual.
+description: Get answers to common questions about Foe Foundry, the 5E monster design tool that helps you create scalable, flavorful, and easy-to-run monsters.
 short_title: FAQ
 ---
 

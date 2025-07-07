@@ -1,7 +1,7 @@
 ---
 title: Mage Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Mages
-description: Find powerful mages with Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Summon powerful mages with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E campaign.
 image: img/monsters/cryomancer2.webp
 json_ld: true
 ---

@@ -1,10 +1,7 @@
 ---
 title: Soldiers & Fighters | Foe Foundry
 short_title: Soldiers & Fighters
-description: Explore 5E statblocks, lore, and encounters for martial NPCs like Warriors, Guards, and Berserkers. Perfect for city intrigue, battlefield skirmishes, and gritty sword-and-shield combat in your TTRPG.
-title: Soldiers & Fighters | Foe Foundry
-short_title: Soldiers & Fighters
-description: Explore 5E soldier NPC statblocks, lore, CR tiers, and encounter ideas for martial NPCs like Warriors, Guards, and Berserkers. Great for city intrigue, battlefield skirmishes, and gritty sword-and-shield combat.
+description: Explore statblocks, lore, and encounters for martial NPCs like Warriors, Guards, Knights, and Berserkers. Perfect for battles in your 5E campaign.
 image: img/monsters/warrior.webp
 json_ld: true
 ---
