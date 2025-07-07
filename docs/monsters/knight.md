@@ -1,7 +1,7 @@
 ---
 title: Knight Statblocks and Encounters for 5E NPCs | Foe Foundry
 short_title: Knights
-description: Build better encounters with 5E knight statblocks and encounters. From loyal retainers to divine  champions, these martial NPCs bring honor to your 5E games.
+description: Build better encounters with 5E knight statblocks and encounters. From loyal retainers to divine champions, these martial NPCs bring honor to your 5E games.
 image: img/monsters/knight.webp
 json_ld: true
 ---
