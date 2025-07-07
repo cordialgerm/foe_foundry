@@ -1,14 +1,14 @@
 ---
 title: Knight Statblocks and Encounters for 5E NPCs | Foe Foundry
 short_title: Knights
-description: TODO
+description: Build better encounters with 5E knight statblocks, tactics, and adventure ideas. From loyal retainers to divine oathsworn champions, these martial NPCs bring honor and steel to your campaign.
 image: img/monsters/knight.webp
 json_ld: true
 ---
 
 # Knights
 
-*Champions Bound by Armor and Oath*
+*Champions Bound by Armor and Oaths*
 
 - [Jump to Knight Statblocks](#knight-statblocks)
 - [Jump to Knight Encounters](#knight-encounter-ideas)
@@ -18,7 +18,7 @@ json_ld: true
 
 Most are cavalry soldiers, but not all knights ride **Warhorses**. Some fight on foot or from the backs of exotic beasts such as a **Griffon**. A knight may command soldiers, uphold ancient codes, or seek redemption on a perilous quest. At higher ranks, knights swear divine oaths that grant them miraculous powers fueled by faith, conviction, or zeal.
 
-![TODO](../img/monsters/knight.webp){.masked .monster-image}
+![A knight clad in plate mail stands ready to uphold their sacred oath - for 5E paladins, martial NPCs, and oathbound foes](../img/monsters/knight.webp){.masked .monster-image}
 
 ## Knight Lore
 
@@ -35,6 +35,7 @@ Knights are [Soldier Role NPCs](../topics/monster_roles.md#soldier) who lead fro
 - Use powers like [[Command the Attack]], [[Parry and Riposte]], and [[Zone of Control]] to dictate the flow of battle
 - Protect allies with [[Interception]], [[Disciplined]], or [[Taunt]] while punishing reckless foes
 - Coordinate with allies using [[Rally the Troops]] or [[Stay in Formation]]
+- Engage in mounted combat, where terrain allows it, with abilities like [[Mounted Warrior]] or [[Griffin Knight]]
 - High-CR knights use oath-bound powers such as [[Divine Smite]] to devastate enemies or inspire nearby troops
 
 ---
@@ -69,20 +70,18 @@ A [[Paragon Knight]] has sworn an unbreakable oath and is the embodiment of hero
 
 ## Knight Encounter Ideas
 
-Knights are perfect for scenes of chivalry, pageantry, or high-stakes combat. Here are knight-themed 5E encounter ideas for your next game:
+These knight-themed 5E encounters are built for dramatic reveals, battlefield moments, and moral tests. Use them to introduce loyal retainers, confront duty-bound foes, or test the party's sense of honor.
 
-TODO - improve these
-
-- A [[Knight of the Realm]] challenges the PCs to a duel after accusing them of dishonor
-- A [[Questing Knight]] joins the party in their hunt for a dangerous fiend—but refuses to compromise their code
-- A local noble’s [[Knight]] retinue has taken over a village “for its own protection”
-- A [[Paragon Knight]] hunts a powerful undead creature and demands the PCs stay out of their way—or aid them
+- A wounded [[Knight]] staggers forward, beseeching the party for help. Their liege has been kidnapped by [[Bandits]] not far away. The bandits wish to ransom their prisoner in return for amnesty.
+- A group of villagers flees a merciless and duty-bound [[Knight of the Realm]] and his squires who are hunting them down for failing to pay taxes to their liege.
+- The PCs stumble upon the tail-end of a battle - a [[Knight]] and a handful of [[Line Infantry]] are encircled by a horde of [[Berserkers]]. The knight flies the banner of a faction or NPC important to the party. Though the knight stands unwavering, the other troops look close to surrendering.
+- A [[Paragon Knight]] is disguised as an old begger asking for help. He rewards those who honorably offer aid and punishes those who refuse to help. The knight seeks the fabled heroes of prophecy.
 
 ## Knight Adventure Ideas
 
-For campaigns of honor, oaths, and divine quests, these knightly adventure hooks offer inspiration:
+These knightly adventure hooks feature chivalric quests, sacred oaths, and noble duels. Perfect for weaving knights into multi-session 5E arcs with politics, prophecy, or battlefield stakes.
 
-- A fallen [[Knight of the Realm]] seeks the PCs’ help in reclaiming their honor after a scandal
-- A [[Questing Knight]] is foretold to die in battle unless the PCs intervene
-- The [[Paragon Knight]] of a sacred order has vanished—and the relic they protected with them
-- A knightly tournament is being held to choose a new royal champion, but beneath the festivities, treachery stirs
+- A [[Knight]] who swore an oath to recover a legendary artifact wishes to join the PCs on their next quest, believing that the artifact will be uncovered. The knight swore to never lie, retreat, or abandon the cause. 
+- A knightly tournament is being held to choose the next royal heir. The PCs have been hired by one of the heirs (of questionable suitability to rule) to face off against the other claimant's [[Knight of the Realm]] champions.
+- A [[Questing Knight]] has sworn an oath to defeat the same villain the PCs are currently dealing with by the next holy day. The knight believes the PCs are amateurs and demands they stay out of her way.
+- An honorable [[Paragon Knight]] has been misled by one of the villains into believeing the PCs are a threat to the stability of the realm. The knight tracks down the party for their alleged transgressions.
