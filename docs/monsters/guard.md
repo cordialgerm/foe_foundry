@@ -1,7 +1,7 @@
 ---
 title: Guard Statblocks and Encounters for 5E | Foe Foundry
 short_title: Guards
-description: Bring your cities and keeps to life with 5E guard statblocks, encounter ideas, and lore. From loyal watchmen to corrupt captains, these vigilant NPCs are perfect for urban adventures and heist complications.
+description: Bring your cities to life with 5E Guard statblocks & encounters. From loyal guards to corrupt captains, these NPCs are perfect for urban adventures and heists.
 image: img/monsters/guard.webp
 json_ld: true
 ---

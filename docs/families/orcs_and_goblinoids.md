@@ -1,7 +1,7 @@
 ---
 title: Orcs and Goblinoids - Statblocks, Lore, and Encounters Ideas for 5E | Foe Foundry
 short_title: Orcs and Goblinoids - Statblocks, Lore, and Encounters
-description: Explore orc and goblinoid lore, statblocks, and unforgettable 5E encounter ideas. Fuel your fantasy RPG with ancestral fury, goblin mischief, and warband mayhem.
+description: Explore orc and goblinoid lore, statblocks, and unforgettable encounter ideas. Fuel your 5E campaign with ancestral fury, goblin mischief, and warband mayhem.
 image: img/monsters/orc-soldier.webp
 json_ld: true
 ---

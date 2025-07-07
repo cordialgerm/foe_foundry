@@ -1,7 +1,7 @@
 ---
 title: Zombie Statblocks, Lore, and Adventures for 5E | Foe Foundry
 short_title: Zombies
-description: Amass shambling zombie hordes using Foe Foundry’s monster generator. Discover complete statblocks, lore, encounters, and adventure hooks to command your fantasy RPG campaigns.
+description: Amass shambling zombie hordes using Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E campaign.
 image: img/monsters/zombie_horde.webp
 json_ld: true
 ---

@@ -11,6 +11,7 @@ from .goblin import GoblinPowers
 from .gorgon import GorgonPowers
 from .guard import GuardPowers
 from .hydra import HydraPowers
+from .knight import KnightPowers
 from .kobold import KoboldPowers
 from .lich import LichPowers
 from .mage import MagePowers
@@ -42,6 +43,7 @@ CreaturePowers = (
     + GorgonPowers
     + GuardPowers
     + HydraPowers
+    + KnightPowers
     + KoboldPowers
     + LichPowers
     + MagePowers

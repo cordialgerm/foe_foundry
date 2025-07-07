@@ -1,6 +1,7 @@
 ---
 title: All 5E Monsters | Statblocks & Monster Families | Foe Foundry
-description: Discover unique, handcrafted monsters for your next 5E or fantasy TTRPG session. From undead horrors to mythic monstrosities, Foe Foundry offers unforgettable foes ready to challenge your players.
+description: Summon unique monsters for your next 5E session. From undead horrors to monstrosities, Foe Foundry offers unforgettable foes ready to challenge your players
+image: img/icons/favicon.webp
 hidden:
     - backlinks
 ---
@@ -16,6 +17,7 @@ Explore curated collections of thematically linked monsters, complete with lore,
 - [Fanatics and Faithful](../families/fanatics_and_faithful.md) — Faithful instruments of the divine or worshippers of the occult and forbidden
 - [Orcs and Goblinoids](../families/orcs_and_goblinoids.md) - Bloodrage-fueled ancestral warriors or 
 chaotic tricksters, pillagers, and endless nuisances
+- [Soldiers and Fighters](../families/soldiers_and_fighters.md) - martial NPCs
 - [Rivals](../families/rivals.md) - The ultimate guide to rival adventuring parties
 - [Villains](../families/villains.md) -  Creating awesome villains for your 5E campaigns
 

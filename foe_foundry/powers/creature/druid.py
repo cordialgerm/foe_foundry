@@ -17,7 +17,7 @@ class DruidPower(PowerWithStandardScoring):
     def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_type=PowerType.Creature,
             power_level=power_level,
             source="Foe Foundry",
             icon=icon,

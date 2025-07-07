@@ -1,7 +1,7 @@
 ---
 title: Chimera Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Chimeras
-description: Discover complete chimera statblocks, lore, tactics, encounters, and adventure hooks for your fantasy RPG sessions. Summon monstrous heralds of disaster with Foe Foundry.
+description: Discover unique Chimera statblocks and encounters for your 5E campaigns. Summon monstrous heralds of disaster with Foe Foundry.
 image: img/monsters/chimera.webp
 json_ld: true
 ---

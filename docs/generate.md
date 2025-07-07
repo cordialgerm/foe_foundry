@@ -1,6 +1,6 @@
 ---
 title: Generate
-description: Foe Foundry’s Monster Generator is coming soon! Create custom monsters with flavorful abilities, scalable statblocks, and thematic powers for 5E and fantasy RPGs.
+description: Foe Foundry’s 5E Monster Generator is coming soon! Create custom monsters with flavorful abilities, scalable statblocks, and thematic powers
 hide:
   - toc
   - backlinks
