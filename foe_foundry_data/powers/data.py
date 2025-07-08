@@ -104,8 +104,20 @@ class FeatureModel:
 @dataclass(kw_only=True)
 class MonsterInPower:
     name: str
+    url: str | None
     cr: float
     is_legendary: bool
+
+    @property
+    def cr_caption(self) -> str:
+        if self.cr == 0.125:
+            return "CR 1/8"
+        elif self.cr == 0.25:
+            return "CR 1/4"
+        elif self.cr == 0.5:
+            return "CR 1/2"
+        else:
+            return f"CR {self.cr:.0f}"
 
 
 @dataclass(kw_only=True)
@@ -280,6 +292,7 @@ class PowerModel:
         monsters = [
             MonsterInPower(
                 name=m.monster.name,  # type: ignore
+                url=m.url,
                 cr=m.monster.cr,  # type: ignore
                 is_legendary=m.monster.is_legendary,  # type: ignore
             )
