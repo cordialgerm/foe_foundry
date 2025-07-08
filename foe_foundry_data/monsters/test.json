@@ -1,0 +1,637 @@
+[
+    {
+        "key": "exploit-the-chaos",
+        "name": "Exploit the Chaos",
+        "power_type": "Theme",
+        "source": "Foe Foundry",
+        "theme": "thuggish",
+        "power_level": "Medium Power",
+        "icon": "target-dummy",
+        "create_date": "2025-03-22T00:00:00",
+        "features": [
+            {
+                "name": "Exploit the Chaos",
+                "title": "Exploit the Chaos",
+                "action": "Reaction",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "If a nearby enemy within 15 feet misses an attack against a friendly creature, the thug can use its reaction to dart forward up to 15 feet and make an attack against that creature.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [
+            {
+                "name": "Brawler",
+                "cr": 1.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Brawler",
+                "cr": 1.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Elite Thug",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Goblin Warchief",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Thug",
+                "cr": 0.5,
+                "is_legendary": false
+            },
+            {
+                "name": "Thug Boss",
+                "cr": 2.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Thug Legend",
+                "cr": 8.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Thug Overboss",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Veteran Thug",
+                "cr": 2.0,
+                "is_legendary": false
+            }
+        ],
+        "reaction_count": 1,
+        "creature_types": [
+            "humanoid"
+        ],
+        "roles": [
+            "leader",
+            "bruiser"
+        ],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "bruiser",
+            "humanoid",
+            "leader",
+            "melee",
+            "thuggish"
+        ]
+    },
+    {
+        "key": "cacklehex",
+        "name": "Cacklehex",
+        "power_type": "Creature",
+        "source": "Foe Foundry",
+        "theme": "goblin",
+        "power_level": "Medium Power",
+        "icon": "imp-laugh",
+        "create_date": "2025-03-22T00:00:00",
+        "features": [
+            {
+                "name": "Cacklehex",
+                "title": "Cacklehex (Recharge 5-6)",
+                "action": "Action",
+                "recharge": 5,
+                "uses": null,
+                "replaces_multiattack": 2,
+                "modifies_attack": false,
+                "description_md": "The goblin curses a creature it can see within 60 feet with a Cacklehex.                 The target must make a DC 14 Wisdom saving throw. On a failure, it takes 22 (9d4) psychic damage and is <span class='condition condition-cursed'>Cursed</span> (save ends at end of turn).                 While cursed, it falls <span class='condition condition-prone'>Prone</span> and it cannot stand up.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [],
+        "reaction_count": 1,
+        "creature_types": [
+            "humanoid"
+        ],
+        "roles": [],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "goblin",
+            "humanoid"
+        ]
+    },
+    {
+        "key": "relentless-endurance",
+        "name": "Relentless Endurance",
+        "power_type": "Theme",
+        "source": "SRD5.1 Half-Orc",
+        "theme": "reckless",
+        "power_level": "Low Power",
+        "icon": "strong",
+        "create_date": null,
+        "features": [
+            {
+                "name": "Relentless Endurance",
+                "title": "Relentless Endurance",
+                "action": "Reaction",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "When the berserker is reduced to 0 hit points, they can immediately make one melee attack as a reaction. If this attack hits, they regain 1 hit point.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [
+            {
+                "name": "Berserker",
+                "cr": 2.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Berserker Commander",
+                "cr": 8.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Berserker Legend",
+                "cr": 12.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Berserker Veteran",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Gorgon",
+                "cr": 5.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Orc Reaver",
+                "cr": 1.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie",
+                "cr": 0.25,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Brute",
+                "cr": 1.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Giant",
+                "cr": 8.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Gravewalker",
+                "cr": 3.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Ogre",
+                "cr": 2.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Titan",
+                "cr": 12.0,
+                "is_legendary": true
+            }
+        ],
+        "reaction_count": 1,
+        "creature_types": [],
+        "roles": [
+            "bruiser"
+        ],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "bruiser",
+            "melee",
+            "reckless"
+        ]
+    },
+    {
+        "key": "turbo-trot",
+        "name": "Turbo Trot",
+        "power_type": "Theme",
+        "source": "A5E SRD Centaur",
+        "theme": "Bestial",
+        "power_level": "Medium Power",
+        "icon": "hoof",
+        "create_date": "2023-11-28T00:00:00",
+        "features": [
+            {
+                "name": "Turbo Trot",
+                "title": "Turbo Trot",
+                "action": "Feature",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": true,
+                "description_md": "On a hit, the mammoth's movement doesn't provoke opportunity attacks from the target for the rest of the turn.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [],
+        "reaction_count": 1,
+        "creature_types": [
+            "monstrosity",
+            "beast",
+            "dragon"
+        ],
+        "roles": [
+            "bruiser"
+        ],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "beast",
+            "bestial",
+            "bruiser",
+            "dragon",
+            "monstrosity"
+        ]
+    },
+    {
+        "key": "awaken",
+        "name": "Awaken",
+        "power_type": "CreatureType",
+        "source": "Foe Foundry",
+        "theme": "Fey",
+        "power_level": "High Power",
+        "icon": "deku-tree",
+        "create_date": null,
+        "features": [
+            {
+                "name": "Awaken",
+                "title": "Awaken (1/day)",
+                "action": "Action",
+                "recharge": null,
+                "uses": 1,
+                "replaces_multiattack": 2,
+                "modifies_attack": false,
+                "description_md": "The green hag magically awakens 15 (6d4) <span class='creature creature-awakened-shrub'>Awakened Shrub</span>. They act in initiative immediately after the green hag and obey its verbal commands (no action required).",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [],
+        "reaction_count": 1,
+        "creature_types": [
+            "fey"
+        ],
+        "roles": [],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "fey"
+        ]
+    },
+    {
+        "key": "toxic-poison",
+        "name": "Toxic Poison",
+        "power_type": "Theme",
+        "source": "Foe Foundry",
+        "theme": "poison",
+        "power_level": "High Power",
+        "icon": "poison-bottle",
+        "create_date": "2023-11-24T00:00:00",
+        "features": [
+            {
+                "name": "Toxic Poison",
+                "title": "Toxic Poison",
+                "action": "BonusAction",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "Immediately after hitting a creature with an attack, the hydra forces it to make a DC 14 Constitution saving throw.                 On a failure, it gains <span class='condition condition-susceptible'>Susceptible</span> to Poison (save ends at end of turn). A creature susceptible to poison ignores any immunity or resistance to poison that it may have. If it had no such immunity, it is instead vulnerable to poison.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [
+            {
+                "name": "Assassin",
+                "cr": 8.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Assassin Legend",
+                "cr": 12.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Contract Killer",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Elite Spy",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Spy Master",
+                "cr": 10.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Toximancer",
+                "cr": 6.0,
+                "is_legendary": false
+            }
+        ],
+        "reaction_count": "One Per Head",
+        "creature_types": [
+            "humanoid",
+            "beast",
+            "plant",
+            "aberration",
+            "monstrosity"
+        ],
+        "roles": [],
+        "damage_types": [
+            "poison"
+        ],
+        "attack_types": [],
+        "tags": [
+            "poison"
+        ]
+    },
+    {
+        "key": "spellcasting-entangle",
+        "name": "Spellcasting-Entangle",
+        "power_type": "Spellcasting",
+        "source": "SRD 5.1",
+        "theme": "controller",
+        "power_level": "Medium Power",
+        "icon": "magic-swirl",
+        "create_date": "2023-12-10T00:00:00",
+        "features": [
+            {
+                "name": "Spellcasting",
+                "title": "Spellcasting",
+                "action": "Action",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 2,
+                "modifies_attack": false,
+                "description_md": "The wizard casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 14):<p>1/day each: <span class=\"spell\"><i>Entangle<sup>c</sup></i></span></p>",
+                "is_spellcasting": true,
+                "is_attack": false
+            }
+        ],
+        "monsters": [],
+        "reaction_count": 1,
+        "creature_types": [
+            "plant",
+            "fey",
+            "humanoid"
+        ],
+        "roles": [
+            "controller"
+        ],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "controller",
+            "fey",
+            "humanoid",
+            "plant"
+        ]
+    },
+    {
+        "key": "parry-and-riposte",
+        "name": "Parry and Riposte",
+        "power_type": "Theme",
+        "source": "Foe Foundry",
+        "theme": "technique",
+        "power_level": "Medium Power",
+        "icon": "sword-clash",
+        "create_date": null,
+        "features": [
+            {
+                "name": "Parry and Riposte",
+                "title": "Parry and Riposte (Recharge 5-6)",
+                "action": "Reaction",
+                "recharge": 5,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "The warrior adds +3 to their Armor Class against one melee attack that would hit them.                         If the attack misses, this creature can immediately make a weapon attack against the creature making the parried attack.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [
+            {
+                "name": "Knight",
+                "cr": 3.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Knight of the Realm",
+                "cr": 6.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Line Infantry",
+                "cr": 0.125,
+                "is_legendary": false
+            },
+            {
+                "name": "Line Infantry Veteran",
+                "cr": 3.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Orc Warchief",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Orc Warchief of the Bloody Fang",
+                "cr": 7.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Paragon Knight",
+                "cr": 16.0,
+                "is_legendary": true
+            },
+            {
+                "name": "Questing Knight",
+                "cr": 12.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Skeletal Grave Guard",
+                "cr": 4.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Skeleton",
+                "cr": 0.25,
+                "is_legendary": false
+            }
+        ],
+        "reaction_count": 1,
+        "creature_types": [],
+        "roles": [
+            "defender",
+            "soldier"
+        ],
+        "damage_types": [],
+        "attack_types": [],
+        "tags": [
+            "defender",
+            "soldier",
+            "technique"
+        ]
+    },
+    {
+        "key": "death-ward",
+        "name": "Death Ward",
+        "power_type": "Theme",
+        "source": "SRD 5.1 Death Ward",
+        "theme": "holy",
+        "power_level": "Medium Power",
+        "icon": "heart-shield",
+        "create_date": null,
+        "features": [
+            {
+                "name": "Death Ward",
+                "title": "Death Ward (1/day)",
+                "action": "Reaction",
+                "recharge": null,
+                "uses": 1,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "When a creature within 30 feet of the priest takes damage that would reduce it to zero hit points, the priest can use its reaction to instead set that creature's hit points to 10.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [],
+        "reaction_count": 1,
+        "creature_types": [
+            "humanoid"
+        ],
+        "roles": [
+            "support"
+        ],
+        "damage_types": [
+            "radiant"
+        ],
+        "attack_types": [],
+        "tags": [
+            "holy",
+            "humanoid",
+            "radiant",
+            "support"
+        ]
+    },
+    {
+        "key": "rotten-grasp-blinding-sickness",
+        "name": "Rotten Grasp (Blinding Sickness)",
+        "power_type": "Theme",
+        "source": "Foe Foundry",
+        "theme": "disease",
+        "power_level": "High Power",
+        "icon": "biohazard",
+        "create_date": "2023-11-20T00:00:00",
+        "features": [
+            {
+                "name": "Blinding Sickness (Disease)",
+                "title": "Blinding Sickness (Disease)",
+                "action": "Feature",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": false,
+                "description_md": "This creature can inflict the <span class='condition condition-disease'>Blinding Sickness</span> disease: An infected creature's mind is gripped by pain and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is <span class='condition condition-blinded'>Blinded</span>.",
+                "is_spellcasting": false,
+                "is_attack": false
+            },
+            {
+                "name": "Rotten Grasp",
+                "title": "Rotten Grasp",
+                "action": "Feature",
+                "recharge": null,
+                "uses": null,
+                "replaces_multiattack": 0,
+                "modifies_attack": true,
+                "description_md": "On a hit, the target must make a DC 14 Constitution saving throw. On a failure, the target loses 1 hit die and rolls those die and takes that much poison damage.                     If the target is out of hit die, it is diseased with <span class='feature feature-blinding-sickness'>Blinding Sickness</span>.",
+                "is_spellcasting": false,
+                "is_attack": false
+            }
+        ],
+        "monsters": [
+            {
+                "name": "Dire Bunny",
+                "cr": 1.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Dire Bunny Matriarch",
+                "cr": 3.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Toximancer",
+                "cr": 6.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Vrock",
+                "cr": 6.0,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie",
+                "cr": 0.25,
+                "is_legendary": false
+            },
+            {
+                "name": "Zombie Ogre",
+                "cr": 2.0,
+                "is_legendary": false
+            }
+        ],
+        "reaction_count": 1,
+        "creature_types": [
+            "plant",
+            "monstrosity",
+            "undead",
+            "fiend"
+        ],
+        "roles": [],
+        "damage_types": [
+            "poison",
+            "acid"
+        ],
+        "attack_types": [],
+        "tags": [
+            "acid",
+            "disease",
+            "fiend",
+            "monstrosity",
+            "plant",
+            "poison",
+            "undead"
+        ]
+    }
+]

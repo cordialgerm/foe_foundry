@@ -17,6 +17,7 @@ from foe_foundry.powers import Power
 from foe_foundry.statblocks import Statblock
 
 from ..icons import icon_path
+from ..monsters import monsters_for_power
 from ..refs import MonsterRef, MonsterRefResolver
 
 MonsterReferences = MonsterRefResolver()
@@ -58,6 +59,8 @@ def _get_best_statblock(
             is_legendary=False,
             variant=monster_ref.variant,
             rng=rng,
+            monster=monster_ref.monster,
+            species=monster_ref.species,
         )
     else:
         # if we don't have a specific statblock to generate, find the one with the closest CR match
@@ -99,6 +102,13 @@ class FeatureModel:
 
 
 @dataclass(kw_only=True)
+class MonsterInPower:
+    name: str
+    cr: float
+    is_legendary: bool
+
+
+@dataclass(kw_only=True)
 class PowerModel:
     key: str
     name: str
@@ -109,6 +119,7 @@ class PowerModel:
     icon: str | None
     create_date: datetime | None
     features: List[FeatureModel]
+    monsters: List[MonsterInPower]
     reaction_count: int | str = 1
     creature_types: List[str] = field(default_factory=list)
     roles: List[str] = field(default_factory=list)
@@ -266,6 +277,15 @@ class PowerModel:
         def to_str(enums):
             return [str(e) for e in enums] if enums is not None else []
 
+        monsters = [
+            MonsterInPower(
+                name=m.monster.name,  # type: ignore
+                cr=m.monster.cr,  # type: ignore
+                is_legendary=m.monster.is_legendary,  # type: ignore
+            )
+            for m in monsters_for_power(power)
+        ]
+
         return PowerModel(
             key=power.key,
             name=power.name,
@@ -276,6 +296,7 @@ class PowerModel:
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,
             features=feature_models,
+            monsters=monsters,
             reaction_count=stats.reaction_count,
             creature_types=to_str(power.creature_types),
             damage_types=to_str(power.damage_types),

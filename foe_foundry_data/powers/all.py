@@ -24,5 +24,9 @@ class PowerLookupCache:
             for theme in themes
         }
 
+    @cached_property
+    def AllPowers(self) -> list[PowerModel]:
+        return list(self.PowerLookup.values())
+
 
 Powers = PowerLookupCache()
