@@ -21,7 +21,7 @@ class _MonsterCache:
                     stats = template.generate_monster(
                         variant=variant, monster=monster, species=species
                     )
-                    monster = MonsterModel.from_monster(
+                    m = MonsterModel.from_monster(
                         stats=stats.finalize(),
                         template=template,
                         variant=variant,
@@ -29,7 +29,7 @@ class _MonsterCache:
                         species=species,
                         base_url=base_url,
                     )
-                    monsters.append(monster)
+                    monsters.append(m)
         return monsters
 
 
