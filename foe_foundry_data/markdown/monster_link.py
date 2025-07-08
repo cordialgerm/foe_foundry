@@ -78,6 +78,7 @@ def monster_statblock(ref: MonsterRef) -> Markup | None:
             monster_template=template.name,
             monster_key=monster.key,
             variant=variant,
+            monster=monster,
             cr=monster.cr,
             species=ref.species,
             is_legendary=monster.is_legendary,

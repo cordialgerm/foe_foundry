@@ -6,14 +6,18 @@ from foe_foundry_data.monsters import MonsterModel
 
 
 def test_monster_model():
-    for stats in WightTemplate.generate_all():
+    for variant, monster, species, stats in WightTemplate.generate_all():
         model = MonsterModel.from_monster(
             stats=stats.finalize(),
             template=WightTemplate,
+            variant=variant,
+            monster=monster,
+            species=species,
             base_url="https://128.0.0.1:8080",
         )
         assert len(model.images) > 0
         assert model.template_html is not None
+        assert len(model.loadouts) > 0
 
 
 def test_monster_model_with_species():

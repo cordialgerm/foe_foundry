@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+from dataclasses import asdict
 from typing import Annotated
 
 import numpy as np
@@ -53,7 +54,12 @@ def random_monster(
     if base_url is None:
         raise ValueError("SITE_URL environment variable is not set")
     monster_model = MonsterModel.from_monster(
-        stats=stats, template=template, base_url=base_url
+        stats=stats,
+        template=template,
+        variant=settings.variant,
+        monster=settings.monster,
+        species=settings.species,
+        base_url=base_url,
     )
     return _format_monster(monster_model=monster_model, rng=rng, output=output)
 
@@ -69,6 +75,7 @@ def get_monster(
     ref, stats = generate_monster(
         template_or_variant_key, ref_resolver=ref_resolver, rng=rng
     )
+
     if stats is None or ref is None:
         raise HTTPException(
             status_code=404, detail=f"Monster not found: {template_or_variant_key}"
@@ -77,9 +84,16 @@ def get_monster(
     if base_url is None:
         raise ValueError("SITE_URL environment variable is not set")
 
+    ref = ref.resolve()
+
     return _format_monster(
         monster_model=MonsterModel.from_monster(
-            stats=stats, template=ref.template, base_url=base_url
+            stats=stats,
+            template=ref.template,
+            variant=ref.variant,  # type: ignore
+            monster=ref.monster,  # type: ignore
+            species=ref.species,
+            base_url=base_url,
         ),
         rng=rng,
         output=output,
@@ -104,6 +118,8 @@ def _format_monster(
         img_src = monster_model.images[image_index]
         image_html = f'<img class="masked monster-image" src="{img_src}" alt="{monster_model.name} image" />'
 
+    loadouts = [asdict(lo) for lo in monster_model.loadouts]
+
     if output == MonsterFormat.html:
         html = f'<div class="statblock-container">{statblock_html}\n{lore_html or ""}\n{image_html or ""}</div>'
         return HTMLResponse(content=html)
@@ -111,6 +127,9 @@ def _format_monster(
         return HTMLResponse(content=statblock_html)
     else:
         json_data = dict(
-            statblock_html=statblock_html, lore_html=lore_html, image=img_src
+            statblock_html=statblock_html,
+            lore_html=lore_html,
+            image=img_src,
+            loadouts=loadouts,
         )
         return JSONResponse(content=json_data)

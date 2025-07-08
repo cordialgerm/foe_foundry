@@ -1,12 +1,19 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import List
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 from pydantic.dataclasses import dataclass
 
-from foe_foundry.creatures import MonsterTemplate
+from foe_foundry.creatures import (
+    CreatureSpecies,
+    Monster,
+    MonsterTemplate,
+    MonsterVariant,
+)
+from foe_foundry.powers import Power, PowerLoadout
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 from foe_foundry.utils.image import has_transparent_edges
@@ -34,6 +41,48 @@ def _load_monster_html(template_key: str, base_url: str) -> str | None:
 
 
 @dataclass(kw_only=True)
+class PowerRef:
+    key: str
+    name: str
+    power_type: str
+    source: str
+    theme: str
+    icon: str
+
+    @staticmethod
+    def from_power(power: Power) -> PowerRef:
+        return PowerRef(
+            key=power.key,
+            name=power.name,
+            power_type=power.power_type.name,
+            source=power.source or "UNKNOWN",
+            theme=power.theme or "UNKNOWN",
+            icon=power.icon or "",
+        )
+
+
+@dataclass(kw_only=True)
+class PowerLoadoutModel:
+    name: str
+    flavor_text: str
+    selection_count: int
+    locked: bool
+    replace_with_species_powers: bool
+    powers: List[PowerRef]
+
+    @staticmethod
+    def from_loadout(loadout: PowerLoadout):
+        return PowerLoadoutModel(
+            name=loadout.name,
+            flavor_text=loadout.flavor_text,
+            selection_count=loadout.selection_count,
+            locked=loadout.locked,
+            replace_with_species_powers=loadout.replace_with_species_powers,
+            powers=[PowerRef.from_power(power) for power in loadout.powers],
+        )
+
+
+@dataclass(kw_only=True)
 class MonsterModel:
     name: str
     cr: float
@@ -43,12 +92,18 @@ class MonsterModel:
     statblock_html: str
     template_html: str | None
     images: list[str]
+    loadouts: list[PowerLoadoutModel]
     primary_image: str | None
     primary_image_has_transparent_edges: bool
 
     @staticmethod
     def from_monster(
-        stats: Statblock, template: MonsterTemplate, base_url: str
+        stats: Statblock,
+        template: MonsterTemplate,
+        variant: MonsterVariant,
+        monster: Monster,
+        species: CreatureSpecies | None,
+        base_url: str,
     ) -> MonsterModel:
         if base_url.endswith("/"):
             base_url = base_url[:-1]
@@ -78,6 +133,15 @@ class MonsterModel:
 
         statblock_html = render_statblock_fragment(stats)
 
+        settings = template._settings_for_variant(
+            variant=variant, monster=monster, species=species
+        )
+        power_selection = template.choose_powers(settings=settings)
+        loadouts = [
+            PowerLoadoutModel.from_loadout(loadout)
+            for loadout in power_selection.loadouts
+        ]
+
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
@@ -86,6 +150,7 @@ class MonsterModel:
             statblock_html=statblock_html,
             template_html=template_html,
             images=all_images,
+            loadouts=loadouts,
             primary_image=primary_image,
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
         )

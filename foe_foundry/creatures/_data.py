@@ -78,6 +78,7 @@ class GenerationSettings:
     cr: float
     is_legendary: bool
     variant: MonsterVariant
+    monster: Monster
     species: CreatureSpecies | None = None
     rng: np.random.Generator
 

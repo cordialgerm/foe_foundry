@@ -1,11 +1,15 @@
+from typing import TYPE_CHECKING
+
 from foe_foundry.features import ActionType
 
 from ..icons import inline_icon
-from ..powers import PowerModel
 from .env import JinjaEnv
 
+if TYPE_CHECKING:
+    from ..powers import PowerModel
 
-def render_power_fragment(power: PowerModel, header_tag: str = "h2") -> str:
+
+def render_power_fragment(power: "PowerModel", header_tag: str = "h2") -> str:
     """Renders a power HTML fragment for a single power"""
 
     template = JinjaEnv.get_template("power.html.j2")
@@ -36,6 +40,7 @@ def render_power_fragment(power: PowerModel, header_tag: str = "h2") -> str:
         attacks=attack,
         spellcasting=spellcasting,
         reaction_header=power.reaction_header,
+        monsters=power.monsters,
     )
     html_raw = template.render(context)
     return html_raw
