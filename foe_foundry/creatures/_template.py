@@ -160,6 +160,7 @@ class MonsterTemplate:
                 cr=monster.cr,
                 is_legendary=monster.is_legendary,
                 variant=variant,
+                monster=monster,
                 species=species,
                 rng=rng_factory(monster, species),
             )
@@ -169,33 +170,48 @@ class MonsterTemplate:
         settings = GenerationSettings(**args)
         return self.generate(settings)
 
-    def generate_all(self, **kwargs) -> Iterable[StatsBeingGenerated]:
+    def generate_all(
+        self, **kwargs
+    ) -> Iterable[
+        tuple[MonsterVariant, Monster, CreatureSpecies | None, StatsBeingGenerated]
+    ]:
         """Generate one instance of a statblock for each variant and suggested CR in this template"""
         for settings in self.generate_settings(**kwargs):
-            yield self.generate(settings)
+            stats = self.generate(settings)
+            yield settings.variant, settings.monster, settings.species, stats
 
-    def generate_settings(self, **kwargs) -> list[GenerationSettings]:
+    def generate_settings(self, **kwargs) -> Iterable[GenerationSettings]:
         """Generates all possible settings for this template"""
-        options = []
         for variant in self.variants:
             for monster in variant.monsters:
                 for species in self.species if self.n_species > 0 else [None]:
-                    args: dict = (
-                        dict(
-                            creature_name=monster.name,
-                            monster_template=self.name,
-                            monster_key=monster.key,
-                            cr=monster.cr,
-                            is_legendary=monster.is_legendary,
-                            variant=variant,
-                            species=species,
-                            rng=rng_factory(monster, species),
-                        )
-                        | kwargs
+                    settings = self._settings_for_variant(
+                        variant, monster, species, **kwargs
                     )
+                    yield settings
 
-                    options.append(GenerationSettings(**args))
-        return options
+    def _settings_for_variant(
+        self,
+        variant: MonsterVariant,
+        monster: Monster,
+        species: CreatureSpecies | None,
+        **kwargs,
+    ) -> GenerationSettings:
+        args: dict = (
+            dict(
+                creature_name=monster.name,
+                monster_template=self.name,
+                monster_key=monster.key,
+                cr=monster.cr,
+                is_legendary=monster.is_legendary,
+                variant=variant,
+                monster=monster,
+                species=species,
+                rng=rng_factory(monster, species),
+            )
+            | kwargs
+        )
+        return GenerationSettings(**args)
 
     @abstractmethod
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:

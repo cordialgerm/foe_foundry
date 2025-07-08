@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, replace
 from functools import cached_property
 from typing import TypeAlias
@@ -40,6 +41,17 @@ class MonsterRef:
         if self.args_str is None:
             return None
         return yaml.safe_load(self.args_str)
+
+    @cached_property
+    def url(self) -> str | None:
+        if self.monster is None:
+            return None
+
+        base_url = os.environ.get("SITE_URL", "https://foefoundry.com")
+        if not base_url.endswith("/"):
+            base_url += "/"
+
+        return f"{base_url}monsters/{self.template.key}/#{self.monster.key}"
 
     def copy(self, **args) -> MonsterRef:
         """Creates a copy of the monster reference with updated values."""

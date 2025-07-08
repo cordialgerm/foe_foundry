@@ -66,6 +66,7 @@ def random_template_and_settings(
         cr=monster.cr,
         is_legendary=monster.is_legendary,
         variant=variant,
+        monster=monster,
         species=species,
         rng=rng,
     )
