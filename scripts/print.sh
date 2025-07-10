@@ -2,21 +2,15 @@
 
 # === CONFIGURATION ===
 BASE_URL="http://127.0.0.1:8080"
-PDF_OUTPUT="page.pdf"
-IMG_OUTPUT="page-%03d.png"
 WAIT_TIME=20
-CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+RELATIVE_PATH="$1"
 
-# === INPUT VALIDATION ===
-if [ -z "$1" ]; then
+if [ -z "$RELATIVE_PATH" ]; then
   echo "Usage: ./publish_page.sh /relative/path"
   exit 1
 fi
 
-RELATIVE_PATH="$1"
 FULL_URL="${BASE_URL}${RELATIVE_PATH}"
-
-# Optional: sanitize filename output based on path
 SAFE_PATH=$(echo "$RELATIVE_PATH" | tr '/' '-' | sed 's/^-//')
 PDF_OUTPUT="${SAFE_PATH}.pdf"
 IMG_OUTPUT="${SAFE_PATH}-%03d.png"
@@ -30,14 +24,9 @@ SERVER_PID=$!
 echo "Waiting $WAIT_TIME seconds for server to start..."
 sleep $WAIT_TIME
 
-# === PRINT TO PDF ===
-echo "Saving $FULL_URL to $PDF_OUTPUT..."
-"$CHROME_BIN" \
-  --headless \
-  --disable-gpu \
-  --no-sandbox \
-  --print-to-pdf="$PDF_OUTPUT" \
-  "$FULL_URL"
+# === PRINT TO PDF USING PUPPETEER ===
+echo "Saving $FULL_URL to $PDF_OUTPUT using Puppeteer..."
+node scripts/print-to-pdf.js "$FULL_URL" "$PDF_OUTPUT"
 
 # === CONVERT TO IMAGE ===
 echo "Converting $PDF_OUTPUT to image(s)..."

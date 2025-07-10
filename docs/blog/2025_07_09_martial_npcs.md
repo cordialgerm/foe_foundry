@@ -1,7 +1,7 @@
 ---
 title: No More Boring Martial NPCs | Foe Foundry
 short_title: No More Boring Martial NPCs
-description: TODO
+description: Fix bland 5E martial NPCs with flavorful statblocks and powers. Guards, Knights, Berserkers, and more—fully customizable and ready to fight.
 tags:
  - tips
  - monsters
@@ -45,9 +45,9 @@ Berserkers are warriors gripped by a primal fury. Blood-soaked and unrelenting, 
 
 ![Berserker](../img/monsters/berserker.webp){.monster-image-small .masked}
 
-This brutal 5E [[Berserker Veteran]] is just one of several blood-soaked variants available in [Foe Foundry](../index.md){.branding} — each one tuned for different tiers, and fully customizable to fit your battlefield.
+This brutal 5E [[Berserker]] is just one of several blood-soaked variants available in [Foe Foundry](../index.md){.branding} — each one tuned for different tiers, and fully customizable to fit your battlefield.
 
-[[!Berserker Veteran]]
+[[!Berserker]]
 
 <div class="break-after"></div>
 
