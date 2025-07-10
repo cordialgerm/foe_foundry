@@ -104,7 +104,9 @@ class FeatureModel:
 @dataclass(kw_only=True)
 class MonsterInPower:
     name: str
+    monster_template: str
     url: str | None
+    template_url: str | None
     cr: float
     is_legendary: bool
 
@@ -184,6 +186,26 @@ class PowerModel:
             reaction_header = f"Reactions ({self.reaction_count})"
 
         return reaction_header
+
+    @cached_property
+    def used_by_monsters_html(self) -> str:
+        if len(self.monsters) < 5:
+            return "Used by " + ", ".join(
+                f"<a href='{m.url}'>{m.name} ({m.cr_caption})</a>"
+                for m in self.monsters
+            )
+
+        # if there are more than 5, then only pick 1 monster per template
+        seen_templates = set()
+        anchors = []
+        for m in self.monsters:
+            if m.monster_template in seen_templates:
+                continue
+
+            seen_templates.add(m.monster_template)
+            anchors.append(f"<a href='{m.template_url}'>{m.monster_template}</a>")
+
+        return "Used by " + ", ".join(anchors)
 
     @staticmethod
     def from_power(power: Power) -> PowerModel:
@@ -292,8 +314,10 @@ class PowerModel:
         monsters = [
             MonsterInPower(
                 name=m.monster.name,  # type: ignore
+                monster_template=m.template.name,
                 url=m.url,
                 cr=m.monster.cr,  # type: ignore
+                template_url=m.template_url,
                 is_legendary=m.monster.is_legendary,  # type: ignore
             )
             for m in monsters_for_power(power)

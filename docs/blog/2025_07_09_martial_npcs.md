@@ -11,11 +11,11 @@ json_ld: true
 date: 2025-07-09
 ---
 
-# No More Boring Marital NPCs
+# No More Boring Martial NPCs
 
 The *Monster Manual* martial NPCs in 5E are the definition of "french vanilla" - monsters that offer few interesting or flavorful mechanical abilities.  
 
-That's a shame, because martial NPCs like [[Guards]], [[Knights]], [[Veterans]], and [[Berserkers]] are some of the most useful statblocks for a DM.  
+That's a shame, because martial NPCs like [[Guards]], [[Knights]], [[Veterans]], and [[Berserkers]] are some of the most useful statblocks for a DM! Shouldn't these commonly-used statblocks also offer fun, flavorful, and interesting mechanics?
 
 Let's fix that with [Foe Foundry](../index.md){.branding}. We've created dozens of flavorful and unique martial NPC statblocks and powers to spice up your battles: from disciplined shock infantry to griffin-riding knights.
 
@@ -28,6 +28,12 @@ Let's fix that with [Foe Foundry](../index.md){.branding}. We've created dozens 
 | [Knights](../monsters/knight.md) | *Champions Bound by Armor and Oaths* | [[Knight]] (CR 3), [[Knight of the Realm]] (CR 6), [[Questing Knight]] (CR 12), [[Paragon Knight]] (CR 16) |
 | [Warriors](../monsters/warrior.md) | *Disciplined Soldiers of Steel and Strategy* | [[Shock Infantry]] (CR 1/8), [[Line Infantry]] (CR 1/8), [[Shock Infantry Veteran]] (CR 3), [[Line Infantry Veteran]] (CR 3), [[Warrior Commander]] (CR 10), [[Legendary Warrior]] (CR 14) |
 
+---
+
+![Foe Foundry Logo](../img/icons/favicon.webp){.monster-image-xsmall .d-none .d-print-block}
+
+<div class="break-after"></div>
+
 ## Berserkers
 
 !!! info "Unleash the Bloodlust"
@@ -37,17 +43,19 @@ Let's fix that with [Foe Foundry](../index.md){.branding}. We've created dozens 
 
 Berserkers are warriors gripped by a primal fury. Blood-soaked and unrelenting, a berserker is consumed by an adrenaline-fueled recklessness that drives them head-first into the fray.
 
-![Berserker](../img/monsters/berserker.webp){.monster-image .masked}
+![Berserker](../img/monsters/berserker.webp){.monster-image-small .masked}
 
 This brutal 5E [[Berserker Veteran]] is just one of several blood-soaked variants available in [Foe Foundry](../index.md){.branding} — each one tuned for different tiers, and fully customizable to fit your battlefield.
 
 [[!Berserker Veteran]]
 
+<div class="break-after"></div>
+
 ### 5 Interesting Berserker Powers
 
 [[!Reckless Flurry]]
 
-[[Reckless Flurry]] is like a barbarian's version of [[Action Surge]]. It's a great showcase moment for the [[Berserker]]!
+[[Reckless Flurry]] is like a barbarian's take on the classic [[Action Surge]]. It's a great showcase moment for the [[Berserker]]!
 
 [[!Overrun]]
 
@@ -55,17 +63,21 @@ This brutal 5E [[Berserker Veteran]] is just one of several blood-soaked variant
 
 [[!Bloodied Rage]]
 
-[[Bloodied Rage]] is a nice little power because it will really ramp up the threat of the bloodied [[Berserker]] without slowing combat down by making it take half damage like the Barbarian's Rage ability.
+[[Bloodied Rage]] is a nice little power because it will really ramp up the threat of the bloodied [[Berserker]] without slowing combat down.
+
+<div class="break-after"></div>
 
 [[!Just a Scratch]]
 
-[[Just a Scratch]] is conceptually similar to a Barbarian's Rage ability but just grants temporary hitpoints, so you don't have to remember to halve the damage. It also empowers the [[Berserker]] with a small boost.
+[[Just a Scratch]] is conceptually similar to a Barbarian's Rage ability but just grants temporary hitpoints, so you don't have to remember to halve incoming damage. It also empowers the [[Berserker]] with an advantage boost.
 
 [[!Challenge]]
 
 With [[Challenge]], you can create an interesting duel between the [[Berserker]] and another PC. It's the perfect moment for some "Fight me bro" dialog.
 
 ---
+
+<div class="break-after"></div>
 
 ### Guards
 
@@ -78,25 +90,27 @@ Guards serve in many positions, including lookouts, bouncers, caravan escorts, o
 
 From lowly watchmen to iron-fisted captains, Foe Foundry offers multiple 5E [[Guard]] statblocks built for urban intrigue and infiltration — and each can be tailored to your setting or power level.
 
-[[Sergeant of the Watch]]
+[[!Sergeant of the Watch]]
+
+![Guard](../img/monsters/guard.webp){.monster-image-small .masked}
 
 ## 4 Interesting Powers for Guards
 
 [[!Call Reinforcements]]
 
-[[Call Reinforcements]] is great in high-stakes infiltration scenarios, especially if you telegraph that the [[Guard]] is about to reach for a horn or whistle to call for help, and give the PCs a round to try and stop it.
-
 [[!Sound the Alarm]]
 
-[[Sound the Alarm]] is another nice "call for help" style ability, similar to [[Call Reinforcements]].
+[[Call Reinforcements]] and [[Sound the Alarm]] are great in high-stakes infiltration scenarios, especially if you telegraph that the [[Guard]] is about to reach for a horn or whistle to call for help, and give the PCs a round to try and stop it.
 
 [[!Defensive Formation]]
 
-[[Defensive Formation]] encourages your guards to use the natural fortifications that they're guarding to their full advantage.
-
 [[!Protect the Target]]
 
-[[Protect the Target]] gives some mechanical benefits to boost the idea that [[Guards]] have trained to protect their ward.
+[[Defensive Formation]] and [[Protect the Target]] gives mechanical advantages for your guards to protect their wards.
+
+---
+
+<div class="break-after"></div>
 
 ## Knights
 
@@ -109,11 +123,15 @@ From lowly watchmen to iron-fisted captains, Foe Foundry offers multiple 5E [[Gu
 
 The classic [[Knight]] gets a major upgrade here, with powerful variants and oath-driven abilities. [Foe Foundry](../index.md) knights range from noble champions to divine juggernauts.
 
+![Knight](../img/monsters/knight.webp){.monster-image-small .masked}
+
 ```yaml
 monster_name: Knight
 power_weights:
    Mounted Warrior: 1.0 
 ```
+
+<div class="break-after"></div>
 
 ## 6 Powers for Formidable Knights
 
@@ -141,6 +159,10 @@ Knights are often leaders, and [[Rally the Troops]] is a nice way to show this o
 
 Higher-CR knights have sworn powerful oaths, granting them divine powers like [[Divine Smite]] and [[Oath Adept]].
 
+---
+
+<div class="break-after"></div>
+
 ### Warriors
 
 !!! info "Hold the Line"
@@ -150,9 +172,13 @@ Higher-CR knights have sworn powerful oaths, granting them divine powers like [[
 
 When war breaks out, it's not dragons or owlbears who hold the line - it's warriors. These trained professionals earn their keep through disciplined combat. Whether hardened conscripts or elite bodyguards, they rely not on magic or miracles, but on discipline, coordination, and experience. Warriors know how to fight together, how to exploit terrain, and how to execute orders under fire.
 
+![Warrior](../img/monsters/warrior.webp){.monster-image-small .masked}
+
 Whether you need disciplined infantry or hardened veterans, Foe Foundry's [[Shock Infantry Veteran]] is just one of many modular warrior statblocks ready for tactical combat in your 5E campaign.
 
 [[!Shock Infantry Veteran]]
+
+<div class="break-after"></div>
 
 ## 3 Powers for Disciplined Warriors
 
@@ -163,3 +189,11 @@ Whether you need disciplined infantry or hardened veterans, Foe Foundry's [[Shoc
 [[!Coordinated Strike]]
 
 [[Phalanx]], [[Disciplined]], and [[Coordinated Strike]] all play up the coordination and martial training of [[Warriors]].
+
+<div class="break-after"></div>
+
+---
+
+Looking for more GM tips and tricks?
+
+[[@Sign Up For the Foe Foundry Newsletter]]
