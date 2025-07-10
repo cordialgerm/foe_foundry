@@ -6,7 +6,7 @@ WAIT_TIME=20
 RELATIVE_PATH="$1"
 
 if [ -z "$RELATIVE_PATH" ]; then
-  echo "Usage: ./publish_page.sh /relative/path"
+  echo "Usage: ./print.sh /relative/path"
   exit 1
 fi
 
