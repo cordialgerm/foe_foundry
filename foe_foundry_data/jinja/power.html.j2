@@ -15,16 +15,8 @@
     {{features_block(reactions, reaction_header)}}
 </div>
 
-{% if monsters -%}
-<span class="related-monsters">
-    Used by:&nbsp;
-    {%- for monster in monsters -%}
-    {%- if monster.url -%}
-    <a href="{{ monster.url }}">{{ monster.name }} ({{ monster.cr_caption }})</a>
-    {%- else -%}
-    {{ monster.name }} ({{ monster.cr_caption }})
-    {%- endif -%}
-    {%- if not loop.last %}, {% endif %}
-    {%- endfor %}
+{% if monsters_html -%}
+<span class="power-monster-list">
+    {{ monsters_html | safe }}
 </span>
 {%- endif %}

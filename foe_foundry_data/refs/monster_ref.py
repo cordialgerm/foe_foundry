@@ -44,14 +44,21 @@ class MonsterRef:
 
     @cached_property
     def url(self) -> str | None:
+        """Returns the URL for the monster reference."""
+        template_url = self.template_url
         if self.monster is None:
-            return None
+            return template_url
+        else:
+            return f"{template_url}#{self.monster.key}"
 
+    @cached_property
+    def template_url(self) -> str:
+        """Returns the URL for the monster template."""
         base_url = os.environ.get("SITE_URL", "https://foefoundry.com")
         if not base_url.endswith("/"):
             base_url += "/"
 
-        return f"{base_url}monsters/{self.template.key}/#{self.monster.key}"
+        return f"{base_url}monsters/{self.template.key}/"
 
     def copy(self, **args) -> MonsterRef:
         """Creates a copy of the monster reference with updated values."""
