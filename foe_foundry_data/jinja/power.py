@@ -41,6 +41,7 @@ def render_power_fragment(power: "PowerModel", header_tag: str = "h2") -> str:
         spellcasting=spellcasting,
         reaction_header=power.reaction_header,
         monsters=power.monsters,
+        monsters_html=power.used_by_monsters_html,
     )
     html_raw = template.render(context)
     return html_raw

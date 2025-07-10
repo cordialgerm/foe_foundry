@@ -24,11 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const banner = document.getElementById("alpha-banner");
   const dismissBtn = document.getElementById("dismiss-banner");
+  const params = new URLSearchParams(window.location.search);
 
   if (!banner || !dismissBtn) return;
 
-  // Hide if user already dismissed it
-  if (localStorage.getItem("hideAlphaBanner") === "true") {
+  // Hide if user already dismissed it or in print mode
+  if (localStorage.getItem("hideAlphaBanner") === "true" || params.get('render') === 'print') {
     console.log("Alpha banner previously dismissed by user.");
     banner.style.display = "none";
   }

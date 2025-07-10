@@ -480,6 +480,14 @@ p:has(> img.masked.padded)>img.masked.padded {
     height: auto;
 }
 
+.monster-image-xsmall,
+.blog-image-xsmall {
+    max-height: 150px;
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
+}
+
 .monster-image-large,
 .blog-image-large {
     max-height: 600px;
@@ -855,6 +863,11 @@ a.burnt-parchment,
 
 .stat-block p:nth-of-type(2) strong+strong {
     margin-left: 30px
+}
+
+.power-monster-list {
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 /* Gylph Animation */
@@ -1324,7 +1337,7 @@ a.burnt-parchment,
 
 @page {
     size: A4 portrait;
-    margin: 15px;
+    margin: 0px;
 }
 
 @media print {
@@ -1361,6 +1374,10 @@ a.burnt-parchment,
 
     .pamphlet-main h1 {
         font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: clamp(0.8rem, 5vw, 2.3rem);
     }
 
     h1,
