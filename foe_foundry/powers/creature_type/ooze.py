@@ -129,7 +129,7 @@ class _Transparent(OozePower):
             icon="invisible",
             source="SRD5.1 Gelatinous Cube",
             power_level=RIBBON_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

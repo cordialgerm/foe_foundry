@@ -150,7 +150,7 @@ class _FaeCounterspell(FeyPower):
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
             bonus_damage=DamageType.Psychic,
-            power_types=[PowerType.Attack, PowerType.Utility],
+            power_types=[PowerType.Attack, PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -207,7 +207,7 @@ class _FaeBargain(FeyPower):
             icon="trade",
             power_level=HIGH_POWER,
             require_cr=4,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

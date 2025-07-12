@@ -148,7 +148,7 @@ class _StormblessedMagic(MerrowPower):
             name="Stormblessed Magic",
             icon="lightning-storm",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

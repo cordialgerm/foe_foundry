@@ -29,7 +29,7 @@ class _Simulacrum(WizardPower):
             theme="simulacrum",
             icon="relationship-bounds",
             reference_statblock="Simulacrum",
-            power_types=[PowerType.Utility, PowerType.Movement],
+            power_types=[PowerType.Magic, PowerType.Movement],
             **kwargs,
         )
 

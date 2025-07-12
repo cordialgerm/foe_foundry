@@ -71,7 +71,7 @@ class _LichSpellcasting(LichPower):
             name="Lich Spellcasting",
             icon="spell-book",
             power_level=HIGH_POWER,
-            power_types=[PowerType.Attack, PowerType.Utility, PowerType.AreaOfEffect],
+            power_types=[PowerType.Attack, PowerType.Magic, PowerType.AreaOfEffect],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -124,7 +124,7 @@ class _SoulHarvest(LichPower):
         super().__init__(
             name="Soul Harvest",
             icon="soul",
-            power_types=[PowerType.Healing, PowerType.Utility],
+            power_types=[PowerType.Healing, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

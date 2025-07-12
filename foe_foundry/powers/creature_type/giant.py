@@ -99,7 +99,7 @@ class _CloudRune(GiantPower):
             source="Foe Foundry",
             bonus_skills=Skills.Deception,
             icon="sun-cloud",
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -263,7 +263,7 @@ class _StormRune(GiantPower):
             power_level=LOW_POWER,
             bonus_damage=DamageType.Lightning,
             require_damage_exact_match=True,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

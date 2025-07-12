@@ -110,7 +110,7 @@ class _Haunt(SpiritPower):
             name="Haunt",
             icon="haunting",
             power_level=LOW_POWER,
-            power_types=[PowerType.Utility, PowerType.Movement],
+            power_types=[PowerType.Magic, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -241,7 +241,7 @@ class _ShadowInvisibility(SpiritPower):
             reference_statblock="Shadow",
             icon="shadow-grasp",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

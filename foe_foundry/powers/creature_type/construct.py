@@ -214,7 +214,7 @@ class _Retrieval(ConstructPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             icon="bug-net",
-            power_types=[PowerType.Movement, PowerType.Debuff, PowerType.Utility],
+            power_types=[PowerType.Movement, PowerType.Debuff, PowerType.Magic],
             create_date=datetime(2023, 11, 21),
             require_cr=7,
             attack_names=["-", natural_attacks.Slam],
@@ -259,7 +259,7 @@ class _SpellStoring(ConstructPower):
             icon="energy-tank",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

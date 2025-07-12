@@ -75,7 +75,7 @@ class _BurrowingDisguise(_DireBunnyPower):
         super().__init__(
             name="Burrowing Disguise",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Utility, PowerType.Defense],
+            power_types=[PowerType.Stealth, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

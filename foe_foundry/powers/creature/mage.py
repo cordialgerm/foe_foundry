@@ -92,7 +92,7 @@ class _ApprenticeMage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=RIBBON_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -117,7 +117,7 @@ class _AdeptMage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=LOW_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -142,7 +142,7 @@ class _Mage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -167,7 +167,7 @@ class _Archmage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

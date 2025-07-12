@@ -75,7 +75,7 @@ class _HealingTouch(CelestialPower):
             name="Healing Touch",
             icon="healing",
             source="SRD5.1 Deva",
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

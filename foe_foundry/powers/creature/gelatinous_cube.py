@@ -102,7 +102,7 @@ class _PerfectlyTransparant(GelatinousCubePower):
             name="Perfectly Transparent",
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
-            power_types=[PowerType.Defense, PowerType.Utility],
+            power_types=[PowerType.Defense, PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

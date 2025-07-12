@@ -71,7 +71,7 @@ class _FreakishlySkinny(BugbearPower):
             name="Freakishly Skinny",
             icon="dungeon-gate",
             power_level=RIBBON_POWER,
-            power_types=[PowerType.Movement, PowerType.Utility],
+            power_types=[PowerType.Movement, PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
@@ -139,7 +139,7 @@ class _Skulk(BugbearPower):
             name="Skulk",
             icon="hidden",
             power_level=RIBBON_POWER,
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:

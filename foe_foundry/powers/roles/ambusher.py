@@ -52,7 +52,7 @@ class _CunningAction(AmbusherPower):
             source="SRD5.1 Spy",
             reference_statblock="Spy",
             icon="running-ninja",
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Stealth, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -77,7 +77,7 @@ class _StealthySneak(AmbusherPower):
             source="A5E SRD Bugbear",
             icon="cultist",
             create_date=datetime(2023, 11, 22),
-            power_types=[PowerType.Utility],
+            power_types=[PowerType.Stealth, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
