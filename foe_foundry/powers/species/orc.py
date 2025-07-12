@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Stats
 from ...spells import abjuration, evocation, illusion
@@ -38,6 +39,7 @@ class OrcPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         self.species = "orc"
@@ -57,6 +59,7 @@ class OrcPower(PowerWithStandardScoring):
             icon=icon,
             theme="Orc",
             reference_statblock="Orc",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -106,6 +109,7 @@ class _BloodrageDash(OrcPower):
                 MonsterRole.Soldier,
                 MonsterRole.Ambusher,
             ],
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
