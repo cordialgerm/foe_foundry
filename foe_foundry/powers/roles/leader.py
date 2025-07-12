@@ -61,7 +61,7 @@ class _CommandTheAttack(LeaderPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Command the Attack",
             description=f"{stats.roleref.capitalize()} issues a command to all allied creatures within 30 feet. \
@@ -82,7 +82,7 @@ class _Intimidate(LeaderPower):
             icon="terror",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         frightened = Condition.Frightened
         feature = Feature(
             name="Intimidate",
@@ -109,7 +109,7 @@ class _StayInFormation(LeaderPower):
             source="A5E SRD Bugbear Chief",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stay in Formation",
             action=ActionType.Action,
@@ -130,7 +130,7 @@ class _FanaticFollowers(LeaderPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(3 + 1.5 * stats.cr, min_val=5)
         feature = Feature(
             name="Fanatic Followers",
@@ -151,7 +151,7 @@ class _InspiringCommander(LeaderPower):
             require_callback=is_positive_leader,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Inspiring Commander",
             action=ActionType.Action,
@@ -173,7 +173,7 @@ class _CommandTheTroops(LeaderPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Command the Troops",
             action=ActionType.Action,
@@ -195,7 +195,7 @@ class _RallyTheTroops(LeaderPower):
             require_callback=is_positive_leader,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.target_value(target=0.5).average, min_val=5)
 
         feature = Feature(

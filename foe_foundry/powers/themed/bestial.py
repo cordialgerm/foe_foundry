@@ -55,7 +55,7 @@ class _RetributiveStrike(BestialPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.hp.average / 2, min_val=5)
 
         feature = Feature(
@@ -77,7 +77,7 @@ class _OpportuneBite(BestialPower):
             attack_names=["-", natural.Bite],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         grappled = Condition.Grappled.caption
         restrained = Condition.Restrained.caption
@@ -100,7 +100,7 @@ class _Trample(BestialPower):
             attack_names=["-", natural.Stomp],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Trample",
             description=f"{stats.selfref.capitalize()} makes a {stats.attack.display_name} attack against a prone creature.",
@@ -129,7 +129,7 @@ class _BurrowingAmbush(BestialPower):
         new_speed = stats.speed.grant_burrow()
         return stats.copy(speed=new_speed)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Burrowing Ambush",
             action=ActionType.BonusAction,
@@ -151,7 +151,7 @@ class _TurboTrot(BestialPower):
             attack_names=["-", natural.Stomp],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Turbo Trot",
             action=ActionType.Feature,
@@ -172,7 +172,7 @@ class _MarkTheMeal(BestialPower):
             attack_names=["-", natural.Bite],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Mark the Meal",
             action=ActionType.BonusAction,

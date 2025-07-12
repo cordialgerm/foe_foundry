@@ -56,7 +56,7 @@ class _Web(SpiderPower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         restrained = Condition.Restrained
 

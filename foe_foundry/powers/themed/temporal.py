@@ -65,7 +65,7 @@ class _CurseOfTheAges(TemporalPower):
             require_cr=10,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=2.5, force_die=Die.d12)
         weakened = conditions.Weakened(save_end_of_turn=False)
@@ -92,7 +92,7 @@ class _TemporalLoop(TemporalPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30
         uses = ceil(stats.cr / 7)
 
@@ -124,7 +124,7 @@ class _TemporalMastery(TemporalPower):
             require_cr=7,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Temporal Mastery",
             action=ActionType.Action,
@@ -146,7 +146,7 @@ class _Accelerate(TemporalPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Accelerate Time",
             action=ActionType.BonusAction,
@@ -164,7 +164,7 @@ class _AlterFate(TemporalPower):
             name="Alter Fate", icon="card-random", source="Alter Fate", require_cr=4
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Alter Fate",
             action=ActionType.Reaction,
@@ -184,7 +184,7 @@ class _WallOfTime(TemporalPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Wall of Time",
             action=ActionType.Action,
@@ -207,7 +207,7 @@ class _Reset(TemporalPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(

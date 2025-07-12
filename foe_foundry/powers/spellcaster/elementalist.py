@@ -32,7 +32,7 @@ class _Pyromancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.4, force_die=Die.d10)
         burning = conditions.Burning(damage)
 
@@ -61,7 +61,7 @@ class _Cryomancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc=dc)
 
@@ -91,7 +91,7 @@ class _Electromancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         shocked = conditions.Shocked()
         dc = stats.difficulty_class
         feature = Feature(
@@ -115,7 +115,7 @@ class _Toximancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weakened = conditions.Weakened(save_end_of_turn=True)
         dc = stats.difficulty_class
         feature = Feature(

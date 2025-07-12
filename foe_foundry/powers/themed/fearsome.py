@@ -76,7 +76,7 @@ class _FearsomeRoar(FearsomePower):
     def __init__(self):
         super().__init__(name="Fearsome Roar", icon="lion", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         feature = Feature(
@@ -95,7 +95,7 @@ class _HorrifyingPresence(HorrifyingPower):
     def __init__(self):
         super().__init__(name="Horrifying Presence", icon="dread", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         feature = Feature(
@@ -114,7 +114,7 @@ class _HorrifyingVisage(HorrifyingPower):
     def __init__(self):
         super().__init__(name="Horrifying Visage", icon="terror", source="SRD5.1 Ghost")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
         dc = stats.difficulty_class
         frightened = Condition.Frightened
@@ -135,7 +135,7 @@ class _DreadGaze(HorrifyingPower):
     def __init__(self):
         super().__init__(name="Dread Gaze", icon="overlord-helm", source="SRD5.1 Mummy")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         paralyzed = Condition.Paralyzed
@@ -162,7 +162,7 @@ class _MindShatteringScream(HorrifyingPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(5 + 2.5 * stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
         frightened = Condition.Frightened
@@ -185,7 +185,7 @@ class _NightmarishVisions(HorrifyingPower):
             name="Nightmarish Visions", icon="dread-skull", source="Foe Foundry"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)
         dc = stats.difficulty_class_easy
         bleeding = conditions.Bleeding(dmg, damage_type=DamageType.Psychic)

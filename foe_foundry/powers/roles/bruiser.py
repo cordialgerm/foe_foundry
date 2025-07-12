@@ -71,7 +71,7 @@ class _GrapplingStrike(BruiserPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -84,7 +84,7 @@ class _CleavingBlows(BruiserPower):
             attack_names={weapon.Greataxe, natural_attacks.Claw},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Cleaving Blows",
             action=ActionType.BonusAction,
@@ -105,7 +105,7 @@ class _StunningBlow(BruiserPower):
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         stunned = Condition.Stunned
 
@@ -132,7 +132,7 @@ class _Rend(BruiserPower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

@@ -63,7 +63,7 @@ class _PoisonedAttack(Technique):
             name="Poisoned Attack", icon="poison-bottle", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Poisoned Attack",
@@ -100,7 +100,7 @@ class _BleedingAttack(Technique):
             name="Bleeding Attack", icon="bleeding-wound", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5, force_die=Die.d6)
 
         if stats.secondary_damage_type in {
@@ -151,7 +151,7 @@ class _DazingAttack(Technique):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -176,7 +176,7 @@ class _BurningAttack(Technique):
             name="Burning Attack", icon="flaming-sheet", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type or DamageType.Fire
         damage = stats.target_value(target=0.33, force_die=Die.d10)
         burning = conditions.Burning(damage, damage_type)
@@ -216,7 +216,7 @@ class _ProneAttack(Technique):
         )
         super().__init__(name="Prone Attack", icon="tripwire", score_args=score_args)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
             condition = f"is knocked {Condition.Prone.caption}"
         else:
@@ -258,7 +258,7 @@ class _SlowingAttack(Technique):
             name="Slowing Attack", icon="sticky-boot", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Slowing Attack",
             action=ActionType.Feature,
@@ -294,7 +294,7 @@ class _PushingAttack(Technique):
 
         super().__init__(name="Pushing Attack", icon="push", score_args=score_args)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge and stats.attributes.STR >= 20:
             distance = 20
         elif stats.size >= Size.Huge:
@@ -333,7 +333,7 @@ class _GrapplingAttack(Technique):
 
         super().__init__(name="Grappling Attack", icon="grab", score_args=score_args)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         if stats.size >= Size.Huge or stats.attributes.STR >= 20:
@@ -373,7 +373,7 @@ class _BlindingAttack(Technique):
             name="Blinding Attack", icon="sight-disabled", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         if stats.cr < 1:
@@ -406,7 +406,7 @@ class _FrighteningAttack(Technique):
             name="Frightening Attack", icon="terror", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Frightening Attack",
             action=ActionType.Feature,
@@ -428,7 +428,7 @@ class _NoHealingAttack(Technique):
             name="No Healing Attack", icon="health-decrease", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="No Healing Attack",
             action=ActionType.Feature,
@@ -448,7 +448,7 @@ class _CharmingAttack(Technique):
         )
         super().__init__(name="Charming Attack", icon="charm", score_args=score_args)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Charming Attack",
@@ -475,7 +475,7 @@ class _FreezingAttack(Technique):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc)
         condition = f"must make a DC {dc} Constitution save or be {frozen}"
@@ -505,7 +505,7 @@ class _ShockingAttack(Technique):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         shocked = conditions.Shocked()
         feature = Feature(
@@ -533,7 +533,7 @@ class _GrazingAttack(Technique):
             name="Grazing Attack", icon="claw-slashes", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
         damage_type = stats.attack.damage.damage_type
 
@@ -558,7 +558,7 @@ class _CleavingAttack(Technique):
             name="Cleaving Attack", icon="meat-cleaver", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.attributes.primary_mod
         damage_type = stats.attack.damage.damage_type
         reach = stats.attack.reach
@@ -594,7 +594,7 @@ class _SappingAttack(Technique):
             name="Sapping Attack", icon="wasp-sting", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Sapping Attack",
             action=ActionType.Feature,
@@ -626,7 +626,7 @@ class _VexingAttack(Technique):
             name="Vexing Attack", icon="saber-and-pistol", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Vexing Attack",
             action=ActionType.Feature,
@@ -658,7 +658,7 @@ class _WeakeningAttack(Technique):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         weakened = conditions.Weakened()
         feature = Feature(
@@ -701,7 +701,7 @@ class _DisarmingAttack(Technique):
             name="Disarming Attack", icon="drop-weapon", score_args=score_args
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Disarming Attack",
@@ -732,7 +732,7 @@ class _ParryAndRiposte(Technique):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr < 1:
             recharge = None
             uses = 1
@@ -788,7 +788,7 @@ class _PommelStrike(Technique):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -817,7 +817,7 @@ class _Dueling(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Expert Duelist",
             action=ActionType.Feature,
@@ -842,7 +842,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=0.2, force_die=Die.d4)
         feature1 = Feature(
@@ -887,7 +887,7 @@ class _Interception(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(
             stats.speed.fastest_speed / 2.0, min_val=5, max_val=30
         )
@@ -920,7 +920,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bonus = stats.attributes.primary_mod
         feature = Feature(
             name="Bait and Switch",
@@ -951,7 +951,7 @@ class _QuickToss(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         attack = stats.attack.name
         feature = Feature(
             name="Quick Toss",
@@ -985,7 +985,7 @@ class _ArmorMaster(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reduction = stats.attributes.proficiency
         feature = Feature(
             name="Armor Master",
@@ -1022,7 +1022,7 @@ class _ShieldMaster(PowerWithStandardScoring):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Shield Slam",
@@ -1051,7 +1051,7 @@ class _PolearmMaster(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Polearm Master",
             action=ActionType.Reaction,
@@ -1082,7 +1082,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         if stats.cr <= 1:
@@ -1129,7 +1129,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         dmg = stats.target_value(target=1.0, force_die=Die.d6, force_even=True)
@@ -1171,7 +1171,7 @@ class _Sharpshooter(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = stats.attack.range_max or stats.attack.range
         dmg = stats.target_value(dpr_proportion=0.8)

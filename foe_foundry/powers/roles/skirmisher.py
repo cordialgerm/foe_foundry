@@ -66,7 +66,7 @@ class _Skirmish(SkirmisherPower):
             require_types=CreatureType.Humanoid,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         net_size = 10 if stats.cr <= 4 else 15
         net_range = 60 if stats.size >= Size.Large else 30
@@ -93,7 +93,7 @@ class _HarrassingRetreat(SkirmisherPower):
             requires_tactics=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         range = (
             10 if len(stats.attack_types.intersection(AttackType.AllRanged())) else 5
         )
@@ -125,7 +125,7 @@ class _Speedy(SkirmisherPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Speedy",
             action=ActionType.Feature,
@@ -151,7 +151,7 @@ class _NimbleEscape(SkirmisherPower):
             icon="exit-door",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         disengage = action_ref("Disengage")
         feature = Feature(

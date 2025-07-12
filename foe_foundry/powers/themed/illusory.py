@@ -78,7 +78,7 @@ class _Projection(Illusory):
             name="Projection", icon="invisible", source="SRD5.1 Project Image"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Projection",
@@ -101,7 +101,7 @@ class _SpectralDuplicate(Illusory):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spectral Duplicate",
             action=ActionType.BonusAction,
@@ -119,7 +119,7 @@ class _MirrorImage(Illusory):
             name="Mirror Image", icon="backup", source="SRD5.1 Mirror Image"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         ac = 10 + stats.attributes.stat_mod(Stats.DEX)
 
         feature = Feature(
@@ -140,7 +140,7 @@ class _HypnoticPattern(Illusory):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -158,7 +158,7 @@ class _ReverseFortune(Illusory):
     def __init__(self):
         super().__init__(name="Reverse Fortune", icon="dice-fire", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Reverse Fortune",
             action=ActionType.Reaction,
@@ -178,7 +178,7 @@ class _PhantomMirage(Illusory):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bloodied = Condition.Bloodied.caption
         feature = Feature(
             name="Phantom Mirage",

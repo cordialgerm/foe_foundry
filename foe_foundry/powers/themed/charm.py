@@ -82,7 +82,7 @@ class _MentalSummons(CharmingPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Mental Summons",
@@ -104,7 +104,7 @@ class _SweetPromises(CharmingPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         charmed = Condition.Charmed
         stunned = Condition.Stunned
@@ -128,7 +128,7 @@ class _WardingCharm(CharmingPower):
             create_date=datetime(2023, 11, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Warding Charm",
@@ -149,7 +149,7 @@ class _CharmingWords(CharmingPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

@@ -41,7 +41,7 @@ class _MountedWarrior(KnightPower):
         stats = stats.grant_proficiency_or_expertise(Skills.AnimalHandling)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         steed = creature_ref("Warhorse")
         feature = Feature(
             name="Trusty Steed",
@@ -66,7 +66,7 @@ class _GriffinKnight(KnightPower):
         stats = stats.grant_proficiency_or_expertise(Skills.AnimalHandling)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         griffon = creature_ref("Griffon")
         feature = Feature(
             name="Griffon Mount",

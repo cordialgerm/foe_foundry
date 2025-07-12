@@ -57,7 +57,7 @@ class _TempestSurge(StormPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=2.5, force_die=Die.d10)
         shocked = Shocked()
         dc = stats.difficulty_class
@@ -83,7 +83,7 @@ class _StormcallersFury(StormPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=1.5, force_die=Die.d10)
 

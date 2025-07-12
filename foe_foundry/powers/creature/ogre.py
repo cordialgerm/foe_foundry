@@ -52,7 +52,7 @@ class _Wallsmash(OgrePower):
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.9, force_die=Die.d10)
         dc = stats.difficulty_class
         prone = Condition.Prone.caption
@@ -83,7 +83,7 @@ class _BurnBelch(OgrePower):
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d10, force_even=True)
         burning_dmg = DieFormula.from_dice(d10=(dmg.d10 or 0) // 2)
@@ -109,7 +109,7 @@ class _ChainCrack(OgrePower):
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy

@@ -39,7 +39,7 @@ class _FrightfulGaze(DraconicPower):
     def __init__(self):
         super().__init__(name="Frightful Gaze", source="Foe Foundry", icon="dread")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = int(max(3, stats.cr / 2))
         frightened = Condition.Frightened
@@ -63,7 +63,7 @@ class _TailSwipe(DraconicPower):
             attack_names=natural_attacks.Tail,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Tail Swipe",
             action=ActionType.Reaction,
@@ -98,7 +98,7 @@ class _WingBuffet(DraconicPower):
             require_flying=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         prone = Condition.Prone
@@ -118,7 +118,7 @@ class _DragonsGreed(DraconicPower):
     def __init__(self):
         super().__init__(name="Dragon's Greed", source="Foe Foundry", icon="coins-pile")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         charmed = Condition.Charmed
         feature = Feature(
@@ -172,7 +172,7 @@ class _DraconicMinions(DraconicPower):
             stats = stats.copy(secondary_damage_type=DamageType.Fire)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type
         if damage_type is None:
             raise ValueError("dragon does not have a secondary damage type")
@@ -200,7 +200,7 @@ class _VengefulBreath(DraconicPower):
             create_date=datetime(2023, 11, 22),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.hp.average / 2)
         feature = Feature(
             name="Vengeful Breath",

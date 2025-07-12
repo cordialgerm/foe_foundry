@@ -73,7 +73,7 @@ class _Challenge(HonorablePower):
             require_no_flags=flags.HAS_DUEL,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Challenge",
             action=ActionType.Action,
@@ -97,7 +97,7 @@ class _HonorboundDuelist(HonorablePower):
             require_no_flags=flags.HAS_DUEL,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Honorbound Duelist",
             action=ActionType.Feature,
@@ -117,7 +117,7 @@ class _MortalVow(HonorablePower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(stats.hp.average * 0.4, min_val=5)
         feature = Feature(
             name="Mortal Vow",

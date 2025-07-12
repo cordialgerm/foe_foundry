@@ -41,7 +41,7 @@ class _SerpentineHiss(_SerpentinePower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         frightened = Condition.Frightened
         dc = stats.difficulty_class
         feature = Feature(
@@ -62,7 +62,7 @@ class _InterruptingHiss(_SerpentinePower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Interrupting Hiss",

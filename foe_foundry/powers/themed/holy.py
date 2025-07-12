@@ -72,7 +72,7 @@ class _DivineSmite(HolyPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.7, force_die=Die.d10)
         burning = conditions.Burning(dmg, damage_type=DamageType.Radiant)
@@ -92,7 +92,7 @@ class _MassCureWounds(HolyPower):
             name="Mass Cure Wounds", icon="healing", source="SRD5.1 Mass Cure Wounds"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -107,7 +107,7 @@ class _WordOfRadiance(HolyPower):
             name="Word of Radiance", icon="fireflake", source="SRD 5.1 Word of Radiance"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         target_damage = 1.5 if stats.multiattack >= 2 else 1.0
         damage = stats.target_value(target=target_damage, suggested_die=Die.d6)
         dc = stats.difficulty_class
@@ -126,7 +126,7 @@ class _Heroism(HolyPower):
     def __init__(self):
         super().__init__(name="Heroism", icon="medal", source="SRD 5.1 Heroism")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
             1.75 * (stats.attributes.stat_mod(Stats.WIS) + stats.cr), min_val=5
         )
@@ -148,7 +148,7 @@ class _DeathWard(HolyPower):
             name="Death Ward", icon="heart-shield", source="SRD 5.1 Death Ward"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         new_hp = easy_multiple_of_five(
             1.75 * (stats.attributes.stat_mod(Stats.WIS) + stats.cr), min_val=5
         )

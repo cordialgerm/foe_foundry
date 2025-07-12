@@ -48,7 +48,7 @@ class _Snare(Trap):
     def __init__(self):
         super().__init__(name="Snare", icon="box-trap", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
 
@@ -69,7 +69,7 @@ class _SpikePit(Trap):
     def __init__(self):
         super().__init__(name="Spike Pit", icon="spiky-pit", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         quantity = ceil(stats.cr / 3)
         fall_damage = DieFormula.from_expression("2d6")

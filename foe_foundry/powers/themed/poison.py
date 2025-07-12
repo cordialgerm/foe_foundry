@@ -71,7 +71,7 @@ class _PoisonousBurst(PoisonPower):
             name="Poisonous Burst", icon="carrion", source="SRD5.1 Ice Mephit"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 4, min_val=10, max_val=60)
@@ -94,7 +94,7 @@ class _ToxicPoison(PoisonPower):
             create_date=datetime(2023, 11, 24),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         susceptible = conditions.Susceptible(DamageType.Poison)
         feature1 = Feature(
@@ -117,7 +117,7 @@ class _PoisonDart(PoisonPower):
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75 if stats.multiattack > 2 else 1.1)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
@@ -143,7 +143,7 @@ class _WeakeningPoison(PoisonPower):
             create_date=datetime(2025, 3, 2),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
@@ -165,7 +165,7 @@ class _PoisonousBlood(PoisonPower):
             create_date=datetime(2025, 3, 14),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -185,7 +185,7 @@ class _VenemousMiasma(PoisonPower):
             create_date=datetime(2025, 3, 14),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dmg = int(stats.target_value(dpr_proportion=0.2).average)
         feature = Feature(
@@ -206,7 +206,7 @@ class _VileVomit(PoisonPower):
             require_types=[CreatureType.Undead, CreatureType.Monstrosity],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dmg = stats.target_value(dpr_proportion=1.2)
         dc = stats.difficulty_class_easy

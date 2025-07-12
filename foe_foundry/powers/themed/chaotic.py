@@ -68,7 +68,7 @@ class _ChaoticSpace(ChaoticPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         radius = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=45)
         distance = 30 if stats.cr <= 5 else 60
@@ -110,7 +110,7 @@ class _EldritchBeacon(ChaoticPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("eldritch beacon"))
         beacon = Token(
             name="Eldritch Beacon", dc=stats.difficulty_class_token, charges=3

@@ -53,7 +53,7 @@ class _KelpNets(MerrowPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         grappled = conditions.Condition.Grappled.caption
         restrained = conditions.Condition.Restrained.caption
         dc = stats.difficulty_class
@@ -88,7 +88,7 @@ class _ReelInThePrey(MerrowPower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bleeding_damage = stats.target_value(dpr_proportion=0.25, force_die=Die.d6)
         bleeding = conditions.Bleeding(damage=bleeding_damage)
         restrained = conditions.Condition.Restrained.caption
@@ -112,7 +112,7 @@ class _AnemonePoison(MerrowPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d6)
         dc = stats.difficulty_class
         poisoned = conditions.Condition.Poisoned.caption
@@ -159,7 +159,7 @@ class _StormblessedMagic(MerrowPower):
         stats = stats.add_spells([s.for_statblock(uses=1) for s in spells])
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 

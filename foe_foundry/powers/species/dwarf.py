@@ -72,7 +72,7 @@ class DwarvenPowerWrapper(DwarvenPower):
         )
         self.wrapped_power = wrapped_power
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return self.wrapped_power.generate_features(stats)
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -90,7 +90,7 @@ class _HardDrink(DwarvenPower):
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hard Drink",
             description=f"The dwarf can chug a strong dwarven drink and gain advantage on the next d20 test {stats.selfref} makes within the next hour.",
@@ -110,7 +110,7 @@ class _DwarvenResilience(DwarvenPower):
             bonus_roles=[MonsterRole.Defender],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Dwarven Resilience",
             action=ActionType.Reaction,

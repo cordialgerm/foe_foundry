@@ -68,7 +68,7 @@ class _DamagingAura(ElementalPower):
         self.name = name
         self.damage_type = damage_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(stats.cr)
 
         feature = Feature(
@@ -104,7 +104,7 @@ class _ElementalAffinity(ElementalPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         upgrade_to_immunity = (
             self.damage_type in stats.damage_immunities
             or self.damage_type in stats.damage_resistances
@@ -134,7 +134,7 @@ class _ElementalSmite(ElementalPower):
         )
         self.dmg_type = dmg_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg_target = 0.5
         poisoned = Condition.Poisoned
@@ -188,7 +188,7 @@ class _ElementalBurst(ElementalPower):
         )
         self.damage_type = damage_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = int(ceil(stats.cr / 5))
         dmg = stats.target_value(target=0.75)
         damage_type = self.damage_type
@@ -215,7 +215,7 @@ class _ElementalFireball(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Fireball"
         dc = stats.difficulty_class
         dmg_type = DamageType.Fire
@@ -239,7 +239,7 @@ class _AcidicBlast(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Acidic Blast"
         dc = stats.difficulty_class
         dmg_type = DamageType.Acid
@@ -274,7 +274,7 @@ class _ConeOfCold(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Cone of Cold"
         dc = stats.difficulty_class
         dmg_type = DamageType.Cold
@@ -302,7 +302,7 @@ class _LightningBolt(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Lightning Bolt"
         dc = stats.difficulty_class
         dmg_type = DamageType.Lightning
@@ -330,7 +330,7 @@ class _PoisonCloud(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Poison Cloud"
         dc = stats.difficulty_class
         dmg_type = DamageType.Poison
@@ -361,7 +361,7 @@ class _Thunderwave(ElementalPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Thunderwave"
         dc = stats.difficulty_class
         dmg_type = DamageType.Thunder
@@ -392,7 +392,7 @@ class _ElementalReplication(ElementalPower):
             require_cr=4.0,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         rng = stats.create_rng("elemental replication")
         _, _, description = summoning.determine_summon_formula(
             summoner=stats.secondary_damage_type,

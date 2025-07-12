@@ -84,7 +84,7 @@ class _CommandingPresence(DomineeringPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         targets = num2words(int(ceil(max(5, stats.cr / 3))))
@@ -108,7 +108,7 @@ class _Dominate(DomineeringPower):
             require_cr=7,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         charmed = Condition.Charmed
 

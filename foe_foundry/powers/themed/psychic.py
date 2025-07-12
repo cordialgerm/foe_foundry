@@ -68,7 +68,7 @@ class _Telekinetic(PsychicPower):
             require_cr=6,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -81,7 +81,7 @@ class _PsychicInfestation(PsychicPower):
             name="Psychic Infestation", icon="unstable-orb", source="Foe Foundry"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
@@ -111,7 +111,7 @@ class _DissonantWhispers(PsychicPower):
             source="SRD5.1 Dissonant Whispers",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(30 + 5 * stats.cr, min_val=30, max_val=90)
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
@@ -137,7 +137,7 @@ class _PsionicBlast(PsychicPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 2.5 if stats.multiattack >= 2 else 1.5
         dmg = stats.target_value(target=multiplier, force_die=Die.d6)
         dc = stats.difficulty_class
@@ -168,7 +168,7 @@ class _MirroredPain(PsychicPower):
     def __init__(self):
         super().__init__(name="Mirrored Pain", icon="telepathy", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Mirrored Pain",
@@ -207,7 +207,7 @@ class _EatBrain(PsychicPower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dazed = Dazed()
         grappled = Condition.Grappled
@@ -234,7 +234,7 @@ class _ReadThoughts(PsychicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.25, force_die=Die.d4)
         detect_thoughts = divination.DetectThoughts.for_statblock().caption_md

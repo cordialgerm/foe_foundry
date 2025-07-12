@@ -60,7 +60,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -95,7 +95,7 @@ class _TongueTwister(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         cursed = conditions.Cursed().caption
         feature = Feature(
@@ -144,7 +144,7 @@ class _HeartTremors(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=1.5, force_die=Die.d10)
         feature = Feature(
@@ -175,7 +175,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Unhinged Paranoia",
@@ -207,7 +207,7 @@ class _Nervefire(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         poisoned = Condition.Poisoned
         dmg = stats.target_value(target=0.75, force_die=Die.d6)
@@ -240,7 +240,7 @@ class _TiringAttack(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         exhaustion = Condition.Exhaustion
         feature = Feature(

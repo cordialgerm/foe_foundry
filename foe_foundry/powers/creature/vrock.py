@@ -43,7 +43,7 @@ class _StunningScreech(_VrockPower):
             name="Stunning Screech", icon="screaming", power_level=HIGH_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         stunned = Condition.Stunned
         dmg = stats.target_value(dpr_proportion=0.65, force_die=Die.d6)
         dc = stats.difficulty_class_easy

@@ -39,7 +39,7 @@ class SpellPower(PowerWithStandardScoring):
         self.spell = spell
         self.caster_type = caster_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

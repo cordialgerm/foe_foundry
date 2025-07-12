@@ -64,7 +64,7 @@ class _Flyer(FlyingPower):
             source="Foe Foundry",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         speed_change = 10 + 10 * int(floor(stats.cr / 10.0))
         feature = Feature(
             name="Flyer",
@@ -84,7 +84,7 @@ class _Flyby(FlyingPower):
             require_flying=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Flyby",
             action=ActionType.Feature,
@@ -109,7 +109,7 @@ class _WingedCharge(FlyingPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Winged Charge",
             action=ActionType.Reaction,
@@ -130,7 +130,7 @@ class _WingedRetreat(FlyingPower):
             require_roles={MonsterRole.Skirmisher},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Winged Retreat",
             action=ActionType.Reaction,

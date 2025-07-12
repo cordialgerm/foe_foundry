@@ -54,7 +54,7 @@ class _ComfortingFamiliarity(MimicPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Comforting Familiarity",
@@ -75,7 +75,7 @@ class _InhabitArmor(MimicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d4)
 
         grappled = conditions.Condition.Grappled.caption
@@ -99,7 +99,7 @@ class _SplinterStep(MimicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         feature = Feature(
             name="Splinter Step",
@@ -119,7 +119,7 @@ class _MagneticAttraction(MimicPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Magnetic Attraction",
@@ -137,7 +137,7 @@ class _HollowHome(MimicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         grappled = conditions.Condition.Grappled.caption
         feature = Feature(

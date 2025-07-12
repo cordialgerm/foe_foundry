@@ -80,7 +80,7 @@ class OrcPowerWrapper(OrcPower):
         )
         self.wrapped_power = wrapped_power
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         new_features = self.wrapped_power.generate_features(stats)
         if len(new_features) == 1:
             f = new_features[0]
@@ -108,7 +108,7 @@ class _BloodrageDash(OrcPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         feature = Feature(
             name="Bloodrage Dash",
@@ -131,7 +131,7 @@ class _BloodrageBarrage(OrcPower):
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bloodrage Barrage",
             description="When the orc misses with a ranged attack, it can make another ranged attack at the same target using its reaction. The attack is made with advantage.",
@@ -153,7 +153,7 @@ class _SavageMomentum(OrcPower):
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         feature = Feature(
             name="Savage Momentum",
@@ -175,7 +175,7 @@ class _Bloodfury(OrcPower):
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bloodied = Condition.Bloodied.caption
         enraged = conditions.Enraged()
         feature = Feature(
@@ -206,7 +206,7 @@ class _AncestralGuidance(OrcPower):
             require_callback=require_callback,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Ancestral Guidance",
             description=f"When {stats.selfref} fails a d20 test, it succeeds instead.",
@@ -229,7 +229,7 @@ class _BloodburnTattoo(OrcPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         spell = evocation.BurningHands.for_statblock().scale_for_cr(stats.cr)
         dc = stats.difficulty_class_easy
 
@@ -255,7 +255,7 @@ class _ThunderwrathTatoo(OrcPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         spell = evocation.Shatter.for_statblock().scale_for_cr(stats.cr)
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -278,7 +278,7 @@ class _SpiritSneakTatoo(OrcPower):
             require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         spell = illusion.Invisibility.for_statblock()
         feature = Feature(
             name="Spirit Sneak Tattoo",
@@ -305,7 +305,7 @@ class _EmpoweringTatoo(OrcPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         spell = abjuration.CureWounds.for_statblock().scale_for_cr(stats.cr)
         feature = Feature(
             name="Empowering Tattoo",
@@ -335,7 +335,7 @@ class _SanguineOffering(OrcPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         self_dmg_target = stats.target_value(dpr_proportion=0.2).average
         if self_dmg_target <= 4.0:
             self_dmg = max(1, round(self_dmg_target))
@@ -378,7 +378,7 @@ class _BloodkinBond(OrcPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(0.25 * stats.hp.average)
         feature = Feature(
             name="Bloodkin Bond",
@@ -402,7 +402,7 @@ class _WarCryOfTheBloodiedFang(OrcPower):
             bonus_roles=[MonsterRole.Leader, MonsterRole.Soldier, MonsterRole.Bruiser],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
             2 * stats.attributes.proficiency + 2 * stats.attributes.stat_mod(Stats.CHA)
         )
@@ -427,7 +427,7 @@ class _WarCryOfTheChillheart(OrcPower):
             bonus_roles=[MonsterRole.Leader, MonsterRole.Soldier, MonsterRole.Bruiser],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = conditions.Condition.Frightened.caption
         feature = Feature(

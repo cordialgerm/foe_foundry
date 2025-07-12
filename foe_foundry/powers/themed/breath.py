@@ -41,7 +41,7 @@ class _BreathPower(PowerWithStandardScoring):
         else:
             return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = breath(self.name, self.breath, stats, self.save, self.on_failure)
         return [feature]
 

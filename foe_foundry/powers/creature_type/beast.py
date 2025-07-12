@@ -58,7 +58,7 @@ class _FeedingFrenzy(BeastPower):
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Feeding Frenzy",
             action=ActionType.BonusAction,
@@ -84,7 +84,7 @@ class _BestialRampage(BeastPower):
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bestial Rampage",
             action=ActionType.Reaction,
@@ -111,7 +111,7 @@ class _Gore(BeastPower):
             attack_names=["-", natural_attacks.Horns],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         bleeding_damage = stats.target_value(target=0.5, force_die=Die.d6)
@@ -143,7 +143,7 @@ class _Packlord(BeastPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.speed.fly:
             options = summoning.FlyingBeasts
         elif stats.speed.swim:
@@ -175,7 +175,7 @@ class _WildInstinct(BeastPower):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         feature = Feature(
             name="Wild Instinct",
@@ -196,7 +196,7 @@ class _ScentOfWeakness(BeastPower):
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bloodied = Condition.Bloodied.caption
         feature = Feature(
             name="Scent of Weakness",

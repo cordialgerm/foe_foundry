@@ -54,7 +54,7 @@ class _DraconicServants(KoboldPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Draconic Servants",
             action=ActionType.Feature,
@@ -73,7 +73,7 @@ class _DraconicStandard(KoboldPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         draconic_standard = Token(
             name="Draconic Standard", dc=stats.difficulty_class_token, charges=1
         )
@@ -109,7 +109,7 @@ class _DraconicAscension(KoboldPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         wyrmling = creature_ref("Red Dragon Wyrmling")
         temp_hp = easy_multiple_of_five(
             stats.attributes.stat_mod(Stats.CHA) + stats.attributes.proficiency * 2,
@@ -135,7 +135,7 @@ class _ScurryingFormation(KoboldPower):
             require_roles=MonsterRole.Soldier,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Scurrying Formation",
             action=ActionType.BonusAction,
@@ -154,7 +154,7 @@ class _FalseRetreat(KoboldPower):
             require_roles=MonsterRole.Soldier,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         prone = Condition.Prone.caption
         disengage = action_ref("Disengage")

@@ -70,7 +70,7 @@ class _BendSpace(TeleportationPower):
     def __init__(self):
         super().__init__(name="Bend Space", icon="thrust-bend", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bend Space",
             action=ActionType.Reaction,
@@ -94,7 +94,7 @@ class _MistyStep(TeleportationPower):
             require_no_flags={flags.HAS_TELEPORT, flags.NO_TELEPORT},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
         uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
 
@@ -116,7 +116,7 @@ class _Scatter(TeleportationPower):
     def __init__(self):
         super().__init__(name="Scatter", icon="misdirection", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 6 else 60
         dc = stats.difficulty_class
         count = int(max(2, ceil(stats.cr / 3)))

@@ -120,7 +120,7 @@ class _JustAScratch(PhysicallyTough):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(0.5 * stats.hp.average)
         temphp = easy_multiple_of_five(0.25 * stats.hp.average)
 
@@ -143,7 +143,7 @@ class _MagicResistance(MagicallyTough):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Magic Resistance",
             action=ActionType.Feature,
@@ -161,7 +161,7 @@ class _LimitedMagicImmunity(MagicallyTough):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         level = f"{num2words(int(min(5, ceil(stats.cr / 3))), to='ordinal')} level spell or lower"
 
         feature = Feature(
@@ -187,7 +187,7 @@ class _Regeneration(PhysicallyTough):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weaknesses = {
             CreatureType.Undead: "radiant damage",
             CreatureType.Monstrosity: "acid or fire damage",
@@ -213,7 +213,7 @@ class _Stoneskin(MagicallyTough):
             name="Stoneskin", icon="crenulated-shield", source="SRD5.1 Stoneskin"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stoneskin",
             action=ActionType.Reaction,

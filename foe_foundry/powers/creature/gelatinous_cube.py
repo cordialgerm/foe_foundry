@@ -54,7 +54,7 @@ class _EngulfInOoze(GelatinousCubePower):
             require_max_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.75)
         dc = stats.difficulty_class
         engulfed = conditions.Engulfed(damage=dmg, escape_dc=dc)
@@ -80,7 +80,7 @@ class _MetabolicSurge(GelatinousCubePower):
             require_max_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         engulfed = conditions.Engulfed(damage="1")
         hp = easy_multiple_of_five(stats.hp.average * 0.2)
         feature = Feature(
@@ -99,7 +99,7 @@ class _PerfectlyTransparant(GelatinousCubePower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         engulfed = conditions.Engulfed(damage="1")
         invisible = conditions.Condition.Invisible
         feature = Feature(

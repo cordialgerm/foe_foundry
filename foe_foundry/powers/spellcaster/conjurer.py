@@ -37,7 +37,7 @@ class _ConjurationWizard(WizardPower):
     def __init__(self, **kwargs):
         super().__init__(creature_name="Conjurer", icon="pentacle", **kwargs)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         creature, _, description = determine_summon_formula(
             summoner=Elementals,
             summon_cr_target=stats.cr / 2,

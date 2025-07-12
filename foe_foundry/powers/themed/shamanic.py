@@ -59,7 +59,7 @@ class _SpiritWalk(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.hp.average * 0.25, min_val=5, max_val=100)
         invisible = conditions.Condition.Invisible.caption
         feature = Feature(
@@ -85,7 +85,7 @@ class _CommuneWithTheAncestors(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Commune with the Ancestors",
             action=ActionType.Reaction,
@@ -106,7 +106,7 @@ class _CommuneWithLand(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8)
         prone = conditions.Condition.Prone.caption
@@ -133,7 +133,7 @@ class _CommuneWithAir(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8)
         feature = Feature(

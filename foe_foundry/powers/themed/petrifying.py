@@ -69,7 +69,7 @@ class _PetrifyingGaze(_PetrifyingPower):
             name="Petrifying Gaze", icon="medusa-head", reference_statblock="Basilisk"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         petrification = _petrification(stats)
 
         feature = Feature(
@@ -96,7 +96,7 @@ class _PetrifyingGlance(_PetrifyingPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         petrification = _petrification(stats)
         feature = Feature(
             name="Petrifying Glance",
@@ -113,7 +113,7 @@ class _PetrifyingBite(_PetrifyingPower):
             name="Petrifying Bite", icon="sharp-lips", attack_names={"-", natural.Bite}
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         petrification = _petrification(stats)
         feature = Feature(
             name="Petrifying Bite",

@@ -54,7 +54,7 @@ class _WallOfFire(DevilPower):
             bonus_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -83,7 +83,7 @@ class _DevilishMinions(DevilPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         _, _, description = summoning.determine_summon_formula(
             summoner=summoning.Devils,
             summon_cr_target=stats.cr / 2.5,
@@ -107,7 +107,7 @@ class _TemptingOffer(DevilPower):
             name="Tempting Offer", source="Foe Foundry", icon="cash", require_cr=3
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         exhaustion = Condition.Exhaustion
         feature = Feature(
@@ -130,7 +130,7 @@ class _DevilsSight(DevilPower):
             bonus_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         level = 2 if stats.cr <= 5 else 4
 
         devils_sight = Feature(

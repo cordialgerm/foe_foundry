@@ -43,7 +43,7 @@ class _PetrifyingBreath(_GorgonPower):
             name="Petrifying Breath", icon="cloud-ring", power_level=HIGH_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         restrained = Condition.Restrained
         petrified = Condition.Petrified
         dmg = stats.target_value(dpr_proportion=0.65, force_die=Die.d6)

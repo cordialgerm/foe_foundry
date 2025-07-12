@@ -20,6 +20,7 @@ class Feature:
     hidden: bool = False
     modifies_attack: bool = False
     creates_token: bool = False
+    power_key: str | None = None
     title: str = field(init=False)
 
     def __post_init__(self):

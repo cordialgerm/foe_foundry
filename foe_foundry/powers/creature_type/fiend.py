@@ -53,7 +53,7 @@ class _CallOfTheStyx(FiendishPower):
             bonus_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75)
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc=dc)
@@ -80,7 +80,7 @@ class _FiendishCackle(FiendishPower):
             bonus_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.5, force_die=Die.d4)
 
         dc = stats.difficulty_class
@@ -116,7 +116,7 @@ class _FieryTeleporation(FiendishPower):
         stats = super().modify_stats_inner(stats)
         return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
         dmg = stats.target_value(target=multiplier, force_die=Die.d10)
         distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=90)
@@ -146,7 +146,7 @@ class _FiendishTeleporation(FiendishPower):
         stats = super().modify_stats_inner(stats)
         return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Fiendish Teleportation",
             action=ActionType.BonusAction,

@@ -48,7 +48,7 @@ class _AbjurationWizard(WizardPower):
     def __init__(self, **kwargs):
         super().__init__(creature_name="Abjurer", icon="magic-shield", **kwargs)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         protection = easy_multiple_of_five(stats.hp.average / 5)
 
         feature = Feature(
