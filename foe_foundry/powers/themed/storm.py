@@ -32,7 +32,7 @@ class StormPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Storm Giant",
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_types={

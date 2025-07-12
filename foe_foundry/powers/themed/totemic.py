@@ -26,7 +26,7 @@ class TotemicPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             power_level=power_level,
             theme="totemic",

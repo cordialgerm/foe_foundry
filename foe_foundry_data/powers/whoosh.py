@@ -28,7 +28,7 @@ def index_powers():
     schema = Schema(
         name=TEXT(sortable=True, analyzer=StemmingAnalyzer()),
         key=ID(stored=True),
-        power_type=KEYWORD,
+        power_category=KEYWORD,
         creature_types=KEYWORD,
         roles=KEYWORD,
         theme=KEYWORD,
@@ -54,7 +54,7 @@ def index_powers():
         writer.add_document(
             name=power.name,
             key=key,
-            power_type=power.power_type,
+            power_category=power.power_category,
             creature_types=creature_types,
             roles=roles,
             theme=power.theme,

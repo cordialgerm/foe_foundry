@@ -43,7 +43,7 @@ class Illusory(PowerWithStandardScoring):
             name=name,
             source=source,
             create_date=create_date,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             theme="illusory",
             icon=icon,

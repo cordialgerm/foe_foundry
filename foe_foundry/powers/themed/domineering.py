@@ -56,7 +56,7 @@ class DomineeringPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             theme="domineering",
             reference_statblock=reference_statblock,
             create_date=create_date,

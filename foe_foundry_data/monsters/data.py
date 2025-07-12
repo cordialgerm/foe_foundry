@@ -44,7 +44,7 @@ def _load_monster_html(template_key: str, base_url: str) -> str | None:
 class PowerRef:
     key: str
     name: str
-    power_type: str
+    power_category: str
     source: str
     theme: str
     icon: str
@@ -54,7 +54,7 @@ class PowerRef:
         return PowerRef(
             key=power.key,
             name=power.name,
-            power_type=power.power_type.name,
+            power_category=power.power_category.name,
             source=power.source or "UNKNOWN",
             theme=power.theme or "UNKNOWN",
             icon=power.icon or "",

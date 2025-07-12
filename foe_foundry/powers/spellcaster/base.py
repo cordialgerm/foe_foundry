@@ -37,7 +37,7 @@ class _Spellcaster(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.Spellcasting,
+            power_category=PowerCategory.Spellcasting,
             source="Foe Foundry",
             theme=theme,
             icon=icon,

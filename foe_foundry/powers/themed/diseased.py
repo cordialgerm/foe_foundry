@@ -31,7 +31,7 @@ class DiseasePower(PowerWithStandardScoring):
     ):
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             create_date=datetime(2023, 11, 20),
             theme="disease",

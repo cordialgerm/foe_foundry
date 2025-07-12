@@ -46,7 +46,7 @@ class BestialPower(PowerWithStandardScoring):
             theme="Bestial",
             reference_statblock=reference_statblock,
             create_date=create_date,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
         )

@@ -41,7 +41,7 @@ class GuardPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Guard",
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,

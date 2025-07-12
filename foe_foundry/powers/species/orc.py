@@ -50,7 +50,7 @@ class OrcPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerCategory.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,

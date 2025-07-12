@@ -20,7 +20,7 @@ class _BreathPower(PowerWithStandardScoring):
     ):
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 28),

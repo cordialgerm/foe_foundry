@@ -27,7 +27,7 @@ class _VrockPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Vrock",
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 3, 16),
             score_args=dict(
                 require_callback=require_callback,

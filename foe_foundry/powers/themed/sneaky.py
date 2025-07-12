@@ -46,7 +46,7 @@ class SneakyPower(PowerWithStandardScoring):
             theme="sneaky",
             reference_statblock="Spy",
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_roles=[

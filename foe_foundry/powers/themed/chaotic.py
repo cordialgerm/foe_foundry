@@ -43,7 +43,7 @@ class ChaoticPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             theme="Chaotic",
             icon=icon,

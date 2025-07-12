@@ -33,7 +33,7 @@ class OgrePower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             icon=icon,
             theme="ogre",
             reference_statblock="Ogre",

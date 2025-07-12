@@ -50,7 +50,7 @@ class TeleportationPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Transmuter Mage",
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_callback=humanoid_is_caster,

@@ -31,7 +31,7 @@ class AmbusherPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             source=source,
             power_level=power_level,
             create_date=create_date,

@@ -24,7 +24,7 @@ class _SerpentinePower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Giant Snake",
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Beast],

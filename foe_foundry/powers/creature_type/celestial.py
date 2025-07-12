@@ -32,7 +32,7 @@ class CelestialPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             source=source,

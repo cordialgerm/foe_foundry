@@ -46,7 +46,7 @@ class MagePower(PowerWithStandardScoring):
             reference_statblock="Mage",
             icon=icon,
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 3, 7),
             score_args=dict(
                 require_callback=require_callback,

@@ -32,7 +32,7 @@ class Technique(PowerWithStandardScoring):
     ):
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="technique",
             icon=icon,
@@ -800,7 +800,7 @@ class _Dueling(PowerWithStandardScoring):
             theme="technique",
             icon="sabers-choc",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 bonus_roles=[
                     MonsterRole.Skirmisher,
@@ -834,7 +834,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             theme="technique",
             icon="punch",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Giant],
                 bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
@@ -867,7 +867,7 @@ class _Interception(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Interception",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source="SRD5.1 Interception",
             theme="technique",
             icon="run",
@@ -909,7 +909,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             icon="card-exchange",
             reference_statblock="Warrior",
             power_level=LOW_POWER,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_types=CreatureType.Humanoid,
                 require_roles=[
@@ -940,7 +940,7 @@ class _QuickToss(PowerWithStandardScoring):
             theme="technique",
             icon="thrown-daggers",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 bonus_roles={MonsterRole.Skirmisher, MonsterRole.Soldier},
                 attack_names={
@@ -975,7 +975,7 @@ class _ArmorMaster(PowerWithStandardScoring):
             name="Armor Master",
             source="A5E SRD Heavy Armor Expertise",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             theme="technique",
             icon="plastron",
             score_args=dict(
@@ -1007,7 +1007,7 @@ class _ShieldMaster(PowerWithStandardScoring):
             icon="viking-shield",
             reference_statblock="Warrior",
             power_level=LOW_POWER,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_shield=True,
                 bonus_roles={MonsterRole.Defender, MonsterRole.Soldier},
@@ -1040,7 +1040,7 @@ class _PolearmMaster(PowerWithStandardScoring):
             theme="technique",
             reference_statblock="Warrior",
             icon="halberd",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 bonus_roles={
                     MonsterRole.Defender,
@@ -1068,7 +1068,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
             theme="technique",
             icon="wave-strike",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
                 bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
@@ -1118,7 +1118,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
             theme="technique",
             icon="whirlwind",
             reference_statblock="Warrior",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 bonus_roles={MonsterRole.Soldier, MonsterRole.Bruiser},
                 attack_names={
@@ -1156,7 +1156,7 @@ class _Sharpshooter(PowerWithStandardScoring):
             theme="technique",
             icon="headshot",
             reference_statblock="Scout",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=HIGH_POWER,
             score_args=dict(
                 require_roles=MonsterRole.Artillery,

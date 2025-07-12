@@ -39,7 +39,7 @@ class SpiritPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_spirit,

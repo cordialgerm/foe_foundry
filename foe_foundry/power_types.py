@@ -2,19 +2,6 @@ from enum import auto
 
 from backports.strenum import StrEnum
 
-# I already have a PowerType class in foe_foundry/powers/power_type.py
-# what should I call this one instead?
-# let's brainstorm some options:
-# - PowerCategory
-# - PowerClassification
-# - PowerKind
-# - PowerGroup
-# - PowerTypeCategory
-# - PowerTypeGroup
-# - PowerTypeClassification
-# - PowerTypeKind
-# - PowerTypeClass
-
 
 class PowerType(StrEnum):
     Attack = auto()  # A power that is primarily used to attack

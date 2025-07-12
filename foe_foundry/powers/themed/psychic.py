@@ -25,7 +25,7 @@ class PsychicPower(PowerWithStandardScoring):
         name: str,
         source: str,
         icon: str,
-        power_type: PowerCategory = PowerCategory.Theme,
+        power_category: PowerCategory = PowerCategory.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -47,7 +47,7 @@ class PsychicPower(PowerWithStandardScoring):
             icon=icon,
             theme="psychic",
             reference_statblock="Aboleth",
-            power_type=power_type,
+            power_category=power_category,
             score_args=dict(
                 require_types={CreatureType.Aberration, CreatureType.Humanoid},
                 require_callback=is_spellcaster,
@@ -69,7 +69,7 @@ class _Telekinetic(PsychicPower):
         super().__init__(
             name="Telekinesis",
             source="5.1SRD Telekinesis",
-            power_type=PowerCategory.Spellcasting,
+            power_category=PowerCategory.Spellcasting,
             icon="psychic-waves",
             require_cr=6,
         )

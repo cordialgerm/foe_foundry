@@ -41,7 +41,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
 
         super().__init__(
             name="Pacifying Touch",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 19),
             theme="controller",
             reference_statblock="Priest",
@@ -83,7 +83,7 @@ class _TongueTwister(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Tongue-Twister",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
             reference_statblock="Dryad",
@@ -132,7 +132,7 @@ class _HeartTremors(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Heart Tremors",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
             source="Foe Foundry",
@@ -162,7 +162,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Unhinged Paranoia",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
@@ -194,7 +194,7 @@ class _Nervefire(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Nervefire",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
@@ -226,7 +226,7 @@ class _TiringAttack(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Tiring Attack",
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",

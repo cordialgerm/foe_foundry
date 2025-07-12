@@ -51,7 +51,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerCategory.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,

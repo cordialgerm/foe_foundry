@@ -53,7 +53,7 @@ class EmanationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source="Foe Foundry",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             theme="emanation",
             icon=icon,
             reference_statblock=reference_statblock,

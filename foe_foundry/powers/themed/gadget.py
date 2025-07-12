@@ -49,7 +49,7 @@ class GadgetPower(PowerWithStandardScoring):
             icon=icon,
             theme="gadget",
             reference_statblock="Thug",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
         )

@@ -33,7 +33,7 @@ class BugbearPower(PowerWithStandardScoring):
             reference_statblock="Bugbear",
             power_level=power_level,
             icon=icon,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_bugbear,

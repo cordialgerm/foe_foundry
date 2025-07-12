@@ -28,7 +28,7 @@ class FearsomePower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             theme="fearsome",
             reference_statblock="Chimera",
@@ -62,7 +62,7 @@ class HorrifyingPower(PowerWithStandardScoring):
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             theme="fearsome",
             reference_statblock="Banshee",
             create_date=create_date,

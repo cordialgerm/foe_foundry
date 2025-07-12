@@ -41,7 +41,7 @@ class CleverPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             icon=icon,
             theme="clever",

@@ -28,7 +28,7 @@ class _DireBunnyPower(PowerWithStandardScoring):
             icon="rabbit",
             reference_statblock="Dire Bunny",
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 5),
             score_args=dict(
                 require_callback=is_dire_bunny,

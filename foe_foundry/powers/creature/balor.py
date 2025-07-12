@@ -35,7 +35,7 @@ class BalorPower(PowerWithStandardScoring):
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerCategory.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             theme="Balor",

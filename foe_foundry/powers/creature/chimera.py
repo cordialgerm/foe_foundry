@@ -34,7 +34,7 @@ class ChimeraPower(PowerWithStandardScoring):
             reference_statblock="Chimera",
             power_level=power_level,
             icon=icon,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 16),
             score_args=dict(
                 require_callback=is_chimera,

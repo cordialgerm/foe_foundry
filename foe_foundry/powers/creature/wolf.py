@@ -30,7 +30,7 @@ class _WolfPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Dire Wolf",
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 3, 28),
             score_args=dict(
                 require_callback=require_callback,

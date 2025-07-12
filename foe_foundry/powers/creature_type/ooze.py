@@ -30,7 +30,7 @@ class OozePower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Ooze, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerCategory.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             icon=icon,
             create_date=create_date,

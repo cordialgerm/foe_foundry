@@ -35,7 +35,7 @@ class HolyPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="holy",
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             power_level=power_level,
             reference_statblock="Priest",

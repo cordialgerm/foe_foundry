@@ -40,7 +40,7 @@ class RecklessPower(PowerWithStandardScoring):
             theme="reckless",
             reference_statblock="Berserker",
             icon=icon,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),

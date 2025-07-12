@@ -29,7 +29,7 @@ class SpellPower(PowerWithStandardScoring):
             kwargs.update(source="SRD 5.1")
 
         super().__init__(
-            power_type=PowerCategory.Spellcasting,
+            power_category=PowerCategory.Spellcasting,
             theme=theme,
             score_args=score_args,
             power_level=power_level,

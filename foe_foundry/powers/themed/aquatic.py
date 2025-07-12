@@ -29,7 +29,7 @@ class AquaticBase(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             theme="Aquatic",
             reference_statblock="Merfolk",
             icon=icon,

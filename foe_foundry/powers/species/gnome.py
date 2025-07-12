@@ -33,7 +33,7 @@ class GnomePower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerCategory.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             icon=icon,
             source="Foe Foundry",

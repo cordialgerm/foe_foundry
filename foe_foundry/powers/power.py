@@ -9,7 +9,7 @@ from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from ..utils import name_to_key
 from .flags import theme_flag
-from .power_type import PowerCategory
+from .power_category import PowerCategory
 from .scoring import score as standard_score
 
 RIBBON_POWER = 0.25
@@ -23,7 +23,7 @@ class Power(ABC):
     def __init__(
         self,
         name: str,
-        power_type: PowerCategory,
+        power_category: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,
@@ -37,7 +37,7 @@ class Power(ABC):
         create_date: datetime | None = None,
     ):
         self.name = name
-        self.power_type = power_type
+        self.power_category = power_category
         self.source = source
         self.power_level = power_level
         self.roles = roles
@@ -93,7 +93,7 @@ class Power(ABC):
         pass
 
     def __repr__(self):
-        return f"{self.name} ({self.power_type})"
+        return f"{self.name} ({self.power_category})"
 
     def __hash__(self) -> int:
         return hash(self.key)
@@ -106,7 +106,7 @@ class PowerWithStandardScoring(Power):
     def __init__(
         self,
         name: str,
-        power_type: PowerCategory,
+        power_category: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,
@@ -143,7 +143,7 @@ class PowerWithStandardScoring(Power):
 
         super().__init__(
             name=name,
-            power_type=power_type,
+            power_category=power_category,
             source=source,
             power_level=power_level,
             create_date=create_date,

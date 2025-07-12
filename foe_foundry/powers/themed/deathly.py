@@ -51,7 +51,7 @@ class DeathlyPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             create_date=create_date,
             theme="death",

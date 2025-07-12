@@ -37,7 +37,7 @@ class BeastPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,

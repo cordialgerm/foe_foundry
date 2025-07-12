@@ -30,7 +30,7 @@ class FastPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             reference_statblock=reference_statblock,
             theme="fast",

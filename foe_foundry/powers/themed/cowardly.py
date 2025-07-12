@@ -49,7 +49,7 @@ class CowardlyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             theme="cowardly",
             icon=icon,

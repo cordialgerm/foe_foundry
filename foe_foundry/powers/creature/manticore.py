@@ -27,7 +27,7 @@ class ManticorePower(PowerWithStandardScoring):
             reference_statblock="Manticore",
             icon=icon,
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 15),
             score_args=dict(
                 require_callback=is_manticore,

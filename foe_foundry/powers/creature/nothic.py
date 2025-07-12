@@ -40,7 +40,7 @@ class _NothicPower(PowerWithStandardScoring):
             reference_statblock="Hollow Gazer",
             icon=icon,
             power_level=power_level,
-            power_type=PowerCategory.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 4),
             score_args=dict(
                 require_callback=is_nothic,

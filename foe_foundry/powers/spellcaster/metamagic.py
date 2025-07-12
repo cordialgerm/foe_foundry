@@ -41,7 +41,7 @@ class _MetamagicPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerCategory.Spellcasting,
+            power_category=PowerCategory.Spellcasting,
             source="Foe Foundry",
             theme="Metamagic",
             reference_statblock="Mage",

@@ -32,7 +32,7 @@ class FlyingPower(PowerWithStandardScoring):
             reference_statblock="Giant Eagle",
             icon=icon,
             power_level=power_level,
-            power_type=PowerCategory.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_types={
                     CreatureType.Dragon,
