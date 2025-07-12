@@ -6,6 +6,7 @@ from ...attributes import Skills, Stats
 from ...damage import AttackType, Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -27,6 +28,7 @@ class ArtilleryPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Scout",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -47,6 +49,7 @@ class ArtilleryPower(PowerWithStandardScoring):
             icon=icon,
             theme="Artillery",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -60,6 +63,7 @@ class _FocusShot(ArtilleryPower):
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedWeapon,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -93,6 +97,7 @@ class _TwinSpell(ArtilleryPower):
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedSpell,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -112,6 +117,7 @@ class _QuickDraw(ArtilleryPower):
             source="Foe Foundry",
             icon="fast-arrow",
             power_level=LOW_POWER,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -128,7 +134,10 @@ class _QuickDraw(ArtilleryPower):
 class _SuppressingFire(ArtilleryPower):
     def __init__(self):
         super().__init__(
-            name="Suppressing Fire", icon="oppression", source="Foe Foundry"
+            name="Suppressing Fire",
+            icon="oppression",
+            source="Foe Foundry",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,6 +163,7 @@ class _IndirectFire(ArtilleryPower):
             icon="arcing-bolt",
             power_level=LOW_POWER,
             require_callback=not_gaze,
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -174,6 +184,7 @@ class _Overwatch(ArtilleryPower):
             source="Foe Foundry",
             icon="watchtower",
             power_level=LOW_POWER,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

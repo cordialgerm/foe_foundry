@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -33,6 +34,7 @@ class SoldierPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -51,6 +53,7 @@ class SoldierPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="soldier",
             reference_statblock="Warrior",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -62,6 +65,7 @@ class _Phalanx(SoldierPower):
             icon="spears",
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -80,6 +84,7 @@ class _CoordinatedStrike(SoldierPower):
             icon="switch-weapons",
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -108,6 +113,7 @@ class _PackTactics(SoldierPower):
                 MonsterRole.Bruiser,
             },
             power_level=HIGH_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -126,6 +132,7 @@ class _Disciplined(SoldierPower):
             icon="spartan",
             source="Foe Foundry",
             require_roles=MonsterRole.Soldier,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -145,6 +152,7 @@ class _ActionSurge(SoldierPower):
             source="SRD5.1 Action Surge",
             power_level=HIGH_POWER,
             require_cr=3,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -169,6 +177,7 @@ class _Leap(SoldierPower):
             require_callback=is_ground,
             require_cr=3,
             stat_threshold=14,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -206,6 +215,7 @@ class _BreakMagic(SoldierPower):
             icon="stop-sign",
             power_level=MEDIUM_POWER,
             require_cr=8,
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -227,6 +237,7 @@ class _Lunge(SoldierPower):
             source="Foe Foundry",
             power_level=LOW_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -248,6 +259,7 @@ class _PreciseStrike(SoldierPower):
             icon="bullseye",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

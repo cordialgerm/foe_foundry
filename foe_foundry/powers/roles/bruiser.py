@@ -7,6 +7,7 @@ from ...attributes import Skills, Stats
 from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -27,6 +28,7 @@ class BruiserPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Ogre",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -44,6 +46,7 @@ class BruiserPower(PowerWithStandardScoring):
             icon=icon,
             theme="Bruiser",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -55,6 +58,7 @@ class _GrapplingStrike(BruiserPower):
             source="A5E SRD Grappler",
             icon="grab",
             attack_names={natural_attacks.Slam},
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -88,6 +92,7 @@ class _CleavingBlows(BruiserPower):
             source="Foe Foundry",
             icon="meat-cleaver",
             attack_names={weapon.Greataxe, natural_attacks.Claw},
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -109,6 +114,7 @@ class _StunningBlow(BruiserPower):
             power_level=HIGH_POWER,
             require_cr=1,
             attack_names={weapon.Maul, weapon.MaceAndShield, natural_attacks.Slam},
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -136,6 +142,7 @@ class _Rend(BruiserPower):
                 natural_attacks.Horns,
                 weapon.Daggers,
             },
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -3,6 +3,7 @@ from math import ceil
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
@@ -18,6 +19,7 @@ class SupportPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -35,6 +37,7 @@ class SupportPower(PowerWithStandardScoring):
             create_date=create_date,
             theme="Support",
             reference_statblock="Priest",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -46,6 +49,7 @@ class _Encouragement(SupportPower):
             icon="talk",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff, PowerType.Healing],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -78,6 +82,7 @@ class _Guidance(SupportPower):
             icon="three-friends",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -98,6 +103,7 @@ class _Sanctuary(SupportPower):
             icon="church",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -117,6 +123,7 @@ class _WardingBond(SupportPower):
             icon="chained-heart",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

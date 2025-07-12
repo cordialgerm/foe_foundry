@@ -5,6 +5,7 @@ from foe_foundry.references import action_ref
 
 from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from .. import flags
@@ -20,6 +21,7 @@ class AmbusherPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Assassin",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -38,6 +40,7 @@ class AmbusherPower(PowerWithStandardScoring):
             icon=icon,
             theme="Ambusher",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -49,6 +52,7 @@ class _CunningAction(AmbusherPower):
             source="SRD5.1 Spy",
             reference_statblock="Spy",
             icon="running-ninja",
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -73,6 +77,7 @@ class _StealthySneak(AmbusherPower):
             source="A5E SRD Bugbear",
             icon="cultist",
             create_date=datetime(2023, 11, 22),
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -93,6 +98,7 @@ class _DeadlyAmbusher(AmbusherPower):
             source="SRD5.1 Assasin",
             icon="surprised",
             require_no_flags=flags.MODIFIES_CRITICAL,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -6,6 +6,7 @@ from foe_foundry.references import action_ref
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
@@ -29,6 +30,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         requires_tactics: bool = True,
         reference_statblock: str = "Goblin",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def ideal_skirmisher(c: BaseStatblock) -> bool:
@@ -58,6 +60,7 @@ class SkirmisherPower(PowerWithStandardScoring):
             icon=icon,
             theme="Skirmisher",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -70,6 +73,7 @@ class _Skirmish(SkirmisherPower):
             icon="fishing-net",
             requires_tactics=True,
             require_types=CreatureType.Humanoid,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -97,6 +101,7 @@ class _HarrassingRetreat(SkirmisherPower):
             source="Foe Foundry",
             icon="arrowed",
             requires_tactics=True,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -129,6 +134,7 @@ class _Speedy(SkirmisherPower):
             source="Foe Foundry",
             icon="fast-forward-button",
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -155,6 +161,7 @@ class _NimbleEscape(SkirmisherPower):
             source="SRD5.1 Goblin",
             reference_statblock="Goblin",
             icon="exit-door",
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
