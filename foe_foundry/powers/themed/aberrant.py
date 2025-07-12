@@ -71,7 +71,7 @@ class _ModifyMemory(AberrantPower):
             name="Modify Memory", icon="misdirection", source="SRD5.1 Modify Memory"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Modify Memory",
@@ -87,7 +87,7 @@ class _WarpReality(AberrantPower):
     def __init__(self):
         super().__init__(name="Warp Reality", icon="abstract-119", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = 20 + (20 if stats.cr >= 7 else 0)
         feature = Feature(
@@ -106,7 +106,7 @@ class _Adhesive(AberrantPower):
     def __init__(self):
         super().__init__(name="Adhesive", icon="sticky-boot", source="SRD5.1 Mimic")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         grappled = Condition.Grappled
         feature = Feature(
@@ -129,7 +129,7 @@ class _Incubation(AberrantPower):
             attack_names=["-", natural.Claw],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         timespan = "three months" if stats.cr <= 5 else "three days"
 

@@ -52,7 +52,7 @@ class _EngulfInSlime(OozePower):
             bonus_damage=DamageType.Acid,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         swallowed = conditions.Swallowed(
             damage=stats.target_value(target=0.75, force_die=Die.d6),
             damage_type=DamageType.Acid,
@@ -77,7 +77,7 @@ class _Quicksand(OozePower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         restrained = Condition.Restrained
         grappled = Condition.Grappled
@@ -107,7 +107,7 @@ class _Split(OozePower):
             require_size=Size.Medium,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Split",
             action=ActionType.Reaction,
@@ -125,7 +125,7 @@ class _Transparent(OozePower):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Transparent",
             action=ActionType.Feature,
@@ -146,7 +146,7 @@ class _LeechingGrasp(OozePower):
             bonus_damage=DamageType.Necrotic,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         bleeding = conditions.Bleeding(damage=dmg, damage_type=DamageType.Necrotic)
@@ -171,7 +171,7 @@ class _SlimeSpray(OozePower):
             bonus_damage=DamageType.Acid,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled

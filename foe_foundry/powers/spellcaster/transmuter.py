@@ -35,7 +35,7 @@ class _TransmutationWizard(WizardPower):
     def __init__(self, **kwargs):
         super().__init__(creature_name="Transmuter", icon="crystalize", **kwargs)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spell Transmutation",
             action=ActionType.Feature,

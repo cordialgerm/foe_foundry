@@ -55,7 +55,7 @@ class _Constriction(MonstrousPower):
             attack_names=["-", natural.Slam, natural.Tail],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reach = 5 if stats.size <= Size.Medium else 10
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(max(2, ceil(stats.cr)), force_die=Die.d4)
@@ -88,7 +88,7 @@ class _Swallow(MonstrousPower):
             attack_names={"-", natural.Bite},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -119,7 +119,7 @@ class _Pounce(MonstrousPower):
             name="Pounce", icon="pounce", source="SRD5.1 Panther", power_level=LOW_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
         feature = Feature(
@@ -150,7 +150,7 @@ class _Corrosive(MonstrousPower):
             stats = stats.copy(secondary_damage_type=DamageType.Acid)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = int(ceil(max(5, 2 * stats.cr)))
         feature = Feature(
@@ -176,7 +176,7 @@ class _LingeringWound(MonstrousPower):
             attack_names=[natural.Bite, natural.Claw, natural.Horns],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = max(10, min(15, stats.difficulty_class_easy))
         dmg = stats.target_value(target=0.75, force_die=Die.d6)
         bleeding = Bleeding(damage=dmg, dc=dc)
@@ -194,7 +194,7 @@ class _Rampage(MonstrousPower):
     def __init__(self):
         super().__init__(name="Rampage", icon="shattered-glass", source="SRD5.1 Gnoll")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rampage",
             action=ActionType.Reaction,
@@ -214,7 +214,7 @@ class _JawClamp(MonstrousPower):
             attack_names=["-", natural.Bite],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
         restrained = Condition.Restrained
@@ -240,7 +240,7 @@ class _Frenzy(MonstrousPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Frenzy",
             action=ActionType.Reaction,
@@ -261,7 +261,7 @@ class _TearApart(MonstrousPower):
             attack_names=["-", natural.Claw],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
         feature1 = Feature(

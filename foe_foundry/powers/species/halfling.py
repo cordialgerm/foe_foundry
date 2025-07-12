@@ -68,7 +68,7 @@ class _HalflingLuck(HalflingPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Halfling Luck",
             action=ActionType.Reaction,
@@ -92,7 +92,7 @@ class _HalflingBravery(HalflingPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(2 * stats.attributes.proficiency, min_val=5)
 
         feature = Feature(
@@ -113,7 +113,7 @@ class _HalflingNimbleness(HalflingPower):
             bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         disengage = action_ref("Disengage")
         grappled = Condition.Grappled.caption
         restrained = Condition.Restrained.caption

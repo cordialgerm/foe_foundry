@@ -56,7 +56,7 @@ class _Cannibal(GhoulPower):
             create_date=datetime(2025, 2, 20),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=50)
 
         feature = Feature(

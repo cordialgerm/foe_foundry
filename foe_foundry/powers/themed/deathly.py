@@ -88,7 +88,7 @@ class _EndlessServitude(DeathlyPower):
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Endless Servitude",
             action=ActionType.Feature,
@@ -111,7 +111,7 @@ class _WitheringBlow(DeathlyPower):
             require_callback=_has_no_other_attacks,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -149,7 +149,7 @@ class _DrainingBlow(DeathlyPower):
     def __init__(self):
         super().__init__(name="Draining Blow", icon="neck-bite", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Draining Blow",
             action=ActionType.BonusAction,
@@ -173,7 +173,7 @@ class _ShadowWalk(DeathlyPower):
             require_speed=30,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Shadow Walk",
             action=ActionType.BonusAction,
@@ -200,7 +200,7 @@ class _FleshPuppets(DeathlyPower):
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         cr = int(ceil(stats.cr / 3))
 
         feature = Feature(
@@ -224,7 +224,7 @@ class _DevourSoul(DeathlyPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.25, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         ghoul = creature_ref("Ghoul")
@@ -247,7 +247,7 @@ class _DrainStrength(DeathlyPower):
             name="Drain Strength", icon="oppression", source="SRD5.1 Shadow"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         dmg = stats.target_value(target=1.5, force_die=Die.d6)

@@ -51,7 +51,7 @@ class _Aquatic(AquaticBase):
     def __init__(self):
         super().__init__(name="Aquatic", source="SRD5.1 Merfolk", icon="triton-head")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Aquatic",
             action=ActionType.Feature,
@@ -64,7 +64,7 @@ class _Amphibious(AquaticBase):
     def __init__(self):
         super().__init__(name="Amphibious", source="SRD5.1 Merfolk", icon="triton-head")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Amphibious",
             action=ActionType.Feature,
@@ -82,7 +82,7 @@ class _InkCloud(AquaticBase):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Ink Cloud",
             action=ActionType.BonusAction,
@@ -103,7 +103,7 @@ class _SlimyCloud(AquaticBase):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5)
         poisoned = Condition.Poisoned

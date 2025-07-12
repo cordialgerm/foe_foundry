@@ -55,7 +55,7 @@ class _MobBoss(ThuggishPower):
             source="Foe Foundry",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Mob Boss",
             action=ActionType.Feature,
@@ -73,7 +73,7 @@ class _KickTheLickspittle(ThuggishPower):
             source="Foe Foundry",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.from_expression("2d4")
         feature = Feature(
             name="Kick the Lickspittle",
@@ -90,7 +90,7 @@ class _ExploitTheChaos(ThuggishPower):
             name="Exploit the Chaos", source="Foe Foundry", icon="target-dummy"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Exploit the Chaos",
             action=ActionType.Reaction,

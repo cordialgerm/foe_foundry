@@ -48,7 +48,7 @@ class _Encouragement(SupportPower):
             create_date=datetime(2025, 3, 1),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(
             int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
         )
@@ -80,7 +80,7 @@ class _Guidance(SupportPower):
             create_date=datetime(2025, 3, 1),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Guidance",
             description=f"{stats.selfref.capitalize()} grants guidance to a friendly creature within 60 feet. \
@@ -100,7 +100,7 @@ class _Sanctuary(SupportPower):
             create_date=datetime(2025, 3, 1),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Sanctuary",
@@ -119,7 +119,7 @@ class _WardingBond(SupportPower):
             create_date=datetime(2025, 3, 1),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         boost = max(1, stats.attributes.proficiency // 3)
         feature = Feature(
             name="Warding Bond",

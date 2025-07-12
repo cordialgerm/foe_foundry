@@ -38,7 +38,7 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Adaptive Camouflage",
@@ -67,7 +67,7 @@ class _ArrowWard(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arrow Ward",
             action=ActionType.Reaction,
@@ -96,7 +96,7 @@ class _DeflectMissile(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reduction = easy_multiple_of_five(
             stats.attributes.stat_mod(Stats.DEX) + 2 * stats.attributes.proficiency
         )
@@ -125,7 +125,7 @@ class _HardToPinDown(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hard to Pin Down",
             action=ActionType.Feature,
@@ -161,7 +161,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 stats = stats.copy(secondary_damage_type=self.damage_type)
             return stats
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dmg = math.ceil(stats.cr / 2.0)
             dmg_type = self.damage_type
             feature = Feature(
@@ -208,7 +208,7 @@ class _Overchannel(PowerWithStandardScoring):
         else:
             return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,

@@ -44,7 +44,7 @@ class _SnappingJaws(_WolfPower):
     def __init__(self):
         super().__init__(name="Snapping Jaws", icon="jawbone", power_level=MEDIUM_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         grappled = Condition.Grappled.caption
         prone = Condition.Prone.caption
         dc = stats.difficulty_class
@@ -69,7 +69,7 @@ class _Howl(_WolfPower):
             name="Howl", icon="wolf-howl", power_level=MEDIUM_POWER, require_cr=1
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(number=stats.cr * 3, min_val=5, max_val=50)
 
         feature = Feature(

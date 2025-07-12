@@ -73,7 +73,7 @@ class _ScurryAndScatter(CowardlyPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return [
             Feature(
                 name="Scurry and Scatter",
@@ -92,7 +92,7 @@ class _GrovelAndBeg(CowardlyPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone
         charm = Condition.Charmed
         bloodied = Condition.Bloodied
@@ -119,7 +119,7 @@ class _FeignDeath(CowardlyPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         study = action_ref("Study")
         prone = Condition.Prone
         feature = Feature(

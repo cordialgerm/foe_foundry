@@ -41,7 +41,7 @@ class _SpikeVolley(ManticorePower):
     def __init__(self):
         super().__init__(name="Spike Volley", icon="spiked-tail")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.75, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         blinded = Condition.Blinded.caption
@@ -62,7 +62,7 @@ class _CruelJeer(ManticorePower):
     def __init__(self):
         super().__init__(name="Cruel Jeer", icon="morbid-humour")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Cruel Jeer",

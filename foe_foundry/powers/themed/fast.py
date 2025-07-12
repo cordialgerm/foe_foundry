@@ -46,7 +46,7 @@ class _Evasion(FastPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Evasion",
             action=ActionType.Feature,
@@ -66,7 +66,7 @@ class _NimbleReaction(FastPower):
             bonus_skills=[Skills.Acrobatics, Skills.Athletics],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Nimble Reaction",
             action=ActionType.Reaction,

@@ -48,7 +48,7 @@ class _DragonsBreath(ChimeraPower):
     def __init__(self):
         super().__init__(name="Dragon's Breath", icon="dragon-breath")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = breath(
             name="Dragon's Breath",
             damage_type=DamageType.Fire,
@@ -65,7 +65,7 @@ class _QuarellingHeads(ChimeraPower):
     def __init__(self):
         super().__init__(name="Quarrelling Heads", icon="hydra")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         dragons_breath = feature_ref("Dragon's Breath")
 

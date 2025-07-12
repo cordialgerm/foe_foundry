@@ -65,7 +65,7 @@ class _SkeletalReconstruction(SkeletalPower):
             bonus_roles=MonsterRole.Defender,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Skeletal Reconstruction",
             action=ActionType.Feature,
@@ -85,7 +85,7 @@ class _BoneShards(SkeletalPower):
             create_date=datetime(2025, 2, 19),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         damage = stats.target_value(target=0.75)
 
@@ -110,7 +110,7 @@ class _LoathsomeRattle(SkeletalPower):
             bonus_roles=[MonsterRole.Controller, MonsterRole.Skirmisher],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frightened = Condition.Frightened
 
@@ -135,7 +135,7 @@ class _BoneSpear(SkeletalPower):
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.7 * min(stats.multiattack, 2))
 
         feature = Feature(
@@ -160,7 +160,7 @@ class _BoneStorm(SkeletalPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=1.2 * min(stats.multiattack, 2))
 
         if stats.cr < 1:
@@ -194,7 +194,7 @@ class _BoneWall(SkeletalPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5 * min(stats.multiattack, 2))
 
         if stats.cr < 1:

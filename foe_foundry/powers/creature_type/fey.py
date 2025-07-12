@@ -72,7 +72,7 @@ class _FaerieStep(FeyPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return super().modify_stats_inner(stats).with_flags(flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = stats.speed.walk
         feature = Feature(
             name="Faerie Step",
@@ -94,7 +94,7 @@ class _FaePresence(FeyPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         charmed = Condition.Charmed
         feature = Feature(
@@ -119,7 +119,7 @@ class _BloodContract(FeyPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_cursed_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.5, suggested_die=Die.d8)
         healing = easy_multiple_of_five(dmg.average, min_val=5, max_val=45)
         dc = stats.difficulty_class
@@ -149,7 +149,7 @@ class _FaeCounterspell(FeyPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.75, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -173,7 +173,7 @@ class _Awaken(FeyPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr >= 5:
             creature = creature_ref("Awakened Tree")
             formula = DieFormula.target_value(1 + stats.cr / 4, force_die=Die.d4)
@@ -204,7 +204,7 @@ class _FaeBargain(FeyPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uncommon = 10
         rare = 20
         very_rare = 40
@@ -236,7 +236,7 @@ class _DanceTune(FeyPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Dance Tune",
@@ -258,7 +258,7 @@ class _ShadowyDoppelganger(FeyPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
 

@@ -64,7 +64,7 @@ class _Phalanx(SoldierPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Phalanx",
             description=f"{stats.selfref.capitalize()} gains a +1 bonus to its AC and d20 tests whenever another ally with this trait is within 5 feet.",
@@ -82,7 +82,7 @@ class _CoordinatedStrike(SoldierPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Coordinated Strike",
             description=f"Whenever an ally within 5 feet misses an attack and {stats.selfref} is within 5 feet of the target, {stats.selfref} can use their reaction to make an attack against the target. \
@@ -110,7 +110,7 @@ class _PackTactics(SoldierPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Pack Tactics",
             action=ActionType.Feature,
@@ -128,7 +128,7 @@ class _Disciplined(SoldierPower):
             require_roles=MonsterRole.Soldier,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Disciplined",
             action=ActionType.Reaction,
@@ -147,7 +147,7 @@ class _ActionSurge(SoldierPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Action Surge",
             uses=1,
@@ -171,7 +171,7 @@ class _Leap(SoldierPower):
             stat_threshold=14,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.1, force_die=Die.d6)
         dc = stats.difficulty_class
         prone = Condition.Prone
@@ -208,7 +208,7 @@ class _BreakMagic(SoldierPower):
             require_cr=8,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Break Magic",
             action=ActionType.Action,
@@ -229,7 +229,7 @@ class _Lunge(SoldierPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         feature = Feature(
             name="Lunge",
@@ -250,7 +250,7 @@ class _PreciseStrike(SoldierPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Precise Strike",
             action=ActionType.Reaction,

@@ -48,7 +48,7 @@ class _TentacleGrapple(AberrationPower):
             attack_names={"-", natural.Tentacle},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
         grappled = Condition.Grappled
         restrained = Condition.Restrained
@@ -73,7 +73,7 @@ class _GazeOfTheFarRealm(AberrationPower):
             bonus_damage=DamageType.Psychic,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.25, suggested_die=Die.d6)
         burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
@@ -100,7 +100,7 @@ class _MaddeningWhispers(AberrationPower):
             source="5.1 SRD (Gibbering Mouther)",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Madenning Whispers",
@@ -122,7 +122,7 @@ class _TentacleSlam(AberrationPower):
             attack_names={"-", natural.Tentacle},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         grappled = Condition.Grappled
@@ -169,7 +169,7 @@ class _NullificationMaw(AberrationPower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Nullification Maw",
             action=ActionType.Feature,

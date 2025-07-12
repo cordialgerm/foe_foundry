@@ -31,7 +31,7 @@ class _Simulacrum(WizardPower):
             **kwargs,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Illusory Reality",
             action=ActionType.Feature,

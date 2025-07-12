@@ -50,7 +50,7 @@ class _Protection(DefenderPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Protection",
             description=f"When an ally within 5 feet is targeted by an attack or spell, {stats.roleref} can make themselves the intended target of the attack or spell instead.",
@@ -67,7 +67,7 @@ class _Taunt(DefenderPower):
             icon="shouting",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Taunt",
             description="On a hit, the target has disadvantage on attack rolls against any other creature until the end of its next turn.",
@@ -94,7 +94,7 @@ class _ZoneOfControl(DefenderPower):
         stats = stats.copy(attributes=new_attributes)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Zone of Control",
@@ -118,7 +118,7 @@ class _SpellReflection(DefenderPower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spell Reflection",
             action=ActionType.Reaction,

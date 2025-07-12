@@ -58,7 +58,7 @@ class _Frostbite(IcyPower):
             require_cr=2,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(
             target=1.5 * min(stats.multiattack, 2), force_die=Die.d8
@@ -86,7 +86,7 @@ class _IcyTomb(IcyPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)
@@ -112,7 +112,7 @@ class _FrostNova(IcyPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)
@@ -138,7 +138,7 @@ class _Hoarfrost(IcyPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc=dc)
         feature = Feature(
@@ -159,7 +159,7 @@ class _IcyShield(IcyPower):
             require_spellcasting=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = round(stats.attributes.proficiency * 1.5)
         feature = Feature(
             name="Icy Shield",
@@ -181,7 +181,7 @@ class _Blizzard(IcyPower):
             require_cr=6,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)

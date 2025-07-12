@@ -63,7 +63,7 @@ class _ConstructedGuardian(ConstructPower):
             bonus_roles=MonsterRole.Defender,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Constructed Guardian",
             action=ActionType.Feature,
@@ -82,7 +82,7 @@ class _ProtectivePlating(ConstructPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Protective Plating",
@@ -104,7 +104,7 @@ class _ImmutableForm(ConstructPower):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Immutable Form",
             action=ActionType.Feature,
@@ -122,7 +122,7 @@ class _BoundProtector(ConstructPower):
             source="SRD 5.1 Shield Guardian",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bound Protector",
             action=ActionType.Feature,
@@ -141,7 +141,7 @@ class _ExplosiveCore(ConstructPower):
             bonus_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg_type = DamageType.Fire
         dmg = stats.target_value(dpr_proportion=0.8, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
@@ -166,7 +166,7 @@ class _Smother(ConstructPower):
             attack_names={"-", natural_attacks.Slam},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Damage Transfer",
             action=ActionType.Feature,
@@ -210,7 +210,7 @@ class _Retrieval(ConstructPower):
             attack_names=["-", natural_attacks.Slam],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         grappled = Condition.Grappled
         paralyzed = Condition.Paralyzed
@@ -251,7 +251,7 @@ class _SpellStoring(ConstructPower):
             source="SRD 5.1 Shield Guardian",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         level = min(4, int(ceil(stats.cr / 2.5)))
@@ -285,7 +285,7 @@ class _Overclock(ConstructPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         temphp = easy_multiple_of_five(5 + 2 * stats.cr)
         feature = Feature(
@@ -307,7 +307,7 @@ class _Crush(ConstructPower):
             require_size=Size.Huge,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.8, suggested_die=Die.d8)
         prone = Condition.Prone.caption

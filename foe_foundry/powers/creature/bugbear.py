@@ -50,7 +50,7 @@ class _SnatchAndGrab(BugbearPower):
             icon="grab",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         grappled = Condition.Grappled.caption
         feature = Feature(
             name="Vice-Like Grip",
@@ -67,7 +67,7 @@ class _FreakishlySkinny(BugbearPower):
             name="Freakishly Skinny", icon="dungeon-gate", power_level=RIBBON_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         feature = Feature(
             name="Freakishly Skinny",
             action=ActionType.Feature,
@@ -85,7 +85,7 @@ class _SurpriseSnatch(BugbearPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.4)
         grappled = Condition.Grappled.caption
@@ -110,7 +110,7 @@ class _SurpriseStrangle(BugbearPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.25)
         grappled = Condition.Grappled.caption
@@ -132,7 +132,7 @@ class _Skulk(BugbearPower):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> list[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         feature = Feature(
             name="Skulk",
             action=ActionType.Feature,

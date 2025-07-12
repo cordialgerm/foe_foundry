@@ -50,7 +50,7 @@ class _AncestralTotem(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
             name="Ancestral Totem", dc=stats.difficulty_class_token, charges=3
         )
@@ -73,7 +73,7 @@ class _EarthbindTotem(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_token
         restrained = Condition.Restrained
         token = Token(name="Earthbind Totem", dc=dc, charges=3)
@@ -102,7 +102,7 @@ class _WindfuryToten(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_token
         token = Token(name="Windfury Totem", dc=dc, charges=3)
 
@@ -130,7 +130,7 @@ class _GuardianTotem(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_token
         token = Token(name="Guardian Totem", dc=dc, charges=3)
 
@@ -155,7 +155,7 @@ class _HealingTotem(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Healing Totem", dc=stats.difficulty_class_token, charges=3)
         hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
         feature = Feature(
@@ -182,7 +182,7 @@ class _SpiritChainsTotem(TotemicPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_token
         restrained = Condition.Restrained
         token = Token(name="Spirit Chains Totem", dc=dc, charges=3)

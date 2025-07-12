@@ -80,7 +80,7 @@ class _SpiritBeing(SpiritPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature1 = Feature(
             name="Incorporeal",
             action=ActionType.Feature,
@@ -100,7 +100,7 @@ class _Haunt(SpiritPower):
     def __init__(self):
         super().__init__(name="Haunt", icon="haunting", power_level=LOW_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         cursed = conditions.Cursed()
         feature = Feature(
             name="Haunt",
@@ -118,7 +118,7 @@ class _SpiritStep(SpiritPower):
             name="Spirit Step", icon="ghost-ally", power_level=MEDIUM_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         disengage = action_ref("Disengage")
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d4)
@@ -135,7 +135,7 @@ class _SpiritFlicker(SpiritPower):
     def __init__(self):
         super().__init__(name="Spirit Flicker", icon="soul", power_level=MEDIUM_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spirit Flicker",
             action=ActionType.Reaction,
@@ -154,7 +154,7 @@ class _NameTheForgotten(SpiritPower):
             require_cr=2,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         invisibility = spell_ref("Invisibility")
         cursed = conditions.Cursed()
         feature = Feature(
@@ -172,7 +172,7 @@ class _GraspOfTheDead(SpiritPower):
             name="Grasp of the Dead", icon="raise-skeleton", power_level=MEDIUM_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d8)
         frozen = conditions.Frozen(dc=dc)
@@ -195,7 +195,7 @@ class _FeedOnLight(SpiritPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(stats.hp.average * 0.15)
         feature = Feature(
             name="Feed on Light",
@@ -217,7 +217,7 @@ class _ShadowInvisibility(SpiritPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         invisibility = spell_ref("Invisibility")
         feature = Feature(
             name="Shadow Invisibility",
@@ -237,7 +237,7 @@ class _DreadfulSilence(SpiritPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.2, force_die=Die.d6)
         feature = Feature(
             name="Dreadful Silence",
@@ -253,7 +253,7 @@ class _Posession(SpiritPower):
             name="Possession", icon="voodoo-doll", power_level=MEDIUM_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         cursed = conditions.Cursed()
         invisible = Condition.Invisible.caption

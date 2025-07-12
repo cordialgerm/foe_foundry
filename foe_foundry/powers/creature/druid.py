@@ -38,7 +38,7 @@ class _BestialWrath(DruidPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(3 + 3 * stats.cr, min_val=5, max_val=100)
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=1.15, force_die=Die.d6)
@@ -61,7 +61,7 @@ class _PrimalEncouragement(DruidPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         healing = stats.target_value(
             target=0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
         )

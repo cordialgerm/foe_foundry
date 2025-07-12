@@ -62,7 +62,7 @@ class _PotionOfHealing(GadgetPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return super().modify_stats_inner(stats).with_flags(flags.HAS_HEALING)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr <= 3:
             item = "Potion of Healing"
             healing = DieFormula.from_expression("2d4 + 2")
@@ -98,7 +98,7 @@ class _SmokeBomb(GadgetPower):
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(5 + stats.cr / 5, min_val=10, max_val=30)
         rounds = DieFormula.from_expression("1d4 + 2")
 
@@ -138,7 +138,7 @@ class _Net(GadgetPower):
         self.hp = hp
         self.additional = additional
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         distance = easy_multiple_of_five(stats.cr, min_val=5, max_val=15)
         dmg = int(ceil(0.25 * stats.attack.average_damage))
@@ -169,7 +169,7 @@ class _Grenade(GadgetPower):
             require_damage=dmg_type,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75, suggested_die=Die.d6)
         radius = 15
         distance = 30

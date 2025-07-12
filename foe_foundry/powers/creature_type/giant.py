@@ -45,7 +45,7 @@ class _Boulder(GiantPower):
     def __init__(self):
         super().__init__(name="Boulder", source="SRD 5.1 Hill Giant", icon="rock")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         if stats.multiattack >= 3:
             target = 1.5
@@ -87,7 +87,7 @@ class _CloudRune(GiantPower):
             icon="sun-cloud",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Cloud Rune",
             action=ActionType.Reaction,
@@ -126,7 +126,7 @@ class _FireRune(GiantPower):
             require_damage_exact_match=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.33, suggested_die=Die.d6)
         burning = conditions.Burning(dmg)
         dc = stats.difficulty_class_easy
@@ -162,7 +162,7 @@ class _FrostRune(GiantPower):
             require_damage_exact_match=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = int(ceil(0.5 * stats.attack.average_damage))
         frozen = conditions.Frozen(dc=dc)
@@ -195,7 +195,7 @@ class _StoneRune(GiantPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         charmed = Condition.Charmed
         incapacitated = Condition.Incapacitated
@@ -214,7 +214,7 @@ class _HillRune(GiantPower):
     def __init__(self):
         super().__init__(name="Hill Rune", icon="hills", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hill Rune",
             action=ActionType.BonusAction,
@@ -242,7 +242,7 @@ class _StormRune(GiantPower):
             require_damage_exact_match=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Storm Rune",
             action=ActionType.Reaction,
@@ -269,7 +269,7 @@ class _Earthshaker(GiantPower):
             attack_names=natural.Slam,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         size = (
             stats.size.decrement().decrement()
@@ -316,7 +316,7 @@ class _BigWindup(GiantPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Big Windup",
             action=ActionType.Reaction,
@@ -337,7 +337,7 @@ class _GrabAndGo(GiantPower):
             bonus_roles=MonsterRole.Bruiser,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d6)
         dc = stats.difficulty_class

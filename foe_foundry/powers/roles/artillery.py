@@ -62,7 +62,7 @@ class _FocusShot(ArtilleryPower):
             require_attack_types=AttackType.RangedWeapon,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bleeding = conditions.Bleeding(
             damage=stats.target_value(target=0.25, force_die=Die.d6)
         )
@@ -95,7 +95,7 @@ class _TwinSpell(ArtilleryPower):
             require_attack_types=AttackType.RangedSpell,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Twin Spell",
             action=ActionType.BonusAction,
@@ -114,7 +114,7 @@ class _QuickDraw(ArtilleryPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 5)
         feature = Feature(
             name="Quick Draw",
@@ -131,7 +131,7 @@ class _SuppressingFire(ArtilleryPower):
             name="Suppressing Fire", icon="oppression", source="Foe Foundry"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
@@ -156,7 +156,7 @@ class _IndirectFire(ArtilleryPower):
             require_callback=not_gaze,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Indirect Fire",
             action=ActionType.Feature,
@@ -176,7 +176,7 @@ class _Overwatch(ArtilleryPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         range = stats.attack.range or 60
 
         if stats.cr < 1:

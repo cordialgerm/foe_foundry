@@ -76,7 +76,7 @@ class _TimeRift(EmanationPower):
             bonus_damage=DamageType.Force,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(target=0.7, force_die=Die.d6)
         feature = Feature(
@@ -96,7 +96,7 @@ class _RunicWards(EmanationPower):
     def __init__(self):
         super().__init__(name="Runic Wards", require_roles=MonsterRole.Defender)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Runic Wards", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Runic Wards",
@@ -136,7 +136,7 @@ class _SummonersRift(EmanationPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("summoners rift"))
 
         rift = Token(name="Summoner's Rift", dc=stats.difficulty_class_token, charges=2)
@@ -165,7 +165,7 @@ class _RecombinationMatrix(EmanationPower):
             bonus_damage=DamageType.Force,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         ac = min(max(round(stats.cr / 3), 1), 5)
 
         token = Token(
@@ -192,7 +192,7 @@ class _HypnoticLure(EmanationPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Hypnotic Lure", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Hypnotic Lure",
@@ -217,7 +217,7 @@ class _IllusoryReality(EmanationPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
             name="Illusory Reality", dc=stats.difficulty_class_token, charges=3
         )
@@ -257,7 +257,7 @@ class _ShadowRift(EmanationPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("shadow rift"))
 
         rift = Token(name="Shadow Rift", dc=stats.difficulty_class_token, charges=2)
@@ -284,7 +284,7 @@ class _RagingFlames(EmanationPower):
             require_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Raging Flames", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -311,7 +311,7 @@ class _BitingFrost(EmanationPower):
             require_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Biting Frost", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -338,7 +338,7 @@ class _LashingWinds(EmanationPower):
             require_damage=DamageType.Lightning,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Lashing Winds", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -365,7 +365,7 @@ class _FetidMiasma(EmanationPower):
             require_damage=DamageType.Poison,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Fetid Miasma", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
         poisoned = Condition.Poisoned.caption

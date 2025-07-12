@@ -66,7 +66,7 @@ class _SoulChillingCommand(WightPower):
             bonus_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(
             target=2 * stats.attributes.proficiency, force_die=Die.d6
         )
@@ -92,7 +92,7 @@ class _HeartFreezingGrasp(WightPower):
             bonus_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.8, force_die=Die.d6)
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc=dc)

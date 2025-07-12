@@ -72,7 +72,7 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
             )
             self.disease = disease
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
             hit_die = int(1 + math.floor(stats.cr / 7))
 
@@ -100,7 +100,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
             )
             self.disease = disease
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
             dmg = stats.target_value(
                 target=1.7 if stats.multiattack > 1 else 1.0, force_die=Die.d6

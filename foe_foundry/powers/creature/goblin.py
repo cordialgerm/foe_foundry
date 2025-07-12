@@ -50,7 +50,7 @@ class _FlingFilth(GoblinPower):
             require_max_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         blinded = Condition.Blinded
 
@@ -83,7 +83,7 @@ class _CacklingDetonation(GoblinPower):
             require_callback=require_callback,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(dpr_proportion=1.4)
         bloodied = Condition.Bloodied
@@ -106,7 +106,7 @@ class _CackleHex(GoblinPower):
             require_spellcasting=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
         cursed = conditions.Cursed().caption
@@ -136,7 +136,7 @@ class _BloodCurse(GoblinPower):
             require_spellcasting=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5)
 
         feature = Feature(

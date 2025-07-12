@@ -101,7 +101,7 @@ class _LichSpellcasting(LichPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature1 = Feature(
             name="Eldritch Mastery",
             action=ActionType.Feature,
@@ -122,7 +122,7 @@ class _SoulHarvest(LichPower):
             icon="soul",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(stats.hp.average * 0.1)
         feature = Feature(
             name="Soul Harvest",
@@ -137,7 +137,7 @@ class _EverlastingImmortality(LichPower):
     def __init__(self):
         super().__init__(name="Everlasting Immortality", icon="crowned-skull")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
             name="Soul Anchor Echo", dc=stats.difficulty_class_token, charges=3
         )
@@ -158,7 +158,7 @@ class _UndyingServants(LichPower):
             icon="dark-squad",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         steed = creature_ref("Young Black Dragon" if stats.cr >= 26 else "Nightmare")
         grave_guard_amount = (
             DieFormula.from_expression("1d4 + 1")

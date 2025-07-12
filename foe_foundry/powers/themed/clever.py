@@ -54,7 +54,7 @@ class _IdentifyWeakness(CleverPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Identify Weakness",
             action=ActionType.Reaction,
@@ -89,7 +89,7 @@ class _ArcaneMark(CleverPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arcane Mark",
             uses=1,
@@ -110,7 +110,7 @@ class _UnsettlingWords(CleverPower):
             name="Unsettling Words", icon="nailed-head", source="Foe Foundry"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 7)
         distance = easy_multiple_of_five(5 + 1.25 * stats.cr, min_val=10, max_val=30)
 

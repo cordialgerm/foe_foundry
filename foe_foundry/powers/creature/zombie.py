@@ -51,7 +51,7 @@ class _RottenFlesh(ZombiePower):
             create_date=datetime(2025, 2, 20),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rotten Flesh",
             action=ActionType.Reaction,
@@ -71,7 +71,7 @@ class _PutridStench(ZombiePower):
             create_date=datetime(2025, 2, 20),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=1.0)
         dc = stats.difficulty_class_easy
         poisoned = Condition.Poisoned
@@ -95,7 +95,7 @@ class _SeveredLimb(ZombiePower):
             create_date=datetime(2025, 2, 20),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         grappled = Condition.Grappled
         restrained = Condition.Restrained

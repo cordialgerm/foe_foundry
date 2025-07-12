@@ -53,7 +53,7 @@ class _TwistedProphecy(_NothicPower):
     def __init__(self):
         super().__init__(name="Twisted Prophecy", power_level=HIGH_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         feature = Feature(
             name="Twisted Prophecy",
@@ -69,7 +69,7 @@ class _ShatteredOmens(_NothicPower):
     def __init__(self):
         super().__init__(name="Shattered Omens", power_level=HIGH_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Mind-Warping Truths",
             action=ActionType.Reaction,
@@ -83,7 +83,7 @@ class _MindShatteringPrediction(_NothicPower):
     def __init__(self):
         super().__init__(name="Mind-Shattering Prediction", power_level=HIGH_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         feature = Feature(
             name="Mind-Shattering Prediction",
@@ -101,7 +101,7 @@ class _WarpingMadness(_NothicPower):
             name="Warping Madness", icon="mad-scientist", power_level=RIBBON_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         gibbering_mouther = creature_ref("Gibbering Mouther")
         feature1 = Feature(
             name="Warping Madness",

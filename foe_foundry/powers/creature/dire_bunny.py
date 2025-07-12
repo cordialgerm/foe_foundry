@@ -42,7 +42,7 @@ class _ThumpOfDread(_DireBunnyPower):
     def __init__(self):
         super().__init__(name="Thump of Dread", power_level=MEDIUM_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.8)
         dc = stats.difficulty_class
 
@@ -62,7 +62,7 @@ class _BurrowingDisguise(_DireBunnyPower):
     def __init__(self):
         super().__init__(name="Burrowing Disguise", power_level=MEDIUM_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         feature = Feature(
             name="Burrowing Disguise",
@@ -77,7 +77,7 @@ class _CursedCuteness(_DireBunnyPower):
     def __init__(self):
         super().__init__(name="Cursed Cuteness", power_level=MEDIUM_POWER)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Cursed Cuteness",

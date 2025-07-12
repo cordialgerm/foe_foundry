@@ -72,7 +72,7 @@ class _Burrower(EarthPower):
         stats = stats.copy(speed=new_speed, senses=new_senses)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         tunnel_width = 10 if stats.size >= Size.Huge else 5
 
         feature = Feature(
@@ -102,7 +102,7 @@ class _Climber(EarthPower):
             require_callback=not_already_special_movement,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         ## Spider Climb
         if stats.creature_type in {
             CreatureType.Beast,

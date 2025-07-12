@@ -46,7 +46,7 @@
 {% endif %}
 
 {% for feature in features -%}
-<p>
+<p data-power-key="{{feature.power_key}}">
     <strong>{{feature.title}}.</strong>
     {{feature.description | fix_punctuation | markdown_no_wrapping_p}}
 </p>

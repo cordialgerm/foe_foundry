@@ -42,7 +42,7 @@ class _VineWhip(PlantPower):
     def __init__(self):
         super().__init__(name="Vine Whip", source="Foe Foundry", icon="vine-whip")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -94,7 +94,7 @@ class _Entangle(PlantPower):
     def __init__(self):
         super().__init__(name="Entangle", source="SRD5.1 Entangle", icon="root-tip")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -111,7 +111,7 @@ class _ChokingVine(PlantPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -140,7 +140,7 @@ class _HypnoticSpores(PlantPower):
             icon="pollen-dust",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         distance = 30 if stats.difficulty_class <= 7 else 45
         incapacitated = Condition.Incapacitated
@@ -162,7 +162,7 @@ class _SpikeGrowth(PlantPower):
             name="Spike Growth", icon="spikes-full", source="SRD5.1 Spike Growth"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = min(3, ceil(stats.cr / 5))
 
         feature = Feature(

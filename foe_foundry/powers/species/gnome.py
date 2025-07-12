@@ -56,7 +56,7 @@ class _GnomeCunning(GnomePower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
             name="Gnomeish Cunning",
@@ -80,7 +80,7 @@ class _GnomeIngenuity(GnomePower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(2 * stats.attributes.proficiency, min_val=5)
         feature = Feature(
             name="Gnomeish Ingenuity",
@@ -99,7 +99,7 @@ class _GnomishInvisibility(GnomePower):
             bonus_roles={MonsterRole.Skirmisher, MonsterRole.Ambusher},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         invisible = Condition.Invisible
         feature = Feature(
             name="Gnomish Invisibility",

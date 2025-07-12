@@ -54,7 +54,7 @@ class _HydraHeads(HydraPower):
             create_date=datetime(2025, 3, 12),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature1 = Feature(
             name="Multi-Headed",
             action=ActionType.Feature,

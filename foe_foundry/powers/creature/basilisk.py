@@ -49,7 +49,7 @@ class _BasiliskBrood(_BasiliskPower):
             name="Basilisk Brood", power_level=EXTRA_HIGH_POWER, icon="egg-clutch"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = summon_description(
             summoner=stats.selfref,
             summon="Basilisk",
@@ -72,7 +72,7 @@ class _StoneMolt(_BasiliskPower):
             name="Stone Molt", icon="stegosaurus-scales", power_level=LOW_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stone Molt",
             action=ActionType.Reaction,
@@ -88,7 +88,7 @@ class _StoneEater(_BasiliskPower):
             name="Stone Eater", icon="stone-pile", power_level=RIBBON_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         petrified = Condition.Petrified
         feature = Feature(
             name="Stone Eater",

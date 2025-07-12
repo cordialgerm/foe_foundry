@@ -44,7 +44,7 @@ class _PsionicCaster(_Spellcaster):
 
         super().__init__(**args)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=1.25, force_die=Die.d6)
         dazed = conditions.Dazed()
         dc = stats.difficulty_class

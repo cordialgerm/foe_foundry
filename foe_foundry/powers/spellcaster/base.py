@@ -51,7 +51,7 @@ class _Spellcaster(PowerWithStandardScoring):
         self.creature_class = creature_class
         self.caster_type = caster_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

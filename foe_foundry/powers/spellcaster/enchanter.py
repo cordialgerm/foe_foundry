@@ -45,7 +45,7 @@ class _EnchanterWizard(WizardPower):
     def __init__(self, **kwargs):
         super().__init__(creature_name="Enchanter", icon="charm", **kwargs)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Protective Charm",
             uses=1,

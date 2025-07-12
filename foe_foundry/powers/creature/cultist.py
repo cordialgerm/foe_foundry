@@ -58,7 +58,7 @@ class _PyramidScheme(CultistPower):
             require_callback=require_callback,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Pyramid Scheme",
             action=ActionType.Feature,
@@ -85,7 +85,7 @@ class _SacrificialPawns(CultistPower):
             require_callback=require_callback,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Sacrificial Pawns",
             action=ActionType.Feature,
@@ -105,7 +105,7 @@ class _Indoctrination(CultistPower):
             require_callback=is_cultist,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = "1" if stats.cr < 1 else stats.target_value(target=0.25, force_die=Die.d4)
         cause = (
             "re-roll the attack roll" if stats.cr < 1 else "cause that attack to hit"

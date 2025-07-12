@@ -82,8 +82,14 @@ class Power(ABC):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return stats
 
-    @abstractmethod
     def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        features = self.generate_features_inner(stats)
+        for feature in features:
+            feature.power_key = self.key
+        return features
+
+    @abstractmethod
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         pass
 
     def __repr__(self):

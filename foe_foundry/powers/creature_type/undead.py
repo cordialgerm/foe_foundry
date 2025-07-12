@@ -50,7 +50,7 @@ class _UndeadFortitude(UndeadPower):
             source="SRD5.1 Zombie",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Undead Resilience",
             action=ActionType.Reaction,
@@ -69,7 +69,7 @@ class _StenchOfDeath(UndeadPower):
             source="SRD5.1 Hezrou",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         poisoned = Condition.Poisoned
         feature = Feature(
@@ -95,7 +95,7 @@ class _StygianBurst(UndeadPower):
             require_callback=not_burning_undead,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d8)
         frozen = Frozen(dc=dc)
@@ -122,7 +122,7 @@ class _SoulChill(UndeadPower):
             require_callback=not_burning_undead,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 10, min_val=15, max_val=60)
         exhaustion = Condition.Exhaustion
@@ -146,7 +146,7 @@ class _SoulTether(UndeadPower):
             require_cr=6,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Soul Tether",
@@ -169,7 +169,7 @@ class _AntithesisOfLife(UndeadPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Antithesis of Life",

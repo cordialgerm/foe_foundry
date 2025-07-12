@@ -51,7 +51,7 @@ class _CunningAction(AmbusherPower):
             icon="running-ninja",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         disengage = action_ref("Disengage")
         hide = action_ref("Hide")
@@ -75,7 +75,7 @@ class _StealthySneak(AmbusherPower):
             create_date=datetime(2023, 11, 22),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         feature = Feature(
             name="Stealthy Sneak",
@@ -95,7 +95,7 @@ class _DeadlyAmbusher(AmbusherPower):
             require_no_flags=flags.MODIFIES_CRITICAL,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Deadly Ambusher",
             description=f"On the first turn of combat, {stats.selfref} has advantage on any attack rolls against targets with lower initiative than it, \

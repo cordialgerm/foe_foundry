@@ -61,7 +61,7 @@ class _ProtectTheTarget(GuardPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Protect the Target",
             action=ActionType.Feature,
@@ -80,7 +80,7 @@ class _SoundTheAlarm(GuardPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(
             stats.target_value(target=0.5).average, min_val=5
         )
@@ -105,7 +105,7 @@ class _DefensiveFormation(GuardPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Defensive Formation",
             action=ActionType.Feature,
@@ -124,7 +124,7 @@ class _CallReinforcements(GuardPower):
             create_date=datetime(2025, 2, 23),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         target = DieFormula.target_value(
             target=12 * (0.3 + stats.cr / 3), force_die=Die.d4
         )

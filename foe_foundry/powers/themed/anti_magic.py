@@ -38,7 +38,7 @@ class _ArcaneHunt(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arcane Hunt",
             action=ActionType.Reaction,
@@ -68,7 +68,7 @@ class _FractalForm(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Fractal Form",
             action=ActionType.Feature,
@@ -103,7 +103,7 @@ class _Spellbreaker(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spellbreaker",
             action=ActionType.Reaction,
@@ -141,7 +141,7 @@ class _RedirectTeleport(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Redirect Teleport",
             action=ActionType.Reaction,
@@ -199,7 +199,7 @@ class _SpellEater(PowerWithStandardScoring):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -239,7 +239,7 @@ class _SpellStealer(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         cursed = conditions.Cursed().caption
         feature = Feature(
@@ -289,7 +289,7 @@ class _TwistedMind(PowerWithStandardScoring):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Twisted Mind",
             action=ActionType.Feature,
@@ -327,7 +327,7 @@ class _SealOfSilence(PowerWithStandardScoring):
             score_args=score_args,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Seal of Silence",
             action=ActionType.Feature,
@@ -354,7 +354,7 @@ class _RuneDrinker(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rune Drinker",
             action=ActionType.Feature,
