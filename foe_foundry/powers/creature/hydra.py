@@ -5,6 +5,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -22,6 +23,7 @@ class HydraPower(PowerWithStandardScoring):
         source: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def require_callback(s: BaseStatblock) -> bool:
@@ -36,6 +38,7 @@ class HydraPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=require_callback,
                 bonus_types=CreatureType.Monstrosity,
@@ -52,6 +55,7 @@ class _HydraHeads(HydraPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 3, 12),
+            power_types=[PowerType.Attack, PowerType.Healing, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

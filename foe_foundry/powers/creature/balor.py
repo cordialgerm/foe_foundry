@@ -9,6 +9,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class BalorPower(PowerWithStandardScoring):
         icon: str = "horned-skull",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -41,6 +43,7 @@ class BalorPower(PowerWithStandardScoring):
             theme="Balor",
             reference_statblock="Balor",
             score_args=standard_score_args,
+            power_types=power_types,
         )
 
 
@@ -51,6 +54,7 @@ class _FlameWhip(BalorPower):
             source="Foe Foundry",
             icon="whip",
             create_date=datetime(2025, 3, 3),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

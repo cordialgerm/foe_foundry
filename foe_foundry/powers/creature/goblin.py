@@ -4,6 +4,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition, conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -27,6 +28,7 @@ class GoblinPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 22),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -38,6 +40,7 @@ class GoblinPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_goblin,
                 require_types=[CreatureType.Humanoid],
@@ -54,6 +57,7 @@ class _FlingFilth(GoblinPower):
             icon="throwing-ball",
             power_level=LOW_POWER,
             require_max_cr=1,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -87,6 +91,7 @@ class _CacklingDetonation(GoblinPower):
             power_level=LOW_POWER,
             require_max_cr=0.5,
             require_callback=require_callback,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -110,6 +115,7 @@ class _CackleHex(GoblinPower):
             icon="imp-laugh",
             require_cr=1,
             require_spellcasting=True,
+            power_types=[PowerType.Debuff, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -140,6 +146,7 @@ class _BloodCurse(GoblinPower):
             power_level=LOW_POWER,
             require_cr=1,
             require_spellcasting=True,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

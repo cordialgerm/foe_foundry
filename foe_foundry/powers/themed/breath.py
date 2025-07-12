@@ -5,6 +5,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
 
@@ -17,6 +18,7 @@ class _BreathPower(PowerWithStandardScoring):
         save: str,
         icon: str = "dragon-breath",
         on_failure: str | Callable[[BaseStatblock, DieFormula], str] | None = None,
+        power_types: List[PowerType] | None = None,
     ):
         super().__init__(
             name=name,
@@ -27,6 +29,7 @@ class _BreathPower(PowerWithStandardScoring):
             theme="Breath",
             icon=icon,
             reference_statblock="Adult Red Dragon",
+            power_types=power_types or [PowerType.AreaOfEffect, PowerType.Attack],
             score_args=dict(require_damage=breath, require_types={CreatureType.Dragon}),
         )
         self.breath = breath

@@ -7,6 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     LOW_POWER,
@@ -26,6 +27,7 @@ class MimicPower(PowerWithStandardScoring):
         self,
         name: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = datetime(2025, 4, 13),
         **score_args,
     ):
@@ -37,6 +39,7 @@ class MimicPower(PowerWithStandardScoring):
             icon="mimic-chest",
             power_level=power_level,
             power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_mimic,
@@ -52,6 +55,7 @@ class _ComfortingFamiliarity(MimicPower):
         super().__init__(
             name="Comforting Familiarity",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -73,6 +77,7 @@ class _InhabitArmor(MimicPower):
         super().__init__(
             name="Inhabit Armor",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -97,6 +102,7 @@ class _SplinterStep(MimicPower):
         super().__init__(
             name="Splinter Step",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -117,6 +123,7 @@ class _MagneticAttraction(MimicPower):
         super().__init__(
             name="Magnetic Attraction",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -135,6 +142,7 @@ class _HollowHome(MimicPower):
         super().__init__(
             name="Hollow Home",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Environmental, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

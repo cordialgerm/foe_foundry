@@ -5,6 +5,7 @@ from typing import Any, Dict, List
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..features import Feature
+from ..power_types import PowerType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from ..utils import name_to_key
@@ -35,6 +36,7 @@ class Power(ABC):
         attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
     ):
         self.name = name
         self.power_category = power_category
@@ -46,6 +48,7 @@ class Power(ABC):
         self.attack_types = attack_types
         self.suggested_cr = suggested_cr
         self.create_date = create_date
+        self.power_types = power_types
         self.theme = theme
         self.reference_statblock = reference_statblock
         self.icon = icon
@@ -113,6 +116,7 @@ class PowerWithStandardScoring(Power):
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:
@@ -155,6 +159,7 @@ class PowerWithStandardScoring(Power):
             damage_types=damage_types,
             attack_types=attack_types,
             suggested_cr=suggested_cr,
+            power_types=power_types,
         )
 
         self.score_args = score_args

@@ -1,14 +1,15 @@
+from .all import AllPowers  # noqa
 from .power import (
-    HIGH_POWER,
-    LOW_POWER,
-    MEDIUM_POWER,
-    RIBBON_POWER,
-    Power,
-    PowerCategory,
+    HIGH_POWER,  # noqa
+    LOW_POWER,  # noqa
+    MEDIUM_POWER,  # noqa
+    RIBBON_POWER,  # noqa
+    Power,  # noqa
+    PowerCategory,  # noqa
+    PowerType,  # noqa
 )  # noqa
 from .selection import (
-    PowerSelection,  # noqa
     PowerLoadout,  # noqa
+    PowerSelection,  # noqa
     SelectionSettings,  # noqa
 )  # noqa
-from .all import AllPowers  # noqa

@@ -7,6 +7,7 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...die import DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import (
     CasterType,
     abjuration,
@@ -38,6 +39,7 @@ class LichPower(PowerWithStandardScoring):
         icon: str,
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -49,6 +51,7 @@ class LichPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 27),
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_lich,
                 require_spellcasting=CasterType.Arcane,
@@ -68,6 +71,7 @@ class _LichSpellcasting(LichPower):
             name="Lich Spellcasting",
             icon="spell-book",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack, PowerType.Utility, PowerType.AreaOfEffect],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -120,6 +124,7 @@ class _SoulHarvest(LichPower):
         super().__init__(
             name="Soul Harvest",
             icon="soul",
+            power_types=[PowerType.Healing, PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -135,7 +140,11 @@ class _SoulHarvest(LichPower):
 
 class _EverlastingImmortality(LichPower):
     def __init__(self):
-        super().__init__(name="Everlasting Immortality", icon="crowned-skull")
+        super().__init__(
+            name="Everlasting Immortality",
+            icon="crowned-skull",
+            power_types=[PowerType.Healing, PowerType.Defense],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
@@ -156,6 +165,7 @@ class _UndyingServants(LichPower):
         super().__init__(
             name="Undying Servants",
             icon="dark-squad",
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

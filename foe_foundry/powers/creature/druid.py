@@ -4,6 +4,7 @@ from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
@@ -14,7 +15,13 @@ def is_druid(c: BaseStatblock) -> bool:
 
 
 class DruidPower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+    ):
         super().__init__(
             name=name,
             power_category=PowerCategory.Creature,
@@ -23,6 +30,7 @@ class DruidPower(PowerWithStandardScoring):
             icon=icon,
             theme="druid",
             reference_statblock="Druid",
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_druid,
                 require_types=CreatureType.Humanoid,
@@ -36,6 +44,7 @@ class _BestialWrath(DruidPower):
             name="Bestial Wrath",
             icon="angry-eyes",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -59,6 +68,7 @@ class _PrimalEncouragement(DruidPower):
             name="Primal Encouragement",
             icon="ecology",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Healing],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

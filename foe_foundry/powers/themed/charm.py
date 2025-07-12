@@ -6,6 +6,7 @@ from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, enchantment
 from ...statblocks import BaseStatblock
@@ -27,6 +28,7 @@ class CharmingPower(PowerWithStandardScoring):
         reference_statblock: str = "Enchanter Mage",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def humanoid_is_psychic_spellcaster(candidate: BaseStatblock) -> bool:
@@ -65,6 +67,7 @@ class CharmingPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Theme,
             create_date=create_date,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -86,6 +89,7 @@ class _MentalSummons(CharmingPower):
             source="A5E SRD Murmuring Worm",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
