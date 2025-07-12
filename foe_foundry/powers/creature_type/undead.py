@@ -7,7 +7,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class UndeadPower(PowerWithStandardScoring):
@@ -24,7 +24,7 @@ class UndeadPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Undead, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,

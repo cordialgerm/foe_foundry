@@ -9,7 +9,13 @@ from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from .. import flags
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class TeleportationPower(PowerWithStandardScoring):
@@ -44,7 +50,7 @@ class TeleportationPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Transmuter Mage",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_callback=humanoid_is_caster,

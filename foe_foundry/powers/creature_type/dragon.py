@@ -8,7 +8,13 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class DraconicPower(PowerWithStandardScoring):
@@ -24,7 +30,7 @@ class DraconicPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Dragon, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             source=source,
             power_level=power_level,
             create_date=create_date,

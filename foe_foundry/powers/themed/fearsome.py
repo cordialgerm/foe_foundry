@@ -6,7 +6,13 @@ from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class FearsomePower(PowerWithStandardScoring):
@@ -22,7 +28,7 @@ class FearsomePower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             icon=icon,
             theme="fearsome",
             reference_statblock="Chimera",
@@ -56,7 +62,7 @@ class HorrifyingPower(PowerWithStandardScoring):
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             theme="fearsome",
             reference_statblock="Banshee",
             create_date=create_date,

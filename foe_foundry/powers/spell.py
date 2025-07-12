@@ -3,7 +3,7 @@ from typing import List
 from ..features import Feature
 from ..spells import CasterType, StatblockSpell
 from ..statblocks import BaseStatblock
-from .power import MEDIUM_POWER, PowerType, PowerWithStandardScoring
+from .power import MEDIUM_POWER, PowerCategory, PowerWithStandardScoring
 
 
 class SpellPower(PowerWithStandardScoring):
@@ -29,7 +29,7 @@ class SpellPower(PowerWithStandardScoring):
             kwargs.update(source="SRD 5.1")
 
         super().__init__(
-            power_type=PowerType.Spellcasting,
+            power_type=PowerCategory.Spellcasting,
             theme=theme,
             score_args=score_args,
             power_level=power_level,

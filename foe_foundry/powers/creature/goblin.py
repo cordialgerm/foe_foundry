@@ -6,7 +6,13 @@ from ...damage import Condition, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 def is_goblin(s: BaseStatblock) -> bool:
@@ -30,7 +36,7 @@ class GoblinPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Goblin",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_goblin,

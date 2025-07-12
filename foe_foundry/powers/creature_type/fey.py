@@ -16,7 +16,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -49,7 +49,7 @@ class FeyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             icon=icon,

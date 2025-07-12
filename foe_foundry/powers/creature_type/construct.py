@@ -21,7 +21,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -40,7 +40,7 @@ class ConstructPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Construct) | score_args
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             source=source,
             power_level=power_level,
             create_date=create_date,

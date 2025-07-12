@@ -10,7 +10,13 @@ from ...features import ActionType, Feature
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class AberrationPower(PowerWithStandardScoring):
@@ -29,7 +35,7 @@ class AberrationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             score_args=standard_score_args,

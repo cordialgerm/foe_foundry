@@ -12,7 +12,7 @@ from .. import flags
 from ..power import (
     HIGH_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,7 +33,7 @@ class _PetrifyingPower(PowerWithStandardScoring):
             reference_statblock=reference_statblock,
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 bonus_types=CreatureType.Monstrosity,

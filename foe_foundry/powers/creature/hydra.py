@@ -10,7 +10,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -34,7 +34,7 @@ class HydraPower(PowerWithStandardScoring):
             icon="hydra",
             reference_statblock="Hydra",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,

@@ -8,7 +8,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -35,7 +35,7 @@ class BalorPower(PowerWithStandardScoring):
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             theme="Balor",

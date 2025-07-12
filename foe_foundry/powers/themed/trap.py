@@ -9,7 +9,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class Trap(PowerWithStandardScoring):
@@ -25,7 +25,7 @@ class Trap(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
             theme="trap",

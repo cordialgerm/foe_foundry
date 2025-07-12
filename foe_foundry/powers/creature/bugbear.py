@@ -8,7 +8,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,7 +33,7 @@ class BugbearPower(PowerWithStandardScoring):
             reference_statblock="Bugbear",
             power_level=power_level,
             icon=icon,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_bugbear,

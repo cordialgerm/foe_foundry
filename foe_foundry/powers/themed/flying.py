@@ -6,7 +6,7 @@ from ...damage import AttackType
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class FlyingPower(PowerWithStandardScoring):
@@ -32,7 +32,7 @@ class FlyingPower(PowerWithStandardScoring):
             reference_statblock="Giant Eagle",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=dict(
                 require_types={
                     CreatureType.Dragon,

@@ -8,7 +8,7 @@ from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class _ArcaneHunt(PowerWithStandardScoring):
@@ -29,7 +29,7 @@ class _ArcaneHunt(PowerWithStandardScoring):
 
         super().__init__(
             name="Arcane Hunt",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=LOW_POWER,
             source="Foe Foundry",
             reference_statblock="Death Dog",
@@ -60,7 +60,7 @@ class _FractalForm(PowerWithStandardScoring):
         )
         super().__init__(
             name="Fractal Form",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Magic",
             icon="abstract-061",
@@ -95,7 +95,7 @@ class _Spellbreaker(PowerWithStandardScoring):
         )
         super().__init__(
             name="Spellbreaker",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="A5E SRD Spellbreaker",
             theme="Anti-Magic",
             icon="cancel",
@@ -137,7 +137,7 @@ class _RedirectTeleport(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="direction-signs",
             reference_statblock="Aboleth",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=score_args,
         )
 
@@ -175,7 +175,7 @@ class _SpellEater(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="swallow",
             reference_statblock="Chuul",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=score_args,
         )
 
@@ -235,7 +235,7 @@ class _SpellStealer(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="robber",
             reference_statblock="Spy",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=score_args,
         )
 
@@ -273,7 +273,7 @@ class _TwistedMind(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="brain-tentacle",
             reference_statblock="Aboleth",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=score_args,
         )
 
@@ -323,7 +323,7 @@ class _SealOfSilence(PowerWithStandardScoring):
             reference_statblock="Wight",
             icon="silenced",
             create_date=datetime(2023, 11, 22),
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=score_args,
         )
 
@@ -346,7 +346,7 @@ class _RuneDrinker(PowerWithStandardScoring):
             icon="rune-stone",
             reference_statblock="Chuul",
             create_date=datetime(2023, 11, 28),
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Aberration],
                 bonus_roles=[MonsterRole.Defender],

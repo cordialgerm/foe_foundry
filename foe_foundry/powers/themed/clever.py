@@ -11,7 +11,13 @@ from ...role_types import MonsterRole
 from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class CleverPower(PowerWithStandardScoring):
@@ -35,7 +41,7 @@ class CleverPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source=source,
             icon=icon,
             theme="clever",

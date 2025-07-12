@@ -6,7 +6,7 @@ from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class _BreathPower(PowerWithStandardScoring):
@@ -20,7 +20,7 @@ class _BreathPower(PowerWithStandardScoring):
     ):
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 28),

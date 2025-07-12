@@ -11,7 +11,13 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from .. import flags
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class DiseasePower(PowerWithStandardScoring):
@@ -25,7 +31,7 @@ class DiseasePower(PowerWithStandardScoring):
     ):
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             create_date=datetime(2023, 11, 20),
             theme="disease",

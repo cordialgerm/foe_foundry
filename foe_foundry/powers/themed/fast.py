@@ -5,7 +5,13 @@ from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class FastPower(PowerWithStandardScoring):
@@ -24,7 +30,7 @@ class FastPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             icon=icon,
             reference_statblock=reference_statblock,
             theme="fast",

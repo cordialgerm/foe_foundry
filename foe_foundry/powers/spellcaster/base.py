@@ -7,7 +7,7 @@ from foe_foundry.statblocks import BaseStatblock
 from ...damage import AttackType
 from ...spells import CasterType, StatblockSpell
 from .. import flags
-from ..power import HIGH_POWER, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, PowerCategory, PowerWithStandardScoring
 
 
 class _Spellcaster(PowerWithStandardScoring):
@@ -37,7 +37,7 @@ class _Spellcaster(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Spellcasting,
+            power_type=PowerCategory.Spellcasting,
             source="Foe Foundry",
             theme=theme,
             icon=icon,

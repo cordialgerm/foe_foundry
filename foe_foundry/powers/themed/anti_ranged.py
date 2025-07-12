@@ -11,7 +11,7 @@ from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class _AdaptiveCamouflage(PowerWithStandardScoring):
@@ -28,7 +28,7 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
 
         super().__init__(
             name="Adaptive Camouflage",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="Anti-Ranged",
@@ -58,7 +58,7 @@ class _ArrowWard(PowerWithStandardScoring):
 
         super().__init__(
             name="Arrow Ward",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="arrows-shield",
@@ -87,7 +87,7 @@ class _DeflectMissile(PowerWithStandardScoring):
 
         super().__init__(
             name="Deflect Missile",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="SRD5.1 Monk",
             theme="Anti-Ranged",
             icon="divert",
@@ -112,7 +112,7 @@ class _HardToPinDown(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Hard to Pin Down",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="fast-forward-button",
@@ -146,7 +146,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
 
             super().__init__(
                 name=name,
-                power_type=PowerType.Theme,
+                power_type=PowerCategory.Theme,
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 theme="Anti-Ranged",
@@ -186,7 +186,7 @@ class _Overchannel(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Overchannel",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="charging",

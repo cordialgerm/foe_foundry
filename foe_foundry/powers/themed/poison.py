@@ -8,7 +8,13 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class PoisonPower(PowerWithStandardScoring):
@@ -24,7 +30,7 @@ class PoisonPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
             icon=icon,

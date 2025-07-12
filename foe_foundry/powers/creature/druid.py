@@ -6,7 +6,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_druid(c: BaseStatblock) -> bool:
@@ -17,7 +17,7 @@ class DruidPower(PowerWithStandardScoring):
     def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             power_level=power_level,
             source="Foe Foundry",
             icon=icon,

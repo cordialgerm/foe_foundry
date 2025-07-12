@@ -10,7 +10,13 @@ from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from .. import flags
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class GadgetPower(PowerWithStandardScoring):
@@ -43,7 +49,7 @@ class GadgetPower(PowerWithStandardScoring):
             icon=icon,
             theme="gadget",
             reference_statblock="Thug",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
         )

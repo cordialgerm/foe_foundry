@@ -22,7 +22,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -47,7 +47,7 @@ class LichPower(PowerWithStandardScoring):
             reference_statblock="Lich",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=datetime(2025, 4, 27),
             score_args=dict(
                 require_callback=is_lich,

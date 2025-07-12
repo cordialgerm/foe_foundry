@@ -5,7 +5,13 @@ from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class ZombiePower(PowerWithStandardScoring):
@@ -31,7 +37,7 @@ class ZombiePower(PowerWithStandardScoring):
             reference_statblock="Zombie",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,

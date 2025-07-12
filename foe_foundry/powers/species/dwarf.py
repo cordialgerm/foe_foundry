@@ -9,7 +9,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..roles.defender import Taunt
@@ -41,7 +41,7 @@ class DwarvenPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_type=PowerCategory.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,

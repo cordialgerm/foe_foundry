@@ -16,7 +16,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -48,7 +48,7 @@ class PhysicallyTough(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Berserker",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_types=[
@@ -91,7 +91,7 @@ class MagicallyTough(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Iron Golem",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_types=[

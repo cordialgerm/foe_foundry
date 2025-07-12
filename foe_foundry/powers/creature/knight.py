@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...skills import Skills
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_knight(c: BaseStatblock) -> bool:
@@ -15,7 +15,7 @@ class KnightPower(PowerWithStandardScoring):
     def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             power_level=power_level,
             source="Foe Foundry",
             icon=icon,

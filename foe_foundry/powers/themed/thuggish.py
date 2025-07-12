@@ -8,7 +8,7 @@ from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class ThuggishPower(PowerWithStandardScoring):
@@ -36,7 +36,7 @@ class ThuggishPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source=source,
             theme="thuggish",
             icon=icon,

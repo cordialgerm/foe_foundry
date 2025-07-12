@@ -13,7 +13,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class EmanationPower(PowerWithStandardScoring):
@@ -53,7 +53,7 @@ class EmanationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source="Foe Foundry",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             theme="emanation",
             icon=icon,
             reference_statblock=reference_statblock,

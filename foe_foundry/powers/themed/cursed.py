@@ -14,7 +14,13 @@ from ...role_types import MonsterRole
 from ...skills import Skills
 from ...spells import necromancy
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class CursedPower(PowerWithStandardScoring):
@@ -36,7 +42,7 @@ class CursedPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source=source,
             theme="cursed",
             icon=icon,

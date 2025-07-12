@@ -10,7 +10,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -35,7 +35,7 @@ class GhoulPower(PowerWithStandardScoring):
             theme="ghoul",
             reference_statblock="Ghoul",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             icon=icon,
             score_args=dict(

@@ -6,7 +6,7 @@ from ...die import Die
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, MEDIUM_POWER, PowerCategory, PowerWithStandardScoring
 
 
 def is_cultist(s: BaseStatblock) -> bool:
@@ -30,7 +30,7 @@ class CultistPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Cultist",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_cultist,

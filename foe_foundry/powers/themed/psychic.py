@@ -10,7 +10,13 @@ from ...role_types import MonsterRole
 from ...spells import CasterType, divination, transmutation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class PsychicPower(PowerWithStandardScoring):
@@ -19,7 +25,7 @@ class PsychicPower(PowerWithStandardScoring):
         name: str,
         source: str,
         icon: str,
-        power_type: PowerType = PowerType.Theme,
+        power_type: PowerCategory = PowerCategory.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         **score_args,
@@ -63,7 +69,7 @@ class _Telekinetic(PsychicPower):
         super().__init__(
             name="Telekinesis",
             source="5.1SRD Telekinesis",
-            power_type=PowerType.Spellcasting,
+            power_type=PowerCategory.Spellcasting,
             icon="psychic-waves",
             require_cr=6,
         )

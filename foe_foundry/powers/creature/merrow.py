@@ -10,7 +10,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -35,7 +35,7 @@ class MerrowPower(PowerWithStandardScoring):
             reference_statblock="Merrow",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_merrow,

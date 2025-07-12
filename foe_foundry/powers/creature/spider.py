@@ -8,7 +8,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -31,7 +31,7 @@ class SpiderPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,

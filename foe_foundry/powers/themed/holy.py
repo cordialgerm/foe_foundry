@@ -11,7 +11,7 @@ from ...role_types import MonsterRole
 from ...spells import CasterType, abjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_holy(c: BaseStatblock) -> bool:
@@ -35,7 +35,7 @@ class HolyPower(PowerWithStandardScoring):
             name=name,
             source=source,
             theme="holy",
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             power_level=power_level,
             reference_statblock="Priest",

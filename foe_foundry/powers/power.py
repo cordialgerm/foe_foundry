@@ -9,7 +9,7 @@ from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from ..utils import name_to_key
 from .flags import theme_flag
-from .power_type import PowerType
+from .power_type import PowerCategory
 from .scoring import score as standard_score
 
 RIBBON_POWER = 0.25
@@ -23,7 +23,7 @@ class Power(ABC):
     def __init__(
         self,
         name: str,
-        power_type: PowerType,
+        power_type: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,
@@ -106,7 +106,7 @@ class PowerWithStandardScoring(Power):
     def __init__(
         self,
         name: str,
-        power_type: PowerType,
+        power_type: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,

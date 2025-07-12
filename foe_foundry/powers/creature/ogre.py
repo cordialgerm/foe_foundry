@@ -9,7 +9,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,7 +33,7 @@ class OgrePower(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             create_date=create_date,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             icon=icon,
             theme="ogre",
             reference_statblock="Ogre",

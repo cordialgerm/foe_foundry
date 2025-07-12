@@ -14,7 +14,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -36,7 +36,7 @@ class TemporalPower(PowerWithStandardScoring):
             theme="temporal",
             reference_statblock="Divination Mage",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_types={

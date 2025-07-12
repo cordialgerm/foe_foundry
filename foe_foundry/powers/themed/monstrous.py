@@ -15,7 +15,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -36,7 +36,7 @@ class MonstrousPower(PowerWithStandardScoring):
             theme="monstrous",
             reference_statblock="Manticore",
             icon=icon,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
             score_args=dict(

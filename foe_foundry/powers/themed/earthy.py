@@ -11,7 +11,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -32,7 +32,7 @@ class EarthPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             theme="earth",
             icon=icon,
             reference_statblock=reference_statblock,

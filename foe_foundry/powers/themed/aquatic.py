@@ -4,7 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import RIBBON_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class AquaticBase(PowerWithStandardScoring):
@@ -29,7 +29,7 @@ class AquaticBase(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             theme="Aquatic",
             reference_statblock="Merfolk",
             icon=icon,

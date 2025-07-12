@@ -9,7 +9,13 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 def is_positive_leader(c: BaseStatblock) -> bool:
@@ -41,7 +47,7 @@ class LeaderPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,

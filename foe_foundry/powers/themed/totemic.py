@@ -10,7 +10,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class TotemicPower(PowerWithStandardScoring):
@@ -26,7 +26,7 @@ class TotemicPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             icon=icon,
             power_level=power_level,
             theme="totemic",

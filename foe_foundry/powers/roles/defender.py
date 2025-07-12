@@ -7,7 +7,13 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Skills
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class DefenderPower(PowerWithStandardScoring):
@@ -30,7 +36,7 @@ class DefenderPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerCategory.Role,
             power_level=power_level,
             source=source,
             icon=icon,

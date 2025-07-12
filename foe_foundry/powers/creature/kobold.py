@@ -10,7 +10,13 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...skills import Stats
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 from ..themed.breath import breath
 
 
@@ -35,7 +41,7 @@ class KoboldPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Kobold",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_kobold,

@@ -13,7 +13,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -40,7 +40,7 @@ class ArtilleryPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,

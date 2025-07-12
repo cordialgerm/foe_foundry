@@ -9,7 +9,13 @@ from ...features import ActionType, Feature
 from ...powers import flags
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class CruelPower(PowerWithStandardScoring):
@@ -41,7 +47,7 @@ class CruelPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source=source,
             theme="cruel",
             icon=icon,

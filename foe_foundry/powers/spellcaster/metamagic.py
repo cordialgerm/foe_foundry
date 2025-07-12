@@ -14,7 +14,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -41,7 +41,7 @@ class _MetamagicPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Spellcasting,
+            power_type=PowerCategory.Spellcasting,
             source="Foe Foundry",
             theme="Metamagic",
             reference_statblock="Mage",

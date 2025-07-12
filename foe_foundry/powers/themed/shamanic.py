@@ -12,7 +12,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -30,7 +30,7 @@ class ShamanicPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             icon=icon,
             theme="shamanic",

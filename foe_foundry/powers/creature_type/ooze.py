@@ -12,7 +12,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -30,7 +30,7 @@ class OozePower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Ooze, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             source=source,
             icon=icon,
             create_date=create_date,

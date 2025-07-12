@@ -13,7 +13,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -43,7 +43,7 @@ class Illusory(PowerWithStandardScoring):
             name=name,
             source=source,
             create_date=create_date,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             theme="illusory",
             icon=icon,

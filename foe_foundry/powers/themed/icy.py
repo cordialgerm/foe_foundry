@@ -8,7 +8,13 @@ from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class IcyPower(PowerWithStandardScoring):
@@ -24,7 +30,7 @@ class IcyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
             icon=icon,

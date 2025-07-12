@@ -12,7 +12,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -36,7 +36,7 @@ class MimicPower(PowerWithStandardScoring):
             reference_statblock="Mimic",
             icon="mimic-chest",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_mimic,

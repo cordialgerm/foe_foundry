@@ -12,7 +12,7 @@ from ..power import (
     HIGH_POWER,
     LOW_POWER,
     MEDIUM_POWER,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -39,7 +39,7 @@ class ElementalPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_type=PowerCategory.CreatureType,
             power_level=power_level,
             source=source,
             create_date=create_date,

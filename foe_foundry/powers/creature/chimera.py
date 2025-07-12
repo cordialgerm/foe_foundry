@@ -10,7 +10,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..themed.breath import breath
@@ -34,7 +34,7 @@ class ChimeraPower(PowerWithStandardScoring):
             reference_statblock="Chimera",
             power_level=power_level,
             icon=icon,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=datetime(2025, 4, 16),
             score_args=dict(
                 require_callback=is_chimera,

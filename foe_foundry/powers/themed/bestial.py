@@ -9,7 +9,13 @@ from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class BestialPower(PowerWithStandardScoring):
@@ -40,7 +46,7 @@ class BestialPower(PowerWithStandardScoring):
             theme="Bestial",
             reference_statblock=reference_statblock,
             create_date=create_date,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
         )

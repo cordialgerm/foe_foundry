@@ -12,7 +12,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -41,7 +41,7 @@ class GuardPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Guard",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,

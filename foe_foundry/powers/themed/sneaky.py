@@ -16,7 +16,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -46,7 +46,7 @@ class SneakyPower(PowerWithStandardScoring):
             theme="sneaky",
             reference_statblock="Spy",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_roles=[

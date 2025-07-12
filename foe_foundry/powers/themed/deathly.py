@@ -8,7 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
+from ...powers import PowerCategory
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -51,7 +51,7 @@ class DeathlyPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             source=source,
             create_date=create_date,
             theme="death",

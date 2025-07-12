@@ -6,7 +6,13 @@ from ...damage import DamageType, Shocked
 from ...die import Die
 from ...features import ActionType, Feature
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class StormPower(PowerWithStandardScoring):
@@ -26,7 +32,7 @@ class StormPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Storm Giant",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_types={

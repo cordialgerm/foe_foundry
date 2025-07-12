@@ -10,7 +10,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -27,7 +27,7 @@ class _GorgonPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Gorgon",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 require_callback=require_callback,

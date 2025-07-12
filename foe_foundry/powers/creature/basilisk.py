@@ -14,7 +14,7 @@ from ..power import (
     LOW_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,7 +33,7 @@ class _BasiliskPower(PowerWithStandardScoring):
             reference_statblock="Basilisk",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_type=PowerCategory.Creature,
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 require_callback=require_callback,

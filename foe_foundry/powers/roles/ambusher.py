@@ -8,7 +8,7 @@ from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from .. import flags
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class AmbusherPower(PowerWithStandardScoring):
@@ -31,7 +31,7 @@ class AmbusherPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_type=PowerCategory.Role,
             source=source,
             power_level=power_level,
             create_date=create_date,

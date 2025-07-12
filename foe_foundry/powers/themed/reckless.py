@@ -18,7 +18,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -40,7 +40,7 @@ class RecklessPower(PowerWithStandardScoring):
             theme="reckless",
             reference_statblock="Berserker",
             icon=icon,
-            power_type=PowerType.Theme,
+            power_type=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),
