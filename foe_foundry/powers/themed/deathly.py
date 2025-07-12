@@ -8,7 +8,6 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -18,6 +17,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -62,8 +62,8 @@ class DeathlyPower(PowerWithStandardScoring):
                 require_callback=undead_or_necromancer,
                 bonus_damage=DamageType.Necrotic,
                 bonus_types=CreatureType.Undead,
-                **score_args,
-            ),
+            )
+            | score_args,
         )
 
 

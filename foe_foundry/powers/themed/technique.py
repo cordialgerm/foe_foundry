@@ -63,7 +63,10 @@ class _PoisonedAttack(Technique):
             ],
         )
         super().__init__(
-            name="Poisoned Attack", icon="poison-bottle", score_args=score_args
+            name="Poisoned Attack",
+            icon="poison-bottle",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -100,7 +103,10 @@ class _BleedingAttack(Technique):
         )
 
         super().__init__(
-            name="Bleeding Attack", icon="bleeding-wound", score_args=score_args
+            name="Bleeding Attack",
+            icon="bleeding-wound",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -152,6 +158,7 @@ class _DazingAttack(Technique):
             icon="star-swirl",
             power_level=HIGH_POWER,
             score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -176,7 +183,10 @@ class _BurningAttack(Technique):
         )
 
         super().__init__(
-            name="Burning Attack", icon="flaming-sheet", score_args=score_args
+            name="Burning Attack",
+            icon="flaming-sheet",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -217,7 +227,12 @@ class _ProneAttack(Technique):
                 spell.Thundrousblast,
             ],
         )
-        super().__init__(name="Prone Attack", icon="tripwire", score_args=score_args)
+        super().__init__(
+            name="Prone Attack",
+            icon="falling",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge:
@@ -258,7 +273,10 @@ class _SlowingAttack(Technique):
             ],
         )
         super().__init__(
-            name="Slowing Attack", icon="sticky-boot", score_args=score_args
+            name="Slowing Attack",
+            icon="sticky-boot",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -295,7 +313,12 @@ class _PushingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Pushing Attack", icon="push", score_args=score_args)
+        super().__init__(
+            name="Pushing Attack",
+            icon="push",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Movement],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size >= Size.Huge and stats.attributes.STR >= 20:
@@ -334,7 +357,12 @@ class _GrapplingAttack(Technique):
             ],
         )
 
-        super().__init__(name="Grappling Attack", icon="grab", score_args=score_args)
+        super().__init__(
+            name="Grappling Attack",
+            icon="grab",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -373,7 +401,10 @@ class _BlindingAttack(Technique):
             ],
         )
         super().__init__(
-            name="Blinding Attack", icon="sight-disabled", score_args=score_args
+            name="Blinding Attack",
+            icon="sight-disabled",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -406,7 +437,10 @@ class _FrighteningAttack(Technique):
             attack_names=["-", spell.Gaze, spell.Deathbolt],
         )
         super().__init__(
-            name="Frightening Attack", icon="terror", score_args=score_args
+            name="Frightening Attack",
+            icon="terror",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -428,7 +462,10 @@ class _NoHealingAttack(Technique):
             attack_names=["-", spell.Deathbolt],
         )
         super().__init__(
-            name="No Healing Attack", icon="health-decrease", score_args=score_args
+            name="No Healing Attack",
+            icon="health-decrease",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -449,7 +486,12 @@ class _CharmingAttack(Technique):
             bonus_damage=DamageType.Psychic,
             attack_names=["-", spell.Gaze],
         )
-        super().__init__(name="Charming Attack", icon="charm", score_args=score_args)
+        super().__init__(
+            name="Charming Attack",
+            icon="charm",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -474,8 +516,8 @@ class _FreezingAttack(Technique):
         super().__init__(
             name="Freezing Attack",
             icon="frozen-block",
-            power_level=HIGH_POWER,
             score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -504,8 +546,8 @@ class _ShockingAttack(Technique):
         super().__init__(
             name="Shocking Attack",
             icon="laser-sparks",
-            power_level=HIGH_POWER,
             score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -533,7 +575,10 @@ class _GrazingAttack(Technique):
             ],
         )
         super().__init__(
-            name="Grazing Attack", icon="claw-slashes", score_args=score_args
+            name="Grazing Attack",
+            icon="claw-slashes",
+            score_args=score_args,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -558,7 +603,10 @@ class _CleavingAttack(Technique):
             attack_names=["-", weapon.Greataxe, natural.Tail, weapon.Polearm],
         )
         super().__init__(
-            name="Cleaving Attack", icon="meat-cleaver", score_args=score_args
+            name="Cleaving Attack",
+            icon="meat-cleaver",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -594,7 +642,10 @@ class _SappingAttack(Technique):
             ],
         )
         super().__init__(
-            name="Sapping Attack", icon="wasp-sting", score_args=score_args
+            name="Sapping Attack",
+            icon="wasp-sting",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -626,7 +677,10 @@ class _VexingAttack(Technique):
             ],
         )
         super().__init__(
-            name="Vexing Attack", icon="saber-and-pistol", score_args=score_args
+            name="Vexing Attack",
+            icon="saber-and-pistol",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -657,8 +711,8 @@ class _WeakeningAttack(Technique):
         super().__init__(
             name="Weakening Attack",
             icon="tired-eye",
-            power_level=HIGH_POWER,
             score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -701,7 +755,10 @@ class _DisarmingAttack(Technique):
         )
 
         super().__init__(
-            name="Disarming Attack", icon="drop-weapon", score_args=score_args
+            name="Disarming Attack",
+            icon="drop-weapon",
+            score_args=score_args,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -733,6 +790,7 @@ class _ParryAndRiposte(Technique):
                     weapon.SpearAndShield,
                 ],
             ),
+            power_types=[PowerType.Defense, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -772,6 +830,7 @@ class _PommelStrike(Technique):
                     weapon.SpearAndShield,
                 ],
             ),
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -804,6 +863,7 @@ class _Dueling(PowerWithStandardScoring):
             icon="sabers-choc",
             reference_statblock="Warrior",
             power_category=PowerCategory.Theme,
+            power_types=[PowerType.Attack],
             score_args=dict(
                 bonus_roles=[
                     MonsterRole.Skirmisher,
@@ -838,6 +898,7 @@ class _ExpertBrawler(PowerWithStandardScoring):
             icon="punch",
             reference_statblock="Warrior",
             power_category=PowerCategory.Theme,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Giant],
                 bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
@@ -875,6 +936,7 @@ class _Interception(PowerWithStandardScoring):
             theme="technique",
             icon="run",
             reference_statblock="Warrior",
+            power_types=[PowerType.Defense],
             score_args=dict(
                 attack_names={
                     "-",
@@ -913,6 +975,7 @@ class _BaitAndSwitch(PowerWithStandardScoring):
             reference_statblock="Warrior",
             power_level=LOW_POWER,
             power_category=PowerCategory.Theme,
+            power_types=[PowerType.Movement, PowerType.Utility],
             score_args=dict(
                 require_types=CreatureType.Humanoid,
                 require_roles=[
@@ -952,6 +1015,7 @@ class _QuickToss(PowerWithStandardScoring):
                     weapon.Daggers,
                 },
             ),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -986,6 +1050,7 @@ class _ArmorMaster(PowerWithStandardScoring):
                 require_cr=3,
                 require_roles={MonsterRole.Defender, MonsterRole.Soldier},
             ),
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -1015,6 +1080,7 @@ class _ShieldMaster(PowerWithStandardScoring):
                 require_shield=True,
                 bonus_roles={MonsterRole.Defender, MonsterRole.Soldier},
             ),
+            power_types=[PowerType.Defense, PowerType.Attack],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -1052,6 +1118,7 @@ class _PolearmMaster(PowerWithStandardScoring):
                 },
                 attack_names={"-", weapon.Polearm},
             ),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -1083,6 +1150,7 @@ class _OverpoweringStrike(PowerWithStandardScoring):
                     weapon.Maul,
                 },
             ),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -1130,6 +1198,7 @@ class _WhirlwindOfSteel(PowerWithStandardScoring):
                     weapon.Shortswords,
                 },
             ),
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -1172,6 +1241,7 @@ class _Sharpshooter(PowerWithStandardScoring):
                     weapon.Pistol,
                 },
             ),
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

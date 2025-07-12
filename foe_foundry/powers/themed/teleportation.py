@@ -22,12 +22,13 @@ from ..power import (
 class TeleportationPower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
-        power_types: List[PowerType] | None = None,
+        power_types: List[PowerType],
         **score_args,
     ):
         existing_callback = score_args.pop("require_callback", None)
@@ -67,6 +68,7 @@ class TeleportationPower(PowerWithStandardScoring):
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             )
             | score_args,
+            power_types=power_types,
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -76,7 +78,12 @@ class TeleportationPower(PowerWithStandardScoring):
 
 class _BendSpace(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Bend Space", icon="thrust-bend", source="Foe Foundry")
+        super().__init__(
+            name="Bend Space",
+            icon="thrust-bend",
+            source="Foe Foundry",
+            power_types=[PowerType.Movement, PowerType.Defense],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -100,6 +107,7 @@ class _MistyStep(TeleportationPower):
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
             require_no_flags={flags.HAS_TELEPORT, flags.NO_TELEPORT},
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -122,7 +130,12 @@ class _MistyStep(TeleportationPower):
 
 class _Scatter(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Scatter", icon="misdirection", source="Foe Foundry")
+        super().__init__(
+            name="Scatter",
+            icon="misdirection",
+            source="Foe Foundry",
+            power_types=[PowerType.Movement, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 6 else 60
