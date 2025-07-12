@@ -112,6 +112,7 @@ class _SweetPromises(CharmingPower):
             icon="smitten",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -136,6 +137,7 @@ class _WardingCharm(CharmingPower):
             icon="heart-shield",
             source="A5E SRD Vampire",
             create_date=datetime(2023, 11, 23),
+            power_types=[PowerType.Magic, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -157,6 +159,7 @@ class _CharmingWords(CharmingPower):
             source="SRD5.1 Charm Person",
             icon="convince",
             power_level=LOW_POWER,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

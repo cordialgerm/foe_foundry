@@ -5,6 +5,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -26,6 +27,7 @@ class TeleportationPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         existing_callback = score_args.pop("require_callback", None)

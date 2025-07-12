@@ -15,6 +15,7 @@ class AquaticBase(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = RIBBON_POWER,
+        power_types: List[PowerType] | None = None,
         **args,
     ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
@@ -37,7 +38,7 @@ class AquaticBase(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             score_args=score_args,
-            power_types=[PowerType.Movement],
+            power_types=power_types or [PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

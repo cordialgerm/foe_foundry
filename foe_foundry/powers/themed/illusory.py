@@ -5,6 +5,7 @@ from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -26,6 +27,7 @@ class Illusory(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def humanoid_is_magical(c: BaseStatblock) -> bool:
@@ -48,6 +50,7 @@ class Illusory(PowerWithStandardScoring):
             theme="illusory",
             icon=icon,
             reference_statblock="Adult Green Dragon",
+            power_types=power_types or [PowerType.Magic, PowerType.Stealth],
             score_args=dict(
                 require_types={
                     CreatureType.Fey,

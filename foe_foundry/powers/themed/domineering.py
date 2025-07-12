@@ -8,6 +8,7 @@ from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -29,6 +30,7 @@ class DomineeringPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Vampire",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         magical_creatures = {
@@ -62,6 +64,7 @@ class DomineeringPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             icon=icon,
+            power_types=power_types or [PowerType.Magic, PowerType.Debuff],
             score_args=dict(
                 require_types=required_creatures,
                 require_callback=is_magical,

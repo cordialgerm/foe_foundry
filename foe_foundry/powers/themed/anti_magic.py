@@ -243,6 +243,7 @@ class _SpellStealer(PowerWithStandardScoring):
             reference_statblock="Spy",
             power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -281,6 +282,7 @@ class _TwistedMind(PowerWithStandardScoring):
             reference_statblock="Aboleth",
             power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -331,6 +333,7 @@ class _SealOfSilence(PowerWithStandardScoring):
             create_date=datetime(2023, 11, 22),
             power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -358,6 +361,7 @@ class _RuneDrinker(PowerWithStandardScoring):
                 bonus_roles=[MonsterRole.Defender],
                 require_cr=1,
             ),
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

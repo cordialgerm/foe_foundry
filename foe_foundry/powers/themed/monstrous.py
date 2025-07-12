@@ -7,6 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, Condition, DamageType, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -28,6 +29,7 @@ class MonstrousPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -39,6 +41,7 @@ class MonstrousPower(PowerWithStandardScoring):
             power_category=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
+            power_types=power_types or [PowerType.Attack],
             score_args=dict(
                 require_types={CreatureType.Monstrosity, CreatureType.Beast}
             )

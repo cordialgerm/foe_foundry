@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import (
@@ -25,6 +26,7 @@ class PoisonPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -32,6 +34,7 @@ class PoisonPower(PowerWithStandardScoring):
             source=source,
             power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Debuff],
             create_date=create_date,
             icon=icon,
             theme="poison",
@@ -74,7 +77,10 @@ class PoisonPower(PowerWithStandardScoring):
 class _PoisonousBurst(PoisonPower):
     def __init__(self):
         super().__init__(
-            name="Poisonous Burst", icon="carrion", source="SRD5.1 Ice Mephit"
+            name="Poisonous Burst",
+            icon="carrion",
+            source="SRD5.1 Ice Mephit",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -97,6 +103,7 @@ class _ToxicPoison(PoisonPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             icon="poison-bottle",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2023, 11, 24),
         )
 
@@ -119,6 +126,7 @@ class _PoisonDart(PoisonPower):
             name="Poison Dart",
             source="Foe Foundry",
             icon="dart",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 3, 2),
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
         )
@@ -146,6 +154,7 @@ class _WeakeningPoison(PoisonPower):
             name="Weakening Poison",
             source="Foe Foundry",
             icon="potion-of-madness",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 3, 2),
         )
 
@@ -168,6 +177,7 @@ class _PoisonousBlood(PoisonPower):
             name="Poisonous Blood",
             source="Foe Foundry",
             icon="foamy-disc",
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             create_date=datetime(2025, 3, 14),
         )
 
@@ -188,6 +198,7 @@ class _VenemousMiasma(PoisonPower):
             name="Venemous Miasma",
             source="Foe Foundry",
             icon="poison-gas",
+            power_types=[PowerType.Aura, PowerType.Debuff],
             create_date=datetime(2025, 3, 14),
         )
 
@@ -208,6 +219,7 @@ class _VileVomit(PoisonPower):
             name="Vile Vomit",
             source="Foe Foundry",
             icon="foamy-disc",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             create_date=datetime(2025, 3, 14),
             require_types=[CreatureType.Undead, CreatureType.Monstrosity],
         )

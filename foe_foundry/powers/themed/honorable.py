@@ -6,6 +6,7 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from .. import flags
@@ -40,6 +41,7 @@ class HonorablePower(PowerWithStandardScoring):
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 22),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -51,6 +53,7 @@ class HonorablePower(PowerWithStandardScoring):
             theme="honorable",
             reference_statblock="Knight",
             create_date=create_date,
+            power_types=power_types or [PowerType.Attack, PowerType.Buff],
             score_args=dict(
                 require_callback=could_be_honorable,
                 require_types=CreatureType.Humanoid,
@@ -71,6 +74,7 @@ class _Challenge(HonorablePower):
             icon="face-to-face",
             power_level=MEDIUM_POWER,
             require_no_flags=flags.HAS_DUEL,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -95,6 +99,7 @@ class _HonorboundDuelist(HonorablePower):
             icon="cavalry",
             power_level=MEDIUM_POWER,
             require_no_flags=flags.HAS_DUEL,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -115,6 +120,7 @@ class _MortalVow(HonorablePower):
             name="Mortal Vow",
             icon="book-aura",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

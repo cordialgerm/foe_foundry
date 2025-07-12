@@ -25,6 +25,7 @@ class AberrantPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def is_aberrant_creature(c: BaseStatblock) -> bool:
@@ -63,6 +64,7 @@ class AberrantPower(PowerWithStandardScoring):
             theme="Aberrant",
             reference_statblock="Aboleth",
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -75,8 +77,10 @@ class AberrantPower(PowerWithStandardScoring):
 class _ModifyMemory(AberrantPower):
     def __init__(self):
         super().__init__(
-            name="Modify Memory", icon="misdirection", source="SRD5.1 Modify Memory",
-            power_types=[PowerType.Debuff]
+            name="Modify Memory",
+            icon="misdirection",
+            source="SRD5.1 Modify Memory",
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -93,8 +97,12 @@ class _ModifyMemory(AberrantPower):
 
 class _WarpReality(AberrantPower):
     def __init__(self):
-        super().__init__(name="Warp Reality", icon="abstract-119", source="Foe Foundry",
-                        power_types=[PowerType.AreaOfEffect, PowerType.Movement])
+        super().__init__(
+            name="Warp Reality",
+            icon="abstract-119",
+            source="Foe Foundry",
+            power_types=[PowerType.AreaOfEffect, PowerType.Movement],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -113,8 +121,12 @@ class _WarpReality(AberrantPower):
 
 class _Adhesive(AberrantPower):
     def __init__(self):
-        super().__init__(name="Adhesive", icon="sticky-boot", source="SRD5.1 Mimic",
-                        power_types=[PowerType.Defense, PowerType.Debuff])
+        super().__init__(
+            name="Adhesive",
+            icon="sticky-boot",
+            source="SRD5.1 Mimic",
+            power_types=[PowerType.Defense, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -137,7 +149,7 @@ class _Incubation(AberrantPower):
             icon="alien-egg",
             power_level=HIGH_POWER,
             attack_names=["-", natural.Claw],
-            power_types=[PowerType.Debuff]
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

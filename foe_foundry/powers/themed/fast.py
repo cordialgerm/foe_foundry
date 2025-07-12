@@ -10,6 +10,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -23,6 +24,7 @@ class FastPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Goblin",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -34,6 +36,7 @@ class FastPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock=reference_statblock,
             theme="fast",
+            power_types=power_types or [PowerType.Movement],
             score_args=dict(
                 require_stats=Stats.DEX,
                 stat_threshold=16,

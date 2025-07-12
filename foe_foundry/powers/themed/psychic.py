@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, Condition, DamageType, Dazed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, divination, transmutation
 from ...statblocks import BaseStatblock
@@ -28,6 +29,7 @@ class PsychicPower(PowerWithStandardScoring):
         power_category: PowerCategory = PowerCategory.Theme,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def is_spellcaster(candidate: BaseStatblock) -> bool:
@@ -44,6 +46,7 @@ class PsychicPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.Debuff],
             icon=icon,
             theme="psychic",
             reference_statblock="Aboleth",
@@ -71,6 +74,7 @@ class _Telekinetic(PsychicPower):
             source="5.1SRD Telekinesis",
             power_category=PowerCategory.Spellcasting,
             icon="psychic-waves",
+            power_types=[PowerType.Magic, PowerType.Movement],
             require_cr=6,
         )
 
@@ -84,7 +88,10 @@ class _Telekinetic(PsychicPower):
 class _PsychicInfestation(PsychicPower):
     def __init__(self):
         super().__init__(
-            name="Psychic Infestation", icon="unstable-orb", source="Foe Foundry"
+            name="Psychic Infestation",
+            icon="unstable-orb",
+            source="Foe Foundry",
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -115,6 +122,7 @@ class _DissonantWhispers(PsychicPower):
             name="Dissonant Whispers",
             icon="convince",
             source="SRD5.1 Dissonant Whispers",
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -141,6 +149,7 @@ class _PsionicBlast(PsychicPower):
             icon="explosive-materials",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Magic, PowerType.AreaOfEffect, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -172,7 +181,12 @@ class _PsionicBlast(PsychicPower):
 
 class _MirroredPain(PsychicPower):
     def __init__(self):
-        super().__init__(name="Mirrored Pain", icon="telepathy", source="Foe Foundry")
+        super().__init__(
+            name="Mirrored Pain",
+            icon="telepathy",
+            source="Foe Foundry",
+            power_types=[PowerType.Magic, PowerType.Defense],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

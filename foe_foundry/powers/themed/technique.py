@@ -7,6 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -28,6 +29,7 @@ class Technique(PowerWithStandardScoring):
         icon: str,
         score_args: dict,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
     ):
         super().__init__(
@@ -38,6 +40,7 @@ class Technique(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Warrior",
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Utility],
             create_date=create_date,
             score_args=score_args,
         )

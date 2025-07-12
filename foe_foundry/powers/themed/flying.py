@@ -4,6 +4,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
@@ -16,6 +17,7 @@ class FlyingPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = LOW_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
@@ -33,6 +35,7 @@ class FlyingPower(PowerWithStandardScoring):
             icon=icon,
             power_level=power_level,
             power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Movement],
             score_args=dict(
                 require_types={
                     CreatureType.Dragon,
@@ -62,6 +65,7 @@ class _Flyer(FlyingPower):
             name="Flyer",
             icon="swallow",
             source="Foe Foundry",
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -82,6 +86,7 @@ class _Flyby(FlyingPower):
             icon="crow-dive",
             source="A5E SRD Owl",
             require_flying=True,
+            power_types=[PowerType.Movement, PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -107,6 +112,7 @@ class _WingedCharge(FlyingPower):
                 MonsterRole.Bruiser,
             },
             require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -128,6 +134,7 @@ class _WingedRetreat(FlyingPower):
             icon="dove",
             require_flying=True,
             require_roles={MonsterRole.Skirmisher},
+            power_types=[PowerType.Movement, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

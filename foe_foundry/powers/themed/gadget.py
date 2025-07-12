@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -27,6 +28,7 @@ class GadgetPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -51,6 +53,7 @@ class GadgetPower(PowerWithStandardScoring):
             reference_statblock="Thug",
             power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Utility, PowerType.Attack],
             score_args=standard_score_args,
         )
 
@@ -63,6 +66,7 @@ class _PotionOfHealing(GadgetPower):
             source="SRD5.1 Healing Potion",
             power_level=LOW_POWER,
             require_no_flags=flags.HAS_HEALING,
+            power_types=[PowerType.Healing],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -101,6 +105,7 @@ class _SmokeBomb(GadgetPower):
             source="Foe Foundry",
             icon="smoke-bomb",
             power_level=LOW_POWER,
+            power_types=[PowerType.Stealth],
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
         )
 
@@ -139,6 +144,7 @@ class _Net(GadgetPower):
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_cr=min_cr,
             require_callback=within_cr_range,
+            power_types=[PowerType.Debuff],
         )
         self.ac = ac
         self.hp = hp
@@ -173,6 +179,7 @@ class _Grenade(GadgetPower):
             icon="bundle-grenade",
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_damage=dmg_type,
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

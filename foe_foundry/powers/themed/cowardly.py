@@ -67,7 +67,7 @@ class CowardlyPower(PowerWithStandardScoring):
             reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=standard_score_args,
-            power_types=power_types,
+            power_types=power_types or [PowerType.Movement],
         )
 
 

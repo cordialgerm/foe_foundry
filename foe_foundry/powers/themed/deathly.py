@@ -8,7 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerCategory, PowerType
+from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -17,6 +17,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -51,7 +52,7 @@ class DeathlyPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
-            power_types=power_types,
+            power_types=power_types or [PowerType.Debuff, PowerType.Magic],
             score_args=dict(
                 require_types={
                     CreatureType.Undead,
@@ -254,7 +255,7 @@ class _DrainStrength(DeathlyPower):
             name="Drain Strength",
             icon="oppression",
             source="SRD5.1 Shadow",
-            power_type=[PowerType.Debuff],
+            power_types=[PowerType.Debuff],
             reference_statblock="Shadow",
         )
 

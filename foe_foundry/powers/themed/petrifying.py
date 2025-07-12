@@ -7,6 +7,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from .. import flags
 from ..power import (
@@ -24,6 +25,7 @@ class _PetrifyingPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = HIGH_POWER,
         reference_statblock="Gorgon",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -34,6 +36,7 @@ class _PetrifyingPower(PowerWithStandardScoring):
             icon=icon,
             power_level=power_level,
             power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Debuff, PowerType.Attack],
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 bonus_types=CreatureType.Monstrosity,
@@ -66,7 +69,10 @@ class _PetrifyingGaze(_PetrifyingPower):
         self,
     ):
         super().__init__(
-            name="Petrifying Gaze", icon="medusa-head", reference_statblock="Basilisk"
+            name="Petrifying Gaze",
+            icon="medusa-head",
+            reference_statblock="Basilisk",
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -85,7 +91,10 @@ class _PetrifyingGaze(_PetrifyingPower):
 class _PetrifyingGlance(_PetrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Petrifying Glance", icon="medusa-head", reference_statblock="Basilisk"
+            name="Petrifying Glance",
+            icon="medusa-head",
+            reference_statblock="Basilisk",
+            power_types=[PowerType.Debuff, PowerType.Attack],
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -110,7 +119,10 @@ class _PetrifyingGlance(_PetrifyingPower):
 class _PetrifyingBite(_PetrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Petrifying Bite", icon="sharp-lips", attack_names={"-", natural.Bite}
+            name="Petrifying Bite",
+            icon="sharp-lips",
+            attack_names={"-", natural.Bite},
+            power_types=[PowerType.Debuff, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

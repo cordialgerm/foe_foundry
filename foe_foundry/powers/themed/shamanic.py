@@ -6,6 +6,7 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -25,6 +26,7 @@ class ShamanicPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -32,6 +34,7 @@ class ShamanicPower(PowerWithStandardScoring):
             source=source,
             power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.Utility],
             icon=icon,
             theme="shamanic",
             reference_statblock="Druid",

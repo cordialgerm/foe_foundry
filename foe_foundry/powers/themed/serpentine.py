@@ -6,6 +6,7 @@ from foe_foundry.statblocks.base import BaseStatblock
 
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
+from ...power_types import PowerType
 from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
@@ -16,7 +17,13 @@ from ..power import (
 
 
 class _SerpentinePower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
@@ -25,6 +32,7 @@ class _SerpentinePower(PowerWithStandardScoring):
             reference_statblock="Giant Snake",
             power_level=power_level,
             power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 3, 14),
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Beast],
@@ -39,6 +47,7 @@ class _SerpentineHiss(_SerpentinePower):
             name="Serpentine Hiss",
             icon="snake-tongue",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -60,6 +69,7 @@ class _InterruptingHiss(_SerpentinePower):
             name="Interrupting Hiss",
             icon="snake-jar",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

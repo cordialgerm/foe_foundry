@@ -5,6 +5,7 @@ from ...attack_template import natural
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -14,7 +15,6 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
-    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -28,6 +28,7 @@ class BestialPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Dire Wolf",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -50,7 +51,7 @@ class BestialPower(PowerWithStandardScoring):
             power_category=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
-            power_types=[PowerType.Attack, PowerType.Movement],
+            power_types=power_types or [PowerType.Attack],
         )
 
 
@@ -108,6 +109,7 @@ class _Trample(BestialPower):
             icon="hoof",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", natural.Stomp],
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -132,6 +134,7 @@ class _BurrowingAmbush(BestialPower):
             create_date=datetime(2023, 11, 22),
             attack_names=natural.Claw,
             require_callback=can_burrow,
+            power_types=[PowerType.Movement, PowerType.Stealth],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -159,6 +162,7 @@ class _TurboTrot(BestialPower):
             icon="hoof",
             create_date=datetime(2023, 11, 28),
             attack_names=["-", natural.Stomp],
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -180,6 +184,7 @@ class _MarkTheMeal(BestialPower):
             icon="caveman",
             create_date=datetime(2023, 11, 28),
             attack_names=["-", natural.Bite],
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

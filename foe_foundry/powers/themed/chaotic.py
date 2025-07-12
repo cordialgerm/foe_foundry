@@ -53,6 +53,7 @@ class ChaoticPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

@@ -33,6 +33,7 @@ class CursedPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Ghost",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -51,7 +52,7 @@ class CursedPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
-            power_types=[PowerType.Debuff, PowerType.Magic],
+            power_types=power_types or [PowerType.Debuff, PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -63,7 +64,12 @@ class CursedPower(PowerWithStandardScoring):
 
 class _AuraOfDespair(CursedPower):
     def __init__(self):
-        super().__init__(name="Aura of Despair", icon="despair", source="Foe Foundry")
+        super().__init__(
+            name="Aura of Despair",
+            icon="despair",
+            source="Foe Foundry",
+            power_types=[PowerType.Aura, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weight_of_sorrow = Feature(
@@ -116,8 +122,11 @@ class _DisfiguringCurse(CursedPower):
 
 class _CursedWound(CursedPower):
     def __init__(self):
-        return super().__init__(
-            name="Cursed Wound", icon="death-juice", source="SRD5.1 Wight"
+        super().__init__(
+            name="Cursed Wound",
+            icon="death-juice",
+            source="SRD5.1 Wight",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -158,7 +167,10 @@ class _RejectDivinity(CursedPower):
 class _BestowCurse(CursedPower):
     def __init__(self):
         super().__init__(
-            name="Bestow Curse", icon="dripping-star", source="SRD5.1 Bestow Curse"
+            name="Bestow Curse",
+            icon="dripping-star",
+            source="SRD5.1 Bestow Curse",
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -274,6 +286,7 @@ class _UnholyAura(CursedPower):
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
             require_cr=7,
+            power_types=[PowerType.Aura, PowerType.Buff, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

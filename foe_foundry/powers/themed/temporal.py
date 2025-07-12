@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -27,6 +28,7 @@ class TemporalPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -38,6 +40,7 @@ class TemporalPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Theme,
             create_date=create_date,
+            power_types=power_types or [PowerType.Magic],
             score_args=dict(
                 require_types={
                     CreatureType.Fey,
@@ -63,6 +66,7 @@ class _CurseOfTheAges(TemporalPower):
             icon="time-trap",
             power_level=EXTRA_HIGH_POWER,
             require_cr=10,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -90,6 +94,7 @@ class _TemporalLoop(TemporalPower):
             icon="backward-time",
             source="Foe Foundry",
             require_cr=3,
+            power_types=[PowerType.Magic, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -122,6 +127,7 @@ class _TemporalMastery(TemporalPower):
             icon="pocket-watch",
             power_level=HIGH_POWER,
             require_cr=7,
+            power_types=[PowerType.Magic, PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -144,6 +150,7 @@ class _Accelerate(TemporalPower):
             icon="extra-time",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Magic, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -161,7 +168,11 @@ class _Accelerate(TemporalPower):
 class _AlterFate(TemporalPower):
     def __init__(self):
         super().__init__(
-            name="Alter Fate", icon="card-random", source="Alter Fate", require_cr=4
+            name="Alter Fate",
+            icon="card-random",
+            source="Alter Fate",
+            require_cr=4,
+            power_types=[PowerType.Magic, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -182,6 +193,7 @@ class _WallOfTime(TemporalPower):
             icon="time-trap",
             source="Deep Magic: Time Magic - Wall of Time",
             require_cr=5,
+            power_types=[PowerType.Magic, PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -205,6 +217,7 @@ class _Reset(TemporalPower):
             icon="recycle",
             source="Deep Magic: Time Magic - Reset",
             require_cr=5,
+            power_types=[PowerType.Magic, PowerType.Healing],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
