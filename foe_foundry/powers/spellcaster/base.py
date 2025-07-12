@@ -5,6 +5,7 @@ from foe_foundry.features import Feature
 from foe_foundry.statblocks import BaseStatblock
 
 from ...damage import AttackType
+from ...power_types import PowerType
 from ...spells import CasterType, StatblockSpell
 from .. import flags
 from ..power import HIGH_POWER, PowerCategory, PowerWithStandardScoring
@@ -25,7 +26,12 @@ class _Spellcaster(PowerWithStandardScoring):
         creature_class: str | None = None,
         power_level=HIGH_POWER,
         require_attack_types=AttackType.AllSpell(),
+        power_types: List[PowerType] | None = None,
     ):
+        # Default to Magic if no power_types provided
+        if power_types is None:
+            power_types = [PowerType.Magic]
+
         score_args = (
             dict(
                 require_cr=min_cr,
@@ -44,6 +50,7 @@ class _Spellcaster(PowerWithStandardScoring):
             reference_statblock=reference_statblock,
             power_level=power_level,
             create_date=datetime(2023, 12, 14),
+            power_types=power_types,
             score_args=score_args,
         )
 
@@ -68,6 +75,7 @@ class WizardPower(_Spellcaster):
         creature_name: str,
         icon: str = "wizard-face",
         reference_statblock="Mage",
+        power_types: List[PowerType] | None = None,
         **kwargs,
     ):
         additional_score_args = kwargs.pop("score_args", {})
@@ -85,6 +93,7 @@ class WizardPower(_Spellcaster):
                 reference_statblock=reference_statblock,
                 caster_type=CasterType.Arcane,
                 icon=icon,
+                power_types=power_types,
                 score_args=dict(
                     require_callback=is_wizard,
                     require_no_flags=[flags.WIZARD],

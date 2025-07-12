@@ -3,6 +3,7 @@ from typing import List
 from ...damage import conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import StatblockSpell, conjuration, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ..power import Power
@@ -13,7 +14,12 @@ from .utils import spell_list
 class _Elementalist(WizardPower):
     def __init__(self, name: str, spells: List[StatblockSpell], icon: str):
         super().__init__(
-            name=name, creature_name=name, min_cr=4, spells=spells, icon=icon
+            name=name,
+            creature_name=name,
+            min_cr=4,
+            spells=spells,
+            icon=icon,
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
 

@@ -4,6 +4,7 @@ from num2words import num2words
 
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...references import Token
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -47,6 +48,7 @@ class _MetamagicPower(PowerWithStandardScoring):
             reference_statblock="Mage",
             icon=icon,
             power_level=power_level,
+            power_types=[PowerType.Magic],
             create_date=datetime(2025, 3, 7),
             score_args=score_args,
         )
