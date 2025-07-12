@@ -1,6 +1,7 @@
 from typing import List
 
 from ...creature_types import CreatureType
+from ...power_types import PowerType
 from ...spells import CasterType, StatblockSpell, conjuration, evocation, transmutation
 from ..power import Power
 from .base import _Spellcaster
@@ -35,6 +36,7 @@ class _Druidic(_Spellcaster):
             icon="sickle",
             min_cr=min_cr,
             max_cr=max_cr,
+            power_types=[PowerType.Magic],
             score_args=dict(require_types=[CreatureType.Humanoid]),
         )
 

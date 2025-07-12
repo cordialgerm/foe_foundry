@@ -6,9 +6,10 @@ from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class _ArcaneHunt(PowerWithStandardScoring):
@@ -29,12 +30,13 @@ class _ArcaneHunt(PowerWithStandardScoring):
 
         super().__init__(
             name="Arcane Hunt",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=LOW_POWER,
             source="Foe Foundry",
             reference_statblock="Death Dog",
             icon="hunter-eyes",
             theme="Anti-Magic",
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -60,11 +62,12 @@ class _FractalForm(PowerWithStandardScoring):
         )
         super().__init__(
             name="Fractal Form",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Magic",
             icon="abstract-061",
             reference_statblock="Deva",
+            power_types=[PowerType.Defense],
             score_args=score_args,
         )
 
@@ -95,11 +98,12 @@ class _Spellbreaker(PowerWithStandardScoring):
         )
         super().__init__(
             name="Spellbreaker",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="A5E SRD Spellbreaker",
             theme="Anti-Magic",
             icon="cancel",
             reference_statblock="Berserker",
+            power_types=[PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -137,7 +141,8 @@ class _RedirectTeleport(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="direction-signs",
             reference_statblock="Aboleth",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -175,7 +180,8 @@ class _SpellEater(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="swallow",
             reference_statblock="Chuul",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -235,8 +241,9 @@ class _SpellStealer(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="robber",
             reference_statblock="Spy",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -273,8 +280,9 @@ class _TwistedMind(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="brain-tentacle",
             reference_statblock="Aboleth",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -323,8 +331,9 @@ class _SealOfSilence(PowerWithStandardScoring):
             reference_statblock="Wight",
             icon="silenced",
             create_date=datetime(2023, 11, 22),
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=score_args,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -346,12 +355,13 @@ class _RuneDrinker(PowerWithStandardScoring):
             icon="rune-stone",
             reference_statblock="Chuul",
             create_date=datetime(2023, 11, 28),
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Aberration],
                 bonus_roles=[MonsterRole.Defender],
                 require_cr=1,
             ),
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

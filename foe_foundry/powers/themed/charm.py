@@ -6,10 +6,17 @@ from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, enchantment
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class CharmingPower(PowerWithStandardScoring):
@@ -21,6 +28,7 @@ class CharmingPower(PowerWithStandardScoring):
         reference_statblock: str = "Enchanter Mage",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def humanoid_is_psychic_spellcaster(candidate: BaseStatblock) -> bool:
@@ -57,8 +65,9 @@ class CharmingPower(PowerWithStandardScoring):
             source=source,
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
+            power_types=power_types or [PowerType.Magic, PowerType.Debuff],
             score_args=standard_score_args,
         )
 
@@ -80,6 +89,7 @@ class _MentalSummons(CharmingPower):
             source="A5E SRD Murmuring Worm",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -102,6 +112,7 @@ class _SweetPromises(CharmingPower):
             icon="smitten",
             create_date=datetime(2023, 11, 23),
             power_level=LOW_POWER,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -126,6 +137,7 @@ class _WardingCharm(CharmingPower):
             icon="heart-shield",
             source="A5E SRD Vampire",
             create_date=datetime(2023, 11, 23),
+            power_types=[PowerType.Magic, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -147,6 +159,7 @@ class _CharmingWords(CharmingPower):
             source="SRD5.1 Charm Person",
             icon="convince",
             power_level=LOW_POWER,
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

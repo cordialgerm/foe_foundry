@@ -4,6 +4,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType, enchantment, illusion, transmutation
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER
@@ -32,6 +33,7 @@ class _PsionicCaster(_Spellcaster):
                 reference_statblock="Psionic Warrior",
                 icon="psychic-waves",
                 caster_type=CasterType.Psionic,
+                power_types=[PowerType.Magic, PowerType.Debuff],
                 score_args=dict(
                     require_no_creature_class=True,
                     require_damage=DamageType.Psychic,

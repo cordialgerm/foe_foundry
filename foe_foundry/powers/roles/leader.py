@@ -6,10 +6,17 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 def is_positive_leader(c: BaseStatblock) -> bool:
@@ -31,6 +38,7 @@ class LeaderPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -41,13 +49,14 @@ class LeaderPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,
             theme="Leader",
             icon=icon,
             reference_statblock="Knight",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -59,6 +68,7 @@ class _CommandTheAttack(LeaderPower):
             icon="spears",
             source="A5E SRD Knight Captain",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -80,6 +90,7 @@ class _Intimidate(LeaderPower):
             source="Foe Foundry",
             require_stats=Stats.CHA,
             icon="terror",
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -107,6 +118,7 @@ class _StayInFormation(LeaderPower):
             name="Stay In Formation",
             icon="roman-shield",
             source="A5E SRD Bugbear Chief",
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -128,6 +140,7 @@ class _FanaticFollowers(LeaderPower):
             icon="minions",
             source="A5E SRD Crime Boss",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -149,6 +162,7 @@ class _InspiringCommander(LeaderPower):
             icon="caesar",
             power_level=HIGH_POWER,
             require_callback=is_positive_leader,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -171,6 +185,7 @@ class _CommandTheTroops(LeaderPower):
             icon="rank-3",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -193,6 +208,7 @@ class _RallyTheTroops(LeaderPower):
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
             require_callback=is_positive_leader,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -10,10 +10,11 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class EmanationPower(PowerWithStandardScoring):
@@ -23,6 +24,7 @@ class EmanationPower(PowerWithStandardScoring):
         icon: str = "hexes",
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Mage",
+        power_types: List[PowerType] | None = None,
         **kwargs,
     ):
         new_callback = kwargs.pop("require_callback", None)
@@ -53,12 +55,13 @@ class EmanationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source="Foe Foundry",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             theme="emanation",
             icon=icon,
             reference_statblock=reference_statblock,
             create_date=datetime(2025, 3, 9),
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.AreaOfEffect],
             score_args=score_args,
         )
 

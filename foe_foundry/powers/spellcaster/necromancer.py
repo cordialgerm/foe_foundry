@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import conjuration, illusion, necromancy
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -33,7 +34,12 @@ NecromancerExpertSpells = (
 
 class _NecromancerWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Necromancer", icon="skull-staff", **kwargs)
+        super().__init__(
+            creature_name="Necromancer", 
+            icon="skull-staff",
+            power_types=[PowerType.Magic],
+            **kwargs
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(stats.hp.average / 2.5)

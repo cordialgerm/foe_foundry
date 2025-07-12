@@ -1,5 +1,6 @@
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, abjuration, divination, evocation, necromancy
 from ...statblocks import BaseStatblock
@@ -68,6 +69,7 @@ class _CelestialCaster(_Spellcaster):
                 theme="Celestial",
                 reference_statblock="Deva",
                 icon="angel-wings",
+                power_types=[PowerType.Magic, PowerType.Healing],
                 score_args=dict(
                     require_callback=is_celestial_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],

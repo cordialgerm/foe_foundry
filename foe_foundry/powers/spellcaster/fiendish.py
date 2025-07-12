@@ -1,5 +1,6 @@
 from ...creature_types import CreatureType
 from ...damage import AttackType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import (
     CasterType,
@@ -39,6 +40,7 @@ class _FiendishCaster(_Spellcaster):
                 caster_type=CasterType.Innate,
                 reference_statblock="Cambion",
                 icon="evil-fork",
+                power_types=[PowerType.Magic, PowerType.Attack],
                 score_args=dict(
                     require_types=[
                         CreatureType.Fiend,

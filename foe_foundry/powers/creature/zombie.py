@@ -4,8 +4,15 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class ZombiePower(PowerWithStandardScoring):
@@ -15,6 +22,7 @@ class ZombiePower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -31,7 +39,8 @@ class ZombiePower(PowerWithStandardScoring):
             reference_statblock="Zombie",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,
@@ -48,6 +57,7 @@ class _RottenFlesh(ZombiePower):
             source="Foe Foundry",
             icon="shambling-zombie",
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense],
             create_date=datetime(2025, 2, 20),
         )
 
@@ -68,6 +78,7 @@ class _PutridStench(ZombiePower):
             source="Foe Foundry",
             icon="carrion",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 2, 20),
         )
 
@@ -92,6 +103,7 @@ class _SeveredLimb(ZombiePower):
             icon="severed-hand",
             source="Foe Foundry",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
             create_date=datetime(2025, 2, 20),
         )
 

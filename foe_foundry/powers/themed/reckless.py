@@ -9,6 +9,7 @@ from ...attributes import Stats
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -18,7 +19,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -31,16 +32,18 @@ class RecklessPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Buff],
             theme="reckless",
             reference_statblock="Berserker",
             icon=icon,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),

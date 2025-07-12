@@ -2,9 +2,10 @@ from foe_foundry.references import creature_ref
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...skills import Skills
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_knight(c: BaseStatblock) -> bool:
@@ -12,15 +13,22 @@ def is_knight(c: BaseStatblock) -> bool:
 
 
 class KnightPower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: list[PowerType] | None = None,
+    ):
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             power_level=power_level,
             source="Foe Foundry",
             icon=icon,
             theme="knight",
             reference_statblock="Knight",
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_knight,
                 require_types=CreatureType.Humanoid,
@@ -34,6 +42,7 @@ class _MountedWarrior(KnightPower):
             name="Mounted Warrior",
             icon="mounted-knight",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Summon, PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -59,6 +68,7 @@ class _GriffinKnight(KnightPower):
             name="Griffin Knight",
             icon="griffin-symbol",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Summon, PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

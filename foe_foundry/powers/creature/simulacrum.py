@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import abjuration, evocation, illusion
 from ...statblocks import BaseStatblock
 from ..power import Power
@@ -28,6 +29,7 @@ class _Simulacrum(WizardPower):
             theme="simulacrum",
             icon="relationship-bounds",
             reference_statblock="Simulacrum",
+            power_types=[PowerType.Magic, PowerType.Movement],
             **kwargs,
         )
 

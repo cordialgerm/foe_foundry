@@ -4,6 +4,7 @@ from typing import List
 from ...attributes import Skills
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -11,7 +12,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class EarthPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Earth Elemental",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -32,10 +34,11 @@ class EarthPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             theme="earth",
             icon=icon,
             reference_statblock=reference_statblock,
+            power_types=power_types or [PowerType.Environmental, PowerType.Attack],
             score_args=dict(
                 require_types=[
                     CreatureType.Beast,
@@ -62,6 +65,7 @@ class _Burrower(EarthPower):
             icon="dig-hole",
             power_level=RIBBON_POWER,
             require_callback=not_already_special_movement,
+            power_types=[PowerType.Movement, PowerType.Environmental],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -99,6 +103,7 @@ class _Climber(EarthPower):
             icon="mountain-climbing",
             power_level=RIBBON_POWER,
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Ambusher],
+            power_types=[PowerType.Movement, PowerType.Environmental],
             require_callback=not_already_special_movement,
         )
 

@@ -5,12 +5,13 @@ from ...creature_types import CreatureType
 from ...damage import conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType, abjuration, conjuration, evocation, transmutation
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class MerrowPower(PowerWithStandardScoring):
         name: str,
         icon: str = "fish-monster",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = datetime(2025, 6, 6),
         **score_args,
     ):
@@ -35,7 +37,8 @@ class MerrowPower(PowerWithStandardScoring):
             reference_statblock="Merrow",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_merrow,
@@ -51,6 +54,7 @@ class _KelpNets(MerrowPower):
             name="Kelp Nets",
             icon="fishing-net",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -77,6 +81,7 @@ class _ReelInThePrey(MerrowPower):
             name="Reel In The Prey",
             icon="harpoon-chain",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -110,6 +115,7 @@ class _AnemonePoison(MerrowPower):
             name="Anemone Poison",
             icon="poison-bottle",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -142,6 +148,7 @@ class _StormblessedMagic(MerrowPower):
             name="Stormblessed Magic",
             icon="lightning-storm",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

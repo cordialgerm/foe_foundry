@@ -1,6 +1,7 @@
 from typing import List
 
 from ...creature_types import CreatureType
+from ...power_types import PowerType
 from ...spells import (
     CasterType,
     StatblockSpell,
@@ -50,6 +51,7 @@ class _Shaman(_Spellcaster):
             icon="totem",
             min_cr=min_cr,
             max_cr=max_cr,
+            power_types=[PowerType.Magic],
             score_args=dict(require_types=[CreatureType.Humanoid]),
         )
 

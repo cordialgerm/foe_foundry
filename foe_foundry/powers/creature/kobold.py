@@ -7,10 +7,17 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Stats
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 from ..themed.breath import breath
 
 
@@ -26,6 +33,7 @@ class KoboldPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 4, 9),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -35,8 +43,9 @@ class KoboldPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Kobold",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_kobold,
                 require_types=[CreatureType.Dragon],
@@ -52,6 +61,7 @@ class _DraconicServants(KoboldPower):
             source="Foe Foundry",
             icon="kneeling",
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -71,6 +81,11 @@ class _DraconicStandard(KoboldPower):
             source="Foe Foundry",
             icon="knight-banner",
             power_level=MEDIUM_POWER,
+            power_types=[
+                PowerType.Environmental,
+                PowerType.Buff,
+                PowerType.AreaOfEffect,
+            ],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -107,6 +122,7 @@ class _DraconicAscension(KoboldPower):
             source="Foe Foundry",
             icon="dragon-head",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Summon, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -133,6 +149,7 @@ class _ScurryingFormation(KoboldPower):
             icon="shield-impact",
             power_level=LOW_POWER,
             require_roles=MonsterRole.Soldier,
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -152,6 +169,7 @@ class _FalseRetreat(KoboldPower):
             icon="run",
             power_level=LOW_POWER,
             require_roles=MonsterRole.Soldier,
+            power_types=[PowerType.Movement, PowerType.Environmental],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

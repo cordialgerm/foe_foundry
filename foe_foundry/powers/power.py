@@ -5,11 +5,12 @@ from typing import Any, Dict, List
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..features import Feature
+from ..power_types import PowerType
 from ..role_types import MonsterRole
 from ..statblocks import BaseStatblock
 from ..utils import name_to_key
 from .flags import theme_flag
-from .power_type import PowerType
+from .power_category import PowerCategory
 from .scoring import score as standard_score
 
 RIBBON_POWER = 0.25
@@ -22,8 +23,9 @@ EXTRA_HIGH_POWER = 1.5
 class Power(ABC):
     def __init__(
         self,
+        *,
         name: str,
-        power_type: PowerType,
+        power_category: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,
@@ -35,9 +37,10 @@ class Power(ABC):
         attack_types: List[AttackType] | None = None,
         suggested_cr: float | None = None,
         create_date: datetime | None = None,
+        power_types: List[PowerType],
     ):
         self.name = name
-        self.power_type = power_type
+        self.power_category = power_category
         self.source = source
         self.power_level = power_level
         self.roles = roles
@@ -46,6 +49,11 @@ class Power(ABC):
         self.attack_types = attack_types
         self.suggested_cr = suggested_cr
         self.create_date = create_date
+
+        if power_types is None or len(power_types) == 0:
+            raise ValueError("power_types must be a non-empty list")
+
+        self.power_types = power_types
         self.theme = theme
         self.reference_statblock = reference_statblock
         self.icon = icon
@@ -93,7 +101,7 @@ class Power(ABC):
         pass
 
     def __repr__(self):
-        return f"{self.name} ({self.power_type})"
+        return f"{self.name} ({self.power_category})"
 
     def __hash__(self) -> int:
         return hash(self.key)
@@ -105,14 +113,16 @@ class Power(ABC):
 class PowerWithStandardScoring(Power):
     def __init__(
         self,
+        *,
         name: str,
-        power_type: PowerType,
+        power_category: PowerCategory,
         theme: str,
         reference_statblock: str,
         icon: str | None = None,
         source: str | None = None,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType],
         score_args: Dict[str, Any] | None = None,
     ):
         def resolve_arg_list(arg: str) -> List | None:
@@ -143,7 +153,7 @@ class PowerWithStandardScoring(Power):
 
         super().__init__(
             name=name,
-            power_type=power_type,
+            power_category=power_category,
             source=source,
             power_level=power_level,
             create_date=create_date,
@@ -155,6 +165,7 @@ class PowerWithStandardScoring(Power):
             damage_types=damage_types,
             attack_types=attack_types,
             suggested_cr=suggested_cr,
+            power_types=power_types,
         )
 
         self.score_args = score_args

@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Stats
 from ...spells import abjuration, evocation, illusion
@@ -17,7 +18,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..roles.bruiser import StunningBlow
@@ -33,11 +34,13 @@ def is_orc(stats: BaseStatblock) -> bool:
 class OrcPower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType],
         **score_args,
     ):
         self.species = "orc"
@@ -50,13 +53,14 @@ class OrcPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,
             icon=icon,
             theme="Orc",
             reference_statblock="Orc",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -76,6 +80,7 @@ class OrcPowerWrapper(OrcPower):
             create_date=create_date,
             power_level=wrapped_power.power_level,
             icon=wrapped_power.icon or "orc-head",
+            power_types=wrapped_power.power_types,
             **score_args,
         )
         self.wrapped_power = wrapped_power
@@ -106,6 +111,7 @@ class _BloodrageDash(OrcPower):
                 MonsterRole.Soldier,
                 MonsterRole.Ambusher,
             ],
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -129,6 +135,7 @@ class _BloodrageBarrage(OrcPower):
             create_date=datetime(2025, 2, 17),
             require_attack_types=AttackType.AllRanged(),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -151,6 +158,7 @@ class _SavageMomentum(OrcPower):
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllMelee(),
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -173,6 +181,7 @@ class _Bloodfury(OrcPower):
             create_date=datetime(2025, 3, 31),
             require_attack_types=AttackType.AllMelee(),
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -204,6 +213,7 @@ class _AncestralGuidance(OrcPower):
                 MonsterRole.Controller,
             ],
             require_callback=require_callback,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -227,6 +237,7 @@ class _BloodburnTattoo(OrcPower):
             require_attack_types=AttackType.AllMelee(),
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
             require_cr=1,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -253,6 +264,7 @@ class _ThunderwrathTatoo(OrcPower):
             require_attack_types=AttackType.AllRanged(),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
             require_cr=1,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -276,6 +288,7 @@ class _SpiritSneakTatoo(OrcPower):
             power_level=LOW_POWER,
             create_date=datetime(2025, 3, 31),
             require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+            power_types=[PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -303,6 +316,7 @@ class _EmpoweringTatoo(OrcPower):
                 MonsterRole.Defender,
                 MonsterRole.Support,
             ],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -333,6 +347,7 @@ class _SanguineOffering(OrcPower):
                 MonsterRole.Ambusher,
                 MonsterRole.Support,
             ],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -376,6 +391,7 @@ class _BloodkinBond(OrcPower):
                 MonsterRole.Support,
                 MonsterRole.Soldier,
             ],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -400,6 +416,7 @@ class _WarCryOfTheBloodiedFang(OrcPower):
             create_date=datetime(2025, 3, 31),
             require_cr=4,
             bonus_roles=[MonsterRole.Leader, MonsterRole.Soldier, MonsterRole.Bruiser],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -425,6 +442,7 @@ class _WarCryOfTheChillheart(OrcPower):
             create_date=datetime(2025, 3, 31),
             require_cr=4,
             bonus_roles=[MonsterRole.Leader, MonsterRole.Soldier, MonsterRole.Bruiser],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

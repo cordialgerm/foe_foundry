@@ -7,11 +7,12 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, abjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_holy(c: BaseStatblock) -> bool:
@@ -29,17 +30,20 @@ class HolyPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
             theme="holy",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             power_level=power_level,
             reference_statblock="Priest",
             icon=icon,
+            power_types=power_types
+            or [PowerType.Magic, PowerType.Healing, PowerType.Buff],
             score_args=dict(
                 require_stats=[Stats.WIS, Stats.CHA],
                 require_types=CreatureType.Humanoid,
@@ -70,6 +74,7 @@ class _DivineSmite(HolyPower):
                 weapon.Greatsword,
                 weapon.SwordAndShield,
             ],
+            power_types=[PowerType.Attack, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -89,7 +94,10 @@ class _DivineSmite(HolyPower):
 class _MassCureWounds(HolyPower):
     def __init__(self):
         super().__init__(
-            name="Mass Cure Wounds", icon="healing", source="SRD5.1 Mass Cure Wounds"
+            name="Mass Cure Wounds",
+            icon="healing",
+            source="SRD5.1 Mass Cure Wounds",
+            power_types=[PowerType.Healing, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -104,7 +112,10 @@ class _MassCureWounds(HolyPower):
 class _WordOfRadiance(HolyPower):
     def __init__(self):
         super().__init__(
-            name="Word of Radiance", icon="fireflake", source="SRD 5.1 Word of Radiance"
+            name="Word of Radiance",
+            icon="fireflake",
+            source="SRD 5.1 Word of Radiance",
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -124,7 +135,12 @@ class _WordOfRadiance(HolyPower):
 
 class _Heroism(HolyPower):
     def __init__(self):
-        super().__init__(name="Heroism", icon="medal", source="SRD 5.1 Heroism")
+        super().__init__(
+            name="Heroism",
+            icon="medal",
+            source="SRD 5.1 Heroism",
+            power_types=[PowerType.Buff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
@@ -145,7 +161,10 @@ class _Heroism(HolyPower):
 class _DeathWard(HolyPower):
     def __init__(self):
         super().__init__(
-            name="Death Ward", icon="heart-shield", source="SRD 5.1 Death Ward"
+            name="Death Ward",
+            icon="heart-shield",
+            source="SRD 5.1 Death Ward",
+            power_types=[PowerType.Buff, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

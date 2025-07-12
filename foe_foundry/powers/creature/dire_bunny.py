@@ -6,11 +6,12 @@ from foe_foundry.references import action_ref
 
 from ...creature_types import CreatureType
 from ...damage import Condition
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -20,7 +21,13 @@ def is_dire_bunny(s: BaseStatblock) -> bool:
 
 
 class _DireBunnyPower(PowerWithStandardScoring):
-    def __init__(self, name: str, power_level: float = MEDIUM_POWER, **score_args):
+    def __init__(
+        self,
+        name: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+        **score_args,
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
@@ -28,8 +35,9 @@ class _DireBunnyPower(PowerWithStandardScoring):
             icon="rabbit",
             reference_statblock="Dire Bunny",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 5),
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_dire_bunny,
                 require_types=CreatureType.Monstrosity,
@@ -40,7 +48,11 @@ class _DireBunnyPower(PowerWithStandardScoring):
 
 class _ThumpOfDread(_DireBunnyPower):
     def __init__(self):
-        super().__init__(name="Thump of Dread", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Thump of Dread",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.8)
@@ -60,7 +72,11 @@ class _ThumpOfDread(_DireBunnyPower):
 
 class _BurrowingDisguise(_DireBunnyPower):
     def __init__(self):
-        super().__init__(name="Burrowing Disguise", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Burrowing Disguise",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Stealth, PowerType.Defense],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
@@ -75,7 +91,11 @@ class _BurrowingDisguise(_DireBunnyPower):
 
 class _CursedCuteness(_DireBunnyPower):
     def __init__(self):
-        super().__init__(name="Cursed Cuteness", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Cursed Cuteness",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Defense, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy

@@ -4,9 +4,10 @@ from typing import List
 from ...creature_types import CreatureType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, PowerType, PowerWithStandardScoring
+from ..power import LOW_POWER, MEDIUM_POWER, PowerCategory, PowerWithStandardScoring
 
 
 def is_cultist(s: BaseStatblock) -> bool:
@@ -21,6 +22,7 @@ class CultistPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 5, 23),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -30,8 +32,9 @@ class CultistPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Cultist",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_cultist,
                 require_types=[CreatureType.Humanoid],
@@ -56,6 +59,7 @@ class _PyramidScheme(CultistPower):
             power_level=LOW_POWER,
             require_max_cr=0.5,
             require_callback=require_callback,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -83,6 +87,7 @@ class _SacrificialPawns(CultistPower):
             power_level=LOW_POWER,
             require_max_cr=0.5,
             require_callback=require_callback,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -103,6 +108,7 @@ class _Indoctrination(CultistPower):
             power_level=MEDIUM_POWER,
             require_max_cr=0.5,
             require_callback=is_cultist,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
