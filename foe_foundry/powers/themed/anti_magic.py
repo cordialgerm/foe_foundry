@@ -6,6 +6,7 @@ from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import LOW_POWER, Power, PowerCategory, PowerWithStandardScoring
@@ -35,6 +36,7 @@ class _ArcaneHunt(PowerWithStandardScoring):
             reference_statblock="Death Dog",
             icon="hunter-eyes",
             theme="Anti-Magic",
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -65,6 +67,7 @@ class _FractalForm(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="abstract-061",
             reference_statblock="Deva",
+            power_types=[PowerType.Defense],
             score_args=score_args,
         )
 
@@ -100,6 +103,7 @@ class _Spellbreaker(PowerWithStandardScoring):
             theme="Anti-Magic",
             icon="cancel",
             reference_statblock="Berserker",
+            power_types=[PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -138,6 +142,7 @@ class _RedirectTeleport(PowerWithStandardScoring):
             icon="direction-signs",
             reference_statblock="Aboleth",
             power_category=PowerCategory.Theme,
+            power_types=[PowerType.Movement, PowerType.Debuff],
             score_args=score_args,
         )
 
@@ -176,6 +181,7 @@ class _SpellEater(PowerWithStandardScoring):
             icon="swallow",
             reference_statblock="Chuul",
             power_category=PowerCategory.Theme,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=score_args,
         )
 

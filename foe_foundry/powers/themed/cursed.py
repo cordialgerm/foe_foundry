@@ -19,6 +19,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -44,12 +45,13 @@ class CursedPower(PowerWithStandardScoring):
             name=name,
             power_category=PowerCategory.Theme,
             source=source,
-            theme="cursed",
+            theme="Cursed",
             icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=[PowerType.Debuff, PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

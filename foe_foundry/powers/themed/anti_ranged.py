@@ -11,7 +11,13 @@ from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class _AdaptiveCamouflage(PowerWithStandardScoring):
@@ -36,6 +42,7 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
             reference_statblock="Basilisk",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Stealth, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -65,6 +72,7 @@ class _ArrowWard(PowerWithStandardScoring):
             reference_statblock="Shield Guardian",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -94,6 +102,7 @@ class _DeflectMissile(PowerWithStandardScoring):
             reference_statblock="Warrior",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -123,6 +132,7 @@ class _HardToPinDown(PowerWithStandardScoring):
                 require_stats=Stats.DEX,
                 require_attack_types=AttackType.AllMelee(),
             ),
+            power_types=[PowerType.Defense, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -154,6 +164,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 reference_statblock="Fire Elemental",
                 create_date=datetime(2023, 11, 28),
                 score_args=score_args,
+                power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             )
 
         def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -196,6 +207,7 @@ class _Overchannel(PowerWithStandardScoring):
             score_args=dict(
                 require_attack_types=AttackType.AllSpell(),
             ),
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

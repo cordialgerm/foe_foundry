@@ -14,6 +14,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -55,6 +56,7 @@ class CruelPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=[PowerType.Attack],
         )
 
 

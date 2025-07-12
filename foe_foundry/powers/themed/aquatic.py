@@ -3,6 +3,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import RIBBON_POWER, Power, PowerCategory, PowerWithStandardScoring
 
@@ -36,6 +37,7 @@ class AquaticBase(PowerWithStandardScoring):
             source=source,
             power_level=power_level,
             score_args=score_args,
+            power_types=[PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -80,6 +82,7 @@ class _InkCloud(AquaticBase):
             icon="octopus",
             source="SRD5.1 Octopus",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -101,6 +104,7 @@ class _SlimyCloud(AquaticBase):
             require_types=[CreatureType.Aberration, CreatureType.Monstrosity],
             bonus_damage=DamageType.Poison,
             require_cr=3,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

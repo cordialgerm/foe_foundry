@@ -14,6 +14,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -49,6 +50,7 @@ class BestialPower(PowerWithStandardScoring):
             power_category=PowerCategory.Theme,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
 
@@ -59,6 +61,7 @@ class _RetributiveStrike(BestialPower):
             source="A5E SRD Roc",
             icon="wind-slap",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -81,6 +84,7 @@ class _OpportuneBite(BestialPower):
             icon="sharp-lips",
             create_date=datetime(2023, 11, 23),
             attack_names=["-", natural.Bite],
+            power_types=[PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

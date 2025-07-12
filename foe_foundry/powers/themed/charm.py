@@ -67,7 +67,7 @@ class CharmingPower(PowerWithStandardScoring):
             power_level=power_level,
             power_category=PowerCategory.Theme,
             create_date=create_date,
-            power_types=power_types,
+            power_types=power_types or [PowerType.Magic, PowerType.Debuff],
             score_args=standard_score_args,
         )
 

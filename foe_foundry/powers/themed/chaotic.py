@@ -17,6 +17,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -30,6 +31,7 @@ class ChaoticPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Cultist",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -66,6 +68,7 @@ class _ChaoticSpace(ChaoticPower):
             icon="misdirection",
             power_level=LOW_POWER,
             require_cr=5,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -95,6 +98,7 @@ class _EldritchBeacon(ChaoticPower):
             power_level=HIGH_POWER,
             require_cr=5,
             require_callback=self.can_summon,
+            power_types=[PowerType.Summon],
         )
 
     def can_summon(self, c: BaseStatblock) -> bool:

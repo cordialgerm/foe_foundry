@@ -16,6 +16,7 @@ from ..power import (
     MEDIUM_POWER,
     Power,
     PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -29,6 +30,7 @@ class CleverPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Spy",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -58,6 +60,7 @@ class _IdentifyWeakness(CleverPower):
             icon="magnifying-glass",
             source="Foe Foundry",
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -93,6 +96,7 @@ class _ArcaneMark(CleverPower):
             require_attack_types=AttackType.RangedSpell,
             bonus_types=CreatureType.Fey,
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -113,7 +117,10 @@ class _ArcaneMark(CleverPower):
 class _UnsettlingWords(CleverPower):
     def __init__(self):
         super().__init__(
-            name="Unsettling Words", icon="nailed-head", source="Foe Foundry"
+            name="Unsettling Words",
+            icon="nailed-head",
+            source="Foe Foundry",
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
