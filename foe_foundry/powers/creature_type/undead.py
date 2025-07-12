@@ -5,6 +5,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, Frozen
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
@@ -19,6 +20,7 @@ class UndeadPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Wight",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(require_types=CreatureType.Undead, **score_args)
@@ -28,6 +30,7 @@ class UndeadPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types,
             icon=icon,
             theme="Undead",
             reference_statblock=reference_statblock,
@@ -48,6 +51,7 @@ class _UndeadFortitude(UndeadPower):
             icon="raise-zombie",
             reference_statblock="Zombie",
             source="SRD5.1 Zombie",
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -67,6 +71,7 @@ class _StenchOfDeath(UndeadPower):
             icon="carrion",
             reference_statblock="Ghast",
             source="SRD5.1 Hezrou",
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -93,6 +98,7 @@ class _StygianBurst(UndeadPower):
             icon="icicles-aura",
             bonus_damage=DamageType.Cold,
             require_callback=not_burning_undead,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -120,6 +126,7 @@ class _SoulChill(UndeadPower):
             icon="brain-freeze",
             bonus_damage=DamageType.Cold,
             require_callback=not_burning_undead,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -144,6 +151,7 @@ class _SoulTether(UndeadPower):
             source="SRD5.1 Lich",
             icon="elysium-shade",
             require_cr=6,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -167,6 +175,7 @@ class _AntithesisOfLife(UndeadPower):
             source="Foe Foundry",
             icon="grim-reaper",
             require_cr=4,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

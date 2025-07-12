@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five, summoning
 from ..power import (
@@ -24,6 +25,7 @@ class DraconicPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -33,6 +35,7 @@ class DraconicPower(PowerWithStandardScoring):
             power_category=PowerCategory.CreatureType,
             source=source,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             theme="Dragon",
             reference_statblock="Adult Red Dragon",
@@ -43,7 +46,12 @@ class DraconicPower(PowerWithStandardScoring):
 
 class _FrightfulGaze(DraconicPower):
     def __init__(self):
-        super().__init__(name="Frightful Gaze", source="Foe Foundry", icon="dread")
+        super().__init__(
+            name="Frightful Gaze",
+            source="Foe Foundry",
+            icon="dread",
+            power_types=[PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -67,6 +75,7 @@ class _TailSwipe(DraconicPower):
             source="A5E SRD Ancient Red Dragon",
             icon="reptile-tail",
             attack_names=natural_attacks.Tail,
+            power_types=[PowerType.Attack, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -102,6 +111,7 @@ class _WingBuffet(DraconicPower):
             icon="wyvern",
             bonus_cr=7,
             require_flying=True,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -122,7 +132,12 @@ class _WingBuffet(DraconicPower):
 
 class _DragonsGreed(DraconicPower):
     def __init__(self):
-        super().__init__(name="Dragon's Greed", source="Foe Foundry", icon="coins-pile")
+        super().__init__(
+            name="Dragon's Greed",
+            source="Foe Foundry",
+            icon="coins-pile",
+            power_types=[PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -170,6 +185,7 @@ class _DraconicMinions(DraconicPower):
             power_level=HIGH_POWER,
             require_cr=7,
             require_callback=_check_draconic_minions,
+            power_types=[PowerType.Summon],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -204,6 +220,7 @@ class _VengefulBreath(DraconicPower):
             source="A5E SRD Behir",
             icon="dragon-head",
             create_date=datetime(2023, 11, 22),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

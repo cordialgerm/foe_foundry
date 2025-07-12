@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import enchantment
 from ...statblocks import BaseStatblock
@@ -33,6 +34,7 @@ class DemonPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -45,6 +47,7 @@ class DemonPower(PowerWithStandardScoring):
             source=source,
             power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             theme="Demon",
@@ -61,6 +64,7 @@ class _FeastOfSouls(DemonPower):
             icon="grim-reaper",
             create_date=datetime(2025, 3, 28),
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
             bonus_roles={
                 MonsterRole.Bruiser,
                 MonsterRole.Soldier,
@@ -86,6 +90,7 @@ class _DemonicBite(DemonPower):
             icon="fangs",
             attack_names=natural_attacks.Bite,
             bonus_damage=DamageType.Poison,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -121,6 +126,7 @@ class _DemonicSummons(DemonPower):
             require_cr=3,
             bonus_roles=MonsterRole.Leader,
             bonus_cr=7,
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -150,6 +156,7 @@ class _WhispersOfTheAbyss(DemonPower):
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -174,6 +181,7 @@ class _BlackBlood(DemonPower):
             icon="blood",
             power_level=LOW_POWER,
             require_cr=3,
+            power_types=[PowerType.Defense, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -196,6 +204,7 @@ class _Desecration(DemonPower):
             icon="pentagram-rose",
             power_level=LOW_POWER,
             require_cr=3,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -224,6 +233,7 @@ class _EchoOfRage(DemonPower):
             icon="enrage",
             power_level=MEDIUM_POWER,
             require_cr=3,
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -248,6 +258,7 @@ class _NightmareSpawn(DemonPower):
             icon="elysium-shade",
             power_level=HIGH_POWER,
             require_cr=9,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -12,6 +12,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -33,6 +34,7 @@ class ConstructPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         reference_statblock: str = "Stone Golem",
         create_date: datetime | None = None,
         **score_args,
@@ -43,6 +45,7 @@ class ConstructPower(PowerWithStandardScoring):
             power_category=PowerCategory.CreatureType,
             source=source,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             theme="Construct",
@@ -58,6 +61,7 @@ class _ConstructedGuardian(ConstructPower):
             source="Foe Foundry",
             reference_statblock="Shield Guardian",
             icon="guarded-tower",
+            power_types=[PowerType.Buff],
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
@@ -78,6 +82,7 @@ class _ProtectivePlating(ConstructPower):
             name="Protective Plating",
             source="Foe Foundry",
             icon="guarded-tower",
+            power_types=[PowerType.Defense],
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
@@ -102,6 +107,7 @@ class _ImmutableForm(ConstructPower):
             icon="locked-box",
             source="SRD 5.1 Stone Golem",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -120,6 +126,7 @@ class _BoundProtector(ConstructPower):
             icon="static-guard",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -138,6 +145,7 @@ class _ExplosiveCore(ConstructPower):
             name="Explosive Core",
             source="Foe Foundry",
             icon="planet-core",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             bonus_damage=DamageType.Fire,
         )
 
@@ -163,6 +171,7 @@ class _Smother(ConstructPower):
             reference_statblock="Rug of Smothering",
             icon="blanket",
             source="SRD 5.1 Rug of Smothering",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             attack_names={"-", natural_attacks.Slam},
         )
 
@@ -205,6 +214,7 @@ class _Retrieval(ConstructPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             icon="bug-net",
+            power_types=[PowerType.Movement, PowerType.Debuff, PowerType.Utility],
             create_date=datetime(2023, 11, 21),
             require_cr=7,
             attack_names=["-", natural_attacks.Slam],
@@ -249,6 +259,7 @@ class _SpellStoring(ConstructPower):
             icon="energy-tank",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
+            power_types=[PowerType.Utility],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -283,6 +294,7 @@ class _Overclock(ConstructPower):
             icon="clockwork",
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Buff, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -305,6 +317,7 @@ class _Crush(ConstructPower):
             icon="crush",
             create_date=datetime(2023, 11, 21),
             require_size=Size.Huge,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

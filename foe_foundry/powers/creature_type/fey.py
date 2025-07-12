@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from .. import flags
@@ -42,6 +43,7 @@ class FeyPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -51,6 +53,7 @@ class FeyPower(PowerWithStandardScoring):
             source=source,
             power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             score_args=standard_score_args,
@@ -67,6 +70,7 @@ class _FaerieStep(FeyPower):
             icon="teleport",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -89,6 +93,7 @@ class _FaePresence(FeyPower):
             source="Foe Foundry",
             icon="unicorn",
             create_date=datetime(2023, 11, 21),
+            power_types=[PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -114,6 +119,7 @@ class _BloodContract(FeyPower):
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
             bonus_damage=DamageType.Necrotic,
+            power_types=[PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -144,6 +150,7 @@ class _FaeCounterspell(FeyPower):
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
             bonus_damage=DamageType.Psychic,
+            power_types=[PowerType.Attack, PowerType.Utility],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -171,6 +178,7 @@ class _Awaken(FeyPower):
             icon="deku-tree",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -199,6 +207,7 @@ class _FaeBargain(FeyPower):
             icon="trade",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Utility],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -234,6 +243,7 @@ class _DanceTune(FeyPower):
             icon="ballerina-shoes",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -256,6 +266,7 @@ class _ShadowyDoppelganger(FeyPower):
             source="Foe Foundry",
             icon="shadow-follower",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
