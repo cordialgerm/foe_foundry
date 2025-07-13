@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development, ExtraplanarInfluence
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ArcaneArmor
@@ -49,8 +50,6 @@ class _LichTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -142,4 +141,24 @@ LichTemplate: MonsterTemplate = _LichTemplate(
     treasure=["Arcana", "Individual"],
     variants=[LichVariant],
     species=[],
+    environments=[
+        (
+            Development.dungeon,
+            Affinity.native,
+        ),  # Hidden lairs protecting their soul anchors
+        (Development.ruin, Affinity.native),  # Ancient tombs and forgotten sanctuaries
+        (Development.stronghold, Affinity.common),  # Conquered towers and fortresses
+        (
+            ExtraplanarInfluence.deathly,
+            Affinity.common,
+        ),  # Areas touched by necromantic power
+        (
+            Development.urban,
+            Affinity.uncommon,
+        ),  # Hidden beneath cities, plotting in shadows
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # Remote locations for dark experiments
+    ],
 )

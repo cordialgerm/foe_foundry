@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ArcaneArmor
@@ -37,8 +38,6 @@ class _SimulacrumTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -133,4 +132,34 @@ SimulacrumTemplate: MonsterTemplate = _SimulacrumTemplate(
     treasure=["Arcana", "Individual"],
     variants=[SimulacrumVariant],
     species=[],
+    environments=[
+        (
+            region.UrbanTownship,
+            Affinity.native,
+        ),  # City arcane academies and wizard colleges
+        (
+            Development.stronghold,
+            Affinity.native,
+        ),  # Fortified wizard towers and magical keeps
+        (
+            Development.urban,
+            Affinity.common,
+        ),  # Urban mage guilds and magical institutions
+        (
+            Development.settlement,
+            Affinity.common,
+        ),  # Town magical practitioners and their laboratories
+        (
+            Development.dungeon,
+            Affinity.uncommon,
+        ),  # Hidden magical sanctums and secret workshops
+        (
+            Development.ruin,
+            Affinity.uncommon,
+        ),  # Ancient magical sites and abandoned towers
+        (
+            Development.countryside,
+            Affinity.rare,
+        ),  # Remote hermitages and secluded studies
+    ],
 )

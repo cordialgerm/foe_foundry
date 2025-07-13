@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils import choose_enum
 
@@ -144,4 +145,25 @@ DruidTemplate: MonsterTemplate = _DruidTemplate(
     treasure=["Relics", "Individual"],
     variants=[DruidVariant],
     species=AllSpecies,
+    environments=[
+        (
+            Biome.forest,
+            Affinity.native,
+        ),  # Sacred groves and natural woodland sanctuaries
+        (
+            Development.wilderness,
+            Affinity.native,
+        ),  # Untouched natural areas they protect
+        (
+            Biome.jungle,
+            Affinity.common,
+        ),  # Dense tropical forests with rich biodiversity
+        (Development.frontier, Affinity.common),  # Edge settlements near wild areas
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural areas where nature and civilization meet
+        (Biome.swamp, Affinity.uncommon),  # Wetland ecosystems they may guard
+        (Development.ruin, Affinity.uncommon),  # Ancient sites reclaimed by nature
+    ],
 )

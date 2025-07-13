@@ -5,6 +5,9 @@ from ...attack_template import AttackTemplate, natural, weapon
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...die import Die
+from ...environs import Development, Terrain
+from ...environs.affinity import Affinity
+from ...environs.region import UrbanTownship
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
@@ -72,7 +75,6 @@ class _ToughTemplate(MonsterTemplate):
         cr = settings.cr
         variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -162,4 +164,24 @@ ToughTemplate: MonsterTemplate = _ToughTemplate(
     treasure=["Armaments"],
     variants=[ThugVariant, BrawlerVariant, BossVariant],
     species=AllSpecies,
+    environments=[
+        # Thugs are urban enforcers and criminals found in cities and towns
+        (UrbanTownship, Affinity.common),  # Primary urban areas - cities and towns
+        (Development.urban, Affinity.common),  # Major cities with crime organizations
+        (
+            Development.settlement,
+            Affinity.common,
+        ),  # Towns with taverns and enforcement needs
+        (Development.countryside, Affinity.uncommon),  # Rural areas needing muscle
+        (
+            Development.stronghold,
+            Affinity.uncommon,
+        ),  # Fortified areas as guards/enforcers
+        (
+            Development.frontier,
+            Affinity.rare,
+        ),  # Wild areas with minimal law enforcement
+        (Terrain.plain, Affinity.uncommon),  # Open areas for mercenary work
+        (Terrain.hill, Affinity.rare),  # Elevated areas for banditry
+    ],
 )

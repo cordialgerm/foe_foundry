@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development, ExtraplanarInfluence
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import PlateArmor, StuddedLeatherArmor, UnholyArmor
@@ -133,7 +134,6 @@ class _CultistTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -229,4 +229,28 @@ CultistTemplate: MonsterTemplate = _CultistTemplate(
     treasure=["Armaments", "Individual"],
     variants=[CultistVariant, AberrantVariant, NecroVariant, FiendVariant],
     species=[],
+    environments=[
+        (
+            Development.urban,
+            Affinity.common,
+        ),  # Hidden cells and secret meetings in cities
+        (Development.settlement, Affinity.common),  # Infiltrating towns and villages
+        (Development.ruin, Affinity.common),  # Ancient sites for forbidden rituals
+        (
+            Development.dungeon,
+            Affinity.uncommon,
+        ),  # Underground temples and hidden sanctuaries
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Remote farmsteads and isolated communities
+        (
+            ExtraplanarInfluence.hellish,
+            Affinity.uncommon,
+        ),  # Areas touched by otherworldly forces
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # Secret ritual sites far from civilization
+    ],
 )

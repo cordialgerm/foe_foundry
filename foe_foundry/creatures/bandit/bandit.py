@@ -1,3 +1,5 @@
+from foe_foundry.environs import Affinity, Development, region
+
 from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
@@ -184,6 +186,28 @@ BanditTemplate: MonsterTemplate = _BanditTemplate(
     tag_line="Criminals and Scoundrels",
     description="Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.",
     treasure=["Any"],
+    environments=[
+        (
+            Development.wilderness,
+            Affinity.native,
+        ),  # bandits hide in wild areas to avoid law
+        (Development.frontier, Affinity.native),  # operate on the edges of civilization
+        (
+            region.OpenRoads,
+            Affinity.common,
+        ),  # waylay travelers on roads and trade routes
+        (
+            Development.countryside,
+            Affinity.common,
+        ),  # raid rural areas and small settlements
+        (region.CountryShire, Affinity.common),  # threaten peaceful rural communities
+        (Development.ruin, Affinity.uncommon),  # sometimes use ruins as hideouts
+        (
+            region.UrbanTownship,
+            Affinity.uncommon,
+        ),  # operate in cities as criminal gangs
+        (Development.settlement, Affinity.rare),  # avoid well-protected settlements
+    ],
     variants=[BanditVariant, BanditCaptainVariant],
     species=AllSpecies,
 )

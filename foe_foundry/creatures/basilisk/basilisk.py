@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalPlating
@@ -94,6 +95,24 @@ BasiliskTemplate: MonsterTemplate = _BasiliskTemplate(
     tag_line="Reptilian guardian with a petrifying gaze",
     description="Basilisks are large, reptilian creatures with the ability to turn flesh to stone with their gaze. They are often found in rocky areas and caves, where they use their petrifying gaze to protect their territory.",
     treasure=[],
+    environments=[
+        (
+            Biome.underground,
+            Affinity.native,
+        ),  # basilisks are native to caves and tunnels
+        (
+            region.LoftyMountains,
+            Affinity.native,
+        ),  # natural habitat in rocky mountain areas
+        (Development.wilderness, Affinity.common),  # found in wild, undeveloped areas
+        (
+            region.HauntedLands,
+            Affinity.common,
+        ),  # often found in cursed or dangerous places
+        (Development.ruin, Affinity.common),  # commonly inhabit ancient ruins
+        (region.BlastedBadlands, Affinity.uncommon),  # occasionally in desolate areas
+        (Development.frontier, Affinity.uncommon),  # rarely venture near settlements
+    ],
     variants=[BasiliskVariant],
     species=[],
 )

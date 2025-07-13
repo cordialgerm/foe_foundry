@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import Unarmored, UnholyArmor
@@ -63,7 +64,6 @@ class _GhoulTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         hp_multiplier = 0.825
@@ -162,4 +162,18 @@ GhoulTemplate: MonsterTemplate = _GhoulTemplate(
     treasure=[],
     variants=[GhoulVariant, GhastVariant, GravelordVariant],
     species=[],
+    environments=[
+        (Biome.underground, Affinity.native),  # Catacombs, crypts, and burial chambers
+        (
+            Development.ruin,
+            Affinity.native,
+        ),  # Ancient abandoned places and battlefields
+        (Development.dungeon, Affinity.common),  # Dark underground complexes
+        (Development.urban, Affinity.uncommon),  # Hidden ghoul cults in major cities
+        (
+            Development.settlement,
+            Affinity.uncommon,
+        ),  # Villages with dark secrets or curses
+        (Biome.swamp, Affinity.uncommon),  # Dank places where death lingers
+    ],
 )

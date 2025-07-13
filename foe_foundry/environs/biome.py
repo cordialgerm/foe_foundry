@@ -4,7 +4,7 @@ from backports.strenum import StrEnum
 
 
 class Biome(StrEnum):
-    """Types of biomes that can be found in the environment."""
+    """Types of biomes that can be found in the environment. Biomes represent the natural characteristics of a region, including its climate, vegetation, and wildlife."""
 
     arctic = auto()  # cold, icy regions with snow and glaciers.
     desert = auto()  # hot, dry regions with sand and little vegetation.

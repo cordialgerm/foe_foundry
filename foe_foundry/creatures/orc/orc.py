@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, Terrain, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ArcaneArmor, HideArmor, PlateArmor, StuddedLeatherArmor
@@ -104,7 +105,6 @@ class _OrcTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -283,4 +283,38 @@ OrcTemplate: MonsterTemplate = _OrcTemplate(
     ],
     species=[],
     is_sentient_species=True,
+    environments=[
+        (
+            region.BlastedBadlands,
+            Affinity.native,
+        ),  # Orc warbands often inhabit harsh, desolate regions
+        (
+            region.WartornKingdom,
+            Affinity.common,
+        ),  # Orcs thrive in war-torn areas where they can raid and conquer
+        (
+            region.RollingGrasslands,
+            Affinity.common,
+        ),  # Open plains where orc warbands can move and fight
+        (
+            Development.frontier,
+            Affinity.native,
+        ),  # Warband territories on the edges of civilization
+        (Terrain.hill, Affinity.native),  # Tribal lands in hilly strongholds
+        (Development.wilderness, Affinity.common),  # Wild areas where warbands roam
+        (
+            Terrain.mountain,
+            Affinity.common,
+        ),  # Mountainous regions for defensive positions
+        (
+            Biome.grassland,
+            Affinity.common,
+        ),  # Open plains suitable for large warband movements
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural areas they might raid or control
+        (Biome.forest, Affinity.uncommon),  # Wooded areas for camps and ambush tactics
+        (Development.settlement, Affinity.rare),  # Towns they might conquer or threaten
+    ],
 )

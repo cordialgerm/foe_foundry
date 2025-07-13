@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -43,8 +44,6 @@ class _HydraTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -134,4 +133,12 @@ HydraTemplate: MonsterTemplate = _HydraTemplate(
     treasure=[],
     variants=[HydraVariant, HydraFoulbloodVariant],
     species=[],
+    environments=[
+        (Biome.swamp, Affinity.native),  # Primary habitat in marshes and wetlands
+        (Biome.lake, Affinity.native),  # Large bodies of freshwater they inhabit
+        (Biome.river, Affinity.common),  # Flowing waters where they hunt
+        (Biome.underground, Affinity.common),  # Caves near bodies of water
+        (Development.wilderness, Affinity.common),  # Remote wetland areas
+        (Development.ruin, Affinity.uncommon),  # Ancient sites reclaimed by water
+    ],
 )

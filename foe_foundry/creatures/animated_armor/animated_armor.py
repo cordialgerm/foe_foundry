@@ -1,3 +1,5 @@
+from foe_foundry.environs import Affinity, Development, region
+
 from ...ac_templates import PlateArmor
 from ...attack_template import AttackTemplate, natural, weapon
 from ...creature_types import CreatureType
@@ -152,6 +154,23 @@ AnimatedArmorTemplate: MonsterTemplate = _AnimatedArmorTemplate(
     tag_line="Mage-Wrought Animated Guardians",
     description="Animated Armor are constructed suits of armor that have been magically animated to serve as a guardian or protector. It is typically made of metal and has a humanoid shape.",
     treasure=[],
+    environments=[
+        (
+            Development.stronghold,
+            Affinity.native,
+        ),  # created to guard fortified locations
+        (
+            Development.ruin,
+            Affinity.common,
+        ),  # found in ancient magical ruins and towers
+        (region.UrbanTownship, Affinity.common),  # created by urban mages as guardians
+        (
+            Development.settlement,
+            Affinity.uncommon,
+        ),  # occasionally guard important buildings
+        (Development.dungeon, Affinity.uncommon),  # sometimes found in magical dungeons
+        (Development.wilderness, Affinity.rare),  # rarely found outside civilized areas
+    ],
     variants=[AnimatedArmorVariant, RunicSpellplateVariant],
     species=[],
 )

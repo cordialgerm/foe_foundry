@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import HideArmor
@@ -118,6 +119,16 @@ BugbearTemplate: MonsterTemplate = _BugbearTemplate(
     tag_line="Lurking abductors and ambushers",
     description="Bugbears are large, hairy humanoids with a reputation for stealth and ambush tactics. They are often found in dark forests or caves, where they can use their natural camouflage to surprise their prey.",
     treasure=["Any"],
+    environments=[
+        (region.TangledForest, Affinity.native),  # native to dark, dense forests
+        (Biome.underground, Affinity.native),  # found in caves and underground lairs
+        (Development.wilderness, Affinity.common),  # common in wild, undeveloped areas
+        (Development.ruin, Affinity.common),  # use ruins as ambush sites and lairs
+        (Development.frontier, Affinity.common),  # ambush settlers and travelers
+        (region.Feywood, Affinity.uncommon),  # occasionally found in magical forests
+        (Development.countryside, Affinity.uncommon),  # raid rural areas
+        (Development.settlement, Affinity.rare),  # avoid populated areas
+    ],
     variants=[BugbearVariant],
     species=[],
     is_sentient_species=True,

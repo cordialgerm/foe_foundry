@@ -1,3 +1,11 @@
+from foe_foundry.environs import (
+    Affinity,
+    Biome,
+    Development,
+    ExtraplanarInfluence,
+    region,
+)
+
 from ...ac_templates import Breastplate, Unarmored
 from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
@@ -182,6 +190,32 @@ SkeletonTemplate: MonsterTemplate = _SkeletonTemplate(
     tag_line="Ossified Evil",
     description="Skeletons rise at the summons of necromancers and foul spirits. Whether they’re the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers.",
     treasure=[],
+    environments=[
+        (Development.ruin, Affinity.native),  # native to ancient ruins and fortresses
+        (
+            Biome.underground,
+            Affinity.native,
+        ),  # crypts, tombs, and subterranean burial sites
+        (
+            region.HauntedLands,
+            Affinity.native,
+        ),  # cursed and haunted places where they arise
+        (
+            ExtraplanarInfluence.deathly,
+            Affinity.native,
+        ),  # areas touched by death/Styx influence
+        (
+            Development.ruin,
+            Affinity.common,
+        ),  # often found guarding fortified places
+        (
+            Development.dungeon,
+            Affinity.common,
+        ),  # often found guarding fortified places
+        (region.BlastedBadlands, Affinity.common),  # battlefields and mass graves
+        (Development.wilderness, Affinity.uncommon),  # occasionally arise in wild areas
+        (Development.settlement, Affinity.rare),  # rarely found near living communities
+    ],
     variants=[
         SkeletonVariant,
         GraveGuardVariant,

@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -173,4 +174,17 @@ MerrowTemplate: MonsterTemplate = _MerrowTemplate(
         MerrowAbyssalLord,
     ],
     species=[],
+    environments=[
+        (region.RestlessSea, Affinity.native),  # Deep ocean territories
+        (region.FlowingRiver, Affinity.common),  # Rivers and coastal areas
+        (Biome.ocean, Affinity.native),  # Deep underwater lairs and abyssal trenches
+        (Biome.lake, Affinity.common),  # Large freshwater bodies they inhabit
+        (Biome.river, Affinity.common),  # Rivers connecting to their ocean territories
+        (Development.settlement, Affinity.uncommon),  # Coastal villages they raid
+        (Development.dungeon, Affinity.uncommon),  # Underwater cave systems and ruins
+        (
+            Development.frontier,
+            Affinity.rare,
+        ),  # Remote coastal outposts they might attack
+    ],
 )

@@ -1,3 +1,5 @@
+from foe_foundry.environs import Affinity, Biome, Development, ExtraplanarInfluence
+from foe_foundry.environs.region import HauntedLands, UnderlandRealm
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import Unarmored, flat
@@ -159,7 +161,6 @@ class _SpiritTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -354,4 +355,25 @@ SpiritTemplate: MonsterTemplate = _SpiritTemplate(
         WraithVariant,
     ],
     species=[],
+    environments=[
+        # Spirits are most commonly found in places touched by death and haunting
+        (HauntedLands, Affinity.native),  # Cursed lands with undead presence
+        (UnderlandRealm, Affinity.native),  # Ancient underground tombs and crypts
+        # Extraplanar influences where death and negative energy seep through
+        (ExtraplanarInfluence.deathly, Affinity.native),  # Places touched by death
+        (ExtraplanarInfluence.astral, Affinity.common),  # Ethereal and spirit realms
+        # Development types - ruins and abandoned places where spirits linger
+        (Development.ruin, Affinity.native),  # Ancient ruins and abandoned structures
+        (
+            Development.settlement,
+            Affinity.common,
+        ),  # Villages and towns with tragic histories
+        (Development.countryside, Affinity.common),  # Rural areas with old graveyards
+        (
+            Development.wilderness,
+            Affinity.uncommon,
+        ),  # Remote areas with ancient battlefields
+        # Underground environments where spirits may be bound to crypts
+        (Biome.underground, Affinity.common),  # Dungeons, crypts, and catacombs
+    ],
 )

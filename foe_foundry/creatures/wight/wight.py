@@ -4,6 +4,10 @@ from ...ac_templates import Breastplate
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
+from ...environs import Biome, Development, Terrain
+from ...environs.affinity import Affinity
+from ...environs.extraplanar import ExtraplanarInfluence
+from ...environs.region import HauntedLands, UnderlandRealm
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...skills import Stats, StatScaling
@@ -43,8 +47,6 @@ class _WightTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -114,4 +116,19 @@ WightTemplate: MonsterTemplate = _WightTemplate(
     treasure=[],
     variants=[WightVariant],
     species=[],
+    environments=[
+        # Wights are undead found in dark, cold, and deathly places
+        (HauntedLands, Affinity.common),  # Primary haunted and cursed regions
+        (UnderlandRealm, Affinity.common),  # Underground tombs and crypts
+        (
+            ExtraplanarInfluence.deathly,
+            Affinity.common,
+        ),  # Areas of death and necromancy
+        (Development.ruin, Affinity.common),  # Ancient ruins and abandoned places
+        (Development.dungeon, Affinity.common),  # Underground chambers and burial sites
+        (Biome.underground, Affinity.common),  # Deep underground environments
+        (Development.stronghold, Affinity.uncommon),  # Corrupted fortresses
+        (Terrain.mountain, Affinity.rare),  # Cold mountain peaks and caves
+        (Development.wilderness, Affinity.rare),  # Remote places of past battles
+    ],
 )

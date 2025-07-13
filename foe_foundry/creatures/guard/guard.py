@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
@@ -181,6 +182,28 @@ GuardTemplate: MonsterTemplate = _GuardTemplate(
     tag_line="Sentries and Watch Members",
     description="Guards protect people, places, and things, either for pay or from a sense of duty. They might perform their duties vigilantly or distractedly. Some raise alarms at the first sign of danger and defend their charges with their lives. Others flee outright if their compensation doesn't match the danger they face.",
     treasure=[],
+    environments=[
+        (
+            region.UrbanTownship,
+            Affinity.native,
+        ),  # guards are native to cities and towns
+        (
+            Development.settlement,
+            Affinity.native,
+        ),  # found in villages, towns, and established communities
+        (Development.urban, Affinity.common),  # frequently found in larger cities
+        (
+            region.CountryShire,
+            Affinity.common,
+        ),  # common in rural settlements and villages
+        (Development.stronghold, Affinity.common),  # often guard fortified locations
+        (
+            Development.frontier,
+            Affinity.uncommon,
+        ),  # occasionally found in frontier settlements
+        (region.OpenRoads, Affinity.uncommon),  # sometimes serve as caravan escorts
+        (Development.wilderness, Affinity.rare),  # rarely found away from civilization
+    ],
     variants=[GuardVariant, CommanderVariant],
     species=AllSpecies,
 )

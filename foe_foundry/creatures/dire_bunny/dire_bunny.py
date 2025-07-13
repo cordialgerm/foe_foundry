@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -107,4 +108,23 @@ DireBunnyTemplate: MonsterTemplate = _DireBunnyTemplate(
     treasure=[],
     variants=[DireBunnyVariant],
     species=[],
+    environments=[
+        (Biome.forest, Affinity.native),  # Natural rabbit habitat in woodlands
+        (
+            Biome.grassland,
+            Affinity.native,
+        ),  # Open meadows and prairies where rabbits thrive
+        (
+            Development.countryside,
+            Affinity.common,
+        ),  # May venture near farmlands and settlements
+        (
+            Biome.farmland,
+            Affinity.common,
+        ),  # Agricultural areas where rabbits naturally occur
+        (
+            Development.frontier,
+            Affinity.uncommon,
+        ),  # Edge settlements where wilderness meets civilization
+    ],
 )
