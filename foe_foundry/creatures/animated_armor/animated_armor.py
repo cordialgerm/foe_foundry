@@ -151,7 +151,6 @@ AnimatedArmorTemplate: MonsterTemplate = _AnimatedArmorTemplate(
     name="Animated Armor",
     tag_line="Mage-Wrought Animated Guardians",
     description="Animated Armor are constructed suits of armor that have been magically animated to serve as a guardian or protector. It is typically made of metal and has a humanoid shape.",
-    environments=[],
     treasure=[],
     variants=[AnimatedArmorVariant, RunicSpellplateVariant],
     species=[],

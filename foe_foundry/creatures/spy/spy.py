@@ -161,7 +161,6 @@ SpyTemplate: MonsterTemplate = _SpyTemplate(
     name="Spy",
     tag_line="Infiltrators and Informants",
     description="Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity.",
-    environments=["Urban"],
     treasure=["Any"],
     variants=[SpyVariant, SpyMasterVariant],
     species=AllSpecies,

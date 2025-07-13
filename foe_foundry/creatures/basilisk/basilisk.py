@@ -93,7 +93,6 @@ BasiliskTemplate: MonsterTemplate = _BasiliskTemplate(
     name="Basilisk",
     tag_line="Reptilian guardian with a petrifying gaze",
     description="Basilisks are large, reptilian creatures with the ability to turn flesh to stone with their gaze. They are often found in rocky areas and caves, where they use their petrifying gaze to protect their territory.",
-    environments=["Mountain", "Underdark"],
     treasure=[],
     variants=[BasiliskVariant],
     species=[],

@@ -158,7 +158,6 @@ KnightTemplate: MonsterTemplate = _KnightTemplate(
     name="Knight",
     tag_line="Battle Masters and Heroic Wanderers",
     description="Knights are skilled warriors trained for war and tested in battle. Many serve the rulers of a realm, a faith, or an order devoted to a cause.",
-    environments=["Urban", "Rural"],
     treasure=["Relics", "Individual"],
     variants=[KnightVariant],
     species=AllSpecies,

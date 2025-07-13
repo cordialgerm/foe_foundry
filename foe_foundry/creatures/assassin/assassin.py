@@ -170,7 +170,6 @@ AssassinTemplate: MonsterTemplate = _AssassinTemplate(
     name="Assassin",
     tag_line="Contract Killers",
     description="Assassins are professional killers skilled at stealthily approaching their victims and striking unseen. Most assassins kill for a reason, perhaps hiring themselves out to wealthy patrons or slaying for an unscrupulous cause. They use poisons and other deadly tools, and they might carry equipment to help them break into secure areas or avoid capture.",
-    environments=["Urban"],
     treasure=["Any"],
     variants=[AssassinVariant],
     species=AllSpecies,

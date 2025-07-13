@@ -181,7 +181,6 @@ SkeletonTemplate: MonsterTemplate = _SkeletonTemplate(
     name="Skeleton",
     tag_line="Ossified Evil",
     description="Skeletons rise at the summons of necromancers and foul spirits. Whether they’re the remains of the ancient dead or fresh bones bound to morbid ambitions, they commit deathless work for whatever forces reanimated them, often serving as guardians, soldiers, or laborers.",
-    environments=["Planar (Shadowfel)", "Underdark", "Urban"],
     treasure=[],
     variants=[
         SkeletonVariant,

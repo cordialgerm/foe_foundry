@@ -158,7 +158,6 @@ ZombieTemplate: MonsterTemplate = _ZombieTemplate(
     name="Zombie",
     tag_line="Relentless Reanimated Corpses",
     description="Zombies are unthinking, reanimated corpses, often gruesomely marred by decay and lethal traumas. They serve whatever supernatural force animates them—typically evil necromancers or fiendish spirits. Zombies are relentless, merciless, and resilient, and their dead flesh can carry on even after suffering grievous wounds.",
-    environments=["Planar (Shadowfel)", "Underdark", "Urban"],
     treasure=[],
     variants=[ZombieVariant, ZombieOgreVariant],
     species=[],

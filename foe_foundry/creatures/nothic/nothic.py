@@ -107,7 +107,6 @@ HollowGazerTemplate: MonsterTemplate = _HollowGazerTemplate(
     name="Hollow Gazer",
     tag_line="Insane Seekers of Twisted Knowledge",
     description="Hollow Gazers are seekers of dark and forbidden knowledge that have been driven insane by cursed knowledge best left unknown.",
-    environments=["Underdark"],
     treasure=[],
     variants=[HollowGazerVariant],
     species=[],

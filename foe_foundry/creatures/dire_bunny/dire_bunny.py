@@ -104,7 +104,6 @@ DireBunnyTemplate: MonsterTemplate = _DireBunnyTemplate(
     name="Dire Bunny",
     tag_line="Surprisingly vicious and quick.",
     description="Dire bunnies are large, aggressive rabbits with sharp teeth and claws. They are often infected with a rabies-like disease that makes them more aggressive.",
-    environments=["Arctic", "Forest", "Mountain", "Hill"],
     treasure=[],
     variants=[DireBunnyVariant],
     species=[],

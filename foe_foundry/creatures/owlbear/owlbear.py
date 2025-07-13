@@ -113,7 +113,6 @@ OwlbearTemplate: MonsterTemplate = _OwlbearTemplate(
     name="Owlbear",
     tag_line="Unnaturally Territorial Predators",
     description="An Owlbear is a fearsome hybrid creature, combining the powerful frame of a bear with the hooked beak, feathers, and piercing eyes of a giant owl.",
-    environments=["Forest", "Hills"],
     treasure=[],
     variants=[OwlbearVariant],
     species=[],

@@ -130,7 +130,6 @@ SimulacrumTemplate: MonsterTemplate = _SimulacrumTemplate(
     name="Simulacrum",
     tag_line="Wizard's Illusory Duplicate",
     description="Simulacrums are illusions created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
-    environments=[],
     treasure=["Arcana", "Individual"],
     variants=[SimulacrumVariant],
     species=[],

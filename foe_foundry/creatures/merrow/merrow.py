@@ -165,7 +165,6 @@ MerrowTemplate: MonsterTemplate = _MerrowTemplate(
     name="Merrow",
     tag_line="Aquatic Monstrosity",
     description="Merrows are aquatic monstrosities that dwell in the depths of the sea. They are known for their brute strength and cunning tactics.",
-    environments=["Aquatic"],
     treasure=[],
     variants=[
         MerrowVariant,

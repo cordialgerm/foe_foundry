@@ -226,7 +226,6 @@ CultistTemplate: MonsterTemplate = _CultistTemplate(
     name="Cultist",
     tag_line="Doomsayers and Fanatics",
     description="Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces",
-    environments=["Urban"],
     treasure=["Armaments", "Individual"],
     variants=[CultistVariant, AberrantVariant, NecroVariant, FiendVariant],
     species=[],

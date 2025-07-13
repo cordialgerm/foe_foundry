@@ -123,7 +123,6 @@ MimicTemplate: MonsterTemplate = _MimicTemplate(
     name="Mimic",
     tag_line="Paranoia-Inducing Shapeshifting Ambusher",
     description="Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey",
-    environments=["Dungeon", "Urban"],
     treasure=[],
     variants=[MimicVariant],
     species=[],

@@ -30,7 +30,6 @@ class MonsterTemplate:
     name: str
     tag_line: str
     description: str
-    environments: list[str]  # TODO - standardize
     treasure: list[str]
     variants: list[MonsterVariant]
     species: list[CreatureSpecies]

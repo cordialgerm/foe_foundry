@@ -241,7 +241,6 @@ GolemTemplate: MonsterTemplate = _GolemTemplate(
     name="Golem",
     tag_line="Constructed Servants",
     description="Golems are magically animated constructs of great strength and durability. They are typically created to serve as guardians, servants, or protectors.",
-    environments=[],
     treasure=[],
     variants=[
         StoneVariant,

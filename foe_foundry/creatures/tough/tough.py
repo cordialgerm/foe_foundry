@@ -159,7 +159,6 @@ ToughTemplate: MonsterTemplate = _ToughTemplate(
     name="Tough",
     tag_line="Brawlers and Bullies",
     description="Bodyguards, belligerents, and laborers, toughs rely on their physical strength to intimidate foes. They might be brawny criminals, rowdy tavern goers, seasoned workers, or anyone who uses their muscle to get what they want.",
-    environments=["Urban"],
     treasure=["Armaments"],
     variants=[ThugVariant, BrawlerVariant, BossVariant],
     species=AllSpecies,

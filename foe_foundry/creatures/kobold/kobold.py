@@ -193,7 +193,6 @@ KoboldTemplate: MonsterTemplate = _KoboldTemplate(
     name="Kobold",
     tag_line="Proud Zealots of True Dragons",
     description="Kobolds are small reptilian guardians of True Dragon lairs. They are known for their zealous dedication to their True Dragon overlords and their cunning defense of the lairs they protect.",
-    environments=["Forest", "Grassland", "Hill", "Feywild", "Underdark"],
     treasure=["Any"],
     variants=[
         KoboldWarrenguardVariant,

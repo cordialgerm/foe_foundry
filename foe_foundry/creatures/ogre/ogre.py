@@ -198,15 +198,6 @@ OgreTemplate: MonsterTemplate = _OgreTemplate(
     name="Ogre",
     tag_line="Hungry hulking brutes and oafs",
     description="Ogres are massive and brutish ravagers that are constantly hungry and angry.",
-    environments=[
-        "Arctic",
-        "Desert",
-        "Forest",
-        "Grassland",
-        "Hill",
-        "Swamp",
-        "Underdark",
-    ],
     treasure=[],
     variants=[
         OgreVariant,

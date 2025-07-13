@@ -159,7 +159,6 @@ GhoulTemplate: MonsterTemplate = _GhoulTemplate(
     name="Ghoul",
     tag_line="Undead cannibals",
     description="Ghouls are horrid creatures that feast on the flesh of the living and the dead.",
-    environments=["Swamp", "Underdark", "Urban"],
     treasure=[],
     variants=[GhoulVariant, GhastVariant, GravelordVariant],
     species=[],

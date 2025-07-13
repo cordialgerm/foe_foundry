@@ -131,7 +131,6 @@ HydraTemplate: MonsterTemplate = _HydraTemplate(
     name="Hydra",
     tag_line="Multiheaded serpent of legend",
     description="Hydras are massive, multi-headed serpents that dwell in swamps and marshes. They are fearsome predators, capable of regenerating lost heads and limbs. Their blood is a potent poison, and their breath can melt flesh and bone.",
-    environments=["Coastal", "Swamp"],
     treasure=[],
     variants=[HydraVariant, HydraFoulbloodVariant],
     species=[],

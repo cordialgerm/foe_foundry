@@ -103,7 +103,6 @@ ManticoreTemplate: MonsterTemplate = _ManticoreTemplate(
     name="Manticore",
     tag_line="Flying hunters with spiked tails and sharper tongues",
     description="Manticores are bizarre amalgamations with the body of a lion, dragon-like wings, a bristling tail of barbed spines, and the leering face of a voracious human. They are known for their cruel appetites and even crueler wit.",
-    environments=["Arctic", "Coasta", "Grassland", "Hill", "Mountain"],
     treasure=[],
     variants=[ManticoreVariant],
     species=[],

@@ -141,7 +141,6 @@ DruidTemplate: MonsterTemplate = _DruidTemplate(
     name="Druid",
     tag_line="Stewards and Sages of Nature",
     description="Druids use primal magic to protect the natural world and its inhabitants. They are often found in the wilds, where they can commune with nature and draw upon its power.",
-    environments=[],
     treasure=["Relics", "Individual"],
     variants=[DruidVariant],
     species=AllSpecies,

@@ -115,7 +115,6 @@ MedusaTemplate: MonsterTemplate = _MedusaTemplate(
     name="Medusa",
     tag_line="Snake-haired recluse with a petrifying gaze",
     description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
-    environments=["Desert", "Dungeon"],
     treasure=[],
     variants=[MedusaVariant],
     species=[],

@@ -111,7 +111,6 @@ WightTemplate: MonsterTemplate = _WightTemplate(
     name="Wight",
     tag_line="Deathly cold malignant warriors of old",
     description="Wights are the dead and frozen corpses of wicked champions of bygone eras whose evil deeds persist into undeath.",
-    environments=["Desert", "Planar (Shadowfell)", "Swamp", "Underadarl", "Urban"],
     treasure=[],
     variants=[WightVariant],
     species=[],

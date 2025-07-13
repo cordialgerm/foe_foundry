@@ -180,7 +180,6 @@ GuardTemplate: MonsterTemplate = _GuardTemplate(
     name="Guard",
     tag_line="Sentries and Watch Members",
     description="Guards protect people, places, and things, either for pay or from a sense of duty. They might perform their duties vigilantly or distractedly. Some raise alarms at the first sign of danger and defend their charges with their lives. Others flee outright if their compensation doesn't match the danger they face.",
-    environments=["Any"],
     treasure=[],
     variants=[GuardVariant, CommanderVariant],
     species=AllSpecies,

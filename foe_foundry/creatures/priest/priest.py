@@ -157,7 +157,6 @@ PriestTemplate: MonsterTemplate = _PriestTemplate(
     name="Priest",
     tag_line="Arbiters of the Mortal and the Divine",
     description="Priests harness the power of faith to work miracles. These religious adherents are as diverse as the faiths they follow. Some obey gods and their servants, while others live by age-old creeds. Belief guides priests’ actions and their magic, which they use to shape the world in line with their ideologies.",
-    environments=[],
     treasure=["Relics", "Individual"],
     variants=[PriestVariant],
     species=AllSpecies,

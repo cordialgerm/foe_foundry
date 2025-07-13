@@ -344,7 +344,6 @@ SpiritTemplate: MonsterTemplate = _SpiritTemplate(
     name="Spirit",
     tag_line="Echoes of Rage and Regret",
     description="Spirits are the echoes and imprints of the deceased that refuse to pass due to unbearable grief, unfinished purpose, or wrathful vengeance. A Spirit forms when a soul is anchored to the Mortal Realm by dreadful purpose, rather than being carried peacefully upon the Styx to the Great Beyond. Existing neither truly in death nor in life, the spirit is a hollow echo of its former self",
-    environments=["Planar (Shadowfel)", "Underdark", "Urban"],
     treasure=[],
     variants=[
         ShadowVariant,

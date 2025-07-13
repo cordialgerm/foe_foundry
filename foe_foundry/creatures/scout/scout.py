@@ -181,7 +181,6 @@ ScoutTemplate: MonsterTemplate = _ScoutTemplate(
     name="Scout",
     tag_line="Watchers and Wanderers",
     description="Scouts are warriors of the wilderness, trained in hunting and tracking. They might be explorers or trappers, or they could perform more martial roles as archers, bounty hunters, or outriders.",
-    environments=["Any"],
     treasure=[],
     variants=[ScoutVariant, CommanderVariant],
     species=AllSpecies,

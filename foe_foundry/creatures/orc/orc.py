@@ -272,7 +272,6 @@ OrcTemplate: MonsterTemplate = _OrcTemplate(
     name="Orc",
     tag_line="Bloodrage-Fueled Ancestral Warriors",
     description="Orcs are savage and aggressive humanoids known for their brute strength and ferocity in battle. They are gifted with a powerful bloodrage that enhances their physical abilities and makes them formidable foes. Orcs are often found in warbands, led by a powerful warchief, and they are known for their brutal tactics and willingness to fight to the death.",
-    environments=["Forest", "Grassland", "Hill", "Feywild", "Underdark"],
     treasure=["Any"],
     variants=[
         OrcSoldierVariant,

@@ -134,7 +134,6 @@ WolfTemplate: MonsterTemplate = _WolfTemplate(
     name="Wolf",
     tag_line="Bestial Pack Hunters",
     description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
-    environments=["Arctic", "Forest", "Mountain", "Hill"],
     treasure=[],
     variants=[WolfVariant, FrostwolfVariant],
     species=[],

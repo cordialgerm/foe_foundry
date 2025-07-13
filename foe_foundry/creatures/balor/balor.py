@@ -127,7 +127,6 @@ BalorTemplate: MonsterTemplate = _BalorTemplate(
     name="Balor",
     tag_line="Demon of Overwhelming Rage",
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames. Demon lords and evil gods harness balors' rage by making balors commanders of armies or guardians of grave secrets.",
-    environments=["Planar (Abyss)"],
     treasure=[],
     variants=[BalorVariant, BalorGeneralVariant],
     species=[],

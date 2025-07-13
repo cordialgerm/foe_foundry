@@ -183,7 +183,6 @@ BanditTemplate: MonsterTemplate = _BanditTemplate(
     name="Bandit",
     tag_line="Criminals and Scoundrels",
     description="Bandits use the threat of violence to take what they want. Such criminals include gang members, desperadoes, and lawless mercenaries. Yet not all bandits are motivated by greed. Some are driven to lives of crime by unjust laws, desperation, or the threats of merciless leaders.",
-    environments=["Urban"],
     treasure=["Any"],
     variants=[BanditVariant, BanditCaptainVariant],
     species=AllSpecies,

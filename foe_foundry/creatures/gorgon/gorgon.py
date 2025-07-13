@@ -113,7 +113,6 @@ GorgonTemplate: MonsterTemplate = _GorgonTemplate(
     name="Gorgon",
     tag_line="Bull-Like Constructs with Petrifying Breath",
     description="Gorgons are ferocious bull-like constructs with with iron plates and a toxic, petrifying breath",
-    environments=["Forest", "Grassland", "Hill"],
     treasure=[],
     variants=[GorgonVariant],
     species=[],

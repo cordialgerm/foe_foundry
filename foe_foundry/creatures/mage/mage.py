@@ -359,7 +359,6 @@ MageTemplate: MonsterTemplate = _MageTemplate(
     name="Mage",
     tag_line="Magical Scholars and Spellcasters",
     description="Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.",
-    environments=[],
     treasure=["Arcana", "Individual"],
     variants=[
         ApprenticeVariant,

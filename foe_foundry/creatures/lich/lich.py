@@ -139,7 +139,6 @@ LichTemplate: MonsterTemplate = _LichTemplate(
     name="Lich",
     tag_line="Immortal Masters of Undeath and Arcana",
     description="Liches are mortal necromancers who defied death, binding their souls to the Mortal Realm through dark rituals and dreadful will. Rather than accept the inevitability of death, they craft soul anchors that lash their spirit in defiance of the natural order. The dark arts necessary to craft such a soul anchor are unique to each twisted soul that contemplates the heinous act, but in each case it involves unspeakably evil acts and cruel sacrifices. Countless aspiring liches have failed, but those who succeed attain unspeakable power.",
-    environments=[],
     treasure=["Arcana", "Individual"],
     variants=[LichVariant],
     species=[],

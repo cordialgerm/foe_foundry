@@ -102,7 +102,6 @@ VrockTemplate: MonsterTemplate = _VrockTemplate(
     name="Vrock",
     tag_line="Demon of Carnage and Ruin",
     description="Vrocks are screeching vulture-like harbringers of chaos and destruction that carry disease and pestilance from the lower planes.",
-    environments=["Planar (Abyss)"],
     treasure=[],
     variants=[VrockVariant],
     species=[],

@@ -35,6 +35,115 @@ class Region:
 # These regions are defined by the A5E rules, and are used to define the environment in which a monster or an NPC can be found.
 ### PLACE NEW ENVIRONMENTS BELOW THIS LINE ###
 
+# Alphabetically ordered region objects
+BlastedBadlands = Region(
+    name="Blasted Badlands",
+    description="These deserts are notorious for their many capricious ruins, the devastated landscape the biggest mark left upon the world by the forgotten civilizations that once flourished there. Monsters aplenty roam the wastes as well, so adventurers journeying through it encounter many creatures and constructed terrain exploration challenges.",
+    features=[
+        "desert",
+        "laboratory",
+        "mountains",
+        "ruins",
+        "subeterranean",
+        "swamp",
+        "temple",
+        "tomb",
+    ],
+    tiers=[Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
+    weather=["clear", "overcast", "scorching"],
+    biomes={Biome.desert},
+    terrains={Terrain.plain, Terrain.hill},
+    development={Development.wilderness, Development.ruin, Development.frontier},
+)
+
+
+# Country Shire region definition
+CountryShire = Region(
+    name="Country Shire",
+    description="Small villages and rural communities, often surrounded by a patchwork of farms, make for a safe and cozy existence with the most threatening events involving an angry bear harassing livestock. Adventurers journeying through this region can expect little danger, and a high number of social encounters.",
+    features=[
+        "forest",
+        "grassland",
+        "hills",
+        "settlement",
+        "subterranean",
+        "swamp",
+        "temple",
+    ],
+    tiers=[Tiers.tier_0, Tiers.tier_1],
+    weather=[
+        "clear",
+        "overcast",
+        "rain",
+        "mist",
+        "snow",
+    ],
+    biomes={
+        Biome.forest,
+        Biome.grassland,
+        Biome.farmland,
+        Biome.swamp,
+        Biome.underground,
+    },
+    terrains={Terrain.hill, Terrain.plain},
+    development={Development.countryside, Development.settlement, Development.frontier},
+)
+
+
+Feywood = Region(
+    name="Feywood",
+    description="Home to faeries, sprites, dryads, nymphs, satyrs, and other fey, the animals in this forest are bold and only foolish travelers fail to respect nature as they go along their way. Adventurers journeying through regions like this contend with frequent combat encounters, social encounters, and natural terrain and supernatural exploration challenges.",
+    features=[
+        "forest",
+        "grassland",
+        "hills",
+        "jungle",
+        "mountains",
+        "ruins",
+        "settlement",
+        "subterranean",
+        "swamp",
+        "temple",
+        "tomb",
+    ],
+    tiers=[Tiers.tier_1, Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
+    weather=[
+        "clear",
+        "mist",
+        "rain",
+    ],
+    biomes={
+        Biome.forest,
+        Biome.grassland,
+        Biome.jungle,
+        Biome.swamp,
+        Biome.underground,
+    },
+    terrains={Terrain.hill, Terrain.mountain, Terrain.plain},
+    development={Development.settlement, Development.frontier, Development.ruin},
+    extraplanar_influence={ExtraplanarInfluence.faerie},
+)
+
+
+FieryHellscape = Region(
+    name="Fiery Hellscape",
+    description="From active volcanoes to the hottest layers of Hell, these regions are dominated by red-hot lava flows and flaming geysers. Adventurers journeying through these regions can expect to encounter many natural terrain challenges and dangerous creatures.",
+    features=[
+        "desert",
+        "laboratory",
+        "mountains",
+        "ruins",
+        "subterranean",
+        "temple",
+        "tomb",
+    ],
+    tiers=[Tiers.tier_3, Tiers.tier_4],
+    weather=["uncomfortably warm"],
+    biomes={Biome.desert, Biome.underground},
+    terrains={Terrain.mountain, Terrain.plain},
+    development={Development.ruin, Development.stronghold},
+    extraplanar_influence={ExtraplanarInfluence.hellish},
+)
 
 FlowingRiver = Region(
     name="Flowing River",
@@ -259,134 +368,6 @@ TangledForest = Region(
     development={Development.wilderness, Development.frontier, Development.ruin},
 )
 
-UrbanTownship = Region(
-    name="Urban Township",
-    description="From mighty sprawling cities to smaller bustling towns, these areas are full of people—and more people means more accidents, more conflict, and more action. Adventurers journeying through urban areas have many social encounters, combat encounters against NPCs, and both circumstance and constructed terrain exploration challenges.",
-    features=[
-        "settlement",
-        "sewer",
-        "temple",
-    ],
-    tiers=[Tiers.tier_1, Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
-    weather=[
-        "clear",
-        "overcast",
-        "rain",
-        "mist",
-        "snow",
-    ],
-    development={Development.settlement, Development.urban},
-)
-
-BlastedBadlands = Region(
-    name="Blasted Badlands",
-    description="These deserts are notorious for their many capricious ruins, the devastated landscape the biggest mark left upon the world by the forgotten civilizations that once flourished there. Monsters aplenty roam the wastes as well, so adventurers journeying through it encounter many creatures and constructed terrain exploration challenges.",
-    features=[
-        "desert",
-        "laboratory",
-        "mountains",
-        "ruins",
-        "subeterranean",
-        "swamp",
-        "temple",
-        "tomb",
-    ],
-    tiers=[Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
-    weather=["clear", "overcast", "scorching"],
-    biomes={Biome.desert},
-    terrains={Terrain.plain, Terrain.hill},
-    development={Development.wilderness, Development.ruin, Development.frontier},
-)
-
-
-# Country Shire region definition
-CountryShire = Region(
-    name="Country Shire",
-    description="Small villages and rural communities, often surrounded by a patchwork of farms, make for a safe and cozy existence with the most threatening events involving an angry bear harassing livestock. Adventurers journeying through this region can expect little danger, and a high number of social encounters.",
-    features=[
-        "forest",
-        "grassland",
-        "hills",
-        "settlement",
-        "subterranean",
-        "swamp",
-        "temple",
-    ],
-    tiers=[Tiers.tier_0, Tiers.tier_1],
-    weather=[
-        "clear",
-        "overcast",
-        "rain",
-        "mist",
-        "snow",
-    ],
-    biomes={
-        Biome.forest,
-        Biome.grassland,
-        Biome.farmland,
-        Biome.swamp,
-        Biome.underground,
-    },
-    terrains={Terrain.hill, Terrain.plain},
-    development={Development.countryside, Development.settlement, Development.frontier},
-)
-
-
-Feywood = Region(
-    name="Feywood",
-    description="Home to faeries, sprites, dryads, nymphs, satyrs, and other fey, the animals in this forest are bold and only foolish travelers fail to respect nature as they go along their way. Adventurers journeying through regions like this contend with frequent combat encounters, social encounters, and natural terrain and supernatural exploration challenges.",
-    features=[
-        "forest",
-        "grassland",
-        "hills",
-        "jungle",
-        "mountains",
-        "ruins",
-        "settlement",
-        "subterranean",
-        "swamp",
-        "temple",
-        "tomb",
-    ],
-    tiers=[Tiers.tier_1, Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
-    weather=[
-        "clear",
-        "mist",
-        "rain",
-    ],
-    biomes={
-        Biome.forest,
-        Biome.grassland,
-        Biome.jungle,
-        Biome.swamp,
-        Biome.underground,
-    },
-    terrains={Terrain.hill, Terrain.mountain, Terrain.plain},
-    development={Development.settlement, Development.frontier, Development.ruin},
-    extraplanar_influence={ExtraplanarInfluence.faerie},
-)
-
-
-FieryHellscape = Region(
-    name="Fiery Hellscape",
-    description="From active volcanoes to the hottest layers of Hell, these regions are dominated by red-hot lava flows and flaming geysers. Adventurers journeying through these regions can expect to encounter many natural terrain challenges and dangerous creatures.",
-    features=[
-        "desert",
-        "laboratory",
-        "mountains",
-        "ruins",
-        "subterranean",
-        "temple",
-        "tomb",
-    ],
-    tiers=[Tiers.tier_3, Tiers.tier_4],
-    weather=["uncomfortably warm"],
-    biomes={Biome.desert, Biome.underground},
-    terrains={Terrain.mountain, Terrain.plain},
-    development={Development.ruin, Development.stronghold},
-    extraplanar_influence={ExtraplanarInfluence.hellish},
-)
-
 UnderlandRealm = Region(
     name="Underland Realm",
     description="There is no map—even among the subterranean cultures that dwell within—that accurately depicts all of these enormous tunnels, which range from natural caverns and dwarven mines to shadow elf cities. Adventurers journeying through this region have combat encounters, some social encounters, and many constructed terrain, natural terrain, and supernatural exploration challenges.",
@@ -449,6 +430,25 @@ UnrelentingMarsh = Region(
     },
 )
 
+UrbanTownship = Region(
+    name="Urban Township",
+    description="From mighty sprawling cities to smaller bustling towns, these areas are full of people—and more people means more accidents, more conflict, and more action. Adventurers journeying through urban areas have many social encounters, combat encounters against NPCs, and both circumstance and constructed terrain exploration challenges.",
+    features=[
+        "settlement",
+        "sewer",
+        "temple",
+    ],
+    tiers=[Tiers.tier_1, Tiers.tier_2, Tiers.tier_3, Tiers.tier_4],
+    weather=[
+        "clear",
+        "overcast",
+        "rain",
+        "mist",
+        "snow",
+    ],
+    development={Development.settlement, Development.urban},
+)
+
 WartornKingdom = Region(
     name="Wartorn Kingdom",
     description="An occupied nation, or one amidst a civil war, is a dubious place populated with aggressive soldiers, desperate commoners, and merciless opportunists. Adventurers journeying through this region have many social encounters, combat encounters against NPCs, and both circumstance and natural terrain exploration challenges as they navigate the country in conflict.",
@@ -470,3 +470,23 @@ WartornKingdom = Region(
         Development.urban,
     },
 )
+
+AllRegions = [
+    BlastedBadlands,
+    CountryShire,
+    Feywood,
+    FieryHellscape,
+    FlowingRiver,
+    FrozenWastes,
+    HauntedLands,
+    LoftyMountains,
+    OpenRoads,
+    ParchedSands,
+    RestlessSea,
+    RollingGrasslands,
+    TangledForest,
+    UnderlandRealm,
+    UnrelentingMarsh,
+    UrbanTownship,
+    WartornKingdom,
+]

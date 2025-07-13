@@ -158,7 +158,6 @@ BerserkerTemplate: MonsterTemplate = _BerserkerTemplate(
     name="Berserker",
     tag_line="Raging Invaders and Impassioned Warriors",
     description="Gripped by the adrenaline of battle, berserkers are reckless invaders, pit fighters, and other ferocious warriors.",
-    environments=["Urban"],
     treasure=["Armaments", "Individual"],
     variants=[BerserkerVariant, CommanderVariant],
     species=AllSpecies,
