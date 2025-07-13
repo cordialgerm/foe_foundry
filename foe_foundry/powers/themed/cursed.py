@@ -14,7 +14,14 @@ from ...role_types import MonsterRole
 from ...skills import Skills
 from ...spells import necromancy
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class CursedPower(PowerWithStandardScoring):
@@ -26,6 +33,7 @@ class CursedPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Ghost",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -36,14 +44,15 @@ class CursedPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
-            theme="cursed",
+            theme="Cursed",
             icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Debuff, PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -55,9 +64,14 @@ class CursedPower(PowerWithStandardScoring):
 
 class _AuraOfDespair(CursedPower):
     def __init__(self):
-        super().__init__(name="Aura of Despair", icon="despair", source="Foe Foundry")
+        super().__init__(
+            name="Aura of Despair",
+            icon="despair",
+            source="Foe Foundry",
+            power_types=[PowerType.Aura, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weight_of_sorrow = Feature(
             name="Weight of Sorrow",
             action=ActionType.Feature,
@@ -89,7 +103,7 @@ class _DisfiguringCurse(CursedPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=1.2, force_die=Die.d6)
         exhaustion = Condition.Exhaustion
@@ -108,11 +122,14 @@ class _DisfiguringCurse(CursedPower):
 
 class _CursedWound(CursedPower):
     def __init__(self):
-        return super().__init__(
-            name="Cursed Wound", icon="death-juice", source="SRD5.1 Wight"
+        super().__init__(
+            name="Cursed Wound",
+            icon="death-juice",
+            source="SRD5.1 Wight",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         feature = Feature(
@@ -134,7 +151,7 @@ class _RejectDivinity(CursedPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(3, ceil(1.5 * stats.cr)), force_die=Die.d6)
 
         feature = Feature(
@@ -150,10 +167,13 @@ class _RejectDivinity(CursedPower):
 class _BestowCurse(CursedPower):
     def __init__(self):
         super().__init__(
-            name="Bestow Curse", icon="dripping-star", source="SRD5.1 Bestow Curse"
+            name="Bestow Curse",
+            icon="dripping-star",
+            source="SRD5.1 Bestow Curse",
+            power_types=[PowerType.Magic, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         level_number = 5 if stats.cr >= 7 else 3
         level_text = num2words(level_number, ordinal=True)
         aside = "(duration 8 hours)" if stats.cr >= 7 else "(duration 1 minute)"
@@ -181,7 +201,7 @@ class _RayOfEnfeeblement(CursedPower):
             source="SRD5.1 Ray of Enfeeblement",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
@@ -202,7 +222,7 @@ class _VoidSiphon(CursedPower):
     def __init__(self):
         super().__init__(name="Void Siphon", icon="marrow-drain", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 10 if stats.cr <= 7 else 20
         exhaustion = Condition.Exhaustion
 
@@ -230,7 +250,7 @@ class _ReplaceShadow(CursedPower):
         stats = stats.copy(attributes=new_attrs)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         hide = action_ref("Hide")
 
@@ -266,9 +286,10 @@ class _UnholyAura(CursedPower):
             create_date=datetime(2023, 11, 24),
             require_attack_types=AttackType.AllMelee(),
             require_cr=7,
+            power_types=[PowerType.Aura, PowerType.Buff, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Unholy Aura",
             action=ActionType.Feature,
@@ -289,7 +310,7 @@ class _CurseOfVengeance(CursedPower):
             require_spellcasting=True,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.attributes.proficiency
         cursed = conditions.Cursed().caption

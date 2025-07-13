@@ -9,9 +9,16 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from .. import flags
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class DiseasePower(PowerWithStandardScoring):
@@ -21,17 +28,19 @@ class DiseasePower(PowerWithStandardScoring):
         icon: str = "biohazard",
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Ghoul",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             create_date=datetime(2023, 11, 20),
             theme="disease",
             reference_statblock=reference_statblock,
             icon=icon,
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_types=[
                     CreatureType.Plant,
@@ -72,7 +81,7 @@ def _RottenGrasp(disease: conditions.CustomCondition) -> Power:
             )
             self.disease = disease
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
             hit_die = int(1 + math.floor(stats.cr / 7))
 
@@ -100,7 +109,7 @@ def _ToxicBreath(disease: conditions.CustomCondition) -> Power:
             )
             self.disease = disease
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dc = stats.difficulty_class
             dmg = stats.target_value(
                 target=1.7 if stats.multiattack > 1 else 1.0, force_die=Die.d6

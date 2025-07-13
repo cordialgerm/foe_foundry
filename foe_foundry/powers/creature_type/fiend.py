@@ -5,6 +5,7 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType, enchantment
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -13,7 +14,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class FiendishPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -32,8 +34,9 @@ class FiendishPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             theme="Fiend",
             reference_statblock="Balor",
@@ -51,9 +54,10 @@ class _CallOfTheStyx(FiendishPower):
             create_date=datetime(2023, 11, 21),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Cold,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75)
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc=dc)
@@ -78,9 +82,10 @@ class _FiendishCackle(FiendishPower):
             source="Foe Foundry",
             icon="imp-laugh",
             bonus_damage=DamageType.Fire,
+            power_types=[PowerType.Attack, PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.5, force_die=Die.d4)
 
         dc = stats.difficulty_class
@@ -110,13 +115,14 @@ class _FieryTeleporation(FiendishPower):
             icon="fire-dash",
             bonus_damage=DamageType.Fire,
             require_no_flags="fiend_teleportation",
+            power_types=[PowerType.Movement, PowerType.AreaOfEffect],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
         return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         multiplier = 1.25 if stats.multiattack >= 2 else 0.75
         dmg = stats.target_value(target=multiplier, force_die=Die.d10)
         distance = easy_multiple_of_five(stats.cr * 10, min_val=30, max_val=90)
@@ -140,13 +146,14 @@ class _FiendishTeleporation(FiendishPower):
             source="Foe Foundry",
             icon="body-swapping",
             require_no_flags="fiend_teleportation",
+            power_types=[PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
         return stats.with_flags("fiend_teleportation", flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Fiendish Teleportation",
             action=ActionType.BonusAction,

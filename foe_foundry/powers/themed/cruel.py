@@ -9,7 +9,14 @@ from ...features import ActionType, Feature
 from ...powers import flags
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class CruelPower(PowerWithStandardScoring):
@@ -21,6 +28,7 @@ class CruelPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Berserker",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -41,7 +49,7 @@ class CruelPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             theme="cruel",
             icon=icon,
@@ -49,6 +57,7 @@ class CruelPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Attack],
         )
 
 
@@ -61,7 +70,7 @@ class _BloodiedFrenzy(CruelPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage_type = stats.secondary_damage_type or stats.primary_damage_type
         dmg = DieFormula.target_value(1 + 0.5 * stats.cr, force_die=Die.d4)
         feature = Feature(
@@ -89,7 +98,7 @@ class _BrutalCritical(CruelPower):
         stats = stats.with_flags(flags.MODIFIES_CRITICAL)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         crit_lower = 19 if stats.cr <= 7 else 18
         dmg = stats.target_value(target=1.0, force_die=Die.d6)
         dmg_type = stats.secondary_damage_type or stats.primary_damage_type

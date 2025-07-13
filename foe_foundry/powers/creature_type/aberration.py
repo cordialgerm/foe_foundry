@@ -7,10 +7,17 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, Swallowed, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class AberrationPower(PowerWithStandardScoring):
@@ -20,6 +27,7 @@ class AberrationPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -29,8 +37,9 @@ class AberrationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             score_args=standard_score_args,
             icon=icon,
@@ -45,10 +54,11 @@ class _TentacleGrapple(AberrationPower):
             name="Tentacle Grapple",
             source="Foe Foundry",
             icon="tentacle-strike",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             attack_names={"-", natural.Tentacle},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = int(floor(11 + 0.5 * stats.cr))
         grappled = Condition.Grappled
         restrained = Condition.Restrained
@@ -68,12 +78,13 @@ class _GazeOfTheFarRealm(AberrationPower):
             name="Gaze of the Far Realm",
             source="Foe Foundry",
             icon="gaze",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2023, 11, 21),
             attack_names=spell.Gaze,
             bonus_damage=DamageType.Psychic,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.25, suggested_die=Die.d6)
         burning = conditions.Burning(damage=dmg, damage_type=DamageType.Psychic)
@@ -98,9 +109,10 @@ class _MaddeningWhispers(AberrationPower):
             name="Maddening Whispers",
             icon="sonic-shout",
             source="5.1 SRD (Gibbering Mouther)",
+            power_types=[PowerType.Aura, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Madenning Whispers",
@@ -119,10 +131,11 @@ class _TentacleSlam(AberrationPower):
             name="Tentacle Slam",
             source="Foe Foundry",
             icon="tentacles-barrier",
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect, PowerType.Debuff],
             attack_names={"-", natural.Tentacle},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         grappled = Condition.Grappled
@@ -145,6 +158,7 @@ class _NullificationMaw(AberrationPower):
             source="Foe Foundry",
             icon="worm-mouth",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             require_size=Size.Large,
             attack_names={"-", natural.Bite},
         )
@@ -169,7 +183,7 @@ class _NullificationMaw(AberrationPower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Nullification Maw",
             action=ActionType.Feature,

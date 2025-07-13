@@ -4,11 +4,12 @@ from typing import List
 from ...attack_template import natural as natural_attacks
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -24,6 +25,7 @@ class SpiderPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime = datetime(2025, 3, 28),
         **score_args,
     ):
@@ -31,10 +33,11 @@ class SpiderPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types,
             theme="Spider",
             icon=icon,
             reference_statblock="Giant Spider",
@@ -48,6 +51,7 @@ class _Web(SpiderPower):
             name="Web",
             source="SRD 5.1 Giant Spider",
             icon="spider-web",
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff, PowerType.Movement],
             attack_names={
                 "-",
                 natural_attacks.Bite,
@@ -56,7 +60,7 @@ class _Web(SpiderPower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         restrained = Condition.Restrained
 

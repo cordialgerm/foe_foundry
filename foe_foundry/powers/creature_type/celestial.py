@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, Dazed
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import (
@@ -13,7 +14,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class CelestialPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -32,8 +34,9 @@ class CelestialPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             source=source,
             theme="Celestial",
@@ -51,9 +54,10 @@ class _AbsoluteConviction(CelestialPower):
             icon="prayer",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(3 * stats.cr)
         feature = Feature(
             name="Absolute Conviction",
@@ -67,9 +71,14 @@ class _AbsoluteConviction(CelestialPower):
 
 class _HealingTouch(CelestialPower):
     def __init__(self):
-        super().__init__(name="Healing Touch", icon="healing", source="SRD5.1 Deva")
+        super().__init__(
+            name="Healing Touch",
+            icon="healing",
+            source="SRD5.1 Deva",
+            power_types=[PowerType.Magic],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(int(ceil(max(5, 2 * stats.cr))))
 
         feature = Feature(
@@ -90,9 +99,10 @@ class _RighteousJudgement(CelestialPower):
             source="Foe Foundry",
             icon="tribunal-jury",
             bonus_damage=DamageType.Radiant,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.5, force_die=Die.d6)
         blinded = Condition.Blinded
@@ -118,9 +128,10 @@ class _DivineLaw(CelestialPower):
             icon="hand-of-god",
             power_level=HIGH_POWER,
             require_cr=7,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.25, force_die=Die.d6)
         blinded = Condition.Blinded
@@ -157,9 +168,10 @@ class _DivineMercy(CelestialPower):
             icon="templar-heart",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Healing, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         healing = easy_multiple_of_five(4 * stats.cr)
         charmed = Condition.Charmed
@@ -184,9 +196,10 @@ class _WordsOfRighteousness(CelestialPower):
             source="Foe Foundry",
             icon="tied-scroll",
             bonus_damage=DamageType.Radiant,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=1.25, suggested_die=Die.d6)
         dazed = Dazed()
         dc = stats.difficulty_class_easy
@@ -213,9 +226,10 @@ class _AweInspiringGaze(CelestialPower):
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 22),
             require_cr=7,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         feature = Feature(

@@ -4,6 +4,7 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import summoning
@@ -11,7 +12,7 @@ from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -27,6 +28,7 @@ class DevilPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -34,8 +36,9 @@ class DevilPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             theme="Devil",
@@ -52,9 +55,10 @@ class _WallOfFire(DevilPower):
             icon="fire-wave",
             require_cr=5,
             bonus_damage=DamageType.Fire,
+            power_types=[PowerType.AreaOfEffect, PowerType.Environmental],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -81,9 +85,10 @@ class _DevilishMinions(DevilPower):
             icon="minions",
             power_level=HIGH_POWER,
             require_cr=3,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         _, _, description = summoning.determine_summon_formula(
             summoner=summoning.Devils,
             summon_cr_target=stats.cr / 2.5,
@@ -104,10 +109,14 @@ class _DevilishMinions(DevilPower):
 class _TemptingOffer(DevilPower):
     def __init__(self):
         super().__init__(
-            name="Tempting Offer", source="Foe Foundry", icon="cash", require_cr=3
+            name="Tempting Offer",
+            source="Foe Foundry",
+            icon="cash",
+            require_cr=3,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         exhaustion = Condition.Exhaustion
         feature = Feature(
@@ -128,9 +137,10 @@ class _DevilsSight(DevilPower):
             source="Foe Foundry",
             icon="night-vision",
             bonus_damage=DamageType.Fire,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         level = 2 if stats.cr <= 5 else 4
 
         devils_sight = Feature(

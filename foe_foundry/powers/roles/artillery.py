@@ -6,6 +6,7 @@ from ...attributes import Skills, Stats
 from ...damage import AttackType, Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -13,7 +14,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -27,6 +28,7 @@ class ArtilleryPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Scout",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -40,13 +42,14 @@ class ArtilleryPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,
             icon=icon,
             theme="Artillery",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -60,9 +63,10 @@ class _FocusShot(ArtilleryPower):
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedWeapon,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bleeding = conditions.Bleeding(
             damage=stats.target_value(target=0.25, force_die=Die.d6)
         )
@@ -93,9 +97,10 @@ class _TwinSpell(ArtilleryPower):
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
             require_attack_types=AttackType.RangedSpell,
+            power_types=[PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Twin Spell",
             action=ActionType.BonusAction,
@@ -112,9 +117,10 @@ class _QuickDraw(ArtilleryPower):
             source="Foe Foundry",
             icon="fast-arrow",
             power_level=LOW_POWER,
+            power_types=[PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = ceil(stats.cr / 5)
         feature = Feature(
             name="Quick Draw",
@@ -128,10 +134,13 @@ class _QuickDraw(ArtilleryPower):
 class _SuppressingFire(ArtilleryPower):
     def __init__(self):
         super().__init__(
-            name="Suppressing Fire", icon="oppression", source="Foe Foundry"
+            name="Suppressing Fire",
+            icon="oppression",
+            source="Foe Foundry",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Suppressing Fire",
             action=ActionType.Feature,
@@ -154,9 +163,10 @@ class _IndirectFire(ArtilleryPower):
             icon="arcing-bolt",
             power_level=LOW_POWER,
             require_callback=not_gaze,
+            power_types=[PowerType.Utility],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Indirect Fire",
             action=ActionType.Feature,
@@ -174,9 +184,10 @@ class _Overwatch(ArtilleryPower):
             source="Foe Foundry",
             icon="watchtower",
             power_level=LOW_POWER,
+            power_types=[PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         range = stats.attack.range or 60
 
         if stats.cr < 1:

@@ -7,6 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...die import DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     EXTRA_HIGH_POWER,
@@ -14,14 +15,18 @@ from ..power import (
     LOW_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
 
 class _BasiliskPower(PowerWithStandardScoring):
     def __init__(
-        self, name: str, power_level: float = HIGH_POWER, icon: str | None = None
+        self,
+        name: str,
+        power_level: float = HIGH_POWER,
+        icon: str | None = None,
+        power_types: List[PowerType] | None = None,
     ):
         def require_callback(s: BaseStatblock) -> bool:
             return s.creature_subtype == "Basilisk"
@@ -33,8 +38,9 @@ class _BasiliskPower(PowerWithStandardScoring):
             reference_statblock="Basilisk",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 3, 14),
+            power_types=power_types,
             score_args=dict(
                 require_callback=require_callback,
                 bonus_types=CreatureType.Monstrosity,
@@ -46,10 +52,13 @@ class _BasiliskPower(PowerWithStandardScoring):
 class _BasiliskBrood(_BasiliskPower):
     def __init__(self):
         super().__init__(
-            name="Basilisk Brood", power_level=EXTRA_HIGH_POWER, icon="egg-clutch"
+            name="Basilisk Brood",
+            power_level=EXTRA_HIGH_POWER,
+            icon="egg-clutch",
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = summon_description(
             summoner=stats.selfref,
             summon="Basilisk",
@@ -69,10 +78,13 @@ class _BasiliskBrood(_BasiliskPower):
 class _StoneMolt(_BasiliskPower):
     def __init__(self):
         super().__init__(
-            name="Stone Molt", icon="stegosaurus-scales", power_level=LOW_POWER
+            name="Stone Molt",
+            icon="stegosaurus-scales",
+            power_level=LOW_POWER,
+            power_types=[PowerType.Defense, PowerType.Environmental],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Stone Molt",
             action=ActionType.Reaction,
@@ -85,10 +97,13 @@ class _StoneMolt(_BasiliskPower):
 class _StoneEater(_BasiliskPower):
     def __init__(self):
         super().__init__(
-            name="Stone Eater", icon="stone-pile", power_level=RIBBON_POWER
+            name="Stone Eater",
+            icon="stone-pile",
+            power_level=RIBBON_POWER,
+            power_types=[PowerType.Healing, PowerType.Utility],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         petrified = Condition.Petrified
         feature = Feature(
             name="Stone Eater",

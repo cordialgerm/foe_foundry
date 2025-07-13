@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import conjuration, evocation
 from ...statblocks import BaseStatblock
 from ...utils.summoning import Elementals, determine_summon_formula
@@ -35,9 +36,14 @@ ConjurationExpertSpells = (
 
 class _ConjurationWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Conjurer", icon="pentacle", **kwargs)
+        super().__init__(
+            creature_name="Conjurer",
+            icon="pentacle",
+            power_types=[PowerType.Magic],
+            **kwargs,
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         creature, _, description = determine_summon_formula(
             summoner=Elementals,
             summon_cr_target=stats.cr / 2,

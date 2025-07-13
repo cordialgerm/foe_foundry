@@ -4,6 +4,7 @@ from num2words import num2words
 
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...references import Token
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -14,7 +15,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -41,12 +42,13 @@ class _MetamagicPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Spellcasting,
+            power_category=PowerCategory.Spellcasting,
             source="Foe Foundry",
             theme="Metamagic",
             reference_statblock="Mage",
             icon=icon,
             power_level=power_level,
+            power_types=[PowerType.Magic],
             create_date=datetime(2025, 3, 7),
             score_args=score_args,
         )
@@ -57,7 +59,7 @@ class _ArcaneMastery(_MetamagicPower):
     def __init__(self):
         super().__init__(name="Arcane Mastery", caster_types=CasterType.Arcane)
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         feature = Feature(
             name="Arcane Mastery",
             action=ActionType.BonusAction,
@@ -71,7 +73,7 @@ class _PrimalMastery(_MetamagicPower):
     def __init__(self):
         super().__init__(name="Primal Mastery", caster_types=CasterType.Primal)
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         dmg = stats.target_value(target=0.5)
 
         feature = Feature(
@@ -92,7 +94,7 @@ class _DivineIntervention(_MetamagicPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         level = num2words(min(max(round(stats.cr / 2.5), 1), 9), ordinal=True)
 
         examples = [
@@ -123,7 +125,7 @@ class _SubtleMind(_MetamagicPower):
             power_level=RIBBON_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         feature = Feature(
             name="Subtle Mind",
             action=ActionType.Feature,
@@ -138,7 +140,7 @@ class _PactBoon(_MetamagicPower):
             name="Pact Boon", caster_types=CasterType.Pact, power_level=MEDIUM_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         self_damage = stats.target_value(target=0.25, force_die=Die.d6)
         dmg = DieFormula.from_dice(d6=2 * self_damage.n_die)
 
@@ -159,7 +161,7 @@ class _InnateMagic(_MetamagicPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         feature = Feature(
             name="Innate Magic",
             action=ActionType.BonusAction,
@@ -177,7 +179,7 @@ class _SpellEcho(_MetamagicPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         feature = Feature(
             name="Spell Echo",
             action=ActionType.Action,
@@ -196,7 +198,7 @@ class _ManaSurge(_MetamagicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         feature = Feature(
             name="Mana Surge",
             action=ActionType.Action,
@@ -214,7 +216,7 @@ class _ArcaneResevoir(_MetamagicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         token = Token(
             name="Arcane Resevoir", dc=stats.difficulty_class_token, charges=3
         )
@@ -238,7 +240,7 @@ class _BloodMagic(_MetamagicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         harm = easy_multiple_of_five(stats.target_value(target=0.25).average, min_val=5)
         bonus_damage = DieFormula.target_value(harm * 2.5, force_die=Die.d6)
 
@@ -258,7 +260,7 @@ class _Mindshackle(_MetamagicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         token = Token(name="Mindshackle", dc=stats.difficulty_class_token, charges=3)
 
         feature = Feature(
@@ -284,7 +286,7 @@ class _Runeburst(_MetamagicPower):
             power_level=MEDIUM_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         dmg = stats.target_value(target=0.5, force_die=Die.d10)
 
         feature = Feature(
@@ -304,7 +306,7 @@ class _ArcaneMirror(_MetamagicPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock):
+    def generate_features_inner(self, stats: BaseStatblock):
         token = Token(name="Arcane Mirror", dc=stats.difficulty_class_token, charges=1)
         feature = Feature(
             name="Arcane Mirror",

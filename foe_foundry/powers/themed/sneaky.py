@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -16,7 +17,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -37,6 +38,7 @@ class SneakyPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -46,7 +48,8 @@ class SneakyPower(PowerWithStandardScoring):
             theme="sneaky",
             reference_statblock="Spy",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Stealth, PowerType.Attack],
             create_date=create_date,
             score_args=dict(
                 require_roles=[
@@ -77,7 +80,7 @@ class _SneakyStrike(SneakyPower):
         stats = stats.copy(damage_modifier=0.9 * stats.damage_modifier)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.5, force_die=Die.d6)
         damage_type = stats.attack.damage.damage_type
 
@@ -106,7 +109,7 @@ class _FalseAppearance(SneakyPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="False Appearance",
             action=ActionType.Feature,
@@ -124,7 +127,7 @@ class _Vanish(SneakyPower):
             require_callback=no_unique_movement,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("hide")
         feature = Feature(
             name="Vanish",
@@ -150,7 +153,7 @@ class _CheapShot(SneakyPower):
             require_callback=not_caster,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         reach = stats.attack.reach or 5
         prone = Condition.Prone
@@ -173,7 +176,7 @@ class _ExploitAdvantage(SneakyPower):
             require_attack_types=AttackType.AllRanged(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Deadeye Shot",
             action=ActionType.BonusAction,

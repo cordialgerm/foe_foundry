@@ -1,5 +1,6 @@
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType, abjuration, enchantment
 from ...statblocks import BaseStatblock
@@ -38,6 +39,7 @@ class _OathCaster(_Spellcaster):
                 theme="Oath",
                 reference_statblock="Questing Knight",
                 icon="knight-banner",
+                power_types=[PowerType.Magic, PowerType.Healing],
                 score_args=dict(
                     require_callback=is_oath_caster,
                     require_types=[CreatureType.Celestial, CreatureType.Humanoid],

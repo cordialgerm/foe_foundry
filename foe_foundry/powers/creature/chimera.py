@@ -6,11 +6,12 @@ from foe_foundry.references import feature_ref
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..themed.breath import breath
@@ -26,6 +27,7 @@ class ChimeraPower(PowerWithStandardScoring):
         name: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
     ):
         super().__init__(
             name=name,
@@ -34,8 +36,9 @@ class ChimeraPower(PowerWithStandardScoring):
             reference_statblock="Chimera",
             power_level=power_level,
             icon=icon,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=datetime(2025, 4, 16),
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_chimera,
                 require_flying=True,
@@ -46,9 +49,13 @@ class ChimeraPower(PowerWithStandardScoring):
 
 class _DragonsBreath(ChimeraPower):
     def __init__(self):
-        super().__init__(name="Dragon's Breath", icon="dragon-breath")
+        super().__init__(
+            name="Dragon's Breath",
+            icon="dragon-breath",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = breath(
             name="Dragon's Breath",
             damage_type=DamageType.Fire,
@@ -63,9 +70,13 @@ class _DragonsBreath(ChimeraPower):
 
 class _QuarellingHeads(ChimeraPower):
     def __init__(self):
-        super().__init__(name="Quarrelling Heads", icon="hydra")
+        super().__init__(
+            name="Quarrelling Heads",
+            icon="hydra",
+            power_types=[PowerType.Buff, PowerType.Utility],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone.caption
         dragons_breath = feature_ref("Dragon's Breath")
 

@@ -5,12 +5,13 @@ from foe_foundry.utils import easy_multiple_of_five
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -27,6 +28,7 @@ class GhoulPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -35,9 +37,10 @@ class GhoulPower(PowerWithStandardScoring):
             theme="ghoul",
             reference_statblock="Ghoul",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
             icon=icon,
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_ghoul,
                 require_types=CreatureType.Undead,
@@ -54,9 +57,10 @@ class _Cannibal(GhoulPower):
             icon="eating",
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 20),
+            power_types=[PowerType.Healing],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(2 * stats.cr, min_val=5, max_val=50)
 
         feature = Feature(

@@ -6,9 +6,16 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class PoisonPower(PowerWithStandardScoring):
@@ -19,13 +26,15 @@ class PoisonPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Debuff],
             create_date=create_date,
             icon=icon,
             theme="poison",
@@ -68,10 +77,13 @@ class PoisonPower(PowerWithStandardScoring):
 class _PoisonousBurst(PoisonPower):
     def __init__(self):
         super().__init__(
-            name="Poisonous Burst", icon="carrion", source="SRD5.1 Ice Mephit"
+            name="Poisonous Burst",
+            icon="carrion",
+            source="SRD5.1 Ice Mephit",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(2 + stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
         distance = easy_multiple_of_five(stats.cr * 4, min_val=10, max_val=60)
@@ -91,10 +103,11 @@ class _ToxicPoison(PoisonPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             icon="poison-bottle",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2023, 11, 24),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         susceptible = conditions.Susceptible(DamageType.Poison)
         feature1 = Feature(
@@ -113,11 +126,12 @@ class _PoisonDart(PoisonPower):
             name="Poison Dart",
             source="Foe Foundry",
             icon="dart",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 3, 2),
             require_types=[CreatureType.Humanoid, CreatureType.Fey],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75 if stats.multiattack > 2 else 1.1)
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
@@ -140,10 +154,11 @@ class _WeakeningPoison(PoisonPower):
             name="Weakening Poison",
             source="Foe Foundry",
             icon="potion-of-madness",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 3, 2),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         weakened = conditions.Weakened(save_end_of_turn=False)
         feature = Feature(
@@ -162,10 +177,11 @@ class _PoisonousBlood(PoisonPower):
             name="Poisonous Blood",
             source="Foe Foundry",
             icon="foamy-disc",
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             create_date=datetime(2025, 3, 14),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -182,10 +198,11 @@ class _VenemousMiasma(PoisonPower):
             name="Venemous Miasma",
             source="Foe Foundry",
             icon="poison-gas",
+            power_types=[PowerType.Aura, PowerType.Debuff],
             create_date=datetime(2025, 3, 14),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dmg = int(stats.target_value(dpr_proportion=0.2).average)
         feature = Feature(
@@ -202,11 +219,12 @@ class _VileVomit(PoisonPower):
             name="Vile Vomit",
             source="Foe Foundry",
             icon="foamy-disc",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             create_date=datetime(2025, 3, 14),
             require_types=[CreatureType.Undead, CreatureType.Monstrosity],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
         dmg = stats.target_value(dpr_proportion=1.2)
         dc = stats.difficulty_class_easy

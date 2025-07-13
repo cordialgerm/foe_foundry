@@ -16,6 +16,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
+    PowerCategory,
     PowerType,
     PowerWithStandardScoring,
 )
@@ -30,6 +31,7 @@ class ChaoticPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Cultist",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -43,7 +45,7 @@ class ChaoticPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             theme="Chaotic",
             icon=icon,
@@ -51,6 +53,7 @@ class ChaoticPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -66,9 +69,10 @@ class _ChaoticSpace(ChaoticPower):
             icon="misdirection",
             power_level=LOW_POWER,
             require_cr=5,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         radius = easy_multiple_of_five(stats.cr * 5, min_val=10, max_val=45)
         distance = 30 if stats.cr <= 5 else 60
@@ -95,6 +99,7 @@ class _EldritchBeacon(ChaoticPower):
             power_level=HIGH_POWER,
             require_cr=5,
             require_callback=self.can_summon,
+            power_types=[PowerType.Summon],
         )
 
     def can_summon(self, c: BaseStatblock) -> bool:
@@ -110,7 +115,7 @@ class _EldritchBeacon(ChaoticPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("eldritch beacon"))
         beacon = Token(
             name="Eldritch Beacon", dc=stats.difficulty_class_token, charges=3

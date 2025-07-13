@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import Feature
+from ...power_types import PowerType
 from ...spells import illusion
 from ...statblocks import BaseStatblock
 from ..power import Power
@@ -36,9 +37,14 @@ IllusionistExpertSpells = (
 
 class _IllusionistWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Illusionist", icon="magic-trick", **kwargs)
+        super().__init__(
+            creature_name="Illusionist",
+            icon="magic-trick",
+            power_types=[PowerType.Magic, PowerType.Stealth, PowerType.Debuff],
+            **kwargs,
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return Projection.generate_features(stats)
 
 

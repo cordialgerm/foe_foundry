@@ -6,13 +6,14 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,13 +26,15 @@ class ShamanicPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.Utility],
             icon=icon,
             theme="shamanic",
             reference_statblock="Druid",
@@ -59,7 +62,7 @@ class _SpiritWalk(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(stats.hp.average * 0.25, min_val=5, max_val=100)
         invisible = conditions.Condition.Invisible.caption
         feature = Feature(
@@ -85,7 +88,7 @@ class _CommuneWithTheAncestors(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Commune with the Ancestors",
             action=ActionType.Reaction,
@@ -106,7 +109,7 @@ class _CommuneWithLand(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8)
         prone = conditions.Condition.Prone.caption
@@ -133,7 +136,7 @@ class _CommuneWithAir(ShamanicPower):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8)
         feature = Feature(

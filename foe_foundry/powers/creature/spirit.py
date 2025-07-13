@@ -8,12 +8,13 @@ from foe_foundry.utils import comma_separated, easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -28,6 +29,7 @@ class SpiritPower(PowerWithStandardScoring):
         name: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         reference_statblock: str = "Ghost",
         create_date: datetime | None = datetime(2025, 4, 20),
         **score_args,
@@ -39,7 +41,8 @@ class SpiritPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_spirit,
@@ -51,7 +54,12 @@ class SpiritPower(PowerWithStandardScoring):
 
 class _SpiritBeing(SpiritPower):
     def __init__(self):
-        super().__init__(name="Spirit Being", icon="invisible", power_level=LOW_POWER)
+        super().__init__(
+            name="Spirit Being",
+            icon="invisible",
+            power_level=LOW_POWER,
+            power_types=[PowerType.Defense],
+        )
         self.resistances = {
             DamageType.Fire,
             DamageType.Lightning,
@@ -80,7 +88,7 @@ class _SpiritBeing(SpiritPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature1 = Feature(
             name="Incorporeal",
             action=ActionType.Feature,
@@ -98,9 +106,14 @@ class _SpiritBeing(SpiritPower):
 
 class _Haunt(SpiritPower):
     def __init__(self):
-        super().__init__(name="Haunt", icon="haunting", power_level=LOW_POWER)
+        super().__init__(
+            name="Haunt",
+            icon="haunting",
+            power_level=LOW_POWER,
+            power_types=[PowerType.Magic, PowerType.Movement],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         cursed = conditions.Cursed()
         feature = Feature(
             name="Haunt",
@@ -115,10 +128,13 @@ class _Haunt(SpiritPower):
 class _SpiritStep(SpiritPower):
     def __init__(self):
         super().__init__(
-            name="Spirit Step", icon="ghost-ally", power_level=MEDIUM_POWER
+            name="Spirit Step",
+            icon="ghost-ally",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Movement, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         disengage = action_ref("Disengage")
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d4)
@@ -133,9 +149,14 @@ class _SpiritStep(SpiritPower):
 
 class _SpiritFlicker(SpiritPower):
     def __init__(self):
-        super().__init__(name="Spirit Flicker", icon="soul", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Spirit Flicker",
+            icon="soul",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Movement, PowerType.Defense],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spirit Flicker",
             action=ActionType.Reaction,
@@ -151,10 +172,11 @@ class _NameTheForgotten(SpiritPower):
             name="Name the Forgotten",
             icon="black-book",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff, PowerType.Movement],
             require_cr=2,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         invisibility = spell_ref("Invisibility")
         cursed = conditions.Cursed()
         feature = Feature(
@@ -169,10 +191,13 @@ class _NameTheForgotten(SpiritPower):
 class _GraspOfTheDead(SpiritPower):
     def __init__(self):
         super().__init__(
-            name="Grasp of the Dead", icon="raise-skeleton", power_level=MEDIUM_POWER
+            name="Grasp of the Dead",
+            icon="raise-skeleton",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d8)
         frozen = conditions.Frozen(dc=dc)
@@ -193,9 +218,10 @@ class _FeedOnLight(SpiritPower):
             reference_statblock="Shadow",
             icon="shadow-follower",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Environmental, PowerType.Healing],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(stats.hp.average * 0.15)
         feature = Feature(
             name="Feed on Light",
@@ -215,9 +241,10 @@ class _ShadowInvisibility(SpiritPower):
             reference_statblock="Shadow",
             icon="shadow-grasp",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Stealth],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         invisibility = spell_ref("Invisibility")
         feature = Feature(
             name="Shadow Invisibility",
@@ -235,9 +262,10 @@ class _DreadfulSilence(SpiritPower):
             reference_statblock="Banshee",
             icon="silenced",
             power_level=LOW_POWER,
+            power_types=[PowerType.Aura, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.2, force_die=Die.d6)
         feature = Feature(
             name="Dreadful Silence",
@@ -250,10 +278,13 @@ class _DreadfulSilence(SpiritPower):
 class _Posession(SpiritPower):
     def __init__(self):
         super().__init__(
-            name="Possession", icon="voodoo-doll", power_level=MEDIUM_POWER
+            name="Possession",
+            icon="voodoo-doll",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         cursed = conditions.Cursed()
         invisible = Condition.Invisible.caption

@@ -3,11 +3,12 @@ from math import ceil
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class SupportPower(PowerWithStandardScoring):
@@ -18,6 +19,7 @@ class SupportPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -28,13 +30,14 @@ class SupportPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             icon=icon,
             create_date=create_date,
             theme="Support",
             reference_statblock="Priest",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -46,9 +49,10 @@ class _Encouragement(SupportPower):
             icon="talk",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff, PowerType.Healing],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(
             int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
         )
@@ -78,9 +82,10 @@ class _Guidance(SupportPower):
             icon="three-friends",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Guidance",
             description=f"{stats.selfref.capitalize()} grants guidance to a friendly creature within 60 feet. \
@@ -98,9 +103,10 @@ class _Sanctuary(SupportPower):
             icon="church",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Sanctuary",
@@ -117,9 +123,10 @@ class _WardingBond(SupportPower):
             icon="chained-heart",
             source="Foe Foundry",
             create_date=datetime(2025, 3, 1),
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         boost = max(1, stats.attributes.proficiency // 3)
         feature = Feature(
             name="Warding Bond",

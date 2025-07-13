@@ -6,12 +6,13 @@ from foe_foundry.features import ActionType, Feature
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die, DieFormula
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -27,6 +28,7 @@ class WightPower(PowerWithStandardScoring):
         icon: str,
         source: str = "Foe Foundry",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = datetime(2025, 4, 12),
         **score_args,
     ):
@@ -37,7 +39,8 @@ class WightPower(PowerWithStandardScoring):
             reference_statblock="Wight",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=is_wight,
@@ -62,11 +65,12 @@ class _SoulChillingCommand(WightPower):
             name="Soul Chilling Command",
             icon="overlord-helm",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff],
             require_roles=MonsterRole.Leader,
             bonus_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(
             target=2 * stats.attributes.proficiency, force_die=Die.d6
         )
@@ -89,10 +93,11 @@ class _HeartFreezingGrasp(WightPower):
             name="Heart Freezing Grasp",
             icon="ice-spell-cast",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff, PowerType.Healing],
             bonus_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.8, force_die=Die.d6)
         dc = stats.difficulty_class
         frozen = conditions.Frozen(dc=dc)

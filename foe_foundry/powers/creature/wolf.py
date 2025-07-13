@@ -6,19 +6,25 @@ from foe_foundry.utils import easy_multiple_of_five
 
 from ...creature_types import CreatureType
 from ...damage import Condition
+from ...power_types import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
 
 class _WolfPower(PowerWithStandardScoring):
     def __init__(
-        self, name: str, icon: str, power_level: float = MEDIUM_POWER, **score_args
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+        **score_args,
     ):
         def require_callback(s: BaseStatblock) -> bool:
             return s.creature_subtype == "Wolf"
@@ -30,7 +36,8 @@ class _WolfPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Dire Wolf",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=datetime(2025, 3, 28),
             score_args=dict(
                 require_callback=require_callback,
@@ -42,9 +49,14 @@ class _WolfPower(PowerWithStandardScoring):
 
 class _SnappingJaws(_WolfPower):
     def __init__(self):
-        super().__init__(name="Snapping Jaws", icon="jawbone", power_level=MEDIUM_POWER)
+        super().__init__(
+            name="Snapping Jaws",
+            icon="jawbone",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         grappled = Condition.Grappled.caption
         prone = Condition.Prone.caption
         dc = stats.difficulty_class
@@ -66,10 +78,14 @@ class _SnappingJaws(_WolfPower):
 class _Howl(_WolfPower):
     def __init__(self):
         super().__init__(
-            name="Howl", icon="wolf-howl", power_level=MEDIUM_POWER, require_cr=1
+            name="Howl",
+            icon="wolf-howl",
+            power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff],
+            require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(number=stats.cr * 3, min_val=5, max_val=50)
 
         feature = Feature(

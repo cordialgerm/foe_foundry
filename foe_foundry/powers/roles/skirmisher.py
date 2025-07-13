@@ -6,11 +6,18 @@ from foe_foundry.references import action_ref
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...skills import Skills, Stats
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class SkirmisherPower(PowerWithStandardScoring):
@@ -23,6 +30,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         requires_tactics: bool = True,
         reference_statblock: str = "Goblin",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def ideal_skirmisher(c: BaseStatblock) -> bool:
@@ -45,13 +53,14 @@ class SkirmisherPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             create_date=create_date,
             icon=icon,
             theme="Skirmisher",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -64,9 +73,10 @@ class _Skirmish(SkirmisherPower):
             icon="fishing-net",
             requires_tactics=True,
             require_types=CreatureType.Humanoid,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         net_size = 10 if stats.cr <= 4 else 15
         net_range = 60 if stats.size >= Size.Large else 30
@@ -91,9 +101,10 @@ class _HarrassingRetreat(SkirmisherPower):
             source="Foe Foundry",
             icon="arrowed",
             requires_tactics=True,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         range = (
             10 if len(stats.attack_types.intersection(AttackType.AllRanged())) else 5
         )
@@ -123,9 +134,10 @@ class _Speedy(SkirmisherPower):
             source="Foe Foundry",
             icon="fast-forward-button",
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Speedy",
             action=ActionType.Feature,
@@ -149,9 +161,10 @@ class _NimbleEscape(SkirmisherPower):
             source="SRD5.1 Goblin",
             reference_statblock="Goblin",
             icon="exit-door",
+            power_types=[PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hide = action_ref("Hide")
         disengage = action_ref("Disengage")
         feature = Feature(

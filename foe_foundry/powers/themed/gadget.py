@@ -6,11 +6,18 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from .. import flags
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class GadgetPower(PowerWithStandardScoring):
@@ -21,6 +28,7 @@ class GadgetPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -43,8 +51,9 @@ class GadgetPower(PowerWithStandardScoring):
             icon=icon,
             theme="gadget",
             reference_statblock="Thug",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Utility, PowerType.Attack],
             score_args=standard_score_args,
         )
 
@@ -57,12 +66,13 @@ class _PotionOfHealing(GadgetPower):
             source="SRD5.1 Healing Potion",
             power_level=LOW_POWER,
             require_no_flags=flags.HAS_HEALING,
+            power_types=[PowerType.Healing],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return super().modify_stats_inner(stats).with_flags(flags.HAS_HEALING)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr <= 3:
             item = "Potion of Healing"
             healing = DieFormula.from_expression("2d4 + 2")
@@ -95,10 +105,11 @@ class _SmokeBomb(GadgetPower):
             source="Foe Foundry",
             icon="smoke-bomb",
             power_level=LOW_POWER,
+            power_types=[PowerType.Stealth],
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = easy_multiple_of_five(5 + stats.cr / 5, min_val=10, max_val=30)
         rounds = DieFormula.from_expression("1d4 + 2")
 
@@ -133,12 +144,13 @@ class _Net(GadgetPower):
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_cr=min_cr,
             require_callback=within_cr_range,
+            power_types=[PowerType.Debuff],
         )
         self.ac = ac
         self.hp = hp
         self.additional = additional
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         distance = easy_multiple_of_five(stats.cr, min_val=5, max_val=15)
         dmg = int(ceil(0.25 * stats.attack.average_damage))
@@ -167,9 +179,10 @@ class _Grenade(GadgetPower):
             icon="bundle-grenade",
             require_attack_types=AttackType.All() - AttackType.AllSpell(),
             require_damage=dmg_type,
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.75, suggested_die=Die.d6)
         radius = 15
         distance = 30

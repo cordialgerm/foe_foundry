@@ -4,10 +4,17 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...skills import Skills
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class DefenderPower(PowerWithStandardScoring):
@@ -19,6 +26,7 @@ class DefenderPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Shield Guardian",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -30,13 +38,14 @@ class DefenderPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             power_level=power_level,
             source=source,
             icon=icon,
             create_date=create_date,
             theme="Defender",
             reference_statblock=reference_statblock,
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -48,9 +57,10 @@ class _Protection(DefenderPower):
             source="A5E SRD Protection",
             icon="armor-vest",
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Protection",
             description=f"When an ally within 5 feet is targeted by an attack or spell, {stats.roleref} can make themselves the intended target of the attack or spell instead.",
@@ -65,9 +75,10 @@ class _Taunt(DefenderPower):
             name="Taunt",
             source="A5E SRD Taunting Smite",
             icon="shouting",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Taunt",
             description="On a hit, the target has disadvantage on attack rolls against any other creature until the end of its next turn.",
@@ -85,6 +96,7 @@ class _ZoneOfControl(DefenderPower):
             icon="nested-hexagons",
             source="Foe Foundry",
             power_level=LOW_POWER,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -94,7 +106,7 @@ class _ZoneOfControl(DefenderPower):
         stats = stats.copy(attributes=new_attributes)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Zone of Control",
@@ -116,9 +128,10 @@ class _SpellReflection(DefenderPower):
                 CreatureType.Fiend,
                 CreatureType.Monstrosity,
             },
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spell Reflection",
             action=ActionType.Reaction,

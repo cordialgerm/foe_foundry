@@ -5,8 +5,15 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class FearsomePower(PowerWithStandardScoring):
@@ -17,17 +24,19 @@ class FearsomePower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             theme="fearsome",
             reference_statblock="Chimera",
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types or [PowerType.Debuff, PowerType.Aura],
             score_args=dict(
                 require_types={
                     CreatureType.Dragon,
@@ -50,17 +59,19 @@ class HorrifyingPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             theme="fearsome",
             reference_statblock="Banshee",
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types or [PowerType.Debuff, PowerType.Magic],
             score_args=dict(
                 require_types=[CreatureType.Aberration, CreatureType.Undead],
                 require_cr=1,
@@ -74,9 +85,14 @@ class HorrifyingPower(PowerWithStandardScoring):
 
 class _FearsomeRoar(FearsomePower):
     def __init__(self):
-        super().__init__(name="Fearsome Roar", icon="lion", source="Foe Foundry")
+        super().__init__(
+            name="Fearsome Roar",
+            icon="lion",
+            source="Foe Foundry",
+            power_types=[PowerType.Debuff, PowerType.AreaOfEffect],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         feature = Feature(
@@ -93,9 +109,14 @@ class _FearsomeRoar(FearsomePower):
 
 class _HorrifyingPresence(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Horrifying Presence", icon="dread", source="Foe Foundry")
+        super().__init__(
+            name="Horrifying Presence",
+            icon="dread",
+            source="Foe Foundry",
+            power_types=[PowerType.Debuff, PowerType.AreaOfEffect],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         feature = Feature(
@@ -112,9 +133,14 @@ class _HorrifyingPresence(HorrifyingPower):
 
 class _HorrifyingVisage(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Horrifying Visage", icon="terror", source="SRD5.1 Ghost")
+        super().__init__(
+            name="Horrifying Visage",
+            icon="terror",
+            source="SRD5.1 Ghost",
+            power_types=[PowerType.Debuff, PowerType.Aura],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         aging = f"1d4 x {5 if stats.cr < 4 else 10} years"
         dc = stats.difficulty_class
         frightened = Condition.Frightened
@@ -133,9 +159,14 @@ class _HorrifyingVisage(HorrifyingPower):
 
 class _DreadGaze(HorrifyingPower):
     def __init__(self):
-        super().__init__(name="Dread Gaze", icon="overlord-helm", source="SRD5.1 Mummy")
+        super().__init__(
+            name="Dread Gaze",
+            icon="overlord-helm",
+            source="SRD5.1 Mummy",
+            power_types=[PowerType.Debuff, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         frightened = Condition.Frightened
         paralyzed = Condition.Paralyzed
@@ -160,9 +191,10 @@ class _MindShatteringScream(HorrifyingPower):
             icon="screaming",
             source="SRD5.1 Banshee",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(5 + 2.5 * stats.cr, force_die=Die.d6)
         dc = stats.difficulty_class
         frightened = Condition.Frightened
@@ -182,10 +214,13 @@ class _MindShatteringScream(HorrifyingPower):
 class _NightmarishVisions(HorrifyingPower):
     def __init__(self):
         super().__init__(
-            name="Nightmarish Visions", icon="dread-skull", source="Foe Foundry"
+            name="Nightmarish Visions",
+            icon="dread-skull",
+            source="Foe Foundry",
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(max(5, 1.5 * stats.cr), force_die=Die.d6)
         dc = stats.difficulty_class_easy
         bleeding = conditions.Bleeding(dmg, damage_type=DamageType.Psychic)

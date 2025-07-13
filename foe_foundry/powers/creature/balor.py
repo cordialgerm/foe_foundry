@@ -8,6 +8,7 @@ from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
+    PowerCategory,
     PowerType,
     PowerWithStandardScoring,
 )
@@ -25,6 +26,7 @@ class BalorPower(PowerWithStandardScoring):
         icon: str = "horned-skull",
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = (
@@ -35,12 +37,13 @@ class BalorPower(PowerWithStandardScoring):
             name=name,
             source=source,
             icon=icon,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
             create_date=create_date,
             theme="Balor",
             reference_statblock="Balor",
             score_args=standard_score_args,
+            power_types=power_types,
         )
 
 
@@ -51,9 +54,10 @@ class _FlameWhip(BalorPower):
             source="Foe Foundry",
             icon="whip",
             create_date=datetime(2025, 3, 3),
+            power_types=[PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.3 if stats.multiattack >= 2 else 0.8)
         dc = stats.difficulty_class
         prone = Condition.Prone

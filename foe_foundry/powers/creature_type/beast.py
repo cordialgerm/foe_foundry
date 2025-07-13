@@ -9,6 +9,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, Condition
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import summoning
 from ..power import (
@@ -17,7 +18,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -29,6 +30,7 @@ class BeastPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         reference_statblock: str = "Dire Wolf",
         create_date: datetime | None = None,
         **score_args,
@@ -37,10 +39,11 @@ class BeastPower(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types,
             theme="Beast",
             icon=icon,
             reference_statblock=reference_statblock,
@@ -54,11 +57,12 @@ class _FeedingFrenzy(BeastPower):
             name="Feeding Frenzy",
             source="Foe Foundry",
             icon="gluttony",
+            power_types=[PowerType.Movement, PowerType.Attack],
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Feeding Frenzy",
             action=ActionType.BonusAction,
@@ -79,12 +83,13 @@ class _BestialRampage(BeastPower):
             name="Bestial Rampage",
             source="Foe Foundry",
             icon="wolverine-claws",
+            power_types=[PowerType.Movement, PowerType.Attack],
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bestial Rampage",
             action=ActionType.Reaction,
@@ -107,11 +112,12 @@ class _Gore(BeastPower):
             name="Gore",
             source="SRD 5.1 Minotaur",
             icon="charging-bull",
+            power_types=[PowerType.Movement, PowerType.AreaOfEffect, PowerType.Attack],
             reference_statblock="Giant Boar",
             attack_names=["-", natural_attacks.Horns],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         bleeding_damage = stats.target_value(target=0.5, force_die=Die.d6)
@@ -140,10 +146,11 @@ class _Packlord(BeastPower):
             icon="wolf-head",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Summon],
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.speed.fly:
             options = summoning.FlyingBeasts
         elif stats.speed.swim:
@@ -173,9 +180,10 @@ class _WildInstinct(BeastPower):
             source="Foe Foundry",
             icon="shark-bite",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         feature = Feature(
             name="Wild Instinct",
@@ -193,10 +201,11 @@ class _ScentOfWeakness(BeastPower):
             source="Foe Foundry",
             icon="sniffing-dog",
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
             require_attack_types=AttackType.MeleeNatural,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bloodied = Condition.Bloodied.caption
         feature = Feature(
             name="Scent of Weakness",

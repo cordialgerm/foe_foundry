@@ -5,11 +5,12 @@ from ...creature_types import CreatureType
 from ...damage import Condition
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -19,7 +20,13 @@ def is_manticore(s: BaseStatblock) -> bool:
 
 
 class ManticorePower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+    ):
         super().__init__(
             name=name,
             source="Foe Foundry",
@@ -27,7 +34,8 @@ class ManticorePower(PowerWithStandardScoring):
             reference_statblock="Manticore",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=datetime(2025, 4, 15),
             score_args=dict(
                 require_callback=is_manticore,
@@ -39,9 +47,13 @@ class ManticorePower(PowerWithStandardScoring):
 
 class _SpikeVolley(ManticorePower):
     def __init__(self):
-        super().__init__(name="Spike Volley", icon="spiked-tail")
+        super().__init__(
+            name="Spike Volley",
+            icon="spiked-tail",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.75, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         blinded = Condition.Blinded.caption
@@ -60,9 +72,11 @@ class _SpikeVolley(ManticorePower):
 
 class _CruelJeer(ManticorePower):
     def __init__(self):
-        super().__init__(name="Cruel Jeer", icon="morbid-humour")
+        super().__init__(
+            name="Cruel Jeer", icon="morbid-humour", power_types=[PowerType.Debuff]
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Cruel Jeer",

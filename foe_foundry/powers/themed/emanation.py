@@ -10,10 +10,11 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class EmanationPower(PowerWithStandardScoring):
@@ -23,6 +24,7 @@ class EmanationPower(PowerWithStandardScoring):
         icon: str = "hexes",
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Mage",
+        power_types: List[PowerType] | None = None,
         **kwargs,
     ):
         new_callback = kwargs.pop("require_callback", None)
@@ -53,12 +55,13 @@ class EmanationPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source="Foe Foundry",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             theme="emanation",
             icon=icon,
             reference_statblock=reference_statblock,
             create_date=datetime(2025, 3, 9),
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.AreaOfEffect],
             score_args=score_args,
         )
 
@@ -76,7 +79,7 @@ class _TimeRift(EmanationPower):
             bonus_damage=DamageType.Force,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Time Rift", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(target=0.7, force_die=Die.d6)
         feature = Feature(
@@ -96,7 +99,7 @@ class _RunicWards(EmanationPower):
     def __init__(self):
         super().__init__(name="Runic Wards", require_roles=MonsterRole.Defender)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Runic Wards", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Runic Wards",
@@ -136,7 +139,7 @@ class _SummonersRift(EmanationPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("summoners rift"))
 
         rift = Token(name="Summoner's Rift", dc=stats.difficulty_class_token, charges=2)
@@ -165,7 +168,7 @@ class _RecombinationMatrix(EmanationPower):
             bonus_damage=DamageType.Force,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         ac = min(max(round(stats.cr / 3), 1), 5)
 
         token = Token(
@@ -192,7 +195,7 @@ class _HypnoticLure(EmanationPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Hypnotic Lure", dc=stats.difficulty_class_token, charges=3)
         feature = Feature(
             name="Hypnotic Lure",
@@ -217,7 +220,7 @@ class _IllusoryReality(EmanationPower):
             ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
             name="Illusory Reality", dc=stats.difficulty_class_token, charges=3
         )
@@ -257,7 +260,7 @@ class _ShadowRift(EmanationPower):
         except Exception:
             return None
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         description = self._summon_formula(stats, stats.create_rng("shadow rift"))
 
         rift = Token(name="Shadow Rift", dc=stats.difficulty_class_token, charges=2)
@@ -284,7 +287,7 @@ class _RagingFlames(EmanationPower):
             require_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Raging Flames", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -311,7 +314,7 @@ class _BitingFrost(EmanationPower):
             require_damage=DamageType.Cold,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Biting Frost", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -338,7 +341,7 @@ class _LashingWinds(EmanationPower):
             require_damage=DamageType.Lightning,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Lashing Winds", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
 
@@ -365,7 +368,7 @@ class _FetidMiasma(EmanationPower):
             require_damage=DamageType.Poison,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(name="Fetid Miasma", dc=stats.difficulty_class_token, charges=3)
         dmg = stats.target_value(dpr_proportion=0.25, force_die=Die.d10)
         poisoned = Condition.Poisoned.caption

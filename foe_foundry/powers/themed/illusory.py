@@ -5,6 +5,7 @@ from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -13,7 +14,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -26,6 +27,7 @@ class Illusory(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def humanoid_is_magical(c: BaseStatblock) -> bool:
@@ -43,11 +45,12 @@ class Illusory(PowerWithStandardScoring):
             name=name,
             source=source,
             create_date=create_date,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             theme="illusory",
             icon=icon,
             reference_statblock="Adult Green Dragon",
+            power_types=power_types or [PowerType.Magic, PowerType.Stealth],
             score_args=dict(
                 require_types={
                     CreatureType.Fey,
@@ -78,7 +81,7 @@ class _Projection(Illusory):
             name="Projection", icon="invisible", source="SRD5.1 Project Image"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Projection",
@@ -101,7 +104,7 @@ class _SpectralDuplicate(Illusory):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Spectral Duplicate",
             action=ActionType.BonusAction,
@@ -119,7 +122,7 @@ class _MirrorImage(Illusory):
             name="Mirror Image", icon="backup", source="SRD5.1 Mirror Image"
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         ac = 10 + stats.attributes.stat_mod(Stats.DEX)
 
         feature = Feature(
@@ -140,7 +143,7 @@ class _HypnoticPattern(Illusory):
             require_cr=5,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         feature = Feature(
@@ -158,7 +161,7 @@ class _ReverseFortune(Illusory):
     def __init__(self):
         super().__init__(name="Reverse Fortune", icon="dice-fire", source="Foe Foundry")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Reverse Fortune",
             action=ActionType.Reaction,
@@ -178,7 +181,7 @@ class _PhantomMirage(Illusory):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         bloodied = Condition.Bloodied.caption
         feature = Feature(
             name="Phantom Mirage",

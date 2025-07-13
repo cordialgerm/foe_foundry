@@ -4,13 +4,14 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -22,6 +23,7 @@ class SkeletalPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -39,7 +41,8 @@ class SkeletalPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Skeleton",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=create_date,
             score_args=dict(
                 require_callback=require_callback,
@@ -60,12 +63,13 @@ class _SkeletalReconstruction(SkeletalPower):
             power_level=HIGH_POWER,
             icon="raise-skeleton",
             source="Foe Foundry",
+            power_types=[PowerType.Summon],
             create_date=datetime(2025, 2, 19),
             require_callback=is_minion,
             bonus_roles=MonsterRole.Defender,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Skeletal Reconstruction",
             action=ActionType.Feature,
@@ -82,10 +86,11 @@ class _BoneShards(SkeletalPower):
             power_level=MEDIUM_POWER,
             icon="edge-crack",
             source="Foe Foundry",
+            power_types=[PowerType.AreaOfEffect, PowerType.Defense],
             create_date=datetime(2025, 2, 19),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         damage = stats.target_value(target=0.75)
 
@@ -106,11 +111,12 @@ class _LoathsomeRattle(SkeletalPower):
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
             icon="rattlesnake",
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Controller, MonsterRole.Skirmisher],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frightened = Condition.Frightened
 
@@ -131,11 +137,12 @@ class _BoneSpear(SkeletalPower):
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
             icon="spine-arrow",
+            power_types=[PowerType.Attack, PowerType.Movement],
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.7 * min(stats.multiattack, 2))
 
         feature = Feature(
@@ -155,12 +162,13 @@ class _BoneStorm(SkeletalPower):
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
             icon="striking-splinter",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Artillery, MonsterRole.Controller],
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=1.2 * min(stats.multiattack, 2))
 
         if stats.cr < 1:
@@ -189,12 +197,13 @@ class _BoneWall(SkeletalPower):
             power_level=MEDIUM_POWER,
             source="Foe Foundry",
             icon="stakes-fence",
+            power_types=[PowerType.Environmental, PowerType.AreaOfEffect],
             create_date=datetime(2025, 2, 19),
             bonus_roles=[MonsterRole.Defender, MonsterRole.Controller],
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.5 * min(stats.multiattack, 2))
 
         if stats.cr < 1:

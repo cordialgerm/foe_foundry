@@ -5,21 +5,30 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from .. import flags
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class TeleportationPower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType],
         **score_args,
     ):
         existing_callback = score_args.pop("require_callback", None)
@@ -44,7 +53,7 @@ class TeleportationPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Transmuter Mage",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_callback=humanoid_is_caster,
@@ -59,6 +68,7 @@ class TeleportationPower(PowerWithStandardScoring):
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
             )
             | score_args,
+            power_types=power_types,
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -68,9 +78,14 @@ class TeleportationPower(PowerWithStandardScoring):
 
 class _BendSpace(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Bend Space", icon="thrust-bend", source="Foe Foundry")
+        super().__init__(
+            name="Bend Space",
+            icon="thrust-bend",
+            source="Foe Foundry",
+            power_types=[PowerType.Movement, PowerType.Defense],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bend Space",
             action=ActionType.Reaction,
@@ -92,9 +107,10 @@ class _MistyStep(TeleportationPower):
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
             require_no_flags={flags.HAS_TELEPORT, flags.NO_TELEPORT},
+            power_types=[PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 7 else 60
         uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
 
@@ -114,9 +130,14 @@ class _MistyStep(TeleportationPower):
 
 class _Scatter(TeleportationPower):
     def __init__(self):
-        super().__init__(name="Scatter", icon="misdirection", source="Foe Foundry")
+        super().__init__(
+            name="Scatter",
+            icon="misdirection",
+            source="Foe Foundry",
+            power_types=[PowerType.Movement, PowerType.Debuff],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = 30 if stats.cr <= 6 else 60
         dc = stats.difficulty_class
         count = int(max(2, ceil(stats.cr / 3)))

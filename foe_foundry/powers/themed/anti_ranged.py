@@ -11,7 +11,13 @@ from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class _AdaptiveCamouflage(PowerWithStandardScoring):
@@ -28,7 +34,7 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
 
         super().__init__(
             name="Adaptive Camouflage",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=HIGH_POWER,
             source="Foe Foundry",
             theme="Anti-Ranged",
@@ -36,9 +42,10 @@ class _AdaptiveCamouflage(PowerWithStandardScoring):
             reference_statblock="Basilisk",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Stealth, PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Adaptive Camouflage",
@@ -58,16 +65,17 @@ class _ArrowWard(PowerWithStandardScoring):
 
         super().__init__(
             name="Arrow Ward",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="arrows-shield",
             reference_statblock="Shield Guardian",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Arrow Ward",
             action=ActionType.Reaction,
@@ -87,16 +95,17 @@ class _DeflectMissile(PowerWithStandardScoring):
 
         super().__init__(
             name="Deflect Missile",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="SRD5.1 Monk",
             theme="Anti-Ranged",
             icon="divert",
             reference_statblock="Warrior",
             create_date=datetime(2023, 11, 28),
             score_args=score_args,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reduction = easy_multiple_of_five(
             stats.attributes.stat_mod(Stats.DEX) + 2 * stats.attributes.proficiency
         )
@@ -112,7 +121,7 @@ class _HardToPinDown(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Hard to Pin Down",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="fast-forward-button",
@@ -123,9 +132,10 @@ class _HardToPinDown(PowerWithStandardScoring):
                 require_stats=Stats.DEX,
                 require_attack_types=AttackType.AllMelee(),
             ),
+            power_types=[PowerType.Defense, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hard to Pin Down",
             action=ActionType.Feature,
@@ -146,7 +156,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
 
             super().__init__(
                 name=name,
-                power_type=PowerType.Theme,
+                power_category=PowerCategory.Theme,
                 power_level=HIGH_POWER,
                 source="Foe Foundry",
                 theme="Anti-Ranged",
@@ -154,6 +164,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 reference_statblock="Fire Elemental",
                 create_date=datetime(2023, 11, 28),
                 score_args=score_args,
+                power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             )
 
         def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -161,7 +172,7 @@ def _EyeOfTheStormPowers() -> List[Power]:
                 stats = stats.copy(secondary_damage_type=self.damage_type)
             return stats
 
-        def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+        def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
             dmg = math.ceil(stats.cr / 2.0)
             dmg_type = self.damage_type
             feature = Feature(
@@ -186,7 +197,7 @@ class _Overchannel(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Overchannel",
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source="Foe Foundry",
             theme="Anti-Ranged",
             icon="charging",
@@ -196,6 +207,7 @@ class _Overchannel(PowerWithStandardScoring):
             score_args=dict(
                 require_attack_types=AttackType.AllSpell(),
             ),
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -208,7 +220,7 @@ class _Overchannel(PowerWithStandardScoring):
         else:
             return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overchannel",
             action=ActionType.BonusAction,

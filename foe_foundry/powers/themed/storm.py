@@ -5,8 +5,15 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, Shocked
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class StormPower(PowerWithStandardScoring):
@@ -17,6 +24,7 @@ class StormPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -26,7 +34,8 @@ class StormPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Storm Giant",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.AreaOfEffect, PowerType.Attack],
             create_date=create_date,
             score_args=dict(
                 require_types={
@@ -57,7 +66,7 @@ class _TempestSurge(StormPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=2.5, force_die=Die.d10)
         shocked = Shocked()
         dc = stats.difficulty_class
@@ -83,7 +92,7 @@ class _StormcallersFury(StormPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         dmg = stats.target_value(target=1.5, force_die=Die.d10)
 

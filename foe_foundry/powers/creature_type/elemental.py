@@ -6,13 +6,14 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Burning, Condition, DamageType, Dazed, Frozen, Shocked
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import summoning
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
     MEDIUM_POWER,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -29,6 +30,7 @@ class ElementalPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -39,8 +41,9 @@ class ElementalPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             source=source,
             create_date=create_date,
             theme="Elemental",
@@ -64,11 +67,12 @@ class _DamagingAura(ElementalPower):
             source="Foe Foundry",
             require_damage=damage_type,
             icon=icon,
+            power_types=[PowerType.Environmental],
         )
         self.name = name
         self.damage_type = damage_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = DieFormula.target_value(stats.cr)
 
         feature = Feature(
@@ -90,6 +94,7 @@ class _ElementalAffinity(ElementalPower):
             power_level=LOW_POWER,
             require_damage=damage_type,
             icon=icon,
+            power_types=[PowerType.Defense],
         )
         self.damage_type = damage_type
 
@@ -104,7 +109,7 @@ class _ElementalAffinity(ElementalPower):
 
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         upgrade_to_immunity = (
             self.damage_type in stats.damage_immunities
             or self.damage_type in stats.damage_resistances
@@ -131,10 +136,11 @@ class _ElementalSmite(ElementalPower):
             require_damage=dmg_type,
             icon="saber-slash",
             require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
         self.dmg_type = dmg_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg_target = 0.5
         poisoned = Condition.Poisoned
@@ -185,10 +191,11 @@ class _ElementalBurst(ElementalPower):
             source="Foe Foundry",
             icon=icon,
             require_damage=damage_type,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
         self.damage_type = damage_type
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = int(ceil(stats.cr / 5))
         dmg = stats.target_value(target=0.75)
         damage_type = self.damage_type
@@ -213,9 +220,10 @@ class _ElementalFireball(ElementalPower):
             icon="fireball",
             require_damage=DamageType.Fire,
             power_level=HIGH_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Fireball"
         dc = stats.difficulty_class
         dmg_type = DamageType.Fire
@@ -237,9 +245,10 @@ class _AcidicBlast(ElementalPower):
             icon="acid",
             require_damage=DamageType.Acid,
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Acidic Blast"
         dc = stats.difficulty_class
         dmg_type = DamageType.Acid
@@ -272,9 +281,10 @@ class _ConeOfCold(ElementalPower):
             icon="icicles-fence",
             require_damage=DamageType.Cold,
             power_level=HIGH_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Cone of Cold"
         dc = stats.difficulty_class
         dmg_type = DamageType.Cold
@@ -300,9 +310,10 @@ class _LightningBolt(ElementalPower):
             icon="lightning-branches",
             require_damage=DamageType.Lightning,
             power_level=HIGH_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Lightning Bolt"
         dc = stats.difficulty_class
         dmg_type = DamageType.Lightning
@@ -328,9 +339,14 @@ class _PoisonCloud(ElementalPower):
             icon="poison-gas",
             require_damage=DamageType.Poison,
             power_level=HIGH_POWER,
+            power_types=[
+                PowerType.AreaOfEffect,
+                PowerType.Attack,
+                PowerType.Environmental,
+            ],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Poison Cloud"
         dc = stats.difficulty_class
         dmg_type = DamageType.Poison
@@ -359,9 +375,10 @@ class _Thunderwave(ElementalPower):
             icon="rolling-energy",
             require_damage=DamageType.Thunder,
             power_level=HIGH_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         name = "Thunderwave"
         dc = stats.difficulty_class
         dmg_type = DamageType.Thunder
@@ -390,9 +407,10 @@ class _ElementalReplication(ElementalPower):
             power_level=HIGH_POWER,
             require_secondary_damage_type=True,
             require_cr=4.0,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         rng = stats.create_rng("elemental replication")
         _, _, description = summoning.determine_summon_formula(
             summoner=stats.secondary_damage_type,

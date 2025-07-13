@@ -5,6 +5,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -12,7 +13,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -24,17 +25,19 @@ class OozePower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
         standard_score_args = dict(require_types=CreatureType.Ooze, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             icon=icon,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types,
             theme="Ooze",
             reference_statblock="Gelatinous Cube",
             score_args=standard_score_args,
@@ -50,9 +53,10 @@ class _EngulfInSlime(OozePower):
             create_date=datetime(2023, 11, 23),
             require_size=Size.Large,
             bonus_damage=DamageType.Acid,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         swallowed = conditions.Swallowed(
             damage=stats.target_value(target=0.75, force_die=Die.d6),
             damage_type=DamageType.Acid,
@@ -75,9 +79,10 @@ class _Quicksand(OozePower):
             icon="quicksand",
             create_date=datetime(2023, 11, 23),
             power_level=HIGH_POWER,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         restrained = Condition.Restrained
         grappled = Condition.Grappled
@@ -105,9 +110,10 @@ class _Split(OozePower):
             source="SRD 5.1 Ochre Jelly",
             power_level=HIGH_POWER,
             require_size=Size.Medium,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Split",
             action=ActionType.Reaction,
@@ -123,9 +129,10 @@ class _Transparent(OozePower):
             icon="invisible",
             source="SRD5.1 Gelatinous Cube",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.Stealth],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Transparent",
             action=ActionType.Feature,
@@ -144,9 +151,10 @@ class _LeechingGrasp(OozePower):
             create_date=datetime(2023, 11, 22),
             power_level=HIGH_POWER,
             bonus_damage=DamageType.Necrotic,
+            power_types=[PowerType.Attack, PowerType.Healing],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=0.5, suggested_die=Die.d6)
         bleeding = conditions.Bleeding(damage=dmg, damage_type=DamageType.Necrotic)
@@ -169,9 +177,10 @@ class _SlimeSpray(OozePower):
             source="Foe Foundry",
             icon="spray",
             bonus_damage=DamageType.Acid,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.5, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled

@@ -7,6 +7,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Bleeding, Condition, DamageType, Swallowed
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
@@ -15,7 +16,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -28,6 +29,7 @@ class MonstrousPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -36,9 +38,10 @@ class MonstrousPower(PowerWithStandardScoring):
             theme="monstrous",
             reference_statblock="Manticore",
             icon=icon,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
+            power_types=power_types or [PowerType.Attack],
             score_args=dict(
                 require_types={CreatureType.Monstrosity, CreatureType.Beast}
             )
@@ -55,7 +58,7 @@ class _Constriction(MonstrousPower):
             attack_names=["-", natural.Slam, natural.Tail],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reach = 5 if stats.size <= Size.Medium else 10
         dc = stats.difficulty_class
         dmg = DieFormula.target_value(max(2, ceil(stats.cr)), force_die=Die.d4)
@@ -88,7 +91,7 @@ class _Swallow(MonstrousPower):
             attack_names={"-", natural.Bite},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -119,7 +122,7 @@ class _Pounce(MonstrousPower):
             name="Pounce", icon="pounce", source="SRD5.1 Panther", power_level=LOW_POWER
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
         feature = Feature(
@@ -150,7 +153,7 @@ class _Corrosive(MonstrousPower):
             stats = stats.copy(secondary_damage_type=DamageType.Acid)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = int(ceil(max(5, 2 * stats.cr)))
         feature = Feature(
@@ -176,7 +179,7 @@ class _LingeringWound(MonstrousPower):
             attack_names=[natural.Bite, natural.Claw, natural.Horns],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = max(10, min(15, stats.difficulty_class_easy))
         dmg = stats.target_value(target=0.75, force_die=Die.d6)
         bleeding = Bleeding(damage=dmg, dc=dc)
@@ -194,7 +197,7 @@ class _Rampage(MonstrousPower):
     def __init__(self):
         super().__init__(name="Rampage", icon="shattered-glass", source="SRD5.1 Gnoll")
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Rampage",
             action=ActionType.Reaction,
@@ -214,7 +217,7 @@ class _JawClamp(MonstrousPower):
             attack_names=["-", natural.Bite],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
         restrained = Condition.Restrained
@@ -240,7 +243,7 @@ class _Frenzy(MonstrousPower):
             require_attack_types=AttackType.AllMelee(),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Frenzy",
             action=ActionType.Reaction,
@@ -261,7 +264,7 @@ class _TearApart(MonstrousPower):
             attack_names=["-", natural.Claw],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         grappled = Condition.Grappled
         feature1 = Feature(

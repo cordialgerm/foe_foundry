@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from .. import flags
@@ -16,7 +17,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -42,6 +43,7 @@ class FeyPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -49,8 +51,9 @@ class FeyPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             score_args=standard_score_args,
@@ -67,12 +70,13 @@ class _FaerieStep(FeyPower):
             icon="teleport",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return super().modify_stats_inner(stats).with_flags(flags.HAS_TELEPORT)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         distance = stats.speed.walk
         feature = Feature(
             name="Faerie Step",
@@ -89,12 +93,13 @@ class _FaePresence(FeyPower):
             source="Foe Foundry",
             icon="unicorn",
             create_date=datetime(2023, 11, 21),
+            power_types=[PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         charmed = Condition.Charmed
         feature = Feature(
@@ -114,12 +119,13 @@ class _BloodContract(FeyPower):
             power_level=HIGH_POWER,
             create_date=datetime(2023, 11, 21),
             bonus_damage=DamageType.Necrotic,
+            power_types=[PowerType.Debuff],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_cursed_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.5, suggested_die=Die.d8)
         healing = easy_multiple_of_five(dmg.average, min_val=5, max_val=45)
         dc = stats.difficulty_class
@@ -144,12 +150,13 @@ class _FaeCounterspell(FeyPower):
             power_level=HIGH_POWER,
             require_stats=Stats.INT,
             bonus_damage=DamageType.Psychic,
+            power_types=[PowerType.Attack, PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=0.75, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
         feature = Feature(
@@ -171,9 +178,10 @@ class _Awaken(FeyPower):
             icon="deku-tree",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.cr >= 5:
             creature = creature_ref("Awakened Tree")
             formula = DieFormula.target_value(1 + stats.cr / 4, force_die=Die.d4)
@@ -199,12 +207,13 @@ class _FaeBargain(FeyPower):
             icon="trade",
             power_level=HIGH_POWER,
             require_cr=4,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         return as_psychic_fey(stats)
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uncommon = 10
         rare = 20
         very_rare = 40
@@ -234,9 +243,10 @@ class _DanceTune(FeyPower):
             icon="ballerina-shoes",
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Dance Tune",
@@ -256,9 +266,10 @@ class _ShadowyDoppelganger(FeyPower):
             source="Foe Foundry",
             icon="shadow-follower",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         hp = easy_multiple_of_five(1.25 * stats.cr, min_val=5)
 

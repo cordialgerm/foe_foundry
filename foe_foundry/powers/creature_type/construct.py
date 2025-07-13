@@ -12,6 +12,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -21,7 +22,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,6 +34,7 @@ class ConstructPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         reference_statblock: str = "Stone Golem",
         create_date: datetime | None = None,
         **score_args,
@@ -40,9 +42,10 @@ class ConstructPower(PowerWithStandardScoring):
         standard_score_args = dict(require_types=CreatureType.Construct) | score_args
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             theme="Construct",
@@ -58,12 +61,13 @@ class _ConstructedGuardian(ConstructPower):
             source="Foe Foundry",
             reference_statblock="Shield Guardian",
             icon="guarded-tower",
+            power_types=[PowerType.Buff],
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
             bonus_roles=MonsterRole.Defender,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Constructed Guardian",
             action=ActionType.Feature,
@@ -78,11 +82,12 @@ class _ProtectivePlating(ConstructPower):
             name="Protective Plating",
             source="Foe Foundry",
             icon="guarded-tower",
+            power_types=[PowerType.Defense],
             create_date=datetime(2023, 11, 21),
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Protective Plating",
@@ -102,9 +107,10 @@ class _ImmutableForm(ConstructPower):
             icon="locked-box",
             source="SRD 5.1 Stone Golem",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Immutable Form",
             action=ActionType.Feature,
@@ -120,9 +126,10 @@ class _BoundProtector(ConstructPower):
             icon="static-guard",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Bound Protector",
             action=ActionType.Feature,
@@ -138,10 +145,11 @@ class _ExplosiveCore(ConstructPower):
             name="Explosive Core",
             source="Foe Foundry",
             icon="planet-core",
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             bonus_damage=DamageType.Fire,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg_type = DamageType.Fire
         dmg = stats.target_value(dpr_proportion=0.8, suggested_die=Die.d6)
         dc = stats.difficulty_class_easy
@@ -163,10 +171,11 @@ class _Smother(ConstructPower):
             reference_statblock="Rug of Smothering",
             icon="blanket",
             source="SRD 5.1 Rug of Smothering",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             attack_names={"-", natural_attacks.Slam},
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Damage Transfer",
             action=ActionType.Feature,
@@ -205,12 +214,13 @@ class _Retrieval(ConstructPower):
             source="Foe Foundry",
             power_level=HIGH_POWER,
             icon="bug-net",
+            power_types=[PowerType.Movement, PowerType.Debuff, PowerType.Magic],
             create_date=datetime(2023, 11, 21),
             require_cr=7,
             attack_names=["-", natural_attacks.Slam],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         grappled = Condition.Grappled
         paralyzed = Condition.Paralyzed
@@ -249,9 +259,10 @@ class _SpellStoring(ConstructPower):
             icon="energy-tank",
             reference_statblock="Shield Guardian",
             source="SRD 5.1 Shield Guardian",
+            power_types=[PowerType.Magic],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
 
         level = min(4, int(ceil(stats.cr / 2.5)))
@@ -283,9 +294,10 @@ class _Overclock(ConstructPower):
             icon="clockwork",
             create_date=datetime(2023, 11, 21),
             require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Buff, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dash = action_ref("Dash")
         temphp = easy_multiple_of_five(5 + 2 * stats.cr)
         feature = Feature(
@@ -305,9 +317,10 @@ class _Crush(ConstructPower):
             icon="crush",
             create_date=datetime(2023, 11, 21),
             require_size=Size.Huge,
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(target=1.8, suggested_die=Die.d8)
         prone = Condition.Prone.caption

@@ -4,9 +4,10 @@ from ...attributes import Stats
 from ...creature_types import CreatureType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 def is_druid(c: BaseStatblock) -> bool:
@@ -14,15 +15,22 @@ def is_druid(c: BaseStatblock) -> bool:
 
 
 class DruidPower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+    ):
         super().__init__(
             name=name,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             power_level=power_level,
             source="Foe Foundry",
             icon=icon,
             theme="druid",
             reference_statblock="Druid",
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_druid,
                 require_types=CreatureType.Humanoid,
@@ -36,9 +44,10 @@ class _BestialWrath(DruidPower):
             name="Bestial Wrath",
             icon="angry-eyes",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Buff, PowerType.Attack],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(3 + 3 * stats.cr, min_val=5, max_val=100)
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=1.15, force_die=Die.d6)
@@ -59,9 +68,10 @@ class _PrimalEncouragement(DruidPower):
             name="Primal Encouragement",
             icon="ecology",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Healing],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         healing = stats.target_value(
             target=0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
         )

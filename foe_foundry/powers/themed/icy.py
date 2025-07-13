@@ -7,8 +7,15 @@ from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class IcyPower(PowerWithStandardScoring):
@@ -19,17 +26,20 @@ class IcyPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             create_date=create_date,
             icon=icon,
             theme="icy",
             reference_statblock="Cryomancer Mage",
+            power_types=power_types
+            or [PowerType.Magic, PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_types=[
                     CreatureType.Humanoid,
@@ -58,7 +68,7 @@ class _Frostbite(IcyPower):
             require_cr=2,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(
             target=1.5 * min(stats.multiattack, 2), force_die=Die.d8
@@ -86,7 +96,7 @@ class _IcyTomb(IcyPower):
             require_cr=3,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.8, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)
@@ -112,7 +122,7 @@ class _FrostNova(IcyPower):
             require_cr=4,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)
@@ -138,7 +148,7 @@ class _Hoarfrost(IcyPower):
             power_level=HIGH_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc=dc)
         feature = Feature(
@@ -157,9 +167,10 @@ class _IcyShield(IcyPower):
             icon="ice-shield",
             source="Foe Foundry",
             require_spellcasting=True,
+            power_types=[PowerType.Defense, PowerType.Magic],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = round(stats.attributes.proficiency * 1.5)
         feature = Feature(
             name="Icy Shield",
@@ -181,7 +192,7 @@ class _Blizzard(IcyPower):
             require_cr=6,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         frozen = conditions.Frozen(dc=dc)

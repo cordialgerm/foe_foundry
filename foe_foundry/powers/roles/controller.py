@@ -6,6 +6,7 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import (
     CasterType,
@@ -22,7 +23,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..spell import SpellPower, StatblockSpell
@@ -41,12 +42,13 @@ class _PacifyingTouch(PowerWithStandardScoring):
 
         super().__init__(
             name="Pacifying Touch",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 19),
             theme="controller",
             reference_statblock="Priest",
             source="Foe Foundry",
             icon="sleepy",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=[
@@ -60,7 +62,7 @@ class _PacifyingTouch(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -83,19 +85,20 @@ class _TongueTwister(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Tongue-Twister",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
             reference_statblock="Dryad",
             source="Foe Foundry",
             icon="silenced",
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=CreatureType.Fey,
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         cursed = conditions.Cursed().caption
         feature = Feature(
@@ -121,6 +124,7 @@ class _Eyebite(SpellPower):
             theme="controller",
             icon="voodoo-doll",
             reference_statblock="Green Hag",
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_types=[CreatureType.Fey, CreatureType.Undead],
@@ -132,19 +136,20 @@ class _HeartTremors(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Heart Tremors",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 11, 29),
             theme="controller",
             source="Foe Foundry",
             icon="monk-face",
             reference_statblock="Warrior",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 attack_names=["-", weapon.Staff, natural.Slam, spell.Shock],
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=1.5, force_die=Die.d10)
         feature = Feature(
@@ -162,12 +167,13 @@ class _UnhingedParanoia(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Unhinged Paranoia",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
             icon="paranoia",
             reference_statblock="Ghost",
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Psychic,
@@ -175,7 +181,7 @@ class _UnhingedParanoia(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         feature = Feature(
             name="Unhinged Paranoia",
@@ -194,12 +200,13 @@ class _Nervefire(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Nervefire",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
             icon="poison-bottle",
             reference_statblock="Assassin",
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Poison,
@@ -207,7 +214,7 @@ class _Nervefire(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         poisoned = Condition.Poisoned
         dmg = stats.target_value(target=0.75, force_die=Die.d6)
@@ -226,13 +233,14 @@ class _TiringAttack(PowerWithStandardScoring):
     def __init__(self):
         super().__init__(
             name="Tiring Attack",
-            power_type=PowerType.Role,
+            power_category=PowerCategory.Role,
             create_date=datetime(2023, 12, 10),
             theme="controller",
             source="Foe Foundry",
             icon="despair",
             reference_statblock="Necromancer Mage",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             score_args=dict(
                 require_roles=MonsterRole.Controller,
                 require_damage=DamageType.Necrotic,
@@ -240,7 +248,7 @@ class _TiringAttack(PowerWithStandardScoring):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         exhaustion = Condition.Exhaustion
         feature = Feature(
@@ -254,7 +262,12 @@ class _TiringAttack(PowerWithStandardScoring):
 
 
 class _ControllingSpellPower(SpellPower):
-    def __init__(self, spell: StatblockSpell, **kwargs):
+    def __init__(
+        self,
+        spell: StatblockSpell,
+        power_types: List[PowerType] | None = None,
+        **kwargs,
+    ):
         # all spells in this class are controller spells
         score_args = dict(require_roles=MonsterRole.Controller) | kwargs.get(
             "score_args", {}
@@ -269,6 +282,7 @@ class _ControllingSpellPower(SpellPower):
             icon="magic-swirl",
             reference_statblock="Mage",
             caster_type=CasterType.Innate,
+            power_types=power_types,
             score_args=score_args,
             **args,
         )
@@ -278,12 +292,14 @@ def _ControllingSpells() -> List[Power]:
     return [
         _ControllingSpellPower(
             spell=necromancy.BlindnessDeafness.for_statblock(),
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_damage=[DamageType.Necrotic, DamageType.Poison],
             ),
         ),
         _ControllingSpellPower(
             spell=enchantment.Command.for_statblock(),
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_types=[
                     CreatureType.Humanoid,
@@ -295,6 +311,7 @@ def _ControllingSpells() -> List[Power]:
         ),
         _ControllingSpellPower(
             spell=conjuration.Entangle.for_statblock(),
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(
                 require_types=[
                     CreatureType.Plant,
@@ -306,47 +323,56 @@ def _ControllingSpells() -> List[Power]:
         _ControllingSpellPower(
             spell=conjuration.Grease.for_statblock(),
             power_level=LOW_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(require_types=CreatureType.Humanoid),
         ),
         _ControllingSpellPower(
             spell=evocation.GustOfWind.for_statblock(),
             power_level=LOW_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(require_damage=[DamageType.Lightning, DamageType.Thunder]),
         ),
         _ControllingSpellPower(
             spell=enchantment.HideousLaughter.for_statblock(),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
             score_args=dict(require_damage=DamageType.Psychic),
         ),
         _ControllingSpellPower(
             spell=enchantment.HoldPerson.for_statblock(),
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Debuff],
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
             spell=transmutation.Levitate.for_statblock(concentration=False),
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
             score_args=dict(
                 require_types=[CreatureType.Elemental, CreatureType.Humanoid]
             ),
         ),
         _ControllingSpellPower(
             spell=conjuration.SleetStorm.for_statblock(),
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(require_damage=DamageType.Cold),
         ),
         _ControllingSpellPower(
             spell=illusion.Silence.for_statblock(),
             power_level=LOW_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
             spell=enchantment.Suggestion.for_statblock(),
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Debuff],
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
         _ControllingSpellPower(
             spell=conjuration.Web.for_statblock(),
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(
                 require_types=[CreatureType.Monstrosity, CreatureType.Humanoid]
             ),
@@ -354,6 +380,7 @@ def _ControllingSpells() -> List[Power]:
         _ControllingSpellPower(
             spell=transmutation.Slow.for_statblock(),
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
             score_args=dict(
                 require_types=[CreatureType.Humanoid, CreatureType.Construct]
             ),
@@ -361,6 +388,7 @@ def _ControllingSpells() -> List[Power]:
         _ControllingSpellPower(
             spell=conjuration.FogCloud.for_statblock(),
             power_level=LOW_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Environmental],
             score_args=dict(require_attack_types=AttackType.AllSpell()),
         ),
     ]

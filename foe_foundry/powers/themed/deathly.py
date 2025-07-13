@@ -8,7 +8,6 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, DamageType, Weakened
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
-from ...powers import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
@@ -17,6 +16,8 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
+    PowerCategory,
+    PowerType,
     PowerWithStandardScoring,
 )
 
@@ -30,6 +31,7 @@ class DeathlyPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Zombie",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def undead_or_necromancer(c: BaseStatblock) -> bool:
@@ -41,34 +43,27 @@ class DeathlyPower(PowerWithStandardScoring):
                     and c.secondary_damage_type == DamageType.Necrotic
                 )
 
-        callback = score_args.pop("require_callback", None)
-
-        def required_callback(c: BaseStatblock) -> bool:
-            if callback is None:
-                return undead_or_necromancer(c)
-            else:
-                return undead_or_necromancer(c) and callback(c)
-
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             create_date=create_date,
             theme="death",
             icon=icon,
             reference_statblock=reference_statblock,
             power_level=power_level,
+            power_types=power_types or [PowerType.Debuff, PowerType.Magic],
             score_args=dict(
                 require_types={
                     CreatureType.Undead,
                     CreatureType.Fiend,
                     CreatureType.Humanoid,
                 },
-                require_callback=required_callback,
+                require_callback=undead_or_necromancer,
                 bonus_damage=DamageType.Necrotic,
                 bonus_types=CreatureType.Undead,
-                **score_args,
-            ),
+            )
+            | score_args,
         )
 
 
@@ -80,7 +75,9 @@ class _EndlessServitude(DeathlyPower):
             icon="raise-zombie",
             power_level=HIGH_POWER,
             require_cr=3,
+            reference_statblock="Necromancer",
             bonus_roles=MonsterRole.Leader,
+            power_types=[PowerType.Summon],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -88,7 +85,7 @@ class _EndlessServitude(DeathlyPower):
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Endless Servitude",
             action=ActionType.Feature,
@@ -109,9 +106,10 @@ class _WitheringBlow(DeathlyPower):
             icon="mummy-head",
             require_attack_types=AttackType.AllMelee(),
             require_callback=_has_no_other_attacks,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -147,9 +145,15 @@ class _WitheringBlow(DeathlyPower):
 
 class _DrainingBlow(DeathlyPower):
     def __init__(self):
-        super().__init__(name="Draining Blow", icon="neck-bite", source="Foe Foundry")
+        super().__init__(
+            name="Draining Blow",
+            icon="neck-bite",
+            source="Foe Foundry",
+            reference_statblock="Wight",
+            power_types=[PowerType.Healing],
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Draining Blow",
             action=ActionType.BonusAction,
@@ -171,9 +175,10 @@ class _ShadowWalk(DeathlyPower):
             power_level=LOW_POWER,
             require_callback=no_unique_movement,
             require_speed=30,
+            power_types=[PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Shadow Walk",
             action=ActionType.BonusAction,
@@ -193,6 +198,8 @@ class _FleshPuppets(DeathlyPower):
             icon="puppet",
             power_level=HIGH_POWER,
             require_cr=3,
+            power_types=[PowerType.Summon],
+            reference_statblock="Necromancer",
         )
 
     def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
@@ -200,7 +207,7 @@ class _FleshPuppets(DeathlyPower):
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         cr = int(ceil(stats.cr / 3))
 
         feature = Feature(
@@ -222,9 +229,10 @@ class _DevourSoul(DeathlyPower):
             icon="soul",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(target=1.25, force_die=Die.d6)
         dc = stats.difficulty_class_easy
         ghoul = creature_ref("Ghoul")
@@ -244,10 +252,14 @@ class _DevourSoul(DeathlyPower):
 class _DrainStrength(DeathlyPower):
     def __init__(self):
         super().__init__(
-            name="Drain Strength", icon="oppression", source="SRD5.1 Shadow"
+            name="Drain Strength",
+            icon="oppression",
+            source="SRD5.1 Shadow",
+            power_types=[PowerType.Debuff],
+            reference_statblock="Shadow",
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
 
         dmg = stats.target_value(target=1.5, force_die=Die.d6)

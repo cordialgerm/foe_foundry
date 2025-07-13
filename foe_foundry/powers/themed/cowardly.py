@@ -12,6 +12,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
+    PowerCategory,
     PowerType,
     PowerWithStandardScoring,
 )
@@ -44,23 +45,29 @@ class CowardlyPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Goblin",
         create_date: datetime | None = datetime(2025, 3, 22),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
+        standard_score_args = (
+            dict(
+                require_callback=could_be_cowardly,
+                require_types=CreatureType.Humanoid,
+                bonus_roles=MonsterRole.Skirmisher,
+            )
+            | score_args
+        )
+
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
             theme="cowardly",
             icon=icon,
             reference_statblock=reference_statblock,
             create_date=create_date,
-            score_args=dict(
-                require_callback=could_be_cowardly,
-                require_types=CreatureType.Humanoid,
-                bonus_roles=MonsterRole.Skirmisher,
-            )
-            | score_args,
+            score_args=standard_score_args,
+            power_types=power_types or [PowerType.Movement],
         )
 
 
@@ -71,9 +78,10 @@ class _ScurryAndScatter(CowardlyPower):
             source="Foe Foundry",
             icon="misdirection",
             power_level=LOW_POWER,
+            power_types=[PowerType.Movement],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return [
             Feature(
                 name="Scurry and Scatter",
@@ -90,9 +98,10 @@ class _GrovelAndBeg(CowardlyPower):
             source="Foe Foundry",
             icon="kneeling",
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         prone = Condition.Prone
         charm = Condition.Charmed
         bloodied = Condition.Bloodied
@@ -117,9 +126,10 @@ class _FeignDeath(CowardlyPower):
             source="Foe Foundry",
             icon="dead-head",
             power_level=LOW_POWER,
+            power_types=[PowerType.Stealth],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         study = action_ref("Study")
         prone = Condition.Prone
         feature = Feature(

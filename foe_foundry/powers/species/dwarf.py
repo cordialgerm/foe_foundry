@@ -3,13 +3,14 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 from ..roles.defender import Taunt
@@ -24,6 +25,7 @@ class DwarvenPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         self.species = "dwarf"
@@ -41,13 +43,14 @@ class DwarvenPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,
             icon=icon,
             reference_statblock="Warrior",
             theme="Dwarf",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -60,19 +63,25 @@ class DwarvenPowerWrapper(DwarvenPower):
         wrapped_power: Power,
         icon: str | None = None,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
+        # Try to get power_types from wrapped power if not provided
+        if power_types is None and hasattr(wrapped_power, "power_types"):
+            power_types = wrapped_power.power_types
+
         super().__init__(
             name=name,
             source=source,
             create_date=create_date,
             icon=icon or wrapped_power.icon or "dwarf-face",
             power_level=wrapped_power.power_level,
+            power_types=power_types,
             **score_args,
         )
         self.wrapped_power = wrapped_power
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return self.wrapped_power.generate_features(stats)
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -88,9 +97,10 @@ class _HardDrink(DwarvenPower):
             power_level=RIBBON_POWER,
             create_date=datetime(2025, 2, 17),
             bonus_roles=[MonsterRole.Bruiser, MonsterRole.Soldier],
+            power_types=[PowerType.Buff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Hard Drink",
             description=f"The dwarf can chug a strong dwarven drink and gain advantage on the next d20 test {stats.selfref} makes within the next hour.",
@@ -108,9 +118,10 @@ class _DwarvenResilience(DwarvenPower):
             icon="dwarf-face",
             power_level=RIBBON_POWER,
             bonus_roles=[MonsterRole.Defender],
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Dwarven Resilience",
             action=ActionType.Reaction,

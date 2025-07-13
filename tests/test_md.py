@@ -117,3 +117,4 @@ foo: bar
     assert ref.args is not None
     assert ref.args["color"] == "blue"
     assert "Just A Scratch" in result.html
+    assert 'data-power-key="just-a-scratch"' in result.html

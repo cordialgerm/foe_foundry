@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import enchantment, illusion
 from ...statblocks import BaseStatblock
 from ..power import Power
@@ -43,9 +44,14 @@ EnchanterExpertSpells = (
 
 class _EnchanterWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Enchanter", icon="charm", **kwargs)
+        super().__init__(
+            creature_name="Enchanter",
+            icon="charm",
+            power_types=[PowerType.Magic, PowerType.Debuff],
+            **kwargs,
+        )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Protective Charm",
             uses=1,

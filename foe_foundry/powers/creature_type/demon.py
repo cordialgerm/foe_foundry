@@ -8,6 +8,7 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import enchantment
 from ...statblocks import BaseStatblock
@@ -17,7 +18,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -33,6 +34,7 @@ class DemonPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -43,8 +45,9 @@ class DemonPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
             icon=icon,
             theme="Demon",
@@ -61,6 +64,7 @@ class _FeastOfSouls(DemonPower):
             icon="grim-reaper",
             create_date=datetime(2025, 3, 28),
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
             bonus_roles={
                 MonsterRole.Bruiser,
                 MonsterRole.Soldier,
@@ -68,7 +72,7 @@ class _FeastOfSouls(DemonPower):
             },
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temphp = easy_multiple_of_five(0.1 * stats.hp.average)
         feature = Feature(
             name="Feast of Souls",
@@ -86,9 +90,10 @@ class _DemonicBite(DemonPower):
             icon="fangs",
             attack_names=natural_attacks.Bite,
             bonus_damage=DamageType.Poison,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -121,9 +126,10 @@ class _DemonicSummons(DemonPower):
             require_cr=3,
             bonus_roles=MonsterRole.Leader,
             bonus_cr=7,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         _, _, description = summoning.determine_summon_formula(
             summoner=summoning.Demons,
             summon_cr_target=stats.cr / 2.5,
@@ -150,9 +156,10 @@ class _WhispersOfTheAbyss(DemonPower):
             power_level=HIGH_POWER,
             require_cr=3,
             bonus_roles={MonsterRole.Controller, MonsterRole.Artillery},
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d6)
         confusion = spell_ref(enchantment.Confusion.name)
         dc = stats.difficulty_class_easy
@@ -174,9 +181,10 @@ class _BlackBlood(DemonPower):
             icon="blood",
             power_level=LOW_POWER,
             require_cr=3,
+            power_types=[PowerType.Defense, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.attributes.proficiency
         feature = Feature(
             name="Black Blood",
@@ -196,9 +204,10 @@ class _Desecration(DemonPower):
             icon="pentagram-rose",
             power_level=LOW_POWER,
             require_cr=3,
+            power_types=[PowerType.Environmental, PowerType.Debuff],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         token = Token(
             name="Desecrated Ground", dc=stats.difficulty_class_token, charges=3
         )
@@ -224,9 +233,10 @@ class _EchoOfRage(DemonPower):
             icon="enrage",
             power_level=MEDIUM_POWER,
             require_cr=3,
+            power_types=[PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         shadow = creature_ref("Shadow")
 
         shadow = creature_ref("Shadow")
@@ -248,9 +258,10 @@ class _NightmareSpawn(DemonPower):
             icon="elysium-shade",
             power_level=HIGH_POWER,
             require_cr=9,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Summon],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         nightmare = creature_ref("Nightmare")
         dmg = stats.target_value(dpr_proportion=0.5)
 

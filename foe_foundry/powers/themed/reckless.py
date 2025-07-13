@@ -9,6 +9,7 @@ from ...attributes import Stats
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -18,7 +19,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -31,16 +32,18 @@ class RecklessPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
             power_level=power_level,
+            power_types=power_types or [PowerType.Attack, PowerType.Buff],
             theme="reckless",
             reference_statblock="Berserker",
             icon=icon,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             create_date=create_date,
             score_args=dict(
                 require_attack_types=AttackType.AllMelee(),
@@ -76,7 +79,7 @@ class _Charger(RecklessPower):
             bonus_size=Size.Large,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         prone = Condition.Prone
         dash = action_ref("Dash")
@@ -100,7 +103,7 @@ class _Overrun(RecklessPower):
             bonus_size=Size.Large,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Overrun",
             action=ActionType.BonusAction,
@@ -119,7 +122,7 @@ class _Reckless(RecklessPower):
             require_roles=MonsterRole.Bruiser,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Reckless",
             description=f"At the start of their turn, {stats.selfref} can gain advantage on all melee weapon attack rolls made during this turn, but attack rolls against them have advantage until the start of their next turn.",
@@ -138,7 +141,7 @@ class _BloodiedRage(RecklessPower):
             require_cr=1,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         threshold = easy_multiple_of_five(stats.hp.average / 2.0)
         feature = Feature(
             name="Bloodied Rage",
@@ -157,7 +160,7 @@ class _RelentlessEndurance(RecklessPower):
             power_level=LOW_POWER,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
             name="Relentless Endurance",
             description=f"When {stats.selfref} is reduced to 0 hit points, they can immediately make one melee attack as a reaction. If this attack hits, they regain 1 hit point.",
@@ -175,7 +178,7 @@ class _WildCleave(RecklessPower):
             require_roles=MonsterRole.Bruiser,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reach = (stats.attack.reach or 5) + 5
         push = 2 * reach
 
@@ -198,7 +201,7 @@ class _RecklessFlurry(RecklessPower):
             require_roles=MonsterRole.Bruiser,
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         attacks = max(3, int(ceil(1.5 * stats.multiattack)))
         attack_name = stats.attack.display_name
 
@@ -219,7 +222,7 @@ class _Toss(RecklessPower):
             name="Toss", source="Foe Foundry", icon="arrow-dunk", bonus_size=Size.Large
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         if stats.size <= Size.Medium:
             size = stats.size
         else:
@@ -253,7 +256,7 @@ class _Strangle(RecklessPower):
             attack_names=["-", weapon.Whip, natural.Slam, natural.Tentacle],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:

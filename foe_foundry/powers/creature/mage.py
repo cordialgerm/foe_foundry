@@ -4,6 +4,7 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import (
     CasterType,
     abjuration,
@@ -18,7 +19,7 @@ from ..power import (
     MEDIUM_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -30,6 +31,7 @@ class MagePower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         existing_callback = score_args.pop("require_callback", None)
@@ -46,7 +48,8 @@ class MagePower(PowerWithStandardScoring):
             reference_statblock="Mage",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=datetime(2025, 3, 7),
             score_args=dict(
                 require_callback=require_callback,
@@ -67,9 +70,10 @@ class _ProtectiveMagic(MagePower):
             source="Foe Foundry",
             icon="shield-reflect",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Defense],
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         uses = int(min(3, ceil(stats.attributes.proficiency / 2)))
 
         feature = Feature(
@@ -88,6 +92,7 @@ class _ApprenticeMage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -101,7 +106,7 @@ class _ApprenticeMage(MagePower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -112,6 +117,7 @@ class _AdeptMage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=LOW_POWER,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -125,7 +131,7 @@ class _AdeptMage(MagePower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -136,6 +142,7 @@ class _Mage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -149,7 +156,7 @@ class _Mage(MagePower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 
@@ -160,6 +167,7 @@ class _Archmage(MagePower):
             source="Foe Foundry",
             icon="spell-book",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Magic],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -174,7 +182,7 @@ class _Archmage(MagePower):
         )
         return stats
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
 
 

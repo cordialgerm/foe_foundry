@@ -5,11 +5,12 @@ from ...creature_types import CreatureType
 from ...damage import Condition, conditions
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class OgrePower(PowerWithStandardScoring):
         source: str,
         icon: str = "ogre",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -32,8 +34,9 @@ class OgrePower(PowerWithStandardScoring):
             name=name,
             source=source,
             power_level=power_level,
+            power_types=power_types,
             create_date=create_date,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             icon=icon,
             theme="ogre",
             reference_statblock="Ogre",
@@ -49,10 +52,15 @@ class _Wallsmash(OgrePower):
             source="Foe Foundry",
             icon="broken-wall",
             power_level=MEDIUM_POWER,
+            power_types=[
+                PowerType.Environmental,
+                PowerType.AreaOfEffect,
+                PowerType.Attack,
+            ],
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.9, force_die=Die.d10)
         dc = stats.difficulty_class
         prone = Condition.Prone.caption
@@ -80,10 +88,11 @@ class _BurnBelch(OgrePower):
             source="Foe Foundry",
             icon="gas-stove",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
         dmg = stats.target_value(dpr_proportion=0.6, force_die=Die.d10, force_even=True)
         burning_dmg = DieFormula.from_dice(d10=(dmg.d10 or 0) // 2)
@@ -106,10 +115,11 @@ class _ChainCrack(OgrePower):
             source="Foe Foundry",
             icon="andromeda-chain",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Attack, PowerType.Debuff],
             create_date=datetime(2025, 4, 7),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
         dazed = conditions.Dazed()
         dc = stats.difficulty_class_easy

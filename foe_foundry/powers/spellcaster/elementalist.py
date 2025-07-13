@@ -3,6 +3,7 @@ from typing import List
 from ...damage import conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import StatblockSpell, conjuration, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ..power import Power
@@ -13,7 +14,12 @@ from .utils import spell_list
 class _Elementalist(WizardPower):
     def __init__(self, name: str, spells: List[StatblockSpell], icon: str):
         super().__init__(
-            name=name, creature_name=name, min_cr=4, spells=spells, icon=icon
+            name=name,
+            creature_name=name,
+            min_cr=4,
+            spells=spells,
+            icon=icon,
+            power_types=[PowerType.Magic, PowerType.Attack],
         )
 
 
@@ -32,7 +38,7 @@ class _Pyromancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         damage = stats.target_value(target=0.4, force_die=Die.d10)
         burning = conditions.Burning(damage)
 
@@ -61,7 +67,7 @@ class _Cryomancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
         frozen = conditions.Frozen(dc=dc)
 
@@ -91,7 +97,7 @@ class _Electromancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         shocked = conditions.Shocked()
         dc = stats.difficulty_class
         feature = Feature(
@@ -115,7 +121,7 @@ class _Toximancer(_Elementalist):
             ),
         )
 
-    def generate_features(self, stats: BaseStatblock) -> List[Feature]:
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         weakened = conditions.Weakened(save_end_of_turn=True)
         dc = stats.difficulty_class
         feature = Feature(
