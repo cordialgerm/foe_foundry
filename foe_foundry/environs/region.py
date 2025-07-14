@@ -44,7 +44,7 @@ BlastedBadlands = Region(
         "laboratory",
         "mountains",
         "ruins",
-        "subeterranean",
+        "subterranean",
         "swamp",
         "temple",
         "tomb",
