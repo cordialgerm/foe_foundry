@@ -5,6 +5,7 @@ from foe_foundry.powers.roles import bruiser
 from foe_foundry.powers.themed import diseased, poison, reckless, technique
 
 PerksUndying = [
+    zombie.WontStopComing,
     undead.UndeadFortitude,
     reckless.RelentlessEndurance,
     zombie.RottenFlesh,

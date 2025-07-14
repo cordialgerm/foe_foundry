@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -44,8 +45,6 @@ class _DireBunnyTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
-        variant = settings.variant
         is_legendary = settings.is_legendary
 
         # STATS
@@ -104,8 +103,26 @@ DireBunnyTemplate: MonsterTemplate = _DireBunnyTemplate(
     name="Dire Bunny",
     tag_line="Surprisingly vicious and quick.",
     description="Dire bunnies are large, aggressive rabbits with sharp teeth and claws. They are often infected with a rabies-like disease that makes them more aggressive.",
-    environments=["Arctic", "Forest", "Mountain", "Hill"],
     treasure=[],
     variants=[DireBunnyVariant],
     species=[],
+    environments=[
+        (Biome.forest, Affinity.native),  # Natural rabbit habitat in woodlands
+        (
+            Biome.grassland,
+            Affinity.native,
+        ),  # Open meadows and prairies where rabbits thrive
+        (
+            Development.countryside,
+            Affinity.common,
+        ),  # May venture near farmlands and settlements
+        (
+            Biome.farmland,
+            Affinity.common,
+        ),  # Agricultural areas where rabbits naturally occur
+        (
+            Development.frontier,
+            Affinity.uncommon,
+        ),  # Edge settlements where wilderness meets civilization
+    ],
 )

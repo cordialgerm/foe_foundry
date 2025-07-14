@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.utils import easy_multiple_of_five
+
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
@@ -18,11 +20,12 @@ from ..power import (
 class ZombiePower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
-        power_types: List[PowerType] | None = None,
+        power_types: List[PowerType],
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -120,8 +123,32 @@ class _SeveredLimb(ZombiePower):
         return [feature]
 
 
+class _WontStopComing(ZombiePower):
+    def __init__(self):
+        super().__init__(
+            name="Won't Stop Coming",
+            icon="half-body-crawling",
+            source="Foe Foundry",
+            power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
+            create_date=datetime(2025, 7, 13),
+        )
+
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        hp = easy_multiple_of_five(stats.hp.average / 2, min_val=5)
+        feature = Feature(
+            name="Won't Stop Coming",
+            uses=1,
+            action=ActionType.Reaction,
+            description=f"When {stats.selfref} is reduced to 0 hit points, it instead resets its hitpoints to {hp} and may shamble up to half its movement speed towards the nearest creature. \
+                This ability cannot be used if the damage is radiant or from a critical hit.",
+        )
+        return [feature]
+
+
 PutridStench: Power = _PutridStench()
 RottenFlesh: Power = _RottenFlesh()
 SeveredLimb: Power = _SeveredLimb()
+WontStopComing: Power = _WontStopComing()
 
-ZombiePowers: list[Power] = [PutridStench, RottenFlesh, SeveredLimb]
+ZombiePowers: list[Power] = [PutridStench, RottenFlesh, SeveredLimb, WontStopComing]

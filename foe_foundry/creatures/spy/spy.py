@@ -4,6 +4,9 @@ from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
+from ...environs import Development, Terrain
+from ...environs.affinity import Affinity
+from ...environs.region import UrbanTownship
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
@@ -60,7 +63,6 @@ class _SpyTemplate(MonsterTemplate):
         cr = settings.cr
         variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -161,8 +163,27 @@ SpyTemplate: MonsterTemplate = _SpyTemplate(
     name="Spy",
     tag_line="Infiltrators and Informants",
     description="Spies gather information and disseminate lies, manipulating people to gain the results the spies' patrons desire. They're trained to manipulate, infiltrate, and—when necessary—escape in a hurry. Many adopt disguises, aliases, or code names to maintain anonymity.",
-    environments=["Urban"],
     treasure=["Any"],
     variants=[SpyVariant, SpyMasterVariant],
     species=AllSpecies,
+    environments=[
+        # Spies primarily operate in urban and civilized areas where they can blend in
+        (UrbanTownship, Affinity.common),  # Primary region for spies - cities and towns
+        (
+            Development.urban,
+            Affinity.common,
+        ),  # Major cities with complex political networks
+        (Development.settlement, Affinity.common),  # Smaller towns and communities
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural areas within sphere of civilization
+        (
+            Development.stronghold,
+            Affinity.uncommon,
+        ),  # Fortified areas where secrets are kept
+        (Development.dungeon, Affinity.rare),  # Hidden locations for covert operations
+        (Terrain.hill, Affinity.uncommon),  # Elevated areas for surveillance
+        (Terrain.plain, Affinity.uncommon),  # Open areas for meeting contacts
+    ],
 )

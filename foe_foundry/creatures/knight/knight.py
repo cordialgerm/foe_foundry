@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import PlateArmor
@@ -71,7 +72,6 @@ class _KnightTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -158,8 +158,15 @@ KnightTemplate: MonsterTemplate = _KnightTemplate(
     name="Knight",
     tag_line="Battle Masters and Heroic Wanderers",
     description="Knights are skilled warriors trained for war and tested in battle. Many serve the rulers of a realm, a faith, or an order devoted to a cause.",
-    environments=["Urban", "Rural"],
     treasure=["Relics", "Individual"],
     variants=[KnightVariant],
     species=AllSpecies,
+    environments=[
+        (Development.urban, Affinity.native),  # Cities and courts where they serve
+        (Development.stronghold, Affinity.native),  # Castles and fortified places
+        (Development.settlement, Affinity.common),  # Towns and villages they protect
+        (Development.countryside, Affinity.common),  # Rural areas they patrol
+        (Development.frontier, Affinity.uncommon),  # Border regions they guard
+        (Development.wilderness, Affinity.rare),  # Questing knights on adventures
+    ],
 )

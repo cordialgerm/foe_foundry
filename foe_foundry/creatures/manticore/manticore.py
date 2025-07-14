@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, Terrain
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -19,7 +20,7 @@ from . import powers
 
 ManticoreVariant = MonsterVariant(
     name="Manticore",
-    description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
+    description="Manticores are bizarre amalgamations with the body of a lion, dragon-like wings, a bristling tail of barbed spines, and the leering face of a voracious human. They are known for their cruel appetites and even crueler wit.",
     monsters=[
         Monster(name="Manticore", cr=3, srd_creatures=["Manticore"]),
         Monster(name="Manticore Ravager", cr=6),
@@ -41,7 +42,6 @@ class _ManticoreTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -103,8 +103,21 @@ ManticoreTemplate: MonsterTemplate = _ManticoreTemplate(
     name="Manticore",
     tag_line="Flying hunters with spiked tails and sharper tongues",
     description="Manticores are bizarre amalgamations with the body of a lion, dragon-like wings, a bristling tail of barbed spines, and the leering face of a voracious human. They are known for their cruel appetites and even crueler wit.",
-    environments=["Arctic", "Coasta", "Grassland", "Hill", "Mountain"],
     treasure=[],
     variants=[ManticoreVariant],
     species=[],
+    environments=[
+        (Terrain.mountain, Affinity.native),  # Desolate cliffs and rocky peaks
+        (
+            Development.wilderness,
+            Affinity.native,
+        ),  # Harsh wilderness far from civilization
+        (Development.ruin, Affinity.common),  # Ruined towers and abandoned structures
+        (
+            Terrain.hill,
+            Affinity.common,
+        ),  # Elevated hunting grounds with good visibility
+        (Biome.desert, Affinity.uncommon),  # Arid wastelands they patrol
+        (Development.frontier, Affinity.rare),  # Edge settlements they might raid
+    ],
 )

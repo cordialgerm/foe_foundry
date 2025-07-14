@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -49,7 +50,6 @@ class _OwlbearTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         hp_multiplier = 0.95
         damage_multiplier = 1.0 if cr >= 6 else 1.15
@@ -113,7 +113,15 @@ OwlbearTemplate: MonsterTemplate = _OwlbearTemplate(
     name="Owlbear",
     tag_line="Unnaturally Territorial Predators",
     description="An Owlbear is a fearsome hybrid creature, combining the powerful frame of a bear with the hooked beak, feathers, and piercing eyes of a giant owl.",
-    environments=["Forest", "Hills"],
+    environments=[
+        (region.TangledForest, Affinity.native),  # native to dense forests
+        (Development.wilderness, Affinity.common),  # Common in wild areas
+        (region.LoftyMountains, Affinity.uncommon),  # Could nest in rocky mountains
+        (region.CountryShire, Affinity.rare),  # could encroach on farmland
+        (Development.frontier, Affinity.uncommon),  # Found in less developed areas
+        (Biome.forest, Affinity.native),  # Native to forests
+        (Biome.jungle, Affinity.common),  # Uncommon in dense jungles
+    ],
     treasure=[],
     variants=[OwlbearVariant],
     species=[],

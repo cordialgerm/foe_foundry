@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 from foe_foundry.utils import choose_enum
 
@@ -141,8 +142,28 @@ DruidTemplate: MonsterTemplate = _DruidTemplate(
     name="Druid",
     tag_line="Stewards and Sages of Nature",
     description="Druids use primal magic to protect the natural world and its inhabitants. They are often found in the wilds, where they can commune with nature and draw upon its power.",
-    environments=[],
     treasure=["Relics", "Individual"],
     variants=[DruidVariant],
     species=AllSpecies,
+    environments=[
+        (
+            Biome.forest,
+            Affinity.native,
+        ),  # Sacred groves and natural woodland sanctuaries
+        (
+            Development.wilderness,
+            Affinity.native,
+        ),  # Untouched natural areas they protect
+        (
+            Biome.jungle,
+            Affinity.common,
+        ),  # Dense tropical forests with rich biodiversity
+        (Development.frontier, Affinity.common),  # Edge settlements near wild areas
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural areas where nature and civilization meet
+        (Biome.swamp, Affinity.uncommon),  # Wetland ecosystems they may guard
+        (Development.ruin, Affinity.uncommon),  # Ancient sites reclaimed by nature
+    ],
 )

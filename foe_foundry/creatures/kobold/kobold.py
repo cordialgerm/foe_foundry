@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ChainShirt, HolyArmor, NaturalArmor, SplintArmor
@@ -70,7 +71,6 @@ class _KoboldTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         if variant is KoboldWarrenguardVariant or variant is KoboldAscendant:
@@ -193,7 +193,6 @@ KoboldTemplate: MonsterTemplate = _KoboldTemplate(
     name="Kobold",
     tag_line="Proud Zealots of True Dragons",
     description="Kobolds are small reptilian guardians of True Dragon lairs. They are known for their zealous dedication to their True Dragon overlords and their cunning defense of the lairs they protect.",
-    environments=["Forest", "Grassland", "Hill", "Feywild", "Underdark"],
     treasure=["Any"],
     variants=[
         KoboldWarrenguardVariant,
@@ -203,4 +202,22 @@ KoboldTemplate: MonsterTemplate = _KoboldTemplate(
     ],
     species=[],
     is_sentient_species=True,
+    environments=[
+        (region.LoftyMountains, Affinity.native),  # Mountain lairs of True Dragons
+        (Biome.underground, Affinity.native),  # Tunnel warrens and cave systems
+        (
+            Development.dungeon,
+            Affinity.native,
+        ),  # Dragon lairs and underground complexes
+        (Development.ruin, Affinity.common),  # Ancient sites they claim as territory
+        (
+            Development.wilderness,
+            Affinity.common,
+        ),  # Remote areas near dragon territories
+        (Development.frontier, Affinity.uncommon),  # Edge settlements they might raid
+        (
+            Development.stronghold,
+            Affinity.uncommon,
+        ),  # Fortifications they serve dragons in
+    ],
 )

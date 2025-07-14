@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -44,7 +45,6 @@ class _ChimeraTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -107,8 +107,26 @@ ChimeraTemplate: MonsterTemplate = _ChimeraTemplate(
     name="Chimera",
     tag_line="Monstrous Messenger of Imminent Disaster",
     description="Legends say that chimera are heralds of imminent divine wrath or impending disaster. The greed, pride, and anger of mortal kind manifests into a monstrous three-headed beast, part lion, ram, and dragon. The lion head craves conquest, the goat hungers for spite, and the dragon seethes with wrath. Scholars debate whether chimeras are creations of wrathful gods, foul demons, or capricious fae. Regardless, the presence of a chimera is a certain sign of disaster.",
-    environments=["Grassland", "Hill", "Mountain"],
     treasure=[],
+    environments=[
+        (
+            region.BlastedBadlands,
+            Affinity.native,
+        ),  # herald disaster in devastated lands
+        (region.HauntedLands, Affinity.native),  # appear where corruption manifests
+        (Development.wilderness, Affinity.common),  # found in remote, dangerous areas
+        (Development.ruin, Affinity.common),  # manifest where civilizations have fallen
+        (region.LoftyMountains, Affinity.common),  # lair in remote mountain peaks
+        (
+            Development.frontier,
+            Affinity.uncommon,
+        ),  # herald disaster for frontier settlements
+        (
+            region.WartornKingdom,
+            Affinity.uncommon,
+        ),  # appear during times of great conflict
+        (Development.settlement, Affinity.rare),  # rarely approach populated areas
+    ],
     variants=[ChimeraVariant],
     species=[],
 )

@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import UnholyArmor
@@ -45,7 +46,6 @@ class _HollowGazerTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -107,8 +107,33 @@ HollowGazerTemplate: MonsterTemplate = _HollowGazerTemplate(
     name="Hollow Gazer",
     tag_line="Insane Seekers of Twisted Knowledge",
     description="Hollow Gazers are seekers of dark and forbidden knowledge that have been driven insane by cursed knowledge best left unknown.",
-    environments=["Underdark"],
     treasure=[],
     variants=[HollowGazerVariant],
     species=[],
+    environments=[
+        (
+            Biome.underground,
+            Affinity.native,
+        ),  # Dark underground lairs where they study forbidden lore
+        (
+            Development.ruin,
+            Affinity.native,
+        ),  # Ancient ruins filled with cursed knowledge
+        (
+            Development.dungeon,
+            Affinity.common,
+        ),  # Deep dungeons with hidden secrets to uncover
+        (
+            Development.stronghold,
+            Affinity.uncommon,
+        ),  # Abandoned towers and libraries they've taken over
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # Remote areas where they might hide their research
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # Occasionally infiltrating towns to steal knowledge
+    ],
 )

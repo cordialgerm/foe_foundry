@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 from foe_foundry.creature_types import CreatureType
 from foe_foundry.damage import DamageType
-from foe_foundry.environs import MonsterEnviron
+from foe_foundry.environs.environs import MonsterEnviron
 from foe_foundry.features import ActionType
 from foe_foundry.power_types import PowerType
 from foe_foundry.role_types import MonsterRole

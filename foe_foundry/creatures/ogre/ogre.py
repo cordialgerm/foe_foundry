@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, Terrain, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import HideArmor, UnholyArmor
@@ -102,7 +103,6 @@ class _OgreTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
 
@@ -198,15 +198,6 @@ OgreTemplate: MonsterTemplate = _OgreTemplate(
     name="Ogre",
     tag_line="Hungry hulking brutes and oafs",
     description="Ogres are massive and brutish ravagers that are constantly hungry and angry.",
-    environments=[
-        "Arctic",
-        "Desert",
-        "Forest",
-        "Grassland",
-        "Hill",
-        "Swamp",
-        "Underdark",
-    ],
     treasure=[],
     variants=[
         OgreVariant,
@@ -216,4 +207,27 @@ OgreTemplate: MonsterTemplate = _OgreTemplate(
         OgreBigBrainzVariant,
     ],
     species=[],
+    environments=[
+        (
+            region.WartornKingdom,
+            Affinity.native,
+        ),  # Ogres often inhabit war-torn regions
+        (Terrain.hill, Affinity.native),  # Hinterland hills where ogre clans dwell
+        (Biome.underground, Affinity.native),  # Cave systems and underground lairs
+        (Development.wilderness, Affinity.common),  # Wild areas away from civilization
+        (
+            Terrain.mountain,
+            Affinity.common,
+        ),  # Mountainous regions with caves and passes
+        (Development.frontier, Affinity.common),  # Remote settlements they raid
+        (Biome.forest, Affinity.uncommon),  # Wooded areas where they might hunt
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural areas they occasionally attack
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # Towns they might raid for food and treasure
+    ],
 )

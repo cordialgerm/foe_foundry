@@ -180,7 +180,7 @@ class _WildCleave(RecklessPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reach = (stats.attack.reach or 5) + 5
-        push = 2 * reach
+        push = 2 * reach if stats.size >= Size.Large else 5
 
         feature = Feature(
             name="Wild Cleave",
