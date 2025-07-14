@@ -179,8 +179,10 @@ ZombieTemplate: MonsterTemplate = _ZombieTemplate(
             Development.ruin,
             Affinity.common,
         ),  # ruins of forgotten temples and settlements
-        (Development.dungeon, Affinity.common)(  # dungeons with ancient curses
-            region.BlastedBadlands, Affinity.common
+        (Development.dungeon, Affinity.common),  # dungeons with ancient curses
+        (
+            region.BlastedBadlands,
+            Affinity.common,
         ),  # battlefields where many died
         (Biome.underground, Affinity.common),  # burial mounds and ancient tombs
         (Development.wilderness, Affinity.uncommon),  # occasionally arise in wild areas
