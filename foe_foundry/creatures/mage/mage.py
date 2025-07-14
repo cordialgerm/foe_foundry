@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import ArcaneArmor
@@ -226,7 +227,6 @@ class _MageTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -359,7 +359,6 @@ MageTemplate: MonsterTemplate = _MageTemplate(
     name="Mage",
     tag_line="Magical Scholars and Spellcasters",
     description="Mages are magical wonder-workers, ranging from spellcasting overlords to reclusive witches. They study mystical secrets and possess insight into monsters, legends, omens, and other lore. Mages often gather allies or hire assistants to aid them in their research or to attain magical might.",
-    environments=[],
     treasure=["Arcana", "Individual"],
     variants=[
         ApprenticeVariant,
@@ -376,4 +375,31 @@ MageTemplate: MonsterTemplate = _MageTemplate(
         ToximancerVariant,
     ],
     species=[],
+    environments=[
+        (
+            Development.urban,
+            Affinity.native,
+        ),  # Mage towers, academies, and city workshops
+        (
+            Development.settlement,
+            Affinity.common,
+        ),  # Towns with libraries and scholarly pursuits
+        (
+            Development.stronghold,
+            Affinity.common,
+        ),  # Fortified towers and magical colleges
+        (Development.ruin, Affinity.common),  # Ancient sites for magical research
+        (
+            Development.countryside,
+            Affinity.uncommon,
+        ),  # Rural hermitages and remote studies
+        (
+            Development.dungeon,
+            Affinity.uncommon,
+        ),  # Hidden laboratories and spell sanctums
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # Isolated research in remote locations
+    ],
 )

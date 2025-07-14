@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import BerserkersDefense
@@ -158,8 +159,23 @@ BerserkerTemplate: MonsterTemplate = _BerserkerTemplate(
     name="Berserker",
     tag_line="Raging Invaders and Impassioned Warriors",
     description="Gripped by the adrenaline of battle, berserkers are reckless invaders, pit fighters, and other ferocious warriors.",
-    environments=["Urban"],
     treasure=["Armaments", "Individual"],
+    environments=[
+        (Development.wilderness, Affinity.native),  # tribal warriors from wild lands
+        (
+            Development.frontier,
+            Affinity.native,
+        ),  # raiders from the edges of civilization
+        (Biome.arctic, Affinity.common),  # northern barbarian tribes
+        (region.LoftyMountains, Affinity.common),  # mountain clan warriors
+        (Development.countryside, Affinity.common),  # raid civilized areas
+        (region.WartornKingdom, Affinity.common),  # thrive in areas of conflict
+        (Development.settlement, Affinity.uncommon),  # occasionally attack settlements
+        (
+            region.UrbanTownship,
+            Affinity.rare,
+        ),  # rarely found in cities except as pit fighters
+    ],
     variants=[BerserkerVariant, CommanderVariant],
     species=AllSpecies,
 )

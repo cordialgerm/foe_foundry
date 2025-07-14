@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import Unarmored
@@ -43,7 +44,6 @@ class _CubeTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
         # STATS
         stats = base_stats(
             name=name,
@@ -106,8 +106,25 @@ GelatinousCubeTemplate: MonsterTemplate = _CubeTemplate(
     name="Gelatinous Cube",
     tag_line="Acidic, Nigh-Invisible Dungeon Cleaner",
     description="A Gelatinous Cube is a silent, quivering mass of acidic goo that dissolves any organic material unfortunate enough to get caught inside. These cubes glide slowly and silently through dungeons, caverns, and other forgotten caverns, with eerie purpose, as if some deeper instinct compels their mindless patrol.",
-    environments=["Underdark"],
     treasure=[],
+    environments=[
+        (
+            Biome.underground,
+            Affinity.native,
+        ),  # native to dungeons, caverns, and subterranean spaces
+        (
+            Development.ruin,
+            Affinity.native,
+        ),  # found in forgotten ruins and abandoned structures
+        (
+            Development.dungeon,
+            Affinity.native,
+        ),  # specifically designed for dungeon environments
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # occasionally found in natural cave systems
+    ],
     variants=[GelatinousCubeVariant],
     species=[],
 )

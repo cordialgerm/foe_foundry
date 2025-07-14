@@ -3,6 +3,9 @@ from foe_foundry.statblocks import BaseStatblock
 from ...ac_templates import ChainShirt, PlateArmor, SplintArmor
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
+from ...environs import Development, Terrain
+from ...environs.affinity import Affinity
+from ...environs.region import UrbanTownship
 from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
@@ -226,8 +229,19 @@ WarriorTemplate: MonsterTemplate = _WarriorTemplate(
     name="Warrior",
     tag_line="Offensive and Defensive Infantry",
     description="Warriors are professionals who make a living through their prowess in battle. They might be skilled in using a variety of tactics or trained to take advantage of unusual battlefields. Warriors often work together, whether in armies or in teams with deliberate goals.",
-    environments=["Any"],
     treasure=[],
     variants=[LineInfantryVariant, ShockInfantryVariant, CommanderVariant],
     species=AllSpecies,
+    environments=[
+        # Warriors are professional soldiers found in military and civilized areas
+        (Development.stronghold, Affinity.common),  # Military fortresses and barracks
+        (UrbanTownship, Affinity.common),  # Cities and towns with garrisons
+        (Development.urban, Affinity.common),  # Major cities with standing armies
+        (Development.settlement, Affinity.common),  # Towns with local militias
+        (Development.countryside, Affinity.common),  # Rural areas with patrols
+        (Development.frontier, Affinity.uncommon),  # Border regions needing protection
+        (Terrain.plain, Affinity.common),  # Open battlefields and military campaigns
+        (Terrain.hill, Affinity.uncommon),  # Elevated tactical positions
+        (Terrain.mountain, Affinity.rare),  # Mountain passes and defensive positions
+    ],
 )

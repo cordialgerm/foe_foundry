@@ -4,6 +4,10 @@ from ...ac_templates import UnholyArmor
 from ...attack_template import AttackTemplate, natural
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
+from ...environs import Development, Terrain
+from ...environs.affinity import Affinity
+from ...environs.extraplanar import ExtraplanarInfluence
+from ...environs.region import HauntedLands
 from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
@@ -36,7 +40,6 @@ class _VrockTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -102,8 +105,21 @@ VrockTemplate: MonsterTemplate = _VrockTemplate(
     name="Vrock",
     tag_line="Demon of Carnage and Ruin",
     description="Vrocks are screeching vulture-like harbringers of chaos and destruction that carry disease and pestilance from the lower planes.",
-    environments=["Planar (Abyss)"],
     treasure=[],
     variants=[VrockVariant],
     species=[],
+    environments=[
+        # Vrocks are demons from the Abyss that appear where chaos and destruction reign
+        (
+            ExtraplanarInfluence.hellish,
+            Affinity.common,
+        ),  # Primary planar influence - demonic/infernal
+        (ExtraplanarInfluence.deathly, Affinity.uncommon),  # Death-aligned areas
+        (HauntedLands, Affinity.uncommon),  # Haunted and cursed regions
+        (Development.ruin, Affinity.common),  # Areas of destruction and decay
+        (Development.dungeon, Affinity.uncommon),  # Hidden places of evil
+        (Development.stronghold, Affinity.rare),  # Corrupted fortresses
+        (Terrain.mountain, Affinity.uncommon),  # High places for aerial attacks
+        (Terrain.plain, Affinity.rare),  # Open battlefields for destruction
+    ],
 )

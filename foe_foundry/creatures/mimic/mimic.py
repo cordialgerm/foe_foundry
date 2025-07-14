@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import flat
@@ -53,7 +54,6 @@ class _MimicTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -123,8 +123,35 @@ MimicTemplate: MonsterTemplate = _MimicTemplate(
     name="Mimic",
     tag_line="Paranoia-Inducing Shapeshifting Ambusher",
     description="Mimics disguise themselves as inanimate objects such as treasure chests, doors, or furniture to lure and ambush prey",
-    environments=["Dungeon", "Urban"],
     treasure=[],
     variants=[MimicVariant],
     species=[],
+    environments=[
+        (
+            Development.dungeon,
+            Affinity.native,
+        ),  # Their primary domain - underground treasures and traps
+        (
+            Development.ruin,
+            Affinity.native,
+        ),  # Ancient ruins with forgotten treasures they mimic
+        (
+            Development.stronghold,
+            Affinity.common,
+        ),  # Castles and fortresses with valuables to copy
+        (Biome.underground, Affinity.common),  # Cave systems and underground complexes
+        (
+            Development.settlement,
+            Affinity.uncommon,
+        ),  # Towns where they might infiltrate buildings
+        (
+            Development.urban,
+            Affinity.uncommon,
+        ),  # Cities with valuable objects and wealthy districts
+        (
+            Development.countryside,
+            Affinity.rare,
+        ),  # Rural areas with occasional treasures to mimic
+        (Development.wilderness, Affinity.rare),  # Remote locations with hidden caches
+    ],
 )
