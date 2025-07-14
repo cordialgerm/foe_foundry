@@ -14,7 +14,7 @@ class Region:
     Regions are used to define the environment and locations in which a monster or an NPC can be found.
     Regions can consist of combinations of one or more biomes, terrians, development levels, or extraplanar influence.
     If a property is set to None, then it means that property is not relevant to defining the region.
-    If a property contains multiple values, then any of those values are valid for the region
+    If a property contains multiple values, then any of those values are valid for the region.
     """
 
     name: str  # the name of the region
