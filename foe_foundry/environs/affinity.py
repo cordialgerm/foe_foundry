@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class Affinity(Enum):
-    """Affinity of a monster to an environment. Determines how commonly this minoster can be found in the given environment"""
+    """Affinity of a monster to an environment. Determines how commonly this monster can be found in the given environment"""
 
     absent = -1.0  # the monster cannot be found in this environment.
     na = 0.0  # the environment is not relevant to the monster
