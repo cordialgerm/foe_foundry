@@ -61,7 +61,6 @@ class _AnimatedArmorTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         if variant is AnimatedArmorVariant:

@@ -45,7 +45,6 @@ class _ChimeraTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(

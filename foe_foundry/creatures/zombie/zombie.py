@@ -70,7 +70,6 @@ class _ZombieTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS

@@ -56,7 +56,6 @@ class _BugbearTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         attrs = [

@@ -45,8 +45,6 @@ class _DireBunnyTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
-        variant = settings.variant
         is_legendary = settings.is_legendary
 
         # STATS

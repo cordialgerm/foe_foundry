@@ -1,4 +1,11 @@
-from foe_foundry.environs import Affinity, Biome, Development, ExtraplanarInfluence, region, Terrain
+from foe_foundry.environs import (
+    Affinity,
+    Biome,
+    Development,
+    ExtraplanarInfluence,
+    Terrain,
+    region,
+)
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import Breastplate, ChainShirt, StuddedLeatherArmor
@@ -127,7 +134,6 @@ class _GoblinTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
@@ -265,15 +271,30 @@ GoblinTemplate: MonsterTemplate = _GoblinTemplate(
     description="Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.",
     treasure=["Any"],
     environments=[
-        (Development.ruin, Affinity.native),  # native to forgotten ruins and despoiled dungeons
-        (Biome.underground, Affinity.native),  # live in winding cave complexes and warrens
-        (Terrain.hill, Affinity.common), # often found in hilly or rocky areas
+        (
+            Development.ruin,
+            Affinity.native,
+        ),  # native to forgotten ruins and despoiled dungeons
+        (
+            Biome.underground,
+            Affinity.native,
+        ),  # live in winding cave complexes and warrens
+        (Terrain.hill, Affinity.common),  # often found in hilly or rocky areas
         (region.Feywood, Affinity.common),  # ancestral connection to faerie realms
-        (Development.wilderness, Affinity.common),  # common in wild areas away from civilization
-        (ExtraplanarInfluence.faerie, Affinity.common),  # fey origins give them affinity for fey-touched areas
+        (
+            Development.wilderness,
+            Affinity.common,
+        ),  # common in wild areas away from civilization
+        (
+            ExtraplanarInfluence.faerie,
+            Affinity.common,
+        ),  # fey origins give them affinity for fey-touched areas
         (Development.frontier, Affinity.common),  # often raid frontier settlements
         (region.CountryShire, Affinity.uncommon),  # occasionally threaten rural areas
-        (Development.settlement, Affinity.rare),  # rarely venture into established settlements
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # rarely venture into established settlements
     ],
     variants=[
         GoblinLickspittleVariant,

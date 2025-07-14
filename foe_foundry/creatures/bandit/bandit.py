@@ -88,7 +88,6 @@ class _BanditTemplate(MonsterTemplate):
         cr = settings.cr
         variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS

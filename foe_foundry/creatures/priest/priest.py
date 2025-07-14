@@ -68,9 +68,7 @@ class _PriestTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS

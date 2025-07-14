@@ -50,7 +50,6 @@ class _OwlbearTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         hp_multiplier = 0.95
         damage_multiplier = 1.0 if cr >= 6 else 1.15

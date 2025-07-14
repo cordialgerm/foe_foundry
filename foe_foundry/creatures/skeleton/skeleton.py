@@ -80,7 +80,6 @@ class _SkeletonTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -204,10 +203,6 @@ SkeletonTemplate: MonsterTemplate = _SkeletonTemplate(
             ExtraplanarInfluence.deathly,
             Affinity.native,
         ),  # areas touched by death/Styx influence
-        (
-            Development.ruin,
-            Affinity.common,
-        ),  # often found guarding fortified places
         (
             Development.dungeon,
             Affinity.common,
