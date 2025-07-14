@@ -1,0 +1,77 @@
+ body {
+     background-color: #1b1b1b;
+     color: #eee;
+ }
+
+ .monster-card {
+     background: #2a2a2a;
+     border-radius: 10px;
+     padding: 1rem;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .monster-card-image-container {
+     height: 200px;
+     border-radius: 8px;
+ }
+
+ .card-image {
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 0;
+     object-fit: contain;
+     object-position: center;
+ }
+
+ .card-image.contain {
+     object-fit: contain;
+     object-position: center;
+ }
+
+ .card-image.cover {
+     object-fit: cover;
+     object-position: center;
+ }
+
+ .card-image.blend {
+     mix-blend-mode: multiply;
+ }
+
+ .card-image.faded {
+     opacity: 0.6;
+ }
+
+ .popup-tray {
+     display: none;
+     position: absolute;
+     z-index: 20;
+     background-color: #1b1b1b;
+     border: 1px solid #444;
+     padding: 0.5rem;
+     border-radius: 6px;
+     min-width: 180px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+ }
+
+ .monster-ability[data-power-id] {
+     margin: 1rem 0;
+ }
+
+ @keyframes flash {
+     0% {
+         background-color: #444;
+     }
+
+     50% {
+         background-color: #888;
+     }
+
+     100% {
+         background-color: transparent;
+     }
+ }
+
+ .power-highlight {
+     animation: flash 1.5s ease-in-out;
+ }
