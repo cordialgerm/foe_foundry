@@ -14,13 +14,14 @@ from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 class UndeadPower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         create_date: datetime | None = None,
         reference_statblock: str = "Wight",
         power_level: float = MEDIUM_POWER,
-        power_types: List[PowerType] | None = None,
+        power_types: List[PowerType],
         **score_args,
     ):
         standard_score_args = dict(require_types=CreatureType.Undead, **score_args)
@@ -59,7 +60,7 @@ class _UndeadFortitude(UndeadPower):
             name="Undead Resilience",
             action=ActionType.Reaction,
             description=f"When damage reduces {stats.selfref} to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, \
-                unless the damage is radiant or from a critical hit. On a success, {stats.selfref} instead drops to 1 hit point.",
+                unless the damage is radiant or from a critical hit. On a success, {stats.selfref} instead drops to 1 hit point and this ability does not consume {stats.selfref}'s reaction.",
         )
         return [feature]
 
