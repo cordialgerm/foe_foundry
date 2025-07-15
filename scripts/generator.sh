@@ -28,7 +28,7 @@ fi
 
 # Launch Python HTTP server
 echo "Starting local server on http://localhost:$PORT..."
-poetry run python -m http.server $PORT --directory docs/generator-example &
+poetry run python -m http.server $PORT --directory site &
 
 # Save the PID so we can kill it later if needed
 SERVER_PID=$!
