@@ -9,10 +9,21 @@ PORT=8000
 echo "Compiling TypeScript files in src/components..."
 tsconfig="tsconfig.json"
 if [ -f "$tsconfig" ]; then
-  npx tsc --project "$tsconfig"
+  npx tsc --project "$tsconfig" --noEmit
+  echo "TypeScript compilation completed successfully."
 else
   echo "Error: tsconfig.json not found in the project root. Aborting."
   exit 1
+fi
+
+# Build the project using Vite
+echo "Building the project with Vite..."
+if command -v npx vite &> /dev/null; then
+    npx vite build
+    echo "Vite build completed successfully."
+else
+    echo "Error: Vite is not installed. Aborting."
+    exit 1
 fi
 
 # Launch Python HTTP server
@@ -23,7 +34,7 @@ poetry run python -m http.server $PORT --directory docs/generator-example &
 SERVER_PID=$!
 
 # Open in default browser
-open "http://localhost:$PORT/generator.html"
+open "http://localhost:$PORT/index.html"
 
 # Wait for user to end script manually (Ctrl+C)
 trap "echo 'Stopping server...'; kill $SERVER_PID; exit" INT

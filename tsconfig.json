@@ -8,13 +8,10 @@
         ],
         "moduleResolution": "Node",
         "outDir": "docs/generator-example/js",
-        "rootDir": "docs/generator-example/components",
+        "rootDir": "docs/generator-example/src",
         "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
         "esModuleInterop": true
-    },
-    "include": [
-        "docs/generator-example/**/*.ts"
-    ]
+    }
 }

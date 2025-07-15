@@ -4,7 +4,8 @@
     "puppeteer": "^24.12.1"
   },
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4"
   },
   "name": "foe_foundry",
   "version": "1.0.0",
