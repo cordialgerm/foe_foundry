@@ -798,4 +798,4 @@ class Raty {
     }
 }
 
-window.Raty = Raty;
+export default Raty;
