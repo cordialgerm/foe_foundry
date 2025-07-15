@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ES2020",
+        "lib": [
+            "DOM",
+            "ES2020"
+        ],
+        "moduleResolution": "Node",
+        "outDir": "docs/generator-example/js",
+        "rootDir": "docs/generator-example/components",
+        "strict": true,
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "esModuleInterop": true
+    },
+    "include": [
+        "docs/generator-example/**/*.ts"
+    ]
+}
