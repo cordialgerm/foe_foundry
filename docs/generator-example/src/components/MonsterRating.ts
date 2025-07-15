@@ -1,4 +1,4 @@
-import Raty from './raty.js';
+import Raty from '../raty/raty.js';
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 
