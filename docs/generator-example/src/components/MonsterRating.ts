@@ -2,8 +2,8 @@ import Raty from './raty.js';
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 
-@customElement('rating')
-export class Rating extends LitElement {
+@customElement('monster-rating')
+export class MonsterRating extends LitElement {
 
     @property()
     onClass = 'rating-on';
@@ -29,15 +29,35 @@ export class Rating extends LitElement {
     private raty?: Raty;
 
     static styles = css`
-        .rating-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+
+        .rating-container i {
+            font-style: normal;
+            /* Prevent italic */
+            font-size: 1.2rem;
+            margin: 0 2px;
+            cursor: pointer;
+            user-select: none;
+            transition: transform 0.15s ease;
+        }
+
+        .rating-container i:hover {
+            transform: scale(1.2);
         }
 
         .rating-label {
             font-weight: bold;
             min-width: 80px;
+        }
+
+        /* "On" (filled heart) */
+        .rating-container i.rating-on::before {
+            content: '❤️';
+        }
+
+        /* "Off" (empty heart) */
+        .rating-container i.rating-off::before {
+            content: '❤️';
+            opacity: 0.3;
         }
     `;
 
@@ -48,6 +68,10 @@ export class Rating extends LitElement {
     private initializeRating() {
         const container = this.shadowRoot?.querySelector('.rating-container');
         if (!container) return;
+        if (this.raty) {
+            this.raty.cancel(true); // Clean up previous instance
+            container.innerHTML = ''; // Ensure previous elements are removed
+        }
 
         // Set initial label
         this.currentLabel = this.hints[this.score - 1] || '';
@@ -97,10 +121,10 @@ export class Rating extends LitElement {
 
     render() {
         return html`
-            <div class="rating-wrapper">
-                <div class="rating-container"></div>
+            <span class="rating-wrapper">
+                <span class="rating-container"></span>
                 <span class="rating-label">${this.currentLabel}</span>
-            </div>
+            </span>
         `;
     }
 }

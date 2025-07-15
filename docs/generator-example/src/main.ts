@@ -1,2 +1,2 @@
 import './components/SvgIcon';
-import './components/Raty';
+import './components/MonsterRating';
