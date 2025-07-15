@@ -1,43 +1,106 @@
 import Raty from './raty.js';
+import { LitElement, html, css } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
 
-const heartHints = ['Vulnerable', 'Frail', 'Normal', 'Tough', 'Resilient'];
-const skullHints = ['Feeble', 'Weak', 'Normal', 'Savage', 'Brutal'];
-const heartLabel = document.querySelector('#hp-raty-label') as HTMLElement;
-const damageLabel = document.querySelector('#damage-raty-label') as HTMLElement;
+@customElement('rating')
+export class Rating extends LitElement {
 
-const heartElement = document.querySelector('#hp-raty') as HTMLElement;
-const damageElement = document.querySelector('#damage-raty') as HTMLElement;
+    @property()
+    onClass = 'rating-on';
 
-if (heartElement) {
-    const ratyHeart = new Raty(heartElement, {
-        number: 5,
-        starType: 'i',
-        score: 3,
-        starOn: 'rating-on',
-        starOff: 'rating-off',
-        hints: [...heartHints],  // copy so original array is not modified
-        click: (score: number) => {
-            if (heartLabel) {
-                heartLabel.textContent = heartHints[score - 1];
-            }
+    @property()
+    offClass = 'rating-off';
+
+    @property({ type: Array })
+    hints = ['Very Low', 'Low', 'Medium', 'High', 'Very High'];
+
+    @property({ type: Number })
+    score = 3;
+
+    @property({ type: Number })
+    number = 5;
+
+    @property()
+    starType = 'i';
+
+    @state()
+    private currentLabel = 'Medium';
+
+    private raty?: Raty;
+
+    static styles = css`
+        .rating-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-    });
-    ratyHeart.init();
-}
 
-if (damageElement) {
-    const ratyDamage = new Raty(damageElement, {
-        number: 5,
-        starType: 'i',
-        score: 3,
-        starOn: 'rating-on',
-        starOff: 'rating-off',
-        hints: [...skullHints],  // copy so original array is not modified
-        click: (score: number) => {
-            if (damageLabel) {
-                damageLabel.textContent = skullHints[score - 1];
-            }
+        .rating-label {
+            font-weight: bold;
+            min-width: 80px;
         }
-    });
-    ratyDamage.init();
+    `;
+
+    firstUpdated() {
+        this.initializeRating();
+    }
+
+    private initializeRating() {
+        const container = this.shadowRoot?.querySelector('.rating-container');
+        if (!container) return;
+
+        // Set initial label
+        this.currentLabel = this.hints[this.score - 1] || '';
+
+        this.raty = new Raty(container as HTMLElement, {
+            number: this.number,
+            starType: this.starType,
+            score: this.score,
+            starOn: this.onClass,
+            starOff: this.offClass,
+            hints: [...this.hints],
+            click: (score: number) => {
+                this.currentLabel = this.hints[score - 1] || '';
+                this.dispatchEvent(new CustomEvent('rating-change', {
+                    detail: { score, label: this.currentLabel },
+                    bubbles: true
+                }));
+            }
+        });
+
+        this.raty.init();
+    }
+
+    updated(changedProperties: Map<string | number | symbol, unknown>) {
+        // Re-initialize if key properties change
+        if (changedProperties.has('hints') ||
+            changedProperties.has('score') ||
+            changedProperties.has('number')) {
+            this.initializeRating();
+        }
+    }
+
+    disconnectedCallback() {
+        super.disconnectedCallback();
+        // Clean up if needed
+        this.raty = undefined;
+    }
+
+    getScore(): number | null {
+        return this.raty?.getScore() ?? null;
+    }
+
+    setScore(score: number): void {
+        this.raty?.setScore(score);
+        this.currentLabel = this.hints[score - 1] || '';
+    }
+
+    render() {
+        return html`
+            <div class="rating-wrapper">
+                <div class="rating-container"></div>
+                <span class="rating-label">${this.currentLabel}</span>
+            </div>
+        `;
+    }
 }
