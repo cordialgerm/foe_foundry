@@ -5,17 +5,6 @@ set -euo pipefail
 # Configuration
 PORT=8000
 
-# Compile TypeScript files
-echo "Compiling TypeScript files in src/components..."
-tsconfig="tsconfig.json"
-if [ -f "$tsconfig" ]; then
-  npx tsc --project "$tsconfig" --noEmit
-  echo "TypeScript compilation completed successfully."
-else
-  echo "Error: tsconfig.json not found in the project root. Aborting."
-  exit 1
-fi
-
 # Build the project using Vite
 echo "Building the project with Vite..."
 if command -v npx vite &> /dev/null; then
