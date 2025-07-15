@@ -1,0 +1,33 @@
+.raty i {
+    font-style: normal;
+    /* Prevent italic */
+    font-size: 1.2rem;
+    margin: 0 2px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.15s ease;
+}
+
+.raty i:hover {
+    transform: scale(1.2);
+}
+
+/* "On" (filled heart) */
+.raty-heart i.rating-on::before {
+    content: '❤️';
+}
+
+/* "Off" (empty heart) */
+.raty-heart i.rating-off::before {
+    content: '🤍';
+}
+
+/* Inactive (unselected) skulls */
+.raty-skull i.rating-off::before {
+    content: "☠️";
+    opacity: 0.3;
+}
+
+.raty-skull i.rating-on::before {
+    content: "☠️";
+}
