@@ -23,13 +23,15 @@ export class MonsterRating extends LitElement {
     @property()
     starType = 'i';
 
+    @property()
+    emoji = '❤️'; // Default emoji is a heart
+
     @state()
     private currentLabel = 'Medium';
 
     private raty?: Raty;
 
     static styles = css`
-
         .rating-container i {
             font-style: normal;
             /* Prevent italic */
@@ -48,20 +50,32 @@ export class MonsterRating extends LitElement {
             font-weight: bold;
             min-width: 80px;
         }
-
-        /* "On" (filled heart) */
-        .rating-container i.rating-on::before {
-            content: '❤️';
-        }
-
-        /* "Off" (empty heart) */
-        .rating-container i.rating-off::before {
-            content: '❤️';
-            opacity: 0.3;
-        }
     `;
 
+    private updateEmojiStyles() {
+        // Remove any existing dynamic style
+        const existingStyle = this.shadowRoot?.querySelector('#emoji-style');
+        if (existingStyle) {
+            existingStyle.remove();
+        }
+
+        // Create new style element with current emoji
+        const style = document.createElement('style');
+        style.id = 'emoji-style';
+        style.textContent = `
+            .rating-container i.rating-on::before {
+                content: '${this.emoji}';
+            }
+            .rating-container i.rating-off::before {
+                content: '${this.emoji}';
+                opacity: 0.3;
+            }
+        `;
+        this.shadowRoot?.appendChild(style);
+    }
+
     firstUpdated() {
+        this.updateEmojiStyles();
         this.initializeRating();
     }
 
@@ -96,6 +110,11 @@ export class MonsterRating extends LitElement {
     }
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
+        // Update emoji styles if emoji changed
+        if (changedProperties.has('emoji')) {
+            this.updateEmojiStyles();
+        }
+
         // Re-initialize if key properties change
         if (changedProperties.has('hints') ||
             changedProperties.has('score') ||

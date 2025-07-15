@@ -20,14 +20,17 @@
             <div class="col-md-5 position-relative">
                 <h2>Example Icon <power-icon src="../img/icons/favicon.svg"></power-icon></h2>
 
-                <monster-rating></monster-rating>
+                <div class="d-flex align-items-center mb-3">
+                    <monster-rating emoji="❤️"></monster-rating>
+                    <monster-rating emoji="💔"></monster-rating>
+                    <monster-rating id="skull" emoji="💀"></monster-rating>
+                </div>
             </div>
-
             <!-- Statblock Panel -->
             <div class="col-md-7">
                 <h2 class="mb-4">Statblock</h2>
                 <div class="monster-ability" data-power-id="power-grave-touch">
-                    <strong>Grave Touch.</strong> The skeleton’s attacks deal an extra 1d6 necrotic damage.
+                    <strong>Grave Touch.</strong> The skeleton's attacks deal an extra 1d6 necrotic damage.
                 </div>
                 <div class="monster-ability" data-power-id="power-bone-lance">
                     <strong>Bone Lance.</strong> The skeleton hurls a sharpened rib bone up to 60 ft.
