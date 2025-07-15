@@ -30,7 +30,7 @@ export class PowerIcon extends LitElement {
     }
 
     render() {
-        return html`<span>${unsafeHTML(this.svgContent)}</span>`;
+        return html`<span class="svg-icon placeholder">${unsafeHTML(this.svgContent)}</span>`;
     }
 }
 
@@ -57,7 +57,7 @@ async function cleanAndInjectSVGFromURL(url: string, targetElement: HTMLElement,
         // Replace the contents of the target <div>
         targetElement.innerHTML = '';
         targetElement.appendChild(svgEl);
-        targetElement.classList.remove('lazy-icon-placeholder');
+        targetElement.classList.remove('placeholder');
     }
     catch (error) {
         console.warn('Error loading SVG icon:', url, error);

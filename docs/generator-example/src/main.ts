@@ -1,1 +1,1 @@
-import './components/PowerIcon';
+import './components/SvgIcon';
