@@ -183,3 +183,15 @@ function randomizeMasks() {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+// AnchorJS setup for linking to headings
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize anchor.js for linking to headings
+  const anchors = new window.AnchorJS();
+  anchors.options = {
+    placement: 'right',
+    class: 'anchor-link',
+  };
+  anchors.add('h1, h2, h3');
+});

@@ -1,9 +1,11 @@
 {% from 'macros.html.j2' import features_block, property %}
 
 {% if icon %}
-<{{header_tag}} class="power-name">{{icon}} {{ power.name }}</{{header_tag}}>
+<{{header_tag}} id="{{power.key}}" data-power="{{power.key}}" class="power-name">{{icon}} {{ power.name }}
+</{{header_tag}}>
 {% else %}
-<{{header_tag}} class="power-name">{{ power.name }}</{{header_tag}}>
+<{{header_tag}} id="{{power.key}}" data-power="{{power.key}}" class="power-name">{{ power.name }}
+</{{header_tag}}>
 {% endif %}
 
 <div class="power-block {{ '' if power.columns_suggested else 'power-block-no-columns'}}" data-power="{{power.key}}">
