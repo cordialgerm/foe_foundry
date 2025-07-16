@@ -1,4 +1,5 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
+import { Monster, MonsterStore } from './monster';
 
 // Mock data based on generator_old.html
 const mockPowers: Record<string, Power[]> = {
@@ -77,6 +78,16 @@ const mockLoadouts: PowerLoadout[] = [
     }
 ];
 
+const mockSkeleton: Monster = {
+    key: 'skeletal',
+    name: 'Skeleton',
+    creature_type: 'undead',
+    size: 'Medium',
+    cr: 'CR 1/4',
+    tag_line: 'A fearsome undead warrior',
+    loadouts: mockLoadouts
+};
+
 export class MockPowerStore implements PowerStore {
 
     getPowerLoadouts(monsterKey: string): PowerLoadout[] {
@@ -88,7 +99,21 @@ export class MockPowerStore implements PowerStore {
     }
 }
 
+export class MockMonsterStore implements MonsterStore {
+    getMonster(key: string): Monster {
+        // Simulate async behavior
+        // await new Promise(resolve => setTimeout(resolve, 100));
+
+        // For this mock, return the skeleton monster for any key
+        return mockSkeleton;
+    }
+}
+
 // Function to initialize the mock power store
 export function initializeMockPowerStore(): MockPowerStore {
     return new MockPowerStore();
+}
+
+export function initializeMockMonsterStore(): MockMonsterStore {
+    return new MockMonsterStore();
 }

@@ -1,9 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { consume } from '@lit/context';
-import { Task } from '@lit/task';
-import { initializeMockPowerStore } from './mock';
-import { PowerStore, PowerLoadout as PowerLoadoutData, Power } from './powers';
+import { initializeMockPowerStore } from '../data/mock';
+import { PowerLoadout as PowerLoadoutData, Power } from '../data/powers';
 import './SvgIcon';
 
 @customElement('power-loadout')
