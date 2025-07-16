@@ -8,7 +8,7 @@ import './SvgIcon';
 
 @customElement('power-loadout')
 export class PowerLoadout extends LitElement {
-    static styles = css`
+  static styles = css`
     :host {
       display: block;
     }
@@ -123,42 +123,49 @@ export class PowerLoadout extends LitElement {
     }
   `;
 
-    @property({ type: String, attribute: 'monster-key' })
-    monsterKey = '';
+  @property({ type: String, attribute: 'monster-key' })
+  monsterKey = '';
 
-    @property({ type: String, attribute: 'loadout-key' })
-    loadoutKey = '';
+  @property({ type: String, attribute: 'loadout-key' })
+  loadoutKey = '';
 
-    @state()
-    private selectedPower?: Power;
+  @state()
+  private selectedPower?: Power;
 
-    @state()
-    private dropdownOpen = false;
+  @state()
+  private dropdownOpen = false;
 
-    private toggleDropdown() {
-        this.dropdownOpen = !this.dropdownOpen;
+  private toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  private selectPower(power: Power) {
+    this.selectedPower = power;
+    this.dropdownOpen = false;
+
+    // Dispatch a custom event to notify the parent about the selected power
+    this.dispatchEvent(new CustomEvent('power-selected', {
+      detail: { power },
+      bubbles: true,
+      composed: true
+    }));
+  }
+
+  private handleKeydown(event: KeyboardEvent) {
+    if (event.key === 'Escape') {
+      this.dropdownOpen = false;
+    }
+  }
+
+  private renderLoadoutContent(loadout: PowerLoadoutData) {
+    // Set initial selected power if available and none is selected
+    if (loadout?.powers?.length && !this.selectedPower) {
+      this.selectedPower = loadout.powers[0];
     }
 
-    private selectPower(power: Power) {
-        this.selectedPower = power;
-        this.dropdownOpen = false;
-    }
+    const currentPower = this.selectedPower || loadout.powers?.[0];
 
-    private handleKeydown(event: KeyboardEvent) {
-        if (event.key === 'Escape') {
-            this.dropdownOpen = false;
-        }
-    }
-
-    private renderLoadoutContent(loadout: PowerLoadoutData) {
-        // Set initial selected power if available and none is selected
-        if (loadout?.powers?.length && !this.selectedPower) {
-            this.selectedPower = loadout.powers[0];
-        }
-
-        const currentPower = this.selectedPower || loadout.powers?.[0];
-
-        return html`
+    return html`
       <div class="power-slot-block" @keydown=${this.handleKeydown}>
         <div class="power-slot-header">
           <h4 class="power-slot-title">${loadout.name}</h4>
@@ -204,15 +211,15 @@ export class PowerLoadout extends LitElement {
         </div>
       </div>
     `;
-    }
+  }
 
-    render() {
-        const powerStore = initializeMockPowerStore();
-        const loadouts = powerStore.getPowerLoadouts(this.monsterKey) || [];
-        const loadout = loadouts.find(l => l.key === this.loadoutKey);
-        if (!loadout) {
-            return html`<p>No loadout found for key "${this.loadoutKey}"</p>`;
-        }
-        return this.renderLoadoutContent(loadout);
+  render() {
+    const powerStore = initializeMockPowerStore();
+    const loadouts = powerStore.getPowerLoadouts(this.monsterKey) || [];
+    const loadout = loadouts.find(l => l.key === this.loadoutKey);
+    if (!loadout) {
+      return html`<p>No loadout found for key "${this.loadoutKey}"</p>`;
     }
+    return this.renderLoadoutContent(loadout);
+  }
 }
