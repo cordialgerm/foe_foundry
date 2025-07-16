@@ -78,9 +78,10 @@ const mockLoadouts: PowerLoadout[] = [
 ];
 
 export class MockPowerStore implements PowerStore {
-    async getPowerLoadouts(monsterKey: string): Promise<PowerLoadout[]> {
-        // Simulate async behavior
-        await new Promise(resolve => setTimeout(resolve, 100));
+
+    getPowerLoadouts(monsterKey: string): PowerLoadout[] {
+        // // Simulate async behavior
+        // await new Promise(resolve => setTimeout(resolve, 100));
 
         // For this mock, return the same loadouts for any monster
         return mockLoadouts;

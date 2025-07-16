@@ -1,6 +1,11 @@
  body {
      background-color: #1b1b1b;
      color: #eee;
+
+     /* Bootstrap-style CSS custom properties for dark theme */
+     --bs-secondary: #6c757d;
+     --bs-dark: #212529;
+     --bs-light: #f8f9fa;
  }
 
  .monster-card {

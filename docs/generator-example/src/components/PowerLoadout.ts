@@ -1,7 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { consume } from '@lit/context';
-import { powerContext } from './context';
+import { Task } from '@lit/task';
+import { initializeMockPowerStore } from './mock';
 import { PowerStore, PowerLoadout as PowerLoadoutData, Power } from './powers';
 import './SvgIcon';
 
@@ -122,50 +123,17 @@ export class PowerLoadout extends LitElement {
     }
   `;
 
-    @property()
+    @property({ type: String, attribute: 'monster-key' })
     monsterKey = '';
 
-    @property()
+    @property({ type: String, attribute: 'loadout-key' })
     loadoutKey = '';
-
-    @consume({ context: powerContext, subscribe: true })
-    @state()
-    private powerStore?: PowerStore;
-
-    @state()
-    private loadout?: PowerLoadoutData;
 
     @state()
     private selectedPower?: Power;
 
     @state()
     private dropdownOpen = false;
-
-    async firstUpdated() {
-        await this.loadPowerLoadout();
-    }
-
-    async updated(changedProperties: Map<string, any>) {
-        if (changedProperties.has('monsterKey') || changedProperties.has('loadoutKey')) {
-            await this.loadPowerLoadout();
-        }
-    }
-
-    private async loadPowerLoadout() {
-        if (!this.powerStore || !this.monsterKey || !this.loadoutKey) return;
-
-        try {
-            const loadouts = await this.powerStore.getPowerLoadouts(this.monsterKey);
-            this.loadout = loadouts.find(l => l.key === this.loadoutKey);
-
-            // Set initial selected power if available
-            if (this.loadout?.powers?.length && !this.selectedPower) {
-                this.selectedPower = this.loadout.powers[0];
-            }
-        } catch (error) {
-            console.error('Failed to load power loadout:', error);
-        }
-    }
 
     private toggleDropdown() {
         this.dropdownOpen = !this.dropdownOpen;
@@ -182,18 +150,19 @@ export class PowerLoadout extends LitElement {
         }
     }
 
-    render() {
-        if (!this.loadout) {
-            return html`<div class="power-slot-block">Loading...</div>`;
+    private renderLoadoutContent(loadout: PowerLoadoutData) {
+        // Set initial selected power if available and none is selected
+        if (loadout?.powers?.length && !this.selectedPower) {
+            this.selectedPower = loadout.powers[0];
         }
 
-        const currentPower = this.selectedPower || this.loadout.powers?.[0];
+        const currentPower = this.selectedPower || loadout.powers?.[0];
 
         return html`
       <div class="power-slot-block" @keydown=${this.handleKeydown}>
         <div class="power-slot-header">
-          <h4 class="power-slot-title">${this.loadout.name}</h4>
-          <span class="power-slot-flavor">${this.loadout.flavorText}</span>
+          <h4 class="power-slot-title">${loadout.name}</h4>
+          <span class="power-slot-flavor">${loadout.flavorText}</span>
         </div>
 
         <div class="position-relative">
@@ -219,7 +188,7 @@ export class PowerLoadout extends LitElement {
           </button>
 
           <div class="dropdown-menu ${this.dropdownOpen ? 'show' : 'd-none'}">
-            ${this.loadout.powers?.map(power => html`
+            ${loadout.powers?.map((power: Power) => html`
               <button
                 class="dropdown-item"
                 @click=${() => this.selectPower(power)}
@@ -235,5 +204,15 @@ export class PowerLoadout extends LitElement {
         </div>
       </div>
     `;
+    }
+
+    render() {
+        const powerStore = initializeMockPowerStore();
+        const loadouts = powerStore.getPowerLoadouts(this.monsterKey) || [];
+        const loadout = loadouts.find(l => l.key === this.loadoutKey);
+        if (!loadout) {
+            return html`<p>No loadout found for key "${this.loadoutKey}"</p>`;
+        }
+        return this.renderLoadoutContent(loadout);
     }
 }
