@@ -1,16 +1,239 @@
-// <!-- Power Slot Block: Martial Memories -->
-// <div class="mb-3 p-3 border border-secondary rounded bg-dark position-relative">
-//     <div class="d-flex align-items-baseline justify-content-between mb-2 flex-wrap">
-//         <h4 class="mb-0 me-2">Martial Memories</h4>
-//         <span class="fst-italic small">Half-remember martial prowess</span>
-//     </div>
+import { LitElement, html, css } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
+import { consume } from '@lit/context';
+import { powerContext } from './context';
+import { PowerStore, PowerLoadout as PowerLoadoutData, Power } from './powers';
+import './SvgIcon';
 
-//     <button class="btn btn-outline-light w-100 text-start d-flex align-items-center gap-2">
-//         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-//             <path fill="currentColor"
-//                 d="m83.5 25-32 64v87c-.67 15.934 3.847 27.945 13.793 37.816 3.442 3.367 7.892 6.805 13.102 10.227L83.5 89l5.344 141.326c7.778 4.3 16.61 8.477 26.064 12.344.194.08.397.155.592.234V89l-32-64zm216.666 0C281.833 25 263.5 61.667 263.5 98.334c0 17.585 4.223 35.16 10.635 48.7 9.11 1.493 18.938 3.565 29.187 6.19 4.395-7.873 14.92-14.213 40.178-16.87V72.577C319.173 60.896 300.166 38.2 300.166 25zm146.668 0c0 13.2-19.007 35.896-43.334 47.576v63.78c43.31 4.554 43.334 19.928 43.334 35.31 18.333 0 36.666-36.665 36.666-73.332C483.5 61.667 465.167 25 446.834 25zM361.5 50v122.852a369.79 369.79 0 0 1 24 11.148V50h-24zm-127 72.92-58.45 61.9 58.45 58.453V208h9c34.25 0 90.23 12.187 135.408 30.67 22.59 9.24 42.344 19.89 55.385 32.646 6.52 6.38 11.518 13.45 13.514 21.65.867 3.562.914 7.297.414 11.014 7.95-19.23 4.975-35.52-5.345-51.625-11.208-17.49-31.88-33.91-56.424-47.478C337.367 177.743 272.5 162 243.5 162h-9v-39.08zm-195.72 71.1c-7.95 19.23-4.975 35.52 5.345 51.625 11.208 17.49 31.88 33.91 56.424 47.478C149.633 320.257 214.5 336 243.5 336h9v39.08l58.45-61.9-58.45-58.453V290h-9c-34.25 0-90.23-12.187-135.408-30.67-22.59-9.24-42.344-19.89-55.385-32.646-6.52-6.38-11.518-13.45-13.514-21.65-.867-3.562-.914-7.297-.414-11.014zm322.72 57.212V368h24V261.23a276.984 276.984 0 0 0-13.408-5.9c-3.446-1.41-7-2.766-10.592-4.098zm-310 29.862v41.44h23.17l.885-23.39c-8.66-5.593-16.772-11.594-24.055-18.05zm40.313 27.767.517 13.675h23.17v-1.777c-8.056-3.678-15.987-7.64-23.66-11.88l-.028-.017zM28.5 340.536V360h110v-19.465h-110zM63.5 375v80c-8 0-28 32 20 32s28-32 20-32v-80h-40zm298 11v94h24v-94h-24z" />
-//         </svg>
-//         <span>Coordinated Strike</span>
-//     </button>
+@customElement('power-loadout')
+export class PowerLoadout extends LitElement {
+    static styles = css`
+    :host {
+      display: block;
+    }
 
-// </div>
+    .power-slot-block {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--bs-secondary);
+      border-radius: 0.375rem;
+      background-color: var(--bs-dark);
+      position: relative;
+    }
+
+    .power-slot-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .power-slot-title {
+      margin-bottom: 0;
+      margin-right: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    .power-slot-flavor {
+      font-style: italic;
+      font-size: 0.875rem;
+    }
+
+    .power-button {
+      border: 1px solid var(--bs-light);
+      background: transparent;
+      color: var(--bs-light);
+      width: 100%;
+      text-align: start;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .power-button:hover {
+      background-color: var(--bs-light);
+      color: var(--bs-dark);
+    }
+
+    .power-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .dropdown-menu {
+      background-color: var(--bs-dark);
+      border: 1px solid var(--bs-secondary);
+      border-radius: 0.375rem;
+      padding: 0.25rem 0;
+      margin-top: 0.25rem;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      color: var(--bs-light);
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: start;
+      transition: background-color 0.15s ease-in-out;
+    }
+
+    .dropdown-item:hover {
+      background-color: var(--bs-secondary);
+      color: var(--bs-light);
+    }
+
+    .dropdown-item:focus {
+      background-color: var(--bs-secondary);
+      color: var(--bs-light);
+      outline: none;
+    }
+
+    .dropdown-chevron {
+      margin-left: auto;
+      transition: transform 0.15s ease-in-out;
+    }
+
+    .dropdown-chevron.open {
+      transform: rotate(180deg);
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .d-none {
+      display: none !important;
+    }
+  `;
+
+    @property()
+    monsterKey = '';
+
+    @property()
+    loadoutKey = '';
+
+    @consume({ context: powerContext, subscribe: true })
+    @state()
+    private powerStore?: PowerStore;
+
+    @state()
+    private loadout?: PowerLoadoutData;
+
+    @state()
+    private selectedPower?: Power;
+
+    @state()
+    private dropdownOpen = false;
+
+    async firstUpdated() {
+        await this.loadPowerLoadout();
+    }
+
+    async updated(changedProperties: Map<string, any>) {
+        if (changedProperties.has('monsterKey') || changedProperties.has('loadoutKey')) {
+            await this.loadPowerLoadout();
+        }
+    }
+
+    private async loadPowerLoadout() {
+        if (!this.powerStore || !this.monsterKey || !this.loadoutKey) return;
+
+        try {
+            const loadouts = await this.powerStore.getPowerLoadouts(this.monsterKey);
+            this.loadout = loadouts.find(l => l.key === this.loadoutKey);
+
+            // Set initial selected power if available
+            if (this.loadout?.powers?.length && !this.selectedPower) {
+                this.selectedPower = this.loadout.powers[0];
+            }
+        } catch (error) {
+            console.error('Failed to load power loadout:', error);
+        }
+    }
+
+    private toggleDropdown() {
+        this.dropdownOpen = !this.dropdownOpen;
+    }
+
+    private selectPower(power: Power) {
+        this.selectedPower = power;
+        this.dropdownOpen = false;
+    }
+
+    private handleKeydown(event: KeyboardEvent) {
+        if (event.key === 'Escape') {
+            this.dropdownOpen = false;
+        }
+    }
+
+    render() {
+        if (!this.loadout) {
+            return html`<div class="power-slot-block">Loading...</div>`;
+        }
+
+        const currentPower = this.selectedPower || this.loadout.powers?.[0];
+
+        return html`
+      <div class="power-slot-block" @keydown=${this.handleKeydown}>
+        <div class="power-slot-header">
+          <h4 class="power-slot-title">${this.loadout.name}</h4>
+          <span class="power-slot-flavor">${this.loadout.flavorText}</span>
+        </div>
+
+        <div class="position-relative">
+          <button
+            class="power-button"
+            @click=${this.toggleDropdown}
+            aria-expanded=${this.dropdownOpen}
+            aria-haspopup="true"
+          >
+            ${currentPower ? html`
+              <power-icon
+                class="power-icon"
+                src="${currentPower.icon}"
+              ></power-icon>
+              <span>${currentPower.name}</span>
+            ` : html`
+              <span>No powers available</span>
+            `}
+            <svg class="dropdown-chevron ${this.dropdownOpen ? 'open' : ''}"
+                 width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 10.5L3.5 6h9L8 10.5z"/>
+            </svg>
+          </button>
+
+          <div class="dropdown-menu ${this.dropdownOpen ? 'show' : 'd-none'}">
+            ${this.loadout.powers?.map(power => html`
+              <button
+                class="dropdown-item"
+                @click=${() => this.selectPower(power)}
+              >
+                <power-icon
+                  class="power-icon"
+                  src="${power.icon}"
+                ></power-icon>
+                <span>${power.name}</span>
+              </button>
+            `)}
+          </div>
+        </div>
+      </div>
+    `;
+    }
+}

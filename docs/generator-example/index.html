@@ -13,39 +13,53 @@
     <link rel="stylesheet" href="raty.css" />
 </head>
 
-<body>
-    <div class="container-fluid py-4">
-        <div class="row g-4">
-            <!-- Monster Card Panel -->
-            <div class="col-md-5 position-relative">
-                <h2>Example Icon <power-icon src="../img/icons/favicon.svg"></power-icon></h2>
+<app-root>
 
-                <div class="d-flex align-items-center mb-3">
-                    <monster-rating emoji="❤️"></monster-rating>
-                    <monster-rating emoji="💔"></monster-rating>
-                    <monster-rating id="skull" emoji="💀"></monster-rating>
-                </div>
+    <body>
+        <div class="container-fluid py-4">
+            <div class="row g-4">
+                <!-- Monster Card Panel -->
+                <div class="col-md-5 position-relative">
+                    <h2>Example Icon <power-icon src="../img/icons/favicon.svg"></power-icon></h2>
 
-                <monster-art monster-image="../img/monsters/skeleton.webp"
-                    background-image="img/backgrounds/textures/undead-painting.webp" image-mode="contain" blend-mode>
-                </monster-art>
-            </div>
-            <!-- Statblock Panel -->
-            <div class="col-md-7">
-                <h2 class="mb-4">Statblock</h2>
-                <div class="monster-ability" data-power-id="power-grave-touch">
-                    <strong>Grave Touch.</strong> The skeleton's attacks deal an extra 1d6 necrotic damage.
+                    <div class="d-flex align-items-center mb-3">
+                        <monster-rating emoji="❤️"></monster-rating>
+                        <monster-rating emoji="💔"></monster-rating>
+                        <monster-rating id="skull" emoji="💀"></monster-rating>
+                    </div>
+
+                    <monster-art monster-image="../img/monsters/skeleton.webp"
+                        background-image="img/backgrounds/textures/undead-painting.webp" image-mode="contain"
+                        blend-mode>
+                    </monster-art>
+
+
+                    <!-- Power Loadout Components -->
+                    <power-loadout monster-key="skeleton" loadout-key="skeletal-boon">
+                    </power-loadout>
+
+                    <power-loadout monster-key="skeleton" loadout-key="martial-memories">
+                    </power-loadout>
+
+
                 </div>
-                <div class="monster-ability" data-power-id="power-bone-lance">
-                    <strong>Bone Lance.</strong> The skeleton hurls a sharpened rib bone up to 60 ft.
+                <!-- Statblock Panel -->
+                <div class="col-md-7">
+                    <h2 class="mb-4">Statblock</h2>
+                    <div class="monster-ability" data-power-id="power-grave-touch">
+                        <strong>Grave Touch.</strong> The skeleton's attacks deal an extra 1d6 necrotic damage.
+                    </div>
+                    <div class="monster-ability" data-power-id="power-bone-lance">
+                        <strong>Bone Lance.</strong> The skeleton hurls a sharpened rib bone up to 60 ft.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="src/main.ts"></script>
-</body>
+        <!-- Bootstrap 5 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="src/main.ts"></script>
+    </body>
+</app-root>
 
 </html>
