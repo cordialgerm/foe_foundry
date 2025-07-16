@@ -1,6 +1,7 @@
 from typing import List
 
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import (
     conjuration,
     divination,
@@ -42,7 +43,12 @@ DivinationExpertSpells = (
 
 class _DivinationWizard(WizardPower):
     def __init__(self, **kwargs):
-        super().__init__(creature_name="Diviner", icon="crystal-ball", **kwargs)
+        super().__init__(
+            creature_name="Diviner",
+            icon="crystal-ball",
+            power_types=[PowerType.Magic, PowerType.Buff],
+            **kwargs,
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(

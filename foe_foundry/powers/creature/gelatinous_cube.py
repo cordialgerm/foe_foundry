@@ -6,11 +6,12 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -26,6 +27,7 @@ class GelatinousCubePower(PowerWithStandardScoring):
         source: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 4, 17),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -35,8 +37,9 @@ class GelatinousCubePower(PowerWithStandardScoring):
             icon="transparent-slime",
             reference_statblock="Gelatinous Cube",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=is_gelatinous_cube,
                 require_types=[CreatureType.Ooze],
@@ -52,6 +55,7 @@ class _EngulfInOoze(GelatinousCubePower):
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
             require_max_cr=1,
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -78,6 +82,7 @@ class _MetabolicSurge(GelatinousCubePower):
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
             require_max_cr=1,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -97,6 +102,7 @@ class _PerfectlyTransparant(GelatinousCubePower):
             name="Perfectly Transparent",
             source="Foe Foundry",
             power_level=MEDIUM_POWER,
+            power_types=[PowerType.Defense, PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

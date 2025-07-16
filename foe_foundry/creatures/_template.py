@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Iterable
 
 from foe_foundry.attack_template import AttackTemplate
+from foe_foundry.environs import EnvironmentAffinity
 from foe_foundry.features import Feature
 from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
@@ -30,10 +31,10 @@ class MonsterTemplate:
     name: str
     tag_line: str
     description: str
-    environments: list[str]  # TODO - standardize
     treasure: list[str]
     variants: list[MonsterVariant]
     species: list[CreatureSpecies]
+    environments: list[EnvironmentAffinity] = field(default_factory=list)
     is_sentient_species: bool = False
     lore_md: str | None = field(init=False)
 

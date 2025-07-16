@@ -11,7 +11,14 @@ from ...role_types import MonsterRole
 from ...spells import CasterType, evocation
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class CleverPower(PowerWithStandardScoring):
@@ -23,6 +30,7 @@ class CleverPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         reference_statblock: str = "Spy",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -35,13 +43,14 @@ class CleverPower(PowerWithStandardScoring):
         super().__init__(
             name=name,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             icon=icon,
             theme="clever",
             reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Buff],
         )
 
 
@@ -52,6 +61,7 @@ class _IdentifyWeakness(CleverPower):
             icon="magnifying-glass",
             source="Foe Foundry",
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -87,6 +97,7 @@ class _ArcaneMark(CleverPower):
             require_attack_types=AttackType.RangedSpell,
             bonus_types=CreatureType.Fey,
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -107,7 +118,10 @@ class _ArcaneMark(CleverPower):
 class _UnsettlingWords(CleverPower):
     def __init__(self):
         super().__init__(
-            name="Unsettling Words", icon="nailed-head", source="Foe Foundry"
+            name="Unsettling Words",
+            icon="nailed-head",
+            source="Foe Foundry",
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -7,10 +7,11 @@ from foe_foundry.utils import easy_multiple_of_five
 from ...creature_types import CreatureType
 from ...damage import Condition
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import CasterType
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import HIGH_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class TotemicPower(PowerWithStandardScoring):
@@ -21,14 +22,16 @@ class TotemicPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = HIGH_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             power_level=power_level,
+            power_types=power_types or [PowerType.Magic, PowerType.Summon],
             theme="totemic",
             reference_statblock="Druid",
             create_date=create_date,
@@ -46,6 +49,7 @@ class _AncestralTotem(TotemicPower):
             name="Ancestral Totem",
             source="Foe Foundry",
             icon="totem",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Buff],
             require_roles=[MonsterRole.Support, MonsterRole.Leader],
             require_cr=1,
         )
@@ -69,6 +73,7 @@ class _EarthbindTotem(TotemicPower):
             name="Earthbind Totem",
             source="Foe Foundry",
             icon="bug-net",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Debuff],
             require_roles=[MonsterRole.Controller, MonsterRole.Artillery],
             require_cr=1,
         )
@@ -94,6 +99,7 @@ class _WindfuryToten(TotemicPower):
             name="Windfury Totem",
             source="Foe Foundry",
             icon="tornado",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Buff],
             require_roles=[
                 MonsterRole.Support,
                 MonsterRole.Leader,
@@ -122,6 +128,7 @@ class _GuardianTotem(TotemicPower):
             name="Guardian Totem",
             source="Foe Foundry",
             icon="totem-mask",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Defense],
             require_roles=[
                 MonsterRole.Defender,
                 MonsterRole.Support,
@@ -151,6 +158,7 @@ class _HealingTotem(TotemicPower):
             name="Healing Totem",
             source="Foe Foundry",
             icon="caduceus",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Healing],
             require_roles=[MonsterRole.Support, MonsterRole.Leader],
             require_cr=1,
         )
@@ -174,6 +182,7 @@ class _SpiritChainsTotem(TotemicPower):
             name="Spirit Chains Totem",
             icon="crossed-chains",
             source="Foe Foundry",
+            power_types=[PowerType.Magic, PowerType.Summon, PowerType.Debuff],
             require_roles=[
                 MonsterRole.Controller,
                 MonsterRole.Support,

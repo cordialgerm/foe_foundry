@@ -1,3 +1,10 @@
+from foe_foundry.environs import (
+    Affinity,
+    Biome,
+    Development,
+    ExtraplanarInfluence,
+    region,
+)
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import Unarmored
@@ -63,7 +70,6 @@ class _ZombieTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -158,8 +164,29 @@ ZombieTemplate: MonsterTemplate = _ZombieTemplate(
     name="Zombie",
     tag_line="Relentless Reanimated Corpses",
     description="Zombies are unthinking, reanimated corpses, often gruesomely marred by decay and lethal traumas. They serve whatever supernatural force animates them—typically evil necromancers or fiendish spirits. Zombies are relentless, merciless, and resilient, and their dead flesh can carry on even after suffering grievous wounds.",
-    environments=["Planar (Shadowfel)", "Underdark", "Urban"],
     treasure=[],
+    environments=[
+        (
+            region.HauntedLands,
+            Affinity.native,
+        ),  # cursed graveyards and corrupted places
+        (
+            ExtraplanarInfluence.deathly,
+            Affinity.native,
+        ),  # areas touched by the Styx and death
+        (
+            Development.ruin,
+            Affinity.common,
+        ),  # ruins of forgotten temples and settlements
+        (Development.dungeon, Affinity.common),  # dungeons with ancient curses
+        (
+            region.BlastedBadlands,
+            Affinity.common,
+        ),  # battlefields where many died
+        (Biome.underground, Affinity.common),  # burial mounds and ancient tombs
+        (Development.wilderness, Affinity.uncommon),  # occasionally arise in wild areas
+        (Development.settlement, Affinity.rare),  # rarely found in living communities
+    ],
     variants=[ZombieVariant, ZombieOgreVariant],
     species=[],
 )

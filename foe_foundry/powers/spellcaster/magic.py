@@ -3,6 +3,7 @@ from typing import List
 
 from ...creature_types import CreatureType
 from ...damage import DamageType
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...spells import StatblockSpell, abjuration, evocation, necromancy, transmutation
 from ...statblocks import BaseStatblock
@@ -25,6 +26,7 @@ class _MagicPower(SpellPower):
             reference_statblock="Mage",
             icon="magic-swirl",
             caster_type=CasterType.Innate,
+            power_types=[PowerType.Magic],
             create_date=datetime(2023, 12, 10),
             **kwargs,
         )

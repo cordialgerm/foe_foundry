@@ -8,10 +8,11 @@ from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...spells import conjuration
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class PlantPower(PowerWithStandardScoring):
@@ -22,15 +23,17 @@ class PlantPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(require_types=CreatureType.Plant, **score_args)
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             source=source,
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types,
             icon=icon,
             theme="Plant",
             reference_statblock="Shambling Mound",
@@ -40,7 +43,12 @@ class PlantPower(PowerWithStandardScoring):
 
 class _VineWhip(PlantPower):
     def __init__(self):
-        super().__init__(name="Vine Whip", source="Foe Foundry", icon="vine-whip")
+        super().__init__(
+            name="Vine Whip",
+            source="Foe Foundry",
+            icon="vine-whip",
+            power_types=[PowerType.Attack, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -92,7 +100,12 @@ class _VineWhip(PlantPower):
 
 class _Entangle(PlantPower):
     def __init__(self):
-        super().__init__(name="Entangle", source="SRD5.1 Entangle", icon="root-tip")
+        super().__init__(
+            name="Entangle",
+            source="SRD5.1 Entangle",
+            icon="root-tip",
+            power_types=[PowerType.Debuff, PowerType.Environmental],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         return []
@@ -109,6 +122,7 @@ class _ChokingVine(PlantPower):
             source="Foe Foundry",
             icon="curling-vines",
             require_attack_types=AttackType.AllMelee(),
+            power_types=[PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -138,6 +152,7 @@ class _HypnoticSpores(PlantPower):
             name="Hypnotic Spores",
             source="SRD5.1 Hypnotic Pattern",
             icon="pollen-dust",
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -159,7 +174,10 @@ class _HypnoticSpores(PlantPower):
 class _SpikeGrowth(PlantPower):
     def __init__(self):
         super().__init__(
-            name="Spike Growth", icon="spikes-full", source="SRD5.1 Spike Growth"
+            name="Spike Growth",
+            icon="spikes-full",
+            source="SRD5.1 Spike Growth",
+            power_types=[PowerType.Environmental, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

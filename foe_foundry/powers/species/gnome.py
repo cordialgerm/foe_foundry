@@ -4,10 +4,11 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition, conditions
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import RIBBON_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class GnomePower(PowerWithStandardScoring):
@@ -16,6 +17,7 @@ class GnomePower(PowerWithStandardScoring):
         name: str,
         icon: str,
         power_level: float = RIBBON_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         self.species = "gnome"
@@ -33,13 +35,14 @@ class GnomePower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             icon=icon,
             source="Foe Foundry",
             reference_statblock="Spy",
             create_date=datetime(2025, 3, 2),
             theme="Gnome",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -54,6 +57,7 @@ class _GnomeCunning(GnomePower):
                 MonsterRole.Controller,
                 MonsterRole.Soldier,
             },
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -78,6 +82,7 @@ class _GnomeIngenuity(GnomePower):
                 MonsterRole.Bruiser,
                 MonsterRole.Defender,
             },
+            power_types=[PowerType.Buff, PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -97,6 +102,7 @@ class _GnomishInvisibility(GnomePower):
             name="Gnomish Invisibility",
             icon="invisible",
             bonus_roles={MonsterRole.Skirmisher, MonsterRole.Ambusher},
+            power_types=[PowerType.Stealth],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

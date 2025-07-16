@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, Terrain, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import LeatherArmor, StuddedLeatherArmor
@@ -95,7 +96,6 @@ class _ScoutTemplate(MonsterTemplate):
         cr = settings.cr
         variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -181,8 +181,35 @@ ScoutTemplate: MonsterTemplate = _ScoutTemplate(
     name="Scout",
     tag_line="Watchers and Wanderers",
     description="Scouts are warriors of the wilderness, trained in hunting and tracking. They might be explorers or trappers, or they could perform more martial roles as archers, bounty hunters, or outriders.",
-    environments=["Any"],
     treasure=[],
     variants=[ScoutVariant, CommanderVariant],
     species=AllSpecies,
+    environments=[
+        (region.CountryShire, Affinity.native),  # Rural areas they patrol
+        (region.WartornKingdom, Affinity.common),  # War-torn regions they scout
+        (region.TangledForest, Affinity.native),  # Forests they navigate
+        (Development.frontier, Affinity.native),  # Border regions they patrol and guard
+        (
+            Development.wilderness,
+            Affinity.native,
+        ),  # Wild areas they explore and navigate
+        (Biome.forest, Affinity.common),  # Wooded areas ideal for tracking and stealth
+        (Terrain.hill, Affinity.common),  # High ground providing good vantage points
+        (
+            Development.countryside,
+            Affinity.common,
+        ),  # Rural areas they watch and protect
+        (
+            Terrain.mountain,
+            Affinity.uncommon,
+        ),  # Mountainous terrain they might traverse
+        (
+            Biome.grassland,
+            Affinity.uncommon,
+        ),  # Open plains where they serve as outriders
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # Towns where they might report or resupply
+    ],
 )

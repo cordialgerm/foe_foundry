@@ -6,10 +6,11 @@ from foe_foundry.references import action_ref
 
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import RIBBON_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class HalflingPower(PowerWithStandardScoring):
@@ -20,6 +21,7 @@ class HalflingPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = None,
         power_level: float = RIBBON_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         self.species = "halfling"
@@ -37,13 +39,14 @@ class HalflingPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Species,
+            power_category=PowerCategory.Species,
             power_level=power_level,
             source=source,
             create_date=create_date,
             icon=icon,
             theme="Halfling",
             reference_statblock="Spy",
+            power_types=power_types,
             score_args=standard_score_args,
         )
 
@@ -66,6 +69,7 @@ class _HalflingLuck(HalflingPower):
                 MonsterRole.Support,
                 MonsterRole.Artillery,
             ],
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -90,6 +94,7 @@ class _HalflingBravery(HalflingPower):
                 MonsterRole.Leader,
                 MonsterRole.Bruiser,
             ],
+            power_types=[PowerType.Defense],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -111,6 +116,7 @@ class _HalflingNimbleness(HalflingPower):
             source="Foe Foundry",
             icon="tightrope",
             bonus_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
+            power_types=[PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

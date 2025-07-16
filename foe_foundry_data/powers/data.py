@@ -126,7 +126,7 @@ class MonsterInPower:
 class PowerModel:
     key: str
     name: str
-    power_type: str
+    power_category: str
     source: str
     theme: str
     power_level: str
@@ -328,7 +328,7 @@ class PowerModel:
             name=power.name,
             create_date=power.create_date,
             theme=power.theme or "UNKNOWN",
-            power_type=power.power_type.name,
+            power_category=power.power_category.name,
             icon=power.icon,
             source=power.source or "UNKNOWN",
             power_level=power.power_level_text,

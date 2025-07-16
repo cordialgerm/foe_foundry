@@ -1,3 +1,5 @@
+from foe_foundry.environs import Affinity, Development, region
+
 from ...ac_templates import StuddedLeatherArmor
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
@@ -75,7 +77,6 @@ class _AssassinTemplate(MonsterTemplate):
         cr = settings.cr
         variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -170,8 +171,25 @@ AssassinTemplate: MonsterTemplate = _AssassinTemplate(
     name="Assassin",
     tag_line="Contract Killers",
     description="Assassins are professional killers skilled at stealthily approaching their victims and striking unseen. Most assassins kill for a reason, perhaps hiring themselves out to wealthy patrons or slaying for an unscrupulous cause. They use poisons and other deadly tools, and they might carry equipment to help them break into secure areas or avoid capture.",
-    environments=["Urban"],
     treasure=["Any"],
+    environments=[
+        (
+            region.UrbanTownship,
+            Affinity.native,
+        ),  # professional killers operate in cities
+        (
+            Development.urban,
+            Affinity.common,
+        ),  # found in large cities with wealthy patrons
+        (
+            Development.settlement,
+            Affinity.common,
+        ),  # work in towns and established communities
+        (region.CountryShire, Affinity.uncommon),  # occasionally target rural nobility
+        (Development.stronghold, Affinity.uncommon),  # infiltrate fortified locations
+        (Development.frontier, Affinity.rare),  # rarely operate in frontier areas
+        (Development.wilderness, Affinity.rare),  # almost never found in wild areas
+    ],
     variants=[AssassinVariant],
     species=AllSpecies,
 )

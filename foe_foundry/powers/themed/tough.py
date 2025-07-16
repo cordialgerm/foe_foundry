@@ -7,6 +7,7 @@ from num2words import num2words
 from ...attributes import Skills, Stats
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
@@ -16,7 +17,7 @@ from ..power import (
     LOW_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -29,6 +30,7 @@ class PhysicallyTough(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         def humanoid_is_fighter(c: BaseStatblock) -> bool:
@@ -48,7 +50,8 @@ class PhysicallyTough(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Berserker",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Defense, PowerType.Buff],
             create_date=create_date,
             score_args=dict(
                 require_types=[
@@ -82,6 +85,7 @@ class MagicallyTough(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -91,7 +95,8 @@ class MagicallyTough(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Iron Golem",
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
+            power_types=power_types or [PowerType.Defense, PowerType.Magic],
             create_date=create_date,
             score_args=dict(
                 require_types=[
@@ -118,6 +123,7 @@ class _JustAScratch(PhysicallyTough):
             icon="strong-man",
             source="Foe Foundry",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Defense, PowerType.Healing],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -141,6 +147,7 @@ class _MagicResistance(MagicallyTough):
             icon="surrounded-shield",
             source="SRD5.1 Stone Golem",
             power_level=LOW_POWER,
+            power_types=[PowerType.Defense, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -159,6 +166,7 @@ class _LimitedMagicImmunity(MagicallyTough):
             source="SRD5.1 Rakshasa",
             icon="cancel",
             power_level=HIGH_POWER,
+            power_types=[PowerType.Defense, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -179,6 +187,7 @@ class _Regeneration(PhysicallyTough):
             name="Regeneration",
             source="SRD5.1 Shield Guardian",
             icon="regeneration",
+            power_types=[PowerType.Defense, PowerType.Healing],
             require_types=[
                 CreatureType.Construct,
                 CreatureType.Undead,
@@ -210,7 +219,10 @@ class _Regeneration(PhysicallyTough):
 class _Stoneskin(MagicallyTough):
     def __init__(self):
         super().__init__(
-            name="Stoneskin", icon="crenulated-shield", source="SRD5.1 Stoneskin"
+            name="Stoneskin",
+            icon="crenulated-shield",
+            source="SRD5.1 Stoneskin",
+            power_types=[PowerType.Defense, PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

@@ -7,9 +7,10 @@ from ...creature_types import CreatureType
 from ...damage import Condition
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class Trap(PowerWithStandardScoring):
@@ -20,13 +21,15 @@ class Trap(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
             name=name,
             source=source,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             power_level=power_level,
+            power_types=power_types or [PowerType.Environmental, PowerType.Debuff],
             create_date=create_date,
             theme="trap",
             icon=icon,
@@ -46,7 +49,12 @@ class Trap(PowerWithStandardScoring):
 
 class _Snare(Trap):
     def __init__(self):
-        super().__init__(name="Snare", icon="box-trap", source="Foe Foundry")
+        super().__init__(
+            name="Snare",
+            icon="box-trap",
+            source="Foe Foundry",
+            power_types=[PowerType.Environmental, PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class
@@ -67,7 +75,12 @@ class _Snare(Trap):
 
 class _SpikePit(Trap):
     def __init__(self):
-        super().__init__(name="Spike Pit", icon="spiky-pit", source="Foe Foundry")
+        super().__init__(
+            name="Spike Pit",
+            icon="spiky-pit",
+            source="Foe Foundry",
+            power_types=[PowerType.Environmental, PowerType.Attack],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class

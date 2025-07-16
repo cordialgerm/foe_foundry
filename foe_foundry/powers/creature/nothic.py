@@ -7,13 +7,14 @@ from ...creature_types import CreatureType
 from ...damage import conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     LOW_POWER,
     RIBBON_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -31,7 +32,11 @@ def is_nothic(s: BaseStatblock) -> bool:
 
 class _NothicPower(PowerWithStandardScoring):
     def __init__(
-        self, name: str, icon: str = "cursed-star", power_level: float = LOW_POWER
+        self,
+        name: str,
+        icon: str = "cursed-star",
+        power_level: float = LOW_POWER,
+        power_types: List[PowerType] | None = None,
     ):
         super().__init__(
             name=name,
@@ -40,7 +45,8 @@ class _NothicPower(PowerWithStandardScoring):
             reference_statblock="Hollow Gazer",
             icon=icon,
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=datetime(2025, 4, 4),
             score_args=dict(
                 require_callback=is_nothic,
@@ -51,7 +57,11 @@ class _NothicPower(PowerWithStandardScoring):
 
 class _TwistedProphecy(_NothicPower):
     def __init__(self):
-        super().__init__(name="Twisted Prophecy", power_level=HIGH_POWER)
+        super().__init__(
+            name="Twisted Prophecy",
+            power_level=HIGH_POWER,
+            power_types=[PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
@@ -67,7 +77,11 @@ class _TwistedProphecy(_NothicPower):
 
 class _ShatteredOmens(_NothicPower):
     def __init__(self):
-        super().__init__(name="Shattered Omens", power_level=HIGH_POWER)
+        super().__init__(
+            name="Shattered Omens",
+            power_level=HIGH_POWER,
+            power_types=[PowerType.Debuff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -81,7 +95,11 @@ class _ShatteredOmens(_NothicPower):
 
 class _MindShatteringPrediction(_NothicPower):
     def __init__(self):
-        super().__init__(name="Mind-Shattering Prediction", power_level=HIGH_POWER)
+        super().__init__(
+            name="Mind-Shattering Prediction",
+            power_level=HIGH_POWER,
+            power_types=[PowerType.Attack],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dmg = stats.target_value(dpr_proportion=0.5, force_die=Die.d6)
@@ -98,7 +116,10 @@ class _MindShatteringPrediction(_NothicPower):
 class _WarpingMadness(_NothicPower):
     def __init__(self):
         super().__init__(
-            name="Warping Madness", icon="mad-scientist", power_level=RIBBON_POWER
+            name="Warping Madness",
+            icon="mad-scientist",
+            power_level=RIBBON_POWER,
+            power_types=[PowerType.Summon, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

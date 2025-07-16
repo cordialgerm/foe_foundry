@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -54,7 +55,6 @@ class _WolfTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
         variant = settings.variant
         is_legendary = settings.is_legendary
 
@@ -134,8 +134,23 @@ WolfTemplate: MonsterTemplate = _WolfTemplate(
     name="Wolf",
     tag_line="Bestial Pack Hunters",
     description="Wolves are pack hunters that stalk their prey with cunning and ferocity.",
-    environments=["Arctic", "Forest", "Mountain", "Hill"],
     treasure=[],
+    environments=[
+        (region.TangledForest, Affinity.native),  # native to dense forests
+        (Development.wilderness, Affinity.native),  # wild creatures live in wilderness
+        (
+            region.LoftyMountains,
+            Affinity.common,
+        ),  # frequently found in mountainous terrain
+        (region.CountryShire, Affinity.common),  # threaten livestock and settlements
+        (
+            Development.frontier,
+            Affinity.common,
+        ),  # common near settled but undeveloped areas
+        (Biome.forest, Affinity.common),  # frequent in various forest types
+        (region.Feywood, Affinity.uncommon),  # occasionally found in magical forests
+        (Development.countryside, Affinity.rare),  # rarely venture into developed areas
+    ],
     variants=[WolfVariant, FrostwolfVariant],
     species=[],
 )

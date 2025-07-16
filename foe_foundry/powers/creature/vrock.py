@@ -5,18 +5,25 @@ from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
 
 class _VrockPower(PowerWithStandardScoring):
-    def __init__(self, name: str, icon: str, power_level: float = MEDIUM_POWER):
+    def __init__(
+        self,
+        name: str,
+        icon: str,
+        power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
+    ):
         def require_callback(s: BaseStatblock) -> bool:
             return s.creature_subtype == "Vrock"
 
@@ -27,7 +34,8 @@ class _VrockPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Vrock",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
+            power_types=power_types,
             create_date=datetime(2025, 3, 16),
             score_args=dict(
                 require_callback=require_callback,
@@ -40,7 +48,10 @@ class _VrockPower(PowerWithStandardScoring):
 class _StunningScreech(_VrockPower):
     def __init__(self):
         super().__init__(
-            name="Stunning Screech", icon="screaming", power_level=HIGH_POWER
+            name="Stunning Screech",
+            icon="screaming",
+            power_level=HIGH_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

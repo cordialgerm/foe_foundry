@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalPlating, Unarmored
@@ -105,7 +106,6 @@ class _GolemTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         variant = settings.variant
-        rng = settings.rng
 
         # STATS
 
@@ -241,7 +241,6 @@ GolemTemplate: MonsterTemplate = _GolemTemplate(
     name="Golem",
     tag_line="Constructed Servants",
     description="Golems are magically animated constructs of great strength and durability. They are typically created to serve as guardians, servants, or protectors.",
-    environments=[],
     treasure=[],
     variants=[
         StoneVariant,
@@ -252,4 +251,26 @@ GolemTemplate: MonsterTemplate = _GolemTemplate(
         ShieldGuardianVariant,
     ],
     species=[],
+    environments=[
+        (
+            Development.dungeon,
+            Affinity.native,
+        ),  # Underground complexes and magical laboratories
+        (
+            Development.stronghold,
+            Affinity.native,
+        ),  # Fortified areas they were created to protect
+        (
+            Development.ruin,
+            Affinity.common,
+        ),  # Ancient temples, tombs, and abandoned sites
+        (
+            Development.urban,
+            Affinity.uncommon,
+        ),  # Cities where powerful wizards create them
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # Settlements with magical practitioners
+    ],
 )

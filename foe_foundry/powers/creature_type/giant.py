@@ -8,11 +8,18 @@ from ...creature_types import CreatureType
 from ...damage import AttackType, Condition, DamageType, Dazed, conditions
 from ...die import Die
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerWithStandardScoring,
+)
 
 
 class GiantPower(PowerWithStandardScoring):
@@ -22,6 +29,7 @@ class GiantPower(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         create_date: datetime | None = None,
         **score_args,
     ):
@@ -30,8 +38,9 @@ class GiantPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.CreatureType,
+            power_category=PowerCategory.CreatureType,
             power_level=power_level,
+            power_types=power_types,
             icon=icon,
             source=source,
             create_date=create_date,
@@ -43,7 +52,12 @@ class GiantPower(PowerWithStandardScoring):
 
 class _Boulder(GiantPower):
     def __init__(self):
-        super().__init__(name="Boulder", source="SRD 5.1 Hill Giant", icon="rock")
+        super().__init__(
+            name="Boulder",
+            source="SRD 5.1 Hill Giant",
+            icon="rock",
+            power_types=[PowerType.Attack],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
@@ -85,6 +99,7 @@ class _CloudRune(GiantPower):
             source="Foe Foundry",
             bonus_skills=Skills.Deception,
             icon="sun-cloud",
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -124,6 +139,7 @@ class _FireRune(GiantPower):
             power_level=LOW_POWER,
             bonus_damage=DamageType.Fire,
             require_damage_exact_match=True,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -160,6 +176,7 @@ class _FrostRune(GiantPower):
             power_level=LOW_POWER,
             bonus_damage=DamageType.Cold,
             require_damage_exact_match=True,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -193,6 +210,7 @@ class _StoneRune(GiantPower):
             source="Foe Foundry",
             icon="lightning-storm",
             power_level=LOW_POWER,
+            power_types=[PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -212,7 +230,12 @@ class _StoneRune(GiantPower):
 
 class _HillRune(GiantPower):
     def __init__(self):
-        super().__init__(name="Hill Rune", icon="hills", source="Foe Foundry")
+        super().__init__(
+            name="Hill Rune",
+            icon="hills",
+            source="Foe Foundry",
+            power_types=[PowerType.Buff],
+        )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
@@ -240,6 +263,7 @@ class _StormRune(GiantPower):
             power_level=LOW_POWER,
             bonus_damage=DamageType.Lightning,
             require_damage_exact_match=True,
+            power_types=[PowerType.Magic],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -267,6 +291,7 @@ class _Earthshaker(GiantPower):
             icon="earth-spit",
             source="Foe Foundry",
             attack_names=natural.Slam,
+            power_types=[PowerType.AreaOfEffect, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -314,6 +339,7 @@ class _BigWindup(GiantPower):
             create_date=datetime(2023, 11, 22),
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -335,6 +361,7 @@ class _GrabAndGo(GiantPower):
             power_level=MEDIUM_POWER,
             bonus_size=Size.Huge,
             bonus_roles=MonsterRole.Bruiser,
+            power_types=[PowerType.Attack, PowerType.AreaOfEffect],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

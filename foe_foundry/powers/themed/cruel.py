@@ -9,7 +9,14 @@ from ...features import ActionType, Feature
 from ...powers import flags
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import HIGH_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    HIGH_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class CruelPower(PowerWithStandardScoring):
@@ -21,6 +28,7 @@ class CruelPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         power_level: float = MEDIUM_POWER,
         reference_statblock: str = "Berserker",
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -41,7 +49,7 @@ class CruelPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             theme="cruel",
             icon=icon,
@@ -49,6 +57,7 @@ class CruelPower(PowerWithStandardScoring):
             create_date=create_date,
             power_level=power_level,
             score_args=standard_score_args,
+            power_types=power_types or [PowerType.Attack],
         )
 
 

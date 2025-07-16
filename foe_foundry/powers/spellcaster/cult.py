@@ -1,4 +1,5 @@
 from ...damage import AttackType
+from ...power_types import PowerType
 from ...spells import CasterType, abjuration, enchantment, evocation, necromancy
 from ...statblocks import BaseStatblock
 from ..power import HIGH_POWER, MEDIUM_POWER, Power
@@ -30,6 +31,7 @@ class _CultCaster(_Spellcaster):
                 caster_type=CasterType.Pact,
                 icon="cultist",
                 reference_statblock="Cultist Fanatic",
+                power_types=[PowerType.Magic, PowerType.Debuff],
                 score_args=dict(
                     require_attack_types=AttackType.AllSpell(),
                     require_callback=is_cultist,

@@ -6,13 +6,14 @@ from foe_foundry.references import creature_ref
 from ...creature_types import CreatureType
 from ...die import Die, DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import (
     HIGH_POWER,
     MEDIUM_POWER,
     Power,
-    PowerType,
+    PowerCategory,
     PowerWithStandardScoring,
 )
 
@@ -25,6 +26,7 @@ class GuardPower(PowerWithStandardScoring):
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         existing_callback = score_args.pop("require_callback", None)
@@ -41,8 +43,9 @@ class GuardPower(PowerWithStandardScoring):
             icon=icon,
             reference_statblock="Guard",
             power_level=power_level,
-            power_type=PowerType.Creature,
+            power_category=PowerCategory.Creature,
             create_date=create_date,
+            power_types=power_types,
             score_args=dict(
                 require_callback=require_callback,
                 require_types=[CreatureType.Humanoid],
@@ -59,6 +62,7 @@ class _ProtectTheTarget(GuardPower):
             icon="shield-bounces",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -78,6 +82,7 @@ class _SoundTheAlarm(GuardPower):
             icon="whistle",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -103,6 +108,7 @@ class _DefensiveFormation(GuardPower):
             icon="shield-echoes",
             power_level=MEDIUM_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -122,6 +128,7 @@ class _CallReinforcements(GuardPower):
             icon="megaphone",
             power_level=HIGH_POWER,
             create_date=datetime(2025, 2, 23),
+            power_types=[PowerType.Summon],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

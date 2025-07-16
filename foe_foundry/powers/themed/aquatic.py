@@ -3,8 +3,9 @@ from typing import List
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...statblocks import BaseStatblock
-from ..power import RIBBON_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import RIBBON_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class AquaticBase(PowerWithStandardScoring):
@@ -14,6 +15,7 @@ class AquaticBase(PowerWithStandardScoring):
         source: str,
         icon: str,
         power_level: float = RIBBON_POWER,
+        power_types: List[PowerType] | None = None,
         **args,
     ):
         def not_already_special_movement(c: BaseStatblock) -> bool:
@@ -29,13 +31,14 @@ class AquaticBase(PowerWithStandardScoring):
 
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             theme="Aquatic",
             reference_statblock="Merfolk",
             icon=icon,
             source=source,
             power_level=power_level,
             score_args=score_args,
+            power_types=power_types or [PowerType.Movement],
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
@@ -80,6 +83,7 @@ class _InkCloud(AquaticBase):
             icon="octopus",
             source="SRD5.1 Octopus",
             power_level=RIBBON_POWER,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -101,6 +105,7 @@ class _SlimyCloud(AquaticBase):
             require_types=[CreatureType.Aberration, CreatureType.Monstrosity],
             bonus_damage=DamageType.Poison,
             require_cr=3,
+            power_types=[PowerType.AreaOfEffect, PowerType.Debuff, PowerType.Attack],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

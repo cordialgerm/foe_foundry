@@ -5,7 +5,14 @@ from ...attributes import Skills, Stats
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import LOW_POWER, MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import (
+    LOW_POWER,
+    MEDIUM_POWER,
+    Power,
+    PowerCategory,
+    PowerType,
+    PowerWithStandardScoring,
+)
 
 
 class FastPower(PowerWithStandardScoring):
@@ -17,6 +24,7 @@ class FastPower(PowerWithStandardScoring):
         create_date: datetime | None = None,
         reference_statblock: str = "Goblin",
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         super().__init__(
@@ -24,10 +32,11 @@ class FastPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             power_level=power_level,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             icon=icon,
             reference_statblock=reference_statblock,
             theme="fast",
+            power_types=power_types or [PowerType.Movement],
             score_args=dict(
                 require_stats=Stats.DEX,
                 stat_threshold=16,

@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Biome, Development, Terrain
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalPlating
@@ -42,7 +43,6 @@ class _GorgonTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -113,8 +113,26 @@ GorgonTemplate: MonsterTemplate = _GorgonTemplate(
     name="Gorgon",
     tag_line="Bull-Like Constructs with Petrifying Breath",
     description="Gorgons are ferocious bull-like constructs with with iron plates and a toxic, petrifying breath",
-    environments=["Forest", "Grassland", "Hill"],
     treasure=[],
     variants=[GorgonVariant],
     species=[],
+    environments=[
+        (
+            Terrain.mountain,
+            Affinity.native,
+        ),  # Remote mountain valleys where they guard territory
+        (
+            Biome.forest,
+            Affinity.common,
+        ),  # Dense forests providing cover for these territorial beasts
+        (
+            Development.wilderness,
+            Affinity.common,
+        ),  # Untamed lands far from civilization
+        (Terrain.hill, Affinity.uncommon),  # Elevated terrain they may roam
+        (
+            Development.ruin,
+            Affinity.uncommon,
+        ),  # Ancient sites they might claim as territory
+    ],
 )

@@ -6,9 +6,10 @@ from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
 from ...features import ActionType, Feature
+from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
-from ..power import MEDIUM_POWER, Power, PowerType, PowerWithStandardScoring
+from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
 
 
 class ThuggishPower(PowerWithStandardScoring):
@@ -19,6 +20,7 @@ class ThuggishPower(PowerWithStandardScoring):
         icon: str,
         create_date: datetime | None = datetime(2025, 3, 22),
         power_level: float = MEDIUM_POWER,
+        power_types: List[PowerType] | None = None,
         **score_args,
     ):
         standard_score_args = dict(
@@ -36,13 +38,14 @@ class ThuggishPower(PowerWithStandardScoring):
         )
         super().__init__(
             name=name,
-            power_type=PowerType.Theme,
+            power_category=PowerCategory.Theme,
             source=source,
             theme="thuggish",
             icon=icon,
             reference_statblock="Thug",
             create_date=create_date,
             power_level=power_level,
+            power_types=power_types or [PowerType.Buff, PowerType.Utility],
             score_args=standard_score_args,
         )
 
@@ -53,6 +56,7 @@ class _MobBoss(ThuggishPower):
             name="Mob Boss",
             icon="minions",
             source="Foe Foundry",
+            power_types=[PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -71,6 +75,7 @@ class _KickTheLickspittle(ThuggishPower):
             name="Kick the Lickspittle",
             icon="boot-kick",
             source="Foe Foundry",
+            power_types=[PowerType.Attack, PowerType.Buff],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
@@ -87,7 +92,10 @@ class _KickTheLickspittle(ThuggishPower):
 class _ExploitTheChaos(ThuggishPower):
     def __init__(self):
         super().__init__(
-            name="Exploit the Chaos", source="Foe Foundry", icon="target-dummy"
+            name="Exploit the Chaos",
+            source="Foe Foundry",
+            icon="target-dummy",
+            power_types=[PowerType.Attack, PowerType.Movement],
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

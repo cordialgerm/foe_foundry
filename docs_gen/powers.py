@@ -1,6 +1,6 @@
 import mkdocs_gen_files
 
-from foe_foundry_data.powers import PowerModel, Powers, PowerType
+from foe_foundry_data.powers import PowerCategory, PowerModel, Powers
 
 
 def generate_all_powers():
@@ -19,13 +19,13 @@ def generate_all_powers():
         f"Browse all {len(Powers.PowerLookup)} monster powers by theme below:\n",
     ]
 
-    for power_type in PowerType.All():
+    for power_category in PowerCategory.All():
         powers_by_theme = {
-            t: [p for p in ps if p.power_type.lower() == power_type.lower()]
+            t: [p for p in ps if p.power_category.lower() == power_category.lower()]
             for t, ps in Powers.PowersByTheme.items()
         }
         n = sum(len(p) for t, p in powers_by_theme.items())
-        lines.append(f"## {power_type.title()} Powers ({n})\n")
+        lines.append(f"## {power_category.title()} Powers ({n})\n")
 
         lines.append("<div class='list-with-columns'></div>\n")
         for theme, powers in powers_by_theme.items():

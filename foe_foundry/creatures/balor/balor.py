@@ -1,3 +1,11 @@
+from foe_foundry.environs import (
+    Affinity,
+    Biome,
+    Development,
+    ExtraplanarInfluence,
+    region,
+)
+
 from ...ac_templates import UnholyArmor
 from ...attack_template import AttackTemplate, weapon
 from ...creature_types import CreatureType
@@ -127,8 +135,27 @@ BalorTemplate: MonsterTemplate = _BalorTemplate(
     name="Balor",
     tag_line="Demon of Overwhelming Rage",
     description="Balors embody demons' ruinous fury and hatred. Towering, winged terrors, these demonic warlords seethe with wrath, their rage erupting in waves of fire and as a pair of vicious weapons: a sword of crackling lightning and a whip of lashing flames. Demon lords and evil gods harness balors' rage by making balors commanders of armies or guardians of grave secrets.",
-    environments=["Planar (Abyss)"],
     treasure=[],
+    environments=[
+        (
+            ExtraplanarInfluence.hellish,
+            Affinity.native,
+        ),  # native to hellish planes and demonic realms
+        (Biome.extraplanar, Affinity.native),  # from extraplanar demonic dimensions
+        (
+            region.FieryHellscape,
+            Affinity.native,
+        ),  # thrive in volcanic and hellish regions
+        (
+            Development.ruin,
+            Affinity.common,
+        ),  # found in places of great evil and destruction
+        (region.HauntedLands, Affinity.uncommon),  # sometimes manifest in cursed places
+        (
+            Development.wilderness,
+            Affinity.rare,
+        ),  # rarely appear in mortal realm wilderness
+    ],
     variants=[BalorVariant, BalorGeneralVariant],
     species=[],
 )

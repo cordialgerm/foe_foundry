@@ -1,3 +1,4 @@
+from foe_foundry.environs import Affinity, Development
 from foe_foundry.statblocks import BaseStatblock
 
 from ...ac_templates import NaturalArmor
@@ -45,7 +46,6 @@ class _MedusaTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
         is_legendary = settings.is_legendary
-        rng = settings.rng
 
         # STATS
         stats = base_stats(
@@ -115,8 +115,17 @@ MedusaTemplate: MonsterTemplate = _MedusaTemplate(
     name="Medusa",
     tag_line="Snake-haired recluse with a petrifying gaze",
     description="Medusas are prideful creatures that inhabit sites of fallen glory. They have hair of living snakes and an infamous petrifying gaze.",
-    environments=["Desert", "Dungeon"],
     treasure=[],
     variants=[MedusaVariant],
     species=[],
+    environments=[
+        (Development.ruin, Affinity.native),  # Ancient ruins and sites of fallen glory
+        (Development.dungeon, Affinity.common),  # Underground lairs filled with statues
+        (Development.stronghold, Affinity.uncommon),  # Abandoned castles and towers
+        (Development.wilderness, Affinity.uncommon),  # Remote caves and hidden retreats
+        (
+            Development.settlement,
+            Affinity.rare,
+        ),  # Disguised among ruins near civilization
+    ],
 )

@@ -1,3 +1,5 @@
+from foe_foundry.environs import Affinity, Development, region
+
 from ...ac_templates import ChainShirt, PlateArmor
 from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
@@ -66,9 +68,7 @@ class _PriestTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
-        variant = settings.variant
         species = settings.species if settings.species else HumanSpecies
-        rng = settings.rng
         is_legendary = settings.is_legendary
 
         # STATS
@@ -157,8 +157,25 @@ PriestTemplate: MonsterTemplate = _PriestTemplate(
     name="Priest",
     tag_line="Arbiters of the Mortal and the Divine",
     description="Priests harness the power of faith to work miracles. These religious adherents are as diverse as the faiths they follow. Some obey gods and their servants, while others live by age-old creeds. Belief guides priests’ actions and their magic, which they use to shape the world in line with their ideologies.",
-    environments=[],
     treasure=["Relics", "Individual"],
+    environments=[
+        (region.UrbanTownship, Affinity.native),  # urban priests serving communities
+        (
+            Development.settlement,
+            Affinity.native,
+        ),  # priests in villages and towns, providing spiritual guidance
+        (region.CountryShire, Affinity.common),  # local parish priest,
+        (
+            region.HauntedLands,
+            Affinity.uncommon,
+        ),  # priests of dark gods or protecting their cursed flock
+        (Development.urban, Affinity.uncommon),  # priests in larger cities
+        (
+            region.WartornKingdom,
+            Affinity.uncommon,
+        ),  # priests in war zones, aiding the wounded
+        (Development.wilderness, Affinity.rare),  # hermit priests in remote areas
+    ],
     variants=[PriestVariant],
     species=AllSpecies,
 )
