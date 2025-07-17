@@ -77,6 +77,9 @@ export class MonsterInfo extends LitElement {
   }
 
   private handleRatingChange = (event: Event) => {
+    const customEvent = event as CustomEvent;
+    const { score, label } = customEvent.detail;
+
     // Get the original target using composedPath
     const composedPath = event.composedPath();
     const originalTarget = composedPath[0] as HTMLElement;
@@ -90,7 +93,7 @@ export class MonsterInfo extends LitElement {
 
     if (eventType) {
       this.dispatchEvent(new CustomEvent(eventType, {
-        detail: {},
+        detail: { score, label },
         bubbles: true,
         composed: true
       }));

@@ -29,6 +29,12 @@ export class MonsterRating extends LitElement {
     @state()
     private currentLabel = 'Medium';
 
+    @state()
+    private isInitialized = false;
+
+    @state()
+    private previousScore: number | null = null;
+
     private raty?: Raty;
 
     static styles = css`
@@ -82,6 +88,11 @@ export class MonsterRating extends LitElement {
     private initializeRating() {
         const container = this.shadowRoot?.querySelector('.rating-container');
         if (!container) return;
+
+        // Reset initialization state
+        this.isInitialized = false;
+        this.previousScore = null;
+
         if (this.raty) {
             this.raty.cancel(true); // Clean up previous instance
             container.innerHTML = ''; // Ensure previous elements are removed
@@ -99,15 +110,25 @@ export class MonsterRating extends LitElement {
             hints: [...this.hints],
             click: (score: number) => {
                 this.currentLabel = this.hints[score - 1] || '';
-                let event = new CustomEvent('rating-change', {
-                    detail: { score, label: this.currentLabel },
-                    bubbles: true,
-                    composed: true
-                });
-                this.dispatchEvent(event);
+
+                // Only fire event if the score actually changed and previousScore is set
+                if (this.isInitialized && this.previousScore !== null && score !== this.previousScore) {
+                    this.previousScore = score;
+                    let event = new CustomEvent('rating-change', {
+                        detail: { score, label: this.currentLabel },
+                        bubbles: true,
+                        composed: true
+                    });
+                    this.dispatchEvent(event);
+                } else if (this.isInitialized) {
+                    // Update previousScore even if we don't fire an event
+                    this.previousScore = score;
+                }
             }
         });
         this.raty.init();
+        this.previousScore = this.score; // Set initial previous score
+        this.isInitialized = true;
     }
 
     updated(changedProperties: Map<string | number | symbol, unknown>) {
