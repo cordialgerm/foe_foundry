@@ -31,11 +31,6 @@ export class SvgIcon extends LitElement {
 
     async updated(changedProperties: Map<string, any>) {
         if (changedProperties.has('src') && this.src) {
-
-
-
-
-
             await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
         }
     }
@@ -66,7 +61,7 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
         const result = await fetch(url);
         const svgText = await result.text();
         // Strip out any fill="..." attributes
-        const cleaned = svgText.replace(/\s*fill=(["'])["']*\1/g, '');
+        const cleaned = svgText.replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '');
 
         // Cache the cleaned SVG content
         svgCache.set(url, cleaned);

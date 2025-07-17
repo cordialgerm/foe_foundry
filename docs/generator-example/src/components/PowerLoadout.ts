@@ -65,6 +65,7 @@ export class PowerLoadout extends LitElement {
       width: 1.25rem;
       height: 1.25rem;
       flex-shrink: 0;
+      fill: currentColor;
     }
 
     .dropdown-menu {
