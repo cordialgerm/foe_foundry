@@ -120,6 +120,11 @@ export class PowerLoadout extends LitElement {
     .d-none {
       display: none !important;
     }
+
+    .dropdown-separator {
+      border-top: 1px solid var(--bs-secondary);
+      margin: 0.25rem 0;
+    }
   `;
 
   @property({ type: String, attribute: 'monster-key' })
@@ -133,6 +138,9 @@ export class PowerLoadout extends LitElement {
 
   @state()
   private dropdownOpen = false;
+
+  @state()
+  private powers: Power[] = [];
 
   private toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -150,6 +158,14 @@ export class PowerLoadout extends LitElement {
     }));
   }
 
+  public randomize() {
+    if (this.powers.length === 0) return;
+
+    const randomIndex = Math.floor(Math.random() * this.powers.length);
+    const randomPower = this.powers[randomIndex];
+    this.selectPower(randomPower);
+  }
+
   private handleKeydown(event: KeyboardEvent) {
     if (event.key === 'Escape') {
       this.dropdownOpen = false;
@@ -157,12 +173,17 @@ export class PowerLoadout extends LitElement {
   }
 
   private renderLoadoutContent(loadout: PowerLoadoutData) {
-    // Set initial selected power if available and none is selected
-    if (loadout?.powers?.length && !this.selectedPower) {
-      this.selectedPower = loadout.powers[0];
+    // Update powers state if loadout has changed
+    if (loadout?.powers && this.powers !== loadout.powers) {
+      this.powers = loadout.powers;
     }
 
-    const currentPower = this.selectedPower || loadout.powers?.[0];
+    // Set initial selected power if available and none is selected
+    if (this.powers?.length && !this.selectedPower) {
+      this.selectedPower = this.powers[0];
+    }
+
+    const currentPower = this.selectedPower || this.powers?.[0];
 
     return html`
       <div class="power-slot-block" @keydown=${this.handleKeydown}>
@@ -194,7 +215,7 @@ export class PowerLoadout extends LitElement {
           </button>
 
           <div class="dropdown-menu ${this.dropdownOpen ? 'show' : 'd-none'}">
-            ${loadout.powers?.map((power: Power) => html`
+            ${this.powers?.map((power: Power) => html`
               <button
                 class="dropdown-item"
                 @click=${() => this.selectPower(power)}
@@ -206,6 +227,19 @@ export class PowerLoadout extends LitElement {
                 <span>${power.name}</span>
               </button>
             `)}
+            ${this.powers?.length ? html`
+              <div class="dropdown-separator"></div>
+              <button
+                class="dropdown-item"
+                @click=${() => this.randomize()}
+              >
+                <power-icon
+                  class="power-icon"
+                  src="dice-twenty-faces-twenty"
+                ></power-icon>
+                <span>Randomize</span>
+              </button>
+            ` : ''}
           </div>
         </div>
       </div>
