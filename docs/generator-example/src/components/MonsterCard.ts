@@ -7,10 +7,10 @@ import './PowerLoadout';
 
 @customElement('monster-card')
 export class MonsterCard extends LitElement {
-    @property({ type: String, attribute: 'monster-key' })
-    monsterKey = '';
+  @property({ type: String, attribute: 'monster-key' })
+  monsterKey = '';
 
-    static styles = css`
+  static styles = css`
     :host {
       display: block;
       margin: 1rem;
@@ -21,70 +21,62 @@ export class MonsterCard extends LitElement {
     }
   `;
 
-    connectedCallback() {
-        super.connectedCallback();
-        this.addEventListener('hp-changed', this.handleHpChanged);
-        this.addEventListener('damage-changed', this.handleDamageChanged);
-        this.addEventListener('power-selected', this.handlePowerSelected);
+  connectedCallback() {
+    super.connectedCallback();
+    this.addEventListener('hp-changed', this.handleHpChanged);
+    this.addEventListener('damage-changed', this.handleDamageChanged);
+    this.addEventListener('power-selected', this.handlePowerSelected);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this.removeEventListener('hp-changed', this.handleHpChanged);
+    this.removeEventListener('damage-changed', this.handleDamageChanged);
+    this.removeEventListener('power-selected', this.handlePowerSelected);
+  }
+
+  private handleHpChanged = (event: Event) => {
+    this.dispatchEvent(new CustomEvent('monster-changed', {
+      detail: {
+        changeType: 'hp-changed'
+      },
+      bubbles: true,
+      composed: true
+    }));
+  };
+
+  private handleDamageChanged = (event: Event) => {
+    this.dispatchEvent(new CustomEvent('monster-changed', {
+      detail: {
+        changeType: 'damage-changed',
+      },
+      bubbles: true,
+      composed: true
+    }));
+  };
+
+  private handlePowerSelected = (event: Event) => {
+    const customEvent = event as CustomEvent;
+    const { power } = customEvent.detail;
+    this.dispatchEvent(new CustomEvent('monster-changed', {
+      detail: {
+        changeType: 'power-selected',
+        power
+      },
+      bubbles: true,
+      composed: true
+    }));
+  };
+
+  render() {
+    const monsterStore = new MockMonsterStore();
+    const monster = monsterStore.getMonster(this.monsterKey);
+
+    if (!monster) {
+      return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
     }
 
-    disconnectedCallback() {
-        super.disconnectedCallback();
-        this.removeEventListener('hp-changed', this.handleHpChanged);
-        this.removeEventListener('damage-changed', this.handleDamageChanged);
-        this.removeEventListener('power-selected', this.handlePowerSelected);
-    }
-
-    private handleHpChanged = (event: Event) => {
-        const customEvent = event as CustomEvent;
-        const { score, label } = customEvent.detail;
-        this.dispatchEvent(new CustomEvent('monster-changed', {
-            detail: {
-                changeType: 'hp-changed',
-                score,
-                label
-            },
-            bubbles: true,
-            composed: true
-        }));
-    };
-
-    private handleDamageChanged = (event: Event) => {
-        const customEvent = event as CustomEvent;
-        const { score, label } = customEvent.detail;
-        this.dispatchEvent(new CustomEvent('monster-changed', {
-            detail: {
-                changeType: 'damage-changed',
-                score,
-                label
-            },
-            bubbles: true,
-            composed: true
-        }));
-    };
-
-    private handlePowerSelected = (event: Event) => {
-        const customEvent = event as CustomEvent;
-        const { power } = customEvent.detail;
-        this.dispatchEvent(new CustomEvent('monster-changed', {
-            detail: {
-                changeType: 'power-selected',
-                power
-            },
-            bubbles: true,
-            composed: true
-        }));
-    };
-
-    render() {
-        const monsterStore = new MockMonsterStore();
-        const monster = monsterStore.getMonster(this.monsterKey);
-
-        if (!monster) {
-            return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
-        }
-
-        return html`
+    return html`
     <div class="monster-card">
 
         <monster-info
@@ -104,14 +96,14 @@ export class MonsterCard extends LitElement {
         ></monster-art>
 
         ${monster.loadouts.map(
-            loadout => html`
+      loadout => html`
             <power-loadout
               monster-key="${monster.key}"
               loadout-key="${loadout.key}"
             ></power-loadout>
           `
-        )}
+    )}
       </div>
     `;
-    }
+  }
 }

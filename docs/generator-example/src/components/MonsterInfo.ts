@@ -66,6 +66,37 @@ export class MonsterInfo extends LitElement {
     }
   `;
 
+  connectedCallback() {
+    super.connectedCallback();
+    this.addEventListener('rating-change', this.handleRatingChange);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this.removeEventListener('rating-change', this.handleRatingChange);
+  }
+
+  private handleRatingChange = (event: Event) => {
+    // Get the original target using composedPath
+    const composedPath = event.composedPath();
+    const originalTarget = composedPath[0] as HTMLElement;
+
+    let eventType = '';
+    if (originalTarget.id === 'hp-rating') {
+      eventType = 'hp-changed';
+    } else if (originalTarget.id === 'damage-rating') {
+      eventType = 'damage-changed';
+    }
+
+    if (eventType) {
+      this.dispatchEvent(new CustomEvent(eventType, {
+        detail: {},
+        bubbles: true,
+        composed: true
+      }));
+    }
+  };
+
   render() {
     return html`
       <div class="monster-info">
@@ -76,8 +107,8 @@ export class MonsterInfo extends LitElement {
         </div>
 
         <div class="rating-container">
-          <monster-rating emoji="❤️"></monster-rating>
-          <monster-rating emoji="💀"></monster-rating>
+          <monster-rating id="hp-rating" emoji="❤️"></monster-rating>
+          <monster-rating id="damage-rating" emoji="💀"></monster-rating>
         </div>
       </div>
     `;

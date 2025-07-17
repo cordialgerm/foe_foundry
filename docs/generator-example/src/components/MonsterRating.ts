@@ -99,13 +99,14 @@ export class MonsterRating extends LitElement {
             hints: [...this.hints],
             click: (score: number) => {
                 this.currentLabel = this.hints[score - 1] || '';
-                this.dispatchEvent(new CustomEvent('rating-change', {
+                let event = new CustomEvent('rating-change', {
                     detail: { score, label: this.currentLabel },
-                    bubbles: true
-                }));
+                    bubbles: true,
+                    composed: true
+                });
+                this.dispatchEvent(event);
             }
         });
-
         this.raty.init();
     }
 
