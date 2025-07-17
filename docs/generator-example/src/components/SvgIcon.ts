@@ -3,8 +3,8 @@ import { customElement, property } from 'lit/decorators.js';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 
-@customElement('power-icon')
-export class PowerIcon extends LitElement {
+@customElement('svg-icon')
+export class SvgIcon extends LitElement {
 
     static styles = css`
     :host {

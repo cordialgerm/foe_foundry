@@ -200,10 +200,10 @@ export class PowerLoadout extends LitElement {
             aria-haspopup="true"
           >
             ${currentPower ? html`
-              <power-icon
+              <svg-icon
                 class="power-icon"
                 src="${currentPower.icon}"
-              ></power-icon>
+              ></svg-icon>
               <span>${currentPower.name}</span>
             ` : html`
               <span>No powers available</span>
@@ -220,10 +220,10 @@ export class PowerLoadout extends LitElement {
                 class="dropdown-item"
                 @click=${() => this.selectPower(power)}
               >
-                <power-icon
+                <svg-icon
                   class="power-icon"
                   src="${power.icon}"
-                ></power-icon>
+                ></svg-icon>
                 <span>${power.name}</span>
               </button>
             `)}
@@ -233,10 +233,10 @@ export class PowerLoadout extends LitElement {
                 class="dropdown-item"
                 @click=${() => this.randomize()}
               >
-                <power-icon
+                <svg-icon
                   class="power-icon"
                   src="dice-twenty-faces-twenty"
-                ></power-icon>
+                ></svg-icon>
                 <span>Randomize</span>
               </button>
             ` : ''}
