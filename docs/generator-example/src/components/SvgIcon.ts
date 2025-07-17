@@ -31,6 +31,11 @@ export class PowerIcon extends LitElement {
 
     async updated(changedProperties: Map<string, any>) {
         if (changedProperties.has('src') && this.src) {
+
+
+
+
+
             await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
         }
     }
@@ -42,8 +47,15 @@ export class PowerIcon extends LitElement {
 
 const svgCache = new Map<string, string>();
 
-async function cleanAndInjectSVGFromURL(url: string, targetElement: HTMLElement, fillValue: string = 'currentColor') {
+async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement, fillValue: string = 'currentColor') {
     try {
+        // Check if src is a valid URL ending with .svg
+        let url = src;
+        if (!src.endsWith('.svg')) {
+            // Assume it's an icon name and convert to URL
+            url = `img/icons/${src}.svg`;
+        }
+
         if (svgCache.has(url)) {
             // Use cached SVG content
             const cachedSVG = svgCache.get(url) as string;
@@ -54,7 +66,7 @@ async function cleanAndInjectSVGFromURL(url: string, targetElement: HTMLElement,
         const result = await fetch(url);
         const svgText = await result.text();
         // Strip out any fill="..." attributes
-        const cleaned = svgText.replace(/\s*fill=(['"])['"]*\1/g, '');
+        const cleaned = svgText.replace(/\s*fill=(["'])["']*\1/g, '');
 
         // Cache the cleaned SVG content
         svgCache.set(url, cleaned);
@@ -62,7 +74,7 @@ async function cleanAndInjectSVGFromURL(url: string, targetElement: HTMLElement,
         // Inject the SVG into the target element
         injectSVG(cleaned, targetElement, fillValue);
     } catch (error) {
-        console.warn('Error loading SVG icon:', url, error);
+        console.warn('Error loading SVG icon:', src, error);
     }
 }
 

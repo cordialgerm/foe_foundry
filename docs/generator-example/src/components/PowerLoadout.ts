@@ -30,6 +30,7 @@ export class PowerLoadout extends LitElement {
 
     .power-slot-title {
       margin-bottom: 0;
+      margin-top: 0.25rem;
       margin-right: 0.5rem;
       font-size: 1.25rem;
       font-weight: 500;
