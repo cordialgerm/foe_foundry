@@ -79,9 +79,11 @@ const mockLoadouts: PowerLoadout[] = [
 ];
 
 const mockSkeleton: Monster = {
-    key: 'skeletal',
+    key: 'skeleton',
     name: 'Skeleton',
-    creature_type: 'undead',
+    image: '../img/monsters/skeleton.webp',
+    backgroundImage: '../img/backgrounds/textures/undead-painting.webp',
+    creature_type: 'Undead',
     size: 'Medium',
     cr: 'CR 1/4',
     tag_line: 'A fearsome undead warrior',

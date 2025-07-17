@@ -4,6 +4,8 @@ import { PowerLoadout } from './powers';
 export interface Monster {
     key: string;
     name: string;
+    image: string;
+    backgroundImage: string;
     creature_type: string;
     size: string;
     cr: string;
