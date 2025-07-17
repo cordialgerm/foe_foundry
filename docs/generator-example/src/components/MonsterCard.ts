@@ -4,6 +4,7 @@ import { MockMonsterStore } from '../data/mock';
 import './MonsterArt';
 import './MonsterInfo';
 import './PowerLoadout';
+import './SvgIcon';
 
 @customElement('monster-card')
 export class MonsterCard extends LitElement {
@@ -18,6 +19,35 @@ export class MonsterCard extends LitElement {
       border: 1px solid var(--bs-secondary);
       border-radius: 0.375rem;
       background-color: var(--bs-dark);
+      position: relative;
+    }
+
+    .monster-card {
+      position: relative;
+    }
+
+    .randomize-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: 1px solid var(--bs-light);
+      color: var(--bs-light);
+      border-radius: 0.375rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      z-index: 10;
+    }
+
+    .randomize-button:hover {
+      background-color: var(--bs-light);
+      color: var(--bs-dark);
+    }
+
+    .randomize-icon {
+      width: 1.25rem;
+      height: 1.25rem;
     }
   `;
 
@@ -68,6 +98,16 @@ export class MonsterCard extends LitElement {
     }));
   };
 
+  private handleRandomizeAll = () => {
+    // Find all power-loadout elements and call randomize on each
+    const powerLoadouts = this.shadowRoot?.querySelectorAll('power-loadout');
+    powerLoadouts?.forEach((loadout: any) => {
+      if (typeof loadout.randomize === 'function') {
+        loadout.randomize();
+      }
+    });
+  };
+
   render() {
     const monsterStore = new MockMonsterStore();
     const monster = monsterStore.getMonster(this.monsterKey);
@@ -78,6 +118,16 @@ export class MonsterCard extends LitElement {
 
     return html`
     <div class="monster-card">
+        <button
+          class="randomize-button"
+          @click=${this.handleRandomizeAll}
+          title="Randomize all powers"
+        >
+          <svg-icon
+            class="randomize-icon"
+            src="dice-twenty-faces-twenty"
+          ></svg-icon>
+        </button>
 
         <monster-info
           name="${monster.name}"
