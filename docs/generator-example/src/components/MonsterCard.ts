@@ -21,6 +21,61 @@ export class MonsterCard extends LitElement {
     }
   `;
 
+    connectedCallback() {
+        super.connectedCallback();
+        this.addEventListener('hp-changed', this.handleHpChanged);
+        this.addEventListener('damage-changed', this.handleDamageChanged);
+        this.addEventListener('power-selected', this.handlePowerSelected);
+    }
+
+    disconnectedCallback() {
+        super.disconnectedCallback();
+        this.removeEventListener('hp-changed', this.handleHpChanged);
+        this.removeEventListener('damage-changed', this.handleDamageChanged);
+        this.removeEventListener('power-selected', this.handlePowerSelected);
+    }
+
+    private handleHpChanged = (event: Event) => {
+        const customEvent = event as CustomEvent;
+        const { score, label } = customEvent.detail;
+        this.dispatchEvent(new CustomEvent('monster-changed', {
+            detail: {
+                changeType: 'hp-changed',
+                score,
+                label
+            },
+            bubbles: true,
+            composed: true
+        }));
+    };
+
+    private handleDamageChanged = (event: Event) => {
+        const customEvent = event as CustomEvent;
+        const { score, label } = customEvent.detail;
+        this.dispatchEvent(new CustomEvent('monster-changed', {
+            detail: {
+                changeType: 'damage-changed',
+                score,
+                label
+            },
+            bubbles: true,
+            composed: true
+        }));
+    };
+
+    private handlePowerSelected = (event: Event) => {
+        const customEvent = event as CustomEvent;
+        const { power } = customEvent.detail;
+        this.dispatchEvent(new CustomEvent('monster-changed', {
+            detail: {
+                changeType: 'power-selected',
+                power
+            },
+            bubbles: true,
+            composed: true
+        }));
+    };
+
     render() {
         const monsterStore = new MockMonsterStore();
         const monster = monsterStore.getMonster(this.monsterKey);
