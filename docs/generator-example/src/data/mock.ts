@@ -64,32 +64,71 @@ const mockSkeleton: Monster = {
     key: 'skeleton',
     name: 'Skeleton',
     image: '../img/monsters/skeleton.webp',
-    backgroundImage: '../img/backgrounds/textures/undead-painting.webp',
+    backgroundImage: '../img/backgrounds/textures/undead.webp',
     creature_type: 'Undead',
     size: 'Medium',
     cr: 'CR 1/4',
     tag_line: 'A fearsome undead warrior',
     loadouts: mockLoadouts
 };
+const mockBasilisk: Monster = {
+    key: 'basilisk',
+    name: 'Basilisk',
+    image: '../img/monsters/basilisk.webp',
+    backgroundImage: '../img/backgrounds/textures/monstrosity.webp',
+    creature_type: 'Monstrosity',
+    size: 'Medium',
+    cr: 'CR 4',
+    tag_line: 'A fearsome monstrosity',
+    loadouts: mockLoadouts
+};
+const mockGelatinousCube: Monster = {
+    key: 'gelatinous-cube',
+    name: 'Gelatinous Cube',
+    image: '../img/monsters/gelatinous-cube.webp',
+    backgroundImage: '../img/backgrounds/textures/ooze.webp',
+    creature_type: 'Ooze',
+    size: 'Large',
+    cr: 'CR 2',
+    tag_line: 'A mindless, gelatinous mass',
+    loadouts: mockLoadouts
+}
+const mockKnight: Monster = {
+    key: 'knight',
+    name: 'Knight',
+    image: '../img/monsters/knight.webp',
+    backgroundImage: '../img/backgrounds/textures/humanoid.webp',
+    creature_type: 'Humanoid',
+    size: 'Medium',
+    cr: 'CR 3',
+    tag_line: 'A skilled warrior',
+    loadouts: mockLoadouts
+}
+
+const monsters: Record<string, Monster> = {
+    'skeleton': mockSkeleton,
+    'basilisk': mockBasilisk,
+    'gelatinous-cube': mockGelatinousCube,
+    'knight': mockKnight
+}
 
 export class MockPowerStore implements PowerStore {
 
-    getPowerLoadouts(monsterKey: string): PowerLoadout[] {
-        // // Simulate async behavior
-        // await new Promise(resolve => setTimeout(resolve, 100));
+    getPowerLoadouts(monsterKey: string): PowerLoadout[] | null {
 
-        // For this mock, return the same loadouts for any monster
+        const monsters = initializeMockMonsterStore();
+        const monster = monsters.getMonster(monsterKey);
+        if (!monster) {
+            return null;
+        }
+
         return mockLoadouts;
     }
 }
 
 export class MockMonsterStore implements MonsterStore {
-    getMonster(key: string): Monster {
-        // Simulate async behavior
-        // await new Promise(resolve => setTimeout(resolve, 100));
-
-        // For this mock, return the skeleton monster for any key
-        return mockSkeleton;
+    getMonster(key: string): Monster | null {
+        return monsters[key] || null;
     }
 }
 

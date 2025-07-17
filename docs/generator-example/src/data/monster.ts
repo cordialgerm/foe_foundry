@@ -14,5 +14,5 @@ export interface Monster {
 }
 
 export interface MonsterStore {
-    getMonster(key: string): Monster;
+    getMonster(key: string): Monster | null;
 }
