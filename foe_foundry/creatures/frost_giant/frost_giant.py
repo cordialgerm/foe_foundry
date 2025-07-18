@@ -8,7 +8,7 @@ from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import GenerationSettings, Monster, MonsterTemplate, MonsterVariant
 from ..base_stats import base_stats
 from . import powers
@@ -36,22 +36,20 @@ class _FrostGiantTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
 
-        # STATS (matching comments for CR 8)
         stats = base_stats(
             name=name,
             variant_key=settings.variant.key,
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary, mod=6),  # 22 (+6)
-                Stats.DEX.scaler(StatScaling.Default, -1),  # 8 (-1)
-                Stats.CON.scaler(StatScaling.Constitution, 5),  # 20 (+5)
-                Stats.INT.scaler(StatScaling.Default),  # 10 (+0)
-                Stats.WIS.scaler(StatScaling.Default),  # 10 (+0)
-                Stats.CHA.scaler(StatScaling.Default, mod=1),  # 12 (+1)
-            ],
-            hp_multiplier=settings.hp_multiplier * 1.0,  # Will be tuned to match 138 HP
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, 2),
+                AbilityScore.DEX: (StatScaling.Default, -1),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: (StatScaling.Default, 0),
+                AbilityScore.CHA: (StatScaling.Default, 0),
+            },
+            hp_multiplier=settings.hp_multiplier * 1.0,
             damage_multiplier=settings.damage_multiplier,
         )
 
@@ -60,7 +58,6 @@ class _FrostGiantTemplate(MonsterTemplate):
             size=Size.Huge,
             languages=["Common", "Giant"],
             creature_class="Frost Giant",
-            senses={"passive_perception": 14},
             speed=Movement(walk=40),
             damage_immunities={DamageType.Cold},
         )
@@ -72,15 +69,19 @@ class _FrostGiantTemplate(MonsterTemplate):
         stats = stats.with_roles(primary_role=MonsterRole.Bruiser)
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.STR, Stats.CON, Stats.WIS, Stats.CHA)
+        stats = stats.grant_save_proficiency(
+            AbilityScore.STR, AbilityScore.CON, AbilityScore.WIS, AbilityScore.CHA
+        )
 
         # SKILLS
         stats = stats.grant_proficiency_or_expertise(
             Skills.Athletics, Skills.Perception, Skills.Survival
         )
 
-        # ATTACKS (stub)
-        attack = weapon.Greataxe.with_display_name("Frost Greataxe").copy(reach=10)
+        # ATTACKS
+        attack = weapon.Greataxe.with_display_name("Biting Greataxe").copy(
+            reach=10, secondary_damage_type=DamageType.Cold
+        )
 
         return stats, [attack]
 
