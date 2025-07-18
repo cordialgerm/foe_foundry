@@ -22,7 +22,7 @@ class _OrcSpecies(CreatureSpecies):
             )
         )
         stats = stats.copy(creature_subtype="Orc")
-        stats = stats.scale({AbilityScore.STR: AbilityScore.STR.Boost(2)})
+        stats = stats.change_abilities({AbilityScore.STR: 2})
         stats = stats.with_roles(additional_roles=[MonsterRole.Bruiser])
         return stats
 

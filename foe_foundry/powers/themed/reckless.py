@@ -66,7 +66,7 @@ class RecklessPower(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.scale({AbilityScore.WIS: -1})
+        return stats.change_abilities({AbilityScore.WIS: -1})
 
 
 class _Charger(RecklessPower):

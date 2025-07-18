@@ -291,23 +291,15 @@ class BaseStatblock:
 
         return BaseStatblock(**args)
 
-    def scale(self, stats: Dict[AbilityScore, int | Callable]) -> BaseStatblock:
+    def change_abilities(self, deltas: Dict[AbilityScore, int]) -> BaseStatblock:
+        """Modify the ability scores of this statblock by the given deltas, without exceeding the primary attribute score."""
+
         new_vals = {}
-
-        primary_stat: AbilityScore | None = None
-
-        for stat, val in stats.items():
-            if isinstance(val, int):
-                new_vals[stat] = self.attributes.stat(stat) + val
-            elif callable(val):
-                is_primary = getattr(val, "is_primary", False)
-                if is_primary:
-                    primary_stat = stat
-                new_vals[stat] = val(self)
-
-        if primary_stat is not None:
-            new_vals.update(primary_attribute=primary_stat)
-
+        for stat, delta in deltas.items():
+            new_val = min(
+                self.attributes.stat(stat) + delta, self.primary_attribute_score
+            )
+            new_vals[stat] = new_val
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
 
@@ -699,7 +691,7 @@ class BaseStatblock:
         )
 
         # Stat Adjustments
-        stats = stats.scale({AbilityScore.CON: 2})
+        stats = stats.change_abilities(deltas={AbilityScore.CON: 2})
 
         # Skill Adjustments
         # Initiative

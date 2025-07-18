@@ -75,15 +75,16 @@ class _IdentifyWeakness(CleverPower):
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = super().modify_stats_inner(stats)
-
-        new_attrs = (
-            stats.attributes.boost(AbilityScore.CHA, 2)
-            .boost(AbilityScore.INT, 2)
-            .boost(AbilityScore.WIS, 2)
-            .grant_proficiency_or_expertise(Skills.Investigation, Skills.Perception)
-            .grant_save_proficiency(AbilityScore.INT)
+        stats = stats.grant_proficiency_or_expertise(
+            Skills.Investigation, Skills.Perception
         )
-        stats = stats.copy(attributes=new_attrs)
+        stats = stats.change_abilities(
+            {
+                AbilityScore.INT: 2,
+                AbilityScore.WIS: 2,
+                AbilityScore.CHA: 2,
+            }
+        )
         return stats
 
 

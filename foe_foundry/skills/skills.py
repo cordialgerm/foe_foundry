@@ -2,7 +2,7 @@ from typing import List, cast
 
 from backports.strenum import StrEnum
 
-from .stats import AbilityScore
+from .ability_scores import AbilityScore
 
 
 class Skills(StrEnum):

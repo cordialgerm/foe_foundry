@@ -20,10 +20,10 @@ class _HalflingSpecies(CreatureSpecies):
         )
         stats = stats.copy(creature_subtype="Halfling", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
-        stats = stats.scale(
+        stats = stats.change_abilities(
             {
-                AbilityScore.DEX: AbilityScore.DEX.Boost(2),
-                AbilityScore.WIS: AbilityScore.WIS.Boost(2),
+                AbilityScore.DEX: 2,
+                AbilityScore.WIS: 2,
             }
         )
         stats = stats.with_roles(additional_roles=[MonsterRole.Skirmisher])

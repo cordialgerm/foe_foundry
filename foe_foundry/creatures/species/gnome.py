@@ -20,10 +20,10 @@ class _GnomeSpecies(CreatureSpecies):
         )
         stats = stats.copy(creature_subtype="Gnome", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
-        stats = stats.scale(
+        stats = stats.change_abilities(
             {
-                AbilityScore.INT: AbilityScore.INT.Boost(2),
-                AbilityScore.WIS: AbilityScore.WIS.Boost(2),
+                AbilityScore.INT: 2,
+                AbilityScore.WIS: 2,
             }
         )
         stats = stats.with_roles(additional_roles=[MonsterRole.Controller])

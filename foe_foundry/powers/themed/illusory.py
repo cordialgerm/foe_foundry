@@ -66,13 +66,13 @@ class Illusory(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
         # this creature should be tricky
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Deception
-        ).boost(AbilityScore.CHA, 2)
+        stats = stats.grant_proficiency_or_expertise(Skills.Deception)
+        stats = stats.change_abilities({AbilityScore.CHA: 2})
         stats = stats.grant_spellcasting(CasterType.Innate)
-        changes: dict = dict(attributes=new_attrs)
-        return stats.copy(**changes)
+        return stats
 
 
 class _Projection(Illusory):
