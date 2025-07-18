@@ -1,4 +1,5 @@
 from functools import cached_property
+from typing import TypeAlias
 
 from ..attributes import Attributes, proficiency_bonus_for_cr
 from ..benchmarks.fof import FoFBenchmark
@@ -7,6 +8,8 @@ from ..die import DieFormula
 from ..movement import Movement
 from ..skills import AbilityScore, StatScaler, StatScaling
 from ..statblocks import BaseStatblock
+
+AbilityScaling: TypeAlias = StatScaling | tuple[StatScaling, int]
 
 
 class _Loader:
@@ -26,7 +29,7 @@ def base_stats(
     monster_key: str,
     species_key: str | None = None,
     cr: float,
-    stats: list[StatScaler],
+    stats: dict[AbilityScore, AbilityScaling],
     hp_multiplier: float = 1.0,
     damage_multiplier: float = 1.0,
 ) -> BaseStatblock:
@@ -39,13 +42,18 @@ def base_stats(
     proficiency = proficiency_bonus_for_cr(cr)
 
     # default CON modifiers
-    stat_vals = {
-        AbilityScore.CON: int(
-            AbilityScore.CON.scaler(StatScaling.Constitution).scale(cr)
-        ),
-    }
-    for stat in stats:
-        stat_vals[stat.stat] = int(stat.scale(cr))
+    if AbilityScore.CON not in stats:
+        stats[AbilityScore.CON] = StatScaling.Constitution
+
+    stat_vals = {}
+    for ability, scaling in stats.items():
+        if not isinstance(scaling, tuple):
+            scaling = (scaling, 0)
+
+        scaling_type, mod = scaling
+        scaler = StatScaler(stat=ability, scaling=scaling_type, mod=mod)
+        new_ability = int(scaler.scale(cr))
+        stat_vals[ability] = new_ability
 
     attributes = Attributes(proficiency=proficiency, **stat_vals)  # type: ignore
     hp = DieFormula.target_value(

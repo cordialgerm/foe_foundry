@@ -6,6 +6,8 @@ from typing import List, cast
 
 from backports.strenum import StrEnum
 
+from .scaling import StatScaler, StatScaling
+
 
 class AbilityScore(StrEnum):
     """
@@ -48,7 +50,7 @@ class AbilityScore(StrEnum):
         """
         return [cast(AbilityScore, s) for s in AbilityScore._member_map_.values()]
 
-    def scaler(self, scaling: StatScaling, mod: float = 0) -> "StatScaler":
+    def scaler(self, scaling: "StatScaling", mod: float = 0) -> "StatScaler":
         """
         Returns a StatScaler object for this ability score, with the given scaling type and modifier.
         Used for advanced stat scaling logic.

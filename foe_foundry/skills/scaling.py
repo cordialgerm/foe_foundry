@@ -1,5 +1,9 @@
+from typing import TYPE_CHECKING
+
 from backports.strenum import StrEnum
-from .ability_scores import AbilityScore
+
+if TYPE_CHECKING:
+    from foe_foundry.skills.ability_scores import AbilityScore
 
 
 class StatScaler:
@@ -8,7 +12,7 @@ class StatScaler:
     Used to generate monster/NPC stats that scale with difficulty.
     """
 
-    def __init__(self, stat: AbilityScore, scaling: "StatScaling", mod: float):
+    def __init__(self, stat: "AbilityScore", scaling: "StatScaling", mod: float):
         self.stat = stat
         self.scaling = scaling
         self.mod = mod
