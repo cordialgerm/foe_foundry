@@ -120,21 +120,21 @@ class _WarriorTemplate(MonsterTemplate):
         # STATS
 
         if variant is CommanderVariant:
-            stat_scaling = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=4),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=2),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=3),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=2),
-            ]
+            stat_scaling = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 4),
+                AbilityScore.INT: (StatScaling.Default, 2),
+                AbilityScore.WIS: (StatScaling.Medium, 3),
+                AbilityScore.CHA: (StatScaling.Default, 2),
+            }
         else:
-            stat_scaling = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            stat_scaling = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: (StatScaling.Default, -2),
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
 
         stats = base_stats(
             name=name,

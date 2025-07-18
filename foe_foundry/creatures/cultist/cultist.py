@@ -143,13 +143,13 @@ class _CultistTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=1),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Primary),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, 1),
+                AbilityScore.DEX: (StatScaling.Medium, 1),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: StatScaling.Primary,
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

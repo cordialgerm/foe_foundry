@@ -56,14 +56,14 @@ class _WightTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=3),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: (StatScaling.Medium, 3),
+            },
             hp_multiplier=1.45 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

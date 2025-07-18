@@ -88,13 +88,13 @@ class _SkeletonTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-4),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-5),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Default, -4),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

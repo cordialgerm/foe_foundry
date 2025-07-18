@@ -50,14 +50,14 @@ class _ManticoreTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=3),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-5),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 3),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Default, -5),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: (StatScaling.Default, -4),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

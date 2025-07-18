@@ -60,23 +60,23 @@ class _WolfTemplate(MonsterTemplate):
 
         # STATS
         if cr < 1:
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.NoScaling, mod=4),
-                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=5),
-                AbilityScore.CON.scaler(StatScaling.NoScaling, mod=2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-7),
-                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-4),
-            ]
+            stats_dict = {
+                AbilityScore.STR: (StatScaling.NoScaling, 4),
+                AbilityScore.DEX: (StatScaling.NoScaling, 5),
+                AbilityScore.CON: (StatScaling.NoScaling, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -7),
+                AbilityScore.WIS: (StatScaling.NoScaling, 2),
+                AbilityScore.CHA: (StatScaling.NoScaling, -4),
+            }
         else:
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
-                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=5),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=1),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-7),
-                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
-            ]
+            stats_dict = {
+                AbilityScore.STR: (StatScaling.Primary, 1),
+                AbilityScore.DEX: (StatScaling.NoScaling, 5),
+                AbilityScore.CON: (StatScaling.Constitution, 1),
+                AbilityScore.INT: (StatScaling.Default, -7),
+                AbilityScore.WIS: (StatScaling.NoScaling, 2),
+                AbilityScore.CHA: (StatScaling.Default, -4),
+            }
 
         hp_multiplier = 1.3 if cr < 1 else 1.0
         stats = base_stats(
@@ -85,7 +85,7 @@ class _WolfTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=stats,
+            stats=stats_dict,
             hp_multiplier=hp_multiplier * settings.hp_multiplier,
         )
 

@@ -100,13 +100,13 @@ class _ScoutTemplate(MonsterTemplate):
 
         # STATS
 
-        stat_scaling = [
-            AbilityScore.STR.scaler(StatScaling.Default),
-            AbilityScore.DEX.scaler(StatScaling.Primary),
-            AbilityScore.INT.scaler(StatScaling.Default, mod=0.5),
-            AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-            AbilityScore.CHA.scaler(StatScaling.Default, mod=0.5),
-        ]
+        stat_scaling = {
+            AbilityScore.STR: StatScaling.Default,
+            AbilityScore.DEX: StatScaling.Primary,
+            AbilityScore.INT: (StatScaling.Default, 0.5),
+            AbilityScore.WIS: (StatScaling.Medium, 1),
+            AbilityScore.CHA: (StatScaling.Default, 0.5),
+        }
 
         stats = base_stats(
             name=name,

@@ -120,14 +120,14 @@ class _OgreTemplate(MonsterTemplate):
         else:
             hp_multiplier = 1.2
             dmg_multiplier = 1.0
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=3 if cr <= 3 else 1),
-                AbilityScore.DEX.scaler(StatScaling.Default, -2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, 2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-5),
-                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=-3),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-3),
-            ]
+            stats = {
+                AbilityScore.STR: (StatScaling.Primary, 3 if cr <= 3 else 1),
+                AbilityScore.DEX: (StatScaling.Default, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -5),
+                AbilityScore.WIS: (StatScaling.NoScaling, -3),
+                AbilityScore.CHA: (StatScaling.NoScaling, -3),
+            }
 
         stats = base_stats(
             name=name,

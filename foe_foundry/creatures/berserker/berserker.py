@@ -85,14 +85,14 @@ class _BerserkerTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, 2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, 2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-1),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-1),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: (StatScaling.Default, -1),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

@@ -85,13 +85,13 @@ class _ToughTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, 0.5),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-1),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Medium),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 0.5),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Medium,
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

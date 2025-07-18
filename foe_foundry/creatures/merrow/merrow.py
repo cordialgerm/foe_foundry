@@ -66,29 +66,29 @@ class _MerrowTemplate(MonsterTemplate):
         self, settings: GenerationSettings
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         if settings.variant is MerrowStormblessed:
-            attributes = [
-                AbilityScore.STR.scaler(StatScaling.Default, mod=2),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=3),
-                AbilityScore.WIS.scaler(StatScaling.Primary),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=1),
-            ]
+            attributes = {
+                AbilityScore.STR: (StatScaling.Default, 2),
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: (StatScaling.Default, 3),
+                AbilityScore.WIS: StatScaling.Primary,
+                AbilityScore.CHA: (StatScaling.Medium, 1),
+            }
         elif settings.variant is MerrowAbyssalLord:
-            attributes = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-1),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=1),
-            ]
+            attributes = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Medium, -1),
+                AbilityScore.CHA: (StatScaling.Medium, 1),
+            }
         else:
-            attributes = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=-1),
-            ]
+            attributes = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: (StatScaling.Default, -2),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: (StatScaling.Medium, -1),
+            }
 
         # STATS
         stats = base_stats(

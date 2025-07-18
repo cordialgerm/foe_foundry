@@ -65,13 +65,13 @@ class _BalorTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.INT.scaler(StatScaling.Medium, mod=4),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=6),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 1),
+                AbilityScore.INT: (StatScaling.Medium, 4),
+                AbilityScore.WIS: (StatScaling.Medium, 2),
+                AbilityScore.CHA: (StatScaling.Medium, 6),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

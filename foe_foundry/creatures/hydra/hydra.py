@@ -53,14 +53,14 @@ class _HydraTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Low),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: StatScaling.Low,
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: (StatScaling.Default, -3),
+            },
             hp_multiplier=1.3 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

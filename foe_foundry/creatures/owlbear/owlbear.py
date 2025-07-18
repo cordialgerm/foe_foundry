@@ -61,18 +61,14 @@ class _OwlbearTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=4 if cr >= 6 else 2),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=0.5),
-                AbilityScore.CON.scaler(
-                    StatScaling.Constitution, mod=4 if cr >= 6 else 2
-                ),
-                AbilityScore.INT.scaler(
-                    StatScaling.NoScaling, mod=-2 if cr >= 6 else -7
-                ),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2 if cr >= 6 else 0.5),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, 4 if cr >= 6 else 2),
+                AbilityScore.DEX: (StatScaling.Medium, 0.5),
+                AbilityScore.CON: (StatScaling.Constitution, 4 if cr >= 6 else 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -2 if cr >= 6 else -7),
+                AbilityScore.WIS: (StatScaling.Medium, 2 if cr >= 6 else 0.5),
+                AbilityScore.CHA: (StatScaling.Default, -3),
+            },
             hp_multiplier=hp_multiplier * settings.hp_multiplier,
             damage_multiplier=damage_multiplier * settings.damage_multiplier,
         )

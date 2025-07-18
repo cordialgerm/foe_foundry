@@ -46,13 +46,13 @@ class _SimulacrumTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-6),
-                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Medium),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -6),
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: StatScaling.Default,
+            },
             hp_multiplier=0.6
             * settings.hp_multiplier,  # low HP for a CR 9 because we want to be at around 50% of the CR 12 archmage
             damage_multiplier=settings.damage_multiplier,

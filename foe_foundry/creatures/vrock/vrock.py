@@ -48,14 +48,14 @@ class _VrockTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=4),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-4),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 4),
+                AbilityScore.INT: (StatScaling.Default, -4),
+                AbilityScore.WIS: (StatScaling.Default, 2),
+                AbilityScore.CHA: (StatScaling.Default, -4),
+            },
             hp_multiplier=1.2 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

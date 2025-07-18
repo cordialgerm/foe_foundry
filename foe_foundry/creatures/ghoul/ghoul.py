@@ -69,23 +69,23 @@ class _GhoulTemplate(MonsterTemplate):
         hp_multiplier = 0.825
 
         if variant is GravelordVariant:
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.Medium, mod=-1),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-0.5),
-                AbilityScore.CHA.scaler(StatScaling.Medium),
-            ]
+            stats = {
+                AbilityScore.STR: (StatScaling.Medium, -1),
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: (StatScaling.Default, -0.5),
+                AbilityScore.CHA: StatScaling.Medium,
+            }
         else:
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-3),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-0.5),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
-            ]
+            stats = {
+                AbilityScore.STR: (StatScaling.Medium, 2),
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Default, -3),
+                AbilityScore.WIS: (StatScaling.Default, -0.5),
+                AbilityScore.CHA: (StatScaling.Default, -4),
+            }
 
         stats = base_stats(
             name=name,

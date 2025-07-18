@@ -139,43 +139,43 @@ class _GoblinTemplate(MonsterTemplate):
         if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
             hp_multiplier = 0.7 if cr < 0.5 else 0.8
             damage_multiplier = 1.0 if cr < 0.5 else 1.1
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-3),
-                AbilityScore.DEX.scaler(StatScaling.Primary, mod=2 if cr <= 1 else 0),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-1),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -3),
+                AbilityScore.DEX: (StatScaling.Primary, 2 if cr <= 1 else 0),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is GoblinBruteVariant:
             hp_multiplier = 1.0
             damage_multiplier = 1.0
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-1),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is GoblinShamanVariant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Default,
+            }
         elif variant is GoblinBossVariant:
             hp_multiplier = 1.0
             damage_multiplier = 1.0
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Default,
+            }
         else:
             raise ValueError(f"Unknown goblin variant: {variant}")
 

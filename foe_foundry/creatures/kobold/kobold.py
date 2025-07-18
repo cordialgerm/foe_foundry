@@ -76,36 +76,36 @@ class _KoboldTemplate(MonsterTemplate):
         if variant is KoboldWarrenguardVariant or variant is KoboldAscendant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-3),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 1),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Default, -2),
+                AbilityScore.WIS: (StatScaling.Default, -3),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is KoboldSharpsnoutVariant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-3),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Default, -3),
+                AbilityScore.WIS: (StatScaling.Default, 1),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is KoboldWyrmcallerVariant:
             hp_multiplier = 0.9
             damage_multiplier = 1.0
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-                AbilityScore.INT.scaler(StatScaling.Medium, mod=0.5),
-                AbilityScore.WIS.scaler(StatScaling.Primary, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Medium),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Medium, 0.5),
+                AbilityScore.WIS: (StatScaling.Primary, 1),
+                AbilityScore.CHA: StatScaling.Medium,
+            }
         else:
             raise ValueError(f"Unknown kobold variant: {variant}")
 

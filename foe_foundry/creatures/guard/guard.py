@@ -91,21 +91,21 @@ class _GuardTemplate(MonsterTemplate):
         # STATS
 
         if variant is CommanderVariant:
-            stat_scaling = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium, mod=4),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=1),
-            ]
+            stat_scaling = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 4),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Medium, 2),
+                AbilityScore.CHA: (StatScaling.Default, 1),
+            }
         else:
-            stat_scaling = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ]
+            stat_scaling = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: StatScaling.Default,
+            }
 
         stats = base_stats(
             name=name,

@@ -51,14 +51,14 @@ class _CubeTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-7),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=6),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-9),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-6),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, -2),
+                AbilityScore.DEX: (StatScaling.NoScaling, -7),
+                AbilityScore.CON: (StatScaling.Constitution, 6),
+                AbilityScore.INT: (StatScaling.NoScaling, -9),
+                AbilityScore.WIS: (StatScaling.Medium, -6),
+                AbilityScore.CHA: (StatScaling.NoScaling, -9),
+            },
             hp_multiplier=1.4 * settings.hp_multiplier,
             damage_multiplier=0.9 * settings.damage_multiplier,
         )

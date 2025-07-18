@@ -110,23 +110,23 @@ class _GolemTemplate(MonsterTemplate):
         # STATS
 
         if variant is not FleshVariant:
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-7),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2.5),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.NoScaling, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -7),
+                AbilityScore.WIS: (StatScaling.Default, -2.5),
+                AbilityScore.CHA: (StatScaling.NoScaling, -9),
+            }
         else:
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-3),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2.5),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-4),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.NoScaling, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -3),
+                AbilityScore.WIS: (StatScaling.Default, -2.5),
+                AbilityScore.CHA: (StatScaling.NoScaling, -4),
+            }
 
         stats = base_stats(
             name=name,

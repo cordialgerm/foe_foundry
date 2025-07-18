@@ -54,13 +54,13 @@ class _HollowGazerTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: (StatScaling.Default, -3),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

@@ -54,13 +54,13 @@ class _MedusaTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=2),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Default, 1),
+                AbilityScore.CHA: (StatScaling.Medium, 2),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

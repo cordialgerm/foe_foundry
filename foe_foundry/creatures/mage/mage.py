@@ -236,13 +236,13 @@ class _MageTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Medium),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: StatScaling.Default,
+            },
             hp_multiplier=0.85 * settings.hp_multiplier,
             damage_multiplier=1.2 * settings.damage_multiplier,
         )

@@ -51,14 +51,14 @@ class _GorgonTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=2),
-                AbilityScore.DEX.scaler(StatScaling.Default, mod=-1),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=4),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-9),
-                AbilityScore.WIS.scaler(StatScaling.Default, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-5),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, 2),
+                AbilityScore.DEX: (StatScaling.Default, -1),
+                AbilityScore.CON: (StatScaling.Constitution, 4),
+                AbilityScore.INT: (StatScaling.Default, -9),
+                AbilityScore.WIS: (StatScaling.Default, 1),
+                AbilityScore.CHA: (StatScaling.Default, -5),
+            },
             hp_multiplier=1.2 * settings.hp_multiplier,
             damage_multiplier=0.95 * settings.damage_multiplier,
         )

@@ -80,13 +80,13 @@ class _DruidTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=2),
-                AbilityScore.WIS.scaler(StatScaling.Primary),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=1),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: (StatScaling.Default, 2),
+                AbilityScore.WIS: StatScaling.Primary,
+                AbilityScore.CHA: (StatScaling.Default, 1),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

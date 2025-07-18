@@ -82,13 +82,13 @@ class _KnightTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Default),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Medium),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=2),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Default,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: (StatScaling.Medium, 2),
+            },
             hp_multiplier=settings.hp_multiplier * (1.1 if cr >= 12 else 1.0),
             damage_multiplier=settings.damage_multiplier,
         )

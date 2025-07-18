@@ -58,13 +58,13 @@ class _BugbearTemplate(MonsterTemplate):
         variant = settings.variant
 
         # STATS
-        attrs = [
-            AbilityScore.STR.scaler(StatScaling.Primary, mod=0.5),
-            AbilityScore.DEX.scaler(StatScaling.Medium, mod=3),
-            AbilityScore.INT.scaler(StatScaling.Medium, mod=-4),
-            AbilityScore.WIS.scaler(StatScaling.Default, mod=2),
-            AbilityScore.CHA.scaler(StatScaling.Medium, mod=-3),
-        ]
+        attrs = {
+            AbilityScore.STR: (StatScaling.Primary, 0.5),
+            AbilityScore.DEX: (StatScaling.Medium, 3),
+            AbilityScore.INT: (StatScaling.Medium, -4),
+            AbilityScore.WIS: (StatScaling.Default, 2),
+            AbilityScore.CHA: (StatScaling.Medium, -3),
+        }
 
         stats = base_stats(
             name=variant.name,

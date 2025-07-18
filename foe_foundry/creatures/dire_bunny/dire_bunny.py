@@ -48,14 +48,14 @@ class _DireBunnyTemplate(MonsterTemplate):
         is_legendary = settings.is_legendary
 
         # STATS
-        stats = [
-            AbilityScore.STR.scaler(StatScaling.Default),
-            AbilityScore.DEX.scaler(StatScaling.Primary, mod=2),
-            AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
-            AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-7),
-            AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=2),
-            AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-4),
-        ]
+        stats_dict = {
+            AbilityScore.STR: StatScaling.Default,
+            AbilityScore.DEX: (StatScaling.Primary, 2),
+            AbilityScore.CON: (StatScaling.Constitution, -2),
+            AbilityScore.INT: (StatScaling.NoScaling, -7),
+            AbilityScore.WIS: (StatScaling.NoScaling, 2),
+            AbilityScore.CHA: (StatScaling.NoScaling, -4),
+        }
 
         stats = base_stats(
             name=name,
@@ -63,7 +63,7 @@ class _DireBunnyTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=stats,
+            stats=stats_dict,
             hp_multiplier=0.8 * settings.hp_multiplier,
         )
 

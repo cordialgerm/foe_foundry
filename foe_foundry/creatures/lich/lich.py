@@ -59,14 +59,14 @@ class _LichTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-6),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Medium),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.CON: (StatScaling.Constitution, -6),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: StatScaling.Medium,
+            },
             hp_multiplier=0.85 * settings.hp_multiplier,
             damage_multiplier=1.1 * settings.damage_multiplier,
         )

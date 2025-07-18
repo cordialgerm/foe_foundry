@@ -79,13 +79,13 @@ class _PriestTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.DEX.scaler(StatScaling.Default),
-                AbilityScore.INT.scaler(StatScaling.Default),
-                AbilityScore.WIS.scaler(StatScaling.Primary),
-                AbilityScore.CHA.scaler(StatScaling.Default),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Medium, 2),
+                AbilityScore.DEX: StatScaling.Default,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Primary,
+                AbilityScore.CHA: StatScaling.Default,
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

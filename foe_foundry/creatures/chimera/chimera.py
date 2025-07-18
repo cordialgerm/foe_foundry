@@ -53,14 +53,14 @@ class _ChimeraTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Default),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=4),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-8),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-1.5),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Default,
+                AbilityScore.CON: (StatScaling.Constitution, 4),
+                AbilityScore.INT: (StatScaling.Default, -8),
+                AbilityScore.WIS: (StatScaling.Medium, 2),
+                AbilityScore.CHA: (StatScaling.Default, -1.5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

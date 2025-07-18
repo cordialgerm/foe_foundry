@@ -62,13 +62,13 @@ class _MimicTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
-                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
-                AbilityScore.INT.scaler(StatScaling.Default, mod=-5),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2),
-                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, 1),
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.INT: (StatScaling.Default, -5),
+                AbilityScore.WIS: (StatScaling.Medium, 2),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            },
             hp_multiplier=1.25 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

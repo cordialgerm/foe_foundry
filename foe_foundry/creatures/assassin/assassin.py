@@ -87,13 +87,13 @@ class _AssassinTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Default),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.INT.scaler(StatScaling.Medium, mod=0.5),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=1),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Medium, 0.5),
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: (StatScaling.Medium, 1),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )

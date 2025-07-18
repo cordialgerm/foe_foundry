@@ -64,25 +64,25 @@ class _AnimatedArmorTemplate(MonsterTemplate):
 
         # STATS
         if variant is AnimatedArmorVariant:
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-9),
-                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=-7),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 1),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -9),
+                AbilityScore.WIS: (StatScaling.NoScaling, -7),
+                AbilityScore.CHA: (StatScaling.NoScaling, -9),
+            }
             hp_multiplier = 1.0
             damage_multiplier = 1.0
         elif variant is RunicSpellplateVariant:
-            attrs = [
-                AbilityScore.STR.scaler(StatScaling.Primary),
-                AbilityScore.DEX.scaler(StatScaling.Medium),
-                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
-                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=0),
-                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=0),
-                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=0),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, 0),
+                AbilityScore.WIS: (StatScaling.NoScaling, 0),
+                AbilityScore.CHA: (StatScaling.NoScaling, 0),
+            }
             hp_multiplier = 0.8
             damage_multiplier = 0.9
 

@@ -98,13 +98,13 @@ class _BanditTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                AbilityScore.STR.scaler(StatScaling.Medium, mod=0.5),
-                AbilityScore.DEX.scaler(StatScaling.Primary),
-                AbilityScore.INT.scaler(StatScaling.Medium, mod=-0.5),
-                AbilityScore.WIS.scaler(StatScaling.Default),
-                AbilityScore.CHA.scaler(StatScaling.Medium, mod=-0.5),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Medium, 0.5),
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Medium, -0.5),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: (StatScaling.Medium, -0.5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
