@@ -109,18 +109,18 @@ class _OgreTemplate(MonsterTemplate):
         if variant is OgreBigBrainzVariant:
             hp_multiplier = 1.0
             dmg_multiplier = 1.0
-            stats = [
-                AbilityScore.STR.scaler(StatScaling.Medium, mod=5),
-                AbilityScore.DEX.scaler(StatScaling.Default, -2),
-                AbilityScore.CON.scaler(StatScaling.Constitution, 2),
-                AbilityScore.INT.scaler(StatScaling.Primary),
-                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-2),
-                AbilityScore.CHA.scaler(StatScaling.Medium),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Medium, 5),
+                AbilityScore.DEX: (StatScaling.Default, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Primary, 0),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: (StatScaling.Medium, 0),
+            }
         else:
             hp_multiplier = 1.2
             dmg_multiplier = 1.0
-            stats = {
+            attrs = {
                 AbilityScore.STR: (StatScaling.Primary, 3 if cr <= 3 else 1),
                 AbilityScore.DEX: (StatScaling.Default, -2),
                 AbilityScore.CON: (StatScaling.Constitution, 2),
@@ -135,7 +135,7 @@ class _OgreTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=stats,
+            stats=attrs,
             hp_multiplier=hp_multiplier * settings.hp_multiplier,
             damage_multiplier=dmg_multiplier * settings.damage_multiplier,
         )

@@ -9,7 +9,9 @@ from ..movement import Movement
 from ..skills import AbilityScore, StatScaler, StatScaling
 from ..statblocks import BaseStatblock
 
-AbilityScaling: TypeAlias = StatScaling | tuple[StatScaling, int | float]
+AbilityScaling: TypeAlias = (
+    StatScaling | tuple[StatScaling, int] | tuple[StatScaling, float]
+)
 
 
 class _Loader:
