@@ -1,5 +1,5 @@
 from ..features import ActionType
-from ..skills import Stats
+from ..skills import AbilityScore
 from .spell import Spell
 
 AcidArrow: Spell = Spell(
@@ -10,7 +10,7 @@ AcidArrow: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.""",
     upcast_description="When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
     range="90 feet",
@@ -24,7 +24,7 @@ Sunburst: Spell = Spell(
     upcast=False,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A brilliant sunlight flashes in a 60-foot radius sphere centered on a point you choose within range. Each creature in that area must make a Dexterity saving throw. A creature takes 12d6 radiant damage on a failed save, or half as much damage on a successful one. An affected nonmagical light source within the area is extinguished.
 If a creature is in dim light or darkness when it fails its saving throw, it is blinded until the end of your next turn. If a creature is in bright light when it fails its saving throw, it is blinded until the end of its next turn. The spell dispels any darkness in the area that was created by a spell of 8th level or lower.
 The light spreads around corners. It lasts for the duration, and the area is considered bright light. The spell's light is sunlight.
@@ -66,7 +66,7 @@ BladeBarrier: Spell = Spell(
     upcast=False,
     concentration=True,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
 When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.""",
     range="90 feet",
@@ -80,7 +80,7 @@ ConeOfCold: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
 A creature killed by this spell becomes a frozen statue until it thaws.""",
     upcast_description="""When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.""",
@@ -96,7 +96,7 @@ ChainLightning: Spell = Spell(
     upcast=False,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
 A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.""",
     range="150 feet",
@@ -125,7 +125,7 @@ FaerieFire: Spell = Spell(
     upcast=False,
     concentration=True,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.""",
 )
@@ -138,7 +138,7 @@ Moonbeam: Spell = Spell(
     upcast=True,
     concentration=True,
     action_type=ActionType.Action,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""A beam of light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain. It must make a Constitution saving throw. On a failed save, it takes 2d10 radiant damage, or half as much damage on a successful one.
 A shapechanger makes its saving throw with disadvantage. A creature that fails the saving throw also has its speed halved until the end of its next turn.
 On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction.
@@ -153,7 +153,7 @@ Fireball: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.",
     upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
     range="150 feet",
@@ -167,7 +167,7 @@ FlameStrike: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.""",
     upcast_description="When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
     range="60 feet",
@@ -199,7 +199,7 @@ GustOfWind: Spell = Spell(
     upcast=False,
     concentration=True,
     action_type=ActionType.Action,
-    save=Stats.STR,
+    save=AbilityScore.STR,
     description="""
     A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 15 feet away from you in a direction following the line.
     Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.
@@ -218,7 +218,7 @@ HeatMetal: Spell = Spell(
     concentration=True,
     action_type=ActionType.Action,
     upcast_description="When you cast this spell using a spell slot of 3rd level or higher, you can target one additional suit of metal armor for each slot level above 2nd.",
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.
 If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.""",
     range="60 feet",
@@ -232,7 +232,7 @@ IceStorm: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
 Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.""",
     upcast_description="When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
@@ -248,7 +248,7 @@ LightningBolt: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
     upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
     range="Self (100-foot line)",
@@ -263,7 +263,7 @@ Thunderwave: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
 In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.""",
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
@@ -278,7 +278,7 @@ IceKnife: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.""",
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.",
@@ -293,7 +293,7 @@ BurningHands: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 The fire ignites any flammable objects in the area that aren't being worn or carried.""",
     upcast_description="When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
@@ -308,7 +308,7 @@ Shatter: Spell = Spell(
     upcast=True,
     concentration=False,
     action_type=ActionType.Action,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.""",
     upcast_description="When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
     range="60 feet",
@@ -323,7 +323,7 @@ WallOfFire: Spell = Spell(
     upcast=True,
     concentration=True,
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""
     You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.
 

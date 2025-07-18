@@ -1,6 +1,6 @@
 from typing import List
 
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...die import Die
 from ...features import ActionType, Feature
@@ -75,7 +75,7 @@ class _PrimalEncouragement(DruidPower):
         healing = stats.target_value(
             target=0.5, force_die=Die.d4, flat_mod=stats.attributes.WIS
         )
-        uses = stats.attributes.stat_mod(Stats.WIS)
+        uses = stats.attributes.stat_mod(AbilityScore.WIS)
 
         feature = Feature(
             name="Druidic Healing",

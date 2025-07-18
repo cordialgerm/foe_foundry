@@ -11,7 +11,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -109,25 +109,25 @@ class _OgreTemplate(MonsterTemplate):
         if variant is OgreBigBrainzVariant:
             hp_multiplier = 1.0
             dmg_multiplier = 1.0
-            stats = [
-                Stats.STR.scaler(StatScaling.Medium, mod=5),
-                Stats.DEX.scaler(StatScaling.Default, -2),
-                Stats.CON.scaler(StatScaling.Constitution, 2),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-2),
-                Stats.CHA.scaler(StatScaling.Medium),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Medium, 5),
+                AbilityScore.DEX: (StatScaling.Default, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Primary, 0),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: (StatScaling.Medium, 0),
+            }
         else:
             hp_multiplier = 1.2
             dmg_multiplier = 1.0
-            stats = [
-                Stats.STR.scaler(StatScaling.Primary, mod=3 if cr <= 3 else 1),
-                Stats.DEX.scaler(StatScaling.Default, -2),
-                Stats.CON.scaler(StatScaling.Constitution, 2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-5),
-                Stats.WIS.scaler(StatScaling.NoScaling, mod=-3),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-3),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 3 if cr <= 3 else 1),
+                AbilityScore.DEX: (StatScaling.Default, -2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.NoScaling, -5),
+                AbilityScore.WIS: (StatScaling.NoScaling, -3),
+                AbilityScore.CHA: (StatScaling.NoScaling, -3),
+            }
 
         stats = base_stats(
             name=name,
@@ -135,7 +135,7 @@ class _OgreTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=stats,
+            stats=attrs,
             hp_multiplier=hp_multiplier * settings.hp_multiplier,
             damage_multiplier=dmg_multiplier * settings.damage_multiplier,
         )
@@ -187,9 +187,11 @@ class _OgreTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 4 and variant is not OgreBigBrainzVariant:
-            stats = stats.grant_save_proficiency(Stats.STR, Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.STR, AbilityScore.CON)
         elif variant is OgreBigBrainzVariant:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS, Stats.CHA)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.CON, AbilityScore.WIS, AbilityScore.CHA
+            )
 
         return stats, [attack, secondary_attack] if secondary_attack else [attack]
 

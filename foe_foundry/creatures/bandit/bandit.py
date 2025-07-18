@@ -8,7 +8,7 @@ from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
@@ -98,13 +98,13 @@ class _BanditTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Medium, mod=0.5),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.INT.scaler(StatScaling.Medium, mod=-0.5),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Medium, mod=-0.5),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Medium, 0.5),
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Medium, -0.5),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: (StatScaling.Medium, -0.5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -172,10 +172,12 @@ class _BanditTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 2:
-            stats = stats.grant_save_proficiency(Stats.STR, Stats.DEX)
+            stats = stats.grant_save_proficiency(AbilityScore.STR, AbilityScore.DEX)
 
         if cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.STR, Stats.DEX, Stats.CON)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.STR, AbilityScore.DEX, AbilityScore.CON
+            )
 
         return stats, [attack, secondary_attack]
 

@@ -1,5 +1,5 @@
 from .ac import ResolvedArmorClass
-from .attributes import Attributes, Skills, Stats  # noqa
+from .attributes import AbilityScore, Attributes, Skills  # noqa
 from .benchmarks import Benchmark  # noqa
 from .creature_types import CreatureType
 from .damage import Attack, AttackType, Condition, Damage, DamageType  # noqa

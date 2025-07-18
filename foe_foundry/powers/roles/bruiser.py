@@ -3,7 +3,7 @@ from typing import List
 
 from ...attack_template import natural as natural_attacks
 from ...attack_template import weapon
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...damage import Attack, AttackType, Bleeding, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
@@ -33,7 +33,7 @@ class BruiserPower(PowerWithStandardScoring):
     ):
         standard_score_args = dict(
             require_roles=MonsterRole.Bruiser,
-            bonus_stats=[Stats.STR, Stats.CON],
+            bonus_stats=[AbilityScore.STR, AbilityScore.CON],
             bonus_skills=Skills.Athletics,
             **score_args,
         )

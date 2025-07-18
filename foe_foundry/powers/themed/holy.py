@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import weapon
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import DamageType, conditions
 from ...die import Die
@@ -45,7 +45,7 @@ class HolyPower(PowerWithStandardScoring):
             power_types=power_types
             or [PowerType.Magic, PowerType.Healing, PowerType.Buff],
             score_args=dict(
-                require_stats=[Stats.WIS, Stats.CHA],
+                require_stats=[AbilityScore.WIS, AbilityScore.CHA],
                 require_types=CreatureType.Humanoid,
                 require_damage=DamageType.Radiant,
                 bonus_roles=MonsterRole.Support,
@@ -144,7 +144,7 @@ class _Heroism(HolyPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
-            1.75 * (stats.attributes.stat_mod(Stats.WIS) + stats.cr), min_val=5
+            1.75 * (stats.attributes.stat_mod(AbilityScore.WIS) + stats.cr), min_val=5
         )
 
         feature = Feature(
@@ -169,7 +169,7 @@ class _DeathWard(HolyPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         new_hp = easy_multiple_of_five(
-            1.75 * (stats.attributes.stat_mod(Stats.WIS) + stats.cr), min_val=5
+            1.75 * (stats.attributes.stat_mod(AbilityScore.WIS) + stats.cr), min_val=5
         )
 
         feature = Feature(

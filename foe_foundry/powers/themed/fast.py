@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...features import ActionType, Feature
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock
@@ -38,7 +38,7 @@ class FastPower(PowerWithStandardScoring):
             theme="fast",
             power_types=power_types or [PowerType.Movement],
             score_args=dict(
-                require_stats=Stats.DEX,
+                require_stats=AbilityScore.DEX,
                 stat_threshold=16,
                 require_roles=[MonsterRole.Ambusher, MonsterRole.Skirmisher],
             )

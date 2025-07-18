@@ -13,7 +13,7 @@ from ...damage import Condition, DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -88,13 +88,13 @@ class _SkeletonTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.INT.scaler(StatScaling.Default, mod=-4),
-                Stats.WIS.scaler(StatScaling.Default, mod=-2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-5),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Default, -4),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -168,7 +168,7 @@ class _SkeletonTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 3:
-            stats = stats.grant_save_proficiency(Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.CON)
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

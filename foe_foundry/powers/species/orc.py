@@ -10,7 +10,7 @@ from ...die import Die, DieFormula
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
-from ...skills import Stats
+from ...skills import AbilityScore
 from ...spells import abjuration, evocation, illusion
 from ...statblocks import BaseStatblock
 from ..power import (
@@ -421,7 +421,8 @@ class _WarCryOfTheBloodiedFang(OrcPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         temp_hp = easy_multiple_of_five(
-            2 * stats.attributes.proficiency + 2 * stats.attributes.stat_mod(Stats.CHA)
+            2 * stats.attributes.proficiency
+            + 2 * stats.attributes.stat_mod(AbilityScore.CHA)
         )
         feature = Feature(
             name="War-Cry of the Bloodied Fang",

@@ -3,7 +3,7 @@ from typing import List
 
 from foe_foundry.references import action_ref
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
@@ -26,7 +26,7 @@ class AmbusherPower(PowerWithStandardScoring):
     ):
         standard_score_args = dict(
             require_roles=MonsterRole.Ambusher,
-            bonus_stats=Stats.DEX,
+            bonus_stats=AbilityScore.DEX,
             bonus_skills=Skills.Stealth,
             bonus_speed=40,
             **score_args,
