@@ -25,6 +25,7 @@ from . import (
     gadget,
     holy,
     honorable,
+    hunter,
     icy,
     illusory,
     monstrous,
@@ -68,6 +69,7 @@ ThemedPowers: List[Power] = (
     + gadget.GadgetPowers
     + holy.HolyPowers
     + honorable.HonorablePowers
+    + hunter.HunterPowers
     + icy.IcyPowers
     + monstrous.MonstrousPowers
     + petrifying.PetrifyingPowers
