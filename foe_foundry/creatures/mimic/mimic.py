@@ -9,7 +9,7 @@ from ...movement import Movement
 from ...powers import PowerSelection, flags
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -63,11 +63,11 @@ class _MimicTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary, mod=1),
-                Stats.DEX.scaler(StatScaling.Default, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=-5),
-                Stats.WIS.scaler(StatScaling.Medium, mod=2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
+                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-5),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
             ],
             hp_multiplier=1.25 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -112,9 +112,9 @@ class _MimicTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.CON)
         if cr >= 8:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack]
 

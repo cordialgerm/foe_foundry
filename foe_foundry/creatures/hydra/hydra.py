@@ -8,7 +8,7 @@ from ...damage import Condition, DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -54,12 +54,12 @@ class _HydraTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Default, mod=2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.Low),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Default, mod=-3),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Low),
+                AbilityScore.WIS.scaler(StatScaling.Default),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
             ],
             hp_multiplier=1.3 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -105,7 +105,9 @@ class _HydraTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 10:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.STR, Stats.WIS)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.CON, AbilityScore.STR, AbilityScore.WIS
+            )
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

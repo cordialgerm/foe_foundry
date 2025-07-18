@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass
 from num2words import num2words
 
 from ..features import ActionType
-from ..skills import Stats
+from ..skills import AbilityScore
 
 
 @dataclass(frozen=True)
@@ -19,7 +19,7 @@ class Spell:
     upcast: bool = False
     concentration: bool = False
     action_type: ActionType = ActionType.Action
-    save: Stats | None = None
+    save: AbilityScore | None = None
     upcast_description: str | None = None
     range: str | None = None
     concentration_spell_level: int | None = None

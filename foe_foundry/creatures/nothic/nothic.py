@@ -10,7 +10,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -55,11 +55,11 @@ class _HollowGazerTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=-2),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Medium, mod=1),
-                Stats.CHA.scaler(StatScaling.Default, mod=-3),
+                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.DEX.scaler(StatScaling.Medium),
+                AbilityScore.INT.scaler(StatScaling.Primary),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
             ],
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -93,7 +93,7 @@ class _HollowGazerTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.WIS, Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.CON)
 
         # RESISTANCES / IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

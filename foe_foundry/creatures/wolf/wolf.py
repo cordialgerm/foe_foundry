@@ -9,7 +9,7 @@ from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -61,21 +61,21 @@ class _WolfTemplate(MonsterTemplate):
         # STATS
         if cr < 1:
             stats = [
-                Stats.STR.scaler(StatScaling.NoScaling, mod=4),
-                Stats.DEX.scaler(StatScaling.NoScaling, mod=5),
-                Stats.CON.scaler(StatScaling.NoScaling, mod=2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-7),
-                Stats.WIS.scaler(StatScaling.NoScaling, mod=2),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
+                AbilityScore.STR.scaler(StatScaling.NoScaling, mod=4),
+                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=5),
+                AbilityScore.CON.scaler(StatScaling.NoScaling, mod=2),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-7),
+                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=2),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-4),
             ]
         else:
             stats = [
-                Stats.STR.scaler(StatScaling.Primary, mod=1),
-                Stats.DEX.scaler(StatScaling.NoScaling, mod=5),
-                Stats.CON.scaler(StatScaling.Constitution, mod=1),
-                Stats.INT.scaler(StatScaling.Default, mod=-7),
-                Stats.WIS.scaler(StatScaling.NoScaling, mod=2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-4),
+                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
+                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=5),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=1),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-7),
+                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=2),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
             ]
 
         hp_multiplier = 1.3 if cr < 1 else 1.0
@@ -121,7 +121,7 @@ class _WolfTemplate(MonsterTemplate):
 
         # SAVES
         if is_legendary:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         # SKILLS
         stats = stats.grant_proficiency_or_expertise(Skills.Perception, Skills.Stealth)

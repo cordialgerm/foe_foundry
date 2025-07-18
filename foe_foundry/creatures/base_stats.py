@@ -5,7 +5,7 @@ from ..benchmarks.fof import FoFBenchmark
 from ..damage import Attack, Damage, DamageType
 from ..die import DieFormula
 from ..movement import Movement
-from ..skills import Stats, StatScaler, StatScaling
+from ..skills import AbilityScore, StatScaler, StatScaling
 from ..statblocks import BaseStatblock
 
 
@@ -40,7 +40,9 @@ def base_stats(
 
     # default CON modifiers
     stat_vals = {
-        Stats.CON: int(Stats.CON.scaler(StatScaling.Constitution).scale(cr)),
+        AbilityScore.CON: int(
+            AbilityScore.CON.scaler(StatScaling.Constitution).scale(cr)
+        ),
     }
     for stat in stats:
         stat_vals[stat.stat] = int(stat.scale(cr))
@@ -48,7 +50,7 @@ def base_stats(
     attributes = Attributes(proficiency=proficiency, **stat_vals)  # type: ignore
     hp = DieFormula.target_value(
         target=hp_multiplier * expected_hp,
-        per_die_mod=attributes.stat_mod(Stats.CON),
+        per_die_mod=attributes.stat_mod(AbilityScore.CON),
     )
 
     attack_damage = damage_multiplier * expected_attack_damage

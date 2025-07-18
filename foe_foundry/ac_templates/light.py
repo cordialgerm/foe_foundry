@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -24,7 +24,7 @@ class _LightArmor(ArmorClassTemplate):
         quality_level = stats.ac_boost
         ac = (
             self._baseline_ac
-            + min(stats.attributes.stat_mod(Stats.DEX), 5)
+            + min(stats.attributes.stat_mod(AbilityScore.DEX), 5)
             + quality_level
             + (2 if uses_shield else 0)
         )

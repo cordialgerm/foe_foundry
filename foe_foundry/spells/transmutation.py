@@ -1,5 +1,5 @@
 from ..features import ActionType
-from ..skills import Stats
+from ..skills import AbilityScore
 from .spell import Spell
 
 ControlWeather = Spell(
@@ -55,7 +55,7 @@ Disintegrate = Spell(
     source="SRD 5.1",
     action_type=ActionType.Action,
     upcast=True,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     description="""A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.
 
 A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. The target is disintegrated if this damage leaves it with 0 hit points.
@@ -74,7 +74,7 @@ EnlargeReduce = Spell(
     action_type=ActionType.Action,
     concentration=True,
     upcast=False,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     description="""You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
@@ -91,7 +91,7 @@ FleshToStone = Spell(
     source="SRD 5.1",
     action_type=ActionType.Action,
     upcast=False,
-    save=Stats.CON,
+    save=AbilityScore.CON,
     concentration=True,
     description="""
     You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.
@@ -151,7 +151,7 @@ Slow: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.WIS,
+    save=AbilityScore.WIS,
     upcast=False,
     concentration=True,
     description="""You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.
@@ -169,7 +169,7 @@ SpikeGrowth: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.DEX,
+    save=AbilityScore.DEX,
     upcast=False,
     concentration=True,
     description="""The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.
@@ -183,7 +183,7 @@ Telekinesis: Spell = Spell(
     school="transmutation",
     source="SRD 5.1",
     action_type=ActionType.Action,
-    save=Stats.STR,
+    save=AbilityScore.STR,
     upcast=False,
     concentration=True,
     description="""

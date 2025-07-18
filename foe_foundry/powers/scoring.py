@@ -1,7 +1,7 @@
 from typing import Callable, List, Literal, Set, TypeAlias, TypeVar
 
 from ..attack_template import AttackTemplate
-from ..attributes import Skills, Stats
+from ..attributes import AbilityScore, Skills
 from ..creature_types import CreatureType
 from ..damage import AttackType, DamageType
 from ..role_types import MonsterRole
@@ -142,7 +142,7 @@ def score(
     require_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     require_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     require_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    require_stats: Stats | List[Stats] | Set[Stats] | None = None,
+    require_stats: AbilityScore | List[AbilityScore] | Set[AbilityScore] | None = None,
     require_size: Size | None = None,
     require_speed: int | None = None,
     require_flying: bool = False,
@@ -166,7 +166,7 @@ def score(
     bonus_roles: MonsterRole | Set[MonsterRole] | List[MonsterRole] | None = None,
     bonus_types: CreatureType | Set[CreatureType] | List[CreatureType] | None = None,
     bonus_damage: DamageType | Set[DamageType] | List[DamageType] | None = None,
-    bonus_stats: Stats | List[Stats] | Set[Stats] | None = None,
+    bonus_stats: AbilityScore | List[AbilityScore] | Set[AbilityScore] | None = None,
     bonus_size: Size | None = None,
     bonus_speed: int | None = None,
     bonus_flying: bool = False,

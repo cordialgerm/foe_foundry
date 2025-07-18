@@ -10,7 +10,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from ...statblocks import BaseStatblock
 from .._data import (
     GenerationSettings,
@@ -65,23 +65,23 @@ class _AnimatedArmorTemplate(MonsterTemplate):
         # STATS
         if variant is AnimatedArmorVariant:
             attrs = [
-                Stats.STR.scaler(StatScaling.Primary, mod=1),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-9),
-                Stats.WIS.scaler(StatScaling.NoScaling, mod=-7),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-9),
+                AbilityScore.STR.scaler(StatScaling.Primary, mod=1),
+                AbilityScore.DEX.scaler(StatScaling.Medium),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-9),
+                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=-7),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
             ]
             hp_multiplier = 1.0
             damage_multiplier = 1.0
         elif variant is RunicSpellplateVariant:
             attrs = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=0),
-                Stats.WIS.scaler(StatScaling.NoScaling, mod=0),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=0),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=0),
+                AbilityScore.WIS.scaler(StatScaling.NoScaling, mod=0),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=0),
             ]
             hp_multiplier = 0.8
             damage_multiplier = 0.9

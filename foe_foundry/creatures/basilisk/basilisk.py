@@ -10,7 +10,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -53,11 +53,11 @@ class _BasiliskTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Default, mod=-2),
-                Stats.INT.scaler(StatScaling.Default, mod=-6),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-4),
-                Stats.CHA.scaler(StatScaling.Default, mod=-3),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-6),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-4),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
             ],
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -85,7 +85,9 @@ class _BasiliskTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 8:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.STR, Stats.WIS)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.CON, AbilityScore.STR, AbilityScore.WIS
+            )
 
         return stats, [attack]
 

@@ -10,7 +10,7 @@ from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...senses import Senses
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -52,12 +52,12 @@ class _CubeTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary, mod=-2),
-                Stats.DEX.scaler(StatScaling.NoScaling, mod=-7),
-                Stats.CON.scaler(StatScaling.Constitution, mod=6),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-9),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-6),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-9),
+                AbilityScore.STR.scaler(StatScaling.Primary, mod=-2),
+                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-7),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=6),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-9),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-6),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
             ],
             hp_multiplier=1.4 * settings.hp_multiplier,
             damage_multiplier=0.9 * settings.damage_multiplier,

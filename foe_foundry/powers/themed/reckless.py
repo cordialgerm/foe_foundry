@@ -5,7 +5,7 @@ from typing import List
 from foe_foundry.references import action_ref
 
 from ...attack_template import natural, weapon
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
@@ -49,7 +49,7 @@ class RecklessPower(PowerWithStandardScoring):
                 require_attack_types=AttackType.AllMelee(),
                 bonus_roles=MonsterRole.Bruiser,
                 bonus_size=Size.Large,
-                require_stats=Stats.STR,
+                require_stats=AbilityScore.STR,
                 attack_names=[
                     "-",
                     natural.Claw,
@@ -66,7 +66,7 @@ class RecklessPower(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.scale({Stats.WIS: -1})
+        return stats.scale({AbilityScore.WIS: -1})
 
 
 class _Charger(RecklessPower):

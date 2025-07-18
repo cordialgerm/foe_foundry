@@ -11,7 +11,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -55,11 +55,11 @@ class _MedusaTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=-2),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Default, mod=1),
-                Stats.CHA.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.STR.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.DEX.scaler(StatScaling.Primary),
+                AbilityScore.INT.scaler(StatScaling.Default),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=1),
+                AbilityScore.CHA.scaler(StatScaling.Medium, mod=2),
             ],
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -106,7 +106,7 @@ class _MedusaTemplate(MonsterTemplate):
         )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.WIS)
+        stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack, secondary_attack]
 

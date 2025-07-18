@@ -12,7 +12,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaler, StatScaling
+from ...skills import AbilityScore, Skills, StatScaler, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -74,67 +74,67 @@ WraithVariant = MonsterVariant(
 
 def _banshee_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.NoScaling, mod=-9),
-        Stats.DEX.scaler(StatScaling.Medium),
-        Stats.CON.scaler(StatScaling.Default),
-        Stats.INT.scaler(StatScaling.Medium, mod=-1),
-        Stats.WIS.scaler(StatScaling.Default),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.NoScaling, mod=-9),
+        AbilityScore.DEX.scaler(StatScaling.Medium),
+        AbilityScore.CON.scaler(StatScaling.Default),
+        AbilityScore.INT.scaler(StatScaling.Medium, mod=-1),
+        AbilityScore.WIS.scaler(StatScaling.Default),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
 def _wraith_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.Default, mod=-6),
-        Stats.DEX.scaler(StatScaling.Medium, mod=3),
-        Stats.CON.scaler(StatScaling.Constitution, mod=2),
-        Stats.INT.scaler(StatScaling.Default),
-        Stats.WIS.scaler(StatScaling.Medium, mod=1),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.Default, mod=-6),
+        AbilityScore.DEX.scaler(StatScaling.Medium, mod=3),
+        AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+        AbilityScore.INT.scaler(StatScaling.Default),
+        AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
 def _specter_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.NoScaling, mod=-9),
-        Stats.DEX.scaler(StatScaling.Medium, mod=3),
-        Stats.CON.scaler(StatScaling.Default),
-        Stats.INT.scaler(StatScaling.Default),
-        Stats.WIS.scaler(StatScaling.Default),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.NoScaling, mod=-9),
+        AbilityScore.DEX.scaler(StatScaling.Medium, mod=3),
+        AbilityScore.CON.scaler(StatScaling.Default),
+        AbilityScore.INT.scaler(StatScaling.Default),
+        AbilityScore.WIS.scaler(StatScaling.Default),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
 def _ghost_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.Default, mod=-5),
-        Stats.DEX.scaler(StatScaling.Medium),
-        Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-        Stats.INT.scaler(StatScaling.Default),
-        Stats.WIS.scaler(StatScaling.Medium),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.Default, mod=-5),
+        AbilityScore.DEX.scaler(StatScaling.Medium),
+        AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
+        AbilityScore.INT.scaler(StatScaling.Default),
+        AbilityScore.WIS.scaler(StatScaling.Medium),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
 def _revenant_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.Medium, mod=5),
-        Stats.DEX.scaler(StatScaling.Medium, mod=1),
-        Stats.CON.scaler(StatScaling.Constitution, mod=4),
-        Stats.INT.scaler(StatScaling.Default, mod=0.5),
-        Stats.WIS.scaler(StatScaling.Medium, mod=3),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.Medium, mod=5),
+        AbilityScore.DEX.scaler(StatScaling.Medium, mod=1),
+        AbilityScore.CON.scaler(StatScaling.Constitution, mod=4),
+        AbilityScore.INT.scaler(StatScaling.Default, mod=0.5),
+        AbilityScore.WIS.scaler(StatScaling.Medium, mod=3),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
 def _shadow_stats() -> list[StatScaler]:
     return [
-        Stats.STR.scaler(StatScaling.NoScaling, mod=-4),
-        Stats.DEX.scaler(StatScaling.Medium, mod=4),
-        Stats.CON.scaler(StatScaling.Constitution),
-        Stats.INT.scaler(StatScaling.Default, mod=-4),
-        Stats.WIS.scaler(StatScaling.Default),
-        Stats.CHA.scaler(StatScaling.Primary),
+        AbilityScore.STR.scaler(StatScaling.NoScaling, mod=-4),
+        AbilityScore.DEX.scaler(StatScaling.Medium, mod=4),
+        AbilityScore.CON.scaler(StatScaling.Constitution),
+        AbilityScore.INT.scaler(StatScaling.Default, mod=-4),
+        AbilityScore.WIS.scaler(StatScaling.Default),
+        AbilityScore.CHA.scaler(StatScaling.Primary),
     ]
 
 
@@ -298,7 +298,7 @@ class _SpiritTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.CON)
 
         # IMMUNITIES
         if variant is ShadowVariant:

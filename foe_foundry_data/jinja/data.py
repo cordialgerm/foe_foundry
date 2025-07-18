@@ -9,7 +9,7 @@ from num2words import num2words
 
 from foe_foundry.damage import Attack, Condition, DamageType
 from foe_foundry.features import ActionType, Feature
-from foe_foundry.skills import Skills, Stats
+from foe_foundry.skills import AbilityScore, Skills
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import comma_separated, name_to_key
 
@@ -253,7 +253,7 @@ class MonsterTemplateData:
                 multiattack += replacement_text
 
         stat_args: dict = {}
-        for attr in Stats.All():
+        for attr in AbilityScore.All():
             stat_args[f"{attr.name.upper()}"] = stats.attributes.stat(attr)
             stat_args[f"{attr.name.upper()}_MOD"] = (
                 f"{stats.attributes.stat_mod(attr):+}"

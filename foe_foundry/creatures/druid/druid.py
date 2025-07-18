@@ -10,7 +10,7 @@ from ...powers import PowerLoadout, PowerSelection, flags
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -81,11 +81,11 @@ class _DruidTemplate(MonsterTemplate):
             species_key=species.key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.INT.scaler(StatScaling.Default, mod=2),
-                Stats.WIS.scaler(StatScaling.Primary),
-                Stats.CHA.scaler(StatScaling.Default, mod=1),
+                AbilityScore.STR.scaler(StatScaling.Default),
+                AbilityScore.DEX.scaler(StatScaling.Medium),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=2),
+                AbilityScore.WIS.scaler(StatScaling.Primary),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=1),
             ],
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -129,7 +129,7 @@ class _DruidTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 8:
-            stats = stats.grant_save_proficiency(Stats.WIS, Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.CON)
 
         # FLAGS
         # Druids already have healing

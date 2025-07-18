@@ -5,7 +5,7 @@ from typing import Any, Callable, List, cast
 from backports.strenum import StrEnum
 
 
-class Stats(StrEnum):
+class AbilityScore(StrEnum):
     STR = "STR"
     DEX = "DEX"
     CON = "CON"
@@ -15,24 +15,24 @@ class Stats(StrEnum):
 
     @property
     def description(self) -> str:
-        if self == Stats.STR:
+        if self == AbilityScore.STR:
             return "Strength"
-        elif self == Stats.DEX:
+        elif self == AbilityScore.DEX:
             return "Dexterity"
-        elif self == Stats.CON:
+        elif self == AbilityScore.CON:
             return "Constitution"
-        elif self == Stats.INT:
+        elif self == AbilityScore.INT:
             return "Intelligence"
-        elif self == Stats.WIS:
+        elif self == AbilityScore.WIS:
             return "Wisdom"
-        elif self == Stats.CHA:
+        elif self == AbilityScore.CHA:
             return "Charisma"
         else:
             raise ValueError(f"Invalid stat: {self}")
 
     @staticmethod
-    def All() -> List["Stats"]:
-        return [cast(Stats, s) for s in Stats._member_map_.values()]
+    def All() -> List["AbilityScore"]:
+        return [cast(AbilityScore, s) for s in AbilityScore._member_map_.values()]
 
     @staticmethod
     def Primary(mod: int = 0) -> Callable:
@@ -67,7 +67,7 @@ class Stats(StrEnum):
 
 
 class StatScaler:
-    def __init__(self, stat: Stats, scaling: StatScaling, mod: float):
+    def __init__(self, stat: AbilityScore, scaling: StatScaling, mod: float):
         self.stat = stat
         self.scaling = scaling
         self.mod = mod

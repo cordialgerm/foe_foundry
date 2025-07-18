@@ -1,4 +1,4 @@
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...powers import RIBBON_POWER
 from ...role_types import MonsterRole
 from ...statblocks import BaseStatblock, MonsterDials
@@ -22,7 +22,7 @@ class _OrcSpecies(CreatureSpecies):
             )
         )
         stats = stats.copy(creature_subtype="Orc")
-        stats = stats.scale({Stats.STR: Stats.STR.Boost(2)})
+        stats = stats.scale({AbilityScore.STR: AbilityScore.STR.Boost(2)})
         stats = stats.with_roles(additional_roles=[MonsterRole.Bruiser])
         return stats
 

@@ -9,7 +9,7 @@ from ...powers import (
     PowerSelection,
 )
 from ...role_types import MonsterRole
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -70,21 +70,21 @@ class _GhoulTemplate(MonsterTemplate):
 
         if variant is GravelordVariant:
             stats = [
-                Stats.STR.scaler(StatScaling.Medium, mod=-1),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
-                Stats.CHA.scaler(StatScaling.Medium),
+                AbilityScore.STR.scaler(StatScaling.Medium, mod=-1),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
+                AbilityScore.INT.scaler(StatScaling.Primary),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=-0.5),
+                AbilityScore.CHA.scaler(StatScaling.Medium),
             ]
         else:
             stats = [
-                Stats.STR.scaler(StatScaling.Medium, mod=2),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-                Stats.INT.scaler(StatScaling.Default, mod=-3),
-                Stats.WIS.scaler(StatScaling.Default, mod=-0.5),
-                Stats.CHA.scaler(StatScaling.Default, mod=-4),
+                AbilityScore.STR.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.DEX.scaler(StatScaling.Primary),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=-2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-3),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=-0.5),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
             ]
 
         stats = base_stats(
@@ -143,7 +143,7 @@ class _GhoulTemplate(MonsterTemplate):
 
         # SAVES
         if stats.cr >= 2:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

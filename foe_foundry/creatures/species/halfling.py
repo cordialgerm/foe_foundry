@@ -1,4 +1,4 @@
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...powers import RIBBON_POWER
 from ...role_types import MonsterRole
 from ...size import Size
@@ -21,7 +21,10 @@ class _HalflingSpecies(CreatureSpecies):
         stats = stats.copy(creature_subtype="Halfling", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Stealth)
         stats = stats.scale(
-            {Stats.DEX: Stats.DEX.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
+            {
+                AbilityScore.DEX: AbilityScore.DEX.Boost(2),
+                AbilityScore.WIS: AbilityScore.WIS.Boost(2),
+            }
         )
         stats = stats.with_roles(additional_roles=[MonsterRole.Skirmisher])
         return stats

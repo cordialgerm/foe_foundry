@@ -11,7 +11,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -67,27 +67,27 @@ class _MerrowTemplate(MonsterTemplate):
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         if settings.variant is MerrowStormblessed:
             attributes = [
-                Stats.STR.scaler(StatScaling.Default, mod=2),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=3),
-                Stats.WIS.scaler(StatScaling.Primary),
-                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+                AbilityScore.STR.scaler(StatScaling.Default, mod=2),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=3),
+                AbilityScore.WIS.scaler(StatScaling.Primary),
+                AbilityScore.CHA.scaler(StatScaling.Medium, mod=1),
             ]
         elif settings.variant is MerrowAbyssalLord:
             attributes = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-1),
-                Stats.CHA.scaler(StatScaling.Medium, mod=1),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Default),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=-1),
+                AbilityScore.CHA.scaler(StatScaling.Medium, mod=1),
             ]
         else:
             attributes = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=-2),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Medium, mod=-1),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.WIS.scaler(StatScaling.Default),
+                AbilityScore.CHA.scaler(StatScaling.Medium, mod=-1),
             ]
 
         # STATS
@@ -157,7 +157,7 @@ class _MerrowTemplate(MonsterTemplate):
 
         # SAVES
         if stats.cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack, secondary_attack] if secondary_attack else [attack]
 

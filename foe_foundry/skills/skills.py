@@ -2,7 +2,7 @@ from typing import List, cast
 
 from backports.strenum import StrEnum
 
-from .stats import Stats
+from .stats import AbilityScore
 
 
 class Skills(StrEnum):
@@ -45,31 +45,31 @@ class Skills(StrEnum):
     Initiative = "Initiative"  # DEX: Determines combat order; not a standard skill but often treated as one
 
     @property
-    def stat(self) -> Stats:
+    def stat(self) -> AbilityScore:
         """
         Returns the governing ability score (from Stats) for this skill.
         For example, Stealth is governed by Dexterity, Arcana by Intelligence, etc.
         """
         map = {
-            Skills.Athletics: Stats.STR,  # Strength
-            Skills.Acrobatics: Stats.DEX,  # Dexterity
-            Skills.SleightOfHand: Stats.DEX,  # Dexterity
-            Skills.Initiative: Stats.DEX,  # Dexterity
-            Skills.Stealth: Stats.DEX,  # Dexterity
-            Skills.Arcana: Stats.INT,  # Intelligence
-            Skills.History: Stats.INT,  # Intelligence
-            Skills.Investigation: Stats.INT,  # Intelligence
-            Skills.Nature: Stats.INT,  # Intelligence
-            Skills.Religion: Stats.INT,  # Intelligence
-            Skills.AnimalHandling: Stats.WIS,  # Wisdom
-            Skills.Insight: Stats.WIS,  # Wisdom
-            Skills.Medicine: Stats.WIS,  # Wisdom
-            Skills.Perception: Stats.WIS,  # Wisdom
-            Skills.Survival: Stats.WIS,  # Wisdom
-            Skills.Deception: Stats.CHA,  # Charisma
-            Skills.Intimidation: Stats.CHA,  # Charisma
-            Skills.Performance: Stats.CHA,  # Charisma
-            Skills.Persuasion: Stats.CHA,  # Charisma
+            Skills.Athletics: AbilityScore.STR,  # Strength
+            Skills.Acrobatics: AbilityScore.DEX,  # Dexterity
+            Skills.SleightOfHand: AbilityScore.DEX,  # Dexterity
+            Skills.Initiative: AbilityScore.DEX,  # Dexterity
+            Skills.Stealth: AbilityScore.DEX,  # Dexterity
+            Skills.Arcana: AbilityScore.INT,  # Intelligence
+            Skills.History: AbilityScore.INT,  # Intelligence
+            Skills.Investigation: AbilityScore.INT,  # Intelligence
+            Skills.Nature: AbilityScore.INT,  # Intelligence
+            Skills.Religion: AbilityScore.INT,  # Intelligence
+            Skills.AnimalHandling: AbilityScore.WIS,  # Wisdom
+            Skills.Insight: AbilityScore.WIS,  # Wisdom
+            Skills.Medicine: AbilityScore.WIS,  # Wisdom
+            Skills.Perception: AbilityScore.WIS,  # Wisdom
+            Skills.Survival: AbilityScore.WIS,  # Wisdom
+            Skills.Deception: AbilityScore.CHA,  # Charisma
+            Skills.Intimidation: AbilityScore.CHA,  # Charisma
+            Skills.Performance: AbilityScore.CHA,  # Charisma
+            Skills.Persuasion: AbilityScore.CHA,  # Charisma
         }
         return map[self]
 

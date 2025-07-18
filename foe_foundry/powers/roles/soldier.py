@@ -3,7 +3,7 @@ from typing import List
 
 from foe_foundry.references import action_ref
 
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...die import Die
@@ -172,7 +172,7 @@ class _Leap(SoldierPower):
             source="A5E SRD Bulette",
             icon="jump-across",
             create_date=datetime(2023, 11, 23),
-            require_stats=Stats.STR,
+            require_stats=AbilityScore.STR,
             bonus_size=Size.Large,
             require_callback=is_ground,
             require_cr=3,

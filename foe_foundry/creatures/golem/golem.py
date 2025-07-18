@@ -10,7 +10,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
@@ -111,21 +111,21 @@ class _GolemTemplate(MonsterTemplate):
 
         if variant is not FleshVariant:
             attrs = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-7),
-                Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-9),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-7),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2.5),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-9),
             ]
         else:
             attrs = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.NoScaling, mod=-2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-3),
-                Stats.WIS.scaler(StatScaling.Default, mod=-2.5),
-                Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.NoScaling, mod=-2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=2),
+                AbilityScore.INT.scaler(StatScaling.NoScaling, mod=-3),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=-2.5),
+                AbilityScore.CHA.scaler(StatScaling.NoScaling, mod=-4),
             ]
 
         stats = base_stats(

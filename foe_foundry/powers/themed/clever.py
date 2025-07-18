@@ -2,7 +2,7 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
@@ -35,7 +35,7 @@ class CleverPower(PowerWithStandardScoring):
     ):
         standard_score_args = dict(
             require_types=CreatureType.all_but(CreatureType.Beast),
-            require_stats=[Stats.INT, Stats.WIS, Stats.CHA],
+            require_stats=[AbilityScore.INT, AbilityScore.WIS, AbilityScore.CHA],
             bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
             stat_threshold=16,
             **score_args,
@@ -77,11 +77,11 @@ class _IdentifyWeakness(CleverPower):
         stats = super().modify_stats_inner(stats)
 
         new_attrs = (
-            stats.attributes.boost(Stats.CHA, 2)
-            .boost(Stats.INT, 2)
-            .boost(Stats.WIS, 2)
+            stats.attributes.boost(AbilityScore.CHA, 2)
+            .boost(AbilityScore.INT, 2)
+            .boost(AbilityScore.WIS, 2)
             .grant_proficiency_or_expertise(Skills.Investigation, Skills.Perception)
-            .grant_save_proficiency(Stats.INT)
+            .grant_save_proficiency(AbilityScore.INT)
         )
         stats = stats.copy(attributes=new_attrs)
         return stats

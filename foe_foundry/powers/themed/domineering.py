@@ -4,7 +4,7 @@ from typing import List
 
 from num2words import num2words
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
@@ -70,14 +70,14 @@ class DomineeringPower(PowerWithStandardScoring):
                 require_callback=is_magical,
                 bonus_damage=DamageType.Psychic,
                 bonus_roles=[MonsterRole.Leader, MonsterRole.Controller],
-                require_stats=Stats.CHA,
+                require_stats=AbilityScore.CHA,
                 **score_args,
             ),
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         new_attributes = stats.attributes.boost(
-            Stats.CHA, 4
+            AbilityScore.CHA, 4
         ).grant_proficiency_or_expertise(Skills.Persuasion)
         stats = stats.copy(attributes=new_attributes)
         stats = stats.grant_spellcasting(CasterType.Innate)

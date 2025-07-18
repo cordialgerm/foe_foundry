@@ -11,7 +11,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -62,12 +62,16 @@ class _OwlbearTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary, mod=4 if cr >= 6 else 2),
-                Stats.DEX.scaler(StatScaling.Medium, mod=0.5),
-                Stats.CON.scaler(StatScaling.Constitution, mod=4 if cr >= 6 else 2),
-                Stats.INT.scaler(StatScaling.NoScaling, mod=-2 if cr >= 6 else -7),
-                Stats.WIS.scaler(StatScaling.Medium, mod=2 if cr >= 6 else 0.5),
-                Stats.CHA.scaler(StatScaling.Default, mod=-3),
+                AbilityScore.STR.scaler(StatScaling.Primary, mod=4 if cr >= 6 else 2),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=0.5),
+                AbilityScore.CON.scaler(
+                    StatScaling.Constitution, mod=4 if cr >= 6 else 2
+                ),
+                AbilityScore.INT.scaler(
+                    StatScaling.NoScaling, mod=-2 if cr >= 6 else -7
+                ),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=2 if cr >= 6 else 0.5),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-3),
             ],
             hp_multiplier=hp_multiplier * settings.hp_multiplier,
             damage_multiplier=damage_multiplier * settings.damage_multiplier,
@@ -104,7 +108,7 @@ class _OwlbearTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.WIS, Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.CON)
 
         return stats, [attack]
 

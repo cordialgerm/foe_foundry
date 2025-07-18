@@ -9,7 +9,7 @@ from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...utils.rng import choose_enum
 from .._template import (
     GenerationSettings,
@@ -86,12 +86,12 @@ class _BerserkerTemplate(MonsterTemplate):
             species_key=species.key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, 2),
-                Stats.CON.scaler(StatScaling.Constitution, 2),
-                Stats.INT.scaler(StatScaling.Default, mod=-1),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Default, mod=-1),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium, 2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, 2),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-1),
+                AbilityScore.WIS.scaler(StatScaling.Default),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-1),
             ],
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -138,12 +138,14 @@ class _BerserkerTemplate(MonsterTemplate):
         # SAVES
         if cr >= 4:
             stats = stats.copy(
-                attributes=stats.attributes.grant_save_proficiency(Stats.STR)
+                attributes=stats.attributes.grant_save_proficiency(AbilityScore.STR)
             )
 
         if cr >= 4:
             stats = stats.copy(
-                attributes=stats.attributes.grant_save_proficiency(Stats.CON, Stats.STR)
+                attributes=stats.attributes.grant_save_proficiency(
+                    AbilityScore.CON, AbilityScore.STR
+                )
             )
 
         # IMMUNITIES

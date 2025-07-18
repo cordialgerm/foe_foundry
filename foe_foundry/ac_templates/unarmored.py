@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -20,7 +20,7 @@ class _UnarmoredArmorClassTemplate(ArmorClassTemplate):
         # unarmored can't benefit from a positive ac boost
         quality_level = min(stats.ac_boost, 0)
 
-        ac = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5) + quality_level
+        ac = 10 + min(stats.attributes.stat_mod(AbilityScore.DEX), 5) + quality_level
         return ResolvedArmorClass(
             value=ac,
             armor_type="Unarmored",
@@ -48,8 +48,8 @@ class _BerserkersDefense(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         ac = (
             10
-            + min(stats.attributes.stat_mod(Stats.DEX), 4)
-            + min(stats.attributes.stat_mod(Stats.CON), 4)
+            + min(stats.attributes.stat_mod(AbilityScore.DEX), 4)
+            + min(stats.attributes.stat_mod(AbilityScore.CON), 4)
         )
         return ResolvedArmorClass(
             value=ac,

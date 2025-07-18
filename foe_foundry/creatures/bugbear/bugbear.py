@@ -7,7 +7,7 @@ from ...creature_types import CreatureType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -59,11 +59,11 @@ class _BugbearTemplate(MonsterTemplate):
 
         # STATS
         attrs = [
-            Stats.STR.scaler(StatScaling.Primary, mod=0.5),
-            Stats.DEX.scaler(StatScaling.Medium, mod=3),
-            Stats.INT.scaler(StatScaling.Medium, mod=-4),
-            Stats.WIS.scaler(StatScaling.Default, mod=2),
-            Stats.CHA.scaler(StatScaling.Medium, mod=-3),
+            AbilityScore.STR.scaler(StatScaling.Primary, mod=0.5),
+            AbilityScore.DEX.scaler(StatScaling.Medium, mod=3),
+            AbilityScore.INT.scaler(StatScaling.Medium, mod=-4),
+            AbilityScore.WIS.scaler(StatScaling.Default, mod=2),
+            AbilityScore.CHA.scaler(StatScaling.Medium, mod=-3),
         ]
 
         stats = base_stats(
@@ -108,7 +108,7 @@ class _BugbearTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 3:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         return stats, [attack]
 

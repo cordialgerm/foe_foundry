@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import spell
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...damage import AttackType, DamageType
 from ...features import ActionType, Feature
@@ -90,7 +90,7 @@ class _DeflectMissile(PowerWithStandardScoring):
             require_types=CreatureType.Humanoid,
             require_attack_types=AttackType.MeleeWeapon,
             bonus_roles=[MonsterRole.Defender],
-            require_stats=Stats.DEX,
+            require_stats=AbilityScore.DEX,
         )
 
         super().__init__(
@@ -107,7 +107,8 @@ class _DeflectMissile(PowerWithStandardScoring):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         reduction = easy_multiple_of_five(
-            stats.attributes.stat_mod(Stats.DEX) + 2 * stats.attributes.proficiency
+            stats.attributes.stat_mod(AbilityScore.DEX)
+            + 2 * stats.attributes.proficiency
         )
         feature = Feature(
             name="Deflect Missile",
@@ -129,7 +130,7 @@ class _HardToPinDown(PowerWithStandardScoring):
             create_date=datetime(2023, 11, 28),
             score_args=dict(
                 require_roles=MonsterRole.Skirmisher,
-                require_stats=Stats.DEX,
+                require_stats=AbilityScore.DEX,
                 require_attack_types=AttackType.AllMelee(),
             ),
             power_types=[PowerType.Defense, PowerType.Movement],

@@ -10,7 +10,7 @@ from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...utils.rng import choose_options
 from .._template import (
     GenerationSettings,
@@ -121,19 +121,19 @@ class _WarriorTemplate(MonsterTemplate):
 
         if variant is CommanderVariant:
             stat_scaling = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=4),
-                Stats.INT.scaler(StatScaling.Default, mod=2),
-                Stats.WIS.scaler(StatScaling.Medium, mod=3),
-                Stats.CHA.scaler(StatScaling.Default, mod=2),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=4),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=2),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=3),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=2),
             ]
         else:
             stat_scaling = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.INT.scaler(StatScaling.Default, mod=-2),
-                Stats.WIS.scaler(StatScaling.Medium, mod=1),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-2),
+                AbilityScore.WIS.scaler(StatScaling.Medium, mod=1),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-2),
             ]
 
         stats = base_stats(
@@ -218,9 +218,11 @@ class _WarriorTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 3:
-            stats = stats.grant_save_proficiency(Stats.STR)
+            stats = stats.grant_save_proficiency(AbilityScore.STR)
         if cr >= 8:
-            stats = stats.grant_save_proficiency(Stats.WIS, Stats.DEX, Stats.CON)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.WIS, AbilityScore.DEX, AbilityScore.CON
+            )
 
         return stats, [attack, secondary_attack]
 

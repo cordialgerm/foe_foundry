@@ -8,7 +8,7 @@ from ...damage import Condition, DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from ...statblocks import MonsterDials
 from .._template import (
@@ -47,11 +47,11 @@ class _SimulacrumTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=-6),
-                Stats.DEX.scaler(StatScaling.Default, mod=2),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Medium),
-                Stats.CHA.scaler(StatScaling.Default),
+                AbilityScore.STR.scaler(StatScaling.Default, mod=-6),
+                AbilityScore.DEX.scaler(StatScaling.Default, mod=2),
+                AbilityScore.INT.scaler(StatScaling.Primary),
+                AbilityScore.WIS.scaler(StatScaling.Medium),
+                AbilityScore.CHA.scaler(StatScaling.Default),
             ],
             hp_multiplier=0.6
             * settings.hp_multiplier,  # low HP for a CR 9 because we want to be at around 50% of the CR 12 archmage
@@ -115,7 +115,7 @@ class _SimulacrumTemplate(MonsterTemplate):
         )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.WIS, Stats.INT)
+        stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.INT)
 
         # DCs
         stats = stats.apply_monster_dials(

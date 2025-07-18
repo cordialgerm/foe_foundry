@@ -12,7 +12,7 @@ from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -49,12 +49,12 @@ class _VrockTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             cr=cr,
             stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=4),
-                Stats.INT.scaler(StatScaling.Default, mod=-4),
-                Stats.WIS.scaler(StatScaling.Default, mod=2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-4),
+                AbilityScore.STR.scaler(StatScaling.Primary),
+                AbilityScore.DEX.scaler(StatScaling.Medium, mod=2),
+                AbilityScore.CON.scaler(StatScaling.Constitution, mod=4),
+                AbilityScore.INT.scaler(StatScaling.Default, mod=-4),
+                AbilityScore.WIS.scaler(StatScaling.Default, mod=2),
+                AbilityScore.CHA.scaler(StatScaling.Default, mod=-4),
             ],
             hp_multiplier=1.2 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
@@ -89,7 +89,9 @@ class _VrockTemplate(MonsterTemplate):
         )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.DEX, Stats.WIS, Stats.CHA)
+        stats = stats.grant_save_proficiency(
+            AbilityScore.DEX, AbilityScore.WIS, AbilityScore.CHA
+        )
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(
