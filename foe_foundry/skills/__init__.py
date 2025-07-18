@@ -1,2 +1,2 @@
-from .stats import Stats  # noqa
-from .skills_enum import Skills  # noqa
+from .stats import Stats, StatScaling, StatScaler  # noqa
+from .skills import Skills  # noqa
