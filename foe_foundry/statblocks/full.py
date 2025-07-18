@@ -8,7 +8,7 @@ import numpy as np
 
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
 from ..ac_templates import Unarmored
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..die import DieFormula
 from ..features import Feature, resolve_conflicting_recharge
 from .base import BaseStatblock
@@ -58,7 +58,7 @@ class Statblock(BaseStatblock):
         # repair HP based on CON modifier
         clean_hp = DieFormula.target_value(
             target=stats.hp.average,
-            per_die_mod=stats.attributes.stat_mod(Stats.CON),
+            per_die_mod=stats.attributes.stat_mod(AbilityScore.CON),
             force_die=stats.size.hit_die(),
         )
         args.update(hp=clean_hp)

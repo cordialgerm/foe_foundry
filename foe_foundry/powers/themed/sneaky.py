@@ -3,7 +3,7 @@ from typing import List
 
 from foe_foundry.references import action_ref
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType, Condition
 from ...die import Die
@@ -56,7 +56,7 @@ class SneakyPower(PowerWithStandardScoring):
                     MonsterRole.Ambusher,
                     MonsterRole.Skirmisher,
                 ],
-                require_stats=Stats.DEX,
+                require_stats=AbilityScore.DEX,
                 bonus_skills=Skills.Stealth,
                 stat_threshold=14,
             )

@@ -8,7 +8,7 @@ from ...movement import Movement
 from ...powers import PowerSelection, flags
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -50,14 +50,14 @@ class _ManticoreTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=3),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=-5),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-4),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 3),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Default, -5),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: (StatScaling.Default, -4),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -94,7 +94,7 @@ class _ManticoreTemplate(MonsterTemplate):
 
         # SAVES
         if stats.cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack]
 

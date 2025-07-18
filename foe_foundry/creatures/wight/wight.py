@@ -10,7 +10,7 @@ from ...environs.extraplanar import ExtraplanarInfluence
 from ...environs.region import HauntedLands, UnderlandRealm
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -56,14 +56,14 @@ class _WightTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Medium),
-                Stats.CHA.scaler(StatScaling.Medium, mod=3),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: (StatScaling.Medium, 3),
+            },
             hp_multiplier=1.45 * settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -96,7 +96,7 @@ class _WightTemplate(MonsterTemplate):
 
         # SAVES
         if stats.cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

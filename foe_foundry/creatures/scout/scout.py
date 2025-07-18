@@ -11,7 +11,7 @@ from ...powers import (
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -100,13 +100,13 @@ class _ScoutTemplate(MonsterTemplate):
 
         # STATS
 
-        stat_scaling = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Primary),
-            Stats.INT.scaler(StatScaling.Default, mod=0.5),
-            Stats.WIS.scaler(StatScaling.Medium, mod=1),
-            Stats.CHA.scaler(StatScaling.Default, mod=0.5),
-        ]
+        stat_scaling = {
+            AbilityScore.STR: StatScaling.Default,
+            AbilityScore.DEX: StatScaling.Primary,
+            AbilityScore.INT: (StatScaling.Default, 0.5),
+            AbilityScore.WIS: (StatScaling.Medium, 1),
+            AbilityScore.CHA: (StatScaling.Default, 0.5),
+        }
 
         stats = base_stats(
             name=name,
@@ -170,9 +170,9 @@ class _ScoutTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 3:
-            stats = stats.grant_save_proficiency(Stats.DEX, Stats.INT)
+            stats = stats.grant_save_proficiency(AbilityScore.DEX, AbilityScore.INT)
         if cr >= 7:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack, secondary_attack]
 

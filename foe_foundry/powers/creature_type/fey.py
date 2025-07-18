@@ -3,7 +3,7 @@ from typing import List
 
 from foe_foundry.references import creature_ref
 
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType, conditions
 from ...die import Die, DieFormula
@@ -148,7 +148,7 @@ class _FaeCounterspell(FeyPower):
             source="Foe Foundry",
             icon="halt",
             power_level=HIGH_POWER,
-            require_stats=Stats.INT,
+            require_stats=AbilityScore.INT,
             bonus_damage=DamageType.Psychic,
             power_types=[PowerType.Attack, PowerType.Magic],
         )

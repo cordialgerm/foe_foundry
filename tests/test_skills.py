@@ -1,8 +1,8 @@
-from foe_foundry import Skills, Stats
+from foe_foundry import AbilityScore, Skills
 
 
 def test_all_stats():
-    assert len(Stats.All()) == 6
+    assert len(AbilityScore.All()) == 6
 
 
 def test_all_skills():

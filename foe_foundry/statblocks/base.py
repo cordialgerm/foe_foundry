@@ -17,7 +17,7 @@ from ..movement import Movement
 from ..role_types import MonsterRole
 from ..senses import Senses
 from ..size import Size
-from ..skills import Stats
+from ..skills import AbilityScore
 from ..spells import CasterType, StatblockSpell
 from ..utils import easy_multiple_of_five
 from ..xp import xp_by_cr
@@ -123,7 +123,7 @@ class BaseStatblock:
             return f"{self.species_key}-{self.monster_key}"
 
     @property
-    def primary_attribute(self) -> Stats:
+    def primary_attribute(self) -> AbilityScore:
         return self.attributes.primary_attribute
 
     @property
@@ -291,45 +291,37 @@ class BaseStatblock:
 
         return BaseStatblock(**args)
 
-    def scale(self, stats: Dict[Stats, int | Callable]) -> BaseStatblock:
+    def change_abilities(self, deltas: Dict[AbilityScore, int]) -> BaseStatblock:
+        """Modify the ability scores of this statblock by the given deltas, without exceeding the primary attribute score."""
+
         new_vals = {}
-
-        primary_stat: Stats | None = None
-
-        for stat, val in stats.items():
-            if isinstance(val, int):
-                new_vals[stat] = self.attributes.stat(stat) + val
-            elif callable(val):
-                is_primary = getattr(val, "is_primary", False)
-                if is_primary:
-                    primary_stat = stat
-                new_vals[stat] = val(self)
-
-        if primary_stat is not None:
-            new_vals.update(primary_attribute=primary_stat)
-
+        for stat, delta in deltas.items():
+            new_val = min(
+                self.attributes.stat(stat) + delta, self.primary_attribute_score
+            )
+            new_vals[stat] = new_val
         new_attributes = self.attributes.copy(**new_vals)
         return self.copy(attributes=new_attributes)
 
     def grant_spellcasting(
-        self, caster_type: CasterType, spellcasting_stat: Stats | None = None
+        self, caster_type: CasterType, spellcasting_stat: AbilityScore | None = None
     ) -> BaseStatblock:
         if self.caster_type is not None:
             return self.copy()
 
         if spellcasting_stat is None:
             if caster_type == CasterType.Divine:
-                spellcasting_stat = Stats.WIS
+                spellcasting_stat = AbilityScore.WIS
             elif caster_type == CasterType.Arcane:
-                spellcasting_stat = Stats.INT
+                spellcasting_stat = AbilityScore.INT
             elif caster_type == CasterType.Primal:
-                spellcasting_stat = Stats.WIS
+                spellcasting_stat = AbilityScore.WIS
             elif caster_type == CasterType.Psionic:
-                spellcasting_stat = Stats.INT
+                spellcasting_stat = AbilityScore.INT
             elif caster_type == CasterType.Innate:
-                spellcasting_stat = Stats.CHA
+                spellcasting_stat = AbilityScore.CHA
             elif caster_type == CasterType.Pact:
-                spellcasting_stat = Stats.CHA
+                spellcasting_stat = AbilityScore.CHA
             else:
                 raise ValueError(f"Unknown caster type: {caster_type}")
 
@@ -433,7 +425,7 @@ class BaseStatblock:
         attributes = self.attributes.grant_proficiency_or_expertise(*skills)
         return self.copy(attributes=attributes)
 
-    def grant_save_proficiency(self, *saves: Stats) -> BaseStatblock:
+    def grant_save_proficiency(self, *saves: AbilityScore) -> BaseStatblock:
         attributes = self.attributes.grant_save_proficiency(*saves)
         return self.copy(attributes=attributes)
 
@@ -699,7 +691,7 @@ class BaseStatblock:
         )
 
         # Stat Adjustments
-        stats = stats.scale({Stats.CON: 2})
+        stats = stats.change_abilities(deltas={AbilityScore.CON: 2})
 
         # Skill Adjustments
         # Initiative
@@ -716,10 +708,10 @@ class BaseStatblock:
             stats = stats.grant_proficiency_or_expertise(Skills.Initiative)
 
         # Save Adjustments
-        stats = stats.grant_save_proficiency(stats.primary_attribute, Stats.CON)
+        stats = stats.grant_save_proficiency(stats.primary_attribute, AbilityScore.CON)
 
         if stats.cr >= 8:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         # Rescale Attack Damage
         target_dpr = 1.15 * original_dpr

@@ -9,7 +9,7 @@ from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -48,14 +48,14 @@ class _DireBunnyTemplate(MonsterTemplate):
         is_legendary = settings.is_legendary
 
         # STATS
-        stats = [
-            Stats.STR.scaler(StatScaling.Default),
-            Stats.DEX.scaler(StatScaling.Primary, mod=2),
-            Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-            Stats.INT.scaler(StatScaling.NoScaling, mod=-7),
-            Stats.WIS.scaler(StatScaling.NoScaling, mod=2),
-            Stats.CHA.scaler(StatScaling.NoScaling, mod=-4),
-        ]
+        stats_dict = {
+            AbilityScore.STR: StatScaling.Default,
+            AbilityScore.DEX: (StatScaling.Primary, 2),
+            AbilityScore.CON: (StatScaling.Constitution, -2),
+            AbilityScore.INT: (StatScaling.NoScaling, -7),
+            AbilityScore.WIS: (StatScaling.NoScaling, 2),
+            AbilityScore.CHA: (StatScaling.NoScaling, -4),
+        }
 
         stats = base_stats(
             name=name,
@@ -63,7 +63,7 @@ class _DireBunnyTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=stats,
+            stats=stats_dict,
             hp_multiplier=0.8 * settings.hp_multiplier,
         )
 
@@ -89,7 +89,7 @@ class _DireBunnyTemplate(MonsterTemplate):
 
         # SAVES
         if is_legendary:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         # SKILLS
         stats = stats.grant_proficiency_or_expertise(

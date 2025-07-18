@@ -1,4 +1,4 @@
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...powers import RIBBON_POWER
 from ...role_types import MonsterRole
 from ...size import Size
@@ -20,8 +20,11 @@ class _GnomeSpecies(CreatureSpecies):
         )
         stats = stats.copy(creature_subtype="Gnome", size=Size.Small)
         stats = stats.grant_proficiency_or_expertise(Skills.Arcana)
-        stats = stats.scale(
-            {Stats.INT: Stats.INT.Boost(2), Stats.WIS: Stats.WIS.Boost(2)}
+        stats = stats.change_abilities(
+            {
+                AbilityScore.INT: 2,
+                AbilityScore.WIS: 2,
+            }
         )
         stats = stats.with_roles(additional_roles=[MonsterRole.Controller])
         return stats

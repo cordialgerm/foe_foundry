@@ -6,7 +6,7 @@ from typing import Set
 import numpy as np
 from pydantic.dataclasses import dataclass
 
-from ..skills import Skills, Stats
+from ..skills import AbilityScore, Skills
 
 
 @dataclass(kw_only=True)
@@ -20,13 +20,19 @@ class Attributes:
     WIS: int
     CHA: int
 
-    proficient_saves: Set[Stats] = field(default_factory=set)
+    proficient_saves: Set[AbilityScore] = field(default_factory=set)
     proficient_skills: Set[Skills] = field(default_factory=set)
     expertise_skills: Set[Skills] = field(default_factory=set)
 
     @property
-    def primary_attribute(self) -> Stats:
-        stats = [Stats.STR, Stats.DEX, Stats.INT, Stats.WIS, Stats.CHA]
+    def primary_attribute(self) -> AbilityScore:
+        stats = [
+            AbilityScore.STR,
+            AbilityScore.DEX,
+            AbilityScore.INT,
+            AbilityScore.WIS,
+            AbilityScore.CHA,
+        ]
         scores = [self.stat(s) for s in stats]
         i = np.argmax(scores)
         primary_attribute = stats[i]
@@ -46,8 +52,8 @@ class Attributes:
         return self.stat_mod(stat)
 
     @property
-    def spellcasting_stat(self) -> Stats:
-        stats = [Stats.INT, Stats.CHA, Stats.WIS]
+    def spellcasting_stat(self) -> AbilityScore:
+        stats = [AbilityScore.INT, AbilityScore.CHA, AbilityScore.WIS]
         scores = [self.stat(s) for s in stats]
         i = np.argmax(scores)
         return stats[i]
@@ -63,13 +69,13 @@ class Attributes:
         intelligent = (mentals >= 9).any()
         return bool(baseline and intelligent)
 
-    def stat(self, stat: Stats) -> int:
+    def stat(self, stat: AbilityScore) -> int:
         return getattr(self, stat.value)
 
-    def stat_mod(self, stat: Stats) -> int:
+    def stat_mod(self, stat: AbilityScore) -> int:
         return (self.stat(stat) - 10) // 2
 
-    def save_mod(self, stat: Stats) -> int | None:
+    def save_mod(self, stat: AbilityScore) -> int | None:
         if stat in self.proficient_saves:
             return self.stat_mod(stat) + self.proficiency
         else:
@@ -111,18 +117,18 @@ class Attributes:
 
         return self.copy(proficient_skills=new_profs, expertise_skills=new_expertise)
 
-    def grant_save_proficiency(self, *saves: Stats) -> Attributes:
+    def grant_save_proficiency(self, *saves: AbilityScore) -> Attributes:
         new_saves = self.proficient_saves | set(saves)
         return self.copy(proficient_saves=new_saves)
 
-    def change_primary(self, primary: Stats) -> Attributes:
+    def change_primary(self, primary: AbilityScore) -> Attributes:
         args = {
             "primary_attribute": primary,
             primary.value: self.primary_attribute_score,
         }
         return self.copy(**args)
 
-    def boost(self, stat: Stats, value: int, limit: bool = True) -> Attributes:
+    def boost(self, stat: AbilityScore, value: int, limit: bool = True) -> Attributes:
         new_val = self.stat(stat) + value
         if limit:
             new_val = min(new_val, self.primary_attribute_score)
@@ -130,9 +136,9 @@ class Attributes:
         return self.copy(**args)
 
     @property
-    def saves(self) -> dict[Stats, int]:
+    def saves(self) -> dict[AbilityScore, int]:
         results = {}
-        for stat in Stats.All():
+        for stat in AbilityScore.All():
             save = self.save_mod(stat)
             if save is not None:
                 results[stat] = save

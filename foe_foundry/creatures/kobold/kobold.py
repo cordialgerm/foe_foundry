@@ -7,7 +7,7 @@ from ...creature_types import CreatureType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -76,36 +76,36 @@ class _KoboldTemplate(MonsterTemplate):
         if variant is KoboldWarrenguardVariant or variant is KoboldAscendant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                Stats.STR.scaler(StatScaling.Primary, mod=1),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-                Stats.INT.scaler(StatScaling.Default, mod=-2),
-                Stats.WIS.scaler(StatScaling.Default, mod=-3),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 1),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Default, -2),
+                AbilityScore.WIS: (StatScaling.Default, -3),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is KoboldSharpsnoutVariant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-                Stats.INT.scaler(StatScaling.Default, mod=-3),
-                Stats.WIS.scaler(StatScaling.Default, mod=1),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Default, -3),
+                AbilityScore.WIS: (StatScaling.Default, 1),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is KoboldWyrmcallerVariant:
             hp_multiplier = 0.9
             damage_multiplier = 1.0
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default, mod=-2),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-2),
-                Stats.INT.scaler(StatScaling.Medium, mod=0.5),
-                Stats.WIS.scaler(StatScaling.Primary, mod=1),
-                Stats.CHA.scaler(StatScaling.Medium),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, -2),
+                AbilityScore.INT: (StatScaling.Medium, 0.5),
+                AbilityScore.WIS: (StatScaling.Primary, 1),
+                AbilityScore.CHA: StatScaling.Medium,
+            }
         else:
             raise ValueError(f"Unknown kobold variant: {variant}")
 
@@ -155,7 +155,7 @@ class _KoboldTemplate(MonsterTemplate):
         # SPELLS
         if variant is KoboldWyrmcallerVariant:
             stats = stats.grant_spellcasting(
-                caster_type=CasterType.Divine, spellcasting_stat=Stats.WIS
+                caster_type=CasterType.Divine, spellcasting_stat=AbilityScore.WIS
             )
 
         # ROLES
@@ -184,7 +184,7 @@ class _KoboldTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 2:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         return stats, [attack]
 

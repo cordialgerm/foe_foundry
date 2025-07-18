@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..size import Size
 from ..statblocks.base import BaseStatblock
 
@@ -30,12 +30,16 @@ class _NaturalArmorClassTemplate(ArmorClassTemplate):
         # natural armor takes CON and DEX into account
         ac1 = (
             10
-            + max(0, min(stats.attributes.stat_mod(Stats.DEX), max_dex))
-            + min(stats.attributes.stat_mod(Stats.CON), max_con)
+            + max(0, min(stats.attributes.stat_mod(AbilityScore.DEX), max_dex))
+            + min(stats.attributes.stat_mod(AbilityScore.CON), max_con)
         ) + quality_level
 
         # if the creature would get a better result simply from unarmored then use that
-        ac2 = 10 + min(stats.attributes.stat_mod(Stats.DEX), 5) + min(quality_level, 0)
+        ac2 = (
+            10
+            + min(stats.attributes.stat_mod(AbilityScore.DEX), 5)
+            + min(quality_level, 0)
+        )
 
         ac = max(ac1, ac2)
 
@@ -78,7 +82,7 @@ class _NaturalPlating(ArmorClassTemplate):
 
         # natural plating takes CON into account
         ac = (
-            base_ac + min(stats.attributes.stat_mod(Stats.CON), max_con)
+            base_ac + min(stats.attributes.stat_mod(AbilityScore.CON), max_con)
         ) + quality_level
 
         return ResolvedArmorClass(
