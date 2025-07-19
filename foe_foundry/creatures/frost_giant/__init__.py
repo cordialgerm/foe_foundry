@@ -1,1 +1,1 @@
-# This file marks the frost_giant directory as a Python package.
+from .frost_giant import FrostGiantTemplate  # noqa

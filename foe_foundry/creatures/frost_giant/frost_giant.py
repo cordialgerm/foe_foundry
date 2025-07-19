@@ -1,9 +1,10 @@
 from foe_foundry.statblocks import BaseStatblock
 
-from ...ac_templates import HideArmor
-from ...attack_template import AttackTemplate, weapon
+from ...ac_templates import PatchworkArmor
+from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import DamageType
+from ...environs import Affinity, Biome, region
 from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
@@ -22,13 +23,35 @@ FrostGiantVariant = MonsterVariant(
             cr=8,
             srd_creatures=["Frost Giant"],
         ),
+        Monster(
+            name="Frost Giant Challenger",
+            cr=10,
+        ),
+        Monster(
+            name="Frost Giant Rimepriest",
+            cr=12,
+        ),
+        Monster(
+            name="Frost Giant Thane",
+            cr=16,
+            is_legendary=True,
+        ),
     ],
 )
 
 
 class _FrostGiantTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        return PowerSelection([powers.LoadoutFrostGiant])
+        if settings.monster_key == "frost-giant-reaver":
+            return PowerSelection(powers.LoadoutFrostGiant)
+        elif settings.monster_key == "frost-giant-challenger":
+            return PowerSelection(powers.LoadoutChallenger)
+        elif settings.monster_key == "frost-giant-rimepriest":
+            return PowerSelection(powers.LoadoutShaman)
+        elif settings.monster_key == "frost-giant-thane":
+            return PowerSelection(powers.LoadoutThane)
+        else:
+            raise ValueError(f"Unknown monster key: {settings.monster_key}. ")
 
     def generate_stats(
         self, settings: GenerationSettings
@@ -36,20 +59,34 @@ class _FrostGiantTemplate(MonsterTemplate):
         name = settings.creature_name
         cr = settings.cr
 
+        # Special stat scaling for Rimepriest
+        if settings.monster_key == "frost-giant-rimepriest":
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, 4),  # good STR
+                AbilityScore.DEX: (StatScaling.Default, -3),
+                AbilityScore.CON: (StatScaling.Constitution, 4),  # really good CON
+                AbilityScore.INT: (StatScaling.Default, 0),
+                AbilityScore.WIS: (StatScaling.Primary),  # primary WIS
+                AbilityScore.CHA: (StatScaling.Default, 2),
+            }
+        else:
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 3),
+                AbilityScore.DEX: (StatScaling.Default, -3),
+                AbilityScore.CON: (StatScaling.Constitution, 4),  # really good CON
+                AbilityScore.INT: (StatScaling.Default, -3),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, 2),
+            }
+
         stats = base_stats(
             name=name,
             variant_key=settings.variant.key,
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats={
-                AbilityScore.STR: (StatScaling.Primary, 2),
-                AbilityScore.DEX: (StatScaling.Default, -1),
-                AbilityScore.INT: (StatScaling.Default, -1),
-                AbilityScore.WIS: (StatScaling.Default, 0),
-                AbilityScore.CHA: (StatScaling.Default, 0),
-            },
-            hp_multiplier=settings.hp_multiplier * 1.0,
+            stats=attrs,  # type: ignore
+            hp_multiplier=settings.hp_multiplier * 1.15,
             damage_multiplier=settings.damage_multiplier,
         )
 
@@ -63,7 +100,7 @@ class _FrostGiantTemplate(MonsterTemplate):
         )
 
         # AC
-        stats = stats.add_ac_template(HideArmor)
+        stats = stats.add_ac_template(PatchworkArmor)
 
         # ROLES
         stats = stats.with_roles(primary_role=MonsterRole.Bruiser)
@@ -74,14 +111,26 @@ class _FrostGiantTemplate(MonsterTemplate):
         )
 
         # SKILLS
-        stats = stats.grant_proficiency_or_expertise(
-            Skills.Athletics, Skills.Perception, Skills.Survival
-        )
+        if settings.monster_key == "frost-giant-rimepriest":
+            stats = stats.grant_proficiency_or_expertise(
+                Skills.Insight, Skills.Perception, Skills.Initiative
+            )
+        else:
+            stats = stats.grant_proficiency_or_expertise(
+                Skills.Athletics, Skills.Perception, Skills.Survival, Skills.Initiative
+            )
 
         # ATTACKS
-        attack = weapon.Greataxe.with_display_name("Biting Greataxe").copy(
-            reach=10, secondary_damage_type=DamageType.Cold
-        )
+
+        # Giants typically have fewer, powerful attacks
+        stats = stats.with_set_attacks(2)
+
+        if settings.monster_key == "frost-giant-rimepriest":
+            attack = spell.Frostbolt.with_display_name("Arctic Blast")
+        else:
+            attack = weapon.Greataxe.with_display_name("Biting Greataxe").copy(
+                reach=10, secondary_damage_type=DamageType.Cold
+            )
 
         return stats, [attack]
 
@@ -93,4 +142,10 @@ FrostGiantTemplate: MonsterTemplate = _FrostGiantTemplate(
     variants=[FrostGiantVariant],
     treasure=[],
     species=[],
+    environments=[
+        (region.FrozenWastes, Affinity.native),
+        (region.LoftyMountains, Affinity.common),  # Icy mountain ranges
+        (Biome.arctic, Affinity.native),  # Frozen tundras and ice fields
+        (region.RestlessSea, Affinity.uncommon),  # Underwater Frost Giants
+    ],
 )

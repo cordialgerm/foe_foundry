@@ -63,7 +63,7 @@ class _WintersShroud(FrostGiantPower):
     def __init__(self):
         super().__init__(
             name="Winter's Shroud",
-            icon="frost-breath",
+            icon="person-in-blizzard",
             power_types=[
                 PowerType.Attack,
                 PowerType.AreaOfEffect,
@@ -73,14 +73,14 @@ class _WintersShroud(FrostGiantPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> list[Feature]:
         dc = stats.difficulty_class
-        dmg = stats.target_value(dpr_proportion=0.75)
+        dmg = stats.target_value(dpr_proportion=0.6)
         fog_cloud = spell_ref("Fog Cloud")
         feature = Feature(
             name="Winter's Shroud",
             action=ActionType.Action,
             recharge=5,
             description=(
-                f"{stats.selfref.capitalize()} exhales freezing fog in a 30-foot cone. Each creature in the area must make a DC {dc} Constitution saving throw or take {dmg} cold damage. The area becomes heavily obscured, as under the effects of a {fog_cloud} spell, though {stats.selfref} can see through this fog as if it were clear."
+                f"{stats.selfref.capitalize()} exhales freezing fog in a 30-foot cone. Each creature in the area must make a DC {dc} Constitution saving throw or take {dmg.description} cold damage. The area becomes heavily obscured, as under the effects of a {fog_cloud} spell, though {stats.selfref} can see through this fog as if it were clear."
             ),
         )
         return [feature]

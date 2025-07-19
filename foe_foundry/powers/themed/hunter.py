@@ -73,9 +73,14 @@ class _GloryOfTheHunt(HunterPower):
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
-        temp_hp = easy_multiple_of_five(stats.hp.average * 0.1, min_val=5)
-        dc = 8 + (
-            stats.attributes.skill_mod(Skills.Insight, even_if_not_proficient=True) or 0
+        temp_hp = easy_multiple_of_five(stats.hp.average * 0.2, min_val=5)
+        dc = (
+            8
+            + stats.attributes.proficiency
+            + (
+                stats.attributes.skill_mod(Skills.Insight, even_if_not_proficient=True)
+                or 0
+            )
         )
         feature = Feature(
             name="Glory of the Hunt",

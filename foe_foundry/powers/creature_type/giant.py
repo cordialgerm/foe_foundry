@@ -61,6 +61,8 @@ class _Boulder(GiantPower):
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        prone = Condition.Prone.caption
+
         dc = stats.difficulty_class_easy
         if stats.multiattack >= 3:
             target = 1.5
@@ -88,7 +90,7 @@ class _Boulder(GiantPower):
             recharge=4,
             replaces_multiattack=2,
             description=f"{stats.selfref.capitalize()} tosses a boulder at a point it can see within {distance} ft. Each creature within a {radius} ft radius must make a DC {dc} Dexterity saving throw. \
-                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked prone. On a success, the creature takes half damage and is not knocked prone.",
+                On a failure, the creature takes {dmg.description} bludgeoning damage and is knocked {prone}. On a success, the creature takes half damage and is not knocked prone.",
         )
         return [feature]
 
@@ -370,7 +372,7 @@ class _BigWindup(GiantPower):
             name="Big Windup",
             action=ActionType.Reaction,
             description=f"Whenever a creature hits {stats.selfref} with a melee attack, {stats.selfref.capitalize()} readies a powerful strike against its attacker. \
-                {stats.selfref} has advantage on the next attack it makes against the attacker before the end of its next turn.",
+                {stats.selfref.capitalize()} has advantage on the next attack it makes against the attacker before the end of its next turn.",
         )
         return [feature]
 
