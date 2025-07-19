@@ -82,6 +82,7 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 Giants are primordial creatures, living walking bones of the earth.
 
 - [Ogres](ogre.md) - ravenous and destructive hulks
+- [Frost Giants](frost-giant.md) - fozen reavers of blood and battle
 
 ![5E Ogre monster illustration — hulking brute wielding a massive club](../img/monsters/ogre.webp){.masked .monster-image}
 
