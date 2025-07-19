@@ -54,3 +54,4 @@ class _MediumArmor(ArmorClassTemplate):
 HideArmor: ArmorClassTemplate = _MediumArmor("Hide Armor", 12)
 ChainShirt: ArmorClassTemplate = _MediumArmor("Chain Shirt", 13)
 Breastplate: ArmorClassTemplate = _MediumArmor("Breastplate", 14)
+PatchworkArmor: ArmorClassTemplate = _MediumArmor("Patchwork Armor", 14)
