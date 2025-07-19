@@ -31,13 +31,14 @@ PerksOffense = [
     giant.BigWindup,
     giant.CrushTheInsect,
     giant.Earthshaker,
-    giant.GrabAndGo,
+
 ]
 
 PerksThrowStuff = [
     giant.Boulder,
     gadget.InfusedNet,
     reckless.Toss,
+    giant.GrabAndGo,
 ]
 
 PerksChallenger = [

@@ -1,5 +1,8 @@
 import mkdocs_gen_files
+import numpy as np
 
+from foe_foundry.utils import slug_to_title
+from foe_foundry_data.icons import inline_icon
 from foe_foundry_data.powers import PowerCategory, PowerModel, Powers
 
 
@@ -25,14 +28,16 @@ def generate_all_powers():
             for t, ps in Powers.PowersByTheme.items()
         }
         n = sum(len(p) for t, p in powers_by_theme.items())
-        lines.append(f"## {power_category.title()} Powers ({n})\n")
+        lines.append(f"## {slug_to_title(power_category)} Powers ({n})\n")
 
         lines.append("<div class='list-with-columns'></div>\n")
         for theme, powers in powers_by_theme.items():
             if len(powers) == 0:
                 continue
 
-            lines.append(f"- [{theme.title()} Powers ({len(powers)})]({theme}.md)\n")
+            lines.append(
+                f"- [{slug_to_title(theme)} Powers ({len(powers)})]({theme}.md)\n"
+            )
 
     for theme, powers in Powers.PowersByTheme.items():
         generate_theme_file(theme, powers)
@@ -43,14 +48,23 @@ def generate_all_powers():
 
 
 def generate_theme_file(theme: str, powers: list[PowerModel]):
+    icons, counts = np.unique([p.icon for p in powers if p.icon], return_counts=True)
+    indexes = np.argsort(counts)[::-1]
+    icon = str(icons[indexes[0]]) if indexes.size > 0 else "img/icons/favicon.webp"
+
+    theme_title = slug_to_title(theme)
+    theme_description = theme_title.lower()
+
+    icon_html = inline_icon(icon)
+
     lines = [
         "---",
-        f"title: {theme.title()} Powers | Foe Foundry",
-        f"description: Discover {len(powers)} {theme.lower()}-themed free powers for your next 5E or TTRPG monster.\n",
-        "image: img/icons/favicon.webp",
+        f"title: {theme_title} Powers | Foe Foundry",
+        f"description: Discover {len(powers)} {theme_description}-themed free powers for your next 5E monster.\n",
+        f"image: {icon}",
         "---\n",
-        f"# {theme.title()} Powers ({len(powers)})\n",
-        f"Explore a collection of **{theme.title()} Powers**: flavorful, ready-to-use monster abilities perfect for adding depth, danger, and thematic flair to your next encounter. These handcrafted powers are designed to fit monsters of any level and are fully compatible with 5E. Use them to customize creatures, surprise your players, and bring your world to life. Foe Foundry uses these Powers to procedurally generate monsters that are both flavorful and mechanically sharp. Powers are selected based on theme, role, and CR to ensure every creature feels distinct and balanced. Whether you're building a custom boss or filling out an encounter, Powers are the core of what makes Foe Foundry monsters unforgettable.  \n"
+        f"# {icon_html} {theme_title} Powers ({len(powers)})\n",
+        f"Explore a collection of **{theme_title} Powers**: flavorful, ready-to-use monster abilities perfect for adding depth, danger, and thematic flair to your next encounter. These handcrafted powers are designed to fit monsters of any level and are fully compatible with 5E. Use them to customize creatures, surprise your players, and bring your world to life. Foe Foundry uses these Powers to procedurally generate monsters that are both flavorful and mechanically sharp. Powers are selected based on theme, role, and CR to ensure every creature feels distinct and balanced. Whether you're building a custom boss or filling out an encounter, Powers are the core of what makes Foe Foundry monsters unforgettable.  \n"
         "\n  ",
         "[Browse all powers by theme](all.md)\n",
     ]

@@ -44,6 +44,7 @@ mkdocs-open-in-new-tab = "^1.0.8"
 mkdocs-minify-plugin = "^0.8.0"
 mkdocs-backlinks = "^0.9.1"
 lxml = "^5.4.0"
+cairosvg = "^2.8.2"
 
 [tool.poetry.scripts]
 foe_foundry_site = "foe_foundry_site.__main__:main"
