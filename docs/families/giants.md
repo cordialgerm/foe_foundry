@@ -18,18 +18,21 @@ json_ld: true
 - [Giant Encounters and Adventures](#giant-encounters-and-adventures)
 - [FAQ](#faq)
 
+## Giant Statblocks
+
+Below are fully scalable, flavorful 5E Giant statblocks built with the [Foe Foundry Monster Generator](../generate.md){.branding}.
+
+| Creature | CR Range | Tagline                                    | Variants |
+|----------|----------|--------------------------------------------|----------|
+| [Ogres](../monsters/ogre.md)  | 2–7  | ravenous and destructive hulks         | [[Ogre]], [[Ogre Wallsmasha]], [[Ogre Burnbelcha]], [[Ogre Chaincrakka]], [[Ogre Big Brainz]] |
+| [Frost Giants](../monsters/frost-giant.md) | 8–16 | frozen reavers of blood and battle     | [[Frost Giant Reaver]], [[Frost Giant Challenger]], [[Frost Giant Rimepriest]], [[Frost Giant Thane]]  |
+
 ## What Are Giants?
 
 Giants are towering humanoids steeped in ancient myth and raw elemental power. In many cultures, they are seen as living relics of a primal and ancient world. While some giants live in isolation atop storm-swept peaks or among frozen fjords, others roam the wildlands as clans of reavers and raiders.
 
 From the savage hunger of ogres to the martial pride of frost giants, these creatures share a deep connection with the natural world and a belief that might makes right. They don't always seek conquest, but when roused to anger they can topple fortresses and reshape entire regions with their passing. In a giant's eyes, mortals are fleeting and small. Best to prove them wrong.
 
-## Giant Statblocks
-
-| Creature | CR Range | Tagline                                    | Variants |
-|----------|----------|--------------------------------------------|----------|
-| [Ogres](../monsters/ogre.md)  | 2–7  | ravenous and destructive hulks         | [[Ogre]], [[Ogre Wallsmasha]], [[Ogre Burnbelcha]], [[Ogre Chaincrakka]], [[Ogre Big Brainz]] |
-| [Frost Giants](../monsters/frost-giant.md) | 8–16 | frozen reavers of blood and battle     | [[Frost Giant Reaver]], [[Frost Giant Challenger]], [[Frost Giant Rimepriest]], [[Frost Giant Thane]]  |
 
 ![A 5E Frost Giant reaver carries a frozen axe](../img/monsters/frost-giant.webp){.monster-image .masked}
 
@@ -46,7 +49,6 @@ Giants thrive in close combat, relishing contests of strength and raw brutality.
 Giants aren't subtle, but they aren't fools either (well, maybe the ogres). They have deep ties to the land—shaped by mountains, glaciers, and ancestral spirits—and their conflicts often reflect ancient grudges or primal themes. Giant-vs-dragon, giant-vs-dwarf, or giant-vs-civilization are classic dynamics worth exploring.
 
 ### Giant Encounter Ideas
-
 
 Bring the thunder with these ready-to-run 5E giant encounters. Each one is an open-ended situation to shake up your next session:
 
@@ -69,3 +71,35 @@ These Giant adventure hooks are perfect for building entire arcs around mythic m
 
 !!! info "More Adventure Ideas"
     See individual monster pages ([Ogres](../monsters/ogre.md), [Frost Giants](../monsters/frost-giant.md)) for additional adventure ideas
+
+## Related Articles
+
+- [Meaner and Funnier Ogres](../blog/2025_06_08_ogres.md)
+
+---
+
+### FAQ
+
+**What types of giants exist in D&D 5E?**  
+D&D 5E includes six core types of giants: Hill, Stone, [Frost](../monsters/frost-giant.md), Fire, Cloud, and Storm. Each has distinct elemental themes, cultures, and combat styles. [Ogres](../monsters/ogre.md) and Ettins are giant-kin, often included in giant-themed encounters despite not being "true" giants.
+
+**What CR are giants in 5E?**  
+Giants range from CR 2 to CR 16 in most campaigns. Hill Giants are CR 5, Stone Giants CR 7, [Frost Giants](../monsters/frost-giant.md) CR 8–16 depending on variant, Fire Giants CR 9, Cloud Giants CR 11, and Storm Giants CR 13. [Ogres](../monsters/ogre.md) range from CR 2 to CR 7 depending on the version used.
+
+**Are there homebrew or variant giant statblocks for 5E?**  
+Yes! [Foe Foundry](../index.md){.branding} offers fully scalable, homebrew-friendly statblocks like the [[Frost Giant Reaver]], [[Ogre Chaincrakka]], and [[Frost Giant Rimepriest]]. These variants add unique powers, flavorful tactics, and encounter-ready abilities not found in the SRD.
+
+**What are good tactics for using giants in 5E encounters?**  
+Giants should shape the battlefield. Use terrain-smashing brawls, boulder throws, or massive AoE strikes to emphasize their scale. [[Frost Giants]] may freeze terrain, while [[Ogres]] can charge or grab PCs. Run them like living siege engines, not just big bags of hit points.
+
+**What size are giants in D&D 5E?**  
+Most true giants are **Huge** (15–20 feet tall), taking up a 3x3 space on the grid. [[Ogres]] and Ettins are **Large**.
+
+**Where can I find 5E giant statblocks with unique abilities?**  
+Right here. [Foe Foundry](../index.md){.branding} features original giant statblocks with evocative powers and CR scaling. See our [[Ogre]] and [[Frost Giant]] pages for full writeups, tactics, and ready-to-run encounters.
+
+**How do I build a custom or homebrew giant in 5E?**  
+Start with a base CR and giant type, then layer in unique traits like terrain control, spiritual ties, or mythic roles. The [Foe Foundry Monster Generator](../generate.md){.branding} makes this super easy - you can quickly create fully balanced, lore-rich giants tailored to your campaign.
+
+**Can I run a 5E one-shot featuring giants?**  
+Absolutely. Giants are ideal for one-shots thanks to their mythic stature and combat weight. Try a siege defense, an ogre uprising, or a doomed duel with a Frost Giant warlord to anchor a powerful one-shot adventure. In fact, you can check out [Frost Giant Adventure Ideas](../monsters/frost-giant.md#frost-giant-adventure-ideas) and [Ogre Adventure Ideas](../monsters/ogre.md#ogre-adventure-ideas) for lots of great inspiration.
