@@ -19,15 +19,12 @@ def test_inline_icon():
 
 
 def test_og_image_for_icon():
-    background_path = (
-        Path.cwd() / "docs" / "img" / "backgrounds" / "parchment-stained.png"
-    )
-    icon = "favicon"
-    title = "Reckless Powers"
-
     output_dir = Path(__file__).parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "og_favicon_test.png"
 
-    result = og_image_for_icon(background_path, icon, title, output_path)
+    result = og_image_for_icon(
+        icon="favicon", title="Reckless Powers", output_path=output_path
+    )
     assert result == output_path
+    assert result.exists()

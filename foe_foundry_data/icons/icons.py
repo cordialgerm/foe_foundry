@@ -74,9 +74,15 @@ def inline_icon(icon: str, fill="", wrap: bool = True) -> Markup | None:
 
 
 def og_image_for_icon(
-    background_path: Path, icon: str, title: str, output_path: Path
+    icon: str,
+    title: str,
+    output_path: Path,
+    background_texture: str = "img/backgrounds/parchment-stained.png",
+    background_texture_opacity: float = 0.3,
+    background_color: str = "#2a2a2a",
+    foreground_color: str = "#ff3737",
 ) -> Path:
-    """Generates an Open Graph image based on an SVG Icon with the specified background and title."""
+    """Generates an Open Graph image with a solid color, a semi-transparent background image, and an SVG icon with title."""
 
     # Constants
     OG_WIDTH, OG_HEIGHT = 1200, 630
@@ -84,32 +90,42 @@ def og_image_for_icon(
     ICON_PADDING_TOP = 80
     TEXT_PADDING_TOP = ICON_PADDING_TOP + ICON_SIZE + 40
     FONT_SIZE = 60
-    FILL_COLOR = "#ff3737"
 
     docs_dir = Path(__file__).parent.parent.parent / "docs"
-
     font_dir = docs_dir / "fonts"
     font_path = font_dir / "UncialAntiqua-Regular.ttf"
 
-    # Load and resize background
-    background = Image.open(background_path).convert("RGBA")
-    background = background.resize((OG_WIDTH, OG_HEIGHT))
+    # Create solid color background
+    base = Image.new("RGBA", (OG_WIDTH, OG_HEIGHT), background_color)
+
+    # Load and resize background image
+    background_path = docs_dir / background_texture
+
+    bg_img = Image.open(background_path).convert("RGBA")
+    bg_img = bg_img.resize((OG_WIDTH, OG_HEIGHT))
+
+    # Set background image opacity
+    alpha = int(255 * background_texture_opacity)
+    bg_img.putalpha(alpha)
+
+    # Composite background image over solid color
+    base = Image.alpha_composite(base, bg_img)
 
     # Render SVG to PNG in memory
-    svg_string = str(icon_svg(icon, fill=FILL_COLOR))
+    svg_string = str(icon_svg(icon, fill=foreground_color))
     png_data = cairosvg.svg2png(
         bytestring=svg_string, output_width=ICON_SIZE, output_height=ICON_SIZE
     )
-    bytes = io.BytesIO(png_data)  # type: ignore
-    icon_image = Image.open(bytes).convert("RGBA")
+    png_bytes = io.BytesIO(png_data)  # type: ignore
+    icon_image = Image.open(png_bytes).convert("RGBA")
 
     # Composite icon onto background
     icon_x = (OG_WIDTH - ICON_SIZE) // 2
     icon_y = ICON_PADDING_TOP
-    background.paste(icon_image, (icon_x, icon_y), icon_image)
+    base.paste(icon_image, (icon_x, icon_y), icon_image)
 
     # Draw text
-    draw = ImageDraw.Draw(background)
+    draw = ImageDraw.Draw(base)
     try:
         font = ImageFont.truetype(font_path, FONT_SIZE)
     except IOError:
@@ -117,13 +133,12 @@ def og_image_for_icon(
 
     bbox = draw.textbbox((0, 0), title, font=font)
     text_width = bbox[2] - bbox[0]
-    text_height = bbox[3] - bbox[1]
     text_x = (OG_WIDTH - text_width) // 2
     text_y = TEXT_PADDING_TOP
 
-    draw.text((text_x, text_y), title, fill=FILL_COLOR, font=font)
+    draw.text((text_x, text_y), title, fill=foreground_color, font=font)
 
     # Save the final image
-    background.save(output_path, format="PNG")
+    base.save(output_path, format="PNG")
 
     return output_path
