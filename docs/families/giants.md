@@ -10,14 +10,6 @@ json_ld: true
 
 *Primal Titans and Living Bones of the Earth*
 
-## In This Guide
-
-- [What Are Giants?](#what-are-giants)
-- [Giant Statblocks](#giant-statblocks)
-- [Common Traits & Tactics](#common-traits-and-tactics)
-- [Giant Encounters and Adventures](#giant-encounters-and-adventures)
-- [FAQ](#faq)
-
 ## Giant Statblocks
 
 Below are fully scalable, flavorful 5E Giant statblocks built with the [Foe Foundry Monster Generator](../generate.md){.branding}.
@@ -26,6 +18,8 @@ Below are fully scalable, flavorful 5E Giant statblocks built with the [Foe Foun
 |----------|----------|--------------------------------------------|----------|
 | [Ogres](../monsters/ogre.md)  | 2–7  | ravenous and destructive hulks         | [[Ogre]], [[Ogre Wallsmasha]], [[Ogre Burnbelcha]], [[Ogre Chaincrakka]], [[Ogre Big Brainz]] |
 | [Frost Giants](../monsters/frost-giant.md) | 8–16 | frozen reavers of blood and battle     | [[Frost Giant Reaver]], [[Frost Giant Challenger]], [[Frost Giant Rimepriest]], [[Frost Giant Thane]]  |
+
+---
 
 ## What Are Giants?
 
@@ -41,6 +35,8 @@ From the savage hunger of ogres to the martial pride of frost giants, these crea
 ## Common Traits and Tactics
 
 Giants thrive in close combat, relishing contests of strength and raw brutality. They boast, brawl, and challenge worthy foes, but aren't above hurling boulders or setting ambushes in narrow mountain passes. Their immense size should shape the battlefield—crushing terrain, tossing enemies, or breaking through walls like paper. If your players don’t feel small, you’re doing it wrong.
+
+---
 
 ## Giant Encounters and Adventures
 
@@ -71,6 +67,8 @@ These Giant adventure hooks are perfect for building entire arcs around mythic m
 
 !!! info "More Adventure Ideas"
     See individual monster pages ([Ogres](../monsters/ogre.md), [Frost Giants](../monsters/frost-giant.md)) for additional adventure ideas
+
+---
 
 ## Related Articles
 

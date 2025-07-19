@@ -46,7 +46,7 @@ class GiantPower(PowerWithStandardScoring):
             source=source,
             create_date=create_date,
             theme="Giant",
-            reference_statblock="Ogre",
+            reference_statblock="Frost Giant",
             score_args=standard_score_args,
         )
 

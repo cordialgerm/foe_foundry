@@ -29,6 +29,7 @@ class ShamanicPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
         power_types: List[PowerType] | None = None,
+        reference_statblock: str = "Druid",
         **score_args,
     ):
         super().__init__(
@@ -39,7 +40,7 @@ class ShamanicPower(PowerWithStandardScoring):
             power_types=power_types or [PowerType.Magic, PowerType.Utility],
             icon=icon,
             theme="shamanic",
-            reference_statblock="Druid",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=dict(
                 require_types=CreatureType.Humanoid,
@@ -158,6 +159,7 @@ class _SpiritWolves(ShamanicPower):
         super().__init__(
             name="Spirit Wolves",
             source="Foe Foundry",
+            reference_statblock="Frost Giant Rimepriest",
             icon="wolf-head",
             power_level=HIGH_POWER,
             require_cr=3,

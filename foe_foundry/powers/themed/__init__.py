@@ -34,6 +34,7 @@ from . import (
     psychic,
     reckless,
     serpentine,
+    shamanic,
     sneaky,
     storm,
     technique,
@@ -79,6 +80,7 @@ ThemedPowers: List[Power] = (
     + serpentine.SerpentinePowers
     + sneaky.SneakyPowers
     + storm.StormPowers
+    + shamanic.ShamanicPowers
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers

@@ -49,11 +49,15 @@ A blood-hungry raider wielding frost-forged weapons and hunting instincts honed 
 
 [[!Frost Giant Reaver]]
 
+[[$Frost Giant Reaver]]
+
 ### Frost Giant Challenger
 
 A [[Frost Giant Challenger]] is a towering duelist who seeks worthy foes to crush in ritual combat. They adorn themselves with the trophies of fallen beasts and rivals alike.
 
 [[!Frost Giant Challenger]]
+
+[[$Frost Giant Challenger]]
 
 ### Frost Giant Rimepriest
 
@@ -61,11 +65,15 @@ A storm-caller and rune-witch, the [[Frost Giant Rimepriest]] bends wind and ice
 
 [[!Frost Giant Rimepriest]]
 
+[[$Frost Giant Rimepriest]]
+
 ### Frost Giant Thane
 
 A [[Frost Giant Thane]] is a legendary warlord, leading their reavers into the fray from the front. The Thane is both feared and admired by all who march beneath their frosty banner.
 
 [[!Frost Giant Thane]]
+
+[[$Frost Giant Thane]]
 
 ---
 

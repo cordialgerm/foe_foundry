@@ -33,6 +33,7 @@ class RecklessPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         power_types: List[PowerType] | None = None,
+        reference_statblock: str = "Berserker",
         **score_args,
     ):
         super().__init__(
@@ -41,7 +42,7 @@ class RecklessPower(PowerWithStandardScoring):
             power_level=power_level,
             power_types=power_types or [PowerType.Attack, PowerType.Buff],
             theme="reckless",
-            reference_statblock="Berserker",
+            reference_statblock=reference_statblock,
             icon=icon,
             power_category=PowerCategory.Theme,
             create_date=create_date,
@@ -219,7 +220,11 @@ class _RecklessFlurry(RecklessPower):
 class _Toss(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Toss", source="Foe Foundry", icon="arrow-dunk", bonus_size=Size.Large
+            name="Toss",
+            source="Foe Foundry",
+            icon="arrow-dunk",
+            bonus_size=Size.Large,
+            reference_statblock="Frost Giant",
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
