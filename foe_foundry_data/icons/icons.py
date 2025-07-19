@@ -6,7 +6,7 @@ from pathlib import Path
 import cairosvg
 from bs4 import BeautifulSoup
 from markupsafe import Markup
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageColor, ImageDraw, ImageFont
 
 
 class _IconCache:
@@ -78,7 +78,7 @@ def og_image_for_icon(
     title: str,
     output_path: Path,
     background_texture: str = "img/backgrounds/parchment-stained.png",
-    background_texture_opacity: float = 0.3,
+    background_texture_opacity: float = 0.2,
     background_color: str = "#2a2a2a",
     foreground_color: str = "#ff3737",
 ) -> Path:
@@ -136,6 +136,27 @@ def og_image_for_icon(
     text_x = (OG_WIDTH - text_width) // 2
     text_y = TEXT_PADDING_TOP
 
+    # Draw text shadow (background color, but fully opaque) slightly offset in several directions
+
+    try:
+        shadow_rgba = ImageColor.getrgb(background_color) + (180,)
+    except Exception:
+        # fallback to dark gray if color parsing fails
+        shadow_rgba = (42, 42, 42, 255)
+    shadow_offsets = [
+        (-2, -2),
+        (2, -2),
+        (-2, 2),
+        (2, 2),
+        (0, 2),
+        (0, -2),
+        (2, 0),
+        (-2, 0),
+    ]
+    for dx, dy in shadow_offsets:
+        draw.text((text_x + dx, text_y + dy), title, fill=shadow_rgba, font=font)
+
+    # Draw main text
     draw.text((text_x, text_y), title, fill=foreground_color, font=font)
 
     # Save the final image

@@ -10,7 +10,7 @@ json_ld: true
 
 *Frozen Reavers of Blood and Battle*
 
-- [Jump to Frost Giant Statblocks](#statblocks)
+- [Jump to Frost Giant Statblocks](#frost-giant-statblocks)
 - [Jump to Encounter Ideas](#frost-giant-encounter-ideas)
 - [Jump to Adventure Hooks](#frost-giant-adventure-ideas)
 

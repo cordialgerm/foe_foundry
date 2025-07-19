@@ -360,7 +360,7 @@ class _BigWindup(GiantPower):
         super().__init__(
             name="Big Windup",
             source="A5E SRD Cyclops",
-            icon="time-bomb",
+            icon="rock",
             create_date=datetime(2023, 11, 22),
             require_attack_types=AttackType.AllMelee(),
             power_level=LOW_POWER,

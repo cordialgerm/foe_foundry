@@ -1,8 +1,9 @@
+from pathlib import Path
+
 import mkdocs_gen_files
-import numpy as np
 
 from foe_foundry.utils import slug_to_title
-from foe_foundry_data.icons import inline_icon
+from foe_foundry_data.icons import inline_icon, og_image_for_icon
 from foe_foundry_data.powers import PowerCategory, PowerModel, Powers
 
 
@@ -48,20 +49,34 @@ def generate_all_powers():
 
 
 def generate_theme_file(theme: str, powers: list[PowerModel]):
-    icons, counts = np.unique([p.icon for p in powers if p.icon], return_counts=True)
-    indexes = np.argsort(counts)[::-1]
-    icon = str(icons[indexes[0]]) if indexes.size > 0 else "img/icons/favicon.webp"
+    # Sum monster_count by icon and pick the icon with the highest monster_count
+    icon_counts = {}
+    for p in powers:
+        if p.icon:
+            icon_counts[p.icon] = icon_counts.get(p.icon, 0) + 10 + len(p.monsters)
+    if icon_counts:
+        icon = max(icon_counts, key=icon_counts.get)  # type: ignore
+    else:
+        icon = "favicon"
 
     theme_title = slug_to_title(theme)
     theme_description = theme_title.lower()
 
     icon_html = inline_icon(icon)
 
+    og_image_dir = Path.cwd() / "site" / "img" / "og"
+    og_image_dir.mkdir(parents=True, exist_ok=True)
+    og_image_path = og_image_dir / f"{theme}-og-image.png"
+    og_image_path_rel = og_image_path.relative_to(Path.cwd() / "site")
+    og_image_for_icon(
+        icon=icon, title=theme_title + " Powers", output_path=og_image_path
+    )
+
     lines = [
         "---",
         f"title: {theme_title} Powers | Foe Foundry",
         f"description: Discover {len(powers)} {theme_description}-themed free powers for your next 5E monster.\n",
-        f"image: {icon}",
+        f"image: {og_image_path_rel}",
         "---\n",
         f"# {icon_html} {theme_title} Powers ({len(powers)})\n",
         f"Explore a collection of **{theme_title} Powers**: flavorful, ready-to-use monster abilities perfect for adding depth, danger, and thematic flair to your next encounter. These handcrafted powers are designed to fit monsters of any level and are fully compatible with 5E. Use them to customize creatures, surprise your players, and bring your world to life. Foe Foundry uses these Powers to procedurally generate monsters that are both flavorful and mechanically sharp. Powers are selected based on theme, role, and CR to ensure every creature feels distinct and balanced. Whether you're building a custom boss or filling out an encounter, Powers are the core of what makes Foe Foundry monsters unforgettable.  \n"
