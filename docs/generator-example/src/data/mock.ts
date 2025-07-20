@@ -52,7 +52,7 @@ const mockLoadouts: PowerLoadout[] = [
     {
         key: 'martial-memories',
         name: 'Martial Memories',
-        flavorText: 'Half-remember martial prowess',
+        flavorText: 'Half-remembered martial prowess',
         powers: mockPowers['martial-memories'],
         selectionCount: 1,
         locked: false,
@@ -68,7 +68,7 @@ const mockSkeleton: Monster = {
     creature_type: 'Undead',
     size: 'Medium',
     cr: 'CR 1/4',
-    tag_line: 'A fearsome undead warrior',
+    tag_line: 'Fleshless Servants to Greater Undead',
     loadouts: mockLoadouts
 };
 const mockBasilisk: Monster = {
