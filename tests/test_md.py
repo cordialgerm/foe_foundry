@@ -32,6 +32,12 @@ def test_reference_power():
     assert len(result.references) == 2
 
 
+def test_reference_spirit_wolves():
+    text = "This is [[Spirit Wolves]] and this is [[!Spirit Wolves]]"
+    result = markdown(text)
+    assert len(result.references) == 2
+
+
 def test_embed_power():
     text = "This is [[!Pack Tactics]]"
     result = markdown(text)

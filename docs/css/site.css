@@ -154,6 +154,18 @@ a.branding::after,
     vertical-align: middle;
 }
 
+.navbar a[href$="giants/" i]::before {
+    content: " ";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/img/icons/boot-stomp.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: var(--small-margin);
+    vertical-align: middle;
+}
+
 .navbar a[href$="undead/" i]::before {
     content: " ";
     display: inline-block;
@@ -1373,11 +1385,7 @@ a.burnt-parchment,
     }
 
     .pamphlet-main h1 {
-        font-size: 2.5rem;
-    }
-
-    h1 {
-        font-size: clamp(0.8rem, 5vw, 2.3rem);
+        font-size: 2.25rem;
     }
 
     h1,
@@ -1411,6 +1419,21 @@ a.burnt-parchment,
 
     #toc-collapse {
         display: none !important;
+    }
+
+    .monster-image,
+    .monster-image-large,
+    .monster-image-medium,
+    .monster-image-small,
+    .monster-image-xsmall,
+    .blog-image,
+    .blog-image-large,
+    .blog-image-medium,
+    .blog-image-small,
+    .blog-image-xsmall {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        display: block !important;
     }
 
     .stat-block>*,

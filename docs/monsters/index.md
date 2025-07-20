@@ -79,6 +79,9 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 
 ## Giants
 
+!!! info "More Giants"
+    See also [Giants](../families/giants.md) for detailed lore, encounters, and statblocks
+
 Giants are primordial creatures, living walking bones of the earth.
 
 - [Ogres](ogre.md) - ravenous and destructive hulks

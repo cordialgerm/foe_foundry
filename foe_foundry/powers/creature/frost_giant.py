@@ -100,6 +100,7 @@ class _ChillingChallenge(FrostGiantPower):
         feature = Feature(
             name="Chilling Challenge",
             action=ActionType.BonusAction,
+            uses=3,
             description=(
                 f"{stats.selfref.capitalize()} challenges a creature it can see within 15 feet to a one on one duel. If the target does not attack {stats.selfref} in melee by the end of its next turn, it must make a DC {dc} Wisdom save or become {frozen.caption}. {frozen.description_3rd}"
             ),
