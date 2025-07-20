@@ -73,6 +73,7 @@ These Giant adventure hooks are perfect for building entire arcs around mythic m
 ## Related Articles
 
 - [Meaner and Funnier Ogres](../blog/2025_06_08_ogres.md)
+- [Forging Formidable Frost Giants](../blog/2025_07_20_frost_giants.md)
 
 ---
 
