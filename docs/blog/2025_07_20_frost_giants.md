@@ -1,7 +1,7 @@
 ---
 title: Forging Formidable Frost Giants | Foe Foundry
 short_title: Forging Formidable Frost Giants
-description: TODO
+description: Make Frost Giants terrifying again. Get flavorful 5E statblocks, custom powers, and tips to build giants that crush, roar, and shake your players to the core.
 tags:
  - tips
  - monsters
