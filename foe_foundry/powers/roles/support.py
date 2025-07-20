@@ -5,7 +5,7 @@ from typing import List
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
-from ...skills import Skills, Stats
+from ...skills import AbilityScore, Skills
 from ...statblocks import BaseStatblock
 from ...utils import easy_multiple_of_five
 from ..power import MEDIUM_POWER, Power, PowerCategory, PowerWithStandardScoring
@@ -25,7 +25,7 @@ class SupportPower(PowerWithStandardScoring):
         standard_score_args = dict(
             require_roles=MonsterRole.Support,
             bonus_skills=[Skills.Medicine, Skills.Insight],
-            bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
+            bonus_stats=[AbilityScore.CHA, AbilityScore.INT, AbilityScore.WIS],
             **score_args,
         )
         super().__init__(
@@ -54,7 +54,9 @@ class _Encouragement(SupportPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         hp = easy_multiple_of_five(
-            int(stats.attributes.stat_mod(Stats.WIS) + max(5, ceil(stats.cr * 2)))
+            int(
+                stats.attributes.stat_mod(AbilityScore.WIS) + max(5, ceil(stats.cr * 2))
+            )
         )
 
         feature = Feature(

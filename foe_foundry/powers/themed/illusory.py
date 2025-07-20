@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
@@ -60,19 +60,19 @@ class Illusory(PowerWithStandardScoring):
                 },
                 require_callback=humanoid_is_magical,
                 bonus_roles={MonsterRole.Ambusher, MonsterRole.Controller},
-                require_stats=[Stats.CHA, Stats.INT],
+                require_stats=[AbilityScore.CHA, AbilityScore.INT],
             )
             | score_args,
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
+
         # this creature should be tricky
-        new_attrs = stats.attributes.grant_proficiency_or_expertise(
-            Skills.Deception
-        ).boost(Stats.CHA, 2)
+        stats = stats.grant_proficiency_or_expertise(Skills.Deception)
+        stats = stats.change_abilities({AbilityScore.CHA: 2})
         stats = stats.grant_spellcasting(CasterType.Innate)
-        changes: dict = dict(attributes=new_attrs)
-        return stats.copy(**changes)
+        return stats
 
 
 class _Projection(Illusory):
@@ -123,7 +123,7 @@ class _MirrorImage(Illusory):
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
-        ac = 10 + stats.attributes.stat_mod(Stats.DEX)
+        ac = 10 + stats.attributes.stat_mod(AbilityScore.DEX)
 
         feature = Feature(
             name="Mirror Images",

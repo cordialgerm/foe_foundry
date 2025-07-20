@@ -14,7 +14,7 @@ from ...creature_types import CreatureType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -139,43 +139,43 @@ class _GoblinTemplate(MonsterTemplate):
         if variant is GoblinLickspittleVariant or variant is GoblinWarriorVariant:
             hp_multiplier = 0.7 if cr < 0.5 else 0.8
             damage_multiplier = 1.0 if cr < 0.5 else 1.1
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default, mod=-3),
-                Stats.DEX.scaler(StatScaling.Primary, mod=2 if cr <= 1 else 0),
-                Stats.INT.scaler(StatScaling.Default, mod=-1),
-                Stats.WIS.scaler(StatScaling.Default, mod=-2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -3),
+                AbilityScore.DEX: (StatScaling.Primary, 2 if cr <= 1 else 0),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is GoblinBruteVariant:
             hp_multiplier = 1.0
             damage_multiplier = 1.0
-            attrs = [
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=-1),
-                Stats.WIS.scaler(StatScaling.Default, mod=-2),
-                Stats.CHA.scaler(StatScaling.Default, mod=-2),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: (StatScaling.Default, -2),
+                AbilityScore.CHA: (StatScaling.Default, -2),
+            }
         elif variant is GoblinShamanVariant:
             hp_multiplier = 0.8
             damage_multiplier = 1.1
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Default),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Default,
+            }
         elif variant is GoblinBossVariant:
             hp_multiplier = 1.0
             damage_multiplier = 1.0
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Default),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Default,
+            }
         else:
             raise ValueError(f"Unknown goblin variant: {variant}")
 
@@ -234,7 +234,7 @@ class _GoblinTemplate(MonsterTemplate):
         # SPELLS
         if variant is GoblinShamanVariant:
             stats = stats.grant_spellcasting(
-                caster_type=CasterType.Primal, spellcasting_stat=Stats.INT
+                caster_type=CasterType.Primal, spellcasting_stat=AbilityScore.INT
             )
 
         # ROLES
@@ -260,7 +260,7 @@ class _GoblinTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 3:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         return stats, [attack, secondary_attack] if secondary_attack else [attack]
 

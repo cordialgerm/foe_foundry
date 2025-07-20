@@ -9,7 +9,7 @@ from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
-from ...skills import Stats
+from ...skills import AbilityScore
 from ...statblocks import BaseStatblock
 from ..power import (
     LOW_POWER,
@@ -128,7 +128,8 @@ class _DraconicAscension(KoboldPower):
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         wyrmling = creature_ref("Red Dragon Wyrmling")
         temp_hp = easy_multiple_of_five(
-            stats.attributes.stat_mod(Stats.CHA) + stats.attributes.proficiency * 2,
+            stats.attributes.stat_mod(AbilityScore.CHA)
+            + stats.attributes.proficiency * 2,
             min_val=5,
         )
 

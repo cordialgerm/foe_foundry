@@ -4,7 +4,7 @@ from typing import List
 
 from num2words import num2words
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...features import ActionType, Feature
 from ...power_types import PowerType
@@ -68,7 +68,7 @@ class PhysicallyTough(PowerWithStandardScoring):
                     MonsterRole.Soldier,
                     MonsterRole.Defender,
                 ],
-                require_stats=Stats.STR,
+                require_stats=AbilityScore.STR,
                 bonus_size=Size.Large,
                 bonus_skills=Skills.Athletics,
                 require_callback=humanoid_is_fighter,

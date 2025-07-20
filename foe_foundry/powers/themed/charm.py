@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import spell
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...features import ActionType, Feature
@@ -45,7 +45,7 @@ class CharmingPower(PowerWithStandardScoring):
                 CreatureType.Fiend,
                 CreatureType.Humanoid,
             ],
-            require_stats=Stats.CHA,
+            require_stats=AbilityScore.CHA,
             require_callback=humanoid_is_psychic_spellcaster,
             bonus_roles=[
                 MonsterRole.Controller,

@@ -8,7 +8,7 @@ from ...damage import DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -113,50 +113,48 @@ class _OrcTemplate(MonsterTemplate):
             or variant is OrcReaverVariant
             or variant is OrcHardenedOneVariant
         ):
-            attrs = [
-                Stats.STR.scaler(StatScaling.Primary, mod=2),
-                Stats.DEX.scaler(StatScaling.Medium, mod=2),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(
+            attrs = {
+                AbilityScore.STR: (StatScaling.Primary, 2),
+                AbilityScore.DEX: (StatScaling.Medium, 2),
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (
                     StatScaling.Default,
-                    mod=-3 if variant is not OrcHardenedOneVariant else 2,
+                    -3 if variant is not OrcHardenedOneVariant else 2,
                 ),
-                Stats.WIS.scaler(
+                AbilityScore.WIS: (
                     StatScaling.Default,
-                    mod=1 if variant is not OrcReaverVariant else -1,
+                    1 if variant is not OrcReaverVariant else -1,
                 ),
-                Stats.CHA.scaler(
+                AbilityScore.CHA: (
                     StatScaling.Default,
-                    mod=0 if variant is not OrcHardenedOneVariant else 2,
+                    0 if variant is not OrcHardenedOneVariant else 2,
                 ),
-            ]
+            }
         elif variant is OrcBloodletterVariant:
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Primary),
-                Stats.INT.scaler(StatScaling.Medium, mod=0.5),
-                Stats.WIS.scaler(StatScaling.Medium, mod=1),
-                Stats.CHA.scaler(StatScaling.Medium, mod=1),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Medium, 0.5),
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: (StatScaling.Medium, 1),
+            }
         elif variant is OrcBloodriteShamanVariant:
-            attrs = [
-                Stats.STR.scaler(StatScaling.Default),
-                Stats.DEX.scaler(StatScaling.Medium, mod=1),
-                Stats.INT.scaler(StatScaling.Medium, mod=2),
-                Stats.WIS.scaler(StatScaling.Primary),
-                Stats.CHA.scaler(StatScaling.Default),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Default,
+                AbilityScore.DEX: (StatScaling.Medium, 1),
+                AbilityScore.INT: (StatScaling.Medium, 2),
+                AbilityScore.WIS: StatScaling.Primary,
+                AbilityScore.CHA: StatScaling.Default,
+            }
         elif variant is OrcWarchiefVariant:
-            attrs = [
-                Stats.STR.scaler(
-                    StatScaling.Primary,
-                ),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.CON.scaler(StatScaling.Constitution, mod=2),
-                Stats.INT.scaler(StatScaling.Default, mod=1),
-                Stats.WIS.scaler(StatScaling.Default, mod=2),
-                Stats.CHA.scaler(StatScaling.Medium, mod=1),
-            ]
+            attrs = {
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.CON: (StatScaling.Constitution, 2),
+                AbilityScore.INT: (StatScaling.Default, 1),
+                AbilityScore.WIS: (StatScaling.Default, 2),
+                AbilityScore.CHA: (StatScaling.Medium, 1),
+            }
         else:
             raise ValueError(f"Unknown orc variant: {variant}")
 
@@ -223,7 +221,7 @@ class _OrcTemplate(MonsterTemplate):
         # SPELLS
         if variant is OrcBloodriteShamanVariant:
             stats = stats.grant_spellcasting(
-                caster_type=CasterType.Primal, spellcasting_stat=Stats.WIS
+                caster_type=CasterType.Primal, spellcasting_stat=AbilityScore.WIS
             )
 
         # ROLES
@@ -260,10 +258,12 @@ class _OrcTemplate(MonsterTemplate):
 
         # SAVES
         if variant is OrcBloodriteShamanVariant:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         if variant is OrcWarchiefVariant:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS, Stats.STR)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.CON, AbilityScore.WIS, AbilityScore.STR
+            )
 
         return stats, [attack, secondary_attack] if secondary_attack else [attack]
 

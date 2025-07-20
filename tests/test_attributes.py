@@ -1,4 +1,4 @@
-from foe_foundry import Attributes, Skills, Stats
+from foe_foundry import AbilityScore, Attributes, Skills
 
 
 def test_attribute_modifiers():
@@ -11,12 +11,12 @@ def test_attribute_modifiers():
         INT=10,
         proficiency=2,
     )
-    assert a.stat_mod(Stats.STR) == 0
-    assert a.stat_mod(Stats.DEX) == 1
-    assert a.stat_mod(Stats.CON) == 3
-    assert a.stat_mod(Stats.WIS) == 5
-    assert a.stat_mod(Stats.CHA) == -1
-    assert a.stat_mod(Stats.INT) == 0
+    assert a.stat_mod(AbilityScore.STR) == 0
+    assert a.stat_mod(AbilityScore.DEX) == 1
+    assert a.stat_mod(AbilityScore.CON) == 3
+    assert a.stat_mod(AbilityScore.WIS) == 5
+    assert a.stat_mod(AbilityScore.CHA) == -1
+    assert a.stat_mod(AbilityScore.INT) == 0
 
 
 def test_attributes_generate_saves():
@@ -28,14 +28,14 @@ def test_attributes_generate_saves():
         CHA=8,
         INT=10,
         proficiency=2,
-        proficient_saves={Stats.WIS, Stats.CHA},
+        proficient_saves={AbilityScore.WIS, AbilityScore.CHA},
     )
 
-    assert a.save_mod(Stats.STR) is None
-    assert a.save_mod(Stats.WIS) == 7
-    assert a.save_mod(Stats.CHA) == 1
+    assert a.save_mod(AbilityScore.STR) is None
+    assert a.save_mod(AbilityScore.WIS) == 7
+    assert a.save_mod(AbilityScore.CHA) == 1
 
-    assert {Stats.WIS: 7, Stats.CHA: 1} == a.saves
+    assert {AbilityScore.WIS: 7, AbilityScore.CHA: 1} == a.saves
 
 
 def test_attributes_generate_skills():
@@ -81,4 +81,4 @@ def test_attributes_infers_primary():
         proficient_skills={Skills.Perception, Skills.Religion, Skills.Persuasion},
     )
 
-    assert a.primary_attribute == Stats.WIS
+    assert a.primary_attribute == AbilityScore.WIS

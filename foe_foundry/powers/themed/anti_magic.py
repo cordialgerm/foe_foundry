@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import List
 
 from ...attack_template import weapon
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...creature_types import CreatureType
 from ...damage import Attack, AttackType, Condition, DamageType, conditions
 from ...features import ActionType, Feature
@@ -291,7 +291,7 @@ class _TwistedMind(PowerWithStandardScoring):
 
         if stats.cr >= 5:
             new_attributes = stats.attributes.grant_save_proficiency(
-                Stats.WIS, Stats.INT, Stats.CHA
+                AbilityScore.WIS, AbilityScore.INT, AbilityScore.CHA
             )
             stats = stats.copy(attributes=new_attributes)
 

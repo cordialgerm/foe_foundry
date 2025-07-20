@@ -189,7 +189,9 @@ class PowerModel:
 
     @cached_property
     def used_by_monsters_html(self) -> str:
-        if len(self.monsters) < 5:
+        if len(self.monsters) == 0:
+            return ""
+        elif len(self.monsters) < 5:
             return "Used by " + ", ".join(
                 f"<a href='{m.url}'>{m.name} ({m.cr_caption})</a>"
                 for m in self.monsters

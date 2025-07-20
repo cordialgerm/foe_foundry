@@ -11,7 +11,7 @@ from ...environs.region import UrbanTownship
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -85,13 +85,13 @@ class _ToughTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, 0.5),
-                Stats.INT.scaler(StatScaling.Default, mod=-1),
-                Stats.WIS.scaler(StatScaling.Default),
-                Stats.CHA.scaler(StatScaling.Medium),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 0.5),
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: StatScaling.Default,
+                AbilityScore.CHA: StatScaling.Medium,
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -149,10 +149,10 @@ class _ToughTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 2:
-            stats = stats.grant_save_proficiency(Stats.STR)
+            stats = stats.grant_save_proficiency(AbilityScore.STR)
 
         if cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.CON, Stats.CHA)
+            stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.CHA)
 
         return stats, [attack]
 

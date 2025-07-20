@@ -14,7 +14,7 @@ from ...damage import Condition, DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Stats, StatScaling
+from ...skills import AbilityScore, StatScaling
 from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
@@ -79,14 +79,14 @@ class _ZombieTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Default, mod=-4),
-                Stats.CON.scaler(StatScaling.Constitution, mod=4),
-                Stats.INT.scaler(StatScaling.Default, mod=-7),
-                Stats.WIS.scaler(StatScaling.Default, mod=-4),
-                Stats.CHA.scaler(StatScaling.Default, mod=-5),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Default, -4),
+                AbilityScore.CON: (StatScaling.Constitution, 4),
+                AbilityScore.INT: (StatScaling.Default, -7),
+                AbilityScore.WIS: (StatScaling.Default, -4),
+                AbilityScore.CHA: (StatScaling.Default, -5),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -142,9 +142,9 @@ class _ZombieTemplate(MonsterTemplate):
         )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.WIS)
+        stats = stats.grant_save_proficiency(AbilityScore.WIS)
         if stats.cr >= 4:
-            stats = stats.grant_save_proficiency(Stats.CON)
+            stats = stats.grant_save_proficiency(AbilityScore.CON)
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(
