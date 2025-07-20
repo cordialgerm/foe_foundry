@@ -8,7 +8,10 @@
 
 {% if page and page.is_homepage %}
 <link href="{{ 'css/homepage.css'|url }}" rel="stylesheet">
-</script>
+{% endif %}
+
+{% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
+<link href="{{ 'css/generate.css'|url }}" rel="stylesheet">
 {% endif %}
 
 <link href="{{ 'css/fontawesome.min.css'|url }}" media="print" onload="this.media='all'">
