@@ -182,6 +182,7 @@ class _SpiritWolves(ShamanicPower):
         feature = Feature(
             name="Spirit Wolves",
             action=ActionType.Action,
+            replaces_multiattack=1,
             uses=1,
             description=f"{stats.selfref.capitalize()} summons a pack of {formula.description} {wolf} as allies. \
                 The wolves act immediately after {stats.selfref} in initiative order \
