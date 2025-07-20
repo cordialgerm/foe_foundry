@@ -9,7 +9,7 @@ from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats
+from ...skills import AbilityScore, Skills
 from ...statblocks import BaseStatblock
 from ..power import (
     LOW_POWER,
@@ -43,7 +43,7 @@ class SkirmisherPower(PowerWithStandardScoring):
         standard_score_args = (
             dict(
                 require_roles=MonsterRole.Skirmisher,
-                bonus_stats=Stats.DEX,
+                bonus_stats=AbilityScore.DEX,
                 bonus_skills=Skills.Acrobatics,
                 bonus_speed=40,
                 bonus_callback=ideal_skirmisher,
@@ -149,7 +149,7 @@ class _Speedy(SkirmisherPower):
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
         stats = stats.grant_proficiency_or_expertise(
             Skills.Acrobatics
-        ).grant_save_proficiency(Stats.DEX)
+        ).grant_save_proficiency(AbilityScore.DEX)
         stats = stats.copy(speed=stats.speed.delta(10))
         return stats
 

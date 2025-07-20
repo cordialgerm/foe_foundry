@@ -9,7 +9,7 @@ from ...powers import PowerLoadout, PowerSelection
 from ...powers.species import powers_for_role
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -82,13 +82,13 @@ class _KnightTemplate(MonsterTemplate):
             monster_key=settings.monster_key,
             species_key=species.key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Default),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Medium),
-                Stats.CHA.scaler(StatScaling.Medium, mod=2),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: StatScaling.Default,
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: (StatScaling.Medium, 2),
+            },
             hp_multiplier=settings.hp_multiplier * (1.1 if cr >= 12 else 1.0),
             damage_multiplier=settings.damage_multiplier,
         )
@@ -140,9 +140,11 @@ class _KnightTemplate(MonsterTemplate):
             )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.CON)
+        stats = stats.grant_save_proficiency(AbilityScore.CON)
         if cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.STR, Stats.WIS, Stats.CHA)
+            stats = stats.grant_save_proficiency(
+                AbilityScore.STR, AbilityScore.WIS, AbilityScore.CHA
+            )
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(conditions={Condition.Frightened})

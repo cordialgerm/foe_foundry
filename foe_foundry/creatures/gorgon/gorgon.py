@@ -11,7 +11,7 @@ from ...powers import (
 )
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...statblocks import MonsterDials
 from .._template import (
     GenerationSettings,
@@ -51,14 +51,14 @@ class _GorgonTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary, mod=2),
-                Stats.DEX.scaler(StatScaling.Default, mod=-1),
-                Stats.CON.scaler(StatScaling.Constitution, mod=4),
-                Stats.INT.scaler(StatScaling.Default, mod=-9),
-                Stats.WIS.scaler(StatScaling.Default, mod=1),
-                Stats.CHA.scaler(StatScaling.Default, mod=-5),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Primary, 2),
+                AbilityScore.DEX: (StatScaling.Default, -1),
+                AbilityScore.CON: (StatScaling.Constitution, 4),
+                AbilityScore.INT: (StatScaling.Default, -9),
+                AbilityScore.WIS: (StatScaling.Default, 1),
+                AbilityScore.CHA: (StatScaling.Default, -5),
+            },
             hp_multiplier=1.2 * settings.hp_multiplier,
             damage_multiplier=0.95 * settings.damage_multiplier,
         )

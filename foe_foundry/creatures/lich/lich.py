@@ -8,7 +8,7 @@ from ...movement import Movement
 from ...powers import PowerSelection, flags
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -59,14 +59,14 @@ class _LichTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=-2),
-                Stats.DEX.scaler(StatScaling.Medium),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.CON.scaler(StatScaling.Constitution, mod=-6),
-                Stats.WIS.scaler(StatScaling.Medium, mod=-2),
-                Stats.CHA.scaler(StatScaling.Medium),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: StatScaling.Medium,
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.CON: (StatScaling.Constitution, -6),
+                AbilityScore.WIS: (StatScaling.Medium, -2),
+                AbilityScore.CHA: StatScaling.Medium,
+            },
             hp_multiplier=0.85 * settings.hp_multiplier,
             damage_multiplier=1.1 * settings.damage_multiplier,
         )
@@ -128,7 +128,11 @@ class _LichTemplate(MonsterTemplate):
         # SAVES
         if cr >= 6:
             stats = stats.grant_save_proficiency(
-                Stats.DEX, Stats.CON, Stats.INT, Stats.WIS, Stats.CHA
+                AbilityScore.DEX,
+                AbilityScore.CON,
+                AbilityScore.INT,
+                AbilityScore.WIS,
+                AbilityScore.CHA,
             )
 
         return stats, [attack]

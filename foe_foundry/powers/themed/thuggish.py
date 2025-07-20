@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...creature_types import CreatureType
 from ...damage import AttackType
 from ...die import DieFormula
@@ -29,7 +29,7 @@ class ThuggishPower(PowerWithStandardScoring):
                 CreatureType.Humanoid,
             ],
             bonus_skills=Skills.Intimidation,
-            bonus_stats=Stats.CHA,
+            bonus_stats=AbilityScore.CHA,
             require_roles={
                 MonsterRole.Bruiser,
                 MonsterRole.Leader,

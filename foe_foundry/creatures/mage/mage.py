@@ -7,7 +7,7 @@ from ...creature_types import CreatureType
 from ...powers import PowerSelection, flags
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -236,13 +236,13 @@ class _MageTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=-2),
-                Stats.DEX.scaler(StatScaling.Default, mod=2),
-                Stats.INT.scaler(StatScaling.Primary),
-                Stats.WIS.scaler(StatScaling.Medium),
-                Stats.CHA.scaler(StatScaling.Default),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, -2),
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: StatScaling.Default,
+            },
             hp_multiplier=0.85 * settings.hp_multiplier,
             damage_multiplier=1.2 * settings.damage_multiplier,
         )
@@ -350,7 +350,7 @@ class _MageTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 6:
-            stats = stats.grant_save_proficiency(Stats.WIS, Stats.INT)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.INT)
 
         return stats, [attack]
 

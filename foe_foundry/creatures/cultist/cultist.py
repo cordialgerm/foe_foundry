@@ -8,7 +8,7 @@ from ...damage import DamageType
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from ...spells import CasterType
 from .._template import (
     GenerationSettings,
@@ -143,13 +143,13 @@ class _CultistTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Default, mod=1),
-                Stats.DEX.scaler(StatScaling.Medium, mod=1),
-                Stats.INT.scaler(StatScaling.Default),
-                Stats.WIS.scaler(StatScaling.Medium, mod=1),
-                Stats.CHA.scaler(StatScaling.Primary),
-            ],
+            stats={
+                AbilityScore.STR: (StatScaling.Default, 1),
+                AbilityScore.DEX: (StatScaling.Medium, 1),
+                AbilityScore.INT: StatScaling.Default,
+                AbilityScore.WIS: (StatScaling.Medium, 1),
+                AbilityScore.CHA: StatScaling.Primary,
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -217,7 +217,7 @@ class _CultistTemplate(MonsterTemplate):
 
         # SAVES
         if cr >= 2:
-            stats = stats.grant_save_proficiency(Stats.WIS)
+            stats = stats.grant_save_proficiency(AbilityScore.WIS)
 
         return stats, [attack]
 

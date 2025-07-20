@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -18,7 +18,11 @@ class _HideArmorClassTemplate(ArmorClassTemplate):
 
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
-        ac = 13 + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2)) + quality_level
+        ac = (
+            13
+            + max(0, min(stats.attributes.stat_mod(AbilityScore.DEX), 2))
+            + quality_level
+        )
         return ResolvedArmorClass(
             value=ac,
             armor_type="Hide",

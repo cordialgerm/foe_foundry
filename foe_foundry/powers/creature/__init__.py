@@ -5,6 +5,7 @@ from .chimera import ChimeraPowers
 from .cultist import CultistPowers
 from .dire_bunny import DireBunnyPowers
 from .druid import DruidPowers
+from .frost_giant import FrostGiantPowers
 from .gelatinous_cube import GelatinousCubePowers
 from .ghoul import GhoulPowers
 from .goblin import GoblinPowers
@@ -37,6 +38,7 @@ CreaturePowers = (
     + ChimeraPowers
     + DireBunnyPowers
     + DruidPowers
+    + FrostGiantPowers
     + GelatinousCubePowers
     + GhoulPowers
     + GoblinPowers

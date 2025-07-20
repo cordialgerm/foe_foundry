@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -22,8 +22,8 @@ class _HolyArmorClassTemplate(ArmorClassTemplate):
     def resolve(self, stats: BaseStatblock, uses_shield: bool) -> ResolvedArmorClass:
         quality_level = stats.ac_boost
 
-        dex_mod = max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
-        con_mod = max(0, min(stats.attributes.stat_mod(Stats.CON), 2))
+        dex_mod = max(0, min(stats.attributes.stat_mod(AbilityScore.DEX), 2))
+        con_mod = max(0, min(stats.attributes.stat_mod(AbilityScore.CON), 2))
 
         ac = (
             10

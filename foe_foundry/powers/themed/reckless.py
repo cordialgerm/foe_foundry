@@ -5,7 +5,7 @@ from typing import List
 from foe_foundry.references import action_ref
 
 from ...attack_template import natural, weapon
-from ...attributes import Stats
+from ...attributes import AbilityScore
 from ...damage import AttackType, Condition, DamageType
 from ...die import Die
 from ...features import ActionType, Feature
@@ -33,6 +33,7 @@ class RecklessPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = None,
         power_types: List[PowerType] | None = None,
+        reference_statblock: str = "Berserker",
         **score_args,
     ):
         super().__init__(
@@ -41,7 +42,7 @@ class RecklessPower(PowerWithStandardScoring):
             power_level=power_level,
             power_types=power_types or [PowerType.Attack, PowerType.Buff],
             theme="reckless",
-            reference_statblock="Berserker",
+            reference_statblock=reference_statblock,
             icon=icon,
             power_category=PowerCategory.Theme,
             create_date=create_date,
@@ -49,7 +50,7 @@ class RecklessPower(PowerWithStandardScoring):
                 require_attack_types=AttackType.AllMelee(),
                 bonus_roles=MonsterRole.Bruiser,
                 bonus_size=Size.Large,
-                require_stats=Stats.STR,
+                require_stats=AbilityScore.STR,
                 attack_names=[
                     "-",
                     natural.Claw,
@@ -66,7 +67,7 @@ class RecklessPower(PowerWithStandardScoring):
         )
 
     def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
-        return stats.scale({Stats.WIS: -1})
+        return stats.change_abilities({AbilityScore.WIS: -1})
 
 
 class _Charger(RecklessPower):
@@ -219,7 +220,11 @@ class _RecklessFlurry(RecklessPower):
 class _Toss(RecklessPower):
     def __init__(self):
         super().__init__(
-            name="Toss", source="Foe Foundry", icon="arrow-dunk", bonus_size=Size.Large
+            name="Toss",
+            source="Foe Foundry",
+            icon="arrow-dunk",
+            bonus_size=Size.Large,
+            reference_statblock="Frost Giant",
         )
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:

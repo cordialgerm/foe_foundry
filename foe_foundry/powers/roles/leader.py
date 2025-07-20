@@ -8,7 +8,7 @@ from ...damage import Condition
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...role_types import MonsterRole
-from ...skills import Skills, Stats
+from ...skills import AbilityScore, Skills
 from ...statblocks import BaseStatblock
 from ..power import (
     HIGH_POWER,
@@ -44,7 +44,7 @@ class LeaderPower(PowerWithStandardScoring):
         standard_score_args = dict(
             require_roles=MonsterRole.Leader,
             bonus_skills=[Skills.Persuasion, Skills.Intimidation, Skills.Insight],
-            bonus_stats=[Stats.CHA, Stats.INT, Stats.WIS],
+            bonus_stats=[AbilityScore.CHA, AbilityScore.INT, AbilityScore.WIS],
             **score_args,
         )
         super().__init__(
@@ -88,7 +88,7 @@ class _Intimidate(LeaderPower):
         super().__init__(
             name="Intimidate",
             source="Foe Foundry",
-            require_stats=Stats.CHA,
+            require_stats=AbilityScore.CHA,
             icon="terror",
             power_types=[PowerType.Debuff],
         )

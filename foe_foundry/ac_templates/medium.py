@@ -1,5 +1,5 @@
 from ..ac import ArmorClassTemplate, ResolvedArmorClass
-from ..attributes import Stats
+from ..attributes import AbilityScore
 from ..statblocks.base import BaseStatblock
 
 
@@ -7,7 +7,7 @@ def _medium_armor_ac(stats: BaseStatblock, baseline_ac: int, uses_shield: bool) 
     quality_level = stats.ac_boost
     ac = (
         baseline_ac
-        + max(0, min(stats.attributes.stat_mod(Stats.DEX), 2))
+        + max(0, min(stats.attributes.stat_mod(AbilityScore.DEX), 2))
         + quality_level
         + (2 if uses_shield else 0)
     )
@@ -54,3 +54,4 @@ class _MediumArmor(ArmorClassTemplate):
 HideArmor: ArmorClassTemplate = _MediumArmor("Hide Armor", 12)
 ChainShirt: ArmorClassTemplate = _MediumArmor("Chain Shirt", 13)
 Breastplate: ArmorClassTemplate = _MediumArmor("Breastplate", 14)
+PatchworkArmor: ArmorClassTemplate = _MediumArmor("Patchwork Armor", 14)

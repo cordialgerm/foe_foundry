@@ -2,7 +2,7 @@ from datetime import datetime
 from math import ceil
 from typing import List
 
-from ...attributes import Skills, Stats
+from ...attributes import AbilityScore, Skills
 from ...damage import AttackType, Condition, conditions
 from ...die import Die
 from ...features import ActionType, Feature
@@ -35,7 +35,7 @@ class ArtilleryPower(PowerWithStandardScoring):
             dict(
                 require_roles=MonsterRole.Artillery,
                 require_attack_types=AttackType.AllRanged(),
-                bonus_stats=[Stats.DEX, Stats.INT],
+                bonus_stats=[AbilityScore.DEX, AbilityScore.INT],
                 bonus_skills=Skills.Perception,
             )
             | score_args

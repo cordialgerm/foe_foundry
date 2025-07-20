@@ -1,10 +1,12 @@
 from datetime import datetime
 from typing import List
 
+from foe_foundry.references import creature_ref
 from foe_foundry.utils import easy_multiple_of_five
 
 from ...creature_types import CreatureType
 from ...damage import conditions
+from ...die import DieFormula
 from ...features import ActionType, Feature
 from ...power_types import PowerType
 from ...spells import CasterType
@@ -27,6 +29,7 @@ class ShamanicPower(PowerWithStandardScoring):
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 31),
         power_types: List[PowerType] | None = None,
+        reference_statblock: str = "Druid",
         **score_args,
     ):
         super().__init__(
@@ -37,7 +40,7 @@ class ShamanicPower(PowerWithStandardScoring):
             power_types=power_types or [PowerType.Magic, PowerType.Utility],
             icon=icon,
             theme="shamanic",
-            reference_statblock="Druid",
+            reference_statblock=reference_statblock,
             create_date=create_date,
             score_args=dict(
                 require_types=CreatureType.Humanoid,
@@ -151,14 +154,54 @@ class _CommuneWithAir(ShamanicPower):
         return [feature]
 
 
+class _SpiritWolves(ShamanicPower):
+    def __init__(self):
+        super().__init__(
+            name="Spirit Wolves",
+            source="Foe Foundry",
+            reference_statblock="Frost Giant Rimepriest",
+            icon="wolf-head",
+            power_level=HIGH_POWER,
+            require_cr=3,
+        )
+
+    def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
+        if stats.cr <= 3:
+            formula = DieFormula.from_expression("1d4")
+            wolf = creature_ref("Wolf")
+        elif stats.cr <= 8:
+            formula = DieFormula.from_expression("1d4")
+            wolf = creature_ref("Dire Wolf")
+        elif stats.cr <= 14:
+            formula = DieFormula.from_expression("1d4")
+            wolf = creature_ref("Winter Wolf")
+        else:
+            formula = DieFormula.from_expression("2d4")
+            wolf = creature_ref("Winter Wolf")
+
+        feature = Feature(
+            name="Spirit Wolves",
+            action=ActionType.Action,
+            replaces_multiattack=1,
+            uses=1,
+            description=f"{stats.selfref.capitalize()} summons a pack of {formula.description} {wolf} as allies. \
+                The wolves act immediately after {stats.selfref} in initiative order \
+                and use their first movement and action to appear at unoccupied spaces within 30 feet. ",
+        )
+
+        return [feature]
+
+
 CommuneWithTheAncestors: Power = _CommuneWithTheAncestors()
 CommuneWithLand: Power = _CommuneWithLand()
 CommuneWithAir: Power = _CommuneWithAir()
 SpiritWalk: Power = _SpiritWalk()
+SpiritWolves: Power = _SpiritWolves()
 
 ShamanicPowers: list[Power] = [
     CommuneWithTheAncestors,
     CommuneWithLand,
     CommuneWithAir,
     SpiritWalk,
+    SpiritWolves,
 ]

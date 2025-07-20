@@ -14,7 +14,7 @@ from ...movement import Movement
 from ...powers import PowerSelection
 from ...role_types import MonsterRole
 from ...size import Size
-from ...skills import Skills, Stats, StatScaling
+from ...skills import AbilityScore, Skills, StatScaling
 from .._template import (
     GenerationSettings,
     Monster,
@@ -65,13 +65,13 @@ class _BalorTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats=[
-                Stats.STR.scaler(StatScaling.Primary),
-                Stats.DEX.scaler(StatScaling.Medium, mod=1),
-                Stats.INT.scaler(StatScaling.Medium, mod=4),
-                Stats.WIS.scaler(StatScaling.Medium, mod=2),
-                Stats.CHA.scaler(StatScaling.Medium, mod=6),
-            ],
+            stats={
+                AbilityScore.STR: StatScaling.Primary,
+                AbilityScore.DEX: (StatScaling.Medium, 1),
+                AbilityScore.INT: (StatScaling.Medium, 4),
+                AbilityScore.WIS: (StatScaling.Medium, 2),
+                AbilityScore.CHA: (StatScaling.Medium, 6),
+            },
             hp_multiplier=settings.hp_multiplier,
             damage_multiplier=settings.damage_multiplier,
         )
@@ -113,7 +113,7 @@ class _BalorTemplate(MonsterTemplate):
         )
 
         # SAVES
-        stats = stats.grant_save_proficiency(Stats.CON, Stats.WIS)
+        stats = stats.grant_save_proficiency(AbilityScore.CON, AbilityScore.WIS)
 
         # IMMUNITIES
         stats = stats.grant_resistance_or_immunity(

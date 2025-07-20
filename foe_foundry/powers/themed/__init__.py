@@ -25,6 +25,7 @@ from . import (
     gadget,
     holy,
     honorable,
+    hunter,
     icy,
     illusory,
     monstrous,
@@ -33,6 +34,7 @@ from . import (
     psychic,
     reckless,
     serpentine,
+    shamanic,
     sneaky,
     storm,
     technique,
@@ -68,6 +70,7 @@ ThemedPowers: List[Power] = (
     + gadget.GadgetPowers
     + holy.HolyPowers
     + honorable.HonorablePowers
+    + hunter.HunterPowers
     + icy.IcyPowers
     + monstrous.MonstrousPowers
     + petrifying.PetrifyingPowers
@@ -77,6 +80,7 @@ ThemedPowers: List[Power] = (
     + serpentine.SerpentinePowers
     + sneaky.SneakyPowers
     + storm.StormPowers
+    + shamanic.ShamanicPowers
     + technique.TechniquePowers
     + teleportation.TeleportationPowers
     + temporal.TemporalPowers
