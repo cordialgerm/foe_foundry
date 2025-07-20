@@ -1,0 +1,12 @@
+/* Generator Styles */
+
+.generator-reroll {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: var(--header-font);
+}
+
+.generator-reroll .reroll-button {
+    font-size: 1.5em;
+    color: var(--bg-color);
+}
