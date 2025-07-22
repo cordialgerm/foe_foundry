@@ -66,6 +66,8 @@ const mockSkeleton: Monster = {
     image: '../img/monsters/skeleton.webp',
     backgroundImage: '../img/backgrounds/textures/undead.webp',
     creature_type: 'Undead',
+    monster_template: 'Skeleton',
+    monster_families: ['Lesser Undead'],
     size: 'Medium',
     cr: 'CR 1/4',
     tag_line: 'Fleshless Servants to Greater Undead',
@@ -77,6 +79,8 @@ const mockBasilisk: Monster = {
     image: '../img/monsters/basilisk.webp',
     backgroundImage: '../img/backgrounds/textures/monstrosity.webp',
     creature_type: 'Monstrosity',
+    monster_template: 'Basilisk',
+    monster_families: ['Petrifying Monstrosities'],
     size: 'Medium',
     cr: 'CR 4',
     tag_line: 'A fearsome monstrosity',
@@ -88,6 +92,8 @@ const mockGelatinousCube: Monster = {
     image: '../img/monsters/gelatinous-cube.webp',
     backgroundImage: '../img/backgrounds/textures/ooze.webp',
     creature_type: 'Ooze',
+    monster_template: 'Gelatinous Cube',
+    monster_families: [],
     size: 'Large',
     cr: 'CR 2',
     tag_line: 'A mindless, gelatinous mass',
@@ -99,9 +105,24 @@ const mockKnight: Monster = {
     image: '../img/monsters/knight.webp',
     backgroundImage: '../img/backgrounds/textures/humanoid.webp',
     creature_type: 'Humanoid',
+    monster_template: 'Knight',
+    monster_families: ['Fanatics & Faithful', 'Martial NPCs'],
     size: 'Medium',
     cr: 'CR 3',
     tag_line: 'A skilled warrior',
+    loadouts: mockLoadouts
+}
+const mockFrostGiant: Monster = {
+    key: 'frost-giant',
+    name: 'Frost Giant',
+    image: '../img/monsters/frost-giant.webp',
+    backgroundImage: '../img/backgrounds/textures/giant.webp',
+    creature_type: 'Giant',
+    monster_template: 'Frost Giant',
+    monster_families: ['True Giants'],
+    size: 'Medium',
+    cr: 'CR 8',
+    tag_line: 'Frozen Reavers of Blood and Battle',
     loadouts: mockLoadouts
 }
 
@@ -109,7 +130,8 @@ const monsters: Record<string, Monster> = {
     'skeleton': mockSkeleton,
     'basilisk': mockBasilisk,
     'gelatinous-cube': mockGelatinousCube,
-    'knight': mockKnight
+    'knight': mockKnight,
+    'frost-giant': mockFrostGiant
 }
 
 export class MockPowerStore implements PowerStore {

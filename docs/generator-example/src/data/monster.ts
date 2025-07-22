@@ -7,6 +7,8 @@ export interface Monster {
     image: string;
     backgroundImage: string;
     creature_type: string;
+    monster_template: string;
+    monster_families: string[];
     size: string;
     cr: string;
     tag_line: string;
