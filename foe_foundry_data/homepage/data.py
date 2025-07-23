@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from datetime import datetime
 
 
 @dataclass(kw_only=True)
@@ -9,6 +10,9 @@ class HomepageMonster:
     tagline: str
     transparent_edges: bool
     mask_css: str
+    is_new: bool
+    create_date: datetime
+    modified_date: datetime
 
 
 @dataclass(kw_only=True)

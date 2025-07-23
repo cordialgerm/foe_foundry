@@ -18,6 +18,7 @@ from .goblin import GoblinTemplate
 from .golem import GolemTemplate
 from .gorgon import GorgonTemplate
 from .guard import GuardTemplate
+from .hollow_gazer import HollowGazerTemplate
 from .hydra import HydraTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
@@ -27,7 +28,6 @@ from .manticore import ManticoreTemplate
 from .medusa import MedusaTemplate
 from .merrow import MerrowTemplate
 from .mimic import MimicTemplate
-from .nothic import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .orc import OrcTemplate
 from .owlbear import OwlbearTemplate

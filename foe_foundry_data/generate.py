@@ -8,6 +8,7 @@ def generate_monster(
     template_or_variant_key: str,
     ref_resolver: MonsterRefResolver,
     rng: np.random.Generator,
+    **kwargs,
 ) -> tuple[MonsterRef | None, Statblock | None]:
     """Generates a monster based on the provided template or variant key."""
 
@@ -32,9 +33,6 @@ def generate_monster(
     species = ref.species
 
     stats = template.generate_monster(
-        variant=variant,
-        monster=monster,
-        species=species,
-        rng=rng,
+        variant=variant, monster=monster, species=species, rng=rng, **kwargs
     ).finalize()
     return ref, stats
