@@ -137,6 +137,13 @@ export class PowerLoadout extends LitElement {
   @state()
   private selectedPower?: Power;
 
+  /**
+   * Public getter to expose the currently selected power
+   */
+  public getSelectedPower(): Power | undefined {
+    return this.selectedPower;
+  }
+
   @state()
   private dropdownOpen = false;
 

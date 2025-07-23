@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { MockMonsterStore } from '../data/mock';
+import { Power } from '../data/powers';
 import './MonsterArt';
 import './MonsterInfo';
 import './PowerLoadout';
@@ -68,7 +69,8 @@ export class MonsterCard extends LitElement {
   private handleHpChanged = (event: Event) => {
     this.dispatchEvent(new CustomEvent('monster-changed', {
       detail: {
-        changeType: 'hp-changed'
+        changeType: 'hp-changed',
+        monsterCard: this
       },
       bubbles: true,
       composed: true
@@ -79,6 +81,7 @@ export class MonsterCard extends LitElement {
     this.dispatchEvent(new CustomEvent('monster-changed', {
       detail: {
         changeType: 'damage-changed',
+        monsterCard: this
       },
       bubbles: true,
       composed: true
@@ -91,7 +94,8 @@ export class MonsterCard extends LitElement {
     this.dispatchEvent(new CustomEvent('monster-changed', {
       detail: {
         changeType: 'power-selected',
-        power
+        power,
+        monsterCard: this
       },
       bubbles: true,
       composed: true
@@ -107,6 +111,14 @@ export class MonsterCard extends LitElement {
       }
     });
   };
+
+  public getSelectedPowers(): Array<Power> {
+    const powerLoadouts = this.shadowRoot?.querySelectorAll('power-loadout');
+    if (!powerLoadouts) return [];
+    return Array.from(powerLoadouts)
+      .map((loadout: any) => (typeof loadout.getSelectedPower === 'function' ? loadout.getSelectedPower() : undefined))
+      .filter(power => power !== undefined);
+  }
 
   render() {
     const monsterStore = new MockMonsterStore();
