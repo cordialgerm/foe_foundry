@@ -40,6 +40,8 @@ class MonsterTemplate:
     environments: list[EnvironmentAffinity] = field(default_factory=list)
     is_sentient_species: bool = False
     lore_md: str | None = field(init=False)
+    create_date: datetime = field(init=False)
+    modified_date: datetime = field(init=False)
 
     def __post_init__(self):
         self.n_variant = len(self.variants)
@@ -67,6 +69,17 @@ class MonsterTemplate:
             self.lore_md = lore_md
         else:
             self.lore_md = None
+
+        # Set create_date and modified_date using helper
+        monster_file = (
+            Path.cwd()
+            / "foe_foundry"
+            / "creatures"
+            / self.key.replace("-", "_")
+            / f"{self.key.replace('-', '_')}.py"
+        )
+        self.create_date = self._get_git_date(monster_file, first_commit=True)
+        self.modified_date = self._get_git_date(monster_file, first_commit=False)
 
     @cached_property
     def image_urls(self) -> dict[str, list[Path]]:
@@ -101,40 +114,27 @@ class MonsterTemplate:
     def key(self) -> str:
         return name_to_key(self.name)
 
-    @property
-    def create_date(self) -> datetime:
-        """Get the creation date of the monster template."""
-        # Get git create date for /creatures/<monster>/<monster>.py using GitPython
-
-        monster_file = (
-            Path.cwd()
-            / "foe_foundry"
-            / "creatures"
-            / self.key.replace("-", "_")
-            / f"{self.key.replace('-', '_')}.py"
-        )
+    def _get_git_date(self, monster_file: Path, first_commit: bool = True) -> datetime:
+        """Helper to get git commit date for a file. If first_commit is True, gets the oldest commit (creation); else, gets the most recent (modified)."""
         if not monster_file.exists():
             raise ValueError(
                 f"Monster file does not exist: {monster_file}. "
                 "Ensure the monster template is correctly defined."
             )
-
         try:
             repo = Repo(Path.cwd())
-            commits = list(repo.iter_commits(paths=str(monster_file), max_count=1))
+            # first_commit=True: oldest commit, first=True; else, most recent commit, reverse=True
+            commits = list(repo.iter_commits(paths=str(monster_file)))
             if commits:
-                create_date = commits[0].committed_datetime
-                if create_date.tzinfo is None:
-                    # Make tz-aware as UTC
-                    create_date = create_date.replace(tzinfo=timezone.utc)
+                commit = commits[-1] if first_commit else commits[0]
+                date = commit.committed_datetime
+                if date.tzinfo is None:
+                    date = date.replace(tzinfo=timezone.utc)
             else:
-                create_date = datetime.now(timezone.utc)  # new file not committed yet
+                date = datetime.now(timezone.utc)
         except (GitError, Exception) as x:
-            raise ValueError(
-                f"Failed to get create date for {monster_file}: {x}"
-            ) from x
-
-        return create_date
+            raise ValueError(f"Failed to get git date for {monster_file}: {x}") from x
+        return date
 
     def __hash__(self) -> int:
         return hash(self.name)

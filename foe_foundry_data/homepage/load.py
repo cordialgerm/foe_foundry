@@ -1,6 +1,8 @@
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 from markdown import markdown
 
 from foe_foundry.creatures import AllTemplates, MonsterTemplate
@@ -57,10 +59,33 @@ def load_homepage_data() -> HomepageData:
         for m in AllTemplates
         if m.lore_md is not None
     ]
-    create_dates = np.array([m.create_date for m in monsters])
-    indexes = np.argsort(create_dates)[::-1][:3]
-    for i in indexes:
-        monsters[i].is_new = True
+
+    # Create a DataFrame for sorting
+    df = pd.DataFrame(
+        {
+            "monster": monsters,
+            "create_date": [m.create_date for m in monsters],
+            "modified_date": [m.modified_date for m in monsters],
+        }
+    )
+
+    # Sort by create_date descending, then modified_date descending
+    df_sorted = df.sort_values(
+        ["create_date", "modified_date"], ascending=[False, False]
+    )
+
+    # Mark the top 3 as new
+    for m in df_sorted.head(3)["monster"]:
+        # Set is_new based on create_date
+        # some of the older content got marked as new as part of a refactor moving many files around
+        if m.create_date >= datetime(2025, 7, 19, tzinfo=timezone.utc):
+            m.is_new = True
+
+    # Rebuild monsters list: new first, then shuffle the rest
+    new_monsters = [m for m in monsters if m.is_new]
+    old_monsters = [m for m in monsters if not m.is_new]
+    rng.shuffle(old_monsters)  # type: ignore
+    monsters = new_monsters + old_monsters
 
     blogs = load_blog_posts()
 
@@ -118,6 +143,7 @@ def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
         transparent_edges=transparent,
         mask_css=mask_css,
         create_date=monster.create_date,
+        modified_date=monster.modified_date,
         is_new=False,  # temporary, will determine which are considered "new" based on creation dates of all monsters
     )
 
