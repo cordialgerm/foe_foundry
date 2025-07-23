@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from datetime import datetime
 from pathlib import Path
 from typing import List
 from urllib.parse import urljoin
@@ -15,6 +16,7 @@ from foe_foundry.creatures import (
 )
 from foe_foundry.powers import Power, PowerLoadout
 from foe_foundry.statblocks import Statblock
+from foe_foundry.utils import name_to_key
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
 from foe_foundry.utils.image import has_transparent_edges
 
@@ -95,6 +97,11 @@ class MonsterModel:
     loadouts: list[PowerLoadoutModel]
     primary_image: str | None
     primary_image_has_transparent_edges: bool
+    create_date: datetime
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)
 
     @staticmethod
     def from_monster(
@@ -153,4 +160,5 @@ class MonsterModel:
             loadouts=loadouts,
             primary_image=primary_image,
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
+            create_date=template.create_date,
         )

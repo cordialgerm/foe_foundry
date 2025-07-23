@@ -125,6 +125,19 @@ section p a {
     width: 225px;
 }
 
+.swiper-slide.card.new::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 80px;
+    height: 80px;
+    background: url('/img/misc/new-stamp.png') no-repeat center/contain;
+    transform: rotate(-15deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
 .card-image {
     position: absolute;
     inset: 0;
