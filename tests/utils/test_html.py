@@ -46,7 +46,7 @@ BASE = "/docs/some-page"
 
 def get_attr(html, tag, attr):
     soup = BeautifulSoup(html, "html.parser")
-    return [el[attr] for el in soup.find_all(tag) if attr in el.attrs]
+    return [el[attr] for el in soup.find_all(tag) if attr in el.attrs]  # type: ignore
 
 
 def test_relative_img_src():
@@ -91,7 +91,7 @@ def test_srcset_handling():
     soup = BeautifulSoup(result, "html.parser")
     tag = soup.find("img")
     assert (
-        tag["srcset"]
+        tag["srcset"]  # type: ignore
         == "/docs/some-page/img/foo-1x.png 1x, /docs/some-page/img/foo-2x.png 2x"
     )
 
@@ -99,7 +99,7 @@ def test_srcset_handling():
 def test_data_url_ignored():
     html = '<img src="data:image/png;base64,ABCDEF==">'
     result = fix_relative_paths(html, BASE)
-    assert get_attr(result, "img", "src")[0].startswith("data:image/png")
+    assert get_attr(result, "img", "src")[0].startswith("data:image/png")  # type: ignore
 
 
 def test_fragment_link_ignored():

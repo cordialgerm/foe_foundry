@@ -19,7 +19,7 @@ def test_inline_icon():
 
 
 def test_og_image_for_icon():
-    output_dir = Path(__file__).parent / "output"
+    output_dir = Path(__file__).parent.parent / "output"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "og_favicon_test.png"
 
