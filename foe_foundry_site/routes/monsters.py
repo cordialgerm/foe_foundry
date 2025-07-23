@@ -6,8 +6,9 @@ from typing import Annotated
 
 import numpy as np
 from backports.strenum import StrEnum
-from fastapi import APIRouter, HTTPException, Query, Response
+from fastapi import APIRouter, Body, HTTPException, Query, Response
 from fastapi.responses import HTMLResponse, JSONResponse
+from pydantic import BaseModel
 
 from foe_foundry.creatures import (
     random_template_and_settings,
@@ -28,6 +29,13 @@ class MonsterFormat(StrEnum):
     @staticmethod
     def All():
         return [MonsterFormat.html, MonsterFormat.monster_only, MonsterFormat.json]
+
+
+class MonsterGenerationRequest(BaseModel):
+    monster_key: str
+    powers: list[str] | None = None
+    hp_multiplier: float | None = None
+    damage_multiplier: float | None = None
 
 
 @router.get("/random")
@@ -79,6 +87,53 @@ def get_monster(
     if stats is None or ref is None:
         raise HTTPException(
             status_code=404, detail=f"Monster not found: {template_or_variant_key}"
+        )
+    base_url = os.environ.get("SITE_URL")
+    if base_url is None:
+        raise ValueError("SITE_URL environment variable is not set")
+
+    ref = ref.resolve()
+
+    return _format_monster(
+        monster_model=MonsterModel.from_monster(
+            stats=stats,
+            template=ref.template,
+            variant=ref.variant,  # type: ignore
+            monster=ref.monster,  # type: ignore
+            species=ref.species,
+            base_url=base_url,
+        ),
+        rng=rng,
+        output=output,
+    )
+
+
+def generate_monster_from_request(
+    request: MonsterGenerationRequest = Body(...),
+    output: Annotated[
+        MonsterFormat | None, Query(title="return format", examples=MonsterFormat.All())
+    ] = None,
+):
+    rng = np.random.default_rng()
+
+    settings_args = dict()
+    if request.hp_multiplier is not None:
+        settings_args["hp_multiplier"] = request.hp_multiplier
+    if request.damage_multiplier is not None:
+        settings_args["damage_multiplier"] = request.damage_multiplier
+    if request.powers is not None:
+        settings_args["power_weights"] = {p: 1.0 for p in request.powers}
+
+    ref, stats = generate_monster(
+        template_or_variant_key=request.monster_key,
+        ref_resolver=ref_resolver,
+        rng=rng,
+        **settings_args,
+    )
+
+    if stats is None or ref is None:
+        raise HTTPException(
+            status_code=404, detail=f"Monster not found: {request.monster_key}"
         )
     base_url = os.environ.get("SITE_URL")
     if base_url is None:
