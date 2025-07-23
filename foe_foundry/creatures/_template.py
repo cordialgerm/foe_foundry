@@ -2,9 +2,12 @@ from __future__ import annotations
 
 from abc import abstractmethod
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from functools import cached_property
 from pathlib import Path
 from typing import Iterable
+
+from git import GitError, Repo
 
 from foe_foundry.attack_template import AttackTemplate
 from foe_foundry.environs import EnvironmentAffinity
@@ -97,6 +100,41 @@ class MonsterTemplate:
     @property
     def key(self) -> str:
         return name_to_key(self.name)
+
+    @property
+    def create_date(self) -> datetime:
+        """Get the creation date of the monster template."""
+        # Get git create date for /creatures/<monster>/<monster>.py using GitPython
+
+        monster_file = (
+            Path.cwd()
+            / "foe_foundry"
+            / "creatures"
+            / self.key.replace("-", "_")
+            / f"{self.key.replace('-', '_')}.py"
+        )
+        if not monster_file.exists():
+            raise ValueError(
+                f"Monster file does not exist: {monster_file}. "
+                "Ensure the monster template is correctly defined."
+            )
+
+        try:
+            repo = Repo(Path.cwd())
+            commits = list(repo.iter_commits(paths=str(monster_file), max_count=1))
+            if commits:
+                create_date = commits[0].committed_datetime
+                if create_date.tzinfo is None:
+                    # Make tz-aware as UTC
+                    create_date = create_date.replace(tzinfo=timezone.utc)
+            else:
+                create_date = datetime.now(timezone.utc)  # new file not committed yet
+        except (GitError, Exception) as x:
+            raise ValueError(
+                f"Failed to get create date for {monster_file}: {x}"
+            ) from x
+
+        return create_date
 
     def __hash__(self) -> int:
         return hash(self.name)

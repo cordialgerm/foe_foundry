@@ -68,3 +68,14 @@ def test_generate_monster_json_format():
     if response.status_code == 200:
         assert response.headers["content-type"].startswith("application/json")
         assert "statblock_html" in response.json()
+
+
+def test_get_new_monsters():
+    response = client.get("/api/v1/monsters/new?limit=3")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    assert len(data) <= 3
+    for monster in data:
+        assert "monster_key" in monster
+        assert "template_key" in monster

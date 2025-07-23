@@ -15,6 +15,7 @@ from foe_foundry.creatures import (
 )
 from foe_foundry_data.generate import generate_monster
 from foe_foundry_data.monsters import MonsterModel
+from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs import MonsterRefResolver
 
 router = APIRouter(prefix="/api/v1/monsters")
@@ -36,6 +37,11 @@ class MonsterGenerationRequest(BaseModel):
     powers: list[str] | None = None
     hp_multiplier: float | None = None
     damage_multiplier: float | None = None
+
+
+class MonsterMeta(BaseModel):
+    monster_key: str
+    template_key: str
 
 
 @router.get("/random")
@@ -70,6 +76,32 @@ def random_monster(
         base_url=base_url,
     )
     return _format_monster(monster_model=monster_model, rng=rng, output=output)
+
+
+@router.get("/new")
+def new_monsters(
+    limit: Annotated[int | None, Query(title="How many new monsters to return")],
+) -> list[MonsterMeta]:
+    """
+    Returns a list of top N new monsters that have been added recently
+    """
+    base_url = os.environ.get("SITE_URL")
+    if base_url is None:
+        raise ValueError("SITE_URL environment variable is not set")
+
+    if limit is None:
+        limit = 5
+
+    created_at = np.array(
+        [m.create_date for m in Monsters.one_of_each_monster if m.create_date]
+    )
+    indexes = np.argsort(created_at)[-1 * limit :][
+        ::-1
+    ]  # Get the last N created monsters
+    monsters = [Monsters.one_of_each_monster[i] for i in indexes]
+    return [
+        MonsterMeta(monster_key=m.key, template_key=m.template_key) for m in monsters
+    ]
 
 
 @router.get("/{template_or_variant_key}")
@@ -183,6 +215,10 @@ def _format_monster(
         return HTMLResponse(content=statblock_html)
     else:
         json_data = dict(
+            monster_meta=MonsterMeta(
+                monster_key=monster_model.key,
+                template_key=monster_model.template_key,
+            ).model_dump(mode="json"),
             statblock_html=statblock_html,
             lore_html=lore_html,
             image=img_src,

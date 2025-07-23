@@ -9,7 +9,7 @@ from .gelatinous_cube import GelatinousCubeTemplate
 from .golem import GolemTemplate
 from .knight import KnightTemplate
 from .kobold import KoboldTemplate
-from .nothic import HollowGazerTemplate
+from .hollow_gazer import HollowGazerTemplate
 from .ogre import OgreTemplate
 from .warrior import WarriorTemplate
 from .wight import WightTemplate

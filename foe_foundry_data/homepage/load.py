@@ -51,15 +51,29 @@ def load_homepage_data() -> HomepageData:
         for _, p in Powers.PowerLookup.items()
         if len(p.feature_descriptions) <= 400
     ]
+
     monsters = [
         _monster(m, random_mask.random_mask_css())
         for m in AllTemplates
         if m.lore_md is not None
     ]
+    create_dates = np.array([m.create_date for m in monsters])
+    indexes = np.argsort(create_dates)[::-1][:3]
+    for i in indexes:
+        monsters[i].is_new = True
+
     blogs = load_blog_posts()
 
     rng.shuffle(powers)  # type: ignore
-    rng.shuffle(monsters)  # type: ignore
+
+    # when shuffling monsters, start with the newest ones first, then shuffle the rest
+    # this ensures that the newest monsters are always shown first
+    # we shuffle the rest to ensure variety for things like SEO indexing
+    new_monsters = [m for m in monsters if m.is_new]
+    old_monsters = [m for m in monsters if not m.is_new]
+    rng.shuffle(old_monsters)  # type: ignore
+
+    monsters = new_monsters + old_monsters
 
     return HomepageData(
         monsters=monsters,
@@ -103,6 +117,8 @@ def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
         tagline=monster.tag_line,
         transparent_edges=transparent,
         mask_css=mask_css,
+        create_date=monster.create_date,
+        is_new=False,  # temporary, will determine which are considered "new" based on creation dates of all monsters
     )
 
 
