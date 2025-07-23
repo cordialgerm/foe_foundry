@@ -80,7 +80,7 @@ def random_monster(
 
 @router.get("/new")
 def new_monsters(
-    limit: Annotated[int | None, Query(title="How many new monsters to return")],
+    limit: Annotated[int | None, Query(title="How many new monsters to return")] = None,
 ) -> list[MonsterMeta]:
     """
     Returns a list of top N new monsters that have been added recently
