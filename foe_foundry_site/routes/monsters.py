@@ -108,6 +108,7 @@ def get_monster(
     )
 
 
+@router.post("/generate")
 def generate_monster_from_request(
     request: MonsterGenerationRequest = Body(...),
     output: Annotated[

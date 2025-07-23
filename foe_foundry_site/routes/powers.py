@@ -9,7 +9,6 @@ from foe_foundry.utils import name_to_key
 from foe_foundry_data.powers import PowerModel, Powers
 from foe_foundry_data.powers import search_powers as search_powers_core
 
-# note - lifespan doesn't work on APIRouter currently
 router = APIRouter(prefix="/api/v1/powers")
 
 
@@ -115,7 +114,7 @@ def search_powers(
 
     # if a specific filter is requested we don't really need a limit
     # this is because we don't have to do a full text search
-    if creature_type or role or theme:
+    if keyword is None and (creature_type or role or theme):
         limit = 100
 
     if keyword:
