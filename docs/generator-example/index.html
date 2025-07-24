@@ -32,7 +32,7 @@
             <!-- Statblock Panel -->
             <div class="col-md-7">
                 <h2>Event Log</h2>
-                <textarea id="event-log" class="form-control" rows="10" readonly></textarea>
+                <div id="statblock-holder"></div>
             </div>
         </div>
     </div>
@@ -41,10 +41,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="src/main.ts"></script>
     <script>
-        document.querySelector('monster-card').addEventListener('monster-changed', (event) => {
-            const logBox = document.getElementById('event-log');
-            const eventDetails = JSON.stringify(event.detail, null, 2);
-            logBox.value += `Event: ${event.type}\nDetails: ${eventDetails}\n\n`;
+
+        const statblockHolder = document.getElementById('statblock-holder');
+
+        document.querySelectorAll('monster-card').forEach(card => {
+            card.addEventListener('monster-changed', async (event) => {
+                const monsterCard = event.detail.monsterCard;
+                if (!monsterCard) return;
+
+                // Get selected powers
+                const selectedPowers = monsterCard.getSelectedPowers().map(p => p?.key).filter(Boolean);
+                const monsterKey = monsterCard.monsterKey;
+
+                // Build request payload
+                const payload = {
+                    monster_key: monsterKey,
+                    powers: selectedPowers.length ? selectedPowers : undefined
+                };
+
+                // POST to API
+                try {
+                    const response = await fetch('https://foefoundry.com/api/v1/monsters/generate', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    const result = await response.json();
+                    const statblock_html = result["statblock_html"];
+
+                    statblockHolder.innerHTML = statblock_html;
+                } catch (err) {
+                    statblockHolder.innerHTML = `<div class="alert alert-danger">API Error: ${err}</div>`;
+                }
+            });
         });
     </script>
 </body>
