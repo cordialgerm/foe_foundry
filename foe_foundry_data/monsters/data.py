@@ -65,6 +65,7 @@ class PowerRef:
 
 @dataclass(kw_only=True)
 class PowerLoadoutModel:
+    key: str
     name: str
     flavor_text: str
     selection_count: int
@@ -75,6 +76,7 @@ class PowerLoadoutModel:
     @staticmethod
     def from_loadout(loadout: PowerLoadout):
         return PowerLoadoutModel(
+            key=loadout.key,
             name=loadout.name,
             flavor_text=loadout.flavor_text,
             selection_count=loadout.selection_count,

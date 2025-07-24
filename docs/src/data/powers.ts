@@ -1,7 +1,7 @@
 export interface Power {
     key: string;
     name: string;
-    power_category: string;
+    powerCategory: string;
     icon: string;
 }
 

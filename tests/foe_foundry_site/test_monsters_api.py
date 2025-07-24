@@ -51,12 +51,11 @@ def test_generate_monster_missing_key():
 
 def test_generate_monster_html_format():
     payload = {
-        "monster_key": "aboleth_bf",
+        "monster_key": "knight",
     }
     response = client.post("/api/v1/monsters/generate?output=html", json=payload)
-    assert response.status_code in (200, 404)
-    if response.status_code == 200:
-        assert response.headers["content-type"].startswith("text/html")
+    assert response.status_code == 200
+    assert response.headers["content-type"].startswith("text/html")
 
 
 def test_generate_monster_json_format():
@@ -79,3 +78,14 @@ def test_get_new_monsters():
     for monster in data:
         assert "monster_key" in monster
         assert "template_key" in monster
+
+
+def test_get_loadout():
+    response = client.get("/api/v1/monsters/knight/loadouts")
+    assert response.status_code == 200
+    data = response.json()
+    assert isinstance(data, list)
+    for loadout in data:
+        assert "name" in loadout
+        assert "powers" in loadout
+        assert isinstance(loadout["powers"], list)
