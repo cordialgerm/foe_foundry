@@ -36,54 +36,6 @@
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="src/main.ts"></script>
-    <script>
-
-        const statblockHolder = document.getElementById('statblock-holder');
-        const monsters = initializeMockMonsterStore();
-
-        document.querySelectorAll('monster-card').forEach(card => {
-            card.addEventListener('monster-changed', async (event) => {
-                const monsterCard = event.detail.monsterCard;
-                if (!monsterCard) return;
-
-                statblockHolder.innerHTML = ''; // Clear previous statblock
-
-                // Get selected powers
-                const selectedPowers = monsterCard.getSelectedPowers().map(p => p?.key).filter(Boolean);
-
-                const request = {
-                    monsterKey: monsterCard.monsterKey,
-                    powers: selectedPowers,
-                    hpMultiplier: monsterCard.hpMultiplier,
-                    damageMultiplier: monsterCard.damageMultiplier,
-                }
-
-                // Highlight changed powers if present in event.detail.power
-                let change = null;
-                if (event.detail.power && event.detail.power.key) {
-                    change = {
-                        type: 'power-changed',
-                        power: event.detail.power
-
-                    }
-                }
-                else if (event.detail.changeType === 'damage-changed') {
-                    change = {
-                        type: 'damage-changed',
-                    }
-                }
-                else if (event.detail.changeType === 'hp-changed') {
-                    change = {
-                        type: 'hp-changed',
-                    }
-                }
-
-                const statblockElement = await monsters.getStatblock(request, change);
-
-                statblockHolder.appendChild(statblockElement);
-            });
-        });
-    </script>
 </body>
 
 </html>
