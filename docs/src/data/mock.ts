@@ -205,6 +205,13 @@ export class MockMonsterStore implements MonsterStore {
             });
         }
 
+        // Once connected, start timer
+        setTimeout(() => {
+            statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
+            statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
+            statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
+        }, 5000);
+
         return statblockElement;
     }
 }
