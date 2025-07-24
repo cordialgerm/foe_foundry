@@ -1,25 +1,29 @@
 {% macro property_short(name,text, block = False) -%}
 {% if text|length > 0 and block %}
-<p>
+<p data-statblock-property="{{ name | sluggify }}">
     <strong>{{name}}</strong>
     {{text}}
 </p>
 {% elif text|length > 0 and not block%}
-<strong>{{name}}</strong>
-{{text}}
+<span data-statblock-property="{{ name | sluggify }}">
+    <strong>{{name}}</strong>
+    {{text}}
+</span>
 {% endif %}
 {%- endmacro %}
 
 
 {% macro property(name,text, block = False) -%}
 {% if text|length > 0 and block %}
-<p>
+<p data-statblock-property="{{ name | sluggify }}">
     <strong>{{name | fix_punctuation}}</strong>
     {{text | fix_punctuation}}
 </p>
 {% elif text|length > 0 and not block %}
-<strong>{{name | fix_punctuation}}</strong>
-{{text | fix_punctuation}}
+<span data-statblock-property="{{ name | sluggify }}">
+    <strong>{{name | fix_punctuation}}</strong>
+    {{text | fix_punctuation}}
+</span>
 {% endif %}
 {%- endmacro %}
 
@@ -32,7 +36,7 @@
 
 {% macro attack_block(display_name, attack_text) -%}
 
-<p>
+<p data-statblock-property="attack">
     <strong>{{display_name | fix_punctuation}}</strong>
     {{attack_text | fix_punctuation | markdown_no_wrapping_p}}
 </p>

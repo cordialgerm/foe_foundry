@@ -52,6 +52,9 @@ export class MonsterCard extends LitElement {
     }
   `;
 
+  private hpRating: number = 3;
+  private damageRating: number = 3;
+
   connectedCallback() {
     super.connectedCallback();
     this.addEventListener('hp-changed', this.handleHpChanged);
@@ -66,10 +69,30 @@ export class MonsterCard extends LitElement {
     this.removeEventListener('power-selected', this.handlePowerSelected);
   }
 
+  /**
+   * Converts a rating value to a multiplier
+   */
+  private ratingToMultiplier(rating: number): number {
+    switch (rating) {
+      case 1: return 0.75;
+      case 2: return 0.85;
+      case 3: return 1.0;
+      case 4: return 1.15;
+      case 5: return 1.25;
+      default: return 1.0;
+    }
+  }
+
   private handleHpChanged = (event: Event) => {
+    console.log('HP changed event:', event);
+    const customEvent = event as CustomEvent;
+    const newRating = customEvent.detail?.score ?? 3;
+    this.hpRating = newRating;
+    const hp_multiplier = this.ratingToMultiplier(newRating);
     this.dispatchEvent(new CustomEvent('monster-changed', {
       detail: {
         changeType: 'hp-changed',
+        hp_multiplier,
         monsterCard: this
       },
       bubbles: true,
@@ -78,9 +101,15 @@ export class MonsterCard extends LitElement {
   };
 
   private handleDamageChanged = (event: Event) => {
+    console.log('Damage changed event:', event);
+    const customEvent = event as CustomEvent;
+    const newRating = customEvent.detail?.score ?? 3;
+    this.damageRating = newRating;
+    const damage_multiplier = this.ratingToMultiplier(newRating);
     this.dispatchEvent(new CustomEvent('monster-changed', {
       detail: {
         changeType: 'damage-changed',
+        damage_multiplier,
         monsterCard: this
       },
       bubbles: true,
@@ -118,6 +147,17 @@ export class MonsterCard extends LitElement {
     return Array.from(powerLoadouts)
       .map((loadout: any) => (typeof loadout.getSelectedPower === 'function' ? loadout.getSelectedPower() : undefined))
       .filter(power => power !== undefined);
+  }
+
+  /**
+   * Expose current multipliers for downstream consumers
+   */
+  public get hpMultiplier(): number {
+    return this.ratingToMultiplier(this.hpRating);
+  }
+
+  public get damageMultiplier(): number {
+    return this.ratingToMultiplier(this.damageRating);
   }
 
   render() {

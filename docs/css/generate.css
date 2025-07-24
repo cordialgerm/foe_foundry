@@ -10,3 +10,7 @@
     font-size: 1.5em;
     color: var(--bg-color);
 }
+
+#statblock-holder {
+    margin-top: 1rem;
+}
