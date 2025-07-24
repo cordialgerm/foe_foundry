@@ -93,6 +93,11 @@
      margin: 1rem 0;
  }
 
+ .power-changed {
+     color: yellow !important;
+     font-weight: bold !important;
+ }
+
  @keyframes flash {
      0% {
          background-color: #444;

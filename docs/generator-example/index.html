@@ -69,7 +69,20 @@
                     const result = await response.json();
                     const statblock_html = result["statblock_html"];
 
-                    statblockHolder.innerHTML = statblock_html;
+                    // Insert HTML into a temporary container for DOM manipulation
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = statblock_html;
+
+                    // Highlight changed powers if present in event.detail.power
+                    if (event.detail.power && event.detail.power.key) {
+                        const changedKey = event.detail.power.key;
+                        // Find all elements with matching data-power-key
+                        tempDiv.querySelectorAll(`[data-power-key="${changedKey}"]`).forEach(el => {
+                            el.classList.add('power-changed');
+                        });
+                    }
+
+                    statblockHolder.innerHTML = tempDiv.innerHTML;
                 } catch (err) {
                     statblockHolder.innerHTML = `<div class="alert alert-danger">API Error: ${err}</div>`;
                 }
