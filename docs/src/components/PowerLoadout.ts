@@ -25,8 +25,8 @@ export class PowerLoadout extends LitElement {
     }
 
     .power-slot-block {
-      margin-bottom: 1rem;
-      padding: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
       border: 1px solid var(--bs-secondary);
       border-radius: 0.375rem;
       background-color: var(--bs-dark);
@@ -43,15 +43,15 @@ export class PowerLoadout extends LitElement {
 
     .power-slot-title {
       margin-bottom: 0;
-      margin-top: 0.25rem;
-      margin-right: 0.5rem;
+      margin-top: 0;
+      margin-right: 0;
       font-size: 1.25rem;
       font-weight: 500;
     }
 
     .power-slot-flavor {
       font-style: italic;
-      font-size: 0.875rem;
+      font-size: 0.8rem;
     }
 
     .power-button {
@@ -69,14 +69,14 @@ export class PowerLoadout extends LitElement {
       transition: all 0.15s ease-in-out;
     }
 
-    .power-button:hover {
+    .power-button:hover, .dropdown-item:hover {
       background-color: var(--bs-light);
       color: var(--bs-dark);
     }
 
     .power-icon {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 1.5rem;
+      height: 1.5rem;
       flex-shrink: 0;
       fill: currentColor;
     }
@@ -105,11 +105,6 @@ export class PowerLoadout extends LitElement {
       width: 100%;
       text-align: start;
       transition: background-color 0.15s ease-in-out;
-    }
-
-    .dropdown-item:hover {
-      background-color: var(--bs-secondary);
-      color: var(--bs-light);
     }
 
     .dropdown-item:focus {

@@ -29,7 +29,7 @@ export class MonsterCard extends LitElement {
     :host {
       display: block;
       margin: 1rem;
-      padding: 1rem;
+      padding: 0.5rem;
       border: 1px solid var(--bs-secondary);
       border-radius: 0.375rem;
       background-color: var(--bs-dark);

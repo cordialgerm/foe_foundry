@@ -90,6 +90,11 @@ export class ApiMonsterStore implements MonsterStore {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         });
+
+        if (!response.ok) {
+            throw new Error(`Failed to generate statblock: ${response.statusText}`);
+        }
+
         const result = await response.json();
         const statblock_html = result["statblock_html"];
         const parser = new DOMParser();

@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (statblockHolder) statblockHolder.innerHTML = '';
 
             // Get selected powers
-            const selectedPowers = monsterCard.getSelectedPowers().map((p: any) => p?.key).filter(Boolean);
+            const selectedPowers = monsterCard.getSelectedPowers();
 
             const request = {
                 monsterKey: monsterCard.monsterKey,
