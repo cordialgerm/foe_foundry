@@ -64,6 +64,10 @@
     <div class="container pamphlet-container">
         {% include "homepage.j2.html" %}
     </div>
+    {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
+    <div class="container pamphlet-container">
+        {% include "generate.j2.html" %}
+    </div>
     {% else %}
     <div class="container pamphlet-container">
         <div class="row justify-content-center">
@@ -82,7 +86,6 @@
     {% include "partials/footer.html" %}
 
     {% include "partials/scripts.html" %}
-
 
     {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}

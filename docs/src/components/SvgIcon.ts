@@ -48,7 +48,7 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
         let url = src;
         if (!src.endsWith('.svg')) {
             // Assume it's an icon name and convert to URL
-            url = `img/icons/${src}.svg`;
+            url = `/img/icons/${src}.svg`;
         }
 
         if (svgCache.has(url)) {
