@@ -155,9 +155,10 @@ class MonsterModel:
             for loadout in power_selection.loadouts
         ]
 
-        background_image_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "textures"
-        background_image = f"{stats.creature_type.value.lower()}.webp"
-        background_image_path = background_image_dir / background_image
+        background_image = (
+            f"img/backgrounds/textures/{stats.creature_type.value.lower()}.webp"
+        )
+        background_image_path = Path.cwd() / "docs" / background_image
         if not background_image_path.exists():
             background_image = None
 
@@ -174,7 +175,7 @@ class MonsterModel:
             images=all_images,
             loadouts=loadouts,
             primary_image=primary_image,
-            background_image=background_image,
+            background_image=urljoin(base_url, background_image),
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
             create_date=template.create_date,
         )

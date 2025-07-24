@@ -1,6 +1,16 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
 import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest } from './monster';
 
+function formatCr(cr: string | number): string {
+    if (typeof cr === 'string') return cr;
+    switch (cr) {
+        case 0.125: return 'CR ⅛';
+        case 0.25: return 'CR ¼';
+        case 0.5: return 'CR ½';
+        default: return `CR ${cr}`;
+    }
+}
+
 export class ApiPowerStore implements PowerStore {
 
     async getPowerLoadouts(monsterKey: string): Promise<PowerLoadout[] | null> {
@@ -48,7 +58,7 @@ export class ApiMonsterStore implements MonsterStore {
             monsterTemplate: data.template_key,
             monsterFamilies: [], // Not present in API, set empty or infer if possible
             size: data.size,
-            cr: typeof data.cr === 'string' ? data.cr : `CR ${data.cr}`,
+            cr: formatCr(data.cr),
             tagLine: '', // Not present in API, set empty or infer if possible
             loadouts: (data.loadouts || []).map((loadout: any) => ({
                 key: loadout.key,
