@@ -7,19 +7,19 @@ const mockPowers: Record<string, Power[]> = {
         {
             key: 'skeletal-reconstruction',
             name: 'Skeletal Reconstruction',
-            power_category: 'healing',
+            powerCategory: 'healing',
             icon: 'raise-skeleton'
         },
         {
             key: 'bone-spear',
             name: 'Bone Spear',
-            power_category: 'attack',
+            powerCategory: 'attack',
             icon: 'spine-arrow'
         },
         {
             key: 'undead-resilience',
             name: 'Undead Resilience',
-            power_category: 'defense',
+            powerCategory: 'defense',
             icon: 'raise-zombie'
         }
     ],
@@ -27,13 +27,13 @@ const mockPowers: Record<string, Power[]> = {
         {
             key: 'coordinated-strike',
             name: 'Coordinated Strike',
-            power_category: 'attack',
+            powerCategory: 'attack',
             icon: 'switch-weapons'
         },
         {
             key: 'battle-fury',
             name: 'Battle Fury',
-            power_category: 'buff',
+            powerCategory: 'buff',
             icon: 'wind-hole'
         }
     ]
@@ -65,12 +65,12 @@ const mockSkeleton: Monster = {
     name: 'Skeleton',
     image: '../img/monsters/skeleton.webp',
     backgroundImage: '../img/backgrounds/textures/undead.webp',
-    creature_type: 'Undead',
-    monster_template: 'Skeleton',
-    monster_families: ['Lesser Undead'],
+    creatureType: 'Undead',
+    monsterTemplate: 'Skeleton',
+    monsterFamilies: ['Lesser Undead'],
     size: 'Medium',
     cr: 'CR 1/4',
-    tag_line: 'Fleshless Servants to Greater Undead',
+    tagLine: 'Fleshless Servants to Greater Undead',
     loadouts: mockLoadouts
 };
 const mockBasilisk: Monster = {
@@ -78,12 +78,12 @@ const mockBasilisk: Monster = {
     name: 'Basilisk',
     image: '../img/monsters/basilisk.webp',
     backgroundImage: '../img/backgrounds/textures/monstrosity.webp',
-    creature_type: 'Monstrosity',
-    monster_template: 'Basilisk',
-    monster_families: ['Petrifying Monstrosities'],
+    creatureType: 'Monstrosity',
+    monsterTemplate: 'Basilisk',
+    monsterFamilies: ['Petrifying Monstrosities'],
     size: 'Medium',
     cr: 'CR 4',
-    tag_line: 'A fearsome monstrosity',
+    tagLine: 'A fearsome monstrosity',
     loadouts: mockLoadouts
 };
 const mockGelatinousCube: Monster = {
@@ -91,12 +91,12 @@ const mockGelatinousCube: Monster = {
     name: 'Gelatinous Cube',
     image: '../img/monsters/gelatinous-cube.webp',
     backgroundImage: '../img/backgrounds/textures/ooze.webp',
-    creature_type: 'Ooze',
-    monster_template: 'Gelatinous Cube',
-    monster_families: [],
+    creatureType: 'Ooze',
+    monsterTemplate: 'Gelatinous Cube',
+    monsterFamilies: [],
     size: 'Large',
     cr: 'CR 2',
-    tag_line: 'A mindless, gelatinous mass',
+    tagLine: 'A mindless, gelatinous mass',
     loadouts: mockLoadouts
 }
 const mockKnight: Monster = {
@@ -104,12 +104,12 @@ const mockKnight: Monster = {
     name: 'Knight',
     image: '../img/monsters/knight.webp',
     backgroundImage: '../img/backgrounds/textures/humanoid.webp',
-    creature_type: 'Humanoid',
-    monster_template: 'Knight',
-    monster_families: ['Fanatics & Faithful', 'Martial NPCs'],
+    creatureType: 'Humanoid',
+    monsterTemplate: 'Knight',
+    monsterFamilies: ['Fanatics & Faithful', 'Martial NPCs'],
     size: 'Medium',
     cr: 'CR 3',
-    tag_line: 'A skilled warrior',
+    tagLine: 'A skilled warrior',
     loadouts: mockLoadouts
 }
 const mockFrostGiant: Monster = {
@@ -117,12 +117,12 @@ const mockFrostGiant: Monster = {
     name: 'Frost Giant',
     image: '../img/monsters/frost-giant.webp',
     backgroundImage: '../img/backgrounds/textures/giant.webp',
-    creature_type: 'Giant',
-    monster_template: 'Frost Giant',
-    monster_families: ['True Giants'],
+    creatureType: 'Giant',
+    monsterTemplate: 'Frost Giant',
+    monsterFamilies: ['True Giants'],
     size: 'Medium',
     cr: 'CR 8',
-    tag_line: 'Frozen Reavers of Blood and Battle',
+    tagLine: 'Frozen Reavers of Blood and Battle',
     loadouts: mockLoadouts
 }
 
