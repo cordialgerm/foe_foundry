@@ -11,7 +11,7 @@ from fastapi.staticfiles import StaticFiles
 from foe_foundry_data.powers import load_power_index, search_powers
 
 from .logconfig import setup_logging
-from .routes import powers, statblocks
+from .routes import monsters, powers, statblocks
 
 setup_logging()
 log = logging.getLogger(__name__)
@@ -46,6 +46,7 @@ app.add_middleware(
 
 app.include_router(powers.router)
 app.include_router(statblocks.router)
+app.include_router(monsters.router)
 
 site_dir = Path(__file__).parent.parent / "site"
 

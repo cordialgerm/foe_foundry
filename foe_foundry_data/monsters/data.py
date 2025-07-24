@@ -90,6 +90,9 @@ class PowerLoadoutModel:
 class MonsterModel:
     name: str
     cr: float
+    size: str
+    tag_line: str
+    creature_type: str
     template_key: str
     variant_key: str
 
@@ -98,6 +101,7 @@ class MonsterModel:
     images: list[str]
     loadouts: list[PowerLoadoutModel]
     primary_image: str | None
+    background_image: str | None = None
     primary_image_has_transparent_edges: bool
     create_date: datetime
 
@@ -151,9 +155,18 @@ class MonsterModel:
             for loadout in power_selection.loadouts
         ]
 
+        background_image_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "textures"
+        background_image = f"{stats.creature_type.value.lower()}.webp"
+        background_image_path = background_image_dir / background_image
+        if not background_image_path.exists():
+            background_image = None
+
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
+            size=stats.size.name,
+            tag_line=template.tag_line,
+            creature_type=stats.creature_type.name,
             template_key=stats.template_key,
             variant_key=stats.variant_key,
             statblock_html=statblock_html,
@@ -161,6 +174,7 @@ class MonsterModel:
             images=all_images,
             loadouts=loadouts,
             primary_image=primary_image,
+            background_image=background_image,
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
             create_date=template.create_date,
         )

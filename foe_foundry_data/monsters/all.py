@@ -1,3 +1,4 @@
+import os
 from functools import cached_property
 
 from foe_foundry.creatures import AllTemplates
@@ -10,9 +11,10 @@ from .data import MonsterModel
 class _MonsterCache:
     @cached_property
     def one_of_each_monster(self) -> list[MonsterModel]:
-        base_url = (
-            "http://localhost:8000"  # this value shouldn't actually be needed here
-        )
+        base_url = os.environ.get("SITE_URL")
+        if base_url is None:
+            raise ValueError("SITE_URL environment variable is not set")
+
         monsters = []
         for template in AllTemplates:
             for variant in template.variants:

@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { initializeMockPowerStore } from '../data/mock';
+import { initializePowerStore } from '../data/api';
 import { PowerLoadout as PowerLoadoutData, Power } from '../data/powers';
 import { Task } from '@lit/task';
 import './SvgIcon';
@@ -12,7 +12,7 @@ export class PowerLoadout extends LitElement {
   private _loadoutsTask = new Task(this, {
     task: async ([monsterKey], { signal }) => {
       // Simulate async fetch from store
-      const store = initializeMockPowerStore();
+      const store = initializePowerStore();
       const loadouts = await store.getPowerLoadouts(monsterKey);
       return loadouts || [];
     },

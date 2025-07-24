@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { MockMonsterStore } from '../data/mock';
+import { initializeMonsterStore } from '../data/api';
 import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
 import { Task } from '@lit/task';
@@ -15,7 +15,7 @@ export class MonsterCard extends LitElement {
   // Use Lit Task for async monster loading
   private _monsterTask = new Task(this, {
     task: async ([monsterKey], { signal }) => {
-      const store = new MockMonsterStore();
+      const store = initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
       return monster;
     },
@@ -192,8 +192,8 @@ export class MonsterCard extends LitElement {
             </button>
             <monster-info
               name="${monster.name}"
-              type="${monster.creature_type}"
-              tag="${monster.tag_line}"
+              type="${monster.creatureType}"
+              tag="${monster.tagLine}"
               cr="${monster.cr}"
               hp-rating="3"
               damage-rating="3"
