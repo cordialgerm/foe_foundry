@@ -1,7 +1,9 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { MockMonsterStore } from '../data/mock';
+import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
+import { Task } from '@lit/task';
 import './MonsterArt';
 import './MonsterInfo';
 import './PowerLoadout';
@@ -9,6 +11,17 @@ import './SvgIcon';
 
 @customElement('monster-card')
 export class MonsterCard extends LitElement {
+
+  // Use Lit Task for async monster loading
+  private _monsterTask = new Task(this, {
+    task: async ([monsterKey], { signal }) => {
+      const store = new MockMonsterStore();
+      const monster = await store.getMonster(monsterKey);
+      return monster;
+    },
+    args: () => [this.monsterKey]
+  });
+
   @property({ type: String, attribute: 'monster-key' })
   monsterKey = '';
 
@@ -161,51 +174,49 @@ export class MonsterCard extends LitElement {
   }
 
   render() {
-    const monsterStore = new MockMonsterStore();
-    const monster = monsterStore.getMonster(this.monsterKey);
-
-    if (!monster) {
-      return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
-    }
-
-    return html`
-    <div class="monster-card">
-        <button
-          class="randomize-button"
-          @click=${this.handleRandomizeAll}
-          title="Randomize all powers"
-        >
-          <svg-icon
-            class="randomize-icon"
-            src="dice-twenty-faces-twenty"
-          ></svg-icon>
-        </button>
-
-        <monster-info
-          name="${monster.name}"
-          type="${monster.creature_type}"
-          tag="${monster.tag_line}"
-          cr="${monster.cr}"
-          hp-rating="3"
-          damage-rating="3"
-        ></monster-info>
-
-
-        <monster-art
-          monster-image="${monster.image}"
-        background-image="${monster.backgroundImage}"
-          background-color="rgba(255, 255, 255, 0.55)"
-        ></monster-art>
-
-        ${monster.loadouts.map(
-      loadout => html`
-            <power-loadout
-              monster-key="${monster.key}"
-              loadout-key="${loadout.key}"
-            ></power-loadout>
-          `
-    )}
-      </div>
-    `;
+    return this._monsterTask.render({
+      pending: () => html`<p>Loading monster...</p>`,
+      complete: (monster: Monster | null) => {
+        if (!monster) {
+          return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
+        }
+        return html`
+          <div class="monster-card">
+            <button
+              class="randomize-button"
+              @click=${this.handleRandomizeAll}
+              title="Randomize all powers"
+            >
+              <svg-icon
+                class="randomize-icon"
+                src="dice-twenty-faces-twenty"
+              ></svg-icon>
+            </button>
+            <monster-info
+              name="${monster.name}"
+              type="${monster.creature_type}"
+              tag="${monster.tag_line}"
+              cr="${monster.cr}"
+              hp-rating="3"
+              damage-rating="3"
+            ></monster-info>
+            <monster-art
+              monster-image="${monster.image}"
+              background-image="${monster.backgroundImage}"
+              background-color="rgba(255, 255, 255, 0.55)"
+            ></monster-art>
+            ${monster.loadouts.map(
+          loadout => html`
+                <power-loadout
+                  monster-key="${monster.key}"
+                  loadout-key="${loadout.key}"
+                ></power-loadout>
+              `
+        )}
+          </div>
+        `;
+      },
+      error: (e) => html`<p>Error loading monster: ${e}</p>`
+    });
   }
 }

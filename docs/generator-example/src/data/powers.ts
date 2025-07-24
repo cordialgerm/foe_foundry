@@ -17,5 +17,5 @@ export interface PowerLoadout {
 
 export interface PowerStore {
 
-    getPowerLoadouts(monsterKey: string): PowerLoadout[] | null;
+    getPowerLoadouts(monsterKey: string): Promise<PowerLoadout[] | null>;
 }

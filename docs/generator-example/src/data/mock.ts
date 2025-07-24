@@ -136,20 +136,22 @@ const monsters: Record<string, Monster> = {
 
 export class MockPowerStore implements PowerStore {
 
-    getPowerLoadouts(monsterKey: string): PowerLoadout[] | null {
-
+    async getPowerLoadouts(monsterKey: string): Promise<PowerLoadout[] | null> {
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 200));
         const monsters = initializeMockMonsterStore();
-        const monster = monsters.getMonster(monsterKey);
+        const monster = await monsters.getMonster(monsterKey);
         if (!monster) {
             return null;
         }
-
         return mockLoadouts;
     }
 }
 
 export class MockMonsterStore implements MonsterStore {
-    getMonster(key: string): Monster | null {
+    async getMonster(key: string): Promise<Monster | null> {
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 200));
         return monsters[key] || null;
     }
 }

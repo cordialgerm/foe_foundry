@@ -16,5 +16,5 @@ export interface Monster {
 }
 
 export interface MonsterStore {
-    getMonster(key: string): Monster | null;
+    getMonster(key: string): Promise<Monster | null>;
 }

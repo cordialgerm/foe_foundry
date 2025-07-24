@@ -2,10 +2,23 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { initializeMockPowerStore } from '../data/mock';
 import { PowerLoadout as PowerLoadoutData, Power } from '../data/powers';
+import { Task } from '@lit/task';
 import './SvgIcon';
 
 @customElement('power-loadout')
 export class PowerLoadout extends LitElement {
+
+  // Use Lit Task for async loadout fetching
+  private _loadoutsTask = new Task(this, {
+    task: async ([monsterKey], { signal }) => {
+      // Simulate async fetch from store
+      const store = initializeMockPowerStore();
+      const loadouts = await store.getPowerLoadouts(monsterKey);
+      return loadouts || [];
+    },
+    args: () => [this.monsterKey]
+  });
+
   static styles = css`
     :host {
       display: block;
@@ -255,12 +268,18 @@ export class PowerLoadout extends LitElement {
   }
 
   render() {
-    const powerStore = initializeMockPowerStore();
-    const loadouts = powerStore.getPowerLoadouts(this.monsterKey) || [];
-    const loadout = loadouts.find(l => l.key === this.loadoutKey);
-    if (!loadout) {
-      return html`<p>No loadout found for key "${this.loadoutKey}"</p>`;
-    }
-    return this.renderLoadoutContent(loadout);
+    return this._loadoutsTask.render({
+      pending: () => html`<p>Loading loadouts...</p>`,
+      complete: (loadouts) => {
+        // Convert to mutable array for .find
+        const arr = Array.isArray(loadouts) ? [...loadouts] : [];
+        const loadout = arr.find(l => l.key === this.loadoutKey);
+        if (!loadout) {
+          return html`<p>No loadout found for key "${this.loadoutKey}"</p>`;
+        }
+        return this.renderLoadoutContent(loadout);
+      },
+      error: (e) => html`<p>Error loading loadouts: ${e}</p>`
+    });
   }
 }
