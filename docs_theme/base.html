@@ -49,7 +49,8 @@
     {% include "partials/analytics.html" %}
 
     <script>
-        var base_url = {{ base_url| tojson }}, shortcuts = {};
+        var base_url = {{ base_url | tojson }}, shortcuts = {};
+        window.baseUrl = "";
     </script>
 
 </head>

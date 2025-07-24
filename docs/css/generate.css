@@ -14,3 +14,9 @@
 #statblock-holder {
     margin-top: 1rem;
 }
+
+.hp-changed,
+.damage-changed,
+.power-changed {
+    color: yellow;
+}

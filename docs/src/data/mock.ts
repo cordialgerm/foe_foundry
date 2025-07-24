@@ -168,8 +168,9 @@ export class MockMonsterStore implements MonsterStore {
         };
 
         // POST to API
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
 
-        const response = await fetch('https://foefoundry.com/api/v1/monsters/generate', {
+        const response = await fetch(`${baseUrl}/api/v1/monsters/generate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
