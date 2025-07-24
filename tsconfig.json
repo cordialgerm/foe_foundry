@@ -7,8 +7,8 @@
             "ES2020"
         ],
         "moduleResolution": "Node",
-        "outDir": "site/generator-example/js",
-        "rootDir": "docs/generator-example/src",
+        "outDir": "site/js",
+        "rootDir": "docs/src",
         "strict": true,
         "experimentalDecorators": true,
         "useDefineForClassFields": false,
