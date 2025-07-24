@@ -97,7 +97,6 @@ export class MonsterCard extends LitElement {
   }
 
   private handleHpChanged = (event: Event) => {
-    console.log('HP changed event:', event);
     const customEvent = event as CustomEvent;
     const newRating = customEvent.detail?.score ?? 3;
     this.hpRating = newRating;
@@ -114,7 +113,6 @@ export class MonsterCard extends LitElement {
   };
 
   private handleDamageChanged = (event: Event) => {
-    console.log('Damage changed event:', event);
     const customEvent = event as CustomEvent;
     const newRating = customEvent.detail?.score ?? 3;
     this.damageRating = newRating;

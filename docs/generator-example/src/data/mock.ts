@@ -1,5 +1,5 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
-import { Monster, MonsterStore } from './monster';
+import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest } from './monster';
 
 // Mock data based on generator_old.html
 const mockPowers: Record<string, Power[]> = {
@@ -149,10 +149,62 @@ export class MockPowerStore implements PowerStore {
 }
 
 export class MockMonsterStore implements MonsterStore {
+
+
     async getMonster(key: string): Promise<Monster | null> {
         // Simulate network delay
         await new Promise(resolve => setTimeout(resolve, 200));
         return monsters[key] || null;
+    }
+
+    async getStatblock(request: StatblockRequest, change: StatblockChange | null): Promise<HTMLElement> {
+
+        // Build request payload
+        const payload = {
+            monster_key: request.monsterKey,
+            powers: request.powers,
+            hp_multiplier: request.hpMultiplier,
+            damage_multiplier: request.damageMultiplier
+        };
+
+        // POST to API
+
+        const response = await fetch('https://foefoundry.com/api/v1/monsters/generate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const result = await response.json();
+        const statblock_html = result["statblock_html"];
+
+        // Insert HTML into a temporary container for DOM manipulation
+        const parser = new DOMParser();
+        const statblockElement = parser.parseFromString(statblock_html, 'text/html').body.firstElementChild as HTMLElement;
+
+        // Highlight changed powers if present in change.changedPower
+        if (change?.changedPower) {
+            const changedKey = change.changedPower.key;
+            // Find all elements with matching data-power-key
+            statblockElement.querySelectorAll(`[data-power-key="${changedKey}"]`).forEach(el => {
+                el.classList.add('power-changed');
+            });
+        }
+
+        if (change?.type === StatblockChangeType.HpChanged) {
+            // Highlight HP changes
+            statblockElement.querySelectorAll(`[data-statblock-property="hp"]`).forEach(el => {
+                el.classList.add('hp-changed');
+            });
+        }
+
+        if (change?.type === StatblockChangeType.DamageChanged) {
+            // Highlight damage changes
+            statblockElement.querySelectorAll(`[data-statblock-property="attack"]`).forEach(el => {
+                el.classList.add('damage-changed');
+            });
+        }
+
+        return statblockElement;
     }
 }
 
