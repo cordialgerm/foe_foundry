@@ -209,7 +209,7 @@ document.addEventListener("click", async (event) => {
         button.disabled = false;
     }, 600); // match the animation duration
 
-    const url = `/api/v1/monsters/random?output=monster_only`;
+    const url = `/api/v1/statblocks/random?output=monster_only`;
     const res = await fetch(url);
     const html = await res.text();
 
