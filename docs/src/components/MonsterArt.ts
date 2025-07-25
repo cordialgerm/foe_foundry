@@ -30,8 +30,6 @@ export class MonsterArt extends LitElement {
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      border: 1px solid var(--bs-border-color, #6c757d);
-      border-radius: 0.375rem;
       margin-bottom: 1rem;
     }
 

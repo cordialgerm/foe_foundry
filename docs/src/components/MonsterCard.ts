@@ -29,15 +29,20 @@ export class MonsterCard extends LitElement {
     :host {
       display: block;
       margin: 1rem;
-      padding: 0.5rem;
-      border: 1px solid var(--bs-secondary);
-      border-radius: 0.375rem;
+      padding: 2px;
+
+      border: 1px solid var(--tertiary-color);
+      border-radius: var(--medium-margin);
+      outline: 1px solid var(--tertiary-color);
+      outline-offset: -4px;
+
       background-color: var(--bs-dark);
       position: relative;
     }
 
     .monster-card {
       position: relative;
+      margin: 2px;
     }
 
     .randomize-button {

@@ -27,8 +27,6 @@ export class PowerLoadout extends LitElement {
     .power-slot-block {
       margin-bottom: 0.5rem;
       padding: 0.5rem;
-      border: 1px solid var(--bs-secondary);
-      border-radius: 0.375rem;
       background-color: var(--bs-dark);
       position: relative;
     }
