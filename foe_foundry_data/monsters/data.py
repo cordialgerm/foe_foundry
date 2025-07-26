@@ -92,11 +92,15 @@ class PowerLoadoutModel:
 class MonsterModel:
     name: str
     cr: float
+    tag_line: str
+    template_name: str
     template_key: str
+    variant_name: str
     variant_key: str
 
     statblock_html: str
     template_html: str | None
+    has_lore: bool
     images: list[str]
     loadouts: list[PowerLoadoutModel]
     primary_image: str | None
@@ -104,6 +108,7 @@ class MonsterModel:
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
+    modified_date: datetime
 
     @property
     def key(self) -> str:
@@ -172,10 +177,14 @@ class MonsterModel:
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
+            tag_line=template.tag_line,
             template_key=stats.template_key,
+            template_name=template.name,
             variant_key=stats.variant_key,
+            variant_name=variant.name,
             statblock_html=statblock_html,
             template_html=template_html,
+            has_lore=template.lore_md is not None,
             images=all_images,
             loadouts=loadouts,
             primary_image=primary_image,
@@ -183,4 +192,5 @@ class MonsterModel:
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
+            modified_date=template.modified_date,
         )

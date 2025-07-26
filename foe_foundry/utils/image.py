@@ -1,4 +1,3 @@
-from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Optional
 
@@ -68,6 +67,7 @@ def get_dominant_edge_color(
     edge_thickness: float = 0.05,
     threshold: float = 0.1,
     quant_level: int = 8,
+    ignore_white: bool = True,
 ) -> Optional[str]:
     """
     Finds the most common edge color by quantizing into bins, then returning
@@ -120,20 +120,29 @@ def get_dominant_edge_color(
         axis=0,
     )
 
-    # Group into quantized buckets
-    buckets = defaultdict(list)
-    for pixel in edge_pixels:
-        q = tuple((pixel // quant_level) * quant_level)
-        buckets[q].append(tuple(pixel))
-
-    # Find the dominant bucket
-    bucket_counts = {k: len(v) for k, v in buckets.items()}
-    dominant_bucket, count = max(bucket_counts.items(), key=lambda x: x[1])
+    # Vectorized quantization of all edge pixels
+    quantized = (edge_pixels // quant_level) * quant_level
+    # Find unique quantized colors and their counts
+    q_colors, q_counts = np.unique(quantized, axis=0, return_counts=True)
+    dominant_idx = np.argmax(q_counts)
+    dominant_bucket = q_colors[dominant_idx]
+    count = q_counts[dominant_idx]
 
     if count / edge_pixels.shape[0] < threshold:
         return None  # no dominant color
 
-    # Return the mode of the dominant bucket as a hex string
-    pixel_counts = Counter(buckets[dominant_bucket])
-    rgb = pixel_counts.most_common(1)[0][0]
+    # Find all pixels in the dominant bucket
+    mask = np.all(quantized == dominant_bucket, axis=1)
+    bucket_pixels = edge_pixels[mask]
+    # Find the mode (most common pixel) in the dominant bucket
+    if len(bucket_pixels) == 0:
+        return None
+    # Use np.unique to find the most common pixel
+    uniq_pix, pix_counts = np.unique(bucket_pixels, axis=0, return_counts=True)
+    rgb = uniq_pix[np.argmax(pix_counts)]
+
+    # Ignore if the dominant color is very close to pure white
+    if ignore_white and np.all(rgb >= 252):
+        return None
+
     return "#{:02x}{:02x}{:02x}".format(*rgb)

@@ -5,14 +5,10 @@ import numpy as np
 import pandas as pd
 from markdown import markdown
 
-from foe_foundry.creatures import AllTemplates, MonsterTemplate
-from foe_foundry.utils.image import (
-    get_dominant_edge_color,
-    has_transparent_edges,
-    is_grayscaleish,
-)
 from foe_foundry_data.blogs import BlogPost, load_blog_posts
 from foe_foundry_data.icons import inline_icon
+from foe_foundry_data.monsters import MonsterModel
+from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.powers import PowerModel, Powers
 
 from .data import HomepageBlog, HomepageData, HomepageMonster, HomepagePower
@@ -58,11 +54,14 @@ def load_homepage_data() -> HomepageData:
         if len(p.feature_descriptions) <= 400
     ]
 
-    monsters = [
-        _monster(m, random_mask.random_mask_css())
-        for m in AllTemplates
-        if m.lore_md is not None
-    ]
+    # note - Monster.one_of_each_monster has one of each monster
+    #        we just want one example per template
+    template_keys = set()
+    monsters = []
+    for m in Monsters.one_of_each_monster:
+        if m.has_lore and m.template_name not in template_keys:
+            template_keys.add(m.template_name)
+            monsters.append(_monster(m, random_mask.random_mask_css()))
 
     # Create a DataFrame for sorting
     df = pd.DataFrame(
@@ -130,27 +129,15 @@ def _blog(blog: BlogPost, rng: np.random.Generator, mask_css: str) -> HomepageBl
     )
 
 
-def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
-    if monster.primary_image_url is None:
-        image = "img/icons/favicon.webp"
-        transparent = True
-        grayscale = True
-        background_color = None
-    else:
-        rel_to = Path(__file__).parent.parent.parent / "docs"
-        image = str(monster.primary_image_url.relative_to(rel_to))
-        transparent = has_transparent_edges(monster.primary_image_url)
-        grayscale = is_grayscaleish(monster.primary_image_url)
-        background_color = get_dominant_edge_color(monster.primary_image_url)
-
+def _monster(monster: MonsterModel, mask_css: str) -> HomepageMonster:
     return HomepageMonster(
-        name=monster.name,
+        name=monster.template_name,
         url=f"monsters/{monster.key}/",
-        image=image,
+        image=monster.primary_image or "img/icons/favicon.webp",
         tagline=monster.tag_line,
-        transparent_edges=transparent,
-        grayscale=grayscale,
-        background_color=background_color,
+        transparent_edges=monster.primary_image_has_transparent_edges,
+        grayscale=monster.primary_image_is_grayscaleish,
+        background_color=monster.primary_image_background_color,
         mask_css=mask_css,
         create_date=monster.create_date,
         modified_date=monster.modified_date,
