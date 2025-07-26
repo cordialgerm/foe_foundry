@@ -21,6 +21,28 @@ chaotic tricksters, pillagers, and endless nuisances
 - [Rivals](../families/rivals.md) - The ultimate guide to rival adventuring parties
 - [Villains](../families/villains.md) -  Creating awesome villains for your 5E campaigns
 
+## Constructs
+
+Constructs are animated creations made for a singular purpose.
+
+- [Simulacrum](simulacrum.md) - magically animated fragments of personality
+
+---
+
+## Giants
+
+!!! info "More Giants"
+    See also [Giants](../families/giants.md) for detailed lore, encounters, and statblocks
+
+Giants are primordial creatures, living walking bones of the earth.
+
+- [Ogres](ogre.md) - ravenous and destructive hulks
+- [Frost Giants](frost-giant.md) - frozen reavers of blood and battle
+
+![5E Ogre monster illustration — hulking brute wielding a massive club](../img/monsters/ogre.webp){.masked .monster-image}
+
+---
+
 ## Humanoids
 
 Not all threats crawl from crypts. Some wear robes and carry grimoires. These monsters think, plan, and cast.
@@ -44,22 +66,7 @@ See also these curated **Humanoid Family Pages** for curated collections of rela
 
 ![A Cryomancer prepares an icy blast](../img/monsters/cryomancer2.webp){.monster-image .masked .white-background}
 
-## Undead
-
-!!! info "More Undead"
-    See also [Undead](../families/undead.md) for detailed lore, encounters, and statblocks
-
-Bleached bones. Rotting flesh. Soul fragments clawing their way back to life from the River Styx. The [Undead](../families/undead.md) of Foe Foundry aren't just cannon fodder. They're cursed echoes of mortal lives, each with their own twisted flavor.
-
-- [Ghouls](ghoul.md) - ravenous cannibals possessed by undeath
-- [Liches](lich.md) - immortal masters of undeath and arcana
-- [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
-- [Skeletons](skeleton.md) - fragments of a soul bound to bleached bones
-- [Spirits](spirit.md) - echoes of rage and regret
-- [Wights](wight.md) - deathly cold malignant warriors of old
-- [Zombies](zombie.md) - shambling relentless hordes
-
-![A skeleton warband advances menacingly](../img/monsters/skeleton_warband.webp){.monster-image}
+---
 
 ## Monstrosities
 
@@ -77,17 +84,7 @@ Monstrosities defy nature: ancient experiments, magical amalgams, and living sym
 
 ![A cantankerous Manticore prepares to strike](../img/monsters/manticore.webp){.monster-image .masked .white-background}
 
-## Giants
-
-!!! info "More Giants"
-    See also [Giants](../families/giants.md) for detailed lore, encounters, and statblocks
-
-Giants are primordial creatures, living walking bones of the earth.
-
-- [Ogres](ogre.md) - ravenous and destructive hulks
-- [Frost Giants](frost-giant.md) - frozen reavers of blood and battle
-
-![5E Ogre monster illustration — hulking brute wielding a massive club](../img/monsters/ogre.webp){.masked .monster-image}
+---
 
 ## Oozes
 
@@ -96,3 +93,23 @@ Slimes, jellies, and cubes. Silent, shapeless, and strangely efficient.
 - [Gelatinous Cubes](gelatinous-cube.md) - acidic, nigh-invisible dungeon cleaner
 
 ![A gelatinous cube with a bleached skeleton](../img/monsters/gelatinous-cube.webp){.masked .monster-image}
+
+
+---
+
+## Undead
+
+!!! info "More Undead"
+    See also [Undead](../families/undead.md) for detailed lore, encounters, and statblocks
+
+Bleached bones. Rotting flesh. Soul fragments clawing their way back to life from the River Styx. The [Undead](../families/undead.md) of Foe Foundry aren't just cannon fodder. They're cursed echoes of mortal lives, each with their own twisted flavor.
+
+- [Ghouls](ghoul.md) - ravenous cannibals possessed by undeath
+- [Liches](lich.md) - immortal masters of undeath and arcana
+- [Necromancers](mage.md#necromancers) - mortal mages practicing heretical dark arts
+- [Skeletons](skeleton.md) - fragments of a soul bound to bleached bones
+- [Spirits](spirit.md) - echoes of rage and regret
+- [Wights](wight.md) - deathly cold malignant warriors of old
+- [Zombies](zombie.md) - shambling relentless hordes
+
+![A skeleton warband advances menacingly](../img/monsters/skeleton_warband.webp){.monster-image}
