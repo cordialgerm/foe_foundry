@@ -16,7 +16,7 @@
                     <div class="swiper-monsters swiper-container preload tall">
                         {% for monster in homepage_data.monsters %}
                         <div class="swiper-slide card tall {{monster.mask_css}} {% if monster.is_new %}new{% endif %}"
-                            data-url="{{monster.url | url}}">
+                            data-url="{{monster.url | url}}" {{monster.custom_style}}>
                             <img class="card-image contain blend" src="{{monster.image | url}}" alt="{{monster.name}}"
                                 loading="{{ 'eager' if loop.index <= 5 else 'lazy'}}" />
                             <div class="card-content">

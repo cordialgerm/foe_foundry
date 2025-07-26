@@ -9,10 +9,22 @@ class HomepageMonster:
     image: str
     tagline: str
     transparent_edges: bool
+    grayscale: bool
+    background_color: str | None
     mask_css: str
     is_new: bool
     create_date: datetime
     modified_date: datetime
+
+    @property
+    def custom_style(self) -> str:
+        """
+        Returns a custom CSS style string for the monster's background color.
+        If no background color is set, returns an empty string.
+        """
+        if self.background_color:
+            return f'style="background-color: {self.background_color};"'
+        return ""
 
 
 @dataclass(kw_only=True)

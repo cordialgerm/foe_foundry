@@ -6,7 +6,11 @@ import pandas as pd
 from markdown import markdown
 
 from foe_foundry.creatures import AllTemplates, MonsterTemplate
-from foe_foundry.utils.image import has_transparent_edges
+from foe_foundry.utils.image import (
+    get_dominant_edge_color,
+    has_transparent_edges,
+    is_grayscaleish,
+)
 from foe_foundry_data.blogs import BlogPost, load_blog_posts
 from foe_foundry_data.icons import inline_icon
 from foe_foundry_data.powers import PowerModel, Powers
@@ -130,10 +134,14 @@ def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
     if monster.primary_image_url is None:
         image = "img/icons/favicon.webp"
         transparent = True
+        grayscale = True
+        background_color = None
     else:
         rel_to = Path(__file__).parent.parent.parent / "docs"
         image = str(monster.primary_image_url.relative_to(rel_to))
         transparent = has_transparent_edges(monster.primary_image_url)
+        grayscale = is_grayscaleish(monster.primary_image_url)
+        background_color = get_dominant_edge_color(monster.primary_image_url)
 
     return HomepageMonster(
         name=monster.name,
@@ -141,6 +149,8 @@ def _monster(monster: MonsterTemplate, mask_css: str) -> HomepageMonster:
         image=image,
         tagline=monster.tag_line,
         transparent_edges=transparent,
+        grayscale=grayscale,
+        background_color=background_color,
         mask_css=mask_css,
         create_date=monster.create_date,
         modified_date=monster.modified_date,
