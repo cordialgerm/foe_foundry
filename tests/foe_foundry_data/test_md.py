@@ -81,7 +81,7 @@ def test_monster_key_works_for_npcs():
     assert "orc-berserker" in result.html
 
 
-def test_embed_spellcastign_power_only_one_spellcasting():
+def test_embed_spellcasting_power_only_one_spellcasting():
     text = "[[!Simulacrum Spellcasting]]"
     result = markdown(text)
     assert len(result.references) == 1
