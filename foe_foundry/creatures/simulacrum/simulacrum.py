@@ -147,7 +147,7 @@ class _SimulacrumTemplate(MonsterTemplate):
 
             # ROLES
             stats = stats.with_roles(
-                primary_role=MonsterRole.Controller,
+                primary_role=MonsterRole.Skirmisher,
                 additional_roles={MonsterRole.Artillery},
             )
 
