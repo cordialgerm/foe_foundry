@@ -81,6 +81,13 @@ def test_monster_key_works_for_npcs():
     assert "orc-berserker" in result.html
 
 
+def test_embed_spellcastign_power_only_one_spellcasting():
+    text = "[[!Simulacrum Spellcasting]]"
+    result = markdown(text)
+    assert len(result.references) == 1
+    assert result.html.count("Banishment") == 1
+
+
 def test_embed_icon():
     text = "This is the [[!grapple.svg]] Grapple icon"
     result = markdown(text)

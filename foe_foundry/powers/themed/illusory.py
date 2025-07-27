@@ -49,7 +49,7 @@ class Illusory(PowerWithStandardScoring):
             power_level=power_level,
             theme="illusory",
             icon=icon,
-            reference_statblock="Adult Green Dragon",
+            reference_statblock="Simulacrum",
             power_types=power_types or [PowerType.Magic, PowerType.Stealth],
             score_args=dict(
                 require_types={
