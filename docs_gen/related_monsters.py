@@ -1,9 +1,9 @@
 import logging
-import os
 
 import numpy as np
 from mkdocs.structure.pages import Page
 
+from foe_foundry.utils.env import get_base_url
 from foe_foundry.utils.rng import rng_from_key
 from foe_foundry_data.markdown import markdown as render_markdown
 from foe_foundry_data.markdown import monster_link
@@ -23,11 +23,7 @@ def set_related_monsters_on_page(page: Page, markdown: str):
     # we're going to discard the actual rendered markdown, we just want to see the references
     rendered_markdown = render_markdown(markdown)
 
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set.")
-    if base_url.endswith("/"):
-        base_url = base_url[:-1]
+    base_url = get_base_url()
 
     monster_refs = [
         r for r in rendered_markdown.references if isinstance(r, MonsterRef)

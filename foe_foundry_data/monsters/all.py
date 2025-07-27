@@ -2,6 +2,7 @@ from functools import cached_property
 
 from foe_foundry.creatures import AllTemplates
 from foe_foundry.powers import Power
+from foe_foundry.utils.env import get_base_url
 from foe_foundry_data.refs import MonsterRef, MonsterRefResolver
 
 from .data import MonsterModel
@@ -10,9 +11,6 @@ from .data import MonsterModel
 class _MonsterCache:
     @cached_property
     def one_of_each_monster(self) -> list[MonsterModel]:
-        base_url = (
-            "http://localhost:8000"  # this value shouldn't actually be needed here
-        )
         monsters = []
         for template in AllTemplates:
             for variant in template.variants:
@@ -27,7 +25,7 @@ class _MonsterCache:
                         variant=variant,
                         monster=monster,
                         species=species,
-                        base_url=base_url,
+                        base_url=get_base_url(),
                     )
                     monsters.append(m)
         return monsters

@@ -1,8 +1,9 @@
-import os
 import re
 
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
+
+from foe_foundry.utils.env import get_base_url
 
 from ..icons import inline_icon
 from ..jinja import render_power_fragment
@@ -19,11 +20,7 @@ class FoeFoundryMdExtension(Extension):
         self.ref_resolver = MonsterRefResolver()
         self.resolved_references = []
 
-        base_url = kwargs.get("base_url", os.environ.get("SITE_URL"))
-        if base_url is None:
-            raise ValueError(
-                "base_url must be provided or set in the environment as SITE_URL"
-            )
+        base_url = get_base_url()
         self.base_url = base_url
 
         super().__init__(**kwargs)

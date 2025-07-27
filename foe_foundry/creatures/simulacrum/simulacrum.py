@@ -1,8 +1,8 @@
 from foe_foundry.environs import Affinity, Development, region
 from foe_foundry.statblocks import BaseStatblock
 
-from ...ac_templates import ArcaneArmor
-from ...attack_template import AttackTemplate, spell
+from ...ac_templates import ArcaneArmor, StuddedLeatherArmor
+from ...attack_template import AttackTemplate, spell, weapon
 from ...creature_types import CreatureType
 from ...damage import Condition, DamageType
 from ...powers import PowerSelection
@@ -25,19 +25,48 @@ SimulacrumVariant = MonsterVariant(
     description="Simulacrums are illusions created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
     monsters=[
         Monster(name="Simulacrum", cr=9),
+        Monster(name="Mastercraft Simulacrum", cr=12),
+    ],
+)
+
+SimulacrumWarriorVariant = MonsterVariant(
+    name="Simulacrum Mirrorblade",
+    description="Simulacrum Mirrorblades are illusory duplicates of warriors created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
+    monsters=[
+        Monster(name="Simulacrum Mirrorblade", cr=7),
     ],
 )
 
 
 class _SimulacrumTemplate(MonsterTemplate):
     def choose_powers(self, settings: GenerationSettings) -> PowerSelection:
-        return PowerSelection(powers.LoadoutSimulacrum)
+        if settings.monster_key == "simulacrum-mirrorblade":
+            return PowerSelection(powers.LoadoutMirrorbladeSimulacrum)
+        else:
+            return PowerSelection(powers.LoadoutSimulacrum)
 
     def generate_stats(
         self, settings: GenerationSettings
     ) -> tuple[BaseStatblock, list[AttackTemplate]]:
         name = settings.creature_name
         cr = settings.cr
+
+        if settings.monster_key == "simulacrum-mirrorblade":
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -6),
+                AbilityScore.DEX: StatScaling.Primary,
+                AbilityScore.INT: (StatScaling.Default, -1),
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: StatScaling.Default,
+            }
+        else:
+            attrs = {
+                AbilityScore.STR: (StatScaling.Default, -6),
+                AbilityScore.DEX: (StatScaling.Default, 2),
+                AbilityScore.INT: StatScaling.Primary,
+                AbilityScore.WIS: StatScaling.Medium,
+                AbilityScore.CHA: StatScaling.Default,
+            }
 
         # STATS
         stats = base_stats(
@@ -46,13 +75,7 @@ class _SimulacrumTemplate(MonsterTemplate):
             template_key=settings.monster_template,
             monster_key=settings.monster_key,
             cr=cr,
-            stats={
-                AbilityScore.STR: (StatScaling.Default, -6),
-                AbilityScore.DEX: (StatScaling.Default, 2),
-                AbilityScore.INT: StatScaling.Primary,
-                AbilityScore.WIS: StatScaling.Medium,
-                AbilityScore.CHA: StatScaling.Default,
-            },
+            stats=attrs,
             hp_multiplier=0.6
             * settings.hp_multiplier,  # low HP for a CR 9 because we want to be at around 50% of the CR 12 archmage
             damage_multiplier=settings.damage_multiplier,
@@ -62,46 +85,8 @@ class _SimulacrumTemplate(MonsterTemplate):
             size=Size.Medium,
             languages=["Common"],
             creature_class="Simulacrum",
-            caster_type=CasterType.Arcane,
-            # mages have many bonus actions, reactions, and limited use abilities
-            selection_target_args=dict(
-                limited_uses_target=-1,
-                limited_uses_max=3 if cr <= 11 else 4,
-                reaction_target=1,
-                reaction_max=2,
-                spellcasting_powers_target=-1,
-                spellcasting_powers_max=-1,
-                bonus_action_target=-1,
-                bonus_action_max=2,
-                recharge_target=1,
-                recharge_max=1,
-            ),
         ).with_types(
             primary_type=CreatureType.Humanoid, additional_types=CreatureType.Construct
-        )
-
-        # SPEED
-        stats = stats.copy(speed=stats.speed.grant_flying())
-
-        # ARMOR CLASS
-        stats = stats.add_ac_template(ArcaneArmor)
-
-        # ATTACKS
-        # Boost attack damage to more closely match Archmage
-        # don't boost overall damage because we don't want AOE abilities to be too over the top
-        attack = spell.ArcaneBurst.copy(damage_scalar=1.1).with_display_name(
-            "Reality Splinters"
-        )
-
-        # ROLES
-        stats = stats.with_roles(
-            primary_role=MonsterRole.Controller,
-            additional_roles={MonsterRole.Artillery},
-        )
-
-        # SKILLS
-        stats = stats.grant_proficiency_or_expertise(
-            Skills.Arcana, Skills.Perception, Skills.History, Skills.Initiative
         )
 
         # IMMUNITIES
@@ -114,13 +99,70 @@ class _SimulacrumTemplate(MonsterTemplate):
             conditions={Condition.Exhaustion, Condition.Poisoned},
         )
 
-        # SAVES
-        stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.INT)
+        if settings.monster_key == "simulacrum-mirrorblade":
+            # SPEED
+            stats = stats.copy(speed=stats.speed.delta(10))
 
-        # DCs
-        stats = stats.apply_monster_dials(
-            dials=MonsterDials(difficulty_class_modifier=1)
-        )  # need to boost DC to match Archmage
+            # ARMOR CLASS
+            stats = stats.add_ac_template(StuddedLeatherArmor)
+
+            # ATTACKS
+            # Boost attack damage to more closely match Archmage
+            # don't boost overall damage because we don't want AOE abilities to be too over the top
+            attack = weapon.Daggers.copy(
+                damage_scalar=1.1, secondary_damage_type=DamageType.Force
+            ).with_display_name("Reality-Shred Blades")
+
+            # ROLES
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Skirmisher,
+                additional_roles={MonsterRole.Soldier},
+            )
+
+            # SKILLS
+            stats = stats.grant_proficiency_or_expertise(
+                Skills.Stealth, Skills.Athletics, Skills.Acrobatics
+            )
+
+            # SAVES
+            stats = stats.grant_save_proficiency(AbilityScore.DEX, AbilityScore.WIS)
+
+        else:
+            # SPEED
+            stats = stats.copy(speed=stats.speed.grant_flying())
+
+            # ARMOR CLASS
+            stats = stats.add_ac_template(ArcaneArmor)
+
+            stats = stats.grant_spellcasting(
+                caster_type=CasterType.Arcane,
+            )
+
+            # ATTACKS
+            # Boost attack damage to more closely match Archmage
+            # don't boost overall damage because we don't want AOE abilities to be too over the top
+            attack = spell.ArcaneBurst.copy(damage_scalar=1.1).with_display_name(
+                "Reality Splinters"
+            )
+
+            # ROLES
+            stats = stats.with_roles(
+                primary_role=MonsterRole.Skirmisher,
+                additional_roles={MonsterRole.Artillery},
+            )
+
+            # SKILLS
+            stats = stats.grant_proficiency_or_expertise(
+                Skills.Arcana, Skills.Perception, Skills.History, Skills.Initiative
+            )
+
+            # SAVES
+            stats = stats.grant_save_proficiency(AbilityScore.WIS, AbilityScore.INT)
+
+            # DCs
+            stats = stats.apply_monster_dials(
+                dials=MonsterDials(difficulty_class_modifier=1)
+            )  # need to boost DC to match Archmage
 
         return stats, [attack]
 
@@ -130,7 +172,7 @@ SimulacrumTemplate: MonsterTemplate = _SimulacrumTemplate(
     tag_line="Wizard's Illusory Duplicate",
     description="Simulacrums are illusions created by powerful mages to serve as their agents. They are often used to scout, gather information, or perform tasks that the mage cannot do themselves.",
     treasure=["Arcana", "Individual"],
-    variants=[SimulacrumVariant],
+    variants=[SimulacrumVariant, SimulacrumWarriorVariant],
     species=[],
     environments=[
         (
