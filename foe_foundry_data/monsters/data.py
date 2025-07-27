@@ -18,7 +18,11 @@ from foe_foundry.powers import Power, PowerLoadout
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import name_to_key
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
-from foe_foundry.utils.image import has_transparent_edges
+from foe_foundry.utils.image import (
+    get_dominant_edge_color,
+    has_transparent_edges,
+    is_grayscaleish,
+)
 
 from ..jinja import render_statblock_fragment
 
@@ -88,16 +92,23 @@ class PowerLoadoutModel:
 class MonsterModel:
     name: str
     cr: float
+    tag_line: str
+    template_name: str
     template_key: str
+    variant_name: str
     variant_key: str
 
     statblock_html: str
     template_html: str | None
+    has_lore: bool
     images: list[str]
     loadouts: list[PowerLoadoutModel]
     primary_image: str | None
     primary_image_has_transparent_edges: bool
+    primary_image_is_grayscaleish: bool
+    primary_image_background_color: str | None = None
     create_date: datetime
+    modified_date: datetime
 
     @property
     def key(self) -> str:
@@ -129,9 +140,23 @@ class MonsterModel:
             primary_image_has_transparent_edges = has_transparent_edges(
                 template.primary_image_url
             )
+
+            if not primary_image_has_transparent_edges:
+                primary_image_is_grayscaleish = is_grayscaleish(
+                    template.primary_image_url
+                )
+                primary_image_background_color = get_dominant_edge_color(
+                    template.primary_image_url
+                )
+            else:
+                primary_image_is_grayscaleish = False
+                primary_image_background_color = None
+
         else:
             primary_image = None
             primary_image_has_transparent_edges = False
+            primary_image_is_grayscaleish = False
+            primary_image_background_color = None
 
         if template.lore_md is not None and len(template.lore_md):
             template_html = _load_monster_html(template.key, base_url)
@@ -152,13 +177,20 @@ class MonsterModel:
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
+            tag_line=template.tag_line,
             template_key=stats.template_key,
+            template_name=template.name,
             variant_key=stats.variant_key,
+            variant_name=variant.name,
             statblock_html=statblock_html,
             template_html=template_html,
+            has_lore=template.lore_md is not None,
             images=all_images,
             loadouts=loadouts,
             primary_image=primary_image,
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
+            primary_image_is_grayscaleish=primary_image_is_grayscaleish,
+            primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
+            modified_date=template.modified_date,
         )

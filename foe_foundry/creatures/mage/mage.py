@@ -40,7 +40,12 @@ AbjurerVariant = MonsterVariant(
         Monster(name="Abjurer Mage Adept", cr=4),
         Monster(name="Abjurer Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Abjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Abjurer Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Abjurer Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -51,7 +56,12 @@ ConjurerVariant = MonsterVariant(
         Monster(name="Conjurer Mage Adept", cr=4),
         Monster(name="Conjurer Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Conjurer Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Conjurer Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Conjurer Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -62,7 +72,12 @@ DivinerVariant = MonsterVariant(
         Monster(name="Diviner Mage Adept", cr=4),
         Monster(name="Diviner Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Diviner Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Diviner Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Diviner Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -73,7 +88,12 @@ EnchanterVariant = MonsterVariant(
         Monster(name="Enchanter Mage Adept", cr=4),
         Monster(name="Enchanter Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Enchanter Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Enchanter Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Enchanter Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -84,7 +104,12 @@ IllusionistVariant = MonsterVariant(
         Monster(name="Illusionist Mage Adept", cr=4),
         Monster(name="Illusionist Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Illusionist Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Illusionist Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Illusionist Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -100,7 +125,12 @@ NecromancerVariant = MonsterVariant(
             other_creatures={"Necromancer": "alias"},
         ),
         Monster(name="Necromancer Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Necromancer Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Necromancer Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 
@@ -111,7 +141,12 @@ TransmuterVariant = MonsterVariant(
         Monster(name="Transmuter Mage Adept", cr=4),
         Monster(name="Transmuter Mage", cr=6, srd_creatures=["Mage"]),
         Monster(name="Transmuter Archmage", cr=12, srd_creatures=["Archmage"]),
-        Monster(name="Transmuter Primagus", cr=16, is_legendary=True),
+        Monster(
+            name="Transmuter Primagus",
+            cr=16,
+            is_legendary=True,
+            other_creatures={"Archmage Primagus": "alias"},
+        ),
     ],
 )
 

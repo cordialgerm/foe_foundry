@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 from dataclasses import asdict
 from typing import Annotated
 
@@ -13,6 +12,7 @@ from pydantic import BaseModel
 from foe_foundry.creatures import (
     random_template_and_settings,
 )
+from foe_foundry.utils.env import get_base_url
 from foe_foundry_data.generate import generate_monster
 from foe_foundry_data.monsters import MonsterModel
 from foe_foundry_data.monsters.all import Monsters
@@ -64,9 +64,7 @@ def random_monster(
     if output is None:
         output = MonsterFormat.html
 
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set")
+    base_url = get_base_url()
     monster_model = MonsterModel.from_monster(
         stats=stats,
         template=template,
@@ -85,10 +83,6 @@ def new_monsters(
     """
     Returns a list of top N new monsters that have been added recently
     """
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set")
-
     if limit is None:
         limit = 5
 
@@ -120,10 +114,7 @@ def get_monster(
         raise HTTPException(
             status_code=404, detail=f"Monster not found: {template_or_variant_key}"
         )
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set")
-
+    base_url = get_base_url()
     ref = ref.resolve()
 
     return _format_monster(
@@ -168,10 +159,7 @@ def generate_monster_from_request(
         raise HTTPException(
             status_code=404, detail=f"Monster not found: {request.monster_key}"
         )
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set")
-
+    base_url = get_base_url()
     ref = ref.resolve()
 
     return _format_monster(

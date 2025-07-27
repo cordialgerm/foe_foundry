@@ -85,6 +85,7 @@ This work features art by:
 - Some artwork © 2022 Joao Mileski, used with permission. All rights reserved.
 - [d20 Icons by Delapouite](https://game-icons.net/1x1/delapouite/dice-twenty-faces-twenty.html) under CC BY 3.0
 - Artwork by © anaislalovi, used with permission. All rights reserved
+- [Crypt Phantom Concept Art](https://www.deviantart.com/wraeclast/art/Crypt-Phantom-Concept-Art-446065518) under [CC BY 3.0 ND](https://creativecommons.org/licenses/by-nd/3.0/)
 
 Monsters by GalefireRPG:  
 

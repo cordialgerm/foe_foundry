@@ -1,11 +1,13 @@
 from ...powers import PowerLoadout
 from ...powers.creature import mage, simulacrum
-from ...powers.roles import artillery
+from ...powers.roles import artillery, skirmisher
 from ...powers.spellcaster import metamagic
 from ...powers.themed import (
     anti_ranged,
     emanation,
-    icy,
+    fast,
+    illusory,
+    sneaky,
     technique,
     teleportation,
     tough,
@@ -18,23 +20,45 @@ PerksMage = [
 ]
 PerksSimulacrum = [simulacrum.SimulacrumSpellcasting]
 
-PerksMagicPowers = [
-    technique.FreezingAttack,
-    technique.SlowingAttack,
-    metamagic.ArcaneMastery,
-    anti_ranged.Overchannel,
-    artillery.TwinSpell,
-    artillery.SuppresingFire,
-    emanation.IllusoryReality,
-    emanation.RunicWards,
-    teleportation.BendSpace,
-    teleportation.Scatter,
+PerksBendReality = [
     emanation.TimeRift,
     emanation.SummonersRift,
     emanation.HypnoticLure,
     emanation.RecombinationMatrix,
     emanation.BitingFrost,
-] + icy.IcyPowers
+    emanation.IllusoryReality,
+    emanation.RunicWards,
+    teleportation.BendSpace,
+    teleportation.Scatter,
+]
+
+PerksAttacks = [
+    metamagic.ArcaneMastery,
+    anti_ranged.Overchannel,
+    artillery.TwinSpell,
+    artillery.SuppresingFire,
+    technique.FreezingAttack,
+    technique.SlowingAttack,
+]
+
+
+PerksMirrorblade = [simulacrum.SimulacrumMirrorblade]
+PerksMirrorbladeAttacks = [
+    technique.BlindingAttack,
+    technique.SappingAttack,
+    technique.VexingAttack,
+]
+PerksUnrealSpeed = [
+    fast.Evasion,
+    skirmisher.HarassingRetreat,
+    sneaky.Vanish,
+]
+PerksMirrorbladeIllusions = [
+    illusory.MirrorImage,
+    illusory.PhantomMirage,
+    illusory.Projection,
+]
+
 
 LoadoutSimulacrum = [
     PowerLoadout(
@@ -49,8 +73,40 @@ LoadoutSimulacrum = [
         powers=PerksSimulacrum,
     ),
     PowerLoadout(
-        name="Magical Specialization",
-        flavor_text="A mage capable of a simulacrum typically endows it with unique abilities",
-        powers=PerksMagicPowers,
+        name="Bend Reality",
+        flavor_text="A simulacrum is illusion manifest and can bend reality to its will",
+        powers=PerksBendReality,
+    ),
+]
+
+LoadoutMasterworkSimulacrum = LoadoutSimulacrum + [
+    PowerLoadout(
+        name="Masterwork Simulacrum",
+        flavor_text="A simulacrum that has been enhanced with powerful abilities.",
+        powers=PerksAttacks,
+        selection_count=1,
+    ),
+]
+
+LoadoutMirrorbladeSimulacrum = [
+    PowerLoadout(
+        name="Mirrorblade",
+        flavor_text="A frozen copy of a warrior, but just as deadly as the original.",
+        powers=PerksMirrorblade,
+    ),
+    PowerLoadout(
+        name="Vexing Attacks",
+        flavor_text="Facing an illusory copy is distracting to all but the most trained opponents",
+        powers=PerksMirrorbladeAttacks,
+    ),
+    PowerLoadout(
+        name="Flicker",
+        flavor_text="A simulacrum mirrorblade can flicker in and out of existence",
+        powers=PerksMirrorbladeIllusions,
+    ),
+    PowerLoadout(
+        name="Unreal Speed",
+        flavor_text="As fast and elusive as a paradox",
+        powers=PerksUnrealSpeed,
     ),
 ]

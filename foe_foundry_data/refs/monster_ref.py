@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 from dataclasses import dataclass, replace
 from functools import cached_property
 from typing import TypeAlias
@@ -18,6 +17,7 @@ from foe_foundry.creatures import (
     MonsterVariant,
 )
 from foe_foundry.utils import name_to_key
+from foe_foundry.utils.env import get_base_url
 
 MonsterInfo: TypeAlias = tuple[MonsterTemplate, MonsterVariant | None, Monster | None]
 
@@ -54,11 +54,8 @@ class MonsterRef:
     @cached_property
     def template_url(self) -> str:
         """Returns the URL for the monster template."""
-        base_url = os.environ.get("SITE_URL", "https://foefoundry.com")
-        if not base_url.endswith("/"):
-            base_url += "/"
-
-        return f"{base_url}monsters/{self.template.key}/"
+        base_url = get_base_url()
+        return f"{base_url}/monsters/{self.template.key}/"
 
     def copy(self, **args) -> MonsterRef:
         """Creates a copy of the monster reference with updated values."""
