@@ -10,7 +10,7 @@ json_ld: true
 
 *Magically Animated Fragments of Personality*
 
-A **Simulacrum** is a near-perfect magical duplicate of a living creature, scultped from snow and shadow, and infused with a fragment of the original's personality. It walks and speaks like its original, mimicing its movements and powers. Yet, it cannot grow or learn.  
+A **Simulacrum** is a near-perfect magical duplicate of a living creature, sculpted from snow and shadow, and infused with a fragment of the original's personality. It walks and speaks like its original, mimicking its movements and powers. Yet, it cannot grow or learn.  
 
 A simulacrum is often created as an agent for its creator, serving as a spy, decoy, or disposable commander. Many serve their masters loyally, but some break their bindings and act of their own volition. A rare few simulacra become convinced that they are the true version of themselves and that the original is the imposter.
 
