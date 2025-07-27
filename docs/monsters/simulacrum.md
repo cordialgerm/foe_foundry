@@ -19,7 +19,7 @@ A simulacrum is often created as an agent for its creator, serving as a spy, dec
 - Simulacra are powerful magical constructs crafted from shadow and ice that act as a copy of an original
 - Simulacra are imbued with the fragments of original's personality, memories, and knowledge
 - Powerful **Archmages** often create a **Simulacrum** of themselves to act as a servant
-- Mages occasionaly create a simulacrum of another creature, such as a powerful warrior or an important figure, to further their own goals
+- Mages occasionally create a simulacrum of another creature, such as a powerful warrior or an important figure, to further their own goals
 
 ![A magical duplicate cloaked in ice and illusion, the Simulacrum mirrors its creator’s power but lacks a soul — a haunting arcane construct for 5E.](../img/monsters/simulacrum.webp){.monster-image .masked}
 
