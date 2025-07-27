@@ -1334,7 +1334,6 @@ a.burnt-parchment,
 }
 
 /* Print Styles */
-
 .break-before {
     page-break-before: always;
 }
@@ -1481,6 +1480,11 @@ a.burnt-parchment,
         content: "Foe Foundry";
         font-weight: bold;
         color: var(--fg-color);
+    }
+
+    .break-after+.stat-block,
+    .break-after+.statblock-wrapper {
+        margin-top: 2em;
     }
 
     .stat-block,

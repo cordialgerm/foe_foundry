@@ -36,7 +36,7 @@ class _Simulacrum(WizardPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         feature = Feature(
-            name="Illusory Reality",
+            name="Illusory Nature",
             action=ActionType.Feature,
             description=f"Whenever {stats.selfref} is hit by an attack, it fades out of existence and re-appears in an unoccupied location up to 15 feet away.",
         )
