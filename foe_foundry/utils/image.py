@@ -59,7 +59,7 @@ def is_grayscaleish(image_path, grayscale_tolerance=10, grayscale_ratio=0.95):
     grayscale_pixel_ratio = np.mean(max_diff < grayscale_tolerance)
 
     # If enough pixels are grayscale-ish, return True
-    return grayscale_pixel_ratio > grayscale_ratio
+    return bool(grayscale_pixel_ratio > grayscale_ratio)
 
 
 def get_dominant_edge_color(
