@@ -56,7 +56,7 @@ power_weights:
 
 [[!Simulacrum Spellcasting]]
 
-[[Simulacrum Spellcasting]] grants some iconic illusion spells, like *Major Image* and *Greatever Invisibility*, and the ***Illusory Nature*** ability which plays up the evasive and only partially real nature of the [[Simulacrum]].
+[[Simulacrum Spellcasting]] grants some iconic illusion spells, like *Major Image* and *Greater Invisibility*, and the ***Illusory Nature*** ability which plays up the evasive and only partially real nature of the [[Simulacrum]].
 
 [[!Bend Space]]
 
