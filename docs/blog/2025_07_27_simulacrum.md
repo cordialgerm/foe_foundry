@@ -82,7 +82,7 @@ Both [[Mirror Image]] and [[Phantom Mirage]] are illusory-themed powers that hel
 
 ## Simulacrum Plot Hooks
 
-Using a [[Simulacrum]] offers some wonderful opportunities for unique and unexepcted adventure hooks like these:
+Using a [[Simulacrum]] offers some wonderful opportunities for unique and unexpected adventure hooks like these:
 
 - When the party rescues an important NPC that they are seeking, they find the NPC as well as a [[Simulacrum]] copy of the NPC bound together, arguing over which one is the real one
 - The PCs are accosted by the [[Simulacrum]] of the [[Archmage]] controlling this region, acting as its agent. The agent demands the customary tribute for entering its masters territory: a magic item or a secret piece of magical lore
