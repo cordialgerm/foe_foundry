@@ -14,7 +14,7 @@ from foe_foundry.environs import EnvironmentAffinity
 from foe_foundry.features import Feature
 from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
-from foe_foundry.utils import find_image, find_lore
+from foe_foundry.utils import find_lore, find_monster_image
 from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
 
 from ..statblocks import BaseStatblock, Statblock  # noqa
@@ -84,11 +84,11 @@ class MonsterTemplate:
     @cached_property
     def image_urls(self) -> dict[str, list[Path]]:
         urls = {}
-        urls[self.key] = find_image(self.key)
+        urls[self.key] = find_monster_image(self.key)
         for variant in self.variants:
-            image_urls = find_image(variant.key)
+            image_urls = find_monster_image(variant.key)
             if len(image_urls) == 0:
-                image_urls = find_image(self.key)
+                image_urls = find_monster_image(self.key)
             urls[variant.key] = image_urls
         return urls
 

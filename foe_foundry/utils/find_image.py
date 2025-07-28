@@ -1,22 +1,21 @@
 from pathlib import Path
 
 
-def find_image(name: str) -> list[Path]:
-    img_dir = Path(__file__).parent.parent.parent / "docs" / "img"
+def find_monster_image(name: str) -> list[Path]:
+    img_dir = Path(__file__).parent.parent.parent / "docs" / "img" / "monsters"
+    # Prioritize .webp, but allow all extensions
+    extensions = [".webp", ".png", ".jpeg", ".gif"]
+    extensions_set = set(extensions)
 
-    extensions = [
-        ".png",
-        ".jpeg",
-        ".gif",
-        ".webp",
-    ]
+    # Use rglob with name as part of the pattern for efficiency
+    candidates = img_dir.rglob(f"{name}.*")
+    matches = [f for f in candidates if f.is_file() and f.suffix in extensions_set]
 
-    paths = []
-
-    for ext in extensions:
-        paths.extend(img_dir.rglob(f"**/{name}{ext}"))
-
-    return paths
+    # Sort so .webp comes first, then others in order
+    matches.sort(
+        key=lambda p: extensions.index(p.suffix) if p.suffix in extensions else 99
+    )
+    return matches
 
 
 def find_lore(name: str) -> Path | None:
