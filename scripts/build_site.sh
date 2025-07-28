@@ -30,7 +30,7 @@ if [ "$PROFILE" -eq 1 ]; then
     exit 1
   fi
   echo "Profiling mkdocs build with py-spy..."
-  py-spy record -o mkdocs-profile.svg -- poetry run mkdocs build --clean
+  sudo -E py-spy record -o mkdocs-profile.svg -- poetry run mkdocs build --clean
   echo "Profile saved to mkdocs-profile.svg"
 else
   poetry run mkdocs build --clean
