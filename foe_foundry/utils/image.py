@@ -1,3 +1,4 @@
+from collections import Counter
 from pathlib import Path
 from typing import Optional
 
@@ -66,7 +67,6 @@ def get_dominant_edge_color(
     image_path: str | Path,
     edge_thickness: float = 0.05,
     threshold: float = 0.1,
-    quant_level: int = 8,
     ignore_white: bool = True,
 ) -> Optional[str]:
     """
@@ -120,13 +120,20 @@ def get_dominant_edge_color(
         axis=0,
     )
 
-    # Vectorized quantization of all edge pixels
+    # Hardcode quantization level to 8 for bincount optimization
+    quant_level = 8
     quantized = (edge_pixels // quant_level) * quant_level
-    # Find unique quantized colors and their counts
-    q_colors, q_counts = np.unique(quantized, axis=0, return_counts=True)
-    dominant_idx = np.argmax(q_counts)
-    dominant_bucket = q_colors[dominant_idx]
-    count = q_counts[dominant_idx]
+    # Fix: cast to int32 to avoid overflow when multiplying
+    quantized = quantized.astype(np.int32)
+    encoded = quantized[:, 0] * 256 * 256 + quantized[:, 1] * 256 + quantized[:, 2]
+    counts = np.bincount(encoded)
+    dominant_encoded = np.argmax(counts)
+    count = counts[dominant_encoded]
+    # Decode back to RGB
+    r = (dominant_encoded // (256 * 256)) % 256
+    g = (dominant_encoded // 256) % 256
+    b = dominant_encoded % 256
+    dominant_bucket = np.array([r, g, b])
 
     if count / edge_pixels.shape[0] < threshold:
         return None  # no dominant color
@@ -134,12 +141,25 @@ def get_dominant_edge_color(
     # Find all pixels in the dominant bucket
     mask = np.all(quantized == dominant_bucket, axis=1)
     bucket_pixels = edge_pixels[mask]
-    # Find the mode (most common pixel) in the dominant bucket
+
+    # Find the mode (most common pixel) in the dominant bucket using approximate mode (random sample)
     if len(bucket_pixels) == 0:
         return None
-    # Use np.unique to find the most common pixel
-    uniq_pix, pix_counts = np.unique(bucket_pixels, axis=0, return_counts=True)
-    rgb = uniq_pix[np.argmax(pix_counts)]
+
+    sample_size = min(1000, len(bucket_pixels))
+    if len(bucket_pixels) > sample_size:
+        rng = np.random.default_rng()
+        sample_idx = rng.choice(len(bucket_pixels), size=sample_size, replace=True)
+        sample_pixels = bucket_pixels[sample_idx]
+    else:
+        sample_pixels = bucket_pixels
+
+    color_tuples = map(tuple, sample_pixels)
+    most_common = Counter(color_tuples).most_common(1)
+    if most_common:
+        rgb = np.array(most_common[0][0])
+    else:
+        return None
 
     # Ignore if the dominant color is very close to pure white
     if ignore_white and np.all(rgb >= 252):
