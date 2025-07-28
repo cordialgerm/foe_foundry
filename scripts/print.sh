@@ -2,7 +2,7 @@
 
 # === CONFIGURATION ===
 BASE_URL="http://127.0.0.1:8080"
-WAIT_TIME=20
+WAIT_TIME=60
 RELATIVE_PATH="$1"
 
 if [ -z "$RELATIVE_PATH" ]; then

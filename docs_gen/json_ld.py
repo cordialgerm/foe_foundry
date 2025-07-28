@@ -1,20 +1,17 @@
 import json
 import logging
-import os
 from datetime import datetime
 
 from mkdocs.structure.pages import Page
 from mkdocs_blogging_plugin.util import Util as BloggingUtil
 
+from foe_foundry.utils.env import get_base_url
+
 log = logging.getLogger("mkdocs")
 
 
 def set_json_ld_on_page(page: Page):
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set.")
-    if base_url.endswith("/"):
-        base_url = base_url[:-1]
+    base_url = get_base_url()
 
     def image_url(path: str = "") -> str:
         if path is None or path == "":

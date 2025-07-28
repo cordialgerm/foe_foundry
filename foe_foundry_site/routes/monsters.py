@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 from typing import Annotated
 
 import numpy as np
@@ -23,10 +22,6 @@ def new_monsters(
     """
     Returns a list of top N new monsters that have been added recently
     """
-    base_url = os.environ.get("SITE_URL")
-    if base_url is None:
-        raise ValueError("SITE_URL environment variable is not set")
-
     if limit is None:
         limit = 5
 
