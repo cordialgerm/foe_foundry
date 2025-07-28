@@ -43,7 +43,11 @@ else
 fi
 
 # Prepare the search index
-poetry run python -m foe_foundry_data
+if [ "$FAST_BUILD" = true ]; then
+    poetry run python -m foe_foundry_data --fast
+else
+    poetry run python -m foe_foundry_data
+fi
 
 
 # Check for --run flag
@@ -57,5 +61,9 @@ done
 # Optionally run the site if --run flag is present
 if [ "$RUN_SITE" = true ]; then
     echo "Running foe_foundry_site..."
-    poetry run python -m foe_foundry_site
+    if [ "$FAST_BUILD" = true ]; then
+        poetry run python -m foe_foundry_site --fast
+    else
+        poetry run python -m foe_foundry_site
+    fi
 fi

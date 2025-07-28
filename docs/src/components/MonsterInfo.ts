@@ -62,6 +62,26 @@ export class MonsterInfo extends LitElement {
       align-items: center;
       flex-direction: column;
     }
+
+    .monster-name {
+      display: inline;
+      overflow-wrap: break-word;
+
+      color: var(--primary-color);
+      font-family: var(--stylistic-font);
+      font-size: var(--stylistic-font-size);
+      column-span: all;
+    }
+
+    .monster-name:after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin: 2px auto var(--medium-margin);
+      height: var(--header-border-width);
+      background: var(--primary-color);
+      column-span: all;
+    }
   `;
 
   connectedCallback() {
@@ -102,7 +122,7 @@ export class MonsterInfo extends LitElement {
     return html`
       <div class="monster-info">
         <div class="info-header">
-          <h2>${this.name}</h2>
+          <h3 class="monster-name">${this.name}</h3>
           <p class="tag">${this.tag}</p>
           <p>${this.type} • ${this.cr}</p>
         </div>

@@ -4,4 +4,4 @@ import './components/MonsterArt';
 import './components/PowerLoadout';
 import './components/MonsterInfo';
 import './components/MonsterCard';
-import './pages/generator';
+import './components/MonsterBuilder';

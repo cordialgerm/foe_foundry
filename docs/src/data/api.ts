@@ -99,6 +99,7 @@ export class ApiMonsterStore implements MonsterStore {
         const statblock_html = result["statblock_html"];
         const parser = new DOMParser();
         const statblockElement = parser.parseFromString(statblock_html, 'text/html').body.firstElementChild as HTMLElement;
+        statblockElement.part = 'stat-block';
 
         // Highlight changes
         if (change?.changedPower) {
