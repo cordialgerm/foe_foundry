@@ -52,6 +52,7 @@ export class ApiMonsterStore implements MonsterStore {
         return {
             key: data.key ?? key,
             name: data.name,
+            tagLine: data.tag_line ?? '',
             image: (data.primary_image || (data.images && data.images[0])) ?? '',
             backgroundImage: data.background_image,
             creatureType: data.creature_type,
@@ -59,7 +60,6 @@ export class ApiMonsterStore implements MonsterStore {
             monsterFamilies: [], // Not present in API, set empty or infer if possible
             size: data.size,
             cr: formatCr(data.cr),
-            tagLine: '', // Not present in API, set empty or infer if possible
             loadouts: (data.loadouts || []).map((loadout: any) => ({
                 key: loadout.key,
                 name: loadout.name,

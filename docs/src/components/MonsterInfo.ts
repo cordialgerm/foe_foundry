@@ -31,46 +31,48 @@ export class MonsterInfo extends LitElement {
     }
 
     .info-header {
-      text-align: center;
-    }
-
-    .info-header h2 {
-      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 0.5rem;
     }
 
-    .info-header p {
+    .tag {
+      font-style: italic;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 0.5rem;
       margin-bottom: 0.25rem;
       margin-top: 0.25rem;
     }
 
-    .info-header .tag {
-      font-style: italic;
-    }
-
-    .info-header .tag ::before {
-      content: '"';
-    }
-
-    .info-header .tag ::after {
-      content: '"';
+    .type-cr {
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 0.5rem;
+      margin-bottom: 0.25rem;
+      margin-top: 0.25rem;
     }
 
     .rating-container {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
       flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0.5rem;
+      gap: 0.25rem;
     }
 
     .monster-name {
       display: inline;
       overflow-wrap: break-word;
-
       color: var(--primary-color);
       font-family: var(--stylistic-font);
       font-size: var(--stylistic-font-size);
       column-span: all;
+      text-align: left;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     .monster-name:after {
@@ -124,7 +126,7 @@ export class MonsterInfo extends LitElement {
         <div class="info-header">
           <h3 class="monster-name">${this.name}</h3>
           <p class="tag">${this.tag}</p>
-          <p>${this.type} • ${this.cr}</p>
+          <p class="type-cr">${this.type} • ${this.cr}</p>
         </div>
 
         <div class="rating-container">

@@ -28,7 +28,6 @@ export class MonsterCard extends LitElement {
   static styles = css`
     :host {
       display: block;
-      margin: 1rem;
       padding: 2px;
 
       border: 1px solid var(--tertiary-color);
@@ -47,8 +46,8 @@ export class MonsterCard extends LitElement {
 
     .randomize-button {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
+      top: 2px;
+      right: 2px;
       background: transparent;
       border: 1px solid var(--bs-light);
       color: var(--bs-light);

@@ -16,7 +16,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     .left-panel {
-      flex: 0 0 350px;
+      flex: 0 0 400px;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -28,7 +28,6 @@ export class MonsterBuilder extends LitElement {
     }
 
     #statblock-holder {
-      margin-top: 1rem;
       width: 100%;
     }
 
