@@ -6,20 +6,51 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 @customElement('svg-icon')
 export class SvgIcon extends LitElement {
 
-    static styles = css`
-    :host {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-    }
-    svg {
-      width: 100%;
-      height: 100%;
-    }
-  `;
+    static styles = [
+        css`
+        :host {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+        }
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+
+        .jiggle-on-hover:hover svg {
+          filter: drop-shadow(0 0 5px var(--box-shadow-color));
+          animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
+        }
+        @keyframes jiggle {
+          0% {
+            transform: rotate(0deg) translateX(0);
+          }
+          25% {
+            transform: rotate(1.5deg) translateX(1px);
+          }
+          50% {
+            transform: rotate(0deg) translateX(0);
+          }
+          75% {
+            transform: rotate(-1.5deg) translateX(-1px);
+          }
+          100% {
+            transform: rotate(0deg) translateX(0);
+          }
+        }
+      `
+    ];
+
 
     @property()
     src = '';
+
+    /**
+     * If true, applies the jiggle animation to the icon
+     */
+    @property({ type: Boolean })
+    jiggle = false;
 
     private svgContent: string = '';
 
@@ -36,7 +67,17 @@ export class SvgIcon extends LitElement {
     }
 
     render() {
-        return html`<span class="svg-icon placeholder">${unsafeHTML(this.svgContent)}</span>`;
+        const classes = {
+            'svg-icon': true,
+            'placeholder': true,
+            'jiggle-on-hover': this.jiggle
+        };
+        // Lit 2.x: classMap is not imported, so use manual join
+        const classString = Object.entries(classes)
+            .filter(([_, v]) => v)
+            .map(([k]) => k)
+            .join(' ');
+        return html`<span class="${classString}">${unsafeHTML(this.svgContent)}</span>`;
     }
 }
 

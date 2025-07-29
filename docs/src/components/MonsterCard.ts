@@ -47,8 +47,8 @@ export class MonsterCard extends LitElement {
 
     .randomize-button {
       position: absolute;
-      top: 2px;
-      right: 2px;
+      top: 5px;
+      right: 5px;
       background: transparent;
       color: var(--bs-light);
       border: none;
@@ -91,34 +91,6 @@ export class MonsterCard extends LitElement {
 
         100% {
             transform: rotate(720deg) scale(1) translateX(0);
-        }
-    }
-
-    /* Hover effect: glow + gentle jiggle */
-    .randomize-button:hover .randomize-icon {
-        filter: drop-shadow(0 0 5px var(--box-shadow-color));
-        animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
-    }
-
-    @keyframes jiggle {
-        0% {
-            transform: rotate(0deg) translateX(0);
-        }
-
-        25% {
-            transform: rotate(1.5deg) translateX(1px);
-        }
-
-        50% {
-            transform: rotate(0deg) translateX(0);
-        }
-
-        75% {
-            transform: rotate(-1.5deg) translateX(-1px);
-        }
-
-        100% {
-            transform: rotate(0deg) translateX(0);
         }
     }
   `;
@@ -271,6 +243,7 @@ export class MonsterCard extends LitElement {
             >
               <svg-icon
                 class="randomize-icon"
+                jiggle="true"
                 src="dice-twenty-faces-twenty"
               ></svg-icon>
             </button>

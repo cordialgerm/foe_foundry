@@ -233,6 +233,7 @@ export class PowerLoadout extends LitElement {
             ${loadout.name}
             <svg-icon
               class="edit-icon"
+              jiggle="true"
               src="pencil"
               title="Customize by choosing a power from the list below"
               aria-label="Customize by choosing a power from the list below"
@@ -253,6 +254,7 @@ export class PowerLoadout extends LitElement {
             ${currentPower ? html`
               <svg-icon
                 class="power-icon"
+                jiggle="true"
                 src="${currentPower.icon}"
               ></svg-icon>
               <span>${currentPower.name}</span>
