@@ -79,6 +79,13 @@ export class PowerLoadout extends LitElement {
       fill: currentColor;
     }
 
+    .edit-icon {
+      margin: 5px;
+      width: 0.9rem;
+      height: 0.9rem;
+      cursor: pointer;
+    }
+
     .dropdown-menu {
       background-color: var(--bs-dark);
       border: 1px solid var(--bs-secondary);
@@ -222,7 +229,17 @@ export class PowerLoadout extends LitElement {
     return html`
       <div class="power-slot-block" @keydown=${this.handleKeydown}>
         <div class="power-slot-header">
-          <h4 class="power-slot-title">${loadout.name}</h4>
+          <h4 class="power-slot-title">
+            ${loadout.name}
+            <svg-icon
+              class="edit-icon"
+              src="pencil"
+              title="Customize by choosing a power from the list below"
+              aria-label="Customize by choosing a power from the list below"
+              tabindex="0"
+              @click=${this.toggleDropdown}
+            ></svg-icon>
+          </h4>
           <span class="power-slot-flavor">${loadout.flavorText}</span>
         </div>
 
