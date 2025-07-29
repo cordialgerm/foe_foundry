@@ -29,6 +29,8 @@ export class MonsterBuilder extends LitElement {
 
     #statblock-holder {
       width: 100%;
+      transition: height 0.3s cubic-bezier(0.4,0,0.2,1);
+      overflow: hidden;
     }
 
     @keyframes pop-in {
@@ -93,7 +95,7 @@ export class MonsterBuilder extends LitElement {
         const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
         let prevHeight: string | null = null;
         if (statblockHolder) {
-            // Store current height and set it as an explicit style to prevent flicker
+            // Store current height and set it as an explicit style to prevent flicker/animate
             prevHeight = `${statblockHolder.offsetHeight}px`;
             statblockHolder.style.height = prevHeight;
             statblockHolder.innerHTML = '';
@@ -133,11 +135,22 @@ export class MonsterBuilder extends LitElement {
         const statblockElement = await this.monsters.getStatblock(request, change);
         if (statblockHolder && statblockElement) {
             statblockHolder.appendChild(statblockElement);
-            // Remove the explicit height after the new statblock is rendered
-            // Use requestAnimationFrame to ensure DOM update
-            requestAnimationFrame(() => {
-                statblockHolder.style.height = '';
-            });
+
+            // Animate to new height
+            await new Promise(requestAnimationFrame); // Wait for DOM update
+
+            // force the height to the current scrollHeight, triggering an animation
+            const newHeight = `${statblockHolder.scrollHeight}px`;
+            statblockHolder.style.height = newHeight;
+
+            // Wait for the animation to complete and then remove the explicit height
+            const onTransitionEnd = (e: TransitionEvent) => {
+                if (e.propertyName === 'height') {
+                    statblockHolder.style.height = '';
+                    statblockHolder.removeEventListener('transitionend', onTransitionEnd);
+                }
+            };
+            statblockHolder.addEventListener('transitionend', onTransitionEnd);
         }
     }
 

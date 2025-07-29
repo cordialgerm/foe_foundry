@@ -50,23 +50,76 @@ export class MonsterCard extends LitElement {
       top: 2px;
       right: 2px;
       background: transparent;
-      border: 1px solid var(--bs-light);
       color: var(--bs-light);
-      border-radius: 0.375rem;
-      padding: 0.5rem;
+      border: none;
       cursor: pointer;
       transition: all 0.15s ease-in-out;
       z-index: 10;
     }
 
-    .randomize-button:hover {
-      background-color: var(--bs-light);
-      color: var(--bs-dark);
+    .randomize-icon {
+      width: 2rem;
+      height: 2rem;
     }
 
-    .randomize-icon {
-      width: 1.5rem;
-      height: 1.5rem;
+    .randomize-button.rolling {
+        animation: roll-dice 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @keyframes roll-dice {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+
+        50% {
+            transform: rotate(720deg) scale(1.2);
+            /* 2 full spins */
+        }
+
+        70% {
+            transform: rotate(720deg) scale(0.95);
+            /* squish bounce */
+        }
+
+        85% {
+            transform: rotate(720deg) scale(1.05) translateX(-2px);
+        }
+
+        95% {
+            transform: rotate(720deg) scale(1.02) translateX(2px);
+        }
+
+        100% {
+            transform: rotate(720deg) scale(1) translateX(0);
+        }
+    }
+
+    /* Hover effect: glow + gentle jiggle */
+    .randomize-button:hover .randomize-icon {
+        filter: drop-shadow(0 0 5px var(--box-shadow-color));
+        animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
+    }
+
+    @keyframes jiggle {
+        0% {
+            transform: rotate(0deg) translateX(0);
+        }
+
+        25% {
+            transform: rotate(1.5deg) translateX(1px);
+        }
+
+        50% {
+            transform: rotate(0deg) translateX(0);
+        }
+
+        75% {
+            transform: rotate(-1.5deg) translateX(-1px);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(0);
+        }
     }
   `;
 
@@ -147,7 +200,23 @@ export class MonsterCard extends LitElement {
     }));
   };
 
-  private handleRandomizeAll = () => {
+  private handleRandomizeAll = (event?: Event) => {
+    // Animate the button
+    let button: HTMLButtonElement | null = null;
+    if (event && event.currentTarget instanceof HTMLButtonElement) {
+      button = event.currentTarget;
+    } else {
+      // fallback: try to find the button in shadowRoot
+      button = this.shadowRoot?.querySelector('.randomize-button') ?? null;
+    }
+    if (button) {
+      button.classList.add('rolling');
+      button.disabled = true;
+      setTimeout(() => {
+        button!.classList.remove('rolling');
+        button!.disabled = false;
+      }, 600);
+    }
 
     // Find all power-loadout elements and call randomize on each, suppressing individual events
     const powerLoadouts = this.shadowRoot?.querySelectorAll<PowerLoadout>('power-loadout') ?? [];
@@ -197,7 +266,7 @@ export class MonsterCard extends LitElement {
           <div class="monster-card">
             <button
               class="randomize-button"
-              @click=${this.handleRandomizeAll}
+              @click=${(e: Event) => this.handleRandomizeAll(e)}
               title="Randomize all powers"
             >
               <svg-icon

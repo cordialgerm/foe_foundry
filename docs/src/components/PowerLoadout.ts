@@ -243,7 +243,7 @@ export class PowerLoadout extends LitElement {
               <span>No powers available</span>
             `}
             <svg class="dropdown-chevron ${this.dropdownOpen ? 'open' : ''}"
-                 width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                 width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
               <path d="M8 10.5L3.5 6h9L8 10.5z"/>
             </svg>
           </button>
