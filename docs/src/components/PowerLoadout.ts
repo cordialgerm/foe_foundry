@@ -25,8 +25,8 @@ export class PowerLoadout extends LitElement {
     }
 
     .power-slot-block {
-      margin-bottom: 0.5rem;
-      padding: 0.5rem;
+      margin-bottom: 0rem;
+      padding: 0.25rem;
       background-color: var(--bs-dark);
       position: relative;
     }
@@ -35,7 +35,7 @@ export class PowerLoadout extends LitElement {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
       flex-wrap: wrap;
     }
 
@@ -43,7 +43,7 @@ export class PowerLoadout extends LitElement {
       margin-bottom: 0;
       margin-top: 0;
       margin-right: 0;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 500;
     }
 

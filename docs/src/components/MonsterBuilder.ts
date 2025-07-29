@@ -91,7 +91,13 @@ export class MonsterBuilder extends LitElement {
         if (!monsterCard) return;
 
         const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
-        if (statblockHolder) statblockHolder.innerHTML = '';
+        let prevHeight: string | null = null;
+        if (statblockHolder) {
+            // Store current height and set it as an explicit style to prevent flicker
+            prevHeight = `${statblockHolder.offsetHeight}px`;
+            statblockHolder.style.height = prevHeight;
+            statblockHolder.innerHTML = '';
+        }
 
         // Get selected powers
         const selectedPowers = monsterCard.getSelectedPowers();
@@ -127,6 +133,11 @@ export class MonsterBuilder extends LitElement {
         const statblockElement = await this.monsters.getStatblock(request, change);
         if (statblockHolder && statblockElement) {
             statblockHolder.appendChild(statblockElement);
+            // Remove the explicit height after the new statblock is rendered
+            // Use requestAnimationFrame to ensure DOM update
+            requestAnimationFrame(() => {
+                statblockHolder.style.height = '';
+            });
         }
     }
 

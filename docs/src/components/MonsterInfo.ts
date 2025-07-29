@@ -42,16 +42,18 @@ export class MonsterInfo extends LitElement {
       text-align: left;
       align-self: flex-start;
       margin-left: 0.5rem;
-      margin-bottom: 0.25rem;
-      margin-top: 0.25rem;
+      margin-bottom: 0.1rem;
+      margin-top: 0.1rem;
+      font-size: 0.9rem;
     }
 
     .type-cr {
       text-align: left;
       align-self: flex-start;
       margin-left: 0.5rem;
-      margin-bottom: 0.25rem;
-      margin-top: 0.25rem;
+      margin-bottom: 0.1rem;
+      margin-top: 0.1rem;
+      font-size: 0.9rem;
     }
 
     .rating-container {
