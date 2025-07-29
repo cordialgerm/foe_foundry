@@ -73,6 +73,13 @@ export class ApiMonsterStore implements MonsterStore {
                 selectionCount: loadout.selection_count,
                 locked: loadout.locked,
                 replaceWithSpeciesPowers: loadout.replace_with_species_powers
+            })),
+            relatedMonsters: (data.related_monsters || []).map((related: any) => ({
+                key: related.key,
+                name: related.name,
+                cr: formatCr(related.cr),
+                template: related.template,
+                sameTemplate: related.same_template
             }))
         };
     }

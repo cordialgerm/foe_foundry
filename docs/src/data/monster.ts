@@ -1,6 +1,14 @@
 import { PowerLoadout, Power } from './powers';
 
 
+export interface RelatedMonster {
+    key: string;
+    name: string;
+    cr: string;
+    template: string;
+    sameTemplate: boolean;
+}
+
 export interface Monster {
     key: string;
     name: string;
@@ -13,6 +21,7 @@ export interface Monster {
     cr: string;
     tagLine: string;
     loadouts: PowerLoadout[];
+    relatedMonsters: RelatedMonster[];
 }
 
 export interface StatblockRequest {

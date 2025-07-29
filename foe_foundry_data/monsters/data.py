@@ -91,6 +91,15 @@ class PowerLoadoutModel:
 
 
 @dataclass(kw_only=True)
+class RelatedMonsterModel:
+    key: str
+    name: str
+    cr: float
+    template: str
+    same_template: bool
+
+
+@dataclass(kw_only=True)
 class MonsterModel:
     name: str
     cr: float
@@ -107,6 +116,7 @@ class MonsterModel:
     has_lore: bool
     images: list[str]
     loadouts: list[PowerLoadoutModel]
+    related_monsters: list[RelatedMonsterModel]
     primary_image: str | None
     background_image: str | None = None
     primary_image_has_transparent_edges: bool
@@ -186,6 +196,17 @@ class MonsterModel:
         if not background_image_path.exists():
             background_image = None
 
+        related_monsters = [
+            RelatedMonsterModel(
+                key=m.key,
+                name=m.name,
+                cr=m.cr,
+                template=template.name,
+                same_template=True,
+            )
+            for m in template.monsters
+        ]
+
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
@@ -201,6 +222,7 @@ class MonsterModel:
             has_lore=template.lore_md is not None,
             images=all_images,
             loadouts=loadouts,
+            related_monsters=related_monsters,
             primary_image=primary_image,
             background_image=urljoin(base_url, background_image),
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
