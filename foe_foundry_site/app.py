@@ -20,13 +20,13 @@ log = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app):
-    if os.environ.get("SKIP_WHOOSH_INIT"):
-        yield
+    # load the power index at startup unless SKIP_WHOOSH_INIT is set
+    if not os.environ.get("SKIP_WHOOSH_INIT"):
+        log.info("Initializing FastAPI app...")
+        load_power_index()
+        log.info("Running simple query to prime the index...")
+        search_powers("Pack Tactics", limit=1)
 
-    log.info("Initializing FastAPI app...")
-    load_power_index()
-    log.info("Running simple query to prime the index...")
-    search_powers("Pack Tactics", limit=1)
     yield
 
 

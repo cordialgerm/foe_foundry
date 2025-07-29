@@ -7,6 +7,7 @@ import { Task } from '@lit/task';
 import './MonsterArt';
 import './MonsterInfo';
 import './PowerLoadout';
+import type { PowerLoadout } from './PowerLoadout';
 import './SvgIcon';
 
 @customElement('monster-card')
@@ -147,21 +148,31 @@ export class MonsterCard extends LitElement {
   };
 
   private handleRandomizeAll = () => {
-    // Find all power-loadout elements and call randomize on each
-    const powerLoadouts = this.shadowRoot?.querySelectorAll('power-loadout');
-    powerLoadouts?.forEach((loadout: any) => {
-      if (typeof loadout.randomize === 'function') {
-        loadout.randomize();
-      }
+
+    // Find all power-loadout elements and call randomize on each, suppressing individual events
+    const powerLoadouts = this.shadowRoot?.querySelectorAll<PowerLoadout>('power-loadout') ?? [];
+    powerLoadouts.forEach(loadout => {
+      loadout.suppressEvents(true);
+      loadout.randomize();
+      loadout.suppressEvents(false);
     });
+
+    // Fire a single reroll event
+    this.dispatchEvent(new CustomEvent('monster-changed', {
+      detail: {
+        changeType: 'reroll',
+        monsterCard: this
+      },
+      bubbles: true,
+      composed: true
+    }));
   };
 
   public getSelectedPowers(): Array<Power> {
-    const powerLoadouts = this.shadowRoot?.querySelectorAll('power-loadout');
-    if (!powerLoadouts) return [];
+    const powerLoadouts = this.shadowRoot?.querySelectorAll<PowerLoadout>('power-loadout') ?? [];
     return Array.from(powerLoadouts)
-      .map((loadout: any) => (typeof loadout.getSelectedPower === 'function' ? loadout.getSelectedPower() : undefined))
-      .filter(power => power !== undefined);
+      .map(loadout => loadout.getSelectedPower())
+      .filter((power): power is Power => power !== undefined);
   }
 
   /**

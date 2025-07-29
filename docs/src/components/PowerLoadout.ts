@@ -142,6 +142,14 @@ export class PowerLoadout extends LitElement {
 
   @state()
   private selectedPower?: Power;
+  /**
+   * Suppress firing events (used for reroll-all)
+   */
+  private _suppressEvents = false;
+
+  public suppressEvents(s: boolean) {
+    this._suppressEvents = s;
+  }
 
   /**
    * Public getter to expose the currently selected power
@@ -165,11 +173,14 @@ export class PowerLoadout extends LitElement {
     this.dropdownOpen = false;
 
     // Dispatch a custom event to notify the parent about the selected power
-    this.dispatchEvent(new CustomEvent('power-selected', {
-      detail: { power },
-      bubbles: true,
-      composed: true
-    }));
+    // Only dispatch if not suppressed
+    if (!this._suppressEvents) {
+      this.dispatchEvent(new CustomEvent('power-selected', {
+        detail: { power },
+        bubbles: true,
+        composed: true
+      }));
+    }
   }
 
   public randomize() {
@@ -177,7 +188,16 @@ export class PowerLoadout extends LitElement {
 
     const randomIndex = Math.floor(Math.random() * this.powers.length);
     const randomPower = this.powers[randomIndex];
-    this.selectPower(randomPower);
+    // Only dispatch if not suppressed
+    if (this._suppressEvents) {
+      // Temporarily select without firing event
+      const prev = this._suppressEvents;
+      this._suppressEvents = true;
+      this.selectPower(randomPower);
+      this._suppressEvents = prev;
+    } else {
+      this.selectPower(randomPower);
+    }
   }
 
   private handleKeydown(event: KeyboardEvent) {
