@@ -86,51 +86,56 @@ export class MonsterBuilder extends LitElement {
         }
     }
 
+
+    private async handleMonsterChanged(monsterCard: any, eventDetail?: any) {
+        if (!monsterCard) return;
+
+        const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
+        if (statblockHolder) statblockHolder.innerHTML = '';
+
+        // Get selected powers
+        const selectedPowers = monsterCard.getSelectedPowers();
+
+        const request = {
+            monsterKey: monsterCard.monsterKey,
+            powers: selectedPowers,
+            hpMultiplier: monsterCard.hpMultiplier,
+            damageMultiplier: monsterCard.damageMultiplier,
+        };
+
+        // Highlight changed powers if present in event.detail.power
+        let change: StatblockChange | null = null;
+        if (eventDetail?.power && eventDetail.power.key) {
+            change = {
+                type: StatblockChangeType.PowerChanged,
+                changedPower: eventDetail.power
+            };
+        }
+        else if (eventDetail?.changeType === 'damage-changed') {
+            change = {
+                type: StatblockChangeType.DamageChanged,
+                changedPower: null
+            };
+        }
+        else if (eventDetail?.changeType === 'hp-changed') {
+            change = {
+                type: StatblockChangeType.HpChanged,
+                changedPower: null
+            };
+        }
+
+        const statblockElement = await this.monsters.getStatblock(request, change);
+        if (statblockHolder && statblockElement) {
+            statblockHolder.appendChild(statblockElement);
+        }
+    }
+
     setupMonsterChanged() {
         const card = this.shadowRoot?.querySelector('monster-card');
         if (card) {
             card.addEventListener('monster-changed', async (event: any) => {
                 const monsterCard = event.detail.monsterCard;
-                if (!monsterCard) return;
-
-                const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
-                if (statblockHolder) statblockHolder.innerHTML = '';
-
-                // Get selected powers
-                const selectedPowers = monsterCard.getSelectedPowers();
-
-                const request = {
-                    monsterKey: monsterCard.monsterKey,
-                    powers: selectedPowers,
-                    hpMultiplier: monsterCard.hpMultiplier,
-                    damageMultiplier: monsterCard.damageMultiplier,
-                };
-
-                // Highlight changed powers if present in event.detail.power
-                let change: StatblockChange | null = null;
-                if (event.detail.power && event.detail.power.key) {
-                    change = {
-                        type: StatblockChangeType.PowerChanged,
-                        changedPower: event.detail.power
-                    };
-                }
-                else if (event.detail.changeType === 'damage-changed') {
-                    change = {
-                        type: StatblockChangeType.DamageChanged,
-                        changedPower: null
-                    };
-                }
-                else if (event.detail.changeType === 'hp-changed') {
-                    change = {
-                        type: StatblockChangeType.HpChanged,
-                        changedPower: null
-                    };
-                }
-
-                const statblockElement = await this.monsters.getStatblock(request, change);
-                if (statblockHolder && statblockElement) {
-                    statblockHolder.appendChild(statblockElement);
-                }
+                await this.handleMonsterChanged(monsterCard, event.detail);
             });
         }
     }
@@ -138,6 +143,11 @@ export class MonsterBuilder extends LitElement {
     async firstUpdated() {
         this.setupMonsterChanged();
         await this.adoptSiteCss();
+        // Show statblock on initial setup
+        const card = this.shadowRoot?.querySelector('monster-card');
+        if (card) {
+            await this.handleMonsterChanged(card);
+        }
     }
 
     render() {

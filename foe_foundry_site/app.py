@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -19,6 +20,9 @@ log = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app):
+    if os.environ.get("SKIP_WHOOSH_INIT"):
+        yield
+
     log.info("Initializing FastAPI app...")
     load_power_index()
     log.info("Running simple query to prime the index...")

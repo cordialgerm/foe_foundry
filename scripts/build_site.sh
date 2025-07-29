@@ -14,7 +14,6 @@ export PYTHONPATH=.
 export SITE_URL=${SITE_URL:-http://127.0.0.1:8080/}
 export PORT=${PORT:-8080}
 
-
 # Check for --fast flag
 FAST_BUILD=false
 for arg in "$@"; do
@@ -22,6 +21,11 @@ for arg in "$@"; do
         FAST_BUILD=true
     fi
 done
+
+# If --fast is set, set SKIP_WHOOSH_INIT env variable
+if [ "$FAST_BUILD" = true ]; then
+    export SKIP_WHOOSH_INIT=1
+fi
 
 # Build the static content unless --fast is present
 if [ "$FAST_BUILD" = false ]; then
