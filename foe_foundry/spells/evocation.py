@@ -25,12 +25,7 @@ Sunburst: Spell = Spell(
     concentration=False,
     action_type=ActionType.Action,
     save=AbilityScore.DEX,
-    description="""A brilliant sunlight flashes in a 60-foot radius sphere centered on a point you choose within range. Each creature in that area must make a Dexterity saving throw. A creature takes 12d6 radiant damage on a failed save, or half as much damage on a successful one. An affected nonmagical light source within the area is extinguished.
-If a creature is in dim light or darkness when it fails its saving throw, it is blinded until the end of your next turn. If a creature is in bright light when it fails its saving throw, it is blinded until the end of its next turn. The spell dispels any darkness in the area that was created by a spell of 8th level or lower.
-The light spreads around corners. It lasts for the duration, and the area is considered bright light. The spell's light is sunlight.
-A creature that has total cover from the point of origin is not affected by the spell. The spell's light is sunlight.
-A creature that has total cover from the point of origin is not affected by the spell.
-The spell's light is sunlight.""",
+    description="""Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.\n\nA creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.\n\nThis spell dispels any darkness in its area that was created by a spell.""",
 )
 
 ArcaneHand = Spell(
@@ -111,9 +106,7 @@ Darkness: Spell = Spell(
     concentration=True,
     action_type=ActionType.Action,
     save=None,
-    description="""Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
-If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
-If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.""",
+    description="""Magical darkness spreads from a point you choose within range to fill a 15-foot radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.\n\nIf the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.\n\nIf any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.""",
     range="60 feet",
 )
 
@@ -139,10 +132,7 @@ Moonbeam: Spell = Spell(
     concentration=True,
     action_type=ActionType.Action,
     save=AbilityScore.CON,
-    description="""A beam of light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain. It must make a Constitution saving throw. On a failed save, it takes 2d10 radiant damage, or half as much damage on a successful one.
-A shapechanger makes its saving throw with disadvantage. A creature that fails the saving throw also has its speed halved until the end of its next turn.
-On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction.
-The spell's area is a cylinder that is 5 feet wide and 40 feet high. The beam of light is 5 feet wide and 40 feet high, and it lasts for the duration.""",
+    description="""A silvery beam of pale light shines down in a 5-foot radius, 40-foot high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.\n\nWhen a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.\n\nA shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light.\n\nOn each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.""",
 )
 
 Fireball: Spell = Spell(
@@ -154,8 +144,8 @@ Fireball: Spell = Spell(
     concentration=False,
     action_type=ActionType.Action,
     save=AbilityScore.DEX,
-    description="A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.",
-    upcast_description="When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    description="""A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.""",
+    upcast_description=None,
     range="150 feet",
 )
 
