@@ -109,8 +109,13 @@ export class MonsterBuilder extends LitElement {
     private monsters = initializeMonsterStore();
 
 
-    onRelatedMonsterChanged(key: string) {
+    onMonsterKeyChanged(key: string) {
         this.monsterKey = key;
+        this.dispatchEvent(new CustomEvent('monster-key-changed', {
+            detail: { monsterKey: key },
+            bubbles: true,
+            composed: true
+        }));
     }
 
     async onMonsterChanged(monsterCard: MonsterCard, eventDetail?: any) {
@@ -231,15 +236,40 @@ export class MonsterBuilder extends LitElement {
                     this.onMonsterChanged(card, null);
                 });
 
+                const previousTemplate = html`<a
+                    href="/generate?monster-key=${monster.previousTemplate.monsterKey}"
+                    @click=${(e: MouseEvent) => {
+                        e.preventDefault();
+                        this.onMonsterKeyChanged(monster.previousTemplate.monsterKey);
+                    }}
+                    style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-right: 1rem; color: var(--primary-color)">
+                    &lt;
+                </a>`
+                const nextTemplate = html`<a
+                    href="/generate?monster-key=${monster.nextTemplate.monsterKey}"
+                    @click=${(e: MouseEvent) => {
+                        e.preventDefault();
+                        this.onMonsterKeyChanged(monster.nextTemplate.monsterKey);
+                    }}
+                    style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-left: 1rem; color: var(--primary-color)">
+                    &gt;
+                </a>`
+
                 return html`
                     <div class="container pamphlet-main">
                         <div class="monster-header">
-                            <h2 class="monster-title">${monster?.name}</h2>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <h2 class="monster-title">
+                                    ${previousTemplate}
+                                    <span>${monster?.monsterTemplate}</span>
+                                    ${nextTemplate}
+                                </h2>
+                            </div>
                             <div class="nav-pills">
                                 ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
                                     <button
                                     class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
-                                    @click=${() => this.onRelatedMonsterChanged(rel.key)}
+                                    @click=${() => this.onMonsterKeyChanged(rel.key)}
                                     >${rel.name || rel.key}</button>
                                 `)}
                             </div>

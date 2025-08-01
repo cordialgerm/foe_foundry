@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+from dataclasses import asdict
 from typing import Annotated
 
 import numpy as np
 from fastapi import APIRouter, HTTPException, Query
+from pydantic.dataclasses import dataclass
 
+from foe_foundry.creatures import AllTemplates
 from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs import MonsterRefResolver
@@ -13,6 +16,56 @@ from .data import MonsterMeta
 
 router = APIRouter(prefix="/api/v1/monsters")
 ref_resolver = MonsterRefResolver()
+
+
+@dataclass(kw_only=True)
+class MonsterWithRelations(MonsterModel):
+    """
+    This model extends the base MonsterModel to include related monster templates.
+    It is used to provide additional context when fetching monster data.
+    """
+
+    previous_template: MonsterMeta
+    next_template: MonsterMeta
+
+
+def add_relations(monster: MonsterModel) -> MonsterWithRelations:
+    """
+    Adds previous and next template relations to the monster model.
+    """
+    template_key = monster.template_key
+    ordered_templates = [
+        t for t in AllTemplates if t.key == template_key or t.lore_md is not None
+    ]
+    template_index = next(
+        (i for i, t in enumerate(ordered_templates) if t.key == template_key), None
+    )
+    if template_index is None:
+        raise ValueError(f"Template with key {template_key} not found in AllTemplates")
+
+    next_template_index = (
+        template_index + 1 if template_index + 1 < len(ordered_templates) else 0
+    )
+    previous_template_index = (
+        template_index - 1 if template_index > 0 else len(ordered_templates) - 1
+    )
+
+    next_template = ordered_templates[next_template_index]
+    next_monster = next(m for m in next_template.monsters)
+    previous_template = ordered_templates[previous_template_index]
+    previous_monster = next(m for m in previous_template.monsters)
+
+    return MonsterWithRelations(
+        **asdict(monster),
+        previous_template=MonsterMeta(
+            monster_key=previous_monster.key,
+            template_key=previous_template.key,
+        ),
+        next_template=MonsterMeta(
+            monster_key=next_monster.key,
+            template_key=next_template.key,
+        ),
+    )
 
 
 @router.get("/new")
@@ -38,7 +91,7 @@ def new_monsters(
 
 
 @router.get("/{template_or_variant_key}")
-def get_template(template_or_variant_key: str) -> MonsterModel:
+def get_template(template_or_variant_key: str) -> MonsterWithRelations:
     ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
     if ref is None:
         raise HTTPException(status_code=404, detail="Template not found")
@@ -49,7 +102,7 @@ def get_template(template_or_variant_key: str) -> MonsterModel:
     if monster is None:
         raise HTTPException(status_code=404, detail="Template not found")
 
-    return monster
+    return add_relations(monster)
 
 
 @router.get("/{template_or_variant_key}/loadouts")

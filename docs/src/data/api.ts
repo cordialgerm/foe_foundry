@@ -80,7 +80,15 @@ export class ApiMonsterStore implements MonsterStore {
                 cr: formatCr(related.cr),
                 template: related.template,
                 sameTemplate: related.same_template
-            }))
+            })),
+            nextTemplate: {
+                monsterKey: data.next_template.monster_key,
+                templateKey: data.next_template.template_key
+            },
+            previousTemplate: {
+                monsterKey: data.previous_template.monster_key,
+                templateKey: data.previous_template.template_key
+            }
         };
     }
 

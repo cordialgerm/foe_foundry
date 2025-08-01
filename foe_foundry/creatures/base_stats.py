@@ -1,5 +1,7 @@
 from functools import cached_property
-from typing import TypeAlias
+from typing import Mapping, TypeAlias
+
+from foe_foundry.utils import name_to_key
 
 from ..attributes import Attributes, proficiency_bonus_for_cr
 from ..benchmarks.fof import FoFBenchmark
@@ -31,7 +33,7 @@ def base_stats(
     monster_key: str,
     species_key: str | None = None,
     cr: float,
-    stats: dict[AbilityScore, AbilityScaling],
+    stats: Mapping[AbilityScore, AbilityScaling],
     hp_multiplier: float = 1.0,
     damage_multiplier: float = 1.0,
 ) -> BaseStatblock:
@@ -42,6 +44,8 @@ def base_stats(
     expected_attack_damage = expected_attack_damage_int + 0.5
     expected_hit = benchmark.benchmark_hit(cr)
     proficiency = proficiency_bonus_for_cr(cr)
+
+    stats = {k: v for k, v in stats.items()}
 
     # default CON modifiers
     if AbilityScore.CON not in stats:
@@ -68,10 +72,10 @@ def base_stats(
 
     return BaseStatblock(
         name=name,
-        template_key=template_key,
-        variant_key=variant_key,
-        monster_key=monster_key,
-        species_key=species_key,
+        template_key=name_to_key(template_key),
+        variant_key=name_to_key(variant_key),
+        monster_key=name_to_key(monster_key),
+        species_key=name_to_key(species_key) if species_key else None,
         cr=cr,
         hp=hp,
         speed=Movement(walk=30),

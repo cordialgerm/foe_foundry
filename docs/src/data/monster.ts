@@ -9,6 +9,11 @@ export interface RelatedMonster {
     sameTemplate: boolean;
 }
 
+export interface RelatedMonsterTemplate {
+    monsterKey: string;
+    templateKey: string;
+}
+
 export interface Monster {
     key: string;
     name: string;
@@ -22,6 +27,8 @@ export interface Monster {
     tagLine: string;
     loadouts: PowerLoadout[];
     relatedMonsters: RelatedMonster[];
+    nextTemplate: RelatedMonsterTemplate;
+    previousTemplate: RelatedMonsterTemplate;
 }
 
 export interface StatblockRequest {

@@ -5,3 +5,4 @@ import './components/PowerLoadout';
 import './components/MonsterInfo';
 import './components/MonsterCard';
 import './components/MonsterBuilder';
+import './pages/generator';
