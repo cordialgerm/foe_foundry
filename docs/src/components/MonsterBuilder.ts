@@ -96,6 +96,23 @@ export class MonsterBuilder extends LitElement {
         animation: pop-in 0.8s ease;
         will-change: transform, opacity;
     }
+    .loading,
+    .error-message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loading p,
+    .error-message p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--bs-secondary, #6c757d);
+        margin: 0;
+        text-align: center;
+    }
+    .error-message p {
+        color: var(--bs-danger, #dc3545);
+    }
   `;
 
     // Use Lit Task for async monster loading
