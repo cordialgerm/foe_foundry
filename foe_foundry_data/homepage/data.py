@@ -4,6 +4,7 @@ from datetime import datetime
 
 @dataclass(kw_only=True)
 class HomepageMonster:
+    key: str
     name: str
     url: str
     image: str

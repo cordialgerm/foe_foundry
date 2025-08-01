@@ -131,6 +131,7 @@ def _blog(blog: BlogPost, rng: np.random.Generator, mask_css: str) -> HomepageBl
 
 def _monster(monster: MonsterModel, mask_css: str) -> HomepageMonster:
     return HomepageMonster(
+        key=monster.key,
         name=monster.template_name,
         url=f"monsters/{monster.key}/",
         image=monster.primary_image or "img/icons/favicon.webp",

@@ -17,7 +17,7 @@ from .utilities import fix_punctuation
 
 
 @dataclass
-class MonsterTemplateData:
+class StatblockJinjaContext:
     name: str
     template: str
     variant: str
@@ -117,7 +117,7 @@ class MonsterTemplateData:
         return asdict(self)
 
     @staticmethod
-    def from_statblock(stats: Statblock) -> MonsterTemplateData:
+    def from_statblock(stats: Statblock) -> StatblockJinjaContext:
         hp = f"{stats.hp.static} ({stats.hp.dice_formula()})"
         languages = (
             ", ".join(lang for lang in stats.languages)
@@ -262,7 +262,7 @@ class MonsterTemplateData:
                 f"{stats.attributes.save_mod(attr) or stats.attributes.stat_mod(attr):+}"
             )
 
-        t = MonsterTemplateData(
+        t = StatblockJinjaContext(
             name=stats.name,
             template=stats.template_key.lower(),
             variant=stats.variant_key.lower(),

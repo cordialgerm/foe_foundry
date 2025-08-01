@@ -5,7 +5,7 @@ attack_block, benchmark_block, branding
 <div class="stat-block" data-monster="{{statblock.key}}" {% if statblock.species %} data-species="{{statblock.species}}"
     {% endif %}>
     <h3 class="monster-name">{{statblock.name}}</h3>
-    {{ branding(template=statblock.template, variant=statblock.variant, text="Summoned with Foe Foundry") }}
+    {{ branding(monster=statblock.key, text="Summoned with Foe Foundry") }}
     <p class="creature-type">{{statblock.size}} {{statblock.creature_type}}</p>
     <p>
         {{property_short('AC', statblock.ac)}}

@@ -33,6 +33,9 @@ def on_page_context(context, page: Page, config, nav):
     if page.is_homepage:
         context["homepage_data"] = load_homepage_data()
 
+    if page.url == "/generate/" or page.url == "/generate" or page.url == "generate/":
+        context["default_monster_key"] = load_homepage_data().monsters[0].key
+
 
 def on_page_markdown(markdown: str, page: Page, config, files):
     set_related_monsters_on_page(page, markdown)

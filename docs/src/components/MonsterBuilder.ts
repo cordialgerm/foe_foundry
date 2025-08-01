@@ -192,6 +192,44 @@ export class MonsterBuilder extends LitElement {
         return cleanup;
     }
 
+    private async waitForPowerLoadouts(monsterCard: MonsterCard): Promise<void> {
+        // Wait for the monster card's power loadouts to be ready
+        const maxAttempts = 20; // Maximum 2 seconds (20 * 100ms)
+        let attempts = 0;
+
+        while (attempts < maxAttempts) {
+            const powerLoadouts = monsterCard.shadowRoot?.querySelectorAll('power-loadout') ?? [];
+
+            if (powerLoadouts.length === 0) {
+                // Power loadouts haven't rendered yet, wait and try again
+                await new Promise(resolve => setTimeout(resolve, 100));
+                attempts++;
+                continue;
+            }
+
+            // Check if all power loadouts have loaded their powers and selected an initial power
+            let allReady = true;
+            for (let i = 0; i < powerLoadouts.length; i++) {
+                const loadout = powerLoadouts[i] as any;
+                const selectedPower = loadout.getSelectedPower?.();
+                if (!selectedPower) {
+                    allReady = false;
+                    break;
+                }
+            }
+
+            if (allReady) {
+                return; // All power loadouts are ready
+            }
+
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+
+        // If we get here, we've waited too long. Log a warning but continue.
+        console.warn('Power loadouts did not fully load within timeout, proceeding anyway');
+    }
+
     onMonsterKeyChanged(key: string) {
         // Preserve height during monster change
         this.preserveHeightDuringTransition();
@@ -247,7 +285,10 @@ export class MonsterBuilder extends LitElement {
     }
 
     // Handle initial monster load (after Task completes)
-    private onMonsterLoaded(monsterCard: MonsterCard) {
+    private async onMonsterLoaded(monsterCard: MonsterCard) {
+        // Wait for power loadouts to finish loading their powers
+        await this.waitForPowerLoadouts(monsterCard);
+
         // For initial loads, just load the statblock without animation
         this.loadStatblock(monsterCard.monsterKey, monsterCard.getSelectedPowers(), monsterCard.hpMultiplier, monsterCard.damageMultiplier, null);
 
