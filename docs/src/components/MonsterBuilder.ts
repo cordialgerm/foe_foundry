@@ -11,6 +11,9 @@ import { Monster, RelatedMonster } from '../data/monster';
 @customElement('monster-builder')
 export class MonsterBuilder extends LitElement {
     static styles = css`
+    :host {
+      display: block;
+    }
     .monster-header {
       display: flex;
       flex-direction: column;
@@ -104,6 +107,10 @@ export class MonsterBuilder extends LitElement {
             const store = initializeMonsterStore();
             const monster = await store.getMonster(monsterKey);
 
+            if (monster === null) {
+                throw new Error(`Monster not found for key "${monsterKey}"`);
+            }
+
             return monster;
         },
         args: () => [this.monsterKey]
@@ -114,8 +121,62 @@ export class MonsterBuilder extends LitElement {
 
     private monsters = initializeMonsterStore();
 
+    private lastKnownHeight: number = 600;
+    private heightTransitionCleanup: (() => void) | null = null;
+
+    private captureCurrentHeight(): void {
+        const container = this.shadowRoot?.querySelector('.container') as HTMLElement | null;
+        if (container) {
+            const currentHeight = container.offsetHeight;
+            this.lastKnownHeight = Math.max(currentHeight, this.lastKnownHeight);
+            console.log('Captured current height:', this.lastKnownHeight);
+        }
+    }
+
+    // Unified height preservation for both monster and statblock changes
+    private preserveHeightDuringTransition(): () => void {
+        // Clean up any existing transition
+        if (this.heightTransitionCleanup) {
+            this.heightTransitionCleanup();
+        }
+
+        const container = this.shadowRoot?.querySelector('.container') as HTMLElement | null;
+        if (!container) return () => { };
+
+        // Capture current height and set it explicitly
+        this.captureCurrentHeight();
+
+        container.style.height = `${this.lastKnownHeight}px`;
+        container.style.transition = 'height 0.3s cubic-bezier(0.4,0,0.2,1)';
+
+        const cleanup = () => {
+            if (container) {
+                requestAnimationFrame(() => {
+                    // Animate to natural height
+                    const naturalHeight = `${container.scrollHeight}px`;
+                    container.style.height = naturalHeight;
+
+                    // Clean up after animation
+                    const onTransitionEnd = (e: TransitionEvent) => {
+                        if (e.target === container && e.propertyName === 'height') {
+                            container.style.height = '';
+                            container.style.transition = '';
+                            container.removeEventListener('transitionend', onTransitionEnd);
+                        }
+                    };
+                    container.addEventListener('transitionend', onTransitionEnd);
+                });
+            }
+        };
+
+        this.heightTransitionCleanup = cleanup;
+        return cleanup;
+    }
 
     onMonsterKeyChanged(key: string) {
+        // Preserve height during monster change
+        this.preserveHeightDuringTransition();
+
         this.monsterKey = key;
         this.dispatchEvent(new CustomEvent('monster-key-changed', {
             detail: { monsterKey: key },
@@ -124,16 +185,15 @@ export class MonsterBuilder extends LitElement {
         }));
     }
 
-    async onMonsterChanged(monsterCard: MonsterCard, eventDetail?: any) {
-        console.log('Monster changed:', monsterCard, eventDetail);
+    // Handle statblock changes (same monster, different powers/multipliers)
+    async onStatblockChanged(monsterCard: MonsterCard, eventDetail?: any) {
         if (!monsterCard) return;
 
+        // Preserve height during statblock change
+        const finishTransition = this.preserveHeightDuringTransition();
+
         const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
-        let prevHeight: string | null = null;
         if (statblockHolder) {
-            // Store current height and set it as an explicit style to prevent flicker/animate
-            prevHeight = `${statblockHolder.offsetHeight}px`;
-            statblockHolder.style.height = prevHeight;
             statblockHolder.innerHTML = '';
         }
 
@@ -162,6 +222,22 @@ export class MonsterBuilder extends LitElement {
         }
 
         await this.loadStatblock(monsterCard.monsterKey, selectedPowers, monsterCard.hpMultiplier, monsterCard.damageMultiplier, change);
+
+        // Complete the height transition
+        finishTransition();
+    }
+
+    // Handle initial monster load (after Task completes)
+    private onMonsterLoaded(monsterCard: MonsterCard) {
+        // For initial loads, just load the statblock without animation
+        this.loadStatblock(monsterCard.monsterKey, monsterCard.getSelectedPowers(), monsterCard.hpMultiplier, monsterCard.damageMultiplier, null);
+
+        // Complete any ongoing height transition and capture new height
+        if (this.heightTransitionCleanup) {
+            this.heightTransitionCleanup();
+        }
+
+        setTimeout(() => this.captureCurrentHeight(), 150);
     }
 
     async loadStatblock(monsterKey: string, powers: Power[], hpMultiplier: number = 1, damageMultiplier: number = 1, change: StatblockChange | null = null) {
@@ -178,22 +254,6 @@ export class MonsterBuilder extends LitElement {
         const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
         if (statblockHolder && statblockElement) {
             statblockHolder.appendChild(statblockElement);
-
-            // Animate to new height
-            await new Promise(requestAnimationFrame); // Wait for DOM update
-
-            // force the height to the current scrollHeight, triggering an animation
-            const newHeight = `${statblockHolder.scrollHeight}px`;
-            statblockHolder.style.height = newHeight;
-
-            // Wait for the animation to complete and then remove the explicit height
-            const onTransitionEnd = (e: TransitionEvent) => {
-                if (e.propertyName === 'height') {
-                    statblockHolder.style.height = '';
-                    statblockHolder.removeEventListener('transitionend', onTransitionEnd);
-                }
-            };
-            statblockHolder.addEventListener('transitionend', onTransitionEnd);
         }
     }
 
@@ -223,75 +283,82 @@ export class MonsterBuilder extends LitElement {
     firstUpdated() {
         this.shadowRoot?.addEventListener('monster-changed', async (event: any) => {
             const monsterCard = event.detail.monsterCard;
-            await this.onMonsterChanged(monsterCard, event.detail);
+            await this.onStatblockChanged(monsterCard, event.detail);
         });
     }
 
+    renderMessage(message: string, messageClass: string = '') {
+        console.log('Rendering message with height ', this.lastKnownHeight);
+        return html`
+            <div class="container pamphlet-main ${messageClass}" style="height: ${this.lastKnownHeight + 'px'}; overflow: hidden;">
+                <p>${message}</p>
+            </div>
+        `;
+    }
+
+    renderContent(monster: Monster) {
+        this.updateComplete.then(() => {
+            const card = this.shadowRoot?.querySelector('monster-card') as MonsterCard | null;
+            if (!card) return;
+            this.onMonsterLoaded(card);
+        });
+
+        const previousTemplate = html`
+        <a href="/generate?monster-key=${monster.previousTemplate.monsterKey}"
+            @click=${(e: MouseEvent) => {
+                e.preventDefault();
+                this.onMonsterKeyChanged(monster.previousTemplate.monsterKey);
+            }}
+            style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-right: 1rem; color: var(--primary-color)">
+            &lt;
+        </a>`;
+
+        const nextTemplate = html`
+        <a href="/generate?monster-key=${monster.nextTemplate.monsterKey}"
+            @click=${(e: MouseEvent) => {
+                e.preventDefault();
+                this.onMonsterKeyChanged(monster.nextTemplate.monsterKey);
+            }}
+            style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-left: 1rem; color: var(--primary-color)">
+            &gt;
+        </a>`;
+
+        return html`
+            <div class="container pamphlet-main">
+                <div class="monster-header">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <h2 class="monster-title">
+                            ${previousTemplate}
+                            <span>${monster.monsterTemplate}</span>
+                            ${nextTemplate}
+                        </h2>
+                    </div>
+                    <div class="nav-pills">
+                        ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
+                            <button
+                            class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
+                            @click=${() => this.onMonsterKeyChanged(rel.key)}
+                            >${rel.name || rel.key}</button>
+                        `)}
+                    </div>
+                </div>
+                <div class="panels-row">
+                    <div class="left-panel">
+                        <monster-card monster-key="${this.monsterKey}"></monster-card>
+                    </div>
+                    <div class="right-panel">
+                        <div id="statblock-holder"></div>
+                    </div>
+                </div>
+            </div>
+            `;
+    }
 
     render() {
         return this._monsterTask.render({
-            pending: () => html`<p>Loading monster...</p>`,
-            complete: (monster: Monster | null) => {
-                if (!monster) {
-                    return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
-                }
-
-                this.updateComplete.then(() => {
-                    const card = this.shadowRoot?.querySelector('monster-card') as MonsterCard | null;
-                    if (!card) return;
-                    this.onMonsterChanged(card, null);
-                });
-
-                const previousTemplate = html`<a
-                    href="/generate?monster-key=${monster.previousTemplate.monsterKey}"
-                    @click=${(e: MouseEvent) => {
-                        e.preventDefault();
-                        this.onMonsterKeyChanged(monster.previousTemplate.monsterKey);
-                    }}
-                    style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-right: 1rem; color: var(--primary-color)">
-                    &lt;
-                </a>`
-                const nextTemplate = html`<a
-                    href="/generate?monster-key=${monster.nextTemplate.monsterKey}"
-                    @click=${(e: MouseEvent) => {
-                        e.preventDefault();
-                        this.onMonsterKeyChanged(monster.nextTemplate.monsterKey);
-                    }}
-                    style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-left: 1rem; color: var(--primary-color)">
-                    &gt;
-                </a>`
-
-                return html`
-                    <div class="container pamphlet-main">
-                        <div class="monster-header">
-                            <div style="display: flex; align-items: center; gap: 1rem;">
-                                <h2 class="monster-title">
-                                    ${previousTemplate}
-                                    <span>${monster?.monsterTemplate}</span>
-                                    ${nextTemplate}
-                                </h2>
-                            </div>
-                            <div class="nav-pills">
-                                ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
-                                    <button
-                                    class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
-                                    @click=${() => this.onMonsterKeyChanged(rel.key)}
-                                    >${rel.name || rel.key}</button>
-                                `)}
-                            </div>
-                        </div>
-                        <div class="panels-row">
-                            <div class="left-panel">
-                                <monster-card monster-key="${this.monsterKey}"></monster-card>
-                            </div>
-                            <div class="right-panel">
-                                <div id="statblock-holder"></div>
-                            </div>
-                        </div>
-                    </div>
-                    `;
-            },
-            error: (e) => html`<p>Error loading monster: ${e}</p>`
+            pending: () => this.renderMessage('Loading...', 'loading'),
+            error: (e) => this.renderMessage(`Error loading monster: ${e}`, 'error-message'),
+            complete: (monster: Monster) => this.renderContent(monster)
         })
     }
 
