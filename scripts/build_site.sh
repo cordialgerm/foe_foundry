@@ -36,6 +36,15 @@ else
     echo "Skipping MkDocs build due to --fast flag."
 fi
 
+# When FAST_BUILD is set, copy /docs/css/ and /docs/scripts/ to /site/css/ and /site/scripts/
+if [ "$FAST_BUILD" = true ]; then
+    echo "Copying /docs/css/ and /docs/scripts/ to /site/..."
+    mkdir -p site/css site/scripts
+    cp -r docs/css/. site/css/
+    cp -r docs/scripts/. site/scripts/
+    echo "Copy completed."
+fi
+
 # Build the project using Vite
 echo "Building the project with Vite..."
 if command -v npx vite &> /dev/null; then

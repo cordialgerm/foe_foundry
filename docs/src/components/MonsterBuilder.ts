@@ -13,76 +13,73 @@ export class MonsterBuilder extends LitElement {
     static styles = css`
     .monster-header {
       display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .monster-title {
       font-size: 2rem;
       font-weight: bold;
-      margin: 0;
     }
     .nav-pills {
       display: flex;
       gap: 0.5rem;
     }
     .nav-pill {
-      background: #222;
-      color: #ffe;
+      background: var(--bs-dark);
+      color: var(--bs-light);
       border-radius: 999px;
-      padding: 0.3em 1em;
+      padding: 0.5rem;
       cursor: pointer;
       border: none;
       font-size: 1rem;
       transition: background 0.2s;
     }
     .nav-pill.active {
-      background: #ffe;
-      color: #222;
+      background: var(--bs-light);
+      color: var(--bs-dark);
       font-weight: bold;
     }
     .container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    .panels-row {
       display: flex;
       flex-direction: row;
       gap: 2rem;
       width: 100%;
     }
-
     .left-panel {
       flex: 0 0 400px;
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-
     .right-panel {
       flex: 1 1 auto;
       min-width: 0;
     }
-
     #statblock-holder {
       width: 100%;
       transition: height 0.3s cubic-bezier(0.4,0,0.2,1);
       overflow: hidden;
     }
-
     @keyframes pop-in {
         0% {
             transform: scale(1);
             opacity: 0.5;
         }
-
         50% {
             transform: scale(1.2);
             opacity: 1;
         }
-
         100% {
             transform: scale(1);
             opacity: 1;
         }
     }
-
     .hp-changed,
     .damage-changed,
     .power-changed {
@@ -247,11 +244,13 @@ export class MonsterBuilder extends LitElement {
                                 `)}
                             </div>
                         </div>
-                        <div class="left-panel">
-                            <monster-card monster-key="${this.monsterKey}"></monster-card>
-                        </div>
-                        <div class="right-panel">
-                            <div id="statblock-holder"></div>
+                        <div class="panels-row">
+                            <div class="left-panel">
+                                <monster-card monster-key="${this.monsterKey}"></monster-card>
+                            </div>
+                            <div class="right-panel">
+                                <div id="statblock-holder"></div>
+                            </div>
                         </div>
                     </div>
                     `;
