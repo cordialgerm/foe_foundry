@@ -41,6 +41,11 @@
 
 
     /* Set Boostrap Variables to match theme */
+    --bs-secondary: var(--tertiary-color);
+    --bs-dark: var(--bg-color);
+    --bs-light: var(--fg-color);
+    --bs-border-color: var(--tertiary-color);
+
     --bs-primary-text-emphasis: var(--fg-color);
     --bs-primary-bg-subtle: var(--muted-color);
     --bs-primary-border-subtle: var(--primary-color);

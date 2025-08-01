@@ -4,6 +4,8 @@ from jinja2 import Environment, PackageLoader, select_autoescape
 from markdown import markdown
 from markupsafe import Markup
 
+from foe_foundry.utils import name_to_key
+
 
 def fix_punctuation(text: Any) -> Any:
     """
@@ -27,6 +29,10 @@ def fix_punctuation(text: Any) -> Any:
         text = text + "."
 
     return text
+
+
+def sluggify(value: str) -> str:
+    return name_to_key(value)
 
 
 def markdown_no_wrapping_p(md: str):

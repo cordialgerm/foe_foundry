@@ -30,6 +30,10 @@ class _MonsterCache:
                     monsters.append(m)
         return monsters
 
+    @cached_property
+    def lookup(self) -> dict[str, MonsterModel]:
+        return {monster.key: monster for monster in self.one_of_each_monster}
+
 
 Monsters = _MonsterCache()
 

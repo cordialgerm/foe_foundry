@@ -46,10 +46,6 @@ mkdocs-backlinks = "^0.9.1"
 lxml = "^5.4.0"
 cairosvg = "^2.8.2"
 
-[tool.poetry.scripts]
-foe_foundry_site = "foe_foundry_site.__main__:main"
-
-
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
 

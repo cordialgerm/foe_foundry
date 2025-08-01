@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from foe_foundry.utils import name_to_key
+
 from ..power import Power
 
 
@@ -16,3 +18,7 @@ class PowerLoadout:
         if not isinstance(value, PowerLoadout):
             return False
         return self.name == value.name
+
+    @property
+    def key(self) -> str:
+        return name_to_key(self.name)

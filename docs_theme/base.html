@@ -49,7 +49,8 @@
     {% include "partials/analytics.html" %}
 
     <script>
-        var base_url = {{ base_url| tojson }}, shortcuts = {};
+        var base_url = {{ base_url | tojson }}, shortcuts = {};
+        window.baseUrl = "";
     </script>
 
 </head>
@@ -63,6 +64,10 @@
     {% if page and page.is_homepage %}
     <div class="container pamphlet-container">
         {% include "homepage.j2.html" %}
+    </div>
+    {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
+    <div class="container pamphlet-container">
+        {% include "generate.j2.html" %}
     </div>
     {% else %}
     <div class="container pamphlet-container">
@@ -82,7 +87,6 @@
     {% include "partials/footer.html" %}
 
     {% include "partials/scripts.html" %}
-
 
     {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}

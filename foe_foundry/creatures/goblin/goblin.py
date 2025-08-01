@@ -110,11 +110,11 @@ class _GoblinTemplate(MonsterTemplate):
         elif variant is GoblinShamanVariant:
             if settings.monster_key == "goblin-foulhex":
                 return PowerSelection(
-                    loadouts=powers.LoadoutShaman,
+                    loadouts=powers.LoadoutShamanAdept,
                 )
             elif settings.monster_key == "goblin-shaman":
                 return PowerSelection(
-                    loadouts=powers.LoadoutShamanAdept,
+                    loadouts=powers.LoadoutShaman,
                 )
             else:
                 raise ValueError(f"Unknown goblin shaman key: {settings.monster_key}")

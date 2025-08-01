@@ -108,7 +108,7 @@ async function createRerollButton(statblock) {
 }
 
 async function rerollMonster(monsterKey) {
-  const url = `/api/v1/monsters/${monsterKey}?output=monster_only`;
+  const url = `/api/v1/statblocks/${monsterKey}?output=monster_only`;
 
   const oldStatblockElement = document.querySelector(`.stat-block[data-monster="${monsterKey}"]`);
   oldStatblockElement.classList.add("pop-out");

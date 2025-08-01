@@ -114,6 +114,12 @@ class MonsterTemplate:
     def key(self) -> str:
         return name_to_key(self.name)
 
+    @property
+    def monsters(self) -> Iterable[Monster]:
+        for variant in self.variants:
+            for monster in variant.monsters:
+                yield monster
+
     def _get_git_date(self, monster_file: Path, first_commit: bool = True) -> datetime:
         """Helper to get git commit date for a file. If first_commit is True, gets the oldest commit (creation); else, gets the most recent (modified)."""
         if not monster_file.exists():
