@@ -22,6 +22,7 @@ export class MonsterBuilder extends LitElement {
     }
     .nav-pills {
       display: flex;
+      flex-wrap: wrap;
       gap: 0.5rem;
     }
     .nav-pill {
@@ -33,6 +34,11 @@ export class MonsterBuilder extends LitElement {
       border: none;
       font-size: 1rem;
       transition: background 0.2s;
+      min-width: 100px;
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .nav-pill.active {
       background: var(--bs-light);
