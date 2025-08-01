@@ -44,6 +44,9 @@ export class MonsterBuilder extends LitElement {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
     }
     .nav-pill.active {
       background: var(--bs-light);
@@ -395,10 +398,14 @@ export class MonsterBuilder extends LitElement {
                     </div>
                     <div class="nav-pills">
                         ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
-                            <button
+                            <a
+                            href="/monsters/${rel.template}#${rel.key}"
                             class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
-                            @click=${() => this.onMonsterKeyChanged(rel.key)}
-                            >${rel.name || rel.key}</button>
+                            @click=${(e: MouseEvent) => {
+                e.preventDefault();
+                this.onMonsterKeyChanged(rel.key);
+            }}
+                            >${rel.name}</a>
                         `)}
                     </div>
                 </div>
