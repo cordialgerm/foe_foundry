@@ -57,6 +57,7 @@ export class ApiMonsterStore implements MonsterStore {
             backgroundImage: data.background_image,
             creatureType: data.creature_type,
             monsterTemplate: data.template_key,
+            monsterTemplateName: data.template_name,
             monsterFamilies: [], // Not present in API, set empty or infer if possible
             size: data.size,
             cr: formatCr(data.cr),

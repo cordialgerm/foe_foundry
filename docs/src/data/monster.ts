@@ -20,6 +20,7 @@ export interface Monster {
     image: string;
     backgroundImage: string;
     creatureType: string;
+    monsterTemplateName: string;
     monsterTemplate: string;
     monsterFamilies: string[];
     size: string;

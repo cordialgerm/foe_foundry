@@ -20,8 +20,10 @@ export class MonsterBuilder extends LitElement {
       align-items: flex-start;
     }
     .monster-title {
-      font-size: 2rem;
+      font-size: 2.5rem !important;
       font-weight: bold;
+      margin-top: 3px;
+      margin-bottom: 3px;
     }
     .nav-pills {
       display: flex;
@@ -344,11 +346,11 @@ export class MonsterBuilder extends LitElement {
             <div class="container pamphlet-main">
                 <div class="monster-header">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <h2 class="monster-title">
+                        <h1 class="monster-title">
                             ${previousTemplate}
-                            <span>${monster.monsterTemplate}</span>
+                            <span>${monster.monsterTemplateName}</span>
                             ${nextTemplate}
-                        </h2>
+                        </h1>
                     </div>
                     <div class="nav-pills">
                         ${monster.relatedMonsters.map((rel: RelatedMonster) => html`

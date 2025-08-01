@@ -67,9 +67,20 @@ export class PowerLoadout extends LitElement {
       transition: all 0.15s ease-in-out;
     }
 
+    .power-button.single-power {
+      cursor: default;
+      border-color: var(--bs-secondary);
+      color: var(--bs-secondary);
+    }
+
     .power-button:hover, .dropdown-item:hover {
       background-color: var(--bs-light);
       color: var(--bs-dark);
+    }
+
+    .power-button.single-power:hover {
+      background-color: transparent;
+      color: var(--bs-secondary);
     }
 
     .power-icon {
@@ -172,6 +183,9 @@ export class PowerLoadout extends LitElement {
   private powers: Power[] = [];
 
   private toggleDropdown() {
+    // Don't toggle if there's only one power
+    if (this.powers.length <= 1) return;
+
     this.dropdownOpen = !this.dropdownOpen;
   }
 
@@ -225,28 +239,31 @@ export class PowerLoadout extends LitElement {
     }
 
     const currentPower = this.selectedPower || this.powers?.[0];
+    const hasSinglePower = this.powers?.length === 1;
 
     return html`
       <div class="power-slot-block" @keydown=${this.handleKeydown}>
         <div class="power-slot-header">
           <h4 class="power-slot-title">
             ${loadout.name}
-            <svg-icon
-              class="edit-icon"
-              jiggle="true"
-              src="pencil"
-              title="Customize by choosing a power from the list below"
-              aria-label="Customize by choosing a power from the list below"
-              tabindex="0"
-              @click=${this.toggleDropdown}
-            ></svg-icon>
+            ${!hasSinglePower ? html`
+              <svg-icon
+                class="edit-icon"
+                jiggle="true"
+                src="pencil"
+                title="Customize by choosing a power from the list below"
+                aria-label="Customize by choosing a power from the list below"
+                tabindex="0"
+                @click=${this.toggleDropdown}
+              ></svg-icon>
+            ` : ''}
           </h4>
           <span class="power-slot-flavor">${loadout.flavorText}</span>
         </div>
 
         <div class="position-relative">
           <button
-            class="power-button"
+            class="power-button ${hasSinglePower ? 'single-power' : ''}"
             @click=${this.toggleDropdown}
             aria-expanded=${this.dropdownOpen}
             aria-haspopup="true"
@@ -261,37 +278,41 @@ export class PowerLoadout extends LitElement {
             ` : html`
               <span>No powers available</span>
             `}
-            <svg class="dropdown-chevron ${this.dropdownOpen ? 'open' : ''}"
-                 width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8 10.5L3.5 6h9L8 10.5z"/>
-            </svg>
+            ${!hasSinglePower ? html`
+              <svg class="dropdown-chevron ${this.dropdownOpen ? 'open' : ''}"
+                   width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 10.5L3.5 6h9L8 10.5z"/>
+              </svg>
+            ` : ''}
           </button>
 
           <div class="dropdown-menu ${this.dropdownOpen ? 'show' : 'd-none'}">
-            ${this.powers?.map((power: Power) => html`
-              <button
-                class="dropdown-item"
-                @click=${() => this.selectPower(power)}
-              >
-                <svg-icon
-                  class="power-icon"
-                  src="${power.icon}"
-                ></svg-icon>
-                <span>${power.name}</span>
-              </button>
-            `)}
-            ${this.powers?.length ? html`
-              <div class="dropdown-separator"></div>
-              <button
-                class="dropdown-item"
-                @click=${() => this.randomize()}
-              >
-                <svg-icon
-                  class="power-icon"
-                  src="dice-twenty-faces-twenty"
-                ></svg-icon>
-                <span>Randomize</span>
-              </button>
+            ${!hasSinglePower ? html`
+              ${this.powers?.map((power: Power) => html`
+                <button
+                  class="dropdown-item"
+                  @click=${() => this.selectPower(power)}
+                >
+                  <svg-icon
+                    class="power-icon"
+                    src="${power.icon}"
+                  ></svg-icon>
+                  <span>${power.name}</span>
+                </button>
+              `)}
+              ${this.powers?.length ? html`
+                <div class="dropdown-separator"></div>
+                <button
+                  class="dropdown-item"
+                  @click=${() => this.randomize()}
+                >
+                  <svg-icon
+                    class="power-icon"
+                    src="dice-twenty-faces-twenty"
+                  ></svg-icon>
+                  <span>Randomize</span>
+                </button>
+              ` : ''}
             ` : ''}
           </div>
         </div>
