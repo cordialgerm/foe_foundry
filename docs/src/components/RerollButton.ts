@@ -6,12 +6,12 @@ import './SvgIcon.js';
 @customElement('reroll-button')
 export class RerollButton extends StatblockButton {
 
-    @property({ type: Boolean, reflect: true })
-    rolling = false;
+  @property({ type: Boolean, reflect: true })
+  rolling = false;
 
-    private static stylesInjected = false;
+  private static stylesInjected = false;
 
-    static styles = css`
+  static styles = css`
     :host {
       display: inline-block;
     }
@@ -131,18 +131,18 @@ export class RerollButton extends StatblockButton {
     }
   `;
 
-    connectedCallback() {
-        super.connectedCallback();
-        this._injectGlobalStyles();
-    }
+  connectedCallback() {
+    super.connectedCallback();
+    this._injectGlobalStyles();
+  }
 
-    private _injectGlobalStyles() {
-        // Only inject once, even if multiple RerollButton instances exist
-        if (RerollButton.stylesInjected) return;
+  private _injectGlobalStyles() {
+    // Only inject once, even if multiple RerollButton instances exist
+    if (RerollButton.stylesInjected) return;
 
-        const styleSheet = document.createElement('style');
-        styleSheet.id = 'reroll-button-global-styles';
-        styleSheet.textContent = `
+    const styleSheet = document.createElement('style');
+    styleSheet.id = 'reroll-button-global-styles';
+    styleSheet.textContent = `
             /* Styles for Pop Out / In when rerolling */
             @keyframes pop-out {
                 from {
@@ -232,78 +232,88 @@ export class RerollButton extends StatblockButton {
             }
         `;
 
-        document.head.appendChild(styleSheet);
-        RerollButton.stylesInjected = true;
+    document.head.appendChild(styleSheet);
+    RerollButton.stylesInjected = true;
+  }
+
+  private async _rerollStatblock() {
+    const statblock = this.findTargetStatblock();
+    if (!statblock) return;
+
+    const monsterKey = statblock.getAttribute('data-monster');
+    if (!monsterKey) return;
+
+    const url = `/api/v1/statblocks/${monsterKey}?output=monster_only`;
+
+    statblock.classList.add("pop-out");
+
+    try {
+      const res = await fetch(url);
+      const html = await res.text();
+
+      // Parse the new statblock HTML into a DOM element
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const newStatblock = doc.querySelector('.stat-block');
+
+      if (newStatblock) {
+        // Preserve the same HTML ID
+        newStatblock.id = statblock.id;
+
+        // Replace old with new
+        statblock.replaceWith(newStatblock);
+        newStatblock.classList.add("pop-in");
+
+        // Wait for pop-in animation, then trigger summon effect
+        await this._sleep(200);
+        newStatblock.classList.remove("pop-in");
+
+        // wait a little bit before starting summon effect
+        await this._sleep(200);
+        newStatblock.classList.add("summon-effect");
+
+        // Remove summon-effect after it's done
+        await this._sleep(400);
+        newStatblock.classList.remove("summon-effect");
+      }
+    } catch (err) {
+      console.error("Failed to reroll monster:", err);
     }
+  }
 
-    private async _rerollStatblock() {
-        const statblock = this.findTargetStatblock();
-        if (!statblock) return;
+  private _sleep(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
-        const monsterKey = statblock.getAttribute('data-monster');
-        if (!monsterKey) return;
+  private _handleClick() {
+    if (this.disabled || this.rolling || !this.monsterKey) return;
 
-        const url = `/api/v1/statblocks/${monsterKey}?output=monster_only`;
+    // Dispatch custom event to notify parent components
+    this.dispatchEvent(new CustomEvent('reroll-click', {
+      detail: {
+        target: this.target,
+        monsterKey: this.monsterKey
+      },
+      bubbles: true,
+      composed: true
+    }));
 
-        statblock.classList.add("pop-out");
+    // Trigger the rolling animation
+    this.rolling = true;
+    this.disabled = true;
 
-        try {
-            const res = await fetch(url);
-            const html = await res.text();
+    // Remove rolling state after animation completes
+    setTimeout(() => {
+      this.rolling = false;
+      this.disabled = false;
+    }, 600); // Match the animation duration
 
-            // Parse the new statblock HTML into a DOM element
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const newStatblock = doc.querySelector('.stat-block');
+    // Perform the reroll
+    this._rerollStatblock();
+  }
 
-            if (newStatblock) {
-                // Preserve the same HTML ID
-                newStatblock.id = statblock.id;
-
-                // Replace old with new
-                statblock.replaceWith(newStatblock);
-                newStatblock.classList.add("pop-in");
-
-                // Wait for pop-in animation, then trigger summon effect
-                await this._sleep(200);
-                newStatblock.classList.remove("pop-in");
-
-                // wait a little bit before starting summon effect
-                await this._sleep(200);
-                newStatblock.classList.add("summon-effect");
-
-                // Remove summon-effect after it's done
-                await this._sleep(400);
-                newStatblock.classList.remove("summon-effect");
-            }
-        } catch (err) {
-            console.error("Failed to reroll monster:", err);
-        }
-    }
-
-    private _sleep(ms: number) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    private _handleClick() {
-        if (this.disabled || this.rolling || !this.monsterKey) return;
-
-        // Trigger the rolling animation
-        this.rolling = true;
-        this.disabled = true;
-
-        // Remove rolling state after animation completes
-        setTimeout(() => {
-            this.rolling = false;
-            this.disabled = false;
-        }, 600); // Match the animation duration
-
-        // Perform the reroll
-        this._rerollStatblock();
-    }
-
-    render() {
-        return html`
+  render() {
+    return html`
       <button
         @click=${this._handleClick}
         ?disabled=${this.disabled}
@@ -316,11 +326,11 @@ export class RerollButton extends StatblockButton {
         ></svg-icon>
       </button>
     `;
-    }
+  }
 }
 
 declare global {
-    interface HTMLElementTagNameMap {
-        'reroll-button': RerollButton;
-    }
+  interface HTMLElementTagNameMap {
+    'reroll-button': RerollButton;
+  }
 }

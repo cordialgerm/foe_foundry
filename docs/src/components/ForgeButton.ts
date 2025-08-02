@@ -47,6 +47,16 @@ export class ForgeStatblockButton extends StatblockButton {
     private _handleClick(): void {
         if (this.disabled || !this.monsterKey) return;
 
+        // Dispatch custom event to notify parent components
+        this.dispatchEvent(new CustomEvent('forge-click', {
+            detail: {
+                target: this.target,
+                monsterKey: this.monsterKey
+            },
+            bubbles: true,
+            composed: true
+        }));
+
         const url = `/generate/v2/?monster-key=${encodeURIComponent(this.monsterKey)}`;
         window.location.href = url;
     }

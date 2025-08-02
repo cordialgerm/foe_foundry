@@ -36,7 +36,28 @@ export abstract class StatblockButton extends LitElement {
     }
 
     findTargetStatblock(): Element | null {
-        return this.target ? document.getElementById(this.target) : null;
+        if (!this.target) return null;
+
+        const element = document.getElementById(this.target);
+        if (!element) return null;
+
+        // Case 1: Direct stat-block div with data-monster attribute
+        if (element.classList.contains('stat-block') && element.hasAttribute('data-monster')) {
+            return element;
+        }
+
+        // Case 2: Custom <monster-statblock> element - look in shadow DOM
+        if (element.tagName.toLowerCase() === 'monster-statblock') {
+            const shadowRoot = element.shadowRoot;
+            if (shadowRoot) {
+                const statBlock = shadowRoot.querySelector('.stat-block[data-monster]');
+                if (statBlock) {
+                    return statBlock;
+                }
+            }
+        }
+
+        return null;
     }
 
     get monsterKey(): string {

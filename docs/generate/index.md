@@ -15,12 +15,12 @@ image: img/icons/favicon.webp
         <button class="bg-object parchment p-4 d-block mx-auto">
             <div class="generator-reroll d-inline-block p-2">
                 <span>Summon Your Foe</span>
-                <div id="reroll-button-placeholder"></div>
-                <div id="forge-button-placeholder"></div>
+                <reroll-button detached target="demo-statblock"></reroll-button>
+                <forge-button detached target="demo-statblock"></forge-button>
             </div>
         </button>
     </div>
-    <div id="statblock-placeholder"></div>
+    <monster-statblock class="d-none" id="demo-statblock"></monster-statblock>
 </section>
 
 ---

@@ -31,15 +31,12 @@ def on_page_context(context, page: Page, config, nav):
     set_json_ld_on_page(page)
     backlinks.on_page_context(context, page, config, nav)
 
-    if page.is_homepage:
-        context["homepage_data"] = load_homepage_data()
+    homepage_data = load_homepage_data()
 
-    if (
-        page.url == "/generate/v2/"
-        or page.url == "/generate/v2"
-        or page.url == "generate/v2/"
-    ):
-        context["default_monster_key"] = load_homepage_data().monsters[0].key
+    context["default_monster_key"] = homepage_data.monsters[0].key
+
+    if page.is_homepage:
+        context["homepage_data"] = homepage_data
 
 
 def on_page_markdown(markdown: str, page: Page, config, files):
