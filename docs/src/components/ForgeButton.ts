@@ -3,8 +3,8 @@ import { customElement } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
 import './SvgIcon.js';
 
-@customElement('edit-button')
-export class EditButton extends StatblockButton {
+@customElement('forge-button')
+export class ForgeStatblockButton extends StatblockButton {
     static styles = css`
         :host {
             display: inline-block;
@@ -56,10 +56,10 @@ export class EditButton extends StatblockButton {
             <button
                 @click=${this._handleClick}
                 ?disabled=${this.disabled}
-                aria-label="Edit this monster"
-                title="Edit this monster"
+                aria-label="Forge your own version of this monster"
+                title="Forge your own version of this monster"
             >
-                <svg-icon src="edit" jiggle="true"></svg-icon>
+                <svg-icon src="anvil-impact" jiggle="true"></svg-icon>
             </button>
         `;
     }
@@ -67,6 +67,6 @@ export class EditButton extends StatblockButton {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'edit-button': EditButton;
+        'forge-button': ForgeStatblockButton;
     }
 }

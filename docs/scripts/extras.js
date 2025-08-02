@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let statblockId = 0;
 
-// Add a Re-Roll button to statblocks
+// Add a Re-Roll and Forge buttons to statblocks
 document.addEventListener("DOMContentLoaded", () => {
   const statblocks = document.querySelectorAll('.stat-block');
 
@@ -53,7 +53,7 @@ function createRerollButton(statblock) {
 }
 
 function createEditButton(statblock) {
-  const button = document.createElement('edit-button');
+  const button = document.createElement('forge-button');
   button.setAttribute('target', statblock.id);
   return button;
 }

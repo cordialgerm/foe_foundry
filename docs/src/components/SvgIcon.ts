@@ -72,7 +72,6 @@ export class SvgIcon extends LitElement {
       'placeholder': true,
       'jiggle-on-hover': this.jiggle
     };
-    // Lit 2.x: classMap is not imported, so use manual join
     const classString = Object.entries(classes)
       .filter(([_, v]) => v)
       .map(([k]) => k)
@@ -100,6 +99,10 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
     }
 
     const result = await fetch(url);
+    if (!result.ok) {
+      throw new Error(`Failed to load SVG from ${url}: ${result.statusText}`);
+    }
+
     const svgText = await result.text();
     // Strip out any fill="..." attributes, width/height attributes, and style attributes to allow CSS control
     const cleaned = svgText
