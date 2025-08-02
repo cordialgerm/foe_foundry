@@ -160,6 +160,12 @@ export class PowerLoadout extends LitElement {
       background-color: var(--bs-secondary);
       color: var(--bs-light);
     }
+      
+    .dropdown-item.active::after {
+      content: "✓";
+      margin-left: auto;
+      font-weight: bold;
+    }
 
     .dropdown-chevron {
       margin-left: auto;
@@ -245,19 +251,44 @@ export class PowerLoadout extends LitElement {
     console.log('New dropdown state:', this.dropdownOpen);
 
     if (this.dropdownOpen) {
-      // Reset focus index when opening
-      this.focusedIndex = -1;
+      // Set focus to currently selected power
+      this.setInitialFocus();
 
       // Calculate smart positioning
       this.updatePosition();
 
-      // Focus the dropdown container after a brief delay to allow rendering
+      // Focus the dropdown container and scroll to active item after rendering
       setTimeout(() => {
         const dropdown = this.shadowRoot?.querySelector('.dropdown-menu');
         if (dropdown) {
           (dropdown as HTMLElement).focus();
+          this.scrollToActiveItem();
         }
       }, 50);
+    }
+  }
+
+  private setInitialFocus() {
+    // Find the index of the currently selected power
+    const selectedIndex = this.selectedPower
+      ? this.powers.findIndex(power => power === this.selectedPower)
+      : -1;
+
+    // Set focus to the selected power, or first item if none selected
+    this.focusedIndex = selectedIndex >= 0 ? selectedIndex : 0;
+  }
+
+  private scrollToActiveItem() {
+    const dropdown = this.shadowRoot?.querySelector('.dropdown-menu') as HTMLElement;
+    const activeItem = this.shadowRoot?.querySelector('.dropdown-item.active') as HTMLElement;
+
+    if (dropdown && activeItem) {
+      // Calculate scroll position to center the active item
+      const dropdownRect = dropdown.getBoundingClientRect();
+      const activeRect = activeItem.getBoundingClientRect();
+      const scrollTop = activeItem.offsetTop - (dropdown.clientHeight / 2) + (activeItem.clientHeight / 2);
+
+      dropdown.scrollTop = Math.max(0, scrollTop);
     }
   }
 
@@ -480,7 +511,7 @@ export class PowerLoadout extends LitElement {
             ${!hasSinglePower ? html`
               ${this.powers?.map((power: Power, index: number) => html`
                 <button
-                  class="dropdown-item ${this.focusedIndex === index ? 'focused' : ''}"
+                  class="dropdown-item ${this.focusedIndex === index ? 'focused' : ''} ${this.selectedPower === power ? 'active' : ''}"
                   @click=${() => this.selectPower(power)}
                   @mouseenter=${() => this.focusedIndex = index}
                 >
