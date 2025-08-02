@@ -101,8 +101,12 @@ async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement,
 
     const result = await fetch(url);
     const svgText = await result.text();
-    // Strip out any fill="..." attributes
-    const cleaned = svgText.replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '');
+    // Strip out any fill="..." attributes, width/height attributes, and style attributes to allow CSS control
+    const cleaned = svgText
+      .replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*width\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*height\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*style\s*=\s*(['"])[^'"]*\1/gi, '');
 
     // Cache the cleaned SVG content
     svgCache.set(url, cleaned);

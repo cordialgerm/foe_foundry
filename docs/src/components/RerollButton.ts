@@ -39,7 +39,6 @@ export class RerollButton extends LitElement {
     }
 
     button:hover:not(:disabled) {
-      background-color: rgba(255, 255, 255, 0.1);
       transform: scale(1.05);
     }
 
@@ -53,11 +52,10 @@ export class RerollButton extends LitElement {
       color: inherit;
     }
 
-    .d20-icon {
+    svg-icon {
       width: 3rem;
       height: 3rem;
-      color: var(--primary-color, #007bff);
-      fill: var(--fg-color);
+      color: var(--fg-color);
     }
 
     /* Rolling animation for the button */
@@ -66,7 +64,7 @@ export class RerollButton extends LitElement {
     }
 
     /* Rolling animation for the d20 icon */
-    :host([rolling]) .d20-icon {
+    :host([rolling]) svg-icon {
       animation: roll 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
     }
 
@@ -380,7 +378,6 @@ export class RerollButton extends LitElement {
       >
         <svg-icon
           src="d20"
-          class="d20-icon"
           jiggle="true"
         ></svg-icon>
       </button>
