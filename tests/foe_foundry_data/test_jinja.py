@@ -5,6 +5,7 @@ from foe_foundry.powers.roles import ambusher
 from foe_foundry.powers.spellcaster import necromancer
 from foe_foundry.powers.themed import bestial, breath, tough
 from foe_foundry_data.jinja import render_power_fragment
+from foe_foundry_data.jinja.utilities import matching_css_link, matching_js_link
 from foe_foundry_data.powers import PowerModel
 
 
@@ -62,3 +63,15 @@ def test_attack_rendering():
 def test_divine_law_multiple_columns():
     power = PowerModel.from_power(celestial.DivineLaw)
     assert power.columns_suggested
+
+
+def test_css_for_homepage():
+    url = "/"
+    css_link = matching_css_link(url)
+    assert css_link != "", "CSS link should not be empty"
+
+
+def test_js_for_homepage():
+    url = "/"
+    js_link = matching_js_link(url)
+    assert js_link != "", "JS link should not be empty"

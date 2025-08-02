@@ -6,3 +6,4 @@ import './components/MonsterInfo';
 import './components/MonsterCard';
 import './components/MonsterBuilder';
 import './pages/generator';
+import './pages/generator_v2';

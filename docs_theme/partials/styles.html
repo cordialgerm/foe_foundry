@@ -6,12 +6,10 @@
 <link href="{{ path|url }}" rel="stylesheet">
 {%- endfor %}
 
-{% if page and page.is_homepage %}
-<link href="{{ 'css/homepage.css'|url }}" rel="stylesheet">
-{% endif %}
-
-{% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
-<link href="{{ 'css/generate.css'|url }}" rel="stylesheet">
+{% if page.is_homepage %}
+{{ '/' | matching_css_link | safe }}
+{% elif page and page.url %}
+{{ page.url | matching_css_link | safe }}
 {% endif %}
 
 <link href="{{ 'css/fontawesome.min.css'|url }}" media="print" onload="this.media='all'">
