@@ -32,9 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
       statblock.id = `statblock-${++statblockId}`;
     }
 
-    // create the reroll button using the new component
-    const button = createRerollButton(statblock);
-    statblock.parentNode.insertBefore(button, statblock.nextSibling);
+    const rerollButton = createRerollButton(statblock);
+    statblock.parentNode.insertBefore(rerollButton, statblock.nextSibling);
+
+    const editButton = createEditButton(statblock);
+    statblock.parentNode.insertBefore(editButton, statblock.nextSibling);
   });
 });
 
@@ -46,6 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function createRerollButton(statblock) {
   const button = document.createElement('reroll-button');
+  button.setAttribute('target', statblock.id);
+  return button;
+}
+
+function createEditButton(statblock) {
+  const button = document.createElement('edit-button');
   button.setAttribute('target', statblock.id);
   return button;
 }

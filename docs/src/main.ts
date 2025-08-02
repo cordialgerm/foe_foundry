@@ -6,5 +6,6 @@ import './components/MonsterInfo';
 import './components/MonsterCard';
 import './components/MonsterBuilder';
 import './components/RerollButton';
+import './components/EditButton';
 import './pages/generate';
 import './pages/generate_v2';

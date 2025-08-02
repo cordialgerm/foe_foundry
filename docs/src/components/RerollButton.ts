@@ -1,15 +1,10 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import './SvgIcon';
+import { StatblockButton } from './StatblockButton.js';
+import './SvgIcon.js';
 
 @customElement('reroll-button')
-export class RerollButton extends LitElement {
-
-    @property({ type: String })
-    target = '';
-
-    @property({ type: Boolean, reflect: true })
-    disabled = false;
+export class RerollButton extends StatblockButton {
 
     @property({ type: Boolean, reflect: true })
     rolling = false;
@@ -19,9 +14,6 @@ export class RerollButton extends LitElement {
     static styles = css`
     :host {
       display: inline-block;
-      position: absolute;
-      top: -0.5rem;
-      right: -4rem;
     }
 
     button {
@@ -131,12 +123,10 @@ export class RerollButton extends LitElement {
       }
     }
 
-    /* On small screens: stack below */
+    /* On small screens: no special positioning needed */
     @media (max-width: 600px) {
       :host {
-        position: static;
-        display: block;
-        margin: 1rem auto 0 auto;
+        /* Styles handled by StatblockWrapper */
       }
     }
   `;
@@ -144,7 +134,6 @@ export class RerollButton extends LitElement {
     connectedCallback() {
         super.connectedCallback();
         this._injectGlobalStyles();
-        this._setupStatblock();
     }
 
     private _injectGlobalStyles() {
@@ -245,61 +234,6 @@ export class RerollButton extends LitElement {
 
         document.head.appendChild(styleSheet);
         RerollButton.stylesInjected = true;
-    }
-
-    get monsterKey() {
-        const statblock = this.findTargetStatblock();
-        return statblock?.dataset.monster || '';
-    }
-
-    findTargetStatblock() {
-        return this.target ? document.getElementById(this.target) : null;
-    }
-
-    private _setupStatblock() {
-        const statblock = this.findTargetStatblock();
-        if (statblock && !statblock.closest('.statblock-wrapper')) {
-            this._wrapStatblock(statblock);
-        }
-    }
-
-    private _wrapStatblock(statblock: Element) {
-        // Wrap statblock in a container to position the button relative to it
-        const wrapper = document.createElement('div');
-        wrapper.className = 'statblock-wrapper';
-        wrapper.setAttribute('data-monster', statblock.getAttribute('data-monster') || '');
-
-        // Apply wrapper styles directly since it's not in shadow DOM
-        Object.assign(wrapper.style, {
-            position: 'relative'
-        });
-
-        // Apply responsive styles for small screens
-        const mediaQuery = window.matchMedia('(max-width: 600px)');
-        const updateWrapperStyles = (e: MediaQueryListEvent | MediaQueryList) => {
-            if (e.matches) {
-                // Small screen styles
-                Object.assign(wrapper.style, {
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center'
-                });
-            } else {
-                // Large screen styles
-                Object.assign(wrapper.style, {
-                    display: '',
-                    flexDirection: '',
-                    alignItems: ''
-                });
-            }
-        };
-
-        updateWrapperStyles(mediaQuery);
-        mediaQuery.addEventListener('change', updateWrapperStyles);
-
-        statblock.parentNode?.insertBefore(wrapper, statblock);
-        wrapper.appendChild(statblock);
-        wrapper.appendChild(this);
     }
 
     private async _rerollStatblock() {
