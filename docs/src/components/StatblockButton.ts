@@ -12,12 +12,15 @@ export abstract class StatblockButton extends LitElement {
     @property({ type: Boolean, reflect: true })
     disabled = false;
 
+    @property({ type: Boolean })
+    detached = false;
+
     private _isRegistered = false;
     private _isBeingMoved = false;
 
     connectedCallback() {
         super.connectedCallback();
-        if (this.target && !this._isRegistered && !this._isBeingMoved) {
+        if (this.target && !this._isRegistered && !this._isBeingMoved && !this.detached) {
             this._isRegistered = true;
             StatblockController.getInstance().registerButton(this.target, this);
         }
@@ -25,8 +28,8 @@ export abstract class StatblockButton extends LitElement {
 
     disconnectedCallback() {
         super.disconnectedCallback();
-        // Only unregister if we're not being moved to a new location
-        if (this.target && this._isRegistered && !this._isBeingMoved) {
+        // Only unregister if we're not being moved to a new location and we were actually registered
+        if (this.target && this._isRegistered && !this._isBeingMoved && !this.detached) {
             this._isRegistered = false;
             StatblockController.getInstance().unregisterButton(this.target, this);
         }
@@ -129,8 +132,8 @@ class StatblockWrapper {
     addButton(button: StatblockButton): void {
         if (!this.buttons.includes(button)) {
             this.buttons.push(button);
-            // Only move the button if it's not already in the panel
-            if (button.parentNode !== this.buttonPanel) {
+            // Only move the button if it's not already in the panel and it's not detached
+            if (button.parentNode !== this.buttonPanel && !button.detached) {
                 // Set flag to prevent re-registration during DOM move
                 (button as any)._isBeingMoved = true;
                 this.buttonPanel.appendChild(button);

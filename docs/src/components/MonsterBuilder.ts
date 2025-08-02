@@ -7,6 +7,7 @@ import { Power } from '../data/powers';
 import { StatblockChange, StatblockChangeType } from '../data/monster';
 import { Task } from '@lit/task';
 import { Monster, RelatedMonster } from '../data/monster';
+import { adoptExternalCss } from '../utils';
 
 @customElement('monster-builder')
 export class MonsterBuilder extends LitElement {
@@ -125,7 +126,9 @@ export class MonsterBuilder extends LitElement {
     private _monsterTask = new Task(this, {
         task: async ([monsterKey], { signal }) => {
 
-            await this.adoptSiteCss();
+            if (this.shadowRoot) {
+                await adoptExternalCss(this.shadowRoot);
+            }
 
             const store = initializeMonsterStore();
             const monster = await store.getMonster(monsterKey);
@@ -318,29 +321,6 @@ export class MonsterBuilder extends LitElement {
         const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
         if (statblockHolder && statblockElement) {
             statblockHolder.appendChild(statblockElement);
-        }
-    }
-
-    async adoptSiteCss() {
-        // Adopt site.css as a constructable stylesheet if supported
-        const supportsAdopted = 'adoptedStyleSheets' in Document.prototype && 'replace' in CSSStyleSheet.prototype;
-        if (supportsAdopted && this.shadowRoot) {
-            try {
-                const resp = await fetch('/css/site.css');
-                const cssText = await resp.text();
-                const sheet = new CSSStyleSheet();
-                await sheet.replace(cssText);
-                this.shadowRoot.adoptedStyleSheets = [sheet, ...this.shadowRoot.adoptedStyleSheets];
-            } catch (e) {
-                // fallback: do nothing, let Lit styles apply
-            }
-        } else if (this.shadowRoot) {
-            // Fallback for browsers like Firefox: inject <style> tag
-            fetch('/css/site.css').then(r => r.text()).then(cssText => {
-                const style = document.createElement('style');
-                style.textContent = cssText;
-                this.shadowRoot?.prepend(style);
-            });
         }
     }
 
