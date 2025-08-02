@@ -97,7 +97,15 @@ export class PowerLoadout extends LitElement {
       cursor: pointer;
     }
 
+    .dropdown-container {
+      position: relative;
+    }
+
     .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
       background-color: var(--bs-dark);
       border: 1px solid var(--bs-secondary);
       border-radius: 0.375rem;
@@ -106,6 +114,25 @@ export class PowerLoadout extends LitElement {
       width: 100%;
       max-height: 300px;
       overflow-y: auto;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      display: none;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    }
+
+    .dropdown-menu.position-up {
+      top: auto;
+      bottom: 100%;
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+      transform: translateY(10px);
+    }
+
+    .dropdown-menu.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .dropdown-item {
@@ -129,6 +156,11 @@ export class PowerLoadout extends LitElement {
       outline: none;
     }
 
+    .dropdown-item.focused {
+      background-color: var(--bs-secondary);
+      color: var(--bs-light);
+    }
+
     .dropdown-chevron {
       margin-left: auto;
       transition: transform 0.15s ease-in-out;
@@ -140,10 +172,6 @@ export class PowerLoadout extends LitElement {
 
     .show {
       display: block !important;
-    }
-
-    .d-none {
-      display: none !important;
     }
 
     .dropdown-separator {
@@ -182,16 +210,89 @@ export class PowerLoadout extends LitElement {
   @state()
   private powers: Power[] = [];
 
+  @state()
+  private focusedIndex = -1;
+
+  @state()
+  private dropdownPosition: 'down' | 'up' = 'down';
+
+  connectedCallback() {
+    super.connectedCallback();
+    // Add click-outside detection for dropdown
+    document.addEventListener('click', this.handleDocumentClick);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    document.removeEventListener('click', this.handleDocumentClick);
+  }
+
+  private handleDocumentClick = (event: Event) => {
+    // Close dropdown if clicking outside the component
+    if (!this.contains(event.target as Node)) {
+      this.closeDropdown();
+    }
+  };
+
   private toggleDropdown() {
     // Don't toggle if there's only one power
     if (this.powers.length <= 1) return;
 
+    console.log('Toggle dropdown called, current state:', this.dropdownOpen, 'powers:', this.powers.length);
+
     this.dropdownOpen = !this.dropdownOpen;
+
+    console.log('New dropdown state:', this.dropdownOpen);
+
+    if (this.dropdownOpen) {
+      // Reset focus index when opening
+      this.focusedIndex = -1;
+
+      // Calculate smart positioning
+      this.updatePosition();
+
+      // Focus the dropdown container after a brief delay to allow rendering
+      setTimeout(() => {
+        const dropdown = this.shadowRoot?.querySelector('.dropdown-menu');
+        if (dropdown) {
+          (dropdown as HTMLElement).focus();
+        }
+      }, 50);
+    }
+  }
+
+  private handleButtonClick = (event: Event) => {
+    // Stop the event from bubbling up to document
+    event.stopPropagation();
+    this.toggleDropdown();
+  };
+
+  private updatePosition() {
+    // Wait for next frame to ensure dropdown is rendered
+    requestAnimationFrame(() => {
+      const button = this.shadowRoot?.querySelector('.power-button') as HTMLElement;
+      const dropdown = this.shadowRoot?.querySelector('.dropdown-menu') as HTMLElement;
+
+      if (!button || !dropdown) return;
+
+      const buttonRect = button.getBoundingClientRect();
+      const dropdownHeight = dropdown.offsetHeight || 300; // Use max-height as fallback
+      const viewportHeight = window.innerHeight;
+      const spaceBelow = viewportHeight - buttonRect.bottom;
+      const spaceAbove = buttonRect.top;
+
+      // If there's not enough space below and more space above, position up
+      if (spaceBelow < dropdownHeight && spaceAbove > dropdownHeight) {
+        this.dropdownPosition = 'up';
+      } else {
+        this.dropdownPosition = 'down';
+      }
+    });
   }
 
   private selectPower(power: Power) {
     this.selectedPower = power;
-    this.dropdownOpen = false;
+    this.closeDropdown();
 
     // Dispatch a custom event to notify the parent about the selected power
     // Only dispatch if not suppressed
@@ -204,11 +305,17 @@ export class PowerLoadout extends LitElement {
     }
   }
 
+  private handleDropdownClick(event: Event) {
+    // Prevent clicks inside dropdown from closing it
+    event.stopPropagation();
+  }
+
   public randomize() {
     if (this.powers.length === 0) return;
 
     const randomIndex = Math.floor(Math.random() * this.powers.length);
     const randomPower = this.powers[randomIndex];
+
     // Only dispatch if not suppressed
     if (this._suppressEvents) {
       // Temporarily select without firing event
@@ -222,9 +329,90 @@ export class PowerLoadout extends LitElement {
   }
 
   private handleKeydown(event: KeyboardEvent) {
-    if (event.key === 'Escape') {
-      this.dropdownOpen = false;
+    if (!this.dropdownOpen) {
+      // If dropdown is closed, open it with Enter or Space
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        this.toggleDropdown();
+      }
+      return;
     }
+
+    // Handle keyboard navigation when dropdown is open
+    switch (event.key) {
+      case 'Escape':
+        event.preventDefault();
+        this.closeDropdown();
+        break;
+
+      case 'ArrowDown':
+        event.preventDefault();
+        this.navigateDown();
+        break;
+
+      case 'ArrowUp':
+        event.preventDefault();
+        this.navigateUp();
+        break;
+
+      case 'Enter':
+      case ' ':
+        event.preventDefault();
+        this.selectFocusedItem();
+        break;
+
+      case 'Home':
+        event.preventDefault();
+        this.focusedIndex = 0;
+        break;
+
+      case 'End':
+        event.preventDefault();
+        this.focusedIndex = this.getTotalItems() - 1;
+        break;
+    }
+  }
+
+  private navigateDown() {
+    const totalItems = this.getTotalItems();
+    if (totalItems === 0) return;
+
+    this.focusedIndex = this.focusedIndex < totalItems - 1 ? this.focusedIndex + 1 : 0;
+  }
+
+  private navigateUp() {
+    const totalItems = this.getTotalItems();
+    if (totalItems === 0) return;
+
+    this.focusedIndex = this.focusedIndex > 0 ? this.focusedIndex - 1 : totalItems - 1;
+  }
+
+  private getTotalItems(): number {
+    // Powers + randomize button (if powers exist)
+    return this.powers.length + (this.powers.length > 0 ? 1 : 0);
+  }
+
+  private selectFocusedItem() {
+    if (this.focusedIndex < 0) return;
+
+    if (this.focusedIndex < this.powers.length) {
+      // Select a power
+      this.selectPower(this.powers[this.focusedIndex]);
+    } else {
+      // Select randomize (last item)
+      this.randomize();
+    }
+  }
+
+  private closeDropdown() {
+    this.dropdownOpen = false;
+    this.focusedIndex = -1;
+
+    // Return focus to the trigger button
+    setTimeout(() => {
+      const button = this.shadowRoot?.querySelector('.power-button') as HTMLElement;
+      button?.focus();
+    }, 50);
   }
 
   private renderLoadoutContent(loadout: PowerLoadoutData) {
@@ -254,17 +442,17 @@ export class PowerLoadout extends LitElement {
                 title="Customize by choosing a power from the list below"
                 aria-label="Customize by choosing a power from the list below"
                 tabindex="0"
-                @click=${this.toggleDropdown}
+                @click=${this.handleButtonClick}
               ></svg-icon>
             ` : ''}
           </h4>
           <span class="power-slot-flavor">${loadout.flavorText}</span>
         </div>
 
-        <div class="position-relative">
+        <div class="dropdown-container">
           <button
             class="power-button ${hasSinglePower ? 'single-power' : ''}"
-            @click=${this.toggleDropdown}
+            @click=${this.handleButtonClick}
             aria-expanded=${this.dropdownOpen}
             aria-haspopup="true"
           >
@@ -286,12 +474,15 @@ export class PowerLoadout extends LitElement {
             ` : ''}
           </button>
 
-          <div class="dropdown-menu ${this.dropdownOpen ? 'show' : 'd-none'}">
+          <div class="dropdown-menu ${this.dropdownOpen ? 'show' : ''} ${this.dropdownPosition === 'up' ? 'position-up' : ''}"
+               @click=${this.handleDropdownClick}
+               tabindex="-1">
             ${!hasSinglePower ? html`
-              ${this.powers?.map((power: Power) => html`
+              ${this.powers?.map((power: Power, index: number) => html`
                 <button
-                  class="dropdown-item"
+                  class="dropdown-item ${this.focusedIndex === index ? 'focused' : ''}"
                   @click=${() => this.selectPower(power)}
+                  @mouseenter=${() => this.focusedIndex = index}
                 >
                   <svg-icon
                     class="power-icon"
@@ -303,8 +494,9 @@ export class PowerLoadout extends LitElement {
               ${this.powers?.length ? html`
                 <div class="dropdown-separator"></div>
                 <button
-                  class="dropdown-item"
+                  class="dropdown-item ${this.focusedIndex === this.powers.length ? 'focused' : ''}"
                   @click=${() => this.randomize()}
+                  @mouseenter=${() => this.focusedIndex = this.powers.length}
                 >
                   <svg-icon
                     class="power-icon"

@@ -13,6 +13,7 @@ export class MonsterBuilder extends LitElement {
     static styles = css`
     :host {
       display: block;
+      z-index: 100;
     }
     .monster-header {
       display: flex;
