@@ -275,3 +275,9 @@ export class MonsterCard extends LitElement {
     });
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'monster-card': MonsterCard;
+  }
+}

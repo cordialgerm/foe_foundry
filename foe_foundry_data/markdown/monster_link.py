@@ -48,6 +48,8 @@ def monster_button(ref: MonsterRef, base_url: str) -> Markup | None:
         url = f"{base_url}/generate/?template={ref.template.key}"
         if ref.monster is not None:
             url += f"&variant={ref.monster.key}"
+        if ref.monster is not None:
+            url += f"&monster-key={ref.monster.key}"
 
         monster = _link(ref, url)
 

@@ -431,3 +431,9 @@ export class MonsterBuilder extends LitElement {
 
 
 }
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'monster-builder': MonsterBuilder;
+    }
+}

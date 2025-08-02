@@ -119,3 +119,9 @@ export class MonsterArt extends LitElement {
     }));
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'monster-art': MonsterArt;
+  }
+}

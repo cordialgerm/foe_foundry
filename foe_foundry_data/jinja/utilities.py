@@ -90,8 +90,7 @@ def matching_css_link(url: str) -> str:
     if not full_path.exists():
         return f"<!-- No matching CSS file found for {url}-->"
 
-    css_path = f"css/{slug}.css"
-    return f'<link href="{get_base_url()}/{css_path}" rel="stylesheet">'
+    return f'<link href="{get_base_url()}/css/{css_path}" rel="stylesheet">'
 
 
 def matching_js_link(url: str) -> str:
@@ -106,4 +105,4 @@ def matching_js_link(url: str) -> str:
     if not full_path.exists():
         return f"<!-- No matching JS file found for {url}-->"
 
-    return f'<script src="{get_base_url()}/{js_path}" defer></script>'
+    return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'

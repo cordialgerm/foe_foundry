@@ -139,3 +139,9 @@ export class MonsterInfo extends LitElement {
     `;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'monster-info': MonsterInfo;
+  }
+}

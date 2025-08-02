@@ -35,37 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
     statblock.parentNode.insertBefore(wrapper, statblock);
     wrapper.appendChild(statblock);
 
-    // create the reroll button
-    const button = await createRerollButton(statblock, wrapper);
+    // create the reroll button using the new component
+    const button = createRerollButton(statblock);
     wrapper.appendChild(button);
   });
 });
 
-// Add an event listener for any reroll button clicks
-document.addEventListener("click", (event) => {
-  const button = event.target.closest(".reroll-button");
-  if (!button) return;
+// Add an event listener for reroll events from the reroll-button component
+document.addEventListener("reroll", (event) => {
+  const { monsterKey } = event.detail;
 
-  const wrapper = button.parentElement;
-  if (!wrapper) return;
+  if (!monsterKey) return;
 
-  const monsterKey = button.dataset.monster;
-  const statblock = wrapper.querySelector(".stat-block");
+  console.log("Reroll event received:", monsterKey);
 
-  if (!monsterKey || !statblock) return;
-
-  console.log("Reroll button clicked:", monsterKey, statblock);
-
-  // Trigger the animation
-  button.classList.add("rolling");
-  button.disabled = true;
-  // Remove class after animation ends
-  setTimeout(() => {
-    button.classList.remove("rolling");
-    button.disabled = false;
-  }, 600); // match the animation duration
-
-  rerollMonster(monsterKey, statblock);
+  rerollMonster(monsterKey);
 });
 
 // Randomize masks on page load
@@ -82,28 +66,9 @@ function wrapStatblock(statblock) {
   return wrapper;
 }
 
-async function createRerollButton(statblock) {
-
-  const button = document.createElement("button");
-  button.classList.add("reroll-button");
-  button.setAttribute("aria-label", "Reroll this monster");
-  button.setAttribute("title", "Reroll this monster");
-  button.setAttribute('data-monster', statblock.dataset.monster);
-
-  const response = await fetch('/img/icons/d20.svg');
-  const svgText = await response.text();
-
-  const parser = new DOMParser();
-  const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
-  const svgElement = svgDoc.documentElement;
-
-  svgElement.classList.add("d20-icon");
-  svgElement.removeAttribute("width");
-  svgElement.removeAttribute("height");
-  svgElement.removeAttribute("style");
-
-  button.appendChild(svgElement);
-
+function createRerollButton(statblock) {
+  const button = document.createElement('reroll-button');
+  button.setAttribute('monster-key', statblock.dataset.monster);
   return button;
 }
 

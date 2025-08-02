@@ -336,3 +336,9 @@ export class PowerLoadout extends LitElement {
     });
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'power-loadout': PowerLoadout;
+  }
+}
