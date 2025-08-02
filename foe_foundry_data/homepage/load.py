@@ -133,7 +133,8 @@ def _monster(monster: MonsterModel, mask_css: str) -> HomepageMonster:
     return HomepageMonster(
         key=monster.key,
         name=monster.template_name,
-        url=f"monsters/{monster.key}/",
+        template=monster.template_key,
+        url=f"monsters/{monster.template_key}/",
         image=monster.primary_image or "img/icons/favicon.webp",
         tagline=monster.tag_line,
         transparent_edges=monster.primary_image_has_transparent_edges,
