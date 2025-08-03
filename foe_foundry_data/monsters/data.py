@@ -123,7 +123,6 @@ class MonsterModel:
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
-    modified_date: datetime
 
     @property
     def key(self) -> str:
@@ -229,5 +228,4 @@ class MonsterModel:
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
-            modified_date=template.modified_date,
         )

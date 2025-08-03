@@ -1,11 +1,12 @@
 ---
 title: Goblins Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Goblins
-description: Discover goblin statblocks, lore, tactics, and chaotic encounter ideas for 5E. Add flavorful and fun goblins to your next TTRPG session.
+description: Discover goblin statblocks, lore, tactics, and chaotic encounter ideas
+  for 5E. Add flavorful and fun goblins to your next TTRPG session.
 image: img/monsters/goblin.webp
 json_ld: true
+date: '2025-05-14T20:51:53-07:00'
 ---
-
 # Goblins
 
 *Chaotic tricksters, pillagers, and endless nuisances*

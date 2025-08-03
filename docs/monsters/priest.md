@@ -1,11 +1,12 @@
 ---
 title: Priest Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Priests
-description: Explore priest statblocks, divine lore, and heretical encounter ideas for your 5E game. Summon miracles and discover dark twists of faith using Foe Foundry.
+description: Explore priest statblocks, divine lore, and heretical encounter ideas
+  for your 5E game. Summon miracles and discover dark twists of faith using Foe Foundry.
 image: img/monsters/priest.webp
 json_ld: true
+date: '2025-05-24T22:59:39-07:00'
 ---
-
 # Priests
 
 *Faithful Instruments of the Divine*

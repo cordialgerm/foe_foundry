@@ -1,11 +1,12 @@
 ---
 title: Spirit Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Spirits
-description: Bind sorrowful spirits with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E games.
+description: Bind sorrowful spirits with Foe Foundry. Discover complete statblocks,
+  lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/undead_spirits.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Spirits
 
 *Echoes of Rage and Regret*
