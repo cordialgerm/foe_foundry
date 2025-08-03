@@ -1,11 +1,12 @@
 ---
 title: Ghoul Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Ghouls
-description: Summon ravenous Ghouls with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks to terrorize your 5E sessions.
+description: Summon ravenous Ghouls with Foe Foundry. Discover complete statblocks,
+  lore, encounters, and adventure hooks to terrorize your 5E sessions.
 image: img/monsters/ghoul.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Ghoul
 
 *Ravenous Cannibals Possessed by Undeath*

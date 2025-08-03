@@ -1,11 +1,12 @@
 ---
 title: Skeleton Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Skeletons
-description: Raise subservient skeletons with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E campaigns.
+description: Raise subservient skeletons with Foe Foundry. Discover complete statblocks,
+  lore, encounters, and adventure hooks for your 5E campaigns.
 image: img/monsters/skeleton_warband.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Skeletons
 
 *Fleshless Servants to Greater Undead*

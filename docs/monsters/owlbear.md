@@ -1,11 +1,12 @@
 ---
 title: Owlbear Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Owlbears
-description: Release territorial Owlbears with Foe Foundry. Discover unique Owlbear statblocks, interesting powers, and exciting lore for your 5E campaign.
+description: Release territorial Owlbears with Foe Foundry. Discover unique Owlbear
+  statblocks, interesting powers, and exciting lore for your 5E campaign.
 image: /img/monsters/owlbear.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Owlbears
 
 *Unnaturally Territorial Predators*

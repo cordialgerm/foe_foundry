@@ -1,11 +1,12 @@
 ---
 title: Orc Statblocks, Lore, and Encounters for 5E | Foe Foundry
-short_title: "Bloodrage and Battle: Orcs"
-description: Need orcs that are more than axe fodder? Discover bloodrage-driven statblocks, rituals, and flavorful encounter ideas for your next 5E session.
+short_title: 'Bloodrage and Battle: Orcs'
+description: Need orcs that are more than axe fodder? Discover bloodrage-driven statblocks,
+  rituals, and flavorful encounter ideas for your next 5E session.
 image: img/monsters/orc.webp
 json_ld: true
+date: '2025-05-14T20:51:53-07:00'
 ---
-
 # Bloodrage and Battle: Orcs
 
 *Bloodrage-Fueled Ancestral Warriors*
