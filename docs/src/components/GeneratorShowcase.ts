@@ -27,6 +27,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
     private timerAnimationId: number | null = null;
     private messageInterval: number | null = null;
     private intersectionObserver: IntersectionObserver | null = null;
+    private timerHasCompletedOnce = false;
 
     private readonly messages = [
         "A worthy foe approaches...",
@@ -160,14 +161,14 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
     private shouldStartTimer(): boolean {
         const effectiveMonsterKey = this.monsterKey || this.getMonsterKeyFromUrl();
-        return !effectiveMonsterKey && !this.timerActive;
+        return !effectiveMonsterKey && !this.timerActive && !this.timerHasCompletedOnce;
     }
 
     private startTimer() {
         if (this.timerActive) return;
 
-        // Random timer duration between 5-7 seconds
-        this.timerDuration = (Math.random() * 2 + 5) * 1000;
+        // Random timer duration between 7-9 seconds
+        this.timerDuration = (Math.random() * 2 + 7) * 1000;
         this.timerStartTime = Date.now();
         this.timerActive = true;
         this.timerProgress = 0;
@@ -212,6 +213,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
     private completeTimer() {
         this.cleanupTimer();
+        this.timerHasCompletedOnce = true;
         this.showStatblock();
     }
 
@@ -263,7 +265,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return html`
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
-                <p class="instructions">Roll the dice below to summon a random monster! Click the Anvil to forge it into the perfect Foe.</p>
+                <p class="instructions">Roll the <strong>Die</strong> below to summon a random monster, click the <strong>Anvil</strong> to forge it into the perfect foe, or read the <strong>Tome</strong> for DM tips and tricks.</p>
                 <div class="showcase-controls">
                     <reroll-button
                         jiggle="jiggleUntilClick"
