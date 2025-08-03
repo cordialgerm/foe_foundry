@@ -14,7 +14,7 @@ date: 2025-08-03
 
 It's been about three months since I announced the [Foe Foundry Alpha](./2025_04_29_announcement.md){.branding} with the vision of creating a free toolkit for Game Masters who want to create [monsters](../monsters/index.md) that are **powerful, flavorful, and easy to run**.  
 
-Since then, we've created [dozens of new monsters](../monstesr/index.md), added [hundreds of unique powers](../powers/all.md), and launched a [GM Tips and Advice Newsletter](https://buttondown.com/cordialgerm).
+Since then, we've created [dozens of new monsters](../monsters/index.md), added [hundreds of unique powers](../powers/all.md), and launched a [GM Tips and Advice Newsletter](https://buttondown.com/cordialgerm).
 
 But, the heart of this whole endeavour has always been the [**Monster Generator**](../generate/index.md).  
 
