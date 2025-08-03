@@ -74,7 +74,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
                 <div class="showcase-controls">
-                    <reroll-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></reroll-button>
+                    <reroll-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock" random></reroll-button>
                     <forge-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></forge-button>
                 </div>
             </div>

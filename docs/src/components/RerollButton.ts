@@ -1,6 +1,8 @@
-import { LitElement, html, css } from 'lit';
+import { html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
+import { initializeMonsterStore } from '../data/api.js';
+import { StatblockRequest, StatblockChange, StatblockChangeType } from '../data/monster.js';
 import './SvgIcon.js';
 
 @customElement('reroll-button')
@@ -17,7 +19,11 @@ export class RerollButton extends StatblockButton {
   @property()
   jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = 'true';
 
+  @property({ type: Boolean })
+  random: boolean = false;
+
   private static stylesInjected = false;
+  private monsters = initializeMonsterStore();
 
   static styles = css`
     :host {
@@ -244,6 +250,29 @@ export class RerollButton extends StatblockButton {
     RerollButton.stylesInjected = true;
   }
 
+
+  private async getStatblock(monsterKey: string | null) {
+
+    if (!monsterKey) {
+      return await this.monsters.getRandomStatblock();
+    }
+    else {
+      const request: StatblockRequest = {
+        monsterKey,
+        powers: [],
+        hpMultiplier: 1.0,
+        damageMultiplier: 1.0
+      };
+
+      const change: StatblockChange = {
+        type: StatblockChangeType.Rerolled,
+        changedPower: null
+      };
+
+      return await this.monsters.getStatblock(request, change);
+    }
+  }
+
   private async _rerollStatblock() {
     const statblock = this.findTargetStatblock();
     if (!statblock) return;
@@ -251,18 +280,10 @@ export class RerollButton extends StatblockButton {
     const monsterKey = statblock.getAttribute('data-monster');
     if (!monsterKey) return;
 
-    const url = `/api/v1/statblocks/${monsterKey}?output=monster_only`;
-
     statblock.classList.add("pop-out");
 
     try {
-      const res = await fetch(url);
-      const html = await res.text();
-
-      // Parse the new statblock HTML into a DOM element
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const newStatblock = doc.querySelector('.stat-block');
+      const newStatblock = await this.getStatblock(this.random ? null : monsterKey);
 
       if (newStatblock) {
         // Preserve the same HTML ID
@@ -286,6 +307,8 @@ export class RerollButton extends StatblockButton {
       }
     } catch (err) {
       console.error("Failed to reroll monster:", err);
+      // Remove pop-out class if there was an error
+      statblock.classList.remove("pop-out");
     }
   }
 
