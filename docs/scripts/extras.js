@@ -9,12 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide if user already dismissed it or in print mode
   if (localStorage.getItem("hideBetaBanner") === "true" || params.get('render') === 'print') {
     console.log("Beta banner previously dismissed by user.");
-    banner.style.display = "none";
+    banner.style.display = "none !important";
+  }
+  else {
+    console.log("Displaying Beta banner.");
+    banner.style.display = ""; // remove the previous style that was hiding the banner
   }
 
   dismissBtn.addEventListener("click", () => {
     console.log("Beta banner dismissed by user.");
-    banner.style.display = "none";
+    banner.style.display = "none !important";
     localStorage.setItem("hideBetaBanner", "true");
   });
 });
