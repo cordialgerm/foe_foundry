@@ -11,16 +11,7 @@ image: img/icons/favicon.webp
 # Monster Generator
 
 <section>
-    <div>
-        <button class="bg-object parchment p-4 d-block mx-auto">
-            <div class="generator-reroll d-inline-block p-2">
-                <span>Summon Your Foe</span>
-                <reroll-button detached target="demo-statblock"></reroll-button>
-                <forge-button detached target="demo-statblock"></forge-button>
-            </div>
-        </button>
-    </div>
-    <monster-statblock class="d-none" id="demo-statblock"></monster-statblock>
+    <generator-showcase></generator-showcase>
 </section>
 
 ---

@@ -8,5 +8,6 @@ import './components/MonsterBuilder';
 import './components/MonsterStatblock';
 import './components/RerollButton';
 import './components/ForgeButton';
+import './components/GeneratorShowcase';
 import './pages/generate';
 import './pages/generate_v2';
