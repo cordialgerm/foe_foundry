@@ -28,7 +28,6 @@ PerksBrawler = [technique.ExpertBrawler]
 PerksBrawlerRoughStrength = [
     reckless.Toss,
     bruiser.StunningBlow,
-    thuggish.ExploitTheChaos,
     tough.JustAScratch,
 ]
 

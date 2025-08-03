@@ -31,7 +31,6 @@ PerksMartialTraining = [
     soldier.Lunge,
     soldier.PackTactics,
     soldier.Phalanx,
-    soldier.Lunge,
     soldier.MightyLeap,
 ]
 

@@ -90,7 +90,7 @@ LoadoutAnointedOne = [
     PowerLoadout(
         name="Divine Manifestation",
         flavor_text="A spark of the Divine made manifest in the Mortal Realm",
-        powers=PerksSupport,
+        powers=PerksDivineManifestation,
     ),
     PowerLoadout(
         name="Divine Conduit",
@@ -115,7 +115,7 @@ LoadoutArchpriest = [
     PowerLoadout(
         name="Divine Manifestation",
         flavor_text="A spark of the Divine made manifest in the Mortal Realm",
-        powers=PerksSupport,
+        powers=PerksDivineManifestation,
     ),
     PowerLoadout(
         name="Divine Prophet",
