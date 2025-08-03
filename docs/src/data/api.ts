@@ -93,6 +93,20 @@ export class ApiMonsterStore implements MonsterStore {
         };
     }
 
+    async getRandomStatblock(): Promise<HTMLElement> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/statblocks/random?output=json`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch random statblock: ${response.statusText}`);
+        }
+        const result = await response.json();
+        const statblock_html = result["statblock_html"];
+        const parser = new DOMParser();
+        const statblockElement = parser.parseFromString(statblock_html, 'text/html').body.firstElementChild as HTMLElement;
+        statblockElement.part = 'stat-block';
+        return statblockElement;
+    }
+
     async getStatblock(request: StatblockRequest, change: StatblockChange | null): Promise<HTMLElement> {
         const payload = {
             monster_key: request.monsterKey,

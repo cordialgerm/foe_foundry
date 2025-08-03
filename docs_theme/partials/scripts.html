@@ -10,8 +10,10 @@
 
 <script src="{{ 'scripts/main.js'|url }}" defer></script>
 
-{% if page and page.is_homepage %}
-<script src="{{ 'scripts/homepage.js'|url }}" defer></script>
+{% if page.is_homepage %}
+{{ '/' | matching_js_link | safe }}
+{% elif page and page.url %}
+{{ page.url | matching_js_link | safe }}
 {% endif %}
 
 <script type="speculationrules">

@@ -6,8 +6,8 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 @customElement('svg-icon')
 export class SvgIcon extends LitElement {
 
-    static styles = [
-        css`
+  static styles = [
+    css`
         :host {
           display: inline-block;
           width: 1em;
@@ -18,10 +18,21 @@ export class SvgIcon extends LitElement {
           height: 100%;
         }
 
-        .jiggle-on-hover:hover svg {
+        .jiggle-on-hover:hover svg,
+        .jiggle-until-click:hover svg {
           filter: drop-shadow(0 0 5px var(--box-shadow-color));
           animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
         }
+
+        .jiggle-until-click svg {
+          filter: drop-shadow(0 0 3px var(--box-shadow-color));
+          animation: jiggle-subtle 1.5s ease-in-out infinite;
+        }
+
+        .jiggle-until-click.clicked svg {
+          animation: none !important;
+        }
+
         @keyframes jiggle {
           0% {
             transform: rotate(0deg) translateX(0);
@@ -39,93 +50,140 @@ export class SvgIcon extends LitElement {
             transform: rotate(0deg) translateX(0);
           }
         }
+
+        @keyframes jiggle-subtle {
+          0%, 100% {
+            transform: rotate(0deg) translateX(0);
+          }
+          25% {
+            transform: rotate(1deg) translateX(0.5px);
+          }
+          75% {
+            transform: rotate(-1deg) translateX(-0.5px);
+          }
+        }
       `
-    ];
+  ];
 
 
-    @property()
-    src = '';
+  @property()
+  src = '';
 
-    /**
-     * If true, applies the jiggle animation to the icon
-     */
-    @property({ type: Boolean })
-    jiggle = false;
+  /**
+   * Jiggle behavior type. Can be:
+   * - 'jiggleOnHover' (or true/"true" for backwards compatibility)
+   * - 'jiggleUntilClick'
+   */
+  @property()
+  jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = false;
 
-    private svgContent: string = '';
+  private svgContent: string = '';
 
-    async firstUpdated() {
-        if (this.src) {
-            await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
-        }
+  private handleClick() {
+    this.shadowRoot?.querySelector('span')?.classList.add('clicked');
+  }
+
+  async firstUpdated() {
+    if (this.src) {
+      await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
     }
 
-    async updated(changedProperties: Map<string, any>) {
-        if (changedProperties.has('src') && this.src) {
-            await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
-        }
-    }
+    // Add click handler for jiggleUntilClick behavior
+    this.addEventListener('click', this.handleClick.bind(this));
 
-    render() {
-        const classes = {
-            'svg-icon': true,
-            'placeholder': true,
-            'jiggle-on-hover': this.jiggle
-        };
-        // Lit 2.x: classMap is not imported, so use manual join
-        const classString = Object.entries(classes)
-            .filter(([_, v]) => v)
-            .map(([k]) => k)
-            .join(' ');
-        return html`<span class="${classString}">${unsafeHTML(this.svgContent)}</span>`;
+    // Add random delay for jiggle-until-click to desynchronize animations
+    if (this.jiggle === 'jiggleUntilClick') {
+      const spanElement = this.renderRoot.querySelector('span');
+      if (spanElement) {
+        const randomDelay = Math.random() * 2; // 0-2 seconds random delay
+        spanElement.style.animationDelay = `${randomDelay}s`;
+      }
     }
+  }
+
+  async updated(changedProperties: Map<string, any>) {
+    if (changedProperties.has('src') && this.src) {
+      await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
+    }
+  }
+
+  render() {
+    const isJiggleOnHover = this.jiggle === 'jiggleOnHover' || this.jiggle === true || this.jiggle === 'true';
+    const isJiggleUntilClick = this.jiggle === 'jiggleUntilClick';
+
+    const classes = {
+      'svg-icon': true,
+      'placeholder': true,
+      'jiggle-on-hover': isJiggleOnHover,
+      'jiggle-until-click': isJiggleUntilClick,
+    };
+    const classString = Object.entries(classes)
+      .filter(([_, v]) => v)
+      .map(([k]) => k)
+      .join(' ');
+    return html`<span class="${classString}">${unsafeHTML(this.svgContent)}</span>`;
+  }
 }
 
 const svgCache = new Map<string, string>();
 
 async function cleanAndInjectSVGFromURL(src: string, targetElement: HTMLElement, fillValue: string = 'currentColor') {
-    try {
-        // Check if src is a valid URL ending with .svg
-        let url = src;
-        if (!src.endsWith('.svg')) {
-            // Assume it's an icon name and convert to URL
-            url = `/img/icons/${src}.svg`;
-        }
-
-        if (svgCache.has(url)) {
-            // Use cached SVG content
-            const cachedSVG = svgCache.get(url) as string;
-            injectSVG(cachedSVG, targetElement, fillValue);
-            return;
-        }
-
-        const result = await fetch(url);
-        const svgText = await result.text();
-        // Strip out any fill="..." attributes
-        const cleaned = svgText.replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '');
-
-        // Cache the cleaned SVG content
-        svgCache.set(url, cleaned);
-
-        // Inject the SVG into the target element
-        injectSVG(cleaned, targetElement, fillValue);
-    } catch (error) {
-        console.warn('Error loading SVG icon:', src, error);
+  try {
+    // Check if src is a valid URL ending with .svg
+    let url = src;
+    if (!src.endsWith('.svg')) {
+      // Assume it's an icon name and convert to URL
+      url = `/img/icons/${src}.svg`;
     }
+
+    if (svgCache.has(url)) {
+      // Use cached SVG content
+      const cachedSVG = svgCache.get(url) as string;
+      injectSVG(cachedSVG, targetElement, fillValue);
+      return;
+    }
+
+    const result = await fetch(url);
+    if (!result.ok) {
+      throw new Error(`Failed to load SVG from ${url}: ${result.statusText}`);
+    }
+
+    const svgText = await result.text();
+    // Strip out any fill="..." attributes, width/height attributes, and style attributes to allow CSS control
+    const cleaned = svgText
+      .replace(/\s*fill\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*width\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*height\s*=\s*(['"])[^'"]*\1/gi, '')
+      .replace(/\s*style\s*=\s*(['"])[^'"]*\1/gi, '');
+
+    // Cache the cleaned SVG content
+    svgCache.set(url, cleaned);
+
+    // Inject the SVG into the target element
+    injectSVG(cleaned, targetElement, fillValue);
+  } catch (error) {
+    console.warn('Error loading SVG icon:', src, error);
+  }
 }
 
 function injectSVG(svgText: string, targetElement: HTMLElement, fillValue: string) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(svgText, 'image/svg+xml');
-    const svgEl = doc.documentElement;
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(svgText, 'image/svg+xml');
+  const svgEl = doc.documentElement;
 
-    // Optionally apply a uniform fill
-    if (fillValue !== null) {
-        svgEl.setAttribute('fill', fillValue);
-    }
+  // Optionally apply a uniform fill
+  if (fillValue !== null) {
+    svgEl.setAttribute('fill', fillValue);
+  }
 
-    // Replace the contents of the target <div>
-    targetElement.innerHTML = '';
-    targetElement.appendChild(svgEl);
-    targetElement.classList.remove('placeholder');
+  // Replace the contents of the target <div>
+  targetElement.innerHTML = '';
+  targetElement.appendChild(svgEl);
+  targetElement.classList.remove('placeholder');
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'svg-icon': SvgIcon;
+  }
 }

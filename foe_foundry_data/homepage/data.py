@@ -6,6 +6,7 @@ from datetime import datetime
 class HomepageMonster:
     key: str
     name: str
+    template: str
     url: str
     image: str
     tagline: str

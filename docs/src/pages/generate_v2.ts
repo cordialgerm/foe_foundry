@@ -1,5 +1,5 @@
-if (window.location.pathname === '/generate' || window.location.pathname === '/generate/') {
-    console.log('Loaded generator page');
+if (window.location.pathname === '/generate/v2' || window.location.pathname === '/generate/v2/') {
+    console.log('Loaded generator v2 page');
     window.addEventListener('monster-key-changed', updateUrlOnMonsterKeyChange);
 
     // Handle URL parameters on page load

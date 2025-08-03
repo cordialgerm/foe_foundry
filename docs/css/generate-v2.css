@@ -1,0 +1,29 @@
+.container.pamphlet-container {
+    margin-top: 0px !important;
+}
+
+.container-fluid {
+    padding-top: 0px !important;
+}
+
+.monster-builder {
+    margin-top: 0px !important;
+}
+
+/* FAQ Styling */
+dt {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: var(--fg-color);
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--fg-color);
+}

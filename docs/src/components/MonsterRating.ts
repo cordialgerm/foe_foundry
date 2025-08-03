@@ -169,3 +169,9 @@ export class MonsterRating extends LitElement {
         `;
     }
 }
+
+declare global {
+    interface HTMLElementTagNameMap {
+        'monster-rating': MonsterRating;
+    }
+}

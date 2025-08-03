@@ -56,4 +56,6 @@ export interface MonsterStore {
     getMonster(key: string): Promise<Monster | null>;
 
     getStatblock(request: StatblockRequest, change: StatblockChange | null): Promise<HTMLElement>;
+
+    getRandomStatblock(): Promise<HTMLElement>;
 }
