@@ -36,14 +36,12 @@ class _RandomMask:
 class _HomepageDataCache:
     @cached_property
     def load_homepage_data(self) -> HomepageData:
-        pass
         """
         Load the homepage data from the data module.
 
         Returns:
             HomepageData: An instance of HomepageData containing monsters, powers, and blogs.
         """
-
         rng = np.random.default_rng(20240711)
 
         mask_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "masks"

@@ -88,7 +88,7 @@ def matching_css_link(url: str) -> str:
     css_path = f"{slug}.css"
     full_path = Path.cwd() / "docs" / "css" / css_path
     if not full_path.exists():
-        return f"<!-- No matching CSS file found for {url}-->"
+        return f"<!-- No matching CSS file found for {url} -->"
 
     return f'<link href="{get_base_url()}/css/{css_path}" rel="stylesheet">'
 
@@ -103,6 +103,6 @@ def matching_js_link(url: str) -> str:
     js_path = f"{slug}.js"
     full_path = Path.cwd() / "docs" / "scripts" / js_path
     if not full_path.exists():
-        return f"<!-- No matching JS file found for {url}-->"
+        return f"<!-- No matching JS file found for {url} -->"
 
     return f'<script src="{get_base_url()}/scripts/{js_path}" defer></script>'
