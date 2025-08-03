@@ -1,21 +1,21 @@
-// Add a dismissible Alpha banner to the top of the page
+// Add a dismissible Beta banner to the top of the page
 document.addEventListener("DOMContentLoaded", function () {
-  const banner = document.getElementById("alpha-banner");
+  const banner = document.getElementById("beta-banner");
   const dismissBtn = document.getElementById("dismiss-banner");
   const params = new URLSearchParams(window.location.search);
 
   if (!banner || !dismissBtn) return;
 
   // Hide if user already dismissed it or in print mode
-  if (localStorage.getItem("hideAlphaBanner") === "true" || params.get('render') === 'print') {
-    console.log("Alpha banner previously dismissed by user.");
+  if (localStorage.getItem("hideBetaBanner") === "true" || params.get('render') === 'print') {
+    console.log("Beta banner previously dismissed by user.");
     banner.style.display = "none";
   }
 
   dismissBtn.addEventListener("click", () => {
-    console.log("Alpha banner dismissed by user.");
+    console.log("Beta banner dismissed by user.");
     banner.style.display = "none";
-    localStorage.setItem("hideAlphaBanner", "true");
+    localStorage.setItem("hideBetaBanner", "true");
   });
 });
 
