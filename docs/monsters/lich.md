@@ -4,8 +4,8 @@ short_title: Lich Statblocks and Encounters
 description: Unleash powerful liches with Foe Foundry. Unlock custom statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/lich.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Liches
 
 *Immortal Masters of Undeath and Arcana*

@@ -1,4 +1,5 @@
 from datetime import datetime, timezone
+from functools import cached_property
 from pathlib import Path
 
 import numpy as np
@@ -32,82 +33,100 @@ class _RandomMask:
         return f"masked v{n}"
 
 
+class _HomepageDataCache:
+    @cached_property
+    def load_homepage_data(self) -> HomepageData:
+        """
+        Load the homepage data from the data module.
+
+        Returns:
+            HomepageData: An instance of HomepageData containing monsters, powers, and blogs.
+        """
+        rng = np.random.default_rng(20240711)
+
+        mask_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "masks"
+
+        # check for webp or png
+        mask_count = len(list(mask_dir.glob("*.webp"))) + len(
+            list(mask_dir.glob("*.png"))
+        )
+        random_mask = _RandomMask(mask_count)
+
+        powers = [
+            _power(p, random_mask.random_mask_css())
+            for _, p in Powers.PowerLookup.items()
+            if len(p.feature_descriptions) <= 400
+        ]
+
+        # note - Monster.one_of_each_monster has one of each monster
+        #        we just want one example per template
+        template_keys = set()
+        monsters = []
+        for m in Monsters.one_of_each_monster:
+            if m.has_lore and m.template_name not in template_keys:
+                template_keys.add(m.template_name)
+                monsters.append(_monster(m, random_mask.random_mask_css()))
+
+        # Create a DataFrame for sorting
+        df = pd.DataFrame(
+            {
+                "monster": monsters,
+                "monster_name": [m.name for m in monsters],
+                "create_date": [m.create_date for m in monsters],
+            }
+        )
+
+        # Sort by create_date descending, then monster_name ascending
+        df_sorted = df.sort_values(
+            ["create_date", "monster_name"], ascending=[False, True]
+        )
+
+        # Mark the top 3 as new
+        for m in df_sorted.head(3)["monster"]:
+            # Set is_new based on create_date
+            # some of the older content got marked as new as part of a refactor moving many files around
+            if m.create_date >= datetime(2025, 7, 18, tzinfo=timezone.utc):
+                m.is_new = True
+
+        # Rebuild monsters list: new first, then shuffle the rest
+        new_monsters = sorted(
+            [m for m in monsters if m.is_new], key=lambda m: m.create_date, reverse=True
+        )
+        old_monsters = [m for m in monsters if not m.is_new]
+        rng.shuffle(old_monsters)  # type: ignore
+        monsters = new_monsters + old_monsters
+
+        blogs = load_blog_posts()
+
+        rng.shuffle(powers)  # type: ignore
+
+        # when shuffling monsters, start with the newest ones first, then shuffle the rest
+        # this ensures that the newest monsters are always shown first
+        # we shuffle the rest to ensure variety for things like SEO indexing
+        new_monsters = [m for m in monsters if m.is_new]
+        old_monsters = [m for m in monsters if not m.is_new]
+        rng.shuffle(old_monsters)  # type: ignore
+
+        monsters = new_monsters + old_monsters
+
+        return HomepageData(
+            monsters=monsters,
+            powers=powers,
+            blogs=[_blog(b, rng, random_mask.random_mask_css()) for b in blogs],
+        )
+
+
+_cache = _HomepageDataCache()
+
+
 def load_homepage_data() -> HomepageData:
     """
-    Load the homepage data from the data module.
+    Load the homepage data from the cache or create it if not already cached.
 
     Returns:
         HomepageData: An instance of HomepageData containing monsters, powers, and blogs.
     """
-
-    rng = np.random.default_rng(20240711)
-
-    mask_dir = Path.cwd() / "docs" / "img" / "backgrounds" / "masks"
-
-    # check for webp or png
-    mask_count = len(list(mask_dir.glob("*.webp"))) + len(list(mask_dir.glob("*.png")))
-    random_mask = _RandomMask(mask_count)
-
-    powers = [
-        _power(p, random_mask.random_mask_css())
-        for _, p in Powers.PowerLookup.items()
-        if len(p.feature_descriptions) <= 400
-    ]
-
-    # note - Monster.one_of_each_monster has one of each monster
-    #        we just want one example per template
-    template_keys = set()
-    monsters = []
-    for m in Monsters.one_of_each_monster:
-        if m.has_lore and m.template_name not in template_keys:
-            template_keys.add(m.template_name)
-            monsters.append(_monster(m, random_mask.random_mask_css()))
-
-    # Create a DataFrame for sorting
-    df = pd.DataFrame(
-        {
-            "monster": monsters,
-            "create_date": [m.create_date for m in monsters],
-            "modified_date": [m.modified_date for m in monsters],
-        }
-    )
-
-    # Sort by create_date descending, then modified_date descending
-    df_sorted = df.sort_values(
-        ["create_date", "modified_date"], ascending=[False, False]
-    )
-
-    # Mark the top 3 as new
-    for m in df_sorted.head(3)["monster"]:
-        # Set is_new based on create_date
-        # some of the older content got marked as new as part of a refactor moving many files around
-        if m.create_date >= datetime(2025, 7, 19, tzinfo=timezone.utc):
-            m.is_new = True
-
-    # Rebuild monsters list: new first, then shuffle the rest
-    new_monsters = [m for m in monsters if m.is_new]
-    old_monsters = [m for m in monsters if not m.is_new]
-    rng.shuffle(old_monsters)  # type: ignore
-    monsters = new_monsters + old_monsters
-
-    blogs = load_blog_posts()
-
-    rng.shuffle(powers)  # type: ignore
-
-    # when shuffling monsters, start with the newest ones first, then shuffle the rest
-    # this ensures that the newest monsters are always shown first
-    # we shuffle the rest to ensure variety for things like SEO indexing
-    new_monsters = [m for m in monsters if m.is_new]
-    old_monsters = [m for m in monsters if not m.is_new]
-    rng.shuffle(old_monsters)  # type: ignore
-
-    monsters = new_monsters + old_monsters
-
-    return HomepageData(
-        monsters=monsters,
-        powers=powers,
-        blogs=[_blog(b, rng, random_mask.random_mask_css()) for b in blogs],
-    )
+    return _cache.load_homepage_data
 
 
 def _blog(blog: BlogPost, rng: np.random.Generator, mask_css: str) -> HomepageBlog:
@@ -131,8 +150,10 @@ def _blog(blog: BlogPost, rng: np.random.Generator, mask_css: str) -> HomepageBl
 
 def _monster(monster: MonsterModel, mask_css: str) -> HomepageMonster:
     return HomepageMonster(
+        key=monster.key,
         name=monster.template_name,
-        url=f"monsters/{monster.key}/",
+        template=monster.template_key,
+        url=f"monsters/{monster.template_key}/",
         image=monster.primary_image or "img/icons/favicon.webp",
         tagline=monster.tag_line,
         transparent_edges=monster.primary_image_has_transparent_edges,
@@ -140,7 +161,6 @@ def _monster(monster: MonsterModel, mask_css: str) -> HomepageMonster:
         background_color=monster.primary_image_background_color,
         mask_css=mask_css,
         create_date=monster.create_date,
-        modified_date=monster.modified_date,
         is_new=False,  # temporary, will determine which are considered "new" based on creation dates of all monsters
     )
 

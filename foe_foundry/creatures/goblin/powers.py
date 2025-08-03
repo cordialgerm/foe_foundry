@@ -50,7 +50,9 @@ PerksLeaders = [
     leader.CommandTheAttack,
     leader.FanaticFollowers,
     leader.StayInFormation,
-] + thuggish.ThuggishPowers
+    thuggish.MobBoss,
+    thuggish.ExploitTheChaos,
+]
 
 PerksGoblinAmbusher = [ambusher.AmbusherPower, ambusher.CunningAction]
 PerksGoblinBoss = [thuggish.KickTheLickspittle]

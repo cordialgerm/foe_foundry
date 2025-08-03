@@ -4,8 +4,8 @@ short_title: Chimeras
 description: Discover unique Chimera statblocks and encounters for your 5E campaigns. Summon monstrous heralds of disaster with Foe Foundry.
 image: img/monsters/chimera.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Chimeras
 
 *Monstrous Messenger of Imminent Disaster*

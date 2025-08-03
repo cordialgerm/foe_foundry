@@ -22,11 +22,11 @@ Simulacrums are perfect for:
 - Need a morally weird plot twist where two NPCs claim to be the original?
 - Want a reason for a mid-tier caster to throw out top-tier spells and vanish in a puff of snow?
 
-Unfortunately, the *Monster Manual* doesn’t offer any simulacrum statblocks — which means you’re left cobbling one together in a rush. That’s where [Foe Foundry](../index.md){.branding} comes in. Our [monster generator](../generate.md){.branding} lets you create flavorful simulacra with custom powers, themes, and roles. From sneaky illusionists to unnerving mirror-fighters, we’ve got statblocks that *feel* like shadow-copies instead of just reskinned mages.
+Unfortunately, the *Monster Manual* doesn’t offer any simulacrum statblocks — which means you’re left cobbling one together in a rush. That’s where [Foe Foundry](../index.md){.branding} comes in. Our [monster generator](../generate/index.md){.branding} lets you create flavorful simulacra with custom powers, themes, and roles. From sneaky illusionists to unnerving mirror-fighters, we’ve got statblocks that *feel* like shadow-copies instead of just reskinned mages.
 
 ## Foe Foundry Simulacrum Statblocks
 
-With [Foe Foundry](./index.md){.branding} you can generate hundreds of different versions of these statblocks by combining unique and interesting powers. These are just a couple examples. With the [Foe Foundry Monster Generator](../generate.md){.branding} you can re-forge any of these statblocks with the roll of a die.
+With [Foe Foundry](./index.md){.branding} you can generate hundreds of different versions of these statblocks by combining unique and interesting powers. These are just a couple examples. With the [Foe Foundry Monster Generator](../generate/index.md){.branding} you can re-forge any of these statblocks with the roll of a die.
 
 | Statblock                  | CR    | Description                                           |
 |----------------------------|-------|-------------------------------------------------------|

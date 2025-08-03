@@ -4,8 +4,8 @@ short_title: Frost Giants
 description: Wield the cold fury of the north with these mythic 5E Frost Giant statblocks and encounters. Discover reavers, thanes, rimepriests, and adventure hooks to freeze your players' blood.
 image: img/monsters/frost_giant.webp
 json_ld: true
+date: '2025-07-19T10:58:44-07:00'
 ---
-
 # Frost Giants
 
 *Frozen Reavers of Blood and Battle*

@@ -49,7 +49,11 @@
     {% include "partials/analytics.html" %}
 
     <script>
-        var base_url = {{ base_url| tojson }}, shortcuts = {};
+        var base_url = {{ base_url | tojson }}, shortcuts = {};
+        window.baseUrl = "";
+
+        var defaultMonsterKey = "{{ default_monster_key }}";
+        window.defaultMonsterKey = defaultMonsterKey;
     </script>
 
 </head>
@@ -57,12 +61,15 @@
 <body {% if page and page.is_homepage %} class="homepage" {% endif %}>
     {% include "partials/navbar.html" %}
 
-    {% include "partials/alpha_banner.html" %}
-
+    {% include "partials/banner.html" %}
 
     {% if page and page.is_homepage %}
     <div class="container pamphlet-container">
         {% include "homepage.j2.html" %}
+    </div>
+    {% elif page and (page.url == '/generate/v2/' or page.url == '/generate/v2' or page.url == 'generate/v2/') %}
+    <div class="container pamphlet-container">
+        {% include "generate.j2.html" %}
     </div>
     {% else %}
     <div class="container pamphlet-container">
@@ -82,7 +89,6 @@
     {% include "partials/footer.html" %}
 
     {% include "partials/scripts.html" %}
-
 
     {% if 'search' in config.plugins %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}

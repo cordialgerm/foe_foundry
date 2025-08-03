@@ -4,8 +4,8 @@ short_title: Berserkers
 description: Unleash the fury of battle with berserker and encounters. Discover new variants packed with blood, glory, and primal rage for your 5E games.
 image: img/monsters/berserker.webp
 json_ld: true
+date: '2025-07-05T10:10:44-07:00'
 ---
-
 # Berserkers
 
 *Battle-Frenzied Warriors of Blood and Glory*

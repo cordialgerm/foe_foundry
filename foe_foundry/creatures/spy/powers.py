@@ -33,7 +33,6 @@ PerksDeadlyPoisons = [
 PerksClever = [
     clever.IdentifyWeaknes,
     charm.CharmingWords,
-    fast.NimbleReaction,
     gadget.PotionOfHealing,
 ]
 
@@ -45,9 +44,6 @@ PerksQuick = [
     artillery.QuickDraw,
 ]
 
-
-PerksBasicSpy = PerksSecretive + PerksClever
-PerksBasicSpy.remove(sneaky.SneakyStrike)  # this will be forced in
 
 LoadoutSpy = [
     PowerLoadout(
@@ -63,7 +59,7 @@ LoadoutSpy = [
     PowerLoadout(
         name="Adaptable",
         flavor_text="Spies are always prepared for any situation",
-        powers=PerksBasicSpy,
+        powers=PerksClever,
     ),
 ]
 

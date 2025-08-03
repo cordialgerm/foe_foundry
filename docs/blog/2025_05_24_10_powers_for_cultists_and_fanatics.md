@@ -106,7 +106,7 @@ A False Prophet thrives on narrative ambiguity. Let them perform a miracle thatâ
 
 ## Try These Powers Out
 
-Want to see these powers in action? The [Foe Foundry Generator](../generate.md) lets you summon the perfect fanatical [Cultists](../monsters/cultist.md) and [Priests](../monsters/priest.md) for your upcoming game.  
+Want to see these powers in action? The [Foe Foundry Generator](../generate/index.md) lets you summon the perfect fanatical [Cultists](../monsters/cultist.md) and [Priests](../monsters/priest.md) for your upcoming game.  
 
 Here's an example of the [[Cultist Grand Master]]:
 

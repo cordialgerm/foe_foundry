@@ -28,7 +28,7 @@ LoadoutBase = [
 ]
 
 # Shield Guardian
-PerksShieldGuardianBase = PerksGolemBase + [defender.Protection, construct.SpellStoring]
+PerksShieldGuardianBase = PerksGolemBase + [construct.SpellStoring]
 PerksShieldGuardianUnique = [construct.BoundProtector]
 PerksShieldGuardianAttack = PerksAttackModifications.copy() + [technique.SappingAttack]
 

@@ -92,4 +92,4 @@ It covers a 20-foot diameter circle centered on the caster, or a 5x5 square on a
 
 ---
 
-Whether you’re building terrifying undead or protecting allies with divine light, emanations give you powerful tools for battlefield control. Explore [more powers](../powers/all.md) or [summon your own monster](../generate.md) to put them to work.
+Whether you’re building terrifying undead or protecting allies with divine light, emanations give you powerful tools for battlefield control. Explore [more powers](../powers/all.md) or [summon your own monster](../generate/index.md) to put them to work.

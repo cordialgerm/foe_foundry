@@ -4,7 +4,9 @@ from datetime import datetime
 
 @dataclass(kw_only=True)
 class HomepageMonster:
+    key: str
     name: str
+    template: str
     url: str
     image: str
     tagline: str
@@ -14,7 +16,6 @@ class HomepageMonster:
     mask_css: str
     is_new: bool
     create_date: datetime
-    modified_date: datetime
 
     @property
     def custom_style(self) -> str:

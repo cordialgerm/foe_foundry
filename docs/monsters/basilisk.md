@@ -4,8 +4,8 @@ short_title: Basilisks
 description: Uncover the deadly world of basilisks with Foe Foundry. Rich lore, unique statblocks, and fun encounter hooks for your next 5E session.
 image: img/monsters/basilisk.webp
 json_ld: true
+date: '2025-06-21T08:36:34-07:00'
 ---
-
 # Basilisks
 
 *Reptilian Predators with Petrifying Gaze and Venomous Bite*

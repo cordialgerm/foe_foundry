@@ -4,8 +4,8 @@ short_title: Manticores
 description: Generate quarrelsome manticores with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/manticore.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Manticores
 
 *Flying hunters with spiked tails and sharper tongues*

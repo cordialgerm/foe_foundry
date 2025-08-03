@@ -27,7 +27,6 @@ PerksOffensiveDefault = [
 PerksOffensiveSlam = PerksOffensiveDefault + [
     reckless.Toss,
     technique.GrapplingAttack,
-    technique.GrapplingAttack,
 ]
 
 PerksOffenseEnchantmentWithLongsword = PerksOffensiveDefault + [

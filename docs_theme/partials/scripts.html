@@ -8,12 +8,19 @@
 {{ script|script_tag }}
 {%- endfor %}
 
-{% if page and page.is_homepage %}
-<script src="{{ 'scripts/homepage.js'|url }}" defer></script>
+<script src="{{ 'scripts/main.js'|url }}" defer></script>
+
+{% if page.is_homepage %}
+{{ '/' | matching_js_link | safe }}
+{% elif page and page.url %}
+{{ page.url | matching_js_link | safe }}
 {% endif %}
 
-{% if page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
-<script src="{{ 'scripts/generate.js'|url }}" defer></script>
-{% endif %}
+<script type="speculationrules">
+  {
+    "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }],
+    "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+  }
+</script>
 
 {%- endblock %}

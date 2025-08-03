@@ -12,7 +12,6 @@ PerksUnstoppableOffense = [
     reckless.RecklessFlurry,
     reckless.Toss,
     reckless.WildCleave,
-    technique.CleavingAttack,
 ]
 
 # Battle Hardened

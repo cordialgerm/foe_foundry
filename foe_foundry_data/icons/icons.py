@@ -160,6 +160,7 @@ def og_image_for_icon(
     draw.text((text_x, text_y), title, fill=foreground_color, font=font)
 
     # Save the final image
-    base.save(output_path, format="PNG")
+    rgb_base = base.convert("RGB")
+    rgb_base.save(output_path, format="PNG")
 
     return output_path

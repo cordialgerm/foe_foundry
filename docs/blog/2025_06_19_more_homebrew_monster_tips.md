@@ -29,7 +29,7 @@ The original article [5 Tips for Homebrewing Monsters](./2025_05_16_homebrew_mon
 - **Monsters Can Be Interesting & Threatening**: Foe Foundry monsters often have bonus actions or powerful actions that can replace attacks in the multiattack. This way, your monster will always do something interesting on its turn and still be able to threaten players with damage output.
 - **Monsters Don't Need Multiple Repetitive Attacks**: No more boring french-vanilla "Bite Claw Claw" monsters. These sorts of attacks waste space on the statblock and make it appear like there is more going on in the statblock than there actually is.
 - **Monsters Should Use Interactive Debuffs**: Instead of paralyzing a character, Foe Foundry monsters use new conditions like [**Weakened**](../topics/conditions.md#weakened), [**Shocked**](../topics/conditions.md#shocked), [**Frozen**](../topics/conditions.md#frozen), etc. These conditions take away less player agency and are more interactive than their harsher cousins like **Paralyzed** and **Stunned**.  
-- **You Don't Have to Brew by Hand**: If you build custom monsters by hand, you have to worry about fiddling with statblocks, calculating hit modifiers, and scaling damage to be appropriate to CR. [Foe Foundry](./index.md){.branding} takes care of all of that for you with a [Monster Generator](../generate.md) and [Over 600 Powers](../powers/all.md) at your fingertips.  
+- **You Don't Have to Brew by Hand**: If you build custom monsters by hand, you have to worry about fiddling with statblocks, calculating hit modifiers, and scaling damage to be appropriate to CR. [Foe Foundry](./index.md){.branding} takes care of all of that for you with a [Monster Generator](../generate/index.md) and [Over 600 Powers](../powers/all.md) at your fingertips.  
 
 Let's expand on that advice with four additional tips for homebrewing your monsters:
 
@@ -77,7 +77,7 @@ Once we've settled on the high-level concept and determined the CR, the next ste
 ### Example: Choosing Powers
 
 !!! info "Using Foe Foundry to Choose Powers"
-    [Foe Foundry](../index.md){.branding} monsters are designed with many possible powers in mind. You can use the [Generator](../generate.md) to pick and choose the right powers for your monsters.
+    [Foe Foundry](../index.md){.branding} monsters are designed with many possible powers in mind. You can use the [Generator](../generate/index.md) to pick and choose the right powers for your monsters.
 
 When I think of a **Sahuagin**, I want to evoke shark-like ferocity, bloodthirst, and hunting prowess. Since this is a legendary prince, I want to evoke themes of command and leadership, while also melding in thematic sea-like powers. It would also be thematic to have some sort of magical trident that can control ocean currents.
 
@@ -155,7 +155,7 @@ Let's also make the attack impose an interesting condition. We could either go w
 
 ### Want to try it out?
 
-Summon your own monster with the [Foe Foundry Generator](../generate.md), or [browse 600+ handcrafted powers](../powers/all.md) to spice up your next villain.
+Summon your own monster with the [Foe Foundry Generator](../generate/index.md), or [browse 600+ handcrafted powers](../powers/all.md) to spice up your next villain.
 
 ### Looking for more tips like this?
 

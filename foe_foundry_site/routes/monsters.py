@@ -4,76 +4,68 @@ from dataclasses import asdict
 from typing import Annotated
 
 import numpy as np
-from backports.strenum import StrEnum
-from fastapi import APIRouter, Body, HTTPException, Query, Response
-from fastapi.responses import HTMLResponse, JSONResponse
-from pydantic import BaseModel
+from fastapi import APIRouter, HTTPException, Query
+from pydantic.dataclasses import dataclass
 
-from foe_foundry.creatures import (
-    random_template_and_settings,
-)
-from foe_foundry.utils.env import get_base_url
-from foe_foundry_data.generate import generate_monster
-from foe_foundry_data.monsters import MonsterModel
+from foe_foundry.creatures import AllTemplates
+from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs import MonsterRefResolver
+
+from .data import MonsterMeta
 
 router = APIRouter(prefix="/api/v1/monsters")
 ref_resolver = MonsterRefResolver()
 
 
-class MonsterFormat(StrEnum):
-    html = "html"
-    monster_only = "monster_only"
-    json = "json"
+@dataclass(kw_only=True)
+class MonsterWithRelations(MonsterModel):
+    """
+    This model extends the base MonsterModel to include related monster templates.
+    It is used to provide additional context when fetching monster data.
+    """
 
-    @staticmethod
-    def All():
-        return [MonsterFormat.html, MonsterFormat.monster_only, MonsterFormat.json]
-
-
-class MonsterGenerationRequest(BaseModel):
-    monster_key: str
-    powers: list[str] | None = None
-    hp_multiplier: float | None = None
-    damage_multiplier: float | None = None
+    previous_template: MonsterMeta
+    next_template: MonsterMeta
 
 
-class MonsterMeta(BaseModel):
-    monster_key: str
-    template_key: str
+def add_relations(monster: MonsterModel) -> MonsterWithRelations:
+    """
+    Adds previous and next template relations to the monster model.
+    """
+    template_key = monster.template_key
+    ordered_templates = [
+        t for t in AllTemplates if t.key == template_key or t.lore_md is not None
+    ]
+    template_index = next(
+        (i for i, t in enumerate(ordered_templates) if t.key == template_key), None
+    )
+    if template_index is None:
+        raise ValueError(f"Template with key {template_key} not found in AllTemplates")
 
-
-@router.get("/random")
-def random_monster(
-    output: Annotated[
-        MonsterFormat | None, Query(title="return format", examples=MonsterFormat.All())
-    ] = None,
-) -> Response:
-    rng = np.random.default_rng()
-    template, settings = random_template_and_settings(
-        rng=rng,
-        filter_templates=None,
-        filter_variants=None,
-        filter_monsters=None,
-        species_filter=None,
+    next_template_index = (
+        template_index + 1 if template_index + 1 < len(ordered_templates) else 0
+    )
+    previous_template_index = (
+        template_index - 1 if template_index > 0 else len(ordered_templates) - 1
     )
 
-    stats = template.generate(settings).finalize()
+    next_template = ordered_templates[next_template_index]
+    next_monster = next(m for m in next_template.monsters)
+    previous_template = ordered_templates[previous_template_index]
+    previous_monster = next(m for m in previous_template.monsters)
 
-    if output is None:
-        output = MonsterFormat.html
-
-    base_url = get_base_url()
-    monster_model = MonsterModel.from_monster(
-        stats=stats,
-        template=template,
-        variant=settings.variant,
-        monster=settings.monster,
-        species=settings.species,
-        base_url=base_url,
+    return MonsterWithRelations(
+        **asdict(monster),
+        previous_template=MonsterMeta(
+            monster_key=previous_monster.key,
+            template_key=previous_template.key,
+        ),
+        next_template=MonsterMeta(
+            monster_key=next_monster.key,
+            template_key=next_template.key,
+        ),
     )
-    return _format_monster(monster_model=monster_model, rng=rng, output=output)
 
 
 @router.get("/new")
@@ -99,117 +91,34 @@ def new_monsters(
 
 
 @router.get("/{template_or_variant_key}")
-def get_monster(
-    template_or_variant_key: str,
-    output: Annotated[
-        MonsterFormat | None, Query(title="return format", examples=MonsterFormat.All())
-    ] = None,
-):
-    rng = np.random.default_rng()
-    ref, stats = generate_monster(
-        template_or_variant_key, ref_resolver=ref_resolver, rng=rng
-    )
+def get_template(template_or_variant_key: str) -> MonsterWithRelations:
+    ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
+    if ref is None:
+        raise HTTPException(status_code=404, detail="Template not found")
 
-    if stats is None or ref is None:
-        raise HTTPException(
-            status_code=404, detail=f"Monster not found: {template_or_variant_key}"
-        )
-    base_url = get_base_url()
+    ref = ref.resolve()
+    monster_key = ref.monster.key  # type: ignore
+    monster = Monsters.lookup.get(monster_key)
+    if monster is None:
+        raise HTTPException(status_code=404, detail="Template not found")
+
+    return add_relations(monster)
+
+
+@router.get("/{template_or_variant_key}/loadouts")
+def get_loadout(template_or_variant_key: str) -> list[PowerLoadoutModel]:
+    ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
+    if ref is None:
+        raise HTTPException(status_code=404, detail="Monster not found")
+
     ref = ref.resolve()
 
-    return _format_monster(
-        monster_model=MonsterModel.from_monster(
-            stats=stats,
-            template=ref.template,
-            variant=ref.variant,  # type: ignore
-            monster=ref.monster,  # type: ignore
-            species=ref.species,
-            base_url=base_url,
-        ),
-        rng=rng,
-        output=output,
+    settings = ref.template._settings_for_variant(
+        variant=ref.variant,  # type: ignore
+        monster=ref.monster,  # type: ignore
+        species=ref.species,  # type: ignore
     )
 
-
-@router.post("/generate")
-def generate_monster_from_request(
-    request: MonsterGenerationRequest = Body(...),
-    output: Annotated[
-        MonsterFormat | None, Query(title="return format", examples=MonsterFormat.All())
-    ] = None,
-):
-    rng = np.random.default_rng()
-
-    settings_args = dict()
-    if request.hp_multiplier is not None:
-        settings_args["hp_multiplier"] = request.hp_multiplier
-    if request.damage_multiplier is not None:
-        settings_args["damage_multiplier"] = request.damage_multiplier
-    if request.powers is not None:
-        settings_args["power_weights"] = {p: 1.0 for p in request.powers}
-
-    ref, stats = generate_monster(
-        template_or_variant_key=request.monster_key,
-        ref_resolver=ref_resolver,
-        rng=rng,
-        **settings_args,
-    )
-
-    if stats is None or ref is None:
-        raise HTTPException(
-            status_code=404, detail=f"Monster not found: {request.monster_key}"
-        )
-    base_url = get_base_url()
-    ref = ref.resolve()
-
-    return _format_monster(
-        monster_model=MonsterModel.from_monster(
-            stats=stats,
-            template=ref.template,
-            variant=ref.variant,  # type: ignore
-            monster=ref.monster,  # type: ignore
-            species=ref.species,
-            base_url=base_url,
-        ),
-        rng=rng,
-        output=output,
-    )
-
-
-def _format_monster(
-    monster_model: MonsterModel,
-    rng: np.random.Generator,
-    output: Annotated[
-        MonsterFormat | None, Query(title="return format", examples=MonsterFormat.All())
-    ] = None,
-) -> Response:
-    statblock_html = monster_model.statblock_html
-    lore_html = monster_model.template_html
-
-    if len(monster_model.images) == 0:
-        img_src = None
-        image_html = None
-    else:
-        image_index = rng.choice(len(monster_model.images))
-        img_src = monster_model.images[image_index]
-        image_html = f'<img class="masked monster-image" src="{img_src}" alt="{monster_model.name} image" />'
-
-    loadouts = [asdict(lo) for lo in monster_model.loadouts]
-
-    if output == MonsterFormat.html:
-        html = f'<div class="statblock-container">{statblock_html}\n{lore_html or ""}\n{image_html or ""}</div>'
-        return HTMLResponse(content=html)
-    elif output == MonsterFormat.monster_only:
-        return HTMLResponse(content=statblock_html)
-    else:
-        json_data = dict(
-            monster_meta=MonsterMeta(
-                monster_key=monster_model.key,
-                template_key=monster_model.template_key,
-            ).model_dump(mode="json"),
-            statblock_html=statblock_html,
-            lore_html=lore_html,
-            image=img_src,
-            loadouts=loadouts,
-        )
-        return JSONResponse(content=json_data)
+    power_selection = ref.template.choose_powers(settings=settings)
+    loadouts = power_selection.loadouts
+    return [PowerLoadoutModel.from_loadout(loadout) for loadout in loadouts]

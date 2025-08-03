@@ -4,7 +4,7 @@ site_url: !ENV [SITE_URL]
 site_author: Evan Rash
 
 nav:
-  - Generate: generate.md
+  - Generate: generate/index.md
   - Monsters:
       - All Monsters: monsters/index.md
       - Orcs & Goblins: families/orcs_and_goblinoids.md
@@ -55,9 +55,6 @@ plugins:
       add_icon: True
   - minify:
       cache_safe: true
-      minify_css: true
-      css_files:
-        - css/site.css
       js_files:
         - scripts/extras.js
 theme:

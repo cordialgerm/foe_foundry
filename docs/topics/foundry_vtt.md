@@ -8,7 +8,7 @@ json_ld: true
 
 # Export to Foundry VTT — Coming Soon
 
-[Foe Foundry](../index.md){.branding} is a [monster creation tool](../generate.md) for GMs who want flavorful, deadly, and unique statblocks for their 5E games. While we're not affiliated with [Foundry VTT](https://foundryvtt.com/) or [The Forge](https://forge-vtt.com), we are actively building **export support** for Foundry VTT.
+[Foe Foundry](../index.md){.branding} is a [monster creation tool](../generate/index.md) for GMs who want flavorful, deadly, and unique statblocks for their 5E games. While we're not affiliated with [Foundry VTT](https://foundryvtt.com/) or [The Forge](https://forge-vtt.com), we are actively building **export support** for Foundry VTT.
 
 That means:
 
@@ -33,6 +33,6 @@ Nope. We're not officially partnered with [Foundry VTT](https://foundryvtt.com) 
 
 ## Related Tools and Resources
 
-- [What Is the Foe Foundry generator?](../generate.md) – Learn more about our monster generator.
+- [What Is the Foe Foundry generator?](../generate/index.md) – Learn more about our monster generator.
 - [5E Monsters](../monsters/index.md) – Browse all statblocks.
 - [600+ Unique Monster Powers](../powers/all.md) - Browse over 600 unique monster powers

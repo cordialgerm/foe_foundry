@@ -1,0 +1,81 @@
+---
+title: Monster Generator | Foe Foundry
+description: Create custom 5E monsters instantly with Foe Foundry's free generator. Choose from 600+ unique powers, scale by CR, and generate balanced statblocks for your D&D campaigns.
+hide:
+  - toc
+  - backlinks
+  - related_monsters
+image: img/icons/favicon.webp
+---
+
+# Monster Generator
+
+<section>
+    <generator-showcase></generator-showcase>
+</section>
+
+<div class="container-fluid py-1">
+    <hr />
+    <div class="row mb-4">
+        <div class="col-lg-9 mx-auto">
+            <h2 class="mb-5 mt-5">A Free Monster Generator for 5E RPGs</h2>
+            <p>Foe Foundry's monster generator is designed for game masters running 5E TTRPGs. Whether you
+                need a deadly boss, thematic minions, or just a spark of inspiration, this tool will help you summon
+                something unforgettable.</p>
+            <p>With the Foe Foundry custom monster generator, you can:</p>
+            <ul>
+                <li>Instantly create custom monsters packed with flavor and firepower.</li>
+                <li>Scale creatures to match your party's level.</li>
+                <li>Browse by theme, vibe, or environment. (Coming Soon)</li>
+                <li>Save and share your creations with ease. (Coming Soon)</li>
+            </ul>
+            <h2 class="mb-4 mt-4">Infinite Monsters!</h2>
+            <p>Check out the <a href="monsters/"><strong>All Foe Foundry Monsters</strong></a> to browse our catalog of
+                monster templates, each with multiple variants and hundreds of unique possible powers.</p>
+            <p>You can also be inspired by <a href="powers/"><strong>More than 600 Monster Powers</strong></a>
+                that you can easily drop onto any monsters! These are the same powers that the generator will let
+                you pick and choose from when it's ready!</p>
+            <hr>
+            <h2 class="mt-5 mb-5">FAQ</h2>
+            <dl>
+                <dt><strong>What is the Foe Foundry Monster Generator?</strong></dt>
+                <dd>It's a tool that instantly creates flavorful, balanced 5E monsters using handcrafted powers and
+                    smart scaling. With it, you can generate statblocks tailored to your party's level, theme, or
+                    environment. Each monster comes with multiple different possible powers, so you'll always find
+                    something new.</dd>
+                <dt><strong>Is this a random monster generator for 5E?</strong></dt>
+                <dd>Yes! The generator can summon fully random monsters or let you customize CR, monster type, and
+                    vibe. You'll always get something balanced, flavorful, and ready to drop into a session.</dd>
+                <dt><strong>How does the random generator work?</strong></dt>
+                <dd>Each monster is based on a <strong>Template</strong> that defines the monster's base stats,
+                    attributes, skills, AC, and attacks. Then, a <strong>Power Loadout</strong> customizes the
+                    statblock with unique and flavorful powers from the <a href="powers/all">over 500 unique
+                        power</a> available in Foe Foundry.</dd>
+                <dt><strong>Can I scale monsters by party level or CR?</strong></dt>
+                <dd>Yes. Each monster template has multiple variants available at lower and higher CRs, and
+                    abilities automatically scale to monster CR.</dd>
+                <dt><strong>What kinds of monsters can I generate?</strong></dt>
+                <dd>I'm starting off creating a template for every monster in the SRD, and I'll add more as I go!
+                    Each template has between 12 to 100s of possible variants, depending on the available powers, so
+                    you'll always encounter something new.</dd>
+                <dt><strong>Will this work for homebrew campaigns or non-5E systems?</strong></dt>
+                <dd>Foe Foundry is built for 5E compatibility, but the flavor and inspiration work great for
+                    homebrew or adjacent fantasy systems.</dd>
+                <dt><strong>How is this different from other monster generators?</strong></dt>
+                <dd>Most generators use basic templates or random rolls. Or, it's just a wrapper around ChatGPT. The
+                    end result is a monster that feels random instead of cohesive and fresh. Foe Foundry uses a
+                    templating system and has a curated library of hundreds of unique powers. Foe Foundry's monsters
+                    are coherent and fresh.</dd>
+                <dt><strong>Are these monsters drop-in compatible with other monsters?</strong></dt>
+                <dd>Yes, Foe Foundry monsters are designed to match the base SRD CRs. You'll find a lot more variety
+                    of higher and lower-CR options within Foe Foundry, though, if you want to go beyond the standard
+                    statblocks in the SRD. You'll also find that Foe Foundry's monsters tend to be a bit more
+                    challenging, and certainly have more flavor and variety than what's in the SRD.</dd>
+                <dt><strong>Can I use the monsters in my own published adventure or module?</strong></dt>
+                <dd>Message me on <a href="https://www.patreon.com/c/foefoundry">Patreon</a> to discuss options here
+                    if you want to use these monsters in published content. For your own homebrew games, go crazy
+                    and use as many of them in whatever way you like!</dd>
+            </dl>
+        </div>
+    </div>
+</div>

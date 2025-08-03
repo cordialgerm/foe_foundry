@@ -4,8 +4,8 @@ short_title: Ogres
 description: Smash expectations with this collection of Ogre statblocks and encounters. Discover unique statblocks, powers, and encounters that will knock your players out.
 image: img/monsters/ogre.webp
 json_ld: true
+date: '2025-06-09T00:09:19-07:00'
 ---
-
 # Ogres
 
 *Ravenous and Destructive Hulks*

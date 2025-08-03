@@ -96,7 +96,6 @@ PerksHardenedOneSoldier = [
 PerksHardenedOneTechniques = [
     technique.ArmorMaster,
     technique.DisarmingAttack,
-    technique.Interception,
     technique.ParryAndRiposte,
 ]
 LoadoutHardenedOne = [
@@ -118,7 +117,7 @@ LoadoutHardenedOne = [
     PowerLoadout(
         name="Elite Training",
         flavor_text="An elite warrior with advanced training",
-        powers=PerksHardenedOneSoldier,
+        powers=PerksHardenedOneTechniques,
     ),
 ]
 
@@ -234,27 +233,38 @@ PerksLeaderTechniques = [
 ]
 PerksChieftan = [orc.Bloodfury]
 
-LoadoutWarchief = [
-    PowerLoadout(
-        name="Warchief", flavor_text="AAAAAAAAAAAAAAAAAAA", powers=PerksLeader
-    ),
-    PowerLoadout(
-        name="Warcry",
-        flavor_text="A powerful warcry that inspires allies and terrifies enemies",
-        powers=PerksLeaderWarcry,
-    ),
-    PowerLoadout(
-        name="Chieftan's Commands",
-        flavor_text="Commands that rally and inspire the troops",
-        powers=PerksLeaderCommands,
-    ),
-    PowerLoadout(
-        name="Chieftan's Offense",
-        flavor_text="A chieftan's offense is as brutal as it is effective",
-        powers=PerksLeaderTechniques,
-    ),
-]
-LoadoutWarchiefLegendary = LoadoutWarchief + [
+
+def warchief_loadout(exclude_bloodfury: bool) -> list[PowerLoadout]:
+    leader_powers = PerksLeader.copy()
+    if exclude_bloodfury:
+        leader_powers.remove(orc.Bloodfury)
+
+    return [
+        PowerLoadout(
+            name="Warchief",
+            flavor_text="Feared and respected leader of the clan",
+            powers=leader_powers,
+        ),
+        PowerLoadout(
+            name="Warcry",
+            flavor_text="A powerful warcry that inspires allies and terrifies enemies",
+            powers=PerksLeaderWarcry,
+        ),
+        PowerLoadout(
+            name="Chieftan's Commands",
+            flavor_text="Commands that rally and inspire the troops",
+            powers=PerksLeaderCommands,
+        ),
+        PowerLoadout(
+            name="Chieftan's Offense",
+            flavor_text="A chieftan's offense is as brutal as it is effective",
+            powers=PerksLeaderTechniques,
+        ),
+    ]
+
+
+LoadoutWarchief = warchief_loadout(exclude_bloodfury=False)
+LoadoutWarchiefLegendary = warchief_loadout(exclude_bloodfury=True) + [
     PowerLoadout(
         name="Chieftan's Fury",
         flavor_text="A chieftan's fury is unmatched on the battlefield",

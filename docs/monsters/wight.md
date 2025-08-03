@@ -4,8 +4,8 @@ short_title: Wights
 description: Challenge powerful wights using Foe Foundry. Discover unique statblocks, powers, and encounters for your 5E games that will freeze your player's hearts.
 image: img/monsters/wight.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Wights
 
 *Deathly cold malignant warriors of old*

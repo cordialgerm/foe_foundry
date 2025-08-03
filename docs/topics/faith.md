@@ -51,7 +51,7 @@ DON'T
 
 ## Ready to Channel the Unknown?
 
-Build a [[Priest]] using the [Foe Foundry Monster Generator](../generate.md):
+Build a [[Priest]] using the [Foe Foundry Monster Generator](../generate/index.md):
 
 [[!Priest]]
 

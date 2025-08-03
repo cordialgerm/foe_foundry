@@ -69,6 +69,7 @@ class PowerRef:
 
 @dataclass(kw_only=True)
 class PowerLoadoutModel:
+    key: str
     name: str
     flavor_text: str
     selection_count: int
@@ -79,6 +80,7 @@ class PowerLoadoutModel:
     @staticmethod
     def from_loadout(loadout: PowerLoadout):
         return PowerLoadoutModel(
+            key=loadout.key,
             name=loadout.name,
             flavor_text=loadout.flavor_text,
             selection_count=loadout.selection_count,
@@ -89,10 +91,21 @@ class PowerLoadoutModel:
 
 
 @dataclass(kw_only=True)
+class RelatedMonsterModel:
+    key: str
+    name: str
+    cr: float
+    template: str
+    same_template: bool
+
+
+@dataclass(kw_only=True)
 class MonsterModel:
     name: str
     cr: float
+    size: str
     tag_line: str
+    creature_type: str
     template_name: str
     template_key: str
     variant_name: str
@@ -103,12 +116,13 @@ class MonsterModel:
     has_lore: bool
     images: list[str]
     loadouts: list[PowerLoadoutModel]
+    related_monsters: list[RelatedMonsterModel]
     primary_image: str | None
+    background_image: str | None = None
     primary_image_has_transparent_edges: bool
     primary_image_is_grayscaleish: bool
     primary_image_background_color: str | None = None
     create_date: datetime
-    modified_date: datetime
 
     @property
     def key(self) -> str:
@@ -174,10 +188,30 @@ class MonsterModel:
             for loadout in power_selection.loadouts
         ]
 
+        background_image = (
+            f"img/backgrounds/textures/{stats.creature_type.value.lower()}.webp"
+        )
+        background_image_path = Path.cwd() / "docs" / background_image
+        if not background_image_path.exists():
+            background_image = None
+
+        related_monsters = [
+            RelatedMonsterModel(
+                key=m.key,
+                name=m.name,
+                cr=m.cr,
+                template=template.name,
+                same_template=True,
+            )
+            for m in template.monsters
+        ]
+
         return MonsterModel(
             name=stats.name,
             cr=stats.cr,
+            size=stats.size.name,
             tag_line=template.tag_line,
+            creature_type=stats.creature_type.name,
             template_key=stats.template_key,
             template_name=template.name,
             variant_key=stats.variant_key,
@@ -187,10 +221,11 @@ class MonsterModel:
             has_lore=template.lore_md is not None,
             images=all_images,
             loadouts=loadouts,
+            related_monsters=related_monsters,
             primary_image=primary_image,
+            background_image=urljoin(base_url, background_image),
             primary_image_has_transparent_edges=primary_image_has_transparent_edges,
             primary_image_is_grayscaleish=primary_image_is_grayscaleish,
             primary_image_background_color=primary_image_background_color,
             create_date=template.create_date,
-            modified_date=template.modified_date,
         )

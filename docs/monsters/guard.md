@@ -4,8 +4,8 @@ short_title: Guards
 description: Bring your cities to life with 5E Guard statblocks & encounters. From loyal guards to corrupt captains, these NPCs are perfect for urban adventures and heists.
 image: img/monsters/guard.webp
 json_ld: true
+date: '2025-07-05T10:10:44-07:00'
 ---
-
 # Guards
 
 *Watchful Sentries and Keepers of the Peace*

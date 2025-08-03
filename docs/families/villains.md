@@ -24,7 +24,7 @@ Here are three examples of legendary villains for your D&D, 5E, and TTRPG campai
 
 [[$Foulblood Hydra]]
 
-Looking for the perfect legendary monster statblock to serve your villain? Browse our [Monster Catalog](../monsters/index.md) or [Summon a Handcrafted foe](../generate.md) in seconds with the Foe Foundry monster generator.
+Looking for the perfect legendary monster statblock to serve your villain? Browse our [Monster Catalog](../monsters/index.md) or [Summon a Handcrafted foe](../generate/index.md) in seconds with the Foe Foundry monster generator.
 
 ## Using These Tables
 

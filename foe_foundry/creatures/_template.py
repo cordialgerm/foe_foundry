@@ -7,15 +7,17 @@ from functools import cached_property
 from pathlib import Path
 from typing import Iterable
 
-from git import GitError, Repo
-
 from foe_foundry.attack_template import AttackTemplate
 from foe_foundry.environs import EnvironmentAffinity
 from foe_foundry.features import Feature
 from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
-from foe_foundry.utils import find_image, find_lore
-from foe_foundry.utils.monster_content import extract_tagline, strip_yaml_frontmatter
+from foe_foundry.utils import find_lore, find_monster_image
+from foe_foundry.utils.monster_content import (
+    extract_tagline,
+    extract_yaml_frontmatter,
+    strip_yaml_frontmatter,
+)
 
 from ..statblocks import BaseStatblock, Statblock  # noqa
 from ..utils import name_to_key
@@ -41,7 +43,6 @@ class MonsterTemplate:
     is_sentient_species: bool = False
     lore_md: str | None = field(init=False)
     create_date: datetime = field(init=False)
-    modified_date: datetime = field(init=False)
 
     def __post_init__(self):
         self.n_variant = len(self.variants)
@@ -67,28 +68,19 @@ class MonsterTemplate:
             if tagline is not None:
                 self.tag_line = tagline.strip()
             self.lore_md = lore_md
+            self.create_date = self._get_create_date(lore_path)
         else:
             self.lore_md = None
-
-        # Set create_date and modified_date using helper
-        monster_file = (
-            Path.cwd()
-            / "foe_foundry"
-            / "creatures"
-            / self.key.replace("-", "_")
-            / f"{self.key.replace('-', '_')}.py"
-        )
-        self.create_date = self._get_git_date(monster_file, first_commit=True)
-        self.modified_date = self._get_git_date(monster_file, first_commit=False)
+            self.create_date = datetime.now(timezone.utc)
 
     @cached_property
     def image_urls(self) -> dict[str, list[Path]]:
         urls = {}
-        urls[self.key] = find_image(self.key)
+        urls[self.key] = find_monster_image(self.key)
         for variant in self.variants:
-            image_urls = find_image(variant.key)
+            image_urls = find_monster_image(variant.key)
             if len(image_urls) == 0:
-                image_urls = find_image(self.key)
+                image_urls = find_monster_image(self.key)
             urls[variant.key] = image_urls
         return urls
 
@@ -114,27 +106,38 @@ class MonsterTemplate:
     def key(self) -> str:
         return name_to_key(self.name)
 
-    def _get_git_date(self, monster_file: Path, first_commit: bool = True) -> datetime:
-        """Helper to get git commit date for a file. If first_commit is True, gets the oldest commit (creation); else, gets the most recent (modified)."""
-        if not monster_file.exists():
-            raise ValueError(
-                f"Monster file does not exist: {monster_file}. "
-                "Ensure the monster template is correctly defined."
-            )
-        try:
-            repo = Repo(Path.cwd())
-            # first_commit=True: oldest commit, first=True; else, most recent commit, reverse=True
-            commits = list(repo.iter_commits(paths=str(monster_file)))
-            if commits:
-                commit = commits[-1] if first_commit else commits[0]
-                date = commit.committed_datetime
-                if date.tzinfo is None:
-                    date = date.replace(tzinfo=timezone.utc)
-            else:
-                date = datetime.now(timezone.utc)
-        except (GitError, Exception) as x:
-            raise ValueError(f"Failed to get git date for {monster_file}: {x}") from x
-        return date
+    @property
+    def monsters(self) -> Iterable[Monster]:
+        for variant in self.variants:
+            for monster in variant.monsters:
+                yield monster
+
+    def _get_create_date(self, lore_path: Path) -> datetime:
+        """Helper to get create date from YAML frontmatter. If no date found, falls back to current date."""
+        # First try to get date from the lore file's YAML frontmatter
+        if lore_path is not None and lore_path.exists():
+            content = lore_path.read_text(encoding="utf-8")
+            frontmatter = extract_yaml_frontmatter(content)
+            if "date" in frontmatter:
+                date_value = frontmatter["date"]
+                if isinstance(date_value, datetime):
+                    # If it's already a datetime, ensure it has timezone info
+                    if date_value.tzinfo is None:
+                        date_value = date_value.replace(tzinfo=timezone.utc)
+                    return date_value
+                elif isinstance(date_value, str):
+                    # Try to parse string date
+                    try:
+                        parsed_date = datetime.fromisoformat(
+                            date_value.replace("Z", "+00:00")
+                        )
+                        if parsed_date.tzinfo is None:
+                            parsed_date = parsed_date.replace(tzinfo=timezone.utc)
+                        return parsed_date
+                    except ValueError:
+                        pass  # Fall through to default
+
+        raise ValueError(f"No valid date found in YAML frontmatter of {lore_path}.")
 
     def __hash__(self) -> int:
         return hash(self.name)

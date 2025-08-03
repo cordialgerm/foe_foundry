@@ -19,7 +19,7 @@ Unfortunately, giants in the *2014 Monster Manual* were basically "tall bears". 
 
 ## Foe Foundry Frost Giant Statblocks
 
-With [Foe Foundry](./index.md){.branding} you can generate hundreds of different versions of these statblocks by combining unique and interesting powers. These are just a couple examples. With the [Foe Foundry Monster Generator](../generate.md){.branding} you can re-forge any of these statblocks with the roll of a die.
+With [Foe Foundry](./index.md){.branding} you can generate hundreds of different versions of these statblocks by combining unique and interesting powers. These are just a couple examples. With the [Foe Foundry Monster Generator](../generate/index.md){.branding} you can re-forge any of these statblocks with the roll of a die.
 
 | Statblock                    | CR            | Description                                                                     |
 |------------------------------|---------------|---------------------------------------------------------------------------------|

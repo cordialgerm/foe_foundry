@@ -88,7 +88,7 @@ For example, consider the [[Toximancer]] power:
 
 If you build a statblock by hand, you have to worry about fiddling with statblocks, calculating hit modifiers, and scaling damage to be appropriate to CR.  
 
-[Foe Foundry](./index.md){.branding} takes care of all of that for you with a [Monster Generator](../generate.md) and [Over 600 Powers](../powers/all.md) at your fingertips.  
+[Foe Foundry](./index.md){.branding} takes care of all of that for you with a [Monster Generator](../generate/index.md) and [Over 600 Powers](../powers/all.md) at your fingertips.  
 
 Need a monster for tonight? Get started and summon unforgettable foes instantly, like this [[Diviner Mage]].
 

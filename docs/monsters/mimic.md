@@ -4,8 +4,8 @@ short_title: Mimics
 description: Ambush your unsuspecting party with mimics using Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E games.
 image: img/monsters/mimic.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Mimics
 
 *Paranoia-Inducing Shapeshifting Ambusher*

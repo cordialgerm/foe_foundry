@@ -4,8 +4,8 @@ short_title: Warriors
 description: Build better battles with 5E warrior statblocks, encounter ideas, and lore. From infantry to commanders, these martial NPCs are ready for your next session.
 image: img/monsters/warrior.webp
 json_ld: true
+date: '2025-07-05T10:10:44-07:00'
 ---
-
 # Warriors
 
 *Disciplined Soldiers of Steel and Strategy*

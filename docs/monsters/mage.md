@@ -4,8 +4,8 @@ short_title: Mages
 description: Summon powerful mages with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for your 5E campaign.
 image: img/monsters/cryomancer2.webp
 json_ld: true
+date: '2025-04-29T19:49:43-07:00'
 ---
-
 # Mages
 
 *Master of Arcane Magicks*
