@@ -309,7 +309,7 @@ a.branding::after,
 }
 
 
-.alpha-banner {
+.beta-banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -321,12 +321,12 @@ a.branding::after,
     color: var(--fg-color);
 }
 
-.alpha-banner a {
+.beta-banner a {
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-.alpha-banner button {
+.beta-banner button {
     background: none;
     border: none;
     color: #aaa;

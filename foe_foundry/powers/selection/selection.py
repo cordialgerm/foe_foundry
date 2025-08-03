@@ -15,6 +15,16 @@ class PowerSelection:
         self.loadouts = loadouts
         self.species_loadout = species_loadout
 
+        # check to ensure that no powers are duplicates across loadouts
+        all_powers = set()
+        for loadout in self.loadouts:
+            for power in loadout.powers:
+                if power.key in all_powers:
+                    raise ValueError(
+                        f"Duplicate power found: {power.key} in loadout {loadout.name}"
+                    )
+                all_powers.add(power.key)
+
     def choose_powers(self, settings: SelectionSettings) -> list[Power]:
         """
         Randomly selects powers based on the specified loadouts and their selection counts.

@@ -19,7 +19,6 @@ PerksWarrenguard = [
     gadget.SmokeBomb,
     cowardly.ScurryAndScatter,
     soldier.CoordinatedStrike,
-    soldier.Phalanx,
     kobold.FalseRetreat,
 ]
 PerksSharpsnout = [

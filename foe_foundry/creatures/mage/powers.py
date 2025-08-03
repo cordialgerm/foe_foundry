@@ -71,12 +71,6 @@ MagicResistance = PowerLoadout(
     powers=[tough.MagicResistance],
 )
 
-# MageGeneralPurpose = [
-#     anti_ranged.Overchannel,
-#     artillery.TwinSpell,
-#     artillery.SuppresingFire,
-# ]
-
 ArcaneStudy = PowerLoadout(
     name="Arcane Study",
     flavor_text="Advanced arcane techniques and training",
@@ -149,7 +143,6 @@ LoadoutAbjurerArchmage = [
     AbjurerAttacks,
     ArcaneStudy,
     Mistystep,
-    Protective,
     AbjurerEsotera,
     Protective,
 ]

@@ -32,7 +32,3 @@ function setupBetaBanner() {
         banner.appendChild(betaMsg);
     }
 }
-
-function setupRollbuttons() {
-
-}
