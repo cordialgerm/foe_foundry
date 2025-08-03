@@ -39,6 +39,12 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             text-align: center;
         }
 
+        .instructions {
+            color: var(--bg-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
         #showcase-statblock.hidden {
             display: none;
         }
@@ -73,6 +79,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         return html`
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
+                <p class="instructions">Roll the dice below to summon a random monster! Click the Anvil to forge it into the perfect Foe.</p>
                 <div class="showcase-controls">
                     <reroll-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock" random></reroll-button>
                     <forge-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></forge-button>
