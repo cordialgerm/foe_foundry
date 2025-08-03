@@ -14,12 +14,7 @@ image: img/icons/favicon.webp
     <generator-showcase></generator-showcase>
 </section>
 
----
-
 <div class="container-fluid py-1">
-    <div class="row g-1 mb-4">
-        <monster-builder class="monster-builder" monster-key="{{ default_monster_key }}"> </monster-builder>
-    </div>
     <hr />
     <div class="row mb-4">
         <div class="col-lg-9 mx-auto">
