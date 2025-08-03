@@ -38,15 +38,25 @@ export abstract class StatblockButton extends LitElement {
     findTargetStatblock(): Element | null {
         if (!this.target) return null;
 
-        const element = document.getElementById(this.target);
+        // First try the main document
+        let element = document.getElementById(this.target);
+
+        // Button and target are siblings within the same shadow DOM
+        if (!element) {
+            const rootNode = this.getRootNode() as Document | ShadowRoot;
+            if (rootNode && rootNode !== document) {
+                element = rootNode.getElementById?.(this.target) || null;
+            }
+        }
+
         if (!element) return null;
 
-        // Case 1: Direct stat-block div with data-monster attribute
+        // Target is the stat-block div with data-monster attribute
         if (element.classList.contains('stat-block') && element.hasAttribute('data-monster')) {
             return element;
         }
 
-        // Case 2: Custom <monster-statblock> element - look in shadow DOM
+        // Target is a custom <monster-statblock> element - look in its shadow DOM
         if (element.tagName.toLowerCase() === 'monster-statblock') {
             const shadowRoot = element.shadowRoot;
             if (shadowRoot) {

@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, query } from 'lit/decorators.js';
 import { SiteCssMixin } from '../utils/css-adoption.js';
 import './RerollButton.js';
 import './ForgeButton.js';
@@ -7,29 +7,36 @@ import './MonsterStatblock.js';
 
 @customElement('generator-showcase')
 export class GeneratorShowcase extends SiteCssMixin(LitElement) {
+    @query('#showcase-statblock')
+    private statblock!: HTMLElement;
     static styles = css`
         :host {
             display: block;
+            font-size: var(--header-font-size);
         }
 
         .showcase-container {
             padding: 1.5rem;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-left: auto;
             margin-right: auto;
         }
 
         .showcase-controls {
-            display: inline-block;
+            display: flex;
+            gap: 0.5rem;
             padding: 0.5rem;
         }
 
         .lead {
             color: var(--bg-color);
             font-family: var(--header-font);
-            font-size: var(--header-font-size);
+            font-size: 1.5rem;
             font-weight: 600;
-            margin-right: 0.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
         }
 
         #showcase-statblock.hidden {
@@ -39,11 +46,27 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         .statblock-container.visible {
             display: block;
         }
+
+        .showcase-button {
+            --fg-color: var(--bg-color);
+        }
     `;
 
     firstUpdated() {
         // Adopt site CSS for access to CSS variables and other site styles
         this.adoptSiteCss();
+
+        // Add event listeners for button interactions
+        this.addEventListener('reroll-click', this._handleButtonClick.bind(this));
+        this.addEventListener('forge-click', this._handleButtonClick.bind(this));
+    }
+
+    private _handleButtonClick() {
+        console.log('Button clicked, updating statblock visibility');
+        // Remove the hidden class from the statblock to show it
+        if (this.statblock && this.statblock.classList.contains('hidden')) {
+            this.statblock.classList.remove('hidden');
+        }
     }
 
     render() {
@@ -51,8 +74,8 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             <div class="showcase-container bg-object parchment">
                 <span class="lead">Summon Your First Foe</span>
                 <div class="showcase-controls">
-                    <reroll-button detached target="showcase-statblock"></reroll-button>
-                    <forge-button detached target="showcase-statblock"></forge-button>
+                    <reroll-button class="showcase-button" detached target="showcase-statblock"></reroll-button>
+                    <forge-button class="showcase-button" detached target="showcase-statblock"></forge-button>
                 </div>
             </div>
             <monster-statblock class="hidden" id="showcase-statblock"></monster-statblock>
