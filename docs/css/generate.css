@@ -53,6 +53,12 @@
     cursor: pointer;
 }
 
+.beta-banner svg-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: text-bottom;
+}
+
 
 .generator-reroll {
     font-weight: bold;
@@ -63,4 +69,22 @@
 .generator-reroll .reroll-button {
     font-size: 1.5em;
     color: var(--bg-color);
+}
+
+/* FAQ Styling */
+dt {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: var(--fg-color);
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--fg-color);
 }

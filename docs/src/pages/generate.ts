@@ -27,7 +27,7 @@ function setupBetaBanner() {
 
         const targetUrl = `/generate/v2/?${targetParams.toString()}`;
         betaMsg.innerHTML = `
-                <span>Do you want to try the new <a href="${targetUrl}" class="monster-generator-link">Interactive Monster Generator</a> (Beta)?</span>
+                <span>Do you want to try the new <a href="${targetUrl}" class="monster-generator-link"><svg-icon src="anvil-impact" jiggle="jiggleUntilClick"></svg-icon>Interactive Monster Generator</a> (Beta)?</span>
             `;
         banner.appendChild(betaMsg);
     }

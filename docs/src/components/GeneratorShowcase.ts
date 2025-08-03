@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, query } from 'lit/decorators.js';
+import { customElement, property, query } from 'lit/decorators.js';
 import { SiteCssMixin } from '../utils/css-adoption.js';
 import './RerollButton.js';
 import './ForgeButton.js';
@@ -7,8 +7,17 @@ import './MonsterStatblock.js';
 
 @customElement('generator-showcase')
 export class GeneratorShowcase extends SiteCssMixin(LitElement) {
+    @property({ type: String, attribute: 'monster-key' })
+    monsterKey: string | null = null;
+
     @query('#showcase-statblock')
     private statblock!: HTMLElement;
+
+    private getMonsterKeyFromUrl(): string | null {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('monster-key') || urlParams.get('template');
+    }
+
     static styles = css`
         :host {
             display: block;
@@ -22,6 +31,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
             align-items: center;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 2rem;
         }
 
         .showcase-controls {
@@ -47,10 +57,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
         #showcase-statblock.hidden {
             display: none;
-        }
-
-        .statblock-container.visible {
-            display: block;
+            margin-bottom: 2rem;
         }
 
         .showcase-button {
@@ -75,17 +82,47 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         }
     }
 
+    private _newsletterClick() {
+        window.open('https://buttondown.com/cordialgerm', '_blank');
+    }
+
     render() {
+        const effectiveMonsterKey = this.monsterKey || this.getMonsterKeyFromUrl();
+        const statblockClass = effectiveMonsterKey ? '' : 'hidden';
+
         return html`
             <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
                 <p class="instructions">Roll the dice below to summon a random monster! Click the Anvil to forge it into the perfect Foe.</p>
                 <div class="showcase-controls">
-                    <reroll-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock" random></reroll-button>
-                    <forge-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></forge-button>
+                    <reroll-button
+                        jiggle="jiggleUntilClick"
+                        class="showcase-button"
+                        target="showcase-statblock"
+                        detached
+                        ?random="${!effectiveMonsterKey}">
+                    </reroll-button>
+                    <forge-button
+                        jiggle="jiggleUntilClick"
+                        class="showcase-button"
+                        target="showcase-statblock"
+                        detached>
+                    </forge-button>
+                    <svg-icon-button
+                        title="Subscribe to the Foe Foundry Newsletter"
+                        src="death-note"
+                        jiggle="jiggleUntilClick"
+                        class="showcase-button newsletter"
+                        @click="${this._newsletterClick}"
+                    >
+                    </svg-icon-button>
                 </div>
             </div>
-            <monster-statblock class="hidden" id="showcase-statblock"></monster-statblock>
+            <monster-statblock
+                class="${statblockClass}"
+                id="showcase-statblock"
+                monster-key="${effectiveMonsterKey || ''}"
+            ></monster-statblock>
         `;
     }
 }

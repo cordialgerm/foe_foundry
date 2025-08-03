@@ -9,5 +9,6 @@ import './components/MonsterStatblock';
 import './components/RerollButton';
 import './components/ForgeButton';
 import './components/GeneratorShowcase';
+import './components/SvgIconButton';
 import './pages/generate';
 import './pages/generate_v2';
