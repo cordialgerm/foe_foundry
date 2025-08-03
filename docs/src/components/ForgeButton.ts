@@ -1,10 +1,19 @@
 import { html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
 import './SvgIcon.js';
 
 @customElement('forge-button')
 export class ForgeStatblockButton extends StatblockButton {
+
+    /**
+     * Jiggle behavior for the icon. Can be:
+     * - 'jiggleOnHover' (or true/"true" for backwards compatibility)
+     * - 'jiggleUntilClick'
+     */
+    @property()
+    jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = 'true';
+
     static styles = css`
         :host {
             display: inline-block;
@@ -69,7 +78,7 @@ export class ForgeStatblockButton extends StatblockButton {
                 aria-label="Forge your own version of this monster"
                 title="Forge your own version of this monster"
             >
-                <svg-icon src="anvil-impact" jiggle="true"></svg-icon>
+                <svg-icon src="anvil-impact" .jiggle=${this.jiggle}></svg-icon>
             </button>
         `;
     }

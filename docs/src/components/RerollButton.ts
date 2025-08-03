@@ -9,6 +9,14 @@ export class RerollButton extends StatblockButton {
   @property({ type: Boolean, reflect: true })
   rolling = false;
 
+  /**
+   * Jiggle behavior for the icon. Can be:
+   * - 'jiggleOnHover' (or true/"true" for backwards compatibility)
+   * - 'jiggleUntilClick'
+   */
+  @property()
+  jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = 'true';
+
   private static stylesInjected = false;
 
   static styles = css`
@@ -322,7 +330,7 @@ export class RerollButton extends StatblockButton {
       >
         <svg-icon
           src="d20"
-          jiggle="true"
+          .jiggle=${this.jiggle}
         ></svg-icon>
       </button>
     `;

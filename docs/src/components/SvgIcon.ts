@@ -18,10 +18,21 @@ export class SvgIcon extends LitElement {
           height: 100%;
         }
 
-        .jiggle-on-hover:hover svg {
+        .jiggle-on-hover:hover svg,
+        .jiggle-until-click:hover svg {
           filter: drop-shadow(0 0 5px var(--box-shadow-color));
           animation: jiggle 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1;
         }
+
+        .jiggle-until-click svg {
+          filter: drop-shadow(0 0 3px var(--box-shadow-color));
+          animation: jiggle-subtle 1.5s ease-in-out infinite;
+        }
+
+        .jiggle-until-click.clicked svg {
+          animation: none !important;
+        }
+
         @keyframes jiggle {
           0% {
             transform: rotate(0deg) translateX(0);
@@ -39,6 +50,18 @@ export class SvgIcon extends LitElement {
             transform: rotate(0deg) translateX(0);
           }
         }
+
+        @keyframes jiggle-subtle {
+          0%, 100% {
+            transform: rotate(0deg) translateX(0);
+          }
+          25% {
+            transform: rotate(1deg) translateX(0.5px);
+          }
+          75% {
+            transform: rotate(-1deg) translateX(-0.5px);
+          }
+        }
       `
   ];
 
@@ -47,16 +70,34 @@ export class SvgIcon extends LitElement {
   src = '';
 
   /**
-   * If true, applies the jiggle animation to the icon
+   * Jiggle behavior type. Can be:
+   * - 'jiggleOnHover' (or true/"true" for backwards compatibility)
+   * - 'jiggleUntilClick'
    */
-  @property({ type: Boolean })
-  jiggle = false;
+  @property()
+  jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = false;
 
   private svgContent: string = '';
+
+  private handleClick() {
+    this.shadowRoot?.querySelector('span')?.classList.add('clicked');
+  }
 
   async firstUpdated() {
     if (this.src) {
       await cleanAndInjectSVGFromURL(this.src, this.renderRoot.querySelector('span') as HTMLElement);
+    }
+
+    // Add click handler for jiggleUntilClick behavior
+    this.addEventListener('click', this.handleClick.bind(this));
+
+    // Add random delay for jiggle-until-click to desynchronize animations
+    if (this.jiggle === 'jiggleUntilClick') {
+      const spanElement = this.renderRoot.querySelector('span');
+      if (spanElement) {
+        const randomDelay = Math.random() * 2; // 0-2 seconds random delay
+        spanElement.style.animationDelay = `${randomDelay}s`;
+      }
     }
   }
 
@@ -67,10 +108,14 @@ export class SvgIcon extends LitElement {
   }
 
   render() {
+    const isJiggleOnHover = this.jiggle === 'jiggleOnHover' || this.jiggle === true || this.jiggle === 'true';
+    const isJiggleUntilClick = this.jiggle === 'jiggleUntilClick';
+
     const classes = {
       'svg-icon': true,
       'placeholder': true,
-      'jiggle-on-hover': this.jiggle
+      'jiggle-on-hover': isJiggleOnHover,
+      'jiggle-until-click': isJiggleUntilClick,
     };
     const classString = Object.entries(classes)
       .filter(([_, v]) => v)

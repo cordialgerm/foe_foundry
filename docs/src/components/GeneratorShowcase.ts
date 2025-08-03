@@ -16,7 +16,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
         }
 
         .showcase-container {
-            padding: 1.5rem;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -71,11 +71,11 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
 
     render() {
         return html`
-            <div class="showcase-container bg-object parchment">
+            <div class="showcase-container bg-object scroll">
                 <span class="lead">Summon Your First Foe</span>
                 <div class="showcase-controls">
-                    <reroll-button class="showcase-button" detached target="showcase-statblock"></reroll-button>
-                    <forge-button class="showcase-button" detached target="showcase-statblock"></forge-button>
+                    <reroll-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></reroll-button>
+                    <forge-button jiggle="jiggleUntilClick" class="showcase-button" detached target="showcase-statblock"></forge-button>
                 </div>
             </div>
             <monster-statblock class="hidden" id="showcase-statblock"></monster-statblock>
