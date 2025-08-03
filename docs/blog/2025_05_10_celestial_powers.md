@@ -69,7 +69,7 @@ With [[Awe Inspiring Gaze]], you can really lean into the otherworldy grace and 
 
 ## Example Statblocks
 
-If you like these powers, check out the [Foe Foundry Generator](../generate.md), where you can easily summon the perfect foe for you game tonight using over 600 unique powers like the ones described above.
+If you like these powers, check out the [Foe Foundry Generator](../generate/index.md), where you can easily summon the perfect foe for you game tonight using over 600 unique powers like the ones described above.
 
 Here's some example statblocks that can showcase these powers:
 
@@ -91,7 +91,7 @@ Here's some example statblocks that can showcase these powers:
 
 ### How do I add celestial powers to a homebrew monster?
 
-You can use the [Foe Foundry Generator](../generate.md) to instantly add [Celestial Powers](../powers/celestial.md) to any monster, or start with an **Angel** and customize it as you see fit!
+You can use the [Foe Foundry Generator](../generate/index.md) to instantly add [Celestial Powers](../powers/celestial.md) to any monster, or start with an **Angel** and customize it as you see fit!
 
 ### Can celestial powers be used by villains or fallen angels?
 

@@ -12,7 +12,7 @@ json_ld: true
 
 ## Giant Statblocks
 
-Below are fully scalable, flavorful 5E Giant statblocks built with the [Foe Foundry Monster Generator](../generate.md){.branding}.
+Below are fully scalable, flavorful 5E Giant statblocks built with the [Foe Foundry Monster Generator](../generate/index.md){.branding}.
 
 | Creature | CR Range | Tagline                                    | Variants |
 |----------|----------|--------------------------------------------|----------|
@@ -98,7 +98,7 @@ Most true giants are **Huge** (15–20 feet tall), taking up a 3x3 space on the 
 Right here. [Foe Foundry](../index.md){.branding} features original giant statblocks with evocative powers and CR scaling. See our [[Ogre]] and [[Frost Giant]] pages for full writeups, tactics, and ready-to-run encounters.
 
 **How do I build a custom or homebrew giant in 5E?**  
-Start with a base CR and giant type, then layer in unique traits like terrain control, spiritual ties, or mythic roles. The [Foe Foundry Monster Generator](../generate.md){.branding} makes this super easy - you can quickly create fully balanced, lore-rich giants tailored to your campaign.
+Start with a base CR and giant type, then layer in unique traits like terrain control, spiritual ties, or mythic roles. The [Foe Foundry Monster Generator](../generate/index.md){.branding} makes this super easy - you can quickly create fully balanced, lore-rich giants tailored to your campaign.
 
 **Can I run a 5E one-shot featuring giants?**  
 Absolutely. Giants are ideal for one-shots thanks to their mythic stature and combat weight. Try a siege defense, an ogre uprising, or a doomed duel with a Frost Giant warlord to anchor a powerful one-shot adventure. In fact, you can check out [Frost Giant Adventure Ideas](../monsters/frost-giant.md#frost-giant-adventure-ideas) and [Ogre Adventure Ideas](../monsters/ogre.md#ogre-adventure-ideas) for lots of great inspiration.

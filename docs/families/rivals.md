@@ -15,7 +15,7 @@ What you'll find inside:
 - Pre-made [Rival Parties](#rival-adventuring-party-statblocks-for-dd-5e) with easy-to-use [Rival Introductions](#how-to-introduce-rivals-to-your-campaign)
 - [Rival Adventure Hooks](#adventure-hooks-for-rival-adventuring-parties-in-dd-5e) ranging from wagers to team-ups to integrate rivals directly into your campaign
 - Ways to [Link Rivals](#linking-rival-npc-parties-with-your-campaign-villains) to your campaign's [Villains](villains.md)
-- [Rival Party Statblocks](#rival-adventuring-party-statblocks-for-dd-5e) that you can fully customize with the [Foe Foundry Generator](../generate.md)
+- [Rival Party Statblocks](#rival-adventuring-party-statblocks-for-dd-5e) that you can fully customize with the [Foe Foundry Generator](../generate/index.md)
 
 Whether you're building your campaign from scratch, scrambling to prep for a game tonight, or running a pre-written module, <a href="https://foefoundry.com" class="branding">Foe Foundry</a> gives you everything you need to create a unique rival adventuring party to interact with your PCs.  
 

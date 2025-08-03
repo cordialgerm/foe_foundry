@@ -1,8 +1,7 @@
 ---
 title: Orc Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: 'Bloodrage and Battle: Orcs'
-description: Need orcs that are more than axe fodder? Discover bloodrage-driven statblocks,
-  rituals, and flavorful encounter ideas for your next 5E session.
+description: Need orcs that are more than axe fodder? Discover bloodrage-driven statblocks, rituals, and flavorful encounter ideas for your next 5E session.
 image: img/monsters/orc.webp
 json_ld: true
 date: '2025-05-14T20:51:53-07:00'
@@ -153,7 +152,7 @@ The most powerful warchiefs dye their tusks red with the blood of their slain fo
 
 Want a more nuanced orc? Use these NPC variants to represent spiritual leaders, war-scarred veterans, or pragmatic allies.  
 
-These are suggested humanoid NPC statblocks that work well when re-skinned or customized as orcs. The [Foe Foundry Generator](../generate.md) makes it dead-simple to generate any NPC as an Orc, but for convenience some common Orc NPC variants are listed here.
+These are suggested humanoid NPC statblocks that work well when re-skinned or customized as orcs. The [Foe Foundry Generator](../generate/index.md) makes it dead-simple to generate any NPC as an Orc, but for convenience some common Orc NPC variants are listed here.
 
 ### Orc Berserker
 

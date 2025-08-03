@@ -1,8 +1,7 @@
 ---
 title: Gelatinous Cube Statblocks and Encounters for 5E | Foe Foundry
 short_title: Gelatinous Cubes
-description: Encounter oozy gelatinous cubes with Foe Foundry. Discover complete statblocks,
-  lore, encounters, and adventure hooks for 5E campaigns.
+description: Encounter oozy gelatinous cubes with Foe Foundry. Discover complete statblocks, lore, encounters, and adventure hooks for 5E campaigns.
 image: img/monsters/gelatinous-cube.webp
 json_ld: true
 date: '2025-04-29T19:49:43-07:00'

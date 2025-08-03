@@ -1,8 +1,6 @@
 ---
 title: All 5E Monsters | Statblocks & Monster Families | Foe Foundry
-description: Summon unique monsters for your next 5E session. From undead horrors
-  to monstrosities, Foe Foundry offers unforgettable foes ready to challenge your
-  players
+description: Summon unique monsters for your next 5E session. From undead horrors to monstrosities, Foe Foundry offers unforgettable foes ready to challenge your players
 image: img/icons/favicon.webp
 hidden:
 - backlinks

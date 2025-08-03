@@ -89,7 +89,7 @@ When the barbarian cleaves through the [[Skeleton]] with their maul, you can des
 
 ## Try These Powers Out
 
-Want to see these powers in action? The [Foe Foundry Generator](../generate.md) lets you summon the perfect shambling [[Zombies]] and [[Skeletons]] for your upcoming game.  
+Want to see these powers in action? The [Foe Foundry Generator](../generate/index.md) lets you summon the perfect shambling [[Zombies]] and [[Skeletons]] for your upcoming game.  
 
 Here's an example of the [[Skeletal Grave Guard]], a good bodyguard for a [[Necromancer Mage]]:
 

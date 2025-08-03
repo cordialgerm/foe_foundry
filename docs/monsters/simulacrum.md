@@ -1,9 +1,7 @@
 ---
 title: Simulacrum Statblocks, Lore, and Encounters for 5E | Foe Foundry
 short_title: Simulacrum
-description: "Simulacrum statblocks for 5E with encounter ideas, lore, and tactics.\
-  \ Create magical duplicates and twisted reflections with Foe Foundry\u2019s flavorful\
-  \ variants."
+description: "Simulacrum statblocks for 5E with encounter ideas, lore, and tactics. Create magical duplicates and twisted reflections with Foe Foundry's flavorful variants."
 image: img/monsters/simulacrum.webp
 json_ld: true
 date: '2025-07-27T10:42:43-07:00'
