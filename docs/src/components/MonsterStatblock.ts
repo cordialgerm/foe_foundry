@@ -75,22 +75,36 @@ export class MonsterStatblock extends LitElement {
     @property({ attribute: 'change-type' })
     changeType?: StatblockChangeType;
 
+    @property({ type: Boolean })
+    random: boolean = false;
+
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
 
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
-        task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType], { signal }) => {
+        task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType, random], { signal }) => {
+            if (this.shadowRoot) {
+                await adoptExternalCss(this.shadowRoot);
+            }
+
+            // If random flag is set, use the random statblock endpoint
+            if (random) {
+                const statblockElement = await this.monsters.getRandomStatblock();
+
+                if (!statblockElement) {
+                    throw new Error('Failed to generate random statblock');
+                }
+
+                return statblockElement;
+            }
+
             // Use provided monster key or fall back to window.defaultMonsterKey
             const effectiveMonsterKey = monsterKey || (window as any).defaultMonsterKey;
 
             if (!effectiveMonsterKey) {
                 throw new Error('No monster key provided and no default monster key available');
-            }
-
-            if (this.shadowRoot) {
-                await adoptExternalCss(this.shadowRoot);
             }
 
             // Parse powers CSV string into Power array
@@ -128,7 +142,7 @@ export class MonsterStatblock extends LitElement {
 
             return statblockElement;
         },
-        args: () => [this.monsterKey, this.hpMultiplier, this.damageMultiplier, this.powers, this.changeType]
+        args: () => [this.monsterKey, this.hpMultiplier, this.damageMultiplier, this.powers, this.changeType, this.random]
     });
 
     /**
@@ -140,6 +154,7 @@ export class MonsterStatblock extends LitElement {
         damageMultiplier?: number;
         powers?: string;
         changeType?: StatblockChangeType;
+        random?: boolean;
     }): Promise<void> {
 
         // Update properties
@@ -148,6 +163,7 @@ export class MonsterStatblock extends LitElement {
         if (updates.damageMultiplier !== undefined) this.damageMultiplier = updates.damageMultiplier;
         if (updates.powers !== undefined) this.powers = updates.powers;
         if (updates.changeType !== undefined) this.changeType = updates.changeType;
+        if (updates.random !== undefined) this.random = updates.random;
 
         // Wait for task to complete and new statblock to render
         await this.updateComplete;
