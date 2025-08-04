@@ -11,7 +11,6 @@ from docs_gen.json_ld import set_json_ld_on_page
 from docs_gen.related_monsters import set_related_monsters_on_page
 from foe_foundry_data.homepage import load_homepage_data
 from foe_foundry_data.jinja.env import setup_jinja_env
-from foe_foundry_data.markdown import create_newsletter
 
 log = logging.getLogger("mkdocs")
 backlinks = BlogBacklinks(log)
@@ -48,6 +47,5 @@ def on_page_content(html, page, config, files):
 
 
 def on_env(env, config, files):
-    env.globals["render_newsletter"] = create_newsletter
     setup_jinja_env(env)
     return env

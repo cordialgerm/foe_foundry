@@ -15,11 +15,8 @@ export class EmailSubscribeCallout extends LitElement {
     }
 
     .email-subscribe {
-      background-color: var(--bs-light);
-      border: 2px solid var(--secondary-color);
-      border-radius: var(--medium-margin);
-      padding: 1.5rem;
-      margin: 1.5rem 0;
+      padding: 2.5rem;
+      margin: 1.5rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -116,7 +113,7 @@ export class EmailSubscribeCallout extends LitElement {
 
   render() {
     return html`
-      <div class="email-subscribe">
+      <div class="email-subscribe bg-object parchment">
         <div>
           <h2>${this.cta}</h2>
           <p>Get the latest updates on new features, monsters, powers, and GM tips - all for free!</p>
