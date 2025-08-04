@@ -238,7 +238,6 @@ export class MonsterBuilder extends LitElement {
     }
 
     onMonsterKeyChanged(key: string) {
-
         // Track analytics event for monster change
         trackStatblockEdit(
             key,
