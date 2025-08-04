@@ -44,6 +44,7 @@ export enum StatblockChangeType {
     PowerChanged = 'power-changed',
     DamageChanged = 'damage-changed',
     HpChanged = 'hp-changed',
+    MonsterChanged = 'monster-changed'
 }
 
 export interface StatblockChange {

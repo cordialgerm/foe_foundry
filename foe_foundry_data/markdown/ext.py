@@ -10,7 +10,6 @@ from ..jinja import render_power_fragment
 from ..powers.all import Powers
 from ..refs import MonsterRefResolver, resolve_power_ref
 from .monster_link import monster_button, monster_link, monster_statblock
-from .newsletter import create_newsletter
 from .power_link import power_link
 
 
@@ -156,7 +155,8 @@ class LinkPreprocessor(Preprocessor):
         else:
             raise ValueError("No text found in match")
 
-        return create_newsletter(text)
+        # Use the new EmailSubscribeCallout custom element instead of Jinja template
+        return f'<email-subscribe-callout cta="{text}"></email-subscribe-callout>'
 
 
 class MonsterSpecPreprocessor(Preprocessor):

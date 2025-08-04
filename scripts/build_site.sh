@@ -17,6 +17,10 @@ export PYTHONPATH=.
 export SITE_URL=${SITE_URL:-http://127.0.0.1:8080/}
 export PORT=${PORT:-8080}
 
+# Set NODE_ENV to 'development' if not already specified
+export NODE_ENV=${NODE_ENV:-development}
+echo "NODE_ENV is set to: $NODE_ENV"
+
 # Check for --fast flag
 FAST_BUILD=false
 for arg in "$@"; do

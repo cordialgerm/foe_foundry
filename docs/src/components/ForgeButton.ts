@@ -1,6 +1,7 @@
 import { html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
+import { trackForgeClick } from '../utils/analytics.js';
 import './SvgIcon.js';
 
 @customElement('forge-button')
@@ -55,6 +56,9 @@ export class ForgeStatblockButton extends StatblockButton {
 
     private _handleClick(): void {
         if (this.disabled || !this.monsterKey) return;
+
+        // Track analytics event
+        trackForgeClick(this.monsterKey);
 
         // Dispatch custom event to notify parent components
         this.dispatchEvent(new CustomEvent('forge-click', {

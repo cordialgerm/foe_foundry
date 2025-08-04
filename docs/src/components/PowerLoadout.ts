@@ -160,7 +160,7 @@ export class PowerLoadout extends LitElement {
       background-color: var(--bs-secondary);
       color: var(--bs-light);
     }
-      
+
     .dropdown-item.active::after {
       content: "✓";
       margin-left: auto;
@@ -244,11 +244,7 @@ export class PowerLoadout extends LitElement {
     // Don't toggle if there's only one power
     if (this.powers.length <= 1) return;
 
-    console.log('Toggle dropdown called, current state:', this.dropdownOpen, 'powers:', this.powers.length);
-
     this.dropdownOpen = !this.dropdownOpen;
-
-    console.log('New dropdown state:', this.dropdownOpen);
 
     if (this.dropdownOpen) {
       // Set focus to currently selected power
