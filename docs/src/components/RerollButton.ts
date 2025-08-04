@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { StatblockButton } from './StatblockButton.js';
 import { initializeMonsterStore } from '../data/api.js';
 import { StatblockRequest, StatblockChange, StatblockChangeType } from '../data/monster.js';
+import { trackRerollClick } from '../utils/analytics.js';
 import './SvgIcon.js';
 
 @customElement('reroll-button')
@@ -318,6 +319,9 @@ export class RerollButton extends StatblockButton {
 
   private _handleClick() {
     if (this.disabled || this.rolling || !this.monsterKey) return;
+
+    // Track analytics event
+    trackRerollClick(this.monsterKey);
 
     // Dispatch custom event to notify parent components
     this.dispatchEvent(new CustomEvent('reroll-click', {
