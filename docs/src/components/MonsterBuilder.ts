@@ -8,6 +8,7 @@ import { StatblockChange, StatblockChangeType } from '../data/monster';
 import { Task } from '@lit/task';
 import { Monster, RelatedMonster } from '../data/monster';
 import { adoptExternalCss } from '../utils';
+import { trackStatblockEdit } from '../utils/analytics.js';
 
 @customElement('monster-builder')
 export class MonsterBuilder extends LitElement {
@@ -155,7 +156,6 @@ export class MonsterBuilder extends LitElement {
         if (container) {
             const currentHeight = container.offsetHeight;
             this.lastKnownHeight = Math.max(currentHeight, this.lastKnownHeight);
-            console.log('Captured current height:', this.lastKnownHeight);
         }
     }
 
@@ -238,6 +238,12 @@ export class MonsterBuilder extends LitElement {
     }
 
     onMonsterKeyChanged(key: string) {
+        // Track analytics event for monster change
+        trackStatblockEdit(
+            key,
+            StatblockChangeType.MonsterChanged
+        );
+
         // Preserve height during monster change
         this.preserveHeightDuringTransition();
 
@@ -284,6 +290,16 @@ export class MonsterBuilder extends LitElement {
                 changedPower: null
             };
         }
+
+        // Track analytics event
+        const powerKey = change?.changedPower?.key;
+        const changeType = change?.type;
+
+        trackStatblockEdit(
+            monsterCard.monsterKey,
+            changeType ?? StatblockChangeType.Rerolled,
+            powerKey,
+        );
 
         await this.loadStatblock(monsterCard.monsterKey, selectedPowers, monsterCard.hpMultiplier, monsterCard.damageMultiplier, change);
 
@@ -332,7 +348,6 @@ export class MonsterBuilder extends LitElement {
     }
 
     renderMessage(message: string, messageClass: string = '') {
-        console.log('Rendering message with height ', this.lastKnownHeight);
         return html`
             <div class="container pamphlet-main ${messageClass}" style="height: ${this.lastKnownHeight + 'px'}; overflow: hidden;">
                 <p>${message}</p>

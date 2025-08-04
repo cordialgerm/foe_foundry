@@ -46,14 +46,9 @@
                     <generator-showcase></generator-showcase>
                 </div>
             </div>
-        </section>
 
-        <div class="row">
-            <div class="col-12 offset-lg-2 col-lg-8">
-                <div id="statblock-placeholder"></div>
-                <hr />
-            </div>
-        </div>
+            <hr />
+        </section>
 
         <section>
             <h2 class="glowing-header">Why GMs Love Foe Foundry</h2>
@@ -142,7 +137,8 @@
         <section>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6">
-                    {{ render_newsletter() }}
+                    <email-subscribe-callout cta="Subscribe to the Foe Foundry Newsletter">
+                    </email-subscribe-callout>
                 </div>
             </div>
             <hr />
