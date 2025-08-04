@@ -18,13 +18,15 @@ export class MonsterStatblock extends LitElement {
         #statblock-container {
             width: 100%;
             min-height: 300px;
-            transition: height 0.3s ease-out;
         }
 
-        .loading {
+        .loading.empty {
             text-align: center;
             padding: 2rem;
             color: var(--bs-muted, #6c757d);
+        }
+
+        .loading.cached {
         }
 
         .error {
@@ -34,94 +36,6 @@ export class MonsterStatblock extends LitElement {
             background-color: var(--bs-danger-bg, #f8d7da);
             border: 1px solid var(--bs-danger-border, #f5c2c7);
             border-radius: 0.375rem;
-        }
-
-        /* Animation styles consolidated from RerollButton */
-        .stat-block.pop-out {
-            animation: pop-out 0.2s forwards;
-        }
-
-        .stat-block.pop-in {
-            animation: pop-in 0.2s forwards;
-        }
-
-        .stat-block.summon-effect {
-            animation:
-                summon-flash 0.4s ease,
-                scale-throb 0.4s ease,
-                summon-fade 0.4s ease;
-        }
-
-        @keyframes pop-out {
-            from {
-                transform: scale(1);
-                opacity: 1;
-            }
-            to {
-                transform: scale(0.95);
-                opacity: 0;
-            }
-        }
-
-        @keyframes pop-in {
-            from {
-                transform: scale(1.05);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes summon-flash {
-            0% {
-                box-shadow: 0 0 0 0 var(--primary-color);
-            }
-            10% {
-                box-shadow: 0 0 4px 1px var(--primary-color);
-            }
-            30% {
-                box-shadow: 0 0 8px 3px var(--primary-color);
-            }
-            50% {
-                box-shadow: 0 0 12px 6px var(--primary-color);
-            }
-            70% {
-                box-shadow: 0 0 8px 3px var(--primary-color);
-            }
-            90% {
-                box-shadow: 0 0 4px 1px var(--primary-color);
-            }
-            100% {
-                box-shadow: 0 0 0 0 var(--primary-color);
-            }
-        }
-
-        @keyframes scale-throb {
-            0% {
-                transform: scale(1);
-            }
-            40% {
-                transform: scale(1.025);
-            }
-            60% {
-                transform: scale(1.015);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes summon-fade {
-            0%, 100% {
-                opacity: 1;
-                filter: brightness(1);
-            }
-            50% {
-                opacity: 0.8;
-                filter: brightness(1.3);
-            }
         }
     `;
 
@@ -142,7 +56,7 @@ export class MonsterStatblock extends LitElement {
 
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
-    private lastKnownHeight: number = 0;
+    private _cachedStatblock: Element | null = null;
 
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
@@ -197,73 +111,6 @@ export class MonsterStatblock extends LitElement {
     });
 
     /**
-     * Capture the current height of the statblock container for smooth transitions
-     * Only captures if there's actual statblock content (not loading/error states)
-     */
-    private captureCurrentHeight(): void {
-        if (this.statblockRef.value) {
-            const statblockContent = this.statblockRef.value.querySelector('.stat-block');
-            if (statblockContent) {
-                const currentHeight = this.statblockRef.value.offsetHeight;
-                this.lastKnownHeight = Math.max(this.lastKnownHeight, currentHeight, 300);
-            }
-        }
-    }
-
-    /**
-     * Preserve height during transition to prevent flickering
-     * Returns a cleanup function to restore natural height
-     */
-    private preserveHeightDuringTransition(): () => Promise<void> {
-
-        return async () => {
-            await this._sleep(50);
-        }
-
-        // // Capture current height if we have actual statblock content
-        // const hasStatblockContent = this.statblockRef.value?.querySelector('.stat-block');
-        // if (hasStatblockContent) {
-        //     this.captureCurrentHeight();
-        // }
-
-        // // Set explicit height to current height
-        // if (this.statblockRef.value && this.lastKnownHeight > 0) {
-        //     this.statblockRef.value.style.height = `${this.lastKnownHeight}px`;
-        //     this.statblockRef.value.style.overflow = 'hidden';
-        // }
-
-        // // Return async cleanup function
-        // return async () => {
-        //     if (!this.statblockRef.value) return;
-
-        //     // Wait for new content to render
-        //     await this._sleep(50);
-
-        //     if (!this.statblockRef.value) return;
-
-        //     // Enable transition and remove explicit height to animate to natural size
-        //     this.statblockRef.value.style.transition = 'height 0.3s ease-out';
-        //     this.statblockRef.value.style.height = '';
-
-        //     // Wait for transition to complete
-        //     await this._sleep(300);
-
-        //     if (!this.statblockRef.value) return;
-
-        //     // Clean up transition styles
-        //     this.statblockRef.value.style.transition = '';
-        //     this.statblockRef.value.style.overflow = '';
-        // };
-    }
-
-    /**
-     * Sleep utility for animations
-     */
-    private _sleep(ms: number): Promise<void> {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    /**
      * Unified reroll method that handles bulk property updates, animations, and height preservation
      */
     async reroll(updates: {
@@ -273,19 +120,6 @@ export class MonsterStatblock extends LitElement {
         powers?: string;
         changeType?: StatblockChangeType;
     }): Promise<void> {
-        // Preserve height during transition
-        const finishTransition = this.preserveHeightDuringTransition();
-
-        // Find current statblock for animations
-        const currentStatblock = this.statblockRef.value?.querySelector('.stat-block');
-
-        // Trigger pop-out animation
-        // if (currentStatblock) {
-        //     currentStatblock.classList.add('pop-out');
-        // }
-
-        // Wait for pop-out animation
-        // await this._sleep(200);
 
         // Update properties
         if (updates.monsterKey !== undefined) this.monsterKey = updates.monsterKey;
@@ -297,42 +131,33 @@ export class MonsterStatblock extends LitElement {
         // Wait for task to complete and new statblock to render
         await this.updateComplete;
         await this._statblockTask.taskComplete;
-
-        // Find new statblock and trigger pop-in animation
-        // const newStatblock = this.statblockRef.value?.querySelector('.stat-block');
-        // if (newStatblock) {
-        //     newStatblock.classList.add('pop-in');
-
-        //     // Wait for pop-in animation
-        //     await this._sleep(200);
-        //     newStatblock.classList.remove('pop-in');
-
-        //     // Wait a bit before summon effect
-        //     await this._sleep(200);
-        //     newStatblock.classList.add('summon-effect');
-
-        //     // Remove summon effect after animation
-        //     await this._sleep(400);
-        //     newStatblock.classList.remove('summon-effect');
-        // }
-
-        // Clean up height transition
-        await finishTransition();
     }
 
     render() {
         return this._statblockTask.render({
-            pending: () => html`
-                <div class="loading">
-                    Loading statblock...
-                </div>
-            `,
+            pending: () => {
+                if (this._cachedStatblock) {
+                    // Show cached statblock while loading new one
+                    return html`
+                        <div ${ref(this.statblockRef)} id="statblock-container" class="loading cached">
+                            ${this._cachedStatblock}
+                        </div>
+                    `;
+                }
+                return html`
+                    <div class="loading empty">
+                        Loading statblock...
+                    </div>
+                `;
+            },
             error: (e) => html`
                 <div class="error">
                     Error: ${e instanceof Error ? e.message : String(e)}
                 </div>
             `,
             complete: (statblockElement: Element) => {
+                // Cache the new statblock
+                this._cachedStatblock = statblockElement;
                 return html`
                     <div ${ref(this.statblockRef)} id="statblock-container">
                         ${statblockElement}
