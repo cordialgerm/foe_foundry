@@ -17,6 +17,8 @@ export class MonsterStatblock extends LitElement {
 
         #statblock-container {
             width: 100%;
+            min-height: 300px;
+            transition: height 0.3s ease-out;
         }
 
         .loading {
@@ -196,11 +198,15 @@ export class MonsterStatblock extends LitElement {
 
     /**
      * Capture the current height of the statblock container for smooth transitions
+     * Only captures if there's actual statblock content (not loading/error states)
      */
     private captureCurrentHeight(): void {
         if (this.statblockRef.value) {
-            const currentHeight = this.statblockRef.value.offsetHeight;
-            this.lastKnownHeight = Math.max(currentHeight, this.lastKnownHeight);
+            const statblockContent = this.statblockRef.value.querySelector('.stat-block');
+            if (statblockContent) {
+                const currentHeight = this.statblockRef.value.offsetHeight;
+                this.lastKnownHeight = Math.max(this.lastKnownHeight, currentHeight, 300);
+            }
         }
     }
 
@@ -208,33 +214,46 @@ export class MonsterStatblock extends LitElement {
      * Preserve height during transition to prevent flickering
      * Returns a cleanup function to restore natural height
      */
-    private preserveHeightDuringTransition(): () => void {
-        this.captureCurrentHeight();
+    private preserveHeightDuringTransition(): () => Promise<void> {
 
-        if (this.statblockRef.value && this.lastKnownHeight > 0) {
-            this.statblockRef.value.style.height = `${this.lastKnownHeight}px`;
-            this.statblockRef.value.style.transition = 'height 0.3s cubic-bezier(0.4,0,0.2,1)';
+        return async () => {
+            await this._sleep(50);
         }
 
-        // Return cleanup function
-        return () => {
-            if (this.statblockRef.value) {
-                requestAnimationFrame(() => {
-                    if (this.statblockRef.value) {
-                        const naturalHeight = this.statblockRef.value.scrollHeight;
-                        this.statblockRef.value.style.height = `${naturalHeight}px`;
+        // // Capture current height if we have actual statblock content
+        // const hasStatblockContent = this.statblockRef.value?.querySelector('.stat-block');
+        // if (hasStatblockContent) {
+        //     this.captureCurrentHeight();
+        // }
 
-                        // After transition, remove explicit height
-                        setTimeout(() => {
-                            if (this.statblockRef.value) {
-                                this.statblockRef.value.style.height = '';
-                                this.statblockRef.value.style.transition = '';
-                            }
-                        }, 300);
-                    }
-                });
-            }
-        };
+        // // Set explicit height to current height
+        // if (this.statblockRef.value && this.lastKnownHeight > 0) {
+        //     this.statblockRef.value.style.height = `${this.lastKnownHeight}px`;
+        //     this.statblockRef.value.style.overflow = 'hidden';
+        // }
+
+        // // Return async cleanup function
+        // return async () => {
+        //     if (!this.statblockRef.value) return;
+
+        //     // Wait for new content to render
+        //     await this._sleep(50);
+
+        //     if (!this.statblockRef.value) return;
+
+        //     // Enable transition and remove explicit height to animate to natural size
+        //     this.statblockRef.value.style.transition = 'height 0.3s ease-out';
+        //     this.statblockRef.value.style.height = '';
+
+        //     // Wait for transition to complete
+        //     await this._sleep(300);
+
+        //     if (!this.statblockRef.value) return;
+
+        //     // Clean up transition styles
+        //     this.statblockRef.value.style.transition = '';
+        //     this.statblockRef.value.style.overflow = '';
+        // };
     }
 
     /**
@@ -298,7 +317,7 @@ export class MonsterStatblock extends LitElement {
         // }
 
         // Clean up height transition
-        finishTransition();
+        await finishTransition();
     }
 
     render() {
@@ -314,18 +333,10 @@ export class MonsterStatblock extends LitElement {
                 </div>
             `,
             complete: (statblockElement: Element) => {
-                // Use updateComplete to ensure the DOM is ready before appending
-                this.updateComplete.then(() => {
-                    if (this.statblockRef.value) {
-                        // Clear existing content
-                        this.statblockRef.value.innerHTML = '';
-                        // Append new statblock
-                        this.statblockRef.value.appendChild(statblockElement);
-                    }
-                });
-
                 return html`
-                    <div ${ref(this.statblockRef)} id="statblock-container"></div>
+                    <div ${ref(this.statblockRef)} id="statblock-container">
+                        ${statblockElement}
+                    </div>
                 `;
             }
         });
