@@ -156,7 +156,6 @@ export class MonsterBuilder extends LitElement {
         if (container) {
             const currentHeight = container.offsetHeight;
             this.lastKnownHeight = Math.max(currentHeight, this.lastKnownHeight);
-            console.log('Captured current height:', this.lastKnownHeight);
         }
     }
 
@@ -350,7 +349,6 @@ export class MonsterBuilder extends LitElement {
     }
 
     renderMessage(message: string, messageClass: string = '') {
-        console.log('Rendering message with height ', this.lastKnownHeight);
         return html`
             <div class="container pamphlet-main ${messageClass}" style="height: ${this.lastKnownHeight + 'px'}; overflow: hidden;">
                 <p>${message}</p>
