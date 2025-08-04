@@ -3,11 +3,9 @@
     "@lit/context": "^1.1.6",
     "@lit/task": "^1.0.3",
     "lit": "^3.3.1",
-    "puppeteer": "^24.12.1"
-  },
-  "devDependencies": {
-    "typescript": "^5.8.3",
-    "vite": "^7.0.4"
+    "puppeteer": "^24.12.1",
+    "vite": "^7.0.6",
+    "typescript": "^5.8.3"
   },
   "name": "foe_foundry",
   "version": "1.0.0",
