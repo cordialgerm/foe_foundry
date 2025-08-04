@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonsterStatblock Test</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #2a2a2a;
+        }
+
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            margin: 0 5px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background-color: #1a1a1a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pamphlet-container">
+        <h1>MonsterStatblock Component Test</h1>
+
+        <div class="test-section">
+            <h2>Basic Statblock</h2>
+            <p>A basic monster statblock with default settings:</p>
+            <monster-statblock id="basic-statblock" monster-key="ogre">
+            </monster-statblock>
+        </div>
+
+        <div class="test-section">
+            <h2>Customized Statblock</h2>
+            <p>A statblock with HP and damage multipliers:</p>
+            <monster-statblock id="custom-statblock" monster-key="ogre" hp-multiplier="1.5" damage-multiplier="1.2">
+            </monster-statblock>
+        </div>
+
+        <div class="test-section">
+            <h2>Reroll Test</h2>
+            <p>Test the new reroll() method:</p>
+
+            <div class="controls">
+                <label>Monster:
+                    <select id="monster-select">
+                        <option value="ogre">Ogre</option>
+                        <option value="basilisk">Basilisk</option>
+                        <option value="minotaur">Minotaur</option>
+                        <option value="manticore">Manticore</option>
+                    </select>
+                </label>
+
+                <label>HP Multiplier:
+                    <input type="number" id="hp-input" value="1" step="0.1" min="0.1" max="3">
+                </label>
+
+                <label>Damage Multiplier:
+                    <input type="number" id="damage-input" value="1" step="0.1" min="0.1" max="3">
+                </label>
+
+                <button onclick="testReroll()">Apply Changes (Reroll)</button>
+                <button onclick="testRandomMonster()">Random Monster</button>
+            </div>
+
+            <monster-statblock id="reroll-statblock" monster-key="ogre">
+            </monster-statblock>
+        </div>
+
+        <script type="module" src="/scripts/main.js"></script>
+        <script>
+            // Test functions for the reroll functionality
+            async function testReroll() {
+                const statblock = document.getElementById('reroll-statblock');
+                const monster = document.getElementById('monster-select').value;
+                const hp = parseFloat(document.getElementById('hp-input').value);
+                const damage = parseFloat(document.getElementById('damage-input').value);
+
+                if (statblock && statblock.reroll) {
+                    await statblock.reroll({
+                        monsterKey: monster,
+                        hpMultiplier: hp,
+                        damageMultiplier: damage,
+                        changeType: 'rerolled'
+                    });
+                } else {
+                    console.error('Reroll method not available or statblock not found');
+                }
+            }
+
+            async function testRandomMonster() {
+                const monsters = ['ogre', 'basilisk', 'manticore', 'chimera', 'merrow'];
+                const randomMonster = monsters[Math.floor(Math.random() * monsters.length)];
+                const randomHp = (Math.random() * 2 + 0.5).toFixed(1); // 0.5 to 2.5
+                const randomDamage = (Math.random() * 2 + 0.5).toFixed(1); // 0.5 to 2.5
+
+                document.getElementById('monster-select').value = randomMonster;
+                document.getElementById('hp-input').value = randomHp;
+                document.getElementById('damage-input').value = randomDamage;
+
+                await testReroll();
+            }
+
+            // Set default global monster key for components
+            window.defaultMonsterKey = 'ogre';
+        </script>
+    </div>
+</body>
+
+</html>

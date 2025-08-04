@@ -40,7 +40,6 @@
 3. **Consolidate Animation Styles**
    - Extract animation CSS from `RerollButton.ts` global styles injection
    - Move `pop-out`, `pop-in`, `summon-flash`, `scale-throb`, and `summon-fade` animations into MonsterStatblock's static styles
-   - Remove global style injection from RerollButton (breaking change - will need coordination)
 
 ### Phase 2: Add Height Preservation Logic
 
@@ -95,48 +94,11 @@
 9. **Create Migration Path**
    - Ensure backwards compatibility during transition
    - Add fallback behavior for existing statblock elements
-   - Consider adding `data-migration` attributes for gradual rollout
 
-### Phase 5: Enhanced Features
+### Phase 4: Supporting Wrapping Light DOM Statblock
 
-10. **Add Advanced Features**
-    - Add `loading` state property for external components to monitor
-    - Add custom events: `statblock-loading`, `statblock-loaded`, `statblock-error`
-    - Add `disabled` property to prevent multiple concurrent rerolls
-    - Add error recovery and retry mechanisms
+There are currently a variety of markdown helpers, like [[!ogre]] that render the inner HTML of a statblock directly into the page. Eventually, we need to come up with a plan for how we can wrap or manage this content with the MonsterStatblock, but DO NOT WORRY ABOUT THAT FOR NOW.
 
-11. **Performance Optimizations**
-    - Implement debouncing for rapid successive reroll calls
-    - Add memoization for recently loaded statblocks
-    - Optimize animation timings for smoothest UX
-
-### Phase 6: Testing & Documentation
-
-12. **Testing Strategy**
-    - Unit tests for reroll method with various parameter combinations
-    - Integration tests with MonsterBuilder and RerollButton
-    - Animation timing tests
-    - Height preservation tests with different content sizes
-    - Backwards compatibility tests
-
-13. **Documentation Updates**
-    - Update component API documentation
-    - Create migration guide for consumers
-    - Document new event system
-    - Add example usage patterns
-
-### Breaking Changes & Migration
-
-**Breaking Changes:**
-- RerollButton will no longer inject global animation styles
-- MonsterBuilder's `loadStatblock()` method will be deprecated
-- Direct DOM manipulation of statblocks will no longer work
-
-**Migration Strategy:**
-- Phase rollout with feature flags
-- Backwards compatibility layer during transition period
-- Clear communication about deprecation timeline
-- Provide migration scripts where possible
 
 ### Success Criteria
 
@@ -146,5 +108,3 @@
 - [ ] Unified animation system (pop-out/pop-in/summon effects)
 - [ ] Bulk property updates via single `reroll()` method
 - [ ] Clean separation of concerns between components
-- [ ] Backwards compatibility maintained during migration
-- [ ] Performance equal to or better than current implementation
