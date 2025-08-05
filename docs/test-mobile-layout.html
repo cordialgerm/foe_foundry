@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Layout Test - Foe Foundry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .test-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .test-instructions {
+            background: var(--bs-dark);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .test-instructions h3 {
+            color: var(--bs-warning);
+            margin-top: 0;
+        }
+
+        .resize-simulation {
+            margin-bottom: 1rem;
+        }
+
+        .resize-button {
+            background: var(--bs-primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+
+        .viewport-indicator {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: var(--bs-warning);
+            color: var(--bs-dark);
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        /* Test frame styles */
+        .test-frame {
+            border: 2px solid var(--bs-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: width 0.3s ease;
+        }
+
+        .test-frame.mobile {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .test-frame.tablet {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .test-frame.desktop {
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body>
+    <div class="viewport-indicator" id="viewportIndicator">
+        Desktop (>768px)
+    </div>
+
+    <div class="test-container container pamphlet-container">
+        <header class="test-header">
+            <h1>🧪 Mobile Layout Test</h1>
+            <p>Testing responsive tabbed layout for Monster Builder</p>
+        </header>
+
+        <div class="test-instructions">
+            <h3>📱 Test Instructions</h3>
+            <ul>
+                <li><strong>Desktop (>768px):</strong> Should show side-by-side panels</li>
+                <li><strong>Mobile (≤768px):</strong> Should show tabs with "Editor" and "Statblock"</li>
+                <li><strong>Test the tabs:</strong> Click between Editor/Statblock on mobile</li>
+                <li><strong>Test updates:</strong> Make changes in Editor and look for "Updated!" pill</li>
+                <li><strong>Test resize:</strong> Use browser dev tools or buttons below to simulate different screen
+                    sizes</li>
+            </ul>
+
+            <div class="resize-simulation">
+                <strong>Quick resize test:</strong>
+                <button class="resize-button" onclick="setTestFrameSize('mobile')">📱 Mobile (400px)</button>
+                <button class="resize-button" onclick="setTestFrameSize('tablet')">📟 Tablet (768px)</button>
+                <button class="resize-button" onclick="setTestFrameSize('desktop')">🖥️ Desktop (100%)</button>
+            </div>
+        </div>
+
+        <div class="test-frame" id="testFrame">
+            <!-- Monster Builder component will be loaded here -->
+            <monster-builder monster-key="ogre"></monster-builder>
+        </div>
+    </div>
+
+    <!-- Load the built components -->
+    <script type="module" src="/scripts/main.js"></script>
+
+    <script>
+        // Test frame resizing functionality
+        function setTestFrameSize(size) {
+            const frame = document.getElementById('testFrame');
+            frame.className = `test-frame ${size}`;
+            updateViewportIndicator();
+        }
+
+        function updateViewportIndicator() {
+            const indicator = document.getElementById('viewportIndicator');
+            const width = window.innerWidth;
+
+            if (width <= 768) {
+                indicator.textContent = `Mobile (${width}px ≤ 768px)`;
+                indicator.style.background = 'var(--bs-warning)';
+            } else {
+                indicator.textContent = `Desktop (${width}px > 768px)`;
+                indicator.style.background = 'var(--bs-primary)';
+            }
+        }
+
+        // Update indicator on resize
+        window.addEventListener('resize', updateViewportIndicator);
+        updateViewportIndicator();
+
+        // Log when the monster builder loads
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 Mobile layout test page loaded');
+            console.log('📱 Current viewport:', window.innerWidth <= 768 ? 'Mobile' : 'Desktop');
+
+            // Find the monster builder component
+            const monsterBuilder = document.querySelector('monster-builder');
+            if (monsterBuilder) {
+                console.log('✅ Monster builder component found');
+
+                // Listen for mobile state changes
+                const observer = new MutationObserver(() => {
+                    const isMobile = monsterBuilder.isMobile;
+                    console.log('📱 Mobile state:', isMobile ? 'ON' : 'OFF');
+                });
+
+                observer.observe(monsterBuilder, {
+                    attributes: true,
+                    attributeFilter: ['is-mobile']
+                });
+            } else {
+                console.error('❌ Monster builder component not found');
+            }
+        });
+    </script>
+</body>
+
+</html>

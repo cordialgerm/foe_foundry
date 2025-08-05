@@ -98,6 +98,65 @@ export class MonsterBuilder extends LitElement {
     .error-message p {
         color: var(--bs-danger, #dc3545);
     }
+
+    /* Mobile-only elements */
+    .mobile-tabs {
+      display: none;
+    }
+
+    .mobile-panel {
+      display: block;
+      width: 100%;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 768px) {
+      .panels-row {
+        display: none !important;
+      }
+
+      .mobile-tabs {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .mobile-tab {
+        flex: 1;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 8px;
+        background: var(--bs-secondary);
+        color: var(--bs-light);
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.2s;
+      }
+
+      .mobile-tab.active {
+        background: var(--bs-primary);
+        color: var(--bs-light);
+        font-weight: bold;
+      }
+
+      .update-pill {
+        background: var(--bs-warning);
+        color: var(--bs-dark);
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        margin-left: 0.5rem;
+      }
+
+      .mobile-panel {
+        display: block;
+        width: 100%;
+      }
+
+      .monster-header {
+        margin-bottom: 1rem;
+      }
+    }
   `;
 
     // Use Lit Task for async monster loading
@@ -122,6 +181,45 @@ export class MonsterBuilder extends LitElement {
 
     @property({ type: String, attribute: 'monster-key' })
     monsterKey: string = '';
+
+    @property({ type: String })
+    mobileTab: 'edit' | 'statblock' = 'edit';
+
+    @property({ type: Boolean })
+    statblockUpdated: boolean = false;
+
+    @property({ type: Boolean })
+    isMobile: boolean = false;
+
+    private resizeObserver?: ResizeObserver;
+
+    connectedCallback() {
+        super.connectedCallback();
+        this.setupResizeObserver();
+    }
+
+    disconnectedCallback() {
+        super.disconnectedCallback();
+        this.resizeObserver?.disconnect();
+    }
+
+    private setupResizeObserver() {
+        this.resizeObserver = new ResizeObserver(() => {
+            this.checkIsMobile();
+        });
+        this.resizeObserver.observe(this);
+    }
+
+    private checkIsMobile() {
+        this.isMobile = window.innerWidth <= 768;
+    }
+
+    private setMobileTab(tab: 'edit' | 'statblock') {
+        this.mobileTab = tab;
+        if (tab === 'statblock') {
+            this.statblockUpdated = false;
+        }
+    }
 
     // Entirely new monster selected
     onMonsterKeyChanged(key: string) {
@@ -184,9 +282,16 @@ export class MonsterBuilder extends LitElement {
     }
 
     async firstUpdated() {
+        this.checkIsMobile(); // Initial check
 
         this.shadowRoot?.addEventListener('monster-changed', async (event: any) => {
             const monsterCard = event.detail.monsterCard;
+
+            // Set statblock updated flag when on mobile and not viewing statblock
+            if (this.isMobile && this.mobileTab !== 'statblock') {
+                this.statblockUpdated = true;
+            }
+
             await this.onStatblockChangeRequested(monsterCard, event.detail);
         });
 
@@ -250,6 +355,26 @@ export class MonsterBuilder extends LitElement {
                         `)}
                     </div>
                 </div>
+
+                <!-- Mobile tabs (only shown on mobile) -->
+                ${this.isMobile ? html`
+                  <div class="mobile-tabs">
+                    <button
+                      class="mobile-tab ${this.mobileTab === 'edit' ? 'active' : ''}"
+                      @click=${() => this.setMobileTab('edit')}>
+                      Editor
+                    </button>
+                    <button
+                      class="mobile-tab ${this.mobileTab === 'statblock' ? 'active' : ''}"
+                      @click=${() => this.setMobileTab('statblock')}>
+                      Statblock
+                      ${this.statblockUpdated && this.mobileTab !== 'statblock' ?
+                    html`<span class="update-pill">Updated!</span>` : ''}
+                    </button>
+                  </div>
+                ` : ''}
+
+                <!-- Desktop layout (always rendered, hidden on mobile via CSS) -->
                 <div class="panels-row">
                     <div class="left-panel">
                         <monster-card monster-key="${this.monsterKey}"></monster-card>
@@ -262,6 +387,22 @@ export class MonsterBuilder extends LitElement {
                         ></monster-statblock>
                     </div>
                 </div>
+
+                <!-- Mobile layout (only shown on mobile) -->
+                ${this.isMobile ? html`
+                  <div class="mobile-panel">
+                    <div class="mobile-panel-content" style="display: ${this.mobileTab === 'edit' ? 'block' : 'none'}">
+                      <monster-card monster-key="${this.monsterKey}"></monster-card>
+                    </div>
+                    <div class="mobile-panel-content" style="display: ${this.mobileTab === 'statblock' ? 'block' : 'none'}">
+                      <monster-statblock
+                        monster-key="${this.monsterKey}"
+                        power-keys="${powerKeys}"
+                        hide-buttons
+                      ></monster-statblock>
+                    </div>
+                  </div>
+                ` : ''}
             </div>
             `;
     }
