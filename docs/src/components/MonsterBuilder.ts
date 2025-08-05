@@ -80,20 +80,6 @@ export class MonsterBuilder extends LitElement {
       flex: 1 1 auto;
       min-width: 0;
     }
-    @keyframes pop-in {
-        0% {
-            transform: scale(1);
-            opacity: 0.5;
-        }
-        50% {
-            transform: scale(1.2);
-            opacity: 1;
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
     .loading,
     .error-message {
         display: flex;
@@ -166,11 +152,11 @@ export class MonsterBuilder extends LitElement {
 
         // Determine change type and track analytics
         let changeType: StatblockChangeType | undefined;
-        let powerKey: string | undefined;
+        let changedPower: Power | undefined;
 
         if (eventDetail?.power && eventDetail.power.key) {
             changeType = StatblockChangeType.PowerChanged;
-            powerKey = eventDetail.power.key;
+            changedPower = eventDetail.power;
         } else if (eventDetail?.changeType === 'damage-changed') {
             changeType = StatblockChangeType.DamageChanged;
         } else if (eventDetail?.changeType === 'hp-changed') {
@@ -182,7 +168,7 @@ export class MonsterBuilder extends LitElement {
         trackStatblockEdit(
             monsterCard.monsterKey,
             changeType,
-            powerKey,
+            changedPower ? changedPower.key : undefined
         );
 
         // Update the MonsterStatblock component
@@ -191,7 +177,8 @@ export class MonsterBuilder extends LitElement {
             powers: powersString,
             hpMultiplier: monsterCard.hpMultiplier,
             damageMultiplier: monsterCard.damageMultiplier,
-            changeType: changeType
+            changeType: changeType,
+            changedPower: changedPower
         });
     }
 

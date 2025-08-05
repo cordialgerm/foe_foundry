@@ -149,12 +149,12 @@ export class ApiMonsterStore implements MonsterStore {
             });
         }
 
-        // Remove the highlight classes after 5 seconds
-        // setTimeout(() => {
-        //     statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
-        //     statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
-        //     statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
-        // }, 5000);
+        //Remove the highlight classes after 5 seconds
+        setTimeout(() => {
+            statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
+            statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
+            statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
+        }, 5000);
         return statblockElement;
     }
 }

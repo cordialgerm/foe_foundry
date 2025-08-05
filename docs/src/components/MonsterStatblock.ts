@@ -81,6 +81,20 @@ export class MonsterStatblock extends LitElement {
             animation: pop-in 0.8s ease;
             will-change: transform, opacity;
         }
+        @keyframes pop-in {
+        0% {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
 
         /* Responsive styles */
         @media (max-width: 600px) {
@@ -123,6 +137,7 @@ export class MonsterStatblock extends LitElement {
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
+    private _changedPower: Power | null = null;
 
     connectedCallback() {
         super.connectedCallback();
@@ -202,7 +217,7 @@ export class MonsterStatblock extends LitElement {
             // Create StatblockChange object if changeType is provided
             const change: StatblockChange | null = changeType ? {
                 type: changeType,
-                changedPower: null
+                changedPower: this._changedPower
             } : null;
 
             const statblockElement = await this.monsters.getStatblock(request, change);
@@ -225,6 +240,7 @@ export class MonsterStatblock extends LitElement {
         damageMultiplier?: number;
         powers?: string;
         changeType?: StatblockChangeType;
+        changedPower?: Power;
         random?: boolean;
     }): Promise<void> {
 
@@ -256,6 +272,8 @@ export class MonsterStatblock extends LitElement {
         if (updates.powers !== undefined) this.powers = updates.powers;
         if (updates.changeType !== undefined) this.changeType = updates.changeType;
         if (updates.random !== undefined) this.random = updates.random;
+
+        this._changedPower = updates.changedPower || null;
 
         if (this.useSlot) {
             const monsterKey = this.getSlottedMonsterKey();
