@@ -201,7 +201,7 @@ class StatblockJinjaContext:
         for feature in stats.features:
             if feature.hidden:
                 hiddens.append(feature)
-            if feature.action == ActionType.Feature:
+            elif feature.action == ActionType.Feature:
                 passives.append(feature)
             elif feature.action == ActionType.Action:
                 actions.append(feature)
