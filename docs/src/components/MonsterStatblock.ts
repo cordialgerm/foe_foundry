@@ -110,6 +110,10 @@ export class MonsterStatblock extends LitElement {
         return slottedContent ? slottedContent.getAttribute('data-monster') : null;
     }
 
+    getEffectiveMonsterKey() {
+        return this.monsterKey || this.getSlottedMonsterKey() || this.statblockRef.value?.querySelector('.stat-block')?.getAttribute('data-monster') || null;
+    }
+
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
         task: async ([monsterKey, hpMultiplier, damageMultiplier, powers, changeType, random], { signal }) => {
@@ -185,6 +189,12 @@ export class MonsterStatblock extends LitElement {
         random?: boolean;
     }): Promise<void> {
 
+        // if there are no updates, request update from lit component
+        if (Object.keys(updates).length === 0) {
+            await this.requestUpdate();
+            return;
+        }
+
         // Update properties
         if (updates.monsterKey !== undefined) this.monsterKey = updates.monsterKey;
         if (updates.hpMultiplier !== undefined) this.hpMultiplier = updates.hpMultiplier;
@@ -194,7 +204,13 @@ export class MonsterStatblock extends LitElement {
         if (updates.random !== undefined) this.random = updates.random;
 
         if (this.useSlot) {
+            const monsterKey = this.getSlottedMonsterKey();
+            if (!monsterKey) {
+                throw new Error('No monster key provided and no slotted monster key available');
+            }
+
             this.useSlot = false;  // replace any slotted content with dynamic rendering
+            this.monsterKey = monsterKey;  // ensure we have a monster key going forward
         }
 
         // Wait for task to complete and new statblock to render

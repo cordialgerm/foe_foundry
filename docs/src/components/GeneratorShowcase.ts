@@ -271,14 +271,12 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                         jiggle="jiggleUntilClick"
                         class="showcase-button"
                         target="showcase-statblock"
-                        detached
                         ?random="${!effectiveMonsterKey}">
                     </reroll-button>
                     <forge-button
                         jiggle="jiggleUntilClick"
                         class="showcase-button"
-                        target="showcase-statblock"
-                        detached>
+                        target="showcase-statblock">
                     </forge-button>
                     <svg-icon-button
                         title="Subscribe to the Foe Foundry Newsletter"
@@ -300,6 +298,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                 class="${statblockClass}"
                 id="showcase-statblock"
                 monster-key="${effectiveMonsterKey || ''}"
+                ?random="${!effectiveMonsterKey}"
             ></monster-statblock>
         `;
     }
