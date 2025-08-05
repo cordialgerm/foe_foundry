@@ -298,6 +298,7 @@ export class GeneratorShowcase extends SiteCssMixin(LitElement) {
                 class="${statblockClass}"
                 id="showcase-statblock"
                 monster-key="${effectiveMonsterKey || ''}"
+                hide-buttons
                 ?random="${!effectiveMonsterKey}"
             ></monster-statblock>
         `;

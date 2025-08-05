@@ -109,8 +109,8 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean, attribute: 'use-slot' })
     useSlot: boolean = false;
 
-    @property({ type: Boolean, attribute: 'show-buttons' })
-    showButtons: boolean = true;
+    @property({ type: Boolean, attribute: 'hide-buttons' })
+    hideButtons: boolean = false;
 
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
@@ -259,7 +259,7 @@ export class MonsterStatblock extends LitElement {
                     <div ${ref(this.statblockRef)} id="statblock-container">
                         <slot></slot>
                     </div>
-                    ${this.showButtons ? this._renderButtonPanel() : ''}
+                    ${!this.hideButtons ? this._renderButtonPanel() : ''}
                 </div>
             `;
         }
@@ -299,7 +299,7 @@ export class MonsterStatblock extends LitElement {
                         `;
             }
         })}
-                ${this.showButtons ? this._renderButtonPanel() : ''}
+                ${!this.hideButtons ? this._renderButtonPanel() : ''}
             </div>
         `;
     }
