@@ -78,9 +78,37 @@ export class MonsterStatblock extends LitElement {
     @property({ type: Boolean })
     random: boolean = false;
 
+    @property({ type: Boolean, attribute: 'use-slot' })
+    useSlot: boolean = false;
+
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
     private _cachedStatblock: Element | null = null;
+
+    connectedCallback() {
+        super.connectedCallback();
+
+        // If we have slotted content, cache it for potential future use
+        if (this.useSlot) {
+            const slottedStatblock = this.querySelector('.stat-block');
+            if (slottedStatblock) {
+                this._cachedStatblock = slottedStatblock.cloneNode(true) as Element;
+            }
+        }
+    }
+
+    getSlottedContent(): Element | null {
+        if (this.useSlot) {
+            return this.querySelector('.stat-block') || this.querySelector('[slot]') || this.firstElementChild;
+        }
+        return null;
+    }
+
+    getSlottedMonsterKey(): string | null {
+        const slottedContent = this.getSlottedContent();
+        // get data-monster attribute
+        return slottedContent ? slottedContent.getAttribute('data-monster') : null;
+    }
 
     // Use Lit Task for async statblock loading
     private _statblockTask = new Task(this, {
@@ -100,8 +128,8 @@ export class MonsterStatblock extends LitElement {
                 return statblockElement;
             }
 
-            // Use provided monster key or fall back to window.defaultMonsterKey
-            const effectiveMonsterKey = monsterKey || (window as any).defaultMonsterKey;
+            // Use provided monster key, slotted key, or fall back to window.defaultMonsterKey
+            const effectiveMonsterKey = monsterKey || this.getSlottedMonsterKey() || (window as any).defaultMonsterKey;
 
             if (!effectiveMonsterKey) {
                 throw new Error('No monster key provided and no default monster key available');
@@ -165,12 +193,26 @@ export class MonsterStatblock extends LitElement {
         if (updates.changeType !== undefined) this.changeType = updates.changeType;
         if (updates.random !== undefined) this.random = updates.random;
 
+        if (this.useSlot) {
+            this.useSlot = false;  // replace any slotted content with dynamic rendering
+        }
+
         // Wait for task to complete and new statblock to render
         await this.updateComplete;
         await this._statblockTask.taskComplete;
     }
 
     render() {
+        // If using slot-based content, render the slotted content directly
+        if (this.useSlot) {
+            return html`
+                <div ${ref(this.statblockRef)} id="statblock-container">
+                    <slot></slot>
+                </div>
+            `;
+        }
+
+        // Otherwise use the existing dynamic task-based rendering
         return this._statblockTask.render({
             pending: () => {
                 if (this._cachedStatblock) {
