@@ -54,7 +54,7 @@ export class MonsterStatblock extends LitElement {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -222,6 +222,19 @@ export class MonsterStatblock extends LitElement {
 
         // if there are no updates, force task to re-run to regenerate statblock
         if (Object.keys(updates).length === 0) {
+            // If using slot, transition to dynamic rendering to allow refresh
+            if (this.useSlot) {
+                const monsterKey = this.getSlottedMonsterKey();
+                if (!monsterKey) {
+                    throw new Error('No monster key provided and no slotted monster key available');
+                }
+                this.useSlot = false;  // replace any slotted content with dynamic rendering
+                this.monsterKey = monsterKey;  // ensure we have a monster key going forward
+
+                // Wait for the component to re-render with dynamic content
+                await this.updateComplete;
+            }
+
             // Force the task to re-run by updating the task args
             this._statblockTask.run();
             await this._statblockTask.taskComplete;

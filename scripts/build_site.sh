@@ -49,6 +49,19 @@ if [ "$FAST_BUILD" = true ]; then
     mkdir -p site/css site/scripts
     cp -r docs/css/. site/css/
     cp -r docs/scripts/. site/scripts/
+
+    # Handle uniquified extras.js filename
+    if [ -f "docs/scripts/extras.js" ]; then
+        # Look for existing extras.*.js files in site/scripts/
+        EXTRAS_FILE=$(find site/scripts/ -name "extras.*.js" -type f | head -1)
+
+        if [ -n "$EXTRAS_FILE" ]; then
+            echo "Found uniquified extras file: $EXTRAS_FILE"
+            echo "Copying docs/scripts/extras.js to match uniquified name..."
+            cp docs/scripts/extras.js "$EXTRAS_FILE"
+        fi
+    fi
+
     echo "Copy completed."
 fi
 
