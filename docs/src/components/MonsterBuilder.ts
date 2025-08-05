@@ -1,14 +1,17 @@
 
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { createRef, ref, Ref } from 'lit/directives/ref.js';
 import { MonsterCard } from '../components/MonsterCard';
 import { initializeMonsterStore } from '../data/api';
 import { Power } from '../data/powers';
-import { StatblockChange, StatblockChangeType } from '../data/monster';
+import { StatblockChangeType } from '../data/monster';
 import { Task } from '@lit/task';
 import { Monster, RelatedMonster } from '../data/monster';
 import { adoptExternalCss } from '../utils';
 import { trackStatblockEdit } from '../utils/analytics.js';
+import './MonsterStatblock.js';
+import type { MonsterStatblock } from './MonsterStatblock.js';
 
 @customElement('monster-builder')
 export class MonsterBuilder extends LitElement {
@@ -78,11 +81,6 @@ export class MonsterBuilder extends LitElement {
       flex: 1 1 auto;
       min-width: 0;
     }
-    #statblock-holder {
-      width: 100%;
-      transition: height 0.3s cubic-bezier(0.4,0,0.2,1);
-      overflow: hidden;
-    }
     @keyframes pop-in {
         0% {
             transform: scale(1);
@@ -146,58 +144,7 @@ export class MonsterBuilder extends LitElement {
     @property({ type: String, attribute: 'monster-key' })
     monsterKey: string = '';
 
-    private monsters = initializeMonsterStore();
-
-    private lastKnownHeight: number = 600;
-    private heightTransitionCleanup: (() => void) | null = null;
-
-    private captureCurrentHeight(): void {
-        const container = this.shadowRoot?.querySelector('.container') as HTMLElement | null;
-        if (container) {
-            const currentHeight = container.offsetHeight;
-            this.lastKnownHeight = Math.max(currentHeight, this.lastKnownHeight);
-        }
-    }
-
-    // Unified height preservation for both monster and statblock changes
-    private preserveHeightDuringTransition(): () => void {
-        // Clean up any existing transition
-        if (this.heightTransitionCleanup) {
-            this.heightTransitionCleanup();
-        }
-
-        const container = this.shadowRoot?.querySelector('.container') as HTMLElement | null;
-        if (!container) return () => { };
-
-        // Capture current height and set it explicitly
-        this.captureCurrentHeight();
-
-        container.style.height = `${this.lastKnownHeight}px`;
-        container.style.transition = 'height 0.3s cubic-bezier(0.4,0,0.2,1)';
-
-        const cleanup = () => {
-            if (container) {
-                requestAnimationFrame(() => {
-                    // Animate to natural height
-                    const naturalHeight = `${container.scrollHeight}px`;
-                    container.style.height = naturalHeight;
-
-                    // Clean up after animation
-                    const onTransitionEnd = (e: TransitionEvent) => {
-                        if (e.target === container && e.propertyName === 'height') {
-                            container.style.height = '';
-                            container.style.transition = '';
-                            container.removeEventListener('transitionend', onTransitionEnd);
-                        }
-                    };
-                    container.addEventListener('transitionend', onTransitionEnd);
-                });
-            }
-        };
-
-        this.heightTransitionCleanup = cleanup;
-        return cleanup;
-    }
+    private monsterStatblockRef: Ref<MonsterStatblock> = createRef();
 
     private async waitForPowerLoadouts(monsterCard: MonsterCard): Promise<void> {
         // Wait for the monster card's power loadouts to be ready
@@ -244,9 +191,6 @@ export class MonsterBuilder extends LitElement {
             StatblockChangeType.MonsterChanged
         );
 
-        // Preserve height during monster change
-        this.preserveHeightDuringTransition();
-
         this.monsterKey = key;
         this.dispatchEvent(new CustomEvent('monster-key-changed', {
             detail: { monsterKey: key },
@@ -259,52 +203,42 @@ export class MonsterBuilder extends LitElement {
     async onStatblockChanged(monsterCard: MonsterCard, eventDetail?: any) {
         if (!monsterCard) return;
 
-        // Preserve height during statblock change
-        const finishTransition = this.preserveHeightDuringTransition();
+        const statblock = this.monsterStatblockRef.value;
+        if (!statblock) return;
 
-        const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
-        if (statblockHolder) {
-            statblockHolder.innerHTML = '';
-        }
-
-        // Get selected powers
+        // Get selected powers and convert to comma-separated string
         const selectedPowers = monsterCard.getSelectedPowers();
+        const powersString = selectedPowers.map(p => p.key).join(',');
 
-        // Highlight changed powers if present in event.detail.power
-        let change: StatblockChange | null = null;
+        // Determine change type and track analytics
+        let changeType: StatblockChangeType | undefined;
+        let powerKey: string | undefined;
+
         if (eventDetail?.power && eventDetail.power.key) {
-            change = {
-                type: StatblockChangeType.PowerChanged,
-                changedPower: eventDetail.power
-            };
+            changeType = StatblockChangeType.PowerChanged;
+            powerKey = eventDetail.power.key;
+        } else if (eventDetail?.changeType === 'damage-changed') {
+            changeType = StatblockChangeType.DamageChanged;
+        } else if (eventDetail?.changeType === 'hp-changed') {
+            changeType = StatblockChangeType.HpChanged;
+        } else {
+            changeType = StatblockChangeType.Rerolled;
         }
-        else if (eventDetail?.changeType === 'damage-changed') {
-            change = {
-                type: StatblockChangeType.DamageChanged,
-                changedPower: null
-            };
-        }
-        else if (eventDetail?.changeType === 'hp-changed') {
-            change = {
-                type: StatblockChangeType.HpChanged,
-                changedPower: null
-            };
-        }
-
-        // Track analytics event
-        const powerKey = change?.changedPower?.key;
-        const changeType = change?.type;
 
         trackStatblockEdit(
             monsterCard.monsterKey,
-            changeType ?? StatblockChangeType.Rerolled,
+            changeType,
             powerKey,
         );
 
-        await this.loadStatblock(monsterCard.monsterKey, selectedPowers, monsterCard.hpMultiplier, monsterCard.damageMultiplier, change);
-
-        // Complete the height transition
-        finishTransition();
+        // Update the MonsterStatblock component
+        await statblock.reroll({
+            monsterKey: monsterCard.monsterKey,
+            powers: powersString,
+            hpMultiplier: monsterCard.hpMultiplier,
+            damageMultiplier: monsterCard.damageMultiplier,
+            changeType: changeType
+        });
     }
 
     // Handle initial monster load (after Task completes)
@@ -312,32 +246,20 @@ export class MonsterBuilder extends LitElement {
         // Wait for power loadouts to finish loading their powers
         await this.waitForPowerLoadouts(monsterCard);
 
-        // For initial loads, just load the statblock without animation
-        this.loadStatblock(monsterCard.monsterKey, monsterCard.getSelectedPowers(), monsterCard.hpMultiplier, monsterCard.damageMultiplier, null);
+        const statblock = this.monsterStatblockRef.value;
+        if (!statblock) return;
 
-        // Complete any ongoing height transition and capture new height
-        if (this.heightTransitionCleanup) {
-            this.heightTransitionCleanup();
-        }
+        // Get selected powers and convert to comma-separated string
+        const selectedPowers = monsterCard.getSelectedPowers();
+        const powersString = selectedPowers.map(p => p.key).join(',');
 
-        setTimeout(() => this.captureCurrentHeight(), 150);
-    }
-
-    async loadStatblock(monsterKey: string, powers: Power[], hpMultiplier: number = 1, damageMultiplier: number = 1, change: StatblockChange | null = null) {
-
-        const request = {
-            monsterKey: monsterKey,
-            powers: powers,
-            hpMultiplier: hpMultiplier,
-            damageMultiplier: damageMultiplier,
-        };
-
-        const statblockElement = await this.monsters.getStatblock(request, change);
-
-        const statblockHolder = this.shadowRoot?.getElementById('statblock-holder');
-        if (statblockHolder && statblockElement) {
-            statblockHolder.appendChild(statblockElement);
-        }
+        // Initialize the MonsterStatblock component
+        await statblock.reroll({
+            monsterKey: monsterCard.monsterKey,
+            powers: powersString,
+            hpMultiplier: monsterCard.hpMultiplier,
+            damageMultiplier: monsterCard.damageMultiplier
+        });
     }
 
     firstUpdated() {
@@ -349,7 +271,7 @@ export class MonsterBuilder extends LitElement {
 
     renderMessage(message: string, messageClass: string = '') {
         return html`
-            <div class="container pamphlet-main ${messageClass}" style="height: ${this.lastKnownHeight + 'px'}; overflow: hidden;">
+            <div class="container pamphlet-main ${messageClass}">
                 <p>${message}</p>
             </div>
         `;
@@ -410,7 +332,10 @@ export class MonsterBuilder extends LitElement {
                         <monster-card monster-key="${this.monsterKey}"></monster-card>
                     </div>
                     <div class="right-panel">
-                        <div id="statblock-holder"></div>
+                        <monster-statblock
+                            ${ref(this.monsterStatblockRef)}
+                            monster-key="${this.monsterKey}"
+                        ></monster-statblock>
                     </div>
                 </div>
             </div>
