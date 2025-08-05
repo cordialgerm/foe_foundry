@@ -95,7 +95,10 @@ export class MonsterRating extends LitElement {
 
         if (this.raty) {
             this.raty.cancel(true); // Clean up previous instance
-            container.innerHTML = ''; // Ensure previous elements are removed
+            // Safely remove child elements without affecting Lit's DOM markers
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
         }
 
         // Set initial label
