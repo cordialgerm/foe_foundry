@@ -146,44 +146,7 @@ export class MonsterBuilder extends LitElement {
 
     private monsterStatblockRef: Ref<MonsterStatblock> = createRef();
 
-    private async waitForPowerLoadouts(monsterCard: MonsterCard): Promise<void> {
-        // Wait for the monster card's power loadouts to be ready
-        const maxAttempts = 20; // Maximum 2 seconds (20 * 100ms)
-        let attempts = 0;
-
-        while (attempts < maxAttempts) {
-            const powerLoadouts = monsterCard.shadowRoot?.querySelectorAll('power-loadout') ?? [];
-
-            if (powerLoadouts.length === 0) {
-                // Power loadouts haven't rendered yet, wait and try again
-                await new Promise(resolve => setTimeout(resolve, 100));
-                attempts++;
-                continue;
-            }
-
-            // Check if all power loadouts have loaded their powers and selected an initial power
-            let allReady = true;
-            for (let i = 0; i < powerLoadouts.length; i++) {
-                const loadout = powerLoadouts[i] as any;
-                const selectedPower = loadout.getSelectedPower?.();
-                if (!selectedPower) {
-                    allReady = false;
-                    break;
-                }
-            }
-
-            if (allReady) {
-                return; // All power loadouts are ready
-            }
-
-            await new Promise(resolve => setTimeout(resolve, 100));
-            attempts++;
-        }
-
-        // If we get here, we've waited too long. Log a warning but continue.
-        console.warn('Power loadouts did not fully load within timeout, proceeding anyway');
-    }
-
+    // Entirely new monster selected
     onMonsterKeyChanged(key: string) {
         // Track analytics event for monster change
         trackStatblockEdit(
@@ -200,7 +163,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     // Handle statblock changes (same monster, different powers/multipliers)
-    async onStatblockChanged(monsterCard: MonsterCard, eventDetail?: any) {
+    async onStatblockChangeRequested(monsterCard: MonsterCard, eventDetail?: any) {
         if (!monsterCard) return;
 
         const statblock = this.monsterStatblockRef.value;
@@ -241,31 +204,10 @@ export class MonsterBuilder extends LitElement {
         });
     }
 
-    // Handle initial monster load (after Task completes)
-    private async onMonsterLoaded(monsterCard: MonsterCard) {
-        // Wait for power loadouts to finish loading their powers
-        await this.waitForPowerLoadouts(monsterCard);
-
-        const statblock = this.monsterStatblockRef.value;
-        if (!statblock) return;
-
-        // Get selected powers and convert to comma-separated string
-        const selectedPowers = monsterCard.getSelectedPowers();
-        const powersString = selectedPowers.map(p => p.key).join(',');
-
-        // Initialize the MonsterStatblock component
-        await statblock.reroll({
-            monsterKey: monsterCard.monsterKey,
-            powers: powersString,
-            hpMultiplier: monsterCard.hpMultiplier,
-            damageMultiplier: monsterCard.damageMultiplier
-        });
-    }
-
     firstUpdated() {
         this.shadowRoot?.addEventListener('monster-changed', async (event: any) => {
             const monsterCard = event.detail.monsterCard;
-            await this.onStatblockChanged(monsterCard, event.detail);
+            await this.onStatblockChangeRequested(monsterCard, event.detail);
         });
     }
 
@@ -278,11 +220,8 @@ export class MonsterBuilder extends LitElement {
     }
 
     renderContent(monster: Monster) {
-        this.updateComplete.then(() => {
-            const card = this.shadowRoot?.querySelector('monster-card') as MonsterCard | null;
-            if (!card) return;
-            this.onMonsterLoaded(card);
-        });
+
+        const powerKeys = monster.loadouts.map(loadout => loadout.powers[0].key).join(",");
 
         const previousTemplate = html`
         <a href="/generate?monster-key=${monster.previousTemplate.monsterKey}"
@@ -335,6 +274,8 @@ export class MonsterBuilder extends LitElement {
                         <monster-statblock
                             ${ref(this.monsterStatblockRef)}
                             monster-key="${this.monsterKey}"
+                            power-keys="${powerKeys}"
+                            hide-buttons
                         ></monster-statblock>
                     </div>
                 </div>
