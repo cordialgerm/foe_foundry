@@ -144,7 +144,7 @@ export class MonsterStatblock extends LitElement {
 
         // If we have slotted content, cache it for potential future use
         if (this.useSlot) {
-            const slottedStatblock = this.querySelector('.stat-block');
+            const slottedStatblock = this.getSlottedContent();
             if (slottedStatblock) {
                 this._cachedStatblock = slottedStatblock.cloneNode(true) as Element;
             }
@@ -252,6 +252,13 @@ export class MonsterStatblock extends LitElement {
                 if (!monsterKey) {
                     throw new Error('No monster key provided and no slotted monster key available');
                 }
+
+                // Cache the current slotted content before transitioning to prevent stutter
+                const currentSlottedContent = this.getSlottedContent();
+                if (currentSlottedContent && !this._cachedStatblock) {
+                    this._cachedStatblock = currentSlottedContent.cloneNode(true) as Element;
+                }
+
                 this.useSlot = false;  // replace any slotted content with dynamic rendering
                 this.monsterKey = monsterKey;  // ensure we have a monster key going forward
 
@@ -279,6 +286,12 @@ export class MonsterStatblock extends LitElement {
             const monsterKey = this.getSlottedMonsterKey();
             if (!monsterKey) {
                 throw new Error('No monster key provided and no slotted monster key available');
+            }
+
+            // Cache the current slotted content before transitioning to prevent stutter
+            const currentSlottedContent = this.getSlottedContent();
+            if (currentSlottedContent && !this._cachedStatblock) {
+                this._cachedStatblock = currentSlottedContent.cloneNode(true) as Element;
             }
 
             this.useSlot = false;  // replace any slotted content with dynamic rendering
