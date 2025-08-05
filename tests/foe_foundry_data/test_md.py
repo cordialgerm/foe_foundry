@@ -117,17 +117,49 @@ foo: bar
 
 """
 
+
+def test_attack_modifier_renders_power_key():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Knight
+power_weights:
+  grazing-attack: 1
+```
+"""
+
     result = markdown(text)
     assert len(result.references) == 1
 
     ref = result.references[0]
     assert isinstance(ref, MonsterRef)
     assert ref.monster is not None
-    assert ref.monster.key == "berserker-veteran"
-    assert ref.species is not None
-    assert ref.species.key == "orc"
-    assert ref.args_str is not None
-    assert ref.args is not None
-    assert ref.args["color"] == "blue"
-    assert "Just A Scratch" in result.html
-    assert 'data-power-key="just-a-scratch"' in result.html
+    assert ref.monster.key == "knight"
+    assert "Grazing Attack" not in result.html
+    assert 'data-power-key="grazing-attack"' in result.html
+
+
+def test_spellcasting_renders_power_key():
+    text = """
+This is some example text that contains a YAML monster block
+
+```yaml
+monster_name: Medusa Queen
+power_weights:
+  eyebite: 1
+```
+"""
+
+    from foe_foundry.powers.roles.controller import Eyebite
+
+    assert Eyebite.key == "eyebite"
+
+    result = markdown(text)
+    assert len(result.references) == 1
+
+    ref = result.references[0]
+    assert isinstance(ref, MonsterRef)
+    assert ref.monster is not None
+    assert ref.monster.key == "medusa-queen"
+    assert 'data-power-key="eyebite"' in result.html

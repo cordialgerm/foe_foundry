@@ -202,8 +202,8 @@ class _FleshPuppets(DeathlyPower):
             reference_statblock="Necromancer",
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = super().modify_stats(stats)
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
         stats = stats.grant_spellcasting(CasterType.Innate)
         return stats
 

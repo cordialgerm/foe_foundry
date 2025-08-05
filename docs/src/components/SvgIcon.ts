@@ -177,7 +177,9 @@ function injectSVG(svgText: string, targetElement: HTMLElement, fillValue: strin
   }
 
   // Replace the contents of the target <div>
-  targetElement.innerHTML = '';
+  while (targetElement.firstChild) {
+    targetElement.removeChild(targetElement.firstChild);
+  }
   targetElement.appendChild(svgEl);
   targetElement.classList.remove('placeholder');
 }

@@ -20,12 +20,6 @@ export class RerollButton extends StatblockButton {
   @property()
   jiggle: 'jiggleOnHover' | 'jiggleUntilClick' | boolean | 'true' = 'true';
 
-  @property({ type: Boolean })
-  random: boolean = false;
-
-  private static stylesInjected = false;
-  private monsters = initializeMonsterStore();
-
   static styles = css`
     :host {
       display: inline-block;
@@ -137,187 +131,9 @@ export class RerollButton extends StatblockButton {
         transform: rotate(0deg) translateX(0);
       }
     }
-
-    /* On small screens: no special positioning needed */
-    @media (max-width: 600px) {
-      :host {
-        /* Styles handled by StatblockWrapper */
-      }
-    }
   `;
 
-  connectedCallback() {
-    super.connectedCallback();
-    this._injectGlobalStyles();
-  }
-
-  private _injectGlobalStyles() {
-    // Only inject once, even if multiple RerollButton instances exist
-    if (RerollButton.stylesInjected) return;
-
-    const styleSheet = document.createElement('style');
-    styleSheet.id = 'reroll-button-global-styles';
-    styleSheet.textContent = `
-            /* Styles for Pop Out / In when rerolling */
-            @keyframes pop-out {
-                from {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-                to {
-                    transform: scale(0.95);
-                    opacity: 0;
-                }
-            }
-
-            @keyframes pop-in {
-                from {
-                    transform: scale(1.05);
-                    opacity: 0;
-                }
-                to {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-
-            .stat-block.pop-out {
-                animation: pop-out 0.2s forwards;
-            }
-
-            .stat-block.pop-in {
-                animation: pop-in 0.2s forwards;
-            }
-
-            @keyframes summon-flash {
-                0% {
-                    box-shadow: 0 0 0 0 var(--primary-color);
-                }
-                10% {
-                    box-shadow: 0 0 4px 1px var(--primary-color);
-                }
-                30% {
-                    box-shadow: 0 0 8px 3px var(--primary-color);
-                }
-                50% {
-                    box-shadow: 0 0 12px 6px var(--primary-color);
-                }
-                70% {
-                    box-shadow: 0 0 8px 3px var(--primary-color);
-                }
-                90% {
-                    box-shadow: 0 0 4px 1px var(--primary-color);
-                }
-                100% {
-                    box-shadow: 0 0 0 0 var(--primary-color);
-                }
-            }
-
-            @keyframes scale-throb {
-                0% {
-                    transform: scale(1);
-                }
-                40% {
-                    transform: scale(1.025);
-                }
-                60% {
-                    transform: scale(1.015);
-                }
-                100% {
-                    transform: scale(1);
-                }
-            }
-
-            @keyframes summon-fade {
-                0%, 100% {
-                    opacity: 1;
-                    filter: brightness(1);
-                }
-                50% {
-                    opacity: 0.8;
-                    filter: brightness(1.3);
-                }
-            }
-
-            .stat-block.summon-effect {
-                animation:
-                    summon-flash 0.4s ease,
-                    scale-throb 0.4s ease,
-                    summon-fade 0.4s ease;
-            }
-        `;
-
-    document.head.appendChild(styleSheet);
-    RerollButton.stylesInjected = true;
-  }
-
-
-  private async getStatblock(monsterKey: string | null) {
-
-    if (!monsterKey) {
-      return await this.monsters.getRandomStatblock();
-    }
-    else {
-      const request: StatblockRequest = {
-        monsterKey,
-        powers: [],
-        hpMultiplier: 1.0,
-        damageMultiplier: 1.0
-      };
-
-      const change: StatblockChange = {
-        type: StatblockChangeType.Rerolled,
-        changedPower: null
-      };
-
-      return await this.monsters.getStatblock(request, change);
-    }
-  }
-
-  private async _rerollStatblock() {
-    const statblock = this.findTargetStatblock();
-    if (!statblock) return;
-
-    const monsterKey = statblock.getAttribute('data-monster');
-    if (!monsterKey) return;
-
-    statblock.classList.add("pop-out");
-
-    try {
-      const newStatblock = await this.getStatblock(this.random ? null : monsterKey);
-
-      if (newStatblock) {
-        // Preserve the same HTML ID
-        newStatblock.id = statblock.id;
-
-        // Replace old with new
-        statblock.replaceWith(newStatblock);
-        newStatblock.classList.add("pop-in");
-
-        // Wait for pop-in animation, then trigger summon effect
-        await this._sleep(200);
-        newStatblock.classList.remove("pop-in");
-
-        // wait a little bit before starting summon effect
-        await this._sleep(200);
-        newStatblock.classList.add("summon-effect");
-
-        // Remove summon-effect after it's done
-        await this._sleep(400);
-        newStatblock.classList.remove("summon-effect");
-      }
-    } catch (err) {
-      console.error("Failed to reroll monster:", err);
-      // Remove pop-out class if there was an error
-      statblock.classList.remove("pop-out");
-    }
-  }
-
-  private _sleep(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-
-  private _handleClick() {
+  private async _handleClick() {
     if (this.disabled || this.rolling || !this.monsterKey) return;
 
     // Track analytics event
@@ -343,8 +159,7 @@ export class RerollButton extends StatblockButton {
       this.disabled = false;
     }, 600); // Match the animation duration
 
-    // Perform the reroll
-    this._rerollStatblock();
+    await this.findTargetStatblock()?.reroll({})
   }
 
   render() {
