@@ -85,6 +85,7 @@ export class MonsterBuilder extends LitElement {
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 600px;
     }
     .loading p,
     .error-message p {
