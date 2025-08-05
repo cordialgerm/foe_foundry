@@ -52,7 +52,7 @@ The initial implementation created separate `monster-card` and `monster-statbloc
 
 ### UI Changes
 
-- Add a **mobile-only tab selector** (`Editor`, `Statblock`) that appears under 768px screen width.
+- Add a **mobile-only tab selector** (`Editor`, `Statblock`) that appears under 964px screen width.
 - Use **CSS `display` property** to show/hide panels based on active tab (not conditional rendering).
 - Display an **"Updated!" pill** on the Statblock tab after edits, unless the user is already viewing that tab.
 - Detect screen size changes and re-render layout appropriately.
@@ -85,62 +85,73 @@ Always render both components in dedicated panels:
 - Add a resize observer to detect screen size changes and update `isMobile` state
 - Listen for `monster-changed` events to set `statblockUpdated` flag when on mobile
 
-## Implementation Suggestions
+### Breakpoint Strategy - Content-Based Approach
 
-## Implementation Details
+Instead of arbitrary device-based breakpoints, use **content-requirements-based breakpoints** defined as configurable constants within the component.
 
-### TypeScript Properties & Methods
-
-```ts
-  ```ts
-  @property({ type: String }) mobileTab: 'edit' | 'statblock' = 'edit';
-  @property({ type: Boolean }) statblockUpdated: boolean = false;
-  @property({ type: Boolean }) isMobile: boolean = false;
-  ```
-- Add a resize observer to detect screen size changes and update `isMobile` state
-- Listen for `monster-changed` events to set `statblockUpdated` flag when on mobile
-- **Simplify event handling**: `onStatblockChangeRequested` can use simple `querySelector('monster-statblock')`
-
-## Implementation Details
-
-### TypeScript Properties & Methods
+#### Configuration Object Implementation
 
 ```ts
-// Add to MonsterBuilder class
-@property({ type: String }) mobileTab: 'edit' | 'statblock' = 'edit';
-@property({ type: Boolean }) statblockUpdated: boolean = false;
-@property({ type: Boolean }) isMobile: boolean = false;
-
-private resizeObserver?: ResizeObserver;
-
-connectedCallback() {
-  super.connectedCallback();
-  this.setupResizeObserver();
-}
-
-disconnectedCallback() {
-  super.disconnectedCallback();
-  this.resizeObserver?.disconnect();
-}
-
-private setupResizeObserver() {
-  this.resizeObserver = new ResizeObserver(() => {
-    this.checkIsMobile();
-  });
-  this.resizeObserver.observe(this);
-}
-
-private checkIsMobile() {
-  this.isMobile = window.innerWidth <= 768;
-
-private setMobileTab(tab: 'edit' | 'statblock') {
-  this.mobileTab = tab;
-  if (tab === 'statblock') {
-    this.statblockUpdated = false;
-}
+// Configuration for responsive layout
+const LAYOUT_CONFIG = {
+  // Component dimensions
+  MONSTER_CARD_WIDTH: 300,     // Fixed width of monster editor
+  MONSTER_CARD_WIDTH_LARGE_DESKTOP: 400,
+  MIN_STATBLOCK_WIDTH: 500,    // Minimum readable statblock width  
+  LAYOUT_GAPS: 64,             // Padding and margins (2rem + container padding)
+  
+  // Calculated breakpoint
+  get MOBILE_BREAKPOINT() {
+    return this.MONSTER_CARD_WIDTH + this.MIN_STATBLOCK_WIDTH + this.LAYOUT_GAPS;
+    // = 964px minimum for usable side-by-side layout
+  },
+  
+  // Optional: Additional breakpoints for fine-tuning
+  SMALL_MOBILE: 480,
+  LARGE_DESKTOP: 1200,
+  
+  // Helper methods
+  isMobile: (width: number) => width <= LAYOUT_CONFIG.MOBILE_BREAKPOINT,
+  isSmallMobile: (width: number) => width <= LAYOUT_CONFIG.SMALL_MOBILE,
+  isDesktop: (width: number) => width > LAYOUT_CONFIG.MOBILE_BREAKPOINT,
+  isLargeDesktop: (width: number) => width >= LAYOUT_CONFIG.LARGE_DESKTOP
+} as const;
 ```
 
-### CSS Layout Strategy
+#### Why Content-Based Breakpoints?
+
+**Problem with 640px/768px arbitrary breakpoints:**
+- MonsterCard takes up 400px fixed width
+- At 768px total: Only 368px remaining for statblock (minus gaps/padding)  
+- 368px is barely usable for D&D statblocks with long ability descriptions
+- Forces cramped, poor user experience even on devices that could handle desktop layout
+
+**Content-based calculation (964px):**
+- **400px**: MonsterCard component fixed width
+- **500px**: Minimum width for readable D&D statblock content
+- **64px**: Layout gaps (2rem) + container padding
+- **Result**: Only show side-by-side when both panels can be properly displayed
+
+#### Benefits of Configuration Object Approach
+
+1. **Self-documenting**: Makes the calculation logic transparent
+2. **Maintainable**: Easy to adjust if MonsterCard width changes
+3. **Reusable**: Other components can use the same breakpoint config
+4. **Testable**: Easy to unit test breakpoint logic in isolation
+5. **Content-first**: Clearly shows breakpoint is based on actual space requirements
+6. **Future-proof**: Automatically adjusts if component dimensions change
+
+#### Breakpoint Logic Summary
+
+- **≤964px**: Mobile tabbed layout (ensures both panels are usable when shown)
+- **≥965px**: Desktop side-by-side layout (sufficient space for comfortable reading)
+- **≤480px**: Additional small-screen optimizations (smaller fonts, tighter spacing)
+
+This approach prioritizes **content readability and usability** over arbitrary device categories, ensuring the interface works well regardless of the specific device being used.
+
+## Implementation Suggestions
+
+### CSS Layout Strategy with Configuration Object
 
 ```css
 /* Always render both panels */
@@ -167,7 +178,7 @@ private setMobileTab(tab: 'edit' | 'statblock') {
 }
 
 /* Mobile: stacked layout with tab-controlled visibility */
-@media (max-width: 768px) {
+@media (max-width: ${LAYOUT_CONFIG.MOBILE_BREAKPOINT}px) {
   .panels-container {
     flex-direction: column;
     gap: 0;
@@ -219,6 +230,26 @@ private setMobileTab(tab: 'edit' | 'statblock') {
   
   .statblock-panel {
     display: var(--statblock-panel-display, none);
+  }
+
+  /* Enhanced mobile usability */
+  .mobile-tab {
+    min-height: 48px; /* Touch target size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Optional: Fine-tune for very small screens */
+@media (max-width: ${LAYOUT_CONFIG.SMALL_MOBILE}px) {
+  .mobile-tab {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .container.pamphlet-main {
+    padding: 0.5rem;
   }
 }
 ```
@@ -301,6 +332,40 @@ ${this.isMobile ? html`
 
 ---
 
+## Breakpoint Strategy & Rationale
+
+### Why 864px Instead of 640px or 768px?
+
+The content-based breakpoint approach calculates the minimum screen width needed for a usable side-by-side layout.
+
+#### Device Analysis:
+- **Mobile Phones (320px-430px)**: Need tabbed interface - side-by-side is unusable
+- **Large Phones in Landscape (568px-932px)**: Still benefit from tabbed interface  
+- **Small Tablets (768px-834px)**: At 768px, only 368px remains for statblock - cramped and hard to read
+- **Standard Tablets (1024px+)**: Definitely suitable for desktop layout
+
+#### 864px Breakpoint Benefits:
+1. **Content-First Design**: Based on actual space requirements for readable D&D statblocks
+2. **Better User Experience**: No cramped, hard-to-read layouts
+3. **Clear Decision Boundary**: Either you have enough space for both panels or you don't
+4. **Self-Documenting**: The calculation shows exactly why this breakpoint was chosen
+5. **Maintainable**: Easy to adjust if component dimensions change
+
+#### Calculation Breakdown:
+- **300px**: MonsterCard component fixed width (+100 on large desktop)
+- **500px**: Minimum width for readable D&D statblock with ability descriptions
+- **64px**: Layout gaps (2rem) + container padding
+- **Total**: 964px minimum for usable side-by-side layout
+
+#### Fallback Strategy:
+- **≤864px**: Mobile tabbed layout (ensures usable experience)
+- **≥865px**: Desktop side-by-side layout (sufficient space for both panels)
+- **≤480px**: Additional optimizations for very small screens
+
+This approach ensures the interface is genuinely usable regardless of device type, prioritizing content readability over device assumptions.
+
+---
+
 ## Guidelines
 
 - **Single source of truth**: Always render one `monster-card` and one `monster-statblock`
@@ -321,8 +386,6 @@ ${this.isMobile ? html`
 4. **Cleaner Architecture**: Separation of concerns (components handle logic, CSS handles layout)
 5. **Easier Maintenance**: Less complex conditional rendering logic
 6. **DOM Stability**: Components don't get destroyed/recreated when switching tabs
-
----
 
 ---
 
@@ -347,7 +410,7 @@ ${this.isMobile ? html`
 
 ## Testing
 
-- To test, create a simple HTML page showing the monster generator component with `monster-key="ogre"`
+- To test, create a new or use the existing simple HTML page at /docs/test-mobile-layout.html showing the monster generator component with `monster-key="ogre"`
 - You can build the TS with `npx vite build`
 - Test responsive behavior by resizing browser window
 - Verify single component instances are working by checking DOM in dev tools

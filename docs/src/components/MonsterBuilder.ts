@@ -12,6 +12,30 @@ import { trackStatblockEdit } from '../utils/analytics.js';
 import './MonsterStatblock.js';
 import type { MonsterStatblock } from './MonsterStatblock.js';
 
+// Configuration for responsive layout
+const LAYOUT_CONFIG = {
+  // Component dimensions
+  MONSTER_CARD_WIDTH: 300,     // Fixed width of monster editor
+  MONSTER_CARD_WIDTH_LARGE_DESKTOP: 400,
+  MIN_STATBLOCK_WIDTH: 500,    // Minimum readable statblock width  
+  LAYOUT_GAPS: 64,             // Padding and margins (2rem + container padding)
+  
+  // Calculated breakpoint
+  get MOBILE_BREAKPOINT() {
+    return this.MONSTER_CARD_WIDTH + this.MIN_STATBLOCK_WIDTH + this.LAYOUT_GAPS;
+    // = 864px minimum for usable side-by-side layout
+  },
+  
+  // Optional: Additional breakpoints for fine-tuning
+  SMALL_MOBILE: 480,
+  LARGE_DESKTOP: 1200,
+  
+  // Helper methods
+  isMobile: (width: number) => width <= LAYOUT_CONFIG.MOBILE_BREAKPOINT,
+  isSmallMobile: (width: number) => width <= LAYOUT_CONFIG.SMALL_MOBILE,
+  isLargeDesktop: (width: number) => width >= LAYOUT_CONFIG.LARGE_DESKTOP
+} as const;
+
 @customElement('monster-builder')
 export class MonsterBuilder extends LitElement {
   static styles = css`
@@ -65,7 +89,6 @@ export class MonsterBuilder extends LitElement {
       width: 100%;
     }
 
-    /* Always render both panels */
     .panels-container {
       display: flex;
       flex-direction: row;
@@ -74,7 +97,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     .card-panel {
-      flex: 0 0 400px;
+      flex: 0 0 ${LAYOUT_CONFIG.MONSTER_CARD_WIDTH}px;
       width: 100%;
     }
 
@@ -108,7 +131,7 @@ export class MonsterBuilder extends LitElement {
     }
 
     /* Mobile layout */
-    @media (max-width: 768px) {
+    @media (max-width: ${LAYOUT_CONFIG.MOBILE_BREAKPOINT}px) {
       .panels-container {
         flex-direction: column;
         gap: 0;
@@ -135,6 +158,10 @@ export class MonsterBuilder extends LitElement {
         cursor: pointer;
         font-size: 1rem;
         transition: background 0.2s;
+        min-height: 48px; /* Touch target size */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .mobile-tab.active {
@@ -163,6 +190,25 @@ export class MonsterBuilder extends LitElement {
 
       .monster-header {
         margin-bottom: 1rem;
+      }
+    }
+
+    /* Large desktop: wider MonsterCard */
+    @media (min-width: ${LAYOUT_CONFIG.LARGE_DESKTOP}px) {
+      .card-panel {
+        flex: 0 0 ${LAYOUT_CONFIG.MONSTER_CARD_WIDTH_LARGE_DESKTOP}px;
+      }
+    }
+
+    /* Fine-tune for very small screens */
+    @media (max-width: ${LAYOUT_CONFIG.SMALL_MOBILE}px) {
+      .mobile-tab {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+      }
+      
+      .container.pamphlet-main {
+        padding: 0.5rem;
       }
     }
   `;
@@ -219,7 +265,7 @@ export class MonsterBuilder extends LitElement {
   }
 
   private checkIsMobile() {
-    this.isMobile = window.innerWidth <= 768;
+    this.isMobile = LAYOUT_CONFIG.isMobile(window.innerWidth);
   }
 
   private setMobileTab(tab: 'edit' | 'statblock') {
