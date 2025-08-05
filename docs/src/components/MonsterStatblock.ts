@@ -189,9 +189,11 @@ export class MonsterStatblock extends LitElement {
         random?: boolean;
     }): Promise<void> {
 
-        // if there are no updates, request update from lit component
+        // if there are no updates, force task to re-run to regenerate statblock
         if (Object.keys(updates).length === 0) {
-            await this.requestUpdate();
+            // Force the task to re-run by updating the task args
+            this._statblockTask.run();
+            await this._statblockTask.taskComplete;
             return;
         }
 

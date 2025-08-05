@@ -34,7 +34,6 @@ export abstract class StatblockButton extends LitElement {
     get monsterKey(): string | null {
         const statblock = this.findTargetStatblock();
         const key = statblock?.getEffectiveMonsterKey() || null;
-        console.log('StatblockButton.get monsterKey', key, statblock);
         return key;
     }
 }
