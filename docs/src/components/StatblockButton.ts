@@ -13,7 +13,19 @@ export abstract class StatblockButton extends LitElement {
     disabled = false;
 
     findTargetStatblock(): MonsterStatblock | null {
-        if (!this.target) return null;
+
+        // If no target is specified, check if inside shadow DOM and get the host MonsterStatblock
+        if (!this.target) {
+            const rootNode = this.getRootNode() as Document | ShadowRoot;
+            if (rootNode && rootNode !== document && 'host' in rootNode) {
+                // We're in a shadow DOM, check if the host is a MonsterStatblock
+                const host = rootNode.host;
+                if (host && host.tagName.toLowerCase() === 'monster-statblock') {
+                    return host as MonsterStatblock;
+                }
+            }
+            return null;
+        }
 
         // First try the main document
         let element = document.getElementById(this.target);

@@ -6,6 +6,8 @@ import { initializeMonsterStore } from '../data/api';
 import { StatblockRequest, StatblockChange, StatblockChangeType } from '../data/monster';
 import { Power } from '../data/powers';
 import { adoptExternalCss } from '../utils';
+import './ForgeButton.js';
+import './RerollButton.js';
 
 @customElement('monster-statblock')
 export class MonsterStatblock extends LitElement {
@@ -13,6 +15,19 @@ export class MonsterStatblock extends LitElement {
         :host {
             display: block;
             width: 100%;
+        }
+
+        .statblock-wrapper {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .statblock-button-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-start;
         }
 
         #statblock-container {
@@ -58,6 +73,19 @@ export class MonsterStatblock extends LitElement {
             border: 1px solid var(--bs-danger-border, #f5c2c7);
             border-radius: 0.375rem;
         }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .statblock-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .statblock-button-panel {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
     `;
 
     @property({ attribute: 'monster-key' })
@@ -80,6 +108,9 @@ export class MonsterStatblock extends LitElement {
 
     @property({ type: Boolean, attribute: 'use-slot' })
     useSlot: boolean = false;
+
+    @property({ type: Boolean, attribute: 'show-buttons' })
+    showButtons: boolean = true;
 
     private monsters = initializeMonsterStore();
     private statblockRef: Ref<HTMLDivElement> = createRef();
@@ -224,44 +255,62 @@ export class MonsterStatblock extends LitElement {
         // If using slot-based content, render the slotted content directly
         if (this.useSlot) {
             return html`
-                <div ${ref(this.statblockRef)} id="statblock-container">
-                    <slot></slot>
+                <div class="statblock-wrapper">
+                    <div ${ref(this.statblockRef)} id="statblock-container">
+                        <slot></slot>
+                    </div>
+                    ${this.showButtons ? this._renderButtonPanel() : ''}
                 </div>
             `;
         }
 
         // Otherwise use the existing dynamic task-based rendering
-        return this._statblockTask.render({
+        return html`
+            <div class="statblock-wrapper">
+                ${this._statblockTask.render({
             pending: () => {
                 if (this._cachedStatblock) {
                     // Show cached statblock while loading new one
                     return html`
-                        <div ${ref(this.statblockRef)} id="statblock-container" class="loading cached">
-                            ${this._cachedStatblock}
-                        </div>
-                    `;
+                                <div ${ref(this.statblockRef)} id="statblock-container" class="loading cached">
+                                    ${this._cachedStatblock}
+                                </div>
+                            `;
                 }
                 return html`
-                    <div class="loading empty">
-                        Loading...
-                    </div>
-                `;
+                            <div class="loading empty">
+                                Loading...
+                            </div>
+                        `;
             },
             error: (e) => html`
-                <div class="error">
-                    Error: ${e instanceof Error ? e.message : String(e)}
-                </div>
-            `,
+                        <div class="error">
+                            Error: ${e instanceof Error ? e.message : String(e)}
+                        </div>
+                    `,
             complete: (statblockElement: Element) => {
+
                 // Cache the new statblock
                 this._cachedStatblock = statblockElement;
                 return html`
-                    <div ${ref(this.statblockRef)} id="statblock-container">
-                        ${statblockElement}
-                    </div>
-                `;
+                            <div ${ref(this.statblockRef)} id="statblock-container">
+                                ${statblockElement}
+                            </div>
+                        `;
             }
-        });
+        })}
+                ${this.showButtons ? this._renderButtonPanel() : ''}
+            </div>
+        `;
+    }
+
+    private _renderButtonPanel() {
+        return html`
+            <div class="statblock-button-panel">
+                <reroll-button></reroll-button>
+                <forge-button></forge-button>
+            </div>
+        `;
     }
 }
 
