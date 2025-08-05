@@ -65,6 +65,7 @@ class StatblockJinjaContext:
     passives: List[Feature]
     actions: List[Feature]
     bonus_actions: List[Feature]
+    hiddens: List[Feature]
 
     reaction_header: str
     reactions: List[Feature]
@@ -81,7 +82,9 @@ class StatblockJinjaContext:
 
     key: str = field(init=False)
     attack_modifier_text: str = field(init=False)
+    attack_power_keys: str = field(init=False)
     attack_text: str = field(init=False)
+    spellcasting_power_keys: str = field(init=False)
     immunities_combined: str = field(init=False)
     challenge_pb_combined: str = field(init=False)
 
@@ -112,6 +115,22 @@ class StatblockJinjaContext:
         self.challenge_pb_combined = (
             f"{self.challenge[:-1]}; PB {self.proficiency_bonus})"
         )
+
+        self.attack_power_keys = ",".join(
+            sorted(
+                {f.power_key for f in self.attack_modifiers if f.power_key is not None}
+            )
+        )
+        self.spellcasting_power_keys = ",".join(
+            sorted(
+                {
+                    f.power_key
+                    for f in self.hiddens
+                    if f.power_key is not None and f.adds_spells
+                }
+            )
+        )
+        pass
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -171,7 +190,8 @@ class StatblockJinjaContext:
         else:
             reaction_header = f"Reactions ({stats.reaction_count})"
 
-        passives, actions, bonus_actions, reactions, legendary_actions = (
+        passives, actions, bonus_actions, reactions, legendary_actions, hiddens = (
+            [],
             [],
             [],
             [],
@@ -180,7 +200,7 @@ class StatblockJinjaContext:
         )
         for feature in stats.features:
             if feature.hidden:
-                continue
+                hiddens.append(feature)
             if feature.action == ActionType.Feature:
                 passives.append(feature)
             elif feature.action == ActionType.Action:
@@ -296,6 +316,7 @@ class StatblockJinjaContext:
             challenge=cr,
             proficiency_bonus=f"+{stats.attributes.proficiency}",
             passives=passives,
+            hiddens=hiddens,
             actions=actions,
             bonus_actions=bonus_actions,
             reaction_header=reaction_header,

@@ -13,14 +13,14 @@
 {%- endmacro %}
 
 
-{% macro property(name,text, block = False) -%}
+{% macro property(name,text, block = False, power_keys = '') -%}
 {% if text|length > 0 and block %}
-<p data-statblock-property="{{ name | sluggify }}">
+<p data-statblock-property="{{ name | sluggify }}" data-power-key="{{power_keys}}">
     <strong>{{name | fix_punctuation}}</strong>
     {{text | fix_punctuation}}
 </p>
 {% elif text|length > 0 and not block %}
-<span data-statblock-property="{{ name | sluggify }}">
+<span data-statblock-property="{{ name | sluggify }}" data-power-key="{{power_keys}}">
     <strong>{{name | fix_punctuation}}</strong>
     {{text | fix_punctuation}}
 </span>
@@ -34,9 +34,9 @@
 {% endfor %}
 {% endmacro %}
 
-{% macro attack_block(display_name, attack_text) -%}
+{% macro attack_block(display_name, attack_text, power_keys = '') -%}
 
-<p data-statblock-property="attack">
+<p data-power-key="{{power_keys}}" data-statblock-property="attack">
     <strong>{{display_name | fix_punctuation}}</strong>
     {{attack_text | fix_punctuation | markdown_no_wrapping_p}}
 </p>

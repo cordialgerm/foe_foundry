@@ -97,9 +97,8 @@ class _PetrifyingGlance(_PetrifyingPower):
             power_types=[PowerType.Debuff, PowerType.Attack],
         )
 
-    def modify_stats(self, stats: BaseStatblock) -> BaseStatblock:
-        stats = super().modify_stats(stats)
-
+    def modify_stats_inner(self, stats: BaseStatblock) -> BaseStatblock:
+        stats = super().modify_stats_inner(stats)
         if isinstance(stats.reaction_count, int) and stats.reaction_count < 3:
             stats = stats.copy(reaction_count=3)
 

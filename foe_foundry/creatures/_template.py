@@ -9,7 +9,7 @@ from typing import Iterable
 
 from foe_foundry.attack_template import AttackTemplate
 from foe_foundry.environs import EnvironmentAffinity
-from foe_foundry.features import Feature
+from foe_foundry.features import ActionType, Feature
 from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
 from foe_foundry.utils import find_lore, find_monster_image
@@ -166,8 +166,21 @@ class MonsterTemplate:
         # POWERS
         features: list[Feature] = []
         for power in powers:
+            spell_count = len(stats.spells)
             stats = power.modify_stats(stats)
             features += power.generate_features(stats)
+            new_spell_count = len(stats.spells)
+            if new_spell_count > spell_count:
+                features.append(
+                    Feature(
+                        name=f"{power.key} Spellcasting Placeholder",
+                        description="This is a placeholder for tracking spellcasting features.",
+                        action=ActionType.Feature,
+                        hidden=True,
+                        adds_spells=True,
+                        power_key=power.key,
+                    )
+                )
 
         # ATTACKS
         for attack in attacks:
