@@ -1,7 +1,6 @@
 
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { createRef, ref, Ref } from 'lit/directives/ref.js';
 import { MonsterCard } from '../components/MonsterCard';
 import { initializeMonsterStore } from '../data/api';
 import { Power } from '../data/powers';
@@ -95,13 +94,6 @@ export class MonsterBuilder extends LitElement {
             opacity: 1;
         }
     }
-    .hp-changed,
-    .damage-changed,
-    .power-changed {
-        color: rgb(255, 255, 122);
-        animation: pop-in 0.8s ease;
-        will-change: transform, opacity;
-    }
     .loading,
     .error-message {
         display: flex;
@@ -144,8 +136,6 @@ export class MonsterBuilder extends LitElement {
     @property({ type: String, attribute: 'monster-key' })
     monsterKey: string = '';
 
-    private monsterStatblockRef: Ref<MonsterStatblock> = createRef();
-
     // Entirely new monster selected
     onMonsterKeyChanged(key: string) {
         // Track analytics event for monster change
@@ -166,7 +156,8 @@ export class MonsterBuilder extends LitElement {
     async onStatblockChangeRequested(monsterCard: MonsterCard, eventDetail?: any) {
         if (!monsterCard) return;
 
-        const statblock = this.monsterStatblockRef.value;
+        // Find the statblock element directly from the DOM
+        const statblock = this.shadowRoot?.querySelector('monster-statblock') as MonsterStatblock;
         if (!statblock) return;
 
         // Get selected powers and convert to comma-separated string
@@ -204,11 +195,16 @@ export class MonsterBuilder extends LitElement {
         });
     }
 
-    firstUpdated() {
+    async firstUpdated() {
+
         this.shadowRoot?.addEventListener('monster-changed', async (event: any) => {
             const monsterCard = event.detail.monsterCard;
             await this.onStatblockChangeRequested(monsterCard, event.detail);
         });
+
+        if (this.shadowRoot) {
+            await adoptExternalCss(this.shadowRoot);
+        }
     }
 
     renderMessage(message: string, messageClass: string = '') {
@@ -272,7 +268,6 @@ export class MonsterBuilder extends LitElement {
                     </div>
                     <div class="right-panel">
                         <monster-statblock
-                            ${ref(this.monsterStatblockRef)}
                             monster-key="${this.monsterKey}"
                             power-keys="${powerKeys}"
                             hide-buttons

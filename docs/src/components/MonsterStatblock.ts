@@ -74,6 +74,14 @@ export class MonsterStatblock extends LitElement {
             border-radius: 0.375rem;
         }
 
+        .hp-changed,
+        .damage-changed,
+        .power-changed {
+            color: rgb(255, 255, 122);
+            animation: pop-in 0.8s ease;
+            will-change: transform, opacity;
+        }
+
         /* Responsive styles */
         @media (max-width: 600px) {
             .statblock-wrapper {
