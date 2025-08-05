@@ -98,13 +98,13 @@ attack_block, benchmark_block, branding
     <h4 class="block-header">Actions</h4>
 
     {{property('Multiattack', statblock.multiattack, block=True)}}
-    {{attack_block(statblock.attack.display_name, statblock.attack_text)}}
+    {{attack_block(statblock.attack.display_name, statblock.attack_text, statblock.attack_power_keys)}}
 
     {{attack_blocks(statblock.attacks)}}
 
     {{features_block(statblock.actions)}}
 
-    {{property('Spellcasting', statblock.spellcasting, block=True)}}
+    {{property('Spellcasting', statblock.spellcasting, block=True, power_keys=statblock.spellcasting_power_keys)}}
 
     {{features_block(statblock.bonus_actions, 'Bonus Actions')}}
 

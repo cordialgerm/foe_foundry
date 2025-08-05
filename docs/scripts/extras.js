@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let statblockId = 0;
 
-// Add a Re-Roll and Forge buttons to statblocks
+// Wrap stat-blocks with monster-statblock component
 document.addEventListener("DOMContentLoaded", () => {
   const statblocks = document.querySelectorAll('.stat-block');
 
@@ -36,11 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
       statblock.id = `statblock-${++statblockId}`;
     }
 
-    const rerollButton = createRerollButton(statblock);
-    statblock.parentNode.insertBefore(rerollButton, statblock.nextSibling);
+    // Create the monster-statblock wrapper
+    const wrapper = document.createElement('monster-statblock');
+    wrapper.setAttribute('use-slot', '');
 
-    const editButton = createEditButton(statblock);
-    statblock.parentNode.insertBefore(editButton, statblock.nextSibling);
+    // Insert the wrapper before the statblock
+    statblock.parentNode.insertBefore(wrapper, statblock);
+
+    // Move the statblock inside the wrapper as a slot
+    wrapper.appendChild(statblock);
   });
 });
 
@@ -48,19 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   randomizeMasks();
 });
-
-
-function createRerollButton(statblock) {
-  const button = document.createElement('reroll-button');
-  button.setAttribute('target', statblock.id);
-  return button;
-}
-
-function createEditButton(statblock) {
-  const button = document.createElement('forge-button');
-  button.setAttribute('target', statblock.id);
-  return button;
-}
 
 function randomizeMasks() {
   const variants = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'];

@@ -21,6 +21,7 @@ class Feature:
     modifies_attack: bool = False
     creates_token: bool = False
     power_key: str | None = None
+    adds_spells: bool = False
     title: str = field(init=False)
 
     def __post_init__(self):

@@ -134,8 +134,11 @@ export class ApiMonsterStore implements MonsterStore {
         // Highlight changes
         if (change?.changedPower) {
             const changedKey = change.changedPower.key;
-            statblockElement.querySelectorAll(`[data-power-key="${changedKey}"]`).forEach(el => {
-                el.classList.add('power-changed');
+            statblockElement.querySelectorAll(`[data-power-key]`).forEach(el => {
+                const powerKeys = el.getAttribute('data-power-key')?.split(',').map(k => k.trim()) || [];
+                if (powerKeys.includes(changedKey)) {
+                    el.classList.add('power-changed');
+                }
             });
         }
         if (change?.type === StatblockChangeType.HpChanged) {
@@ -149,7 +152,7 @@ export class ApiMonsterStore implements MonsterStore {
             });
         }
 
-        // Remove the highlight classes after 5 seconds
+        //Remove the highlight classes after 5 seconds
         setTimeout(() => {
             statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
             statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
