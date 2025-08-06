@@ -15,15 +15,14 @@ import type { MonsterStatblock } from './MonsterStatblock.js';
 // Configuration for responsive layout
 const LAYOUT_CONFIG = {
   // Component dimensions
-  MONSTER_CARD_WIDTH: 300,     // Fixed width of monster editor
-  MONSTER_CARD_WIDTH_LARGE_DESKTOP: 400,
-  MIN_STATBLOCK_WIDTH: 500,    // Minimum readable statblock width
-  LAYOUT_GAPS: 64,             // Padding and margins (2rem + container padding)
+  MONSTER_CARD_WIDTH: 340,     // Fixed width of monster editor
+  MONSTER_CARD_WIDTH_LARGE_DESKTOP: 440,
+  MIN_DESIRED_STATBLOCK_WIDTH: 600,    // Minimum readable statblock width
+  LAYOUT_GAPS: 48,             // Padding and margins (1rem + container padding)
 
   // Calculated breakpoint
   get MOBILE_BREAKPOINT() {
-    return this.MONSTER_CARD_WIDTH + this.MIN_STATBLOCK_WIDTH + this.LAYOUT_GAPS;
-    // = 864px minimum for usable side-by-side layout
+    return this.MONSTER_CARD_WIDTH + this.MIN_DESIRED_STATBLOCK_WIDTH + this.LAYOUT_GAPS;
   },
 
   // Optional: Additional breakpoints for fine-tuning
@@ -92,7 +91,7 @@ export class MonsterBuilder extends LitElement {
     .panels-container {
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 1rem;
       width: 100%;
     }
 
@@ -150,13 +149,12 @@ export class MonsterBuilder extends LitElement {
 
       .mobile-tab {
         flex: 1;
-        padding: 0.75rem 1rem;
         border: none;
         border-radius: 8px;
-        background: var(--bs-secondary);
-        color: var(--bs-light);
+        background: var(--bg-color);
+        color: var(--fg-color);
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.2rem;
         transition: background 0.2s;
         min-height: 48px; /* Touch target size */
         display: flex;
@@ -164,10 +162,26 @@ export class MonsterBuilder extends LitElement {
         justify-content: center;
       }
 
+      .mobile-tab span {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+      }
+
       .mobile-tab.active {
-        background: var(--bs-primary);
-        color: var(--bs-light);
+        background: var(--fg-color);
+        color: var(--bg-color);
         font-weight: bold;
+      }
+
+      .mobile-tab svg-icon {
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
       }
 
       .update-pill {
@@ -246,6 +260,7 @@ export class MonsterBuilder extends LitElement {
   isMobile: boolean = false;
 
   private resizeObserver?: ResizeObserver;
+  private focusPanel: 'edit' | 'statblock' | null = null;
 
   connectedCallback() {
     super.connectedCallback();
@@ -269,10 +284,15 @@ export class MonsterBuilder extends LitElement {
   }
 
   private setMobileTab(tab: 'edit' | 'statblock') {
+    // Blur any focused element to prevent unwanted scrolling
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
     this.mobileTab = tab;
     if (tab === 'statblock') {
       this.statblockUpdated = false;
     }
+    this.focusPanel = tab;
   }
 
   private getMobilePanelStyles(): string {
@@ -280,6 +300,16 @@ export class MonsterBuilder extends LitElement {
       return '--card-panel-display: block; --statblock-panel-display: none;';
     } else {
       return '--card-panel-display: none; --statblock-panel-display: block;';
+    }
+  }
+
+  updated(changedProps: Map<string, any>) {
+    super.updated?.(changedProps);
+    if (this.focusPanel) {
+      const panelId = this.focusPanel === 'edit' ? 'card-panel' : 'statblock-panel';
+      const panel = this.shadowRoot?.getElementById(panelId);
+      panel?.focus();
+      this.focusPanel = null;
     }
   }
 
@@ -395,65 +425,71 @@ export class MonsterBuilder extends LitElement {
         </a>`;
 
     return html`
-            <div class="container pamphlet-main">
-                <div class="monster-header">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <h1 class="monster-title">
-                            ${previousTemplate}
-                            <span>${monster.monsterTemplateName}</span>
-                            ${nextTemplate}
-                        </h1>
-                    </div>
-                    <div class="nav-pills">
-                        ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
-                            <a
-                            href="/monsters/${rel.template}#${rel.key}"
-                            class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
-                            @click=${(e: MouseEvent) => {
+      <div class="container pamphlet-main">
+        <div class="monster-header">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <h1 class="monster-title">
+              ${previousTemplate}
+              <span>${monster.monsterTemplateName}</span>
+              ${nextTemplate}
+            </h1>
+          </div>
+          <div class="nav-pills">
+            ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
+              <a
+                href="/monsters/${rel.template}#${rel.key}"
+                class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
+                @click=${(e: MouseEvent) => {
         e.preventDefault();
         this.onMonsterKeyChanged(rel.key);
       }}
-                            >${rel.name}</a>
-                        `)}
-                    </div>
-                </div>
+              >${rel.name}</a>
+            `)}
+          </div>
+        </div>
 
-                <!-- Mobile tabs (only shown on mobile) -->
-                ${this.isMobile ? html`
-                  <div class="mobile-tabs">
-                    <button
-                      class="mobile-tab ${this.mobileTab === 'edit' ? 'active' : ''}"
-                      @click=${() => this.setMobileTab('edit')}>
-                      Editor
-                    </button>
-                    <button
-                      class="mobile-tab ${this.mobileTab === 'statblock' ? 'active' : ''}"
-                      @click=${() => this.setMobileTab('statblock')}>
-                      Statblock
-                      ${this.statblockUpdated && this.mobileTab !== 'statblock' ?
+        <!-- Mobile tabs (only shown on mobile) -->
+        ${this.isMobile ? html`
+          <div class="mobile-tabs">
+            <button
+              class="mobile-tab ${this.mobileTab === 'edit' ? 'active' : ''}"
+              @click=${() => this.setMobileTab('edit')}>
+              <span>
+                <svg-icon src="card-ace-spades" jiggle="jiggleUntilClick"></svg-icon>
+                Monster Card
+              </span>
+            </button>
+            <button
+              class="mobile-tab ${this.mobileTab === 'statblock' ? 'active' : ''}"
+              @click=${() => this.setMobileTab('statblock')}>
+              <span>
+                <svg-icon src="orc-head" jiggle="jiggleUntilClick"></svg-icon>
+                Statblock
+              </span>
+              ${this.statblockUpdated && this.mobileTab !== 'statblock' ?
           html`<span class="update-pill">Updated!</span>` : ''}
-                    </button>
-                  </div>
-                ` : ''}
+            </button>
+          </div>
+        ` : ''}
 
-                <!-- Single container with both panels -->
-                <div class="panels-container"
-                     style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
+        <!-- Single container with both panels -->
+        <div class="panels-container"
+          style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
-                    <div class="card-panel">
-                        <monster-card monster-key="${this.monsterKey}"></monster-card>
-                    </div>
+          <div class="card-panel" id="card-panel" tabindex="-1">
+            <monster-card monster-key="${this.monsterKey}"></monster-card>
+          </div>
 
-                    <div class="statblock-panel">
-                        <monster-statblock
-                            monster-key="${this.monsterKey}"
-                            power-keys="${powerKeys}"
-                            hide-buttons
-                        ></monster-statblock>
-                    </div>
-                </div>
-            </div>
-            `;
+          <div class="statblock-panel" id="statblock-panel" tabindex="-1">
+            <monster-statblock
+              monster-key="${this.monsterKey}"
+              power-keys="${powerKeys}"
+              hide-buttons
+            ></monster-statblock>
+          </div>
+        </div>
+      </div>
+    `;
   }
 
   render() {

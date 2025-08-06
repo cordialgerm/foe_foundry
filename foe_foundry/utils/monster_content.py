@@ -141,6 +141,10 @@ def extract_overview_content(markdown_text: str) -> str | None:
         if re.match(r"^!\[.*\]\(.*\)", line) or re.match(r"^!\[.*\]\(.*\)\{.*\}", line):
             continue
 
+        # Skip jump/navigation links like "- [Jump...]"
+        if re.match(r"^\s*-\s*\[Jump", line.strip()):
+            continue
+
         # Handle info-style directives (starting with !!!)
         if line.strip().startswith("!!!"):
             in_info_block = True
@@ -214,7 +218,23 @@ def extract_encounters_content(markdown_text: str) -> str | None:
         if in_encounters_section:
             encounters_lines.append(line)
 
+    # Filter out non-header, non-bullet content (like SEO paragraphs)
+    filtered_encounters_lines = []
+    for line in encounters_lines:
+        stripped_line = line.strip()
+
+        # Keep headers (h2/h3)
+        if re.match(r"^###?\s+", stripped_line):
+            filtered_encounters_lines.append(line)
+        # Keep bullet points and list items
+        elif re.match(r"^\s*[-*+]\s+", line) or re.match(r"^\s*\d+\.\s+", line):
+            filtered_encounters_lines.append(line)
+        # Keep empty lines for formatting
+        elif stripped_line == "":
+            filtered_encounters_lines.append(line)
+        # Skip everything else (SEO paragraphs, etc.)
+
     # Join and clean up the content
-    encounters_content = "\n".join(encounters_lines).strip()
+    encounters_content = "\n".join(filtered_encounters_lines).strip()
 
     return encounters_content if encounters_content else None
