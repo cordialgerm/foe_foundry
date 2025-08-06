@@ -52,8 +52,20 @@ export class ApiMonsterStore implements MonsterStore {
         const encounterHtmlString = data?.encounter_html;
 
         const parser = new DOMParser();
-        const overviewElement = overviewHtmlString ? parser.parseFromString(overviewHtmlString, 'text/html').body.firstElementChild as HTMLElement : null;
-        const encounterElement = encounterHtmlString ? parser.parseFromString(encounterHtmlString, 'text/html').body.firstElementChild as HTMLElement : null;
+
+        // Helper function to wrap all body children in a div
+        const wrapBodyChildren = (htmlString: string): HTMLElement => {
+            const doc = parser.parseFromString(htmlString, 'text/html');
+            const wrapper = document.createElement('div');
+            // Move all body children to the wrapper
+            while (doc.body.firstChild) {
+                wrapper.appendChild(doc.body.firstChild);
+            }
+            return wrapper;
+        };
+
+        const overviewElement = overviewHtmlString ? wrapBodyChildren(overviewHtmlString) : null;
+        const encounterElement = encounterHtmlString ? wrapBodyChildren(encounterHtmlString) : null;
 
         // Map MonsterModel to Monster
         return {

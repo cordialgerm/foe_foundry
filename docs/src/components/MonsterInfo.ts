@@ -25,7 +25,6 @@ export class MonsterInfo extends LitElement {
   static styles = css`
     :host {
       display: block;
-      margin-bottom: 1rem;
       padding: 0.5rem;
       background-color: var(--bs-dark);
     }

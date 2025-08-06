@@ -1,6 +1,6 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { ref, createRef } from 'lit/directives/ref.js';
 import { initializeMonsterStore } from '../data/api';
 import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
@@ -28,6 +28,9 @@ export class MonsterCard extends LitElement {
   monsterKey = '';
 
   @property({ type: String }) contentTab: 'powers' | 'lore' | 'encounters' = 'powers';
+
+  private loreRef = createRef<HTMLDivElement>();
+  private encounterRef = createRef<HTMLDivElement>();
 
   static styles = css`
     :host {
@@ -100,7 +103,7 @@ export class MonsterCard extends LitElement {
     /* Content tabs styling */
     .content-tabs {
       display: flex;
-      border-bottom: 2px solid var(--bs-border-color);
+      border-bottom: 2px solid var(--tertiary-color);
       margin-bottom: 1rem;
       margin-top: 1rem;
     }
@@ -111,21 +114,21 @@ export class MonsterCard extends LitElement {
       border: none;
       border-bottom: 3px solid transparent;
       background: transparent;
-      color: var(--bs-secondary);
+      color: var(--primary-tertiary);
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 1.0rem;
       font-weight: 500;
       transition: all 0.2s ease;
     }
 
     .content-tab:hover {
-      background: var(--bs-light);
-      color: var(--bs-primary);
+      background: var(--fg-color);
+      color: var(--bg-color);
     }
 
     .content-tab.active {
-      color: var(--bs-primary);
-      border-bottom-color: var(--bs-primary);
+      color: var(--tertiary-color);
+      border-bottom-color: var(--tertiary-color);
       font-weight: 600;
     }
 
@@ -145,6 +148,113 @@ export class MonsterCard extends LitElement {
         padding: 0.6rem 0.5rem;
       }
     }
+
+    .lore-content,
+    .encounter-content {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 0.85rem;
+      text-align: justify;
+      max-height: 680px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--tertiary-color);
+    }
+
+    .content-header h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--tertiary-color);
+    }
+
+    .full-content-link {
+      color: var(--tertiary-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .full-content-link:hover {
+      color: var(--fg-color);
+      text-decoration: underline;
+    }
+
+    .content-body {
+      max-height: 600px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content-body::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: linear-gradient(transparent, var(--bs-dark));
+      pointer-events: none;
+    }
+
+    .content-body[data-overflowing="true"]::after {
+      content: '...';
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      height: auto;
+      background: var(--bs-dark);
+      color: var(--tertiary-color);
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+
+    .lore-content p,
+    .encounter-content p {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+      text-align: justify;
+    }
+
+    .lore-content ul,
+    .encounter-content ul,
+    .lore-content ol,
+    .encounter-content ol {
+      padding-left: 1rem;
+    }
+
+    .encounter-content h2,
+    .lore-content h2,
+    .encounter-content h2,
+    .lore-content h3,
+    .encounter-content h3 {
+      font-size: 1.05rem;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .lore-content .headerlink,
+    .encounter-content .headerlink {
+      display: none;
+    }
+
+    .lore-content a,
+    .encounter-content a {
+      color: var(--fg-color);
+      text-decoration: underline;
+    }
+
+
   `;
 
   private hpRating: number = 3;
@@ -181,6 +291,46 @@ export class MonsterCard extends LitElement {
   setContentTab(tab: 'powers' | 'lore' | 'encounters'): void {
     this.contentTab = tab;
     this.requestUpdate();
+  }
+
+  updated(changedProperties: PropertyValues) {
+    super.updated(changedProperties);
+
+    // Handle lore content
+    if (this.loreRef.value && this._monsterTask.value?.overviewElement) {
+      // Only append if not already present
+      if (!this.loreRef.value.querySelector('[data-monster-lore]')) {
+        const clonedElement = this._monsterTask.value.overviewElement.cloneNode(true) as HTMLElement;
+        clonedElement.setAttribute('data-monster-lore', 'true');
+        this.loreRef.value.appendChild(clonedElement);
+
+        // Check if content overflows
+        this.checkContentOverflow(this.loreRef.value.closest('.content-body') as HTMLElement);
+      }
+    }
+
+    // Handle encounter content
+    if (this.encounterRef.value && this._monsterTask.value?.encounterElement) {
+      // Only append if not already present
+      if (!this.encounterRef.value.querySelector('[data-monster-encounter]')) {
+        const clonedElement = this._monsterTask.value.encounterElement.cloneNode(true) as HTMLElement;
+        clonedElement.setAttribute('data-monster-encounter', 'true');
+        this.encounterRef.value.appendChild(clonedElement);
+
+        // Check if content overflows
+        this.checkContentOverflow(this.encounterRef.value.closest('.content-body') as HTMLElement);
+      }
+    }
+  }
+
+  private checkContentOverflow(contentBody: HTMLElement | null) {
+    if (!contentBody) return;
+
+    // Use requestAnimationFrame to ensure DOM is updated
+    requestAnimationFrame(() => {
+      const isOverflowing = contentBody.scrollHeight > contentBody.clientHeight;
+      contentBody.setAttribute('data-overflowing', isOverflowing.toString());
+    });
   }
 
   private handleHpChanged = (event: Event) => {
@@ -345,18 +495,26 @@ export class MonsterCard extends LitElement {
         )}
               </div>
 
-              <div class="tab-content ${this.contentTab === 'lore' ? 'active' : ''}" data-content="lore">
-                ${monster.overviewElement
-            ? unsafeHTML(monster.overviewElement.outerHTML)
-            : html`<p>No lore available for this monster.</p>`
-          }
+              <div class="tab-content lore-content ${this.contentTab === 'lore' ? 'active' : ''}" data-content="lore">
+                <div class="content-header">
+                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Lore</a>
+                </div>
+                <div class="content-body">
+                  <div ${ref(this.loreRef)}>
+                    ${!monster.overviewElement ? html`<p>No lore available for this monster.</p>` : ''}
+                  </div>
+                </div>
               </div>
 
-              <div class="tab-content ${this.contentTab === 'encounters' ? 'active' : ''}" data-content="encounters">
-                ${monster.encounterElement
-            ? unsafeHTML(monster.encounterElement.outerHTML)
-            : html`<p>No encounter information available for this monster.</p>`
-          }
+              <div class="tab-content encounter-content ${this.contentTab === 'encounters' ? 'active' : ''}" data-content="encounters">
+                <div class="content-header">
+                  <a href="/monsters/${monster.monsterTemplate}/" class="full-content-link">See Full Encounters</a>
+                </div>
+                <div class="content-body">
+                  <div ${ref(this.encounterRef)}>
+                    ${!monster.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
