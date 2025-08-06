@@ -11,6 +11,8 @@ import { adoptExternalCss } from '../utils';
 import { trackStatblockEdit } from '../utils/analytics.js';
 import './MonsterStatblock.js';
 import type { MonsterStatblock } from './MonsterStatblock.js';
+import './ToastNotification';
+
 
 // Configuration for responsive layout
 const LAYOUT_CONFIG = {
@@ -176,21 +178,33 @@ export class MonsterBuilder extends LitElement {
         font-weight: bold;
       }
 
+      @keyframes pulse-glow {
+        0% {
+          box-shadow: 0 0 0 0 var(--tertiary-color, #ffd700);
+          border-color: var(--tertiary-color, #ffd700);
+        }
+        50% {
+          box-shadow: 0 0 12px 4px var(--tertiary-color, #ffd700);
+          border-color: var(--tertiary-color, #ffd700);
+        }
+        100% {
+          box-shadow: 0 0 0 0 var(--tertiary-color, #ffd700);
+          border-color: var(--tertiary-color, #ffd700);
+        }
+      }
+
+      .mobile-tab.has-update {
+        border: 1px dashed var(--tertiary-color);
+        color: var(--tertiary-color);
+        animation: pulse-glow 1.5s infinite;
+      }
+
       .mobile-tab svg-icon {
         width: 2rem;
         height: 2rem;
         vertical-align: middle;
         margin: 0;
         padding: 0;
-      }
-
-      .update-pill {
-        background: var(--bs-warning);
-        color: var(--bs-dark);
-        font-size: 0.75rem;
-        padding: 0.25rem 0.5rem;
-        border-radius: 12px;
-        margin-left: 0.5rem;
       }
 
       /* Tab-controlled panel visibility */
@@ -340,6 +354,11 @@ export class MonsterBuilder extends LitElement {
       changeType = StatblockChangeType.Rerolled;
     }
 
+    if (this.isMobile) {
+      // Show toast on mobile when powers change
+      this.showPowerChangedToast();
+    }
+
     trackStatblockEdit(
       monsterCard.monsterKey,
       changeType,
@@ -356,6 +375,41 @@ export class MonsterBuilder extends LitElement {
       changedPower: changedPower
     });
   }
+
+  // Show toast when powers change (mobile only)
+  private showPowerChangedToast() {
+    // Only one toast at a time
+    let toast = this.shadowRoot?.querySelector('toast-notification') as HTMLElement | null;
+    if (!toast) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(
+        `<toast-notification>
+          <span>Powers Changed, Swap to Statblock?</span>
+          </toast-notification>`,
+        'text/html'
+      );
+      toast = doc.body.firstElementChild as HTMLElement;
+      this.shadowRoot?.appendChild(toast);
+    }
+    // Listen for completion (progress fills or OK click)
+    const onComplete = () => {
+      this.setMobileTab('statblock');
+      toast?.remove();
+      toast?.removeEventListener('toast-completed', onComplete);
+      toast?.removeEventListener('toast-dismissed', onDismiss);
+    };
+    // Listen for dismissal (click or escape)
+    const onDismiss = () => {
+      toast?.remove();
+      toast?.removeEventListener('toast-completed', onComplete);
+      toast?.removeEventListener('toast-dismissed', onDismiss);
+    };
+    toast.addEventListener('toast-completed', onComplete);
+    toast.addEventListener('toast-dismissed', onDismiss);
+    // Show the toast
+    (toast as any).show();
+  }
+
 
   async firstUpdated() {
     this.checkIsMobile(); // Initial check
@@ -444,14 +498,14 @@ export class MonsterBuilder extends LitElement {
               </span>
             </button>
             <button
-              class="mobile-tab ${this.mobileTab === 'statblock' ? 'active' : ''}"
+              class="mobile-tab
+                  ${this.statblockUpdated ? 'has-update' : ''}
+                  ${this.mobileTab === 'statblock' ? 'active' : ''}"
               @click=${() => this.setMobileTab('statblock')}>
               <span>
                 <svg-icon src="orc-head" jiggle="jiggleUntilClick"></svg-icon>
                 Statblock
               </span>
-              ${this.statblockUpdated && this.mobileTab !== 'statblock' ?
-          html`<span class="update-pill">Updated!</span>` : ''}
             </button>
           </div>
         ` : ''}
