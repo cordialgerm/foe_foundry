@@ -17,19 +17,19 @@ const LAYOUT_CONFIG = {
   // Component dimensions
   MONSTER_CARD_WIDTH: 300,     // Fixed width of monster editor
   MONSTER_CARD_WIDTH_LARGE_DESKTOP: 400,
-  MIN_STATBLOCK_WIDTH: 500,    // Minimum readable statblock width  
+  MIN_STATBLOCK_WIDTH: 500,    // Minimum readable statblock width
   LAYOUT_GAPS: 64,             // Padding and margins (2rem + container padding)
-  
+
   // Calculated breakpoint
   get MOBILE_BREAKPOINT() {
     return this.MONSTER_CARD_WIDTH + this.MIN_STATBLOCK_WIDTH + this.LAYOUT_GAPS;
     // = 864px minimum for usable side-by-side layout
   },
-  
+
   // Optional: Additional breakpoints for fine-tuning
   SMALL_MOBILE: 480,
   LARGE_DESKTOP: 1200,
-  
+
   // Helper methods
   isMobile: (width: number) => width <= LAYOUT_CONFIG.MOBILE_BREAKPOINT,
   isSmallMobile: (width: number) => width <= LAYOUT_CONFIG.SMALL_MOBILE,
@@ -206,7 +206,7 @@ export class MonsterBuilder extends LitElement {
         font-size: 0.9rem;
         padding: 0.6rem 0.8rem;
       }
-      
+
       .container.pamphlet-main {
         padding: 0.5rem;
       }
