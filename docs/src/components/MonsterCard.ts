@@ -7,6 +7,7 @@ import { Power } from '../data/powers';
 import { Task } from '@lit/task';
 import './MonsterArt';
 import './MonsterInfo';
+import './MonsterRating';
 import './PowerLoadout';
 import type { PowerLoadout } from './PowerLoadout';
 import './SvgIcon';
@@ -44,6 +45,8 @@ export class MonsterCard extends LitElement {
 
       background-color: var(--bs-dark);
       position: relative;
+
+      --max-text-content-height: 700px; /* Default max height for content */
     }
 
     .monster-card {
@@ -155,7 +158,7 @@ export class MonsterCard extends LitElement {
       padding-right: 10px;
       font-size: 0.85rem;
       text-align: justify;
-      max-height: 680px;
+      max-height: calc(80 + var(--max-text-content-height));
       overflow: hidden;
       position: relative;
     }
@@ -189,7 +192,7 @@ export class MonsterCard extends LitElement {
     }
 
     .content-body {
-      max-height: 600px;
+      max-height: var(--max-text-content-height);
       overflow: hidden;
       position: relative;
     }
@@ -254,6 +257,30 @@ export class MonsterCard extends LitElement {
       text-decoration: underline;
     }
 
+    .powers-rating-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      gap: 0.5rem;
+    }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .rating-row h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--fg-color);
+      font-weight: 600;
+      min-width: 80px;
+    }
+
 
   `;
 
@@ -262,15 +289,13 @@ export class MonsterCard extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.addEventListener('hp-changed', this.handleHpChanged);
-    this.addEventListener('damage-changed', this.handleDamageChanged);
+    this.addEventListener('rating-change', this.handleRatingChange);
     this.addEventListener('power-selected', this.handlePowerSelected);
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
-    this.removeEventListener('hp-changed', this.handleHpChanged);
-    this.removeEventListener('damage-changed', this.handleDamageChanged);
+    this.removeEventListener('rating-change', this.handleRatingChange);
     this.removeEventListener('power-selected', this.handlePowerSelected);
   }
 
@@ -333,36 +358,39 @@ export class MonsterCard extends LitElement {
     });
   }
 
-  private handleHpChanged = (event: Event) => {
+  private handleRatingChange = (event: Event) => {
     const customEvent = event as CustomEvent;
-    const newRating = customEvent.detail?.score ?? 3;
-    this.hpRating = newRating;
-    const hp_multiplier = this.ratingToMultiplier(newRating);
-    this.dispatchEvent(new CustomEvent('monster-changed', {
-      detail: {
-        changeType: 'hp-changed',
-        hp_multiplier,
-        monsterCard: this
-      },
-      bubbles: true,
-      composed: true
-    }));
-  };
+    const { score, label } = customEvent.detail;
 
-  private handleDamageChanged = (event: Event) => {
-    const customEvent = event as CustomEvent;
-    const newRating = customEvent.detail?.score ?? 3;
-    this.damageRating = newRating;
-    const damage_multiplier = this.ratingToMultiplier(newRating);
-    this.dispatchEvent(new CustomEvent('monster-changed', {
-      detail: {
-        changeType: 'damage-changed',
-        damage_multiplier,
-        monsterCard: this
-      },
-      bubbles: true,
-      composed: true
-    }));
+    // Get the original target using composedPath
+    const composedPath = event.composedPath();
+    const originalTarget = composedPath[0] as HTMLElement;
+
+    if (originalTarget.id === 'hp-rating') {
+      this.hpRating = score;
+      const hp_multiplier = this.ratingToMultiplier(score);
+      this.dispatchEvent(new CustomEvent('monster-changed', {
+        detail: {
+          changeType: 'hp-changed',
+          hp_multiplier,
+          monsterCard: this
+        },
+        bubbles: true,
+        composed: true
+      }));
+    } else if (originalTarget.id === 'damage-rating') {
+      this.damageRating = score;
+      const damage_multiplier = this.ratingToMultiplier(score);
+      this.dispatchEvent(new CustomEvent('monster-changed', {
+        detail: {
+          changeType: 'damage-changed',
+          damage_multiplier,
+          monsterCard: this
+        },
+        bubbles: true,
+        composed: true
+      }));
+    }
   };
 
   private handlePowerSelected = (event: Event) => {
@@ -450,7 +478,7 @@ export class MonsterCard extends LitElement {
             >
               <svg-icon
                 class="randomize-icon"
-                jiggle="true"
+                jiggle="jiggleUntilClick"
                 src="dice-twenty-faces-twenty"
               ></svg-icon>
             </button>
@@ -459,8 +487,6 @@ export class MonsterCard extends LitElement {
               type="${monster.creatureType}"
               tag="${monster.tagLine}"
               cr="${monster.cr}"
-              hp-rating="3"
-              damage-rating="3"
             ></monster-info>
             <monster-art
               monster-image="${monster.image}"
@@ -485,6 +511,16 @@ export class MonsterCard extends LitElement {
 
             <div class="tab-content-container">
               <div class="tab-content ${this.contentTab === 'powers' ? 'active' : ''}" data-content="powers">
+                <div class="powers-rating-container">
+                  <div class="rating-row">
+                    <h4>HP</h4>
+                    <monster-rating id="hp-rating" emoji="❤️" score="3"></monster-rating>
+                  </div>
+                  <div class="rating-row">
+                    <h4>Damage</h4>
+                    <monster-rating id="damage-rating" emoji="💀" score="3"></monster-rating>
+                  </div>
+                </div>
                 ${monster.loadouts.map(
           loadout => html`
                     <power-loadout
