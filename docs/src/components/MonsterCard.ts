@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { initializeMonsterStore } from '../data/api';
 import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
@@ -25,6 +26,8 @@ export class MonsterCard extends LitElement {
 
   @property({ type: String, attribute: 'monster-key' })
   monsterKey = '';
+
+  @property({ type: String }) contentTab: 'powers' | 'lore' | 'encounters' = 'powers';
 
   static styles = css`
     :host {
@@ -93,6 +96,55 @@ export class MonsterCard extends LitElement {
             transform: rotate(720deg) scale(1) translateX(0);
         }
     }
+
+    /* Content tabs styling */
+    .content-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--bs-border-color);
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    .content-tab {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--bs-secondary);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .content-tab:hover {
+      background: var(--bs-light);
+      color: var(--bs-primary);
+    }
+
+    .content-tab.active {
+      color: var(--bs-primary);
+      border-bottom-color: var(--bs-primary);
+      font-weight: 600;
+    }
+
+    /* Tab content visibility control */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 480px) {
+      .content-tab {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.5rem;
+      }
+    }
   `;
 
   private hpRating: number = 3;
@@ -124,6 +176,11 @@ export class MonsterCard extends LitElement {
       case 5: return 1.25;
       default: return 1.0;
     }
+  }
+
+  setContentTab(tab: 'powers' | 'lore' | 'encounters'): void {
+    this.contentTab = tab;
+    this.requestUpdate();
   }
 
   private handleHpChanged = (event: Event) => {
@@ -260,14 +317,48 @@ export class MonsterCard extends LitElement {
               background-image="${monster.backgroundImage}"
               background-color="rgba(255, 255, 255, 0.55)"
             ></monster-art>
-            ${monster.loadouts.map(
+
+            <div class="content-tabs">
+              <button class="content-tab ${this.contentTab === 'powers' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('powers')}>
+                Powers
+              </button>
+              <button class="content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('lore')}>
+                Lore
+              </button>
+              <button class="content-tab ${this.contentTab === 'encounters' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('encounters')}>
+                Encounters
+              </button>
+            </div>
+
+            <div class="tab-content-container">
+              <div class="tab-content ${this.contentTab === 'powers' ? 'active' : ''}" data-content="powers">
+                ${monster.loadouts.map(
           loadout => html`
-                <power-loadout
-                  monster-key="${monster.key}"
-                  loadout-key="${loadout.key}"
-                ></power-loadout>
-              `
+                    <power-loadout
+                      monster-key="${monster.key}"
+                      loadout-key="${loadout.key}"
+                    ></power-loadout>
+                  `
         )}
+              </div>
+
+              <div class="tab-content ${this.contentTab === 'lore' ? 'active' : ''}" data-content="lore">
+                ${monster.overviewElement
+            ? unsafeHTML(monster.overviewElement.outerHTML)
+            : html`<p>No lore available for this monster.</p>`
+          }
+              </div>
+
+              <div class="tab-content ${this.contentTab === 'encounters' ? 'active' : ''}" data-content="encounters">
+                ${monster.encounterElement
+            ? unsafeHTML(monster.encounterElement.outerHTML)
+            : html`<p>No encounter information available for this monster.</p>`
+          }
+              </div>
+            </div>
           </div>
         `;
       },

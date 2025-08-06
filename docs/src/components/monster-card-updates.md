@@ -27,6 +27,19 @@ Extend the existing `MonsterCard` component to support tabbed content navigation
 
 ## Scope of Work
 
+### Layout Tweaks
+
+- The existing HP and damage ratings need to be moved below the monster card
+- the tab nav pills should be placed beneath the monster image
+
+The new layout should be
+
+Title
+Tagline
+Image
+Tabs
+Tab Content
+
 ### MonsterCard Component Updates
 
 #### New Properties
@@ -158,7 +171,7 @@ interface Monster {
   // ... existing properties
   
   // New optional properties
-  lore?: HTMLElement;
-  encounters?: HTMLElement;
+  overviewElement: HTMLElement | null;
+  encounterElement: HTMLElement | null;
 }
 ```
