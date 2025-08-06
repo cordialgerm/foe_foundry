@@ -30,6 +30,9 @@ export interface Monster {
     relatedMonsters: RelatedMonster[];
     nextTemplate: RelatedMonsterTemplate;
     previousTemplate: RelatedMonsterTemplate;
+
+    overviewElement: HTMLElement | null;
+    encounterElement: HTMLElement | null;
 }
 
 export interface StatblockRequest {

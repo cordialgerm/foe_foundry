@@ -75,9 +75,9 @@ def extract_yaml_frontmatter(markdown_text: str) -> dict:
     return {}
 
 
-def extract_lore_content(markdown_text: str) -> str | None:
+def extract_overview_content(markdown_text: str) -> str | None:
     """
-    Extracts the lore content from a monster markdown file.
+    Extracts the overview content from a monster markdown file.
 
     This includes all markdown content after the tagline and until the tactics section.
     It consists of initial introductory paragraphs describing the monster, and up to
@@ -89,7 +89,7 @@ def extract_lore_content(markdown_text: str) -> str | None:
         markdown_text (str): Full content of the markdown file.
 
     Returns:
-        str | None: The extracted lore content, or None if not found.
+        str | None: The extracted overview content, or None if not found.
     """
     # First strip YAML frontmatter
     content = strip_yaml_frontmatter(markdown_text)

@@ -48,6 +48,13 @@ export class ApiMonsterStore implements MonsterStore {
 
         const data = await response.json();
 
+        const overviewHtmlString = data?.overview_html;
+        const encounterHtmlString = data?.encounter_html;
+
+        const parser = new DOMParser();
+        const overviewElement = overviewHtmlString ? parser.parseFromString(overviewHtmlString, 'text/html').body.firstElementChild as HTMLElement : null;
+        const encounterElement = encounterHtmlString ? parser.parseFromString(encounterHtmlString, 'text/html').body.firstElementChild as HTMLElement : null;
+
         // Map MonsterModel to Monster
         return {
             key: data.key ?? key,
@@ -89,7 +96,9 @@ export class ApiMonsterStore implements MonsterStore {
             previousTemplate: {
                 monsterKey: data.previous_template.monster_key,
                 templateKey: data.previous_template.template_key
-            }
+            },
+            overviewElement: overviewElement,
+            encounterElement: encounterElement
         };
     }
 

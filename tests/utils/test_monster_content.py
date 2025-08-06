@@ -7,7 +7,7 @@ import pytest
 
 from foe_foundry.utils.monster_content import (
     extract_encounters_content,
-    extract_lore_content,
+    extract_overview_content,
 )
 
 
@@ -26,7 +26,7 @@ def test_monster_has_lore_content(monster_file):
     with open(monster_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    lore = extract_lore_content(content)
+    lore = extract_overview_content(content)
 
     # Assert that lore content exists and is not empty
     assert lore is not None, (
@@ -80,7 +80,7 @@ def test_lore_content_quality(monster_file):
     with open(monster_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    lore = extract_lore_content(content)
+    lore = extract_overview_content(content)
     assert lore is not None
 
     # Lore should not contain image directives
@@ -146,7 +146,7 @@ Unless it's recently dined, a gelatinous cube is nearly invisible.
 Gelatinous Cubes are mindless entities.
 """
 
-    lore = extract_lore_content(test_content)
+    lore = extract_overview_content(test_content)
 
     assert lore is not None
     assert "A Gelatinous Cube is a silent, quivering mass" in lore
@@ -223,7 +223,7 @@ More lore content.
 Tactics content.
 """
 
-    lore = extract_lore_content(test_content)
+    lore = extract_overview_content(test_content)
 
     assert lore is not None
     assert "Some lore content" in lore
@@ -254,7 +254,7 @@ More lore content.
 Tactics content.
 """
 
-    lore = extract_lore_content(test_content)
+    lore = extract_overview_content(test_content)
 
     assert lore is not None
     assert "Some lore content" in lore
@@ -277,7 +277,7 @@ This is an index page, not a monster file.
 List of monsters here.
 """
 
-    lore = extract_lore_content(test_content)
+    lore = extract_overview_content(test_content)
     encounters = extract_encounters_content(test_content)
 
     # Index files should not have monster-style content

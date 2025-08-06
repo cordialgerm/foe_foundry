@@ -17,6 +17,8 @@ def test_monster_model():
         )
         assert len(model.images) > 0
         assert model.template_html is not None
+        assert model.encounter_html is not None
+        assert model.overview_html is not None
         assert len(model.loadouts) > 0
 
 
