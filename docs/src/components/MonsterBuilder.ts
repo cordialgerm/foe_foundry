@@ -260,7 +260,6 @@ export class MonsterBuilder extends LitElement {
   isMobile: boolean = false;
 
   private resizeObserver?: ResizeObserver;
-  private focusPanel: 'edit' | 'statblock' | null = null;
 
   connectedCallback() {
     super.connectedCallback();
@@ -284,15 +283,10 @@ export class MonsterBuilder extends LitElement {
   }
 
   private setMobileTab(tab: 'edit' | 'statblock') {
-    // Blur any focused element to prevent unwanted scrolling
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
-    }
-    this.mobileTab = tab;
     if (tab === 'statblock') {
       this.statblockUpdated = false;
     }
-    this.focusPanel = tab;
+    this.mobileTab = tab;
   }
 
   private getMobilePanelStyles(): string {
@@ -300,16 +294,6 @@ export class MonsterBuilder extends LitElement {
       return '--card-panel-display: block; --statblock-panel-display: none;';
     } else {
       return '--card-panel-display: none; --statblock-panel-display: block;';
-    }
-  }
-
-  updated(changedProps: Map<string, any>) {
-    super.updated?.(changedProps);
-    if (this.focusPanel) {
-      const panelId = this.focusPanel === 'edit' ? 'card-panel' : 'statblock-panel';
-      const panel = this.shadowRoot?.getElementById(panelId);
-      panel?.focus();
-      this.focusPanel = null;
     }
   }
 
