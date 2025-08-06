@@ -29,6 +29,23 @@ export class ToastNotification extends LitElement {
       align-items: center;
       pointer-events: auto;
       outline: none;
+      position: relative;
+    }
+    .dismiss-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: transparent;
+      color: var(--bs-light, #fff);
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 1rem;
+      z-index: 1;
+      line-height: 1;
+    }
+    .dismiss-btn:focus {
+      outline: 2px solid var(--tertiary-color, #ffd700);
     }
     .message-container {
       margin-bottom: 0.5rem;
@@ -91,8 +108,6 @@ export class ToastNotification extends LitElement {
       this.handleComplete();
     }, this.duration);
     this.progressInterval = window.setInterval(() => this.updateProgress(), 50);
-    document.addEventListener('mousedown', this.handleDismiss, { capture: true });
-    document.addEventListener('touchstart', this.handleDismiss, { capture: true });
     document.addEventListener('keydown', this.handleKeydown);
     this.focus();
   }
@@ -101,16 +116,8 @@ export class ToastNotification extends LitElement {
     this.open = false;
     window.clearTimeout(this.timer);
     window.clearInterval(this.progressInterval);
-    document.removeEventListener('mousedown', this.handleDismiss, { capture: true });
-    document.removeEventListener('touchstart', this.handleDismiss, { capture: true });
     document.removeEventListener('keydown', this.handleKeydown);
   }
-
-  handleDismiss = (e: Event) => {
-    if (!this.open) return;
-    this.close();
-    this.dispatchEvent(new CustomEvent('toast-dismissed'));
-  };
 
   handleKeydown = (e: KeyboardEvent) => {
     if (e.key === 'Escape' && this.open) {
@@ -129,6 +136,11 @@ export class ToastNotification extends LitElement {
     this.dispatchEvent(new CustomEvent('toast-completed'));
   };
 
+  handleCloseClick = () => {
+    this.close();
+    this.dispatchEvent(new CustomEvent('toast-dismissed'));
+  }
+
   updateProgress() {
     const bar = this.shadowRoot?.querySelector('.progress') as HTMLElement;
     if (!bar || !this.startTime) return;
@@ -141,12 +153,14 @@ export class ToastNotification extends LitElement {
     if (!this.open) return html``;
     return html`
       <div class="toast" tabindex="0" aria-live="polite" aria-label="Toast notification">
+        <button class="dismiss-btn" title="Dismiss" @click=${this.handleCloseClick}>&times;</button>
         <div class="message-container"><slot></slot></div>
         <div class="progress-bar">
           <div class="progress"></div>
         </div>
         <div class="actions">
           <button @click=${this.handleOkClick}>${this.confirmation}</button>
+          <button @click=${this.handleCloseClick}>Dismiss</button>
         </div>
       </div>
     `;
