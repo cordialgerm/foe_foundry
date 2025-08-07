@@ -1,4 +1,0 @@
-- Center title on mobile
-- Fix text to be justified on mobile
-- Fix nav pills on monster builder on mobile?
-- Add related monsters

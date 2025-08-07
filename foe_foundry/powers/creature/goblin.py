@@ -23,12 +23,13 @@ def is_goblin(s: BaseStatblock) -> bool:
 class GoblinPower(PowerWithStandardScoring):
     def __init__(
         self,
+        *,
         name: str,
         source: str,
         icon: str,
         power_level: float = MEDIUM_POWER,
         create_date: datetime | None = datetime(2025, 3, 22),
-        power_types: List[PowerType] | None = None,
+        power_types: List[PowerType],
         **score_args,
     ):
         super().__init__(
@@ -96,7 +97,9 @@ class _CacklingDetonation(GoblinPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         dc = stats.difficulty_class_easy
-        dmg = stats.target_value(dpr_proportion=1.4)
+        dmg = stats.target_value(
+            dpr_proportion=1.4
+        )  # abnormally high because the monster kamikazes
         bloodied = Condition.Bloodied
         feature = Feature(
             name="Cackling Detonation",

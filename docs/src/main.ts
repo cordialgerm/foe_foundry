@@ -12,4 +12,3 @@ import './components/GeneratorShowcase';
 import './components/SvgIconButton';
 import './components/EmailSubscribeCallout';
 import './pages/generate';
-import './pages/generate_v2';

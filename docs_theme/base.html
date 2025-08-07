@@ -67,12 +67,12 @@
     <div class="container-md pamphlet-container">
         {% include "homepage.j2.html" %}
     </div>
-    {% elif page and (page.url == '/generate/v2/' or page.url == '/generate/v2' or page.url == 'generate/v2/') %}
+    {% elif page and (page.url == '/generate/' or page.url == '/generate' or page.url == 'generate/') %}
     <div class="container-md pamphlet-container">
         {% include "generate.j2.html" %}
     </div>
     {% else %}
-    <div class="container pamphlet-container">
+    <div class="container-md pamphlet-container">
         <div class="row justify-content-center">
             {%- block content %}
             {% if "toc" not in page.meta.hide %}

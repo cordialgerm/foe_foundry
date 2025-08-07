@@ -76,3 +76,30 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   anchors.add('h1, h2, h3');
 });
+
+
+// Fix for MkDocs base.js applyTopPadding function
+// This overrides the problematic function to work with container-md
+function applyTopPadding() {
+  // Update various absolute positions to match where the main container
+  // starts. This is necessary for handling multi-line nav headers, since
+  // that pushes the main container down.
+  var container = document.querySelector('body > [class*="container"]');
+  if (!container) return; // Exit early if no container found
+  var offset = container.offsetTop;
+
+  document.documentElement.style.scrollPaddingTop = offset + 'px';
+  document.querySelectorAll('.bs-sidebar.affix').forEach(function (sidebar) {
+    sidebar.style.top = offset + 'px';
+  });
+}
+
+// Override the MkDocs function when the DOM is ready
+document.addEventListener("DOMContentLoaded", function () {
+  // Re-register the fixed function for resize events
+  window.removeEventListener('resize', applyTopPadding);
+  window.addEventListener('resize', applyTopPadding);
+
+  // Apply immediately
+  applyTopPadding();
+});
