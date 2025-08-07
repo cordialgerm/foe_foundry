@@ -69,7 +69,7 @@ def add_relations(monster: MonsterModel) -> MonsterWithRelations:
 
 
 @router.get("/new")
-def new_monsters(
+def get_new_monsters(
     limit: Annotated[int | None, Query(title="How many new monsters to return")] = None,
 ) -> list[MonsterMeta]:
     """
@@ -91,7 +91,7 @@ def new_monsters(
 
 
 @router.get("/{template_or_variant_key}")
-def get_template(template_or_variant_key: str) -> MonsterWithRelations:
+def get_monster(template_or_variant_key: str) -> MonsterWithRelations:
     ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
     if ref is None:
         raise HTTPException(status_code=404, detail="Template not found")
@@ -106,7 +106,7 @@ def get_template(template_or_variant_key: str) -> MonsterWithRelations:
 
 
 @router.get("/{template_or_variant_key}/loadouts")
-def get_loadout(template_or_variant_key: str) -> list[PowerLoadoutModel]:
+def get_monster_loadout(template_or_variant_key: str) -> list[PowerLoadoutModel]:
     ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
     if ref is None:
         raise HTTPException(status_code=404, detail="Monster not found")

@@ -434,12 +434,6 @@ export class PowerLoadout extends LitElement {
   private closeDropdown() {
     this.dropdownOpen = false;
     this.focusedIndex = -1;
-
-    // Return focus to the trigger button
-    setTimeout(() => {
-      const button = this.shadowRoot?.querySelector('.power-button') as HTMLElement;
-      button?.focus();
-    }, 50);
   }
 
   private renderLoadoutContent(loadout: PowerLoadoutData) {

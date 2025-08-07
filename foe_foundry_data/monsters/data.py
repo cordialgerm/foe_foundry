@@ -27,6 +27,15 @@ from foe_foundry.utils.image import (
 from ..jinja import render_statblock_fragment
 
 
+def _convert_markdown_to_html(markdown_text: str | None) -> str | None:
+    """Convert markdown to HTML, handling the import locally to avoid circular dependencies."""
+    if markdown_text is not None and len(markdown_text):
+        from ..markdown import markdown
+
+        return markdown(markdown_text).html
+    return None
+
+
 def _load_monster_html(template_key: str, base_url: str) -> str | None:
     html_path = (
         Path(__file__).parent.parent.parent
@@ -113,6 +122,8 @@ class MonsterModel:
 
     statblock_html: str
     template_html: str | None
+    overview_html: str | None
+    encounter_html: str | None
     has_lore: bool
     images: list[str]
     loadouts: list[PowerLoadoutModel]
@@ -177,6 +188,16 @@ class MonsterModel:
         else:
             template_html = None
 
+        if template.overview_md is not None and len(template.overview_md):
+            overview_html = _convert_markdown_to_html(template.overview_md)
+        else:
+            overview_html = None
+
+        if template.encounter_md is not None and len(template.encounter_md):
+            encounter_html = _convert_markdown_to_html(template.encounter_md)
+        else:
+            encounter_html = None
+
         statblock_html = render_statblock_fragment(stats)
 
         settings = template._settings_for_variant(
@@ -218,6 +239,8 @@ class MonsterModel:
             variant_name=variant.name,
             statblock_html=statblock_html,
             template_html=template_html,
+            overview_html=overview_html,
+            encounter_html=encounter_html,
             has_lore=template.lore_md is not None,
             images=all_images,
             loadouts=loadouts,

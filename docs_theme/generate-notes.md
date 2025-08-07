@@ -1,0 +1,4 @@
+- we need to fix the max-width on medium and smaller screens
+- at around 1000px we swtich to desktop view
+- in desktop view we should include max-width similar to normal container
+- in mobile view, we should include max-width only up to about 700px or so and from there start adding margins
