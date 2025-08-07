@@ -307,10 +307,8 @@ export class MonsterBuilder extends LitElement {
   private boundHandleTouchEnd = this.handleTouchEnd.bind(this);
 
   connectedCallback() {
-    console.debug('MonsterBuilder connectedCallback called');
     super.connectedCallback();
     this.setupResizeObserver();
-    // Remove setupTouchListeners from here - move to firstUpdated
   }
 
   disconnectedCallback() {
@@ -339,14 +337,10 @@ export class MonsterBuilder extends LitElement {
   }
 
   private setupTouchListeners() {
-    console.debug('setupTouchListeners called');
     if ('ontouchstart' in window) {
-      console.debug('Setting up touch listeners');
       this.addEventListener('touchstart', this.boundHandleTouchStart, { passive: true });
       this.addEventListener('touchmove', this.boundHandleTouchMove, { passive: true });
       this.addEventListener('touchend', this.boundHandleTouchEnd, { passive: true });
-    } else {
-      console.debug('Touch not supported');
     }
   }
 
@@ -359,11 +353,9 @@ export class MonsterBuilder extends LitElement {
   private handleTouchStart(e: TouchEvent) {
     // Only handle touch gestures on mobile
     if (!this.isMobile) {
-      console.debug('Touch ignored: not mobile');
       return;
     }
 
-    console.debug('Touch start detected', { isMobile: this.isMobile });
     const touch = e.touches[0];
     this.touchStartX = touch.clientX;
     this.touchStartY = touch.clientY;
@@ -382,7 +374,6 @@ export class MonsterBuilder extends LitElement {
     // If we're moving primarily horizontally, mark as potential swipe
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
       this.isSwipeInProgress = true;
-      console.debug('Swipe in progress', { deltaX, deltaY });
     }
   }
 
@@ -399,15 +390,6 @@ export class MonsterBuilder extends LitElement {
     const deltaY = touchEndY - this.touchStartY;
     const deltaTime = touchEndTime - this.touchStartTime;
 
-    console.debug('Touch end', {
-      deltaX,
-      deltaY,
-      deltaTime,
-      swipeThreshold: this.SWIPE_THRESHOLD,
-      timeThreshold: this.SWIPE_TIME_THRESHOLD,
-      verticalThreshold: this.VERTICAL_THRESHOLD
-    });
-
     // Reset swipe progress
     this.isSwipeInProgress = false;
 
@@ -417,14 +399,14 @@ export class MonsterBuilder extends LitElement {
       Math.abs(deltaX) > this.SWIPE_THRESHOLD &&
       Math.abs(deltaY) < this.VERTICAL_THRESHOLD
     ) {
-      console.debug('Valid swipe detected', { deltaX });
+      // Dismiss any active toast when swipe gesture completes
+      this.dismissActiveToast();
+
       if (deltaX > 0) {
         // Swipe right - go to statblock card
-        console.debug('Swipe right - switching to statblock tab');
         this.setMobileTab('statblock', true);
       } else {
         // Swipe left - go forward to edit
-        console.debug('Swipe left - switching to edit tab');
         this.setMobileTab('edit', true);
       }
 
@@ -432,26 +414,17 @@ export class MonsterBuilder extends LitElement {
       if ('vibrate' in navigator) {
         navigator.vibrate(50);
       }
-    } else {
-      console.debug('Swipe not valid', {
-        timeValid: deltaTime < this.SWIPE_TIME_THRESHOLD,
-        distanceValid: Math.abs(deltaX) > this.SWIPE_THRESHOLD,
-        verticalValid: Math.abs(deltaY) < this.VERTICAL_THRESHOLD
-      });
     }
   }
 
   private setMobileTab(tab: 'edit' | 'statblock', isSwipeGesture: boolean = false) {
-    console.debug('setMobileTab called', { tab, isSwipeGesture, currentTab: this.mobileTab });
+    // Dismiss any active toast when switching tabs manually (not via swipe)
+    if (!isSwipeGesture) {
+      this.dismissActiveToast();
+    }
 
     if (tab === 'statblock') {
       this.statblockUpdated = false;
-    }
-
-    // Track swipe gestures for analytics
-    if (isSwipeGesture) {
-      // You can add analytics tracking here if needed
-      console.debug(`Swipe gesture detected: switched to ${tab} tab`);
     }
 
     const oldTab = this.mobileTab;
@@ -459,8 +432,6 @@ export class MonsterBuilder extends LitElement {
 
     // Force a re-render to update the UI
     this.requestUpdate();
-
-    console.debug('Mobile tab changed', { from: oldTab, to: tab });
   }
 
   private getMobilePanelStyles(): string {
@@ -536,21 +507,29 @@ export class MonsterBuilder extends LitElement {
     });
   }
 
+  // Dismiss any active toast notifications
+  private dismissActiveToast() {
+    const toast = this.shadowRoot?.querySelector('toast-notification') as HTMLElement | null;
+    if (toast) {
+      toast.remove();
+    }
+  }
+
   // Show toast when powers change (mobile only)
   private showPowerChangedToast() {
-    // Only one toast at a time
-    let toast = this.shadowRoot?.querySelector('toast-notification') as HTMLElement | null;
-    if (!toast) {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(
-        `<toast-notification>
-          <span>Powers Changed, Swap to Statblock?</span>
-          </toast-notification>`,
-        'text/html'
-      );
-      toast = doc.body.firstElementChild as HTMLElement;
-      this.shadowRoot?.appendChild(toast);
-    }
+    // Ensure only one toast at a time by dismissing any existing toast first
+    this.dismissActiveToast();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(
+      `<toast-notification>
+        <span>Powers Changed, Swap to Statblock?</span>
+        </toast-notification>`,
+      'text/html'
+    );
+    const toast = doc.body.firstElementChild as HTMLElement;
+    this.shadowRoot?.appendChild(toast);
+
     // Listen for completion (progress fills or OK click)
     const onComplete = () => {
       this.setMobileTab('statblock');
@@ -572,13 +551,7 @@ export class MonsterBuilder extends LitElement {
 
 
   async firstUpdated() {
-    console.debug('MonsterBuilder firstUpdated called');
     this.checkIsMobile(); // Initial check
-    console.debug('Component initialized', {
-      isMobile: this.isMobile,
-      windowWidth: window.innerWidth,
-      touchSupport: 'ontouchstart' in window
-    });
 
     // Set up touch listeners after component is fully rendered
     this.setupTouchListeners();
