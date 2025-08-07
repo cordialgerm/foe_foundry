@@ -77,7 +77,7 @@ export class MonsterStatblock extends LitElement {
         .hp-changed,
         .damage-changed,
         .power-changed {
-            color: rgb(255, 255, 122);
+            color: var(--tertiary-color);
             animation: pop-in 0.8s ease;
             will-change: transform, opacity;
         }

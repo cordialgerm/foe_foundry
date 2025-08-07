@@ -173,12 +173,24 @@ export class ApiMonsterStore implements MonsterStore {
             });
         }
 
-        //Remove the highlight classes after 5 seconds
-        setTimeout(() => {
-            statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
-            statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
-            statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
-        }, 5000);
+        //Remove the highlight classes 5 seconds after the element becomes visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Element is now visible, start the 5-second timer
+                    setTimeout(() => {
+                        statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
+                        statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
+                        statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
+                    }, 5000);
+
+                    // Stop observing once we've triggered the timeout
+                    observer.unobserve(statblockElement);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when at least 10% of the element is visible
+
+        observer.observe(statblockElement);
         return statblockElement;
     }
 }
