@@ -14,6 +14,8 @@ from foe_foundry.powers import PowerSelection
 from foe_foundry.powers.legendary import get_legendary_actions
 from foe_foundry.utils import find_lore, find_monster_image
 from foe_foundry.utils.monster_content import (
+    extract_encounters_content,
+    extract_overview_content,
     extract_tagline,
     extract_yaml_frontmatter,
     strip_yaml_frontmatter,
@@ -42,6 +44,8 @@ class MonsterTemplate:
     environments: list[EnvironmentAffinity] = field(default_factory=list)
     is_sentient_species: bool = False
     lore_md: str | None = field(init=False)
+    overview_md: str | None = field(init=False)
+    encounter_md: str | None = field(init=False)
     create_date: datetime = field(init=False)
 
     def __post_init__(self):
@@ -68,9 +72,13 @@ class MonsterTemplate:
             if tagline is not None:
                 self.tag_line = tagline.strip()
             self.lore_md = lore_md
+            self.overview_md = extract_overview_content(lore_md)
+            self.encounter_md = extract_encounters_content(lore_md)
             self.create_date = self._get_create_date(lore_path)
         else:
             self.lore_md = None
+            self.overview_md = None
+            self.encounter_md = None
             self.create_date = datetime.now(timezone.utc)
 
     @cached_property

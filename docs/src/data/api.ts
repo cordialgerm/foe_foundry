@@ -48,6 +48,25 @@ export class ApiMonsterStore implements MonsterStore {
 
         const data = await response.json();
 
+        const overviewHtmlString = data?.overview_html;
+        const encounterHtmlString = data?.encounter_html;
+
+        const parser = new DOMParser();
+
+        // Helper function to wrap all body children in a div
+        const wrapBodyChildren = (htmlString: string): HTMLElement => {
+            const doc = parser.parseFromString(htmlString, 'text/html');
+            const wrapper = document.createElement('div');
+            // Move all body children to the wrapper
+            while (doc.body.firstChild) {
+                wrapper.appendChild(doc.body.firstChild);
+            }
+            return wrapper;
+        };
+
+        const overviewElement = overviewHtmlString ? wrapBodyChildren(overviewHtmlString) : null;
+        const encounterElement = encounterHtmlString ? wrapBodyChildren(encounterHtmlString) : null;
+
         // Map MonsterModel to Monster
         return {
             key: data.key ?? key,
@@ -89,7 +108,9 @@ export class ApiMonsterStore implements MonsterStore {
             previousTemplate: {
                 monsterKey: data.previous_template.monster_key,
                 templateKey: data.previous_template.template_key
-            }
+            },
+            overviewElement: overviewElement,
+            encounterElement: encounterElement
         };
     }
 
@@ -152,12 +173,24 @@ export class ApiMonsterStore implements MonsterStore {
             });
         }
 
-        //Remove the highlight classes after 5 seconds
-        setTimeout(() => {
-            statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
-            statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
-            statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
-        }, 5000);
+        //Remove the highlight classes 5 seconds after the element becomes visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Element is now visible, start the 5-second timer
+                    setTimeout(() => {
+                        statblockElement.querySelectorAll('.damage-changed').forEach(el => el.classList.remove('damage-changed'));
+                        statblockElement.querySelectorAll('.hp-changed').forEach(el => el.classList.remove('hp-changed'));
+                        statblockElement.querySelectorAll('.power-changed').forEach(el => el.classList.remove('power-changed'));
+                    }, 5000);
+
+                    // Stop observing once we've triggered the timeout
+                    observer.unobserve(statblockElement);
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when at least 10% of the element is visible
+
+        observer.observe(statblockElement);
         return statblockElement;
     }
 }

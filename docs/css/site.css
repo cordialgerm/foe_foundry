@@ -368,6 +368,10 @@ hr {
     scroll-behavior: smooth;
 }
 
+.pamphlet-container p {
+    text-align: justify;
+}
+
 .pamphlet-main .column-container {
     columns: 2 var(--column-size);
 }
@@ -548,6 +552,12 @@ a.patreon::after {
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+    .nav-link.patreon::after {
+        display: none !important;
+    }
 }
 
 .patreon.big-link {
