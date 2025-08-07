@@ -1,5 +1,5 @@
-<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
+<div class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
+    <div class="container-md">
 
         {%- block site_name %}
         <a class="navbar-brand" href="{{ nav.homepage.url|url }}">{{ config.site_name }}</a>
@@ -47,13 +47,14 @@
                 {%- if 'search' in config.plugins %}
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i>Search
+                        <i class="fa fa-search"></i>
+                        <span class="d-none d-lg-inline">Search</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ config.site_url + 'support/' | url }}" class="nav-link patreon">
                         <span class="d-none d-xl-inline">Support Foe Foundry</span>
-                        <span class="d-inline d-xl-none d-lg-inline d-md-inline d-sm-inline d-none">Patreon</span>
+                        <span class="d-inline d-xl-none">Patreon</span>
                     </a>
                 </li>
                 {%- endif %}

@@ -154,9 +154,9 @@ export class MonsterCard extends LitElement {
 
     .lore-content,
     .encounter-content {
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 0.85rem;
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 0.82rem;
       text-align: justify;
       max-height: calc(80 + var(--max-text-content-height));
       overflow: hidden;
@@ -233,7 +233,9 @@ export class MonsterCard extends LitElement {
     .encounter-content ul,
     .lore-content ol,
     .encounter-content ol {
-      padding-left: 1rem;
+      padding-left: 0.8rem;
+      margin-top:0.25rem;
+      margin-bottom: 0.25rem;
     }
 
     .encounter-content h2,

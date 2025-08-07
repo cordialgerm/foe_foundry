@@ -463,7 +463,7 @@ export class MonsterBuilder extends LitElement {
         </a>`;
 
     return html`
-      <div class="container pamphlet-main">
+      <div class="pamphlet-main">
         <div class="monster-header">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <h1 class="monster-title">

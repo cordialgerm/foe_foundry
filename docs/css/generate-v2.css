@@ -27,3 +27,11 @@ dd {
     padding-left: 0.5rem;
     border-left: 3px solid var(--fg-color);
 }
+
+@media (min-width: 760px) {
+
+    .container,
+    .container-sm {
+        max-width: 740px;
+    }
+}

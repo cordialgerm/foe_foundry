@@ -550,6 +550,12 @@ a.patreon::after {
     vertical-align: middle;
 }
 
+@media (max-width: 1000px) {
+    .nav-link.patreon::after {
+        display: none !important;
+    }
+}
+
 .patreon.big-link {
     font-size: 1.5em;
 }
