@@ -1,34 +1,40 @@
-if (window.location.pathname === '/generate/' || window.location.pathname === '/generate') {
+if (window.location.pathname === '/generate' || window.location.pathname === '/generate/') {
     console.log('Loaded generator page');
+    window.addEventListener('monster-key-changed', updateUrlOnMonsterKeyChange);
 
-    // Desktop browser check (screen width > 1000px)
-    if (window.innerWidth > 1000) {
-        setupBetaBanner();
+    // Handle URL parameters on page load
+    initializeMonsterBuilderFromUrlParams();
+}
+
+function updateUrlOnMonsterKeyChange(event: Event) {
+    const customEvent = event as CustomEvent;
+    const newKey = customEvent.detail?.monsterKey;
+    if (typeof newKey === 'string') {
+        const url = new URL(window.location.href);
+        url.searchParams.set('monster-key', newKey);
+        window.history.replaceState({}, '', url.toString());
     }
 }
 
-function setupBetaBanner() {
-    const banner = document.getElementById('site-banner');
-    if (banner) {
-        const betaMsg = document.createElement('div');
-        betaMsg.className = 'beta-banner my-2';
+function initializeMonsterBuilderFromUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
 
-        const targetParams = new URLSearchParams({
-            utm_source: 'generate_page',
-            utm_medium: 'banner',
-            utm_campaign: 'beta'
-        });
+    // Check for monster-key parameter first
+    let monsterKey = urlParams.get('monster-key');
 
-        const existingParams = new URLSearchParams(window.location.search);
-        const monsterKey = existingParams.get('monster-key');
-        const template = existingParams.get('template');
-        if (monsterKey) targetParams.set('monster-key', monsterKey);
-        if (template) targetParams.set('template', template);
+    // If no monster-key, check for template parameter
+    if (!monsterKey) {
+        const template = urlParams.get('template');
+        if (template) {
+            monsterKey = template;
+        }
+    }
 
-        const targetUrl = `/generate/v2/?${targetParams.toString()}`;
-        betaMsg.innerHTML = `
-                <span>Do you want to try the new <a href="${targetUrl}" class="monster-generator-link"><svg-icon src="anvil-impact" jiggle="jiggleUntilClick"></svg-icon>Interactive Monster Generator</a> (Beta)?</span>
-            `;
-        banner.appendChild(betaMsg);
+    // If we have a monster key from URL params, update the monster-builder element
+    if (monsterKey) {
+        const monsterBuilder = document.querySelector('monster-builder');
+        if (monsterBuilder) {
+            monsterBuilder.setAttribute('monster-key', monsterKey);
+        }
     }
 }

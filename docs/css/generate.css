@@ -1,74 +1,13 @@
-#site-banner {
-    display: flex;
-    justify-content: center;
+.container.pamphlet-container {
+    margin-top: 0px !important;
 }
 
-.beta-banner {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    background: var(--muted-color);
-    color: #eee;
-    padding: 0.75em 1em;
-    border-bottom: 1px solid var(--primary-color);
-    font-family: var(--primary-font);
-    color: var(--fg-color);
+.container-md {
+    padding-top: 0px !important;
 }
 
-.beta-banner span {
-    display: inline-block;
-    animation: beta-banner-pulse 0.8s ease-in-out 0s 2;
-}
-
-@keyframes beta-banner-pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    40% {
-        transform: scale(1.05);
-    }
-
-    60% {
-        transform: scale(1.02);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.beta-banner a {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-.beta-banner button {
-    background: none;
-    border: none;
-    color: #aaa;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.beta-banner svg-icon {
-    width: 2em;
-    height: 2em;
-    vertical-align: text-bottom;
-}
-
-
-.generator-reroll {
-    font-weight: bold;
-    font-size: 1.5em;
-    font-family: var(--header-font);
-}
-
-.generator-reroll .reroll-button {
-    font-size: 1.5em;
-    color: var(--bg-color);
+.monster-builder {
+    margin-top: 0px !important;
 }
 
 /* FAQ Styling */
@@ -87,4 +26,12 @@ dd {
     color: var(--fg-color);
     padding-left: 0.5rem;
     border-left: 3px solid var(--fg-color);
+}
+
+@media (min-width: 760px) {
+
+    .container,
+    .container-sm {
+        max-width: 740px;
+    }
 }
