@@ -148,6 +148,7 @@ export class MonsterBuilder extends LitElement {
         display: flex;
         gap: 0.5rem;
         margin-bottom: 1rem;
+        position: relative;
       }
 
       .mobile-tab {
@@ -211,10 +212,21 @@ export class MonsterBuilder extends LitElement {
       /* Tab-controlled panel visibility */
       .card-panel {
         display: var(--card-panel-display, block);
+        transition: opacity 0.2s ease-in-out;
       }
 
       .statblock-panel {
         display: var(--statblock-panel-display, none);
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      /* Smooth panel transitions when swiping */
+      .panels-container {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .panels-container.swiping {
+        pointer-events: none; /* Prevent interference during swipe */
       }
 
       .monster-header {
@@ -276,16 +288,35 @@ export class MonsterBuilder extends LitElement {
   @property({ type: Boolean })
   isMobile: boolean = false;
 
+  @property({ type: Boolean })
+  isSwipeInProgress: boolean = false;
+
   private resizeObserver?: ResizeObserver;
 
+  // Touch gesture properties
+  private touchStartX: number = 0;
+  private touchStartY: number = 0;
+  private touchStartTime: number = 0;
+  private readonly SWIPE_THRESHOLD = 50; // Minimum distance for a swipe
+  private readonly SWIPE_TIME_THRESHOLD = 700; // Maximum time for a swipe (ms)
+  private readonly VERTICAL_THRESHOLD = 100; // Maximum vertical movement for horizontal swipe
+
+  // Bound event handlers to maintain reference for removal
+  private boundHandleTouchStart = this.handleTouchStart.bind(this);
+  private boundHandleTouchMove = this.handleTouchMove.bind(this);
+  private boundHandleTouchEnd = this.handleTouchEnd.bind(this);
+
   connectedCallback() {
+    console.debug('MonsterBuilder connectedCallback called');
     super.connectedCallback();
     this.setupResizeObserver();
+    // Remove setupTouchListeners from here - move to firstUpdated
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     this.resizeObserver?.disconnect();
+    this.removeTouchListeners();
   }
 
   private setupResizeObserver() {
@@ -296,14 +327,140 @@ export class MonsterBuilder extends LitElement {
   }
 
   private checkIsMobile() {
+    const wasMobile = this.isMobile;
     this.isMobile = LAYOUT_CONFIG.isMobile(window.innerWidth);
+    if (wasMobile !== this.isMobile) {
+      console.debug('Mobile state changed', {
+        isMobile: this.isMobile,
+        windowWidth: window.innerWidth,
+        breakpoint: LAYOUT_CONFIG.MOBILE_BREAKPOINT
+      });
+    }
   }
 
-  private setMobileTab(tab: 'edit' | 'statblock') {
+  private setupTouchListeners() {
+    console.debug('setupTouchListeners called');
+    if ('ontouchstart' in window) {
+      console.debug('Setting up touch listeners');
+      this.addEventListener('touchstart', this.boundHandleTouchStart, { passive: true });
+      this.addEventListener('touchmove', this.boundHandleTouchMove, { passive: true });
+      this.addEventListener('touchend', this.boundHandleTouchEnd, { passive: true });
+    } else {
+      console.debug('Touch not supported');
+    }
+  }
+
+  private removeTouchListeners() {
+    this.removeEventListener('touchstart', this.boundHandleTouchStart);
+    this.removeEventListener('touchmove', this.boundHandleTouchMove);
+    this.removeEventListener('touchend', this.boundHandleTouchEnd);
+  }
+
+  private handleTouchStart(e: TouchEvent) {
+    // Only handle touch gestures on mobile
+    if (!this.isMobile) {
+      console.debug('Touch ignored: not mobile');
+      return;
+    }
+
+    console.debug('Touch start detected', { isMobile: this.isMobile });
+    const touch = e.touches[0];
+    this.touchStartX = touch.clientX;
+    this.touchStartY = touch.clientY;
+    this.touchStartTime = Date.now();
+    this.isSwipeInProgress = false;
+  }
+
+  private handleTouchMove(e: TouchEvent) {
+    // Only handle touch gestures on mobile
+    if (!this.isMobile) return;
+
+    const touch = e.touches[0];
+    const deltaX = touch.clientX - this.touchStartX;
+    const deltaY = touch.clientY - this.touchStartY;
+
+    // If we're moving primarily horizontally, mark as potential swipe
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
+      this.isSwipeInProgress = true;
+      console.debug('Swipe in progress', { deltaX, deltaY });
+    }
+  }
+
+  private handleTouchEnd(e: TouchEvent) {
+    // Only handle touch gestures on mobile
+    if (!this.isMobile) return;
+
+    const touch = e.changedTouches[0];
+    const touchEndX = touch.clientX;
+    const touchEndY = touch.clientY;
+    const touchEndTime = Date.now();
+
+    const deltaX = touchEndX - this.touchStartX;
+    const deltaY = touchEndY - this.touchStartY;
+    const deltaTime = touchEndTime - this.touchStartTime;
+
+    console.debug('Touch end', {
+      deltaX,
+      deltaY,
+      deltaTime,
+      swipeThreshold: this.SWIPE_THRESHOLD,
+      timeThreshold: this.SWIPE_TIME_THRESHOLD,
+      verticalThreshold: this.VERTICAL_THRESHOLD
+    });
+
+    // Reset swipe progress
+    this.isSwipeInProgress = false;
+
+    // Check if this is a valid swipe gesture
+    if (
+      deltaTime < this.SWIPE_TIME_THRESHOLD &&
+      Math.abs(deltaX) > this.SWIPE_THRESHOLD &&
+      Math.abs(deltaY) < this.VERTICAL_THRESHOLD
+    ) {
+      console.debug('Valid swipe detected', { deltaX });
+      if (deltaX > 0) {
+        // Swipe right - go to statblock card
+        console.debug('Swipe right - switching to statblock tab');
+        this.setMobileTab('statblock', true);
+      } else {
+        // Swipe left - go forward to edit
+        console.debug('Swipe left - switching to edit tab');
+        this.setMobileTab('edit', true);
+      }
+
+      // Provide haptic feedback if available
+      if ('vibrate' in navigator) {
+        navigator.vibrate(50);
+      }
+    } else {
+      console.debug('Swipe not valid', {
+        timeValid: deltaTime < this.SWIPE_TIME_THRESHOLD,
+        distanceValid: Math.abs(deltaX) > this.SWIPE_THRESHOLD,
+        verticalValid: Math.abs(deltaY) < this.VERTICAL_THRESHOLD
+      });
+    }
+  }
+
+  private setMobileTab(tab: 'edit' | 'statblock', isSwipeGesture: boolean = false) {
+    console.debug('setMobileTab called', { tab, isSwipeGesture, currentTab: this.mobileTab });
+
     if (tab === 'statblock') {
       this.statblockUpdated = false;
     }
+
+    // Track swipe gestures for analytics
+    if (isSwipeGesture) {
+      // You can add analytics tracking here if needed
+      console.debug(`Swipe gesture detected: switched to ${tab} tab`);
+    }
+
+    const oldTab = this.mobileTab;
     this.mobileTab = tab;
+
+    // Force a re-render to update the UI
+    this.requestUpdate();
+
+    console.debug('Mobile tab changed', { from: oldTab, to: tab });
   }
 
   private getMobilePanelStyles(): string {
@@ -415,7 +572,16 @@ export class MonsterBuilder extends LitElement {
 
 
   async firstUpdated() {
+    console.debug('MonsterBuilder firstUpdated called');
     this.checkIsMobile(); // Initial check
+    console.debug('Component initialized', {
+      isMobile: this.isMobile,
+      windowWidth: window.innerWidth,
+      touchSupport: 'ontouchstart' in window
+    });
+
+    // Set up touch listeners after component is fully rendered
+    this.setupTouchListeners();
 
     this.shadowRoot?.addEventListener('monster-changed', async (event: any) => {
       const monsterCard = event.detail.monsterCard;
@@ -514,7 +680,7 @@ export class MonsterBuilder extends LitElement {
         ` : ''}
 
         <!-- Single container with both panels -->
-        <div class="panels-container"
+        <div class="panels-container ${this.isSwipeInProgress ? 'swiping' : ''}"
           style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
           <div class="card-panel" id="card-panel" tabindex="-1">
