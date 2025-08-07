@@ -147,7 +147,6 @@ export class MonsterCard extends LitElement {
     /* Mobile responsiveness */
     @media (max-width: 480px) {
       .content-tab {
-        font-size: 0.8rem;
         padding: 0.6rem 0.5rem;
       }
     }

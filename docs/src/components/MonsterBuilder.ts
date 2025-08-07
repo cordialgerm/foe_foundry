@@ -59,6 +59,7 @@ export class MonsterBuilder extends LitElement {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     .nav-pill {
       background: var(--bs-dark);
@@ -218,6 +219,8 @@ export class MonsterBuilder extends LitElement {
 
       .monster-header {
         margin-bottom: 1rem;
+        align-items: center;
+        text-align: center;
       }
     }
 

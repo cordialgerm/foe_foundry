@@ -226,7 +226,7 @@ class _VileVomit(PoisonPower):
 
     def generate_features_inner(self, stats: BaseStatblock) -> List[Feature]:
         poisoned = Condition.Poisoned
-        dmg = stats.target_value(dpr_proportion=1.2)
+        dmg = stats.target_value(dpr_proportion=0.7)
         dc = stats.difficulty_class_easy
         feature = Feature(
             name="Vile Vomit",

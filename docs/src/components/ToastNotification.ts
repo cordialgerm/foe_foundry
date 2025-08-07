@@ -50,6 +50,7 @@ export class ToastNotification extends LitElement {
     .message-container {
       margin-bottom: 0.5rem;
       text-align: center;
+      padding: 2rem;
     }
     .progress-bar {
       width: 100%;

@@ -368,6 +368,10 @@ hr {
     scroll-behavior: smooth;
 }
 
+.pamphlet-container p {
+    text-align: justify;
+}
+
 .pamphlet-main .column-container {
     columns: 2 var(--column-size);
 }
