@@ -49,12 +49,59 @@ export class MonsterBuilder extends LitElement {
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .monster-title-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+    }
+
     .monster-title {
       font-size: 2.5rem !important;
       font-weight: bold;
-      margin-top: 3px;
-      margin-bottom: 3px;
+      margin: 3px 0;
+      flex: 1;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
+    .nav-arrow {
+      font-size: 3rem;
+      text-decoration: none;
+      cursor: pointer;
+      color: var(--primary-color) !important;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      transition: transform 0.2s ease, color 0.2s ease;
+      border-radius: 8px;
+      border: 2px solid transparent;
+    }
+
+    .nav-arrow:hover,
+    .nav-arrow:focus {
+      transform: scale(1.1);
+    }
+
+    .nav-arrow:active {
+      transform: scale(0.95);
+    }
+
+    .nav-arrow.prev {
+      justify-content: flex-start;
+    }
+
+    .nav-arrow.next {
+      justify-content: flex-end;
+    }
+
     .nav-pills {
       display: flex;
       flex-wrap: wrap;
@@ -232,7 +279,25 @@ export class MonsterBuilder extends LitElement {
       .monster-header {
         margin-bottom: 1rem;
         align-items: center;
-        text-align: center;
+      }
+
+      .monster-title-nav {
+        width: 100%;
+      }
+
+      .monster-title {
+        font-size: 2rem !important;
+      }
+
+      .nav-arrow {
+        font-size: 2.5rem;
+        width: 50px;
+        height: 50px;
+      }
+
+      .nav-arrow:hover,
+      .nav-arrow:focus {
+        border-radius: 6px;
       }
     }
 
@@ -247,6 +312,23 @@ export class MonsterBuilder extends LitElement {
     @media (max-width: ${LAYOUT_CONFIG.SMALL_MOBILE}px) {
       .mobile-tab {
         font-size: 0.9rem;
+      }
+
+      .monster-title {
+        font-size: 1.5rem !important;
+      }
+
+      .nav-arrow {
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-arrow:hover,
+      .nav-arrow:focus {
+        border-radius: 4px;
+      }
+    }
         padding: 0.6rem 0.8rem;
       }
 
@@ -590,7 +672,9 @@ export class MonsterBuilder extends LitElement {
         e.preventDefault();
         this.onMonsterKeyChanged(monster.previousTemplate.monsterKey);
       }}
-            style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-right: 1rem; color: var(--primary-color)">
+            class="nav-arrow prev"
+            aria-label="Previous monster template"
+            title="Previous monster template">
             &lt;
         </a>`;
 
@@ -600,19 +684,21 @@ export class MonsterBuilder extends LitElement {
         e.preventDefault();
         this.onMonsterKeyChanged(monster.nextTemplate.monsterKey);
       }}
-            style="font-size: 2rem; text-decoration: none; cursor: pointer; padding-left: 1rem; color: var(--primary-color)">
+            class="nav-arrow next"
+            aria-label="Next monster template"
+            title="Next monster template">
             &gt;
         </a>`;
 
     return html`
       <div class="pamphlet-main">
         <div class="monster-header">
-          <div style="display: flex; align-items: center; gap: 1rem;">
+          <div class="monster-title-nav">
+            ${previousTemplate}
             <h1 class="monster-title">
-              ${previousTemplate}
               <span>${monster.monsterTemplateName}</span>
-              ${nextTemplate}
             </h1>
+            ${nextTemplate}
           </div>
           <div class="nav-pills">
             ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
@@ -628,7 +714,6 @@ export class MonsterBuilder extends LitElement {
           </div>
         </div>
 
-        <!-- Mobile tabs (only shown on mobile) -->
         ${this.isMobile ? html`
           <div class="mobile-tabs">
             <button
@@ -652,7 +737,6 @@ export class MonsterBuilder extends LitElement {
           </div>
         ` : ''}
 
-        <!-- Single container with both panels -->
         <div class="panels-container ${this.isSwipeInProgress ? 'swiping' : ''}"
           style="${this.isMobile ? this.getMobilePanelStyles() : ''}">
 
