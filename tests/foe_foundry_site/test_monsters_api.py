@@ -49,4 +49,5 @@ def test_skeleton_related_monsters():
     response = client.get("/api/v1/monsters/skeleton")
     assert response.status_code == 200
     data = response.json()
-    pass
+    related_monsters = data["related_monsters"]
+    assert len(related_monsters) > 20  # lots of undead
