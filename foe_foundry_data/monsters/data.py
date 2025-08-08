@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from datetime import datetime
 from pathlib import Path
-from typing import List
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -14,7 +13,6 @@ from foe_foundry.creatures import (
     MonsterTemplate,
     MonsterVariant,
 )
-from foe_foundry.powers import Power, PowerLoadout
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import name_to_key
 from foe_foundry.utils.html import fix_relative_paths, remove_h2_sections
@@ -24,7 +22,14 @@ from foe_foundry.utils.image import (
     is_grayscaleish,
 )
 
+from ..base import MonsterInfoModel, PowerLoadoutModel
+from ..families import load_families
 from ..jinja import render_statblock_fragment
+
+
+@dataclass(kw_only=True)
+class RelatedMonsterModel(MonsterInfoModel):
+    same_template: bool
 
 
 def _convert_markdown_to_html(markdown_text: str | None) -> str | None:
@@ -53,59 +58,6 @@ def _load_monster_html(template_key: str, base_url: str) -> str | None:
     cleaned_html = remove_h2_sections(monster_html, h2_ids_to_remove)
     cleaned_html = fix_relative_paths(cleaned_html, base_url)
     return cleaned_html
-
-
-@dataclass(kw_only=True)
-class PowerRef:
-    key: str
-    name: str
-    power_category: str
-    source: str
-    theme: str
-    icon: str
-
-    @staticmethod
-    def from_power(power: Power) -> PowerRef:
-        return PowerRef(
-            key=power.key,
-            name=power.name,
-            power_category=power.power_category.name,
-            source=power.source or "UNKNOWN",
-            theme=power.theme or "UNKNOWN",
-            icon=power.icon or "",
-        )
-
-
-@dataclass(kw_only=True)
-class PowerLoadoutModel:
-    key: str
-    name: str
-    flavor_text: str
-    selection_count: int
-    locked: bool
-    replace_with_species_powers: bool
-    powers: List[PowerRef]
-
-    @staticmethod
-    def from_loadout(loadout: PowerLoadout):
-        return PowerLoadoutModel(
-            key=loadout.key,
-            name=loadout.name,
-            flavor_text=loadout.flavor_text,
-            selection_count=loadout.selection_count,
-            locked=loadout.locked,
-            replace_with_species_powers=loadout.replace_with_species_powers,
-            powers=[PowerRef.from_power(power) for power in loadout.powers],
-        )
-
-
-@dataclass(kw_only=True)
-class RelatedMonsterModel:
-    key: str
-    name: str
-    cr: float
-    template: str
-    same_template: bool
 
 
 @dataclass(kw_only=True)
@@ -216,6 +168,7 @@ class MonsterModel:
         if not background_image_path.exists():
             background_image = None
 
+        # monsters in the same template are always related
         related_monsters = [
             RelatedMonsterModel(
                 key=m.key,
@@ -226,6 +179,24 @@ class MonsterModel:
             )
             for m in template.monsters
         ]
+        related_monster_keys = {m.key for m in related_monsters}
+
+        # Also look for any monsters that are in the same family as this monster
+        families = [
+            f for f in load_families() if stats.key in {m.key for m in f.monsters}
+        ]
+        for family in families:
+            for m in family.monsters:
+                if m.key not in related_monster_keys:
+                    related_monsters.append(
+                        RelatedMonsterModel(
+                            key=m.key,
+                            name=m.name,
+                            cr=m.cr,
+                            template=template.name,
+                            same_template=False,
+                        )
+                    )
 
         return MonsterModel(
             name=stats.name,

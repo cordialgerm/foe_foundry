@@ -28,7 +28,7 @@ export class MonsterCard extends LitElement {
   @property({ type: String, attribute: 'monster-key' })
   monsterKey = '';
 
-  @property({ type: String }) contentTab: 'powers' | 'lore' | 'encounters' = 'powers';
+  @property({ type: String }) contentTab: 'powers' | 'similar' | 'lore' | 'encounters' = 'powers';
 
   private loreRef = createRef<HTMLDivElement>();
   private encounterRef = createRef<HTMLDivElement>();
@@ -151,6 +151,10 @@ export class MonsterCard extends LitElement {
       }
     }
 
+    .tab-content-container {
+      min-height: 300px;
+    }
+
     .lore-content,
     .encounter-content {
       padding-left: 8px;
@@ -222,7 +226,8 @@ export class MonsterCard extends LitElement {
     }
 
     .lore-content p,
-    .encounter-content p {
+    .encounter-content p,
+    .similiar-content p {
       margin-top: 0.25rem;
       margin-bottom: 0.25rem;
       text-align: justify;
@@ -253,7 +258,8 @@ export class MonsterCard extends LitElement {
     }
 
     .lore-content a,
-    .encounter-content a {
+    .encounter-content a,
+    .similar-content a {
       color: var(--fg-color);
       text-decoration: underline;
     }
@@ -314,7 +320,7 @@ export class MonsterCard extends LitElement {
     }
   }
 
-  setContentTab(tab: 'powers' | 'lore' | 'encounters'): void {
+  setContentTab(tab: 'powers' | 'lore' | 'encounters' | 'similar'): void {
     this.contentTab = tab;
     this.requestUpdate();
   }
@@ -500,6 +506,10 @@ export class MonsterCard extends LitElement {
                       @click=${() => this.setContentTab('powers')}>
                 Powers
               </button>
+              <button class="content-tab ${this.contentTab === 'similar' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('similar')}>
+                Similar
+              </button>
               <button class="content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
                       @click=${() => this.setContentTab('lore')}>
                 Lore
@@ -551,6 +561,18 @@ export class MonsterCard extends LitElement {
                   <div ${ref(this.encounterRef)}>
                     ${!monster.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
                   </div>
+                </div>
+              </div>
+              <div class="tab-content similar-content ${this.contentTab === 'similar' ? 'active' : ''}" data-content="similar">
+                <div class="content-body">
+                  <ul>
+                    ${monster.relatedMonsters.map(
+          related => html`
+                      <li>
+                        <a href="/monsters/${related.key}/">${related.name} (${related.cr})</a>
+                      </li>
+                    `)}
+                  </ul>
                 </div>
               </div>
             </div>

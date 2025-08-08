@@ -4,9 +4,13 @@ short_title: Orcs and Goblinoids - Statblocks, Lore, and Encounters
 description: Explore orc and goblinoid lore, statblocks, and unforgettable encounter ideas. Fuel your 5E campaign with ancestral fury, goblin mischief, and warband mayhem.
 image: img/monsters/orc-soldier.webp
 json_ld: true
+is_monster_family: true
 ---
 
 # Orcs and Goblinoids
+
+*Chaotic Warriors Fueled by Bloodrage or Mischief*
+
 
 [Orcs](../monsters/orc.md) and [Goblins](../monsters/goblin.md) are two branches from divergent roots: one born of blood and conquest, the other of mischief and mayhem. Yet both thrive in the margins of civilization, forming warbands, tribes, and hordes that raid, bicker, and occasionally rise to terrifying prominence.
 

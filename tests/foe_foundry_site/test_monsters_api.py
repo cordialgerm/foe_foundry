@@ -43,3 +43,10 @@ def test_get_loadout():
         assert "name" in loadout
         assert "powers" in loadout
         assert isinstance(loadout["powers"], list)
+
+
+def test_skeleton_related_monsters():
+    response = client.get("/api/v1/monsters/skeleton")
+    assert response.status_code == 200
+    data = response.json()
+    pass

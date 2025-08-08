@@ -4,9 +4,12 @@ short_title: Fanatics & the Faithful
 description: Discover flavorful priest, cultist, and knight statblocks for your 5E campaign. Explore divine lore and dark devotion for unforgettable encounters.
 image: img/monsters/priest.webp
 json_ld: true
+is_monster_family: true
 ---
 
 # Fanatics and Faithful
+
+*Faithful Followers of the Occult or Divine*
 
 !!! info "Need tips for how to run religion and faith in your RPG?"
     The default lore of Foe Foundry is a [**Low Magic Setting**](../topics/faith.md) where divine beings do not directly communicate with mortals. If you run a setting where the gods are known to exist and actively intervene in the Mortal Realms then you can easily modify the lore to include direct involvement by the Gods. But it is much more difficult to remove the Gods from the Machine, so the lore is presented here with the least assumptions being made about your setting.
