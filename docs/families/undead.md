@@ -52,7 +52,7 @@ Here are 20 unforgettable undead encounters ready for your next RPG session. Exp
 | 17 | The party finds a wounded guard calling for help. If healed or aided, the figure flickers and reveals it is a [[Specter]] repeating its death throes. The act of kindness awakens its fragmented mind, and it lashes out in panic unless calmed. |
 | 18 | In a ruined bedchamber, a [[Banshee]] cradles a bundle of bones in a broken cradle. She demands the party sing her child back to sleep. |
 | 19 | A [[Ghost]] blocks the only path forward, whispering "I must not be forgotten." The spirit demands someone speak its name in order to pass. |
-| 20 | The air grows thin and cold as the party enters a forgotten tomb. One of them stumbles, but their [[Shadow]] doesn't get up, rising instead as the herald of the [[Wraith]] within. The herald demands a blood sacrifice for its master. | |
+| 20 | The air grows thin and cold as the party enters a forgotten tomb. One of them stumbles, but their [[Shadow]] doesn't get up, rising instead as the herald of the [[Wraith]] within. The herald demands a blood sacrifice for its master. |
 
 ### Adventures
 
