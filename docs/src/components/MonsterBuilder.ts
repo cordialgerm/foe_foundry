@@ -328,9 +328,6 @@ export class MonsterBuilder extends LitElement {
       .nav-arrow:focus {
         border-radius: 4px;
       }
-    }
-        padding: 0.6rem 0.8rem;
-      }
 
       .container.pamphlet-main {
         padding: 0.5rem;
