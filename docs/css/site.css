@@ -560,6 +560,15 @@ a.patreon::after {
     }
 }
 
+@media (max-width: 1000px) and (min-width: 800px) {
+
+    .navbar a[href$="generate/" i]::before,
+    .navbar a[href$="monsters/" i]::before,
+    .navbar a[href$="powers/all/" i]::before {
+        display: none !important;
+    }
+}
+
 .patreon.big-link {
     font-size: 1.5em;
 }
