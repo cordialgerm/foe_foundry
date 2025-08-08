@@ -75,11 +75,11 @@
     <div class="container-md pamphlet-container">
         <div class="row justify-content-center">
             {%- block content %}
-            {% if "toc" not in page.meta.hide %}
-            <div class="col-lg-3 d-print-none">{% include "toc.html" %}</div>
-            <div class="col-lg-9 pamphlet-main" role="main">{% include "content.html" %}</div>
+            {% if page and "toc" not in page.meta.hide %}
+            <div class="d-none d-xl-block col-xl-3 d-print-none">{% include "toc.html" %}</div>
+            <div class="col-12 col-xl-9 pamphlet-main" role="main">{% include "content.html" %}</div>
             {% else %}
-            <div class="col-lg-9 pamphlet-main" role="main">{% include "content.html" %}</div>
+            <div class="col-12 pamphlet-main" role="main">{% include "content.html" %}</div>
             {% endif %}
             {%- endblock %}
         </div>
