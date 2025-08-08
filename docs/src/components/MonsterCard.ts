@@ -2,7 +2,6 @@ import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ref, createRef } from 'lit/directives/ref.js';
 import { initializeMonsterStore } from '../data/api';
-import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
 import { Task } from '@lit/task';
 import './MonsterArt';
@@ -20,7 +19,8 @@ export class MonsterCard extends LitElement {
     task: async ([monsterKey], { signal }) => {
       const store = initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
-      return monster;
+      const similarMonsters = await store.getSimilarMonsters(monsterKey);
+      return { monster, similarMonsters };
     },
     args: () => [this.monsterKey]
   });
@@ -329,10 +329,10 @@ export class MonsterCard extends LitElement {
     super.updated(changedProperties);
 
     // Handle lore content
-    if (this.loreRef.value && this._monsterTask.value?.overviewElement) {
+    if (this.loreRef.value && this._monsterTask.value?.monster?.overviewElement) {
       // Only append if not already present
       if (!this.loreRef.value.querySelector('[data-monster-lore]')) {
-        const clonedElement = this._monsterTask.value.overviewElement.cloneNode(true) as HTMLElement;
+        const clonedElement = this._monsterTask.value.monster.overviewElement.cloneNode(true) as HTMLElement;
         clonedElement.setAttribute('data-monster-lore', 'true');
         this.loreRef.value.appendChild(clonedElement);
 
@@ -342,10 +342,10 @@ export class MonsterCard extends LitElement {
     }
 
     // Handle encounter content
-    if (this.encounterRef.value && this._monsterTask.value?.encounterElement) {
+    if (this.encounterRef.value && this._monsterTask.value?.monster?.encounterElement) {
       // Only append if not already present
       if (!this.encounterRef.value.querySelector('[data-monster-encounter]')) {
-        const clonedElement = this._monsterTask.value.encounterElement.cloneNode(true) as HTMLElement;
+        const clonedElement = this._monsterTask.value.monster.encounterElement.cloneNode(true) as HTMLElement;
         clonedElement.setAttribute('data-monster-encounter', 'true');
         this.encounterRef.value.appendChild(clonedElement);
 
@@ -472,7 +472,8 @@ export class MonsterCard extends LitElement {
   render() {
     return this._monsterTask.render({
       pending: () => html`<p>Loading monster...</p>`,
-      complete: (monster: Monster | null) => {
+      complete: (result) => {
+        const { monster, similarMonsters } = result;
         if (!monster) {
           return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
         }
@@ -566,12 +567,22 @@ export class MonsterCard extends LitElement {
               <div class="tab-content similar-content ${this.contentTab === 'similar' ? 'active' : ''}" data-content="similar">
                 <div class="content-body">
                   <ul>
-                    ${monster.relatedMonsters.map(
-          related => html`
-                      <li>
-                        <a href="/monsters/${related.key}/">${related.name} (${related.cr})</a>
-                      </li>
-                    `)}
+                    ${similarMonsters.map(
+          group => html`
+                        <li>
+                          <strong>${group.name}</strong>
+                          <ul>
+                            ${group.monsters.map(
+            monster => html`
+                                <li>
+                                  <a href="/monsters/${monster.key}/">${monster.name} (${monster.cr})</a>
+                                </li>
+                              `
+          )}
+                          </ul>
+                        </li>
+                      `
+        )}
                   </ul>
                 </div>
               </div>

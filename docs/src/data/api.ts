@@ -1,5 +1,5 @@
 import { PowerStore, PowerLoadout, Power } from './powers';
-import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest } from './monster';
+import { Monster, MonsterStore, StatblockChangeType, StatblockChange, StatblockRequest, SimilarMonsterGroup } from './monster';
 
 function formatCr(cr: string | number): string {
     if (typeof cr === 'string') return cr;
@@ -99,6 +99,7 @@ export class ApiMonsterStore implements MonsterStore {
                 name: related.name,
                 cr: formatCr(related.cr),
                 template: related.template,
+                family: related.family || null,
                 sameTemplate: related.same_template
             })),
             nextTemplate: {
@@ -112,6 +113,28 @@ export class ApiMonsterStore implements MonsterStore {
             overviewElement: overviewElement,
             encounterElement: encounterElement
         };
+    }
+
+    async getSimilarMonsters(key: string): Promise<SimilarMonsterGroup[]> {
+        const baseUrl: string = window.baseUrl ?? 'https://foefoundry.com';
+        const response = await fetch(`${baseUrl}/api/v1/monsters/${key}/similar`);
+        if (!response.ok) return [];
+
+        const data: any = await response.json();
+
+        // Map the API response to our interface with explicit types
+        return data.similar_monsters.map((group: any) => ({
+            name: group.name,
+            url: group.url,
+            monsters: group.monsters.map((monster: any) => ({
+                key: monster.key,
+                name: monster.name,
+                family: monster.family || null,
+                cr: formatCr(monster.cr),
+                template: monster.template,
+                sameTemplate: false // This field is not in the API response for grouped monsters
+            }))
+        }));
     }
 
     async getRandomStatblock(): Promise<HTMLElement> {

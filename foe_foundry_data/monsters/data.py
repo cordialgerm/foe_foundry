@@ -12,6 +12,7 @@ from foe_foundry.creatures import (
     Monster,
     MonsterTemplate,
     MonsterVariant,
+    TemplatesByKey,
 )
 from foe_foundry.statblocks import Statblock
 from foe_foundry.utils import name_to_key
@@ -30,6 +31,7 @@ from ..jinja import render_statblock_fragment
 @dataclass(kw_only=True)
 class RelatedMonsterModel(MonsterInfoModel):
     same_template: bool
+    family: str | None
 
 
 def _convert_markdown_to_html(markdown_text: str | None) -> str | None:
@@ -175,6 +177,7 @@ class MonsterModel:
                 name=m.name,
                 cr=m.cr,
                 template=template.name,
+                family=None,
                 same_template=True,
             )
             for m in template.monsters
@@ -193,7 +196,8 @@ class MonsterModel:
                             key=m.key,
                             name=m.name,
                             cr=m.cr,
-                            template=template.name,
+                            template=TemplatesByKey[m.template].name,
+                            family=family.name,
                             same_template=False,
                         )
                     )
