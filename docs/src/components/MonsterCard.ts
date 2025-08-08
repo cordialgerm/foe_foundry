@@ -575,7 +575,7 @@ export class MonsterCard extends LitElement {
                             ${group.monsters.map(
             monster => html`
                                 <li>
-                                  <a href="/monsters/${monster.key}/">${monster.name} (${monster.cr})</a>
+                                  <a href="/generate/?monster-key=${monster.key}">${monster.name} (${monster.cr})</a>
                                 </li>
                               `
           )}
