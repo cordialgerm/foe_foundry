@@ -66,6 +66,6 @@ Ravenous, cunning, and cursed by the River Styx, ghouls are the perfect foes for
 These ghoul adventure seeds offer dark, open-ended storylines filled with ravenous hunger, ancient curses, and the chilling legacy of undeath. The adventure hooks are perfect for weaving multi-session horror into your campaign.
 
 - Fifty years ago, during a desperate winter, villagers resorted to cannibalism to survive. Their descendants became cursed and transform into **Ghasts** during the winter months. Someone important to the PCs has gone missing in this town, which has since become prosperous, despite its dark secret.
-- A hidden ghoul cult thrives in a major city. The **Death Cultist Initiate** and his loyal **Cultists** worship a **Ghoul Gravecaller** and kidnap victims to curry favor.
+- A hidden ghoul cult thrives in a major city. The **Death Cultist Initiate** and his loyal **Cultists** worship a **Ghast Gravelord** and kidnap victims to curry favor.
 - A **Ghast** approaches the PCs about teaming up to destroy the **Necromancer Mage** that enslaved it. The cunning creature wishes to devour its former master and ascend to a **Ghast Gravelord**
 - A well-respected **Knight** carries a dark secret. In his last campaign, his company was besieged for months on end. Starving, they resorted to cannibalism and the survivors were all cursed as **Ghasts**. The knight begs the PCs to find an end to the curse that afflicts him and the veterans of his campaign.

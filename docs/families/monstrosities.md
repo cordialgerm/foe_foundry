@@ -4,6 +4,7 @@ short_title: Monstrosity Statblocks & Encounters
 description: A complete guide to 5E monstrosities with statblocks, tactics, and encounter hooks. Run better monster encounters with chimeras, mimics, manticores, and more.
 image: img/monsters/chimera.webp
 json_ld: true
+is_monster_family: true
 ---
 
 # Monstrosities

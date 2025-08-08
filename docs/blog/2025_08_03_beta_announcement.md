@@ -18,7 +18,7 @@ Since then, we've created [dozens of new monsters](../monsters/index.md), added 
 
 But, the heart of this whole endeavour has always been the [**Monster Generator**](../generate/index.md).  
 
-Great news - the [**Beta Monster Generator**](../generate/v2.md) is now available for **Desktop**. A mobile-friendly design will come soon, don't worry!
+Great news - the [**Beta Monster Generator**](../generate/v2.md) is now available for **Desktop**. ~~A mobile-friendly design will come soon, don't worry!~~ (It's already here now!)
 
 ## A New 5E Monster Generator
 

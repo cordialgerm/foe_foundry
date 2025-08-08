@@ -7,7 +7,7 @@ from ._template import (
     GenerationSettings,  # noqa
     Statblock,  # noqa
 )  # noqa
-from ._all import AllTemplates, all_templates_and_settings  # noqa
+from ._all import AllTemplates, all_templates_and_settings, TemplatesByKey  # noqa
 from .species import AllSpecies, CreatureSpecies  # noqa
 from .species import (
     HumanSpecies,  # noqa

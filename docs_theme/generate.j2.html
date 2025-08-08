@@ -21,9 +21,11 @@
                 <li>Save and share your creations with ease. (Coming Soon)</li>
             </ul>
             <h2 class="mb-4 mt-4">Infinite Monsters!</h2>
-            <p>Check out the <a href="monsters/"><strong>All Foe Foundry Monsters</strong></a> to browse our catalog of
+            <p>Check out the <a href="{{ 'monsters/' | url }}"><strong>All Foe Foundry Monsters</strong></a> to browse
+                our catalog of
                 monster templates, each with multiple variants and hundreds of unique possible powers.</p>
-            <p>You can also be inspired by <a href="powers/"><strong>More than 600 Monster Powers</strong></a>
+            <p>You can also be inspired by <a href="{{ 'powers/all/' | url }}"><strong>More than 600 Monster
+                        Powers</strong></a>
                 that you can easily drop onto any monsters! These are the same powers that the generator will let
                 you pick and choose from when it's ready!</p>
             <hr>
@@ -45,8 +47,9 @@
                 <dt><strong>How does the random generator work?</strong></dt>
                 <dd>Each monster is based on a <strong>Template</strong> that defines the monster's base stats,
                     attributes, skills, AC, and attacks. Then, a <strong>Power Loadout</strong> customizes the
-                    statblock with unique and flavorful powers from the <a href="powers/all">over 500 unique
-                        power</a> available in Foe Foundry.</dd>
+                    statblock with unique and flavorful powers from the
+                    <a href="{{ 'powers/all/' | url }}">over 500 unique powers</a> available in Foe Foundry.
+                </dd>
                 <dt><strong>Can I scale monsters by party level or CR?</strong></dt>
                 <dd>Yes. Each monster template has multiple variants available at lower and higher CRs, and
                     abilities automatically scale to monster CR.</dd>

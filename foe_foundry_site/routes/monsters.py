@@ -8,6 +8,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic.dataclasses import dataclass
 
 from foe_foundry.creatures import AllTemplates
+from foe_foundry_data.base import MonsterInfoModel
 from foe_foundry_data.monsters import MonsterModel, PowerLoadoutModel
 from foe_foundry_data.monsters.all import Monsters
 from foe_foundry_data.refs import MonsterRefResolver
@@ -27,6 +28,18 @@ class MonsterWithRelations(MonsterModel):
 
     previous_template: MonsterMeta
     next_template: MonsterMeta
+
+
+@dataclass(kw_only=True)
+class MonsterGroup:
+    name: str
+    url: str
+    monsters: list[MonsterInfoModel]
+
+
+@dataclass(kw_only=True)
+class SimilarMonsters:
+    similar_monsters: list[MonsterGroup]
 
 
 def add_relations(monster: MonsterModel) -> MonsterWithRelations:
@@ -103,6 +116,79 @@ def get_monster(template_or_variant_key: str) -> MonsterWithRelations:
         raise HTTPException(status_code=404, detail="Template not found")
 
     return add_relations(monster)
+
+
+@router.get("/{template_or_variant_key}/similar")
+def get_similiar_monsters(template_or_variant_key: str) -> SimilarMonsters:
+    ref = ref_resolver.resolve_monster_ref(template_or_variant_key)
+    if ref is None:
+        raise HTTPException(status_code=404, detail="Template not found")
+
+    ref = ref.resolve()
+    monster_key = ref.monster.key  # type: ignore
+    monster = Monsters.lookup.get(monster_key)
+    if monster is None:
+        raise HTTPException(status_code=404, detail="Template not found")
+
+    # Group related monsters by template
+    template_groups = {}
+    for related_monster in monster.related_monsters:
+        template_name = related_monster.template
+        if template_name not in template_groups:
+            template_groups[template_name] = []
+        template_groups[template_name].append(related_monster)
+
+    # Create groups with metadata
+    groups = []
+    current_monster_cr = monster.cr
+
+    for template_name, monsters in template_groups.items():
+        # Sort monsters within group by CR
+        sorted_monsters = sorted(monsters, key=lambda m: m.cr)
+
+        # Calculate group CR (lowest CR in the group)
+        group_cr = sorted_monsters[0].cr
+
+        # Calculate CR difference from current monster
+        cr_difference = abs(current_monster_cr - group_cr)
+
+        # Check if this is the same template as the current monster
+        is_same_template = any(m.same_template for m in monsters)
+
+        # Convert MonsterModel to MonsterInfoModel for the response
+        monster_info_list = [
+            MonsterInfoModel(key=m.key, name=m.name, cr=m.cr, template=m.template)
+            for m in sorted_monsters
+        ]
+
+        groups.append(
+            {
+                "template_name": template_name,
+                "monsters": monster_info_list,
+                "group_cr": group_cr,
+                "cr_difference": cr_difference,
+                "is_same_template": is_same_template,
+            }
+        )
+
+    # Sort groups: same template first, then by CR difference
+    groups.sort(key=lambda g: (not g["is_same_template"], g["cr_difference"]))
+
+    # Convert to the expected response format
+    monster_groups = []
+    for group in groups:
+        # Create URL for the template (assuming it follows the pattern)
+        template_url = f"/monsters/{group['template_name'].lower().replace(' ', '-')}/"
+
+        monster_groups.append(
+            MonsterGroup(
+                name=group["template_name"],
+                url=template_url,
+                monsters=group["monsters"],
+            )
+        )
+
+    return SimilarMonsters(similar_monsters=monster_groups)
 
 
 @router.get("/{template_or_variant_key}/loadouts")

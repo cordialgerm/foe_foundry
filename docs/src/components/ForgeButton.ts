@@ -70,7 +70,7 @@ export class ForgeStatblockButton extends StatblockButton {
             composed: true
         }));
 
-        const url = `/generate/v2/?monster-key=${encodeURIComponent(this.monsterKey)}`;
+        const url = `/generate/?monster-key=${encodeURIComponent(this.monsterKey)}`;
         window.location.href = url;
     }
 

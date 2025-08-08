@@ -698,7 +698,7 @@ export class MonsterBuilder extends LitElement {
             ${nextTemplate}
           </div>
           <div class="nav-pills">
-            ${monster.relatedMonsters.map((rel: RelatedMonster) => html`
+            ${monster.relatedMonsters.filter(rel => rel.sameTemplate).map((rel: RelatedMonster) => html`
               <a
                 href="/monsters/${rel.template}#${rel.key}"
                 class="nav-pill ${rel.key === this.monsterKey ? 'active' : ''}"
