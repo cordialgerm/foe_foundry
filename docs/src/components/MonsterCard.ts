@@ -2,7 +2,6 @@ import { LitElement, html, css, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ref, createRef } from 'lit/directives/ref.js';
 import { initializeMonsterStore } from '../data/api';
-import { Monster } from '../data/monster';
 import { Power } from '../data/powers';
 import { Task } from '@lit/task';
 import './MonsterArt';
@@ -20,7 +19,8 @@ export class MonsterCard extends LitElement {
     task: async ([monsterKey], { signal }) => {
       const store = initializeMonsterStore();
       const monster = await store.getMonster(monsterKey);
-      return monster;
+      const similarMonsters = await store.getSimilarMonsters(monsterKey);
+      return { monster, similarMonsters };
     },
     args: () => [this.monsterKey]
   });
@@ -28,7 +28,7 @@ export class MonsterCard extends LitElement {
   @property({ type: String, attribute: 'monster-key' })
   monsterKey = '';
 
-  @property({ type: String }) contentTab: 'powers' | 'lore' | 'encounters' = 'powers';
+  @property({ type: String }) contentTab: 'powers' | 'similar' | 'lore' | 'encounters' = 'powers';
 
   private loreRef = createRef<HTMLDivElement>();
   private encounterRef = createRef<HTMLDivElement>();
@@ -151,6 +151,10 @@ export class MonsterCard extends LitElement {
       }
     }
 
+    .tab-content-container {
+      min-height: 300px;
+    }
+
     .lore-content,
     .encounter-content {
       padding-left: 8px;
@@ -222,7 +226,8 @@ export class MonsterCard extends LitElement {
     }
 
     .lore-content p,
-    .encounter-content p {
+    .encounter-content p,
+    .similiar-content p {
       margin-top: 0.25rem;
       margin-bottom: 0.25rem;
       text-align: justify;
@@ -253,7 +258,8 @@ export class MonsterCard extends LitElement {
     }
 
     .lore-content a,
-    .encounter-content a {
+    .encounter-content a,
+    .similar-content a {
       color: var(--fg-color);
       text-decoration: underline;
     }
@@ -314,7 +320,7 @@ export class MonsterCard extends LitElement {
     }
   }
 
-  setContentTab(tab: 'powers' | 'lore' | 'encounters'): void {
+  setContentTab(tab: 'powers' | 'lore' | 'encounters' | 'similar'): void {
     this.contentTab = tab;
     this.requestUpdate();
   }
@@ -323,10 +329,10 @@ export class MonsterCard extends LitElement {
     super.updated(changedProperties);
 
     // Handle lore content
-    if (this.loreRef.value && this._monsterTask.value?.overviewElement) {
+    if (this.loreRef.value && this._monsterTask.value?.monster?.overviewElement) {
       // Only append if not already present
       if (!this.loreRef.value.querySelector('[data-monster-lore]')) {
-        const clonedElement = this._monsterTask.value.overviewElement.cloneNode(true) as HTMLElement;
+        const clonedElement = this._monsterTask.value.monster.overviewElement.cloneNode(true) as HTMLElement;
         clonedElement.setAttribute('data-monster-lore', 'true');
         this.loreRef.value.appendChild(clonedElement);
 
@@ -336,10 +342,10 @@ export class MonsterCard extends LitElement {
     }
 
     // Handle encounter content
-    if (this.encounterRef.value && this._monsterTask.value?.encounterElement) {
+    if (this.encounterRef.value && this._monsterTask.value?.monster?.encounterElement) {
       // Only append if not already present
       if (!this.encounterRef.value.querySelector('[data-monster-encounter]')) {
-        const clonedElement = this._monsterTask.value.encounterElement.cloneNode(true) as HTMLElement;
+        const clonedElement = this._monsterTask.value.monster.encounterElement.cloneNode(true) as HTMLElement;
         clonedElement.setAttribute('data-monster-encounter', 'true');
         this.encounterRef.value.appendChild(clonedElement);
 
@@ -466,7 +472,8 @@ export class MonsterCard extends LitElement {
   render() {
     return this._monsterTask.render({
       pending: () => html`<p>Loading monster...</p>`,
-      complete: (monster: Monster | null) => {
+      complete: (result) => {
+        const { monster, similarMonsters } = result;
         if (!monster) {
           return html`<p>Monster not found for key "${this.monsterKey}"</p>`;
         }
@@ -499,6 +506,10 @@ export class MonsterCard extends LitElement {
               <button class="content-tab ${this.contentTab === 'powers' ? 'active' : ''}"
                       @click=${() => this.setContentTab('powers')}>
                 Powers
+              </button>
+              <button class="content-tab ${this.contentTab === 'similar' ? 'active' : ''}"
+                      @click=${() => this.setContentTab('similar')}>
+                Similar
               </button>
               <button class="content-tab ${this.contentTab === 'lore' ? 'active' : ''}"
                       @click=${() => this.setContentTab('lore')}>
@@ -551,6 +562,28 @@ export class MonsterCard extends LitElement {
                   <div ${ref(this.encounterRef)}>
                     ${!monster.encounterElement ? html`<p>No encounter information available for this monster.</p>` : ''}
                   </div>
+                </div>
+              </div>
+              <div class="tab-content similar-content ${this.contentTab === 'similar' ? 'active' : ''}" data-content="similar">
+                <div class="content-body">
+                  <ul>
+                    ${similarMonsters.map(
+          group => html`
+                        <li>
+                          <strong>${group.name}</strong>
+                          <ul>
+                            ${group.monsters.map(
+            monster => html`
+                                <li>
+                                  <a href="/generate/?monster-key=${monster.key}">${monster.name} (${monster.cr})</a>
+                                </li>
+                              `
+          )}
+                          </ul>
+                        </li>
+                      `
+        )}
+                  </ul>
                 </div>
               </div>
             </div>

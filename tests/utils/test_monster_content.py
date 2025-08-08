@@ -2,11 +2,13 @@
 
 import glob
 import os
+from pathlib import Path
 
 import pytest
 
 from foe_foundry.utils.monster_content import (
     extract_encounters_content,
+    extract_monster_hyperlinks,
     extract_overview_content,
 )
 
@@ -283,3 +285,10 @@ List of monsters here.
     # Index files should not have monster-style content
     assert lore is None
     assert encounters is None
+
+
+def test_extract_monster_hyperlinks():
+    path = Path.cwd() / "docs" / "families" / "soldiers_and_fighters.md"
+    content = path.read_text(encoding="utf-8")
+    links = extract_monster_hyperlinks(content)
+    assert len(links) > 0, "No monster links found in the content"

@@ -7,11 +7,18 @@ export interface RelatedMonster {
     cr: string;
     template: string;
     sameTemplate: boolean;
+    family: string | null
 }
 
 export interface RelatedMonsterTemplate {
     monsterKey: string;
     templateKey: string;
+}
+
+export interface SimilarMonsterGroup {
+    name: string;
+    url: string;
+    monsters: RelatedMonster[];  // Note: keeping the typo to match API response
 }
 
 export interface Monster {
@@ -58,6 +65,8 @@ export interface StatblockChange {
 export interface MonsterStore {
 
     getMonster(key: string): Promise<Monster | null>;
+
+    getSimilarMonsters(key: string): Promise<SimilarMonsterGroup[]>;
 
     getStatblock(request: StatblockRequest, change: StatblockChange | null): Promise<HTMLElement>;
 

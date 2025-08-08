@@ -90,6 +90,10 @@ AllTemplates: list[MonsterTemplate] = [
     ZombieTemplate,
 ]
 
+TemplatesByKey: dict[str, MonsterTemplate] = {
+    template.key: template for template in AllTemplates
+}
+
 
 def all_templates_and_settings() -> list[
     tuple[MonsterTemplate, list[GenerationSettings]]

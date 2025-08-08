@@ -4,9 +4,10 @@ short_title: Giant Statblocks & Encounters
 description: Discover primal, powerful giants for your 5E campaign. Includes custom Frost Giant and Ogre statblocks, unique powers, and encounter ideas to shake the very earth beneath your players' feet.
 image: img/monsters/frost-giant.webp
 json_ld: true
+is_monster_family: true
 ---
 
-# Giants
+# True Giants
 
 *Primal Titans and Living Bones of the Earth*
 

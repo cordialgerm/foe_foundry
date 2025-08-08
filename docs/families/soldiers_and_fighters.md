@@ -4,9 +4,12 @@ short_title: Soldiers & Fighters
 description: Explore statblocks, lore, and encounters for martial NPCs like Warriors, Guards, Knights, and Berserkers. Perfect for battles in your 5E campaign.
 image: img/monsters/warrior.webp
 json_ld: true
+is_monster_family: true
 ---
 
 # Soldiers & Fighters
+
+*Battle-Hardened Warriors of Duty, Honor, or Fortune*
 
 | Statblock      | Description | Examples |
 |----------------|-------------|----------|

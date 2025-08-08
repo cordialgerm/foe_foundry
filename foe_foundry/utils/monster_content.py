@@ -238,3 +238,35 @@ def extract_encounters_content(markdown_text: str) -> str | None:
     encounters_content = "\n".join(filtered_encounters_lines).strip()
 
     return encounters_content if encounters_content else None
+
+
+def extract_monster_hyperlinks(markdown_content: str) -> list[str]:
+    """
+    Extracts all monster hyperlinks from markdown content.
+    Monster hyperlinks are in the format "/monsters/<monster>.md" or "../monsters/<monster>.md".
+
+    Args:
+        markdown_content (str): The markdown content to search for monster links.
+
+    Returns:
+        list[str]: A list of monster names (without path and extension) found in the hyperlinks.
+    """
+    # Pattern to match monster hyperlinks in markdown
+    # Matches: [text](../monsters/monster_name.md) or [text](/monsters/monster_name.md)
+    pattern = r"\[([^\]]*)\]\((?:\.\./|/)monsters/([^/)]+)\.md\)"
+
+    # Find all matches
+    matches = re.findall(pattern, markdown_content)
+
+    # Extract just the monster names (second group from each match)
+    monster_names = [match[1] for match in matches]
+
+    # Remove duplicates while preserving order
+    unique_monsters = []
+    seen = set()
+    for monster in monster_names:
+        if monster not in seen and not monster.lower() == "index":
+            unique_monsters.append(monster)
+            seen.add(monster)
+
+    return unique_monsters
