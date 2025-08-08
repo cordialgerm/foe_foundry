@@ -82,7 +82,7 @@ Here are 10 unforgettable undead adventure hooks designed to weave seamlessly in
 | 17 | The last monk of an ancient priestly order tasked with protecting a holy site asks the party for help. The holy site is a vault of powerful cursed relics protected by holy flames. The flames are about to fail, and when they do, waves of [[Shadow]]s will seize the cursed relics. |
 | 18 | A collapsed mining town lies silent beneath a blanket of ash. At night, the wind carries faint cries and the dying breaths of trapped workers. The [[Specter]]s below won't rest until they are named and buried, but the local baron insists the disaster never happened. The party is approached by the widows of the dead miners asking for help putting their slain kin to rest. |
 | 19 | For the last twelve full moons, a [[Banshee]] has let out a terrible, prophetic wail. And each morning, someone in the hamlet is discovered dead. The local village chief implores the party to put an end to her village's curse. |
-| 20 | A wealthy merchant hires the party to clear a curse from an inherited estate that he needs to sell immediately to cover some debts. Each year, on the anniversary of her betrayal, a [[Banshee]] manifests and wails about her betrayal, forcing the [[Ghost]] of the lover who spurned her to beg forgiveness for hours on end. The anniversary is in three days... | |
+| 20 | A wealthy merchant hires the party to clear a curse from an inherited estate that he needs to sell immediately to cover some debts. Each year, on the anniversary of her betrayal, a [[Banshee]] manifests and wails about her betrayal, forcing the [[Ghost]] of the lover who spurned her to beg forgiveness for hours on end. The anniversary is in three days... |
 
 ---
 
