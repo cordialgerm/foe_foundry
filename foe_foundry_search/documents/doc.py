@@ -1,13 +1,16 @@
 from dataclasses import dataclass
-from pathlib import Path
+
+from backports.strenum import StrEnum
+
+
+class DocType(StrEnum):
+    background = "background"
+    lore = "lore"
 
 
 @dataclass(kw_only=True)
 class MonsterDocument:
-    path: Path
+    doc_id: str
     monster_key: str
+    doc_type: DocType
     text: str
-
-    @property
-    def doc_id(self) -> str:
-        return self.path.stem

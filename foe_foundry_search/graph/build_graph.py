@@ -32,6 +32,7 @@ from foe_foundry.utils import name_to_key
 from foe_foundry_data.families import load_families
 from foe_foundry_data.powers import Powers
 from foe_foundry_search.documents import (
+    DocType,
     iter_monster_docs,
     load_monster_doc_metas,
 )
@@ -52,8 +53,10 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
 
     issues = []
 
-    # Add DOC nodes: Each represents a monster document
+    # Add DOC nodes: Each represents a monster document taken from the background corpus
     for doc in iter_monster_docs():
+        if not doc.doc_type == DocType.background:
+            continue
         node_id = f"DOC:{doc.doc_id}"
         G.add_node(
             node_id, type="DOC", monster_key=doc.monster_key, id=node_id, text=doc.text
@@ -154,6 +157,25 @@ def build_graph() -> tuple[nx.DiGraph, list[str]]:
                         issues.append(
                             f"FF_MON {monster.key} references unknown other creature {other_monster_name}"
                         )
+
+    # Add DOC nodes: Each represents a monster document taken from the foe foundry lore
+    for doc in iter_monster_docs():
+        node_id = f"DOC:{doc.doc_id}"
+        G.add_node(
+            node_id,
+            type="DOC",
+            monster_key=doc.monster_key,
+            doc_type=doc.doc_type,
+        )
+
+        # Link DOC node to FF_MON
+        ff_mon_node_id = f"FF_MON:{doc.monster_key}"
+        if G.has_node(ff_mon_node_id):
+            G.add_edge(node_id, ff_mon_node_id, type="references")
+        else:
+            issues.append(
+                f"DOC {doc.doc_id} references unknown FF_MON {doc.monster_key}"
+            )
 
     # Add FF_FAM nodes: Monster families and their members
     for family in load_families():

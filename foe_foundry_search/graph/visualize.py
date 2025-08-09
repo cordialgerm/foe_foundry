@@ -100,10 +100,10 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
                 ff_fam_nodes.add(succ)
     nodes_to_plot.update(ff_fam_nodes)
 
-    # Add all DOC nodes connected to the MON nodes we have so far
+    # Add all DOC nodes connected to the MON or FF_MON nodes we have so far
     doc_nodes = set()
     for mon in nodes_to_plot:
-        if G.nodes[mon].get("type") == "MON":
+        if G.nodes[mon].get("type") in {"MON", "FF_MON"}:
             for pred in G.predecessors(mon):
                 if G.nodes[pred].get("type") == "DOC":
                     doc_nodes.add(pred)

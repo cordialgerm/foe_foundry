@@ -5,8 +5,9 @@ from typing import Iterable
 
 from foe_foundry import CreatureType, DamageType, MonsterRole
 from foe_foundry.utils import name_to_key
+from foe_foundry_data.monsters.all import Monsters
 
-from .doc import MonsterDocument
+from .doc import DocType, MonsterDocument
 from .meta import MonsterDocumentMeta
 
 
@@ -38,7 +39,22 @@ class _Loader:
 
             text = path.read_text(encoding="utf-8")
             monster_key = name_to_key(key)
-            yield MonsterDocument(path=path, monster_key=monster_key, text=text)
+            yield MonsterDocument(
+                doc_id=path.stem,
+                doc_type=DocType.background,
+                monster_key=monster_key,
+                text=text,
+            )
+
+        for monster in Monsters.one_of_each_monster:
+            if not monster.has_lore or monster.overview_html is None:
+                continue
+            yield MonsterDocument(
+                doc_id=monster.key + "-lore",
+                monster_key=monster.key,
+                doc_type=DocType.lore,
+                text=monster.overview_html,
+            )
 
     def iter_document_metas(self) -> Iterable[MonsterDocumentMeta]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_nl2"
