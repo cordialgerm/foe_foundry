@@ -209,14 +209,14 @@
     "alchemical_skunk": [
         "giant badger"
     ],
+    "alchemist": [
+        "mage",
+        "cult fanatic"
+    ],
     "alchemist_archer": [
         "bandit captain",
         "scout",
         "mage"
-    ],
-    "alchemist": [
-        "mage",
-        "cult fanatic"
     ],
     "alehouse_drake": [
         "pseudodragon",
@@ -535,6 +535,15 @@
     "apprentice_mage": [
         "mage"
     ],
+    "arachnocrat": [
+        "ettercap"
+    ],
+    "arborcyte": [
+        "shambling mound"
+    ],
+    "arboreal_grappler": [
+        "ettercap"
+    ],
     "arcamag": [
         "imp",
         "homunculus"
@@ -543,79 +552,101 @@
         "specter",
         "will-o'-wisp"
     ],
-    "archon_word": [
-        "couatl"
+    "arcane_blademaster": [
+        "mage",
+        "veteran"
+    ],
+    "arcane_leviathan": [
+        "kraken"
     ],
     "arcane_scavenger": [
         "shield guardian",
         "helmed horror"
     ],
-    "arachnocrat": [
-        "ettercap"
-    ],
-    "aridni": [
-        "sprite",
-        "pixie"
-    ],
     "archaeopteryx": [
         "hawk",
         "owl"
+    ],
+    "archdruid": [
+        "druid"
+    ],
+    "archfey": [
+        "archmage",
+        "mage"
+    ],
+    "archmage": [
+        "archmage"
     ],
     "archon_siege": [
         "planetar",
         "deva"
     ],
-    "arcane_blademaster": [
-        "mage",
-        "veteran"
+    "archon_ursan": [
+        "deva",
+        "planetar"
     ],
-    "arboreal_grappler": [
-        "ettercap"
+    "archon_word": [
+        "couatl"
     ],
-    "ashwalker": [
-        "wight"
+    "archpriest": [
+        "priest"
     ],
-    "astral_snapper": [
-        "intellect devourer"
+    "aridni": [
+        "sprite",
+        "pixie"
     ],
-    "ash_phoenix": [
-        "wraith",
-        "ghost"
+    "armory_golem": [
+        "iron golem",
+        "shield guardian"
     ],
-    "ascetic_grandmaster": [
-        "monk",
-        "veteran"
+    "arx": [
+        "barbed devil",
+        "horned devil"
     ],
     "asanbosam": [
         "ettercap",
         "ghoul"
     ],
-    "astral_devourer": [
-        "intellect devourer",
-        "mind flayer"
-    ],
-    "astri": [
-        "couatl",
-        "deva"
-    ],
-    "astralsupial": [
-        "giant badger",
-        "giant weasel"
-    ],
-    "asp_vine": [
-        "shambling mound",
-        "giant constrictor snake"
-    ],
-    "ashen_custodian": [
-        "dryad",
-        "fire elemental"
+    "ascetic_grandmaster": [
+        "monk",
+        "veteran"
     ],
     "ash_drake": [
         "young red dragon",
         "wyvern"
     ],
+    "ash_phoenix": [
+        "wraith",
+        "ghost"
+    ],
+    "ashen_custodian": [
+        "dryad",
+        "fire elemental"
+    ],
+    "ashwalker": [
+        "wight"
+    ],
+    "asp_vine": [
+        "shambling mound",
+        "giant constrictor snake"
+    ],
     "assassin": [
         "assassin"
+    ],
+    "astral_devourer": [
+        "intellect devourer",
+        "mind flayer"
+    ],
+    "astral_snapper": [
+        "intellect devourer"
+    ],
+    "astralsupial": [
+        "giant badger",
+        "giant weasel"
+    ],
+    "astri": [
+        "couatl",
+        "deva"
     ],
     "atavist": [
         "veteran"
@@ -624,160 +655,558 @@
         "sprite",
         "quasit"
     ],
-    "archpriest": [
-        "priest"
-    ],
-    "arborcyte": [
-        "shambling mound"
-    ],
-    "armory_golem": [
-        "iron golem",
-        "shield guardian"
-    ],
-    "arcane_leviathan": [
-        "kraken"
-    ],
-    "archmage": [
-        "archmage"
-    ],
-    "arx": [
-        "barbed devil",
-        "horned devil"
-    ],
-    "archfey": [
-        "archmage",
-        "mage"
-    ],
-    "archon_ursan": [
-        "deva",
-        "planetar"
-    ],
-    "archdruid": [
-        "druid"
+    "august_rooster": [
+        "harpy",
+        "cockatrice"
     ],
     "aural_hunter": [
         "umber hulk"
-    ],
-    "automata_devil": [
-        "barbed devil",
-        "iron golem"
     ],
     "aurora_horribilis": [
         "ghost",
         "banshee"
     ],
-    "august_rooster": [
-        "harpy",
-        "cockatrice"
-    ],
-    "beheaded_vengeful_spirit": [
-        "banshee",
-        "ghost"
-    ],
-    "boggard_bravo": [
-        "bandit",
-        "giant frog"
-    ],
-    "behir": [
-        "behir"
-    ],
-    "bandit_lord": [
-        "bandit captain",
-        "knight"
-    ],
-    "boomer": [
-        "myconid",
-        "shrieker"
-    ],
-    "blaspheming_hand": [
+    "automata_devil": [
         "barbed devil",
-        "bearded devil"
+        "iron golem"
     ],
-    "black_sun_priestess": [
-        "cult fanatic",
-        "priest"
+    "avalanche_screamer": [
+        "yeti",
+        "remorhaz"
     ],
-    "blink_dog": [
-        "blink dog"
+    "avatar_of_shoth": [
+        "kraken",
+        "aboleth"
     ],
-    "burrowling": [
-        "kobold",
-        "giant badger"
+    "avestruzii": [
+        "giant ostrich"
     ],
-    "blackguard": [
-        "knight",
+    "avestruzii_champion": [
+        "bandit captain",
         "champion"
     ],
-    "bloodstone_sentinel": [
-        "shield guardian",
-        "stone golem"
+    "aviere": [
+        "giant eagle"
     ],
-    "basilisk": [
-        "basilisk"
+    "avulzor": [
+        "skeleton",
+        "wight"
     ],
-    "brachyura_shambler": [
-        "chuul"
+    "awakened_shrub": [
+        "awakened shrub"
     ],
-    "bearfolk": [
-        "brown bear",
-        "berserker"
+    "awakened_tree": [
+        "awakened tree"
     ],
-    "bugbear": [
-        "bugbear"
+    "axe_beak": [
+        "axe beak"
+    ],
+    "azeban": [
+        "sprite",
+        "quickling"
+    ],
+    "azer": [
+        "azer"
+    ],
+    "azer_forgemaster": [
+        "azer"
+    ],
+    "azi_dahaka": [
+        "ancient blue dragon",
+        "ancient red dragon"
+    ],
+    "aziza": [
+        "sprite",
+        "pixie"
+    ],
+    "azza_gremlin": [
+        "sprite",
+        "mephit"
+    ],
+    "baba_yaga\u2019s_horsemen": [
+        "wight",
+        "knight"
+    ],
+    "baboon": [
+        "baboon"
     ],
     "backup_holler_spider": [
         "giant spider",
         "shrieker"
     ],
+    "badger": [
+        "badger"
+    ],
+    "bagiennik": [
+        "water elemental",
+        "sprite"
+    ],
+    "balara": [
+        "wight",
+        "mummy"
+    ],
+    "baleful_miasma": [
+        "air elemental",
+        "poison elemental"
+    ],
+    "baliri_demon": [
+        "balor",
+        "barbed devil"
+    ],
+    "balloon_spider": [
+        "giant spider",
+        "giant wasp"
+    ],
+    "balor": [
+        "balor"
+    ],
+    "balor_general": [
+        "balor"
+    ],
+    "bandit": [
+        "bandit"
+    ],
     "bandit_captain": [
         "bandit captain"
+    ],
+    "bandit_lord": [
+        "bandit captain",
+        "knight"
+    ],
+    "bannik": [
+        "water weird",
+        "sprite"
+    ],
+    "banshee": [
+        "banshee"
+    ],
+    "bar_brawl": [
+        "bandit",
+        "commoner"
+    ],
+    "barbed_devil": [
+        "barbed devil"
+    ],
+    "bard": [
+        "bard"
+    ],
+    "barometz": [
+        "awakened shrub",
+        "treant"
+    ],
+    "barong": [
+        "planetar",
+        "deva"
+    ],
+    "basilisk": [
+        "basilisk"
+    ],
+    "bastet_temple_cat": [
+        "cat",
+        "sprite"
+    ],
+    "bat": [
+        "bat"
+    ],
+    "bat_swarm_of_bats": [
+        "swarm of bats"
+    ],
+    "bathhouse_drake": [
+        "bronze dragon wyrmling",
+        "water elemental"
+    ],
+    "beach_weird": [
+        "water elemental"
+    ],
+    "bear_black": [
+        "black bear"
+    ],
+    "bear_brown": [
+        "brown bear"
+    ],
+    "bear_king": [
+        "brown bear",
+        "berserker"
+    ],
+    "bear_polar": [
+        "polar bear"
+    ],
+    "bearded_devil": [
+        "bearded devil"
+    ],
+    "bearfolk": [
+        "brown bear",
+        "berserker"
+    ],
+    "bearfolk_chieftain": [
+        "berserker",
+        "knight"
+    ],
+    "bearfolk_thunderstomper": [
+        "berserker",
+        "brown bear"
+    ],
+    "bearing_golem": [
+        "golem",
+        "animated armor"
+    ],
+    "bearmit_crab": [
+        "giant crab"
     ],
     "beetle_clacker_soldier": [
         "giant beetle",
         "shrieker"
     ],
-    "boggard": [
-        "bandit",
-        "giant frog"
+    "beetle_clacker_swarm": [
+        "swarm of insects",
+        "giant beetle"
+    ],
+    "befouled_weird": [
+        "water elemental",
+        "ochre jelly"
     ],
     "beggar_ghoul": [
         "ghoul"
     ],
-    "blood_imp": [
-        "imp"
+    "beheaded_vengeful_spirit": [
+        "banshee",
+        "ghost"
     ],
-    "bone_collective": [
-        "skeleton",
-        "swarm of insects"
+    "behir": [
+        "behir"
     ],
-    "bone_lord": [
-        "lich",
-        "death knight"
+    "behir_magus": [
+        "behir",
+        "blue dragon"
     ],
-    "blood_barnacle": [
-        "giant leech",
-        "giant tick"
+    "behtu": [
+        "ghoul",
+        "wight"
     ],
-    "blood_ooze": [
-        "black pudding",
-        "ochre jelly"
+    "beli": [
+        "hill giant",
+        "stone giant"
     ],
-    "blood_hag": [
-        "night hag",
-        "green hag"
+    "belu": [
+        "hill giant",
+        "stone giant"
     ],
-    "bone_golem": [
-        "flesh golem",
-        "clay golem"
+    "berberoka": [
+        "hill giant",
+        "water elemental"
     ],
-    "brownie_beastrider": [
+    "bereginyas": [
         "sprite",
         "pixie"
     ],
     "berserker": [
         "berserker"
     ],
-    "bandit": [
+    "berstuc": [
+        "barghest",
+        "werewolf"
+    ],
+    "bilwis": [
+        "air elemental",
+        "will-o'-wisp"
+    ],
+    "birgemon_seal": [
+        "giant seal",
+        "giant walrus"
+    ],
+    "black_bear": [
+        "black bear"
+    ],
+    "black_crier": [
+        "wraith",
+        "banshee"
+    ],
+    "black_dragon_wyrmling": [
+        "black dragon wyrmling"
+    ],
+    "black_knight_commander": [
+        "knight",
+        "wight"
+    ],
+    "black_patch": [
+        "black pudding",
+        "ochre jelly"
+    ],
+    "black_pudding": [
+        "black pudding"
+    ],
+    "black_shuck": [
+        "barghest",
+        "hell hound"
+    ],
+    "black_sun_orc": [
+        "orc",
+        "cult fanatic"
+    ],
+    "black_sun_priestess": [
+        "cult fanatic",
+        "priest"
+    ],
+    "blackguard": [
+        "knight",
+        "champion"
+    ],
+    "blaspheming_hand": [
+        "barbed devil",
+        "bearded devil"
+    ],
+    "bleakheart": [
+        "wraith",
+        "banshee"
+    ],
+    "blemmyes": [
+        "ogre",
+        "ettin"
+    ],
+    "blestsessebe": [
+        "giant boar"
+    ],
+    "blink_dog": [
+        "blink dog"
+    ],
+    "bloatblossom": [
+        "violet fungus",
+        "myconid adult"
+    ],
+    "bloated_ghoul": [
+        "ghoul"
+    ],
+    "blood_barnacle": [
+        "giant leech",
+        "giant tick"
+    ],
+    "blood_elemental": [
+        "water elemental",
+        "ochre jelly"
+    ],
+    "blood_flurry": [
+        "ghoul",
+        "wight"
+    ],
+    "blood_giant": [
+        "hill giant",
+        "ogre"
+    ],
+    "blood_hag": [
+        "night hag",
+        "green hag"
+    ],
+    "blood_hawk": [
+        "blood hawk"
+    ],
+    "blood_imp": [
+        "imp"
+    ],
+    "blood_ooze": [
+        "black pudding",
+        "ochre jelly"
+    ],
+    "blood_zombie": [
+        "zombie",
+        "ghoul"
+    ],
+    "bloodsapper": [
+        "ghoul",
+        "giant spider"
+    ],
+    "bloodstone_sentinel": [
+        "shield guardian",
+        "stone golem"
+    ],
+    "bloody_bones": [
+        "ghoul",
+        "wight"
+    ],
+    "blue_dragon_wyrmling": [
+        "blue dragon wyrmling"
+    ],
+    "boar": [
+        "boar"
+    ],
+    "boggard": [
+        "bandit",
+        "giant frog"
+    ],
+    "boggard_bravo": [
+        "bandit",
+        "giant frog"
+    ],
+    "boggard_sovereign": [
+        "bandit captain",
+        "giant frog"
+    ],
+    "boloti": [
+        "sprite",
+        "pixie"
+    ],
+    "bolt_thrower": [
+        "scout",
         "bandit"
-    ]
+    ],
+    "bone_collective": [
+        "skeleton",
+        "swarm of insects"
+    ],
+    "bone_collector": [
+        "specter",
+        "wraith"
+    ],
+    "bone_colossus": [
+        "skeleton",
+        "bone devil"
+    ],
+    "bone_crab": [
+        "giant crab",
+        "swarm of insects"
+    ],
+    "bone_devil": [
+        "bone devil"
+    ],
+    "bone_golem": [
+        "flesh golem",
+        "clay golem"
+    ],
+    "bone_lord": [
+        "lich",
+        "death knight"
+    ],
+    "bone_swarm": [
+        "swarm of insects",
+        "skeleton"
+    ],
+    "bonepowder_ghoul": [
+        "ghoul",
+        "wight"
+    ],
+    "boneshard_wraith": [
+        "wraith",
+        "specter"
+    ],
+    "bonespitter": [
+        "purple worm",
+        "remorhaz"
+    ],
+    "bookkeeper": [
+        "commoner"
+    ],
+    "boomer": [
+        "myconid",
+        "shrieker"
+    ],
+    "boot_grabber": [
+        "black pudding",
+        "gelatinous cube"
+    ],
+    "boreal_dragon_wyrmling": [
+        "white dragon wyrmling",
+        "red dragon wyrmling"
+    ],
+    "boreas\u2019_chosen": [
+        "frost giant",
+        "white dragon"
+    ],
+    "bouda": [
+        "werewolf",
+        "barghest"
+    ],
+    "brachyura_shambler": [
+        "chuul"
+    ],
+    "brain_coral": [
+        "giant octopus"
+    ],
+    "brain_hood": [
+        "intellect devourer"
+    ],
+    "brass_dragon_wyrmling": [
+        "brass dragon wyrmling"
+    ],
+    "breathstealer": [
+        "specter",
+        "wraith"
+    ],
+    "brimstone_locusthound": [
+        "giant wasp",
+        "giant spider"
+    ],
+    "bronze_dragon_wyrmling": [
+        "bronze dragon wyrmling"
+    ],
+    "bronze_golem": [
+        "stone golem",
+        "iron golem"
+    ],
+    "broodiken": [
+        "homunculus",
+        "modron"
+    ],
+    "broodmother_of_leng": [
+        "giant spider",
+        "ettercap"
+    ],
+    "brown_bear": [
+        "brown bear"
+    ],
+    "brownie": [
+        "sprite",
+        "pixie"
+    ],
+    "brownie_beastrider": [
+        "sprite",
+        "pixie"
+    ],
+    "brownie_mystic": [
+        "sprite",
+        "pixie"
+    ],
+    "brumalek": [
+        "wolf",
+        "giant badger"
+    ],
+    "bucca": [
+        "sprite",
+        "quickling"
+    ],
+    "bugbear": [
+        "bugbear"
+    ],
+    "bugbear_champion": [
+        "bugbear",
+        "bandit captain"
+    ],
+    "bugbear_chief": [
+        "bugbear",
+        "bandit captain"
+    ],
+    "bukavac": [
+        "froghemoth"
+    ],
+    "bulbous_violet": [
+        "myconid adult",
+        "violet fungus"
+    ],
+    "bulette": [
+        "bulette"
+    ],
+    "bull": [
+        "boar"
+    ],
+    "bunyip": [
+        "giant crocodile",
+        "giant shark"
+    ],
+    "buraq": [
+        "pegasus",
+        "unicorn"
+    ],
+    "burrowling": [
+        "kobold",
+        "giant badger"
+    ],
+    "butatsch": null
 }
