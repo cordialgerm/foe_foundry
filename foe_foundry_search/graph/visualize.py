@@ -1,11 +1,47 @@
 import os
 import random
+from enum import Enum
 
 import matplotlib.pyplot as plt
 import networkx as nx
 
 
-def visualize_graph_sampled(G):
+class LayoutType(Enum):
+    """Enumeration of available graph layout algorithms."""
+
+    SPRING = "spring"
+    KAMADA_KAWAI = "kamada_kawai"
+
+
+def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> dict:
+    """
+    Generate node positions based on the specified layout algorithm.
+
+    Args:
+        subgraph: The NetworkX graph to layout
+        layout_type: The layout algorithm to use
+
+    Returns:
+        Dictionary mapping node IDs to (x, y) positions
+    """
+    if layout_type == LayoutType.SPRING:
+        return nx.spring_layout(subgraph, seed=42, k=None)
+
+    elif layout_type == LayoutType.KAMADA_KAWAI:
+        return nx.kamada_kawai_layout(subgraph)
+
+    else:
+        raise ValueError(f"Unsupported layout type: {layout_type}")
+
+
+def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
+    """
+    Visualize a sampled subset of the graph with the specified layout.
+
+    Args:
+        G: The full NetworkX graph
+        layout_type: The layout algorithm to use for positioning nodes
+    """
     # Get all MON nodes whose names start with 'a' or 'b'
     mon_nodes = [
         n
@@ -74,7 +110,7 @@ def visualize_graph_sampled(G):
     subgraph = G.subgraph(nodes_to_plot)
 
     plt.figure(figsize=(12, 8))
-    pos = nx.spring_layout(subgraph, seed=42, k=None)
+    pos = _create_layout_positions(subgraph, layout_type)
 
     # Priority order for drawing: FF_FAM, FF_MON, MON (srd), MON (not srd), DOC, POW
     priority = {
@@ -104,30 +140,30 @@ def visualize_graph_sampled(G):
         node_type = subgraph.nodes[n]["type"]
         if node_type == "DOC":
             node_colors[n] = "#1f77b4"
-            node_sizes[n] = 50
+            node_sizes[n] = 5
             # No label for DOC nodes
         elif node_type == "FF_MON":
             node_colors[n] = "#8B0000"  # dark red
-            node_sizes[n] = 300
+            node_sizes[n] = 120
             # Label is just the key, e.g. 'wolf' for 'FF_MON:wolf'
             labels[n] = n.split(":", 1)[-1]
         elif node_type == "FF_FAM":
             node_colors[n] = "#FFB6B6"  # light red
-            node_sizes[n] = 400
+            node_sizes[n] = 150
             labels[n] = subgraph.nodes[n].get("family_key", n)
         elif node_type == "POW":
             node_colors[n] = "#800080"  # purple
-            node_sizes[n] = 50  # Match DOC node size
+            node_sizes[n] = 10
             # No label for POW nodes
         elif node_type == "MON":
             is_srd = subgraph.nodes[n].get("is_srd", False)
             node_colors[n] = "#2ca02c" if is_srd else "#ff7f0e"
-            node_sizes[n] = 300 if is_srd else 150
+            node_sizes[n] = 100 if is_srd else 80
             labels[n] = subgraph.nodes[n].get("name", n)
             mon_labels[n] = labels[n]
         else:
             node_colors[n] = "#cccccc"
-            node_sizes[n] = 100
+            node_sizes[n] = 10
 
     # Draw DOC and POW nodes first (lowest layer)
     for t in ["DOC", "POW"]:
@@ -164,7 +200,7 @@ def visualize_graph_sampled(G):
                 nodelist=mon_nodes,
                 node_color=[node_colors[n] for n in mon_nodes],
                 node_size=[node_sizes[n] for n in mon_nodes],
-                alpha=0.9,
+                alpha=0.7,
                 label="MON",
             )
             nx.draw_networkx_nodes(
@@ -173,7 +209,7 @@ def visualize_graph_sampled(G):
                 nodelist=srd_nodes,
                 node_color=[node_colors[n] for n in srd_nodes],
                 node_size=[node_sizes[n] for n in srd_nodes],
-                alpha=1.0,
+                alpha=0.8,
                 label="MON_SRD",
             )
         else:
@@ -184,12 +220,12 @@ def visualize_graph_sampled(G):
                 nodelist=nodes,
                 node_color=[node_colors[n] for n in nodes],
                 node_size=[node_sizes[n] for n in nodes],
-                alpha=1.0,
+                alpha=0.9,
                 label=t,
             )
 
     # Draw edges
-    nx.draw_networkx_edges(subgraph, pos, alpha=0.3)
+    nx.draw_networkx_edges(subgraph, pos, alpha=0.2)
 
     # Draw labels for FF_FAM, FF_MON, MON nodes only
     ff_fam_nodes = [n for n in labels if subgraph.nodes[n]["type"] == "FF_FAM"]
@@ -211,8 +247,21 @@ def visualize_graph_sampled(G):
         font_size=6,
     )
 
-    plt.title("Sampled Foe Foundry GraphRAG")
+    plt.title(f"Sampled Foe Foundry GraphRAG ({layout_type.value} layout)")
     plt.tight_layout()
-    out_path = os.path.join(os.path.dirname(__file__), "foe_foundry_graph_sampled.png")
+    out_path = os.path.join(os.path.dirname(__file__), f"graph_{layout_type.value}.png")
     plt.savefig(out_path, dpi=300)
     print(f"Sampled graph visualization saved to {out_path}")
+
+
+def visualize_all_layouts(G):
+    """
+    Generate visualizations for all available layout types.
+
+    Args:
+        G: The full NetworkX graph
+    """
+    for layout_type in LayoutType:
+        print(f"Generating visualization with {layout_type.value} layout...")
+        visualize_graph_sampled(G, layout_type)
+        plt.close()  # Close the figure to free memory

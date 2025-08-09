@@ -1,7 +1,7 @@
 import dotenv
 
 from .build_graph import build_graph
-from .visualize import visualize_graph_sampled
+from .visualize import visualize_all_layouts
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
     for issue in issues:
         print(issue)
 
-    visualize_graph_sampled(G)
+    visualize_all_layouts(G)
 
 
 if __name__ == "__main__":

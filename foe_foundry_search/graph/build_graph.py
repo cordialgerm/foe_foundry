@@ -1,6 +1,25 @@
 """
-Initial implementation of GraphRAG graph construction for Foe Foundry.
-Builds a NetworkX graph with DOC and MON nodes and relevant edges.
+Graph Construction for Foe Foundry Search
+=========================================
+
+This module builds a directed graph using NetworkX to represent relationships between monsters, documents, families, and powers in the Foe Foundry system.
+
+Nodes:
+    - DOC: Monster documents
+    - MON: Monster metadata
+    - FF_MON: Foe Foundry monster instances
+    - FF_FAM: Monster families
+    - POW: Powers
+
+Edges:
+    - DOC → MON: Document describes monster
+    - MON → MON: Similar monsters (SRD mapping)
+    - FF_MON → MON: FF monster implements SRD monster
+    - FF_MON → MON: FF monster implements other monster
+    - FF_FAM → FF_MON: Family membership
+    - POW → FF_MON: Power grants to monster
+
+Returns a tuple of (graph, issues) where issues is a list of warnings or missing references.
 """
 
 import json
@@ -16,25 +35,32 @@ from foe_foundry_search.documents import (
     iter_monster_docs,
     load_monster_doc_metas,
 )
+from foe_foundry_search.documents.meta import MonsterDocumentMeta
 
 # Path to SRD mapping file
 SRD_MAPPING_PATH = os.path.join(os.path.dirname(__file__), "monster_to_srd_a_b.json")
 
 
-def build_graph():
+def build_graph() -> tuple[nx.DiGraph, list[str]]:
+    """
+    Build a directed graph representing monsters, documents, families, and powers.
+
+    Returns:
+        tuple[nx.DiGraph, list[str]]: The constructed graph and a list of issues encountered (missing references, etc).
+    """
     G = nx.DiGraph()
 
     issues = []
 
-    # Extract DOC nodes (MonsterDocument)
+    # Add DOC nodes: Each represents a monster document
     for doc in iter_monster_docs():
         node_id = f"DOC:{doc.doc_id}"
         G.add_node(
             node_id, type="DOC", monster_key=doc.monster_key, id=node_id, text=doc.text
         )
 
-    # Extract MON nodes (MonsterDocumentMeta)
-    metas = load_monster_doc_metas()  # dict[str, MonsterDocumentMeta]
+    # Add MON nodes: Each represents monster metadata
+    metas: dict[str, MonsterDocumentMeta] = load_monster_doc_metas()
     for key, meta in metas.items():
         node_id = f"MON:{key}"
         G.add_node(
@@ -46,7 +72,7 @@ def build_graph():
             description=meta.description,
         )
 
-    # Create DOC → MON edges
+    # Add DOC → MON edges: Document describes monster
     for doc in iter_monster_docs():
         if doc.monster_key not in metas:
             issues.append(
@@ -62,7 +88,7 @@ def build_graph():
             relevancy=1.0,
         )
 
-    # Create MON → MON edges using SRD mappings
+    # Add MON → MON edges: Similar monsters via SRD mapping
     if os.path.exists(SRD_MAPPING_PATH):
         with open(SRD_MAPPING_PATH, "r") as f:
             srd_map = json.load(f)
@@ -93,7 +119,7 @@ def build_graph():
                             f"SRD mapping {monster_name} → {srd_name} references unknown SRD monster {srd_monster_key}"
                         )
 
-    # Add FF_MON nodes
+    # Add FF_MON nodes: Foe Foundry monster instances and their SRD/other references
     for template in AllTemplates:
         for variant in template.variants:
             for monster in variant.monsters:
@@ -105,6 +131,7 @@ def build_graph():
                     template_key=template.key,
                 )
 
+                # Link FF_MON to SRD monsters it implements
                 for srd_creature in monster.srd_creatures or []:
                     srd_monster_key = name_to_key(srd_creature)
                     srd_node_id = f"MON:{srd_monster_key}"
@@ -116,6 +143,7 @@ def build_graph():
                             f"FF_MON {monster.key} references unknown SRD creature {srd_creature}"
                         )
 
+                # Link FF_MON to other monsters it implements
                 for other_monster_name, _ in (monster.other_creatures or {}).items():
                     other_monster_key = name_to_key(other_monster_name)
                     other_node_id = f"MON:{other_monster_key}"
@@ -127,7 +155,7 @@ def build_graph():
                             f"FF_MON {monster.key} references unknown other creature {other_monster_name}"
                         )
 
-    # Add FF_FAM nodes
+    # Add FF_FAM nodes: Monster families and their members
     for family in load_families():
         node_id = f"FF_FAM:{family.key}"
         G.add_node(
@@ -145,7 +173,7 @@ def build_graph():
                     f"FF_FAM {family.key} references unknown FF_MON {monster.key}"
                 )
 
-    # Add POW nodes
+    # Add POW nodes: Powers and the monsters they grant to
     for power in Powers.AllPowers:
         node_id = f"POW:{power.key}"
         G.add_node(
