@@ -253,7 +253,7 @@ def main():
         subgraph = G.subgraph(nodes_to_plot)
 
         plt.figure(figsize=(12, 8))
-        pos = nx.spring_layout(subgraph, seed=42, k=2.0)
+        pos = nx.spring_layout(subgraph, seed=42, k=None)
 
         # Priority order for drawing: FF_FAM, FF_MON, MON (srd), MON (not srd), DOC, POW
         priority = {
@@ -394,9 +394,7 @@ def main():
             font_size=6,
         )
 
-        plt.title(
-            "Sampled Foe Foundry GraphRAG: 40 MONs (A/B) + 1st/2nd Degree Neighbors"
-        )
+        plt.title("Sampled Foe Foundry GraphRAG")
         plt.tight_layout()
         out_path = os.path.join(
             os.path.dirname(__file__), "foe_foundry_graph_sampled.png"
