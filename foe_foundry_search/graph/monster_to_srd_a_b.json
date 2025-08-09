@@ -134,19 +134,18 @@
         "fire elemental"
     ],
     "ahu_nixta": [
-        "modron",
-        "golem"
+        "clay golem",
+        "flesh golem"
     ],
     "ahu_nixta_cataphract": [
-        "modron",
-        "golem"
+        "iron golem",
+        "stone golem"
     ],
     "ahu_nixta_drudge": [
-        "modron",
-        "golem"
+        "clay golem"
     ],
     "ahu_nixta_mechanon": [
-        "golem"
+        "iron golem"
     ],
     "ahuizotl": [
         "crocodile"
@@ -155,11 +154,10 @@
         "air elemental"
     ],
     "akaasit": [
-        "golem"
+        "clay golem"
     ],
     "akanka": [
-        "sprite",
-        "pixie"
+        "sprite"
     ],
     "akhlut": [
         "crocodile"
@@ -219,12 +217,11 @@
         "mage"
     ],
     "alehouse_drake": [
-        "pseudodragon",
-        "faerie dragon"
+        "pseudodragon"
     ],
     "algorith": [
         "shield guardian",
-        "helmed horror"
+        "animated armor"
     ],
     "alke": [
         "owlbear",
@@ -242,16 +239,13 @@
         "giant lizard"
     ],
     "alliumite": [
-        "myconid sprout",
-        "twig blight"
+        "awakened shrub"
     ],
     "alliumite_husker": [
-        "myconid adult",
-        "blight"
+        "awakened tree"
     ],
     "alliumite_rapscallion": [
-        "myconid adult",
-        "blight"
+        "shambling mound"
     ],
     "allosaurus": [
         "allosaurus"
@@ -592,8 +586,7 @@
         "priest"
     ],
     "aridni": [
-        "sprite",
-        "pixie"
+        "sprite"
     ],
     "armory_golem": [
         "iron golem",
@@ -679,7 +672,7 @@
         "aboleth"
     ],
     "avestruzii": [
-        "giant ostrich"
+        "axe beak"
     ],
     "avestruzii_champion": [
         "bandit captain",
@@ -721,7 +714,7 @@
     ],
     "azza_gremlin": [
         "sprite",
-        "mephit"
+        "dust mephit"
     ],
     "baba_yaga\u2019s_horsemen": [
         "wight",
@@ -911,8 +904,8 @@
         "will-o'-wisp"
     ],
     "birgemon_seal": [
-        "giant seal",
-        "giant walrus"
+        "giant crocodile",
+        "giant shark"
     ],
     "black_bear": [
         "black bear"
@@ -1184,7 +1177,8 @@
         "bandit captain"
     ],
     "bukavac": [
-        "froghemoth"
+        "chuul",
+        "giant frog"
     ],
     "bulbous_violet": [
         "myconid adult",
