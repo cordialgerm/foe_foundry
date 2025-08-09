@@ -4,6 +4,7 @@ from enum import Enum
 
 import matplotlib.pyplot as plt
 import networkx as nx
+import numpy as np
 
 
 class LayoutType(Enum):
@@ -24,12 +25,25 @@ def _create_layout_positions(subgraph: nx.DiGraph, layout_type: LayoutType) -> d
     Returns:
         Dictionary mapping node IDs to (x, y) positions
     """
+    H = nx.Graph(subgraph)
+
     if layout_type == LayoutType.SPRING:
-        return nx.spring_layout(subgraph, seed=42, k=None)
+        return nx.spring_layout(H, seed=42, k=None, iterations=100)
 
     elif layout_type == LayoutType.KAMADA_KAWAI:
-        return nx.kamada_kawai_layout(subgraph)
-
+        seed_pos = nx.spring_layout(H, seed=42, k=None, iterations=100)
+        rand_pos = nx.random_layout(H, seed=42)
+        alpha = 0.8  # 0 = pure random, 1 = pure spring
+        blend_pos = {
+            n: alpha * np.array(seed_pos[n]) + (1 - alpha) * np.array(rand_pos[n])
+            for n in H.nodes()
+        }
+        return nx.kamada_kawai_layout(
+            nx.Graph(subgraph),
+            weight=None,  # type: ignore
+            scale=3.5,
+            pos=blend_pos,
+        )
     else:
         raise ValueError(f"Unsupported layout type: {layout_type}")
 
@@ -135,7 +149,6 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
     node_colors = {}
     node_sizes = {}
     labels = {}
-    mon_labels = {}
     for n in subgraph.nodes:
         node_type = subgraph.nodes[n]["type"]
         if node_type == "DOC":
@@ -144,12 +157,12 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
             # No label for DOC nodes
         elif node_type == "FF_MON":
             node_colors[n] = "#8B0000"  # dark red
-            node_sizes[n] = 120
+            node_sizes[n] = 20
             # Label is just the key, e.g. 'wolf' for 'FF_MON:wolf'
             labels[n] = n.split(":", 1)[-1]
         elif node_type == "FF_FAM":
             node_colors[n] = "#FFB6B6"  # light red
-            node_sizes[n] = 150
+            node_sizes[n] = 20
             labels[n] = subgraph.nodes[n].get("family_key", n)
         elif node_type == "POW":
             node_colors[n] = "#800080"  # purple
@@ -158,9 +171,9 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
         elif node_type == "MON":
             is_srd = subgraph.nodes[n].get("is_srd", False)
             node_colors[n] = "#2ca02c" if is_srd else "#ff7f0e"
-            node_sizes[n] = 100 if is_srd else 80
-            labels[n] = subgraph.nodes[n].get("name", n)
-            mon_labels[n] = labels[n]
+            node_sizes[n] = 15 if is_srd else 12
+            if is_srd:
+                labels[n] = subgraph.nodes[n].get("name", n)
         else:
             node_colors[n] = "#cccccc"
             node_sizes[n] = 10
@@ -225,26 +238,14 @@ def visualize_graph_sampled(G, layout_type: LayoutType = LayoutType.SPRING):
             )
 
     # Draw edges
-    nx.draw_networkx_edges(subgraph, pos, alpha=0.2)
+    nx.draw_networkx_edges(subgraph, pos, alpha=0.25, arrows=False)
 
-    # Draw labels for FF_FAM, FF_MON, MON nodes only
-    ff_fam_nodes = [n for n in labels if subgraph.nodes[n]["type"] == "FF_FAM"]
-    ff_mon_nodes = [n for n in labels if subgraph.nodes[n]["type"] == "FF_MON"]
-    mon_nodes = [n for n in labels if subgraph.nodes[n]["type"] == "MON"]
-
-    # FF_FAM and FF_MON labels (font size 8)
+    # Draw labels
     nx.draw_networkx_labels(
         subgraph,
         pos,
-        labels={n: labels[n] for n in ff_fam_nodes + ff_mon_nodes},
+        labels=labels,
         font_size=8,
-    )
-    # MON labels (smaller font size, e.g. 6)
-    nx.draw_networkx_labels(
-        subgraph,
-        pos,
-        labels={n: mon_labels[n] for n in mon_nodes},
-        font_size=6,
     )
 
     plt.title(f"Sampled Foe Foundry GraphRAG ({layout_type.value} layout)")
