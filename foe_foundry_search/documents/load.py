@@ -15,10 +15,6 @@ class _Loader:
     def document_metas(self) -> dict[str, MonsterDocumentMeta]:
         return {meta.key: meta for meta in self.iter_document_metas()}
 
-    @cached_property
-    def documents(self) -> dict[str, MonsterDocument]:
-        return {doc.monster_key: doc for doc in self.iter_documents()}
-
     def iter_documents(self) -> Iterable[MonsterDocument]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_paragraphs"
 
@@ -41,7 +37,8 @@ class _Loader:
                     break
 
             text = path.read_text(encoding="utf-8")
-            yield MonsterDocument(path=path, monster_key=key, text=text)
+            monster_key = name_to_key(key)
+            yield MonsterDocument(path=path, monster_key=monster_key, text=text)
 
     def iter_document_metas(self) -> Iterable[MonsterDocumentMeta]:
         dir = Path(__file__).parent.parent.parent / "data" / "5e_nl2"
@@ -81,11 +78,6 @@ def iter_monster_docs() -> Iterable[MonsterDocument]:
 def load_monster_doc_metas() -> dict[str, MonsterDocumentMeta]:
     """Load metadata about monster documents. Cached for performance"""
     return _loader.document_metas
-
-
-def load_monster_docs() -> dict[str, MonsterDocument]:
-    """Load monster documents. Cached for performance"""
-    return _loader.documents
 
 
 def _cleanup_role(role: str | None) -> MonsterRole | None:
